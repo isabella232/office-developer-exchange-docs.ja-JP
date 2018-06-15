@@ -1,0 +1,79 @@
+---
+title: (集合的) を削除します。
+manager: sethgros
+ms.date: 09/17/2015
+ms.audience: Developer
+ms.topic: reference
+ms.prod: office-online-server
+localization_priority: Normal
+api_name:
+- Delete
+api_type:
+- schema
+ms.assetid: c4397d91-43ef-40a9-a80e-d31501a33caa
+description: ローカル クライアント ストアで削除するのには 1 つのフォルダーを識別する要素を削除します。
+ms.openlocfilehash: 5cad36c6fcff782195fdb285e2d3c4f3c5ec0f1e
+ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 06/15/2018
+ms.locfileid: "19759957"
+---
+# <a name="delete-foldersync"></a><span data-ttu-id="f3eee-103">(集合的) を削除します。</span><span class="sxs-lookup"><span data-stu-id="f3eee-103">Delete (FolderSync)</span></span>
+
+<span data-ttu-id="f3eee-104">要素の**削除**は、ローカル クライアント ストアで削除するのには 1 つのフォルダーを識別します。</span><span class="sxs-lookup"><span data-stu-id="f3eee-104">The **Delete** element identifies a single folder to delete in the local client store.</span></span> 
+  
+- [<span data-ttu-id="f3eee-105">SyncFolderHierarchyResponse</span><span class="sxs-lookup"><span data-stu-id="f3eee-105">SyncFolderHierarchyResponse</span></span>](syncfolderhierarchyresponse.md)  
+- [<span data-ttu-id="f3eee-106">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="f3eee-106">ResponseMessages</span></span>](responsemessages.md)  
+- [<span data-ttu-id="f3eee-107">SyncFolderHierarchyResponseMessage</span><span class="sxs-lookup"><span data-stu-id="f3eee-107">SyncFolderHierarchyResponseMessage</span></span>](syncfolderhierarchyresponsemessage.md)  
+- [<span data-ttu-id="f3eee-108">(階層) の変更</span><span class="sxs-lookup"><span data-stu-id="f3eee-108">Changes (Hierarchy)</span></span>](changes-hierarchy.md)  
+- [<span data-ttu-id="f3eee-109">(集合的) を削除します。</span><span class="sxs-lookup"><span data-stu-id="f3eee-109">Delete (FolderSync)</span></span>](delete-foldersync.md)
+  
+```xml
+<Delete>
+   <FolderId/>
+</Delete>
+```
+
+<span data-ttu-id="f3eee-110">**SyncFolderHierarchyDeleteType**</span><span class="sxs-lookup"><span data-stu-id="f3eee-110">**SyncFolderHierarchyDeleteType**</span></span>
+
+## <a name="attributes-and-elements"></a><span data-ttu-id="f3eee-111">属性および要素</span><span class="sxs-lookup"><span data-stu-id="f3eee-111">Attributes and elements</span></span>
+
+<span data-ttu-id="f3eee-112">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="f3eee-112">The following sections describe attributes, child elements, and parent elements.</span></span>
+  
+### <a name="attributes"></a><span data-ttu-id="f3eee-113">属性</span><span class="sxs-lookup"><span data-stu-id="f3eee-113">Attributes</span></span>
+
+<span data-ttu-id="f3eee-114">なし。</span><span class="sxs-lookup"><span data-stu-id="f3eee-114">None.</span></span>
+  
+### <a name="child-elements"></a><span data-ttu-id="f3eee-115">子要素</span><span class="sxs-lookup"><span data-stu-id="f3eee-115">Child elements</span></span>
+
+|<span data-ttu-id="f3eee-116">**要素**</span><span class="sxs-lookup"><span data-stu-id="f3eee-116">**Element**</span></span>|<span data-ttu-id="f3eee-117">**説明**</span><span class="sxs-lookup"><span data-stu-id="f3eee-117">**Description**</span></span>|
+|:-----|:-----|
+|[<span data-ttu-id="f3eee-118">フォルダー Id</span><span class="sxs-lookup"><span data-stu-id="f3eee-118">FolderId</span></span>](folderid.md) <br/> |<span data-ttu-id="f3eee-119">フォルダーの識別子と変更キーが含まれています。</span><span class="sxs-lookup"><span data-stu-id="f3eee-119">Contains the identifier and change key of a folder.</span></span>  <br/> |
+   
+### <a name="parent-elements"></a><span data-ttu-id="f3eee-120">親要素</span><span class="sxs-lookup"><span data-stu-id="f3eee-120">Parent elements</span></span>
+
+|<span data-ttu-id="f3eee-121">**要素**</span><span class="sxs-lookup"><span data-stu-id="f3eee-121">**Element**</span></span>|<span data-ttu-id="f3eee-122">**説明**</span><span class="sxs-lookup"><span data-stu-id="f3eee-122">**Description**</span></span>|
+|:-----|:-----|
+|[<span data-ttu-id="f3eee-123">(階層) の変更</span><span class="sxs-lookup"><span data-stu-id="f3eee-123">Changes (Hierarchy)</span></span>](changes-hierarchy.md) <br/> |<span data-ttu-id="f3eee-124">クライアント上のフォルダーや Microsoft Exchange Server 2007 を実行しているコンピューター上のフォルダー間の相違点の種類を表すの種類の変更の順序付けされた配列が含まれています。</span><span class="sxs-lookup"><span data-stu-id="f3eee-124">Contains a sequenced array of change types that represent the type of differences between the folders on the client and the folders on the computer that is running Microsoft Exchange Server 2007.</span></span>  <br/> |
+   
+## <a name="remarks"></a><span data-ttu-id="f3eee-125">Remarks</span><span class="sxs-lookup"><span data-stu-id="f3eee-125">Remarks</span></span>
+
+<span data-ttu-id="f3eee-126">EWS 仮想ディレクトリのクライアント アクセス サーバーの役割がインストールされている Exchange 2007 コンピューターには、この要素を記述するスキーマがあります。</span><span class="sxs-lookup"><span data-stu-id="f3eee-126">The schema that describes this element is located in the EWS virtual directory of the Exchange 2007 computer that has the Client Access server role installed.</span></span>
+  
+## <a name="element-information"></a><span data-ttu-id="f3eee-127">要素情報</span><span class="sxs-lookup"><span data-stu-id="f3eee-127">Element information</span></span>
+
+|||
+|:-----|:-----|
+|<span data-ttu-id="f3eee-128">名前空間</span><span class="sxs-lookup"><span data-stu-id="f3eee-128">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="f3eee-129">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="f3eee-129">Schema name</span></span>  <br/> |<span data-ttu-id="f3eee-130">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="f3eee-130">Types schema</span></span>  <br/> |
+|<span data-ttu-id="f3eee-131">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="f3eee-131">Validation file</span></span>  <br/> |<span data-ttu-id="f3eee-132">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="f3eee-132">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="f3eee-133">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="f3eee-133">Can be empty</span></span>  <br/> |<span data-ttu-id="f3eee-134">False</span><span class="sxs-lookup"><span data-stu-id="f3eee-134">False</span></span>  <br/> |
+   
+## <a name="see-also"></a><span data-ttu-id="f3eee-135">関連項目</span><span class="sxs-lookup"><span data-stu-id="f3eee-135">See also</span></span>
+
+- [<span data-ttu-id="f3eee-136">SyncFolderHierarchy 操作</span><span class="sxs-lookup"><span data-stu-id="f3eee-136">SyncFolderHierarchy operation</span></span>](syncfolderhierarchy-operation.md)
+- <span data-ttu-id="f3eee-137">
+  [Exchange 用 EWS リファレンス](ews-reference-for-exchange.md)</span><span class="sxs-lookup"><span data-stu-id="f3eee-137">[EWS reference for Exchange](ews-reference-for-exchange.md)</span></span>
+- [<span data-ttu-id="f3eee-138">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="f3eee-138">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+
