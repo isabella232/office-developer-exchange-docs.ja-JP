@@ -44,7 +44,7 @@ ms.locfileid: "19760328"
 
 **ErrorMessage**要素のテキスト値は、理由の項目はインデックス付けができないことを示すエラー メッセージです。 
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>備考
 
 この要素は Exchange Server 2013 で導入されました。
   

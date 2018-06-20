@@ -59,7 +59,7 @@ ms.locfileid: "19759958"
 |:-----|:-----|
 |[ResponseMessages (ArrayOfDelegateUserResponseMessageType)](responsemessages-arrayofdelegateuserresponsemessagetype.md) <br/> |Exchange Web サービス代理人の管理要求の応答メッセージが含まれています。  <br/> |
    
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>備考
 
 この要素を記述するスキーマは、インストールされているクライアント アクセス サーバーの役割と Exchange Server を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   

@@ -48,7 +48,7 @@ ms.locfileid: "19759582"
 |:-----|:-----|
 |[ペルソナ](persona.md) <br/> |**GetPersona**の要求によって返されるペルソナ データのセットを指定します。  <br/> |
    
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>備考
 
 この要素は Exchange Server 2013 で導入されました。
   
