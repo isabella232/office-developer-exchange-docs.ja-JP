@@ -1,5 +1,5 @@
 ---
-title: UmEnabled
+title: SubmittedTime
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,27 +7,27 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- UmEnabled
+- SubmittedTime
 api_type:
 - schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: UmEnabled 要素は、アカウントのユニファイド メッセージングが有効になっているかどうかを示します。
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: 45c8fa36-c539-42ca-99dc-1ac33cc54afc
+description: SubmittedTime 要素は、メッセージがサーバーを入力する時間を表します。
+ms.openlocfilehash: 89fc6400914495b8f1bd3994f17421d0ab079460
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839769"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19833613"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="submittedtime"></a>SubmittedTime
 
-**UmEnabled**要素は、アカウントのユニファイド メッセージングが有効になっているかどうかを示します。 
+**SubmittedTime**要素は、メッセージがサーバーを入力する時間を表します。 
   
 ```XML
-<UmEnabled>true | false</UmEnabled>
+<SubmittedTime/>
 ```
 
- **ブール型 (Boolean)**
+ **DateTime**
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -44,16 +44,14 @@ ms.locfileid: "19839769"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |ユニファイド メッセージング サービスのサービスの構成情報が含まれています。  <br/> |
+|[MessageTrackingSearchResult](messagetrackingsearchresult.md) <br/> |[FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md)要素の 1 つのメッセージの結果が含まれています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**UmEnabled**要素のテキスト値は、アカウントのユニファイド メッセージングが有効になっている場合**は true。** それ以外の場合、値が**false**にします。
+ 日付と時刻を表すテキスト値は、この要素を使用する場合に必要です。 
   
 ## <a name="remarks"></a>備考
 
-この要素は必須です。
-  
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
 ## <a name="element-information"></a>要素情報

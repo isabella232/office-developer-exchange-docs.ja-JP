@@ -1,33 +1,29 @@
 ---
-title: UmEnabled
+title: VotingResponse
 manager: sethgros
-ms.date: 09/17/2015
+ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
-api_name:
-- UmEnabled
-api_type:
-- schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: UmEnabled 要素は、アカウントのユニファイド メッセージングが有効になっているかどうかを示します。
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: 7dae4db5-28d3-4b81-b071-458c814c36b9
+description: VotingResponse 要素は、送信された投票を指定します。 この要素があるだけ返信要求メッセージへの応答で、承認への応答ではなく。
+ms.openlocfilehash: 865b24a4f7ec1cc7b53d4928b04f071cddf5fbfc
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839769"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19839996"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="votingresponse"></a>VotingResponse
 
-**UmEnabled**要素は、アカウントのユニファイド メッセージングが有効になっているかどうかを示します。 
+**VotingResponse**要素は、送信された投票を指定します。 この要素があるだけ返信要求メッセージへの応答で、承認への応答ではなく。 
   
 ```XML
-<UmEnabled>true | false</UmEnabled>
+<VotingResponse />
 ```
 
- **ブール型 (Boolean)**
+ **string**
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -42,17 +38,15 @@ ms.locfileid: "19839769"
   
 ### <a name="parent-elements"></a>親要素
 
-|**要素**|**説明**|
-|:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |ユニファイド メッセージング サービスのサービスの構成情報が含まれています。  <br/> |
-   
+[VotingInformation](votinginformation.md)
+  
 ## <a name="text-value"></a>テキスト値
 
-**UmEnabled**要素のテキスト値は、アカウントのユニファイド メッセージングが有効になっている場合**は true。** それ以外の場合、値が**false**にします。
+**VotingResponse**要素のテキスト値は、票を送信します。 
   
 ## <a name="remarks"></a>備考
 
-この要素は必須です。
+この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
@@ -63,10 +57,13 @@ ms.locfileid: "19839769"
 |名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |タイプのスキーマ  <br/> |
 |検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|空に設定可能  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
+
+
+[VotingInformation](votinginformation.md)
 
 
 - [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)

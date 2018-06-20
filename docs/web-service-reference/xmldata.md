@@ -1,5 +1,5 @@
 ---
-title: UmEnabled
+title: XmlData
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,27 +7,28 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- UmEnabled
+- XmlData
 api_type:
 - schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: UmEnabled 要素は、アカウントのユニファイド メッセージングが有効になっているかどうかを示します。
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: e47f1d32-3ee3-4a1d-b7f9-80973ed57bd4
+description: XmlData 要素には、ユーザーの構成オブジェクトの XML データのプロパティの内容が含まれています。
+ms.openlocfilehash: 6cd14d9e3873dd3aac352dce82afb2c309477214
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839769"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19840048"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="xmldata"></a>XmlData
 
-**UmEnabled**要素は、アカウントのユニファイド メッセージングが有効になっているかどうかを示します。 
+**XmlData**要素には、ユーザーの構成オブジェクトの XML データのプロパティの内容が含まれています。 
   
 ```XML
-<UmEnabled>true | false</UmEnabled>
+<XmlData/>
 ```
 
- **ブール型 (Boolean)**
+**Base64Binary**
+
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -44,16 +45,14 @@ ms.locfileid: "19839769"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |ユニファイド メッセージング サービスのサービスの構成情報が含まれています。  <br/> |
+|[UserConfiguration](userconfiguration.md) <br/> |1 人のユーザーの構成オブジェクトを定義します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**UmEnabled**要素のテキスト値は、アカウントのユニファイド メッセージングが有効になっている場合**は true。** それ以外の場合、値が**false**にします。
+なし。
   
 ## <a name="remarks"></a>備考
 
-この要素は必須です。
-  
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
 ## <a name="element-information"></a>要素情報
@@ -66,8 +65,6 @@ ms.locfileid: "19839769"
 |空に設定可能  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>関連項目
-
-
 
 - [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
 

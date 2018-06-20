@@ -1,5 +1,5 @@
 ---
-title: UmEnabled
+title: 値 (ProtectionRuleValueType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,27 +7,28 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- UmEnabled
+- Value
 api_type:
 - schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: UmEnabled 要素は、アカウントのユニファイド メッセージングが有効になっているかどうかを示します。
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: b039bd6e-2198-47cf-9c78-a5e8b9d51c98
+description: 値要素は、1 つの受信者または送信者の部署を識別します。
+ms.openlocfilehash: 6173f94dcfb83eafd62e35f185a5e8c669d50f6c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839769"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19839975"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="value-protectionrulevaluetype"></a>値 (ProtectionRuleValueType)
 
-**UmEnabled**要素は、アカウントのユニファイド メッセージングが有効になっているかどうかを示します。 
+**値**要素は、1 つの受信者または送信者の部署を識別します。 
   
 ```XML
-<UmEnabled>true | false</UmEnabled>
+<Value/>
 ```
 
- **ブール型 (Boolean)**
+**ProtectionRuleValueType**
+
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -44,16 +45,15 @@ ms.locfileid: "19839769"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |ユニファイド メッセージング サービスのサービスの構成情報が含まれています。  <br/> |
+|[RecipientIs](recipientis.md) <br/> |電子メール メッセージの受信者と一致している**値**の子要素で指定した受信者のいずれかを指定します。  <br/> |
+|[SenderDepartments](senderdepartments.md) <br/> |送信者の部署と一致している**値**の子要素で指定された部門のいずれかを指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**UmEnabled**要素のテキスト値は、アカウントのユニファイド メッセージングが有効になっている場合**は true。** それ以外の場合、値が**false**にします。
+この要素は空でない文字列の値を含める必要があります。
   
 ## <a name="remarks"></a>備考
 
-この要素は必須です。
-  
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
 ## <a name="element-information"></a>要素情報
@@ -66,8 +66,6 @@ ms.locfileid: "19839769"
 |空に設定可能  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>関連項目
-
-
 
 - [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
 

@@ -1,5 +1,5 @@
 ---
-title: UmEnabled
+title: UnreadCount
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,27 +7,27 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- UmEnabled
+- UnreadCount
 api_type:
 - schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: UmEnabled 要素は、アカウントのユニファイド メッセージングが有効になっているかどうかを示します。
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: 53b22647-1453-4707-9ea0-6a8369748d56
+description: UnreadCount 要素には、フォルダー内の未読アイテムの数が含まれています。
+ms.openlocfilehash: fbe887f8f6d83fbcf48ed9593b3d19322a7f48be
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839769"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19839814"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="unreadcount"></a>UnreadCount
 
-**UmEnabled**要素は、アカウントのユニファイド メッセージングが有効になっているかどうかを示します。 
+**UnreadCount**要素には、フォルダー内の未読アイテムの数が含まれています。 
   
 ```XML
-<UmEnabled>true | false</UmEnabled>
+<UnreadCount/>
 ```
 
- **ブール型 (Boolean)**
+ **xs:int**
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -44,16 +44,18 @@ ms.locfileid: "19839769"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |ユニファイド メッセージング サービスのサービスの構成情報が含まれています。  <br/> |
+|[会話 (ConversationType)](conversation-conversationtype.md) <br/> |1 つのテーマを表します。  <br/> |
+|[Folder](folder.md) <br/> |メールボックス内のフォルダーを表します。  <br/> |
+|[ModifiedEvent](modifiedevent.md) <br/> |アイテムまたはフォルダーが変更されたイベントを表します。  <br/> |
+|[SearchFolder](searchfolder.md) <br/> |メールボックス内の検索フォルダーを表します。  <br/> |
+|[TasksFolder](tasksfolder.md) <br/> |メールボックス内のタスク フォルダーを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**UmEnabled**要素のテキスト値は、アカウントのユニファイド メッセージングが有効になっている場合**は true。** それ以外の場合、値が**false**にします。
+テキスト値は、整数値を表します。 このプロパティは値の取得のみ可能です。
   
 ## <a name="remarks"></a>備考
 
-この要素は必須です。
-  
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
 ## <a name="element-information"></a>要素情報

@@ -1,5 +1,5 @@
 ---
-title: UmEnabled
+title: UniquePathId
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,27 +7,27 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- UmEnabled
+- UniquePathId
 api_type:
 - schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: UmEnabled 要素は、アカウントのユニファイド メッセージングが有効になっているかどうかを示します。
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: 3c917100-907a-4aa1-a7d4-01c65f9a42e4
+description: UniquePathId 要素は、追跡レポートのパスごとに異なる文字列を表します。
+ms.openlocfilehash: db238c6ebbe25d4089465f43df6bac79007bc952
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839769"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19839805"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="uniquepathid"></a>UniquePathId
 
-**UmEnabled**要素は、アカウントのユニファイド メッセージングが有効になっているかどうかを示します。 
+**UniquePathId**要素は、追跡レポートのパスごとに異なる文字列を表します。 
   
 ```XML
-<UmEnabled>true | false</UmEnabled>
+<UniquePathId/>
 ```
 
- **ブール型 (Boolean)**
+ **NonEmptyStringType**
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -44,16 +44,14 @@ ms.locfileid: "19839769"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |ユニファイド メッセージング サービスのサービスの構成情報が含まれています。  <br/> |
+|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |受信者の 1 つのイベントの情報が含まれています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**UmEnabled**要素のテキスト値は、アカウントのユニファイド メッセージングが有効になっている場合**は true。** それ以外の場合、値が**false**にします。
+文字列を表す文字列値は、この要素を使用する場合に必要です。
   
 ## <a name="remarks"></a>備考
 
-この要素は必須です。
-  
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
 ## <a name="element-information"></a>要素情報

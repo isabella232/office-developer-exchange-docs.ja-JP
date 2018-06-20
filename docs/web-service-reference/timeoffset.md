@@ -1,5 +1,5 @@
 ---
-title: UmEnabled
+title: TimeOffset
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,27 +7,27 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- UmEnabled
+- TimeOffset
 api_type:
 - schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: UmEnabled 要素は、アカウントのユニファイド メッセージングが有効になっているかどうかを示します。
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: b70bf498-cc3a-4fa6-8236-514acb973b33
+description: TimeOffset 要素は、タイム ゾーンの移行の世界協定時刻 (UTC) からの時刻のオフセットを表します。
+ms.openlocfilehash: 46b1b2c8eec9bae871b4dafe43036e9d725075ae
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839769"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19839677"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="timeoffset"></a>TimeOffset
 
-**UmEnabled**要素は、アカウントのユニファイド メッセージングが有効になっているかどうかを示します。 
+**TimeOffset**要素は、タイム ゾーンの移行の世界協定時刻 (UTC) からの時刻のオフセットを表します。 
   
 ```XML
-<UmEnabled>true | false</UmEnabled>
+<TimeOffset/>
 ```
 
- **ブール型 (Boolean)**
+ **duration**
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -44,16 +44,15 @@ ms.locfileid: "19839769"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |ユニファイド メッセージング サービスのサービスの構成情報が含まれています。  <br/> |
+|[RecurringDateTransition](recurringdatetransition.md) <br/> |毎年特定の日に発生するタイム ゾーンの移行を表します。  <br/> |
+|[RecurringDayTransition](recurringdaytransition.md) <br/> |毎年同じ日に発生するタイム ゾーンの移行を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**UmEnabled**要素のテキスト値は、アカウントのユニファイド メッセージングが有効になっている場合**は true。** それ以外の場合、値が**false**にします。
+**TimeOffset**要素のテキスト値は、タイム ゾーンの移行については、UTC からのオフセット時間を指定する期間です。 
   
 ## <a name="remarks"></a>備考
 
-この要素は必須です。
-  
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
 ## <a name="element-information"></a>要素情報

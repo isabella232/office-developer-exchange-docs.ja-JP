@@ -1,5 +1,5 @@
 ---
-title: UmEnabled
+title: TotalMemberCount
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,27 +7,27 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- UmEnabled
+- TotalMemberCount
 api_type:
 - schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: UmEnabled 要素は、アカウントのユニファイド メッセージングが有効になっているかどうかを示します。
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: fa86bfa6-10aa-4736-938c-9a23525aef8d
+description: TotalMemberCount 要素は、グループ内のすべてのメンバーの数を表します。
+ms.openlocfilehash: 0ec89cd79560962fa243af90cbc70380425e651d
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839769"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19839734"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="totalmembercount"></a>TotalMemberCount
 
-**UmEnabled**要素は、アカウントのユニファイド メッセージングが有効になっているかどうかを示します。 
+**TotalMemberCount**要素は、グループ内のすべてのメンバーの数を表します。 
   
 ```XML
-<UmEnabled>true | false</UmEnabled>
+<TotalMemberCount/>
 ```
 
- **ブール型 (Boolean)**
+ **int**
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -44,16 +44,14 @@ ms.locfileid: "19839769"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |ユニファイド メッセージング サービスのサービスの構成情報が含まれています。  <br/> |
+|[メール ヒント](mailtips.md) <br/> |さまざまな種類のメール ヒントの値を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**UmEnabled**要素のテキスト値は、アカウントのユニファイド メッセージングが有効になっている場合**は true。** それ以外の場合、値が**false**にします。
+テキスト値は、グループ内のメンバーの数を表す整数です。
   
 ## <a name="remarks"></a>備考
 
-この要素は必須です。
-  
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
 ## <a name="element-information"></a>要素情報

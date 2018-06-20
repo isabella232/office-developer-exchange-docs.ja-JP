@@ -1,5 +1,5 @@
 ---
-title: UmEnabled
+title: TransitionsGroups
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,27 +7,29 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- UmEnabled
+- TransitionsGroups
 api_type:
 - schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: UmEnabled 要素は、アカウントのユニファイド メッセージングが有効になっているかどうかを示します。
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: ad0849f8-5158-4a23-9c36-a49f5be1d1e1
+description: TransitionsGroups 要素は、タイム ゾーンの移行グループの配列を表します。
+ms.openlocfilehash: 546dd3c96187bf9f1ebf574b37b689e26e3af997
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839769"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19839752"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="transitionsgroups"></a>TransitionsGroups
 
-**UmEnabled**要素は、アカウントのユニファイド メッセージングが有効になっているかどうかを示します。 
+**TransitionsGroups**要素は、タイム ゾーンの移行グループの配列を表します。 
   
 ```XML
-<UmEnabled>true | false</UmEnabled>
+<TransitionsGroups>
+   <TransitionsGroup/>
+</TransitionsGroups>
 ```
 
- **ブール型 (Boolean)**
+ **ArrayOfTransitionsGroupsType**
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -38,22 +40,20 @@ ms.locfileid: "19839769"
   
 ### <a name="child-elements"></a>子要素
 
-なし。
-  
+|**要素**|**説明**|
+|:-----|:-----|
+|[TransitionsGroup](transitionsgroup.md) <br/> |タイム ゾーンの移行の配列を表します。  <br/> |
+   
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |ユニファイド メッセージング サービスのサービスの構成情報が含まれています。  <br/> |
+|[StartTimeZone](starttimezone.md) <br/> |[カレンダー項目](calendaritem.md)または[MeetingRequest](meetingrequest.md)の開始時刻のタイム ゾーンを定義します。  <br/> |
+|[EndTimeZone](endtimezone.md) <br/> |[カレンダー項目](calendaritem.md)または[MeetingRequest](meetingrequest.md)の終了時刻のタイム ゾーンを定義します。  <br/> |
+|[タイム](timezonedefinition.md) <br/> |タイム ゾーンを定義します。  <br/> |
    
-## <a name="text-value"></a>テキスト値
-
-**UmEnabled**要素のテキスト値は、アカウントのユニファイド メッセージングが有効になっている場合**は true。** それ以外の場合、値が**false**にします。
-  
 ## <a name="remarks"></a>備考
 
-この要素は必須です。
-  
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
 ## <a name="element-information"></a>要素情報

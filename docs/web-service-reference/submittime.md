@@ -1,5 +1,5 @@
 ---
-title: UmEnabled
+title: SubmitTime
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,27 +7,27 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- UmEnabled
+- SubmitTime
 api_type:
 - schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: UmEnabled 要素は、アカウントのユニファイド メッセージングが有効になっているかどうかを示します。
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: 97e4b71e-f45c-4bdb-80f9-805934916c0f
+description: SubmitTime 要素は、サーバーにあるメッセージが送信された時刻を表します。
+ms.openlocfilehash: 3f19e2ac14b412ef8d1ab59eb069f0223cf782ac
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839769"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19833617"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="submittime"></a>SubmitTime
 
-**UmEnabled**要素は、アカウントのユニファイド メッセージングが有効になっているかどうかを示します。 
+**SubmitTime**要素は、サーバーにあるメッセージが送信された時刻を表します。 
   
 ```XML
-<UmEnabled>true | false</UmEnabled>
+<SubmitTime/>
 ```
 
- **ブール型 (Boolean)**
+ **dateTime**
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -44,16 +44,14 @@ ms.locfileid: "19839769"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |ユニファイド メッセージング サービスのサービスの構成情報が含まれています。  <br/> |
+|[MessageTrackingReport](messagetrackingreport.md) <br/> |[GetMessageTrackingReport 操作](getmessagetrackingreport-operation.md)で返される 1 つのメッセージが含まれています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**UmEnabled**要素のテキスト値は、アカウントのユニファイド メッセージングが有効になっている場合**は true。** それ以外の場合、値が**false**にします。
+日付と時刻を表すテキスト値は、この要素を使用する場合に必要です。
   
 ## <a name="remarks"></a>備考
 
-この要素は必須です。
-  
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
 ## <a name="element-information"></a>要素情報
@@ -67,6 +65,9 @@ ms.locfileid: "19839769"
    
 ## <a name="see-also"></a>関連項目
 
+
+
+[GetMessageTrackingReport 操作](getmessagetrackingreport-operation.md)
 
 
 - [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)

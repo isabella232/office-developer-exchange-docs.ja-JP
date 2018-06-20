@@ -1,33 +1,30 @@
 ---
-title: UmEnabled
+title: 開始時刻 (ReminderMessageDataType)
 manager: sethgros
-ms.date: 09/17/2015
+ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
-api_name:
-- UmEnabled
-api_type:
-- schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: UmEnabled 要素は、アカウントのユニファイド メッセージングが有効になっているかどうかを示します。
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: cdfc4edd-463c-409b-9bef-6fb915d00b99
+description: 開始時刻 (ReminderMessageDataType) の要素では、アラームが適用されるアイテムの開始時刻を指定します。
+ms.openlocfilehash: 2e3226d4a611a3abd46e7d6d73e800b74dd31f59
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839769"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19833561"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="starttime-remindermessagedatatype"></a>開始時刻 (ReminderMessageDataType)
 
-**UmEnabled**要素は、アカウントのユニファイド メッセージングが有効になっているかどうかを示します。 
+**開始時刻 (ReminderMessageDataType)** の要素では、アラームが適用されるアイテムの開始時刻を指定します。 
   
 ```XML
-<UmEnabled>true | false</UmEnabled>
+<StartTime/>
 ```
 
- **ブール型 (Boolean)**
+**dateTime**
+
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -42,17 +39,15 @@ ms.locfileid: "19839769"
   
 ### <a name="parent-elements"></a>親要素
 
-|**要素**|**説明**|
-|:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |ユニファイド メッセージング サービスのサービスの構成情報が含まれています。  <br/> |
-   
+[ReminderMessageData](remindermessagedata.md)
+  
 ## <a name="text-value"></a>テキスト値
 
-**UmEnabled**要素のテキスト値は、アカウントのユニファイド メッセージングが有効になっている場合**は true。** それ以外の場合、値が**false**にします。
+**開始時刻 (ReminderMessageDataType)** の要素のテキスト値は、アイテムのアラームの開始時間のです。 
   
 ## <a name="remarks"></a>備考
 
-この要素は必須です。
+この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
@@ -63,11 +58,10 @@ ms.locfileid: "19839769"
 |名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |タイプのスキーマ  <br/> |
 |検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|空に設定可能  <br/> |True  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-
-
+- [ReminderMessageData](remindermessagedata.md)
 - [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
 

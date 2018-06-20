@@ -1,33 +1,29 @@
 ---
-title: UmEnabled
+title: サブスクリプション Id (GetStreamingEvents)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
-api_name:
-- UmEnabled
-api_type:
-- schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: UmEnabled 要素は、アカウントのユニファイド メッセージングが有効になっているかどうかを示します。
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: 3f86c178-2311-4844-82db-c2a0e469d116
+description: サブスクリプション Id 要素は、ストリーミングのサブスクリプションの識別子を表します。
+ms.openlocfilehash: eb451e611c4922fa3b9cff7edec54dfb8260f5f5
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19839769"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19839618"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="subscriptionid-getstreamingevents"></a>サブスクリプション Id (GetStreamingEvents)
 
-**UmEnabled**要素は、アカウントのユニファイド メッセージングが有効になっているかどうかを示します。 
+**サブスクリプション Id**要素は、ストリーミングのサブスクリプションの識別子を表します。 
   
 ```XML
-<UmEnabled>true | false</UmEnabled>
+<SubscriptionId/>
 ```
 
- **ブール型 (Boolean)**
+ **SubscriptionIdType**
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -44,15 +40,15 @@ ms.locfileid: "19839769"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |ユニファイド メッセージング サービスのサービスの構成情報が含まれています。  <br/> |
+|[GetStreamingEvents](getstreamingevents.md) <br/> |サーバーからストリーミングの通知を要求するクライアントによって使用される演算を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**UmEnabled**要素のテキスト値は、アカウントのユニファイド メッセージングが有効になっている場合**は true。** それ以外の場合、値が**false**にします。
+テキスト値は必須です。 テキスト値は、GUID です。
   
 ## <a name="remarks"></a>備考
 
-この要素は必須です。
+サブスクリプションの識別子を表す GUID は、サブスクリプションが作成されると、クライアント アクセス サーバーによって生成されます。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
@@ -63,10 +59,13 @@ ms.locfileid: "19839769"
 |名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |タイプのスキーマ  <br/> |
 |検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|空にすることができます。  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
+
+
+[GetStreamingEvents の操作](getstreamingevents-operation.md)
 
 
 - [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
