@@ -1,0 +1,69 @@
+---
+title: 条件 (RestrictionType)
+manager: sethgros
+ms.date: 09/17/2015
+ms.audience: Developer
+ms.topic: reference
+ms.prod: office-online-server
+localization_priority: Normal
+ms.assetid: 4fdb373e-bf1b-4cb0-bbfb-444c6c6cec50
+description: 条件要素は、FindItem または FindConversation 操作の検索の終了を識別するために使用される条件を指定します。
+ms.openlocfilehash: 513fc21be52a90698f1c292d6d20d7cdaab07371
+ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19759646"
+---
+# <a name="condition-restrictiontype"></a><span data-ttu-id="f174e-103">条件 (RestrictionType)</span><span class="sxs-lookup"><span data-stu-id="f174e-103">Condition (RestrictionType)</span></span>
+
+<span data-ttu-id="f174e-104">**条件**要素ではの**FindItem**または**FindConversation**操作の検索の終了を識別するために使用される条件を指定します。</span><span class="sxs-lookup"><span data-stu-id="f174e-104">The **Condition** element specifies the condition that is used to identify the end of a search for a **FindItem** or a **FindConversation** operation.</span></span> 
+  
+```XML
+<Condition>
+    <SearchExpression></SearchExpression>
+</Condition>
+```
+
+ <span data-ttu-id="f174e-105">**RestrictionType**</span><span class="sxs-lookup"><span data-stu-id="f174e-105">**RestrictionType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="f174e-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="f174e-106">Attributes and elements</span></span>
+
+<span data-ttu-id="f174e-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="f174e-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+  
+### <a name="attributes"></a><span data-ttu-id="f174e-108">属性</span><span class="sxs-lookup"><span data-stu-id="f174e-108">Attributes</span></span>
+
+<span data-ttu-id="f174e-109">なし。</span><span class="sxs-lookup"><span data-stu-id="f174e-109">None.</span></span>
+  
+### <a name="child-elements"></a><span data-ttu-id="f174e-110">子要素</span><span class="sxs-lookup"><span data-stu-id="f174e-110">Child elements</span></span>
+
+|<span data-ttu-id="f174e-111">**要素**</span><span class="sxs-lookup"><span data-stu-id="f174e-111">**Element**</span></span>|<span data-ttu-id="f174e-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="f174e-112">**Description**</span></span>|
+|:-----|:-----|
+|[<span data-ttu-id="f174e-113">SearchExpression</span><span class="sxs-lookup"><span data-stu-id="f174e-113">SearchExpression</span></span>](searchexpression.md) <br/> |<span data-ttu-id="f174e-114">制限内の代替要素を表す抽象型の要素です。</span><span class="sxs-lookup"><span data-stu-id="f174e-114">Abstract element that represents the substituted element within a restriction.</span></span>  <br/> |
+   
+### <a name="parent-elements"></a><span data-ttu-id="f174e-115">親要素</span><span class="sxs-lookup"><span data-stu-id="f174e-115">Parent elements</span></span>
+
+|<span data-ttu-id="f174e-116">**要素**</span><span class="sxs-lookup"><span data-stu-id="f174e-116">**Element**</span></span>|<span data-ttu-id="f174e-117">**説明**</span><span class="sxs-lookup"><span data-stu-id="f174e-117">**Description**</span></span>|
+|:-----|:-----|
+|[<span data-ttu-id="f174e-118">SeekToConditionPageItemView</span><span class="sxs-lookup"><span data-stu-id="f174e-118">SeekToConditionPageItemView</span></span>](seektoconditionpageitemview.md) <br/> |<span data-ttu-id="f174e-119">の**FindItem**または**FindConversation**操作の検索の終了、検索、戻るには、最大のエントリ、および検索方向の開始インデックスを識別するために使用される条件を識別します。</span><span class="sxs-lookup"><span data-stu-id="f174e-119">Identifies the condition that is used to identify the end of a search, the starting index of a search, the maximum entries to return, and the search directions for a **FindItem** or a **FindConversation** operation.</span></span>  <br/> |
+   
+## <a name="remarks"></a><span data-ttu-id="f174e-120">備考</span><span class="sxs-lookup"><span data-stu-id="f174e-120">Remarks</span></span>
+
+<span data-ttu-id="f174e-121">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="f174e-121">This element was introduced in Exchange Server 2013.</span></span>
+  
+<span data-ttu-id="f174e-122">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="f174e-122">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+  
+## <a name="element-information"></a><span data-ttu-id="f174e-123">要素情報</span><span class="sxs-lookup"><span data-stu-id="f174e-123">Element information</span></span>
+
+|||
+|:-----|:-----|
+|<span data-ttu-id="f174e-124">名前空間</span><span class="sxs-lookup"><span data-stu-id="f174e-124">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="f174e-125">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="f174e-125">Schema Name</span></span>  <br/> |<span data-ttu-id="f174e-126">型のスキーマ</span><span class="sxs-lookup"><span data-stu-id="f174e-126">Type schema</span></span>  <br/> |
+|<span data-ttu-id="f174e-127">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="f174e-127">Validation File</span></span>  <br/> |<span data-ttu-id="f174e-128">types.xsd</span><span class="sxs-lookup"><span data-stu-id="f174e-128">types.xsd</span></span>  <br/> |
+|<span data-ttu-id="f174e-129">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="f174e-129">Can Be Empty</span></span>  <br/> ||
+   
+## <a name="see-also"></a><span data-ttu-id="f174e-130">関連項目</span><span class="sxs-lookup"><span data-stu-id="f174e-130">See also</span></span>
+
+
+
+- [<span data-ttu-id="f174e-131">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="f174e-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+
