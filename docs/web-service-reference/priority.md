@@ -50,7 +50,7 @@ ms.locfileid: "19832888"
 
 **優先順位**の要素のテキスト値は、ルールの実行の実行順序を示す整数です。 
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>備考
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   

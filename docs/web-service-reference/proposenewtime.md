@@ -1,0 +1,70 @@
+---
+title: ProposeNewTime
+manager: sethgros
+ms.date: 03/9/2015
+ms.audience: Developer
+ms.topic: reference
+ms.prod: office-online-server
+localization_priority: Normal
+ms.assetid: 6d5977ac-484e-4e53-92ba-58a868eb3395
+description: ProposeNewTime 要素は、会議の出席者が会議の新しい日時を提案できることを示す応答オブジェクトを指定します。
+ms.openlocfilehash: 4a0238d94b29993def8009fae62380bb2c02e8b6
+ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19832904"
+---
+# <a name="proposenewtime"></a>ProposeNewTime
+
+**ProposeNewTime**要素は、会議の出席者が会議の新しい日時を提案できることを示す応答オブジェクトを指定します。 
+  
+```XML
+<ProposeNewTime ObjectName=""></ProposeNewTime>
+```
+
+ **ProposeNewTimeType**
+## <a name="attributes-and-elements"></a>属性および要素
+
+以下のセクションで、属性、子要素、親要素について説明します。
+  
+### <a name="attributes"></a>属性
+
+****
+
+|**属性**|**説明**|
+|:-----|:-----|
+|オブジェクト名  <br/> |応答オブジェクトの名前。  <br/> |
+   
+### <a name="child-elements"></a>子要素
+
+なし。
+  
+### <a name="parent-elements"></a>親要素
+
+[ResponseObjects](responseobjects.md)
+  
+## <a name="remarks"></a>備考
+
+この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。
+  
+この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
+  
+## <a name="element-information"></a>要素情報
+
+|||
+|:-----|:-----|
+|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |タイプのスキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |True  <br/> |
+   
+## <a name="see-also"></a>関連項目
+
+
+
+[ResponseObjects](responseobjects.md)
+
+
+- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+

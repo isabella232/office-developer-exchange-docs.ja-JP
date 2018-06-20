@@ -64,7 +64,7 @@ ms.locfileid: "19831713"
     
 - **完了**には、完了のフラグの状態を示します。 
     
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>備考
 
 この要素を記述するスキーマは、Exchange Web Services.This の要素がホストをで Exchange Server 2010 Service Pack 1 (SP1) を導入する IIS 仮想ディレクトリにあります。
   

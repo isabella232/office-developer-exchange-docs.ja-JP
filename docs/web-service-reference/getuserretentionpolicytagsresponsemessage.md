@@ -46,7 +46,7 @@ ms.locfileid: "19831701"
 
 [ResponseMessages](responsemessages.md)
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>備考
 
 この要素は Exchange Server 2013 で導入されました。
   

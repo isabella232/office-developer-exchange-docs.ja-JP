@@ -44,7 +44,7 @@ ms.locfileid: "19832010"
 
 の**場合は true** 、 **IsExternalMailbox**要素のテキスト値は、外部の組織内にメールボックスがあることを示します。 **False**の値は、組織内にメールボックスがあることを示します。 
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>備考
 
 この要素は Exchange Server 2013 で導入されました。
   
