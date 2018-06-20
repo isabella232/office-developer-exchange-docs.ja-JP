@@ -1,0 +1,66 @@
+---
+title: IPv6End (POX)
+manager: sethgros
+ms.date: 09/17/2015
+ms.audience: Developer
+ms.topic: reference
+localization_priority: Normal
+api_type:
+- schema
+ms.assetid: 85906f6c-4e16-4dd9-a3f2-0c9bffd249ca
+description: IPv6Start 要素の範囲の IP バージョン 6 (IPv6) の末尾を識別するアドレスをネットワーク上のコンピューターを識別するために使用します。
+ms.openlocfilehash: 61fbfe75919d8037c2e5ebcb588ac309e60f0ae7
+ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19831988"
+---
+# <a name="ipv6end-pox"></a><span data-ttu-id="7aa52-103">IPv6End (POX)</span><span class="sxs-lookup"><span data-stu-id="7aa52-103">IPv6End (POX)</span></span>
+
+<span data-ttu-id="7aa52-104">**IPv6Start**要素の範囲の IP バージョン 6 (IPv6) の末尾を識別するアドレスをネットワーク上のコンピューターを識別するために使用します。</span><span class="sxs-lookup"><span data-stu-id="7aa52-104">The **IPv6Start** element identifies the end of a range of IP version 6 (IPv6) addresses that are used to identify a computer on a network.</span></span> 
+  
+[<span data-ttu-id="7aa52-105">(POX) を自動検出</span><span class="sxs-lookup"><span data-stu-id="7aa52-105">AutoDiscover (POX)</span></span>](autodiscover-pox.md)
+  
+[<span data-ttu-id="7aa52-106">応答 (POX)</span><span class="sxs-lookup"><span data-stu-id="7aa52-106">Response (POX)</span></span>](response-pox.md)
+  
+[<span data-ttu-id="7aa52-107">アカウント (POX)</span><span class="sxs-lookup"><span data-stu-id="7aa52-107">Account (POX)</span></span>](account-pox.md)
+  
+[<span data-ttu-id="7aa52-108">プロトコル (POX)</span><span class="sxs-lookup"><span data-stu-id="7aa52-108">Protocol (POX)</span></span>](protocol-pox.md)
+  
+[<span data-ttu-id="7aa52-109">NetworkRequirements (POX)</span><span class="sxs-lookup"><span data-stu-id="7aa52-109">NetworkRequirements (POX)</span></span>](networkrequirements-pox.md)
+  
+[<span data-ttu-id="7aa52-110">IPv6End (POX)</span><span class="sxs-lookup"><span data-stu-id="7aa52-110">IPv6End (POX)</span></span>](ipv6end-pox.md)
+  
+```xml
+<IPv6End/>
+```
+
+## <a name="attributes-and-elements"></a><span data-ttu-id="7aa52-111">属性および要素</span><span class="sxs-lookup"><span data-stu-id="7aa52-111">Attributes and elements</span></span>
+
+<span data-ttu-id="7aa52-112">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="7aa52-112">The following sections describe attributes, child elements, and parent elements.</span></span>
+  
+### <a name="attributes"></a><span data-ttu-id="7aa52-113">属性</span><span class="sxs-lookup"><span data-stu-id="7aa52-113">Attributes</span></span>
+
+<span data-ttu-id="7aa52-114">なし。</span><span class="sxs-lookup"><span data-stu-id="7aa52-114">None.</span></span>
+  
+### <a name="child-elements"></a><span data-ttu-id="7aa52-115">子要素</span><span class="sxs-lookup"><span data-stu-id="7aa52-115">Child elements</span></span>
+
+<span data-ttu-id="7aa52-116">なし。</span><span class="sxs-lookup"><span data-stu-id="7aa52-116">None.</span></span>
+  
+### <a name="parent-elements"></a><span data-ttu-id="7aa52-117">親要素</span><span class="sxs-lookup"><span data-stu-id="7aa52-117">Parent elements</span></span>
+
+|<span data-ttu-id="7aa52-118">**要素**</span><span class="sxs-lookup"><span data-stu-id="7aa52-118">**Element**</span></span>|<span data-ttu-id="7aa52-119">**説明**</span><span class="sxs-lookup"><span data-stu-id="7aa52-119">**Description**</span></span>|
+|:-----|:-----|
+|[<span data-ttu-id="7aa52-120">NetworkRequirements (POX)</span><span class="sxs-lookup"><span data-stu-id="7aa52-120">NetworkRequirements (POX)</span></span>](networkrequirements-pox.md) <br/> |<span data-ttu-id="7aa52-121">使用してクライアント コンピューターが、インターネット サービス プロバイダー (ISP) に一致するネットワーク上にあるかどうかを決定する条件を含むサーバーに接続するための要件です。</span><span class="sxs-lookup"><span data-stu-id="7aa52-121">Contains the criteria that are used to determine whether the client computer is on a network that meets the Internet service provider's (ISP) requirements to connect to the server.</span></span>  <br/> |
+   
+## <a name="text-value"></a><span data-ttu-id="7aa52-122">テキスト値</span><span class="sxs-lookup"><span data-stu-id="7aa52-122">Text value</span></span>
+
+<span data-ttu-id="7aa52-123">テキスト値では、IPv6 アドレスを表します。</span><span class="sxs-lookup"><span data-stu-id="7aa52-123">The text value represents an IPv6 address.</span></span>
+  
+## <a name="see-also"></a><span data-ttu-id="7aa52-124">関連項目</span><span class="sxs-lookup"><span data-stu-id="7aa52-124">See also</span></span>
+
+
+
+[<span data-ttu-id="7aa52-125">交換の POX の自動検出の XML 要素</span><span class="sxs-lookup"><span data-stu-id="7aa52-125">POX Autodiscover XML elements for Exchange</span></span>](pox-autodiscover-xml-elements-for-exchange.md)
+

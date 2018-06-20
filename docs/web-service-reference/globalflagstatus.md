@@ -19,73 +19,73 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 06/15/2018
 ms.locfileid: "19831713"
 ---
-# <a name="globalflagstatus"></a><span data-ttu-id="cabc0-103">GlobalFlagStatus</span><span class="sxs-lookup"><span data-stu-id="cabc0-103">GlobalFlagStatus</span></span>
+# <a name="globalflagstatus"></a><span data-ttu-id="49a43-103">GlobalFlagStatus</span><span class="sxs-lookup"><span data-stu-id="49a43-103">GlobalFlagStatus</span></span>
 
-<span data-ttu-id="cabc0-104">**GlobalFlagStatus**要素には、メールボックス内のすべての会話項目の集計のフラグの状態が含まれています。</span><span class="sxs-lookup"><span data-stu-id="cabc0-104">The **GlobalFlagStatus** element contains the aggregated flag status for all conversation items in a mailbox.</span></span> 
+<span data-ttu-id="49a43-104">**GlobalFlagStatus**要素には、メールボックス内のすべての会話項目の集計のフラグの状態が含まれています。</span><span class="sxs-lookup"><span data-stu-id="49a43-104">The **GlobalFlagStatus** element contains the aggregated flag status for all conversation items in a mailbox.</span></span> 
   
-[<span data-ttu-id="cabc0-105">FindConversationResponse</span><span class="sxs-lookup"><span data-stu-id="cabc0-105">FindConversationResponse</span></span>](findconversationresponse.md)
+[<span data-ttu-id="49a43-105">FindConversationResponse</span><span class="sxs-lookup"><span data-stu-id="49a43-105">FindConversationResponse</span></span>](findconversationresponse.md)
   
-[<span data-ttu-id="cabc0-106">スレッド</span><span class="sxs-lookup"><span data-stu-id="cabc0-106">Conversations</span></span>](conversations-ex15websvcsotherref.md)
+[<span data-ttu-id="49a43-106">スレッド</span><span class="sxs-lookup"><span data-stu-id="49a43-106">Conversations</span></span>](conversations-ex15websvcsotherref.md)
   
-[<span data-ttu-id="cabc0-107">会話 (ConversationType)</span><span class="sxs-lookup"><span data-stu-id="cabc0-107">Conversation (ConversationType)</span></span>](conversation-conversationtype.md)
+[<span data-ttu-id="49a43-107">会話 (ConversationType)</span><span class="sxs-lookup"><span data-stu-id="49a43-107">Conversation (ConversationType)</span></span>](conversation-conversationtype.md)
   
-[<span data-ttu-id="cabc0-108">GlobalFlagStatus</span><span class="sxs-lookup"><span data-stu-id="cabc0-108">GlobalFlagStatus</span></span>](globalflagstatus.md)
+[<span data-ttu-id="49a43-108">GlobalFlagStatus</span><span class="sxs-lookup"><span data-stu-id="49a43-108">GlobalFlagStatus</span></span>](globalflagstatus.md)
   
 ```XML
 <GlobalFlagStatus> NotFlagged | Flagged | Complete </GlobalFlagStatus>
 ```
 
- <span data-ttu-id="cabc0-109">**FlagStatusType**</span><span class="sxs-lookup"><span data-stu-id="cabc0-109">**FlagStatusType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="cabc0-110">属性および要素</span><span class="sxs-lookup"><span data-stu-id="cabc0-110">Attributes and elements</span></span>
+ <span data-ttu-id="49a43-109">**FlagStatusType**</span><span class="sxs-lookup"><span data-stu-id="49a43-109">**FlagStatusType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="49a43-110">属性および要素</span><span class="sxs-lookup"><span data-stu-id="49a43-110">Attributes and elements</span></span>
 
-<span data-ttu-id="cabc0-111">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="cabc0-111">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="49a43-111">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="49a43-111">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="cabc0-112">属性</span><span class="sxs-lookup"><span data-stu-id="cabc0-112">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="49a43-112">属性</span><span class="sxs-lookup"><span data-stu-id="49a43-112">Attributes</span></span>
 
-<span data-ttu-id="cabc0-113">なし。</span><span class="sxs-lookup"><span data-stu-id="cabc0-113">None.</span></span>
+<span data-ttu-id="49a43-113">なし。</span><span class="sxs-lookup"><span data-stu-id="49a43-113">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="cabc0-114">子要素</span><span class="sxs-lookup"><span data-stu-id="cabc0-114">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="49a43-114">子要素</span><span class="sxs-lookup"><span data-stu-id="49a43-114">Child elements</span></span>
 
-<span data-ttu-id="cabc0-115">なし。</span><span class="sxs-lookup"><span data-stu-id="cabc0-115">None.</span></span>
+<span data-ttu-id="49a43-115">なし。</span><span class="sxs-lookup"><span data-stu-id="49a43-115">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="cabc0-116">親要素</span><span class="sxs-lookup"><span data-stu-id="cabc0-116">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="49a43-116">親要素</span><span class="sxs-lookup"><span data-stu-id="49a43-116">Parent elements</span></span>
 
-|<span data-ttu-id="cabc0-117">**要素**</span><span class="sxs-lookup"><span data-stu-id="cabc0-117">**Element**</span></span>|<span data-ttu-id="cabc0-118">**説明**</span><span class="sxs-lookup"><span data-stu-id="cabc0-118">**Description**</span></span>|
+|<span data-ttu-id="49a43-117">**要素**</span><span class="sxs-lookup"><span data-stu-id="49a43-117">**Element**</span></span>|<span data-ttu-id="49a43-118">**説明**</span><span class="sxs-lookup"><span data-stu-id="49a43-118">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="cabc0-119">会話 (ConversationType)</span><span class="sxs-lookup"><span data-stu-id="cabc0-119">Conversation (ConversationType)</span></span>](conversation-conversationtype.md) <br/> |<span data-ttu-id="cabc0-120">1 つのテーマを表します。</span><span class="sxs-lookup"><span data-stu-id="cabc0-120">Represents a single conversation.</span></span>  <br/> |
+|[<span data-ttu-id="49a43-119">会話 (ConversationType)</span><span class="sxs-lookup"><span data-stu-id="49a43-119">Conversation (ConversationType)</span></span>](conversation-conversationtype.md) <br/> |<span data-ttu-id="49a43-120">1 つのテーマを表します。</span><span class="sxs-lookup"><span data-stu-id="49a43-120">Represents a single conversation.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="cabc0-121">テキスト値</span><span class="sxs-lookup"><span data-stu-id="cabc0-121">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="49a43-121">テキスト値</span><span class="sxs-lookup"><span data-stu-id="49a43-121">Text value</span></span>
 
-<span data-ttu-id="cabc0-122">**GlobalFlagStatus**要素のテキスト値は、現在のフォルダー内の会話の項目の集計のフラグの状態です。</span><span class="sxs-lookup"><span data-stu-id="cabc0-122">The text value of the **GlobalFlagStatus** element is the aggregated flag status for conversation items in the current folder.</span></span> <span data-ttu-id="cabc0-123">可能なテキスト値は、次のように。</span><span class="sxs-lookup"><span data-stu-id="cabc0-123">The following are the possible text values:</span></span> 
+<span data-ttu-id="49a43-122">**GlobalFlagStatus**要素のテキスト値は、現在のフォルダー内の会話の項目の集計のフラグの状態です。</span><span class="sxs-lookup"><span data-stu-id="49a43-122">The text value of the **GlobalFlagStatus** element is the aggregated flag status for conversation items in the current folder.</span></span> <span data-ttu-id="49a43-123">可能なテキスト値は、次のように。</span><span class="sxs-lookup"><span data-stu-id="49a43-123">The following are the possible text values:</span></span> 
   
-- <span data-ttu-id="cabc0-124">**NotFlagged** - は、not のフラグが設定された状態を示します。</span><span class="sxs-lookup"><span data-stu-id="cabc0-124">**NotFlagged** - Indicates the not-flagged status.</span></span> 
+- <span data-ttu-id="49a43-124">**NotFlagged** - は、not のフラグが設定された状態を示します。</span><span class="sxs-lookup"><span data-stu-id="49a43-124">**NotFlagged** - Indicates the not-flagged status.</span></span> 
     
-- <span data-ttu-id="cabc0-125">**フラグ付き**では、フラグが設定された状態を示します。</span><span class="sxs-lookup"><span data-stu-id="cabc0-125">**Flagged** - Indicates the flagged status.</span></span> 
+- <span data-ttu-id="49a43-125">**フラグ付き**では、フラグが設定された状態を示します。</span><span class="sxs-lookup"><span data-stu-id="49a43-125">**Flagged** - Indicates the flagged status.</span></span> 
     
-- <span data-ttu-id="cabc0-126">**完了**には、完了のフラグの状態を示します。</span><span class="sxs-lookup"><span data-stu-id="cabc0-126">**Complete** - Indicates the complete flag status.</span></span> 
+- <span data-ttu-id="49a43-126">**完了**には、完了のフラグの状態を示します。</span><span class="sxs-lookup"><span data-stu-id="49a43-126">**Complete** - Indicates the complete flag status.</span></span> 
     
-## <a name="remarks"></a><span data-ttu-id="cabc0-127">Remarks</span><span class="sxs-lookup"><span data-stu-id="cabc0-127">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="49a43-127">備考</span><span class="sxs-lookup"><span data-stu-id="49a43-127">Remarks</span></span>
 
-<span data-ttu-id="cabc0-128">この要素を記述するスキーマは、Exchange Web Services.This の要素がホストをで Exchange Server 2010 Service Pack 1 (SP1) を導入する IIS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="cabc0-128">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.This element was introduced in Exchange Server 2010 Service Pack 1 (SP1).</span></span>
+<span data-ttu-id="49a43-128">この要素を記述するスキーマは、Exchange Web Services.This の要素がホストをで Exchange Server 2010 Service Pack 1 (SP1) を導入する IIS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="49a43-128">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.This element was introduced in Exchange Server 2010 Service Pack 1 (SP1).</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="cabc0-129">要素情報</span><span class="sxs-lookup"><span data-stu-id="cabc0-129">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="49a43-129">要素情報</span><span class="sxs-lookup"><span data-stu-id="49a43-129">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="cabc0-130">名前空間</span><span class="sxs-lookup"><span data-stu-id="cabc0-130">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="cabc0-131">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="cabc0-131">Schema name</span></span>  <br/> |<span data-ttu-id="cabc0-132">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="cabc0-132">Types schema</span></span>  <br/> |
-|<span data-ttu-id="cabc0-133">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="cabc0-133">Validation file</span></span>  <br/> |<span data-ttu-id="cabc0-134">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="cabc0-134">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="cabc0-135">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="cabc0-135">Can be empty</span></span>  <br/> |<span data-ttu-id="cabc0-136">False</span><span class="sxs-lookup"><span data-stu-id="cabc0-136">False</span></span>  <br/> |
+|<span data-ttu-id="49a43-130">名前空間</span><span class="sxs-lookup"><span data-stu-id="49a43-130">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="49a43-131">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="49a43-131">Schema name</span></span>  <br/> |<span data-ttu-id="49a43-132">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="49a43-132">Types schema</span></span>  <br/> |
+|<span data-ttu-id="49a43-133">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="49a43-133">Validation file</span></span>  <br/> |<span data-ttu-id="49a43-134">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="49a43-134">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="49a43-135">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="49a43-135">Can be empty</span></span>  <br/> |<span data-ttu-id="49a43-136">False</span><span class="sxs-lookup"><span data-stu-id="49a43-136">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="cabc0-137">関連項目</span><span class="sxs-lookup"><span data-stu-id="cabc0-137">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="49a43-137">関連項目</span><span class="sxs-lookup"><span data-stu-id="49a43-137">See also</span></span>
 
 
 
-<span data-ttu-id="cabc0-138">
-  [FindConversation 操作](findconversation-operation.md)</span><span class="sxs-lookup"><span data-stu-id="cabc0-138">[FindConversation operation](findconversation-operation.md)</span></span>
+<span data-ttu-id="49a43-138">
+  [FindConversation 操作](findconversation-operation.md)</span><span class="sxs-lookup"><span data-stu-id="49a43-138">[FindConversation operation](findconversation-operation.md)</span></span>
   
-[<span data-ttu-id="cabc0-139">ApplyConversationAction 操作</span><span class="sxs-lookup"><span data-stu-id="cabc0-139">ApplyConversationAction operation</span></span>](applyconversationaction-operation.md)
+[<span data-ttu-id="49a43-139">ApplyConversationAction 操作</span><span class="sxs-lookup"><span data-stu-id="49a43-139">ApplyConversationAction operation</span></span>](applyconversationaction-operation.md)
 
 
-[<span data-ttu-id="cabc0-140">EWS での会話</span><span class="sxs-lookup"><span data-stu-id="cabc0-140">Conversations in EWS</span></span>](http://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
+[<span data-ttu-id="49a43-140">EWS での会話</span><span class="sxs-lookup"><span data-stu-id="49a43-140">Conversations in EWS</span></span>](http://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
 
