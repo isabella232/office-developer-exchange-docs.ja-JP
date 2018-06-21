@@ -1,5 +1,5 @@
 ---
-title: UmEnabled
+title: メンバー
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,53 +7,56 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- UmEnabled
+- Member
 api_type:
 - schema
-ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: UmEnabled 要素は、アカウントのユニファイド メッセージングが有効になっているかどうかを示します。
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
+ms.assetid: af9c5ff8-02a4-41fc-876d-14ac05f1ee77
+description: メンバーの要素は、配布リストのメンバーを表します。
+ms.openlocfilehash: c38e2ed24e78b5199d4d65cce27a00a8e6704037
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/21/2018
-ms.locfileid: "19839769"
+ms.locfileid: "19832434"
 ---
-# <a name="umenabled"></a>UmEnabled
+# <a name="member"></a>メンバー
 
-**UmEnabled**要素は、アカウントのユニファイド メッセージングが有効になっているかどうかを示します。 
+**メンバー**の要素は、配布リストのメンバーを表します。 
   
-```XML
-<UmEnabled>true | false</UmEnabled>
+```xml
+<Member Key="">
+   <Mailbox/>
+   <Status/>
+</Member>
 ```
 
- **ブール型 (Boolean)**
+**MemberType**
+
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
 ### <a name="attributes"></a>属性
 
-なし。
-  
+|**属性**|**説明**|
+|:-----|:-----|
+|キー  <br/> |配布リストのメンバーの一意の識別子を提供します。 この属性は、省略可能です。  <br/> |
+   
 ### <a name="child-elements"></a>子要素
 
-なし。
-  
+|**要素**|**説明**|
+|:-----|:-----|
+|[メールボックス](mailbox.md) <br/> |配布リストのメンバーの電子メール アドレスを表します。 この要素はオプションです。  <br/> |
+|[状態 (MemberStatusType)](status-memberstatustype.md) <br/> |配布リストのメンバーの状態に関する情報を提供します。 この要素はオプションです。  <br/> |
+   
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |ユニファイド メッセージング サービスのサービスの構成情報が含まれています。  <br/> |
+|[メンバー (MemberListType)](members-memberlisttype.md) <br/> |配布リストのメンバーの一覧が含まれています。  <br/> |
    
-## <a name="text-value"></a>テキスト値
-
-**UmEnabled**要素のテキスト値は、アカウントのユニファイド メッセージングが有効になっている場合**は true。** それ以外の場合、値が**false**にします。
-  
 ## <a name="remarks"></a>備考
 
-この要素は必須です。
-  
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
 ## <a name="element-information"></a>要素情報
@@ -66,8 +69,6 @@ ms.locfileid: "19839769"
 |空に設定可能  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>関連項目
-
-
 
 - [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
 

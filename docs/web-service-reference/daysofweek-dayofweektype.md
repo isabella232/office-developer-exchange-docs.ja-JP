@@ -16,7 +16,7 @@ ms.openlocfilehash: a7afb0aeb650284739d559164f06590fc5266c57
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19759946"
 ---
 # <a name="daysofweek-dayofweektype"></a>DaysOfWeek (DayOfWeekType)
@@ -63,7 +63,7 @@ ms.locfileid: "19759946"
 - (、TimeChangePatternTypes では使用されません) の平日    
 - (、TimeChangePatternTypes では使用されません) WeekendDay
     
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>備考
 
 この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   

@@ -16,7 +16,7 @@ ms.openlocfilehash: a6f42a57b2d0fdb760e4c36d3211ba57289a3c7c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19832005"
 ---
 # <a name="isdelegated"></a>IsDelegated
@@ -53,7 +53,7 @@ ms.locfileid: "19832005"
 
 **True**の場合、テキスト値は、会議は、代理人アクセス権限を持つアカウントによって処理されたことを示します。 
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>備考
 
 この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   

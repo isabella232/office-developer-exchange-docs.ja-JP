@@ -12,7 +12,7 @@ ms.openlocfilehash: 8aaaf0db542db36b06631690937b794374036a28
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19839660"
 ---
 # <a name="telexnumbers"></a>TelexNumbers
@@ -42,7 +42,7 @@ ms.locfileid: "19839660"
 
 [ペルソナ](persona.md)
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>備考
 
 この要素は Exchange Server 2013 で導入されました。
   

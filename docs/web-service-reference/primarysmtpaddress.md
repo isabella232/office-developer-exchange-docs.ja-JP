@@ -16,7 +16,7 @@ ms.openlocfilehash: d33bf22af4ddf6b2f6d8d8d434168264acfaea7c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19832881"
 ---
 # <a name="primarysmtpaddress"></a>PrimarySmtpAddress
@@ -52,7 +52,7 @@ ms.locfileid: "19832881"
 
 SMTP アドレスを表す文字列値は、必要があります。
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>備考
 
 Exchange Web サービスでは、メールボックスが、メールボックスのプライマリ SMTP アドレスによって識別することが必要です。 プロキシ アドレスまたは代替アドレスは使用できません。
   

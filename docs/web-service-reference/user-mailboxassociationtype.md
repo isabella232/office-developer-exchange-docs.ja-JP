@@ -12,7 +12,7 @@ ms.openlocfilehash: 340677a293a7c468baf5ee2f723da0b99d9afd3c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19839917"
 ---
 # <a name="user-mailboxassociationtype"></a>ユーザー (MailboxAssociationType)
@@ -35,7 +35,7 @@ ms.locfileid: "19839917"
 
 なし。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>備考
 
 この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。
   

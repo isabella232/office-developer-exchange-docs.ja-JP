@@ -1,5 +1,5 @@
 ---
-title: SendItemResponse
+title: CreateFolder
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,29 +7,30 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- SendItemResponse
+- CreateFolder
 api_type:
 - schema
-ms.assetid: 26ac41c7-57d9-473e-ab7a-bae93e1d2aba
-description: SendItemResponse 要素は、SendItem 要求への応答を定義します。
-ms.openlocfilehash: 41f450e1d4c95f7ba389adcaa2ed7e18ea74d61c
+ms.assetid: 110bada1-517b-4bd6-870d-7086dc879e5d
+description: CreateFolder 要素は、Exchange ストア内のフォルダーを作成する要求を定義します。
+ms.openlocfilehash: e30af23b8ed8669053b94be460d62fbf7abf24c9
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/21/2018
-ms.locfileid: "19833339"
+ms.locfileid: "19759811"
 ---
-# <a name="senditemresponse"></a>SendItemResponse
+# <a name="createfolder"></a>CreateFolder
 
-**SendItemResponse**要素は、SendItem 要求への応答を定義します。 
+**CreateFolder**要素は、Exchange ストア内のフォルダーを作成する要求を定義します。 
   
 ```xml
-<SendItemResponse>
-   <ResponseMessages/>
-</SendItemResponse>
+<CreateFolder>
+   <ParentFolderId/>
+   <Folders/>
+</CreateFolder>
 ```
 
- **SendItemResponseType**
+ **CreateFolderType**
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -42,7 +43,8 @@ ms.locfileid: "19833339"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Exchange Web サービス要求に対する応答メッセージが含まれています。  <br/> |
+|[ParentFolderId (TargetFolderIdType)](parentfolderid-targetfolderidtype.md) <br/> |新しいフォルダーの作成先の場所を識別する要素です。  <br/> |
+|[フォルダー](folders-ex15websvcsotherref.md) <br/> |要素を作成するすべてのフォルダーが含まれています。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -59,17 +61,15 @@ MicrosoftExchange Server 2007 がインストールされているクライア�
 |名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |スキーマ名  <br/> |メッセージ スキーマ  <br/> |
 |検証ファイル  <br/> |Messages.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|空に設定可能  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
 
-  [SendItem 操作](senditem-operation.md)
-  
-[SendItem](senditem.md)
+  [CreateFolder 操作](createfolder-operation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+[フォルダー (Exchange Web サービス) を作成します。](http://msdn.microsoft.com/library/3b15b0ec-8691-45ed-9a24-a91ff732d6cf%28Office.15%29.aspx)
 

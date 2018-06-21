@@ -12,7 +12,7 @@ ms.openlocfilehash: de04c50fab929e590fe4b55472a1d2fa8305c596
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19839732"
 ---
 # <a name="totalconversationsinview"></a>TotalConversationsInView
@@ -44,7 +44,7 @@ ms.locfileid: "19839732"
 
 **TotalConversationsInView**要素のテキスト値は、 **FindConversation**応答で返される会話の数です。 
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>備考
 
 この要素は Exchange Server 2013 で導入されました。
   
