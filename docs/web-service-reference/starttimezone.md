@@ -16,7 +16,7 @@ ms.openlocfilehash: 6d21869c4b3be048db27dcc9f128fff868aebcb5
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19833559"
 ---
 # <a name="starttimezone"></a>StartTimeZone

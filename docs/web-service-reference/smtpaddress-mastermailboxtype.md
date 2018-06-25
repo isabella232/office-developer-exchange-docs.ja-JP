@@ -12,7 +12,7 @@ ms.openlocfilehash: 0ccea2444fbd30627d932ca109fa8a5508c9f86c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19833506"
 ---
 # <a name="smtpaddress-mastermailboxtype"></a>SmtpAddress (MasterMailboxType)
@@ -35,7 +35,7 @@ ms.locfileid: "19833506"
 
 なし。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>備考
 
 この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。
   

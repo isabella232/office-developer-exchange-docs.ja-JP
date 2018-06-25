@@ -12,7 +12,7 @@ ms.openlocfilehash: 2e1f401141aef07a57a214968f6a6bafdf71f0dc
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19839715"
 ---
 # <a name="token-clientaccesstokentype"></a>トークン (ClientAccessTokenType)

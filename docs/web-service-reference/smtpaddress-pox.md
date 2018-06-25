@@ -11,7 +11,7 @@ ms.openlocfilehash: 43ebb328e31cdec11412e80b743d4d4393b7960a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19833507"
 ---
 # <a name="smtpaddress-pox"></a>SmtpAddress (POX)

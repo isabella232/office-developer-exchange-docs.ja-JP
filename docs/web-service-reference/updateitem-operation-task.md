@@ -16,7 +16,7 @@ ms.openlocfilehash: d6f966fa663300b476383a136d30cf611d6bfb9b
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19839864"
 ---
 # <a name="updateitem-operation-task"></a>UpdateItem 処理 (タスク)
