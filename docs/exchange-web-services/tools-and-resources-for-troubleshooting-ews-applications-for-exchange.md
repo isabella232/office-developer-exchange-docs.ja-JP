@@ -10,7 +10,7 @@ ms.openlocfilehash: d8d8ea736ca3b896642ad06f5987caeba8d8d059
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759189"
 ---
 # <a name="tools-and-resources-for-troubleshooting-ews-applications-for-exchange"></a>Exchange の EWS アプリケーションのトラブルシューティングに使用するツールとリソース

@@ -12,7 +12,7 @@ ms.openlocfilehash: 44ee5dc465f4435f0b835d264331cb719fe875c1
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759231"
 ---
 # <a name="create-a-deliveryagent-transport-agent-for-exchange-2013"></a>Exchange 2013 DeliveryAgent トランスポート エージェントを作成します。

@@ -16,7 +16,7 @@ ms.openlocfilehash: 387e998a393c23f416cc5ad8d6c4a7ad4c92ebc7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759971"
 ---
 # <a name="deleteattachmentresponsemessage"></a>DeleteAttachmentResponseMessage

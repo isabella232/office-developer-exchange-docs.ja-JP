@@ -16,7 +16,7 @@ ms.openlocfilehash: 15cea49eb250336cdc6b7d551d53951aff1372c2
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759788"
 ---
 # <a name="count"></a>データの個数

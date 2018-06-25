@@ -10,7 +10,7 @@ ms.openlocfilehash: b384fd5608dc647950d7cd31e861e24c12e3316f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759179"
 ---
 # <a name="persistent-application-settings-in-ews-in-exchange"></a>Exchange の EWS の永続的なアプリケーションの設定

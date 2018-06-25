@@ -10,7 +10,7 @@ ms.openlocfilehash: c03ed585ebd62802000179d8c837786ba5f9aab4
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758899"
 ---
 # <a name="add-and-remove-email-addresses-from-the-blocked-senders-list-by-using-ews-in-exchange"></a>追加し、Exchange の EWS を使用して、[受信拒否リストから電子メール アドレスを削除

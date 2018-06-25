@@ -16,7 +16,7 @@ ms.openlocfilehash: a502371f596967be58b6ead61b4e435bba30be88
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758855"
 ---
 # <a name="cchksgfileserrgetheader-function-reserved"></a>CChkSGFiles.ErrGetHeader 関数 (予約済み)
@@ -58,7 +58,7 @@ Vitual ERRErrGetHeader
 
 なし。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>備考
 
 なし。
   

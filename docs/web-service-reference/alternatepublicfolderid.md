@@ -16,7 +16,7 @@ ms.openlocfilehash: 32e6e75eb381e479baf5fdb5ad0a40b32c1b02a9
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759319"
 ---
 # <a name="alternatepublicfolderid"></a>AlternatePublicFolderId

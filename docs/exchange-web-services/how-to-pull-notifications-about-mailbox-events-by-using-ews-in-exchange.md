@@ -10,7 +10,7 @@ ms.openlocfilehash: 6a04aaf0102c149691a30c2bd2f499e03265bce8
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759043"
 ---
 # <a name="pull-notifications-about-mailbox-events-by-using-ews-in-exchange"></a>EWS を使用して Exchange でメールボックスのイベントに関する通知をプルします。

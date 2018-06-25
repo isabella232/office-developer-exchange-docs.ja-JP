@@ -16,7 +16,7 @@ ms.openlocfilehash: 3bf5aac8ba85675e2941acef6f06eb24f0667d17
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19760645"
 ---
 # <a name="getattachmentresponsemessage"></a>GetAttachmentResponseMessage

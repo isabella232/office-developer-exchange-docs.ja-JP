@@ -12,7 +12,7 @@ ms.openlocfilehash: 5051248a2c8e664d82666bd7b42ee3c3046f43fe
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759626"
 ---
 # <a name="clientextension"></a>ClientExtension
@@ -39,14 +39,14 @@ ms.locfileid: "19759626"
 |IsMandatory  <br/> |アプリケーションが必須かどうかを指定します。 の**場合は true** 、 **IsMandatory**属性のテキスト値は、アプリケーションがメールボックスの必須であることを示します。 **False**の値は、アプリケーションが必須ではないことを示します。 この属性は、省略可能です。  <br/> |
 |IsEnabledByDefault  <br/> |アプリケーションが既定で有効にするかどうかを指定します。 の**場合は true** 、 **IsEnabledByDefault**属性のテキスト値は、アプリケーションが既定で有効になっていることを示します。 **False**の値は、アプリケーションが既定で無効になっていることを示します。 この属性は、省略可能です。  <br/> |
 |受ける  <br/> |アプリケーションの提供先を指定します。 この属性は、省略可能です。  <br/> |
-|種類  <br/> |アプリケーションの種類を指定します。  <br/> |
+|型  <br/> |アプリケーションの種類を指定します。  <br/> |
 |スコープ  <br/> |アプリケーションのスコープを指定します。  <br/> |
 |MarketplaceAssetId  <br/> |アプリケーションの市場の資産の id を指定します。  <br/> |
 |MarketplaceContentMarket  <br/> |マーケットプ レース コンテンツをユーザーの詳細情報の表示し、アプリのレビューを指定します。  <br/> |
 |AppStatus  <br/> |予期しない状態では、メール アプリケーションのステータス コードを指定します。  <br/> |
 |Etoken  <br/> |メールまたは有料の試用版のアプリのライセンス トークンを指定します。  <br/> |
    
-#### <a name="type"></a>種類
+#### <a name="type"></a>型
 
 |**値**|**説明**|
 |:-----|:-----|

@@ -16,7 +16,7 @@ ms.openlocfilehash: 9560273e31a64edb2254489961733dfe7360ad01
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759902"
 ---
 # <a name="data-base64binary"></a>データ (base64Binary)

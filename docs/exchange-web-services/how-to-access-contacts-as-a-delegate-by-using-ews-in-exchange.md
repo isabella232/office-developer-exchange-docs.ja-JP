@@ -10,7 +10,7 @@ ms.openlocfilehash: a7f695dcbe0693809817de84284294dff872aa9c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758913"
 ---
 # <a name="access-contacts-as-a-delegate-by-using-ews-in-exchange"></a>Exchange EWS を使用して代理人としてアクセス連絡先

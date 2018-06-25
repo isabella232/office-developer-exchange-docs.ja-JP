@@ -16,7 +16,7 @@ ms.openlocfilehash: 60cb0839c2f6de69b833c11f4594d40c14cd8887
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759457"
 ---
 # <a name="attendee"></a>Attendee

@@ -16,7 +16,7 @@ ms.openlocfilehash: f12a2ba20f87f7803e492d8422b68c8ecdf9d797
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759968"
 ---
 # <a name="deletedoccurrence"></a>DeletedOccurrence

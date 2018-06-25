@@ -12,7 +12,7 @@ ms.openlocfilehash: 906e078ab6d500a2cb3d364957ffc2fee67a06b4
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759240"
 ---
 # <a name="new-and-updated-exchange-management-shell-cmdlets"></a>新規および更新された Exchange 管理シェル コマンドレット

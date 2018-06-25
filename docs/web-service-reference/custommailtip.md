@@ -16,7 +16,7 @@ ms.openlocfilehash: 5f4d41334213f69e8154892231ab954f166d5bef
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759889"
 ---
 # <a name="custommailtip"></a>CustomMailTip

@@ -10,7 +10,7 @@ ms.openlocfilehash: 72f3c8ddf194e79f42abf709c5607e11992b3a31
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759135"
 ---
 # <a name="license-information"></a>ライセンス情報

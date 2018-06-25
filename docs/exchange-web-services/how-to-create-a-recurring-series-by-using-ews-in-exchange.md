@@ -10,7 +10,7 @@ ms.openlocfilehash: db25fd4c97755248ebbbc7637a71749f485f8fa8
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758932"
 ---
 # <a name="create-a-recurring-series-by-using-ews-in-exchange"></a>Exchange EWS を使用して定期的な系列を作成します。

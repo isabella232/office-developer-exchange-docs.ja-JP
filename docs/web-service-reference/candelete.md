@@ -16,7 +16,7 @@ ms.openlocfilehash: b70b28bd6b3c9452f5d7f249f453218d555754da
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759607"
 ---
 # <a name="candelete"></a>CanDelete

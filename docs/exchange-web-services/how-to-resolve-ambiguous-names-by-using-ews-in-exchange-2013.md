@@ -10,7 +10,7 @@ ms.openlocfilehash: 05a88043083a27d2e6d445cd71e5f3919c5a775d
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759047"
 ---
 # <a name="resolve-ambiguous-names-by-using-ews-in-exchange-2013"></a>Exchange 2013 の EWS を使用してあいまいな名前を解決するには

@@ -12,7 +12,7 @@ ms.openlocfilehash: 03c4c23d433418911240bbe7c337308a989f3739
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758857"
 ---
 #  <a name="validate-backup-integrity-by-using-the-eseutil-tool-in-exchange-2013"></a>Exchange 2013 の Eseutil ツールを使用してバックアップの整合性を検証します。

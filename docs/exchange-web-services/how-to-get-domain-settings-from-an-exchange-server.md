@@ -10,7 +10,7 @@ ms.openlocfilehash: 0dd990cc82762936e7827115685ce0178eafb5ae
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758954"
 ---
 # <a name="get-domain-settings-from-an-exchange-server"></a>Exchange サーバーからドメインの設定を取得します。

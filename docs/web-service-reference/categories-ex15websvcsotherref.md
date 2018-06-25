@@ -16,7 +16,7 @@ ms.openlocfilehash: 8f112a9a736ff4f242b9dfb084b3ad7541cc493d
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759615"
 ---
 # <a name="categories"></a>カテゴリ

@@ -16,7 +16,7 @@ ms.openlocfilehash: 4987685d0c3cefdfad4f5be1368776a5b859bf94
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759941"
 ---
 # <a name="dayofweekindex"></a>DayOfWeekIndex

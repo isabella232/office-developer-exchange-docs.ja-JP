@@ -16,7 +16,7 @@ ms.openlocfilehash: 4e6f31e8ef4f98d8e838ba91167c7dd5d6ab2590
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19760006"
 ---
 # <a name="deliverystatus"></a>DeliveryStatus

@@ -10,7 +10,7 @@ ms.openlocfilehash: cb0c16a74e68b5a16ef0f2011f65b22675950f58
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758897"
 ---
 # <a name="handling-notification-related-errors-in-ews-in-exchange"></a>Exchange における EWS での通知関連エラーの処理

@@ -10,7 +10,7 @@ ms.openlocfilehash: af7b1ec449c24e7fa4db89abb30e5ebc9f8d329e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759045"
 ---
 # <a name="reference-the-ews-managed-api-assembly"></a>EWS のマネージ API のアセンブリを参照します。

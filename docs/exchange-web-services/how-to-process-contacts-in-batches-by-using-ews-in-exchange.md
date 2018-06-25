@@ -10,7 +10,7 @@ ms.openlocfilehash: 7dfbda7fe5e077f92bcf7ebd40af40d76c2d2d22
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759046"
 ---
 # <a name="process-contacts-in-batches-by-using-ews-in-exchange"></a>Exchange EWS を使用してバッチ プロセスの連絡先

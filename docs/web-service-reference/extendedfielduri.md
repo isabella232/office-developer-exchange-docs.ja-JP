@@ -16,7 +16,7 @@ ms.openlocfilehash: 8d946aec8ae2c5e6bb4ca3f1d8ee74250262d373
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19760403"
 ---
 # <a name="extendedfielduri"></a>ExtendedFieldURI

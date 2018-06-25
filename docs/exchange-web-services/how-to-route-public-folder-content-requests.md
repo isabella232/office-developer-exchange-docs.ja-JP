@@ -10,7 +10,7 @@ ms.openlocfilehash: ad36c1526a24d815ec690879d633774d429ed36c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759065"
 ---
 # <a name="route-public-folder-content-requests"></a>パブリック フォルダー コンテンツの要求をルーティングします。

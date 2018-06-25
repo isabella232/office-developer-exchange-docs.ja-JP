@@ -10,7 +10,7 @@ ms.openlocfilehash: 0dc16c3350bb75fb1e91650f0a0f0b7423727eeb
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758887"
 ---
 # <a name="handling-deletion-related-errors-in-ews-in-exchange"></a>Exchange の EWS での削除に関連するエラーの処理

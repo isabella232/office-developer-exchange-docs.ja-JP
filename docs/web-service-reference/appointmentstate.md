@@ -16,7 +16,7 @@ ms.openlocfilehash: 05e92a3fea10a84518b0680c425011a91bc43d93
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759422"
 ---
 # <a name="appointmentstate"></a>AppointmentState

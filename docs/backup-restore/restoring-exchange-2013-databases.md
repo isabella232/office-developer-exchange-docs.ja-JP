@@ -12,7 +12,7 @@ ms.openlocfilehash: d3ca3a884b0ad30f7d7968a9ed435b02aaf205e1
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758891"
 ---
 # <a name="restoring-exchange-2013-databases"></a>Exchange 2013 のデータベースを復元する

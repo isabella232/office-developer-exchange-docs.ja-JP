@@ -10,7 +10,7 @@ ms.openlocfilehash: d93f521f08f93b44b4ecc1f258b03ed24ebdd3dd
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759089"
 ---
 # <a name="managing-user-access-by-using-ews-in-exchange"></a>Exchange において EWS を使用してユーザー アクセスを管理する

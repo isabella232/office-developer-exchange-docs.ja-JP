@@ -12,7 +12,7 @@ ms.openlocfilehash: 6a46a64c9824efdd8df6a08fe1a159e7e42b3731
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759308"
 ---
 # <a name="addressentity"></a>AddressEntity

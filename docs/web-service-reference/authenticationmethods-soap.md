@@ -13,7 +13,7 @@ ms.openlocfilehash: d5b1e73a336edebacca76d63e6c470492be694f3
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759467"
 ---
 # <a name="authenticationmethods-soap"></a>AuthenticationMethods (SOAP)

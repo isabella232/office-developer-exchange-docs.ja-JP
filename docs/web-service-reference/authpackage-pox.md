@@ -13,7 +13,7 @@ ms.openlocfilehash: 120ec00ac82166ae2002a8fbac0edf9a1e23afc7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759468"
 ---
 # <a name="authpackage-pox"></a>AuthPackage (POX)

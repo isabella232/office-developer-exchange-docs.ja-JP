@@ -16,7 +16,7 @@ ms.openlocfilehash: 060dab2da653637420d5900bad3b95823c2e6ea3
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759740"
 ---
 # <a name="contentlocation"></a>ContentLocation

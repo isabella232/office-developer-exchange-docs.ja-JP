@@ -12,7 +12,7 @@ ms.openlocfilehash: 7ae8083aea826726752f1cd3c9f3689fd0dd3fb5
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759758"
 ---
 # <a name="conversationindex-string"></a>ConversationIndex (文字列)

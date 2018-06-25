@@ -16,7 +16,7 @@ ms.openlocfilehash: e0dbe4998217a4dcd237b6dfa3385cc71a2b03e7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759800"
 ---
 # <a name="cchksgfilesidbinvalid-enumeration"></a>CChkSGFiles.iDbInvalid 列挙型

@@ -10,7 +10,7 @@ ms.openlocfilehash: e70ac499da57faa60b4bcb6082648b23d1a7e791
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759082"
 ---
 # <a name="work-with-exchange-mailbox-items-by-using-ews-in-exchange"></a>EWS を使用して Exchange で Exchange メールボックスのアイテムを扱う
@@ -25,7 +25,7 @@ EWS のマネージ API または EWS を使用するには、メールボック
 
 |**目的…**|**EWS マネージ API メソッド**|**EWS 操作**|
 |:-----|:-----|:-----|
-|汎用アイテムを作成する  <br/> |なし。EWS マネージ API を使用して特定のアイテムの種類のみを作成できます。汎用アイテムを作成することはできません。  <br/> |[Createitem メソッド](http://msdn.microsoft.com/library/bcc68f9e-d511-4c29-bba6-ed535524624a%28Office.15%29.aspx) <br/> |
+|汎用アイテムを作成する  <br/> |なし。EWS マネージ API を使用して特定のアイテムの種類のみを作成できます。汎用アイテムを作成することはできません。  <br/> |[CreateItem](http://msdn.microsoft.com/library/bcc68f9e-d511-4c29-bba6-ed535524624a%28Office.15%29.aspx) <br/> |
 |アイテムを取得する  <br/> |[Item.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) <br/> |[GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) <br/> |
 |アイテムを更新する  <br/> |[Item.Update](http://msdn.microsoft.com/en-us/library/office/dd635915%28v=exchg.80%29.aspx) <br/> |[UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
 |アイテムを削除する  <br/> |[Item.Delete](http://msdn.microsoft.com/en-us/library/office/dd635072%28v=exchg.80%29.aspx) <br/> |[DeleteItem](http://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx) <br/> |

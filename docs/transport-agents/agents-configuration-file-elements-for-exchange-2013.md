@@ -16,7 +16,7 @@ ms.openlocfilehash: dd58c4bc21a968db2ca5b13e0c53f7058b29f233
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759236"
 ---
 # <a name="agents-configuration-file-elements-for-exchange-2013"></a>Exchange 2013 のエージェント構成ファイルの要素

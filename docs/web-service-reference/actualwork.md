@@ -16,7 +16,7 @@ ms.openlocfilehash: ff9cfc8ae9256203f8006e8fb4e844efccbe3c37
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759270"
 ---
 # <a name="actualwork"></a>ActualWork

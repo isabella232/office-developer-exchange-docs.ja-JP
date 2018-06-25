@@ -10,7 +10,7 @@ ms.openlocfilehash: 1725498847f89a417b62a06fb8a3109af5c4deb0
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758941"
 ---
 # <a name="create-appointments-in-a-specific-time-zone-by-using-ews-in-exchange"></a>Exchange EWS を使用して、特定のタイム ゾーンで予定を作成します。

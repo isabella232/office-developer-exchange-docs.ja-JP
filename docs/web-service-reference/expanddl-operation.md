@@ -16,7 +16,7 @@ ms.openlocfilehash: e4654120881f81a79358e0e7c0ab016f94db3288
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19760379"
 ---
 # <a name="expanddl-operation"></a>ExpandDL 操作

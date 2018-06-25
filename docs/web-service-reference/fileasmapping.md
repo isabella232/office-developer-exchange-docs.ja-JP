@@ -16,7 +16,7 @@ ms.openlocfilehash: 1ba0ae0daa56a72c29d8c0ccad64e3edae5f0b84
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19760486"
 ---
 # <a name="fileasmapping"></a>FileAsMapping

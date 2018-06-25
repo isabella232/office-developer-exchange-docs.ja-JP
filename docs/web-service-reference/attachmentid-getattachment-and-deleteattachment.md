@@ -16,7 +16,7 @@ ms.openlocfilehash: b0355b4a387c65e97fe973a1667e6b0a517ebf7e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759453"
 ---
 # <a name="attachmentid-getattachment-and-deleteattachment"></a>AttachmentId (GetAttachment と DeleteAttachment)
