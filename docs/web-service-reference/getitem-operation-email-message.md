@@ -16,28 +16,28 @@ ms.openlocfilehash: 133a893ec7cd0c206d9db573f8b952eb3c2286df
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19760775"
 ---
-# <a name="getitem-operation-email-message"></a><span data-ttu-id="2cabb-103">GetItem 操作 (電子メール)</span><span class="sxs-lookup"><span data-stu-id="2cabb-103">GetItem operation (email message)</span></span>
+# <a name="getitem-operation-email-message"></a><span data-ttu-id="fffc3-103">GetItem 操作 (電子メール)</span><span class="sxs-lookup"><span data-stu-id="fffc3-103">GetItem operation (email message)</span></span>
 
-<span data-ttu-id="2cabb-104">GetItem 操作は、電子メール メッセージに関する情報にアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="2cabb-104">The GetItem operation allows the user to access information about e-mail messages.</span></span>
+<span data-ttu-id="fffc3-104">GetItem 操作は、電子メール メッセージに関する情報にアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="fffc3-104">The GetItem operation allows the user to access information about e-mail messages.</span></span>
   
-## <a name="using-the-getitem-operation-for-messages"></a><span data-ttu-id="2cabb-105">メッセージの GetItem 操作を使用します。</span><span class="sxs-lookup"><span data-stu-id="2cabb-105">Using the GetItem Operation for Messages</span></span>
+## <a name="using-the-getitem-operation-for-messages"></a><span data-ttu-id="fffc3-105">メッセージの GetItem 操作を使用します。</span><span class="sxs-lookup"><span data-stu-id="fffc3-105">Using the GetItem Operation for Messages</span></span>
 
-<span data-ttu-id="2cabb-106">GetItem 要求は、次の情報を用意する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2cabb-106">The GetItem request must have the following information:</span></span>
+<span data-ttu-id="fffc3-106">GetItem 要求は、次の情報を用意する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fffc3-106">The GetItem request must have the following information:</span></span>
   
-- <span data-ttu-id="2cabb-107">返される項目の情報を識別するのには[アイテム Id](itemid.md)の要素です。</span><span class="sxs-lookup"><span data-stu-id="2cabb-107">The [ItemId](itemid.md) element to identify the item information to return.</span></span> 
+- <span data-ttu-id="fffc3-107">返される項目の情報を識別するのには[アイテム Id](itemid.md)の要素です。</span><span class="sxs-lookup"><span data-stu-id="fffc3-107">The [ItemId](itemid.md) element to identify the item information to return.</span></span> 
     
-- <span data-ttu-id="2cabb-108">返す項目のプロパティを識別する[ItemShape](itemshape.md)要素です。</span><span class="sxs-lookup"><span data-stu-id="2cabb-108">The [ItemShape](itemshape.md) element to identify the item properties to return.</span></span> 
+- <span data-ttu-id="fffc3-108">返す項目のプロパティを識別する[ItemShape](itemshape.md)要素です。</span><span class="sxs-lookup"><span data-stu-id="fffc3-108">The [ItemShape](itemshape.md) element to identify the item properties to return.</span></span> 
     
-## <a name="getitem-request-example"></a><span data-ttu-id="2cabb-109">GetItem 要求の例</span><span class="sxs-lookup"><span data-stu-id="2cabb-109">GetItem request example</span></span>
+## <a name="getitem-request-example"></a><span data-ttu-id="fffc3-109">GetItem 要求の例</span><span class="sxs-lookup"><span data-stu-id="fffc3-109">GetItem request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="2cabb-110">説明</span><span class="sxs-lookup"><span data-stu-id="2cabb-110">Description</span></span>
+### <a name="description"></a><span data-ttu-id="fffc3-110">説明</span><span class="sxs-lookup"><span data-stu-id="fffc3-110">Description</span></span>
 
-<span data-ttu-id="2cabb-111">GetItem 要求の次の例では、電子メール メッセージに関する情報にアクセスする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="2cabb-111">The following example of a GetItem request shows how to access information about e-mail messages.</span></span>
+<span data-ttu-id="fffc3-111">GetItem 要求の次の例では、電子メール メッセージに関する情報にアクセスする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="fffc3-111">The following example of a GetItem request shows how to access information about e-mail messages.</span></span>
   
-### <a name="code"></a><span data-ttu-id="2cabb-112">コード</span><span class="sxs-lookup"><span data-stu-id="2cabb-112">Code</span></span>
+### <a name="code"></a><span data-ttu-id="fffc3-112">コード</span><span class="sxs-lookup"><span data-stu-id="fffc3-112">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -62,29 +62,29 @@ ms.locfileid: "19760775"
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a><span data-ttu-id="2cabb-113">要素を要求します。</span><span class="sxs-lookup"><span data-stu-id="2cabb-113">Request elements</span></span>
+### <a name="request-elements"></a><span data-ttu-id="fffc3-113">要素を要求します。</span><span class="sxs-lookup"><span data-stu-id="fffc3-113">Request elements</span></span>
 
-<span data-ttu-id="2cabb-114">次の要素は、要求で使用されます。</span><span class="sxs-lookup"><span data-stu-id="2cabb-114">The following elements are used in the request:</span></span>
+<span data-ttu-id="fffc3-114">次の要素は、要求で使用されます。</span><span class="sxs-lookup"><span data-stu-id="fffc3-114">The following elements are used in the request:</span></span>
   
-- [<span data-ttu-id="2cabb-115">GetItem</span><span class="sxs-lookup"><span data-stu-id="2cabb-115">GetItem</span></span>](getitem.md)
+- [<span data-ttu-id="fffc3-115">GetItem</span><span class="sxs-lookup"><span data-stu-id="fffc3-115">GetItem</span></span>](getitem.md)
     
-- [<span data-ttu-id="2cabb-116">ItemShape</span><span class="sxs-lookup"><span data-stu-id="2cabb-116">ItemShape</span></span>](itemshape.md)
+- [<span data-ttu-id="fffc3-116">ItemShape</span><span class="sxs-lookup"><span data-stu-id="fffc3-116">ItemShape</span></span>](itemshape.md)
     
-- [<span data-ttu-id="2cabb-117">BaseShape</span><span class="sxs-lookup"><span data-stu-id="2cabb-117">BaseShape</span></span>](baseshape.md)
+- [<span data-ttu-id="fffc3-117">BaseShape</span><span class="sxs-lookup"><span data-stu-id="fffc3-117">BaseShape</span></span>](baseshape.md)
     
-- [<span data-ttu-id="2cabb-118">IncludeMimeContent</span><span class="sxs-lookup"><span data-stu-id="2cabb-118">IncludeMimeContent</span></span>](includemimecontent.md)
+- [<span data-ttu-id="fffc3-118">IncludeMimeContent</span><span class="sxs-lookup"><span data-stu-id="fffc3-118">IncludeMimeContent</span></span>](includemimecontent.md)
     
-- [<span data-ttu-id="2cabb-119">Itemid</span><span class="sxs-lookup"><span data-stu-id="2cabb-119">ItemIds</span></span>](itemids.md)
+- [<span data-ttu-id="fffc3-119">Itemid</span><span class="sxs-lookup"><span data-stu-id="fffc3-119">ItemIds</span></span>](itemids.md)
     
-- [<span data-ttu-id="2cabb-120">ItemId</span><span class="sxs-lookup"><span data-stu-id="2cabb-120">ItemId</span></span>](itemid.md)
+- [<span data-ttu-id="fffc3-120">ItemId</span><span class="sxs-lookup"><span data-stu-id="fffc3-120">ItemId</span></span>](itemid.md)
     
-## <a name="successful-getitem-e-mail-message-response-example"></a><span data-ttu-id="2cabb-121">成功 GetItem (電子メール メッセージ) の応答の例</span><span class="sxs-lookup"><span data-stu-id="2cabb-121">Successful GetItem (E-mail Message) response example</span></span>
+## <a name="successful-getitem-e-mail-message-response-example"></a><span data-ttu-id="fffc3-121">成功 GetItem (電子メール メッセージ) の応答の例</span><span class="sxs-lookup"><span data-stu-id="fffc3-121">Successful GetItem (E-mail Message) response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="2cabb-122">説明</span><span class="sxs-lookup"><span data-stu-id="2cabb-122">Description</span></span>
+### <a name="description"></a><span data-ttu-id="fffc3-122">説明</span><span class="sxs-lookup"><span data-stu-id="fffc3-122">Description</span></span>
 
-<span data-ttu-id="2cabb-123">GetItem 要求に正常な応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2cabb-123">The following example shows a successful response to the GetItem request.</span></span>
+<span data-ttu-id="fffc3-123">GetItem 要求に正常な応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="fffc3-123">The following example shows a successful response to the GetItem request.</span></span>
   
-### <a name="code"></a><span data-ttu-id="2cabb-124">コード</span><span class="sxs-lookup"><span data-stu-id="2cabb-124">Code</span></span>
+### <a name="code"></a><span data-ttu-id="fffc3-124">コード</span><span class="sxs-lookup"><span data-stu-id="fffc3-124">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -157,79 +157,79 @@ ms.locfileid: "19760775"
 </soap:Envelope>
 ```
 
-### <a name="comments"></a><span data-ttu-id="2cabb-125">コメント</span><span class="sxs-lookup"><span data-stu-id="2cabb-125">Comments</span></span>
+### <a name="comments"></a><span data-ttu-id="fffc3-125">コメント</span><span class="sxs-lookup"><span data-stu-id="fffc3-125">Comments</span></span>
 
-<span data-ttu-id="2cabb-126">MIME コンテンツ、フォルダー、およびアイテムの識別子は、読みやすさを保持するために短縮されています。</span><span class="sxs-lookup"><span data-stu-id="2cabb-126">The MIME content, folder, and item identifiers have been shortened to preserve readability.</span></span>
+<span data-ttu-id="fffc3-126">MIME コンテンツ、フォルダー、およびアイテムの識別子は、読みやすさを保持するために短縮されています。</span><span class="sxs-lookup"><span data-stu-id="fffc3-126">The MIME content, folder, and item identifiers have been shortened to preserve readability.</span></span>
   
-### <a name="successful-response-elements"></a><span data-ttu-id="2cabb-127">正常な応答の要素</span><span class="sxs-lookup"><span data-stu-id="2cabb-127">Successful response elements</span></span>
+### <a name="successful-response-elements"></a><span data-ttu-id="fffc3-127">正常な応答の要素</span><span class="sxs-lookup"><span data-stu-id="fffc3-127">Successful response elements</span></span>
 
-<span data-ttu-id="2cabb-128">次の要素は、応答で使用されます。</span><span class="sxs-lookup"><span data-stu-id="2cabb-128">The following elements are used in the response:</span></span>
+<span data-ttu-id="fffc3-128">次の要素は、応答で使用されます。</span><span class="sxs-lookup"><span data-stu-id="fffc3-128">The following elements are used in the response:</span></span>
   
-- [<span data-ttu-id="2cabb-129">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="2cabb-129">ServerVersionInfo</span></span>](serverversioninfo.md)
+- [<span data-ttu-id="fffc3-129">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="fffc3-129">ServerVersionInfo</span></span>](serverversioninfo.md)
     
-- [<span data-ttu-id="2cabb-130">GetItemResponse</span><span class="sxs-lookup"><span data-stu-id="2cabb-130">GetItemResponse</span></span>](getitemresponse.md)
+- [<span data-ttu-id="fffc3-130">GetItemResponse</span><span class="sxs-lookup"><span data-stu-id="fffc3-130">GetItemResponse</span></span>](getitemresponse.md)
     
-- [<span data-ttu-id="2cabb-131">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="2cabb-131">ResponseMessages</span></span>](responsemessages.md)
+- [<span data-ttu-id="fffc3-131">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="fffc3-131">ResponseMessages</span></span>](responsemessages.md)
     
-- [<span data-ttu-id="2cabb-132">GetItemResponseMessage</span><span class="sxs-lookup"><span data-stu-id="2cabb-132">GetItemResponseMessage</span></span>](getitemresponsemessage.md)
+- [<span data-ttu-id="fffc3-132">GetItemResponseMessage</span><span class="sxs-lookup"><span data-stu-id="fffc3-132">GetItemResponseMessage</span></span>](getitemresponsemessage.md)
     
-- [<span data-ttu-id="2cabb-133">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="2cabb-133">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="fffc3-133">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="fffc3-133">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="2cabb-134">Items</span><span class="sxs-lookup"><span data-stu-id="2cabb-134">Items</span></span>](items.md)
+- [<span data-ttu-id="fffc3-134">Items</span><span class="sxs-lookup"><span data-stu-id="fffc3-134">Items</span></span>](items.md)
     
-- [<span data-ttu-id="2cabb-135">Message</span><span class="sxs-lookup"><span data-stu-id="2cabb-135">Message</span></span>](message-ex15websvcsotherref.md)
+- [<span data-ttu-id="fffc3-135">Message</span><span class="sxs-lookup"><span data-stu-id="fffc3-135">Message</span></span>](message-ex15websvcsotherref.md)
     
-- [<span data-ttu-id="2cabb-136">MimeContent</span><span class="sxs-lookup"><span data-stu-id="2cabb-136">MimeContent</span></span>](mimecontent.md)
+- [<span data-ttu-id="fffc3-136">MimeContent</span><span class="sxs-lookup"><span data-stu-id="fffc3-136">MimeContent</span></span>](mimecontent.md)
     
-- [<span data-ttu-id="2cabb-137">ItemId</span><span class="sxs-lookup"><span data-stu-id="2cabb-137">ItemId</span></span>](itemid.md)
+- [<span data-ttu-id="fffc3-137">ItemId</span><span class="sxs-lookup"><span data-stu-id="fffc3-137">ItemId</span></span>](itemid.md)
     
-- [<span data-ttu-id="2cabb-138">Subject</span><span class="sxs-lookup"><span data-stu-id="2cabb-138">Subject</span></span>](subject.md)
+- [<span data-ttu-id="fffc3-138">Subject</span><span class="sxs-lookup"><span data-stu-id="fffc3-138">Subject</span></span>](subject.md)
     
-- [<span data-ttu-id="2cabb-139">Sensitivity</span><span class="sxs-lookup"><span data-stu-id="2cabb-139">Sensitivity</span></span>](sensitivity.md)
+- [<span data-ttu-id="fffc3-139">Sensitivity</span><span class="sxs-lookup"><span data-stu-id="fffc3-139">Sensitivity</span></span>](sensitivity.md)
     
-- [<span data-ttu-id="2cabb-140">Body/本文</span><span class="sxs-lookup"><span data-stu-id="2cabb-140">Body</span></span>](body.md)
+- [<span data-ttu-id="fffc3-140">Body/本文</span><span class="sxs-lookup"><span data-stu-id="fffc3-140">Body</span></span>](body.md)
     
-- [<span data-ttu-id="2cabb-141">Size</span><span class="sxs-lookup"><span data-stu-id="2cabb-141">Size</span></span>](size.md)
+- [<span data-ttu-id="fffc3-141">Size</span><span class="sxs-lookup"><span data-stu-id="fffc3-141">Size</span></span>](size.md)
     
-- [<span data-ttu-id="2cabb-142">DateTimeSent</span><span class="sxs-lookup"><span data-stu-id="2cabb-142">DateTimeSent</span></span>](datetimesent.md)
+- [<span data-ttu-id="fffc3-142">DateTimeSent</span><span class="sxs-lookup"><span data-stu-id="fffc3-142">DateTimeSent</span></span>](datetimesent.md)
     
-- [<span data-ttu-id="2cabb-143">DateTimeCreated</span><span class="sxs-lookup"><span data-stu-id="2cabb-143">DateTimeCreated</span></span>](datetimecreated.md)
+- [<span data-ttu-id="fffc3-143">DateTimeCreated</span><span class="sxs-lookup"><span data-stu-id="fffc3-143">DateTimeCreated</span></span>](datetimecreated.md)
     
-- [<span data-ttu-id="2cabb-144">ResponseObjects</span><span class="sxs-lookup"><span data-stu-id="2cabb-144">ResponseObjects</span></span>](responseobjects.md)
+- [<span data-ttu-id="fffc3-144">ResponseObjects</span><span class="sxs-lookup"><span data-stu-id="fffc3-144">ResponseObjects</span></span>](responseobjects.md)
     
-- [<span data-ttu-id="2cabb-145">ReplyToItem</span><span class="sxs-lookup"><span data-stu-id="2cabb-145">ReplyToItem</span></span>](replytoitem.md)
+- [<span data-ttu-id="fffc3-145">ReplyToItem</span><span class="sxs-lookup"><span data-stu-id="fffc3-145">ReplyToItem</span></span>](replytoitem.md)
     
-- [<span data-ttu-id="2cabb-146">ReplyAllToItem</span><span class="sxs-lookup"><span data-stu-id="2cabb-146">ReplyAllToItem</span></span>](replyalltoitem.md)
+- [<span data-ttu-id="fffc3-146">ReplyAllToItem</span><span class="sxs-lookup"><span data-stu-id="fffc3-146">ReplyAllToItem</span></span>](replyalltoitem.md)
     
-- [<span data-ttu-id="2cabb-147">ForwardItem</span><span class="sxs-lookup"><span data-stu-id="2cabb-147">ForwardItem</span></span>](forwarditem.md)
+- [<span data-ttu-id="fffc3-147">ForwardItem</span><span class="sxs-lookup"><span data-stu-id="fffc3-147">ForwardItem</span></span>](forwarditem.md)
     
-- [<span data-ttu-id="2cabb-148">添付ファイル付き</span><span class="sxs-lookup"><span data-stu-id="2cabb-148">HasAttachments</span></span>](hasattachments.md)
+- [<span data-ttu-id="fffc3-148">添付ファイル付き</span><span class="sxs-lookup"><span data-stu-id="fffc3-148">HasAttachments</span></span>](hasattachments.md)
     
-- [<span data-ttu-id="2cabb-149">ToRecipients</span><span class="sxs-lookup"><span data-stu-id="2cabb-149">ToRecipients</span></span>](torecipients.md)
+- [<span data-ttu-id="fffc3-149">ToRecipients</span><span class="sxs-lookup"><span data-stu-id="fffc3-149">ToRecipients</span></span>](torecipients.md)
     
-- [<span data-ttu-id="2cabb-150">メールボックス</span><span class="sxs-lookup"><span data-stu-id="2cabb-150">Mailbox</span></span>](mailbox.md)
+- [<span data-ttu-id="fffc3-150">メールボックス</span><span class="sxs-lookup"><span data-stu-id="fffc3-150">Mailbox</span></span>](mailbox.md)
     
-- [<span data-ttu-id="2cabb-151">名 (EmailAddressType)</span><span class="sxs-lookup"><span data-stu-id="2cabb-151">Name (EmailAddressType)</span></span>](name-emailaddresstype.md)
+- [<span data-ttu-id="fffc3-151">名 (EmailAddressType)</span><span class="sxs-lookup"><span data-stu-id="fffc3-151">Name (EmailAddressType)</span></span>](name-emailaddresstype.md)
     
-- [<span data-ttu-id="2cabb-152">EmailAddress (NonEmptyStringType)</span><span class="sxs-lookup"><span data-stu-id="2cabb-152">EmailAddress (NonEmptyStringType)</span></span>](emailaddress-nonemptystringtype.md)
+- [<span data-ttu-id="fffc3-152">EmailAddress (NonEmptyStringType)</span><span class="sxs-lookup"><span data-stu-id="fffc3-152">EmailAddress (NonEmptyStringType)</span></span>](emailaddress-nonemptystringtype.md)
     
-- [<span data-ttu-id="2cabb-153">RoutingType (EmailAddressType)</span><span class="sxs-lookup"><span data-stu-id="2cabb-153">RoutingType (EmailAddressType)</span></span>](routingtype-emailaddresstype.md)
+- [<span data-ttu-id="fffc3-153">RoutingType (EmailAddressType)</span><span class="sxs-lookup"><span data-stu-id="fffc3-153">RoutingType (EmailAddressType)</span></span>](routingtype-emailaddresstype.md)
     
-- [<span data-ttu-id="2cabb-154">IsReadReceiptRequested</span><span class="sxs-lookup"><span data-stu-id="2cabb-154">IsReadReceiptRequested</span></span>](isreadreceiptrequested.md)
+- [<span data-ttu-id="fffc3-154">IsReadReceiptRequested</span><span class="sxs-lookup"><span data-stu-id="fffc3-154">IsReadReceiptRequested</span></span>](isreadreceiptrequested.md)
     
-- [<span data-ttu-id="2cabb-155">IsDeliveryReceiptRequested</span><span class="sxs-lookup"><span data-stu-id="2cabb-155">IsDeliveryReceiptRequested</span></span>](isdeliveryreceiptrequested.md)
+- [<span data-ttu-id="fffc3-155">IsDeliveryReceiptRequested</span><span class="sxs-lookup"><span data-stu-id="fffc3-155">IsDeliveryReceiptRequested</span></span>](isdeliveryreceiptrequested.md)
     
-- [<span data-ttu-id="2cabb-156">From</span><span class="sxs-lookup"><span data-stu-id="2cabb-156">From</span></span>](from.md)
+- [<span data-ttu-id="fffc3-156">From</span><span class="sxs-lookup"><span data-stu-id="fffc3-156">From</span></span>](from.md)
     
-- [<span data-ttu-id="2cabb-157">IsRead</span><span class="sxs-lookup"><span data-stu-id="2cabb-157">IsRead</span></span>](isread.md)
+- [<span data-ttu-id="fffc3-157">IsRead</span><span class="sxs-lookup"><span data-stu-id="fffc3-157">IsRead</span></span>](isread.md)
     
-## <a name="getitem-e-mail-message-error-response-example"></a><span data-ttu-id="2cabb-158">GetItem (電子メール メッセージ) のエラー応答の例</span><span class="sxs-lookup"><span data-stu-id="2cabb-158">GetItem (E-mail Message) Error response example</span></span>
+## <a name="getitem-e-mail-message-error-response-example"></a><span data-ttu-id="fffc3-158">GetItem (電子メール メッセージ) のエラー応答の例</span><span class="sxs-lookup"><span data-stu-id="fffc3-158">GetItem (E-mail Message) Error response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="2cabb-159">説明</span><span class="sxs-lookup"><span data-stu-id="2cabb-159">Description</span></span>
+### <a name="description"></a><span data-ttu-id="fffc3-159">説明</span><span class="sxs-lookup"><span data-stu-id="fffc3-159">Description</span></span>
 
-<span data-ttu-id="2cabb-160">GetItem 要求に対してエラー応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2cabb-160">The following example shows an error response to a GetItem request.</span></span> <span data-ttu-id="2cabb-161">無効な追加のプロパティを取得しようとしてエラーが発生しました。</span><span class="sxs-lookup"><span data-stu-id="2cabb-161">The error was caused by an attempt to get an invalid additional property.</span></span>
+<span data-ttu-id="fffc3-160">GetItem 要求に対してエラー応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="fffc3-160">The following example shows an error response to a GetItem request.</span></span> <span data-ttu-id="fffc3-161">無効な追加のプロパティを取得しようとしてエラーが発生しました。</span><span class="sxs-lookup"><span data-stu-id="fffc3-161">The error was caused by an attempt to get an invalid additional property.</span></span>
   
-### <a name="code"></a><span data-ttu-id="2cabb-162">コード</span><span class="sxs-lookup"><span data-stu-id="2cabb-162">Code</span></span>
+### <a name="code"></a><span data-ttu-id="fffc3-162">コード</span><span class="sxs-lookup"><span data-stu-id="fffc3-162">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -260,32 +260,32 @@ ms.locfileid: "19760775"
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a><span data-ttu-id="2cabb-163">エラー応答の要素</span><span class="sxs-lookup"><span data-stu-id="2cabb-163">Error response elements</span></span>
+### <a name="error-response-elements"></a><span data-ttu-id="fffc3-163">エラー応答の要素</span><span class="sxs-lookup"><span data-stu-id="fffc3-163">Error response elements</span></span>
 
-<span data-ttu-id="2cabb-164">エラー応答では、次の要素が使用されます。</span><span class="sxs-lookup"><span data-stu-id="2cabb-164">The following elements are used in the error response:</span></span>
+<span data-ttu-id="fffc3-164">エラー応答では、次の要素が使用されます。</span><span class="sxs-lookup"><span data-stu-id="fffc3-164">The following elements are used in the error response:</span></span>
   
-- [<span data-ttu-id="2cabb-165">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="2cabb-165">ServerVersionInfo</span></span>](serverversioninfo.md)
+- [<span data-ttu-id="fffc3-165">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="fffc3-165">ServerVersionInfo</span></span>](serverversioninfo.md)
     
-- [<span data-ttu-id="2cabb-166">GetItemResponse</span><span class="sxs-lookup"><span data-stu-id="2cabb-166">GetItemResponse</span></span>](getitemresponse.md)
+- [<span data-ttu-id="fffc3-166">GetItemResponse</span><span class="sxs-lookup"><span data-stu-id="fffc3-166">GetItemResponse</span></span>](getitemresponse.md)
     
-- [<span data-ttu-id="2cabb-167">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="2cabb-167">ResponseMessages</span></span>](responsemessages.md)
+- [<span data-ttu-id="fffc3-167">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="fffc3-167">ResponseMessages</span></span>](responsemessages.md)
     
-- [<span data-ttu-id="2cabb-168">GetItemResponseMessage</span><span class="sxs-lookup"><span data-stu-id="2cabb-168">GetItemResponseMessage</span></span>](getitemresponsemessage.md)
+- [<span data-ttu-id="fffc3-168">GetItemResponseMessage</span><span class="sxs-lookup"><span data-stu-id="fffc3-168">GetItemResponseMessage</span></span>](getitemresponsemessage.md)
     
-- [<span data-ttu-id="2cabb-169">MessageText</span><span class="sxs-lookup"><span data-stu-id="2cabb-169">MessageText</span></span>](messagetext.md)
+- [<span data-ttu-id="fffc3-169">MessageText</span><span class="sxs-lookup"><span data-stu-id="fffc3-169">MessageText</span></span>](messagetext.md)
     
-- [<span data-ttu-id="2cabb-170">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="2cabb-170">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="fffc3-170">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="fffc3-170">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="2cabb-171">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="2cabb-171">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
+- [<span data-ttu-id="fffc3-171">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="fffc3-171">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
     
-- [<span data-ttu-id="2cabb-172">MessageXml</span><span class="sxs-lookup"><span data-stu-id="2cabb-172">MessageXml</span></span>](messagexml.md)
+- [<span data-ttu-id="fffc3-172">MessageXml</span><span class="sxs-lookup"><span data-stu-id="fffc3-172">MessageXml</span></span>](messagexml.md)
     
-- [<span data-ttu-id="2cabb-173">FieldURI</span><span class="sxs-lookup"><span data-stu-id="2cabb-173">FieldURI</span></span>](fielduri.md)
+- [<span data-ttu-id="fffc3-173">FieldURI</span><span class="sxs-lookup"><span data-stu-id="fffc3-173">FieldURI</span></span>](fielduri.md)
     
-## <a name="see-also"></a><span data-ttu-id="2cabb-174">関連項目</span><span class="sxs-lookup"><span data-stu-id="2cabb-174">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="fffc3-174">関連項目</span><span class="sxs-lookup"><span data-stu-id="fffc3-174">See also</span></span>
 
 
 
-<span data-ttu-id="2cabb-175">
-  [GetItem 操作](getitem-operation.md)</span><span class="sxs-lookup"><span data-stu-id="2cabb-175">[GetItem operation](getitem-operation.md)</span></span>
+<span data-ttu-id="fffc3-175">
+  [GetItem 操作](getitem-operation.md)</span><span class="sxs-lookup"><span data-stu-id="fffc3-175">[GetItem operation](getitem-operation.md)</span></span>
 

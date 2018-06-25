@@ -16,53 +16,53 @@ ms.openlocfilehash: b0355b4a387c65e97fe973a1667e6b0a517ebf7e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759453"
 ---
-# <a name="attachmentid-getattachment-and-deleteattachment"></a><span data-ttu-id="d5255-103">AttachmentId (GetAttachment と DeleteAttachment)</span><span class="sxs-lookup"><span data-stu-id="d5255-103">AttachmentId (GetAttachment and DeleteAttachment)</span></span>
+# <a name="attachmentid-getattachment-and-deleteattachment"></a><span data-ttu-id="d5b41-103">AttachmentId (GetAttachment と DeleteAttachment)</span><span class="sxs-lookup"><span data-stu-id="d5b41-103">AttachmentId (GetAttachment and DeleteAttachment)</span></span>
 
-<span data-ttu-id="d5255-104">**AttachmentId**要素は、単一の添付ファイルを識別します。</span><span class="sxs-lookup"><span data-stu-id="d5255-104">The **AttachmentId** element identifies a single attachment.</span></span> 
+<span data-ttu-id="d5b41-104">**AttachmentId**要素は、単一の添付ファイルを識別します。</span><span class="sxs-lookup"><span data-stu-id="d5b41-104">The **AttachmentId** element identifies a single attachment.</span></span> 
   
 ```xml
 <AttachmentId Id="" />
 ```
 
- <span data-ttu-id="d5255-105">**RequestAttachmentIdType**</span><span class="sxs-lookup"><span data-stu-id="d5255-105">**RequestAttachmentIdType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="d5255-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="d5255-106">Attributes and elements</span></span>
+ <span data-ttu-id="d5b41-105">**RequestAttachmentIdType**</span><span class="sxs-lookup"><span data-stu-id="d5b41-105">**RequestAttachmentIdType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="d5b41-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="d5b41-106">Attributes and elements</span></span>
 
-<span data-ttu-id="d5255-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="d5255-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="d5b41-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="d5b41-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="d5255-108">属性</span><span class="sxs-lookup"><span data-stu-id="d5255-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="d5b41-108">属性</span><span class="sxs-lookup"><span data-stu-id="d5b41-108">Attributes</span></span>
 
-|<span data-ttu-id="d5255-109">**属性**</span><span class="sxs-lookup"><span data-stu-id="d5255-109">**Attribute**</span></span>|<span data-ttu-id="d5255-110">**説明**</span><span class="sxs-lookup"><span data-stu-id="d5255-110">**Description**</span></span>|
+|<span data-ttu-id="d5b41-109">**属性**</span><span class="sxs-lookup"><span data-stu-id="d5b41-109">**Attribute**</span></span>|<span data-ttu-id="d5b41-110">**説明**</span><span class="sxs-lookup"><span data-stu-id="d5b41-110">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="d5255-111">**Id**</span><span class="sxs-lookup"><span data-stu-id="d5255-111">**Id**</span></span> <br/> |<span data-ttu-id="d5255-112">添付ファイル識別子を指定します。</span><span class="sxs-lookup"><span data-stu-id="d5255-112">Specifies the attachment identifier.</span></span>  <br/> |
+|<span data-ttu-id="d5b41-111">**Id**</span><span class="sxs-lookup"><span data-stu-id="d5b41-111">**Id**</span></span> <br/> |<span data-ttu-id="d5b41-112">添付ファイル識別子を指定します。</span><span class="sxs-lookup"><span data-stu-id="d5b41-112">Specifies the attachment identifier.</span></span>  <br/> |
    
-### <a name="child-elements"></a><span data-ttu-id="d5255-113">子要素</span><span class="sxs-lookup"><span data-stu-id="d5255-113">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="d5b41-113">子要素</span><span class="sxs-lookup"><span data-stu-id="d5b41-113">Child elements</span></span>
 
-<span data-ttu-id="d5255-114">なし。</span><span class="sxs-lookup"><span data-stu-id="d5255-114">None.</span></span>
+<span data-ttu-id="d5b41-114">なし。</span><span class="sxs-lookup"><span data-stu-id="d5b41-114">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="d5255-115">親要素</span><span class="sxs-lookup"><span data-stu-id="d5255-115">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="d5b41-115">親要素</span><span class="sxs-lookup"><span data-stu-id="d5b41-115">Parent elements</span></span>
 
-|<span data-ttu-id="d5255-116">**要素**</span><span class="sxs-lookup"><span data-stu-id="d5255-116">**Element**</span></span>|<span data-ttu-id="d5255-117">**説明**</span><span class="sxs-lookup"><span data-stu-id="d5255-117">**Description**</span></span>|
+|<span data-ttu-id="d5b41-116">**要素**</span><span class="sxs-lookup"><span data-stu-id="d5b41-116">**Element**</span></span>|<span data-ttu-id="d5b41-117">**説明**</span><span class="sxs-lookup"><span data-stu-id="d5b41-117">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="d5255-118">AttachmentIds</span><span class="sxs-lookup"><span data-stu-id="d5255-118">AttachmentIds</span></span>](attachmentids.md) <br/> | <span data-ttu-id="d5255-119">添付ファイル識別子の配列が含まれています。</span><span class="sxs-lookup"><span data-stu-id="d5255-119">Contains an array of attachment identifiers.</span></span><br/><br/>  <span data-ttu-id="d5255-120">この要素への XPath 式は、次のように。</span><span class="sxs-lookup"><span data-stu-id="d5255-120">The following are the XPath expressions to this element:</span></span><br/><br/>`/DeleteAttachment/AttachmentIds`<br/><br/>`/GetAttachment/AttachmentIds` <br/> |
+|[<span data-ttu-id="d5b41-118">AttachmentIds</span><span class="sxs-lookup"><span data-stu-id="d5b41-118">AttachmentIds</span></span>](attachmentids.md) <br/> | <span data-ttu-id="d5b41-119">添付ファイル識別子の配列が含まれています。</span><span class="sxs-lookup"><span data-stu-id="d5b41-119">Contains an array of attachment identifiers.</span></span><br/><br/>  <span data-ttu-id="d5b41-120">この要素への XPath 式は、次のように。</span><span class="sxs-lookup"><span data-stu-id="d5b41-120">The following are the XPath expressions to this element:</span></span><br/><br/>`/DeleteAttachment/AttachmentIds`<br/><br/>`/GetAttachment/AttachmentIds` <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="d5255-121">備考</span><span class="sxs-lookup"><span data-stu-id="d5255-121">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d5b41-121">備考</span><span class="sxs-lookup"><span data-stu-id="d5b41-121">Remarks</span></span>
 
-<span data-ttu-id="d5255-122">MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。</span><span class="sxs-lookup"><span data-stu-id="d5255-122">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="d5b41-122">MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。</span><span class="sxs-lookup"><span data-stu-id="d5b41-122">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="d5255-123">要素情報</span><span class="sxs-lookup"><span data-stu-id="d5255-123">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="d5b41-123">要素情報</span><span class="sxs-lookup"><span data-stu-id="d5b41-123">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="d5255-124">名前空間</span><span class="sxs-lookup"><span data-stu-id="d5255-124">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="d5255-125">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="d5255-125">Schema Name</span></span>  <br/> |<span data-ttu-id="d5255-126">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="d5255-126">Types schema</span></span>  <br/> |
-|<span data-ttu-id="d5255-127">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="d5255-127">Validation File</span></span>  <br/> |<span data-ttu-id="d5255-128">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="d5255-128">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="d5255-129">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="d5255-129">Can be Empty</span></span>  <br/> |<span data-ttu-id="d5255-130">False</span><span class="sxs-lookup"><span data-stu-id="d5255-130">False</span></span>  <br/> |
+|<span data-ttu-id="d5b41-124">名前空間</span><span class="sxs-lookup"><span data-stu-id="d5b41-124">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="d5b41-125">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="d5b41-125">Schema Name</span></span>  <br/> |<span data-ttu-id="d5b41-126">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="d5b41-126">Types schema</span></span>  <br/> |
+|<span data-ttu-id="d5b41-127">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="d5b41-127">Validation File</span></span>  <br/> |<span data-ttu-id="d5b41-128">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="d5b41-128">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="d5b41-129">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="d5b41-129">Can be Empty</span></span>  <br/> |<span data-ttu-id="d5b41-130">False</span><span class="sxs-lookup"><span data-stu-id="d5b41-130">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="d5255-131">関連項目</span><span class="sxs-lookup"><span data-stu-id="d5255-131">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d5b41-131">関連項目</span><span class="sxs-lookup"><span data-stu-id="d5b41-131">See also</span></span>
 
-- [<span data-ttu-id="d5255-132">DeleteAttachment 操作</span><span class="sxs-lookup"><span data-stu-id="d5255-132">DeleteAttachment operation</span></span>](deleteattachment-operation.md)
-- [<span data-ttu-id="d5255-133">GetAttachment 操作</span><span class="sxs-lookup"><span data-stu-id="d5255-133">GetAttachment operation</span></span>](getattachment-operation.md)
+- [<span data-ttu-id="d5b41-132">DeleteAttachment 操作</span><span class="sxs-lookup"><span data-stu-id="d5b41-132">DeleteAttachment operation</span></span>](deleteattachment-operation.md)
+- [<span data-ttu-id="d5b41-133">GetAttachment 操作</span><span class="sxs-lookup"><span data-stu-id="d5b41-133">GetAttachment operation</span></span>](getattachment-operation.md)
 

@@ -16,12 +16,12 @@ ms.openlocfilehash: d403eb5ca15623d3a973f7b224dbcde5529cf1bc
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759799"
 ---
-# <a name="createattachment"></a><span data-ttu-id="6fff1-103">CreateAttachment</span><span class="sxs-lookup"><span data-stu-id="6fff1-103">CreateAttachment</span></span>
+# <a name="createattachment"></a><span data-ttu-id="f0c36-103">CreateAttachment</span><span class="sxs-lookup"><span data-stu-id="f0c36-103">CreateAttachment</span></span>
 
-<span data-ttu-id="6fff1-104">**CreateAttachment**要素は、Exchange ストア内のアイテムに添付ファイルを作成する要求を定義します。</span><span class="sxs-lookup"><span data-stu-id="6fff1-104">The **CreateAttachment** element defines a request to create an attachment to an item in the Exchange store.</span></span> 
+<span data-ttu-id="f0c36-104">**CreateAttachment**要素は、Exchange ストア内のアイテムに添付ファイルを作成する要求を定義します。</span><span class="sxs-lookup"><span data-stu-id="f0c36-104">The **CreateAttachment** element defines a request to create an attachment to an item in the Exchange store.</span></span> 
   
 ```xml
 <CreateAttachment>
@@ -30,51 +30,51 @@ ms.locfileid: "19759799"
 </CreateAttachment>
 ```
 
- <span data-ttu-id="6fff1-105">**CreateAttachmentType**</span><span class="sxs-lookup"><span data-stu-id="6fff1-105">**CreateAttachmentType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="6fff1-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="6fff1-106">Attributes and elements</span></span>
+ <span data-ttu-id="f0c36-105">**CreateAttachmentType**</span><span class="sxs-lookup"><span data-stu-id="f0c36-105">**CreateAttachmentType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="f0c36-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="f0c36-106">Attributes and elements</span></span>
 
-<span data-ttu-id="6fff1-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="6fff1-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="f0c36-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="f0c36-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="6fff1-108">属性</span><span class="sxs-lookup"><span data-stu-id="6fff1-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="f0c36-108">属性</span><span class="sxs-lookup"><span data-stu-id="f0c36-108">Attributes</span></span>
 
-<span data-ttu-id="6fff1-109">なし。</span><span class="sxs-lookup"><span data-stu-id="6fff1-109">None.</span></span>
+<span data-ttu-id="f0c36-109">なし。</span><span class="sxs-lookup"><span data-stu-id="f0c36-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="6fff1-110">子要素</span><span class="sxs-lookup"><span data-stu-id="6fff1-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="f0c36-110">子要素</span><span class="sxs-lookup"><span data-stu-id="f0c36-110">Child elements</span></span>
 
-|<span data-ttu-id="6fff1-111">**要素**</span><span class="sxs-lookup"><span data-stu-id="6fff1-111">**Element**</span></span>|<span data-ttu-id="6fff1-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="6fff1-112">**Description**</span></span>|
+|<span data-ttu-id="f0c36-111">**要素**</span><span class="sxs-lookup"><span data-stu-id="f0c36-111">**Element**</span></span>|<span data-ttu-id="f0c36-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="f0c36-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="6fff1-113">ParentItemId</span><span class="sxs-lookup"><span data-stu-id="6fff1-113">ParentItemId</span></span>](parentitemid.md) <br/> |<span data-ttu-id="6fff1-114">作成された添付ファイルを含む親の Exchange ストアの項目を識別します。</span><span class="sxs-lookup"><span data-stu-id="6fff1-114">Identifies the parent Exchange store item that contains the created attachment.</span></span> <span data-ttu-id="6fff1-115">[ParentItemId](parentitemid.md)要素は、実際の Exchange の ID の項目を格納する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6fff1-115">The [ParentItemId](parentitemid.md) element must provide the ID of a real Exchange store item.</span></span> <span data-ttu-id="6fff1-116">[GetItem 操作](getitem-operation.md)を使用して、実際のオンライン ストアのアイテムを取得することができます。[GetAttachment 操作](getattachment-operation.md)を使用して添付ファイルが取得されます。</span><span class="sxs-lookup"><span data-stu-id="6fff1-116">Real store items can be retrieved by using the [GetItem operation](getitem-operation.md); attachments are retrieved by using the [GetAttachment operation](getattachment-operation.md).</span></span> <span data-ttu-id="6fff1-117">[ParentItemId](parentitemid.md)の添付ファイルの ID が渡された場合、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="6fff1-117">An error occurs if the [ParentItemId](parentitemid.md) is passed the ID of a file attachment.</span></span> <span data-ttu-id="6fff1-118">[ParentItemId](parentitemid.md)は、既存のアイテムの添付ファイルの ID を表している場合、 [CreateAttachment 操作](createattachment-operation.md)は、既存の添付ファイルに新しい添付ファイルを追加します。</span><span class="sxs-lookup"><span data-stu-id="6fff1-118">If the [ParentItemId](parentitemid.md) represents the ID of an existing item attachment, the [CreateAttachment operation](createattachment-operation.md) adds the new attachment to the existing attachment.</span></span>  <br/> <span data-ttu-id="6fff1-119">この要素は、 [CreateAttachment 操作](createattachment-operation.md)に必要です。</span><span class="sxs-lookup"><span data-stu-id="6fff1-119">This element is required for the [CreateAttachment operation](createattachment-operation.md).</span></span>  <br/> |
-|[<span data-ttu-id="6fff1-120">添付ファイル</span><span class="sxs-lookup"><span data-stu-id="6fff1-120">Attachments</span></span>](attachments-ex15websvcsotherref.md) <br/> |<span data-ttu-id="6fff1-121">アイテムまたは Exchange ストア内のアイテムに添付するファイルが含まれています。</span><span class="sxs-lookup"><span data-stu-id="6fff1-121">Contains the items or files to attach to an item in the Exchange store.</span></span>  <br/> |
+|[<span data-ttu-id="f0c36-113">ParentItemId</span><span class="sxs-lookup"><span data-stu-id="f0c36-113">ParentItemId</span></span>](parentitemid.md) <br/> |<span data-ttu-id="f0c36-114">作成された添付ファイルを含む親の Exchange ストアの項目を識別します。</span><span class="sxs-lookup"><span data-stu-id="f0c36-114">Identifies the parent Exchange store item that contains the created attachment.</span></span> <span data-ttu-id="f0c36-115">[ParentItemId](parentitemid.md)要素は、実際の Exchange の ID の項目を格納する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f0c36-115">The [ParentItemId](parentitemid.md) element must provide the ID of a real Exchange store item.</span></span> <span data-ttu-id="f0c36-116">[GetItem 操作](getitem-operation.md)を使用して、実際のオンライン ストアのアイテムを取得することができます。[GetAttachment 操作](getattachment-operation.md)を使用して添付ファイルが取得されます。</span><span class="sxs-lookup"><span data-stu-id="f0c36-116">Real store items can be retrieved by using the [GetItem operation](getitem-operation.md); attachments are retrieved by using the [GetAttachment operation](getattachment-operation.md).</span></span> <span data-ttu-id="f0c36-117">[ParentItemId](parentitemid.md)の添付ファイルの ID が渡された場合、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="f0c36-117">An error occurs if the [ParentItemId](parentitemid.md) is passed the ID of a file attachment.</span></span> <span data-ttu-id="f0c36-118">[ParentItemId](parentitemid.md)は、既存のアイテムの添付ファイルの ID を表している場合、 [CreateAttachment 操作](createattachment-operation.md)は、既存の添付ファイルに新しい添付ファイルを追加します。</span><span class="sxs-lookup"><span data-stu-id="f0c36-118">If the [ParentItemId](parentitemid.md) represents the ID of an existing item attachment, the [CreateAttachment operation](createattachment-operation.md) adds the new attachment to the existing attachment.</span></span>  <br/> <span data-ttu-id="f0c36-119">この要素は、 [CreateAttachment 操作](createattachment-operation.md)に必要です。</span><span class="sxs-lookup"><span data-stu-id="f0c36-119">This element is required for the [CreateAttachment operation](createattachment-operation.md).</span></span>  <br/> |
+|[<span data-ttu-id="f0c36-120">添付ファイル</span><span class="sxs-lookup"><span data-stu-id="f0c36-120">Attachments</span></span>](attachments-ex15websvcsotherref.md) <br/> |<span data-ttu-id="f0c36-121">アイテムまたは Exchange ストア内のアイテムに添付するファイルが含まれています。</span><span class="sxs-lookup"><span data-stu-id="f0c36-121">Contains the items or files to attach to an item in the Exchange store.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="6fff1-122">親要素</span><span class="sxs-lookup"><span data-stu-id="6fff1-122">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="f0c36-122">親要素</span><span class="sxs-lookup"><span data-stu-id="f0c36-122">Parent elements</span></span>
 
-<span data-ttu-id="6fff1-123">なし。</span><span class="sxs-lookup"><span data-stu-id="6fff1-123">None.</span></span>
+<span data-ttu-id="f0c36-123">なし。</span><span class="sxs-lookup"><span data-stu-id="f0c36-123">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="6fff1-124">備考</span><span class="sxs-lookup"><span data-stu-id="6fff1-124">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f0c36-124">備考</span><span class="sxs-lookup"><span data-stu-id="f0c36-124">Remarks</span></span>
 
-<span data-ttu-id="6fff1-125">アイテムの添付ファイルは、ストアのアイテムとしては存在しません。</span><span class="sxs-lookup"><span data-stu-id="6fff1-125">An item attachment does not exist as a store item.</span></span> <span data-ttu-id="6fff1-126">アイテムの添付ファイルまたは別の添付ファイルとしてのみ存在します。</span><span class="sxs-lookup"><span data-stu-id="6fff1-126">It only exists as an attachment to an item or another attachment.</span></span> <span data-ttu-id="6fff1-127">[GetAttachment](getattachment.md)要求を使用して項目の添付ファイルを取得することができますのみです。</span><span class="sxs-lookup"><span data-stu-id="6fff1-127">Item attachments can only be retrieved by using the [GetAttachment](getattachment.md) request.</span></span> 
+<span data-ttu-id="f0c36-125">アイテムの添付ファイルは、ストアのアイテムとしては存在しません。</span><span class="sxs-lookup"><span data-stu-id="f0c36-125">An item attachment does not exist as a store item.</span></span> <span data-ttu-id="f0c36-126">アイテムの添付ファイルまたは別の添付ファイルとしてのみ存在します。</span><span class="sxs-lookup"><span data-stu-id="f0c36-126">It only exists as an attachment to an item or another attachment.</span></span> <span data-ttu-id="f0c36-127">[GetAttachment](getattachment.md)要求を使用して項目の添付ファイルを取得することができますのみです。</span><span class="sxs-lookup"><span data-stu-id="f0c36-127">Item attachments can only be retrieved by using the [GetAttachment](getattachment.md) request.</span></span> 
   
-<span data-ttu-id="6fff1-128">次の項目の添付ファイルを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="6fff1-128">The following item attachments can be created:</span></span>
+<span data-ttu-id="f0c36-128">次の項目の添付ファイルを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="f0c36-128">The following item attachments can be created:</span></span>
   
-- <span data-ttu-id="6fff1-129">Item</span><span class="sxs-lookup"><span data-stu-id="6fff1-129">Item</span></span>
+- <span data-ttu-id="f0c36-129">Item</span><span class="sxs-lookup"><span data-stu-id="f0c36-129">Item</span></span>
     
-- <span data-ttu-id="6fff1-130">Message</span><span class="sxs-lookup"><span data-stu-id="6fff1-130">Message</span></span>
+- <span data-ttu-id="f0c36-130">Message</span><span class="sxs-lookup"><span data-stu-id="f0c36-130">Message</span></span>
     
-- <span data-ttu-id="6fff1-131">カレンダー項目</span><span class="sxs-lookup"><span data-stu-id="6fff1-131">CalendarItem</span></span>
+- <span data-ttu-id="f0c36-131">カレンダー項目</span><span class="sxs-lookup"><span data-stu-id="f0c36-131">CalendarItem</span></span>
     
-- <span data-ttu-id="6fff1-132">連絡先</span><span class="sxs-lookup"><span data-stu-id="6fff1-132">Contact</span></span>
+- <span data-ttu-id="f0c36-132">連絡先</span><span class="sxs-lookup"><span data-stu-id="f0c36-132">Contact</span></span>
     
-- <span data-ttu-id="6fff1-133">タスク</span><span class="sxs-lookup"><span data-stu-id="6fff1-133">Task</span></span>
+- <span data-ttu-id="f0c36-133">タスク</span><span class="sxs-lookup"><span data-stu-id="f0c36-133">Task</span></span>
     
-- <span data-ttu-id="6fff1-134">MeetingMessage</span><span class="sxs-lookup"><span data-stu-id="6fff1-134">MeetingMessage</span></span>
+- <span data-ttu-id="f0c36-134">MeetingMessage</span><span class="sxs-lookup"><span data-stu-id="f0c36-134">MeetingMessage</span></span>
     
-- <span data-ttu-id="6fff1-135">MeetingRequest</span><span class="sxs-lookup"><span data-stu-id="6fff1-135">MeetingRequest</span></span>
+- <span data-ttu-id="f0c36-135">MeetingRequest</span><span class="sxs-lookup"><span data-stu-id="f0c36-135">MeetingRequest</span></span>
     
-<span data-ttu-id="6fff1-136">MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。</span><span class="sxs-lookup"><span data-stu-id="6fff1-136">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="f0c36-136">MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。</span><span class="sxs-lookup"><span data-stu-id="f0c36-136">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="example"></a><span data-ttu-id="6fff1-137">例</span><span class="sxs-lookup"><span data-stu-id="6fff1-137">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f0c36-137">例</span><span class="sxs-lookup"><span data-stu-id="f0c36-137">Example</span></span>
 
-<span data-ttu-id="6fff1-138">次の例では、作成し、Exchange ストア内の別のアイテムにアイテムを添付する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="6fff1-138">The following example shows how to create and attach an item to another item in the Exchange store.</span></span>
+<span data-ttu-id="f0c36-138">次の例では、作成し、Exchange ストア内の別のアイテムにアイテムを添付する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="f0c36-138">The following example shows how to create and attach an item to another item in the Exchange store.</span></span>
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -101,22 +101,22 @@ ms.locfileid: "19759799"
 </soap:Envelope>
 ```
 
-## <a name="element-information"></a><span data-ttu-id="6fff1-139">要素情報</span><span class="sxs-lookup"><span data-stu-id="6fff1-139">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="f0c36-139">要素情報</span><span class="sxs-lookup"><span data-stu-id="f0c36-139">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="6fff1-140">名前空間</span><span class="sxs-lookup"><span data-stu-id="6fff1-140">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="6fff1-141">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="6fff1-141">Schema Name</span></span>  <br/> |<span data-ttu-id="6fff1-142">メッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="6fff1-142">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="6fff1-143">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="6fff1-143">Validation File</span></span>  <br/> |<span data-ttu-id="6fff1-144">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="6fff1-144">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="6fff1-145">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="6fff1-145">Can be Empty</span></span>  <br/> |<span data-ttu-id="6fff1-146">False</span><span class="sxs-lookup"><span data-stu-id="6fff1-146">False</span></span>  <br/> |
+|<span data-ttu-id="f0c36-140">名前空間</span><span class="sxs-lookup"><span data-stu-id="f0c36-140">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="f0c36-141">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="f0c36-141">Schema Name</span></span>  <br/> |<span data-ttu-id="f0c36-142">メッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="f0c36-142">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="f0c36-143">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="f0c36-143">Validation File</span></span>  <br/> |<span data-ttu-id="f0c36-144">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="f0c36-144">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="f0c36-145">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="f0c36-145">Can be Empty</span></span>  <br/> |<span data-ttu-id="f0c36-146">False</span><span class="sxs-lookup"><span data-stu-id="f0c36-146">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="6fff1-147">関連項目</span><span class="sxs-lookup"><span data-stu-id="6fff1-147">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f0c36-147">関連項目</span><span class="sxs-lookup"><span data-stu-id="f0c36-147">See also</span></span>
 
 
 
-[<span data-ttu-id="6fff1-148">CreateAttachment 操作</span><span class="sxs-lookup"><span data-stu-id="6fff1-148">CreateAttachment operation</span></span>](createattachment-operation.md)
+[<span data-ttu-id="f0c36-148">CreateAttachment 操作</span><span class="sxs-lookup"><span data-stu-id="f0c36-148">CreateAttachment operation</span></span>](createattachment-operation.md)
   
-[<span data-ttu-id="6fff1-149">DeleteAttachment 操作</span><span class="sxs-lookup"><span data-stu-id="6fff1-149">DeleteAttachment operation</span></span>](deleteattachment-operation.md)
+[<span data-ttu-id="f0c36-149">DeleteAttachment 操作</span><span class="sxs-lookup"><span data-stu-id="f0c36-149">DeleteAttachment operation</span></span>](deleteattachment-operation.md)
   
-[<span data-ttu-id="6fff1-150">GetAttachment 操作</span><span class="sxs-lookup"><span data-stu-id="6fff1-150">GetAttachment operation</span></span>](getattachment-operation.md)
+[<span data-ttu-id="f0c36-150">GetAttachment 操作</span><span class="sxs-lookup"><span data-stu-id="f0c36-150">GetAttachment operation</span></span>](getattachment-operation.md)
 

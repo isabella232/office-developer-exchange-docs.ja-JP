@@ -12,56 +12,56 @@ ms.openlocfilehash: edc3f8ada87c64ccc3eeeb8a7467e7e050a30ce1
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19760613"
 ---
-# <a name="fromdate"></a><span data-ttu-id="530ab-103">[開始日</span><span class="sxs-lookup"><span data-stu-id="530ab-103">FromDate</span></span>
+# <a name="fromdate"></a><span data-ttu-id="99619-103">[開始日</span><span class="sxs-lookup"><span data-stu-id="99619-103">FromDate</span></span>
 
-<span data-ttu-id="530ab-104">**開始**要素は、メッセージが送信された日付を指定します。</span><span class="sxs-lookup"><span data-stu-id="530ab-104">The **FromDate** element specifies the date that the message was sent.</span></span> 
+<span data-ttu-id="99619-104">**開始**要素は、メッセージが送信された日付を指定します。</span><span class="sxs-lookup"><span data-stu-id="99619-104">The **FromDate** element specifies the date that the message was sent.</span></span> 
   
 ```XML
 <FromDate></FromDate>
 ```
 
- <span data-ttu-id="530ab-105">**dateTime**</span><span class="sxs-lookup"><span data-stu-id="530ab-105">**dateTime**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="530ab-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="530ab-106">Attributes and elements</span></span>
+ <span data-ttu-id="99619-105">**dateTime**</span><span class="sxs-lookup"><span data-stu-id="99619-105">**dateTime**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="99619-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="99619-106">Attributes and elements</span></span>
 
-<span data-ttu-id="530ab-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="530ab-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="99619-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="99619-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="530ab-108">属性</span><span class="sxs-lookup"><span data-stu-id="530ab-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="99619-108">属性</span><span class="sxs-lookup"><span data-stu-id="99619-108">Attributes</span></span>
 
-<span data-ttu-id="530ab-109">なし。</span><span class="sxs-lookup"><span data-stu-id="530ab-109">None.</span></span>
+<span data-ttu-id="99619-109">なし。</span><span class="sxs-lookup"><span data-stu-id="99619-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="530ab-110">子要素</span><span class="sxs-lookup"><span data-stu-id="530ab-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="99619-110">子要素</span><span class="sxs-lookup"><span data-stu-id="99619-110">Child elements</span></span>
 
-<span data-ttu-id="530ab-111">なし。</span><span class="sxs-lookup"><span data-stu-id="530ab-111">None.</span></span>
+<span data-ttu-id="99619-111">なし。</span><span class="sxs-lookup"><span data-stu-id="99619-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="530ab-112">親要素</span><span class="sxs-lookup"><span data-stu-id="530ab-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="99619-112">親要素</span><span class="sxs-lookup"><span data-stu-id="99619-112">Parent elements</span></span>
 
-|<span data-ttu-id="530ab-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="530ab-113">**Element**</span></span>|<span data-ttu-id="530ab-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="530ab-114">**Description**</span></span>|
+|<span data-ttu-id="99619-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="99619-113">**Element**</span></span>|<span data-ttu-id="99619-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="99619-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="530ab-115">FindMailboxStatisticsByKeywords</span><span class="sxs-lookup"><span data-stu-id="530ab-115">FindMailboxStatisticsByKeywords</span></span>](findmailboxstatisticsbykeywords.md) <br/> |<span data-ttu-id="530ab-116">キーワードでメールボックスの統計情報を検索するための要求を指定します。</span><span class="sxs-lookup"><span data-stu-id="530ab-116">Specifies a request to search for mailbox statistics by keyword.</span></span>  <br/> |
+|[<span data-ttu-id="99619-115">FindMailboxStatisticsByKeywords</span><span class="sxs-lookup"><span data-stu-id="99619-115">FindMailboxStatisticsByKeywords</span></span>](findmailboxstatisticsbykeywords.md) <br/> |<span data-ttu-id="99619-116">キーワードでメールボックスの統計情報を検索するための要求を指定します。</span><span class="sxs-lookup"><span data-stu-id="99619-116">Specifies a request to search for mailbox statistics by keyword.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="530ab-117">テキスト値</span><span class="sxs-lookup"><span data-stu-id="530ab-117">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="99619-117">テキスト値</span><span class="sxs-lookup"><span data-stu-id="99619-117">Text value</span></span>
 
-<span data-ttu-id="530ab-118">**開始**要素のテキスト値は、メッセージが送信されたときの日時です。</span><span class="sxs-lookup"><span data-stu-id="530ab-118">The text value of the **FromDate** element is the date and time that a message was sent.</span></span> 
+<span data-ttu-id="99619-118">**開始**要素のテキスト値は、メッセージが送信されたときの日時です。</span><span class="sxs-lookup"><span data-stu-id="99619-118">The text value of the **FromDate** element is the date and time that a message was sent.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="530ab-119">備考</span><span class="sxs-lookup"><span data-stu-id="530ab-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="99619-119">備考</span><span class="sxs-lookup"><span data-stu-id="99619-119">Remarks</span></span>
 
-<span data-ttu-id="530ab-120">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="530ab-120">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="99619-120">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="99619-120">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="530ab-121">要素情報</span><span class="sxs-lookup"><span data-stu-id="530ab-121">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="99619-121">要素情報</span><span class="sxs-lookup"><span data-stu-id="99619-121">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="530ab-122">名前空間</span><span class="sxs-lookup"><span data-stu-id="530ab-122">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="530ab-123">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="530ab-123">Schema Name</span></span>  <br/> |<span data-ttu-id="530ab-124">メッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="530ab-124">Message schema</span></span>  <br/> |
-|<span data-ttu-id="530ab-125">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="530ab-125">Validation File</span></span>  <br/> |<span data-ttu-id="530ab-126">messages.xsd</span><span class="sxs-lookup"><span data-stu-id="530ab-126">messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="530ab-127">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="530ab-127">Can Be Empty</span></span>  <br/> ||
+|<span data-ttu-id="99619-122">名前空間</span><span class="sxs-lookup"><span data-stu-id="99619-122">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="99619-123">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="99619-123">Schema Name</span></span>  <br/> |<span data-ttu-id="99619-124">メッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="99619-124">Message schema</span></span>  <br/> |
+|<span data-ttu-id="99619-125">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="99619-125">Validation File</span></span>  <br/> |<span data-ttu-id="99619-126">messages.xsd</span><span class="sxs-lookup"><span data-stu-id="99619-126">messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="99619-127">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="99619-127">Can Be Empty</span></span>  <br/> ||
    
-## <a name="see-also"></a><span data-ttu-id="530ab-128">関連項目</span><span class="sxs-lookup"><span data-stu-id="530ab-128">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="99619-128">関連項目</span><span class="sxs-lookup"><span data-stu-id="99619-128">See also</span></span>
 
 
 
-- [<span data-ttu-id="530ab-129">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="530ab-129">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="99619-129">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="99619-129">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

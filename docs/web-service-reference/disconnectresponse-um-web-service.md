@@ -15,50 +15,50 @@ ms.openlocfilehash: 47d432065f0c983a511e2ffda1ba789546a82f2f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19760085"
 ---
-# <a name="disconnectresponse-um-web-service"></a><span data-ttu-id="fab19-103">DisconnectResponse (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="fab19-103">DisconnectResponse (UM web service)</span></span>
+# <a name="disconnectresponse-um-web-service"></a><span data-ttu-id="0d832-103">DisconnectResponse (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="0d832-103">DisconnectResponse (UM web service)</span></span>
 
-<span data-ttu-id="fab19-104">**DisconnectResponse**要素は、[切断の操作 (UM web サービス)](disconnect-operation-um-web-service.md)要求に対する応答を定義します。</span><span class="sxs-lookup"><span data-stu-id="fab19-104">The **DisconnectResponse** element defines a response to a [Disconnect operation (UM web service)](disconnect-operation-um-web-service.md) request.</span></span> 
+<span data-ttu-id="0d832-104">**DisconnectResponse**要素は、[切断の操作 (UM web サービス)](disconnect-operation-um-web-service.md)要求に対する応答を定義します。</span><span class="sxs-lookup"><span data-stu-id="0d832-104">The **DisconnectResponse** element defines a response to a [Disconnect operation (UM web service)](disconnect-operation-um-web-service.md) request.</span></span> 
   
-[<span data-ttu-id="fab19-105">DisconnectResponse (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="fab19-105">DisconnectResponse (UM web service)</span></span>](disconnectresponse-um-web-service.md)
+[<span data-ttu-id="0d832-105">DisconnectResponse (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="0d832-105">DisconnectResponse (UM web service)</span></span>](disconnectresponse-um-web-service.md)
   
 ```xml
 <DisconnectResponse />
 ```
 
- <span data-ttu-id="fab19-106">**complexType**</span><span class="sxs-lookup"><span data-stu-id="fab19-106">**complexType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="fab19-107">属性および要素</span><span class="sxs-lookup"><span data-stu-id="fab19-107">Attributes and elements</span></span>
+ <span data-ttu-id="0d832-106">**complexType**</span><span class="sxs-lookup"><span data-stu-id="0d832-106">**complexType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="0d832-107">属性および要素</span><span class="sxs-lookup"><span data-stu-id="0d832-107">Attributes and elements</span></span>
 
-<span data-ttu-id="fab19-108">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="fab19-108">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="0d832-108">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="0d832-108">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="fab19-109">属性</span><span class="sxs-lookup"><span data-stu-id="fab19-109">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="0d832-109">属性</span><span class="sxs-lookup"><span data-stu-id="0d832-109">Attributes</span></span>
 
-<span data-ttu-id="fab19-110">なし。</span><span class="sxs-lookup"><span data-stu-id="fab19-110">None.</span></span>
+<span data-ttu-id="0d832-110">なし。</span><span class="sxs-lookup"><span data-stu-id="0d832-110">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="fab19-111">子要素</span><span class="sxs-lookup"><span data-stu-id="fab19-111">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="0d832-111">子要素</span><span class="sxs-lookup"><span data-stu-id="0d832-111">Child elements</span></span>
 
-<span data-ttu-id="fab19-112">なし。</span><span class="sxs-lookup"><span data-stu-id="fab19-112">None.</span></span>
+<span data-ttu-id="0d832-112">なし。</span><span class="sxs-lookup"><span data-stu-id="0d832-112">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="fab19-113">親要素</span><span class="sxs-lookup"><span data-stu-id="fab19-113">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="0d832-113">親要素</span><span class="sxs-lookup"><span data-stu-id="0d832-113">Parent elements</span></span>
 
-<span data-ttu-id="fab19-114">なし。</span><span class="sxs-lookup"><span data-stu-id="fab19-114">None.</span></span>
+<span data-ttu-id="0d832-114">なし。</span><span class="sxs-lookup"><span data-stu-id="0d832-114">None.</span></span>
   
-## <a name="text-value"></a><span data-ttu-id="fab19-115">テキスト値</span><span class="sxs-lookup"><span data-stu-id="fab19-115">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="0d832-115">テキスト値</span><span class="sxs-lookup"><span data-stu-id="0d832-115">Text value</span></span>
 
-<span data-ttu-id="fab19-116">なし。</span><span class="sxs-lookup"><span data-stu-id="fab19-116">None.</span></span>
+<span data-ttu-id="0d832-116">なし。</span><span class="sxs-lookup"><span data-stu-id="0d832-116">None.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="fab19-117">要素情報</span><span class="sxs-lookup"><span data-stu-id="fab19-117">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="0d832-117">要素情報</span><span class="sxs-lookup"><span data-stu-id="0d832-117">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="fab19-118">名前空間</span><span class="sxs-lookup"><span data-stu-id="fab19-118">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="fab19-119">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="fab19-119">Schema Name</span></span>  <br/> |<span data-ttu-id="fab19-120">メッセージ</span><span class="sxs-lookup"><span data-stu-id="fab19-120">Messages</span></span>  <br/> |
-|<span data-ttu-id="fab19-121">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="fab19-121">Validation File</span></span>  <br/> |<span data-ttu-id="fab19-122">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="fab19-122">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="fab19-123">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="fab19-123">Can be Empty</span></span>  <br/> |<span data-ttu-id="fab19-124">True</span><span class="sxs-lookup"><span data-stu-id="fab19-124">True</span></span>  <br/> |
+|<span data-ttu-id="0d832-118">名前空間</span><span class="sxs-lookup"><span data-stu-id="0d832-118">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="0d832-119">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="0d832-119">Schema Name</span></span>  <br/> |<span data-ttu-id="0d832-120">メッセージ</span><span class="sxs-lookup"><span data-stu-id="0d832-120">Messages</span></span>  <br/> |
+|<span data-ttu-id="0d832-121">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="0d832-121">Validation File</span></span>  <br/> |<span data-ttu-id="0d832-122">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="0d832-122">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="0d832-123">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="0d832-123">Can be Empty</span></span>  <br/> |<span data-ttu-id="0d832-124">True</span><span class="sxs-lookup"><span data-stu-id="0d832-124">True</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="fab19-125">関連項目</span><span class="sxs-lookup"><span data-stu-id="fab19-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0d832-125">関連項目</span><span class="sxs-lookup"><span data-stu-id="0d832-125">See also</span></span>
 
-- [<span data-ttu-id="fab19-126">操作 (UM web サービス) に接続を切断します。</span><span class="sxs-lookup"><span data-stu-id="fab19-126">Disconnect operation (UM web service)</span></span>](disconnect-operation-um-web-service.md)
+- [<span data-ttu-id="0d832-126">操作 (UM web サービス) に接続を切断します。</span><span class="sxs-lookup"><span data-stu-id="0d832-126">Disconnect operation (UM web service)</span></span>](disconnect-operation-um-web-service.md)
 

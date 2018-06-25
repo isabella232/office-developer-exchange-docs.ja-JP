@@ -15,20 +15,20 @@ ms.openlocfilehash: 1e04e65fa1951a6aa46e2c8b6dd5fe524c84a8fc
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19760076"
 ---
-# <a name="disconnect-operation-um-web-service"></a><span data-ttu-id="10cf4-103">操作 (UM web サービス) に接続を切断します。</span><span class="sxs-lookup"><span data-stu-id="10cf4-103">Disconnect operation (UM web service)</span></span>
+# <a name="disconnect-operation-um-web-service"></a><span data-ttu-id="b973d-103">操作 (UM web サービス) に接続を切断します。</span><span class="sxs-lookup"><span data-stu-id="b973d-103">Disconnect operation (UM web service)</span></span>
 
-<span data-ttu-id="10cf4-104">切断操作は、指定した[CallId (UM web サービス)](callid-um-web-service.md)によって識別されるコールを終了します。</span><span class="sxs-lookup"><span data-stu-id="10cf4-104">The Disconnect operation terminates the call that is identified by the specified [CallId (UM web service)](callid-um-web-service.md).</span></span>
+<span data-ttu-id="b973d-104">切断操作は、指定した[CallId (UM web サービス)](callid-um-web-service.md)によって識別されるコールを終了します。</span><span class="sxs-lookup"><span data-stu-id="b973d-104">The Disconnect operation terminates the call that is identified by the specified [CallId (UM web service)](callid-um-web-service.md).</span></span>
   
-## <a name="disconnect-request-example"></a><span data-ttu-id="10cf4-105">切断要求の例</span><span class="sxs-lookup"><span data-stu-id="10cf4-105">Disconnect request example</span></span>
+## <a name="disconnect-request-example"></a><span data-ttu-id="b973d-105">切断要求の例</span><span class="sxs-lookup"><span data-stu-id="b973d-105">Disconnect request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="10cf4-106">説明</span><span class="sxs-lookup"><span data-stu-id="10cf4-106">Description</span></span>
+### <a name="description"></a><span data-ttu-id="b973d-106">説明</span><span class="sxs-lookup"><span data-stu-id="b973d-106">Description</span></span>
 
-<span data-ttu-id="10cf4-107">切断要求の次の例では、呼び出しの切断要求を形成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="10cf4-107">The following example of a Disconnect request shows how to form a request to disconnect a call.</span></span>
+<span data-ttu-id="b973d-107">切断要求の次の例では、呼び出しの切断要求を形成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="b973d-107">The following example of a Disconnect request shows how to form a request to disconnect a call.</span></span>
   
-### <a name="code"></a><span data-ttu-id="10cf4-108">コード</span><span class="sxs-lookup"><span data-stu-id="10cf4-108">Code</span></span>
+### <a name="code"></a><span data-ttu-id="b973d-108">コード</span><span class="sxs-lookup"><span data-stu-id="b973d-108">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -41,13 +41,13 @@ ms.locfileid: "19760076"
 </soap:Envelope>
 ```
 
-## <a name="successful-disconnect-response-example"></a><span data-ttu-id="10cf4-109">切断応答の成功の例</span><span class="sxs-lookup"><span data-stu-id="10cf4-109">Successful Disconnect response example</span></span>
+## <a name="successful-disconnect-response-example"></a><span data-ttu-id="b973d-109">切断応答の成功の例</span><span class="sxs-lookup"><span data-stu-id="b973d-109">Successful Disconnect response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="10cf4-110">説明</span><span class="sxs-lookup"><span data-stu-id="10cf4-110">Description</span></span>
+### <a name="description"></a><span data-ttu-id="b973d-110">説明</span><span class="sxs-lookup"><span data-stu-id="b973d-110">Description</span></span>
 
-<span data-ttu-id="10cf4-111">切断応答の次の例では、切断要求への応答を示します。</span><span class="sxs-lookup"><span data-stu-id="10cf4-111">The following example of a Disconnect response shows a response to the Disconnect request.</span></span>
+<span data-ttu-id="b973d-111">切断応答の次の例では、切断要求への応答を示します。</span><span class="sxs-lookup"><span data-stu-id="b973d-111">The following example of a Disconnect response shows a response to the Disconnect request.</span></span>
   
-### <a name="code"></a><span data-ttu-id="10cf4-112">コード</span><span class="sxs-lookup"><span data-stu-id="10cf4-112">Code</span></span>
+### <a name="code"></a><span data-ttu-id="b973d-112">コード</span><span class="sxs-lookup"><span data-stu-id="b973d-112">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?> 
@@ -58,9 +58,9 @@ ms.locfileid: "19760076"
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="10cf4-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="10cf4-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b973d-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="b973d-113">See also</span></span>
 
-- [<span data-ttu-id="10cf4-114">(UM web サービス) に接続を切断します。</span><span class="sxs-lookup"><span data-stu-id="10cf4-114">Disconnect (UM web service)</span></span>](disconnect-um-web-service.md) 
-- [<span data-ttu-id="10cf4-115">DisconnectResponse (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="10cf4-115">DisconnectResponse (UM web service)</span></span>](disconnectresponse-um-web-service.md) 
-- [<span data-ttu-id="10cf4-116">CallId (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="10cf4-116">CallId (UM web service)</span></span>](callid-um-web-service.md)
+- [<span data-ttu-id="b973d-114">(UM web サービス) に接続を切断します。</span><span class="sxs-lookup"><span data-stu-id="b973d-114">Disconnect (UM web service)</span></span>](disconnect-um-web-service.md) 
+- [<span data-ttu-id="b973d-115">DisconnectResponse (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="b973d-115">DisconnectResponse (UM web service)</span></span>](disconnectresponse-um-web-service.md) 
+- [<span data-ttu-id="b973d-116">CallId (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="b973d-116">CallId (UM web service)</span></span>](callid-um-web-service.md)
 

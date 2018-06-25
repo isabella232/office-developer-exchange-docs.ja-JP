@@ -16,22 +16,22 @@ ms.openlocfilehash: 867eecb89c115b008d4828e162b21d078eba695c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759792"
 ---
-# <a name="create-foldersync"></a><span data-ttu-id="d8d9e-103">(集合的) を作成します。</span><span class="sxs-lookup"><span data-stu-id="d8d9e-103">Create (FolderSync)</span></span>
+# <a name="create-foldersync"></a><span data-ttu-id="5ce9f-103">(集合的) を作成します。</span><span class="sxs-lookup"><span data-stu-id="5ce9f-103">Create (FolderSync)</span></span>
 
-<span data-ttu-id="d8d9e-104">**作成**要素は、ローカル クライアント ストアに作成する 1 つのフォルダーを識別します。</span><span class="sxs-lookup"><span data-stu-id="d8d9e-104">The **Create** element identifies a single folder to create in the local client store.</span></span> 
+<span data-ttu-id="5ce9f-104">**作成**要素は、ローカル クライアント ストアに作成する 1 つのフォルダーを識別します。</span><span class="sxs-lookup"><span data-stu-id="5ce9f-104">The **Create** element identifies a single folder to create in the local client store.</span></span> 
   
-[<span data-ttu-id="d8d9e-105">SyncFolderHierarchyResponse</span><span class="sxs-lookup"><span data-stu-id="d8d9e-105">SyncFolderHierarchyResponse</span></span>](syncfolderhierarchyresponse.md)
+[<span data-ttu-id="5ce9f-105">SyncFolderHierarchyResponse</span><span class="sxs-lookup"><span data-stu-id="5ce9f-105">SyncFolderHierarchyResponse</span></span>](syncfolderhierarchyresponse.md)
   
-[<span data-ttu-id="d8d9e-106">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="d8d9e-106">ResponseMessages</span></span>](responsemessages.md)
+[<span data-ttu-id="5ce9f-106">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="5ce9f-106">ResponseMessages</span></span>](responsemessages.md)
   
-[<span data-ttu-id="d8d9e-107">SyncFolderHierarchyResponseMessage</span><span class="sxs-lookup"><span data-stu-id="d8d9e-107">SyncFolderHierarchyResponseMessage</span></span>](syncfolderhierarchyresponsemessage.md)
+[<span data-ttu-id="5ce9f-107">SyncFolderHierarchyResponseMessage</span><span class="sxs-lookup"><span data-stu-id="5ce9f-107">SyncFolderHierarchyResponseMessage</span></span>](syncfolderhierarchyresponsemessage.md)
   
-[<span data-ttu-id="d8d9e-108">(階層) の変更</span><span class="sxs-lookup"><span data-stu-id="d8d9e-108">Changes (Hierarchy)</span></span>](changes-hierarchy.md)
+[<span data-ttu-id="5ce9f-108">(階層) の変更</span><span class="sxs-lookup"><span data-stu-id="5ce9f-108">Changes (Hierarchy)</span></span>](changes-hierarchy.md)
   
-[<span data-ttu-id="d8d9e-109">(集合的) を作成します。</span><span class="sxs-lookup"><span data-stu-id="d8d9e-109">Create (FolderSync)</span></span>](create-foldersync.md)
+[<span data-ttu-id="5ce9f-109">(集合的) を作成します。</span><span class="sxs-lookup"><span data-stu-id="5ce9f-109">Create (FolderSync)</span></span>](create-foldersync.md)
   
 ```xml
 <Create>
@@ -43,50 +43,50 @@ ms.locfileid: "19759792"
 </Create>
 ```
 
- <span data-ttu-id="d8d9e-110">**SyncFolderHierarchyCreateOrUpdateType**</span><span class="sxs-lookup"><span data-stu-id="d8d9e-110">**SyncFolderHierarchyCreateOrUpdateType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="d8d9e-111">属性および要素</span><span class="sxs-lookup"><span data-stu-id="d8d9e-111">Attributes and elements</span></span>
+ <span data-ttu-id="5ce9f-110">**SyncFolderHierarchyCreateOrUpdateType**</span><span class="sxs-lookup"><span data-stu-id="5ce9f-110">**SyncFolderHierarchyCreateOrUpdateType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="5ce9f-111">属性および要素</span><span class="sxs-lookup"><span data-stu-id="5ce9f-111">Attributes and elements</span></span>
 
-<span data-ttu-id="d8d9e-112">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="d8d9e-112">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="5ce9f-112">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="5ce9f-112">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="d8d9e-113">属性</span><span class="sxs-lookup"><span data-stu-id="d8d9e-113">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="5ce9f-113">属性</span><span class="sxs-lookup"><span data-stu-id="5ce9f-113">Attributes</span></span>
 
-<span data-ttu-id="d8d9e-114">なし。</span><span class="sxs-lookup"><span data-stu-id="d8d9e-114">None.</span></span>
+<span data-ttu-id="5ce9f-114">なし。</span><span class="sxs-lookup"><span data-stu-id="5ce9f-114">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="d8d9e-115">子要素</span><span class="sxs-lookup"><span data-stu-id="d8d9e-115">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="5ce9f-115">子要素</span><span class="sxs-lookup"><span data-stu-id="5ce9f-115">Child elements</span></span>
 
-|<span data-ttu-id="d8d9e-116">**要素**</span><span class="sxs-lookup"><span data-stu-id="d8d9e-116">**Element**</span></span>|<span data-ttu-id="d8d9e-117">**説明**</span><span class="sxs-lookup"><span data-stu-id="d8d9e-117">**Description**</span></span>|
+|<span data-ttu-id="5ce9f-116">**要素**</span><span class="sxs-lookup"><span data-stu-id="5ce9f-116">**Element**</span></span>|<span data-ttu-id="5ce9f-117">**説明**</span><span class="sxs-lookup"><span data-stu-id="5ce9f-117">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="d8d9e-118">Folder</span><span class="sxs-lookup"><span data-stu-id="d8d9e-118">Folder</span></span>](folder.md) <br/> |<span data-ttu-id="d8d9e-119">作成、取得、検索、同期、または更新するフォルダーを定義します。</span><span class="sxs-lookup"><span data-stu-id="d8d9e-119">Defines the folder to create, get, find, synchronize, or update.</span></span>  <br/> |
-|[<span data-ttu-id="d8d9e-120">CalendarFolder</span><span class="sxs-lookup"><span data-stu-id="d8d9e-120">CalendarFolder</span></span>](calendarfolder.md) <br/> |<span data-ttu-id="d8d9e-121">主に予定表のアイテムを含むフォルダーを表します。</span><span class="sxs-lookup"><span data-stu-id="d8d9e-121">Represents a folder that primarily contains calendar items.</span></span>  <br/> |
-|[<span data-ttu-id="d8d9e-122">メッセージ</span><span class="sxs-lookup"><span data-stu-id="d8d9e-122">ContactsFolder</span></span>](contactsfolder.md) <br/> |<span data-ttu-id="d8d9e-123">メールボックスの連絡先フォルダーを表します。</span><span class="sxs-lookup"><span data-stu-id="d8d9e-123">Represents a contact folder in a mailbox.</span></span>  <br/> |
-|[<span data-ttu-id="d8d9e-124">SearchFolder</span><span class="sxs-lookup"><span data-stu-id="d8d9e-124">SearchFolder</span></span>](searchfolder.md) <br/> |<span data-ttu-id="d8d9e-125">メールボックスに含まれている検索フォルダーを表します。</span><span class="sxs-lookup"><span data-stu-id="d8d9e-125">Represents a search folder contained in a mailbox.</span></span>  <br/> |
-|[<span data-ttu-id="d8d9e-126">TasksFolder</span><span class="sxs-lookup"><span data-stu-id="d8d9e-126">TasksFolder</span></span>](tasksfolder.md) <br/> |<span data-ttu-id="d8d9e-127">メールボックスに含まれるタスク フォルダーを表します。</span><span class="sxs-lookup"><span data-stu-id="d8d9e-127">Represents a task folder contained in a mailbox.</span></span>  <br/> |
+|[<span data-ttu-id="5ce9f-118">Folder</span><span class="sxs-lookup"><span data-stu-id="5ce9f-118">Folder</span></span>](folder.md) <br/> |<span data-ttu-id="5ce9f-119">作成、取得、検索、同期、または更新するフォルダーを定義します。</span><span class="sxs-lookup"><span data-stu-id="5ce9f-119">Defines the folder to create, get, find, synchronize, or update.</span></span>  <br/> |
+|[<span data-ttu-id="5ce9f-120">CalendarFolder</span><span class="sxs-lookup"><span data-stu-id="5ce9f-120">CalendarFolder</span></span>](calendarfolder.md) <br/> |<span data-ttu-id="5ce9f-121">主に予定表のアイテムを含むフォルダーを表します。</span><span class="sxs-lookup"><span data-stu-id="5ce9f-121">Represents a folder that primarily contains calendar items.</span></span>  <br/> |
+|[<span data-ttu-id="5ce9f-122">メッセージ</span><span class="sxs-lookup"><span data-stu-id="5ce9f-122">ContactsFolder</span></span>](contactsfolder.md) <br/> |<span data-ttu-id="5ce9f-123">メールボックスの連絡先フォルダーを表します。</span><span class="sxs-lookup"><span data-stu-id="5ce9f-123">Represents a contact folder in a mailbox.</span></span>  <br/> |
+|[<span data-ttu-id="5ce9f-124">SearchFolder</span><span class="sxs-lookup"><span data-stu-id="5ce9f-124">SearchFolder</span></span>](searchfolder.md) <br/> |<span data-ttu-id="5ce9f-125">メールボックスに含まれている検索フォルダーを表します。</span><span class="sxs-lookup"><span data-stu-id="5ce9f-125">Represents a search folder contained in a mailbox.</span></span>  <br/> |
+|[<span data-ttu-id="5ce9f-126">TasksFolder</span><span class="sxs-lookup"><span data-stu-id="5ce9f-126">TasksFolder</span></span>](tasksfolder.md) <br/> |<span data-ttu-id="5ce9f-127">メールボックスに含まれるタスク フォルダーを表します。</span><span class="sxs-lookup"><span data-stu-id="5ce9f-127">Represents a task folder contained in a mailbox.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="d8d9e-128">親要素</span><span class="sxs-lookup"><span data-stu-id="d8d9e-128">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="5ce9f-128">親要素</span><span class="sxs-lookup"><span data-stu-id="5ce9f-128">Parent elements</span></span>
 
-|<span data-ttu-id="d8d9e-129">**要素**</span><span class="sxs-lookup"><span data-stu-id="d8d9e-129">**Element**</span></span>|<span data-ttu-id="d8d9e-130">**説明**</span><span class="sxs-lookup"><span data-stu-id="d8d9e-130">**Description**</span></span>|
+|<span data-ttu-id="5ce9f-129">**要素**</span><span class="sxs-lookup"><span data-stu-id="5ce9f-129">**Element**</span></span>|<span data-ttu-id="5ce9f-130">**説明**</span><span class="sxs-lookup"><span data-stu-id="5ce9f-130">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="d8d9e-131">(階層) の変更</span><span class="sxs-lookup"><span data-stu-id="d8d9e-131">Changes (Hierarchy)</span></span>](changes-hierarchy.md) <br/> |<span data-ttu-id="d8d9e-132">クライアント上のアイテムと、Exchange サーバー上のアイテム間の相違点の種類を表すの種類の変更の順序の配列が含まれています。</span><span class="sxs-lookup"><span data-stu-id="d8d9e-132">Contains a sequence array of change types that represent the type of differences between the items on the client and the items on the Exchange server.</span></span>  <br/> |
+|[<span data-ttu-id="5ce9f-131">(階層) の変更</span><span class="sxs-lookup"><span data-stu-id="5ce9f-131">Changes (Hierarchy)</span></span>](changes-hierarchy.md) <br/> |<span data-ttu-id="5ce9f-132">クライアント上のアイテムと、Exchange サーバー上のアイテム間の相違点の種類を表すの種類の変更の順序の配列が含まれています。</span><span class="sxs-lookup"><span data-stu-id="5ce9f-132">Contains a sequence array of change types that represent the type of differences between the items on the client and the items on the Exchange server.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="d8d9e-133">備考</span><span class="sxs-lookup"><span data-stu-id="d8d9e-133">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="5ce9f-133">備考</span><span class="sxs-lookup"><span data-stu-id="5ce9f-133">Remarks</span></span>
 
-<span data-ttu-id="d8d9e-134">MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。</span><span class="sxs-lookup"><span data-stu-id="d8d9e-134">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="5ce9f-134">MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。</span><span class="sxs-lookup"><span data-stu-id="5ce9f-134">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="d8d9e-135">要素情報</span><span class="sxs-lookup"><span data-stu-id="d8d9e-135">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="5ce9f-135">要素情報</span><span class="sxs-lookup"><span data-stu-id="5ce9f-135">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="d8d9e-136">名前空間</span><span class="sxs-lookup"><span data-stu-id="d8d9e-136">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="d8d9e-137">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="d8d9e-137">Schema name</span></span>  <br/> |<span data-ttu-id="d8d9e-138">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="d8d9e-138">Types schema</span></span>  <br/> |
-|<span data-ttu-id="d8d9e-139">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="d8d9e-139">Validation file</span></span>  <br/> |<span data-ttu-id="d8d9e-140">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="d8d9e-140">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="d8d9e-141">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="d8d9e-141">Can be empty</span></span>  <br/> |<span data-ttu-id="d8d9e-142">False</span><span class="sxs-lookup"><span data-stu-id="d8d9e-142">False</span></span>  <br/> |
+|<span data-ttu-id="5ce9f-136">名前空間</span><span class="sxs-lookup"><span data-stu-id="5ce9f-136">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="5ce9f-137">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="5ce9f-137">Schema name</span></span>  <br/> |<span data-ttu-id="5ce9f-138">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="5ce9f-138">Types schema</span></span>  <br/> |
+|<span data-ttu-id="5ce9f-139">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="5ce9f-139">Validation file</span></span>  <br/> |<span data-ttu-id="5ce9f-140">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="5ce9f-140">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="5ce9f-141">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="5ce9f-141">Can be empty</span></span>  <br/> |<span data-ttu-id="5ce9f-142">False</span><span class="sxs-lookup"><span data-stu-id="5ce9f-142">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="d8d9e-143">関連項目</span><span class="sxs-lookup"><span data-stu-id="d8d9e-143">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5ce9f-143">関連項目</span><span class="sxs-lookup"><span data-stu-id="5ce9f-143">See also</span></span>
 
 
 
-[<span data-ttu-id="d8d9e-144">SyncFolderItems の操作</span><span class="sxs-lookup"><span data-stu-id="d8d9e-144">SyncFolderItems operation</span></span>](syncfolderitems-operation.md)
+[<span data-ttu-id="5ce9f-144">SyncFolderItems の操作</span><span class="sxs-lookup"><span data-stu-id="5ce9f-144">SyncFolderItems operation</span></span>](syncfolderitems-operation.md)
 
 
-- [<span data-ttu-id="d8d9e-145">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="d8d9e-145">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="5ce9f-145">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="5ce9f-145">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

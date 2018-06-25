@@ -16,20 +16,20 @@ ms.openlocfilehash: 5f0eb7d18736008af39199cbc52cc3a6e6abda09
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759855"
 ---
-# <a name="createuserconfiguration-operation"></a><span data-ttu-id="a0c92-103">CreateUserConfiguration 操作</span><span class="sxs-lookup"><span data-stu-id="a0c92-103">CreateUserConfiguration operation</span></span>
+# <a name="createuserconfiguration-operation"></a><span data-ttu-id="5a37c-103">CreateUserConfiguration 操作</span><span class="sxs-lookup"><span data-stu-id="5a37c-103">CreateUserConfiguration operation</span></span>
 
-<span data-ttu-id="a0c92-104">**CreateUserConfiguration**操作では、フォルダーにユーザー設定のオブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="a0c92-104">The **CreateUserConfiguration** operation creates a user configuration object on a folder.</span></span> 
+<span data-ttu-id="5a37c-104">**CreateUserConfiguration**操作では、フォルダーにユーザー設定のオブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="5a37c-104">The **CreateUserConfiguration** operation creates a user configuration object on a folder.</span></span> 
   
-## <a name="createuserconfiguration-request-example"></a><span data-ttu-id="a0c92-105">CreateUserConfiguration 要求の例</span><span class="sxs-lookup"><span data-stu-id="a0c92-105">CreateUserConfiguration request example</span></span>
+## <a name="createuserconfiguration-request-example"></a><span data-ttu-id="5a37c-105">CreateUserConfiguration 要求の例</span><span class="sxs-lookup"><span data-stu-id="5a37c-105">CreateUserConfiguration request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="a0c92-106">説明</span><span class="sxs-lookup"><span data-stu-id="a0c92-106">Description</span></span>
+### <a name="description"></a><span data-ttu-id="5a37c-106">説明</span><span class="sxs-lookup"><span data-stu-id="5a37c-106">Description</span></span>
 
-<span data-ttu-id="a0c92-107">**CreateUserConfiguration**要求の次の例では、[下書き] フォルダーでユーザーの構成オブジェクトを作成する要求を作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="a0c92-107">The following example of a **CreateUserConfiguration** request shows how to form a request to create a user configuration object on the Drafts folder.</span></span> 
+<span data-ttu-id="5a37c-107">**CreateUserConfiguration**要求の次の例では、[下書き] フォルダーでユーザーの構成オブジェクトを作成する要求を作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="5a37c-107">The following example of a **CreateUserConfiguration** request shows how to form a request to create a user configuration object on the Drafts folder.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="a0c92-108">コード</span><span class="sxs-lookup"><span data-stu-id="a0c92-108">Code</span></span>
+### <a name="code"></a><span data-ttu-id="5a37c-108">コード</span><span class="sxs-lookup"><span data-stu-id="5a37c-108">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -67,13 +67,13 @@ ms.locfileid: "19759855"
 </soap:Envelope>
 ```
 
-## <a name="createuserconfiguration-response-example"></a><span data-ttu-id="a0c92-109">CreateUserConfiguration の応答の例</span><span class="sxs-lookup"><span data-stu-id="a0c92-109">CreateUserConfiguration response example</span></span>
+## <a name="createuserconfiguration-response-example"></a><span data-ttu-id="5a37c-109">CreateUserConfiguration の応答の例</span><span class="sxs-lookup"><span data-stu-id="5a37c-109">CreateUserConfiguration response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="a0c92-110">説明</span><span class="sxs-lookup"><span data-stu-id="a0c92-110">Description</span></span>
+### <a name="description"></a><span data-ttu-id="5a37c-110">説明</span><span class="sxs-lookup"><span data-stu-id="5a37c-110">Description</span></span>
 
-<span data-ttu-id="a0c92-111">**CreateUserConfiguration**要求に正常な応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="a0c92-111">The following example shows a successful response to the **CreateUserConfiguration** request.</span></span> 
+<span data-ttu-id="5a37c-111">**CreateUserConfiguration**要求に正常な応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="5a37c-111">The following example shows a successful response to the **CreateUserConfiguration** request.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="a0c92-112">コード</span><span class="sxs-lookup"><span data-stu-id="a0c92-112">Code</span></span>
+### <a name="code"></a><span data-ttu-id="5a37c-112">コード</span><span class="sxs-lookup"><span data-stu-id="5a37c-112">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -103,11 +103,11 @@ ms.locfileid: "19759855"
 </s:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="a0c92-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="a0c92-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5a37c-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="5a37c-113">See also</span></span>
 
 
 
-[<span data-ttu-id="a0c92-114">Exchange での EWS の操作</span><span class="sxs-lookup"><span data-stu-id="a0c92-114">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
+[<span data-ttu-id="5a37c-114">Exchange での EWS の操作</span><span class="sxs-lookup"><span data-stu-id="5a37c-114">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
   
-- [<span data-ttu-id="a0c92-115">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="a0c92-115">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="5a37c-115">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="5a37c-115">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

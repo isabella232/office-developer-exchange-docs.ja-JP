@@ -16,20 +16,20 @@ ms.openlocfilehash: 8f98ca5dd304eadffc307fa47620b7db6401c782
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19760836"
 ---
-# <a name="getphonecallinformation-operation"></a><span data-ttu-id="4bd28-103">GetPhoneCallInformation 操作</span><span class="sxs-lookup"><span data-stu-id="4bd28-103">GetPhoneCallInformation operation</span></span>
+# <a name="getphonecallinformation-operation"></a><span data-ttu-id="30087-103">GetPhoneCallInformation 操作</span><span class="sxs-lookup"><span data-stu-id="30087-103">GetPhoneCallInformation operation</span></span>
 
-<span data-ttu-id="4bd28-104">**GetPhoneCallInformation**操作は、指定した電話の呼び出しに関する情報を返します。</span><span class="sxs-lookup"><span data-stu-id="4bd28-104">The **GetPhoneCallInformation** operation returns information about the specified telephone call.</span></span> 
+<span data-ttu-id="30087-104">**GetPhoneCallInformation**操作は、指定した電話の呼び出しに関する情報を返します。</span><span class="sxs-lookup"><span data-stu-id="30087-104">The **GetPhoneCallInformation** operation returns information about the specified telephone call.</span></span> 
   
-## <a name="getphonecallinformation-request-example"></a><span data-ttu-id="4bd28-105">GetPhoneCallInformation 要求の例</span><span class="sxs-lookup"><span data-stu-id="4bd28-105">GetPhoneCallInformation request example</span></span>
+## <a name="getphonecallinformation-request-example"></a><span data-ttu-id="30087-105">GetPhoneCallInformation 要求の例</span><span class="sxs-lookup"><span data-stu-id="30087-105">GetPhoneCallInformation request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="4bd28-106">説明</span><span class="sxs-lookup"><span data-stu-id="4bd28-106">Description</span></span>
+### <a name="description"></a><span data-ttu-id="30087-106">説明</span><span class="sxs-lookup"><span data-stu-id="30087-106">Description</span></span>
 
-<span data-ttu-id="4bd28-107">**GetPhoneCallInformation**要求の次の例では、特定の電話の呼び出しに関する情報を取得する要求を作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="4bd28-107">The following example of a **GetPhoneCallInformation** request shows how to form a request to get information about a specific telephone call.</span></span> 
+<span data-ttu-id="30087-107">**GetPhoneCallInformation**要求の次の例では、特定の電話の呼び出しに関する情報を取得する要求を作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="30087-107">The following example of a **GetPhoneCallInformation** request shows how to form a request to get information about a specific telephone call.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="4bd28-108">コード</span><span class="sxs-lookup"><span data-stu-id="4bd28-108">Code</span></span>
+### <a name="code"></a><span data-ttu-id="30087-108">コード</span><span class="sxs-lookup"><span data-stu-id="30087-108">Code</span></span>
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -49,13 +49,13 @@ ms.locfileid: "19760836"
 </soap:Envelope>
 ```
 
-## <a name="getphonecallinformation-response-example"></a><span data-ttu-id="4bd28-109">GetPhoneCallInformation の応答の例</span><span class="sxs-lookup"><span data-stu-id="4bd28-109">GetPhoneCallInformation response example</span></span>
+## <a name="getphonecallinformation-response-example"></a><span data-ttu-id="30087-109">GetPhoneCallInformation の応答の例</span><span class="sxs-lookup"><span data-stu-id="30087-109">GetPhoneCallInformation response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="4bd28-110">説明</span><span class="sxs-lookup"><span data-stu-id="4bd28-110">Description</span></span>
+### <a name="description"></a><span data-ttu-id="30087-110">説明</span><span class="sxs-lookup"><span data-stu-id="30087-110">Description</span></span>
 
-<span data-ttu-id="4bd28-111">**GetPhoneCallInformation**要求に正常な応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="4bd28-111">The following example shows a successful response to the **GetPhoneCallInformation** request.</span></span> <span data-ttu-id="4bd28-112">応答は、現在接続されている電話の呼び出しを表します。</span><span class="sxs-lookup"><span data-stu-id="4bd28-112">The response represents a telephone call that is currently connected.</span></span> 
+<span data-ttu-id="30087-111">**GetPhoneCallInformation**要求に正常な応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="30087-111">The following example shows a successful response to the **GetPhoneCallInformation** request.</span></span> <span data-ttu-id="30087-112">応答は、現在接続されている電話の呼び出しを表します。</span><span class="sxs-lookup"><span data-stu-id="30087-112">The response represents a telephone call that is currently connected.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="4bd28-113">コード</span><span class="sxs-lookup"><span data-stu-id="4bd28-113">Code</span></span>
+### <a name="code"></a><span data-ttu-id="30087-113">コード</span><span class="sxs-lookup"><span data-stu-id="30087-113">Code</span></span>
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -85,8 +85,8 @@ ms.locfileid: "19760836"
 </s:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="4bd28-114">関連項目</span><span class="sxs-lookup"><span data-stu-id="4bd28-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="30087-114">関連項目</span><span class="sxs-lookup"><span data-stu-id="30087-114">See also</span></span>
 
-- [<span data-ttu-id="4bd28-115">Exchange での EWS の操作</span><span class="sxs-lookup"><span data-stu-id="4bd28-115">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
-- [<span data-ttu-id="4bd28-116">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="4bd28-116">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="30087-115">Exchange での EWS の操作</span><span class="sxs-lookup"><span data-stu-id="30087-115">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
+- [<span data-ttu-id="30087-116">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="30087-116">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
