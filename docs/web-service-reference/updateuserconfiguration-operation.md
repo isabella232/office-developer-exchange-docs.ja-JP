@@ -16,20 +16,20 @@ ms.openlocfilehash: 9da7c7ba15b3cf6b35f0489db539660aefa2e40a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19839889"
 ---
-# <a name="updateuserconfiguration-operation"></a><span data-ttu-id="8fbdd-103">UpdateUserConfiguration 操作</span><span class="sxs-lookup"><span data-stu-id="8fbdd-103">UpdateUserConfiguration operation</span></span>
+# <a name="updateuserconfiguration-operation"></a><span data-ttu-id="2485c-103">UpdateUserConfiguration 操作</span><span class="sxs-lookup"><span data-stu-id="2485c-103">UpdateUserConfiguration operation</span></span>
 
-<span data-ttu-id="8fbdd-104">**UpdateUserConfiguration**操作は、フォルダーでユーザーの構成オブジェクトを更新します。</span><span class="sxs-lookup"><span data-stu-id="8fbdd-104">The **UpdateUserConfiguration** operation updates a user configuration object on a folder.</span></span> 
+<span data-ttu-id="2485c-104">**UpdateUserConfiguration**操作は、フォルダーでユーザーの構成オブジェクトを更新します。</span><span class="sxs-lookup"><span data-stu-id="2485c-104">The **UpdateUserConfiguration** operation updates a user configuration object on a folder.</span></span> 
   
-## <a name="updateuserconfiguration-request-example"></a><span data-ttu-id="8fbdd-105">UpdateUserConfiguration 要求の例</span><span class="sxs-lookup"><span data-stu-id="8fbdd-105">UpdateUserConfiguration request example</span></span>
+## <a name="updateuserconfiguration-request-example"></a><span data-ttu-id="2485c-105">UpdateUserConfiguration 要求の例</span><span class="sxs-lookup"><span data-stu-id="2485c-105">UpdateUserConfiguration request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="8fbdd-106">説明</span><span class="sxs-lookup"><span data-stu-id="8fbdd-106">Description</span></span>
+### <a name="description"></a><span data-ttu-id="2485c-106">説明</span><span class="sxs-lookup"><span data-stu-id="2485c-106">Description</span></span>
 
-<span data-ttu-id="8fbdd-107">**UpdateUserConfiguration**要求の次の例では、[下書き] フォルダーでユーザーの構成オブジェクトを更新する要求を作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="8fbdd-107">The following example of an **UpdateUserConfiguration** request shows how to form a request to update a user configuration object on the Drafts folder.</span></span> 
+<span data-ttu-id="2485c-107">**UpdateUserConfiguration**要求の次の例では、[下書き] フォルダーでユーザーの構成オブジェクトを更新する要求を作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="2485c-107">The following example of an **UpdateUserConfiguration** request shows how to form a request to update a user configuration object on the Drafts folder.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="8fbdd-108">コード</span><span class="sxs-lookup"><span data-stu-id="8fbdd-108">Code</span></span>
+### <a name="code"></a><span data-ttu-id="2485c-108">コード</span><span class="sxs-lookup"><span data-stu-id="2485c-108">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -65,13 +65,13 @@ ms.locfileid: "19839889"
 </soap:Envelope>
 ```
 
-## <a name="updateuserconfiguration-response-example"></a><span data-ttu-id="8fbdd-109">UpdateUserConfiguration の応答の例</span><span class="sxs-lookup"><span data-stu-id="8fbdd-109">UpdateUserConfiguration response example</span></span>
+## <a name="updateuserconfiguration-response-example"></a><span data-ttu-id="2485c-109">UpdateUserConfiguration の応答の例</span><span class="sxs-lookup"><span data-stu-id="2485c-109">UpdateUserConfiguration response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="8fbdd-110">説明</span><span class="sxs-lookup"><span data-stu-id="8fbdd-110">Description</span></span>
+### <a name="description"></a><span data-ttu-id="2485c-110">説明</span><span class="sxs-lookup"><span data-stu-id="2485c-110">Description</span></span>
 
-<span data-ttu-id="8fbdd-111">**UpdateUserConfiguration**要求に正常な応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="8fbdd-111">The following example shows a successful response to the **UpdateUserConfiguration** request.</span></span> 
+<span data-ttu-id="2485c-111">**UpdateUserConfiguration**要求に正常な応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2485c-111">The following example shows a successful response to the **UpdateUserConfiguration** request.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="8fbdd-112">コード</span><span class="sxs-lookup"><span data-stu-id="8fbdd-112">Code</span></span>
+### <a name="code"></a><span data-ttu-id="2485c-112">コード</span><span class="sxs-lookup"><span data-stu-id="2485c-112">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -101,11 +101,11 @@ ms.locfileid: "19839889"
 </s:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="8fbdd-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="8fbdd-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2485c-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="2485c-113">See also</span></span>
 
 
 
-[<span data-ttu-id="8fbdd-114">Exchange での EWS の操作</span><span class="sxs-lookup"><span data-stu-id="8fbdd-114">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
+[<span data-ttu-id="2485c-114">Exchange での EWS の操作</span><span class="sxs-lookup"><span data-stu-id="2485c-114">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
   
-- [<span data-ttu-id="8fbdd-115">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="8fbdd-115">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="2485c-115">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="2485c-115">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

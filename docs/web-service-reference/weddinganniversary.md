@@ -16,56 +16,56 @@ ms.openlocfilehash: a0b8333c776195dc53973c6663a4f91f4d8c9aba
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840015"
 ---
-# <a name="weddinganniversary"></a><span data-ttu-id="ac75a-103">WeddingAnniversary</span><span class="sxs-lookup"><span data-stu-id="ac75a-103">WeddingAnniversary</span></span>
+# <a name="weddinganniversary"></a><span data-ttu-id="25f28-103">WeddingAnniversary</span><span class="sxs-lookup"><span data-stu-id="25f28-103">WeddingAnniversary</span></span>
 
-<span data-ttu-id="ac75a-104">**WeddingAnniversary**要素には、取引先担当者の結婚記念日が含まれています。</span><span class="sxs-lookup"><span data-stu-id="ac75a-104">The **WeddingAnniversary** element contains the wedding anniversary of a contact.</span></span> 
+<span data-ttu-id="25f28-104">**WeddingAnniversary**要素には、取引先担当者の結婚記念日が含まれています。</span><span class="sxs-lookup"><span data-stu-id="25f28-104">The **WeddingAnniversary** element contains the wedding anniversary of a contact.</span></span> 
   
 ```xml
 <WeddingAnniversary/>
 ```
 
- <span data-ttu-id="ac75a-105">**dateTime**</span><span class="sxs-lookup"><span data-stu-id="ac75a-105">**dateTime**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="ac75a-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="ac75a-106">Attributes and elements</span></span>
+ <span data-ttu-id="25f28-105">**dateTime**</span><span class="sxs-lookup"><span data-stu-id="25f28-105">**dateTime**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="25f28-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="25f28-106">Attributes and elements</span></span>
 
-<span data-ttu-id="ac75a-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="ac75a-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="25f28-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="25f28-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="ac75a-108">属性</span><span class="sxs-lookup"><span data-stu-id="ac75a-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="25f28-108">属性</span><span class="sxs-lookup"><span data-stu-id="25f28-108">Attributes</span></span>
 
-<span data-ttu-id="ac75a-109">なし。</span><span class="sxs-lookup"><span data-stu-id="ac75a-109">None.</span></span>
+<span data-ttu-id="25f28-109">なし。</span><span class="sxs-lookup"><span data-stu-id="25f28-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="ac75a-110">子要素</span><span class="sxs-lookup"><span data-stu-id="ac75a-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="25f28-110">子要素</span><span class="sxs-lookup"><span data-stu-id="25f28-110">Child elements</span></span>
 
-<span data-ttu-id="ac75a-111">なし。</span><span class="sxs-lookup"><span data-stu-id="ac75a-111">None.</span></span>
+<span data-ttu-id="25f28-111">なし。</span><span class="sxs-lookup"><span data-stu-id="25f28-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="ac75a-112">親要素</span><span class="sxs-lookup"><span data-stu-id="ac75a-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="25f28-112">親要素</span><span class="sxs-lookup"><span data-stu-id="25f28-112">Parent elements</span></span>
 
-|<span data-ttu-id="ac75a-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="ac75a-113">**Element**</span></span>|<span data-ttu-id="ac75a-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="ac75a-114">**Description**</span></span>|
+|<span data-ttu-id="25f28-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="25f28-113">**Element**</span></span>|<span data-ttu-id="25f28-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="25f28-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="ac75a-115">Contact</span><span class="sxs-lookup"><span data-stu-id="ac75a-115">Contact</span></span>](contact.md) <br/> |<span data-ttu-id="ac75a-116">Exchange の連絡先アイテムを表します。</span><span class="sxs-lookup"><span data-stu-id="ac75a-116">Represents an Exchange contact item.</span></span>  <br/> |
+|[<span data-ttu-id="25f28-115">Contact</span><span class="sxs-lookup"><span data-stu-id="25f28-115">Contact</span></span>](contact.md) <br/> |<span data-ttu-id="25f28-116">Exchange の連絡先アイテムを表します。</span><span class="sxs-lookup"><span data-stu-id="25f28-116">Represents an Exchange contact item.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="ac75a-117">テキスト値</span><span class="sxs-lookup"><span data-stu-id="ac75a-117">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="25f28-117">テキスト値</span><span class="sxs-lookup"><span data-stu-id="25f28-117">Text value</span></span>
 
-<span data-ttu-id="ac75a-118">テキスト値は、取引先担当者の結婚記念日の日付を表します。</span><span class="sxs-lookup"><span data-stu-id="ac75a-118">The text value represents the date of a contact's wedding anniversary.</span></span>
+<span data-ttu-id="25f28-118">テキスト値は、取引先担当者の結婚記念日の日付を表します。</span><span class="sxs-lookup"><span data-stu-id="25f28-118">The text value represents the date of a contact's wedding anniversary.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="ac75a-119">備考</span><span class="sxs-lookup"><span data-stu-id="ac75a-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="25f28-119">備考</span><span class="sxs-lookup"><span data-stu-id="25f28-119">Remarks</span></span>
 
-<span data-ttu-id="ac75a-120">MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。</span><span class="sxs-lookup"><span data-stu-id="ac75a-120">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="25f28-120">MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。</span><span class="sxs-lookup"><span data-stu-id="25f28-120">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="ac75a-121">要素情報</span><span class="sxs-lookup"><span data-stu-id="ac75a-121">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="25f28-121">要素情報</span><span class="sxs-lookup"><span data-stu-id="25f28-121">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="ac75a-122">名前空間</span><span class="sxs-lookup"><span data-stu-id="ac75a-122">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="ac75a-123">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="ac75a-123">Schema name</span></span>  <br/> |<span data-ttu-id="ac75a-124">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="ac75a-124">Types schema</span></span>  <br/> |
-|<span data-ttu-id="ac75a-125">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="ac75a-125">Validation file</span></span>  <br/> |<span data-ttu-id="ac75a-126">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="ac75a-126">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="ac75a-127">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="ac75a-127">Can be empty</span></span>  <br/> |<span data-ttu-id="ac75a-128">False</span><span class="sxs-lookup"><span data-stu-id="ac75a-128">False</span></span>  <br/> |
+|<span data-ttu-id="25f28-122">名前空間</span><span class="sxs-lookup"><span data-stu-id="25f28-122">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="25f28-123">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="25f28-123">Schema name</span></span>  <br/> |<span data-ttu-id="25f28-124">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="25f28-124">Types schema</span></span>  <br/> |
+|<span data-ttu-id="25f28-125">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="25f28-125">Validation file</span></span>  <br/> |<span data-ttu-id="25f28-126">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="25f28-126">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="25f28-127">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="25f28-127">Can be empty</span></span>  <br/> |<span data-ttu-id="25f28-128">False</span><span class="sxs-lookup"><span data-stu-id="25f28-128">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="ac75a-129">関連項目</span><span class="sxs-lookup"><span data-stu-id="ac75a-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="25f28-129">関連項目</span><span class="sxs-lookup"><span data-stu-id="25f28-129">See also</span></span>
 
 
 
-- [<span data-ttu-id="ac75a-130">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="ac75a-130">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="25f28-130">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="25f28-130">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
