@@ -12,51 +12,51 @@ ms.openlocfilehash: 004c8ebe04ec5f1e1aeb8b961b0708f05295d8d8
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19839758"
 ---
-# <a name="ttl"></a><span data-ttu-id="7febc-103">TTL</span><span class="sxs-lookup"><span data-stu-id="7febc-103">TTL</span></span>
+# <a name="ttl"></a><span data-ttu-id="0bea1-103">TTL</span><span class="sxs-lookup"><span data-stu-id="0bea1-103">TTL</span></span>
 
-<span data-ttu-id="7febc-104">**TTL**要素では、トークンが有効では分単位で時間を指定します。</span><span class="sxs-lookup"><span data-stu-id="7febc-104">The **TTL** element specifies the time, in minutes, that the token is valid.</span></span> 
+<span data-ttu-id="0bea1-104">**TTL**要素では、トークンが有効では分単位で時間を指定します。</span><span class="sxs-lookup"><span data-stu-id="0bea1-104">The **TTL** element specifies the time, in minutes, that the token is valid.</span></span> 
   
 ```XML
 <TTL></TTL>
 ```
 
- <span data-ttu-id="7febc-105">**整数**</span><span class="sxs-lookup"><span data-stu-id="7febc-105">**integer**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="7febc-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="7febc-106">Attributes and elements</span></span>
+ <span data-ttu-id="0bea1-105">**整数**</span><span class="sxs-lookup"><span data-stu-id="0bea1-105">**integer**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="0bea1-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="0bea1-106">Attributes and elements</span></span>
 
-<span data-ttu-id="7febc-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="7febc-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="0bea1-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="0bea1-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="7febc-108">属性</span><span class="sxs-lookup"><span data-stu-id="7febc-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="0bea1-108">属性</span><span class="sxs-lookup"><span data-stu-id="0bea1-108">Attributes</span></span>
 
-<span data-ttu-id="7febc-109">なし。</span><span class="sxs-lookup"><span data-stu-id="7febc-109">None.</span></span>
+<span data-ttu-id="0bea1-109">なし。</span><span class="sxs-lookup"><span data-stu-id="0bea1-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="7febc-110">子要素</span><span class="sxs-lookup"><span data-stu-id="7febc-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="0bea1-110">子要素</span><span class="sxs-lookup"><span data-stu-id="0bea1-110">Child elements</span></span>
 
-<span data-ttu-id="7febc-111">なし。</span><span class="sxs-lookup"><span data-stu-id="7febc-111">None.</span></span>
+<span data-ttu-id="0bea1-111">なし。</span><span class="sxs-lookup"><span data-stu-id="0bea1-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="7febc-112">親要素</span><span class="sxs-lookup"><span data-stu-id="7febc-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="0bea1-112">親要素</span><span class="sxs-lookup"><span data-stu-id="0bea1-112">Parent elements</span></span>
 
-[<span data-ttu-id="7febc-113">トークン</span><span class="sxs-lookup"><span data-stu-id="7febc-113">Token</span></span>](token.md)
+[<span data-ttu-id="0bea1-113">トークン</span><span class="sxs-lookup"><span data-stu-id="0bea1-113">Token</span></span>](token.md)
   
-## <a name="text-value"></a><span data-ttu-id="7febc-114">テキスト値</span><span class="sxs-lookup"><span data-stu-id="7febc-114">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="0bea1-114">テキスト値</span><span class="sxs-lookup"><span data-stu-id="0bea1-114">Text value</span></span>
 
-<span data-ttu-id="7febc-115">**TTL**要素のテキスト値は、トークンが有効では分単位の時間です。</span><span class="sxs-lookup"><span data-stu-id="7febc-115">The text value of the **TTL** element is the time in minutes that the token is valid.</span></span> 
+<span data-ttu-id="0bea1-115">**TTL**要素のテキスト値は、トークンが有効では分単位の時間です。</span><span class="sxs-lookup"><span data-stu-id="0bea1-115">The text value of the **TTL** element is the time in minutes that the token is valid.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="7febc-116">備考</span><span class="sxs-lookup"><span data-stu-id="7febc-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="0bea1-116">備考</span><span class="sxs-lookup"><span data-stu-id="0bea1-116">Remarks</span></span>
 
-<span data-ttu-id="7febc-117">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="7febc-117">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="0bea1-117">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="0bea1-117">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="7febc-118">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="7febc-118">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="0bea1-118">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="0bea1-118">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="7febc-119">要素情報</span><span class="sxs-lookup"><span data-stu-id="7febc-119">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="0bea1-119">要素情報</span><span class="sxs-lookup"><span data-stu-id="0bea1-119">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="7febc-120">名前空間</span><span class="sxs-lookup"><span data-stu-id="7febc-120">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="7febc-121">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="7febc-121">Schema name</span></span>  <br/> |<span data-ttu-id="7febc-122">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="7febc-122">Types schema</span></span>  <br/> |
-|<span data-ttu-id="7febc-123">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="7febc-123">Validation file</span></span>  <br/> |<span data-ttu-id="7febc-124">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="7febc-124">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="7febc-125">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="7febc-125">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="0bea1-120">名前空間</span><span class="sxs-lookup"><span data-stu-id="0bea1-120">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="0bea1-121">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="0bea1-121">Schema name</span></span>  <br/> |<span data-ttu-id="0bea1-122">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="0bea1-122">Types schema</span></span>  <br/> |
+|<span data-ttu-id="0bea1-123">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="0bea1-123">Validation file</span></span>  <br/> |<span data-ttu-id="0bea1-124">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="0bea1-124">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="0bea1-125">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="0bea1-125">Can be empty</span></span>  <br/> ||
    
 

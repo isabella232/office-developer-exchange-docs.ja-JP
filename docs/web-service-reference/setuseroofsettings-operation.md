@@ -16,29 +16,29 @@ ms.openlocfilehash: 51c2f9488f38a4adb0e291c11adc2ebfe3426f25
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19833469"
 ---
-# <a name="setuseroofsettings-operation"></a><span data-ttu-id="23de7-103">SetUserOofSettings 操作</span><span class="sxs-lookup"><span data-stu-id="23de7-103">SetUserOofSettings operation</span></span>
+# <a name="setuseroofsettings-operation"></a><span data-ttu-id="e84f6-103">SetUserOofSettings 操作</span><span class="sxs-lookup"><span data-stu-id="e84f6-103">SetUserOofSettings operation</span></span>
 
-<span data-ttu-id="23de7-104">**SetUserOofSettings** Web メソッドは、メールボックス ユーザーの Office (OOF) の設定とメッセージを設定します。</span><span class="sxs-lookup"><span data-stu-id="23de7-104">The **SetUserOofSettings** Web method sets a mailbox user's Out of Office (OOF) settings and message.</span></span> 
+<span data-ttu-id="e84f6-104">**SetUserOofSettings** Web メソッドは、メールボックス ユーザーの Office (OOF) の設定とメッセージを設定します。</span><span class="sxs-lookup"><span data-stu-id="e84f6-104">The **SetUserOofSettings** Web method sets a mailbox user's Out of Office (OOF) settings and message.</span></span> 
   
-## <a name="soap-headers"></a><span data-ttu-id="23de7-105">SOAP ヘッダー</span><span class="sxs-lookup"><span data-stu-id="23de7-105">SOAP Headers</span></span>
+## <a name="soap-headers"></a><span data-ttu-id="e84f6-105">SOAP ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e84f6-105">SOAP Headers</span></span>
 
-<span data-ttu-id="23de7-106">**SetUserOofSettings**操作が一覧表示され、次の表に記載されている SOAP ヘッダーを使用できます。</span><span class="sxs-lookup"><span data-stu-id="23de7-106">The **SetUserOofSettings** operation can use the SOAP headers that are listed and described in the following table.</span></span> 
+<span data-ttu-id="e84f6-106">**SetUserOofSettings**操作が一覧表示され、次の表に記載されている SOAP ヘッダーを使用できます。</span><span class="sxs-lookup"><span data-stu-id="e84f6-106">The **SetUserOofSettings** operation can use the SOAP headers that are listed and described in the following table.</span></span> 
   
-|<span data-ttu-id="23de7-107">**Header**</span><span class="sxs-lookup"><span data-stu-id="23de7-107">**Header**</span></span>|<span data-ttu-id="23de7-108">**要素**</span><span class="sxs-lookup"><span data-stu-id="23de7-108">**Element**</span></span>|<span data-ttu-id="23de7-109">**説明**</span><span class="sxs-lookup"><span data-stu-id="23de7-109">**Description**</span></span>|
+|<span data-ttu-id="e84f6-107">**Header**</span><span class="sxs-lookup"><span data-stu-id="e84f6-107">**Header**</span></span>|<span data-ttu-id="e84f6-108">**要素**</span><span class="sxs-lookup"><span data-stu-id="e84f6-108">**Element**</span></span>|<span data-ttu-id="e84f6-109">**説明**</span><span class="sxs-lookup"><span data-stu-id="e84f6-109">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="23de7-110">偽装</span><span class="sxs-lookup"><span data-stu-id="23de7-110">Impersonation</span></span>  <br/> |[<span data-ttu-id="23de7-111">ExchangeImpersonation</span><span class="sxs-lookup"><span data-stu-id="23de7-111">ExchangeImpersonation</span></span>](exchangeimpersonation.md) <br/> |<span data-ttu-id="23de7-112">クライアント アプリケーションが偽装するユーザーを識別します。</span><span class="sxs-lookup"><span data-stu-id="23de7-112">Identifies the user whom the client application is impersonating.</span></span>  <br/> |
-|<span data-ttu-id="23de7-113">ServerVersion</span><span class="sxs-lookup"><span data-stu-id="23de7-113">ServerVersion</span></span>  <br/> |[<span data-ttu-id="23de7-114">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="23de7-114">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="23de7-115">要求に応答するサーバーのバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="23de7-115">Identifies the version of the server that responded to the request.</span></span>  <br/> |
+|<span data-ttu-id="e84f6-110">偽装</span><span class="sxs-lookup"><span data-stu-id="e84f6-110">Impersonation</span></span>  <br/> |[<span data-ttu-id="e84f6-111">ExchangeImpersonation</span><span class="sxs-lookup"><span data-stu-id="e84f6-111">ExchangeImpersonation</span></span>](exchangeimpersonation.md) <br/> |<span data-ttu-id="e84f6-112">クライアント アプリケーションが偽装するユーザーを識別します。</span><span class="sxs-lookup"><span data-stu-id="e84f6-112">Identifies the user whom the client application is impersonating.</span></span>  <br/> |
+|<span data-ttu-id="e84f6-113">ServerVersion</span><span class="sxs-lookup"><span data-stu-id="e84f6-113">ServerVersion</span></span>  <br/> |[<span data-ttu-id="e84f6-114">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="e84f6-114">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="e84f6-115">要求に応答するサーバーのバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="e84f6-115">Identifies the version of the server that responded to the request.</span></span>  <br/> |
    
-## <a name="setuseroofsettings-request-example"></a><span data-ttu-id="23de7-116">SetUserOofSettings 要求の例</span><span class="sxs-lookup"><span data-stu-id="23de7-116">SetUserOofSettings request example</span></span>
+## <a name="setuseroofsettings-request-example"></a><span data-ttu-id="e84f6-116">SetUserOofSettings 要求の例</span><span class="sxs-lookup"><span data-stu-id="e84f6-116">SetUserOofSettings request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="23de7-117">説明</span><span class="sxs-lookup"><span data-stu-id="23de7-117">Description</span></span>
+### <a name="description"></a><span data-ttu-id="e84f6-117">説明</span><span class="sxs-lookup"><span data-stu-id="e84f6-117">Description</span></span>
 
-<span data-ttu-id="23de7-118">**SetUserOofSettings**要求の次の例では、10 日間、不在時の設定を設定します。</span><span class="sxs-lookup"><span data-stu-id="23de7-118">The following example of a **SetUserOofSettings** request sets an OOF setting for 10 days.</span></span> 
+<span data-ttu-id="e84f6-118">**SetUserOofSettings**要求の次の例では、10 日間、不在時の設定を設定します。</span><span class="sxs-lookup"><span data-stu-id="e84f6-118">The following example of a **SetUserOofSettings** request sets an OOF setting for 10 days.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="23de7-119">コード</span><span class="sxs-lookup"><span data-stu-id="23de7-119">Code</span></span>
+### <a name="code"></a><span data-ttu-id="e84f6-119">コード</span><span class="sxs-lookup"><span data-stu-id="e84f6-119">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -69,45 +69,45 @@ ms.locfileid: "19833469"
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a><span data-ttu-id="23de7-120">要素を要求します。</span><span class="sxs-lookup"><span data-stu-id="23de7-120">Request elements</span></span>
+### <a name="request-elements"></a><span data-ttu-id="e84f6-120">要素を要求します。</span><span class="sxs-lookup"><span data-stu-id="e84f6-120">Request elements</span></span>
 
-<span data-ttu-id="23de7-121">次の要素は、要求で使用されます。</span><span class="sxs-lookup"><span data-stu-id="23de7-121">The following elements are used in the request:</span></span>
+<span data-ttu-id="e84f6-121">次の要素は、要求で使用されます。</span><span class="sxs-lookup"><span data-stu-id="e84f6-121">The following elements are used in the request:</span></span>
   
-- [<span data-ttu-id="23de7-122">SetUserOofSettingsRequest</span><span class="sxs-lookup"><span data-stu-id="23de7-122">SetUserOofSettingsRequest</span></span>](setuseroofsettingsrequest.md)
+- [<span data-ttu-id="e84f6-122">SetUserOofSettingsRequest</span><span class="sxs-lookup"><span data-stu-id="e84f6-122">SetUserOofSettingsRequest</span></span>](setuseroofsettingsrequest.md)
     
-- [<span data-ttu-id="23de7-123">メールボックス (可用性)</span><span class="sxs-lookup"><span data-stu-id="23de7-123">Mailbox (Availability)</span></span>](mailbox-availability.md)
+- [<span data-ttu-id="e84f6-123">メールボックス (可用性)</span><span class="sxs-lookup"><span data-stu-id="e84f6-123">Mailbox (Availability)</span></span>](mailbox-availability.md)
     
-- [<span data-ttu-id="23de7-124">名 (EmailAddress)</span><span class="sxs-lookup"><span data-stu-id="23de7-124">Name (EmailAddress)</span></span>](name-emailaddress.md)
+- [<span data-ttu-id="e84f6-124">名 (EmailAddress)</span><span class="sxs-lookup"><span data-stu-id="e84f6-124">Name (EmailAddress)</span></span>](name-emailaddress.md)
     
-- [<span data-ttu-id="23de7-125">アドレス (文字列)</span><span class="sxs-lookup"><span data-stu-id="23de7-125">Address (string)</span></span>](address-string.md)
+- [<span data-ttu-id="e84f6-125">アドレス (文字列)</span><span class="sxs-lookup"><span data-stu-id="e84f6-125">Address (string)</span></span>](address-string.md)
     
-- [<span data-ttu-id="23de7-126">RoutingType (EmailAddress)</span><span class="sxs-lookup"><span data-stu-id="23de7-126">RoutingType (EmailAddress)</span></span>](routingtype-emailaddress.md)
+- [<span data-ttu-id="e84f6-126">RoutingType (EmailAddress)</span><span class="sxs-lookup"><span data-stu-id="e84f6-126">RoutingType (EmailAddress)</span></span>](routingtype-emailaddress.md)
     
-- [<span data-ttu-id="23de7-127">UserOofSettings</span><span class="sxs-lookup"><span data-stu-id="23de7-127">UserOofSettings</span></span>](useroofsettings.md)
+- [<span data-ttu-id="e84f6-127">UserOofSettings</span><span class="sxs-lookup"><span data-stu-id="e84f6-127">UserOofSettings</span></span>](useroofsettings.md)
     
-- [<span data-ttu-id="23de7-128">OofState</span><span class="sxs-lookup"><span data-stu-id="23de7-128">OofState</span></span>](oofstate.md)
+- [<span data-ttu-id="e84f6-128">OofState</span><span class="sxs-lookup"><span data-stu-id="e84f6-128">OofState</span></span>](oofstate.md)
     
-- [<span data-ttu-id="23de7-129">ExternalAudience</span><span class="sxs-lookup"><span data-stu-id="23de7-129">ExternalAudience</span></span>](externalaudience.md)
+- [<span data-ttu-id="e84f6-129">ExternalAudience</span><span class="sxs-lookup"><span data-stu-id="e84f6-129">ExternalAudience</span></span>](externalaudience.md)
     
-- [<span data-ttu-id="23de7-130">期間 (UserOofSettings)</span><span class="sxs-lookup"><span data-stu-id="23de7-130">Duration (UserOofSettings)</span></span>](duration-useroofsettings.md)
+- [<span data-ttu-id="e84f6-130">期間 (UserOofSettings)</span><span class="sxs-lookup"><span data-stu-id="e84f6-130">Duration (UserOofSettings)</span></span>](duration-useroofsettings.md)
     
-- [<span data-ttu-id="23de7-131">開始時刻</span><span class="sxs-lookup"><span data-stu-id="23de7-131">StartTime</span></span>](starttime.md)
+- [<span data-ttu-id="e84f6-131">開始時刻</span><span class="sxs-lookup"><span data-stu-id="e84f6-131">StartTime</span></span>](starttime.md)
     
-- [<span data-ttu-id="23de7-132">終了時刻</span><span class="sxs-lookup"><span data-stu-id="23de7-132">EndTime</span></span>](endtime.md)
+- [<span data-ttu-id="e84f6-132">終了時刻</span><span class="sxs-lookup"><span data-stu-id="e84f6-132">EndTime</span></span>](endtime.md)
     
-- [<span data-ttu-id="23de7-133">InternalReply</span><span class="sxs-lookup"><span data-stu-id="23de7-133">InternalReply</span></span>](internalreply.md)
+- [<span data-ttu-id="e84f6-133">InternalReply</span><span class="sxs-lookup"><span data-stu-id="e84f6-133">InternalReply</span></span>](internalreply.md)
     
-- [<span data-ttu-id="23de7-134">メッセージ (可用性)</span><span class="sxs-lookup"><span data-stu-id="23de7-134">Message (Availability)</span></span>](message-availability.md)
+- [<span data-ttu-id="e84f6-134">メッセージ (可用性)</span><span class="sxs-lookup"><span data-stu-id="e84f6-134">Message (Availability)</span></span>](message-availability.md)
     
-- [<span data-ttu-id="23de7-135">ExternalReply</span><span class="sxs-lookup"><span data-stu-id="23de7-135">ExternalReply</span></span>](externalreply.md)
+- [<span data-ttu-id="e84f6-135">ExternalReply</span><span class="sxs-lookup"><span data-stu-id="e84f6-135">ExternalReply</span></span>](externalreply.md)
     
-## <a name="successful-setuseroofsettings-response-example"></a><span data-ttu-id="23de7-136">成功した SetUserOofSettings の応答の例</span><span class="sxs-lookup"><span data-stu-id="23de7-136">Successful SetUserOofSettings response example</span></span>
+## <a name="successful-setuseroofsettings-response-example"></a><span data-ttu-id="e84f6-136">成功した SetUserOofSettings の応答の例</span><span class="sxs-lookup"><span data-stu-id="e84f6-136">Successful SetUserOofSettings response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="23de7-137">説明</span><span class="sxs-lookup"><span data-stu-id="23de7-137">Description</span></span>
+### <a name="description"></a><span data-ttu-id="e84f6-137">説明</span><span class="sxs-lookup"><span data-stu-id="e84f6-137">Description</span></span>
 
-<span data-ttu-id="23de7-138">**SetUserOofSettings**要求に正常な応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="23de7-138">The following example shows a successful response to the **SetUserOofSettings** request.</span></span> 
+<span data-ttu-id="e84f6-138">**SetUserOofSettings**要求に正常な応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="e84f6-138">The following example shows a successful response to the **SetUserOofSettings** request.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="23de7-139">コード</span><span class="sxs-lookup"><span data-stu-id="23de7-139">Code</span></span>
+### <a name="code"></a><span data-ttu-id="e84f6-139">コード</span><span class="sxs-lookup"><span data-stu-id="e84f6-139">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?> 
@@ -127,21 +127,21 @@ ms.locfileid: "19833469"
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a><span data-ttu-id="23de7-140">正常な応答の要素</span><span class="sxs-lookup"><span data-stu-id="23de7-140">Successful response elements</span></span>
+### <a name="successful-response-elements"></a><span data-ttu-id="e84f6-140">正常な応答の要素</span><span class="sxs-lookup"><span data-stu-id="e84f6-140">Successful response elements</span></span>
 
-<span data-ttu-id="23de7-141">次の要素は、応答で使用されます。</span><span class="sxs-lookup"><span data-stu-id="23de7-141">The following elements are used in the response:</span></span>
+<span data-ttu-id="e84f6-141">次の要素は、応答で使用されます。</span><span class="sxs-lookup"><span data-stu-id="e84f6-141">The following elements are used in the response:</span></span>
   
-- [<span data-ttu-id="23de7-142">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="23de7-142">ServerVersionInfo</span></span>](serverversioninfo.md)
+- [<span data-ttu-id="e84f6-142">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="e84f6-142">ServerVersionInfo</span></span>](serverversioninfo.md)
     
-- [<span data-ttu-id="23de7-143">SetUserOofSettingsResponse</span><span class="sxs-lookup"><span data-stu-id="23de7-143">SetUserOofSettingsResponse</span></span>](setuseroofsettingsresponse.md)
+- [<span data-ttu-id="e84f6-143">SetUserOofSettingsResponse</span><span class="sxs-lookup"><span data-stu-id="e84f6-143">SetUserOofSettingsResponse</span></span>](setuseroofsettingsresponse.md)
     
-- [<span data-ttu-id="23de7-144">ResponseMessage</span><span class="sxs-lookup"><span data-stu-id="23de7-144">ResponseMessage</span></span>](responsemessage.md)
+- [<span data-ttu-id="e84f6-144">ResponseMessage</span><span class="sxs-lookup"><span data-stu-id="e84f6-144">ResponseMessage</span></span>](responsemessage.md)
     
-- [<span data-ttu-id="23de7-145">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="23de7-145">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="e84f6-145">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="e84f6-145">ResponseCode</span></span>](responsecode.md)
     
-## <a name="see-also"></a><span data-ttu-id="23de7-146">関連項目</span><span class="sxs-lookup"><span data-stu-id="23de7-146">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e84f6-146">関連項目</span><span class="sxs-lookup"><span data-stu-id="e84f6-146">See also</span></span>
 
 
 
-- [<span data-ttu-id="23de7-147">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="23de7-147">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="e84f6-147">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="e84f6-147">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

@@ -12,12 +12,12 @@ ms.openlocfilehash: 67fd8188e3436d5042a2867fe54e673348cba807
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19833422"
 ---
-# <a name="setimgroup"></a><span data-ttu-id="ac180-103">SetImGroup</span><span class="sxs-lookup"><span data-stu-id="ac180-103">SetImGroup</span></span>
+# <a name="setimgroup"></a><span data-ttu-id="9c24f-103">SetImGroup</span><span class="sxs-lookup"><span data-stu-id="9c24f-103">SetImGroup</span></span>
 
-<span data-ttu-id="ac180-104">**SetImGroup**要素は、インスタント メッセージング グループの表示名を変更する要求を表します。</span><span class="sxs-lookup"><span data-stu-id="ac180-104">The **SetImGroup** element represents a request to change the display name of an instant messaging group.</span></span> 
+<span data-ttu-id="9c24f-104">**SetImGroup**要素は、インスタント メッセージング グループの表示名を変更する要求を表します。</span><span class="sxs-lookup"><span data-stu-id="9c24f-104">The **SetImGroup** element represents a request to change the display name of an instant messaging group.</span></span> 
   
 ```XML
 <SetImGroup>
@@ -26,36 +26,36 @@ ms.locfileid: "19833422"
 </SetImGroup>
 ```
 
- <span data-ttu-id="ac180-105">**SetImGroupType**</span><span class="sxs-lookup"><span data-stu-id="ac180-105">**SetImGroupType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="ac180-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="ac180-106">Attributes and elements</span></span>
+ <span data-ttu-id="9c24f-105">**SetImGroupType**</span><span class="sxs-lookup"><span data-stu-id="9c24f-105">**SetImGroupType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="9c24f-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="9c24f-106">Attributes and elements</span></span>
 
-<span data-ttu-id="ac180-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="ac180-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="9c24f-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="9c24f-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="ac180-108">属性</span><span class="sxs-lookup"><span data-stu-id="ac180-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="9c24f-108">属性</span><span class="sxs-lookup"><span data-stu-id="9c24f-108">Attributes</span></span>
 
-<span data-ttu-id="ac180-109">なし。</span><span class="sxs-lookup"><span data-stu-id="ac180-109">None.</span></span>
+<span data-ttu-id="9c24f-109">なし。</span><span class="sxs-lookup"><span data-stu-id="9c24f-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="ac180-110">子要素</span><span class="sxs-lookup"><span data-stu-id="ac180-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="9c24f-110">子要素</span><span class="sxs-lookup"><span data-stu-id="9c24f-110">Child elements</span></span>
 
-<span data-ttu-id="ac180-111">[GroupId](groupid.md) | [NewDisplayName](newdisplayname.md)</span><span class="sxs-lookup"><span data-stu-id="ac180-111">[GroupId](groupid.md) | [NewDisplayName](newdisplayname.md)</span></span>
+<span data-ttu-id="9c24f-111">[GroupId](groupid.md) | [NewDisplayName](newdisplayname.md)</span><span class="sxs-lookup"><span data-stu-id="9c24f-111">[GroupId](groupid.md) | [NewDisplayName](newdisplayname.md)</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="ac180-112">親要素</span><span class="sxs-lookup"><span data-stu-id="ac180-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="9c24f-112">親要素</span><span class="sxs-lookup"><span data-stu-id="9c24f-112">Parent elements</span></span>
 
-<span data-ttu-id="ac180-113">なし。</span><span class="sxs-lookup"><span data-stu-id="ac180-113">None.</span></span>
+<span data-ttu-id="9c24f-113">なし。</span><span class="sxs-lookup"><span data-stu-id="9c24f-113">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="ac180-114">備考</span><span class="sxs-lookup"><span data-stu-id="ac180-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="9c24f-114">備考</span><span class="sxs-lookup"><span data-stu-id="9c24f-114">Remarks</span></span>
 
-<span data-ttu-id="ac180-115">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="ac180-115">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="9c24f-115">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="9c24f-115">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="ac180-116">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="ac180-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="9c24f-116">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="9c24f-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="ac180-117">要素情報</span><span class="sxs-lookup"><span data-stu-id="ac180-117">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="9c24f-117">要素情報</span><span class="sxs-lookup"><span data-stu-id="9c24f-117">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="ac180-118">名前空間</span><span class="sxs-lookup"><span data-stu-id="ac180-118">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="ac180-119">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="ac180-119">Schema name</span></span>  <br/> |<span data-ttu-id="ac180-120">メッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="ac180-120">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="ac180-121">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="ac180-121">Validation file</span></span>  <br/> |<span data-ttu-id="ac180-122">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="ac180-122">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="ac180-123">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="ac180-123">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="9c24f-118">名前空間</span><span class="sxs-lookup"><span data-stu-id="9c24f-118">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="9c24f-119">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="9c24f-119">Schema name</span></span>  <br/> |<span data-ttu-id="9c24f-120">メッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="9c24f-120">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="9c24f-121">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="9c24f-121">Validation file</span></span>  <br/> |<span data-ttu-id="9c24f-122">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="9c24f-122">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="9c24f-123">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="9c24f-123">Can be empty</span></span>  <br/> ||
    
 

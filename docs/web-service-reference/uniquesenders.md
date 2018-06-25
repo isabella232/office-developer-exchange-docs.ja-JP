@@ -16,20 +16,20 @@ ms.openlocfilehash: b75846534141e23e6d8158bc36f0ef60bcb1d7ad
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19839801"
 ---
-# <a name="uniquesenders"></a><span data-ttu-id="006fd-104">UniqueSenders</span><span class="sxs-lookup"><span data-stu-id="006fd-104">UniqueSenders</span></span>
+# <a name="uniquesenders"></a><span data-ttu-id="ed5c7-104">UniqueSenders</span><span class="sxs-lookup"><span data-stu-id="ed5c7-104">UniqueSenders</span></span>
 
-<span data-ttu-id="006fd-105">**UniqueSenders**要素には、現在のフォルダー内の会話の項目のすべての送信者の一覧が含まれています。</span><span class="sxs-lookup"><span data-stu-id="006fd-105">The **UniqueSenders** element contains a list of all the senders of conversation items in the current folder.</span></span> <span data-ttu-id="006fd-106">この要素は、読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="006fd-106">This element is read-only.</span></span> 
+<span data-ttu-id="ed5c7-105">**UniqueSenders**要素には、現在のフォルダー内の会話の項目のすべての送信者の一覧が含まれています。</span><span class="sxs-lookup"><span data-stu-id="ed5c7-105">The **UniqueSenders** element contains a list of all the senders of conversation items in the current folder.</span></span> <span data-ttu-id="ed5c7-106">この要素は、読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="ed5c7-106">This element is read-only.</span></span> 
   
-[<span data-ttu-id="006fd-107">FindConversationResponse</span><span class="sxs-lookup"><span data-stu-id="006fd-107">FindConversationResponse</span></span>](findconversationresponse.md)
+[<span data-ttu-id="ed5c7-107">FindConversationResponse</span><span class="sxs-lookup"><span data-stu-id="ed5c7-107">FindConversationResponse</span></span>](findconversationresponse.md)
   
-[<span data-ttu-id="006fd-108">スレッド</span><span class="sxs-lookup"><span data-stu-id="006fd-108">Conversations</span></span>](conversations-ex15websvcsotherref.md)
+[<span data-ttu-id="ed5c7-108">スレッド</span><span class="sxs-lookup"><span data-stu-id="ed5c7-108">Conversations</span></span>](conversations-ex15websvcsotherref.md)
   
-[<span data-ttu-id="006fd-109">会話 (ConversationType)</span><span class="sxs-lookup"><span data-stu-id="006fd-109">Conversation (ConversationType)</span></span>](conversation-conversationtype.md)
+[<span data-ttu-id="ed5c7-109">会話 (ConversationType)</span><span class="sxs-lookup"><span data-stu-id="ed5c7-109">Conversation (ConversationType)</span></span>](conversation-conversationtype.md)
   
-[<span data-ttu-id="006fd-110">UniqueSenders</span><span class="sxs-lookup"><span data-stu-id="006fd-110">UniqueSenders</span></span>](uniquesenders.md)
+[<span data-ttu-id="ed5c7-110">UniqueSenders</span><span class="sxs-lookup"><span data-stu-id="ed5c7-110">UniqueSenders</span></span>](uniquesenders.md)
   
 ```XML
 <UniqueSenders>
@@ -37,53 +37,53 @@ ms.locfileid: "19839801"
 </UniqueSenders>
 ```
 
- <span data-ttu-id="006fd-111">**ArrayOfStringsType**</span><span class="sxs-lookup"><span data-stu-id="006fd-111">**ArrayOfStringsType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="006fd-112">属性および要素</span><span class="sxs-lookup"><span data-stu-id="006fd-112">Attributes and elements</span></span>
+ <span data-ttu-id="ed5c7-111">**ArrayOfStringsType**</span><span class="sxs-lookup"><span data-stu-id="ed5c7-111">**ArrayOfStringsType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="ed5c7-112">属性および要素</span><span class="sxs-lookup"><span data-stu-id="ed5c7-112">Attributes and elements</span></span>
 
-<span data-ttu-id="006fd-113">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="006fd-113">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="ed5c7-113">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="ed5c7-113">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="006fd-114">属性</span><span class="sxs-lookup"><span data-stu-id="006fd-114">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="ed5c7-114">属性</span><span class="sxs-lookup"><span data-stu-id="ed5c7-114">Attributes</span></span>
 
-<span data-ttu-id="006fd-115">なし。</span><span class="sxs-lookup"><span data-stu-id="006fd-115">None.</span></span>
+<span data-ttu-id="ed5c7-115">なし。</span><span class="sxs-lookup"><span data-stu-id="ed5c7-115">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="006fd-116">子要素</span><span class="sxs-lookup"><span data-stu-id="006fd-116">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="ed5c7-116">子要素</span><span class="sxs-lookup"><span data-stu-id="ed5c7-116">Child elements</span></span>
 
-|<span data-ttu-id="006fd-117">**要素**</span><span class="sxs-lookup"><span data-stu-id="006fd-117">**Element**</span></span>|<span data-ttu-id="006fd-118">**説明**</span><span class="sxs-lookup"><span data-stu-id="006fd-118">**Description**</span></span>|
+|<span data-ttu-id="ed5c7-117">**要素**</span><span class="sxs-lookup"><span data-stu-id="ed5c7-117">**Element**</span></span>|<span data-ttu-id="ed5c7-118">**説明**</span><span class="sxs-lookup"><span data-stu-id="ed5c7-118">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="006fd-119">String</span><span class="sxs-lookup"><span data-stu-id="006fd-119">String</span></span>](string.md) <br/> |<span data-ttu-id="006fd-120">1 つの会話の送信者が含まれています。</span><span class="sxs-lookup"><span data-stu-id="006fd-120">Contains a single conversation sender.</span></span>  <br/> |
+|[<span data-ttu-id="ed5c7-119">String</span><span class="sxs-lookup"><span data-stu-id="ed5c7-119">String</span></span>](string.md) <br/> |<span data-ttu-id="ed5c7-120">1 つの会話の送信者が含まれています。</span><span class="sxs-lookup"><span data-stu-id="ed5c7-120">Contains a single conversation sender.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="006fd-121">親要素</span><span class="sxs-lookup"><span data-stu-id="006fd-121">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="ed5c7-121">親要素</span><span class="sxs-lookup"><span data-stu-id="ed5c7-121">Parent elements</span></span>
 
-|<span data-ttu-id="006fd-122">**要素**</span><span class="sxs-lookup"><span data-stu-id="006fd-122">**Element**</span></span>|<span data-ttu-id="006fd-123">**説明**</span><span class="sxs-lookup"><span data-stu-id="006fd-123">**Description**</span></span>|
+|<span data-ttu-id="ed5c7-122">**要素**</span><span class="sxs-lookup"><span data-stu-id="ed5c7-122">**Element**</span></span>|<span data-ttu-id="ed5c7-123">**説明**</span><span class="sxs-lookup"><span data-stu-id="ed5c7-123">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="006fd-124">会話 (ConversationType)</span><span class="sxs-lookup"><span data-stu-id="006fd-124">Conversation (ConversationType)</span></span>](conversation-conversationtype.md) <br/> |<span data-ttu-id="006fd-125">1 つのテーマを表します。</span><span class="sxs-lookup"><span data-stu-id="006fd-125">Represents a single conversation.</span></span>  <br/> |
+|[<span data-ttu-id="ed5c7-124">会話 (ConversationType)</span><span class="sxs-lookup"><span data-stu-id="ed5c7-124">Conversation (ConversationType)</span></span>](conversation-conversationtype.md) <br/> |<span data-ttu-id="ed5c7-125">1 つのテーマを表します。</span><span class="sxs-lookup"><span data-stu-id="ed5c7-125">Represents a single conversation.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="006fd-126">テキスト値</span><span class="sxs-lookup"><span data-stu-id="006fd-126">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="ed5c7-126">テキスト値</span><span class="sxs-lookup"><span data-stu-id="ed5c7-126">Text value</span></span>
 
-<span data-ttu-id="006fd-127">なし。</span><span class="sxs-lookup"><span data-stu-id="006fd-127">None.</span></span>
+<span data-ttu-id="ed5c7-127">なし。</span><span class="sxs-lookup"><span data-stu-id="ed5c7-127">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="006fd-128">備考</span><span class="sxs-lookup"><span data-stu-id="006fd-128">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ed5c7-128">備考</span><span class="sxs-lookup"><span data-stu-id="ed5c7-128">Remarks</span></span>
 
-<span data-ttu-id="006fd-129">この要素を記述するスキーマは、Exchange Web Services.This の要素がホストをで Exchange Server 2010 Service Pack 1 (SP1) を導入する IIS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="006fd-129">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.This element was introduced in Exchange Server 2010 Service Pack 1 (SP1).</span></span>
+<span data-ttu-id="ed5c7-129">この要素を記述するスキーマは、Exchange Web Services.This の要素がホストをで Exchange Server 2010 Service Pack 1 (SP1) を導入する IIS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="ed5c7-129">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.This element was introduced in Exchange Server 2010 Service Pack 1 (SP1).</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="006fd-130">要素情報</span><span class="sxs-lookup"><span data-stu-id="006fd-130">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="ed5c7-130">要素情報</span><span class="sxs-lookup"><span data-stu-id="ed5c7-130">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="006fd-131">名前空間</span><span class="sxs-lookup"><span data-stu-id="006fd-131">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="006fd-132">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="006fd-132">Schema name</span></span>  <br/> |<span data-ttu-id="006fd-133">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="006fd-133">Types schema</span></span>  <br/> |
-|<span data-ttu-id="006fd-134">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="006fd-134">Validation file</span></span>  <br/> |<span data-ttu-id="006fd-135">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="006fd-135">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="006fd-136">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="006fd-136">Can be empty</span></span>  <br/> |<span data-ttu-id="006fd-137">False</span><span class="sxs-lookup"><span data-stu-id="006fd-137">False</span></span>  <br/> |
+|<span data-ttu-id="ed5c7-131">名前空間</span><span class="sxs-lookup"><span data-stu-id="ed5c7-131">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="ed5c7-132">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="ed5c7-132">Schema name</span></span>  <br/> |<span data-ttu-id="ed5c7-133">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="ed5c7-133">Types schema</span></span>  <br/> |
+|<span data-ttu-id="ed5c7-134">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="ed5c7-134">Validation file</span></span>  <br/> |<span data-ttu-id="ed5c7-135">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="ed5c7-135">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="ed5c7-136">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="ed5c7-136">Can be empty</span></span>  <br/> |<span data-ttu-id="ed5c7-137">False</span><span class="sxs-lookup"><span data-stu-id="ed5c7-137">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="006fd-138">関連項目</span><span class="sxs-lookup"><span data-stu-id="006fd-138">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ed5c7-138">関連項目</span><span class="sxs-lookup"><span data-stu-id="ed5c7-138">See also</span></span>
 
 
 
-<span data-ttu-id="006fd-139">
-  [FindConversation 操作](findconversation-operation.md)</span><span class="sxs-lookup"><span data-stu-id="006fd-139">[FindConversation operation](findconversation-operation.md)</span></span>
+<span data-ttu-id="ed5c7-139">
+  [FindConversation 操作](findconversation-operation.md)</span><span class="sxs-lookup"><span data-stu-id="ed5c7-139">[FindConversation operation](findconversation-operation.md)</span></span>
   
-[<span data-ttu-id="006fd-140">ApplyConversationAction 操作</span><span class="sxs-lookup"><span data-stu-id="006fd-140">ApplyConversationAction operation</span></span>](applyconversationaction-operation.md)
+[<span data-ttu-id="ed5c7-140">ApplyConversationAction 操作</span><span class="sxs-lookup"><span data-stu-id="ed5c7-140">ApplyConversationAction operation</span></span>](applyconversationaction-operation.md)
 
 
-[<span data-ttu-id="006fd-141">EWS での会話</span><span class="sxs-lookup"><span data-stu-id="006fd-141">Conversations in EWS</span></span>](http://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
+[<span data-ttu-id="ed5c7-141">EWS での会話</span><span class="sxs-lookup"><span data-stu-id="ed5c7-141">Conversations in EWS</span></span>](http://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
 

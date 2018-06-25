@@ -16,26 +16,26 @@ ms.openlocfilehash: 6b2e4694ac793e17a2b7cb2edb2cb9e6a4a105ea
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19839640"
 ---
-# <a name="syncfolderitems-operation"></a><span data-ttu-id="9b2c2-103">SyncFolderItems の操作</span><span class="sxs-lookup"><span data-stu-id="9b2c2-103">SyncFolderItems operation</span></span>
+# <a name="syncfolderitems-operation"></a><span data-ttu-id="72187-103">SyncFolderItems の操作</span><span class="sxs-lookup"><span data-stu-id="72187-103">SyncFolderItems operation</span></span>
 
-<span data-ttu-id="9b2c2-104">SyncFolderItems 操作では、Exchange サーバーとクライアントの間で項目を同期します。</span><span class="sxs-lookup"><span data-stu-id="9b2c2-104">The SyncFolderItems operation synchronizes items between the Exchange server and the client.</span></span>
+<span data-ttu-id="72187-104">SyncFolderItems 操作では、Exchange サーバーとクライアントの間で項目を同期します。</span><span class="sxs-lookup"><span data-stu-id="72187-104">The SyncFolderItems operation synchronizes items between the Exchange server and the client.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="9b2c2-105">備考</span><span class="sxs-lookup"><span data-stu-id="9b2c2-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="72187-105">備考</span><span class="sxs-lookup"><span data-stu-id="72187-105">Remarks</span></span>
 
-<span data-ttu-id="9b2c2-106">SyncFolderItems 操作では、最大 512 の変更を返します。</span><span class="sxs-lookup"><span data-stu-id="9b2c2-106">The SyncFolderItems operation will return a maximum of 512 changes.</span></span> <span data-ttu-id="9b2c2-107">SyncFolderItems の後続の要求は、追加の変更を取得する行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="9b2c2-107">Subsequent SyncFolderItems requests must be performed to get additional changes.</span></span> 
+<span data-ttu-id="72187-106">SyncFolderItems 操作では、最大 512 の変更を返します。</span><span class="sxs-lookup"><span data-stu-id="72187-106">The SyncFolderItems operation will return a maximum of 512 changes.</span></span> <span data-ttu-id="72187-107">SyncFolderItems の後続の要求は、追加の変更を取得する行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="72187-107">Subsequent SyncFolderItems requests must be performed to get additional changes.</span></span> 
   
-<span data-ttu-id="9b2c2-108">SyncFolderItems は、本文や添付ファイルなどのプロパティを返すことができないという点で、FindItem 操作と似ています。</span><span class="sxs-lookup"><span data-stu-id="9b2c2-108">SyncFolderItems is similar to the FindItem operation in that it cannot return properties like Body or Attachments.</span></span> <span data-ttu-id="9b2c2-109">SyncFolderItems 操作が必要なプロパティを返さない場合は、SyncFolderItems によって返された各アイテムの特定のプロパティのセットを取得するのには、 [GetItem 操作](getitem-operation.md)を使用できます。</span><span class="sxs-lookup"><span data-stu-id="9b2c2-109">If the SyncFolderItems operation does not return the properties that you need, you can use the [GetItem operation](getitem-operation.md) to get a specific set of properties for each item that it returned by SyncFolderItems.</span></span> 
+<span data-ttu-id="72187-108">SyncFolderItems は、本文や添付ファイルなどのプロパティを返すことができないという点で、FindItem 操作と似ています。</span><span class="sxs-lookup"><span data-stu-id="72187-108">SyncFolderItems is similar to the FindItem operation in that it cannot return properties like Body or Attachments.</span></span> <span data-ttu-id="72187-109">SyncFolderItems 操作が必要なプロパティを返さない場合は、SyncFolderItems によって返された各アイテムの特定のプロパティのセットを取得するのには、 [GetItem 操作](getitem-operation.md)を使用できます。</span><span class="sxs-lookup"><span data-stu-id="72187-109">If the SyncFolderItems operation does not return the properties that you need, you can use the [GetItem operation](getitem-operation.md) to get a specific set of properties for each item that it returned by SyncFolderItems.</span></span> 
   
-## <a name="syncfolderitems-request-example"></a><span data-ttu-id="9b2c2-110">SyncFolderItems 要求の例</span><span class="sxs-lookup"><span data-stu-id="9b2c2-110">SyncFolderItems request example</span></span>
+## <a name="syncfolderitems-request-example"></a><span data-ttu-id="72187-110">SyncFolderItems 要求の例</span><span class="sxs-lookup"><span data-stu-id="72187-110">SyncFolderItems request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="9b2c2-111">説明</span><span class="sxs-lookup"><span data-stu-id="9b2c2-111">Description</span></span>
+### <a name="description"></a><span data-ttu-id="72187-111">説明</span><span class="sxs-lookup"><span data-stu-id="72187-111">Description</span></span>
 
-<span data-ttu-id="9b2c2-112">SyncFolderItems 要求の次の使用例は、フォルダー内のアイテムを同期する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="9b2c2-112">The following example of a SyncFolderItems request shows how to synchronize items in a folder.</span></span> <span data-ttu-id="9b2c2-113">この例では、送信済みアイテム フォルダーで発生した最初の同期ではないフォルダーの項目の同期を使用します。</span><span class="sxs-lookup"><span data-stu-id="9b2c2-113">This example shows a folder item's synchronization that is not the first synchronization to have occurred for the Sent Items folder.</span></span> <span data-ttu-id="9b2c2-114">クライアントが Exchange サーバーと同期する最初の試みの要求では、[同期状態](syncstate-ex15websvcsotherref.md)の要素は含まれません。</span><span class="sxs-lookup"><span data-stu-id="9b2c2-114">The [SyncState](syncstate-ex15websvcsotherref.md) element is not included in the request for the first attempt to synchronize a client with the Exchange server.</span></span> <span data-ttu-id="9b2c2-115">フォルダー階層内の項目を同期する最初の試みのすべての項目で返します、メールボックスでは、[無視する](ignore.md)要素で識別される項目の除外。</span><span class="sxs-lookup"><span data-stu-id="9b2c2-115">The first attempt to synchronize the items in a folder hierarchy will return all the items in the mailbox, excluding items that are identified in the [Ignore](ignore.md) element.</span></span> <span data-ttu-id="9b2c2-116">SyncFolderItems 要求は、前回の同期以降のフォルダーのアイテムに対するすべての変更を同期しようとしています。</span><span class="sxs-lookup"><span data-stu-id="9b2c2-116">This SyncFolderItems request will try to synchronize all changes to the folder items since the last synchronization.</span></span> <span data-ttu-id="9b2c2-117">この要求は[無視する](ignore.md)要素で指定されている項目を 1 つの同期を無視します。</span><span class="sxs-lookup"><span data-stu-id="9b2c2-117">This request will ignore the attempt to synchronize the one item that is identified in the [Ignore](ignore.md) element.</span></span> 
+<span data-ttu-id="72187-112">SyncFolderItems 要求の次の使用例は、フォルダー内のアイテムを同期する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="72187-112">The following example of a SyncFolderItems request shows how to synchronize items in a folder.</span></span> <span data-ttu-id="72187-113">この例では、送信済みアイテム フォルダーで発生した最初の同期ではないフォルダーの項目の同期を使用します。</span><span class="sxs-lookup"><span data-stu-id="72187-113">This example shows a folder item's synchronization that is not the first synchronization to have occurred for the Sent Items folder.</span></span> <span data-ttu-id="72187-114">クライアントが Exchange サーバーと同期する最初の試みの要求では、[同期状態](syncstate-ex15websvcsotherref.md)の要素は含まれません。</span><span class="sxs-lookup"><span data-stu-id="72187-114">The [SyncState](syncstate-ex15websvcsotherref.md) element is not included in the request for the first attempt to synchronize a client with the Exchange server.</span></span> <span data-ttu-id="72187-115">フォルダー階層内の項目を同期する最初の試みのすべての項目で返します、メールボックスでは、[無視する](ignore.md)要素で識別される項目の除外。</span><span class="sxs-lookup"><span data-stu-id="72187-115">The first attempt to synchronize the items in a folder hierarchy will return all the items in the mailbox, excluding items that are identified in the [Ignore](ignore.md) element.</span></span> <span data-ttu-id="72187-116">SyncFolderItems 要求は、前回の同期以降のフォルダーのアイテムに対するすべての変更を同期しようとしています。</span><span class="sxs-lookup"><span data-stu-id="72187-116">This SyncFolderItems request will try to synchronize all changes to the folder items since the last synchronization.</span></span> <span data-ttu-id="72187-117">この要求は[無視する](ignore.md)要素で指定されている項目を 1 つの同期を無視します。</span><span class="sxs-lookup"><span data-stu-id="72187-117">This request will ignore the attempt to synchronize the one item that is identified in the [Ignore](ignore.md) element.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="9b2c2-118">コード</span><span class="sxs-lookup"><span data-stu-id="9b2c2-118">Code</span></span>
+### <a name="code"></a><span data-ttu-id="72187-118">コード</span><span class="sxs-lookup"><span data-stu-id="72187-118">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -59,39 +59,39 @@ ms.locfileid: "19839640"
 </soap:Envelope>
 ```
 
-### <a name="comments"></a><span data-ttu-id="9b2c2-119">コメント</span><span class="sxs-lookup"><span data-stu-id="9b2c2-119">Comments</span></span>
+### <a name="comments"></a><span data-ttu-id="72187-119">コメント</span><span class="sxs-lookup"><span data-stu-id="72187-119">Comments</span></span>
 
-<span data-ttu-id="9b2c2-120">[同期状態](syncstate-ex15websvcsotherref.md)の要素の base64 でエンコードされたデータと[アイテム Id](itemid.md)要素の**Id**属性は、読みやすさを保持するために短縮されています。</span><span class="sxs-lookup"><span data-stu-id="9b2c2-120">The [SyncState](syncstate-ex15websvcsotherref.md) element base64-encoded data and the [ItemId](itemid.md) element **Id** attribute have been shortened to preserve readability.</span></span> 
+<span data-ttu-id="72187-120">[同期状態](syncstate-ex15websvcsotherref.md)の要素の base64 でエンコードされたデータと[アイテム Id](itemid.md)要素の**Id**属性は、読みやすさを保持するために短縮されています。</span><span class="sxs-lookup"><span data-stu-id="72187-120">The [SyncState](syncstate-ex15websvcsotherref.md) element base64-encoded data and the [ItemId](itemid.md) element **Id** attribute have been shortened to preserve readability.</span></span> 
   
-### <a name="request-elements"></a><span data-ttu-id="9b2c2-121">要素を要求します。</span><span class="sxs-lookup"><span data-stu-id="9b2c2-121">Request elements</span></span>
+### <a name="request-elements"></a><span data-ttu-id="72187-121">要素を要求します。</span><span class="sxs-lookup"><span data-stu-id="72187-121">Request elements</span></span>
 
-<span data-ttu-id="9b2c2-122">次の要素は、要求で使用されます。</span><span class="sxs-lookup"><span data-stu-id="9b2c2-122">The following elements are used in the request:</span></span>
+<span data-ttu-id="72187-122">次の要素は、要求で使用されます。</span><span class="sxs-lookup"><span data-stu-id="72187-122">The following elements are used in the request:</span></span>
   
-- [<span data-ttu-id="9b2c2-123">SyncFolderItems</span><span class="sxs-lookup"><span data-stu-id="9b2c2-123">SyncFolderItems</span></span>](syncfolderitems.md)
+- [<span data-ttu-id="72187-123">SyncFolderItems</span><span class="sxs-lookup"><span data-stu-id="72187-123">SyncFolderItems</span></span>](syncfolderitems.md)
     
-- [<span data-ttu-id="9b2c2-124">ItemShape</span><span class="sxs-lookup"><span data-stu-id="9b2c2-124">ItemShape</span></span>](itemshape.md)
+- [<span data-ttu-id="72187-124">ItemShape</span><span class="sxs-lookup"><span data-stu-id="72187-124">ItemShape</span></span>](itemshape.md)
     
-- [<span data-ttu-id="9b2c2-125">BaseShape</span><span class="sxs-lookup"><span data-stu-id="9b2c2-125">BaseShape</span></span>](baseshape.md)
+- [<span data-ttu-id="72187-125">BaseShape</span><span class="sxs-lookup"><span data-stu-id="72187-125">BaseShape</span></span>](baseshape.md)
     
-- [<span data-ttu-id="9b2c2-126">SyncFolderId</span><span class="sxs-lookup"><span data-stu-id="9b2c2-126">SyncFolderId</span></span>](syncfolderid.md)
+- [<span data-ttu-id="72187-126">SyncFolderId</span><span class="sxs-lookup"><span data-stu-id="72187-126">SyncFolderId</span></span>](syncfolderid.md)
     
-- [<span data-ttu-id="9b2c2-127">DistinguishedFolderId</span><span class="sxs-lookup"><span data-stu-id="9b2c2-127">DistinguishedFolderId</span></span>](distinguishedfolderid.md)
+- [<span data-ttu-id="72187-127">DistinguishedFolderId</span><span class="sxs-lookup"><span data-stu-id="72187-127">DistinguishedFolderId</span></span>](distinguishedfolderid.md)
     
-- [<span data-ttu-id="9b2c2-128">同期状態</span><span class="sxs-lookup"><span data-stu-id="9b2c2-128">SyncState</span></span>](syncstate-ex15websvcsotherref.md)
+- [<span data-ttu-id="72187-128">同期状態</span><span class="sxs-lookup"><span data-stu-id="72187-128">SyncState</span></span>](syncstate-ex15websvcsotherref.md)
     
-- [<span data-ttu-id="9b2c2-129">Ignore</span><span class="sxs-lookup"><span data-stu-id="9b2c2-129">Ignore</span></span>](ignore.md)
+- [<span data-ttu-id="72187-129">Ignore</span><span class="sxs-lookup"><span data-stu-id="72187-129">Ignore</span></span>](ignore.md)
     
-- [<span data-ttu-id="9b2c2-130">ItemId</span><span class="sxs-lookup"><span data-stu-id="9b2c2-130">ItemId</span></span>](itemid.md)
+- [<span data-ttu-id="72187-130">ItemId</span><span class="sxs-lookup"><span data-stu-id="72187-130">ItemId</span></span>](itemid.md)
     
-- [<span data-ttu-id="9b2c2-131">MaxChangesReturned</span><span class="sxs-lookup"><span data-stu-id="9b2c2-131">MaxChangesReturned</span></span>](maxchangesreturned.md)
+- [<span data-ttu-id="72187-131">MaxChangesReturned</span><span class="sxs-lookup"><span data-stu-id="72187-131">MaxChangesReturned</span></span>](maxchangesreturned.md)
     
-## <a name="successful-syncfolderitems-response"></a><span data-ttu-id="9b2c2-132">SyncFolderItems の正常な応答</span><span class="sxs-lookup"><span data-stu-id="9b2c2-132">Successful SyncFolderItems Response</span></span>
+## <a name="successful-syncfolderitems-response"></a><span data-ttu-id="72187-132">SyncFolderItems の正常な応答</span><span class="sxs-lookup"><span data-stu-id="72187-132">Successful SyncFolderItems Response</span></span>
 
-### <a name="description"></a><span data-ttu-id="9b2c2-133">説明</span><span class="sxs-lookup"><span data-stu-id="9b2c2-133">Description</span></span>
+### <a name="description"></a><span data-ttu-id="72187-133">説明</span><span class="sxs-lookup"><span data-stu-id="72187-133">Description</span></span>
 
-<span data-ttu-id="9b2c2-134">SyncFolderItems 要求に正常な応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="9b2c2-134">The following example shows a successful response to the SyncFolderItems request.</span></span> <span data-ttu-id="9b2c2-135">この例では、送信済みアイテム フォルダーから会議出席依頼が同期されます。</span><span class="sxs-lookup"><span data-stu-id="9b2c2-135">In this example, a meeting request is synchronized from the Sent Items folder.</span></span>
+<span data-ttu-id="72187-134">SyncFolderItems 要求に正常な応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="72187-134">The following example shows a successful response to the SyncFolderItems request.</span></span> <span data-ttu-id="72187-135">この例では、送信済みアイテム フォルダーから会議出席依頼が同期されます。</span><span class="sxs-lookup"><span data-stu-id="72187-135">In this example, a meeting request is synchronized from the Sent Items folder.</span></span>
   
-### <a name="code"></a><span data-ttu-id="9b2c2-136">コード</span><span class="sxs-lookup"><span data-stu-id="9b2c2-136">Code</span></span>
+### <a name="code"></a><span data-ttu-id="72187-136">コード</span><span class="sxs-lookup"><span data-stu-id="72187-136">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -142,71 +142,71 @@ ms.locfileid: "19839640"
 </soap:Envelope>
 ```
 
-### <a name="comments"></a><span data-ttu-id="9b2c2-137">コメント</span><span class="sxs-lookup"><span data-stu-id="9b2c2-137">Comments</span></span>
+### <a name="comments"></a><span data-ttu-id="72187-137">コメント</span><span class="sxs-lookup"><span data-stu-id="72187-137">Comments</span></span>
 
-<span data-ttu-id="9b2c2-138">[同期状態](syncstate-ex15websvcsotherref.md)の要素の base64 でエンコードされたデータと[アイテム Id](itemid.md)要素の**Id**属性は、読みやすさを保持するために短縮されています。</span><span class="sxs-lookup"><span data-stu-id="9b2c2-138">The [SyncState](syncstate-ex15websvcsotherref.md) element base64-encoded data and the [ItemId](itemid.md) element **Id** attribute have been shortened to preserve readability.</span></span> 
+<span data-ttu-id="72187-138">[同期状態](syncstate-ex15websvcsotherref.md)の要素の base64 でエンコードされたデータと[アイテム Id](itemid.md)要素の**Id**属性は、読みやすさを保持するために短縮されています。</span><span class="sxs-lookup"><span data-stu-id="72187-138">The [SyncState](syncstate-ex15websvcsotherref.md) element base64-encoded data and the [ItemId](itemid.md) element **Id** attribute have been shortened to preserve readability.</span></span> 
   
-### <a name="successful-response-elements"></a><span data-ttu-id="9b2c2-139">正常な応答の要素</span><span class="sxs-lookup"><span data-stu-id="9b2c2-139">Successful response elements</span></span>
+### <a name="successful-response-elements"></a><span data-ttu-id="72187-139">正常な応答の要素</span><span class="sxs-lookup"><span data-stu-id="72187-139">Successful response elements</span></span>
 
-<span data-ttu-id="9b2c2-140">次の要素は、応答で使用されます。</span><span class="sxs-lookup"><span data-stu-id="9b2c2-140">The following elements are used in the response:</span></span>
+<span data-ttu-id="72187-140">次の要素は、応答で使用されます。</span><span class="sxs-lookup"><span data-stu-id="72187-140">The following elements are used in the response:</span></span>
   
-- [<span data-ttu-id="9b2c2-141">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="9b2c2-141">ServerVersionInfo</span></span>](serverversioninfo.md)
+- [<span data-ttu-id="72187-141">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="72187-141">ServerVersionInfo</span></span>](serverversioninfo.md)
     
-- [<span data-ttu-id="9b2c2-142">SyncFolderItemsResponse</span><span class="sxs-lookup"><span data-stu-id="9b2c2-142">SyncFolderItemsResponse</span></span>](syncfolderitemsresponse.md)
+- [<span data-ttu-id="72187-142">SyncFolderItemsResponse</span><span class="sxs-lookup"><span data-stu-id="72187-142">SyncFolderItemsResponse</span></span>](syncfolderitemsresponse.md)
     
-- [<span data-ttu-id="9b2c2-143">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="9b2c2-143">ResponseMessages</span></span>](responsemessages.md)
+- [<span data-ttu-id="72187-143">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="72187-143">ResponseMessages</span></span>](responsemessages.md)
     
-- [<span data-ttu-id="9b2c2-144">SyncFolderItemsResponseMessage</span><span class="sxs-lookup"><span data-stu-id="9b2c2-144">SyncFolderItemsResponseMessage</span></span>](syncfolderitemsresponsemessage.md)
+- [<span data-ttu-id="72187-144">SyncFolderItemsResponseMessage</span><span class="sxs-lookup"><span data-stu-id="72187-144">SyncFolderItemsResponseMessage</span></span>](syncfolderitemsresponsemessage.md)
     
-- [<span data-ttu-id="9b2c2-145">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="9b2c2-145">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="72187-145">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="72187-145">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="9b2c2-146">同期状態</span><span class="sxs-lookup"><span data-stu-id="9b2c2-146">SyncState</span></span>](syncstate-ex15websvcsotherref.md)
+- [<span data-ttu-id="72187-146">同期状態</span><span class="sxs-lookup"><span data-stu-id="72187-146">SyncState</span></span>](syncstate-ex15websvcsotherref.md)
     
-- [<span data-ttu-id="9b2c2-147">IncludesLastItemInRange</span><span class="sxs-lookup"><span data-stu-id="9b2c2-147">IncludesLastItemInRange</span></span>](includeslastiteminrange.md)
+- [<span data-ttu-id="72187-147">IncludesLastItemInRange</span><span class="sxs-lookup"><span data-stu-id="72187-147">IncludesLastItemInRange</span></span>](includeslastiteminrange.md)
     
-- [<span data-ttu-id="9b2c2-148">変更 (アイテム)</span><span class="sxs-lookup"><span data-stu-id="9b2c2-148">Changes (Items)</span></span>](changes-items.md)
+- [<span data-ttu-id="72187-148">変更 (アイテム)</span><span class="sxs-lookup"><span data-stu-id="72187-148">Changes (Items)</span></span>](changes-items.md)
     
-- [<span data-ttu-id="9b2c2-149">(ItemSync) を作成します。</span><span class="sxs-lookup"><span data-stu-id="9b2c2-149">Create (ItemSync)</span></span>](create-itemsync.md)
+- [<span data-ttu-id="72187-149">(ItemSync) を作成します。</span><span class="sxs-lookup"><span data-stu-id="72187-149">Create (ItemSync)</span></span>](create-itemsync.md)
     
-- [<span data-ttu-id="9b2c2-150">MeetingRequest</span><span class="sxs-lookup"><span data-stu-id="9b2c2-150">MeetingRequest</span></span>](meetingrequest.md)
+- [<span data-ttu-id="72187-150">MeetingRequest</span><span class="sxs-lookup"><span data-stu-id="72187-150">MeetingRequest</span></span>](meetingrequest.md)
     
-- [<span data-ttu-id="9b2c2-151">ItemId</span><span class="sxs-lookup"><span data-stu-id="9b2c2-151">ItemId</span></span>](itemid.md)
+- [<span data-ttu-id="72187-151">ItemId</span><span class="sxs-lookup"><span data-stu-id="72187-151">ItemId</span></span>](itemid.md)
     
-- [<span data-ttu-id="9b2c2-152">Subject</span><span class="sxs-lookup"><span data-stu-id="9b2c2-152">Subject</span></span>](subject.md)
+- [<span data-ttu-id="72187-152">Subject</span><span class="sxs-lookup"><span data-stu-id="72187-152">Subject</span></span>](subject.md)
     
-- [<span data-ttu-id="9b2c2-153">Sensitivity</span><span class="sxs-lookup"><span data-stu-id="9b2c2-153">Sensitivity</span></span>](sensitivity.md)
+- [<span data-ttu-id="72187-153">Sensitivity</span><span class="sxs-lookup"><span data-stu-id="72187-153">Sensitivity</span></span>](sensitivity.md)
     
-- [<span data-ttu-id="9b2c2-154">IsOutOfDate</span><span class="sxs-lookup"><span data-stu-id="9b2c2-154">IsOutOfDate</span></span>](isoutofdate.md)
+- [<span data-ttu-id="72187-154">IsOutOfDate</span><span class="sxs-lookup"><span data-stu-id="72187-154">IsOutOfDate</span></span>](isoutofdate.md)
     
-- [<span data-ttu-id="9b2c2-155">HasBeenProcessed</span><span class="sxs-lookup"><span data-stu-id="9b2c2-155">HasBeenProcessed</span></span>](hasbeenprocessed.md)
+- [<span data-ttu-id="72187-155">HasBeenProcessed</span><span class="sxs-lookup"><span data-stu-id="72187-155">HasBeenProcessed</span></span>](hasbeenprocessed.md)
     
-- [<span data-ttu-id="9b2c2-156">ResponseType</span><span class="sxs-lookup"><span data-stu-id="9b2c2-156">ResponseType</span></span>](responsetype.md)
+- [<span data-ttu-id="72187-156">ResponseType</span><span class="sxs-lookup"><span data-stu-id="72187-156">ResponseType</span></span>](responsetype.md)
     
-- [<span data-ttu-id="9b2c2-157">IntendedFreeBusyStatus</span><span class="sxs-lookup"><span data-stu-id="9b2c2-157">IntendedFreeBusyStatus</span></span>](intendedfreebusystatus.md)
+- [<span data-ttu-id="72187-157">IntendedFreeBusyStatus</span><span class="sxs-lookup"><span data-stu-id="72187-157">IntendedFreeBusyStatus</span></span>](intendedfreebusystatus.md)
     
-- [<span data-ttu-id="9b2c2-158">Start</span><span class="sxs-lookup"><span data-stu-id="9b2c2-158">Start</span></span>](start.md)
+- [<span data-ttu-id="72187-158">Start</span><span class="sxs-lookup"><span data-stu-id="72187-158">Start</span></span>](start.md)
     
-- [<span data-ttu-id="9b2c2-159">終わり</span><span class="sxs-lookup"><span data-stu-id="9b2c2-159">End </span></span>](end-ex15websvcsotherref.md)
+- [<span data-ttu-id="72187-159">終わり</span><span class="sxs-lookup"><span data-stu-id="72187-159">End </span></span>](end-ex15websvcsotherref.md)
     
-- [<span data-ttu-id="9b2c2-160">場所</span><span class="sxs-lookup"><span data-stu-id="9b2c2-160">Location</span></span>](location.md)
+- [<span data-ttu-id="72187-160">場所</span><span class="sxs-lookup"><span data-stu-id="72187-160">Location</span></span>](location.md)
     
-- [<span data-ttu-id="9b2c2-161">Organizer</span><span class="sxs-lookup"><span data-stu-id="9b2c2-161">Organizer</span></span>](organizer.md)
+- [<span data-ttu-id="72187-161">Organizer</span><span class="sxs-lookup"><span data-stu-id="72187-161">Organizer</span></span>](organizer.md)
     
-- [<span data-ttu-id="9b2c2-162">メールボックス</span><span class="sxs-lookup"><span data-stu-id="9b2c2-162">Mailbox</span></span>](mailbox.md)
+- [<span data-ttu-id="72187-162">メールボックス</span><span class="sxs-lookup"><span data-stu-id="72187-162">Mailbox</span></span>](mailbox.md)
     
-- [<span data-ttu-id="9b2c2-163">名 (EmailAddressType)</span><span class="sxs-lookup"><span data-stu-id="9b2c2-163">Name (EmailAddressType)</span></span>](name-emailaddresstype.md)
+- [<span data-ttu-id="72187-163">名 (EmailAddressType)</span><span class="sxs-lookup"><span data-stu-id="72187-163">Name (EmailAddressType)</span></span>](name-emailaddresstype.md)
     
-- [<span data-ttu-id="9b2c2-164">EmailAddress (NonEmptyStringType)</span><span class="sxs-lookup"><span data-stu-id="9b2c2-164">EmailAddress (NonEmptyStringType)</span></span>](emailaddress-nonemptystringtype.md)
+- [<span data-ttu-id="72187-164">EmailAddress (NonEmptyStringType)</span><span class="sxs-lookup"><span data-stu-id="72187-164">EmailAddress (NonEmptyStringType)</span></span>](emailaddress-nonemptystringtype.md)
     
-- [<span data-ttu-id="9b2c2-165">RoutingType (EmailAddressType)</span><span class="sxs-lookup"><span data-stu-id="9b2c2-165">RoutingType (EmailAddressType)</span></span>](routingtype-emailaddresstype.md)
+- [<span data-ttu-id="72187-165">RoutingType (EmailAddressType)</span><span class="sxs-lookup"><span data-stu-id="72187-165">RoutingType (EmailAddressType)</span></span>](routingtype-emailaddresstype.md)
     
-## <a name="syncfolderitems-error-response"></a><span data-ttu-id="9b2c2-166">SyncFolderItems エラー応答</span><span class="sxs-lookup"><span data-stu-id="9b2c2-166">SyncFolderItems error response</span></span>
+## <a name="syncfolderitems-error-response"></a><span data-ttu-id="72187-166">SyncFolderItems エラー応答</span><span class="sxs-lookup"><span data-stu-id="72187-166">SyncFolderItems error response</span></span>
 
-### <a name="description"></a><span data-ttu-id="9b2c2-167">説明</span><span class="sxs-lookup"><span data-stu-id="9b2c2-167">Description</span></span>
+### <a name="description"></a><span data-ttu-id="72187-167">説明</span><span class="sxs-lookup"><span data-stu-id="72187-167">Description</span></span>
 
-<span data-ttu-id="9b2c2-168">SyncFolderItems 要求に対してエラー応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="9b2c2-168">The following example shows an error response to a SyncFolderItems request.</span></span> <span data-ttu-id="9b2c2-169">このエラーは、無効な同期状態が原因です。</span><span class="sxs-lookup"><span data-stu-id="9b2c2-169">This error was caused by an invalid SyncState.</span></span>
+<span data-ttu-id="72187-168">SyncFolderItems 要求に対してエラー応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="72187-168">The following example shows an error response to a SyncFolderItems request.</span></span> <span data-ttu-id="72187-169">このエラーは、無効な同期状態が原因です。</span><span class="sxs-lookup"><span data-stu-id="72187-169">This error was caused by an invalid SyncState.</span></span>
   
-### <a name="code"></a><span data-ttu-id="9b2c2-170">コード</span><span class="sxs-lookup"><span data-stu-id="9b2c2-170">Code</span></span>
+### <a name="code"></a><span data-ttu-id="72187-170">コード</span><span class="sxs-lookup"><span data-stu-id="72187-170">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -236,31 +236,31 @@ ms.locfileid: "19839640"
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a><span data-ttu-id="9b2c2-171">エラー応答の要素</span><span class="sxs-lookup"><span data-stu-id="9b2c2-171">Error response elements</span></span>
+### <a name="error-response-elements"></a><span data-ttu-id="72187-171">エラー応答の要素</span><span class="sxs-lookup"><span data-stu-id="72187-171">Error response elements</span></span>
 
-<span data-ttu-id="9b2c2-172">エラー応答では、次の要素が使用されます。</span><span class="sxs-lookup"><span data-stu-id="9b2c2-172">The following elements are used in the error response:</span></span>
+<span data-ttu-id="72187-172">エラー応答では、次の要素が使用されます。</span><span class="sxs-lookup"><span data-stu-id="72187-172">The following elements are used in the error response:</span></span>
   
-- [<span data-ttu-id="9b2c2-173">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="9b2c2-173">ServerVersionInfo</span></span>](serverversioninfo.md)
+- [<span data-ttu-id="72187-173">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="72187-173">ServerVersionInfo</span></span>](serverversioninfo.md)
     
-- [<span data-ttu-id="9b2c2-174">SyncFolderItemsResponse</span><span class="sxs-lookup"><span data-stu-id="9b2c2-174">SyncFolderItemsResponse</span></span>](syncfolderitemsresponse.md)
+- [<span data-ttu-id="72187-174">SyncFolderItemsResponse</span><span class="sxs-lookup"><span data-stu-id="72187-174">SyncFolderItemsResponse</span></span>](syncfolderitemsresponse.md)
     
-- [<span data-ttu-id="9b2c2-175">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="9b2c2-175">ResponseMessages</span></span>](responsemessages.md)
+- [<span data-ttu-id="72187-175">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="72187-175">ResponseMessages</span></span>](responsemessages.md)
     
-- [<span data-ttu-id="9b2c2-176">SyncFolderItemsResponseMessage</span><span class="sxs-lookup"><span data-stu-id="9b2c2-176">SyncFolderItemsResponseMessage</span></span>](syncfolderitemsresponsemessage.md)
+- [<span data-ttu-id="72187-176">SyncFolderItemsResponseMessage</span><span class="sxs-lookup"><span data-stu-id="72187-176">SyncFolderItemsResponseMessage</span></span>](syncfolderitemsresponsemessage.md)
     
-- [<span data-ttu-id="9b2c2-177">MessageText</span><span class="sxs-lookup"><span data-stu-id="9b2c2-177">MessageText</span></span>](messagetext.md)
+- [<span data-ttu-id="72187-177">MessageText</span><span class="sxs-lookup"><span data-stu-id="72187-177">MessageText</span></span>](messagetext.md)
     
-- [<span data-ttu-id="9b2c2-178">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="9b2c2-178">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="72187-178">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="72187-178">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="9b2c2-179">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="9b2c2-179">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
+- [<span data-ttu-id="72187-179">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="72187-179">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
     
-- [<span data-ttu-id="9b2c2-180">同期状態</span><span class="sxs-lookup"><span data-stu-id="9b2c2-180">SyncState</span></span>](syncstate-ex15websvcsotherref.md)
+- [<span data-ttu-id="72187-180">同期状態</span><span class="sxs-lookup"><span data-stu-id="72187-180">SyncState</span></span>](syncstate-ex15websvcsotherref.md)
     
-- [<span data-ttu-id="9b2c2-181">IncludesLastItemInRange</span><span class="sxs-lookup"><span data-stu-id="9b2c2-181">IncludesLastItemInRange</span></span>](includeslastiteminrange.md)
+- [<span data-ttu-id="72187-181">IncludesLastItemInRange</span><span class="sxs-lookup"><span data-stu-id="72187-181">IncludesLastItemInRange</span></span>](includeslastiteminrange.md)
     
-## <a name="see-also"></a><span data-ttu-id="9b2c2-182">関連項目</span><span class="sxs-lookup"><span data-stu-id="9b2c2-182">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="72187-182">関連項目</span><span class="sxs-lookup"><span data-stu-id="72187-182">See also</span></span>
 
 
 
-- [<span data-ttu-id="9b2c2-183">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="9b2c2-183">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="72187-183">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="72187-183">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

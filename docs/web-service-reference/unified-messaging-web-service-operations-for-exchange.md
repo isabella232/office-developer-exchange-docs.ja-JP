@@ -15,47 +15,47 @@ ms.openlocfilehash: 21d3469d752ff6cdca4ed4ea9151daca52d51e9f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19839775"
 ---
-# <a name="unified-messaging-web-service-operations-for-exchange"></a><span data-ttu-id="33119-103">ユニファイド メッセージング web サービスの操作の交換</span><span class="sxs-lookup"><span data-stu-id="33119-103">Unified Messaging web service operations for Exchange</span></span>
+# <a name="unified-messaging-web-service-operations-for-exchange"></a><span data-ttu-id="e932c-103">ユニファイド メッセージング web サービスの操作の交換</span><span class="sxs-lookup"><span data-stu-id="e932c-103">Unified Messaging web service operations for Exchange</span></span>
 
-<span data-ttu-id="33119-104">Exchange ユニファイド メッセージングの web サービスの操作に関する参照情報を検索します。</span><span class="sxs-lookup"><span data-stu-id="33119-104">Find reference information for the Unified Messaging web service operations in Exchange.</span></span>
+<span data-ttu-id="e932c-104">Exchange ユニファイド メッセージングの web サービスの操作に関する参照情報を検索します。</span><span class="sxs-lookup"><span data-stu-id="e932c-104">Find reference information for the Unified Messaging web service operations in Exchange.</span></span>
   
-<span data-ttu-id="33119-105">ユニファイド メッセージング web サービスは、ユニファイド メッセージングのプロパティを変更する、ボイス メール メッセージの再生、記録、あいさつ文、およびテレフォニー デバイス経由でメールボックスのアイテムを指定のクライアント アプリケーションを有効にするさまざまな処理を提供します。</span><span class="sxs-lookup"><span data-stu-id="33119-105">The Unified Messaging web service provides many operations that enable client applications to read and change Unified Messaging properties, play voice mail messages, record greetings, and dictate mailbox items over telephony devices.</span></span> <span data-ttu-id="33119-106">このセクションの記事では、操作の要求と応答メッセージの全体的な構造についての情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="33119-106">The articles in this section provide information about the overall structure of the request and response messages for the operations.</span></span> <span data-ttu-id="33119-107">これらの資料では、一般的なメッセージの構造を表示する例を示します。</span><span class="sxs-lookup"><span data-stu-id="33119-107">These articles provide examples that show common message structures.</span></span> <span data-ttu-id="33119-108">これらの例を使用すると、ユニファイド メッセージングの web サービス要求を行うことができますについて説明します。</span><span class="sxs-lookup"><span data-stu-id="33119-108">You can use these examples to learn about what you can do with a Unified Messaging web service request.</span></span>
+<span data-ttu-id="e932c-105">ユニファイド メッセージング web サービスは、ユニファイド メッセージングのプロパティを変更する、ボイス メール メッセージの再生、記録、あいさつ文、およびテレフォニー デバイス経由でメールボックスのアイテムを指定のクライアント アプリケーションを有効にするさまざまな処理を提供します。</span><span class="sxs-lookup"><span data-stu-id="e932c-105">The Unified Messaging web service provides many operations that enable client applications to read and change Unified Messaging properties, play voice mail messages, record greetings, and dictate mailbox items over telephony devices.</span></span> <span data-ttu-id="e932c-106">このセクションの記事では、操作の要求と応答メッセージの全体的な構造についての情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="e932c-106">The articles in this section provide information about the overall structure of the request and response messages for the operations.</span></span> <span data-ttu-id="e932c-107">これらの資料では、一般的なメッセージの構造を表示する例を示します。</span><span class="sxs-lookup"><span data-stu-id="e932c-107">These articles provide examples that show common message structures.</span></span> <span data-ttu-id="e932c-108">これらの例を使用すると、ユニファイド メッセージングの web サービス要求を行うことができますについて説明します。</span><span class="sxs-lookup"><span data-stu-id="e932c-108">You can use these examples to learn about what you can do with a Unified Messaging web service request.</span></span>
   
 > [!NOTE]
->  <span data-ttu-id="33119-109">Exchange が Exchange 2010 以降のバージョンでは、ことをお勧め、ユニファイド メッセージング web サービス、次の理由からではなく[Exchange Web サービス (EWS)](http://msdn.microsoft.com/library/60285497-0c4e-4e51-84e1-34dd6d89a5d8%28Office.15%29.aspx)で利用可能なユニファイド メッセージングの操作を使用すること: > の EWS ベースユニファイド メッセージング機能では、EWS のマネージ API でファースト クラスのサポートがあります。</span><span class="sxs-lookup"><span data-stu-id="33119-109">For versions of Exchange starting with Exchange 2010, we recommend that you use the Unified Messaging operations that are available in [Exchange Web Services (EWS)](http://msdn.microsoft.com/library/60285497-0c4e-4e51-84e1-34dd6d89a5d8%28Office.15%29.aspx) instead of the Unified Messaging web service, for the following reasons: >  The EWS-based Unified Messaging features have first-class support in the EWS Managed API.</span></span> <span data-ttu-id="33119-110">> Exchange が Exchange 2010 以降のバージョンでは、ユニファイド メッセージング web サービスではなく、EWS にユニファイド メッセージングの新機能が追加されます。</span><span class="sxs-lookup"><span data-stu-id="33119-110">>  In versions of Exchange starting with Exchange 2010, new Unified Messaging features are added to EWS but not to the Unified Messaging web service.</span></span> 
+>  <span data-ttu-id="e932c-109">Exchange が Exchange 2010 以降のバージョンでは、ことをお勧め、ユニファイド メッセージング web サービス、次の理由からではなく[Exchange Web サービス (EWS)](http://msdn.microsoft.com/library/60285497-0c4e-4e51-84e1-34dd6d89a5d8%28Office.15%29.aspx)で利用可能なユニファイド メッセージングの操作を使用すること: > の EWS ベースユニファイド メッセージング機能では、EWS のマネージ API でファースト クラスのサポートがあります。</span><span class="sxs-lookup"><span data-stu-id="e932c-109">For versions of Exchange starting with Exchange 2010, we recommend that you use the Unified Messaging operations that are available in [Exchange Web Services (EWS)](http://msdn.microsoft.com/library/60285497-0c4e-4e51-84e1-34dd6d89a5d8%28Office.15%29.aspx) instead of the Unified Messaging web service, for the following reasons: >  The EWS-based Unified Messaging features have first-class support in the EWS Managed API.</span></span> <span data-ttu-id="e932c-110">> Exchange が Exchange 2010 以降のバージョンでは、ユニファイド メッセージング web サービスではなく、EWS にユニファイド メッセージングの新機能が追加されます。</span><span class="sxs-lookup"><span data-stu-id="e932c-110">>  In versions of Exchange starting with Exchange 2010, new Unified Messaging features are added to EWS but not to the Unified Messaging web service.</span></span> 
   
-## <a name="in-this-section"></a><span data-ttu-id="33119-111">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="33119-111">In this section</span></span>
-<span data-ttu-id="33119-112"><a name="bk_InThisSection"> </a></span><span class="sxs-lookup"><span data-stu-id="33119-112"></span></span>
+## <a name="in-this-section"></a><span data-ttu-id="e932c-111">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="e932c-111">In this section</span></span>
+<span data-ttu-id="e932c-112"><a name="bk_InThisSection"> </a></span><span class="sxs-lookup"><span data-stu-id="e932c-112"></span></span>
 
-- [<span data-ttu-id="33119-113">操作 (UM web サービス) に接続を切断します。</span><span class="sxs-lookup"><span data-stu-id="33119-113">Disconnect operation (UM web service)</span></span>](disconnect-operation-um-web-service.md)
+- [<span data-ttu-id="e932c-113">操作 (UM web サービス) に接続を切断します。</span><span class="sxs-lookup"><span data-stu-id="e932c-113">Disconnect operation (UM web service)</span></span>](disconnect-operation-um-web-service.md)
     
-- [<span data-ttu-id="33119-114">GetCallInfo 操作 (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="33119-114">GetCallInfo operation (UM web service)</span></span>](getcallinfo-operation-um-web-service.md)
+- [<span data-ttu-id="e932c-114">GetCallInfo 操作 (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="e932c-114">GetCallInfo operation (UM web service)</span></span>](getcallinfo-operation-um-web-service.md)
     
-- [<span data-ttu-id="33119-115">GetUMProperties 操作 (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="33119-115">GetUMProperties operation (UM web service)</span></span>](getumproperties-operation-um-web-service.md)
+- [<span data-ttu-id="e932c-115">GetUMProperties 操作 (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="e932c-115">GetUMProperties operation (UM web service)</span></span>](getumproperties-operation-um-web-service.md)
     
-- [<span data-ttu-id="33119-116">IsUMEnabled 操作 (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="33119-116">IsUMEnabled operation (UM web service)</span></span>](isumenabled-operation-um-web-service.md)
+- [<span data-ttu-id="e932c-116">IsUMEnabled 操作 (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="e932c-116">IsUMEnabled operation (UM web service)</span></span>](isumenabled-operation-um-web-service.md)
     
-- [<span data-ttu-id="33119-117">PlayOnPhone 操作 (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="33119-117">PlayOnPhone operation (UM web service)</span></span>](playonphone-operation-um-web-service.md)
+- [<span data-ttu-id="e932c-117">PlayOnPhone 操作 (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="e932c-117">PlayOnPhone operation (UM web service)</span></span>](playonphone-operation-um-web-service.md)
     
-- [<span data-ttu-id="33119-118">PlayOnPhoneGreeting 操作 (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="33119-118">PlayOnPhoneGreeting operation (UM web service)</span></span>](playonphonegreeting-operation-um-web-service.md)
+- [<span data-ttu-id="e932c-118">PlayOnPhoneGreeting 操作 (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="e932c-118">PlayOnPhoneGreeting operation (UM web service)</span></span>](playonphonegreeting-operation-um-web-service.md)
     
-- [<span data-ttu-id="33119-119">ResetPIN 操作 (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="33119-119">ResetPIN operation (UM web service)</span></span>](resetpin-operation-um-web-service.md)
+- [<span data-ttu-id="e932c-119">ResetPIN 操作 (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="e932c-119">ResetPIN operation (UM web service)</span></span>](resetpin-operation-um-web-service.md)
     
-- [<span data-ttu-id="33119-120">SetMissedCallNotificationEnabled 操作 (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="33119-120">SetMissedCallNotificationEnabled operation (UM web service)</span></span>](setmissedcallnotificationenabled-operation-um-web-service.md)
+- [<span data-ttu-id="e932c-120">SetMissedCallNotificationEnabled 操作 (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="e932c-120">SetMissedCallNotificationEnabled operation (UM web service)</span></span>](setmissedcallnotificationenabled-operation-um-web-service.md)
     
-- [<span data-ttu-id="33119-121">SetOofStatus 操作 (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="33119-121">SetOofStatus operation (UM web service)</span></span>](setoofstatus-operation-um-web-service.md)
+- [<span data-ttu-id="e932c-121">SetOofStatus 操作 (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="e932c-121">SetOofStatus operation (UM web service)</span></span>](setoofstatus-operation-um-web-service.md)
     
-- [<span data-ttu-id="33119-122">SetPlayOnPhoneDialString 操作 (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="33119-122">SetPlayOnPhoneDialString operation (UM web service)</span></span>](setplayonphonedialstring-operation-um-web-service.md)
+- [<span data-ttu-id="e932c-122">SetPlayOnPhoneDialString 操作 (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="e932c-122">SetPlayOnPhoneDialString operation (UM web service)</span></span>](setplayonphonedialstring-operation-um-web-service.md)
     
-- [<span data-ttu-id="33119-123">SetTelephoneAccessFolderEmail 操作 (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="33119-123">SetTelephoneAccessFolderEmail operation (UM web service)</span></span>](settelephoneaccessfolderemail-operation-um-web-service.md)
+- [<span data-ttu-id="e932c-123">SetTelephoneAccessFolderEmail 操作 (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="e932c-123">SetTelephoneAccessFolderEmail operation (UM web service)</span></span>](settelephoneaccessfolderemail-operation-um-web-service.md)
     
-## <a name="see-also"></a><span data-ttu-id="33119-124">関連項目</span><span class="sxs-lookup"><span data-stu-id="33119-124">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e932c-124">関連項目</span><span class="sxs-lookup"><span data-stu-id="e932c-124">See also</span></span>
 
-- [<span data-ttu-id="33119-125">Exchange ユニファイド メッセージング web サービス リファレンス</span><span class="sxs-lookup"><span data-stu-id="33119-125">Unified Messaging web service reference for Exchange</span></span>](unified-messaging-web-service-reference-for-exchange.md)
-- [<span data-ttu-id="33119-126">Exchange の自動検出</span><span class="sxs-lookup"><span data-stu-id="33119-126">Autodiscover for Exchange</span></span>](../exchange-web-services/autodiscover-for-exchange.md)
-- [<span data-ttu-id="33119-127">Exchange で Web サービスの使用を開始する</span><span class="sxs-lookup"><span data-stu-id="33119-127">Start using web services in Exchange</span></span>](../exchange-web-services/start-using-web-services-in-exchange.md)
+- [<span data-ttu-id="e932c-125">Exchange ユニファイド メッセージング web サービス リファレンス</span><span class="sxs-lookup"><span data-stu-id="e932c-125">Unified Messaging web service reference for Exchange</span></span>](unified-messaging-web-service-reference-for-exchange.md)
+- [<span data-ttu-id="e932c-126">Exchange の自動検出</span><span class="sxs-lookup"><span data-stu-id="e932c-126">Autodiscover for Exchange</span></span>](../exchange-web-services/autodiscover-for-exchange.md)
+- [<span data-ttu-id="e932c-127">Exchange で Web サービスの使用を開始する</span><span class="sxs-lookup"><span data-stu-id="e932c-127">Start using web services in Exchange</span></span>](../exchange-web-services/start-using-web-services-in-exchange.md)
     
 

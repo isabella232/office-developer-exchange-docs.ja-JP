@@ -12,34 +12,34 @@ ms.openlocfilehash: 1091ed14ceb25dfd275499b9db47ae4e41b5f1a0
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19833412"
 ---
-# <a name="setholdonmailboxes-operation"></a><span data-ttu-id="17cf1-103">SetHoldOnMailboxes 操作</span><span class="sxs-lookup"><span data-stu-id="17cf1-103">SetHoldOnMailboxes operation</span></span>
+# <a name="setholdonmailboxes-operation"></a><span data-ttu-id="85b07-103">SetHoldOnMailboxes 操作</span><span class="sxs-lookup"><span data-stu-id="85b07-103">SetHoldOnMailboxes operation</span></span>
 
-<span data-ttu-id="17cf1-104">**SetHoldOnMailboxes** EWS の操作に関する情報を検索します。</span><span class="sxs-lookup"><span data-stu-id="17cf1-104">Find information about the **SetHoldOnMailboxes** EWS operation.</span></span> 
+<span data-ttu-id="85b07-104">**SetHoldOnMailboxes** EWS の操作に関する情報を検索します。</span><span class="sxs-lookup"><span data-stu-id="85b07-104">Find information about the **SetHoldOnMailboxes** EWS operation.</span></span> 
   
-<span data-ttu-id="17cf1-105">**SetHoldOnMailboxes**操作では、メールボックスのメールボックスの保持ポリシーを設定します。</span><span class="sxs-lookup"><span data-stu-id="17cf1-105">The **SetHoldOnMailboxes** operation sets a mailbox hold policy on mailboxes.</span></span> 
+<span data-ttu-id="85b07-105">**SetHoldOnMailboxes**操作では、メールボックスのメールボックスの保持ポリシーを設定します。</span><span class="sxs-lookup"><span data-stu-id="85b07-105">The **SetHoldOnMailboxes** operation sets a mailbox hold policy on mailboxes.</span></span> 
   
-<span data-ttu-id="17cf1-106">この操作は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="17cf1-106">This operation was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="85b07-106">この操作は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="85b07-106">This operation was introduced in Exchange Server 2013.</span></span>
   
-## <a name="using-the-setholdonmailboxes-operation"></a><span data-ttu-id="17cf1-107">SetHoldOnMailboxes 操作を使用します。</span><span class="sxs-lookup"><span data-stu-id="17cf1-107">Using the SetHoldOnMailboxes operation</span></span>
+## <a name="using-the-setholdonmailboxes-operation"></a><span data-ttu-id="85b07-107">SetHoldOnMailboxes 操作を使用します。</span><span class="sxs-lookup"><span data-stu-id="85b07-107">Using the SetHoldOnMailboxes operation</span></span>
 
-<span data-ttu-id="17cf1-108">**SetHoldOnMailboxes**操作は、1 つまたは複数のメールボックスへのメールボックスの保持を設定します。</span><span class="sxs-lookup"><span data-stu-id="17cf1-108">The **SetHoldOnMailboxes** operation sets a mailbox hold on to one or more mailboxes.</span></span> 
+<span data-ttu-id="85b07-108">**SetHoldOnMailboxes**操作は、1 つまたは複数のメールボックスへのメールボックスの保持を設定します。</span><span class="sxs-lookup"><span data-stu-id="85b07-108">The **SetHoldOnMailboxes** operation sets a mailbox hold on to one or more mailboxes.</span></span> 
   
-### <a name="setholdonmailboxes-operation-soap-headers"></a><span data-ttu-id="17cf1-109">SetHoldOnMailboxes 操作の SOAP ヘッダー</span><span class="sxs-lookup"><span data-stu-id="17cf1-109">SetHoldOnMailboxes operation SOAP headers</span></span>
+### <a name="setholdonmailboxes-operation-soap-headers"></a><span data-ttu-id="85b07-109">SetHoldOnMailboxes 操作の SOAP ヘッダー</span><span class="sxs-lookup"><span data-stu-id="85b07-109">SetHoldOnMailboxes operation SOAP headers</span></span>
 
-<span data-ttu-id="17cf1-110">**SetHoldOnMailboxes**操作は、次の表に記載されている SOAP ヘッダーを使用できます。</span><span class="sxs-lookup"><span data-stu-id="17cf1-110">The **SetHoldOnMailboxes** operation can use the SOAP headers that are listed in the following table.</span></span> 
+<span data-ttu-id="85b07-110">**SetHoldOnMailboxes**操作は、次の表に記載されている SOAP ヘッダーを使用できます。</span><span class="sxs-lookup"><span data-stu-id="85b07-110">The **SetHoldOnMailboxes** operation can use the SOAP headers that are listed in the following table.</span></span> 
   
-|<span data-ttu-id="17cf1-111">**ヘッダー名**</span><span class="sxs-lookup"><span data-stu-id="17cf1-111">**Header name**</span></span>|<span data-ttu-id="17cf1-112">**要素**</span><span class="sxs-lookup"><span data-stu-id="17cf1-112">**Element**</span></span>|<span data-ttu-id="17cf1-113">**説明**</span><span class="sxs-lookup"><span data-stu-id="17cf1-113">**Description**</span></span>|
+|<span data-ttu-id="85b07-111">**ヘッダー名**</span><span class="sxs-lookup"><span data-stu-id="85b07-111">**Header name**</span></span>|<span data-ttu-id="85b07-112">**要素**</span><span class="sxs-lookup"><span data-stu-id="85b07-112">**Element**</span></span>|<span data-ttu-id="85b07-113">**説明**</span><span class="sxs-lookup"><span data-stu-id="85b07-113">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="17cf1-114">**ManagementRole**</span><span class="sxs-lookup"><span data-stu-id="17cf1-114">**ManagementRole**</span></span> <br/> |[<span data-ttu-id="17cf1-115">ManagementRole</span><span class="sxs-lookup"><span data-stu-id="17cf1-115">ManagementRole</span></span>](managementrole.md) <br/> |<span data-ttu-id="17cf1-116">呼び出し元が要求を行うために必要とされるサーバーの役割を識別します。</span><span class="sxs-lookup"><span data-stu-id="17cf1-116">Identifies the server roles that are necessary in order for the caller to make the request.</span></span> <span data-ttu-id="17cf1-117">このヘッダーは、要求に適用されます。</span><span class="sxs-lookup"><span data-stu-id="17cf1-117">This header is applicable to a request.</span></span>  <br/> |
-|<span data-ttu-id="17cf1-118">**RequestVersion**</span><span class="sxs-lookup"><span data-stu-id="17cf1-118">**RequestVersion**</span></span> <br/> |[<span data-ttu-id="17cf1-119">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="17cf1-119">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="17cf1-120">操作要求のスキーマのバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="17cf1-120">Identifies the schema version for the operation request.</span></span> <span data-ttu-id="17cf1-121">このヘッダーは、要求に適用されます。</span><span class="sxs-lookup"><span data-stu-id="17cf1-121">This header is applicable to a request.</span></span>  <br/> |
-|<span data-ttu-id="17cf1-122">**ServerVersion**</span><span class="sxs-lookup"><span data-stu-id="17cf1-122">**ServerVersion**</span></span> <br/> |[<span data-ttu-id="17cf1-123">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="17cf1-123">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="17cf1-124">要求に応答するサーバーのバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="17cf1-124">Identifies the version of the server that responded to the request.</span></span> <span data-ttu-id="17cf1-125">このヘッダーは、応答に適用されます。</span><span class="sxs-lookup"><span data-stu-id="17cf1-125">This header is applicable to a response.</span></span>  <br/> |
+|<span data-ttu-id="85b07-114">**ManagementRole**</span><span class="sxs-lookup"><span data-stu-id="85b07-114">**ManagementRole**</span></span> <br/> |[<span data-ttu-id="85b07-115">ManagementRole</span><span class="sxs-lookup"><span data-stu-id="85b07-115">ManagementRole</span></span>](managementrole.md) <br/> |<span data-ttu-id="85b07-116">呼び出し元が要求を行うために必要とされるサーバーの役割を識別します。</span><span class="sxs-lookup"><span data-stu-id="85b07-116">Identifies the server roles that are necessary in order for the caller to make the request.</span></span> <span data-ttu-id="85b07-117">このヘッダーは、要求に適用されます。</span><span class="sxs-lookup"><span data-stu-id="85b07-117">This header is applicable to a request.</span></span>  <br/> |
+|<span data-ttu-id="85b07-118">**RequestVersion**</span><span class="sxs-lookup"><span data-stu-id="85b07-118">**RequestVersion**</span></span> <br/> |[<span data-ttu-id="85b07-119">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="85b07-119">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="85b07-120">操作要求のスキーマのバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="85b07-120">Identifies the schema version for the operation request.</span></span> <span data-ttu-id="85b07-121">このヘッダーは、要求に適用されます。</span><span class="sxs-lookup"><span data-stu-id="85b07-121">This header is applicable to a request.</span></span>  <br/> |
+|<span data-ttu-id="85b07-122">**ServerVersion**</span><span class="sxs-lookup"><span data-stu-id="85b07-122">**ServerVersion**</span></span> <br/> |[<span data-ttu-id="85b07-123">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="85b07-123">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="85b07-124">要求に応答するサーバーのバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="85b07-124">Identifies the version of the server that responded to the request.</span></span> <span data-ttu-id="85b07-125">このヘッダーは、応答に適用されます。</span><span class="sxs-lookup"><span data-stu-id="85b07-125">This header is applicable to a response.</span></span>  <br/> |
    
-## <a name="setholdonmailboxes-operation-request-example-apply-a-hold-on-a-mailbox"></a><span data-ttu-id="17cf1-126">SetHoldOnMailboxes 操作の要求の例: メールボックスの保留リストを適用</span><span class="sxs-lookup"><span data-stu-id="17cf1-126">SetHoldOnMailboxes operation request example: Apply a hold on a mailbox</span></span>
+## <a name="setholdonmailboxes-operation-request-example-apply-a-hold-on-a-mailbox"></a><span data-ttu-id="85b07-126">SetHoldOnMailboxes 操作の要求の例: メールボックスの保留リストを適用</span><span class="sxs-lookup"><span data-stu-id="85b07-126">SetHoldOnMailboxes operation request example: Apply a hold on a mailbox</span></span>
 
-<span data-ttu-id="17cf1-127">**SetHoldOnMailboxes**操作要求の次の例では、2 つのメールボックスに保留を適用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="17cf1-127">The following example of a **SetHoldOnMailboxes** operation request shows how to apply a hold on two mailboxes.</span></span> <span data-ttu-id="17cf1-128">メールボックスの保留リストは、[新しい MailboxSearch](http://technet.microsoft.com/en-us/library/dd298064.aspx)コマンドを使用して作成されました。</span><span class="sxs-lookup"><span data-stu-id="17cf1-128">The mailbox hold was created by using the [New-MailboxSearch](http://technet.microsoft.com/en-us/library/dd298064.aspx) command.</span></span> 
+<span data-ttu-id="85b07-127">**SetHoldOnMailboxes**操作要求の次の例では、2 つのメールボックスに保留を適用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="85b07-127">The following example of a **SetHoldOnMailboxes** operation request shows how to apply a hold on two mailboxes.</span></span> <span data-ttu-id="85b07-128">メールボックスの保留リストは、[新しい MailboxSearch](http://technet.microsoft.com/en-us/library/dd298064.aspx)コマンドを使用して作成されました。</span><span class="sxs-lookup"><span data-stu-id="85b07-128">The mailbox hold was created by using the [New-MailboxSearch](http://technet.microsoft.com/en-us/library/dd298064.aspx) command.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -67,29 +67,29 @@ ms.locfileid: "19833412"
 
 ```
 
-<span data-ttu-id="17cf1-129">要求 SOAP 本体にはには、次の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="17cf1-129">The request SOAP body contains the following elements:</span></span>
+<span data-ttu-id="85b07-129">要求 SOAP 本体にはには、次の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="85b07-129">The request SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="17cf1-130">SetHoldOnMailboxes</span><span class="sxs-lookup"><span data-stu-id="17cf1-130">SetHoldOnMailboxes</span></span>](setholdonmailboxes.md)
+- [<span data-ttu-id="85b07-130">SetHoldOnMailboxes</span><span class="sxs-lookup"><span data-stu-id="85b07-130">SetHoldOnMailboxes</span></span>](setholdonmailboxes.md)
     
-- [<span data-ttu-id="17cf1-131">ファイアウォール (HoldActionType)</span><span class="sxs-lookup"><span data-stu-id="17cf1-131">ActionType (HoldActionType)</span></span>](actiontype-holdactiontype.md)
+- [<span data-ttu-id="85b07-131">ファイアウォール (HoldActionType)</span><span class="sxs-lookup"><span data-stu-id="85b07-131">ActionType (HoldActionType)</span></span>](actiontype-holdactiontype.md)
     
-- [<span data-ttu-id="17cf1-132">HoldId</span><span class="sxs-lookup"><span data-stu-id="17cf1-132">HoldId</span></span>](holdid.md)
+- [<span data-ttu-id="85b07-132">HoldId</span><span class="sxs-lookup"><span data-stu-id="85b07-132">HoldId</span></span>](holdid.md)
     
-- [<span data-ttu-id="17cf1-133">Query</span><span class="sxs-lookup"><span data-stu-id="17cf1-133">Query</span></span>](query.md)
+- [<span data-ttu-id="85b07-133">Query</span><span class="sxs-lookup"><span data-stu-id="85b07-133">Query</span></span>](query.md)
     
-- [<span data-ttu-id="17cf1-134">メールボックス (ArrayOfStringsType)</span><span class="sxs-lookup"><span data-stu-id="17cf1-134">Mailboxes (ArrayOfStringsType)</span></span>](mailboxes-arrayofstringstype.md)
+- [<span data-ttu-id="85b07-134">メールボックス (ArrayOfStringsType)</span><span class="sxs-lookup"><span data-stu-id="85b07-134">Mailboxes (ArrayOfStringsType)</span></span>](mailboxes-arrayofstringstype.md)
     
-- [<span data-ttu-id="17cf1-135">文字列型 (String)</span><span class="sxs-lookup"><span data-stu-id="17cf1-135">String</span></span>](string.md)
+- [<span data-ttu-id="85b07-135">文字列型 (String)</span><span class="sxs-lookup"><span data-stu-id="85b07-135">String</span></span>](string.md)
     
-- [<span data-ttu-id="17cf1-136">Language</span><span class="sxs-lookup"><span data-stu-id="17cf1-136">Language</span></span>](language.md)
+- [<span data-ttu-id="85b07-136">Language</span><span class="sxs-lookup"><span data-stu-id="85b07-136">Language</span></span>](language.md)
     
-- [<span data-ttu-id="17cf1-137">IncludeNonIndexableItems</span><span class="sxs-lookup"><span data-stu-id="17cf1-137">IncludeNonIndexableItems</span></span>](includenonindexableitems.md)
+- [<span data-ttu-id="85b07-137">IncludeNonIndexableItems</span><span class="sxs-lookup"><span data-stu-id="85b07-137">IncludeNonIndexableItems</span></span>](includenonindexableitems.md)
     
-- [<span data-ttu-id="17cf1-138">重複除外</span><span class="sxs-lookup"><span data-stu-id="17cf1-138">Deduplication</span></span>](deduplication.md)
+- [<span data-ttu-id="85b07-138">重複除外</span><span class="sxs-lookup"><span data-stu-id="85b07-138">Deduplication</span></span>](deduplication.md)
     
-## <a name="successful-setholdonmailboxes-operation-response"></a><span data-ttu-id="17cf1-139">SetHoldOnMailboxes 操作の成功の応答</span><span class="sxs-lookup"><span data-stu-id="17cf1-139">Successful SetHoldOnMailboxes operation response</span></span>
+## <a name="successful-setholdonmailboxes-operation-response"></a><span data-ttu-id="85b07-139">SetHoldOnMailboxes 操作の成功の応答</span><span class="sxs-lookup"><span data-stu-id="85b07-139">Successful SetHoldOnMailboxes operation response</span></span>
 
-<span data-ttu-id="17cf1-140">**SetHoldOnMailboxes**操作に 2 つのメールボックスを配置する要求に正常な応答を保持は、次の例です。</span><span class="sxs-lookup"><span data-stu-id="17cf1-140">The following example shows a successful response to a **SetHoldOnMailboxes** operation request to put two mailboxes on hold.</span></span> 
+<span data-ttu-id="85b07-140">**SetHoldOnMailboxes**操作に 2 つのメールボックスを配置する要求に正常な応答を保持は、次の例です。</span><span class="sxs-lookup"><span data-stu-id="85b07-140">The following example shows a successful response to a **SetHoldOnMailboxes** operation request to put two mailboxes on hold.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -132,31 +132,31 @@ ms.locfileid: "19833412"
 
 ```
 
-<span data-ttu-id="17cf1-141">応答 SOAP 本文には、次の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="17cf1-141">The response SOAP body contains the following elements:</span></span>
+<span data-ttu-id="85b07-141">応答 SOAP 本文には、次の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="85b07-141">The response SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="17cf1-142">SetHoldOnMailboxesResponse</span><span class="sxs-lookup"><span data-stu-id="17cf1-142">SetHoldOnMailboxesResponse</span></span>](setholdonmailboxesresponse.md)
+- [<span data-ttu-id="85b07-142">SetHoldOnMailboxesResponse</span><span class="sxs-lookup"><span data-stu-id="85b07-142">SetHoldOnMailboxesResponse</span></span>](setholdonmailboxesresponse.md)
     
-- [<span data-ttu-id="17cf1-143">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="17cf1-143">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="85b07-143">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="85b07-143">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="17cf1-144">MailboxHoldResult</span><span class="sxs-lookup"><span data-stu-id="17cf1-144">MailboxHoldResult</span></span>](mailboxholdresult.md)
+- [<span data-ttu-id="85b07-144">MailboxHoldResult</span><span class="sxs-lookup"><span data-stu-id="85b07-144">MailboxHoldResult</span></span>](mailboxholdresult.md)
     
-- [<span data-ttu-id="17cf1-145">HoldId</span><span class="sxs-lookup"><span data-stu-id="17cf1-145">HoldId</span></span>](holdid.md)
+- [<span data-ttu-id="85b07-145">HoldId</span><span class="sxs-lookup"><span data-stu-id="85b07-145">HoldId</span></span>](holdid.md)
     
-- [<span data-ttu-id="17cf1-146">Query</span><span class="sxs-lookup"><span data-stu-id="17cf1-146">Query</span></span>](query.md)
+- [<span data-ttu-id="85b07-146">Query</span><span class="sxs-lookup"><span data-stu-id="85b07-146">Query</span></span>](query.md)
     
-- [<span data-ttu-id="17cf1-147">MailboxHoldStatuses</span><span class="sxs-lookup"><span data-stu-id="17cf1-147">MailboxHoldStatuses</span></span>](mailboxholdstatuses.md)
+- [<span data-ttu-id="85b07-147">MailboxHoldStatuses</span><span class="sxs-lookup"><span data-stu-id="85b07-147">MailboxHoldStatuses</span></span>](mailboxholdstatuses.md)
     
-- [<span data-ttu-id="17cf1-148">MailboxHoldStatus</span><span class="sxs-lookup"><span data-stu-id="17cf1-148">MailboxHoldStatus</span></span>](mailboxholdstatus.md)
+- [<span data-ttu-id="85b07-148">MailboxHoldStatus</span><span class="sxs-lookup"><span data-stu-id="85b07-148">MailboxHoldStatus</span></span>](mailboxholdstatus.md)
     
-- [<span data-ttu-id="17cf1-149">メールボックス (文字列)</span><span class="sxs-lookup"><span data-stu-id="17cf1-149">Mailbox (string)</span></span>](mailbox-string.md)
+- [<span data-ttu-id="85b07-149">メールボックス (文字列)</span><span class="sxs-lookup"><span data-stu-id="85b07-149">Mailbox (string)</span></span>](mailbox-string.md)
     
-- [<span data-ttu-id="17cf1-150">状態 (HoldStatusType)</span><span class="sxs-lookup"><span data-stu-id="17cf1-150">Status (HoldStatusType)</span></span>](status-holdstatustype.md)
+- [<span data-ttu-id="85b07-150">状態 (HoldStatusType)</span><span class="sxs-lookup"><span data-stu-id="85b07-150">Status (HoldStatusType)</span></span>](status-holdstatustype.md)
     
-- [<span data-ttu-id="17cf1-151">AdditionalInfo</span><span class="sxs-lookup"><span data-stu-id="17cf1-151">AdditionalInfo</span></span>](additionalinfo.md)
+- [<span data-ttu-id="85b07-151">AdditionalInfo</span><span class="sxs-lookup"><span data-stu-id="85b07-151">AdditionalInfo</span></span>](additionalinfo.md)
     
-## <a name="setholdonmailboxes-operation-error-response"></a><span data-ttu-id="17cf1-152">SetHoldOnMailboxes 操作のエラー応答</span><span class="sxs-lookup"><span data-stu-id="17cf1-152">SetHoldOnMailboxes operation error response</span></span>
+## <a name="setholdonmailboxes-operation-error-response"></a><span data-ttu-id="85b07-152">SetHoldOnMailboxes 操作のエラー応答</span><span class="sxs-lookup"><span data-stu-id="85b07-152">SetHoldOnMailboxes operation error response</span></span>
 
-<span data-ttu-id="17cf1-153">**SetHoldOnMailboxes**操作の要求に対してエラー応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="17cf1-153">The following example shows an error response to a **SetHoldOnMailboxes** operation request.</span></span> <span data-ttu-id="17cf1-154">これは、メールボックスが正しく指定された識別子を含む要求に対する応答です。</span><span class="sxs-lookup"><span data-stu-id="17cf1-154">This is a response to a request that contains an incorrectly specified mailbox identifier.</span></span> 
+<span data-ttu-id="85b07-153">**SetHoldOnMailboxes**操作の要求に対してエラー応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="85b07-153">The following example shows an error response to a **SetHoldOnMailboxes** operation request.</span></span> <span data-ttu-id="85b07-154">これは、メールボックスが正しく指定された識別子を含む要求に対する応答です。</span><span class="sxs-lookup"><span data-stu-id="85b07-154">This is a response to a request that contains an incorrectly specified mailbox identifier.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -185,32 +185,32 @@ ms.locfileid: "19833412"
 
 ```
 
-<span data-ttu-id="17cf1-155">エラー応答 SOAP 本体にはには、次の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="17cf1-155">The error response SOAP body contains the following elements:</span></span>
+<span data-ttu-id="85b07-155">エラー応答 SOAP 本体にはには、次の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="85b07-155">The error response SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="17cf1-156">SetHoldOnMailboxesResponse</span><span class="sxs-lookup"><span data-stu-id="17cf1-156">SetHoldOnMailboxesResponse</span></span>](setholdonmailboxesresponse.md)
+- [<span data-ttu-id="85b07-156">SetHoldOnMailboxesResponse</span><span class="sxs-lookup"><span data-stu-id="85b07-156">SetHoldOnMailboxesResponse</span></span>](setholdonmailboxesresponse.md)
     
-- [<span data-ttu-id="17cf1-157">MessageText</span><span class="sxs-lookup"><span data-stu-id="17cf1-157">MessageText</span></span>](messagetext.md)
+- [<span data-ttu-id="85b07-157">MessageText</span><span class="sxs-lookup"><span data-stu-id="85b07-157">MessageText</span></span>](messagetext.md)
     
-- [<span data-ttu-id="17cf1-158">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="17cf1-158">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="85b07-158">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="85b07-158">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="17cf1-159">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="17cf1-159">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
+- [<span data-ttu-id="85b07-159">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="85b07-159">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
     
-<span data-ttu-id="17cf1-160">EWS を汎用的なこの操作に固有のエラー コードは、 [ResponseCode](responsecode.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="17cf1-160">For additional error codes that are generic to EWS and specific to this operation, see [ResponseCode](responsecode.md).</span></span>
+<span data-ttu-id="85b07-160">EWS を汎用的なこの操作に固有のエラー コードは、 [ResponseCode](responsecode.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="85b07-160">For additional error codes that are generic to EWS and specific to this operation, see [ResponseCode](responsecode.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="17cf1-161">関連項目</span><span class="sxs-lookup"><span data-stu-id="17cf1-161">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="85b07-161">関連項目</span><span class="sxs-lookup"><span data-stu-id="85b07-161">See also</span></span>
 
-- [<span data-ttu-id="17cf1-162">Exchange での EWS の操作</span><span class="sxs-lookup"><span data-stu-id="17cf1-162">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
+- [<span data-ttu-id="85b07-162">Exchange での EWS の操作</span><span class="sxs-lookup"><span data-stu-id="85b07-162">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
     
-- [<span data-ttu-id="17cf1-163">GetSearchableMailboxes 操作</span><span class="sxs-lookup"><span data-stu-id="17cf1-163">GetSearchableMailboxes operation</span></span>](getsearchablemailboxes-operation.md)
+- [<span data-ttu-id="85b07-163">GetSearchableMailboxes 操作</span><span class="sxs-lookup"><span data-stu-id="85b07-163">GetSearchableMailboxes operation</span></span>](getsearchablemailboxes-operation.md)
     
-- [<span data-ttu-id="17cf1-164">SearchMailboxes 操作</span><span class="sxs-lookup"><span data-stu-id="17cf1-164">SearchMailboxes operation</span></span>](searchmailboxes-operation.md)
+- [<span data-ttu-id="85b07-164">SearchMailboxes 操作</span><span class="sxs-lookup"><span data-stu-id="85b07-164">SearchMailboxes operation</span></span>](searchmailboxes-operation.md)
     
-- [<span data-ttu-id="17cf1-165">GetHoldOnMailboxes 操作</span><span class="sxs-lookup"><span data-stu-id="17cf1-165">GetHoldOnMailboxes operation</span></span>](getholdonmailboxes-operation.md)
+- [<span data-ttu-id="85b07-165">GetHoldOnMailboxes 操作</span><span class="sxs-lookup"><span data-stu-id="85b07-165">GetHoldOnMailboxes operation</span></span>](getholdonmailboxes-operation.md)
     
-- [<span data-ttu-id="17cf1-166">GetDiscoverySearchConfiguration 操作</span><span class="sxs-lookup"><span data-stu-id="17cf1-166">GetDiscoverySearchConfiguration operation</span></span>](getdiscoverysearchconfiguration-operation.md)
+- [<span data-ttu-id="85b07-166">GetDiscoverySearchConfiguration 操作</span><span class="sxs-lookup"><span data-stu-id="85b07-166">GetDiscoverySearchConfiguration operation</span></span>](getdiscoverysearchconfiguration-operation.md)
     
-- [<span data-ttu-id="17cf1-167">GetNonIndexableItemDetails 操作</span><span class="sxs-lookup"><span data-stu-id="17cf1-167">GetNonIndexableItemDetails operation</span></span>](getnonindexableitemdetails-operation.md)
+- [<span data-ttu-id="85b07-167">GetNonIndexableItemDetails 操作</span><span class="sxs-lookup"><span data-stu-id="85b07-167">GetNonIndexableItemDetails operation</span></span>](getnonindexableitemdetails-operation.md)
     
-- [<span data-ttu-id="17cf1-168">GetNonIndexableItemStatistics 操作</span><span class="sxs-lookup"><span data-stu-id="17cf1-168">GetNonIndexableItemStatistics operation</span></span>](getnonindexableitemstatistics-operation.md)
+- [<span data-ttu-id="85b07-168">GetNonIndexableItemStatistics 操作</span><span class="sxs-lookup"><span data-stu-id="85b07-168">GetNonIndexableItemStatistics operation</span></span>](getnonindexableitemstatistics-operation.md)
     
 

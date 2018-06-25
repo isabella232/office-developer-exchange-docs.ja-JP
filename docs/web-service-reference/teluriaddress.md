@@ -12,51 +12,51 @@ ms.openlocfilehash: ffb165496b4da5e9b751bcafcfc4b8e221486dfe
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19839658"
 ---
-# <a name="teluriaddress"></a><span data-ttu-id="79b32-103">TelUriAddress</span><span class="sxs-lookup"><span data-stu-id="79b32-103">TelUriAddress</span></span>
+# <a name="teluriaddress"></a><span data-ttu-id="29ab8-103">TelUriAddress</span><span class="sxs-lookup"><span data-stu-id="29ab8-103">TelUriAddress</span></span>
 
-<span data-ttu-id="79b32-104">**TelUriAddress**要素には、連絡先の電話統一リソース識別子 (URI) が含まれています。</span><span class="sxs-lookup"><span data-stu-id="79b32-104">The **TelUriAddress** element contains the tel Uniform Resource Identifier (URI) for a contact.</span></span> 
+<span data-ttu-id="29ab8-104">**TelUriAddress**要素には、連絡先の電話統一リソース識別子 (URI) が含まれています。</span><span class="sxs-lookup"><span data-stu-id="29ab8-104">The **TelUriAddress** element contains the tel Uniform Resource Identifier (URI) for a contact.</span></span> 
   
 ```XML
 <TelUriAddress></TelUriAddress>
 ```
 
- <span data-ttu-id="79b32-105">**NonEmptyStringType**</span><span class="sxs-lookup"><span data-stu-id="79b32-105">**NonEmptyStringType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="79b32-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="79b32-106">Attributes and elements</span></span>
+ <span data-ttu-id="29ab8-105">**NonEmptyStringType**</span><span class="sxs-lookup"><span data-stu-id="29ab8-105">**NonEmptyStringType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="29ab8-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="29ab8-106">Attributes and elements</span></span>
 
-<span data-ttu-id="79b32-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="79b32-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="29ab8-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="29ab8-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="79b32-108">属性</span><span class="sxs-lookup"><span data-stu-id="79b32-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="29ab8-108">属性</span><span class="sxs-lookup"><span data-stu-id="29ab8-108">Attributes</span></span>
 
-<span data-ttu-id="79b32-109">なし。</span><span class="sxs-lookup"><span data-stu-id="79b32-109">None.</span></span>
+<span data-ttu-id="29ab8-109">なし。</span><span class="sxs-lookup"><span data-stu-id="29ab8-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="79b32-110">子要素</span><span class="sxs-lookup"><span data-stu-id="79b32-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="29ab8-110">子要素</span><span class="sxs-lookup"><span data-stu-id="29ab8-110">Child elements</span></span>
 
-<span data-ttu-id="79b32-111">なし。</span><span class="sxs-lookup"><span data-stu-id="79b32-111">None.</span></span>
+<span data-ttu-id="29ab8-111">なし。</span><span class="sxs-lookup"><span data-stu-id="29ab8-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="79b32-112">親要素</span><span class="sxs-lookup"><span data-stu-id="79b32-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="29ab8-112">親要素</span><span class="sxs-lookup"><span data-stu-id="29ab8-112">Parent elements</span></span>
 
-[<span data-ttu-id="79b32-113">AddNewTelUriContactToGroup</span><span class="sxs-lookup"><span data-stu-id="79b32-113">AddNewTelUriContactToGroup</span></span>](addnewteluricontacttogroup.md)
+[<span data-ttu-id="29ab8-113">AddNewTelUriContactToGroup</span><span class="sxs-lookup"><span data-stu-id="29ab8-113">AddNewTelUriContactToGroup</span></span>](addnewteluricontacttogroup.md)
   
-## <a name="text-value"></a><span data-ttu-id="79b32-114">テキスト値</span><span class="sxs-lookup"><span data-stu-id="79b32-114">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="29ab8-114">テキスト値</span><span class="sxs-lookup"><span data-stu-id="29ab8-114">Text value</span></span>
 
-<span data-ttu-id="79b32-115">**TelUriAddress**要素のテキスト値は、連絡先の tel URI です。</span><span class="sxs-lookup"><span data-stu-id="79b32-115">The text value of the **TelUriAddress** element is the tel URI for a contact.</span></span> 
+<span data-ttu-id="29ab8-115">**TelUriAddress**要素のテキスト値は、連絡先の tel URI です。</span><span class="sxs-lookup"><span data-stu-id="29ab8-115">The text value of the **TelUriAddress** element is the tel URI for a contact.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="79b32-116">備考</span><span class="sxs-lookup"><span data-stu-id="79b32-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="29ab8-116">備考</span><span class="sxs-lookup"><span data-stu-id="29ab8-116">Remarks</span></span>
 
-<span data-ttu-id="79b32-117">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="79b32-117">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="29ab8-117">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="29ab8-117">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="79b32-118">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="79b32-118">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="29ab8-118">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="29ab8-118">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="79b32-119">要素情報</span><span class="sxs-lookup"><span data-stu-id="79b32-119">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="29ab8-119">要素情報</span><span class="sxs-lookup"><span data-stu-id="29ab8-119">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="79b32-120">名前空間</span><span class="sxs-lookup"><span data-stu-id="79b32-120">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="79b32-121">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="79b32-121">Schema name</span></span>  <br/> |<span data-ttu-id="79b32-122">メッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="79b32-122">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="79b32-123">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="79b32-123">Validation file</span></span>  <br/> |<span data-ttu-id="79b32-124">messages.xsd</span><span class="sxs-lookup"><span data-stu-id="79b32-124">messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="79b32-125">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="79b32-125">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="29ab8-120">名前空間</span><span class="sxs-lookup"><span data-stu-id="29ab8-120">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="29ab8-121">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="29ab8-121">Schema name</span></span>  <br/> |<span data-ttu-id="29ab8-122">メッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="29ab8-122">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="29ab8-123">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="29ab8-123">Validation file</span></span>  <br/> |<span data-ttu-id="29ab8-124">messages.xsd</span><span class="sxs-lookup"><span data-stu-id="29ab8-124">messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="29ab8-125">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="29ab8-125">Can be empty</span></span>  <br/> ||
    
 
