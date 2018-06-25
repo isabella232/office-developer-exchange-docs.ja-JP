@@ -16,7 +16,7 @@ ms.openlocfilehash: e39a5d3255268b418fa956959da5ae0ea062d831
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19832967"
 ---
 # <a name="receivecopiesofmeetingmessages"></a>ReceiveCopiesOfMeetingMessages

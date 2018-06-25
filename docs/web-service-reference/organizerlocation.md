@@ -12,7 +12,7 @@ ms.openlocfilehash: d9eb88e4ac435746f5e46f7d9b7e4f8c1862b579
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19832664"
 ---
 # <a name="organizerlocation"></a>OrganizerLocation
@@ -35,7 +35,7 @@ ms.locfileid: "19832664"
 
 なし。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>備考
 
 この要素は Exchange Server 2013 で導入されました。
   

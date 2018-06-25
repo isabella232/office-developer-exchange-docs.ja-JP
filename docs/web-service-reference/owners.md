@@ -12,7 +12,7 @@ ms.openlocfilehash: 492125a80079350a88d8a4182e101b6cbd12c8f6
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19832678"
 ---
 # <a name="owners"></a>Owners
@@ -35,7 +35,7 @@ ms.locfileid: "19832678"
 
 なし。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>備考
 
 この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。
   

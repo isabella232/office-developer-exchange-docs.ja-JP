@@ -16,7 +16,7 @@ ms.openlocfilehash: 4dd23b45dcc397e29e67fc08b29dd773e50f0db1
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19832688"
 ---
 # <a name="parentfolderids"></a>ParentFolderIds

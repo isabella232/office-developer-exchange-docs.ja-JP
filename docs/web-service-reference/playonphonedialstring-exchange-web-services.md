@@ -16,7 +16,7 @@ ms.openlocfilehash: 0bc61d6dc32cd0db80599348f1d04c62774954d7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19832827"
 ---
 # <a name="playonphonedialstring-exchange-web-services"></a>PlayOnPhoneDialString (Exchange Web サービス)

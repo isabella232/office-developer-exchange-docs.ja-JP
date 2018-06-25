@@ -12,7 +12,7 @@ ms.openlocfilehash: e6afbd33269d34d643b60f5844e928c90f58794d
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19832199"
 ---
 # <a name="keepproperties"></a>簡単
@@ -35,7 +35,7 @@ ms.locfileid: "19832199"
 
 なし。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>備考
 
 この要素は Exchange Server 2013 で導入されました。
   

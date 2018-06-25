@@ -12,7 +12,7 @@ ms.openlocfilehash: 378d57418156e09ab0ce0bb33d4dc8e6cfdb53b1
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19832240"
 ---
 # <a name="locationbasedstatedefinition"></a>LocationBasedStateDefinition
@@ -39,7 +39,7 @@ ms.locfileid: "19832240"
 
 なし。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>備考
 
 この要素は Exchange Server 2013 で導入されました。
   

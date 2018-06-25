@@ -16,7 +16,7 @@ ms.openlocfilehash: 2da529a8a3532cebb2791b285b7673c962a2a656
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19831954"
 ---
 # <a name="internetmessageheaders"></a>InternetMessageHeaders

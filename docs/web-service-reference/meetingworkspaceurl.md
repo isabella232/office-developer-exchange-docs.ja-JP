@@ -16,7 +16,7 @@ ms.openlocfilehash: 7d84547eafe4e77fb23a792fbf15633dbf93d775
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19832436"
 ---
 # <a name="meetingworkspaceurl"></a>MeetingWorkspaceUrl

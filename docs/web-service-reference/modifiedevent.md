@@ -16,7 +16,7 @@ ms.openlocfilehash: fb464fb0a270d8ca7d33d40e5425e260970b2f1e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19832482"
 ---
 # <a name="modifiedevent"></a>ModifiedEvent

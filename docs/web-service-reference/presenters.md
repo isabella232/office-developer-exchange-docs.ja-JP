@@ -12,7 +12,7 @@ ms.openlocfilehash: f62b458759e0d8199c98827602d6c3fe16aebeea
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19832875"
 ---
 # <a name="presenters"></a>発表者

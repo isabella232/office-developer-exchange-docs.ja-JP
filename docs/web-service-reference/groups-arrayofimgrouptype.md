@@ -12,7 +12,7 @@ ms.openlocfilehash: 7632c922666742d6ab9428a2b1e78ae6a1d544b6
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19831784"
 ---
 # <a name="groups-arrayofimgrouptype"></a>グループ (ArrayOfImGroupType)
@@ -43,7 +43,7 @@ ms.locfileid: "19831784"
 
 [ImItemList](imitemlist.md)
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>備考
 
 この要素は Exchange Server 2013 で導入されました。
   

@@ -12,7 +12,7 @@ ms.openlocfilehash: 07010c7e15fd30ec8771e253ebec12962a0dce1e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19832523"
 ---
 # <a name="nextpredictedaction-itemtype"></a>NextPredictedAction (ItemType)
@@ -35,7 +35,7 @@ ms.locfileid: "19832523"
 
 なし。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>備考
 
 この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。
   

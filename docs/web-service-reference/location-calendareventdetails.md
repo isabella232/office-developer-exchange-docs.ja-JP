@@ -16,7 +16,7 @@ ms.openlocfilehash: 3678bd94851633fcca9817c020106670b57d110c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19832245"
 ---
 # <a name="location-calendareventdetails"></a>場所 (CalendarEventDetails)
