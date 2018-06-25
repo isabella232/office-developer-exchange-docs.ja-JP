@@ -12,7 +12,7 @@ ms.openlocfilehash: e3d7f1e9e736da9a0774e371a6cfca80e348c013
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840045"
 ---
 # <a name="wouldrepair"></a>WouldRepair
@@ -35,7 +35,7 @@ ms.locfileid: "19840045"
 
 なし。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>備考
 
 この要素は Exchange Server 2013 で導入されました。
   

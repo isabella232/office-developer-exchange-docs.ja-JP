@@ -16,7 +16,7 @@ ms.openlocfilehash: 4b8674d267b78f0384f9457e794e88ace8234826
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19839984"
 ---
 # <a name="value"></a>値

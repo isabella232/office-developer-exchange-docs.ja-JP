@@ -16,7 +16,7 @@ ms.openlocfilehash: 78bc76dd63c6737786df02f336217dc8de9a3a67
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840017"
 ---
 # <a name="weeklyrecurrence"></a>WeeklyRecurrence

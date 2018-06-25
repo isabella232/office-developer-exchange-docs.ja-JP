@@ -12,7 +12,7 @@ ms.openlocfilehash: 743ddd7b2a7e8a0e86ab5973c71801b1ec19df19
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19839997"
 ---
 # <a name="votingoptiondata"></a>VotingOptionData
@@ -43,7 +43,7 @@ ms.locfileid: "19839997"
 
 [UserOptions](useroptions.md)
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>備考
 
 この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。
   
