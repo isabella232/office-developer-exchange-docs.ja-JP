@@ -15,20 +15,20 @@ ms.openlocfilehash: 8878099bbd907fe0648f7d64dde3cd9600c2c45f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19831678"
 ---
-# <a name="getumproperties-operation-um-web-service"></a><span data-ttu-id="f8b8e-103">GetUMProperties 操作 (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="f8b8e-103">GetUMProperties operation (UM web service)</span></span>
+# <a name="getumproperties-operation-um-web-service"></a><span data-ttu-id="4b95f-103">GetUMProperties 操作 (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="4b95f-103">GetUMProperties operation (UM web service)</span></span>
 
-<span data-ttu-id="f8b8e-104">GetUMProperties 操作は、要求を行っているユーザーのメールボックスのすべてのユニファイド メッセージング プロパティを取得します。</span><span class="sxs-lookup"><span data-stu-id="f8b8e-104">The GetUMProperties operation gets all the Unified Messaging properties for the mailbox of the user who is making the request.</span></span>
+<span data-ttu-id="4b95f-104">GetUMProperties 操作は、要求を行っているユーザーのメールボックスのすべてのユニファイド メッセージング プロパティを取得します。</span><span class="sxs-lookup"><span data-stu-id="4b95f-104">The GetUMProperties operation gets all the Unified Messaging properties for the mailbox of the user who is making the request.</span></span>
   
-## <a name="getumproperties-request-example"></a><span data-ttu-id="f8b8e-105">GetUMProperties 要求の例</span><span class="sxs-lookup"><span data-stu-id="f8b8e-105">GetUMProperties request example</span></span>
+## <a name="getumproperties-request-example"></a><span data-ttu-id="4b95f-105">GetUMProperties 要求の例</span><span class="sxs-lookup"><span data-stu-id="4b95f-105">GetUMProperties request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="f8b8e-106">説明</span><span class="sxs-lookup"><span data-stu-id="f8b8e-106">Description</span></span>
+### <a name="description"></a><span data-ttu-id="4b95f-106">説明</span><span class="sxs-lookup"><span data-stu-id="4b95f-106">Description</span></span>
 
-<span data-ttu-id="f8b8e-107">GetUMProperties 要求の次の例では、メールボックスのユニファイド メッセージング プロパティを取得する要求を作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="f8b8e-107">The following example of a GetUMProperties request shows how to form a request to get the Unified Messaging properties of a mailbox.</span></span>
+<span data-ttu-id="4b95f-107">GetUMProperties 要求の次の例では、メールボックスのユニファイド メッセージング プロパティを取得する要求を作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="4b95f-107">The following example of a GetUMProperties request shows how to form a request to get the Unified Messaging properties of a mailbox.</span></span>
   
-### <a name="code"></a><span data-ttu-id="f8b8e-108">コード</span><span class="sxs-lookup"><span data-stu-id="f8b8e-108">Code</span></span>
+### <a name="code"></a><span data-ttu-id="4b95f-108">コード</span><span class="sxs-lookup"><span data-stu-id="4b95f-108">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -39,13 +39,13 @@ ms.locfileid: "19831678"
 </soap:Envelope>
 ```
 
-## <a name="successful-getumproperties-response-example"></a><span data-ttu-id="f8b8e-109">成功した GetUMProperties の応答の例</span><span class="sxs-lookup"><span data-stu-id="f8b8e-109">Successful GetUMProperties response example</span></span>
+## <a name="successful-getumproperties-response-example"></a><span data-ttu-id="4b95f-109">成功した GetUMProperties の応答の例</span><span class="sxs-lookup"><span data-stu-id="4b95f-109">Successful GetUMProperties response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="f8b8e-110">説明</span><span class="sxs-lookup"><span data-stu-id="f8b8e-110">Description</span></span>
+### <a name="description"></a><span data-ttu-id="4b95f-110">説明</span><span class="sxs-lookup"><span data-stu-id="4b95f-110">Description</span></span>
 
-<span data-ttu-id="f8b8e-111">GetUMProperties 要求への応答を GetUMProperties の応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="f8b8e-111">The following example of a GetUMProperties response shows a response to the GetUMProperties request.</span></span>
+<span data-ttu-id="4b95f-111">GetUMProperties 要求への応答を GetUMProperties の応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="4b95f-111">The following example of a GetUMProperties response shows a response to the GetUMProperties request.</span></span>
   
-### <a name="code"></a><span data-ttu-id="f8b8e-112">コード</span><span class="sxs-lookup"><span data-stu-id="f8b8e-112">Code</span></span>
+### <a name="code"></a><span data-ttu-id="4b95f-112">コード</span><span class="sxs-lookup"><span data-stu-id="4b95f-112">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -64,11 +64,11 @@ ms.locfileid: "19831678"
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="f8b8e-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="f8b8e-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4b95f-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="4b95f-113">See also</span></span>
 
 
 
-[<span data-ttu-id="f8b8e-114">GetUMProperties (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="f8b8e-114">GetUMProperties (UM web service)</span></span>](getumproperties-um-web-service.md)
+[<span data-ttu-id="4b95f-114">GetUMProperties (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="4b95f-114">GetUMProperties (UM web service)</span></span>](getumproperties-um-web-service.md)
   
-[<span data-ttu-id="f8b8e-115">GetUMPropertiesResponse (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="f8b8e-115">GetUMPropertiesResponse (UM web service)</span></span>](getumpropertiesresponse-um-web-service.md)
+[<span data-ttu-id="4b95f-115">GetUMPropertiesResponse (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="4b95f-115">GetUMPropertiesResponse (UM web service)</span></span>](getumpropertiesresponse-um-web-service.md)
 

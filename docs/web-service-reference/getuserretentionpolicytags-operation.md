@@ -12,33 +12,33 @@ ms.openlocfilehash: 2b1267ce6822c7bad05ad2ef88547ba75c632ab0
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19831700"
 ---
-# <a name="getuserretentionpolicytags-operation"></a><span data-ttu-id="eccc0-103">GetUserRetentionPolicyTags 操作</span><span class="sxs-lookup"><span data-stu-id="eccc0-103">GetUserRetentionPolicyTags operation</span></span>
+# <a name="getuserretentionpolicytags-operation"></a><span data-ttu-id="86ec7-103">GetUserRetentionPolicyTags 操作</span><span class="sxs-lookup"><span data-stu-id="86ec7-103">GetUserRetentionPolicyTags operation</span></span>
 
-<span data-ttu-id="eccc0-104">**GetUserRetentionPolicyTags** EWS の操作に関する情報を検索します。</span><span class="sxs-lookup"><span data-stu-id="eccc0-104">Find information about the **GetUserRetentionPolicyTags** EWS operation.</span></span> 
+<span data-ttu-id="86ec7-104">**GetUserRetentionPolicyTags** EWS の操作に関する情報を検索します。</span><span class="sxs-lookup"><span data-stu-id="86ec7-104">Find information about the **GetUserRetentionPolicyTags** EWS operation.</span></span> 
   
-<span data-ttu-id="eccc0-105">**GetUserRetentionPolicyTags**操作は、既定のシステム フォルダーとは、システム ポリシーを使用してユーザーに関連付けられているか、ユーザーによって適用されたに個人用のタグの一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="eccc0-105">The **GetUserRetentionPolicyTags** operation gets a list of all default, system folder, and personal tags that are associated with a user by means of a system policy or that were applied by the user.</span></span> 
+<span data-ttu-id="86ec7-105">**GetUserRetentionPolicyTags**操作は、既定のシステム フォルダーとは、システム ポリシーを使用してユーザーに関連付けられているか、ユーザーによって適用されたに個人用のタグの一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="86ec7-105">The **GetUserRetentionPolicyTags** operation gets a list of all default, system folder, and personal tags that are associated with a user by means of a system policy or that were applied by the user.</span></span> 
   
-<span data-ttu-id="eccc0-106">この操作は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="eccc0-106">This operation was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="86ec7-106">この操作は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="86ec7-106">This operation was introduced in Exchange Server 2013.</span></span>
   
-## <a name="using-the-getuserretentionpolicytags-operation"></a><span data-ttu-id="eccc0-107">GetUserRetentionPolicyTags 操作を使用します。</span><span class="sxs-lookup"><span data-stu-id="eccc0-107">Using the GetUserRetentionPolicyTags operation</span></span>
+## <a name="using-the-getuserretentionpolicytags-operation"></a><span data-ttu-id="86ec7-107">GetUserRetentionPolicyTags 操作を使用します。</span><span class="sxs-lookup"><span data-stu-id="86ec7-107">Using the GetUserRetentionPolicyTags operation</span></span>
 
-<span data-ttu-id="eccc0-108">この操作は、表示名、ID を保存、保存期間、保存の種類、保存操作と説明タグ、および**IsVisible**、 **OptedInto**、 **IsArchive**プロパティの値を返します。</span><span class="sxs-lookup"><span data-stu-id="eccc0-108">This operation returns the display name, retention ID, retention period, retention type, retention action, and description tags, and the values for the **IsVisible**, **OptedInto**, and **IsArchive** properties.</span></span> 
+<span data-ttu-id="86ec7-108">この操作は、表示名、ID を保存、保存期間、保存の種類、保存操作と説明タグ、および**IsVisible**、 **OptedInto**、 **IsArchive**プロパティの値を返します。</span><span class="sxs-lookup"><span data-stu-id="86ec7-108">This operation returns the display name, retention ID, retention period, retention type, retention action, and description tags, and the values for the **IsVisible**, **OptedInto**, and **IsArchive** properties.</span></span> 
   
-### <a name="getuserretentionpolicytags-operation-soap-headers"></a><span data-ttu-id="eccc0-109">GetUserRetentionPolicyTags 操作の SOAP ヘッダー</span><span class="sxs-lookup"><span data-stu-id="eccc0-109">GetUserRetentionPolicyTags operation SOAP headers</span></span>
+### <a name="getuserretentionpolicytags-operation-soap-headers"></a><span data-ttu-id="86ec7-109">GetUserRetentionPolicyTags 操作の SOAP ヘッダー</span><span class="sxs-lookup"><span data-stu-id="86ec7-109">GetUserRetentionPolicyTags operation SOAP headers</span></span>
 
-<span data-ttu-id="eccc0-110">**GetUserRetentionPolicyTags**操作は、次の表に記載されている SOAP ヘッダーを使用できます。</span><span class="sxs-lookup"><span data-stu-id="eccc0-110">The **GetUserRetentionPolicyTags** operation can use the SOAP headers that are listed in the following table.</span></span> 
+<span data-ttu-id="86ec7-110">**GetUserRetentionPolicyTags**操作は、次の表に記載されている SOAP ヘッダーを使用できます。</span><span class="sxs-lookup"><span data-stu-id="86ec7-110">The **GetUserRetentionPolicyTags** operation can use the SOAP headers that are listed in the following table.</span></span> 
   
-|<span data-ttu-id="eccc0-111">**ヘッダー名**</span><span class="sxs-lookup"><span data-stu-id="eccc0-111">**Header name**</span></span>|<span data-ttu-id="eccc0-112">**要素**</span><span class="sxs-lookup"><span data-stu-id="eccc0-112">**Element**</span></span>|<span data-ttu-id="eccc0-113">**説明**</span><span class="sxs-lookup"><span data-stu-id="eccc0-113">**Description**</span></span>|
+|<span data-ttu-id="86ec7-111">**ヘッダー名**</span><span class="sxs-lookup"><span data-stu-id="86ec7-111">**Header name**</span></span>|<span data-ttu-id="86ec7-112">**要素**</span><span class="sxs-lookup"><span data-stu-id="86ec7-112">**Element**</span></span>|<span data-ttu-id="86ec7-113">**説明**</span><span class="sxs-lookup"><span data-stu-id="86ec7-113">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="eccc0-114">**RequestVersion**</span><span class="sxs-lookup"><span data-stu-id="eccc0-114">**RequestVersion**</span></span> <br/> |[<span data-ttu-id="eccc0-115">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="eccc0-115">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="eccc0-116">操作要求のスキーマのバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="eccc0-116">Identifies the schema version for the operation request.</span></span> <span data-ttu-id="eccc0-117">これは、要求に適用されます。</span><span class="sxs-lookup"><span data-stu-id="eccc0-117">This is applicable to a request.</span></span>  <br/> |
-|<span data-ttu-id="eccc0-118">**ServerVersion**</span><span class="sxs-lookup"><span data-stu-id="eccc0-118">**ServerVersion**</span></span> <br/> |[<span data-ttu-id="eccc0-119">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="eccc0-119">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="eccc0-120">要求に応答するサーバーのバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="eccc0-120">Identifies the version of the server that responded to the request.</span></span> <span data-ttu-id="eccc0-121">これは、応答に適用されます。</span><span class="sxs-lookup"><span data-stu-id="eccc0-121">This is applicable to a response.</span></span>  <br/> |
+|<span data-ttu-id="86ec7-114">**RequestVersion**</span><span class="sxs-lookup"><span data-stu-id="86ec7-114">**RequestVersion**</span></span> <br/> |[<span data-ttu-id="86ec7-115">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="86ec7-115">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="86ec7-116">操作要求のスキーマのバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="86ec7-116">Identifies the schema version for the operation request.</span></span> <span data-ttu-id="86ec7-117">これは、要求に適用されます。</span><span class="sxs-lookup"><span data-stu-id="86ec7-117">This is applicable to a request.</span></span>  <br/> |
+|<span data-ttu-id="86ec7-118">**ServerVersion**</span><span class="sxs-lookup"><span data-stu-id="86ec7-118">**ServerVersion**</span></span> <br/> |[<span data-ttu-id="86ec7-119">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="86ec7-119">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="86ec7-120">要求に応答するサーバーのバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="86ec7-120">Identifies the version of the server that responded to the request.</span></span> <span data-ttu-id="86ec7-121">これは、応答に適用されます。</span><span class="sxs-lookup"><span data-stu-id="86ec7-121">This is applicable to a response.</span></span>  <br/> |
    
-## <a name="getuserretentionpolicytags-operation-request-example"></a><span data-ttu-id="eccc0-122">GetUserRetentionPolicyTags 操作の要求の例</span><span class="sxs-lookup"><span data-stu-id="eccc0-122">GetUserRetentionPolicyTags operation request example</span></span>
+## <a name="getuserretentionpolicytags-operation-request-example"></a><span data-ttu-id="86ec7-122">GetUserRetentionPolicyTags 操作の要求の例</span><span class="sxs-lookup"><span data-stu-id="86ec7-122">GetUserRetentionPolicyTags operation request example</span></span>
 
-<span data-ttu-id="eccc0-123">**GetUserRetentionPolicyTags**操作要求の次の例では、現在のユーザーのタグのリストを取得する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="eccc0-123">The following example of a **GetUserRetentionPolicyTags** operation request shows how to get a list of tags for the current user.</span></span> 
+<span data-ttu-id="86ec7-123">**GetUserRetentionPolicyTags**操作要求の次の例では、現在のユーザーのタグのリストを取得する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="86ec7-123">The following example of a **GetUserRetentionPolicyTags** operation request shows how to get a list of tags for the current user.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -56,13 +56,13 @@ ms.locfileid: "19831700"
 </soap:Envelope>
 ```
 
-<span data-ttu-id="eccc0-124">要求 SOAP 本体にはには、次の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="eccc0-124">The request SOAP body contains the following element:</span></span>
+<span data-ttu-id="86ec7-124">要求 SOAP 本体にはには、次の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="86ec7-124">The request SOAP body contains the following element:</span></span>
   
-- [<span data-ttu-id="eccc0-125">GetUserRetentionPolicyTags</span><span class="sxs-lookup"><span data-stu-id="eccc0-125">GetUserRetentionPolicyTags</span></span>](getuserretentionpolicytags.md)
+- [<span data-ttu-id="86ec7-125">GetUserRetentionPolicyTags</span><span class="sxs-lookup"><span data-stu-id="86ec7-125">GetUserRetentionPolicyTags</span></span>](getuserretentionpolicytags.md)
     
-## <a name="successful-getuserretentionpolicytags-operation-response"></a><span data-ttu-id="eccc0-126">GetUserRetentionPolicyTags 操作の成功の応答</span><span class="sxs-lookup"><span data-stu-id="eccc0-126">Successful GetUserRetentionPolicyTags operation response</span></span>
+## <a name="successful-getuserretentionpolicytags-operation-response"></a><span data-ttu-id="86ec7-126">GetUserRetentionPolicyTags 操作の成功の応答</span><span class="sxs-lookup"><span data-stu-id="86ec7-126">Successful GetUserRetentionPolicyTags operation response</span></span>
 
-<span data-ttu-id="eccc0-127">成功した要求への応答、 **GetUserRetentionPolicyTags**操作の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="eccc0-127">The following example shows a successful response to a **GetUserRetentionPolicyTags** operation request.</span></span> 
+<span data-ttu-id="86ec7-127">成功した要求への応答、 **GetUserRetentionPolicyTags**操作の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="86ec7-127">The following example shows a successful response to a **GetUserRetentionPolicyTags** operation request.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -157,41 +157,41 @@ ms.locfileid: "19831700"
 
 ```
 
-<span data-ttu-id="eccc0-128">応答 SOAP 本文には、次の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="eccc0-128">The response SOAP body contains the following elements:</span></span>
+<span data-ttu-id="86ec7-128">応答 SOAP 本文には、次の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="86ec7-128">The response SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="eccc0-129">GetUserRetentionPolicyTagsResponse</span><span class="sxs-lookup"><span data-stu-id="eccc0-129">GetUserRetentionPolicyTagsResponse</span></span>](getuserretentionpolicytagsresponse.md)
+- [<span data-ttu-id="86ec7-129">GetUserRetentionPolicyTagsResponse</span><span class="sxs-lookup"><span data-stu-id="86ec7-129">GetUserRetentionPolicyTagsResponse</span></span>](getuserretentionpolicytagsresponse.md)
     
-- [<span data-ttu-id="eccc0-130">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="eccc0-130">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="86ec7-130">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="86ec7-130">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="eccc0-131">RetentionPolicyTags</span><span class="sxs-lookup"><span data-stu-id="eccc0-131">RetentionPolicyTags</span></span>](retentionpolicytags.md)
+- [<span data-ttu-id="86ec7-131">RetentionPolicyTags</span><span class="sxs-lookup"><span data-stu-id="86ec7-131">RetentionPolicyTags</span></span>](retentionpolicytags.md)
     
-- [<span data-ttu-id="eccc0-132">RetentionPolicyTag</span><span class="sxs-lookup"><span data-stu-id="eccc0-132">RetentionPolicyTag</span></span>](retentionpolicytag.md)
+- [<span data-ttu-id="86ec7-132">RetentionPolicyTag</span><span class="sxs-lookup"><span data-stu-id="86ec7-132">RetentionPolicyTag</span></span>](retentionpolicytag.md)
     
-- [<span data-ttu-id="eccc0-133">表示名 (文字列)</span><span class="sxs-lookup"><span data-stu-id="eccc0-133">DisplayName (string)</span></span>](displayname-string.md)
+- [<span data-ttu-id="86ec7-133">表示名 (文字列)</span><span class="sxs-lookup"><span data-stu-id="86ec7-133">DisplayName (string)</span></span>](displayname-string.md)
     
-- [<span data-ttu-id="eccc0-134">RetentionId</span><span class="sxs-lookup"><span data-stu-id="eccc0-134">RetentionId</span></span>](retentionid.md)
+- [<span data-ttu-id="86ec7-134">RetentionId</span><span class="sxs-lookup"><span data-stu-id="86ec7-134">RetentionId</span></span>](retentionid.md)
     
-- [<span data-ttu-id="eccc0-135">RetentionPeriod</span><span class="sxs-lookup"><span data-stu-id="eccc0-135">RetentionPeriod</span></span>](retentionperiod.md)
+- [<span data-ttu-id="86ec7-135">RetentionPeriod</span><span class="sxs-lookup"><span data-stu-id="86ec7-135">RetentionPeriod</span></span>](retentionperiod.md)
     
-- [<span data-ttu-id="eccc0-136">型 (ElcFolderType)</span><span class="sxs-lookup"><span data-stu-id="eccc0-136">Type (ElcFolderType)</span></span>](type-elcfoldertype.md)
+- [<span data-ttu-id="86ec7-136">型 (ElcFolderType)</span><span class="sxs-lookup"><span data-stu-id="86ec7-136">Type (ElcFolderType)</span></span>](type-elcfoldertype.md)
     
-- [<span data-ttu-id="eccc0-137">RetentionAction</span><span class="sxs-lookup"><span data-stu-id="eccc0-137">RetentionAction</span></span>](retentionaction.md)
+- [<span data-ttu-id="86ec7-137">RetentionAction</span><span class="sxs-lookup"><span data-stu-id="86ec7-137">RetentionAction</span></span>](retentionaction.md)
     
-- [<span data-ttu-id="eccc0-138">説明</span><span class="sxs-lookup"><span data-stu-id="eccc0-138">Description</span></span>](description.md)
+- [<span data-ttu-id="86ec7-138">説明</span><span class="sxs-lookup"><span data-stu-id="86ec7-138">Description</span></span>](description.md)
     
-- [<span data-ttu-id="eccc0-139">IsVisible</span><span class="sxs-lookup"><span data-stu-id="eccc0-139">IsVisible</span></span>](isvisible.md)
+- [<span data-ttu-id="86ec7-139">IsVisible</span><span class="sxs-lookup"><span data-stu-id="86ec7-139">IsVisible</span></span>](isvisible.md)
     
-- [<span data-ttu-id="eccc0-140">OptedInto</span><span class="sxs-lookup"><span data-stu-id="eccc0-140">OptedInto</span></span>](optedinto.md)
+- [<span data-ttu-id="86ec7-140">OptedInto</span><span class="sxs-lookup"><span data-stu-id="86ec7-140">OptedInto</span></span>](optedinto.md)
     
-- [<span data-ttu-id="eccc0-141">IsArchive</span><span class="sxs-lookup"><span data-stu-id="eccc0-141">IsArchive</span></span>](isarchive.md)
+- [<span data-ttu-id="86ec7-141">IsArchive</span><span class="sxs-lookup"><span data-stu-id="86ec7-141">IsArchive</span></span>](isarchive.md)
     
-## <a name="getuserretentionpolicytags-operation-error-response"></a><span data-ttu-id="eccc0-142">GetUserRetentionPolicyTags 操作のエラー応答</span><span class="sxs-lookup"><span data-stu-id="eccc0-142">GetUserRetentionPolicyTags operation error response</span></span>
+## <a name="getuserretentionpolicytags-operation-error-response"></a><span data-ttu-id="86ec7-142">GetUserRetentionPolicyTags 操作のエラー応答</span><span class="sxs-lookup"><span data-stu-id="86ec7-142">GetUserRetentionPolicyTags operation error response</span></span>
 
-<span data-ttu-id="eccc0-143">EWS を汎用のエラー コードは、 [ResponseCode](responsecode.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eccc0-143">For error codes that are generic to EWS, see [ResponseCode](responsecode.md).</span></span>
+<span data-ttu-id="86ec7-143">EWS を汎用のエラー コードは、 [ResponseCode](responsecode.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="86ec7-143">For error codes that are generic to EWS, see [ResponseCode](responsecode.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="eccc0-144">関連項目</span><span class="sxs-lookup"><span data-stu-id="eccc0-144">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="86ec7-144">関連項目</span><span class="sxs-lookup"><span data-stu-id="86ec7-144">See also</span></span>
 
 
 
-[<span data-ttu-id="eccc0-145">EWS のリテンション ・ ポリシー</span><span class="sxs-lookup"><span data-stu-id="eccc0-145">Retention policies in EWS</span></span>](http://msdn.microsoft.com/library/a132872f-0228-4bcb-aac2-bf64fb07e58e%28Office.15%29.aspx)
+[<span data-ttu-id="86ec7-145">EWS のリテンション ・ ポリシー</span><span class="sxs-lookup"><span data-stu-id="86ec7-145">Retention policies in EWS</span></span>](http://msdn.microsoft.com/library/a132872f-0228-4bcb-aac2-bf64fb07e58e%28Office.15%29.aspx)
 

@@ -16,31 +16,31 @@ ms.openlocfilehash: 6f3371d19bd8a7fd967d4959d85037ae6b51f6aa
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19833088"
 ---
-# <a name="removedelegate-operation"></a><span data-ttu-id="ff9e8-103">RemoveDelegate 操作</span><span class="sxs-lookup"><span data-stu-id="ff9e8-103">RemoveDelegate operation</span></span>
+# <a name="removedelegate-operation"></a><span data-ttu-id="2c192-103">RemoveDelegate 操作</span><span class="sxs-lookup"><span data-stu-id="2c192-103">RemoveDelegate operation</span></span>
 
-<span data-ttu-id="ff9e8-104">**RemoveDelegate**操作は、ユーザーのメールボックスから、1 つまたは複数のデリゲートを削除します。</span><span class="sxs-lookup"><span data-stu-id="ff9e8-104">The **RemoveDelegate** operation removes one or more delegates from a user's mailbox.</span></span> 
+<span data-ttu-id="2c192-104">**RemoveDelegate**操作は、ユーザーのメールボックスから、1 つまたは複数のデリゲートを削除します。</span><span class="sxs-lookup"><span data-stu-id="2c192-104">The **RemoveDelegate** operation removes one or more delegates from a user's mailbox.</span></span> 
   
-## <a name="soap-headers"></a><span data-ttu-id="ff9e8-105">SOAP ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ff9e8-105">SOAP Headers</span></span>
+## <a name="soap-headers"></a><span data-ttu-id="2c192-105">SOAP ヘッダー</span><span class="sxs-lookup"><span data-stu-id="2c192-105">SOAP Headers</span></span>
 
-<span data-ttu-id="ff9e8-106">**RemoveDelegate**操作が一覧表示され、次の表に記載されている SOAP ヘッダーを使用できます。</span><span class="sxs-lookup"><span data-stu-id="ff9e8-106">The **RemoveDelegate** operation can use the SOAP headers that are listed and described in the following table.</span></span> 
+<span data-ttu-id="2c192-106">**RemoveDelegate**操作が一覧表示され、次の表に記載されている SOAP ヘッダーを使用できます。</span><span class="sxs-lookup"><span data-stu-id="2c192-106">The **RemoveDelegate** operation can use the SOAP headers that are listed and described in the following table.</span></span> 
   
-|<span data-ttu-id="ff9e8-107">**Header**</span><span class="sxs-lookup"><span data-stu-id="ff9e8-107">**Header**</span></span>|<span data-ttu-id="ff9e8-108">**要素**</span><span class="sxs-lookup"><span data-stu-id="ff9e8-108">**Element**</span></span>|<span data-ttu-id="ff9e8-109">**説明**</span><span class="sxs-lookup"><span data-stu-id="ff9e8-109">**Description**</span></span>|
+|<span data-ttu-id="2c192-107">**Header**</span><span class="sxs-lookup"><span data-stu-id="2c192-107">**Header**</span></span>|<span data-ttu-id="2c192-108">**要素**</span><span class="sxs-lookup"><span data-stu-id="2c192-108">**Element**</span></span>|<span data-ttu-id="2c192-109">**説明**</span><span class="sxs-lookup"><span data-stu-id="2c192-109">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="ff9e8-110">偽装</span><span class="sxs-lookup"><span data-stu-id="ff9e8-110">Impersonation</span></span>  <br/> |[<span data-ttu-id="ff9e8-111">ExchangeImpersonation</span><span class="sxs-lookup"><span data-stu-id="ff9e8-111">ExchangeImpersonation</span></span>](exchangeimpersonation.md) <br/> |<span data-ttu-id="ff9e8-112">クライアント アプリケーションが偽装するユーザーを識別します。</span><span class="sxs-lookup"><span data-stu-id="ff9e8-112">Identifies the user whom the client application is impersonating.</span></span>  <br/> |
-|<span data-ttu-id="ff9e8-113">MailboxCulture</span><span class="sxs-lookup"><span data-stu-id="ff9e8-113">MailboxCulture</span></span>  <br/> |[<span data-ttu-id="ff9e8-114">MailboxCulture</span><span class="sxs-lookup"><span data-stu-id="ff9e8-114">MailboxCulture</span></span>](mailboxculture.md) <br/> |<span data-ttu-id="ff9e8-115">RFC3066 カルチャを使用してメールボックスへのアクセスを識別します。</span><span class="sxs-lookup"><span data-stu-id="ff9e8-115">Identifies the RFC3066 culture to be used to access the mailbox.</span></span>  <br/> |
-|<span data-ttu-id="ff9e8-116">RequestVersion</span><span class="sxs-lookup"><span data-stu-id="ff9e8-116">RequestVersion</span></span>  <br/> |[<span data-ttu-id="ff9e8-117">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="ff9e8-117">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="ff9e8-118">操作要求のスキーマのバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="ff9e8-118">Identifies the schema version for the operation request.</span></span>  <br/> |
-|<span data-ttu-id="ff9e8-119">ServerVersion</span><span class="sxs-lookup"><span data-stu-id="ff9e8-119">ServerVersion</span></span>  <br/> |[<span data-ttu-id="ff9e8-120">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="ff9e8-120">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="ff9e8-121">要求に応答するサーバーのバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="ff9e8-121">Identifies the version of the server that responded to the request.</span></span>  <br/> |
+|<span data-ttu-id="2c192-110">偽装</span><span class="sxs-lookup"><span data-stu-id="2c192-110">Impersonation</span></span>  <br/> |[<span data-ttu-id="2c192-111">ExchangeImpersonation</span><span class="sxs-lookup"><span data-stu-id="2c192-111">ExchangeImpersonation</span></span>](exchangeimpersonation.md) <br/> |<span data-ttu-id="2c192-112">クライアント アプリケーションが偽装するユーザーを識別します。</span><span class="sxs-lookup"><span data-stu-id="2c192-112">Identifies the user whom the client application is impersonating.</span></span>  <br/> |
+|<span data-ttu-id="2c192-113">MailboxCulture</span><span class="sxs-lookup"><span data-stu-id="2c192-113">MailboxCulture</span></span>  <br/> |[<span data-ttu-id="2c192-114">MailboxCulture</span><span class="sxs-lookup"><span data-stu-id="2c192-114">MailboxCulture</span></span>](mailboxculture.md) <br/> |<span data-ttu-id="2c192-115">RFC3066 カルチャを使用してメールボックスへのアクセスを識別します。</span><span class="sxs-lookup"><span data-stu-id="2c192-115">Identifies the RFC3066 culture to be used to access the mailbox.</span></span>  <br/> |
+|<span data-ttu-id="2c192-116">RequestVersion</span><span class="sxs-lookup"><span data-stu-id="2c192-116">RequestVersion</span></span>  <br/> |[<span data-ttu-id="2c192-117">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="2c192-117">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="2c192-118">操作要求のスキーマのバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="2c192-118">Identifies the schema version for the operation request.</span></span>  <br/> |
+|<span data-ttu-id="2c192-119">ServerVersion</span><span class="sxs-lookup"><span data-stu-id="2c192-119">ServerVersion</span></span>  <br/> |[<span data-ttu-id="2c192-120">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="2c192-120">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="2c192-121">要求に応答するサーバーのバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="2c192-121">Identifies the version of the server that responded to the request.</span></span>  <br/> |
    
-## <a name="removedelegate-request-example"></a><span data-ttu-id="ff9e8-122">RemoveDelegate 要求の例</span><span class="sxs-lookup"><span data-stu-id="ff9e8-122">RemoveDelegate request example</span></span>
+## <a name="removedelegate-request-example"></a><span data-ttu-id="2c192-122">RemoveDelegate 要求の例</span><span class="sxs-lookup"><span data-stu-id="2c192-122">RemoveDelegate request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="ff9e8-123">説明</span><span class="sxs-lookup"><span data-stu-id="ff9e8-123">Description</span></span>
+### <a name="description"></a><span data-ttu-id="2c192-123">説明</span><span class="sxs-lookup"><span data-stu-id="2c192-123">Description</span></span>
 
-<span data-ttu-id="ff9e8-124">次のコード例は、user1 のメールボックスからの 2 つのデリゲートを削除する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="ff9e8-124">The following code example shows how to remove two delegates from user1's mailbox.</span></span> <span data-ttu-id="ff9e8-125">この例では、代理人のプライマリ SMTP アドレスを使用して 1 つのデリゲートが削除され、代理人のセキュリティ識別子 (SID) を使用して、もう 1 つが削除されます。</span><span class="sxs-lookup"><span data-stu-id="ff9e8-125">In this example, one delegate is removed by using the delegate's primary SMTP address, and the other one is removed by using the delegate's security identifier (SID).</span></span>
+<span data-ttu-id="2c192-124">次のコード例は、user1 のメールボックスからの 2 つのデリゲートを削除する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="2c192-124">The following code example shows how to remove two delegates from user1's mailbox.</span></span> <span data-ttu-id="2c192-125">この例では、代理人のプライマリ SMTP アドレスを使用して 1 つのデリゲートが削除され、代理人のセキュリティ識別子 (SID) を使用して、もう 1 つが削除されます。</span><span class="sxs-lookup"><span data-stu-id="2c192-125">In this example, one delegate is removed by using the delegate's primary SMTP address, and the other one is removed by using the delegate's security identifier (SID).</span></span>
   
-### <a name="code"></a><span data-ttu-id="ff9e8-126">コード</span><span class="sxs-lookup"><span data-stu-id="ff9e8-126">Code</span></span>
+### <a name="code"></a><span data-ttu-id="2c192-126">コード</span><span class="sxs-lookup"><span data-stu-id="2c192-126">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -68,17 +68,17 @@ ms.locfileid: "19833088"
 </soap:Envelope>
 ```
 
-### <a name="comments"></a><span data-ttu-id="ff9e8-127">コメント</span><span class="sxs-lookup"><span data-stu-id="ff9e8-127">Comments</span></span>
+### <a name="comments"></a><span data-ttu-id="2c192-127">コメント</span><span class="sxs-lookup"><span data-stu-id="2c192-127">Comments</span></span>
 
-<span data-ttu-id="ff9e8-128">**RemoveDelegate**操作では、指定した代理ユーザーのメールボックスを持つまたは Active Directory ディレクトリ サービスに存在するは必要はありません。</span><span class="sxs-lookup"><span data-stu-id="ff9e8-128">The **RemoveDelegate** operation does not require the specified delegate user to have a mailbox or to exist in the Active Directory directory service.</span></span> <span data-ttu-id="ff9e8-129">代理エントリが孤立した場合は、 **RemoveDelegate**操作が成功します。</span><span class="sxs-lookup"><span data-stu-id="ff9e8-129">The **RemoveDelegate** operation will succeed if the delegate entry is orphaned.</span></span> 
+<span data-ttu-id="2c192-128">**RemoveDelegate**操作では、指定した代理ユーザーのメールボックスを持つまたは Active Directory ディレクトリ サービスに存在するは必要はありません。</span><span class="sxs-lookup"><span data-stu-id="2c192-128">The **RemoveDelegate** operation does not require the specified delegate user to have a mailbox or to exist in the Active Directory directory service.</span></span> <span data-ttu-id="2c192-129">代理エントリが孤立した場合は、 **RemoveDelegate**操作が成功します。</span><span class="sxs-lookup"><span data-stu-id="2c192-129">The **RemoveDelegate** operation will succeed if the delegate entry is orphaned.</span></span> 
   
-## <a name="removedelegate-response-example"></a><span data-ttu-id="ff9e8-130">RemoveDelegate の応答の例</span><span class="sxs-lookup"><span data-stu-id="ff9e8-130">RemoveDelegate response example</span></span>
+## <a name="removedelegate-response-example"></a><span data-ttu-id="2c192-130">RemoveDelegate の応答の例</span><span class="sxs-lookup"><span data-stu-id="2c192-130">RemoveDelegate response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="ff9e8-131">説明</span><span class="sxs-lookup"><span data-stu-id="ff9e8-131">Description</span></span>
+### <a name="description"></a><span data-ttu-id="2c192-131">説明</span><span class="sxs-lookup"><span data-stu-id="2c192-131">Description</span></span>
 
-<span data-ttu-id="ff9e8-132">**RemoveDelegate**要求に正常な応答を**RemoveDelegate**の応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="ff9e8-132">The following example of a **RemoveDelegate** response shows a successful response to a **RemoveDelegate** request.</span></span> <span data-ttu-id="ff9e8-133">応答には、各メールボックスから削除されるデリゲートの**DelegateUserResponseMessageType**要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="ff9e8-133">The response contains a **DelegateUserResponseMessageType** element for each delegate that is removed from the mailbox.</span></span> 
+<span data-ttu-id="2c192-132">**RemoveDelegate**要求に正常な応答を**RemoveDelegate**の応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2c192-132">The following example of a **RemoveDelegate** response shows a successful response to a **RemoveDelegate** request.</span></span> <span data-ttu-id="2c192-133">応答には、各メールボックスから削除されるデリゲートの**DelegateUserResponseMessageType**要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="2c192-133">The response contains a **DelegateUserResponseMessageType** element for each delegate that is removed from the mailbox.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="ff9e8-134">コード</span><span class="sxs-lookup"><span data-stu-id="ff9e8-134">Code</span></span>
+### <a name="code"></a><span data-ttu-id="2c192-134">コード</span><span class="sxs-lookup"><span data-stu-id="2c192-134">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -111,13 +111,13 @@ ms.locfileid: "19833088"
 </soap:Envelope>
 ```
 
-## <a name="removedelegate-error-response-example"></a><span data-ttu-id="ff9e8-135">RemoveDelegate エラー応答の例</span><span class="sxs-lookup"><span data-stu-id="ff9e8-135">RemoveDelegate Error response example</span></span>
+## <a name="removedelegate-error-response-example"></a><span data-ttu-id="2c192-135">RemoveDelegate エラー応答の例</span><span class="sxs-lookup"><span data-stu-id="2c192-135">RemoveDelegate Error response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="ff9e8-136">説明</span><span class="sxs-lookup"><span data-stu-id="ff9e8-136">Description</span></span>
+### <a name="description"></a><span data-ttu-id="2c192-136">説明</span><span class="sxs-lookup"><span data-stu-id="2c192-136">Description</span></span>
 
-<span data-ttu-id="ff9e8-137">**RemoveDelegate**エラー応答の次の使用例は、存在しないデリゲートを削除する要求の結果を示しています。</span><span class="sxs-lookup"><span data-stu-id="ff9e8-137">The following example of a **RemoveDelegate** error response shows the results of a request to remove a delegate that does not exist.</span></span> 
+<span data-ttu-id="2c192-137">**RemoveDelegate**エラー応答の次の使用例は、存在しないデリゲートを削除する要求の結果を示しています。</span><span class="sxs-lookup"><span data-stu-id="2c192-137">The following example of a **RemoveDelegate** error response shows the results of a request to remove a delegate that does not exist.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="ff9e8-138">コード</span><span class="sxs-lookup"><span data-stu-id="ff9e8-138">Code</span></span>
+### <a name="code"></a><span data-ttu-id="2c192-138">コード</span><span class="sxs-lookup"><span data-stu-id="2c192-138">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -149,9 +149,9 @@ ms.locfileid: "19833088"
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="ff9e8-139">関連項目</span><span class="sxs-lookup"><span data-stu-id="ff9e8-139">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2c192-139">関連項目</span><span class="sxs-lookup"><span data-stu-id="2c192-139">See also</span></span>
 
 
 
-- [<span data-ttu-id="ff9e8-140">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="ff9e8-140">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="2c192-140">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="2c192-140">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

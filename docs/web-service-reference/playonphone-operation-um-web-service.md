@@ -15,20 +15,20 @@ ms.openlocfilehash: b55bb45d6654f57503879f33e1cd5013ddb69a2e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19832818"
 ---
-# <a name="playonphone-operation-um-web-service"></a><span data-ttu-id="c9d37-103">PlayOnPhone 操作 (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="c9d37-103">PlayOnPhone operation (UM web service)</span></span>
+# <a name="playonphone-operation-um-web-service"></a><span data-ttu-id="38694-103">PlayOnPhone 操作 (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="38694-103">PlayOnPhone operation (UM web service)</span></span>
 
-<span data-ttu-id="c9d37-104">PlayOnPhone 操作では、発信呼び出しし、 **DialString**要素で指定されている電話で指定されたメッセージを再生します。</span><span class="sxs-lookup"><span data-stu-id="c9d37-104">The PlayOnPhone operation makes an outbound call and plays a specified message over the telephone that is specified by the **DialString** element.</span></span> 
+<span data-ttu-id="38694-104">PlayOnPhone 操作では、発信呼び出しし、 **DialString**要素で指定されている電話で指定されたメッセージを再生します。</span><span class="sxs-lookup"><span data-stu-id="38694-104">The PlayOnPhone operation makes an outbound call and plays a specified message over the telephone that is specified by the **DialString** element.</span></span> 
   
-## <a name="playonphone-request-example"></a><span data-ttu-id="c9d37-105">PlayOnPhone 要求の例</span><span class="sxs-lookup"><span data-stu-id="c9d37-105">PlayOnPhone request example</span></span>
+## <a name="playonphone-request-example"></a><span data-ttu-id="38694-105">PlayOnPhone 要求の例</span><span class="sxs-lookup"><span data-stu-id="38694-105">PlayOnPhone request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="c9d37-106">説明</span><span class="sxs-lookup"><span data-stu-id="c9d37-106">Description</span></span>
+### <a name="description"></a><span data-ttu-id="38694-106">説明</span><span class="sxs-lookup"><span data-stu-id="38694-106">Description</span></span>
 
-<span data-ttu-id="c9d37-107">PlayOnPhone 要求の次の例では、発信呼び出しを行い、メッセージを再生する要求を作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="c9d37-107">The following example of a PlayOnPhone request shows how to form a request to make an outbound call and play a message.</span></span>
+<span data-ttu-id="38694-107">PlayOnPhone 要求の次の例では、発信呼び出しを行い、メッセージを再生する要求を作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="38694-107">The following example of a PlayOnPhone request shows how to form a request to make an outbound call and play a message.</span></span>
   
-### <a name="code"></a><span data-ttu-id="c9d37-108">コード</span><span class="sxs-lookup"><span data-stu-id="c9d37-108">Code</span></span>
+### <a name="code"></a><span data-ttu-id="38694-108">コード</span><span class="sxs-lookup"><span data-stu-id="38694-108">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -42,13 +42,13 @@ ms.locfileid: "19832818"
 </soap:Envelope>
 ```
 
-## <a name="successful-playonphone-response-example"></a><span data-ttu-id="c9d37-109">成功した PlayOnPhone の応答の例</span><span class="sxs-lookup"><span data-stu-id="c9d37-109">Successful PlayOnPhone response example</span></span>
+## <a name="successful-playonphone-response-example"></a><span data-ttu-id="38694-109">成功した PlayOnPhone の応答の例</span><span class="sxs-lookup"><span data-stu-id="38694-109">Successful PlayOnPhone response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="c9d37-110">説明</span><span class="sxs-lookup"><span data-stu-id="c9d37-110">Description</span></span>
+### <a name="description"></a><span data-ttu-id="38694-110">説明</span><span class="sxs-lookup"><span data-stu-id="38694-110">Description</span></span>
 
-<span data-ttu-id="c9d37-111">PlayOnPhone 要求への応答を PlayOnPhone の応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="c9d37-111">The following example of a PlayOnPhone response shows a response to the PlayOnPhone request.</span></span>
+<span data-ttu-id="38694-111">PlayOnPhone 要求への応答を PlayOnPhone の応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="38694-111">The following example of a PlayOnPhone response shows a response to the PlayOnPhone request.</span></span>
   
-### <a name="code"></a><span data-ttu-id="c9d37-112">コード</span><span class="sxs-lookup"><span data-stu-id="c9d37-112">Code</span></span>
+### <a name="code"></a><span data-ttu-id="38694-112">コード</span><span class="sxs-lookup"><span data-stu-id="38694-112">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?> 
@@ -61,13 +61,13 @@ ms.locfileid: "19832818"
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="c9d37-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="c9d37-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="38694-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="38694-113">See also</span></span>
 
 
 
-[<span data-ttu-id="c9d37-114">PlayOnPhone (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="c9d37-114">PlayOnPhone (UM web service)</span></span>](playonphone-um-web-service.md)
+[<span data-ttu-id="38694-114">PlayOnPhone (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="38694-114">PlayOnPhone (UM web service)</span></span>](playonphone-um-web-service.md)
   
-[<span data-ttu-id="c9d37-115">PlayOnPhoneResponse (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="c9d37-115">PlayOnPhoneResponse (UM web service)</span></span>](playonphoneresponse-um-web-service.md)
+[<span data-ttu-id="38694-115">PlayOnPhoneResponse (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="38694-115">PlayOnPhoneResponse (UM web service)</span></span>](playonphoneresponse-um-web-service.md)
   
-[<span data-ttu-id="c9d37-116">PlayOnPhoneGreeting 操作 (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="c9d37-116">PlayOnPhoneGreeting operation (UM web service)</span></span>](playonphonegreeting-operation-um-web-service.md)
+[<span data-ttu-id="38694-116">PlayOnPhoneGreeting 操作 (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="38694-116">PlayOnPhoneGreeting operation (UM web service)</span></span>](playonphonegreeting-operation-um-web-service.md)
 

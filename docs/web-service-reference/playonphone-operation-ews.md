@@ -16,20 +16,20 @@ ms.openlocfilehash: ec77720c69862e210316d61975b0d58c9530a40c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19832819"
 ---
-# <a name="playonphone-operation-ews"></a><span data-ttu-id="1a450-103">PlayOnPhone 操作 (EWS)</span><span class="sxs-lookup"><span data-stu-id="1a450-103">PlayOnPhone operation (EWS)</span></span>
+# <a name="playonphone-operation-ews"></a><span data-ttu-id="0baf7-103">PlayOnPhone 操作 (EWS)</span><span class="sxs-lookup"><span data-stu-id="0baf7-103">PlayOnPhone operation (EWS)</span></span>
 
-<span data-ttu-id="1a450-104">**PlayOnPhone**操作では、発信呼び出しを開始し、電話でメッセージを再生します。</span><span class="sxs-lookup"><span data-stu-id="1a450-104">The **PlayOnPhone** operation initiates an outbound call and plays a message over the telephone.</span></span> 
+<span data-ttu-id="0baf7-104">**PlayOnPhone**操作では、発信呼び出しを開始し、電話でメッセージを再生します。</span><span class="sxs-lookup"><span data-stu-id="0baf7-104">The **PlayOnPhone** operation initiates an outbound call and plays a message over the telephone.</span></span> 
   
-## <a name="playonphone-request-example"></a><span data-ttu-id="1a450-105">PlayOnPhone 要求の例</span><span class="sxs-lookup"><span data-stu-id="1a450-105">PlayOnPhone request example</span></span>
+## <a name="playonphone-request-example"></a><span data-ttu-id="0baf7-105">PlayOnPhone 要求の例</span><span class="sxs-lookup"><span data-stu-id="0baf7-105">PlayOnPhone request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="1a450-106">説明</span><span class="sxs-lookup"><span data-stu-id="1a450-106">Description</span></span>
+### <a name="description"></a><span data-ttu-id="0baf7-106">説明</span><span class="sxs-lookup"><span data-stu-id="0baf7-106">Description</span></span>
 
-<span data-ttu-id="1a450-107">**PlayOnPhone**要求の次の例では、電話でメッセージを再生するための要求を作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="1a450-107">The following example of a **PlayOnPhone** request shows how to form a request to play a message on a phone.</span></span> 
+<span data-ttu-id="0baf7-107">**PlayOnPhone**要求の次の例では、電話でメッセージを再生するための要求を作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="0baf7-107">The following example of a **PlayOnPhone** request shows how to form a request to play a message on a phone.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="1a450-108">コード</span><span class="sxs-lookup"><span data-stu-id="1a450-108">Code</span></span>
+### <a name="code"></a><span data-ttu-id="0baf7-108">コード</span><span class="sxs-lookup"><span data-stu-id="0baf7-108">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -50,13 +50,13 @@ ms.locfileid: "19832819"
 </soap:Envelope>
 ```
 
-## <a name="playonphone-response-example"></a><span data-ttu-id="1a450-109">PlayOnPhone の応答の例</span><span class="sxs-lookup"><span data-stu-id="1a450-109">PlayOnPhone response example</span></span>
+## <a name="playonphone-response-example"></a><span data-ttu-id="0baf7-109">PlayOnPhone の応答の例</span><span class="sxs-lookup"><span data-stu-id="0baf7-109">PlayOnPhone response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="1a450-110">説明</span><span class="sxs-lookup"><span data-stu-id="1a450-110">Description</span></span>
+### <a name="description"></a><span data-ttu-id="0baf7-110">説明</span><span class="sxs-lookup"><span data-stu-id="0baf7-110">Description</span></span>
 
-<span data-ttu-id="1a450-111">**PlayOnPhone**要求に正常な応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="1a450-111">The following example shows a successful response to the **PlayOnPhone** request.</span></span> 
+<span data-ttu-id="0baf7-111">**PlayOnPhone**要求に正常な応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="0baf7-111">The following example shows a successful response to the **PlayOnPhone** request.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="1a450-112">コード</span><span class="sxs-lookup"><span data-stu-id="1a450-112">Code</span></span>
+### <a name="code"></a><span data-ttu-id="0baf7-112">コード</span><span class="sxs-lookup"><span data-stu-id="0baf7-112">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -83,8 +83,8 @@ ms.locfileid: "19832819"
 </s:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="1a450-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="1a450-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0baf7-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="0baf7-113">See also</span></span>
 
-- [<span data-ttu-id="1a450-114">Exchange での EWS の操作</span><span class="sxs-lookup"><span data-stu-id="1a450-114">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
-- [<span data-ttu-id="1a450-115">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="1a450-115">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="0baf7-114">Exchange での EWS の操作</span><span class="sxs-lookup"><span data-stu-id="0baf7-114">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
+- [<span data-ttu-id="0baf7-115">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="0baf7-115">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

@@ -15,20 +15,20 @@ ms.openlocfilehash: 85ba76c7638911678c1ef1aef88f47fdab2c6a4e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19832828"
 ---
-# <a name="playonphonegreeting-operation-um-web-service"></a><span data-ttu-id="78b8f-103">PlayOnPhoneGreeting 操作 (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="78b8f-103">PlayOnPhoneGreeting operation (UM web service)</span></span>
+# <a name="playonphonegreeting-operation-um-web-service"></a><span data-ttu-id="9ef74-103">PlayOnPhoneGreeting 操作 (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="9ef74-103">PlayOnPhoneGreeting operation (UM web service)</span></span>
 
-<span data-ttu-id="78b8f-104">PlayOnPhoneGreeting 操作では、発信呼び出しし、2 つの応答メッセージのメッセージのいずれかを電話で再生します。</span><span class="sxs-lookup"><span data-stu-id="78b8f-104">The PlayOnPhoneGreeting operation makes an outbound call and plays one of the two greeting messages on the telephone.</span></span>
+<span data-ttu-id="9ef74-104">PlayOnPhoneGreeting 操作では、発信呼び出しし、2 つの応答メッセージのメッセージのいずれかを電話で再生します。</span><span class="sxs-lookup"><span data-stu-id="9ef74-104">The PlayOnPhoneGreeting operation makes an outbound call and plays one of the two greeting messages on the telephone.</span></span>
   
-## <a name="playonphonegreeting-request-example"></a><span data-ttu-id="78b8f-105">PlayOnPhoneGreeting 要求の例</span><span class="sxs-lookup"><span data-stu-id="78b8f-105">PlayOnPhoneGreeting request example</span></span>
+## <a name="playonphonegreeting-request-example"></a><span data-ttu-id="9ef74-105">PlayOnPhoneGreeting 要求の例</span><span class="sxs-lookup"><span data-stu-id="9ef74-105">PlayOnPhoneGreeting request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="78b8f-106">説明</span><span class="sxs-lookup"><span data-stu-id="78b8f-106">Description</span></span>
+### <a name="description"></a><span data-ttu-id="9ef74-106">説明</span><span class="sxs-lookup"><span data-stu-id="9ef74-106">Description</span></span>
 
-<span data-ttu-id="78b8f-107">PlayOnPhoneGreeting 要求の次の例では、発信呼び出しを行い、通常のグリーティング メッセージを電話で再生する要求を作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="78b8f-107">The following example of a PlayOnPhoneGreeting request shows how to form a request to make an outbound call and play the normal greeting message on a telephone.</span></span>
+<span data-ttu-id="9ef74-107">PlayOnPhoneGreeting 要求の次の例では、発信呼び出しを行い、通常のグリーティング メッセージを電話で再生する要求を作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="9ef74-107">The following example of a PlayOnPhoneGreeting request shows how to form a request to make an outbound call and play the normal greeting message on a telephone.</span></span>
   
-### <a name="code"></a><span data-ttu-id="78b8f-108">コード</span><span class="sxs-lookup"><span data-stu-id="78b8f-108">Code</span></span>
+### <a name="code"></a><span data-ttu-id="9ef74-108">コード</span><span class="sxs-lookup"><span data-stu-id="9ef74-108">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -42,13 +42,13 @@ ms.locfileid: "19832828"
 </soap:Envelope>
 ```
 
-## <a name="successful-playonphonegreeting-response-example"></a><span data-ttu-id="78b8f-109">成功した PlayOnPhoneGreeting の応答の例</span><span class="sxs-lookup"><span data-stu-id="78b8f-109">Successful PlayOnPhoneGreeting response example</span></span>
+## <a name="successful-playonphonegreeting-response-example"></a><span data-ttu-id="9ef74-109">成功した PlayOnPhoneGreeting の応答の例</span><span class="sxs-lookup"><span data-stu-id="9ef74-109">Successful PlayOnPhoneGreeting response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="78b8f-110">説明</span><span class="sxs-lookup"><span data-stu-id="78b8f-110">Description</span></span>
+### <a name="description"></a><span data-ttu-id="9ef74-110">説明</span><span class="sxs-lookup"><span data-stu-id="9ef74-110">Description</span></span>
 
-<span data-ttu-id="78b8f-111">PlayOnPhoneGreeting 要求への応答を PlayOnPhoneGreeting の応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="78b8f-111">The following example of a PlayOnPhoneGreeting response shows a response to the PlayOnPhoneGreeting request.</span></span>
+<span data-ttu-id="9ef74-111">PlayOnPhoneGreeting 要求への応答を PlayOnPhoneGreeting の応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="9ef74-111">The following example of a PlayOnPhoneGreeting response shows a response to the PlayOnPhoneGreeting request.</span></span>
   
-### <a name="code"></a><span data-ttu-id="78b8f-112">コード</span><span class="sxs-lookup"><span data-stu-id="78b8f-112">Code</span></span>
+### <a name="code"></a><span data-ttu-id="9ef74-112">コード</span><span class="sxs-lookup"><span data-stu-id="9ef74-112">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?> 
@@ -61,15 +61,15 @@ ms.locfileid: "19832828"
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="78b8f-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="78b8f-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9ef74-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="9ef74-113">See also</span></span>
 
 
 
-[<span data-ttu-id="78b8f-114">PlayOnPhoneGreeting (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="78b8f-114">PlayOnPhoneGreeting (UM web service)</span></span>](playonphonegreeting-um-web-service.md)
+[<span data-ttu-id="9ef74-114">PlayOnPhoneGreeting (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="9ef74-114">PlayOnPhoneGreeting (UM web service)</span></span>](playonphonegreeting-um-web-service.md)
   
-[<span data-ttu-id="78b8f-115">PlayOnPhoneGreetingResponse (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="78b8f-115">PlayOnPhoneGreetingResponse (UM web service)</span></span>](playonphonegreetingresponse-um-web-service.md)
+[<span data-ttu-id="9ef74-115">PlayOnPhoneGreetingResponse (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="9ef74-115">PlayOnPhoneGreetingResponse (UM web service)</span></span>](playonphonegreetingresponse-um-web-service.md)
   
-[<span data-ttu-id="78b8f-116">GreetingType (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="78b8f-116">GreetingType (UM web service)</span></span>](greetingtype-um-web-service.md)
+[<span data-ttu-id="9ef74-116">GreetingType (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="9ef74-116">GreetingType (UM web service)</span></span>](greetingtype-um-web-service.md)
   
-[<span data-ttu-id="78b8f-117">dialString (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="78b8f-117">dialString (UM web service)</span></span>](dialstring-um-web-service.md)
+[<span data-ttu-id="9ef74-117">dialString (UM web サービス)</span><span class="sxs-lookup"><span data-stu-id="9ef74-117">dialString (UM web service)</span></span>](dialstring-um-web-service.md)
 
