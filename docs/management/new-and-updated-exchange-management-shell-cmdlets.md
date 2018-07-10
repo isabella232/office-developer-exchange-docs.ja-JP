@@ -734,6 +734,6 @@ ms.locfileid: "19759240"
 
 - [<span data-ttu-id="ad049-463">Exchange 管理シェル コマンドレットの入力と出力タイプ</span><span class="sxs-lookup"><span data-stu-id="ad049-463">Exchange Management Shell cmdlet input and output types</span></span>](exchange-management-shell-cmdlet-input-and-output-types.md)    
 - [<span data-ttu-id="ad049-464">Exchange 管理シェルを使用してメール ユーザーの一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="ad049-464">Get a list of mail users by using the Exchange Management Shell</span></span>](how-to-get-a-list-of-mail-users-by-using-the-exchange-management-shell.md)    
-- [<span data-ttu-id="ad049-465">Exchange 2013 コマンドレット</span><span class="sxs-lookup"><span data-stu-id="ad049-465">Exchange 2013 cmdlets</span></span>](http://technet.microsoft.com/en-us/library/bb124413%28v=exchg.150%29.aspx)
+- [<span data-ttu-id="ad049-465">Exchange 2013 コマンドレット</span><span class="sxs-lookup"><span data-stu-id="ad049-465">Exchange 2013 cmdlets</span></span>](http://technet.microsoft.com/ja-jp/library/bb124413%28v=exchg.150%29.aspx)
     
 

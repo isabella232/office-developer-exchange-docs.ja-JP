@@ -51,7 +51,7 @@ ms.locfileid: "19759073"
     
 - <span data-ttu-id="37608-p108">通常、 **ApplicationImpersonation** 役割はユーザー アカウントではなく、特定のアプリケーションまたはアプリケーションのグループ専用のサービス アカウントに付与されます。必要に応じて、必要な数のサービス アカウントを作成できます。</span><span class="sxs-lookup"><span data-stu-id="37608-p108">Typically, the **ApplicationImpersonation** role is granted to a service account dedicated to a particular application or group of applications, rather than a user account. You can create as many or as few service accounts as you need.</span></span> 
     
-<span data-ttu-id="37608-136">[偽装の構成](how-to-configure-impersonation.md)についての詳細を読むこともできますが、Exchange 管理者と相談して、必要とするサービス アカウントが組織のセキュリティ要件を満たす[アクセス許可やアクセス](http://technet.microsoft.com/en-us/library/dd351175%28v=exchg.150%29.aspx)を持つものとして作成されるようにしなければなりません。</span><span class="sxs-lookup"><span data-stu-id="37608-136">You can read more about [configuring impersonation](how-to-configure-impersonation.md), but you should work with your Exchange administrator to ensure that the service accounts that you need are created with the [permissions and access](http://technet.microsoft.com/en-us/library/dd351175%28v=exchg.150%29.aspx) that meet the security requirements of your organization.</span></span> 
+<span data-ttu-id="37608-136">[偽装の構成](how-to-configure-impersonation.md)についての詳細を読むこともできますが、Exchange 管理者と相談して、必要とするサービス アカウントが組織のセキュリティ要件を満たす[アクセス許可やアクセス](http://technet.microsoft.com/ja-jp/library/dd351175%28v=exchg.150%29.aspx)を持つものとして作成されるようにしなければなりません。</span><span class="sxs-lookup"><span data-stu-id="37608-136">You can read more about [configuring impersonation](how-to-configure-impersonation.md), but you should work with your Exchange administrator to ensure that the service accounts that you need are created with the [permissions and access](http://technet.microsoft.com/ja-jp/library/dd351175%28v=exchg.150%29.aspx) that meet the security requirements of your organization.</span></span> 
   
 ## <a name="in-this-section"></a><span data-ttu-id="37608-137">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="37608-137">In this section</span></span>
 
@@ -68,6 +68,6 @@ ms.locfileid: "19759073"
     
 - [<span data-ttu-id="37608-143">Exchange での代理人アクセスと EWS</span><span class="sxs-lookup"><span data-stu-id="37608-143">Delegate access and EWS in Exchange</span></span>](delegate-access-and-ews-in-exchange.md)
     
-- [<span data-ttu-id="37608-144">Exchange 2013 アクセス許可</span><span class="sxs-lookup"><span data-stu-id="37608-144">Exchange 2013 Permissions</span></span>](http://technet.microsoft.com/en-us/library/dd351175%28v=exchg.150%29.aspx)
+- [<span data-ttu-id="37608-144">Exchange 2013 アクセス許可</span><span class="sxs-lookup"><span data-stu-id="37608-144">Exchange 2013 Permissions</span></span>](http://technet.microsoft.com/ja-jp/library/dd351175%28v=exchg.150%29.aspx)
     
 

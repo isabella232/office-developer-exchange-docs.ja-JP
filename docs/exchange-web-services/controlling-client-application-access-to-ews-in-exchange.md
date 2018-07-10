@@ -69,19 +69,19 @@ ms.locfileid: "19758880"
 
 <span data-ttu-id="6a8bc-142">管理者は、次の Exchange 管理シェル コマンドレットを使用して EWS のアクセス制御を構成します。 </span><span class="sxs-lookup"><span data-stu-id="6a8bc-142">Administrators use the following Exchange Management Shell cmdlets to configure EWS access controls:</span></span> 
   
-- [<span data-ttu-id="6a8bc-143">Get CASMailbox</span><span class="sxs-lookup"><span data-stu-id="6a8bc-143">Get-CASMailbox</span></span>](http://technet.microsoft.com/en-us/library/bb124754.aspx)
+- [<span data-ttu-id="6a8bc-143">Get CASMailbox</span><span class="sxs-lookup"><span data-stu-id="6a8bc-143">Get-CASMailbox</span></span>](http://technet.microsoft.com/ja-jp/library/bb124754.aspx)
     
-- [<span data-ttu-id="6a8bc-144">セット CASMailbox</span><span class="sxs-lookup"><span data-stu-id="6a8bc-144">Set-CASMailbox</span></span>](http://technet.microsoft.com/en-us/library/bb125264.aspx)
+- [<span data-ttu-id="6a8bc-144">セット CASMailbox</span><span class="sxs-lookup"><span data-stu-id="6a8bc-144">Set-CASMailbox</span></span>](http://technet.microsoft.com/ja-jp/library/bb125264.aspx)
     
-- [<span data-ttu-id="6a8bc-145">Get OrganizationConfig</span><span class="sxs-lookup"><span data-stu-id="6a8bc-145">Get-OrganizationConfig</span></span>](http://technet.microsoft.com/en-us/library/aa997571.aspx)
+- [<span data-ttu-id="6a8bc-145">Get OrganizationConfig</span><span class="sxs-lookup"><span data-stu-id="6a8bc-145">Get-OrganizationConfig</span></span>](http://technet.microsoft.com/ja-jp/library/aa997571.aspx)
     
-- [<span data-ttu-id="6a8bc-146">セット OrganizationConfig</span><span class="sxs-lookup"><span data-stu-id="6a8bc-146">Set-OrganizationConfig</span></span>](http://technet.microsoft.com/en-us/library/aa997443.aspx)
+- [<span data-ttu-id="6a8bc-146">セット OrganizationConfig</span><span class="sxs-lookup"><span data-stu-id="6a8bc-146">Set-OrganizationConfig</span></span>](http://technet.microsoft.com/ja-jp/library/aa997443.aspx)
     
 ## <a name="see-also"></a><span data-ttu-id="6a8bc-147">関連項目</span><span class="sxs-lookup"><span data-stu-id="6a8bc-147">See also</span></span>
 
 - [<span data-ttu-id="6a8bc-148">Exchange で Web サービスの使用を開始する</span><span class="sxs-lookup"><span data-stu-id="6a8bc-148">Start using web services in Exchange</span></span>](start-using-web-services-in-exchange.md)  
 - [<span data-ttu-id="6a8bc-149">Exchange EWS へのアクセスを制御します。</span><span class="sxs-lookup"><span data-stu-id="6a8bc-149">Control access to EWS in Exchange</span></span>](how-to-control-access-to-ews-in-exchange.md)
-- [<span data-ttu-id="6a8bc-150">Exchange Server PowerShell (Exchange 管理シェル)</span><span class="sxs-lookup"><span data-stu-id="6a8bc-150">Exchange Server PowerShell (Exchange Management Shell)</span></span>](https://docs.microsoft.com/en-us/powershell/exchange/exchange-server/exchange-management-shell?view=exchange-ps)
-- [<span data-ttu-id="6a8bc-151">Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="6a8bc-151">Windows PowerShell</span></span>](http://msdn.microsoft.com/en-us/library/dd835506%28v=vs.85%29.aspx)
+- [<span data-ttu-id="6a8bc-150">Exchange Server PowerShell (Exchange 管理シェル)</span><span class="sxs-lookup"><span data-stu-id="6a8bc-150">Exchange Server PowerShell (Exchange Management Shell)</span></span>](https://docs.microsoft.com/ja-jp/powershell/exchange/exchange-server/exchange-management-shell?view=exchange-ps)
+- [<span data-ttu-id="6a8bc-151">Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="6a8bc-151">Windows PowerShell</span></span>](http://msdn.microsoft.com/ja-jp/library/dd835506%28v=vs.85%29.aspx)
     
 

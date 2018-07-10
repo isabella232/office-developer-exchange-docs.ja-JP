@@ -42,7 +42,7 @@ ms.locfileid: "19832144"
   
 ## <a name="text-value"></a><span data-ttu-id="715bc-114">テキスト値</span><span class="sxs-lookup"><span data-stu-id="715bc-114">Text value</span></span>
 
-<span data-ttu-id="715bc-115">テキスト値には「無制限」または任意の[Timespan](http://msdn.microsoft.com/en-us/library/1ecy8h51%28v=vs.110%29.aspx)値の文字列値を使用できます。</span><span class="sxs-lookup"><span data-stu-id="715bc-115">The text value can be "Unlimited" or the string value of any [Timespan](http://msdn.microsoft.com/en-us/library/1ecy8h51%28v=vs.110%29.aspx) value.</span></span> 
+<span data-ttu-id="715bc-115">テキスト値には「無制限」または任意の[Timespan](http://msdn.microsoft.com/ja-jp/library/1ecy8h51%28v=vs.110%29.aspx)値の文字列値を使用できます。</span><span class="sxs-lookup"><span data-stu-id="715bc-115">The text value can be "Unlimited" or the string value of any [Timespan](http://msdn.microsoft.com/ja-jp/library/1ecy8h51%28v=vs.110%29.aspx) value.</span></span> 
   
 ## <a name="remarks"></a><span data-ttu-id="715bc-116">備考</span><span class="sxs-lookup"><span data-stu-id="715bc-116">Remarks</span></span>
 

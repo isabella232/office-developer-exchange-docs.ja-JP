@@ -44,7 +44,7 @@ ms.locfileid: "19832935"
    
 ## <a name="text-value"></a><span data-ttu-id="34b8d-119">テキスト値</span><span class="sxs-lookup"><span data-stu-id="34b8d-119">Text value</span></span>
 
-<span data-ttu-id="34b8d-120">**クエリ文字列**のテキスト値では、[高度なクエリ構文 (AQS)](http://msdn.microsoft.com/en-us/library/aa965711%28VS.85%29.aspx)のサブセットを使用してメールボックスのクエリを表します。</span><span class="sxs-lookup"><span data-stu-id="34b8d-120">The **QueryString** text value represents a mailbox query made by using a subset of [Advanced Query Syntax (AQS)](http://msdn.microsoft.com/en-us/library/aa965711%28VS.85%29.aspx).</span></span> <span data-ttu-id="34b8d-121">この要素の構文については、[クエリ文字列 (QueryStringType)](querystring-querystringtype.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="34b8d-121">For information about the syntax for this element, see [QueryString (QueryStringType)](querystring-querystringtype.md).</span></span>
+<span data-ttu-id="34b8d-120">**クエリ文字列**のテキスト値では、[高度なクエリ構文 (AQS)](http://msdn.microsoft.com/ja-jp/library/aa965711%28VS.85%29.aspx)のサブセットを使用してメールボックスのクエリを表します。</span><span class="sxs-lookup"><span data-stu-id="34b8d-120">The **QueryString** text value represents a mailbox query made by using a subset of [Advanced Query Syntax (AQS)](http://msdn.microsoft.com/ja-jp/library/aa965711%28VS.85%29.aspx).</span></span> <span data-ttu-id="34b8d-121">この要素の構文については、[クエリ文字列 (QueryStringType)](querystring-querystringtype.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="34b8d-121">For information about the syntax for this element, see [QueryString (QueryStringType)](querystring-querystringtype.md).</span></span>
   
 ## <a name="remarks"></a><span data-ttu-id="34b8d-122">備考</span><span class="sxs-lookup"><span data-stu-id="34b8d-122">Remarks</span></span>
 

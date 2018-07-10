@@ -24,10 +24,10 @@ ms.locfileid: "19758928"
 
 <span data-ttu-id="84f58-109">次の Exchange Management Shell コマンドレットを使用して、現在のアクセス構成を表示し、EWS のアクセス制御を設定できます。</span><span class="sxs-lookup"><span data-stu-id="84f58-109">You can use the following Exchange Management Shell cmdlets to view the current access configuration and set EWS access controls:</span></span>
   
-- <span data-ttu-id="84f58-110">[Get-CASMailbox](http://technet.microsoft.com/en-us/library/bb124754.aspx) - はどのようなパラメーターを特定のメールボックスの設定を示しています。</span><span class="sxs-lookup"><span data-stu-id="84f58-110">[Get-CASMailbox](http://technet.microsoft.com/en-us/library/bb124754.aspx) - Shows you what parameters are set for a particular mailbox.</span></span>   
-- <span data-ttu-id="84f58-111">[セット-CASMailbox](http://technet.microsoft.com/en-us/library/bb125264.aspx) - 特定のメールボックスのパラメーターを設定します。</span><span class="sxs-lookup"><span data-stu-id="84f58-111">[Set-CASMailbox](http://technet.microsoft.com/en-us/library/bb125264.aspx) - Sets parameters for a particular mailbox.</span></span>    
-- <span data-ttu-id="84f58-112">[Get-OrganizationConfig](http://technet.microsoft.com/en-us/library/aa997571.aspx) - は、組織全体のパラメーターを示しています。</span><span class="sxs-lookup"><span data-stu-id="84f58-112">[Get-OrganizationConfig](http://technet.microsoft.com/en-us/library/aa997571.aspx) - Shows you the parameters for the entire organization.</span></span>    
-- <span data-ttu-id="84f58-113">[セット OrganizationConfig](http://technet.microsoft.com/en-us/library/aa997443.aspx)には、組織全体のパラメーターを設定します。</span><span class="sxs-lookup"><span data-stu-id="84f58-113">[Set-OrganizationConfig](http://technet.microsoft.com/en-us/library/aa997443.aspx) - Sets the parameters for the entire organization.</span></span> 
+- <span data-ttu-id="84f58-110">[Get-CASMailbox](http://technet.microsoft.com/ja-jp/library/bb124754.aspx) - はどのようなパラメーターを特定のメールボックスの設定を示しています。</span><span class="sxs-lookup"><span data-stu-id="84f58-110">[Get-CASMailbox](http://technet.microsoft.com/ja-jp/library/bb124754.aspx) - Shows you what parameters are set for a particular mailbox.</span></span>   
+- <span data-ttu-id="84f58-111">[セット-CASMailbox](http://technet.microsoft.com/ja-jp/library/bb125264.aspx) - 特定のメールボックスのパラメーターを設定します。</span><span class="sxs-lookup"><span data-stu-id="84f58-111">[Set-CASMailbox](http://technet.microsoft.com/ja-jp/library/bb125264.aspx) - Sets parameters for a particular mailbox.</span></span>    
+- <span data-ttu-id="84f58-112">[Get-OrganizationConfig](http://technet.microsoft.com/ja-jp/library/aa997571.aspx) - は、組織全体のパラメーターを示しています。</span><span class="sxs-lookup"><span data-stu-id="84f58-112">[Get-OrganizationConfig](http://technet.microsoft.com/ja-jp/library/aa997571.aspx) - Shows you the parameters for the entire organization.</span></span>    
+- <span data-ttu-id="84f58-113">[セット OrganizationConfig](http://technet.microsoft.com/ja-jp/library/aa997443.aspx)には、組織全体のパラメーターを設定します。</span><span class="sxs-lookup"><span data-stu-id="84f58-113">[Set-OrganizationConfig](http://technet.microsoft.com/ja-jp/library/aa997443.aspx) - Sets the parameters for the entire organization.</span></span> 
 
 <span data-ttu-id="84f58-114"><a name="bk_Examples"> </a></span><span class="sxs-lookup"><span data-stu-id="84f58-114"></span></span>
 
@@ -52,7 +52,7 @@ ms.locfileid: "19758928"
 
 - [<span data-ttu-id="84f58-135">EWS アプリケーションを設定します。</span><span class="sxs-lookup"><span data-stu-id="84f58-135">Setting up your EWS application</span></span>](setting-up-your-ews-application.md)    
 - [<span data-ttu-id="84f58-136">Exchange クライアント アプリケーションの EWS へのアクセスを制御します。</span><span class="sxs-lookup"><span data-stu-id="84f58-136">Controlling client application access to EWS in Exchange</span></span>](controlling-client-application-access-to-ews-in-exchange.md)   
-- [<span data-ttu-id="84f58-137">Exchange Server PowerShell (Exchange 管理シェル)</span><span class="sxs-lookup"><span data-stu-id="84f58-137">Exchange Server PowerShell (Exchange Management Shell)</span></span>](https://docs.microsoft.com/en-us/powershell/exchange/exchange-server/exchange-management-shell?view=exchange-ps) 
-- [<span data-ttu-id="84f58-138">Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="84f58-138">Windows PowerShell</span></span>](http://msdn.microsoft.com/en-us/library/dd835506%28v=vs.85%29.aspx)
+- [<span data-ttu-id="84f58-137">Exchange Server PowerShell (Exchange 管理シェル)</span><span class="sxs-lookup"><span data-stu-id="84f58-137">Exchange Server PowerShell (Exchange Management Shell)</span></span>](https://docs.microsoft.com/ja-jp/powershell/exchange/exchange-server/exchange-management-shell?view=exchange-ps) 
+- [<span data-ttu-id="84f58-138">Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="84f58-138">Windows PowerShell</span></span>](http://msdn.microsoft.com/ja-jp/library/dd835506%28v=vs.85%29.aspx)
     
 

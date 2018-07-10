@@ -54,7 +54,7 @@ ms.locfileid: "19758859"
     
 ## <a name="see-also"></a><span data-ttu-id="675a4-148">関連項目</span><span class="sxs-lookup"><span data-stu-id="675a4-148">See also</span></span>
 
-- [<span data-ttu-id="675a4-149">ボリューム シャドウ コピー サービス (Windows)</span><span class="sxs-lookup"><span data-stu-id="675a4-149">Volume Shadow Copy Service (Windows)</span></span>](http://msdn.microsoft.com/en-us/library/windows/desktop/bb968832%28v=vs.85%29.aspx)   
+- [<span data-ttu-id="675a4-149">ボリューム シャドウ コピー サービス (Windows)</span><span class="sxs-lookup"><span data-stu-id="675a4-149">Volume Shadow Copy Service (Windows)</span></span>](http://msdn.microsoft.com/ja-jp/library/windows/desktop/bb968832%28v=vs.85%29.aspx)   
 - [<span data-ttu-id="675a4-150">Exchange の EWS Managed API、EWS、および Web サービスについて学ぶ</span><span class="sxs-lookup"><span data-stu-id="675a4-150">Explore the EWS Managed API, EWS, and web services in Exchange</span></span>](../exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)  
 - [<span data-ttu-id="675a4-151">Exchange 管理シェル</span><span class="sxs-lookup"><span data-stu-id="675a4-151">Exchange Management Shell</span></span>](../management/exchange-management-shell.md)   
 - [<span data-ttu-id="675a4-152">Exchange のトランスポート エージェント</span><span class="sxs-lookup"><span data-stu-id="675a4-152">Transport agents in Exchange</span></span>](../transport-agents/transport-agents-in-exchange-2013.md) 

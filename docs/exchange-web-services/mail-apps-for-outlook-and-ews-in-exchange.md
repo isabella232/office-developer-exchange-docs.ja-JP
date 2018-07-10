@@ -36,9 +36,9 @@ ms.locfileid: "19759088"
     
 <span data-ttu-id="6d885-117">メール アプリケーションを使用するには、ユーザーの Outlook Web App のエクスペリエンスをカスタマイズするのには場合は、ただし、Outlook Web App の「外観」をカスタマイズするのには、TechNet の以下の資料を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6d885-117">You can use mail apps to customize the Outlook Web App experience for your users; if, however, you want to customize the "look and feel" of Outlook Web App, see these articles on TechNet:</span></span>
   
-- [<span data-ttu-id="6d885-118">Outlook Web App のテーマを作成します。</span><span class="sxs-lookup"><span data-stu-id="6d885-118">Create a theme for Outlook Web App</span></span>](http://technet.microsoft.com/en-us/library/bb201700%28v=exchg.150%29.aspx)
+- [<span data-ttu-id="6d885-118">Outlook Web App のテーマを作成します。</span><span class="sxs-lookup"><span data-stu-id="6d885-118">Create a theme for Outlook Web App</span></span>](http://technet.microsoft.com/ja-jp/library/bb201700%28v=exchg.150%29.aspx)
     
-- [<span data-ttu-id="6d885-119">Outlook Web App サインイン、言語選択、およびエラー ページをカスタマイズします。</span><span class="sxs-lookup"><span data-stu-id="6d885-119">Customize the Outlook Web App sign-in, language selection, and error pages</span></span>](http://technet.microsoft.com/en-us/library/ee633483%28v=exchg.150%29.aspx)
+- [<span data-ttu-id="6d885-119">Outlook Web App サインイン、言語選択、およびエラー ページをカスタマイズします。</span><span class="sxs-lookup"><span data-stu-id="6d885-119">Customize the Outlook Web App sign-in, language selection, and error pages</span></span>](http://technet.microsoft.com/ja-jp/library/ee633483%28v=exchg.150%29.aspx)
     
 <span data-ttu-id="6d885-120">組織は権限のあるユーザーへのアクセスを制限する内部サーバーにメール アプリケーションをインストールすることができ、他のメール アプリケーションの開発者追加またはメール アプリケーション販売用の[Office ストア](http://office.microsoft.com/store/)で一般に公開します。</span><span class="sxs-lookup"><span data-stu-id="6d885-120">Your organization can install mail apps on an internal server to limit access to authorized users, or you and other mail app developers can put mail apps on the [Office Store](http://office.microsoft.com/store/) for sale to the general public.</span></span> <span data-ttu-id="6d885-121">ダウンロード、インストール、および市場からのメール アプリケーションを使用して Outlook を実行しているすべての人ことができます。</span><span class="sxs-lookup"><span data-stu-id="6d885-121">Anyone who is running Outlook can download, install, and use mail apps from the marketplace.</span></span> 
   
@@ -54,7 +54,7 @@ ms.locfileid: "19759088"
   
 - <span data-ttu-id="6d885-130">メール アプリケーションのユーザーに[与える EWS のアクセス](controlling-client-application-access-to-ews-in-exchange.md)をします。</span><span class="sxs-lookup"><span data-stu-id="6d885-130">[Grant EWS access](controlling-client-application-access-to-ews-in-exchange.md) to the mail apps user.</span></span> 
     
-- <span data-ttu-id="6d885-131">クライアント アクセス サーバーの EWS のディレクトリの[設定を true に設定するには、"OAuthAuthentication"](http://technet.microsoft.com/en-us/library/aa997233%28v=exchg.150%29.aspx)を。</span><span class="sxs-lookup"><span data-stu-id="6d885-131">[Set "OAuthAuthentication" to true](http://technet.microsoft.com/en-us/library/aa997233%28v=exchg.150%29.aspx) on the Client Access Server EWS directory.</span></span> 
+- <span data-ttu-id="6d885-131">クライアント アクセス サーバーの EWS のディレクトリの[設定を true に設定するには、"OAuthAuthentication"](http://technet.microsoft.com/ja-jp/library/aa997233%28v=exchg.150%29.aspx)を。</span><span class="sxs-lookup"><span data-stu-id="6d885-131">[Set "OAuthAuthentication" to true](http://technet.microsoft.com/ja-jp/library/aa997233%28v=exchg.150%29.aspx) on the Client Access Server EWS directory.</span></span> 
     
 <span data-ttu-id="6d885-132">アプリが Office[のアクセス許可モデル](http://msdn.microsoft.com/library/5bca69f2-b287-4e19-8f0f-78d896b2a3d3%28Office.15%29.aspx)のアプリケーションで読み取り/書き込みのメールボックスのアクセス許可を要求するかどうかを確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6d885-132">You also need to make sure that your app requests the read/write mailbox permission in the apps for Office [permission model](http://msdn.microsoft.com/library/5bca69f2-b287-4e19-8f0f-78d896b2a3d3%28Office.15%29.aspx).</span></span>
   
@@ -100,7 +100,7 @@ ms.locfileid: "19759088"
     
 - [<span data-ttu-id="6d885-165">Outlook 2013 プレビューのメール アプリでアクセス許可モデルを使用する</span><span class="sxs-lookup"><span data-stu-id="6d885-165">Understanding Outlook add-in permissions</span></span>](http://msdn.microsoft.com/library/5bca69f2-b287-4e19-8f0f-78d896b2a3d3%28Office.15%29.aspx)
     
-- [<span data-ttu-id="6d885-166">セット WebServicesVirtualDirectory</span><span class="sxs-lookup"><span data-stu-id="6d885-166">Set-WebServicesVirtualDirectory</span></span>](http://technet.microsoft.com/en-us/library/aa997233%28v=exchg.150%29.aspx)
+- [<span data-ttu-id="6d885-166">セット WebServicesVirtualDirectory</span><span class="sxs-lookup"><span data-stu-id="6d885-166">Set-WebServicesVirtualDirectory</span></span>](http://technet.microsoft.com/ja-jp/library/aa997233%28v=exchg.150%29.aspx)
     
 - [<span data-ttu-id="6d885-167">アプリを Outlook のメール: EWS 要求を行う</span><span class="sxs-lookup"><span data-stu-id="6d885-167">Mail apps for Outlook: Make an EWS request</span></span>](http://code.msdn.microsoft.com/office/Mail-apps-for-Outlook-Make-770b2528)
     

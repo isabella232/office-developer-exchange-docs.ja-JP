@@ -39,7 +39,7 @@ ms.locfileid: "19833412"
    
 ## <a name="setholdonmailboxes-operation-request-example-apply-a-hold-on-a-mailbox"></a><span data-ttu-id="85b07-126">SetHoldOnMailboxes 操作の要求の例: メールボックスの保留リストを適用</span><span class="sxs-lookup"><span data-stu-id="85b07-126">SetHoldOnMailboxes operation request example: Apply a hold on a mailbox</span></span>
 
-<span data-ttu-id="85b07-127">**SetHoldOnMailboxes**操作要求の次の例では、2 つのメールボックスに保留を適用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="85b07-127">The following example of a **SetHoldOnMailboxes** operation request shows how to apply a hold on two mailboxes.</span></span> <span data-ttu-id="85b07-128">メールボックスの保留リストは、[新しい MailboxSearch](http://technet.microsoft.com/en-us/library/dd298064.aspx)コマンドを使用して作成されました。</span><span class="sxs-lookup"><span data-stu-id="85b07-128">The mailbox hold was created by using the [New-MailboxSearch](http://technet.microsoft.com/en-us/library/dd298064.aspx) command.</span></span> 
+<span data-ttu-id="85b07-127">**SetHoldOnMailboxes**操作要求の次の例では、2 つのメールボックスに保留を適用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="85b07-127">The following example of a **SetHoldOnMailboxes** operation request shows how to apply a hold on two mailboxes.</span></span> <span data-ttu-id="85b07-128">メールボックスの保留リストは、[新しい MailboxSearch](http://technet.microsoft.com/ja-jp/library/dd298064.aspx)コマンドを使用して作成されました。</span><span class="sxs-lookup"><span data-stu-id="85b07-128">The mailbox hold was created by using the [New-MailboxSearch](http://technet.microsoft.com/ja-jp/library/dd298064.aspx) command.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>

@@ -32,7 +32,7 @@ ms.locfileid: "19758919"
   
 - <span data-ttu-id="d9c1f-113">[Office 365 開発者アカウント](http://office.microsoft.com/compare-office-365-for-business-plans-FX102918419.aspx.aspx)です。</span><span class="sxs-lookup"><span data-stu-id="d9c1f-113">An [Office 365 developer account](http://office.microsoft.com/compare-office-365-for-business-plans-FX102918419.aspx.aspx).</span></span> <span data-ttu-id="d9c1f-114">試用版のアカウントを使用するには、アプリケーションをテストするのには</span><span class="sxs-lookup"><span data-stu-id="d9c1f-114">You can use a trial account to test your application</span></span>
     
-- <span data-ttu-id="d9c1f-115">[.Net の Azure AD 認証ライブラリ](http://msdn.microsoft.com/en-us/library/office/jj573266.aspx.aspx)です。</span><span class="sxs-lookup"><span data-stu-id="d9c1f-115">The [Azure AD Authentication Library for .NET](http://msdn.microsoft.com/en-us/library/office/jj573266.aspx.aspx).</span></span>
+- <span data-ttu-id="d9c1f-115">[.Net の Azure AD 認証ライブラリ](http://msdn.microsoft.com/ja-jp/library/office/jj573266.aspx.aspx)です。</span><span class="sxs-lookup"><span data-stu-id="d9c1f-115">The [Azure AD Authentication Library for .NET](http://msdn.microsoft.com/ja-jp/library/office/jj573266.aspx.aspx).</span></span>
     
 - <span data-ttu-id="d9c1f-116">[EWS はマネージ API](https://github.com/officedev/ews-managed-api.aspx)です。</span><span class="sxs-lookup"><span data-stu-id="d9c1f-116">[The EWS Managed API](https://github.com/officedev/ews-managed-api.aspx).</span></span>
 

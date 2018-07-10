@@ -39,6 +39,6 @@ ms.locfileid: "19758883"
    
 ## <a name="see-also"></a><span data-ttu-id="c1647-128">関連項目</span><span class="sxs-lookup"><span data-stu-id="c1647-128">See also</span></span>
     
-- [<span data-ttu-id="c1647-129">Exchange Online と Office 365 開発者向けサイトにサインアップします。</span><span class="sxs-lookup"><span data-stu-id="c1647-129">Sign up for an Exchange Online and Office 365 Developer Site</span></span>](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/set-up-a-development-environment-for-sharepoint-add-ins-on-office-365)
+- [<span data-ttu-id="c1647-129">Exchange Online と Office 365 開発者向けサイトにサインアップします。</span><span class="sxs-lookup"><span data-stu-id="c1647-129">Sign up for an Exchange Online and Office 365 Developer Site</span></span>](https://docs.microsoft.com/ja-jp/sharepoint/dev/sp-add-ins/set-up-a-development-environment-for-sharepoint-add-ins-on-office-365)
     
 

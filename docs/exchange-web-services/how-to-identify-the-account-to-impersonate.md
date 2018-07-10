@@ -29,7 +29,7 @@ ms.locfileid: "19758957"
   
 ## <a name="identifying-the-user-account-to-impersonate"></a><span data-ttu-id="73238-110">偽装するユーザー アカウントを識別する</span><span class="sxs-lookup"><span data-stu-id="73238-110">Identifying the user account to impersonate</span></span>
 
-<span data-ttu-id="73238-111">アプリケーションは、それが偽装しているユーザー アカウントを識別するのに、EWS のマネージ API または EWS の SOAP 要求を使用できます。</span><span class="sxs-lookup"><span data-stu-id="73238-111">Your application can use either the EWS Managed API or EWS SOAP requests to identify the user account that it is impersonating.</span></span> <span data-ttu-id="73238-112">EWS のマネージ API では、 [ExchangeService.ImpersonatedUserId](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.impersonateduserid.aspx)プロパティを使用して、偽装されたユーザーを識別します。</span><span class="sxs-lookup"><span data-stu-id="73238-112">The EWS Managed API uses the [ExchangeService.ImpersonatedUserId](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.impersonateduserid.aspx) property to identify the impersonated user.</span></span> <span data-ttu-id="73238-113">EWS は、次の XML フラグメントに示すように、 [ExchangeImpersonation](http://msdn.microsoft.com/library/d8cbac49-47d0-4745-a2a7-545d33f8da93%28Office.15%29.aspx)要素を使用します。</span><span class="sxs-lookup"><span data-stu-id="73238-113">EWS uses the [ExchangeImpersonation](http://msdn.microsoft.com/library/d8cbac49-47d0-4745-a2a7-545d33f8da93%28Office.15%29.aspx) element, as shown in the following XML fragment.</span></span> 
+<span data-ttu-id="73238-111">アプリケーションは、それが偽装しているユーザー アカウントを識別するのに、EWS のマネージ API または EWS の SOAP 要求を使用できます。</span><span class="sxs-lookup"><span data-stu-id="73238-111">Your application can use either the EWS Managed API or EWS SOAP requests to identify the user account that it is impersonating.</span></span> <span data-ttu-id="73238-112">EWS のマネージ API では、 [ExchangeService.ImpersonatedUserId](http://msdn.microsoft.com/ja-jp/library/microsoft.exchange.webservices.data.exchangeservice.impersonateduserid.aspx)プロパティを使用して、偽装されたユーザーを識別します。</span><span class="sxs-lookup"><span data-stu-id="73238-112">The EWS Managed API uses the [ExchangeService.ImpersonatedUserId](http://msdn.microsoft.com/ja-jp/library/microsoft.exchange.webservices.data.exchangeservice.impersonateduserid.aspx) property to identify the impersonated user.</span></span> <span data-ttu-id="73238-113">EWS は、次の XML フラグメントに示すように、 [ExchangeImpersonation](http://msdn.microsoft.com/library/d8cbac49-47d0-4745-a2a7-545d33f8da93%28Office.15%29.aspx)要素を使用します。</span><span class="sxs-lookup"><span data-stu-id="73238-113">EWS uses the [ExchangeImpersonation](http://msdn.microsoft.com/library/d8cbac49-47d0-4745-a2a7-545d33f8da93%28Office.15%29.aspx) element, as shown in the following XML fragment.</span></span> 
   
 ```XML
 <soap:Header>
@@ -47,7 +47,7 @@ ms.locfileid: "19758957"
 
 <span data-ttu-id="73238-117">SMTP 電子メール アドレスは、ユーザー アカウントに関連付けられているプライマリ電子メール アドレスです。</span><span class="sxs-lookup"><span data-stu-id="73238-117">The SMTP email address is the primary email address that is associated with a user account.</span></span>
   
-<span data-ttu-id="73238-118">EWS のマネージ API アプリケーションでは、 [ConnectingIdType.SMTP](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.connectingidtype.aspx)列挙型の値と SMTP の電子メール アドレスを指定します。</span><span class="sxs-lookup"><span data-stu-id="73238-118">In an EWS Managed API application, you specify the SMTP email address along with the [ConnectingIdType.SMTP](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.connectingidtype.aspx) enumeration value.</span></span> 
+<span data-ttu-id="73238-118">EWS のマネージ API アプリケーションでは、 [ConnectingIdType.SMTP](http://msdn.microsoft.com/ja-jp/library/microsoft.exchange.webservices.data.connectingidtype.aspx)列挙型の値と SMTP の電子メール アドレスを指定します。</span><span class="sxs-lookup"><span data-stu-id="73238-118">In an EWS Managed API application, you specify the SMTP email address along with the [ConnectingIdType.SMTP](http://msdn.microsoft.com/ja-jp/library/microsoft.exchange.webservices.data.connectingidtype.aspx) enumeration value.</span></span> 
   
 ```cs
 exchangeServiceInstance.ImpersonatedUserId = new ImpersonatedUserId(ConnectingIdType.SMTP, "alisa@contoso.com");
@@ -69,7 +69,7 @@ exchangeServiceInstance.ImpersonatedUserId = new ImpersonatedUserId(ConnectingId
 
 <span data-ttu-id="73238-121">UPN には、ユーザー アカウントの場所の完全修飾ドメイン名 (FQDN) が含まれています。</span><span class="sxs-lookup"><span data-stu-id="73238-121">The UPN contains the fully qualified domain name (FQDN) for the location of the user account.</span></span> <span data-ttu-id="73238-122">これは必ずしもユーザーのメールボックスのドメインではありません。</span><span class="sxs-lookup"><span data-stu-id="73238-122">This is not necessarily the user's mailbox domain.</span></span> <span data-ttu-id="73238-123">**UserPrincipleName**属性する必要があります正しく設定されて Active Directory ドメイン サービス (AD DS) 内のユーザー アカウントのユーザー検索を成功させるため。</span><span class="sxs-lookup"><span data-stu-id="73238-123">The **UserPrincipleName** attribute must be set correctly on the user account in Active Directory Domain Services (AD DS) for the user lookup to succeed.</span></span> 
   
-<span data-ttu-id="73238-124">EWS のマネージ API アプリケーションでは、 [ConnectingIdType.PrincipleName](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.connectingidtype.aspx)列挙値の UPN を指定します。</span><span class="sxs-lookup"><span data-stu-id="73238-124">In an EWS Managed API application, you specify the UPN along with the [ConnectingIdType.PrincipleName](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.connectingidtype.aspx) enumeration value.</span></span> 
+<span data-ttu-id="73238-124">EWS のマネージ API アプリケーションでは、 [ConnectingIdType.PrincipleName](http://msdn.microsoft.com/ja-jp/library/microsoft.exchange.webservices.data.connectingidtype.aspx)列挙値の UPN を指定します。</span><span class="sxs-lookup"><span data-stu-id="73238-124">In an EWS Managed API application, you specify the UPN along with the [ConnectingIdType.PrincipleName](http://msdn.microsoft.com/ja-jp/library/microsoft.exchange.webservices.data.connectingidtype.aspx) enumeration value.</span></span> 
   
 ```cs
 exchangeServiceInstance.ImpersonatedUserId = new ImpersonatedUserId(ConnectingIdType.PrincipleName, "alias@billing.contoso.com");
@@ -91,7 +91,7 @@ exchangeServiceInstance.ImpersonatedUserId = new ImpersonatedUserId(ConnectingId
 
 <span data-ttu-id="73238-127">SID は、セキュリティ記述子定義言語 (SDDL) フォームで偽装するアカウントの識別子です。</span><span class="sxs-lookup"><span data-stu-id="73238-127">The SID is the identifier of the account to be impersonated in security descriptor definition language (SDDL) form.</span></span>
   
-<span data-ttu-id="73238-128">EWS のマネージ API アプリケーションでは、 [ConnectingIdType.SID](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.connectingidtype.aspx)列挙型の値と SID を指定します。</span><span class="sxs-lookup"><span data-stu-id="73238-128">In an EWS Managed API application, you specify the SID along with the [ConnectingIdType.SID](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.connectingidtype.aspx) enumeration value.</span></span> 
+<span data-ttu-id="73238-128">EWS のマネージ API アプリケーションでは、 [ConnectingIdType.SID](http://msdn.microsoft.com/ja-jp/library/microsoft.exchange.webservices.data.connectingidtype.aspx)列挙型の値と SID を指定します。</span><span class="sxs-lookup"><span data-stu-id="73238-128">In an EWS Managed API application, you specify the SID along with the [ConnectingIdType.SID](http://msdn.microsoft.com/ja-jp/library/microsoft.exchange.webservices.data.connectingidtype.aspx) enumeration value.</span></span> 
   
 ```cs
 exchangeServiceInstance.ImpersonatedUserId = new ImpersonatedUserId(ConnectingIdType.SID, "S-1-5-21-1493619105-1843311271-3936346804-1118");
@@ -116,7 +116,7 @@ exchangeServiceInstance.ImpersonatedUserId = new ImpersonatedUserId(ConnectingId
     
 - [<span data-ttu-id="73238-132">Exchange の偽装を使用して予定を追加します。</span><span class="sxs-lookup"><span data-stu-id="73238-132">Add appointments by using Exchange impersonation</span></span>](how-to-add-appointments-by-using-exchange-impersonation.md)
     
-- [<span data-ttu-id="73238-133">ExchangeService クラス</span><span class="sxs-lookup"><span data-stu-id="73238-133">ExchangeService class</span></span>](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.aspx)
+- [<span data-ttu-id="73238-133">ExchangeService クラス</span><span class="sxs-lookup"><span data-stu-id="73238-133">ExchangeService class</span></span>](http://msdn.microsoft.com/ja-jp/library/microsoft.exchange.webservices.data.exchangeservice.aspx)
     
 - [<span data-ttu-id="73238-134">ExchangeImpersonation</span><span class="sxs-lookup"><span data-stu-id="73238-134">ExchangeImpersonation</span></span>](http://msdn.microsoft.com/library/d8cbac49-47d0-4745-a2a7-545d33f8da93%28Office.15%29.aspx)
     

@@ -76,6 +76,6 @@ ms.locfileid: "19758863"
 ## <a name="see-also"></a><span data-ttu-id="40a11-140">関連項目</span><span class="sxs-lookup"><span data-stu-id="40a11-140">See also</span></span>
 
 - [<span data-ttu-id="40a11-141">オンラインの Exchange および Exchange の開発</span><span class="sxs-lookup"><span data-stu-id="40a11-141">Exchange Online and Exchange development</span></span>](../exchange-server-development.md)
-- [<span data-ttu-id="40a11-142">バックアップ、復元、および災害復旧</span><span class="sxs-lookup"><span data-stu-id="40a11-142">Backup, Restore, and Disaster Recovery</span></span>](http://technet.microsoft.com/en-us/library/dd876874)
+- [<span data-ttu-id="40a11-142">バックアップ、復元、および災害復旧</span><span class="sxs-lookup"><span data-stu-id="40a11-142">Backup, Restore, and Disaster Recovery</span></span>](http://technet.microsoft.com/ja-jp/library/dd876874)
     
 

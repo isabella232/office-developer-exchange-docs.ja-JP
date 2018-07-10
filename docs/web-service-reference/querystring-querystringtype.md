@@ -52,7 +52,7 @@ ms.locfileid: "19832943"
    
 ## <a name="text-value"></a><span data-ttu-id="5ed27-125">テキスト値</span><span class="sxs-lookup"><span data-stu-id="5ed27-125">Text value</span></span>
 
-<span data-ttu-id="5ed27-126">**クエリ文字列**要素のテキスト値は、[高度なクエリ構文 (AQS)](http://msdn.microsoft.com/en-us/library/aa965711%28VS.85%29.aspx)のサブセットを使用して作成されるメールボックスのクエリを表します。</span><span class="sxs-lookup"><span data-stu-id="5ed27-126">The **QueryString** element text value represents a mailbox query that is made by using a subset of [Advanced Query Syntax (AQS)](http://msdn.microsoft.com/en-us/library/aa965711%28VS.85%29.aspx).</span></span> <span data-ttu-id="5ed27-127">クエリ文字列の構文がサポートされているオプションの詳細については「解説」セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="5ed27-127">See the remarks section for information about the supported syntax options for query strings.</span></span>
+<span data-ttu-id="5ed27-126">**クエリ文字列**要素のテキスト値は、[高度なクエリ構文 (AQS)](http://msdn.microsoft.com/ja-jp/library/aa965711%28VS.85%29.aspx)のサブセットを使用して作成されるメールボックスのクエリを表します。</span><span class="sxs-lookup"><span data-stu-id="5ed27-126">The **QueryString** element text value represents a mailbox query that is made by using a subset of [Advanced Query Syntax (AQS)](http://msdn.microsoft.com/ja-jp/library/aa965711%28VS.85%29.aspx).</span></span> <span data-ttu-id="5ed27-127">クエリ文字列の構文がサポートされているオプションの詳細については「解説」セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="5ed27-127">See the remarks section for information about the supported syntax options for query strings.</span></span>
   
 ## <a name="remarks"></a><span data-ttu-id="5ed27-128">備考</span><span class="sxs-lookup"><span data-stu-id="5ed27-128">Remarks</span></span>
 
