@@ -8,7 +8,7 @@
       items:
         - name: 新機能
           href: exchange-web-services/whats-new-in-ews-and-other-web-services-in-exchange.md
-        - name: 開始
+        - name: Start
           href: exchange-web-services/start-using-web-services-in-exchange.md
           items:
             - name: アーキテクチャ
@@ -18,13 +18,13 @@
             - name: EWS マネージ API クライアント アプリケーションの概要
               href: exchange-web-services/get-started-with-ews-managed-api-client-applications.md
               items:
-                - name: アセンブリを参照します。
+                - name: アセンブリを参照する
                   href: exchange-web-services/how-to-reference-the-ews-managed-api-assembly.md
-                - name: EWS サービスの URL を設定します。
+                - name: EWS サービス URL を設定する
                   href: exchange-web-services/how-to-set-the-ews-service-url-by-using-the-ews-managed-api.md
-                - name: 通信 EWS
+                - name: EWS と通信する
                   href: exchange-web-services/how-to-communicate-with-ews-by-using-the-ews-managed-api.md
-                - name: トレース要求と応答
+                - name: 要求と応答をトレースする
                   href: exchange-web-services/how-to-trace-requests-responses-to-troubleshoot-ews-managed-api-applications.md
             - name: EWS クライアント アプリケーションの概要
               href: exchange-web-services/get-started-with-ews-client-applications.md
@@ -38,33 +38,33 @@
                 - name: クライアント アプリケーションのアクセスを制御する
                   href: exchange-web-services/controlling-client-application-access-to-ews-in-exchange.md
                   items:
-                    - name: EWS へのアクセス制御
+                    - name: EWS に対するアクセスの制御
                       href: exchange-web-services/how-to-control-access-to-ews-in-exchange.md
                 - name: ユーザー アクセスを管理する
                   href: exchange-web-services/managing-user-access-by-using-ews-in-exchange.md
-                - name: サーバー証明書を検証します。
+                - name: サーバー証明書を検証する
                   href: exchange-web-services/how-to-validate-a-server-certificate-for-the-ews-managed-api.md
             - name: 認証
               href: exchange-web-services/authentication-and-ews-in-exchange.md
               items:
-                - name: OAuth を使用して、EWS アプリケーションを認証します。
+                - name: OAuth を使用して EWS アプリケーションを認証する
                   href: exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth.md
             - name: 自動検出
               href: exchange-web-services/autodiscover-for-exchange.md
               items:
-                - name: SCP のルックアップを使用して自動検出エンドポイントを検索します。
+                - name: SCP 参照を使用して自動検出エンドポイントを見つける
                   href: exchange-web-services/how-to-find-autodiscover-endpoints-by-using-scp-lookup-in-exchange.md
-                - name: 自動検出エンドポイントの一覧を生成します。
+                - name: 自動検出エンドポイントの一覧を生成する
                   href: exchange-web-services/how-to-generate-a-list-of-autodiscover-endpoints.md
-                - name: 自動検出を使用してコネクション ポイントを検索するには
+                - name: 自動検出を使用して接続ポイントを検索する
                   href: exchange-web-services/how-to-use-autodiscover-to-find-connection-points.md
-                - name: ユーザー設定を取得します。
+                - name: ユーザー設定を取得する
                   href: exchange-web-services/how-to-get-user-settings-from-exchange-by-using-autodiscover.md
-                - name: ドメインの設定を取得します。
+                - name: ドメイン設定を取得する
                   href: exchange-web-services/how-to-get-domain-settings-from-an-exchange-server.md
-                - name: 自動検出を使用して構成情報を更新します。
+                - name: 自動検出を使用して構成情報を更新する
                   href: exchange-web-services/how-to-refresh-configuration-information-by-using-autodiscover.md
-                - name: 自動検出のエラー メッセージを処理します。
+                - name: 自動検出のエラー メッセージを処理する
                   href: exchange-web-services/handling-autodiscover-error-messages.md
                 - name: 自動検出のパフォーマンスを向上させる
                   href: exchange-web-services/improving-performance-when-using-autodiscover-for-exchange.md
@@ -84,11 +84,11 @@
             - name: 構成オプション
               href: exchange-web-services/configuration-options-for-ews-in-exchange.md
               items:
-                - name: サービスの構成情報を取得します。
+                - name: サービス構成情報を取得する
                   href: exchange-web-services/how-to-get-service-configuration-information-by-using-ews-in-exchange.md
             - name: Exchange Online と Exchange オンプレミス クライアント プログラミングの比較
               href: exchange-web-services/comparing-exchange-online-and-exchange-on-premises-client-programming.md
-            - name: スロットル
+            - name: 調整
               href: exchange-web-services/ews-throttling-in-exchange.md
             - name: EWS マネージ API の再配布の要件
               href: exchange-web-services/redistribution-requirements-for-the-ews-managed-api.md
@@ -102,7 +102,7 @@
             - name: 添付ファイル
               href: exchange-web-services/attachments-and-ews-in-exchange.md
               items:
-                - name: 添付ファイルを追加します。
+                - name: 添付ファイルを追加する
                   href: exchange-web-services/how-to-add-attachments-by-using-ews-in-exchange.md
                 - name: 添付ファイルを取得する
                   href: exchange-web-services/how-to-get-attachments-by-using-ews-in-exchange.md
@@ -111,86 +111,86 @@
             - name: 予定表
               href: exchange-web-services/calendars-and-ews-in-exchange.md
               items:
-                - name: 予定および会議を作成します。
+                - name: 予定および会議を作成する
                   href: exchange-web-services/how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md
-                - name: 終日イベントを作成します。
+                - name: 終日イベントを作成する
                   href: exchange-web-services/how-to-create-all-day-events-by-using-ews-in-exchange.md
-                - name: 予定と会議を取得します。
+                - name: 予定および会議を取得する
                   href: exchange-web-services/how-to-get-appointments-and-meetings-by-using-ews-in-exchange.md
-                - name: 更新予定と会議
+                - name: 予定や会議を更新する
                   href: exchange-web-services/how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md
-                - name: 予定を削除し、会議をキャンセルします。
+                - name: 予定を削除して会議をキャンセルする
                   href: exchange-web-services/how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md
-                - name: ルームの一覧を取得します。
+                - name: 会議室一覧を取得する
                   href: exchange-web-services/how-to-get-room-lists-by-using-ews-in-exchange.md
-                - name: 空き時間情報を取得します。
+                - name: 空き時間情報を取得する
                   href: exchange-web-services/how-to-get-free-busy-information-by-using-ews-in-exchange.md
-                - name: 会議の新しい日時を提案します。
+                - name: 会議の新しい日時を提案する
                   href: exchange-web-services/how-to-propose-a-new-meeting-time-by-using-ews-in-exchange.md
-                - name: バッチのプロセスの予定表アイテム
+                - name: バッチ処理で予定表のアイテムを処理する
                   href: exchange-web-services/how-to-process-calendar-items-in-batches-in-exchange.md
                 - name: 定期的な予定表アイテムと EWS
                   href: exchange-web-services/recurrence-patterns-and-ews.md
                   items:
-                    - name: 定期的な一連をアクセスします。
+                    - name: 定期的なアイテムにアクセスする
                       href: exchange-web-services/how-to-access-a-recurring-series-by-using-ews-in-exchange.md
-                    - name: 定期的な系列を作成します。
+                    - name: 定期的なアイテムを作成する
                       href: exchange-web-services/how-to-create-a-recurring-series-by-using-ews-in-exchange.md
-                    - name: 一連の定期的な予定を削除します。
+                    - name: 定期的なアイテム内の予定を削除する
                       href: exchange-web-services/how-to-delete-appointments-in-a-recurring-series-by-using-ews-in-exchange.md
-                    - name: 一連の定期的な予定を変更します。
+                    - name: 定期的なアイテムの予定を変更する
                       href: exchange-web-services/how-to-update-a-recurring-series-by-using-ews.md
-                    - name: 一連の定期的な更新プログラム
+                    - name: 定期的なアイテムを更新する
                       href: exchange-web-services/how-to-update-a-recurring-series-by-using-ews-in-exchange.md
             - name: 代理人アクセス
               href: exchange-web-services/delegate-access-and-ews-in-exchange.md
               items:
-                - name: 追加し、デリゲートを削除します。
+                - name: 代理人を追加および削除する
                   href: exchange-web-services/how-to-add-and-remove-delegates-by-using-ews-in-exchange.md
-                - name: 代理人に予定表にアクセスします。
+                - name: 代理人として予定表にアクセスする
                   href: exchange-web-services/how-to-access-a-calendar-as-a-delegate-by-using-ews-in-exchange.md
-                - name: 代理人としてアクセス連絡先
+                - name: 代理人として連絡先にアクセスする
                   href: exchange-web-services/how-to-access-contacts-as-a-delegate-by-using-ews-in-exchange.md
-                - name: 代理人に電子メールにアクセスします。
+                - name: 代理人としてメールにアクセスする
                   href: exchange-web-services/how-to-access-email-as-a-delegate-by-using-ews-in-exchange.md
-                - name: フォルダーのアクセス許可を設定
+                - name: フォルダーのアクセス許可を設定する
                   href: exchange-web-services/how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md
-                - name: 委任に関連するエラーを処理します。
+                - name: 委任に関連するエラーを処理する
                   href: exchange-web-services/handling-delegation-related-errors-in-ews-in-exchange.md
             - name: 配布グループ
               href: exchange-web-services/distribution-groups-and-ews-in-exchange.md
               items:
-                - name: 連絡先グループを作成します。
+                - name: 連絡先フォルダーを作成する
                   href: exchange-web-services/how-to-create-contact-groups-by-using-ews-in-exchange.md
-                - name: 配布グループを展開します。
+                - name: 配布グループを展開する
                   href: exchange-web-services/how-to-expand-distribution-groups-by-using-ews-in-exchange-2013.md
             - name: 電子情報開示
               href: exchange-web-services/ediscovery-in-ews-in-exchange.md
-            - name: Email
+            - name: メール
               href: exchange-web-services/email-and-ews-in-exchange.md
               items:
                 - name: メールのプロパティと要素
                   href: exchange-web-services/email-properties-and-elements-in-ews-in-exchange.md
-                - name: 電子メール メッセージを送信します。
+                - name: メール メッセージを送信する
                   href: exchange-web-services/how-to-send-email-messages-by-using-ews-in-exchange.md
-                - name: 電子メール メッセージへの応答します。
+                - name: メール メッセージに応答する
                   href: exchange-web-services/how-to-respond-to-email-messages-by-using-ews-in-exchange.md
-                - name: 移動し、電子メール メッセージのコピー
+                - name: 電子メール メッセージを移動およびコピーする
                   href: exchange-web-services/how-to-move-and-copy-email-messages-by-using-ews-in-exchange.md
-                - name: 会話を使用します。
+                - name: 会話を処理する
                   href: exchange-web-services/how-to-work-with-conversations-by-using-ews-in-exchange.md
-                - name: 電子メール メッセージからエンティティを抽出します。
+                - name: メール メッセージからエンティティを抽出する
                   href: exchange-web-services/how-to-extract-an-entity-from-an-email-message-by-using-ews-in-exchange.md
-                - name: バッチ内の電子メール メッセージを処理
+                - name: バッチ処理でメール メッセージを処理する
                   href: exchange-web-services/how-to-process-email-messages-in-batches-by-using-ews-in-exchange.md
             - name: フォルダーとアイテム
               href: exchange-web-services/folders-and-items-in-ews-in-exchange.md
               items:
-                - name: フォルダーを操作します。
+                - name: フォルダーを操作する
                   href: exchange-web-services/how-to-work-with-folders-by-using-ews-in-exchange.md
-                - name: 非表示のフォルダーを操作します。
+                - name: 隠しフォルダーを操作する
                   href: exchange-web-services/how-to-work-with-hidden-folders-by-using-ews-in-exchange.md
-                - name: 項目を操作します。
+                - name: アイテムを操作する
                   href: exchange-web-services/how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md
                 - name: アイテムの削除
                   href: exchange-web-services/deleting-items-by-using-ews-in-exchange.md
@@ -202,66 +202,66 @@
                 - name: アイテムをエクスポートおよびインポートする
                   href: exchange-web-services/exporting-and-importing-items-by-using-ews-in-exchange.md
                   items:
-                    - name: アイテムをエクスポートします。
+                    - name: アイテムをエクスポートする
                       href: exchange-web-services/how-to-export-items-by-using-ews-in-exchange.md
-                    - name: アイテムをインポートします。
+                    - name: アイテムをインポートする
                       href: exchange-web-services/how-to-import-items-by-using-ews-in-exchange.md
             - name: 識別子
               href: exchange-web-services/ews-identifiers-in-exchange.md
             - name: 偽装
               href: exchange-web-services/impersonation-and-ews-in-exchange.md
               items:
-                - name: 偽装を構成します。
+                - name: 偽装を構成する
                   href: exchange-web-services/how-to-configure-impersonation.md
-                - name: 偽装するアカウントを識別します。
+                - name: 偽装するアカウントを指定する
                   href: exchange-web-services/how-to-identify-the-account-to-impersonate.md
-                - name: Exchange の偽装を使用して予定を追加します。
+                - name: Exchange の偽装を使用して予定を追加する
                   href: exchange-web-services/how-to-add-appointments-by-using-exchange-impersonation.md
             - name: 受信トレイの管理
               href: exchange-web-services/inbox-management-and-ews-in-exchange.md
               items:
-                - name: 受信トレイ ルールを管理します。
+                - name: 受信トレイ ルールを管理する
                   href: exchange-web-services/how-to-manage-inbox-rules-by-using-ews-in-exchange.md
-                - name: '追加し、[受信拒否リストから電子メール アドレスを削除します。'
+                - name: 受信拒否リストに対してメール アドレスを追加、削除する
                   href: exchange-web-services/how-to-add-and-remove-email-addresses-from-blocked-senders-list-by-using-ews.md
             - name: 通知とイベント
               href: exchange-web-services/notification-subscriptions-mailbox-events-and-ews-in-exchange.md
               items:
-                - name: ストリームの通知
+                - name: ストリーム通知
                   href: exchange-web-services/how-to-stream-notifications-about-mailbox-events-by-using-ews-in-exchange.md
                 - name: プル通知
                   href: exchange-web-services/how-to-pull-notifications-about-mailbox-events-by-using-ews-in-exchange.md
-                - name: アフィニティを維持します。
+                - name: アフィニティを維持する
                   href: exchange-web-services/how-to-maintain-affinity-between-group-of-subscriptions-and-mailbox-server.md
-                - name: 通知に関連するエラーを処理します。
+                - name: 通知に関連するエラーを処理する
                   href: exchange-web-services/handling-notification-related-errors-in-ews-in-exchange.md
             - name: メールボックスの同期
               href: exchange-web-services/mailbox-synchronization-and-ews-in-exchange.md
               items:
-                - name: フォルダーを同期します。
+                - name: フォルダーを同期させる
                   href: exchange-web-services/how-to-synchronize-folders-by-using-ews-in-exchange.md
                 - name: アイテムを同期する
                   href: exchange-web-services/how-to-synchronize-items-by-using-ews-in-exchange.md
-                - name: 同期に関連するエラーを処理します。
+                - name: 同期に関連するエラーを処理する
                   href: exchange-web-services/handling-synchronization-related-errors-in-ews-in-exchange.md
             - name: 永続的なアプリケーションの設定
               href: exchange-web-services/persistent-application-settings-in-ews-in-exchange.md
               items:
-                - name: 永続的なアプリケーションの設定を管理します。
+                - name: 永続的なアプリケーションの設定を管理する
                   href: exchange-web-services/how-to-manage-persistent-application-settings-by-using-ews-in-exchange.md
             - name: ユーザーと連絡先
               href: exchange-web-services/people-and-contacts-in-ews-in-exchange.md
               items:
-                - name: バッチ処理の連絡先
+                - name: バッチ処理で連絡先を処理する
                   href: exchange-web-services/how-to-process-contacts-in-batches-by-using-ews-in-exchange.md
-                - name: あいまいな名前を解決するには
+                - name: あいまいな名前を解決する
                   href: exchange-web-services/how-to-resolve-ambiguous-names-by-using-ews-in-exchange-2013.md
-                - name: ユーザーの写真を取り込み
+                - name: ユーザーの写真を取得する
                   href: exchange-web-services/how-to-get-user-photos-by-using-ews-in-exchange.md
             - name: プロパティと拡張プロパティ
               href: exchange-web-services/properties-and-extended-properties-in-ews-in-exchange.md
               items:
-                - name: プロビジョニングの x-ヘッダー
+                - name: X ヘッダーを準備する
                   href: exchange-web-services/how-to-provision-x-headers-by-using-ews-in-exchange.md
                 - name: EWS プロパティ関連のエラー
                   href: exchange-web-services/ews-property-related-errors.md
@@ -270,38 +270,38 @@
             - name: パブリック フォルダー
               href: exchange-web-services/public-folder-access-with-ews-in-exchange.md
               items:
-                - name: パブリック フォルダー階層の要求のルーティング
+                - name: パブリック フォルダー階層の要求をルーティングする
                   href: exchange-web-services/how-to-route-public-folder-hierarchy-requests.md
-                - name: パブリック フォルダー コンテンツの要求をルーティングします。
+                - name: パブリック フォルダー コンテンツ要求のルーティング
                   href: exchange-web-services/how-to-route-public-folder-content-requests.md
             - name: 検索
               href: exchange-web-services/search-and-ews-in-exchange.md
               items:
-                - name: 検索フィルターを使用します。
+                - name: 検索フィルターを使用する
                   href: exchange-web-services/how-to-use-search-filters-with-ews-in-exchange.md
-                - name: AQS 検索を実行します。
+                - name: AQS 検索を実行する
                   href: exchange-web-services/how-to-perform-an-aqs-search-by-using-ews-in-exchange.md
-                - name: ページ検索を実行します。
+                - name: ページング検索を実行する
                   href: exchange-web-services/how-to-perform-paged-searches-by-using-ews-in-exchange.md
-                - name: グループ化された検索を実行します。
+                - name: グループ化された検索を実行する
                   href: exchange-web-services/how-to-perform-grouped-searches-by-using-ews-in-exchange.md
-                - name: 検索フォルダーを使用します。
+                - name: 検索フォルダーを操作する
                   href: exchange-web-services/how-to-work-with-search-folders-by-using-ews-in-exchange.md
             - name: Exchange のタイム ゾーンと EWS
               href: exchange-web-services/time-zones-and-ews-in-exchange.md
               items:
-                - name: 特定のタイム ゾーンで予定を作成します。
+                - name: 特定のタイム ゾーンで予定を作成する
                   href: exchange-web-services/how-to-create-appointments-in-a-specific-time-zone-by-using-ews-in-exchange.md
-                - name: 予定のタイム ゾーンを更新します。
+                - name: 予定のタイム ゾーンを更新する
                   href: exchange-web-services/how-to-update-the-time-zone-for-an-appointment-by-using-ews-in-exchange.md
             - name: EWS アプリケーションのトラブルシューティング
               href: exchange-web-services/tools-and-resources-for-troubleshooting-ews-applications-for-exchange.md
             - name: EWS または EWS マネージ API の呼び出しの結果の確認
               href: exchange-web-services/verifying-the-results-of-an-ews-or-ews-managed-api-call.md
-        - name: Web サービスの参照
+        - name: Web サービス参照
           href: web-service-reference/web-services-reference-for-exchange.md
           items:
-            - name: EWS 参照
+            - name: EWS リファレンス
               href: web-service-reference/ews-reference-for-exchange.md
               items:
                 - name: EWS 操作
@@ -340,7 +340,7 @@
                     - name: CreateItem 操作
                       href: web-service-reference/createitem-operation.md
                       items:
-                        - name: CreateItem 操作 (電子メール)
+                        - name: CreateItem 操作 (メール メッセージ)
                           href: web-service-reference/createitem-operation-email-message.md
                         - name: CreateItem 操作 (予定表アイテム)
                           href: web-service-reference/createitem-operation-calendar-item.md
@@ -350,7 +350,7 @@
                           href: web-service-reference/createitem-operation-task.md
                         - name: CreateItem 操作 (連絡先)
                           href: web-service-reference/createitem-operation-contact.md
-                        - name: Createitem メソッド (AcceptSharingInvitation)
+                        - name: CreateItem (AcceptSharingInvitation)
                           href: web-service-reference/createitem-acceptsharinginvitation.md
                     - name: CreateManagedFolder 操作
                       href: web-service-reference/createmanagedfolder-operation.md
@@ -360,7 +360,7 @@
                       href: web-service-reference/deleteattachment-operation.md
                     - name: DeleteFolder 操作
                       href: web-service-reference/deletefolder-operation.md
-                    - name: DeleteItem の操作
+                    - name: DeleteItem 操作
                       href: web-service-reference/deleteitem-operation.md
                     - name: DeleteUserConfiguration 操作
                       href: web-service-reference/deleteuserconfiguration-operation.md
@@ -392,7 +392,7 @@
                       href: web-service-reference/getattachment-operation.md
                     - name: GetClientAccessToken 操作
                       href: web-service-reference/getclientaccesstoken-operation.md
-                    - name: GetConversationItems の操作
+                    - name: GetConversationItems 操作
                       href: web-service-reference/getconversationitems-operation.md
                     - name: GetDelegate 操作
                       href: web-service-reference/getdelegate-operation.md
@@ -400,7 +400,7 @@
                       href: web-service-reference/getdiscoverysearchconfiguration-operation.md
                     - name: GetEvents 操作
                       href: web-service-reference/getevents-operation.md
-                    - name: GetFolder の操作
+                    - name: GetFolder 操作
                       href: web-service-reference/getfolder-operation.md
                     - name: GetHoldOnMailboxes 操作
                       href: web-service-reference/getholdonmailboxes-operation.md
@@ -413,7 +413,7 @@
                     - name: GetItem 操作
                       href: web-service-reference/getitem-operation.md
                       items:
-                        - name: GetItem 操作 (電子メール)
+                        - name: GetItem 操作 (メール メッセージ)
                           href: web-service-reference/getitem-operation-email-message.md
                         - name: GetItem 操作 (予定表アイテム)
                           href: web-service-reference/getitem-operation-calendar-item.md
@@ -467,7 +467,7 @@
                       href: web-service-reference/installapp-operation.md
                     - name: MarkAllItemsAsRead 操作
                       href: web-service-reference/markallitemsasread-operation.md
-                    - name: MarkAsJunk の操作
+                    - name: MarkAsJunk 操作
                       href: web-service-reference/markasjunk-operation.md
                     - name: MoveFolder 操作
                       href: web-service-reference/movefolder-operation.md
@@ -503,15 +503,15 @@
                       href: web-service-reference/setimlistmigrationcompleted-operation.md
                     - name: SetUserOofSettings 操作
                       href: web-service-reference/setuseroofsettings-operation.md
-                    - name: 操作を購読します。
+                    - name: Subscribe 操作
                       href: web-service-reference/subscribe-operation.md
                     - name: SyncFolderHierarchy 操作
                       href: web-service-reference/syncfolderhierarchy-operation.md
-                    - name: SyncFolderItems の操作
+                    - name: SyncFolderItems 操作
                       href: web-service-reference/syncfolderitems-operation.md
                     - name: UninstallApp 操作
                       href: web-service-reference/uninstallapp-operation.md
-                    - name: 操作の購読を解除します。
+                    - name: Unsubscribe 操作
                       href: web-service-reference/unsubscribe-operation.md
                     - name: UpdateDelegate 操作
                       href: web-service-reference/updatedelegate-operation.md
@@ -522,7 +522,7 @@
                     - name: UpdateItem 操作
                       href: web-service-reference/updateitem-operation.md
                       items:
-                        - name: UpdateItem 処理 (タスク)
+                        - name: UpdateItem 操作 (タスク)
                           href: web-service-reference/updateitem-operation-task.md
                         - name: UpdateItem 操作 (連絡先)
                           href: web-service-reference/updateitem-operation-contact.md
@@ -530,7 +530,7 @@
                       href: web-service-reference/updateuserconfiguration-operation.md
                     - name: UploadItems 操作
                       href: web-service-reference/uploaditems-operation.md
-                - name: EWS の XML 要素
+                - name: EWS XML 要素
                   href: web-service-reference/ews-xml-elements-in-exchange.md
                   items:
                     - name: AbsoluteDate
@@ -551,23 +551,23 @@
                       href: web-service-reference/accuracy.md
                     - name: ActingAs
                       href: web-service-reference/actingas.md
-                    - name: アクション (ConversationActionTypeType)
+                    - name: Action (ConversationActionTypeType)
                       href: web-service-reference/action-conversationactiontypetype.md
-                    - name: アクション (ProtectionRuleActionType)
+                    - name: Action (ProtectionRuleActionType)
                       href: web-service-reference/action-protectionruleactiontype.md
-                    - name: アクション (SetClientExtensionActionType)
+                    - name: Action (SetClientExtensionActionType)
                       href: web-service-reference/action-setclientextensionactiontype.md
                     - name: ActionUrl
                       href: web-service-reference/actionurl.md
-                    - name: アクション
+                    - name: Actions
                       href: web-service-reference/actions.md
-                    - name: アクション (ArrayOfSetClientExtensionActionsType)
+                    - name: Actions (ArrayOfSetClientExtensionActionsType)
                       href: web-service-reference/actions-arrayofsetclientextensionactionstype.md
-                    - name: アクション (RuleActionsType)
+                    - name: Actions (RuleActionsType)
                       href: web-service-reference/actions-ruleactionstype.md
-                    - name: ファイアウォール (HoldActionType)
+                    - name: ActionType (HoldActionType)
                       href: web-service-reference/actiontype-holdactiontype.md
-                    - name: ファイアウォール (ReminderActionType)
+                    - name: ActionType (ReminderActionType)
                       href: web-service-reference/actiontype-reminderactiontype.md
                     - name: ActualWork
                       href: web-service-reference/actualwork.md
@@ -603,17 +603,17 @@
                       href: web-service-reference/addnewteluricontacttogroup.md
                     - name: AddNewTelUriContactToGroupResponse
                       href: web-service-reference/addnewteluricontacttogroupresponse.md
-                    - name: アドレス (ContactType)
+                    - name: Address (ContactType)
                       href: web-service-reference/address-contacttype.md
-                    - name: アドレス (EmailAddressType)
+                    - name: Address (EmailAddressType)
                       href: web-service-reference/address-emailaddresstype.md
-                    - name: アドレス (文字列)
+                    - name: Address (string)
                       href: web-service-reference/address-string.md
                     - name: AddressEntity
                       href: web-service-reference/addressentity.md
-                    - name: アドレス (ArrayOfAddressEntitiesType)
+                    - name: Addresses (ArrayOfAddressEntitiesType)
                       href: web-service-reference/addresses-arrayofaddressentitiestype.md
-                    - name: アドレス (ArrayOfAddressesType)
+                    - name: Addresses (ArrayOfAddressesType)
                       href: web-service-reference/addresses-arrayofaddressestype.md
                     - name: AddressListId
                       href: web-service-reference/addresslistid.md
@@ -627,9 +627,9 @@
                       href: web-service-reference/aggregationrestriction.md
                     - name: Alias
                       href: web-service-reference/alias.md
-                    - name: エイリアス (FederatedDirectoryGroupType)
+                    - name: Alias (FederatedDirectoryGroupType)
                       href: web-service-reference/alias-federateddirectorygrouptype.md
-                    - name: エイリアス (MasterMailboxType)
+                    - name: Alias (MasterMailboxType)
                       href: web-service-reference/alias-mastermailboxtype.md
                     - name: AllInternal
                       href: web-service-reference/allinternal.md
@@ -649,13 +649,13 @@
                       href: web-service-reference/altitudeaccuracy.md
                     - name: And
                       href: web-service-reference/and.md
-                    - name: (ProtectionRuleAndType)
+                    - name: And (ProtectionRuleAndType)
                       href: web-service-reference/and-protectionruleandtype.md
-                    - name: 注釈
+                    - name: Annotation
                       href: web-service-reference/annotation.md
                     - name: ApiVersionSupported
                       href: web-service-reference/apiversionsupported.md
-                    - name: アプリ
+                    - name: App
                       href: web-service-reference/app.md
                     - name: AppendToFolderField
                       href: web-service-reference/appendtofolderfield.md
@@ -685,7 +685,7 @@
                       href: web-service-reference/approvaldecisiontime.md
                     - name: ApprovalRequestData
                       href: web-service-reference/approvalrequestdata.md
-                    - name: アプリ
+                    - name: Apps
                       href: web-service-reference/apps.md
                     - name: AppStatus
                       href: web-service-reference/appstatus-ex15websvcsotherref.md
@@ -699,13 +699,13 @@
                       href: web-service-reference/archivesourcefolderid.md
                     - name: ArchiveTag
                       href: web-service-reference/archivetag.md
-                    - name: 引数
+                    - name: Argument
                       href: web-service-reference/argument.md
                     - name: AssignCategories
                       href: web-service-reference/assigncategories.md
                     - name: AssignedTime
                       href: web-service-reference/assignedtime.md
-                    - name: 'Assignees '
+                    - name: Assignees
                       href: web-service-reference/assignees.md
                     - name: AssistantName
                       href: web-service-reference/assistantname.md
@@ -715,17 +715,17 @@
                       href: web-service-reference/assistantphonenumbers.md
                     - name: AssociatedCalendarItemId
                       href: web-service-reference/associatedcalendaritemid.md
-                    - name: 関連付け
+                    - name: Association
                       href: web-service-reference/association.md
                     - name: AttachLongPathName
                       href: web-service-reference/attachlongpathname.md
                     - name: AttachmentId
                       href: web-service-reference/attachmentid.md
-                    - name: AttachmentId (GetAttachment と DeleteAttachment)
+                    - name: AttachmentId (GetAttachment and DeleteAttachment)
                       href: web-service-reference/attachmentid-getattachment-and-deleteattachment.md
                     - name: AttachmentIds
                       href: web-service-reference/attachmentids.md
-                    - name: 添付ファイル
+                    - name: Attachments
                       href: web-service-reference/attachments-ex15websvcsotherref.md
                     - name: AttachmentShape
                       href: web-service-reference/attachmentshape.md
@@ -741,13 +741,13 @@
                       href: web-service-reference/attendees.md
                     - name: AttendeeType
                       href: web-service-reference/attendeetype.md
-                    - name: 属性 (PersonaAttributionType)
+                    - name: Attribution (PersonaAttributionType)
                       href: web-service-reference/attribution-personaattributiontype.md
-                    - name: 属性 (文字列)
+                    - name: Attribution (string)
                       href: web-service-reference/attribution-string.md
-                    - name: 帰属 (ArrayOfPersonaAttributionsType)
+                    - name: Attributions (ArrayOfPersonaAttributionsType)
                       href: web-service-reference/attributions-arrayofpersonaattributionstype.md
-                    - name: 帰属 (ArrayOfValueAttributionsType)
+                    - name: Attributions (ArrayOfValueAttributionsType)
                       href: web-service-reference/attributions-arrayofvalueattributionstype.md
                     - name: AudioData
                       href: web-service-reference/audiodata.md
@@ -771,25 +771,25 @@
                       href: web-service-reference/begintime.md
                     - name: Bias
                       href: web-service-reference/bias.md
-                    - name: バイアス (UTC)
+                    - name: Bias (UTC)
                       href: web-service-reference/bias-utc.md
                     - name: BillingInformation
                       href: web-service-reference/billinginformation.md
-                    - name: データ
+                    - name: BinaryData
                       href: web-service-reference/binarydata.md
                     - name: Birthday
                       href: web-service-reference/birthday.md
-                    - name: 誕生日
+                    - name: Birthdays
                       href: web-service-reference/birthdays.md
-                    - name: ビットマスク
+                    - name: Bitmask
                       href: web-service-reference/bitmask.md
                     - name: BlockExternalImages
                       href: web-service-reference/blockexternalimages.md
                     - name: BlockStatus
                       href: web-service-reference/blockstatus.md
-                    - name: ボディ
+                    - name: Bodies
                       href: web-service-reference/bodies.md
-                    - name: 本文
+                    - name: Body
                       href: web-service-reference/body.md
                     - name: BodyContentAttributedValue
                       href: web-service-reference/bodycontentattributedvalue.md
@@ -821,7 +821,7 @@
                       href: web-service-reference/calendarfolder.md
                     - name: CalendarFolderPermissionLevel
                       href: web-service-reference/calendarfolderpermissionlevel.md
-                    - name: カレンダー項目
+                    - name: CalendarItem
                       href: web-service-reference/calendaritem.md
                     - name: CalendarItemType
                       href: web-service-reference/calendaritemtype.md
@@ -853,7 +853,7 @@
                       href: web-service-reference/canrenameormove.md
                     - name: CarPhones
                       href: web-service-reference/carphones.md
-                    - name: カテゴリ
+                    - name: Categories
                       href: web-service-reference/categories-ex15websvcsotherref.md
                     - name: CcRecipients
                       href: web-service-reference/ccrecipients.md
@@ -861,15 +861,15 @@
                       href: web-service-reference/changecount.md
                     - name: ChangeHighlights
                       href: web-service-reference/changehighlights.md
-                    - name: (階層) の変更
+                    - name: Changes (Hierarchy)
                       href: web-service-reference/changes-hierarchy.md
-                    - name: 変更 (アイテム)
+                    - name: Changes (Items)
                       href: web-service-reference/changes-items.md
                     - name: ChildFolderCount
                       href: web-service-reference/childfoldercount.md
                     - name: Children
                       href: web-service-reference/children.md
-                    - name: 子 (ArrayOfStringArrayAttributedValuesType)
+                    - name: Children (ArrayOfStringArrayAttributedValuesType)
                       href: web-service-reference/children-arrayofstringarrayattributedvaluestype.md
                     - name: City
                       href: web-service-reference/city.md
@@ -897,11 +897,11 @@
                       href: web-service-reference/completefindingalspeechrecognitionresponse.md
                     - name: CompleteName
                       href: web-service-reference/completename.md
-                    - name: 条件
+                    - name: Condition
                       href: web-service-reference/condition.md
-                    - name: 条件 (RestrictionType)
+                    - name: Condition (RestrictionType)
                       href: web-service-reference/condition-restrictiontype.md
-                    - name: 条件
+                    - name: Conditions
                       href: web-service-reference/conditions.md
                     - name: ConferenceType
                       href: web-service-reference/conferencetype.md
@@ -921,23 +921,23 @@
                       href: web-service-reference/connectionfailurecause.md
                     - name: ConnectionStatus
                       href: web-service-reference/connectionstatus.md
-                    - name: タイムアウト
+                    - name: ConnectionTimeout
                       href: web-service-reference/connectiontimeout.md
-                    - name: 定数
+                    - name: Constant
                       href: web-service-reference/constant.md
-                    - name: 連絡先
+                    - name: Contact
                       href: web-service-reference/contact.md
-                    - name: 連絡先 (ContactType)
+                    - name: Contact (ContactType)
                       href: web-service-reference/contact-contacttype.md
                     - name: ContactId
                       href: web-service-reference/contactid.md
                     - name: ContactIds
                       href: web-service-reference/contactids.md
-                    - name: 連絡先
+                    - name: Contacts
                       href: web-service-reference/contacts-ex15websvcsotherref.md
-                    - name: 連絡先 (ArrayOfContactsType)
+                    - name: Contacts (ArrayOfContactsType)
                       href: web-service-reference/contacts-arrayofcontactstype.md
-                    - name: メッセージ
+                    - name: ContactsFolder
                       href: web-service-reference/contactsfolder.md
                     - name: ContactsFolderPermissionLevel
                       href: web-service-reference/contactsfolderpermissionlevel.md
@@ -947,7 +947,7 @@
                       href: web-service-reference/contactstring.md
                     - name: ContactsView
                       href: web-service-reference/contactsview.md
-                    - name: 内容
+                    - name: Contains
                       href: web-service-reference/contains.md
                     - name: ContainsBodyStrings
                       href: web-service-reference/containsbodystrings.md
@@ -961,7 +961,7 @@
                       href: web-service-reference/containssubjectorbodystrings.md
                     - name: ContainsSubjectStrings
                       href: web-service-reference/containssubjectstrings.md
-                    - name: コンテンツ
+                    - name: Content
                       href: web-service-reference/content.md
                     - name: ContentExpiryDate
                       href: web-service-reference/contentexpirydate.md
@@ -975,11 +975,11 @@
                       href: web-service-reference/contenttype.md
                     - name: ContextFolderId
                       href: web-service-reference/contextfolderid.md
-                    - name: 会話 (ConversationRequestType)
+                    - name: Conversation (ConversationRequestType)
                       href: web-service-reference/conversation-conversationrequesttype.md
-                    - name: 会話 (ConversationResponseType)
+                    - name: Conversation (ConversationResponseType)
                       href: web-service-reference/conversation-conversationresponsetype.md
-                    - name: 会話 (ConversationType)
+                    - name: Conversation (ConversationType)
                       href: web-service-reference/conversation-conversationtype.md
                     - name: ConversationAction
                       href: web-service-reference/conversationaction.md
@@ -989,7 +989,7 @@
                       href: web-service-reference/conversationid.md
                     - name: ConversationIndex
                       href: web-service-reference/conversationindex.md
-                    - name: ConversationIndex (文字列)
+                    - name: ConversationIndex (string)
                       href: web-service-reference/conversationindex-string.md
                     - name: ConversationLastSyncTime
                       href: web-service-reference/conversationlastsynctime.md
@@ -997,7 +997,7 @@
                       href: web-service-reference/conversationnode.md
                     - name: ConversationNodes
                       href: web-service-reference/conversationnodes.md
-                    - name: スレッド
+                    - name: Conversations
                       href: web-service-reference/conversations-ex15websvcsotherref.md
                     - name: ConversationShape
                       href: web-service-reference/conversationshape.md
@@ -1027,15 +1027,15 @@
                       href: web-service-reference/copyitemresponsemessage.md
                     - name: CopyToFolder
                       href: web-service-reference/copytofolder.md
-                    - name: データの個数
+                    - name: Count
                       href: web-service-reference/count.md
-                    - name: 国 (自宅)
+                    - name: Country
                       href: web-service-reference/country.md
                     - name: CountryOrRegion
                       href: web-service-reference/countryorregion.md
-                    - name: (集合的) を作成します。
+                    - name: Create (FolderSync)
                       href: web-service-reference/create-foldersync.md
-                    - name: (ItemSync) を作成します。
+                    - name: Create (ItemSync)
                       href: web-service-reference/create-itemsync.md
                     - name: CreateAssociated
                       href: web-service-reference/createassociated.md
@@ -1099,13 +1099,13 @@
                       href: web-service-reference/dailyregeneration.md
                     - name: Data
                       href: web-service-reference/data.md
-                    - name: データ (base64Binary)
+                    - name: Data (base64Binary)
                       href: web-service-reference/data-base64binary.md
                     - name: DataType
                       href: web-service-reference/datatype.md
                     - name: Date
                       href: web-service-reference/date.md
-                    - name: 日付 (MessageTracking)
+                    - name: Date (MessageTracking)
                       href: web-service-reference/date-messagetracking.md
                     - name: DateTime
                       href: web-service-reference/datetime.md
@@ -1119,15 +1119,15 @@
                       href: web-service-reference/datetimesent.md
                     - name: DateTimeStamp
                       href: web-service-reference/datetimestamp.md
-                    - name: 日
+                    - name: Day
                       href: web-service-reference/day.md
-                    - name: (夏時間)
+                    - name: Daylight
                       href: web-service-reference/daylight.md
                     - name: DaylightTime
                       href: web-service-reference/daylighttime.md
                     - name: DayOfMonth
                       href: web-service-reference/dayofmonth.md
-                    - name: DayOfWeek (タイムゾーン)
+                    - name: DayOfWeek (TimeZone)
                       href: web-service-reference/dayofweek-timezone.md
                     - name: DayOfWeek (WorkingPeriod)
                       href: web-service-reference/dayofweek-workingperiod.md
@@ -1143,7 +1143,7 @@
                       href: web-service-reference/daysofweek-daysofweektype.md
                     - name: DeclineItem
                       href: web-service-reference/declineitem.md
-                    - name: 重複除外
+                    - name: Deduplication
                       href: web-service-reference/deduplication.md
                     - name: DelegatePermissions
                       href: web-service-reference/delegatepermissions.md
@@ -1157,11 +1157,11 @@
                       href: web-service-reference/delegationstate.md
                     - name: Delegator
                       href: web-service-reference/delegator.md
-                    - name: 削除
+                    - name: Delete
                       href: web-service-reference/delete.md
-                    - name: (集合的) を削除します。
+                    - name: Delete (FolderSync)
                       href: web-service-reference/delete-foldersync.md
-                    - name: (ItemSync) を削除します。
+                    - name: Delete (ItemSync)
                       href: web-service-reference/delete-itemsync.md
                     - name: DeleteAttachment
                       href: web-service-reference/deleteattachment.md
@@ -1199,7 +1199,7 @@
                       href: web-service-reference/deleteitems.md
                     - name: DeleteRuleOperation
                       href: web-service-reference/deleteruleoperation.md
-                    - name: 削除の種類
+                    - name: DeleteType
                       href: web-service-reference/deletetype.md
                     - name: DeleteUserConfiguration
                       href: web-service-reference/deleteuserconfiguration.md
@@ -1215,11 +1215,11 @@
                       href: web-service-reference/deliverystatus.md
                     - name: Department
                       href: web-service-reference/department.md
-                    - name: 部門
+                    - name: Departments
                       href: web-service-reference/departments.md
-                    - name: 説明
+                    - name: Description
                       href: web-service-reference/description.md
-                    - name: 説明 (MasterMailboxType)
+                    - name: Description (MasterMailboxType)
                       href: web-service-reference/description-mastermailboxtype.md
                     - name: DescriptiveLinkKey
                       href: web-service-reference/descriptivelinkkey.md
@@ -1231,7 +1231,7 @@
                       href: web-service-reference/diagnostics.md
                     - name: DiagnosticsLevel
                       href: web-service-reference/diagnosticslevel.md
-                    - name: DialString (Exchange web サービス)
+                    - name: DialString (Exchange Web サービス)
                       href: web-service-reference/dialstring-exchange-web-services.md
                     - name: Dictionary
                       href: web-service-reference/dictionary.md
@@ -1265,15 +1265,15 @@
                       href: web-service-reference/discoverysearchconfigurations.md
                     - name: DisplayCc
                       href: web-service-reference/displaycc.md
-                    - name: 表示名 (FederatedDirectoryGroupType)
+                    - name: DisplayName (FederatedDirectoryGroupType)
                       href: web-service-reference/displayname-federateddirectorygrouptype.md
-                    - name: 表示名 (MasterMailboxType)
+                    - name: DisplayName (MasterMailboxType)
                       href: web-service-reference/displayname-mastermailboxtype.md
-                    - name: 表示名 (NonEmptyStringType)
+                    - name: DisplayName (NonEmptyStringType)
                       href: web-service-reference/displayname-nonemptystringtype.md
-                    - name: 表示名 (文字列)
+                    - name: DisplayName (string)
                       href: web-service-reference/displayname-string.md
-                    - name: 表示名 (VotingOptionDataType)
+                    - name: DisplayName (VotingOptionDataType)
                       href: web-service-reference/displayname-votingoptiondatatype.md
                     - name: DisplayNameFirstLast
                       href: web-service-reference/displaynamefirstlast.md
@@ -1291,7 +1291,7 @@
                       href: web-service-reference/displaynameprefix.md
                     - name: DisplayNamePrefixes
                       href: web-service-reference/displaynameprefixes.md
-                    - name: 表示名
+                    - name: DisplayNames
                       href: web-service-reference/displaynames.md
                     - name: DisplayTo
                       href: web-service-reference/displayto.md
@@ -1307,19 +1307,19 @@
                       href: web-service-reference/distributionlist.md
                     - name: DLExpansion
                       href: web-service-reference/dlexpansion.md
-                    - name: ドメイン
+                    - name: Domain
                       href: web-service-reference/domain.md
-                    - name: ドメイン (メッセージの追跡)
+                    - name: Domain (メッセージ追跡)
                       href: web-service-reference/domain-message-tracking.md
-                    - name: ドメイン コント ローラー (MasterMailboxType)
+                    - name: DomainController (MasterMailboxType)
                       href: web-service-reference/domaincontroller-mastermailboxtype.md
                     - name: DraftItemIds
                       href: web-service-reference/draftitemids.md
                     - name: DueDate
                       href: web-service-reference/duedate.md
-                    - name: 期間 (アイテム)
+                    - name: Duration (Items)
                       href: web-service-reference/duration-items.md
-                    - name: 期間 (UserOofSettings)
+                    - name: Duration (UserOofSettings)
                       href: web-service-reference/duration-useroofsettings.md
                     - name: EditAllowed
                       href: web-service-reference/editallowed.md
@@ -1327,11 +1327,11 @@
                       href: web-service-reference/edititems.md
                     - name: EffectiveRights
                       href: web-service-reference/effectiverights.md
-                    - name: 電子メール (EmailAddress)
+                    - name: Email (EmailAddress)
                       href: web-service-reference/email-emailaddress.md
-                    - name: 電子メール (EmailAddressType)
+                    - name: Email (EmailAddressType)
                       href: web-service-reference/email-emailaddresstype.md
-                    - name: 電子メール (文字列)
+                    - name: Email (String)
                       href: web-service-reference/email-string.md
                     - name: EmailAddress (EmailAddress)
                       href: web-service-reference/emailaddress-emailaddress.md
@@ -1379,13 +1379,13 @@
                       href: web-service-reference/encryptedsharedfolderdata.md
                     - name: EncryptedSharedFolderDataCollection
                       href: web-service-reference/encryptedsharedfolderdatacollection.md
-                    - name: '終了 '
+                    - name: 'End '
                       href: web-service-reference/end-ex15websvcsotherref.md
-                    - name: 終了 (ChangeHighlightsType)
+                    - name: End (ChangeHighlightsType)
                       href: web-service-reference/end-changehighlightstype.md
-                    - name: 終了日 (繰り返し)
+                    - name: EndDate (Recurrence)
                       href: web-service-reference/enddate-recurrence.md
-                    - name: 終了日 (ReminderType)
+                    - name: EndDate (ReminderType)
                       href: web-service-reference/enddate-remindertype.md
                     - name: EndDateRecurrence
                       href: web-service-reference/enddaterecurrence.md
@@ -1395,7 +1395,7 @@
                       href: web-service-reference/endnodeurl.md
                     - name: EndTime
                       href: web-service-reference/endtime.md
-                    - name: 終了時刻 (ReminderMessageDataType)
+                    - name: EndTime (ReminderMessageDataType)
                       href: web-service-reference/endtime-remindermessagedatatype.md
                     - name: EndTimeInMinutes
                       href: web-service-reference/endtimeinminutes.md
@@ -1409,29 +1409,29 @@
                       href: web-service-reference/enhancedlocation.md
                     - name: EntityExtractionResult
                       href: web-service-reference/entityextractionresult.md
-                    - name: エントリ (EmailAddress)
+                    - name: Entry (EmailAddress)
                       href: web-service-reference/entry-emailaddress.md
-                    - name: エントリ (IMAddress)
+                    - name: Entry (IMAddress)
                       href: web-service-reference/entry-imaddress.md
-                    - name: 入力 (電話番号)
+                    - name: Entry (PhoneNumber)
                       href: web-service-reference/entry-phonenumber.md
-                    - name: エントリ (PhysicalAddress)
+                    - name: Entry (PhysicalAddress)
                       href: web-service-reference/entry-physicaladdress.md
-                    - name: エラー
+                    - name: Error
                       href: web-service-reference/error.md
-                    - name: エラー
+                    - name: Errors
                       href: web-service-reference/errors-ex15websvcsotherref.md
-                    - name: エラー コード
+                    - name: ErrorCode
                       href: web-service-reference/errorcode.md
-                    - name: エラー コード (int)
+                    - name: ErrorCode (int)
                       href: web-service-reference/errorcode-int.md
-                    - name: エラー コード (ItemIndexErrorType)
+                    - name: ErrorCode (ItemIndexErrorType)
                       href: web-service-reference/errorcode-itemindexerrortype.md
                     - name: ErrorDescription
                       href: web-service-reference/errordescription.md
-                    - name: エラー メッセージ
+                    - name: ErrorMessage
                       href: web-service-reference/errormessage.md
-                    - name: (NonIndexableItemStatisticType) のエラー メッセージ
+                    - name: ErrorMessage (NonIndexableItemStatisticType)
                       href: web-service-reference/errormessage-nonindexableitemstatistictype.md
                     - name: ErrorSubscriptionIds
                       href: web-service-reference/errorsubscriptionids.md
@@ -1445,7 +1445,7 @@
                       href: web-service-reference/eventtypes.md
                     - name: ExceptionFieldURI
                       href: web-service-reference/exceptionfielduri.md
-                    - name: 例外
+                    - name: Exceptions
                       href: web-service-reference/exceptions.md
                     - name: ExchangeImpersonation
                       href: web-service-reference/exchangeimpersonation.md
@@ -1453,7 +1453,7 @@
                       href: web-service-reference/exchangestoreid.md
                     - name: ExcludeConflicts
                       href: web-service-reference/excludeconflicts.md
-                    - name: 除外
+                    - name: Excludes
                       href: web-service-reference/excludes.md
                     - name: ExecutedSearchScope
                       href: web-service-reference/executedsearchscope.md
@@ -1523,7 +1523,7 @@
                       href: web-service-reference/fieldorder.md
                     - name: FieldURI
                       href: web-service-reference/fielduri.md
-                    - name: FieldUri (ルール)
+                    - name: FieldUri (Rule)
                       href: web-service-reference/fielduri-rule.md
                     - name: FieldURIOrConstant
                       href: web-service-reference/fielduriorconstant.md
@@ -1589,7 +1589,7 @@
                       href: web-service-reference/firstname.md
                     - name: FirstOccurrence
                       href: web-service-reference/firstoccurrence.md
-                    - name: フラグ
+                    - name: Flag
                       href: web-service-reference/flag.md
                     - name: FlaggedForAction
                       href: web-service-reference/flaggedforaction.md
@@ -1603,7 +1603,7 @@
                       href: web-service-reference/folderchanges.md
                     - name: FolderClass
                       href: web-service-reference/folderclass.md
-                    - name: フォルダー Id
+                    - name: FolderId
                       href: web-service-reference/folderid.md
                     - name: FolderIds
                       href: web-service-reference/folderids.md
@@ -1611,9 +1611,9 @@
                       href: web-service-reference/folderids-arrayoffolderidtype.md
                     - name: FolderName
                       href: web-service-reference/foldername.md
-                    - name: 表示
+                    - name: FolderNames
                       href: web-service-reference/foldernames.md
-                    - name: フォルダー
+                    - name: Folders
                       href: web-service-reference/folders-ex15websvcsotherref.md
                     - name: FolderShape
                       href: web-service-reference/foldershape.md
@@ -1653,13 +1653,13 @@
                       href: web-service-reference/fromaddresses.md
                     - name: FromConnectedAccounts
                       href: web-service-reference/fromconnectedaccounts.md
-                    - name: '[開始日'
+                    - name: FromDate
                       href: web-service-reference/fromdate.md
                     - name: FullName
                       href: web-service-reference/fullname.md
                     - name: Generation
                       href: web-service-reference/generation.md
-                    - name: 世代
+                    - name: Generations
                       href: web-service-reference/generations.md
                     - name: GetAppManifests
                       href: web-service-reference/getappmanifests.md
@@ -1903,9 +1903,9 @@
                       href: web-service-reference/globalunreadcount.md
                     - name: GoodThreshold
                       href: web-service-reference/goodthreshold.md
-                    - name: グループ (ArrayOfFederatedDirectoryGroupsType)
+                    - name: Group (ArrayOfFederatedDirectoryGroupsType)
                       href: web-service-reference/group-arrayoffederateddirectorygroupstype.md
-                    - name: グループ (MailboxAssociationType)
+                    - name: Group (MailboxAssociationType)
                       href: web-service-reference/group-mailboxassociationtype.md
                     - name: GroupAttendeeConflictData
                       href: web-service-reference/groupattendeeconflictdata.md
@@ -1913,7 +1913,7 @@
                       href: web-service-reference/groupby.md
                     - name: GroupedItems
                       href: web-service-reference/groupeditems.md
-                    - name: グループ Id
+                    - name: GroupId
                       href: web-service-reference/groupid.md
                     - name: GroupIdentifier
                       href: web-service-reference/groupidentifier.md
@@ -1925,11 +1925,11 @@
                       href: web-service-reference/groupingaction.md
                     - name: GroupingAction (ItemType)
                       href: web-service-reference/groupingaction-itemtype.md
-                    - name: グループ
+                    - name: Groups
                       href: web-service-reference/groups.md
-                    - name: グループ (ArrayOfFederatedDirectoryGroupsType)
+                    - name: Groups (ArrayOfFederatedDirectoryGroupsType)
                       href: web-service-reference/groups-arrayoffederateddirectorygroupstype.md
-                    - name: グループ (ArrayOfImGroupType)
+                    - name: Groups (ArrayOfImGroupType)
                       href: web-service-reference/groups-arrayofimgrouptype.md
                     - name: GroupSids
                       href: web-service-reference/groupsids.md
@@ -1939,9 +1939,9 @@
                       href: web-service-reference/grouptype-federateddirectorygrouptype.md
                     - name: GroupType (MasterMailboxType)
                       href: web-service-reference/grouptype-mastermailboxtype.md
-                    - name: GUID
+                    - name: Guid
                       href: web-service-reference/guid-ex15websvcsotherref.md
-                    - name: 添付ファイルあり
+                    - name: HasAttachment
                       href: web-service-reference/hasattachment.md
                     - name: HasAttachments
                       href: web-service-reference/hasattachments.md
@@ -1967,7 +1967,7 @@
                       href: web-service-reference/hiddenrecipient.md
                     - name: HighlightTerms
                       href: web-service-reference/highlightterms.md
-                    - name: 趣味
+                    - name: Hobbies
                       href: web-service-reference/hobbies.md
                     - name: HoldId
                       href: web-service-reference/holdid.md
@@ -1979,7 +1979,7 @@
                       href: web-service-reference/homecitysortkey.md
                     - name: HomeFaxes
                       href: web-service-reference/homefaxes.md
-                    - name: ホームページ
+                    - name: HomePage
                       href: web-service-reference/homepage.md
                     - name: HomePhones
                       href: web-service-reference/homephones.md
@@ -1989,27 +1989,27 @@
                       href: web-service-reference/iconindex.md
                     - name: ID
                       href: web-service-reference/id.md
-                    - name: ID (文字列)
+                    - name: ID (String)
                       href: web-service-reference/id-string.md
                     - name: Id (EmailAddressType)
                       href: web-service-reference/id-emailaddresstype.md
                     - name: ID (ItemIdType)
                       href: web-service-reference/id-itemidtype.md
-                    - name: Id (タイムゾーン)
+                    - name: Id (TimeZone)
                       href: web-service-reference/id-timezone.md
-                    - name: Identity
+                    - name: ID
                       href: web-service-reference/identity.md
                     - name: IdentityDetails
                       href: web-service-reference/identitydetails.md
                     - name: IdOfFolderToShare
                       href: web-service-reference/idoffoldertoshare.md
-                    - name: Id
+                    - name: Ids
                       href: web-service-reference/ids.md
-                    - name: 無視します。
+                    - name: Ignore
                       href: web-service-reference/ignore.md
                     - name: ImAddress (NonEmptyStringType)
                       href: web-service-reference/imaddress-nonemptystringtype.md
-                    - name: ImAddress (文字列)
+                    - name: ImAddress (String)
                       href: web-service-reference/imaddress-string.md
                     - name: ImAddresses
                       href: web-service-reference/imaddresses.md
@@ -2067,7 +2067,7 @@
                       href: web-service-reference/individualattendeeconflictdata.md
                     - name: Initials
                       href: web-service-reference/initials.md
-                    - name: 頭文字 (ArrayOfStringAttributedValuesType)
+                    - name: Initials (ArrayOfStringAttributedValuesType)
                       href: web-service-reference/initials-arrayofstringattributedvaluestype.md
                     - name: InlineImageUrlTemplate
                       href: web-service-reference/inlineimageurltemplate.md
@@ -2085,11 +2085,11 @@
                       href: web-service-reference/instancekey.md
                     - name: IntendedFreeBusyStatus
                       href: web-service-reference/intendedfreebusystatus.md
-                    - name: インテント
+                    - name: Intent
                       href: web-service-reference/intent.md
                     - name: InternalDomains (SmtpDomainList)
                       href: web-service-reference/internaldomains-smtpdomainlist.md
-                    - name: Internalid など
+                    - name: InternalId
                       href: web-service-reference/internalid.md
                     - name: InternalReply
                       href: web-service-reference/internalreply.md
@@ -2103,7 +2103,7 @@
                       href: web-service-reference/interval.md
                     - name: InvalidRecipient
                       href: web-service-reference/invalidrecipient.md
-                    - name: InvalidRecipient (メール ヒント)
+                    - name: InvalidRecipient (MailTips)
                       href: web-service-reference/invalidrecipient-mailtips.md
                     - name: InvalidRecipients
                       href: web-service-reference/invalidrecipients.md
@@ -2255,7 +2255,7 @@
                       href: web-service-reference/iswritable.md
                     - name: Item
                       href: web-service-reference/item.md
-                    - name: 項目 (UploadItemType)
+                    - name: Item (UploadItemType)
                       href: web-service-reference/item-uploaditemtype.md
                     - name: ItemAttachment
                       href: web-service-reference/itemattachment.md
@@ -2279,17 +2279,17 @@
                       href: web-service-reference/itemid.md
                     - name: ItemIds
                       href: web-service-reference/itemids.md
-                    - name: Itemid (NonEmptyArrayOfItemIdsType)
+                    - name: ItemIds (NonEmptyArrayOfItemIdsType)
                       href: web-service-reference/itemids-nonemptyarrayofitemidstype.md
-                    - name: アイテム
+                    - name: Items
                       href: web-service-reference/items.md
-                    - name: アイテム (ArrayOfNonIndexableItemDetailsType)
+                    - name: Items (ArrayOfNonIndexableItemDetailsType)
                       href: web-service-reference/items-arrayofnonindexableitemdetailstype.md
-                    - name: アイテム (ArrayOfSearchPreviewItemsType)
+                    - name: Items (ArrayOfSearchPreviewItemsType)
                       href: web-service-reference/items-arrayofsearchpreviewitemstype.md
-                    - name: アイテム (NonEmptyArrayOfAllItemsType)
+                    - name: Items (NonEmptyArrayOfAllItemsType)
                       href: web-service-reference/items-nonemptyarrayofallitemstype.md
-                    - name: アイテム (NonEmptyArrayOfUploadItemsType)
+                    - name: Items (NonEmptyArrayOfUploadItemsType)
                       href: web-service-reference/items-nonemptyarrayofuploaditemstype.md
                     - name: ItemShape
                       href: web-service-reference/itemshape.md
@@ -2307,11 +2307,11 @@
                       href: web-service-reference/joinonlinemeetingurl.md
                     - name: JournalFolderPermissionLevel
                       href: web-service-reference/journalfolderpermissionlevel.md
-                    - name: 簡単
+                    - name: KeepProperties
                       href: web-service-reference/keepproperties.md
-                    - name: キーワード
+                    - name: Keyword
                       href: web-service-reference/keyword.md
-                    - name: キーワード
+                    - name: Keywords
                       href: web-service-reference/keywords-ex15websvcsotherref.md
                     - name: KeywordStat
                       href: web-service-reference/keywordstat.md
@@ -2319,9 +2319,9 @@
                       href: web-service-reference/keywordstatisticssearchresult.md
                     - name: KeywordStats
                       href: web-service-reference/keywordstats.md
-                    - name: 言語
+                    - name: Language
                       href: web-service-reference/language.md
-                    - name: 言語 (DiscoverySearchConfigurationType)
+                    - name: Language (DiscoverySearchConfigurationType)
                       href: web-service-reference/language-discoverysearchconfigurationtype.md
                     - name: LargeAudienceCap
                       href: web-service-reference/largeaudiencecap.md
@@ -2353,11 +2353,11 @@
                       href: web-service-reference/legacyfreebusystatus.md
                     - name: LobbyBypass
                       href: web-service-reference/lobbybypass.md
-                    - name: 場所
+                    - name: Location
                       href: web-service-reference/location.md
-                    - name: 場所 (CalendarEventDetails)
+                    - name: Location (CalendarEventDetails)
                       href: web-service-reference/location-calendareventdetails.md
-                    - name: 場所 (ReminderMessageDataType)
+                    - name: Location (ReminderMessageDataType)
                       href: web-service-reference/location-remindermessagedatatype.md
                     - name: LocationBasedStateDefinition
                       href: web-service-reference/locationbasedstatedefinition.md
@@ -2369,13 +2369,13 @@
                       href: web-service-reference/locationuri.md
                     - name: Longitude
                       href: web-service-reference/longitude.md
-                    - name: メールボックス
+                    - name: Mailbox
                       href: web-service-reference/mailbox.md
-                    - name: メールボックス (文字列)
+                    - name: Mailbox (string)
                       href: web-service-reference/mailbox-string.md
-                    - name: メールボックス (可用性)
+                    - name: Mailbox (Availability)
                       href: web-service-reference/mailbox-availability.md
-                    - name: メールボックス (PreviewItemMailboxType)
+                    - name: Mailbox (PreviewItemMailboxType)
                       href: web-service-reference/mailbox-previewitemmailboxtype.md
                     - name: MailboxCulture
                       href: web-service-reference/mailboxculture.md
@@ -2383,11 +2383,11 @@
                       href: web-service-reference/mailboxdata.md
                     - name: MailboxDataArray
                       href: web-service-reference/mailboxdataarray.md
-                    - name: メールボックス (ArrayOfStringsType)
+                    - name: Mailboxes (ArrayOfStringsType)
                       href: web-service-reference/mailboxes-arrayofstringstype.md
-                    - name: メールボックス (ArrayOfUserMailboxesType)
+                    - name: Mailboxes (ArrayOfUserMailboxesType)
                       href: web-service-reference/mailboxes-arrayofusermailboxestype.md
-                    - name: メールボックス (NonEmptyArrayOfLegacyDNsType)
+                    - name: Mailboxes (NonEmptyArrayOfLegacyDNsType)
                       href: web-service-reference/mailboxes-nonemptyarrayoflegacydnstype.md
                     - name: MailboxFull
                       href: web-service-reference/mailboxfull.md
@@ -2419,7 +2419,7 @@
                       href: web-service-reference/mailboxtype.md
                     - name: MailboxType (MasterMailboxType)
                       href: web-service-reference/mailboxtype-mastermailboxtype.md
-                    - name: メール ヒント
+                    - name: MailTips
                       href: web-service-reference/mailtips.md
                     - name: MailTipsConfiguration (MailTipsServiceConfiguration)
                       href: web-service-reference/mailtipsconfiguration-mailtipsserviceconfiguration.md
@@ -2441,13 +2441,13 @@
                       href: web-service-reference/managementrole.md
                     - name: Manager
                       href: web-service-reference/manager.md
-                    - name: マネージャー
+                    - name: Managers
                       href: web-service-reference/managers.md
                     - name: ManagerMailbox
                       href: web-service-reference/managermailbox.md
-                    - name: マニフェスト
+                    - name: Manifest
                       href: web-service-reference/manifest.md
-                    - name: マニフェスト
+                    - name: Manifests
                       href: web-service-reference/manifests.md
                     - name: MarkAllItemsAsRead
                       href: web-service-reference/markallitemsasread.md
@@ -2511,11 +2511,11 @@
                       href: web-service-reference/meetingtimezone.md
                     - name: MeetingWorkspaceUrl
                       href: web-service-reference/meetingworkspaceurl.md
-                    - name: メンバー
+                    - name: Member
                       href: web-service-reference/member-ex15websvcsotherref.md
-                    - name: メンバー
+                    - name: Members
                       href: web-service-reference/members.md
-                    - name: メンバー (MemberListType)
+                    - name: Members (MemberListType)
                       href: web-service-reference/members-memberlisttype.md
                     - name: MemberCorrelationKey
                       href: web-service-reference/membercorrelationkey.md
@@ -2525,15 +2525,15 @@
                       href: web-service-reference/mergedfreebusyintervalinminutes.md
                     - name: Message
                       href: web-service-reference/message-ex15websvcsotherref.md
-                    - name: メッセージ (可用性)
+                    - name: Message (Availability)
                       href: web-service-reference/message-availability.md
                     - name: MessageClassifications
                       href: web-service-reference/messageclassifications.md
                     - name: MessageCount
                       href: web-service-reference/messagecount.md
-                    - name: メッセージ Id
+                    - name: MessageId
                       href: web-service-reference/messageid.md
-                    - name: メッセージ テキスト
+                    - name: MessageText
                       href: web-service-reference/messagetext.md
                     - name: MessageTrackingReport
                       href: web-service-reference/messagetrackingreport.md
@@ -2547,7 +2547,7 @@
                       href: web-service-reference/messagetypes.md
                     - name: MessageXml
                       href: web-service-reference/messagexml.md
-                    - name: メタデータ
+                    - name: Metadata
                       href: web-service-reference/metadata-ex15websvcsotherref.md
                     - name: MiddleName
                       href: web-service-reference/middlename.md
@@ -2577,13 +2577,13 @@
                       href: web-service-reference/modifyrecipientsallowed.md
                     - name: Month
                       href: web-service-reference/month.md
-                    - name: 月 (タイム ゾーンの切り替え)
+                    - name: Month (タイム ゾーン切り替え)
                       href: web-service-reference/month-time-zone-transition.md
-                    - name: 月 (定期的なアイテム)
+                    - name: Month (定期的なアイテム)
                       href: web-service-reference/month-item-recurrence.md
                     - name: MonthlyRegeneration
                       href: web-service-reference/monthlyregeneration.md
-                    - name: イベント
+                    - name: MoreEvents
                       href: web-service-reference/moreevents.md
                     - name: MovedEvent
                       href: web-service-reference/movedevent.md
@@ -2609,17 +2609,17 @@
                       href: web-service-reference/mustdisplaycomment.md
                     - name: MyResponseType
                       href: web-service-reference/myresponsetype.md
-                    - name: 名 (AttachmentType)
+                    - name: Name (AttachmentType)
                       href: web-service-reference/name-attachmenttype.md
-                    - name: 名 (EmailAddressType)
+                    - name: Name (EmailAddressType)
                       href: web-service-reference/name-emailaddresstype.md
-                    - name: 名 (EmailAddress)
+                    - name: Name (EmailAddress)
                       href: web-service-reference/name-emailaddress.md
-                    - name: 名 (ExtendedAttributeType)
+                    - name: Name (ExtendedAttributeType)
                       href: web-service-reference/name-extendedattributetype.md
-                    - name: 名前 (メッセージの追跡)
+                    - name: Name (メッセージ追跡)
                       href: web-service-reference/name-message-tracking.md
-                    - name: 名 (文字列)
+                    - name: Name (文字列)
                       href: web-service-reference/name-string.md
                     - name: NetShowUrl
                       href: web-service-reference/netshowurl.md
@@ -2635,9 +2635,9 @@
                       href: web-service-reference/nextpredictedaction.md
                     - name: NextPredictedAction (ItemType)
                       href: web-service-reference/nextpredictedaction-itemtype.md
-                    - name: ニックネーム
+                    - name: Nickname
                       href: web-service-reference/nickname.md
-                    - name: ニックネーム
+                    - name: Nicknames
                       href: web-service-reference/nicknames.md
                     - name: NoEndRecurrence
                       href: web-service-reference/noendrecurrence.md
@@ -2655,13 +2655,13 @@
                       href: web-service-reference/normalizedbodytype.md
                     - name: Not
                       href: web-service-reference/not.md
-                    - name: ノート (連絡先)
+                    - name: Notes (Contact)
                       href: web-service-reference/notes-contact.md
                     - name: NotesFolderPermissionLevel
                       href: web-service-reference/notesfolderpermissionlevel.md
-                    - name: 通知
+                    - name: Notification
                       href: web-service-reference/notification-ex15websvcsotherref.md
-                    - name: 通知
+                    - name: Notifications
                       href: web-service-reference/notifications.md
                     - name: NotSentToMe
                       href: web-service-reference/notsenttome.md
@@ -2679,9 +2679,9 @@
                       href: web-service-reference/numberofmemberswithnodata.md
                     - name: NumberOfOccurrences
                       href: web-service-reference/numberofoccurrences.md
-                    - name: 出現
+                    - name: Occurrence
                       href: web-service-reference/occurrence.md
-                    - name: 発生 (タイム ゾーンの切り替え)
+                    - name: Occurrence (タイム ゾーン切り替え)
                       href: web-service-reference/occurrence-time-zone-transition.md
                     - name: OccurrenceDate
                       href: web-service-reference/occurrencedate.md
@@ -2691,7 +2691,7 @@
                       href: web-service-reference/officelocation.md
                     - name: OfficeLocations
                       href: web-service-reference/officelocations.md
-                    - name: オフセット
+                    - name: Offset
                       href: web-service-reference/offset.md
                     - name: OldFolderId
                       href: web-service-reference/oldfolderid.md
@@ -2707,7 +2707,7 @@
                       href: web-service-reference/oofstate.md
                     - name: OpenAsAdminOrSystemService
                       href: web-service-reference/openasadminorsystemservice.md
-                    - name: 操作
+                    - name: Operations
                       href: web-service-reference/operations.md
                     - name: OperationIndex
                       href: web-service-reference/operationindex.md
@@ -2757,7 +2757,7 @@
                       href: web-service-reference/pageitemreference.md
                     - name: PageItemSize
                       href: web-service-reference/pageitemsize.md
-                    - name: ポケットベル
+                    - name: Pagers
                       href: web-service-reference/pagers.md
                     - name: PageSize
                       href: web-service-reference/pagesize.md
@@ -2777,11 +2777,11 @@
                       href: web-service-reference/parentitemid.md
                     - name: PasswordExpirationDate
                       href: web-service-reference/passwordexpirationdate.md
-                    - name: パス
+                    - name: Path
                       href: web-service-reference/path.md
                     - name: PendingMailTips
                       href: web-service-reference/pendingmailtips.md
-                    - name: 複数のユーザー
+                    - name: People
                       href: web-service-reference/people.md
                     - name: PeopleUrl (FederatedDirectoryGroupType)
                       href: web-service-reference/peopleurl-federateddirectorygrouptype.md
@@ -2791,23 +2791,23 @@
                       href: web-service-reference/performreminderaction.md
                     - name: PerformReminderActionResponse
                       href: web-service-reference/performreminderactionresponse.md
-                    - name: ピリオド
+                    - name: Period
                       href: web-service-reference/period.md
-                    - name: 期間
+                    - name: Periods
                       href: web-service-reference/periods.md
                     - name: PermanentDelete
                       href: web-service-reference/permanentdelete.md
-                    - name: アクセス許可
+                    - name: Permission
                       href: web-service-reference/permission.md
                     - name: PermissionLevel
                       href: web-service-reference/permissionlevel.md
-                    - name: 権限
+                    - name: Permissions
                       href: web-service-reference/permissions.md
                     - name: PermissionSet (PermissionSetType)
                       href: web-service-reference/permissionset-permissionsettype.md
                     - name: PermissionSet (CalendarPermissionSetType)
                       href: web-service-reference/permissionset-calendarpermissionsettype.md
-                    - name: ペルソナ
+                    - name: Persona
                       href: web-service-reference/persona.md
                     - name: PersonaId
                       href: web-service-reference/personaid.md
@@ -2815,7 +2815,7 @@
                       href: web-service-reference/personalhomepages.md
                     - name: PersonaObjectStatus
                       href: web-service-reference/personaobjectstatus.md
-                    - name: ペルソナ
+                    - name: Personas
                       href: web-service-reference/personas-ex15websvcsotherref.md
                     - name: PersonaShape
                       href: web-service-reference/personashape.md
@@ -2823,9 +2823,9 @@
                       href: web-service-reference/personatype.md
                     - name: PersonName
                       href: web-service-reference/personname.md
-                    - name: 電話
+                    - name: Phone
                       href: web-service-reference/phone.md
-                    - name: 電話 (PhoneEntityType)
+                    - name: Phone (PhoneEntityType)
                       href: web-service-reference/phone-phoneentitytype.md
                     - name: PhoneCallId
                       href: web-service-reference/phonecallid.md
@@ -2853,7 +2853,7 @@
                       href: web-service-reference/phoneticlastname.md
                     - name: Photo
                       href: web-service-reference/photo.md
-                    - name: 写真 (MasterMailboxType)
+                    - name: Photo (MasterMailboxType)
                       href: web-service-reference/photo-mastermailboxtype.md
                     - name: PhotoUrl
                       href: web-service-reference/photourl.md
@@ -2863,13 +2863,13 @@
                       href: web-service-reference/physicaladdresses.md
                     - name: PictureData
                       href: web-service-reference/picturedata.md
-                    - name: PlayOnPhone (Exchange web サービス)
+                    - name: PlayOnPhone (Exchange Web サービス)
                       href: web-service-reference/playonphone-exchange-web-services.md
                     - name: PlayOnPhoneDialString
                       href: web-service-reference/playonphonedialstring-exchange-web-services.md
                     - name: PlayOnPhoneEnabled
                       href: web-service-reference/playonphoneenabled.md
-                    - name: PlayOnPhoneResponse (Exchange web サービス)
+                    - name: PlayOnPhoneResponse (Exchange Web サービス)
                       href: web-service-reference/playonphoneresponse-exchange-web-services.md
                     - name: PolicyNudgeRulesConfiguration
                       href: web-service-reference/policynudgerulesconfiguration.md
@@ -2881,9 +2881,9 @@
                       href: web-service-reference/portaltext-encryptionconfigurationresponsetype.md
                     - name: PortalText (SetEncryptionConfigurationType)
                       href: web-service-reference/portaltext-setencryptionconfigurationtype.md
-                    - name: 位置
+                    - name: Position
                       href: web-service-reference/position.md
-                    - name: 住所 (PersonaPostalAddressType)
+                    - name: PostalAddress (PersonaPostalAddressType)
                       href: web-service-reference/postaladdress-personapostaladdresstype.md
                     - name: PostalAddressAttributedValue
                       href: web-service-reference/postaladdressattributedvalue.md
@@ -2905,9 +2905,9 @@
                       href: web-service-reference/predictedactionreason.md
                     - name: PredictedActionReasons
                       href: web-service-reference/predictedactionreasons.md
-                    - name: 発表者
+                    - name: Presenters
                       href: web-service-reference/presenters.md
-                    - name: プレビュー
+                    - name: Preview
                       href: web-service-reference/preview-ex15websvcsotherref.md
                     - name: PreviewItemResponseShape
                       href: web-service-reference/previewitemresponseshape.md
@@ -2917,25 +2917,25 @@
                       href: web-service-reference/previouswatermark.md
                     - name: PrimarySmtpAddress
                       href: web-service-reference/primarysmtpaddress.md
-                    - name: PrimarySmtpAddress (文字列)
+                    - name: PrimarySmtpAddress (string)
                       href: web-service-reference/primarysmtpaddress-string.md
                     - name: PrincipalName
                       href: web-service-reference/principalname.md
                     - name: PrintAllowed
                       href: web-service-reference/printallowed.md
-                    - name: 優先度
+                    - name: Priority
                       href: web-service-reference/priority.md
                     - name: ProcessRightAway
                       href: web-service-reference/processrightaway.md
                     - name: Profession
                       href: web-service-reference/profession.md
-                    - name: 職業
+                    - name: Professions
                       href: web-service-reference/professions.md
                     - name: ProgrammaticAccessAllowed
                       href: web-service-reference/programmaticaccessallowed.md
-                    - name: プロパティ (ArrayOfStringsType)
+                    - name: Properties (ArrayOfStringsType)
                       href: web-service-reference/properties-arrayofstringstype.md
-                    - name: プロパティ (ArrayOfTrackingPropertiesType)
+                    - name: Properties (ArrayOfTrackingPropertiesType)
                       href: web-service-reference/properties-arrayoftrackingpropertiestype.md
                     - name: ProposedEnd
                       href: web-service-reference/proposedend.md
@@ -2965,21 +2965,21 @@
                       href: web-service-reference/purportedsender.md
                     - name: PushSubscriptionRequest
                       href: web-service-reference/pushsubscriptionrequest.md
-                    - name: クエリ
+                    - name: Query
                       href: web-service-reference/query.md
-                    - name: クエリ文字列 (QueryStringType)
+                    - name: QueryString (QueryStringType)
                       href: web-service-reference/querystring-querystringtype.md
-                    - name: クエリ文字列 (文字列)
+                    - name: QueryString (String)
                       href: web-service-reference/querystring-string.md
                     - name: RadioPhones
                       href: web-service-reference/radiophones.md
                     - name: Range
                       href: web-service-reference/range.md
-                    - name: 範囲
+                    - name: Ranges
                       href: web-service-reference/ranges.md
                     - name: RawMasterTableXml
                       href: web-service-reference/rawmastertablexml.md
-                    - name: 読み取り
+                    - name: Read
                       href: web-service-reference/read.md
                     - name: ReadFlag
                       href: web-service-reference/readflag.md
@@ -3005,9 +3005,9 @@
                       href: web-service-reference/recipientfilter.md
                     - name: RecipientIs
                       href: web-service-reference/recipientis.md
-                    - name: 受信者 (ArrayOfRecipientsType)
+                    - name: Recipients (ArrayOfRecipientsType)
                       href: web-service-reference/recipients-arrayofrecipientstype.md
-                    - name: 受信者 (ArrayOfSmtpAddressType)
+                    - name: Recipients (ArrayOfSmtpAddressType)
                       href: web-service-reference/recipients-arrayofsmtpaddresstype.md
                     - name: RecipientTrackingEvent
                       href: web-service-reference/recipienttrackingevent.md
@@ -3017,9 +3017,9 @@
                       href: web-service-reference/recognitionid.md
                     - name: RecognitionResult
                       href: web-service-reference/recognitionresult.md
-                    - name: 定期的なアイテム (RecurrenceType)
+                    - name: Recurrence (RecurrenceType)
                       href: web-service-reference/recurrence-recurrencetype.md
-                    - name: 定期的な予定 (TaskRecurrenceType)
+                    - name: Recurrence (TaskRecurrenceType)
                       href: web-service-reference/recurrence-taskrecurrencetype.md
                     - name: RecurrenceId
                       href: web-service-reference/recurrenceid.md
@@ -3035,17 +3035,17 @@
                       href: web-service-reference/recurringmasteritemidranges.md
                     - name: ReferenceAttachment
                       href: web-service-reference/referenceattachment.md
-                    - name: ReferenceAttachmentType 複合型
+                    - name: ReferenceAttachmentType complexType
                       href: web-service-reference/referenceattachmenttype-complextype-ews.md
                     - name: RedirectToRecipients
                       href: web-service-reference/redirecttorecipients.md
-                    - name: 参照 id が
+                    - name: ReferenceId
                       href: web-service-reference/referenceid.md
                     - name: ReferenceItemId
                       href: web-service-reference/referenceitemid.md
-                    - name: 参照資料
+                    - name: References
                       href: web-service-reference/references.md
-                    - name: 絞り込み条件
+                    - name: Refiner
                       href: web-service-reference/refiner.md
                     - name: Refiners
                       href: web-service-reference/refiners.md
@@ -3063,7 +3063,7 @@
                       href: web-service-reference/relativeyearlyrecurrence.md
                     - name: RelevanceScore
                       href: web-service-reference/relevancescore.md
-                    - name: アラーム
+                    - name: Reminder
                       href: web-service-reference/reminder.md
                     - name: ReminderDueBy
                       href: web-service-reference/reminderdueby.md
@@ -3081,7 +3081,7 @@
                       href: web-service-reference/reminderminutesbeforestart.md
                     - name: ReminderNextTime
                       href: web-service-reference/remindernexttime.md
-                    - name: アラーム
+                    - name: Reminders
                       href: web-service-reference/reminders.md
                     - name: ReminderText
                       href: web-service-reference/remindertext.md
@@ -3135,11 +3135,11 @@
                       href: web-service-reference/requestedview.md
                     - name: RequestServerVersion
                       href: web-service-reference/requestserverversion.md
-                    - name: 修飾子の一覧
+                    - name: RequestType
                       href: web-service-reference/requesttype.md
                     - name: RequiredAttendees
                       href: web-service-reference/requiredattendees.md
-                    - name: 解決策
+                    - name: Resolution
                       href: web-service-reference/resolution.md
                     - name: ResolutionSet
                       href: web-service-reference/resolutionset.md
@@ -3149,7 +3149,7 @@
                       href: web-service-reference/resolvenamesresponse.md
                     - name: ResolveNamesResponseMessage
                       href: web-service-reference/resolvenamesresponsemessage.md
-                    - name: リソース
+                    - name: Resources
                       href: web-service-reference/resources.md
                     - name: ResponseCode
                       href: web-service-reference/responsecode.md
@@ -3173,9 +3173,9 @@
                       href: web-service-reference/restrictedgroupidentifier.md
                     - name: RestrictedGroupSids
                       href: web-service-reference/restrictedgroupsids.md
-                    - name: 制限
+                    - name: Restriction
                       href: web-service-reference/restriction.md
-                    - name: 結果
+                    - name: ResultType
                       href: web-service-reference/resulttype.md
                     - name: RetentionAction
                       href: web-service-reference/retentionaction.md
@@ -3203,15 +3203,15 @@
                       href: web-service-reference/rightsmanagementlicensedata.md
                     - name: RMSTemplateId
                       href: web-service-reference/rmstemplateid.md
-                    - name: ロール
+                    - name: Role
                       href: web-service-reference/role.md
-                    - name: ルーム
+                    - name: Room
                       href: web-service-reference/room.md
                     - name: RoomList
                       href: web-service-reference/roomlist.md
                     - name: RoomLists
                       href: web-service-reference/roomlists.md
-                    - name: ルーム
+                    - name: Rooms
                       href: web-service-reference/rooms.md
                     - name: RootAddress
                       href: web-service-reference/rootaddress.md
@@ -3227,27 +3227,27 @@
                       href: web-service-reference/routingtype-emailaddress.md
                     - name: Rule
                       href: web-service-reference/rule.md
-                    - name: ルール (RuleType)
+                    - name: Rule (RuleType)
                       href: web-service-reference/rule-ruletype.md
-                    - name: 規則 Id
+                    - name: RuleId
                       href: web-service-reference/ruleid.md
                     - name: RuleOperationError
                       href: web-service-reference/ruleoperationerror.md
                     - name: RuleOperationErrors
                       href: web-service-reference/ruleoperationerrors.md
-                    - name: 'ルール '
+                    - name: 'Rules '
                       href: web-service-reference/rules-ex15websvcsotherref.md
                     - name: SavedItemFolderId
                       href: web-service-reference/saveditemfolderid.md
                     - name: SchemaVersionSupported
                       href: web-service-reference/schemaversionsupported.md
-                    - name: 学校
+                    - name: Schools
                       href: web-service-reference/schools.md
-                    - name: スコープ (ClientAccessTokenRequestType)
+                    - name: Scope (ClientAccessTokenRequestType)
                       href: web-service-reference/scope-clientaccesstokenrequesttype.md
-                    - name: スコープ (HighlightTermType)
+                    - name: Scope (HighlightTermType)
                       href: web-service-reference/scope-highlighttermtype.md
-                    - name: スコープ (NonEmptyStringType)
+                    - name: Scope (NonEmptyStringType)
                       href: web-service-reference/scope-nonemptystringtype.md
                     - name: SearchableMailbox
                       href: web-service-reference/searchablemailbox.md
@@ -3291,13 +3291,13 @@
                       href: web-service-reference/seektoconditionpageitemview.md
                     - name: Sender
                       href: web-service-reference/sender.md
-                    - name: 送信者 (EmailAddressType)
+                    - name: Sender (EmailAddressType)
                       href: web-service-reference/sender-emailaddresstype.md
-                    - name: 送信者 (文字列)
+                    - name: Sender (string)
                       href: web-service-reference/sender-string.md
                     - name: SenderDepartments
                       href: web-service-reference/senderdepartments.md
-                    - name: 送信者
+                    - name: Senders
                       href: web-service-reference/senders.md
                     - name: SenderSmtpAddress
                       href: web-service-reference/sendersmtpaddress.md
@@ -3335,7 +3335,7 @@
                       href: web-service-reference/senttoorccme.md
                     - name: SerializedSecurityContext
                       href: web-service-reference/serializedsecuritycontext.md
-                    - name: サーバー (MessageTracking)
+                    - name: Server (MessageTracking)
                       href: web-service-reference/server-messagetracking.md
                     - name: ServerHint
                       href: web-service-reference/serverhint.md
@@ -3397,7 +3397,7 @@
                       href: web-service-reference/sharingeffectiverights-permissionreadaccesstype.md
                     - name: SharingFolderId
                       href: web-service-reference/sharingfolderid.md
-                    - name: 共有
+                    - name: SharingSecurity
                       href: web-service-reference/sharingsecurity.md
                     - name: ShowExternalRecipientCount
                       href: web-service-reference/showexternalrecipientcount.md
@@ -3407,9 +3407,9 @@
                       href: web-service-reference/sipresponsecode.md
                     - name: SIPResponseText
                       href: web-service-reference/sipresponsetext.md
-                    - name: サイズ
+                    - name: Size
                       href: web-service-reference/size.md
-                    - name: サイズ (長)
+                    - name: Size (long)
                       href: web-service-reference/size-long.md
                     - name: SizeRequested
                       href: web-service-reference/sizerequested.md
@@ -3419,11 +3419,11 @@
                       href: web-service-reference/smtpaddress-federateddirectorygrouptype.md
                     - name: SmtpAddress (MasterMailboxType)
                       href: web-service-reference/smtpaddress-mastermailboxtype.md
-                    - name: 並べ替え
+                    - name: SortBy
                       href: web-service-reference/sortby.md
                     - name: SortOrder
                       href: web-service-reference/sortorder.md
-                    - name: 並べ替え順序 (ConversationNodeSortOrder)
+                    - name: SortOrder (ConversationNodeSortOrder)
                       href: web-service-reference/sortorder-conversationnodesortorder.md
                     - name: SortValue
                       href: web-service-reference/sortvalue.md
@@ -3437,17 +3437,17 @@
                       href: web-service-reference/spousename.md
                     - name: SpouseNames
                       href: web-service-reference/spousenames.md
-                    - name: 標準
+                    - name: Standard
                       href: web-service-reference/standard.md
                     - name: StandardGroupBy
                       href: web-service-reference/standardgroupby.md
                     - name: StandardTime
                       href: web-service-reference/standardtime.md
-                    - name: 開始
+                    - name: Start
                       href: web-service-reference/start.md
                     - name: StartDate
                       href: web-service-reference/startdate.md
-                    - name: 開始日 (繰り返し)
+                    - name: StartDate (Recurrence)
                       href: web-service-reference/startdate-recurrence.md
                     - name: StartDateTime
                       href: web-service-reference/startdatetime.md
@@ -3457,7 +3457,7 @@
                       href: web-service-reference/startfindingalspeechrecognitionresponse.md
                     - name: StartTime
                       href: web-service-reference/starttime.md
-                    - name: 開始時刻 (ReminderMessageDataType)
+                    - name: StartTime (ReminderMessageDataType)
                       href: web-service-reference/starttime-remindermessagedatatype.md
                     - name: StartTimeInMinutes
                       href: web-service-reference/starttimeinminutes.md
@@ -3469,15 +3469,15 @@
                       href: web-service-reference/startwallclock.md
                     - name: State
                       href: web-service-reference/state-ex15websvcsotherref.md
-                    - name: 状態 (TeamMailboxLifecycleStateType)
+                    - name: State (TeamMailboxLifecycleStateType)
                       href: web-service-reference/state-teammailboxlifecyclestatetype.md
                     - name: StateDefinition
                       href: web-service-reference/statedefinition.md
                     - name: Status
                       href: web-service-reference/status.md
-                    - name: 状態 (HoldStatusType)
+                    - name: Status (HoldStatusType)
                       href: web-service-reference/status-holdstatustype.md
-                    - name: 状態 (MemberStatusType)
+                    - name: Status (MemberStatusType)
                       href: web-service-reference/status-memberstatustype.md
                     - name: StatusDescription
                       href: web-service-reference/statusdescription.md
@@ -3501,29 +3501,29 @@
                       href: web-service-reference/stringarrayattributedvalue.md
                     - name: StringAttributedValue
                       href: web-service-reference/stringattributedvalue.md
-                    - name: 件名 (CalendarEventDetails)
+                    - name: Subject (CalendarEventDetails)
                       href: web-service-reference/subject-calendareventdetails.md
-                    - name: 件名
+                    - name: Subject
                       href: web-service-reference/subject.md
                     - name: SubmittedTime
                       href: web-service-reference/submittedtime.md
                     - name: SubmitTime
                       href: web-service-reference/submittime.md
-                    - name: 購読
+                    - name: Subscribe
                       href: web-service-reference/subscribe.md
                     - name: SubscribeResponse
                       href: web-service-reference/subscriberesponse.md
                     - name: SubscribeResponseMessage
                       href: web-service-reference/subscriberesponsemessage.md
-                    - name: サブスクリプション Id (GetEvents)
+                    - name: SubscriptionId (GetEvents)
                       href: web-service-reference/subscriptionid-getevents.md
-                    - name: サブスクリプション Id (GetStreamingEvents)
+                    - name: SubscriptionId (GetStreamingEvents)
                       href: web-service-reference/subscriptionid-getstreamingevents.md
                     - name: SubscriptionStatus
                       href: web-service-reference/subscriptionstatus.md
                     - name: Suffix
                       href: web-service-reference/suffix.md
-                    - name: 提案
+                    - name: Suggestion
                       href: web-service-reference/suggestion.md
                     - name: SuggestionArray
                       href: web-service-reference/suggestionarray.md
@@ -3543,7 +3543,7 @@
                       href: web-service-reference/suppressreadreceipts.md
                     - name: Surname
                       href: web-service-reference/surname.md
-                    - name: 姓
+                    - name: Surnames
                       href: web-service-reference/surnames.md
                     - name: SyncFolderHierarchy
                       href: web-service-reference/syncfolderhierarchy.md
@@ -3561,11 +3561,11 @@
                       href: web-service-reference/syncfolderitemsresponsemessage.md
                     - name: SyncScope
                       href: web-service-reference/syncscope.md
-                    - name: 同期状態
+                    - name: SyncState
                       href: web-service-reference/syncstate-ex15websvcsotherref.md
-                    - name: 同期状態 (base64Binary)
+                    - name: SyncState (base64Binary)
                       href: web-service-reference/syncstate-base64binary.md
-                    - name: タスク
+                    - name: Task
                       href: web-service-reference/task.md
                     - name: TasksFolder
                       href: web-service-reference/tasksfolder.md
@@ -3589,37 +3589,37 @@
                       href: web-service-reference/templatename.md
                     - name: TentativelyAcceptItem
                       href: web-service-reference/tentativelyacceptitem.md
-                    - name: 用語
+                    - name: Term
                       href: web-service-reference/term.md
                     - name: TextBody
                       href: web-service-reference/textbody.md
-                    - name: 時刻型 (Time)
+                    - name: Time
                       href: web-service-reference/time.md
-                    - name: 時間 (TimeChangeType)
+                    - name: Time (TimeChangeType)
                       href: web-service-reference/time-timechangetype.md
                     - name: TimeOffset
                       href: web-service-reference/timeoffset.md
                     - name: Timeout
                       href: web-service-reference/timeout.md
-                    - name: タイムアウト (時間)
+                    - name: Timeout (duration)
                       href: web-service-reference/timeout-duration.md
-                    - name: タイムスタンプ
+                    - name: TimeStamp
                       href: web-service-reference/timestamp.md
-                    - name: 時間
+                    - name: TimeWindow
                       href: web-service-reference/timewindow.md
-                    - name: タイムゾーン (可用性)
+                    - name: TimeZone (Availability)
                       href: web-service-reference/timezone-availability.md
-                    - name: タイムゾーン (アイテム)
+                    - name: TimeZone (Item)
                       href: web-service-reference/timezone-item.md
                     - name: TimeZoneContext
                       href: web-service-reference/timezonecontext.md
-                    - name: タイム
+                    - name: TimeZoneDefinition
                       href: web-service-reference/timezonedefinition.md
                     - name: TimeZoneDefinitions
                       href: web-service-reference/timezonedefinitions.md
                     - name: Title
                       href: web-service-reference/title.md
-                    - name: タイトル
+                    - name: Titles
                       href: web-service-reference/titles.md
                     - name: To
                       href: web-service-reference/to.md
@@ -3627,11 +3627,11 @@
                       href: web-service-reference/todate.md
                     - name: ToFolderId
                       href: web-service-reference/tofolderid.md
-                    - name: トークン
+                    - name: Token
                       href: web-service-reference/token.md
-                    - name: トークン (ClientAccessTokenType)
+                    - name: Token (ClientAccessTokenType)
                       href: web-service-reference/token-clientaccesstokentype.md
-                    - name: トークン (文字列)
+                    - name: Token (String)
                       href: web-service-reference/token-string.md
                     - name: TokenRequest
                       href: web-service-reference/tokenrequest.md
@@ -3661,9 +3661,9 @@
                       href: web-service-reference/totalwork.md
                     - name: TrackingPropertyType
                       href: web-service-reference/trackingpropertytype.md
-                    - name: 遷移
+                    - name: Transition
                       href: web-service-reference/transition.md
-                    - name: 遷移
+                    - name: Transitions
                       href: web-service-reference/transitions.md
                     - name: TransitionsGroup
                       href: web-service-reference/transitionsgroup.md
@@ -3677,11 +3677,11 @@
                       href: web-service-reference/ttl-clientaccesstokentypetype.md
                     - name: TTYTDDPhoneNumbers
                       href: web-service-reference/ttytddphonenumbers.md
-                    - name: 型 (ElcFolderType)
+                    - name: Type (ElcFolderType)
                       href: web-service-reference/type-elcfoldertype.md
-                    - name: 型 (文字列)
+                    - name: Type (string)
                       href: web-service-reference/type-string.md
-                    - name: 型 (UserConfiguration)
+                    - name: Type (UserConfiguration)
                       href: web-service-reference/type-userconfiguration.md
                     - name: UID
                       href: web-service-reference/uid.md
@@ -3723,15 +3723,15 @@
                       href: web-service-reference/unreadcount.md
                     - name: UnresolvedEntry
                       href: web-service-reference/unresolvedentry.md
-                    - name: 登録を解除する
+                    - name: Unsubscribe
                       href: web-service-reference/unsubscribe.md
                     - name: UnsubscribeResponse
                       href: web-service-reference/unsubscriberesponse.md
                     - name: UnsubscribeResponseMessage
                       href: web-service-reference/unsubscriberesponsemessage.md
-                    - name: 更新 (集合的)
+                    - name: Update (FolderSync)
                       href: web-service-reference/update-foldersync.md
-                    - name: 更新プログラム (ItemSync)
+                    - name: Update (ItemSync)
                       href: web-service-reference/update-itemsync.md
                     - name: UpdateDelegate
                       href: web-service-reference/updatedelegate.md
@@ -3767,9 +3767,9 @@
                       href: web-service-reference/updatemailboxassociationresponse.md
                     - name: UpdateMailboxAssociationResponseMessage
                       href: web-service-reference/updatemailboxassociationresponsemessage.md
-                    - name: (フォルダー) の更新
+                    - name: Updates (Folder)
                       href: web-service-reference/updates-folder.md
-                    - name: 更新 (アイテム)
+                    - name: Updates (Item)
                       href: web-service-reference/updates-item.md
                     - name: UpdateUserConfiguration
                       href: web-service-reference/updateuserconfiguration.md
@@ -3789,9 +3789,9 @@
                       href: web-service-reference/urlentity.md
                     - name: Urls
                       href: web-service-reference/urls.md
-                    - name: Url (ArrayOfUrlEntitiesType)
+                    - name: Urls (ArrayOfUrlEntitiesType)
                       href: web-service-reference/urls-arrayofurlentitiestype.md
-                    - name: ユーザー (MailboxAssociationType)
+                    - name: User (MailboxAssociationType)
                       href: web-service-reference/user-mailboxassociationtype.md
                     - name: UserConfiguration
                       href: web-service-reference/userconfiguration.md
@@ -3805,11 +3805,11 @@
                       href: web-service-reference/userenabledextensions.md
                     - name: UserId
                       href: web-service-reference/userid.md
-                    - name: ユーザー Id (文字列)
+                    - name: UserId (string)
                       href: web-service-reference/userid-string.md
-                    - name: ユーザー Id
+                    - name: UserIds
                       href: web-service-reference/userids.md
-                    - name: 構成
+                    - name: UserMailbox
                       href: web-service-reference/usermailbox.md
                     - name: UserOofSettings
                       href: web-service-reference/useroofsettings.md
@@ -3817,7 +3817,7 @@
                       href: web-service-reference/useroptions.md
                     - name: UserParameters
                       href: web-service-reference/userparameters.md
-                    - name: 作成します
+                    - name: UserRoles
                       href: web-service-reference/userroles.md
                     - name: UserSid
                       href: web-service-reference/usersid.md
@@ -3825,31 +3825,31 @@
                       href: web-service-reference/usersmimecertificate.md
                     - name: ValidationErrors
                       href: web-service-reference/validationerrors.md
-                    - name: 値
+                    - name: Value
                       href: web-service-reference/value.md
-                    - name: 値 (ArrayOfStringValueType)
+                    - name: Value (ArrayOfStringValueType)
                       href: web-service-reference/value-arrayofstringvaluetype.md
-                    - name: 値 (BodyContentType)
+                    - name: Value (BodyContentType)
                       href: web-service-reference/value-bodycontenttype.md
-                    - name: 値 (EmailAddressType)
+                    - name: Value (EmailAddressType)
                       href: web-service-reference/value-emailaddresstype.md
-                    - name: 値 (ExtendedAttributeType)
+                    - name: Value (ExtendedAttributeType)
                       href: web-service-reference/value-extendedattributetype.md
-                    - name: 値 (ExtendedPropertyType)
+                    - name: Value (ExtendedPropertyType)
                       href: web-service-reference/value-extendedpropertytype.md
-                    - name: 値 (メッセージの追跡)
+                    - name: Value (Message Tracking)
                       href: web-service-reference/value-message-tracking.md
-                    - name: 値 (PersonaPhoneNumberType)
+                    - name: Value (PersonaPhoneNumberType)
                       href: web-service-reference/value-personaphonenumbertype.md
-                    - name: 値 (PersonaPostalAddressType)
+                    - name: Value (PersonaPostalAddressType)
                       href: web-service-reference/value-personapostaladdresstype.md
-                    - name: 値 (ProtectionRuleValueType)
+                    - name: Value (ProtectionRuleValueType)
                       href: web-service-reference/value-protectionrulevaluetype.md
-                    - name: 値 (UserConfiguration)
+                    - name: Value (UserConfiguration)
                       href: web-service-reference/value-userconfiguration.md
-                    - name: 値
+                    - name: Values
                       href: web-service-reference/values.md
-                    - name: 値 (ArrayOfStringValueType)
+                    - name: Values (ArrayOfStringValueType)
                       href: web-service-reference/values-arrayofstringvaluetype.md
                     - name: ViewPrivateItems
                       href: web-service-reference/viewprivateitems.md
@@ -3859,7 +3859,7 @@
                       href: web-service-reference/votingoptiondata.md
                     - name: VotingResponse
                       href: web-service-reference/votingresponse.md
-                    - name: ウォーターマーク
+                    - name: Watermark
                       href: web-service-reference/watermark.md
                     - name: WebClientEditFormQueryString
                       href: web-service-reference/webclienteditformquerystring.md
@@ -3873,7 +3873,7 @@
                       href: web-service-reference/weeklyrecurrence.md
                     - name: WeeklyRegeneration
                       href: web-service-reference/weeklyregeneration.md
-                    - name: 日時
+                    - name: When
                       href: web-service-reference/when.md
                     - name: WithinDateRange
                       href: web-service-reference/withindaterange.md
@@ -3895,7 +3895,7 @@
                       href: web-service-reference/wouldrepair.md
                     - name: XmlData
                       href: web-service-reference/xmldata.md
-                    - name: Year/年
+                    - name: Year
                       href: web-service-reference/year.md
                     - name: YearlyRegeneration
                       href: web-service-reference/yearlyregeneration.md
@@ -3913,10 +3913,10 @@
                       href: web-service-reference/yomilastnames.md
             - name: EWS マネージ API リファレンス
               href: 'https://msdn.microsoft.com/EN-US/library/jj220535(v=exchg.80).aspx'
-            - name: 自動検出 web サービスの参照
+            - name: 自動検出 Web サービス参照
               href: web-service-reference/autodiscover-web-service-reference-for-exchange.md
               items:
-                - name: SOAP web サービス参照の自動検出
+                - name: SOAP 自動検出 Web サービス参照
                   href: web-service-reference/soap-autodiscover-web-service-reference-for-exchange.md
                   items:
                     - name: GetDomainSettings 操作 (SOAP)
@@ -3927,7 +3927,7 @@
                       href: web-service-reference/getusersettings-operation-soap.md
                     - name: GetOrganizationRelationshipSettings 操作 (SOAP)
                       href: web-service-reference/getorganizationrelationshipsettings-operation-soap.md
-                    - name: SOAP の自動検出の XML 要素
+                    - name: SOAP 自動検出 XML 要素
                       href: web-service-reference/soap-autodiscover-xml-elements-for-exchange-2013.md
                       items:
                         - name: AlternateMailbox (SOAP)
@@ -3964,15 +3964,15 @@
                           href: web-service-reference/documentsharinglocationcollectionsetting-soap.md
                         - name: DomainNames (SOAP)
                           href: web-service-reference/domainnames-soap.md
-                        - name: ドメイン (SOAP)
+                        - name: Domain (SOAP)
                           href: web-service-reference/domain-soap.md
-                        - name: ドメイン (GetFederationInformation) (SOAP)
+                        - name: Domain (GetFederationInformation) (SOAP)
                           href: web-service-reference/domain-getfederationinformationsoap.md
                         - name: DomainResponse (SOAP)
                           href: web-service-reference/domainresponse-soap.md
                         - name: DomainResponses (SOAP)
                           href: web-service-reference/domainresponses-soap.md
-                        - name: ドメイン (SOAP)
+                        - name: Domains (SOAP)
                           href: web-service-reference/domains-soap.md
                         - name: DomainSettingError (SOAP)
                           href: web-service-reference/domainsettingerror-soap.md
@@ -3986,11 +3986,11 @@
                           href: web-service-reference/domainstringsetting-soap.md
                         - name: EncryptionMethod (SOAP)
                           href: web-service-reference/encryptionmethod-soap.md
-                        - name: エンドポイント (SOAP)
+                        - name: Endpoint (SOAP)
                           href: web-service-reference/endpoint-soap.md
-                        - name: エラー コード (SOAP)
+                        - name: ErrorCode (SOAP)
                           href: web-service-reference/errorcode-soap.md
-                        - name: エラー メッセージ (SOAP)
+                        - name: ErrorMessage (SOAP)
                           href: web-service-reference/errormessage-soap.md
                         - name: ExternalAccessAllowed (SOAP)
                           href: web-service-reference/externalaccessallowed-soap.md
@@ -4032,7 +4032,7 @@
                           href: web-service-reference/getusersettingsresponse-soap.md
                         - name: GetUserSettingsResponseMessage (SOAP)
                           href: web-service-reference/getusersettingsresponsemessage-soap.md
-                        - name: ホスト名 (SOAP)
+                        - name: Hostname (SOAP)
                           href: web-service-reference/hostname-soap.md
                         - name: IsDefault (SOAP)
                           href: web-service-reference/isdefault-soap.md
@@ -4040,7 +4040,7 @@
                           href: web-service-reference/legacydn-soap.md
                         - name: LocationUrl (SOAP)
                           href: web-service-reference/locationurl-soap.md
-                        - name: メールボックス (SOAP)
+                        - name: Mailbox (SOAP)
                           href: web-service-reference/mailbox-soap.md
                         - name: MailTipsAccessEnabled (SOAP)
                           href: web-service-reference/mailtipsaccessenabled-soap.md
@@ -4054,15 +4054,15 @@
                           href: web-service-reference/majorversion-soap.md
                         - name: MinorBuildNumber (SOAP)
                           href: web-service-reference/minorbuildnumber-soap.md
-                        - name: マイナー バージョン (SOAP)
+                        - name: MinorVersion (SOAP)
                           href: web-service-reference/minorversion-soap.md
-                        - name: 名 (SOAP)
+                        - name: Name (SOAP)
                           href: web-service-reference/name-soap.md
                         - name: OrganizationRelationshipSettingsCollection (SOAP)
                           href: web-service-reference/organizationrelationshipsettingscollection-soap.md
                         - name: OrganizationRelationshipSettings (SOAP)
                           href: web-service-reference/organizationrelationshipsettings-soap.md
-                        - name: ポート (SOAP)
+                        - name: Port (SOAP)
                           href: web-service-reference/port-soap.md
                         - name: ProtocolConnection (SOAP)
                           href: web-service-reference/protocolconnection-soap.md
@@ -4072,13 +4072,13 @@
                           href: web-service-reference/protocolconnections-soap.md
                         - name: RedirectTarget (SOAP)
                           href: web-service-reference/redirecttarget-soap.md
-                        - name: 要求 (SOAP)
+                        - name: Request (SOAP)
                           href: web-service-reference/request-soap.md
-                        - name: 要求 (GetDomainSettings) (SOAP)
+                        - name: Request (GetDomainSettings) (SOAP)
                           href: web-service-reference/request-getdomainsettingssoap.md
-                        - name: 要求 (GetFederationInformation) (SOAP)
+                        - name: Request (GetFederationInformation) (SOAP)
                           href: web-service-reference/request-getfederationinformationsoap.md
-                        - name: 要求 (GetOrganizationRelationship) (SOAP)
+                        - name: Request (GetOrganizationRelationship) (SOAP)
                           href: web-service-reference/request-getorganizationrelationshipsoap.md
                         - name: RequestedVersion (SOAP)
                           href: web-service-reference/requestedversion-soap.md
@@ -4086,21 +4086,21 @@
                           href: web-service-reference/requestedserverversion-soap.md
                         - name: RequestedSettings (SOAP)
                           href: web-service-reference/requestedsettings-soap.md
-                        - name: 応答 (SOAP)
+                        - name: Response (SOAP)
                           href: web-service-reference/response-soap.md
                         - name: 応答 (GetDomainSettings) (SOAP)
                           href: web-service-reference/response-getdomainsettingssoap.md
-                        - name: 応答 (GetFederationInformation) (SOAP)
+                        - name: Response (GetFederationInformation) (SOAP)
                           href: web-service-reference/response-getfederationinformationsoap.md
-                        - name: 応答 (GetOrganizationRelationship) (SOAP)
+                        - name: Response (GetOrganizationRelationship) (SOAP)
                           href: web-service-reference/response-getorganizationrelationshipsoap.md
-                        - name: サーバー (SOAP)
+                        - name: Server (SOAP)
                           href: web-service-reference/server-soap.md
                         - name: ServerVersionInfo (SOAP)
                           href: web-service-reference/serverversioninfo-soap.md
                         - name: ServiceUrl (SOAP)
                           href: web-service-reference/serviceurl-soap.md
-                        - name: (SOAP) の設定
+                        - name: Setting (SOAP)
                           href: web-service-reference/setting-soap.md
                         - name: SettingName (SOAP)
                           href: web-service-reference/settingname-soap.md
@@ -4120,13 +4120,13 @@
                           href: web-service-reference/tokenissuer-soap.md
                         - name: TokenIssuers (SOAP)
                           href: web-service-reference/tokenissuers-soap.md
-                        - name: (SOAP) の種類
+                        - name: Type (SOAP)
                           href: web-service-reference/type-soap.md
                         - name: Uri (SOAP)
                           href: web-service-reference/uri-soap.md
                         - name: Url (SOAP)
                           href: web-service-reference/url-soap.md
-                        - name: ユーザー (SOAP)
+                        - name: User (SOAP)
                           href: web-service-reference/user-soap.md
                         - name: UserResponse (SOAP)
                           href: web-service-reference/userresponse-soap.md
@@ -4140,11 +4140,11 @@
                           href: web-service-reference/usersettingerror-soap.md
                         - name: UserSettingErrors (SOAP)
                           href: web-service-reference/usersettingerrors-soap.md
-                        - name: ユーザー (SOAP)
+                        - name: UserSettings (SOAP)
                           href: web-service-reference/usersettings-soap.md
-                        - name: 値 (SOAP)
+                        - name: Value (SOAP)
                           href: web-service-reference/value-soap.md
-                        - name: バージョン (SOAP)
+                        - name: Version (SOAP)
                           href: web-service-reference/version-soap.md
                         - name: WebClientUrl (SOAP)
                           href: web-service-reference/webclienturl-soap.md
@@ -4152,25 +4152,25 @@
                           href: web-service-reference/webclienturlcollectionsetting-soap.md
                         - name: WebClientUrls (SOAP)
                           href: web-service-reference/webclienturls-soap.md
-                - name: POX 自動検出 web サービスの参照
+                - name: POX 自動検出 Web サービス参照
                   href: web-service-reference/pox-autodiscover-web-service-reference-for-exchange.md
                   items:
-                    - name: POX の自動検出の要求
+                    - name: POX 自動検出要求
                       href: web-service-reference/pox-autodiscover-request-for-exchange.md
-                    - name: POX の自動検出の応答
+                    - name: POX 自動検出応答
                       href: web-service-reference/pox-autodiscover-response-for-exchange.md
-                    - name: POX の自動検出の XML 要素
+                    - name: POX 自動検出 XML 要素
                       href: web-service-reference/pox-autodiscover-xml-elements-for-exchange.md
                       items:
                         - name: AcceptableResponseSchema (POX)
                           href: web-service-reference/acceptableresponseschema-pox.md
-                        - name: アカウント (POX)
+                        - name: Account (POX)
                           href: web-service-reference/account-pox.md
                         - name: AccountType (POX)
                           href: web-service-reference/accounttype-pox.md
-                        - name: アクション (POX)
+                        - name: Action (POX)
                           href: web-service-reference/action-pox.md
-                        - name: アドレス帳 (POX)
+                        - name: AddressBook (POX)
                           href: web-service-reference/addressbook-pox.md
                         - name: ASUrl (POX)
                           href: web-service-reference/asurl-pox.md
@@ -4178,7 +4178,7 @@
                           href: web-service-reference/authpackage-pox.md
                         - name: AuthRequired (POX)
                           href: web-service-reference/authrequired-pox.md
-                        - name: (POX) を自動検出
+                        - name: AutoDiscover (POX)
                           href: web-service-reference/autodiscover-pox.md
                         - name: AutoDiscoverSMTPAddress (POX)
                           href: web-service-reference/autodiscoversmtpaddress-pox.md
@@ -4192,7 +4192,7 @@
                           href: web-service-reference/directoryport-pox.md
                         - name: DisplayName (POX)
                           href: web-service-reference/displayname-pox.md
-                        - name: ドメイン名 (POX)
+                        - name: DomainName (POX)
                           href: web-service-reference/domainname-pox.md
                         - name: DomainRequired (POX)
                           href: web-service-reference/domainrequired-pox.md
@@ -4204,13 +4204,13 @@
                           href: web-service-reference/ecpurl-extinstall-pox.md
                         - name: EcpUrl-mt (POX)
                           href: web-service-reference/ecpurl-mt-pox.md
-                        - name: (POX) の EcpUrl の写真
+                        - name: EcpUrl-photo (POX)
                           href: web-service-reference/ecpurl-photo-pox.md
-                        - name: (POX) を EcpUrl 発行
+                        - name: EcpUrl-publish (POX)
                           href: web-service-reference/ecpurl-publish-pox.md
                         - name: EcpUrl-ret (POX)
                           href: web-service-reference/ecpurl-ret-pox.md
-                        - name: EcpUrl sms (POX)
+                        - name: EcpUrl-sms (POX)
                           href: web-service-reference/ecpurl-sms-pox.md
                         - name: EcpUrl-tm (POX)
                           href: web-service-reference/ecpurl-tm-pox.md
@@ -4226,15 +4226,15 @@
                           href: web-service-reference/emailaddress-pox.md
                         - name: EmwsUrl (POX)
                           href: web-service-reference/emwsurl-pox.md
-                        - name: エラー (POX)
+                        - name: Error (POX)
                           href: web-service-reference/error-pox.md
-                        - name: エラー コード (POX)
+                        - name: ErrorCode (POX)
                           href: web-service-reference/errorcode-pox.md
                         - name: EwsPartnerUrl (POX)
                           href: web-service-reference/ewspartnerurl-pox.md
                         - name: EwsUrl (POX)
                           href: web-service-reference/ewsurl-pox.md
-                        - name: 外部 (POX)
+                        - name: External (POX)
                           href: web-service-reference/external-pox.md
                         - name: ExternalUrl (POX)
                           href: web-service-reference/externalurl-pox.md
@@ -4262,7 +4262,7 @@
                           href: web-service-reference/mailstore-pox.md
                         - name: MdbDN (POX)
                           href: web-service-reference/mdbdn-pox.md
-                        - name: メッセージ (POX)
+                        - name: Message (POX)
                           href: web-service-reference/message-pox.md
                         - name: MicrosoftOnline (POX)
                           href: web-service-reference/microsoftonline-pox.md
@@ -4274,9 +4274,9 @@
                           href: web-service-reference/oofurl-pox.md
                         - name: OWAUrl (POX)
                           href: web-service-reference/owaurl-pox.md
-                        - name: ポート (POX)
+                        - name: Port (POX)
                           href: web-service-reference/port-pox.md
-                        - name: プロトコル (POX)
+                        - name: Protocol (POX)
                           href: web-service-reference/protocol-pox.md
                         - name: PublicFolderInformation (POX)
                           href: web-service-reference/publicfolderinformation-pox.md
@@ -4288,11 +4288,11 @@
                           href: web-service-reference/redirecturl-pox.md
                         - name: ReferralPort (POX)
                           href: web-service-reference/referralport-pox.md
-                        - name: 要求 (POX)
+                        - name: Request (POX)
                           href: web-service-reference/request-pox.md
-                        - name: 応答 (POX)
+                        - name: Response (POX)
                           href: web-service-reference/response-pox.md
-                        - name: サーバー (POX)
+                        - name: Server (POX)
                           href: web-service-reference/server-pox.md
                         - name: ServerDN (POX)
                           href: web-service-reference/serverdn-pox.md
@@ -4312,118 +4312,118 @@
                           href: web-service-reference/ssl-pox.md
                         - name: TTL (POX)
                           href: web-service-reference/ttl-pox.md
-                        - name: (POX) の種類
+                        - name: Type (POX)
                           href: web-service-reference/type-pox.md
                         - name: UMUrl (POX)
                           href: web-service-reference/umurl-pox.md
                         - name: UsePOPAuth (POX)
                           href: web-service-reference/usepopauth-pox.md
-                        - name: ユーザー (POX)
+                        - name: User (POX)
                           href: web-service-reference/user-pox.md
-            - name: ユニファイド メッセージング web サービスの参照
+            - name: ユニファイド メッセージング Web サービス参照
               href: web-service-reference/unified-messaging-web-service-reference-for-exchange.md
               items:
-                - name: ユニファイド メッセージング web サービスの操作
+                - name: ユニファイド メッセージング Web サービス操作
                   href: web-service-reference/unified-messaging-web-service-operations-for-exchange.md
                   items:
-                    - name: 操作 (UM web サービス) に接続を切断します。
+                    - name: 切断操作 (UM Web サービス)
                       href: web-service-reference/disconnect-operation-um-web-service.md
-                    - name: GetCallInfo 操作 (UM web サービス)
+                    - name: GetCallInfo 操作 (UM Web サービス)
                       href: web-service-reference/getcallinfo-operation-um-web-service.md
-                    - name: GetUMProperties 操作 (UM web サービス)
+                    - name: GetUMProperties 操作 (UM Web サービス)
                       href: web-service-reference/getumproperties-operation-um-web-service.md
-                    - name: IsUMEnabled 操作 (UM web サービス)
+                    - name: IsUMEnabled 操作 (UM Web サービス)
                       href: web-service-reference/isumenabled-operation-um-web-service.md
-                    - name: PlayOnPhone 操作 (UM web サービス)
+                    - name: PlayOnPhone 操作 (UM Web サービス)
                       href: web-service-reference/playonphone-operation-um-web-service.md
-                    - name: PlayOnPhoneGreeting 操作 (UM web サービス)
+                    - name: PlayOnPhoneGreeting 操作 (UM Web サービス)
                       href: web-service-reference/playonphonegreeting-operation-um-web-service.md
-                    - name: ResetPIN 操作 (UM web サービス)
+                    - name: ResetPIN 操作 (UM Web サービス)
                       href: web-service-reference/resetpin-operation-um-web-service.md
-                    - name: SetMissedCallNotificationEnabled 操作 (UM web サービス)
+                    - name: SetMissedCallNotificationEnabled 操作 (UM Web サービス)
                       href: web-service-reference/setmissedcallnotificationenabled-operation-um-web-service.md
-                    - name: SetOofStatus 操作 (UM web サービス)
+                    - name: SetOofStatus 操作 (UM Web サービス)
                       href: web-service-reference/setoofstatus-operation-um-web-service.md
-                    - name: SetPlayOnPhoneDialString 操作 (UM web サービス)
+                    - name: SetPlayOnPhoneDialString 操作 (UM Web サービス)
                       href: web-service-reference/setplayonphonedialstring-operation-um-web-service.md
-                    - name: SetTelephoneAccessFolderEmail 操作 (UM web サービス)
+                    - name: SetTelephoneAccessFolderEmail 操作 (UM Web サービス)
                       href: web-service-reference/settelephoneaccessfolderemail-operation-um-web-service.md
-                - name: ユニファイド メッセージング web サービスの XML 要素
+                - name: ユニファイド メッセージング Web サービス XML 要素
                   href: web-service-reference/unified-messaging-web-service-xml-elements-for-exchange.md
                   items:
-                    - name: base64FolderId (UM web サービス)
+                    - name: base64FolderId (UM Web サービス)
                       href: web-service-reference/base64folderid-um-web-service.md
-                    - name: CallId (UM web サービス)
+                    - name: CallId (UM Web サービス)
                       href: web-service-reference/callid-um-web-service.md
-                    - name: CallState (UM web サービス)
+                    - name: CallState (UM Web サービス)
                       href: web-service-reference/callstate-um-web-service.md
-                    - name: dialString (UM web サービス)
+                    - name: dialString (UM Web サービス)
                       href: web-service-reference/dialstring-um-web-service.md
-                    - name: (UM web サービス) に接続を切断します。
+                    - name: 切断 (UM Web サービス)
                       href: web-service-reference/disconnect-um-web-service.md
-                    - name: DisconnectResponse (UM web サービス)
+                    - name: DisconnectResponse (UM Web サービス)
                       href: web-service-reference/disconnectresponse-um-web-service.md
-                    - name: エントリ Id (UM web サービス)
+                    - name: entryId (UM Web サービス)
                       href: web-service-reference/entryid-um-web-service.md
-                    - name: EventCause (UM web サービス)
+                    - name: EventCause (UM Web サービス)
                       href: web-service-reference/eventcause-um-web-service.md
-                    - name: GetCallInfo (UM web サービス)
+                    - name: GetCallInfo (UM Web サービス)
                       href: web-service-reference/getcallinfo-um-web-service.md
-                    - name: GetCallInfoResponse (UM web サービス)
+                    - name: GetCallInfoResponse (UM Web サービス)
                       href: web-service-reference/getcallinforesponse-um-web-service.md
-                    - name: GetUMProperties (UM web サービス)
+                    - name: GetUMProperties (UM Web サービス)
                       href: web-service-reference/getumproperties-um-web-service.md
-                    - name: GetUMPropertiesResponse (UM web サービス)
+                    - name: GetUMPropertiesResponse (UM Web サービス)
                       href: web-service-reference/getumpropertiesresponse-um-web-service.md
-                    - name: GreetingType (UM web サービス)
+                    - name: GreetingType (UM Web サービス)
                       href: web-service-reference/greetingtype-um-web-service.md
-                    - name: IsUMEnabled (UM web サービス)
+                    - name: IsUMEnabled (UM Web サービス)
                       href: web-service-reference/isumenabled-um-web-service.md
-                    - name: IsUMEnabledResponse (UM web サービス)
+                    - name: IsUMEnabledResponse (UM Web サービス)
                       href: web-service-reference/isumenabledresponse-um-web-service.md
-                    - name: OofStatus (UM web サービス)
+                    - name: OofStatus (UM Web サービス)
                       href: web-service-reference/oofstatus-um-web-service.md
-                    - name: PlayOnPhoneGreeting (UM web サービス)
+                    - name: PlayOnPhoneGreeting (UM Web サービス)
                       href: web-service-reference/playonphonegreeting-um-web-service.md
-                    - name: PlayOnPhoneGreetingResponse (UM web サービス)
+                    - name: PlayOnPhoneGreetingResponse (UM Web サービス)
                       href: web-service-reference/playonphonegreetingresponse-um-web-service.md
-                    - name: PlayOnPhone (UM web サービス)
+                    - name: PlayOnPhone (UM Web サービス)
                       href: web-service-reference/playonphone-um-web-service.md
-                    - name: PlayOnPhoneResponse (UM web サービス)
+                    - name: PlayOnPhoneResponse (UM Web サービス)
                       href: web-service-reference/playonphoneresponse-um-web-service.md
-                    - name: ResetPIN (UM web サービス)
+                    - name: ResetPIN (UM Web サービス)
                       href: web-service-reference/resetpin-um-web-service.md
-                    - name: ResetPINResponse (UM web サービス)
+                    - name: ResetPINResponse (UM Web サービス)
                       href: web-service-reference/resetpinresponse-um-web-service.md
-                    - name: SetMissedCallNotificationEnabled (UM web サービス)
+                    - name: SetMissedCallNotificationEnabled (UM Web サービス)
                       href: web-service-reference/setmissedcallnotificationenabled-um-web-service.md
-                    - name: SetMissedCallNotificationEnabledResponse (UM web サービス)
+                    - name: SetMissedCallNotificationEnabledResponse (UM Web サービス)
                       href: web-service-reference/setmissedcallnotificationenabledresponse-um-web-service.md
-                    - name: SetOofStatus (UM web サービス)
+                    - name: SetOofStatus (UM Web サービス)
                       href: web-service-reference/setoofstatus-um-web-service.md
-                    - name: SetOofStatusResponse (UM web サービス)
+                    - name: SetOofStatusResponse (UM Web サービス)
                       href: web-service-reference/setoofstatusresponse-um-web-service.md
-                    - name: SetPlayOnPhoneDialString (UM web サービス)
+                    - name: SetPlayOnPhoneDialString (UM Web サービス)
                       href: web-service-reference/setplayonphonedialstring-um-web-service.md
-                    - name: SetPlayOnPhoneDialStringResponse (UM web サービス)
+                    - name: SetPlayOnPhoneDialStringResponse (UM Web サービス)
                       href: web-service-reference/setplayonphonedialstringresponse-um-web-service.md
-                    - name: SetTelephoneAccessFolderEmail (UM web サービス)
+                    - name: SetTelephoneAccessFolderEmail (UM Web サービス)
                       href: web-service-reference/settelephoneaccessfolderemail-um-web-service.md
-                    - name: SetTelephoneAccessFolderEmailResponse (UM web サービス)
+                    - name: SetTelephoneAccessFolderEmailResponse (UM Web サービス)
                       href: web-service-reference/settelephoneaccessfolderemailresponse-um-web-service.md
-                    - name: 状態 (UM web サービス - SetMissedCallNotificationEnabled)
+                    - name: 状態 (UM Web サービス - SetMissedCallNotificationEnabled)
                       href: web-service-reference/status-um-web-servicesetmissedcallnotificationenabled.md
-                    - name: 状態 (UM web サービス - SetOofStatus)
+                    - name: 状態 (UM Web サービス - SetOofStatus)
                       href: web-service-reference/status-um-web-servicesetoofstatus.md
-                    - name: MissedCallNotificationEnabled (UM web サービス)
+                    - name: MissedCallNotificationEnabled (UM Web サービス)
                       href: web-service-reference/missedcallnotificationenabled-um-web-service.md
-                    - name: PlayOnPhoneDialString (UM web サービス)
+                    - name: PlayOnPhoneDialString (UM Web サービス)
                       href: web-service-reference/playonphonedialstring-um-web-service.md
-                    - name: TelephoneAccessNumbers (UM web サービス)
+                    - name: TelephoneAccessNumbers (UM Web サービス)
                       href: web-service-reference/telephoneaccessnumbers-um-web-service.md
-                    - name: TelephoneAccessFolderEmail (UM web サービス)
+                    - name: TelephoneAccessFolderEmail (UM Web サービス)
                       href: web-service-reference/telephoneaccessfolderemail-um-web-service.md
-            - name: EWS の自動生成されたプロキシの参照
+            - name: EWS の自動生成されたプロキシ参照
               href: 'https://msdn.microsoft.com/EN-US/library/jj190899(v=exchg.150).aspx'
     - name: Exchange 管理シェル
       href: management/exchange-management-shell.md
@@ -4435,7 +4435,7 @@
               href: management/new-and-updated-exchange-management-shell-cmdlets.md
             - name: コマンドレットの入力と出力の種類
               href: management/exchange-management-shell-cmdlet-input-and-output-types.md
-            - name: メール ユーザーの一覧を取得します。
+            - name: メール ユーザーの一覧を取得する
               href: management/how-to-get-a-list-of-mail-users-by-using-the-exchange-management-shell.md
             - name: コマンドレット応答を使用する
               href: management/how-to-use-the-exchange-management-shell-cmdlet-response.md
@@ -4455,11 +4455,11 @@
         - name: トランスポート エージェントの作成
           href: transport-agents/creating-transport-agents-for-exchange-2013.md
           items:
-            - name: RoutingAgent トランスポート エージェントを作成します。
+            - name: RoutingAgent トランスポート エージェントの作成
               href: transport-agents/how-to-create-a-routingagent-transport-agent-for-exchange-2013.md
-            - name: SmtpReceiveAgent トランスポート エージェントを作成します。
+            - name: SmtpReceiveAgent トランスポート エージェントの作成
               href: transport-agents/how-to-create-an-smtpreceiveagent-transport-agent-for-exchange-2013.md
-            - name: DeliveryAgent トランスポート エージェントを作成します。
+            - name: DeliveryAgent トランスポート エージェントの作成
               href: transport-agents/how-to-create-a-deliveryagent-transport-agent-for-exchange-2013.md
         - name: トランスポート エージェントのリファレンス
           href: transport-agents/transport-agent-reference-for-exchange-2013.md
@@ -4467,7 +4467,7 @@
             - name: エージェント構成ファイルの要素
               href: transport-agents/agents-configuration-file-elements-for-exchange-2013.md
               items:
-                - name: エージェント
+                - name: agent
                   href: transport-agents/agent.md
                 - name: agentExecution
                   href: transport-agents/agentexecution.md
@@ -4479,7 +4479,7 @@
                   href: transport-agents/messagesnapshot.md
                 - name: mexRuntime
                   href: transport-agents/mexruntime.md
-                - name: 監視
+                - name: monitoring
                   href: transport-agents/monitoring.md
             - name: トランスポート エージェントの名前空間
               href: transport-agents/transport-agent-namespaces-in-exchange-2013.md
@@ -4498,11 +4498,11 @@
           items:
             - name: バックアップ操作の種類
               href: backup-restore/types-of-backup-operations-for-exchange-2013.md
-            - name: 2013 の Exchange データベースを復元します。
+            - name: Exchange 2013 のデータベースの復元
               href: backup-restore/restoring-exchange-2013-databases.md
-            - name: CHKSGFILES API を使用してバックアップの整合性を検証します。
+            - name: CHKSGFILES API を使用してバックアップの整合性を検証します
               href: backup-restore/how-to-validate-backup-integrity-by-using-the-chksgfiles-api-in-exchange.md
-            - name: Eseutil ツールを使用してバックアップの整合性を検証します。
+            - name: Eseutil ツールを使用してバックアップの整合性を検証します
               href: backup-restore/how-to-validate-backup-integrity-by-using-the-eseutil-tool-in-exchange-2013.md
         - name: CChkSGFiles クラスの参照
           href: backup-restore/cchksgfiles-class-reference.md
@@ -4535,5 +4535,5 @@
               href: backup-restore/cchksgfiles-page_info-struct.md
             - name: CChkSGFiles.PgnoFromFileOffset 関数
               href: backup-restore/cchksgfiles-pgnofromfileoffset-function.md
-    - name: サーバー API への参照
+    - name: サーバー API 参照
       href: 'https://msdn.microsoft.com/en-us/library/dn186243(v=exchg.150).aspx'
