@@ -8,7 +8,7 @@ ms.assetid: e6fd5c23-0ba5-4a7b-bdde-4a553447069f
 description: Exchange Web サービス (EWS) を使用して、Exchange の初めてのアプリケーションを作成します。
 ms.openlocfilehash: 911495c74f4c74114a86b1a3a98c9200db338b34
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758907"
@@ -25,7 +25,7 @@ EWS 操作は、あらゆるオペレーティング システムまたは言語
 
 Exchange メールボックス アカウントを既に所有している場合は、この手順を省略してもかまいません。それ以外の場合は、次のいずれかの方法で、初めての EWS アプリケーション用の Exchange メールボックスをセットアップします。
   
-- [Office 365 の開発者向けサイトを取得する](http://msdn.microsoft.com/en-us/library/office/fp179924.aspx) (推奨)。最も簡単に Exchange メールボックスを入手する方法です。
+- [Office 365 の開発者向けサイトを取得する](http://msdn.microsoft.com/ja-JP/library/office/fp179924.aspx) (推奨)。最も簡単に Exchange メールボックスを入手する方法です。
     
 - [Exchange Server](http://office.microsoft.com/en-us/exchange/microsoft-exchange-try-or-buy-exchange-we-can-help-you-decide-FX103746846.aspx?WT%2Eintid1=ODC%5FENUS%5FFX103472230%5FXT103965589) をダウンロードする。
     
