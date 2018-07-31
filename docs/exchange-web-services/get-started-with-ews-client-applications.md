@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: e6fd5c23-0ba5-4a7b-bdde-4a553447069f
 description: Exchange Web サービス (EWS) を使用して、Exchange の初めてのアプリケーションを作成します。
-ms.openlocfilehash: 911495c74f4c74114a86b1a3a98c9200db338b34
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 06606bdc2b37c8bf65b8b10dc7a516bdc911b256
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758907"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353778"
 ---
 # <a name="get-started-with-ews-client-applications"></a>EWS クライアント アプリケーションの概要
 
@@ -31,7 +31,7 @@ Exchange メールボックス アカウントを既に所有している場合�
     
 Exchange サーバーから電子メールを送受信できることを確認したら、開発環境をセットアップするための準備が完了します。Outlook Web App を使用して、電子メールが送信できることを確認します。
   
-また、サーバーの EWS エンドポイントの URL を確認することも必要になります。実稼働アプリケーションでは、[自動検出](autodiscover-for-exchange.md)を使用して EWS の URL を判断します。この記事の例では、Office 365 EWS エンドポイント の URL https://outlook.office365.com/EWS/Exchange.asmx を使用します。「[次の手順](#bk_next)」のセクションには、自動検出に関する詳細へのリンクが掲載されています (必要になったら参照してください)。 
+また、サーバーの EWS エンドポイントの URL を確認することも必要になります。実稼働アプリケーションでは、[自動検出](autodiscover-for-exchange.md)を使用して EWS の URL を判断します。この記事の例では、Office 365 EWS エンドポイント の URL `https://outlook.office365.com/EWS/Exchange.asmx` を使用します。「[次の手順](#bk_next)」のセクションには、自動検出に関する詳細へのリンクが掲載されています (必要になったら参照してください)。 
   
 アプリケーションのテストに、既定の自己署名証明書がある Exchange サーバーを使用する場合は、自分の組織のセキュリティ要件に適合する[証明書の検証メソッド](how-to-validate-a-server-certificate-for-the-ews-managed-api.md)を作成する必要があります。 
   
