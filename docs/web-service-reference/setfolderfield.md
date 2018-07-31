@@ -12,25 +12,125 @@ api_type:
 - schema
 ms.assetid: 8c69db7b-54b5-4ae2-abca-4d6e0937a790
 description: SetFolderField 要素は、UpdateFolder 操作でフォルダーの 1 つのプロパティの値を設定する更新プログラムを表します。
-ms.openlocfilehash: 1919c335197c83999875a17397e9c9d4405d1e3f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: ed5c055c697865d5eb728d269c6f4c7ce60f4b5c
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833407"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353288"
 ---
 # <a name="setfolderfield"></a>SetFolderField
 
 **SetFolderField**要素は、UpdateFolder 操作でフォルダーの 1 つのプロパティの値を設定する更新プログラムを表します。 
-  
+
 ```xml
 <SetFolderField>
    <FieldURI/>
    <Folder/>
 </SetFolderField>
 ```
+  
+```xml
+<SetFolderField>
+   <IndexedFieldURI/> 
+   <SearchFolder/> 
+</SetFolderField>
+```
 
- **SetFolderFieldType**
+```xml
+<SetFolderField>
+   <FieldURI/> 
+   <TasksFolder/>
+</SetFolderField>
+```
+
+```xml
+<SetFolderField>
+   <ExtendedFieldURI/> 
+   <CalendarFolder/> 
+</SetFolderField>
+```
+
+```xml
+<SetFolderField>
+   <ExtendedFieldURI/> 
+   <SearchFolder/>
+</SetFolderField>
+```
+
+```xml
+<SetFolderField>
+   <ExtendedFieldURI/> 
+   <Folder/> 
+</SetFolderField>
+```
+
+```xml
+<SetFolderField>
+    <IndexedFieldURI/> 
+    <TasksFolder/>
+</SetFolderField>
+```
+
+```xml
+<SetFolderField>
+   <FieldURI/> 
+   <SearchFolder/>
+</SetFolderField>
+```
+
+```xml
+<SetFolderField>
+   <FieldURI/> 
+   <CalendarFolder/> 
+</SetFolderField>
+```
+
+```xml
+<SetFolderField>
+   <ExtendedFieldURI/> 
+   <TasksFolder/> 
+</SetFolderField>
+```
+
+```xml
+<SetFolderField>
+   <IndexedFieldURI/> 
+   <CalendarFolder/> 
+</SetFolderField>
+```
+
+```xml
+<SetFolderField>
+   <IndexedFieldURI/> 
+   <Folder/>
+</SetFolderField>
+```
+
+```xml
+<SetFolderField>
+    <FieldURI/> 
+    <ContactsFolder/>
+</SetFolderField>
+```
+
+```xml
+<SetFolderField>
+   <ExtendedFieldURI/> 
+   <ContactsFolder/>
+</SetFolderField>
+```
+
+```xml
+<SetFolderField>
+   <IndexedFieldURI/> 
+   <ContactsFolder/> 
+</SetFolderField>
+```
+
+
+**SetFolderFieldType**
+
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -48,7 +148,7 @@ ms.locfileid: "19833407"
 |[ExtendedFieldURI](extendedfielduri.md) <br/> |拡張 MAPI プロパティを識別します。  <br/> |
 |[Folder](folder.md) <br/> |更新するフォルダーを識別します。  <br/> |
 |[CalendarFolder](calendarfolder.md) <br/> |主に予定表のアイテムを含むフォルダーを表します。  <br/> |
-|[メッセージ](contactsfolder.md) <br/> |メールボックスの連絡先フォルダーを表します。  <br/> |
+|[ContactsFolder](contactsfolder.md) <br/> |メールボックスの連絡先フォルダーを表します。  <br/> |
 |[SearchFolder](searchfolder.md) <br/> |メールボックスに格納されている検索フォルダーを表します。  <br/> |
 |[TasksFolder](tasksfolder.md) <br/> |メールボックスに含まれるタスク フォルダーを表します。  <br/> |
    
@@ -56,9 +156,9 @@ ms.locfileid: "19833407"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[(フォルダー) の更新](updates-folder.md) <br/> |定義する一連要素にはが含まれていて、このオプションを設定すると、フォルダーのプロパティへの変更を削除します。  <br/> |
+|[Updates (Folder)](updates-folder.md) <br/> |定義する一連要素にはが含まれていて、このオプションを設定すると、フォルダーのプロパティへの変更を削除します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 プロパティが存在する場合、プロパティの値が指定した値に設定します。 プロパティが存在しない場合は、指定の値を持つプロパティが作成されます。
   
@@ -75,11 +175,7 @@ ms.locfileid: "19833407"
    
 ## <a name="see-also"></a>関連項目
 
-
-
-
+- 
   [UpdateFolder 操作](updatefolder-operation.md)
-
-
 - [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
 

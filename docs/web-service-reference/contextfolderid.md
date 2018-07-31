@@ -12,24 +12,21 @@ api_type:
 - schema
 ms.assetid: 48de92aa-e124-42b5-89bc-cdce5e93d78b
 description: ContextFolderId 要素では、フォルダーを使用する操作を対象としているフォルダーを示します。 この要素は、コピー、削除、移動、およびターゲット フォルダー内のアイテムの会話の読み取り状態を設定するときに存在する必要があります。
-ms.openlocfilehash: bd863d0395b9b9d7b437833acfb656fec4580985
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 94428a079be6da8873c777556771579a7110fb62
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759742"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354282"
 ---
 # <a name="contextfolderid"></a>ContextFolderId
 
 **ContextFolderId**要素では、フォルダーを使用する操作を対象としているフォルダーを示します。 この要素は、コピー、削除、移動、およびターゲット フォルダー内のアイテムの会話の読み取り状態を設定するときに存在する必要があります。 
   
-[ApplyConversationAction](applyconversationaction.md)
-  
-[ConversationActions](conversationactions.md)
-  
-[ConversationAction](conversationaction.md)
-  
-[ContextFolderId](contextfolderid.md)
+- [ApplyConversationAction](applyconversationaction.md) 
+- [ConversationActions](conversationactions.md)
+- [ConversationAction](conversationaction.md)
+- [ContextFolderId](contextfolderid.md)
   
 ```XML
 <ContextFolderId>
@@ -37,7 +34,15 @@ ms.locfileid: "19759742"
 </ContextFolderId>
 ```
 
- **TargetFolderIdType**
+```XML
+<ContextFolderId>
+   <DistinguishedFolderId/>
+</ContextFolderId>
+```
+
+
+**TargetFolderIdType**
+
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -50,7 +55,7 @@ ms.locfileid: "19759742"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[フォルダー Id](folderid.md) <br/> |コンテキスト フォルダーの識別子と変更キーが含まれています。  <br/> |
+|[FolderId](folderid.md) <br/> |コンテキスト フォルダーの識別子と変更キーが含まれています。  <br/> |
 |[DistinguishedFolderId](distinguishedfolderid.md) <br/> |名前で参照可能なフォルダーを識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
@@ -63,7 +68,7 @@ ms.locfileid: "19759742"
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web Services.This の要素がホストをで Exchange Server 2010 Service Pack 1 (SP1) を導入する IIS 仮想ディレクトリにあります。
   
@@ -78,7 +83,5 @@ ms.locfileid: "19759742"
    
 ## <a name="see-also"></a>関連項目
 
-
-
-[ApplyConversationAction 操作](applyconversationaction-operation.md)
+- [ApplyConversationAction 操作](applyconversationaction-operation.md)
 

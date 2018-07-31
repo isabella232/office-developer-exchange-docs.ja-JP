@@ -1,5 +1,5 @@
 ---
-title: 通知
+title: Notification
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -12,14 +12,14 @@ api_type:
 - schema
 ms.assetid: c9070936-0930-438e-839c-91127256a6c8
 description: 通知の要素には、サブスクリプション、および最後の通知以降に発生したイベントに関する情報が含まれています。
-ms.openlocfilehash: a769d8988eb68d0fa0b02f3838cd891e714571b6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 942ec18521fc484a7a3aa1385fb54f480ce9d11f
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832547"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354352"
 ---
-# <a name="notification"></a>通知
+# <a name="notification"></a>Notification
 
 **通知**の要素には、サブスクリプション、および最後の通知以降に発生したイベントに関する情報が含まれています。 
   
@@ -32,7 +32,71 @@ ms.locfileid: "19832547"
 </Notification>
 ```
 
- **NotificationType**
+```xml
+<Notification>
+   <SubscriptionId/>
+   <PreviousWatermark/>
+   <MoreEvents/>
+   <CreatedEvent/>
+</Notification>
+```
+
+```xml
+<Notification>
+   <SubscriptionId/>
+   <PreviousWatermark/>
+   <MoreEvents/>
+   <DeletedEvent/>
+</Notification>
+```
+
+```xml
+<Notification>
+   <SubscriptionId/>
+   <PreviousWatermark/>
+   <MoreEvents/>
+   <ModifiedEvent/>
+</Notification>
+```
+
+```xml
+<Notification>
+   <SubscriptionId/>
+   <PreviousWatermark/>
+   <MoreEvents/>
+   <MovedEvent/>
+</Notification>
+```
+
+```xml
+<Notification>
+   <SubscriptionId/>
+   <PreviousWatermark/>
+   <MoreEvents/>
+   <NewMailEvent/>
+</Notification>
+```
+
+```xml
+<Notification>
+   <SubscriptionId/>
+   <PreviousWatermark/>
+   <MoreEvents/>
+   <StatusEvent/>
+</Notification>
+```
+
+```xml
+<Notification>
+   <SubscriptionId/>
+   <PreviousWatermark/>
+   <MoreEvents/>
+   <FreeBusyChangedEvent/>
+</Notification>
+```
+
+**NotificationType**
+
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -45,9 +109,9 @@ ms.locfileid: "19832547"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[サブスクリプション Id (GetEvents)](subscriptionid-getevents.md) <br/> |サブスクリプションの識別子を表します。  <br/> |
+|[SubscriptionId (GetEvents)](subscriptionid-getevents.md) <br/> |サブスクリプションの識別子を表します。  <br/> |
 |[PreviousWatermark](previouswatermark.md) <br/> |サブスクリプションでクライアントに正常に通信された最新イベントのウォーターマークを表します。  <br/> |
-|[イベント](moreevents.md) <br/> |クライアントに配信するキューにその他のイベントがあるかどうかを示します。  <br/> |
+|[MoreEvents](moreevents.md) <br/> |クライアントに配信するキューにその他のイベントがあるかどうかを示します。  <br/> |
 |[CopiedEvent](copiedevent.md) <br/> |アイテムまたはフォルダーのコピー先のイベントを表します。  <br/> |
 |[CreatedEvent](createdevent.md) <br/> |アイテムまたはフォルダーが作成されているイベントを表します。  <br/> |
 |[DeletedEvent](deletedevent.md) <br/> |アイテムまたはフォルダーが削除されるイベントを表します。  <br/> |
@@ -68,7 +132,7 @@ ms.locfileid: "19832547"
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
@@ -83,13 +147,8 @@ ms.locfileid: "19832547"
    
 ## <a name="see-also"></a>関連項目
 
-
-
-[サブスクライブ操作](subscribe-operation.md)
-  
-[GetEvents 操作](getevents-operation.md)
-  
-[GetStreamingEvents の操作](getstreamingevents-operation.md)
-  
-[Unsubscribe 操作](unsubscribe-operation.md)
+- [サブスクライブ操作](subscribe-operation.md) 
+- [GetEvents 操作](getevents-operation.md) 
+- [GetStreamingEvents の操作](getstreamingevents-operation.md) 
+- [Unsubscribe 操作](unsubscribe-operation.md)
 

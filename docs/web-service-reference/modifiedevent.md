@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: ca1309f4-2df7-4289-811c-75c3db0e7072
 description: ModifiedEvent 要素は、アイテムまたはフォルダーが変更されるイベントを表します。
-ms.openlocfilehash: fb464fb0a270d8ca7d33d40e5425e260970b2f1e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 2e9fb870396d49efb5cdf307a502b4111c2e507e
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832482"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353813"
 ---
 # <a name="modifiedevent"></a>ModifiedEvent
 
@@ -33,7 +33,18 @@ ms.locfileid: "19832482"
 </ModifiedEvent>
 ```
 
- **ModifiedEventType**
+```xml
+<ModifiedEvent>
+   <Watermark/>
+   <TimeStamp/>
+   <ItemId/> 
+   <ParentFolderId/>
+   <UnreadCount/>
+</ModifiedEvent>
+```
+
+**ModifiedEventType**
+
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -46,9 +57,9 @@ ms.locfileid: "19832482"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[透かし](watermark.md) <br/> |メールボックス イベント テーブル内のイベント ブックマークを表します。  <br/> |
-|[タイムスタンプ](timestamp.md) <br/> |変更されたアイテムまたはフォルダーのメールボックス イベントのタイムスタンプを表します。  <br/> |
-|[フォルダー Id](folderid.md) <br/> |変更されたフォルダーの識別子を表します。  <br/> |
+|[Watermark](watermark.md) <br/> |メールボックス イベント テーブル内のイベント ブックマークを表します。  <br/> |
+|[TimeStamp](timestamp.md) <br/> |変更されたアイテムまたはフォルダーのメールボックス イベントのタイムスタンプを表します。  <br/> |
+|[FolderId](folderid.md) <br/> |変更されたフォルダーの識別子を表します。  <br/> |
 |[ItemId](itemid.md) <br/> |変更されたアイテムの識別子を表します。  <br/> |
 |[ParentFolderId](parentfolderid.md) <br/> |変更されたアイテムまたはフォルダーの親フォルダーの識別子を表します。  <br/> |
 |[UnreadCount](unreadcount.md) <br/> |指定したフォルダー内の未読アイテムの数を表します。  <br/> |
@@ -59,7 +70,7 @@ ms.locfileid: "19832482"
 |:-----|:-----|
 |[通知](notification-ex15websvcsotherref.md) <br/> |サブスクリプションおよび最後の通知以降に発生したイベントに関する情報が含まれています。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 フォルダー内のアイテムの各変更に対して 2 つの変更イベントが生成されます。 1 つのイベントは、変更されたアイテムに関連します。 その他のイベントは、アイテムの親フォルダーに関連します。 これは、サブスクリプションが作成されたのと同じフォルダーです。 フォルダーの[UnreadCount](unreadcount.md)プロパティへの潜在的な変更を通信するためにこのフォルダーに関連付けられているイベントを使用します。 
   
@@ -76,11 +87,7 @@ MicrosoftExchange Server 2007 がインストールされているクライア�
    
 ## <a name="see-also"></a>関連項目
 
-
-
-[サブスクライブ操作](subscribe-operation.md)
-  
-[GetEvents 操作](getevents-operation.md)
-  
-[Unsubscribe 操作](unsubscribe-operation.md)
+- [サブスクライブ操作](subscribe-operation.md)  
+- [GetEvents 操作](getevents-operation.md)  
+- [Unsubscribe 操作](unsubscribe-operation.md)
 

@@ -1,5 +1,5 @@
 ---
-title: 標準
+title: Standard
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -12,14 +12,14 @@ api_type:
 - schema
 ms.assetid: d598f0a6-e296-423f-8ce5-3da57cfd8189
 description: 標準的な要素では、日付と時刻が変更されたとき夏時間から標準時間への時間を表します。
-ms.openlocfilehash: 1c9be4cf35773583078bc8e16ddf44433d3ad98c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: c121e959f243d982cfe50ed6b4ef39a82dae2cc8
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833536"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353435"
 ---
-# <a name="standard"></a>標準
+# <a name="standard"></a>Standard
 
 **標準的な**要素では、日付と時刻が変更されたとき夏時間から標準時間への時間を表します。 
   
@@ -31,7 +31,16 @@ ms.locfileid: "19833536"
 </Standard>
 ```
 
- **TimeChangeType**
+```xml
+<Standard TimeZoneName="">
+   <Offset/>
+   <AbsoluteDate/>
+   <Time/>
+</Standard>
+```
+
+**TimeChangeType**
+
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -49,7 +58,7 @@ ms.locfileid: "19833536"
 |[Offset](offset.md) <br/> |[BaseOffset](baseoffset.md)からのオフセットを示します。 **BaseOffset**要素とは、**オフセット**要素は、時間が標準時か夏時間かどうかを識別します。  <br/> |
 |[RelativeYearlyRecurrence](relativeyearlyrecurrence.md) <br/> |タイム ゾーンの移行日の相対的な年間の定期的なパターンを説明します。  <br/> |
 |[AbsoluteDate](absolutedate.md) <br/> |標準時間または夏時間から標準時から時間が変更されたときの日付を表します。  <br/> |
-|[時間 (TimeChangeType)](time-timechangetype.md) <br/> |標準時と夏時間との間の時間が変更されたときの時間について説明します。  <br/> |
+|[Time (TimeChangeType)](time-timechangetype.md) <br/> |標準時と夏時間との間の時間が変更されたときの時間について説明します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -57,7 +66,7 @@ ms.locfileid: "19833536"
 |:-----|:-----|
 |[MeetingTimeZone](meetingtimezone.md) <br/> |会議がホストされている場所のタイム ゾーンを表します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
@@ -71,8 +80,6 @@ ms.locfileid: "19833536"
 |空に設定可能  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>関連項目
-
-
 
 - [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
 

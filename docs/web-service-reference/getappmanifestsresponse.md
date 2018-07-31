@@ -8,25 +8,33 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 86cf88f4-09c4-436a-a100-ac5cba0c4388
 description: GetAppManifestsResponse 要素は、GetAppManifests 操作の要求に対する応答を定義します。
-ms.openlocfilehash: b5eac7c06c39c0ed80a362080db6b0cb37f8f4ca
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: ae9d1d853023a5b42db2e8fee2ed57f585433f69
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760630"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354149"
 ---
 # <a name="getappmanifestsresponse"></a>GetAppManifestsResponse
 
 **GetAppManifestsResponse**要素は、 **GetAppManifests**操作の要求に対する応答を定義します。 
   
-```XML
+```xml
 <GetAppManifestsResponse>
     <ResponseCode/>
     <Manifests/>
 </GetAppManifestsResponse>
 ```
 
- **GetAppManifestsResponseType**
+```xml
+<GetAppManifestsResponse>
+    <ResponseCode/>
+    <Apps/>
+</GetAppManifestsResponse>
+```
+
+**GetAppManifestsResponseType**
+
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -43,7 +51,7 @@ ms.locfileid: "19760630"
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
@@ -59,8 +67,6 @@ ms.locfileid: "19760630"
 |空にすることができます。  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>関連項目
-
-
 
 - [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
 

@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 22d30d1f-a84d-48bb-ad8f-ce13f8e76604
 description: CompleteName 要素は、連絡先の完全な名前を表します。
-ms.openlocfilehash: 1f6c9ba68fe941f848d0e250a39aea6894fca61e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: bca6f7e0eb915841673d00b5485da2f0f9794e80
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759638"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354261"
 ---
 # <a name="completename"></a>CompleteName
 
@@ -52,13 +52,13 @@ ms.locfileid: "19759638"
 |**要素**|**説明**|
 |:-----|:-----|
 |[Title](title.md) <br/> |連絡先のタイトルを表します。  <br/> |
-|[[部署名]](firstname.md) <br/> |連絡先の名前を表します。  <br/> |
-|[ミドル ネーム](middlename.md) <br/> |連絡先のミドル ネームを表します。  <br/> |
-|[[氏名]](lastname.md) <br/> |連絡先の姓を表します。  <br/> |
+|[FirstName](firstname.md) <br/> |連絡先の名前を表します。  <br/> |
+|[MiddleName](middlename.md) <br/> |連絡先のミドル ネームを表します。  <br/> |
+|[LastName](lastname.md) <br/> |連絡先の姓を表します。  <br/> |
 |[Suffix](suffix.md) <br/> |連絡先の名前にサフィックスを表します。  <br/> |
 |[[頭文字]](initials.md) <br/> |連絡先のイニシャルを表します。  <br/> |
 |[FullName](fullname.md) <br/> |連絡先の完全名を表します。  <br/> |
-|[ニックネーム](nickname.md) <br/> |連絡先のニックネームを表します。  <br/> |
+|[Nickname](nickname.md) <br/> |連絡先のニックネームを表します。  <br/> |
 |[YomiFirstName](yomifirstname.md) <br/> |日本語の姓の検索可能なまたはふりがなのスペル チェックを日本で使用される名前を表します。  <br/> |
 |[YomiLastName](yomilastname.md) <br/> |日本語の姓のふりがな、または検索可能なスペルの日本で使用される名前を表します。  <br/> |
    
@@ -66,11 +66,11 @@ ms.locfileid: "19759638"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Contact](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
+|[連絡先](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-[CompleteName](completename.md)プロパティは、[既定](https://msdn.microsoft.com/library/ExchangeWebServices.DefaultShapeNamesType.Default.aspx)の図形の一部です。 Microsoft Exchange Server 2007 の最初のリリース バージョン、 [GetItem 操作](getitem-operation.md)が[FindItem 操作](finditem-operation.md)ではなく、 [CompleteName](completename.md)プロパティが返されます。 Exchange Server 2007 Service Pack 1 (SP1) から始めて、 [FindItem 操作](finditem-operation.md)はまた、[既定](https://msdn.microsoft.com/library/ExchangeWebServices.DefaultShapeNamesType.Default.aspx)の図形を使用して[CompleteName](completename.md)プロパティを返します。 この変更は、スキーマには影響しません。 
+CompleteName プロパティは、[既定](https://docs.microsoft.com/en-us/dotnet/api/exchangewebservices.defaultshapenamestype?view=exchange-ews-proxy)の図形の一部です。 Microsoft Exchange Server 2007 の最初のリリース バージョン、 [GetItem 操作](getitem-operation.md)が[FindItem 操作](finditem-operation.md)ではなく、CompleteName プロパティが返されます。 Exchange Server 2007 Service Pack 1 (SP1) から始めて、 [FindItem 操作](finditem-operation.md)はまた、[既定](https://docs.microsoft.com/en-us/dotnet/api/exchangewebservices.defaultshapenamestype?view=exchange-ews-proxy)の図形を使用して CompleteName プロパティを返します。 この変更は、スキーマには影響しません。 
   
 MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
   
@@ -85,17 +85,7 @@ MicrosoftExchange Server 2007 がインストールされているクライア�
    
 ## <a name="see-also"></a>関連項目
 
-
-
-[CompleteNameType](https://msdn.microsoft.com/library/ExchangeWebServices.CompleteNameType.aspx)
-  
-[CompleteName](https://msdn.microsoft.com/library/ExchangeWebServices.ContactItemType.CompleteName.aspx)
-  
-[contactsCompleteName](https://msdn.microsoft.com/library/ExchangeWebServices.UnindexedFieldURIType.contactsCompleteName.aspx)
-
-
+- [CompleteNameType](https://msdn.microsoft.com/library/ExchangeWebServices.CompleteNameType.aspx)
 - [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
-
-
-[連絡先 (Exchange Web サービス) を作成します。](http://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
+- [連絡先 (Exchange Web サービス) を作成します。](http://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
 

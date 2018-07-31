@@ -12,22 +12,20 @@ api_type:
 - schema
 ms.assetid: 5cb43b02-d444-4d9c-9075-cdc5a4427daf
 description: ItemChange 要素には、項目 id と、アイテムに適用する更新プログラムが含まれています。
-ms.openlocfilehash: d10ce96cacb0be7411c4e8230ebc9b2803b7a5b1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 42484c8deecb106e05023215342af3c7d996d852
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832145"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353512"
 ---
 # <a name="itemchange"></a>ItemChange
 
 **ItemChange**要素には、項目 id と、アイテムに適用する更新プログラムが含まれています。 
   
-[UpdateItem](updateitem.md)
-  
-[ItemChanges](itemchanges.md)
-  
-[ItemChange](itemchange.md)
+- [UpdateItem](updateitem.md) 
+- [ItemChanges](itemchanges.md)
+- [ItemChange](itemchange.md)
   
 ```xml
 <ItemChange>
@@ -36,7 +34,22 @@ ms.locfileid: "19832145"
 </ItemChange>
 ```
 
- **ItemChangeType**
+```xml
+<ItemChange>
+   <OccurrenceItemId>...</OccurrenceItemId>
+   <Updates>...</Updates>
+</ItemChange>
+```
+
+```xml
+<ItemChange>
+   <RecurringMasterItemId>...</RecurringMasterItemId>
+   <Updates>...</Updates>
+</ItemChange>
+```
+
+**ItemChangeType**
+
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -52,7 +65,7 @@ ms.locfileid: "19832145"
 |[ItemId](itemid.md) <br/> |Exchange ストア内のアイテムの一意の識別子と変更キーが含まれています。 [OccurrenceItemId](occurrenceitemid.md)または[RecurringMasterItemId](recurringmasteritemid.md)要素を使用しない場合、この要素が必要です。  <br/> |
 |[OccurrenceItemId](occurrenceitemid.md) <br/> |定期的なアイテムの 1 回の発生を識別します。 使用する場合、この要素が必要です。 [RecurringMasterItemId](recurringmasteritemid.md)または[アイテム Id](itemid.md)要素を使用しない場合、この要素が必要です。  <br/> |
 |[RecurringMasterItemId](recurringmasteritemid.md) <br/> |関連の出現アイテムの id のいずれかを識別することによって、定期的な予定のマスター アイテムを識別します。 使用する場合、この要素が必要です。 [OccurrenceItemId](occurrenceitemid.md)または[アイテム Id](itemid.md)要素を使用しない場合、この要素が必要です。  <br/> |
-|[更新 (アイテム)](updates-item.md) <br/> |定義する配列が含まれていて、このオプションを設定すると、アイテムのプロパティの変更を削除します。 この要素は必須です。  <br/> |
+|[Updates (Item)](updates-item.md) <br/> |定義する配列が含まれていて、このオプションを設定すると、アイテムのプロパティの変更を削除します。 この要素は必須です。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -60,7 +73,7 @@ ms.locfileid: "19832145"
 |:-----|:-----|
 |[ItemChanges](itemchanges.md) <br/> |アイテムと、アイテムに適用する更新プログラムを識別する[ItemChange](itemchange.md)要素の配列が含まれています。  <br/> この要素への XPath 式は、次のようにします。  <br/>  `/UpdateItem/ItemChanges` <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **ItemChange**要素では、唯一の[アイテム Id](itemid.md)、 [OccurrenceItemId](occurrenceitemid.md)、または[RecurringMasterItemId](recurringmasteritemid.md)要素を使用できます。 
   
@@ -77,8 +90,6 @@ MicrosoftExchange Server 2007 がインストールされているクライア�
    
 ## <a name="see-also"></a>関連項目
 
-
-
-
+- 
   [UpdateItem 操作](updateitem-operation.md)
 

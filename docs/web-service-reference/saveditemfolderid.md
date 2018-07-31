@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 4b8b475c-9ca5-48c9-acb0-8848b53be1ce
 description: SavedItemFolderId 要素は、更新、送信、およびメールボックス内のアイテムを作成する操作のターゲット フォルダーを識別します。
-ms.openlocfilehash: c57a7fb4abc2f7ee7b599f56f016811d6ff2c21c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 3f46070a538f5e03007925565a8888efe06b62b7
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833277"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354163"
 ---
 # <a name="saveditemfolderid"></a>SavedItemFolderId
 
@@ -29,7 +29,14 @@ ms.locfileid: "19833277"
 </SavedItemFolderId>
 ```
 
- **TargetFolderIdType**
+```xml
+<SavedItemFolderId>
+   <DistinguishedFolderId/>
+</SavedItemFolderId>
+```
+
+**TargetFolderIdType**
+
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -42,7 +49,7 @@ ms.locfileid: "19833277"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[フォルダー Id](folderid.md) <br/> |更新、送信、および Exchange ストア内の項目を作成する操作の対象となるフォルダーの識別子と変更キーが含まれています。  <br/> |
+|[FolderId](folderid.md) <br/> |更新、送信、および Exchange ストア内の項目を作成する操作の対象となるフォルダーの識別子と変更キーが含まれています。  <br/> |
 |[DistinguishedFolderId](distinguishedfolderid.md) <br/> |更新、送信、および Exchange ストア内の項目を作成する操作の名前付きの識別子では、対象となるフォルダーを識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
@@ -53,7 +60,7 @@ ms.locfileid: "19833277"
 |[UpdateItem](updateitem.md) <br/> |Exchange ストア内の項目を更新する要求を定義します。  <br/> この要素への XPath 式は、次のようにします。  <br/>  `/UpdateItem` <br/> |
 |[SendItem](senditem.md) <br/> |Exchange ストア内のアイテムを送信する要求を定義します。  <br/> この要素への XPath 式は、次のようにします。  <br/>  `/SendItem` <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
   

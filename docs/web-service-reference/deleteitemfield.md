@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 3893be6a-49a7-49f6-bf53-c7f819ec3f87
 description: DeleteItemField 要素は、アイテムから UpdateItem 呼び出し時に指定したプロパティを削除する操作を表します。
-ms.openlocfilehash: 2388bd10379211a31890b7c4f27920431ce444c8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 571227eece8f717c1bf5da27cfab8ae50dfe3572
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759986"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353883"
 ---
 # <a name="deleteitemfield"></a>DeleteItemField
 
@@ -26,7 +26,7 @@ ms.locfileid: "19759986"
 - [UpdateItem](updateitem.md)  
 - [ItemChanges](itemchanges.md) 
 - [ItemChange](itemchange.md) 
-- [更新 (アイテム)](updates-item.md) 
+- [Updates (Item)](updates-item.md) 
 - [DeleteItemField](deleteitemfield.md)
   
 ```xml
@@ -35,7 +35,20 @@ ms.locfileid: "19759986"
 </DeleteItemField>
 ```
 
- **DeleteItemFieldType**
+```xml
+<DeleteItemField>
+   <IndexedFieldURI/> 
+</DeleteItemField>
+```
+
+```xml
+<DeleteItemField>
+   <ExtendedFieldURI/>
+</DeleteItemField>
+```
+
+**DeleteItemFieldType**
+
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -56,9 +69,9 @@ ms.locfileid: "19759986"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[更新 (アイテム)](updates-item.md) <br/> |定義する要素のセットが含まれていて、このオプションを設定すると、アイテムのプロパティの変更を削除します。  <br/><br/>この要素への XPath 式は、次のようにします。<br/>`/UpdateItem/ItemChanges/ItemChange[i]/Updates` <br/> |
+|[Updates (Item)](updates-item.md) <br/> |定義する要素のセットが含まれていて、このオプションを設定すると、アイテムのプロパティの変更を削除します。  <br/><br/>この要素への XPath 式は、次のようにします。<br/>`/UpdateItem/ItemChanges/ItemChange[i]/Updates` <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   

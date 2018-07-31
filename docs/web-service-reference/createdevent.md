@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: f0e53a53-c352-42a5-8280-cd808b0e961b
 description: CreatedEvent 要素は、アイテムまたはフォルダーが作成されているイベントを表します。
-ms.openlocfilehash: f52516090d0789b4dd9fc1ced824786ce000e885
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 791b8af87c0cc8ae7f07850e3a6fedd9975a251e
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759806"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353176"
 ---
 # <a name="createdevent"></a>CreatedEvent
 
@@ -32,7 +32,17 @@ ms.locfileid: "19759806"
 </CreatedEvent>
 ```
 
- **BaseObjectChangedEventType**
+```xml
+<CreatedEvent>
+   <Watermark/>
+   <TimeStamp/>
+   <FolderId/>
+   <ParentFolderId/>
+</CreatedEvent>
+```
+
+**BaseObjectChangedEventType**
+
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -45,9 +55,9 @@ ms.locfileid: "19759806"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[透かし](watermark.md) <br/> |メールボックス イベント テーブル内のイベント ブックマークを表します。  <br/> |
-|[タイムスタンプ](timestamp.md) <br/> |作成されたアイテムまたはフォルダーのメールボックス イベントのタイムスタンプを表します。  <br/> |
-|[フォルダー Id](folderid.md) <br/> |作成したフォルダーの識別子を表します。  <br/> |
+|[Watermark](watermark.md) <br/> |メールボックス イベント テーブル内のイベント ブックマークを表します。  <br/> |
+|[TimeStamp](timestamp.md) <br/> |作成されたアイテムまたはフォルダーのメールボックス イベントのタイムスタンプを表します。  <br/> |
+|[FolderId](folderid.md) <br/> |作成したフォルダーの識別子を表します。  <br/> |
 |[ItemId](itemid.md) <br/> |作成されたアイテムの識別子を表します。  <br/> |
 |[ParentFolderId](parentfolderid.md) <br/> |作成したアイテムまたはフォルダーの親フォルダーの識別子を表します。  <br/> |
    
@@ -57,7 +67,7 @@ ms.locfileid: "19759806"
 |:-----|:-----|
 |[通知](notification-ex15websvcsotherref.md) <br/> |サブスクリプションおよび最後の通知以降に発生したイベントに関する情報が含まれています。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
   
@@ -72,16 +82,9 @@ MicrosoftExchange Server 2007 がインストールされているクライア�
    
 ## <a name="see-also"></a>関連項目
 
-
-
-[サブスクライブ操作](subscribe-operation.md)
-  
-[GetEvents 操作](getevents-operation.md)
-  
-[Unsubscribe 操作](unsubscribe-operation.md)
-
-
-[プル サブスクリプションを使用します。](http://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx)
-  
-[EWS でのイベントの通知](http://msdn.microsoft.com/library/4fd4b351-d35c-4ccc-9ed9-878932ab9d50%28Office.15%29.aspx)
+- [サブスクライブ操作](subscribe-operation.md)  
+- [GetEvents 操作](getevents-operation.md)  
+- [Unsubscribe 操作](unsubscribe-operation.md)
+- [プル サブスクリプションを使用します。](http://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx) 
+- [EWS でのイベントの通知](http://msdn.microsoft.com/library/4fd4b351-d35c-4ccc-9ed9-878932ab9d50%28Office.15%29.aspx)
 

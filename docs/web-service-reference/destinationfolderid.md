@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 77d2d222-320b-4aab-88e4-934ef177f55c
 description: DestinationFolderId 要素は、コピー先のフォルダーを指定し、アクションを移動します。
-ms.openlocfilehash: 5fb6cae7db9cdb09e23b3627e26e695ecf6418f2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: bfbacb9c82a681c7963ab5164c43cbb648e726cd
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760022"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353379"
 ---
 # <a name="destinationfolderid"></a>DestinationFolderId
 
@@ -34,7 +34,14 @@ ms.locfileid: "19760022"
 </DestinationFolderId>
 ```
 
- **TargetFolderIdType**
+```XML
+<DestinationFolderId>
+   <DistinguishedFolderId/>
+</DestinationFolderId>
+```
+
+**TargetFolderIdType**
+
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -47,7 +54,7 @@ ms.locfileid: "19760022"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[フォルダー Id](folderid.md) <br/> |コピー先のフォルダーの識別子と変更キーが含まれています。  <br/> |
+|[FolderId](folderid.md) <br/> |コピー先のフォルダーの識別子と変更キーが含まれています。  <br/> |
 |[DistinguishedFolderId](distinguishedfolderid.md) <br/> |名前で参照可能なフォルダーを識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
@@ -60,7 +67,7 @@ ms.locfileid: "19760022"
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web Services.This の要素がホストをで Exchange Server 2010 Service Pack 1 (SP1) を導入する IIS 仮想ディレクトリにあります。
   

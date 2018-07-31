@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: c4565eb4-b537-466c-b1ff-11602533812b
 description: DeletedEvent 要素は、アイテムまたはフォルダーが削除されるイベントを表します。
-ms.openlocfilehash: f06ca0727916f415c648e876f88bf7eacef5a5ff
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 5ddc909ffc9c74ea6b423610e915d5b9ff9bff43
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759969"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354408"
 ---
 # <a name="deletedevent"></a>DeletedEvent
 
@@ -28,6 +28,15 @@ ms.locfileid: "19759969"
    <Watermark/>
    <TimeStamp/>
    <ItemId/>
+   <ParentFolderId/>
+</DeletedEvent>
+```
+
+```xml
+<DeletedEvent>
+   <Watermark/>
+   <TimeStamp/>
+   <FolderId/>
    <ParentFolderId/>
 </DeletedEvent>
 ```
@@ -46,9 +55,9 @@ ms.locfileid: "19759969"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[透かし](watermark.md) <br/> |メールボックス イベント テーブル内のイベント ブックマークを表します。  <br/> |
-|[タイムスタンプ](timestamp.md) <br/> |アイテムまたはフォルダーの削除済みメールボックス イベントのタイムスタンプを表します。  <br/> |
-|[フォルダー Id](folderid.md) <br/> |削除されたフォルダーの識別子を表します。  <br/> |
+|[Watermark](watermark.md) <br/> |メールボックス イベント テーブル内のイベント ブックマークを表します。  <br/> |
+|[TimeStamp](timestamp.md) <br/> |アイテムまたはフォルダーの削除済みメールボックス イベントのタイムスタンプを表します。  <br/> |
+|[FolderId](folderid.md) <br/> |削除されたフォルダーの識別子を表します。  <br/> |
 |[ItemId](itemid.md) <br/> |削除された項目の識別子を表します。  <br/> |
 |[ParentFolderId](parentfolderid.md) <br/> |フォルダーを削除する前に、削除された項目の親フォルダーの識別子を表します。  <br/> |
    
@@ -58,7 +67,7 @@ ms.locfileid: "19759969"
 |:-----|:-----|
 |[通知](notification-ex15websvcsotherref.md) <br/> |サブスクリプションおよび最後の通知以降に発生したイベントに関する情報が含まれています。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
   

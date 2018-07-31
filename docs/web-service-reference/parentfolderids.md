@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: e7998023-e5e0-465c-91fa-2aa6d1559f64
 description: ParentFolderIds 要素は、検索 FindItem と FindFolder 操作用のフォルダーを識別します。
-ms.openlocfilehash: 4dd23b45dcc397e29e67fc08b29dd773e50f0db1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 7c4dcc98d1cabc8e97f2846880c73111dd307dfb
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832688"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354170"
 ---
 # <a name="parentfolderids"></a>ParentFolderIds
 
@@ -26,6 +26,12 @@ ms.locfileid: "19832688"
 ```xml
 <ParentFolderIds>
    <DistinguishedFolderId/>
+<ParentFolderIds>
+```
+
+```xml
+<ParentFolderIds>
+   <FolderId/> 
 <ParentFolderIds>
 ```
 
@@ -43,7 +49,7 @@ ms.locfileid: "19832688"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[フォルダー Id](folderid.md) <br/> |フォルダーの識別子と変更キーが含まれています。 **ParentFolderIds**要素には、この要素または[DistinguishedFolderId](distinguishedfolderid.md)要素のいずれかを使用する必要があります。  <br/> |
+|[FolderId](folderid.md) <br/> |フォルダーの識別子と変更キーが含まれています。 **ParentFolderIds**要素には、この要素または[DistinguishedFolderId](distinguishedfolderid.md)要素のいずれかを使用する必要があります。  <br/> |
 |[DistinguishedFolderId](distinguishedfolderid.md) <br/> |名前で参照できる Microsoft Exchange Server 2007 のフォルダーを識別します。 **ParentFolderIds**要素には、[フォルダー Id](folderid.md)要素またはこの要素のいずれかを使用する必要があります。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
@@ -54,7 +60,7 @@ ms.locfileid: "19832688"
 |[FindItem](finditem.md) <br/> |メールボックス内のアイテムを検索するための要求を定義します。  <br/> |
 |[ResolveNames](resolvenames.md) <br/> |あいまいな名前を解決する要求を定義します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **ParentFolderIds**要素には、[フォルダー Id](folderid.md)または[DistinguishedFolderId](distinguishedfolderid.md)要素のいずれかを使用する必要があります。 検索対象のフォルダーの無制限の数を定義できます。 
   

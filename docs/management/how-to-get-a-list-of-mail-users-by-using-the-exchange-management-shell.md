@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8b790dc8-5c4f-4acf-bbe7-63523395fbe7
 description: Exchange 管理シェル コマンドレットを使用して、Exchange メールボックスのユーザーの一覧を取得するツールを作成する方法について説明します。
-ms.openlocfilehash: 6f64330a11e372bffbea2fcd88bcfa0231ec0f28
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: e9493571e98760e5a11674db9a552111c1ec29b2
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759198"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354002"
 ---
 # <a name="get-a-list-of-mail-users-by-using-the-exchange-management-shell"></a>Exchange 管理シェルを使用してメール ユーザーの一覧を取得します。
 
@@ -53,21 +53,21 @@ Exchange 管理シェル コマンドレットを使用するリモートの実�
   
 |**認証方法**|**適用されます。**|**URI**|
 |:-----|:-----|:-----|
-|[基本認証を使用して Exchange Online にリモートの実行空間に接続します。](#bk_basic) <br/> |Exchange Online サーバー  <br/> |`https://outlook.office365.com/PowerShell-LiveID`<br/><br/>`https://<server>/PowerShell-LiveID`  <br/> |
+|[基本認証を使用して Exchange Online のリモートの実行空間に接続します。](#bk_basic) <br/> |Exchange Online サーバー  <br/> |`https://outlook.office365.com/PowerShell-LiveID`<br/><br/>`https://<server>/PowerShell-LiveID`  <br/> |
 |[証明書による認証を使用してリモートの実行空間に接続します。](#bk_cert) <br/> |Exchange Online と Exchange オンプレミス サーバー  <br/> |`https://outlook.office365.com/PowerShell`<br/><br/>`https://<server>/PowerShell`<br/><br/>`http://<server>/PowerShell`  <br/> |
-|[Kerberos 認証を使用して Exchange サーバー上のリモートの実行空間に接続します。](#bk_Kerberos) <br/> |Exchange Online と Exchange オンプレミス サーバー  <br/> |`https://<server>/PowerShell`<br/><br/>`http://<server>/PowerShell`  <br/> |
+|[Kerberos 認証を使用して Exchange サーバーのリモートの実行空間に接続する](#bk_Kerberos) <br/> |Exchange Online と Exchange オンプレミス サーバー  <br/> |`https://<server>/PowerShell`<br/><br/>`http://<server>/PowerShell`  <br/> |
 
 <a name="bk_basic"> </a>
 
 ### <a name="connect-to-a-remote-runspace-on-exchange-online-by-using-basic-authentication"></a>基本認証を使用して Exchange Online のリモートの実行空間に接続します。
 
-次のコード例では、 **GetUsersUsingBasicAuth**メソッドは、基本認証を使用して、リモートのオンラインの Exchange サーバー上で Exchange 管理シェルの実行空間を作成するを定義します。 メソッド メソッドを呼び出して、 **GetUserInformation** 、リモート サーバー上のユーザーの一覧を取得するのには、[リモートの実行空間からのユーザーのメールボックスの一覧を取得する](#bk_remote)には、セクションで定義されています。
+次のコード例は **GetUsersUsingBasicAuth** メソッドを定義します。これは、基本認証を使用して、リモートの Exchange Online サーバーに Exchange 管理シェルの実行空間を作成します。このメソッドは次に、「[リモートの実行空間からメールボックスのユーザーの一覧を取得する](#bk_remote)」セクションで定義されているように、リモート サーバー上のユーザーの一覧を返す **GetUserInformation** メソッドを呼び出します。
   
 このメソッドは、以下のパラメーターを必要とします。
   
--  **liveIDConnectionUri**&ndash;アプリケーションを認証するオンラインの Exchange サーバーの URI を含む文字列です。 Office 365 のオンラインの Exchange を実行する場合、URI は、 https://outlook.office365.com/PowerShell-LiveID。それ以外の場合、URI は、https://\<サーバー名\>/PowerShell-LiveID。 
+-  **liveIDConnectionUri**&ndash;アプリケーションを認証するオンラインの Exchange サーバーの URI を含む文字列です。 Office 365 のオンラインの Exchange を実行する場合、URI は、 `https://outlook.office365.com/PowerShell-LiveID`。URI は、それ以外の場合、 `https://<servername>/PowerShell-LiveID`。 
     
--  **schemaUri**&ndash; Exchange 管理シェルのスキーマを定義するスキーマ ドキュメントの URI を含む文字列です。 スキーマの URI は、 http://schemas.microsoft.com/powershell/Microsoft.Exchange。 
+-  **schemaUri**&ndash; Exchange 管理シェルのスキーマを定義するスキーマ ドキュメントの URI を含む文字列です。 スキーマの URI は、 `http://schemas.microsoft.com/powershell/Microsoft.Exchange`。 
     
 -  **資格情報**&ndash;アプリケーションを実行したユーザーの資格情報を格納する[PSCredential](http://msdn.microsoft.com/en-us/library/system.management.automation.pscredential%28VS.85%29.aspx)オブジェクトです。 
     
@@ -107,7 +107,7 @@ public Collection<PSObject> GetUsersUsingBasicAuth(
 
 ### <a name="connect-to-a-remote-runspace-by-using-certificate-authentication"></a>証明書による認証を使用してリモートの実行空間に接続します。
 
-次のコード例は、証明書を使用して、リモート サーバー上の Exchange 管理シェルの実行空間を作成する、 **GetUsersUsingCertificate**メソッドを定義します。 メソッド メソッドを呼び出して、 **GetUserInformation** 、リモート サーバー上のユーザーの一覧を取得するのには、[リモートの実行空間からのユーザーのメールボックスの一覧を取得する](#bk_remote)には、セクションで定義されています。
+次のコード例は **GetUsersUsingCertificate** メソッドを定義します。これは証明書を使用して、リモート サーバーに Exchange 管理シェルの実行空間を作成します。このメソッドは次に、「[リモートの実行空間からメールボックスのユーザーの一覧を取得する](#bk_remote)」セクションで定義されているように、リモート サーバー上のユーザーの一覧を返す **GetUserInformation** メソッドを呼び出します。
   
 このメソッドは、以下のパラメーターを必要とします。
   
@@ -160,7 +160,7 @@ public Collection<PSObject> GetUsersUsingCertificate(
 
 ### <a name="connect-to-a-remote-runspace-on-an-exchange-server-by-using-kerberos-authentication"></a>Kerberos 認証を使用して Exchange サーバーのリモートの実行空間に接続する
 
-次のコード例は、Kerberos 認証を使用してリモート サーバー上で Exchange 管理シェルの実行空間を作成する、 **GetUsersUsingKerberos**メソッドを定義します。 メソッド メソッドを呼び出して、 **GetUserInformation** 、リモート サーバー上のユーザーの一覧を取得するのには、[リモートの実行空間からのユーザーのメールボックスの一覧を取得する](#bk_remote)には、セクションで定義されています。
+次のコード例は **GetUsersUsingKerberos** メソッドを定義します。これは、Kerberos 認証を使用して、リモート サーバーに Exchange 管理シェルの実行空間を作成します。このメソッドは次に、「[リモートの実行空間からメールボックスのユーザーの一覧を取得する](#bk_remote)」セクションで定義されているように、リモート サーバー上のユーザーの一覧を返す **GetUserInformation** メソッドを呼び出します。
   
 このメソッドは、以下のパラメーターを必要とします。
   
@@ -253,7 +253,7 @@ End Function
   
 ## <a name="see-also"></a>関連項目
 
-- [Exchange 管理シェルのツールを作成します。](create-exchange-management-shell-tools.md)   
+- [Exchange 管理シェル ツールの作成](create-exchange-management-shell-tools.md)   
 - [Exchange 管理シェル コマンドレットの応答を使用します。](how-to-use-the-exchange-management-shell-cmdlet-response.md)
     
 

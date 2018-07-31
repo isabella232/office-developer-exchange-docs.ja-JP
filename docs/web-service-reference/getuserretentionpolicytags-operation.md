@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 57c6ff23-5c2c-42ee-824b-5a1b6dafab8c
 description: 操作 GetUserRetentionPolicyTags EWS についての情報を検索します。
-ms.openlocfilehash: 2b1267ce6822c7bad05ad2ef88547ba75c632ab0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: faf3553c5dd426b522659029bda6819c55f2708d
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831700"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353232"
 ---
 # <a name="getuserretentionpolicytags-operation"></a>GetUserRetentionPolicyTags 操作
 
@@ -167,13 +167,13 @@ ms.locfileid: "19831700"
     
 - [RetentionPolicyTag](retentionpolicytag.md)
     
-- [表示名 (文字列)](displayname-string.md)
+- [DisplayName (string)](displayname-string.md)
     
 - [RetentionId](retentionid.md)
     
 - [RetentionPeriod](retentionperiod.md)
     
-- [型 (ElcFolderType)](type-elcfoldertype.md)
+- [Type (ElcFolderType)](type-elcfoldertype.md)
     
 - [RetentionAction](retentionaction.md)
     
@@ -189,9 +189,3 @@ ms.locfileid: "19831700"
 
 EWS を汎用のエラー コードは、 [ResponseCode](responsecode.md)を参照してください。
   
-## <a name="see-also"></a>関連項目
-
-
-
-[EWS のリテンション ・ ポリシー](http://msdn.microsoft.com/library/a132872f-0228-4bcb-aac2-bf64fb07e58e%28Office.15%29.aspx)
-

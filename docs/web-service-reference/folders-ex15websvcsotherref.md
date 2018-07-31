@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 8e71cb44-1df6-444a-add7-0c1363863f65
 description: フォルダーの要素には、フォルダーの操作で使用されているフォルダーの配列が含まれています。
-ms.openlocfilehash: e1b9e337f633dbf6fda159c28725d3fb8dcd55a6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 34372f2480825c7a9977eeae8e730c201307f36b
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760570"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353589"
 ---
 # <a name="folders"></a>フォルダー
 
@@ -29,7 +29,32 @@ ms.locfileid: "19760570"
 </Folders>
 ```
 
- **ArrayOfFoldersType**または**NonEmptyArrayOfFoldersType**
+```xml
+<Folders>
+   <ContactsFolder/> 
+</Folders>
+```
+
+```xml
+<Folders>
+   <TasksFolder/>
+</Folders>
+```
+
+```xml
+<Folders>
+   <CalendarFolder/>
+</Folders>
+```
+
+```xml
+<Folders>
+   <SearchFolder/> 
+</Folders>
+```
+
+**ArrayOfFoldersType**または**NonEmptyArrayOfFoldersType**
+
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -44,7 +69,7 @@ ms.locfileid: "19760570"
 |:-----|:-----|
 |[Folder](folder.md) <br/> |作成、取得、検索、同期、または更新するフォルダーを識別します。  <br/> |
 |[CalendarFolder](calendarfolder.md) <br/> |主に予定表のアイテムを含むフォルダーを表します。  <br/> |
-|[メッセージ](contactsfolder.md) <br/> |メールボックスの連絡先フォルダーを表します。  <br/> |
+|[ContactsFolder](contactsfolder.md) <br/> |メールボックスの連絡先フォルダーを表します。  <br/> |
 |[SearchFolder](searchfolder.md) <br/> |メールボックスに含まれている検索フォルダーを表します。  <br/> |
 |[TasksFolder](tasksfolder.md) <br/> |メールボックス内のタスク フォルダーを表します。  <br/> |
    
@@ -62,7 +87,7 @@ ms.locfileid: "19760570"
 |[RootFolder (FindFolderResponseMessage)](rootfolder-findfolderresponsemessage.md) <br/> |[FindFolder 操作](findfolder-operation.md)中に単一のルート フォルダーの検索結果が含まれています。  <br/> |
 |[UpdateFolderResponseMessage](updatefolderresponsemessage.md) <br/> |状態および 1 つの結果が含まれています[UpdateFolder 操作](updatefolder-operation.md)を要求します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は、 [ParentFolderId (TargetFolderIdType)](parentfolderid-targetfolderidtype.md)の要素の必須の子要素です。 
   
@@ -79,7 +104,5 @@ ms.locfileid: "19760570"
    
 ## <a name="see-also"></a>関連項目
 
-
-
-[ParentFolderId (TargetFolderIdType)](parentfolderid-targetfolderidtype.md)
+- [ParentFolderId (TargetFolderIdType)](parentfolderid-targetfolderidtype.md)
 

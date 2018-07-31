@@ -7,17 +7,17 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: b53ed47a-3d01-4c4e-ad32-fb0532872aad
-description: して、Exchange 2013 のトランスポート エージェントの読み取り、書き込み、およびメッセージを変更するのには.NET Framework クラスの詳細について説明します。
-ms.openlocfilehash: c2a5d764140b86ddec49d51ec969aab63eb34f19
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Exchange 2013 のカスタム トランスポート エージェントでメッセージを読み取り、書き込み、および変更するために使用できる .NET Framework クラスの詳細について説明します。
+ms.openlocfilehash: a39d6ecaeb837ce2760d762107e78aa8d4f09f7c
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759264"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354009"
 ---
 # <a name="reading-and-modifying-messages-in-the-exchange-2013-transport-pipeline"></a>Exchange 2013 トランスポート パイプライン内のメッセージの読み取りおよび変更
 
-して、Exchange 2013 のトランスポート エージェントの読み取り、書き込み、およびメッセージを変更するのには.NET Framework クラスの詳細について説明します。
+Exchange 2013 のカスタム トランスポート エージェントでメッセージを読み取り、書き込み、および変更するために使用できる .NET Framework クラスの詳細について説明します。
   
 **に適用されます:** Exchange Server 2013
   
@@ -89,7 +89,7 @@ iCalendar 名前空間には、iCalendar データに対応した順方向専用
   
 [CalendarReader](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.aspx) 、 [CalendarWriter](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarWriter.aspx)クラスを使用する iCalendar のデータのストリームを読み書きします。 
   
-CalendarReader は、読み取り可能な[ストリーム](https://msdn.microsoft.com/library/System.IO.Stream.aspx)をそのコンス トラクターに引数として使用します。 [ReadFirstChildComponent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.ReadFirstChildComponent.aspx) 、 [ReadNextSiblingComponent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.ReadNextSiblingComponent.aspx) 、および[ReadNextComponent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.ReadNextComponent.aspx)メソッドは、順番にコンポーネントにアクセスする、iCalendar のデータ ストリームで使用できます。 [ComplianceMode](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.ComplianceMode.aspx)プロパティに設定した値に基づき、iCalendar のストリーム内のエラーは、スローされる例外が発生または[準拠](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarComplianceStatus.Compliant.aspx)以外の値に設定する[ComplianceStatus](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.ComplianceStatus.aspx)プロパティは。 ICalendar のデータを受信して、問題を検出するには、このプロパティをチェックすることができます。 
+CalendarReader は、読み取り可能な[ストリーム](https://msdn.microsoft.com/library/System.IO.Stream.aspx)をそのコンス トラクターに引数として使用します。 [ReadFirstChildComponent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.ReadFirstChildComponent.aspx)、 [ReadNextSiblingComponent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.ReadNextSiblingComponent.aspx)、および[ReadNextComponent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.ReadNextComponent.aspx)メソッドは、順番にコンポーネントにアクセスする、iCalendar のデータ ストリームで使用できます。 [ComplianceMode](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.ComplianceMode.aspx)プロパティに設定した値に基づき、iCalendar のストリーム内のエラーは、スローされる例外が発生または[準拠](https://msdn.microsoft.com/en-us/library/microsoft.exchange.data.contenttypes.icalendar.calendarcompliancestatus.aspx)以外の値に設定する[ComplianceStatus](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarReader.ComplianceStatus.aspx)プロパティは。 ICalendar のデータを受信して、問題を検出するには、このプロパティをチェックすることができます。 
   
 [CalendarWriter](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ContentTypes.iCalendar.CalendarWriter.aspx)クラスは、書き込み可能な[ストリーム](https://msdn.microsoft.com/library/System.IO.Stream.aspx)をそのコンス トラクターに引数として使用します。 
   
@@ -188,7 +188,7 @@ TextConverters 名前空間には、電子メール メッセージのコンテ�
     
 これらのテキスト コンバーターを使用すると、ドキュメント ストリームの形式を変更する、または HTML ドキュメントから保護されていない要素を削除することができます。 [TextConverter](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.TextConverter.aspx)基本クラスの変換メソッドのいずれかに 1 回の呼び出しを使用して変換を実行するのには単独でこれらのクラスを使用できますか、コンバーターで変換後の読み取りを実行するのにはそれを使用または書き込みのコンス トラクターに引き渡すことができます。 
   
-基本クラスから継承した機能では、元の文書と、変換後の出力を格納するための十分な空き領域がある場合、または変換の結果を格納する場合は、変換を実行するのに便利です。 **Convert**メソッドでは、入力と出力ストリーム、テキスト リーダー、または、テキスト ライターには、関連付けられている出力への入力の内容を変換します。 
+基底クラスから継承した機能は、元のドキュメントと変換後の出力を保存するための十分な領域がある場合や、変換の結果を保存する必要がある場合の変換を実行する際に役立ちます。**Convert** メソッドは、入力と出力のストリーム、テキスト リーダー、またはテキスト ライターを受け取り、入力のコンテンツを関連付けられた出力に変換します。 
   
 この名前空間には、次に示すテキスト リーダー、ライター、およびストリームのクラスも含まれています。
   
@@ -219,7 +219,7 @@ vCard 名前空間には、vCard データ形式で電子メール メッセー�
 ## <a name="see-also"></a>関連項目
 
 - [Exchange のトランスポート エージェント](transport-agents-in-exchange-2013.md)  
-- [トランスポート エージェントの概念には、Exchange 2013](transport-agent-concepts-in-exchange-2013.md) 
+- [Exchange 2013 におけるトランスポート エージェントの概念](transport-agent-concepts-in-exchange-2013.md) 
 - [Exchange 2013 のトランスポート エージェントのリファレンス](transport-agent-reference-for-exchange-2013.md)
 - [MIME メディア タイプ](http://www.iana.org/assignments/media-types)
     

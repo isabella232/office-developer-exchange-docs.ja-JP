@@ -1,5 +1,5 @@
 ---
-title: 内容
+title: Contains
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -12,14 +12,14 @@ api_type:
 - schema
 ms.assetid: 476d059d-c243-43e9-b475-319fc413ade2
 description: 含まれる要素は、指定したプロパティに指定された文字列定数の値が含まれているかどうかを判断する検索式を表します。
-ms.openlocfilehash: 083efdf32cd32bea6964361b5b558480aa937280
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: b25b69aadf2c331527a17ad81ed46f61aa7b93c2
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759700"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354289"
 ---
-# <a name="contains"></a>内容
+# <a name="contains"></a>Contains
 
 **含まれる**要素は、指定したプロパティに指定された文字列定数の値が含まれているかどうかを判断する検索式を表します。 
   
@@ -30,7 +30,23 @@ ms.locfileid: "19759700"
 </Contains>
 ```
 
- **ContainsExpressionType**
+```xml
+<Contains ContainmentMode="" ContainmentComparison="">
+   <ExtendedFieldURI/>
+   <Constant/>
+</Contains>
+```
+
+```xml
+<Contains ContainmentMode="" ContainmentComparison="">
+   <IndexedFieldURI/>
+   <Constant/>
+</Contains>
+```
+
+
+**ContainsExpressionType**
+
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -83,7 +99,7 @@ ms.locfileid: "19759700"
 |[And](and.md) <br/> |使用すると、2 つまたは複数の検索式間で論理 And 演算を実行する検索式を表します。 **すべての And に含まれている検索式に**該当**する場合は、And 演算の結果は**  <br/> |
 |[Or](or.md) <br/> |含まれている検索式に対して論理 OR を実行する検索式を表します。 その子のいずれかの**場合は true**を返す場合、要素[または](or.md)要素は**true**を返します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 属性を使用すると、要素を照合する方法を決定します。
   
@@ -99,8 +115,6 @@ MicrosoftExchange Server 2007 がインストールされているクライア�
 |空に設定可能  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>関連項目
-
-
 
 - [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
 

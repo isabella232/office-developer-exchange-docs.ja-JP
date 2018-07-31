@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: b8a59740-d978-454c-9629-a10792385ba0
 description: FindFolder 要素は、メールボックス内のフォルダーを検索するための要求を定義します。
-ms.openlocfilehash: d41283547c443e38e2e87379a7224df9c89f901d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 69fbaebc5615ac7d19512770658cde83e4d352df
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760501"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353533"
 ---
 # <a name="findfolder"></a>FindFolder
 
@@ -32,7 +32,17 @@ ms.locfileid: "19760501"
 </FindFolder>
 ```
 
- **FindFolderType**
+```xml
+<FindFolder Traversal="Shallow/Deep/SoftDeleted">
+   <FolderShape/>
+   <FractionalPageFolderView/>
+   <Restriction/>
+   <ParentFolderIds/>
+</FindFolder>
+```
+
+**FindFolderType**
+
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -65,7 +75,7 @@ ms.locfileid: "19760501"
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
@@ -73,7 +83,7 @@ ms.locfileid: "19760501"
 
 FindFolder 要求の次の例では、受信トレイ内にあるすべてのフォルダーを検索する要求を作成する方法を示します。
   
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
   xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
@@ -101,8 +111,6 @@ FindFolder 要求の次の例では、受信トレイ内にあるすべてのフ
    
 ## <a name="see-also"></a>関連項目
 
-
-
-
+- 
   [FindFolder 操作](findfolder-operation.md)
 

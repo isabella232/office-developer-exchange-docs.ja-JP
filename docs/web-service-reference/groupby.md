@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 9728619b-4674-4b9d-9f6c-e75c6165966c
 description: GroupBy 要素は、FindItem クエリの任意のグループ化を指定します。
-ms.openlocfilehash: d85c0fddec244c99dfbea1f85da331fc5319536d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: cdf9b9906025bc91768bb4a14acb2573801c4e12
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831753"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353218"
 ---
 # <a name="groupby"></a>GroupBy
 
@@ -33,7 +33,22 @@ ms.locfileid: "19831753"
 </GroupBy>
 ```
 
- **GroupByType**
+```xml
+<GroupBy Order="">
+   <ExtendededFieldURI/>
+   <AggregateOn/>
+</GroupBy>
+```
+
+```xml
+<GroupBy Order="">
+   <IndexedFieldURI/>
+   <AggregateOn/>
+</GroupBy>
+```
+
+**GroupByType**
+
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -66,7 +81,7 @@ ms.locfileid: "19831753"
 |:-----|:-----|
 |[FindItem](finditem.md) <br/> |メールボックス内のアイテムを検索するための要求を定義します。  <br/><br/> この要素への XPath 式は、次のようにします。`/FindItem` <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 FindItem 応答グループのコレクションが含まれます。 **GroupBy**プロパティの値が一致するすべての項目は、各グループが含まれます。 [FieldURI](fielduri.md)、 [IndexedFieldURI](indexedfielduri.md)、または[ExtendedFieldURI](extendedfielduri.md)要素のグループ化を決定するプロパティが識別されます。 
   

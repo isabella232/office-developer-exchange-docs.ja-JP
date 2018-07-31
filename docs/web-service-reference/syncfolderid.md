@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 3645fa03-236d-4e5f-b8b9-5d98f7f35fa2
 description: SyncFolderId 要素は、[同期する項目を含むフォルダーを表します。
-ms.openlocfilehash: 45a4a62c7d269861555089019db259eacab26ef0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: c90a20095ca4706f0c6edae3e98eaadd6024d817
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839635"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354401"
 ---
 # <a name="syncfolderid"></a>SyncFolderId
 
@@ -29,7 +29,14 @@ ms.locfileid: "19839635"
 </SyncFolderId>
 ```
 
- **TargetFolderIdType**
+```xml
+<SyncFolderId>
+   <DistinguishedFolderId/> 
+</SyncFolderId>
+```
+
+**TargetFolderIdType**
+
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -42,7 +49,7 @@ ms.locfileid: "19839635"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[フォルダー Id](folderid.md) <br/> |フォルダーの識別子と変更キーが含まれています。  <br/> |
+|[FolderId](folderid.md) <br/> |フォルダーの識別子と変更キーが含まれています。  <br/> |
 |[DistinguishedFolderId](distinguishedfolderid.md) <br/> |名前で参照することができます MicrosoftExchange Server 2007 フォルダーを識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
@@ -52,7 +59,7 @@ ms.locfileid: "19839635"
 |[SyncFolderHierarchy](syncfolderhierarchy.md) <br/> |Exchange ストア内のフォルダー階層を同期するための要求を定義します。  <br/> |
 |[SyncFolderItems](syncfolderitems.md) <br/> |Exchange ストア フォルダー内のアイテムを同期するための要求を定義します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
@@ -67,10 +74,6 @@ ms.locfileid: "19839635"
    
 ## <a name="see-also"></a>関連項目
 
-
-
-[SyncFolderItems の操作](syncfolderitems-operation.md)
-
-
+- [SyncFolderItems 操作](syncfolderitems-operation.md)
 - [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
 

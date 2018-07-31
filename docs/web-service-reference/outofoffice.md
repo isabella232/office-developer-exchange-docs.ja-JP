@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: fe1256ab-5c0f-467d-abb3-b38a2dc312ae
 description: OutOfOffice 要素は、応答メッセージと応答メッセージを送信するための継続時間を表します。
-ms.openlocfilehash: 4e1e06ee332c44aeba03e1343c8c3258a2c9631e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: f35b84d7a8a37c7a57b58c97fd0d37318bb50a33
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832675"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354268"
 ---
 # <a name="outofoffice"></a>OutOfOffice
 
@@ -30,7 +30,14 @@ ms.locfileid: "19832675"
 </OutOfOffice>
 ```
 
- **OutOfOfficeMailTip**
+```XML
+<OutOfOffice>
+   <ReplyBody/>
+</OutOfOffice>
+```
+
+**OutOfOfficeMailTip**
+
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -44,19 +51,19 @@ ms.locfileid: "19832675"
 |**要素**|**説明**|
 |:-----|:-----|
 |[ReplyBody](replybody.md) <br/> |Office (OOF) メッセージと、メッセージに使用する言語が含まれています。  <br/> |
-|[期間 (UserOofSettings)](duration-useroofsettings.md) <br/> |[OofState](oofstate.md)要素は、[スケジュール済] に設定されている場合に、不在の状態が有効になっている期間が含まれています。  <br/> |
+|[Duration (UserOofSettings)](duration-useroofsettings.md) <br/> |[OofState](oofstate.md)要素は、[スケジュール済] に設定されている場合に、不在の状態が有効になっている期間が含まれています。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[メール ヒント](mailtips.md) <br/> |さまざまな種類のメール ヒントの値を表します。  <br/> |
+|[MailTips](mailtips.md) <br/> |さまざまな種類のメール ヒントの値を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
@@ -70,8 +77,6 @@ ms.locfileid: "19832675"
 |空に設定可能  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>関連項目
-
-
 
 - [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
 

@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: a6e9d462-cfa7-40ec-903e-128c95050352
 description: IsGreaterThan 要素をプロパティに定数値または別のプロパティを比較し、最初のプロパティ値が大きい場合に true を返す検索式を表します。
-ms.openlocfilehash: f36ad646e6c2d415d14d4311a9971a56a85a3121
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: dfa7c221bb04e59f1ae12eeb5b9f2e1f09aea3ce
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832031"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353491"
 ---
 # <a name="isgreaterthan"></a>IsGreaterThan
 
@@ -30,7 +30,22 @@ ms.locfileid: "19832031"
 </IsGreaterThan>
 ```
 
- **IsGreaterThanType**
+```xml
+<IsGreaterThan>
+   <IndexedFieldURI/> 
+   <FieldURIOrConstant/>
+</IsGreaterThan>
+```
+
+```xml
+<IsGreaterThan>
+   <ExtendedFieldURI/>
+   <FieldURIOrConstant/>
+</IsGreaterThan>
+```
+
+**IsGreaterThanType**
+
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -57,7 +72,7 @@ ms.locfileid: "19832031"
 |[And](and.md) <br/> |使用すると、2 つまたは複数の検索式間で論理 And 演算を実行する検索式を表します。 **And 内に含まれるすべての検索式に**該当**する場合は、And 演算の結果は**  <br/> |
 |[Or](or.md) <br/> |含まれている検索式に対して論理 OR を実行する検索式を表します。 [または](or.md) **true**を返します**true**を返す任意の子の場合。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
   
@@ -71,8 +86,6 @@ MicrosoftExchange Server 2007 がインストールされているクライア�
 |空に設定可能  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>関連項目
-
-
 
 - [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
 

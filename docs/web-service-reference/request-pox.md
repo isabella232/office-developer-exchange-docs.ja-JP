@@ -1,5 +1,5 @@
 ---
-title: 要求 (POX)
+title: Request (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -9,25 +9,31 @@ api_type:
 - schema
 ms.assetid: da54eb32-7ce5-4384-9893-255a2243a959
 description: 要求要素には、自動検出サービスへの要求が含まれています。
-ms.openlocfilehash: ed6b0a80e83e160287f382a881dc5405bfb47a37
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 3f5d5258a92840fe79c4936370323b78aa4715b3
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833124"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354429"
 ---
-# <a name="request-pox"></a>要求 (POX)
+# <a name="request-pox"></a>Request (POX)
 
 **要求**要素には、自動検出サービスへの要求が含まれています。 
   
-[(POX) を自動検出](autodiscover-pox.md)
-  
-[要求 (POX)](request-pox.md)
+- [AutoDiscover (POX)](autodiscover-pox.md) 
+- [Request (POX)](request-pox.md)
   
 ```xml
 <Request>
    <AcceptableResponseSchema/>
    <EMailAddress/>
+</Request>
+```
+
+```xml
+<Request>
+   <AcceptableResponseSchema/> 
+   <LegacyDN/>
 </Request>
 ```
 
@@ -51,11 +57,9 @@ ms.locfileid: "19833124"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[(POX) を自動検出](autodiscover-pox.md) <br/> |自動検出要求のルート要素です。  <br/> |
+|[AutoDiscover (POX)](autodiscover-pox.md) <br/> |自動検出要求のルート要素です。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-
-
-[交換の POX の自動検出の XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+- [交換の POX の自動検出の XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
 

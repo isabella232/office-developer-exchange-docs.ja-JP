@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 48e7e067-049c-4184-8026-071e6f558e8a
 description: IsEqualTo 要素は、プロパティを定数値または別のプロパティを比較し、両者が等しい場合に true に評価する検索式を表します。
-ms.openlocfilehash: a7a7deed79c271be74bb2ff16dd86605d468721b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 733032819e6875fa878c1cd631d173a1c48ecdfe
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832013"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353162"
 ---
 # <a name="isequalto"></a>IsEqualTo
 
@@ -30,7 +30,22 @@ ms.locfileid: "19832013"
 </IsEqualTo>
 ```
 
- **IsEqualToType**
+```xml
+<IsEqualTo>
+   <ExtendedFieldURI/>
+   <FieldURIOrConstant/>
+</IsEqualTo>
+```
+
+```xml
+<IsEqualTo>
+   <IndexedFieldURI/> 
+   <FieldURIOrConstant/>
+</IsEqualTo>
+```
+
+**IsEqualToType**
+
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -57,7 +72,7 @@ ms.locfileid: "19832013"
 |[And](and.md) <br/> |使用すると、2 つまたは複数の検索式間で論理 And 演算を実行する検索式を表します。 **すべての And に含まれている検索式に**該当**する場合は、And 演算の結果は**  <br/> |
 |[Or](or.md) <br/> |含まれている検索式に対して論理 OR を実行する検索式を表します。 [または](or.md)その子のいずれかの場合は true を返す場合は true。 戻ります。 **または**2 つ以上の子が必要です。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 文字列比較を実行するには、検討、[含まれる](contains.md)要素を使用して一致するパラメーターは、大文字と小文字や空白文字などのオプションが用意されています。 結果の符号を反転するのに[含まれる](contains.md)要素と共に、要素では[なく](not.md)を使用します。 
   
@@ -73,8 +88,6 @@ MicrosoftExchange Server 2007 がインストールされているクライア�
 |空に設定可能  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>関連項目
-
-
 
 - [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
 

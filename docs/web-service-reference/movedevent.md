@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 572f8b40-dfa8-47bc-b0c1-e1a7138506fd
 description: MovedEvent 要素は、アイテムまたはフォルダーが 1 つの親フォルダー間で移動して別の親フォルダー イベントを表します。
-ms.openlocfilehash: a375f421ca9159103e47b515729316b21149c68a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 07f9c02ea194187a9fdfb1e27b19eb311392f51f
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832479"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353260"
 ---
 # <a name="movedevent"></a>MovedEvent
 
@@ -34,7 +34,20 @@ ms.locfileid: "19832479"
 </MovedEvent>
 ```
 
- **MovedCopiedEventType**
+```xml
+<MovedEvent>
+   <Watermark/>
+   <TimeStamp/>
+   <FolderId/>
+   <ParentFolderId/>
+   <OldFolderId/>
+   <OldParentFolderId/>
+</MovedEvent>
+```
+
+
+**MovedCopiedEventType**
+
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -47,9 +60,9 @@ ms.locfileid: "19832479"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[透かし](watermark.md) <br/> |メールボックス イベント テーブル内のイベント ブックマークを表します。  <br/> |
-|[タイムスタンプ](timestamp.md) <br/> |移動アイテムまたはフォルダーのメールボックス イベントのタイムスタンプを表します。  <br/> |
-|[フォルダー Id](folderid.md) <br/> |移動したフォルダーの識別子を表します。  <br/> |
+|[Watermark](watermark.md) <br/> |メールボックス イベント テーブル内のイベント ブックマークを表します。  <br/> |
+|[TimeStamp](timestamp.md) <br/> |移動アイテムまたはフォルダーのメールボックス イベントのタイムスタンプを表します。  <br/> |
+|[FolderId](folderid.md) <br/> |移動したフォルダーの識別子を表します。  <br/> |
 |[ItemId](itemid.md) <br/> |移動された項目の識別子を表します。  <br/> |
 |[ParentFolderId](parentfolderid.md) <br/> |移動したアイテムまたはフォルダーを含むフォルダーの識別子を表します。  <br/> |
 |[OldFolderId](oldfolderid.md) <br/> |移動またはコピーする前に元のフォルダーのフォルダーの識別子が含まれています。  <br/> |
@@ -62,7 +75,7 @@ ms.locfileid: "19832479"
 |:-----|:-----|
 |[通知](notification-ex15websvcsotherref.md) <br/> |サブスクリプションおよび最後の通知以降に発生したイベントに関する情報が含まれています。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
   
@@ -77,11 +90,7 @@ MicrosoftExchange Server 2007 がインストールされているクライア�
    
 ## <a name="see-also"></a>関連項目
 
-
-
-[サブスクライブ操作](subscribe-operation.md)
-  
-[GetEvents 操作](getevents-operation.md)
-  
-[Unsubscribe 操作](unsubscribe-operation.md)
+- [サブスクライブ操作](subscribe-operation.md) 
+- [GetEvents 操作](getevents-operation.md) 
+- [Unsubscribe 操作](unsubscribe-operation.md)
 

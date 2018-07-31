@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: f9701409-b620-4afe-b9ee-4c1e95507af7
 description: ExtendedProperty 要素では、フォルダーおよびアイテムの拡張 MAPI プロパティを識別します。
-ms.openlocfilehash: 6a0aecc732ef634c2258127fca89b19461e25762
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 9a6c44e953cab4900e4b75eb42bdf4d8633e58f9
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760409"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353729"
 ---
 # <a name="extendedproperty"></a>ExtendedProperty
 
@@ -30,7 +30,15 @@ ms.locfileid: "19760409"
 </ExtendedProperty>
 ```
 
- **ExtendedPropertyType**
+```xml
+<ExtendedProperty>
+   <ExtendedFieldURI/>
+   <Value/>
+</ExtendedProperty>
+```
+
+**ExtendedPropertyType**
+
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -51,10 +59,10 @@ ms.locfileid: "19760409"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[カレンダー項目](calendaritem.md) <br/> |Exchange 予定表アイテムを表します。  <br/> |
-|[Contact](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Exchange 予定表アイテムを表します。  <br/> |
+|[連絡先](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
 |[DistributionList](distributionlist.md) <br/> |配布リストを表します。  <br/> |
-|[アイテム](item.md) <br/> |Exchange ストア内の項目を表します。  <br/> |
+|[Item](item.md) <br/> |Exchange ストア内の項目を表します。  <br/> |
 |[MeetingCancellation](meetingcancellation.md) <br/> |Exchange ストア内の会議の取り消し通知を表します。  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Exchange ストア内の会議を表します。  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議出席依頼を表します。  <br/> |
@@ -63,12 +71,12 @@ ms.locfileid: "19760409"
 |[RemoveItem](removeitem.md) <br/> |Exchange ストアから項目を削除します。  <br/> |
 |[タスク](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
 |[CalendarFolder](calendarfolder.md) <br/> |主に予定表のアイテムを含むフォルダーを表します。  <br/> |
-|[メッセージ](contactsfolder.md) <br/> |メールボックスの連絡先フォルダーを表します。  <br/> |
+|[ContactsFolder](contactsfolder.md) <br/> |メールボックスの連絡先フォルダーを表します。  <br/> |
 |[Folder](folder.md) <br/> |作成、取得、検索、同期、または更新するフォルダーを表します。  <br/> |
 |[SearchFolder](searchfolder.md) <br/> |メールボックスに格納されている検索フォルダーを表します。  <br/> |
 |[TasksFolder](tasksfolder.md) <br/> |メールボックスに含まれるタスク フォルダーを表します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
@@ -82,8 +90,6 @@ ms.locfileid: "19760409"
 |空に設定可能  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>関連項目
-
-
 
 - [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
 

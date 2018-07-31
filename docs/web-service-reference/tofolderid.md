@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: bd6a4265-ad40-43f6-bcc4-0bf5df4e984c
 description: ToFolderId 要素は、先のフォルダーにコピーまたは移動されたアイテムまたはフォルダーを表します。
-ms.openlocfilehash: a48309f0b7f5c9bf667fc2eb653a0502832bc996
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 9d2fd6c177711cfe3a5d3415320440259e2f5289
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839710"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353659"
 ---
 # <a name="tofolderid"></a>ToFolderId
 
@@ -29,7 +29,14 @@ ms.locfileid: "19839710"
 </ToFolderId>
 ```
 
- **TargetFolderIdType**
+```xml
+<ToFolderId>
+   <DistinguishedFolderId/>
+</ToFolderId>
+```
+
+**TargetFolderIdType**
+
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -42,7 +49,7 @@ ms.locfileid: "19839710"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[フォルダー Id](folderid.md) <br/> |先のフォルダーにコピーまたは移動されたアイテムまたはフォルダーの識別子が含まれています。  <br/> |
+|[FolderId](folderid.md) <br/> |先のフォルダーにコピーまたは移動されたアイテムまたはフォルダーの識別子が含まれています。  <br/> |
 |[DistinguishedFolderId](distinguishedfolderid.md) <br/> |コピーまたは移動されたアイテムまたはフォルダーの移動先フォルダーを識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
@@ -54,7 +61,7 @@ ms.locfileid: "19839710"
 |[MoveItem](moveitem.md) <br/> |Exchange ストア内のアイテムを移動する要求を定義します。  <br/> この要素への XPath 式は、次のようにします。  <br/>  `/MoveItem` <br/> |
 |[CopyItem](copyitem.md) <br/> |Exchange ストア内の項目をコピーするための要求を定義します。  <br/> この要素への XPath 式は、次のようにします。  <br/>  `/CopyItem` <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
   
@@ -69,15 +76,10 @@ MicrosoftExchange Server 2007 がインストールされているクライア�
    
 ## <a name="see-also"></a>関連項目
 
-
-
-[MoveFolder 操作](movefolder-operation.md)
-  
-[CopyFolder 操作](copyfolder-operation.md)
-  
-
-  [MoveItem 操作](moveitem-operation.md)
-  
-
+- [MoveFolder 操作](movefolder-operation.md)  
+- [CopyFolder 操作](copyfolder-operation.md) 
+- 
+  [MoveItem 操作](moveitem-operation.md) 
+- 
   [CopyItem 操作](copyitem-operation.md)
 

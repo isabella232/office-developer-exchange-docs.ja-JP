@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: b9364842-bbe2-4221-afef-bf5022bc89ec
 description: FieldOrder 要素は、結果の並べ替えに使用する単一のフィールドを表し、並べ替えの方向を示します。
-ms.openlocfilehash: 10e28f066f7fa6799bf6b03b694d98825f95626d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 320a7b821cc593e7dd60a8f8adb23bcd600f71f8
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760471"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353302"
 ---
 # <a name="fieldorder"></a>FieldOrder
 
@@ -29,7 +29,20 @@ ms.locfileid: "19760471"
 </FieldOrder>
 ```
 
- **FieldOrderType**
+```xml
+<FieldOrder Order="">
+   <ExtendedFieldURI/> 
+</FieldOrder>
+```
+
+```xml
+<FieldOrder Order="">
+   <IndexedFieldURI/>
+</FieldOrder>
+```
+
+**FieldOrderType**
+
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -52,9 +65,9 @@ ms.locfileid: "19760471"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[並べ替え順序](sortorder.md) <br/> |FindItem 要求内のアイテムの並べ替え方法を定義します。  <br/> この要素への XPath 式は、次のようにします。`/FindItem/SortOrder` <br/> |
+|[SortOrder](sortorder.md) <br/> |FindItem 要求内のアイテムの並べ替え方法を定義します。  <br/> この要素への XPath 式は、次のようにします。`/FindItem/SortOrder` <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   

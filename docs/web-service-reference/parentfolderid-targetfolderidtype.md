@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 0e3e6e5f-06d0-499b-8ca4-d36036521658
 description: ParentFolderId 要素内のフォルダーを識別する新しいフォルダーを作成するか、FindConversation の操作を検索するフォルダーです。
-ms.openlocfilehash: 61072e1dd3321beb5f3b76d9accf20530b443796
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 8e80b9b342274a8b2004838ebd16f8425a2d3fa3
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832686"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353827"
 ---
 # <a name="parentfolderid-targetfolderidtype"></a>ParentFolderId (TargetFolderIdType)
 
@@ -26,6 +26,12 @@ ms.locfileid: "19832686"
 ```xml
 <ParentFolderId>
    <DistinguishedFolderId/>
+</ParentFolderId>
+```
+
+```xml
+<ParentFolderId>
+   <FolderId/> 
 </ParentFolderId>
 ```
 
@@ -43,7 +49,7 @@ ms.locfileid: "19832686"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[フォルダー Id](folderid.md) <br/> |必須の識別子とキーを含む、省略可能な変更でフォルダーの新しいフォルダーを作成または[FindConversation 操作](findconversation-operation.md)のために検索されるフォルダーです。 この要素を使用するには、 [DistinguishedFolderId](distinguishedfolderid.md)要素の使用が含まれません。  <br/> |
+|[FolderId](folderid.md) <br/> |必須の識別子とキーを含む、省略可能な変更でフォルダーの新しいフォルダーを作成または[FindConversation 操作](findconversation-operation.md)のために検索されるフォルダーです。 この要素を使用するには、 [DistinguishedFolderId](distinguishedfolderid.md)要素の使用が含まれません。  <br/> |
 |[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Microsoft Exchange Server 2007 の既定のフォルダーを識別します。 この要素を使用して、[フォルダー Id](folderid.md)要素の使用が除外されます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
@@ -57,7 +63,7 @@ ms.locfileid: "19832686"
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 2 つの子要素を使用して、新しいフォルダーを格納するフォルダーを定義します。 [フォルダー Id](folderid.md)または[DistinguishedFolderId](distinguishedfolderid.md)要素のいずれか、新しいフォルダーの親フォルダーを識別するを選択する必要があります。 同時に両方の要素を使用することはできません。 この要素は、フォルダーを作成する必要があります。 
   
@@ -78,7 +84,6 @@ ms.locfileid: "19832686"
 
 - 
   [CreateFolder 操作](createfolder-operation.md)
-- 
-  [FindConversation 操作](findconversation-operation.md)
+- [FindConversation 操作](findconversation-operation.md)
 - [フォルダー (Exchange Web サービス) を作成します。](http://msdn.microsoft.com/library/3b15b0ec-8691-45ed-9a24-a91ff732d6cf%28Office.15%29.aspx)
 

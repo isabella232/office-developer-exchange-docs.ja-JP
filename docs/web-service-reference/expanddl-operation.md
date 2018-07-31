@@ -1,7 +1,7 @@
 ---
 title: ExpandDL 操作
 manager: sethgros
-ms.date: 09/17/2015
+ms.date: 07/27/2018
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 1f7837e7-9eff-4e10-9577-c40f7ed6af94
 description: ExpandDL 操作では、配布リストの完全なメンバーシップを公開します。
-ms.openlocfilehash: e4654120881f81a79358e0e7c0ab016f94db3288
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 4af6198ff15407b7fb71cdb4010ff6ce035460d0
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760379"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353743"
 ---
 # <a name="expanddl-operation"></a>ExpandDL 操作
 
@@ -46,7 +46,7 @@ ExpandDL 操作では、Exchange.asmx に配置されている Web サービス�
 > [!IMPORTANT]
 > 表示名が一意ではありません。 複数のアカウントは、同じ表示名を共有できます。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 再帰的な拡張はサポートされていません。 1 回の呼び出しでは、1 つの配布リストを拡張できます。 1 つ以上の配布リストには、条件が一致すると、Web サービスはエラーを報告します。 クライアント アプリケーションでは、あいまいな配布リストと、 [ExpandDL 操作](expanddl-operation.md)のパラメーターとして必要な配布リストの正しい電子メール アドレスを選択し、あいまいな名前解決 (ANR) を使用できます。 詳細については、 [ResolveNames の操作](resolvenames-operation.md)を参照してください。
   
@@ -64,17 +64,18 @@ ExpandDL 要求の次の例では、個人用配布リストを展開するた�
   
 ### <a name="code"></a>コード
 
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <t:RequestServerVersion Version="Exchange2013_SP1" />
+  </soap:Header>
   <soap:Body>
-    <ExpandDL xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-              xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
-        <t:Mailbox>
-          <t:ItemId Id="xASUAd==" ChangeKey="AAts0Q=="/>
-        </t:Mailbox>
-    </ExpandDL>
+    <m:ExpandDL>
+      <m:Mailbox>
+       <t:EmailAddress>test</t:EmailAddress>
+      </m:Mailbox>
+    </m:ExpandDL>
   </soap:Body>
 </soap:Envelope>
 ```
@@ -91,7 +92,7 @@ ExpandDL 要求の次の例では、パブリックな配布リストを展開�
   
 ### <a name="code"></a>コード
 
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
@@ -116,7 +117,7 @@ ExpandDL 要求の次の例では、パブリックな配布リストを展開�
   
 - [ExpandDL](expanddl.md)
     
-- [メールボックス](mailbox.md)
+- [Mailbox](mailbox.md)
     
 - [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)を使用して、パブリックな配布リストを識別します。 [アイテム Id](itemid.md)要素を使用して、個人用配布リストを識別します。 
     
@@ -146,7 +147,7 @@ ExpandDL 応答の次の使用例は、上記の要求への応答を示して�
   
 ### <a name="code"></a>コード
 
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
@@ -206,9 +207,9 @@ ExpandDL 応答の次の使用例は、上記の要求への応答を示して�
     
 - [DLExpansion](dlexpansion.md)
     
-- [メールボックス](mailbox.md)
+- [Mailbox](mailbox.md)
     
-- [名 (EmailAddressType)](name-emailaddresstype.md)
+- [Name (EmailAddressType)](name-emailaddresstype.md)
     
 - [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
     
@@ -226,7 +227,7 @@ ExpandDL 要求に対するエラー応答の例を次に示します。
   
 ### <a name="code"></a>コード
 
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 

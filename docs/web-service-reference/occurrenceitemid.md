@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 4a15bbc3-5b93-4193-b9ec-da32f0a9a552
 description: OccurrenceItemId 要素は、定期的なアイテムの 1 回の発生を識別します。
-ms.openlocfilehash: e3d7b6efc49775f54219ce0dc0ec39a34a95f8fd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 073639ecbca6ffda872e9253b7c7e44c3541f13b
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832639"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353463"
 ---
 # <a name="occurrenceitemid"></a>OccurrenceItemId
 
@@ -50,14 +50,14 @@ ms.locfileid: "19832639"
 |**要素**|**説明**|
 |:-----|:-----|
 |[GlobalItemIds](globalitemids.md) <br/> |メールボックス内のすべての会話項目の項目の識別子のコレクションが含まれています。  <br/> |
-|[Itemid](itemids.md) <br/> | アイテム、出現アイテム、および削除、送信、取得、移動、または Exchange ストア内のアイテムのコピーに使用される、マスターの定期的なアイテムの一意の id が含まれています。 <br/><br/>この要素への XPath 式は、次のように。 <br/><br/>  `/DeleteItem/ItemIds` <br/>  `/SendItem/ItemIds` <br/>  `/GetItem/ItemIds` <br/><br/>**注**: [MoveItem 操作](moveitem-operation.md)および[CopyItem の操作](copyitem-operation.md)が 1 つの予定表アイテムと定期的なアイテムをマスターでのみ動作します。 アイテムの出現回数は、これらの操作では無効です。           |
+|[ItemIds](itemids.md) <br/> | アイテム、出現アイテム、および削除、送信、取得、移動、または Exchange ストア内のアイテムのコピーに使用される、マスターの定期的なアイテムの一意の id が含まれています。 <br/><br/>この要素への XPath 式は、次のように。 <br/><br/>  `/DeleteItem/ItemIds` <br/>  `/SendItem/ItemIds` <br/>  `/GetItem/ItemIds` <br/><br/>**注**: [MoveItem 操作](moveitem-operation.md)および[CopyItem の操作](copyitem-operation.md)が 1 つの予定表アイテムと定期的なアイテムをマスターでのみ動作します。 アイテムの出現回数は、これらの操作では無効です。           |
 |[ItemChange](itemchange.md) <br/> |アイテム識別子と、アイテムに適用する更新プログラムが含まれています。<br/><br/> この要素への XPath 式は、次のようにします。  <br/>  `/UpdateItem/ItemChanges/ItemChange[i]` <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
@@ -81,7 +81,6 @@ ms.locfileid: "19832639"
 ## <a name="see-also"></a>関連項目
 
 - [RecurringMasterItemId](recurringmasteritemid.md)
-- 
-  [FindConversation 操作](findconversation-operation.md)
+- [FindConversation 操作](findconversation-operation.md)
 - [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
 

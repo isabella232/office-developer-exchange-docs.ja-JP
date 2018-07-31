@@ -12,20 +12,19 @@ api_type:
 - schema
 ms.assetid: 56d6aa52-8fa6-4773-9046-44a6f4f5d97c
 description: ConnectingSID 要素は、ExchangeImpersonation SOAP ヘッダーを使用する際に偽装するアカウントを表します。
-ms.openlocfilehash: 6e0bb90e197ce22bcd982a6d51954a88f3a2cf03
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: a30f11721506989a84f52dd04c328974f4483956
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759662"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354338"
 ---
 # <a name="connectingsid"></a>ConnectingSID
 
 **ConnectingSID**要素は、ExchangeImpersonation SOAP ヘッダーを使用する際に偽装するアカウントを表します。 
   
-[ExchangeImpersonation](exchangeimpersonation.md)
-  
-[ConnectingSID](connectingsid.md)
+- [ExchangeImpersonation](exchangeimpersonation.md) 
+- [ConnectingSID](connectingsid.md)
   
 ```xml
 <ConnectingSID>
@@ -33,7 +32,26 @@ ms.locfileid: "19759662"
 </ConnectingSID>
 ```
 
- **ConnectingSIDType**
+```xml
+<ConnectingSID>
+   <SmtpAddress/>
+</ConnectingSID>
+```
+
+```xml
+<ConnectingSID>
+    <SID/> 
+</ConnectingSID>
+```
+
+```xml
+<ConnectingSID>
+   <PrimarySmtpAddress/>
+</ConnectingSID>
+```
+
+**ConnectingSIDType**
+
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -57,7 +75,7 @@ ms.locfileid: "19759662"
 |:-----|:-----|
 |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |要求の SOAP ヘッダーで使用されます。 この要素が存在する場合、呼び出し元が**ExchangeImpersonation**要素内に含まれているアカウントを偽装するとしています。  <br/> この要素への XPath 式は、次のようにします。  <br/>  `/ExchangeImpersonation` <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 呼び出し元のアカウントが必要でクライアント アクセス サーバーと**ms-exch-MayImpersonate** **ms の偽装 exch**上かを偽装するメールボックスを含むメールボックス データベースまたは Active Directory のユーザーまたは連絡先オブジェクトです。 
   
@@ -74,7 +92,5 @@ MicrosoftExchange Server 2007 がインストールされているクライア�
    
 ## <a name="see-also"></a>関連項目
 
-
-
-[EWS でのサーバーからサーバーへの承認](http://msdn.microsoft.com/library/f1610a20-672d-448b-8c00-5b0fbcaf31cb%28Office.15%29.aspx)
+- [EWS でのサーバーからサーバーへの承認](http://msdn.microsoft.com/library/f1610a20-672d-448b-8c00-5b0fbcaf31cb%28Office.15%29.aspx)
 

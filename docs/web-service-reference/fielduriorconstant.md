@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 89d7a87e-7c93-49b8-83ec-8798e08c1052
 description: FieldURIOrConstant 要素は、プロパティ、または別のプロパティを比較するときに使用する定数値を表します。
-ms.openlocfilehash: 5195feec2a314d9ec15dc4a25a7a014aded1696a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: a24c2fa044e03d0ac6f900625e325600903df8d0
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760477"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354226"
 ---
 # <a name="fielduriorconstant"></a>FieldURIOrConstant
 
@@ -29,7 +29,26 @@ ms.locfileid: "19760477"
 </FieldURIOrConstant>
 ```
 
- **FieldURIOrConstantType**
+```xml
+<FieldURIOrConstant>
+    <IndexedFieldURI/> 
+</FieldURIOrConstant>
+```
+
+```xml
+<FieldURIOrConstant>
+   <FieldURI/>
+</FieldURIOrConstant>
+```
+
+```xml
+<FieldURIOrConstant>
+   <ExtendedFieldURI/> 
+</FieldURIOrConstant>
+```
+
+**FieldURIOrConstantType**
+
 ## <a name="attributes-and-elements"></a>属性および要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -58,7 +77,7 @@ ms.locfileid: "19760477"
 |[IsLessThanOrEqualTo](islessthanorequalto.md) <br/> |定数値を持つプロパティ、または別のプロパティを比較し、最初のプロパティは、2 番目の値またはプロパティに等しいかそれより小さい場合は true を返す検索式を表します。  <br/> |
 |[IsNotEqualTo](isnotequalto.md) <br/> |定数値を持つプロパティ、または別のプロパティを比較し、値が同じではない場合は true を返す検索式を表します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
@@ -66,8 +85,7 @@ ms.locfileid: "19760477"
 
 次の XML の例では、定数と URI のフィールドの両方で使用する FieldURIOrConstant 要素を示します。
   
-```
-[xml]
+```xml
 <Restriction>
   <Or xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
     <IsEqualTo>
@@ -96,8 +114,6 @@ ms.locfileid: "19760477"
 |空に設定可能  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>関連項目
-
-
 
 - [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
 
