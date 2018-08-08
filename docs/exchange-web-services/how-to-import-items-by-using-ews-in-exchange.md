@@ -1,5 +1,5 @@
 ---
-title: Exchange EWS を使用してアイテムをインポート
+title: Exchange の EWS を使用してアイテムをインポートする
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
@@ -8,16 +8,16 @@ ms.assetid: dd3d3221-c98e-4fa0-81f0-77f733d2f432
 description: Exchange の EWS マネージ API または EWS を使用して、予定、電子メール、連絡先、タスクなどのアイテムをインポートする方法について説明します。
 ms.openlocfilehash: c09c96eff455b7584b084e71b937853abfde731d
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759010"
 ---
-# <a name="import-items-by-using-ews-in-exchange"></a>Exchange EWS を使用してアイテムをインポート
+# <a name="import-items-by-using-ews-in-exchange"></a>Exchange の EWS を使用してアイテムをインポートする
 
 Exchange の EWS マネージ API または EWS を使用して、予定、電子メール、連絡先、タスクなどのアイテムをインポートする方法について説明します。
   
-多数のシステムに予定、電子メール、連絡先およびタスクが格納されているときに、それらのアイテムをいくつかの方法で Exchange にインポートできます。Exchange へのアイテムのインポートは、それらのアイテムに対するメールボックスのリレーションシップを維持しない場合は簡単です。EWS マネージ API の [Item.Save](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.item.save%28v=exchg.80%29.aspx) メソッドを使用するか、EWS の [CreateItem](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) 操作を使用して、Exchange メールボックスにアイテムを作成します。ただし、この単純なアプローチでは、サポートされないシナリオがあります。次に例を示します。 
+多数のシステムに予定、電子メール、連絡先およびタスクが格納されているときに、それらのアイテムをいくつかの方法で Exchange にインポートできます。Exchange へのアイテムのインポートは、それらのアイテムに対するメールボックスのリレーションシップを維持しない場合は簡単です。EWS マネージ API の [Item.Save](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.item.save%28v=exchg.80%29.aspx) メソッドを使用するか、EWS の [CreateItem](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) 操作を使用して、Exchange メールボックスにアイテムを作成します。ただし、この単純なアプローチでは、サポートされないシナリオがあります。次に例を示します。 
   
 - 出席者 (会議) によって予定をインポートするときに、開催者と出席者のリレーションシップを維持できません。つまり、開催者と出席者のリレーションシップを確立するには、会議の開催者が会議出席依頼を出席者に再送信する必要があるということです。出席者の予定表にインポートされた予定は、会議の開催者の予定に関連付けられることはありません。出席者は、開催者と出席者のリレーションシップを確立するために、開催者からの会議出席依頼の再送信を受け入れる必要があります。
     
@@ -34,12 +34,12 @@ EWS マネージ API または EWS を使用して、別のシステムから電
 
 |**EWS マネージ API のオブジェクト**|**EWS の要素**|
 |:-----|:-----|
-|[なか](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) <br/> |[Message](http://msdn.microsoft.com/library/2400b33c-43b2-4fc2-b6fb-275a99e0e810%28Office.15%29.aspx) <br/> |
-|[Contact](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.contact%28v=exchg.80%29.aspx) <br/> |[Contact](http://msdn.microsoft.com/library/66bfff50-7a91-4d81-b6a0-610b9962f677%28Office.15%29.aspx) <br/> |
-|[Appointment](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) <br/> |[カレンダー項目](http://msdn.microsoft.com/library/b0c1fd27-b6da-46e5-88b8-88f00c71ba80%28Office.15%29.aspx) <br/> |
-|[Task](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.task%28v=exchg.80%29.aspx) <br/> |[タスク](http://msdn.microsoft.com/library/7c84927e-db28-4c5d-b0b5-cbcc2b88d869%28Office.15%29.aspx) <br/> |
+|[EmailMessage](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) <br/> |[Message](http://msdn.microsoft.com/library/2400b33c-43b2-4fc2-b6fb-275a99e0e810%28Office.15%29.aspx) <br/> |
+|[Contact](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.contact%28v=exchg.80%29.aspx) <br/> |[Contact](http://msdn.microsoft.com/library/66bfff50-7a91-4d81-b6a0-610b9962f677%28Office.15%29.aspx) <br/> |
+|[Appointment](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) <br/> |[CalendarItem](http://msdn.microsoft.com/library/b0c1fd27-b6da-46e5-88b8-88f00c71ba80%28Office.15%29.aspx) <br/> |
+|[Task](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.task%28v=exchg.80%29.aspx) <br/> |[タスク](http://msdn.microsoft.com/library/7c84927e-db28-4c5d-b0b5-cbcc2b88d869%28Office.15%29.aspx) <br/> |
    
-EWS マネージ API の [Item.Save](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.save%28v=exchg.80%29.aspx) メソッドまたは EWS の [CreateItem](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) 操作を使用して、アイテムのインポートを実行します。このアプローチでは、どのプロパティをインポートするかを制御できるため、別のシステムからアイテムをインポートする場合にお勧めします。アイテムにプロパティを設定して、アイテムを保存する方法の詳細については、「 [EWS マネージ API を使用してアイテムを作成する](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_createewsma)」または「[EWS を使用してアイテムを作成する](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_createews)」を参照してください。
+EWS マネージ API の [Item.Save](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.item.save%28v=exchg.80%29.aspx) メソッドまたは EWS の [CreateItem](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) 操作を使用して、アイテムのインポートを実行します。このアプローチでは、どのプロパティをインポートするかを制御できるため、別のシステムからアイテムをインポートする場合にお勧めします。アイテムにプロパティを設定して、アイテムを保存する方法の詳細については、「 [EWS マネージ API を使用してアイテムを作成する](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_createewsma)」または「[EWS を使用してアイテムを作成する](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_createews)」を参照してください。
   
 ## <a name="import-items-with-full-fidelity"></a>完全な再現性のあるアイテムをインポートする
 <a name="bk_importproperties"> </a>
@@ -82,7 +82,7 @@ EWS では、EML (.eml) ファイルと iCal (.ics) ファイルをインポー�
   
 ### <a name="use-the-ews-managed-api-to-import-an-email-from-an-eml-file-by-using-the-mime-stream"></a>MIME ストリームを使用して EML ファイルから電子メールをインポートするために EWS マネージ API を使用する
 
-次の例は、EML ファイルのコンテンツで [MimeContent](http://msdn.microsoft.com/EN-US/library/microsoft.exchange.webservices.data.item.mimecontent%28v=exchg.80%29.aspx) プロパティを設定して、電子メールをメールボックスにインポートする方法を示しています。さらに、インポートした電子メールの [PidTagMessageFlags (0x0E07)](http://msdn.microsoft.com/en-us/library/office/cc839733%28v=office.15%29.aspx) 拡張プロパティを設定して、メールボックス内で下書きアイテムとして表示されないようにする方法も示しています。この例では、 **service** が有効な [ExchangeService](http://msdn.microsoft.com/EN-US/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに対して認証できることを前提としています。 
+次の例は、EML ファイルのコンテンツで [MimeContent](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.item.mimecontent%28v=exchg.80%29.aspx) プロパティを設定して、電子メールをメールボックスにインポートする方法を示しています。さらに、インポートした電子メールの [PidTagMessageFlags (0x0E07)](http://msdn.microsoft.com/ja-JP/library/office/cc839733%28v=office.15%29.aspx) 拡張プロパティを設定して、メールボックス内で下書きアイテムとして表示されないようにする方法も示しています。この例では、 **service** が有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに対して認証できることを前提としています。 
   
 ```cs
 private static void UploadMIMEEmail(ExchangeService service)
@@ -188,7 +188,7 @@ EWS の [CreateItem](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-4
 
 - [Exchange で EWS を使用してアイテムをエクスポートおよびインポートする](exporting-and-importing-items-by-using-ews-in-exchange.md)
     
-- [Exchange EWS を使用して項目をエクスポートします。](how-to-export-items-by-using-ews-in-exchange.md)
+- [Exchange の EWS を使用してアイテムをエクスポートする](how-to-export-items-by-using-ews-in-exchange.md)
     
 - [Exchange の EWS のフォルダーとアイテム](folders-and-items-in-ews-in-exchange.md)
     

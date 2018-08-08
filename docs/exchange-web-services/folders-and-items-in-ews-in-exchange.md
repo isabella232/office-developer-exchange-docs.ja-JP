@@ -1,5 +1,5 @@
 ---
-title: Exchange  の EWS のフォルダーとアイテム
+title: Exchange の EWS のフォルダーとアイテム
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,46 +8,46 @@ ms.assetid: 9d8cf6fa-85a4-45ac-8165-e4d3ab92594e
 description: フォルダーおよびメールボックスのアイテムと、EWS マネージ API または EWS クライアントでこれらのアイテムを表す方法について説明します。
 ms.openlocfilehash: a3358844f2317c9b0462456ff7d2f38442c98ee3
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758918"
 ---
-# <a name="folders-and-items-in-ews-in-exchange"></a>Exchange  の EWS のフォルダーとアイテム
+# <a name="folders-and-items-in-ews-in-exchange"></a>Exchange の EWS のフォルダーとアイテム
 
 フォルダーおよびメールボックスのアイテムと、EWS マネージ API または EWS クライアントでこれらのアイテムを表す方法について説明します。
   
 フォルダーは、Exchange メールボックスの構成要素です。フォルダーには、メール メッセージ、連絡先、予定、会議、タスクなどのメールボックス アイテムを含めたり、その他のフォルダーを含めたりすることができます。Exchange にはさまざまな種類のフォルダーが含まれていますが、フォルダーの種類は非常によく似ています。主な違いは、含まれているアイテムの種類です。
   
-アイテムには、ただし、一意の型があります。 各項目の種類には、プロパティまたはそれを定義するスキーマの異なるセットがあります。 この記事では、フォルダーと利用可能な項目とそれらの間の相違点の種類について説明します。
+ただし、アイテムには固有の種類があります。 アイテムの種類ごとに、アイテムを定義するプロパティまたはスキーマの異なるセットがあります。 この記事では、利用可能なフォルダーとアイテムの種類、およびそれらの相違点について説明します。
 
 <a name="bk_folders"> </a>
 
 ## <a name="folders"></a>フォルダー
 
-すべてのフォルダーは、同じ基本クラスまたは基本型、EWS マネージ api では、[フォルダー](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder%28v=EXCHG.80%29.aspx)クラスまたは EWS での[フォルダー](http://msdn.microsoft.com/library/812948d8-c7db-45ce-bb3a-77233a53a974%28Office.15%29.aspx)の種類から派生します。 次の図では、EWS のマネージ API のクラスおよび EWS 型を示します。 
+フォルダーはすべて、同じ基本クラスまたは基本型から派生します。具体的には、EWS マネージ API では [Folder](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder%28v=EXCHG.80%29.aspx) クラス、EWS では [Folder](http://msdn.microsoft.com/library/812948d8-c7db-45ce-bb3a-77233a53a974%28Office.15%29.aspx) 型から派生します。 次の図は、EWS マネージ API のクラスおよび EWS の型を示しています。 
   
-**図 1 です。フォルダー クラスのマネージ API の EWS と EWS フォルダーの種類**
+**図 1. EWS マネージ API の Folder クラスと EWS の Folder 型**
 
 ![EWS Managed API Folder クラスから派生するクラスと EWS Folder タイプから派生するタイプ (CalendarFolder、ContactsFolder、SearchFolder、および TasksFolder) が表示された図。](media/Ex2013_Folder_OverviewTypes.png)
   
-各フォルダーのクラスとの種類のフォルダーとの間の主な相違点は、フォルダーの種類ごとに特定の種類の項目を作成することのみできます。 その他の違いの 1 つが、クライアントがフォルダー内の情報を表示する方法です。 たとえば、Exchange を使用すると、予定表フォルダーで予定を作成できます。 、それらを作成した後に Outlook が表示されない、予定表フォルダーに他の種類のアイテムを移動できます。 のみ、outlook では、[フォルダーに別の種類の項目が存在する場合でも](folders-and-items-in-ews-in-exchange.md#bk_item)、予定表フォルダーで予定や会議などの予定表アイテムが表示されます。 
+Folder クラスと Folder 型の主な違いは、Folder 型で作成できるのは特定の種類のアイテムのみであるという点です。 もう 1 つの違いは、クライアントでフォルダー内の情報が表示される方法です。 たとえば、Exchange では、予定表フォルダーで予定を作成できます。 予定を作成した後に他の種類のアイテムを予定表フォルダーに移動することはできますが、それらのアイテムは Outlook では表示されません。 Outlook では、[フォルダーに別の種類のアイテムが存在しているとしても](folders-and-items-in-ews-in-exchange.md#bk_item)、予定や会議などの予定表アイテムだけが予定表フォルダーに表示されます。 
   
-**表 1 です。フォルダー クラスのマネージ API の EWS と EWS フォルダーの種類**
+**表 1. EWS マネージ API の Folder クラスと EWS の Folder 型**
 
-|**EWS マネージ API クラス**|**EWS 型**|**FolderClass 値**|**内容**|**メモ**|
+|**EWS マネージ API のクラス**|**EWS の型**|**FolderClass 値**|**内容**|**メモ**|
 |:-----|:-----|:-----|:-----|:-----|
-|[Folder](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder%28v=exchg.80%29.aspx) <br/> |[Folder](http://msdn.microsoft.com/library/812948d8-c7db-45ce-bb3a-77233a53a974%28Office.15%29.aspx) <br/> |IPF.Note  <br/> |メール メッセージまたはフォルダー。  <br/> | フォルダーの一般的なクラスまたは EWS のマネージ API の[WellKnownFolderName](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.wellknownfoldername%28v=exchg.80%29.aspx)の次のフォルダーおよび EWS [DistinguishedFolderId](http://msdn.microsoft.com/library/50018162-2941-4227-8a5b-d6b4686bb32f%28Office.15%29.aspx)フォルダーの種類です。 <ul><li>  ルート (IPM サブツリー)</li><li>NonIpmSubtree</li><li>受信トレイ</li><li>削除済みアイテム</li><li>下書き</li><li>ジャーナル</li><li>メモ  </li><li>送信トレイ</li><li>送信済みアイテム</li><li>メッセージ フォルダー</li><li>迷惑メール</li><li>ボイス メール</li></ul> |
-|[CalendarFolder](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.calendarfolder%28v=exchg.80%29.aspx) <br/> |[CalendarFolder](http://msdn.microsoft.com/library/48687a78-e757-4c04-9641-bf4302c6b565%28Office.15%29.aspx) <br/> |IPF.Appointment  <br/> |予定および会議。  <br/> |ユーザーは、会議出席依頼に応答すると、予定は、EWS のマネージ API の[WellKnownFolderName.Calendar](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.wellknownfoldername%28v=exchg.80%29.aspx)または、EWS [DistinguishedFolderId.CalendarFolder](http://msdn.microsoft.com/library/50018162-2941-4227-8a5b-d6b4686bb32f%28Office.15%29.aspx)のみに追加されます。 これらは、会議出席依頼や返答を自動対話をサポートするフォルダーのみです。  <br/><br/>このクラスのフォルダーまたはフォルダーの種類の予定と会議の EWS のマネージ API の[Folder.FindItem](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.finditems%28v=EXCHG.80%29.aspx)メソッドと、[予定表ビュー](http://msdn.microsoft.com/EN-US/library/microsoft.exchange.webservices.data.calendarview%28v=exchg.80%29.aspx)クラス、または[FindItem EWS を使用して開始日と終了日を基に取得する予定表ビューの使用をサポートしています。](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)操作および[予定表ビュー](http://msdn.microsoft.com/library/a4a953b8-0710-416c-95ef-59e51eba9982%28Office.15%29.aspx)の要素です。  <br/> |
-|[メッセージ](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.contactsfolder%28v=exchg.80%29.aspx) <br/> |[メッセージ](http://msdn.microsoft.com/library/6c299de8-2087-4aeb-8e66-2bc7586509a6%28Office.15%29.aspx) <br/> |IPF.Contact  <br/> |連絡先と配布リスト。  <br/> |なし。  <br/> |
-|[SearchFolder](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfolder%28v=exchg.80%29.aspx) <br/> |[SearchFolder](http://msdn.microsoft.com/library/1a7d408b-2e98-4391-8834-085ed6d5757c%28Office.15%29.aspx) <br/> |IPF.Note  <br/> |内容は、制限またはフィルターによって決まります。検索フォルダーにサブフォルダーは含まれていません。  <br/> |検索条件に一致するアイテムは、実際には検索フォルダーに含まれていません。そうではなく、メールボックスの他の場所にあります。  <br/> 検索フォルダーを Outlook で使用可能にするには、検索 (Finder) フォルダーに検索 (Search) フォルダーを作成します。  <br/> |
-|[TasksFolder](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.tasksfolder%28v=exchg.80%29.aspx) <br/> |[TasksFolder](http://msdn.microsoft.com/library/5a9a4612-8064-4986-b467-c44f268c64df%28Office.15%29.aspx) <br/> |IPF.Task  <br/> |行うべき作業アイテムが含まれています。  <br/> |なし。  <br/> |
+|[Folder](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder%28v=EXCHG.80%29.aspx) <br/> |[Folder](http://msdn.microsoft.com/library/812948d8-c7db-45ce-bb3a-77233a53a974%28Office.15%29.aspx) <br/> |IPF.Note  <br/> |メール メッセージまたはフォルダー。  <br/> | これは、次の EWS マネージ API の [WellKnownFolderName](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.wellknownfoldername%28v=exchg.80%29.aspx) フォルダーおよび EWS の [DistinguishedFolderId](http://msdn.microsoft.com/library/50018162-2941-4227-8a5b-d6b4686bb32f%28Office.15%29.aspx) フォルダーの汎用 Folder クラスまたは型です。 <ul><li>  ルート (IPM サブツリー)</li><li>NonIpmSubtree</li><li>受信トレイ</li><li>削除済みアイテム</li><li>下書き</li><li>ジャーナル</li><li>メモ  </li><li>送信トレイ</li><li>送信済みアイテム</li><li>メッセージ フォルダー</li><li>迷惑メール</li><li>ボイス メール</li></ul> |
+|[CalendarFolder](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.calendarfolder%28v=exchg.80%29.aspx) <br/> |[CalendarFolder](http://msdn.microsoft.com/library/48687a78-e757-4c04-9641-bf4302c6b565%28Office.15%29.aspx) <br/> |IPF.Appointment  <br/> |予定および会議。  <br/> |ユーザーが会議出席依頼に応答すると、予定は EWS マネージ API の [WellKnownFolderName.Calendar](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.wellknownfoldername%28v=exchg.80%29.aspx) または EWS の [DistinguishedFolderId.CalendarFolder](http://msdn.microsoft.com/library/50018162-2941-4227-8a5b-d6b4686bb32f%28Office.15%29.aspx) にのみ追加されます。 これらのフォルダーだけが、会議出席依頼や応答との自動対話をサポートします。  <br/><br/>この Folder クラスまたは Folder 型は、予定表ビューの使用をサポートしており、EWS マネージ API の [Folder.FindItem](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.finditems%28v=EXCHG.80%29.aspx) メソッドと [CalendarView](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.calendarview%28v=exchg.80%29.aspx) クラス、EWS の [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 操作と [CalendarView](http://msdn.microsoft.com/library/a4a953b8-0710-416c-95ef-59e51eba9982%28Office.15%29.aspx) 要素を使用して、開始日と終了日に基づいて予定および会議を取得します。  <br/> |
+|[ContactsFolder](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.contactsfolder%28v=exchg.80%29.aspx) <br/> |[ContactsFolder](http://msdn.microsoft.com/library/6c299de8-2087-4aeb-8e66-2bc7586509a6%28Office.15%29.aspx) <br/> |IPF.Contact  <br/> |連絡先と配布リスト。  <br/> |なし。  <br/> |
+|[SearchFolder](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.searchfolder%28v=exchg.80%29.aspx) <br/> |[SearchFolder](http://msdn.microsoft.com/library/1a7d408b-2e98-4391-8834-085ed6d5757c%28Office.15%29.aspx) <br/> |IPF.Note  <br/> |内容は、制限またはフィルターによって決まります。検索フォルダーにサブフォルダーは含まれていません。  <br/> |検索条件に一致するアイテムは、実際には検索フォルダーに含まれていません。そうではなく、メールボックスの他の場所にあります。  <br/> 検索フォルダーを Outlook で使用可能にするには、検索 (Finder) フォルダーに検索 (Search) フォルダーを作成します。  <br/> |
+|[TasksFolder](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.tasksfolder%28v=exchg.80%29.aspx) <br/> |[TasksFolder](http://msdn.microsoft.com/library/5a9a4612-8064-4986-b467-c44f268c64df%28Office.15%29.aspx) <br/> |IPF.Task  <br/> |行うべき作業アイテムが含まれています。  <br/> |なし。  <br/> |
    
 ### <a name="folder-structure"></a>フォルダー構造
 
-フォルダーは、メールボックスの構造を提供します。 非 IPM サブツリーまたは EWS のルートではほとんどのユーザーに表示しない、システム フォルダーと同様に、ほとんどのユーザーは、自分のメールボックスと対話、EWS でインフォメーション ストアの最上部と呼ばれる、IPM サブツリーが含まれます。 次の図は、ユーザー用のフォルダー構造を示しています、示し、ユーザーのアイテムのあるフォルダーはシステム フォルダーです。
+フォルダーは、メールボックスの構造を提供します。 これには、EWS の「インフォメーション ストアの先頭」と呼ばれる IPM サブツリーが含まれます。ここで、ほとんどのユーザーは、自分のメールボックスに加え、EWS の非 IPM サブツリーまたはルートに存在する、普段目にすることがないシステム フォルダーを操作します。 ユーザー用のフォルダー構造を示す次の図に、どのフォルダーがユーザーのアイテムで、どれがシステム フォルダーであるかを示します。
   
-**図 2 になります。メールボックス内の項目とシステム フォルダー**
+**図 2. メールボックスのアイテムおよびシステム フォルダー**
 
 ![ルート内のシステム フォルダー (インフォメーション ストア内の Favorites、Finder、FreeBusy Data、Top など) が示された図。インフォメーション ストアの Top には、Calendar、Contacts などのユーザー フォルダーがあります。](media/Ex2013_Folder_OverviewSampleHierarchy.png)
   
@@ -55,88 +55,88 @@ ms.locfileid: "19758918"
 
 メールボックス内には、特殊なフォルダーもあります。これらは、EWS マネージ API の既知のフォルダーまたは EWS の識別フォルダーのことです。これらのフォルダーの一部には、フォルダー名、フォルダー構造内での場所、フォルダーを削除可能かどうかについての制限があります。他の「汎用」(特殊ではない) フォルダーには、こうした制限はありません。次の既知のフォルダーまたは識別フォルダーについて理解することは重要です。これらは、ルート システム、ユーザー、検索フォルダーであり、ほとんどの実装に適用できるからです。  
   
-**表 2 になります。主識別し、既知のフォルダー**
+**表 2. 基本的な既知のフォルダーおよび識別フォルダー**
 
-|**フレンドリ名**|**EWS のマネージ API の**WellKnownFolderName**の値**|**EWS **DistinguishedFolderId**値**|**説明**|
+|**フレンドリ名**|**EWS マネージ API の **WellKnownFolderName** 値**|**EWS の **DistinguishedFolderId** 値**|**説明**|
 |:-----|:-----|:-----|:-----|
 |ルート (非 IPM サブツリー)  <br/> |WellKnownFolderName.Root  <br/> |DistinguishedFolderId.root  <br/> |非 IPM サブツリーとも呼ばれる、メールボックスのルート フォルダーが含まれます。このフォルダーには親が含まれていないため、フォルダーを移動、コピー、名前変更、削除することはできません。各メッセージ ストアには 1 つのルート フォルダーだけが含まれます。  <br/> |
-|インフォメーション ストアの先頭 (IPM サブツリー)  <br/> |WellKnownFolderName.MsgFolderRoot  <br/> |DistinguishedFolderId.msgfolderroot  <br/> |受信トレイやユーザーのその他のフォルダーが含まれます。   <br/> |
+|インフォメーション ストアの先頭 (IPM サブツリー)  <br/> |WellKnownFolderName.MsgFolderRoot  <br/> |DistinguishedFolderId.msgfolderroot  <br/> |受信トレイやユーザーのその他のフォルダーが含まれます。  <br/> |
 |検索 (検索フォルダー)  <br/> |WellKnownFolderName.SearchFolders  <br/> |DistinguishedFolderId.searchfolders  <br/> |Outlook で表示可能な検索フォルダーが含まれます。  <br/> |
    
-EWS のマネージ API の[WellKnownFolderName](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.wellknownfoldername%28v=exchg.80%29.aspx)プロパティの値の一覧は、 [WellKnownFolderName](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.wellknownfoldername%28v=EXCHG.80%29.aspx)列挙体を参照してください。 EWS **DistinguishedFolderId**の値の一覧は、 [DistinguishedFolderId](http://msdn.microsoft.com/library/50018162-2941-4227-8a5b-d6b4686bb32f%28Office.15%29.aspx)を参照してください。
+EWS マネージ API の [WellKnownFolderName](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.wellknownfoldername%28v=exchg.80%29.aspx) プロパティの値の完全な一覧については、[WellKnownFolderName](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.wellknownfoldername%28v=exchg.80%29.aspx) 列挙体を参照してください。 EWS の **DistinguishedFolderId** 値の完全な一覧については、[DistinguishedFolderId](http://msdn.microsoft.com/library/50018162-2941-4227-8a5b-d6b4686bb32f%28Office.15%29.aspx) を参照してください。
   
-### <a name="folder-properties"></a>フォルダー プロパティ
+### <a name="folder-properties"></a>フォルダーのプロパティ
 
-EWS マネージ API では、[[フォルダーのプロパティ](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder_properties%28v=exchg.80%29.aspx)はすべて、基本クラスから派生[フォルダー](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder%28v=EXCHG.80%29.aspx)です。 EWS、すべてのフォルダーが[フォルダー](http://msdn.microsoft.com/library/812948d8-c7db-45ce-bb3a-77233a53a974%28Office.15%29.aspx)の種類で使用可能なフォルダーの要素を使用します。 フォルダー関連のプロパティおよび要素のほとんどは簡単です (親フォルダーの ID、表示名、およびなど) がいくつかは、少しより詳細な説明を必要とします。 
+EWS マネージ API では、[フォルダーのプロパティ](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder_properties%28v=exchg.80%29.aspx)はすべて基本 [Folder](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder%28v=EXCHG.80%29.aspx) クラスから派生しています。 さらに EWS では、すべてのフォルダーは、[Folder](http://msdn.microsoft.com/library/812948d8-c7db-45ce-bb3a-77233a53a974%28Office.15%29.aspx) 型で使用可能なフォルダーの要素を使用します。 ほとんどのフォルダー関連のプロパティおよび要素 (親フォルダーの ID、表示名など) は単純ですが、いくつかのプロパティおよび要素については、もう少し詳しい説明が必要です。 
   
-EWS のマネージ API の[Folder.FolderClass](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.folderclass%28v=EXCHG.80%29.aspx)プロパティまたは EWS [FolderClass](http://msdn.microsoft.com/library/0041d135-2869-4612-89a5-d1aa86aa1093%28Office.15%29.aspx)要素に次の注意事項が適用されます。 
+EWS マネージ API の [Folder.FolderClass](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.folderclass%28v=EXCHG.80%29.aspx) プロパティまたは EWS の [FolderClass](http://msdn.microsoft.com/library/0041d135-2869-4612-89a5-d1aa86aa1093%28Office.15%29.aspx) 要素には注意すべき次の点があります。 
   
-- 場合は、派生クラス型、またはフォルダーの設定、プロパティ、または要素の値が一致しなければなりません。 たとえば、 **FolderClass**プロパティまたは要素はフォルダーは、クラスの中に、[連絡先] フォルダーまたは予定表フォルダーのフォルダーの種類を示しますに示すことはできません。 
+- プロパティまたは要素の値を設定する場合、その値はフォルダーの派生クラスまたは型に一致していなければなりません。 たとえば、**FolderClass** プロパティまたは要素で、そのフォルダーが連絡先フォルダーであることを示すことはできませんが、フォルダーのクラスまたは型が、そのフォルダーが予定表フォルダーであることを示します。 
     
-- 汎用フォルダーの種類のフォルダーを作成し、 **FolderClass**プロパティまたは要素を指定できます。 またはいずれかの[フォルダーを作成する](how-to-work-with-folders-by-using-ews-in-exchange.md#bk_createfolderewsma)特定の種類の**FolderClass**プロパティまたは要素を設定できます。 両方のオプションは、同じ結果を作成します。 
+- **FolderClass** プロパティまたは要素を設定せずに特定の型の[フォルダーを作成](how-to-work-with-folders-by-using-ews-in-exchange.md#bk_createfolderewsma)したり、汎用フォルダー型でフォルダーを作成して **FolderClass** プロパティまたは要素を指定したりできます。 どちらのオプションで作成しても、同じ結果になります。 
     
-- フォルダーの特定の種類を作成することによって、または**FolderClass**プロパティまたは要素自体を設定することにより、 **FolderClass**の値を設定した後は変更できません。 などの IPF を変更することはできません。IPF にフォルダーをメモします。フォルダーにお問い合わせください。 IPF に変更することができます、ただし、します。Note.Contoso フォルダーです。 
+- 特定の型のフォルダーを作成するか、**FolderClass** プロパティまたは要素自体を設定して、**FolderClass** 値を設定した後は、その値を変更することはできません。 たとえば、IPF.Note フォルダーを IPF.Contact フォルダーに変更することはできません。 ただし、IPF.Note.Contoso フォルダーに変更することはできます。 
     
-- 定義済みのプレフィックスのいずれかを使用しない任意の**FolderClass**値は、IPF として扱われます。注フォルダーです。 たとえば、IAmAFolderClass の**FolderClass**の値は、IPF として扱われます。注フォルダーです。 
+- 定義済みのどのプレフィックスも使用していない **FolderClass** 値は、IPF.Note フォルダーとして扱われます。 たとえば、IAmAFolderClass の **FolderClass** 値は、IPF.Note フォルダーとして扱われます。 
     
-フォルダー クラス値は、拡張可能です。 つまり、表 1 に記載されているデフォルトの**FolderClass**値は、プレフィックスとして扱われます。 カスタム値を追加することができます。 たとえば、IPF の**FolderClass**値を持つフォルダーを作成することができます。Contact.Contoso、およびそれは、連絡先フォルダーとして扱われます。 
+フォルダー クラスの値は、拡張可能です。 つまり、表 1 に記載されている既定の **FolderClass** 値はプレフィックスとして扱われ、カスタム値を追加することができます。 たとえば、IPF.Contact.Contoso の **FolderClass** 値を使用して作成するフォルダーは、連絡先フォルダーとして扱われます。 
   
-どのようなように、フォルダーに、クライアントが持っているアクセス許可を削除、読み取り、および、EWS のマネージ API の[Folder.EffectiveRights](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.effectiverights%28v=EXCHG.80%29.aspx)プロパティまたは EWS [EffectiveRights](http://msdn.microsoft.com/library/bf5278eb-3a1a-4d27-9d16-b8be043bb023%28Office.15%29.aspx)要素を使用して、変更を確認できます。 
+EWS マネージ API の [Folder.EffectiveRights](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.effectiverights%28v=EXCHG.80%29.aspx) プロパティまたは EWS の [EffectiveRights](http://msdn.microsoft.com/library/bf5278eb-3a1a-4d27-9d16-b8be043bb023%28Office.15%29.aspx) 要素を使用して、削除、読み取り、変更など、クライアントがフォルダーに対して持っているアクセス許可を確認できます。 
   
 ### <a name="public-folders"></a>パブリック フォルダー
 
-パブリック フォルダーは、共有のアクセス用に設計され、収集、整理、およびワークグループまたは組織内の他のユーザーと情報を共有する簡単で効果的な方法を提供します。 配布グループのコンテンツをアーカイブするのにパブリック フォルダーを使用することもできます。 パブリック フォルダーに関する詳細な情報は、 [EWS を使って Exchange パブリック フォルダーにアクセス](public-folder-access-with-ews-in-exchange.md)を参照してください。
+パブリック フォルダーは、共有アクセスのために設計された、情報を収集、整理してワークグループや組織内の他のユーザーと共有するための容易かつ効果的な方法です。 パブリック フォルダーを使用して、配布グループのコンテンツをアーカイブすることもできます。 パブリック フォルダーの詳細については、「[Exchange での EWS を使用したパブリック フォルダー アクセス](public-folder-access-with-ews-in-exchange.md)」を参照してください。
 
 <a name="bk_hiddenfolders"> </a>
 
 ### <a name="hidden-folders"></a>隠しフォルダー
 
-Exchange がメールボックスのルートに作成するすべてのフォルダーは非表示、およびインフォメーション ストア上の [追加のフォルダーを非表示にするのには EWS のマネージ API または EWS を使用することができます。 隠しフォルダーの詳細については、 [Exchange で EWS を使用して非表示のフォルダーを操作](how-to-work-with-hidden-folders-by-using-ews-in-exchange.md)を参照してください。 
+Exchange がメールボックスのルートに作成するすべてのフォルダーは非表示にされます。EWS マネージ API または EWS を使用して、「インフォメーション ストアの先頭」の下にある他のフォルダーを非表示にすることもできます。 隠しフォルダーの詳細については、「[Exchange で EWS を使用して隠しフォルダーを操作する](how-to-work-with-hidden-folders-by-using-ews-in-exchange.md)」を参照してください。 
 
 <a name="bk_hiddenfolders"> </a>
 
 ### <a name="search-folders"></a>検索フォルダー
 
-検索フォルダーは、プロパティまたは検索フィルターを定義する要素がない限り、通常のフォルダーと同じようにします。 、Exchange メールボックス内の任意のフォルダーに検索フォルダーを作成することができ、他の任意のフォルダーを作成するのと同じ方法でそれらを作成します。 ただし、検索フォルダーの Outlook、Outlook Web App、または Outlook Live で表示するのには、EWS のマネージ API を使用して作成する[SearchFolder](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfolder%28v=exchg.80%29.aspx)オブジェクト置く必要があります[WellKnownFolderName.SearchFolders](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.wellknownfoldername%28v=exchg.80%29.aspx)フォルダー、および[SearchFolder](http://msdn.microsoft.com/library/1a7d408b-2e98-4391-8834-085ed6d5757c%28Office.15%29.aspx)EWS を使用して作成する型は、 [DistinguishedFolderId.SearchFolders](http://msdn.microsoft.com/library/50018162-2941-4227-8a5b-d6b4686bb32f%28Office.15%29.aspx)フォルダーにある必要があります。 検索フォルダー作成する場合は別の場所にも使用可能になるし、カスタム クライアント アプリケーションで表示することができます。 
+検索フォルダーは、検索フィルターを定義するプロパティまたは要素があること以外は、通常のフォルダーと同じです。 検索フォルダーは Exchange メールボックスの任意のフォルダー内に作成できます。その方法は、他のフォルダーを作成する場合と同じです。 ただし、検索フォルダーを Outlook、Outlook Web App、Outlook Live に表示するには、EWS マネージ API を使用して作成した [SearchFolder](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.searchfolder%28v=exchg.80%29.aspx) オブジェクトは [WellKnownFolderName.SearchFolders](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.wellknownfoldername%28v=exchg.80%29.aspx) フォルダーに配置し、EWS を使用して作成した [SearchFolder](http://msdn.microsoft.com/library/1a7d408b-2e98-4391-8834-085ed6d5757c%28Office.15%29.aspx) 型は [DistinguishedFolderId.SearchFolders](http://msdn.microsoft.com/library/50018162-2941-4227-8a5b-d6b4686bb32f%28Office.15%29.aspx) フォルダーに配置する必要があります。 検索フォルダーは、別の場所に作成されていても使用可能であり、カスタム クライアント アプリケーションで表示することができます。 
 
 <a name="bk_item"> </a>
 
 ## <a name="items"></a>アイテム
 
-Exchange 内では、**アイテム**を使用して、個々 の電子メール メッセージ、予定、会議、連絡先、配布リスト、タスク、投稿、およびメールボックス内の項目を表します。 項目は、いずれかの厳密に型指定、関連付けられている特定のクラスまたはスキーマ、または厳密に型指定されない場合とも呼ばれる汎用的なアイテムであることを意味します。 汎用アイテムは、EWS の EWS のマネージ API と[アイテム](http://msdn.microsoft.com/library/4dfe8f48-e7b4-444d-bdf9-a34e180f598b%28Office.15%29.aspx)の種類の[項目](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item%28v=exchg.80%29.aspx)のオブジェクトです。 電子メール メッセージ、連絡先、配布リスト、投稿などの共通の項目とタスクは、厳密に型指定にスキーマの特定のプロパティまたは要素を設定することができます。 
+Exchange での EWS はメールボックス内の個々のメール メッセージ、予定、会議、連絡先、配布リスト、タスク、投稿、および他のアイテムを表すために、**アイテム**を使用します。 アイテムは、厳密に型指定されているか (関連付けられている特定のクラスまたはスキーマが含まれるアイテム)、厳密に型指定されていないか (汎用アイテム) のいずれかになります。 汎用アイテムは、EWS マネージ API の [Item](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.item%28v=exchg.80%29.aspx) オブジェクトおよび EWS の [Item](http://msdn.microsoft.com/library/4dfe8f48-e7b4-444d-bdf9-a34e180f598b%28Office.15%29.aspx) 型です。 メール メッセージ、連絡先、配布リスト、投稿、タスクなどの共通のアイテムは、厳密に型指定されており、スキーマ化された特定のプロパティまたは要素を設定することができます。 
   
-**表 3。厳密に型指定された項目**
+**表 3. 厳密に型指定されたアイテム**
 
-|**EWS のマネージ API の項目の種類**|**EWS 項目要素**|
+|**EWS マネージ API のアイテムの種類**|**EWS のアイテムの要素**|
 |:-----|:-----|
-|[Appointment](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) <br/> |[カレンダー項目](http://msdn.microsoft.com/library/b0c1fd27-b6da-46e5-88b8-88f00c71ba80%28Office.15%29.aspx) <br/> |
-|[Contact](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.contact%28v=exchg.80%29.aspx) <br/> |[Contact](http://msdn.microsoft.com/library/66bfff50-7a91-4d81-b6a0-610b9962f677%28Office.15%29.aspx) <br/> |
-|[ContactGroup](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.contactgroup%28v=exchg.80%29.aspx) <br/> |[DistributionList](http://msdn.microsoft.com/library/f65aea01-e870-44a2-8571-fa6c001341cc%28Office.15%29.aspx) <br/> |
-|[なか](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) <br/> |[Message](http://msdn.microsoft.com/library/2400b33c-43b2-4fc2-b6fb-275a99e0e810%28Office.15%29.aspx) <br/> |
-|[PostItem](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.postitem%28v=exchg.80%29.aspx) <br/> |[PostItem](http://msdn.microsoft.com/library/7727ed84-9591-4a1c-bb04-12129926499b%28Office.15%29.aspx) <br/> |
-|[Task](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.task%28v=exchg.80%29.aspx) <br/> |[タスク](http://msdn.microsoft.com/library/7c84927e-db28-4c5d-b0b5-cbcc2b88d869%28Office.15%29.aspx) <br/> |
+|[Appointment](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) <br/> |[CalendarItem](http://msdn.microsoft.com/library/b0c1fd27-b6da-46e5-88b8-88f00c71ba80%28Office.15%29.aspx) <br/> |
+|[Contact](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.contact%28v=exchg.80%29.aspx) <br/> |[Contact](http://msdn.microsoft.com/library/66bfff50-7a91-4d81-b6a0-610b9962f677%28Office.15%29.aspx) <br/> |
+|[ContactGroup](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.contactgroup%28v=exchg.80%29.aspx) <br/> |[DistributionList](http://msdn.microsoft.com/library/f65aea01-e870-44a2-8571-fa6c001341cc%28Office.15%29.aspx) <br/> |
+|[EmailMessage](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) <br/> |[Message](http://msdn.microsoft.com/library/2400b33c-43b2-4fc2-b6fb-275a99e0e810%28Office.15%29.aspx) <br/> |
+|[PostItem](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.postitem%28v=exchg.80%29.aspx) <br/> |[PostItem](http://msdn.microsoft.com/library/7727ed84-9591-4a1c-bb04-12129926499b%28Office.15%29.aspx) <br/> |
+|[Task](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.task%28v=exchg.80%29.aspx) <br/> |[Task](http://msdn.microsoft.com/library/7c84927e-db28-4c5d-b0b5-cbcc2b88d869%28Office.15%29.aspx) <br/> |
    
-EWS のマネージ API を厳密にする項目[の項目](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item%28v=EXCHG.80%29.aspx)の基本クラスから派生します。 ただし、通常直接操作する表 3 に記載されている派生型のいずれかと**アイテム**のクラスではなく。 [ItemCollection](http://msdn.microsoft.com/en-us/library/dd634001%28v=EXCHG.80%29.aspx)クラスを使用するときに、**項目**のクラスのインスタンスを直接使用する可能性があります。 その場合は、**項目**のクラスのインスタンスを表すストア内のアイテムの種類を決定するロジックを実装する必要があります。 そのアイテムを操作するには、アイテムを表すクラスのインスタンスを使用して項目に連結する必要があります。 
+EWS マネージ API の厳密に型指定されたアイテムは、基本 [Item](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.item%28v=exchg.80%29.aspx) クラスから派生します。 ただし、通常は、**Item** クラスを直接操作するのではなく、表 3 に記載されている派生した型のいずれかを操作します。 [ItemCollection](http://msdn.microsoft.com/ja-JP/library/dd634001%28v=EXCHG.80%29.aspx) クラスを操作する場合は、**Item** クラスのインスタンスを直接操作することも可能です。 その場合、**Item** クラスのインスタンスが表す、ストア内のアイテムの種類を決定するロジックを実装する必要があります。 そのアイテムを操作するには、アイテムを表すクラスのインスタンスを使用してアイテムにバインドする必要があります。 
   
 ### <a name="items-in-folders"></a>フォルダー内のアイテム
 
 一部のフォルダーには、格納できるアイテムの種類について制限があります。これらは、Exchange メールボックス データベースがフォルダーに適用する制限であり、クライアント ビューの制限ではありません。  
   
-**表 4 です。フォルダーのアイテムの制限**
+**表 4. フォルダーのアイテムの制限**
 
-|**EWS で API フォルダー管理クラス**|**EWS のフォルダーの種類**|**Restriction**|
+|**EWS マネージ API のフォルダー クラス**|**EWS のフォルダー型**|**制限**|
 |:-----|:-----|:-----|
-|[フォルダーの基本クラス](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder%28v=exchg.80%29.aspx) <br/> |[Folder](http://msdn.microsoft.com/library/812948d8-c7db-45ce-bb3a-77233a53a974%28Office.15%29.aspx) <br/> |EWS のマネージ API の[なか](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx)の新しいオブジェクトと[PostItem](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.postitem%28v=exchg.80%29.aspx)オブジェクトでは、EWS の[メッセージ](http://msdn.microsoft.com/library/2400b33c-43b2-4fc2-b6fb-275a99e0e810%28Office.15%29.aspx)の種類または**PostItem**の種類は、一般的なフォルダーの中にのみ作成できます。 汎用フォルダーは、他の項目の種類に移動することができますが、クライアントは表示されませんがあります。  <br/> |
-|[CalendarFolder](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.calendarfolder%28v=exchg.80%29.aspx) <br/> |[CalendarFolder](http://msdn.microsoft.com/library/48687a78-e757-4c04-9641-bf4302c6b565%28Office.15%29.aspx) <br/> |EWS のマネージ API の[予定](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx)の新しいオブジェクトおよび EWS[カレンダー項目](http://msdn.microsoft.com/library/b0c1fd27-b6da-46e5-88b8-88f00c71ba80%28Office.15%29.aspx)の種類は、予定表フォルダーでのみ作成できます。 予定表] フォルダーにその他の項目の種類を移動することができますが、クライアントは表示されませんがあります。  <br/> |
-|[メッセージ](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.contactsfolder%28v=exchg.80%29.aspx) <br/> |[メッセージ](http://msdn.microsoft.com/library/6c299de8-2087-4aeb-8e66-2bc7586509a6%28Office.15%29.aspx) <br/> |新しい EWS のマネージ API の[連絡先](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.contact%28v=exchg.80%29.aspx)オブジェクトと[ContactGroup](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.contactgroup%28v=exchg.80%29.aspx)オブジェクト、または EWS[連絡先](http://msdn.microsoft.com/library/66bfff50-7a91-4d81-b6a0-610b9962f677%28Office.15%29.aspx)型または[DistributionList](http://msdn.microsoft.com/library/f65aea01-e870-44a2-8571-fa6c001341cc%28Office.15%29.aspx)型は、連絡先フォルダーでのみ作成できます。 連絡先フォルダーにその他の項目の種類を移動することができますが、クライアントに表示されません。  <br/> |
-|[SearchFolder](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfolder%28v=exchg.80%29.aspx) <br/> |[SearchFolder](http://msdn.microsoft.com/library/1a7d408b-2e98-4391-8834-085ed6d5757c%28Office.15%29.aspx) <br/> |制限はありません。アイテムは実際には検索フォルダー内に存在しません。これらは、メールボックス内の別の場所に存在します。  <br/> |
-|[TasksFolder](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.tasksfolder%28v=exchg.80%29.aspx) <br/> |[TasksFolder](http://msdn.microsoft.com/library/5a9a4612-8064-4986-b467-c44f268c64df%28Office.15%29.aspx) <br/> |新しい EWS マネージ API[タスク](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.task%28v=exchg.80%29.aspx)オブジェクトまたは EWS の[タスク](http://msdn.microsoft.com/library/7c84927e-db28-4c5d-b0b5-cbcc2b88d869%28Office.15%29.aspx)の種類は、[仕事] フォルダーでのみ作成できます。 タスク] フォルダーにその他の項目の種類を移動することができますが、クライアントに表示されません。  <br/> |
+|[基本フォルダー クラス](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder%28v=EXCHG.80%29.aspx) <br/> |[Folder](http://msdn.microsoft.com/library/812948d8-c7db-45ce-bb3a-77233a53a974%28Office.15%29.aspx) <br/> |EWS マネージ API の [EmailMessage](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) オブジェクトと [PostItem](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.postitem%28v=exchg.80%29.aspx) オブジェクト、EWS の [Message](http://msdn.microsoft.com/library/2400b33c-43b2-4fc2-b6fb-275a99e0e810%28Office.15%29.aspx) 型または **PostItem** 型は、汎用フォルダー内にのみ作成できます。 汎用フォルダーに他の種類のアイテムを移動することはできますが、それらのアイテムはクライアントでは表示されません。  <br/> |
+|[CalendarFolder](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.calendarfolder%28v=exchg.80%29.aspx) <br/> |[CalendarFolder](http://msdn.microsoft.com/library/48687a78-e757-4c04-9641-bf4302c6b565%28Office.15%29.aspx) <br/> |予定表フォルダー内には、EWS マネージ API の [Appointment](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) オブジェクトおよび EWS の [CalendarItem](http://msdn.microsoft.com/library/b0c1fd27-b6da-46e5-88b8-88f00c71ba80%28Office.15%29.aspx) 型のみを作成することができます。 予定表フォルダーに他の種類のアイテムを移動することはできますが、それらのアイテムはクライアントでは表示されません。  <br/> |
+|[ContactsFolder](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.contactsfolder%28v=exchg.80%29.aspx) <br/> |[ContactsFolder](http://msdn.microsoft.com/library/6c299de8-2087-4aeb-8e66-2bc7586509a6%28Office.15%29.aspx) <br/> |連絡先フォルダー内には、EWS マネージ API の [Contact](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.contact%28v=exchg.80%29.aspx) オブジェクトと [ContactGroup](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.contactgroup%28v=exchg.80%29.aspx) オブジェクト、EWS の [Contact](http://msdn.microsoft.com/library/66bfff50-7a91-4d81-b6a0-610b9962f677%28Office.15%29.aspx) 型または [DistributionList](http://msdn.microsoft.com/library/f65aea01-e870-44a2-8571-fa6c001341cc%28Office.15%29.aspx) 型のみを作成できます。 連絡先フォルダーに他の種類のアイテムを移動することはできますが、それらのアイテムはクライアントでは表示されません。  <br/> |
+|[SearchFolder](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.searchfolder%28v=exchg.80%29.aspx) <br/> |[SearchFolder](http://msdn.microsoft.com/library/1a7d408b-2e98-4391-8834-085ed6d5757c%28Office.15%29.aspx) <br/> |制限なし。アイテムは実際には検索フォルダー内に存在しません。これらは、メールボックス内の別の場所に存在します。  <br/> |
+|[TasksFolder](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.tasksfolder%28v=exchg.80%29.aspx) <br/> |[TasksFolder](http://msdn.microsoft.com/library/5a9a4612-8064-4986-b467-c44f268c64df%28Office.15%29.aspx) <br/> |タスク フォルダー内には、EWS マネージ API の [Task](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.task%28v=exchg.80%29.aspx) オブジェクト、EWS の [Task](http://msdn.microsoft.com/library/7c84927e-db28-4c5d-b0b5-cbcc2b88d869%28Office.15%29.aspx) 型のみを作成できます。 タスク フォルダーに他の種類のアイテムを移動することはできますが、それらのアイテムはクライアントでは表示されません。  <br/> |
 
 <a name="bk_upgrading"> </a>
 
 ## <a name="upgrading-from-earlier-product-versions"></a>以前の製品バージョンからのアップグレード
 
-フォルダーの大部分は以前のバージョンおよび現在の製品バージョンで変更されていないままであります。 ただし、Exchange の以前のバージョンでの管理フォルダーを使用して、メッセージング レコード管理 (MRM) を実行することに注意してください。 Exchange のオンライン、Exchange オンライン Office 365 の一部のバージョンの Exchange が Exchange 2013 で始まるとは、MRM のリテンション ・ ポリシーを使用します。 [アップグレード ・ リテンション ・ ポリシーを使用するフォルダーを管理する](http://technet.microsoft.com/en-us/library/dd298032%28v=exchg.150%29.aspx)ことができます。 
+以前の製品バージョンと現在の製品バージョンでは、フォルダーの大部分に変更はありません。 ただし、以前のバージョンの Exchange では、メッセージング レコード管理 (MRM) を実行する場合に管理フォルダーを使用することに注意してください。 Exchange Online、Office 365 の一部としての Exchange Online、Exchange 2013 以降のバージョンの Exchange では、MRM のアイテム保持ポリシーが使用されます。 [管理フォルダーをアップグレードしてアイテム保持ポリシーを使用する](http://technet.microsoft.com/ja-JP/library/dd298032%28v=exchg.150%29.aspx)ことができます。 
   
 以前および現在の製品バージョンで、アイテムは変更されていません。
 
@@ -144,15 +144,15 @@ EWS のマネージ API を厳密にする項目[の項目](http://msdn.microsof
 
 ## <a name="in-this-section"></a>このセクションの内容
 
-- [Exchange EWS を使用してフォルダーを操作します。](how-to-work-with-folders-by-using-ews-in-exchange.md)
+- [Exchange で EWS を使用してフォルダーを操作する](how-to-work-with-folders-by-using-ews-in-exchange.md)
     
-- [Exchange EWS を使用して非表示のフォルダーの操作します。](how-to-work-with-hidden-folders-by-using-ews-in-exchange.md)
+- [Exchange で EWS を使用して隠しフォルダーを操作する](how-to-work-with-hidden-folders-by-using-ews-in-exchange.md)
     
-- [EWS を使用して Exchange で Exchange メールボックスのアイテムを扱う](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md)
+- [Exchange で EWS を使用して Exchange メールボックス アイテムを操作する](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md)
     
-- [Exchange EWS を使用して項目を削除します。](deleting-items-by-using-ews-in-exchange.md)
+- [Exchange で EWS を使用してアイテムを削除する](deleting-items-by-using-ews-in-exchange.md)
     
-- [エクスポートし、Exchange の EWS を使用してアイテムをインポート](exporting-and-importing-items-by-using-ews-in-exchange.md)
+- [Exchange で EWS を使用してアイテムをエクスポートおよびインポートする](exporting-and-importing-items-by-using-ews-in-exchange.md)
     
 ## <a name="see-also"></a>関連項目
 

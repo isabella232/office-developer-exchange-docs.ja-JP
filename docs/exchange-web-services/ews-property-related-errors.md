@@ -8,7 +8,7 @@ ms.assetid: 1c4c5969-7bdd-4021-be0e-cae99e86cf2c
 description: EWS アプリケーション内のプロパティに関連するエラーを処理する方法を確認します。
 ms.openlocfilehash: f214ab40c3717178c6957a9da93bdf89999fc1d3
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758892"

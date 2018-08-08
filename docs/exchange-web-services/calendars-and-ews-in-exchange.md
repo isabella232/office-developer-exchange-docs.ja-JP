@@ -1,5 +1,5 @@
 ---
-title: Calendars and EWS in Exchange
+title: Exchange の予定表と EWS
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,12 +8,12 @@ ms.assetid: b87b0180-f5b5-44e4-b6ac-4f23e476b03b
 description: Exchange の予定表、予定表フォルダーとアイテム、予定、会議について説明します。
 ms.openlocfilehash: bb9702118ff1db66862a5788c2d8f58dd55c4d09
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758876"
 ---
-# <a name="calendars-and-ews-in-exchange"></a>Calendars and EWS in Exchange
+# <a name="calendars-and-ews-in-exchange"></a>Exchange の予定表と EWS
 
 Exchange の予定表、予定表フォルダーとアイテム、予定、会議について説明します。
   
@@ -51,14 +51,14 @@ EWS と EWS マネージ API には、さまざまな予定表関連タスクを
 ## <a name="calendar-folders-and-calendar-items"></a>予定表フォルダーと予定表アイテム
 <a name="bk_CalendarFolder"> </a>
 
-予定表フォルダーには予定表アイテムが含まれています。予定表フォルダーには [IPF.Appointment](http://msdn.microsoft.com/library/0041d135-2869-4612-89a5-d1aa86aa1093%28Office.15%29.aspx) の **フォルダー クラス**があり、[ItemClass](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.itemclass%28v=exchg.80%29.aspx) EWS マネージ API プロパティで定義されているアイテムのみを含めることができます。このプロパティは、 [Appointment クラス](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) オブジェクトか、EWS [CalendarItemType](http://msdn.microsoft.com/library/1feb0788-adf7-4a7c-830c-005214ad930f%28Office.15%29.aspx) 要素と関連付けられています。 
+予定表フォルダーには予定表アイテムが含まれています。予定表フォルダーには [IPF.Appointment](http://msdn.microsoft.com/library/0041d135-2869-4612-89a5-d1aa86aa1093%28Office.15%29.aspx) の **フォルダー クラス**があり、[ItemClass](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.item.itemclass%28v=exchg.80%29.aspx) EWS マネージ API プロパティで定義されているアイテムのみを含めることができます。このプロパティは、 [Appointment クラス](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) オブジェクトか、EWS [CalendarItemType](http://msdn.microsoft.com/library/1feb0788-adf7-4a7c-830c-005214ad930f%28Office.15%29.aspx) 要素と関連付けられています。 
   
-一連の定期的な一連の定期的な例外の発生が、メールボックス内の実際の項目ではないが、内部的には、定期的なアイテムの添付ファイルとして保存ではなく、予定表フォルダー内のアイテムはメールボックス内の他のフォルダー内のアイテムとは少し異なりますマスター シェイプです。 したがって、特定の日付範囲内のすべての予定を取得するために [カレンダー] ビューを使用する必要があります。 予定と予定表のビューを取得する方法の詳細については、[予定および Exchange EWS を使用して会議を取得する](how-to-get-appointments-and-meetings-by-using-ews-in-exchange.md)を参照してください。
+予定表フォルダー内のアイテムはメールボックス内の他のフォルダーのアイテムと少し異なります。これは、定期的なアイテムや、定期的なアイテムの例外が、メールボックス内の実際のアイテムではなく、定期的なマスターへの添付物として内部に格納されているためです。 したがって、指定した日付範囲内のすべての予定を取得するには、予定表ビューを使用する必要があります。 予定と予定表のビューの取得の詳細については、「[Exchange の EWS を使用して予定と会議を取得する](how-to-get-appointments-and-meetings-by-using-ews-in-exchange.md)」をご覧ください。
   
 ## <a name="meetings-and-appointments"></a>会議と予定
 <a name="bk_meetings"> </a>
 
-会議と予定の根本的な違いは、会議には出席者がいますが、予定にはいない点です。内部的には、Exchange は会議と予定の両方に同じオブジェクトを使用します。EWS マネージ API [Appointment クラス](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx)か、EWS [CalendarItem](http://msdn.microsoft.com/library/b0c1fd27-b6da-46e5-88b8-88f00c71ba80%28Office.15%29.aspx) 要素を使用して、会議や予定を操作します。 
+会議と予定の根本的な違いは、会議には出席者がいますが、予定にはいない点です。内部的には、Exchange は会議と予定の両方に同じオブジェクトを使用します。EWS マネージ API [Appointment クラス](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx)か、EWS [CalendarItem](http://msdn.microsoft.com/library/b0c1fd27-b6da-46e5-88b8-88f00c71ba80%28Office.15%29.aspx) 要素を使用して、会議や予定を操作します。 
   
 予定も会議も単一のインスタンスや[定期的なアイテム](recurrence-patterns-and-ews.md)の一部ですが、予定は出席者、会議室、リソースを含まないため、メッセージの送信を必要としません。
   
@@ -88,30 +88,30 @@ EWS と EWS マネージ API には、さまざまな予定表関連タスクを
 ## <a name="recurring-series"></a>定期的なアイテム
 <a name="bk_recurrence"> </a>
 
-予定や会議の定期的なアイテムは、定期的なマスター、発生するアイテムのセット、オプションの例外アイテムのセットで構成されています。定期的なアイテムの情報は定期的なマスター アイテムに格納されます。[RecurringMasterItemId](http://msdn.microsoft.com/library/5800b58c-f3d7-4d8f-acc0-d13e02f4e258%28Office.15%29.aspx) EWS 要素は一連のアイテムと例外に関連しています。または、 [Appointment.BindToRecurringMaster](http://msdn.microsoft.com/en-us/library/dd635978%28v=EXCHG.80%29.aspx) EWS マネージ API メソッドを使用して、定期的なマスターを取得できます。一連のアイテムのインスタンスを使用すると、一連のアイテムに関連するすべての要素と情報を見つけることができます。 
+予定や会議の定期的なアイテムは、定期的なマスター、発生するアイテムのセット、オプションの例外アイテムのセットで構成されています。定期的なアイテムの情報は定期的なマスター アイテムに格納されます。[RecurringMasterItemId](http://msdn.microsoft.com/library/5800b58c-f3d7-4d8f-acc0-d13e02f4e258%28Office.15%29.aspx) EWS 要素は一連のアイテムと例外に関連しています。または、 [Appointment.BindToRecurringMaster](http://msdn.microsoft.com/ja-JP/library/dd635978%28v=EXCHG.80%29.aspx) EWS マネージ API メソッドを使用して、定期的なマスターを取得できます。一連のアイテムのインスタンスを使用すると、一連のアイテムに関連するすべての要素と情報を見つけることができます。 
   
 定期的なアイテムのプロパティはすべての予定表アイテムに存在しますが、定期的なマスター アイテムにのみ入力されます。一連のすべてのアイテムのインデックスに加えて、定期的なマスターには、変更されたアイテムや削除されたアイテム、一連のアイテムの定期的なパターン (たとえば、日単位、週単位、月単位、年単位) への参照があります。
   
 ## <a name="in-this-section"></a>このセクションの内容
 <a name="bk_inthissection"> </a>
 
-- [Exchange 2013 の EWS を使用して予定および会議を作成します。](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)
+- [Exchange 2013 の EWS を使用して予定と会議を作成する](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)
     
-- [EWS を使用して Exchange、終日のイベントを作成します。](how-to-create-all-day-events-by-using-ews-in-exchange.md)
+- [Exchange の EWS を使用して終日イベントを作成する](how-to-create-all-day-events-by-using-ews-in-exchange.md)
     
-- [Exchange EWS を使用して予定および会議を取得します。](how-to-get-appointments-and-meetings-by-using-ews-in-exchange.md)
+- [Exchange の EWS を使用して予定と会議を取得する](how-to-get-appointments-and-meetings-by-using-ews-in-exchange.md)
     
-- [Exchange EWS を使用して予定および会議を更新します。](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)
+- [Exchange の EWS を使用して予定と会議を更新する](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)
     
-- [予定を削除して、Exchange で EWS を使用して会議をキャンセル](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md)
+- [Exchange の EWS を使用して、予定を削除し、会議をキャンセルする](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md)
     
-- [Exchange EWS を使用して、ルームの一覧を取得します。](how-to-get-room-lists-by-using-ews-in-exchange.md)
+- [Exchange の EWS を使用して、会議室一覧を取得する](how-to-get-room-lists-by-using-ews-in-exchange.md)
     
-- [Exchange EWS を使用して空き時間情報を取得します。](how-to-get-free-busy-information-by-using-ews-in-exchange.md)
+- [Exchange の EWS を使用して空き時間情報を取得する](how-to-get-free-busy-information-by-using-ews-in-exchange.md)
     
-- [Exchange EWS を使用して、会議の新しい日時を提案します。](how-to-propose-a-new-meeting-time-by-using-ews-in-exchange.md)
+- [Exchange の EWS を使用して会議の新しい日時を提案する](how-to-propose-a-new-meeting-time-by-using-ews-in-exchange.md)
     
-- [Exchange 予定表のアイテムをまとめてを処理します。](how-to-process-calendar-items-in-batches-in-exchange.md)
+- [Exchange においてバッチ処理で予定表のアイテムを処理する](how-to-process-calendar-items-in-batches-in-exchange.md)
     
 - [定期的なパターンと EWS](recurrence-patterns-and-ews.md)
     

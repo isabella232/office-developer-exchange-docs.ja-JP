@@ -8,7 +8,7 @@ ms.assetid: 899ba15b-336d-4f9b-8563-318c61e43713
 description: Exchange 用の EWS と Web サービス クライアントのアプリケーションの開発に役立つ情報を紹介します。
 ms.openlocfilehash: 2b8b032124e45dda7c83932d519ffb87bcdb5514
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758875"
@@ -17,7 +17,7 @@ ms.locfileid: "19758875"
 
 Exchange 用の EWS と Web サービス クライアントのアプリケーションの開発に役立つ情報を紹介します。
   
-このセクションの記事では、Exchange Online、Office 365 の一部としての Exchange Online、Exchange 2013 以降のオンプレミス バージョンの Exchange 用の Exchange クライアント アプリケーションにおいて、EWS と Web サービスを使用する方法について説明し、特定のタスクを実行する方法の例を示します。 
+このセクションの記事では、Exchange Online、Office 365 の一部としての Exchange Online、Exchange 2013 以降のオンプレミス バージョンの Exchange 用の Exchange クライアント アプリケーションにおいて、EWS と Web サービスを使用する方法について説明し、特定のタスクを実行する方法の例を示します。　　　　 
   
 ## <a name="in-this-section"></a>このセクションの内容
 
@@ -67,7 +67,7 @@ Exchange 用の EWS と Web サービス クライアントのアプリケーシ
     
 ## <a name="see-also"></a>関連項目
 
-- [Exchange、EWS の管理 API、EWS、および web サービスを探索します。](explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)     
+- [Exchange の EWS マネージ API、EWS、および Web サービスについて学ぶ](explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)     
 - [Exchange で Web サービスの使用を開始する](start-using-web-services-in-exchange.md)  
 - [Exchange の EWS クライアントの設計の概要](ews-client-design-overview-for-exchange.md)  
 - [Exchange web サービスの参照](../web-service-reference/web-services-reference-for-exchange.md)

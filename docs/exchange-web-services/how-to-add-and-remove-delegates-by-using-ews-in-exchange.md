@@ -1,5 +1,5 @@
 ---
-title: 追加し、Exchange の EWS を使用して、デリゲートを削除します。
+title: Exchange で EWS を使用して代理人を追加および削除する
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
@@ -8,25 +8,25 @@ ms.assetid: cc7760bf-633b-483a-84ae-b52f437af2d3
 description: Exchange の EWS マネージ API または EWS を使用してユーザーのメールボックスに対して代理人を追加または削除する方法について説明します。
 ms.openlocfilehash: d55ef6c5c4e434603d293dbe30c6147ceb73b08b
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758912"
 ---
-# <a name="add-and-remove-delegates-by-using-ews-in-exchange"></a>追加し、Exchange の EWS を使用して、デリゲートを削除します。
+# <a name="add-and-remove-delegates-by-using-ews-in-exchange"></a>Exchange で EWS を使用して代理人を追加および削除する
 
 Exchange の EWS マネージ API または EWS を使用してユーザーのメールボックスに対して代理人を追加または削除する方法について説明します。
   
-メールボックス所有者の代理として機能またはメールボックスへの代理人のアクセスを削除するのにデリゲートを有効にするのには、EWS のマネージ API または EWS を使用できます。 代理人として追加し、アクセス許可が与えられますユーザーは、メールボックス所有者の代理としてのタスクを実行できます。 など、作成し会議出席依頼を送信、電子メールを送信できに会議出席依頼をメールボックスの所有者の代わりに応答できます。 
+EWS マネージ API または EWS を使用して、メールボックス所有者の代わりに代理人がアクションを実行できるようにしたり、メールボックスに対する代理人のアクセス権限を削除したりできます。 代理人として追加されてアクセス許可が付与されたユーザーは、メールボックス所有者の代理としてタスクを実行できます。 たとえば、会議出席依頼の作成と送信、メールの送信、会議出席依頼への応答を、メールボックス所有者に代わって行うことができます。 
   
-**表 1 です。EWS のマネージ API のメソッドおよび EWS の操作を追加すると、デリゲートを削除します。**
+**表 1. 代理人を追加および削除するための EWS マネージ API メソッドと EWS 操作**
 
 |**タスク**|**EWS マネージ API メソッド**|**EWS 操作**|
 |:-----|:-----|:-----|
-|代理人を追加する  <br/> |[ExchangeService.AddDelegates](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.adddelegates%28v=exchg.80%29.aspx) <br/> |[AddDelegate](http://msdn.microsoft.com/library/646fb994-229e-4d90-8b95-6541191cb3ae%28Office.15%29.aspx) <br/> |
-|代理人を削除する  <br/> |[ExchangeService.RemoveDelegates](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.exchangeservice.removedelegates%28v=exchg.80%29.aspx) <br/> |[RemoveDelegate](http://msdn.microsoft.com/library/f21c5171-62e7-47c8-99b1-22e1ff5883bb%28Office.15%29.aspx) <br/> |
+|代理人を追加する  <br/> |[ExchangeService.AddDelegates](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.adddelegates%28v=exchg.80%29.aspx) <br/> |[AddDelegate](http://msdn.microsoft.com/library/646fb994-229e-4d90-8b95-6541191cb3ae%28Office.15%29.aspx) <br/> |
+|代理人を削除する  <br/> |[ExchangeService.RemoveDelegates](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.exchangeservice.removedelegates%28v=exchg.80%29.aspx) <br/> |[RemoveDelegate](http://msdn.microsoft.com/library/f21c5171-62e7-47c8-99b1-22e1ff5883bb%28Office.15%29.aspx) <br/> |
    
-デリゲートがフォルダーへのアクセス許可を与えられて後、は、それらの[アクセス許可を委任](delegate-access-and-ews-in-exchange.md#bk_delegateperms)することによってフォルダーとすべてのサブフォルダー内のアイテムで動作できます。 デリゲートのアクセス許可は、代理アクセス権が付与された後に作成されるサブフォルダーにのみ適用されます。 既存のフォルダー、またはその他のフォルダーのフォルダーのアクセス許可を更新するには、 [Exchange EWS を使用して別のユーザーのフォルダーのアクセス許可の設定](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md)を参照してください。
+フォルダーに対するアクセス許可が与えられた代理人は、その[代理人アクセス許可](delegate-access-and-ews-in-exchange.md#bk_delegateperms)に従って、フォルダーおよびサブフォルダー内のアイテムに対してアクションを実行できるようになります。 代理人のアクセス許可は、代理人アクセス権限が付与された後に作成されるサブフォルダーにのみ適用されます。 既存のフォルダーや他のフォルダーに対するフォルダー アクセス許可を更新するには、「[Exchange で EWS を使用して別のユーザーのフォルダーのアクセス許可を設定する](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md)」を参照してください。
   
 メールが有効なセキュリティ グループなど、メールボックスが有効なアカウントにのみ代理人を追加できます。既定では、1 つの EWS 代理人アクセス権限呼び出しで、最大 255 の異なるメールボックスにアクセスできます。
 
@@ -34,9 +34,9 @@ Exchange の EWS マネージ API または EWS を使用してユーザーの�
 
 ## <a name="add-delegates-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して代理人を追加する
 
-[AddDelegates](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.adddelegates%28v=exchg.80%29.aspx) EWS 管理 API メソッドを使用してメールボックスに代理人を追加できます。 次の使用例、新しい予定表、連絡先、および電子メール[DelegateUser](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.delegateuser%28v=exchg.80%29.aspx)のオブジェクトが作成され、それぞれの代理人にはそれぞれのフォルダーの[エディターのアクセス許可](delegate-access-and-ews-in-exchange.md#bk_delegateperms)が与えられます。 [DelegatePermissions プロパティ](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.delegatepermissions_properties%28v=exchg.80%29.aspx)によって指定されたフォルダーのいずれかにデリゲートを追加する例を変更することができ、アクセス許可を設定するには、 [DelegateFolderPermissionLevel](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.delegatefolderpermissionlevel%28v=exchg.80%29.aspx)列挙体で指定された値のいずれかにします。 
+[AddDelegates](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.adddelegates%28v=exchg.80%29.aspx) EWS マネージ API メソッドを使用して、メールボックスに代理人を追加できます。 この例では、予定表、連絡先、およびメールの [DelegateUser](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.delegateuser%28v=exchg.80%29.aspx) オブジェクトが新規に作成され、それぞれのフォルダーに対する[編集者アクセス許可](delegate-access-and-ews-in-exchange.md#bk_delegateperms)が各代理人に付与されます。 この例を変更して、[DelegatePermissions プロパティ](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.delegatepermissions_properties%28v=exchg.80%29.aspx)で指定されたどのフォルダーにも代理人を追加できます。また、[DelegateFolderPermissionLevel](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.delegatefolderpermissionlevel%28v=exchg.80%29.aspx) 列挙体で指定されたどの値にもアクセス許可を設定できます。 
   
-この例でその**サービス**は、メールボックスの所有者の有効な[ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)オブジェクトは、ユーザーが Exchange サーバーに認証されているとします。 
+この例では、**service** はメールボックス所有者の有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーは Exchange サーバーに既に認証されていると想定しています。 
   
 ```cs
 public static Collection<DelegateUserResponse> AddDelegates(ExchangeService service)
@@ -81,9 +81,9 @@ public static Collection<DelegateUserResponse> AddDelegates(ExchangeService serv
 
 ## <a name="add-delegates-by-using-ews"></a>EWS を使用して代理人を追加する
 
-[AddDelegate](http://msdn.microsoft.com/library/012d8cc5-648c-4ba0-a155-15c422b1e994%28Office.15%29.aspx) EWS 操作を使用して別の予定表、連絡先、および電子メールの代理人を追加するのには次のコード例を次に示します。 メールボックスを変更するのには、要素によって指定された、[メールボックス](http://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx)、および[DelegateUser](http://msdn.microsoft.com/library/aac4e74e-f69b-4c41-a0c9-489610330fbf%28Office.15%29.aspx)要素で各デリゲートの[アクセス許可](delegate-access-and-ews-in-exchange.md#bk_delegateperms)の設定が含まれています。 代理人のそれぞれは、編集者アクセス権の対象となるフォルダーを与えられています。 
+次のコード例は、[AddDelegate](http://msdn.microsoft.com/library/012d8cc5-648c-4ba0-a155-15c422b1e994%28Office.15%29.aspx) EWS 操作を使用して予定表、連絡先、およびメールの別々の代理人を追加する方法を示しています。 変更するメールボックスは [Mailbox](http://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) 要素で指定され、各代理人の[アクセス許可](delegate-access-and-ews-in-exchange.md#bk_delegateperms)の設定は [DelegateUser](http://msdn.microsoft.com/library/aac4e74e-f69b-4c41-a0c9-489610330fbf%28Office.15%29.aspx) 要素に含まれます。 それぞれの代理人に、対象となるフォルダーに対する編集者アクセス許可が与えられます。 
   
-EWS のマネージ API が[代理人を追加](#bk_adddelegateewsma)するのには**AddDelegates**メソッドを使用するときに送信する XML 要求にもです。
+これは、**AddDelegates** メソッドを使用して[代理人を追加](#bk_adddelegateewsma)するときに EWS マネージ API が送信する XML 要求でもあります。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -152,7 +152,7 @@ EWS のマネージ API が[代理人を追加](#bk_adddelegateewsma)するの�
 </soap:Envelope>
 ```
 
-サーバーは、 **NoError**を代理人が正常に作成されたことを示すは、 [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx)要素の値が含まれています[AddDelegateResponse](http://msdn.microsoft.com/library/d7e6bebb-5dbf-43c1-aacf-4b3ca6a7c429%28Office.15%29.aspx)メッセージから**AddDelegate**要求に応答します。
+サーバーは、[ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 要素値 **NoError** (代理人が正常に作成されたことを示す) を含む [AddDelegateResponse](http://msdn.microsoft.com/library/d7e6bebb-5dbf-43c1-aacf-4b3ca6a7c429%28Office.15%29.aspx) メッセージで、**AddDelegate** 要求に応答します。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -221,9 +221,9 @@ EWS のマネージ API が[代理人を追加](#bk_adddelegateewsma)するの�
 
 ## <a name="remove-delegates-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して代理人を削除する
 
-[ExchangeService.RemoveDelegates](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.exchangeservice.removedelegates%28v=exchg.80%29.aspx) EWS 管理 API メソッドを使用して、移動先のメールボックスからデリゲートを削除できます。 この例では、[デリゲートの使用例を追加](#bk_adddelegateewsma)する代理人アクセス権セットが削除されます。 
+[ExchangeService.RemoveDelegates](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.exchangeservice.removedelegates%28v=exchg.80%29.aspx) EWS マネージ API メソッドを使用して、対象のメールボックスから代理人を削除できます。 この例では、[代理人の追加の例](#bk_adddelegateewsma)で設定された代理人アクセス許可が削除されます。 
   
-この例でその**サービス**は、メールボックスの所有者の有効な[ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)オブジェクトは、ユーザーが Exchange サーバーに認証されているとします。 
+この例では、**service** はメールボックス所有者の有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーは Exchange サーバーに既に認証されていると想定しています。 
   
 ```cs
 public static Collection<DelegateUserResponse> RemoveDelegates(ExchangeService service)
@@ -255,9 +255,9 @@ public static Collection<DelegateUserResponse> RemoveDelegates(ExchangeService s
 
 ## <a name="remove-delegates-by-using-ews"></a>EWS を使用して代理人を削除する
 
-[RemoveDelegate](http://msdn.microsoft.com/library/1d42d5ff-8fde-4f8a-b18d-57b1ef7a946a%28Office.15%29.aspx) EWS 操作を使用して、メールボックスからデリゲートを削除できます。 この例では、[デリゲートの使用例を追加](#bk_adddelegateews)する代理人アクセス権セットが削除されます。 
+[RemoveDelegate](http://msdn.microsoft.com/library/1d42d5ff-8fde-4f8a-b18d-57b1ef7a946a%28Office.15%29.aspx) EWS 操作を使用して、メールボックスから代理人を削除できます。 この例では、[代理人の追加の例](#bk_adddelegateews)で設定された代理人アクセス許可が削除されます。 
   
-EWS のマネージ API が[デリゲートを削除](#bk_removedelegateewsma)するのには**RemoveDelegates**メソッドを使用するときに送信する XML 要求にもです。
+これは、**RemoveDelegates** メソッドを使用して[代理人を削除](#bk_removedelegateewsma)するときに EWS マネージ API が送信する XML 要求でもあります。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -289,7 +289,7 @@ EWS のマネージ API が[デリゲートを削除](#bk_removedelegateewsma)�
 </soap:Envelope>
 ```
 
-サーバーは、 **NoError**を代理人が正常に削除されたことを示すは、 [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx)要素の値を含む[AddDelegateResponse](http://msdn.microsoft.com/library/d7e6bebb-5dbf-43c1-aacf-4b3ca6a7c429%28Office.15%29.aspx)メッセージの**RemoveDelegate**の要求に応答します。
+サーバーは、値が (代理人が正常に削除されたことを示す) **NoError** に設定された [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 要素を含む [AddDelegateResponse](http://msdn.microsoft.com/library/d7e6bebb-5dbf-43c1-aacf-4b3ca6a7c429%28Office.15%29.aspx) メッセージで、**RemoveDelegate** 要求に応答します。
 
 <a name="bk_nextsteps"> </a>
 
@@ -297,19 +297,19 @@ EWS のマネージ API が[デリゲートを削除](#bk_removedelegateewsma)�
 
 予定表、メール、およびタスクのフォルダーに代理人を追加すると、代理人はフォルダー内のアイテムにアクセスできるようになります。詳細については、次の記事を参照してください。
   
-- [EWS を使用して Exchange 内で代理人として電子メールにアクセスします。](how-to-access-email-as-a-delegate-by-using-ews-in-exchange.md)
+- [Exchange で EWS を使用して、代理人としてメールにアクセスする](how-to-access-email-as-a-delegate-by-using-ews-in-exchange.md)
     
-- [EWS を使用して Exchange 内で代理人に予定表にアクセスします。](how-to-access-a-calendar-as-a-delegate-by-using-ews-in-exchange.md)
+- [Exchange で EWS を使用して予定表に代理人としてアクセスする](how-to-access-a-calendar-as-a-delegate-by-using-ews-in-exchange.md)
     
-- [Exchange EWS を使用して代理人としてアクセス連絡先](how-to-access-contacts-as-a-delegate-by-using-ews-in-exchange.md)
+- [Exchange で EWS を使用して、代理人として連絡先にアクセスする](how-to-access-contacts-as-a-delegate-by-using-ews-in-exchange.md)
     
-代理人を追加したフォルダーには、代理アクセス権を付与する前に作成された子フォルダーが含まれている場合、代理人を追加の権限がない場合、それらのフォルダーにアクセスすることはできません。 これらのアクセス許可を追加または他のフォルダーのアクセス許可を変更する、 [Exchange で EWS を使用して別のユーザーのフォルダーのアクセス許可の設定](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md)を参照してください。
+代理人を追加したフォルダーに、代理人にアクセス権限を付与する前に作成された子フォルダーが含まれている場合、代理人は追加のアクセス許可がなければ、それらの子フォルダーにアクセスできません。 他のフォルダーに対するアクセス許可を追加または更新するには、「[Exchange で EWS を使用して別のユーザーのフォルダーのアクセス許可を設定する](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 
 - [Exchange での代理人アクセスと EWS](delegate-access-and-ews-in-exchange.md)
-- [追加の Exchange 2013: プログラムを使用してユーザーが電子メール アカウントを委任します。](http://code.msdn.microsoft.com/exchange/Exchange-2013-Adding-1024511f)   
-- [Exchange 2013: プログラムでの電子メール アカウントに関連付けられているデリゲートを更新します。](http://code.msdn.microsoft.com/exchange/Exchange-2013-Update-b40d3bac)   
-- [Exchange 2013: プログラムでの電子メール アカウントに関連付けられているデリゲートを削除します。](http://code.msdn.microsoft.com/exchange/Exchange-2013-Remove-686f7714)
+- [Exchange 2013: メール アカウントに代理人ユーザーをプログラムで追加する](http://code.msdn.microsoft.com/exchange/Exchange-2013-Adding-1024511f)   
+- [Exchange 2013: メール アカウントに関連付けられた代理人をプログラムで更新する](http://code.msdn.microsoft.com/exchange/Exchange-2013-Update-b40d3bac)   
+- [Exchange 2013: メール アカウントに関連付けられた代理人をプログラムで削除する](http://code.msdn.microsoft.com/exchange/Exchange-2013-Remove-686f7714)
     
 

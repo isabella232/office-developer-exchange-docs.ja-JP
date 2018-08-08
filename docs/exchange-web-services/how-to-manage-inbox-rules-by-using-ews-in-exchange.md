@@ -1,5 +1,5 @@
 ---
-title: EWS を使用して Exchange 受信トレイ ルールを管理します。
+title: Exchange で EWS を使用して受信トレイ ルールを管理する
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,37 +8,37 @@ ms.assetid: 982ddb78-5606-44b0-8aba-dbffc60d6085
 description: Exchange で EWS マネージ API または EWS を使用して、受信トレイのルールを取得、作成、更新、削除する方法について説明します。
 ms.openlocfilehash: 85e166ba57d74c74382b257d01d9bff8f44bade1
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758992"
 ---
-# <a name="manage-inbox-rules-by-using-ews-in-exchange"></a>EWS を使用して Exchange 受信トレイ ルールを管理します。
+# <a name="manage-inbox-rules-by-using-ews-in-exchange"></a>Exchange で EWS を使用して受信トレイ ルールを管理する
 
 Exchange で EWS マネージ API または EWS を使用して、受信トレイのルールを取得、作成、更新、削除する方法について説明します。
   
-EWS マネージ API または EWS を使用して、受信トレイ ルールを取得、作成、更新、削除できます。使用するテクノロジに関係なく、個別にではなく、コレクションとして受信トレイ ルールの取得と変更ができます。新しいルールの作成、既存ルールの更新、ルールの削除には、同じメソッドまたは操作を使用します。  
+EWS マネージ API または EWS を使用して、受信トレイ ルールを取得、作成、更新、削除できます。使用するテクノロジに関係なく、個別にではなく、コレクションとして受信トレイ ルールの取得と変更ができます。新しいルールの作成、既存ルールの更新、ルールの削除には、同じメソッドまたは操作を使用します。 
   
-**表 1 です。メソッドと演算を取得すると、受信トレイ ルールを変更します。**
+**表 1. 受信トレイ ルールの取得と変更に使用するメソッドと操作**
 
-|**目的…**|**EWS マネージ API メソッド**|**EWS 操作**|
+|**目的**|**EWS マネージ API メソッド**|**EWS 操作**|
 |:-----|:-----|:-----|
-|受信トレイ ルールを取得する  <br/> |[ExchangeService.GetInboxRules](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx) <br/> |[GetInboxRules](http://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx) <br/> |
-|受信トレイ ルールを作成、更新、削除する  <br/> |[ExchangeService.UpdateInboxRules](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx) <br/> |[UpdateInboxRules](http://msdn.microsoft.com/library/f982a237-471e-45c5-a2b5-468cfc53150b%28Office.15%29.aspx) <br/> |
+|受信トレイ ルールを取得する  <br/> |[ExchangeService.GetInboxRules](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx) <br/> |[GetInboxRules](http://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx) <br/> |
+|受信トレイ ルールを作成、更新、削除する  <br/> |[ExchangeService.UpdateInboxRules](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx) <br/> |[UpdateInboxRules](http://msdn.microsoft.com/library/f982a237-471e-45c5-a2b5-468cfc53150b%28Office.15%29.aspx) <br/> |
    
-作成、更新、または、EWS のマネージ API または EWS を使用して受信トレイ ルールを削除、するために存在する場合、Outlook のルールを削除してください。 EWS のマネージ API を使用する場合これを行う**場合は true** 、 **ExchangeService.UpdateInboxRules**メソッドの呼び出しに**removeOutlookRulesBlob**パラメーターを設定することによって。 EWS を使用する場合に**true を指定** **UpdateInboxRules**の操作で[RemoveOutlookRuleBlob](http://msdn.microsoft.com/library/69614475-8bd3-4475-b988-614fe9cad8ef%28Office.15%29.aspx)要素の値を設定します。 お勧めする、アプリケーションのチェック (EWS のマネージ API を使用している) 場合は、 [RuleCollection.OutlookRuleBlobExists](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.rulecollection.outlookruleblobexists%28v=exchg.80%29.aspx)プロパティまたは受信トレイ ルールを更新する前に[OutlookRuleBlobExists](http://msdn.microsoft.com/library/ae1bc448-deb9-4b5b-ab38-4b276abcb650%28Office.15%29.aspx)要素 (EWS を使用している) 場合です。 このプロパティまたは要素の値が**true**の場合、アプリケーションは警告を無効になっているルールは、更新プログラムの一部として失われることし、のみのアクセス権に進みます。
+EWS マネージ API または EWS を使用して、受信トレイ ルールを作成、更新、削除するには、Outlook のルールを削除する必要があります (存在する場合)。 EWS マネージ API を使用している場合、それには **removeOutlookRulesBlob** パラメーターを **true** に設定した **ExchangeService.UpdateInboxRules** メソッドを呼び出します。 EWS を使用している場合は、**UpdateInboxRules** 操作で [RemoveOutlookRuleBlob](http://msdn.microsoft.com/library/69614475-8bd3-4475-b988-614fe9cad8ef%28Office.15%29.aspx) 要素の値を **true** に設定します。 受信トレイ ルールを更新する前に、アプリケーションで [RuleCollection.OutlookRuleBlobExists](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.rulecollection.outlookruleblobexists%28v=exchg.80%29.aspx) プロパティ (EWS マネージ API を使用している場合)、または [OutlookRuleBlobExists](http://msdn.microsoft.com/library/ae1bc448-deb9-4b5b-ab38-4b276abcb650%28Office.15%29.aspx) 要素 (EWS を使用している場合) を確認することをお勧めします。 このプロパティまたは要素の値が **true** となっている場合、アプリケーションでは、無効になっているルールが更新の一環として失われることをユーザーに警告し、ユーザーが許可した場合にのみ処理を続行するようでなければなりません。
   
-**UpdateInboxRules**メソッドを呼び出すと、EWS はクライアント側の送信の規則を削除します。 フォルダー関連情報 (FAI) メッセージのルールでクライアントと他の場所では、クライアント側の送信規則が格納されます。 EWS では、既定では、Outlook は、再作成を前提に基づく FAI メッセージ ルールを削除します。 ただし、Outlook は、拡張のルールとしても存在しないルールを再作成できません、拡張ルールとクライアント側の送信規則が存在しません。 その結果、これらのルールは失われます。 ソリューションを設計するときこれを考慮することをお勧めします。 
+**UpdateInboxRules** メソッドを呼び出すと、EWS がクライアント側の送信ルールを削除します。 クライアント側の送信ルールは、クライアントのルールのフォルダー関連情報 (FAI) メッセージにのみ保存されます。 EWS は既定で、このルール FAI メッセージを削除します。これは、Outlook がこれを再作成するという前提に基づいて行われます。 ただし、Outlook で再作成できるのは、拡張ルールとしても存在しているルールです。けれども、クライアント側の送信ルールは拡張ルールとして存在していません。 その結果、これらのルールは失われます。 ソリューションの設計時にこのことを考慮にするようお勧めします。 
   
 > [!NOTE]
-> EWS のマネージ API の例は、この資料では、[一般的な一連](how-to-manage-inbox-rules-by-using-ews-in-exchange.md#bk_UtilitySource)を使用します。 簡潔にするためのコード サンプルでは、これらのメソッドは省略されます。 
+> この記事の EWS マネージ API のコード例では、[ユーティリティ メソッドの共通セット](how-to-manage-inbox-rules-by-using-ews-in-exchange.md#bk_UtilitySource)が使用されています。 簡潔にするため、これらのメソッドはコード サンプルから省略されています。 
   
 ## <a name="get-inbox-rules-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して、受信トレイ ルールを取得する
 <a name="bk_GetRulesEWSMA"> </a>
 
-現在受信トレイ ルールを取得するには、 [ExchangeService.GetInboxRules](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx)メソッドを使用します。 このメソッドは、現在のすべての受信トレイ ルールを格納する[RuleCollection](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.rulecollection%28v=exchg.80%29.aspx)オブジェクトを返します。 
+現在の受信トレイ ルールを取得するには、[ExchangeService.GetInboxRules](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx) メソッドを使用します。 このメソッドは、現在のすべての受信トレイ ルールを含む [RuleCollection](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.rulecollection%28v=exchg.80%29.aspx) オブジェクトを返します。 
   
-この例では、現在受信トレイ内の各ルールは ( **ParseRuleDetails** ) が、ルールの詳細を表示するヘルパー関数に渡されます。 
+この例では、現在の受信トレイ内の各ルールをヘルパー関数 (**ParseRuleDetails**) に渡して、ルールの詳細を表示します。 
   
 ```cs
 using System;
@@ -76,7 +76,7 @@ private static void GetInboxRules(ExchangeService service, string emailAddress)
 ## <a name="get-inbox-rules-by-using-ews"></a>EWS を使用して受信トレイ ルールを取得する
 <a name="bk_GetRulesEWS"> </a>
 
-次の EWS の SOAP 要求では、sadie@contoso.com の受信トレイ ルールを取得するために[GetInboxRules 操作](http://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx)を使用します。 
+次の EWS の SOAP 要求では、[GetInboxRules 操作](http://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx)を使用して、sadie@contoso.com の受信トレイ ルールを取得します。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -161,10 +161,10 @@ private static void GetInboxRules(ExchangeService service, string emailAddress)
 </s:Envelope>
 ```
 
-## <a name="create-inbox-rules-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して、受信トレイ ルールを作成する
+## <a name="create-inbox-rules-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して受信トレイ ルールを作成する
 <a name="bk_CreateRulesEWSMA"> </a>
 
-ルールを作成するには、 [ExchangeService.UpdateInboxRules](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx)メソッドに渡される[RuleOperation](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.ruleoperation%28v=exchg.80%29.aspx)オブジェクトのコレクションで、 [CreateRuleOperation](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.createruleoperation%28v=exchg.80%29.aspx)オブジェクトが含まれます。 
+ルールを作成するには、[ExchangeService.UpdateInboxRules](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx) メソッドに渡される [RuleOperation](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.ruleoperation%28v=exchg.80%29.aspx) オブジェクトのコレクションに [CreateRuleOperation](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.createruleoperation%28v=exchg.80%29.aspx) オブジェクトを含めます。 
   
 この例では、新しいルールを作成して、"Sales" という配布一覧に送信されたメールを、"Sales" という受信トレイのサブフォルダーに移動します。
   
@@ -296,10 +296,10 @@ private static void CreateInboxRule(ExchangeService service, string emailAddress
 </soap:Envelope>
 ```
 
-## <a name="update-inbox-rules-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して、受信トレイ ルールを更新する
+## <a name="update-inbox-rules-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して受信トレイ ルールを更新する
 <a name="bk_UpdateRulesEWSMA"> </a>
 
-ルールを更新するには、 **UpdateInboxRules**メソッドに渡される**RuleOperation**オブジェクトのコレクションで、 [SetRuleOperation](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.setruleoperation%28v=exchg.80%29.aspx)オブジェクトが含まれます。 
+ルールを更新するには、**UpdateInboxRules** メソッドに渡される **RuleOperation** オブジェクトのコレクションに [SetRuleOperation](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.setruleoperation%28v=exchg.80%29.aspx) オブジェクトを含めます。 
   
 この例では、例外を追加するために "Sales" ルールを更新します。件名に "Urgent" という単語が含まれている場合、メッセージは "Sales" サブフォルダーに移動されません。
   
@@ -433,10 +433,10 @@ private static void UpdateInboxRule(ExchangeService service, string emailAddress
 </soap:Envelope>
 ```
 
-## <a name="delete-inbox-rules-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して、受信トレイ ルールを削除する
+## <a name="delete-inbox-rules-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して受信トレイ ルールを削除する
 <a name="bk_DeleteRulesEWSMA"> </a>
 
-ルールを削除するには、 **UpdateInboxRules**メソッドに渡される**RuleOperation**オブジェクトのコレクションで、 [DeleteRuleOperation](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.deleteruleoperation%28v=exchg.80%29.aspx)オブジェクトが含まれます。 
+ルールを削除するには、**UpdateInboxRules** メソッドに渡される **RuleOperation** オブジェクトのコレクションに [DeleteRuleOperation](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.deleteruleoperation%28v=exchg.80%29.aspx) オブジェクトを含めます。 
   
 この例では、"Sales" ルールが削除されます。
   
@@ -910,12 +910,12 @@ private static FolderId GetFolderIdByName(ExchangeService service, WellKnownFold
 
 - [Exchange での受信トレイの管理と EWS](inbox-management-and-ews-in-exchange.md)
     
-- [ExchangeService.GetInboxRules メソッド](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx)
+- [ExchangeService.GetInboxRules メソッド](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx)
     
-- [ExchangeService.UpdateInboxRules メソッド](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx)
+- [ExchangeService.UpdateInboxRules メソッド](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx)
     
-- [GetInboxRules の操作](http://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx)
+- [GetInboxRules 操作](http://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx)
     
-- [UpdateInboxRules の操作](http://msdn.microsoft.com/library/f982a237-471e-45c5-a2b5-468cfc53150b%28Office.15%29.aspx)
+- [UpdateInboxRules 操作](http://msdn.microsoft.com/library/f982a237-471e-45c5-a2b5-468cfc53150b%28Office.15%29.aspx)
     
 
