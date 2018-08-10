@@ -1,5 +1,5 @@
 ---
-title: Exchange EWS を使用して予定のタイム ゾーンを更新します。
+title: Exchange の EWS を使用して予定のタイム ゾーンを更新する
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,18 +8,18 @@ ms.assetid: dc2240c1-5500-4d5c-97d5-09d63ffd30d5
 description: Exchange の EWS マネージ API または EWS を使用して、既存の予定または会議のタイム ゾーンを更新する方法について説明します。
 ms.openlocfilehash: 535eb9f546d9a4353408579f3a24750f32237699
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759068"
 ---
-# <a name="update-the-time-zone-for-an-appointment-by-using-ews-in-exchange"></a>Exchange EWS を使用して予定のタイム ゾーンを更新します。
+# <a name="update-the-time-zone-for-an-appointment-by-using-ews-in-exchange"></a>Exchange の EWS を使用して予定のタイム ゾーンを更新する
 
 Exchange の EWS マネージ API または EWS を使用して、既存の予定または会議のタイム ゾーンを更新する方法について説明します。
   
 Exchange の予定表に予定または会議を作成するときに、開始時刻と終了時刻の指定に使用したタイム ゾーンは、予定の作成タイム ゾーンとして保存されます。このタイム ゾーンは、EWS マネージ API または EWS を使用することで変更できます。ただし、予定のタイム ゾーンの変更は、予定の開始時刻と終了時刻にも作用します。
   
-時刻の値は、世界協定時刻 (UTC) で Exchange サーバーに格納されます。 1時 00分 PM (13:00) 東部標準時ゾーンで開始する予定が設定されている場合は (UTC 05:00)、値はサーバーでタイム ゾーンが (標準時) の段階にあると仮定した場合、6時 00分 PM (18:00) で保存することです。 他のタイム ゾーンでその予定を表示すると、適切な時間数が追加または、特定のタイム ゾーンの時刻を確認するのには UTC 値から減算します。 午後 1時 00分に開始時刻を予定がある場合など東部 (午後 6時 00分 UTC) 太平洋標準時ゾーンのクライアントから表示し、(UTC 08:00)、特定のタイム ゾーンのクライアントは午前 10時 00分 (18時 00分-08:00) の開始時刻。
+時刻の値は、協定世界時 (UTC) で Exchange サーバーに保存されます。 そのため、予定の開始が東部標準時 (UTC-05:00) で 1:00 PM (13:00) に設定されている場合、その値は 6:00 PM (18:00) としてサーバーに保存されます (タイム ゾーンが標準時のフェーズ内にあると想定しています)。 その予定が別のタイム ゾーンで表示されるときには、UTC 値に適切な時間数が加減算されて、タイム ゾーン固有の時刻が決定されます。 たとえば、予定の開始時刻が 1:00 PM 東部標準時 (6:00 PM UTC) のときに、その予定が太平洋標準時 (UTC - 08:00) のクライアントで表示されると、そのクライアントのタイム ゾーン固有の開始時刻は 10:00 AM (18:00 - 08:00) になります。
   
 開始時刻と終了時刻の更新なしに予定のタイム ゾーンを更新すると、サーバーに保存されている UTC の値は、開始時刻と終了時刻がタイム ゾーン固有の時刻と同じになるようにサーバーによって更新されます。たとえば、1:00 PM 東部標準時の予定について考えてみます。この時刻は、18:00 UTC としてサーバーに保存されます。予定のタイム ゾーンが太平洋標準時に変更されると、サーバーによって開始時刻が 1:00 PM 太平洋標準時 (21:00 UTC) にシフトされます。
   
@@ -27,9 +27,9 @@ Exchange の予定表に予定または会議を作成するときに、開始�
   
 ## <a name="updating-the-time-zone-on-an-existing-appointment-by-using-the-ews-managed-api"></a>既存の予定のタイム ゾーンを更新する (EWS マネージ API を使用する場合)
 
-次の例では、サーバーのタイム ゾーンに、 **Appointment.StartTimeZone**と**Appointment.EndTimeZone**のプロパティを更新することによって既存の予定のタイム ゾーンを更新するのには、EWS のマネージ API が使用されます。 _ShiftAppointnment_パラメーターは、 **true**に設定されている場合、コードでは予定の開始時刻と終了時刻は明示的に設定しません。 この場合、サーバーは削除しないときは、同じタイム ゾーンの相対の時点で新しいタイム ゾーンの開始と終了時間に変更されます。 場合を**false**に設定、コードでは、UTC で同時に予定を維持するには、明示的に開始および終了時刻に変換します。 
+次の例では、EWS マネージ API を使用して、**Appointment.StartTimeZone** プロパティと **Appointment.EndTimeZone** プロパティを更新することで、既存の予定のタイム ゾーンを中部標準時に更新しています。 _shiftAppointment_ パラメーターが **true** に設定されている場合は、コードでは予定の開始時刻と終了時刻を明示的に設定しません。 この場合、開始時刻と終了時刻は新しいタイム ゾーンで同じタイム ゾーン相対時刻になるようにサーバーによってシフトされます。 **false** に設定されている場合は、予定が UTC で同じ時刻になるように、開始時刻と終了時刻を明示的にコードで変換します。 
 
-次の使用例では、[資格情報](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservicebase.credentials%28v=exchg.80%29.aspx)と[Url](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.url%28v=exchg.80%29.aspx)のプロパティで有効な値を持つ**ExchangeService**オブジェクトが初期化されたことを前提としています。 
+この例では、**ExchangeService** オブジェクトは [Credentials](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservicebase.credentials%28v=exchg.80%29.aspx) プロパティと [Url](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.url%28v=exchg.80%29.aspx) プロパティの有効な値で初期化されているものとします。 
   
 ```cs
 static void UpdateAppointmentTimeZone(ExchangeService service, ItemId apptId, bool shiftAppointment)
@@ -112,7 +112,7 @@ static void UpdateAppointmentTimeZone(ExchangeService service, ItemId apptId, bo
 }
 ```
 
-午後 1時 00分に開始する予定を更新する例を使用すると東部と、午後 2時 00分で終了し東部、 _shiftAppointment_パラメーターを使用して true の場合、および[ExchangeService.TimeZone](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.timezone%28v=exchg.80%29.aspx)は米国東部標準時ゾーンには、出力は次の次のように。 
+この例を使用して、開始が 1:00 PM 東部標準時で終了が 2:00 PM 東部標準時の予定を更新する場合、_shiftAppointment_ パラメーターが true に設定されていて、[ExchangeService.TimeZone](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.timezone%28v=exchg.80%29.aspx) プロパティが東部標準時に設定されていると、出力は次のようになります。 
   
 ```MS-DOS
 Before update:
@@ -129,7 +129,7 @@ After update:
   End time zone: (UTC-06:00) Central Time (US &amp; Canada)
 ```
 
-_ShiftAppointment_パラメーターが false に設定と**タイム ゾーン**プロパティが東部標準時ゾーンに設定してもう一度同じ予定を更新する例を使用する場合、出力が少し異なるになります。 
+この例を使用して同じ予定を更新するときに、_shiftAppointment_ パラメーターが false に設定されていて、**TimeZone** プロパティが東部標準時に設定されていると、出力はわずかに異なります。 
   
 ```MS-DOS
 Before update:
@@ -146,11 +146,11 @@ After update:
   End time zone: (UTC-06:00) Central Time (US &amp; Canada)
 ```
 
-開始時刻と終了時刻が変更されていないことに注意してください。 時間東部標準時で解釈されるためにはこのゾーンのため、**タイム ゾーン**プロパティは、東部標準時に設定されます)、シフトから予定を防ぐために、時間の値が更新されたとします。 
+開始時刻と終了時刻が変更されていない点に注目してください。 これは、時刻が東部標準時で解釈されていて (**TimeZone** プロパティが東部標準時に設定されているため)、予定がずれないように時刻の値が更新されたためです。 
   
 ## <a name="updating-the-time-zone-on-an-existing-appointment-by-using-ews"></a>既存の予定のタイム ゾーンを更新する (EWS を使用する場合)
 
-次の例の EWS [UpdateItem 操作](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx)要求は、予定のタイム ゾーンを更新します。 相対タイム ゾーンの新しいタイム ゾーンで同時に保持する予定の開始および終了時刻をサーバーが変更されますので、次の使用例はのみ[StartTimeZone](http://msdn.microsoft.com/library/d38c4dc1-4ecb-42a1-8d57-a451b16a2de2%28Office.15%29.aspx)と[EndTimeZone](http://msdn.microsoft.com/library/6c53c337-be60-4d22-9e9e-a0c140c5e913%28Office.15%29.aspx)の要素を更新します。 **アイテム Id**要素の値は、読みやすくするために短縮されます。 
+次に示す EWS の [UpdateItem 操作](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx)要求の例では、予定のタイム ゾーンを更新します。 この例では、[StartTimeZone](http://msdn.microsoft.com/library/d38c4dc1-4ecb-42a1-8d57-a451b16a2de2%28Office.15%29.aspx) 要素と [EndTimeZone](http://msdn.microsoft.com/library/6c53c337-be60-4d22-9e9e-a0c140c5e913%28Office.15%29.aspx) 要素のみを更新しています。そのため、開始時刻と終了時刻は新しいタイム ゾーンで同じタイム ゾーン相対時刻になるようにサーバーによってシフトされます。 **ItemId** 要素の値は、読みやすいよう短縮してあります。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -187,7 +187,7 @@ After update:
 </soap:Envelope>
 ```
 
-次の例の要求は、予定のタイム ゾーンを更新しも明示的に**開始**および**終了**要素を設定することにより、開始時刻と終了時刻を更新します。 **アイテム Id**要素の値は、読みやすくするために短縮されます。 
+次に示す要求例では、予定のタイム ゾーンを更新します。さらに、**Start** 要素と **End** 要素を明示的に設定することで開始時刻と終了時刻も更新します。 **ItemId** 要素の値は、読みやすいよう短縮してあります。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -239,7 +239,7 @@ After update:
 ## <a name="see-also"></a>関連項目
 
 - [Exchange のタイム ゾーンと EWS](time-zones-and-ews-in-exchange.md)   
-- [Exchange EWS を使用して、特定のタイム ゾーンで予定を作成します。](how-to-create-appointments-in-a-specific-time-zone-by-using-ews-in-exchange.md)   
-- [Exchange EWS を使用して予定および会議を更新します。](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)
+- [Exchange の EWS を使用して、特定のタイム ゾーンで予定を作成する](how-to-create-appointments-in-a-specific-time-zone-by-using-ews-in-exchange.md)   
+- [Exchange で EWS を使用して予定と会議を更新する](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)
     
 

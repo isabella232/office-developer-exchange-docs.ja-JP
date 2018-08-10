@@ -1,5 +1,5 @@
 ---
-title: Exchange EWS を使用して添付ファイルを追加します。
+title: Exchange で EWS を使用して添付物を追加する
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
@@ -8,34 +8,34 @@ ms.assetid: 0cbce436-2ae6-4fcc-bd8b-f517a0724e55
 description: EWS マネージ API または Exchange の EWS を使用して、添付物を伴う新しくアイテムを作成するか、既存のアイテムに添付物を追加する方法について説明します。
 ms.openlocfilehash: dbfff879c92dafeec588d79cddd92e294b763c06
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758947"
 ---
-# <a name="add-attachments-by-using-ews-in-exchange"></a>Exchange EWS を使用して添付ファイルを追加します。
+# <a name="add-attachments-by-using-ews-in-exchange"></a>Exchange で EWS を使用して添付物を追加する
 
 EWS マネージ API または Exchange の EWS を使用して、添付物を伴う新しくアイテムを作成するか、既存のアイテムに添付物を追加する方法について説明します。
   
 EWS マネージ API または EWS を使用して、新規アイテムまたは既存のアイテムに、ファイル添付またはアイテム添付を追加できます。EWS マネージ API を使用している場合は、同じメソッドで新規アイテムまたは既存のアイテムに添付物を追加できますが、ファイル添付またはアイテム添付を使用している場合はメソッドが変わります。一方、EWS を使用している場合は、同じ操作でファイル添付またはアイテム添付をアイテムに追加できますが、新規または既存のアイテムに添付物を追加する場合は操作が変わります。
   
-**表 1. 添付物を追加するためのEWS マネージ API とEWS の操作**
+**表 1. 添付物を追加するための EWS マネージ API と EWS の操作**
 
 |**タスク**|**EWS マネージ API メソッド**|**EWS 操作**|
 |:-----|:-----|:-----|
-|新規または既存の電子メールにファイル添付を追加する  <br/> |[AttachmentCollection.AddFileAttachment](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.attachmentcollection.addfileattachment%28v=exchg.80%29.aspx) <br/> |新しい電子メールは、 [createitem メソッド](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx)  <br/> [CreateAttachment](http://msdn.microsoft.com/library/e066db95-6963-4507-a8d0-8efad287f550%28Office.15%29.aspx)を既存の電子メールに追加するには  <br/> |
-|新規または既存の電子メールにアイテム添付を追加する  <br/> |[AttachmentCollection.AddItemAttachment](http://msdn.microsoft.com/en-us/library/dd634986%28v=exchg.80%29.aspx) <br/> |新しい電子メールは、 [createitem メソッド](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx)  <br/> [CreateAttachment](http://msdn.microsoft.com/library/e066db95-6963-4507-a8d0-8efad287f550%28Office.15%29.aspx)を既存の電子メールに追加するには  <br/> |
+|新規または既存の電子メールにファイル添付を追加する  <br/> |[AttachmentCollection.AddFileAttachment](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.attachmentcollection.addfileattachment%28v=exchg.80%29.aspx) <br/> |新しい電子メールの場合、[CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx)  <br/> 既存の電子メールに追加する場合、[CreateAttachment](http://msdn.microsoft.com/library/e066db95-6963-4507-a8d0-8efad287f550%28Office.15%29.aspx)  <br/> |
+|新規または既存の電子メールにアイテム添付を追加する  <br/> |[AttachmentCollection.AddItemAttachment](http://msdn.microsoft.com/ja-JP/library/dd634986%28v=exchg.80%29.aspx) <br/> |新しい電子メールの場合、[CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx)  <br/> 既存の電子メールに追加する場合、[CreateAttachment](http://msdn.microsoft.com/library/e066db95-6963-4507-a8d0-8efad287f550%28Office.15%29.aspx)  <br/> |
    
 ## <a name="create-an-email-with-file-and-item-attachments-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して、ファイル添付およびアイテム添付のある電子メールを作成する
 <a name="bk_createattachewsma"> </a>
 
-次のコード例は、複数のファイル添付とアイテム添付のある電子メールを作成する方法を示しています。  
+次のコード例は、複数のファイル添付とアイテム添付のある電子メールを作成する方法を示しています。 
   
-1. [なか](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx)オブジェクトを使用して、電子メール メッセージを作成します。 
+1. [EmailMessage](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) オブジェクトを使用して、電子メール メッセージを作成します。 
     
-2. メッセージに添付ファイルを追加するのには、 [AttachmentCollection.AddFileAttachment](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.attachmentcollection.addfileattachment%28v=exchg.80%29.aspx)メソッドと[AttachmentCollection.AddItemAttachment](http://msdn.microsoft.com/en-us/library/dd634986%28v=exchg.80%29.aspx)メソッドを使用します。 
+2. [AttachmentCollection.AddFileAttachment](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.attachmentcollection.addfileattachment%28v=exchg.80%29.aspx) と [AttachmentCollection.AddItemAttachment](http://msdn.microsoft.com/ja-JP/library/dd634986%28v=exchg.80%29.aspx) メソッドを使用して、添付物をメッセージに追加します。 
     
-3. [EmailMessage.SendAndSaveCopy](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage.sendandsavecopy%28v=exchg.80%29.aspx)メソッドを使用して、受信者にメッセージを送信し、メッセージを送信済みアイテム フォルダーに保存します。 
+3. [EmailMessage.SendAndSaveCopy](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.emailmessage.sendandsavecopy%28v=exchg.80%29.aspx) メソッドを使用して、受信者にメッセージを送信し、[送信済みアイテム] フォルダーにメッセージを保存します。 
     
 このコード例は、EWS マネージ API を使用してファイル添付をアイテムに追加できる 4 つの方法を示しています。
   
@@ -47,9 +47,9 @@ EWS マネージ API または EWS を使用して、新規アイテムまたは
     
 - ストリームを使用します。
     
-この例ではアイテムの添付ファイルが電子メール メッセージと同時に作成されたことに注意してください。 アイテムの添付ファイルとして既存の電子メール メッセージを追加するには、 [MimeContent と EWS のマネージ API を使用して新しいメール アドレスに既存の項目の追加](#bk_addexistingemailewsma)を参照してください。
+この例では、アイテム添付が電子メール メッセージと同時に作成されることに注意してください。 アイテム添付として既存の電子メール メッセージを追加する場合には、「[MimeContent および EWS マネージ API を使用して、既存アイテムを新しい電子メールに追加する](#bk_addexistingemailewsma)」を参照してください。
   
-この例では、 **service** が有効な [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
+この例では、**service** が有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
   
 ```cs
 public static void CreateEmailWithAttachments(ExchangeService service)
@@ -93,9 +93,9 @@ public static void CreateEmailWithAttachments(ExchangeService service)
 ## <a name="create-an-email-with-file-and-item-attachments-by-using-ews"></a>EWS を使用して、ファイル添付およびアイテム添付のある電子メールを作成する
 <a name="bk_createattachews"> </a>
 
-次のコード例は、 [CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx)操作を使用して、4 つのファイルの添付ファイルと 1 つのアイテムの添付ファイルを電子メール メッセージを作成する方法を示しています。 これも EWS のマネージ API に送信する場合、XML 要求のいずれかの[ファイルおよびアイテムの添付ファイル付き電子メールを作成](#bk_createattachewsma)します。
+次のコード例は、[CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) 操作を使用して、4 つのファイル添付と 1 つのアイテム添付のある電子メール メッセージを作成する方法を示しています。 また、これは、[ファイル添付とアイテム添付のある電子メール メッセージを作成する](#bk_createattachewsma)ときに EWS マネージ API が送信する XML 要求の 1 つでもあります。
   
-この例ではアイテムの添付ファイルが電子メール メッセージと同時に作成されたことに注意してください。 アイテムの添付ファイルとして既存の電子メール メッセージを追加するには、 [MimeContent と EWS のマネージ API を使用して新しいメール アドレスに既存の項目の追加](#bk_addexistingemailewsma)を参照してください。
+この例では、アイテム添付が電子メール メッセージと同時に作成されることに注意してください。 アイテム添付として既存の電子メール メッセージを追加する場合には、「[MimeContent および EWS マネージ API を使用して、既存アイテムを新しい電子メールに追加する](#bk_addexistingemailewsma)」を参照してください。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -170,7 +170,7 @@ public static void CreateEmailWithAttachments(ExchangeService service)
 </soap:Envelope>
 ```
 
-サーバーは、 **CreateItem**要求[ResponseCode](http://msdn.microsoft.com/en-us/library/aa580757%28v=exchg.150%29.aspx) **NoError**電子メールと添付ファイルが正常に作成されたことを示す値を含む[CreateItemResponse](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx)メッセージに応答します。 新しく作成されたメッセージと添付ファイルの[AttachmentId](http://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx)値の[アイテム Id](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx)は、応答にも含まれます。 いくつかの属性の値は、読みやすくするために短縮されています。 
+サーバーは、[CreateItemResponse](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) メッセージで **CreateItem** 要求に応答します。このメッセージには、[ResponseCode](http://msdn.microsoft.com/ja-JP/library/aa580757%28v=exchg.150%29.aspx) の値として **NoError** が含まれており、それは、電子メールと添付物が正常に作成されたことを示しています。 新しく作成されたメッセージの [ItemId](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) と、それぞれの添付物の [AttachmentId](http://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx) の値も、この応答に含まれます。 読みやすくするため、一部の属性の値が短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -223,20 +223,20 @@ public static void CreateEmailWithAttachments(ExchangeService service)
 </s:Envelope>
 ```
 
-[このメッセージを新しく作成した送信](how-to-send-email-messages-by-using-ews-in-exchange.md)を、 [SendItem](http://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx)操作を呼び出します。 
+[新しく作成されたメッセージを送信する](how-to-send-email-messages-by-using-ews-in-exchange.md)には、[SendItem](http://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx) 操作を呼び出します。 
   
 ## <a name="add-an-existing-item-to-a-new-email-by-using-the-mimecontent-and-the-ews-managed-api"></a>MimeContent および EWS マネージ API を使用して、既存アイテムを新しい電子メールに追加する
 <a name="bk_addexistingemailewsma"> </a>
 
 既存のアイテムをアイテム添付として別のアイテムに追加するには、新しいアイテム添付を作成し、既存のアイテムの内容をその新しいアイテムにコピーする必要があります。これを実行するには、次の 2 つの方法があります。  
   
-1. 電子メール メッセージを具体的に作業している場合は、新しく作成されたアイテムの添付ファイルに電子メールから[MimeContent](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.mimecontent%28v=exchg.80%29.aspx)プロパティの値をコピーできます。 フォロー アップ フラグおよびカテゴリでは、このプロセス中にいくつかのプロパティが失われますが、標準の電子メール メッセージをうまきます。 
+1. 特に電子メール メッセージを使用している場合は、その電子メールから、新しく作成されたアイテム添付に、[MimeContent](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.item.mimecontent%28v=exchg.80%29.aspx) プロパティの値をコピーできます。 この過程で、フォローアップ フラグやカテゴリなどの一部のプロパティが失われますが、標準的な電子メール メッセージには十分機能します。 
     
 2. すべての種類のアイテムに完全な再現性が必要な場合は、既存のアイテムにバインドし、すべてのプロパティと拡張プロパティを新しい添付物にコピーできます。
     
-次のコード例は、 **MimeContent**を新しいアイテムの添付ファイルにコピー、最初の方法を示しています。 2 番目のアプローチを使用するコードを変更する方法を示す手順は、以下の例です。 
+次のコード例では、**MimeContent** を新しいアイテム添付にコピーする最初の方法を示しています。 例に続いて、2 番目の方法を使用するためにコードを変更する手順を示しています。 
   
-この例ではその**サービス**が有効な[ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)オブジェクトと Exchange サーバーに、ユーザーが認証されていると**アイテム Id**は、添付するアイテムの[アイテム Id](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.itemid%28v=exchg.80%29.aspx)をします。 
+この例では、**service** が有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーは Exchange サーバーから認証されており、**itemId** が、添付するアイテムの [ItemId](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.itemid%28v=exchg.80%29.aspx) であることを想定しています。 
   
 ```cs
 public static void CreateEmailExistingItem(ExchangeService service, ItemId itemId)
@@ -260,28 +260,28 @@ public static void CreateEmailExistingItem(ExchangeService service, ItemId itemI
 }
 ```
 
-この例を変更して、既存アイテムの各プロパティを新しいアイテム添付にコピーするには、次の操作を行います。  
+この例を変更して、既存アイテムの各プロパティを新しいアイテム添付にコピーするには、次の操作を行います。 
   
-1. **PropertySet.FirstClassProperties**およびその他のプロパティやする必要がある拡張のプロパティを含むように設定するプロパティを変更します。 
+1. **PropertySet.FirstClassProperties** および追加のプロパティ、または必要な拡張プロパティを含むようにプロパティ セットを変更します。 
     
   ```cs
   // Add additional properties to the PropertySet.
   EmailMessage msgToAttach = EmailMessage.Bind(service, itemId, new PropertySet(PropertySet.FirstClassProperties));
   ```
 
-2. **MimeContent**プロパティを必要としないために、次の行を削除します。 
+2. **MimeContent** プロパティは必要ないため、次の行を削除します。 
     
   ```cs
   itemAttachment.Item.MimeContent = msgToAttach.MimeContent;
   ```
 
-3. 既存のアイテムから新しい添付ファイルにコピーするには、各プロパティについては、この行を繰り返します。 読み取り専用プロパティであるために、新しいアイテムの添付ファイルに**アイテム Id**をコピーしないでください。 
+3. 既存のアイテムから新しい添付物にコピーする各プロパティについて、この行を繰り返します。 **ItemId** は読み取り専用プロパティであるため、新しいアイテム添付にはコピーしないでください。 
     
   ```cs
   itemAttachment.Item.Subject = msgToAttach.Subject;
   ```
 
-4. **送信済みアイテム**に添付ファイルの[PidTagMessageFlags](http://msdn.microsoft.com/en-us/library/cc839733.aspx) (0x0E070003) のプロパティを設定します。
+4. [PidTagMessageFlags](http://msdn.microsoft.com/ja-JP/library/cc839733.aspx) (0x0E070003) プロパティを、**Sent** への添付物に設定します。
     
   ```cs
   ExtendedPropertyDefinition sent = new ExtendedPropertyDefinition(3591, MapiPropertyType.Integer);
@@ -291,23 +291,23 @@ public static void CreateEmailExistingItem(ExchangeService service, ItemId itemI
 ## <a name="add-an-existing-item-to-a-new-email-by-using-the-mimecontent-and-ews"></a>MimeContent および EWS を使用して、既存アイテムを新しい電子メールに追加する
 <a name="bk_addexistingemailews"> </a>
 
-既存のアイテムを新しいアイテムに追加するには、2 つの方法があります。  
+既存のアイテムを新しいアイテムに追加するには、2 つの方法があります。 
   
-1. 電子メール メッセージを具体的に作業している場合は、新しく作成されたアイテムの添付ファイルに電子メールから[MimeContent](http://msdn.microsoft.com/library/4f472a08-5653-4c54-ba65-831dfe32f20f%28Office.15%29.aspx)要素の値をコピーできます。 フォロー アップ フラグおよびカテゴリでは、このプロセス中にいくつかのプロパティが失われますが、標準の電子メール メッセージをうまきます。 
+1. 特に電子メール メッセージを使用している場合は、新しく作成したアイテム添付に、電子メールの [MimeContent](http://msdn.microsoft.com/library/4f472a08-5653-4c54-ba65-831dfe32f20f%28Office.15%29.aspx) 要素の値をコピーできます。 この過程で、フォローアップ フラグやカテゴリなどの一部のプロパティが失われますが、標準的な電子メール メッセージには十分機能します。 
     
 2. すべての種類のアイテムに完全な再現性が必要な場合は、既存のアイテムにバインドし、すべてのプロパティと拡張プロパティを新しい添付物にコピーできます。
     
-**MimeContent**要素を使用して、新しいアイテムの添付ファイルの**MimeContent**値に元のアイテムのコンテンツをコピーする方法を次のコード例に示します。 例では、次の操作を使用します。 
+次のコード例は、**MimeContent** 要素を使用して、新しいアイテム添付の **MimeContent** 値に元のアイテムの内容をコピーする方法を示しています。 この例では、次の操作を使用しています。 
   
-1. [GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) : **MimeContent**と新しいメッセージのアイテムの添付ファイルとなるメッセージの[件名](http://msdn.microsoft.com/library/c140d6c2-deb1-4f67-a908-9397197c4ae7%28Office.15%29.aspx)を取得します。 
+1. [GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) — 新しいメッセージでアイテム添付になるメッセージの **MimeContent** および [Subject](http://msdn.microsoft.com/library/c140d6c2-deb1-4f67-a908-9397197c4ae7%28Office.15%29.aspx) を取得します。 
     
-2. [CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) : 新しい電子メール メッセージを作成します。 
+2. [CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) — 新しい電子メール メッセージを作成します。 
     
-3. [CreateAttachment](http://msdn.microsoft.com/library/e066db95-6963-4507-a8d0-8efad287f550%28Office.15%29.aspx)- **GetItem**操作によって新しい添付ファイルを作成するには、 **MimeContent**と**件名**を使用して取得します。 
+3. [CreateAttachment](http://msdn.microsoft.com/library/e066db95-6963-4507-a8d0-8efad287f550%28Office.15%29.aspx) — **GetItem** 操作で取得した **MimeContent** および **Subject** を使用して、新しい添付物を作成します。 
     
-4. [SendItem](http://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx) -を送信し、メッセージを保存します。 
+4. [SendItem](http://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx) — メッセージを送信し、保存します。 
     
-**MimeContent**と既存のアイテムの**件名**を取得することによって、例を開始します。 
+この例では、まず既存のアイテムの **MimeContent** と **Subject** を取得します。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -332,7 +332,7 @@ public static void CreateEmailExistingItem(ExchangeService service, ItemId itemI
 </soap:Envelope>
 ```
 
-サーバー要求に応答し、 **GetItem** **NoError**メールが正常に取得されたことを示す、および**MimeContent**と**の[ResponseCode](http://msdn.microsoft.com/en-us/library/aa580757%28v=exchg.150%29.aspx)の値が含まれています[GetItemResponse](http://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx)メッセージ件名**電子メールの。 
+サーバーは、**GetItem** 要求に対して [GetItemResponse](http://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx) メッセージで応答します。このメッセージには、[ResponseCode](http://msdn.microsoft.com/ja-JP/library/aa580757%28v=exchg.150%29.aspx) の値として電子メールが正常に作成されたことを示す **NoError**、および電子メールの **MimeContent** と **Subject** が含まれます。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -370,7 +370,7 @@ public static void CreateEmailExistingItem(ExchangeService service, ItemId itemI
 </s:Envelope>
 ```
 
-次に、新しい電子メールを作成するのには、 **CreateItem**操作を呼び出します。 
+次に、**CreateItem** 操作を呼び出して新しい電子メールを作成します。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -399,9 +399,9 @@ public static void CreateEmailExistingItem(ExchangeService service, ItemId itemI
 </soap:Envelope>
 ```
 
-サーバーは、 **CreateItem**要求[ResponseCode](http://msdn.microsoft.com/en-us/library/aa580757%28v=exchg.150%29.aspx) **NoError**電子メールが正常に作成されたことを示す値を含む[CreateItemResponse](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx)メッセージに応答します。
+サーバーは、[CreateItemResponse](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) メッセージで **CreateItem** 要求に応答します。このメッセージには、[ResponseCode](http://msdn.microsoft.com/ja-JP/library/aa580757%28v=exchg.150%29.aspx) の値として **NoError** が含まれており、それは、電子メールが正常に作成されたことを示しています。
   
-**MimeContent** **GetItem**操作によって取得された**件名**を使用して次に、新しいアイテムの添付ファイルを作成します。 [ParentItemId](http://msdn.microsoft.com/library/72dc4391-72db-44d2-85d9-4718d59886a7%28Office.15%29.aspx)要素の値は、 **createitem メソッド**の応答で返された**アイテム Id**の値を使用して設定されます。 
+次に、**GetItem** 操作で取得した **MimeContent** および **Subject** を使用して、新しいアイテム添付を作成します。 [ParentItemId](http://msdn.microsoft.com/library/72dc4391-72db-44d2-85d9-4718d59886a7%28Office.15%29.aspx) 要素の値には、**CreateItem** 応答で返された **ItemId** の値を使用して入力します。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -429,9 +429,9 @@ public static void CreateEmailExistingItem(ExchangeService service, ItemId itemI
 </soap:Envelope>
 ```
 
-サーバー要求に応答し、 **CreateAttachment** **NoError**、添付ファイルが正常に作成されたことを示す、および、[の[ResponseCode](http://msdn.microsoft.com/en-us/library/aa580757%28v=exchg.150%29.aspx)の値が含まれています[CreateAttachmentResponse](http://msdn.microsoft.com/library/cf6bd8bb-5317-4a03-bd75-297dd359b5da%28Office.15%29.aspx)メッセージAttachmentId](http://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx)の新しく作成された添付ファイルです。 
+サーバーは、**CreateAttachment** 要求に対して、[CreateAttachmentResponse](http://msdn.microsoft.com/library/cf6bd8bb-5317-4a03-bd75-297dd359b5da%28Office.15%29.aspx) メッセージで応答します。このメッセージには、[ResponseCode](http://msdn.microsoft.com/ja-JP/library/aa580757%28v=exchg.150%29.aspx) の値として添付物が正常に作成されたことを示す **NoError**、および新しく作成された添付物の [AttachmentId](http://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx) が含まれます。 
   
-新しいメッセージが作成され、アイテムの添付、[送信](how-to-send-email-messages-by-using-ews-in-exchange.md)するこのメッセージを新しく作成された[SendItem](http://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx)操作を呼び出すことによって。 
+これで新しいメッセージが作成され、アイテムが添付されたため、[SendItem](http://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx) 操作を呼び出して、[新しく作成されたメッセージを送信](how-to-send-email-messages-by-using-ews-in-exchange.md)できます。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -456,22 +456,22 @@ public static void CreateEmailExistingItem(ExchangeService service, ItemId itemI
 </soap:Envelope>
 ```
 
-サーバーは、 [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **NoError**メールが正常に送信されたことを示す値を含む[SendItemResponse](http://msdn.microsoft.com/library/26ac41c7-57d9-473e-ab7a-bae93e1d2aba%28Office.15%29.aspx)メッセージが**SendItem**要求に応答します。
+サーバーは、[SendItemResponse](http://msdn.microsoft.com/library/26ac41c7-57d9-473e-ab7a-bae93e1d2aba%28Office.15%29.aspx) メッセージで **SendItem** 要求に応答します。このメッセージには、電子メールが正常に作成されたことを示す、**NoError** の [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) の値が含まれます。
   
 ## <a name="create-an-email-with-an-inline-attachment-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して、インライン添付のある電子メールを作成する
 <a name="bk_createinlineattachewsma"> </a>
 
 次のコード例は、インライン添付のある電子メールを作成する方法を示しています。
   
-1. [なか](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx)オブジェクトを使用して、電子メール メッセージを作成します。 
+1. [EmailMessage](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) オブジェクトを使用して、電子メール メッセージを作成します。 
     
-2. インライン添付ファイルを含む HTML の本文に[EmailMessage.Body](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.body%28v=exchg.80%29.aspx)プロパティを設定します。 
+2. [EmailMessage.Body](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.item.body%28v=exchg.80%29.aspx) プロパティを、インライン添付を含む HTML 本文に設定します。 
     
-3. [AttachmentCollection.AddFileAttachment](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.attachmentcollection.addfileattachment%28v=exchg.80%29.aspx)メソッドを使用して、メッセージに添付ファイルを追加します。 
+3. [AttachmentCollection.AddFileAttachment](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.attachmentcollection.addfileattachment%28v=exchg.80%29.aspx) メソッドを使用して、添付物をメッセージに追加します。 
     
-4. [EmailMessage.SendAndSaveCopy](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage.sendandsavecopy%28v=exchg.80%29.aspx)メソッドを使用して、受信者にメッセージを送信し、メッセージを送信済みアイテム フォルダーに保存します。 
+4. [EmailMessage.SendAndSaveCopy](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.emailmessage.sendandsavecopy%28v=exchg.80%29.aspx) メソッドを使用して、受信者にメッセージを送信し、[送信済みアイテム] フォルダーにメッセージを保存します。 
     
-この例では、 **service** が有効な [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
+この例では、**service** が有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
   
 ```cs
 public static void CreateEmailWithInlineAttachment(ExchangeService service)
@@ -505,7 +505,7 @@ public static void CreateEmailWithInlineAttachment(ExchangeService service)
 ## <a name="create-an-email-with-an-inline-attachment-by-using-ews"></a>EWS を使用して、インライン添付のある電子メールを作成する
 <a name="bk_createinlineattachewsma"> </a>
 
-次のコード例は、 [CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx)操作を使用して、インライン ファイルの添付ファイル付き電子メール メッセージを作成する方法を示しています。 [Body](http://msdn.microsoft.com/library/7851ea9b-9f87-4adc-a26f-7a27df4a9bca%28Office.15%29.aspx)要素の**BodyType**属性では、コンテンツは HTML 形式でされ、イメージ ソースが含まれて ことを示します。 これは、EWS のマネージ API が[インライン添付ファイル付き電子メールを作成](#bk_createinlineattachewsma)するのには EWS のマネージ API を使用するときに送信される XML 要求の 1 つ。
+次のコード例は、[CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) 操作を使用して、インライン ファイル添付のある電子メール メッセージを作成する方法を示しています。 [Body](http://msdn.microsoft.com/library/7851ea9b-9f87-4adc-a26f-7a27df4a9bca%28Office.15%29.aspx) 要素の **BodyType** 属性は、コンテンツが HTML 形式であり、イメージ ソースが含まれることを示します。 また、これは、EWS マネージ API を使用して[インライン添付のある電子メール メッセージを作成する](#bk_createinlineattachewsma)ときに送信される XML 要求の 1 つでもあります。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -542,22 +542,22 @@ public static void CreateEmailWithInlineAttachment(ExchangeService service)
 </soap:Envelope>
 ```
 
-サーバーは、**CreateItemResponse** メッセージで [CreateItem](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) 要求に応答します。このメッセージには、電子メールが正常に作成されたことを示す [NoError](http://msdn.microsoft.com/en-us/library/aa580757%28v=exchg.150%29.aspx) の **ResponseCode** 値、および新しく作成されたメッセージの [ItemId](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) が含まれます。 
+サーバーは、**CreateItemResponse** メッセージで [CreateItem](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) 要求に応答します。このメッセージには、電子メールが正常に作成されたことを示す [NoError](http://msdn.microsoft.com/ja-JP/library/aa580757%28v=exchg.150%29.aspx) の **ResponseCode** 値、および新しく作成されたメッセージの [ItemId](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) が含まれます。 
   
-[このメッセージを新しく作成した送信](how-to-send-email-messages-by-using-ews-in-exchange.md)を、 [SendItem](http://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx)操作を呼び出します。 
+[新しく作成されたメッセージを送信する](how-to-send-email-messages-by-using-ews-in-exchange.md)には、[SendItem](http://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx) 操作を呼び出します。 
   
 ## <a name="add-an-attachment-to-an-existing-email-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して、添付物を既存の電子メールに追加する
 <a name="bk_createinlineattachewsma"> </a>
 
-次のコード例は、既存の電子メールに添付物を追加する方法を示しています。  
+次のコード例は、既存の電子メールに添付物を追加する方法を示しています。 
   
-1. [EmailMessage.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx)メソッドを使用して、既存の電子メール メッセージにバインドします。 
+1. [EmailMessage.Bind](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) メソッドを使用して、既存の電子メール メッセージにバインドします。 
     
-2. **AddFileAttachment**メソッドを使用してメッセージに添付ファイルを追加します。 
+2. **AddFileAttachment** メソッドを使用して、ファイル添付をメッセージに追加します。 
     
-3. [EmailMessage.Update](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage.update%28v=exchg.80%29.aspx)メソッドを呼び出すことによって、更新プログラムを保存しています。 
+3. [EmailMessage.Update](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.emailmessage.update%28v=exchg.80%29.aspx) メソッドを呼び出すことによって、更新内容を保存します。 
     
-この例では、 **service** が有効な [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
+この例では、**service** が有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
   
 ```XML
 public static void AddAttachmentToExisting(ExchangeService service, ItemId itemId)
@@ -573,7 +573,7 @@ public static void AddAttachmentToExisting(ExchangeService service, ItemId itemI
 ## <a name="add-an-attachment-to-an-existing-email-by-using-ews"></a>EWS を使用して、添付物を既存の電子メールに追加する
 <a name="bk_createinlineattachewsma"> </a>
 
-[CreateAttachment](http://msdn.microsoft.com/library/e066db95-6963-4507-a8d0-8efad287f550%28Office.15%29.aspx)操作を使用して、既存の電子メール メッセージに添付ファイルを追加するのには次のコード例を次に示します。 これは、EWS のマネージ API は、[既存の電子メールの添付ファイルを追加](#bk_createinlineattachewsma)するのには EWS のマネージ API を使用する場合を送信する XML 要求の 1 つ。
+次のコード例は、[CreateAttachment](http://msdn.microsoft.com/library/e066db95-6963-4507-a8d0-8efad287f550%28Office.15%29.aspx) 操作を使用して、ファイル添付を既存の電子メール メッセージに追加する方法を示しています。 また、これは EWS マネージ API を使用して[添付物を既存の電子メールに追加する](#bk_createinlineattachewsma)ときに送信される XML 要求の 1 つでもあります。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -601,7 +601,7 @@ public static void AddAttachmentToExisting(ExchangeService service, ItemId itemI
 </soap:Envelope>
 ```
 
-サーバー要求に応答し、 **CreateAttachment** **NoError**、添付ファイルが正常に作成されたことを示す、および、[の[ResponseCode](http://msdn.microsoft.com/en-us/library/aa580757%28v=exchg.150%29.aspx)の値が含まれています[CreateAttachmentResponse](http://msdn.microsoft.com/library/cf6bd8bb-5317-4a03-bd75-297dd359b5da%28Office.15%29.aspx)メッセージAttachmentId](http://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx)の新しく作成された添付ファイルです。 
+サーバーは、**CreateAttachment** 要求に対して、[CreateAttachmentResponse](http://msdn.microsoft.com/library/cf6bd8bb-5317-4a03-bd75-297dd359b5da%28Office.15%29.aspx) メッセージで応答します。このメッセージには、[ResponseCode](http://msdn.microsoft.com/ja-JP/library/aa580757%28v=exchg.150%29.aspx) の値として添付物が正常に作成されたことを示す **NoError**、および新しく作成された添付物の [AttachmentId](http://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx) が含まれます。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -641,14 +641,14 @@ public static void AddAttachmentToExisting(ExchangeService service, ItemId itemI
 ## <a name="see-also"></a>関連項目
 
 
-- [Exchange の添付物と EWS](attachments-and-ews-in-exchange.md)
+- [Exchange における添付物と EWS](attachments-and-ews-in-exchange.md)
     
-- [Exchange EWS を使用して添付ファイルを追加します。](how-to-add-attachments-by-using-ews-in-exchange.md)
+- [Exchange で EWS を使用して添付物を追加する](how-to-add-attachments-by-using-ews-in-exchange.md)
     
-- [Exchange EWS を使用して添付ファイルを削除します。](how-to-delete-attachments-by-using-ews-in-exchange.md)
+- [Exchange で EWS を使用して添付物を削除する](how-to-delete-attachments-by-using-ews-in-exchange.md)
     
-- [Exchange EWS を使用して添付ファイルを取得します。](how-to-get-attachments-by-using-ews-in-exchange.md)
+- [Exchange で EWS を使用して添付物を取得する](how-to-get-attachments-by-using-ews-in-exchange.md)
     
-- [EWS を使用して Exchange が電子メール メッセージを送信します。](how-to-send-email-messages-by-using-ews-in-exchange.md)
+- [Exchange で EWS を使用してメール メッセージを送信する](how-to-send-email-messages-by-using-ews-in-exchange.md)
     
 

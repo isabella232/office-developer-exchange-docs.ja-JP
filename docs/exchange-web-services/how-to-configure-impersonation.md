@@ -1,5 +1,5 @@
 ---
-title: 偽装を構成します。
+title: 偽装を構成する
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,12 +8,12 @@ ms.assetid: efcef39f-e26d-4eed-95ac-36a5bf8c089f
 description: Exchange 管理シェルを使用して、サービス アカウントに偽装の役割を付与する方法について説明します。
 ms.openlocfilehash: 57ccef48a7553bcc06e3b3ae940b376b8555ef84
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758933"
 ---
-# <a name="configure-impersonation"></a>偽装を構成します。
+# <a name="configure-impersonation"></a>偽装を構成する
 
 Exchange 管理シェルを使用して、サービス アカウントに偽装の役割を付与する方法について説明します。 
   
@@ -23,15 +23,15 @@ Exchange Online、Office 365 の一部としての Exchange Online、および E
   
 ## <a name="configuring-the-applicationimpersonation-role"></a>ApplicationImpersonation 役割の構成
 
-Exchange サーバー管理者または自分で **ApplicationImpersonation** 役割を割り当てるときには、次のパラメーターを **New-ManagementRoleAssignment** コマンドレットに使用します。 
+**ApplicationImpersonation** 役割を自分で、または Exchenge サーバー管理者が割り当てる際には、**New-ManagementRoleAssignment** コマンドレットに次のパラメーターを使用します。 
   
--  _名_&ndash;ロールの割り当ての表示名です。 役割を割り当てるたびに、RBAC 役割一覧に新しいエントリが作成されます。 役割の割り当ては、 [Get-ManagementRoleAssignment](http://msdn.microsoft.com/library/a3a6ee46-061b-444a-8639-43a416309445.aspx) コマンドレットを使用して確認できます。 
+-  _Name_ &ndash; 役割の割り当てのフレンドリ名。 役割を割り当てるたびに、RBAC 役割一覧に新しいエントリが作成されます。 役割の割り当ては、[Get-ManagementRoleAssignment](http://msdn.microsoft.com/library/a3a6ee46-061b-444a-8639-43a416309445.aspx) コマンドレットを使用すると確認できます。 
     
--  _ロール_&ndash;の RBAC の役割を割り当てる。 偽装を設定するときには、 **ApplicationImpersonation** 役割を割り当てます。 
+-  _Role_ &ndash; 割り当てる RBAC 役割。 偽装を設定する際には、**ApplicationImpersonation** 役割を割り当てます。 
     
--  _ユーザー_&ndash;サービス アカウントです。 
+-  _User_ &ndash; サービス アカウント。 
     
--  _CustomRecipientScope_&ndash;サービス アカウントを偽装するユーザーのスコープです。 サービス アカウントは、指定されたスコープ内でのみ他のユーザーを偽装できます。 スコープが指定されていない場合、サービス アカウントには組織内のすべてのユーザーを範囲とする **ApplicationImpersonation** 役割が付与されます。 [New-ManagementScope](http://msdn.microsoft.com/library/1ea1f474-69d6-48c0-9beb-bfa4442c5dab.aspx) コマンドレットを使用すると、カスタムの管理スコープを作成できます。 
+-  _CustomRecipientScope_ &ndash; サービス アカウントが偽装できるユーザーのスコープ。 サービス アカウントは、指定されたスコープ内でのみ他のユーザーを偽装できます。 スコープが指定されていない場合、サービス アカウントには組織内のすべてのユーザーを範囲とする **ApplicationImpersonation** 役割が付与されます。 [New-ManagementScope](http://msdn.microsoft.com/library/1ea1f474-69d6-48c0-9beb-bfa4442c5dab.aspx) コマンドレットを使用すると、カスタムの管理スコープを作成できます。 
     
 偽装を構成するには、次のものが必要です。
   
@@ -61,7 +61,7 @@ Exchange サーバー管理者または自分で **ApplicationImpersonation** �
     New-ManagementScope -Name:scopeName -RecipientRestrictionFilter:recipientFilter
    ```
 
-   **新規 ManagementScope**コマンドレットの_RecipientRestrictionFilter_パラメーターでは、スコープのメンバーを定義します。 フィルターの作成には、 **Identity** オブジェクトのプロパティを使用できます。 次の例は、ユーザー名が "john" の単一のユーザーに結果を制限するフィルターです。 
+   _New-ManagementScope_ コマンドレットの **RecipientRestrictionFilter** パラメーターによって、スコープのメンバーを定義します。 フィルターの作成には、**Identity** オブジェクトのプロパティを使用できます。 次の例は、ユーザー名が "john" の単一のユーザーに結果を制限するフィルターです。 
     
    ```powershell
    Name -eq "john"
@@ -80,8 +80,8 @@ Exchange サーバー管理者または自分で **ApplicationImpersonation** �
 ## <a name="see-also"></a>関連項目
 
 - [Exchange の偽装と EWS](impersonation-and-ews-in-exchange.md)
-- [ApplicationImpersonation 役割](http://technet.microsoft.com/en-us/library/dd776119%28v=exchg.150%29.aspx)   
-- [新しい-ManagementRoleAssignment](http://msdn.microsoft.com/library/34d4f2e3-f2c5-49e1-a6a9-1366da65a78c.aspx)    
-- [Get ManagementRoleAssignment](http://msdn.microsoft.com/library/a3a6ee46-061b-444a-8639-43a416309445.aspx)
+- [ApplicationImpersonation 役割](http://technet.microsoft.com/ja-JP/library/dd776119%28v=exchg.150%29.aspx)   
+- [New-ManagementRoleAssignment](http://msdn.microsoft.com/library/34d4f2e3-f2c5-49e1-a6a9-1366da65a78c.aspx)    
+- [Get-ManagementRoleAssignment](http://msdn.microsoft.com/library/a3a6ee46-061b-444a-8639-43a416309445.aspx)
     
 

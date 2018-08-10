@@ -1,5 +1,5 @@
 ---
-title: Exchange の EWS を使用してメールボックスのイベントに関する通知をストリーム
+title: Exchange での EWS を使用したメールボックス イベントに関するストリーム通知
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,27 +8,27 @@ ms.assetid: fe9bde1e-da0e-413c-a109-077f399f67a3
 description: EWS マネージ API または EWS を使用してストリーミング通知の受信を登録し、イベントを取得する方法について説明します。
 ms.openlocfilehash: aad7604511687d1482914183979e954f79572af9
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759054"
 ---
-# <a name="stream-notifications-about-mailbox-events-by-using-ews-in-exchange"></a>Exchange の EWS を使用してメールボックスのイベントに関する通知をストリーム
+# <a name="stream-notifications-about-mailbox-events-by-using-ews-in-exchange"></a>Exchange での EWS を使用したメールボックス イベントに関するストリーム通知
 
 EWS マネージ API または EWS を使用してストリーミング通知の受信を登録し、イベントを取得する方法について説明します。
   
 Exchange の EWS はストリーミング通知を使用して、サーバーから送信された通知を受け取ります。これは、特定の期間開いた状態が維持される接続を通じて行われます。
   
-EWS マネージ API を使用して[購読し、通知のストリーミングを取得](how-to-stream-notifications-about-mailbox-events-by-using-ews-in-exchange.md#bk_cestreamewsma)、 [SubscribeToStreamingNotifications](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.subscribetostreamingnotifications%28v=exchg.80%29.aspx)メソッドを使用して、通知をストリーミングする購読しているかどうか。 [StreamingSubscriptionConnection](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.streamingsubscriptionconnection.streamingsubscriptionconnection%28v=exchg.80%29.aspx)オブジェクトを使用してサブスクリプションへの接続を作成します。 
+EWS マネージ API を使用してストリーミング通知にサブスクライブする場合は、[SubscribeToStreamingNotifications](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.subscribetostreamingnotifications%28v=exchg.80%29.aspx) メソッドを使用して[ストリーミング通知のサブスクライブと取得](how-to-stream-notifications-about-mailbox-events-by-using-ews-in-exchange.md#bk_cestreamewsma)を実施します。 その後で、[StreamingSubscriptionConnection](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.streamingsubscriptionconnection.streamingsubscriptionconnection%28v=exchg.80%29.aspx) オブジェクトを使用して、サブスクリプションへの接続を作成します。 
   
-ストリーミングの通知を購読するには、EWS を使用して、[購読の操作](http://msdn.microsoft.com/library/f17c3d08-c79e-41f1-ba31-6e41e7aafd87%28Office.15%29.aspx)を使用して[サブスクリプションを作成](how-to-stream-notifications-about-mailbox-events-by-using-ews-in-exchange.md#bk_cestreamews)をする解析、応答し、[ストリーミングの通知を取得する](how-to-stream-notifications-about-mailbox-events-by-using-ews-in-exchange.md#bk_cegetnotifsews) [GetStreamingEvents 操作](http://msdn.microsoft.com/library/8da95423-72bc-4034-90a8-162eedcd059b%28Office.15%29.aspx)を使用して要求します。 
+EWS を使用してストリーミング通知にサブスクライブする場合は、[Subscribe 操作](http://msdn.microsoft.com/library/f17c3d08-c79e-41f1-ba31-6e41e7aafd87%28Office.15%29.aspx)を使用して[サブスクリプションを作成](how-to-stream-notifications-about-mailbox-events-by-using-ews-in-exchange.md#bk_cestreamews)し、応答を解析して、[GetStreamingEvents 操作](http://msdn.microsoft.com/library/8da95423-72bc-4034-90a8-162eedcd059b%28Office.15%29.aspx)を使用して[ストリーミング通知を取得](how-to-stream-notifications-about-mailbox-events-by-using-ews-in-exchange.md#bk_cegetnotifsews)します。 
   
-クライアントの変更またはサーバー上で作成された、アイテムの通知を受け取ると後の[次の手順](how-to-stream-notifications-about-mailbox-events-by-using-ews-in-exchange.md#bk_nextsteps)は、変更を同期するには 
+サーバー上で変更または作成されたアイテムについての通知をクライアントが受信したら、[次の手順](how-to-stream-notifications-about-mailbox-events-by-using-ews-in-exchange.md#bk_nextsteps)は変更の同期です。 
   
 ## <a name="subscribe-to-and-get-streaming-notifications-by-using-the-ews-managed-api"></a>EWS マネージ API を使用したストリーミング通知のサブスクライブと取得
 <a name="bk_cestreamewsma"> </a>
 
-ストリーミング受信トレイ フォルダー内のすべてのイベントの通知を購読する[SubscribeToStreamingNotifications](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.endsubscribetostreamingnotifications%28v=exchg.80%29.aspx)メソッドを使用して次のコード例を次に示します。 [StreamingSubscriptionConnection](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.streamingsubscriptionconnection.streamingsubscriptionconnection%28v=exchg.80%29.aspx)オブジェクトを作成し、サブスクリプションの接続が作成されます。 この例では、その**サービス**は、有効な[ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)バインドと仮定します。 
+次のコード例は、[SubscribeToStreamingNotifications](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.endsubscribetostreamingnotifications%28v=exchg.80%29.aspx) メソッドを使用して、受信トレイ フォルダー内のすべてのイベントのストリーミング通知にサブスクライブする方法を示しています。 その後で、[StreamingSubscriptionConnection](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.streamingsubscriptionconnection.streamingsubscriptionconnection%28v=exchg.80%29.aspx) オブジェクトを作成することで、サブスクリプション用の接続を作成します。 この例では、**service** が有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) バインディングであることを想定しています。 
   
 ```cs
 // Subscribe to streaming notifications in the Inbox. 
@@ -50,12 +50,12 @@ connection.OnDisconnect += OnDisconnect;
 connection.Open();
 ```
 
-サーバーからイベントを受信した後の[次のステップ](how-to-stream-notifications-about-mailbox-events-by-using-ews-in-exchange.md#bk_nextsteps)はそれらの変更をサーバーと同期させるのには。 サブスクリプションは、不要になったときに、サーバーでサブスクリプションを終了するのにには、[表 4](notification-subscriptions-mailbox-events-and-ews-in-exchange.md#bk_notifunsubscribe)に記載されている登録解除の方法のいずれかを使用します。 
+サーバーからイベントを受信したら、[次の手順](how-to-stream-notifications-about-mailbox-events-by-using-ews-in-exchange.md#bk_nextsteps)では、該当する変更内容をサーバーと同期します。 サブスクリプションが不要になったら、「[表 4](notification-subscriptions-mailbox-events-and-ews-in-exchange.md#bk_notifunsubscribe)」に示した登録解除メソッドのいずれかを使用してサーバーとのサブスクリプションを終了します。 
   
 ## <a name="subscribe-to-streaming-notifications-by-using-ews"></a>EWS を使用したストリーミング通知のサブスクライブ
 <a name="bk_cestreamews"> </a>
 
-クライアントがサーバーに送信、クライアントが受信トレイ フォルダー内のすべての[EventTypes](http://msdn.microsoft.com/library/29ded9e5-f191-4aa3-bc3e-500de2fc8818%28Office.15%29.aspx)を購読する[購読の操作](http://msdn.microsoft.com/library/f17c3d08-c79e-41f1-ba31-6e41e7aafd87%28Office.15%29.aspx)を呼び出すとき、XML の要求の例を次に示します。 EWS のマネージ API は、ストリーミングの通知を購読する[SubscribeToStreamingNotifications](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.endsubscribetostreamingnotifications%28v=exchg.80%29.aspx)メソッドを使用する場合を送信する XML 要求にもです。 
+次の例は、受信トレイ フォルダー内のすべての [EventTypes](http://msdn.microsoft.com/library/29ded9e5-f191-4aa3-bc3e-500de2fc8818%28Office.15%29.aspx) にサブスクライブするために、クライアントが [Subscribe 操作](http://msdn.microsoft.com/library/f17c3d08-c79e-41f1-ba31-6e41e7aafd87%28Office.15%29.aspx)を呼び出すときに、クライアントからサーバーに送信される XML 要求を示しています。 これは、[SubscribeToStreamingNotifications](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.endsubscribetostreamingnotifications%28v=exchg.80%29.aspx) メソッドを使用してストリーミング通知にサブスクライブするときに、EWS マネージ API が送信する XML 要求でもあります。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -87,7 +87,7 @@ connection.Open();
 </soap:Envelope>
 ```
 
-次の XML の例は、[受信操作](http://msdn.microsoft.com/library/f17c3d08-c79e-41f1-ba31-6e41e7aafd87%28Office.15%29.aspx)の要求への応答でクライアントにサーバーから送信される[SubscribeResponse](http://msdn.microsoft.com/library/fd87e9b7-c231-44fa-9f5b-19ae96cda5cc%28Office.15%29.aspx)メッセージを示しています。 NoError、 [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx)の要素の値を含めることは、サブスクリプションが正常に作成されたことを意味します。 [サブスクリプション Id](http://msdn.microsoft.com/library/77c0abab-69e8-428e-8c20-22258e4ef71b%28Office.15%29.aspx)要素は、サーバー上のストリーミングの通知サブスクリプションを一意に識別します。 
+次の XML の例は、[Subscribe 操作](http://msdn.microsoft.com/library/f17c3d08-c79e-41f1-ba31-6e41e7aafd87%28Office.15%29.aspx)要求に対する応答として、サーバーからクライアントに送信される [SubscribeResponse](http://msdn.microsoft.com/library/fd87e9b7-c231-44fa-9f5b-19ae96cda5cc%28Office.15%29.aspx) メッセージを示しています。 [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 要素には、サブスクリプションの作成が成功したことを意味する NoError の値が含まれています。 [SubscriptionId](http://msdn.microsoft.com/library/77c0abab-69e8-428e-8c20-22258e4ef71b%28Office.15%29.aspx) 要素により、サーバー上のストリーミング通知サブスクリプションが一意に特定されます。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -118,12 +118,12 @@ connection.Open();
   </s:Envelope>
 ```
 
-サブスクリプションを作成すると、することができます[ストリームのイベントを取得する](how-to-stream-notifications-about-mailbox-events-by-using-ews-in-exchange.md#bk_cegetnotifsews) [SubscribeResponse](http://msdn.microsoft.com/library/fd87e9b7-c231-44fa-9f5b-19ae96cda5cc%28Office.15%29.aspx)メッセージで返された[サブスクリプション Id](http://msdn.microsoft.com/library/77c0abab-69e8-428e-8c20-22258e4ef71b%28Office.15%29.aspx)を使用して、します。 
+サブスクリプションを作成すると、[SubscribeResponse](http://msdn.microsoft.com/library/fd87e9b7-c231-44fa-9f5b-19ae96cda5cc%28Office.15%29.aspx) メッセージで返される [SubscriptionId](http://msdn.microsoft.com/library/77c0abab-69e8-428e-8c20-22258e4ef71b%28Office.15%29.aspx) を使用して、[ストリーミングされたイベントを取得](how-to-stream-notifications-about-mailbox-events-by-using-ews-in-exchange.md#bk_cegetnotifsews)できるようになります。 
   
 ## <a name="get-streaming-events-by-using-ews"></a>EWS を使用したストリーミング イベントの取得
 <a name="bk_cegetnotifsews"> </a>
 
-[SubscribeResponse](http://msdn.microsoft.com/library/fd87e9b7-c231-44fa-9f5b-19ae96cda5cc%28Office.15%29.aspx)メッセージの[サブスクリプション Id](http://msdn.microsoft.com/library/77c0abab-69e8-428e-8c20-22258e4ef71b%28Office.15%29.aspx)の通知を取得するのには、クライアントがサーバーに送信する[GetStreamingEvents の操作](http://msdn.microsoft.com/library/8da95423-72bc-4034-90a8-162eedcd059b%28Office.15%29.aspx)の要求メッセージが返される次の XML の例を示しています。 [GetStreamingEvents 操作](http://msdn.microsoft.com/library/8da95423-72bc-4034-90a8-162eedcd059b%28Office.15%29.aspx)の要求は、接続の長さが 30 分程度であることを示します。 
+次の XML の例は、[SubscribeResponse](http://msdn.microsoft.com/library/fd87e9b7-c231-44fa-9f5b-19ae96cda5cc%28Office.15%29.aspx) メッセージで返された [SubscriptionId](http://msdn.microsoft.com/library/77c0abab-69e8-428e-8c20-22258e4ef71b%28Office.15%29.aspx) についての通知を取得するために、クライアントからサーバーに送信される [GetStreamingEvents 操作](http://msdn.microsoft.com/library/8da95423-72bc-4034-90a8-162eedcd059b%28Office.15%29.aspx)要求のメッセージを示しています。  [GetStreamingEvents 操作](http://msdn.microsoft.com/library/8da95423-72bc-4034-90a8-162eedcd059b%28Office.15%29.aspx)要求は、接続時間の長さが 30 分であることを示しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -145,7 +145,7 @@ connection.Open();
 </soap:Envelope>
 ```
 
-次の XML の例は、 [GetStreamingEvents 操作](http://msdn.microsoft.com/library/8da95423-72bc-4034-90a8-162eedcd059b%28Office.15%29.aspx)の要求への応答としてクライアントにサーバーから送信される[GetStreamingEventsResponse](http://msdn.microsoft.com/library/ea1e7e7e-1b19-4e07-ba42-5dbd888c6db2%28Office.15%29.aspx)メッセージを示しています。 CreatedEvent とアイテムに対し、NewMailEvent、ModifiedEvent、新しいメッセージを受信したときに発生するすべてのフォルダーが含まれています。 
+次の XML の例は、[GetStreamingEvents 操作](http://msdn.microsoft.com/library/8da95423-72bc-4034-90a8-162eedcd059b%28Office.15%29.aspx)要求に対する応答として、サーバーからクライアントに送信される [GetStreamingEventsResponse](http://msdn.microsoft.com/library/ea1e7e7e-1b19-4e07-ba42-5dbd888c6db2%28Office.15%29.aspx) メッセージを示しています。 これには、アイテムに対する CreatedEvent および NewMailEvent とフォルダーに対する ModifiedEvent が含まれています。これらすべては、新しいメッセージが受信されたときに発生します。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -196,23 +196,23 @@ connection.Open();
 </soap:Body>
 ```
 
-サーバーからイベントを受信した後の[次のステップ](how-to-stream-notifications-about-mailbox-events-by-using-ews-in-exchange.md#bk_nextsteps)はそれらの変更をサーバーと同期させるのには。 サブスクリプションは、不要になったときに、サーバーでサブスクリプションを終了するには、[購読の取り消し操作](http://msdn.microsoft.com/library/994a9d2b-1501-4804-90f0-12bd914496ec%28Office.15%29.aspx)を使用します。 
+サーバーからイベントを受信したら、[次の手順](how-to-stream-notifications-about-mailbox-events-by-using-ews-in-exchange.md#bk_nextsteps)では、該当する変更内容をサーバーと同期します。 サブスクリプションが不要になったら、[Unsubscribe 操作](http://msdn.microsoft.com/library/994a9d2b-1501-4804-90f0-12bd914496ec%28Office.15%29.aspx)を使用してサーバーとのサブスクリプションを終了します。 
   
 ## <a name="next-steps"></a>次の手順
 <a name="bk_nextsteps"> </a>
 
-通知を受信後、[フォルダー階層の同期](how-to-synchronize-folders-by-using-ews-in-exchange.md)または[変更するフォルダーの内容を同期](how-to-synchronize-items-by-using-ews-in-exchange.md)することができます。
+通知を受信したら、[フォルダー階層の同期](how-to-synchronize-folders-by-using-ews-in-exchange.md)や[変更されたフォルダーの内容の同期](how-to-synchronize-items-by-using-ews-in-exchange.md)を実行します。
   
 ## <a name="see-also"></a>関連項目
 
 
-- [Notification subscriptions, mailbox events, and EWS in Exchange](notification-subscriptions-mailbox-events-and-ews-in-exchange.md)
+- [Exchange の通知サブスクリプション、メールボックス イベント、および EWS](notification-subscriptions-mailbox-events-and-ews-in-exchange.md)
     
-- [EWS を使用して Exchange でメールボックスのイベントに関する通知をプルします。](how-to-pull-notifications-about-mailbox-events-by-using-ews-in-exchange.md)
+- [Exchange の EWS を使用してメールボックス イベントに関する通知を取得する](how-to-pull-notifications-about-mailbox-events-by-using-ews-in-exchange.md)
     
-- [Exchange の購読グループとメールボックス サーバー間のアフィニティを維持します。](how-to-maintain-affinity-between-group-of-subscriptions-and-mailbox-server.md)
+- [サブスクリプション グループと Exchange のメールボックス サーバー間のアフィニティを維持する](how-to-maintain-affinity-between-group-of-subscriptions-and-mailbox-server.md)
     
-- [Exchange における EWS での通知関連エラーの処理](handling-notification-related-errors-in-ews-in-exchange.md)
+- [Exchange の EWS における、通知関連エラーの処理](handling-notification-related-errors-in-ews-in-exchange.md)
     
 - [Exchange のメールボックス同期と EWS](mailbox-synchronization-and-ews-in-exchange.md)
     

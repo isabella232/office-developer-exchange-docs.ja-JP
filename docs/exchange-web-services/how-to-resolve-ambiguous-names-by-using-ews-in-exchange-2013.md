@@ -1,44 +1,44 @@
 ---
-title: Exchange 2013 の EWS を使用してあいまいな名前を解決するには
+title: Exchange 2013 の EWS を使用して、あいまいな名前を解決する
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 1ba21c54-ecd2-4a1e-80d4-0f4171dea84f
-description: Active Directory ドメイン サービス (AD DS) や、ユーザーのメールボックスの連絡先フォルダーから候補を取得することにより、あいまいな名前を解決するのには、EWS のマネージ API または EWS を使用する方法について説明します。
+description: EWS マネージ API または EWS を使用して、Active Directory ドメイン サービス (AD DS) や、ユーザーのメールボックスの連絡先フォルダーから候補を取得し、あいまいな名前を解決する方法について説明します。
 ms.openlocfilehash: 05a88043083a27d2e6d445cd71e5f3919c5a775d
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759047"
 ---
-# <a name="resolve-ambiguous-names-by-using-ews-in-exchange-2013"></a>Exchange 2013 の EWS を使用してあいまいな名前を解決するには
+# <a name="resolve-ambiguous-names-by-using-ews-in-exchange-2013"></a>Exchange 2013 の EWS を使用して、あいまいな名前を解決する
 
-Active Directory ドメイン サービス (AD DS) や、ユーザーのメールボックスの連絡先フォルダーから候補を取得することにより、あいまいな名前を解決するのには、EWS のマネージ API または EWS を使用する方法について説明します。
+EWS マネージ API または EWS を使用して、Active Directory ドメイン サービス (AD DS) や、ユーザーのメールボックスの連絡先フォルダーから候補を取得し、あいまいな名前を解決する方法について説明します。
   
-組織内のユーザーには、トレーニング ・ セッションに参加する従業員の名前と住所の手書きのリストが与えられます。 リストで、ユーザーにいくつか追加の情報を使用して電子メールを送信するが、これらすべてのユーザーの電子メール アドレスを読み取ることができません。 アプリケーションでユーザーにこの問題を解決する場合は、EWS が役立つことがあります。 [ExchangeService.ResolveName](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.exchangeservice.resolvename%28v=exchg.80%29.aspx) EWS のマネージ API のメソッドまたは[ResolveNames](http://msdn.microsoft.com/library/c85207e1-1315-443b-94ec-2b58f405076b%28Office.15%29.aspx) EWS の操作を使用するには、最後の名前の一部などのテキストの選択範囲の潜在的な候補の一覧を返します。 返される項目には、パブリックのユーザーのメールボックス、配布グループ、および取引先担当者を指定できます。 
+組織内のユーザーには、トレーニング セッションに参加した従業員の名前と住所を記した手書きのリストが渡されます。 リストに記載された人物に電子メールで何らかの追加情報を発信したいと思っても、すべてのユーザーの電子メール アドレスを読み取ることはできません。 アプリケーションのユーザーに代わり、この問題を解決したい場合は、EWS が役立つことがあります。 [ExchangeService.ResolveName](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.exchangeservice.resolvename%28v=exchg.80%29.aspx) EWS マネージ API メソッド、または [ResolveNames](http://msdn.microsoft.com/library/c85207e1-1315-443b-94ec-2b58f405076b%28Office.15%29.aspx) EWS 操作を使用して、姓の一部など、テキストの一部に一致する候補のリストを返すことができます。 返されるアイテムは、パブリックのユーザー メールボックス、配布グループ、および連絡先である場合があります。 
   
-Exchange がプレフィックスが付けられたルーティングの種類、smtp など、複数値配列内の sip 電子メール アドレスを保存することに注意してください。 **ResolveName**メソッドと**ResolveNames**操作は、ルーティングの種類を「sip: User1」など、未解決の名前の先頭に追加すると、その配列各値に対して部分的に一致するを実行します。 ルーティングの種類を指定しない場合メソッドまたは操作は既定の smtp プライマリ smtp アドレスのプロパティに一致して、複数値の配列を検索します。 たとえば、User1 を検索して sip のプレフィックスが含まれていない場合を受け取りません sip:User1@Contoso.com その結果、有効なメールボックスがある場合でも。 
+Exchange は、複数値配列内の smtp や sip などのルーティングの種類を先頭につけて、電子メール アドレスを保存しますので、ご注意ください。 未解決の名前の先頭に、「sip:User1」などのルーティングの種類を付け加えた場合、**ResolveName** メソッドや **ResolveNames** 操作は、その配列の各値の部分一致を実施します。 ルーティングの種類を指定しない場合、メソッドまたは操作の既定値は smtp となり、プライマリ smtp アドレス プロパティに一致させ、複数値配列は検索しません。 たとえば、User1 を検索して sip のプレフィックスを含めない場合は、有効なメールボックスであっても、sip:User1@Contoso.com を検索結果として受け取ることはありません。 
   
-あいまいな名前の 1 つは、1 つの要求でのみ指定できます。 解決するのにはあいまいな名前のリストがある場合、ボックスの一覧をループ処理し、メソッドまたは各エントリの操作を呼び出す必要があります。 ユーザーの連絡先フォルダーからの候補者は、追加情報を取得するために[Contact.Bind](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.contact.bind%28v=exchg.80%29.aspx)メソッドの呼び出しまたは[GetItem](http://msdn.microsoft.com/library/769df8eb-9c72-48b5-a49f-82c6b86bc5fc%28Office.15%29.aspx)操作の要求で、使用する非 null のアイテム ID の値があります。 候補者が配布グループの場合は、メンバーの一覧を取得するのには[ExpandGroup(ItemId)](http://msdn.microsoft.com/en-us/library/office/ee356407%28v=exchg.80%29.aspx)の EWS のマネージ API のメソッドまたは[ExpandDL](http://msdn.microsoft.com/library/affe84a5-ad98-4aba-83f4-8732938b763d%28Office.15%29.aspx)の EWS の操作を使用できます。 _ReturnContactDetails_パラメーターまたは EWS の**ReturnFullContactData**属性の true に設定、 **ResolveName**メソッドを使用して Active Directory エントリが返されるか、 **ResolveNames**操作には追加のプロパティは、連絡先を記述するとします。 _ReturnContactDetails_パラメーターまたは**ReturnFullContactData**属性は連絡先で返されるデータには影響されず、グループにお問い合わせください。 
+要求 1 つに対して、あいまいな名前は 1 つしか指定できません。 解決が必要なあいまいな名前の一覧がある場合、一覧をループ処理し、各エントリのメソッドまたは操作を呼び出す必要があります。 ユーザーの連絡先フォルダーにある候補のアイテム ID 値は null 以外となり、その ID 値は [Contact.Bind](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.contact.bind%28v=exchg.80%29.aspx) メソッドの呼び出し、または追加情報を取得するための [GetItem](http://msdn.microsoft.com/library/769df8eb-9c72-48b5-a49f-82c6b86bc5fc%28Office.15%29.aspx) 操作要求に使用できます。 その候補が配布グループの場合、[ExpandGroup(ItemId)](http://msdn.microsoft.com/ja-JP/library/office/ee356407%28v=exchg.80%29.aspx) EWS マネージ API メソッド、または [ExpandDL](http://msdn.microsoft.com/library/affe84a5-ad98-4aba-83f4-8732938b763d%28Office.15%29.aspx) EWS 操作を使用して、メンバーの一覧を取得できます。 _returnContactDetails_ パラメーター、または **ReturnFullContactData** EWS 属性が true に設定されている場合、**ResolveName** メソッドまたは **ResolveNames** 操作が返す Active Directory のエントリには、連絡先を記す追加プロパティが含まれます。 _returnContactDetails_ パラメーター、または **ReturnFullContactData** 属性は、連絡先用および連絡先グループ用に返されるデータに影響をおよぼしません。 
   
 ## <a name="resolve-ambiguous-names-by-using-ews-managed-api"></a>EWS マネージ API を使用して、あいまいな名前を解決する
 <a name="bk_EWSMA"> </a>
 
-[ResolveName](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.exchangeservice.resolvename%28v=exchg.80%29.aspx)メソッドを使用すると、渡されるあいまいな名前に一致する候補を検索します。 **ResolveName**メソッドのオーバー ロードを使用すると、5 つの方法で候補を検索します。 
+[ResolveName](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.exchangeservice.resolvename%28v=exchg.80%29.aspx) メソッドを使用して、渡されるあいまいな名前に一致する候補を検索します。 **ResolveName** メソッドのオーバーロードを使用して、5 通りの方法で候補を検索できます。 
   
-**表 1 です。ResolveName メソッドのオーバー ロードされました。**
+** 表 1. オーバーロードされた ResolveName メソッド**
 
-|**メソッド**|**しくみ**|
+|**メソッド**|**動作のしくみ**|
 |:-----|:-----|
-|[ResolveName(String)](http://msdn.microsoft.com/en-us/library/dd635548%28v=exchg.80%29.aspx) <br/> |ユーザーの連絡先フォルダーにある連絡先、およびグローバル アドレス一覧 (GAL) にある連絡先を、この順番で検索します。その文字列変数は、解決しようとしているあいまいな名前です。  <br/> |
-|[ResolveName (文字列、ResolveNameSearchLocation、ブール値)](http://msdn.microsoft.com/en-us/library/dd634595%28v=exchg.80%29.aspx) <br/> |既定の連絡先フォルダーにある連絡先と、グローバル アドレス一覧 (GAL) にある連絡先の一方または両方を検索します。文字列値はあいまいな名前で、検索場所は連絡先フォルダーとグローバル アドレス一覧の一方または両方を指定し、ブール値は連絡先の全情報を返すかどうかを示します。  <br/> |
-|[ResolveName (文字列、ResolveNameSearchLocation、ブール値、プロパティ設定)](http://msdn.microsoft.com/en-us/library/hh532803%28v=exchg.80%29.aspx) <br/> |既定の連絡先フォルダーにある連絡先と、グローバル アドレス一覧 (GAL) にある連絡先の一方または両方を検索します。このメソッドを使用すると、返されるプロパティを設定できます。  <br/> |
-|[ResolveName (文字列、IEnumerable\<フォルダー Id\>、ResolveNameSearchLocation、ブール値)](http://msdn.microsoft.com/en-us/library/dd636014%28v=exchg.80%29.aspx) <br/> |指定した連絡先フォルダーにある連絡先と、グローバル アドレス一覧 (GAL) にある連絡先の一方または両方を検索します。このメソッドを利用して、検索するフォルダーのコレクションを渡すことができます。これにより、既定の連絡先フォルダー以外の連絡先フォルダーを検索することができます。  <br/> |
-|[ResolveName (文字列、IEnumerable\<フォルダー Id\>、ResolveNameSearchLocation、ブール値、プロパティ設定)](http://msdn.microsoft.com/en-us/library/hh532581%28v=exchg.80%29.aspx) <br/> |グローバル アドレス一覧 (GAL) にある連絡先と、指定した連絡先フォルダーにある連絡先の一方または両方を検索します。このメソッドを使用すると、返されるプロパティを設定できます。  <br/> |
+|[ResolveName(String)](http://msdn.microsoft.com/ja-JP/library/dd635548%28v=exchg.80%29.aspx) <br/> |ユーザーの連絡先フォルダーにある連絡先、およびグローバル アドレス一覧 (GAL) にある連絡先を、この順番で検索します。その文字列変数は、解決しようとしているあいまいな名前です。  <br/> |
+|[ResolveName(String, ResolveNameSearchLocation, Boolean)](http://msdn.microsoft.com/ja-JP/library/dd634595%28v=exchg.80%29.aspx) <br/> |既定の連絡先フォルダーにある連絡先と、グローバル アドレス一覧 (GAL) にある連絡先の一方または両方を検索します。文字列値はあいまいな名前で、検索場所は連絡先フォルダーとグローバル アドレス一覧の一方または両方を指定し、ブール値は連絡先の全情報を返すかどうかを示します。  <br/> |
+|[ResolveName(String, ResolveNameSearchLocation, Boolean, PropertySet)](http://msdn.microsoft.com/ja-JP/library/hh532803%28v=exchg.80%29.aspx) <br/> |既定の連絡先フォルダーにある連絡先と、グローバル アドレス一覧 (GAL) にある連絡先の一方または両方を検索します。このメソッドを使用すると、返されるプロパティを設定できます。  <br/> |
+|[ResolveName(String, IEnumerable\<FolderId\>, ResolveNameSearchLocation, Boolean)](http://msdn.microsoft.com/ja-JP/library/dd636014%28v=exchg.80%29.aspx) <br/> |指定した連絡先フォルダーにある連絡先と、グローバル アドレス一覧 (GAL) にある連絡先の一方または両方を検索します。このメソッドを利用して、検索するフォルダーのコレクションを渡すことができます。これにより、既定の連絡先フォルダー以外の連絡先フォルダーを検索することができます。  <br/> |
+|[ResolveName(String, IEnumerable\<FolderId\>, ResolveNameSearchLocation, Boolean, PropertySet)](http://msdn.microsoft.com/ja-JP/library/hh532581%28v=exchg.80%29.aspx) <br/> |グローバル アドレス一覧 (GAL) にある連絡先と、指定した連絡先フォルダーにある連絡先の一方または両方を検索します。このメソッドを使用すると、返されるプロパティを設定できます。  <br/> |
    
-簡単な例から始めましょう。 次の例では、"dan という"テキスト文字列を解決するには、検出されたそれぞれの応募者の名前と電子メール アドレスを出力する方法を示します。 この例では、 **service** が有効な [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
+簡単な例から始めましょう。 次の例では、「dan」というテキスト文字列を解決して、検索された各候補の名前と電子メール アドレスを出力する方法を示します。 この例では、**service** が有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
   
 ```cs
 // Resolve the ambiguous name "dan".
@@ -53,9 +53,9 @@ Exchange がプレフィックスが付けられたルーティングの種類�
 
 ```
 
-応答は、100 以上の候補があるかもしれませんが、100 の候補の最大を返します。 多くの候補者の最初の 100 個の候補のみが返されたかどうかを確認するのには、 [NameResolutionCollection](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.nameresolutioncollection%28v=exchg.80%29.aspx)オブジェクトの[IncludesAllResolutions](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.nameresolutioncollection.includesallresolutions%28v=exchg.80%29.aspx)の値を確認します。 値が true の場合はこれ以上の候補です。値が false の場合は、メソッドより多くの潜在的な候補者の最初の 100 人だけ返されます。 
+100 を超える候補が存在する場合でも、この応答は最大で 100 候補しか返しません。 より多くの候補から最初の 100 候補だけが返されたのかどうかを判定するには、[NameResolutionCollection](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.nameresolutioncollection%28v=exchg.80%29.aspx) オブジェクトの [IncludesAllResolutions](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.nameresolutioncollection.includesallresolutions%28v=exchg.80%29.aspx) の値を確認してください。 値が true の場合は、これ以上の候補は存在しません。値が false の場合は、このメソッドはより多くの潜在的候補から最初の 100 候補だけを返しました。 
   
-大規模な組織で作業している場合に、"dan"などの名前が 100 の候補の最大数を返すことが可能性があります。 返される候補の数を減らすためには、検索する場所を制限します。 次の例では、あいまいな名前を解決するのには検索するのに場所を指定するのに[ResolveNameSearchLocation](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.resolvenamesearchlocation%28v=exchg.80%29.aspx)列挙体を使用します。 
+大規模な組織で働いている場合は、「dan」などの名前は最大数の 100 候補を返すことがあり得ます。 返す候補数を少なくするには、検索先を絞ってください。 次の例では、[ResolveNameSearchLocation](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.resolvenamesearchlocation%28v=exchg.80%29.aspx) 列挙体を使用して検索先を指定し、あいまいな名前を解決します。 
   
 ```cs
 // Resolve the ambiguous name "dan".
@@ -71,7 +71,7 @@ Exchange がプレフィックスが付けられたルーティングの種類�
 
 ```
 
-既知の連絡先フォルダー以外のフォルダーに連絡先を格納する場合は、候補を検索する場所を指定するオーバー ロードされたメソッドのいずれかを使用します。 **ResolveName**メソッドがフォルダーの ID を基にフォルダー一覧を作成する例を次 **フォルダー Id**が小さすぎると読みやすくするためです。 
+既知の連絡先フォルダー以外のフォルダーに連絡先を格納する場合は、オーバーロードされたメソッドのいずれかを使用して、候補の検索先を指定してください。 次の例では、フォルダー ID に基づいて **ResolveName** メソッド用のフォルダー一覧を作成します。 **FolderId** は、読みやすくするために短縮されています。 
   
 ```cs
 // Create a list to store folders to search.
@@ -90,12 +90,12 @@ NameResolutionCollection resolvedNames = service.ResolveName("dan", folders, Res
 
 ```
 
-フィルターを適用すると、候補が返されない、 [NameResolutionCollection](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.nameresolutioncollection%28v=exchg.80%29.aspx)には 0 個のエントリが含まれます。 コレクションの[Count](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.nameresolutioncollection.count%28v=exchg.80%29.aspx)プロパティを参照して、これを確認することができます。 
+フィルターを適用して候補が返されない場合、[NameResolutionCollection](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.nameresolutioncollection%28v=exchg.80%29.aspx) にはエントリは含まれません。 コレクションの [Count](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.nameresolutioncollection.count%28v=exchg.80%29.aspx) プロパティを参照して、これを確認することができます。 
   
 ## <a name="resolve-ambiguous-names-by-using-ews"></a>EWS を使用して、あいまいな名前を解決します
 <a name="bk_EWSMA"> </a>
 
-[ResolveNames](http://msdn.microsoft.com/library/c85207e1-1315-443b-94ec-2b58f405076b%28Office.15%29.aspx) EWS の操作を使用するにはあいまいな名前の候補を識別します。 [UnresolvedEntry](http://msdn.microsoft.com/library/5ac6116a-3b24-40f8-a877-dbe9a6935919%28Office.15%29.aspx)要素には、解決する場合、あいまいな名前が含まれています。 Sadie の名前を解決するのには次の例を次に示します。 [ResolveName メソッドを使用して](#bk_EWSMA)、it 部門以外は、有効な出力の例については別の名前を使用する場合、EWS のマネージ API を使用している XML の要求にもです。
+[ResolveName](http://msdn.microsoft.com/library/c85207e1-1315-443b-94ec-2b58f405076b%28Office.15%29.aspx) EWS 操作を使用して、あいまいな名前の候補を特定します。 [UnresolvedEntry](http://msdn.microsoft.com/library/5ac6116a-3b24-40f8-a877-dbe9a6935919%28Office.15%29.aspx) 要素は、解決したいあいまいな名前を含んでいます。 次の例は、Sadie という名前を解決する方法を示しています。 これは、有効な出力例に異なる名前を使用する場合以外で、[ResolveName メソッドを使用する](#bk_EWSMA)場合に EWS マネージ API が使用する XML 要求でもあります。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -113,9 +113,9 @@ NameResolutionCollection resolvedNames = service.ResolveName("dan", folders, Res
 </soap:Envelope>
 ```
 
-応答より多くの候補者の最初の 100 個の候補のみが返されたかどうかを決定する、 [IncludesLastItemInRange](http://msdn.microsoft.com/library/e7d6c7d3-548e-48b0-a313-bfef81e4832a%28Office.15%29.aspx)の値を確認する 100 以上の候補があるかもしれませんが、100 の候補の最大を返します[ResolutionSet](http://msdn.microsoft.com/library/43d5b876-0e87-4414-9b1d-bff1c1ec825c%28Office.15%29.aspx)要素の属性です。 値が true の場合はこれ以上の候補です。値が false の場合は、操作より多くの潜在的な候補者の最初の 100 人だけ返されます。 
+100 を超える候補が存在する場合でも、この応答は最大で 100 候補しか返しません。より多くの候補から最初の 100 候補だけが返されたどうかを判定するには、[ResolutionSet](http://msdn.microsoft.com/library/43d5b876-0e87-4414-9b1d-bff1c1ec825c%28Office.15%29.aspx) 要素の [IncludesLastItemInRange](http://msdn.microsoft.com/library/e7d6c7d3-548e-48b0-a313-bfef81e4832a%28Office.15%29.aspx) 属性の値を確認してください。 値が true の場合は、これ以上の候補は存在しません。値が false の場合は、この操作はより多くの潜在的候補から最初の 100 候補だけを返しました。 
   
-次の例は、1 つの候補が見つかった場合、XML 応答を示します。 ただし、 [ResolutionSet](http://msdn.microsoft.com/library/43d5b876-0e87-4414-9b1d-bff1c1ec825c%28Office.15%29.aspx)は、[解像度](http://msdn.microsoft.com/library/573bed4b-d7b1-4baf-b16f-0795cdebf1a7%28Office.15%29.aspx)の要素とその子要素を表す、最大 100 個の候補者を含めることができます。 
+次の例では、1 候補が検出された場合の XML 応答を示しています。 [ResolutionSet](http://msdn.microsoft.com/library/43d5b876-0e87-4414-9b1d-bff1c1ec825c%28Office.15%29.aspx) は最大で 100 候補を含めることができ、各候補は [Resolution](http://msdn.microsoft.com/library/573bed4b-d7b1-4baf-b16f-0795cdebf1a7%28Office.15%29.aspx) 要素とその子要素で表されていることを、覚えておいてください。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -182,6 +182,6 @@ NameResolutionCollection resolvedNames = service.ResolveName("dan", folders, Res
 
 - [Exchange 内の EWS のユーザーと連絡先](people-and-contacts-in-ews-in-exchange.md)
     
-- [Exchange 2013 の EWS を使用して配布グループを展開します。](how-to-expand-distribution-groups-by-using-ews-in-exchange-2013.md)
+- [Exchange 2013 の EWS を使用して配布グループを展開する](how-to-expand-distribution-groups-by-using-ews-in-exchange-2013.md)
     
 

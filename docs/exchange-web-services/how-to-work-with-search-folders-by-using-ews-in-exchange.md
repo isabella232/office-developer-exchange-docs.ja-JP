@@ -1,5 +1,5 @@
 ---
-title: EWS を使用して Exchange で検索フォルダーを使用します。
+title: Exchange で EWS を使用して検索フォルダーを操作する
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,45 +8,42 @@ ms.assetid: abe703c5-6d85-46d9-bf20-230c34782a9f
 description: Exchange で EWS マネージ API または EWS を使用して、検索フォルダーを作成、取得、更新、削除する方法について説明します。
 ms.openlocfilehash: e38ff50fcdb5e42cea3f4b2e25345375f84ae6eb
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759105"
 ---
-# <a name="work-with-search-folders-by-using-ews-in-exchange"></a>EWS を使用して Exchange で検索フォルダーを使用します。
+# <a name="work-with-search-folders-by-using-ews-in-exchange"></a>Exchange で EWS を使用して検索フォルダーを操作する
 
 Exchange で EWS マネージ API または EWS を使用して、検索フォルダーを作成、取得、更新、削除する方法について説明します。
   
-検索フォルダーでは、永続的な「常時使用可能」で検索したユーザー メールボックスを表します。 検索フォルダーは、検索し、通常のメールボックスのフォルダーと同様に動作します。 ただし、アイテムではなく、含まれているフォルダーに設定された検索基準に一致する、検索のスコープ内のすべてのフォルダーからのアイテムのコピーが「仮想」です。 アプリケーションとエンドユーザーの両方には、検索フォルダーを使用できます。 アプリケーションは、同じ検索を繰り返し実行する必要がありますか。 検索フォルダーは、このタスクのための優れたツールです。 または、ユーザーにアクセスし、クライアントの [検索フォルダーを管理できるようにするのには十分な場合も。 どのようなシナリオでは、EWS のマネージ API および EWS を使用するアプリケーションが検索フォルダーを完全に対話します。
+検索フォルダーとは、ユーザーのメールボックスにおける永続的で「常時使用可能」な検索機能のことです。 検索フォルダーは、通常のメールボックスのフォルダーと同様の外観で、同じように動作します。 ただし、アイテムそのものが含まれるのではなく、フォルダーに設定されている検索基準と一致する、検索範囲内にあるすべてのフォルダーのアイテムの「仮想」コピーが入っています。 アプリケーションとエンドユーザーのどちらも検索フォルダーを使用できます。 アプリケーションで、同じ検索を繰り返し実行する必要がありますか。 こうしたタスクに関して、検索フォルダーは優れたツールとなります。 ユーザーに対して、クライアントの検索フォルダーにアクセスして管理する機能だけを付与するということも可能です。 どのようなシナリオであっても、EWS マネージ API と EWS を使用して、アプリケーションが検索フォルダーと十分に対話するようにできます。
   
-**表 1 です。EWS のマネージ API のメソッドおよび EWS の操作を操作するためのフォルダーを検索します。**
+**表 1. 検索フォルダーを処理するための EWS マネージ API メソッドと EWS 操作**
 
-|**目的…**|**EWS のマネージ API で次のコマンドを使用してください.**|**EWS で次のコマンドを使用してください.**|
+|**目的…**|**EWS マネージ API で使用するもの**|**EWS で使用するもの**|
 |:-----|:-----|:-----|
-|検索フォルダーを作成する  <br/> |[SearchFolder.Save](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfolder.save%28v=exchg.80%29.aspx) <br/> |
-  [CreateFolder 操作](http://msdn.microsoft.com/library/6f6c334c-b190-4e55-8f0a-38f2a018d1b3%28Office.15%29.aspx) <br/> |
-|検索フォルダ―を取得する  <br/> |[SearchFolder.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfolder.bind%28v=exchg.80%29.aspx) <br/> |
-  [GetFolder 操作](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) <br/> |
-|検索フォルダーを更新する  <br/> |[SearchFolder.Update](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.update%28v=exchg.80%29.aspx) <br/> |
-  [UpdateFolder 操作](http://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx) <br/> |
-|検索フォルダーを削除する  <br/> |[SearchFolder.Delete](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.delete%28v=exchg.80%29.aspx) <br/> |[DeleteFolder 操作](http://msdn.microsoft.com/library/b0f92682-4895-4bcf-a4a1-e4c2e8403979%28Office.15%29.aspx) <br/> |
+|検索フォルダーを作成する  <br/> |[SearchFolder.Save](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.searchfolder.save%28v=exchg.80%29.aspx) <br/> |[CreateFolder 操作](http://msdn.microsoft.com/library/6f6c334c-b190-4e55-8f0a-38f2a018d1b3%28Office.15%29.aspx) <br/> |
+|検索フォルダ―を取得する  <br/> |[SearchFolder.Bind](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.searchfolder.bind%28v=exchg.80%29.aspx) <br/> |[GetFolder 操作](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) <br/> |
+|検索フォルダーを更新する  <br/> |[SearchFolder.Update](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.update%28v=exchg.80%29.aspx) <br/> |[UpdateFolder 操作](http://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx) <br/> |
+|検索フォルダーを削除する  <br/> |[SearchFolder.Delete](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.delete%28v=exchg.80%29.aspx) <br/> |[DeleteFolder 操作 ](http://msdn.microsoft.com/library/b0f92682-4895-4bcf-a4a1-e4c2e8403979%28Office.15%29.aspx) <br/> |
    
 ## <a name="core-concepts-to-know-for-working-with-search-folders"></a>検索フォルダーを操作するために把握しておくべき主要な概念
 <a name="bk_CoreConcepts"> </a>
 
-検索フォルダーで作業を開始する前に検索フィルターのしくみを理解します。 検索フォルダーは、その条件を高速に検索フィルターを使用します。 その[検索操作の検索フィルター](how-to-use-search-filters-with-ews-in-exchange.md)を作成する方法と同じで、検索フォルダーの検索フィルターが作成されます。 
+検索フォルダーを操作する前に、検索フィルターのしくみについて理解しておきます。 検索フォルダーは、検索フィルターに基づいて条件を表現します。 検索フォルダー用の検索フィルターは、[検索操作用の検索フィルター](how-to-use-search-filters-with-ews-in-exchange.md)と同じように構成します。 
   
 ## <a name="create-a-search-folder-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して検索フォルダーを作成する
 <a name="bk_CreateEWSMA"> </a>
 
-基本的には、EWS のマネージ API を使用して、通常のフォルダーを作成するのと同じ方法で検索フォルダーを作成します。 ただし、[フォルダー クラス](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder%28v=exchg.80%29.aspx)を使用するのではなく[SearchFolder のクラス](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfolder%28v=exchg.80%29.aspx)を使用して検索条件を構成するのには、 [SearchParameters プロパティ](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfolder.searchparameters%28v=exchg.80%29.aspx)を設定します。 
+基本的には、EWS マネージ API を使用して検索フォルダーを作成する方法は、通常のフォルダーを作成する方法と同じです。 ただし、[Folder クラス](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder%28v=exchg.80%29.aspx)を使用するのではなく、[SearchFolder クラス](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.searchfolder%28v=exchg.80%29.aspx)を使用し、[SearchParameters プロパティ](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.searchfolder.searchparameters%28v=exchg.80%29.aspx)を設定して検索条件を構成します。 
   
 次の例では、ユーザーの上司である sadie@contoso.com によって送信された、受信トレイとそのサブフォルダーにあるすべてのメッセージを検索する検索フォルダーを作成します。このフォルダーは、ユーザーのメールボックス内に [検索フォルダー] フォルダーの子として作成されます。
   
 > [!NOTE]
-> ユーザーのメールボックス内の任意のフォルダーの子として検索フォルダーを作成することができます。 ただし、Outlook の検索フォルダーの下に表示するのには新しく作成したフォルダーを設定する場合は、 [WellKnownFolderName 列挙型](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.wellknownfoldername%28v=exchg.80%29.aspx)の**使用**の値を使用して、検索フォルダーのよく知られているフォルダーの下にある作成します。 
+> ユーザーのメールボックス内の任意のフォルダーの子として検索フォルダーを作成できます。 ただし、新しく作成したフォルダーを Outlook の [検索フォルダー] の下に表示する場合は、[検索フォルダー] の既知のフォルダーの下に作成します。そのためには [WellKnownFolderName 列挙体](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.wellknownfoldername%28v=exchg.80%29.aspx)の **SearchFolders** 値を使用します。 
   
-次の使用例では、[資格情報](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservicebase.credentials%28v=exchg.80%29.aspx)と[Url](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.url%28v=exchg.80%29.aspx)のプロパティで有効な値を持つ**ExchangeService**オブジェクトが初期化されたことを前提としています。 
+この例では、**ExchangeService** オブジェクトは [Credentials](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservicebase.credentials%28v=exchg.80%29.aspx) プロパティと [Url](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.url%28v=exchg.80%29.aspx) プロパティの有効な値で初期化されているものとします。 
   
 ```cs
 using Microsoft.Exchange.WebServices.Data;
@@ -74,10 +71,10 @@ static void CreateSearchFolder(ExchangeService service)
 ## <a name="create-a-search-folder-by-using-ews"></a>EWS を使用して検索フォルダーを作成する
 <a name="bk_CreateEWS"> </a>
 
-EWS を使用する場合は、検索フォルダーを作成する[SearchFolder](http://msdn.microsoft.com/library/1a7d408b-2e98-4391-8834-085ed6d5757c%28Office.15%29.aspx)要素を持つ[CreateFolder 操作](http://msdn.microsoft.com/library/6f6c334c-b190-4e55-8f0a-38f2a018d1b3%28Office.15%29.aspx)を使用します。 受信ボックスと、ユーザーのマネージャーから送信されたそのサブフォルダーのすべてのメッセージを検索する検索フォルダーを作成する例では、次の要求、sadie@contoso.com。 フォルダーは、ユーザーのメールボックスの [検索フォルダー] フォルダーに作成されます。 
+EWS を使用する場合、[CreateFolder 操作](http://msdn.microsoft.com/library/6f6c334c-b190-4e55-8f0a-38f2a018d1b3%28Office.15%29.aspx) に [SearchFolder](http://msdn.microsoft.com/library/1a7d408b-2e98-4391-8834-085ed6d5757c%28Office.15%29.aspx) 要素を設定して、検索フォルダーを作成します。 次の要求例では、ユーザーの上司である sadie@contoso.com によって送信された、受信トレイとそのサブフォルダーにあるすべてのメッセージを検索するための検索フォルダーを作成します。 このフォルダーは、ユーザーのメールボックス内の [検索フォルダー] フォルダーに作成されます。 
   
 > [!NOTE]
-> ユーザーのメールボックス内の任意のフォルダーの子として検索フォルダーを作成することができます。 ただし、Outlook の検索フォルダーの下に表示するのには新しく作成したフォルダーを設定する場合は、 [DistinguishedFolderId](http://msdn.microsoft.com/library/50018162-2941-4227-8a5b-d6b4686bb32f%28Office.15%29.aspx)要素の**Id**属性で**使用して**値を使用して、検索フォルダーのよく知られているフォルダーの下で作成します。 
+> ユーザーのメールボックス内の任意のフォルダーの子として検索フォルダーを作成できます。 ただし、新しく作成したフォルダーを Outlook の [検索フォルダー] の下に表示する場合には、[検索フォルダー] の既知のフォルダーの下に作成します。そのためには [DistinguishedFolderId](http://msdn.microsoft.com/library/50018162-2941-4227-8a5b-d6b4686bb32f%28Office.15%29.aspx) 要素の **Id** 属性に **searchfolders** 値を使用します。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -119,12 +116,12 @@ EWS を使用する場合は、検索フォルダーを作成する[SearchFolder
 </soap:Envelope>
 ```
 
-サーバーは、 [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **NoError**成功を示す値を含む[CreateFolderResponse](http://msdn.microsoft.com/library/158adecc-491a-47d9-af73-acc2cd3f8566%28Office.15%29.aspx)メッセージで応答します。
+サーバーは、[CreateFolderResponse](http://msdn.microsoft.com/library/158adecc-491a-47d9-af73-acc2cd3f8566%28Office.15%29.aspx) メッセージで応答します。このメッセージには、成功したことを示す、**NoError** の [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 値が含まれています。
   
 ## <a name="get-a-search-folder-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して検索フォルダーを取得する
 <a name="bk_RetrieveEWSMA"> </a>
 
-[ExchangeService.FindFolders](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.findfolders%28v=exchg.80%29.aspx) EWS のマネージ API のメソッドを使用すると、検索フォルダーを検索できます。 ただし、のみ検索フォルダーを含むように、結果を制限することはできません。留意する結果を処理するとします。 検索フォルダーを取得するのにには、 [SearchFolder.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfolder.bind%28v=exchg.80%29.aspx)メソッドを使用します。 
+[ExchangeService.FindFolders](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.findfolders%28v=exchg.80%29.aspx) EWS マネージ API メソッドを使用して、検索フォルダーを検索します。 ただし、結果に検索フォルダーだけを含めることはできません。結果を処理するときにこの点を覚えておくことができます。 [SearchFolder.Bind](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.searchfolder.bind%28v=exchg.80%29.aspx) メソッドを使用して、検索フォルダーを取得します。 
   
 次の例では、[検索フォルダー] フォルダーの最初の 10 フォルダーを検索します。それぞれが検索フォルダーかどうかを判別し、検索フォルダーであれば取得して、検索対象のフォルダー数を表示します。
   
@@ -167,7 +164,7 @@ static void GetSearchFolders(ExchangeService service)
 ## <a name="get-a-search-folder-by-using-ews"></a>EWS を使用して検索フォルダーを取得する
 <a name="bk_RetrieveEWS"> </a>
 
-EWS を使用する場合は、 [FindFolder 操作](http://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx)を使用し、検索フォルダー、および検索フォルダーを取得するための[GetFolder の操作](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx)を検索できます。 [SearchFolder](http://msdn.microsoft.com/library/1a7d408b-2e98-4391-8834-085ed6d5757c%28Office.15%29.aspx)の要素は、検索フォルダーの検索に成功した**GetFolder**応答が含まれます。 要求の例を次は、検索フォルダー] フォルダー内の最初の 10 個のフォルダーを検索します。 
+EWS を使用する場合、[FindFolder 操作](http://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx)を使用して検索フォルダーを検索し、[GetFolder 操作](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx)で検索フォルダーを取得します。 検索フォルダーの正常な **GetFolder** 応答には、[SearchFolder](http://msdn.microsoft.com/library/1a7d408b-2e98-4391-8834-085ed6d5757c%28Office.15%29.aspx) 要素が含まれます。 次の要求例は、[検索フォルダー] フォルダーの最初の 10 フォルダーを検索します。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -231,7 +228,7 @@ EWS を使用する場合は、 [FindFolder 操作](http://msdn.microsoft.com/li
 </s:Envelope>
 ```
 
-要求の次の使用例は、 **GetFolder**の操作要求の検索フォルダーを取得するのに前の応答からの[フォルダー Id](http://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx)要素の値を使用します。 
+次の要求例では、検索フォルダーを取得する **GetFolder** 操作要求の先ほどの応答に含まれている [FolderId](http://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx) 要素の値を使用します。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -319,7 +316,7 @@ EWS を使用する場合は、 [FindFolder 操作](http://msdn.microsoft.com/li
 ## <a name="update-a-search-folder-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して検索フォルダーを更新する
 <a name="bk_UpdateEWSMA"> </a>
 
-**SearchFolder**オブジェクトの検索フォルダーを更新するのに[Folder.Update](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.update%28v=exchg.80%29.aspx)の EWS のマネージ API のメソッドを使用します。 表示名からマネージャー」の検索フォルダーの検索条件を更新する例を次にします。 
+[Folder.Update](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.update%28v=exchg.80%29.aspx) EWS マネージ API メソッドを **SearchFolder** オブジェクトに対して使用し、検索フォルダーを更新します。 次の例は、「From Manager」という表示名の検索フォルダーの検索条件を更新します。 
   
 ```cs
 using Microsoft.Exchange.WebServices.Data;
@@ -359,7 +356,7 @@ static void UpdateSearchFolder(ExchangeService service)
 ## <a name="update-a-search-folder-by-using-ews"></a>EWS を使用して検索フォルダーを更新する
 <a name="bk_UpdateEWS"> </a>
 
-EWS を使用する場合は、検索フォルダーを更新する[SearchFolder](http://msdn.microsoft.com/library/1a7d408b-2e98-4391-8834-085ed6d5757c%28Office.15%29.aspx)要素を持つ[UpdateFolder 操作](http://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx)を使用します。 要求の次の使用例は、「マネージャーから [検索フォルダーの検索条件を更新します。 
+EWS を使用する場合、[UpdateFolder 操作](http://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx)に [SearchFolder](http://msdn.microsoft.com/library/1a7d408b-2e98-4391-8834-085ed6d5757c%28Office.15%29.aspx) 要素を設定して、検索フォルダーを更新します。 次の要求例は、「From Manager」という検索フォルダーの検索条件を更新します。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -405,12 +402,12 @@ EWS を使用する場合は、検索フォルダーを更新する[SearchFolder
 </soap:Envelope>
 ```
 
-サーバーは、 [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **NoError**成功を示す値を含む、 [UpdateFolderResponse](http://msdn.microsoft.com/library/31f47739-dc9c-46ba-9e3f-cce25dc85e6e%28Office.15%29.aspx)メッセージで応答します。
+サーバーは、[UpdateFolderResponse](http://msdn.microsoft.com/library/31f47739-dc9c-46ba-9e3f-cce25dc85e6e%28Office.15%29.aspx) メッセージで応答します。このメッセージには、成功したことを示す、**NoError** の [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 値が含まれています。
   
 ## <a name="delete-a-search-folder-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して検索フォルダーを削除する
 <a name="bk_DeleteEWSMA"> </a>
 
-**SearchFolder**オブジェクトの検索フォルダーを削除するのには[Folder.Delete](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.delete%28v=exchg.80%29.aspx) EWS のマネージ API のメソッドを使用します。 次の例では、表示名からマネージャー」の検索フォルダーを削除します。 削除された検索フォルダーは、削除済みアイテム フォルダーに移動されます。 
+[Folder.Delete](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.delete%28v=exchg.80%29.aspx) EWS マネージ API メソッドを **SearchFolder** オブジェクトに対して使用し、検索フォルダーを削除します。 次の例は、「From Manager」という表示名の検索フォルダーを削除します。 削除されたフォルダーは、[削除済みアイテム] フォルダーに移動します。 
   
 ```cs
 using Microsoft.Exchange.WebServices.Data;
@@ -443,7 +440,7 @@ static void DeleteSearchFolder(ExchangeService service)
 ## <a name="delete-a-search-folder-by-using-ews"></a>EWS を使用して検索フォルダーを削除する
 <a name="bk_DeleteEWS"> </a>
 
-EWS を使用する場合は、検索フォルダーを削除するのには、 [DeleteFolder 操作](http://msdn.microsoft.com/library/b0f92682-4895-4bcf-a4a1-e4c2e8403979%28Office.15%29.aspx)を使用します。 次の例では、検索フォルダーを削除し、削除済みアイテム フォルダーに移動します。 
+EWS を使用する場合、[DeleteFolder 操作](http://msdn.microsoft.com/library/b0f92682-4895-4bcf-a4a1-e4c2e8403979%28Office.15%29.aspx)を使用して、検索フォルダーを削除します。 次の例は、検索フォルダーを削除し、[削除済みアイテム] フォルダーに移動します。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -467,29 +464,25 @@ EWS を使用する場合は、検索フォルダーを削除するのには、 
 </soap:Envelope>
 ```
 
-サーバーは、 [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **NoError**成功を示す値を含む[DeleteFolderResponse](http://msdn.microsoft.com/library/27578bda-ef0a-4a33-bccc-2c1bc1735424%28Office.15%29.aspx)メッセージで応答します。
+サーバーは、[DeleteFolderResponse](http://msdn.microsoft.com/library/27578bda-ef0a-4a33-bccc-2c1bc1735424%28Office.15%29.aspx) メッセージで応答します。このメッセージには、成功したことを示す、**NoError** の [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 値が含まれています。
   
 ## <a name="see-also"></a>関連項目
 
 
 - [Exchange の検索と EWS](search-and-ews-in-exchange.md)
     
-- [EWS を使って Exchange 検索フィルターを使用します。](how-to-use-search-filters-with-ews-in-exchange.md)
+- [Exchange で EWS とともに検索フィルターを使用する](how-to-use-search-filters-with-ews-in-exchange.md)
     
-- [SearchFolder クラス](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfolder%28v=exchg.80%29.aspx)
+- [SearchFolder クラス](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.searchfolder%28v=exchg.80%29.aspx)
     
-- 
-  [CreateFolder 操作](http://msdn.microsoft.com/library/6f6c334c-b190-4e55-8f0a-38f2a018d1b3%28Office.15%29.aspx)
+- [CreateFolder 操作](http://msdn.microsoft.com/library/6f6c334c-b190-4e55-8f0a-38f2a018d1b3%28Office.15%29.aspx)
     
-- 
-  [FindFolder 操作](http://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx)
+- [FindFolder 操作](http://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx)
     
-- 
-  [GetFolder 操作](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx)
+- [GetFolder 操作](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx)
     
-- 
-  [UpdateFolder 操作](http://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx)
+- [UpdateFolder 操作](http://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx)
     
-- [DeleteFolder 操作](http://msdn.microsoft.com/library/b0f92682-4895-4bcf-a4a1-e4c2e8403979%28Office.15%29.aspx)
+- [DeleteFolder 操作 ](http://msdn.microsoft.com/library/b0f92682-4895-4bcf-a4a1-e4c2e8403979%28Office.15%29.aspx)
     
 

@@ -1,5 +1,5 @@
 ---
-title: Exchange 2013 の EWS を使用して配布グループを展開します。
+title: Exchange 2013 の EWS を使用して配布グループを展開する
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,31 +8,31 @@ ms.assetid: 25ee84e7-63bc-4f51-9b7d-e7f46fd574d5
 description: Exchange で EWS マネージ API または EWS を使用して配布グループを展開する方法について説明します。
 ms.openlocfilehash: 0f9186fb71b3005c71a70e89aafb674ae15e4814
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758942"
 ---
-# <a name="expand-distribution-groups-by-using-ews-in-exchange-2013"></a>Exchange 2013 の EWS を使用して配布グループを展開します。
+# <a name="expand-distribution-groups-by-using-ews-in-exchange-2013"></a>Exchange 2013 の EWS を使用して配布グループを展開する
 
 Exchange で EWS マネージ API または EWS を使用して配布グループを展開する方法について説明します。
   
-[ExchangeService.ExpandGroup](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.exchangeservice.expandgroup%28v=exchg.80%29.aspx) EWS のマネージ API のメソッドまたは[ExpandDL](http://msdn.microsoft.com/library/1f7837e7-9eff-4e10-9577-c40f7ed6af94%28Office.15%29.aspx)の EWS の操作を使用するには、すべての受信者を識別するのに配布グループを展開します。 
+[ExchangeService.ExpandGroup](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.exchangeservice.expandgroup%28v=exchg.80%29.aspx) EWS マネージ API メソッドまたは [ExpandDL](http://msdn.microsoft.com/library/1f7837e7-9eff-4e10-9577-c40f7ed6af94%28Office.15%29.aspx) EWS 操作を使用して、配布グループを展開し、すべての受信者を識別できます。 
   
-[ExpandGroup](http://msdn.microsoft.com/en-us/library/office/ee344007%28v=exchg.80%29.aspx)メソッドをオーバー ロードするためは、いくつかの方法で呼び出すことができます。 
+[ExpandGroup](http://msdn.microsoft.com/ja-JP/library/office/ee344007%28v=exchg.80%29.aspx) メソッドはオーバーロードされているため、いくつかの方法で呼び出すことができます。 
   
-- [ExpandGroup(String)](http://msdn.microsoft.com/en-us/library/office/ee343988%28v=exchg.80%29.aspx)では、SMTP アドレスによって識別されるグループを展開します。 
+- [ExpandGroup(String)](http://msdn.microsoft.com/ja-JP/library/office/ee343988%28v=exchg.80%29.aspx): SMTP アドレスによって識別されるグループを展開します。 
     
-- [ExpandGroup(EmailAddress)](http://msdn.microsoft.com/en-us/library/office/ee344007%28v=exchg.80%29.aspx) - は、電子メール アドレスで識別されるグループを展開します。 
+- [ExpandGroup(EmailAddress)](http://msdn.microsoft.com/ja-JP/library/office/ee344007%28v=exchg.80%29.aspx): メール アドレスによって識別されるグループを展開します。 
     
-- [ExpandGroup(ItemId)](http://msdn.microsoft.com/en-us/library/office/ee356407%28v=exchg.80%29.aspx) ・ グループ ID で識別されるグループを展開します。 
+- [ExpandGroup(ItemId)](http://msdn.microsoft.com/ja-JP/library/office/ee356407%28v=exchg.80%29.aspx): グループ ID によって識別されるグループを展開します。 
     
-- [ExpanGroup (文字列、文字列)](http://msdn.microsoft.com/en-us/library/office/ee356468%28v=exchg.80%29.aspx)では、SMTP アドレスとそのアドレスのルーティングの種類によって識別されるグループを展開します。 
+- [ExpanGroup(String, String)](http://msdn.microsoft.com/ja-JP/library/office/ee356468%28v=exchg.80%29.aspx): SMTP アドレスと、そのアドレスのルーティングの種類によって識別されるグループを展開します。 
     
 ## <a name="expand-a-universal-distribution-group-or-security-group-by-using-ews-managed-api"></a>EWS マネージ API を使用してユニバーサル配布グループまたはセキュリティ グループを展開する
 <a name="bk_ExpandDGEWSMA"> </a>
 
-次の例では、最も簡単な方法には、電子メール アドレスを使用して、ユニバーサル配布グループまたはセキュリティ グループを展開する方法を示します。 この例では、 **service** が有効な [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
+次の例では、メール アドレスを使ってユニバーサル配布グループまたはセキュリティ グループを展開する方法を示します。これは最も簡単なアプローチです。 この例では、**service** が有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
   
 ```cs
 // Return the expanded group.
@@ -82,7 +82,7 @@ ExpandDistributionLists(service, "employees@contoso.com");
 ## <a name="expand-a-contact-group-by-using-ews-managed-api"></a>EWS マネージ API を使用して連絡先グループを展開する
 <a name="bk_ExpandDGEWSMA"> </a>
 
-連絡先グループに関連付けられた電子メール アドレスがないために、 [ExpandGroup(ItemId)](http://msdn.microsoft.com/en-us/library/office/ee356407%28v=exchg.80%29.aspx)メソッドを使用して、アイテムの Id に基づくグループを展開する必要があります。 前の例のように、関数を作成し、[アイテム Id](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.itemid%28v=exchg.80%29.aspx)を文字列から 2 番目のパラメーターの型を変更できます。
+連絡先グループには関連付けられているメール アドレスがないため、[ExpandGroup(ItemId)](http://msdn.microsoft.com/ja-JP/library/office/ee356407%28v=exchg.80%29.aspx) メソッドを使用して、ItemId に基づいてグループを展開する必要があります。 前の例のように関数を作成し、2 番目のパラメーターの型を文字列から [ItemId](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.itemid%28v=exchg.80%29.aspx) に変更できます。
   
 ```cs
 private static void ExpandContactGroup(ExchangeService service, ItemId groupID)
@@ -104,7 +104,7 @@ private static void ExpandContactGroup(ExchangeService service, ItemId groupID)
 }
 ```
 
-これで、Exchange サービスのオブジェクトと連絡先のグループの**アイテム Id**を使用してこの関数を呼び出すことができます。 例では**アイテム Id**が読みやすさに省略されていることを注意してください。 
+これで、Exchange サービスのオブジェクトと連絡先グループの **ItemId** を使用してこの関数を呼び出すことができます。 この例の **ItemId** は、読みやすさのために短くしてあることに注意してください。 
   
 ```cs
 ExpandContactGroup(service, new ItemId("AAMkADBlY…");
@@ -114,7 +114,7 @@ ExpandContactGroup(service, new ItemId("AAMkADBlY…");
 ## <a name="expand-a-universal-distribution-group-or-security-group-by-using-ews"></a>EWS を使用して、ユニバーサル配布グループまたはセキュリティ グループを展開する
 <a name="bk_ExpandDGEWSMA"> </a>
 
-[ExpandDL](http://msdn.microsoft.com/library/1f7837e7-9eff-4e10-9577-c40f7ed6af94%28Office.15%29.aspx)操作を使用する場合、サーバーへのクライアントから送信された XML 要求メッセージの例を次に示します。 EWS のマネージ API は、[ユニバーサル配布グループを展開](#bk_ExpandDGEWSMA)する EWS のマネージ API を使用する場合を送信する XML 要求にもです。 
+次の例では、[ExpandDL](http://msdn.microsoft.com/library/1f7837e7-9eff-4e10-9577-c40f7ed6af94%28Office.15%29.aspx) 操作を使用するときにクライアントからサーバーに送信される XML 要求メッセージを示します。 これは、EWS マネージ API を使用して[ユニバーサル配布グループを展開する](#bk_ExpandDGEWSMA)場合に、EWS マネージ API が送信する XML 要求でもあります。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -181,7 +181,7 @@ EWS マネージ API を使用する場合とは異なり、EWS を使用して�
 ## <a name="expand-a-contact-group-by-using-ews"></a>EWS を使用して連絡先グループを展開する
 <a name="bk_ExpandDGEWSMA"> </a>
 
-連絡先グループを展開するのには XML の要求は、配布グループを展開するための要求に似ています。 メール ・ アドレスの代わりに、連絡先のグループの[アイテム Id](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx)を使用します。 この例では**アイテム Id**は、読みやすくするために短縮されます。 
+連絡先グループを展開するための XML 要求は、配布グループを展開するための要求に似ています。 メール アドレスの代わりに、連絡先グループの [ItemId](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) を使用します。 この例の **ItemId** は、読みやすさのために短くしてあります。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -205,6 +205,6 @@ EWS マネージ API を使用する場合とは異なり、EWS を使用して�
 
 - [Exchange の配布グループと EWS](distribution-groups-and-ews-in-exchange.md)
     
-- [Exchange EWS を使用して連絡先グループを作成します。](how-to-create-contact-groups-by-using-ews-in-exchange.md)
+- [Exchange で EWS を使用して連絡先グループを作成する](how-to-create-contact-groups-by-using-ews-in-exchange.md)
     
 

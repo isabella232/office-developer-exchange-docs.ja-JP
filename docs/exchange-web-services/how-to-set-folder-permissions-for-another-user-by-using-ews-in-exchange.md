@@ -1,5 +1,5 @@
 ---
-title: Exchange EWS を使用して別のユーザーのフォルダーのアクセス許可を設定します。
+title: Exchange で EWS を使用して別のユーザーのフォルダーのアクセス許可を設定する
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
@@ -8,35 +8,35 @@ ms.assetid: 7eb81676-a780-4c56-b4f2-c4ed2697107d
 description: Exchange で EWS マネージ API または EWS を使用して、フォルダーのアクセス許可レベルを設定する方法について説明します。
 ms.openlocfilehash: 5bf570612d6349628e7f3abf858daa33daa13745
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759062"
 ---
-# <a name="set-folder-permissions-for-another-user-by-using-ews-in-exchange"></a>Exchange EWS を使用して別のユーザーのフォルダーのアクセス許可を設定します。
+# <a name="set-folder-permissions-for-another-user-by-using-ews-in-exchange"></a>Exchange で EWS を使用して別のユーザーのフォルダーのアクセス許可を設定する
 
 Exchange で EWS マネージ API または EWS を使用して、フォルダーのアクセス許可レベルを設定する方法について説明します。
   
 フォルダー レベルのアクセス許可によって、ユーザーは、他のユーザーのメールボックスの 1 つ以上のフォルダーにアクセス可能になります。フォルダーのアクセス許可は代理人アクセスに似ていますが、次のような相違点があります。  
   
-- フォルダーのアクセス許可は、ユーザーに「代理送信」または「送信者」別のユーザーを有効にできません。 これらには、フォルダーへのアクセスのみ有効にします。 ユーザーはこれらのフォルダーにアイテムを作成することができますが、それらを送信することはできません。
+- フォルダーのアクセス許可では、ユーザーに "代理人として送信" させたり、別のユーザーとして "差出人を指定して送信" したりすることはできません。 ユーザーは、フォルダーにのみアクセスできます。 ユーザーは、フォルダーのアイテムを作成できますが、それらを送信することはできません。
     
 - メールボックスの任意のフォルダーで、フォルダーのアクセス許可を設定できますが、代理人を追加できるのは、予定表、連絡先、受信トレイ、履歴、メモ、タスクのフォルダーのみです。
     
-- いくつかの[特定のフォルダーに対するアクセス許可](#bk_folderperms)を設定することができます。 代理人を追加するときは、 [5 つのアクセス許可レベル](delegate-access-and-ews-in-exchange.md#bk_delegateperms)のみのいずれかを割り当てることができます。
+- [特定のフォルダーのアクセス許可](#bk_folderperms)の数を設定できます。 代理人を追加する場合、[5 つのアクセス許可レベル](delegate-access-and-ews-in-exchange.md#bk_delegateperms)の内 1 つのみを割り当てることができます。
     
-- 匿名ユーザーと既定のユーザーに対して、フォルダーのアクセス許可を設定できます。メールが有効なアカウントだけに代理人アクセスを許可できます。
+- 匿名ユーザーおよび既定ユーザーのフォルダーのアクセス許可を設定できます。メールが有効なアカウントにだけ代理人アクセスを付与できます。
     
 アクセス制御エントリ (ACE) と随意アクセス制御リスト (DACL) に精通していれば、ユーザーが各フォルダーのアクセス許可のセットを 1 つだけ持てることをご存じでしょう。ユーザーにアクセス許可のセットを追加しようとすると、そのユーザーがアクセス許可のセットを既に持っている場合、エラーが返されます。フォルダーのアクセス許可を追加、削除、更新する場合、現在の DACL を取得し、任意の ACE を追加するか削除し、更新した DACL を送信します。同じユーザーに対して複数の ACE を追加することはできません。EWS マネージ API を使用してアクセス許可を更新する場合、ユーザーの現在の ACE を削除し、新しい ACE をコレクションに追加する必要があります。EWS を使用している場合は、以前の ACE のセットを新しいセットに置き換えるだけです。
   
 1 つのフォルダーで複数のアクセス許可を変更する場合は、追加、削除、更新をバッチ処理することができます。複数のフォルダーでユーザーの更新をするときには、バッチ処理はできないことに注意してください。1 つのフォルダーのアクセス許可を取得するために、1 回の呼び出しが必要です。そのフォルダーに対するアクセス許可を更新するには、2 番目の呼び出しが必要です。ユーザーのアクセス許可を追加、削除、更新する場合、各タスクで、同じ 2 つのメソッド呼び出しまたは操作を使用します。
   
-**表 1 です。EWS のマネージ API のメソッドおよびフォルダーのアクセス許可を設定するための EWS の操作**
+**表 1. フォルダー アクセス許可を設定する EWS マネージ API メソッドと EWS 操作**
 
-|目的…|使用する EWS マネージ API メソッド|使用する EWS 操作…|
+|目的|使用する EWS マネージ API メソッド…|使用する EWS 操作…|
 |:-----|:-----|:-----|
-|フォルダーのアクセス許可の有効化、削除、更新  <br/> |[Folder.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) [Folder.Update](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage.reply%28v=exchg.80%29.aspx)の後に <br/> |[GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) [UpdateFolder](http://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx)の後に <br/> |
-|フォルダーの作成、フォルダーのアクセス許可の定義  <br/> |[Folder.Save](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.save%28v=exchg.80%29.aspx) <br/> |[CreateFolder](http://msdn.microsoft.com/library/6f6c334c-b190-4e55-8f0a-38f2a018d1b3%28Office.15%29.aspx) <br/> |
+|フォルダーのアクセス許可の有効化、削除、更新  <br/> |[Folder.Bind](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) の後に [Folder.Update](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.emailmessage.reply%28v=exchg.80%29.aspx) <br/> |[GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) の後に [UpdateFolder](http://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx) <br/> |
+|フォルダーの作成、フォルダーのアクセス許可の定義  <br/> |[Folder.Save](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.save%28v=exchg.80%29.aspx) <br/> |[CreateFolder](http://msdn.microsoft.com/library/6f6c334c-b190-4e55-8f0a-38f2a018d1b3%28Office.15%29.aspx) <br/> |
    
 ## <a name="folder-permissions"></a>フォルダーのアクセス許可
 <a name="bk_folderperms"> </a>
@@ -54,7 +54,7 @@ Exchange で EWS マネージ API または EWS を使用して、フォルダ�
 - アイテムの削除    
 - アイテムの参照
     
-さらに、次のアクセス許可レベルは、個々 のアクセス許可と、値のサブセットを定義する表 2 に示すように。
+さらに、次のアクセス許可レベルを使用できます。それは、表 2 に示すように個別アクセス許可と値のサブセットを定義します。
   
 - なし    
 - Owner (所有者)    
@@ -64,16 +64,16 @@ Exchange で EWS マネージ API または EWS を使用して、フォルダ�
 - Author (著者)    
 - NoneditingAuthor (非編集著者)    
 - Reviewer (校閲者)    
-- Contributor (投稿者)   
-- カスタム ・ アプリケーションでは、この値を設定することはできません。 サーバーは、アプリケーションには、個々 のアクセス許可のユーザー設定のコレクションが含まれている場合にこの値を設定します。    
-- FreeBusyTimeOnly - これのみ設定できます予定表フォルダーにします。   
-- FreeBusyTimeAndSubjectAndLocation - これのみ設定できます予定表フォルダーにします。
+- 共同作成者   
+- Custom: この値は、アプリケーションでは設定できません。 個別アクセス許可のカスタム コレクションがアプリケーションに含まれている場合、サーバーはこの値を設定します。    
+- FreeBusyTimeOnly: これは予定表フォルダーにのみ設定できます。   
+- FreeBusyTimeAndSubjectAndLocation: これは予定表フォルダーにのみ設定できます。
     
 次の表は、アクセス許可レベルに基づき、既定で適用される個別アクセス許可を示しています。
   
-**表 2 になります。アクセス許可レベルでの個々 のアクセス許可**
+**表 2.アクセス許可レベルによる個別アクセス許可**
 
-|アクセス許可レベル|アイテム作成可能|サブ フォルダー作成可能|フォルダーの所有者になる|フォルダーを表示可能|連絡先フォルダーにする|アイテムの編集|アイテムの削除|アイテムの参照可能|
+|権限レベル|アイテム作成可能|サブ フォルダー作成可能|フォルダーの所有者になる|フォルダーを表示可能|連絡先フォルダーにする|アイテムの編集|アイテムの削除|アイテムの参照可能|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 |None (なし)  <br/> |False  <br/> |False  <br/> |False  <br/> |False  <br/> |False  <br/> |なし  <br/> |なし  <br/> |なし  <br/> |
 |Owner  <br/> |True  <br/> |True  <br/> |True  <br/> |True  <br/> |True  <br/> |すべて  <br/> |すべて  <br/> |FullDetails  <br/> |
@@ -85,22 +85,22 @@ Exchange で EWS マネージ API または EWS を使用して、フォルダ�
 |Reviewer (校閲者)  <br/> |False  <br/> |False  <br/> |False  <br/> |True  <br/> |False  <br/> |なし  <br/> |None (なし)  <br/> |FullDetails  <br/> |
 |Contributor (投稿者)  <br/> |True  <br/> |False  <br/> |False  <br/> |True  <br/> |False  <br/> |なし  <br/> |なし  <br/> |なし  <br/> |
    
-フォルダー レベルのアクセス許可の要求で非カスタムのアクセス許可レベルを指定する場合は個別のアクセス許可の設定を指定する必要はありません。 アクセス許可レベルを設定するときは、個別のアクセス許可を指定して場合、 **ErrorInvalidPermissionSettings**エラーに表示されます、応答します。 
+フォルダー レベルのアクセス許可の要求でカスタム以外のアクセス許可レベルを指定する場合、個別アクセス許可の設定を指定する必要はありません。 アクセス許可レベルを設定する場合、個別アクセス許可を指定すると、応答で **ErrorInvalidPermissionSettings** エラーが返されます。 
   
 ## <a name="adding-folder-permissions-by-using-the-ews-managed-api"></a>EWS マネージ API を使用してフォルダーのアクセス許可を追加する
 <a name="bk_enableewsma"> </a>
 
-次のコード例は、以下の目的で EWS マネージ API を使用する方法を示しています。  
+次のコード例は、以下の目的で EWS マネージ API を使用する方法を示しています。 
   
-- 新しいユーザー用の新しい[FolderPermission](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folderpermission%28v=exchg.80%29.aspx)オブジェクトを作成します。 
+- 新規ユーザーに対して [FolderPermission](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folderpermission%28v=exchg.80%29.aspx) オブジェクトを新規作成する。 
     
-- [Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx)メソッドを使用してフォルダーの現在のアクセス許可を取得します。 
+- [Bind](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) メソッドを使用して、フォルダーに対する現在のアクセス許可を取得する。 
     
-- [Folder.Permissions](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.permissions%28v=exchg.80%29.aspx)プロパティには、新しい**FolderPermissions**を追加します。 
+- 新しい **FolderPermissions** を [Folder.Permissions](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.permissions%28v=exchg.80%29.aspx) プロパティに追加する。 
     
-- 新しいアクセス許可をサーバーに保存するのには[Update](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.update%28v=exchg.80%29.aspx)メソッドを呼び出します。 
+- [Update](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.update%28v=exchg.80%29.aspx) メソッドを呼び出して、サーバーに新規アクセス許可を保存する。 
     
-この例では**サービス**をそのメールボックス所有者の有効な[ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)オブジェクトは、ユーザーが Exchange サーバーに認証されているとします。 
+この例では、**service** はメールボックス所有者の有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーは Exchange サーバーに既に認証されていると想定しています。 
   
 ```cs
 static void EnableFolderPermissions(ExchangeService service)
@@ -137,16 +137,16 @@ fldperm.CanCreateSubFolders = true;
 …
 ```
 
-カスタム アクセス許可レベルを持つ**FolderPermission**オブジェクトを作成するときは、書き込み可能な[FolderPermission のプロパティ](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folderpermission_properties%28v=exchg.80%29.aspx)の一部またはすべてを設定できます。 ただし、 [FolderPermissionLevel](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folderpermissionlevel%28v=exchg.80%29.aspx)が明示的に設定される**カスタム**アプリケーションでします。 **FolderPermissionLevel**は、 **FolderPermission**オブジェクトを作成し、個々 のアクセス許可を設定する場合にのみカスタムに設定されています。 
+**FolderPermission** オブジェクトをカスタム アクセス許可レベルで作成する場合、書き込み可能な [FolderPermission プロパティ](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folderpermission_properties%28v=exchg.80%29.aspx)の一部またはすべてを設定できます。 ただし、アプリケーションが [FolderPermissionLevel](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folderpermissionlevel%28v=exchg.80%29.aspx) を明示的に **Custom** に設定することは決してないことにご注意ください。 **FolderPermission** オブジェクトを作成し、個別アクセス許可を設定する場合のみ、**FolderPermissionLevel** は Custom に設定されます。 
   
 ## <a name="adding-folder-permissions-by-using-ews"></a>EWS を使用してフォルダーのアクセス許可を追加する
 <a name="bk_enableews"> </a>
 
 次の EWS のコード例では、現在のアクセス許可を取得し、新しいアクセス許可の一覧を送信することによって、特定のフォルダーにアクセス許可を追加する方法を示しています。
   
-最初のステップでは、 [DistinguishedFolderId](http://msdn.microsoft.com/library/50018162-2941-4227-8a5b-d6b4686bb32f%28Office.15%29.aspx)の値 (この例では [送信済みアイテム フォルダー) のアクセス許可を追加するフォルダーを指定して、 [FieldURI](http://msdn.microsoft.com/library/24af8e3b-3074-4c8c-8d0a-52446508d044%28Office.15%29.aspx)値には、フォルダー: PermissionSet が含まれています、 [GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx)要求を送信します。 この要求は、指定したフォルダーのアクセス許可の設定を取得します。 
+最初の手順は、[GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) 要求を送信することです。この要求では、[DistinguishedFolderId](http://msdn.microsoft.com/library/50018162-2941-4227-8a5b-d6b4686bb32f%28Office.15%29.aspx) 値でアクセス許可を追加するフォルダー (この例では [送信済みアイテム] フォルダー) を指定し、[FieldURI](http://msdn.microsoft.com/library/24af8e3b-3074-4c8c-8d0a-52446508d044%28Office.15%29.aspx) 値に folder:PermissionSet を含んでいます。 この要求は、指定したフォルダーのアクセス許可設定を取得します。 
   
-EWS のマネージ API が[フォルダーのアクセス許可を追加](#bk_enableewsma)するのには**Bind**メソッドを呼び出すときに送信する XML 要求にもです。
+これは、[フォルダーのアクセス許可を追加する](#bk_enableewsma)ために **Bind** メソッドを呼び出す際に、EWS マネージ API が送信する XML 要求でもあります。
   
 ```XML
   <?xml version="1.0" encoding="utf-8"?>
@@ -173,7 +173,7 @@ EWS のマネージ API が[フォルダーのアクセス許可を追加](#bk_e
   </soap:Envelope>
 ```
 
-**NoError**フォルダーが正常に取得されたことを示すは、 [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx)要素の値を含む[GetFolderResponse](http://msdn.microsoft.com/library/47abeec8-78dd-4297-8525-099174ec880d%28Office.15%29.aspx)メッセージで**GetFolder**要求にサーバーが応答します。 [フォルダー Id](http://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx)と[ParentFolderId](http://msdn.microsoft.com/library/258f4b1f-367e-4c7d-9c29-eb775a2398c7%28Office.15%29.aspx)の値は、読みやすくするために短縮されています。 
+サーバーは、**GetFolder** 要求に [GetFolderResponse](http://msdn.microsoft.com/library/47abeec8-78dd-4297-8525-099174ec880d%28Office.15%29.aspx) メッセージで応答します。このメッセージには、フォルダーが正常に取得されたことを示す、値が **NoError** の [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx)要素が含まれます。 [FolderId](http://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx) 値と [ParentFolderId](http://msdn.microsoft.com/library/258f4b1f-367e-4c7d-9c29-eb775a2398c7%28Office.15%29.aspx) 値は、読みやすくするために短縮してあります。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -241,9 +241,9 @@ EWS のマネージ API が[フォルダーのアクセス許可を追加](#bk_e
 </s:Envelope>
 ```
 
-**UpdateFolder**操作を使用して、送信、更新された[PermissionSet](http://msdn.microsoft.com/library/6ac1bd17-a089-46bb-b9e6-f5b1dfe1076d%28Office.15%29.aspx)、新しいユーザーの[アクセス許可](http://msdn.microsoft.com/library/b8d0429a-0e58-4480-9847-4901970c7033%28Office.15%29.aspx)を含む。 [UpdateFolder](http://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx)操作にそれぞれのフォルダーの[SetFolderField](http://msdn.microsoft.com/library/8c69db7b-54b5-4ae2-abca-4d6e0937a790%28Office.15%29.aspx)要素を含めると、フォルダーに対するすべてのアクセス許可の設定が上書きされることに注意してください。 同様に、 **UpdateFolder**操作の[DeleteFolderField](http://msdn.microsoft.com/library/f9c2187b-4c60-4358-b4b4-ede50eadae48%28Office.15%29.aspx)オプションも削除されます、フォルダーに対するすべてのアクセス許可の設定。 
+次に、**UpdateFolder** 操作を使用して、更新された [PermissionSet](http://msdn.microsoft.com/library/6ac1bd17-a089-46bb-b9e6-f5b1dfe1076d%28Office.15%29.aspx) を送信します。それには、新規ユーザーのための [Permission](http://msdn.microsoft.com/library/b8d0429a-0e58-4480-9847-4901970c7033%28Office.15%29.aspx) が含まれています。 [UpdateFolder](http://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx) 操作で各フォルダーの [SetFolderField](http://msdn.microsoft.com/library/8c69db7b-54b5-4ae2-abca-4d6e0937a790%28Office.15%29.aspx) 要素を含めると、そのフォルダーのすべてのアクセス許可設定が上書きされることに注意してください。 同様に、**UpdateFolder** 操作の [DeleteFolderField](http://msdn.microsoft.com/library/f9c2187b-4c60-4358-b4b4-ede50eadae48%28Office.15%29.aspx) オプションを含めると、フォルダーのすべてのアクセス許可設定が削除されます。 
   
-EWS のマネージ API が[フォルダーのアクセス許可を追加](#bk_enableewsma)するのには**Update**メソッドを呼び出すときに送信する XML 要求にもです。
+これは、[フォルダーのアクセス許可を追加する](#bk_enableewsma)ために **Update** メソッドを呼び出す際に、EWS マネージ API が送信する XML 要求でもあります。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -326,18 +326,18 @@ EWS のマネージ API が[フォルダーのアクセス許可を追加](#bk_e
 </t:Permission>
 ```
 
-**NoError**フォルダーが正常に更新されたことを示すは、 [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx)要素の値が含まれています[UpdateFolderResponse](http://msdn.microsoft.com/library/31f47739-dc9c-46ba-9e3f-cce25dc85e6e%28Office.15%29.aspx)メッセージから**UpdateFolder**要求にサーバーが応答します。
+サーバーは、**UpdateFolder** 要求に [UpdateFolderResponse](http://msdn.microsoft.com/library/31f47739-dc9c-46ba-9e3f-cce25dc85e6e%28Office.15%29.aspx) メッセージで応答します。このメッセージには、フォルダーが正常に更新されたことを示す、**NoError** の [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 要素の値が含まれます。
   
 ## <a name="removing-folder-permissions-by-using-the-ews-managed-api"></a>EWS マネージ API を使用してフォルダーのアクセス許可を削除する
 <a name="bk_removeewsma"> </a>
 
 次のコード例は、既定および匿名のアクセス許可を除く、特定のフォルダーのすべてのユーザーのアクセス許可を削除するために、EWS マネージ API を使用する方法を示しています。
   
-1. **Bind**メソッドを使用してフォルダーの現在のアクセス許可を取得しています。 
+1. **Bind** メソッドを使用して、フォルダーの現在のアクセス許可を取得します。 
     
-2. **アクセス許可**のコレクションを反復処理して、個々 のユーザーに対してアクセス許可を削除します。 
+2. **Permissions** コレクションを反復処理し、個別ユーザーのアクセス許可を削除します。 
     
-3. 変更を保存するのには**Update**メソッドを呼び出しています。 
+3. **Update** メソッドを呼び出して、変更を保存します。 
     
 この例では、フォルダーのすべてのユーザー アクセス許可を削除します。特定のユーザーのアクセス許可のみを削除するようこの例を変更する場合、次のコードの行を変更して、ユーザーの表示名、または SMTP アドレスのいずれかを識別できるようにします。
   
@@ -345,7 +345,7 @@ EWS のマネージ API が[フォルダーのアクセス許可を追加](#bk_e
 if (sentItemsFolder.Permissions[t].UserId.DisplayName != null || sentItemsFolder.Permissions[t].UserId.PrimarySmtpAddress != null)
 ```
 
-この例では**サービス**をそのメールボックス所有者の有効な[ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)オブジェクトは、ユーザーが Exchange サーバーに認証されているとします。 
+この例では、**service** はメールボックス所有者の有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーは Exchange サーバーに既に認証されていると想定しています。 
   
 ```cs
 static void RemoveFolderPermissions(ExchangeService service)
@@ -379,9 +379,9 @@ static void RemoveFolderPermissions(ExchangeService service)
 
 EWS の次のコード例は、既定および匿名のアクセス許可を除く、特定のフォルダーのすべてのユーザーのアクセス許可を削除する方法を示します。
   
-最初に、 [DistinguishedFolderId](http://msdn.microsoft.com/library/50018162-2941-4227-8a5b-d6b4686bb32f%28Office.15%29.aspx)の値は、アクセス許可 (この例では [送信済みアイテム フォルダー) を削除するフォルダーを指定し、 [FieldURI](http://msdn.microsoft.com/library/24af8e3b-3074-4c8c-8d0a-52446508d044%28Office.15%29.aspx)れますフォルダー: PermissionSet [GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx)要求を送信します。 この要求は、指定したフォルダーの[PermissionSet](http://msdn.microsoft.com/library/6ac1bd17-a089-46bb-b9e6-f5b1dfe1076d%28Office.15%29.aspx)を取得します。 
+最初の手順は、[GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) 要求を送信することです。この要求では、[DistinguishedFolderId](http://msdn.microsoft.com/library/50018162-2941-4227-8a5b-d6b4686bb32f%28Office.15%29.aspx) 値でアクセス許可を削除するフォルダー (この例では [送信済みアイテム] フォルダー) を指定し、[FieldURI](http://msdn.microsoft.com/library/24af8e3b-3074-4c8c-8d0a-52446508d044%28Office.15%29.aspx) 値に folder:PermissionSet を含んでいます。 この要求は、指定したフォルダーの [PermissionSet](http://msdn.microsoft.com/library/6ac1bd17-a089-46bb-b9e6-f5b1dfe1076d%28Office.15%29.aspx) を取得します。 
   
-EWS のマネージ API が[フォルダーのアクセス許可を削除](#bk_removeewsma)するのには**Bind**メソッドを呼び出すときに送信する XML 要求にもです。
+これは、[フォルダーのアクセス許可を削除する](#bk_removeewsma)ために **Bind** メソッドを呼び出す際に、EWS マネージ API が送信する XML 要求でもあります。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -412,7 +412,7 @@ EWS のマネージ API が[フォルダーのアクセス許可を削除](#bk_r
 </soap:Envelope>
 ```
 
-**NoError**フォルダーが正常に取得されたことを示すは、 [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx)要素の値を含む[GetFolderResponse](http://msdn.microsoft.com/library/47abeec8-78dd-4297-8525-099174ec880d%28Office.15%29.aspx)メッセージで**GetFolder**要求にサーバーが応答します。 **フォルダー Id**と**ParentFolderId**の要素の値は、読みやすくするために短縮されています。 
+サーバーは、**GetFolder** 要求に [GetFolderResponse](http://msdn.microsoft.com/library/47abeec8-78dd-4297-8525-099174ec880d%28Office.15%29.aspx) メッセージで応答します。このメッセージには、フォルダーが正常に取得されたことを示す、値が **NoError** の [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx)要素が含まれます。 **FolderId** 要素の値と **ParentFolderId** 要素の値は、読みやすくするために短縮してあります。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -512,9 +512,9 @@ EWS のマネージ API が[フォルダーのアクセス許可を削除](#bk_r
 </s:Envelope>
 ```
 
-**UpdateFolder**操作を使用して送信する、更新された**PermissionSet**、削除されたユーザーの**アクセス許可**が含まれていません。 
+次に、**UpdateFolder** 操作を使用し、更新された **PermissionSet** を送信します。削除したユーザーの **Permission** は含まれていません。 
   
-EWS のマネージ API が[フォルダーのアクセス許可を削除](#bk_removeewsma)するのには**Update**メソッドを呼び出すときに送信する XML 要求にもです。
+これは、[フォルダーのアクセス許可を削除する](#bk_removeewsma)ために **Update** メソッドを呼び出す際に、EWS マネージ API が送信する XML 要求でもあります。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -561,48 +561,48 @@ EWS のマネージ API が[フォルダーのアクセス許可を削除](#bk_r
 </soap:Envelope>
 ```
 
-**NoError**更新が正常に完了したことを示すは、 [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx)要素の値が含まれています**UpdateFolderResponse**メッセージから**UpdateFolder**要求にサーバーが応答します。
+サーバーは、**UpdateFolderResponse** メッセージで **UpdateFolder** 要求に応答します。このメッセージには、更新が正常に完了したことを示す、**NoError** の [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 要素の値が含まれます。
   
 ## <a name="updating-folder-permissions-by-using-the-ews-managed-api"></a>EWS マネージ API を使用してフォルダーのアクセス許可を更新する
 <a name="bk_updateewsma"> </a>
 
-EWS マネージ API を使用して、特定のフォルダーのフォルダーのアクセス許可を更新することもできます。アクセス許可を更新するには、次を行います。  
+EWS マネージ API を使用して、特定のフォルダーのフォルダーのアクセス許可を更新することもできます。アクセス許可を更新するには、次のことを行います。 
   
-1. 旧式のアクセス許可では、[フォルダーのアクセス許可を削除する](#bk_removeewsma)は、 **Update**メソッドを (まだ)。 
+1. 古いアクセス許可の[フォルダーのアクセス許可を削除します](#bk_removeewsma)が、(まだ) **Update** メソッドを呼び出しません。 
     
-2. [新規または変更されたユーザーのフォルダーのアクセス許可を追加](#bk_enableewsma)します。
+2. [新規または変更されたユーザーのフォルダーのアクセス許可を追加します](#bk_enableewsma)。
     
-3. 変更を保存するのには**Update**メソッドを呼び出します。 
+3. **Update** メソッドを呼び出して、変更を保存します。 
     
-以下の説明と共に**ServiceResponseException**エラーが発生する、同じユーザーのアクセス許可の 2 つのセットを追加しようとする場合:「指定されたアクセス許可セットには、重複するユーザー Id が含まれています」。 その場合は、現在のアクセス許可を**アクセス許可**のコレクションから削除し、**アクセス許可**のコレクションに新しいアクセス許可を追加します。 
+同じユーザーのアクセス許可の 2 つのセットを追加しようとする場合、「指定したアクセス許可のセットには、重複したユーザー Id が含まれています」という説明がある **ServiceResponseException** エラーを受け取ります。 このケースでは、**Permission** コレクションから現在のアクセス許可を削除してから、新しいアクセス許可を **Permission** コレクションに追加します。 
   
 ## <a name="updating-folder-permissions-by-using-ews"></a>EWS を使用してフォルダーのアクセス許可を更新する
 <a name="bk_updateews"> </a>
 
-EWS を使用して、削除と追加のプロセスを組み合わせ、特定のフォルダーのフォルダーのアクセス許可を更新することもできます。アクセス許可を更新するには、次を行います。  
+EWS を使用して、削除と追加のプロセスを組み合わせ、特定のフォルダーのフォルダーのアクセス許可を更新することもできます。アクセス許可を更新するには、次のことを行います。 
   
-1. **GetFolder**操作を使用してフォルダーの現在のアクセス許可を取得します。 
+1. **GetFolder** 操作を使用して、フォルダーの現在のアクセス許可を取得します。 
     
-2. **UpdateFolder**オペレーションを使用してアクセス許可の更新の一覧を送信します。 
+2. **UpdateFolder** 操作を使用して、更新されたアクセス許可の一覧を送信します。 
     
-これらは、EWS を使用して[有効にする](#bk_enableews)か、[アクセス権を削除](#bk_removeews)するを使用する 2 つの操作で同じです。 唯一の違いは、 **GetFolder**の応答が表示されたら、それが含まれている**アクセス許可**がユーザーの設定です。 だけで新しい**アクセス許可**要素では、その既存の**アクセス許可**要素を置換し、新しい**アクセス許可**の値または値を持つ**UpdateFolder**操作を送信します。 
+これらは、EWS を使用して[アクセスの有効化](#bk_enableews)または[アクセスの削除](#bk_removeews)を行うのに使用するのと同じ 2 つの操作です。 唯一の違いは、**GetFolder** 応答を受信したときにユーザーの **Permission** 設定が含まれていることです。 単に既存の **Permission** 要素を新しい **Permission** 要素に取り替え、新しい **Permission** の値 (複数の場合もある) を指定して **UpdateFolder** 操作を送信します。 
   
-同じユーザーのアクセス許可の 2 つのセットを追加しようとする場合は、 **ErrorDuplicateUserIdsSpecified**の**ResponseCode**の値を受け取ります。 場合は、要求からユーザーのアクセス許可の古い値を削除し、要求を再試行します。
+同じユーザーに、アクセス許可のセットを 2 つ追加しようとすると、値が **ErrorDuplicateUserIdsSpecified** の **ResponseCode** を受け取ります。 このケースでは、要求からユーザーのアクセス許可の古い値を削除してから、要求を再試行します。
 
 ## <a name="next-steps"></a>次の手順
 
-ユーザーのアクセス許可を特定のフォルダーに設定した後、そのユーザーは代理人としてフォルダーにアクセスできます。詳細については、次のトピックをご覧ください。
+ユーザーのアクセス許可を特定のフォルダーに設定した後、そのユーザーは代理人としてフォルダーにアクセスできます。詳細については、以下を参照してください。
   
-- [EWS を使用して Exchange 内で代理人として電子メールにアクセスします。](how-to-access-email-as-a-delegate-by-using-ews-in-exchange.md)
+- [Exchange で EWS を使用して、代理人としてメールにアクセスする](how-to-access-email-as-a-delegate-by-using-ews-in-exchange.md)
     
-- [EWS を使用して Exchange 内で代理人に予定表にアクセスします。](how-to-access-a-calendar-as-a-delegate-by-using-ews-in-exchange.md)
+- [Exchange で EWS を使用して予定表に代理人としてアクセスする](how-to-access-a-calendar-as-a-delegate-by-using-ews-in-exchange.md)
     
-- [Exchange EWS を使用して代理人としてアクセス連絡先](how-to-access-contacts-as-a-delegate-by-using-ews-in-exchange.md)
+- [Exchange で EWS を使用して、代理人として連絡先にアクセスする](how-to-access-contacts-as-a-delegate-by-using-ews-in-exchange.md)
     
 ## <a name="see-also"></a>関連項目
 
 - [Exchange での代理人アクセスと EWS](delegate-access-and-ews-in-exchange.md)   
-- [追加し、Exchange の EWS を使用して、デリゲートを削除します。](how-to-add-and-remove-delegates-by-using-ews-in-exchange.md)    
+- [Exchange で EWS を使用して代理人を追加および削除する](how-to-add-and-remove-delegates-by-using-ews-in-exchange.md)    
 - [Exchange の EWS のフォルダーとアイテム](folders-and-items-in-ews-in-exchange.md)
     
 

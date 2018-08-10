@@ -1,5 +1,5 @@
 ---
-title: Exchange サーバーからドメインの設定を取得します。
+title: Exchange サーバーからドメイン設定を取得する
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,12 +8,12 @@ ms.assetid: 2f9acb81-5135-4f72-94e8-65c235d725e6
 description: 自動検出サービスを使用して Exchange サーバーからドメインの設定を取得する方法について説明します。
 ms.openlocfilehash: 0dd990cc82762936e7827115685ce0178eafb5ae
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758954"
 ---
-# <a name="get-domain-settings-from-an-exchange-server"></a>Exchange サーバーからドメインの設定を取得します。
+# <a name="get-domain-settings-from-an-exchange-server"></a>Exchange サーバーからドメイン設定を取得する
 
 自動検出サービスを使用して Exchange サーバーからドメインの設定を取得する方法について説明します。
   
@@ -33,9 +33,9 @@ ms.locfileid: "19758954"
     
   - SOAP または XML の自動検出サービスから生成される、自動生成されたプロキシ
     
-    これらのメソッドの詳細については、 [Exchange の自動検出](autodiscover-for-exchange.md)を参照してください。
+    これらの方法の詳細については、「[Exchange の自動検出](autodiscover-for-exchange.md)」をご覧ください。
     
-EWS マネージ API は、ユーザー設定を取得するためのオブジェクト ベースのインターフェイスを提供します。クライアント アプリケーションがマネージ コードを使用する場合は、EWS マネージ API を使用することをお勧めします。EWS マネージ API インターフェイスは、標準的な自動生成された Web サービス プロキシよりも、単純なオブジェクト モデルに対してより最適化されています。  
+EWS マネージ API は、ユーザー設定を取得するためのオブジェクト ベースのインターフェイスを提供します。クライアント アプリケーションがマネージ コードを使用する場合は、EWS マネージ API を使用することをお勧めします。EWS マネージ API インターフェイスは、標準的な自動生成された Web サービス プロキシよりも、単純なオブジェクト モデルに対してより最適化されています。 
   
 EWS を使用している場合は、POX の自動検出サービスよりも豊富な機能をサポートしている SOAP の自動検出サービスの使用をお勧めします。
   
@@ -43,7 +43,7 @@ EWS を使用している場合は、POX の自動検出サービスよりも豊
   
 **表 1: ドメインの構成設定**
 
-|**構成の設定**|**説明**|
+|**構成設定**|**説明**|
 |:-----|:-----|
 |ExternalEwsUrl  <br/> |EWS の外部 URL。  <br/> |
 |ExternalEwsVersion  <br/> |EWS URL をホストする Exchange Server のバージョン。  <br/> |
@@ -55,12 +55,12 @@ EWS を使用している場合は、POX の自動検出サービスよりも豊
   
 - Exchange Online、Office 365 の一部としての Exchange Online、または Exchange 2007 以降のバージョンの Exchange を実行しているサーバー。EWS SOAP ベースの自動検出サービスを使用する場合は、Exchange 2010 以降のバージョンの Exchange を実行しているサーバー。
     
-- クライアント アプリケーションからの接続を受け付けるように構成されている Exchange サーバーです。 Exchange サーバーを構成する方法の詳細については、 [Exchange クライアント アプリケーションの EWS へのアクセスを制御する](controlling-client-application-access-to-ews-in-exchange.md)を参照してください。
+- クライアント アプリケーションからの接続を受け入れるように構成されている Exchange サーバー。 Exchange サーバーを構成する方法の詳細については、「[Exchange において、EWS へのクライアント アプリケーションのアクセスを制御する](controlling-client-application-access-to-ews-in-exchange.md)」をご覧ください。
     
-- EWS を使用する権限を持つアカウントです。 アカウントを構成する方法の詳細については、 [Exchange クライアント アプリケーションの EWS へのアクセスを制御する](controlling-client-application-access-to-ews-in-exchange.md)を参照してください。
+- EWS を使用する権限を持つアカウント。 アカウントを構成する方法の詳細については、「[Exchange において、EWS へのクライアント アプリケーションのアクセスを制御する](controlling-client-application-access-to-ews-in-exchange.md)」をご覧ください。
     
 > [!NOTE]
-> EWS のマネージ API を使用する場合は、状況によっては証明書の検証コールバックを入力しなければなりません。 Visual Studio によって作成されたものなどのいくつかのライブラリの生成されたプロキシで証明書の検証コールバックを必要することもあります。 詳細については、 [EWS のマネージ API のサーバー証明書の検証](how-to-validate-a-server-certificate-for-the-ews-managed-api.md)を参照してください。 
+> EWS マネージ API を使用する場合、状況によっては証明書の検証コールバックを提供する必要があります。 Visual Studio で作成されたものなど、いくつかの生成されたプロキシ ライブラリによる証明書の検証コールバックが必要になる場合もあります。 詳細については、「[EWS マネージ API のサーバー証明書を検証する](how-to-validate-a-server-certificate-for-the-ews-managed-api.md)」をご覧ください。 
   
 ### <a name="core-concepts-for-getting-domain-settings"></a>ドメインの設定の取得に関する中心概念
 <a name="bk_Core"> </a>
@@ -70,9 +70,9 @@ EWS を使用している場合は、POX の自動検出サービスよりも豊
 |**概念**|**説明**|
 |:-----|:-----|
 |[Exchange の自動検出](autodiscover-for-exchange.md) <br/> |自動検出サービスの動作方法の概要を示します。  <br/> |
-|[自動検出を使用してコネクション ポイントを検索するには](how-to-use-autodiscover-to-find-connection-points.md) <br/> |クライアント アプリケーションを適切なサービス エンドポイントにリダイレクトするために自動検出サービスによって使用されるプロセスについて説明します。  <br/> |
+|[自動検出を使用して接続ポイントを検索する](how-to-use-autodiscover-to-find-connection-points.md) <br/> |クライアント アプリケーションを適切なサービス エンドポイントにリダイレクトするために自動検出サービスによって使用されるプロセスについて説明します。  <br/> |
    
-EWS のマネージ API を使用する場合、 [Microsoft.Exchange.WebServices.Data](http://msdn.microsoft.com/en-us/library/exchange/dd633907%28v=exchg.80%29.aspx)名前空間の EWS への接続を管理する[Microsoft.Exchange.WebServices.Data.ExchangeService](http://msdn.microsoft.com/en-us/library/exchange/dd635811%28v=exchg.80%29.aspx)クラスを使用します。 このセクションのコード例では、コードでは、次の名前空間を参照することを前提としています。 
+EWS マネージ API を使用する場合は、[Microsoft.Exchange.WebServices.Data](http://msdn.microsoft.com/ja-JP/library/exchange/dd633907%28v=exchg.80%29.aspx) 名前空間の [Microsoft.Exchange.WebServices.Data.ExchangeService](http://msdn.microsoft.com/ja-JP/library/exchange/dd635811%28v=exchg.80%29.aspx) クラスを使用して、EWS への接続を管理します。 このセクションのコード例では、コードで次の名前空間を参照することを前提としています。 
   
 - **System.Net**
     
@@ -81,7 +81,7 @@ EWS のマネージ API を使用する場合、 [Microsoft.Exchange.WebServices
 ## <a name="get-domain-settings-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して、ドメインの設定を取得する
 <a name="bk_Managed"> </a>
 
-要求を生成するのに[Microsoft.Exchange.WebServices.Data.AutodiscoverService](http://msdn.microsoft.com/en-us/library/exchange/dd634321%28v=exchg.80%29.aspx)オブジェクトの[Microsoft.Exchange.WebServices.Data.AutodiscoverSettings.GetUserSettings](http://msdn.microsoft.com/en-us/library/exchange/microsoft.exchange.webservices.autodiscover.autodiscoverservice.getusersettings%28v=exchg.80%29.aspx)メソッドを使用するには、EWS のマネージ API を使用する場合次の例のように、ドメインの構成情報を取得したとします。 この例では、使用可能なドメインの設定の一部だけを要求すると、およびサーバーから要求された設定のみが返されます。 
+EWS マネージ API を使用する場合は、次の例に示すように、[Microsoft.Exchange.WebServices.Data.AutodiscoverService](http://msdn.microsoft.com/ja-JP/library/exchange/dd634321%28v=exchg.80%29.aspx) オブジェクトの [Microsoft.Exchange.WebServices.Data.AutodiscoverSettings.GetUserSettings](http://msdn.microsoft.com/ja-JP/library/exchange/microsoft.exchange.webservices.autodiscover.autodiscoverservice.getusersettings%28v=exchg.80%29.aspx) メソッドを使用して、ドメインの構成情報を取得する要求を生成することができます。 この例では、使用可能なドメインの設定の一部だけが要求され、要求された設定のみがサーバーから返されます。 
   
 ```cs
 AutodiscoverService autodiscoverService = new AutodiscoverService("domain.contoso.com");
@@ -105,7 +105,7 @@ foreach (KeyValuePair<DomainSettingName, Object> domainsetting in domainresponse
 }
 ```
 
-または、特定の設定の値を取得できます。 次の例では、 **ExternalEwsUrl**の設定、表示されます。 
+または、特定の設定の値を取得できます。 次の例では、**ExternalEwsUrl** の設定が表示されます。 
   
 ```cs
 // Display a specific setting, such as ExternalEwsUrl.
@@ -196,16 +196,15 @@ Console.WriteLine(domainresponse.Settings[DomainSettingName.ExternalEwsUrl]);
 
 ドメインの設定は、EWS に接続するときにクライアントが必要とする基本的な情報を提供します。この情報を使用して EWS に接続するか、またはサーバーからメール アカウントの追加の構成設定を取得することができます。詳細については、以下の記事をご覧ください。
   
-- [Exchange から自動検出を使用してユーザー設定を取得します。](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)
+- [自動検出を使用して Exchange からユーザー設定を取得する](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)
     
 ## <a name="see-also"></a>関連項目
 
 
-- [EWS アプリケーションを設定します。](setting-up-your-ews-application.md)
+- [EWS アプリケーションの設定](setting-up-your-ews-application.md)
     
-- [Exchange の自動検出 web サービスの参照](http://msdn.microsoft.com/library/a01124a8-a8cf-4b80-8625-d7ee05690bca%28Office.15%29.aspx)
+- [Exchange 用自動検出 Web サービス リファレンス](http://msdn.microsoft.com/library/a01124a8-a8cf-4b80-8625-d7ee05690bca%28Office.15%29.aspx)
     
-- 
-  [Exchange 用 EWS リファレンス](http://msdn.microsoft.com/library/2a873474-1bb2-4cb1-a556-40e8c4159f4a%28Office.15%29.aspx)
+- [Exchange 用 EWS リファレンス](http://msdn.microsoft.com/library/2a873474-1bb2-4cb1-a556-40e8c4159f4a%28Office.15%29.aspx)
     
 

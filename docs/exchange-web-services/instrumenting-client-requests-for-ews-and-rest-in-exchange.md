@@ -8,7 +8,7 @@ ms.assetid: 330de503-498d-447e-b4a9-c20fc1699fd1
 description: Exchange アプリケーションのモニターとトラブルシューティングに役立つ EWS と REST の要求と応答の HTTP ヘッダーについて説明します。
 ms.openlocfilehash: bcf362952c29956729c44397043a56bf3603d0af
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759084"
@@ -17,43 +17,43 @@ ms.locfileid: "19759084"
 
 Exchange アプリケーションのモニターとトラブルシューティングに役立つ EWS と REST の要求と応答の HTTP ヘッダーについて説明します。
   
-これまで起こったするでしょうか。 アプリケーションのユーザーは、予期しないエラーを報告します。 調査をするが、それを再現することはできません。 エラーがユーザーに表示されなくなったし、して残っているはほとんどの実用的なデータです。 フラストレーション、だと思いませんか。 このシナリオで事前に準備し、うまくいけば不満、将来的にしないようにする方法を見てみましょう。
+次のような経験があるかもしれません。 アプリケーションのユーザーが予期しないエラーを報告します。 調査しようとしましたが、再現できません。 エラーがユーザーに現れなくなり、役に立つデータはほとんどありません。 これはストレスのたまる状況です。 このようなシナリオに対して事前に準備し、今後のストレス回避に役立つ可能性のある方法を説明します。
   
 ## <a name="add-instrumentation-to-requests"></a>要求にインストルメンテーションを追加する
 
 トラブルシューティングを容易にするために、要求に HTTP ヘッダーを追加することをお勧めします。後で必要になったら取得できるように、この情報をどこかに (ログ ファイルなど) 記録しておいてください。これは、ネットワーク トラフィックを調べるときに役立ちますが、Microsoft サポートに連絡して支援を求めるときにも役立ちます。
   
-**表 1 です。トラブルシューティングのための要求ヘッダー**
+**表 1. トラブルシューティングのための要求ヘッダー**
 
-|**HTTP ヘッダー (EWS)**|**EWS のマネージ API と同じ**|**メモ**|
+|**HTTP ヘッダー (EWS)**|**EWS マネージ API の同等物**|**メモ**|
 |:-----|:-----|:-----|
-|User-Agent  <br/> |[ExchangeService.UserAgent](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservicebase.useragent%28v=exchg.80%29.aspx) <br/> |クライアント アプリケーションを識別する一意の値を設定します。<br/><br/> 呼び出しの失敗のトラブルシューティングに役立つ、マイクロソフトでは、アプリケーションが送信するすべての要求に対して同じ値を使用して、必要がある問題が発生します。  <br/> |
-|client-request-id  <br/> |[ExchangeService.ClientRequestId](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservicebase.clientrequestid%28v=exchg.80%29.aspx) <br/> |これをアプリケーションに送信する要求ごとに異なる固有の値に設定します。<br/><br/> GUID を使用することをお勧めします。 この一意の識別子は、問題が生じたことは、2 つのシステム間での活動を関連付けるために使用します。  <br/> |
-|return-client-request-id  <br/> |[ExchangeService.ReturnClientRequestId](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservicebase.returnclientrequestid%28v=exchg.80%29.aspx) <br/> |設定を**true**に対応する応答にクライアントの要求の id の値を返す必要があることを Exchange サーバーに通知します。<br/><br/> ネットワーク トレースまたは EWS マネージ API トレースにおける要求と応答を関連付けるためには、これを使用します。  <br/> |
-|X-ClientStatistics  <br/> |[ExchangeService.SendClientLatencies](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservicebase.sendclientlatencies%28v=exchg.80%29.aspx) <br/> |アプリケーションが Office 365 の一部として Exchange Online または Exchange Online をアクセスする場合は、マイクロソフトに[レポートの EWS の待ち時間](#bk_ReportLatency)を使用します。  <br/> |
+|User-Agent  <br/> |[ExchangeService.UserAgent](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservicebase.useragent%28v=exchg.80%29.aspx) <br/> |クライアント アプリケーションを識別する一意の値に設定します。<br/><br/> アプリケーションが送信するすべての要求に同じ値を使用すると、呼び出しの失敗が発生した場合に、Microsoft がトラブルシューティングを行うのに役立ちます。  <br/> |
+|client-request-id  <br/> |[ExchangeService.ClientRequestId](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservicebase.clientrequestid%28v=exchg.80%29.aspx) <br/> |アプリケーションが送信する要求ごとに異なる一意の値に設定します。<br/><br/> GUID を使用することをお勧めします。 この一意の識別子は、問題が発生した場合に 2 つのシステムの間でアクティビティを関連付けるために使用されます。  <br/> |
+|return-client-request-id  <br/> |[ExchangeService.ReturnClientRequestId](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservicebase.returnclientrequestid%28v=exchg.80%29.aspx) <br/> |**true** に設定することで、対応する応答で client-request-id の値を返す必要があることを Exchange サーバーに通知します。<br/><br/> これを使用して、ネットワーク トレースまたは EWS マネージ API のトレースで要求と応答を関連付けることができます。  <br/> |
+|X-ClientStatistics  <br/> |[ExchangeService.SendClientLatencies](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservicebase.sendclientlatencies%28v=exchg.80%29.aspx) <br/> |アプリケーションが Exchange Online または Office 365 の一部としての Exchange Online にアクセスしている場合に、Microsoft に [EWS の待機時間を報告](#bk_ReportLatency)するために使用されます。  <br/> |
    
 ## <a name="log-information-from-responses"></a>応答からのログ情報
 
 クライアントが送信する要求にインストルメンテーションを追加できるのと同様、Exchange も HTTP ヘッダーの形式でインストルメンテーションを応答に追加します。クライアントはこの情報を要求のインストルメンテーションの情報とともにキャプチャする必要があります。
   
 > [!NOTE]
-> EWS のマネージ API を使用する場合、HTTP ヘッダーに直接相当するものはありません。 ただし、すべての HTTP 応答ヘッダーは、 [ExchangeService.HttpResponseHeaders](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservicebase.httpresponseheaders%28v=exchg.80%29.aspx)プロパティを通じてアクセスできます。 
+> EWS マネージ API を使用している場合、HTTP ヘッダーに直接相当するものはありません。 しかし、すべての HTTP 応答ヘッダーに、[ExchangeService.HttpResponseHeaders](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservicebase.httpresponseheaders%28v=exchg.80%29.aspx) プロパティ経由でアクセスできます。 
   
-**表 2 になります。HTTP 応答ヘッダー**
+**表 2. HTTP 応答ヘッダー**
 
 |**HTTP ヘッダー**|**説明**|
 |:-----|:-----|
 |request-id  <br/> |この応答に対応する要求を表す、サーバーによって生成される ID。  <br/> |
-|client-request-id  <br/> |要求でクライアントの要求の id のヘッダーの値。<br/><br/> このヘッダーは、要求には、 **true**の値を返すクライアント要求 id ヘッダーが含まれている場合のみです。  <br/> |
+|client-request-id  <br/> |要求の client-request-id ヘッダーの値。<br/><br/> このヘッダーは、要求に **true** の値を持つ return-client-request-id ヘッダーが含まれる場合にのみ存在します。  <br/> |
 |X-FEServer  <br/> |要求を処理したクライアント アクセス サーバーの FQDN。  <br/> |
 |X-TargetBEServer  <br/> |要求を処理したメールボックス サーバーの FQDN。  <br/> |
 |X-DiagInfo  <br/> |要求に応じた追加の診断情報。  <br/> |
-|x-ms-diagnostics  <br/> | このヘッダーは、OAuth 認証が要求に使用します。<br/><br/> OAuth 認証が失敗した理由を指定する明示的なエラー コードが含まれています。<br/><br/> 次の形式がかかります。`errorId;reason="reason"error_type="error type"`<br/><br/> **[理由**] フィールドは、人間が判読できる、エラーの説明です。<br/><br/> **ErrorId**フィールドは、整数、および、**エラー\_型**フィールドは、整数の文字列形式を次のように。<ul><li>2000000: 無効な\_署名</li><li>2000001: 無効な\_トークン</li><li>  2000002: トークン\_有効期限が切れて</li><li>2000003: 無効な\_リソース</li><li>2000004: 無効な\_テナント  </li><li>2000005: 無効な\_ユーザー</li><li>2000006: 無効な\_クライアント</li><li>2000007: 内部\_エラー</li><li>2000008: 無効な\_を与える</li></ul> |
+|x-ms-diagnostics  <br/> | このヘッダーは、要求で OAuth 認証が使用される場合にのみ適用されます。<br/><br/> これには、OAuth 認証が失敗した理由を指定する明示的なエラー コードが含まれます。<br/><br/> 次の形式を使用します。`errorId;reason="reason"error_type="error type"`<br/><br/> **reason** フィールドは、人間が理解しやすい形式でエラーを説明したものです。<br/><br/> **errorId** フィールドは整数、**error\_type** フィールドは整数の文字列表現であり、次のようになります。<ul><li>2000000: invalid\_signature</li><li>2000001: invalid\_token</li><li>  2000002: token\_expired</li><li>2000003: invalid\_resource</li><li>2000004: invalid\_tenant  </li><li>2000005: invalid\_user</li><li>2000006: invalid\_client</li><li>2000007: internal\_error</li><li>2000008: invalid\_grant</li></ul> |
    
 ## <a name="report-ews-latency-to-microsoft"></a>Microsoft への EWS の待機時間の報告
 <a name="bk_ReportLatency"> </a>
 
-アプリケーションは、Exchange Online に接続するのには、EWS のマネージ API または EWS を使用する場合は、マイクロソフトに直接 EWS 要求の待機時間を報告できます。 X ClientStatistics 要求ヘッダーを使用して、情報が渡されます。 EWS のマネージ API を使用する場合は、 [ExchangeService.SendClientLatencies](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservicebase.sendclientlatencies%28v=exchg.80%29.aspx)プロパティを**true**に設定を実行する必要があるすべてが。 EWS を使用する場合は、要求を発行し、応答を受け取るまでの時間を測定し、次の EWS 要求を次の形式を使用して、アプリケーションを送信する X ClientStatistics ヘッダーを追加する必要があります。
+アプリケーションが EWS マネージ API または EWS を使用して Exchange Online に接続する場合に、EWS 要求の要求の待機時間を Microsoft に直接報告できます。 情報は、X-ClientStatistics 要求ヘッダーを使用して渡されます。 EWS マネージ API を使用する場合、必要なのは [ExchangeService.SendClientLatencies](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservicebase.sendclientlatencies%28v=exchg.80%29.aspx) プロパティを **true** に設定することだけです。 EWS を使用する場合は、要求を発行してから応答を受け取るまでの時間を測定し、アプリケーションが送信するその次の EWS 要求に X-ClientStatistics ヘッダーを追加する必要があります。使用する形式は次のとおりです。
   
 `X-ClientStatistics: MessageId=<value of request-id header>,ResponseTime=<time in milliseconds>,SoapAction=<EWS operation>`
   
@@ -62,12 +62,12 @@ Microsoft はこれらの待機時間の報告を保存し、Exchange Online の
 ## <a name="next-steps"></a>次の手順
 <a name="bk_ReportLatency"> </a>
 
-クライアントの実装をアプリケーションに追加した後より準備ができました問題が生じた場合。 そのような場合は、インストルメンテーション データを[アプリケーションのトラブルシューティング](tools-and-resources-for-troubleshooting-ews-applications-for-exchange.md)を使用できます。
+クライアントのインストルメンテーションをアプリケーションに追加したので、問題が発生した場合の準備がより一層整いました。 問題が発生した場合は、インストルメンテーション データを使用して[アプリケーションのトラブルシューティング](tools-and-resources-for-troubleshooting-ews-applications-for-exchange.md)を行うことができます。
   
 ## <a name="see-also"></a>関連項目
 
 - [Exchange の EWS クライアントの設計の概要](ews-client-design-overview-for-exchange.md)
-- [EWS のマネージ API アプリケーションのトラブルシューティングを行うには、要求と応答をトレースします。](how-to-trace-requests-responses-to-troubleshoot-ews-managed-api-applications.md)
+- [「EWS のマネージ API アプリケーションのトラブルシューティングを行うには、要求と応答をトレースします。」](how-to-trace-requests-responses-to-troubleshoot-ews-managed-api-applications.md)
 - [Exchange の EWS アプリケーションのトラブルシューティングに使用するツールとリソース](tools-and-resources-for-troubleshooting-ews-applications-for-exchange.md)
     
 

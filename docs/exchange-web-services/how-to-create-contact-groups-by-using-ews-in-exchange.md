@@ -1,5 +1,5 @@
 ---
-title: Exchange EWS を使用して連絡先グループを作成します。
+title: Exchange で EWS を使用して連絡先グループを作成する
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,18 +8,18 @@ ms.assetid: acec6e73-c016-419d-be1a-8ec5d993addb
 description: Exchange で EWS マネージ API または EWS を使用して、連絡先グループを作成する方法について説明します。
 ms.openlocfilehash: b3357f24e07a9c1b3b37ccb63b0f4f0d0a1d6fcf
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758934"
 ---
-# <a name="create-contact-groups-by-using-ews-in-exchange"></a>Exchange EWS を使用して連絡先グループを作成します。
+# <a name="create-contact-groups-by-using-ews-in-exchange"></a>Exchange で EWS を使用して連絡先グループを作成する
 
 Exchange で EWS マネージ API または EWS を使用して、連絡先グループを作成する方法について説明します。
   
-EWS のマネージ API または EWS を使用してプライベート[配布グループ](distribution-groups-and-ews-in-exchange.md)は、連絡先グループを作成できます。 連絡先グループを作成するに[ContactGroup](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.contactgroup%28v=exchg.80%29.aspx)の EWS のマネージ API のクラスのメソッドを使用または[CreateItem](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) EWS の操作を使用します。 
+EWS マネージ API または EWS を使用して、個人用[配布グループ](distribution-groups-and-ews-in-exchange.md)である連絡先グループを作成できます。 連絡先グループを作成するには、[ContactGroup](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.contactgroup%28v=exchg.80%29.aspx) EWS マネージ API クラスのメソッドを使用するか、[CreateItem](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) EWS 操作を使用します。 
   
-ユニバーサル配布グループまたはセキュリティ グループを作成するのには、EWS のマネージ API または EWS を使用できません注意してください。 ユニバーサル配布グループまたはセキュリティ グループを作成するには、[新規 DistributionGroup](http://technet.microsoft.com/en-us/library/aa998856%28v=exchg.150%29.aspx)[Exchange 管理シェル コマンドレット](http://msdn.microsoft.com/en-us/library/ff326159%28v=exchg.140%29.aspx)を使用できます。 
+EWS マネージ API と EWS のどちらを使用したとしても、ユニバーサル配布グループもセキュリティ グループも作成できません。 ユニバーサル配布グループまたはセキュリティ グループを作成するには、[New-DistributionGroup](http://technet.microsoft.com/ja-JP/library/aa998856%28v=exchg.150%29.aspx) [Exchange 管理シェル コマンドレット](http://msdn.microsoft.com/ja-JP/library/ff326159%28v=exchg.140%29.aspx)を使用できます。 
   
 ## <a name="create-a-contact-group-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して連絡先グループを作成する
 <a name="bk_EWSMA"> </a>
@@ -42,7 +42,7 @@ myContactGroup.Save();
 ## <a name="create-a-contact-group-by-using-ews"></a>EWS を使用して連絡先グループを作成する
 <a name="bk_EWSMA"> </a>
 
-数行のコードがかかる場合がありますが、 [CreateItem](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) EWS の操作を使用して連絡先グループを作成することができます。 次の XML 要求の例は、連絡先グループを作成する方法を示しています。 これは XML 要求を送信する場合でも[連絡先グループを作成するのには EWS のマネージ API を使用](#bk_EWSMA)します。
+コードがさらに数行必要となる可能性がありますが、[CreateItem](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) EWS 操作を使用して連絡先グループを作成できます。 次の XML 要求例は、連絡先グループを作成する方法を示しています。 またこれは、[EWS マネージ API を使用して連絡先グループを作成する](#bk_EWSMA)際に、送信される XML 要求でもあります。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -102,6 +102,6 @@ MessageDisposition="SaveOnly">
 
 - [Exchange の配布グループと EWS](distribution-groups-and-ews-in-exchange.md)
     
-- [Exchange 2013 の EWS を使用して配布グループを展開します。](how-to-expand-distribution-groups-by-using-ews-in-exchange-2013.md)
+- [Exchange 2013 の EWS を使用して配布グループを展開する](how-to-expand-distribution-groups-by-using-ews-in-exchange-2013.md)
     
 

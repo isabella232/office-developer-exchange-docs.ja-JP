@@ -1,5 +1,5 @@
 ---
-title: EWS を使用して Exchange、AQS 検索を実行します。
+title: Exchange で EWS を使用して AQS 検索を実行する
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,24 +8,24 @@ ms.assetid: c136901a-313e-4adf-a223-1d090d16917a
 description: EWS マネージ API または EWS アプリケーションで、クエリ文字列および AQS を使用して検索する方法を確認します。
 ms.openlocfilehash: dc859e24fa80cd5627477182979c9cc9527818d6
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759055"
 ---
-# <a name="perform-an-aqs-search-by-using-ews-in-exchange"></a>EWS を使用して Exchange、AQS 検索を実行します。
+# <a name="perform-an-aqs-search-by-using-ews-in-exchange"></a>Exchange で EWS を使用して AQS 検索を実行する
 
 EWS マネージ API または EWS アプリケーションで、クエリ文字列および AQS を使用して検索する方法を確認します。
   
-クエリ文字列は、検索条件を記述するため、[フィルター](how-to-use-search-filters-with-ews-in-exchange.md)の代わりに検索を提供します。 クエリ文字列を使用する最大の利点は、検索する 1 つのプロパティを指定する必要はありません。 値を提供できるだけで、検索は、一般的に使用されるすべてのフィールド項目に適用されます。 単純な値の代わりに高度なクエリ構文 (AQS) を使用して検索を絞り込むこともできます。 ただし、クエリ文字列には、注意すべきのコントロールをツールボックスに追加する前に次の制限があります。 
+クエリ文字列は、検索条件を表現する[検索フィルター](how-to-use-search-filters-with-ews-in-exchange.md)に代わる方法を提供します。 クエリ文字列を使用する最大の利点は、検索するプロパティを 1 つも指定する必要がないということです。 値を指定するだけで、アイテム上の一般的に使用されるすべてのフィールドに検索が適用されます。 単純な値の代わりに高度な検索テクニック (AQS) を使用して検索を絞り込むこともできます。 ただし、クエリ文字列には、ツールボックスに追加する前に注意すべき次の制限があります。 
   
-- **特定のプロパティを検索する機能に制限あり。** 単純なクエリ文字列の値を検索すると、すべてのインデックス付きプロパティに対して検索が実行されます。 特定のプロパティに検索を絞り込むことができますが、AQS 文字列で使用できるプロパティに限定されます。 プロパティを検索するには、AQS の使用可能なプロパティのいずれかがいない場合は、検索フィルターを使用することを検討してください。 
+- **特定のプロパティを検索する機能に制限がある。** クエリ文字列で単純な値を検索すると、検索はすべてのインデックス付きプロパティに対して実行されます。 特定のプロパティに検索を絞り込むことはできますが、AQS 文字列で使用できるプロパティは限定されます。 検索するプロパティが AQS で使用可能なプロパティのいずれでもない場合は、検索フィルターを使用することを検討してください。 
     
-- **カスタム プロパティが検索されません。** インデックスにクエリ文字列の検索が実行され、カスタム プロパティは、そのインデックスには含まれません。 カスタム プロパティを検索する場合は、検索フィルターを使用してください。 
+- **カスタム プロパティは検索されない。** クエリ文字列の検索はインデックスに対して実行されますが、カスタム プロパティはそのインデックスに含まれません。 カスタム プロパティを検索する必要がある場合は、代わりに検索フィルターを使用してください。 
     
-- **制限のコントロールの文字列を検索します。** クエリ文字列の検索は常に、大文字と小文字を無視し、部分文字列の検索は、常に。 大文字小文字を区別をする場合は、プレフィックス、または完全一致の検索は、検索フィルターを使用します。 
+- **文字列検索の制御が限定されている。** クエリ文字列の検索は常に、大文字と小文字の違いを無視し、部分文字列の検索になります。 大文字と小文字を区別する場合、プレフィックスの検索、完全一致の検索を実行する場合は、検索フィルターを使用してください。 
     
-- **フォルダーまたは検索フォルダーは使用できません。** クエリ文字列を使用してフォルダーを検索するための EWS の操作がサポートされていません。 さらに、検索フォルダーには、クエリ文字列をサポートしません。 どちらの場合も、検索フィルターとは、唯一のオプションです。 
+- **フォルダーまたは検索フォルダーでは使用できない。** フォルダーを検索するための EWS 操作では、クエリ文字列の使用がサポートされていません。 さらに、検索フォルダーは、クエリ文字列をサポートしません。 どちらの場合も、検索フィルターが唯一のオプションになります。 
     
 ## <a name="creating-a-query-string"></a>クエリ文字列の作成
 <a name="bk_CreateQueryString"> </a>
@@ -36,7 +36,7 @@ EWS マネージ API および EWS のクエリ文字列は、AQS 構文の一�
 
 キーワードを使用せずに値を指定した場合、すべてのインデックス付きプロパティでその値が検索されます。キーワードが値とペアになっている場合、キーワードは対応する値を検索するプロパティを指定します。
   
-**表 1 です。AQS キーワードがサポートされています。**
+**表 1. サポートされている AQS キーワード**
 
 |**キーワード**|**値の型**|**例**|
 |:-----|:-----|:-----|
@@ -56,13 +56,13 @@ EWS マネージ API および EWS のクエリ文字列は、AQS 構文の一�
 |hasattachment  <br/> |ブール型  <br/> |Has attachment:true  <br/> |
 |isflagged  <br/> |ブール型  <br/> |isflagged:true  <br/> |
 |isread  <br/> |ブール型  <br/> |isread:false  <br/> |
-|size  <br/> |数値  <br/> |サイズ:\>5000  <br/> |
+|size  <br/> |数値  <br/> |size:\>5000  <br/> |
    
 別の値の型がどのように動作するかを見てみましょう。
   
 ### <a name="using-a-string-value-type"></a>文字列値型の使用
 
-文字列値の型は、既定のプレフィックスの文字列が検索され、大文字小文字を区別するいないと検索では。 件名: プロジェクトの検索と一致する次の項目のいずれかのことを意味します。 
+文字列値型は既定で、大文字と小文字を区別しないプレフィックス部分文字列として検索されます。 つまり、subject:project を検索すると、次の項目のいずれかと一致します。 
   
 - Project meeting notes
     
@@ -70,9 +70,9 @@ EWS マネージ API および EWS のクエリ文字列は、AQS 構文の一�
     
 - December sales projections
     
-引用符で囲まれた文字列を囲むことによって一致するプレフィックスではなく、単語全体を必要とする検索を変更します。 件名を検索する:「プロジェクト」が候補一覧から「12 月の売上予測」値を削除します。 値がまだない大文字小文字を区別に注意してください。 
+文字列を引用符で囲むことによってプレフィックスと一致させるのではなく、完全に一致する単語を要求するように検索を変更できます。 subject:"project" を検索すると、候補一覧から「December sales projections」値が削除されます。 この場合でも、値は大文字と小文字が区別されないことに注意してください。 
   
-クエリ文字列に複数の単語を使用する場合の一致では、両方の単語が検索フィールドに表示されている必要があります。 などの件名: プロジェクト計画の検索は一致する次の項目のいずれかの。 
+クエリ文字列に複数の単語を使用する場合、両方の単語が検索対象フィールドにあるものが一致します。 たとえば、subject:project plan を検索すると、次の項目のいずれかと一致します。 
   
 - Project plan
     
@@ -82,13 +82,13 @@ EWS マネージ API および EWS のクエリ文字列は、AQS 構文の一�
     
 - Planning project milestones
     
-複数の単語を引用符で囲むと、1 つの句として扱われます。 件名を検索する:「プロジェクト プラン」には、前のリストから「プロジェクト プラン」の対象が一致する、のみです。 
+複数の単語を引用符で囲むと、それらは 1 つの句として扱われます。 subject:"project plan" を検索すると、先ほどのリストの「Project plan」という件名だけが一致します。 
   
 ### <a name="using-an-item-type-value-type"></a>アイテムの種類の値の型の使用
 
-電子メールや会議出席依頼などのアイテムの特定の種類のみに検索結果を制限するのに**ような**キーワードを使用して次の項目の種類の値を使用できます。 
+**kind** キーワードで次のアイテムの種類の値を使用して、検索結果をメールや会議出席依頼などの特定の種類のアイテムのみに制限することができます。 
   
-- contacts    
+- 連絡先    
 - docs    
 - email    
 - faxes    
@@ -103,15 +103,15 @@ EWS マネージ API および EWS のクエリ文字列は、AQS 構文の一�
     
 ### <a name="using-a-date-value-type"></a>日付値型の使用
 
-いくつかの異なる方法で日付の値の型を検索できます。 最も単純な特定の日付を検索します。 検索を受信しました: 12/11/2013 は 2013 年 12 月 11 日に受信したすべての項目を返します。 ただし、特定性の低いことができます。 検索を受信しました: 12/11 は現在の年の 12 月 11 日に受信したすべての項目を返します。 
+日付値型はいくつかの異なる方法で検索できます。 最も単純なのは特定の日付を検索することです。 received:12/11/2013 で検索すると、2013 年 12 月 11 日に受信したすべてのアイテムが返されます。 ただし、指定の仕方を簡単な形式にすることもできます。 received:12/11 で検索すると、現在の年の 12 月 11 日に受信したすべてのアイテムが返されます。 
   
-別のオプションでは、月の名前を使用します。 検索を行うことができますを受信しました: 2013 年 12 月 11 日または 12 月 11 日 ~ を受信すると、同じ結果を得る: 2013/12/11 および受信した: 12/11、それぞれ。 検索することもできます。 受信した: 現在の年の 12 月に受信したすべての項目を取得するには、年 12 月。 
+別のオプションとして、月の名前を使用することができます。 received:December 11, 2013 または December 11 で検索すると、received:12/11/2013 および received:12/11 と同じ結果を取得できます。 received:December で検索し、現在の年の 12 月に受信したすべてのアイテムを取得することもできます。 
   
-週の曜日名を使用しては、また、オプションです。 受信で検索: 火曜日は現在の週の火曜日に受信したすべての項目を返します。 
+週の曜日の名前を使用することもできます。 received:Tuesday で検索すると、現在の週の火曜日に受信したすべてのアイテムが返されます。 
   
 日付値型は、現在の時刻を基準にした検索のキーワードのセットもサポートします。サポートされているキーワードは次のとおりです。
   
-- today  
+- 今日  
 - tomorrow
 - yesterday
 - this week    
@@ -120,21 +120,21 @@ EWS マネージ API および EWS のクエリ文字列は、AQS 構文の一�
 - past month    
 - coming year
     
-も大きいか小さいのようなリレーショナル演算子を使用して日付の値の型を比較することも、範囲演算子 **.** の範囲として指定されたのか。たとえば、受信:\>2013/11/30 が送信される:\>昨日、= received:12/1/2013..today は、すべての有効なクエリ文字列とします。 
+日付値型は、greater than または less than のような関係演算子で比較したり、範囲演算子 **..** を使用して範囲として指定したりすることもできます。たとえば、received:\>11/30/2013, sent:\>=yesterday、received:12/1/2013..today はすべて、有効なクエリ文字列です。 
   
 ### <a name="using-a-boolean-value-type"></a>ブール値型の使用
 
-ブール値型は、"true"または"false"にあります。 Isread:false は isread:FALSE と同じ結果になりますので、値は、大文字小文字を区別ではありません。
+ブール値型は "true" または "false" にできます。 値は大文字と小文字を区別しないので、isread:false と isread:FALSE で生成される結果は同じです。
   
 ### <a name="using-a-number-value-type"></a>数値型の使用
 
-として完全一致の場合は、番号の値の型を検索できますも検索するよりも大きいか小さいのようなリレーショナル演算子を使用するよりもします。 サイズ: 10000 が正確に、10000 バイトですが、サイズのサイズを持っているアイテムのみを取得するたとえば、:\>= 10000 は 10000 バイト以上のサイズを持っているアイテムを返します。 範囲演算子 ( **.**) を使用して範囲を指定することもできます。 たとえば、サイズ: 7000..8000 は 7000 と 8000 の間のサイズを持っているアイテムに戻ります。 
+数値型は、完全一致として検索できますが、greater than または less than のような関係演算子を使用して検索することもできます。 たとえば、size:10000 では、正確に 10000 バイトのサイズを持つアイテムのみが返されますが、size:\>=10000 では 10000 バイト以上のサイズを持つアイテムが返されます。 範囲演算子 (**..**) を使用して範囲を指定することもできます。 たとえば、size:7000..8000 ではサイズが 7000 と 8000 の間のアイテムが返されます。 
   
 ### <a name="using-logical-operators"></a>論理演算子の使用
 
 クエリ文字列は、次の論理演算子をサポートします。
   
-**表 2 になります。論理演算子がサポートされています。**
+**表 2. サポートされる論理演算子**
 
 |**演算子**|**例**|
 |:-----|:-----|
@@ -142,24 +142,24 @@ EWS マネージ API および EWS のクエリ文字列は、AQS 構文の一�
 |OR  <br/> |subject:meeting OR from:"Hope Gross"  <br/> from:("Sadie Daniels" OR "Hope Gross")  <br/> |
 |NOT  <br/> |NOT from:"Ronnie Sturgis"  <br/> received:NOT today  <br/> |
    
-複数の条件を結合する、または 1 つのキーワード/値ペア内の複数の値を結合するに、これらの演算子を使用することに注意してください。 ただし、1 つのキーワード/値ペアで複数の値を結合し、ときに、複数の値を囲むかっこを使用してください。 理由を理解してから検索を検討してください:"Sadie Daniels"または「を期待して粗」です。 実際にこの検索は、次の条件として解釈されます。
+これらの演算子を使用して、複数の条件を結合したり、1 つのキーワード/値のペア内で複数の値を結合したりできることに注意してください。 ただし、1 つのキーワード/値ペアで複数の値を結合する場合は、かっこを使用して複数の値を囲む必要があります。 その理由を理解するために、from:"Sadie Daniels" OR "Hope Gross" で検索してみてください。 この検索は、実際には次の条件として解釈されます。
   
 - アイテムが Sadie Daniels からのもの、または
     
 - アイテムのインデックス付きプロパティのいずれかに「Hope Gross」という語句がある。
     
-対照的に、: ("Sadie Daniels"または「を期待して粗」) として解釈されます。 
+対照的に、from:("Sadie Daniels" OR "Hope Gross") は次のように解釈されます。 
   
 - アイテムが Sadie Daniels からのもの、または
     
 - アイテムが Hope Gross からのもの
     
-既定の演算子と、複数の条件が指定されていますが、論理演算子は含まれていません。 たとえば、添付ファイル: true は、件名: プロジェクトは、: 添付ファイル: true AND 件名: プロジェクトです。
+複数の条件が指定されているものの論理演算子は含まれていない場合の既定の演算子は AND です。 たとえば、has attachment:true subject:project は has:attachment:true AND subject:project と同じです。
   
-## <a name="example-find-items-by-using-a-query-string-and-the-ews-managed-api"></a>例:クエリ文字列と EWS マネージ API を使用してアイテムを検索する
+## <a name="example-find-items-by-using-a-query-string-and-the-ews-managed-api"></a>例: クエリ文字列と EWS マネージ API を使用してアイテムを検索する
 <a name="bk_ExampleEWSMA"> </a>
 
-この例では、 **SearchWithQueryString**と呼ばれるメソッドを定義します。 [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)オブジェクト、 [WellKnownFolderName](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.wellknownfoldername%28v=exchg.80%29.aspx)オブジェクト、およびパラメーターとしてクエリ文字列を表す**string**オブジェクトがかかります。 次の使用例では、[資格情報](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservicebase.credentials%28v=exchg.80%29.aspx)と[Url](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.url%28v=exchg.80%29.aspx)のプロパティで有効な値を持つ**ExchangeService**オブジェクトが初期化されたことを前提としています。 
+この例では、**SearchWithQueryString** というメソッドが定義されています。 パラメーターとして、[ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクト、[WellKnownFolderName](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.wellknownfoldername%28v=exchg.80%29.aspx) オブジェクト、クエリ文字列を表す **string** オブジェクトを取ります。 この例では、**ExchangeService** オブジェクトは [Credentials](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservicebase.credentials%28v=exchg.80%29.aspx) プロパティと [Url](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.url%28v=exchg.80%29.aspx) プロパティの有効な値で初期化されているものとします。 
   
 ```cs
 using Microsoft.Exchange.WebServices.Data;
@@ -208,10 +208,10 @@ string queryString = "subject:\"project plan\"";
 SearchWithQueryString(service, WellKnownFolderName.Inbox, queryString);
 ```
 
-## <a name="example-find-items-by-using-a-query-string-and-ews"></a>例:クエリ文字列と EWS を使用してアイテムを検索する
+## <a name="example-find-items-by-using-a-query-string-and-ews"></a>例: クエリ文字列と EWS を使用してアイテムを検索する
 <a name="bk_ExampleEWS"> </a>
 
-この例では、SOAP [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)要求は、件名に「プロジェクト計画」という語句で受信トレイのすべての項目を検索します。 
+この例では、SOAP [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 要求で、件名に「project plan」という語句が含まれる受信トレイ内のすべてのアイテムを検索します。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -288,9 +288,8 @@ SearchWithQueryString(service, WellKnownFolderName.Inbox, queryString);
 ## <a name="see-also"></a>関連項目
 
 - [Exchange の検索と EWS](search-and-ews-in-exchange.md)    
-- [EWS を使って Exchange 検索フィルターを使用します。](how-to-use-search-filters-with-ews-in-exchange.md)    
-- [ExchangeService.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)    
-- 
-  [FindItem 操作](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)
+- [Exchange で EWS とともに検索フィルターを使用する](how-to-use-search-filters-with-ews-in-exchange.md)    
+- [ExchangeService.FindItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)    
+- [FindItem 操作](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)
     
 

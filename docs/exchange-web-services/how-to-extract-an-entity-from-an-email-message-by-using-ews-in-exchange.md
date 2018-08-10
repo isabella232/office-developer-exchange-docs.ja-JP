@@ -1,37 +1,37 @@
 ---
-title: EWS を使用して Exchange が電子メール メッセージからエンティティを抽出します。
+title: Exchange において EWS を使用してメール メッセージからエンティティを抽出する
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 6396b009-5f6e-41eb-a75a-224d43e864ae
-description: Exchange において  EWS マネージ API または EWS を使用して、メール メッセージの本文から情報を抽出する方法を説明します。
+description: Exchange において EWS マネージ API または EWS を使用して、メール メッセージの本文から情報を抽出する方法を説明します。
 ms.openlocfilehash: d3d5c4b756347a4cedede184709884d5ed8f08b4
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758949"
 ---
-# <a name="extract-an-entity-from-an-email-message-by-using-ews-in-exchange"></a>EWS を使用して Exchange が電子メール メッセージからエンティティを抽出します。
+# <a name="extract-an-entity-from-an-email-message-by-using-ews-in-exchange"></a>Exchange において EWS を使用してメール メッセージからエンティティを抽出する
 
-Exchange において  EWS マネージ API または EWS を使用して、メール メッセージの本文から情報を抽出する方法を説明します。
+Exchange において EWS マネージ API または EWS を使用して、メール メッセージの本文から情報を抽出する方法を説明します。
   
 EWS マネージ API または EWS を使用して、Exchange サーバーがメール メッセージから抽出する住所、連絡先、メール アドレス、提案された会議、電話番号、タスク、URL にアクセスできます。この情報を新しいアプリのために使用したり、既存のアプリでこの情報を使用してさまざまなアクションの次の処理を提案したりできます。たとえば、連絡先エンティティ、提案された会議、タスクのヒントがメールの中で識別された場合、お客様のアプリで、情報を事前設定して新しいアイテムの作成を提案できます。抽出されたエンティティを使用して、データの背後にある意図を十分に生かすことができます。さらに、メール メッセージのコンテンツを実行できる成果へとシームレスに統合できるよう、ユーザーを支援します。
   
-アドレス、連絡先、電子メール アドレス、会議提案、電話番号、タスク、および Url のエンティティの抽出は、Exchange ストア内のすべての項目に既に組み込まれて。 EWS のマネージ API を使用する場合、 [Item.EntityExtractionResult](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.entityextractionresult%28v=exchg.80%29.aspx)プロパティは、 [Item.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx)メソッドの呼び出しでのエンティティを取得します。 EWS を使用する場合、 [EntityExtractionResult](http://msdn.microsoft.com/library/643b99ab-ff90-4411-864c-1077623028d6%28Office.15%29.aspx)要素は、 [GetItem](http://msdn.microsoft.com/library/dcf40fa7-7796-4a5c-bf5b-7a509a18d208%28Office.15%29.aspx)操作の呼び出しでの抽出されたすべてのエンティティを取得します。 抽出されたエンティティの結果を取得した後に関連する情報を収集する各エンティティのコレクションを移動することができます。 など、提案された会議が抽出された場合は、提案された会議の件名、出席者リスト、開始時刻、および終了時刻を取得できます。 
+住所、連絡先、メール アドレス、提案された会議、電話番号、タスク、URL のエンティティの抽出機能は、Exchange ストアのすべてのアイテムに組み込まれています。 EWS マネージ API を使用している場合、[Item.Bind](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) メソッドを呼び出し、[Item.EntityExtractionResult](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.item.entityextractionresult%28v=exchg.80%29.aspx) プロパティでエンティティを取得します。 EWS を使用している場合、[GetItem](http://msdn.microsoft.com/library/dcf40fa7-7796-4a5c-bf5b-7a509a18d208%28Office.15%29.aspx) 操作を呼び出し、[EntityExtractionResult](http://msdn.microsoft.com/library/643b99ab-ff90-4411-864c-1077623028d6%28Office.15%29.aspx) 要素ですべての抽出されたエンティティを取得します。 抽出されたエンティティの結果を取得した後、各エンティティのコレクションをたどって関連情報を収集できます。 たとえば、提案された会議が抽出された場合、提案された会議の件名、出席者リスト、開始時刻、終了時刻を取得できます。 
   
-**表 1 です。EWS のマネージ API のプロパティと、EWS の要素が含まれているエンティティを展開します。**
+**表 1. 抽出されたエンティティを含む EWS マネージ API のプロパティと EWS の要素**
 
-|**抽出されたエンティティ**|**EWS のマネージ API のプロパティ**|**EWS の要素**|
+|**抽出されたエンティティ**|**EWS マネージ API のプロパティ**|**EWS の要素**|
 |:-----|:-----|:-----|
-|住所  <br/> |[EntityExtractionResult.Addresses](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.entityextractionresult.addresses%28v=exchg.80%29.aspx) <br/> |[アドレス](http://msdn.microsoft.com/library/0c1f3fd3-1b78-46ee-8dd4-b2aff51e767e%28Office.15%29.aspx) <br/> |
-|連絡先  <br/> |[EntityExtractionResult.Contacts](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.entityextractionresult.contacts%28v=exchg.80%29.aspx) <br/> |[連絡先](http://msdn.microsoft.com/library/a2c1e833-5f8c-438d-bad7-bb5dcc29ca9e%28Office.15%29.aspx) <br/> |
-|電子メール アドレス  <br/> |[EntityExtractionResult.EmailAddresses](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.entityextractionresult.emailaddresses%28v=exchg.80%29.aspx) <br/> |[EmailAddresses](http://msdn.microsoft.com/library/2fc4a8e8-5377-4059-8fb4-3fdabfd30fe3%28Office.15%29.aspx) <br/> |
-|提案された会議  <br/> |[EntityExtractionResult.MeetingSuggestions](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.entityextractionresult.meetingsuggestions%28v=exchg.80%29.aspx) <br/> |[MeetingSuggestions](http://msdn.microsoft.com/library/c99e9a60-9e38-425d-ad03-47c8917f41da%28Office.15%29.aspx) <br/> |
-|電話番号  <br/> |[EntityExtractionResult.PhoneNumbers](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.entityextractionresult.phonenumbers%28v=exchg.80%29.aspx) <br/> |[PhoneNumbers](http://msdn.microsoft.com/library/9ff6ae98-34a1-47f7-bde5-608251a789f7%28Office.15%29.aspx) <br/> |
-|タスクのヒント  <br/> |[EntityExtractionResult.TaskSuggestions](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.entityextractionresult.addresses%28v=exchg.80%29.aspx) <br/> |[TaskSuggestions](http://msdn.microsoft.com/library/7d3c6314-2a5c-4fc3-b5f9-ae6d4946aac3%28Office.15%29.aspx) <br/> |
-|URL  <br/> |[EntityExtractionResult.Urls](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.entityextractionresult.addresses%28v=exchg.80%29.aspx) <br/> |[Url](http://msdn.microsoft.com/library/c39744ea-0cee-4954-8653-8279d6b10161%28Office.15%29.aspx) <br/> |
+|住所  <br/> |[EntityExtractionResult.Addresses](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.entityextractionresult.addresses%28v=exchg.80%29.aspx) <br/> |[Addresses](http://msdn.microsoft.com/library/0c1f3fd3-1b78-46ee-8dd4-b2aff51e767e%28Office.15%29.aspx) <br/> |
+|連絡先  <br/> |[EntityExtractionResult.Contacts](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.entityextractionresult.contacts%28v=exchg.80%29.aspx) <br/> |[Contacts](http://msdn.microsoft.com/library/a2c1e833-5f8c-438d-bad7-bb5dcc29ca9e%28Office.15%29.aspx) <br/> |
+|電子メール アドレス  <br/> |[EntityExtractionResult.EmailAddresses](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.entityextractionresult.emailaddresses%28v=exchg.80%29.aspx) <br/> |[EmailAddresses](http://msdn.microsoft.com/library/2fc4a8e8-5377-4059-8fb4-3fdabfd30fe3%28Office.15%29.aspx) <br/> |
+|会議提案  <br/> |[EntityExtractionResult.MeetingSuggestions](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.entityextractionresult.meetingsuggestions%28v=exchg.80%29.aspx) <br/> |[MeetingSuggestions](http://msdn.microsoft.com/library/c99e9a60-9e38-425d-ad03-47c8917f41da%28Office.15%29.aspx) <br/> |
+|電話番号  <br/> |[EntityExtractionResult.PhoneNumbers](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.entityextractionresult.phonenumbers%28v=exchg.80%29.aspx) <br/> |[PhoneNumbers](http://msdn.microsoft.com/library/9ff6ae98-34a1-47f7-bde5-608251a789f7%28Office.15%29.aspx) <br/> |
+|タスクのヒント  <br/> |[EntityExtractionResult.TaskSuggestions](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.entityextractionresult.addresses%28v=exchg.80%29.aspx) <br/> |[TaskSuggestions](http://msdn.microsoft.com/library/7d3c6314-2a5c-4fc3-b5f9-ae6d4946aac3%28Office.15%29.aspx) <br/> |
+|URL  <br/> |[EntityExtractionResult.Urls](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.entityextractionresult.addresses%28v=exchg.80%29.aspx) <br/> |[Urls](http://msdn.microsoft.com/library/c39744ea-0cee-4954-8653-8279d6b10161%28Office.15%29.aspx) <br/> |
    
 エンティティの抽出は自然言語の認識機能に依存するため、エンティティの認識は非決定的で、成功するかどうかはコンテキストに依存しています。自然言語の認識がどのように機能するかを示すため、この記事の例では入力として次のメールを使用します。
   
@@ -60,9 +60,9 @@ EWS マネージ API または EWS を使用して、Exchange サーバーがメ
 ## <a name="extract-all-entities-from-an-email-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して、メールからすべてのエンティティを抽出する
 <a name="bk_extractewsma"> </a>
 
-次のコード例では、 [Item.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx)メソッドを使用し、抽出されたエンティティとそのプロパティの各反復で、サーバーによって抽出されたすべてのエンティティを表示する方法を示します。 
+次のコード例は、サーバーが抽出したすべてのエンティティを [Item.Bind](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) メソッドを使用して表示する方法を示しています。その後、抽出されたエンティティとそのプロパティのすべてを列挙します。 
   
-次の使用例は、**サービス**は、有効な[ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)オブジェクトと、その**アイテム Id**では、 [Id](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx)電子メール メッセージの移動またはコピーすることを想定しています。 
+この例では、**service** は有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトで、**ItemId** は移動またはコピー対象のメール メッセージの [Id](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) であると想定しています。 
   
 ```cs
 public static void ExtractEntities(ExchangeService service, ItemId ItemId)
@@ -223,16 +223,16 @@ Task string:      Also, can you forward this to Magdalena?
 URL: http://www.bestforyouorganics.com
 ```
 
-すべてのアドレス、連絡先、電子メール アドレス、電話番号、タスク、および Url が展開されたこと期待どおりに注意してください。 ただし、会議候補は、少し複雑です。 通知、提案された会議の終了時刻と開始時刻は、期待どおりでない場合があります。 電子メールの開始時刻は「この金曜日 7 時」ですが、抽出された開始時刻の値は、10/1/0104 午後 2:00:00 です。 これは、開始時刻と終了時刻の抽出には、サーバーがエンコードされた日付であるためです。 会議の提案では、 **dateTime**値を解釈する方法の詳細についてを参照してください[[MS OXCEXT]: クライアント拡張機能のメッセージ オブジェクト プロトコル](http://msdn.microsoft.com/en-us/library/hh968601%28v=exchg.80%29.aspx)。
+すべての住所、連絡先、メール アドレス、電話番号、タスク、URL が想定通り抽出されたことに注意してください。 ただし、提案された会議は、やや複雑です。 提案された会議の開始時刻と終了時刻が、想定通りではないことに注意してください。 メールでの開始時刻は "今週金曜日 7 時" ですが、抽出された開始時刻の値は、10/1/0104 2:00:00 PM です。 これは、サーバーによって抽出された開始時刻と終了時刻が、エンコードされた日付であるために発生します。 提案された会議での **dateTime** 値を解釈する方法について詳しくは、「[[MS OXCEXT]:クライアント拡張機能のメッセージ オブジェクト プロトコル](http://msdn.microsoft.com/ja-JP/library/hh968601%28v=exchg.80%29.aspx)」をご覧ください。
   
 ## <a name="extract-all-entities-from-an-email-by-using-ews"></a>EWS を使用して、メールからすべてのエンティティを抽出する
 <a name="bk_extractews"> </a>
 
-アイテムから抽出されたエンティティを取得するために[GetItem](http://msdn.microsoft.com/library/dcf40fa7-7796-4a5c-bf5b-7a509a18d208%28Office.15%29.aspx)操作と[EntityExtractionResult](http://msdn.microsoft.com/library/643b99ab-ff90-4411-864c-1077623028d6%28Office.15%29.aspx)の要素を使用する方法を次のコード例に示します。 
+次のコード例は、[GetItem](http://msdn.microsoft.com/library/dcf40fa7-7796-4a5c-bf5b-7a509a18d208%28Office.15%29.aspx) 操作と [EntityExtractionResult](http://msdn.microsoft.com/library/643b99ab-ff90-4411-864c-1077623028d6%28Office.15%29.aspx) 要素を使用して、アイテムから抽出されたエンティティを取得する方法を示しています。 
   
-[EWS のマネージ API を使用して、電子メールからのすべてのエンティティを抽出](#bk_extractewsma)するのには**Bind**メソッドを使用するときに、EWS のマネージ API で送信される XML の要求にもです。
+これは、**Bind** メソッドを使用して [EWS マネージ API を使用することによりメールからのすべてのエンティティを抽出する](#bk_extractewsma)際に、EWS マネージ API が送信する XML 要求でもあります。
   
-[アイテム Id](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx)要素の値は、読みやすくするために短縮されます。 
+[ItemId](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) 要素の値は、読みやすいよう短縮してあります。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -259,9 +259,9 @@ URL: http://www.bestforyouorganics.com
 </soap:Envelope>
 ```
 
-サーバーは、 [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **NoError**、電子メール メッセージが正常に取得されたことを示す値を含む[GetItemResponse](http://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx)メッセージの**GetItem**要求に応答します。 応答には、抽出された各エンティティの**EntityExtractionResult**も含まれています。 
+サーバーは、**GetItem** 要求に対して [GetItemResponse](http://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx) メッセージで応答します。このメッセージには、[ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) の値として **NoError** が含まれており、それは、メール メッセージが正常に取得されたことを示しています。 応答には、抽出されたエンティティごとに **EntityExtractionResult** も含まれています。 
   
-**アイテム Id**要素の値は、読みやすくするために短縮されます。 
+**ItemId** 要素の値は、読みやすいよう短縮してあります。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -366,12 +366,12 @@ URL: http://www.bestforyouorganics.com
 </s:Envelope>
 ```
 
-すべてのアドレス、連絡先、電子メール アドレス、電話番号、タスク、および Url が展開されたこと期待どおりに注意してください。 ただし、会議候補は、少し複雑です。 通知、提案された会議の終了時刻と開始時刻は、期待どおりでない場合があります。 電子メールの開始時刻が「この金曜日 7 時」であるが、抽出された開始時刻の値、10/1/0104 午後 2:00:00 です。 これは、開始時刻と終了時刻の抽出には、サーバーがエンコードされた日付であるためです。 会議の提案では、 **dateTime**値の解釈の詳細についてを参照してください[[MS OXCEXT]: クライアント拡張機能のメッセージ オブジェクト プロトコル](http://msdn.microsoft.com/en-us/library/hh968601%28v=exchg.80%29.aspx)。
+すべての住所、連絡先、メール アドレス、電話番号、タスク、URL が想定通り抽出されたことに注意してください。 ただし、提案された会議は、やや複雑です。 提案された会議の開始時刻と終了時刻が、想定通りではないことに注意してください。 メールでの開始時刻は "今週金曜日 7 時" となっていますが、抽出された開始時刻の値は、10/1/0104 2:00:00 PM です。 これは、サーバーによって抽出された開始時刻と終了時刻が、エンコードされた日付であるために発生します。 提案された会議での **dateTime** 値の解釈について詳しくは、「[[MS OXCEXT]: クライアント拡張機能のメッセージ オブジェクト プロトコル](http://msdn.microsoft.com/ja-JP/library/hh968601%28v=exchg.80%29.aspx)」をご覧ください。
   
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の電子メールと EWS](email-and-ews-in-exchange.md)
-- [Item.EntityExtractionResult](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.entityextractionresult%28v=exchg.80%29.aspx)    
+- [Exchange のメールと EWS](email-and-ews-in-exchange.md)
+- [Item.EntityExtractionResult](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.item.entityextractionresult%28v=exchg.80%29.aspx)    
 - [EntityExtractionResult](http://msdn.microsoft.com/library/643b99ab-ff90-4411-864c-1077623028d6%28Office.15%29.aspx)
     
 

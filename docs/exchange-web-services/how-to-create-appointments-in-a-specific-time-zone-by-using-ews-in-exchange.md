@@ -1,5 +1,5 @@
 ---
-title: Exchange EWS を使用して、特定のタイム ゾーンで予定を作成します。
+title: Exchange の EWS を使用して、特定のタイム ゾーンで予定を作成する
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,31 +8,31 @@ ms.assetid: e68aaa27-250e-4170-b099-077a979c127c
 description: Exchange の EWS マネージ API または EWS を使用して、特定のタイム ゾーンで予定を作成する方法について説明します。
 ms.openlocfilehash: 1725498847f89a417b62a06fb8a3109af5c4deb0
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758941"
 ---
-# <a name="create-appointments-in-a-specific-time-zone-by-using-ews-in-exchange"></a>Exchange EWS を使用して、特定のタイム ゾーンで予定を作成します。
+# <a name="create-appointments-in-a-specific-time-zone-by-using-ews-in-exchange"></a>Exchange の EWS を使用して、特定のタイム ゾーンで予定を作成する
 
 Exchange の EWS マネージ API または EWS を使用して、特定のタイム ゾーンで予定を作成する方法について説明します。
   
-Exchange の予定表の予定または会議が作成されると、予定の作成のタイム ゾーンとして、開始時刻と終了時刻を指定するために使用するタイム ゾーンが保存されます。 そのタイム ゾーンにも使用[、明示的なタイム ゾーンが指定されていない日付と時刻の値の意味](time-zones-and-ews-in-exchange.md)を、タイム ゾーンを指定してオプションについて理解することが重要であるようにします。
+Exchange の予定表に予定または会議を作成するときに、開始時刻と終了時刻の指定に使用したタイム ゾーンは、予定の作成タイム ゾーンとして保存されます。 そのタイム ゾーンは、[明示的にタイム ゾーンが指定されていない日付および時刻の値の解釈](time-zones-and-ews-in-exchange.md)にも使用されるため、タイム ゾーンを指定するオプションについて理解することが重要になります。
   
 ## <a name="creating-appointments-in-different-time-zones-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して異なるタイムゾーンで予定を作成する
 
-EWS マネージ API を使用して予定または会議を作成するときには、タイム ゾーンを指定するための 3 オプションがあります。
+EWS マネージ API を使用して予定または会議を作成するときには、タイム ゾーンを指定するための 3 つのオプションがあります。
   
-- EWS のマネージ API が実行されているコンピューターのタイム ゾーンを使用するに指定しないタイム ゾーン、 [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)オブジェクトを作成するときです。 
+- EWS マネージ API を実行しているコンピューターのタイム ゾーン使用する。この場合は、[ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトの作成時にタイム ゾーンを指定しません。 
     
-- すべての日付と時刻のプロパティの特定のタイム ゾーンを使用するには、プロパティを含む新しい予定を作成するときや、会議は、 **ExchangeService**オブジェクトのコンス トラクターでタイム ゾーンを指定します。 
+- すべての日付/時刻のプロパティ (新しい予定や会議の作成時のプロパティも含む) に特定のタイム ゾーンを指定する。この場合は、**ExchangeService** オブジェクトのコンストラクターでタイム ゾーンを指定します。 
     
-- [ExchangeService.TimeZone](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.timezone%28v=exchg.80%29.aspx)プロパティで指定されたよりも、別のタイム ゾーンを使用するには、 [Appointment.StartTimeZone](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.starttimezone%28v=exchg.80%29.aspx)と[Appointment.EndTimeZone](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.endtimezone%28v=exchg.80%29.aspx)のプロパティを使用します。 
+- [ExchangeService.TimeZone](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.timezone%28v=exchg.80%29.aspx) プロパティで指定したものとは別のタイム ゾーンを使用する。この場合は、[Appointment.StartTimeZone](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment.starttimezone%28v=exchg.80%29.aspx) プロパティと [Appointment.EndTimeZone](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment.endtimezone%28v=exchg.80%29.aspx) プロパティを使用します。 
     
     > [!NOTE]
-    > **EndTimeZone**プロパティをできるは、 **Exchange2010**またはそれ以降、 [ExchangeService.RequestedServerVersion](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservicebase.requestedserverversion%28v=exchg.80%29.aspx)プロパティが設定されている場合だけです。 使用できない場合は**StartTimeZone**を設定する予定の時間の開始と終了の両方に適用されます。 
+    > **EndTimeZone** プロパティは、[ExchangeService.RequestedServerVersion](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservicebase.requestedserverversion%28v=exchg.80%29.aspx) プロパティが **Exchange2010** 以降に設定されている場合にのみ使用できます。 使用できない場合は、**StartTimeZone** を設定して、予定の開始時刻と終了時刻の両方に適用します。 
   
-次の例では、EWS のマネージ API を使用して、次の 3 つの予定を作成できます。 未指定のタイム ゾーンと最後に 1 時間後からここでは、2 日の午後 1時 00分に開始する予定が設定されています。 最初の予定は、EWS のマネージ API の既定の動作を使用して、クライアント コンピューターのタイム ゾーンで作成されます。 **Appointment.StartTimeZone**および**Appointment.EndTimeZone**プロパティを使用してサーバーの全体のタイム ゾーンで 2 番目が作成されます。 山地標準時ゾーンで、 **ExchangeService.TimeZone**プロパティを使用して 3 番目が作成されます。 
+次の例では、3 つの予定の作成に EWS マネージ API が使用されています。 それぞれの予定は、未指定のタイム ゾーンで現在から 2 日後の 1:00 PM に始まり、その 1 時間後に終わります。 最初の予定は、既定の EWS マネージ API の動作を使用することで、クライアント コンピューターのタイム ゾーンで作成されます。 2 番目は、**Appointment.StartTimeZone** と **Appointment.EndTimeZone** プロパティを使用することで、中部標準時で作成されます。 3 番目は、**ExchangeService.TimeZone** プロパティを使用することで、山地標準時で作成されます。 
   
 ```cs
 using Microsoft.Exchange.WebServices.Data;
@@ -130,13 +130,13 @@ static void CreateAppointments(string userEmail, SecureString userPass)
 
 EWS を使用して予定または会議を作成するときには、タイム ゾーンを指定するための 3 オプションがあります。
   
-- 使用するには世界協定時刻 (UTC) に含まれない[TimeZoneContext](http://msdn.microsoft.com/library/573c462b-aa1d-4ba0-8852-e3f48b26873b%28Office.15%29.aspx)要素、 [MeetingTimeZone](http://msdn.microsoft.com/library/413b47d9-8126-462c-9a4f-4e771a5e8889%28Office.15%29.aspx)の要素 (Exchange 2007 のみ) または[StartTimeZone](http://msdn.microsoft.com/library/d38c4dc1-4ecb-42a1-8d57-a451b16a2de2%28Office.15%29.aspx)および[EndTimeZone](http://msdn.microsoft.com/library/6c53c337-be60-4d22-9e9e-a0c140c5e913%28Office.15%29.aspx)要素 (Exchange 2010 およびそれ以降)、 [CreateItem 操作](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx)要求します。 
+- 協定世界時 (UTC) を使用する。この場合は、[TimeZoneContext](http://msdn.microsoft.com/library/573c462b-aa1d-4ba0-8852-e3f48b26873b%28Office.15%29.aspx) 要素、[MeetingTimeZone](http://msdn.microsoft.com/library/413b47d9-8126-462c-9a4f-4e771a5e8889%28Office.15%29.aspx) 要素 (Exchange 2007 のみ)、または [StartTimeZone](http://msdn.microsoft.com/library/d38c4dc1-4ecb-42a1-8d57-a451b16a2de2%28Office.15%29.aspx) 要素と [EndTimeZone](http://msdn.microsoft.com/library/6c53c337-be60-4d22-9e9e-a0c140c5e913%28Office.15%29.aspx) 要素 (Exchange 2010 以降) を [CreateItem 操作](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx)要求に含めません。 
     
-- すべての日付と時刻のプロパティの特定のタイム ゾーンを使用するには、プロパティを含む新しい予定を作成するときや、会議は[CreateItem 操作](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx)要求内の[TimeZoneContext](http://msdn.microsoft.com/library/573c462b-aa1d-4ba0-8852-e3f48b26873b%28Office.15%29.aspx)要素でタイム ゾーンを指定します。 
+- すべての日付/時刻のプロパティ (新しい予定や会議の作成時のプロパティも含む) に特定のタイム ゾーンを指定する。この場合は、[CreateItem 操作](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx)要求の [TimeZoneContext](http://msdn.microsoft.com/library/573c462b-aa1d-4ba0-8852-e3f48b26873b%28Office.15%29.aspx) 要素でタイム ゾーンを指定します。 
     
-- [TimeZoneContext](http://msdn.microsoft.com/library/573c462b-aa1d-4ba0-8852-e3f48b26873b%28Office.15%29.aspx)要素で指定されたよりも、別のタイム ゾーンを使用するには、要素の[TimeZoneContext](http://msdn.microsoft.com/library/573c462b-aa1d-4ba0-8852-e3f48b26873b%28Office.15%29.aspx) 、 [MeetingTimeZone](http://msdn.microsoft.com/library/413b47d9-8126-462c-9a4f-4e771a5e8889%28Office.15%29.aspx)要素 (Exchange 2007 のみ) または[StartTimeZone](http://msdn.microsoft.com/library/d38c4dc1-4ecb-42a1-8d57-a451b16a2de2%28Office.15%29.aspx)と[EndTimeZone](http://msdn.microsoft.com/library/6c53c337-be60-4d22-9e9e-a0c140c5e913%28Office.15%29.aspx)の要素 (Exchange 2010 以降) [CreateItem 操作](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx)の要求にします。 
+- [TimeZoneContext](http://msdn.microsoft.com/library/573c462b-aa1d-4ba0-8852-e3f48b26873b%28Office.15%29.aspx) 要素で指定したものとは別のタイム ゾーンを使用する。この場合は、[TimeZoneContext](http://msdn.microsoft.com/library/573c462b-aa1d-4ba0-8852-e3f48b26873b%28Office.15%29.aspx) 要素、[MeetingTimeZone](http://msdn.microsoft.com/library/413b47d9-8126-462c-9a4f-4e771a5e8889%28Office.15%29.aspx) 要素 (Exchange 2007 のみ)、または [StartTimeZone](http://msdn.microsoft.com/library/d38c4dc1-4ecb-42a1-8d57-a451b16a2de2%28Office.15%29.aspx) 要素と [EndTimeZone](http://msdn.microsoft.com/library/6c53c337-be60-4d22-9e9e-a0c140c5e913%28Office.15%29.aspx) 要素 (Exchange 2010 以降) を [CreateItem](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) 操作要求に含めません。 
     
-次の使用例[CreateItem 操作](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx)の要求では、UTC を使用して予定を作成します。 **TimeZoneContext**要素、 **StartTimeZone**要素、および**EndTimeZone**の要素が存在しないことに注意してください。 要素の**開始**と**終了**の値は UTC で表されます。 
+次の [CreateItem 操作](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx)要求の例では、UTC を使用して予定を作成します。 **TimeZoneContext** 要素、**StartTimeZone** 要素、**EndTimeZone** 要素が存在しないことに注意してください。 **Start** 要素と **End** 要素の値は UTC で表されます。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -162,7 +162,7 @@ EWS を使用して予定または会議を作成するときには、タイム 
 </soap:Envelope>
 ```
 
-次の使用例[CreateItem 操作](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx)要求は、予定のサーバーの全体のタイム ゾーンを指定するのには、 **StartTimeZone**と**EndTimeZone**の要素を使用します。 **TimeZoneContext**要素が存在しないことに注意してください。 ただし、存在する場合は、 **StartTimeZone**と**EndTimeZone**の要素の値はその値をオーバーライドします。 もう一度、**開始**および**終了**要素の値は UTC で表されます。 
+次の [CreateItem 操作](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx)要求の例では、**StartTimeZone** 要素と **EndTimeZone** 要素を使用して、予定に中部標準時を指定します。 **TimeZoneContext** 要素が存在しないことに注意してください。 ただし、その要素が存在していたとしても、その値は **StartTimeZone** 要素と **EndTimeZone** 要素の値で上書きされます。 この場合も、**Start** 要素と **End** 要素の値は UTC で表されます。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -190,7 +190,7 @@ EWS を使用して予定または会議を作成するときには、タイム 
 </soap:Envelope>
 ```
 
-次の使用例[CreateItem 操作](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx)の要求は、 **TimeZoneContext**要素を山地標準時に設定します。 **StartTimeZone**と**EndTimeZone**の要素が存在しないことに注意してください。 もう一度、**開始**および**終了**要素の値は UTC で表されます。 
+次の [CreateItem 操作](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx)要求の例では、**TimeZoneContext** 要素を山地標準時に設定します。 **StartTimeZone** 要素と **EndTimeZone**要素が存在しないことに注意してください。 この場合も、**Start** 要素と **End** 要素の値は UTC で表されます。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -223,15 +223,15 @@ EWS を使用して予定または会議を作成するときには、タイム 
   
 ## 
 
-特定のタイム ゾーンで予定を作成する方法を理解する別[の既存の予定のタイム ゾーンを更新](how-to-update-the-time-zone-for-an-appointment-by-using-ews-in-exchange.md)する場合があります。 
+特定のタイム ゾーンで予定を作成する方法について理解できました。次は、[既存の予定のタイム ゾーンを更新](how-to-update-the-time-zone-for-an-appointment-by-using-ews-in-exchange.md)して別のタイム ゾーンにしてみてください。 
   
 ## <a name="see-also"></a>関連項目
 
 
 - [Exchange のタイム ゾーンと EWS](time-zones-and-ews-in-exchange.md)
     
-- [Exchange EWS を使用して予定のタイム ゾーンを更新します。](how-to-update-the-time-zone-for-an-appointment-by-using-ews-in-exchange.md)
+- [Exchange の EWS を使用して予定のタイム ゾーンを更新する](how-to-update-the-time-zone-for-an-appointment-by-using-ews-in-exchange.md)
     
-- [Exchange 2013 の EWS を使用して予定および会議を作成します。](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)
+- [Exchange 2013 の EWS を使用して予定と会議を作成する](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)
     
 

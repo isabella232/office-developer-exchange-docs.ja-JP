@@ -1,62 +1,62 @@
 ---
-title: Exchange SCP のルックアップを使用して自動検出エンドポイントを検索します。
+title: Exchange の SCP 参照を使用して自動検出エンドポイントを見つける
 manager: kelbow
 ms.date: 09/17/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: b24228a8-5127-4bac-aef0-9c9e8843c9ff
-description: Active Directory ドメイン サービス (AD DS) での自動検出 SCP オブジェクトを検索し、Exchange の自動検出サービスで使用する自動検出エンドポイントの Url を探す場合に使用する方法を確認します。
+description: Active Directory ドメイン サービス (AD DS) で自動検出 SCP オブジェクトを見つけ、それらのオブジェクトを使用して、Exchange 自動検出サービスで使用する自動検出エンドポイント URL を検出する方法について説明します。
 ms.openlocfilehash: 59fd316d0aa0feea81b60c279040da018c51b47d
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758943"
 ---
-# <a name="find-autodiscover-endpoints-by-using-scp-lookup-in-exchange"></a>Exchange SCP のルックアップを使用して自動検出エンドポイントを検索します。
+# <a name="find-autodiscover-endpoints-by-using-scp-lookup-in-exchange"></a>Exchange の SCP 参照を使用して自動検出エンドポイントを見つける
 
-Active Directory ドメイン サービス (AD DS) での自動検出 SCP オブジェクトを検索し、Exchange の自動検出サービスで使用する自動検出エンドポイントの Url を探す場合に使用する方法を確認します。
+Active Directory ドメイン サービス (AD DS) で自動検出 SCP オブジェクトを見つけ、それらのオブジェクトを使用して、Exchange 自動検出サービスで使用する自動検出エンドポイント URL を検出する方法について説明します。
   
-自動検出では、Exchange サーバー上のメールボックスに接続するために必要な情報を取得するために簡単です。 ただし、自動検出を使用するには、自動検出サーバーの設定を取得しているユーザーに適切なを検索する方法が必要です。 AD DS 内のサービス接続ポイント (SCP) オブジェクトは、ドメインに参加しているクライアントが自動検出サーバーを検索する簡単な方法を提供します。 
+自動検出を使用すると、Exchange サーバー上のメールボックスに接続するために必要な情報を簡単に取得できます。 ただし、自動検出を使用するには、設定の取得対象であるユーザーに適した自動検出サーバーを見つける手段が必要になります。 AD DS のサービス接続ポイント (SCP) オブジェクトによって、ドメインに参加しているクライアントは自動検出サーバーを簡単に検索することができます。 
   
 ## <a name="get-set-up-to-find-autodiscover-endpoints"></a>自動検出エンドポイントを検出できるようにセットアップする
 <a name="bk_PreReqs"> </a>
 
-AD DS では、自動検出 SCP オブジェクトを探し、次にアクセスする必要があります。
+AD DS で自動検出 SCP オブジェクトを見つけるには、以下のものに対するアクセス権が必要です。
   
 - Exchange 2007 SP1 以降の Exchange オンプレミス バージョンを実行しているサーバー。
     
 - Exchange サーバーがインストールされているドメインに参加しているクライアント コンピューター。
     
-- Exchange サーバーにメールボックスがあるユーザー アカウント。  
+- Exchange サーバーにメールボックスがあるユーザー アカウント。 
     
-また、作業を開始する前にする必要があります理解するいくつかの基本的な概念です。 役に立つことがわかりますいくつかのリソースを次に示します。
+また、作業を開始する前に、いくつかの基本的概念に精通しておきます。 以下に、役立ついくつかのリソースを記します。
   
-**表 1 です。SCP オブジェクトから自動検出エンドポイントを検索するための関連記事**
+**表 1. SCP オブジェクトから自動検出エンドポイントを検索するための関連記事**
 
-|**この記事を読む**|**について説明しています.**|
+|**関連記事**|**内容**|
 |:-----|:-----|
 |[Exchange の自動検出](autodiscover-for-exchange.md) <br/> |自動検出サービスの動作方法。  <br/> |
-|[サービス接続ポイントの発行](http://msdn.microsoft.com/library/3544aa64-ecb0-48a1-ae49-05247a983842%28Office.15%29.aspx) <br/> |SCP オブジェクトを使用してサービス固有のデータを発行する方法。  <br/> |
+|[サービス接続ポイントを使用して発行する](http://msdn.microsoft.com/library/3544aa64-ecb0-48a1-ae49-05247a983842%28Office.15%29.aspx) <br/> |SCP オブジェクトを使用してサービス固有のデータを発行する方法。  <br/> |
    
-## <a name="locate-autodiscover-scp-objects-in-ad-ds"></a>AD DS 内の自動検出 SCP オブジェクトを検索します。
+## <a name="locate-autodiscover-scp-objects-in-ad-ds"></a>AD DS で自動検出 SCP オブジェクトを見つける
 <a name="bk_LocateScpObjects"> </a>
 
-AD DS で公開されている自動検出エンドポイントを検索するための第一歩は、自動検出 SCP オブジェクトを検索します。 Exchange では、自動検出の 2 種類の SCP オブジェクトを発行します。
+AD DS に発行されている自動検出エンドポイントを検索するための第一歩は、自動検出 SCP オブジェクトを見つけることです。 Exchange は、次の 2 種類の自動検出の SCP オブジェクトを発行します。
   
-- **SCP ポインター** : ユーザーのドメインの自動検出 SCP オブジェクトの検索に使用する特定の LDAP サーバーをポイントするための情報が含まれます。 SCP ポインターには、次の GUID がスタンプされて: 67661d7F-8 個の FC 4-4fa7-BFAC-E1D7794C1F68 です。 
+- **SCP ポインター** — このポインターには、対象ユーザーのドメインの自動検出 SCP オブジェクトを見つけるために使用する必要がある特定の LDAP サーバーをポイントする情報が含まれます。 SCP ポインターには、67661d7F-8FC4-4fa7-BFAC-E1D7794C1F68 という GUID が割り当てられています。 
     
-- **SCP Url**自動検出エンドポイントの Url が含まれます。 SCP Url には次の GUID を持つスタンプ: 77378F46-2 C 66-4aa9-A6A6-3E7A48B19596 です。 
+- **SCP URL** — 自動検出エンドポイントの URL が含まれます。 SCP URL には、77378F46-2C66-4aa9-A6A6-3E7A48B19596 という GUID が割り当てられています。 
     
 ### <a name="to-locate-autodiscover-scp-objects"></a>自動検出 SCP オブジェクトを見つけるには
 
-1. ルート ドメインの構成名前付けコンテキストへのパスを取得するのには AD DS の dse サービスのエントリの**configurationNamingContext**プロパティを参照してください。 [DirectoryEntry](http://msdn2.microsoft.com/EN-US/library/z9cddzaa)クラス、または AD DS にアクセスできる他の任意の API を使用してこれを行うことができます。 
+1. AD DS のルート DSE エントリの **configurationNamingContext** プロパティを読み取り、ドメインの構成名前付けコンテキストへのパスを取得します。 そのためには、[DirectoryEntry](http://msdn2.microsoft.com/ja-JP/library/z9cddzaa) クラス、または AD DS にアクセスできる他の任意の API を使用できます。 
     
-2. 構成名前付けコンテキストの SCP オブジェクトをいずれか、SCP ポインターの GUID を持つか、SCP URL に GUID**キーワード**のプロパティを検索します。 
+2. **keywords** プロパティに SCP ポインター GUID か SCP URL GUID のどちらかが含まれる構成名前付けコンテキストで、SCP オブジェクトを検索します。 
     
-3. SCP オブジェクトを SCP ポインターと同じエントリの [**キーワード**] プロパティを確認することでユーザーのドメインのスコープを検索したことを確認`"Domain=<domain>"`。 などのユーザーの電子メール アドレスが elvin@contoso.com の場合は、するを検索、SCP ポインターと同じである**キーワード**プロパティのエントリを`"Domain=contoso.com"`。 一致する SCP ポインターがある場合 SCP オブジェクトのセットを破棄して、手順 1 のルート DSE のエントリに接続するサーバーとして、 **serviceBindingInformation**プロパティの値を使用して最初からやり直す。 
+3. 検出した SCP オブジェクトが、対象ユーザーのドメインをスコープとする SCP ポインターかチェックします。そのためには、エントリの **keywords** プロパティが `"Domain=<domain>"` に等しいかどうかを確認します。 たとえば、ユーザーのメール アドレスが elvin@contoso.com の場合、SCP ポインターで、**keywords** プロパティのエントリが `"Domain=contoso.com"` に等しいものを探します。 一致する SCP ポインターが見つかる場合、SCP オブジェクト セットを破棄し、**serviceBindingInformation** プロパティの値を、ルート DSE エントリが接続するサーバーとして使用して手順 1 からやり直します。 
     
-4. SCP ポインターは任意のドメインのスコープを確認し、名前を付けて、 **serviceBindingInformation**プロパティの値「フォールバック」のサーバーでは、現在のサーバーは提供しませんいずれかの場合にユーザーのドメインを対象にした SCP ポインターがない場合は、結果です。 
+4. ユーザーのドメインをスコープとする SCP ポインターが見つからない場合、ドメインをスコープとしない SCP ポインターをチェックし、現在のサーバーが結果をまったく返さない場合に備えて、**serviceBindingInformation** プロパティの値を「フォールバック」サーバーとして保存します。 
     
 5. 対象ドメインをスコープとする SCP ポインターがまったく見つからなくなれば、次の手順に進めます。次の手順では、結果から自動検出エンドポイントの優先順位を付けた一覧を生成します。
     
@@ -67,18 +67,18 @@ AD DS で公開されている自動検出エンドポイントを検索する�
   
 1. クライアント コンピューターの Active Directory サイト名を取得します。
     
-2. SCP オブジェクトを検出すると、一連の SCP URL ごとに**キーワード**のプロパティを確認し、次の規則に基づく URL に優先順位を割り当てます。 
+2. 見つけた一連の SCP オブジェクトの各 SCP URL の **keywords** プロパティをチェックし、次の規則に基づいて URL に優先順位を割り当てます。 
     
-  - **キーワード**プロパティに値が含まれているかどうか`"Site=<site name>"`、`<site name>`と等しいが、前の手順で取得したサイトのアクティブなディレクトリの名前は、URL 1 の優先順位を割り当てます。 
+  - **keywords** プロパティに `"Site=<site name>"` (`<site name>` は前述の手順で取得した Active Directory サイト名に等しい) という値が含まれている場合、URL に優先順位 1 を割り当てます。 
     
-  - **Keywords**プロパティで始まる値を持つエントリが含まれていない場合は、 `"Site="`、2 の優先順位の URL を割り当てます。 
+  - **keywords** プロパティに `"Site="` で始まる値のエントリが含まれていない場合、URL に優先順位 2 を割り当てます。 
     
-  - **キーワード**のプロパティに値が含まれているかどうか`"Site=<site name>`、`<site name>`はないと同じ、前の手順で取得する Active Directory サイトの名前を 3 の優先順位の URL を割り当てます。 
+  - **keywords** プロパティに `"Site=<site name>` (`<site name>` は前述の手順で取得した Active Directory サイト名と等しくない) という値が含まれている場合、URL に優先順位 3 を割り当てます。 
     
-## <a name="code-example-performing-an-scp-lookup"></a>コード例:SCP 参照
+## <a name="code-example-performing-an-scp-lookup"></a>コード例: SCP 参照の実行
 <a name="bk_CodeExample"> </a>
 
-次のコード例では、自動検出 SCP オブジェクトを検索し、エンドポイントの自動検出の優先順位の一覧を生成する方法が表示されます。
+次のコード例は、自動検出 SCP オブジェクトを見つけ、自動検出エンドポイントの優先順位が付けられた一覧を生成する方法を示しています。
   
 ```cs
 using System;
@@ -325,13 +325,13 @@ namespace ScpLookup
 
 自動検出プロセスの次の手順では、見つかった URL に対して自動検出要求を送信します。その際、優先順位 1 の URL、優先順位 2 の URL、最後に優先順位 3 の URL の順に送信します。自動検出要求を送信し、応答を処理する方法の詳細については、以下の資料を参照してください。
   
-- [Exchange から自動検出を使用してユーザー設定を取得します。](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)
+- [自動検出を使用して Exchange からユーザー設定を取得する](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)
     
-- [自動検出のエラー メッセージの処理](handling-autodiscover-error-messages.md)
+- [自動検出のエラー メッセージを処理する](handling-autodiscover-error-messages.md)
     
 ## <a name="see-also"></a>関連項目
 
 - [Exchange の自動検出](autodiscover-for-exchange.md)   
-- [EWS アプリケーションを設定します。](setting-up-your-ews-application.md)
+- [EWS アプリケーションの設定](setting-up-your-ews-application.md)
     
 

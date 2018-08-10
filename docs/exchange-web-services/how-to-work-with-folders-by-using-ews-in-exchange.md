@@ -1,5 +1,5 @@
 ---
-title: Exchange EWS を使用してフォルダーを操作します。
+title: Exchange で EWS を使用してフォルダーを操作する
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,35 +8,35 @@ ms.assetid: 4b3eb746-74c4-42a0-aa2c-742c147f1871
 description: Exchange で EWS マネージ API または EWS を使用して、フォルダーを作成、取得、更新、削除する方法について説明します。
 ms.openlocfilehash: a9a9e5974b2751268f37a1c9faacce43a333bcdb
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759091"
 ---
-# <a name="work-with-folders-by-using-ews-in-exchange"></a>Exchange EWS を使用してフォルダーを操作します。
+# <a name="work-with-folders-by-using-ews-in-exchange"></a>Exchange で EWS を使用してフォルダーを操作する
 
 Exchange で EWS マネージ API または EWS を使用して、フォルダーを作成、取得、更新、削除する方法について説明します。
   
-Exchange 内では、構成して、メールボックスを整理するフォルダーを使用します。 ことができます新規作成、取得、更新、および EWS マネージ API または EWS を使用してフォルダーを削除します。 [フォルダー](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder%28v=exchg.80%29.aspx)オブジェクト、[フォルダー](http://msdn.microsoft.com/library/812948d8-c7db-45ce-bb3a-77233a53a974%28Office.15%29.aspx)の種類、または[フォルダーの派生クラスや型のいずれか](folders-and-items-in-ews-in-exchange.md#bk_folders)の個々 のメソッドまたは次の表に記載されている操作が実行されます。
+Exchange の EWS は、フォルダーを使用してメールボックスの構成と整理を行います。 EWS マネージ API または EWS を使用して、フォルダーを新規作成、取得、更新、削除できます。 次の表にまとめられている各メソッドまたは操作は、[Folder](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder%28v=exchg.80%29.aspx) オブジェクト、[Folder](http://msdn.microsoft.com/library/812948d8-c7db-45ce-bb3a-77233a53a974%28Office.15%29.aspx) タイプ、または[いずれかの派生 Folder クラスまたはタイプ](folders-and-items-in-ews-in-exchange.md#bk_folders)で実行されます。
   
-**表 1 です。メソッドおよび操作の作成、取得、更新、およびフォルダーを削除します。**
+**表 1. フォルダーを作成、取得、更新、削除するためのメソッドと操作**
 
-|**目的…**|**EWS マネージ API メソッド**|**EWS 操作**|
+|**目的**|**EWS マネージ API メソッド**|**EWS 操作**|
 |:-----|:-----|:-----|
-|フォルダーを作成する  <br/> |[Folder.Save](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.save%28v=exchg.80%29.aspx) <br/> |[CreateFolder](http://msdn.microsoft.com/library/6f6c334c-b190-4e55-8f0a-38f2a018d1b3%28Office.15%29.aspx) <br/> |
+|フォルダーの作成  <br/> |[Folder.Save](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.save%28v=exchg.80%29.aspx) <br/> |[CreateFolder](http://msdn.microsoft.com/library/6f6c334c-b190-4e55-8f0a-38f2a018d1b3%28Office.15%29.aspx) <br/> |
 |フォルダー階層の作成  <br/> |利用不可  <br/> |[CreateFolderPath](http://msdn.microsoft.com/library/5a10aa5e-3f25-4ec3-a0b9-284c30918a1f%28Office.15%29.aspx) <br/> |
-|フォルダーを取得する  <br/> |[Folder.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) <br/> |[GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) <br/> |
-|フォルダー階層の取得  <br/> |[Folder.FindFolders](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx) <br/> |[FindFolder](http://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx) <br/> |
-|フォルダーを更新する  <br/> |[Folder.Update](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.update%28v=exchg.80%29.aspx) <br/> |[UpdateFolder](http://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx) <br/> |
-|フォルダーを削除する  <br/> |[Folder.Delete](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.delete%28v=exchg.80%29.aspx) <br/> |[DeleteFolder](http://msdn.microsoft.com/library/b0f92682-4895-4bcf-a4a1-e4c2e8403979%28Office.15%29.aspx) <br/> |
+|フォルダーの取得  <br/> |[Folder.Bind](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) <br/> |[GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) <br/> |
+|フォルダー階層の取得  <br/> |[Folder.FindFolders](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx) <br/> |[FindFolder](http://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx) <br/> |
+|フォルダーの更新  <br/> |[Folder.Update](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.update%28v=exchg.80%29.aspx) <br/> |[UpdateFolder](http://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx) <br/> |
+|フォルダーの削除  <br/> |[Folder.Delete](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.delete%28v=exchg.80%29.aspx) <br/> |[DeleteFolder](http://msdn.microsoft.com/library/b0f92682-4895-4bcf-a4a1-e4c2e8403979%28Office.15%29.aspx) <br/> |
 
 <a name="bk_createfolderewsma"> </a>
 
 ## <a name="create-a-folder-by-using-the-ews-managed-api"></a>EWS マネージ API を使用してフォルダーを作成する
 
-クラスを使用して、[フォルダー](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder%28v=exchg.80%29.aspx)のカスタム フォルダーの[表示名](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.displayname%28v=exchg.80%29.aspx)と IPF の[FolderClass](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.folderclass%28v=exchg.80%29.aspx)プロパティの値を新しいジェネリック フォルダーを作成する次のコード例を次に示します。注意してください。 [Folder.Save](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.save%28v=exchg.80%29.aspx)メソッドは、受信トレイ フォルダーの子フォルダーとして、フォルダーを保存します。 
+次のコード例は、[Folder](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder%28v=exchg.80%29.aspx) クラスを使用して、[DisplayName](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.displayname%28v=exchg.80%29.aspx) が「Custom Folder」で [FolderClass](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.folderclass%28v=exchg.80%29.aspx) プロパティ値が IPF.Note の汎用フォルダーを新規作成する方法を示しています。 [Folder.Save](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.save%28v=exchg.80%29.aspx) メソッドは、受信トレイ フォルダーの子フォルダーとして対象フォルダーを保存します。 
   
-これらの例は、その**サービス**を想定しています、有効な[ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)オブジェクトは、ユーザーが Exchange サーバーに認証されています。 
+これらの例では、**service** が有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーは Exchange サーバーに既に認証されていると想定しています。 
   
 ```cs
 // Create a custom folder.
@@ -47,7 +47,7 @@ folder.FolderClass = "IPF.Note";
 folder.Save(WellKnownFolderName.Inbox);
 ```
 
-フォルダー、 [CalendarFolder](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.calendarfolder%28v=exchg.80%29.aspx)、[メッセージ](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.contactsfolder%28v=exchg.80%29.aspx)、 [SearchFolder](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfolder%28v=exchg.80%29.aspx)、 [TasksFolder](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.tasksfolder%28v=exchg.80%29.aspx)などのさまざまなタイプを作成する (**フォルダー**のジェネリック クラス) ではなく特定のクラスの新しいインスタンスを作成し、設定しないで、**FolderClass**プロパティです。 たとえば、次のコード例は、新しい[TasksFolder](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.tasksfolder%28v=exchg.80%29.aspx)を作成する方法を示します。
+[CalendarFolder](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.calendarfolder%28v=exchg.80%29.aspx)、[ContactsFolder](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.contactsfolder%28v=exchg.80%29.aspx)、[SearchFolder](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.searchfolder%28v=exchg.80%29.aspx)、[TasksFolder](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.tasksfolder%28v=exchg.80%29.aspx) など異なるタイプのフォルダーを作成するには、特定のクラスの新しいインスタンス (汎用の **Folder** クラスではなく) を作成し、**FolderClass** プロパティは設定しません。 たとえば、次のコード例は、新しい [TasksFolder](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.tasksfolder%28v=exchg.80%29.aspx) を作成する方法を示しています。
   
 ```cs
 // Create a custom Tasks folder.
@@ -58,18 +58,18 @@ folder.DisplayName = "Custom Tasks";
 folder.Save(WellKnownFolderName.Inbox);
 ```
 
-特定のクラスのインスタンスを作成し、 **FolderClass**プロパティを設定しようとすると、 [ErrorNoFolderClassOverride](http://msdn.microsoft.com/en-us/library/exchangewebservices.responsecodetype%28v=exchg.80%29.aspx)エラーがスローされます。 
+特定のクラスのインスタンスを作成し、同時に **FolderClass** プロパティも設定すると、[ErrorNoFolderClassOverride](http://msdn.microsoft.com/ja-JP/library/exchangewebservices.responsecodetype%28v=exchg.80%29.aspx) エラーがスローされます。 
   
-EWS マネージ API を使用して、1 つのメソッドで複数のフォルダーの作成をバッチ操作することはできません。
+EWS マネージ API を使用して、1 回のメソッド呼び出しで複数のフォルダーの作成をバッチ操作することはできません。
   
 ## <a name="create-a-folder-by-using-ews"></a>EWS を使用してフォルダーを作成する
 <a name="bk_createfolderews"> </a>
 
 EWS を使用すると、1 つまたは複数のフォルダーを作成できます。
   
-1 つのフォルダーを作成するには、 [CreateFolder](http://msdn.microsoft.com/library/6f6c334c-b190-4e55-8f0a-38f2a018d1b3%28Office.15%29.aspx)操作の要求メッセージを送信します。 **CreateFolder**操作の要求は、親フォルダーは、受信トレイでは、[表示名](http://msdn.microsoft.com/library/e7efbbe1-6629-4d11-bed1-ed899e3f9d77%28Office.15%29.aspx)は、[カスタム フォルダー]、および[FolderClass](http://msdn.microsoft.com/library/0041d135-2869-4612-89a5-d1aa86aa1093%28Office.15%29.aspx)要素の値は、IPF ことを示します。注意してください。 
+1 つのフォルダーを作成するには、[CreateFolder](http://msdn.microsoft.com/library/6f6c334c-b190-4e55-8f0a-38f2a018d1b3%28Office.15%29.aspx) 操作要求メッセージを送信します。 この **CreateFolder** 操作要求は、親フォルダーが受信トレイで、[DisplayName](http://msdn.microsoft.com/library/e7efbbe1-6629-4d11-bed1-ed899e3f9d77%28Office.15%29.aspx) が「Custom Folder」であること、および [FolderClass](http://msdn.microsoft.com/library/0041d135-2869-4612-89a5-d1aa86aa1093%28Office.15%29.aspx) 要素の値が IPF.Note であることを示します。 
   
-EWS のマネージ API が新しいフォルダーを作成し、 [Folder.Save](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.save%28v=exchg.80%29.aspx)メソッドを呼び出すときに送信する XML 要求にもです。 
+これは、新しいフォルダーが作成されて [Folder.Save](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.save%28v=exchg.80%29.aspx) メソッドが呼び出されると、EWS マネージ API が送信する XML 要求でもあります。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -96,14 +96,14 @@ EWS のマネージ API が新しいフォルダーを作成し、 [Folder.Save]
 </soap:Envelope>
 ```
 
-サーバー要求に応答し、 **CreateFolder** **NoError**フォルダーが正常に作成されたことを示すとの[フォルダー Id](http://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx)の[ResponseCode](http://msdn.microsoft.com/en-us/library/aa580757%28v=exchg.150%29.aspx)の値が含まれています[CreateFolderResponse](http://msdn.microsoft.com/library/158adecc-491a-47d9-af73-acc2cd3f8566%28Office.15%29.aspx)メッセージ新しく作成されたメッセージです。 
+サーバーは、**CreateFolder** 要求に [CreateFolderResponse](http://msdn.microsoft.com/library/158adecc-491a-47d9-af73-acc2cd3f8566%28Office.15%29.aspx) メッセージで応答します。このメッセージには、[ResponseCode](http://msdn.microsoft.com/ja-JP/library/aa580757%28v=exchg.150%29.aspx) 値 **NoError** (フォルダーが正常に作成されたことを示します)、および新しく作成されたメッセージの [FolderId](http://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx) が含まれます。 
   
-**CreateFolder**操作の要求メッセージに複数のフォルダーを作成するには、[フォルダー](http://msdn.microsoft.com/library/812948d8-c7db-45ce-bb3a-77233a53a974%28Office.15%29.aspx)の複数の要素が含まれます。 すべての新しいフォルダーは、同じ親フォルダーにある必要があります。 
+複数のフォルダーを作成するには、複数の [Folder](http://msdn.microsoft.com/library/812948d8-c7db-45ce-bb3a-77233a53a974%28Office.15%29.aspx) 要素を **CreateFolder** 操作要求メッセージに含めます。 すべての新しいフォルダーの親フォルダーは同じでなければなりません。 
   
 ## <a name="create-a-folder-hierarchy-by-using-ews"></a>EWS を使用してフォルダー階層を作成する
 <a name="bk_createfolderhierarchy"> </a>
 
-EWS [CreateFolderPath](http://msdn.microsoft.com/library/5a10aa5e-3f25-4ec3-a0b9-284c30918a1f%28Office.15%29.aspx)操作を使用して 1 回の呼び出しで、フォルダー階層を作成できます。 同じ機能は、EWS のマネージ API で使用可能ではありません。 代わりに、EWS のマネージ API を使用する場合[EWS を使用してフォルダーを作成する](#bk_createfolderews)に示すように、1 つのフォルダーを作成できます。
+EWS [CreateFolderPath](http://msdn.microsoft.com/library/5a10aa5e-3f25-4ec3-a0b9-284c30918a1f%28Office.15%29.aspx) 操作を使用すると、1 回の呼び出しで 1 つのフォルダー階層を作成できます。 この機能は、EWS マネージ API では利用できません。 代わりに、EWS マネージ API を使用している場合には「[EWS を使用してフォルダーを作成する](#bk_createfolderews)」に記されているようにフォルダーを 1 つずつ作成できます。
   
 > [!NOTE]
 > EWS マネージ API はこの機能を実装していません。 
@@ -111,9 +111,9 @@ EWS [CreateFolderPath](http://msdn.microsoft.com/library/5a10aa5e-3f25-4ec3-a0b9
 ## <a name="get-a-folder-by-using-the-ews-managed-api"></a>EWS マネージ API を使用してフォルダーを取得する
 <a name="bk_getfolderewsma"> </a>
 
-次のコード例では、 [Folder.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx)メソッドを使用して、受信トレイ フォルダーを取得する方法を示します。 ベスト プラクティスとして、アプリケーションに必要なものだけに返されるプロパティを制限します。 この例では、[プロパティ設定](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx)オブジェクトを作成し、 [BasePropertySet](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.propertyset.basepropertyset%28v=exchg.80%29.aspx)プロパティに[IdOnly](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.basepropertyset%28v=exchg.80%29.aspx)の値を適用することによってのみ、 [Id](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.id%28v=exchg.80%29.aspx)プロパティに戻り値のプロパティを制限します。 
+次のコード例は、[Folder.Bind](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) メソッドを使用して受信トレイ フォルダーを取得する方法を示しています。 ベスト プラクティスとして、アプリケーションで必要なものだけを返すようにプロパティを制限します。 この例の場合、返されるプロパティに含まれるのは、[Id](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.id%28v=exchg.80%29.aspx) プロパティだけになるよう制限しています。そのために、[PropertySet](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx) オブジェクトを作成し、[IdOnly](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.basepropertyset%28v=exchg.80%29.aspx) 値を [BasePropertySet](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.propertyset.basepropertyset%28v=exchg.80%29.aspx) プロパティに適用しています。 
   
-この例では、 **service** が有効な [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
+この例では、**service** が有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
   
 ```cs
 // As a best practice, limit the properties returned to only those that are required.
@@ -124,20 +124,20 @@ PropertySet propSet = new PropertySet(BasePropertySet.IdOnly);
 Folder rootfolder = Folder.Bind(service, WellKnownFolderName.Inbox, propSet);
 ```
 
-**プロパティ設定**では、 [FolderSchema](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folderschema%28v=exchg.80%29.aspx)クラスからプロパティを追加または、オーバー ロードされたいずれかを使用して、追加のプロパティを取得する場合は、最初のクラスのすべてのプロパティを返すメソッドの[バインド](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx)します。 
+他のプロパティを返す必要がある場合、[FolderSchema](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folderschema%28v=exchg.80%29.aspx) クラスのプロパティを **PropertySet** に追加するか、すべてのファースト クラス プロパティを返すオーバーロードされた [Bind](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) メソッドを使用します。 
   
-EWS のマネージ API を使用して複数のフォルダーを一度に 1 つを取得できない場合に注意してください。 メソッドを呼び出して、**バインド**フォルダーごとに個別にする必要があります。 
+EWS マネージ API を使用して 1 度に複数のフォルダーは取得できないことに注意してください。 フォルダーごとに **Bind** メソッドを呼び出す必要があります。 
   
 ## <a name="get-a-folder-by-using-ews"></a>EWS を使用してフォルダーを取得する
 <a name="bk_getfolderews"> </a>
 
 EWS を使用すると、1 つまたは複数のフォルダーを取得できます。
   
-1 つのフォルダーを取得するには、 [GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx)操作の要求メッセージをサーバーに送信します。 [BaseShape](http://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx)の設定次の例では、 **IdOnly**にのみ、[フォルダー Id](http://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx)の指定されたフォルダーが返されます。 [FolderIds](http://msdn.microsoft.com/library/3ff9d15a-7220-4785-ae6b-583a7eb82005%28Office.15%29.aspx)要素を取得するフォルダーが受信トレイ フォルダーであることを示します。 
+1 つのフォルダーを取得するには、[GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) 操作要求メッセージをサーバーに送信します。 次の例では、[BaseShape](http://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) が **IdOnly** に設定されているため、指定したフォルダーの [FolderId](http://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx) のみが返されます。 この [FolderIds](http://msdn.microsoft.com/library/3ff9d15a-7220-4785-ae6b-583a7eb82005%28Office.15%29.aspx) 要素は、取得するフォルダーが受信トレイ フォルダーであることを示します。 
   
-EWS のマネージ API が、 [Folder.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx)メソッドを使用してフォルダーにバインドするときに送信する XML 要求にもです。 
+これは、[Folder.Bind](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) メソッドを使用して 1 つのフォルダーにバインドされるときに、EWS マネージ API が送信する XML 要求でもあります。 
   
-**GetFolder**操作の要求メッセージに複数のフォルダーを取得するには、複数の[FolderIds](http://msdn.microsoft.com/library/812948d8-c7db-45ce-bb3a-77233a53a974%28Office.15%29.aspx)要素が含まれます。 
+複数のフォルダーを取得するには、複数の [FolderIds](http://msdn.microsoft.com/library/812948d8-c7db-45ce-bb3a-77233a53a974%28Office.15%29.aspx) 要素を **GetFolder** 操作要求メッセージに含めます。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -158,7 +158,7 @@ EWS のマネージ API が、 [Folder.Bind](http://msdn.microsoft.com/en-us/lib
 </soap:Envelope>
 ```
 
-**GetFolder**操作要求への応答としてクライアントにサーバーから送信される[GetFolderResponse](http://msdn.microsoft.com/library/47abeec8-78dd-4297-8525-099174ec880d%28Office.15%29.aspx)メッセージを次の XML 例に示します。 のみ、受信トレイ フォルダーの[フォルダー Id](http://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx)の値が含まれています。 読みやすくするため、一部の属性と要素の値が短縮されています。 
+次の XML の例は、**GetFolder** 操作要求に対する応答として、サーバーからクライアントに送信される [GetFolderResponse](http://msdn.microsoft.com/library/47abeec8-78dd-4297-8525-099174ec880d%28Office.15%29.aspx) メッセージを示しています。 受信トレイ フォルダーの [FolderId](http://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx) 値のみが入っています。 読みやすくするため、一部の属性と要素の値が短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -196,11 +196,11 @@ EWS のマネージ API が、 [Folder.Bind](http://msdn.microsoft.com/en-us/lib
 ## <a name="get-a-folder-hierarchy-by-using-the-ews-managed-api"></a>EWS マネージ API を使用してフォルダー階層を取得する
 <a name="bk_getfolderhierarchyewsma"> </a>
 
-次のコード例は、指定したルート フォルダーのサブフォルダーを取得する方法を示します。 この例では、(メールボックスのフォルダーとアイテムが格納)、IPM サブツリーのルートでは、 **MsgFolderRoot**フォルダー内のサブフォルダーを取得します。 
+次のコード例は、指定したルート フォルダーのサブフォルダーを取得する方法を示します。 この例では、**MsgFolderRoot** (IPM サブツリーのルート) のサブフォルダーを取得します。IPM サブツリーにはメールボックス フォルダーとアイテムが格納されます。 
   
-この例では、 [Folder.FindFolders](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx)メソッドの応答の結果を制限する[FolderView](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folderview%28v=exchg.80%29.aspx)クラスのオブジェクトが作成されます。 このシナリオは、次に戻るにはプロパティを制限: [Id](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.id%28v=exchg.80%29.aspx)、[表示名](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.displayname%28v=exchg.80%29.aspx)、およびフォルダーが隠しフォルダーであるかどうかを示す拡張プロパティです。 サーバーが、サブフォルダーを取得するために再帰的な検索を実行する高度に[FolderView.Traversal](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folderview.traversal%28v=EXCHG.80%29.aspx)値を設定し、 **MsgFolderRoot**にルート フォルダーを設定して、サーバーがすべてのユーザーのフォルダーを返します (およびサーバーを返さないようにシステム内のフォルダー、非 IPM サブツリー) です。
+この例では、[FolderView](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folderview%28v=exchg.80%29.aspx) クラス オブジェクトが作成されて、[Folder.FindFolders](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx) メソッドの応答結果が制限されています。 このシナリオでは、[Id](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.id%28v=exchg.80%29.aspx)、[DisplayName](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.displayname%28v=exchg.80%29.aspx)、およびフォルダーが隠しフォルダーかどうかを示す拡張プロパティを返すよう、プロパティを制限しています。 [FolderView.Traversal](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folderview.traversal%28v=EXCHG.80%29.aspx) 値を Deep に設定してサーバーがサブフォルダーを取得できるように再帰的検索を実行しています。また、ルート フォルダーを **MsgFolderRoot** に設定し、サーバーがすべてのユーザー フォルダーを返しています (サーバーは非 IPM サブツリーのシステム フォルダーは返しません)。
   
-この例では、 **service** が有効な [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
+この例では、**service** が有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
   
 ```XML
 // Create a new folder view, and pass in the maximum number of folders to return.
@@ -222,9 +222,9 @@ FindFoldersResults findFolderResults = service.FindFolders(WellKnownFolderName.M
 ## <a name="get-a-folder-hierarchy-by-using-ews"></a>EWS を使用してフォルダー階層を取得する
 <a name="bk_getfolderhierarchyews"> </a>
 
-次の XML の例では、EWS を使用してフォルダー階層を取得するために、 [FindFolder](http://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx)操作を使用する方法を示します。 この例では、IPM サブツリーとそのすべてのサブフォルダーのルートは、[ **msgfolderroot** ] フォルダーを取得します。 サーバーは、フォルダー階層の再帰的な検索を実行し、のみフォルダーおよびサブフォルダーを指定したルートの下の応答が返されますようにに**深い****トラバーサル**属性が設定されています。 [BaseShape](http://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx)の要素は、この例では、サーバーは[フォルダー Id](http://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx)の要素だけを返しますように**IdOnly**に設定されています。 出力を簡単に理解するためには、 **DisplayName**要素の結果に含めると、 **ExtendedFieldURI**の値**PR_ATTR_HIDDEN**要求内の[AdditionalProperties](http://msdn.microsoft.com/library/7a269aed-dcfd-4c3e-9e14-094e53828101%28Office.15%29.aspx)要素を含んでプロパティ、フォルダーは隠しフォルダーであるかどうかを把握するようにします。 
+次の XML の例は、[FindFolder](http://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx) 操作を使用して EWS でフォルダー階層を取得する方法を示しています。 この例では、IPM サブツリーのルートである **msgfolderroot** フォルダーとそのサブフォルダーすべてが取得されます。 **Traversal** 属性が **Deep** に設定されているので、サーバーはフォルダー階層の再帰的検索を実行し、応答で指定のルート下にあるフォルダーとサブフォルダーのみを返します。 この例では、[BaseShape](http://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) 要素が **IdOnly** に設定されているため、サーバーは [FolderId](http://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx) 要素のみを返します。 出力を分かりやすくするために、**DisplayName** 要素を要求の [AdditionalProperties](http://msdn.microsoft.com/library/7a269aed-dcfd-4c3e-9e14-094e53828101%28Office.15%29.aspx) 要素に含めて結果にこの要素を含めています。同時に、**PR_ATTR_HIDDEN** プロパティの **ExtendedFieldURI** 値も含めて、フォルダーが隠しフォルダーかどうかがわかるようにしています。 
   
-EWS のマネージ API が、 [FindFolders](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.findfolders%28v=exchg.80%29.aspx)メソッドを呼び出すときに送信する XML 要求にもです。 
+これは、[FindFolders](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.findfolders%28v=exchg.80%29.aspx) メソッドが呼びされるときに EWS マネージ API が送信する XML 要求でもあります。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -256,9 +256,9 @@ EWS のマネージ API が、 [FindFolders](http://msdn.microsoft.com/en-us/lib
 </soap:Envelope>
 ```
 
-**FindFolder**操作の要求への応答としてクライアントにサーバーから送信される[FindFolderResponse](http://msdn.microsoft.com/library/f5dd813c-9698-4a39-8fca-3a825df365ed%28Office.15%29.aspx)メッセージを次の XML 例に示します。 のみ、[フォルダー Id](http://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx)、[表示名](http://msdn.microsoft.com/library/e7efbbe1-6629-4d11-bed1-ed899e3f9d77%28Office.15%29.aspx)が含まれており、 **PR_ATTR_HIDDEN**の値は、 **msgrootfolder**フォルダーの下のすべてのサブフォルダーのプロパティを拡張します。 [値](http://msdn.microsoft.com/library/9a30cadd-909e-41b1-b4e9-291643dd89c6%28Office.15%29.aspx)要素設定されている場合 true の場合、フォルダーを非表示に、クライアント ビューにします。 
+次の XML の例は、**FindFolder** 操作要求に対する応答として、サーバーからクライアントに送信される [FindFolderResponse](http://msdn.microsoft.com/library/f5dd813c-9698-4a39-8fca-3a825df365ed%28Office.15%29.aspx) メッセージを示しています。 含まれているのは、**msgrootfolder** フォルダーのすべてのサブフォルダーに関する [FolderId](http://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx)、[DisplayName](http://msdn.microsoft.com/library/e7efbbe1-6629-4d11-bed1-ed899e3f9d77%28Office.15%29.aspx)、および **PR_ATTR_HIDDEN** 拡張プロパティ値のみです。 [Value](http://msdn.microsoft.com/library/9a30cadd-909e-41b1-b4e9-291643dd89c6%28Office.15%29.aspx) 要素が true に設定されていると、フォルダーはクライアント ビューで非表示になっています。 
   
-[FindFolder](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx)メソッドを使用して複数のフォルダーを取得する場合、EWS のマネージ API を送信する XML 応答にもです。 読みやすいように、いくつかの属性と要素の値に短縮されていて、いくつかのフォルダーは簡潔にするために含まれていません。 
+これは、[FindFolder](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx) メソッドを使用して複数のフォルダーが取得されるときに、EWS マネージ API が送信する XML 応答でもあります。 読みやすいように、いくつかの属性と要素の値に短縮されていて、簡略化するために含まれていないフォルダーもあります。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
@@ -339,9 +339,9 @@ EWS のマネージ API が、 [FindFolders](http://msdn.microsoft.com/en-us/lib
 
 次のコード例は、EWS マネージ API を使用してフォルダーの表示名を更新する方法を示しています。
   
-最初に、 [Folder.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx)の応答でサーバーを取得するプロパティの数を制限する[プロパティ設定](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx)を作成します。 **IdOnly** **BasePropertySet**を使用して、Exchange データベースへの呼び出しを削減することをお勧めします。 次に、フォルダーへのバインドを更新するのには、 **Bind**メソッドを使用します。 [DisplayName](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.displayname%28v=exchg.80%29.aspx)プロパティを更新し、変更を保存する[Folder.Update](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.update%28v=exchg.80%29.aspx)メソッドを使用します。 
+最初に、[PropertySet](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx) プロパティを作成して、サーバーが [Folder.Bind](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) 応答で返すプロパティの数を限定します。 **IdOnly** の **BasePropertySet** を使用して Exchange データベースに対する呼び出しを減らすようお勧めします。 次に、**Bind** メソッドを使用してフォルダーを更新します。 その後、[DisplayName](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.displayname%28v=exchg.80%29.aspx) プロパティを更新し、[Folder.Update](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.update%28v=exchg.80%29.aspx) メソッドによって変更を保存します。 
   
-この例と仮定するとその**サービス**は、有効な[ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)オブジェクトと、ユーザーが Exchange サーバーに認証されています。 ローカル変数*フォルダー Id*は、更新するフォルダーの[Id](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.id%28v=exchg.80%29.aspx)です。 
+この例では、**service** が有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトで、ユーザーは Exchange サーバーに既に認証されていると想定しています。 ローカル変数 *folderId* は、更新対象フォルダーの [Id](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.id%28v=exchg.80%29.aspx) です。 
   
 ```cs
 // As a best practice, only include the ID value in the PropertySet.
@@ -362,11 +362,11 @@ folder.Update();
 
 次のコード例は、EWS を使用してフォルダーの表示名を更新する方法を示しています。
   
-最初に、 [EWS を使用してフォルダーの階層を取得するの](#bk_getfolderhierarchyews)に示すように更新するにはフォルダーを取得するには、 [GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx)操作要求メッセージを送信します。
+最初に、「[EWS を使用してフォルダー階層を取得する](#bk_getfolderhierarchyews)」に記されているように、更新対象フォルダーを取得するために [GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) 操作要求メッセージを送信します。
   
-[UpdateFolder](http://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx)操作の要求メッセージを次に、フォルダーを更新するにはサーバーに送信するには。 **UpdateFolder**操作の要求は、[カスタム フォルダーの更新] に[表示名](http://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx)を更新します。 
+次に、フォルダーを更新する [UpdateFolder](http://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx) 操作要求メッセージをサーバーに送信します。 この **UpdateFolder** 操作要求は、[DisplayName](http://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) を「Updated Custom Folder」に更新します。 
   
-EWS のマネージ API が、 [Folder.Update](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.update%28v=exchg.80%29.aspx)メソッドを使用してフォルダーを更新するときに送信する XML 要求にもです。 読みやすくするため、一部の属性と要素の値が短縮されています。 
+これは、[Folder.Update](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.update%28v=exchg.80%29.aspx) メソッドを使用して 1 つのフォルダーが更新されるときに、EWS マネージ API が送信する XML 要求でもあります。 読みやすくするため、一部の属性と要素の値が短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -394,16 +394,16 @@ EWS のマネージ API が、 [Folder.Update](http://msdn.microsoft.com/en-us/l
 </soap:Envelope>
 ```
 
-サーバー要求に応答し、 **UpdateFolder** [UpdateFolderResponse](http://msdn.microsoft.com/library/31f47739-dc9c-46ba-9e3f-cce25dc85e6e%28Office.15%29.aspx)メッセージが含まれている**NoError**をし、更新された**で更新されているフォルダーの[フォルダー Id](http://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx)の[ResponseCode](http://msdn.microsoft.com/en-us/library/aa580757%28v=exchg.150%29.aspx)値変更キー**属性の値です。 
+サーバーは **UpdateFolder** 要求に [UpdateFolderResponse](http://msdn.microsoft.com/library/31f47739-dc9c-46ba-9e3f-cce25dc85e6e%28Office.15%29.aspx) メッセージで応答します。このメッセージには、[ResponseCode](http://msdn.microsoft.com/ja-JP/library/aa580757%28v=exchg.150%29.aspx) 値として **NoError**、および **ChangeKey** 属性値で更新されたフォルダーの [FolderId](http://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx) が含まれています。 
   
 ## <a name="delete-a-folder-by-using-the-ews-managed-api"></a>EWS マネージ API を使用してフォルダーを削除する
 <a name="bk_deletefolderewsma"> </a>
 
-この資料では、EWS のマネージ API を使用してフォルダーを削除する方法を示す基本的な例を提供します。 フォルダーを削除する方法の詳細については、 [Exchange で EWS を使用してアイテムを削除する](deleting-items-by-using-ews-in-exchange.md)を参照してください。
+この資料では、EWS マネージ API を使用してフォルダーを削除する基本的な方法の例を示します。 フォルダーの削除について詳しくは、「[Exchange の EWS を使用するアイテムの削除](deleting-items-by-using-ews-in-exchange.md)」をご覧ください。
   
-EWS のマネージ API を使用してフォルダーを削除するのには最初に、削除するフォルダーにサービス オブジェクトにバインドするのには、 [Folder.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx)メソッドを使用します。 次に、 [HardDelete](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.deletemode%28v=exchg.80%29.aspx)の削除モードを使用してフォルダーを削除するのには、 [Folder.Delete](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.delete%28v=exchg.80%29.aspx)メソッドを使用します。 
+EWS マネージ API を使用してフォルダーを削除するには、最初に [Folder.Bind](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) メソッドを使用してサービス オブジェクトを、削除対象フォルダーにバインドします。 次に、[Folder.Delete](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.delete%28v=exchg.80%29.aspx) メソッドを使用してフォルダーを削除します。そのためには、[HardDelete](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.deletemode%28v=exchg.80%29.aspx) 削除モードを使用します。 
   
-この例では、 **service** が有効な [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 ローカル変数*フォルダー Id*は、削除するフォルダーの[Id](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.id%28v=exchg.80%29.aspx)です。 
+この例では、**service** が有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 ローカル変数 *folderId* は、削除対象フォルダーの [Id](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.id%28v=exchg.80%29.aspx) です。 
   
 ```cs
 // Bind to an existing folder and get all its properties.
@@ -417,13 +417,13 @@ folder.Delete(DeleteMode.HardDelete);
 ## <a name="delete-a-folder-by-using-ews"></a>EWS を使用してフォルダーを削除する
 <a name="bk_deletefolderews"> </a>
 
-この資料では、EWS を使用してフォルダーを削除する方法を示す基本的な XML の例を提供します。 フォルダーを削除する方法の詳細については、 [Exchange で EWS を使用してアイテムを削除する](deleting-items-by-using-ews-in-exchange.md)を参照してください。
+この資料では、EWS を使用してフォルダーを削除する基本的な方法の XML 例を示します。 フォルダーの削除について詳しくは、「[Exchange の EWS を使用するアイテムの削除](deleting-items-by-using-ews-in-exchange.md)」をご覧ください。
   
-EWS を使用してフォルダーを削除するのにはまず、 [EWS を使用してフォルダーを取得する](#bk_getfolderews)ようにを更新するフォルダーを取得するのには、 [GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx)操作の要求メッセージを送信します。 
+EWS を使用してフィルダーを削除するには、最初に、「[EWS を使用してフォルダーを取得する](#bk_getfolderews)」に記されているように、更新対象フォルダーを取得するために [GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) 操作要求メッセージを送信します。  
   
-次に、フォルダーを削除するサーバーに[DeleteFolder](http://msdn.microsoft.com/library/b0f92682-4895-4bcf-a4a1-e4c2e8403979%28Office.15%29.aspx)操作の要求メッセージを送信します。 **DeleteFolder**操作の要求を示します**削除の種類**は、 **HardDelete**を削除するフォルダーの[フォルダー Id](http://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx)が含まれています。 
+次に、フォルダーを削除する [DeleteFolder](http://msdn.microsoft.com/library/b0f92682-4895-4bcf-a4a1-e4c2e8403979%28Office.15%29.aspx) 操作要求メッセージをサーバーに送信します。 **DeleteFolder** 操作要求は **DeleteType** が **HardDelete** であることを示し、削除するフォルダーの [FolderId](http://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx) が含まれています。 
   
-[Folder.Delete](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.delete%28v=exchg.80%29.aspx)メソッドを使用してフォルダーを削除すると、EWS のマネージ API を送信する XML 要求にもです。 読みやすくするため、一部の属性と要素の値が短縮されています。 
+また、これは [Folder.Delete](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.delete%28v=exchg.80%29.aspx) メソッドを使用して 1 つのフォルダーが削除されるときに、EWS マネージ API が送信する XML 要求でもあります。 読みやすくするため、一部の属性と要素の値が短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -444,17 +444,17 @@ EWS を使用してフォルダーを削除するのにはまず、 [EWS を使�
 </soap:Envelope>
 ```
 
-サーバー要求に応答し、 **DeleteFolder**を含む[DeleteFolderResponse](http://msdn.microsoft.com/library/27578bda-ef0a-4a33-bccc-2c1bc1735424%28Office.15%29.aspx)メッセージで、 [ResponseCode](http://msdn.microsoft.com/en-us/library/aa580757%28v=exchg.150%29.aspx) **NoError**フォルダーの削除が成功したことを示す値です。
+サーバーは、**DeleteFolder** 要求に対して [DeleteFolderResponse](http://msdn.microsoft.com/library/27578bda-ef0a-4a33-bccc-2c1bc1735424%28Office.15%29.aspx) メッセージで応答します。このメッセージには、[ResponseCode](http://msdn.microsoft.com/ja-JP/library/aa580757%28v=exchg.150%29.aspx) 値として、フォルダーが正常に削除されたことを示す **NoError** が含まれます。
   
 ## <a name="next-steps"></a>次の手順
 <a name="bk_nextsteps"> </a>
 
-サーバー上のフォルダーを取得または、フォルダーを変更した後[、フォルダー階層の同期](how-to-synchronize-folders-by-using-ews-in-exchange.md)またはサーバー上の[フォルダーの変更についての通知を購読する](notification-subscriptions-mailbox-events-and-ews-in-exchange.md)にする可能性があります。 
+サーバー上のフォルダーを取得するか、フォルダーに変更を加えた後、[フォルダー階層を同期する](how-to-synchronize-folders-by-using-ews-in-exchange.md)か、サーバーにおける[フォルダーの変更についての通知を購読する](notification-subscriptions-mailbox-events-and-ews-in-exchange.md)こともできます。  
   
 ## <a name="see-also"></a>関連項目
 
 - [Exchange の EWS のフォルダーとアイテム](folders-and-items-in-ews-in-exchange.md)   
-- [EWS を使用して Exchange で Exchange メールボックスのアイテムを扱う](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md)    
+- [Exchange で EWS を使用して Exchange メールボックス アイテムを操作する](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md)    
 - [Exchange の EWS を使用するアイテムの削除](deleting-items-by-using-ews-in-exchange.md)   
 - [Exchange の Web サービス クライアントを開発する](develop-web-service-clients-for-exchange.md)
     
