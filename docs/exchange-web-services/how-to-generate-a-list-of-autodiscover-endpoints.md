@@ -1,5 +1,5 @@
 ---
-title: 自動検出エンドポイントの一覧を生成します。
+title: 自動検出エンドポイントの一覧を生成する
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,21 +8,21 @@ ms.assetid: 82394d3c-9fc7-4b3c-b48d-1fe983c198f7
 description: 自動検出エンドポイントの優先順位を付けた一覧を生成する方法について説明します。
 ms.openlocfilehash: ccecacc9c8beef464727efbc9d1fced7a81f9b7c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758958"
 ---
-# <a name="generate-a-list-of-autodiscover-endpoints"></a>自動検出エンドポイントの一覧を生成します。
+# <a name="generate-a-list-of-autodiscover-endpoints"></a>自動検出エンドポイントの一覧を生成する
 
 自動検出エンドポイントの優先順位を付けた一覧を生成する方法について説明します。
   
-[自動検出プロセス](autodiscover-for-exchange.md)の最初のタスクでは、実行するアプリケーションの自動検出エンドポイントの一覧を生成します。 これらのエンドポイントの自動検出は、 [SCP のルックアップ](how-to-find-autodiscover-endpoints-by-using-scp-lookup-in-exchange.md)に由来することができます。 またはユーザーの電子メール アドレスから派生させることができます。 最後に、エンドポイントの数が多い場合終了できます。 優先順位を整理する方法を見てみましょう。 
+[自動検出プロセス](autodiscover-for-exchange.md)の最初のタスクは、アプリケーションが試用する自動検出エンドポイントの一覧を生成することです。 これらの自動検出エンドポイントは、[SCP 参照](how-to-find-autodiscover-endpoints-by-using-scp-lookup-in-exchange.md)で見つけるか、ユーザーのメール アドレスから派生します。 最終的に、たくさんのエンドポイントが存在する結果になる場合があります。 優先度ごとに整理する方法を見てみましょう。 
   
 ## <a name="start-with-scp-lookup"></a>SCP 参照から始める
 <a name="bk_StartWithScp"> </a>
 
-[SCP の検索](how-to-find-autodiscover-endpoints-by-using-scp-lookup-in-exchange.md)からの自動検出エンドポイントの一覧で最上位の優先順位が必要です。 管理者は、これらのエンドポイントを使用して起動するので、最も近いまたは最も効率的な自動検出エンドポイントに、クライアントをルーティングする SCP オブジェクトを構成できます。 SCP 検索プロセスは、独自の優先順位付けがあるため、SCP 検索の結果既に優先度付けは、次のように。 
+[SCP 参照](how-to-find-autodiscover-endpoints-by-using-scp-lookup-in-exchange.md)で見つかる自動検出エンドポイントは、一覧での優先度が最上位になります。 管理者は、クライアントを最も近い自動検出エンドポイントまたは最も効率的なエンドポイントにルーティングするよう SCP オブジェクトを構成できるので、これらのエンドポイントから始めることをお勧めします。 SCP 参照プロセスには独自の優先度スキーマがあるため、SCP 参照の結果は次の順位で既に優先度が設定されています。 
   
 1. クライアント コンピューターが属する Active Directory サイトを対象とする SCP オブジェクトからの自動検出エンドポイント。
     
@@ -30,7 +30,7 @@ ms.locfileid: "19758958"
     
 3. クライアント コンピューターが属するサイトとは別の Active Directory サイトを対象とする SCP オブジェクトからの自動検出エンドポイント。
     
-SCP 検索プロセスの結果を作成したら、ユーザーの電子メール アドレスから派生するエンドポイントを追加できます。 これらは、SCP の結果が存在しないか、SCP 検索から返されたエンドポイントは不十分な場合に既定のエンドポイント、およびフォールバックのセットとして使用できます。
+SCP 参照プロセスの結果を取得したら、ユーザーのメール アドレスから派生するエンドポイントを追加できます。 これらのエンドポイントは、既定のエンドポイントのセットおよび、SCP の結果がない、または SCP 参照から返されたエンドポイントが不十分な場合のフォールバックとして使用できます。
   
 ## <a name="add-endpoints-derived-from-the-users-email-address"></a>ユーザーのメール アドレスから派生したエンドポイントを追加する
 <a name="bk_AddDerivedEndpoints"> </a>
@@ -45,9 +45,9 @@ SCP 参照が動作しない場合、または SCP 参照によって返され�
     
   - "https://" + ドメイン + "/autodiscover/autodiscover"
     
-  - "https://autodiscover." + ドメイン +「自動検出/自動検出」
+  - "https://autodiscover." + ドメイン + "/autodiscover/autodiscover"
     
-SCP 検索とユーザーの電子メール アドレスの両方から派生するエンドポイントの Url のリストをコンパイルした後は、 [SOAP の自動検出 web サービス](http://msdn.microsoft.com/library/61c21ea9-7fea-4f56-8ada-bf80e1e6b074%28Office.15%29.aspx)または POX の[のどちらを使用しているかどうかに応じて、これらの Url でファイル名の拡張子を変更する必要があります。自動検出 web サービス](http://msdn.microsoft.com/library/877152f0-f4b1-4f63-b2ce-924f4bdf2d20%28Office.15%29.aspx)。
+SCP 参照とユーザーのメール アドレスの両方から派生するエンドポイント URL の一覧をコンパイルすると、[SOAP 自動検出 Web サービス](http://msdn.microsoft.com/library/61c21ea9-7fea-4f56-8ada-bf80e1e6b074%28Office.15%29.aspx)または [POX 自動検出 Web サービス](http://msdn.microsoft.com/library/877152f0-f4b1-4f63-b2ce-924f4bdf2d20%28Office.15%29.aspx)を使用しているかどうかによって、それらの URL のファイル名拡張子を変更する必要が生じる場合があります。
   
 ## <a name="add-or-replace-file-name-extensions-in-endpoint-urls"></a>エンドポイント URL のファイル名拡張子を追加または置き換える
 <a name="bk_FileExtensions"> </a>
@@ -58,28 +58,28 @@ SCP 検索とユーザーの電子メール アドレスの両方から派生す
   
 派生した自動検出エンドポイント URL の場合、ファイル拡張子は省略されています。URL を試用する前に、使用中の自動検出 Web サービスに適切なファイル拡張子を追加します。
   
-## <a name="example-generating-a-list-of-autodiscover-endpoints"></a>例:自動検出エンドポイントの一覧を生成する
+## <a name="example-generating-a-list-of-autodiscover-endpoints"></a>例: 自動検出エンドポイントの一覧を生成する
 <a name="bk_Example"> </a>
 
 例を見てみましょう。Sadie Daniels (Sadie.Daniels@contoso.com) は、Exchange Web サービス (EWS) アプリケーションを初めて使用しています。アプリケーションでは、アプリケーション自体を構成するのに自動検出を使用します。Sadie のコンピューターは、contoso.com ドメインに参加し、Redmond Active Directory サイトにあります。アプリケーションでは、図 1 に示すように自動検出エンドポイントの一覧が生成されます。
   
-**自動検出エンドポイントの図 1: サンプルの一覧**
+**図 1: 自動検出エンドポイントのサンプルの一覧**
 
-![導出されたエンドポイントよりも高い優先順位を持つエンドポイントとして SCP ルックアップ から取得された、Autodiscover エンドポイントのサンプル リスト。](media/Ex15_Autodiscover_GenerateList_Example.png)
+![導出されたエンドポイントよりも高い優先順位を持つエンドポイントとして SCP ルックアップから取得された、Autodiscover エンドポイントのサンプル リスト。](media/Ex15_Autodiscover_GenerateList_Example.png)
   
 この例の EWS アプリケーションでは SOAP 自動検出 Web サービスが使用されるため、SCP 結果のファイル名拡張子を ".svc" に変更してから SOAP 要求を送信します。
   
 ## <a name="next-steps"></a>次の手順
 <a name="bk_NextSteps"> </a>
 
-自動検出エンドポイントの一覧を生成した後は、[これらのエンドポイントへの要求を送信](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)してください。
+自動検出エンドポイントの一覧を生成したら、[それらのエンドポイントに要求を送信する](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)ことによって試用します。
   
 ## <a name="see-also"></a>関連項目
 
 
 - [Exchange の自動検出](autodiscover-for-exchange.md)
     
-- [Exchange SCP のルックアップを使用して自動検出エンドポイントを検索します。](how-to-find-autodiscover-endpoints-by-using-scp-lookup-in-exchange.md)
+- [Exchange の SCP 参照を使用して自動検出エンドポイントを見つける](how-to-find-autodiscover-endpoints-by-using-scp-lookup-in-exchange.md)
     
 - [自動検出のエラー メッセージの処理](handling-autodiscover-error-messages.md)
     

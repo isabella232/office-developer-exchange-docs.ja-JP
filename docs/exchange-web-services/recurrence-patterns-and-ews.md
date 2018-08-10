@@ -8,7 +8,7 @@ ms.assetid: fd9ef706-1e01-49fa-af6f-2f6d3e173c16
 description: Exchange の定期的なパターンと定期的なアイテムについて説明します。
 ms.openlocfilehash: ac10e9b9a347abb5907b77f0e0e7315e4e86d97a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759186"
@@ -43,12 +43,12 @@ Exchange の定期的なパターンと定期的なアイテムについて説�
 
 |**EWS マネージ API クラス**|**EWS の要素**|**例**|
 |:-----|:-----|:-----|
-|[Recurrence.DailyPattern](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.recurrence.dailypattern%28v=exchg.80%29.aspx) <br/> |[DailyRecurrence](http://msdn.microsoft.com/library/0aaf265d-b723-49c6-8e9c-9ba60141e9ab%28Office.15%29.aspx) <br/> |毎日繰り返します。  <br/> 隔日で繰り返します。  <br/> |
-|[Recurrence.MonthlyPattern](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.recurrence.monthlypattern%28v=exchg.80%29.aspx) <br/> |[AbsoluteMonthlyRecurrence](http://msdn.microsoft.com/library/178fa0ae-9dfc-417f-933c-d657d31c2161%28Office.15%29.aspx) <br/> |毎月 10 日に繰り返します。  <br/> 隔月の 21 日に繰り返します。  <br/> |
-|[Recurrence.RelativeMonthlyPattern](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.recurrence.relativemonthlypattern%28v=exchg.80%29.aspx) <br/> |[RelativeMonthlyRecurrence](http://msdn.microsoft.com/library/a76595db-7460-44ac-ac2a-53241caa33a7%28Office.15%29.aspx) <br/> |毎月第 2 火曜日に繰り返します。  <br/> 3 か月ごとの第 3 木曜日に繰り返します。  <br/> |
-|[Recurrence.RelativeYearlyPattern](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.recurrence.relativeyearlypattern%28v=exchg.80%29.aspx) <br/> |[RelativeYearlyRecurrence](http://msdn.microsoft.com/library/25b67876-9979-4a30-a637-357ea10a93b8%28Office.15%29.aspx) <br/> |毎年 8 月の第 1 月曜日に繰り返します。  <br/> |
-|[Recurrence.WeeklyPattern](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.recurrence.weeklypattern%28v=exchg.80%29.aspx) <br/> |[WeeklyRecurrence](http://msdn.microsoft.com/library/69c41dd5-597c-45bc-be3f-e2f2b5615aa3%28Office.15%29.aspx) <br/> |毎週月曜日に繰り返します。  <br/> 隔週の火曜日と木曜日に繰り返します。  <br/> |
-|[Recurrence.YearlyPattern](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.recurrence.yearlypattern%28v=exchg.80%29.aspx) <br/> |[AbsoluteYearlyRecurrence](http://msdn.microsoft.com/library/96f53e2c-3893-4f6e-a78a-ac179f45c5db%28Office.15%29.aspx) <br/> |毎年 9 月 1 日に繰り返します。  <br/> |
+|[Recurrence.DailyPattern](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.recurrence.dailypattern%28v=exchg.80%29.aspx) <br/> |[DailyRecurrence](http://msdn.microsoft.com/library/0aaf265d-b723-49c6-8e9c-9ba60141e9ab%28Office.15%29.aspx) <br/> |毎日繰り返します。  <br/> 隔日で繰り返します。  <br/> |
+|[Recurrence.MonthlyPattern](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.recurrence.monthlypattern%28v=exchg.80%29.aspx) <br/> |[AbsoluteMonthlyRecurrence](http://msdn.microsoft.com/library/178fa0ae-9dfc-417f-933c-d657d31c2161%28Office.15%29.aspx) <br/> |毎月 10 日に繰り返します。  <br/> 隔月の 21 日に繰り返します。  <br/> |
+|[Recurrence.RelativeMonthlyPattern](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.recurrence.relativemonthlypattern%28v=exchg.80%29.aspx) <br/> |[RelativeMonthlyRecurrence](http://msdn.microsoft.com/library/a76595db-7460-44ac-ac2a-53241caa33a7%28Office.15%29.aspx) <br/> |毎月第 2 火曜日に繰り返します。  <br/> 3 か月ごとの第 3 木曜日に繰り返します。  <br/> |
+|[Recurrence.RelativeYearlyPattern](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.recurrence.relativeyearlypattern%28v=exchg.80%29.aspx) <br/> |[RelativeYearlyRecurrence](http://msdn.microsoft.com/library/25b67876-9979-4a30-a637-357ea10a93b8%28Office.15%29.aspx) <br/> |毎年 8 月の第 1 月曜日に繰り返します。  <br/> |
+|[Recurrence.WeeklyPattern](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.recurrence.weeklypattern%28v=exchg.80%29.aspx) <br/> |[WeeklyRecurrence](http://msdn.microsoft.com/library/69c41dd5-597c-45bc-be3f-e2f2b5615aa3%28Office.15%29.aspx) <br/> |毎週月曜日に繰り返します。  <br/> 隔週の火曜日と木曜日に繰り返します。  <br/> |
+|[Recurrence.YearlyPattern](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.recurrence.yearlypattern%28v=exchg.80%29.aspx) <br/> |[AbsoluteYearlyRecurrence](http://msdn.microsoft.com/library/96f53e2c-3893-4f6e-a78a-ac179f45c5db%28Office.15%29.aspx) <br/> |毎年 9 月 1 日に繰り返します。  <br/> |
    
 定期的なパターンについての別の重要な情報は、定期的なアイテムが終了するのはいつかということです。これは、アイテムのセット数、終了日、または終了日なしとして表すことができます。
   
@@ -56,9 +56,9 @@ Exchange の定期的なパターンと定期的なアイテムについて説�
 
 |**EWS マネージ API メソッド/プロパティ**|**EWS の要素**|**説明**|
 |:-----|:-----|:-----|
-|[Recurrence.NumberOfOccurrences](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.recurrence.numberofoccurrences%28v=exchg.80%29.aspx) <br/> |[NumberedRecurrence](http://msdn.microsoft.com/library/53746909-ef21-4764-8715-a7769b943cca%28Office.15%29.aspx) <br/> |このプロパティまたは要素の値は、アイテムの数を指定します。  <br/> |
-|[Recurrence.EndDate](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.recurrence.enddate%28v=exchg.80%29.aspx) <br/> |[EndDateRecurrence](http://msdn.microsoft.com/library/a5ee2504-db84-49ee-870c-cca9269f2e26%28Office.15%29.aspx) <br/> |定期的なアイテムの最後のアイテムは、このプロパティまたは要素で指定された日付の当日またはそれ以前になります。  <br/> |
-|[Recurrence.HasEnd](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.recurrence.hasend%28v=exchg.80%29.aspx) <br/> [Recurrence.NeverEnds](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.recurrence.neverends%28v=exchg.80%29.aspx) <br/> |[NoEndRecurrence](http://msdn.microsoft.com/library/ab2ebd9c-388e-45f1-abf9-56e293ef123b%28Office.15%29.aspx) <br/> |定期的なアイテムには終わりがありません。  <br/> |
+|[Recurrence.NumberOfOccurrences](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.recurrence.numberofoccurrences%28v=exchg.80%29.aspx) <br/> |[NumberedRecurrence](http://msdn.microsoft.com/library/53746909-ef21-4764-8715-a7769b943cca%28Office.15%29.aspx) <br/> |このプロパティまたは要素の値は、アイテムの数を指定します。  <br/> |
+|[Recurrence.EndDate](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.recurrence.enddate%28v=exchg.80%29.aspx) <br/> |[EndDateRecurrence](http://msdn.microsoft.com/library/a5ee2504-db84-49ee-870c-cca9269f2e26%28Office.15%29.aspx) <br/> |定期的なアイテムの最後のアイテムは、このプロパティまたは要素で指定された日付の当日またはそれ以前になります。  <br/> |
+|[Recurrence.HasEnd](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.recurrence.hasend%28v=exchg.80%29.aspx) <br/> [Recurrence.NeverEnds](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.recurrence.neverends%28v=exchg.80%29.aspx) <br/> |[NoEndRecurrence](http://msdn.microsoft.com/library/ab2ebd9c-388e-45f1-abf9-56e293ef123b%28Office.15%29.aspx) <br/> |定期的なアイテムには終わりがありません。  <br/> |
    
 ## <a name="expanded-vs-non-expanded-views"></a>展開ビューと非展開ビュー
 
@@ -68,8 +68,8 @@ EWS マネージ API で **FindAppointments** メソッド (または EWS で **
 
 |**EWS マネージ API メソッド**|**EWS 操作**|**定期的なアイテムの展開**|**結果に含まれるアイテム**|
 |:-----|:-----|:-----|:-----|
-|[ExchangeService.FindAppointments](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.findappointments%28v=exchg.80%29.aspx) <br/> |[CalendarView](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 要素を設定した [FindItem 操作](http://msdn.microsoft.com/library/a4a953b8-0710-416c-95ef-59e51eba9982%28Office.15%29.aspx)  <br/> |はい  <br/> |非定期的な予定、定期的なアイテムの 1 つのアイテム、および定期的なアイテムに対する例外  <br/> |
-|[ExchangeService.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) <br/> |[IndexedPageItemView](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 要素または [FractionalPageItemView](http://msdn.microsoft.com/library/6d1b0b04-cc35-4a57-bd7a-824136d14fda%28Office.15%29.aspx) 要素を設定した [FindItem 操作](http://msdn.microsoft.com/library/4111afec-35e7-4c6f-b291-9bbba603f633%28Office.15%29.aspx)  <br/> |いいえ  <br/> |非定期的な予定と定期的マスターの予定  <br/> |
+|[ExchangeService.FindAppointments](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.findappointments%28v=exchg.80%29.aspx) <br/> |[CalendarView](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 要素を設定した [FindItem 操作](http://msdn.microsoft.com/library/a4a953b8-0710-416c-95ef-59e51eba9982%28Office.15%29.aspx)  <br/> |あり  <br/> |非定期的な予定、定期的なアイテムの 1 つのアイテム、および定期的なアイテムに対する例外  <br/> |
+|[ExchangeService.FindItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) <br/> |[IndexedPageItemView](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 要素または [FractionalPageItemView](http://msdn.microsoft.com/library/6d1b0b04-cc35-4a57-bd7a-824136d14fda%28Office.15%29.aspx) 要素を設定した [FindItem 操作](http://msdn.microsoft.com/library/4111afec-35e7-4c6f-b291-9bbba603f633%28Office.15%29.aspx)  <br/> |なし  <br/> |非定期的な予定と定期的マスターの予定  <br/> |
    
 Sadie は最近、自分の息子を水泳チームに参加させました。チームは毎週水曜日の午前 8 時 30 分に練習を行います。7 月 2 日から練習が始まり、最後の練習は 8 月 6 日に行われます。練習を忘れてはいけないので、Sadie は自分の予定表に定期的な予定を追加して、忘れないようにしました。
   
@@ -332,23 +332,23 @@ foreach(Appointment appt in results.Items)
   
 ## <a name="in-this-section"></a>このセクションの内容
 
-- [Exchange で EWS を使用して、定期的にアクセスします。](how-to-access-a-recurring-series-by-using-ews-in-exchange.md)
+- [Exchange の EWS を使用して定期的なアイテムにアクセスする](how-to-access-a-recurring-series-by-using-ews-in-exchange.md)
     
-- [Exchange EWS を使用して定期的な系列を作成します。](how-to-create-a-recurring-series-by-using-ews-in-exchange.md)
+- [Exchange の EWS を使用して定期的なアイテムを作成する](how-to-create-a-recurring-series-by-using-ews-in-exchange.md)
     
-- [Exchange EWS を使用して一連の定期的な予定を削除します。](how-to-delete-appointments-in-a-recurring-series-by-using-ews-in-exchange.md)
+- [Exchange の EWS を使用して定期的なアイテムを削除する](how-to-delete-appointments-in-a-recurring-series-by-using-ews-in-exchange.md)
     
-- [EWS を使用して一連の定期的な更新プログラム](how-to-update-a-recurring-series-by-using-ews.md)
+- [EWS を使用して定期的なアイテムを更新する](how-to-update-a-recurring-series-by-using-ews.md)
     
-- [Exchange EWS を使用して一連の定期的な更新プログラム](how-to-update-a-recurring-series-by-using-ews-in-exchange.md)
+- [Exchange の EWS を使用して定期的なアイテムを更新する](how-to-update-a-recurring-series-by-using-ews-in-exchange.md)
     
 ## <a name="see-also"></a>関連項目
 
 
-- [Calendars and EWS in Exchange](calendars-and-ews-in-exchange.md)
+- [Exchange の予定表と EWS](calendars-and-ews-in-exchange.md)
     
-- [Exchange の Web サービス クライアントを開発する](develop-web-service-clients-for-exchange.md)
+- [Exchange 用の Web サービス クライアントの開発](develop-web-service-clients-for-exchange.md)
     
-- [Exchange EWS を使用して予定および会議を取得します。](how-to-get-appointments-and-meetings-by-using-ews-in-exchange.md)
+- [Exchange の EWS を使用して予定と会議を取得する](how-to-get-appointments-and-meetings-by-using-ews-in-exchange.md)
     
 

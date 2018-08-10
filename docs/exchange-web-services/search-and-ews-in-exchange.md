@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 9fa5b836-857e-401d-9450-51e7dbc69104
 description: EWS マネージ API または EWS を使用して、Exchange でアイテムを検索する方法を確認します。
-ms.openlocfilehash: da24258ba94b842fa97fff92148620344c939f05
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.openlocfilehash: 1a8ed6be71d88a02c4ef935864ca15888df90a38
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759188"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354058"
 ---
 # <a name="search-and-ews-in-exchange"></a>Exchange の検索と EWS
 
@@ -24,11 +24,11 @@ EWS マネージ API または EWS を使用して、Exchange でアイテムを
 ## <a name="search-basics"></a>検索の基本
 <a name="bk_SearchBasics"> </a>
 
-EWS のマネージ API と EWS は、検索を指定するための 2 つの基本的な方法を提供します。 [検索フィルター](how-to-use-search-filters-with-ews-in-exchange.md)または[クエリ文字列](how-to-perform-an-aqs-search-by-using-ews-in-exchange.md)を使用することができます。 使用する方法は、検索の背後にある意図によって異なります。
+EWS マネージ API および EWS には、検索方法を指定するための 2 つの基本的な方法があります。[検索フィルター](how-to-use-search-filters-with-ews-in-exchange.md)または[クエリ文字列](how-to-perform-an-aqs-search-by-using-ews-in-exchange.md)を使用することができます。どちらを使用するかは、検索の目的によって異なります。
   
-**表 1 です。検索フィルターと検索クエリのシナリオ**
+**表 1. 検索フィルターおよび検索クエリのシナリオ**
 
-|**目的…**|**使用する.**|**メモ**|
+|**目的…**|**使う機能…**|**注**|
 |:-----|:-----|:-----|
 |検索を特定のプロパティまたはプロパティのセットに限定する  <br/> |検索フィルター  <br/> |検索フィルターは、プロパティの検索を最も良く制御できます。クエリ文字列では、高度な検索テクニック (AQS) を使用して限定されたプロパティのセットをターゲットにすることができます。検索フィルターでは任意のプロパティをターゲットにすることができます。  <br/> |
 |複数の条件で検索を作成する  <br/> |検索フィルター  <br/> |検索フィルターでは、論理 AND または OR を使用して複数の検索条件を結合でき、「件名に '会議ノート' が含まれる、および送信者が 'Sadie Daniels' に等しい」のような検索が可能になります。クエリ文字列では複数の検索条件を結合することもできますが、検索はクエリ文字列でサポートされているプロパティのセットに限定されます。  <br/> |
@@ -44,14 +44,14 @@ EWS のマネージ API と EWS は、検索を指定するための 2 つの基
 
 検索フィルターでは、さまざまな検索オプションを使用し、検索の実行方法を最高度に制御できます。検索フィルターを使用して、基本的な等値検索と比較検索を実行できますが、さらに、文字列プロパティの内容を検索したりビットマスクの比較を実行することも可能です。
   
-たとえば、EWS のマネージ API で[SearchFilter.ContainsSubstring](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.containssubstring%28v=exchg.80%29.aspx)クラスを使用して、アイテムの件名の内容を検索できます。 この例では、大文字と小文字を無視して、部分文字列「会議メモ」の件名を検索する検索フィルターが作成されます。 
+たとえば、EWS マネージ API で [SearchFilter.ContainsSubstring](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.searchfilter.containssubstring%28v=exchg.80%29.aspx) クラスを使用して、アイテムの件名の内容を検索することができます。 この例では、部分文字列「meeting notes」(大文字と小文字を区別しない) が含まれている件名を検索する検索フィルターが作成されます。 
   
 ```cs
 SearchFilter.ContainsSubstring subjectFilter = new SearchFilter.ContainsSubstring(ItemSchema.Subject,
     "meeting notes", ContainmentMode.Substring, ComparisonMode.IgnoreCase);
 ```
 
-カスタム プロパティに対して検索することもできます。 この例では、3 より大きい値は**ItemIndex**のユーザー設定のプロパティが検索されます。 
+カスタム プロパティを検索対象にすることもできます。この例では、3 より大きい値が含まれてるカスタム プロパティ **ItemIndex** を検索します。 
   
 ```cs
 Guid MyAppGuid = new Guid("{AA3DF801-4FC7-401F-BBC1-7C93D6498C2E}");
@@ -61,7 +61,7 @@ SearchFilter.IsGreaterThan customPropFilter =
     new SearchFilter.IsGreaterThan(customPropDefinition, 3);
 ```
 
-複雑な検索を作成するのには複数の検索フィルターを組み合わせることもできます。 たとえば、 [SearchFilter.SearchFilterCollection](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.searchfiltercollection%28v=exchg.80%29.aspx)クラスを使用して論理 AND で前の 2 つのフィルターを組み合わせることができます。 
+複数の検索フィルターを組み合わせて、より複雑な検索を作成することもできます。 たとえば、[SearchFilter.SearchFilterCollection](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.searchfilter.searchfiltercollection%28v=exchg.80%29.aspx) クラスを使用して、先ほどの 2 つのフィルターを論理 AND で組み合わせることができます。 
   
 ```cs
 SearchFilter.SearchFilterCollection compoundFilter =
@@ -70,15 +70,15 @@ SearchFilter.SearchFilterCollection compoundFilter =
 
 ### <a name="using-a-query-string"></a>クエリ文字列の使用
 
-クエリ文字列を検索する別の方法を提供します。 検索されるフィールドとクエリ文字列の検索を使用する場合に、検索を実行する方法があります。 ありませんが悪いことである! 場合によっては、幅の広いネットワークでは、ためのいわばキャストすることがあります。
+クエリ文字列は、異なるアプローチで検索を実行します。 クエリ文字列による検索は、検索するフィールドおよび検索を実行する方法をそれほど制御できません。 しかし、これは大きな問題ではありません。 いわゆる「大きな網を投げる」場合があるかもしれません。
   
-たとえば、「会議ノート」の[ExchangeService.FindItems](http://msdn.microsoft.com/en-us/library/jj223808%28v=exchg.80%29.aspx) EWS 管理 API メソッドを使用して検索できます。 
+たとえば、[ExchangeService.FindItems](http://msdn.microsoft.com/ja-JP/library/jj223808%28v=exchg.80%29.aspx) EWS マネージ API メソッドを使用して「meeting notes」を検索することができます。 
   
 ```cs
 FindItemsResults<Item> results = service.FindItems(folder, "meeting notes", view);
 ```
 
-**SearchFilter.ContainsSubstring**検索の例を前の結果には、この検索の結果を比較すると、この検索によりより多くの結果が含まれます。 検索フィルター検索はこの検索は、件名、本文、およびその他のフィールドに「会議ノート」の項目を返すときに、件名に「会議ノート」を持っているアイテムのみを返します。 
+先ほどの **SearchFilter.ContainsSubstring** 検索例の結果と比較した場合、この検索のほうが結果が多くなります。検索フィルターによる検索では、件名に「meeting notes」が含まれるアイテムのみが返されます。しかし、この検索では、件名、本文、およびその他のフィールドに「meeting notes」が含まれるアイテムが返されます。 
   
 クエリ文字列を調整して、検索フィルターの結果に近くなる、絞り込み方法を見てみましょう。AQS を使用すると、検索を件名に制限することができます。
   
@@ -95,7 +95,7 @@ FindItemsResults<Item> results = service.FindItems(folder, "subject:\"meeting no
 ## <a name="requesting-specific-properties-in-search-results"></a>検索結果で特定のプロパティを要求する
 <a name="bk_RequestSpecific"> </a>
 
-既定では、検索結果に検索条件に一致する項目のすべてのプロパティが含まれます。 いくつかの場合がありますたいが、ほとんどの場合アプリケーションだけで必要なプロパティの個別のセットです。 この例では、アプリケーションのプロパティだけに返されるプロパティのセットを制限する必要があります必要があります。 、件名に返されるプロパティを制限するのには次の例では、 [ItemView](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.itemview%28v=exchg.80%29.aspx)クラスが使用される日付と時刻を受信すると、およびアイテムの ID です。 
+既定では、検索に一致するアイテムのすべてのプロパティが検索結果に含まれます。 これが希望どおりの結果である場合もありますが、ほとんどの場合、アプリケーションが必要とするのはプロパティの個別セットのみです。 この場合、返されるプロパティのセットを、アプリケーションが必要とするプロパティのみに制限する必要があります。 次の例では、[ItemView](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.itemview%28v=exchg.80%29.aspx) クラスを使用して、返されるプロパティをアイテムの件名、受信日時、ID に制限します。 
   
 ```cs
 ItemView view = new ItemView(10);
@@ -107,16 +107,16 @@ view.PropertySet = new PropertySet(ItemSchema.Subject, ItemSchema.DateTimeReceiv
 ## <a name="controlling-search-depth"></a>検索の深さの制御
 <a name="bk_SearchDepth"> </a>
 
-ビュー上で走査の設定をすることによって、検索の範囲と深さを制御します。  
+ビュー上で走査の設定をすることによって、検索の範囲と深さを制御します。 
   
-**表 2 になります。検査値の検索**
+**表 2. 検索走査値**
 
-|**検査値**|**適用されます。**|**説明**|
+|**走査値**|**適用対象**|**説明**|
 |:-----|:-----|:-----|
 |浅い  <br/> |アイテムとフォルダー  <br/> |浅い検索は、検索対象フォルダーの直接の子に制限されます。  <br/> |
 |深い  <br/> |アイテム (検索フォルダーのみ) とフォルダー  <br/> |深い検索は、検索対象のフォルダーとサブフォルダーを再帰的に検索します。  <br/> |
-|関連  <br/> |アイテム  <br/> |関連検索には、検索対象のフォルダーの関連アイテムだけが含まれます。関連アイテムは、フォルダー内にある非表示のアイテムです。  <br/> |
-|削除済み (回復可能)  <br/> |アイテムとフォルダー  <br/> |この走査型の使用は推奨されていません。 SoftDeleted の検索に含まれる項目にはのみが含まれます、ごみ箱をあさる。 ごみ箱をあさる、Office 365 の一部のバージョンの Exchange が Exchange 2010 で始まると、Exchange Online では、[回復可能なアイテム] フォルダー](http://technet.microsoft.com/en-us/library/ee364755%28v=exchg.150%29.aspx(Office.15).aspx)を Exchange Online に置き換えられました。  <br/> |
+|関連  <br/> |Items  <br/> |関連検索には、検索対象のフォルダーの関連アイテムだけが含まれます。関連アイテムは、フォルダー内にある非表示のアイテムです。  <br/> |
+|削除済み (回復可能)  <br/> |アイテムとフォルダー  <br/> |この走査の種類は廃止されました。 削除済み (回復可能) の検索には、ごみ箱にあるアイテムのみが含まれます。 このごみ箱は、Exchange Online、Office 365 の一部としての Exchange Online、および Exchange 2010 以降のバージョンの Exchange では、[回復可能なアイテム フォルダー](https://docs.microsoft.com/ja-JP/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder)に置き換えられています。  <br/> |
    
 ## <a name="managing-search-results"></a>検索結果の管理
 <a name="bk_ManageSearchResults"> </a>
@@ -133,11 +133,11 @@ view.OrderBy.Add(ItemSchema.DateTimeReceived, SortDirection.Descending);
 
 ### <a name="paging"></a>ページング
 
-EWS のマネージ API または EWS を使用して、検索要求を送信すると、返されるアイテムの最大数を制御する、ビューのサイズを指定します。 ただし、サーバー上の検索条件に一致するアイテムの数は、ビューのサイズを超える可能性があります。 この例では、サーバーでは、他のアイテムがあることを示します。 [検索を繰り返すにページングを使用](how-to-perform-paged-searches-by-using-ews-in-exchange.md)することができ、次の結果セットを取得します。 
+EWS マネージ API または EWS を使用して検索要求を送信するときに、ビューのサイズを指定します。これにより、返されるアイテムの最大数が制御されます。ただし、検索に一致するサーバー上のアイテム数は、ビューのサイズを超える可能性があります。この場合、サーバーは利用できるアイテムがさらに多く存在することを示します。[ページングを使用して検索を繰り返し](how-to-perform-paged-searches-by-using-ews-in-exchange.md)、次の結果セットを取得できます。 
   
-たとえば、表示サイズが 10 の検索要求を送信できます。 、検索条件に一致するサーバー上の 15 の項目がある可能性がありますが、のみが表示されます戻ると共に、最初の 10 ( [FindItemsResults\<TItem\>。MoreAvailable](http://msdn.microsoft.com/en-us/library/dd635477%28v=exchg.80%29.aspx)プロパティは、EWS のマネージ API を使用している場合)、サーバー上でより多くの結果があること。 検索条件に一致する次の 10 項目を要求する 10 のオフセットと同じ検索を送信できます。 残りの 5 つの項目が返されます。 
+たとえば、ビュー サイズが 10 の検索要求を送信します。 サーバーに検索条件と一致する 15 のアイテムが存在すると、最初の 10 アイテムのみが戻されますが、より多くの結果がサーバーにあることを示すインジケーター (EWS マネージ API を使用している場合、[FindItemsResults\<TItem\>.MoreAvailable](http://msdn.microsoft.com/ja-JP/library/dd635477%28v=exchg.80%29.aspx) プロパティ) も戻されます。 その場合、オフセットを 10 にして同じ検索を送信し、検索条件に一致する次の 10 アイテムを要求することができます。 サーバーは残りの 5 つのアイテムを返します。 
   
-**図 1 です。ページ単位の検索の例**
+**図 1. ページングされた検索の例**
 
 ![図は、ページ検索を示しています。初期要求は 10 アイテムに送信されます。2 番目の要求は次の 10 アイテムに送信されます。](media/Ex15_Search_PagedSearch.png)
   
@@ -145,7 +145,7 @@ EWS のマネージ API または EWS を使用して、検索要求を送信す
 
   Exchange では、特定のフィールドで検索結果をグループ化できます。これにより、検索結果を管理可能なセットに分割することができます。たとえば、「meeting notes」を検索した結果を、送信者別にグループ化できます。次の図に示されているように、返されたアイテムは複数のグループに分けられます。条件に一致するアイテムで同じ送信者からのものはすべて 1 つのグループに、条件に一致するアイテムで別の送信者からのものはすべて別のグループに、というように分けられます。 
   
-**図 2 になります。送信者によってグループ化された検索結果**
+**図 2. 送信者別にグループ化された検索結果**
 
 ![図は、送信者別にグループ化された検索結果を示しています。](media/Ex15_Search_GroupedResults.png)
   
@@ -173,25 +173,25 @@ static void CreateSearchFolder(ExchangeService service)
 ## <a name="in-this-section"></a>このセクションの内容
 <a name="bk_InThisSection"> </a>
 
-- [EWS を使って Exchange 検索フィルターを使用します。](how-to-use-search-filters-with-ews-in-exchange.md)
+- [Exchange で EWS とともに検索フィルターを使用する](how-to-use-search-filters-with-ews-in-exchange.md)
     
-- [EWS を使用して Exchange、AQS 検索を実行します。](how-to-perform-an-aqs-search-by-using-ews-in-exchange.md)
+- [Exchange で EWS を使用して AQS 検索を実行する](how-to-perform-an-aqs-search-by-using-ews-in-exchange.md)
     
-- [Exchange EWS を使用してページ検索を実行します。](how-to-perform-paged-searches-by-using-ews-in-exchange.md)
+- [Exchange で EWS を使用してページング検索を実行する](how-to-perform-paged-searches-by-using-ews-in-exchange.md)
     
-- [EWS を使用して Exchange によってグループ化された検索を実行します。](how-to-perform-grouped-searches-by-using-ews-in-exchange.md)
+- [Exchange で EWS を使用して、グループ化された検索を実行する](how-to-perform-grouped-searches-by-using-ews-in-exchange.md)
     
-- [EWS を使用して Exchange で検索フォルダーを使用します。](how-to-work-with-search-folders-by-using-ews-in-exchange.md)
+- [Exchange で EWS を使用して検索フォルダーを操作する](how-to-work-with-search-folders-by-using-ews-in-exchange.md)
     
 ## <a name="see-also"></a>関連項目
 
 
-- [Exchange の Web サービス クライアントを開発する](develop-web-service-clients-for-exchange.md)
+- [Exchange 用の Web サービス クライアントの開発](develop-web-service-clients-for-exchange.md)
     
-- [回復可能な項目] フォルダー](http://technet.microsoft.com/en-us/library/ee364755%28v=exchg.150%29.aspx(Office.15).aspx)
+- [回復可能なアイテム フォルダー](https://docs.microsoft.com/ja-JP/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder)
     
-- [ExchangeService.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)
+- [ExchangeService.FindItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)
     
-- [EWS に影響するスロットルのポリシー パラメーターの操作を検索します。](ews-throttling-in-exchange.md#bk_ThrottlingSearch)
+- [EWS の検索操作に影響を与える調整ポリシーのパラメーター](ews-throttling-in-exchange.md#bk_ThrottlingSearch)
     
 

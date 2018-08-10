@@ -8,7 +8,7 @@ ms.assetid: 7e1ea63c-eb29-43d2-827f-2f2b1846483b
 description: Exchange サービス アプリケーションで偽装を使用する方法とタイミングについて説明します。
 ms.openlocfilehash: f8a215874475034f0d147b80a05cae414e6438f9
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759073"
@@ -17,7 +17,7 @@ ms.locfileid: "19759073"
 
 Exchange [サービス アプリケーション](ews-application-types.md)で偽装を使用する方法とタイミングについて説明します。
   
-次の 3 つの方法のいずれかで、他のユーザーのメールボックスにアクセスできます。
+ユーザーが他のユーザーのメールボックスにアクセスできるようにするには、次の 3 つの方法のいずれかを使用できます。
   
 - 代理人を追加し、各代理人にアクセス許可を指定します。
     
@@ -51,23 +51,23 @@ Exchange [サービス アプリケーション](ews-application-types.md)で偽
     
 - 通常、 **ApplicationImpersonation** 役割はユーザー アカウントではなく、特定のアプリケーションまたはアプリケーションのグループ専用のサービス アカウントに付与されます。必要に応じて、必要な数のサービス アカウントを作成できます。 
     
-[偽装の構成](how-to-configure-impersonation.md)についての詳細を読むこともできますが、Exchange 管理者と相談して、必要とするサービス アカウントが組織のセキュリティ要件を満たす[アクセス許可やアクセス](http://technet.microsoft.com/en-us/library/dd351175%28v=exchg.150%29.aspx)を持つものとして作成されるようにしなければなりません。 
+[偽装の構成](how-to-configure-impersonation.md)についての詳細を読むこともできますが、Exchange 管理者と相談して、必要とするサービス アカウントが組織のセキュリティ要件を満たす[アクセス許可やアクセス](http://technet.microsoft.com/ja-JP/library/dd351175%28v=exchg.150%29.aspx)を持つものとして作成されるようにしなければなりません。 
   
 ## <a name="in-this-section"></a>このセクションの内容
 
-- [偽装を構成します。](how-to-configure-impersonation.md)
+- [偽装を構成する](how-to-configure-impersonation.md)
     
-- [偽装するアカウントを識別します。](how-to-identify-the-account-to-impersonate.md)
+- [偽装するアカウントを識別する](how-to-identify-the-account-to-impersonate.md)
     
-- [Exchange の偽装を使用して予定を追加します。](how-to-add-appointments-by-using-exchange-impersonation.md)
+- [Exchange の偽装を使用して予定を追加する](how-to-add-appointments-by-using-exchange-impersonation.md)
     
 ## <a name="see-also"></a>関連項目
 
 
-- [Exchange の Web サービス クライアントを開発する](develop-web-service-clients-for-exchange.md)
+- [Exchange 用の Web サービス クライアントの開発](develop-web-service-clients-for-exchange.md)
     
 - [Exchange での代理人アクセスと EWS](delegate-access-and-ews-in-exchange.md)
     
-- [Exchange 2013 アクセス許可](http://technet.microsoft.com/en-us/library/dd351175%28v=exchg.150%29.aspx)
+- [Exchange 2013 アクセス許可](http://technet.microsoft.com/ja-JP/library/dd351175%28v=exchg.150%29.aspx)
     
 

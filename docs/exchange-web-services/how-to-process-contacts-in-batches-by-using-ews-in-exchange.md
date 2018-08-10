@@ -1,39 +1,39 @@
 ---
-title: Exchange EWS を使用してバッチ プロセスの連絡先
+title: Exchange において EWS を使用してバッチ処理で連絡先を処理する
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 455f475b-cb19-4e7a-8ff3-92f7028fceb0
 description: Exchange で EWS マネージ API または EWS を使用して、1 回の呼び出しで連絡先の作成、取得、更新、削除をバッチ処理する方法について説明します。
-ms.openlocfilehash: 7dfbda7fe5e077f92bcf7ebd40af40d76c2d2d22
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.openlocfilehash: ce1a61615767f3b03354bc79b036582613f15e7e
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759046"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354030"
 ---
-# <a name="process-contacts-in-batches-by-using-ews-in-exchange"></a>Exchange EWS を使用してバッチ プロセスの連絡先
+# <a name="process-contacts-in-batches-by-using-ews-in-exchange"></a>Exchange において EWS を使用してバッチ処理で連絡先を処理する
 
 Exchange で EWS マネージ API または EWS を使用して、1 回の呼び出しで連絡先の作成、取得、更新、削除をバッチ処理する方法について説明します。
   
-EWS のマネージ API を使用することができます。 または EWS 呼び出しの数を減らすには、取引先担当者のバッチがクライアントを使用すると、Exchange サーバーにします。 EWS のマネージ API を使用して、作成、取得、更新、およびバッチ内の連絡先を削除する[連絡先](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.contact%28v=exchg.80%29.aspx)オブジェクトのメソッドを使用する 1 つの連絡先を使用するときに、 [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)オブジェクトのメソッドを使用します。 EWS を使用する場合は、1 つの取引先担当者と取引先担当者のバッチの両方で動作する同じ操作を使用します。 
+EWS マネージ API または EWS を使用すると、連絡先のバッチ操作を行い、クライアントが Exchange サーバーを呼び出す回数を減らせます。 EWS マネージ API を使用して連絡先の作成、取得、更新、削除のバッチ操作を行う場合、[ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクト メソッドを使用します。1 つの連絡先を対象とする場合には [Contact](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.contact%28v=exchg.80%29.aspx) オブジェクト メソッドを使用します。 EWS を使用する場合は、同じ操作を使用して 1 つの連絡先の処理とバッチ処理のどちらも行えます。 
   
-**表 1 です。EWS のマネージ API のメソッドとメンバーのバッチを処理するための EWS の操作**
+**表 1. 連絡先をバッチ処理するための EWS マネージ API メソッドと EWS 操作**
 
-|**目的…**|**この EWS 管理 API メソッドを使用します。**|**EWS 操作を使用します。**|
+|**目的**|**使用する EWS マネージ API メソッド**|**使用する EWS 操作**|
 |:-----|:-----|:-----|
-|バッチ処理による連絡先の作成  <br/> |[ExchangeService.CreateItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) <br/> |[CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) <br/> |
-|バッチ処理による連絡先の取得  <br/> |[ExchangeService.BindToItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx)または[ExchangeService.LoadPropertiesForItems](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.exchangeservice.loadpropertiesforitems%28v=exchg.80%29.aspx) <br/> |[GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) <br/> |
-|バッチ処理による連絡先の更新  <br/> |[ExchangeService.UpdateItems](http://msdn.microsoft.com/en-us/library/dd634705%28v=exchg.80%29.aspx) <br/> |[UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
-|バッチ処理による連絡先の削除  <br/> |[ExchangeService.DeleteItems](http://msdn.microsoft.com/en-us/library/dd635460%28v=exchg.80%29.aspx) <br/> |[DeleteItem](http://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx) <br/> |
+|バッチ処理による連絡先の作成  <br/> |[ExchangeService.CreateItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) <br/> |[CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) <br/> |
+|バッチ処理による連絡先の取得  <br/> |[ExchangeService.BindToItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) または [ExchangeService.LoadPropertiesForItems](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.exchangeservice.loadpropertiesforitems%28v=exchg.80%29.aspx) <br/> |[GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) <br/> |
+|バッチ処理による連絡先の更新  <br/> |[ExchangeService.UpdateItems](http://msdn.microsoft.com/ja-JP/library/dd634705%28v=exchg.80%29.aspx) <br/> |[UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
+|バッチ処理による連絡先の削除  <br/> |[ExchangeService.DeleteItems](http://msdn.microsoft.com/ja-JP/library/dd635460%28v=exchg.80%29.aspx) <br/> |[DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |
    
-この記事では、EWS のマネージ API または EWS を使用して連絡先のバッチのための基本的なタスクを完了する方法について学習します。
+この記事では、EWS マネージ API または EWS を使用して連絡先のバッチ処理を行うための基本的なタスクの実行方法について説明します。
   
 ## <a name="create-contacts-in-batches-by-using-the-ews-managed-api"></a>EWS マネージ API を使用してバッチ処理で連絡先を作成する
 <a name="bk_EWSMA"> </a>
 
-次の例のように、マネージ API の EWS [CreateItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx)メソッドを使用してバッチ処理で連絡先を作成できます。 次の使用例を作成 3 つの[連絡先](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.contact%28v=exchg.80%29.aspx)オブジェクトをローカルにしてそれぞれの連絡先は、コレクションに追加、連絡先のコレクションで**CreateItems**メソッドを呼び出します。 
+次の例に示されているように、EWS マネージ API の [CreateItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) メソッドを使用すると、バッチ処理で連絡先を作成できます。 この例では、3 つの [Contact](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.contact%28v=exchg.80%29.aspx) オブジェクトをローカルに作成し、それぞれの連絡先をコレクションに追加してから、連絡先のコレクションで **CreateItems** メソッドを呼び出します。 
   
 ```cs
 public static Collection<ItemId> CreateContactsInBatch(ExchangeService service)
@@ -104,7 +104,7 @@ public static Collection<ItemId> CreateContactsInBatch(ExchangeService service)
 ## <a name="create-contacts-in-batches-by-using-ews"></a>EWS を使用してバッチ処理で連絡先を作成する
 <a name="bk_EWSMA"> </a>
 
-コード例を次に示すように、 [CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) EWS 操作を使用してバッチ処理で連絡先を作成できます。 EWS のマネージ API が[バッチ内の連絡先を作成](#bk_EWSMA)するのには EWS のマネージ API を使用する場合に送信する XML 要求にもです。
+次のコード例に示されているように、[CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) EWS 操作を使用して、バッチ処理で連絡先を作成できます。これは、EWS マネージ API を使用して[バッチ処理で連絡先を作成](#bk_EWSMA)するときに EWS マネージ API が送信する XML 要求でもあります。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -146,12 +146,12 @@ xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   </soap:Envelope>
 ```
 
-サーバー要求に応答し、 **CreateItem** **NoError**の[ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx)値を含む、新しい取引先担当者、各連絡先が作成され、保存されたことを示すに[CreateItemResponse](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx)メッセージを正常にします。 
+サーバーは、**CreateItem** 要求に [CreateItemResponse](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) メッセージで応答します。このメッセージには、それぞれの新しい連絡先が正常に作成および保存されたことを示す、**NoError** の [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 値が含まれます。 
   
 ## <a name="get-contacts-in-batches-by-using-the-ews-managed-api"></a>EWS マネージ API を使用してバッチ処理で連絡先を取得する
 <a name="bk_EWSMAGet"> </a>
 
-次の例のように、EWS のマネージ API の[BindToItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx)メソッドを使用してバッチ処理で連絡先を取得できます。 この例では、 **service** が有効な [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
+次の例に示されているように、EWS マネージ API の [BindToItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) メソッドを使用すると、バッチ処理で連絡先を取得できます。 この例では、**service** が有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーから既に認証されていると想定しています。 
   
 ```cs
 public static Collection<Contact> BatchGetContactItems(ExchangeService service, Collection<ItemId> itemIds)
@@ -192,7 +192,7 @@ public static Collection<Contact> BatchGetContactItems(ExchangeService service, 
 ## <a name="get-contacts-in-batches-by-using-ews"></a>EWS を使用してバッチ処理で連絡先を取得する
 <a name="bk_EWSMAGet"> </a>
 
-次の例では、 [GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) EWS 操作とコードを使用してバッチ処理での連絡先を取得できます。 EWS のマネージ API が[バッチ内の連絡先を取得](#bk_EWSMAGet)するのには EWS のマネージ API を使用する場合に送信する XML 要求にもです。 **ItemId**属性が小さすぎると読みやすくするためです。 
+次のコード例に示されている [GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) EWS 操作とコードを使用して、バッチ処理で連絡先を取得できます。これは、EWS マネージ API を使用して[バッチ処理で連絡先を取得](#bk_EWSMAGet)するときに EWS マネージ API が送信する XML 要求でもあります。**ItemId** 属性は読みやすいように短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -222,14 +222,14 @@ xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   </soap:Envelope>
 ```
 
-サーバーは、ID、要求された取引先担当者のそれぞれの表示名を含む[GetItemResponse](http://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx)メッセージの**GetItem**要求に応答します。 
+サーバーは **GetItem** 要求に [GetItemResponse](http://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx) メッセージで応答します。このメッセージには、要求された連絡先の各 ID と表示名が含まれます。 
   
 ## <a name="update-contacts-in-batches-by-using-the-ews-managed-api"></a>EWS マネージ API を使用してバッチ処理で連絡先を更新する
 <a name="bk_EWSMAUpdate"> </a>
 
-、EWS のマネージ API の[UpdateItems](http://msdn.microsoft.com/en-us/library/dd634705%28v=exchg.80%29.aspx)メソッドを使用してバッチ内の連絡先を更新するには、次の例のようにします。 前の例では、連絡先を作成しますで働くが指定されていません。 この例では、コードを使用するには、会社名は、同時にすべての連絡先を更新します。 
+次の例に示されているように、EWS マネージ API の [UpdateItems](http://msdn.microsoft.com/ja-JP/library/dd634705%28v=exchg.80%29.aspx) メソッドを使用すると、バッチ処理で連絡先を更新できます。 前の例では、連絡先は作成されますが、職場は指定していません。 この例にあるコードを使用すると、会社名を含めて一度に連絡先すべてを更新できます。 
   
-この例では、 **service** が有効な [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
+この例では、**service** が有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーから既に認証されていると想定しています。 
   
 ```cs
 public static Collection<Contact> BatchUpdateContactItems(ExchangeService service, Collection<Contact> contactItems)
@@ -272,7 +272,7 @@ public static Collection<Contact> BatchUpdateContactItems(ExchangeService servic
 ## <a name="update-contacts-in-batches-by-using-ews"></a>EWS を使用してバッチ処理で連絡先を更新する
 <a name="bk_EWSMAUpdate"> </a>
 
-[GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) EWS 操作を使用してバッチ内の連絡先を更新するには、次のコード例に示すように。 EWS のマネージ API が[バッチ内の連絡先を更新](#bk_EWSMAUpdate)するのには EWS のマネージ API を使用する場合に送信する XML 要求にもです。 **ItemId**属性が小さすぎると読みやすくするためです。 
+次のコード例に示されているように、[GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) EWS 操作を使用して、バッチ処理で連絡先を更新できます。これは、EWS マネージ API を使用して[バッチ処理で連絡先を更新](#bk_EWSMAUpdate)するときに EWS マネージ API が送信する XML 要求でもあります。**ItemId** 属性は読みやすいように短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -329,12 +329,12 @@ xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   </soap:Envelope>
 ```
 
-サーバーは、 [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **NoError**、更新プログラムのそれぞれのサーバー上でが正常に保存されたことを示す値を含む、 [UpdateItemResponse](http://msdn.microsoft.com/library/023b79b4-c675-4669-9112-d85499ec4fc4%28Office.15%29.aspx)メッセージの**UpdateItem**要求に応答します。 [ConflictResult](http://msdn.microsoft.com/library/08cdd547-4de7-4c7a-b60f-e618dc217d20%28Office.15%29.aspx)要素内での競合が報告されます。 
+サーバーは、**UpdateItem** 要求に [UpdateItemResponse](http://msdn.microsoft.com/library/023b79b4-c675-4669-9112-d85499ec4fc4%28Office.15%29.aspx) メッセージで応答します。このメッセージには、それぞれの更新がサーバーで正常に行われたことを示す、**NoError** の [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 値が含まれます。競合は、[ConflictResult](http://msdn.microsoft.com/library/08cdd547-4de7-4c7a-b60f-e618dc217d20%28Office.15%29.aspx) 要素で報告されます。 
   
 ## <a name="delete-contacts-in-batches-by-using-the-ews-managed-api"></a>EWS マネージ API を使用してバッチ処理で連絡先を削除する
 <a name="bk_EWSMADelete"> </a>
 
-[DeleteItems](http://msdn.microsoft.com/en-us/library/dd635460%28v=exchg.80%29.aspx) EWS 管理 API メソッドを使用してバッチ内の連絡先を削除するには、次の例に示すように。 この例では、 **service** が有効な [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
+次の例に示されているように、EWS マネージ API の [DeleteItems](http://msdn.microsoft.com/ja-JP/library/dd635460%28v=exchg.80%29.aspx) メソッドを使用すると、バッチ処理で連絡先を削除できます。 この例では、**service** が有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーから既に認証されていると想定しています。 
   
 ```cs
 public static void BatchDeleteContactItems(ExchangeService service, Collection<ItemId> itemIds)
@@ -360,7 +360,7 @@ public static void BatchDeleteContactItems(ExchangeService service, Collection<I
 ## <a name="delete-contacts-in-batches-by-using-ews"></a>EWS を使用してバッチ処理で連絡先を削除する
 <a name="bk_EWSMADelete"> </a>
 
-[DeleteItem](http://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx) EWS 操作を使用してバッチ内の連絡先を削除するには、次のコード例に示すように。 EWS のマネージ API が[バッチ内の連絡先を削除](#bk_EWSMADelete)するのには EWS のマネージ API を使用する場合に送信する XML 要求にもです。 **ItemId**属性が小さすぎると読みやすくするためです。 
+次のコード例に示されているように、[DeleteItem](../web-service-reference/deleteitem-operation.md) EWS 操作を使用して、バッチ処理で連絡先を削除できます。これは、EWS マネージ API を使用して[バッチ処理で連絡先を削除](#bk_EWSMADelete)するときに EWS マネージ API が送信する XML 要求でもあります。**ItemId** 属性は読みやすいように短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -384,28 +384,28 @@ xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   </soap:Envelope>
 ```
 
-サーバー要求に応答、 **DeleteItem** **NoError**の削除された項目ごとに[ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx)値を含む[DeleteItemResponse](http://msdn.microsoft.com/library/86463d66-fe47-4a19-a81b-e24841e816ab%28Office.15%29.aspx)のメッセージです。 返す成功アイテム ID が見つかりませんだった場合に注意してください。 
+サーバーは、**DeleteItem** 要求に [DeleteItemResponse](http://msdn.microsoft.com/library/86463d66-fe47-4a19-a81b-e24841e816ab%28Office.15%29.aspx) メッセージで応答します。このメッセージには、削除された各アイテムの **NoError** の [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 値が含まれます。この操作によって、アイテム ID が見つからない場合でも成功が返される点に注意してください。 
   
 ## <a name="verifying-that-a-batch-process-completed-successfully"></a>バッチ処理が正常に完了したことを確認する
 <a name="bk_successful"> </a>
 
 バッチ要求された 1 つ以上の連絡先を要求どおりに処理できないと、失敗した連絡先ごとにエラーが返されます。バッチ処理のそれ以外の連絡先は予期したとおりに処理されます。対象アイテムが削除されたために取得、更新できなかったり、対象アイテムが別のフォルダーに移動したためにアイテム ID が新しくなり、送信されたアイテム ID で変更を行えなったりすると、バッチ処理でエラーが生じます。このセクションの情報には、連絡先のバッチ処理で生じたエラーの詳細を取得する方法が示されています。
   
-EWS のマネージ API を使用して、バッチ処理の成功を確認するには、 [ServiceResponseCollection](http://msdn.microsoft.com/en-us/library/dd633715%28v=exchg.80%29.aspx)の[OverallResult](http://msdn.microsoft.com/en-us/library/dd634515%28v=exchg.80%29.aspx)プロパティが[ServiceResult.Success](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresult%28v=exchg.80%29.aspx)に等しいかを確認できます。 その場合は、すべての連絡先が正常に処理されました。 **OverallResult**が**ServiceResult.Success**、1 つまたは複数の連絡先と同じでない場合は、正常に処理されませんでした。 **ServiceResponseCollection**で返されるオブジェクトの各には、次のプロパティが含まれます。 
+EWS マネージ API を使用してバッチ処理が成功したかどうかは、[ServiceResponseCollection](http://msdn.microsoft.com/ja-JP/library/dd633715%28v=exchg.80%29.aspx) の [OverallResult](http://msdn.microsoft.com/ja-JP/library/dd634515%28v=exchg.80%29.aspx) プロパティが [ServiceResult.Success](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.serviceresult%28v=exchg.80%29.aspx) と等しいことを調べることで確認できます。 等しい場合は、すべての連絡先が正常に処理されました。 **OverallResult** が **ServiceResult.Success** と等しくない場合は、1 つ以上の連絡先が正常に処理されませんでした。 **ServiceResponseCollection** で返される各オブジェクトには、次のプロパティが含まれます。 
   
-- [エラー コード](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponse.errorcode%28v=exchg.80%29.aspx)
+- [ErrorCode](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.serviceresponse.errorcode%28v=exchg.80%29.aspx)
     
-- [ErrorDetails](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponse.errordetails%28v=exchg.80%29.aspx)
+- [ErrorDetails](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.serviceresponse.errordetails%28v=exchg.80%29.aspx)
     
-- [エラー メッセージ](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponse.errormessage%28v=exchg.80%29.aspx)
+- [ErrorMessage](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.serviceresponse.errormessage%28v=exchg.80%29.aspx)
     
-- [ErrorProperties](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponse.errorproperties%28v=exchg.80%29.aspx)
+- [ErrorProperties](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.serviceresponse.errorproperties%28v=exchg.80%29.aspx)
     
-- [結果](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.serviceresponse.result%28v=exchg.80%29.aspx)
+- [Result](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.serviceresponse.result%28v=exchg.80%29.aspx)
     
-これらのプロパティには、なぜ連絡先を処理できませんでした要求に関する情報が含まれています。 この資料の例の出力**結果**、**エラー コード**とそれぞれの**エラー メッセージ**に連絡先が失敗しました。 これらの結果を使用すると、問題を調査します。 
+これらのプロパティには、連絡先を要求どおりに処理できなかった原因についての情報が含まれます。この資料の例では、エラーが生じた各連絡先の **Result**、**ErrorCode**、**ErrorMessage** が出力されます。これらの結果を使用して問題を調査できます。 
   
-EWS では、バッチ処理の成功を確認するには、処理中の各項目の[ResponseClass](http://msdn.microsoft.com/library/bf57265a-d354-4cd7-bbfc-d93e19cbede6%28Office.15%29.aspx)属性を確認します。 **ResponseMessageType**、するすべての応答メッセージの派生元の基本型の基本構造を次に示します。 
+EWS でバッチ処理が成功したことを確認するには、各処理対象アイテムの [ResponseClass](http://msdn.microsoft.com/library/bf57265a-d354-4cd7-bbfc-d93e19cbede6%28Office.15%29.aspx) 属性を調べます。すべての応答メッセージの派生元となる基本タイプの **ResponseMessageType** の基本構造を次に示します。  
   
 ```XML
 <ResponseMessage ResponseClass="Success | Warning | Error">
@@ -416,15 +416,15 @@ EWS では、バッチ処理の成功を確認するには、処理中の各項�
 </ResponseMessage>
 ```
 
-**ResponseClass**属性は、連絡先が正常に処理されなかった場合に、連絡先が正常に処理された場合の**成功**または**エラー**に設定されます。 連絡先、バッチ処理中に**警告**は発生しません。 **ResponseClass**が**成功**の場合は、 [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx)要素の後も常に**NoError**に設定されています。 **ResponseClass**が**エラー**の場合は、問題の原因を特定するのには、[メッセージ テキスト](http://msdn.microsoft.com/library/59a23bdc-0d9a-4942-8b3c-9cdb11db1ab1%28Office.15%29.aspx)、 **ResponseCode**、および[MessageXml](http://msdn.microsoft.com/library/bcaf9e35-d351-48f3-baad-f90c633cba8a%28Office.15%29.aspx)の要素の値を確認する必要があります。 [DescriptiveLinkKey](http://msdn.microsoft.com/library/f7f36749-00f3-4915-b17c-e3caa0af6e67%28Office.15%29.aspx)は、現在使用されていません。 
+**ResponseClass** 属性は、連絡先が正常に処理された場合には **Success** に設定され、正常に処理されなかった場合には **Error** に設定されます。連絡先の場合には、バッチ処理中に **Warning** が示されることはありません。**ResponseClass** が **Success** の場合、それに続く [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 要素は必ず **NoError** に設定されます。**ResponseClass** が **Error** の場合、[MessageText](http://msdn.microsoft.com/library/59a23bdc-0d9a-4942-8b3c-9cdb11db1ab1%28Office.15%29.aspx)、**ResponseCode**、[MessageXml](http://msdn.microsoft.com/library/bcaf9e35-d351-48f3-baad-f90c633cba8a%28Office.15%29.aspx) の各要素の値を確認し、問題の原因を特定する必要があります。[DescriptiveLinkKey](http://msdn.microsoft.com/library/f7f36749-00f3-4915-b17c-e3caa0af6e67%28Office.15%29.aspx) は現在使用されていません。 
   
 ## <a name="see-also"></a>関連項目
 
 
 - [Exchange 内の EWS のユーザーと連絡先](people-and-contacts-in-ews-in-exchange.md)
     
-- [電子メール メッセージを Exchange で EWS を使用してバッチ プロセス](how-to-process-email-messages-in-batches-by-using-ews-in-exchange.md)
+- [Exchange で EWS を使用してバッチ処理でメール メッセージを処理する](how-to-process-email-messages-in-batches-by-using-ews-in-exchange.md)
     
-- [Exchange 予定表のアイテムをまとめてを処理します。](how-to-process-calendar-items-in-batches-in-exchange.md)
+- [Exchange においてバッチ処理で予定表のアイテムを処理する](how-to-process-calendar-items-in-batches-in-exchange.md)
     
 

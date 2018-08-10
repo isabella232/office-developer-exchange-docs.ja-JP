@@ -1,23 +1,23 @@
 ---
-title: Exchange EWS を使用して予定および会議を取得します。
+title: Exchange の EWS を使用して予定と会議を取得する
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 1bae582a-8cb3-4e77-be2a-7e107fad26fe
 description: EWS マネージ API または Exchange の EWS を使用して、予定と会議を取得する方法を説明します。
-ms.openlocfilehash: 0f5eb135142e807f30f48f01d7948fbdbf147ac2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.openlocfilehash: c78d70ca2266bd192b82f644d902ad8c958d2d4a
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758950"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353694"
 ---
-# <a name="get-appointments-and-meetings-by-using-ews-in-exchange"></a>Exchange EWS を使用して予定および会議を取得します。
+# <a name="get-appointments-and-meetings-by-using-ews-in-exchange"></a>Exchange の EWS を使用して予定と会議を取得する
 
 EWS マネージ API または Exchange の EWS を使用して、予定と会議を取得する方法を説明します。
   
-[CalendarFolder.FindAppointments](http://msdn.microsoft.com/en-us/library/dd636179%28v=exchg.80%29.aspx) EWS のマネージ API のメソッドまたは[FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) EWS の操作を使用して、予定表フォルダーから予定と会議を取得できます。 
+[CalendarFolder.FindAppointments](http://msdn.microsoft.com/ja-JP/library/dd636179%28v=exchg.80%29.aspx) EWS マネージ API メソッド、または [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) EWS 操作を使用して、予定表フォルダーから予定と会議を取得できます。 
   
 ## <a name="get-appointments-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して、予定を取得する
 <a name="bk_retrieveappsEWSMA"> </a>
@@ -50,23 +50,28 @@ EWS マネージ API または Exchange の EWS を使用して、予定と会�
 
 ```
 
+<br/>
+
 以下に示すのは、コード例からの出力です。
   
-2013/9/20 2013/8/21 から予定表の最初の 5 つの予定は次のとおりです。 
+```text
+The first five appointments on your calendar from 8/21/2013 to 9/20/2013 are: 
   
-件名: contoso 社の開発者のチーム会議の開始: 2013/8/21 午後 12時 30分: 00 終了: 2013/8/21 午後 1時 00分: 00
+Subject: Contoso devs team meeting Start: 8/21/2013 12:30:00 PM End: 8/21/2013 1:00:00 PM
   
-件名: 日常会議開始: 2013/8/21 午後 1時 00分: 00 終了: 2013/8/21 午後 2時 00分: 00
+Subject: Daily status meeting Start: 8/21/2013 1:00:00 PM End: 8/21/2013 2:00:00 PM
   
-件名: 営業チームの開始とランチ: 2013/8/21 午後 2時 30分: 00 終了: 2013/8/21 午後 3時 30分: 00
+Subject: Lunch with sales team Start: 8/21/2013 2:30:00 PM End: 8/21/2013 3:30:00 PM
   
-件名: クラブの開始時テニス: 2013/8/22 午前 11時 00分: 00 終了: 2013/8/22 12時 00分: 00
+Subject: Tennis at the club Start: 8/22/2013 11:00:00 AM End: 8/22/2013 12:00:00 PM
   
-件名: オンライン トレーニングの web キャスト: 2013/8/22 午後 2時 00分: 00 終了: 2013/8/22 午後 3時 00分: 00
-## <a name="get-appointments-by-using-ews"></a>EWS を使用して、予定を取得します 
+Subject: Online training webcast: 8/22/2013 2:00:00 PM End: 8/22/2013 3:00:00 PM
+```
+
+## <a name="get-appointments-by-using-ews"></a>EWS を使用して、予定を取得する
 <a name="bk_xml"> </a>
 
-[FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)操作でフォルダーの ID を返す[GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx)操作要求を次の XML に表示されます。 
+次の XML は [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 操作のフォルダー ID を返す [GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) 操作の要求を示します。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -90,7 +95,9 @@ EWS マネージ API または Exchange の EWS を使用して、予定と会�
 </soap:Envelope>
 ```
 
-次の XML は、 **GetFolder**の応答を示しています。 **フォルダー Id**と**変更キー**の属性が読みやすくするために短縮されますに注意してください。 
+<br/>
+
+次の XML は **GetFolder** 応答を示します。**FolderID** 属性と **ChangeKey** 属性は読みやすいように短縮されていますので、ご注意ください。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -119,7 +126,9 @@ EWS マネージ API または Exchange の EWS を使用して、予定と会�
 </s:Envelope>
 ```
 
-次の XML は、要求された予定を返すために使用する**FindItem**要求を示しています。 **フォルダー Id**と**変更キー**の属性が読みやすくするために短縮されますに注意してください。 
+<br/>
+
+次の XML は、要求された予定を返すために使用される **FindItem** 要求を示します。**FolderID** 属性と **ChangeKey** 属性は読みやすいように短縮されていますので、ご注意ください。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -149,7 +158,9 @@ EWS マネージ API または Exchange の EWS を使用して、予定と会�
 </soap:Envelope>
 ```
 
-**FindItem**応答を次の XML に表示されます。 **アイテム Id**と**変更キー**の属性が読みやすくするために短縮されますに注意してください。 
+<br/>
+
+次の XML は **FindItem** 応答を示します。**ItemID** 属性と **ChangeKey** 属性は読みやすいように短縮されていますので、ご注意ください。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -211,21 +222,17 @@ xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
 ## <a name="recurring-meetings-and-the-calendar-view"></a>定期的な会議および予定表の表示
 <a name="bk_recurring"> </a>
 
-一連の定期的な一連の定期的な例外の発生は、メールボックス内の実際の項目ではないではなく、定期的なマスターへの添付ファイルとして内部に格納されているために、予定表フォルダーがメールボックス内の他のフォルダーとは少し異なります。 つまり、**開始**の間の値を返す EWS 要求を作成することができ、 **FindItems**の EWS のマネージ API のいずれかを使用して、**最後**の値が[ExchangeService.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)または EWS[などのメソッドをオーバー ロードFindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)操作、例外および出現を検索するすべての予定表アイテムの添付ファイル テーブルを EWS は表示されません。 
+繰り返し連続で発生するアイテムや、繰り返し連続で発生するアイテムの例外は、メールボックス内の実際のアイテムではなく、定期的なマスターへの添付物として内部に格納されるため、予定表フォルダーはメールボックス内の他のフォルダーとは少し異なります。 つまり、[ExchangeService.FindItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)、または EWS [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 操作など、EWS マネージ API **FindItems** メソッドのいずれかを使用して、**開始**値と**終了**値のセット間の値を返す EWS 要求を作成することができますが、EWS は各予定表アイテムの添付テーブルを確認して、例外や発生アイテムを検索することはしません。 
   
-代わりに、どのような本当に実行するは、*データ ビュー*の 2 つの SQL テーブルでは、共用体に[CalendarView](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.calendarview%28v=exchg.80%29.aspx)オブジェクトを使用して適用することに類似のもの。 パフォーマンス上の理由から、お勧めの予定や会議を取得するだけでなく、必要な特定のプロパティの数を示すことにより、応答のサイズを制限する[プロパティ設定](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx)のプロパティを使用することに注意してください。 
+むしろ、本当に実行したいことは、[CalendarView](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.calendarview%28v=exchg.80%29.aspx) オブジェクトを使用して、2 つの SQL テーブルのユニオン上に *Dataview* を適用する操作に類似する操作です。 パフォーマンス上の理由から、[PropertySet](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx) プロパティを使用して、返すことを望む予定や会議の件数や望みのプロパティを指示し、応答のサイズを制限することをお勧めします。 
   
 ## <a name="see-also"></a>関連項目
 <a name="bk_additional"> </a>
 
-- [Calendars and EWS in Exchange](calendars-and-ews-in-exchange.md)
-    
-- [Exchange 2013 の EWS を使用して予定および会議を作成します。](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)
-    
-- [Exchange EWS を使用して予定および会議を更新します。](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)
-    
-- [予定を削除して、Exchange で EWS を使用して会議をキャンセル](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md)
-    
-- [Exchange の Web サービス クライアントを開発する](develop-web-service-clients-for-exchange.md)
+- [Exchange の予定表と EWS](calendars-and-ews-in-exchange.md)   
+- [Exchange 2013 の EWS を使用して予定と会議を作成する](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)  
+- [Exchange の EWS を使用して予定と会議を更新する](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)  
+- [Exchange で EWS を使用して、予定を削除し、会議をキャンセルする](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md) 
+- [Exchange 用の Web サービス クライアントの開発](develop-web-service-clients-for-exchange.md)
     
 

@@ -8,7 +8,7 @@ ms.assetid: 8b206274-eaa4-40d3-b504-af27335c8f43
 description: EWS マネージ API アセンブリをアプリケーションと共に再配布する方法を紹介します。
 ms.openlocfilehash: d8fc57c4a2b3ed7d6218aeeed0fe88c2d3e0fbe0
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759178"
@@ -17,7 +17,7 @@ ms.locfileid: "19759178"
 
 EWS マネージ API アセンブリをアプリケーションと共に再配布する方法を紹介します。
   
-EWS のマネージ API アプリケーションを設計する際もたい方法、ユーザーにリリースするが検討してください。 
+EWS マネージ API アプリケーションを設計する際には、ユーザーにリリースする方法も検討してください。 
   
 ## <a name="redistributing-your-ews-managed-api-application"></a>EWS マネージ API アプリケーションの再配布
 

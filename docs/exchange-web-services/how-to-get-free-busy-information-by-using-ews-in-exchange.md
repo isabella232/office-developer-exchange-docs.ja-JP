@@ -1,36 +1,36 @@
 ---
-title: Exchange EWS を使用して空き時間情報を取得します。
+title: Exchange の EWS を使用して空き時間情報を取得する
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 0e6709c0-dc3d-4280-8c53-cbec9bbdcc9e
-description: EWS マネージ API または Exchange の EWS を使用して、空き時間情報と提示された会議時間を取得する方法について説明します。
+description: EWS マネージ API または Exchange の EWS を使用して、空き時間情報と提案の会議時間を取得する方法について説明します。
 ms.openlocfilehash: 0633c204207317c03740d35b1da4b9626152d2e3
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758974"
 ---
-# <a name="get-freebusy-information-by-using-ews-in-exchange"></a>Exchange EWS を使用して空き時間情報を取得します。
+# <a name="get-freebusy-information-by-using-ews-in-exchange"></a>Exchange の EWS を使用して空き時間情報を取得する
 
-EWS マネージ API または Exchange の EWS を使用して、空き時間情報と提示された会議時間を取得する方法について説明します。
+EWS マネージ API または Exchange の EWS を使用して、空き時間情報と提案の会議時間を取得する方法について説明します。
   
-EWS マネージ API または EWS を使用してプログラムを使用して[会議を作成](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)して会議出席依頼を送信するしますが、すべての出席者に対して動作する時間を見つける多くの場合困難です。 ある場合は手動であるか確認して、すべてのユーザーが利用可能な場合に、タスクを自動化することの目的を損なうことにします。 幸いなことに、EWS マネージ API の[ExchangeService.GetUserAvailability](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.getuseravailability%28v=exchg.80%29.aspx)メソッドと[GetUserAvailability](http://msdn.microsoft.com/library/7906711b-80a1-42ae-8b33-26eeac036a5a%28Office.15%29.aspx)の EWS の操作は、助けを借りることものです。 会議のスケジュールを設定したり、出席者の空き時間情報を取得するだけで最適な時間を検索するのに Exchange サーバーを照会するのには、このメソッドまたは操作を使用できます。 出席者の一覧については、空き時間情報を取得したり、会議の時刻を検索する、またはその両方の Exchange サーバーがあります。 
+EWS マネージ API または EWS でプログラムを使用して[会議を作成](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)し、会議出席依頼を送信できれば便利ですが、多くの場合、出席者全員に都合のよい時間に設定することは困難です。 全員が参加できる時間を手動で確認する必要がある場合、このタスクを自動化する目的は達成されません。 幸いなことに、EWS マネージ API メソッドの [ExchangeService.GetUserAvailability](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.getuseravailability%28v=exchg.80%29.aspx) および EWS 操作の [GetUserAvailability](http://msdn.microsoft.com/library/7906711b-80a1-42ae-8b33-26eeac036a5a%28Office.15%29.aspx) でこの問題を解決できます。 このメソッドまたは操作を使用して Exchange サーバーに対してクエリを実行すると、会議の設定に最適な時間を検索したり、出席者の空き時間情報の取得だけを行ったりできます。 参加者の一覧について空き時間情報を取得したり、Exchange サーバーで会議に適した時間を検索したり、あるいはその両方を組み合わせて実行できます。 
   
-図 1 は問題とその解決策を示します。
+図 1 はこの問題とその解決策を示しています。
   
-**図 1 です。Exchange サーバーから利用可能時間情報を要求します。**
+**図 1. Exchange サーバーから空き時間情報を要求する**
 
 ![GetUserAvailability メソッド/操作が、Exchange サーバーにオプション一式を渡すことで、出席者の出欠を判断する問題を解決する方法を示すイメージ。](media/GetUserAvailability1.png)
   
-## <a name="get-suggested-meeting-times-and-freebusy-information-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して、提示される会議時間と空き時間情報を取得する
+## <a name="get-suggested-meeting-times-and-freebusy-information-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して、提案の会議時間と空き時間情報を取得する
 <a name="bk_getavailewsma"> </a>
 
-すれば、推奨される会議の時刻の一覧と、すべてのスケジュールされたイベントの日時、出席者のために、 [ExchangeService.GetUserAvailability](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.getuseravailability%28v=exchg.80%29.aspx)で**FreeBusyAndSuggestions**の[AvailabilityData](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.availabilitydata%28v=exchg.80%29.aspx)列挙値を使用する場合メソッドの呼び出し例を次に示すようにします。 
+次の例に示すとおり、**FreeBusyAndSuggestions** の [AvailabilityData](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.availabilitydata%28v=exchg.80%29.aspx) 列挙値を [ExchangeService.GetUserAvailability](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.getuseravailability%28v=exchg.80%29.aspx) メソッド呼び出しで使用すると、提案の会議時間、および出席者に対してスケジュール設定されているすべてのイベント時間の両方のリストを取得できます。 
   
-次の使用例は、認証済み Exchange サーバーおよび**サービス**をという名前の[ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)オブジェクトを取得することを想定しています。 
+この例では、ユーザーが Exchange サーバーから認証されていて、**service** という名前の [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトを取得済みであると想定しています。 
   
 ```cs
 private static void GetSuggestedMeetingTimesAndFreeBusyInfo(ExchangeService service)
@@ -98,10 +98,10 @@ private static void GetSuggestedMeetingTimesAndFreeBusyInfo(ExchangeService serv
 
 ```
 
-## <a name="get-suggested-meeting-times-and-freebusy-information-by-using-ews"></a>EWS を使用して、提示される会議時間と空き時間情報を取得する
+## <a name="get-suggested-meeting-times-and-freebusy-information-by-using-ews"></a>EWS を使用して、提案の会議時間と空き時間情報を取得する
 <a name="bk_getavailews"> </a>
 
-すれば、推奨される会議の時刻の一覧と、スケジュールされたイベントの時間はすべて、出席者のために[GetUserAvailability](http://msdn.microsoft.com/library/7906711b-80a1-42ae-8b33-26eeac036a5a%28Office.15%29.aspx)操作を使用して例を次に示すように。 EWS のマネージ API が[推奨される会議の時刻を取得](#bk_getavailewsma)するのには EWS のマネージ API を使用する場合に送信する XML 要求にもです。
+次の例に示すとおり、[GetUserAvailability](http://msdn.microsoft.com/library/7906711b-80a1-42ae-8b33-26eeac036a5a%28Office.15%29.aspx) 操作を使用すると、提案の会議時間、および出席者に対してスケジュール設定されているすべてのイベント時間の両方のリストを取得できます。 これは、EWS マネージ API を使用して[提案の会議時間を取得する](#bk_getavailewsma)ときに、EWS マネージ API が送信する XML 要求でもあります。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -207,7 +207,7 @@ private static void GetSuggestedMeetingTimesAndFreeBusyInfo(ExchangeService serv
 
 ```
 
-サーバーは、次の例のように、 [GetUserAvailability の応答](http://msdn.microsoft.com/library/6999510a-d60e-43da-8964-57b5fb3e9d11%28Office.15%29.aspx)メッセージを表示して[GetUserAvailability の要求](http://msdn.microsoft.com/library/7906711b-80a1-42ae-8b33-26eeac036a5a%28Office.15%29.aspx)に応答します。 
+次の例に示すように、サーバーは [GetUserAvailability 要求](http://msdn.microsoft.com/library/7906711b-80a1-42ae-8b33-26eeac036a5a%28Office.15%29.aspx)に [GetUserAvailability 応答](http://msdn.microsoft.com/library/6999510a-d60e-43da-8964-57b5fb3e9d11%28Office.15%29.aspx)メッセージで応答します。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -373,10 +373,10 @@ private static void GetSuggestedMeetingTimesAndFreeBusyInfo(ExchangeService serv
 ## <a name="see-also"></a>関連項目
 
 
-- [Calendars and EWS in Exchange](calendars-and-ews-in-exchange.md)
+- [Exchange の予定表と EWS](calendars-and-ews-in-exchange.md)
     
-- [Exchange 2013 の EWS を使用して予定および会議を作成します。](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)
+- [Exchange 2013 の EWS を使用して予定と会議を作成する](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)
     
-- [Exchange EWS を使用して予定および会議を更新します。](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)
+- [Exchange の EWS を使用して予定と会議を更新する](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)
     
 

@@ -1,5 +1,5 @@
 ---
-title: EWS を使用して一連の定期的な更新プログラム
+title: EWS を使用して定期的なアイテムを更新する
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,32 +8,32 @@ ms.assetid: 7e61bee9-4840-4773-a0a7-47b11e1fdf59
 description: Exchange の EWS マネージ API または EWS を使用して、定期的なアイテムの予定を変更する方法を説明します。
 ms.openlocfilehash: ecee78457d2e6f91483cf897cfb4976fbd83400c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19759071"
 ---
-# <a name="update-a-recurring-series-by-using-ews"></a>EWS を使用して一連の定期的な更新プログラム
+# <a name="update-a-recurring-series-by-using-ews"></a>EWS を使用して定期的なアイテムを更新する
 
 Exchange の EWS マネージ API または EWS を使用して、定期的なアイテムの予定を変更する方法を説明します。
   
-EWS のマネージ API または EWS を使用するには、いずれかの[データ系列全体を更新](how-to-update-a-recurring-series-by-using-ews-in-exchange.md)、または 1 回を更新することにより定期的な系列を更新します。 この資料では、1 回を更新する方法について説明します。
+EWS マネージ API または EWS を使用して、[定期的なアイテム全体を更新する](how-to-update-a-recurring-series-by-using-ews-in-exchange.md)か、単一のオカレンスを更新することによって定期的なアイテムを更新します。 この記事では、1 つのオカレンスを更新する方法について説明します。
   
-系列の 1 つの予定を変更することは、[単独の予定を変更](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)するのには非常に似ています。 同じメソッドと、操作を使用するが、変更するアイテムのアイテム ID を使用します。
+定期的なアイテムの単一の予定を変更するのは、[予定の単一のインスタンスを変更する](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)ことによく似ています。 同じメソッドと操作を使用しますが、変更するオカレンスのアイテム ID を使用します。
   
-シリーズの 1 回を変更すると、その出現は一連の定期的なマスターに関連付けられている変更の予定の配列に追加されます。 [Appointment.ModifiedOccurrences](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.modifiedoccurrences%28v=exchg.80%29.aspx) EWS のマネージ API のプロパティまたは[ModifiedOccurrences](http://msdn.microsoft.com/library/552932fc-b3b4-486e-8d73-32c0bb10bd68%28Office.15%29.aspx)の EWS の要素を使用するには、変更された系列のすべての予定にアクセスします。 
+定期的なアイテムの単一のオカレンスを変更する場合、そのオカレンスは、定期的なアイテムの定期的マスターに関連付けられている変更された予定の配列に追加されます。 [Appointment.ModifiedOccurrences](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment.modifiedoccurrences%28v=exchg.80%29.aspx) EWS マネージ API プロパティまたは [ModifiedOccurrences](http://msdn.microsoft.com/library/552932fc-b3b4-486e-8d73-32c0bb10bd68%28Office.15%29.aspx) EWS 要素を使用して、変更された定期的なアイテムのすべての予定にアクセスできます。 
   
 ## <a name="modify-a-single-occurrence-in-a-series-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して定期的なアイテムの単一のオカレンスを変更する
 
 定期的なアイテムの単一のインスタンスを変更するには、次の操作を実行します。
   
-1. 項目のインデックス値、またはアイテムの ID を使用して[Appointment.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx)メソッドと[Appointment.BindToOccurrence](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.appointment.bindtooccurrence%28v=exchg.80%29.aspx)メソッドを使用して変更しアイテムへのバインドします。 発生に対応する[予定](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx)のオブジェクトの[Id](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx)プロパティとは、[アイテム Id](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.occurrenceinfo.itemid%28v=exchg.80%29.aspx)オブジェクトのプロパティ、 [OccurrenceInfo](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.occurrenceinfo%28v=exchg.80%29.aspx)の発生に対応するから、この ID を取得します。 
+1. アイテムのインデックス値を指定した [Appointment.BindToOccurrence](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.appointment.bindtooccurrence%28v=exchg.80%29.aspx) メソッドまたはオカレンスの ID を指定した [Appointment.Bind](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) メソッドを使用して、変更するオカレンスにバインドします。 この ID は、オカレンスに対応する [Appointment](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) オブジェクトの [Id](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) プロパティまたは、オカレンスに対応する [OccurrenceInfo](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.occurrenceinfo%28v=exchg.80%29.aspx) オブジェクトの [ItemId](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.occurrenceinfo.itemid%28v=exchg.80%29.aspx) プロパティから取得します。 
     
 2. オカレンスの Appointment オブジェクトのプロパティを更新します。
     
-3. [Appointment.Save](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx)メソッドを使用して発生の予定オブジェクトへの変更を保存します。 
+3. [Appointment.Save](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) メソッドを使用して、オカレンスの予定オブジェクトへ変更を保存します。 
     
-次の例では、一連の定期的な予定を更新し、定期的なマスターの変更後の予定が更新されたことを確認します。 次の使用例は、認証済み Exchange サーバーおよび**サービス**をという名前の[ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)オブジェクトを取得することを想定しています。 `recurrenceMasterId`のパラメーターでは、出現する位置を変更する定期的なマスターに関連付けられている識別子です。 
+次の例では、定期的なアイテムでの予定を更新し、変更された予定が定期的マスター上で更新されたことを確認します。 この例では、ユーザーが Exchange サーバーから認証されていて、**service** という名前の [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトを取得済みであると想定しています。 `recurrenceMasterId` パラメーターは、変更するオカレンスの定期的マスターに関連付けられている識別子です。 
   
 ```cs
 public static ItemId ModifyARecurringSeries(ExchangeService service, ItemId recurrenceMasterId)
@@ -93,9 +93,9 @@ public static ItemId ModifyARecurringSeries(ExchangeService service, ItemId recu
 
 ## <a name="modify-a-single-occurrence-in-a-series-by-using-ews"></a>EWS を使用して定期的なアイテムの単一のオカレンスを変更する
 
-シリーズの 1 つのインスタンスを変更することは、本質的に単独の予定を変更することと同じです。 [アイテム Id](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx)または[OccurrenceItemId](http://msdn.microsoft.com/library/4a15bbc3-5b93-4193-b9ec-da32f0a9a552%28Office.15%29.aspx)要素のいずれかを使用して変更するのには発生することが可能です。 
+定期的なアイテムの単一のインスタンスを変更するのは、予定の単一のインスタンスを変更することと基本的に同じです。 [ItemId](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) または [OccurrenceItemId](http://msdn.microsoft.com/library/4a15bbc3-5b93-4193-b9ec-da32f0a9a552%28Office.15%29.aspx) 要素を使用して、変更するオカレンスを指定できます。 
   
-[UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx)操作を使用して定期的な予定の系列での出来事を更新するとき、次の使用例は要求 XML を示します。 **アイテム Id**と**変更キー**は、読みやすくするために短縮されます。 
+次の例は、[UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) 操作を利用して、予定の定期的なアイテムでオカレンスを更新するときの、要求 XML を表しています。 **ItemId** と **ChangeKey** は読みやすいように短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -190,23 +190,23 @@ public static ItemId ModifyARecurringSeries(ExchangeService service, ItemId recu
 </soap:Envelope>
 ```
 
-**NoError**発生が正常に更新されたことを示すとの[ItemId](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx)の[ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx)値が含まれることを示す[UpdateItemResponse](http://msdn.microsoft.com/library/023b79b4-c675-4669-9112-d85499ec4fc4%28Office.15%29.aspx)メッセージの**UpdateItem**要求に対するサーバーの応答します。更新の予定です。 
+サーバーは、[UpdateItemResponse](http://msdn.microsoft.com/library/023b79b4-c675-4669-9112-d85499ec4fc4%28Office.15%29.aspx) メッセージで **UpdateItem** 要求に応答します。このメッセージには、オカレンスが正常に更新されたことを示す **NoError** の [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 値、および更新された予定の [ItemId](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) が含まれます。 
   
 ## <a name="see-also"></a>関連項目
 
 
-- [Calendars and EWS in Exchange](calendars-and-ews-in-exchange.md)
+- [Exchange の予定表と EWS](calendars-and-ews-in-exchange.md)
     
-- [Exchange EWS を使用して予定および会議を更新します。](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)
+- [Exchange の EWS を使用して予定と会議を更新する](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)
     
 - [定期的なパターンと EWS](recurrence-patterns-and-ews.md)
     
-- [Exchange で EWS を使用して、定期的にアクセスします。](how-to-access-a-recurring-series-by-using-ews-in-exchange.md)
+- [Exchange の EWS を使用して定期的なアイテムにアクセスする](how-to-access-a-recurring-series-by-using-ews-in-exchange.md)
     
-- [Exchange EWS を使用して定期的な系列を作成します。](how-to-create-a-recurring-series-by-using-ews-in-exchange.md)
+- [Exchange の EWS を使用して定期的なアイテムを作成する](how-to-create-a-recurring-series-by-using-ews-in-exchange.md)
     
-- [Exchange EWS を使用して一連の定期的な予定を削除します。](how-to-delete-appointments-in-a-recurring-series-by-using-ews-in-exchange.md)
+- [Exchange の EWS を使用して定期的なアイテムを削除する](how-to-delete-appointments-in-a-recurring-series-by-using-ews-in-exchange.md)
     
-- [Exchange EWS を使用して一連の定期的な更新プログラム](how-to-update-a-recurring-series-by-using-ews-in-exchange.md)
+- [Exchange の EWS を使用して定期的なアイテムを更新する](how-to-update-a-recurring-series-by-using-ews-in-exchange.md)
     
 
