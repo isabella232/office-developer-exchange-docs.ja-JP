@@ -1,39 +1,40 @@
 ---
-title: 予定を削除して、Exchange で EWS を使用して会議をキャンセル
+title: Exchange で EWS を使用して、予定を削除し、会議をキャンセルする
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 42412265-3968-468a-a8c2-7e8af3c6deb9
 description: Exchange の EWS マネージ API または EWS を使用して、予定と会議を削除する方法を説明します。
-ms.openlocfilehash: bd7eac803fedffc51133324259f68fd25652fcff
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.openlocfilehash: c71272bf753432a9f343adc917b444424fe3ba33
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758944"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354079"
 ---
-# <a name="delete-appointments-and-cancel-meetings-by-using-ews-in-exchange"></a>予定を削除して、Exchange で EWS を使用して会議をキャンセル
+# <a name="delete-appointments-and-cancel-meetings-by-using-ews-in-exchange"></a>Exchange で EWS を使用して、予定を削除し、会議をキャンセルする
 
 Exchange の EWS マネージ API または EWS を使用して、予定と会議を削除する方法を説明します。
   
-会議と予定の根本的な違いは、会議には出席者がいますが、予定にはいない点です。 予定と会議の両方は、単一のインスタンスまたは定期的な一連の一部ですが、予定の出席者、会議室、またはリソースを含まないため、必要としないメッセージを送信します。 内部的には、Exchange は会議と予定の両方に同じオブジェクトを使用します。 EWS マネージ API [Appointment クラス](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx)か、EWS [CalendarItem](http://msdn.microsoft.com/library/Title Topic ID Project Name Writer Editor Publish Preview.aspx) 要素を使用して、会議や予定を操作します。 
+会議と予定の根本的な違いは、会議には出席者がいますが、予定にはいない点です。 予定も会議も、単一のインスタンスまたは定期的に連続で発生するアイテムの一部ですが、予定は出席者、会議室、またはリソースを含まないため、メッセージの送信を必要としません。 内部的には、Exchange は会議と予定の両方に同じオブジェクトを使用します。 EWS マネージ API [Appointment クラス](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) または EWS [CalendarItem](http://msdn.microsoft.com/library/Title Topic ID Project Name Writer Editor Publish Preview.aspx) 要素を使用して、会議や予定を操作します。 
   
-**表 1 です。EWS のマネージ API のメソッドとの予定や会議を削除するための EWS の操作**
+**表 1. 予定や会議を削除するための EWS マネージ API メソッドおよび EWS 操作**
 
-|**EWS マネージ API メソッド**|**EWS の操作**|**できること**|
+|**EWS マネージ API メソッド**|**EWS 操作**|**目的**|
 |:-----|:-----|:-----|
-|[Appointment.Delete](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) <br/> |[DeleteItem](http://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx) <br/> |予定を削除します。  <br/> |
-|[Appointment.Delete](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) <br/> |[Createitem メソッド (予定表アイテム)](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) <br/> |会議を削除します。  <br/> |
+|[Appointment.Delete](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) <br/> |[DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |予定を削除します。  <br/> |
+|[Appointment.Delete](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) <br/> |[Createitem (予定表アイテム)](../web-service-reference/createitem-operation-calendar-item.md) <br/> |会議を削除します。  <br/> |
    
-EWS を使用して予定を削除すると、 [DeleteItem](http://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx)操作を使用することに注意してください、 [CreateItem](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx)操作を使用する会議を削除するとします。 直感に反するかもしれませんが、会議を作成する必要があるための出席者に会議のキャンセル通知を送信する応答オブジェクトのメッセージです。 
-  
-## <a name="delete-an-appointment-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して予定を削除する
+EWS を使用して予定を削除する場合、[DeleteItem](../web-service-reference/deleteitem-operation.md) 操作を使用しますが、会議を削除する場合は、[CreateItem](../web-service-reference/createitem-operation-calendar-item.md) 操作を使用することにご注意ください。 直観に反しているように思えるかもしれませんが、これは会議出席依頼の返信オブジェクトを作成して、会議のキャンセル メッセージを出席者に送信する必要があるためです。 
+
 <a name="bk_DeleteApptEWSMA"> </a>
 
-次のコード例では、予定表フォルダーから予定を削除する[Delete](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx)メソッドと[ExchangeService.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)メソッドを探して、削除済みアイテム フォルダー内で予定が削除されたことを確認するのにを使用する方法を示します。 
+## <a name="delete-an-appointment-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して予定を削除する
+
+次のコード例は、[Delete](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) メソッドを使用して予定表フォルダーから予定を削除する方法と、[ExchangeService.FindItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) メソッドを使用して削除済みアイテム フォルダー内で予定を検索し、予定が削除されたことを確認する方法を示します。 
   
-次の使用例は、認証済み Exchange サーバーおよび**サービス**をという名前の[ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)オブジェクトを取得することを想定しています。 ローカル変数`appointmentId`は、既存の予定に関連付けられた識別子。 
+この例では、ユーザーが Exchange サーバーから認証されていて、**service** という名前の [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトを取得済みであると想定しています。 ローカル変数 `appointmentId` は、既存の予定に関連付けられた識別子です。 
   
 ```cs
 // Instantiate an appointment object by binding to it by using the ItemId.
@@ -61,9 +62,9 @@ Console.WriteLine("The appointment " + "\"" + deletedItem.Subject + "\"" + " is 
 ## <a name="delete-an-appointment-by-using-ews"></a>EWS を使用して予定を削除する
 <a name="bk_DeleteApptEWSMA"> </a>
 
-要求と応答 XML を次の例では、 [EWS のマネージ API を使用して予定を削除する](#bk_DeleteApptEWSMA)EWS のマネージ API のコードの呼び出しに対応します。 要求と応答は、同様に予定アイテムが削除済みアイテム フォルダーであることを確認するための XML が表示されます。
+次の例の要求と応答の XML は、「[EWS マネージ API を使用して予定を削除する](#bk_DeleteApptEWSMA)」の EWS マネージ API コードの呼び出しに対応します。 予定アイテムが削除済みアイテム フォルダー内にあることを確認する要求と応答の XML も同様に示されています。
   
-予定を削除するのには、 [DeleteItem](http://msdn.microsoft.com/library/e2152410-41ce-1fe7-8169-f206d5081ebc%28Office.15%29.aspx)の操作の要求の XML の例を次に示します。 
+次の例は、[DeleteItem](../web-service-reference/deleteitem-operation.md) 操作を利用して予定を削除するときの、要求 XML を表しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -86,7 +87,7 @@ Console.WriteLine("The appointment " + "\"" + deletedItem.Subject + "\"" + " is 
 
 ```
 
-[DeleteItem 操作](http://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx)によって返される XML 応答の例を次に示します。 **アイテム Id**と**変更キー**の属性は、読みやすくするために短縮されます。 
+次の例は、[DeleteItem](../web-service-reference/deleteitem-operation.md) 操作で返される応答 XML を表しています。 **ItemId** 属性と **ChangeKey** 属性は読みやすいように短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -111,7 +112,7 @@ Console.WriteLine("The appointment " + "\"" + deletedItem.Subject + "\"" + " is 
 
 ```
 
-[FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)操作での予定が削除されたオブジェクトのアイテムの件名を比較するために [削除済みアイテム フォルダー内の最初の項目を取得する要求の XML の例を次に示します。 
+次の例は、[FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 操作の要求 XML を表しています。この操作は、アイテムの件名と削除された予定のオブジェクトの件名を比較するために、削除済みアイテム フォルダー内の最初のアイテムを取得します。  
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -143,10 +144,10 @@ Console.WriteLine("The appointment " + "\"" + deletedItem.Subject + "\"" + " is 
 
 ```
 
-応答検証の手順で[FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)操作によって返される XML の例を次に示します。 
+次の例は、検証手順で、[FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 操作によって返される応答 XML を表しています。 
   
 > [!NOTE]
-> **アイテム Id**と**変更キー**の属性は、読みやすくするために短縮されます。 
+> **ItemId** 属性と **ChangeKey** 属性は読みやすいように短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -186,17 +187,17 @@ xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
 
 予定表フォルダーから予定アイテムを削除することに加え、会議を削除する場合は、出席者に会議のキャンセルを送信することもできます。会議をキャンセルするのに、次の 3 つのメソッドを使用できます。
   
-- [Appointment.Delete](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx)
+- [Appointment.Delete](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx)
     
-- [Appointment.CancelMeeting](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.cancelmeeting%28v=exchg.80%29.aspx)
+- [Appointment.CancelMeeting](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment.cancelmeeting%28v=exchg.80%29.aspx)
     
-- [CancelMeetingMessage](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.cancelmeetingmessage%28v=exchg.80%29.aspx)
+- [CancelMeetingMessage](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.cancelmeetingmessage%28v=exchg.80%29.aspx)
     
-選択したメソッドは、キャンセルについてのメッセージで指定する必要の詳細レベルによって異なります。 [Appointment.CancelMeeting](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.cancelmeeting%28v=exchg.80%29.aspx)では、パラメーターとして、更新されたメッセージを渡すことによって取り消しについてのメッセージを更新するのには簡単。 [CancelMeetingMessage](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.cancelmeetingmessage%28v=exchg.80%29.aspx)を使用すると、開封確認メッセージの要求などを行うことができますので、キャンセルの通知を送信する前に、メッセージのプロパティを変更できます。 
+選択するメソッドは、キャンセルのメッセージで指定する必要のある詳細レベルによって異なります。 [Appointment.CancelMeeting](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment.cancelmeeting%28v=exchg.80%29.aspx) を使用すると、更新されたメッセージをパラメーターとして渡すことによって、キャンセルのメッセージを簡単に更新できます。 [CancelMeetingMessage](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.cancelmeetingmessage%28v=exchg.80%29.aspx) では、メッセージのプロパティを変更してからキャンセル通知を送信できるので、開封確認の要求などの操作を行うことができます。 
   
-このセクションのコード例では、会議を削除して、会議のキャンセル通知を送信する方法を表示します。 この例では、認証済み Exchange サーバーおよび**サービス**をという名前の[ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)オブジェクトを取得することが前提です。 ローカル変数`meetingId`ターゲットである会議の開催者は、既存の会議に関連付けられている識別子です。 
+このセクションのコード例では、会議を削除して、会議のキャンセル通知を送信する異なる方法を示します。 これらの例では、ユーザーが Exchange サーバーから認証されていて、**service** という名前の [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトを取得済みであることを前提としています。 ローカル変数 `meetingId` は、対象のユーザーが会議開催者である既存の会議に関連付けられた識別子です。 
   
-次のコード例では、 [Appointment.Delete](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx)メソッドを使用して会議を削除する方法を示します。 
+次のコード例は、[Appointment.Delete](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) メソッドを使用して会議を削除する方法を示しています。 
   
 ```cs
 // Instantiate an appointment object for the meeting by binding to it using the ItemId.
@@ -218,7 +219,7 @@ Console.WriteLine("The meeting " + "\"" + deletedItem.Subject + "\"" + " is now 
 
 ```
 
-次のコード例では、 [CancelMeeting](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.cancelmeeting%28v=exchg.80%29.aspx)メソッドを使用して会議を削除する方法を示します。 
+次のコード例は、[CancelMeeting](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment.cancelmeeting%28v=exchg.80%29.aspx) メソッドを使用して会議を削除する方法を示しています。 
   
 ```cs
 // Instantiate an appointment object by binding to it using the ItemId.
@@ -229,7 +230,7 @@ meeting.CancelMeeting("The outdoor meeting has been cancelled due to hailstorms.
 
 ```
 
-次のコード例では、 [Appointment.CreateCancelMeetingMessage](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.createcancelmeetingmessage%28v=exchg.80%29.aspx)メソッドを使用して会議を削除する方法を示します。 
+次のコード例は、[Appointment.CreateCancelMeetingMessage](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment.createcancelmeetingmessage%28v=exchg.80%29.aspx) メソッドを使用して会議を削除する方法を示しています。 
   
 ```cs
 // Instantiate an appointment object by binding to it using the ItemId.
@@ -246,9 +247,9 @@ cancelMessage.SendAndSaveCopy();
 ## <a name="delete-a-meeting-by-using-ews"></a>EWS を使用して会議を削除する
 <a name="bk_EWSDeleteApptAndMeeting"> </a>
 
-要求と応答 XML を次の例では、EWS のマネージ API コードは、 [EWS のマネージ API を使用して会議を削除する](#bk_DeleteMtgEWSMA) [Appointment.Delete](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx)メソッドを使用して呼び出しに対応します。 
+次の例の要求と応答の XML は、「[EWS マネージ API を使用して予定を削除する](#bk_DeleteMtgEWSMA)」の [Appointment.Delete](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) メソッドを使用した EWS マネージ API コードの呼び出しに対応します。 
   
-次の使用例は、 [CreateItem](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx)操作を使用して、出席者に取り消しメッセージを送信し、会議を削除するときに XML 要求を示しています。 
+次の例では、[CreateItem](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) 操作を使用して、出席者にキャンセルのメッセージを送信し、会議を削除する場合の要求 XML を示します。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -274,10 +275,10 @@ cancelMessage.SendAndSaveCopy();
 
 ```
 
-次の例では、会議を削除するために、 [CreateItem](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx)操作要求への応答で返される XML を示します。 
+次の例では、会議の削除に使用される [CreateItem](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) 操作要求への応答として返される XML の例を示します。 
   
 > [!NOTE]
-> **アイテム Id**と**変更キー**の属性は、読みやすくするために短縮されます。 
+> **ItemId** 属性と **ChangeKey** 属性は読みやすいように短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -306,7 +307,7 @@ cancelMessage.SendAndSaveCopy();
 
 ```
 
-[FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)操作での予定が削除されたオブジェクトのアイテムの件名を比較するために [削除済みアイテム フォルダー内の最初の項目を取得する要求の XML の例を次に示します。 
+次の例は、[FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 操作の要求 XML を表しています。この操作は、アイテムの件名と削除された予定のオブジェクトの件名を比較するために、削除済みアイテム フォルダー内の最初のアイテムを取得します。  
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -338,10 +339,10 @@ cancelMessage.SendAndSaveCopy();
 
 ```
 
-検証の手順で[FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)操作によって返される XML の例を次に示します。 
+次の例は、検証手順で、[FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 操作によって返される XML を表しています。 
   
 > [!NOTE]
-> **Id**と**変更キー**の属性は、読みやすくするために短縮されます。 
+> **Id** 属性と **ChangeKey** 属性は読みやすいように短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -377,11 +378,11 @@ xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
 
 ## <a name="see-also"></a>関連項目
 
-- [Calendars and EWS in Exchange](calendars-and-ews-in-exchange.md)    
-- [Exchange 2013 の EWS を使用して予定および会議を作成します。](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)  
-- [Exchange EWS を使用して予定および会議を取得します。](how-to-get-appointments-and-meetings-by-using-ews-in-exchange.md) 
-- [Exchange EWS を使用して予定および会議を更新します。](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)  
-- [Exchange EWS を使用して、会議の新しい日時を提案します。](how-to-propose-a-new-meeting-time-by-using-ews-in-exchange.md) 
-- [Exchange EWS を使用して、会議の新しい日時を提案します。](how-to-propose-a-new-meeting-time-by-using-ews-in-exchange.md)
+- [Exchange の予定表と EWS](calendars-and-ews-in-exchange.md)    
+- [Exchange 2013 で EWS を使用して予定と会議を作成する](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)  
+- [Exchange の EWS を使用して予定と会議を取得する](how-to-get-appointments-and-meetings-by-using-ews-in-exchange.md) 
+- [Exchange で EWS を使用して予定と会議を更新する](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)  
+- [Exchange で EWS を使用して会議の新しい日時を提案する](how-to-propose-a-new-meeting-time-by-using-ews-in-exchange.md) 
+- [Exchange で EWS を使用して会議の新しい日時を提案する](how-to-propose-a-new-meeting-time-by-using-ews-in-exchange.md)
     
 

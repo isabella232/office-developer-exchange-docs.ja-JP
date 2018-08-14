@@ -1,34 +1,34 @@
 ---
-title: Exchange 予定表のアイテムをまとめてを処理します。
+title: Exchange においてバッチ処理で予定表アイテムを処理する
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: fb2952e2-cbfe-43ac-b746-f071faa7665c
 description: Exchange で EWS マネージ API または EWS を使用して、1 回の呼び出しで予定表アイテムの作成、取得、更新、または削除をバッチ処理する方法について説明します。
-ms.openlocfilehash: 2c92b492d9b51d0a5ac3140af22e5527e7bf19be
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.openlocfilehash: e18e74490b536c07e90c64f76f81c98b4eab6024
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759059"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353848"
 ---
-# <a name="process-calendar-items-in-batches-in-exchange"></a>Exchange 予定表のアイテムをまとめてを処理します。
+# <a name="process-calendar-items-in-batches-in-exchange"></a>Exchange においてバッチ処理で予定表アイテムを処理する
 
 Exchange で EWS マネージ API または EWS を使用して、1 回の呼び出しで予定表アイテムの作成、取得、更新、または削除をバッチ処理する方法について説明します。
   
-EWS のマネージ API を使用することができます。 または EWS 予定および会議の呼び出しの数を減らすためのバッチがクライアントを使用すると、Exchange サーバーにします。 EWS のマネージ API を使用して、作成、取得、更新、予定表アイテムのバッチを削除すると、[予定](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx)のオブジェクトのメソッドを使用する 1 つの予定表アイテムを使用するときに、 [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)オブジェクトのメソッドを使用します。 EWS を使用する場合は、1 つの呼び出しに使用するバッチの呼び出しで同じ操作を使用します。 
+EWS マネージ API または EWS を使用すると、予定と会議のバッチ処理を行うことができ、Exchange サーバーに対するクライアントの呼び出し回数が減少します。 EWS マネージ API を使用して予定表アイテムのバッチ処理を作成、取得、更新、削除する場合は、[ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクト メソッドを使用します。1 つの予定表アイテムが処理対象の場合には [Appointment](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) オブジェクト メソッドを使用します。 EWS を使用している場合は、単一の呼び出しと同じバッチ呼び出しの操作を使用します。 
   
-**表 1 です。EWS のマネージ API のメソッドおよび予定表アイテムのバッチを処理するための EWS 操作**
+**表 1. 予定表アイテムをバッチ処理するための EWS マネージ API メソッドと EWS 操作**
 
-|**目的…**|**この EWS 管理 API メソッドを使用します。**|**EWS 操作を使用します。**|
+|**目的**|**使用する EWS マネージ API メソッド**|**使用する EWS 操作**|
 |:-----|:-----|:-----|
-|バッチ処理で予定表アイテムを作成する  <br/> |[CreateItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) <br/> |[CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) <br/> |
-|バッチ処理で予定表アイテムを取得する  <br/> |[BindToItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) <br/> |[GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) <br/> |
-|バッチ処理で予定表アイテムを更新する  <br/> |[UpdateItems](http://msdn.microsoft.com/en-us/library/dd634705%28v=exchg.80%29.aspx) <br/> |[UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
-|バッチ処理で予定表アイテムを削除する  <br/> |[DeleteItems](http://msdn.microsoft.com/en-us/library/dd635460%28v=exchg.80%29.aspx) <br/> |[DeleteItem](http://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx) <br/> |
+|バッチ処理で予定表アイテムを作成する  <br/> |[CreateItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) <br/> |[CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) <br/> |
+|バッチ処理で予定表アイテムを取得する  <br/> |[BindToItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) <br/> |[GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) <br/> |
+|バッチ処理で予定表アイテムを更新する  <br/> |[UpdateItems](http://msdn.microsoft.com/ja-JP/library/dd634705%28v=exchg.80%29.aspx) <br/> |[UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
+|バッチ処理で予定表アイテムを削除する  <br/> |[DeleteItems](http://msdn.microsoft.com/ja-JP/library/dd635460%28v=exchg.80%29.aspx) <br/> |[DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |
    
-この記事では、EWS のマネージ API または EWS を使用して予定表アイテムのバッチのための基本的なタスクを完了する方法について学習します。
+この記事では、EWS マネージ API または EWS を使用して予定表アイテムのバッチ処理を行うための基本的なタスクの実行方法について説明します。
   
 この記事の EWS マネージ API の例では、メソッドが連続して呼び出される場合に予定表アイテムのバッチを作成、取得、更新、および削除できます。
   
@@ -43,9 +43,9 @@ BatchDeleteCalendarItemsTwice(service, itemIds);
 ## <a name="create-calendar-items-in-batches-by-using-the-ews-managed-api"></a>EWS マネージ API を使用してバッチ処理で予定表アイテムを作成する
 <a name="bk_createewsma"> </a>
 
-次の例のように、 [CreateItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) EWS 管理 API メソッドを使用してバッチ処理で予定表アイテムを作成できます。 次の使用例は、次の 3 つの[予定](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx)オブジェクトを作成-単独の予定、定期的な予定、および会議- し、それらをコレクションに追加します。 
+次の例に示されているように、EWS マネージ API の [CreateItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) メソッドを使用すると、バッチ処理で予定表アイテムを作成できます。 この例では 3 つの [Appointment](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) オブジェクト (単一インスタンスの予定、定期的な予定、および会議) を作成して、これらをコレクションに追加します。 
   
-次の使用例は、認証済み Exchange サーバーおよび**サービス**をという名前の[ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)オブジェクトを取得することを想定しています。 
+この例では、ユーザーが Exchange サーバーから認証されていて、**service** という名前の [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトを取得済みであると想定しています。 
   
 ```cs
 public static Collection<ItemId> BatchCreateCalendarItems(ExchangeService service)
@@ -122,12 +122,12 @@ return itemIds;
 
 ```
 
-コレクション内の[予定](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx)オブジェクトは、予定または会議、および単一インスタンスまたは定期的な一連のいずれかのできます。 
+コレクション内の [Appointment](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) オブジェクトは、予定または会議、および単一のインスタンスか定期的なアイテムのいずれかとして使用できます。 
   
 ## <a name="create-calendar-items-in-batches-by-using-ews"></a>EWS を使用してバッチ処理で予定表アイテムを作成する
 <a name="bk_createews"> </a>
 
-コード例を次に示すように、 [CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) EWS 操作を使用してバッチ処理で予定表アイテムを作成できます。 EWS のマネージ API が[バッチ内の予定表アイテムを作成](#bk_createewsma)するのには EWS のマネージ API を使用する場合に送信する XML 要求にもです。
+次のコード例に示すように、EWS の [CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) 操作を使用して、バッチ処理で予定表アイテムを作成できます。これは、EWS マネージ API を使用して[バッチ処理で予定表アイテムを作成](#bk_createewsma)するときに EWS マネージ API が送信する XML 要求でもあります。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -206,11 +206,11 @@ return itemIds;
 
 ```
 
-サーバー要求に応答し、 **CreateItem** **NoError**の[ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx)値は、各予定表アイテムが作成されたことを示す、新しい予定表アイテムの[CreateItemResponse](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx)メッセージ正常にします。 
+サーバーは、**CreateItem** 要求に [CreateItemResponse](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) メッセージで応答します。このメッセージには、それぞれの新しい予定表アイテムが正常に作成および保存されたことを示す、**NoError** の [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 値が含まれます。  
   
 予定表アイテムは Exchange Server に渡された各予定表アイテムの要素の値にしたがって、会議か予定、または単一のインスタンスか定期的なアイテムのいずれかになります。
   
-サーバーからの応答を次に示します。 **アイテム Id**と**変更キー**の属性は、読みやすくするために短縮されます。 
+次の XML はサーバーからの応答です。**ItemId** 属性と **ChangeKey** 属性は読みやすいように短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -259,9 +259,9 @@ return itemIds;
 ## <a name="get-calendar-items-in-batches-by-using-the-ews-managed-api"></a>EWS マネージ API を使用してバッチ処理で予定表アイテムを取得する
 <a name="bk_getewsma"> </a>
 
-次の例のように、 [BindToItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) EWS 管理 API メソッドを使用してバッチ処理で予定表アイテムを取得できます。 
+次の例に示されているように、EWS マネージ API の [BindToItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) メソッドを使用すると、バッチ処理で予定表アイテムを取得できます。 
   
-次の使用例は、認証済み Exchange サーバーおよび**サービス**をという名前の[ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)オブジェクトを取得することを想定しています。 
+この例では、ユーザーが Exchange サーバーから認証されていて、**service** という名前の [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトを取得済みであると想定しています。 
   
 ```cs
 public static Collection<Appointment> BatchGetCalendarItems(ExchangeService service, Collection<ItemId> itemIds)
@@ -313,9 +313,9 @@ public static Collection<Appointment> BatchGetCalendarItems(ExchangeService serv
 ## <a name="get-calendar-items-in-batches-by-using-ews"></a>EWS を使用してバッチ処理で予定表アイテムを取得する
 <a name="bk_getews"> </a>
 
-次の例のように、 [GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) EWS 操作を使用してバッチで予定表アイテムを取得できます。 EWS のマネージ API が[バッチ内の予定表アイテムを取得](#bk_getewsma)するのには EWS のマネージ API を使用する場合に送信する XML 要求にもです。
+次の例に示すように、EWS の [GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) 操作を使用して、バッチ処理で予定表アイテムを取得できます。これは、EWS マネージ API を使用して[バッチ処理で予定表アイテムを取得](#bk_getewsma)するときに EWS マネージ API が送信する XML 要求でもあります。
   
-**アイテム Id**と**変更キー**の属性は、読みやすくするために短縮されます。 
+**ItemId** 属性と **ChangeKey** 属性は読みやすいように短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -355,7 +355,7 @@ public static Collection<Appointment> BatchGetCalendarItems(ExchangeService serv
 
 ```
 
-サーバーは、例を次に示すように、各項目について、要求されたプロパティを使用して[GetItemResponse](http://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx)メッセージの**GetItem**要求に応答します。 
+サーバーは **GetItem** 要求に [GetItemResponse](http://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx) メッセージで応答します。このメッセージには、次の例に示すように、各アイテムの要求されたプロパティが含まれます。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -477,9 +477,9 @@ public static Collection<Appointment> BatchGetCalendarItems(ExchangeService serv
 ## <a name="update-calendar-items-in-batches-by-using-the-ews-managed-api"></a>EWS マネージ API を使用してバッチ処理で予定表アイテムを更新する
 <a name="bk_updateewsma"> </a>
 
-[UpdateItems](http://msdn.microsoft.com/en-us/library/dd634705%28v=exchg.80%29.aspx) EWS 管理 API メソッドを使用してバッチ内の予定表アイテムのプロパティを更新するには、次の例に示すように。 
+次の例に示されているように、EWS マネージ API の [UpdateItems](http://msdn.microsoft.com/ja-JP/library/dd634705%28v=exchg.80%29.aspx) メソッドを使用すると、バッチ処理で予定表アイテムのプロパティを更新できます。 
   
-次の使用例は、認証済み Exchange サーバーおよび**サービス**をという名前の[ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)オブジェクトを取得することを想定しています。 
+この例では、ユーザーが Exchange サーバーから認証されていて、**service** という名前の [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトを取得済みであると想定しています。 
   
 ```cs
 public static Collection<ItemId> BatchUpdateCalendarItems(ExchangeService service, Collection<Appointment> calenderItems)
@@ -530,7 +530,7 @@ public static Collection<ItemId> BatchUpdateCalendarItems(ExchangeService servic
 ## <a name="update-calendar-items-in-batches-by-using-ews"></a>EWS を使用してバッチ処理で予定表アイテムを更新する
 <a name="bk_updateews"> </a>
 
-[UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) EWS の操作によって複数の予定表アイテムを更新するには、次のコード例に示すようにします。 EWS のマネージ API が[バッチ内の予定表アイテムを更新](#bk_updateewsma)するのには EWS のマネージ API を使用する場合に送信する XML 要求にもです。
+次のコード例に示されているように、EWS の [UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) 操作を使用して、複数の予定表アイテムを更新できます。これは、EWS マネージ API を使用して[バッチ処理で予定表アイテムを更新](#bk_updateewsma)するときに EWS マネージ API が送信する XML 要求でもあります。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -592,7 +592,7 @@ public static Collection<ItemId> BatchUpdateCalendarItems(ExchangeService servic
 
 ```
 
-サーバーは、 [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **NoError**、更新プログラムのそれぞれのサーバー上でが正常に保存されたことを示す値を含む、 [UpdateItemResponse](http://msdn.microsoft.com/library/023b79b4-c675-4669-9112-d85499ec4fc4%28Office.15%29.aspx)メッセージの**UpdateItem**要求に応答します。 [ConflictResult](http://msdn.microsoft.com/library/08cdd547-4de7-4c7a-b60f-e618dc217d20%28Office.15%29.aspx)要素内での競合が報告されます。 
+サーバーは、**UpdateItem** 要求に [UpdateItemResponse](http://msdn.microsoft.com/library/023b79b4-c675-4669-9112-d85499ec4fc4%28Office.15%29.aspx) メッセージで応答します。このメッセージには、それぞれの更新がサーバーで正常に行われたことを示す、**NoError** の [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 値が含まれます。競合は、[ConflictResult](http://msdn.microsoft.com/library/08cdd547-4de7-4c7a-b60f-e618dc217d20%28Office.15%29.aspx) 要素で報告されます。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -650,9 +650,9 @@ public static Collection<ItemId> BatchUpdateCalendarItems(ExchangeService servic
 ## <a name="delete-calendar-items-in-batches-by-using-the-ews-managed-api"></a>EWS マネージ API を使用してバッチ処理で予定表アイテムを削除する
 <a name="bk_deleteewsma"> </a>
 
-[DeleteItems](http://msdn.microsoft.com/en-us/library/dd635460%28v=exchg.80%29.aspx) EWS 管理 API メソッドを使用してバッチ内の予定表アイテムを削除するには、次の例に示すように。 この例は、例外はスローされませんが、呼び出しを行ったときにストアになかったこと、サーバー エラーが返されます**ErrorItemNotFound**ことを示すために削除するアイテムを表示するのには 2 回目の要求の削除です。 アイテムは既に削除されている場合、またはサーバーに無効なアイテムの ID が渡された場合、このエラーが返されます。 
+次の例に示されているように、EWS マネージ API [DeleteItems](http://msdn.microsoft.com/ja-JP/library/dd635460%28v=exchg.80%29.aspx) メソッドを使用すると、バッチ処理で予定表アイテムを削除できます。 この例では 2 回削除要求を行い、例外がスローされないこと、ただしサーバーが **ErrorItemNotFound** エラーを返して、呼び出しが行われたときに削除対象のアイテムがストアになかったことを示しています。 アイテムが既に削除されていたり、無効なアイテム ID がサーバーに渡されると、このエラーが返されます。 
   
-次の使用例は、認証済み Exchange サーバーおよび**サービス**をという名前の[ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)オブジェクトを取得することを想定しています。 
+この例では、ユーザーが Exchange サーバーから認証されていて、**service** という名前の [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトを取得済みであると想定しています。 
   
 ```cs
 public static void BatchDeleteCalendarItemsTwice(ExchangeService service, Collection<ItemId> itemIds)
@@ -693,14 +693,14 @@ public static void BatchDeleteCalendarItemsTwice(ExchangeService service, Collec
 
 ```
 
-**DeleteItems**メソッドは、2 回目に呼び出されると、例外はスローされませんが、サーバーでは、結果の**ErrorItemNotFound**エラーが返されます。 
+2 回目に **DeleteItems** メソッドが呼び出されると、例外はスローされませんが、結果にサーバーが **ErrorItemNotFound** エラーを返します。 
   
 ## <a name="delete-calendar-items-in-batches-by-using-ews"></a>EWS を使用してバッチ処理で予定表アイテムを削除する
 <a name="bk_deleteews"> </a>
 
-[DeleteItem](http://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx) EWS 操作を使用してバッチ内の予定表アイテムを削除するには、コード例を次に示すように。 EWS のマネージ API が[バッチ内の予定表アイテムを削除](#bk_deleteewsma)するのには EWS のマネージ API を使用する場合に送信する XML 要求にもです。 
+次のコード例に示されているように、[DeleteItem](../web-service-reference/deleteitem-operation.md) EWS 操作を使用して、バッチ処理で予定表アイテムを削除できます。これは、EWS マネージ API を使用して[バッチ処理で予定表アイテムを削除](#bk_deleteewsma)するときに EWS マネージ API が送信する XML 要求でもあります。  
   
-**アイテム Id**と**変更キー**の属性は、読みやすくするために短縮されます。 
+**ItemId** 属性と **ChangeKey** 属性は読みやすいように短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -729,7 +729,7 @@ public static void BatchDeleteCalendarItemsTwice(ExchangeService service, Collec
 
 ```
 
-サーバー要求に応答、 **DeleteItem** **NoError**の削除された項目ごとに[ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx)値を含む[DeleteItemResponse](http://msdn.microsoft.com/library/86463d66-fe47-4a19-a81b-e24841e816ab%28Office.15%29.aspx)のメッセージです。 
+サーバーは、**DeleteItem** 要求に [DeleteItemResponse](http://msdn.microsoft.com/library/86463d66-fe47-4a19-a81b-e24841e816ab%28Office.15%29.aspx) メッセージで応答します。このメッセージには、削除された各アイテムの **NoError** の [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 値が含まれます。  
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -761,7 +761,7 @@ public static void BatchDeleteCalendarItemsTwice(ExchangeService service, Collec
 
 ```
 
-いる場合、 **DeleteItem**要求した関連付けられているアイテムが既に削除されていると、例外はスローされませんが、サーバーは結果に**ErrorItemNotFound**エラーを返します。 次の使用例は、関連付けられているアイテムが既に削除されている場合の**DeleteItem**要求に対するサーバーの応答を示しています。 
+関連付けられたアイテムが既に削除されているときに **DeleteItem** 要求が行われると、例外はスローされませんが、結果としてサーバーが **ErrorItemNotFound** エラーを返します。次の例では、関連付けられたアイテムが既に削除されているときに、サーバーが **DeleteItem** 要求に応答します。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -804,21 +804,21 @@ public static void BatchDeleteCalendarItemsTwice(ExchangeService service, Collec
 
 バッチ要求の 1 つ以上の予定表アイテムを要求どおりに処理できないと、失敗した予定表アイテムごとにエラーが返されます。バッチ処理のそれ以外の予定表アイテムは想定どおりに処理されます。対象アイテムが削除されたために送信、取得、更新できなかったり、対象アイテムが別のフォルダーに移動したためにアイテム ID が新しくなり、送信されたアイテム ID で変更できない場合は、バッチ処理でエラーが生じます。このセクションの情報には、予定表アイテムのバッチ処理で生じたエラーの詳細を取得する方法が示されています。
   
-EWS のマネージ API を使用して、バッチ処理の成功を確認するには、 [ServiceResponseCollection](http://msdn.microsoft.com/en-us/library/dd633715%28v=exchg.80%29.aspx)の[OverallResult](http://msdn.microsoft.com/en-us/library/dd634515%28v=exchg.80%29.aspx)プロパティが[ServiceResult.Success](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresult%28v=exchg.80%29.aspx)に等しいかを確認できます。 その場合は、すべての予定表アイテムが正常に処理されました。 **OverallResult**が**ServiceResult.Success**、1 つまたは複数の予定表のアイテムと同じでない場合は、正常に処理されませんでした。 **ServiceResponseCollection**で返されるオブジェクトの各には、次のプロパティが含まれます。 
+EWS マネージ API を使用してバッチ処理が成功したかどうかは、[ServiceResponseCollection](http://msdn.microsoft.com/ja-JP/library/dd633715%28v=exchg.80%29.aspx) の [OverallResult](http://msdn.microsoft.com/ja-JP/library/dd634515%28v=exchg.80%29.aspx) プロパティが [ServiceResult.Success](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.serviceresult%28v=exchg.80%29.aspx) と等しいかどうかを調べることで確認できます。 等しい場合は、すべての予定表アイテムが正常に処理されています。 **OverallResult** が **ServiceResult.Success** と等しくない場合は、1 つ以上の予定表アイテムが正常に処理されませんでした。 **ServiceResponseCollection** で返される各オブジェクトには、次のプロパティが含まれます。 
   
-- [エラー コード](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponse.errorcode%28v=exchg.80%29.aspx)
+- [ErrorCode](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.serviceresponse.errorcode%28v=exchg.80%29.aspx)
     
-- [ErrorDetails](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponse.errordetails%28v=exchg.80%29.aspx)
+- [ErrorDetails](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.serviceresponse.errordetails%28v=exchg.80%29.aspx)
     
-- [エラー メッセージ](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponse.errormessage%28v=exchg.80%29.aspx)
+- [ErrorMessage](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.serviceresponse.errormessage%28v=exchg.80%29.aspx)
     
-- [ErrorProperties](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponse.errorproperties%28v=exchg.80%29.aspx)
+- [ErrorProperties](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.serviceresponse.errorproperties%28v=exchg.80%29.aspx)
     
-- [結果](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.serviceresponse.result%28v=exchg.80%29.aspx)
+- [Result](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.serviceresponse.result%28v=exchg.80%29.aspx)
     
-これらのプロパティには、なぜ、予定表アイテムを処理できませんでした要求に関する情報が含まれています。 この資料の例では、失敗した各項目の**結果**、**エラー コード**、および**エラー メッセージ**を印刷します。 これらの結果を使用すると、問題を調査します。 
+これらのプロパティには、予定表アイテムを要求どおりに処理できなかった原因についての情報が含まれます。この記事の例では、エラーが生じた各アイテムの **Result**、**ErrorCode**、**ErrorMessage** が出力されます。これらの結果を使用して問題を調査できます。 
   
-EWS では、バッチ処理の成功を確認するには、処理中の各項目の[ResponseClass](http://msdn.microsoft.com/library/bf57265a-d354-4cd7-bbfc-d93e19cbede6%28Office.15%29.aspx)属性を確認します。 **ResponseMessageType**、するすべての応答メッセージの派生元の基本型の基本構造を次に示します。 
+EWS でバッチ処理が成功したことを確認するには、各処理対象アイテムの [ResponseClass](http://msdn.microsoft.com/library/bf57265a-d354-4cd7-bbfc-d93e19cbede6%28Office.15%29.aspx) 属性を調べます。すべての応答メッセージの派生元となる基本タイプの **ResponseMessageType** の基本構造を次に示します。  
   
 ```XML
 <ResponseMessage ResponseClass="Success | Warning | Error">
@@ -829,21 +829,21 @@ EWS では、バッチ処理の成功を確認するには、処理中の各項�
 </ResponseMessage>
 ```
 
-**ResponseClass**属性は、正常に処理されていない場合に、予定表アイテムが正常に処理された場合の**成功**または**エラー**に設定されます。 予定表のアイテムのバッチ処理中に**警告**は発生しません。 **ResponseClass**が**成功**の場合は、 [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx)要素の後も常に**NoError**に設定されています。 **ResponseClass**が**エラー**の場合は、問題の原因を特定するのには、[メッセージ テキスト](http://msdn.microsoft.com/library/59a23bdc-0d9a-4942-8b3c-9cdb11db1ab1%28Office.15%29.aspx)、 **ResponseCode**、および[MessageXml](http://msdn.microsoft.com/library/bcaf9e35-d351-48f3-baad-f90c633cba8a%28Office.15%29.aspx)の要素の値を確認する必要があります。 [DescriptiveLinkKey](http://msdn.microsoft.com/library/f7f36749-00f3-4915-b17c-e3caa0af6e67%28Office.15%29.aspx)は、現在使用されていません。 
+**ResponseClass** 属性は、予定表アイテムが正常に処理された場合には **Success** に設定され、正常に処理されなかった場合には **Error** に設定されます。予定表アイテムの場合、バッチ処理中に **Warning** が示されることはありません。**ResponseClass** が **Success** の場合、それに続く [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 要素は必ず **NoError** に設定されます。**ResponseClass** が **Error** の場合、[MessageText](http://msdn.microsoft.com/library/59a23bdc-0d9a-4942-8b3c-9cdb11db1ab1%28Office.15%29.aspx)、**ResponseCode**、[MessageXml](http://msdn.microsoft.com/library/bcaf9e35-d351-48f3-baad-f90c633cba8a%28Office.15%29.aspx) の各要素の値を確認し、問題の原因を特定する必要があります。[DescriptiveLinkKey](http://msdn.microsoft.com/library/f7f36749-00f3-4915-b17c-e3caa0af6e67%28Office.15%29.aspx) は現在使用されていません。 
   
 ## <a name="see-also"></a>関連項目
 
 
-- [Calendars and EWS in Exchange](calendars-and-ews-in-exchange.md)
+- [Exchange の予定表と EWS](calendars-and-ews-in-exchange.md)
     
-- [Exchange EWS を使用して予定および会議を取得します。](how-to-get-appointments-and-meetings-by-using-ews-in-exchange.md)
+- [Exchange の EWS を使用して予定と会議を取得する](how-to-get-appointments-and-meetings-by-using-ews-in-exchange.md)
     
-- [Exchange EWS を使用して予定および会議を更新します。](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)
+- [Exchange で EWS を使用して予定と会議を更新する](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)
     
-- [予定を削除して、Exchange で EWS を使用して会議をキャンセル](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md)
+- [Exchange の EWS を使用して、予定を削除し、会議をキャンセルする](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md)
     
-- [Exchange 予定表のアイテムをまとめてを処理します。](how-to-process-calendar-items-in-batches-in-exchange.md)
+- [Exchange においてバッチ処理で予定表アイテムを処理する](how-to-process-calendar-items-in-batches-in-exchange.md)
     
-- [EWS のバッチ要求の影響を調整](ews-throttling-in-exchange.md#bk_ThrottlingBatch)
+- [EWS のバッチ要求の調整の影響](ews-throttling-in-exchange.md#bk_ThrottlingBatch)
     
 

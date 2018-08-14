@@ -1,5 +1,5 @@
 ---
-title: EWS を使用して Exchange でのユーザーの写真を取り込み
+title: Exchange で EWS を使用してユーザーの写真を取得する
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
@@ -8,42 +8,42 @@ ms.assetid: f86d1099-1f57-47dc-abf2-4d5ae4e900a9
 description: Exchange の EWS マネージ API または EWS を使用して、メールボックスまたは連絡先に関連付けられているユーザーの写真を取得する方法について説明します。
 ms.openlocfilehash: f0f5cddd41fc563fb9ed38e75b505830a3992411
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19758987"
 ---
-# <a name="get-user-photos-by-using-ews-in-exchange"></a>EWS を使用して Exchange でのユーザーの写真を取り込み
+# <a name="get-user-photos-by-using-ews-in-exchange"></a>Exchange で EWS を使用してユーザーの写真を取得する
 
 Exchange の EWS マネージ API または EWS を使用して、メールボックスまたは連絡先に関連付けられているユーザーの写真を取得する方法について説明します。
   
 顔と名前を並べて配置すると便利です。ユーザーが顔と名前を並べて配置することを望む場合は、アプリケーションから Exchange にある電子メール アカウントを表すイメージ (通常は写真) を要求できます。Exchange サーバーに保存されたメールボックス用のユーザーの写真を取得することも、自分のメールボックスに保存されている連絡先から得た連絡先の写真を取得することもできます。
   
-さまざまなテクノロジを使用すると、メールボックスまたは Active Directory ドメイン サービス (AD DS) から写真を取得します。 写真を取得する最良の方法から写真を取得する連絡先の種類によって異なります。 
+数種のテクノロジを使用して、メールボックスまたは Active Directory ドメイン サービス (AD DS) から写真を取得できます。 写真を取得するための最適な方法は、どの種類の連絡先から写真を取得するかによって異なります。 
   
-**表 1 です。テクノロジを使用して連絡先の種類に基づいて、ユーザーの写真を取得するには**
+**表 1. ユーザーの写真を取得するために連絡先の種類に基づいて使用するテクノロジ**
 
-|**連絡先の種類**|**テクノロジを使用するには**|
+|**連絡先の種類**|**使用するテクノロジ**|
 |:-----|:-----|
-|メールボックス ユーザーの写真  <br/> |[残りの部分を使用してメールボックスのユーザーの写真を取得します。](#bk_REST)<br/><br/> [EWS を使用してユーザーの写真を取得します。](#bk_EWS) <br/> |
-|連絡先ユーザーの写真  <br/> |[EWS のマネージ API を使用してユーザーの連絡先の写真を取得します。](#bk_EWSMA)<br/><br/> [EWS を使用してユーザーの写真を取得します。](#bk_EWS) <br/> |
+|メールボックス ユーザーの写真  <br/> |[REST を使用してメールボックス ユーザーの写真を取得する](#bk_REST)<br/><br/> [EWS を使用してユーザーの写真を取得する](#bk_EWS) <br/> |
+|連絡先ユーザーの写真  <br/> |[EWS マネージ API を使用して連絡先ユーザーの写真を取得する](#bk_EWSMA)<br/><br/> [EWS を使用してユーザーの写真を取得する](#bk_EWS) <br/> |
 
 <a name="bk_REST"> </a>
 
 ## <a name="get-a-mailbox-user-photo-by-using-rest"></a>REST を使用してメールボックス ユーザーの写真を取得する
 
-標準的な**取得**を HTTPS 要求を使用して Exchange サーバーからユーザーの写真を要求できます。 次の例に示すように、依頼の電子メール アカウントのアドレスと、イメージのサイズのコードを指定します。 
+標準の HTTPS **GET** 要求を使用することで、Exchange サーバーのユーザーの写真を要求できます。 この要求では、次の例に示すように、電子メール アカウント アドレスとイメージのサイズ コードを指定しています。 
   
 ```HTML
 https://Exchange Server/ews/Exchange.asmx/s/GetUserPhoto?email=email address&amp;size=size code
 ```
 
-自動検出サービスの[GetUserSettings](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)操作を使用して、Exchange Web サービス (EWS) のエンドポイントの URL と**Exchange.asmx** HTTP ハンドラーを表すオブジェクトの場所を含む**ExternalEwsUrl**の設定を取得するために、ユーザーの写真です。 
+自動検出サービスの [GetUserSettings](how-to-get-user-settings-from-exchange-by-using-autodiscover.md) 操作を使用して **ExternalEwsUrl** 設定を取得します。この設定には、Exchange Web サービス (EWS) エンドポイントの URL と、ユーザーの写真を返す **Exchange.asmx** HTTP ハンドラーの場所が含まれています。 
   
-各サイズのコードは、ピクセル単位でイメージの幅と高さを示します。 サイズ コード**HR48x48**は、高さ 48 ピクセル、幅 48 ピクセルであるイメージを返します。 サイズ ・ コード ・ パラメーターの値は、 [SizeRequested](http://msdn.microsoft.com/library/e86f98b6-83b5-4530-80eb-dc5df42e2c62%28Office.15%29.aspx)要素の値と同じです。 要求では、無効なサイズを指定する場合は、最大の使用可能な写真が返されます。 Exchange サーバー上の写真が格納されていない場合、は、アカウントを AD DS に格納されているサムネイル イメージが返されます。 
+それぞれのサイズ コードは、イメージの高さと幅をピクセル単位で示しています。 たとえば、サイズ コード **HR48x48** は、高さ 48 ピクセル × 幅 48 ピクセルのイメージを返します。 サイズ コード パラメーターに有効な値は、[SizeRequested](http://msdn.microsoft.com/library/e86f98b6-83b5-4530-80eb-dc5df42e2c62%28Office.15%29.aspx) 要素に有効な値と同じになります。 要求で指定したサイズが使用できない場合は、使用可能な最大の写真が返されます。 Exchange サーバーに写真が保存されていない場合は、そのアカウント用に AD DS に保存されているサムネイル イメージが返されます。 
   
 > [!NOTE]
-> **HR48x48**サイズのコードは、使用可能である場合、AD DS の縮小版イメージを常に返します。 
+> **HR48x48** サイズ コードは、常に AD DS サムネイル イメージを返します (使用可能な場合)。 
   
 次の例は、GET 要求を使用して Sadie のユーザー写真を取得して、ローカル コンピューターに保存する方法を示しています。
   
@@ -62,29 +62,29 @@ using (HttpWebResponse resp = request.GetResponse() as HttpWebResponse)
 
 ```
 
-この要求により、HTTP 応答が返されます。  
+この要求により、HTTP 応答が返されます。 
   
-**表 2 になります。GetUserPhoto 要求の応答コード**
+**表 2. GetUserPhoto 要求の応答コード**
 
 |**応答コード**|**説明**|
 |:-----|:-----|
 |200  <br/> |指定された電子メール アカウントのイメージが使用可能であり、応答にはバイナリ イメージが含まれています。  <br/> |
-|304  <br/> |**ETag**は、アプリケーションに返された最後の時間以降は、イメージは変更されていません。  <br/> |
+|304  <br/> |イメージは前回 **ETag** がアプリケーションに返したものから変更されていません。  <br/> |
 |404  <br/> |指定された電子メール アカウントに使用可能なイメージがありません。  <br/> |
 
 <a name="bk_REST"> </a>
 
-## <a name="cache-user-photos"></a>キャッシュのユーザーの写真
+## <a name="cache-user-photos"></a>ユーザーの写真をキャッシュする
 
-Exchange では、コンテンツ タイプ ヘッダー値のコレクションとは、イメージと jpeg のデータを返します。 **ETag**ヘッダーは、キーの変更に似ています。 値は、写真が更新された最終時刻を表す文字列です。 写真が変更されるまで、ユーザーの写真を同じ**ETag**のままです。 この**ETag**値は、HTTPS **GET**要求**なしに If-match**ヘッダー内のサーバーに送信できます。 写真が前回の要求以降変更されていない場合、HTTP 304 応答を示すようにサーバの応答がします。 以前を要求し、保存したユーザーの写真を使用することができますこれは、新しい 1 つを処理する代わりにします。 
+Exchange は、コンテンツの種類が image/jpeg のデータをヘッダー値のコレクションと共に返します。 **ETag** ヘッダーは、変更キーと同様のものです。 この値は、前回写真が更新されたことを表す文字列です。 **ETag** は、写真が変更されるまでユーザーの写真に対して同じままに保たれます。 この **ETag** 値は、HTTPS **GET** 要求の **If-None-Match** ヘッダーでサーバーに送信できます。 前回の要求以降に写真が変更されていない場合は、それを表す HTTP 304 応答でサーバーが応答します。 そのため、新しいユーザーの写真を処理するのではなく、以前に要求して保存しておいたものを使用できるようになります。 
 
 <a name="bk_EWSMA"> </a>
 
-## <a name="get-a-contact-user-photo-by-using-ews-managed-api"></a>EWS マネージ API を使用して連絡先ユーザーの写真を取得する 
+## <a name="get-a-contact-user-photo-by-using-ews-managed-api"></a>EWS マネージ API を使用して連絡先ユーザーの写真を取得する
 
-アプリケーションは、ユーザーのメールボックスの連絡先フォルダーに連絡先が保存されている場合、連絡先の写真を取得するために、EWS のマネージ API を使用できます。 **ItemId**を最初に、これを行うには、検索、連絡先に使用します。 その連絡先にバインドすると後、は、添付ファイルのコレクションに読み込みます。 連絡先に写真がある場合、添付ファイルのいずれかを写真になります。 **IsContactPhoto**プロパティの値を確認、添付ファイルのコレクションをループします。 連絡先の写真を検索するときに、ローカル コンピューターに保存することができ、アプリケーションがアクセスできます。 
+アプリケーションでは EWS マネージ API を使用して連絡先の写真を取得できます (連絡先がユーザーのメールボックスの連絡先フォルダーに保存されている場合)。 これを行うには、まず、使用する連絡先の **ItemId** を見つけます。 次に、その連絡先にバインドしてから、添付ファイルのコレクションに読み込みます。 連絡先に写真がある場合は、写真が添付ファイルの 1 つに含まれています。 添付ファイルのコレクションをループして、**IsContactPhoto** プロパティの値を確認します。 連絡先の写真を見つけたら、その写真をローカル コンピューターに保存して、アプリケーションからアクセスできるようにします。 
   
-次の使用例は、このプロセスを示しています。 この例では、 **service** が有効な [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
+次の例は、このプロセスを示しています。 この例では、**service** が有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーから既に認証されていると想定しています。 
   
 ```cs
 private static void GetContactPhoto(ExchangeService service, string ItemId)
@@ -114,13 +114,13 @@ private static void GetContactPhoto(ExchangeService service, string ItemId)
 
 <a name="bk_EWS"> </a>
 
-## <a name="get-a-user-photo-by-using-ews"></a>EWS を使用してユーザーの写真を取得します。
+## <a name="get-a-user-photo-by-using-ews"></a>EWS を使用してユーザーの写真を取得する
 
-AD DS からユーザーの写真がある場合、(e メール アドレスがわからない) 場合、 [GetUserPhoto](http://msdn.microsoft.com/library/f6e8143d-4235-428e-8f9c-ab6e9b1cfa6e%28Office.15%29.aspx)操作 (電子メール アドレスを知っている) 場合や、 [ResolveNames](http://msdn.microsoft.com/library/6b4eb4b3-9ad6-4804-a09f-7e20cfea4dbb%28Office.15%29.aspx)操作を使用できます。 メールボックスの連絡先フォルダーからユーザーの写真がある場合、 [GetAttachment](http://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx)操作の後に、 [GetItem](http://msdn.microsoft.com/library/6b96dace-1260-4b83-869a-7c31c5583daa%28Office.15%29.aspx)操作を使用します。 どちらの場合も、写真は XML 応答に Base64 でエンコードされた文字列として返されます。 
+ユーザーの写真を AD DS から取得するときに、電子メール アドレスがわかっている場合は [GetUserPhoto](http://msdn.microsoft.com/library/f6e8143d-4235-428e-8f9c-ab6e9b1cfa6e%28Office.15%29.aspx) 操作を使用し、電子メール アドレスがわからない場合は [ResolveNames](http://msdn.microsoft.com/library/6b4eb4b3-9ad6-4804-a09f-7e20cfea4dbb%28Office.15%29.aspx) 操作を使用します。 メールボックスの連絡先フォルダーからユーザーの写真を取得する場合は、[GetItem](http://msdn.microsoft.com/library/6b96dace-1260-4b83-869a-7c31c5583daa%28Office.15%29.aspx) 操作に続けて [GetAttachment](http://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) 操作を使用します。 どちらの場合も、写真は Base64 エンコード文字列として XML 応答で返されます。 
   
 ### <a name="get-a-mailbox-user-photo-by-using-the-getuserphoto-operation"></a>GetUserPhoto 操作を使用してメールボックス ユーザーの写真を取得する
 
-**GetUserPhoto**操作を使用することは簡単です。 XML 要求に、ユーザー、および[写真のサイズ](http://msdn.microsoft.com/library/e86f98b6-83b5-4530-80eb-dc5df42e2c62%28Office.15%29.aspx)( [SizeRequested](http://msdn.microsoft.com/library/e86f98b6-83b5-4530-80eb-dc5df42e2c62%28Office.15%29.aspx)要素) で取得するの電子メール アドレスを指定します。 Sadie Daniels が 360 ピクセル、高さ、幅が 360 ピクセルの写真を取得するのには次の XML 要求の例を次に示します。 
+**GetUserPhoto** 操作を使用すると、簡単になります。 XML 要求では、ユーザーの電子メール アドレスと、返される[写真のサイズ](http://msdn.microsoft.com/library/e86f98b6-83b5-4530-80eb-dc5df42e2c62%28Office.15%29.aspx)を指定します ([SizeRequested](http://msdn.microsoft.com/library/e86f98b6-83b5-4530-80eb-dc5df42e2c62%28Office.15%29.aspx) 要素内)。 次の XML 要求の例は、幅 360 ピクセル×高さ 360 ピクセルの Sadie Daniels の写真を取得する方法を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -142,7 +142,7 @@ AD DS からユーザーの写真がある場合、(e メール アドレスが�
 
 ```
 
-XML 応答は、次のようにします。 [PictureData](http://msdn.microsoft.com/library/1124eac3-ebf2-4b81-96d3-96838c840433%28Office.15%29.aspx)要素 (コンテンツが小さすぎると読みやすさ優先) で、Base64 でエンコードされた写真が含まれています。 
+次に、XML 応答を示します。 Base64 エンコードされた写真が [PictureData](http://msdn.microsoft.com/library/1124eac3-ebf2-4b81-96d3-96838c840433%28Office.15%29.aspx) 要素に含まれています (読みやすくするために内容が短縮されています)。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -162,7 +162,7 @@ XML 応答は、次のようにします。 [PictureData](http://msdn.microsoft.
 
 ### <a name="get-a-mailbox-user-photo-by-using-the-resolvenames-operation"></a>ResolveNames 操作を使用してメールボックス ユーザーの写真を取得する
 
-写真を取得するユーザーの電子メール アドレスがわからない場合は[ResolveNames オペレーションを使用](how-to-resolve-ambiguous-names-by-using-ews-in-exchange-2013.md)可能な一致の候補を取得することができます。 [ResolveNames](http://msdn.microsoft.com/library/c85207e1-1315-443b-94ec-2b58f405076b%28Office.15%29.aspx)要素の**ContactDataShape**属性の"AllProperties"を指定すると、各候補者への多くのユーザーの写真を含む、データが返されます。 "Sadie"の名前を解決し、各候補者へのすべてのプロパティを返す XML 要求の例を次に示します。 
+写真を取得するユーザーの電子メール アドレスがわからない場合は、[ResolveNames 操作を使用する](how-to-resolve-ambiguous-names-by-using-ews-in-exchange-2013.md)ことで一致する可能性のある候補を取得できます。 [ResolveNames](http://msdn.microsoft.com/library/c85207e1-1315-443b-94ec-2b58f405076b%28Office.15%29.aspx) 要素の **ContactDataShape** 属性に "AllProperties" を指定すると、候補ごとに大量のデータ (ユーザーの写真を含む) が返されます。 次の例は、名前 "Sadie" を解決して、候補ごとにプロパティをすべて返す XML 要求を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -182,7 +182,7 @@ xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
 </soap:Envelope>
 ```
 
-応答には、大量のデータが表示されます。 次の例では、ユーザーの写真に関連するデータのみを示します。 **写真**の要素には、Base64 でエンコードされたユーザーの写真 (コンテンツが小さすぎると読みやすさ優先) にはが含まれています。 
+この応答では、大量のデータが返されます。 次の例は、ユーザーの写真に関連するデータのみを示しています。 **Photo** 要素には、Base64 エンコードされたユーザーの写真が含まれています (読みやすくするために内容が短縮されています)。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -223,7 +223,7 @@ xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
 
 ### <a name="get-a-contact-user-photo-by-using-the-getattachment-operation"></a>GetAttachment 操作を使用して連絡先ユーザーの写真を取得する
 
-EWS を使用すると、メールボックスに格納されている連絡先から写真を取得します。 まず、 **GetItem**操作を使用して、写真のようにすべてのプロパティを取得します。 連絡先アイテムを取得するのには、XML 要求の例を次に示します。 品目 ID が小さすぎると読みやすくするためです。 
+EWS を使用すると、メールボックスに保存された連絡先から写真を取得できます。 まず、**GetItem** 操作を使用してプロパティをすべて返して、写真を探せるようにします。 次の例は、連絡先アイテムを取得する XML 要求を示しています。 アイテム ID は、読みやすくするために短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -245,7 +245,7 @@ EWS を使用すると、メールボックスに格納されている連絡先�
 
 ```
 
-連絡先に関連付けられている写真があることを確認するのには[HasPicture](http://msdn.microsoft.com/library/922a43fe-01bd-49f2-9261-e00e4699b8da%28Office.15%29.aspx)要素を検索します。 [IsContactPhoto](http://msdn.microsoft.com/library/ae36b5f9-a787-4863-9dbc-258ad724801d%28Office.15%29.aspx)要素の true の値を持つ 1 つの添付ファイルのコレクションを検索します。 次の応答の例は、関連データのみを示します。 ID の値は、読みやすさに短縮されます。 
+[HasPicture](http://msdn.microsoft.com/library/922a43fe-01bd-49f2-9261-e00e4699b8da%28Office.15%29.aspx) 要素を調べて、連絡先に関連付けられた写真があることを確認します。 その後で、添付ファイルのコレクションを 1 つずつ調べて、値が true の [IsContactPhoto](http://msdn.microsoft.com/library/ae36b5f9-a787-4863-9dbc-258ad724801d%28Office.15%29.aspx) 要素を見つけます。 次の応答例は、関連するデータのみを示しています。 ID の値は読みやすくするために短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -287,7 +287,7 @@ EWS を使用すると、メールボックスに格納されている連絡先�
 
 ```
 
-次に、連絡先の写真を添付ファイルを要求するのに**AttachmentId**と**GetAttachment**操作を使用します。 次の使用例は、添付ファイルを取得するのには XML の要求を示しています。 ID は、読みやすくするために短縮されます。 
+次に、**AttachmentId** を指定した **GetAttachment** 操作を使用して、連絡先の写真がある添付ファイルを要求します。 次の例は、添付ファイルを取得する XML 要求を示しています。 ID は読みやすくするために短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -308,7 +308,7 @@ xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
 
 ```
 
-要求した添付ファイルに関する情報を使用して XML 応答の例を次に示します。 [コンテンツ](http://msdn.microsoft.com/library/24f8c54a-505f-4fc0-b7e7-93ad50b97070%28Office.15%29.aspx)要素には、短く読みやすくするためには、この例では、ユーザーの写真を Base64 でエンコードされた文字列が含まれています。 
+次の例は、要求した添付ファイルに関する情報を含む XML 応答を示しています。 [Content](http://msdn.microsoft.com/library/24f8c54a-505f-4fc0-b7e7-93ad50b97070%28Office.15%29.aspx) 要素には、ユーザーの写真の Base64 エンコード文字列が含まれています。読みやすくするために、この例の文字列は短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -337,7 +337,7 @@ xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
 
 <a name="bk_EWS"> </a>
 
-## <a name="decode-a-base64-encoded-string"></a>Base64 でエンコードされた文字列をデコードします。
+## <a name="decode-a-base64-encoded-string"></a>Base64 エンコード文字列をデコードする
 
 どの操作を使用してユーザーの写真を取得したとしても、その文字列をデコードしてアプリケーションで使用できるようにする必要があります。次の例は、文字列をデコードし、ローカル コンピューターに保存して、後からアプリケーションでアクセスできるようにする方法を示しています。
   
@@ -360,7 +360,7 @@ using (FileStream file = new FileStream(ContactName + ".jpg", FileMode.Create, S
 ## <a name="see-also"></a>関連項目
 
 - [Exchange 内の EWS のユーザーと連絡先](people-and-contacts-in-ews-in-exchange.md)    
-- [Exchange 2013 の EWS を使用してあいまいな名前を解決するには](how-to-resolve-ambiguous-names-by-using-ews-in-exchange-2013.md)    
-- [Exchange EWS を使用してバッチ プロセスの連絡先](how-to-process-contacts-in-batches-by-using-ews-in-exchange.md)
+- [Exchange 2013 の EWS を使用して、あいまいな名前を解決する](how-to-resolve-ambiguous-names-by-using-ews-in-exchange-2013.md)    
+- [Exchange において EWS を使用してバッチ処理で連絡先を処理する](how-to-process-contacts-in-batches-by-using-ews-in-exchange.md)
     
 

@@ -1,41 +1,41 @@
 ---
-title: 電子メール メッセージを Exchange で EWS を使用してバッチ プロセス
+title: Exchange で EWS を使用してバッチ処理でメール メッセージを処理する
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 96390f92-cab1-4de6-9ec2-a55678fc20af
 description: Exchange で EWS マネージ API または EWS を使用して、1 回の呼び出しで複数のメール メッセージの作成、取得、更新、削除をバッチ処理する方法について説明します。
-ms.openlocfilehash: 30ebbdf4c92111df629c7662987e301d167336e2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.openlocfilehash: b7dcc8f0961a34061b0476e2136193bf21731d99
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759063"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354044"
 ---
-# <a name="process-email-messages-in-batches-by-using-ews-in-exchange"></a>電子メール メッセージを Exchange で EWS を使用してバッチ プロセス
+# <a name="process-email-messages-in-batches-by-using-ews-in-exchange"></a>Exchange で EWS を使用してバッチ処理でメール メッセージを処理する
 
 Exchange で EWS マネージ API または EWS を使用して、1 回の呼び出しで複数のメール メッセージの作成、取得、更新、削除をバッチ処理する方法について説明します。
   
-EWS のマネージ API を使用することができます。 または EWS 呼び出しの数を減らすために電子メール メッセージのバッチがクライアントを使用すると、Exchange サーバーにします。 EWS のマネージ API を使用してを作成、取得、更新、削除、およびバッチ処理でメッセージを送信すると、 [email メッセージ](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx)オブジェクトのメソッドを使用する 1 つの電子メール メッセージを使用するときに、 [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx)オブジェクトのメソッドを使用します。 EWS を使用する場合は、単一および電子メール メッセージのバッチの両方を使用する同じ操作を使用します。 
+EWS マネージ API または EWS を使用すると、メール メッセージのバッチ操作を行い、クライアントが Exchange サーバーを呼び出す回数を減らせます。 EWS マネージ API を使用してメール メッセージの作成、取得、更新、削除、送信のバッチ操作を行う場合、[ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクト メソッドを使用します。1 つのメール メッセージを対象とする場合には [EmailMessage](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) オブジェクト メソッドを使用します。 EWS を使用する場合は、同じ操作を使用して 1 つのメール メッセージの処理とバッチ処理のどちらも行えます。 
   
-**表 1 です。EWS のマネージ API のメソッドおよび電子メール メッセージのバッチを処理するための EWS の操作**
+**表 1. メール メッセージをバッチ処理するための EWS マネージ API メソッドと EWS 操作**
 
-|**目的…**|**この EWS 管理 API メソッドを使用します。**|**EWS 操作を使用します。**|
+|**目的**|**使用する EWS マネージ API メソッド**|**使用する EWS 操作**|
 |:-----|:-----|:-----|
-|バッチ処理でメール メッセージを作成する  <br/> |[ExchangeService.CreateItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) <br/> |[CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) <br/> |
-|バッチ処理でメール メッセージを取得する  <br/> |[ExchangeService.BindToItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) <br/> |[GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) <br/> |
-|バッチ処理でメール メッセージを更新する  <br/> |[ExchangeService.UpdateItems](http://msdn.microsoft.com/en-us/library/dd634705%28v=exchg.80%29.aspx) <br/> |[UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
-|バッチ処理でメール メッセージを削除する  <br/> |[ExchangeService.DeleteItems](http://msdn.microsoft.com/en-us/library/dd635460%28v=exchg.80%29.aspx) <br/> |[DeleteItem](http://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx) <br/> |
+|バッチ処理でメール メッセージを作成する  <br/> |[ExchangeService.CreateItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) <br/> |[CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) <br/> |
+|バッチ処理でメール メッセージを取得する  <br/> |[ExchangeService.BindToItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) <br/> |[GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) <br/> |
+|バッチ処理でメール メッセージを更新する  <br/> |[ExchangeService.UpdateItems](http://msdn.microsoft.com/ja-JP/library/dd634705%28v=exchg.80%29.aspx) <br/> |[UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
+|バッチ処理でメール メッセージを削除する  <br/> |[ExchangeService.DeleteItems](http://msdn.microsoft.com/ja-JP/library/dd635460%28v=exchg.80%29.aspx) <br/> |[DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |
    
-この記事では、EWS のマネージ API または EWS を使用して電子メール メッセージのバッチのための基本的なタスクを完了する方法について学習します。
+この記事では、EWS マネージ API または EWS を使用してメール メッセージのバッチ処理を行うための基本的なタスクの実行方法について説明します。
   
 ## <a name="create-email-messages-in-batches-by-using-the-ews-managed-api"></a>EWS マネージ API を使用してバッチ処理でメール メッセージを作成する
 <a name="bk_createewsma"> </a>
 
-例を次に示すように、マネージ API の EWS **CreateItems**メソッドを使用してバッチ処理でメッセージを作成できます。 次の使用例 3 つの[なか](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx)オブジェクトをローカルに作成するには、各メッセージは、コレクションに追加し、メッセージのコレクションで**CreateItems**メソッドを呼び出します。 
+次の例に示されているように、EWS マネージ API **CreateItems** メソッドを使用すると、バッチ処理でメッセージを作成できます。 この例では、3 つの [EmailMessage](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) オブジェクトをローカルに作成し、それぞれのメッセージをコレクションに追加してから、メッセージのコレクションをパラメーターにして **CreateItems** メソッドを呼び出します。 
   
-この例では、 **service** が有効な [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
+この例では、**service** が有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーから既に認証されていると想定しています。 
   
 ```cs
 public static Collection<ItemId> CreateDraftEmailInBatch(ExchangeService service)
@@ -105,12 +105,12 @@ public static Collection<ItemId> CreateDraftEmailInBatch(ExchangeService service
 }
 ```
 
-例は、[下書き] フォルダー内のメッセージをのみ保存に注意してください。メッセージは送信されません。 メッセージを送信する方法の詳細については、 [EWS のマネージ API を使用してバッチ処理での電子メール メッセージの送信](#bk_sendewsma)を参照してください。
+この例では、下書きフォルダーにメッセージを保存しますが、メッセージは送信しません。 メッセージを送信する方法の詳細については、「[EWS マネージ API を使用してバッチ処理でメール メッセージを送信する](#bk_sendewsma)」を参照してください。
   
-## <a name="create-email-messages-in-batches-by-using-ews"></a>EWS を使用して、バッチ処理でメール メッセージを作成する
+## <a name="create-email-messages-in-batches-by-using-ews"></a>EWS を使用してバッチ処理でメール メッセージを作成する
 <a name="bk_createews"> </a>
 
-コード例を次に示すように、 [CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) EWS 操作を使用してバッチ処理で電子メール メッセージを作成できます。 EWS のマネージ API が[バッチ内の電子メール メッセージを作成](#bk_createewsma)するのには EWS のマネージ API を使用する場合に送信する XML 要求にもです。 
+次のコード例に示されているように、[CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) EWS 操作を使用して、バッチ処理でメール メッセージを作成できます。これは、EWS マネージ API を使用して[バッチ処理でメール メッセージを作成](#bk_createewsma)する際に、EWS マネージ API が送信する XML 要求でもあります。  
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -160,14 +160,14 @@ public static Collection<ItemId> CreateDraftEmailInBatch(ExchangeService service
 </soap:Envelope>
 ```
 
-サーバー要求に応答し、 **CreateItem** **NoError**の[ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx)値は、それぞれの新しいメッセージ、各電子メールが作成され、正常に保存されたことを示す[CreateItemResponse](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx)メッセージ. 
+サーバーは、**CreateItem** 要求に [CreateItemResponse](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) メッセージで応答します。このメッセージには、それぞれの新しいメッセージが正常に作成および保存されたことを示す、**NoError** の [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 値が含まれます。 
   
-例は、[下書き] フォルダー内のメッセージをのみ保存に注意してください。メッセージは送信されません。 メッセージを送信する方法の詳細については、 [EWS を使用してバッチ内の電子メール メッセージの送信](#bk_sendews)を参照してください。
+この例では、下書きフォルダーにメッセージを保存しますが、メッセージは送信しません。 メッセージを送信する方法の詳細については、「[EWS を使用してバッチ処理でメール メッセージを送信する](#bk_sendews)」を参照してください。
   
 ## <a name="send-email-messages-in-batches-by-using-the-ews-managed-api"></a>EWS マネージ API を使用してバッチ処理でメール メッセージを送信する
 <a name="bk_sendewsma"> </a>
 
-[CreateItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx)メソッドのパラメーターのいくつかを変更することを除いて、バッチ、電子メール メッセージを作成するのに使用するバッチ内の電子メール メッセージを送信するのにには、同じコードを使用します。 EWS のマネージ API を使用して電子メール メッセージを送信する[バッチ内の電子メール メッセージを作成](#bk_createewsma)するに使用するコードを使用し、 **CreateItems**メソッドの呼び出しを次の例では、呼び出しに置き換えます。 この例では、メッセージが送信済みアイテム フォルダーに作成され、するため、メッセージが送信され、ローカルに保存だけでなく、 [MessageDisposition.SendAndSaveCopy](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.messagedisposition%28v=exchg.80%29.aspx)にメッセージの処理方法が変更されます。
+バッチ処理でメール メッセージを送信するには、バッチ処理でのメール メッセージの作成に使用するコードと同じコードを使用します。ただし、一部の [CreateItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) メソッドのパラメーターは変更します。 そのため、EWS マネージ API を使用してメール メッセージを送信するには、[バッチ処理でのメール メッセージの作成](#bk_createewsma)に使用するコードを使用して、**CreateItems** メソッドへの呼び出しを次の例の呼び出しに置き換えます。 この例では、メッセージは送信済みアイテム フォルダーに作成されます。またメッセージがローカルに保存されるだけでなく送信されるように、メッセージの処理方法を [MessageDisposition.SendAndSaveCopy](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.messagedisposition%28v=exchg.80%29.aspx) に変更しています。
   
 ```cs
 // Create and send the batch of email messages on the server.
@@ -178,7 +178,7 @@ ServiceResponseCollection<ServiceResponse> response = service.CreateItems(messag
 ## <a name="send-email-messages-in-batches-by-using-ews"></a>EWS を使用してバッチ処理でメール メッセージを送信する
 <a name="bk_sendews"> </a>
 
-**CreateItem**操作のいくつかの属性の値を変更する点を除いては、バッチ、電子メール メッセージを作成するのに使用することに、バッチで電子メール メッセージを送信するのにには、同じコードを使用します。 EWS を使用して電子メール メッセージを送信するを使用して[バッチ内の電子メール メッセージを作成](#bk_createews)、および"SendAndSaveCopy"、 **MessageDisposition**の値に変更するコードを使用しに示すように、 [DistinguishedFolderId](http://msdn.microsoft.com/library/50018162-2941-4227-8a5b-d6b4686bb32f%28Office.15%29.aspx)を"送信済みアイテム] に変更します次のコード例です。 
+バッチ処理でメール メッセージを送信するには、バッチ処理でのメール メッセージの作成に使用するコードと同じコードを使用します。ただし、**CreateItem** 操作の一部の属性値は変更します。 そのため、EWS を使用してメール メッセージを送信するには、[バッチ処理でのメール メッセージの作成](#bk_createews)に使用するコードを使用して、次のコード例に示すように、**MessageDisposition** 値を "SendAndSaveCopy" に変更し、[DistinguishedFolderId](http://msdn.microsoft.com/library/50018162-2941-4227-8a5b-d6b4686bb32f%28Office.15%29.aspx) を "sentitems" に変更します。 
   
 ```XML
 <m:CreateItem MessageDisposition="SendAndSaveCopy">
@@ -187,14 +187,14 @@ ServiceResponseCollection<ServiceResponse> response = service.CreateItems(messag
   </m:SavedItemFolderId>
 ```
 
-サーバーは、 **CreateItem**要求**NoError**の[ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx)値は、それぞれの新しいメッセージ、各電子メールが作成され、正常に送信されたことを示す[CreateItemResponse](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx)メッセージに応答します。 
+サーバーは、**CreateItem** 要求に [CreateItemResponse](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) メッセージで応答します。このメッセージには、それぞれの新しいメッセージが正常に作成および送信されたことを示す、**NoError** の [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 値が含まれます。 
   
 ## <a name="get-email-messages-in-batches-by-using-the-ews-managed-api"></a>EWS マネージ API を使用してバッチ処理でメール メッセージを取得する
 <a name="bk_getewsma"> </a>
 
-次の例のように、EWS のマネージ API の[BindToItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx)メソッドを使用してバッチ処理で電子メール メッセージを取得できます。 
+次の例に示されているように、EWS マネージ API [BindToItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) メソッドを使用すると、バッチ処理でメール メッセージを取得できます。 
   
-この例では、 **service** が有効な [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
+この例では、**service** が有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーから既に認証されていると想定しています。 
   
 ```cs
 public static Collection<EmailMessage> BatchGetEmailItems(ExchangeService service, Collection<ItemId> itemIds)
@@ -235,9 +235,9 @@ public static Collection<EmailMessage> BatchGetEmailItems(ExchangeService servic
 ## <a name="get-email-messages-in-batches-by-using-ews"></a>EWS を使用してバッチ処理でメール メッセージを取得する
 <a name="bk_getews"> </a>
 
-次の例では、 [GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) EWS 操作とコードを使用してバッチ処理で電子メール メッセージを取得できます。 EWS のマネージ API が[バッチ内の電子メール メッセージを取得](#bk_getewsma)するのには EWS のマネージ API を使用する場合に送信する XML 要求にもです。 
+次のコード例に示されている [GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) EWS 操作とコードを使用して、バッチ処理でメール メッセージを取得できます。これは、EWS マネージ API を使用して[バッチ処理でメール メッセージを取得](#bk_getewsma)する際に、EWS マネージ API が送信する XML 要求でもあります。  
   
-**アイテム Id**と**変更キー**の属性は、読みやすくするために短縮されています。 
+**ItemId** 属性と **ChangeKey** 属性は読みやすいように短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -270,18 +270,18 @@ public static Collection<EmailMessage> BatchGetEmailItems(ExchangeService servic
 </soap:Envelope>
 ```
 
-サーバーは、要求されたメッセージの[最初のクラスのプロパティ](email-properties-and-elements-in-ews-in-exchange.md)が含まれています[GetItemResponse](http://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx)メッセージの**GetItem**要求に応答します。 
+サーバーは **GetItem** 要求に [GetItemResponse](http://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx) メッセージで応答します。このメッセージには、それぞれの要求されたメッセージの[ファースト クラス プロパティ](email-properties-and-elements-in-ews-in-exchange.md)が含まれます。 
   
 ## <a name="update-email-messages-in-batches-by-using-the-ews-managed-api"></a>EWS マネージ API を使用してバッチ処理でメール メッセージを更新する
 <a name="bk_updateewsma"> </a>
 
-次の例のように、EWS のマネージ API の[UpdateItems](http://msdn.microsoft.com/en-us/library/dd634705%28v=exchg.80%29.aspx)メソッドを使用してバッチ処理で電子メール メッセージを取得できます。 
+次の例に示されているように、EWS マネージ API の [UpdateItems](http://msdn.microsoft.com/ja-JP/library/dd634705%28v=exchg.80%29.aspx) メソッドを使用すると、バッチ処理でメール メッセージを取得できます。 
   
-書き込み可能な電子メール メッセージのプロパティのリストは、 [Exchange プロパティおよび EWS での要素を電子メール](email-properties-and-elements-in-ews-in-exchange.md)を参照してください。
+書き込み可能なメール メッセージ プロパティの一覧については、「[Exchange における EWS でのメールのプロパティと要素](email-properties-and-elements-in-ews-in-exchange.md)」を参照してください。
   
-更新された後、下書きメッセージを送信する方法の詳細については、 [EWS のマネージ API を使用して電子メール メッセージを送信する](#bk_sendewsma)を参照してください。
+下書きメッセージを更新してから送信する方法の詳細については、「[EWS マネージ API を使用してメール メッセージを送信する](#bk_sendewsma)」を参照してください。
   
-この例では、 **service** が有効な [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
+この例では、**service** が有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーから既に認証されていると想定しています。 
   
 ```cs
 public static Collection<EmailMessage> BatchUpdateEmailItems(ExchangeService service, Collection<EmailMessage> messageItems)
@@ -322,11 +322,11 @@ public static Collection<EmailMessage> BatchUpdateEmailItems(ExchangeService ser
 ## <a name="update-email-messages-in-batches-by-using-ews"></a>EWS を使用してバッチ処理でメール メッセージを更新する
 <a name="bk_updateews"> </a>
 
-[GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) EWS 操作を使用してバッチ内の電子メール メッセージを更新するには、次のコード例に示すように。 EWS のマネージ API が[バッチ内の電子メール メッセージを更新](#bk_updateewsma)するのには EWS のマネージ API を使用する場合に送信する XML 要求にもです。
+次のコード例に示されているように、EWS の [GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) 操作を使用して、バッチ処理でメール メッセージを更新できます。これは、EWS マネージ API を使用して[バッチ処理でメール メッセージを更新](#bk_updateewsma)する際に、EWS マネージ API が送信する XML 要求でもあります。
   
-書き込み可能な電子メール メッセージの要素のリストは、[プロパティおよび EWS での要素を Exchange 電子メール](email-properties-and-elements-in-ews-in-exchange.md)を参照してください。
+書き込み可能なメール メッセージ要素の一覧については、「[Exchange における EWS でのメールのプロパティと要素](email-properties-and-elements-in-ews-in-exchange.md)」を参照してください。
   
-更新された後、下書きメッセージを送信する方法の詳細については、 [EWS を使用して、下書き電子メール メッセージを送信する](how-to-send-email-messages-by-using-ews-in-exchange.md#bk_senddraftews)を参照してください。
+下書きメッセージを更新してから送信する方法の詳細については、「[EWS を使用して下書きメール メッセージを送信する](how-to-send-email-messages-by-using-ews-in-exchange.md#bk_senddraftews)」を参照してください。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -386,14 +386,14 @@ public static Collection<EmailMessage> BatchUpdateEmailItems(ExchangeService ser
 </soap:Envelope>
 ```
 
-サーバーは、 [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **NoError**、更新プログラムのそれぞれのサーバー上でが正常に保存されたことを示す値を含む、 [UpdateItemResponse](http://msdn.microsoft.com/library/023b79b4-c675-4669-9112-d85499ec4fc4%28Office.15%29.aspx)メッセージの**UpdateItem**要求に応答します。 [ConflictResult](http://msdn.microsoft.com/library/08cdd547-4de7-4c7a-b60f-e618dc217d20%28Office.15%29.aspx)要素内での競合が報告されます。 
+サーバーは、**UpdateItem** 要求に [UpdateItemResponse](http://msdn.microsoft.com/library/023b79b4-c675-4669-9112-d85499ec4fc4%28Office.15%29.aspx) メッセージで応答します。このメッセージには、それぞれの更新がサーバーで正常に行われたことを示す、**NoError** の [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 値が含まれます。競合は、[ConflictResult](http://msdn.microsoft.com/library/08cdd547-4de7-4c7a-b60f-e618dc217d20%28Office.15%29.aspx) 要素で報告されます。 
   
 ## <a name="delete-email-messages-in-batches-by-using-the-ews-managed-api"></a>EWS マネージ API を使用してバッチ処理でメール メッセージを削除する
 <a name="bk_deleteewsma"> </a>
 
-、EWS のマネージ API の[DeleteItems](http://msdn.microsoft.com/en-us/library/dd635460%28v=exchg.80%29.aspx)メソッドを使用してバッチ内のメッセージを削除するには、次の例のようにします。 
+次の例に示されているように、EWS マネージ API の [DeleteItems](http://msdn.microsoft.com/ja-JP/library/dd635460%28v=exchg.80%29.aspx) メソッドを使用すると、バッチ処理でメッセージを削除できます。 
   
-この例では、 **service** が有効な [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
+この例では、**service** が有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーから既に認証されていると想定しています。 
   
 ```cs
 public static void BatchDeleteEmailItems(ExchangeService service, Collection<ItemId> itemIds)
@@ -419,7 +419,7 @@ public static void BatchDeleteEmailItems(ExchangeService service, Collection<Ite
 ## <a name="delete-email-messages-in-batches-by-using-ews"></a>EWS を使用してバッチ処理でメール メッセージを削除する
 <a name="bk_deleteews"> </a>
 
-[DeleteItem](http://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx) EWS 操作を使用してバッチ内の電子メール メッセージを削除するには、次のコード例に示すように。 EWS のマネージ API が[バッチ内の電子メール メッセージを削除](#bk_deleteewsma)するのには EWS のマネージ API を使用する場合に送信する XML 要求にもです。
+次のコード例に示されているように、EWS の [DeleteItem](../web-service-reference/deleteitem-operation.md) 操作を使用して、バッチ処理でメール メッセージを削除できます。これは、EWS マネージ API を使用して[バッチ処理でメール メッセージを削除](#bk_deleteewsma)する際に、EWS マネージ API が送信する XML 要求でもあります。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -446,28 +446,28 @@ public static void BatchDeleteEmailItems(ExchangeService service, Collection<Ite
 </soap:Envelope>
 ```
 
-サーバー要求に応答、 **DeleteItem** **NoError**の削除された項目ごとに[ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx)値を含む[DeleteItemResponse](http://msdn.microsoft.com/library/86463d66-fe47-4a19-a81b-e24841e816ab%28Office.15%29.aspx)のメッセージです。 返す成功アイテム ID が見つかりませんだった場合に注意してください。 
+サーバーは、**DeleteItem** 要求に [DeleteItemResponse](http://msdn.microsoft.com/library/86463d66-fe47-4a19-a81b-e24841e816ab%28Office.15%29.aspx) メッセージで応答します。このメッセージには、削除された各アイテムの **NoError** の [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 値が含まれます。この操作によって、アイテム ID が見つからない場合でも成功が返される点に注意してください。 
   
 ## <a name="verifying-that-a-batch-process-completed-successfully"></a>バッチ処理が正常に完了したことを確認する
 <a name="bk_successful"> </a>
 
 バッチ要求された 1 つ以上のメール メッセージを要求どおりに処理できないと、失敗したメール メッセージごとにエラーが返されます。バッチ処理のそれ以外のメールは予期したとおりに処理されます。対象アイテムが削除されたために送信、取得、更新できなかったり、対象アイテムが別のフォルダーに移動したためにアイテム ID が新しくなり、送信されたアイテム ID で変更を行えなかったりすると、バッチ処理でエラーが生じます。このセクションの情報には、メール メッセージのバッチ処理で生じたエラーの詳細を取得する方法が示されています。
   
-EWS のマネージ API を使用して、バッチ処理の成功を確認するには、 [ServiceResponseCollection](http://msdn.microsoft.com/en-us/library/dd633715%28v=exchg.80%29.aspx)の[OverallResult](http://msdn.microsoft.com/en-us/library/dd634515%28v=exchg.80%29.aspx)プロパティが[ServiceResult.Success](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresult%28v=exchg.80%29.aspx)に等しいかを確認できます。 その場合は、すべての電子メールが正常に処理されました。 **OverallResult**が**ServiceResult.Success**、1 つまたは複数の電子メールの場合は、正常に処理されませんでした。 **ServiceResponseCollection**で返されるオブジェクトの各には、次のプロパティが含まれます。 
+EWS マネージ API を使用してバッチ処理が成功したかどうかは、[ServiceResponseCollection](http://msdn.microsoft.com/ja-JP/library/dd633715%28v=exchg.80%29.aspx) の [OverallResult](http://msdn.microsoft.com/ja-JP/library/dd634515%28v=exchg.80%29.aspx) プロパティが [ServiceResult.Success](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.serviceresult%28v=exchg.80%29.aspx) と等しいかどうかを調べることで確認できます。 等しい場合は、すべてのメールが正常に処理されています。 **OverallResult** が **ServiceResult.Success** と等しくない場合は、1 つ以上のメールが正常に処理されていません。 **ServiceResponseCollection** で返される各オブジェクトには、次のプロパティが含まれます。 
   
-- [エラー コード](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponse.errorcode%28v=exchg.80%29.aspx)
+- [ErrorCode](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.serviceresponse.errorcode%28v=exchg.80%29.aspx)
     
-- [ErrorDetails](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponse.errordetails%28v=exchg.80%29.aspx)
+- [ErrorDetails](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.serviceresponse.errordetails%28v=exchg.80%29.aspx)
     
-- [エラー メッセージ](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponse.errormessage%28v=exchg.80%29.aspx)
+- [ErrorMessage](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.serviceresponse.errormessage%28v=exchg.80%29.aspx)
     
-- [ErrorProperties](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponse.errorproperties%28v=exchg.80%29.aspx)
+- [ErrorProperties](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.serviceresponse.errorproperties%28v=exchg.80%29.aspx)
     
-- [結果](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.serviceresponse.result%28v=exchg.80%29.aspx)
+- [Result](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.serviceresponse.result%28v=exchg.80%29.aspx)
     
-これらのプロパティには、なぜ電子メール メッセージを処理できませんでした要求に関する情報が含まれています。 この資料の例は、障害が発生したメッセージごとに、**結果**、**エラー コード**、および**エラー メッセージ**を出力します。 これらの結果を使用すると、問題を調査します。 
+これらのプロパティには、メール メッセージを要求どおりに処理できなかった原因についての情報が含まれます。この記事の例では、エラーが生じた各メッセージの **Result**、**ErrorCode**、**ErrorMessage** が出力されます。これらの結果を使用して問題を調査できます。 
   
-EWS では、バッチ処理の成功を確認するには、処理中の各項目の[ResponseClass](http://msdn.microsoft.com/library/bf57265a-d354-4cd7-bbfc-d93e19cbede6%28Office.15%29.aspx)属性を確認します。 **ResponseMessageType**、するすべての応答メッセージの派生元の基本型の基本構造を次に示します。 
+EWS でバッチ処理が成功したことを確認するには、各処理対象アイテムの [ResponseClass](http://msdn.microsoft.com/library/bf57265a-d354-4cd7-bbfc-d93e19cbede6%28Office.15%29.aspx) 属性を調べます。すべての応答メッセージの派生元となる基本タイプの **ResponseMessageType** の基本構造を次に示します。  
   
 ```XML
 <ResponseMessage ResponseClass="Success | Warning | Error">
@@ -478,19 +478,19 @@ EWS では、バッチ処理の成功を確認するには、処理中の各項�
 </ResponseMessage>
 ```
 
-**ResponseClass**属性は、電子メールが正常に処理されなかった場合に、電子メールが正常に処理された場合の**成功**または**エラー**に設定されます。 、電子メール メッセージのバッチ処理中に**警告**は発生しません。 **ResponseClass**が**成功**の場合は、 [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx)要素の後も常に**NoError**に設定されています。 **ResponseClass**が**エラー**の場合は、問題の原因を特定するのには、[メッセージ テキスト](http://msdn.microsoft.com/library/59a23bdc-0d9a-4942-8b3c-9cdb11db1ab1%28Office.15%29.aspx)、 **ResponseCode**、および[MessageXml](http://msdn.microsoft.com/library/bcaf9e35-d351-48f3-baad-f90c633cba8a%28Office.15%29.aspx)の要素の値を確認する必要があります。 [DescriptiveLinkKey](http://msdn.microsoft.com/library/f7f36749-00f3-4915-b17c-e3caa0af6e67%28Office.15%29.aspx)は、現在使用されていません。 
+**ResponseClass** 属性は、メールが正常に処理された場合には **Success** に設定され、正常に処理されなかった場合には **Error** に設定されます。メール メッセージの場合には、バッチ処理中に **Warning** が示されることはありません。**ResponseClass** が **Success** の場合、それに続く [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 要素は必ず **NoError** に設定されます。**ResponseClass** が **Error** の場合、[MessageText](http://msdn.microsoft.com/library/59a23bdc-0d9a-4942-8b3c-9cdb11db1ab1%28Office.15%29.aspx)、**ResponseCode**、[MessageXml](http://msdn.microsoft.com/library/bcaf9e35-d351-48f3-baad-f90c633cba8a%28Office.15%29.aspx) の各要素の値を確認し、問題の原因を特定する必要があります。[DescriptiveLinkKey](http://msdn.microsoft.com/library/f7f36749-00f3-4915-b17c-e3caa0af6e67%28Office.15%29.aspx) は現在使用されていません。 
   
 ## <a name="see-also"></a>関連項目
 
 
-- [Exchange の電子メールと EWS](email-and-ews-in-exchange.md)
+- [Exchange のメールと EWS](email-and-ews-in-exchange.md)
     
-- [EWS を使用して Exchange が電子メール メッセージを送信します。](how-to-send-email-messages-by-using-ews-in-exchange.md)
+- [Exchange で EWS を使用してメール メッセージを送信する](how-to-send-email-messages-by-using-ews-in-exchange.md)
     
-- [EWS を使用して Exchange が電子メール メッセージに応答します。](how-to-respond-to-email-messages-by-using-ews-in-exchange.md)
+- [Exchange において EWS を使用してメール メッセージに応答する](how-to-respond-to-email-messages-by-using-ews-in-exchange.md)
     
-- [移動し、EWS を使用して Exchange が電子メール メッセージをコピー](how-to-move-and-copy-email-messages-by-using-ews-in-exchange.md)
+- [Exchange において EWS を使用してメール メッセージを移動およびコピーする](how-to-move-and-copy-email-messages-by-using-ews-in-exchange.md)
     
-- [EWS のバッチ要求の影響を調整](ews-throttling-in-exchange.md#bk_ThrottlingBatch)
+- [EWS のバッチ要求の調整の影響](ews-throttling-in-exchange.md#bk_ThrottlingBatch)
     
 
