@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 821c8eb9-bb58-42e8-9a3a-61ca635cba59
 description: Outlook アドインについての情報と、そのアドインが Exchange の EWS で動作するしくみを説明します。
-ms.openlocfilehash: fc004108c7f31ea6475d61f4e2cd2289b13d27f5
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+ms.openlocfilehash: 7eae834fe0bb93e2e94f094e811ab6cf002fc71b
+ms.sourcegitcommit: 42eecc78e7aed7e95f73370d6c39ab8f4e96bf68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353638"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25541639"
 ---
 # <a name="outlook-add-ins-and-ews-in-exchange"></a>Outlook アドインと Exchange の EWS
 
@@ -36,13 +36,13 @@ Outlook アドインは、メール ユーザー向けに操作をカスタマ�
 
 メール アプリを使用して、ユーザー向けの Outlook Web App エクスペリエンスをカスタマイズできます。ただし、Outlook Web App の "外観" をカスタマイズするには、TechNet の次の資料をご覧ください。
 
-- [Outlook Web App のテーマの作成](http://technet.microsoft.com/ja-JP/library/bb201700%28v=exchg.150%29.aspx)
+- [Outlook Web App のテーマの作成](http://technet.microsoft.com/en-us/library/bb201700%28v=exchg.150%29.aspx)
 
-- [Outlook Web App サインイン、言語選択、エラー ページをカスタマイズする](http://technet.microsoft.com/ja-JP/library/ee633483%28v=exchg.150%29.aspx)
+- [Outlook Web App サインイン、言語選択、エラー ページをカスタマイズする](http://technet.microsoft.com/en-us/library/ee633483%28v=exchg.150%29.aspx)
 
 組織は、内部サーバーにメール アプリをインストールして、権限を持つユーザーだけにアクセスを制限できます。また、お客様や他のメール アプリ開発者が、[Office ストア](http://office.microsoft.com/store/)にメール アプリを置き、一般に公開して販売することも可能です。 Outlook を実行しているすべての人が、マーケットプレースからメール アプリをダウンロードし、インストールし、使用できます。
 
-メール アプリ作成の詳細については、「[Outlook アドイン](/outlook/add-ins/index.md)」の文書、または「[EWS 要求を行う](http://code.msdn.microsoft.com/exchange/Mail-apps-for-Outlook-Make-770b2528)」のサンプルをご覧ください。
+メール アプリ作成の詳細については、「[Outlook アドイン](/outlook/add-ins)」の文書、または「[EWS 要求を行う](http://code.msdn.microsoft.com/exchange/Mail-apps-for-Outlook-Make-770b2528)」のサンプルをご覧ください。
 
 ## <a name="ews-and-outlook-add-ins"></a>EWS と Outlook アドイン
 
@@ -54,7 +54,7 @@ Outlook アドインは、メール ユーザー向けに操作をカスタマ�
 
 - メール アプリのユーザーに [EWS アクセスを許可する](controlling-client-application-access-to-ews-in-exchange.md)。
 
-- Client Access Server EWS ディレクトリで ["OAuthAuthentication" を true に設定する](http://technet.microsoft.com/ja-JP/library/aa997233%28v=exchg.150%29.aspx)。
+- Client Access Server EWS ディレクトリで ["OAuthAuthentication" を true に設定する](http://technet.microsoft.com/en-us/library/aa997233%28v=exchg.150%29.aspx)。
 
 Office の[アクセス許可モデル](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md)用のアプリで、お客様のアプリがメールボックスの読み書きアクセス許可を要求する必要があります。
 
@@ -79,15 +79,15 @@ Office の[アクセス許可モデル](how-to-set-folder-permissions-for-anothe
 
 - [Mailbox.makeEwsRequestAsync メソッド (JavaScript API for Office)](http://msdn.microsoft.com/library/2ec380e0-4a67-4146-92a6-6a39f65dc6f2%28Office.15%29.aspx)
 
-- [Outlook アドイン](https://docs.microsoft.com/ja-JP/outlook/add-ins/)
+- [Outlook アドイン](https://docs.microsoft.com/outlook/add-ins)
 
 - [Mailbox.getUserIdentityTokenAsync メソッド (JavaScript API for Office)](http://msdn.microsoft.com/library/c658518b-6867-41a0-99cf-810303e4c539%28Office.15%29.aspx)
 
 - [Exchange の ID トークンを使用して Outlook アドインを認証する](http://msdn.microsoft.com/library/c0520a1e-d9ba-495a-a99f-6816d7d2a23e%28Office.15%29.aspx)
 
-- [Outlook アドインのアクセス許可を理解する](https://docs.microsoft.com/ja-JP/outlook/add-ins/understanding-outlook-add-in-permissions)
+- [Outlook アドインのアクセス許可を理解する](https://docs.microsoft.com/en-us/outlook/add-ins/understanding-outlook-add-in-permissions)
 
-- [Set-WebServicesVirtualDirectory](http://technet.microsoft.com/ja-JP/library/aa997233%28v=exchg.150%29.aspx)
+- [Set-WebServicesVirtualDirectory](http://technet.microsoft.com/en-us/library/aa997233%28v=exchg.150%29.aspx)
 
 - [Outlook アドイン: EWS 要求を行う](http://code.msdn.microsoft.com/office/Mail-apps-for-Outlook-Make-770b2528)
 
