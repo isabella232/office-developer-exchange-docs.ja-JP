@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7d5cd08a-fe81-4cb6-a5a0-6dec2d3c93d4
-description: CopyFolder 要素は、Exchange ストア内のメールボックスでフォルダーをコピーするための要求を定義します。
-ms.openlocfilehash: 7bcfcc7f4212b3a3bd339fa5863df2990eb20d6d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: CopyFolder 要素は、Exchange ストア内のメールボックスにフォルダーをコピーする要求を定義します。
+ms.openlocfilehash: fa75272540169a96d5567181d27b8a8f056cce42
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759780"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44452511"
 ---
-# <a name="copyfolder"></a><span data-ttu-id="b0072-103">CopyFolder</span><span class="sxs-lookup"><span data-stu-id="b0072-103">CopyFolder</span></span>
+# <a name="copyfolder"></a><span data-ttu-id="4423a-103">CopyFolder</span><span class="sxs-lookup"><span data-stu-id="4423a-103">CopyFolder</span></span>
 
-<span data-ttu-id="b0072-104">**CopyFolder**要素は、Exchange ストア内のメールボックスでフォルダーをコピーするための要求を定義します。</span><span class="sxs-lookup"><span data-stu-id="b0072-104">The **CopyFolder** element defines a request to copy folders in a mailbox in the Exchange store.</span></span> 
+<span data-ttu-id="4423a-104">**Copyfolder**要素は、Exchange ストア内のメールボックスにフォルダーをコピーする要求を定義します。</span><span class="sxs-lookup"><span data-stu-id="4423a-104">The **CopyFolder** element defines a request to copy folders in a mailbox in the Exchange store.</span></span> 
   
 ```xml
 <CopyFolder>
@@ -30,42 +30,42 @@ ms.locfileid: "19759780"
 </CopyFolder>
 ```
 
- <span data-ttu-id="b0072-105">**CopyFolderType**</span><span class="sxs-lookup"><span data-stu-id="b0072-105">**CopyFolderType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="b0072-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="b0072-106">Attributes and elements</span></span>
+ <span data-ttu-id="4423a-105">**CopyFolderType**</span><span class="sxs-lookup"><span data-stu-id="4423a-105">**CopyFolderType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="4423a-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="4423a-106">Attributes and elements</span></span>
 
-<span data-ttu-id="b0072-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="b0072-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="4423a-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="4423a-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="b0072-108">属性</span><span class="sxs-lookup"><span data-stu-id="b0072-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="4423a-108">属性</span><span class="sxs-lookup"><span data-stu-id="4423a-108">Attributes</span></span>
 
-<span data-ttu-id="b0072-109">なし。</span><span class="sxs-lookup"><span data-stu-id="b0072-109">None.</span></span>
+<span data-ttu-id="4423a-109">なし。</span><span class="sxs-lookup"><span data-stu-id="4423a-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="b0072-110">子要素</span><span class="sxs-lookup"><span data-stu-id="b0072-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="4423a-110">子要素</span><span class="sxs-lookup"><span data-stu-id="4423a-110">Child elements</span></span>
 
-|<span data-ttu-id="b0072-111">**要素**</span><span class="sxs-lookup"><span data-stu-id="b0072-111">**Element**</span></span>|<span data-ttu-id="b0072-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="b0072-112">**Description**</span></span>|
+|<span data-ttu-id="4423a-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="4423a-111">**Element**</span></span>|<span data-ttu-id="4423a-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="4423a-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="b0072-113">ToFolderId</span><span class="sxs-lookup"><span data-stu-id="b0072-113">ToFolderId</span></span>](tofolderid.md) <br/> |<span data-ttu-id="b0072-114">コピーしたフォルダーのコピー先フォルダーを表します。</span><span class="sxs-lookup"><span data-stu-id="b0072-114">Represents the destination folder for a copied folder.</span></span>  <br/> |
-|[<span data-ttu-id="b0072-115">FolderIds</span><span class="sxs-lookup"><span data-stu-id="b0072-115">FolderIds</span></span>](folderids.md) <br/> |<span data-ttu-id="b0072-116">[ToFolderId](tofolderid.md)要素で指定されたフォルダーにコピーするフォルダーの配列が含まれています。</span><span class="sxs-lookup"><span data-stu-id="b0072-116">Contains an array of folders to copy to the folder identified by the [ToFolderId](tofolderid.md) element.</span></span>  <br/> |
+|[<span data-ttu-id="4423a-113">ToFolderId</span><span class="sxs-lookup"><span data-stu-id="4423a-113">ToFolderId</span></span>](tofolderid.md) <br/> |<span data-ttu-id="4423a-114">コピー先のフォルダーを表します。</span><span class="sxs-lookup"><span data-stu-id="4423a-114">Represents the destination folder for a copied folder.</span></span>  <br/> |
+|[<span data-ttu-id="4423a-115">FolderIds</span><span class="sxs-lookup"><span data-stu-id="4423a-115">FolderIds</span></span>](folderids.md) <br/> |<span data-ttu-id="4423a-116">[ToFolderId](tofolderid.md)要素によって識別されるフォルダーにコピーするフォルダーの配列を格納します。</span><span class="sxs-lookup"><span data-stu-id="4423a-116">Contains an array of folders to copy to the folder identified by the [ToFolderId](tofolderid.md) element.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="b0072-117">親要素</span><span class="sxs-lookup"><span data-stu-id="b0072-117">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="4423a-117">親要素</span><span class="sxs-lookup"><span data-stu-id="4423a-117">Parent elements</span></span>
 
-<span data-ttu-id="b0072-118">なし。</span><span class="sxs-lookup"><span data-stu-id="b0072-118">None.</span></span>
+<span data-ttu-id="4423a-118">なし。</span><span class="sxs-lookup"><span data-stu-id="4423a-118">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="b0072-119">備考</span><span class="sxs-lookup"><span data-stu-id="b0072-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="4423a-119">注釈</span><span class="sxs-lookup"><span data-stu-id="4423a-119">Remarks</span></span>
 
-<span data-ttu-id="b0072-120">MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。</span><span class="sxs-lookup"><span data-stu-id="b0072-120">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="4423a-120">この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="4423a-120">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="b0072-121">要素情報</span><span class="sxs-lookup"><span data-stu-id="b0072-121">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="4423a-121">要素の情報</span><span class="sxs-lookup"><span data-stu-id="4423a-121">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="b0072-122">名前空間</span><span class="sxs-lookup"><span data-stu-id="b0072-122">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="b0072-123">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="b0072-123">Schema Name</span></span>  <br/> |<span data-ttu-id="b0072-124">メッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="b0072-124">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="b0072-125">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="b0072-125">Validation File</span></span>  <br/> |<span data-ttu-id="b0072-126">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="b0072-126">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="b0072-127">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="b0072-127">Can be Empty</span></span>  <br/> |<span data-ttu-id="b0072-128">False</span><span class="sxs-lookup"><span data-stu-id="b0072-128">False</span></span>  <br/> |
+|<span data-ttu-id="4423a-122">Namespace</span><span class="sxs-lookup"><span data-stu-id="4423a-122">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="4423a-123">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="4423a-123">Schema Name</span></span>  <br/> |<span data-ttu-id="4423a-124">メッセージスキーマ</span><span class="sxs-lookup"><span data-stu-id="4423a-124">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="4423a-125">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="4423a-125">Validation File</span></span>  <br/> |<span data-ttu-id="4423a-126">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="4423a-126">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="4423a-127">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="4423a-127">Can be Empty</span></span>  <br/> |<span data-ttu-id="4423a-128">正しくない</span><span class="sxs-lookup"><span data-stu-id="4423a-128">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="b0072-129">関連項目</span><span class="sxs-lookup"><span data-stu-id="b0072-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4423a-129">関連項目</span><span class="sxs-lookup"><span data-stu-id="4423a-129">See also</span></span>
 
 
 
-[<span data-ttu-id="b0072-130">CopyFolder 操作</span><span class="sxs-lookup"><span data-stu-id="b0072-130">CopyFolder operation</span></span>](copyfolder-operation.md)
+[<span data-ttu-id="4423a-130">CopyFolder 操作</span><span class="sxs-lookup"><span data-stu-id="4423a-130">CopyFolder operation</span></span>](copyfolder-operation.md)
 
