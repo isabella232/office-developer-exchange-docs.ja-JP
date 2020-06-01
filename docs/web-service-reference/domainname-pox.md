@@ -1,5 +1,5 @@
 ---
-title: ドメイン名 (POX)
+title: DomainName (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,55 +8,55 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 2b4af2b2-58b5-4f28-9cb3-c07a11377747
-description: ドメイン名の要素は、ユーザーのドメインを指定します。
-ms.openlocfilehash: c38d2e470bd174ab6dd7e5e1dd3eee23daea5e69
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DomainName 要素は、ユーザーのドメインを指定します。
+ms.openlocfilehash: ff38d6a876e396317dedece0a81a9f9f0db0f587
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760150"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458426"
 ---
-# <a name="domainname-pox"></a><span data-ttu-id="cd5c5-103">ドメイン名 (POX)</span><span class="sxs-lookup"><span data-stu-id="cd5c5-103">DomainName (POX)</span></span>
+# <a name="domainname-pox"></a><span data-ttu-id="a99d5-103">DomainName (POX)</span><span class="sxs-lookup"><span data-stu-id="a99d5-103">DomainName (POX)</span></span>
 
-<span data-ttu-id="cd5c5-104">**ドメイン名**の要素は、ユーザーのドメインを指定します。</span><span class="sxs-lookup"><span data-stu-id="cd5c5-104">The **DomainName** element specifies the user's domain.</span></span> 
+<span data-ttu-id="a99d5-104">**DomainName**要素は、ユーザーのドメインを指定します。</span><span class="sxs-lookup"><span data-stu-id="a99d5-104">The **DomainName** element specifies the user's domain.</span></span> 
   
-- [<span data-ttu-id="cd5c5-105">(POX) を自動検出</span><span class="sxs-lookup"><span data-stu-id="cd5c5-105">AutoDiscover (POX)</span></span>](autodiscover-pox.md)  
-- [<span data-ttu-id="cd5c5-106">応答 (POX)</span><span class="sxs-lookup"><span data-stu-id="cd5c5-106">Response (POX)</span></span>](response-pox.md)  
-- [<span data-ttu-id="cd5c5-107">アカウント (POX)</span><span class="sxs-lookup"><span data-stu-id="cd5c5-107">Account (POX)</span></span>](account-pox.md) 
-- [<span data-ttu-id="cd5c5-108">プロトコル (POX)</span><span class="sxs-lookup"><span data-stu-id="cd5c5-108">Protocol (POX)</span></span>](protocol-pox.md) 
-- [<span data-ttu-id="cd5c5-109">ドメイン名 (POX)</span><span class="sxs-lookup"><span data-stu-id="cd5c5-109">DomainName (POX)</span></span>](domainname-pox.md)
+- [<span data-ttu-id="a99d5-105">自動検出 (POX)</span><span class="sxs-lookup"><span data-stu-id="a99d5-105">AutoDiscover (POX)</span></span>](autodiscover-pox.md)  
+- [<span data-ttu-id="a99d5-106">応答 (POX)</span><span class="sxs-lookup"><span data-stu-id="a99d5-106">Response (POX)</span></span>](response-pox.md)  
+- [<span data-ttu-id="a99d5-107">アカウント (POX)</span><span class="sxs-lookup"><span data-stu-id="a99d5-107">Account (POX)</span></span>](account-pox.md) 
+- [<span data-ttu-id="a99d5-108">プロトコル (POX)</span><span class="sxs-lookup"><span data-stu-id="a99d5-108">Protocol (POX)</span></span>](protocol-pox.md) 
+- [<span data-ttu-id="a99d5-109">DomainName (POX)</span><span class="sxs-lookup"><span data-stu-id="a99d5-109">DomainName (POX)</span></span>](domainname-pox.md)
   
 ```xml
 <DomainName/>
 ```
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="cd5c5-110">属性および要素</span><span class="sxs-lookup"><span data-stu-id="cd5c5-110">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="a99d5-110">属性と要素</span><span class="sxs-lookup"><span data-stu-id="a99d5-110">Attributes and elements</span></span>
 
-<span data-ttu-id="cd5c5-111">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="cd5c5-111">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="a99d5-111">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="a99d5-111">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="cd5c5-112">属性</span><span class="sxs-lookup"><span data-stu-id="cd5c5-112">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="a99d5-112">属性</span><span class="sxs-lookup"><span data-stu-id="a99d5-112">Attributes</span></span>
 
-<span data-ttu-id="cd5c5-113">なし。</span><span class="sxs-lookup"><span data-stu-id="cd5c5-113">None.</span></span>
+<span data-ttu-id="a99d5-113">なし。</span><span class="sxs-lookup"><span data-stu-id="a99d5-113">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="cd5c5-114">子要素</span><span class="sxs-lookup"><span data-stu-id="cd5c5-114">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="a99d5-114">子要素</span><span class="sxs-lookup"><span data-stu-id="a99d5-114">Child elements</span></span>
 
-<span data-ttu-id="cd5c5-115">なし。</span><span class="sxs-lookup"><span data-stu-id="cd5c5-115">None.</span></span>
+<span data-ttu-id="a99d5-115">なし。</span><span class="sxs-lookup"><span data-stu-id="a99d5-115">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="cd5c5-116">親要素</span><span class="sxs-lookup"><span data-stu-id="cd5c5-116">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="a99d5-116">親要素</span><span class="sxs-lookup"><span data-stu-id="a99d5-116">Parent elements</span></span>
 
-|<span data-ttu-id="cd5c5-117">**要素**</span><span class="sxs-lookup"><span data-stu-id="cd5c5-117">**Element**</span></span>|<span data-ttu-id="cd5c5-118">**説明**</span><span class="sxs-lookup"><span data-stu-id="cd5c5-118">**Description**</span></span>|
+|<span data-ttu-id="a99d5-117">**要素**</span><span class="sxs-lookup"><span data-stu-id="a99d5-117">**Element**</span></span>|<span data-ttu-id="a99d5-118">**説明**</span><span class="sxs-lookup"><span data-stu-id="a99d5-118">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="cd5c5-119">プロトコル (POX)</span><span class="sxs-lookup"><span data-stu-id="cd5c5-119">Protocol (POX)</span></span>](protocol-pox.md) <br/> |<span data-ttu-id="cd5c5-120">クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターにクライアントを接続するための仕様が含まれています。</span><span class="sxs-lookup"><span data-stu-id="cd5c5-120">Contains the specifications for connecting a client to the computer that is running Microsoft Exchange Server 2007 that has the Client Access server role installed.</span></span>  <br/> |
+|[<span data-ttu-id="a99d5-119">プロトコル (POX)</span><span class="sxs-lookup"><span data-stu-id="a99d5-119">Protocol (POX)</span></span>](protocol-pox.md) <br/> |<span data-ttu-id="a99d5-120">クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターにクライアントを接続するための仕様が含まれています。</span><span class="sxs-lookup"><span data-stu-id="a99d5-120">Contains the specifications for connecting a client to the computer that is running Microsoft Exchange Server 2007 that has the Client Access server role installed.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="cd5c5-121">テキスト値</span><span class="sxs-lookup"><span data-stu-id="cd5c5-121">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="a99d5-121">テキスト値</span><span class="sxs-lookup"><span data-stu-id="a99d5-121">Text value</span></span>
 
-<span data-ttu-id="cd5c5-122">テキスト値は、ユーザーのドメインを指定します。</span><span class="sxs-lookup"><span data-stu-id="cd5c5-122">The text value specifies the user's domain.</span></span>
+<span data-ttu-id="a99d5-122">Text 値は、ユーザーのドメインを指定します。</span><span class="sxs-lookup"><span data-stu-id="a99d5-122">The text value specifies the user's domain.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="cd5c5-123">備考</span><span class="sxs-lookup"><span data-stu-id="cd5c5-123">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="a99d5-123">注釈</span><span class="sxs-lookup"><span data-stu-id="a99d5-123">Remarks</span></span>
 
-<span data-ttu-id="cd5c5-124">値が指定されていない場合は、ユーザー プリンシパル名 (UPN) 形式で電子メール アドレスを使用する既定の認証。</span><span class="sxs-lookup"><span data-stu-id="cd5c5-124">If no value is specified, the default authentication is to use the e-mail address as a user principal name (UPN) format.</span></span> <span data-ttu-id="cd5c5-125">例:\<ユーザー名\>@\<ドメイン\>。</span><span class="sxs-lookup"><span data-stu-id="cd5c5-125">For example: \<Username\>@\<Domain\>.</span></span>
+<span data-ttu-id="a99d5-124">値が指定されていない場合、既定の認証では電子メールアドレスがユーザープリンシパル名 (UPN) 形式として使用されます。</span><span class="sxs-lookup"><span data-stu-id="a99d5-124">If no value is specified, the default authentication is to use the e-mail address as a user principal name (UPN) format.</span></span> <span data-ttu-id="a99d5-125">次に例を示します \<Username\> @ \<Domain\> 。</span><span class="sxs-lookup"><span data-stu-id="a99d5-125">For example: \<Username\>@\<Domain\>.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="cd5c5-126">関連項目</span><span class="sxs-lookup"><span data-stu-id="cd5c5-126">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a99d5-126">関連項目</span><span class="sxs-lookup"><span data-stu-id="a99d5-126">See also</span></span>
 
-- [<span data-ttu-id="cd5c5-127">交換の POX の自動検出の XML 要素</span><span class="sxs-lookup"><span data-stu-id="cd5c5-127">POX Autodiscover XML elements for Exchange</span></span>](pox-autodiscover-xml-elements-for-exchange.md)
+- [<span data-ttu-id="a99d5-127">Exchange の POX 自動検出 XML 要素</span><span class="sxs-lookup"><span data-stu-id="a99d5-127">POX Autodiscover XML elements for Exchange</span></span>](pox-autodiscover-xml-elements-for-exchange.md)
 

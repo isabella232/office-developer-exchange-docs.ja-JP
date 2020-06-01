@@ -7,57 +7,57 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f7fc08e6-a906-4a18-93cd-56a5b8d460b0
-description: ExternalEmailAddress 要素には、メールボックスの外部電子メール アドレスが含まれています。
-ms.openlocfilehash: 0c1498ad5130d32526757fab9abf21fc03975bae
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ExternalEmailAddress 要素には、メールボックスの外部電子メールアドレスが含まれています。
+ms.openlocfilehash: c530e0c1a9efb5da3a0e147de3a3ec6e0d7569fc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760436"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456928"
 ---
-# <a name="externalemailaddress"></a><span data-ttu-id="6ccf4-103">ExternalEmailAddress</span><span class="sxs-lookup"><span data-stu-id="6ccf4-103">ExternalEmailAddress</span></span>
+# <a name="externalemailaddress"></a><span data-ttu-id="c36dc-103">ExternalEmailAddress</span><span class="sxs-lookup"><span data-stu-id="c36dc-103">ExternalEmailAddress</span></span>
 
-<span data-ttu-id="6ccf4-104">**ExternalEmailAddress**要素には、メールボックスの外部電子メール アドレスが含まれています。</span><span class="sxs-lookup"><span data-stu-id="6ccf4-104">The **ExternalEmailAddress** element contains the external email address of the mailbox.</span></span> 
+<span data-ttu-id="c36dc-104">**ExternalEmailAddress**要素には、メールボックスの外部電子メールアドレスが含まれています。</span><span class="sxs-lookup"><span data-stu-id="c36dc-104">The **ExternalEmailAddress** element contains the external email address of the mailbox.</span></span> 
   
 ```XML
 <ExternalEmailAddress></ExternalEmailAddress>
 ```
 
-<span data-ttu-id="6ccf4-105">**string**</span><span class="sxs-lookup"><span data-stu-id="6ccf4-105">**string**</span></span>
+<span data-ttu-id="c36dc-105">**string**</span><span class="sxs-lookup"><span data-stu-id="c36dc-105">**string**</span></span>
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="6ccf4-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="6ccf4-106">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="c36dc-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="c36dc-106">Attributes and elements</span></span>
 
-<span data-ttu-id="6ccf4-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="6ccf4-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="c36dc-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="c36dc-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="6ccf4-108">属性</span><span class="sxs-lookup"><span data-stu-id="6ccf4-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="c36dc-108">属性</span><span class="sxs-lookup"><span data-stu-id="c36dc-108">Attributes</span></span>
 
-<span data-ttu-id="6ccf4-109">なし。</span><span class="sxs-lookup"><span data-stu-id="6ccf4-109">None.</span></span>
+<span data-ttu-id="c36dc-109">なし。</span><span class="sxs-lookup"><span data-stu-id="c36dc-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="6ccf4-110">子要素</span><span class="sxs-lookup"><span data-stu-id="6ccf4-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="c36dc-110">子要素</span><span class="sxs-lookup"><span data-stu-id="c36dc-110">Child elements</span></span>
 
-<span data-ttu-id="6ccf4-111">なし。</span><span class="sxs-lookup"><span data-stu-id="6ccf4-111">None.</span></span>
+<span data-ttu-id="c36dc-111">なし。</span><span class="sxs-lookup"><span data-stu-id="c36dc-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="6ccf4-112">親要素</span><span class="sxs-lookup"><span data-stu-id="6ccf4-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="c36dc-112">親要素</span><span class="sxs-lookup"><span data-stu-id="c36dc-112">Parent elements</span></span>
 
-[<span data-ttu-id="6ccf4-113">SearchableMailbox</span><span class="sxs-lookup"><span data-stu-id="6ccf4-113">SearchableMailbox</span></span>](searchablemailbox.md)
+[<span data-ttu-id="c36dc-113">SearchableMailbox</span><span class="sxs-lookup"><span data-stu-id="c36dc-113">SearchableMailbox</span></span>](searchablemailbox.md)
   
-## <a name="text-value"></a><span data-ttu-id="6ccf4-114">テキスト値</span><span class="sxs-lookup"><span data-stu-id="6ccf4-114">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="c36dc-114">テキスト値</span><span class="sxs-lookup"><span data-stu-id="c36dc-114">Text value</span></span>
 
-<span data-ttu-id="6ccf4-115">**ExternalEmailAddress**要素のテキスト値は、メールボックスの外部電子メール アドレスです。</span><span class="sxs-lookup"><span data-stu-id="6ccf4-115">The text value of the **ExternalEmailAddress** element is the external email address of the mailbox.</span></span> 
+<span data-ttu-id="c36dc-115">**ExternalEmailAddress**要素のテキスト値は、メールボックスの外部電子メールアドレスです。</span><span class="sxs-lookup"><span data-stu-id="c36dc-115">The text value of the **ExternalEmailAddress** element is the external email address of the mailbox.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="6ccf4-116">備考</span><span class="sxs-lookup"><span data-stu-id="6ccf4-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c36dc-116">注釈</span><span class="sxs-lookup"><span data-stu-id="c36dc-116">Remarks</span></span>
 
-<span data-ttu-id="6ccf4-117">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="6ccf4-117">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="c36dc-117">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="c36dc-117">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="6ccf4-118">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="6ccf4-118">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="c36dc-118">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="c36dc-118">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="6ccf4-119">要素情報</span><span class="sxs-lookup"><span data-stu-id="6ccf4-119">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="c36dc-119">要素の情報</span><span class="sxs-lookup"><span data-stu-id="c36dc-119">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="6ccf4-120">名前空間</span><span class="sxs-lookup"><span data-stu-id="6ccf4-120">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="6ccf4-121">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="6ccf4-121">Schema name</span></span>  <br/> |<span data-ttu-id="6ccf4-122">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="6ccf4-122">Types schema</span></span>  <br/> |
-|<span data-ttu-id="6ccf4-123">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="6ccf4-123">Validation file</span></span>  <br/> |<span data-ttu-id="6ccf4-124">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="6ccf4-124">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="6ccf4-125">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="6ccf4-125">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="c36dc-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="c36dc-120">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="c36dc-121">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="c36dc-121">Schema name</span></span>  <br/> |<span data-ttu-id="c36dc-122">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="c36dc-122">Types schema</span></span>  <br/> |
+|<span data-ttu-id="c36dc-123">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="c36dc-123">Validation file</span></span>  <br/> |<span data-ttu-id="c36dc-124">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="c36dc-124">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="c36dc-125">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="c36dc-125">Can be empty</span></span>  <br/> ||
    
 

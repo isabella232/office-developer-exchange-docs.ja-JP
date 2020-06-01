@@ -1,5 +1,5 @@
 ---
-title: IsUndecidedApprovalRequest
+title: Is未確認 Dedapprovalrequest
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
@@ -7,64 +7,64 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 90841617-3b83-4124-8125-0293c9470f4a
-description: IsUndecidedApprovalRequest 要素は、承認要求メッセージが処理済みであるかどうかを指定します。
-ms.openlocfilehash: 82b4624df5b2fe7ca212fdf76248e1ccfa3a081f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Is未確認の Dedapprovalrequest 要素は、承認要求メッセージが処理されたかどうかを指定します。
+ms.openlocfilehash: 0949cf64b8583c4b3fa5a1700475f01cc480f69f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832127"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458174"
 ---
-# <a name="isundecidedapprovalrequest"></a><span data-ttu-id="e9064-103">IsUndecidedApprovalRequest</span><span class="sxs-lookup"><span data-stu-id="e9064-103">IsUndecidedApprovalRequest</span></span>
+# <a name="isundecidedapprovalrequest"></a><span data-ttu-id="dd2d6-103">Is未確認 Dedapprovalrequest</span><span class="sxs-lookup"><span data-stu-id="dd2d6-103">IsUndecidedApprovalRequest</span></span>
 
-<span data-ttu-id="e9064-104">**IsUndecidedApprovalRequest**要素は、承認要求メッセージが処理済みであるかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="e9064-104">The **IsUndecidedApprovalRequest** element specifies whether an approval request message has been acted on.</span></span> 
+<span data-ttu-id="dd2d6-104">**Is未確認の Dedapprovalrequest**要素は、承認要求メッセージが処理されたかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="dd2d6-104">The **IsUndecidedApprovalRequest** element specifies whether an approval request message has been acted on.</span></span> 
   
 ```XML
 <IsUndecidedApprovalRequest> true | false </IsUndecidedApprovalRequest>
 ```
 
- <span data-ttu-id="e9064-105">**ブール型 (Boolean)**</span><span class="sxs-lookup"><span data-stu-id="e9064-105">**Boolean**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="e9064-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="e9064-106">Attributes and elements</span></span>
+ <span data-ttu-id="dd2d6-105">**Boolean**</span><span class="sxs-lookup"><span data-stu-id="dd2d6-105">**Boolean**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="dd2d6-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="dd2d6-106">Attributes and elements</span></span>
 
-<span data-ttu-id="e9064-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="e9064-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="dd2d6-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="dd2d6-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="e9064-108">属性</span><span class="sxs-lookup"><span data-stu-id="e9064-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="dd2d6-108">属性</span><span class="sxs-lookup"><span data-stu-id="dd2d6-108">Attributes</span></span>
 
-<span data-ttu-id="e9064-109">なし。</span><span class="sxs-lookup"><span data-stu-id="e9064-109">None.</span></span>
+<span data-ttu-id="dd2d6-109">なし。</span><span class="sxs-lookup"><span data-stu-id="dd2d6-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="e9064-110">子要素</span><span class="sxs-lookup"><span data-stu-id="e9064-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="dd2d6-110">子要素</span><span class="sxs-lookup"><span data-stu-id="dd2d6-110">Child elements</span></span>
 
-<span data-ttu-id="e9064-111">なし。</span><span class="sxs-lookup"><span data-stu-id="e9064-111">None.</span></span>
+<span data-ttu-id="dd2d6-111">なし。</span><span class="sxs-lookup"><span data-stu-id="dd2d6-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="e9064-112">親要素</span><span class="sxs-lookup"><span data-stu-id="e9064-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="dd2d6-112">親要素</span><span class="sxs-lookup"><span data-stu-id="dd2d6-112">Parent elements</span></span>
 
-[<span data-ttu-id="e9064-113">ApprovalRequestData</span><span class="sxs-lookup"><span data-stu-id="e9064-113">ApprovalRequestData</span></span>](approvalrequestdata.md)
+[<span data-ttu-id="dd2d6-113">ApprovalRequestData</span><span class="sxs-lookup"><span data-stu-id="dd2d6-113">ApprovalRequestData</span></span>](approvalrequestdata.md)
   
-## <a name="text-value"></a><span data-ttu-id="e9064-114">テキスト値</span><span class="sxs-lookup"><span data-stu-id="e9064-114">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="dd2d6-114">テキスト値</span><span class="sxs-lookup"><span data-stu-id="dd2d6-114">Text value</span></span>
 
-<span data-ttu-id="e9064-115">**承認要求メッセージが処理済みいない場合、 **IsUndecidedApprovalRequest**要素のテキスト値は**</span><span class="sxs-lookup"><span data-stu-id="e9064-115">The text value of the **IsUndecidedApprovalRequest** element is **true** if an approval request message has not been acted on.</span></span> <span data-ttu-id="e9064-116">**False**の値は、承認要求が決定されたことを示します。</span><span class="sxs-lookup"><span data-stu-id="e9064-116">A value of **false** indicates that the approval request has been decided.</span></span> 
+<span data-ttu-id="dd2d6-115">承認要求メッセージが処理されていない場合は、 **is不明な Dedapprovalrequest**要素のテキスト値は**true**です。</span><span class="sxs-lookup"><span data-stu-id="dd2d6-115">The text value of the **IsUndecidedApprovalRequest** element is **true** if an approval request message has not been acted on.</span></span> <span data-ttu-id="dd2d6-116">値が**false**の場合は、承認要求が決定されたことを示します。</span><span class="sxs-lookup"><span data-stu-id="dd2d6-116">A value of **false** indicates that the approval request has been decided.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="e9064-117">備考</span><span class="sxs-lookup"><span data-stu-id="e9064-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="dd2d6-117">注釈</span><span class="sxs-lookup"><span data-stu-id="dd2d6-117">Remarks</span></span>
 
-<span data-ttu-id="e9064-118">この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。</span><span class="sxs-lookup"><span data-stu-id="e9064-118">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
+<span data-ttu-id="dd2d6-118">この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。</span><span class="sxs-lookup"><span data-stu-id="dd2d6-118">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
   
-<span data-ttu-id="e9064-119">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="e9064-119">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="dd2d6-119">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="dd2d6-119">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="e9064-120">要素情報</span><span class="sxs-lookup"><span data-stu-id="e9064-120">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="dd2d6-120">要素の情報</span><span class="sxs-lookup"><span data-stu-id="dd2d6-120">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="e9064-121">名前空間</span><span class="sxs-lookup"><span data-stu-id="e9064-121">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="e9064-122">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="e9064-122">Schema Name</span></span>  <br/> |<span data-ttu-id="e9064-123">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="e9064-123">Types schema</span></span>  <br/> |
-|<span data-ttu-id="e9064-124">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="e9064-124">Validation File</span></span>  <br/> |<span data-ttu-id="e9064-125">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="e9064-125">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="e9064-126">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="e9064-126">Can be Empty</span></span>  <br/> |<span data-ttu-id="e9064-127">True</span><span class="sxs-lookup"><span data-stu-id="e9064-127">True</span></span>  <br/> |
+|<span data-ttu-id="dd2d6-121">Namespace</span><span class="sxs-lookup"><span data-stu-id="dd2d6-121">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="dd2d6-122">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="dd2d6-122">Schema Name</span></span>  <br/> |<span data-ttu-id="dd2d6-123">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="dd2d6-123">Types schema</span></span>  <br/> |
+|<span data-ttu-id="dd2d6-124">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="dd2d6-124">Validation File</span></span>  <br/> |<span data-ttu-id="dd2d6-125">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="dd2d6-125">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="dd2d6-126">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="dd2d6-126">Can be Empty</span></span>  <br/> |<span data-ttu-id="dd2d6-127">正しい</span><span class="sxs-lookup"><span data-stu-id="dd2d6-127">True</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="e9064-128">関連項目</span><span class="sxs-lookup"><span data-stu-id="e9064-128">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="dd2d6-128">関連項目</span><span class="sxs-lookup"><span data-stu-id="dd2d6-128">See also</span></span>
 
 
 
-[<span data-ttu-id="e9064-129">ApprovalRequestData</span><span class="sxs-lookup"><span data-stu-id="e9064-129">ApprovalRequestData</span></span>](approvalrequestdata.md)
+[<span data-ttu-id="dd2d6-129">ApprovalRequestData</span><span class="sxs-lookup"><span data-stu-id="dd2d6-129">ApprovalRequestData</span></span>](approvalrequestdata.md)
 
 
-- [<span data-ttu-id="e9064-130">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="e9064-130">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="dd2d6-130">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="dd2d6-130">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

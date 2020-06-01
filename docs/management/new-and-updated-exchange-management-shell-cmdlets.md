@@ -8,732 +8,732 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5941a439-94d2-4133-81fc-7240863a13df
 description: Exchange の Exchange 管理シェルの新機能に関する情報を検索します。
-ms.openlocfilehash: 906e078ab6d500a2cb3d364957ffc2fee67a06b4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: bda6607be20f2a21bc22d472d63615d46634d8ab
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759240"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457145"
 ---
-# <a name="new-and-updated-exchange-management-shell-cmdlets"></a><span data-ttu-id="ad049-103">新規および更新された Exchange 管理シェル コマンドレット</span><span class="sxs-lookup"><span data-stu-id="ad049-103">New and updated Exchange Management Shell cmdlets</span></span>
+# <a name="new-and-updated-exchange-management-shell-cmdlets"></a><span data-ttu-id="9bb8d-103">新規および更新された Exchange 管理シェル コマンドレット</span><span class="sxs-lookup"><span data-stu-id="9bb8d-103">New and updated Exchange Management Shell cmdlets</span></span>
 
-<span data-ttu-id="ad049-104">Exchange の Exchange 管理シェルの新機能に関する情報を検索します。</span><span class="sxs-lookup"><span data-stu-id="ad049-104">Find information about what's new in the Exchange Management Shell in Exchange.</span></span>
+<span data-ttu-id="9bb8d-104">Exchange の Exchange 管理シェルの新機能に関する情報を検索します。</span><span class="sxs-lookup"><span data-stu-id="9bb8d-104">Find information about what's new in the Exchange Management Shell in Exchange.</span></span>
   
-<span data-ttu-id="ad049-105">**に適用されます:** オンライン交換 |Exchange Server 2013年 |Office 365</span><span class="sxs-lookup"><span data-stu-id="ad049-105">**Applies to:** Exchange Online | Exchange Server 2013 | Office 365</span></span>
+<span data-ttu-id="9bb8d-105">**適用対象:** Exchange Online |Exchange Server 2013 |Office 365</span><span class="sxs-lookup"><span data-stu-id="9bb8d-105">**Applies to:** Exchange Online | Exchange Server 2013 | Office 365</span></span>
   
-<span data-ttu-id="ad049-106">この記事では、新しい Exchange 管理シェル コマンドレット、変更されたコマンドレットに関する情報を提供します。また、Exchange Online、Office 365 の一部としての Exchange Online、オンプレミスの Exchange から削除されたコマンドレットに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="ad049-106">This article provides information about new Exchange Management shell cmdlets, cmdlets that were modified in, and cmdlets that were removed from Exchange Online, Exchange Online as part of Office 365, or an on-premises version of Exchange.</span></span>
+<span data-ttu-id="9bb8d-106">この記事では、新しい Exchange 管理シェル コマンドレット、変更されたコマンドレットに関する情報を提供します。また、Exchange Online、Office 365 の一部としての Exchange Online、オンプレミスの Exchange から削除されたコマンドレットに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="9bb8d-106">This article provides information about new Exchange Management shell cmdlets, cmdlets that were modified in, and cmdlets that were removed from Exchange Online, Exchange Online as part of Office 365, or an on-premises version of Exchange.</span></span>
   
-## <a name="new-and-updated-cmdlets-in-exchange-2013-sp1"></a><span data-ttu-id="ad049-107">Exchange 2013 SP1 の新規コマンドレットと更新されたコマンドレット</span><span class="sxs-lookup"><span data-stu-id="ad049-107">New and updated cmdlets in Exchange 2013 SP1</span></span>
+## <a name="new-and-updated-cmdlets-in-exchange-2013-sp1"></a><span data-ttu-id="9bb8d-107">Exchange 2013 SP1 の新規コマンドレットと更新されたコマンドレット</span><span class="sxs-lookup"><span data-stu-id="9bb8d-107">New and updated cmdlets in Exchange 2013 SP1</span></span>
 
-### <a name="new-cmdlets"></a><span data-ttu-id="ad049-108">新規コマンドレット</span><span class="sxs-lookup"><span data-stu-id="ad049-108">New cmdlets</span></span>
+### <a name="new-cmdlets"></a><span data-ttu-id="9bb8d-108">新規コマンドレット</span><span class="sxs-lookup"><span data-stu-id="9bb8d-108">New cmdlets</span></span>
 
-<span data-ttu-id="ad049-109">ビルド 15.00.0847.032 (Exchange Server 2013 SP1) で次のコマンドレットが導入されました。</span><span class="sxs-lookup"><span data-stu-id="ad049-109">The following cmdlets were introduced in build 15.00.0847.032 (Exchange Server 2013 SP1):</span></span>
+<span data-ttu-id="9bb8d-109">ビルド 15.00.0847.032 (Exchange Server 2013 SP1) で次のコマンドレットが導入されました。</span><span class="sxs-lookup"><span data-stu-id="9bb8d-109">The following cmdlets were introduced in build 15.00.0847.032 (Exchange Server 2013 SP1):</span></span>
   
-- <span data-ttu-id="ad049-110">**Get AuthRedirect**</span><span class="sxs-lookup"><span data-stu-id="ad049-110">**Get-AuthRedirect**</span></span>
+- <span data-ttu-id="9bb8d-110">**取得-AuthRedirect**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-110">**Get-AuthRedirect**</span></span>
     
-- <span data-ttu-id="ad049-111">**新しい-AuthRedirect**</span><span class="sxs-lookup"><span data-stu-id="ad049-111">**New-AuthRedirect**</span></span>
+- <span data-ttu-id="9bb8d-111">**New-AuthRedirect**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-111">**New-AuthRedirect**</span></span>
     
-- <span data-ttu-id="ad049-112">**削除 AuthRedirect**</span><span class="sxs-lookup"><span data-stu-id="ad049-112">**Remove-AuthRedirect**</span></span>
+- <span data-ttu-id="9bb8d-112">**削除-AuthRedirect**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-112">**Remove-AuthRedirect**</span></span>
     
-- <span data-ttu-id="ad049-113">**セット AuthRedirect**</span><span class="sxs-lookup"><span data-stu-id="ad049-113">**Set-AuthRedirect**</span></span>
+- <span data-ttu-id="9bb8d-113">**Set-AuthRedirect**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-113">**Set-AuthRedirect**</span></span>
     
-- <span data-ttu-id="ad049-114">**新しい-DataClassification**</span><span class="sxs-lookup"><span data-stu-id="ad049-114">**New-DataClassification**</span></span>
+- <span data-ttu-id="9bb8d-114">**新しい-Datacl/認定**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-114">**New-DataClassification**</span></span>
     
-- <span data-ttu-id="ad049-115">**削除 DataClassification**</span><span class="sxs-lookup"><span data-stu-id="ad049-115">**Remove-DataClassification**</span></span>
+- <span data-ttu-id="9bb8d-115">**削除-Datacl/認定**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-115">**Remove-DataClassification**</span></span>
     
-- <span data-ttu-id="ad049-116">**セット DataClassification**</span><span class="sxs-lookup"><span data-stu-id="ad049-116">**Set-DataClassification**</span></span>
+- <span data-ttu-id="9bb8d-116">**Set-Datacl/認定**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-116">**Set-DataClassification**</span></span>
     
-- <span data-ttu-id="ad049-117">**新しいフィンガー プリント**</span><span class="sxs-lookup"><span data-stu-id="ad049-117">**New-FingerPrint**</span></span>
+- <span data-ttu-id="9bb8d-117">**新規-指紋**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-117">**New-FingerPrint**</span></span>
     
-- <span data-ttu-id="ad049-118">**Get MapiVirtualDirectory\***</span><span class="sxs-lookup"><span data-stu-id="ad049-118">**Get-MapiVirtualDirectory\***</span></span>
+- <span data-ttu-id="9bb8d-118">**MapiVirtualDirectory\***</span><span class="sxs-lookup"><span data-stu-id="9bb8d-118">**Get-MapiVirtualDirectory\***</span></span>
     
-- <span data-ttu-id="ad049-119">**新しい-MapiVirtualDirectory\***</span><span class="sxs-lookup"><span data-stu-id="ad049-119">**New-MapiVirtualDirectory\***</span></span>
+- <span data-ttu-id="9bb8d-119">**MapiVirtualDirectory\***</span><span class="sxs-lookup"><span data-stu-id="9bb8d-119">**New-MapiVirtualDirectory\***</span></span>
     
-- <span data-ttu-id="ad049-120">**削除 MapiVirtualDirectory\***</span><span class="sxs-lookup"><span data-stu-id="ad049-120">**Remove-MapiVirtualDirectory\***</span></span>
+- <span data-ttu-id="9bb8d-120">**MapiVirtualDirectory\***</span><span class="sxs-lookup"><span data-stu-id="9bb8d-120">**Remove-MapiVirtualDirectory\***</span></span>
     
-- <span data-ttu-id="ad049-121">**セット MapiVirtualDirectory\***</span><span class="sxs-lookup"><span data-stu-id="ad049-121">**Set-MapiVirtualDirectory\***</span></span>
+- <span data-ttu-id="9bb8d-121">**MapiVirtualDirectory\***</span><span class="sxs-lookup"><span data-stu-id="9bb8d-121">**Set-MapiVirtualDirectory\***</span></span>
     
-- <span data-ttu-id="ad049-122">**Get OMEConfiguration**</span><span class="sxs-lookup"><span data-stu-id="ad049-122">**Get-OMEConfiguration**</span></span>
+- <span data-ttu-id="9bb8d-122">**取得-OMEConfiguration 低**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-122">**Get-OMEConfiguration**</span></span>
     
-- <span data-ttu-id="ad049-123">**セット OMEConfiguration**</span><span class="sxs-lookup"><span data-stu-id="ad049-123">**Set-OMEConfiguration**</span></span>
+- <span data-ttu-id="9bb8d-123">**設定-OMEConfiguration 設定**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-123">**Set-OMEConfiguration**</span></span>
     
-- <span data-ttu-id="ad049-124">**Get SmimeConfig**</span><span class="sxs-lookup"><span data-stu-id="ad049-124">**Get-SmimeConfig**</span></span>
+- <span data-ttu-id="9bb8d-124">**Get-SmimeConfig**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-124">**Get-SmimeConfig**</span></span>
     
-- <span data-ttu-id="ad049-125">**セット SmimeConfig**</span><span class="sxs-lookup"><span data-stu-id="ad049-125">**Set-SmimeConfig**</span></span>
+- <span data-ttu-id="9bb8d-125">**Set-SmimeConfig**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-125">**Set-SmimeConfig**</span></span>
     
-- <span data-ttu-id="ad049-126">**Get IntraOrganizationConfiguration**</span><span class="sxs-lookup"><span data-stu-id="ad049-126">**Get-IntraOrganizationConfiguration**</span></span>
+- <span data-ttu-id="9bb8d-126">**Get-intraorganizationconfiguration**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-126">**Get-IntraOrganizationConfiguration**</span></span>
     
-- <span data-ttu-id="ad049-127">**Get IntraOrganizationConnector**</span><span class="sxs-lookup"><span data-stu-id="ad049-127">**Get-IntraOrganizationConnector**</span></span>
+- <span data-ttu-id="9bb8d-127">**New-intraorganizationconnector**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-127">**Get-IntraOrganizationConnector**</span></span>
     
-- <span data-ttu-id="ad049-128">**新しい-IntraOrganizationConnector**</span><span class="sxs-lookup"><span data-stu-id="ad049-128">**New-IntraOrganizationConnector**</span></span>
+- <span data-ttu-id="9bb8d-128">**New-intraorganizationconnector**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-128">**New-IntraOrganizationConnector**</span></span>
     
-- <span data-ttu-id="ad049-129">**削除 IntraOrganizationConnector**</span><span class="sxs-lookup"><span data-stu-id="ad049-129">**Remove-IntraOrganizationConnector**</span></span>
+- <span data-ttu-id="9bb8d-129">**New-intraorganizationconnector**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-129">**Remove-IntraOrganizationConnector**</span></span>
     
-- <span data-ttu-id="ad049-130">**セット IntraOrganizationConnector**</span><span class="sxs-lookup"><span data-stu-id="ad049-130">**Set-IntraOrganizationConnector**</span></span>
+- <span data-ttu-id="9bb8d-130">**New-intraorganizationconnector**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-130">**Set-IntraOrganizationConnector**</span></span>
     
-- <span data-ttu-id="ad049-131">**Get HistoricalSearch**</span><span class="sxs-lookup"><span data-stu-id="ad049-131">**Get-HistoricalSearch**</span></span>
+- <span data-ttu-id="9bb8d-131">**Start-historicalsearch**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-131">**Get-HistoricalSearch**</span></span>
     
-- <span data-ttu-id="ad049-132">**開始 HistoricalSearch**</span><span class="sxs-lookup"><span data-stu-id="ad049-132">**Start-HistoricalSearch**</span></span>
+- <span data-ttu-id="9bb8d-132">**Start-historicalsearch**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-132">**Start-HistoricalSearch**</span></span>
     
-- <span data-ttu-id="ad049-133">**Stop HistoricalSearch**</span><span class="sxs-lookup"><span data-stu-id="ad049-133">**Stop-HistoricalSearch**</span></span>
+- <span data-ttu-id="9bb8d-133">**Start-historicalsearch**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-133">**Stop-HistoricalSearch**</span></span>
     
-- <span data-ttu-id="ad049-134">**新しい-SearchDocumentFormat**</span><span class="sxs-lookup"><span data-stu-id="ad049-134">**New-SearchDocumentFormat**</span></span>
+- <span data-ttu-id="9bb8d-134">**新しい-SearchDocumentFormat**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-134">**New-SearchDocumentFormat**</span></span>
     
-- <span data-ttu-id="ad049-135">**削除 SearchDocumentFormat**</span><span class="sxs-lookup"><span data-stu-id="ad049-135">**Remove-SearchDocumentFormat**</span></span>
+- <span data-ttu-id="9bb8d-135">**削除-SearchDocumentFormat**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-135">**Remove-SearchDocumentFormat**</span></span>
     
-### <a name="updated-cmdlets"></a><span data-ttu-id="ad049-136">更新されたコマンドレット</span><span class="sxs-lookup"><span data-stu-id="ad049-136">Updated cmdlets</span></span>
+### <a name="updated-cmdlets"></a><span data-ttu-id="9bb8d-136">更新されたコマンドレット</span><span class="sxs-lookup"><span data-stu-id="9bb8d-136">Updated cmdlets</span></span>
 
-<span data-ttu-id="ad049-137">次のコマンドレットは、ビルド 15.00.0847.032 (Exchange 2013 SP1) で更新されました。</span><span class="sxs-lookup"><span data-stu-id="ad049-137">The following cmdlets were updated in build 15.00.0847.032 (Exchange 2013 SP1):</span></span>
+<span data-ttu-id="9bb8d-137">次のコマンドレットは、ビルド 15.00.0847.032 (Exchange 2013 SP1) で更新されました。</span><span class="sxs-lookup"><span data-stu-id="9bb8d-137">The following cmdlets were updated in build 15.00.0847.032 (Exchange 2013 SP1):</span></span>
   
-- <span data-ttu-id="ad049-138">**Get AuditLogSearch**</span><span class="sxs-lookup"><span data-stu-id="ad049-138">**Get-AuditLogSearch**</span></span>
+- <span data-ttu-id="9bb8d-138">**取得-AuditLogSearch**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-138">**Get-AuditLogSearch**</span></span>
     
-- <span data-ttu-id="ad049-139">**Get QuarantineMessage**</span><span class="sxs-lookup"><span data-stu-id="ad049-139">**Get-QuarantineMessage**</span></span>
+- <span data-ttu-id="9bb8d-139">**Get-quarantinemessage**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-139">**Get-QuarantineMessage**</span></span>
     
-- <span data-ttu-id="ad049-140">**新しい-InboundConnector**</span><span class="sxs-lookup"><span data-stu-id="ad049-140">**New-InboundConnector**</span></span>
+- <span data-ttu-id="9bb8d-140">**New-inboundconnector**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-140">**New-InboundConnector**</span></span>
     
-- <span data-ttu-id="ad049-141">**新しい-MailboxDatabase**</span><span class="sxs-lookup"><span data-stu-id="ad049-141">**New-MailboxDatabase**</span></span>
+- <span data-ttu-id="9bb8d-141">**Set-mailboxdatabase**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-141">**New-MailboxDatabase**</span></span>
     
-- <span data-ttu-id="ad049-142">**新しい-PublicFolderMoveRequest**</span><span class="sxs-lookup"><span data-stu-id="ad049-142">**New-PublicFolderMoveRequest**</span></span>
+- <span data-ttu-id="9bb8d-142">**Get-publicfoldermoverequest**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-142">**New-PublicFolderMoveRequest**</span></span>
     
-- <span data-ttu-id="ad049-143">**新しい-TransportRule**</span><span class="sxs-lookup"><span data-stu-id="ad049-143">**New-TransportRule**</span></span>
+- <span data-ttu-id="9bb8d-143">**New-transportrule**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-143">**New-TransportRule**</span></span>
     
-- <span data-ttu-id="ad049-144">**セット FrontendTransportService**</span><span class="sxs-lookup"><span data-stu-id="ad049-144">**Set-FrontendTransportService**</span></span>
+- <span data-ttu-id="9bb8d-144">**Set-FrontendTransportService**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-144">**Set-FrontendTransportService**</span></span>
     
-- <span data-ttu-id="ad049-145">**セット InboundConnector**</span><span class="sxs-lookup"><span data-stu-id="ad049-145">**Set-InboundConnector**</span></span>
+- <span data-ttu-id="9bb8d-145">**New-inboundconnector**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-145">**Set-InboundConnector**</span></span>
     
-- <span data-ttu-id="ad049-146">**セット-メールボックス**</span><span class="sxs-lookup"><span data-stu-id="ad049-146">**Set-Mailbox**</span></span>
+- <span data-ttu-id="9bb8d-146">**Set-Mailbox**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-146">**Set-Mailbox**</span></span>
     
-- <span data-ttu-id="ad049-147">**セット MailboxTransportService**</span><span class="sxs-lookup"><span data-stu-id="ad049-147">**Set-MailboxTransportService**</span></span>
+- <span data-ttu-id="9bb8d-147">**Set-mailboxtransportservice**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-147">**Set-MailboxTransportService**</span></span>
     
-- <span data-ttu-id="ad049-148">**セット MoveRequest**</span><span class="sxs-lookup"><span data-stu-id="ad049-148">**Set-MoveRequest**</span></span>
+- <span data-ttu-id="9bb8d-148">**New-moverequest**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-148">**Set-MoveRequest**</span></span>
     
-- <span data-ttu-id="ad049-149">**セット OrganizationConfig**</span><span class="sxs-lookup"><span data-stu-id="ad049-149">**Set-OrganizationConfig**</span></span>
+- <span data-ttu-id="9bb8d-149">**Set-OrganizationConfig**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-149">**Set-OrganizationConfig**</span></span>
     
-- <span data-ttu-id="ad049-150">**セット OwaMailboxPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-150">**Set-OwaMailboxPolicy**</span></span>
+- <span data-ttu-id="9bb8d-150">**セット-Owam/Boxpolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-150">**Set-OwaMailboxPolicy**</span></span>
     
-- <span data-ttu-id="ad049-151">**セット OwaVirtualDirectory**</span><span class="sxs-lookup"><span data-stu-id="ad049-151">**Set-OwaVirtualDirectory**</span></span>
+- <span data-ttu-id="9bb8d-151">**Set-owavirtualdirectory**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-151">**Set-OwaVirtualDirectory**</span></span>
     
-- <span data-ttu-id="ad049-152">**セット組織**</span><span class="sxs-lookup"><span data-stu-id="ad049-152">**Set-TransportConfig**</span></span>
+- <span data-ttu-id="9bb8d-152">**設定-TransportConfig**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-152">**Set-TransportConfig**</span></span>
     
-- <span data-ttu-id="ad049-153">**セット TransportRule**</span><span class="sxs-lookup"><span data-stu-id="ad049-153">**Set-TransportRule**</span></span>
+- <span data-ttu-id="9bb8d-153">**New-transportrule**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-153">**Set-TransportRule**</span></span>
     
-- <span data-ttu-id="ad049-154">**セット TransportServer**</span><span class="sxs-lookup"><span data-stu-id="ad049-154">**Set-TransportServer**</span></span>
+- <span data-ttu-id="9bb8d-154">**Set-TransportServer**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-154">**Set-TransportServer**</span></span>
     
-- <span data-ttu-id="ad049-155">**セット TransportService**</span><span class="sxs-lookup"><span data-stu-id="ad049-155">**Set-TransportService**</span></span>
+- <span data-ttu-id="9bb8d-155">**Set-TransportService**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-155">**Set-TransportService**</span></span>
     
-- <span data-ttu-id="ad049-156">**テスト MRSHealth**</span><span class="sxs-lookup"><span data-stu-id="ad049-156">**Test-MRSHealth**</span></span>
+- <span data-ttu-id="9bb8d-156">**Test-MRSHealth**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-156">**Test-MRSHealth**</span></span>
     
-- <span data-ttu-id="ad049-157">**テスト OAuthConnectivity**</span><span class="sxs-lookup"><span data-stu-id="ad049-157">**Test-OAuthConnectivity**</span></span>
+- <span data-ttu-id="9bb8d-157">**テスト-OAuthConnectivity**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-157">**Test-OAuthConnectivity**</span></span>
     
-### <a name="removed-cmdlets"></a><span data-ttu-id="ad049-158">削除されたコマンドレット</span><span class="sxs-lookup"><span data-stu-id="ad049-158">Removed cmdlets</span></span>
+### <a name="removed-cmdlets"></a><span data-ttu-id="9bb8d-158">削除されたコマンドレット</span><span class="sxs-lookup"><span data-stu-id="9bb8d-158">Removed cmdlets</span></span>
 
-<span data-ttu-id="ad049-159">次のコマンドレットは、ビルド 15.00.0847.032 (Exchange 2013 SP1) から削除されました。</span><span class="sxs-lookup"><span data-stu-id="ad049-159">The following cmdlets were removed from build 15.00.0847.032 (Exchange 2013 SP1):</span></span>
+<span data-ttu-id="9bb8d-159">次のコマンドレットは、ビルド 15.00.0847.032 (Exchange 2013 SP1) から削除されました。</span><span class="sxs-lookup"><span data-stu-id="9bb8d-159">The following cmdlets were removed from build 15.00.0847.032 (Exchange 2013 SP1):</span></span>
   
-- <span data-ttu-id="ad049-160">**Get AvailabilityReportOutage**</span><span class="sxs-lookup"><span data-stu-id="ad049-160">**Get-AvailabilityReportOutage**</span></span>
+- <span data-ttu-id="9bb8d-160">**New-availabilityreportoutage**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-160">**Get-AvailabilityReportOutage**</span></span>
     
-- <span data-ttu-id="ad049-161">**新しい-AvailabilityReportOutage**</span><span class="sxs-lookup"><span data-stu-id="ad049-161">**New-AvailabilityReportOutage**</span></span>
+- <span data-ttu-id="9bb8d-161">**New-availabilityreportoutage**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-161">**New-AvailabilityReportOutage**</span></span>
     
-- <span data-ttu-id="ad049-162">**削除 AvailabilityReportOutage**</span><span class="sxs-lookup"><span data-stu-id="ad049-162">**Remove-AvailabilityReportOutage**</span></span>
+- <span data-ttu-id="9bb8d-162">**New-availabilityreportoutage**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-162">**Remove-AvailabilityReportOutage**</span></span>
     
-- <span data-ttu-id="ad049-163">**セット AvailabilityReportOutage**</span><span class="sxs-lookup"><span data-stu-id="ad049-163">**Set-AvailabilityReportOutage**</span></span>
+- <span data-ttu-id="9bb8d-163">**New-availabilityreportoutage**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-163">**Set-AvailabilityReportOutage**</span></span>
     
-## <a name="new-and-updated-cmdlets-in-exchange-2013"></a><span data-ttu-id="ad049-164">Exchange 2013 の新規コマンドレットと更新されたコマンドレット</span><span class="sxs-lookup"><span data-stu-id="ad049-164">New and updated cmdlets in Exchange 2013</span></span>
+## <a name="new-and-updated-cmdlets-in-exchange-2013"></a><span data-ttu-id="9bb8d-164">Exchange 2013 の新規コマンドレットと更新されたコマンドレット</span><span class="sxs-lookup"><span data-stu-id="9bb8d-164">New and updated cmdlets in Exchange 2013</span></span>
 
-### <a name="new-cmdlets"></a><span data-ttu-id="ad049-165">新規コマンドレット</span><span class="sxs-lookup"><span data-stu-id="ad049-165">New cmdlets</span></span>
-<span data-ttu-id="ad049-166"><a name="bk_new"> </a></span><span class="sxs-lookup"><span data-stu-id="ad049-166"></span></span>
+### <a name="new-cmdlets"></a><span data-ttu-id="9bb8d-165">新規コマンドレット</span><span class="sxs-lookup"><span data-stu-id="9bb8d-165">New cmdlets</span></span>
+<span data-ttu-id="9bb8d-166"><a name="bk_new"> </a></span><span class="sxs-lookup"><span data-stu-id="9bb8d-166"><a name="bk_new"> </a></span></span>
 
-<span data-ttu-id="ad049-167">次のコマンドレットは、Exchange 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="ad049-167">The following cmdlets were introduced in Exchange 2013:</span></span>
+<span data-ttu-id="9bb8d-167">次のコマンドレットが Exchange 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="9bb8d-167">The following cmdlets were introduced in Exchange 2013:</span></span>
   
-- <span data-ttu-id="ad049-168">**Get ActiveSyncDeviceAutoblockThreshold**</span><span class="sxs-lookup"><span data-stu-id="ad049-168">**Get-ActiveSyncDeviceAutoblockThreshold**</span></span>
+- <span data-ttu-id="9bb8d-168">**ActiveSyncDeviceAutoblockThreshold**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-168">**Get-ActiveSyncDeviceAutoblockThreshold**</span></span>
     
-- <span data-ttu-id="ad049-169">**セット ActiveSyncDeviceAutoblockThreshold**</span><span class="sxs-lookup"><span data-stu-id="ad049-169">**Set-ActiveSyncDeviceAutoblockThreshold**</span></span>
+- <span data-ttu-id="9bb8d-169">**ActiveSyncDeviceAutoblockThreshold**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-169">**Set-ActiveSyncDeviceAutoblockThreshold**</span></span>
     
-- <span data-ttu-id="ad049-170">**無効にするアプリケーション**</span><span class="sxs-lookup"><span data-stu-id="ad049-170">**Disable-App**</span></span>
+- <span data-ttu-id="9bb8d-170">**Disable-App**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-170">**Disable-App**</span></span>
     
-- <span data-ttu-id="ad049-171">**有効にするアプリケーション**</span><span class="sxs-lookup"><span data-stu-id="ad049-171">**Enable-App**</span></span>
+- <span data-ttu-id="9bb8d-171">**Enable-App**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-171">**Enable-App**</span></span>
     
-- <span data-ttu-id="ad049-172">**取得アプリケーション**</span><span class="sxs-lookup"><span data-stu-id="ad049-172">**Get-App**</span></span>
+- <span data-ttu-id="9bb8d-172">**Get-App**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-172">**Get-App**</span></span>
     
-- <span data-ttu-id="ad049-173">**新アプリ**</span><span class="sxs-lookup"><span data-stu-id="ad049-173">**New-App**</span></span>
+- <span data-ttu-id="9bb8d-173">**New-App**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-173">**New-App**</span></span>
     
-- <span data-ttu-id="ad049-174">**削除アプリ**</span><span class="sxs-lookup"><span data-stu-id="ad049-174">**Remove-App**</span></span>
+- <span data-ttu-id="9bb8d-174">**Remove-App**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-174">**Remove-App**</span></span>
     
-- <span data-ttu-id="ad049-175">**セット アプリケーション**</span><span class="sxs-lookup"><span data-stu-id="ad049-175">**Set-App**</span></span>
+- <span data-ttu-id="9bb8d-175">**Set-App**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-175">**Set-App**</span></span>
     
-- <span data-ttu-id="ad049-176">**Get AuthConfig**</span><span class="sxs-lookup"><span data-stu-id="ad049-176">**Get-AuthConfig**</span></span>
+- <span data-ttu-id="9bb8d-176">**取得-AuthConfig**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-176">**Get-AuthConfig**</span></span>
     
-- <span data-ttu-id="ad049-177">**セット AuthConfig**</span><span class="sxs-lookup"><span data-stu-id="ad049-177">**Set-AuthConfig**</span></span>
+- <span data-ttu-id="9bb8d-177">**設定-AuthConfig**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-177">**Set-AuthConfig**</span></span>
     
-- <span data-ttu-id="ad049-178">**Get AuthServer**</span><span class="sxs-lookup"><span data-stu-id="ad049-178">**Get-AuthServer**</span></span>
+- <span data-ttu-id="9bb8d-178">**取得-AuthServer**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-178">**Get-AuthServer**</span></span>
     
-- <span data-ttu-id="ad049-179">**新しい-AuthServer**</span><span class="sxs-lookup"><span data-stu-id="ad049-179">**New-AuthServer**</span></span>
+- <span data-ttu-id="9bb8d-179">**新しい-AuthServer**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-179">**New-AuthServer**</span></span>
     
-- <span data-ttu-id="ad049-180">**削除 AuthServer**</span><span class="sxs-lookup"><span data-stu-id="ad049-180">**Remove-AuthServer**</span></span>
+- <span data-ttu-id="9bb8d-180">**削除-AuthServer**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-180">**Remove-AuthServer**</span></span>
     
-- <span data-ttu-id="ad049-181">**セット AuthServer**</span><span class="sxs-lookup"><span data-stu-id="ad049-181">**Set-AuthServer**</span></span>
+- <span data-ttu-id="9bb8d-181">**Set-AuthServer**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-181">**Set-AuthServer**</span></span>
     
-- <span data-ttu-id="ad049-182">**新しい-AvailabilityConfig**</span><span class="sxs-lookup"><span data-stu-id="ad049-182">**New-AvailabilityConfig**</span></span>
+- <span data-ttu-id="9bb8d-182">**Get-availabilityconfig**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-182">**New-AvailabilityConfig**</span></span>
     
-- <span data-ttu-id="ad049-183">**削除 AvailabilityConfig**</span><span class="sxs-lookup"><span data-stu-id="ad049-183">**Remove-AvailabilityConfig**</span></span>
+- <span data-ttu-id="9bb8d-183">**Get-availabilityconfig**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-183">**Remove-AvailabilityConfig**</span></span>
     
-- <span data-ttu-id="ad049-184">**Get CalendarDiagnosticAnalysis**</span><span class="sxs-lookup"><span data-stu-id="ad049-184">**Get-CalendarDiagnosticAnalysis**</span></span>
+- <span data-ttu-id="9bb8d-184">**CalendarDiagnosticAnalysis**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-184">**Get-CalendarDiagnosticAnalysis**</span></span>
     
-- <span data-ttu-id="ad049-185">**Get ClassificationRuleCollection**</span><span class="sxs-lookup"><span data-stu-id="ad049-185">**Get-ClassificationRuleCollection**</span></span>
+- <span data-ttu-id="9bb8d-185">**Get-classificationrulecollection**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-185">**Get-ClassificationRuleCollection**</span></span>
     
-- <span data-ttu-id="ad049-186">**新しい-ClassificationRuleCollection**</span><span class="sxs-lookup"><span data-stu-id="ad049-186">**New-ClassificationRuleCollection**</span></span>
+- <span data-ttu-id="9bb8d-186">**Get-classificationrulecollection**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-186">**New-ClassificationRuleCollection**</span></span>
     
-- <span data-ttu-id="ad049-187">**削除 ClassificationRuleCollection**</span><span class="sxs-lookup"><span data-stu-id="ad049-187">**Remove-ClassificationRuleCollection**</span></span>
+- <span data-ttu-id="9bb8d-187">**Get-classificationrulecollection**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-187">**Remove-ClassificationRuleCollection**</span></span>
     
-- <span data-ttu-id="ad049-188">**セット ClassificationRuleCollection**</span><span class="sxs-lookup"><span data-stu-id="ad049-188">**Set-ClassificationRuleCollection**</span></span>
+- <span data-ttu-id="9bb8d-188">**Get-classificationrulecollection**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-188">**Set-ClassificationRuleCollection**</span></span>
     
-- <span data-ttu-id="ad049-189">**Get ConnectSubscription**</span><span class="sxs-lookup"><span data-stu-id="ad049-189">**Get-ConnectSubscription**</span></span>
+- <span data-ttu-id="9bb8d-189">**取得-ConnectSubscription**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-189">**Get-ConnectSubscription**</span></span>
     
-- <span data-ttu-id="ad049-190">**新しい-ConnectSubscription**</span><span class="sxs-lookup"><span data-stu-id="ad049-190">**New-ConnectSubscription**</span></span>
+- <span data-ttu-id="9bb8d-190">**新しい-ConnectSubscription**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-190">**New-ConnectSubscription**</span></span>
     
-- <span data-ttu-id="ad049-191">**削除 ConnectSubscription**</span><span class="sxs-lookup"><span data-stu-id="ad049-191">**Remove-ConnectSubscription**</span></span>
+- <span data-ttu-id="9bb8d-191">**削除-ConnectSubscription**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-191">**Remove-ConnectSubscription**</span></span>
     
-- <span data-ttu-id="ad049-192">**セット ConnectSubscription**</span><span class="sxs-lookup"><span data-stu-id="ad049-192">**Set-ConnectSubscription**</span></span>
+- <span data-ttu-id="9bb8d-192">**設定-ConnectSubscription**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-192">**Set-ConnectSubscription**</span></span>
     
-- <span data-ttu-id="ad049-193">**Get DataClassification**</span><span class="sxs-lookup"><span data-stu-id="ad049-193">**Get-DataClassification**</span></span>
+- <span data-ttu-id="9bb8d-193">**取得-Datacl/確認**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-193">**Get-DataClassification**</span></span>
     
-- <span data-ttu-id="ad049-194">**Get DataClassificationConfig**</span><span class="sxs-lookup"><span data-stu-id="ad049-194">**Get-DataClassificationConfig**</span></span>
+- <span data-ttu-id="9bb8d-194">**Get-dataclassificationconfig**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-194">**Get-DataClassificationConfig**</span></span>
     
-- <span data-ttu-id="ad049-195">**Get DlpPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-195">**Get-DlpPolicy**</span></span>
+- <span data-ttu-id="9bb8d-195">**取得-DlpPolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-195">**Get-DlpPolicy**</span></span>
     
-- <span data-ttu-id="ad049-196">**新しい-DlpPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-196">**New-DlpPolicy**</span></span>
+- <span data-ttu-id="9bb8d-196">**新-DlpPolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-196">**New-DlpPolicy**</span></span>
     
-- <span data-ttu-id="ad049-197">**削除 DlpPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-197">**Remove-DlpPolicy**</span></span>
+- <span data-ttu-id="9bb8d-197">**削除-DlpPolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-197">**Remove-DlpPolicy**</span></span>
     
-- <span data-ttu-id="ad049-198">**セット DlpPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-198">**Set-DlpPolicy**</span></span>
+- <span data-ttu-id="9bb8d-198">**設定-DlpPolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-198">**Set-DlpPolicy**</span></span>
     
-- <span data-ttu-id="ad049-199">**エクスポート DlpPolicyCollection**</span><span class="sxs-lookup"><span data-stu-id="ad049-199">**Export-DlpPolicyCollection**</span></span>
+- <span data-ttu-id="9bb8d-199">**Export-DlpPolicyCollection**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-199">**Export-DlpPolicyCollection**</span></span>
     
-- <span data-ttu-id="ad049-200">**インポート-DlpPolicyCollection**</span><span class="sxs-lookup"><span data-stu-id="ad049-200">**Import-DlpPolicyCollection**</span></span>
+- <span data-ttu-id="9bb8d-200">**Import-DlpPolicyCollection**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-200">**Import-DlpPolicyCollection**</span></span>
     
-- <span data-ttu-id="ad049-201">**Get DlpPolicyTemplate**</span><span class="sxs-lookup"><span data-stu-id="ad049-201">**Get-DlpPolicyTemplate**</span></span>
+- <span data-ttu-id="9bb8d-201">**Remove-dlppolicytemplate**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-201">**Get-DlpPolicyTemplate**</span></span>
     
-- <span data-ttu-id="ad049-202">**インポート-DlpPolicyTemplate**</span><span class="sxs-lookup"><span data-stu-id="ad049-202">**Import-DlpPolicyTemplate**</span></span>
+- <span data-ttu-id="9bb8d-202">**Remove-dlppolicytemplate**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-202">**Import-DlpPolicyTemplate**</span></span>
     
-- <span data-ttu-id="ad049-203">**削除 DlpPolicyTemplate**</span><span class="sxs-lookup"><span data-stu-id="ad049-203">**Remove-DlpPolicyTemplate**</span></span>
+- <span data-ttu-id="9bb8d-203">**Remove-dlppolicytemplate**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-203">**Remove-DlpPolicyTemplate**</span></span>
     
-- <span data-ttu-id="ad049-204">**Get ExchangeServerAccessLicense**</span><span class="sxs-lookup"><span data-stu-id="ad049-204">**Get-ExchangeServerAccessLicense**</span></span>
+- <span data-ttu-id="9bb8d-204">**ExchangeServerAccessLicense**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-204">**Get-ExchangeServerAccessLicense**</span></span>
     
-- <span data-ttu-id="ad049-205">**Get ExchangeServerAccessLicenseUser**</span><span class="sxs-lookup"><span data-stu-id="ad049-205">**Get-ExchangeServerAccessLicenseUser**</span></span>
+- <span data-ttu-id="9bb8d-205">**ExchangeServerAccessLicenseUser**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-205">**Get-ExchangeServerAccessLicenseUser**</span></span>
     
-- <span data-ttu-id="ad049-206">**Get FfoMigrationReport**</span><span class="sxs-lookup"><span data-stu-id="ad049-206">**Get-FfoMigrationReport**</span></span>
+- <span data-ttu-id="9bb8d-206">**FfoMigrationReport**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-206">**Get-FfoMigrationReport**</span></span>
     
-- <span data-ttu-id="ad049-207">**Get FrontendTransportService**</span><span class="sxs-lookup"><span data-stu-id="ad049-207">**Get-FrontendTransportService**</span></span>
+- <span data-ttu-id="9bb8d-207">**Get-FrontendTransportService**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-207">**Get-FrontendTransportService**</span></span>
     
-- <span data-ttu-id="ad049-208">**セット FrontendTransportService**</span><span class="sxs-lookup"><span data-stu-id="ad049-208">**Set-FrontendTransportService**</span></span>
+- <span data-ttu-id="9bb8d-208">**Set-FrontendTransportService**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-208">**Set-FrontendTransportService**</span></span>
     
-- <span data-ttu-id="ad049-209">**追加 GlobalMonitoringOverride**</span><span class="sxs-lookup"><span data-stu-id="ad049-209">**Add-GlobalMonitoringOverride**</span></span>
+- <span data-ttu-id="9bb8d-209">**追加-GlobalMonitoringOverride**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-209">**Add-GlobalMonitoringOverride**</span></span>
     
-- <span data-ttu-id="ad049-210">**Get GlobalMonitoringOverride**</span><span class="sxs-lookup"><span data-stu-id="ad049-210">**Get-GlobalMonitoringOverride**</span></span>
+- <span data-ttu-id="9bb8d-210">**取得-GlobalMonitoringOverride**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-210">**Get-GlobalMonitoringOverride**</span></span>
     
-- <span data-ttu-id="ad049-211">**削除 GlobalMonitoringOverride**</span><span class="sxs-lookup"><span data-stu-id="ad049-211">**Remove-GlobalMonitoringOverride**</span></span>
+- <span data-ttu-id="9bb8d-211">**削除-GlobalMonitoringOverride**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-211">**Remove-GlobalMonitoringOverride**</span></span>
     
-- <span data-ttu-id="ad049-212">**Get GroupActivityReport**</span><span class="sxs-lookup"><span data-stu-id="ad049-212">**Get-GroupActivityReport**</span></span>
+- <span data-ttu-id="9bb8d-212">**Get-GroupActivityReport**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-212">**Get-GroupActivityReport**</span></span>
     
-- <span data-ttu-id="ad049-213">**Get HealthReport**</span><span class="sxs-lookup"><span data-stu-id="ad049-213">**Get-HealthReport**</span></span>
+- <span data-ttu-id="9bb8d-213">**HealthReport**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-213">**Get-HealthReport**</span></span>
     
-- <span data-ttu-id="ad049-214">**Get HostedConnectionFilterPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-214">**Get-HostedConnectionFilterPolicy**</span></span>
+- <span data-ttu-id="9bb8d-214">**Remove-hostedconnectionfilterpolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-214">**Get-HostedConnectionFilterPolicy**</span></span>
     
-- <span data-ttu-id="ad049-215">**新しい-HostedConnectionFilterPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-215">**New-HostedConnectionFilterPolicy**</span></span>
+- <span data-ttu-id="9bb8d-215">**Remove-hostedconnectionfilterpolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-215">**New-HostedConnectionFilterPolicy**</span></span>
     
-- <span data-ttu-id="ad049-216">**削除 HostedConnectionFilterPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-216">**Remove-HostedConnectionFilterPolicy**</span></span>
+- <span data-ttu-id="9bb8d-216">**Remove-hostedconnectionfilterpolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-216">**Remove-HostedConnectionFilterPolicy**</span></span>
     
-- <span data-ttu-id="ad049-217">**セット HostedConnectionFilterPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-217">**Set-HostedConnectionFilterPolicy**</span></span>
+- <span data-ttu-id="9bb8d-217">**Remove-hostedconnectionfilterpolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-217">**Set-HostedConnectionFilterPolicy**</span></span>
     
-- <span data-ttu-id="ad049-218">**Get HostedContentFilterPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-218">**Get-HostedContentFilterPolicy**</span></span>
+- <span data-ttu-id="9bb8d-218">**Set-hostedcontentfilterpolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-218">**Get-HostedContentFilterPolicy**</span></span>
     
-- <span data-ttu-id="ad049-219">**新しい-HostedContentFilterPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-219">**New-HostedContentFilterPolicy**</span></span>
+- <span data-ttu-id="9bb8d-219">**Set-hostedcontentfilterpolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-219">**New-HostedContentFilterPolicy**</span></span>
     
-- <span data-ttu-id="ad049-220">**削除 HostedContentFilterPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-220">**Remove-HostedContentFilterPolicy**</span></span>
+- <span data-ttu-id="9bb8d-220">**Set-hostedcontentfilterpolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-220">**Remove-HostedContentFilterPolicy**</span></span>
     
-- <span data-ttu-id="ad049-221">**セット HostedContentFilterPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-221">**Set-HostedContentFilterPolicy**</span></span>
+- <span data-ttu-id="9bb8d-221">**Set-hostedcontentfilterpolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-221">**Set-HostedContentFilterPolicy**</span></span>
     
-- <span data-ttu-id="ad049-222">**Get HostedOutboundSpamFilterPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-222">**Get-HostedOutboundSpamFilterPolicy**</span></span>
+- <span data-ttu-id="9bb8d-222">**HostedOutboundSpamFilterPolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-222">**Get-HostedOutboundSpamFilterPolicy**</span></span>
     
-- <span data-ttu-id="ad049-223">**セット HostedOutboundSpamFilterPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-223">**Set-HostedOutboundSpamFilterPolicy**</span></span>
+- <span data-ttu-id="9bb8d-223">**HostedOutboundSpamFilterPolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-223">**Set-HostedOutboundSpamFilterPolicy**</span></span>
     
-- <span data-ttu-id="ad049-224">**削除 HybridConfiguration**</span><span class="sxs-lookup"><span data-stu-id="ad049-224">**Remove-HybridConfiguration**</span></span>
+- <span data-ttu-id="9bb8d-224">**HybridConfiguration**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-224">**Remove-HybridConfiguration**</span></span>
     
-- <span data-ttu-id="ad049-225">**Get HybridMailflow**</span><span class="sxs-lookup"><span data-stu-id="ad049-225">**Get-HybridMailflow**</span></span>
+- <span data-ttu-id="9bb8d-225">**Get-hybridmailflow**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-225">**Get-HybridMailflow**</span></span>
     
-- <span data-ttu-id="ad049-226">**セット HybridMailflow**</span><span class="sxs-lookup"><span data-stu-id="ad049-226">**Set-HybridMailflow**</span></span>
+- <span data-ttu-id="9bb8d-226">**Get-hybridmailflow**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-226">**Set-HybridMailflow**</span></span>
     
-- <span data-ttu-id="ad049-227">**Get HybridMailflowDatacenterIPs**</span><span class="sxs-lookup"><span data-stu-id="ad049-227">**Get-HybridMailflowDatacenterIPs**</span></span>
+- <span data-ttu-id="9bb8d-227">**HybridMailflowDatacenterIPs**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-227">**Get-HybridMailflowDatacenterIPs**</span></span>
     
-- <span data-ttu-id="ad049-228">**Get InboundConnector**</span><span class="sxs-lookup"><span data-stu-id="ad049-228">**Get-InboundConnector**</span></span>
+- <span data-ttu-id="9bb8d-228">**New-inboundconnector**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-228">**Get-InboundConnector**</span></span>
     
-- <span data-ttu-id="ad049-229">**新しい-InboundConnector**</span><span class="sxs-lookup"><span data-stu-id="ad049-229">**New-InboundConnector**</span></span>
+- <span data-ttu-id="9bb8d-229">**New-inboundconnector**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-229">**New-InboundConnector**</span></span>
     
-- <span data-ttu-id="ad049-230">**削除 InboundConnector**</span><span class="sxs-lookup"><span data-stu-id="ad049-230">**Remove-InboundConnector**</span></span>
+- <span data-ttu-id="9bb8d-230">**New-inboundconnector**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-230">**Remove-InboundConnector**</span></span>
     
-- <span data-ttu-id="ad049-231">**セット InboundConnector**</span><span class="sxs-lookup"><span data-stu-id="ad049-231">**Set-InboundConnector**</span></span>
+- <span data-ttu-id="9bb8d-231">**New-inboundconnector**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-231">**Set-InboundConnector**</span></span>
     
-- <span data-ttu-id="ad049-232">**Get MailboxActivityReport**</span><span class="sxs-lookup"><span data-stu-id="ad049-232">**Get-MailboxActivityReport**</span></span>
+- <span data-ttu-id="9bb8d-232">**Get-mailboxactivityreport**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-232">**Get-MailboxActivityReport**</span></span>
     
-- <span data-ttu-id="ad049-233">**無効にする MailboxQuarantine**</span><span class="sxs-lookup"><span data-stu-id="ad049-233">**Disable-MailboxQuarantine**</span></span>
+- <span data-ttu-id="9bb8d-233">**MailboxQuarantine**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-233">**Disable-MailboxQuarantine**</span></span>
     
-- <span data-ttu-id="ad049-234">**有効にする MailboxQuarantine**</span><span class="sxs-lookup"><span data-stu-id="ad049-234">**Enable-MailboxQuarantine**</span></span>
+- <span data-ttu-id="9bb8d-234">**MailboxQuarantine**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-234">**Enable-MailboxQuarantine**</span></span>
     
-- <span data-ttu-id="ad049-235">**Get MailboxTransportService**</span><span class="sxs-lookup"><span data-stu-id="ad049-235">**Get-MailboxTransportService**</span></span>
+- <span data-ttu-id="9bb8d-235">**Set-mailboxtransportservice**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-235">**Get-MailboxTransportService**</span></span>
     
-- <span data-ttu-id="ad049-236">**セット MailboxTransportService**</span><span class="sxs-lookup"><span data-stu-id="ad049-236">**Set-MailboxTransportService**</span></span>
+- <span data-ttu-id="9bb8d-236">**Set-mailboxtransportservice**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-236">**Set-MailboxTransportService**</span></span>
     
-- <span data-ttu-id="ad049-237">**Get MailDetailDlpPolicyReport**</span><span class="sxs-lookup"><span data-stu-id="ad049-237">**Get-MailDetailDlpPolicyReport**</span></span>
+- <span data-ttu-id="9bb8d-237">**Get-MailDetailDlpPolicyReport**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-237">**Get-MailDetailDlpPolicyReport**</span></span>
     
-- <span data-ttu-id="ad049-238">**Get MailDetailMalwareReport**</span><span class="sxs-lookup"><span data-stu-id="ad049-238">**Get-MailDetailMalwareReport**</span></span>
+- <span data-ttu-id="9bb8d-238">**Get-maildetailmalwarereport**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-238">**Get-MailDetailMalwareReport**</span></span>
     
-- <span data-ttu-id="ad049-239">**Get MailDetailReport**</span><span class="sxs-lookup"><span data-stu-id="ad049-239">**Get-MailDetailReport**</span></span>
+- <span data-ttu-id="9bb8d-239">**取得-MailDetailReport**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-239">**Get-MailDetailReport**</span></span>
     
-- <span data-ttu-id="ad049-240">**Get MailDetailSpamReport**</span><span class="sxs-lookup"><span data-stu-id="ad049-240">**Get-MailDetailSpamReport**</span></span>
+- <span data-ttu-id="9bb8d-240">**Get-maildetailspamreport**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-240">**Get-MailDetailSpamReport**</span></span>
     
-- <span data-ttu-id="ad049-241">**Get MailDetailTransportRuleReport**</span><span class="sxs-lookup"><span data-stu-id="ad049-241">**Get-MailDetailTransportRuleReport**</span></span>
+- <span data-ttu-id="9bb8d-241">**Get-maildetailtransportrulereport**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-241">**Get-MailDetailTransportRuleReport**</span></span>
     
-- <span data-ttu-id="ad049-242">**Get MailFilterListReport**</span><span class="sxs-lookup"><span data-stu-id="ad049-242">**Get-MailFilterListReport**</span></span>
+- <span data-ttu-id="9bb8d-242">**Get-MailFilterListReport**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-242">**Get-MailFilterListReport**</span></span>
     
-- <span data-ttu-id="ad049-243">**Get MailTrafficPolicyReport**</span><span class="sxs-lookup"><span data-stu-id="ad049-243">**Get-MailTrafficPolicyReport**</span></span>
+- <span data-ttu-id="9bb8d-243">**Get-mailtrafficpolicyreport**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-243">**Get-MailTrafficPolicyReport**</span></span>
     
-- <span data-ttu-id="ad049-244">**Get MailTrafficReport**</span><span class="sxs-lookup"><span data-stu-id="ad049-244">**Get-MailTrafficReport**</span></span>
+- <span data-ttu-id="9bb8d-244">**Get-mailtrafficreport**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-244">**Get-MailTrafficReport**</span></span>
     
-- <span data-ttu-id="ad049-245">**Get MailTrafficSummaryReport**</span><span class="sxs-lookup"><span data-stu-id="ad049-245">**Get-MailTrafficSummaryReport**</span></span>
+- <span data-ttu-id="9bb8d-245">**Get-mailtrafficsummaryreport**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-245">**Get-MailTrafficSummaryReport**</span></span>
     
-- <span data-ttu-id="ad049-246">**Get MailTrafficTopReport**</span><span class="sxs-lookup"><span data-stu-id="ad049-246">**Get-MailTrafficTopReport**</span></span>
+- <span data-ttu-id="9bb8d-246">**Get-mailtraffictopreport**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-246">**Get-MailTrafficTopReport**</span></span>
     
-- <span data-ttu-id="ad049-247">**Get MalwareFilteringServer**</span><span class="sxs-lookup"><span data-stu-id="ad049-247">**Get-MalwareFilteringServer**</span></span>
+- <span data-ttu-id="9bb8d-247">**Set-malwarefilteringserver**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-247">**Get-MalwareFilteringServer**</span></span>
     
-- <span data-ttu-id="ad049-248">**セット MalwareFilteringServer**</span><span class="sxs-lookup"><span data-stu-id="ad049-248">**Set-MalwareFilteringServer**</span></span>
+- <span data-ttu-id="9bb8d-248">**Set-malwarefilteringserver**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-248">**Set-MalwareFilteringServer**</span></span>
     
-- <span data-ttu-id="ad049-249">**Get MalwareFilterPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-249">**Get-MalwareFilterPolicy**</span></span>
+- <span data-ttu-id="9bb8d-249">**New-malwarefilterpolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-249">**Get-MalwareFilterPolicy**</span></span>
     
-- <span data-ttu-id="ad049-250">**新しい-MalwareFilterPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-250">**New-MalwareFilterPolicy**</span></span>
+- <span data-ttu-id="9bb8d-250">**New-malwarefilterpolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-250">**New-MalwareFilterPolicy**</span></span>
     
-- <span data-ttu-id="ad049-251">**削除 MalwareFilterPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-251">**Remove-MalwareFilterPolicy**</span></span>
+- <span data-ttu-id="9bb8d-251">**New-malwarefilterpolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-251">**Remove-MalwareFilterPolicy**</span></span>
     
-- <span data-ttu-id="ad049-252">**セット MalwareFilterPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-252">**Set-MalwareFilterPolicy**</span></span>
+- <span data-ttu-id="9bb8d-252">**New-malwarefilterpolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-252">**Set-MalwareFilterPolicy**</span></span>
     
-- <span data-ttu-id="ad049-253">**Get MalwareFilterRecoveryItem**</span><span class="sxs-lookup"><span data-stu-id="ad049-253">**Get-MalwareFilterRecoveryItem**</span></span>
+- <span data-ttu-id="9bb8d-253">**MalwareFilterRecoveryItem**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-253">**Get-MalwareFilterRecoveryItem**</span></span>
     
-- <span data-ttu-id="ad049-254">**削除 MalwareFilterRecoveryItem**</span><span class="sxs-lookup"><span data-stu-id="ad049-254">**Remove-MalwareFilterRecoveryItem**</span></span>
+- <span data-ttu-id="9bb8d-254">**MalwareFilterRecoveryItem**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-254">**Remove-MalwareFilterRecoveryItem**</span></span>
     
-- <span data-ttu-id="ad049-255">**再開 MalwareFilterRecoveryItem**</span><span class="sxs-lookup"><span data-stu-id="ad049-255">**Resume-MalwareFilterRecoveryItem**</span></span>
+- <span data-ttu-id="9bb8d-255">**MalwareFilterRecoveryItem**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-255">**Resume-MalwareFilterRecoveryItem**</span></span>
     
-- <span data-ttu-id="ad049-256">**送信 MapiSubmitSystemProbe**</span><span class="sxs-lookup"><span data-stu-id="ad049-256">**Send-MapiSubmitSystemProbe**</span></span>
+- <span data-ttu-id="9bb8d-256">**MapiSubmitSystemProbe**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-256">**Send-MapiSubmitSystemProbe**</span></span>
     
-- <span data-ttu-id="ad049-257">**"リダイレクト"メッセージ**</span><span class="sxs-lookup"><span data-stu-id="ad049-257">**Redirect-Message**</span></span>
+- <span data-ttu-id="9bb8d-257">**Redirect-Message**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-257">**Redirect-Message**</span></span>
     
-- <span data-ttu-id="ad049-258">**Get MessageTrace**</span><span class="sxs-lookup"><span data-stu-id="ad049-258">**Get-MessageTrace**</span></span>
+- <span data-ttu-id="9bb8d-258">**メッセージトレースの取得**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-258">**Get-MessageTrace**</span></span>
     
-- <span data-ttu-id="ad049-259">**Get MessageTraceDetail**</span><span class="sxs-lookup"><span data-stu-id="ad049-259">**Get-MessageTraceDetail**</span></span>
+- <span data-ttu-id="9bb8d-259">**MessageTraceDetail の取得**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-259">**Get-MessageTraceDetail**</span></span>
     
-- <span data-ttu-id="ad049-260">**完了 MigrationBatch**</span><span class="sxs-lookup"><span data-stu-id="ad049-260">**Complete-MigrationBatch**</span></span>
+- <span data-ttu-id="9bb8d-260">**完了-New-migrationbatch**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-260">**Complete-MigrationBatch**</span></span>
     
-- <span data-ttu-id="ad049-261">**削除 MigrationBatch**</span><span class="sxs-lookup"><span data-stu-id="ad049-261">**Remove-MigrationBatch**</span></span>
+- <span data-ttu-id="9bb8d-261">**New-migrationbatch**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-261">**Remove-MigrationBatch**</span></span>
     
-- <span data-ttu-id="ad049-262">**Get MigrationConfig**</span><span class="sxs-lookup"><span data-stu-id="ad049-262">**Get-MigrationConfig**</span></span>
+- <span data-ttu-id="9bb8d-262">**は、get-migrationconfig**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-262">**Get-MigrationConfig**</span></span>
     
-- <span data-ttu-id="ad049-263">**セット MigrationConfig**</span><span class="sxs-lookup"><span data-stu-id="ad049-263">**Set-MigrationConfig**</span></span>
+- <span data-ttu-id="9bb8d-263">**は、get-migrationconfig**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-263">**Set-MigrationConfig**</span></span>
     
-- <span data-ttu-id="ad049-264">**Get MigrationEndpoint**</span><span class="sxs-lookup"><span data-stu-id="ad049-264">**Get-MigrationEndpoint**</span></span>
+- <span data-ttu-id="9bb8d-264">**New-migrationendpoint**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-264">**Get-MigrationEndpoint**</span></span>
     
-- <span data-ttu-id="ad049-265">**新しい-MigrationEndpoint**</span><span class="sxs-lookup"><span data-stu-id="ad049-265">**New-MigrationEndpoint**</span></span>
+- <span data-ttu-id="9bb8d-265">**New-migrationendpoint**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-265">**New-MigrationEndpoint**</span></span>
     
-- <span data-ttu-id="ad049-266">**削除 MigrationEndpoint**</span><span class="sxs-lookup"><span data-stu-id="ad049-266">**Remove-MigrationEndpoint**</span></span>
+- <span data-ttu-id="9bb8d-266">**New-migrationendpoint**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-266">**Remove-MigrationEndpoint**</span></span>
     
-- <span data-ttu-id="ad049-267">**セット MigrationEndpoint**</span><span class="sxs-lookup"><span data-stu-id="ad049-267">**Set-MigrationEndpoint**</span></span>
+- <span data-ttu-id="9bb8d-267">**New-migrationendpoint**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-267">**Set-MigrationEndpoint**</span></span>
     
-- <span data-ttu-id="ad049-268">**Get MigrationStatistics**</span><span class="sxs-lookup"><span data-stu-id="ad049-268">**Get-MigrationStatistics**</span></span>
+- <span data-ttu-id="9bb8d-268">**MigrationStatistics**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-268">**Get-MigrationStatistics**</span></span>
     
-- <span data-ttu-id="ad049-269">**Get MigrationUser**</span><span class="sxs-lookup"><span data-stu-id="ad049-269">**Get-MigrationUser**</span></span>
+- <span data-ttu-id="9bb8d-269">**MigrationUser**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-269">**Get-MigrationUser**</span></span>
     
-- <span data-ttu-id="ad049-270">**削除 MigrationUser**</span><span class="sxs-lookup"><span data-stu-id="ad049-270">**Remove-MigrationUser**</span></span>
+- <span data-ttu-id="9bb8d-270">**MigrationUser**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-270">**Remove-MigrationUser**</span></span>
     
-- <span data-ttu-id="ad049-271">**Get MigrationUserStatistics**</span><span class="sxs-lookup"><span data-stu-id="ad049-271">**Get-MigrationUserStatistics**</span></span>
+- <span data-ttu-id="9bb8d-271">**Get-migrationuserstatistics**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-271">**Get-MigrationUserStatistics**</span></span>
     
-- <span data-ttu-id="ad049-272">**クリア MobileDevice**</span><span class="sxs-lookup"><span data-stu-id="ad049-272">**Clear-MobileDevice**</span></span>
+- <span data-ttu-id="9bb8d-272">**Clear-mobiledevice**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-272">**Clear-MobileDevice**</span></span>
     
-- <span data-ttu-id="ad049-273">**Get MobileDevice**</span><span class="sxs-lookup"><span data-stu-id="ad049-273">**Get-MobileDevice**</span></span>
+- <span data-ttu-id="9bb8d-273">**Get-MobileDevice**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-273">**Get-MobileDevice**</span></span>
     
-- <span data-ttu-id="ad049-274">**削除 MobileDevice**</span><span class="sxs-lookup"><span data-stu-id="ad049-274">**Remove-MobileDevice**</span></span>
+- <span data-ttu-id="9bb8d-274">**Clear-mobiledevice**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-274">**Remove-MobileDevice**</span></span>
     
-- <span data-ttu-id="ad049-275">**Get MobileDeviceMailboxPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-275">**Get-MobileDeviceMailboxPolicy**</span></span>
+- <span data-ttu-id="9bb8d-275">**New-mobiledevicemailboxpolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-275">**Get-MobileDeviceMailboxPolicy**</span></span>
     
-- <span data-ttu-id="ad049-276">**新しい-MobileDeviceMailboxPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-276">**New-MobileDeviceMailboxPolicy**</span></span>
+- <span data-ttu-id="9bb8d-276">**New-mobiledevicemailboxpolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-276">**New-MobileDeviceMailboxPolicy**</span></span>
     
-- <span data-ttu-id="ad049-277">**削除 MobileDeviceMailboxPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-277">**Remove-MobileDeviceMailboxPolicy**</span></span>
+- <span data-ttu-id="9bb8d-277">**New-mobiledevicemailboxpolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-277">**Remove-MobileDeviceMailboxPolicy**</span></span>
     
-- <span data-ttu-id="ad049-278">**セット MobileDeviceMailboxPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-278">**Set-MobileDeviceMailboxPolicy**</span></span>
+- <span data-ttu-id="9bb8d-278">**New-mobiledevicemailboxpolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-278">**Set-MobileDeviceMailboxPolicy**</span></span>
     
-- <span data-ttu-id="ad049-279">**Get MobileDeviceStatistics**</span><span class="sxs-lookup"><span data-stu-id="ad049-279">**Get-MobileDeviceStatistics**</span></span>
+- <span data-ttu-id="9bb8d-279">**MobileDeviceStatistics**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-279">**Get-MobileDeviceStatistics**</span></span>
     
-- <span data-ttu-id="ad049-280">**Get MonitoringItemHelp**</span><span class="sxs-lookup"><span data-stu-id="ad049-280">**Get-MonitoringItemHelp**</span></span>
+- <span data-ttu-id="9bb8d-280">**取得-MonitoringItemHelp**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-280">**Get-MonitoringItemHelp**</span></span>
     
-- <span data-ttu-id="ad049-281">**Get MonitoringItemIdentity**</span><span class="sxs-lookup"><span data-stu-id="ad049-281">**Get-MonitoringItemIdentity**</span></span>
+- <span data-ttu-id="9bb8d-281">**取得-MonitoringItemIdentity**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-281">**Get-MonitoringItemIdentity**</span></span>
     
-- <span data-ttu-id="ad049-282">**呼び出す MonitoringProbe**</span><span class="sxs-lookup"><span data-stu-id="ad049-282">**Invoke-MonitoringProbe**</span></span>
+- <span data-ttu-id="9bb8d-282">**呼び出し-MonitoringProbe**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-282">**Invoke-MonitoringProbe**</span></span>
     
-- <span data-ttu-id="ad049-283">**取得通知**</span><span class="sxs-lookup"><span data-stu-id="ad049-283">**Get-Notification**</span></span>
+- <span data-ttu-id="9bb8d-283">**取得-通知**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-283">**Get-Notification**</span></span>
     
-- <span data-ttu-id="ad049-284">**設定通知**</span><span class="sxs-lookup"><span data-stu-id="ad049-284">**Set-Notification**</span></span>
+- <span data-ttu-id="9bb8d-284">**設定-通知**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-284">**Set-Notification**</span></span>
     
-- <span data-ttu-id="ad049-285">**テスト OAuthConnectivity**</span><span class="sxs-lookup"><span data-stu-id="ad049-285">**Test-OAuthConnectivity**</span></span>
+- <span data-ttu-id="9bb8d-285">**テスト-OAuthConnectivity**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-285">**Test-OAuthConnectivity**</span></span>
     
-- <span data-ttu-id="ad049-286">**Get OnPremisesOrganization**</span><span class="sxs-lookup"><span data-stu-id="ad049-286">**Get-OnPremisesOrganization**</span></span>
+- <span data-ttu-id="9bb8d-286">**OnPremisesOrganization**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-286">**Get-OnPremisesOrganization**</span></span>
     
-- <span data-ttu-id="ad049-287">**新しい-OnPremisesOrganization**</span><span class="sxs-lookup"><span data-stu-id="ad049-287">**New-OnPremisesOrganization**</span></span>
+- <span data-ttu-id="9bb8d-287">**OnPremisesOrganization**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-287">**New-OnPremisesOrganization**</span></span>
     
-- <span data-ttu-id="ad049-288">**削除 OnPremisesOrganization**</span><span class="sxs-lookup"><span data-stu-id="ad049-288">**Remove-OnPremisesOrganization**</span></span>
+- <span data-ttu-id="9bb8d-288">**OnPremisesOrganization**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-288">**Remove-OnPremisesOrganization**</span></span>
     
-- <span data-ttu-id="ad049-289">**セット OnPremisesOrganization**</span><span class="sxs-lookup"><span data-stu-id="ad049-289">**Set-OnPremisesOrganization**</span></span>
+- <span data-ttu-id="9bb8d-289">**OnPremisesOrganization**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-289">**Set-OnPremisesOrganization**</span></span>
     
-- <span data-ttu-id="ad049-290">**有効にする OrganizationCustomization**</span><span class="sxs-lookup"><span data-stu-id="ad049-290">**Enable-OrganizationCustomization**</span></span>
+- <span data-ttu-id="9bb8d-290">**組織のカスタマイズを有効にする**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-290">**Enable-OrganizationCustomization**</span></span>
     
-- <span data-ttu-id="ad049-291">**Get OutboundConnector**</span><span class="sxs-lookup"><span data-stu-id="ad049-291">**Get-OutboundConnector**</span></span>
+- <span data-ttu-id="9bb8d-291">**取得-OutboundConnector**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-291">**Get-OutboundConnector**</span></span>
     
-- <span data-ttu-id="ad049-292">**新しい-OutboundConnector**</span><span class="sxs-lookup"><span data-stu-id="ad049-292">**New-OutboundConnector**</span></span>
+- <span data-ttu-id="9bb8d-292">**新しい-OutboundConnector**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-292">**New-OutboundConnector**</span></span>
     
-- <span data-ttu-id="ad049-293">**削除 OutboundConnector**</span><span class="sxs-lookup"><span data-stu-id="ad049-293">**Remove-OutboundConnector**</span></span>
+- <span data-ttu-id="9bb8d-293">**-OutboundConnector の削除**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-293">**Remove-OutboundConnector**</span></span>
     
-- <span data-ttu-id="ad049-294">**セット OutboundConnector**</span><span class="sxs-lookup"><span data-stu-id="ad049-294">**Set-OutboundConnector**</span></span>
+- <span data-ttu-id="9bb8d-294">**設定-OutboundConnector**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-294">**Set-OutboundConnector**</span></span>
     
-- <span data-ttu-id="ad049-295">**Get PartnerApplication**</span><span class="sxs-lookup"><span data-stu-id="ad049-295">**Get-PartnerApplication**</span></span>
+- <span data-ttu-id="9bb8d-295">**PartnerApplication の取得**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-295">**Get-PartnerApplication**</span></span>
     
-- <span data-ttu-id="ad049-296">**新しい-PartnerApplication**</span><span class="sxs-lookup"><span data-stu-id="ad049-296">**New-PartnerApplication**</span></span>
+- <span data-ttu-id="9bb8d-296">**新しいパートナーアプリケーション**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-296">**New-PartnerApplication**</span></span>
     
-- <span data-ttu-id="ad049-297">**削除 PartnerApplication**</span><span class="sxs-lookup"><span data-stu-id="ad049-297">**Remove-PartnerApplication**</span></span>
+- <span data-ttu-id="9bb8d-297">**削除-パートナーアプリケーション**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-297">**Remove-PartnerApplication**</span></span>
     
-- <span data-ttu-id="ad049-298">**セット PartnerApplication**</span><span class="sxs-lookup"><span data-stu-id="ad049-298">**Set-PartnerApplication**</span></span>
+- <span data-ttu-id="9bb8d-298">**セットパートナーアプリケーション**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-298">**Set-PartnerApplication**</span></span>
     
-- <span data-ttu-id="ad049-299">**Get PendingFederatedDomain**</span><span class="sxs-lookup"><span data-stu-id="ad049-299">**Get-PendingFederatedDomain**</span></span>
+- <span data-ttu-id="9bb8d-299">**Get-pendingfederateddomain**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-299">**Get-PendingFederatedDomain**</span></span>
     
-- <span data-ttu-id="ad049-300">**セット PendingFederatedDomain**</span><span class="sxs-lookup"><span data-stu-id="ad049-300">**Set-PendingFederatedDomain**</span></span>
+- <span data-ttu-id="9bb8d-300">**Get-pendingfederateddomain**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-300">**Set-PendingFederatedDomain**</span></span>
     
-- <span data-ttu-id="ad049-301">**Get PolicyTipConfig**</span><span class="sxs-lookup"><span data-stu-id="ad049-301">**Get-PolicyTipConfig**</span></span>
+- <span data-ttu-id="9bb8d-301">**取得-ポリシーヒント Config**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-301">**Get-PolicyTipConfig**</span></span>
     
-- <span data-ttu-id="ad049-302">**新しい-PolicyTipConfig**</span><span class="sxs-lookup"><span data-stu-id="ad049-302">**New-PolicyTipConfig**</span></span>
+- <span data-ttu-id="9bb8d-302">**新しいポリシーヒントの構成**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-302">**New-PolicyTipConfig**</span></span>
     
-- <span data-ttu-id="ad049-303">**削除 PolicyTipConfig**</span><span class="sxs-lookup"><span data-stu-id="ad049-303">**Remove-PolicyTipConfig**</span></span>
+- <span data-ttu-id="9bb8d-303">**削除-ポリシーヒント Config**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-303">**Remove-PolicyTipConfig**</span></span>
     
-- <span data-ttu-id="ad049-304">**セット PolicyTipConfig**</span><span class="sxs-lookup"><span data-stu-id="ad049-304">**Set-PolicyTipConfig**</span></span>
+- <span data-ttu-id="9bb8d-304">**設定-ポリシーヒント Config**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-304">**Set-PolicyTipConfig**</span></span>
     
-- <span data-ttu-id="ad049-305">**ダンプ ProvisioningCache**</span><span class="sxs-lookup"><span data-stu-id="ad049-305">**Dump-ProvisioningCache**</span></span>
+- <span data-ttu-id="9bb8d-305">**ダンプ-プロビジョニングキャッシュ**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-305">**Dump-ProvisioningCache**</span></span>
     
-- <span data-ttu-id="ad049-306">**リセット ProvisioningCache**</span><span class="sxs-lookup"><span data-stu-id="ad049-306">**Reset-ProvisioningCache**</span></span>
+- <span data-ttu-id="9bb8d-306">**リセット-プロビジョニングキャッシュ**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-306">**Reset-ProvisioningCache**</span></span>
     
-- <span data-ttu-id="ad049-307">**更新 PublicFolderMailbox**</span><span class="sxs-lookup"><span data-stu-id="ad049-307">**Update-PublicFolderMailbox**</span></span>
+- <span data-ttu-id="9bb8d-307">**Update-PublicFolderMailbox**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-307">**Update-PublicFolderMailbox**</span></span>
     
-- <span data-ttu-id="ad049-308">**Get PublicFolderMailboxDiagnostics**</span><span class="sxs-lookup"><span data-stu-id="ad049-308">**Get-PublicFolderMailboxDiagnostics**</span></span>
+- <span data-ttu-id="9bb8d-308">**PublicFolderMailboxDiagnostics**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-308">**Get-PublicFolderMailboxDiagnostics**</span></span>
     
-- <span data-ttu-id="ad049-309">**Get PublicFolderMigrationRequest**</span><span class="sxs-lookup"><span data-stu-id="ad049-309">**Get-PublicFolderMigrationRequest**</span></span>
+- <span data-ttu-id="9bb8d-309">**Set-publicfoldermigrationrequest**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-309">**Get-PublicFolderMigrationRequest**</span></span>
     
-- <span data-ttu-id="ad049-310">**新しい-PublicFolderMigrationRequest**</span><span class="sxs-lookup"><span data-stu-id="ad049-310">**New-PublicFolderMigrationRequest**</span></span>
+- <span data-ttu-id="9bb8d-310">**Set-publicfoldermigrationrequest**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-310">**New-PublicFolderMigrationRequest**</span></span>
     
-- <span data-ttu-id="ad049-311">**削除 PublicFolderMigrationRequest**</span><span class="sxs-lookup"><span data-stu-id="ad049-311">**Remove-PublicFolderMigrationRequest**</span></span>
+- <span data-ttu-id="9bb8d-311">**Set-publicfoldermigrationrequest**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-311">**Remove-PublicFolderMigrationRequest**</span></span>
     
-- <span data-ttu-id="ad049-312">**再開 PublicFolderMigrationRequest**</span><span class="sxs-lookup"><span data-stu-id="ad049-312">**Resume-PublicFolderMigrationRequest**</span></span>
+- <span data-ttu-id="9bb8d-312">**Set-publicfoldermigrationrequest**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-312">**Resume-PublicFolderMigrationRequest**</span></span>
     
-- <span data-ttu-id="ad049-313">**セット PublicFolderMigrationRequest**</span><span class="sxs-lookup"><span data-stu-id="ad049-313">**Set-PublicFolderMigrationRequest**</span></span>
+- <span data-ttu-id="9bb8d-313">**Set-publicfoldermigrationrequest**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-313">**Set-PublicFolderMigrationRequest**</span></span>
     
-- <span data-ttu-id="ad049-314">**中断 PublicFolderMigrationRequest**</span><span class="sxs-lookup"><span data-stu-id="ad049-314">**Suspend-PublicFolderMigrationRequest**</span></span>
+- <span data-ttu-id="9bb8d-314">**Set-publicfoldermigrationrequest**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-314">**Suspend-PublicFolderMigrationRequest**</span></span>
     
-- <span data-ttu-id="ad049-315">**Get PublicFolderMigrationRequestStatistics**</span><span class="sxs-lookup"><span data-stu-id="ad049-315">**Get-PublicFolderMigrationRequestStatistics**</span></span>
+- <span data-ttu-id="9bb8d-315">**PublicFolderMigrationRequestStatistics**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-315">**Get-PublicFolderMigrationRequestStatistics**</span></span>
     
-- <span data-ttu-id="ad049-316">**Get QuarantineMessage**</span><span class="sxs-lookup"><span data-stu-id="ad049-316">**Get-QuarantineMessage**</span></span>
+- <span data-ttu-id="9bb8d-316">**Get-quarantinemessage**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-316">**Get-QuarantineMessage**</span></span>
     
-- <span data-ttu-id="ad049-317">**リリース QuarantineMessage**</span><span class="sxs-lookup"><span data-stu-id="ad049-317">**Release-QuarantineMessage**</span></span>
+- <span data-ttu-id="9bb8d-317">**Get-quarantinemessage**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-317">**Release-QuarantineMessage**</span></span>
     
-- <span data-ttu-id="ad049-318">**Get QueueDigest**</span><span class="sxs-lookup"><span data-stu-id="ad049-318">**Get-QueueDigest**</span></span>
+- <span data-ttu-id="9bb8d-318">**Get-queuedigest**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-318">**Get-QueueDigest**</span></span>
     
-- <span data-ttu-id="ad049-319">**Get ResourcePolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-319">**Get-ResourcePolicy**</span></span>
+- <span data-ttu-id="9bb8d-319">**取得-ResourcePolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-319">**Get-ResourcePolicy**</span></span>
     
-- <span data-ttu-id="ad049-320">**新しい-ResourcePolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-320">**New-ResourcePolicy**</span></span>
+- <span data-ttu-id="9bb8d-320">**新しい-ResourcePolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-320">**New-ResourcePolicy**</span></span>
     
-- <span data-ttu-id="ad049-321">**削除 ResourcePolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-321">**Remove-ResourcePolicy**</span></span>
+- <span data-ttu-id="9bb8d-321">**削除-ResourcePolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-321">**Remove-ResourcePolicy**</span></span>
     
-- <span data-ttu-id="ad049-322">**セット ResourcePolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-322">**Set-ResourcePolicy**</span></span>
+- <span data-ttu-id="9bb8d-322">**設定-ResourcePolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-322">**Set-ResourcePolicy**</span></span>
     
-- <span data-ttu-id="ad049-323">**追加 ResubmitRequest**</span><span class="sxs-lookup"><span data-stu-id="ad049-323">**Add-ResubmitRequest**</span></span>
+- <span data-ttu-id="9bb8d-323">**追加-ResubmitRequest**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-323">**Add-ResubmitRequest**</span></span>
     
-- <span data-ttu-id="ad049-324">**Get ResubmitRequest**</span><span class="sxs-lookup"><span data-stu-id="ad049-324">**Get-ResubmitRequest**</span></span>
+- <span data-ttu-id="9bb8d-324">**Get-ResubmitRequest**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-324">**Get-ResubmitRequest**</span></span>
     
-- <span data-ttu-id="ad049-325">**削除 ResubmitRequest**</span><span class="sxs-lookup"><span data-stu-id="ad049-325">**Remove-ResubmitRequest**</span></span>
+- <span data-ttu-id="9bb8d-325">**削除-ResubmitRequest**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-325">**Remove-ResubmitRequest**</span></span>
     
-- <span data-ttu-id="ad049-326">**セット ResubmitRequest**</span><span class="sxs-lookup"><span data-stu-id="ad049-326">**Set-ResubmitRequest**</span></span>
+- <span data-ttu-id="9bb8d-326">**設定-ResubmitRequest**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-326">**Set-ResubmitRequest**</span></span>
     
-- <span data-ttu-id="ad049-327">**Get ServerComponentState**</span><span class="sxs-lookup"><span data-stu-id="ad049-327">**Get-ServerComponentState**</span></span>
+- <span data-ttu-id="9bb8d-327">**取得-ServerComponentState**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-327">**Get-ServerComponentState**</span></span>
     
-- <span data-ttu-id="ad049-328">**セット ServerComponentState**</span><span class="sxs-lookup"><span data-stu-id="ad049-328">**Set-ServerComponentState**</span></span>
+- <span data-ttu-id="9bb8d-328">**Set-ServerComponentState**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-328">**Set-ServerComponentState**</span></span>
     
-- <span data-ttu-id="ad049-329">**Get ServerHealth**</span><span class="sxs-lookup"><span data-stu-id="ad049-329">**Get-ServerHealth**</span></span>
+- <span data-ttu-id="9bb8d-329">**取得-ServerHealth**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-329">**Get-ServerHealth**</span></span>
     
-- <span data-ttu-id="ad049-330">**セット ServerMonitor**</span><span class="sxs-lookup"><span data-stu-id="ad049-330">**Set-ServerMonitor**</span></span>
+- <span data-ttu-id="9bb8d-330">**Set-ServerMonitor**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-330">**Set-ServerMonitor**</span></span>
     
-- <span data-ttu-id="ad049-331">**追加 ServerMonitoringOverride**</span><span class="sxs-lookup"><span data-stu-id="ad049-331">**Add-ServerMonitoringOverride**</span></span>
+- <span data-ttu-id="9bb8d-331">**追加-ServerMonitoringOverride**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-331">**Add-ServerMonitoringOverride**</span></span>
     
-- <span data-ttu-id="ad049-332">**Get ServerMonitoringOverride**</span><span class="sxs-lookup"><span data-stu-id="ad049-332">**Get-ServerMonitoringOverride**</span></span>
+- <span data-ttu-id="9bb8d-332">**取得-ServerMonitoringOverride**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-332">**Get-ServerMonitoringOverride**</span></span>
     
-- <span data-ttu-id="ad049-333">**Get SiteMailbox**</span><span class="sxs-lookup"><span data-stu-id="ad049-333">**Get-SiteMailbox**</span></span>
+- <span data-ttu-id="9bb8d-333">**SiteMailbox**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-333">**Get-SiteMailbox**</span></span>
     
-- <span data-ttu-id="ad049-334">**新しい-SiteMailbox**</span><span class="sxs-lookup"><span data-stu-id="ad049-334">**New-SiteMailbox**</span></span>
+- <span data-ttu-id="9bb8d-334">**SiteMailbox**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-334">**New-SiteMailbox**</span></span>
     
-- <span data-ttu-id="ad049-335">**セット SiteMailbox**</span><span class="sxs-lookup"><span data-stu-id="ad049-335">**Set-SiteMailbox**</span></span>
+- <span data-ttu-id="9bb8d-335">**SiteMailbox**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-335">**Set-SiteMailbox**</span></span>
     
-- <span data-ttu-id="ad049-336">**テスト SiteMailbox**</span><span class="sxs-lookup"><span data-stu-id="ad049-336">**Test-SiteMailbox**</span></span>
+- <span data-ttu-id="9bb8d-336">**SiteMailbox**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-336">**Test-SiteMailbox**</span></span>
     
-- <span data-ttu-id="ad049-337">**更新 SiteMailbox**</span><span class="sxs-lookup"><span data-stu-id="ad049-337">**Update-SiteMailbox**</span></span>
+- <span data-ttu-id="9bb8d-337">**SiteMailbox**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-337">**Update-SiteMailbox**</span></span>
     
-- <span data-ttu-id="ad049-338">**Get SiteMailboxDiagnostics**</span><span class="sxs-lookup"><span data-stu-id="ad049-338">**Get-SiteMailboxDiagnostics**</span></span>
+- <span data-ttu-id="9bb8d-338">**Get-SiteMailboxDiagnostics**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-338">**Get-SiteMailboxDiagnostics**</span></span>
     
-- <span data-ttu-id="ad049-339">**Get SiteMailboxProvisioningPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-339">**Get-SiteMailboxProvisioningPolicy**</span></span>
+- <span data-ttu-id="9bb8d-339">**Get-Sitemailboxプロビジョニングポリシー**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-339">**Get-SiteMailboxProvisioningPolicy**</span></span>
     
-- <span data-ttu-id="ad049-340">**新しい-SiteMailboxProvisioningPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-340">**New-SiteMailboxProvisioningPolicy**</span></span>
+- <span data-ttu-id="9bb8d-340">**新しい-Sitemailboxプロビジョニングポリシー**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-340">**New-SiteMailboxProvisioningPolicy**</span></span>
     
-- <span data-ttu-id="ad049-341">**削除 SiteMailboxProvisioningPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-341">**Remove-SiteMailboxProvisioningPolicy**</span></span>
+- <span data-ttu-id="9bb8d-341">**削除-Sitemailboxプロビジョニングポリシー**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-341">**Remove-SiteMailboxProvisioningPolicy**</span></span>
     
-- <span data-ttu-id="ad049-342">**セット SiteMailboxProvisioningPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-342">**Set-SiteMailboxProvisioningPolicy**</span></span>
+- <span data-ttu-id="9bb8d-342">**設定-Sitemailboxプロビジョニングポリシー**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-342">**Set-SiteMailboxProvisioningPolicy**</span></span>
     
-- <span data-ttu-id="ad049-343">**[元に戻す-SoftDeletedMailbox**</span><span class="sxs-lookup"><span data-stu-id="ad049-343">**Undo-SoftDeletedMailbox**</span></span>
+- <span data-ttu-id="9bb8d-343">**元に戻す-SoftDeletedMailbox**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-343">**Undo-SoftDeletedMailbox**</span></span>
     
-- <span data-ttu-id="ad049-344">**Get StaleMailboxDetailReport**</span><span class="sxs-lookup"><span data-stu-id="ad049-344">**Get-StaleMailboxDetailReport**</span></span>
+- <span data-ttu-id="9bb8d-344">**Get-stalemailboxdetailreport**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-344">**Get-StaleMailboxDetailReport**</span></span>
     
-- <span data-ttu-id="ad049-345">**Get StaleMailboxReport**</span><span class="sxs-lookup"><span data-stu-id="ad049-345">**Get-StaleMailboxReport**</span></span>
+- <span data-ttu-id="9bb8d-345">**Get-stalemailboxreport**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-345">**Get-StaleMailboxReport**</span></span>
     
-- <span data-ttu-id="ad049-346">**更新 StoreMailboxState**</span><span class="sxs-lookup"><span data-stu-id="ad049-346">**Update-StoreMailboxState**</span></span>
+- <span data-ttu-id="9bb8d-346">**更新-StoreMailboxState**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-346">**Update-StoreMailboxState**</span></span>
     
-- <span data-ttu-id="ad049-347">**新しい-SyncMailPublicFolder**</span><span class="sxs-lookup"><span data-stu-id="ad049-347">**New-SyncMailPublicFolder**</span></span>
+- <span data-ttu-id="9bb8d-347">**SyncMailPublicFolder**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-347">**New-SyncMailPublicFolder**</span></span>
     
-- <span data-ttu-id="ad049-348">**Get TransportService**</span><span class="sxs-lookup"><span data-stu-id="ad049-348">**Get-TransportService**</span></span>
+- <span data-ttu-id="9bb8d-348">**取得-TransportService**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-348">**Get-TransportService**</span></span>
     
-- <span data-ttu-id="ad049-349">**セット TransportService**</span><span class="sxs-lookup"><span data-stu-id="ad049-349">**Set-TransportService**</span></span>
+- <span data-ttu-id="9bb8d-349">**Set-TransportService**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-349">**Set-TransportService**</span></span>
     
-- <span data-ttu-id="ad049-350">**無効にする UMCallAnsweringRule**</span><span class="sxs-lookup"><span data-stu-id="ad049-350">**Disable-UMCallAnsweringRule**</span></span>
+- <span data-ttu-id="9bb8d-350">**Enable-umcallansweringrule**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-350">**Disable-UMCallAnsweringRule**</span></span>
     
-- <span data-ttu-id="ad049-351">**有効にする UMCallAnsweringRule**</span><span class="sxs-lookup"><span data-stu-id="ad049-351">**Enable-UMCallAnsweringRule**</span></span>
+- <span data-ttu-id="9bb8d-351">**Enable-umcallansweringrule**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-351">**Enable-UMCallAnsweringRule**</span></span>
     
-- <span data-ttu-id="ad049-352">**Get UMCallAnsweringRule**</span><span class="sxs-lookup"><span data-stu-id="ad049-352">**Get-UMCallAnsweringRule**</span></span>
+- <span data-ttu-id="9bb8d-352">**Enable-umcallansweringrule**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-352">**Get-UMCallAnsweringRule**</span></span>
     
-- <span data-ttu-id="ad049-353">**新しい-UMCallAnsweringRule**</span><span class="sxs-lookup"><span data-stu-id="ad049-353">**New-UMCallAnsweringRule**</span></span>
+- <span data-ttu-id="9bb8d-353">**Enable-umcallansweringrule**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-353">**New-UMCallAnsweringRule**</span></span>
     
-- <span data-ttu-id="ad049-354">**削除 UMCallAnsweringRule**</span><span class="sxs-lookup"><span data-stu-id="ad049-354">**Remove-UMCallAnsweringRule**</span></span>
+- <span data-ttu-id="9bb8d-354">**Enable-umcallansweringrule**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-354">**Remove-UMCallAnsweringRule**</span></span>
     
-- <span data-ttu-id="ad049-355">**セット UMCallAnsweringRule**</span><span class="sxs-lookup"><span data-stu-id="ad049-355">**Set-UMCallAnsweringRule**</span></span>
+- <span data-ttu-id="9bb8d-355">**Enable-umcallansweringrule**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-355">**Set-UMCallAnsweringRule**</span></span>
     
-- <span data-ttu-id="ad049-356">**Get UMCallRouterSettings**</span><span class="sxs-lookup"><span data-stu-id="ad049-356">**Get-UMCallRouterSettings**</span></span>
+- <span data-ttu-id="9bb8d-356">**Get-UMCallRouterSettings**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-356">**Get-UMCallRouterSettings**</span></span>
     
-- <span data-ttu-id="ad049-357">**セット UMCallRouterSettings**</span><span class="sxs-lookup"><span data-stu-id="ad049-357">**Set-UMCallRouterSettings**</span></span>
+- <span data-ttu-id="9bb8d-357">**Set-UMCallRouterSettings**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-357">**Set-UMCallRouterSettings**</span></span>
     
-- <span data-ttu-id="ad049-358">**無効にする UMService**</span><span class="sxs-lookup"><span data-stu-id="ad049-358">**Disable-UMService**</span></span>
+- <span data-ttu-id="9bb8d-358">**Disable-UMService**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-358">**Disable-UMService**</span></span>
     
-- <span data-ttu-id="ad049-359">**有効にする UMService**</span><span class="sxs-lookup"><span data-stu-id="ad049-359">**Enable-UMService**</span></span>
+- <span data-ttu-id="9bb8d-359">**Enable-UMService**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-359">**Enable-UMService**</span></span>
     
-- <span data-ttu-id="ad049-360">**Get UMService**</span><span class="sxs-lookup"><span data-stu-id="ad049-360">**Get-UMService**</span></span>
+- <span data-ttu-id="9bb8d-360">**Get-UMService**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-360">**Get-UMService**</span></span>
     
-- <span data-ttu-id="ad049-361">**セット UMService**</span><span class="sxs-lookup"><span data-stu-id="ad049-361">**Set-UMService**</span></span>
+- <span data-ttu-id="9bb8d-361">**Set-UMService**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-361">**Set-UMService**</span></span>
     
-- <span data-ttu-id="ad049-362">**Get UserPhoto**</span><span class="sxs-lookup"><span data-stu-id="ad049-362">**Get-UserPhoto**</span></span>
+- <span data-ttu-id="9bb8d-362">**Get-UserPhoto**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-362">**Get-UserPhoto**</span></span>
     
-- <span data-ttu-id="ad049-363">**削除 UserPhoto**</span><span class="sxs-lookup"><span data-stu-id="ad049-363">**Remove-UserPhoto**</span></span>
+- <span data-ttu-id="9bb8d-363">**Remove-UserPhoto**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-363">**Remove-UserPhoto**</span></span>
     
-- <span data-ttu-id="ad049-364">**セット UserPhoto**</span><span class="sxs-lookup"><span data-stu-id="ad049-364">**Set-UserPhoto**</span></span>
+- <span data-ttu-id="9bb8d-364">**Set-UserPhoto**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-364">**Set-UserPhoto**</span></span>
     
-- <span data-ttu-id="ad049-365">**Get WorkloadManagementPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-365">**Get-WorkloadManagementPolicy**</span></span>
+- <span data-ttu-id="9bb8d-365">**WorkloadManagementPolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-365">**Get-WorkloadManagementPolicy**</span></span>
     
-- <span data-ttu-id="ad049-366">**新しい-WorkloadManagementPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-366">**New-WorkloadManagementPolicy**</span></span>
+- <span data-ttu-id="9bb8d-366">**WorkloadManagementPolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-366">**New-WorkloadManagementPolicy**</span></span>
     
-- <span data-ttu-id="ad049-367">**削除 WorkloadManagementPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-367">**Remove-WorkloadManagementPolicy**</span></span>
+- <span data-ttu-id="9bb8d-367">**WorkloadManagementPolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-367">**Remove-WorkloadManagementPolicy**</span></span>
     
-- <span data-ttu-id="ad049-368">**Get WorkloadPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-368">**Get-WorkloadPolicy**</span></span>
+- <span data-ttu-id="9bb8d-368">**Get-workloadpolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-368">**Get-WorkloadPolicy**</span></span>
     
-- <span data-ttu-id="ad049-369">**新しい-WorkloadPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-369">**New-WorkloadPolicy**</span></span>
+- <span data-ttu-id="9bb8d-369">**Get-workloadpolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-369">**New-WorkloadPolicy**</span></span>
     
-- <span data-ttu-id="ad049-370">**削除 WorkloadPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-370">**Remove-WorkloadPolicy**</span></span>
+- <span data-ttu-id="9bb8d-370">**Get-workloadpolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-370">**Remove-WorkloadPolicy**</span></span>
     
-- <span data-ttu-id="ad049-371">**セット WorkloadPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-371">**Set-WorkloadPolicy**</span></span>
+- <span data-ttu-id="9bb8d-371">**Get-workloadpolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-371">**Set-WorkloadPolicy**</span></span>
     
-### <a name="modified-cmdlets"></a><span data-ttu-id="ad049-372">変更されたコマンドレット</span><span class="sxs-lookup"><span data-stu-id="ad049-372">Modified cmdlets</span></span>
-<span data-ttu-id="ad049-373"><a name="bk_update"> </a></span><span class="sxs-lookup"><span data-stu-id="ad049-373"></span></span>
+### <a name="modified-cmdlets"></a><span data-ttu-id="9bb8d-372">変更されたコマンドレット</span><span class="sxs-lookup"><span data-stu-id="9bb8d-372">Modified cmdlets</span></span>
+<span data-ttu-id="9bb8d-373"><a name="bk_update"> </a></span><span class="sxs-lookup"><span data-stu-id="9bb8d-373"><a name="bk_update"> </a></span></span>
 
-<span data-ttu-id="ad049-374">Exchange 2013 では、次のコマンドレットの入力または出力の種類が変更されました。</span><span class="sxs-lookup"><span data-stu-id="ad049-374">The input or output types for following cmdlets were modified in Exchange 2013:</span></span>
+<span data-ttu-id="9bb8d-374">Exchange 2013 では、次のコマンドレットの入力または出力の種類が変更されました。</span><span class="sxs-lookup"><span data-stu-id="9bb8d-374">The input or output types for following cmdlets were modified in Exchange 2013:</span></span>
   
-- <span data-ttu-id="ad049-375">**クリア ActiveSyncDevice**</span><span class="sxs-lookup"><span data-stu-id="ad049-375">**Clear-ActiveSyncDevice**</span></span>
+- <span data-ttu-id="9bb8d-375">**Clear-activesyncdevice**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-375">**Clear-ActiveSyncDevice**</span></span>
     
-- <span data-ttu-id="ad049-376">**削除 ActiveSyncDevice**</span><span class="sxs-lookup"><span data-stu-id="ad049-376">**Remove-ActiveSyncDevice**</span></span>
+- <span data-ttu-id="9bb8d-376">**Clear-activesyncdevice**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-376">**Remove-ActiveSyncDevice**</span></span>
     
-- <span data-ttu-id="ad049-377">**Get ActiveSyncMailboxPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-377">**Get-ActiveSyncMailboxPolicy**</span></span>
+- <span data-ttu-id="9bb8d-377">**New-activesyncmailboxpolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-377">**Get-ActiveSyncMailboxPolicy**</span></span>
     
-- <span data-ttu-id="ad049-378">**新しい-ActiveSyncMailboxPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-378">**New-ActiveSyncMailboxPolicy**</span></span>
+- <span data-ttu-id="9bb8d-378">**New-activesyncmailboxpolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-378">**New-ActiveSyncMailboxPolicy**</span></span>
     
-- <span data-ttu-id="ad049-379">**新しい-ActiveSyncVirtualDirectory**</span><span class="sxs-lookup"><span data-stu-id="ad049-379">**New-ActiveSyncVirtualDirectory**</span></span>
+- <span data-ttu-id="9bb8d-379">**Set-activesyncvirtualdirectory**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-379">**New-ActiveSyncVirtualDirectory**</span></span>
     
-- <span data-ttu-id="ad049-380">**新しい-AutodiscoverVirtualDirectory**</span><span class="sxs-lookup"><span data-stu-id="ad049-380">**New-AutodiscoverVirtualDirectory**</span></span>
+- <span data-ttu-id="9bb8d-380">**New-autodiscovervirtualdirectory**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-380">**New-AutodiscoverVirtualDirectory**</span></span>
     
-- <span data-ttu-id="ad049-381">**セット AvailabilityConfig**</span><span class="sxs-lookup"><span data-stu-id="ad049-381">**Set-AvailabilityConfig**</span></span>
+- <span data-ttu-id="9bb8d-381">**Get-availabilityconfig**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-381">**Set-AvailabilityConfig**</span></span>
     
-- <span data-ttu-id="ad049-382">**有効にする ExchangeCertificate**</span><span class="sxs-lookup"><span data-stu-id="ad049-382">**Enable-ExchangeCertificate**</span></span>
+- <span data-ttu-id="9bb8d-382">**Get-exchangecertificate**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-382">**Enable-ExchangeCertificate**</span></span>
     
-- <span data-ttu-id="ad049-383">**エクスポート ExchangeCertificate**</span><span class="sxs-lookup"><span data-stu-id="ad049-383">**Export-ExchangeCertificate**</span></span>
+- <span data-ttu-id="9bb8d-383">**Get-exchangecertificate**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-383">**Export-ExchangeCertificate**</span></span>
     
-- <span data-ttu-id="ad049-384">**します**</span><span class="sxs-lookup"><span data-stu-id="ad049-384">**Import-ExchangeCertificate**</span></span>
+- <span data-ttu-id="9bb8d-384">**Get-exchangecertificate**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-384">**Import-ExchangeCertificate**</span></span>
     
-- <span data-ttu-id="ad049-385">**削除 ExchangeCertificate**</span><span class="sxs-lookup"><span data-stu-id="ad049-385">**Remove-ExchangeCertificate**</span></span>
+- <span data-ttu-id="9bb8d-385">**Get-exchangecertificate**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-385">**Remove-ExchangeCertificate**</span></span>
     
-- <span data-ttu-id="ad049-386">**Get FailedContentIndexDocuments**</span><span class="sxs-lookup"><span data-stu-id="ad049-386">**Get-FailedContentIndexDocuments**</span></span>
+- <span data-ttu-id="9bb8d-386">**取得-失敗 Contentindexdocuments**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-386">**Get-FailedContentIndexDocuments**</span></span>
     
-- <span data-ttu-id="ad049-387">**Get FederationInformation**</span><span class="sxs-lookup"><span data-stu-id="ad049-387">**Get-FederationInformation**</span></span>
+- <span data-ttu-id="9bb8d-387">**Get-federationinformation**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-387">**Get-FederationInformation**</span></span>
     
-- <span data-ttu-id="ad049-388">**新しい-HybridConfiguration**</span><span class="sxs-lookup"><span data-stu-id="ad049-388">**New-HybridConfiguration**</span></span>
+- <span data-ttu-id="9bb8d-388">**HybridConfiguration**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-388">**New-HybridConfiguration**</span></span>
     
-- <span data-ttu-id="ad049-389">**セット HybridConfiguration**</span><span class="sxs-lookup"><span data-stu-id="ad049-389">**Set-HybridConfiguration**</span></span>
+- <span data-ttu-id="9bb8d-389">**HybridConfiguration**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-389">**Set-HybridConfiguration**</span></span>
     
-- <span data-ttu-id="ad049-390">**新しいメールボックス**</span><span class="sxs-lookup"><span data-stu-id="ad049-390">**New-Mailbox**</span></span>
+- <span data-ttu-id="9bb8d-390">**New-Mailbox**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-390">**New-Mailbox**</span></span>
     
-- <span data-ttu-id="ad049-391">**再開 MailboxDatabaseCopy**</span><span class="sxs-lookup"><span data-stu-id="ad049-391">**Resume-MailboxDatabaseCopy**</span></span>
+- <span data-ttu-id="9bb8d-391">**Update-mailboxdatabasecopy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-391">**Resume-MailboxDatabaseCopy**</span></span>
     
-- <span data-ttu-id="ad049-392">**セット MailboxDatabaseCopy**</span><span class="sxs-lookup"><span data-stu-id="ad049-392">**Set-MailboxDatabaseCopy**</span></span>
+- <span data-ttu-id="9bb8d-392">**Update-mailboxdatabasecopy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-392">**Set-MailboxDatabaseCopy**</span></span>
     
-- <span data-ttu-id="ad049-393">**中断 MailboxDatabaseCopy**</span><span class="sxs-lookup"><span data-stu-id="ad049-393">**Suspend-MailboxDatabaseCopy**</span></span>
+- <span data-ttu-id="9bb8d-393">**Update-mailboxdatabasecopy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-393">**Suspend-MailboxDatabaseCopy**</span></span>
     
-- <span data-ttu-id="ad049-394">**更新 MailboxDatabaseCopy**</span><span class="sxs-lookup"><span data-stu-id="ad049-394">**Update-MailboxDatabaseCopy**</span></span>
+- <span data-ttu-id="9bb8d-394">**Update-MailboxDatabaseCopy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-394">**Update-MailboxDatabaseCopy**</span></span>
     
-- <span data-ttu-id="ad049-395">**Get MailboxExportRequest**</span><span class="sxs-lookup"><span data-stu-id="ad049-395">**Get-MailboxExportRequest**</span></span>
+- <span data-ttu-id="9bb8d-395">**New-mailboxexportrequest**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-395">**Get-MailboxExportRequest**</span></span>
     
-- <span data-ttu-id="ad049-396">**セット MailboxExportRequest**</span><span class="sxs-lookup"><span data-stu-id="ad049-396">**Set-MailboxExportRequest**</span></span>
+- <span data-ttu-id="9bb8d-396">**New-mailboxexportrequest**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-396">**Set-MailboxExportRequest**</span></span>
     
-- <span data-ttu-id="ad049-397">**追加 MailboxFolderPermission**</span><span class="sxs-lookup"><span data-stu-id="ad049-397">**Add-MailboxFolderPermission**</span></span>
+- <span data-ttu-id="9bb8d-397">**Add-mailboxfolderpermission**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-397">**Add-MailboxFolderPermission**</span></span>
     
-- <span data-ttu-id="ad049-398">**削除 MailboxFolderPermission**</span><span class="sxs-lookup"><span data-stu-id="ad049-398">**Remove-MailboxFolderPermission**</span></span>
+- <span data-ttu-id="9bb8d-398">**Add-mailboxfolderpermission**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-398">**Remove-MailboxFolderPermission**</span></span>
     
-- <span data-ttu-id="ad049-399">**セット MailboxFolderPermission**</span><span class="sxs-lookup"><span data-stu-id="ad049-399">**Set-MailboxFolderPermission**</span></span>
+- <span data-ttu-id="9bb8d-399">**Add-mailboxfolderpermission**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-399">**Set-MailboxFolderPermission**</span></span>
     
-- <span data-ttu-id="ad049-400">**Get MailboxImportRequest**</span><span class="sxs-lookup"><span data-stu-id="ad049-400">**Get-MailboxImportRequest**</span></span>
+- <span data-ttu-id="9bb8d-400">**New-mailboximportrequest**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-400">**Get-MailboxImportRequest**</span></span>
     
-- <span data-ttu-id="ad049-401">**セット MailboxImportRequest**</span><span class="sxs-lookup"><span data-stu-id="ad049-401">**Set-MailboxImportRequest**</span></span>
+- <span data-ttu-id="9bb8d-401">**New-mailboximportrequest**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-401">**Set-MailboxImportRequest**</span></span>
     
-- <span data-ttu-id="ad049-402">**Get MailboxRestoreRequest**</span><span class="sxs-lookup"><span data-stu-id="ad049-402">**Get-MailboxRestoreRequest**</span></span>
+- <span data-ttu-id="9bb8d-402">**Get-mailboxrestorerequest**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-402">**Get-MailboxRestoreRequest**</span></span>
     
-- <span data-ttu-id="ad049-403">**セット MailboxRestoreRequest**</span><span class="sxs-lookup"><span data-stu-id="ad049-403">**Set-MailboxRestoreRequest**</span></span>
+- <span data-ttu-id="9bb8d-403">**Get-mailboxrestorerequest**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-403">**Set-MailboxRestoreRequest**</span></span>
     
-- <span data-ttu-id="ad049-404">**Get MailboxSearch**</span><span class="sxs-lookup"><span data-stu-id="ad049-404">**Get-MailboxSearch**</span></span>
+- <span data-ttu-id="9bb8d-404">**Get-mailboxsearch**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-404">**Get-MailboxSearch**</span></span>
     
-- <span data-ttu-id="ad049-405">**削除 MailboxSearch**</span><span class="sxs-lookup"><span data-stu-id="ad049-405">**Remove-MailboxSearch**</span></span>
+- <span data-ttu-id="9bb8d-405">**Get-mailboxsearch**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-405">**Remove-MailboxSearch**</span></span>
     
-- <span data-ttu-id="ad049-406">**セット MailboxSearch**</span><span class="sxs-lookup"><span data-stu-id="ad049-406">**Set-MailboxSearch**</span></span>
+- <span data-ttu-id="9bb8d-406">**Set-MailboxSearch**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-406">**Set-MailboxSearch**</span></span>
     
-- <span data-ttu-id="ad049-407">**開始 MailboxSearch**</span><span class="sxs-lookup"><span data-stu-id="ad049-407">**Start-MailboxSearch**</span></span>
+- <span data-ttu-id="9bb8d-407">**Start-MailboxSearch**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-407">**Start-MailboxSearch**</span></span>
     
-- <span data-ttu-id="ad049-408">**Stop MailboxSearch**</span><span class="sxs-lookup"><span data-stu-id="ad049-408">**Stop-MailboxSearch**</span></span>
+- <span data-ttu-id="9bb8d-408">**Stop-MailboxSearch**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-408">**Stop-MailboxSearch**</span></span>
     
-- <span data-ttu-id="ad049-409">**無効にする MailPublicFolder**</span><span class="sxs-lookup"><span data-stu-id="ad049-409">**Disable-MailPublicFolder**</span></span>
+- <span data-ttu-id="9bb8d-409">**Set-mailpublicfolder**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-409">**Disable-MailPublicFolder**</span></span>
     
-- <span data-ttu-id="ad049-410">**Get MailPublicFolder**</span><span class="sxs-lookup"><span data-stu-id="ad049-410">**Get-MailPublicFolder**</span></span>
+- <span data-ttu-id="9bb8d-410">**Get-MailPublicFolder**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-410">**Get-MailPublicFolder**</span></span>
     
-- <span data-ttu-id="ad049-411">**セット MailPublicFolder**</span><span class="sxs-lookup"><span data-stu-id="ad049-411">**Set-MailPublicFolder**</span></span>
+- <span data-ttu-id="9bb8d-411">**Set-mailpublicfolder**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-411">**Set-MailPublicFolder**</span></span>
     
-- <span data-ttu-id="ad049-412">**Get MigrationBatch**</span><span class="sxs-lookup"><span data-stu-id="ad049-412">**Get-MigrationBatch**</span></span>
+- <span data-ttu-id="9bb8d-412">**New-migrationbatch**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-412">**Get-MigrationBatch**</span></span>
     
-- <span data-ttu-id="ad049-413">**新しい-MigrationBatch**</span><span class="sxs-lookup"><span data-stu-id="ad049-413">**New-MigrationBatch**</span></span>
+- <span data-ttu-id="9bb8d-413">**New-MigrationBatch**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-413">**New-MigrationBatch**</span></span>
     
-- <span data-ttu-id="ad049-414">**セット MigrationBatch**</span><span class="sxs-lookup"><span data-stu-id="ad049-414">**Set-MigrationBatch**</span></span>
+- <span data-ttu-id="9bb8d-414">**New-migrationbatch**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-414">**Set-MigrationBatch**</span></span>
     
-- <span data-ttu-id="ad049-415">**テスト MigrationServerAvailability**</span><span class="sxs-lookup"><span data-stu-id="ad049-415">**Test-MigrationServerAvailability**</span></span>
+- <span data-ttu-id="9bb8d-415">**Test-migrationserveravailability**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-415">**Test-MigrationServerAvailability**</span></span>
     
-- <span data-ttu-id="ad049-416">**Get MoveRequest**</span><span class="sxs-lookup"><span data-stu-id="ad049-416">**Get-MoveRequest**</span></span>
+- <span data-ttu-id="9bb8d-416">**New-moverequest**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-416">**Get-MoveRequest**</span></span>
     
-- <span data-ttu-id="ad049-417">**新しい-OfflineAddressBook**</span><span class="sxs-lookup"><span data-stu-id="ad049-417">**New-OfflineAddressBook**</span></span>
+- <span data-ttu-id="9bb8d-417">**Update-offlineaddressbook**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-417">**New-OfflineAddressBook**</span></span>
     
-- <span data-ttu-id="ad049-418">**Get OrganizationConfig**</span><span class="sxs-lookup"><span data-stu-id="ad049-418">**Get-OrganizationConfig**</span></span>
+- <span data-ttu-id="9bb8d-418">**Get-OrganizationConfig**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-418">**Get-OrganizationConfig**</span></span>
     
-- <span data-ttu-id="ad049-419">**セット OrganizationConfig**</span><span class="sxs-lookup"><span data-stu-id="ad049-419">**Set-OrganizationConfig**</span></span>
+- <span data-ttu-id="9bb8d-419">**Set-OrganizationConfig**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-419">**Set-OrganizationConfig**</span></span>
     
-- <span data-ttu-id="ad049-420">**テスト OutlookConnectivity**</span><span class="sxs-lookup"><span data-stu-id="ad049-420">**Test-OutlookConnectivity**</span></span>
+- <span data-ttu-id="9bb8d-420">**テスト-OutlookConnectivity**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-420">**Test-OutlookConnectivity**</span></span>
     
-- <span data-ttu-id="ad049-421">**テスト OutlookWebServices**</span><span class="sxs-lookup"><span data-stu-id="ad049-421">**Test-OutlookWebServices**</span></span>
+- <span data-ttu-id="9bb8d-421">**テスト-OutlookWebServices 方法**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-421">**Test-OutlookWebServices**</span></span>
     
-- <span data-ttu-id="ad049-422">**Get OwaMailboxPolicy**</span><span class="sxs-lookup"><span data-stu-id="ad049-422">**Get-OwaMailboxPolicy**</span></span>
+- <span data-ttu-id="9bb8d-422">**取得-Owam/Boxpolicy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-422">**Get-OwaMailboxPolicy**</span></span>
     
-- <span data-ttu-id="ad049-423">**OwaVirtualDirectory で新しい**</span><span class="sxs-lookup"><span data-stu-id="ad049-423">**New-OwaVirtualDirectory**</span></span>
+- <span data-ttu-id="9bb8d-423">**Set-owavirtualdirectory**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-423">**New-OwaVirtualDirectory**</span></span>
     
-- <span data-ttu-id="ad049-424">**新しい-PowerShellVirtualDirectory**</span><span class="sxs-lookup"><span data-stu-id="ad049-424">**New-PowerShellVirtualDirectory**</span></span>
+- <span data-ttu-id="9bb8d-424">**Get-powershellvirtualdirectory**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-424">**New-PowerShellVirtualDirectory**</span></span>
     
-- <span data-ttu-id="ad049-425">**パブリック フォルダーの取得**</span><span class="sxs-lookup"><span data-stu-id="ad049-425">**Get-PublicFolder**</span></span>
+- <span data-ttu-id="9bb8d-425">**New-publicfolder**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-425">**Get-PublicFolder**</span></span>
     
-- <span data-ttu-id="ad049-426">**新しいパブリック フォルダー**</span><span class="sxs-lookup"><span data-stu-id="ad049-426">**New-PublicFolder**</span></span>
+- <span data-ttu-id="9bb8d-426">**New-publicfolder**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-426">**New-PublicFolder**</span></span>
     
-- <span data-ttu-id="ad049-427">**パブリック フォルダーの設定**</span><span class="sxs-lookup"><span data-stu-id="ad049-427">**Set-PublicFolder**</span></span>
+- <span data-ttu-id="9bb8d-427">**New-publicfolder**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-427">**Set-PublicFolder**</span></span>
     
-- <span data-ttu-id="ad049-428">**追加 PublicFolderClientPermission**</span><span class="sxs-lookup"><span data-stu-id="ad049-428">**Add-PublicFolderClientPermission**</span></span>
+- <span data-ttu-id="9bb8d-428">**Add-PublicFolderClientPermission**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-428">**Add-PublicFolderClientPermission**</span></span>
     
-- <span data-ttu-id="ad049-429">**Get PublicFolderClientPermission**</span><span class="sxs-lookup"><span data-stu-id="ad049-429">**Get-PublicFolderClientPermission**</span></span>
+- <span data-ttu-id="9bb8d-429">**Get-PublicFolderClientPermission**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-429">**Get-PublicFolderClientPermission**</span></span>
     
-- <span data-ttu-id="ad049-430">**削除 PublicFolderClientPermission**</span><span class="sxs-lookup"><span data-stu-id="ad049-430">**Remove-PublicFolderClientPermission**</span></span>
+- <span data-ttu-id="9bb8d-430">**Remove-PublicFolderClientPermission**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-430">**Remove-PublicFolderClientPermission**</span></span>
     
-- <span data-ttu-id="ad049-431">**Get PublicFolderItemStatistics**</span><span class="sxs-lookup"><span data-stu-id="ad049-431">**Get-PublicFolderItemStatistics**</span></span>
+- <span data-ttu-id="9bb8d-431">**取得-PublicFolderItemStatistics**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-431">**Get-PublicFolderItemStatistics**</span></span>
     
-- <span data-ttu-id="ad049-432">**Get PublicFolderStatistics**</span><span class="sxs-lookup"><span data-stu-id="ad049-432">**Get-PublicFolderStatistics**</span></span>
+- <span data-ttu-id="9bb8d-432">**Get-PublicFolderStatistics**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-432">**Get-PublicFolderStatistics**</span></span>
     
-- <span data-ttu-id="ad049-433">**受信者の取得**</span><span class="sxs-lookup"><span data-stu-id="ad049-433">**Get-Recipient**</span></span>
+- <span data-ttu-id="9bb8d-433">**Get-Recipient**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-433">**Get-Recipient**</span></span>
     
-- <span data-ttu-id="ad049-434">**Resourceconfig とのセット**</span><span class="sxs-lookup"><span data-stu-id="ad049-434">**Set-ResourceConfig**</span></span>
+- <span data-ttu-id="9bb8d-434">**Set-ResourceConfig**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-434">**Set-ResourceConfig**</span></span>
     
-- <span data-ttu-id="ad049-435">**テスト WebServicesConnectivity**</span><span class="sxs-lookup"><span data-stu-id="ad049-435">**Test-WebServicesConnectivity**</span></span>
+- <span data-ttu-id="9bb8d-435">**テスト-Webサービス接続**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-435">**Test-WebServicesConnectivity**</span></span>
     
-- <span data-ttu-id="ad049-436">**新しい-WebServicesVirtualDirectory**</span><span class="sxs-lookup"><span data-stu-id="ad049-436">**New-WebServicesVirtualDirectory**</span></span>
+- <span data-ttu-id="9bb8d-436">**Set-webservicesvirtualdirectory**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-436">**New-WebServicesVirtualDirectory**</span></span>
     
-### <a name="removed-cmdlets"></a><span data-ttu-id="ad049-437">削除されたコマンドレット</span><span class="sxs-lookup"><span data-stu-id="ad049-437">Removed cmdlets</span></span>
-<span data-ttu-id="ad049-438"><a name="bk_removed"> </a></span><span class="sxs-lookup"><span data-stu-id="ad049-438"></span></span>
+### <a name="removed-cmdlets"></a><span data-ttu-id="9bb8d-437">削除されたコマンドレット</span><span class="sxs-lookup"><span data-stu-id="9bb8d-437">Removed cmdlets</span></span>
+<span data-ttu-id="9bb8d-438"><a name="bk_removed"> </a></span><span class="sxs-lookup"><span data-stu-id="9bb8d-438"><a name="bk_removed"> </a></span></span>
 
-<span data-ttu-id="ad049-439">次のコマンドレットは、Exchange 2013 から削除されました。</span><span class="sxs-lookup"><span data-stu-id="ad049-439">The following cmdlets were removed from Exchange 2013:</span></span>
+<span data-ttu-id="9bb8d-439">次のコマンドレットが Exchange 2013 から削除されました。</span><span class="sxs-lookup"><span data-stu-id="9bb8d-439">The following cmdlets were removed from Exchange 2013:</span></span>
   
-- <span data-ttu-id="ad049-440">**更新 FileDistributionService**</span><span class="sxs-lookup"><span data-stu-id="ad049-440">**Update-FileDistributionService**</span></span>
+- <span data-ttu-id="9bb8d-440">**FileDistributionService**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-440">**Update-FileDistributionService**</span></span>
     
-- <span data-ttu-id="ad049-441">**復元メールボックス**</span><span class="sxs-lookup"><span data-stu-id="ad049-441">**Restore-Mailbox**</span></span>
+- <span data-ttu-id="9bb8d-441">**復元-メールボックス**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-441">**Restore-Mailbox**</span></span>
     
-- <span data-ttu-id="ad049-442">**クリーニング MailboxDatabase**</span><span class="sxs-lookup"><span data-stu-id="ad049-442">**Clean-MailboxDatabase**</span></span>
+- <span data-ttu-id="9bb8d-442">**Set-mailboxdatabase**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-442">**Clean-MailboxDatabase**</span></span>
     
-- <span data-ttu-id="ad049-443">**移行が完了**</span><span class="sxs-lookup"><span data-stu-id="ad049-443">**Complete-Migration**</span></span>
+- <span data-ttu-id="9bb8d-443">**完全移行**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-443">**Complete-Migration**</span></span>
     
-- <span data-ttu-id="ad049-444">**Get MigrationStatus**</span><span class="sxs-lookup"><span data-stu-id="ad049-444">**Get-MigrationStatus**</span></span>
+- <span data-ttu-id="9bb8d-444">**MigrationStatus**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-444">**Get-MigrationStatus**</span></span>
     
-- <span data-ttu-id="ad049-445">**パブリック フォルダーの更新**</span><span class="sxs-lookup"><span data-stu-id="ad049-445">**Update-PublicFolder**</span></span>
+- <span data-ttu-id="9bb8d-445">**New-publicfolder**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-445">**Update-PublicFolder**</span></span>
     
-- <span data-ttu-id="ad049-446">**追加 PublicFolderAdministrativePermission**</span><span class="sxs-lookup"><span data-stu-id="ad049-446">**Add-PublicFolderAdministrativePermission**</span></span>
+- <span data-ttu-id="9bb8d-446">**Add-publicfolderadministrativepermission**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-446">**Add-PublicFolderAdministrativePermission**</span></span>
     
-- <span data-ttu-id="ad049-447">**Get PublicFolderAdministrativePermission**</span><span class="sxs-lookup"><span data-stu-id="ad049-447">**Get-PublicFolderAdministrativePermission**</span></span>
+- <span data-ttu-id="9bb8d-447">**Add-publicfolderadministrativepermission**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-447">**Get-PublicFolderAdministrativePermission**</span></span>
     
-- <span data-ttu-id="ad049-448">**削除 PublicFolderAdministrativePermission**</span><span class="sxs-lookup"><span data-stu-id="ad049-448">**Remove-PublicFolderAdministrativePermission**</span></span>
+- <span data-ttu-id="9bb8d-448">**Add-publicfolderadministrativepermission**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-448">**Remove-PublicFolderAdministrativePermission**</span></span>
     
-- <span data-ttu-id="ad049-449">**新しい-PublicFolderDatabase**</span><span class="sxs-lookup"><span data-stu-id="ad049-449">**New-PublicFolderDatabase**</span></span>
+- <span data-ttu-id="9bb8d-449">**新しい-PublicFolderDatabase**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-449">**New-PublicFolderDatabase**</span></span>
     
-- <span data-ttu-id="ad049-450">**削除 PublicFolderDatabase**</span><span class="sxs-lookup"><span data-stu-id="ad049-450">**Remove-PublicFolderDatabase**</span></span>
+- <span data-ttu-id="9bb8d-450">**削除-PublicFolderDatabase**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-450">**Remove-PublicFolderDatabase**</span></span>
     
-- <span data-ttu-id="ad049-451">**セット PublicFolderDatabase**</span><span class="sxs-lookup"><span data-stu-id="ad049-451">**Set-PublicFolderDatabase**</span></span>
+- <span data-ttu-id="9bb8d-451">**Set-PublicFolderDatabase**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-451">**Set-PublicFolderDatabase**</span></span>
     
-- <span data-ttu-id="ad049-452">**新しい-PublicFolderDatabaseRepairRequest**</span><span class="sxs-lookup"><span data-stu-id="ad049-452">**New-PublicFolderDatabaseRepairRequest**</span></span>
+- <span data-ttu-id="9bb8d-452">**PublicFolderDatabaseRepairRequest**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-452">**New-PublicFolderDatabaseRepairRequest**</span></span>
     
-- <span data-ttu-id="ad049-453">**更新 PublicFolderHierarchy**</span><span class="sxs-lookup"><span data-stu-id="ad049-453">**Update-PublicFolderHierarchy**</span></span>
+- <span data-ttu-id="9bb8d-453">**更新-PublicFolderHierarchy**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-453">**Update-PublicFolderHierarchy**</span></span>
     
-- <span data-ttu-id="ad049-454">**再開 PublicFolderReplication**</span><span class="sxs-lookup"><span data-stu-id="ad049-454">**Resume-PublicFolderReplication**</span></span>
+- <span data-ttu-id="9bb8d-454">**Resume-PublicFolderReplication**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-454">**Resume-PublicFolderReplication**</span></span>
     
-- <span data-ttu-id="ad049-455">**中断 PublicFolderReplication**</span><span class="sxs-lookup"><span data-stu-id="ad049-455">**Suspend-PublicFolderReplication**</span></span>
+- <span data-ttu-id="9bb8d-455">**Suspend-PublicFolderReplication**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-455">**Suspend-PublicFolderReplication**</span></span>
     
-- <span data-ttu-id="ad049-456">**開始 RetentionAutoTagLearning**</span><span class="sxs-lookup"><span data-stu-id="ad049-456">**Start-RetentionAutoTagLearning**</span></span>
+- <span data-ttu-id="9bb8d-456">**RetentionAutoTagLearning**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-456">**Start-RetentionAutoTagLearning**</span></span>
     
-- <span data-ttu-id="ad049-457">**テスト SystemHealth**</span><span class="sxs-lookup"><span data-stu-id="ad049-457">**Test-SystemHealth**</span></span>
+- <span data-ttu-id="9bb8d-457">**テスト-SystemHealth**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-457">**Test-SystemHealth**</span></span>
     
-- <span data-ttu-id="ad049-458">**無効にする UMServer**</span><span class="sxs-lookup"><span data-stu-id="ad049-458">**Disable-UMServer**</span></span>
+- <span data-ttu-id="9bb8d-458">**Disable-UMServer**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-458">**Disable-UMServer**</span></span>
     
-- <span data-ttu-id="ad049-459">**有効にする UMServer**</span><span class="sxs-lookup"><span data-stu-id="ad049-459">**Enable-UMServer**</span></span>
+- <span data-ttu-id="9bb8d-459">**Enable-UMServer**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-459">**Enable-UMServer**</span></span>
     
-- <span data-ttu-id="ad049-460">**Get UMServer**</span><span class="sxs-lookup"><span data-stu-id="ad049-460">**Get-UMServer**</span></span>
+- <span data-ttu-id="9bb8d-460">**取得-UMServer**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-460">**Get-UMServer**</span></span>
     
-- <span data-ttu-id="ad049-461">**セット UMServer**</span><span class="sxs-lookup"><span data-stu-id="ad049-461">**Set-UMServer**</span></span>
+- <span data-ttu-id="9bb8d-461">**Set-UMServer**</span><span class="sxs-lookup"><span data-stu-id="9bb8d-461">**Set-UMServer**</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="ad049-462">関連項目</span><span class="sxs-lookup"><span data-stu-id="ad049-462">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9bb8d-462">関連項目</span><span class="sxs-lookup"><span data-stu-id="9bb8d-462">See also</span></span>
 
-- [<span data-ttu-id="ad049-463">Exchange 管理シェル コマンドレットの入力と出力タイプ</span><span class="sxs-lookup"><span data-stu-id="ad049-463">Exchange Management Shell cmdlet input and output types</span></span>](exchange-management-shell-cmdlet-input-and-output-types.md)    
-- [<span data-ttu-id="ad049-464">Exchange 管理シェルを使用してメール ユーザーの一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="ad049-464">Get a list of mail users by using the Exchange Management Shell</span></span>](how-to-get-a-list-of-mail-users-by-using-the-exchange-management-shell.md)    
-- [<span data-ttu-id="ad049-465">Exchange 2013 コマンドレット</span><span class="sxs-lookup"><span data-stu-id="ad049-465">Exchange 2013 cmdlets</span></span>](http://technet.microsoft.com/ja-jp/library/bb124413%28v=exchg.150%29.aspx)
+- [<span data-ttu-id="9bb8d-463">Exchange 管理シェル コマンドレットの入力と出力の種類</span><span class="sxs-lookup"><span data-stu-id="9bb8d-463">Exchange Management Shell cmdlet input and output types</span></span>](exchange-management-shell-cmdlet-input-and-output-types.md)    
+- [<span data-ttu-id="9bb8d-464">Exchange 管理シェルを使用してメールユーザーの一覧を取得する</span><span class="sxs-lookup"><span data-stu-id="9bb8d-464">Get a list of mail users by using the Exchange Management Shell</span></span>](how-to-get-a-list-of-mail-users-by-using-the-exchange-management-shell.md)    
+- [<span data-ttu-id="9bb8d-465">Exchange 2013 cmdlets</span><span class="sxs-lookup"><span data-stu-id="9bb8d-465">Exchange 2013 cmdlets</span></span>](https://technet.microsoft.com/library/bb124413%28v=exchg.150%29.aspx)
     
 

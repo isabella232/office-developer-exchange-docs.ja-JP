@@ -1,5 +1,5 @@
 ---
-title: アラーム
+title: Reminder
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 54dd748a-23a5-4ea2-88f2-b74c68a3c48f
-description: アラームの要素は、タスク、または予定表アイテムのアラームを指定します。
-ms.openlocfilehash: cfa1160bd25f5045a3da5a98f081c9dcb3debe7b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: アラーム要素は、タスクまたは予定表アイテムの事前通知を指定します。
+ms.openlocfilehash: 71e54d920a169b8060d22bb7d7d294208c344c2e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833056"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457488"
 ---
-# <a name="reminder"></a><span data-ttu-id="d57bd-103">アラーム</span><span class="sxs-lookup"><span data-stu-id="d57bd-103">Reminder</span></span>
+# <a name="reminder"></a><span data-ttu-id="d9ef0-103">Reminder</span><span class="sxs-lookup"><span data-stu-id="d9ef0-103">Reminder</span></span>
 
-<span data-ttu-id="d57bd-104">**アラーム**の要素は、タスク、または予定表アイテムのアラームを指定します。</span><span class="sxs-lookup"><span data-stu-id="d57bd-104">The **Reminder** element specifies a reminder for a task or a calendar item.</span></span> 
+<span data-ttu-id="d9ef0-104">**アラーム**要素は、タスクまたは予定表アイテムの事前通知を指定します。</span><span class="sxs-lookup"><span data-stu-id="d9ef0-104">The **Reminder** element specifies a reminder for a task or a calendar item.</span></span> 
   
 ```XML
 <Reminder>
@@ -34,44 +34,44 @@ ms.locfileid: "19833056"
 
 ```
 
- <span data-ttu-id="d57bd-105">**ReminderType**</span><span class="sxs-lookup"><span data-stu-id="d57bd-105">**ReminderType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="d57bd-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="d57bd-106">Attributes and elements</span></span>
+ <span data-ttu-id="d9ef0-105">**ReminderType**</span><span class="sxs-lookup"><span data-stu-id="d9ef0-105">**ReminderType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="d9ef0-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="d9ef0-106">Attributes and elements</span></span>
 
-<span data-ttu-id="d57bd-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="d57bd-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="d9ef0-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="d9ef0-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="d57bd-108">属性</span><span class="sxs-lookup"><span data-stu-id="d57bd-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="d9ef0-108">属性</span><span class="sxs-lookup"><span data-stu-id="d9ef0-108">Attributes</span></span>
 
-<span data-ttu-id="d57bd-109">なし。</span><span class="sxs-lookup"><span data-stu-id="d57bd-109">None.</span></span>
+<span data-ttu-id="d9ef0-109">なし。</span><span class="sxs-lookup"><span data-stu-id="d9ef0-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="d57bd-110">子要素</span><span class="sxs-lookup"><span data-stu-id="d57bd-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="d9ef0-110">子要素</span><span class="sxs-lookup"><span data-stu-id="d9ef0-110">Child elements</span></span>
 
-<span data-ttu-id="d57bd-111">[件名](subject.md) | [の場所](location.md) | [ReminderTime](remindertime.md) | [開始日](startdate.md) | [終了日 (ReminderType)](enddate-remindertype.md) | [アイテム Id](itemid.md) | [RecurringMasterItemId (ItemIdType)](recurringmasteritemid-itemidtype.md)  |  [ReminderGroup](remindergroup.md) | [UID](uid.md)</span><span class="sxs-lookup"><span data-stu-id="d57bd-111">[Subject](subject.md) | [Location](location.md) | [ReminderTime](remindertime.md) | [StartDate](startdate.md) | [EndDate (ReminderType)](enddate-remindertype.md) | [ItemId](itemid.md) | [RecurringMasterItemId (ItemIdType)](recurringmasteritemid-itemidtype.md) | [ReminderGroup](remindergroup.md) | [UID](uid.md)</span></span>
+<span data-ttu-id="d9ef0-111">[件名](subject.md)  | [場所](location.md)  | [ReminderTime](remindertime.md)  | [StartDate](startdate.md)  | [EndDate (ReminderType)](enddate-remindertype.md)  | [ItemId](itemid.md)  | [RecurringMasterItemId (ItemIdType)](recurringmasteritemid-itemidtype.md)  | [ReminderGroup](remindergroup.md)  | [UID](uid.md)</span><span class="sxs-lookup"><span data-stu-id="d9ef0-111">[Subject](subject.md) | [Location](location.md) | [ReminderTime](remindertime.md) | [StartDate](startdate.md) | [EndDate (ReminderType)](enddate-remindertype.md) | [ItemId](itemid.md) | [RecurringMasterItemId (ItemIdType)](recurringmasteritemid-itemidtype.md) | [ReminderGroup](remindergroup.md) | [UID](uid.md)</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="d57bd-112">親要素</span><span class="sxs-lookup"><span data-stu-id="d57bd-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="d9ef0-112">親要素</span><span class="sxs-lookup"><span data-stu-id="d9ef0-112">Parent elements</span></span>
 
-[<span data-ttu-id="d57bd-113">Reminders</span><span class="sxs-lookup"><span data-stu-id="d57bd-113">Reminders</span></span>](reminders.md)
+[<span data-ttu-id="d9ef0-113">Reminders</span><span class="sxs-lookup"><span data-stu-id="d9ef0-113">Reminders</span></span>](reminders.md)
   
-## <a name="remarks"></a><span data-ttu-id="d57bd-114">備考</span><span class="sxs-lookup"><span data-stu-id="d57bd-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d9ef0-114">注釈</span><span class="sxs-lookup"><span data-stu-id="d9ef0-114">Remarks</span></span>
 
-<span data-ttu-id="d57bd-115">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="d57bd-115">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="d9ef0-115">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="d9ef0-115">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="d57bd-116">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="d57bd-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="d9ef0-116">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="d9ef0-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="d57bd-117">要素情報</span><span class="sxs-lookup"><span data-stu-id="d57bd-117">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="d9ef0-117">要素の情報</span><span class="sxs-lookup"><span data-stu-id="d9ef0-117">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="d57bd-118">名前空間</span><span class="sxs-lookup"><span data-stu-id="d57bd-118">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="d57bd-119">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="d57bd-119">Schema Name</span></span>  <br/> |<span data-ttu-id="d57bd-120">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="d57bd-120">Types schema</span></span>  <br/> |
-|<span data-ttu-id="d57bd-121">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="d57bd-121">Validation File</span></span>  <br/> |<span data-ttu-id="d57bd-122">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="d57bd-122">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="d57bd-123">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="d57bd-123">Can be Empty</span></span>  <br/> |<span data-ttu-id="d57bd-124">False</span><span class="sxs-lookup"><span data-stu-id="d57bd-124">False</span></span>  <br/> |
+|<span data-ttu-id="d9ef0-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="d9ef0-118">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="d9ef0-119">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="d9ef0-119">Schema Name</span></span>  <br/> |<span data-ttu-id="d9ef0-120">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="d9ef0-120">Types schema</span></span>  <br/> |
+|<span data-ttu-id="d9ef0-121">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="d9ef0-121">Validation File</span></span>  <br/> |<span data-ttu-id="d9ef0-122">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="d9ef0-122">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="d9ef0-123">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="d9ef0-123">Can be Empty</span></span>  <br/> |<span data-ttu-id="d9ef0-124">正しくない</span><span class="sxs-lookup"><span data-stu-id="d9ef0-124">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="d57bd-125">関連項目</span><span class="sxs-lookup"><span data-stu-id="d57bd-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d9ef0-125">関連項目</span><span class="sxs-lookup"><span data-stu-id="d9ef0-125">See also</span></span>
 
 
 
-[<span data-ttu-id="d57bd-126">Reminders</span><span class="sxs-lookup"><span data-stu-id="d57bd-126">Reminders</span></span>](reminders.md)
+[<span data-ttu-id="d9ef0-126">Reminders</span><span class="sxs-lookup"><span data-stu-id="d9ef0-126">Reminders</span></span>](reminders.md)
 
 
-- [<span data-ttu-id="d57bd-127">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="d57bd-127">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="d9ef0-127">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="d9ef0-127">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

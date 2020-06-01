@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 4c2bcdeb-95ce-4ffa-bd83-118af53b534f
-description: 応答要素には、GetUserSettings 操作 (SOAP)、GetDomainSettings の操作 (SOAP)、または GetFederationInformation の操作 (SOAP) 要求への応答が含まれています。
-ms.openlocfilehash: 240c8e1f904ad685b51c1f657b2bc18e14fd985e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Response 要素には、GetUserSettings 操作 (SOAP)、GetDomainSettings operation (SOAP)、または GetFederationInformation operation (SOAP) 要求への応答が含まれています。
+ms.openlocfilehash: 90cb29dd4ce4026211a5b592f149c8190dc81d29
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833179"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456417"
 ---
-# <a name="response-soap"></a><span data-ttu-id="24afd-103">応答 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="24afd-103">Response (SOAP)</span></span>
+# <a name="response-soap"></a><span data-ttu-id="0c671-103">応答 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="0c671-103">Response (SOAP)</span></span>
 
-<span data-ttu-id="24afd-104">**応答**要素には、 [GetUserSettings 操作 (SOAP)](getusersettings-operation-soap.md)、 [GetDomainSettings の操作 (SOAP)](getdomainsettings-operation-soap.md)、または[GetFederationInformation 操作 (SOAP)](getfederationinformation-operation-soap.md)要求への応答が含まれています。</span><span class="sxs-lookup"><span data-stu-id="24afd-104">The **Response** element contains the response to a [GetUserSettings operation (SOAP)](getusersettings-operation-soap.md), [GetDomainSettings operation (SOAP)](getdomainsettings-operation-soap.md), or a [GetFederationInformation operation (SOAP)](getfederationinformation-operation-soap.md) request.</span></span> 
+<span data-ttu-id="0c671-104">**Response**要素には、 [getusersettings 操作 (soap)](getusersettings-operation-soap.md)、 [GETDOMAINSETTINGS operation (Soap)](getdomainsettings-operation-soap.md)、または[GetFederationInformation operation (soap)](getfederationinformation-operation-soap.md)要求への応答が含まれています。</span><span class="sxs-lookup"><span data-stu-id="0c671-104">The **Response** element contains the response to a [GetUserSettings operation (SOAP)](getusersettings-operation-soap.md), [GetDomainSettings operation (SOAP)](getdomainsettings-operation-soap.md), or a [GetFederationInformation operation (SOAP)](getfederationinformation-operation-soap.md) request.</span></span> 
   
 ```XML
 <Response>
@@ -28,52 +28,52 @@ ms.locfileid: "19833179"
 </Response>
 ```
 
- <span data-ttu-id="24afd-105">**GetUserSettingsResponse**</span><span class="sxs-lookup"><span data-stu-id="24afd-105">**GetUserSettingsResponse**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="24afd-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="24afd-106">Attributes and elements</span></span>
+ <span data-ttu-id="0c671-105">**GetUserSettingsResponse**</span><span class="sxs-lookup"><span data-stu-id="0c671-105">**GetUserSettingsResponse**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="0c671-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="0c671-106">Attributes and elements</span></span>
 
-<span data-ttu-id="24afd-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="24afd-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="0c671-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="0c671-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="24afd-108">属性</span><span class="sxs-lookup"><span data-stu-id="24afd-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="0c671-108">属性</span><span class="sxs-lookup"><span data-stu-id="0c671-108">Attributes</span></span>
 
-<span data-ttu-id="24afd-109">なし。</span><span class="sxs-lookup"><span data-stu-id="24afd-109">None.</span></span>
+<span data-ttu-id="0c671-109">なし。</span><span class="sxs-lookup"><span data-stu-id="0c671-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="24afd-110">子要素</span><span class="sxs-lookup"><span data-stu-id="24afd-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="0c671-110">子要素</span><span class="sxs-lookup"><span data-stu-id="0c671-110">Child elements</span></span>
 
-|<span data-ttu-id="24afd-111">**要素**</span><span class="sxs-lookup"><span data-stu-id="24afd-111">**Element**</span></span>|<span data-ttu-id="24afd-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="24afd-112">**Description**</span></span>|
+|<span data-ttu-id="0c671-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="0c671-111">**Element**</span></span>|<span data-ttu-id="0c671-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="0c671-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="24afd-113">エラー コード (SOAP)</span><span class="sxs-lookup"><span data-stu-id="24afd-113">ErrorCode (SOAP)</span></span>](errorcode-soap.md) <br/> |<span data-ttu-id="24afd-114">自動検出サービスによって返されるエラー コードを表します。</span><span class="sxs-lookup"><span data-stu-id="24afd-114">Represents an error code that is returned by the Autodiscover service.</span></span>  <br/> |
-|[<span data-ttu-id="24afd-115">エラー メッセージ (SOAP)</span><span class="sxs-lookup"><span data-stu-id="24afd-115">ErrorMessage (SOAP)</span></span>](errormessage-soap.md) <br/> |<span data-ttu-id="24afd-116">自動検出サービスによって返されるエラー コードに関連付けられているメッセージを表します。</span><span class="sxs-lookup"><span data-stu-id="24afd-116">Represents a message that is associated with an error code that is returned by the Autodiscover service.</span></span>  <br/> |
-|[<span data-ttu-id="24afd-117">UserResponses (SOAP)</span><span class="sxs-lookup"><span data-stu-id="24afd-117">UserResponses (SOAP)</span></span>](userresponses-soap.md) <br/> |<span data-ttu-id="24afd-118">要求された各ユーザーの構成設定が含まれています。</span><span class="sxs-lookup"><span data-stu-id="24afd-118">Contains the configuration settings for each requested user.</span></span>  <br/> |
+|[<span data-ttu-id="0c671-113">ErrorCode (SOAP)</span><span class="sxs-lookup"><span data-stu-id="0c671-113">ErrorCode (SOAP)</span></span>](errorcode-soap.md) <br/> |<span data-ttu-id="0c671-114">自動検出サービスによって返されるエラーコードを表します。</span><span class="sxs-lookup"><span data-stu-id="0c671-114">Represents an error code that is returned by the Autodiscover service.</span></span>  <br/> |
+|[<span data-ttu-id="0c671-115">ErrorMessage (SOAP)</span><span class="sxs-lookup"><span data-stu-id="0c671-115">ErrorMessage (SOAP)</span></span>](errormessage-soap.md) <br/> |<span data-ttu-id="0c671-116">自動検出サービスによって返されるエラーコードに関連付けられているメッセージを表します。</span><span class="sxs-lookup"><span data-stu-id="0c671-116">Represents a message that is associated with an error code that is returned by the Autodiscover service.</span></span>  <br/> |
+|[<span data-ttu-id="0c671-117">UserResponses (SOAP)</span><span class="sxs-lookup"><span data-stu-id="0c671-117">UserResponses (SOAP)</span></span>](userresponses-soap.md) <br/> |<span data-ttu-id="0c671-118">要求された各ユーザーの構成設定が含まれます。</span><span class="sxs-lookup"><span data-stu-id="0c671-118">Contains the configuration settings for each requested user.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="24afd-119">親要素</span><span class="sxs-lookup"><span data-stu-id="24afd-119">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="0c671-119">親要素</span><span class="sxs-lookup"><span data-stu-id="0c671-119">Parent elements</span></span>
 
-|<span data-ttu-id="24afd-120">**要素**</span><span class="sxs-lookup"><span data-stu-id="24afd-120">**Element**</span></span>|<span data-ttu-id="24afd-121">**説明**</span><span class="sxs-lookup"><span data-stu-id="24afd-121">**Description**</span></span>|
+|<span data-ttu-id="0c671-120">**要素**</span><span class="sxs-lookup"><span data-stu-id="0c671-120">**Element**</span></span>|<span data-ttu-id="0c671-121">**説明**</span><span class="sxs-lookup"><span data-stu-id="0c671-121">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="24afd-122">GetUserSettingsResponseMessage (SOAP)</span><span class="sxs-lookup"><span data-stu-id="24afd-122">GetUserSettingsResponseMessage (SOAP)</span></span>](getusersettingsresponsemessage-soap.md) <br/> |<span data-ttu-id="24afd-123">[GetUserSettingsRequest (SOAP)](getusersettingsrequest-soap.md)への応答を定義します。</span><span class="sxs-lookup"><span data-stu-id="24afd-123">Defines a response to a [GetUserSettingsRequest (SOAP)](getusersettingsrequest-soap.md)</span></span> <br/> |
-|[<span data-ttu-id="24afd-124">GetDomainSettingsResponseMessage (SOAP)</span><span class="sxs-lookup"><span data-stu-id="24afd-124">GetDomainSettingsResponseMessage (SOAP)</span></span>](getdomainsettingsresponsemessage-soap.md) <br/> |<span data-ttu-id="24afd-125">[GetDomainSettingsRequest (SOAP)](getdomainsettingsrequest-soap.md)への応答を定義します。</span><span class="sxs-lookup"><span data-stu-id="24afd-125">Defines a response to a [GetDomainSettingsRequest (SOAP)](getdomainsettingsrequest-soap.md).</span></span>  <br/> |
-|[<span data-ttu-id="24afd-126">GetFederationInformationResponseMessage (SOAP)</span><span class="sxs-lookup"><span data-stu-id="24afd-126">GetFederationInformationResponseMessage (SOAP)</span></span>](getfederationinformationresponsemessage-soap.md) <br/> |<span data-ttu-id="24afd-127">[GetFederationInformationRequest (SOAP)](getfederationinformationrequest-soap.md)への応答を定義します。</span><span class="sxs-lookup"><span data-stu-id="24afd-127">Defines a response to a [GetFederationInformationRequest (SOAP)](getfederationinformationrequest-soap.md).</span></span>  <br/> |
+|[<span data-ttu-id="0c671-122">GetUserSettingsResponseMessage (SOAP)</span><span class="sxs-lookup"><span data-stu-id="0c671-122">GetUserSettingsResponseMessage (SOAP)</span></span>](getusersettingsresponsemessage-soap.md) <br/> |<span data-ttu-id="0c671-123">[Getusersettingsrequest (SOAP)](getusersettingsrequest-soap.md)への応答を定義します。</span><span class="sxs-lookup"><span data-stu-id="0c671-123">Defines a response to a [GetUserSettingsRequest (SOAP)](getusersettingsrequest-soap.md)</span></span> <br/> |
+|[<span data-ttu-id="0c671-124">GetDomainSettingsResponseMessage (SOAP)</span><span class="sxs-lookup"><span data-stu-id="0c671-124">GetDomainSettingsResponseMessage (SOAP)</span></span>](getdomainsettingsresponsemessage-soap.md) <br/> |<span data-ttu-id="0c671-125">[Getdomainsettingsrequest (SOAP)](getdomainsettingsrequest-soap.md)への応答を定義します。</span><span class="sxs-lookup"><span data-stu-id="0c671-125">Defines a response to a [GetDomainSettingsRequest (SOAP)](getdomainsettingsrequest-soap.md).</span></span>  <br/> |
+|[<span data-ttu-id="0c671-126">GetFederationInformationResponseMessage (SOAP)</span><span class="sxs-lookup"><span data-stu-id="0c671-126">GetFederationInformationResponseMessage (SOAP)</span></span>](getfederationinformationresponsemessage-soap.md) <br/> |<span data-ttu-id="0c671-127">[GetFederationInformationRequest (SOAP)](getfederationinformationrequest-soap.md)への応答を定義します。</span><span class="sxs-lookup"><span data-stu-id="0c671-127">Defines a response to a [GetFederationInformationRequest (SOAP)](getfederationinformationrequest-soap.md).</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="24afd-128">テキスト値</span><span class="sxs-lookup"><span data-stu-id="24afd-128">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="0c671-128">テキスト値</span><span class="sxs-lookup"><span data-stu-id="0c671-128">Text value</span></span>
 
-<span data-ttu-id="24afd-129">なし。</span><span class="sxs-lookup"><span data-stu-id="24afd-129">None.</span></span>
+<span data-ttu-id="0c671-129">なし。</span><span class="sxs-lookup"><span data-stu-id="0c671-129">None.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="24afd-130">要素情報</span><span class="sxs-lookup"><span data-stu-id="24afd-130">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="0c671-130">要素の情報</span><span class="sxs-lookup"><span data-stu-id="0c671-130">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="24afd-131">名前空間</span><span class="sxs-lookup"><span data-stu-id="24afd-131">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|<span data-ttu-id="24afd-132">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="24afd-132">Schema Name</span></span>  <br/> |<span data-ttu-id="24afd-133">スキーマの自動検出</span><span class="sxs-lookup"><span data-stu-id="24afd-133">Autodiscover schema</span></span>  <br/> |
-|<span data-ttu-id="24afd-134">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="24afd-134">Validation File</span></span>  <br/> |<span data-ttu-id="24afd-135">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="24afd-135">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="24afd-136">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="24afd-136">Can be Empty</span></span>  <br/> |<span data-ttu-id="24afd-137">True</span><span class="sxs-lookup"><span data-stu-id="24afd-137">True</span></span>  <br/> |
+|<span data-ttu-id="0c671-131">Namespace</span><span class="sxs-lookup"><span data-stu-id="0c671-131">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|<span data-ttu-id="0c671-132">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="0c671-132">Schema Name</span></span>  <br/> |<span data-ttu-id="0c671-133">自動検出スキーマ</span><span class="sxs-lookup"><span data-stu-id="0c671-133">Autodiscover schema</span></span>  <br/> |
+|<span data-ttu-id="0c671-134">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="0c671-134">Validation File</span></span>  <br/> |<span data-ttu-id="0c671-135">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="0c671-135">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="0c671-136">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="0c671-136">Can be Empty</span></span>  <br/> |<span data-ttu-id="0c671-137">正しい</span><span class="sxs-lookup"><span data-stu-id="0c671-137">True</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="24afd-138">関連項目</span><span class="sxs-lookup"><span data-stu-id="24afd-138">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0c671-138">関連項目</span><span class="sxs-lookup"><span data-stu-id="0c671-138">See also</span></span>
 
 
 
-[<span data-ttu-id="24afd-139">GetUserSettings 操作 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="24afd-139">GetUserSettings operation (SOAP)</span></span>](getusersettings-operation-soap.md)
+[<span data-ttu-id="0c671-139">GetUserSettings 操作 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="0c671-139">GetUserSettings operation (SOAP)</span></span>](getusersettings-operation-soap.md)
 
 
-[<span data-ttu-id="24afd-140">Exchange の自動検出 web サービスの参照</span><span class="sxs-lookup"><span data-stu-id="24afd-140">Autodiscover web service reference for Exchange</span></span>](autodiscover-web-service-reference-for-exchange.md)
+[<span data-ttu-id="0c671-140">Exchange 用自動検出 Web サービス リファレンス</span><span class="sxs-lookup"><span data-stu-id="0c671-140">Autodiscover web service reference for Exchange</span></span>](autodiscover-web-service-reference-for-exchange.md)
   
-[<span data-ttu-id="24afd-141">Exchange 2013 の自動検出の XML 要素を SOAP</span><span class="sxs-lookup"><span data-stu-id="24afd-141">SOAP Autodiscover XML elements for Exchange 2013</span></span>](soap-autodiscover-xml-elements-for-exchange-2013.md)
+[<span data-ttu-id="0c671-141">Exchange 2013 の SOAP 自動検出 XML 要素</span><span class="sxs-lookup"><span data-stu-id="0c671-141">SOAP Autodiscover XML elements for Exchange 2013</span></span>](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a5bf44c6-c46b-442d-98d4-8b49fdf14b30
-description: GetPersonaResponseMessage には、GetPersona 要求からの応答データが含まれています。
-ms.openlocfilehash: 7d38daac9c7c3a74ba9d9670c2bd16dcf2cd47e3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetPersonaResponseMessage には、GetPersona 要求の結果として得られる応答データが含まれています。
+ms.openlocfilehash: 6391e1b6682180e292d03c5db651e8edc6f46b52
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760833"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458328"
 ---
-# <a name="getpersonaresponsemessage"></a><span data-ttu-id="4d88e-103">GetPersonaResponseMessage</span><span class="sxs-lookup"><span data-stu-id="4d88e-103">GetPersonaResponseMessage</span></span>
+# <a name="getpersonaresponsemessage"></a><span data-ttu-id="3ddd1-103">GetPersonaResponseMessage</span><span class="sxs-lookup"><span data-stu-id="3ddd1-103">GetPersonaResponseMessage</span></span>
 
-<span data-ttu-id="4d88e-104">**GetPersonaResponseMessage**には、 **GetPersona**要求からの応答データが含まれています。</span><span class="sxs-lookup"><span data-stu-id="4d88e-104">The **GetPersonaResponseMessage** contains the response data resulting from a **GetPersona** request.</span></span> 
+<span data-ttu-id="3ddd1-104">**GetPersonaResponseMessage**には、 **getpersona**要求の結果として得られる応答データが含まれています。</span><span class="sxs-lookup"><span data-stu-id="3ddd1-104">The **GetPersonaResponseMessage** contains the response data resulting from a **GetPersona** request.</span></span> 
   
 ```XML
 <GetPersonaResponseMessage>
@@ -29,36 +29,36 @@ ms.locfileid: "19760833"
 </GetPersonaResponseMessage>
 ```
 
- <span data-ttu-id="4d88e-105">**GetUserPhotoResponseMessageType**</span><span class="sxs-lookup"><span data-stu-id="4d88e-105">**GetUserPhotoResponseMessageType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="4d88e-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="4d88e-106">Attributes and elements</span></span>
+ <span data-ttu-id="3ddd1-105">**GetUserPhotoResponseMessageType**</span><span class="sxs-lookup"><span data-stu-id="3ddd1-105">**GetUserPhotoResponseMessageType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="3ddd1-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="3ddd1-106">Attributes and elements</span></span>
 
-<span data-ttu-id="4d88e-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="4d88e-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="3ddd1-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="3ddd1-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="4d88e-108">属性</span><span class="sxs-lookup"><span data-stu-id="4d88e-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="3ddd1-108">属性</span><span class="sxs-lookup"><span data-stu-id="3ddd1-108">Attributes</span></span>
 
-<span data-ttu-id="4d88e-109">なし。</span><span class="sxs-lookup"><span data-stu-id="4d88e-109">None.</span></span>
+<span data-ttu-id="3ddd1-109">なし。</span><span class="sxs-lookup"><span data-stu-id="3ddd1-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="4d88e-110">子要素</span><span class="sxs-lookup"><span data-stu-id="4d88e-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="3ddd1-110">子要素</span><span class="sxs-lookup"><span data-stu-id="3ddd1-110">Child elements</span></span>
 
-<span data-ttu-id="4d88e-111">[メッセージ テキスト](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [ペルソナ](persona.md)</span><span class="sxs-lookup"><span data-stu-id="4d88e-111">[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [Persona](persona.md)</span></span>
+<span data-ttu-id="3ddd1-111">[Messagetext](messagetext.md)  | 応答[Secmode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [Persona](persona.md)</span><span class="sxs-lookup"><span data-stu-id="3ddd1-111">[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [Persona](persona.md)</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="4d88e-112">親要素</span><span class="sxs-lookup"><span data-stu-id="4d88e-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="3ddd1-112">親要素</span><span class="sxs-lookup"><span data-stu-id="3ddd1-112">Parent elements</span></span>
 
-[<span data-ttu-id="4d88e-113">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="4d88e-113">ResponseMessages</span></span>](responsemessages.md)
+[<span data-ttu-id="3ddd1-113">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="3ddd1-113">ResponseMessages</span></span>](responsemessages.md)
   
-## <a name="remarks"></a><span data-ttu-id="4d88e-114">備考</span><span class="sxs-lookup"><span data-stu-id="4d88e-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="3ddd1-114">注釈</span><span class="sxs-lookup"><span data-stu-id="3ddd1-114">Remarks</span></span>
 
-<span data-ttu-id="4d88e-115">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="4d88e-115">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="3ddd1-115">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="3ddd1-115">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="4d88e-116">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="4d88e-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="3ddd1-116">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="3ddd1-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="4d88e-117">要素情報</span><span class="sxs-lookup"><span data-stu-id="4d88e-117">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="3ddd1-117">要素の情報</span><span class="sxs-lookup"><span data-stu-id="3ddd1-117">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="4d88e-118">名前空間</span><span class="sxs-lookup"><span data-stu-id="4d88e-118">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="4d88e-119">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="4d88e-119">Schema name</span></span>  <br/> |<span data-ttu-id="4d88e-120">メッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="4d88e-120">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="4d88e-121">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="4d88e-121">Validation file</span></span>  <br/> |<span data-ttu-id="4d88e-122">messages.xsd</span><span class="sxs-lookup"><span data-stu-id="4d88e-122">messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="4d88e-123">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="4d88e-123">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="3ddd1-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="3ddd1-118">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="3ddd1-119">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="3ddd1-119">Schema name</span></span>  <br/> |<span data-ttu-id="3ddd1-120">メッセージスキーマ</span><span class="sxs-lookup"><span data-stu-id="3ddd1-120">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="3ddd1-121">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="3ddd1-121">Validation file</span></span>  <br/> |<span data-ttu-id="3ddd1-122">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="3ddd1-122">messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="3ddd1-123">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="3ddd1-123">Can be empty</span></span>  <br/> ||
    
 

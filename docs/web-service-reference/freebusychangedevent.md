@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 63abbfc5-c29f-4110-a922-6b1247187f28
-description: FreeBusyChangedEvent 要素は、アイテムの空き時間情報の変更に使用されたイベントを表します。
-ms.openlocfilehash: 7271d375526e7614d0150594c2b988666a59eb8d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: FreeBusyChangedEvent 要素は、アイテムの空き時間情報が変更されたイベントを表します。
+ms.openlocfilehash: d9ea8bc210ab503c4e9f606bcb66317cefe15de1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760601"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456480"
 ---
-# <a name="freebusychangedevent"></a><span data-ttu-id="ae290-103">FreeBusyChangedEvent</span><span class="sxs-lookup"><span data-stu-id="ae290-103">FreeBusyChangedEvent</span></span>
+# <a name="freebusychangedevent"></a><span data-ttu-id="36a52-103">FreeBusyChangedEvent</span><span class="sxs-lookup"><span data-stu-id="36a52-103">FreeBusyChangedEvent</span></span>
 
-<span data-ttu-id="ae290-104">**FreeBusyChangedEvent**要素は、アイテムの空き時間情報の変更に使用されたイベントを表します。</span><span class="sxs-lookup"><span data-stu-id="ae290-104">The **FreeBusyChangedEvent** element represents an event in which an item's free/busy time has changed.</span></span> 
+<span data-ttu-id="36a52-104">**FreeBusyChangedEvent**要素は、アイテムの空き時間情報が変更されたイベントを表します。</span><span class="sxs-lookup"><span data-stu-id="36a52-104">The **FreeBusyChangedEvent** element represents an event in which an item's free/busy time has changed.</span></span> 
   
 ```xml
 <CreatedEvent>
@@ -32,59 +32,59 @@ ms.locfileid: "19760601"
 </CreatedEvent>
 ```
 
- <span data-ttu-id="ae290-105">**BaseObjectChangedEventType**</span><span class="sxs-lookup"><span data-stu-id="ae290-105">**BaseObjectChangedEventType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="ae290-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="ae290-106">Attributes and elements</span></span>
+ <span data-ttu-id="36a52-105">**BaseObjectChangedEventType**</span><span class="sxs-lookup"><span data-stu-id="36a52-105">**BaseObjectChangedEventType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="36a52-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="36a52-106">Attributes and elements</span></span>
 
-<span data-ttu-id="ae290-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="ae290-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="36a52-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="36a52-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="ae290-108">属性</span><span class="sxs-lookup"><span data-stu-id="ae290-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="36a52-108">属性</span><span class="sxs-lookup"><span data-stu-id="36a52-108">Attributes</span></span>
 
-<span data-ttu-id="ae290-109">なし。</span><span class="sxs-lookup"><span data-stu-id="ae290-109">None.</span></span>
+<span data-ttu-id="36a52-109">なし。</span><span class="sxs-lookup"><span data-stu-id="36a52-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="ae290-110">子要素</span><span class="sxs-lookup"><span data-stu-id="ae290-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="36a52-110">子要素</span><span class="sxs-lookup"><span data-stu-id="36a52-110">Child elements</span></span>
 
-|<span data-ttu-id="ae290-111">**要素**</span><span class="sxs-lookup"><span data-stu-id="ae290-111">**Element**</span></span>|<span data-ttu-id="ae290-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="ae290-112">**Description**</span></span>|
+|<span data-ttu-id="36a52-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="36a52-111">**Element**</span></span>|<span data-ttu-id="36a52-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="36a52-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="ae290-113">透かし</span><span class="sxs-lookup"><span data-stu-id="ae290-113">Watermark</span></span>](watermark.md) <br/> |<span data-ttu-id="ae290-114">メールボックス イベント テーブル内のイベント ブックマークを表します。</span><span class="sxs-lookup"><span data-stu-id="ae290-114">Represents an event bookmark in the mailbox events table.</span></span>  <br/> |
-|[<span data-ttu-id="ae290-115">タイムスタンプ</span><span class="sxs-lookup"><span data-stu-id="ae290-115">TimeStamp</span></span>](timestamp.md) <br/> |<span data-ttu-id="ae290-116">アイテムの空き/予約済みメールボックス イベントのタイムスタンプを表します。</span><span class="sxs-lookup"><span data-stu-id="ae290-116">Represents the timestamp of a free/busy item mailbox event.</span></span>  <br/> |
-|[<span data-ttu-id="ae290-117">ItemId</span><span class="sxs-lookup"><span data-stu-id="ae290-117">ItemId</span></span>](itemid.md) <br/> |<span data-ttu-id="ae290-118">空き/予約済みの項目の識別子を表します。</span><span class="sxs-lookup"><span data-stu-id="ae290-118">Represents the identifier of the free/busy item.</span></span>  <br/> |
-|[<span data-ttu-id="ae290-119">ParentFolderId</span><span class="sxs-lookup"><span data-stu-id="ae290-119">ParentFolderId</span></span>](parentfolderid.md) <br/> |<span data-ttu-id="ae290-120">空き時間アイテムの親フォルダーの識別子を表します。</span><span class="sxs-lookup"><span data-stu-id="ae290-120">Represents the identifier of the parent folder of the free/busy item.</span></span>  <br/> |
+|[<span data-ttu-id="36a52-113">Watermark</span><span class="sxs-lookup"><span data-stu-id="36a52-113">Watermark</span></span>](watermark.md) <br/> |<span data-ttu-id="36a52-114">メールボックスイベントテーブル内のイベントブックマークを表します。</span><span class="sxs-lookup"><span data-stu-id="36a52-114">Represents an event bookmark in the mailbox events table.</span></span>  <br/> |
+|[<span data-ttu-id="36a52-115">示</span><span class="sxs-lookup"><span data-stu-id="36a52-115">TimeStamp</span></span>](timestamp.md) <br/> |<span data-ttu-id="36a52-116">空き時間アイテムメールボックスイベントのタイムスタンプを表します。</span><span class="sxs-lookup"><span data-stu-id="36a52-116">Represents the timestamp of a free/busy item mailbox event.</span></span>  <br/> |
+|[<span data-ttu-id="36a52-117">ItemId</span><span class="sxs-lookup"><span data-stu-id="36a52-117">ItemId</span></span>](itemid.md) <br/> |<span data-ttu-id="36a52-118">空き時間情報アイテムの識別子を表します。</span><span class="sxs-lookup"><span data-stu-id="36a52-118">Represents the identifier of the free/busy item.</span></span>  <br/> |
+|[<span data-ttu-id="36a52-119">ParentFolderId</span><span class="sxs-lookup"><span data-stu-id="36a52-119">ParentFolderId</span></span>](parentfolderid.md) <br/> |<span data-ttu-id="36a52-120">空き時間情報アイテムの親フォルダーの識別子を表します。</span><span class="sxs-lookup"><span data-stu-id="36a52-120">Represents the identifier of the parent folder of the free/busy item.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="ae290-121">親要素</span><span class="sxs-lookup"><span data-stu-id="ae290-121">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="36a52-121">親要素</span><span class="sxs-lookup"><span data-stu-id="36a52-121">Parent elements</span></span>
 
-|<span data-ttu-id="ae290-122">**要素**</span><span class="sxs-lookup"><span data-stu-id="ae290-122">**Element**</span></span>|<span data-ttu-id="ae290-123">**説明**</span><span class="sxs-lookup"><span data-stu-id="ae290-123">**Description**</span></span>|
+|<span data-ttu-id="36a52-122">**要素**</span><span class="sxs-lookup"><span data-stu-id="36a52-122">**Element**</span></span>|<span data-ttu-id="36a52-123">**説明**</span><span class="sxs-lookup"><span data-stu-id="36a52-123">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="ae290-124">通知</span><span class="sxs-lookup"><span data-stu-id="ae290-124">Notification</span></span>](notification-ex15websvcsotherref.md) <br/> |<span data-ttu-id="ae290-125">サブスクリプションおよび最後の通知以降に発生したイベントに関する情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="ae290-125">Contains information about the subscription and the events that have occurred since the last notification.</span></span>  <br/> |
+|[<span data-ttu-id="36a52-124">通知</span><span class="sxs-lookup"><span data-stu-id="36a52-124">Notification</span></span>](notification-ex15websvcsotherref.md) <br/> |<span data-ttu-id="36a52-125">サブスクリプションに関する情報、および前回の通知以降に発生したイベントに関する情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="36a52-125">Contains information about the subscription and the events that have occurred since the last notification.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="ae290-126">テキスト値</span><span class="sxs-lookup"><span data-stu-id="ae290-126">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="36a52-126">テキスト値</span><span class="sxs-lookup"><span data-stu-id="36a52-126">Text value</span></span>
 
-<span data-ttu-id="ae290-127">なし。</span><span class="sxs-lookup"><span data-stu-id="ae290-127">None.</span></span>
+<span data-ttu-id="36a52-127">なし。</span><span class="sxs-lookup"><span data-stu-id="36a52-127">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="ae290-128">備考</span><span class="sxs-lookup"><span data-stu-id="ae290-128">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="36a52-128">注釈</span><span class="sxs-lookup"><span data-stu-id="36a52-128">Remarks</span></span>
 
-<span data-ttu-id="ae290-129">この要素を記述するスキーマは、Exchange Web Services.This の要素がホストをで Exchange Server 2010 Service Pack 1 (SP1) を導入する IIS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="ae290-129">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.This element was introduced in Exchange Server 2010 Service Pack 1 (SP1).</span></span>
+<span data-ttu-id="36a52-129">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。</span><span class="sxs-lookup"><span data-stu-id="36a52-129">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.This element was introduced in Exchange Server 2010 Service Pack 1 (SP1).</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="ae290-130">要素情報</span><span class="sxs-lookup"><span data-stu-id="ae290-130">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="36a52-130">要素の情報</span><span class="sxs-lookup"><span data-stu-id="36a52-130">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="ae290-131">名前空間</span><span class="sxs-lookup"><span data-stu-id="ae290-131">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="ae290-132">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="ae290-132">Schema name</span></span>  <br/> |<span data-ttu-id="ae290-133">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="ae290-133">Types schema</span></span>  <br/> |
-|<span data-ttu-id="ae290-134">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="ae290-134">Validation file</span></span>  <br/> |<span data-ttu-id="ae290-135">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="ae290-135">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="ae290-136">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="ae290-136">Can be empty</span></span>  <br/> |<span data-ttu-id="ae290-137">False</span><span class="sxs-lookup"><span data-stu-id="ae290-137">False</span></span>  <br/> |
+|<span data-ttu-id="36a52-131">Namespace</span><span class="sxs-lookup"><span data-stu-id="36a52-131">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="36a52-132">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="36a52-132">Schema name</span></span>  <br/> |<span data-ttu-id="36a52-133">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="36a52-133">Types schema</span></span>  <br/> |
+|<span data-ttu-id="36a52-134">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="36a52-134">Validation file</span></span>  <br/> |<span data-ttu-id="36a52-135">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="36a52-135">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="36a52-136">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="36a52-136">Can be empty</span></span>  <br/> |<span data-ttu-id="36a52-137">正しくない</span><span class="sxs-lookup"><span data-stu-id="36a52-137">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="ae290-138">関連項目</span><span class="sxs-lookup"><span data-stu-id="ae290-138">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="36a52-138">関連項目</span><span class="sxs-lookup"><span data-stu-id="36a52-138">See also</span></span>
 
 
 
-[<span data-ttu-id="ae290-139">サブスクライブ操作</span><span class="sxs-lookup"><span data-stu-id="ae290-139">Subscribe operation</span></span>](subscribe-operation.md)
+[<span data-ttu-id="36a52-139">サブスクライブ操作</span><span class="sxs-lookup"><span data-stu-id="36a52-139">Subscribe operation</span></span>](subscribe-operation.md)
   
-[<span data-ttu-id="ae290-140">GetEvents 操作</span><span class="sxs-lookup"><span data-stu-id="ae290-140">GetEvents operation</span></span>](getevents-operation.md)
+[<span data-ttu-id="36a52-140">GetEvents 操作</span><span class="sxs-lookup"><span data-stu-id="36a52-140">GetEvents operation</span></span>](getevents-operation.md)
   
-[<span data-ttu-id="ae290-141">Unsubscribe 操作</span><span class="sxs-lookup"><span data-stu-id="ae290-141">Unsubscribe operation</span></span>](unsubscribe-operation.md)
+[<span data-ttu-id="36a52-141">Unsubscribe 操作</span><span class="sxs-lookup"><span data-stu-id="36a52-141">Unsubscribe operation</span></span>](unsubscribe-operation.md)
 
 
-[<span data-ttu-id="ae290-142">プル サブスクリプションを使用します。</span><span class="sxs-lookup"><span data-stu-id="ae290-142">Using Pull Subscriptions</span></span>](http://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx)
+[<span data-ttu-id="36a52-142">プルサブスクリプションの使用</span><span class="sxs-lookup"><span data-stu-id="36a52-142">Using Pull Subscriptions</span></span>](https://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx)
   
-[<span data-ttu-id="ae290-143">EWS でのイベントの通知</span><span class="sxs-lookup"><span data-stu-id="ae290-143">Event notifications in EWS</span></span>](http://msdn.microsoft.com/library/4fd4b351-d35c-4ccc-9ed9-878932ab9d50%28Office.15%29.aspx)
+[<span data-ttu-id="36a52-143">EWS でのイベント通知</span><span class="sxs-lookup"><span data-stu-id="36a52-143">Event notifications in EWS</span></span>](https://msdn.microsoft.com/library/4fd4b351-d35c-4ccc-9ed9-878932ab9d50%28Office.15%29.aspx)
 

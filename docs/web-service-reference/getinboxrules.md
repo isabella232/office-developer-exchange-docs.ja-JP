@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7a54992d-03a6-4afc-a2e4-dcdc9ce54194
-description: GetInboxRules 要素は、サーバー ストア内のメールボックスの受信トレイ ルールを取得する要求を定義します。
-ms.openlocfilehash: 3c3ee682dd009e5c4bec940637a7dfa3c11f8402
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Getinbox Rules 要素は、サーバーストア内のメールボックスの受信トレイルールを取得する要求を定義します。
+ms.openlocfilehash: 890592fd3f87fc5592a618a2febf28e4daf0dbe4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760760"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457929"
 ---
-# <a name="getinboxrules"></a><span data-ttu-id="f8fa3-103">GetInboxRules</span><span class="sxs-lookup"><span data-stu-id="f8fa3-103">GetInboxRules</span></span>
+# <a name="getinboxrules"></a><span data-ttu-id="09b54-103">GetInboxRules</span><span class="sxs-lookup"><span data-stu-id="09b54-103">GetInboxRules</span></span>
 
-<span data-ttu-id="f8fa3-104">**GetInboxRules**要素は、サーバー ストア内のメールボックスの受信トレイ ルールを取得する要求を定義します。</span><span class="sxs-lookup"><span data-stu-id="f8fa3-104">The **GetInboxRules** element defines a request to get the Inbox rules on a mailbox in the server store.</span></span> 
+<span data-ttu-id="09b54-104">**Getinbox rules**要素は、サーバーストア内のメールボックスの受信トレイルールを取得する要求を定義します。</span><span class="sxs-lookup"><span data-stu-id="09b54-104">The **GetInboxRules** element defines a request to get the Inbox rules on a mailbox in the server store.</span></span> 
   
 ```XML
 <GetInboxRules>
@@ -29,41 +29,41 @@ ms.locfileid: "19760760"
 </GetInboxRules>
 ```
 
- <span data-ttu-id="f8fa3-105">**GetInboxRulesRequestType**</span><span class="sxs-lookup"><span data-stu-id="f8fa3-105">**GetInboxRulesRequestType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="f8fa3-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="f8fa3-106">Attributes and elements</span></span>
+ <span data-ttu-id="09b54-105">**Get受信規則 Requesttype**</span><span class="sxs-lookup"><span data-stu-id="09b54-105">**GetInboxRulesRequestType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="09b54-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="09b54-106">Attributes and elements</span></span>
 
-<span data-ttu-id="f8fa3-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="f8fa3-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="09b54-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="09b54-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="f8fa3-108">属性</span><span class="sxs-lookup"><span data-stu-id="f8fa3-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="09b54-108">属性</span><span class="sxs-lookup"><span data-stu-id="09b54-108">Attributes</span></span>
 
-<span data-ttu-id="f8fa3-109">なし。</span><span class="sxs-lookup"><span data-stu-id="f8fa3-109">None.</span></span>
+<span data-ttu-id="09b54-109">なし。</span><span class="sxs-lookup"><span data-stu-id="09b54-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="f8fa3-110">子要素</span><span class="sxs-lookup"><span data-stu-id="f8fa3-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="09b54-110">子要素</span><span class="sxs-lookup"><span data-stu-id="09b54-110">Child elements</span></span>
 
-|<span data-ttu-id="f8fa3-111">**要素**</span><span class="sxs-lookup"><span data-stu-id="f8fa3-111">**Element**</span></span>|<span data-ttu-id="f8fa3-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="f8fa3-112">**Description**</span></span>|
+|<span data-ttu-id="09b54-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="09b54-111">**Element**</span></span>|<span data-ttu-id="09b54-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="09b54-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="f8fa3-113">MailboxSmtpAddress</span><span class="sxs-lookup"><span data-stu-id="f8fa3-113">MailboxSmtpAddress</span></span>](mailboxsmtpaddress.md) <br/> |<span data-ttu-id="f8fa3-114">受信トレイ ルールを取得するのには、ユーザーの SMTP アドレスを表します。</span><span class="sxs-lookup"><span data-stu-id="f8fa3-114">Represents the SMTP address of the user whose Inbox rules are to be retrieved.</span></span>  <br/> |
+|[<span data-ttu-id="09b54-113">MailboxSmtpAddress</span><span class="sxs-lookup"><span data-stu-id="09b54-113">MailboxSmtpAddress</span></span>](mailboxsmtpaddress.md) <br/> |<span data-ttu-id="09b54-114">受信トレイルールを取得するユーザーの SMTP アドレスを表します。</span><span class="sxs-lookup"><span data-stu-id="09b54-114">Represents the SMTP address of the user whose Inbox rules are to be retrieved.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="f8fa3-115">親要素</span><span class="sxs-lookup"><span data-stu-id="f8fa3-115">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="09b54-115">親要素</span><span class="sxs-lookup"><span data-stu-id="09b54-115">Parent elements</span></span>
 
-<span data-ttu-id="f8fa3-116">なし。</span><span class="sxs-lookup"><span data-stu-id="f8fa3-116">None.</span></span>
+<span data-ttu-id="09b54-116">なし。</span><span class="sxs-lookup"><span data-stu-id="09b54-116">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="f8fa3-117">備考</span><span class="sxs-lookup"><span data-stu-id="f8fa3-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="09b54-117">注釈</span><span class="sxs-lookup"><span data-stu-id="09b54-117">Remarks</span></span>
 
-<span data-ttu-id="f8fa3-118">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="f8fa3-118">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="09b54-118">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="09b54-118">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="f8fa3-119">要素情報</span><span class="sxs-lookup"><span data-stu-id="f8fa3-119">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="09b54-119">要素の情報</span><span class="sxs-lookup"><span data-stu-id="09b54-119">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="f8fa3-120">名前空間</span><span class="sxs-lookup"><span data-stu-id="f8fa3-120">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="f8fa3-121">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="f8fa3-121">Schema Name</span></span>  <br/> |<span data-ttu-id="f8fa3-122">メッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="f8fa3-122">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="f8fa3-123">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="f8fa3-123">Validation File</span></span>  <br/> |<span data-ttu-id="f8fa3-124">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="f8fa3-124">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="f8fa3-125">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="f8fa3-125">Can be Empty</span></span>  <br/> |<span data-ttu-id="f8fa3-126">True</span><span class="sxs-lookup"><span data-stu-id="f8fa3-126">True</span></span>  <br/> |
+|<span data-ttu-id="09b54-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="09b54-120">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="09b54-121">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="09b54-121">Schema Name</span></span>  <br/> |<span data-ttu-id="09b54-122">メッセージスキーマ</span><span class="sxs-lookup"><span data-stu-id="09b54-122">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="09b54-123">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="09b54-123">Validation File</span></span>  <br/> |<span data-ttu-id="09b54-124">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="09b54-124">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="09b54-125">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="09b54-125">Can be Empty</span></span>  <br/> |<span data-ttu-id="09b54-126">正しい</span><span class="sxs-lookup"><span data-stu-id="09b54-126">True</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="f8fa3-127">関連項目</span><span class="sxs-lookup"><span data-stu-id="f8fa3-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="09b54-127">関連項目</span><span class="sxs-lookup"><span data-stu-id="09b54-127">See also</span></span>
 
 
 
-[<span data-ttu-id="f8fa3-128">GetInboxRules の操作</span><span class="sxs-lookup"><span data-stu-id="f8fa3-128">GetInboxRules operation</span></span>](getinboxrules-operation.md)
+[<span data-ttu-id="09b54-128">GetInboxRules の操作</span><span class="sxs-lookup"><span data-stu-id="09b54-128">GetInboxRules operation</span></span>](getinboxrules-operation.md)
 

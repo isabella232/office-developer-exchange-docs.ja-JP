@@ -11,61 +11,61 @@ api_name:
 api_type:
 - schema
 ms.assetid: a8209f75-0070-4424-8dcd-273cfd192728
-description: HiddenRecipient 要素は、権限のないユーザーから非表示にする必要があります組織のポリシーによって、受信者が追加されたことを示します。
-ms.openlocfilehash: 73b2e3e39c675cf3e2bc56105b1e76009d4a2451
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: HiddenRecipient 要素は、権限のないユーザーから非表示にする必要がある組織のポリシーによって受信者が追加されたことを示します。
+ms.openlocfilehash: bfe57fabc02ff00c801672b71ccdb0bf1b916bd9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831810"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457642"
 ---
-# <a name="hiddenrecipient"></a><span data-ttu-id="a52e8-103">HiddenRecipient</span><span class="sxs-lookup"><span data-stu-id="a52e8-103">HiddenRecipient</span></span>
+# <a name="hiddenrecipient"></a><span data-ttu-id="ff1db-103">HiddenRecipient</span><span class="sxs-lookup"><span data-stu-id="ff1db-103">HiddenRecipient</span></span>
 
-<span data-ttu-id="a52e8-104">**HiddenRecipient**要素は、権限のないユーザーから非表示にする必要があります組織のポリシーによって、受信者が追加されたことを示します。</span><span class="sxs-lookup"><span data-stu-id="a52e8-104">The **HiddenRecipient** element indicates that the recipient was added by an organization policy that should be hidden from unprivileged users.</span></span> 
+<span data-ttu-id="ff1db-104">**HiddenRecipient**要素は、権限のないユーザーから非表示にする必要がある組織のポリシーによって受信者が追加されたことを示します。</span><span class="sxs-lookup"><span data-stu-id="ff1db-104">The **HiddenRecipient** element indicates that the recipient was added by an organization policy that should be hidden from unprivileged users.</span></span> 
   
 ```XML
 <HiddenRecipient>true | false</HiddenRecipient>
 ```
 
- <span data-ttu-id="a52e8-105">**ブール型 (Boolean)**</span><span class="sxs-lookup"><span data-stu-id="a52e8-105">**Boolean**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="a52e8-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="a52e8-106">Attributes and elements</span></span>
+ <span data-ttu-id="ff1db-105">**Boolean**</span><span class="sxs-lookup"><span data-stu-id="ff1db-105">**Boolean**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="ff1db-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="ff1db-106">Attributes and elements</span></span>
 
-<span data-ttu-id="a52e8-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="a52e8-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="ff1db-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="ff1db-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="a52e8-108">属性</span><span class="sxs-lookup"><span data-stu-id="a52e8-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="ff1db-108">属性</span><span class="sxs-lookup"><span data-stu-id="ff1db-108">Attributes</span></span>
 
-<span data-ttu-id="a52e8-109">なし。</span><span class="sxs-lookup"><span data-stu-id="a52e8-109">None.</span></span>
+<span data-ttu-id="ff1db-109">なし。</span><span class="sxs-lookup"><span data-stu-id="ff1db-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="a52e8-110">子要素</span><span class="sxs-lookup"><span data-stu-id="a52e8-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="ff1db-110">子要素</span><span class="sxs-lookup"><span data-stu-id="ff1db-110">Child elements</span></span>
 
-<span data-ttu-id="a52e8-111">なし。</span><span class="sxs-lookup"><span data-stu-id="a52e8-111">None.</span></span>
+<span data-ttu-id="ff1db-111">なし。</span><span class="sxs-lookup"><span data-stu-id="ff1db-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="a52e8-112">親要素</span><span class="sxs-lookup"><span data-stu-id="a52e8-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="ff1db-112">親要素</span><span class="sxs-lookup"><span data-stu-id="ff1db-112">Parent elements</span></span>
 
-|<span data-ttu-id="a52e8-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="a52e8-113">**Element**</span></span>|<span data-ttu-id="a52e8-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="a52e8-114">**Description**</span></span>|
+|<span data-ttu-id="ff1db-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="ff1db-113">**Element**</span></span>|<span data-ttu-id="ff1db-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="ff1db-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="a52e8-115">RecipientTrackingEvent</span><span class="sxs-lookup"><span data-stu-id="a52e8-115">RecipientTrackingEvent</span></span>](recipienttrackingevent.md) <br/> |<span data-ttu-id="a52e8-116">受信者の 1 つのイベントの情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="a52e8-116">Contains information for a single event for a recipient.</span></span>  <br/> |
+|[<span data-ttu-id="ff1db-115">受信者 Trackingイベント</span><span class="sxs-lookup"><span data-stu-id="ff1db-115">RecipientTrackingEvent</span></span>](recipienttrackingevent.md) <br/> |<span data-ttu-id="ff1db-116">受信者に対する1つのイベントに関する情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="ff1db-116">Contains information for a single event for a recipient.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="a52e8-117">テキスト値</span><span class="sxs-lookup"><span data-stu-id="a52e8-117">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="ff1db-117">テキスト値</span><span class="sxs-lookup"><span data-stu-id="ff1db-117">Text value</span></span>
 
-<span data-ttu-id="a52e8-118">この要素には、 **true**または**false**のいずれかができます。</span><span class="sxs-lookup"><span data-stu-id="a52e8-118">This element can be either **true** or **false**.</span></span> <span data-ttu-id="a52e8-119">**True**の場合は、組織のポリシーは、ユーザーが追加されたことを示します**false**の値は、組織のポリシーによってユーザーを追加しないことを示します。</span><span class="sxs-lookup"><span data-stu-id="a52e8-119">A value of **true** indicates that the user was added by an organization policy; a value of **false** indicates that the user was not added by an organization policy.</span></span> 
+<span data-ttu-id="ff1db-118">この要素は、 **true**または**false**のいずれかになります。</span><span class="sxs-lookup"><span data-stu-id="ff1db-118">This element can be either **true** or **false**.</span></span> <span data-ttu-id="ff1db-119">値**true**は、ユーザーが組織のポリシーによって追加されたことを示します。値が**false**の場合は、ユーザーが組織のポリシーによって追加されていないことを示します。</span><span class="sxs-lookup"><span data-stu-id="ff1db-119">A value of **true** indicates that the user was added by an organization policy; a value of **false** indicates that the user was not added by an organization policy.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="a52e8-120">備考</span><span class="sxs-lookup"><span data-stu-id="a52e8-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ff1db-120">注釈</span><span class="sxs-lookup"><span data-stu-id="ff1db-120">Remarks</span></span>
 
-<span data-ttu-id="a52e8-121">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="a52e8-121">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="ff1db-121">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="ff1db-121">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="a52e8-122">要素情報</span><span class="sxs-lookup"><span data-stu-id="a52e8-122">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="ff1db-122">要素の情報</span><span class="sxs-lookup"><span data-stu-id="ff1db-122">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="a52e8-123">名前空間</span><span class="sxs-lookup"><span data-stu-id="a52e8-123">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="a52e8-124">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="a52e8-124">Schema Name</span></span>  <br/> |<span data-ttu-id="a52e8-125">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="a52e8-125">Types schema</span></span>  <br/> |
-|<span data-ttu-id="a52e8-126">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="a52e8-126">Validation File</span></span>  <br/> |<span data-ttu-id="a52e8-127">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="a52e8-127">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="a52e8-128">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="a52e8-128">Can be Empty</span></span>  <br/> |<span data-ttu-id="a52e8-129">False</span><span class="sxs-lookup"><span data-stu-id="a52e8-129">False</span></span>  <br/> |
+|<span data-ttu-id="ff1db-123">Namespace</span><span class="sxs-lookup"><span data-stu-id="ff1db-123">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="ff1db-124">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="ff1db-124">Schema Name</span></span>  <br/> |<span data-ttu-id="ff1db-125">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="ff1db-125">Types schema</span></span>  <br/> |
+|<span data-ttu-id="ff1db-126">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="ff1db-126">Validation File</span></span>  <br/> |<span data-ttu-id="ff1db-127">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="ff1db-127">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="ff1db-128">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="ff1db-128">Can be Empty</span></span>  <br/> |<span data-ttu-id="ff1db-129">正しくない</span><span class="sxs-lookup"><span data-stu-id="ff1db-129">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="a52e8-130">関連項目</span><span class="sxs-lookup"><span data-stu-id="a52e8-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ff1db-130">関連項目</span><span class="sxs-lookup"><span data-stu-id="ff1db-130">See also</span></span>
 
 
 
-- [<span data-ttu-id="a52e8-131">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="a52e8-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="ff1db-131">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="ff1db-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

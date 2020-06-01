@@ -11,32 +11,32 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6f6c334c-b190-4e55-8f0a-38f2a018d1b3
-description: CreateFolder 操作フォルダー、予定表フォルダー、連絡先フォルダー、仕事フォルダー、および検索を作成するフォルダーです。
-ms.openlocfilehash: 97156d4a3747cacbdcf9563d21d93a0aa44c3358
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: CreateFolder 操作は、フォルダー、予定表フォルダー、連絡先フォルダー、タスクフォルダー、および検索フォルダーを作成します。
+ms.openlocfilehash: 125a6d212e5eaf85ace71c048de809f3a05ba9b6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759816"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457551"
 ---
-# <a name="createfolder-operation"></a><span data-ttu-id="0f3ef-103">CreateFolder 操作</span><span class="sxs-lookup"><span data-stu-id="0f3ef-103">CreateFolder operation</span></span>
+# <a name="createfolder-operation"></a><span data-ttu-id="7978d-103">CreateFolder 操作</span><span class="sxs-lookup"><span data-stu-id="7978d-103">CreateFolder operation</span></span>
 
-<span data-ttu-id="0f3ef-104">CreateFolder 操作フォルダー、予定表フォルダー、連絡先フォルダー、仕事フォルダー、および検索を作成するフォルダーです。</span><span class="sxs-lookup"><span data-stu-id="0f3ef-104">The CreateFolder operation creates folders, calendar folders, contacts folders, tasks folders, and search folders.</span></span>
+<span data-ttu-id="7978d-104">CreateFolder 操作は、フォルダー、予定表フォルダー、連絡先フォルダー、タスクフォルダー、および検索フォルダーを作成します。</span><span class="sxs-lookup"><span data-stu-id="7978d-104">The CreateFolder operation creates folders, calendar folders, contacts folders, tasks folders, and search folders.</span></span>
   
-## <a name="createfolder-request-example"></a><span data-ttu-id="0f3ef-105">CreateFolder 要求の例</span><span class="sxs-lookup"><span data-stu-id="0f3ef-105">CreateFolder request example</span></span>
+## <a name="createfolder-request-example"></a><span data-ttu-id="7978d-105">CreateFolder 要求の例</span><span class="sxs-lookup"><span data-stu-id="7978d-105">CreateFolder request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="0f3ef-106">説明</span><span class="sxs-lookup"><span data-stu-id="0f3ef-106">Description</span></span>
+### <a name="description"></a><span data-ttu-id="7978d-106">説明</span><span class="sxs-lookup"><span data-stu-id="7978d-106">Description</span></span>
 
-<span data-ttu-id="0f3ef-107">CreateFolder 要求の次の例では、メールボックスのルートに 2 つの新しいフォルダーを作成する要求を作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="0f3ef-107">The following example of a CreateFolder request shows how to form a request to create two new folders in the mailbox root.</span></span>
+<span data-ttu-id="7978d-107">CreateFolder 要求の次の例は、メールボックスルートに2つの新しいフォルダーを作成するための要求を形成する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="7978d-107">The following example of a CreateFolder request shows how to form a request to create two new folders in the mailbox root.</span></span>
   
-### <a name="code"></a><span data-ttu-id="0f3ef-108">コード</span><span class="sxs-lookup"><span data-stu-id="0f3ef-108">Code</span></span>
+### <a name="code"></a><span data-ttu-id="7978d-108">コード</span><span class="sxs-lookup"><span data-stu-id="7978d-108">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <CreateFolder xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateFolder xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ParentFolderId>
         <t:DistinguishedFolderId Id="msgfolderroot"/>
       </ParentFolderId>
@@ -53,42 +53,42 @@ ms.locfileid: "19759816"
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a><span data-ttu-id="0f3ef-109">要素を要求します。</span><span class="sxs-lookup"><span data-stu-id="0f3ef-109">Request elements</span></span>
+### <a name="request-elements"></a><span data-ttu-id="7978d-109">Request 要素</span><span class="sxs-lookup"><span data-stu-id="7978d-109">Request elements</span></span>
 
-<span data-ttu-id="0f3ef-110">次の要素は、要求で使用されます。</span><span class="sxs-lookup"><span data-stu-id="0f3ef-110">The following elements are used in the request:</span></span>
+<span data-ttu-id="7978d-110">要求では、次の要素が使用されます。</span><span class="sxs-lookup"><span data-stu-id="7978d-110">The following elements are used in the request:</span></span>
   
-- [<span data-ttu-id="0f3ef-111">CreateFolder</span><span class="sxs-lookup"><span data-stu-id="0f3ef-111">CreateFolder</span></span>](createfolder.md)
+- [<span data-ttu-id="7978d-111">CreateFolder</span><span class="sxs-lookup"><span data-stu-id="7978d-111">CreateFolder</span></span>](createfolder.md)
     
-- [<span data-ttu-id="0f3ef-112">ParentFolderId (TargetFolderIdType)</span><span class="sxs-lookup"><span data-stu-id="0f3ef-112">ParentFolderId (TargetFolderIdType)</span></span>](parentfolderid-targetfolderidtype.md)
+- [<span data-ttu-id="7978d-112">ParentFolderId (TargetFolderIdType)</span><span class="sxs-lookup"><span data-stu-id="7978d-112">ParentFolderId (TargetFolderIdType)</span></span>](parentfolderid-targetfolderidtype.md)
     
-- [<span data-ttu-id="0f3ef-113">DistinguishedFolderId</span><span class="sxs-lookup"><span data-stu-id="0f3ef-113">DistinguishedFolderId</span></span>](distinguishedfolderid.md)
+- [<span data-ttu-id="7978d-113">DistinguishedFolderId</span><span class="sxs-lookup"><span data-stu-id="7978d-113">DistinguishedFolderId</span></span>](distinguishedfolderid.md)
     
-- [<span data-ttu-id="0f3ef-114">フォルダー</span><span class="sxs-lookup"><span data-stu-id="0f3ef-114">Folders</span></span>](folders-ex15websvcsotherref.md)
+- [<span data-ttu-id="7978d-114">フォルダー</span><span class="sxs-lookup"><span data-stu-id="7978d-114">Folders</span></span>](folders-ex15websvcsotherref.md)
     
-- [<span data-ttu-id="0f3ef-115">Folder</span><span class="sxs-lookup"><span data-stu-id="0f3ef-115">Folder</span></span>](folder.md)
+- [<span data-ttu-id="7978d-115">Folder</span><span class="sxs-lookup"><span data-stu-id="7978d-115">Folder</span></span>](folder.md)
     
-- [<span data-ttu-id="0f3ef-116">表示名 (文字列)</span><span class="sxs-lookup"><span data-stu-id="0f3ef-116">DisplayName (string)</span></span>](displayname-string.md)
+- [<span data-ttu-id="7978d-116">DisplayName (文字列)</span><span class="sxs-lookup"><span data-stu-id="7978d-116">DisplayName (string)</span></span>](displayname-string.md)
     
 > [!NOTE]
-> <span data-ttu-id="0f3ef-117">MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、これらの要素を記述するスキーマがあります。</span><span class="sxs-lookup"><span data-stu-id="0f3ef-117">The schema that describes these elements is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span> 
+> <span data-ttu-id="7978d-117">これらの要素を説明するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="7978d-117">The schema that describes these elements is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span> 
   
-<span data-ttu-id="0f3ef-118">CreateFolder 操作の要求メッセージには、他のオプションを検索するには、スキーマの階層構造を表示します。</span><span class="sxs-lookup"><span data-stu-id="0f3ef-118">To find other options for the request message of the CreateFolder operation, explore the schema hierarchy.</span></span> <span data-ttu-id="0f3ef-119">[CreateFolder](createfolder.md)要素から開始します。</span><span class="sxs-lookup"><span data-stu-id="0f3ef-119">Start at the [CreateFolder](createfolder.md) element.</span></span> 
-  
-> [!NOTE]
-> <span data-ttu-id="0f3ef-120">フォルダーの後で行う get 呼び出しの制限に戻ります **: 開催者の予定表**のプロパティを使用して、制限付き検索フォルダーを作成する場合、**メッセージ: から**プロパティを所定の位置にします。</span><span class="sxs-lookup"><span data-stu-id="0f3ef-120">If you create a search folder with a restriction by using the **calendar:Organizer** property, a subsequent get folder call will return the restriction with the **message:from** property in its place.</span></span> <span data-ttu-id="0f3ef-121">これら 2 つのプロパティは、同じ基になる MAPI プロパティにマップします。</span><span class="sxs-lookup"><span data-stu-id="0f3ef-121">These two properties map to the same underlying MAPI property.</span></span> 
-  
-<span data-ttu-id="0f3ef-122">CreateFolder 操作は、汎用フォルダーの種類の要素を使用してフォルダーを作成し、 **FolderClass**の要素を設定するときにのみ、フォルダーのカスタム クラスの作成をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="0f3ef-122">The CreateFolder operation supports the creation of a custom folder class only when you create the folder by using a generic folder type element and set the **FolderClass** element.</span></span> 
-  
-## <a name="successful-createfolder-response-example"></a><span data-ttu-id="0f3ef-123">CreateFolder 応答の成功の例</span><span class="sxs-lookup"><span data-stu-id="0f3ef-123">Successful CreateFolder response example</span></span>
-
-### <a name="description"></a><span data-ttu-id="0f3ef-124">説明</span><span class="sxs-lookup"><span data-stu-id="0f3ef-124">Description</span></span>
-
-<span data-ttu-id="0f3ef-125">CreateFolder 要求に正常な応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="0f3ef-125">The following example shows a successful response to the CreateFolder request.</span></span> <span data-ttu-id="0f3ef-126">この例では、応答は、新しいフォルダーの識別子を返します。</span><span class="sxs-lookup"><span data-stu-id="0f3ef-126">In this example, the response returns the identifiers of the new folders.</span></span>
+<span data-ttu-id="7978d-118">CreateFolder 操作の要求メッセージに関するその他のオプションについては、スキーマ階層を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7978d-118">To find other options for the request message of the CreateFolder operation, explore the schema hierarchy.</span></span> <span data-ttu-id="7978d-119">[CreateFolder](createfolder.md)要素から開始します。</span><span class="sxs-lookup"><span data-stu-id="7978d-119">Start at the [CreateFolder](createfolder.md) element.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="0f3ef-127">フォルダー ID と変更キーは、読みやすさを保持するために短縮されています。</span><span class="sxs-lookup"><span data-stu-id="0f3ef-127">The folder ID and the change key have been shortened to preserve readability.</span></span> 
+> <span data-ttu-id="7978d-120">**Calendar: オーガナイザー**プロパティを使用して、制限付きの検索フォルダーを作成すると、それ以降の get フォルダー呼び出しでは、その場所にある**メッセージ: from**プロパティを使用して制限が返されます。</span><span class="sxs-lookup"><span data-stu-id="7978d-120">If you create a search folder with a restriction by using the **calendar:Organizer** property, a subsequent get folder call will return the restriction with the **message:from** property in its place.</span></span> <span data-ttu-id="7978d-121">これら2つのプロパティは、同じ基になる MAPI プロパティにマップされます。</span><span class="sxs-lookup"><span data-stu-id="7978d-121">These two properties map to the same underlying MAPI property.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="0f3ef-128">コード</span><span class="sxs-lookup"><span data-stu-id="0f3ef-128">Code</span></span>
+<span data-ttu-id="7978d-122">CreateFolder 操作では、汎用フォルダーの種類要素を使用してフォルダーを作成し、 **Folderclass**要素を設定することによってのみ、カスタムフォルダークラスの作成がサポートされます。</span><span class="sxs-lookup"><span data-stu-id="7978d-122">The CreateFolder operation supports the creation of a custom folder class only when you create the folder by using a generic folder type element and set the **FolderClass** element.</span></span> 
+  
+## <a name="successful-createfolder-response-example"></a><span data-ttu-id="7978d-123">Successful CreateFolder response の例</span><span class="sxs-lookup"><span data-stu-id="7978d-123">Successful CreateFolder response example</span></span>
+
+### <a name="description"></a><span data-ttu-id="7978d-124">説明</span><span class="sxs-lookup"><span data-stu-id="7978d-124">Description</span></span>
+
+<span data-ttu-id="7978d-125">次の例は、CreateFolder 要求に対する正常な応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="7978d-125">The following example shows a successful response to the CreateFolder request.</span></span> <span data-ttu-id="7978d-126">この例では、応答は新しいフォルダーの識別子を返します。</span><span class="sxs-lookup"><span data-stu-id="7978d-126">In this example, the response returns the identifiers of the new folders.</span></span>
+  
+> [!NOTE]
+> <span data-ttu-id="7978d-127">読みやすくするために、フォルダー ID と変更キーが短縮されています。</span><span class="sxs-lookup"><span data-stu-id="7978d-127">The folder ID and the change key have been shortened to preserve readability.</span></span> 
+  
+### <a name="code"></a><span data-ttu-id="7978d-128">コード</span><span class="sxs-lookup"><span data-stu-id="7978d-128">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -97,12 +97,12 @@ ms.locfileid: "19759816"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="595" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <CreateFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                          xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                          xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CreateFolderResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -126,35 +126,35 @@ ms.locfileid: "19759816"
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a><span data-ttu-id="0f3ef-129">正常な応答の要素</span><span class="sxs-lookup"><span data-stu-id="0f3ef-129">Successful response elements</span></span>
+### <a name="successful-response-elements"></a><span data-ttu-id="7978d-129">成功した応答要素</span><span class="sxs-lookup"><span data-stu-id="7978d-129">Successful response elements</span></span>
 
-<span data-ttu-id="0f3ef-130">次の要素は、応答で使用されます。</span><span class="sxs-lookup"><span data-stu-id="0f3ef-130">The following elements are used in the response:</span></span>
+<span data-ttu-id="7978d-130">応答では、次の要素が使用されます。</span><span class="sxs-lookup"><span data-stu-id="7978d-130">The following elements are used in the response:</span></span>
   
-- [<span data-ttu-id="0f3ef-131">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="0f3ef-131">ServerVersionInfo</span></span>](serverversioninfo.md)
+- [<span data-ttu-id="7978d-131">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="7978d-131">ServerVersionInfo</span></span>](serverversioninfo.md)
     
-- [<span data-ttu-id="0f3ef-132">CreateFolderResponse</span><span class="sxs-lookup"><span data-stu-id="0f3ef-132">CreateFolderResponse</span></span>](createfolderresponse.md)
+- [<span data-ttu-id="7978d-132">CreateFolderResponse</span><span class="sxs-lookup"><span data-stu-id="7978d-132">CreateFolderResponse</span></span>](createfolderresponse.md)
     
-- [<span data-ttu-id="0f3ef-133">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="0f3ef-133">ResponseMessages</span></span>](responsemessages.md)
+- [<span data-ttu-id="7978d-133">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="7978d-133">ResponseMessages</span></span>](responsemessages.md)
     
-- [<span data-ttu-id="0f3ef-134">CreateFolderResponseMessage</span><span class="sxs-lookup"><span data-stu-id="0f3ef-134">CreateFolderResponseMessage</span></span>](createfolderresponsemessage.md)
+- [<span data-ttu-id="7978d-134">CreateFolderResponseMessage</span><span class="sxs-lookup"><span data-stu-id="7978d-134">CreateFolderResponseMessage</span></span>](createfolderresponsemessage.md)
     
-- [<span data-ttu-id="0f3ef-135">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="0f3ef-135">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="7978d-135">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="7978d-135">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="0f3ef-136">フォルダー</span><span class="sxs-lookup"><span data-stu-id="0f3ef-136">Folders</span></span>](folders-ex15websvcsotherref.md)
+- [<span data-ttu-id="7978d-136">フォルダー</span><span class="sxs-lookup"><span data-stu-id="7978d-136">Folders</span></span>](folders-ex15websvcsotherref.md)
     
-- [<span data-ttu-id="0f3ef-137">Folder</span><span class="sxs-lookup"><span data-stu-id="0f3ef-137">Folder</span></span>](folder.md)
+- [<span data-ttu-id="7978d-137">Folder</span><span class="sxs-lookup"><span data-stu-id="7978d-137">Folder</span></span>](folder.md)
     
-- [<span data-ttu-id="0f3ef-138">フォルダー Id</span><span class="sxs-lookup"><span data-stu-id="0f3ef-138">FolderId</span></span>](folderid.md)
+- [<span data-ttu-id="7978d-138">FolderId</span><span class="sxs-lookup"><span data-stu-id="7978d-138">FolderId</span></span>](folderid.md)
     
-<span data-ttu-id="0f3ef-139">CreateFolder 操作の応答メッセージには、他のオプションを検索するには、スキーマの階層構造を表示します。</span><span class="sxs-lookup"><span data-stu-id="0f3ef-139">To find other options for the response message of the CreateFolder operation, explore the schema hierarchy.</span></span> <span data-ttu-id="0f3ef-140">[CreateFolderResponse](createfolderresponse.md)要素から開始します。</span><span class="sxs-lookup"><span data-stu-id="0f3ef-140">Start at the [CreateFolderResponse](createfolderresponse.md) element.</span></span> 
+<span data-ttu-id="7978d-139">CreateFolder 操作の応答メッセージに関するその他のオプションについては、スキーマ階層を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7978d-139">To find other options for the response message of the CreateFolder operation, explore the schema hierarchy.</span></span> <span data-ttu-id="7978d-140">[Createfolderresponse](createfolderresponse.md)要素から開始します。</span><span class="sxs-lookup"><span data-stu-id="7978d-140">Start at the [CreateFolderResponse](createfolderresponse.md) element.</span></span> 
   
-## <a name="createfolder-error-response"></a><span data-ttu-id="0f3ef-141">CreateFolder エラー応答</span><span class="sxs-lookup"><span data-stu-id="0f3ef-141">CreateFolder error response</span></span>
+## <a name="createfolder-error-response"></a><span data-ttu-id="7978d-141">CreateFolder エラー応答</span><span class="sxs-lookup"><span data-stu-id="7978d-141">CreateFolder error response</span></span>
 
-### <a name="description"></a><span data-ttu-id="0f3ef-142">説明</span><span class="sxs-lookup"><span data-stu-id="0f3ef-142">Description</span></span>
+### <a name="description"></a><span data-ttu-id="7978d-142">説明</span><span class="sxs-lookup"><span data-stu-id="7978d-142">Description</span></span>
 
-<span data-ttu-id="0f3ef-143">CreateFolder 要求に対してエラー応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="0f3ef-143">The following example shows an error response to a CreateFolder request.</span></span>
+<span data-ttu-id="7978d-143">次の例は、CreateFolder 要求に対するエラー応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="7978d-143">The following example shows an error response to a CreateFolder request.</span></span>
   
-### <a name="code"></a><span data-ttu-id="0f3ef-144">コード</span><span class="sxs-lookup"><span data-stu-id="0f3ef-144">Code</span></span>
+### <a name="code"></a><span data-ttu-id="7978d-144">コード</span><span class="sxs-lookup"><span data-stu-id="7978d-144">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -163,12 +163,12 @@ ms.locfileid: "19759816"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="595" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <CreateFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                          xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                          xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CreateFolderResponseMessage ResponseClass="Error">
           <m:MessageText>A folder with the specified name already exists.</m:MessageText>
@@ -182,43 +182,43 @@ ms.locfileid: "19759816"
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a><span data-ttu-id="0f3ef-145">エラー応答の要素</span><span class="sxs-lookup"><span data-stu-id="0f3ef-145">Error response elements</span></span>
+### <a name="error-response-elements"></a><span data-ttu-id="7978d-145">エラー応答要素</span><span class="sxs-lookup"><span data-stu-id="7978d-145">Error response elements</span></span>
 
-<span data-ttu-id="0f3ef-146">エラー応答では、次の要素が使用されます。</span><span class="sxs-lookup"><span data-stu-id="0f3ef-146">The following elements are used in the error response:</span></span>
+<span data-ttu-id="7978d-146">エラー応答では、次の要素が使用されます。</span><span class="sxs-lookup"><span data-stu-id="7978d-146">The following elements are used in the error response:</span></span>
   
-- [<span data-ttu-id="0f3ef-147">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="0f3ef-147">ServerVersionInfo</span></span>](serverversioninfo.md)
+- [<span data-ttu-id="7978d-147">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="7978d-147">ServerVersionInfo</span></span>](serverversioninfo.md)
     
-- [<span data-ttu-id="0f3ef-148">CreateFolderResponse</span><span class="sxs-lookup"><span data-stu-id="0f3ef-148">CreateFolderResponse</span></span>](createfolderresponse.md)
+- [<span data-ttu-id="7978d-148">CreateFolderResponse</span><span class="sxs-lookup"><span data-stu-id="7978d-148">CreateFolderResponse</span></span>](createfolderresponse.md)
     
-- [<span data-ttu-id="0f3ef-149">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="0f3ef-149">ResponseMessages</span></span>](responsemessages.md)
+- [<span data-ttu-id="7978d-149">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="7978d-149">ResponseMessages</span></span>](responsemessages.md)
     
-- [<span data-ttu-id="0f3ef-150">CreateFolderResponseMessage</span><span class="sxs-lookup"><span data-stu-id="0f3ef-150">CreateFolderResponseMessage</span></span>](createfolderresponsemessage.md)
+- [<span data-ttu-id="7978d-150">CreateFolderResponseMessage</span><span class="sxs-lookup"><span data-stu-id="7978d-150">CreateFolderResponseMessage</span></span>](createfolderresponsemessage.md)
     
-- [<span data-ttu-id="0f3ef-151">MessageText</span><span class="sxs-lookup"><span data-stu-id="0f3ef-151">MessageText</span></span>](messagetext.md)
+- [<span data-ttu-id="7978d-151">MessageText</span><span class="sxs-lookup"><span data-stu-id="7978d-151">MessageText</span></span>](messagetext.md)
     
-- [<span data-ttu-id="0f3ef-152">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="0f3ef-152">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="7978d-152">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="7978d-152">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="0f3ef-153">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="0f3ef-153">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
+- [<span data-ttu-id="7978d-153">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="7978d-153">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
     
-- [<span data-ttu-id="0f3ef-154">フォルダー</span><span class="sxs-lookup"><span data-stu-id="0f3ef-154">Folders</span></span>](folders-ex15websvcsotherref.md)
+- [<span data-ttu-id="7978d-154">フォルダー</span><span class="sxs-lookup"><span data-stu-id="7978d-154">Folders</span></span>](folders-ex15websvcsotherref.md)
     
-<span data-ttu-id="0f3ef-155">CreateFolder 操作の応答のエラー メッセージについては、他のオプションを検索するには、スキーマの階層構造を表示します。</span><span class="sxs-lookup"><span data-stu-id="0f3ef-155">To find other options for the error response message of the CreateFolder operation, explore the schema hierarchy.</span></span> <span data-ttu-id="0f3ef-156">[CreateFolderResponse](createfolderresponse.md)要素から開始します。</span><span class="sxs-lookup"><span data-stu-id="0f3ef-156">Start at the [CreateFolderResponse](createfolderresponse.md) element.</span></span> 
+<span data-ttu-id="7978d-155">CreateFolder 操作のエラー応答メッセージに関するその他のオプションについては、「スキーマ階層」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7978d-155">To find other options for the error response message of the CreateFolder operation, explore the schema hierarchy.</span></span> <span data-ttu-id="7978d-156">[Createfolderresponse](createfolderresponse.md)要素から開始します。</span><span class="sxs-lookup"><span data-stu-id="7978d-156">Start at the [CreateFolderResponse](createfolderresponse.md) element.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="0f3ef-157">関連項目</span><span class="sxs-lookup"><span data-stu-id="0f3ef-157">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7978d-157">関連項目</span><span class="sxs-lookup"><span data-stu-id="7978d-157">See also</span></span>
 
 
 
-<span data-ttu-id="0f3ef-158">
-  [FindItem 操作](finditem-operation.md)</span><span class="sxs-lookup"><span data-stu-id="0f3ef-158">[FindItem operation](finditem-operation.md)</span></span>
+<span data-ttu-id="7978d-158">
+  [FindItem 操作](finditem-operation.md)</span><span class="sxs-lookup"><span data-stu-id="7978d-158">[FindItem operation](finditem-operation.md)</span></span>
   
-<span data-ttu-id="0f3ef-159">
-  [FindFolder 操作](findfolder-operation.md)</span><span class="sxs-lookup"><span data-stu-id="0f3ef-159">[FindFolder operation](findfolder-operation.md)</span></span>
+<span data-ttu-id="7978d-159">
+  [FindFolder 操作](findfolder-operation.md)</span><span class="sxs-lookup"><span data-stu-id="7978d-159">[FindFolder operation](findfolder-operation.md)</span></span>
   
- <span data-ttu-id="0f3ef-160">**CreateFolderType**</span><span class="sxs-lookup"><span data-stu-id="0f3ef-160">**CreateFolderType**</span></span>
+ <span data-ttu-id="7978d-160">**CreateFolderType**</span><span class="sxs-lookup"><span data-stu-id="7978d-160">**CreateFolderType**</span></span>
 
 
-- [<span data-ttu-id="0f3ef-161">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="0f3ef-161">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="7978d-161">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="7978d-161">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
 
-[<span data-ttu-id="0f3ef-162">フォルダー (Exchange Web サービス) を作成します。</span><span class="sxs-lookup"><span data-stu-id="0f3ef-162">Creating Folders (Exchange Web Services)</span></span>](http://msdn.microsoft.com/library/3b15b0ec-8691-45ed-9a24-a91ff732d6cf%28Office.15%29.aspx)
+[<span data-ttu-id="7978d-162">フォルダーの作成 (Exchange Web サービス)</span><span class="sxs-lookup"><span data-stu-id="7978d-162">Creating Folders (Exchange Web Services)</span></span>](https://msdn.microsoft.com/library/3b15b0ec-8691-45ed-9a24-a91ff732d6cf%28Office.15%29.aspx)
 

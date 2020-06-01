@@ -6,59 +6,59 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 2ab522bc-40ea-4e43-aa57-6d2562db35e9
-description: DeliveryReportEnabled 要素は、DeliveryReportEnabled() フラグを表します。 DeliveryReportEnabled 要素は、内部使用のみ。 クライアントでは、この要素は使用されません。
-ms.openlocfilehash: 089256a5f75ad92a4f11c5aaf3d175382eeee456
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DeliveryReportEnabled 要素は、DeliveryReportEnabled () フラグを表します。 DeliveryReportEnabled 要素は、内部使用のみを対象としています。 この要素はクライアントによって使用されません。
+ms.openlocfilehash: 2a163b3e6ceaa169cc8f76f395b7d501419a31ed
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760007"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458475"
 ---
-# <a name="deliveryreportenabled-soap"></a><span data-ttu-id="2d510-105">DeliveryReportEnabled (SOAP)</span><span class="sxs-lookup"><span data-stu-id="2d510-105">DeliveryReportEnabled (SOAP)</span></span>
+# <a name="deliveryreportenabled-soap"></a><span data-ttu-id="c1fc6-105">DeliveryReportEnabled (SOAP)</span><span class="sxs-lookup"><span data-stu-id="c1fc6-105">DeliveryReportEnabled (SOAP)</span></span>
 
-<span data-ttu-id="2d510-106">**DeliveryReportEnabled**要素は、 **DeliveryReportEnabled()** フラグを表します。</span><span class="sxs-lookup"><span data-stu-id="2d510-106">The **DeliveryReportEnabled** element represents the **DeliveryReportEnabled()** flag.</span></span> <span data-ttu-id="2d510-107">**DeliveryReportEnabled**要素は、内部使用のみ。</span><span class="sxs-lookup"><span data-stu-id="2d510-107">The **DeliveryReportEnabled** element is for internal use only.</span></span> <span data-ttu-id="2d510-108">クライアントでは、この要素は使用されません。</span><span class="sxs-lookup"><span data-stu-id="2d510-108">This element is not used by clients.</span></span> 
+<span data-ttu-id="c1fc6-106">**Deliveryreportenabled**要素は、 **deliveryreportenabled ()** フラグを表します。</span><span class="sxs-lookup"><span data-stu-id="c1fc6-106">The **DeliveryReportEnabled** element represents the **DeliveryReportEnabled()** flag.</span></span> <span data-ttu-id="c1fc6-107">**Deliveryreportenabled**要素は、内部使用のみを対象としています。</span><span class="sxs-lookup"><span data-stu-id="c1fc6-107">The **DeliveryReportEnabled** element is for internal use only.</span></span> <span data-ttu-id="c1fc6-108">この要素はクライアントによって使用されません。</span><span class="sxs-lookup"><span data-stu-id="c1fc6-108">This element is not used by clients.</span></span> 
   
 ```XML
 <DeliveryReportEnabled>true | false</DeliveryReportEnabled>
 ```
 
- <span data-ttu-id="2d510-109">**ブール型 (Boolean)**</span><span class="sxs-lookup"><span data-stu-id="2d510-109">**Boolean**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="2d510-110">属性および要素</span><span class="sxs-lookup"><span data-stu-id="2d510-110">Attributes and elements</span></span>
+ <span data-ttu-id="c1fc6-109">**Boolean**</span><span class="sxs-lookup"><span data-stu-id="c1fc6-109">**Boolean**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="c1fc6-110">属性と要素</span><span class="sxs-lookup"><span data-stu-id="c1fc6-110">Attributes and elements</span></span>
 
-<span data-ttu-id="2d510-111">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="2d510-111">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="c1fc6-111">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="c1fc6-111">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="2d510-112">属性</span><span class="sxs-lookup"><span data-stu-id="2d510-112">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="c1fc6-112">属性</span><span class="sxs-lookup"><span data-stu-id="c1fc6-112">Attributes</span></span>
 
-<span data-ttu-id="2d510-113">なし。</span><span class="sxs-lookup"><span data-stu-id="2d510-113">None.</span></span>
+<span data-ttu-id="c1fc6-113">なし。</span><span class="sxs-lookup"><span data-stu-id="c1fc6-113">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="2d510-114">子要素</span><span class="sxs-lookup"><span data-stu-id="2d510-114">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="c1fc6-114">子要素</span><span class="sxs-lookup"><span data-stu-id="c1fc6-114">Child elements</span></span>
 
-<span data-ttu-id="2d510-115">なし。</span><span class="sxs-lookup"><span data-stu-id="2d510-115">None.</span></span>
+<span data-ttu-id="c1fc6-115">なし。</span><span class="sxs-lookup"><span data-stu-id="c1fc6-115">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="2d510-116">親要素</span><span class="sxs-lookup"><span data-stu-id="2d510-116">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="c1fc6-116">親要素</span><span class="sxs-lookup"><span data-stu-id="c1fc6-116">Parent elements</span></span>
 
-|<span data-ttu-id="2d510-117">**要素**</span><span class="sxs-lookup"><span data-stu-id="2d510-117">**Element**</span></span>|<span data-ttu-id="2d510-118">**説明**</span><span class="sxs-lookup"><span data-stu-id="2d510-118">**Description**</span></span>|
+|<span data-ttu-id="c1fc6-117">**要素**</span><span class="sxs-lookup"><span data-stu-id="c1fc6-117">**Element**</span></span>|<span data-ttu-id="c1fc6-118">**説明**</span><span class="sxs-lookup"><span data-stu-id="c1fc6-118">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="2d510-119">OrganizationRelationshipSettings (SOAP)</span><span class="sxs-lookup"><span data-stu-id="2d510-119">OrganizationRelationshipSettings (SOAP)</span></span>](organizationrelationshipsettings-soap.md) <br/> |<span data-ttu-id="2d510-120">1 つの組織の組織との関係のリストを表します。</span><span class="sxs-lookup"><span data-stu-id="2d510-120">Represents a list of organization relationships for a single organization.</span></span>  <br/> |
+|[<span data-ttu-id="c1fc6-119">組織のリレーションシップ設定 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="c1fc6-119">OrganizationRelationshipSettings (SOAP)</span></span>](organizationrelationshipsettings-soap.md) <br/> |<span data-ttu-id="c1fc6-120">1つの組織の組織上の関係のリストを表します。</span><span class="sxs-lookup"><span data-stu-id="c1fc6-120">Represents a list of organization relationships for a single organization.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="2d510-121">テキスト値</span><span class="sxs-lookup"><span data-stu-id="2d510-121">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="c1fc6-121">テキスト値</span><span class="sxs-lookup"><span data-stu-id="c1fc6-121">Text value</span></span>
 
-<span data-ttu-id="2d510-122">DeliveryReportEnabled 要素のテキスト値は、組織内のユーザーからの配信レポートを使用できることを示します。</span><span class="sxs-lookup"><span data-stu-id="2d510-122">A text value of true for the DeliveryReportEnabled element indicates that the delivery reports from users in the organization can be used.</span></span> <span data-ttu-id="2d510-123">False の値は、配信レポートを抑制する必要があることを示します。</span><span class="sxs-lookup"><span data-stu-id="2d510-123">A value of false indicates that the delivery reports should suppressed.</span></span>
+<span data-ttu-id="c1fc6-122">DeliveryReportEnabled 要素のテキスト値が true の場合は、組織内のユーザーからの配信レポートを使用できることを示します。</span><span class="sxs-lookup"><span data-stu-id="c1fc6-122">A text value of true for the DeliveryReportEnabled element indicates that the delivery reports from users in the organization can be used.</span></span> <span data-ttu-id="c1fc6-123">値が false の場合は、配信レポートを抑制する必要があることを示します。</span><span class="sxs-lookup"><span data-stu-id="c1fc6-123">A value of false indicates that the delivery reports should suppressed.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="2d510-124">備考</span><span class="sxs-lookup"><span data-stu-id="2d510-124">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c1fc6-124">注釈</span><span class="sxs-lookup"><span data-stu-id="c1fc6-124">Remarks</span></span>
 
-<span data-ttu-id="2d510-125">許可またはサーバーからの配信レポートを抑制するには、この要素を使用します。</span><span class="sxs-lookup"><span data-stu-id="2d510-125">Use this element to allow or suppress delivery reports from the server.</span></span>
+<span data-ttu-id="c1fc6-125">この要素を使用して、サーバーからの配信レポートを許可または抑制します。</span><span class="sxs-lookup"><span data-stu-id="c1fc6-125">Use this element to allow or suppress delivery reports from the server.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="2d510-126">要素情報</span><span class="sxs-lookup"><span data-stu-id="2d510-126">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="c1fc6-126">要素の情報</span><span class="sxs-lookup"><span data-stu-id="c1fc6-126">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="2d510-127">名前空間</span><span class="sxs-lookup"><span data-stu-id="2d510-127">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|<span data-ttu-id="2d510-128">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="2d510-128">Schema Name</span></span>  <br/> |<span data-ttu-id="2d510-129">スキーマの自動検出</span><span class="sxs-lookup"><span data-stu-id="2d510-129">Autodiscover schema</span></span>  <br/> |
-|<span data-ttu-id="2d510-130">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="2d510-130">Validation File</span></span>  <br/> |<span data-ttu-id="2d510-131">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="2d510-131">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="2d510-132">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="2d510-132">Can be Empty</span></span>  <br/> |<span data-ttu-id="2d510-133">True</span><span class="sxs-lookup"><span data-stu-id="2d510-133">True</span></span>  <br/> |
+|<span data-ttu-id="c1fc6-127">Namespace</span><span class="sxs-lookup"><span data-stu-id="c1fc6-127">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|<span data-ttu-id="c1fc6-128">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="c1fc6-128">Schema Name</span></span>  <br/> |<span data-ttu-id="c1fc6-129">自動検出スキーマ</span><span class="sxs-lookup"><span data-stu-id="c1fc6-129">Autodiscover schema</span></span>  <br/> |
+|<span data-ttu-id="c1fc6-130">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="c1fc6-130">Validation File</span></span>  <br/> |<span data-ttu-id="c1fc6-131">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="c1fc6-131">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="c1fc6-132">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="c1fc6-132">Can be Empty</span></span>  <br/> |<span data-ttu-id="c1fc6-133">正しい</span><span class="sxs-lookup"><span data-stu-id="c1fc6-133">True</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="2d510-134">関連項目</span><span class="sxs-lookup"><span data-stu-id="2d510-134">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c1fc6-134">関連項目</span><span class="sxs-lookup"><span data-stu-id="c1fc6-134">See also</span></span>
 
-- [<span data-ttu-id="2d510-135">GetOrganizationRelationshipSettings 操作 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="2d510-135">GetOrganizationRelationshipSettings operation (SOAP)</span></span>](getorganizationrelationshipsettings-operation-soap.md)
+- [<span data-ttu-id="c1fc6-135">Get組織の Relationshipsettings 操作 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="c1fc6-135">GetOrganizationRelationshipSettings operation (SOAP)</span></span>](getorganizationrelationshipsettings-operation-soap.md)
 

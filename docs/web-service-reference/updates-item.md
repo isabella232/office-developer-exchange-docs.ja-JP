@@ -1,5 +1,5 @@
 ---
-title: 更新 (アイテム)
+title: Updates (Item)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,25 +11,25 @@ api_name:
 api_type:
 - schema
 ms.assetid: 5c1a855e-390d-4713-9d10-6e86ca392814
-description: 更新プログラムの要素には、定義する要素のセットが含まれていて、このオプションを設定すると、アイテムのプロパティの変更を削除します。
-ms.openlocfilehash: 13df458c783b942e1c868853c41b6247119cf123
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Updates 要素には、アイテムのプロパティに対する追加、設定、および削除の変更を定義する一連の要素が含まれています。
+ms.openlocfilehash: 6902ea4d3d3d9adc074745d5642cdfa6d91a9163
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839890"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456354"
 ---
-# <a name="updates-item"></a><span data-ttu-id="cde9a-103">更新 (アイテム)</span><span class="sxs-lookup"><span data-stu-id="cde9a-103">Updates (Item)</span></span>
+# <a name="updates-item"></a><span data-ttu-id="c2140-103">Updates (Item)</span><span class="sxs-lookup"><span data-stu-id="c2140-103">Updates (Item)</span></span>
 
-<span data-ttu-id="cde9a-104">**更新プログラム**の要素には、定義する要素のセットが含まれていて、このオプションを設定すると、アイテムのプロパティの変更を削除します。</span><span class="sxs-lookup"><span data-stu-id="cde9a-104">The **Updates** element contains a set of elements that define append, set, and delete changes to item properties.</span></span> 
+<span data-ttu-id="c2140-104">**Updates**要素には、アイテムのプロパティに対する追加、設定、および削除の変更を定義する一連の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="c2140-104">The **Updates** element contains a set of elements that define append, set, and delete changes to item properties.</span></span> 
   
-- [<span data-ttu-id="cde9a-105">UpdateItem</span><span class="sxs-lookup"><span data-stu-id="cde9a-105">UpdateItem</span></span>](updateitem.md)
+- [<span data-ttu-id="c2140-105">UpdateItem</span><span class="sxs-lookup"><span data-stu-id="c2140-105">UpdateItem</span></span>](updateitem.md)
   
-- [<span data-ttu-id="cde9a-106">ItemChanges</span><span class="sxs-lookup"><span data-stu-id="cde9a-106">ItemChanges</span></span>](itemchanges.md)
+- [<span data-ttu-id="c2140-106">ItemChanges</span><span class="sxs-lookup"><span data-stu-id="c2140-106">ItemChanges</span></span>](itemchanges.md)
   
-- [<span data-ttu-id="cde9a-107">ItemChange</span><span class="sxs-lookup"><span data-stu-id="cde9a-107">ItemChange</span></span>](itemchange.md)
+- [<span data-ttu-id="c2140-107">ItemChange</span><span class="sxs-lookup"><span data-stu-id="c2140-107">ItemChange</span></span>](itemchange.md)
   
-- [<span data-ttu-id="cde9a-108">更新 (アイテム)</span><span class="sxs-lookup"><span data-stu-id="cde9a-108">Updates (Item)</span></span>](updates-item.md)
+- [<span data-ttu-id="c2140-108">Updates (Item)</span><span class="sxs-lookup"><span data-stu-id="c2140-108">Updates (Item)</span></span>](updates-item.md)
   
 ```xml
 <Updates>
@@ -39,48 +39,48 @@ ms.locfileid: "19839890"
 </Updates>
 ```
 
-<span data-ttu-id="cde9a-109">**NonEmptyArrayOfItemChangeDescriptionsType**</span><span class="sxs-lookup"><span data-stu-id="cde9a-109">**NonEmptyArrayOfItemChangeDescriptionsType**</span></span>
+<span data-ttu-id="c2140-109">**NonEmptyArrayOfItemChangeDescriptionsType**</span><span class="sxs-lookup"><span data-stu-id="c2140-109">**NonEmptyArrayOfItemChangeDescriptionsType**</span></span>
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="cde9a-110">属性および要素</span><span class="sxs-lookup"><span data-stu-id="cde9a-110">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="c2140-110">属性と要素</span><span class="sxs-lookup"><span data-stu-id="c2140-110">Attributes and elements</span></span>
 
-<span data-ttu-id="cde9a-111">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="cde9a-111">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="c2140-111">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="c2140-111">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="cde9a-112">属性</span><span class="sxs-lookup"><span data-stu-id="cde9a-112">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="c2140-112">属性</span><span class="sxs-lookup"><span data-stu-id="c2140-112">Attributes</span></span>
 
-<span data-ttu-id="cde9a-113">なし。</span><span class="sxs-lookup"><span data-stu-id="cde9a-113">None.</span></span>
+<span data-ttu-id="c2140-113">なし。</span><span class="sxs-lookup"><span data-stu-id="c2140-113">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="cde9a-114">子要素</span><span class="sxs-lookup"><span data-stu-id="cde9a-114">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="c2140-114">子要素</span><span class="sxs-lookup"><span data-stu-id="c2140-114">Child elements</span></span>
 
-|<span data-ttu-id="cde9a-115">**要素**</span><span class="sxs-lookup"><span data-stu-id="cde9a-115">**Element**</span></span>|<span data-ttu-id="cde9a-116">**説明**</span><span class="sxs-lookup"><span data-stu-id="cde9a-116">**Description**</span></span>|
+|<span data-ttu-id="c2140-115">**Element**</span><span class="sxs-lookup"><span data-stu-id="c2140-115">**Element**</span></span>|<span data-ttu-id="c2140-116">**説明**</span><span class="sxs-lookup"><span data-stu-id="c2140-116">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="cde9a-117">AppendToItemField</span><span class="sxs-lookup"><span data-stu-id="cde9a-117">AppendToItemField</span></span>](appendtoitemfield.md) <br/> |<span data-ttu-id="cde9a-118">[UpdateItem 操作](updateitem-operation.md)中に 1 つのアイテムのプロパティを追加するデータを表します。</span><span class="sxs-lookup"><span data-stu-id="cde9a-118">Represents data to append to a single property of an item during an [UpdateItem operation](updateitem-operation.md).</span></span>  <br/> |
-|[<span data-ttu-id="cde9a-119">SetItemField</span><span class="sxs-lookup"><span data-stu-id="cde9a-119">SetItemField</span></span>](setitemfield.md) <br/> |<span data-ttu-id="cde9a-120">[UpdateItem 操作](updateitem-operation.md)内の項目の 1 つのプロパティには、更新プログラムを表します。</span><span class="sxs-lookup"><span data-stu-id="cde9a-120">Represents an update to a single property of an item in an [UpdateItem operation](updateitem-operation.md).</span></span>  <br/> |
-|[<span data-ttu-id="cde9a-121">DeleteItemField</span><span class="sxs-lookup"><span data-stu-id="cde9a-121">DeleteItemField</span></span>](deleteitemfield.md) <br/> |<span data-ttu-id="cde9a-122">[UpdateItem 操作](updateitem-operation.md)中に、アイテムから指定されたプロパティを削除する操作を表します。</span><span class="sxs-lookup"><span data-stu-id="cde9a-122">Represents an operation to delete a given property from an item during an [UpdateItem operation](updateitem-operation.md).</span></span>  <br/> |
+|[<span data-ttu-id="c2140-117">AppendToItemField</span><span class="sxs-lookup"><span data-stu-id="c2140-117">AppendToItemField</span></span>](appendtoitemfield.md) <br/> |<span data-ttu-id="c2140-118">[Updateitem 操作](updateitem-operation.md)中に、アイテムの1つのプロパティに追加するデータを表します。</span><span class="sxs-lookup"><span data-stu-id="c2140-118">Represents data to append to a single property of an item during an [UpdateItem operation](updateitem-operation.md).</span></span>  <br/> |
+|[<span data-ttu-id="c2140-119">SetItemField</span><span class="sxs-lookup"><span data-stu-id="c2140-119">SetItemField</span></span>](setitemfield.md) <br/> |<span data-ttu-id="c2140-120">[Updateitem 操作](updateitem-operation.md)のアイテムの1つのプロパティに対する更新を表します。</span><span class="sxs-lookup"><span data-stu-id="c2140-120">Represents an update to a single property of an item in an [UpdateItem operation](updateitem-operation.md).</span></span>  <br/> |
+|[<span data-ttu-id="c2140-121">DeleteItemField</span><span class="sxs-lookup"><span data-stu-id="c2140-121">DeleteItemField</span></span>](deleteitemfield.md) <br/> |<span data-ttu-id="c2140-122">[Updateitem 操作](updateitem-operation.md)中に、指定されたプロパティをアイテムから削除する操作を表します。</span><span class="sxs-lookup"><span data-stu-id="c2140-122">Represents an operation to delete a given property from an item during an [UpdateItem operation](updateitem-operation.md).</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="cde9a-123">親要素</span><span class="sxs-lookup"><span data-stu-id="cde9a-123">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="c2140-123">親要素</span><span class="sxs-lookup"><span data-stu-id="c2140-123">Parent elements</span></span>
 
-|<span data-ttu-id="cde9a-124">**要素**</span><span class="sxs-lookup"><span data-stu-id="cde9a-124">**Element**</span></span>|<span data-ttu-id="cde9a-125">**説明**</span><span class="sxs-lookup"><span data-stu-id="cde9a-125">**Description**</span></span>|
+|<span data-ttu-id="c2140-124">**要素**</span><span class="sxs-lookup"><span data-stu-id="c2140-124">**Element**</span></span>|<span data-ttu-id="c2140-125">**説明**</span><span class="sxs-lookup"><span data-stu-id="c2140-125">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="cde9a-126">ItemChange</span><span class="sxs-lookup"><span data-stu-id="cde9a-126">ItemChange</span></span>](itemchange.md) <br/> |<span data-ttu-id="cde9a-127">アイテム識別子と、アイテムに適用する更新プログラムが含まれています。</span><span class="sxs-lookup"><span data-stu-id="cde9a-127">Contains an item identifier and the updates to apply to the item.</span></span>  <br/> <span data-ttu-id="cde9a-128">この要素への XPath 式は、次のようにします。`/UpdateItem/ItemChanges/ItemChange[i]`</span><span class="sxs-lookup"><span data-stu-id="cde9a-128">The following is the XPath expression to this element:  `/UpdateItem/ItemChanges/ItemChange[i]`</span></span> <br/> |
+|[<span data-ttu-id="c2140-126">ItemChange</span><span class="sxs-lookup"><span data-stu-id="c2140-126">ItemChange</span></span>](itemchange.md) <br/> |<span data-ttu-id="c2140-127">アイテム識別子と、アイテムに適用する更新を含みます。</span><span class="sxs-lookup"><span data-stu-id="c2140-127">Contains an item identifier and the updates to apply to the item.</span></span>  <br/> <span data-ttu-id="c2140-128">この要素の XPath 式を次に示します。`/UpdateItem/ItemChanges/ItemChange[i]`</span><span class="sxs-lookup"><span data-stu-id="c2140-128">The following is the XPath expression to this element:  `/UpdateItem/ItemChanges/ItemChange[i]`</span></span> <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="cde9a-129">備考</span><span class="sxs-lookup"><span data-stu-id="cde9a-129">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c2140-129">注釈</span><span class="sxs-lookup"><span data-stu-id="c2140-129">Remarks</span></span>
 
-<span data-ttu-id="cde9a-130">[アイテム Id](itemid.md)、 [OccurrenceItemId](occurrenceitemid.md)、または[RecurringMasterItemId](recurringmasteritemid.md)の要素で識別される項目には、この要素で定義されている更新プログラムが実行されます。</span><span class="sxs-lookup"><span data-stu-id="cde9a-130">The updates that are defined by this element are performed on the item that is identified by the [ItemId](itemid.md), [OccurrenceItemId](occurrenceitemid.md), or [RecurringMasterItemId](recurringmasteritemid.md) elements.</span></span> 
+<span data-ttu-id="c2140-130">この要素によって定義された更新は、 [ItemId](itemid.md)、 [OccurrenceItemId](occurrenceitemid.md)、または[RecurringMasterItemId](recurringmasteritemid.md)要素によって識別されるアイテムに対して実行されます。</span><span class="sxs-lookup"><span data-stu-id="c2140-130">The updates that are defined by this element are performed on the item that is identified by the [ItemId](itemid.md), [OccurrenceItemId](occurrenceitemid.md), or [RecurringMasterItemId](recurringmasteritemid.md) elements.</span></span> 
   
-<span data-ttu-id="cde9a-131">この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="cde9a-131">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="c2140-131">この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。</span><span class="sxs-lookup"><span data-stu-id="c2140-131">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="cde9a-132">要素情報</span><span class="sxs-lookup"><span data-stu-id="cde9a-132">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="c2140-132">要素の情報</span><span class="sxs-lookup"><span data-stu-id="c2140-132">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="cde9a-133">名前空間</span><span class="sxs-lookup"><span data-stu-id="cde9a-133">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="cde9a-134">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="cde9a-134">Schema Name</span></span>  <br/> |<span data-ttu-id="cde9a-135">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="cde9a-135">types schema</span></span>  <br/> |
-|<span data-ttu-id="cde9a-136">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="cde9a-136">Validation File</span></span>  <br/> |<span data-ttu-id="cde9a-137">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="cde9a-137">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="cde9a-138">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="cde9a-138">Can be Empty</span></span>  <br/> |<span data-ttu-id="cde9a-139">False</span><span class="sxs-lookup"><span data-stu-id="cde9a-139">False</span></span>  <br/> |
+|<span data-ttu-id="c2140-133">Namespace</span><span class="sxs-lookup"><span data-stu-id="c2140-133">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="c2140-134">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="c2140-134">Schema Name</span></span>  <br/> |<span data-ttu-id="c2140-135">types スキーマ</span><span class="sxs-lookup"><span data-stu-id="c2140-135">types schema</span></span>  <br/> |
+|<span data-ttu-id="c2140-136">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="c2140-136">Validation File</span></span>  <br/> |<span data-ttu-id="c2140-137">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="c2140-137">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="c2140-138">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="c2140-138">Can be Empty</span></span>  <br/> |<span data-ttu-id="c2140-139">正しくない</span><span class="sxs-lookup"><span data-stu-id="c2140-139">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="cde9a-140">関連項目</span><span class="sxs-lookup"><span data-stu-id="cde9a-140">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c2140-140">関連項目</span><span class="sxs-lookup"><span data-stu-id="c2140-140">See also</span></span>
 
-- <span data-ttu-id="cde9a-141">
-  [UpdateItem 操作](updateitem-operation.md)</span><span class="sxs-lookup"><span data-stu-id="cde9a-141">[UpdateItem operation](updateitem-operation.md)</span></span>
-- [<span data-ttu-id="cde9a-142">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="cde9a-142">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- <span data-ttu-id="c2140-141">
+  [UpdateItem 操作](updateitem-operation.md)</span><span class="sxs-lookup"><span data-stu-id="c2140-141">[UpdateItem operation](updateitem-operation.md)</span></span>
+- [<span data-ttu-id="c2140-142">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="c2140-142">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

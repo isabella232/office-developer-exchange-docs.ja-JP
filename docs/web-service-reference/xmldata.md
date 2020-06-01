@@ -11,60 +11,60 @@ api_name:
 api_type:
 - schema
 ms.assetid: e47f1d32-3ee3-4a1d-b7f9-80973ed57bd4
-description: XmlData 要素には、ユーザーの構成オブジェクトの XML データのプロパティの内容が含まれています。
-ms.openlocfilehash: 6cd14d9e3873dd3aac352dce82afb2c309477214
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: XmlData 要素には、ユーザー構成オブジェクトの XML データプロパティコンテンツが含まれています。
+ms.openlocfilehash: 2fb3e2ccbb6e9ccc409a5d0cfdd895b2a63214ff
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840048"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457019"
 ---
-# <a name="xmldata"></a><span data-ttu-id="920e7-103">XmlData</span><span class="sxs-lookup"><span data-stu-id="920e7-103">XmlData</span></span>
+# <a name="xmldata"></a><span data-ttu-id="8a1ce-103">XmlData</span><span class="sxs-lookup"><span data-stu-id="8a1ce-103">XmlData</span></span>
 
-<span data-ttu-id="920e7-104">**XmlData**要素には、ユーザーの構成オブジェクトの XML データのプロパティの内容が含まれています。</span><span class="sxs-lookup"><span data-stu-id="920e7-104">The **XmlData** element contains XML data property content for a user configuration object.</span></span> 
+<span data-ttu-id="8a1ce-104">**XmlData**要素には、ユーザー構成オブジェクトの XML データプロパティコンテンツが含まれています。</span><span class="sxs-lookup"><span data-stu-id="8a1ce-104">The **XmlData** element contains XML data property content for a user configuration object.</span></span> 
   
 ```XML
 <XmlData/>
 ```
 
-<span data-ttu-id="920e7-105">**Base64Binary**</span><span class="sxs-lookup"><span data-stu-id="920e7-105">**Base64Binary**</span></span>
+<span data-ttu-id="8a1ce-105">**Base64Binary**</span><span class="sxs-lookup"><span data-stu-id="8a1ce-105">**Base64Binary**</span></span>
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="920e7-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="920e7-106">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="8a1ce-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="8a1ce-106">Attributes and elements</span></span>
 
-<span data-ttu-id="920e7-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="920e7-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="8a1ce-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="8a1ce-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="920e7-108">属性</span><span class="sxs-lookup"><span data-stu-id="920e7-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="8a1ce-108">属性</span><span class="sxs-lookup"><span data-stu-id="8a1ce-108">Attributes</span></span>
 
-<span data-ttu-id="920e7-109">なし。</span><span class="sxs-lookup"><span data-stu-id="920e7-109">None.</span></span>
+<span data-ttu-id="8a1ce-109">なし。</span><span class="sxs-lookup"><span data-stu-id="8a1ce-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="920e7-110">子要素</span><span class="sxs-lookup"><span data-stu-id="920e7-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="8a1ce-110">子要素</span><span class="sxs-lookup"><span data-stu-id="8a1ce-110">Child elements</span></span>
 
-<span data-ttu-id="920e7-111">なし。</span><span class="sxs-lookup"><span data-stu-id="920e7-111">None.</span></span>
+<span data-ttu-id="8a1ce-111">なし。</span><span class="sxs-lookup"><span data-stu-id="8a1ce-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="920e7-112">親要素</span><span class="sxs-lookup"><span data-stu-id="920e7-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="8a1ce-112">親要素</span><span class="sxs-lookup"><span data-stu-id="8a1ce-112">Parent elements</span></span>
 
-|<span data-ttu-id="920e7-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="920e7-113">**Element**</span></span>|<span data-ttu-id="920e7-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="920e7-114">**Description**</span></span>|
+|<span data-ttu-id="8a1ce-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="8a1ce-113">**Element**</span></span>|<span data-ttu-id="8a1ce-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="8a1ce-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="920e7-115">UserConfiguration</span><span class="sxs-lookup"><span data-stu-id="920e7-115">UserConfiguration</span></span>](userconfiguration.md) <br/> |<span data-ttu-id="920e7-116">1 人のユーザーの構成オブジェクトを定義します。</span><span class="sxs-lookup"><span data-stu-id="920e7-116">Defines a single user configuration object.</span></span>  <br/> |
+|[<span data-ttu-id="8a1ce-115">UserConfiguration</span><span class="sxs-lookup"><span data-stu-id="8a1ce-115">UserConfiguration</span></span>](userconfiguration.md) <br/> |<span data-ttu-id="8a1ce-116">1つのユーザー構成オブジェクトを定義します。</span><span class="sxs-lookup"><span data-stu-id="8a1ce-116">Defines a single user configuration object.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="920e7-117">テキスト値</span><span class="sxs-lookup"><span data-stu-id="920e7-117">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="8a1ce-117">テキスト値</span><span class="sxs-lookup"><span data-stu-id="8a1ce-117">Text value</span></span>
 
-<span data-ttu-id="920e7-118">なし。</span><span class="sxs-lookup"><span data-stu-id="920e7-118">None.</span></span>
+<span data-ttu-id="8a1ce-118">なし。</span><span class="sxs-lookup"><span data-stu-id="8a1ce-118">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="920e7-119">備考</span><span class="sxs-lookup"><span data-stu-id="920e7-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="8a1ce-119">注釈</span><span class="sxs-lookup"><span data-stu-id="8a1ce-119">Remarks</span></span>
 
-<span data-ttu-id="920e7-120">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="920e7-120">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="8a1ce-120">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="8a1ce-120">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="920e7-121">要素情報</span><span class="sxs-lookup"><span data-stu-id="920e7-121">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="8a1ce-121">要素の情報</span><span class="sxs-lookup"><span data-stu-id="8a1ce-121">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="920e7-122">名前空間</span><span class="sxs-lookup"><span data-stu-id="920e7-122">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="920e7-123">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="920e7-123">Schema Name</span></span>  <br/> |<span data-ttu-id="920e7-124">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="920e7-124">Types schema</span></span>  <br/> |
-|<span data-ttu-id="920e7-125">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="920e7-125">Validation File</span></span>  <br/> |<span data-ttu-id="920e7-126">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="920e7-126">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="920e7-127">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="920e7-127">Can be Empty</span></span>  <br/> |<span data-ttu-id="920e7-128">False</span><span class="sxs-lookup"><span data-stu-id="920e7-128">False</span></span>  <br/> |
+|<span data-ttu-id="8a1ce-122">Namespace</span><span class="sxs-lookup"><span data-stu-id="8a1ce-122">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="8a1ce-123">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="8a1ce-123">Schema Name</span></span>  <br/> |<span data-ttu-id="8a1ce-124">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="8a1ce-124">Types schema</span></span>  <br/> |
+|<span data-ttu-id="8a1ce-125">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="8a1ce-125">Validation File</span></span>  <br/> |<span data-ttu-id="8a1ce-126">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="8a1ce-126">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="8a1ce-127">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="8a1ce-127">Can be Empty</span></span>  <br/> |<span data-ttu-id="8a1ce-128">正しくない</span><span class="sxs-lookup"><span data-stu-id="8a1ce-128">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="920e7-129">関連項目</span><span class="sxs-lookup"><span data-stu-id="920e7-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8a1ce-129">関連項目</span><span class="sxs-lookup"><span data-stu-id="8a1ce-129">See also</span></span>
 
-- [<span data-ttu-id="920e7-130">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="920e7-130">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="8a1ce-130">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="8a1ce-130">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

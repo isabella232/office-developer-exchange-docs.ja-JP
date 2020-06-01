@@ -1,5 +1,5 @@
 ---
-title: Owners
+title: 所有者
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,38 +7,38 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 53b6befb-a1b7-4f56-904a-9a32306570e3
-description: 所有者要素は内部使用のみを目的としています。
-ms.openlocfilehash: 492125a80079350a88d8a4182e101b6cbd12c8f6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Owners 要素は、内部使用のみを目的としています。
+ms.openlocfilehash: 299871843a3755d98ac3658767bce1c13dfa5129
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832678"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457257"
 ---
-# <a name="owners"></a><span data-ttu-id="27437-103">Owners</span><span class="sxs-lookup"><span data-stu-id="27437-103">Owners</span></span>
+# <a name="owners"></a><span data-ttu-id="01207-103">所有者</span><span class="sxs-lookup"><span data-stu-id="01207-103">Owners</span></span>
 
-<span data-ttu-id="27437-104">**所有者**要素は内部使用のみを目的としています。</span><span class="sxs-lookup"><span data-stu-id="27437-104">The **Owners** element is intended for internal use only.</span></span> 
+<span data-ttu-id="01207-104">**Owners**要素は、内部使用のみを目的としています。</span><span class="sxs-lookup"><span data-stu-id="01207-104">The **Owners** element is intended for internal use only.</span></span> 
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="27437-105">属性および要素</span><span class="sxs-lookup"><span data-stu-id="27437-105">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="01207-105">属性と要素</span><span class="sxs-lookup"><span data-stu-id="01207-105">Attributes and elements</span></span>
 
-<span data-ttu-id="27437-106">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="27437-106">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="01207-106">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="01207-106">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="27437-107">属性</span><span class="sxs-lookup"><span data-stu-id="27437-107">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="01207-107">属性</span><span class="sxs-lookup"><span data-stu-id="01207-107">Attributes</span></span>
 
-<span data-ttu-id="27437-108">なし。</span><span class="sxs-lookup"><span data-stu-id="27437-108">None.</span></span>
+<span data-ttu-id="01207-108">なし。</span><span class="sxs-lookup"><span data-stu-id="01207-108">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="27437-109">子要素</span><span class="sxs-lookup"><span data-stu-id="27437-109">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="01207-109">子要素</span><span class="sxs-lookup"><span data-stu-id="01207-109">Child elements</span></span>
 
-<span data-ttu-id="27437-110">なし。</span><span class="sxs-lookup"><span data-stu-id="27437-110">None.</span></span>
+<span data-ttu-id="01207-110">なし。</span><span class="sxs-lookup"><span data-stu-id="01207-110">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="27437-111">親要素</span><span class="sxs-lookup"><span data-stu-id="27437-111">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="01207-111">親要素</span><span class="sxs-lookup"><span data-stu-id="01207-111">Parent elements</span></span>
 
-<span data-ttu-id="27437-112">なし。</span><span class="sxs-lookup"><span data-stu-id="27437-112">None.</span></span>
+<span data-ttu-id="01207-112">なし。</span><span class="sxs-lookup"><span data-stu-id="01207-112">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="27437-113">備考</span><span class="sxs-lookup"><span data-stu-id="27437-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="01207-113">注釈</span><span class="sxs-lookup"><span data-stu-id="01207-113">Remarks</span></span>
 
-<span data-ttu-id="27437-114">この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。</span><span class="sxs-lookup"><span data-stu-id="27437-114">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
+<span data-ttu-id="01207-114">この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。</span><span class="sxs-lookup"><span data-stu-id="01207-114">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
   
-<span data-ttu-id="27437-115">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="27437-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="01207-115">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="01207-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
 

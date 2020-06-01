@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 110bada1-517b-4bd6-870d-7086dc879e5d
-description: CreateFolder 要素は、Exchange ストア内のフォルダーを作成する要求を定義します。
-ms.openlocfilehash: e30af23b8ed8669053b94be460d62fbf7abf24c9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: CreateFolder 要素は、Exchange ストア内にフォルダーを作成するための要求を定義します。
+ms.openlocfilehash: c2a971a6b827553a1632c2a86e4d36e3b83a2de3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759811"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457544"
 ---
-# <a name="createfolder"></a><span data-ttu-id="f192c-103">CreateFolder</span><span class="sxs-lookup"><span data-stu-id="f192c-103">CreateFolder</span></span>
+# <a name="createfolder"></a><span data-ttu-id="150fc-103">CreateFolder</span><span class="sxs-lookup"><span data-stu-id="150fc-103">CreateFolder</span></span>
 
-<span data-ttu-id="f192c-104">**CreateFolder**要素は、Exchange ストア内のフォルダーを作成する要求を定義します。</span><span class="sxs-lookup"><span data-stu-id="f192c-104">The **CreateFolder** element defines a request to create a folder in the Exchange store.</span></span> 
+<span data-ttu-id="150fc-104">**CreateFolder**要素は、Exchange ストア内にフォルダーを作成するための要求を定義します。</span><span class="sxs-lookup"><span data-stu-id="150fc-104">The **CreateFolder** element defines a request to create a folder in the Exchange store.</span></span> 
   
 ```xml
 <CreateFolder>
@@ -30,46 +30,46 @@ ms.locfileid: "19759811"
 </CreateFolder>
 ```
 
- <span data-ttu-id="f192c-105">**CreateFolderType**</span><span class="sxs-lookup"><span data-stu-id="f192c-105">**CreateFolderType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="f192c-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="f192c-106">Attributes and elements</span></span>
+ <span data-ttu-id="150fc-105">**CreateFolderType**</span><span class="sxs-lookup"><span data-stu-id="150fc-105">**CreateFolderType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="150fc-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="150fc-106">Attributes and elements</span></span>
 
-<span data-ttu-id="f192c-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="f192c-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="150fc-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="150fc-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="f192c-108">属性</span><span class="sxs-lookup"><span data-stu-id="f192c-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="150fc-108">属性</span><span class="sxs-lookup"><span data-stu-id="150fc-108">Attributes</span></span>
 
-<span data-ttu-id="f192c-109">なし。</span><span class="sxs-lookup"><span data-stu-id="f192c-109">None.</span></span>
+<span data-ttu-id="150fc-109">なし。</span><span class="sxs-lookup"><span data-stu-id="150fc-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="f192c-110">子要素</span><span class="sxs-lookup"><span data-stu-id="f192c-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="150fc-110">子要素</span><span class="sxs-lookup"><span data-stu-id="150fc-110">Child elements</span></span>
 
-|<span data-ttu-id="f192c-111">**要素**</span><span class="sxs-lookup"><span data-stu-id="f192c-111">**Element**</span></span>|<span data-ttu-id="f192c-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="f192c-112">**Description**</span></span>|
+|<span data-ttu-id="150fc-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="150fc-111">**Element**</span></span>|<span data-ttu-id="150fc-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="150fc-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="f192c-113">ParentFolderId (TargetFolderIdType)</span><span class="sxs-lookup"><span data-stu-id="f192c-113">ParentFolderId (TargetFolderIdType)</span></span>](parentfolderid-targetfolderidtype.md) <br/> |<span data-ttu-id="f192c-114">新しいフォルダーの作成先の場所を識別する要素です。</span><span class="sxs-lookup"><span data-stu-id="f192c-114">The element that identifies the location where the new folder is created.</span></span>  <br/> |
-|[<span data-ttu-id="f192c-115">フォルダー</span><span class="sxs-lookup"><span data-stu-id="f192c-115">Folders</span></span>](folders-ex15websvcsotherref.md) <br/> |<span data-ttu-id="f192c-116">要素を作成するすべてのフォルダーが含まれています。</span><span class="sxs-lookup"><span data-stu-id="f192c-116">The element that contains all the folders to create.</span></span>  <br/> |
+|[<span data-ttu-id="150fc-113">ParentFolderId (TargetFolderIdType)</span><span class="sxs-lookup"><span data-stu-id="150fc-113">ParentFolderId (TargetFolderIdType)</span></span>](parentfolderid-targetfolderidtype.md) <br/> |<span data-ttu-id="150fc-114">新しいフォルダーが作成される場所を識別する要素。</span><span class="sxs-lookup"><span data-stu-id="150fc-114">The element that identifies the location where the new folder is created.</span></span>  <br/> |
+|[<span data-ttu-id="150fc-115">フォルダー</span><span class="sxs-lookup"><span data-stu-id="150fc-115">Folders</span></span>](folders-ex15websvcsotherref.md) <br/> |<span data-ttu-id="150fc-116">作成するすべてのフォルダーを含む要素。</span><span class="sxs-lookup"><span data-stu-id="150fc-116">The element that contains all the folders to create.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="f192c-117">親要素</span><span class="sxs-lookup"><span data-stu-id="f192c-117">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="150fc-117">親要素</span><span class="sxs-lookup"><span data-stu-id="150fc-117">Parent elements</span></span>
 
-<span data-ttu-id="f192c-118">なし。</span><span class="sxs-lookup"><span data-stu-id="f192c-118">None.</span></span>
+<span data-ttu-id="150fc-118">なし。</span><span class="sxs-lookup"><span data-stu-id="150fc-118">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="f192c-119">備考</span><span class="sxs-lookup"><span data-stu-id="f192c-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="150fc-119">注釈</span><span class="sxs-lookup"><span data-stu-id="150fc-119">Remarks</span></span>
 
-<span data-ttu-id="f192c-120">MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。</span><span class="sxs-lookup"><span data-stu-id="f192c-120">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="150fc-120">この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="150fc-120">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="f192c-121">要素情報</span><span class="sxs-lookup"><span data-stu-id="f192c-121">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="150fc-121">要素の情報</span><span class="sxs-lookup"><span data-stu-id="150fc-121">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="f192c-122">名前空間</span><span class="sxs-lookup"><span data-stu-id="f192c-122">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="f192c-123">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="f192c-123">Schema Name</span></span>  <br/> |<span data-ttu-id="f192c-124">メッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="f192c-124">Message schema</span></span>  <br/> |
-|<span data-ttu-id="f192c-125">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="f192c-125">Validation File</span></span>  <br/> |<span data-ttu-id="f192c-126">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="f192c-126">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="f192c-127">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="f192c-127">Can be Empty</span></span>  <br/> |<span data-ttu-id="f192c-128">False</span><span class="sxs-lookup"><span data-stu-id="f192c-128">False</span></span>  <br/> |
+|<span data-ttu-id="150fc-122">Namespace</span><span class="sxs-lookup"><span data-stu-id="150fc-122">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="150fc-123">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="150fc-123">Schema Name</span></span>  <br/> |<span data-ttu-id="150fc-124">メッセージスキーマ</span><span class="sxs-lookup"><span data-stu-id="150fc-124">Message schema</span></span>  <br/> |
+|<span data-ttu-id="150fc-125">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="150fc-125">Validation File</span></span>  <br/> |<span data-ttu-id="150fc-126">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="150fc-126">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="150fc-127">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="150fc-127">Can be Empty</span></span>  <br/> |<span data-ttu-id="150fc-128">正しくない</span><span class="sxs-lookup"><span data-stu-id="150fc-128">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="f192c-129">関連項目</span><span class="sxs-lookup"><span data-stu-id="f192c-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="150fc-129">関連項目</span><span class="sxs-lookup"><span data-stu-id="150fc-129">See also</span></span>
 
 
 
-<span data-ttu-id="f192c-130">
-  [CreateFolder 操作](createfolder-operation.md)</span><span class="sxs-lookup"><span data-stu-id="f192c-130">[CreateFolder operation](createfolder-operation.md)</span></span>
+<span data-ttu-id="150fc-130">
+  [CreateFolder 操作](createfolder-operation.md)</span><span class="sxs-lookup"><span data-stu-id="150fc-130">[CreateFolder operation](createfolder-operation.md)</span></span>
 
 
-[<span data-ttu-id="f192c-131">フォルダー (Exchange Web サービス) を作成します。</span><span class="sxs-lookup"><span data-stu-id="f192c-131">Creating Folders (Exchange Web Services)</span></span>](http://msdn.microsoft.com/library/3b15b0ec-8691-45ed-9a24-a91ff732d6cf%28Office.15%29.aspx)
+[<span data-ttu-id="150fc-131">フォルダーの作成 (Exchange Web サービス)</span><span class="sxs-lookup"><span data-stu-id="150fc-131">Creating Folders (Exchange Web Services)</span></span>](https://msdn.microsoft.com/library/3b15b0ec-8691-45ed-9a24-a91ff732d6cf%28Office.15%29.aspx)
 
