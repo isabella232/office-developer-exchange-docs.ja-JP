@@ -11,19 +11,19 @@ api_name:
 api_type:
 - dllExport
 ms.assetid: 75289cd2-35b1-4f75-a651-dce01f1ddda1
-description: '最終更新日: 2013 年 2 月 22 日'
-ms.openlocfilehash: a407019063b34970e883a00ca4f4d730935d7cba
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: '最終更新日: 2013 年2月22日'
+ms.openlocfilehash: a62c5940322d3d7a71f2db93214f1e970fc6859b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758868"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455248"
 ---
 # <a name="cchksgfileserrcheckdbheaders-function"></a>CChkSGFiles.ErrCheckDbHeaders 関数
 
-**に適用されます:** Exchange Server 2003年 |Exchange Server 2007年 |Exchange Server 2010年 |Exchange Server 2013 
+**適用対象:** Exchange Server 2003 |Exchange Server 2007 |Exchange Server 2010 |Exchange Server 2013 
   
-**ErrInit**関数によって指定されているデータベース ファイルのヘッダーを検証します。 この関数では、ページ サイズとページ数も、指定されたデータベースのそれぞれに返します。 
+**ErrInit** 関数で指定されたデータベース ファイルのヘッダーを検証します。 この関数は、指定されたデータベースごとのページ サイズとページ数も返します。 
   
 ```cs
 Vitual ERRErrCheckDbHeaders  
@@ -36,7 +36,7 @@ Vitual ERRErrCheckDbHeaders
 
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 ### <a name="pcbdbpagesize"></a>pcbDbPageSize 
   
@@ -44,35 +44,35 @@ Vitual ERRErrCheckDbHeaders
     
 ### <a name="pcheaderpagesperdb"></a>pcHeaderPagesPerDb 
   
-出力パラメーターです。 それぞれの先頭ページの数は、内部で使用するデータベース エンジンによって予約されているデータベースを指定します。 *検証のための**ErrCheckDbPages**関数をヘッダー ページをパス*する必要があることに注意してください。 
+出力パラメーターです。 データベースエンジンによって内部使用のために予約されている、指定された各データベースの最初のページ数。 検証のために、ヘッダーページを**Errcheckdbpages**関数に渡さ*ない*ように注意してください。 
     
 ### <a name="pidberrorencountered"></a>piDbErrorEncountered
   
-出力パラメーターです。 関数の戻り値がエラーを示す場合、このパラメーターは、 **ErrInit**関数に渡される**rgwszDb の**配列へのインデックスを指定します。 インデックス付きの配列要素は、エラーが検出されたデータベースを表します。 関数がエラー値を返さない場合、このパラメーターの値は有効ではありません。 
+出力パラメーターです。 関数の戻り値がエラーを示している場合、このパラメーターは **ErrInit** 関数に渡した **rgwszDb[]** 配列のインデックスになります。 インデックスで示された配列の要素は、エラーが発生したデータベースを表します。 関数がエラー値を返さない場合、このパラメーターの値は無効になります。 
     
 ### <a name="ulflags"></a>ulFlags 
   
 オプションの入力パラメーター。この値は、将来使用するために予約されています。渡された値は、0 (ゼロ) になります。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
-この関数は、 [CChkSGFiles.ERR 列挙型](cchksgfiles-err-enumeration.md)のエラー コードを返します。
+この関数は、 [CChkSGFiles 列挙](cchksgfiles-err-enumeration.md)からエラーコードを返します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**ErrCheckDbHeaders**は、同じログとデータベースの署名ページのサイズを**ErrInit**に登録されているすべてのデータベースがあることを確認します。 クリーン シャット ダウン状態にするためのすべての登録されているデータベースに必要なログ ファイルのセットを決定するのには、 **genMin**パラメーターの値が最小と最大の**genMax**パラメーターの値を使用することもできます。 
+**ErrCheckDbHeaders** は、**ErrInit** によって登録したすべてのデータベースで、ログ署名とデータベース ページ サイズが同じであることを検証します。 また、最小の **genMin** パラメーター値と、最大の **genMax** パラメーター値を使用することで、登録されたすべてのデータベースをクリーン シャットダウン状態にするために必要になるログ ファイルのセットを決定することもできます。 
   
-エラーが検出された場合にのみ、 **piDbErrorEncountered**パラメーターが設定されて、 **ErrCheckDbHeaders**の戻り値に 0 以外で示されるようにします。 
+**piDbErrorEncountered** パラメーターは、ゼロ以外の **ErrCheckDbHeaders** の戻り値で示されるエラーが検出された場合にのみ設定されます。 
   
 この関数でエラーが発生すると、エラー イベントが Windows エラー イベント ログに追加されます。
   
-**ErrInit**を呼び出した後にだけ、 **ErrCheckDbHeaders**を呼び出すことができますし、 **ErrCheckDbPages**と**ErrCheckLogs**を呼び出す前に呼び出す必要があります。
+**ErrCheckDbHeaders** は、**ErrInit** を呼び出した後にのみ呼び出せるようになり、**ErrCheckDbPages** および **ErrCheckLogs** を呼び出す前に呼び出す必要があります。
   
-マルチ スレッド アプリケーションで CHKSGFILES を使用する場合は、部分では、シングル スレッド、 **ErrCheckDbHeaders**関数を呼び出す必要があり、 **CCheckSGFiles**オブジェクトごとに 1 回のみ呼び出すことができます。 
+マルチスレッドアプリケーションで CHKSGFILES を使用している場合は、単一スレッドの部分で**Errcheckdbheaders**関数を呼び出す必要があり、 **CCheckSGFiles**オブジェクトごとに1回だけ呼び出すことができます。 
   
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>Requirements
 
-Exchange 2013 には、CHKSGFILES API の 64 ビット バージョンにはのみが含まれます。
+Exchange 2013 には、CHKSGFILES API の64ビットバージョンのみが含まれています。
   
 アプリケーションを実行しているアカウントには、確認するデータベースとログ ファイルに対する読み取りアクセス許可が必要です。
   

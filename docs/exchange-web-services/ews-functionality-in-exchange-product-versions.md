@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 186c51dc-ec33-4a5d-b739-c9fcb1d4cdd3
 description: 新しい製品リリースでは、EWS により新機能が実装されます。 この資料の内容を読み、対象としている Exchange のバージョンに、アクセスするデータや機能のサポートが含まれているかどうか判断してください。
-ms.openlocfilehash: 6b676781f25eeeb90fd9ab075fbe63198766bd99
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: HT
+ms.openlocfilehash: a8032e16cdd9100289666d8f2ce742fe054ede2e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758889"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456032"
 ---
 # <a name="ews-functionality-in-exchange-product-versions"></a>Exchange 製品バージョン別の EWS 機能
 
@@ -24,7 +24,7 @@ ms.locfileid: "19758889"
 |**製品バージョン**|**機能**|
 |:-----|:-----|
 |Office 365 および Exchange Online |オンライン クライアント用に追加された新機能に加え、現在のバージョンの Exchange のすべての機能が含まれます。  |
-|Exchange 2013 SP1 | Exchange 2013 で導入されたすべての機能が含まれます。 次の機能は、Exchange 2013 SP1 で導入されました。<ul><li>更新および削除のため、開封確認を中断することができます。</li><li>[モデレート トランスポート](http://msdn.microsoft.com/library/43a89f71-8002-4cb0-b3c8-1c2b2597f227%28Office.15%29.aspx)の承認情報を取得することができます。</li><li>返信応答を表示することができます。</li><li>[SetHoldOnMailboxes](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.setholdonmailboxes%28v=exchg.80%29.aspx) メソッドと [SetHoldOnMailboxes](http://msdn.microsoft.com/library/9015a0d8-3495-461b-aa79-797d23169585%28Office.15%29.aspx) 操作は、単一オブジェクト内のすべてのパラメーターを受け付けます。</li><li>電子情報開示の検索では、検索クエリの言語と、日付範囲のカルチャ固有の書式を指定できます。</li><li>[StreamingSubscriptionConnection](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.streamingsubscriptionconnection%28v=exchg.80%29.aspx) オブジェクトが、[StreamingSubscription](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.streamingsubscription%28v=exchg.80%29.aspx) オブジェクトにアクセスできるようになりました。</li><li>会話には、IRM で保護された電子メール メッセージが含まれているかどうかを表示させる設定があります。</li><li>会議出席者は、会議の新しい開始と終了日時を提案し、会議の応答に含めることができます。</li><li>SOAP 自動検出 [GetUserSettings](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.autodiscover.autodiscoverservice.getusersettings%28v=exchg.80%29.aspx) メソッドが、複数のメールボックス イベント サブスクリプションのアフィニティ維持に使用する [GroupingInformation](http://msdn.microsoft.com/ja-JP/library/office/dn529149%28v=exchg.150%29.aspx) 設定を返すようになりました。</li></ul> |
+|Exchange 2013 SP1 | Exchange 2013 で導入されたすべての機能が含まれます。 次の機能は、Exchange 2013 SP1 で導入されました。<ul><li>更新および削除のため、開封確認を中断することができます。</li><li>[モデレート トランスポート](https://msdn.microsoft.com/library/43a89f71-8002-4cb0-b3c8-1c2b2597f227%28Office.15%29.aspx)の承認情報を取得することができます。</li><li>返信応答を表示することができます。</li><li>[SetHoldOnMailboxes](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.setholdonmailboxes%28v=exchg.80%29.aspx) メソッドと [SetHoldOnMailboxes](https://msdn.microsoft.com/library/9015a0d8-3495-461b-aa79-797d23169585%28Office.15%29.aspx) 操作は、単一オブジェクト内のすべてのパラメーターを受け付けます。</li><li>電子情報開示の検索では、検索クエリの言語と、日付範囲のカルチャ固有の書式を指定できます。</li><li>[StreamingSubscriptionConnection](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.streamingsubscriptionconnection%28v=exchg.80%29.aspx) オブジェクトが、[StreamingSubscription](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.streamingsubscription%28v=exchg.80%29.aspx) オブジェクトにアクセスできるようになりました。</li><li>会話には、IRM で保護された電子メール メッセージが含まれているかどうかを表示させる設定があります。</li><li>会議出席者は、会議の新しい開始と終了日時を提案し、会議の応答に含めることができます。</li><li>SOAP 自動検出 [GetUserSettings](https://msdn.microsoft.com/library/microsoft.exchange.webservices.autodiscover.autodiscoverservice.getusersettings%28v=exchg.80%29.aspx) メソッドが、複数のメールボックス イベント サブスクリプションのアフィニティ維持に使用する [GroupingInformation](https://msdn.microsoft.com/library/office/dn529149%28v=exchg.150%29.aspx) 設定を返すようになりました。</li></ul> |
 |Exchange 2013  | Exchange 2010 SP2 で導入されたすべての機能が含まれます。 次の機能は、Exchange 2013 で導入されました。  <ul><li>  アーカイブ</li><li>電子情報開示</li><li>ペルソナ</li><li>アイテム保持ポリシー</li><li>統合連絡先ストア</li><li>ユーザーの写真</li></ul> |
 |Exchange 2010 SP2  | Exchange 2010 SP1 で導入されたすべての機能が含まれます。次の機能は、Exchange 2010 SP2 で導入されました。  <ul><li>  パスワードの有効期限の取得</li><li>DateTime の精度</li><li>連絡先のプロパティ識別子の更新</li><li>新しい偽装シナリオ</li></ul> |
 |Exchange 2010 SP1  | Exchange 2010 で導入されたすべての機能が含まれます。次の機能は、Exchange 2010 SP1 で導入されました。  <ul><li>  受信トレイ ルールの作成、取得、変更</li><li>プログラムによるアーカイブ メールボックスへのアクセス</li><li>会話アクション</li><li>ファイアウォールを通過する通知</li><li>管理機能の向上</li><li>混在バージョンのサポートの向上</li><li>保護サポートの調整</li><li>EWS へのアプリケーション アクセスの制御</li><li>クライアント証明書認証サポート</li></ul> |

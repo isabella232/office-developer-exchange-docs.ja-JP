@@ -11,26 +11,26 @@ api_name:
 api_type:
 - dllExport
 ms.assetid: 588d8c74-c9ce-4d5e-8a79-a2a68676e858
-description: '最終更新日: 2013 年 2 月 22 日'
-ms.openlocfilehash: b40f8b1a95477715b29defb4addabfb333e92d04
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: '最終更新日: 2013 年2月22日'
+ms.openlocfilehash: d18d3ef20890012a1d8c193ec87bdca10a1ed451
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758856"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455234"
 ---
 # <a name="cchksgfilesnew-function"></a>CChkSGFiles.New 関数
 
-**に適用されます:** Exchange Server 2003年 |Exchange Server 2007年 |Exchange Server 2010年 |Exchange Server 2013
+**適用対象:** Exchange Server 2003 |Exchange Server 2007 |Exchange Server 2010 |Exchange Server 2013
   
-**CChkSGFiles**クラスの新しいインスタンスを作成します。 チェックするには、ストレージ グループおよびデータベースを指定する前に、この関数を呼び出す必要があります。 
+**CChkSGFiles** クラスの新しいインスタンスを作成します。 この関数を呼び出してから、確認するストレージ グループとデータベースを指定する必要があります。 
   
 ```cs
 Static CCheckSGFiles  * __stdcall New  ();
 
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 なし。
   
@@ -38,15 +38,15 @@ Static CCheckSGFiles  * __stdcall New  ();
 
 新しく作成されたオブジェクトへの参照 (ポインター)。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**新規**の関数は、 **CCheckSGFiles**オブジェクトを作成し、そのオブジェクトへの参照 (ポインター) を呼び出し元に返します。 **CCheckSGFiles**クラスのすべての他の関数を呼び出す前にこの関数を呼び出す必要があります。 
+**New** 関数は、**CCheckSGFiles** オブジェクトを作成して、そのオブジェクトへの参照 (ポインター) を呼び出し元に返します。 この関数を最初に呼び出してから、**CCheckSGFiles** クラスのその他の関数を呼び出す必要があります。 
   
-マルチ スレッド アプリケーションで CHKSGFILES を使用する場合、シングル スレッド アプリケーションの部分で、**新規**の関数を呼び出す必要があり、 **CCheckSGFiles**オブジェクトごとに 1 回のみ呼び出すことができます。 
+マルチスレッド アプリケーションで CHKSGFILES を使用している場合は、そのアプリケーションのシングルスレッドの部分で **New** 関数を呼び出す必要があります。また、その関数は **CCheckSGFiles** オブジェクトごとに 1 回だけ呼び出すことができます。  
   
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>Requirements
 
-Exchange 2013 には、CHKSGFILES API の 64 ビット バージョンにはのみが含まれます。
+Exchange 2013 には、CHKSGFILES API の64ビットバージョンのみが含まれています。
   
 アプリケーションを実行しているアカウントには、確認するデータベースとログ ファイルに対する読み取りアクセス許可が必要です。
   

@@ -1,5 +1,5 @@
 ---
-title: 応答 (GetDomainSettings) (SOAP)
+title: Response (GetDomainSettings) (SOAP)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: a5b052df-93bd-4fe1-ac30-83de9a3dfcd7
-description: 応答要素は、個々 のドメインの GetDomainSettings 呼び出しへの応答を表します。
-ms.openlocfilehash: 316d77104894cf5ed9121e7dab1c38646765c948
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Response 要素は、個々のドメインに対する GetDomainSettings 呼び出しへの応答を表します。
+ms.openlocfilehash: 67fe7aea4533058fa0df972e49a2069749dc258b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833169"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455584"
 ---
-# <a name="response-getdomainsettings-soap"></a>応答 (GetDomainSettings) (SOAP)
+# <a name="response-getdomainsettings-soap"></a>Response (GetDomainSettings) (SOAP)
 
-**応答**要素は、個々 のドメインの**GetDomainSettings**呼び出しへの応答を表します。 
+**Response**要素は、個々のドメインに対する**getdomainsettings**呼び出しへの応答を表します。 
   
 ```XML
 <Response>
@@ -29,7 +29,7 @@ ms.locfileid: "19833169"
 ```
 
  **GetDomainSettingsResponse**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -39,30 +39,30 @@ ms.locfileid: "19833169"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[DomainResponses (SOAP)](domainresponses-soap.md) <br/> |**GetDomainSettings**要求で要求された各ドメインへの応答が含まれています。  <br/> |
-|[エラー コード (SOAP)](errorcode-soap.md) <br/> |該当する場合、応答に関連付けられているエラー コードが含まれています。  <br/> |
-|[エラー メッセージ (SOAP)](errormessage-soap.md) <br/> |該当する場合、応答に関連付けられているエラー メッセージが含まれています。  <br/> |
+|[DomainResponses (SOAP)](domainresponses-soap.md) <br/> |**Getdomainsettings**要求で要求された各ドメインに対する応答を含みます。  <br/> |
+|[ErrorCode (SOAP)](errorcode-soap.md) <br/> |応答に関連付けられているエラーコードが含まれます (該当する場合)。  <br/> |
+|[ErrorMessage (SOAP)](errormessage-soap.md) <br/> |応答に関連付けられているエラーメッセージ (該当する場合) が含まれます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetDomainSettingsResponseMessage (SOAP)](getdomainsettingsresponsemessage-soap.md) <br/> |呼び出し元に、ドメイン構成設定を返します。  <br/> |
+|[GetDomainSettingsResponseMessage (SOAP)](getdomainsettingsresponsemessage-soap.md) <br/> |発信者にドメインの構成設定を返します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|スキーマ名  <br/> |スキーマの自動検出  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|スキーマ名  <br/> |自動検出スキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

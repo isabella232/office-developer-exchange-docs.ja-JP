@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 1bbe8507-7730-45e5-9232-c4f6fc39c2d9
 description: Exchange の EWS マネージ API または EWS を使用して、開発したアプリケーションの削除に関連するエラーを処理する方法を確認します。
-ms.openlocfilehash: 0dc16c3350bb75fb1e91650f0a0f0b7423727eeb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: HT
+ms.openlocfilehash: 41c217c1c3815606d898b8237ea327f34869174b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758887"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455948"
 ---
 # <a name="handling-deletion-related-errors-in-ews-in-exchange"></a>Exchange の EWS での削除に関連するエラーの処理
 
 Exchange の EWS マネージ API または EWS を使用して、開発したアプリケーションの削除に関連するエラーを処理する方法を確認します。
   
-アプリケーションが[アイテムとフォルダーを削除する](deleting-items-by-using-ews-in-exchange.md)場合は、削除に関連するエラーを処理する必要があります。 これらのエラーは実行時、または EWS アプリケーションを開発するときに処理することができます。
+アプリケーションが[アイテムとフォルダーを削除する](deleting-items-by-using-ews-in-exchange.md)場合は、削除に関連するエラーを処理する必要があります。これらのエラーは実行時に、または EWS アプリケーションを開発するときに処理することができます。
   
 **表 1: 削除に関連するエラーとその処理方法**
 

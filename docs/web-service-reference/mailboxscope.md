@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c9778823-f290-4827-ba19-5f391ed4f877
-description: MailboxScope 要素は、検索、または会話をフェッチする必要があります、プライマリ メールボックス、アーカイブ メールボックス、または両方のプライマリ、メールボックスをアーカイブするかどうかを識別します。
-ms.openlocfilehash: 89c9776079d686b114d6b744150f1c6df3711eab
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: MailboxScope 要素は、会話の検索またはフェッチがプライマリメールボックス、アーカイブメールボックス、またはプライマリメールボックスとアーカイブメールボックスのいずれかにまたがる必要があるかどうかを識別します。
+ms.openlocfilehash: 92823c06d4fe186917c3cfb532eda821bd6a95a7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832293"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455374"
 ---
 # <a name="mailboxscope"></a>MailboxScope
 
-**MailboxScope**要素は、検索、または会話をフェッチする必要があります、プライマリ メールボックス、アーカイブ メールボックス、または両方のプライマリ、メールボックスをアーカイブするかどうかを識別します。 
+**MailboxScope**要素は、会話の検索またはフェッチがプライマリメールボックス、アーカイブメールボックス、またはプライマリメールボックスとアーカイブメールボックスのいずれかにまたがる必要があるかどうかを識別します。 
   
 ```XML
 <MailboxScope> PrimaryOnly | ArchiveOnly | All </MailboxScope>
@@ -25,7 +25,7 @@ ms.locfileid: "19832293"
 
 **MailboxSearchLocationType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -39,25 +39,25 @@ ms.locfileid: "19832293"
   
 ### <a name="parent-elements"></a>親要素
 
-[FindConversation](findconversation.md) | [GetConversationItems](getconversationitems.md) | [(ConversationType) の会話](conversation-conversationtype.md)
+[Findconversation](findconversation.md)  | [GetConversationItems](getconversationitems.md)  | [会話 (ConversationType)](conversation-conversationtype.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**MailboxScope**要素のテキスト値は、検索のスコープをまたはいずれかのプライマリ メールボックス間での会話でアーカイブ メールボックス、または両方のプライマリおよびアーカイブ メールボックス アイテムを取得します。 **PrimaryOnly**のテキスト値は、ユーザーのプライマリ メールボックスを対象とする範囲を示します。 **ArchiveOnly**のテキスト値は、ユーザーのアーカイブ メールボックスを対象とする範囲を示します。 **すべて**のテキスト値は、プライマリ メールボックスとアーカイブ メールボックスの両方を対象とする範囲を示します。 
+**MailboxScope**要素のテキスト値は、プライマリメールボックス、アーカイブメールボックス、またはプライマリメールボックスとアーカイブメールボックスの両方で、会話内のアイテムを検索または取得するためのスコープです。 Text 値が**Primaryonly**の場合は、ユーザーのプライマリメールボックスを対象とするスコープを示します。 アーカイブのテキスト値は、ユーザーのアーカイブメールボックスを対象とするスコープ**のみ**を示します。 Text 値は、プライマリメールボックスとアーカイブメールボックスの両方をターゲットとするスコープ**を示します**。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
 |空にすることができます。  <br/> |false  <br/> |
    
 

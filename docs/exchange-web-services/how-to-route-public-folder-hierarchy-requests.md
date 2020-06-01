@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: ec35df8e-4d75-4aa1-8b9c-ae1db7e05772
 description: パブリック フォルダー階層についての知識を必要とするパブリック フォルダー情報に関するすべての要求 (パブリック フォルダーの移動や更新、削除、検索など) は、特定のユーザーの既定のパブリック フォルダー階層のメールボックスにルーティングする必要があります。 そのメールボックスに要求をルーティングするには、X-AnchorMailbox ヘッダーと X-PublicFolderMailbox ヘッダーの値を自動検出サービスから返される特定の値に設定する必要があります。
-ms.openlocfilehash: 983431864729edbb040a7206dae416d10bfb2b7a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: HT
+ms.openlocfilehash: 2773aa3ab29868c69d1fb088deb6c8a96dfb9ecc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759058"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455702"
 ---
 # <a name="route-public-folder-hierarchy-requests"></a>パブリック フォルダー階層の要求をルーティングする
 
@@ -21,19 +21,19 @@ ms.locfileid: "19759058"
 
 |ヘッダー|必要なもの|取得する方法|
 |:-----|:-----|:-----|
-|**X-AnchorMailbox** <br/> |自動検出の SOAP 応答 [GetUserSettings](http://msdn.microsoft.com/ja-JP/library/office/dd877096%28v=exchg.150%29.aspx) から得られる [PublicFolderInformation](http://msdn.microsoft.com/ja-JP/library/dn751006%28v=exchg.150%29.aspx) 値。これが **X-AnchorMailbox** ヘッダーの値になります。<br/><br/> ![TODO](media/Ex15_PF_PFH_Anchor.png)| 1. ユーザーのメールボックスの SMTP アドレスで **GetUserSetting** 要求を送信します。<br/><br/>2. 自動検出サービスが返す **PublicFolderInformation** 要素の値をキャッシュします。 これは、コード内に既存の自動検出呼び出しからキャッシュすることも、新しい [EWS マネージ API の GetUserSettings 呼び出し](#bk_getpfinfoewsma)または [GetUserSettings SOAP 要求](#bk_getpfinfoews)からキャッシュすることもできます。  <br/><br/>3. **PublicFolderInformation** 要素を使用して、**X AnchorMailbox** ヘッダーの値を入力します。 **PublicFolderInformation** 要素の値は、SMTP アドレスです。  <br/> |
-|**X-PublicFolderMailbox** <br/> |[POX 自動検出の応答](http://msdn.microsoft.com/ja-JP/library/bb204082%28v=exchg.150%29.aspx)から得られる [Server](http://msdn.microsoft.com/ja-JP/library/bb204084%28v=exchg.150%29.aspx) 値。これが **X-PublicFolderMailbox** ヘッダーの値になります。<br/><br/> ![TODO](media/Ex15_PF_PFH_PFMailbox.png)|1. **X-AnchorMailbox** 電子メール アドレスを使用して、[POX 自動検出サービスを呼び出します](#bk_makeautodrequest)。  <br/><br/>2. 自動検出サービスから返された **Server** 要素を使用して、**X-PublicFolderMailbox** ヘッダーの値を設定します。 **X-PublicFolderMailbox** の値は、ユーザー名が GUID になる SMTP アドレスです。  <br/> |
+|**X-AnchorMailbox** <br/> |自動検出の SOAP 応答 [GetUserSettings](https://msdn.microsoft.com/library/office/dd877096%28v=exchg.150%29.aspx) から得られる [PublicFolderInformation](https://msdn.microsoft.com/library/dn751006%28v=exchg.150%29.aspx) 値。これが **X-AnchorMailbox** ヘッダーの値になります。<br/><br/> ![TODO](media/Ex15_PF_PFH_Anchor.png)| 1. ユーザーのメールボックスの SMTP アドレスで **GetUserSetting** 要求を送信します。<br/><br/>2. 自動検出サービスが返す **PublicFolderInformation** 要素の値をキャッシュします。 これは、コード内に既存の自動検出呼び出しからキャッシュすることも、新しい [EWS マネージ API の GetUserSettings 呼び出し](#bk_getpfinfoewsma)または [GetUserSettings SOAP 要求](#bk_getpfinfoews)からキャッシュすることもできます。  <br/><br/>3. **PublicFolderInformation** 要素を使用して、**X AnchorMailbox** ヘッダーの値を入力します。 **PublicFolderInformation** 要素の値は、SMTP アドレスです。  <br/> |
+|**X-PublicFolderMailbox** <br/> |[POX 自動検出の応答](https://msdn.microsoft.com/library/bb204082%28v=exchg.150%29.aspx)から得られる [Server](https://msdn.microsoft.com/library/bb204084%28v=exchg.150%29.aspx) 値。これが **X-PublicFolderMailbox** ヘッダーの値になります。<br/><br/> ![TODO](media/Ex15_PF_PFH_PFMailbox.png)|1. **X-AnchorMailbox** 電子メール アドレスを使用して、[POX 自動検出サービスを呼び出します](#bk_makeautodrequest)。  <br/><br/>2. 自動検出サービスから返された **Server** 要素を使用して、**X-PublicFolderMailbox** ヘッダーの値を設定します。 **X-PublicFolderMailbox** の値は、ユーザー名が GUID になる SMTP アドレスです。  <br/> |
 
 <br/>
 
 ヘッダーの値が決定したら、それらを[パブリック フォルダー階層の要求を行うときに](#bk_setheadervalues)含めます。
   
-この記事の手順は、パブリック フォルダー階層の要求に固有のものです。 要求がパブリック フォルダー階層とコンテンツのどちらの要求かを特定するには、「[パブリック フォルダー要求のルーティング](public-folder-access-with-ews-in-exchange.md#bk_routing)」を参照してください。
+この記事の手順は、パブリック フォルダー階層の要求に固有のものです。要求がパブリック フォルダー階層とコンテンツのどちらの要求かを特定するには、「[パブリック フォルダー要求のルーティング](public-folder-access-with-ews-in-exchange.md#bk_routing)」を参照してください。
   
 ## <a name="determine-the-value-of-the-x-anchormailbox-header-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して X-AnchorMailbox ヘッダーの値を決定する
 <a name="bk_getpfinfoewsma"> </a>
 
-EWS マネージ API を使用して [PublicFolderInformation (POX)](http://msdn.microsoft.com/library/a221aa9e-b4ac-4ec5-aa42-7e2a69e8eaa6%28Office.15%29.aspx) 値を取得するには、自動検出サービスへの既存の呼び出しで返される **PublicFolderInformation** 要素の値をキャッシュするか、新しい呼び出しを行います。 
+EWS マネージ API を使用して [PublicFolderInformation (POX)](https://msdn.microsoft.com/library/a221aa9e-b4ac-4ec5-aa42-7e2a69e8eaa6%28Office.15%29.aspx) 値を取得するには、自動検出サービスへの既存の呼び出しで返される **PublicFolderInformation** 要素の値をキャッシュするか、新しい呼び出しを行います。 
   
 新しい呼び出しを行う場合は、コードに [EWS マネージ API を使用してユーザー設定を取得](how-to-get-user-settings-from-exchange-by-using-autodiscover.md#bk_Managed)[EWS マネージ API を使用してユーザー設定を取得](how-to-get-user-settings-from-exchange-by-using-autodiscover.md#bk_Managed)してから、次のコードを使用して **GetUserSettings** サンプル メソッドを呼び出します。こうすれば、**PublicFolderInformation** 要素の値だけを取得します。 入力パラメーターとして、メールボックス ユーザーの SMTP アドレスを含めます。 
   
@@ -53,21 +53,21 @@ Console.WriteLine("X-AnchorMailbox value for public folder hierarchy requests: {
 ## <a name="determine-the-value-of-the-x-anchormailbox-header-using-soap"></a>SOAP を使用して X-AnchorMailbox ヘッダーの値を決定する
 <a name="bk_getpfinfoews"> </a>
 
-次のコード例は、SOAP 操作の [GetUserSettings](http://msdn.microsoft.com/ja-JP/library/dd877096%28v=exchg.150%29.aspx) を使用して、**PublicFolderInformation** 値を取得する方法を示しています。 メールボックス ユーザーは [Mailbox](http://msdn.microsoft.com/ja-JP/library/dd877076%28v=exchg.150%29.aspx) 要素で指定されます。また、[RequestedSettings](http://msdn.microsoft.com/ja-JP/library/office/dd877107%28v=exchg.150%29.aspx) 要素によって応答を [PublicFolderInformation](http://msdn.microsoft.com/ja-JP/library/dn751006%28v=exchg.150%29.aspx) 値に制限しています。 
+次のコード例は、SOAP 操作の [GetUserSettings](https://msdn.microsoft.com/library/dd877096%28v=exchg.150%29.aspx) を使用して、**PublicFolderInformation** 値を取得する方法を示しています。 メールボックス ユーザーは [Mailbox](https://msdn.microsoft.com/library/dd877076%28v=exchg.150%29.aspx) 要素で指定されます。また、[RequestedSettings](https://msdn.microsoft.com/library/office/dd877107%28v=exchg.150%29.aspx) 要素によって応答を [PublicFolderInformation](https://msdn.microsoft.com/library/dn751006%28v=exchg.150%29.aspx) 値に制限しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:a="http://schemas.microsoft.com/exchange/2010/Autodiscover"
+<soap:Envelope xmlns:a="https://schemas.microsoft.com/exchange/2010/Autodiscover"
                xmlns:wsa="http://www.w3.org/2005/08/addressing"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <a:RequestedServerVersion>Exchange2007_SP1</a:RequestedServerVersion>
-    <wsa:Action>http://schemas.microsoft.com/exchange/2010/Autodiscover/Autodiscover/GetUserSettings</wsa:Action>
+    <wsa:Action>https://schemas.microsoft.com/exchange/2010/Autodiscover/Autodiscover/GetUserSettings</wsa:Action>
     <wsa:To>https://pod51042.outlook.com/autodiscover/autodiscover.svc</wsa:To>
   </soap:Header>
   <soap:Body>
-    <a:GetUserSettingsRequestMessage xmlns:a="http://schemas.microsoft.com/exchange/2010/Autodiscover">
+    <a:GetUserSettingsRequestMessage xmlns:a="https://schemas.microsoft.com/exchange/2010/Autodiscover">
       <a:Request>
         <a:Users>
           <a:User>
@@ -99,7 +99,7 @@ Console.WriteLine("X-AnchorMailbox value for public folder hierarchy requests: {
 ## <a name="make-an-autodiscover-request-to-determine-the-x-publicfolderinformation-value"></a>自動検出要求によって X-PublicFolderInformation 値を決定する
 <a name="bk_makeautodrequest"> </a>
 
-**PublicFolderInformation** SMTP アドレスを使用して自動検出要求を行います。これは、**X-AnchorMailbox** 値として使用されています。 「[Exchange 2013: Get user settings with Autodiscover](http://code.msdn.microsoft.com/exchange/Exchange-2013-Get-user-7e22c86e)」のコード サンプルを使用して、自動検出サービスを呼び出します。このコード サンプルを使用すると、自動検出プロセスが合理化されます。 このコード サンプルでは、次の表に示したコマンド ライン引数を使用して **PublicFolderInformation** SMTP アドレスの POX 自動検出サービスを呼び出しています。 
+**PublicFolderInformation** SMTP アドレスを使用して自動検出要求を行います。これは、**X-AnchorMailbox** 値として使用されています。 「[Exchange 2013: Get user settings with Autodiscover](https://code.msdn.microsoft.com/exchange/Exchange-2013-Get-user-7e22c86e)」のコード サンプルを使用して、自動検出サービスを呼び出します。このコード サンプルを使用すると、自動検出プロセスが合理化されます。 このコード サンプルでは、次の表に示したコマンド ライン引数を使用して **PublicFolderInformation** SMTP アドレスの POX 自動検出サービスを呼び出しています。 
   
 |**コマンド ライン引数**|**説明**|
 |:-----|:-----|
@@ -111,11 +111,11 @@ Console.WriteLine("X-AnchorMailbox value for public folder hierarchy requests: {
   
 `SharedPublicFolder@contoso.com -skipSOAP -auth sonyaf@contoso.com`
 
-「**Exchange 2013: Get user settings with Autodiscover**」のサンプルを実行すると、最後の自動検出応答は成功し、メールボックス GUID に関連付けられているすべてのユーザー設定が含まれます。 EXCH [Protocol](http://msdn.microsoft.com/ja-JP/library/bb204278%28v=exchg.150%29.aspx)[Type](http://msdn.microsoft.com/ja-JP/library/office/bb204223%28v=exchg.150%29.aspx) 要素に関連付けられた [Server](http://msdn.microsoft.com/ja-JP/library/bb204084%28v=exchg.150%29.aspx) 値が **X-PublicFolderInformation** ヘッダー値になります。 
+「**Exchange 2013: Get user settings with Autodiscover**」のサンプルを実行すると、最後の自動検出応答は成功し、メールボックス GUID に関連付けられているすべてのユーザー設定が含まれます。 EXCH [Protocol](https://msdn.microsoft.com/library/bb204278%28v=exchg.150%29.aspx)[Type](https://msdn.microsoft.com/library/office/bb204223%28v=exchg.150%29.aspx) 要素に関連付けられた [Server](https://msdn.microsoft.com/library/bb204084%28v=exchg.150%29.aspx) 値が **X-PublicFolderInformation** ヘッダー値になります。 
   
 ```XML
-<Autodiscover xmlns="http://schemas.microsoft.com/exchange/autodiscover/responseschema/2006">
-  <Response xmlns="http://schemas.microsoft.com/exchange/autodiscover/outlook/responseschema/2006a">
+<Autodiscover xmlns="https://schemas.microsoft.com/exchange/autodiscover/responseschema/2006">
+  <Response xmlns="https://schemas.microsoft.com/exchange/autodiscover/outlook/responseschema/2006a">
     …
     <Account>
       <AccountType>email</AccountType>
@@ -130,10 +130,10 @@ Console.WriteLine("X-AnchorMailbox value for public folder hierarchy requests: {
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<Autodiscover xmlns="http://schemas.microsoft.com/exchange/autodiscover/outlook/requestschema/2006">
+<Autodiscover xmlns="https://schemas.microsoft.com/exchange/autodiscover/outlook/requestschema/2006">
   <Request>
     <EMailAddress>SharedPublicFolder@contoso.com</EMailAddress>
-    <AcceptableResponseSchema>http://schemas.microsoft.com/exchange/autodiscover/outlook/responseschema/2006a</AcceptableResponseSchema>
+    <AcceptableResponseSchema>https://schemas.microsoft.com/exchange/autodiscover/outlook/responseschema/2006a</AcceptableResponseSchema>
   </Request>
 </Autodiscover>
 ```
@@ -154,15 +154,15 @@ Console.WriteLine("X-AnchorMailbox value for public folder hierarchy requests: {
 
 |**EWS マネージ API メソッド**|**EWS 操作**|
 |:-----|:-----|
-|[Folder.FindFolders](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx) <br/> [Folder.Delete](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.delete%28v=exchg.80%29.aspx) <br/> [Folder.Update](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.update%28v=exchg.80%29.aspx) <br/> [Folder.Move](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.move%28v=exchg.80%29.aspx) <br/> |[CreateFolder](http://msdn.microsoft.com/library/6f6c334c-b190-4e55-8f0a-38f2a018d1b3%28Office.15%29.aspx) <br/> [FindFolder](http://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx) <br/> [DeleteFolder](http://msdn.microsoft.com/library/b0f92682-4895-4bcf-a4a1-e4c2e8403979%28Office.15%29.aspx) <br/> [UpdateFolder](http://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx) <br/> [MoveFolder](http://msdn.microsoft.com/library/c7233966-6c87-4a14-8156-b1610760176d%28Office.15%29.aspx) <br/> |
+|[Folder.FindFolders](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx) <br/> [Folder.Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.delete%28v=exchg.80%29.aspx) <br/> [Folder.Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.update%28v=exchg.80%29.aspx) <br/> [Folder.Move](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.move%28v=exchg.80%29.aspx) <br/> |[CreateFolder](https://msdn.microsoft.com/library/6f6c334c-b190-4e55-8f0a-38f2a018d1b3%28Office.15%29.aspx) <br/> [FindFolder](https://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx) <br/> [DeleteFolder](https://msdn.microsoft.com/library/b0f92682-4895-4bcf-a4a1-e4c2e8403979%28Office.15%29.aspx) <br/> [UpdateFolder](https://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx) <br/> [MoveFolder](https://msdn.microsoft.com/library/c7233966-6c87-4a14-8156-b1610760176d%28Office.15%29.aspx) <br/> |
    
-EWS マネージ API を使用してこれらのヘッダーを追加するには、[HttpHeaders.Add](http://msdn.microsoft.com/ja-JP/library/system.net.http.headers.httpheaders.add%28v=vs.118%29.aspx) メソッドを使用します。 
+EWS マネージ API を使用してこれらのヘッダーを追加するには、[HttpHeaders.Add](https://msdn.microsoft.com/library/system.net.http.headers.httpheaders.add%28v=vs.118%29.aspx) メソッドを使用します。 
   
 ```cs
 service.HttpHeaders.Add("X-AnchorMailbox", "SharedPublicFolder@contoso.com");service.HttpHeaders.Add("X-PublicFolderMailbox", "1ec2a236-ed93-4f88-b9c6-33e63fa4aa44@contoso.com");
 ```
 
-たとえば、次のコードは、この記事の例で取得した値に **X-AnchorMailbox** ヘッダーと **X-PublicFolderMailbox** ヘッダーが設定されている [FindFolder](http://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx) 要求を示しています。 
+たとえば、次のコードは、この記事の例で取得した値に **X-AnchorMailbox** ヘッダーと **X-PublicFolderMailbox** ヘッダーが設定されている [FindFolder](https://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx) 要求を示しています。 
   
 ```XML
 POST https://outlook.office365.com/EWS/Exchange.asmx HTTP/1.1
@@ -175,7 +175,7 @@ Content-Length: 1174
 Expect: 100-continue
 Connection: Keep-Alive
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013_SP1" />
   </soap:Header>

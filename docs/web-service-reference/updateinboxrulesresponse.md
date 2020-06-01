@@ -1,5 +1,5 @@
 ---
-title: UpdateInboxRulesResponse
+title: Update受信トレイルールの応答
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 0947b6aa-0d95-421b-aebb-d03021ecc110
-description: UpdateInboxRulesResponse 要素は、UpdateInboxRules 要求への応答を定義します。
-ms.openlocfilehash: cd64e4546f8d9bf573062d9c982477be3fa4d925
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Update受信トレイの Response 要素は、Update受信トレイルール要求への応答を定義します。
+ms.openlocfilehash: 1216a32bdaf2dd5211021add0728844eb62089ed
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839858"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455906"
 ---
-# <a name="updateinboxrulesresponse"></a>UpdateInboxRulesResponse
+# <a name="updateinboxrulesresponse"></a>Update受信トレイルールの応答
 
-**UpdateInboxRulesResponse**要素は、UpdateInboxRules 要求への応答を定義します。 
+**Update受信**トレイの response 要素は、Update受信トレイルール要求への応答を定義します。 
   
 ```XML
 <UpdateInboxRulesResponse>
@@ -33,8 +33,8 @@ ms.locfileid: "19839858"
 </UpdateInboxRulesResponse>
 ```
 
- **UpdateInboxRulesResponseType**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Update受信トレイルール Responsetype**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,25 +42,25 @@ ms.locfileid: "19839858"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**ResponseClass** <br/> | [購読の取り消し操作](unsubscribe-operation.md)応答のステータスについて説明します。<br/><br/> 次の値は、この属性の有効です。  <br/><br/>-成功  <br/>-警告  <br/>-エラー  <br/> |
+|**ResponseClass** <br/> | 登録[解除操作](unsubscribe-operation.md)の応答の状態を表します。<br/><br/> この属性には、次の値が有効です。  <br/><br/>-成功  <br/>-Warning  <br/>-エラー  <br/> |
    
 #### <a name="responseclass-attribute-values"></a>ResponseClass 属性の値
 
 |**値**|**説明**|
 |:-----|:-----|
-|**Success** <br/> |満了する要求をについて説明します。  <br/> |
-|**Warning** <br/> | 処理されなかった要求をについて説明します。 警告は、要求内のアイテムを処理し、それ以降の項目を処理できませんでした、エラーが発生した場合に返される場合があります。 <br/><br/>警告の送信元の例を次に示します。  <br/><br/>-Exchange ストアは、バッチの実行中にオフラインです。  <br/>-Active Directory ドメイン サービス (AD DS) では、オフラインです。  <br/>-メールボックスを移動します。  <br/>-メッセージ データベース (MDB) は、オフラインです。  <br/>-パスワードの有効期限が切れています。  <br/>クォータを超えています。  <br/> |
-|**Error** <br/> | 満たせない要求をについて説明します。 <br/><br/>次に、エラーのソースの例を示します。  <br/><br/>-無効な属性または要素  <br/>属性または要素の範囲を超えています。  <br/>-不明なタグ  <br/>属性または要素のコンテキストでは有効ではないです。  <br/>-任意のクライアントから不正なアクセス試行  <br/>-クライアント側の有効な呼び出しへの応答でサーバー側エラー  <br/> <br/> エラーに関する情報は、 [ResponseCode](responsecode.md)および[メッセージ テキスト](messagetext.md)の要素を参照しています。  <br/> |
+|**Success** <br/> |満たされる要求を記述します。  <br/> |
+|**Warning** <br/> | 処理されなかった要求を示します。 要求内のアイテムが処理され、その後のアイテムを処理できなかったときにエラーが発生した場合は、警告が返されることがあります。 <br/><br/>警告のソースの例を次に示します。  <br/><br/>-バッチ処理中に Exchange ストアがオフラインになります。  <br/>-Active Directory ドメインサービス (AD DS) がオフラインになっています。  <br/>-メールボックスは移動されます。  <br/>-メッセージデータベース (MDB) はオフラインです。  <br/>-パスワードの有効期限が切れています。  <br/>-クォータが上限を超えています。  <br/> |
+|**Error** <br/> | 満たされない要求を記述します。 <br/><br/>エラーのソースの例を次に示します。  <br/><br/>-無効な属性または要素  <br/>-範囲外の属性または要素  <br/>-不明なタグ  <br/>-コンテキスト内で有効ではない属性または要素  <br/>-クライアントによる権限のないアクセス試行  <br/>-有効なクライアント側の呼び出しに応答した場合のサーバー側障害  <br/> <br/> エラーに関する情報については、応答[secの](responsecode.md)要素と[messagetext](messagetext.md)要素を参照してください。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[MessageText](messagetext.md) <br/> |応答のステータスの説明を提供します。  <br/> |
-|[ResponseCode](responsecode.md) <br/> |要求に関するステータス情報を提供します。  <br/> |
-|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在使用されていない将来の使用に予約されているとします。 0 の値が含まれています。  <br/> |
-|[MessageXml](messagexml.md) <br/> |追加のエラー応答情報を提供します。  <br/> |
-|[RuleOperationErrors](ruleoperationerrors.md) <br/> |エラーが発生したルールの各フィールドの規則の妥当性確認エラーの配列を表します。  <br/> |
+|[MessageText](messagetext.md) <br/> |応答の状態を説明するテキストを提供します。  <br/> |
+|[ResponseCode](responsecode.md) <br/> |要求に関する状態情報を提供します。  <br/> |
+|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在未使用で、今後の使用のために予約されています。 このプロパティには0の値が含まれています。  <br/> |
+|[MessageXml](messagexml.md) <br/> |エラー応答に関する追加情報を提供します。  <br/> |
+|[RuleOperationErrors](ruleoperationerrors.md) <br/> |エラーが発生した各ルールフィールドのルール検証エラーの配列を表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -70,22 +70,22 @@ ms.locfileid: "19839858"
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [UpdateInboxRules](updateinboxrules.md)
 - [UpdateInboxRules の操作](updateinboxrules-operation.md)
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

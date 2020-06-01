@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: c7e3035e-a4ef-4c11-8cb0-214790a554ff
-description: 有効要素では、ルールが有効になっているかどうかを示します。
-ms.openlocfilehash: d0f0a77ec1ec952ac1cd9d9ad686ccfcb8f70c42
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: IsEnabled 要素は、ルールが有効になっているかどうかを示します。
+ms.openlocfilehash: 7a150dc4a27cf4ff7da9825d1daae2b747088539
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832000"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455311"
 ---
 # <a name="isenabled"></a>IsEnabled
 
-**有効**要素では、ルールが有効になっているかどうかを示します。 
+**IsEnabled**要素は、ルールが有効になっているかどうかを示します。 
   
 ```XML
 <IsEnabled/>
 ```
 
- **ブール型 (Boolean)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -48,24 +48,24 @@ ms.locfileid: "19832000"
    
 ## <a name="text-value"></a>テキスト値
 
-**True**の場合、テキスト値は、ルールが有効で、実行できることを示します。 **False**の値は、ルールを実行できないことを示します。 
+テキスト値が**true の場合**は、ルールが有効で実行可能であることを示します。 値が**false**の場合は、ルールを実行できないことを示します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

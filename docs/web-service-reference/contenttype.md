@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: f91ff0df-0d8a-43ea-a188-d80f0e885f19
-description: ContentType 要素では、添付ファイルのコンテンツの多目的インターネット メール拡張 (MIME) の種類について説明します。
-ms.openlocfilehash: 489df47343051623d5b6a98557f2bd434a5dad52
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ContentType 要素には、添付ファイルのコンテンツのマルチパーパスインターネットメール拡張 (MIME) の種類が記述されています。
+ms.openlocfilehash: cb326bb761ea28e0e9f77501bf754c7c1f0318fb
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759745"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455227"
 ---
 # <a name="contenttype"></a>ContentType
 
-**ContentType**要素では、添付ファイルのコンテンツの多目的インターネット メール拡張 (MIME) の種類について説明します。 
+**ContentType**要素には、添付ファイルのコンテンツのマルチパーパスインターネットメール拡張 (MIME) の種類が記述されています。 
   
 ```xml
 <ContentType/>
 ```
 
- **文字列型 (String)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **String**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,29 +44,29 @@ ms.locfileid: "19759745"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ItemAttachment](itemattachment.md) <br/> |Exchange の他のアイテムに関連付けられている Exchange アイテムを表します。  <br/> |
-|[FileAttachment](fileattachment.md) <br/> |Exchange ストア内のアイテムに関連付けられているファイルを表します。  <br/> |
+|[ItemAttachment](itemattachment.md) <br/> |別の Exchange アイテムに関連付けられている Exchange アイテムを表します。  <br/> |
+|[FileAttachment](fileattachment.md) <br/> |Exchange ストア内のアイテムに添付されているファイルを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、添付ファイルのコンテンツ タイプを表す文字列値です。
+テキスト値は、添付ファイルのコンテンツタイプを表す文字列型 (string) の値です。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

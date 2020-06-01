@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 1c4c5969-7bdd-4021-be0e-cae99e86cf2c
 description: EWS アプリケーション内のプロパティに関連するエラーを処理する方法を確認します。
-ms.openlocfilehash: f214ab40c3717178c6957a9da93bdf89999fc1d3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: HT
+ms.openlocfilehash: 5863ab4e06bd968aa38b6fdec471e09c5e23f54a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758892"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455409"
 ---
 # <a name="ews-property-related-errors"></a>EWS プロパティ関連のエラー
 
@@ -42,7 +42,7 @@ EWS アプリケーション内のプロパティに関連するエラーを処�
 |ErrorNoFolderClassOverride  <br/> |ベース フォルダー型ではない新しいフォルダーで、フォルダー クラスを設定しています。  <br/> |汎用フォルダー型を使用して、フォルダー クラスを設定します。  <br/> |
 |ErrorNoPropertyTagForCustomProperties  <br/> |カスタムの拡張プロパティをプロパティ タグによって参照しています。  <br/> |プロパティ セット識別子と、プロパティ名またはプロパティ ディスパッチ識別子のいずれかによってカスタムの拡張プロパティを参照するよう、コードを更新します。  <br/> |
 |ErrorObjectTypeChanged  <br/> |スキーマの型に一致しないアイテムでアイテム クラスを設定または更新しています。  <br/> |アイテム クラスがアイテムのスキーマの型と一致するようコードを更新します。  <br/> |
-|ErrorPropertyUpdate  <br/> |無効なプロパティ値でプロパティを更新しています。  <br/> |[UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) 要求で送信する前に、プロパティの値を確認します。  <br/> |
+|ErrorPropertyUpdate  <br/> |無効なプロパティ値でプロパティを更新しています。  <br/> |[UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) 要求で送信する前に、プロパティの値を確認します。  <br/> |
 |ErrorRequiredPropertyMissing  <br/> |必須プロパティが欠けている CreateAttachment 要求を送信しています。  <br/> |応答で返されるプロパティのパスで指定されているように、不足しているプロパティを設定するよう、コードを更新します。  <br/> |
 |ErrorUnsupportedMapiPropertyType  <br/> |型がオブジェクト、オブジェクト配列、エラー、または null である拡張プロパティの型を使用しています。  <br/> |制限された拡張プロパティの型を使用しないよう、コードを更新します。  <br/> |
 |ErrorUnsupportedPathForQuery  <br/> |検索制限の中でサポートされていないプロパティ パスを使用しています。  <br/> |サポートされていないプロパティ パスを除外するよう、検索制限を変更します。  <br/> |

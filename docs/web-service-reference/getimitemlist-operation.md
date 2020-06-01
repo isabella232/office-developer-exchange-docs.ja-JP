@@ -7,44 +7,44 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: e31d14e1-0c1f-4b69-98b7-157d59c13698
-description: 操作 GetImItemList EWS についての情報を検索します。
-ms.openlocfilehash: 3977b0ad31e819cd973ce261ba3152b3840003b3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetImItemList EWS 操作についての情報を検索します。
+ms.openlocfilehash: aabe84054b93e7de8af6145942493a0224932e45
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760758"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456067"
 ---
 # <a name="getimitemlist-operation"></a>GetImItemList 操作
 
-**GetImItemList** EWS の操作に関する情報を検索します。 
+**Getimitemlist** EWS 操作についての情報を検索します。 
   
-## <a name="using-the-getimitemlist-operation"></a>GetImItemList 操作を使用します。
+## <a name="using-the-getimitemlist-operation"></a>GetImItemList 操作の使用
 
-**GetImItemList**操作は、インスタント メッセージング (IM) のグループの一覧を取得し、IM は、メールボックス内のペルソナをお問い合わせください。 **GetImItemList**操作には、引数になりません。 
+**Getimitemlist**操作は、メールボックス内のインスタントメッセージング (im) グループと im 連絡先のペルソナの一覧を取得します。 **Getimitemlist**操作は引数を受け取りません。 
   
 この操作は Exchange Server 2013 で導入されました。
   
-### <a name="getimitemlist-operation-soap-headers"></a>GetImItemList 操作の SOAP ヘッダー
+### <a name="getimitemlist-operation-soap-headers"></a>GetImItemList 操作 SOAP ヘッダー
 
-**GetImItemList**操作は、次の表に記載されている SOAP ヘッダーを使用できます。 
+**Getimitemlist**操作では、次の表に示す SOAP ヘッダーを使用できます。 
   
 |**ヘッダー名**|**要素**|**説明**|
 |:-----|:-----|:-----|
-|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装するユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |RFC 3066、」タグの「識別の言語」を使用してメールボックスへのアクセスに定義されているカルチャを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマのバージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答するサーバーのバージョンを識別します。 このヘッダーは、応答に適用されます。  <br/> |
+|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |RFC 3066 で定義されているように、メールボックスへのアクセスに使用されるカルチャ (言語の識別用のタグ) を識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは応答に適用されます。  <br/> |
    
-## <a name="getimitemlist-operation-request-example-request-your-im-items-list"></a>GetImItemList 操作の要求の例: IM の項目の一覧を要求します。
+## <a name="getimitemlist-operation-request-example-request-your-im-items-list"></a>GetImItemList 操作要求の例: IM アイテムリストの要求
 
-**GetImItemList**操作要求の次の使用例は、IM グループの一覧を要求する方法を示し、IM は、メールボックス内のペルソナをお問い合わせください。 **GetImItemList**要素は、SOAP 本文での唯一の要素のオプションです。 
+次の**Getimitemlist**操作要求の例は、メールボックス内の im グループと im 連絡先のペルソナの一覧を要求する方法を示しています。 **Getimitemlist**要素は、SOAP 本文の唯一の要素オプションです。 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
       <t:MailboxCulture>en-US</t:MailboxCulture>
@@ -55,18 +55,18 @@ ms.locfileid: "19760758"
 </soap:Envelope>
 ```
 
-要求 SOAP 本体にはには、次の要素が含まれています。
+要求 SOAP 本文には、次の要素が含まれています。
   
 - [GetImItemList](getimitemlist.md)
     
-## <a name="successful-getimitemlist-operation-response"></a>GetImItemList 操作の成功の応答
+## <a name="successful-getimitemlist-operation-response"></a>成功した GetImItemList 操作の応答
 
-成功した要求への応答、 **GetImItemList**操作の例を次に示します。 応答には、IM の 4 つのグループが含まれています。 IM グループの 3 つの-その他の連絡先、タグ、および [お気に入り]-は、Exchange ストア内の既定のグループです。 MyCustomGroup2 グループは、ユーザーが作成したユーザー設定のグループです。 その他の連絡先とタグのグループのメンバーではありません。 お気に入りグループは、1 つのメンバーを持っています。 MyCustomGroup2 は、2 つのメンバーの連絡先を持っています。 アイテム識別子は、 **GetItem**の後続の要求を実行して、IM の連絡先に関する詳細情報を取得するために提供されます。 
+次の例は、 **Getimitemlist**操作要求に対する正常な応答を示しています。 応答には、4つの IM グループが含まれます。 3つの IM グループ (その他の連絡先、タグ付きおよびお気に入り) は、Exchange ストア内の既定のグループです。 MyCustomGroup2 グループは、ユーザーが作成したカスタムグループです。 他の連絡先とタグ付きグループにはメンバーがありません。 お気に入りグループには、単一の連絡先メンバーがあります。 MyCustomGroup2 には、2つのメンバーの連絡先があります。 その後の**GetItem**要求を実行して、IM 連絡先に関する詳細情報を取得できるように、アイテムの識別子が提供されます。 
   
-この例では、2 つのペルソナを返します。 最初のペルソナは、2 つの連絡先アイテムを表します: アンソニー ・ スミスとトニー ・ スミス。 **ペルソナ**オブジェクトでは、結合された連絡先の情報が返されます。 2 番目のペルソナは、Adam は Terence の表示名を持つ 1 つの連絡先を表します。 
+この例では、2つのペルソナを返します。 最初のペルソナは、Anthony Smith と Tony Smith という2つの連絡先アイテムを表します。 複合された連絡先情報は、 **Persona**オブジェクトで返されます。 2番目のペルソナは、Terence の表示名を持つ単一の連絡先を表します。 
   
 > [!NOTE]
-> Exchange ストア識別子、項目の識別子、送信元識別子、フォルダーの識別子、およびペルソナの識別子は、読みやすさを保持するために短縮されています。 
+> 読みやすくするために、Exchange ストア識別子、アイテム識別子、ソース識別子、フォルダー識別子、およびペルソナ識別子が短縮されています。 
   
 ```XML
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
@@ -76,18 +76,18 @@ ms.locfileid: "19760758"
                            MajorBuildNumber="349" 
                            MinorBuildNumber="0" 
                            Version="Exchange2013" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" />
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" />
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <GetImItemListResponse ResponseClass="Success" 
-                             xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                             xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <ResponseCode>NoError</ResponseCode>
          <ImItemList>
-            <Groups xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <Groups xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
                <ImGroup>
                   <DisplayName>Other Contacts</DisplayName>
                   <GroupType>IPM.DistList.MOC.OtherContacts</GroupType>
@@ -123,7 +123,7 @@ ms.locfileid: "19760758"
                   </MemberCorrelationKey>
                </ImGroup>
             </Groups>
-            <Personas xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <Personas xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
                <Persona>
                   <PersonaId Id="AAQkAGQ1MjJjMTBkLTc4YkZmRkYQAQAFgxE1nBcqRGgYWWorM9/+s=" />
                   <PersonaType>Person</PersonaType>
@@ -356,7 +356,7 @@ ms.locfileid: "19760758"
     
 - [ImItemList](imitemlist.md)
     
-- [表示名 (文字列)](displayname-string.md)
+- [DisplayName (文字列)](displayname-string.md)
     
 - [GroupType](grouptype.md)
     
@@ -370,7 +370,7 @@ ms.locfileid: "19760758"
     
 - [PersonaId](personaid.md)
     
-- [PersonaType](personatype.md)
+- [個人の Atype](personatype.md)
     
 - [CreationTime](creationtime.md)
     
@@ -378,7 +378,7 @@ ms.locfileid: "19760758"
     
 - [DisplayNameLastFirst](displaynamelastfirst.md)
     
-- [表題](fileas.md)
+- [FileAs](fileas.md)
     
 - [FileAsId](fileasid.md)
     
@@ -386,9 +386,9 @@ ms.locfileid: "19760758"
     
 - [姓](surname.md)
     
-- [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
+- [EmailAddress (非 Emptystringtype)](emailaddress-nonemptystringtype.md)
     
-- [名 (EmailAddressType)](name-emailaddresstype.md)
+- [Name (EmailAddressType)](name-emailaddresstype.md)
     
 - [RoutingType (EmailAddressType)](routingtype-emailaddresstype.md)
     
@@ -398,7 +398,7 @@ ms.locfileid: "19760758"
     
 - [RelevanceScore](relevancescore.md)
     
-- [帰属 (ArrayOfPersonaAttributionsType)](attributions-arrayofpersonaattributionstype.md)
+- [Attributions (ArrayOfPersonaAttributionsType)](attributions-arrayofpersonaattributionstype.md)
     
 - [属性 (PersonaAttributionType)](attribution-personaattributiontype.md)
     
@@ -406,13 +406,13 @@ ms.locfileid: "19760758"
     
 - [SourceId](sourceid.md)
     
-- [IsWritable](iswritable.md)
+- [IsWritable 可能](iswritable.md)
     
 - [IsQuickContact](isquickcontact.md)
     
 - [IsHidden](ishidden.md)
     
-- [フォルダー Id](folderid.md)
+- [FolderId](folderid.md)
     
 - [StringAttributedValue](stringattributedvalue.md)
     
@@ -420,11 +420,11 @@ ms.locfileid: "19760758"
     
 - [FileAsIds](fileasids.md)
     
-- [GivenNames](givennames.md)
+- [与えた名前](givennames.md)
     
-- [姓](surnames.md)
+- [Surnames](surnames.md)
     
-- [HomePhones](homephones.md)
+- [ホーム電話](homephones.md)
     
 - [PhoneNumberAttributedValue](phonenumberattributedvalue.md)
     
@@ -436,22 +436,22 @@ ms.locfileid: "19760758"
     
 - [ImAddresses](imaddresses.md)
     
-- [値 (ExtendedPropertyType)](value-extendedpropertytype.md)
+- [Value (ExtendedPropertyType)](value-extendedpropertytype.md)
     
-## <a name="getimitemlist-operation-error-response"></a>GetImItemList 操作のエラー応答
+## <a name="getimitemlist-operation-error-response"></a>GetImItemList 操作エラー応答
 
-**GetImItemList**操作の要求に対してエラー応答の例を次に示します。 これは、SOAP ヘッダーで要求されたサーバーの正しくないバージョンを含む要求に対する応答です。 このエラー応答は、SOAP 違反し、EWS のスキーマには表示されません。 
+次の例は、 **Getimitemlist**操作要求へのエラー応答を示しています。 これは、SOAP ヘッダーに誤って要求されたサーバーバージョンが含まれる要求に対する応答です。 このエラー応答は SOAP 違反であり、EWS スキーマでは表示されません。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
    <s:Body>
       <s:Fault>
-         <faultcode xmlns:a="http://schemas.microsoft.com/exchange/services/2006/types">a:ErrorIncorrectSchemaVersion</faultcode>
+         <faultcode xmlns:a="https://schemas.microsoft.com/exchange/services/2006/types">a:ErrorIncorrectSchemaVersion</faultcode>
          <faultstring xml:lang="en-US">The request is valid but does not specify the correct server version in the RequestServerVersion SOAP header.  Ensure that the RequestServerVersion SOAP header is set with the correct RequestServerVersionValue.</faultstring>
          <detail>
-            <e:ResponseCode xmlns:e="http://schemas.microsoft.com/exchange/services/2006/errors">ErrorIncorrectSchemaVersion</e:ResponseCode>
-            <e:Message xmlns:e="http://schemas.microsoft.com/exchange/services/2006/errors">The request is valid but does not specify the correct server version in the RequestServerVersion SOAP header.  Ensure that the RequestServerVersion SOAP header is set with the correct RequestServerVersionValue.</e:Message>
+            <e:ResponseCode xmlns:e="https://schemas.microsoft.com/exchange/services/2006/errors">ErrorIncorrectSchemaVersion</e:ResponseCode>
+            <e:Message xmlns:e="https://schemas.microsoft.com/exchange/services/2006/errors">The request is valid but does not specify the correct server version in the RequestServerVersion SOAP header.  Ensure that the RequestServerVersion SOAP header is set with the correct RequestServerVersionValue.</e:Message>
          </detail>
       </s:Fault>
    </s:Body>
@@ -462,7 +462,7 @@ ms.locfileid: "19760758"
 
 - [AddImGroup 操作](addimgroup-operation.md)
     
-- [Exchange 内の EWS のユーザーと連絡先](http://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
+- [Exchange 内の EWS のユーザーと連絡先](https://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
     
 - [GetImItems 操作](getimitems-operation.md)
     

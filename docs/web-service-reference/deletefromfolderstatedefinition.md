@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3aba59a0-f12a-48b5-842b-11cf4530dd51
-description: DeleteFromFolderStateDefinition 要素は、フォルダーからアイテムが削除されたときの状態を指定します。
-ms.openlocfilehash: 7b6374b9fa55d3b08569e8ac9e247dd6e5bebc24
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DeleteFromFolderStateDefinition 要素は、アイテムがフォルダーから削除されるときの状態を指定します。
+ms.openlocfilehash: 0ea8c61a6839790869781d5d87ca81772b2e38d6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759981"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455724"
 ---
 # <a name="deletefromfolderstatedefinition"></a>DeleteFromFolderStateDefinition
 
-**DeleteFromFolderStateDefinition**要素は、フォルダーからアイテムが削除されたときの状態を指定します。 
+**Deletefromfolderstatedefinition**要素は、アイテムがフォルダーから削除されるときの状態を指定します。 
   
 ```XML
 <DeleteFromFolderStateDefinition>
@@ -27,7 +27,7 @@ ms.locfileid: "19759981"
 ```
 
  **DeleteFromFolderStateDefinitionType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -37,33 +37,33 @@ ms.locfileid: "19759981"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[発生 (タイム ゾーンの切り替え)](occurrence-time-zone-transition.md) <br/> |予定表アイテムが発生した日付を指定します。  <br/> |
-|[IsOccurrencePresent](isoccurrencepresent.md) <br/> |予定表アイテムの出現箇所が存在するかどうかを示すブール値を指定します。  <br/> |
+|[発生 (タイムゾーンの切り替え)](occurrence-time-zone-transition.md) <br/> |予定表アイテムが発生する日付を指定します。  <br/> |
+|[Iソケットの現在の表示](isoccurrencepresent.md) <br/> |予定表アイテムの発生が存在するかどうかを示すブール値を指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[StateDefinition](statedefinition.md) <br/> |状態の定義を指定します。  <br/> |
+|[StateDefinition](statedefinition.md) <br/> |状態定義を指定します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |型のスキーマ  <br/> |
-|検証ファイル  <br/> |types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

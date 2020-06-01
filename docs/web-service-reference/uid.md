@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: b1c43c1e-b773-4dd1-9a32-32b3b8efeaf9
-description: UID 要素は、予定表のアイテムを一意に識別します。
-ms.openlocfilehash: b2b371c885e5656a9e2b1b5afd28f65fa7e195de
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: UID 要素は、予定表アイテムを一意に識別します。
+ms.openlocfilehash: c2eb8d9cbb238132bdce2eedf7a41f90fcd20460
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839764"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455913"
 ---
 # <a name="uid"></a>UID
 
-**UID**要素は、予定表のアイテムを一意に識別します。 
+**UID**要素は、予定表アイテムを一意に識別します。 
   
 ```xml
 <UID>   </UID>
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,28 +44,28 @@ ms.locfileid: "19839764"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[カレンダー項目](calendaritem.md) <br/> |Exchange 予定表アイテムを表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |会議メッセージを表します。  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |会議出席依頼を表します。  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |会議の返信を表します。  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |会議の取り消し通知を表します。  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |会議出席依頼の返信を表します。  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |会議の取り消しを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 テキスト値は、一意の識別子を表します。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

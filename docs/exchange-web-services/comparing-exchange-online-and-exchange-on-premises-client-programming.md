@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 3c2eabe4-52bc-461e-a6dd-f65f22f16e50
 description: Exchange Online および Exchange オンプレミスに対して動作する EWS マネージ API または EWS クライアント アプリケーションを作成するための設計に関する考慮事項について説明します。
-ms.openlocfilehash: 87c6ee476e06b50c339901bf61020b0fc98f8486
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: HT
+ms.openlocfilehash: 8b4dbae5cadfed377aa3a7179144a7cea68bc35c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758905"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456165"
 ---
 # <a name="comparing-exchange-online-and-exchange-on-premises-client-programming"></a>Exchange Online と Exchange オンプレミス クライアントでのプログラミングの比較
 
@@ -23,7 +23,7 @@ Exchange Online および Exchange オンプレミスに対して動作する EW
 
 ## <a name="autodiscover-client-programming-considerations"></a>自動検出クライアント プログラミングに関する考慮事項
 
-[自動検出](autodiscover-for-exchange.md)は、Exchange クライアントの構成情報を提供します。 クライアント アプリケーションは、クライアントが Exchange Online と Exchange オンプレミスのどちらを対象にしているかに応じて、次の 3 つの方法のいずれかで構成情報を検出できます。 
+[自動検出](autodiscover-for-exchange.md) は、Exchange クライアントの構成情報を提供します。クライアント アプリケーションは、クライアントが Exchange Online と Exchange オンプレミスのどちらを対象にしているかに応じて、次の 3 つの方法のいずれかで構成情報を検出できます。 
   
 **表 1. 自動検出サービスの種類と Exchange の適用性**
 
@@ -39,8 +39,8 @@ Exchange Online および Exchange オンプレミスに対して動作する EW
 
 |**自動検出サービスの種類**|**サービス バージョンを格納する XML 要素**|**ユーザーが Exchange Online アカウントを持っているかどうかを示す XML 要素**|
 |:-----|:-----|:-----|
-|SOAP 自動検出  <br/> |**CasVersion** テキスト値を持つ [設定 (SOAP)](http://msdn.microsoft.com/library/43db26e1-f7be-49fd-b26b-fc1b10bd3458%28Office.15%29.aspx) 要素  <br/> |**UserMSOnline** テキスト値を持つ [設定 (SOAP)](http://msdn.microsoft.com/library/43db26e1-f7be-49fd-b26b-fc1b10bd3458%28Office.15%29.aspx) 要素  <br/> |
-|POX 自動検出  <br/> |[ServerVersion (POX)](http://msdn.microsoft.com/library/2c0bc41c-2452-4fc8-a19c-0e85f9fdbc4a%28Office.15%29.aspx) <br/> |**MicrosoftOnline** <br/> |
+|SOAP 自動検出  <br/> |**CasVersion** テキスト値を持つ [設定 (SOAP)](https://msdn.microsoft.com/library/43db26e1-f7be-49fd-b26b-fc1b10bd3458%28Office.15%29.aspx) 要素  <br/> |**UserMSOnline** テキスト値を持つ [設定 (SOAP)](https://msdn.microsoft.com/library/43db26e1-f7be-49fd-b26b-fc1b10bd3458%28Office.15%29.aspx) 要素  <br/> |
+|POX 自動検出  <br/> |[ServerVersion (POX)](https://msdn.microsoft.com/library/2c0bc41c-2452-4fc8-a19c-0e85f9fdbc4a%28Office.15%29.aspx) <br/> |**MicrosoftOnline** <br/> |
    
 クライアントがこの情報を確実に取り込むようにして、Exchange サーバーで利用可能な[機能セット](web-service-api-feature-availability-in-exchange-and-the-ews-managed-api.md)を対象にできるようにします。 これは、ユーザーのメールボックスが Exchange Online にあるか、または Exchange オンプレミス組織にあるかに基づいた別々の動作をクライアントが予期することができるかどうかを判別するのに役立ちます。 
 
@@ -48,7 +48,7 @@ Exchange Online および Exchange オンプレミスに対して動作する EW
 
 ## <a name="testing-and-log-files-in-applications-that-target-exchange-online"></a>Exchange Online を対象とするアプリケーションのテストおよびログ ファイル
 
-Exchange Online は、EWS のプロトコル ログ ファイル、EWS のパフォーマンス カウンターへのアクセス、およびオンプレミスの Exchange サーバーで利用可能な EWS 関連サービス イベントへのアクセスを提供しません。 ただし、これらへのアクセスは、アプリケーションが EWS と対話するときにどのように実行されるかを判別するのに役立ちます。 テスト用の Exchange オンプレミス サーバーに対してアプリケーションを必ずテストして、そのパフォーマンスを最適化できるようにします。 可能であれば、Exchange Online の調整設定に一致するように、テスト サーバーで[調整設定を変更する](http://technet.microsoft.com/ja-JP/library/bb232205%28v=exchg.150%29.aspx#Policies)ことができます。これにより、Exchange Online に接続したときのアプリケーションの動作を検証できます。 
+Exchange Online は、EWS のプロトコル ログ ファイル、EWS のパフォーマンス カウンターへのアクセス、およびオンプレミスの Exchange サーバーで利用可能な EWS 関連サービス イベントへのアクセスを提供しません。 ただし、これらへのアクセスは、アプリケーションが EWS と対話するときにどのように実行されるかを判別するのに役立ちます。 テスト用の Exchange オンプレミス サーバーに対してアプリケーションを必ずテストして、そのパフォーマンスを最適化できるようにします。 可能であれば、Exchange Online の調整設定に一致するように、テスト サーバーで[調整設定を変更する](https://technet.microsoft.com/library/bb232205%28v=exchg.150%29.aspx#Policies)ことができます。これにより、Exchange Online に接続したときのアプリケーションの動作を検証できます。 
   
 > [!TIP]
 > [EWSRelentless](https://ewsrelentless.codeplex.com/) ツールを使用して、EWS の負荷テストを実行できます。 テスト サーバー、EWS プロトコル ログ、EWS パフォーマンス カウンター、サービス イベント、および EWS 調整設定でこのツールを使用すると、負荷がある状態で EWS がどのように動作するかについて理解を深めることができます。 
@@ -57,7 +57,7 @@ Exchange Online は、EWS のプロトコル ログ ファイル、EWS のパフ
 
 ## <a name="throttling-settings-and-exchange-online"></a>調整設定と Exchange Online
 
-Exchange Online での [EWS 調整設定](ews-throttling-in-exchange.md)の既定値は、Exchange オンプレミスでの既定値とは異なります。 また、Exchange Online の調整設定は変更できません。 Exchange 管理シェル コマンドレットを使用すると、Exchange オンプレミスの調整設定を検出できます。ただし、これらのコマンドレットは、Exchange Online では有効ではありません。 
+[EWS 調整設定](ews-throttling-in-exchange.md)の Exchange Online の既定値は、Exchange オンプレミスの既定値とは異なります。また、Exchange Online の調整設定は変更できません。Exchange 管理シェル コマンドレットを使用すると、Exchange オンプレミスの調整設定を検出できます。ただし、これらのコマンドレットは、Exchange Online では有効ではありません。 
 
 <a name="ems"> </a>
 
@@ -71,12 +71,12 @@ Exchange Online での [EWS 調整設定](ews-throttling-in-exchange.md)の既�
     
 - 認証設定
     
-Exchange Online で利用可能なコマンドレットの詳細については、「[Exchange Online の PowerShell コマンドレット](http://help.outlook.com/ja-JP/140/dd575549.aspx)」を参照してください。 Exchange オンプレミスで使用可能なコマンドレットの詳細については、「[Exchange 2013 コマンドレット](http://technet.microsoft.com/ja-JP/library/bb124413%28v=exchg.150%29.aspx)」を参照してください。
+Exchange Online で利用可能なコマンドレットの詳細については、「[Exchange Online の PowerShell コマンドレット](http://help.outlook.com/140/dd575549.aspx)」を参照してください。 Exchange オンプレミスで使用可能なコマンドレットの詳細については、「[Exchange 2013 コマンドレット](https://technet.microsoft.com/library/bb124413%28v=exchg.150%29.aspx)」を参照してください。
   
 ## <a name="client-affinity-and-network-load-balancers"></a>クライアント アフィニティとネットワーク負荷分散装置
 <a name="affinity"> </a>
 
-ほとんどの EWS 通信では、Exchange とのアフィニティを維持するためにクライアントが参加する必要はありません。 メールボックス イベントへのサブスクリプションには、クライアントが Cookie およびその他の情報を提供して、ユーザーのメールボックス イベントのキューを維持する Exchange サーバーとのアフィニティを維持する必要があります。 Exchange Server 2010 は、exchangecookie を使用して、ネットワーク負荷分散装置間でクライアント アフィニティを維持します。 Exchange Online および Exchange 2013 以降のバージョンの Exchange オンプレミスは、[X-AnchorMailbox ヘッダー、X-PreferServerAffinity ヘッダー、および X-BackEndOverrideCookie Cookie](how-to-maintain-affinity-between-group-of-subscriptions-and-mailbox-server.md#bk_howmaintained) を使用して、メールボックスの通知のアフィニティを維持します。 
+ほとんどの EWS 通信では、Exchange とのアフィニティを維持するためにクライアントが参加する必要はありません。メールボックス イベントへのサブスクリプションには、クライアントが Cookie およびその他の情報を提供して、ユーザーのメールボックス イベントのキューを維持する Exchange サーバーとのアフィニティを維持する必要があります。Exchange Server 2010 は、exchangecookie を使用して、ネットワーク負荷分散装置間でクライアント アフィニティを維持します。Exchange Online および Exchange 2013 以降のバージョンの Exchange オンプレミスは、[X-AnchorMailbox ヘッダー、X-PreferServerAffinity ヘッダー、および X-BackEndOverrideCookie Cookie](how-to-maintain-affinity-between-group-of-subscriptions-and-mailbox-server.md#bk_howmaintained) を使用して、メールボックスの通知のアフィニティを維持します。 
   
 ## <a name="authentication"></a>認証
 <a name="auth"> </a>
@@ -110,11 +110,11 @@ Office 365 および Exchange Online の各種プランや Exchange サーバー
 
 |**API 機能**|**プランまたはエディションに関する考慮事項**|
 |:-----|:-----|
-|Exchange の偽装によるアクセスを除く、アカウントへの EWS アクセス  <br/> |[ビジネス向け Office 365—キオスク プラン](http://office.microsoft.com/ja-JP/business/compare-office-365-kiosk-plans-FX103178917.aspx)では許可されていません。  <br/> |
-|ユニファイド メッセージング (UM)  <br/> |Office 365 エンタープライズ (E3) プラン、Exchange Online プラン 2、および Exchange Server 2013 エンタープライズ エディションでのみ利用できます。  <br/> |
-|Active Directory Domain Services (AD DS) の統合  <br/> |Office 365 Small Business および Office 365 Small Business Premium プランでは利用できません。  <br/> |
-|Information Rights Management、アーカイブ、および訴訟ホールド  <br/> |Office 365 エンタープライズ (E3 および E4) プランでのみ利用できます。  <br/> |
-|データ損失防止  <br/> |Office 365 エンタープライズ プラン、Exchange Online プラン 2、および Exchange Server 2013 エンタープライズ エディションでのみ利用できます。  <br/> |
+
+|Exchange 偽装を経由する場合を除き、アカウントへの EWS アクセス  <br/> |[Office 365 for business](https://office.microsoft.com/business/compare-office-365-kiosk-plans-FX103178917.aspx)では許可されていません— Kiosk プラン。  <br/> |
+
+
+|ユニファイドメッセージング (UM)  <br/> |Office 365 Enterprise (E3) プラン、Exchange Online プラン2、および Exchange Server 2013 Enterprise edition でのみ利用可能です。  <br/> | |Active Directory ドメインサービス (AD DS) の統合  <br/> |Office 365 Small Business および Office 365 Small Business Premium プランでは利用できません。  <br/> | |Information Rights Management、アーカイブ、および法的保持  <br/> |Office 365 Enterprise (E3 および E4) プランでのみ使用できます。  <br/> | |データ損失防止  <br/> |Office 365 Enterprise プラン、Exchange Online プラン2、および Exchange Server 2013 Enterprise edition でのみ使用できます。  <br/> |
    
 機能の可用性は変わる可能性があるため、Exchange Online プランと Exchange サーバー エディションを確認して、機能の可用性がクライアントに及ぼす影響を検証することをお勧めします。 [GetServiceConfiguration 操作](how-to-get-service-configuration-information-by-using-ews-in-exchange.md)を使用して、または機能を実装する操作のためのテスト要求を送信することによって、機能の可用性を確認するようにクライアントを設計することもできます。 その機能が利用できない場合、サーバーからの応答でそのように示されます。 
   
@@ -130,8 +130,8 @@ Exchange Online ではなく、Exchange オンプレミスを対象としてい�
 ## <a name="see-also"></a>関連項目
 
 - [Exchange の EWS クライアントの設計の概要](ews-client-design-overview-for-exchange.md)
-- [Exchange Online と Exchange Server 2013 の比較](http://blogs.technet.com/b/exchange/archive/2012/09/19/comparing-exchange-online-and-exchange-server-2013.aspx)  
-- [ビジネス プラン向けのすべての Office 365 を比較する](http://office.microsoft.com/ja-JP/business/compare-all-office-365-for-business-plans-FX104051403.aspx)
+- [Exchange Online と Exchange Server 2013 の比較](https://blogs.technet.com/b/exchange/archive/2012/09/19/comparing-exchange-online-and-exchange-server-2013.aspx)  
+- [ビジネス プラン向けのすべての Office 365 を比較する](https://office.microsoft.com/business/compare-all-office-365-for-business-plans-FX104051403.aspx)
 - [EwsRelentless - EWS 負荷生成ツール](https://ewsrelentless.codeplex.com/)
 - [Exchange および EWS Managed API の Web サービス API 機能の可用性](web-service-api-feature-availability-in-exchange-and-the-ews-managed-api.md)
 - [Exchange での EWS 調整](ews-throttling-in-exchange.md)

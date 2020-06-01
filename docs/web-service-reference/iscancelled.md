@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 50c1e97f-2913-47a1-8457-60428a3c5b92
-description: IsCancelled 要素では、予定または会議がキャンセルされたかどうかを示します。
-ms.openlocfilehash: 594b8a9ccb535f074a8cf1da060373f640231a29
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: IsCancelled 要素は、予定または会議がキャンセルされたかどうかを示します。
+ms.openlocfilehash: 946c9d956da9cf31e9fa08d4ab6f4950b11214b9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831993"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455570"
 ---
 # <a name="iscancelled"></a>IsCancelled
 
-**IsCancelled**要素では、予定または会議がキャンセルされたかどうかを示します。 
+**Iscancelled**要素は、予定または会議がキャンセルされたかどうかを示します。 
   
 ```xml
 <IsCancelled/>
 ```
 
- **ブール型 (Boolean)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,29 +44,29 @@ ms.locfileid: "19831993"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[カレンダー項目](calendaritem.md) <br/> |Exchange 予定表アイテムを表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議出席依頼を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-ブール値を表す文字列値は、この要素が含まれている場合に必要です。 **True**の場合は、予定表アイテムがキャンセルされたことを示します。 **False**の値は、予定表アイテムがキャンセルされなかったことを示します。 
+この要素が含まれている場合は、ブール値を表すテキスト値が必要です。 **True**の値は、予定表アイテムが取り消されたことを示します。 値が**false**の場合、予定表アイテムが取り消されていないことを示します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8309e468-115b-4d6e-b33c-c4719dcecc4c
-description: ユーザーの構成オブジェクトのプロパティのエントリをディクショナリのディクショナリの要素を定義します。
-ms.openlocfilehash: 151abfe7a9a9ae05b8b61af87c33675e025920ec
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Dictionary 要素は、ユーザー構成オブジェクトの辞書のプロパティエントリのセットを定義します。
+ms.openlocfilehash: 8e5267717aab2317b2bc1581a775ead81025a08a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760035"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455668"
 ---
 # <a name="dictionary"></a>Dictionary
 
-ユーザーの構成オブジェクトのプロパティのエントリをディクショナリの**ディクショナリ**の要素を定義します。 
+**Dictionary**要素は、ユーザー構成オブジェクトの辞書のプロパティエントリのセットを定義します。 
   
 ```xml
 <Dictionary>
@@ -30,7 +30,7 @@ ms.locfileid: "19760035"
 ```
 
  **UserConfigurationDictionaryType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,34 +40,34 @@ ms.locfileid: "19760035"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[DictionaryEntry](dictionaryentry.md) <br/> |1 つのディクショナリ エントリのプロパティの内容を指定します。  <br/> |
+|[DictionaryEntry](dictionaryentry.md) <br/> |単一の辞書エントリプロパティの内容を指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[UserConfiguration](userconfiguration.md) <br/> |1 人のユーザーの構成オブジェクトを定義します。  <br/> |
+|[UserConfiguration](userconfiguration.md) <br/> |1つのユーザー構成オブジェクトを定義します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

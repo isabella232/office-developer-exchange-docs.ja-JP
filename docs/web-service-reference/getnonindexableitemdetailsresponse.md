@@ -1,5 +1,5 @@
 ---
-title: GetNonIndexableItemDetailsResponse
+title: Getnonindexableitem、Response
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 6cf2aea3-c6f7-4cad-a45d-2daffeece4b6
-description: GetNonIndexableItemDetailsResponse 要素は、GetNonIndexableItemDetails 要求への応答を指定します。
-ms.openlocfilehash: c4b8cf4c5c20889a74cab990bc7f26c0072cdc47
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetNonIndexableItemDetails Response 要素は、GetNonIndexableItemDetails 要求への応答を指定します。
+ms.openlocfilehash: 7563a772e04f72c50ddfea0a69fa511d2a538b8e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760793"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455619"
 ---
-# <a name="getnonindexableitemdetailsresponse"></a>GetNonIndexableItemDetailsResponse
+# <a name="getnonindexableitemdetailsresponse"></a>Getnonindexableitem、Response
 
-**GetNonIndexableItemDetailsResponse**要素は、 **GetNonIndexableItemDetails**要求への応答を指定します。 
+**Getnonindexableitemdetails response**要素は、 **getnonindexableitemdetails**要求への応答を指定します。 
   
 ```XML
 <GetNonIndexableItemDetailsResponse>
@@ -29,8 +29,8 @@ ms.locfileid: "19760793"
 </GetNonIndexableItemDetailsResponse>
 ```
 
- **GetNonIndexableItemDetailsResponseMessageType**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Getnonindexableitem/[Responsemessagetype]**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,25 +40,25 @@ ms.locfileid: "19760793"
   
 ### <a name="child-elements"></a>子要素
 
-[メッセージ テキスト](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [NonIndexableItemDetailsResult](nonindexableitemdetailsresult.md)
+[Messagetext](messagetext.md)  | 応答[Secmode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [Nonindexableitemの取得結果](nonindexableitemdetailsresult.md)
   
 ### <a name="parent-elements"></a>親要素
 
 [ResponseMessages](responsemessages.md)
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
 |空にすることができます。  <br/> |false  <br/> |
    
 

@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: dc2240c1-5500-4d5c-97d5-09d63ffd30d5
 description: Exchange の EWS マネージ API または EWS を使用して、既存の予定または会議のタイム ゾーンを更新する方法について説明します。
-ms.openlocfilehash: 535eb9f546d9a4353408579f3a24750f32237699
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: HT
+ms.openlocfilehash: 064f99997b7c3d1197cb8d1ee6a24f8fb874f706
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759068"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455843"
 ---
 # <a name="update-the-time-zone-for-an-appointment-by-using-ews-in-exchange"></a>Exchange の EWS を使用して予定のタイム ゾーンを更新する
 
@@ -29,7 +29,7 @@ Exchange の予定表に予定または会議を作成するときに、開始�
 
 次の例では、EWS マネージ API を使用して、**Appointment.StartTimeZone** プロパティと **Appointment.EndTimeZone** プロパティを更新することで、既存の予定のタイム ゾーンを中部標準時に更新しています。 _shiftAppointment_ パラメーターが **true** に設定されている場合は、コードでは予定の開始時刻と終了時刻を明示的に設定しません。 この場合、開始時刻と終了時刻は新しいタイム ゾーンで同じタイム ゾーン相対時刻になるようにサーバーによってシフトされます。 **false** に設定されている場合は、予定が UTC で同じ時刻になるように、開始時刻と終了時刻を明示的にコードで変換します。 
 
-この例では、**ExchangeService** オブジェクトは [Credentials](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservicebase.credentials%28v=exchg.80%29.aspx) プロパティと [Url](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.url%28v=exchg.80%29.aspx) プロパティの有効な値で初期化されているものとします。 
+この例では、**ExchangeService** オブジェクトは [Credentials](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservicebase.credentials%28v=exchg.80%29.aspx) プロパティと [Url](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.url%28v=exchg.80%29.aspx) プロパティの有効な値で初期化されているものとします。 
   
 ```cs
 static void UpdateAppointmentTimeZone(ExchangeService service, ItemId apptId, bool shiftAppointment)
@@ -112,7 +112,7 @@ static void UpdateAppointmentTimeZone(ExchangeService service, ItemId apptId, bo
 }
 ```
 
-この例を使用して、開始が 1:00 PM 東部標準時で終了が 2:00 PM 東部標準時の予定を更新する場合、_shiftAppointment_ パラメーターが true に設定されていて、[ExchangeService.TimeZone](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.timezone%28v=exchg.80%29.aspx) プロパティが東部標準時に設定されていると、出力は次のようになります。 
+この例を使用して、開始が 1:00 PM 東部標準時で終了が 2:00 PM 東部標準時の予定を更新する場合、_shiftAppointment_ パラメーターが true に設定されていて、[ExchangeService.TimeZone](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.timezone%28v=exchg.80%29.aspx) プロパティが東部標準時に設定されていると、出力は次のようになります。 
   
 ```MS-DOS
 Before update:
@@ -150,14 +150,14 @@ After update:
   
 ## <a name="updating-the-time-zone-on-an-existing-appointment-by-using-ews"></a>既存の予定のタイム ゾーンを更新する (EWS を使用する場合)
 
-次に示す EWS の [UpdateItem 操作](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx)要求の例では、予定のタイム ゾーンを更新します。 この例では、[StartTimeZone](http://msdn.microsoft.com/library/d38c4dc1-4ecb-42a1-8d57-a451b16a2de2%28Office.15%29.aspx) 要素と [EndTimeZone](http://msdn.microsoft.com/library/6c53c337-be60-4d22-9e9e-a0c140c5e913%28Office.15%29.aspx) 要素のみを更新しています。そのため、開始時刻と終了時刻は新しいタイム ゾーンで同じタイム ゾーン相対時刻になるようにサーバーによってシフトされます。 **ItemId** 要素の値は、読みやすいよう短縮してあります。 
+次に示す EWS の [UpdateItem 操作](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx)要求の例では、予定のタイム ゾーンを更新します。 この例では、[StartTimeZone](https://msdn.microsoft.com/library/d38c4dc1-4ecb-42a1-8d57-a451b16a2de2%28Office.15%29.aspx) 要素と [EndTimeZone](https://msdn.microsoft.com/library/6c53c337-be60-4d22-9e9e-a0c140c5e913%28Office.15%29.aspx) 要素のみを更新しています。そのため、開始時刻と終了時刻は新しいタイム ゾーンで同じタイム ゾーン相対時刻になるようにサーバーによってシフトされます。 **ItemId** 要素の値は、読みやすいよう短縮してあります。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+    xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010" />
   </soap:Header>
@@ -192,9 +192,9 @@ After update:
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+    xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010" />
   </soap:Header>

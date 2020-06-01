@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 6a819bff-b6fc-4082-b311-179267ae8b4f
 description: JoinOnlineMeetingUrl 要素は、オンライン会議に参加するための URL を指定します。
-ms.openlocfilehash: 642cfaccefc5342f705d9555377c7ec985c09f6c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 57fb6c144d673f7e25b98e5450759f42312564a4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832187"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44454128"
 ---
 # <a name="joinonlinemeetingurl"></a>JoinOnlineMeetingUrl
 
@@ -24,7 +24,7 @@ ms.locfileid: "19832187"
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -38,13 +38,13 @@ ms.locfileid: "19832187"
   
 ### <a name="parent-elements"></a>親要素
 
-[カレンダー項目](calendaritem.md)
+[CalendarItem](calendaritem.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**JoinOnlineMeetingUrl**要素のテキスト値は、オンライン会議の URL です。 
+**JoinOnlineMeetingUrl**要素のテキスト値は、オンライン会議への URL です。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   

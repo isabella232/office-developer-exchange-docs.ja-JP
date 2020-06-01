@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 1f7837e7-9eff-4e10-9577-c40f7ed6af94
-description: ExpandDL 操作では、配布リストの完全なメンバーシップを公開します。
-ms.openlocfilehash: 4af6198ff15407b7fb71cdb4010ff6ce035460d0
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: ExpandDL 操作は、配布リストの完全なメンバーシップを公開します。
+ms.openlocfilehash: 8edaf057538e2c1136465f0ff7937c14477b2c47
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353743"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44454051"
 ---
 # <a name="expanddl-operation"></a>ExpandDL 操作
 
-ExpandDL 操作では、配布リストの完全なメンバーシップを公開します。
+ExpandDL 操作は、配布リストの完全なメンバーシップを公開します。
   
-## <a name="using-the-expanddl-web-method"></a>ExpandDL Web メソッドを使用します。
+## <a name="using-the-expanddl-web-method"></a>ExpandDL Web メソッドの使用
 
-ExpandDL 操作では、Exchange.asmx に配置されている Web サービスを使用します。 この Web サービス メソッドは、パブリックな配布リストの拡張の[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)の子要素またはプライベートの拡張のため、[アイテム Id](itemid.md)の子要素のいずれかを含むことができる[メールボックス](mailbox.md)の要素を受け入れる配布リストです。 
+ExpandDL 操作では、Exchange .asmx に配置されている Web サービスを使用します。 この Web サービスメソッドは、パブリック配布リストの拡張用の[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)子要素、またはプライベート配布リストの展開用の[ItemId](itemid.md)子要素のいずれかを含むことができる[Mailbox](mailbox.md)要素を受け入れます。 
   
-パブリックな配布リストを展開するには、次のいずれかを使用します。
+パブリック配布リストは、次のいずれかを使用して展開できます。
   
 1. 配布リストのエイリアス
     
@@ -37,36 +37,36 @@ ExpandDL 操作では、Exchange.asmx に配置されている Web サービス�
     
 4. X500
     
-5. Exchange の従来のアドレス
+5. Exchange 従来のアドレス
     
 6. 配布リストの名前
     
 7. 表示名
     
 > [!IMPORTANT]
-> 表示名が一意ではありません。 複数のアカウントは、同じ表示名を共有できます。 
+> 表示名が一意ではありません。 複数のアカウントで同じ表示名を共有できます。 
   
 ## <a name="remarks"></a>注釈
 
-再帰的な拡張はサポートされていません。 1 回の呼び出しでは、1 つの配布リストを拡張できます。 1 つ以上の配布リストには、条件が一致すると、Web サービスはエラーを報告します。 クライアント アプリケーションでは、あいまいな配布リストと、 [ExpandDL 操作](expanddl-operation.md)のパラメーターとして必要な配布リストの正しい電子メール アドレスを選択し、あいまいな名前解決 (ANR) を使用できます。 詳細については、 [ResolveNames の操作](resolvenames-operation.md)を参照してください。
+再帰的な展開はサポートされていません。 1回の呼び出しで展開できる配布リストは1つだけです。 複数の配布リストが条件に一致する場合、Web サービスはエラーを報告します。 クライアントアプリケーションはあいまいな名前解決 (ANR) を使用してあいまいな配布リストを見つけ、必要な配布リストの正しい電子メールアドレスを[Expanddl 操作](expanddl-operation.md)のパラメーターとして選択することができます。 詳細については、「 [ResolveNames operation](resolvenames-operation.md)」を参照してください。
   
-パブリックな配布リストは、Active Directory に配置されます。 メールが有効なまたは動的配布グループすることができます。 アドレス] ボックスの一覧からグループを表示する必要があり、各メンバーには空でない電子メール アドレスが必要があります。 配布リストのメンバーには、メールが有効なユーザーと連絡先、パブリック フォルダー、およびメールが有効な配布リストおよび動的グループを指定できます。
+パブリック配布リストは、Active Directory にあります。 任意のメールが有効な配布グループまたは動的配布グループを指定できます。 このグループは、アドレス一覧から非表示にしないでください。また、各メンバーには空ではない電子メールアドレスを設定する必要があります。 配布リストのメンバーには、メールが有効なユーザーと連絡先、パブリックフォルダー、およびメールが有効な配布リストと動的グループを使用できます。
   
-個人用配布リストは、ユーザーのメールボックスの [連絡先] フォルダーに配置されます。 個人用配布リストは、ExpandDL 要求でそのストアの項目の識別子を使用するための電子メール アドレスがありません。 個人用配布リストのメンバーは、メールが有効なユーザー、連絡先または配布リストを Active Directory から、またはユーザーの連絡先フォルダーから連絡先または非公開の配布が一覧表示します。
+プライベート配布リストは、ユーザーのメールボックスの [連絡先] フォルダーにあります。 プライベート配布リストに電子メールアドレスが含まれていないため、ストアのアイテム識別子が ExpandDL 要求で使用されます。 プライベート配布リストのメンバーは、メールが有効なユーザー、Active Directory からの連絡先または配布リスト、またはユーザーの連絡先フォルダーの連絡先またはプライベート配布リストを使用できます。
   
-連絡先または個人用配布リストは、項目の識別子が応答で返されます。 これは、オブジェクトに関する情報を取得または個人用配布リストのメンバーシップを展開に使用できます。
+連絡先またはプライベート配布リストの場合は、アイテムの識別子が応答で返されます。 これは、オブジェクトに関する情報を取得したり、プライベート配布リストのメンバーシップを拡張したりするために使用できます。
   
-## <a name="expanddl-private-distribution-list-request-example"></a>ExpandDL プライベート同報リストの要求の例
+## <a name="expanddl-private-distribution-list-request-example"></a>ExpandDL プライベート配布リスト要求の例
 
 ### <a name="description"></a>説明
 
-ExpandDL 要求の次の例では、個人用配布リストを展開するための要求を作成する方法を示します。
+次の ExpandDL 要求の例は、プライベート配布リストを展開するための要求を形成する方法を示しています。
   
 ### <a name="code"></a>コード
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013_SP1" />
   </soap:Header>
@@ -82,23 +82,23 @@ ExpandDL 要求の次の例では、個人用配布リストを展開するた�
 
 ### <a name="comments"></a>コメント
 
-個人用配布リストを展開するには、[メールボックス](mailbox.md)の要素にユーザーのメールボックス内の個人用配布リストを識別する[ItemId](itemid.md)の要素が含まれます。 
+プライベート配布リストを展開する場合、 [mailbox](mailbox.md)要素には、ユーザーのメールボックス内のプライベート配布リストを識別する[ItemId](itemid.md)要素が含まれます。 
   
-## <a name="expanddl-public-distribution-list-request-example"></a>ExpandDL パブリック同報リストの要求の例
+## <a name="expanddl-public-distribution-list-request-example"></a>ExpandDL パブリック配布リスト要求の例
 
 ### <a name="description"></a>説明
 
-ExpandDL 要求の次の例では、パブリックな配布リストを展開するための要求を作成する方法を示します。 例では、配布リストを展開するのには表示名の使用を示します。
+次の ExpandDL 要求の例は、パブリック配布リストを展開するための要求を形成する方法を示しています。 この例では、表示名を使用して配布リストを展開する方法を示します。
   
 ### <a name="code"></a>コード
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <ExpandDL xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-              xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <ExpandDL xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+              xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
         <t:Mailbox>
           <t:EmailAddress>TheDistributionList</t:EmailAddress>
         </t:Mailbox>
@@ -109,41 +109,41 @@ ExpandDL 要求の次の例では、パブリックな配布リストを展開�
 
 ### <a name="comments"></a>コメント
 
-この要求に対する応答を配布リストには、各メールボックスを識別する**メールボックス**の要素が含まれます。 配布リストに含まれる配布リストが含まれる場合は、埋め込みの配布リストに別の配布リストの展開を実行しなければなりません。 配布リストにメンバーが存在しないか、要求された配布リストが存在しない場合、 **ResponseClass**属性には成功した場合に相当する値が含まれます。 
+この要求への応答には、配布リスト内の各メールボックスを識別する**メールボックス**要素が含まれます。 配布リストが配布リスト内に含まれている場合は、埋め込まれた配布リストに対して別の配布リストの展開を実行する必要があります。 配布リストにメンバーが含まれていない場合、または要求された配布リストが存在しない場合、 **ResponseClass**属性の値は Success と等しくなります。 
   
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-次の要素は、要求で使用されます。
+要求では、次の要素が使用されます。
   
 - [ExpandDL](expanddl.md)
     
-- [Mailbox](mailbox.md)
+- [メールボックス](mailbox.md)
     
-- [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)を使用して、パブリックな配布リストを識別します。 [アイテム Id](itemid.md)要素を使用して、個人用配布リストを識別します。 
+- [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)は、パブリック配布リストを識別するために使用されます。 [ItemId](itemid.md)要素は、プライベート配布リストを識別するために使用されます。 
     
 > [!NOTE]
-> MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、これらの要素を記述するスキーマがあります。 
+> これらの要素を説明するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。 
   
-## <a name="successful-expanddl-response-example"></a>成功した ExpandDL の応答の例
+## <a name="successful-expanddl-response-example"></a>Successful ExpandDL 応答の例
 
 ### <a name="description"></a>説明
 
-ExpandDL 応答の次の使用例は、上記の要求への応答を示しています。 配布リストの展開では、次の項目について説明します。 
+次に示す ExpandDL 応答の例は、上記の要求に対する応答を示しています。 配布リストの展開では、以下について説明します。 
   
-- 応答で返される配布リストのメンバーの数です。
+- 応答で返される配布リストのメンバー数。
     
-- かどうか、応答には、配布リストのすべてのメンバーが含まれています。
+- 応答に配布リストのすべてのメンバーが含まれているかどうか。
     
-- メールボックスの名前です。
+- メールボックスの名前。
     
-- メールボックスの電子メール アドレスです。
+- メールボックスの電子メールアドレス。
     
-- メールボックスのルーティングの種類です。
+- メールボックスのルーティングの種類。
     
-- メールボックスの種類です。
+- メールボックスの種類。
     
 > [!NOTE]
-> 配布リストの名前が応答に含まれていません。したがって、する必要がありますの追跡の要求からの名前。 
+> 配布リストの名前は、応答に含まれていません。そのため、要求からの名前を記録しておく必要があります。 
   
 ### <a name="code"></a>コード
 
@@ -155,12 +155,12 @@ ExpandDL 応答の次の使用例は、上記の要求への応答を示して�
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" 
                          MajorBuildNumber="628" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <ExpandDLResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                      xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <ExpandDLResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                      xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:ExpandDLResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -191,9 +191,9 @@ ExpandDL 応答の次の使用例は、上記の要求への応答を示して�
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a>正常な応答の要素
+### <a name="successful-response-elements"></a>成功した応答要素
 
-次の要素は、応答で使用されます。
+応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -205,25 +205,25 @@ ExpandDL 応答の次の使用例は、上記の要求への応答を示して�
     
 - [ResponseCode](responsecode.md)
     
-- [DLExpansion](dlexpansion.md)
+- [DLExpansion 展開](dlexpansion.md)
     
-- [Mailbox](mailbox.md)
+- [メールボックス](mailbox.md)
     
 - [Name (EmailAddressType)](name-emailaddresstype.md)
     
-- [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
+- [EmailAddress (非 Emptystringtype)](emailaddress-nonemptystringtype.md)
     
 - [RoutingType (EmailAddressType)](routingtype-emailaddresstype.md)
     
 - [MailboxType](mailboxtype.md)
     
-ExpandDL 操作の応答メッセージには、他のオプションを検索するには、スキーマの階層構造を表示します。 [ExpandDLResponse](expanddlresponse.md)要素から開始します。 
+ExpandDL 操作の応答メッセージに関するその他のオプションについては、スキーマ階層を参照してください。 [Expanddlresponse](expanddlresponse.md)要素から開始します。 
   
 ## <a name="expanddl-error-response"></a>ExpandDL エラー応答
 
 ### <a name="description"></a>説明
 
-ExpandDL 要求に対するエラー応答の例を次に示します。
+次の例は、ExpandDL 要求に対するエラー応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -235,12 +235,12 @@ ExpandDL 要求に対するエラー応答の例を次に示します。
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" 
                          MajorBuildNumber="628" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <ExpandDLResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                      xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <ExpandDLResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                      xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:ExpandDLResponseMessage ResponseClass="Error">
           <m:MessageText>No results are found.</m:MessageText>
@@ -253,7 +253,7 @@ ExpandDL 要求に対するエラー応答の例を次に示します。
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a>エラー応答の要素
+### <a name="error-response-elements"></a>エラー応答要素
 
 エラー応答では、次の要素が使用されます。
   
@@ -271,10 +271,10 @@ ExpandDL 要求に対するエラー応答の例を次に示します。
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-ExpandDL 操作の応答メッセージには、他のオプションを検索するには、スキーマの階層構造を表示します。 [ExpandDLResponse](expanddlresponse.md)要素から開始します。 
+ExpandDL 操作の応答メッセージに関するその他のオプションについては、スキーマ階層を参照してください。 [Expanddlresponse](expanddlresponse.md)要素から開始します。 
   
 ## <a name="see-also"></a>関連項目
 
 - [ResolveNames 操作](resolvenames-operation.md)
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 
