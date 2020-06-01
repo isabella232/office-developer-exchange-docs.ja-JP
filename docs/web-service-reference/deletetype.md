@@ -1,5 +1,5 @@
 ---
-title: 削除の種類
+title: DeleteType
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,71 +11,71 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6e3136cd-9cb4-493a-aa85-9678f719002d
-description: 削除の種類の要素では、会話内の項目を削除する方法を示します。
-ms.openlocfilehash: abaa0c3d8b7001b2f42a38d1c82475edba32d2c5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DeleteType 要素は、スレッド内のアイテムが削除される方法を示します。
+ms.openlocfilehash: 199f7afc29fe866865509d2fb90d24944113d5c0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759988"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44442634"
 ---
-# <a name="deletetype"></a><span data-ttu-id="19433-103">削除の種類</span><span class="sxs-lookup"><span data-stu-id="19433-103">DeleteType</span></span>
+# <a name="deletetype"></a><span data-ttu-id="9fdd6-103">DeleteType</span><span class="sxs-lookup"><span data-stu-id="9fdd6-103">DeleteType</span></span>
 
-<span data-ttu-id="19433-104">**削除の種類**の要素では、会話内の項目を削除する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="19433-104">The **DeleteType** element indicates how items in a conversation are deleted.</span></span> 
+<span data-ttu-id="9fdd6-104">**Deletetype**要素は、スレッド内のアイテムが削除される方法を示します。</span><span class="sxs-lookup"><span data-stu-id="9fdd6-104">The **DeleteType** element indicates how items in a conversation are deleted.</span></span> 
   
-- [<span data-ttu-id="19433-105">ApplyConversationAction</span><span class="sxs-lookup"><span data-stu-id="19433-105">ApplyConversationAction</span></span>](applyconversationaction.md)  
-- [<span data-ttu-id="19433-106">ConversationActions</span><span class="sxs-lookup"><span data-stu-id="19433-106">ConversationActions</span></span>](conversationactions.md)  
-- [<span data-ttu-id="19433-107">ConversationAction</span><span class="sxs-lookup"><span data-stu-id="19433-107">ConversationAction</span></span>](conversationaction.md)  
-- [<span data-ttu-id="19433-108">削除の種類</span><span class="sxs-lookup"><span data-stu-id="19433-108">DeleteType</span></span>](deletetype.md)
+- [<span data-ttu-id="9fdd6-105">ApplyConversationAction</span><span class="sxs-lookup"><span data-stu-id="9fdd6-105">ApplyConversationAction</span></span>](applyconversationaction.md)  
+- [<span data-ttu-id="9fdd6-106">ConversationActions</span><span class="sxs-lookup"><span data-stu-id="9fdd6-106">ConversationActions</span></span>](conversationactions.md)  
+- [<span data-ttu-id="9fdd6-107">ConversationAction</span><span class="sxs-lookup"><span data-stu-id="9fdd6-107">ConversationAction</span></span>](conversationaction.md)  
+- [<span data-ttu-id="9fdd6-108">DeleteType</span><span class="sxs-lookup"><span data-stu-id="9fdd6-108">DeleteType</span></span>](deletetype.md)
   
 ```XML
 <DeleteType> HardDelete | MoveToDeletedItems | SoftDelete </DeleteType>
 ```
 
- <span data-ttu-id="19433-109">**DisposalType**</span><span class="sxs-lookup"><span data-stu-id="19433-109">**DisposalType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="19433-110">属性および要素</span><span class="sxs-lookup"><span data-stu-id="19433-110">Attributes and elements</span></span>
+ <span data-ttu-id="9fdd6-109">**DisposalType**</span><span class="sxs-lookup"><span data-stu-id="9fdd6-109">**DisposalType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="9fdd6-110">属性と要素</span><span class="sxs-lookup"><span data-stu-id="9fdd6-110">Attributes and elements</span></span>
 
-<span data-ttu-id="19433-111">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="19433-111">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="9fdd6-111">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="9fdd6-111">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="19433-112">属性</span><span class="sxs-lookup"><span data-stu-id="19433-112">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="9fdd6-112">属性</span><span class="sxs-lookup"><span data-stu-id="9fdd6-112">Attributes</span></span>
 
-<span data-ttu-id="19433-113">なし。</span><span class="sxs-lookup"><span data-stu-id="19433-113">None.</span></span>
+<span data-ttu-id="9fdd6-113">なし。</span><span class="sxs-lookup"><span data-stu-id="9fdd6-113">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="19433-114">子要素</span><span class="sxs-lookup"><span data-stu-id="19433-114">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="9fdd6-114">子要素</span><span class="sxs-lookup"><span data-stu-id="9fdd6-114">Child elements</span></span>
 
-<span data-ttu-id="19433-115">なし。</span><span class="sxs-lookup"><span data-stu-id="19433-115">None.</span></span>
+<span data-ttu-id="9fdd6-115">なし。</span><span class="sxs-lookup"><span data-stu-id="9fdd6-115">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="19433-116">親要素</span><span class="sxs-lookup"><span data-stu-id="19433-116">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="9fdd6-116">親要素</span><span class="sxs-lookup"><span data-stu-id="9fdd6-116">Parent elements</span></span>
 
-|<span data-ttu-id="19433-117">**要素**</span><span class="sxs-lookup"><span data-stu-id="19433-117">**Element**</span></span>|<span data-ttu-id="19433-118">**説明**</span><span class="sxs-lookup"><span data-stu-id="19433-118">**Description**</span></span>|
+|<span data-ttu-id="9fdd6-117">**要素**</span><span class="sxs-lookup"><span data-stu-id="9fdd6-117">**Element**</span></span>|<span data-ttu-id="9fdd6-118">**説明**</span><span class="sxs-lookup"><span data-stu-id="9fdd6-118">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="19433-119">ConversationAction</span><span class="sxs-lookup"><span data-stu-id="19433-119">ConversationAction</span></span>](conversationaction.md) <br/> |<span data-ttu-id="19433-120">1 つのテーマを適用する 1 つのアクションが含まれています。</span><span class="sxs-lookup"><span data-stu-id="19433-120">Contains a single action to be applied to a single conversation.</span></span>  <br/> |
+|[<span data-ttu-id="9fdd6-119">ConversationAction</span><span class="sxs-lookup"><span data-stu-id="9fdd6-119">ConversationAction</span></span>](conversationaction.md) <br/> |<span data-ttu-id="9fdd6-120">単一の会話に適用される1つのアクションが含まれます。</span><span class="sxs-lookup"><span data-stu-id="9fdd6-120">Contains a single action to be applied to a single conversation.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="19433-121">テキスト値</span><span class="sxs-lookup"><span data-stu-id="19433-121">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="9fdd6-121">テキスト値</span><span class="sxs-lookup"><span data-stu-id="9fdd6-121">Text value</span></span>
 
-<span data-ttu-id="19433-122">**削除の種類**の要素のテキスト値では、会話内の項目を削除する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="19433-122">The text value of the **DeleteType** element indicates how items in a conversation are deleted.</span></span> <span data-ttu-id="19433-123">可能なテキスト値は、次のように。</span><span class="sxs-lookup"><span data-stu-id="19433-123">The following are the possible text values:</span></span> 
+<span data-ttu-id="9fdd6-122">**Deletetype**要素のテキスト値は、スレッド内のアイテムが削除される方法を示します。</span><span class="sxs-lookup"><span data-stu-id="9fdd6-122">The text value of the **DeleteType** element indicates how items in a conversation are deleted.</span></span> <span data-ttu-id="9fdd6-123">可能なテキスト値を次に示します。</span><span class="sxs-lookup"><span data-stu-id="9fdd6-123">The following are the possible text values:</span></span> 
   
-- <span data-ttu-id="19433-124">HardDelete - では、会話内のアイテムがメールボックス データベースから完全に削除することを示します。</span><span class="sxs-lookup"><span data-stu-id="19433-124">HardDelete - Indicates that items in a conversation are permanently removed from the mailbox database.</span></span>
+- <span data-ttu-id="9fdd6-124">ハード削除-会話内のアイテムがメールボックスデータベースから完全に削除されることを示します。</span><span class="sxs-lookup"><span data-stu-id="9fdd6-124">HardDelete - Indicates that items in a conversation are permanently removed from the mailbox database.</span></span>
     
-- <span data-ttu-id="19433-125">MoveToDeleteItems では、会話内のアイテムが削除済みアイテム フォルダーに移動したことを示します。</span><span class="sxs-lookup"><span data-stu-id="19433-125">MoveToDeleteItems - Indicates that items in a conversation are moved to the Deleted Items folder.</span></span>
+- <span data-ttu-id="9fdd6-125">MoveToDeleteItems-スレッド内のアイテムが [削除済みアイテム] フォルダーに移動されたことを示します。</span><span class="sxs-lookup"><span data-stu-id="9fdd6-125">MoveToDeleteItems - Indicates that items in a conversation are moved to the Deleted Items folder.</span></span>
     
-- <span data-ttu-id="19433-126">SoftDelete では、会話内のアイテムに移動したことを示します、ごみ箱をあさる場合、収集を有効にします。</span><span class="sxs-lookup"><span data-stu-id="19433-126">SoftDelete - Indicates that items in a conversation are moved to the dumpster if the dumpster is enabled.</span></span>
+- <span data-ttu-id="9fdd6-126">SoftDelete-メッセージの収集が有効になっている場合に、スレッド内のアイテムが収集に移動されることを示します。</span><span class="sxs-lookup"><span data-stu-id="9fdd6-126">SoftDelete - Indicates that items in a conversation are moved to the dumpster if the dumpster is enabled.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="19433-127">備考</span><span class="sxs-lookup"><span data-stu-id="19433-127">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="9fdd6-127">注釈</span><span class="sxs-lookup"><span data-stu-id="9fdd6-127">Remarks</span></span>
 
-<span data-ttu-id="19433-128">この要素を記述するスキーマは、Exchange Web Services.This の要素がホストをで Exchange Server 2010 Service Pack 1 (SP1) を導入する IIS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="19433-128">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.This element was introduced in Exchange Server 2010 Service Pack 1 (SP1).</span></span>
+<span data-ttu-id="9fdd6-128">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。</span><span class="sxs-lookup"><span data-stu-id="9fdd6-128">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.This element was introduced in Exchange Server 2010 Service Pack 1 (SP1).</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="19433-129">要素情報</span><span class="sxs-lookup"><span data-stu-id="19433-129">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="9fdd6-129">要素の情報</span><span class="sxs-lookup"><span data-stu-id="9fdd6-129">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="19433-130">名前空間</span><span class="sxs-lookup"><span data-stu-id="19433-130">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="19433-131">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="19433-131">Schema Name</span></span>  <br/> |<span data-ttu-id="19433-132">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="19433-132">Types schema</span></span>  <br/> |
-|<span data-ttu-id="19433-133">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="19433-133">Validation File</span></span>  <br/> |<span data-ttu-id="19433-134">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="19433-134">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="19433-135">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="19433-135">Can be Empty</span></span>  <br/> |<span data-ttu-id="19433-136">False</span><span class="sxs-lookup"><span data-stu-id="19433-136">False</span></span>  <br/> |
+|<span data-ttu-id="9fdd6-130">Namespace</span><span class="sxs-lookup"><span data-stu-id="9fdd6-130">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="9fdd6-131">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="9fdd6-131">Schema Name</span></span>  <br/> |<span data-ttu-id="9fdd6-132">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="9fdd6-132">Types schema</span></span>  <br/> |
+|<span data-ttu-id="9fdd6-133">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="9fdd6-133">Validation File</span></span>  <br/> |<span data-ttu-id="9fdd6-134">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="9fdd6-134">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="9fdd6-135">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="9fdd6-135">Can be Empty</span></span>  <br/> |<span data-ttu-id="9fdd6-136">正しくない</span><span class="sxs-lookup"><span data-stu-id="9fdd6-136">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="19433-137">関連項目</span><span class="sxs-lookup"><span data-stu-id="19433-137">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9fdd6-137">関連項目</span><span class="sxs-lookup"><span data-stu-id="9fdd6-137">See also</span></span>
 
-- [<span data-ttu-id="19433-138">ApplyConversationAction 操作</span><span class="sxs-lookup"><span data-stu-id="19433-138">ApplyConversationAction operation</span></span>](applyconversationaction-operation.md)
-- [<span data-ttu-id="19433-139">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="19433-139">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="9fdd6-138">ApplyConversationAction 操作</span><span class="sxs-lookup"><span data-stu-id="9fdd6-138">ApplyConversationAction operation</span></span>](applyconversationaction-operation.md)
+- [<span data-ttu-id="9fdd6-139">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="9fdd6-139">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
