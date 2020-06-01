@@ -11,65 +11,65 @@ api_name:
 api_type:
 - schema
 ms.assetid: 72dc4391-72db-44d2-85d9-4718d59886a7
-description: ParentItemId 要素は、関連付けられている添付ファイルへのリンクを親項目を識別します。
-ms.openlocfilehash: 9bd875ee5ead8b87996288a640e1bb14e3a5e8b8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ParentItemId 要素は、関連付けられた添付ファイルにリンクする親アイテムを識別します。
+ms.openlocfilehash: 4f3e33da0af2438948313f0e335cd03e076d135a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832703"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465745"
 ---
-# <a name="parentitemid"></a><span data-ttu-id="9c417-103">ParentItemId</span><span class="sxs-lookup"><span data-stu-id="9c417-103">ParentItemId</span></span>
+# <a name="parentitemid"></a><span data-ttu-id="1f16c-103">ParentItemId</span><span class="sxs-lookup"><span data-stu-id="1f16c-103">ParentItemId</span></span>
 
-<span data-ttu-id="9c417-104">**ParentItemId**要素は、関連付けられている添付ファイルへのリンクを親項目を識別します。</span><span class="sxs-lookup"><span data-stu-id="9c417-104">The **ParentItemId** element identifies the parent item that links to an associated attachment.</span></span> 
+<span data-ttu-id="1f16c-104">**Parentitemid**要素は、関連付けられた添付ファイルにリンクする親アイテムを識別します。</span><span class="sxs-lookup"><span data-stu-id="1f16c-104">The **ParentItemId** element identifies the parent item that links to an associated attachment.</span></span> 
   
-- [<span data-ttu-id="9c417-105">CreateAttachment</span><span class="sxs-lookup"><span data-stu-id="9c417-105">CreateAttachment</span></span>](createattachment.md)
+- [<span data-ttu-id="1f16c-105">CreateAttachment</span><span class="sxs-lookup"><span data-stu-id="1f16c-105">CreateAttachment</span></span>](createattachment.md)
   
-- [<span data-ttu-id="9c417-106">ParentItemId</span><span class="sxs-lookup"><span data-stu-id="9c417-106">ParentItemId</span></span>](parentitemid.md)
+- [<span data-ttu-id="1f16c-106">ParentItemId</span><span class="sxs-lookup"><span data-stu-id="1f16c-106">ParentItemId</span></span>](parentitemid.md)
   
 ```xml
 <ParentItemId Id="" ChangeKey="" />
 ```
 
-<span data-ttu-id="9c417-107">**ItemIdType**</span><span class="sxs-lookup"><span data-stu-id="9c417-107">**ItemIdType**</span></span>
+<span data-ttu-id="1f16c-107">**ItemIdType**</span><span class="sxs-lookup"><span data-stu-id="1f16c-107">**ItemIdType**</span></span>
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="9c417-108">属性および要素</span><span class="sxs-lookup"><span data-stu-id="9c417-108">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="1f16c-108">属性と要素</span><span class="sxs-lookup"><span data-stu-id="1f16c-108">Attributes and elements</span></span>
 
-<span data-ttu-id="9c417-109">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="9c417-109">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="1f16c-109">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="1f16c-109">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="9c417-110">属性</span><span class="sxs-lookup"><span data-stu-id="9c417-110">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="1f16c-110">属性</span><span class="sxs-lookup"><span data-stu-id="1f16c-110">Attributes</span></span>
 
-|<span data-ttu-id="9c417-111">**属性**</span><span class="sxs-lookup"><span data-stu-id="9c417-111">**Attribute**</span></span>|<span data-ttu-id="9c417-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="9c417-112">**Description**</span></span>|
+|<span data-ttu-id="1f16c-111">**属性**</span><span class="sxs-lookup"><span data-stu-id="1f16c-111">**Attribute**</span></span>|<span data-ttu-id="1f16c-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="1f16c-112">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="9c417-113">**Id**</span><span class="sxs-lookup"><span data-stu-id="9c417-113">**Id**</span></span> <br/> |<span data-ttu-id="9c417-114">添付ファイルを関連付けるには Exchange ストア内の 1 つの項目を識別します。</span><span class="sxs-lookup"><span data-stu-id="9c417-114">Identifies a single item in the Exchange store to associate with an attachment.</span></span> <span data-ttu-id="9c417-115">この値は、文字列です。</span><span class="sxs-lookup"><span data-stu-id="9c417-115">This value is a string.</span></span> <span data-ttu-id="9c417-116">この属性は、必要があります。</span><span class="sxs-lookup"><span data-stu-id="9c417-116">This attribute is required.</span></span>  <br/> |
-|<span data-ttu-id="9c417-117">**変更キー**</span><span class="sxs-lookup"><span data-stu-id="9c417-117">**ChangeKey**</span></span> <br/> |<span data-ttu-id="9c417-118">Exchange ストア内の**Id**属性によって識別される項目の指定のバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="9c417-118">Identifies an unspecified version of an item that is identified by the **Id** attribute in the Exchange store.</span></span> <span data-ttu-id="9c417-119">これを使用して、添付ファイルを更新するときに現在の項目が使用されているかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="9c417-119">This is used to make sure that a current item is used when it is updated with an attachment.</span></span> <span data-ttu-id="9c417-120">この値は、文字列です。</span><span class="sxs-lookup"><span data-stu-id="9c417-120">This value is a string.</span></span> <span data-ttu-id="9c417-121">この属性は、省略可能です。</span><span class="sxs-lookup"><span data-stu-id="9c417-121">This attribute is optional.</span></span>  <br/> |
+|<span data-ttu-id="1f16c-113">**Id**</span><span class="sxs-lookup"><span data-stu-id="1f16c-113">**Id**</span></span> <br/> |<span data-ttu-id="1f16c-114">添付ファイルに関連付ける Exchange ストア内の1つのアイテムを識別します。</span><span class="sxs-lookup"><span data-stu-id="1f16c-114">Identifies a single item in the Exchange store to associate with an attachment.</span></span> <span data-ttu-id="1f16c-115">この値は文字列です。</span><span class="sxs-lookup"><span data-stu-id="1f16c-115">This value is a string.</span></span> <span data-ttu-id="1f16c-116">この属性は必須です。</span><span class="sxs-lookup"><span data-stu-id="1f16c-116">This attribute is required.</span></span>  <br/> |
+|<span data-ttu-id="1f16c-117">**ChangeKey**</span><span class="sxs-lookup"><span data-stu-id="1f16c-117">**ChangeKey**</span></span> <br/> |<span data-ttu-id="1f16c-118">Exchange ストアの**Id**属性によって識別されるアイテムの指定されていないバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="1f16c-118">Identifies an unspecified version of an item that is identified by the **Id** attribute in the Exchange store.</span></span> <span data-ttu-id="1f16c-119">これは、添付ファイルによって更新されるときに、現在のアイテムが使用されるようにするために使用されます。</span><span class="sxs-lookup"><span data-stu-id="1f16c-119">This is used to make sure that a current item is used when it is updated with an attachment.</span></span> <span data-ttu-id="1f16c-120">この値は文字列です。</span><span class="sxs-lookup"><span data-stu-id="1f16c-120">This value is a string.</span></span> <span data-ttu-id="1f16c-121">この属性は省略可能です。</span><span class="sxs-lookup"><span data-stu-id="1f16c-121">This attribute is optional.</span></span>  <br/> |
    
-### <a name="child-elements"></a><span data-ttu-id="9c417-122">子要素</span><span class="sxs-lookup"><span data-stu-id="9c417-122">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="1f16c-122">子要素</span><span class="sxs-lookup"><span data-stu-id="1f16c-122">Child elements</span></span>
 
-<span data-ttu-id="9c417-123">なし。</span><span class="sxs-lookup"><span data-stu-id="9c417-123">None.</span></span>
+<span data-ttu-id="1f16c-123">なし。</span><span class="sxs-lookup"><span data-stu-id="1f16c-123">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="9c417-124">親要素</span><span class="sxs-lookup"><span data-stu-id="9c417-124">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="1f16c-124">親要素</span><span class="sxs-lookup"><span data-stu-id="1f16c-124">Parent elements</span></span>
 
-|<span data-ttu-id="9c417-125">**要素**</span><span class="sxs-lookup"><span data-stu-id="9c417-125">**Element**</span></span>|<span data-ttu-id="9c417-126">**説明**</span><span class="sxs-lookup"><span data-stu-id="9c417-126">**Description**</span></span>|
+|<span data-ttu-id="1f16c-125">**要素**</span><span class="sxs-lookup"><span data-stu-id="1f16c-125">**Element**</span></span>|<span data-ttu-id="1f16c-126">**説明**</span><span class="sxs-lookup"><span data-stu-id="1f16c-126">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="9c417-127">CreateAttachment</span><span class="sxs-lookup"><span data-stu-id="9c417-127">CreateAttachment</span></span>](createattachment.md) <br/> |<span data-ttu-id="9c417-128">メールボックス内のアイテムに添付ファイルを作成する要求を定義します。</span><span class="sxs-lookup"><span data-stu-id="9c417-128">Defines a request to create an attachment to an item in a mailbox.</span></span>  <br/> <span data-ttu-id="9c417-129">この要素への XPath 式は、次のようにします。</span><span class="sxs-lookup"><span data-stu-id="9c417-129">The following is the XPath expression to this element:</span></span>  <br/>  `/CreateAttachment` <br/> |
+|[<span data-ttu-id="1f16c-127">CreateAttachment</span><span class="sxs-lookup"><span data-stu-id="1f16c-127">CreateAttachment</span></span>](createattachment.md) <br/> |<span data-ttu-id="1f16c-128">メールボックス内のアイテムの添付ファイルを作成するための要求を定義します。</span><span class="sxs-lookup"><span data-stu-id="1f16c-128">Defines a request to create an attachment to an item in a mailbox.</span></span>  <br/> <span data-ttu-id="1f16c-129">この要素の XPath 式を次に示します。</span><span class="sxs-lookup"><span data-stu-id="1f16c-129">The following is the XPath expression to this element:</span></span>  <br/>  `/CreateAttachment` <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="9c417-130">備考</span><span class="sxs-lookup"><span data-stu-id="9c417-130">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="1f16c-130">注釈</span><span class="sxs-lookup"><span data-stu-id="1f16c-130">Remarks</span></span>
 
-<span data-ttu-id="9c417-131">[CreateAttachment 操作](createattachment-operation.md)では、この要素が必要です。</span><span class="sxs-lookup"><span data-stu-id="9c417-131">This element is required in the [CreateAttachment operation](createattachment-operation.md).</span></span> <span data-ttu-id="9c417-132">この要素は、基本的に[アイテム Id](itemid.md)の要素と同じです。</span><span class="sxs-lookup"><span data-stu-id="9c417-132">This element is basically the same as the [ItemId](itemid.md) element.</span></span> 
+<span data-ttu-id="1f16c-131">この要素は、 [Createattachment 操作](createattachment-operation.md)で必要です。</span><span class="sxs-lookup"><span data-stu-id="1f16c-131">This element is required in the [CreateAttachment operation](createattachment-operation.md).</span></span> <span data-ttu-id="1f16c-132">この要素は、基本的に[ItemId](itemid.md)要素と同じです。</span><span class="sxs-lookup"><span data-stu-id="1f16c-132">This element is basically the same as the [ItemId](itemid.md) element.</span></span> 
   
-<span data-ttu-id="9c417-133">MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。</span><span class="sxs-lookup"><span data-stu-id="9c417-133">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="1f16c-133">この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="1f16c-133">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="9c417-134">要素情報</span><span class="sxs-lookup"><span data-stu-id="9c417-134">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="1f16c-134">要素の情報</span><span class="sxs-lookup"><span data-stu-id="1f16c-134">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="9c417-135">名前空間</span><span class="sxs-lookup"><span data-stu-id="9c417-135">Namespace</span></span>  <br/> |[http://schemas.microsoft.com/exchange/services/2006/messages](http://schemas.microsoft.com/exchange/services/2006/messages) <br/> |
-|<span data-ttu-id="9c417-136">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="9c417-136">Schema Name</span></span>  <br/> |<span data-ttu-id="9c417-137">メッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="9c417-137">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="9c417-138">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="9c417-138">Validation File</span></span>  <br/> |<span data-ttu-id="9c417-139">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="9c417-139">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="9c417-140">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="9c417-140">Can be Empty</span></span>  <br/> |<span data-ttu-id="9c417-141">False</span><span class="sxs-lookup"><span data-stu-id="9c417-141">False</span></span>  <br/> |
+|<span data-ttu-id="1f16c-135">Namespace</span><span class="sxs-lookup"><span data-stu-id="1f16c-135">Namespace</span></span>  <br/> |[https://schemas.microsoft.com/exchange/services/2006/messages](https://schemas.microsoft.com/exchange/services/2006/messages) <br/> |
+|<span data-ttu-id="1f16c-136">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="1f16c-136">Schema Name</span></span>  <br/> |<span data-ttu-id="1f16c-137">メッセージスキーマ</span><span class="sxs-lookup"><span data-stu-id="1f16c-137">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="1f16c-138">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="1f16c-138">Validation File</span></span>  <br/> |<span data-ttu-id="1f16c-139">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="1f16c-139">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="1f16c-140">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="1f16c-140">Can be Empty</span></span>  <br/> |<span data-ttu-id="1f16c-141">正しくない</span><span class="sxs-lookup"><span data-stu-id="1f16c-141">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="9c417-142">関連項目</span><span class="sxs-lookup"><span data-stu-id="9c417-142">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1f16c-142">関連項目</span><span class="sxs-lookup"><span data-stu-id="1f16c-142">See also</span></span>
 
-- [<span data-ttu-id="9c417-143">CreateAttachment 操作</span><span class="sxs-lookup"><span data-stu-id="9c417-143">CreateAttachment operation</span></span>](createattachment-operation.md)
+- [<span data-ttu-id="1f16c-143">CreateAttachment 操作</span><span class="sxs-lookup"><span data-stu-id="1f16c-143">CreateAttachment operation</span></span>](createattachment-operation.md)
 

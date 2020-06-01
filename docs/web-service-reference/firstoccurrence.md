@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d6748860-ce0d-4d2e-b7e4-9ed834f1e45a
-description: FirstOccurrence 要素は、定期的な予定表アイテムが最初に見つかった位置を表します。
-ms.openlocfilehash: e5244e74bdd5a4b8e22c6e63811db53b46fa353a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: FirstOccurrence 要素は、定期的な予定表アイテムの最初の出現を表します。
+ms.openlocfilehash: 22ee9018df1e89a3783c4dfb56aaf065b2c8ea6c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760548"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466298"
 ---
-# <a name="firstoccurrence"></a><span data-ttu-id="d7ee8-103">FirstOccurrence</span><span class="sxs-lookup"><span data-stu-id="d7ee8-103">FirstOccurrence</span></span>
+# <a name="firstoccurrence"></a><span data-ttu-id="ae951-103">FirstOccurrence</span><span class="sxs-lookup"><span data-stu-id="ae951-103">FirstOccurrence</span></span>
 
-<span data-ttu-id="d7ee8-104">**FirstOccurrence**要素は、定期的な予定表アイテムが最初に見つかった位置を表します。</span><span class="sxs-lookup"><span data-stu-id="d7ee8-104">The **FirstOccurrence** element represents the first occurrence of a recurring calendar item.</span></span> 
+<span data-ttu-id="ae951-104">**Firstoccurrence**要素は、定期的な予定表アイテムの最初の出現を表します。</span><span class="sxs-lookup"><span data-stu-id="ae951-104">The **FirstOccurrence** element represents the first occurrence of a recurring calendar item.</span></span> 
   
 ```xml
 <FirstOccurrence>
@@ -32,52 +32,51 @@ ms.locfileid: "19760548"
 </FirstOccurrence>
 ```
 
- <span data-ttu-id="d7ee8-105">**OccurrenceInfoType**</span><span class="sxs-lookup"><span data-stu-id="d7ee8-105">**OccurrenceInfoType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="d7ee8-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="d7ee8-106">Attributes and elements</span></span>
+ <span data-ttu-id="ae951-105">**OccurrenceInfoType**</span><span class="sxs-lookup"><span data-stu-id="ae951-105">**OccurrenceInfoType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="ae951-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="ae951-106">Attributes and elements</span></span>
 
-<span data-ttu-id="d7ee8-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="d7ee8-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="ae951-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="ae951-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="d7ee8-108">属性</span><span class="sxs-lookup"><span data-stu-id="d7ee8-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="ae951-108">属性</span><span class="sxs-lookup"><span data-stu-id="ae951-108">Attributes</span></span>
 
-<span data-ttu-id="d7ee8-109">なし。</span><span class="sxs-lookup"><span data-stu-id="d7ee8-109">None.</span></span>
+<span data-ttu-id="ae951-109">なし。</span><span class="sxs-lookup"><span data-stu-id="ae951-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="d7ee8-110">子要素</span><span class="sxs-lookup"><span data-stu-id="d7ee8-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="ae951-110">子要素</span><span class="sxs-lookup"><span data-stu-id="ae951-110">Child elements</span></span>
 
-|<span data-ttu-id="d7ee8-111">**要素**</span><span class="sxs-lookup"><span data-stu-id="d7ee8-111">**Element**</span></span>|<span data-ttu-id="d7ee8-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="d7ee8-112">**Description**</span></span>|
+|<span data-ttu-id="ae951-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="ae951-111">**Element**</span></span>|<span data-ttu-id="ae951-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="ae951-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="d7ee8-113">ItemId</span><span class="sxs-lookup"><span data-stu-id="d7ee8-113">ItemId</span></span>](itemid.md) <br/> |<span data-ttu-id="d7ee8-114">定期的な予定表アイテムが最初に見つかった一意の識別子と変更キーが含まれています。</span><span class="sxs-lookup"><span data-stu-id="d7ee8-114">Contains the unique identifier and change key of the first occurrence of a recurring calendar item.</span></span>  <br/> |
-|[<span data-ttu-id="d7ee8-115">Start</span><span class="sxs-lookup"><span data-stu-id="d7ee8-115">Start</span></span>](start.md) <br/> |<span data-ttu-id="d7ee8-116">定期的な予定表アイテムが最初に見つかった位置の開始時刻を表します。</span><span class="sxs-lookup"><span data-stu-id="d7ee8-116">Represents the start time of the first occurrence of a recurring calendar item.</span></span>  <br/> |
-|[<span data-ttu-id="d7ee8-117">終わり</span><span class="sxs-lookup"><span data-stu-id="d7ee8-117">End </span></span>](end-ex15websvcsotherref.md) <br/> |<span data-ttu-id="d7ee8-118">最初に出現した定期的な予定表アイテムの終了時刻を表します。</span><span class="sxs-lookup"><span data-stu-id="d7ee8-118">Represents the end time of the first occurrence of a recurring calendar item.</span></span>  <br/> |
-|[<span data-ttu-id="d7ee8-119">OriginalStart</span><span class="sxs-lookup"><span data-stu-id="d7ee8-119">OriginalStart</span></span>](originalstart.md) <br/> |<span data-ttu-id="d7ee8-120">定期的な予定表アイテムが最初に見つかった位置の元の開始時刻を表します。</span><span class="sxs-lookup"><span data-stu-id="d7ee8-120">Represents the original start time of the first occurrence of a recurring calendar item.</span></span>  <br/> |
+|[<span data-ttu-id="ae951-113">ItemId</span><span class="sxs-lookup"><span data-stu-id="ae951-113">ItemId</span></span>](itemid.md) <br/> |<span data-ttu-id="ae951-114">定期的な予定表アイテムのうち、最初に出現したものの一意識別子および変更キーが含まれます。</span><span class="sxs-lookup"><span data-stu-id="ae951-114">Contains the unique identifier and change key of the first occurrence of a recurring calendar item.</span></span>  <br/> |
+|[<span data-ttu-id="ae951-115">開始</span><span class="sxs-lookup"><span data-stu-id="ae951-115">Start</span></span>](start.md) <br/> |<span data-ttu-id="ae951-116">定期的な予定表アイテムの最初の発生の開始時刻を表します。</span><span class="sxs-lookup"><span data-stu-id="ae951-116">Represents the start time of the first occurrence of a recurring calendar item.</span></span>  <br/> |
+|[<span data-ttu-id="ae951-117">終わり</span><span class="sxs-lookup"><span data-stu-id="ae951-117">End </span></span>](end-ex15websvcsotherref.md) <br/> |<span data-ttu-id="ae951-118">定期的な予定表アイテムの最初の発生の終了時刻を表します。</span><span class="sxs-lookup"><span data-stu-id="ae951-118">Represents the end time of the first occurrence of a recurring calendar item.</span></span>  <br/> |
+|[<span data-ttu-id="ae951-119">OriginalStart</span><span class="sxs-lookup"><span data-stu-id="ae951-119">OriginalStart</span></span>](originalstart.md) <br/> |<span data-ttu-id="ae951-120">定期的な予定表アイテムが最初に発生したときの元の開始時刻を表します。</span><span class="sxs-lookup"><span data-stu-id="ae951-120">Represents the original start time of the first occurrence of a recurring calendar item.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="d7ee8-121">親要素</span><span class="sxs-lookup"><span data-stu-id="d7ee8-121">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="ae951-121">親要素</span><span class="sxs-lookup"><span data-stu-id="ae951-121">Parent elements</span></span>
 
-|<span data-ttu-id="d7ee8-122">**要素**</span><span class="sxs-lookup"><span data-stu-id="d7ee8-122">**Element**</span></span>|<span data-ttu-id="d7ee8-123">**説明**</span><span class="sxs-lookup"><span data-stu-id="d7ee8-123">**Description**</span></span>|
+|<span data-ttu-id="ae951-122">**要素**</span><span class="sxs-lookup"><span data-stu-id="ae951-122">**Element**</span></span>|<span data-ttu-id="ae951-123">**説明**</span><span class="sxs-lookup"><span data-stu-id="ae951-123">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="d7ee8-124">カレンダー項目</span><span class="sxs-lookup"><span data-stu-id="d7ee8-124">CalendarItem</span></span>](calendaritem.md) <br/> |<span data-ttu-id="d7ee8-125">Exchange 予定表アイテムを表します。</span><span class="sxs-lookup"><span data-stu-id="d7ee8-125">Represents an Exchange calendar item.</span></span>  <br/> |
-|[<span data-ttu-id="d7ee8-126">MeetingRequest</span><span class="sxs-lookup"><span data-stu-id="d7ee8-126">MeetingRequest</span></span>](meetingrequest.md) <br/> |<span data-ttu-id="d7ee8-127">Exchange ストア内の会議出席依頼を表します。</span><span class="sxs-lookup"><span data-stu-id="d7ee8-127">Represents a meeting request in the Exchange store.</span></span>  <br/> |
+|[<span data-ttu-id="ae951-124">CalendarItem</span><span class="sxs-lookup"><span data-stu-id="ae951-124">CalendarItem</span></span>](calendaritem.md) <br/> |<span data-ttu-id="ae951-125">Exchange の予定表アイテムを表します。</span><span class="sxs-lookup"><span data-stu-id="ae951-125">Represents an Exchange calendar item.</span></span>  <br/> |
+|[<span data-ttu-id="ae951-126">MeetingRequest</span><span class="sxs-lookup"><span data-stu-id="ae951-126">MeetingRequest</span></span>](meetingrequest.md) <br/> |<span data-ttu-id="ae951-127">Exchange ストア内の会議出席依頼を表します。</span><span class="sxs-lookup"><span data-stu-id="ae951-127">Represents a meeting request in the Exchange store.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="d7ee8-128">備考</span><span class="sxs-lookup"><span data-stu-id="d7ee8-128">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ae951-128">注釈</span><span class="sxs-lookup"><span data-stu-id="ae951-128">Remarks</span></span>
 
-<span data-ttu-id="d7ee8-129">この要素は、 [CalendarItemType](calendaritemtype.md)に RecurringMaster の値が設定されている場合に有効です。</span><span class="sxs-lookup"><span data-stu-id="d7ee8-129">This element is valid if [CalendarItemType](calendaritemtype.md) has the RecurringMaster value.</span></span> 
+<span data-ttu-id="ae951-129">[Calendaritemtype](calendaritemtype.md)に示す値が指定されている場合、この要素は有効です。</span><span class="sxs-lookup"><span data-stu-id="ae951-129">This element is valid if [CalendarItemType](calendaritemtype.md) has the RecurringMaster value.</span></span> 
   
-<span data-ttu-id="d7ee8-130">MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。</span><span class="sxs-lookup"><span data-stu-id="d7ee8-130">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="ae951-130">この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="ae951-130">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="d7ee8-131">要素情報</span><span class="sxs-lookup"><span data-stu-id="d7ee8-131">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="ae951-131">要素の情報</span><span class="sxs-lookup"><span data-stu-id="ae951-131">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="d7ee8-132">名前空間</span><span class="sxs-lookup"><span data-stu-id="d7ee8-132">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="d7ee8-133">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="d7ee8-133">Schema name</span></span>  <br/> |<span data-ttu-id="d7ee8-134">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="d7ee8-134">Types schema</span></span>  <br/> |
-|<span data-ttu-id="d7ee8-135">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="d7ee8-135">Validation file</span></span>  <br/> |<span data-ttu-id="d7ee8-136">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="d7ee8-136">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="d7ee8-137">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="d7ee8-137">Can be empty</span></span>  <br/> |<span data-ttu-id="d7ee8-138">False</span><span class="sxs-lookup"><span data-stu-id="d7ee8-138">False</span></span>  <br/> |
+|<span data-ttu-id="ae951-132">Namespace</span><span class="sxs-lookup"><span data-stu-id="ae951-132">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="ae951-133">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="ae951-133">Schema name</span></span>  <br/> |<span data-ttu-id="ae951-134">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="ae951-134">Types schema</span></span>  <br/> |
+|<span data-ttu-id="ae951-135">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="ae951-135">Validation file</span></span>  <br/> |<span data-ttu-id="ae951-136">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="ae951-136">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="ae951-137">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="ae951-137">Can be empty</span></span>  <br/> |<span data-ttu-id="ae951-138">正しくない</span><span class="sxs-lookup"><span data-stu-id="ae951-138">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="d7ee8-139">関連項目</span><span class="sxs-lookup"><span data-stu-id="d7ee8-139">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ae951-139">関連項目</span><span class="sxs-lookup"><span data-stu-id="ae951-139">See also</span></span>
 
 
 
-- [<span data-ttu-id="d7ee8-140">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="d7ee8-140">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="ae951-140">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="ae951-140">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
   
-<span data-ttu-id="d7ee8-141">
-  [Exchange 用 EWS リファレンス](ews-reference-for-exchange.md)</span><span class="sxs-lookup"><span data-stu-id="d7ee8-141">[EWS reference for Exchange](ews-reference-for-exchange.md)</span></span>
+[<span data-ttu-id="ae951-141">Exchange 用 EWS リファレンス</span><span class="sxs-lookup"><span data-stu-id="ae951-141">EWS reference for Exchange</span></span>](ews-reference-for-exchange.md)
 

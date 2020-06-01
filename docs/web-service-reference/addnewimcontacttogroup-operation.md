@@ -7,54 +7,54 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0cb5525f-faa3-48f1-9551-df55ffc26f46
-description: 操作 AddNewImContactToGroup EWS についての情報を検索します。
-ms.openlocfilehash: f75b89dbb6e948431d56acb9baa93fe4d4a1d939
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: AddNewImContactToGroup EWS 操作についての情報を検索します。
+ms.openlocfilehash: e91cc067b4161b366e6713a9adc16873e63b1562
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759293"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465030"
 ---
-# <a name="addnewimcontacttogroup-operation"></a><span data-ttu-id="f2bb2-103">AddNewImContactToGroup 操作</span><span class="sxs-lookup"><span data-stu-id="f2bb2-103">AddNewImContactToGroup operation</span></span>
+# <a name="addnewimcontacttogroup-operation"></a><span data-ttu-id="6e9ad-103">AddNewImContactToGroup 操作</span><span class="sxs-lookup"><span data-stu-id="6e9ad-103">AddNewImContactToGroup operation</span></span>
 
-<span data-ttu-id="f2bb2-104">**AddNewImContactToGroup** EWS の操作に関する情報を検索します。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-104">Find information about the **AddNewImContactToGroup** EWS operation.</span></span> 
+<span data-ttu-id="6e9ad-104">**AddNewImContactToGroup** EWS 操作についての情報を検索します。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-104">Find information about the **AddNewImContactToGroup** EWS operation.</span></span> 
   
-<span data-ttu-id="f2bb2-105">**AddNewImContactToGroup**操作では、インスタント メッセージング (IM) のグループに新しい連絡先を追加します。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-105">The **AddNewImContactToGroup** operation adds a new contact to an instant messaging (IM) group.</span></span> 
+<span data-ttu-id="6e9ad-105">**AddNewImContactToGroup**操作は、新しい連絡先をインスタントメッセージング (IM) グループに追加します。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-105">The **AddNewImContactToGroup** operation adds a new contact to an instant messaging (IM) group.</span></span> 
   
-<span data-ttu-id="f2bb2-106">この操作は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-106">This operation was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="6e9ad-106">この操作は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-106">This operation was introduced in Exchange Server 2013.</span></span>
   
-## <a name="using-the-addnewimcontacttogroup-operation"></a><span data-ttu-id="f2bb2-107">AddNewImContactToGroup 操作を使用します。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-107">Using the AddNewImContactToGroup operation</span></span>
+## <a name="using-the-addnewimcontacttogroup-operation"></a><span data-ttu-id="6e9ad-107">AddNewImContactToGroup 操作の使用</span><span class="sxs-lookup"><span data-stu-id="6e9ad-107">Using the AddNewImContactToGroup operation</span></span>
 
-<span data-ttu-id="f2bb2-108">**AddNewImContactToGroup**操作では、IM のグループに新しい連絡先を追加するのには次の 3 つの引数を取ります。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-108">The **AddNewImContactToGroup** operation takes the following three arguments to add a new contact to an IM group:</span></span> 
+<span data-ttu-id="6e9ad-108">**AddNewImContactToGroup**操作は、次の3つの引数を受け取り、IM グループに新しい連絡先を追加します。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-108">The **AddNewImContactToGroup** operation takes the following three arguments to add a new contact to an IM group:</span></span> 
   
-- <span data-ttu-id="f2bb2-109">**ImAddress**プロパティには、連絡先のインスタント メッセージ アドレスを識別します。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-109">**ImAddress** property - Identifies the contact's IM address.</span></span> <span data-ttu-id="f2bb2-110">このプロパティは、必要があります。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-110">This property is required.</span></span> 
+- <span data-ttu-id="6e9ad-109">**Imaddress**プロパティ-連絡先の IM アドレスを識別します。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-109">**ImAddress** property - Identifies the contact's IM address.</span></span> <span data-ttu-id="6e9ad-110">このプロパティは必須です。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-110">This property is required.</span></span> 
     
-- <span data-ttu-id="f2bb2-111">**DisplayName**プロパティは、連絡先の表示名を識別します。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-111">**DisplayName** property - Identifies the contact's display name.</span></span> 
+- <span data-ttu-id="6e9ad-111">**DisplayName**プロパティ-連絡先の表示名を識別します。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-111">**DisplayName** property - Identifies the contact's display name.</span></span> 
     
-- <span data-ttu-id="f2bb2-112">**GroupId**プロパティには、取引先担当者を追加するグループを識別します。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-112">**GroupId** property - Identifies the group that the contact is added to.</span></span> 
+- <span data-ttu-id="6e9ad-112">**GroupId**プロパティ-連絡先が追加されるグループを識別します。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-112">**GroupId** property - Identifies the group that the contact is added to.</span></span> 
     
-<span data-ttu-id="f2bb2-113">この操作には、グループに追加された取引先担当者のペルソナが返されます。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-113">This operation returns the persona of the contact that was added to the group.</span></span>
+<span data-ttu-id="6e9ad-113">この操作は、グループに追加された連絡先のペルソナを返します。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-113">This operation returns the persona of the contact that was added to the group.</span></span>
   
-### <a name="addnewimcontacttogroup-operation-soap-headers"></a><span data-ttu-id="f2bb2-114">AddNewImContactToGroup 操作の SOAP ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f2bb2-114">AddNewImContactToGroup operation SOAP headers</span></span>
+### <a name="addnewimcontacttogroup-operation-soap-headers"></a><span data-ttu-id="6e9ad-114">AddNewImContactToGroup 操作の SOAP ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6e9ad-114">AddNewImContactToGroup operation SOAP headers</span></span>
 
-<span data-ttu-id="f2bb2-115">**AddNewImContactToGroup**操作は、次の表に記載されている SOAP ヘッダーを使用できます。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-115">The **AddNewImContactToGroup** operation can use the SOAP headers that are listed in the following table.</span></span> 
+<span data-ttu-id="6e9ad-115">**AddNewImContactToGroup**操作では、次の表に示す SOAP ヘッダーを使用できます。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-115">The **AddNewImContactToGroup** operation can use the SOAP headers that are listed in the following table.</span></span> 
   
-|<span data-ttu-id="f2bb2-116">**ヘッダー名**</span><span class="sxs-lookup"><span data-stu-id="f2bb2-116">**Header name**</span></span>|<span data-ttu-id="f2bb2-117">**要素**</span><span class="sxs-lookup"><span data-stu-id="f2bb2-117">**Element**</span></span>|<span data-ttu-id="f2bb2-118">**説明**</span><span class="sxs-lookup"><span data-stu-id="f2bb2-118">**Description**</span></span>|
+|<span data-ttu-id="6e9ad-116">**ヘッダー名**</span><span class="sxs-lookup"><span data-stu-id="6e9ad-116">**Header name**</span></span>|<span data-ttu-id="6e9ad-117">**要素**</span><span class="sxs-lookup"><span data-stu-id="6e9ad-117">**Element**</span></span>|<span data-ttu-id="6e9ad-118">**説明**</span><span class="sxs-lookup"><span data-stu-id="6e9ad-118">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="f2bb2-119">**偽装**</span><span class="sxs-lookup"><span data-stu-id="f2bb2-119">**Impersonation**</span></span> <br/> |[<span data-ttu-id="f2bb2-120">ExchangeImpersonation</span><span class="sxs-lookup"><span data-stu-id="f2bb2-120">ExchangeImpersonation</span></span>](exchangeimpersonation.md) <br/> |<span data-ttu-id="f2bb2-121">クライアント アプリケーションが偽装するユーザーを識別します。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-121">Identifies the user whom the client application is impersonating.</span></span> <span data-ttu-id="f2bb2-122">このヘッダーは、要求に適用されます。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-122">This header is applicable to a request.</span></span>  <br/> |
-|<span data-ttu-id="f2bb2-123">**MailboxCulture**</span><span class="sxs-lookup"><span data-stu-id="f2bb2-123">**MailboxCulture**</span></span> <br/> |[<span data-ttu-id="f2bb2-124">MailboxCulture</span><span class="sxs-lookup"><span data-stu-id="f2bb2-124">MailboxCulture</span></span>](mailboxculture.md) <br/> |<span data-ttu-id="f2bb2-125">RFC 3066、」タグの「識別の言語」を使用してメールボックスへのアクセスに定義されているカルチャを識別します。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-125">Identifies the culture, as defined in RFC 3066, "Tags for the Identification of Languages", to be used to access the mailbox.</span></span> <span data-ttu-id="f2bb2-126">このヘッダーは、要求に適用されます。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-126">This header is applicable to a request.</span></span>  <br/> |
-|<span data-ttu-id="f2bb2-127">**RequestVersion**</span><span class="sxs-lookup"><span data-stu-id="f2bb2-127">**RequestVersion**</span></span> <br/> |[<span data-ttu-id="f2bb2-128">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="f2bb2-128">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="f2bb2-129">操作要求のスキーマのバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-129">Identifies the schema version for the operation request.</span></span> <span data-ttu-id="f2bb2-130">このヘッダーは、要求に適用されます。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-130">This header is applicable to a request.</span></span>  <br/> |
-|<span data-ttu-id="f2bb2-131">**ServerVersion**</span><span class="sxs-lookup"><span data-stu-id="f2bb2-131">**ServerVersion**</span></span> <br/> |[<span data-ttu-id="f2bb2-132">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="f2bb2-132">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="f2bb2-133">要求に応答するサーバーのバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-133">Identifies the version of the server that responded to the request.</span></span> <span data-ttu-id="f2bb2-134">このヘッダーは、応答に適用されます。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-134">This header is applicable to a response.</span></span>  <br/> |
+|<span data-ttu-id="6e9ad-119">**偽装**</span><span class="sxs-lookup"><span data-stu-id="6e9ad-119">**Impersonation**</span></span> <br/> |[<span data-ttu-id="6e9ad-120">ExchangeImpersonation</span><span class="sxs-lookup"><span data-stu-id="6e9ad-120">ExchangeImpersonation</span></span>](exchangeimpersonation.md) <br/> |<span data-ttu-id="6e9ad-121">クライアントアプリケーションが偽装しているユーザーを識別します。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-121">Identifies the user whom the client application is impersonating.</span></span> <span data-ttu-id="6e9ad-122">このヘッダーは、要求に適用されます。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-122">This header is applicable to a request.</span></span>  <br/> |
+|<span data-ttu-id="6e9ad-123">**MailboxCulture**</span><span class="sxs-lookup"><span data-stu-id="6e9ad-123">**MailboxCulture**</span></span> <br/> |[<span data-ttu-id="6e9ad-124">MailboxCulture</span><span class="sxs-lookup"><span data-stu-id="6e9ad-124">MailboxCulture</span></span>](mailboxculture.md) <br/> |<span data-ttu-id="6e9ad-125">RFC 3066 で定義されているように、メールボックスへのアクセスに使用されるカルチャ (言語の識別用のタグ) を識別します。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-125">Identifies the culture, as defined in RFC 3066, "Tags for the Identification of Languages", to be used to access the mailbox.</span></span> <span data-ttu-id="6e9ad-126">このヘッダーは、要求に適用されます。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-126">This header is applicable to a request.</span></span>  <br/> |
+|<span data-ttu-id="6e9ad-127">**RequestVersion**</span><span class="sxs-lookup"><span data-stu-id="6e9ad-127">**RequestVersion**</span></span> <br/> |[<span data-ttu-id="6e9ad-128">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="6e9ad-128">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="6e9ad-129">操作要求のスキーマバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-129">Identifies the schema version for the operation request.</span></span> <span data-ttu-id="6e9ad-130">このヘッダーは、要求に適用されます。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-130">This header is applicable to a request.</span></span>  <br/> |
+|<span data-ttu-id="6e9ad-131">**ServerVersion**</span><span class="sxs-lookup"><span data-stu-id="6e9ad-131">**ServerVersion**</span></span> <br/> |[<span data-ttu-id="6e9ad-132">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="6e9ad-132">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="6e9ad-133">要求に応答したサーバーのバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-133">Identifies the version of the server that responded to the request.</span></span> <span data-ttu-id="6e9ad-134">このヘッダーは応答に適用されます。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-134">This header is applicable to a response.</span></span>  <br/> |
    
-## <a name="addnewimcontacttogroup-operation-request-example-add-a-new-im-contact-to-a-group"></a><span data-ttu-id="f2bb2-135">AddNewImContactToGroup 操作の要求の例: 新しい IM 連絡先をグループに追加します。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-135">AddNewImContactToGroup operation request example: Add a new IM contact to a group</span></span>
+## <a name="addnewimcontacttogroup-operation-request-example-add-a-new-im-contact-to-a-group"></a><span data-ttu-id="6e9ad-135">AddNewImContactToGroup 操作要求の例: 新しい IM 連絡先をグループに追加します。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-135">AddNewImContactToGroup operation request example: Add a new IM contact to a group</span></span>
 
-<span data-ttu-id="f2bb2-136">**AddNewImContactToGroup**操作要求の次の例では、既存の IM グループに新しい連絡先を追加する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-136">The following example of an **AddNewImContactToGroup** operation request shows how to add a new contact to an existing IM group.</span></span> <span data-ttu-id="f2bb2-137">[AddImGroup 操作](addimgroup-operation.md)の結果から、次の使用例の**グループ Id**のプロパティの値が返されました。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-137">The **GroupId** property value for this example was returned from results of the [AddImGroup operation](addimgroup-operation.md).</span></span> <span data-ttu-id="f2bb2-138">**ExchangeStoreId**プロパティには、**グループ Id**のプロパティの値が含まれています。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-138">The **ExchangeStoreId** property contains the **GroupId** property value.</span></span> 
+<span data-ttu-id="6e9ad-136">次の**AddNewImContactToGroup**操作要求の例は、新しい連絡先を既存の IM グループに追加する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-136">The following example of an **AddNewImContactToGroup** operation request shows how to add a new contact to an existing IM group.</span></span> <span data-ttu-id="6e9ad-137">この例の**GroupId**プロパティの値は、 [addimgroup 操作](addimgroup-operation.md)の結果から返されました。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-137">The **GroupId** property value for this example was returned from results of the [AddImGroup operation](addimgroup-operation.md).</span></span> <span data-ttu-id="6e9ad-138">**ExchangeStoreId**プロパティには、 **GroupId**プロパティの値が含まれています。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-138">The **ExchangeStoreId** property contains the **GroupId** property value.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
       <t:MailboxCulture>en-US</t:MailboxCulture>
@@ -74,24 +74,24 @@ ms.locfileid: "19759293"
 ```
 
 > [!NOTE]
-> <span data-ttu-id="f2bb2-139">**グループ Id**の値が小さすぎると読みやすさを保持します。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-139">The **GroupId** value has been shortened to preserve readability.</span></span> 
+> <span data-ttu-id="6e9ad-139">**GroupId**値は読みやすいように短縮されています。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-139">The **GroupId** value has been shortened to preserve readability.</span></span> 
   
-<span data-ttu-id="f2bb2-140">要求 SOAP 本体にはには、次の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-140">The request SOAP body contains the following elements:</span></span>
+<span data-ttu-id="6e9ad-140">要求 SOAP 本文には、次の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-140">The request SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="f2bb2-141">AddNewImContactToGroup</span><span class="sxs-lookup"><span data-stu-id="f2bb2-141">AddNewImContactToGroup</span></span>](addnewimcontacttogroup.md)
+- [<span data-ttu-id="6e9ad-141">AddNewImContactToGroup</span><span class="sxs-lookup"><span data-stu-id="6e9ad-141">AddNewImContactToGroup</span></span>](addnewimcontacttogroup.md)
     
-- [<span data-ttu-id="f2bb2-142">ImAddress (文字列)</span><span class="sxs-lookup"><span data-stu-id="f2bb2-142">ImAddress (String)</span></span>](imaddress-string.md)
+- [<span data-ttu-id="6e9ad-142">ImAddress (文字列)</span><span class="sxs-lookup"><span data-stu-id="6e9ad-142">ImAddress (String)</span></span>](imaddress-string.md)
     
-- [<span data-ttu-id="f2bb2-143">表示名 (文字列)</span><span class="sxs-lookup"><span data-stu-id="f2bb2-143">DisplayName (string)</span></span>](displayname-string.md)
+- [<span data-ttu-id="6e9ad-143">DisplayName (文字列)</span><span class="sxs-lookup"><span data-stu-id="6e9ad-143">DisplayName (string)</span></span>](displayname-string.md)
     
-- [<span data-ttu-id="f2bb2-144">グループ Id</span><span class="sxs-lookup"><span data-stu-id="f2bb2-144">GroupId</span></span>](groupid.md)
+- [<span data-ttu-id="6e9ad-144">GroupId</span><span class="sxs-lookup"><span data-stu-id="6e9ad-144">GroupId</span></span>](groupid.md)
     
-## <a name="successful-addnewimcontacttogroup-operation-response"></a><span data-ttu-id="f2bb2-145">AddNewImContactToGroup 操作の成功の応答</span><span class="sxs-lookup"><span data-stu-id="f2bb2-145">Successful AddNewImContactToGroup operation response</span></span>
+## <a name="successful-addnewimcontacttogroup-operation-response"></a><span data-ttu-id="6e9ad-145">成功した AddNewImContactToGroup 操作の応答</span><span class="sxs-lookup"><span data-stu-id="6e9ad-145">Successful AddNewImContactToGroup operation response</span></span>
 
-<span data-ttu-id="f2bb2-146">**AddNewImContactToGroup**操作の要求に正常な応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-146">The following example shows a successful response to an **AddNewImContactToGroup** operation request.</span></span> <span data-ttu-id="f2bb2-147">応答には、新しく作成された取引先担当者のペルソナが含まれています。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-147">The response contains the persona of the newly created contact.</span></span> <span data-ttu-id="f2bb2-148">連絡先が Exchange のクイック連絡先フォルダーに追加されます。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-148">The contact is added to the Quick Contacts folder in Exchange.</span></span> 
+<span data-ttu-id="6e9ad-146">次の例は、 **AddNewImContactToGroup**操作要求に対する正常な応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-146">The following example shows a successful response to an **AddNewImContactToGroup** operation request.</span></span> <span data-ttu-id="6e9ad-147">応答には、新しく作成された連絡先のペルソナが含まれています。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-147">The response contains the persona of the newly created contact.</span></span> <span data-ttu-id="6e9ad-148">連絡先が Exchange の [クイック連絡先] フォルダーに追加されます。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-148">The contact is added to the Quick Contacts folder in Exchange.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="f2bb2-149">識別子は、読みやすさを保持するために短縮されています。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-149">Identifiers have been shortened to preserve readability.</span></span> 
+> <span data-ttu-id="6e9ad-149">読みやすくするために、識別子が短縮されています。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-149">Identifiers have been shortened to preserve readability.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -102,40 +102,40 @@ ms.locfileid: "19759293"
                          MajorBuildNumber="349" 
                          MinorBuildNumber="0" 
                          Version="Exchange2013" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <AddNewImContactToGroupResponse ResponseClass="Success" 
-                                    xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                    xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseCode>NoError</ResponseCode>
       <Persona>
         <PersonaId Id="AAQkAGQ1MjJjMTBkLTc4Y2UtNDA5Ny04ZjU5LWI3MTYzNGNkZmRkYQAQAJ3EkhEEXN5KufGbSYJanZk=" 
-                   xmlns="http://schemas.microsoft.com/exchange/services/2006/types" />
-        <PersonaType xmlns="http://schemas.microsoft.com/exchange/services/2006/types">Person</PersonaType>
-        <CreationTime xmlns="http://schemas.microsoft.com/exchange/services/2006/types">2012-01-05T23:06:58Z</CreationTime>
-        <DisplayName xmlns="http://schemas.microsoft.com/exchange/services/2006/types">Tony Smith</DisplayName>
-        <DisplayNameFirstLast xmlns="http://schemas.microsoft.com/exchange/services/2006/types">Tony Smith</DisplayNameFirstLast>
-        <DisplayNameLastFirst xmlns="http://schemas.microsoft.com/exchange/services/2006/types">Tony Smith</DisplayNameLastFirst>
-        <FileAsId xmlns="http://schemas.microsoft.com/exchange/services/2006/types">None</FileAsId>
-        <EmailAddress xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+                   xmlns="https://schemas.microsoft.com/exchange/services/2006/types" />
+        <PersonaType xmlns="https://schemas.microsoft.com/exchange/services/2006/types">Person</PersonaType>
+        <CreationTime xmlns="https://schemas.microsoft.com/exchange/services/2006/types">2012-01-05T23:06:58Z</CreationTime>
+        <DisplayName xmlns="https://schemas.microsoft.com/exchange/services/2006/types">Tony Smith</DisplayName>
+        <DisplayNameFirstLast xmlns="https://schemas.microsoft.com/exchange/services/2006/types">Tony Smith</DisplayNameFirstLast>
+        <DisplayNameLastFirst xmlns="https://schemas.microsoft.com/exchange/services/2006/types">Tony Smith</DisplayNameLastFirst>
+        <FileAsId xmlns="https://schemas.microsoft.com/exchange/services/2006/types">None</FileAsId>
+        <EmailAddress xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <Name>Tony Smith</Name>
           <Address>tsmith@contoso.com</Address>
           <RoutingType>SMTP</RoutingType>
         </EmailAddress>
-        <EmailAddresses xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <EmailAddresses xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <EmailAddress>
             <Name>Tony Smith</Name>
             <Address>tsmith@contoso.com</Address>
             <RoutingType>SMTP</RoutingType>
           </EmailAddress>
         </EmailAddresses>
-        <ImAddress xmlns="http://schemas.microsoft.com/exchange/services/2006/types">tsmith@contoso.com</ImAddress>
-        <RelevanceScore xmlns="http://schemas.microsoft.com/exchange/services/2006/types">2147483647</RelevanceScore>
-        <Attributions xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <ImAddress xmlns="https://schemas.microsoft.com/exchange/services/2006/types">tsmith@contoso.com</ImAddress>
+        <RelevanceScore xmlns="https://schemas.microsoft.com/exchange/services/2006/types">2147483647</RelevanceScore>
+        <Attributions xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <Attribution>
             <Id>0</Id>
             <SourceId Id="BtF8oI7iVOQatt/bhQoTbWAAAAAAvcAAA=" 
@@ -148,7 +148,7 @@ ms.locfileid: "19759293"
                       ChangeKey="AQAAAA==" />
           </Attribution>
         </Attributions>
-        <DisplayNames xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <DisplayNames xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <StringAttributedValue>
             <Value>Tony Smith</Value>
             <Attributions>
@@ -156,7 +156,7 @@ ms.locfileid: "19759293"
             </Attributions>
           </StringAttributedValue>
         </DisplayNames>
-        <FileAsIds xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <FileAsIds xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <StringAttributedValue>
             <Value>None</Value>
             <Attributions>
@@ -164,7 +164,7 @@ ms.locfileid: "19759293"
             </Attributions>
           </StringAttributedValue>
         </FileAsIds>
-        <Emails1 xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <Emails1 xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <EmailAddressAttributedValue>
             <Value>
               <Name>Tony Smith</Name>
@@ -176,7 +176,7 @@ ms.locfileid: "19759293"
             </Attributions>
           </EmailAddressAttributedValue>
         </Emails1>
-        <ImAddresses xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <ImAddresses xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <StringAttributedValue>
             <Value>tsmith@contoso.com</Value>
             <Attributions>
@@ -190,71 +190,71 @@ ms.locfileid: "19759293"
 </s:Envelope>
 ```
 
-<span data-ttu-id="f2bb2-150">応答 SOAP 本文には、次の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-150">The response SOAP body contains the following elements:</span></span>
+<span data-ttu-id="6e9ad-150">応答 SOAP 本文には、次の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-150">The response SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="f2bb2-151">AddNewImContactToGroupResponse</span><span class="sxs-lookup"><span data-stu-id="f2bb2-151">AddNewImContactToGroupResponse</span></span>](addnewimcontacttogroupresponse.md)
+- [<span data-ttu-id="6e9ad-151">AddNewImContactToGroupResponse</span><span class="sxs-lookup"><span data-stu-id="6e9ad-151">AddNewImContactToGroupResponse</span></span>](addnewimcontacttogroupresponse.md)
     
-- [<span data-ttu-id="f2bb2-152">ペルソナ</span><span class="sxs-lookup"><span data-stu-id="f2bb2-152">Persona</span></span>](persona.md)
+- [<span data-ttu-id="6e9ad-152">ユーザー</span><span class="sxs-lookup"><span data-stu-id="6e9ad-152">Persona</span></span>](persona.md)
     
-- [<span data-ttu-id="f2bb2-153">PersonaId</span><span class="sxs-lookup"><span data-stu-id="f2bb2-153">PersonaId</span></span>](personaid.md)
+- [<span data-ttu-id="6e9ad-153">PersonaId</span><span class="sxs-lookup"><span data-stu-id="6e9ad-153">PersonaId</span></span>](personaid.md)
     
-- [<span data-ttu-id="f2bb2-154">PersonaType</span><span class="sxs-lookup"><span data-stu-id="f2bb2-154">PersonaType</span></span>](personatype.md)
+- [<span data-ttu-id="6e9ad-154">個人の Atype</span><span class="sxs-lookup"><span data-stu-id="6e9ad-154">PersonaType</span></span>](personatype.md)
     
-- [<span data-ttu-id="f2bb2-155">CreationTime</span><span class="sxs-lookup"><span data-stu-id="f2bb2-155">CreationTime</span></span>](creationtime.md)
+- [<span data-ttu-id="6e9ad-155">CreationTime</span><span class="sxs-lookup"><span data-stu-id="6e9ad-155">CreationTime</span></span>](creationtime.md)
     
-- [<span data-ttu-id="f2bb2-156">表示名 (文字列)</span><span class="sxs-lookup"><span data-stu-id="f2bb2-156">DisplayName (string)</span></span>](displayname-string.md)
+- [<span data-ttu-id="6e9ad-156">DisplayName (文字列)</span><span class="sxs-lookup"><span data-stu-id="6e9ad-156">DisplayName (string)</span></span>](displayname-string.md)
     
-- [<span data-ttu-id="f2bb2-157">DisplayNameFirstLast</span><span class="sxs-lookup"><span data-stu-id="f2bb2-157">DisplayNameFirstLast</span></span>](displaynamefirstlast.md)
+- [<span data-ttu-id="6e9ad-157">DisplayNameFirstLast</span><span class="sxs-lookup"><span data-stu-id="6e9ad-157">DisplayNameFirstLast</span></span>](displaynamefirstlast.md)
     
-- [<span data-ttu-id="f2bb2-158">DisplayNameLastFirst</span><span class="sxs-lookup"><span data-stu-id="f2bb2-158">DisplayNameLastFirst</span></span>](displaynamelastfirst.md)
+- [<span data-ttu-id="6e9ad-158">DisplayNameLastFirst</span><span class="sxs-lookup"><span data-stu-id="6e9ad-158">DisplayNameLastFirst</span></span>](displaynamelastfirst.md)
     
-- [<span data-ttu-id="f2bb2-159">FileAsId</span><span class="sxs-lookup"><span data-stu-id="f2bb2-159">FileAsId</span></span>](fileasid.md)
+- [<span data-ttu-id="6e9ad-159">FileAsId</span><span class="sxs-lookup"><span data-stu-id="6e9ad-159">FileAsId</span></span>](fileasid.md)
     
-- [<span data-ttu-id="f2bb2-160">EmailAddress (EmailAddressType)</span><span class="sxs-lookup"><span data-stu-id="f2bb2-160">EmailAddress (EmailAddressType)</span></span>](emailaddress-emailaddresstype.md)
+- [<span data-ttu-id="6e9ad-160">EmailAddress (EmailAddressType)</span><span class="sxs-lookup"><span data-stu-id="6e9ad-160">EmailAddress (EmailAddressType)</span></span>](emailaddress-emailaddresstype.md)
     
-- [<span data-ttu-id="f2bb2-161">名 (EmailAddressType)</span><span class="sxs-lookup"><span data-stu-id="f2bb2-161">Name (EmailAddressType)</span></span>](name-emailaddresstype.md)
+- [<span data-ttu-id="6e9ad-161">Name (EmailAddressType)</span><span class="sxs-lookup"><span data-stu-id="6e9ad-161">Name (EmailAddressType)</span></span>](name-emailaddresstype.md)
     
-- [<span data-ttu-id="f2bb2-162">アドレス (文字列)</span><span class="sxs-lookup"><span data-stu-id="f2bb2-162">Address (string)</span></span>](address-string.md)
+- [<span data-ttu-id="6e9ad-162">Address (string)</span><span class="sxs-lookup"><span data-stu-id="6e9ad-162">Address (string)</span></span>](address-string.md)
     
-- [<span data-ttu-id="f2bb2-163">RoutingType (EmailAddressType)</span><span class="sxs-lookup"><span data-stu-id="f2bb2-163">RoutingType (EmailAddressType)</span></span>](routingtype-emailaddresstype.md)
+- [<span data-ttu-id="6e9ad-163">RoutingType (EmailAddressType)</span><span class="sxs-lookup"><span data-stu-id="6e9ad-163">RoutingType (EmailAddressType)</span></span>](routingtype-emailaddresstype.md)
     
-- [<span data-ttu-id="f2bb2-164">ImAddress (文字列)</span><span class="sxs-lookup"><span data-stu-id="f2bb2-164">ImAddress (String)</span></span>](imaddress-string.md)
+- [<span data-ttu-id="6e9ad-164">ImAddress (文字列)</span><span class="sxs-lookup"><span data-stu-id="6e9ad-164">ImAddress (String)</span></span>](imaddress-string.md)
     
-- [<span data-ttu-id="f2bb2-165">RelevanceScore</span><span class="sxs-lookup"><span data-stu-id="f2bb2-165">RelevanceScore</span></span>](relevancescore.md)
+- [<span data-ttu-id="6e9ad-165">RelevanceScore</span><span class="sxs-lookup"><span data-stu-id="6e9ad-165">RelevanceScore</span></span>](relevancescore.md)
     
-- [<span data-ttu-id="f2bb2-166">帰属 (ArrayOfPersonaAttributionsType)</span><span class="sxs-lookup"><span data-stu-id="f2bb2-166">Attributions (ArrayOfPersonaAttributionsType)</span></span>](attributions-arrayofpersonaattributionstype.md)
+- [<span data-ttu-id="6e9ad-166">Attributions (ArrayOfPersonaAttributionsType)</span><span class="sxs-lookup"><span data-stu-id="6e9ad-166">Attributions (ArrayOfPersonaAttributionsType)</span></span>](attributions-arrayofpersonaattributionstype.md)
     
-- [<span data-ttu-id="f2bb2-167">属性 (PersonaAttributionType)</span><span class="sxs-lookup"><span data-stu-id="f2bb2-167">Attribution (PersonaAttributionType)</span></span>](attribution-personaattributiontype.md)
+- [<span data-ttu-id="6e9ad-167">属性 (PersonaAttributionType)</span><span class="sxs-lookup"><span data-stu-id="6e9ad-167">Attribution (PersonaAttributionType)</span></span>](attribution-personaattributiontype.md)
     
-- [<span data-ttu-id="f2bb2-168">ID (文字列)</span><span class="sxs-lookup"><span data-stu-id="f2bb2-168">ID (String)</span></span>](id-string.md)
+- [<span data-ttu-id="6e9ad-168">ID (文字列)</span><span class="sxs-lookup"><span data-stu-id="6e9ad-168">ID (String)</span></span>](id-string.md)
     
-- [<span data-ttu-id="f2bb2-169">SourceId</span><span class="sxs-lookup"><span data-stu-id="f2bb2-169">SourceId</span></span>](sourceid.md)
+- [<span data-ttu-id="6e9ad-169">SourceId</span><span class="sxs-lookup"><span data-stu-id="6e9ad-169">SourceId</span></span>](sourceid.md)
     
-- [<span data-ttu-id="f2bb2-170">IsWritable</span><span class="sxs-lookup"><span data-stu-id="f2bb2-170">IsWritable</span></span>](iswritable.md)
+- [<span data-ttu-id="6e9ad-170">IsWritable 可能</span><span class="sxs-lookup"><span data-stu-id="6e9ad-170">IsWritable</span></span>](iswritable.md)
     
-- [<span data-ttu-id="f2bb2-171">IsQuickContact</span><span class="sxs-lookup"><span data-stu-id="f2bb2-171">IsQuickContact</span></span>](isquickcontact.md)
+- [<span data-ttu-id="6e9ad-171">IsQuickContact</span><span class="sxs-lookup"><span data-stu-id="6e9ad-171">IsQuickContact</span></span>](isquickcontact.md)
     
-- [<span data-ttu-id="f2bb2-172">IsHidden</span><span class="sxs-lookup"><span data-stu-id="f2bb2-172">IsHidden</span></span>](ishidden.md)
+- [<span data-ttu-id="6e9ad-172">IsHidden</span><span class="sxs-lookup"><span data-stu-id="6e9ad-172">IsHidden</span></span>](ishidden.md)
     
-- [<span data-ttu-id="f2bb2-173">フォルダー Id</span><span class="sxs-lookup"><span data-stu-id="f2bb2-173">FolderId</span></span>](folderid.md)
+- [<span data-ttu-id="6e9ad-173">FolderId</span><span class="sxs-lookup"><span data-stu-id="6e9ad-173">FolderId</span></span>](folderid.md)
     
-- [<span data-ttu-id="f2bb2-174">表示名</span><span class="sxs-lookup"><span data-stu-id="f2bb2-174">DisplayNames</span></span>](displaynames.md)
+- [<span data-ttu-id="6e9ad-174">DisplayNames</span><span class="sxs-lookup"><span data-stu-id="6e9ad-174">DisplayNames</span></span>](displaynames.md)
     
-- [<span data-ttu-id="f2bb2-175">StringAttributedValue</span><span class="sxs-lookup"><span data-stu-id="f2bb2-175">StringAttributedValue</span></span>](stringattributedvalue.md)
+- [<span data-ttu-id="6e9ad-175">StringAttributedValue</span><span class="sxs-lookup"><span data-stu-id="6e9ad-175">StringAttributedValue</span></span>](stringattributedvalue.md)
     
-- [<span data-ttu-id="f2bb2-176">値 (ArrayOfStringValueType)</span><span class="sxs-lookup"><span data-stu-id="f2bb2-176">Value (ArrayOfStringValueType)</span></span>](value-arrayofstringvaluetype.md)
+- [<span data-ttu-id="6e9ad-176">値 (ArrayOfStringValueType)</span><span class="sxs-lookup"><span data-stu-id="6e9ad-176">Value (ArrayOfStringValueType)</span></span>](value-arrayofstringvaluetype.md)
     
-- [<span data-ttu-id="f2bb2-177">FileAsIds</span><span class="sxs-lookup"><span data-stu-id="f2bb2-177">FileAsIds</span></span>](fileasids.md)
+- [<span data-ttu-id="6e9ad-177">FileAsIds</span><span class="sxs-lookup"><span data-stu-id="6e9ad-177">FileAsIds</span></span>](fileasids.md)
     
-- [<span data-ttu-id="f2bb2-178">Emails1</span><span class="sxs-lookup"><span data-stu-id="f2bb2-178">Emails1</span></span>](emails1.md)
+- [<span data-ttu-id="6e9ad-178">Emails1</span><span class="sxs-lookup"><span data-stu-id="6e9ad-178">Emails1</span></span>](emails1.md)
     
-- [<span data-ttu-id="f2bb2-179">EmailAddressAttributedValue</span><span class="sxs-lookup"><span data-stu-id="f2bb2-179">EmailAddressAttributedValue</span></span>](emailaddressattributedvalue.md)
+- [<span data-ttu-id="6e9ad-179">EmailAddressAttributedValue</span><span class="sxs-lookup"><span data-stu-id="6e9ad-179">EmailAddressAttributedValue</span></span>](emailaddressattributedvalue.md)
     
-- [<span data-ttu-id="f2bb2-180">ImAddresses</span><span class="sxs-lookup"><span data-stu-id="f2bb2-180">ImAddresses</span></span>](imaddresses.md)
+- [<span data-ttu-id="6e9ad-180">ImAddresses</span><span class="sxs-lookup"><span data-stu-id="6e9ad-180">ImAddresses</span></span>](imaddresses.md)
     
-## <a name="addnewimcontacttogroup-operation-error-response"></a><span data-ttu-id="f2bb2-181">AddNewImContactToGroup 操作のエラー応答</span><span class="sxs-lookup"><span data-stu-id="f2bb2-181">AddNewImContactToGroup operation error response</span></span>
+## <a name="addnewimcontacttogroup-operation-error-response"></a><span data-ttu-id="6e9ad-181">AddNewImContactToGroup 操作エラー応答</span><span class="sxs-lookup"><span data-stu-id="6e9ad-181">AddNewImContactToGroup operation error response</span></span>
 
-<span data-ttu-id="f2bb2-182">**AddNewImContactToGroup**操作の要求に対してエラー応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-182">The following example shows an error response to a **AddNewImContactToGroup** operation request.</span></span> <span data-ttu-id="f2bb2-183">これは、依頼者のメールボックスに含まれていないグループに連絡先を追加する要求に応答します。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-183">This is a response to a request to add a contact to a group that is not in the requester's mailbox.</span></span> 
+<span data-ttu-id="6e9ad-182">次の例は、 **AddNewImContactToGroup**操作要求へのエラー応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-182">The following example shows an error response to a **AddNewImContactToGroup** operation request.</span></span> <span data-ttu-id="6e9ad-183">これは、依頼者のメールボックスにないグループに連絡先を追加する要求に対する応答です。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-183">This is a response to a request to add a contact to a group that is not in the requester's mailbox.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -265,54 +265,54 @@ ms.locfileid: "19759293"
                            MajorBuildNumber="578" 
                            MinorBuildNumber="11" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <AddNewImContactToGroupResponse ResponseClass="Error" 
-                                      xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                      xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <MessageText>No mailbox with such guid.</MessageText>
          <ResponseCode>ErrorNonExistentMailbox</ResponseCode>
          <DescriptiveLinkKey>0</DescriptiveLinkKey>
          <MessageXml>
-            <t:Value Name="MailboxGuid" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">d5fasdadcw3d-23de-2341-8f59-b71523fsddda</t:Value>
+            <t:Value Name="MailboxGuid" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">d5fasdadcw3d-23de-2341-8f59-b71523fsddda</t:Value>
          </MessageXml>
       </AddNewImContactToGroupResponse>
    </s:Body>
 </s:Envelope>
 ```
 
-<span data-ttu-id="f2bb2-184">エラー応答 SOAP 本体にはには、次の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-184">The error response SOAP body contains the following elements:</span></span>
+<span data-ttu-id="6e9ad-184">エラー応答 SOAP 本文には、次の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="6e9ad-184">The error response SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="f2bb2-185">AddNewImContactToGroupResponse</span><span class="sxs-lookup"><span data-stu-id="f2bb2-185">AddNewImContactToGroupResponse</span></span>](addnewimcontacttogroupresponse.md)
+- [<span data-ttu-id="6e9ad-185">AddNewImContactToGroupResponse</span><span class="sxs-lookup"><span data-stu-id="6e9ad-185">AddNewImContactToGroupResponse</span></span>](addnewimcontacttogroupresponse.md)
     
-- [<span data-ttu-id="f2bb2-186">MessageText</span><span class="sxs-lookup"><span data-stu-id="f2bb2-186">MessageText</span></span>](messagetext.md)
+- [<span data-ttu-id="6e9ad-186">MessageText</span><span class="sxs-lookup"><span data-stu-id="6e9ad-186">MessageText</span></span>](messagetext.md)
     
-- [<span data-ttu-id="f2bb2-187">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="f2bb2-187">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="6e9ad-187">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="6e9ad-187">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="f2bb2-188">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="f2bb2-188">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
+- [<span data-ttu-id="6e9ad-188">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="6e9ad-188">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
     
-- [<span data-ttu-id="f2bb2-189">MessageXml</span><span class="sxs-lookup"><span data-stu-id="f2bb2-189">MessageXml</span></span>](messagexml.md)
+- [<span data-ttu-id="6e9ad-189">MessageXml</span><span class="sxs-lookup"><span data-stu-id="6e9ad-189">MessageXml</span></span>](messagexml.md)
     
-<span data-ttu-id="f2bb2-190">EWS を汎用的なこの操作に固有のエラー コードは、 [ResponseCode](responsecode.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f2bb2-190">For additional error codes that are generic to EWS and specific to this operation, see [ResponseCode](responsecode.md).</span></span>
+<span data-ttu-id="6e9ad-190">EWS で汎用的でこの操作に固有の追加のエラーコードについては、「応答」[を参照してください。](responsecode.md)</span><span class="sxs-lookup"><span data-stu-id="6e9ad-190">For additional error codes that are generic to EWS and specific to this operation, see [ResponseCode](responsecode.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="f2bb2-191">関連項目</span><span class="sxs-lookup"><span data-stu-id="f2bb2-191">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6e9ad-191">関連項目</span><span class="sxs-lookup"><span data-stu-id="6e9ad-191">See also</span></span>
 
 
 
-[<span data-ttu-id="f2bb2-192">AddImGroup 操作</span><span class="sxs-lookup"><span data-stu-id="f2bb2-192">AddImGroup operation</span></span>](addimgroup-operation.md)
+[<span data-ttu-id="6e9ad-192">AddImGroup 操作</span><span class="sxs-lookup"><span data-stu-id="6e9ad-192">AddImGroup operation</span></span>](addimgroup-operation.md)
   
-[<span data-ttu-id="f2bb2-193">AddImContactToGroup 操作</span><span class="sxs-lookup"><span data-stu-id="f2bb2-193">AddImContactToGroup operation</span></span>](addimcontacttogroup-operation.md)
+[<span data-ttu-id="6e9ad-193">AddImContactToGroup 操作</span><span class="sxs-lookup"><span data-stu-id="6e9ad-193">AddImContactToGroup operation</span></span>](addimcontacttogroup-operation.md)
   
-[<span data-ttu-id="f2bb2-194">AddImGroup 操作</span><span class="sxs-lookup"><span data-stu-id="f2bb2-194">AddImGroup operation</span></span>](addimgroup-operation.md)
+[<span data-ttu-id="6e9ad-194">AddImGroup 操作</span><span class="sxs-lookup"><span data-stu-id="6e9ad-194">AddImGroup operation</span></span>](addimgroup-operation.md)
   
-[<span data-ttu-id="f2bb2-195">RemoveImGroup 操作</span><span class="sxs-lookup"><span data-stu-id="f2bb2-195">RemoveImGroup operation</span></span>](removeimgroup-operation.md)
+[<span data-ttu-id="6e9ad-195">RemoveImGroup 操作</span><span class="sxs-lookup"><span data-stu-id="6e9ad-195">RemoveImGroup operation</span></span>](removeimgroup-operation.md)
   
-[<span data-ttu-id="f2bb2-196">SetImGroup 操作</span><span class="sxs-lookup"><span data-stu-id="f2bb2-196">SetImGroup operation</span></span>](setimgroup-operation.md)
+[<span data-ttu-id="6e9ad-196">SetImGroup 操作</span><span class="sxs-lookup"><span data-stu-id="6e9ad-196">SetImGroup operation</span></span>](setimgroup-operation.md)
 
 
-[<span data-ttu-id="f2bb2-197">Exchange 内の EWS のユーザーと連絡先</span><span class="sxs-lookup"><span data-stu-id="f2bb2-197">People and contacts in EWS in Exchange</span></span>](http://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
+[<span data-ttu-id="6e9ad-197">Exchange 内の EWS のユーザーと連絡先</span><span class="sxs-lookup"><span data-stu-id="6e9ad-197">People and contacts in EWS in Exchange</span></span>](https://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
 

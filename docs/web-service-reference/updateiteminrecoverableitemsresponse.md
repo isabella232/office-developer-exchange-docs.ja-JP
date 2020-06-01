@@ -1,5 +1,5 @@
 ---
-title: UpdateItemInRecoverableItemsResponse
+title: Updateitemin回復 Ableitemsresponse
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 2f61b038-eba0-40fc-8af2-c3db5cc5a420
-description: UpdateItemInRecoverableItemsResponse 要素は、UpdateItemInRecoverableItems 要求への応答を指定します。
-ms.openlocfilehash: 2cb9bcb2752599a546c1391d6ea306735b3b0c78
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Updateitemin/Ableableitemsresponse 要素は、Updateitemin回復可能なアイテムの要求への応答を指定します。
+ms.openlocfilehash: 02e030774949e895bc89579cb9364d08c7844ce3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839866"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466557"
 ---
-# <a name="updateiteminrecoverableitemsresponse"></a><span data-ttu-id="9f80e-103">UpdateItemInRecoverableItemsResponse</span><span class="sxs-lookup"><span data-stu-id="9f80e-103">UpdateItemInRecoverableItemsResponse</span></span>
+# <a name="updateiteminrecoverableitemsresponse"></a><span data-ttu-id="c1715-103">Updateitemin回復 Ableitemsresponse</span><span class="sxs-lookup"><span data-stu-id="c1715-103">UpdateItemInRecoverableItemsResponse</span></span>
 
-<span data-ttu-id="9f80e-104">**UpdateItemInRecoverableItemsResponse**要素は、 **UpdateItemInRecoverableItems**要求への応答を指定します。</span><span class="sxs-lookup"><span data-stu-id="9f80e-104">The **UpdateItemInRecoverableItemsResponse** element specifies the response to an **UpdateItemInRecoverableItems** request.</span></span> 
+<span data-ttu-id="c1715-104">**Updateitemin/Ableableitemsresponse**要素は、 **updateitemin回復**可能なアイテムの要求への応答を指定します。</span><span class="sxs-lookup"><span data-stu-id="c1715-104">The **UpdateItemInRecoverableItemsResponse** element specifies the response to an **UpdateItemInRecoverableItems** request.</span></span> 
   
 ```XML
 <UpdateItemInRecoverableItemsResponse>
@@ -31,36 +31,36 @@ ms.locfileid: "19839866"
 </UpdateItemInRecoverableItemsResponse>
 ```
 
- <span data-ttu-id="9f80e-105">**UpdateItemInRecoverableItemsResponseMessageType**</span><span class="sxs-lookup"><span data-stu-id="9f80e-105">**UpdateItemInRecoverableItemsResponseMessageType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="9f80e-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="9f80e-106">Attributes and elements</span></span>
+ <span data-ttu-id="c1715-105">**Updateitemin回復 Ableitemsresponsemessagetype**</span><span class="sxs-lookup"><span data-stu-id="c1715-105">**UpdateItemInRecoverableItemsResponseMessageType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="c1715-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="c1715-106">Attributes and elements</span></span>
 
-<span data-ttu-id="9f80e-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="9f80e-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="c1715-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="c1715-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="9f80e-108">属性</span><span class="sxs-lookup"><span data-stu-id="9f80e-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="c1715-108">属性</span><span class="sxs-lookup"><span data-stu-id="c1715-108">Attributes</span></span>
 
-<span data-ttu-id="9f80e-109">なし。</span><span class="sxs-lookup"><span data-stu-id="9f80e-109">None.</span></span>
+<span data-ttu-id="c1715-109">なし。</span><span class="sxs-lookup"><span data-stu-id="c1715-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="9f80e-110">子要素</span><span class="sxs-lookup"><span data-stu-id="9f80e-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="c1715-110">子要素</span><span class="sxs-lookup"><span data-stu-id="c1715-110">Child elements</span></span>
 
-<span data-ttu-id="9f80e-111">[メッセージ テキスト](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [アイテム](items.md) | [添付ファイル](attachments-ex15websvcsotherref.md) | [ConflictResults](conflictresults.md)</span><span class="sxs-lookup"><span data-stu-id="9f80e-111">[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [Items](items.md) | [Attachments](attachments-ex15websvcsotherref.md) | [ConflictResults](conflictresults.md)</span></span>
+<span data-ttu-id="c1715-111">[Messagetext](messagetext.md)  | 応答[Secmode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [アイテム](items.md)  | [添付ファイル](attachments-ex15websvcsotherref.md)  | [ConflictResults](conflictresults.md)</span><span class="sxs-lookup"><span data-stu-id="c1715-111">[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [Items](items.md) | [Attachments](attachments-ex15websvcsotherref.md) | [ConflictResults](conflictresults.md)</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="9f80e-112">親要素</span><span class="sxs-lookup"><span data-stu-id="9f80e-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="c1715-112">親要素</span><span class="sxs-lookup"><span data-stu-id="c1715-112">Parent elements</span></span>
 
-<span data-ttu-id="9f80e-113">なし。</span><span class="sxs-lookup"><span data-stu-id="9f80e-113">None.</span></span>
+<span data-ttu-id="c1715-113">なし。</span><span class="sxs-lookup"><span data-stu-id="c1715-113">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="9f80e-114">備考</span><span class="sxs-lookup"><span data-stu-id="9f80e-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c1715-114">注釈</span><span class="sxs-lookup"><span data-stu-id="c1715-114">Remarks</span></span>
 
-<span data-ttu-id="9f80e-115">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="9f80e-115">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="c1715-115">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="c1715-115">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="9f80e-116">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="9f80e-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="c1715-116">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="c1715-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="9f80e-117">要素情報</span><span class="sxs-lookup"><span data-stu-id="9f80e-117">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="c1715-117">要素の情報</span><span class="sxs-lookup"><span data-stu-id="c1715-117">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="9f80e-118">名前空間</span><span class="sxs-lookup"><span data-stu-id="9f80e-118">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="9f80e-119">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="9f80e-119">Schema name</span></span>  <br/> |<span data-ttu-id="9f80e-120">メッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="9f80e-120">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="9f80e-121">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="9f80e-121">Validation file</span></span>  <br/> |<span data-ttu-id="9f80e-122">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="9f80e-122">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="9f80e-123">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="9f80e-123">Can be empty</span></span>  <br/> |<span data-ttu-id="9f80e-124">false</span><span class="sxs-lookup"><span data-stu-id="9f80e-124">false</span></span>  <br/> |
+|<span data-ttu-id="c1715-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="c1715-118">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="c1715-119">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="c1715-119">Schema name</span></span>  <br/> |<span data-ttu-id="c1715-120">メッセージスキーマ</span><span class="sxs-lookup"><span data-stu-id="c1715-120">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="c1715-121">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="c1715-121">Validation file</span></span>  <br/> |<span data-ttu-id="c1715-122">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="c1715-122">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="c1715-123">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="c1715-123">Can be empty</span></span>  <br/> |<span data-ttu-id="c1715-124">false</span><span class="sxs-lookup"><span data-stu-id="c1715-124">false</span></span>  <br/> |
    
 

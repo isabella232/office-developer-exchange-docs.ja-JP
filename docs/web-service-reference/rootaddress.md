@@ -11,64 +11,64 @@ api_name:
 api_type:
 - schema
 ms.assetid: 1dbb130a-e4eb-4baf-ae07-2568a8375bff
-description: RootAddress 要素は、RecipientTrackingEvent イベントのイベントを開始する最初のアドレスを表します。
-ms.openlocfilehash: afe544d6ee8dea4cb416ad033ed2cd68976ec087
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: RootAddress 要素は、受信者 Trackingevent イベントのイベントを開始する最初のアドレスを表します。
+ms.openlocfilehash: e020ff07f271bdde6c2a4172141097dcba66f64e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833250"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465094"
 ---
-# <a name="rootaddress"></a><span data-ttu-id="8787c-103">RootAddress</span><span class="sxs-lookup"><span data-stu-id="8787c-103">RootAddress</span></span>
+# <a name="rootaddress"></a><span data-ttu-id="5a7e7-103">RootAddress</span><span class="sxs-lookup"><span data-stu-id="5a7e7-103">RootAddress</span></span>
 
-<span data-ttu-id="8787c-104">**RootAddress**要素は、 [RecipientTrackingEvent](recipienttrackingevent.md)イベントのイベントを開始する最初のアドレスを表します。</span><span class="sxs-lookup"><span data-stu-id="8787c-104">The **RootAddress** element represents the first address that starts the event for a [RecipientTrackingEvent](recipienttrackingevent.md) event.</span></span> 
+<span data-ttu-id="5a7e7-104">**Rootaddress**要素は、[受信者 trackingevent](recipienttrackingevent.md)イベントのイベントを開始する最初のアドレスを表します。</span><span class="sxs-lookup"><span data-stu-id="5a7e7-104">The **RootAddress** element represents the first address that starts the event for a [RecipientTrackingEvent](recipienttrackingevent.md) event.</span></span> 
   
 ```xml
 <RootAddress/>
 ```
 
- <span data-ttu-id="8787c-105">**NonEmptyStringType**</span><span class="sxs-lookup"><span data-stu-id="8787c-105">**NonEmptyStringType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="8787c-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="8787c-106">Attributes and elements</span></span>
+ <span data-ttu-id="5a7e7-105">**NonEmptyStringType**</span><span class="sxs-lookup"><span data-stu-id="5a7e7-105">**NonEmptyStringType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="5a7e7-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="5a7e7-106">Attributes and elements</span></span>
 
-<span data-ttu-id="8787c-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="8787c-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="5a7e7-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="5a7e7-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="8787c-108">属性</span><span class="sxs-lookup"><span data-stu-id="8787c-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="5a7e7-108">属性</span><span class="sxs-lookup"><span data-stu-id="5a7e7-108">Attributes</span></span>
 
-<span data-ttu-id="8787c-109">なし。</span><span class="sxs-lookup"><span data-stu-id="8787c-109">None.</span></span>
+<span data-ttu-id="5a7e7-109">なし。</span><span class="sxs-lookup"><span data-stu-id="5a7e7-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="8787c-110">子要素</span><span class="sxs-lookup"><span data-stu-id="8787c-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="5a7e7-110">子要素</span><span class="sxs-lookup"><span data-stu-id="5a7e7-110">Child elements</span></span>
 
-<span data-ttu-id="8787c-111">なし。</span><span class="sxs-lookup"><span data-stu-id="8787c-111">None.</span></span>
+<span data-ttu-id="5a7e7-111">なし。</span><span class="sxs-lookup"><span data-stu-id="5a7e7-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="8787c-112">親要素</span><span class="sxs-lookup"><span data-stu-id="8787c-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="5a7e7-112">親要素</span><span class="sxs-lookup"><span data-stu-id="5a7e7-112">Parent elements</span></span>
 
-|<span data-ttu-id="8787c-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="8787c-113">**Element**</span></span>|<span data-ttu-id="8787c-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="8787c-114">**Description**</span></span>|
+|<span data-ttu-id="5a7e7-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="5a7e7-113">**Element**</span></span>|<span data-ttu-id="5a7e7-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="5a7e7-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="8787c-115">RecipientTrackingEvent</span><span class="sxs-lookup"><span data-stu-id="8787c-115">RecipientTrackingEvent</span></span>](recipienttrackingevent.md) <br/> |<span data-ttu-id="8787c-116">受信者の 1 つのイベントの情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="8787c-116">Contains information for a single event for a recipient.</span></span>  <br/> |
+|[<span data-ttu-id="5a7e7-115">受信者 Trackingイベント</span><span class="sxs-lookup"><span data-stu-id="5a7e7-115">RecipientTrackingEvent</span></span>](recipienttrackingevent.md) <br/> |<span data-ttu-id="5a7e7-116">受信者に対する1つのイベントに関する情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="5a7e7-116">Contains information for a single event for a recipient.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="8787c-117">テキスト値</span><span class="sxs-lookup"><span data-stu-id="8787c-117">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="5a7e7-117">テキスト値</span><span class="sxs-lookup"><span data-stu-id="5a7e7-117">Text value</span></span>
 
-<span data-ttu-id="8787c-118">テキスト値は、追跡イベントを開始するアドレスです。</span><span class="sxs-lookup"><span data-stu-id="8787c-118">The text value is the address that starts the tracking event.</span></span>
+<span data-ttu-id="5a7e7-118">テキスト値は、追跡イベントを開始するアドレスです。</span><span class="sxs-lookup"><span data-stu-id="5a7e7-118">The text value is the address that starts the tracking event.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="8787c-119">備考</span><span class="sxs-lookup"><span data-stu-id="8787c-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="5a7e7-119">注釈</span><span class="sxs-lookup"><span data-stu-id="5a7e7-119">Remarks</span></span>
 
-<span data-ttu-id="8787c-120">この要素を記述するスキーマは、Exchange Web Services.This の要素がホストをで Exchange Server 2010 Service Pack 1 (SP1) を導入する IIS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="8787c-120">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.This element was introduced in Exchange Server 2010 Service Pack 1 (SP1).</span></span>
+<span data-ttu-id="5a7e7-120">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。</span><span class="sxs-lookup"><span data-stu-id="5a7e7-120">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.This element was introduced in Exchange Server 2010 Service Pack 1 (SP1).</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="8787c-121">要素情報</span><span class="sxs-lookup"><span data-stu-id="8787c-121">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="5a7e7-121">要素の情報</span><span class="sxs-lookup"><span data-stu-id="5a7e7-121">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="8787c-122">名前空間</span><span class="sxs-lookup"><span data-stu-id="8787c-122">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="8787c-123">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="8787c-123">Schema Name</span></span>  <br/> |<span data-ttu-id="8787c-124">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="8787c-124">Types schema</span></span>  <br/> |
-|<span data-ttu-id="8787c-125">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="8787c-125">Validation File</span></span>  <br/> |<span data-ttu-id="8787c-126">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="8787c-126">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="8787c-127">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="8787c-127">Can be Empty</span></span>  <br/> |<span data-ttu-id="8787c-128">False</span><span class="sxs-lookup"><span data-stu-id="8787c-128">False</span></span>  <br/> |
+|<span data-ttu-id="5a7e7-122">Namespace</span><span class="sxs-lookup"><span data-stu-id="5a7e7-122">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="5a7e7-123">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="5a7e7-123">Schema Name</span></span>  <br/> |<span data-ttu-id="5a7e7-124">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="5a7e7-124">Types schema</span></span>  <br/> |
+|<span data-ttu-id="5a7e7-125">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="5a7e7-125">Validation File</span></span>  <br/> |<span data-ttu-id="5a7e7-126">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="5a7e7-126">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="5a7e7-127">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="5a7e7-127">Can be Empty</span></span>  <br/> |<span data-ttu-id="5a7e7-128">正しくない</span><span class="sxs-lookup"><span data-stu-id="5a7e7-128">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="8787c-129">関連項目</span><span class="sxs-lookup"><span data-stu-id="8787c-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5a7e7-129">関連項目</span><span class="sxs-lookup"><span data-stu-id="5a7e7-129">See also</span></span>
 
 
 
-[<span data-ttu-id="8787c-130">GetMessageTrackingReport 操作</span><span class="sxs-lookup"><span data-stu-id="8787c-130">GetMessageTrackingReport operation</span></span>](getmessagetrackingreport-operation.md)
+[<span data-ttu-id="5a7e7-130">GetMessageTrackingReport 操作</span><span class="sxs-lookup"><span data-stu-id="5a7e7-130">GetMessageTrackingReport operation</span></span>](getmessagetrackingreport-operation.md)
 
 
-- [<span data-ttu-id="8787c-131">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="8787c-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="5a7e7-131">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="5a7e7-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

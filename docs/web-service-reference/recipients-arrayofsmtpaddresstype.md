@@ -11,62 +11,62 @@ api_name:
 api_type:
 - schema
 ms.assetid: cf68417d-85cf-49e0-857a-f987d3675344
-description: 宛先の要素は、メッセージの受信者の配列を指定します。
-ms.openlocfilehash: 8490988043b1e06fd3a8f553fcefaeb2e90e9d31
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Recipients 要素は、メッセージの受信者の配列を指定します。
+ms.openlocfilehash: 4c2478a81836c2e52baad9c928d112108679b837
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832988"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465507"
 ---
-# <a name="recipients-arrayofsmtpaddresstype"></a><span data-ttu-id="d2a61-103">受信者 (ArrayOfSmtpAddressType)</span><span class="sxs-lookup"><span data-stu-id="d2a61-103">Recipients (ArrayOfSmtpAddressType)</span></span>
+# <a name="recipients-arrayofsmtpaddresstype"></a><span data-ttu-id="d06de-103">受信者 (ArrayOfSmtpAddressType)</span><span class="sxs-lookup"><span data-stu-id="d06de-103">Recipients (ArrayOfSmtpAddressType)</span></span>
 
-<span data-ttu-id="d2a61-104">**宛先**の要素は、メッセージの受信者の配列を指定します。</span><span class="sxs-lookup"><span data-stu-id="d2a61-104">The **Recipients** element specifies an array of recipients of a message.</span></span> 
+<span data-ttu-id="d06de-104">**Recipients**要素は、メッセージの受信者の配列を指定します。</span><span class="sxs-lookup"><span data-stu-id="d06de-104">The **Recipients** element specifies an array of recipients of a message.</span></span> 
   
 ```xml
 <Recipients>   <SmtpAddress/></Recipients>
 ```
 
- <span data-ttu-id="d2a61-105">**ArrayOfSmtpAddressType**</span><span class="sxs-lookup"><span data-stu-id="d2a61-105">**ArrayOfSmtpAddressType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="d2a61-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="d2a61-106">Attributes and elements</span></span>
+ <span data-ttu-id="d06de-105">**ArrayOfSmtpAddressType**</span><span class="sxs-lookup"><span data-stu-id="d06de-105">**ArrayOfSmtpAddressType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="d06de-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="d06de-106">Attributes and elements</span></span>
 
-<span data-ttu-id="d2a61-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="d2a61-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="d06de-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="d06de-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="d2a61-108">属性</span><span class="sxs-lookup"><span data-stu-id="d2a61-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="d06de-108">属性</span><span class="sxs-lookup"><span data-stu-id="d06de-108">Attributes</span></span>
 
-<span data-ttu-id="d2a61-109">なし。</span><span class="sxs-lookup"><span data-stu-id="d2a61-109">None.</span></span>
+<span data-ttu-id="d06de-109">なし。</span><span class="sxs-lookup"><span data-stu-id="d06de-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="d2a61-110">子要素</span><span class="sxs-lookup"><span data-stu-id="d2a61-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="d06de-110">子要素</span><span class="sxs-lookup"><span data-stu-id="d06de-110">Child elements</span></span>
 
-|<span data-ttu-id="d2a61-111">**要素**</span><span class="sxs-lookup"><span data-stu-id="d2a61-111">**Element**</span></span>|<span data-ttu-id="d2a61-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="d2a61-112">**Description**</span></span>|
+|<span data-ttu-id="d06de-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="d06de-111">**Element**</span></span>|<span data-ttu-id="d06de-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="d06de-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="d2a61-113">SmtpAddress</span><span class="sxs-lookup"><span data-stu-id="d2a61-113">SmtpAddress</span></span>](smtpaddress.md) <br/> |<span data-ttu-id="d2a61-114">予定表または連絡先の共有の依頼の受信者の簡易メール転送プロトコル (SMTP) アドレスを表します。</span><span class="sxs-lookup"><span data-stu-id="d2a61-114">Represents the Simple Mail Transfer Protocol (SMTP) recipient address of a calendar or contact sharing request.</span></span>  <br/> |
+|[<span data-ttu-id="d06de-113">SmtpAddress</span><span class="sxs-lookup"><span data-stu-id="d06de-113">SmtpAddress</span></span>](smtpaddress.md) <br/> |<span data-ttu-id="d06de-114">予定表または連絡先の共有要求の簡易メール転送プロトコル (SMTP) 受信者アドレスを表します。</span><span class="sxs-lookup"><span data-stu-id="d06de-114">Represents the Simple Mail Transfer Protocol (SMTP) recipient address of a calendar or contact sharing request.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="d2a61-115">親要素</span><span class="sxs-lookup"><span data-stu-id="d2a61-115">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="d06de-115">親要素</span><span class="sxs-lookup"><span data-stu-id="d06de-115">Parent elements</span></span>
 
-|<span data-ttu-id="d2a61-116">**要素**</span><span class="sxs-lookup"><span data-stu-id="d2a61-116">**Element**</span></span>|<span data-ttu-id="d2a61-117">**説明**</span><span class="sxs-lookup"><span data-stu-id="d2a61-117">**Description**</span></span>|
+|<span data-ttu-id="d06de-116">**要素**</span><span class="sxs-lookup"><span data-stu-id="d06de-116">**Element**</span></span>|<span data-ttu-id="d06de-117">**説明**</span><span class="sxs-lookup"><span data-stu-id="d06de-117">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="d2a61-118">GetSharingMetadata</span><span class="sxs-lookup"><span data-stu-id="d2a61-118">GetSharingMetadata</span></span>](getsharingmetadata.md) <br/> |<span data-ttu-id="d2a61-119">共有への招待を識別する不透明な認証トークンを取得する要求を定義します。</span><span class="sxs-lookup"><span data-stu-id="d2a61-119">Defines a request to get an opaque authentication token that identifies the sharing invitation.</span></span>  <br/> |
+|[<span data-ttu-id="d06de-118">GetSharingMetadata</span><span class="sxs-lookup"><span data-stu-id="d06de-118">GetSharingMetadata</span></span>](getsharingmetadata.md) <br/> |<span data-ttu-id="d06de-119">共有への招待を識別する非透過の認証トークンを取得する要求を定義します。</span><span class="sxs-lookup"><span data-stu-id="d06de-119">Defines a request to get an opaque authentication token that identifies the sharing invitation.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="d2a61-120">備考</span><span class="sxs-lookup"><span data-stu-id="d2a61-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d06de-120">注釈</span><span class="sxs-lookup"><span data-stu-id="d06de-120">Remarks</span></span>
 
-<span data-ttu-id="d2a61-121">この要素を記述するスキーマは、Microsoft Exchange Server を実行しているコンピューターの Exchange Web サービスをホストにクライアント アクセス サーバーの役割がインストールされている IIS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="d2a61-121">The schema that describes this element is located in the IIS Virtual directory that hosts Exchange Web Services of the computer that is running Microsoft Exchange Server that has the Client Access server role installed.</span></span>
+<span data-ttu-id="d06de-121">この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="d06de-121">The schema that describes this element is located in the IIS Virtual directory that hosts Exchange Web Services of the computer that is running Microsoft Exchange Server that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="d2a61-122">要素情報</span><span class="sxs-lookup"><span data-stu-id="d2a61-122">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="d06de-122">要素の情報</span><span class="sxs-lookup"><span data-stu-id="d06de-122">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="d2a61-123">名前空間</span><span class="sxs-lookup"><span data-stu-id="d2a61-123">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="d2a61-124">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="d2a61-124">Schema Name</span></span>  <br/> |<span data-ttu-id="d2a61-125">メッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="d2a61-125">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="d2a61-126">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="d2a61-126">Validation File</span></span>  <br/> |<span data-ttu-id="d2a61-127">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="d2a61-127">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="d2a61-128">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="d2a61-128">Can be Empty</span></span>  <br/> |<span data-ttu-id="d2a61-129">False</span><span class="sxs-lookup"><span data-stu-id="d2a61-129">False</span></span>  <br/> |
+|<span data-ttu-id="d06de-123">Namespace</span><span class="sxs-lookup"><span data-stu-id="d06de-123">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="d06de-124">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="d06de-124">Schema Name</span></span>  <br/> |<span data-ttu-id="d06de-125">メッセージスキーマ</span><span class="sxs-lookup"><span data-stu-id="d06de-125">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="d06de-126">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="d06de-126">Validation File</span></span>  <br/> |<span data-ttu-id="d06de-127">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="d06de-127">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="d06de-128">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="d06de-128">Can be Empty</span></span>  <br/> |<span data-ttu-id="d06de-129">正しくない</span><span class="sxs-lookup"><span data-stu-id="d06de-129">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="d2a61-130">関連項目</span><span class="sxs-lookup"><span data-stu-id="d2a61-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d06de-130">関連項目</span><span class="sxs-lookup"><span data-stu-id="d06de-130">See also</span></span>
 
 
 
-[<span data-ttu-id="d2a61-131">GetSharingMetadata 操作</span><span class="sxs-lookup"><span data-stu-id="d2a61-131">GetSharingMetadata operation</span></span>](getsharingmetadata-operation.md)
+[<span data-ttu-id="d06de-131">GetSharingMetadata 操作</span><span class="sxs-lookup"><span data-stu-id="d06de-131">GetSharingMetadata operation</span></span>](getsharingmetadata-operation.md)
 
 
-- [<span data-ttu-id="d2a61-132">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="d2a61-132">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="d06de-132">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="d06de-132">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

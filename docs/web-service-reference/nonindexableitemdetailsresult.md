@@ -1,5 +1,5 @@
 ---
-title: NonIndexableItemDetailsResult
+title: Nonindexableitemの取得結果
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 7cbdbc21-5405-4cbc-8ca0-d7b0257927aa
-description: NonIndexableItemDetailsResult 要素は、GetNonIndexableItemDetails の WSDL 操作の結果を指定します。
-ms.openlocfilehash: 6e271f2cf0e37f26b945332c94167b6a42354115
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Nonindexableitem詳細 Result 要素は、GetNonIndexableItemDetails WSDL 操作の結果を指定します。
+ms.openlocfilehash: 647f58b5e7285af70bbfb3a203ba71c9a3ccebcc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832535"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465444"
 ---
-# <a name="nonindexableitemdetailsresult"></a><span data-ttu-id="df082-103">NonIndexableItemDetailsResult</span><span class="sxs-lookup"><span data-stu-id="df082-103">NonIndexableItemDetailsResult</span></span>
+# <a name="nonindexableitemdetailsresult"></a><span data-ttu-id="80ce6-103">Nonindexableitemの取得結果</span><span class="sxs-lookup"><span data-stu-id="80ce6-103">NonIndexableItemDetailsResult</span></span>
 
-<span data-ttu-id="df082-104">**NonIndexableItemDetailsResult**要素は、 **GetNonIndexableItemDetails**の WSDL 操作の結果を指定します。</span><span class="sxs-lookup"><span data-stu-id="df082-104">The **NonIndexableItemDetailsResult** element specifies the results of the **GetNonIndexableItemDetails** WSDL operation.</span></span> 
+<span data-ttu-id="80ce6-104">**Nonindexableitem詳細 result**要素は、 **getnonindexableitemdetails** WSDL 操作の結果を指定します。</span><span class="sxs-lookup"><span data-stu-id="80ce6-104">The **NonIndexableItemDetailsResult** element specifies the results of the **GetNonIndexableItemDetails** WSDL operation.</span></span> 
   
 ```XML
 <NonIndexableItemDetailsResult>
@@ -26,44 +26,44 @@ ms.locfileid: "19832535"
 </NonIndexableItemDetailsResult>
 ```
 
- <span data-ttu-id="df082-105">**NonIndexableItemDetailResultType**</span><span class="sxs-lookup"><span data-stu-id="df082-105">**NonIndexableItemDetailResultType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="df082-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="df082-106">Attributes and elements</span></span>
+ <span data-ttu-id="80ce6-105">**Nonindexableitemの Resulttype**</span><span class="sxs-lookup"><span data-stu-id="80ce6-105">**NonIndexableItemDetailResultType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="80ce6-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="80ce6-106">Attributes and elements</span></span>
 
-<span data-ttu-id="df082-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="df082-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="80ce6-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="80ce6-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="df082-108">属性</span><span class="sxs-lookup"><span data-stu-id="df082-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="80ce6-108">属性</span><span class="sxs-lookup"><span data-stu-id="80ce6-108">Attributes</span></span>
 
-<span data-ttu-id="df082-109">なし。</span><span class="sxs-lookup"><span data-stu-id="df082-109">None.</span></span>
+<span data-ttu-id="80ce6-109">なし。</span><span class="sxs-lookup"><span data-stu-id="80ce6-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="df082-110">子要素</span><span class="sxs-lookup"><span data-stu-id="df082-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="80ce6-110">子要素</span><span class="sxs-lookup"><span data-stu-id="80ce6-110">Child elements</span></span>
 
-<span data-ttu-id="df082-111">[アイテム (ArrayOfNonIndexableItemDetailsType)](items-arrayofnonindexableitemdetailstype.md) 、 [FailedMailboxes](failedmailboxes.md)</span><span class="sxs-lookup"><span data-stu-id="df082-111">[Items (ArrayOfNonIndexableItemDetailsType)](items-arrayofnonindexableitemdetailstype.md) , [FailedMailboxes](failedmailboxes.md)</span></span>
+<span data-ttu-id="80ce6-111">[アイテム (ArrayOfNonIndexableItemDetailsType)](items-arrayofnonindexableitemdetailstype.md) 、[失敗したメールボックス](failedmailboxes.md)</span><span class="sxs-lookup"><span data-stu-id="80ce6-111">[Items (ArrayOfNonIndexableItemDetailsType)](items-arrayofnonindexableitemdetailstype.md) , [FailedMailboxes](failedmailboxes.md)</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="df082-112">親要素</span><span class="sxs-lookup"><span data-stu-id="df082-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="80ce6-112">親要素</span><span class="sxs-lookup"><span data-stu-id="80ce6-112">Parent elements</span></span>
 
-<span data-ttu-id="df082-113">[GetNonIndexableItemDetailsResponse](getnonindexableitemdetailsresponse.md) 、 [GetNonIndexableItemDetailsResponseMessage](getnonindexableitemdetailsresponsemessage.md)</span><span class="sxs-lookup"><span data-stu-id="df082-113">[GetNonIndexableItemDetailsResponse](getnonindexableitemdetailsresponse.md) , [GetNonIndexableItemDetailsResponseMessage](getnonindexableitemdetailsresponsemessage.md)</span></span>
+<span data-ttu-id="80ce6-113">[GetnonindexableitemGetNonIndexableItemDetailsResponseMessage の応答](getnonindexableitemdetailsresponse.md)、 [GetNonIndexableItemDetailsResponseMessage](getnonindexableitemdetailsresponsemessage.md)</span><span class="sxs-lookup"><span data-stu-id="80ce6-113">[GetNonIndexableItemDetailsResponse](getnonindexableitemdetailsresponse.md) , [GetNonIndexableItemDetailsResponseMessage](getnonindexableitemdetailsresponsemessage.md)</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="df082-114">備考</span><span class="sxs-lookup"><span data-stu-id="df082-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="80ce6-114">注釈</span><span class="sxs-lookup"><span data-stu-id="80ce6-114">Remarks</span></span>
 
-<span data-ttu-id="df082-115">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="df082-115">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="80ce6-115">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="80ce6-115">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="df082-116">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="df082-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="80ce6-116">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="80ce6-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="df082-117">要素情報</span><span class="sxs-lookup"><span data-stu-id="df082-117">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="80ce6-117">要素の情報</span><span class="sxs-lookup"><span data-stu-id="80ce6-117">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="df082-118">名前空間</span><span class="sxs-lookup"><span data-stu-id="df082-118">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="df082-119">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="df082-119">Schema name</span></span>  <br/> |<span data-ttu-id="df082-120">メッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="df082-120">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="df082-121">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="df082-121">Validation file</span></span>  <br/> |<span data-ttu-id="df082-122">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="df082-122">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="df082-123">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="df082-123">Can be empty</span></span>  <br/> |<span data-ttu-id="df082-124">False</span><span class="sxs-lookup"><span data-stu-id="df082-124">False</span></span>  <br/> |
+|<span data-ttu-id="80ce6-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="80ce6-118">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="80ce6-119">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="80ce6-119">Schema name</span></span>  <br/> |<span data-ttu-id="80ce6-120">メッセージスキーマ</span><span class="sxs-lookup"><span data-stu-id="80ce6-120">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="80ce6-121">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="80ce6-121">Validation file</span></span>  <br/> |<span data-ttu-id="80ce6-122">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="80ce6-122">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="80ce6-123">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="80ce6-123">Can be empty</span></span>  <br/> |<span data-ttu-id="80ce6-124">正しくない</span><span class="sxs-lookup"><span data-stu-id="80ce6-124">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="df082-125">関連項目</span><span class="sxs-lookup"><span data-stu-id="df082-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="80ce6-125">関連項目</span><span class="sxs-lookup"><span data-stu-id="80ce6-125">See also</span></span>
 
 
 
-[<span data-ttu-id="df082-126">GetNonIndexableItemDetails 操作</span><span class="sxs-lookup"><span data-stu-id="df082-126">GetNonIndexableItemDetails operation</span></span>](getnonindexableitemdetails-operation.md)
+[<span data-ttu-id="80ce6-126">GetNonIndexableItemDetails 操作</span><span class="sxs-lookup"><span data-stu-id="80ce6-126">GetNonIndexableItemDetails operation</span></span>](getnonindexableitemdetails-operation.md)
 
 
-- [<span data-ttu-id="df082-127">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="df082-127">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="80ce6-127">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="80ce6-127">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

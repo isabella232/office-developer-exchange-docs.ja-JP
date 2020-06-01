@@ -11,21 +11,21 @@ api_name:
 api_type:
 - schema
 ms.assetid: ea37a2b5-e2d1-4089-960f-7014b9535a50
-description: エラー要素には、Web サービスから返されるエラーを格納するプロパティ バッグが含まれています。
-ms.openlocfilehash: a029492c1e3c11cc31d3501bd4ea0024ef8ecb91
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Errors 要素には、Web サービスによって返されるエラーを格納するためのプロパティバッグが含まれています。
+ms.openlocfilehash: a2f888a81791fe0b57eee6123c4b0f5f609f3e75
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760333"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465906"
 ---
-# <a name="errors"></a><span data-ttu-id="f5e03-103">エラー</span><span class="sxs-lookup"><span data-stu-id="f5e03-103">Errors</span></span>
+# <a name="errors"></a><span data-ttu-id="885bb-103">エラー</span><span class="sxs-lookup"><span data-stu-id="885bb-103">Errors</span></span>
 
-<span data-ttu-id="f5e03-104">**エラー**要素には、Web サービスから返されるエラーを格納するプロパティ バッグが含まれています。</span><span class="sxs-lookup"><span data-stu-id="f5e03-104">The **Errors** element contains a property bag to store errors that are returned through the Web service.</span></span> 
+<span data-ttu-id="885bb-104">**Errors**要素には、Web サービスによって返されるエラーを格納するためのプロパティバッグが含まれています。</span><span class="sxs-lookup"><span data-stu-id="885bb-104">The **Errors** element contains a property bag to store errors that are returned through the Web service.</span></span> 
   
-[<span data-ttu-id="f5e03-105">FindMessageTrackingReport</span><span class="sxs-lookup"><span data-stu-id="f5e03-105">FindMessageTrackingReport</span></span>](findmessagetrackingreport.md)
+[<span data-ttu-id="885bb-105">FindMessageTrackingReport</span><span class="sxs-lookup"><span data-stu-id="885bb-105">FindMessageTrackingReport</span></span>](findmessagetrackingreport.md)
   
-[<span data-ttu-id="f5e03-106">エラー</span><span class="sxs-lookup"><span data-stu-id="f5e03-106">Errors</span></span>](errors-ex15websvcsotherref.md)
+[<span data-ttu-id="885bb-106">エラー</span><span class="sxs-lookup"><span data-stu-id="885bb-106">Errors</span></span>](errors-ex15websvcsotherref.md)
   
 ```xml
 <Errors>
@@ -33,53 +33,53 @@ ms.locfileid: "19760333"
 </Errors>
 ```
 
- <span data-ttu-id="f5e03-107">**ArrayOfArraysOfTrackingPropertiesType**</span><span class="sxs-lookup"><span data-stu-id="f5e03-107">**ArrayOfArraysOfTrackingPropertiesType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="f5e03-108">属性および要素</span><span class="sxs-lookup"><span data-stu-id="f5e03-108">Attributes and elements</span></span>
+ <span data-ttu-id="885bb-107">**ArrayOfArraysOfTrackingPropertiesType**</span><span class="sxs-lookup"><span data-stu-id="885bb-107">**ArrayOfArraysOfTrackingPropertiesType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="885bb-108">属性と要素</span><span class="sxs-lookup"><span data-stu-id="885bb-108">Attributes and elements</span></span>
 
-<span data-ttu-id="f5e03-109">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="f5e03-109">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="885bb-109">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="885bb-109">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="f5e03-110">属性</span><span class="sxs-lookup"><span data-stu-id="f5e03-110">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="885bb-110">属性</span><span class="sxs-lookup"><span data-stu-id="885bb-110">Attributes</span></span>
 
-<span data-ttu-id="f5e03-111">なし。</span><span class="sxs-lookup"><span data-stu-id="f5e03-111">None.</span></span>
+<span data-ttu-id="885bb-111">なし。</span><span class="sxs-lookup"><span data-stu-id="885bb-111">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="f5e03-112">子要素</span><span class="sxs-lookup"><span data-stu-id="f5e03-112">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="885bb-112">子要素</span><span class="sxs-lookup"><span data-stu-id="885bb-112">Child elements</span></span>
 
-|<span data-ttu-id="f5e03-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="f5e03-113">**Element**</span></span>|<span data-ttu-id="f5e03-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="f5e03-114">**Description**</span></span>|
+|<span data-ttu-id="885bb-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="885bb-113">**Element**</span></span>|<span data-ttu-id="885bb-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="885bb-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="f5e03-115">プロパティ (ArrayOfTrackingPropertiesType)</span><span class="sxs-lookup"><span data-stu-id="f5e03-115">Properties (ArrayOfTrackingPropertiesType)</span></span>](properties-arrayoftrackingpropertiestype.md) <br/> |<span data-ttu-id="f5e03-116">1 つまたは複数の追跡のプロパティの一覧が含まれています。</span><span class="sxs-lookup"><span data-stu-id="f5e03-116">Contains a list of one or more tracking properties.</span></span>  <br/> |
+|[<span data-ttu-id="885bb-115">プロパティ (ArrayOfTrackingPropertiesType)</span><span class="sxs-lookup"><span data-stu-id="885bb-115">Properties (ArrayOfTrackingPropertiesType)</span></span>](properties-arrayoftrackingpropertiestype.md) <br/> |<span data-ttu-id="885bb-116">1つ以上の追跡プロパティの一覧が含まれています。</span><span class="sxs-lookup"><span data-stu-id="885bb-116">Contains a list of one or more tracking properties.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="f5e03-117">親要素</span><span class="sxs-lookup"><span data-stu-id="f5e03-117">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="885bb-117">親要素</span><span class="sxs-lookup"><span data-stu-id="885bb-117">Parent elements</span></span>
 
-|<span data-ttu-id="f5e03-118">**要素**</span><span class="sxs-lookup"><span data-stu-id="f5e03-118">**Element**</span></span>|<span data-ttu-id="f5e03-119">**説明**</span><span class="sxs-lookup"><span data-stu-id="f5e03-119">**Description**</span></span>|
+|<span data-ttu-id="885bb-118">**要素**</span><span class="sxs-lookup"><span data-stu-id="885bb-118">**Element**</span></span>|<span data-ttu-id="885bb-119">**説明**</span><span class="sxs-lookup"><span data-stu-id="885bb-119">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="f5e03-120">FindMessageTrackingReportResponse</span><span class="sxs-lookup"><span data-stu-id="f5e03-120">FindMessageTrackingReportResponse</span></span>](findmessagetrackingreportresponse.md) <br/> |<span data-ttu-id="f5e03-121">状態および 1 つの結果が含まれています[FindMessageTrackingReport の操作](findmessagetrackingreport-operation.md)を要求します。</span><span class="sxs-lookup"><span data-stu-id="f5e03-121">Contains the status and result of a single [FindMessageTrackingReport operation](findmessagetrackingreport-operation.md) request.</span></span>  <br/> |
-|[<span data-ttu-id="f5e03-122">GetMessageTrackingReportResponse</span><span class="sxs-lookup"><span data-stu-id="f5e03-122">GetMessageTrackingReportResponse</span></span>](getmessagetrackingreportresponse.md) <br/> |<span data-ttu-id="f5e03-123">1 つの結果が含まれています[GetMessageTrackingReport の操作](getmessagetrackingreport-operation.md)を要求します。</span><span class="sxs-lookup"><span data-stu-id="f5e03-123">Contains the result of a single [GetMessageTrackingReport operation](getmessagetrackingreport-operation.md) request.</span></span>  <br/> |
+|[<span data-ttu-id="885bb-120">FindMessageTrackingReportResponse</span><span class="sxs-lookup"><span data-stu-id="885bb-120">FindMessageTrackingReportResponse</span></span>](findmessagetrackingreportresponse.md) <br/> |<span data-ttu-id="885bb-121">単一の[Findmessagetrackingreport 操作](findmessagetrackingreport-operation.md)要求の状態と結果を格納します。</span><span class="sxs-lookup"><span data-stu-id="885bb-121">Contains the status and result of a single [FindMessageTrackingReport operation](findmessagetrackingreport-operation.md) request.</span></span>  <br/> |
+|[<span data-ttu-id="885bb-122">GetMessageTrackingReportResponse</span><span class="sxs-lookup"><span data-stu-id="885bb-122">GetMessageTrackingReportResponse</span></span>](getmessagetrackingreportresponse.md) <br/> |<span data-ttu-id="885bb-123">1つの[Getmessagetrackingreport 操作](getmessagetrackingreport-operation.md)要求の結果が含まれています。</span><span class="sxs-lookup"><span data-stu-id="885bb-123">Contains the result of a single [GetMessageTrackingReport operation](getmessagetrackingreport-operation.md) request.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="f5e03-124">テキスト値</span><span class="sxs-lookup"><span data-stu-id="f5e03-124">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="885bb-124">テキスト値</span><span class="sxs-lookup"><span data-stu-id="885bb-124">Text value</span></span>
 
-<span data-ttu-id="f5e03-125">なし。</span><span class="sxs-lookup"><span data-stu-id="f5e03-125">None.</span></span>
+<span data-ttu-id="885bb-125">なし。</span><span class="sxs-lookup"><span data-stu-id="885bb-125">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="f5e03-126">備考</span><span class="sxs-lookup"><span data-stu-id="f5e03-126">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="885bb-126">注釈</span><span class="sxs-lookup"><span data-stu-id="885bb-126">Remarks</span></span>
 
-<span data-ttu-id="f5e03-127">この要素を記述するスキーマは、Exchange Web Services.This の要素がホストをで Exchange Server 2010 Service Pack 1 (SP1) を導入する IIS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="f5e03-127">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.This element was introduced in Exchange Server 2010 Service Pack 1 (SP1).</span></span>
+<span data-ttu-id="885bb-127">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。</span><span class="sxs-lookup"><span data-stu-id="885bb-127">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.This element was introduced in Exchange Server 2010 Service Pack 1 (SP1).</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="f5e03-128">要素情報</span><span class="sxs-lookup"><span data-stu-id="f5e03-128">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="885bb-128">要素の情報</span><span class="sxs-lookup"><span data-stu-id="885bb-128">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="f5e03-129">名前空間</span><span class="sxs-lookup"><span data-stu-id="f5e03-129">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="f5e03-130">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="f5e03-130">Schema Name</span></span>  <br/> |<span data-ttu-id="f5e03-131">メッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="f5e03-131">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="f5e03-132">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="f5e03-132">Validation File</span></span>  <br/> |<span data-ttu-id="f5e03-133">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="f5e03-133">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="f5e03-134">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="f5e03-134">Can be Empty</span></span>  <br/> |<span data-ttu-id="f5e03-135">False</span><span class="sxs-lookup"><span data-stu-id="f5e03-135">False</span></span>  <br/> |
+|<span data-ttu-id="885bb-129">Namespace</span><span class="sxs-lookup"><span data-stu-id="885bb-129">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="885bb-130">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="885bb-130">Schema Name</span></span>  <br/> |<span data-ttu-id="885bb-131">メッセージスキーマ</span><span class="sxs-lookup"><span data-stu-id="885bb-131">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="885bb-132">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="885bb-132">Validation File</span></span>  <br/> |<span data-ttu-id="885bb-133">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="885bb-133">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="885bb-134">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="885bb-134">Can be Empty</span></span>  <br/> |<span data-ttu-id="885bb-135">正しくない</span><span class="sxs-lookup"><span data-stu-id="885bb-135">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="f5e03-136">関連項目</span><span class="sxs-lookup"><span data-stu-id="f5e03-136">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="885bb-136">関連項目</span><span class="sxs-lookup"><span data-stu-id="885bb-136">See also</span></span>
 
 
 
-[<span data-ttu-id="f5e03-137">FindMessageTrackingReport 操作</span><span class="sxs-lookup"><span data-stu-id="f5e03-137">FindMessageTrackingReport operation</span></span>](findmessagetrackingreport-operation.md)
+[<span data-ttu-id="885bb-137">FindMessageTrackingReport 操作</span><span class="sxs-lookup"><span data-stu-id="885bb-137">FindMessageTrackingReport operation</span></span>](findmessagetrackingreport-operation.md)
   
-[<span data-ttu-id="f5e03-138">GetMessageTrackingReport 操作</span><span class="sxs-lookup"><span data-stu-id="f5e03-138">GetMessageTrackingReport operation</span></span>](getmessagetrackingreport-operation.md)
+[<span data-ttu-id="885bb-138">GetMessageTrackingReport 操作</span><span class="sxs-lookup"><span data-stu-id="885bb-138">GetMessageTrackingReport operation</span></span>](getmessagetrackingreport-operation.md)
 
 
-- [<span data-ttu-id="f5e03-139">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="f5e03-139">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="885bb-139">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="885bb-139">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
