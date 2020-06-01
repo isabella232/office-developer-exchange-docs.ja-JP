@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 481cdbc6-d5aa-49fa-a3fa-9d119d3dca99
-description: MergedFreeBusyIntervalInMinutes 要素は、FreeBusyMerged のビューで連続する 2 つのスロット間の時間差を表します。
-ms.openlocfilehash: 99c8c69424a0a9d9594005fdf6b2ceba53e6288a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: MergedFreeBusyIntervalInMinutes 要素は、FreeBusyMerged ビューの2つの連続するスロット間の時間差を表します。
+ms.openlocfilehash: 6228ee5b66202634e6bb3b6c1ad6b8897a109d58
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832451"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468790"
 ---
 # <a name="mergedfreebusyintervalinminutes"></a>MergedFreeBusyIntervalInMinutes
 
-**MergedFreeBusyIntervalInMinutes**要素は、 **FreeBusyMerged**のビューで連続する 2 つのスロット間の時間差を表します。 
+**MergedFreeBusyIntervalInMinutes**要素は、 **FreeBusyMerged**ビューの2つの連続するスロット間の時間差を表します。 
   
 [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
   
@@ -34,7 +34,7 @@ ms.locfileid: "19832451"
 ```
 
  **int**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -50,24 +50,24 @@ ms.locfileid: "19832451"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FreeBusyViewOptions](freebusyviewoptions.md) <br/> |応答で返される空き時間情報の情報の種類を指定します。  <br/> 以下は、この要素の XPath です。  <br/>  `/GetUserAvailabilityRequest/FreeBusyViewOptions` <br/> |
+|[FreeBusyViewOptions](freebusyviewoptions.md) <br/> |応答で返される空き時間情報の種類を指定します。  <br/> この要素の XPath を次に示します。  <br/>  `/GetUserAvailabilityRequest/FreeBusyViewOptions` <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は必須です。 テキスト値は、分単位の時間を表します。 既定値は、30 分です。 6 分間隔の最小値は、1 日 (1440 分) この要素の最大間隔。
+テキスト値は必須です。 テキスト値は、時間を分単位で表します。 既定値は 30 分です。 この要素の最大間隔は、6分で、最小間隔と1日 (1440 分) で指定します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-[RequestedView](requestedview.md)要素は、 **MergedOnly**、 **FreeBusyMerged**、または**DetailedMerge**に等しい場合にのみ、この値が使用されます。 これは、整数データ型です。 [MergedFreeBusy](mergedfreebusy.md)要素では、この要素で定義された間隔を格納しているストリームが返されます。 
+この値は、 [Requestedview](requestedview.md)要素が**MergedOnly**、 **FreeBusyMerged**、または**DetailedMerge**と等しい場合にのみ使用されます。 これは integer データ型です。 この要素で定義されている間隔を含むストリームは、 [MergedFreeBusy](mergedfreebusy.md)要素で返されます。 
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -78,5 +78,5 @@ ms.locfileid: "19832451"
 [GetUserOofSettings 操作](getuseroofsettings-operation.md)
 
 
-[ユーザーの状態を取得します。](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[ユーザーの空き時間情報の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

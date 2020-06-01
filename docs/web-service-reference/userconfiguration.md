@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 1811df99-ca5b-48a3-b160-b3fd70320c34
-description: UserConfiguration 要素は、単一のユーザーの構成オブジェクトを定義します。
-ms.openlocfilehash: ce3eaa470ef592c5a8e5a7ef24c377bb2feeca2e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: UserConfiguration 要素は、1つのユーザー構成オブジェクトを定義します。
+ms.openlocfilehash: 1217f5d591570c2d8df49a116b6bf35c243d1e0e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839925"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468909"
 ---
 # <a name="userconfiguration"></a>UserConfiguration
 
-**UserConfiguration**要素は、単一のユーザーの構成オブジェクトを定義します。 
+**Userconfiguration**要素は、1つのユーザー構成オブジェクトを定義します。 
   
 ```XML
 <UserConfiguration>
@@ -34,7 +34,7 @@ ms.locfileid: "19839925"
 ```
 
  **UserConfigurationType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,38 +44,38 @@ ms.locfileid: "19839925"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[UserConfigurationName](userconfigurationname.md) <br/> |ユーザーの構成オブジェクトの名前を表します。 ユーザーの構成オブジェクトを作成するとき、この要素を使用する必要があります。  <br/> |
-|[ItemId](itemid.md) <br/> |ユーザー構成オブジェクトの項目の識別子を定義します。  <br/> |
-|[辞書](dictionary.md) <br/> |ユーザーの構成オブジェクトのディクショナリ プロパティのエントリのセットを定義します。  <br/> |
-|[XmlData](xmldata.md) <br/> |ユーザーの構成オブジェクトの XML データのプロパティの内容が含まれています。  <br/> |
-|[データ](binarydata.md) <br/> |ユーザーの構成オブジェクトのバイナリ データ プロパティのコンテンツが含まれています。  <br/> |
+|[UserConfigurationName](userconfigurationname.md) <br/> |ユーザー構成オブジェクトの名前を表します。 この要素は、ユーザー構成オブジェクトを作成するときに使用する必要があります。  <br/> |
+|[ItemId](itemid.md) <br/> |ユーザー構成オブジェクトのアイテム識別子を定義します。  <br/> |
+|[辞書](dictionary.md) <br/> |ユーザー構成オブジェクトの辞書のプロパティエントリのセットを定義します。  <br/> |
+|[XmlData](xmldata.md) <br/> |ユーザー構成オブジェクトの XML データプロパティコンテンツが保存されています。  <br/> |
+|[BinaryData](binarydata.md) <br/> |ユーザー構成オブジェクトのバイナリデータのプロパティコンテンツが保存されています。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[CreateUserConfiguration](createuserconfiguration.md) <br/> |ユーザーの構成オブジェクトを作成する要求を表します。  <br/> |
-|[GetUserConfigurationResponseMessage](getuserconfigurationresponsemessage.md) <br/> |ユーザーの構成オブジェクトを返す応答を表します。  <br/> |
-|[UpdateUserConfiguration](updateuserconfiguration.md) <br/> |ユーザーの構成オブジェクトを更新する要求を表します。  <br/> |
+|[CreateUserConfiguration](createuserconfiguration.md) <br/> |ユーザー構成オブジェクトを作成するための要求を表します。  <br/> |
+|[GetUserConfigurationResponseMessage](getuserconfigurationresponsemessage.md) <br/> |ユーザー構成オブジェクトを返す応答を表します。  <br/> |
+|[UpdateUserConfiguration](updateuserconfiguration.md) <br/> |ユーザー構成オブジェクトを更新する要求を表します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

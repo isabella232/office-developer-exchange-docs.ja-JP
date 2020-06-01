@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 9ca1584e-65b8-49ba-a408-e3e8597e6607
-description: TimeZoneDefinitions 要素は、タイム ゾーン定義の配列を表します。
-ms.openlocfilehash: 0bc1b69ef564bb4e239d9845a4b1a0133292ff12
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: TimeZoneDefinitions 要素は、タイムゾーン定義の配列を表します。
+ms.openlocfilehash: 16a25eb4fdcad2554ebd19626d0a0bc7f6391ac5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839702"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468762"
 ---
 # <a name="timezonedefinitions"></a>TimeZoneDefinitions
 
-**TimeZoneDefinitions**要素は、タイム ゾーン定義の配列を表します。 
+**TimeZoneDefinitions**要素は、タイムゾーン定義の配列を表します。 
   
 ```XML
 <TimeZoneDefinitions>
@@ -30,7 +30,7 @@ ms.locfileid: "19839702"
 ```
 
  **ArrayOfTimeZoneDefinitionType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,32 +40,32 @@ ms.locfileid: "19839702"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[タイム](timezonedefinition.md) <br/> |期間とタイム ゾーンを定義するための遷移を指定します。  <br/> |
+|[TimeZoneDefinition](timezonedefinition.md) <br/> |タイムゾーンを定義する期間と切り替えを指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetServerTimeZonesResponseMessage](getservertimezonesresponsemessage.md) <br/> |状態と[GetServerTimeZones の操作](getservertimezones-operation.md)要求の結果が含まれています。  <br/> |
+|[GetServerTimeZonesResponseMessage](getservertimezonesresponsemessage.md) <br/> |[GetServerTimeZones 操作](getservertimezones-operation.md)要求の状態と結果を格納します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

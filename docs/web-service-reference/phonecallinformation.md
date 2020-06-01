@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: a0363c42-6d35-4074-bc17-946eb12736ff
-description: PhoneCallInformation 要素は、電話の状態情報を指定します。
-ms.openlocfilehash: e64e7b38b3801c60df8a966e95d980746533d3a4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: PhoneCallInformation 要素は、電話呼び出しの状態情報を指定します。
+ms.openlocfilehash: 75370bccb841818a8302bdd055ad96fd16b2e8df
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832758"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468846"
 ---
 # <a name="phonecallinformation"></a>PhoneCallInformation
 
-**PhoneCallInformation**要素は、電話の状態情報を指定します。 
+**PhoneCallInformation**要素は、電話呼び出しの状態情報を指定します。 
   
 ```XML
 <PhoneCallInformation>
@@ -33,7 +33,7 @@ ms.locfileid: "19832758"
 ```
 
  **PhoneCallInformationType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -43,35 +43,35 @@ ms.locfileid: "19832758"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[PhoneCallState](phonecallstate.md) <br/> |電話の状態を指定します。 この要素は必須です。  <br/> |
+|[PhoneCallState](phonecallstate.md) <br/> |通話の状態を指定します。 この要素は必須です。  <br/> |
 |[ConnectionFailureCause](connectionfailurecause.md) <br/> |接続エラーの原因を指定します。 この要素は必須です。  <br/> |
-|[SIPResponseText](sipresponsetext.md) <br/> |SIP 応答のテキストを指定します。 この要素はオプションです。  <br/> |
-|[SIPResponseCode](sipresponsecode.md) <br/> |SIP 応答コードを指定します。 この要素はオプションです。  <br/> |
+|[SIPResponseText](sipresponsetext.md) <br/> |SIP 応答テキストを指定します。 この要素は省略できます。  <br/> |
+|[SIPResponseCode](sipresponsecode.md) <br/> |SIP 応答コードを指定します。 この要素は省略できます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetPhoneCallInformationResponse](getphonecallinformationresponse.md) <br/> |[GetPhoneCallInformation 操作](getphonecallinformation-operation.md)要求に対する応答を定義します。  <br/> |
+|[GetPhoneCallInformationResponse](getphonecallinformationresponse.md) <br/> |[GetPhoneCallInformation 操作](getphonecallinformation-operation.md)要求への応答を定義します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 
