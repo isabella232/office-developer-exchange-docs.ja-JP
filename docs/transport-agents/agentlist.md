@@ -11,19 +11,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: e877b7ef-e303-4270-964d-8d116ff2a865
-description: '最終更新日: 2015 年 9 月 17 日'
-ms.openlocfilehash: 7dd9d48356932c82dbc048a85b9f02437c6366de
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: '最終更新日: 2015 年9月17日'
+ms.openlocfilehash: 99e4e24c3bca77c7e7d5f2c59bb21cee1317fed2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759227"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44446393"
 ---
 # <a name="agentlist"></a>agentList
   
-**に適用されます:** Exchange Server 2013
+**製品:** Exchange Server 2013
   
-**AgentList**要素には、インストールされている各エージェントの[エージェント](agent.md)の要素が含まれています。 
+**agentList** 要素には、インストールされた各エージェントに [agent](agent.md) 要素が含まれています。 
   
 - [構成](configuration.md)
 - [mexRuntime](mexruntime.md)
@@ -35,9 +35,9 @@ ms.locfileid: "19759227"
 </agentList>
 ```
 
-**agentListType (複合型)**
+**agentListType (complexType)**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -47,9 +47,9 @@ ms.locfileid: "19759227"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[エージェント](agent.md) <br/> |インストールされているエージェントの構成情報が含まれています。  <br/> |
+|[agent](agent.md) <br/> |インストールされているエージェントの構成情報が含まれています。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -57,14 +57,14 @@ ms.locfileid: "19759227"
 |:-----|:-----|
 |[mexRuntime](mexruntime.md) <br/> |エージェントの監視に関する構成情報を定義する要素と、インストールされているエージェントに関する構成情報を定義する要素が含まれています。  <br/> |
    
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |このファイルには名前空間が定義されていません。  <br/> |
-|スキーマ名  <br/> |該当なし。  <br/> |
+|Namespace  <br/> |このファイルには名前空間が定義されていません。  <br/> |
+|スキーマ名  <br/> |注意事項なし。  <br/> |
 |検証ファイル  <br/> |該当なし。  <br/> |
-|空に設定可能  <br/> |False。  <br/> |
+|空に設定可能  <br/> |不正解。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

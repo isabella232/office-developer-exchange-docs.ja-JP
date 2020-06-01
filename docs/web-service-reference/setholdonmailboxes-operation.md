@@ -1,51 +1,54 @@
 ---
 title: SetHoldOnMailboxes 操作
 manager: sethgros
-ms.date: 09/17/2015
+ms.date: 01/24/2020
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9015a0d8-3495-461b-aa79-797d23169585
-description: 操作 SetHoldOnMailboxes EWS についての情報を検索します。
-ms.openlocfilehash: 1091ed14ceb25dfd275499b9db47ae4e41b5f1a0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: SetHoldOnMailboxes EWS 操作についての情報を検索します。
+ms.openlocfilehash: 4d79ba9f616974b9415ae9eae23b8f5fdb0ab205
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833412"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44448395"
 ---
 # <a name="setholdonmailboxes-operation"></a>SetHoldOnMailboxes 操作
 
-**SetHoldOnMailboxes** EWS の操作に関する情報を検索します。 
+> [!IMPORTANT]
+> 2020年4月1日以降、Exchange Online では SetHoldOnMailboxes 操作が使用できなくなります。 この操作は、Exchange Server のオンプレミスバージョンでは影響を受けません。 詳細については、「 [Exchange Online の従来の電子情報開示ツールの廃止](https://docs.microsoft.com/microsoft-365/compliance/legacy-ediscovery-retirement#getsearchablemailboxes-setholdonmailboxes-and-getholdonmailboxes-operations-in-the-ews-api)」を参照してください。
+
+**SetHoldOnMailboxes** EWS 操作についての情報を検索します。 
   
-**SetHoldOnMailboxes**操作では、メールボックスのメールボックスの保持ポリシーを設定します。 
+**SetHoldOnMailboxes**操作は、メールボックスのメールボックス保持ポリシーを設定します。 
   
 この操作は Exchange Server 2013 で導入されました。
   
-## <a name="using-the-setholdonmailboxes-operation"></a>SetHoldOnMailboxes 操作を使用します。
+## <a name="using-the-setholdonmailboxes-operation"></a>SetHoldOnMailboxes 操作の使用
 
-**SetHoldOnMailboxes**操作は、1 つまたは複数のメールボックスへのメールボックスの保持を設定します。 
+**SetHoldOnMailboxes**操作では、メールボックスホールドを1つ以上のメールボックスに設定します。 
   
 ### <a name="setholdonmailboxes-operation-soap-headers"></a>SetHoldOnMailboxes 操作の SOAP ヘッダー
 
-**SetHoldOnMailboxes**操作は、次の表に記載されている SOAP ヘッダーを使用できます。 
+**SetHoldOnMailboxes**操作では、次の表に示す SOAP ヘッダーを使用できます。 
   
 |**ヘッダー名**|**要素**|**説明**|
 |:-----|:-----|:-----|
-|**ManagementRole** <br/> |[ManagementRole](managementrole.md) <br/> |呼び出し元が要求を行うために必要とされるサーバーの役割を識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマのバージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答するサーバーのバージョンを識別します。 このヘッダーは、応答に適用されます。  <br/> |
+|**Get-managementrole** <br/> |[Get-managementrole](managementrole.md) <br/> |発信者が要求を行うために必要なサーバーの役割を指定します。 このヘッダーは、要求に適用されます。  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは応答に適用されます。  <br/> |
    
-## <a name="setholdonmailboxes-operation-request-example-apply-a-hold-on-a-mailbox"></a>SetHoldOnMailboxes 操作の要求の例: メールボックスの保留リストを適用
+## <a name="setholdonmailboxes-operation-request-example-apply-a-hold-on-a-mailbox"></a>SetHoldOnMailboxes 操作要求の例: メールボックスに保留を適用する
 
-**SetHoldOnMailboxes**操作要求の次の例では、2 つのメールボックスに保留を適用する方法を示します。 メールボックスの保留リストは、[新しい MailboxSearch](http://technet.microsoft.com/en-us/library/dd298064.aspx)コマンドを使用して作成されました。 
+次の**SetHoldOnMailboxes**操作要求の例は、2つのメールボックスに保留を適用する方法を示しています。 メールボックスの保持は、 [get-mailboxsearch](https://technet.microsoft.com/library/dd298064.aspx)コマンドを使用して作成されました。 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
    </soap:Header>
@@ -67,11 +70,11 @@ ms.locfileid: "19833412"
 
 ```
 
-要求 SOAP 本体にはには、次の要素が含まれています。
+要求 SOAP 本文には、次の要素が含まれています。
   
 - [SetHoldOnMailboxes](setholdonmailboxes.md)
     
-- [ファイアウォール (HoldActionType)](actiontype-holdactiontype.md)
+- [ActionType (HoldActionType)](actiontype-holdactiontype.md)
     
 - [HoldId](holdid.md)
     
@@ -79,17 +82,17 @@ ms.locfileid: "19833412"
     
 - [メールボックス (ArrayOfStringsType)](mailboxes-arrayofstringstype.md)
     
-- [文字列型 (String)](string.md)
+- [String](string.md)
     
 - [Language](language.md)
     
-- [IncludeNonIndexableItems](includenonindexableitems.md)
+- [追加アイテム](includenonindexableitems.md)
     
-- [重複除外](deduplication.md)
+- [防止](deduplication.md)
     
-## <a name="successful-setholdonmailboxes-operation-response"></a>SetHoldOnMailboxes 操作の成功の応答
+## <a name="successful-setholdonmailboxes-operation-response"></a>成功した SetHoldOnMailboxes 操作の応答
 
-**SetHoldOnMailboxes**操作に 2 つのメールボックスを配置する要求に正常な応答を保持は、次の例です。 
+次の例は、2つのメールボックスを保持するための**SetHoldOnMailboxes**操作要求に対する正常な応答を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -100,20 +103,20 @@ ms.locfileid: "19833412"
                            MajorBuildNumber="526" 
                            MinorBuildNumber="0" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <SetHoldOnMailboxesResponse ResponseClass="Success" 
-                                  xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                  xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <ResponseCode>NoError</ResponseCode>
          <MailboxHoldResult>
-            <HoldId xmlns="http://schemas.microsoft.com/exchange/services/2006/types">HoldId2</HoldId>
-            <Query xmlns="http://schemas.microsoft.com/exchange/services/2006/types">test</Query>
-            <MailboxHoldStatuses xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <HoldId xmlns="https://schemas.microsoft.com/exchange/services/2006/types">HoldId2</HoldId>
+            <Query xmlns="https://schemas.microsoft.com/exchange/services/2006/types">test</Query>
+            <MailboxHoldStatuses xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
                <MailboxHoldStatus>
                   <Mailbox>o=First/ou=Exchange(DLT)/cn=Recipients/cn=1fa441ff5e4749ba43ecc0fd94c21adf-Willi</Mailbox>
                   <Status>Pending</Status>
@@ -154,9 +157,9 @@ ms.locfileid: "19833412"
     
 - [AdditionalInfo](additionalinfo.md)
     
-## <a name="setholdonmailboxes-operation-error-response"></a>SetHoldOnMailboxes 操作のエラー応答
+## <a name="setholdonmailboxes-operation-error-response"></a>SetHoldOnMailboxes 操作エラー応答
 
-**SetHoldOnMailboxes**操作の要求に対してエラー応答の例を次に示します。 これは、メールボックスが正しく指定された識別子を含む要求に対する応答です。 
+次の例は、 **SetHoldOnMailboxes**操作要求へのエラー応答を示しています。 これは、正しく指定されていないメールボックス識別子を含む要求に対する応答です。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -167,15 +170,15 @@ ms.locfileid: "19833412"
                            MajorBuildNumber="526" 
                            MinorBuildNumber="0" 
                            Version="Exchange2013"
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <SetHoldOnMailboxesResponse ResponseClass="Error" 
-                                  xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                  xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <MessageText>No mailbox is specified for hold operation. If specified in the request, then it could be the object does not exist in AD or is a Distribution Group.</MessageText>
          <ResponseCode>ErrorInvalidOperation</ResponseCode>
          <DescriptiveLinkKey>0</DescriptiveLinkKey>
@@ -185,7 +188,7 @@ ms.locfileid: "19833412"
 
 ```
 
-エラー応答 SOAP 本体にはには、次の要素が含まれています。
+エラー応答 SOAP 本文には、次の要素が含まれています。
   
 - [SetHoldOnMailboxesResponse](setholdonmailboxesresponse.md)
     
@@ -195,15 +198,15 @@ ms.locfileid: "19833412"
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-EWS を汎用的なこの操作に固有のエラー コードは、 [ResponseCode](responsecode.md)を参照してください。
+EWS で汎用的でこの操作に固有の追加のエラーコードについては、「応答」[を参照してください。](responsecode.md)
   
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の操作](ews-operations-in-exchange.md)
+- [Exchange での EWS 操作](ews-operations-in-exchange.md)
     
-- [GetSearchableMailboxes 操作](getsearchablemailboxes-operation.md)
+- [Getsearchablemailemail箱操作](getsearchablemailboxes-operation.md)
     
-- [SearchMailboxes 操作](searchmailboxes-operation.md)
+- [SearchMailboxes ボックスの操作](searchmailboxes-operation.md)
     
 - [GetHoldOnMailboxes 操作](getholdonmailboxes-operation.md)
     

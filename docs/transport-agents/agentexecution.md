@@ -11,31 +11,31 @@ api_name:
 api_type:
 - schema
 ms.assetid: 600c4690-941c-45af-a906-5528748d09cd
-description: '最終更新日: 2015 年 9 月 17 日'
-ms.openlocfilehash: 5848d52a68c8c3f747614015e49becb34bc4cfd8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: '最終更新日: 2015 年9月17日'
+ms.openlocfilehash: 457257e59fb37659daf2f91b0fa5dfced5c48c03
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759225"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44446491"
 ---
 # <a name="agentexecution"></a>agentExecution
   
-**に適用されます:** Exchange Server 2013 
+**製品:** Exchange Server 2013 
   
-**AgentExecution**要素は、エージェントがイベント ログに書き込む前にイベントを終了するまで待機するか、クライアント アクセス、メールボックス サーバーをミリ秒単位で時間を定義します。 
+**agentExecution** 要素では、クライアント アクセス サーバーまたはメールボックス サーバーがエージェントのイベントからの復帰を待機する時間をミリ秒単位で定義します。この時間を過ぎるとイベント ログへの書き込みが行われます。 
   
 - [構成](configuration.md)  
-- [監視](monitoring.md)
+- [管理](monitoring.md)
 - [agentExecution](agentexecution.md)
   
 ```XML
 <agentExecution timeLimitInMilliseconds="" />
 ```
 
-**agentExecutionType (複合型)**
+**agentExecutionType (complexType)**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -53,16 +53,16 @@ ms.locfileid: "19759225"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[監視](monitoring.md) <br/> |インストールされているエージェントをフロント エンド トランスポート サービスまたはトランスポート サービスが監視する方法とタイミングを定義する構成情報を格納します。  <br/> |
+|[管理](monitoring.md) <br/> |インストールされているエージェントをフロント エンド トランスポート サービスまたはトランスポート サービスが監視する方法とタイミングを定義する構成情報を格納します。  <br/> |
    
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |このファイルには名前空間が定義されていません。  <br/> |
-|スキーマ名  <br/> |該当なし。  <br/> |
+|Namespace  <br/> |このファイルには名前空間が定義されていません。  <br/> |
+|スキーマ名  <br/> |注意事項なし。  <br/> |
 |検証ファイル  <br/> |該当なし。  <br/> |
-|空に設定可能  <br/> |False。  <br/> |
+|空に設定可能  <br/> |不正解。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

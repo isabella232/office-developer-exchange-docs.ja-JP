@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c1cba493-bccc-4b8e-be8e-bfa8a8b10882
-description: メール ヒントの要素は、さまざまな種類のメール ヒントの値を表します。
-ms.openlocfilehash: 3a2e95225b09fd2d81db32f821ea3069ab7e7852
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: メールヒント要素は、さまざまな種類のメールヒントの値を表します。
+ms.openlocfilehash: 9bacdea7b4f3108f700ed102025445e01a73e69d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832311"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44447597"
 ---
 # <a name="mailtips"></a>メール ヒント
 
-**メール ヒント**の要素は、さまざまな種類のメール ヒントの値を表します。 
+メール**ヒント要素は**、さまざまな種類のメールヒントの値を表します。 
   
 ```XML
 <MailTips>
@@ -39,8 +39,8 @@ ms.locfileid: "19832311"
 </MailTips>
 ```
 
- **メール ヒント**
-## <a name="attributes-and-elements"></a>属性および要素
+ **メールヒント**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -50,46 +50,46 @@ ms.locfileid: "19832311"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
 |[RecipientAddress](recipientaddress.md) <br/> |受信者のメールボックスを表します。  <br/> |
-|[PendingMailTips](pendingmailtips.md) <br/> |サーバーの処理のタイムアウト期間が経過する前にこの要素内のメール ヒントを評価できませんでしたを示します。  <br/> |
-|[OutOfOffice](outofoffice.md) <br/> |応答メッセージと応答メッセージを送信するための継続時間を表します。  <br/> |
-|[MailboxFull](mailboxfull.md) <br/> |受信者のメールボックスがいっぱいであるかどうかを示します。  <br/> |
-|[CustomMailTip](custommailtip.md) <br/> |カスタマイズしたメール ヒントのメッセージを表します。  <br/> |
+|[PendingMailTips ヒント](pendingmailtips.md) <br/> |この要素のメールヒントが、サーバーの処理タイムアウトが経過する前に評価されなかったことを示します。  <br/> |
+|[不在](outofoffice.md) <br/> |応答メッセージと、応答メッセージを送信する時間を表します。  <br/> |
+|[MailboxFull](mailboxfull.md) <br/> |受信者のメールボックスがいっぱいになっているかどうかを示します。  <br/> |
+|[CustomMailTip](custommailtip.md) <br/> |カスタマイズされたメールヒントメッセージを表します。  <br/> |
 |[TotalMemberCount](totalmembercount.md) <br/> |グループ内のすべてのメンバーの数を表します。  <br/> |
-|[ExternalMemberCount](externalmembercount.md) <br/> |グループ内の外部のメンバーの数を表します。  <br/> |
-|[MaxMessageSize](maxmessagesize.md) <br/> |受信者が受け入れることができるメッセージの最大サイズを表します。  <br/> |
-|[DeliveryRestricted](deliveryrestricted.md) <br/> |配信の制限が、送信者のメッセージを防ぐため、受信者に到達できないかどうかを示します。  <br/> |
+|[ExternalMemberCount](externalmembercount.md) <br/> |グループ内の外部メンバーの数を表します。  <br/> |
+|[MaxMessageSize](maxmessagesize.md) <br/> |受信者が受け付けることができる最大メッセージサイズを表します。  <br/> |
+|[DeliveryRestricted](deliveryrestricted.md) <br/> |配信の制限によって、送信者のメッセージが受信者に届かないようにするかどうかを示します。  <br/> |
 |[IsModerated](ismoderated.md) <br/> |受信者のメールボックスがモデレートされているかどうかを示します。  <br/> |
-|[InvalidRecipient (メール ヒント)](invalidrecipient-mailtips.md) <br/> |受信者が有効かどうかを示します。  <br/> |
+|[InvalidRecipient (メールヒント)](invalidrecipient-mailtips.md) <br/> |受信者が無効かどうかを示します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[MailTipsResponseMessageType](mailtipsresponsemessagetype.md) <br/> |メールのヒントの設定を表します。  <br/> |
+|[Mailヒント Responsemessagetype](mailtipsresponsemessagetype.md) <br/> |メールヒントの設定を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 
