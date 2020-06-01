@@ -1,5 +1,5 @@
 ---
-title: PolicyNudgeRulesConfiguration
+title: Polic/Udgerulesconfiguration
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,54 +7,54 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: e6f7c824-1284-4a65-a459-9fc22b66e30a
-description: PolicyNudgeRulesConfiguration 要素には、データ損失の防止の構成データが含まれています。
-ms.openlocfilehash: ecea1dac44526fee7c439cd5e1eb318c38d274f6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Polic/Udgerulesconfiguration 要素には、データ損失防止構成データが含まれています。
+ms.openlocfilehash: dd801fe140dee66d153e388781f97254d1a2f2ef
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832833"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459610"
 ---
-# <a name="policynudgerulesconfiguration"></a><span data-ttu-id="00179-103">PolicyNudgeRulesConfiguration</span><span class="sxs-lookup"><span data-stu-id="00179-103">PolicyNudgeRulesConfiguration</span></span>
+# <a name="policynudgerulesconfiguration"></a><span data-ttu-id="db49b-103">Polic/Udgerulesconfiguration</span><span class="sxs-lookup"><span data-stu-id="db49b-103">PolicyNudgeRulesConfiguration</span></span>
 
-<span data-ttu-id="00179-104">**PolicyNudgeRulesConfiguration**要素には、データ損失の防止の構成データが含まれています。</span><span class="sxs-lookup"><span data-stu-id="00179-104">The **PolicyNudgeRulesConfiguration** element contains the data loss prevention configuration data.</span></span> 
+<span data-ttu-id="db49b-104">**Polic/Udgerulesconfiguration**要素には、データ損失防止構成データが含まれています。</span><span class="sxs-lookup"><span data-stu-id="db49b-104">The **PolicyNudgeRulesConfiguration** element contains the data loss prevention configuration data.</span></span> 
   
 ```XML
 <PolicyNudgeRulesConfiguration></PolicyNudgeRulesConfiguration>
 ```
 
- <span data-ttu-id="00179-105">**PolicyNudgeRulesServiceConfiguration**</span><span class="sxs-lookup"><span data-stu-id="00179-105">**PolicyNudgeRulesServiceConfiguration**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="00179-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="00179-106">Attributes and elements</span></span>
+ <span data-ttu-id="db49b-105">**PolicyNudgeRulesServiceConfiguration**</span><span class="sxs-lookup"><span data-stu-id="db49b-105">**PolicyNudgeRulesServiceConfiguration**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="db49b-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="db49b-106">Attributes and elements</span></span>
 
-<span data-ttu-id="00179-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="00179-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="db49b-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="db49b-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="00179-108">属性</span><span class="sxs-lookup"><span data-stu-id="00179-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="db49b-108">属性</span><span class="sxs-lookup"><span data-stu-id="db49b-108">Attributes</span></span>
 
-<span data-ttu-id="00179-109">なし。</span><span class="sxs-lookup"><span data-stu-id="00179-109">None.</span></span>
+<span data-ttu-id="db49b-109">なし。</span><span class="sxs-lookup"><span data-stu-id="db49b-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="00179-110">子要素</span><span class="sxs-lookup"><span data-stu-id="00179-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="db49b-110">子要素</span><span class="sxs-lookup"><span data-stu-id="db49b-110">Child elements</span></span>
 
-<span data-ttu-id="00179-111">なし。</span><span class="sxs-lookup"><span data-stu-id="00179-111">None.</span></span>
+<span data-ttu-id="db49b-111">なし。</span><span class="sxs-lookup"><span data-stu-id="db49b-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="00179-112">親要素</span><span class="sxs-lookup"><span data-stu-id="00179-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="db49b-112">親要素</span><span class="sxs-lookup"><span data-stu-id="db49b-112">Parent elements</span></span>
 
-[<span data-ttu-id="00179-113">ServiceConfigurationResponseMessageType</span><span class="sxs-lookup"><span data-stu-id="00179-113">ServiceConfigurationResponseMessageType</span></span>](serviceconfigurationresponsemessagetype.md)
+[<span data-ttu-id="db49b-113">ServiceConfigurationResponseMessageType</span><span class="sxs-lookup"><span data-stu-id="db49b-113">ServiceConfigurationResponseMessageType</span></span>](serviceconfigurationresponsemessagetype.md)
   
-## <a name="remarks"></a><span data-ttu-id="00179-114">備考</span><span class="sxs-lookup"><span data-stu-id="00179-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="db49b-114">注釈</span><span class="sxs-lookup"><span data-stu-id="db49b-114">Remarks</span></span>
 
-<span data-ttu-id="00179-115">**PolicyNudgeRulesConfiguration**要素の内容には、Exchange Web サービスのスキーマが定義されています。</span><span class="sxs-lookup"><span data-stu-id="00179-115">The **PolicyNudgeRulesConfiguration** element contents are not defined the Exchange Web Services schema.</span></span> 
+<span data-ttu-id="db49b-115">**Policが**Exchange Web サービススキーマを定義していません。</span><span class="sxs-lookup"><span data-stu-id="db49b-115">The **PolicyNudgeRulesConfiguration** element contents are not defined the Exchange Web Services schema.</span></span> 
   
-<span data-ttu-id="00179-116">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="00179-116">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="db49b-116">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="db49b-116">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="00179-117">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="00179-117">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="db49b-117">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="db49b-117">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="00179-118">要素情報</span><span class="sxs-lookup"><span data-stu-id="00179-118">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="db49b-118">要素の情報</span><span class="sxs-lookup"><span data-stu-id="db49b-118">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="00179-119">名前空間</span><span class="sxs-lookup"><span data-stu-id="00179-119">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="00179-120">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="00179-120">Schema name</span></span>  <br/> |<span data-ttu-id="00179-121">メッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="00179-121">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="00179-122">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="00179-122">Validation file</span></span>  <br/> |<span data-ttu-id="00179-123">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="00179-123">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="00179-124">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="00179-124">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="db49b-119">Namespace</span><span class="sxs-lookup"><span data-stu-id="db49b-119">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="db49b-120">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="db49b-120">Schema name</span></span>  <br/> |<span data-ttu-id="db49b-121">メッセージスキーマ</span><span class="sxs-lookup"><span data-stu-id="db49b-121">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="db49b-122">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="db49b-122">Validation file</span></span>  <br/> |<span data-ttu-id="db49b-123">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="db49b-123">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="db49b-124">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="db49b-124">Can be empty</span></span>  <br/> ||
    
 

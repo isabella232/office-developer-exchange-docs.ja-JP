@@ -12,68 +12,68 @@ api_type:
 - schema
 ms.assetid: 1fac7937-7a06-4d66-9d2a-14423bcb3b37
 description: StartTime 要素は、時間間隔の開始を表します。
-ms.openlocfilehash: 4346797d755bb6e577e1cacb8bec656a7562bf1f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 16bee698b65dc512a709e2af9ddfe8629347fee3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833560"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458566"
 ---
-# <a name="starttime"></a><span data-ttu-id="ed99d-103">StartTime</span><span class="sxs-lookup"><span data-stu-id="ed99d-103">StartTime</span></span>
+# <a name="starttime"></a><span data-ttu-id="36581-103">StartTime</span><span class="sxs-lookup"><span data-stu-id="36581-103">StartTime</span></span>
 
-<span data-ttu-id="ed99d-104">**StartTime**要素は、時間間隔の開始を表します。</span><span class="sxs-lookup"><span data-stu-id="ed99d-104">The **StartTime** element represents the start of a time span.</span></span> 
+<span data-ttu-id="36581-104">**StartTime**要素は、時間間隔の開始を表します。</span><span class="sxs-lookup"><span data-stu-id="36581-104">The **StartTime** element represents the start of a time span.</span></span> 
   
 ```xml
 <StartTime/
 ```
 
-<span data-ttu-id="ed99d-105">**dateTime**</span><span class="sxs-lookup"><span data-stu-id="ed99d-105">**dateTime**</span></span>
+<span data-ttu-id="36581-105">**dateTime**</span><span class="sxs-lookup"><span data-stu-id="36581-105">**dateTime**</span></span>
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="ed99d-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="ed99d-106">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="36581-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="36581-106">Attributes and elements</span></span>
 
-<span data-ttu-id="ed99d-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="ed99d-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="36581-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="36581-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="ed99d-108">属性</span><span class="sxs-lookup"><span data-stu-id="ed99d-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="36581-108">属性</span><span class="sxs-lookup"><span data-stu-id="36581-108">Attributes</span></span>
 
-<span data-ttu-id="ed99d-109">なし。</span><span class="sxs-lookup"><span data-stu-id="ed99d-109">None.</span></span>
+<span data-ttu-id="36581-109">なし。</span><span class="sxs-lookup"><span data-stu-id="36581-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="ed99d-110">子要素</span><span class="sxs-lookup"><span data-stu-id="ed99d-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="36581-110">子要素</span><span class="sxs-lookup"><span data-stu-id="36581-110">Child elements</span></span>
 
-<span data-ttu-id="ed99d-111">なし。</span><span class="sxs-lookup"><span data-stu-id="ed99d-111">None.</span></span>
+<span data-ttu-id="36581-111">なし。</span><span class="sxs-lookup"><span data-stu-id="36581-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="ed99d-112">親要素</span><span class="sxs-lookup"><span data-stu-id="ed99d-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="36581-112">親要素</span><span class="sxs-lookup"><span data-stu-id="36581-112">Parent elements</span></span>
 
-|<span data-ttu-id="ed99d-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="ed99d-113">**Element**</span></span>|<span data-ttu-id="ed99d-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="ed99d-114">**Description**</span></span>|
+|<span data-ttu-id="36581-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="36581-113">**Element**</span></span>|<span data-ttu-id="36581-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="36581-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="ed99d-115">時間</span><span class="sxs-lookup"><span data-stu-id="ed99d-115">TimeWindow</span></span>](timewindow.md) <br/> |<span data-ttu-id="ed99d-116">ユーザーの可用性について照会する期間を指定します。</span><span class="sxs-lookup"><span data-stu-id="ed99d-116">Identifies the time span queried for the user availability information.</span></span>  <br/><br/> <span data-ttu-id="ed99d-117">この要素への XPath 式は、次のようにします。</span><span class="sxs-lookup"><span data-stu-id="ed99d-117">The following is the XPath expression to this element:</span></span>  <br/><br/>  `/GetUserAvailabilityRequest/FreeBusyViewOptions/TimeWindow` <br/> |
-|[<span data-ttu-id="ed99d-118">DetailedSuggestionsWindow</span><span class="sxs-lookup"><span data-stu-id="ed99d-118">DetailedSuggestionsWindow</span></span>](detailedsuggestionswindow.md) <br/> |<span data-ttu-id="ed99d-119">提案された会議の時間についての詳細情報を照会する期間を指定します。</span><span class="sxs-lookup"><span data-stu-id="ed99d-119">Identifies the time span that is queried for detailed information about suggested meeting times.</span></span>  <br/><br/> <span data-ttu-id="ed99d-120">この要素への XPath 式は、次のようにします。</span><span class="sxs-lookup"><span data-stu-id="ed99d-120">The following is the XPath expression to this element:</span></span> <br/> <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions/DetailedSuggestionsWindow` <br/> |
-|[<span data-ttu-id="ed99d-121">期間 (UserOofSettings)</span><span class="sxs-lookup"><span data-stu-id="ed99d-121">Duration (UserOofSettings)</span></span>](duration-useroofsettings.md) <br/> | <span data-ttu-id="ed99d-122">Office (OOF) の状態が有効である[OofState](oofstate.md)要素は、 **[スケジュール済]** に設定されている場合、期間を指定します。</span><span class="sxs-lookup"><span data-stu-id="ed99d-122">Specifies the duration for which the Out of Office (OOF) status is enabled if the [OofState](oofstate.md) element is set to **Scheduled**.</span></span>  <br/><br/>  <span data-ttu-id="ed99d-123">この要素に使用可能な XPath 式は、次のように。</span><span class="sxs-lookup"><span data-stu-id="ed99d-123">The following are the possible XPath expressions to this element:</span></span> <br/> <br/>  `/SetUserOofSettingsRequest/UserOofSettings/Duration` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/Duration` <br/> |
-|[<span data-ttu-id="ed99d-124">CalendarEvent</span><span class="sxs-lookup"><span data-stu-id="ed99d-124">CalendarEvent</span></span>](calendarevent.md) <br/> |<span data-ttu-id="ed99d-125">独自の予定表アイテムの出現を表します。</span><span class="sxs-lookup"><span data-stu-id="ed99d-125">Represents a unique calendar item occurrence.</span></span> <span data-ttu-id="ed99d-126">可用性の照会のために使用します。</span><span class="sxs-lookup"><span data-stu-id="ed99d-126">This is used for Availability inquiries.</span></span> <span data-ttu-id="ed99d-127">**CalendarEvent**要素の**開始**要素が必要です。</span><span class="sxs-lookup"><span data-stu-id="ed99d-127">The **StartTime** element is required in the **CalendarEvent** element.</span></span> <span data-ttu-id="ed99d-128">**CalendarEvent**要素の**開始時刻**の要素は、**期間**の種類の**開始時刻**の要素が含まれているのと同じファセット値が含まれていますが**CalendarEvent**の種類に固有です。</span><span class="sxs-lookup"><span data-stu-id="ed99d-128">The **StartTime** element in the **CalendarEvent** element is unique to the **CalendarEvent** type although it contains the same facet values that the **StartTime** elements in the **Duration** type contain.</span></span>  <br/><br/> <span data-ttu-id="ed99d-129">この要素への XPath 式は、次のようにします。</span><span class="sxs-lookup"><span data-stu-id="ed99d-129">The following is the XPath expression to this element:</span></span>  <br/> <br/> `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]` <br/> |
+|[<span data-ttu-id="36581-115">TimeWindow</span><span class="sxs-lookup"><span data-stu-id="36581-115">TimeWindow</span></span>](timewindow.md) <br/> |<span data-ttu-id="36581-116">ユーザーの空き時間情報を照会した期間を識別します。</span><span class="sxs-lookup"><span data-stu-id="36581-116">Identifies the time span queried for the user availability information.</span></span>  <br/><br/> <span data-ttu-id="36581-117">この要素の XPath 式を次に示します。</span><span class="sxs-lookup"><span data-stu-id="36581-117">The following is the XPath expression to this element:</span></span>  <br/><br/>  `/GetUserAvailabilityRequest/FreeBusyViewOptions/TimeWindow` <br/> |
+|[<span data-ttu-id="36581-118">DetailedSuggestionsWindow</span><span class="sxs-lookup"><span data-stu-id="36581-118">DetailedSuggestionsWindow</span></span>](detailedsuggestionswindow.md) <br/> |<span data-ttu-id="36581-119">提案された会議時間に関する詳細情報について、クエリされる期間を指定します。</span><span class="sxs-lookup"><span data-stu-id="36581-119">Identifies the time span that is queried for detailed information about suggested meeting times.</span></span>  <br/><br/> <span data-ttu-id="36581-120">この要素の XPath 式を次に示します。</span><span class="sxs-lookup"><span data-stu-id="36581-120">The following is the XPath expression to this element:</span></span> <br/> <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions/DetailedSuggestionsWindow` <br/> |
+|[<span data-ttu-id="36581-121">Duration (UserOofSettings)</span><span class="sxs-lookup"><span data-stu-id="36581-121">Duration (UserOofSettings)</span></span>](duration-useroofsettings.md) <br/> | <span data-ttu-id="36581-122">[Oofstate](oofstate.md)要素が [**スケジュール済み**] に設定されている場合に、不在時 (OOF) の状態が有効になる期間を指定します。</span><span class="sxs-lookup"><span data-stu-id="36581-122">Specifies the duration for which the Out of Office (OOF) status is enabled if the [OofState](oofstate.md) element is set to **Scheduled**.</span></span>  <br/><br/>  <span data-ttu-id="36581-123">この要素に使用できる XPath 式は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="36581-123">The following are the possible XPath expressions to this element:</span></span> <br/> <br/>  `/SetUserOofSettingsRequest/UserOofSettings/Duration` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/Duration` <br/> |
+|[<span data-ttu-id="36581-124">CalendarEvent</span><span class="sxs-lookup"><span data-stu-id="36581-124">CalendarEvent</span></span>](calendarevent.md) <br/> |<span data-ttu-id="36581-125">一意の予定表アイテムの出現を表します。</span><span class="sxs-lookup"><span data-stu-id="36581-125">Represents a unique calendar item occurrence.</span></span> <span data-ttu-id="36581-126">これは、可用性の照会に使用されます。</span><span class="sxs-lookup"><span data-stu-id="36581-126">This is used for Availability inquiries.</span></span> <span data-ttu-id="36581-127">**CalendarEvent**要素では、 **StartTime**要素を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="36581-127">The **StartTime** element is required in the **CalendarEvent** element.</span></span> <span data-ttu-id="36581-128">**CalendarEvent**要素の**starttime**要素は、 **CalendarEvent**型に対して一意ですが、 **Duration**型の**starttime**要素に含まれているのと同じファセット値が含まれています。</span><span class="sxs-lookup"><span data-stu-id="36581-128">The **StartTime** element in the **CalendarEvent** element is unique to the **CalendarEvent** type although it contains the same facet values that the **StartTime** elements in the **Duration** type contain.</span></span>  <br/><br/> <span data-ttu-id="36581-129">この要素の XPath 式を次に示します。</span><span class="sxs-lookup"><span data-stu-id="36581-129">The following is the XPath expression to this element:</span></span>  <br/> <br/> `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]` <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="ed99d-130">テキスト値</span><span class="sxs-lookup"><span data-stu-id="ed99d-130">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="36581-130">テキスト値</span><span class="sxs-lookup"><span data-stu-id="36581-130">Text value</span></span>
 
-<span data-ttu-id="ed99d-131">テキスト値は必須です。</span><span class="sxs-lookup"><span data-stu-id="ed99d-131">A text value is required.</span></span>
+<span data-ttu-id="36581-131">テキスト値は必須です。</span><span class="sxs-lookup"><span data-stu-id="36581-131">A text value is required.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="ed99d-132">備考</span><span class="sxs-lookup"><span data-stu-id="ed99d-132">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="36581-132">注釈</span><span class="sxs-lookup"><span data-stu-id="36581-132">Remarks</span></span>
 
-<span data-ttu-id="ed99d-133">[終了時刻](endtime.md)の要素では、期間の終了を表します。</span><span class="sxs-lookup"><span data-stu-id="ed99d-133">The [EndTime](endtime.md) element represents the end of the time span.</span></span> 
+<span data-ttu-id="36581-133">[EndTime](endtime.md)要素は、期間の最後の部分を表します。</span><span class="sxs-lookup"><span data-stu-id="36581-133">The [EndTime](endtime.md) element represents the end of the time span.</span></span> 
   
-<span data-ttu-id="ed99d-134">スキーマには、[開始時刻](starttime.md)の多くの要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="ed99d-134">The schema includes many [StartTime](starttime.md) elements.</span></span> 
+<span data-ttu-id="36581-134">スキーマには、いくつかの[StartTime](starttime.md)要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="36581-134">The schema includes many [StartTime](starttime.md) elements.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="ed99d-135">MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。</span><span class="sxs-lookup"><span data-stu-id="ed99d-135">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span> 
+> <span data-ttu-id="36581-135">この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="36581-135">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span> 
   
-## <a name="element-information"></a><span data-ttu-id="ed99d-136">要素情報</span><span class="sxs-lookup"><span data-stu-id="ed99d-136">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="36581-136">要素の情報</span><span class="sxs-lookup"><span data-stu-id="36581-136">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="ed99d-137">名前空間</span><span class="sxs-lookup"><span data-stu-id="ed99d-137">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="ed99d-138">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="ed99d-138">Schema Name</span></span>  <br/> |<span data-ttu-id="ed99d-139">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="ed99d-139">Types schema</span></span>  <br/> |
-|<span data-ttu-id="ed99d-140">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="ed99d-140">Validation File</span></span>  <br/> |<span data-ttu-id="ed99d-141">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="ed99d-141">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="ed99d-142">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="ed99d-142">Can be Empty</span></span>  <br/> |<span data-ttu-id="ed99d-143">False</span><span class="sxs-lookup"><span data-stu-id="ed99d-143">False</span></span>  <br/> |
+|<span data-ttu-id="36581-137">Namespace</span><span class="sxs-lookup"><span data-stu-id="36581-137">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="36581-138">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="36581-138">Schema Name</span></span>  <br/> |<span data-ttu-id="36581-139">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="36581-139">Types schema</span></span>  <br/> |
+|<span data-ttu-id="36581-140">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="36581-140">Validation File</span></span>  <br/> |<span data-ttu-id="36581-141">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="36581-141">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="36581-142">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="36581-142">Can be Empty</span></span>  <br/> |<span data-ttu-id="36581-143">正しくない</span><span class="sxs-lookup"><span data-stu-id="36581-143">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="ed99d-144">関連項目</span><span class="sxs-lookup"><span data-stu-id="ed99d-144">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="36581-144">関連項目</span><span class="sxs-lookup"><span data-stu-id="36581-144">See also</span></span>
 
-- [<span data-ttu-id="ed99d-145">GetUserAvailability 操作</span><span class="sxs-lookup"><span data-stu-id="ed99d-145">GetUserAvailability operation</span></span>](getuseravailability-operation.md)
-- [<span data-ttu-id="ed99d-146">ユーザーの状態を取得します。</span><span class="sxs-lookup"><span data-stu-id="ed99d-146">Getting User Availability</span></span>](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [<span data-ttu-id="36581-145">GetUserAvailability 操作</span><span class="sxs-lookup"><span data-stu-id="36581-145">GetUserAvailability operation</span></span>](getuseravailability-operation.md)
+- [<span data-ttu-id="36581-146">ユーザーの空き時間情報の取得</span><span class="sxs-lookup"><span data-stu-id="36581-146">Getting User Availability</span></span>](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

@@ -8,64 +8,64 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 962036c9-9b13-4669-bed2-2502c0f5aabe
-description: RequestedVersion 要素は、クライアントが要求の処理を依頼する最低限のサービスのバージョンを指定します。
-ms.openlocfilehash: 0d8682c33790d2d26001512ad9e2191ae52074d0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: RequestedVersion 要素は、クライアントが要求を処理する必要のある最小サービスバージョンを指定します。
+ms.openlocfilehash: ded276b3eb2c70b6edd39ca12289098de2b3faea
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833134"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459168"
 ---
-# <a name="requestedversion-soap"></a><span data-ttu-id="9d055-103">RequestedVersion (SOAP)</span><span class="sxs-lookup"><span data-stu-id="9d055-103">RequestedVersion (SOAP)</span></span>
+# <a name="requestedversion-soap"></a><span data-ttu-id="51aec-103">RequestedVersion (SOAP)</span><span class="sxs-lookup"><span data-stu-id="51aec-103">RequestedVersion (SOAP)</span></span>
 
-<span data-ttu-id="9d055-104">**RequestedVersion**要素は、クライアントが要求の処理を依頼する最低限のサービスのバージョンを指定します。</span><span class="sxs-lookup"><span data-stu-id="9d055-104">The **RequestedVersion** element specifies the minimum service version that the client wants the request to be processed on.</span></span> 
+<span data-ttu-id="51aec-104">**Requestedversion**要素は、クライアントが要求を処理する必要のある最小サービスバージョンを指定します。</span><span class="sxs-lookup"><span data-stu-id="51aec-104">The **RequestedVersion** element specifies the minimum service version that the client wants the request to be processed on.</span></span> 
   
 ```XML
 <RequestedVersion/>
 ```
 
- <span data-ttu-id="9d055-105">**ExchangeVersion**</span><span class="sxs-lookup"><span data-stu-id="9d055-105">**ExchangeVersion**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="9d055-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="9d055-106">Attributes and elements</span></span>
+ <span data-ttu-id="51aec-105">**ExchangeVersion**</span><span class="sxs-lookup"><span data-stu-id="51aec-105">**ExchangeVersion**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="51aec-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="51aec-106">Attributes and elements</span></span>
 
-<span data-ttu-id="9d055-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="9d055-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="51aec-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="51aec-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="9d055-108">属性</span><span class="sxs-lookup"><span data-stu-id="9d055-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="51aec-108">属性</span><span class="sxs-lookup"><span data-stu-id="51aec-108">Attributes</span></span>
 
-<span data-ttu-id="9d055-109">なし。</span><span class="sxs-lookup"><span data-stu-id="9d055-109">None.</span></span>
+<span data-ttu-id="51aec-109">なし。</span><span class="sxs-lookup"><span data-stu-id="51aec-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="9d055-110">子要素</span><span class="sxs-lookup"><span data-stu-id="9d055-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="51aec-110">子要素</span><span class="sxs-lookup"><span data-stu-id="51aec-110">Child elements</span></span>
 
-<span data-ttu-id="9d055-111">なし。</span><span class="sxs-lookup"><span data-stu-id="9d055-111">None.</span></span>
+<span data-ttu-id="51aec-111">なし。</span><span class="sxs-lookup"><span data-stu-id="51aec-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="9d055-112">親要素</span><span class="sxs-lookup"><span data-stu-id="9d055-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="51aec-112">親要素</span><span class="sxs-lookup"><span data-stu-id="51aec-112">Parent elements</span></span>
 
-|<span data-ttu-id="9d055-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="9d055-113">**Element**</span></span>|<span data-ttu-id="9d055-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="9d055-114">**Description**</span></span>|
+|<span data-ttu-id="51aec-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="51aec-113">**Element**</span></span>|<span data-ttu-id="51aec-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="51aec-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="9d055-115">要求 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="9d055-115">Request (SOAP)</span></span>](request-soap.md) <br/> |<span data-ttu-id="9d055-116">要求された構成設定とユーザーを対象に含まれています。</span><span class="sxs-lookup"><span data-stu-id="9d055-116">Contains the requested configuration settings and the target users.</span></span>  <br/> |
-|[<span data-ttu-id="9d055-117">要求 (GetDomainSettings) (SOAP)</span><span class="sxs-lookup"><span data-stu-id="9d055-117">Request (GetDomainSettings) (SOAP)</span></span>](request-getdomainsettingssoap.md) <br/> |<span data-ttu-id="9d055-118">ドメインの設定を取得する要求を表します。</span><span class="sxs-lookup"><span data-stu-id="9d055-118">Represents a request to get domain settings.</span></span>  <br/> |
+|[<span data-ttu-id="51aec-115">要求 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="51aec-115">Request (SOAP)</span></span>](request-soap.md) <br/> |<span data-ttu-id="51aec-116">要求された構成設定と対象ユーザーが含まれます。</span><span class="sxs-lookup"><span data-stu-id="51aec-116">Contains the requested configuration settings and the target users.</span></span>  <br/> |
+|[<span data-ttu-id="51aec-117">Request (GetDomainSettings) (SOAP)</span><span class="sxs-lookup"><span data-stu-id="51aec-117">Request (GetDomainSettings) (SOAP)</span></span>](request-getdomainsettingssoap.md) <br/> |<span data-ttu-id="51aec-118">ドメイン設定を取得するための要求を表します。</span><span class="sxs-lookup"><span data-stu-id="51aec-118">Represents a request to get domain settings.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="9d055-119">テキスト値</span><span class="sxs-lookup"><span data-stu-id="9d055-119">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="51aec-119">テキスト値</span><span class="sxs-lookup"><span data-stu-id="51aec-119">Text value</span></span>
 
-<span data-ttu-id="9d055-120">**RequestedVersion**要素のテキスト値には、Exchange2010、Exchange2010_SP1、Exchange2010_SP2、または Exchange2013 を指定できます。</span><span class="sxs-lookup"><span data-stu-id="9d055-120">The text value for the **RequestedVersion** element can be Exchange2010, Exchange2010_SP1, Exchange2010_SP2, or Exchange2013.</span></span>
+<span data-ttu-id="51aec-120">**Requestedversion**要素のテキスト値には、Exchange2010、Exchange2010_SP1、Exchange2010_SP2、または Exchange2013 を指定できます。</span><span class="sxs-lookup"><span data-stu-id="51aec-120">The text value for the **RequestedVersion** element can be Exchange2010, Exchange2010_SP1, Exchange2010_SP2, or Exchange2013.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="9d055-121">備考</span><span class="sxs-lookup"><span data-stu-id="9d055-121">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="51aec-121">注釈</span><span class="sxs-lookup"><span data-stu-id="51aec-121">Remarks</span></span>
 
-<span data-ttu-id="9d055-122">この要素が存在しない場合は、サービスの最新バージョンが使用されます。</span><span class="sxs-lookup"><span data-stu-id="9d055-122">If this element is not present, the latest service version is used.</span></span>
+<span data-ttu-id="51aec-122">この要素が存在しない場合は、最新のサービスバージョンが使用されます。</span><span class="sxs-lookup"><span data-stu-id="51aec-122">If this element is not present, the latest service version is used.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="9d055-123">要素情報</span><span class="sxs-lookup"><span data-stu-id="9d055-123">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="51aec-123">要素の情報</span><span class="sxs-lookup"><span data-stu-id="51aec-123">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="9d055-124">名前空間</span><span class="sxs-lookup"><span data-stu-id="9d055-124">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|<span data-ttu-id="9d055-125">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="9d055-125">Schema Name</span></span>  <br/> |<span data-ttu-id="9d055-126">スキーマの自動検出</span><span class="sxs-lookup"><span data-stu-id="9d055-126">Autodiscover schema</span></span>  <br/> |
-|<span data-ttu-id="9d055-127">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="9d055-127">Validation File</span></span>  <br/> |<span data-ttu-id="9d055-128">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="9d055-128">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="9d055-129">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="9d055-129">Can be Empty</span></span>  <br/> |<span data-ttu-id="9d055-130">False</span><span class="sxs-lookup"><span data-stu-id="9d055-130">False</span></span>  <br/> |
+|<span data-ttu-id="51aec-124">Namespace</span><span class="sxs-lookup"><span data-stu-id="51aec-124">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|<span data-ttu-id="51aec-125">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="51aec-125">Schema Name</span></span>  <br/> |<span data-ttu-id="51aec-126">自動検出スキーマ</span><span class="sxs-lookup"><span data-stu-id="51aec-126">Autodiscover schema</span></span>  <br/> |
+|<span data-ttu-id="51aec-127">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="51aec-127">Validation File</span></span>  <br/> |<span data-ttu-id="51aec-128">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="51aec-128">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="51aec-129">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="51aec-129">Can be Empty</span></span>  <br/> |<span data-ttu-id="51aec-130">正しくない</span><span class="sxs-lookup"><span data-stu-id="51aec-130">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="9d055-131">関連項目</span><span class="sxs-lookup"><span data-stu-id="9d055-131">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="51aec-131">関連項目</span><span class="sxs-lookup"><span data-stu-id="51aec-131">See also</span></span>
 
 
 
-[<span data-ttu-id="9d055-132">GetUserSettings 操作 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="9d055-132">GetUserSettings operation (SOAP)</span></span>](getusersettings-operation-soap.md)
+[<span data-ttu-id="51aec-132">GetUserSettings 操作 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="51aec-132">GetUserSettings operation (SOAP)</span></span>](getusersettings-operation-soap.md)
   
-[<span data-ttu-id="9d055-133">GetDomainSettings 操作 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="9d055-133">GetDomainSettings operation (SOAP)</span></span>](getdomainsettings-operation-soap.md)
+[<span data-ttu-id="51aec-133">GetDomainSettings 操作 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="51aec-133">GetDomainSettings operation (SOAP)</span></span>](getdomainsettings-operation-soap.md)
 

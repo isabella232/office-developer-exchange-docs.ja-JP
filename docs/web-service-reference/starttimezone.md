@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d38c4dc1-4ecb-42a1-8d57-a451b16a2de2
-description: StartTimeZone 要素は、カレンダー項目または MeetingRequest の開始時刻のタイム ゾーンを定義します。
-ms.openlocfilehash: 6d21869c4b3be048db27dcc9f128fff868aebcb5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: StartTimeZone 要素は、CalendarItem または会議要求の開始時刻のタイムゾーンを定義します。
+ms.openlocfilehash: fa88f676c0f6a7a2e934f51274942ed3bccbc789
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833559"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458524"
 ---
-# <a name="starttimezone"></a><span data-ttu-id="93eb6-103">StartTimeZone</span><span class="sxs-lookup"><span data-stu-id="93eb6-103">StartTimeZone</span></span>
+# <a name="starttimezone"></a><span data-ttu-id="79a97-103">StartTimeZone</span><span class="sxs-lookup"><span data-stu-id="79a97-103">StartTimeZone</span></span>
 
-<span data-ttu-id="93eb6-104">**StartTimeZone**要素は、[カレンダー項目](calendaritem.md)または[MeetingRequest](meetingrequest.md)の開始時刻のタイム ゾーンを定義します。</span><span class="sxs-lookup"><span data-stu-id="93eb6-104">The **StartTimeZone** element defines the time zone for the start time of a [CalendarItem](calendaritem.md) or [MeetingRequest](meetingrequest.md).</span></span>
+<span data-ttu-id="79a97-104">**Starttimezone**要素は、 [Calendaritem](calendaritem.md)または[会議要求](meetingrequest.md)の開始時刻のタイムゾーンを定義します。</span><span class="sxs-lookup"><span data-stu-id="79a97-104">The **StartTimeZone** element defines the time zone for the start time of a [CalendarItem](calendaritem.md) or [MeetingRequest](meetingrequest.md).</span></span>
   
 ```xml
 <StartTimeZone Id="" Name="">
@@ -31,48 +31,48 @@ ms.locfileid: "19833559"
 </StartTimeZone>
 ```
 
-<span data-ttu-id="93eb6-105">**TimeZoneDefinitionType**</span><span class="sxs-lookup"><span data-stu-id="93eb6-105">**TimeZoneDefinitionType**</span></span>
+<span data-ttu-id="79a97-105">**TimeZoneDefinitionType**</span><span class="sxs-lookup"><span data-stu-id="79a97-105">**TimeZoneDefinitionType**</span></span>
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="93eb6-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="93eb6-106">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="79a97-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="79a97-106">Attributes and elements</span></span>
 
-<span data-ttu-id="93eb6-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="93eb6-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="79a97-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="79a97-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="93eb6-108">属性</span><span class="sxs-lookup"><span data-stu-id="93eb6-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="79a97-108">属性</span><span class="sxs-lookup"><span data-stu-id="79a97-108">Attributes</span></span>
 
-|<span data-ttu-id="93eb6-109">**属性**</span><span class="sxs-lookup"><span data-stu-id="93eb6-109">**Attribute**</span></span>|<span data-ttu-id="93eb6-110">**説明**</span><span class="sxs-lookup"><span data-stu-id="93eb6-110">**Description**</span></span>|
+|<span data-ttu-id="79a97-109">**属性**</span><span class="sxs-lookup"><span data-stu-id="79a97-109">**Attribute**</span></span>|<span data-ttu-id="79a97-110">**説明**</span><span class="sxs-lookup"><span data-stu-id="79a97-110">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="93eb6-111">ID</span><span class="sxs-lookup"><span data-stu-id="93eb6-111">Id</span></span>  <br/> |<span data-ttu-id="93eb6-112">タイム ゾーン定義の一意の識別子を表します。</span><span class="sxs-lookup"><span data-stu-id="93eb6-112">Represents the unique identifier of the time zone definition.</span></span>  <br/> |
-|<span data-ttu-id="93eb6-113">名前</span><span class="sxs-lookup"><span data-stu-id="93eb6-113">Name</span></span>  <br/> |<span data-ttu-id="93eb6-114">タイム ゾーン定義のわかりやすい名前を表します。</span><span class="sxs-lookup"><span data-stu-id="93eb6-114">Represents the descriptive name of the time zone definition.</span></span>  <br/> |
+|<span data-ttu-id="79a97-111">ID</span><span class="sxs-lookup"><span data-stu-id="79a97-111">Id</span></span>  <br/> |<span data-ttu-id="79a97-112">タイムゾーン定義の一意識別子を表します。</span><span class="sxs-lookup"><span data-stu-id="79a97-112">Represents the unique identifier of the time zone definition.</span></span>  <br/> |
+|<span data-ttu-id="79a97-113">名前</span><span class="sxs-lookup"><span data-stu-id="79a97-113">Name</span></span>  <br/> |<span data-ttu-id="79a97-114">タイムゾーン定義のわかりやすい名前を表します。</span><span class="sxs-lookup"><span data-stu-id="79a97-114">Represents the descriptive name of the time zone definition.</span></span>  <br/> |
    
-### <a name="child-elements"></a><span data-ttu-id="93eb6-115">子要素</span><span class="sxs-lookup"><span data-stu-id="93eb6-115">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="79a97-115">子要素</span><span class="sxs-lookup"><span data-stu-id="79a97-115">Child elements</span></span>
 
-|<span data-ttu-id="93eb6-116">**要素**</span><span class="sxs-lookup"><span data-stu-id="93eb6-116">**Element**</span></span>|<span data-ttu-id="93eb6-117">**説明**</span><span class="sxs-lookup"><span data-stu-id="93eb6-117">**Description**</span></span>|
+|<span data-ttu-id="79a97-116">**Element**</span><span class="sxs-lookup"><span data-stu-id="79a97-116">**Element**</span></span>|<span data-ttu-id="79a97-117">**説明**</span><span class="sxs-lookup"><span data-stu-id="79a97-117">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="93eb6-118">Periods</span><span class="sxs-lookup"><span data-stu-id="93eb6-118">Periods</span></span>](periods.md) <br/> |<span data-ttu-id="93eb6-119">タイム ゾーンのさまざまな段階での時刻のオフセットを定義する[期間](period.md)の要素の配列を表します。</span><span class="sxs-lookup"><span data-stu-id="93eb6-119">Represents an array of [Period](period.md) elements that define the time offset at different stages of the time zone.</span></span>  <br/> |
-|[<span data-ttu-id="93eb6-120">TransitionsGroups</span><span class="sxs-lookup"><span data-stu-id="93eb6-120">TransitionsGroups</span></span>](transitionsgroups.md) <br/> |<span data-ttu-id="93eb6-121">タイムゾーンの遷移を指定する[TransitionsGroup](transitionsgroup.md)要素の配列を表します。</span><span class="sxs-lookup"><span data-stu-id="93eb6-121">Represents an array of [TransitionsGroup](transitionsgroup.md) elements that specify time zone transitions.</span></span>  <br/> |
-|[<span data-ttu-id="93eb6-122">遷移</span><span class="sxs-lookup"><span data-stu-id="93eb6-122">Transitions</span></span>](transitions.md) <br/> |<span data-ttu-id="93eb6-123">タイム ゾーンの移行の配列を表します。</span><span class="sxs-lookup"><span data-stu-id="93eb6-123">Represents an array of time zone transitions.</span></span>  <br/> |
+|[<span data-ttu-id="79a97-118">Periods</span><span class="sxs-lookup"><span data-stu-id="79a97-118">Periods</span></span>](periods.md) <br/> |<span data-ttu-id="79a97-119">タイムゾーンのさまざまな段階での時間のオフセットを定義する[Period](period.md)要素の配列を表します。</span><span class="sxs-lookup"><span data-stu-id="79a97-119">Represents an array of [Period](period.md) elements that define the time offset at different stages of the time zone.</span></span>  <br/> |
+|[<span data-ttu-id="79a97-120">遷移のグループ</span><span class="sxs-lookup"><span data-stu-id="79a97-120">TransitionsGroups</span></span>](transitionsgroups.md) <br/> |<span data-ttu-id="79a97-121">タイムゾーンの遷移を指定する、[推移 Tionsgroup](transitionsgroup.md)要素の配列を表します。</span><span class="sxs-lookup"><span data-stu-id="79a97-121">Represents an array of [TransitionsGroup](transitionsgroup.md) elements that specify time zone transitions.</span></span>  <br/> |
+|[<span data-ttu-id="79a97-122">切り替わる</span><span class="sxs-lookup"><span data-stu-id="79a97-122">Transitions</span></span>](transitions.md) <br/> |<span data-ttu-id="79a97-123">タイムゾーンの切り替えの配列を表します。</span><span class="sxs-lookup"><span data-stu-id="79a97-123">Represents an array of time zone transitions.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="93eb6-124">親要素</span><span class="sxs-lookup"><span data-stu-id="93eb6-124">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="79a97-124">親要素</span><span class="sxs-lookup"><span data-stu-id="79a97-124">Parent elements</span></span>
 
-|<span data-ttu-id="93eb6-125">**要素**</span><span class="sxs-lookup"><span data-stu-id="93eb6-125">**Element**</span></span>|<span data-ttu-id="93eb6-126">**説明**</span><span class="sxs-lookup"><span data-stu-id="93eb6-126">**Description**</span></span>|
+|<span data-ttu-id="79a97-125">**要素**</span><span class="sxs-lookup"><span data-stu-id="79a97-125">**Element**</span></span>|<span data-ttu-id="79a97-126">**説明**</span><span class="sxs-lookup"><span data-stu-id="79a97-126">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="93eb6-127">カレンダー項目</span><span class="sxs-lookup"><span data-stu-id="93eb6-127">CalendarItem</span></span>](calendaritem.md) <br/> |<span data-ttu-id="93eb6-128">Exchange 予定表アイテムを表します。</span><span class="sxs-lookup"><span data-stu-id="93eb6-128">Represents an Exchange calendar item.</span></span>  <br/> |
-|[<span data-ttu-id="93eb6-129">MeetingRequest</span><span class="sxs-lookup"><span data-stu-id="93eb6-129">MeetingRequest</span></span>](meetingrequest.md) <br/> |<span data-ttu-id="93eb6-130">Exchange ストア内の会議出席依頼を表します。</span><span class="sxs-lookup"><span data-stu-id="93eb6-130">Represents a meeting request in the Exchange store.</span></span>  <br/> |
+|[<span data-ttu-id="79a97-127">CalendarItem</span><span class="sxs-lookup"><span data-stu-id="79a97-127">CalendarItem</span></span>](calendaritem.md) <br/> |<span data-ttu-id="79a97-128">Exchange の予定表アイテムを表します。</span><span class="sxs-lookup"><span data-stu-id="79a97-128">Represents an Exchange calendar item.</span></span>  <br/> |
+|[<span data-ttu-id="79a97-129">MeetingRequest</span><span class="sxs-lookup"><span data-stu-id="79a97-129">MeetingRequest</span></span>](meetingrequest.md) <br/> |<span data-ttu-id="79a97-130">Exchange ストア内の会議出席依頼を表します。</span><span class="sxs-lookup"><span data-stu-id="79a97-130">Represents a meeting request in the Exchange store.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="93eb6-131">備考</span><span class="sxs-lookup"><span data-stu-id="93eb6-131">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="79a97-131">注釈</span><span class="sxs-lookup"><span data-stu-id="79a97-131">Remarks</span></span>
 
-<span data-ttu-id="93eb6-132">この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの EWS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="93eb6-132">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server that has the Client Access server role installed.</span></span>
+<span data-ttu-id="79a97-132">この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの EWS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="79a97-132">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="93eb6-133">要素情報</span><span class="sxs-lookup"><span data-stu-id="93eb6-133">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="79a97-133">要素の情報</span><span class="sxs-lookup"><span data-stu-id="79a97-133">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="93eb6-134">名前空間</span><span class="sxs-lookup"><span data-stu-id="93eb6-134">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="93eb6-135">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="93eb6-135">Schema Name</span></span>  <br/> |<span data-ttu-id="93eb6-136">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="93eb6-136">Types schema</span></span>  <br/> |
-|<span data-ttu-id="93eb6-137">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="93eb6-137">Validation File</span></span>  <br/> |<span data-ttu-id="93eb6-138">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="93eb6-138">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="93eb6-139">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="93eb6-139">Can be Empty</span></span>  <br/> |<span data-ttu-id="93eb6-140">False</span><span class="sxs-lookup"><span data-stu-id="93eb6-140">False</span></span>  <br/> |
+|<span data-ttu-id="79a97-134">Namespace</span><span class="sxs-lookup"><span data-stu-id="79a97-134">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="79a97-135">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="79a97-135">Schema Name</span></span>  <br/> |<span data-ttu-id="79a97-136">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="79a97-136">Types schema</span></span>  <br/> |
+|<span data-ttu-id="79a97-137">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="79a97-137">Validation File</span></span>  <br/> |<span data-ttu-id="79a97-138">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="79a97-138">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="79a97-139">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="79a97-139">Can be Empty</span></span>  <br/> |<span data-ttu-id="79a97-140">正しくない</span><span class="sxs-lookup"><span data-stu-id="79a97-140">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="93eb6-141">関連項目</span><span class="sxs-lookup"><span data-stu-id="93eb6-141">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="79a97-141">関連項目</span><span class="sxs-lookup"><span data-stu-id="79a97-141">See also</span></span>
 
-- [<span data-ttu-id="93eb6-142">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="93eb6-142">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="79a97-142">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="79a97-142">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

@@ -7,72 +7,72 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8f7276aa-e354-40e4-b9cb-950fad46ac93
-description: UniqueBodyType 要素は、一意の本文をテキスト形式または HTML 形式で返すかどうかを指定します。
-ms.openlocfilehash: c6eb4ec4e39a0c5355775a635db4c63efc666820
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: UniqueBodyType 要素は、一意の本文がテキスト形式または HTML 形式のどちらで返されるかを指定します。
+ms.openlocfilehash: 7e6c4631ef589555ce4d5da747c200ffe956f3a1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839796"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459441"
 ---
-# <a name="uniquebodytype"></a><span data-ttu-id="b34f2-103">UniqueBodyType</span><span class="sxs-lookup"><span data-stu-id="b34f2-103">UniqueBodyType</span></span>
+# <a name="uniquebodytype"></a><span data-ttu-id="90aff-103">UniqueBodyType</span><span class="sxs-lookup"><span data-stu-id="90aff-103">UniqueBodyType</span></span>
 
-<span data-ttu-id="b34f2-104">**UniqueBodyType**要素は、一意の本文をテキスト形式または HTML 形式で返すかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="b34f2-104">The **UniqueBodyType** element specifies whether the unique body is returned in text or HTML format.</span></span> 
+<span data-ttu-id="90aff-104">**UniqueBodyType**要素は、一意の本文がテキスト形式または HTML 形式のどちらで返されるかを指定します。</span><span class="sxs-lookup"><span data-stu-id="90aff-104">The **UniqueBodyType** element specifies whether the unique body is returned in text or HTML format.</span></span> 
   
 ```XML
 <UniqueBodyType> Best | HTML | Text </UniqueBodyType>
 ```
 
- <span data-ttu-id="b34f2-105">**BodyTypeResponseType**</span><span class="sxs-lookup"><span data-stu-id="b34f2-105">**BodyTypeResponseType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="b34f2-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="b34f2-106">Attributes and elements</span></span>
+ <span data-ttu-id="90aff-105">**BodyTypeResponseType**</span><span class="sxs-lookup"><span data-stu-id="90aff-105">**BodyTypeResponseType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="90aff-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="90aff-106">Attributes and elements</span></span>
 
-<span data-ttu-id="b34f2-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="b34f2-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="90aff-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="90aff-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="b34f2-108">属性</span><span class="sxs-lookup"><span data-stu-id="b34f2-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="90aff-108">属性</span><span class="sxs-lookup"><span data-stu-id="90aff-108">Attributes</span></span>
 
-<span data-ttu-id="b34f2-109">なし。</span><span class="sxs-lookup"><span data-stu-id="b34f2-109">None.</span></span>
+<span data-ttu-id="90aff-109">なし。</span><span class="sxs-lookup"><span data-stu-id="90aff-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="b34f2-110">子要素</span><span class="sxs-lookup"><span data-stu-id="b34f2-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="90aff-110">子要素</span><span class="sxs-lookup"><span data-stu-id="90aff-110">Child elements</span></span>
 
-<span data-ttu-id="b34f2-111">なし。</span><span class="sxs-lookup"><span data-stu-id="b34f2-111">None.</span></span>
+<span data-ttu-id="90aff-111">なし。</span><span class="sxs-lookup"><span data-stu-id="90aff-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="b34f2-112">親要素</span><span class="sxs-lookup"><span data-stu-id="b34f2-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="90aff-112">親要素</span><span class="sxs-lookup"><span data-stu-id="90aff-112">Parent elements</span></span>
 
-[<span data-ttu-id="b34f2-113">ItemShape</span><span class="sxs-lookup"><span data-stu-id="b34f2-113">ItemShape</span></span>](itemshape.md)
+[<span data-ttu-id="90aff-113">ItemShape</span><span class="sxs-lookup"><span data-stu-id="90aff-113">ItemShape</span></span>](itemshape.md)
   
-## <a name="text-value"></a><span data-ttu-id="b34f2-114">テキスト値</span><span class="sxs-lookup"><span data-stu-id="b34f2-114">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="90aff-114">テキスト値</span><span class="sxs-lookup"><span data-stu-id="90aff-114">Text value</span></span>
 
-<span data-ttu-id="b34f2-115">**UniqueBodyType**要素のテキスト値に固有の本文の形式が返されることを示します。</span><span class="sxs-lookup"><span data-stu-id="b34f2-115">The text value of the **UniqueBodyType** element indicates format the unique body is returned in.</span></span> <span data-ttu-id="b34f2-116">次の表は、この要素の有効な値を一覧します。</span><span class="sxs-lookup"><span data-stu-id="b34f2-116">The following table lists the possible values for this element.</span></span> 
+<span data-ttu-id="90aff-115">**UniqueBodyType**要素のテキスト値は、で一意の本文が返される形式を示します。</span><span class="sxs-lookup"><span data-stu-id="90aff-115">The text value of the **UniqueBodyType** element indicates format the unique body is returned in.</span></span> <span data-ttu-id="90aff-116">次の表に、この要素で使用できる値を示します。</span><span class="sxs-lookup"><span data-stu-id="90aff-116">The following table lists the possible values for this element.</span></span> 
   
 ****
 
-|<span data-ttu-id="b34f2-117">**値**</span><span class="sxs-lookup"><span data-stu-id="b34f2-117">**Value**</span></span>|<span data-ttu-id="b34f2-118">**説明**</span><span class="sxs-lookup"><span data-stu-id="b34f2-118">**Description**</span></span>|
+|<span data-ttu-id="90aff-117">**値**</span><span class="sxs-lookup"><span data-stu-id="90aff-117">**Value**</span></span>|<span data-ttu-id="90aff-118">**説明**</span><span class="sxs-lookup"><span data-stu-id="90aff-118">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="b34f2-119">ベスト</span><span class="sxs-lookup"><span data-stu-id="b34f2-119">Best</span></span>  <br/> |<span data-ttu-id="b34f2-120">応答には、本文テキストの豊富な利用可能なコンテンツが返されます。</span><span class="sxs-lookup"><span data-stu-id="b34f2-120">The response will return the richest available content of body text.</span></span> <span data-ttu-id="b34f2-121">これは、コンテンツは、テキストまたは html 形式かどうか不明ではない場合に便利です。</span><span class="sxs-lookup"><span data-stu-id="b34f2-121">This is useful if it is unknown whether the content is text or HTML.</span></span>  <br/> <span data-ttu-id="b34f2-122">ストアド本文がテキスト形式の場合は、返された本文をテキストになります。</span><span class="sxs-lookup"><span data-stu-id="b34f2-122">The returned body will be text if the stored body is plain text.</span></span> <span data-ttu-id="b34f2-123">それ以外の場合、応答であっても、ストアドの本文が HTML または rtf 形式のいずれかの形式では場合、HTML が返されます。</span><span class="sxs-lookup"><span data-stu-id="b34f2-123">Otherwise, the response will return HTML if the stored body is in either HTML or RTF format.</span></span>  <br/> <span data-ttu-id="b34f2-124">既定値です。</span><span class="sxs-lookup"><span data-stu-id="b34f2-124">This is the default value.</span></span>  <br/> |
-|<span data-ttu-id="b34f2-125">HTML</span><span class="sxs-lookup"><span data-stu-id="b34f2-125">HTML</span></span>  <br/> |<span data-ttu-id="b34f2-126">応答は html 形式で一意の本文を返します。</span><span class="sxs-lookup"><span data-stu-id="b34f2-126">The response will return a unique body as HTML.</span></span>  <br/> |
-|<span data-ttu-id="b34f2-127">テキスト型 (Text)</span><span class="sxs-lookup"><span data-stu-id="b34f2-127">Text</span></span>  <br/> |<span data-ttu-id="b34f2-128">応答では、プレーン テキストとして独自の本文を返します。</span><span class="sxs-lookup"><span data-stu-id="b34f2-128">The response will return a unique body as plain text.</span></span>  <br/> |
+|<span data-ttu-id="90aff-119">高</span><span class="sxs-lookup"><span data-stu-id="90aff-119">Best</span></span>  <br/> |<span data-ttu-id="90aff-120">応答によって、本文の中で最も豊富な利用可能なコンテンツが返されます。</span><span class="sxs-lookup"><span data-stu-id="90aff-120">The response will return the richest available content of body text.</span></span> <span data-ttu-id="90aff-121">これは、コンテンツがテキストであるか HTML であるかにかかわらず、不明な場合に便利です。</span><span class="sxs-lookup"><span data-stu-id="90aff-121">This is useful if it is unknown whether the content is text or HTML.</span></span>  <br/> <span data-ttu-id="90aff-122">保存された本文がプレーンテキストの場合、返される本文はテキストになります。</span><span class="sxs-lookup"><span data-stu-id="90aff-122">The returned body will be text if the stored body is plain text.</span></span> <span data-ttu-id="90aff-123">それ以外の場合、保存された本文が HTML または RTF 形式の場合、応答は HTML を返します。</span><span class="sxs-lookup"><span data-stu-id="90aff-123">Otherwise, the response will return HTML if the stored body is in either HTML or RTF format.</span></span>  <br/> <span data-ttu-id="90aff-124">これは既定の値です。</span><span class="sxs-lookup"><span data-stu-id="90aff-124">This is the default value.</span></span>  <br/> |
+|<span data-ttu-id="90aff-125">HTML</span><span class="sxs-lookup"><span data-stu-id="90aff-125">HTML</span></span>  <br/> |<span data-ttu-id="90aff-126">応答は、一意の本文を HTML として返します。</span><span class="sxs-lookup"><span data-stu-id="90aff-126">The response will return a unique body as HTML.</span></span>  <br/> |
+|<span data-ttu-id="90aff-127">テキスト</span><span class="sxs-lookup"><span data-stu-id="90aff-127">Text</span></span>  <br/> |<span data-ttu-id="90aff-128">応答は、プレーンテキストとして一意の本文を返します。</span><span class="sxs-lookup"><span data-stu-id="90aff-128">The response will return a unique body as plain text.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="b34f2-129">備考</span><span class="sxs-lookup"><span data-stu-id="b34f2-129">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="90aff-129">注釈</span><span class="sxs-lookup"><span data-stu-id="90aff-129">Remarks</span></span>
 
-<span data-ttu-id="b34f2-130">この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。</span><span class="sxs-lookup"><span data-stu-id="b34f2-130">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
+<span data-ttu-id="90aff-130">この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。</span><span class="sxs-lookup"><span data-stu-id="90aff-130">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
   
-<span data-ttu-id="b34f2-131">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="b34f2-131">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="90aff-131">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="90aff-131">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="b34f2-132">要素情報</span><span class="sxs-lookup"><span data-stu-id="b34f2-132">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="90aff-132">要素の情報</span><span class="sxs-lookup"><span data-stu-id="90aff-132">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="b34f2-133">名前空間</span><span class="sxs-lookup"><span data-stu-id="b34f2-133">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="b34f2-134">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="b34f2-134">Schema Name</span></span>  <br/> |<span data-ttu-id="b34f2-135">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="b34f2-135">Types schema</span></span>  <br/> |
-|<span data-ttu-id="b34f2-136">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="b34f2-136">Validation File</span></span>  <br/> |<span data-ttu-id="b34f2-137">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="b34f2-137">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="b34f2-138">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="b34f2-138">Can be Empty</span></span>  <br/> |<span data-ttu-id="b34f2-139">True</span><span class="sxs-lookup"><span data-stu-id="b34f2-139">True</span></span>  <br/> |
+|<span data-ttu-id="90aff-133">Namespace</span><span class="sxs-lookup"><span data-stu-id="90aff-133">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="90aff-134">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="90aff-134">Schema Name</span></span>  <br/> |<span data-ttu-id="90aff-135">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="90aff-135">Types schema</span></span>  <br/> |
+|<span data-ttu-id="90aff-136">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="90aff-136">Validation File</span></span>  <br/> |<span data-ttu-id="90aff-137">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="90aff-137">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="90aff-138">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="90aff-138">Can be Empty</span></span>  <br/> |<span data-ttu-id="90aff-139">正しい</span><span class="sxs-lookup"><span data-stu-id="90aff-139">True</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="b34f2-140">関連項目</span><span class="sxs-lookup"><span data-stu-id="b34f2-140">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="90aff-140">関連項目</span><span class="sxs-lookup"><span data-stu-id="90aff-140">See also</span></span>
 
 
 
-[<span data-ttu-id="b34f2-141">ItemShape</span><span class="sxs-lookup"><span data-stu-id="b34f2-141">ItemShape</span></span>](itemshape.md)
+[<span data-ttu-id="90aff-141">ItemShape</span><span class="sxs-lookup"><span data-stu-id="90aff-141">ItemShape</span></span>](itemshape.md)
 
 
-- [<span data-ttu-id="b34f2-142">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="b34f2-142">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="90aff-142">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="90aff-142">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

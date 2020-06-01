@@ -11,61 +11,61 @@ api_name:
 api_type:
 - schema
 ms.assetid: 359a9085-50c0-4c94-8a12-216339ba2018
-description: SIPResponseText 要素は、SIP 応答のテキストを指定します。
-ms.openlocfilehash: 3856275c74b51e29db5884ed490715e9f286eb8b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: SIPResponseText 要素は、SIP 応答テキストを指定します。
+ms.openlocfilehash: 6249e4bb651ba62eb99537d0cdec5bea60670f61
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833502"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460464"
 ---
-# <a name="sipresponsetext"></a><span data-ttu-id="418b2-103">SIPResponseText</span><span class="sxs-lookup"><span data-stu-id="418b2-103">SIPResponseText</span></span>
+# <a name="sipresponsetext"></a><span data-ttu-id="42d25-103">SIPResponseText</span><span class="sxs-lookup"><span data-stu-id="42d25-103">SIPResponseText</span></span>
 
-<span data-ttu-id="418b2-104">**SIPResponseText**要素は、SIP 応答のテキストを指定します。</span><span class="sxs-lookup"><span data-stu-id="418b2-104">The **SIPResponseText** element specifies the SIP response text.</span></span> 
+<span data-ttu-id="42d25-104">**SIPResponseText**要素は、SIP 応答テキストを指定します。</span><span class="sxs-lookup"><span data-stu-id="42d25-104">The **SIPResponseText** element specifies the SIP response text.</span></span> 
   
 ```xml
 <SIPResponseText/>
 ```
 
- <span data-ttu-id="418b2-105">**string**</span><span class="sxs-lookup"><span data-stu-id="418b2-105">**string**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="418b2-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="418b2-106">Attributes and elements</span></span>
+ <span data-ttu-id="42d25-105">**string**</span><span class="sxs-lookup"><span data-stu-id="42d25-105">**string**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="42d25-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="42d25-106">Attributes and elements</span></span>
 
-<span data-ttu-id="418b2-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="418b2-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="42d25-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="42d25-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="418b2-108">属性</span><span class="sxs-lookup"><span data-stu-id="418b2-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="42d25-108">属性</span><span class="sxs-lookup"><span data-stu-id="42d25-108">Attributes</span></span>
 
-<span data-ttu-id="418b2-109">なし。</span><span class="sxs-lookup"><span data-stu-id="418b2-109">None.</span></span>
+<span data-ttu-id="42d25-109">なし。</span><span class="sxs-lookup"><span data-stu-id="42d25-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="418b2-110">子要素</span><span class="sxs-lookup"><span data-stu-id="418b2-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="42d25-110">子要素</span><span class="sxs-lookup"><span data-stu-id="42d25-110">Child elements</span></span>
 
-<span data-ttu-id="418b2-111">なし。</span><span class="sxs-lookup"><span data-stu-id="418b2-111">None.</span></span>
+<span data-ttu-id="42d25-111">なし。</span><span class="sxs-lookup"><span data-stu-id="42d25-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="418b2-112">親要素</span><span class="sxs-lookup"><span data-stu-id="418b2-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="42d25-112">親要素</span><span class="sxs-lookup"><span data-stu-id="42d25-112">Parent elements</span></span>
 
-|<span data-ttu-id="418b2-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="418b2-113">**Element**</span></span>|<span data-ttu-id="418b2-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="418b2-114">**Description**</span></span>|
+|<span data-ttu-id="42d25-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="42d25-113">**Element**</span></span>|<span data-ttu-id="42d25-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="42d25-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="418b2-115">PhoneCallInformation</span><span class="sxs-lookup"><span data-stu-id="418b2-115">PhoneCallInformation</span></span>](phonecallinformation.md) <br/> |<span data-ttu-id="418b2-116">電話の状態情報を指定します。</span><span class="sxs-lookup"><span data-stu-id="418b2-116">Specifies the state information for a phone call.</span></span>  <br/> |
+|[<span data-ttu-id="42d25-115">PhoneCallInformation</span><span class="sxs-lookup"><span data-stu-id="42d25-115">PhoneCallInformation</span></span>](phonecallinformation.md) <br/> |<span data-ttu-id="42d25-116">通話の状態情報を指定します。</span><span class="sxs-lookup"><span data-stu-id="42d25-116">Specifies the state information for a phone call.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="418b2-117">テキスト値</span><span class="sxs-lookup"><span data-stu-id="418b2-117">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="42d25-117">テキスト値</span><span class="sxs-lookup"><span data-stu-id="42d25-117">Text value</span></span>
 
-<span data-ttu-id="418b2-118">SIP 応答のテキストです。</span><span class="sxs-lookup"><span data-stu-id="418b2-118">The SIP response text.</span></span>
+<span data-ttu-id="42d25-118">SIP 応答テキスト。</span><span class="sxs-lookup"><span data-stu-id="42d25-118">The SIP response text.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="418b2-119">備考</span><span class="sxs-lookup"><span data-stu-id="418b2-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="42d25-119">注釈</span><span class="sxs-lookup"><span data-stu-id="42d25-119">Remarks</span></span>
 
-<span data-ttu-id="418b2-120">この要素を記述するスキーマは、インストールされているクライアント アクセス サーバーの役割と Exchange Server を実行しているコンピューターの/ews/ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="418b2-120">The schema that describes this element is located in the /ews/ directory of the computer that is running Exchange Server with the Client Access server role installed.</span></span>
+<span data-ttu-id="42d25-120">この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされた Exchange Server を実行しているコンピューターの/ews/ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="42d25-120">The schema that describes this element is located in the /ews/ directory of the computer that is running Exchange Server with the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="418b2-121">要素情報</span><span class="sxs-lookup"><span data-stu-id="418b2-121">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="42d25-121">要素の情報</span><span class="sxs-lookup"><span data-stu-id="42d25-121">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="418b2-122">名前空間</span><span class="sxs-lookup"><span data-stu-id="418b2-122">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="418b2-123">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="418b2-123">Schema Name</span></span>  <br/> |<span data-ttu-id="418b2-124">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="418b2-124">Types schema</span></span>  <br/> |
-|<span data-ttu-id="418b2-125">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="418b2-125">Validation File</span></span>  <br/> |<span data-ttu-id="418b2-126">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="418b2-126">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="418b2-127">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="418b2-127">Can be Empty</span></span>  <br/> |<span data-ttu-id="418b2-128">False</span><span class="sxs-lookup"><span data-stu-id="418b2-128">False</span></span>  <br/> |
+|<span data-ttu-id="42d25-122">Namespace</span><span class="sxs-lookup"><span data-stu-id="42d25-122">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="42d25-123">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="42d25-123">Schema Name</span></span>  <br/> |<span data-ttu-id="42d25-124">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="42d25-124">Types schema</span></span>  <br/> |
+|<span data-ttu-id="42d25-125">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="42d25-125">Validation File</span></span>  <br/> |<span data-ttu-id="42d25-126">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="42d25-126">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="42d25-127">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="42d25-127">Can be Empty</span></span>  <br/> |<span data-ttu-id="42d25-128">正しくない</span><span class="sxs-lookup"><span data-stu-id="42d25-128">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="418b2-129">関連項目</span><span class="sxs-lookup"><span data-stu-id="418b2-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="42d25-129">関連項目</span><span class="sxs-lookup"><span data-stu-id="42d25-129">See also</span></span>
 
 
 
-- [<span data-ttu-id="418b2-130">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="418b2-130">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="42d25-130">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="42d25-130">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

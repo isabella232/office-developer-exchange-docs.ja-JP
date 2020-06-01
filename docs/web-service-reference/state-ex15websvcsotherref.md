@@ -11,63 +11,63 @@ api_name:
 api_type:
 - schema
 ms.assetid: bcce7b0e-d504-4a1f-a530-db80b207f201
-description: 状態の要素は、連絡先アイテムの居住地の状態を表します。
-ms.openlocfilehash: caa9541d30eaa04cc3f2dda0ebbf687b156c4f64
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: State 要素は、連絡先アイテムの居住状態を表します。
+ms.openlocfilehash: 123aa0db83f58996924baadb0a87946db6934450
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833565"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460002"
 ---
-# <a name="state"></a><span data-ttu-id="a44af-103">State</span><span class="sxs-lookup"><span data-stu-id="a44af-103">State</span></span>
+# <a name="state"></a><span data-ttu-id="8276b-103">State</span><span class="sxs-lookup"><span data-stu-id="8276b-103">State</span></span>
 
-<span data-ttu-id="a44af-104">**状態**の要素は、連絡先アイテムの居住地の状態を表します。</span><span class="sxs-lookup"><span data-stu-id="a44af-104">The **State** element represents the state of residence for a contact item.</span></span> 
+<span data-ttu-id="8276b-104">**State**要素は、連絡先アイテムの居住状態を表します。</span><span class="sxs-lookup"><span data-stu-id="8276b-104">The **State** element represents the state of residence for a contact item.</span></span> 
   
 ```xml
 <State/>
 ```
 
-<span data-ttu-id="a44af-105">**string**</span><span class="sxs-lookup"><span data-stu-id="a44af-105">**string**</span></span>
+<span data-ttu-id="8276b-105">**string**</span><span class="sxs-lookup"><span data-stu-id="8276b-105">**string**</span></span>
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="a44af-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="a44af-106">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="8276b-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="8276b-106">Attributes and elements</span></span>
 
-<span data-ttu-id="a44af-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="a44af-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="8276b-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="8276b-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="a44af-108">属性</span><span class="sxs-lookup"><span data-stu-id="a44af-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="8276b-108">属性</span><span class="sxs-lookup"><span data-stu-id="8276b-108">Attributes</span></span>
 
-<span data-ttu-id="a44af-109">なし。</span><span class="sxs-lookup"><span data-stu-id="a44af-109">None.</span></span>
+<span data-ttu-id="8276b-109">なし。</span><span class="sxs-lookup"><span data-stu-id="8276b-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="a44af-110">子要素</span><span class="sxs-lookup"><span data-stu-id="a44af-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="8276b-110">子要素</span><span class="sxs-lookup"><span data-stu-id="8276b-110">Child elements</span></span>
 
-<span data-ttu-id="a44af-111">なし。</span><span class="sxs-lookup"><span data-stu-id="a44af-111">None.</span></span>
+<span data-ttu-id="8276b-111">なし。</span><span class="sxs-lookup"><span data-stu-id="8276b-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="a44af-112">親要素</span><span class="sxs-lookup"><span data-stu-id="a44af-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="8276b-112">親要素</span><span class="sxs-lookup"><span data-stu-id="8276b-112">Parent elements</span></span>
 
-|<span data-ttu-id="a44af-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="a44af-113">**Element**</span></span>|<span data-ttu-id="a44af-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="a44af-114">**Description**</span></span>|
+|<span data-ttu-id="8276b-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="8276b-113">**Element**</span></span>|<span data-ttu-id="8276b-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="8276b-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="a44af-115">エントリ (PhysicalAddress)</span><span class="sxs-lookup"><span data-stu-id="a44af-115">Entry (PhysicalAddress)</span></span>](entry-physicaladdress.md) <br/> |<span data-ttu-id="a44af-116">連絡先アイテムの 1 つの物理アドレスをについて説明します。</span><span class="sxs-lookup"><span data-stu-id="a44af-116">Describes a single physical address for a contact item.</span></span>  <br/> |
+|[<span data-ttu-id="8276b-115">Entry (PhysicalAddress)</span><span class="sxs-lookup"><span data-stu-id="8276b-115">Entry (PhysicalAddress)</span></span>](entry-physicaladdress.md) <br/> |<span data-ttu-id="8276b-116">連絡先アイテムの単一の物理アドレスを記述します。</span><span class="sxs-lookup"><span data-stu-id="8276b-116">Describes a single physical address for a contact item.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="a44af-117">テキスト値</span><span class="sxs-lookup"><span data-stu-id="a44af-117">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="8276b-117">テキスト値</span><span class="sxs-lookup"><span data-stu-id="8276b-117">Text value</span></span>
 
-<span data-ttu-id="a44af-118">状態の名前を表す文字列値は、この要素が使用される場合に必要です。</span><span class="sxs-lookup"><span data-stu-id="a44af-118">A string value that represents the name of a state is required if this element is used.</span></span>
+<span data-ttu-id="8276b-118">この要素を使用する場合は、状態の名前を表す文字列型 (string) の値が必要です。</span><span class="sxs-lookup"><span data-stu-id="8276b-118">A string value that represents the name of a state is required if this element is used.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="a44af-119">備考</span><span class="sxs-lookup"><span data-stu-id="a44af-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="8276b-119">注釈</span><span class="sxs-lookup"><span data-stu-id="8276b-119">Remarks</span></span>
 
-<span data-ttu-id="a44af-120">MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。</span><span class="sxs-lookup"><span data-stu-id="a44af-120">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="8276b-120">この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="8276b-120">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="a44af-121">要素情報</span><span class="sxs-lookup"><span data-stu-id="a44af-121">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="8276b-121">要素の情報</span><span class="sxs-lookup"><span data-stu-id="8276b-121">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="a44af-122">名前空間</span><span class="sxs-lookup"><span data-stu-id="a44af-122">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="a44af-123">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="a44af-123">Schema name</span></span>  <br/> |<span data-ttu-id="a44af-124">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="a44af-124">Types schema</span></span>  <br/> |
-|<span data-ttu-id="a44af-125">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="a44af-125">Validation file</span></span>  <br/> |<span data-ttu-id="a44af-126">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="a44af-126">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="a44af-127">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="a44af-127">Can be empty</span></span>  <br/> |<span data-ttu-id="a44af-128">False</span><span class="sxs-lookup"><span data-stu-id="a44af-128">False</span></span>  <br/> |
+|<span data-ttu-id="8276b-122">Namespace</span><span class="sxs-lookup"><span data-stu-id="8276b-122">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="8276b-123">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="8276b-123">Schema name</span></span>  <br/> |<span data-ttu-id="8276b-124">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="8276b-124">Types schema</span></span>  <br/> |
+|<span data-ttu-id="8276b-125">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="8276b-125">Validation file</span></span>  <br/> |<span data-ttu-id="8276b-126">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="8276b-126">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="8276b-127">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="8276b-127">Can be empty</span></span>  <br/> |<span data-ttu-id="8276b-128">正しくない</span><span class="sxs-lookup"><span data-stu-id="8276b-128">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="a44af-129">関連項目</span><span class="sxs-lookup"><span data-stu-id="a44af-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8276b-129">関連項目</span><span class="sxs-lookup"><span data-stu-id="8276b-129">See also</span></span>
 
-- [<span data-ttu-id="a44af-130">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="a44af-130">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
-- [<span data-ttu-id="a44af-131">連絡先 (Exchange Web サービス) を作成します。</span><span class="sxs-lookup"><span data-stu-id="a44af-131">Creating Contacts (Exchange Web Services)</span></span>](http://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
-- [<span data-ttu-id="a44af-132">連絡先を更新</span><span class="sxs-lookup"><span data-stu-id="a44af-132">Updating Contacts</span></span>](http://msdn.microsoft.com/library/9a865953-b94a-4229-b632-2dee433314be%28Office.15%29.aspx)
-- [<span data-ttu-id="a44af-133">連絡先を削除します。</span><span class="sxs-lookup"><span data-stu-id="a44af-133">Deleting Contacts</span></span>](http://msdn.microsoft.com/library/fcc3dc84-cd3e-455e-a1a7-ae6921c9b588%28Office.15%29.aspx)
+- [<span data-ttu-id="8276b-130">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="8276b-130">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="8276b-131">連絡先の作成 (Exchange Web サービス)</span><span class="sxs-lookup"><span data-stu-id="8276b-131">Creating Contacts (Exchange Web Services)</span></span>](https://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
+- [<span data-ttu-id="8276b-132">連絡先の更新</span><span class="sxs-lookup"><span data-stu-id="8276b-132">Updating Contacts</span></span>](https://msdn.microsoft.com/library/9a865953-b94a-4229-b632-2dee433314be%28Office.15%29.aspx)
+- [<span data-ttu-id="8276b-133">連絡先の削除</span><span class="sxs-lookup"><span data-stu-id="8276b-133">Deleting Contacts</span></span>](https://msdn.microsoft.com/library/fcc3dc84-cd3e-455e-a1a7-ae6921c9b588%28Office.15%29.aspx)
 

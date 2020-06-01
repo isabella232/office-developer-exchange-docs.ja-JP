@@ -7,50 +7,50 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5a10aa5e-3f25-4ec3-a0b9-284c30918a1f
-description: 操作 CreateFolderPath EWS についての情報を検索します。
-ms.openlocfilehash: 22561e5086c144e25d7e04b68ec6674b87c4718d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: CreateFolderPath EWS 操作に関する情報を検索します。
+ms.openlocfilehash: a8d42cbef854d900c5fb6b72c730dd1e2b903aec
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759819"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458902"
 ---
-# <a name="createfolderpath-operation"></a><span data-ttu-id="12fa5-103">CreateFolderPath 操作</span><span class="sxs-lookup"><span data-stu-id="12fa5-103">CreateFolderPath operation</span></span>
+# <a name="createfolderpath-operation"></a><span data-ttu-id="25ecf-103">CreateFolderPath 操作</span><span class="sxs-lookup"><span data-stu-id="25ecf-103">CreateFolderPath operation</span></span>
 
-<span data-ttu-id="12fa5-104">**CreateFolderPath** EWS の操作に関する情報を検索します。</span><span class="sxs-lookup"><span data-stu-id="12fa5-104">Find information about the **CreateFolderPath** EWS operation.</span></span> 
+<span data-ttu-id="25ecf-104">**Createfolderpath** EWS 操作に関する情報を検索します。</span><span class="sxs-lookup"><span data-stu-id="25ecf-104">Find information about the **CreateFolderPath** EWS operation.</span></span> 
   
-<span data-ttu-id="12fa5-105">**CreateFolderPath**操作は、フォルダー階層を作成します。</span><span class="sxs-lookup"><span data-stu-id="12fa5-105">The **CreateFolderPath** operation creates a folder hierarchy.</span></span> 
+<span data-ttu-id="25ecf-105">**Createfolderpath**操作は、フォルダー階層を作成します。</span><span class="sxs-lookup"><span data-stu-id="25ecf-105">The **CreateFolderPath** operation creates a folder hierarchy.</span></span> 
   
-<span data-ttu-id="12fa5-106">この操作は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="12fa5-106">This operation was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="25ecf-106">この操作は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="25ecf-106">This operation was introduced in Exchange Server 2013.</span></span>
   
-## <a name="using-the-createfolderpath-operation"></a><span data-ttu-id="12fa5-107">CreateFolderPath 操作を使用します。</span><span class="sxs-lookup"><span data-stu-id="12fa5-107">Using the CreateFolderPath operation</span></span>
+## <a name="using-the-createfolderpath-operation"></a><span data-ttu-id="25ecf-107">CreateFolderPath 操作の使用</span><span class="sxs-lookup"><span data-stu-id="25ecf-107">Using the CreateFolderPath operation</span></span>
 
-<span data-ttu-id="12fa5-108">**CreateFolderPath**操作の要求は、フォルダーおよび親フォルダーの識別子の配列を受け取るし、配列内のフォルダーの順序に基づいて、フォルダー階層を作成します。</span><span class="sxs-lookup"><span data-stu-id="12fa5-108">The **CreateFolderPath** operation request takes an array of folders and a parent folder identifier and creates a folder hierarchy based on the order of the folders in the array.</span></span> 
+<span data-ttu-id="25ecf-108">**Createfolderpath**操作要求は、フォルダーと親フォルダー識別子の配列を取得し、その配列内のフォルダーの順序に基づいてフォルダー階層を作成します。</span><span class="sxs-lookup"><span data-stu-id="25ecf-108">The **CreateFolderPath** operation request takes an array of folders and a parent folder identifier and creates a folder hierarchy based on the order of the folders in the array.</span></span> 
   
-### <a name="createfolderpath-operation-soap-headers"></a><span data-ttu-id="12fa5-109">CreateFolderPath 操作の SOAP ヘッダー</span><span class="sxs-lookup"><span data-stu-id="12fa5-109">CreateFolderPath operation SOAP headers</span></span>
+### <a name="createfolderpath-operation-soap-headers"></a><span data-ttu-id="25ecf-109">CreateFolderPath operation SOAP ヘッダー</span><span class="sxs-lookup"><span data-stu-id="25ecf-109">CreateFolderPath operation SOAP headers</span></span>
 
-<span data-ttu-id="12fa5-110">**CreateFolderPath**操作は、次の表に記載されている SOAP ヘッダーを使用できます。</span><span class="sxs-lookup"><span data-stu-id="12fa5-110">The **CreateFolderPath** operation can use the SOAP headers that are listed in the following table.</span></span> 
+<span data-ttu-id="25ecf-110">**Createfolderpath**操作では、次の表に記載されている SOAP ヘッダーを使用できます。</span><span class="sxs-lookup"><span data-stu-id="25ecf-110">The **CreateFolderPath** operation can use the SOAP headers that are listed in the following table.</span></span> 
   
-|<span data-ttu-id="12fa5-111">**ヘッダー名**</span><span class="sxs-lookup"><span data-stu-id="12fa5-111">**Header name**</span></span>|<span data-ttu-id="12fa5-112">**要素**</span><span class="sxs-lookup"><span data-stu-id="12fa5-112">**Element**</span></span>|<span data-ttu-id="12fa5-113">**説明**</span><span class="sxs-lookup"><span data-stu-id="12fa5-113">**Description**</span></span>|
+|<span data-ttu-id="25ecf-111">**ヘッダー名**</span><span class="sxs-lookup"><span data-stu-id="25ecf-111">**Header name**</span></span>|<span data-ttu-id="25ecf-112">**要素**</span><span class="sxs-lookup"><span data-stu-id="25ecf-112">**Element**</span></span>|<span data-ttu-id="25ecf-113">**説明**</span><span class="sxs-lookup"><span data-stu-id="25ecf-113">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="12fa5-114">**偽装**</span><span class="sxs-lookup"><span data-stu-id="12fa5-114">**Impersonation**</span></span> <br/> |[<span data-ttu-id="12fa5-115">ExchangeImpersonation</span><span class="sxs-lookup"><span data-stu-id="12fa5-115">ExchangeImpersonation</span></span>](exchangeimpersonation.md) <br/> |<span data-ttu-id="12fa5-116">クライアント アプリケーションが偽装するユーザーを識別します。</span><span class="sxs-lookup"><span data-stu-id="12fa5-116">Identifies the user whom the client application is impersonating.</span></span> <span data-ttu-id="12fa5-117">このヘッダーは、要求に適用されます。</span><span class="sxs-lookup"><span data-stu-id="12fa5-117">This header is applicable to a request.</span></span>  <br/> |
-|<span data-ttu-id="12fa5-118">**MailboxCulture**</span><span class="sxs-lookup"><span data-stu-id="12fa5-118">**MailboxCulture**</span></span> <br/> |[<span data-ttu-id="12fa5-119">MailboxCulture</span><span class="sxs-lookup"><span data-stu-id="12fa5-119">MailboxCulture</span></span>](mailboxculture.md) <br/> |<span data-ttu-id="12fa5-120">RFC 3066、」タグの「識別の言語」を使用してメールボックスへのアクセスに定義されているカルチャを識別します。</span><span class="sxs-lookup"><span data-stu-id="12fa5-120">Identifies the culture, as defined in RFC 3066, "Tags for the Identification of Languages", to be used to access the mailbox.</span></span> <span data-ttu-id="12fa5-121">このヘッダーは、要求に適用されます。</span><span class="sxs-lookup"><span data-stu-id="12fa5-121">This header is applicable to a request.</span></span>  <br/> |
-|<span data-ttu-id="12fa5-122">**RequestVersion**</span><span class="sxs-lookup"><span data-stu-id="12fa5-122">**RequestVersion**</span></span> <br/> |[<span data-ttu-id="12fa5-123">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="12fa5-123">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="12fa5-124">操作要求のスキーマのバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="12fa5-124">Identifies the schema version for the operation request.</span></span> <span data-ttu-id="12fa5-125">このヘッダーは、要求に適用されます。</span><span class="sxs-lookup"><span data-stu-id="12fa5-125">This header is applicable to a request.</span></span>  <br/> |
-|<span data-ttu-id="12fa5-126">**ServerVersion**</span><span class="sxs-lookup"><span data-stu-id="12fa5-126">**ServerVersion**</span></span> <br/> |[<span data-ttu-id="12fa5-127">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="12fa5-127">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="12fa5-128">要求に応答するサーバーのバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="12fa5-128">Identifies the version of the server that responded to the request.</span></span> <span data-ttu-id="12fa5-129">このヘッダーは、応答に適用されます。</span><span class="sxs-lookup"><span data-stu-id="12fa5-129">This header is applicable to a response.</span></span>  <br/> |
-|<span data-ttu-id="12fa5-130">**TimeZoneContext**</span><span class="sxs-lookup"><span data-stu-id="12fa5-130">**TimeZoneContext**</span></span> <br/> |[<span data-ttu-id="12fa5-131">TimeZoneContext</span><span class="sxs-lookup"><span data-stu-id="12fa5-131">TimeZoneContext</span></span>](timezonecontext.md) <br/> |<span data-ttu-id="12fa5-132">**日付**プロパティのタイム ゾーンの範囲を識別します。</span><span class="sxs-lookup"><span data-stu-id="12fa5-132">Identifies the time zone scope for **DateTime** properties.</span></span> <span data-ttu-id="12fa5-133">このヘッダーは、要求に適用されます。</span><span class="sxs-lookup"><span data-stu-id="12fa5-133">This header is applicable to a request.</span></span>  <br/> |
+|<span data-ttu-id="25ecf-114">**偽装**</span><span class="sxs-lookup"><span data-stu-id="25ecf-114">**Impersonation**</span></span> <br/> |[<span data-ttu-id="25ecf-115">ExchangeImpersonation</span><span class="sxs-lookup"><span data-stu-id="25ecf-115">ExchangeImpersonation</span></span>](exchangeimpersonation.md) <br/> |<span data-ttu-id="25ecf-116">クライアントアプリケーションが偽装しているユーザーを識別します。</span><span class="sxs-lookup"><span data-stu-id="25ecf-116">Identifies the user whom the client application is impersonating.</span></span> <span data-ttu-id="25ecf-117">このヘッダーは、要求に適用されます。</span><span class="sxs-lookup"><span data-stu-id="25ecf-117">This header is applicable to a request.</span></span>  <br/> |
+|<span data-ttu-id="25ecf-118">**MailboxCulture**</span><span class="sxs-lookup"><span data-stu-id="25ecf-118">**MailboxCulture**</span></span> <br/> |[<span data-ttu-id="25ecf-119">MailboxCulture</span><span class="sxs-lookup"><span data-stu-id="25ecf-119">MailboxCulture</span></span>](mailboxculture.md) <br/> |<span data-ttu-id="25ecf-120">RFC 3066 で定義されているように、メールボックスへのアクセスに使用されるカルチャ (言語の識別用のタグ) を識別します。</span><span class="sxs-lookup"><span data-stu-id="25ecf-120">Identifies the culture, as defined in RFC 3066, "Tags for the Identification of Languages", to be used to access the mailbox.</span></span> <span data-ttu-id="25ecf-121">このヘッダーは、要求に適用されます。</span><span class="sxs-lookup"><span data-stu-id="25ecf-121">This header is applicable to a request.</span></span>  <br/> |
+|<span data-ttu-id="25ecf-122">**RequestVersion**</span><span class="sxs-lookup"><span data-stu-id="25ecf-122">**RequestVersion**</span></span> <br/> |[<span data-ttu-id="25ecf-123">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="25ecf-123">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="25ecf-124">操作要求のスキーマバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="25ecf-124">Identifies the schema version for the operation request.</span></span> <span data-ttu-id="25ecf-125">このヘッダーは、要求に適用されます。</span><span class="sxs-lookup"><span data-stu-id="25ecf-125">This header is applicable to a request.</span></span>  <br/> |
+|<span data-ttu-id="25ecf-126">**ServerVersion**</span><span class="sxs-lookup"><span data-stu-id="25ecf-126">**ServerVersion**</span></span> <br/> |[<span data-ttu-id="25ecf-127">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="25ecf-127">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="25ecf-128">要求に応答したサーバーのバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="25ecf-128">Identifies the version of the server that responded to the request.</span></span> <span data-ttu-id="25ecf-129">このヘッダーは応答に適用されます。</span><span class="sxs-lookup"><span data-stu-id="25ecf-129">This header is applicable to a response.</span></span>  <br/> |
+|<span data-ttu-id="25ecf-130">**TimeZoneContext**</span><span class="sxs-lookup"><span data-stu-id="25ecf-130">**TimeZoneContext**</span></span> <br/> |[<span data-ttu-id="25ecf-131">TimeZoneContext</span><span class="sxs-lookup"><span data-stu-id="25ecf-131">TimeZoneContext</span></span>](timezonecontext.md) <br/> |<span data-ttu-id="25ecf-132">**DateTime**プロパティのタイムゾーンスコープを指定します。</span><span class="sxs-lookup"><span data-stu-id="25ecf-132">Identifies the time zone scope for **DateTime** properties.</span></span> <span data-ttu-id="25ecf-133">このヘッダーは、要求に適用されます。</span><span class="sxs-lookup"><span data-stu-id="25ecf-133">This header is applicable to a request.</span></span>  <br/> |
    
-## <a name="createfolderpath-operation-request-example-create-a-folder-hierarchy"></a><span data-ttu-id="12fa5-134">CreateFolderPath 操作の要求の例: フォルダーの階層を作成します。</span><span class="sxs-lookup"><span data-stu-id="12fa5-134">CreateFolderPath operation request example: Create a folder hierarchy</span></span>
+## <a name="createfolderpath-operation-request-example-create-a-folder-hierarchy"></a><span data-ttu-id="25ecf-134">CreateFolderPath 操作要求の例: フォルダー階層を作成します。</span><span class="sxs-lookup"><span data-stu-id="25ecf-134">CreateFolderPath operation request example: Create a folder hierarchy</span></span>
 
-<span data-ttu-id="12fa5-135">**CreateFolderPath**操作要求の次の使用例は、3 つのフォルダーは、フォルダー階層を作成する方法を示しています。 既定の受信トレイ フォルダーの深さです。</span><span class="sxs-lookup"><span data-stu-id="12fa5-135">The following example of a **CreateFolderPath** operation request shows how to create a folder hierarchy that is three folders deep in the default Inbox folder.</span></span> 
+<span data-ttu-id="25ecf-135">次の**Createfolderpath** operation 要求の例は、既定の受信トレイフォルダーに3つのフォルダー階層を作成する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="25ecf-135">The following example of a **CreateFolderPath** operation request shows how to create a folder hierarchy that is three folders deep in the default Inbox folder.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="12fa5-136">すべての項目の識別子と変更キーをこの資料では、読みやすさを保持するために短縮されています。</span><span class="sxs-lookup"><span data-stu-id="12fa5-136">All item identifiers and change keys in this article have been shortened to preserve readability.</span></span> 
+> <span data-ttu-id="25ecf-136">この記事のすべてのアイテム識別子と変更キーは、読みやすくするために短縮されています。</span><span class="sxs-lookup"><span data-stu-id="25ecf-136">All item identifiers and change keys in this article have been shortened to preserve readability.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
       <t:MailboxCulture>en-US</t:MailboxCulture>
@@ -80,23 +80,23 @@ ms.locfileid: "19759819"
 
 ```
 
-<span data-ttu-id="12fa5-137">要求 SOAP 本体にはには、次の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="12fa5-137">The request SOAP body contains the following elements:</span></span>
+<span data-ttu-id="25ecf-137">要求 SOAP 本文には、次の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="25ecf-137">The request SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="12fa5-138">CreateFolderPath</span><span class="sxs-lookup"><span data-stu-id="12fa5-138">CreateFolderPath</span></span>](createfolderpath.md)
+- [<span data-ttu-id="25ecf-138">CreateFolderPath</span><span class="sxs-lookup"><span data-stu-id="25ecf-138">CreateFolderPath</span></span>](createfolderpath.md)
     
-- [<span data-ttu-id="12fa5-139">ParentFolderId (TargetFolderIdType)</span><span class="sxs-lookup"><span data-stu-id="12fa5-139">ParentFolderId (TargetFolderIdType)</span></span>](parentfolderid-targetfolderidtype.md)
+- [<span data-ttu-id="25ecf-139">ParentFolderId (TargetFolderIdType)</span><span class="sxs-lookup"><span data-stu-id="25ecf-139">ParentFolderId (TargetFolderIdType)</span></span>](parentfolderid-targetfolderidtype.md)
     
-- [<span data-ttu-id="12fa5-140">DistinguishedFolderId</span><span class="sxs-lookup"><span data-stu-id="12fa5-140">DistinguishedFolderId</span></span>](distinguishedfolderid.md)
+- [<span data-ttu-id="25ecf-140">DistinguishedFolderId</span><span class="sxs-lookup"><span data-stu-id="25ecf-140">DistinguishedFolderId</span></span>](distinguishedfolderid.md)
     
-- [<span data-ttu-id="12fa5-141">RelativeFolderPath</span><span class="sxs-lookup"><span data-stu-id="12fa5-141">RelativeFolderPath</span></span>](relativefolderpath.md)
+- [<span data-ttu-id="25ecf-141">RelativeFolderPath</span><span class="sxs-lookup"><span data-stu-id="25ecf-141">RelativeFolderPath</span></span>](relativefolderpath.md)
     
-- [<span data-ttu-id="12fa5-142">Folder</span><span class="sxs-lookup"><span data-stu-id="12fa5-142">Folder</span></span>](folder.md)
+- [<span data-ttu-id="25ecf-142">Folder</span><span class="sxs-lookup"><span data-stu-id="25ecf-142">Folder</span></span>](folder.md)
     
-- [<span data-ttu-id="12fa5-143">表示名 (文字列)</span><span class="sxs-lookup"><span data-stu-id="12fa5-143">DisplayName (string)</span></span>](displayname-string.md)
+- [<span data-ttu-id="25ecf-143">DisplayName (文字列)</span><span class="sxs-lookup"><span data-stu-id="25ecf-143">DisplayName (string)</span></span>](displayname-string.md)
     
-## <a name="successful-createfolderpath-operation-response"></a><span data-ttu-id="12fa5-144">CreateFolderPath 操作の成功の応答</span><span class="sxs-lookup"><span data-stu-id="12fa5-144">Successful CreateFolderPath operation response</span></span>
+## <a name="successful-createfolderpath-operation-response"></a><span data-ttu-id="25ecf-144">正常な CreateFolderPath 操作応答</span><span class="sxs-lookup"><span data-stu-id="25ecf-144">Successful CreateFolderPath operation response</span></span>
 
-<span data-ttu-id="12fa5-145">次の使用例は、正常な 3 つの階層のフォルダーにフォルダーを作成する**CreateFolderPath**操作の要求に応答を示しています。 既定の受信トレイ フォルダーの深さです。</span><span class="sxs-lookup"><span data-stu-id="12fa5-145">The following example shows a successful response to a **CreateFolderPath** operation request to create a folder hierarchy three folders deep in the default Inbox folder.</span></span> 
+<span data-ttu-id="25ecf-145">次の例は、既定の受信トレイフォルダーに3つのフォルダー階層を作成するための**Createfolderpath**操作要求に対する正常な応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="25ecf-145">The following example shows a successful response to a **CreateFolderPath** operation request to create a folder hierarchy three folders deep in the default Inbox folder.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -107,14 +107,14 @@ ms.locfileid: "19759819"
                            MajorBuildNumber="526" 
                            MinorBuildNumber="0" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <m:CreateFolderPathResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:CreateFolderPathResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
          <m:ResponseMessages>
             <m:CreateFolderPathResponseMessage ResponseClass="Success">
                <m:ResponseCode>NoError</m:ResponseCode>
@@ -159,33 +159,33 @@ ms.locfileid: "19759819"
 
 ```
 
-<span data-ttu-id="12fa5-146">応答 SOAP 本文には、次の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="12fa5-146">The response SOAP body contains the following elements:</span></span>
+<span data-ttu-id="25ecf-146">応答 SOAP 本文には、次の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="25ecf-146">The response SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="12fa5-147">CreateFolderPathResponse</span><span class="sxs-lookup"><span data-stu-id="12fa5-147">CreateFolderPathResponse</span></span>](createfolderpathresponse.md)
+- [<span data-ttu-id="25ecf-147">CreateFolderPathResponse</span><span class="sxs-lookup"><span data-stu-id="25ecf-147">CreateFolderPathResponse</span></span>](createfolderpathresponse.md)
     
-- [<span data-ttu-id="12fa5-148">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="12fa5-148">ResponseMessages</span></span>](responsemessages.md)
+- [<span data-ttu-id="25ecf-148">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="25ecf-148">ResponseMessages</span></span>](responsemessages.md)
     
-- [<span data-ttu-id="12fa5-149">CreateFolderPathResponseMessage</span><span class="sxs-lookup"><span data-stu-id="12fa5-149">CreateFolderPathResponseMessage</span></span>](createfolderpathresponsemessage.md)
+- [<span data-ttu-id="25ecf-149">CreateFolderPathResponseMessage</span><span class="sxs-lookup"><span data-stu-id="25ecf-149">CreateFolderPathResponseMessage</span></span>](createfolderpathresponsemessage.md)
     
-- [<span data-ttu-id="12fa5-150">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="12fa5-150">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="25ecf-150">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="25ecf-150">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="12fa5-151">フォルダー</span><span class="sxs-lookup"><span data-stu-id="12fa5-151">Folders</span></span>](folders-ex15websvcsotherref.md)
+- [<span data-ttu-id="25ecf-151">フォルダー</span><span class="sxs-lookup"><span data-stu-id="25ecf-151">Folders</span></span>](folders-ex15websvcsotherref.md)
     
-- [<span data-ttu-id="12fa5-152">Folder</span><span class="sxs-lookup"><span data-stu-id="12fa5-152">Folder</span></span>](folder.md)
+- [<span data-ttu-id="25ecf-152">Folder</span><span class="sxs-lookup"><span data-stu-id="25ecf-152">Folder</span></span>](folder.md)
     
-- [<span data-ttu-id="12fa5-153">フォルダー Id</span><span class="sxs-lookup"><span data-stu-id="12fa5-153">FolderId</span></span>](folderid.md)
+- [<span data-ttu-id="25ecf-153">FolderId</span><span class="sxs-lookup"><span data-stu-id="25ecf-153">FolderId</span></span>](folderid.md)
     
-- [<span data-ttu-id="12fa5-154">表示名 (文字列)</span><span class="sxs-lookup"><span data-stu-id="12fa5-154">DisplayName (string)</span></span>](displayname-string.md)
+- [<span data-ttu-id="25ecf-154">DisplayName (文字列)</span><span class="sxs-lookup"><span data-stu-id="25ecf-154">DisplayName (string)</span></span>](displayname-string.md)
     
-- [<span data-ttu-id="12fa5-155">TotalCount</span><span class="sxs-lookup"><span data-stu-id="12fa5-155">TotalCount</span></span>](totalcount.md)
+- [<span data-ttu-id="25ecf-155">TotalCount</span><span class="sxs-lookup"><span data-stu-id="25ecf-155">TotalCount</span></span>](totalcount.md)
     
-- [<span data-ttu-id="12fa5-156">ChildFolderCount</span><span class="sxs-lookup"><span data-stu-id="12fa5-156">ChildFolderCount</span></span>](childfoldercount.md)
+- [<span data-ttu-id="25ecf-156">ChildFolderCount</span><span class="sxs-lookup"><span data-stu-id="25ecf-156">ChildFolderCount</span></span>](childfoldercount.md)
     
-- [<span data-ttu-id="12fa5-157">UnreadCount</span><span class="sxs-lookup"><span data-stu-id="12fa5-157">UnreadCount</span></span>](unreadcount.md)
+- [<span data-ttu-id="25ecf-157">UnreadCount</span><span class="sxs-lookup"><span data-stu-id="25ecf-157">UnreadCount</span></span>](unreadcount.md)
     
-## <a name="createfolderpath-operation-error-response"></a><span data-ttu-id="12fa5-158">CreateFolderPath 操作のエラー応答</span><span class="sxs-lookup"><span data-stu-id="12fa5-158">CreateFolderPath operation error response</span></span>
+## <a name="createfolderpath-operation-error-response"></a><span data-ttu-id="25ecf-158">CreateFolderPath 操作エラー応答</span><span class="sxs-lookup"><span data-stu-id="25ecf-158">CreateFolderPath operation error response</span></span>
 
-<span data-ttu-id="12fa5-159">**CreateFolderPath**操作の要求に対してエラー応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="12fa5-159">The following example shows an error response to a **CreateFolderPath** operation request.</span></span> <span data-ttu-id="12fa5-160">これは、最初のうちに設定された表示名のプロパティの種類がない 2 つのフォルダーを作成する要求に応答します。</span><span class="sxs-lookup"><span data-stu-id="12fa5-160">This is a response to a request to create two folders, the first of which does not have a display name property set.</span></span> <span data-ttu-id="12fa5-161">せず、表示名のプロパティでは、階層内の最初のフォルダーを作成することはできませんし、階層内の親フォルダーが作成されなかったために、2 番目のフォルダーを作成できません。</span><span class="sxs-lookup"><span data-stu-id="12fa5-161">The first folder in the hierarchy cannot be created without a display name property, and the second folder cannot be created because the parent folder in the hierarchy was not created.</span></span> 
+<span data-ttu-id="25ecf-159">次の例は、 **Createfolderpath**操作要求へのエラー応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="25ecf-159">The following example shows an error response to a **CreateFolderPath** operation request.</span></span> <span data-ttu-id="25ecf-160">これは、2つのフォルダーを作成する要求に対する応答です。最初には、表示名のプロパティが設定されていません。</span><span class="sxs-lookup"><span data-stu-id="25ecf-160">This is a response to a request to create two folders, the first of which does not have a display name property set.</span></span> <span data-ttu-id="25ecf-161">階層内の最初のフォルダーは、[表示名] プロパティを使用せずに作成することはできません。また、階層内の親フォルダーが作成されていないため、2番目のフォルダーを作成することはできません。</span><span class="sxs-lookup"><span data-stu-id="25ecf-161">The first folder in the hierarchy cannot be created without a display name property, and the second folder cannot be created because the parent folder in the hierarchy was not created.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -195,15 +195,15 @@ ms.locfileid: "19759819"
                            MajorBuildNumber="556" 
                            MinorBuildNumber="14" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <m:CreateFolderPathResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:CreateFolderPathResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
          <m:ResponseMessages>
             <m:CreateFolderPathResponseMessage ResponseClass="Error">
                <m:MessageText>The folder save operation failed due to invalid property values.</m:MessageText>
@@ -227,33 +227,33 @@ ms.locfileid: "19759819"
 
 ```
 
-<span data-ttu-id="12fa5-162">エラー応答 SOAP 本体にはには、次の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="12fa5-162">The error response SOAP body contains the following elements:</span></span>
+<span data-ttu-id="25ecf-162">エラー応答 SOAP 本文には、次の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="25ecf-162">The error response SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="12fa5-163">CreateFolderPathResponse</span><span class="sxs-lookup"><span data-stu-id="12fa5-163">CreateFolderPathResponse</span></span>](createfolderpathresponse.md)
+- [<span data-ttu-id="25ecf-163">CreateFolderPathResponse</span><span class="sxs-lookup"><span data-stu-id="25ecf-163">CreateFolderPathResponse</span></span>](createfolderpathresponse.md)
     
-- [<span data-ttu-id="12fa5-164">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="12fa5-164">ResponseMessages</span></span>](responsemessages.md)
+- [<span data-ttu-id="25ecf-164">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="25ecf-164">ResponseMessages</span></span>](responsemessages.md)
     
-- [<span data-ttu-id="12fa5-165">CreateFolderPathResponseMessage</span><span class="sxs-lookup"><span data-stu-id="12fa5-165">CreateFolderPathResponseMessage</span></span>](createfolderpathresponsemessage.md)
+- [<span data-ttu-id="25ecf-165">CreateFolderPathResponseMessage</span><span class="sxs-lookup"><span data-stu-id="25ecf-165">CreateFolderPathResponseMessage</span></span>](createfolderpathresponsemessage.md)
     
-- [<span data-ttu-id="12fa5-166">MessageText</span><span class="sxs-lookup"><span data-stu-id="12fa5-166">MessageText</span></span>](messagetext.md)
+- [<span data-ttu-id="25ecf-166">MessageText</span><span class="sxs-lookup"><span data-stu-id="25ecf-166">MessageText</span></span>](messagetext.md)
     
-- [<span data-ttu-id="12fa5-167">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="12fa5-167">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="25ecf-167">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="25ecf-167">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="12fa5-168">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="12fa5-168">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
+- [<span data-ttu-id="25ecf-168">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="25ecf-168">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
     
-- [<span data-ttu-id="12fa5-169">MessageXml</span><span class="sxs-lookup"><span data-stu-id="12fa5-169">MessageXml</span></span>](messagexml.md)
+- [<span data-ttu-id="25ecf-169">MessageXml</span><span class="sxs-lookup"><span data-stu-id="25ecf-169">MessageXml</span></span>](messagexml.md)
     
-- [<span data-ttu-id="12fa5-170">FieldURI</span><span class="sxs-lookup"><span data-stu-id="12fa5-170">FieldURI</span></span>](fielduri.md)
+- [<span data-ttu-id="25ecf-170">FieldURI</span><span class="sxs-lookup"><span data-stu-id="25ecf-170">FieldURI</span></span>](fielduri.md)
     
-- [<span data-ttu-id="12fa5-171">フォルダー</span><span class="sxs-lookup"><span data-stu-id="12fa5-171">Folders</span></span>](folders-ex15websvcsotherref.md)
+- [<span data-ttu-id="25ecf-171">フォルダー</span><span class="sxs-lookup"><span data-stu-id="25ecf-171">Folders</span></span>](folders-ex15websvcsotherref.md)
     
-<span data-ttu-id="12fa5-172">EWS を汎用的なこの操作に固有のエラー コードは、 [ResponseCode](responsecode.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="12fa5-172">For additional error codes that are generic to EWS and specific to this operation, see [ResponseCode](responsecode.md).</span></span>
+<span data-ttu-id="25ecf-172">EWS で汎用的でこの操作に固有の追加のエラーコードについては、「応答」[を参照してください。](responsecode.md)</span><span class="sxs-lookup"><span data-stu-id="25ecf-172">For additional error codes that are generic to EWS and specific to this operation, see [ResponseCode](responsecode.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="12fa5-173">関連項目</span><span class="sxs-lookup"><span data-stu-id="12fa5-173">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="25ecf-173">関連項目</span><span class="sxs-lookup"><span data-stu-id="25ecf-173">See also</span></span>
 
-- [<span data-ttu-id="12fa5-174">Exchange での EWS の操作</span><span class="sxs-lookup"><span data-stu-id="12fa5-174">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
+- [<span data-ttu-id="25ecf-174">Exchange での EWS 操作</span><span class="sxs-lookup"><span data-stu-id="25ecf-174">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
     
-- <span data-ttu-id="12fa5-175">
-  [FindFolder 操作](findfolder-operation.md)</span><span class="sxs-lookup"><span data-stu-id="12fa5-175">[FindFolder operation](findfolder-operation.md)</span></span>
+- <span data-ttu-id="25ecf-175">
+  [FindFolder 操作](findfolder-operation.md)</span><span class="sxs-lookup"><span data-stu-id="25ecf-175">[FindFolder operation](findfolder-operation.md)</span></span>
     
 
