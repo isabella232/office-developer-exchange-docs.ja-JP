@@ -3,15 +3,15 @@ title: EWS アプリケーションの種類
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: ca4e8b90-d0d8-4d55-aa92-19e21659d4f5
 description: Exchange の EWS を使用して作成できる、最も一般的な種類のアプリケーションについて説明します。
-ms.openlocfilehash: 1ce739f453ba1bc6f1b5d38edae3776daa562ffb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+localization_priority: Priority
+ms.openlocfilehash: 02bbe039adaec1054ab33f642f3bf14a7ba22b90
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758885"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455430"
 ---
 # <a name="ews-application-types"></a>EWS アプリケーションの種類
 
@@ -19,11 +19,11 @@ Exchange の EWS を使用して作成できる、最も一般的な種類のア
   
 [EWS および Exchange のアーキテクチャ](ews-applications-and-the-exchange-architecture.md) は一貫した開発モデルを提供します。この開発モデルを使用して、最も一般的な種類のアプリケーションを一貫した方法で作成できます。これらのアプリケーションには、以下が含まれます。 
   
-- [クライアント アプリケーション](#bk_clientapps) — EWS を使用して Exchange データにアクセスするスタンドアロン アプリケーション。 Outlook および Outlook Web App は、クライアント アプリケーションの例です。 
+- [クライアント アプリケーション](#bk_clientapps) — EWS を使用して Exchange データにアクセスするスタンドアロン アプリケーション。Outlook および Outlook Web App は、クライアント アプリケーションの例です。 
     
-- [ポータル アプリケーション](#bk_portalapps) — 空き時間情報や連絡先情報など、Exchange から受け取った情報を含めることによって既存の Web ページを拡張するアプリケーション。 Exchange データを取得する、SharePoint Web パーツは、ポータル アプリケーションの例です。 
+- [ポータル アプリケーション](#bk_portalapps) — 空き時間情報や連絡先情報など、Exchange から受け取った情報を含めることによって既存の Web ページを拡張するアプリケーション。Exchange データを取得する、SharePoint Web パーツは、ポータル アプリケーションの例です。 
     
-- [サービス アプリケーション](#bk_serviceapps) — Exchange からのデータを既存のシステムに組み入れるまたは同期させるために使用されるバックグラウンド ジョブ。 たとえば、Exchange からの連絡先情報を CRM アプリケーションに同期させるアプリケーションです。 
+- [サービス アプリケーション](#bk_serviceapps) — Exchange からのデータを既存のシステムに組み入れるまたは同期させるために使用されるバックグラウンド ジョブ。たとえば、Exchange からの連絡先情報を CRM アプリケーションに同期させるアプリケーションです。 
     
 これらのアプリケーション モデルはそれぞれ、共通コード ベースを使用して Exchange から情報を取得できます。したがって、情報を取得するために使用される EWS コードをクライアント アプリケーション、ポータル アプリケーション、またはサービス アプリケーションの間で変更する必要はありません。 あるアプリケーションと次のアプリケーションで変わる可能性があるのは、メールボックス アクセスと認証メカニズムです。 たとえば、クライアント アプリケーションは一般に、直接ユーザー アクセスと基本認証または NTLM 認証を使用するのに対して、サービス アプリケーションはメールボックス アクセスと OAuth 認証に偽装を使用する傾向があります。
   

@@ -3,15 +3,15 @@ title: Exchange の偽装と EWS
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 7e1ea63c-eb29-43d2-827f-2f2b1846483b
 description: Exchange サービス アプリケーションで偽装を使用する方法とタイミングについて説明します。
-ms.openlocfilehash: f8a215874475034f0d147b80a05cae414e6438f9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+localization_priority: Priority
+ms.openlocfilehash: 8151b3d83421786d99ee0c82eaf4f7a5c0721f25
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759073"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466613"
 ---
 # <a name="impersonation-and-ews-in-exchange"></a>Exchange の偽装と EWS
 
@@ -51,7 +51,7 @@ Exchange [サービス アプリケーション](ews-application-types.md)で偽
     
 - 通常、 **ApplicationImpersonation** 役割はユーザー アカウントではなく、特定のアプリケーションまたはアプリケーションのグループ専用のサービス アカウントに付与されます。必要に応じて、必要な数のサービス アカウントを作成できます。 
     
-[偽装の構成](how-to-configure-impersonation.md)についての詳細を読むこともできますが、Exchange 管理者と相談して、必要とするサービス アカウントが組織のセキュリティ要件を満たす[アクセス許可やアクセス](http://technet.microsoft.com/ja-JP/library/dd351175%28v=exchg.150%29.aspx)を持つものとして作成されるようにしなければなりません。 
+[偽装の構成](how-to-configure-impersonation.md)についての詳細を読むこともできますが、Exchange 管理者と相談して、必要とするサービス アカウントが組織のセキュリティ要件を満たす[アクセス許可やアクセス](https://technet.microsoft.com/library/dd351175%28v=exchg.150%29.aspx)を持つものとして作成されるようにしなければなりません。 
   
 ## <a name="in-this-section"></a>このセクションの内容
 
@@ -68,6 +68,6 @@ Exchange [サービス アプリケーション](ews-application-types.md)で偽
     
 - [Exchange での代理人アクセスと EWS](delegate-access-and-ews-in-exchange.md)
     
-- [Exchange 2013 アクセス許可](http://technet.microsoft.com/ja-JP/library/dd351175%28v=exchg.150%29.aspx)
+- [Exchange 2013 アクセス許可](https://technet.microsoft.com/library/dd351175%28v=exchg.150%29.aspx)
     
 

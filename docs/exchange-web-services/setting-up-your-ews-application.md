@@ -3,15 +3,15 @@ title: EWS アプリケーションの設定
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 0d45e347-f832-478d-b078-7c2852c0d204
 description: EWS マネージ API または EWS を使用して Exchange と通信するアプリケーションを作成するために実行する必要のあるタスクについての情報を確認します。
-ms.openlocfilehash: b8f402d3c4555f971b08fd891b5b64ca49a57e0d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+localization_priority: Priority
+ms.openlocfilehash: ff5b21a1636a1c4cc1ef6256989e72ba7c21c96d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759177"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463812"
 ---
 # <a name="setting-up-your-ews-application"></a>EWS アプリケーションの設定
 

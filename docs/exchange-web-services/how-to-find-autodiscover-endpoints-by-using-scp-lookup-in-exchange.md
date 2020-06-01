@@ -3,15 +3,15 @@ title: Exchange の SCP 参照を使用して自動検出エンドポイント�
 manager: kelbow
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: b24228a8-5127-4bac-aef0-9c9e8843c9ff
 description: Active Directory ドメイン サービス (AD DS) で自動検出 SCP オブジェクトを見つけ、それらのオブジェクトを使用して、Exchange 自動検出サービスで使用する自動検出エンドポイント URL を検出する方法について説明します。
-ms.openlocfilehash: 59fd316d0aa0feea81b60c279040da018c51b47d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+localization_priority: Priority
+ms.openlocfilehash: c0c0364a7d69364e12db902f1f22d65c4b5a0cc5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758943"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455878"
 ---
 # <a name="find-autodiscover-endpoints-by-using-scp-lookup-in-exchange"></a>Exchange の SCP 参照を使用して自動検出エンドポイントを見つける
 
@@ -37,7 +37,7 @@ AD DS で自動検出 SCP オブジェクトを見つけるには、以下のも
 |**関連記事**|**内容**|
 |:-----|:-----|
 |[Exchange の自動検出](autodiscover-for-exchange.md) <br/> |自動検出サービスの動作方法。  <br/> |
-|[サービス接続ポイントを使用して発行する](http://msdn.microsoft.com/library/3544aa64-ecb0-48a1-ae49-05247a983842%28Office.15%29.aspx) <br/> |SCP オブジェクトを使用してサービス固有のデータを発行する方法。  <br/> |
+|[サービス接続ポイントを使用して発行する](https://msdn.microsoft.com/library/3544aa64-ecb0-48a1-ae49-05247a983842%28Office.15%29.aspx) <br/> |SCP オブジェクトを使用してサービス固有のデータを発行する方法。  <br/> |
    
 ## <a name="locate-autodiscover-scp-objects-in-ad-ds"></a>AD DS で自動検出 SCP オブジェクトを見つける
 <a name="bk_LocateScpObjects"> </a>
@@ -50,7 +50,7 @@ AD DS に発行されている自動検出エンドポイントを検索する�
     
 ### <a name="to-locate-autodiscover-scp-objects"></a>自動検出 SCP オブジェクトを見つけるには
 
-1. AD DS のルート DSE エントリの **configurationNamingContext** プロパティを読み取り、ドメインの構成名前付けコンテキストへのパスを取得します。 そのためには、[DirectoryEntry](http://msdn2.microsoft.com/ja-JP/library/z9cddzaa) クラス、または AD DS にアクセスできる他の任意の API を使用できます。 
+1. AD DS のルート DSE エントリの **configurationNamingContext** プロパティを読み取り、ドメインの構成名前付けコンテキストへのパスを取得します。 そのためには、[DirectoryEntry](https://msdn2.microsoft.com/library/z9cddzaa) クラス、または AD DS にアクセスできる他の任意の API を使用できます。 
     
 2. **keywords** プロパティに SCP ポインター GUID か SCP URL GUID のどちらかが含まれる構成名前付けコンテキストで、SCP オブジェクトを検索します。 
     

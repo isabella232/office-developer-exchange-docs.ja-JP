@@ -3,21 +3,21 @@ title: EWS アプリケーションと Exchange のアーキテクチャ
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: c10f308a-65bb-4a0b-8fdd-b4a61503f0fd
 description: EWS が Exchange アーキテクチャで動作する仕組みと、EWS が依存するプロトコルについて説明します。
-ms.openlocfilehash: 1fbc1e68edbca829555fbbf1b9f0bc4723da9524
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+localization_priority: Priority
+ms.openlocfilehash: 15f396664ea46e53a4603a617c9bf679400af160
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758901"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456087"
 ---
 # <a name="ews-applications-and-the-exchange-architecture"></a>EWS アプリケーションと Exchange のアーキテクチャ
 
 EWS が Exchange アーキテクチャで動作する仕組みと、EWS が依存するプロトコルについて説明します。
   
-Exchange Web Services (EWS) は、Exchange Online、Office 365 の一部としての Exchange Online、Exchange 2007 以降のオンプレミス バージョンの  Exchange からのメール メッセージ、会議、連絡先などのメールボックス アイテムにアプリケーションがアクセスするためのクロスプラットフォーム API です。 [EWS アプリケーション](ews-application-types.md)は、SOAP ベースの XML メッセージで要求を送信することによって、ローカルまたはリモートでメールボックス アイテムにアクセスできます。 SOAP メッセージは、アプリケーションとサーバーの間で送信されるときに、HTTP メッセージに埋め込まれます。つまり、アプリケーションが HTTP 経由で XML を投稿できる場合に限り、EWS を使用して Exchange にアクセスできます。 
+Exchange Web Services (EWS) は、Exchange Online、Office 365 の一部としての Exchange Online、Exchange 2007 以降のオンプレミス バージョンの  Exchange からのメール メッセージ、会議、連絡先などのメールボックス アイテムにアプリケーションがアクセスするためのクロスプラットフォーム API です。[EWS アプリケーション](ews-application-types.md)は、SOAP ベースの XML メッセージで要求を送信することによって、ローカルまたはリモートでメールボックス アイテムにアクセスできます。SOAP メッセージは、アプリケーションとサーバーの間で送信されるときに、HTTP メッセージに埋め込まれます。つまり、アプリケーションが HTTP 経由で XML を投稿できる場合に限り、EWS を使用して Exchange にアクセスできます。 
   
 ## <a name="exchange-architecture-overview"></a>Exchange のアーキテクチャ概要
 <a name="bk_techarch"> </a>
@@ -36,7 +36,7 @@ Exchange Web Services (EWS) は、Exchange Online、Office 365 の一部とし�
   
 図に示されているコンポーネントは次のとおりです。
   
-1. EWS アプリケーション - これは、[クライアント、ポータル、またはサービス アプリケーション](ews-application-types.md)であり、クライアントまたは Exchange オンプレミスのクライアント アクセス サーバー上にインストールできます。 EWS マネージ API を使用して EWS アプリケーションを開発する場合、EWS マネージ API アセンブリをクライアントにインストールし、[アプリケーションで再配布](redistribution-requirements-for-the-ews-managed-api.md)する必要があります。
+1. EWS アプリケーション - これは、[クライアント、ポータル、またはサービス アプリケーション](ews-application-types.md)であり、クライアントまたは Exchange オンプレミスのクライアント アクセス サーバー上にインストールできます。EWS マネージ API を使用して EWS アプリケーションを開発する場合、EWS マネージ API アセンブリをクライアントにインストールし、[アプリケーションで再配布](redistribution-requirements-for-the-ews-managed-api.md)する必要があります。
     
 2. SOAP XML メッセージ - SOAP エンベロープ内の XML メッセージであり、クライアント アクセス サーバー上の Services.wsdl ファイルに準拠した HTTP/S メッセージに埋め込まれています。HTTPS は、Exchange オンプレミスで推奨されており、Exchange Online では必須です。 
     
@@ -50,7 +50,7 @@ Exchange Web Services (EWS) は、Exchange Online、Office 365 の一部とし�
     
 7. EWS サービス - EWS サービスは、次の 3 つのファイルで記述されます。Services.wsdl、Messages.xsd、Types.xsd、および EWS マネージ API のアセンブリです。Services.wsdl はクライアントとサーバーの間のコントラクトを記述し、Messages.xsd は要求および応答の SOAP メッセージを定義し、Types.xsd は SOAP メッセージで使用される要素を定義します。以前のバージョンのスキーマが存在する場合でも、Messages.xsd と Types.xsd には常に最新バージョンのスキーマが含まれます。Services.wsdl、Messages.xsd、Types.xsd はクライアント アクセス サーバーで利用可能ですが、実際にはスキーマの検証で使用されないことに注意してください。これらは参照目的でのみ提供されます。EWS マネージ API アセンブリは、サーバー側の EWS クライアント アプリケーションに提供され、クライアント アクセス サーバーだけでなく、すべての Exchange Server の役割で展開されます。このコンポーネントは、Exchange オンプレミス アーキテクチャでのみ表示されます。
     
-    機能が使用可能かどうかは、アプリケーションが対象とする EWS のスキーマのバージョン次第です。 EWS のスキーマは後方互換性と前方互換性を持つため、Exchange  2007 SP1 などの以前のバージョンのスキーマを対象とするアプリケーションを作成する場合、アプリケーションは Exchange 2010 SP2 のサービスや Exchange Online など、後のバージョンのスキーマでも動作します。 機能および機能の更新はスキーマによって決定されるため、クライアント アプリケーションに実装する EWS 機能を対象としているもののうち、最も古い共通のコード ベースを使用することをお勧めします。 多くのアプリケーションは Exchange2007_SP1 バージョンを対象にできます。なぜなら、Exchange 2007 SP1 のスキーマには、Exchange のストアのアイテムやフォルダーを操作するための Exchange のほとんどすべての主要機能が含まれているためです。 詳細については、[EWS のクライアント機能](ews-client-design-overview-for-exchange.md#EWSFeatures)を参照してください。
+    機能が使用可能かどうかは、アプリケーションが対象とする EWS のスキーマのバージョン次第です。EWS のスキーマは後方互換性と前方互換性を持つため、Exchange  2007 SP1 などの以前のバージョンのスキーマを対象とするアプリケーションを作成する場合、アプリケーションは Exchange 2010 SP2 のサービスや Exchange Online など、後のバージョンのスキーマでも動作します。機能および機能の更新はスキーマによって決定されるため、クライアント アプリケーションに実装する EWS 機能を対象としているもののうち、最も古い共通のコード ベースを使用することをお勧めします。多くのアプリケーションは Exchange2007_SP1 バージョンを対象にできます。なぜなら、Exchange 2007 SP1 のスキーマには、Exchange のストアのアイテムやフォルダーを操作するための Exchange のほとんどすべての主要機能が含まれているためです。詳細については、[EWS のクライアント機能](ews-client-design-overview-for-exchange.md#EWSFeatures)を参照してください。
     
 8. データベース可用性グループ (DAG) - メールボックス サーバーを 1 つの可用性の高い DAG にまとめら、1 つまたは複数のデータ センターに展開することができます。メールボックス サーバーは、メールボックス データベースを含んでおり、サーバー上のアクティブ メールボックスのすべてのアクティビティを処理します。データを処理、表示、格納するすべてのコンポーネントは、メールボックス サーバー上にあります。クライアントはメールボックス サーバーに直接接続しません。すべての接続はクライアント アクセス サーバーによって処理されます。このコンポーネントは、Exchange オンプレミス アーキテクチャでのみ表示されます。
     

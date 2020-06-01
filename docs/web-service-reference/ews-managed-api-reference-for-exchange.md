@@ -4,17 +4,17 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
 api_type:
 - schema
 ms.assetid: c6ca36f4-a67c-4e3c-aae7-9ead7b704e15
 description: EWS マネージド API に含まれる名前空間について説明します。
-ms.openlocfilehash: 78797ba5124cb47da5430491d3be23bbaf0371a7
-ms.sourcegitcommit: 25cbbc6707e4ec0621c5c46baf7fe49be42d3297
+localization_priority: Priority
+ms.openlocfilehash: aa5dd71bf1e9962611a8ea8471aca0c60aa232e8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2018
-ms.locfileid: "25440984"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466753"
 ---
 # <a name="ews-managed-api-reference"></a>EWS マネージド API リファレンス
 

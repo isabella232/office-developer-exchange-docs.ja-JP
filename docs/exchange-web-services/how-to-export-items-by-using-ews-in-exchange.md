@@ -3,15 +3,15 @@ title: Exchange で EWS を使用してアイテムをエクスポートする
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: e93ee68c-e134-4469-9070-fba404d46cb4
 description: Exchange の EWS マネージ API または EWS を使用して、予定、電子メール、連絡先、タスクなどのアイテムをエクスポートする方法について説明します。
-ms.openlocfilehash: 65b5b2ef1eba66877d5b6f6c3d4237a26a254196
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+localization_priority: Priority
+ms.openlocfilehash: a01c9487821958b06ec162f2aee27e2d2804eaaf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758952"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455885"
 ---
 # <a name="export-items-by-using-ews-in-exchange"></a>Exchange で EWS を使用してアイテムをエクスポートする
 
@@ -34,12 +34,12 @@ EWS マネージ API または EWS を使用すると、さまざまな方法で
 ## <a name="export-an-item-into-a-custom-format"></a>カスタム形式でアイテムをエクスポートする
 <a name="bk_exportcustom"> </a>
 
-EWS マネージ API の [Item.Bind](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_getewsma) メソッドの呼び出しの結果を使用するか、EWS の [GetItem](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_getews) 操作の結果を解析することで、カスタム アプリケーションの要件で動作する形式に変換できます。 このオプションは、アイテムをエクスポートして、データベースや .csv ファイルなどの形式やシステムにインポートする場合に使用します。 アイテムを EWS XML の形式で保存することもできます。多くのシステムに XML の解析機能があるため、この形式は実用的です。 **Item.Bind** メソッドまたは **GetItem** 操作を ([Item.MimeContent](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.item.mimecontent%28v=exchg.80%29.aspx) プロパティなしで) 使用することをお勧めします。このオプションにより、エクスポートするプロパティを制御できるようになります。 
+EWS マネージ API の [Item.Bind](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_getewsma) メソッドの呼び出しの結果を使用するか、EWS の [GetItem](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_getews) 操作の結果を解析することで、カスタム アプリケーションの要件で動作する形式に変換できます。 このオプションは、アイテムをエクスポートして、データベースや .csv ファイルなどの形式やシステムにインポートする場合に使用します。 アイテムを EWS XML の形式で保存することもできます。多くのシステムに XML の解析機能があるため、この形式は実用的です。 **Item.Bind** メソッドまたは **GetItem** 操作を ([Item.MimeContent](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.mimecontent%28v=exchg.80%29.aspx) プロパティなしで) 使用することをお勧めします。このオプションにより、エクスポートするプロパティを制御できるようになります。 
   
 ## <a name="export-items-with-full-fidelity"></a>完全な再現性のあるアイテムをエクスポートする
 <a name="bk_exportfullfidelity"> </a>
 
-完全な再現性のあるアイテムをエクスポートする場合は、EWS の [ExportItems](http://msdn.microsoft.com/library/e2846abb-0b16-4732-bbd8-038a674672f6%28Office.15%29.aspx) 操作を使用できます。 **ExportItems** 操作では、データ ストリームとして各アイテムをエクスポートします。 このデータ ストリームは解析には向いていませんが、Exchange メールボックスにインポートして戻せるアイテム レベルのバックアップとして使用できます。 それぞれの **ExportItems** 要求には多数のアイテムを含めることができますが、呼び出しごとに含めるアイテム数は 100 個を超えないようにしてください。 EWS マネージ API は **ExportItems** 操作を実装していないため、EWS マネージ API を使用する場合は、Web 要求を送信するルーチンを記述することが必要になります。 [Item.Bind](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) メソッドをオプションとして使用するとアイテムに関するメタデータを取得できます。これにより、データ ストリームに関する情報のインデックス作成と保存が可能になります。 
+完全な再現性のあるアイテムをエクスポートする場合は、EWS の [ExportItems](https://msdn.microsoft.com/library/e2846abb-0b16-4732-bbd8-038a674672f6%28Office.15%29.aspx) 操作を使用できます。 **ExportItems** 操作では、データ ストリームとして各アイテムをエクスポートします。 このデータ ストリームは解析には向いていませんが、Exchange メールボックスにインポートして戻せるアイテム レベルのバックアップとして使用できます。 それぞれの **ExportItems** 要求には多数のアイテムを含めることができますが、呼び出しごとに含めるアイテム数は 100 個を超えないようにしてください。 EWS マネージ API は **ExportItems** 操作を実装していないため、EWS マネージ API を使用する場合は、Web 要求を送信するルーチンを記述することが必要になります。 [Item.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) メソッドをオプションとして使用するとアイテムに関するメタデータを取得できます。これにより、データ ストリームに関する情報のインデックス作成と保存が可能になります。 
   
 Exchange メールボックスにインポートする予定のあるアイテムをエクスポートする場合は、**ExportItems** 操作の使用をお勧めします。 
   
@@ -49,9 +49,9 @@ Exchange メールボックスにインポートする予定のあるアイテ�
 <?xml version="1.0" encoding="utf-8" ?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-      xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-      xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+      xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+      xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013"/>
   </soap:Header>
@@ -65,13 +65,13 @@ Exchange メールボックスにインポートする予定のあるアイテ�
 </soap:Envelope>
 ```
 
-サーバーは **ExportItems** 要求に [ExportItemsResponse](http://msdn.microsoft.com/library/ef44354b-fbdb-4f7c-b6bd-b27f56a1d018%28Office.15%29.aspx) 要素で応答します。この要素には、値が **NoError** の [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 要素が含まれており、それは、アイテムが正常にアップロードされたことを示しています。 この応答には、エクスポートしたアイテムのアイテム ID とエクスポートしたコンテンツを格納しているデータ ストリームも含まれています。 次の例は、エクスポートしたアイテムを格納している SOAP ボディを示しています。
+サーバーは **ExportItems** 要求に [ExportItemsResponse](https://msdn.microsoft.com/library/ef44354b-fbdb-4f7c-b6bd-b27f56a1d018%28Office.15%29.aspx) 要素で応答します。この要素には、値が **NoError** の [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 要素が含まれており、それは、アイテムが正常にアップロードされたことを示しています。 この応答には、エクスポートしたアイテムのアイテム ID とエクスポートしたコンテンツを格納しているデータ ストリームも含まれています。 次の例は、エクスポートしたアイテムを格納している SOAP ボディを示しています。
   
 ```XML
 <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <m:ExportItemsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  <m:ExportItemsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
     <m:ResponseMessages>
       <m:ExportItemsResponseMessage ResponseClass="Success">
         <m:ResponseCode>NoError</m:ResponseCode>
@@ -90,12 +90,12 @@ Exchange メールボックスにインポートする予定のあるアイテ�
 ## <a name="use-the-mime-stream-to-export-into-common-file-formats"></a>一般的なファイル形式へのエクスポートに MIME ストリームを使用する
 <a name="bk_exportfullfidelity"> </a>
 
-EWS マネージ API の [Item.Bind](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) メソッドまたは EWS の [GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) 操作を使用すると、アイテムの MIME 表現を得られます。 Exchange は各アイテムの MIME コンテンツを保存しないため、各アイテムのデータベース表現を MIME ストリームに変換する必要があります。 この変換にはコストがかかるため、規模の大きなアイテムに対する MIME ストリームの要求はお勧めできません。 また、MIME ストリームには限定的なプロパティのセットが含まれている点にも注意してください。そのプロパティのセットに必要とするものが含まれていない場合は、別のオプションを検討することが必要になります。 
+EWS マネージ API の [Item.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) メソッドまたは EWS の [GetItem](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) 操作を使用すると、アイテムの MIME 表現を得られます。 Exchange は各アイテムの MIME コンテンツを保存しないため、各アイテムのデータベース表現を MIME ストリームに変換する必要があります。 この変換にはコストがかかるため、規模の大きなアイテムに対する MIME ストリームの要求はお勧めできません。 また、MIME ストリームには限定的なプロパティのセットが含まれている点にも注意してください。そのプロパティのセットに必要とするものが含まれていない場合は、別のオプションを検討することが必要になります。 
   
 ### <a name="use-the-ews-managed-api-to-export-an-email-into-an-eml-and-mht-file-by-using-the-mime-stream"></a>MIME ストリームを使用して電子メールを .eml ファイルと .mht ファイルにエクスポートするために EWS マネージ API を使用する
 <a name="bk_exportemailmime"> </a>
 
-Outlook などの一般的なメール アプリケーションは、EML (.eml) ファイル形式を開くことができます。 次の例は、MIME ストリームを使用して電子メールをエクスポートする方法と、EML および MIME HTML (.mht) ファイルを作成するために MIME ストリームを使用する方法を示しています。 多数の Web ブラウザーが MIME HTML ファイル形式をサポートしています。 この例では、**service** が有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに対して認証できることを前提としています。 
+Outlook などの一般的なメール アプリケーションは、EML (.eml) ファイル形式を開くことができます。 次の例は、MIME ストリームを使用して電子メールをエクスポートする方法と、EML および MIME HTML (.mht) ファイルを作成するために MIME ストリームを使用する方法を示しています。 多数の Web ブラウザーが MIME HTML ファイル形式をサポートしています。 この例では、**service** が有効な [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに対して認証できることを前提としています。 
   
 ```cs
 private static void ExportMIMEEmail(ExchangeService service)
@@ -132,7 +132,7 @@ private static void ExportMIMEEmail(ExchangeService service)
 
 Outlook などの一般的な予定表アプリケーションは、iCal (.ics) ファイル形式を開くことができます。 次の例は、MIME ストリームを使用して予定をエクスポートする方法と、iCal ファイルを作成するために MIME ストリームを使用する方法を示しています。 MIME ストリームでは、多くのプロパティ (出席者や添付物関連のプロパティなど) がエクスポートされない点に注意してください。 その他のプロパティを EWS から取得するには、そのプロパティを要求してプライベート拡張機能として iCal ファイルに保存します。 こうしたプライベート拡張機能には、プレフィックスの "x-" が付いています。 
   
-この例では、**service** が有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに対して認証できることを前提としています。 また、予定表フォルダー内に "2015 Financial Projections" という件名の予定があることも前提としています。 
+この例では、**service** が有効な [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに対して認証できることを前提としています。 また、予定表フォルダー内に "2015 Financial Projections" という件名の予定があることも前提としています。 
   
 ```cs
 private static void ExportMIMEAppointment(ExchangeService service)
@@ -162,7 +162,7 @@ private static void ExportMIMEAppointment(ExchangeService service)
 
 Outlook などの連絡先管理アプリケーションは、vCard (.vcf) ファイル形式を開くことができます。 次の例は、MIME ストリームを使用して連絡先をエクスポートする方法と、vCard を作成するために MIME ストリームを使用する方法を示しています。 その他のプロパティを EWS から取得するには、そのプロパティを要求してプライベート拡張機能として . vCard に保存します。 こうした拡張機能には、プレフィックスの "x-" が付いています。 
   
-この例では、**service** が有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに対して認証できることを前提としています。 
+この例では、**service** が有効な [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに対して認証できることを前提としています。 
   
 ```cs
 private static void ExportMIMEContact(ExchangeService service)
@@ -188,7 +188,7 @@ private static void ExportMIMEContact(ExchangeService service)
 ```
 
 > [!NOTE]
-> vCard のファイルは、**MimeContent** プロパティを使用してインポートすることはできません。 EWS マネージ API の [Contact.Save](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.contact.save%28v=exchg.80%29.aspx) メソッドまたは EWS の [CreateItem](http://msdn.microsoft.com/library/417e994b-0a17-4c24-9527-04796b80b029%28Office.15%29.aspx) 操作を使用すると、連絡先をインポートできます。 
+> vCard のファイルは、**MimeContent** プロパティを使用してインポートすることはできません。 EWS マネージ API の [Contact.Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.contact.save%28v=exchg.80%29.aspx) メソッドまたは EWS の [CreateItem](https://msdn.microsoft.com/library/417e994b-0a17-4c24-9527-04796b80b029%28Office.15%29.aspx) 操作を使用すると、連絡先をインポートできます。 
   
 ### <a name="use-ews-to-export-any-item-by-using-the-mime-stream"></a>MIME ストリームを使用してアイテムをエクスポートするために EWS を使用する
 <a name="bk_exportewsmime"> </a>
@@ -198,9 +198,9 @@ private static void ExportMIMEContact(ExchangeService service)
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
   </soap:Header>
@@ -222,22 +222,22 @@ private static void ExportMIMEContact(ExchangeService service)
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" 
                          MinorVersion="0" 
                          MajorBuildNumber="893" 
                          MinorBuildNumber="17" 
                          Version="V2_10" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>

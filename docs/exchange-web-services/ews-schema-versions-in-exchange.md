@@ -3,15 +3,15 @@ title: Exchange の EWS スキーマのバージョン
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: d1ab6f9c-ea91-4022-830d-7f7b759e3935
 description: EWS スキーマ、それと連動するアプリケーションの設計方法、ならびに各スキーマ バージョンで使用できる機能、およびスキーマと Exchange サービスのバージョンとの関係について説明します。
-ms.openlocfilehash: dd8e85547666ba0bf3a1a38775260268594f2a8b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+localization_priority: Priority
+ms.openlocfilehash: 6afef658e747b11d9aa5fb7d7a88ba8f5c57ac82
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758902"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456015"
 ---
 # <a name="ews-schema-versions-in-exchange"></a>Exchange の EWS スキーマのバージョン
 
@@ -23,7 +23,7 @@ EWS スキーマは、Exchange に送信でき、Exchange が返すことので�
 
 EWS スキーマには、次の役割があります。
   
-- クライアントが使用できる機能セットを定義する。 クライアントは、SOAP [自動検出サービス](autodiscover-for-exchange.md)を使用して、サポートされるスキーマ バージョンの一覧を取得できます。 こうすることで、クライアントはアクセスできる機能を判別できるようになります。各スキーマ バージョンは [EWS 機能セット](ews-schema-versions-in-exchange.md#bk_features)を表すからです。 EWS 用にリリースされた新しいスキーマにはそれぞれ、前のバージョンのスキーマ エンティティに加えて、新機能のためのスキーマ定義が含まれます。 このように、EWS は、以前のバージョンの EWS を対象とするアプリケーションをサポートします。
+- クライアントが使用できる機能セットを定義する。クライアントは、SOAP [自動検出サービス](autodiscover-for-exchange.md)を使用して、サポートされるスキーマ バージョンの一覧を取得できます。こうすることで、クライアントはアクセスできる機能を判別できるようになります。各スキーマ バージョンは [EWS 機能セット](ews-schema-versions-in-exchange.md#bk_features)を表すからです。EWS 用にリリースされた新しいスキーマにはそれぞれ、前のバージョンのスキーマ エンティティに加えて、新機能のためのスキーマ定義が含まれます。このように、EWS は、以前のバージョンの EWS を対象とするアプリケーションをサポートします。
     
 - API コントラクトの概要を提供する。このコントラクトを使用して、Exchange との間で送受信できるデータ構造体を判断できます。
     
@@ -33,7 +33,7 @@ EWS スキーマには、次の役割があります。
 
 それぞれ異なるバージョンの EWS スキーマと連動するアプリケーションを設計するときは、次の点を念頭に置いてください。
   
-- スキーマ バージョンに基づいて機能をオン/オフにしてください。 クライアント機能をスキーマ バージョンにマップすること、場合によってはサービスのバージョンにマップすることが必要になります。 次の例は、スキーマおよびサービスのバージョンに基づいて [PropertySet](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx) を返します。 
+- スキーマ バージョンに基づいて機能をオン/オフにしてください。 クライアント機能をスキーマ バージョンにマップすること、場合によってはサービスのバージョンにマップすることが必要になります。 次の例は、スキーマおよびサービスのバージョンに基づいて [PropertySet](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx) を返します。 
     
   ```cs
   private static PropertySet InitPropertySetByVersion(ExchangeService service)
@@ -61,14 +61,14 @@ EWS スキーマには、次の役割があります。
 ## <a name="features-by-schema-version"></a>スキーマ バージョン別の機能
 <a name="bk_features"> </a>
 
-クライアントが使用できるスキーマ バージョンは、types.xsd スキーマにある **ExchangeVersionType** 単純型で識別できます。 **ExchangeVersionType** は、[RequestServerVersion](http://msdn.microsoft.com/library/af4032d5-42b3-463e-9d0a-8236d78e5b75%28Office.15%29.aspx) 要素によって実装されます。 **RequestServerVersion** 要素はすべての EWS 要求で送信されて、クライアントが対象とするスキーマ バージョンをサーバーに示します。 これは、クライアントが使用できる機能セットを示していることになります。 
+クライアントが使用できるスキーマ バージョンは、types.xsd スキーマにある **ExchangeVersionType** 単純型で識別できます。 **ExchangeVersionType** は、[RequestServerVersion](https://msdn.microsoft.com/library/af4032d5-42b3-463e-9d0a-8236d78e5b75%28Office.15%29.aspx) 要素によって実装されます。 **RequestServerVersion** 要素はすべての EWS 要求で送信されて、クライアントが対象とするスキーマ バージョンをサーバーに示します。 これは、クライアントが使用できる機能セットを示していることになります。 
   
 **表 1: 製品バージョンおよびスキーマ バージョン別の EWS 機能**
 
 |**製品バージョン**|**関連スキーマ バージョン**|**機能**|
 |:-----|:-----|:-----|
 |Exchange Online  |最新のスキーマ バージョン。  |オンライン クライアント用に追加された新機能に加え、現在のバージョンの Exchange のすべての機能が含まれます。 |
-|Exchange 2013 SP1 |Exchange2013_SP1 | Exchange 2013 のすべての機能が含まれます。<br/><br/>次の機能は、Exchange 2013 SP1 で導入されました。 <ul><li>[メールボックス保留ポリシー](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.exchangeservice.setholdonmailboxes%28v=exchg.80%29.aspx) </li><li> [別の時間を指定](how-to-propose-a-new-meeting-time-by-using-ews-in-exchange.md) </li><li>  アイテムの[更新](http://msdn.microsoft.com/ja-JP/library/office/dn600559%28v=exchg.80%29.aspx)および[削除](http://msdn.microsoft.com/ja-JP/library/office/dn600557%28v=exchg.80%29.aspx)のための開封確認メッセージの更新  </li><li> 会話のための [IRM 情報](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.conversation.hasirm%28v=exchg.80%29.aspx)の更新  </li></ul> |
+|Exchange 2013 SP1 |Exchange2013_SP1 | Exchange 2013 のすべての機能が含まれます。<br/><br/>次の機能は、Exchange 2013 SP1 で導入されました。 <ul><li>[メールボックス保留ポリシー](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.setholdonmailboxes%28v=exchg.80%29.aspx) </li><li> [別の時間を指定](how-to-propose-a-new-meeting-time-by-using-ews-in-exchange.md) </li><li>  アイテムの[更新](https://msdn.microsoft.com/library/office/dn600559%28v=exchg.80%29.aspx)および[削除](https://msdn.microsoft.com/library/office/dn600557%28v=exchg.80%29.aspx)のための開封確認メッセージの更新  </li><li> 会話のための [IRM 情報](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.conversation.hasirm%28v=exchg.80%29.aspx)の更新  </li></ul> |
 |Exchange 2013   |Exchange2013   | Exchange 2007 および Exchange 2010 で導入されたすべての機能が含まれます。 <br/><br/>次の機能は、Exchange 2013 で導入されました。<ul><li>アーカイブ  </li><li>  電子情報開示  </li><li>  ペルソナ  </li><li>  アイテム保持ポリシー  </li><li>  統合連絡先ストア  </li><li>  ユーザーの写真  </li></ul> |
 |Exchange 2010 SP2   |Exchange2010_SP2 | Exchange 2010 SP1 で導入されたすべての機能が含まれます。 <br/><br/>次の機能は、Exchange 2010 SP2 で導入されました。<ul><li>パスワードの有効期限の取得  </li><li>  DateTime の精度  </li><li>  連絡先のプロパティ識別子の更新  </li><li>  新しい偽装シナリオ  </li></ul> |
 |Exchange 2010 SP1  |Exchange2010_SP1   | Exchange 2010 で導入されたすべての機能が含まれます。 <br/><br/>次の機能は、Exchange 2010 SP1 で導入されました。<ul><li>受信トレイ ルールの作成、取得、変更  </li><li>  プログラムによるアーカイブ メールボックスへのアクセス  </li><li>  会話アクション  </li><li>  ファイアウォールを通過する通知  </li><li>  管理機能の向上  </li><li>  混在バージョンのサポートの向上  </li><li>  保護サポートの調整  </li><li>  EWS へのアプリケーション アクセスの制御  </li><li>  クライアント証明書認証サポート  </li></ul> |

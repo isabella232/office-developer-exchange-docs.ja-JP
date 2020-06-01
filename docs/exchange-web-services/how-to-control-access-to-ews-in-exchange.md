@@ -3,15 +3,15 @@ title: Exchange での EWS に対するアクセスの制御
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 61e29e54-e3e5-404a-84c0-93b61a25ca58
 description: ユーザー、アプリケーション、組織全体の EWS へのアクセスを制御する方法を確認します。
-ms.openlocfilehash: 956c28faba105ecf2a6b1452abe629ea2fc930e1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+localization_priority: Priority
+ms.openlocfilehash: bd65b099ab15c1514945d8a1cfa4e9b1428a4755
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758928"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456879"
 ---
 # <a name="control-access-to-ews-in-exchange"></a>Exchange での EWS に対するアクセスの制御
 
@@ -24,10 +24,10 @@ ms.locfileid: "19758928"
 
 次の Exchange 管理シェル コマンドレットを使用して、現在のアクセス構成を表示し、EWS のアクセス制御を設定できます。
   
-- [Get-CASMailbox](http://technet.microsoft.com/ja-JP/library/bb124754.aspx) - 特定のメールボックスに対して設定されているパラメーターを表示します。   
-- [Set-CASMailbox](http://technet.microsoft.com/ja-JP/library/bb125264.aspx) - 特定のメールボックスのパラメーターを設定します。    
-- [Get-OrganizationConfig](http://technet.microsoft.com/ja-JP/library/aa997571.aspx) - 組織全体のパラメーターを表示します。    
-- [Set-OrganizationConfig](http://technet.microsoft.com/ja-JP/library/aa997443.aspx) - 組織全体のパラメーターを設定します。 
+- [Get-CASMailbox](https://technet.microsoft.com/library/bb124754.aspx) - 特定のメールボックスに対して設定されているパラメーターを表示します。   
+- [Set-CASMailbox](https://technet.microsoft.com/library/bb125264.aspx) - 特定のメールボックスのパラメーターを設定します。    
+- [Get-OrganizationConfig](https://technet.microsoft.com/library/aa997571.aspx) - 組織全体のパラメーターを表示します。    
+- [Set-OrganizationConfig](https://technet.microsoft.com/library/aa997443.aspx) - 組織全体のパラメーターを設定します。 
 
 <a name="bk_Examples"> </a>
 
@@ -52,8 +52,7 @@ ms.locfileid: "19758928"
 
 - [EWS アプリケーションの設定](setting-up-your-ews-application.md)    
 - [Exchange で EWS へのクライアント アプリケーションのアクセスを制御する](controlling-client-application-access-to-ews-in-exchange.md)   
-- 
-  [Exchange Server PowerShell (Exchange 管理シェル)](https://docs.microsoft.com/en-us/powershell/exchange/exchange-server/exchange-management-shell?view=exchange-ps) 
-- [Windows PowerShell](http://msdn.microsoft.com/ja-JP/library/dd835506%28v=vs.85%29.aspx)
+- [Exchange Server PowerShell (Exchange 管理シェル)](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-management-shell?view=exchange-ps) 
+- [Windows PowerShell](https://msdn.microsoft.com/library/dd835506%28v=vs.85%29.aspx)
     
 

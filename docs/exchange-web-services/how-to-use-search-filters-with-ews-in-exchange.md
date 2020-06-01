@@ -3,21 +3,21 @@ title: Exchange で EWS とともに検索フィルターを使用する
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 20fc6d2d-41c2-4490-98b8-c52513977fef
 description: EWS マネージ API または Exchange の EWS によって検索ファイルを使用する方法を確認します。
-ms.openlocfilehash: 0652c36fd610c2f9dfe22b55323b368997137e0c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+localization_priority: Priority
+ms.openlocfilehash: 04a74ec92d4bced8abd58d164a1c186d6405e679
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759081"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455836"
 ---
 # <a name="use-search-filters-with-ews-in-exchange"></a>Exchange で EWS とともに検索フィルターを使用する
 
 EWS マネージ API または Exchange の EWS によって検索ファイルを使用する方法を確認します。
   
-検索フィルターは、EWS Managed API または EWS アプリケーションで検索条件を記述するための主要なツールです。 [クエリ文字列](how-to-perform-an-aqs-search-by-using-ews-in-exchange.md)ではなく、検索フィルターを使用して以下を実行することをお勧めします。
+検索フィルターは、EWS Managed API または EWS アプリケーションで検索条件を記述するための主要なツールです。[クエリ文字列](how-to-perform-an-aqs-search-by-using-ews-in-exchange.md)ではなく、検索フィルターを使用して以下を実行することをお勧めします。
   
 - 特定のプロパティまたはプロパティのセットを検索します。  
 - 複数の検索条件を使用して検索します。
@@ -35,19 +35,19 @@ EWS マネージ API または Exchange の EWS によって検索ファイル�
 ## <a name="determine-what-type-of-search-filter-you-need"></a>必要な検索フィルターの種類を決定します。
 <a name="bk_SelectFilter"> </a>
 
-検索フィルターを作成する前に、まず必要なフィルターの種類を決定します。 フィルターの種類は、EWS マネージ API では [SearchFilter](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.searchfilter%28v=exchg.80%29.aspx) クラスの子クラスとして、EWS では [Restriction](http://msdn.microsoft.com/library/77f19014-d112-4999-8e83-ecc32a117a73%28Office.15%29.aspx) 要素の子要素として実装されます。 
+検索フィルターを作成する前に、まず必要なフィルターの種類を決定します。 フィルターの種類は、EWS マネージ API では [SearchFilter](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter%28v=exchg.80%29.aspx) クラスの子クラスとして、EWS では [Restriction](https://msdn.microsoft.com/library/77f19014-d112-4999-8e83-ecc32a117a73%28Office.15%29.aspx) 要素の子要素として実装されます。 
   
 **表 1. 検索フィルターの種類**
 
 |**フィルターの種類**|**EWS マネージ API のクラス**|**EWS の要素**|**説明**|
 |:-----|:-----|:-----|:-----|
-|包含フィルター  <br/> |[ContainsSubstring](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.searchfilter.containssubstring%28v=exchg.80%29.aspx) <br/> |[Contains](http://msdn.microsoft.com/library/476d059d-c243-43e9-b475-319fc413ade2%28Office.15%29.aspx) <br/> |文字列比較に使用するのに最適なフィルターの種類です。大文字小文字の区別、空白を無視するかどうかを制御でき、包含モードを設定できます。  <br/> |
-|ビットマスク フィルター  <br/> |[ExcludesBitmask](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.searchfilter.excludesbitmask%28v=exchg.80%29.aspx) <br/> |[Excludes](http://msdn.microsoft.com/library/bbaeddf6-9a67-4ee0-af99-7a7a5bbdc0e1%28Office.15%29.aspx) <br/> |整数のプロパティをビットマスクとして検索し、指定されたビットマスクに対応するビットが設定されていない結果のみを返すことができます。  <br/> |
-|存在フィルター  <br/> |[Exists](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.searchfilter.exists%28v=exchg.80%29.aspx) <br/> |[Exists](http://msdn.microsoft.com/library/55d568bd-8dbc-4d50-b9d7-54b74a54d4b5%28Office.15%29.aspx) <br/> |値に関係なく指定したプロパティを持つすべてのアイテムを返します。  <br/> |
-|等値フィルター  <br/> |[IsEqualTo](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.searchfilter.isequalto%28v=exchg.80%29.aspx) <br/> [IsNotEqualTo](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.searchfilter.isnotequalto%28v=exchg.80%29.aspx) <br/> |[IsEqualTo](http://msdn.microsoft.com/library/48e7e067-049c-4184-8026-071e6f558e8a%28Office.15%29.aspx) <br/> [IsNotEqualTo](http://msdn.microsoft.com/library/e2eff26c-3403-45cd-bb74-1eb98c7dbfcd%28Office.15%29.aspx) <br/> |指定された定数値または別のプロパティの値のいずれかを持つ、指定されたプロパティの値を比較し、**IsEqualTo** フィルターの場合は同じ値を持つすべてのアイテムを返し、**IsNotEqualTo** フィルターの場合は非等値を返します。  <br/> |
-|関係テスト フィルター  <br/> |[IsGreaterThan](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.searchfilter.isgreaterthan%28v=exchg.80%29.aspx) <br/> [IsGreaterThanOrEqualTo](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.searchfilter.isgreaterthanorequalto%28v=exchg.80%29.aspx) <br/> [IsLessThan](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.searchfilter.islessthan%28v=exchg.80%29.aspx) <br/> [IsLessThanOrEqualTo](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.searchfilter.islessthanorequalto%28v=exchg.80%29.aspx) <br/> |[IsGreaterThan](http://msdn.microsoft.com/library/a6e9d462-cfa7-40ec-903e-128c95050352%28Office.15%29.aspx) <br/> [IsGreaterThanOrEqualTo](http://msdn.microsoft.com/library/373cc954-314d-40e2-be03-cc08aefc0d5b%28Office.15%29.aspx) <br/> [IsLessThan](http://msdn.microsoft.com/library/2550469b-6e5d-45a5-9ecc-090d1b409296%28Office.15%29.aspx) <br/> [IsLessThanOrEqualTo](http://msdn.microsoft.com/library/b5d85eb2-5e15-4d01-ad49-6289e735ad8a%28Office.15%29.aspx) <br/> |指定された定数値または別のプロパティのいずれかに該当する関係において、指定したプロパティの値を持つすべてのアイテムを返します。 たとえば、**IsGreaterThan** フィルターは指定されたプロパティの指定された値よりも大きい値を持つすべてのアイテムを返します。  <br/> |
-|否定フィルター  <br/> |[Not](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.searchfilter.not%28v=exchg.80%29.aspx) <br/> |[Not](http://msdn.microsoft.com/library/1aa16318-7e90-4b19-bce8-dd1a20a66223%28Office.15%29.aspx) <br/> |他のフィルターの結果を否定します。  <br/> |
-|複合フィルター  <br/> |[SearchFilterCollection](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.searchfilter.searchfiltercollection%28v=exchg.80%29.aspx) <br/> |[And](http://msdn.microsoft.com/library/790246c2-37ad-49a8-91b9-6186d743b011%28Office.15%29.aspx) <br/> [Or](http://msdn.microsoft.com/library/4876d83a-73a3-4953-9d95-3048e6b76ccb%28Office.15%29.aspx) <br/> |複数のフィルターを組み合わせて複雑な検索条件を指定できます。  <br/> |
+|包含フィルター  <br/> |[ContainsSubstring](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter.containssubstring%28v=exchg.80%29.aspx) <br/> |[Contains](https://msdn.microsoft.com/library/476d059d-c243-43e9-b475-319fc413ade2%28Office.15%29.aspx) <br/> |文字列比較に使用するのに最適なフィルターの種類です。大文字小文字の区別、空白を無視するかどうかを制御でき、包含モードを設定できます。  <br/> |
+|ビットマスク フィルター  <br/> |[ExcludesBitmask](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter.excludesbitmask%28v=exchg.80%29.aspx) <br/> |[Excludes](https://msdn.microsoft.com/library/bbaeddf6-9a67-4ee0-af99-7a7a5bbdc0e1%28Office.15%29.aspx) <br/> |整数のプロパティをビットマスクとして検索し、指定されたビットマスクに対応するビットが設定されていない結果のみを返すことができます。  <br/> |
+|存在フィルター  <br/> |[Exists](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter.exists%28v=exchg.80%29.aspx) <br/> |[Exists](https://msdn.microsoft.com/library/55d568bd-8dbc-4d50-b9d7-54b74a54d4b5%28Office.15%29.aspx) <br/> |値に関係なく指定したプロパティを持つすべてのアイテムを返します。  <br/> |
+|等値フィルター  <br/> |[IsEqualTo](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter.isequalto%28v=exchg.80%29.aspx) <br/> [IsNotEqualTo](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter.isnotequalto%28v=exchg.80%29.aspx) <br/> |[IsEqualTo](https://msdn.microsoft.com/library/48e7e067-049c-4184-8026-071e6f558e8a%28Office.15%29.aspx) <br/> [IsNotEqualTo](https://msdn.microsoft.com/library/e2eff26c-3403-45cd-bb74-1eb98c7dbfcd%28Office.15%29.aspx) <br/> |指定された定数値または別のプロパティの値のいずれかを持つ、指定されたプロパティの値を比較し、**IsEqualTo** フィルターの場合は同じ値を持つすべてのアイテムを返し、**IsNotEqualTo** フィルターの場合は非等値を返します。  <br/> |
+|関係テスト フィルター  <br/> |[IsGreaterThan](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter.isgreaterthan%28v=exchg.80%29.aspx) <br/> [IsGreaterThanOrEqualTo](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter.isgreaterthanorequalto%28v=exchg.80%29.aspx) <br/> [IsLessThan](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter.islessthan%28v=exchg.80%29.aspx) <br/> [IsLessThanOrEqualTo](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter.islessthanorequalto%28v=exchg.80%29.aspx) <br/> |[IsGreaterThan](https://msdn.microsoft.com/library/a6e9d462-cfa7-40ec-903e-128c95050352%28Office.15%29.aspx) <br/> [IsGreaterThanOrEqualTo](https://msdn.microsoft.com/library/373cc954-314d-40e2-be03-cc08aefc0d5b%28Office.15%29.aspx) <br/> [IsLessThan](https://msdn.microsoft.com/library/2550469b-6e5d-45a5-9ecc-090d1b409296%28Office.15%29.aspx) <br/> [IsLessThanOrEqualTo](https://msdn.microsoft.com/library/b5d85eb2-5e15-4d01-ad49-6289e735ad8a%28Office.15%29.aspx) <br/> |指定された定数値または別のプロパティのいずれかに該当する関係において、指定したプロパティの値を持つすべてのアイテムを返します。 たとえば、**IsGreaterThan** フィルターは指定されたプロパティの指定された値よりも大きい値を持つすべてのアイテムを返します。  <br/> |
+|否定フィルター  <br/> |[Not](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter.not%28v=exchg.80%29.aspx) <br/> |[Not](https://msdn.microsoft.com/library/1aa16318-7e90-4b19-bce8-dd1a20a66223%28Office.15%29.aspx) <br/> |他のフィルターの結果を否定します。  <br/> |
+|複合フィルター  <br/> |[SearchFilterCollection](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter.searchfiltercollection%28v=exchg.80%29.aspx) <br/> |[And](https://msdn.microsoft.com/library/790246c2-37ad-49a8-91b9-6186d743b011%28Office.15%29.aspx) <br/> [Or](https://msdn.microsoft.com/library/4876d83a-73a3-4953-9d95-3048e6b76ccb%28Office.15%29.aspx) <br/> |複数のフィルターを組み合わせて複雑な検索条件を指定できます。  <br/> |
    
 ### <a name="contains-filter"></a>包含フィルター
 
@@ -56,7 +56,7 @@ EWS マネージ API または Exchange の EWS によって検索ファイル�
 #### <a name="contains-filter-in-the-ews-managed-api"></a>EWS マネージ API での包含フィルター
 <a name="bk_ContainsEWSMA"> </a>
 
-EWS マネージ API を使用している場合、[ContainsSubstring](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.searchfilter.containssubstring%28v=exchg.80%29.aspx) クラスの [ContainmentMode](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.searchfilter.containssubstring.containmentmode%28v=exchg.80%29.aspx) プロパティを使用して包含モードを設定し、**ContainsSubstring** クラスの [ComparisonMode](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.searchfilter.containssubstring.comparisonmode%28v=exchg.80%29.aspx) プロパティを使用して比較モードを設定します。 次の例では、"meeting notes" (会議メモ) という部分文字列を、アイテムの件名フィールドで検索する検索フィルターを作成する方法を示します。 この例では大文字と小文字は無視されますが、空白は無視されません。 
+EWS マネージ API を使用している場合、[ContainsSubstring](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter.containssubstring%28v=exchg.80%29.aspx) クラスの [ContainmentMode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter.containssubstring.containmentmode%28v=exchg.80%29.aspx) プロパティを使用して包含モードを設定し、**ContainsSubstring** クラスの [ComparisonMode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter.containssubstring.comparisonmode%28v=exchg.80%29.aspx) プロパティを使用して比較モードを設定します。 次の例では、"meeting notes" (会議メモ) という部分文字列を、アイテムの件名フィールドで検索する検索フィルターを作成する方法を示します。 この例では大文字と小文字は無視されますが、空白は無視されません。 
   
 ```cs
 // Find all items with a subject that contain the substring
@@ -72,7 +72,7 @@ SearchFilter.ContainsSubstring subjectFilter = new SearchFilter.ContainsSubstrin
 #### <a name="contains-filter-in-ews"></a>EWS での包含フィルター
 <a name="bk_ContainsEWSMA"> </a>
 
-EWS では、[Contains](http://msdn.microsoft.com/library/476d059d-c243-43e9-b475-319fc413ade2%28Office.15%29.aspx) 要素の **ContainmentMode** 属性を使用して包含モードを設定し、**Contains** 要素の **ContainmentComparison** 属性を使用して比較モードを設定します。 次の例では、"meeting notes" (会議メモ) という部分文字列を、アイテムの件名フィールドで検索するための検索フィルターを作成する方法を示します。 この例では大文字と小文字は無視されますが、空白は無視されません。 
+EWS では、[Contains](https://msdn.microsoft.com/library/476d059d-c243-43e9-b475-319fc413ade2%28Office.15%29.aspx) 要素の **ContainmentMode** 属性を使用して包含モードを設定し、**Contains** 要素の **ContainmentComparison** 属性を使用して比較モードを設定します。 次の例では、"meeting notes" (会議メモ) という部分文字列を、アイテムの件名フィールドで検索するための検索フィルターを作成する方法を示します。 この例では大文字と小文字は無視されますが、空白は無視されません。 
   
 ```XML
 <t:Contains ContainmentMode="Substring" ContainmentComparison="IgnoreCase">
@@ -322,12 +322,12 @@ SearchFilter.SearchFilterCollection compoundFilter =
 
 次の EWS マネージ API メソッドは検索フィルターを使用します。
   
-- [ExchangeService.FindItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)
-- [ExchangeService.FindFolders](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.findfolders%28v=exchg.80%29.aspx)
-- [Folder.FindFolders](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx)
-- [Folder.FindItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.finditems%28v=exchg.80%29.aspx)
+- [ExchangeService.FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)
+- [ExchangeService.FindFolders](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.findfolders%28v=exchg.80%29.aspx)
+- [Folder.FindFolders](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx)
+- [Folder.FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.finditems%28v=exchg.80%29.aspx)
     
-次の例では **ExchangeService.FindItems** メソッドを使用しますが、同じルールと概念がすべてのメソッドに適用されます。 この例では、**SearchWithFilter** というメソッドが定義されています。 パラメーターとして、[ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクト、[WellKnownFolderName](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.wellknownfoldername%28v=exchg.80%29.aspx) オブジェクト、および [SearchFilter](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.searchfilter%28v=exchg.80%29.aspx) オブジェクトを取ります。 この例では、**ExchangeService** オブジェクトは [Credentials](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservicebase.credentials%28v=exchg.80%29.aspx) プロパティと [Url](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.url%28v=exchg.80%29.aspx) プロパティの有効な値で初期化されているものとします。 **SearchFilter** クラスは、さまざまな検索フィルターすべての基本クラスです。 
+次の例では **ExchangeService.FindItems** メソッドを使用しますが、同じルールと概念がすべてのメソッドに適用されます。 この例では、**SearchWithFilter** というメソッドが定義されています。 パラメーターとして、[ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクト、[WellKnownFolderName](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.wellknownfoldername%28v=exchg.80%29.aspx) オブジェクト、および [SearchFilter](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter%28v=exchg.80%29.aspx) オブジェクトを取ります。 この例では、**ExchangeService** オブジェクトは [Credentials](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservicebase.credentials%28v=exchg.80%29.aspx) プロパティと [Url](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.url%28v=exchg.80%29.aspx) プロパティの有効な値で初期化されているものとします。 **SearchFilter** クラスは、さまざまな検索フィルターすべての基本クラスです。 
   
 ```cs
 using Microsoft.Exchange.WebServices.Data
@@ -390,17 +390,17 @@ SearchWithFilter(service, WellKnownFolderName.Inbox, compoundFilter);
 
 次の EWS の操作は検索フィルターを使用します。
   
-- [FindFolder](http://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx)
-- [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)
+- [FindFolder](https://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx)
+- [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)
     
-次の例では **FindItem** 操作を使用しますが、両方の操作で同じルールと概念が適用されます。 検索フィルターは、SOAP 要求の [Restriction](http://msdn.microsoft.com/library/77f19014-d112-4999-8e83-ecc32a117a73%28Office.15%29.aspx) 要素に含まれます。 この例では、前述の EWS マネージ API の例で示している検索に相当する SOAP 要求を送信します。 
+次の例では **FindItem** 操作を使用しますが、両方の操作で同じルールと概念が適用されます。 検索フィルターは、SOAP 要求の [Restriction](https://msdn.microsoft.com/library/77f19014-d112-4999-8e83-ecc32a117a73%28Office.15%29.aspx) 要素に含まれます。 この例では、前述の EWS マネージ API の例で示している検索に相当する SOAP 要求を送信します。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+    xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
   </soap:Header>
@@ -446,17 +446,17 @@ SearchWithFilter(service, WellKnownFolderName.Inbox, compoundFilter);
 次の例は、検索結果を含むサーバーからの応答を示しています。
   
 ```XML
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="712" MinorBuildNumber="22" Version="V2_3" 
-        xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-        xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+        xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+        xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
         xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:FindItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:FindItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:FindItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -514,11 +514,11 @@ SearchWithFilter(service, WellKnownFolderName.Inbox, compoundFilter);
 
 - [Exchange の検索と EWS](search-and-ews-in-exchange.md)    
 - [Exchange で EWS を使用して AQS 検索を実行する](how-to-perform-an-aqs-search-by-using-ews-in-exchange.md)   
-- [ExchangeService.FindItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)    
-- [ExchangeService.FindFolders](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.findfolders%28v=exchg.80%29.aspx)    
-- [Folder.FindFolders](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx)    
-- [Folder.FindItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.finditems%28v=exchg.80%29.aspx)    
-- [FindFolder 操作](http://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx)   
-- [FindItem 操作](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)
+- [ExchangeService.FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)    
+- [ExchangeService.FindFolders](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.findfolders%28v=exchg.80%29.aspx)    
+- [Folder.FindFolders](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx)    
+- [Folder.FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.finditems%28v=exchg.80%29.aspx)    
+- [FindFolder 操作](https://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx)   
+- [FindItem 操作](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)
     
 

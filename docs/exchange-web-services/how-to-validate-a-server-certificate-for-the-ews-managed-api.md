@@ -3,15 +3,15 @@ title: EWS マネージ API のサーバー証明書を検証する
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 1fe0b215-8340-4bc8-a6ce-4f591ca9e353
 description: Exchange Server に EWS Managed API 要求を行うことができるように、証明書検証のコールバック メソッドを作成して参照する方法について説明します。
-ms.openlocfilehash: 13d7c51e55308b9e9997697a075c8a9e6b4f10d0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+localization_priority: Priority
+ms.openlocfilehash: 195c51ca71890d6092e4182d23990bb528d37095
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759067"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456781"
 ---
 # <a name="validate-a-server-certificate-for-the-ews-managed-api"></a>EWS マネージ API のサーバー証明書を検証する
 

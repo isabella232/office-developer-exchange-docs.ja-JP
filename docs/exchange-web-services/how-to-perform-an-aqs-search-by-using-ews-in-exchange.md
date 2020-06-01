@@ -3,29 +3,29 @@ title: Exchange で EWS を使用して AQS 検索を実行する
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: c136901a-313e-4adf-a223-1d090d16917a
 description: EWS マネージ API または EWS アプリケーションで、クエリ文字列および AQS を使用して検索する方法を確認します。
-ms.openlocfilehash: dc859e24fa80cd5627477182979c9cc9527818d6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+localization_priority: Priority
+ms.openlocfilehash: 9f611a8d90c6baf0f307897735c6366c82bb63c8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759055"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455717"
 ---
 # <a name="perform-an-aqs-search-by-using-ews-in-exchange"></a>Exchange で EWS を使用して AQS 検索を実行する
 
 EWS マネージ API または EWS アプリケーションで、クエリ文字列および AQS を使用して検索する方法を確認します。
   
-クエリ文字列は、検索条件を表現する[検索フィルター](how-to-use-search-filters-with-ews-in-exchange.md)に代わる方法を提供します。 クエリ文字列を使用する最大の利点は、検索するプロパティを 1 つも指定する必要がないということです。 値を指定するだけで、アイテム上の一般的に使用されるすべてのフィールドに検索が適用されます。 単純な値の代わりに高度な検索テクニック (AQS) を使用して検索を絞り込むこともできます。 ただし、クエリ文字列には、ツールボックスに追加する前に注意すべき次の制限があります。 
+クエリ文字列は、検索条件を表現する[検索フィルター](how-to-use-search-filters-with-ews-in-exchange.md)に代わる方法を提供します。クエリ文字列を使用する最大の利点は、検索するプロパティを 1 つも指定する必要がないということです。値を指定するだけで、アイテム上の一般的に使用されるすべてのフィールドに検索が適用されます。単純な値の代わりに高度な検索テクニック (AQS) を使用して検索を絞り込むこともできます。ただし、クエリ文字列には、ツールボックスに追加する前に注意すべき次の制限があります。 
   
-- **特定のプロパティを検索する機能に制限がある。** クエリ文字列で単純な値を検索すると、検索はすべてのインデックス付きプロパティに対して実行されます。 特定のプロパティに検索を絞り込むことはできますが、AQS 文字列で使用できるプロパティは限定されます。 検索するプロパティが AQS で使用可能なプロパティのいずれでもない場合は、検索フィルターを使用することを検討してください。 
+- **特定のプロパティを検索する機能に制限がある。** クエリ文字列で単純な値を検索すると、検索はすべてのインデックス付きプロパティに対して実行されます。特定のプロパティに検索を絞り込むことはできますが、AQS 文字列で使用できるプロパティは限定されます。検索するプロパティが AQS で使用可能なプロパティのいずれでもない場合は、検索フィルターを使用することを検討してください。  
     
-- **カスタム プロパティは検索されない。** クエリ文字列の検索はインデックスに対して実行されますが、カスタム プロパティはそのインデックスに含まれません。 カスタム プロパティを検索する必要がある場合は、代わりに検索フィルターを使用してください。 
+- **カスタム プロパティは検索されない。** クエリ文字列の検索はインデックスに対して実行されますが、カスタム プロパティはそのインデックスに含まれません。カスタム プロパティを検索する必要がある場合は、代わりに検索フィルターを使用してください。 
     
-- **文字列検索の制御が限定されている。** クエリ文字列の検索は常に、大文字と小文字の違いを無視し、部分文字列の検索になります。 大文字と小文字を区別する場合、プレフィックスの検索、完全一致の検索を実行する場合は、検索フィルターを使用してください。 
+- **文字列検索の制御が限定されている。** クエリ文字列の検索は常に、大文字と小文字の違いを無視し、部分文字列の検索になります。大文字と小文字を区別する場合、プレフィックスの検索、完全一致の検索を実行する場合は、検索フィルターを使用してください。 
     
-- **フォルダーまたは検索フォルダーでは使用できない。** フォルダーを検索するための EWS 操作では、クエリ文字列の使用がサポートされていません。 さらに、検索フォルダーは、クエリ文字列をサポートしません。 どちらの場合も、検索フィルターが唯一のオプションになります。 
+- **フォルダーまたは検索フォルダーでは使用できない。** フォルダーを検索するための EWS 操作では、クエリ文字列の使用がサポートされていません。さらに、検索フォルダーは、クエリ文字列をサポートしません。どちらの場合も、検索フィルターが唯一のオプションになります。 
     
 ## <a name="creating-a-query-string"></a>クエリ文字列の作成
 <a name="bk_CreateQueryString"> </a>
@@ -159,7 +159,7 @@ EWS マネージ API および EWS のクエリ文字列は、AQS 構文の一�
 ## <a name="example-find-items-by-using-a-query-string-and-the-ews-managed-api"></a>例: クエリ文字列と EWS マネージ API を使用してアイテムを検索する
 <a name="bk_ExampleEWSMA"> </a>
 
-この例では、**SearchWithQueryString** というメソッドが定義されています。 パラメーターとして、[ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクト、[WellKnownFolderName](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.wellknownfoldername%28v=exchg.80%29.aspx) オブジェクト、クエリ文字列を表す **string** オブジェクトを取ります。 この例では、**ExchangeService** オブジェクトは [Credentials](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservicebase.credentials%28v=exchg.80%29.aspx) プロパティと [Url](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.url%28v=exchg.80%29.aspx) プロパティの有効な値で初期化されているものとします。 
+この例では、**SearchWithQueryString** というメソッドが定義されています。 パラメーターとして、[ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクト、[WellKnownFolderName](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.wellknownfoldername%28v=exchg.80%29.aspx) オブジェクト、クエリ文字列を表す **string** オブジェクトを取ります。 この例では、**ExchangeService** オブジェクトは [Credentials](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservicebase.credentials%28v=exchg.80%29.aspx) プロパティと [Url](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.url%28v=exchg.80%29.aspx) プロパティの有効な値で初期化されているものとします。 
   
 ```cs
 using Microsoft.Exchange.WebServices.Data;
@@ -211,14 +211,14 @@ SearchWithQueryString(service, WellKnownFolderName.Inbox, queryString);
 ## <a name="example-find-items-by-using-a-query-string-and-ews"></a>例: クエリ文字列と EWS を使用してアイテムを検索する
 <a name="bk_ExampleEWS"> </a>
 
-この例では、SOAP [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 要求で、件名に「project plan」という語句が含まれる受信トレイ内のすべてのアイテムを検索します。 
+この例では、SOAP [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 要求で、件名に「project plan」という語句が含まれる受信トレイ内のすべてのアイテムを検索します。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+    xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
   </soap:Header>
@@ -253,16 +253,16 @@ SearchWithQueryString(service, WellKnownFolderName.Inbox, queryString);
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="712" MinorBuildNumber="22" Version="V2_3" 
-        xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-        xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+        xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+        xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
         xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:FindItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:FindItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:FindItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -289,7 +289,7 @@ SearchWithQueryString(service, WellKnownFolderName.Inbox, queryString);
 
 - [Exchange の検索と EWS](search-and-ews-in-exchange.md)    
 - [Exchange で EWS とともに検索フィルターを使用する](how-to-use-search-filters-with-ews-in-exchange.md)    
-- [ExchangeService.FindItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)    
-- [FindItem 操作](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)
+- [ExchangeService.FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)    
+- [FindItem 操作](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)
     
 

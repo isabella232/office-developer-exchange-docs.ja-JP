@@ -3,15 +3,15 @@ title: Exchange サーバーからドメイン設定を取得する
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 2f9acb81-5135-4f72-94e8-65c235d725e6
 description: 自動検出サービスを使用して Exchange サーバーからドメインの設定を取得する方法について説明します。
-ms.openlocfilehash: 0dd990cc82762936e7827115685ce0178eafb5ae
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+localization_priority: Priority
+ms.openlocfilehash: e77810089b77f614f6bca064b2e5cf6bde2bff7c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758954"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455808"
 ---
 # <a name="get-domain-settings-from-an-exchange-server"></a>Exchange サーバーからドメイン設定を取得する
 
@@ -72,7 +72,7 @@ EWS を使用している場合は、POX の自動検出サービスよりも豊
 |[Exchange の自動検出](autodiscover-for-exchange.md) <br/> |自動検出サービスの動作方法の概要を示します。  <br/> |
 |[自動検出を使用して接続ポイントを検索する](how-to-use-autodiscover-to-find-connection-points.md) <br/> |クライアント アプリケーションを適切なサービス エンドポイントにリダイレクトするために自動検出サービスによって使用されるプロセスについて説明します。  <br/> |
    
-EWS マネージ API を使用する場合は、[Microsoft.Exchange.WebServices.Data](http://msdn.microsoft.com/ja-JP/library/exchange/dd633907%28v=exchg.80%29.aspx) 名前空間の [Microsoft.Exchange.WebServices.Data.ExchangeService](http://msdn.microsoft.com/ja-JP/library/exchange/dd635811%28v=exchg.80%29.aspx) クラスを使用して、EWS への接続を管理します。 このセクションのコード例では、コードで次の名前空間を参照することを前提としています。 
+EWS マネージ API を使用する場合は、[Microsoft.Exchange.WebServices.Data](https://msdn.microsoft.com/library/exchange/dd633907%28v=exchg.80%29.aspx) 名前空間の [Microsoft.Exchange.WebServices.Data.ExchangeService](https://msdn.microsoft.com/library/exchange/dd635811%28v=exchg.80%29.aspx) クラスを使用して、EWS への接続を管理します。 このセクションのコード例では、コードで次の名前空間を参照することを前提としています。 
   
 - **System.Net**
     
@@ -81,7 +81,7 @@ EWS マネージ API を使用する場合は、[Microsoft.Exchange.WebServices.
 ## <a name="get-domain-settings-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して、ドメインの設定を取得する
 <a name="bk_Managed"> </a>
 
-EWS マネージ API を使用する場合は、次の例に示すように、[Microsoft.Exchange.WebServices.Data.AutodiscoverService](http://msdn.microsoft.com/ja-JP/library/exchange/dd634321%28v=exchg.80%29.aspx) オブジェクトの [Microsoft.Exchange.WebServices.Data.AutodiscoverSettings.GetUserSettings](http://msdn.microsoft.com/ja-JP/library/exchange/microsoft.exchange.webservices.autodiscover.autodiscoverservice.getusersettings%28v=exchg.80%29.aspx) メソッドを使用して、ドメインの構成情報を取得する要求を生成することができます。 この例では、使用可能なドメインの設定の一部だけが要求され、要求された設定のみがサーバーから返されます。 
+EWS マネージ API を使用する場合は、次の例に示すように、[Microsoft.Exchange.WebServices.Data.AutodiscoverService](https://msdn.microsoft.com/library/exchange/dd634321%28v=exchg.80%29.aspx) オブジェクトの [Microsoft.Exchange.WebServices.Data.AutodiscoverSettings.GetUserSettings](https://msdn.microsoft.com/library/exchange/microsoft.exchange.webservices.autodiscover.autodiscoverservice.getusersettings%28v=exchg.80%29.aspx) メソッドを使用して、ドメインの構成情報を取得する要求を生成することができます。 この例では、使用可能なドメインの設定の一部だけが要求され、要求された設定のみがサーバーから返されます。 
   
 ```cs
 AutodiscoverService autodiscoverService = new AutodiscoverService("domain.contoso.com");
@@ -119,17 +119,17 @@ Console.WriteLine(domainresponse.Settings[DomainSettingName.ExternalEwsUrl]);
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:a="http://schemas.microsoft.com/exchange/2010/Autodiscover" 
+<soap:Envelope xmlns:a="https://schemas.microsoft.com/exchange/2010/Autodiscover" 
         xmlns:wsa="http://www.w3.org/2005/08/addressing" 
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+        xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <a:RequestedServerVersion>Exchange2013</a:RequestedServerVersion>
-    <wsa:Action>http://schemas.microsoft.com/exchange/2010/Autodiscover/Autodiscover/GetDomainSettings</wsa:Action>
+    <wsa:Action>https://schemas.microsoft.com/exchange/2010/Autodiscover/Autodiscover/GetDomainSettings</wsa:Action>
     <wsa:To>https://autodiscover.exchange.microsoft.com/autodiscover/autodiscover.svc</wsa:To>
   </soap:Header>
   <soap:Body>
-    <a:GetDomainSettingsRequestMessage xmlns:a="http://schemas.microsoft.com/exchange/2010/Autodiscover">
+    <a:GetDomainSettingsRequestMessage xmlns:a="https://schemas.microsoft.com/exchange/2010/Autodiscover">
       <a:Request>
         <a:Domains>
           <a:Domain>domain</a:Domain>
@@ -148,12 +148,12 @@ Console.WriteLine(domainresponse.Settings[DomainSettingName.ExternalEwsUrl]);
 次の例では、サーバーがクライアントからの要求を解析した後に返す XML 応答を示します。
   
 ```XML
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" 
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/" 
         xmlns:a="http://www.w3.org/2005/08/addressing">
   <s:Header>
-    <a:Action s:mustUnderstand="1">http://schemas.microsoft.com/exchange/2010/
+    <a:Action s:mustUnderstand="1">https://schemas.microsoft.com/exchange/2010/
           Autodiscover/Autodiscover/GetDomainSettingsResponse</a:Action>
-    <h:ServerVersionInfo xmlns:h="http://schemas.microsoft.com/exchange/2010/Autodiscover" 
+    <h:ServerVersionInfo xmlns:h="https://schemas.microsoft.com/exchange/2010/Autodiscover" 
           xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
       <h:MajorVersion>15</h:MajorVersion>
       <h:MinorVersion>0</h:MinorVersion>
@@ -163,7 +163,7 @@ Console.WriteLine(domainresponse.Settings[DomainSettingName.ExternalEwsUrl]);
     </h:ServerVersionInfo>
   </s:Header>
   <s:Body>
-    <GetDomainSettingsResponseMessage xmlns="http://schemas.microsoft.com/exchange/2010/Autodiscover">
+    <GetDomainSettingsResponseMessage xmlns="https://schemas.microsoft.com/exchange/2010/Autodiscover">
       <Response xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
         <ErrorCode>NoError</ErrorCode>
         <ErrorMessage />
@@ -203,8 +203,8 @@ Console.WriteLine(domainresponse.Settings[DomainSettingName.ExternalEwsUrl]);
 
 - [EWS アプリケーションの設定](setting-up-your-ews-application.md)
     
-- [Exchange 用自動検出 Web サービス リファレンス](http://msdn.microsoft.com/library/a01124a8-a8cf-4b80-8625-d7ee05690bca%28Office.15%29.aspx)
+- [Exchange 用自動検出 Web サービス リファレンス](https://msdn.microsoft.com/library/a01124a8-a8cf-4b80-8625-d7ee05690bca%28Office.15%29.aspx)
     
-- [Exchange 用 EWS リファレンス](http://msdn.microsoft.com/library/2a873474-1bb2-4cb1-a556-40e8c4159f4a%28Office.15%29.aspx)
+- [Exchange 用 EWS リファレンス](https://msdn.microsoft.com/library/2a873474-1bb2-4cb1-a556-40e8c4159f4a%28Office.15%29.aspx)
     
 

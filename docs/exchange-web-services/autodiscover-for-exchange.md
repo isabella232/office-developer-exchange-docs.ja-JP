@@ -3,15 +3,15 @@ title: Exchange の自動検出
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: da0f9402-4e35-42c7-a15e-1e9e4e966e8b
 description: Exchange 自動検出サービスについて説明します。
-ms.openlocfilehash: f56717eaced5db9028c556c6c2d9aa7794f4988e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+localization_priority: Priority
+ms.openlocfilehash: 913ec3fef93900a1b5fa7aa342e8bca149c88b7b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758903"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44437760"
 ---
 # <a name="autodiscover-for-exchange"></a>Exchange の自動検出
 
@@ -24,7 +24,7 @@ Exchange 自動検出サービスは、最小限のユーザー入力でカス�
 
 自動検出プロセスには、基本的に 3 つのフェーズがあります。フェーズ 1 では潜在的な自動検出サーバーの一覧を生成して、フェーズ 2 では成功の応答 (可能な場合) が得られるまで一覧の各サーバーを試します。いずれの候補もうまくいかなかった場合は、フェーズ 3 に移行します。このフェーズは、自動検出エンドポイントを見つけるための「最後の努力」を表します。
   
-EWS マネージ API の [ExchangeService.AutodiscoverUrl](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.autodiscoverurl%28v=exchg.80%29.aspx) メソッドにより、このプロセスの 3 つのフェーズはすべて実装されます。そのため、EWS マネージ API を使用する場合は、独自に自動検出を実装することについて心配する必要はありません。 次の図は、自動検出プロセスの 3 つのフェーズを示しています。 
+EWS マネージ API の [ExchangeService.AutodiscoverUrl](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.autodiscoverurl%28v=exchg.80%29.aspx) メソッドにより、このプロセスの 3 つのフェーズはすべて実装されます。そのため、EWS マネージ API を使用する場合は、独自に自動検出を実装することについて心配する必要はありません。 次の図は、自動検出プロセスの 3 つのフェーズを示しています。 
   
 **図 1. 自動検出プロセスの 3 つのフェーズ**
 
@@ -33,14 +33,14 @@ EWS マネージ API の [ExchangeService.AutodiscoverUrl](http://msdn.microsoft
 ### <a name="phase-1-defining-the-candidate-pool"></a>フェーズ 1: 候補プールを定義する
 <a name="bk_Phase1"> </a>
 
-自動検出を使用するには、まず、ユーザーに正しい自動検出サーバーの場所を示す必要があります。 好都合なことに、自動検出の定義により、探す場所の数は限られています。 複数の候補が見つかった場合、自動検出では[一覧を生成して優先度を設定する方法](how-to-generate-a-list-of-autodiscover-endpoints.md)も定義します。
+自動検出を使用するには、まず、ユーザーに正しい自動検出サーバーの場所を示す必要があります。好都合なことに、自動検出の定義により、探す場所の数は限られています。複数の候補が見つかった場合、自動検出では[一覧の生成して優先度を設定する方法](how-to-generate-a-list-of-autodiscover-endpoints.md)も定義されています。
   
 **表 1. 自動検出エンドポイント候補のソース**
 
 |**探す場所**|**見つかるもの**|
 |:-----|:-----|
-|Active Directory Domain Services (AD DS)  <br/> |ドメインに参加しているクライアントの場合は、最初に探す場所になります。 Exchange は AD DS にサービス接続ポイント (SCP) オブジェクトを公開します。これにより、自動検出の要求は Active Directory サイトに基づいてサーバーにルーティングできるようになります。 [SCP 検索](how-to-find-autodiscover-endpoints-by-using-scp-lookup-in-exchange.md)の結果は、候補一覧の最上位にする必要があります。  <br/><br/>**注**: SCP 検索は、ドメインに参加していないクライアントや Active Directory サーバーにアクセスできないクライアントには使用できません。 この場合は、SCP 検索を省略する必要があります。 <br/>|
-|ユーザーの電子メール アドレス ドメイン  <br/> | 自動検出では、標準エンドポイント URL の形式が 2 つ定義されています。これは、ユーザーの電子メール アドレスのドメイン部分から派生します。  <br/>`"https://" + domain + "/autodiscover/autodiscover" +  *fileExtension*`  <br/>`"https://autodiscover." + domain + "/autodiscover/autodiscover" +  *fileExtension*`<br/><br/>  *fileExtension* の値は、自動検出のアクセス方式に [SOAP](http://msdn.microsoft.com/library/61c21ea9-7fea-4f56-8ada-bf80e1e6b074%28Office.15%29.aspx) と [POX](http://msdn.microsoft.com/library/877152f0-f4b1-4f63-b2ce-924f4bdf2d20%28Office.15%29.aspx) のどちらを使用しているかによって決まります。 SOAP サービスではファイル拡張子 ".svc" が使用され、POX では ".xml" が使用されます。  <br/> |
+|Active Directory Domain Services (AD DS)  <br/> |ドメインに参加しているクライアントの場合は、最初に探す場所になります。Exchange は AD DS にサービス接続ポイント (SCP) オブジェクトを公開します。これにより、自動検出の要求は Active Directory サイトに基づいてサーバーにルーティングできるようになります。[SCP 検索](how-to-find-autodiscover-endpoints-by-using-scp-lookup-in-exchange.md)の結果は、候補一覧の最上位にする必要があります。<br/><br/>**注**: SCP 検索は、ドメインに参加していないクライアントや Active Directory サーバーにアクセスできないクライアントには使用できません。 この場合は、SCP 検索を省略する必要があります。 <br/>|
+|ユーザーの電子メール アドレス ドメイン  <br/> | 自動検出では、標準エンドポイント URL の形式が 2 つ定義されています。これは、ユーザーの電子メール アドレスのドメイン部分から派生します。  <br/>`"https://" + domain + "/autodiscover/autodiscover" +  *fileExtension*`  <br/>`"https://autodiscover." + domain + "/autodiscover/autodiscover" +  *fileExtension*`<br/><br/>  *fileExtension* の値は、自動検出のアクセス方式に [SOAP](https://msdn.microsoft.com/library/61c21ea9-7fea-4f56-8ada-bf80e1e6b074%28Office.15%29.aspx) と [POX](https://msdn.microsoft.com/library/877152f0-f4b1-4f63-b2ce-924f4bdf2d20%28Office.15%29.aspx) のどちらを使用しているかによって決まります。 SOAP サービスではファイル拡張子 ".svc" が使用され、POX では ".xml" が使用されます。  <br/> |
    
 次の図は、自動検出エンドポイント一覧の生成方法を示しています。
   
@@ -51,7 +51,7 @@ EWS マネージ API の [ExchangeService.AutodiscoverUrl](http://msdn.microsoft
 ### <a name="phase-2-trying-each-candidate"></a>フェーズ 2: 各候補を試してみる
 <a name="bk_Phase2"> </a>
 
-潜在的な候補の順序付き一覧を生成したら、[URL に要求を送信](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)して結果を検証することで、一覧の各候補を試してみます。図 3 を参照してください。 成功の応答が得られた時点で完了です。 
+潜在的な候補の順序付き一覧を生成したら、[URL に要求を送信](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)して結果を検証することで、一覧の各候補を試してみます。図 3 を参照してください。成功の応答が得られた時点で完了です。 
   
 **図 3. 各エンドポイント候補を順に試す**
 
@@ -72,9 +72,9 @@ EWS マネージ API の [ExchangeService.AutodiscoverUrl](http://msdn.microsoft
 
 |**使用するもの**|**要求を送信する手段**|
 |:-----|:-----|
-|EWS マネージ API  <br/> |[GetUserSettings](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.autodiscover.autodiscoverservice.getusersettings%28v=exchg.80%29.aspx) メソッド。  <br/> |
-|SOAP 自動検出サービス  <br/> |[GetUserSettings](http://msdn.microsoft.com/library/758d965c-ef63-4de4-9120-e293abf14ff8%28Office.15%29.aspx) 操作。  <br/> |
-|POX 自動検出サービス  <br/> |[自動検出要求本文](http://msdn.microsoft.com/library/75671b1d-f35b-497b-8d8c-706f3f2535fd%28Office.15%29.aspx)が含まれる HTTP POST。  <br/> |
+|EWS マネージ API  <br/> |[GetUserSettings](https://msdn.microsoft.com/library/microsoft.exchange.webservices.autodiscover.autodiscoverservice.getusersettings%28v=exchg.80%29.aspx) メソッド。  <br/> |
+|SOAP 自動検出サービス  <br/> |[GetUserSettings](https://msdn.microsoft.com/library/758d965c-ef63-4de4-9120-e293abf14ff8%28Office.15%29.aspx) 操作。  <br/> |
+|POX 自動検出サービス  <br/> |[自動検出要求本文](https://msdn.microsoft.com/library/75671b1d-f35b-497b-8d8c-706f3f2535fd%28Office.15%29.aspx)が含まれる HTTP POST。  <br/> |
    
 ### <a name="phase-3-trying-other-alternatives"></a>フェーズ 3: その他の方法を試す
 <a name="bk_Phase3"> </a>
@@ -102,9 +102,9 @@ EWS マネージ API の [ExchangeService.AutodiscoverUrl](http://msdn.microsoft
 
 |**オプション**|**利点**|**欠点**|
 |:-----|:-----|:-----|
-|[EWS マネージ API](get-started-with-ews-managed-api-client-applications.md) <br/> | 自動検出プロセスが実装される。<br/><br/>SOAP と POX の両方の自動検出サービスを使用する。<br/><br/>Exchange Online、Office 365 の一部としての Exchange Online、または Exchange 2007 SP1 以降の Exchange の各バージョンで動作する。<br/><br/>使いやすい。  <br/> | [Microsoft.Exchange.WebServices.Autodiscover.UserSettingName](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.autodiscover.usersettingname%28v=EXCHG.80%29.aspx) 列挙体で使用できるユーザー設定に制限される。<br/><br/>.NET Framework アプリケーションにのみ使用できる。  <br/> |
-|[SOAP 自動検出](http://msdn.microsoft.com/library/61c21ea9-7fea-4f56-8ada-bf80e1e6b074%28Office.15%29.aspx) <br/> | プラットフォームに依存しない。<br/><br/>監視のある設定のみを要求できる。  <br/> | Exchange 2007 では使用できない。  <br/> |
-|[POX 自動検出](http://msdn.microsoft.com/library/877152f0-f4b1-4f63-b2ce-924f4bdf2d20%28Office.15%29.aspx) <br/> | プラットフォームに依存しない。<br/><br/>Exchange Online および Exchange 2007 SP1 以降のすべてのバージョンでサポートされる。  <br/> | 特定の設定を要求できない。  <br/> |
+|[EWS マネージ API](get-started-with-ews-managed-api-client-applications.md) <br/> | 自動検出プロセスが実装される。<br/><br/>SOAP と POX の両方の自動検出サービスを使用する。<br/><br/>Exchange Online、Office 365 の一部としての Exchange Online、または Exchange 2007 SP1 以降の Exchange の各バージョンで動作する。<br/><br/>使いやすい。  <br/> | [Microsoft.Exchange.WebServices.Autodiscover.UserSettingName](https://msdn.microsoft.com/library/microsoft.exchange.webservices.autodiscover.usersettingname%28v=EXCHG.80%29.aspx) 列挙体で使用できるユーザー設定に制限される。<br/><br/>.NET Framework アプリケーションにのみ使用できる。  <br/> |
+|[SOAP 自動検出](https://msdn.microsoft.com/library/61c21ea9-7fea-4f56-8ada-bf80e1e6b074%28Office.15%29.aspx) <br/> | プラットフォームに依存しない。<br/><br/>監視のある設定のみを要求できる。  <br/> | Exchange 2007 では使用できない。  <br/> |
+|[POX 自動検出](https://msdn.microsoft.com/library/877152f0-f4b1-4f63-b2ce-924f4bdf2d20%28Office.15%29.aspx) <br/> | プラットフォームに依存しない。<br/><br/>Exchange Online および Exchange 2007 SP1 以降のすべてのバージョンでサポートされる。  <br/> | 特定の設定を要求できない。  <br/> |
    
 ## <a name="in-this-section"></a>このセクションの内容
 
@@ -127,8 +127,8 @@ EWS マネージ API の [ExchangeService.AutodiscoverUrl](http://msdn.microsoft
 ## <a name="see-also"></a>関連項目
 
 - [Exchange で Web サービスの使用を開始する](start-using-web-services-in-exchange.md)    
-- [Exchange 2013: 自動検出によるユーザー設定の取得](http://code.msdn.microsoft.com/Exchange-2013-Get-user-7e22c86e)
-- [Autodiscover Checker サンプル](http://code.msdn.microsoft.com/exchange/Autodiscover-Checker-e1ebca42)  
+- [Exchange 2013: 自動検出によるユーザー設定の取得](https://code.msdn.microsoft.com/Exchange-2013-Get-user-7e22c86e)
+- [Autodiscover Checker サンプル](https://code.msdn.microsoft.com/exchange/Autodiscover-Checker-e1ebca42)  
 - [Exchange の Web サービス クライアントを開発する](develop-web-service-clients-for-exchange.md)
     
 

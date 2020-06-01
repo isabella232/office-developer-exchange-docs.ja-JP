@@ -3,15 +3,15 @@ title: Exchange アプリケーションの開発環境をセットアップす�
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 91b86e93-bdde-41c3-9680-45cf61420592
 description: 開発環境をセットアップして、Exchange と通信する EWS アプリケーションを作成する方法について説明します。
-ms.openlocfilehash: 41664304eebf44d7985c774e260038eae4f23156
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+localization_priority: Priority
+ms.openlocfilehash: 01a106817f29bd696991b8a0c5d7d9b7dd420b94
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353274"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463763"
 ---
 # <a name="setting-up-your-exchange-application-development-environment"></a>Exchange アプリケーションの開発環境をセットアップする
 
@@ -23,7 +23,7 @@ Exchange Web サービス (EWS) アプリケーションの記述を開始する
 > EWS マネージ API は、[GitHub](https://github.com/officedev/ews-managed-api) でオープンソース プロジェクトとして利用可能になりました。 オープン ソース ライブラリを使用して、以下のことができます。 
 > - バグ修正と API の機能強化に貢献します。 
 > - 公式のリリースで利用可能になる前に、修正プログラムや拡張機能を取得できます。 
-> - API の最も包括的かつ最新の実装にアクセスし、それを参照用として使用するか、それを新しいプラットフォーム上の新しいライブラリを作成するために使用します。
+> - API の最も包括的かつ最新の実装にアクセスして、参照として使用するか、新しいプラットフォームで新しいライブラリを作成します。
 > 
 >  GitHub を通した皆様の[貢献](https://github.com/OfficeDev/ews-managed-api/blob/master/CONTRIBUTING.md)を歓迎いたします。 
   
@@ -32,17 +32,18 @@ Exchange Web サービス (EWS) アプリケーションの記述を開始する
 
 EWS マネージ API アプリケーションを作成するには、次にアクセスする必要があります。
   
-- [EWS マネージ API](http://aka.ms/ews-managed-api-readme)。 
+- [EWS マネージ API](https://aka.ms/ews-managed-api-readme)。 
     
     EWS マネージ API ファイルはコンピューターの任意の場所に保存することができます。既定では、Files\Microsoft\Exchange\Web Services\\<version number\> フォルダーにインストールされます。
     
 - Exchange Online、Office 365 の一部としての Exchange Online、または Exchange 2007 以降のバージョンの Exchange を実行している Exchange サーバー上のメールボックス。 
     
-    [Office 365 サイト](http://office.microsoft.com/ja-JP/business/compare-office-365-for-business-plans-FX102918419.aspx#fbid=1tsGNIE7e3a)から、無料試用版を含むビジネス用 Exchange Online プランを入手できます。 メールボックスに接続するには、メールボックスに関連付けられているアカウントのユーザー名と資格情報が必要です。
+    [Office 365 サイト](https://office.microsoft.com/business/compare-office-365-for-business-plans-FX102918419.aspx#fbid=1tsGNIE7e3a)から、無料試用版を含むビジネス用 Exchange Online プランを入手できます。 メールボックスに接続するには、メールボックスに関連付けられているアカウントのユーザー名と資格情報が必要です。
+
     
 - Visual Studio 2005 以降のいずれかのバージョンの Visual Studio。 現在、Visual Studio をお持ちでない場合は、[無料版](https://visualstudio.microsoft.com/)をダウンロードできます。
     
-- .NET Framework 3.5 以降のいずれかのバージョンの .NET Framework。 .NET Framework 3.5 は、[Microsoft ダウンロード センター](http://go.microsoft.com/fwlink/?LinkId=191777)からダウンロードできます。
+- .NET Framework 3.5 以降のいずれかのバージョンの .NET Framework。 .NET Framework 3.5 は、[Microsoft ダウンロード センター](https://go.microsoft.com/fwlink/?LinkId=191777)からダウンロードできます。
     
 また、C# をある程度理解しておくと役立ちます。Visual Studio は C# だけでなく他の言語がサポートしていますが、EWS マネージ API で使用できるサンプル コードのほとんどは C# で記述されています。
   
@@ -61,7 +62,7 @@ EWS を使用する 2 番目の方法は、自動生成されるプロキシを�
   
 - プロキシ参照を作成するための Visual Studio 2005 以降のいずれかのバージョンの Visual Studio。 [無料版](https://visualstudio.microsoft.com/)をダウンロードできます。
     
-- .NET Framework 2.0 以降のいずれかのバージョンの .NET Framework。 .NET Framework 3.5 は、[Microsoft ダウンロード センター](http://go.microsoft.com/fwlink/?LinkId=191777)からダウンロードできます。
+- .NET Framework 2.0 以降のいずれかのバージョンの .NET Framework。 .NET Framework 3.5 は、[Microsoft ダウンロード センター](https://go.microsoft.com/fwlink/?LinkId=191777)からダウンロードできます。
     
 自動生成されるプロキシを使用する場合は、C# プログラミングの知識がある程度必要です。
   
@@ -73,6 +74,5 @@ EWS を使用する 2 番目の方法は、自動生成されるプロキシを�
 - [Exchange アプリケーションの開発環境をセットアップする](setting-up-your-exchange-application-development-environment.md)   
 - [Exchange の EWS クライアントの設計の概要](ews-client-design-overview-for-exchange.md)  
 - [Exchange で EWS へのアクセスを制御する](how-to-control-access-to-ews-in-exchange.md)  
-- [Exchange 用に EWS で生成されたオブジェクト モデル](https://msdn.microsoft.com/ja-JP/library/jj190899)
+- [Exchange 用に EWS で生成されたオブジェクト モデル](https://msdn.microsoft.com/library/jj190899)
     
-

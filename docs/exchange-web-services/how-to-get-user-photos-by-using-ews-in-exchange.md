@@ -3,15 +3,15 @@ title: Exchange で EWS を使用してユーザーの写真を取得する
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: f86d1099-1f57-47dc-abf2-4d5ae4e900a9
 description: Exchange の EWS マネージ API または EWS を使用して、メールボックスまたは連絡先に関連付けられているユーザーの写真を取得する方法について説明します。
-ms.openlocfilehash: f0f5cddd41fc563fb9ed38e75b505830a3992411
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+localization_priority: Priority
+ms.openlocfilehash: 14f2bc6bef1ce3c3529f03e213e3ada7c45a5a71
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758987"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455787"
 ---
 # <a name="get-user-photos-by-using-ews-in-exchange"></a>Exchange で EWS を使用してユーザーの写真を取得する
 
@@ -40,7 +40,7 @@ https://Exchange Server/ews/Exchange.asmx/s/GetUserPhoto?email=email address&amp
 
 自動検出サービスの [GetUserSettings](how-to-get-user-settings-from-exchange-by-using-autodiscover.md) 操作を使用して **ExternalEwsUrl** 設定を取得します。この設定には、Exchange Web サービス (EWS) エンドポイントの URL と、ユーザーの写真を返す **Exchange.asmx** HTTP ハンドラーの場所が含まれています。 
   
-それぞれのサイズ コードは、イメージの高さと幅をピクセル単位で示しています。 たとえば、サイズ コード **HR48x48** は、高さ 48 ピクセル × 幅 48 ピクセルのイメージを返します。 サイズ コード パラメーターに有効な値は、[SizeRequested](http://msdn.microsoft.com/library/e86f98b6-83b5-4530-80eb-dc5df42e2c62%28Office.15%29.aspx) 要素に有効な値と同じになります。 要求で指定したサイズが使用できない場合は、使用可能な最大の写真が返されます。 Exchange サーバーに写真が保存されていない場合は、そのアカウント用に AD DS に保存されているサムネイル イメージが返されます。 
+それぞれのサイズ コードは、イメージの高さと幅をピクセル単位で示しています。 たとえば、サイズ コード **HR48x48** は、高さ 48 ピクセル × 幅 48 ピクセルのイメージを返します。 サイズ コード パラメーターに有効な値は、[SizeRequested](https://msdn.microsoft.com/library/e86f98b6-83b5-4530-80eb-dc5df42e2c62%28Office.15%29.aspx) 要素に有効な値と同じになります。 要求で指定したサイズが使用できない場合は、使用可能な最大の写真が返されます。 Exchange サーバーに写真が保存されていない場合は、そのアカウント用に AD DS に保存されているサムネイル イメージが返されます。 
   
 > [!NOTE]
 > **HR48x48** サイズ コードは、常に AD DS サムネイル イメージを返します (使用可能な場合)。 
@@ -84,7 +84,7 @@ Exchange は、コンテンツの種類が image/jpeg のデータをヘッダ�
 
 アプリケーションでは EWS マネージ API を使用して連絡先の写真を取得できます (連絡先がユーザーのメールボックスの連絡先フォルダーに保存されている場合)。 これを行うには、まず、使用する連絡先の **ItemId** を見つけます。 次に、その連絡先にバインドしてから、添付ファイルのコレクションに読み込みます。 連絡先に写真がある場合は、写真が添付ファイルの 1 つに含まれています。 添付ファイルのコレクションをループして、**IsContactPhoto** プロパティの値を確認します。 連絡先の写真を見つけたら、その写真をローカル コンピューターに保存して、アプリケーションからアクセスできるようにします。 
   
-次の例は、このプロセスを示しています。 この例では、**service** が有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーから既に認証されていると想定しています。 
+次の例は、このプロセスを示しています。 この例では、**service** が有効な [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーから既に認証されていると想定しています。 
   
 ```cs
 private static void GetContactPhoto(ExchangeService service, string ItemId)
@@ -116,19 +116,19 @@ private static void GetContactPhoto(ExchangeService service, string ItemId)
 
 ## <a name="get-a-user-photo-by-using-ews"></a>EWS を使用してユーザーの写真を取得する
 
-ユーザーの写真を AD DS から取得するときに、電子メール アドレスがわかっている場合は [GetUserPhoto](http://msdn.microsoft.com/library/f6e8143d-4235-428e-8f9c-ab6e9b1cfa6e%28Office.15%29.aspx) 操作を使用し、電子メール アドレスがわからない場合は [ResolveNames](http://msdn.microsoft.com/library/6b4eb4b3-9ad6-4804-a09f-7e20cfea4dbb%28Office.15%29.aspx) 操作を使用します。 メールボックスの連絡先フォルダーからユーザーの写真を取得する場合は、[GetItem](http://msdn.microsoft.com/library/6b96dace-1260-4b83-869a-7c31c5583daa%28Office.15%29.aspx) 操作に続けて [GetAttachment](http://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) 操作を使用します。 どちらの場合も、写真は Base64 エンコード文字列として XML 応答で返されます。 
+ユーザーの写真を AD DS から取得するときに、電子メール アドレスがわかっている場合は [GetUserPhoto](https://msdn.microsoft.com/library/f6e8143d-4235-428e-8f9c-ab6e9b1cfa6e%28Office.15%29.aspx) 操作を使用し、電子メール アドレスがわからない場合は [ResolveNames](https://msdn.microsoft.com/library/6b4eb4b3-9ad6-4804-a09f-7e20cfea4dbb%28Office.15%29.aspx) 操作を使用します。 メールボックスの連絡先フォルダーからユーザーの写真を取得する場合は、[GetItem](https://msdn.microsoft.com/library/6b96dace-1260-4b83-869a-7c31c5583daa%28Office.15%29.aspx) 操作に続けて [GetAttachment](https://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) 操作を使用します。 どちらの場合も、写真は Base64 エンコード文字列として XML 応答で返されます。 
   
 ### <a name="get-a-mailbox-user-photo-by-using-the-getuserphoto-operation"></a>GetUserPhoto 操作を使用してメールボックス ユーザーの写真を取得する
 
-**GetUserPhoto** 操作を使用すると、簡単になります。 XML 要求では、ユーザーの電子メール アドレスと、返される[写真のサイズ](http://msdn.microsoft.com/library/e86f98b6-83b5-4530-80eb-dc5df42e2c62%28Office.15%29.aspx)を指定します ([SizeRequested](http://msdn.microsoft.com/library/e86f98b6-83b5-4530-80eb-dc5df42e2c62%28Office.15%29.aspx) 要素内)。 次の XML 要求の例は、幅 360 ピクセル×高さ 360 ピクセルの Sadie Daniels の写真を取得する方法を示しています。 
+**GetUserPhoto** 操作を使用すると、簡単になります。 XML 要求では、ユーザーの電子メール アドレスと、返される[写真のサイズ](https://msdn.microsoft.com/library/e86f98b6-83b5-4530-80eb-dc5df42e2c62%28Office.15%29.aspx)を指定します ([SizeRequested](https://msdn.microsoft.com/library/e86f98b6-83b5-4530-80eb-dc5df42e2c62%28Office.15%29.aspx) 要素内)。 次の XML 要求の例は、幅 360 ピクセル×高さ 360 ピクセルの Sadie Daniels の写真を取得する方法を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013 "/>
    </soap:Header>
@@ -142,15 +142,15 @@ private static void GetContactPhoto(ExchangeService service, string ItemId)
 
 ```
 
-次に、XML 応答を示します。 Base64 エンコードされた写真が [PictureData](http://msdn.microsoft.com/library/1124eac3-ebf2-4b81-96d3-96838c840433%28Office.15%29.aspx) 要素に含まれています (読みやすくするために内容が短縮されています)。 
+次に、XML 応答を示します。 Base64 エンコードされた写真が [PictureData](https://msdn.microsoft.com/library/1124eac3-ebf2-4b81-96d3-96838c840433%28Office.15%29.aspx) 要素に含まれています (読みやすくするために内容が短縮されています)。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
          xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <GetUserPhotoResponse ResponseClass="Success" 
-         xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+         xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseCode>NoError</ResponseCode>
       <HasChanged>true</HasChanged>
       <PictureData>/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAg... wATRRRSuB//2Q==</PictureData>
@@ -162,15 +162,15 @@ private static void GetContactPhoto(ExchangeService service, string ItemId)
 
 ### <a name="get-a-mailbox-user-photo-by-using-the-resolvenames-operation"></a>ResolveNames 操作を使用してメールボックス ユーザーの写真を取得する
 
-写真を取得するユーザーの電子メール アドレスがわからない場合は、[ResolveNames 操作を使用する](how-to-resolve-ambiguous-names-by-using-ews-in-exchange-2013.md)ことで一致する可能性のある候補を取得できます。 [ResolveNames](http://msdn.microsoft.com/library/c85207e1-1315-443b-94ec-2b58f405076b%28Office.15%29.aspx) 要素の **ContactDataShape** 属性に "AllProperties" を指定すると、候補ごとに大量のデータ (ユーザーの写真を含む) が返されます。 次の例は、名前 "Sadie" を解決して、候補ごとにプロパティをすべて返す XML 要求を示しています。 
+写真を取得するユーザーの電子メール アドレスがわからない場合は、[ResolveNames 操作を使用する](how-to-resolve-ambiguous-names-by-using-ews-in-exchange-2013.md)ことで一致する可能性のある候補を取得できます。 [ResolveNames](https://msdn.microsoft.com/library/c85207e1-1315-443b-94ec-2b58f405076b%28Office.15%29.aspx) 要素の **ContactDataShape** 属性に "AllProperties" を指定すると、候補ごとに大量のデータ (ユーザーの写真を含む) が返されます。 次の例は、名前 "Sadie" を解決して、候補ごとにプロパティをすべて返す XML 要求を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
 <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
   </soap:Header>  
@@ -186,11 +186,11 @@ xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
          xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:ResolveNamesResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:ResolveNamesResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:ResolveNamesResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -229,10 +229,10 @@ EWS を使用すると、メールボックスに保存された連絡先から�
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <GetItem xmlns='http://schemas.microsoft.com/exchange/services/2006/messages'>
+    <GetItem xmlns='https://schemas.microsoft.com/exchange/services/2006/messages'>
       <ItemShape>
         <t:BaseShape>AllProperties</t:BaseShape>
       </ItemShape>
@@ -245,15 +245,15 @@ EWS を使用すると、メールボックスに保存された連絡先から�
 
 ```
 
-[HasPicture](http://msdn.microsoft.com/library/922a43fe-01bd-49f2-9261-e00e4699b8da%28Office.15%29.aspx) 要素を調べて、連絡先に関連付けられた写真があることを確認します。 その後で、添付ファイルのコレクションを 1 つずつ調べて、値が true の [IsContactPhoto](http://msdn.microsoft.com/library/ae36b5f9-a787-4863-9dbc-258ad724801d%28Office.15%29.aspx) 要素を見つけます。 次の応答例は、関連するデータのみを示しています。 ID の値は読みやすくするために短縮されています。 
+[HasPicture](https://msdn.microsoft.com/library/922a43fe-01bd-49f2-9261-e00e4699b8da%28Office.15%29.aspx) 要素を調べて、連絡先に関連付けられた写真があることを確認します。 その後で、添付ファイルのコレクションを 1 つずつ調べて、値が true の [IsContactPhoto](https://msdn.microsoft.com/library/ae36b5f9-a787-4863-9dbc-258ad724801d%28Office.15%29.aspx) 要素を見つけます。 次の応答例は、関連するデータのみを示しています。 ID の値は読みやすくするために短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
          xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -293,11 +293,11 @@ EWS を使用すると、メールボックスに保存された連絡先から�
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/"
+xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <GetAttachment xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <GetAttachment xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <AttachmentShape/>
       <AttachmentIds>
          <t:AttachmentId Id="1LGlhgpgoA="/>
@@ -308,15 +308,15 @@ xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
 
 ```
 
-次の例は、要求した添付ファイルに関する情報を含む XML 応答を示しています。 [Content](http://msdn.microsoft.com/library/24f8c54a-505f-4fc0-b7e7-93ad50b97070%28Office.15%29.aspx) 要素には、ユーザーの写真の Base64 エンコード文字列が含まれています。読みやすくするために、この例の文字列は短縮されています。 
+次の例は、要求した添付ファイルに関する情報を含む XML 応答を示しています。 [Content](https://msdn.microsoft.com/library/24f8c54a-505f-4fc0-b7e7-93ad50b97070%28Office.15%29.aspx) 要素には、ユーザーの写真の Base64 エンコード文字列が含まれています。読みやすくするために、この例の文字列は短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
          xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetAttachmentResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetAttachmentResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetAttachmentResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
