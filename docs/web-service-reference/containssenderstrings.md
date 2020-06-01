@@ -1,5 +1,5 @@
 ---
-title: ContainsSenderStrings
+title: 文字列
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3e16163f-cffe-4c4e-9a2a-00245d25ba96
-description: ContainsSenderStrings 要素を適用する場合の条件または例外の順序で受信メッセージの From プロパティ内に表示する文字列を示します。
-ms.openlocfilehash: d174c0d7e2cbfd5b671a825a867d3ee7e24c2f2a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: この要素は、条件または例外を適用するために、受信メッセージの From プロパティに表示する必要がある文字列を示します。
+ms.openlocfilehash: e7b78f1311d288db7969a0024bde84433e18d37f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759713"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458979"
 ---
-# <a name="containssenderstrings"></a>ContainsSenderStrings
+# <a name="containssenderstrings"></a>文字列
 
-**ContainsSenderStrings**要素**から**のプロパティに適用する条件または例外の順序で受信したメッセージに表示する文字列を示します。 
+この**要素は、条件**または例外を適用するために、受信メッセージの**From**プロパティに表示する必要がある文字列を示します。 
   
 ```XML
 <ContainsSenderStrings>
@@ -30,7 +30,7 @@ ms.locfileid: "19759713"
 ```
 
  **ArrayOfStringsType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,37 +40,37 @@ ms.locfileid: "19759713"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[String](string.md) <br/> |**** プロパティに適用する条件または例外の順序で受信したメッセージに表示する文字列を表します。  <br/> |
+|[String](string.md) <br/> |条件または例外を適用するために、受信メッセージの**From**プロパティに表示する必要がある文字列を表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[条件](conditions.md) <br/> |条件を表しますが、満たされるとときに、ルールのルールの処理をトリガーします。  <br/> |
-|[Exceptions](exceptions.md) <br/> |受信トレイ ルールの使用可能なルールの例外条件をすべてを表す例外を表します。  <br/> |
+|[条件](conditions.md) <br/> |ルールのルールの処理を開始するときに実行される条件を表します。  <br/> |
+|[例外](exceptions.md) <br/> |受信トレイルールに対して使用可能なルールの例外条件をすべて表す例外を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

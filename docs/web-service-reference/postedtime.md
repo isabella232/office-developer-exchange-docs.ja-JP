@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: e8b3813c-fc7e-4674-a4c6-6818c13d2bcf
-description: PostedTime 要素は、PostItem が転記された時間を表します。 この要素は、読み取り専用です。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。
-ms.openlocfilehash: 8280fc26c534b280d0f30f663b6cc3a3958036c5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: PostedTime 要素は、PostItem が投稿された時刻を表します。 この要素は値の取得のみ可能です。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。
+ms.openlocfilehash: 5fc670bfee97a46700bc4442d489696a4489f88a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832860"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459196"
 ---
 # <a name="postedtime"></a>PostedTime
 
-**PostedTime**要素は、 [PostItem](postitem.md)が転記された時間を表します。 この要素は、読み取り専用です。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。 
+**PostedTime**要素は、 [postitem](postitem.md)が投稿された時刻を表します。 この要素は値の取得のみ可能です。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。 
   
 ```xml
 <PostedTime/>
 ```
 
  **dateTime**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,28 +44,28 @@ ms.locfileid: "19832860"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[PostItem](postitem.md) <br/> |Exchange ストアで、PostItem を表します。 この要素は、Exchange 2007 SP1 で導入されました。  <br/> |
+|[PostItem](postitem.md) <br/> |Exchange ストアの PostItem を表します。 この要素は、Exchange 2007 SP1 で導入されました。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値では、 **PostItem**がポストされたときを表す dateTime です。 このプロパティは値の取得のみ可能です。 
+テキスト値は、 **Postitem**が投稿された日時を表す dateTime です。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

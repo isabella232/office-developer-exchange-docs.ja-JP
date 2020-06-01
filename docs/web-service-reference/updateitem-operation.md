@@ -11,44 +11,44 @@ api_name:
 api_type:
 - schema
 ms.assetid: 5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4
-description: UpdateItem 操作を使用して、Exchange ストア内の既存のアイテムのプロパティを変更します。
-ms.openlocfilehash: 009ba16315017c4418fbd71d49744015c4d6d1b1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: UpdateItem 操作は、Exchange ストア内の既存のアイテムのプロパティを変更するために使用されます。
+ms.openlocfilehash: c001b7656862144023e9704cb04e6b4c0030f9df
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839865"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459392"
 ---
 # <a name="updateitem-operation"></a>UpdateItem 操作
 
-**UpdateItem**操作を使用して、Exchange ストア内の既存のアイテムのプロパティを変更します。 
+**Updateitem**操作は、Exchange ストア内の既存のアイテムのプロパティを変更するために使用されます。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-項目を次の 3 つの基本的な更新操作を行うことができます。 次の表は、実行できるアクションを示します。
+アイテムに対して3つの基本的な更新操作を実行できます。 次の表に、実行できるアクションを示します。
   
-|**アクション**|**説明**|
+|**操作**|**説明**|
 |:-----|:-----|
-|追加  <br/> |データを既存のプロパティに追加します。 このアクションは、現在のデータを保持します。 追加のすべてのプロパティには適用されません。  <br/> |
-|設定  <br/> |プロパティは、データ、または、プロパティを作成し、プロパティが存在しない場合、その値を設定する場合は、プロパティのデータを置き換えます。 アクションのセットは、書き込み可能なプロパティに適用できるのみです。  <br/> |
-|削除  <br/> |アイテムからプロパティを削除します。 これは、空の値をプロパティの設定によって異なります。 この操作が完了したら、プロパティは項目には存在しません。 削除は、書き込み可能なプロパティに該当する場合のみです。  <br/> |
+|追加  <br/> |既存のプロパティにデータを追加します。 この操作を行うと、現在のデータが保持されます。 Append は、すべてのプロパティに適用されません。  <br/> |
+|Set  <br/> |プロパティのデータが含まれている場合は、プロパティのデータを置換します。プロパティが存在しない場合は、プロパティを作成し、その値を設定します。 Set アクションは、書き込み可能なプロパティにのみ適用されます。  <br/> |
+|削除  <br/> |アイテムからプロパティを削除します。 これは、プロパティを空の値に設定することとは異なります。 この操作が完了すると、アイテムのプロパティが存在しなくなります。 Delete は、書き込み可能なプロパティにのみ適用されます。  <br/> |
    
-**UpdateItem**呼び出しは、1 つまたは複数の項目と各項目の 1 つまたは複数のプロパティを変更するのには使用できます。 [ItemChanges](itemchanges.md)要素には、この呼び出しの一部として実行されるすべての変更が含まれています。 [ItemChange](itemchange.md)の要素、 [ItemChanges](itemchanges.md)の要素の子では、1 つのアイテムに対して実行できる変更を表します。 [ItemChange](itemchange.md)要素には、1 つのアイテムに対して実行できる更新操作のセットが含まれています。 [(項目) の更新プログラム](updates-item.md)の要素では、これらの変更が含まれています。 [アイテム Id](itemid.md)要素は、更新する項目を識別します。 アイテムの 1 つ以上のプロパティを更新するには、 [SetItemField](setitemfield.md)、 [AppendToItemField](appendtoitemfield.md)、または[DeleteItemField](deleteitemfield.md)を更新プログラムを必要とするプロパティごとに指定してください。 
+**Updateitem**呼び出しを使用すると、1つ以上のアイテム、および各アイテムの1つ以上のプロパティを変更できます。 [Itemchanges](itemchanges.md)要素には、この呼び出しの一部として実行されるすべての変更が含まれています。 [Itemchange](itemchange.md)要素 ( [itemchange](itemchanges.md)要素の子) は、1つのアイテムに対して実行される変更を表します。 [Itemchange](itemchange.md)要素には、1つのアイテムに対して実行できる更新アクションのセットが含まれています。 これらの変更は、 [Updates (Item)](updates-item.md)要素に含まれています。 [ItemId](itemid.md)要素は、更新するアイテムを識別します。 アイテムで複数のプロパティを更新するには、更新が必要な各プロパティに対して[SetItemField](setitemfield.md)、 [appendtoitemfield](appendtoitemfield.md)、または[deleteitemfield](deleteitemfield.md)を指定する必要があります。 
   
 > [!NOTE]
-> 更新アクションは、指定されている順序で適用されます。 
+> 更新操作は、指定された順序で適用されます。 
   
-それぞれの変更の新しい値で変更するプロパティのパスと、その項目の表現を指定する必要です。 削除アクションは、削除するプロパティのパスのみが必要な点で多少異なります。 一連のアクションを追加しは、指定されているパスは、品目の表示に設定されている同じプロパティを参照する必要があります。 これらが異なる場合、エラーが戻されます。
+変更ごとに、変更するプロパティのパスと、そのアイテムの新しい値を表す表現を指定する必要があります。 Delete アクションは、削除する必要のあるプロパティのパスのみが必要になるということとは少し異なります。 Set および append アクションの場合、指定されたパスは、アイテム表現で設定されているのと同じプロパティを参照する必要があります。 これらが異なる場合は、エラーが返されます。
   
-**UpdateItem**操作は、Exchange ストアの項目の[開始](start.md)と[終了](end-ex15websvcsotherref.md)時間を設定できます。 **UpdateItem**要求では、[[終了](end-ex15websvcsotherref.md)時刻を設定せず、[開始](start.md)時刻を設定できます。 [開始](start.md)時刻は[終了](end-ex15websvcsotherref.md)時刻より後の場合は、エラーが発生することができます。 クライアント アプリケーションが、期間を保持するために[開始](start.md)時刻が変更されたときの[終了](end-ex15websvcsotherref.md)時刻を調整する必要があります。 
+**Updateitem**操作は、Exchange ストアアイテムの[開始](start.md)時刻と[終了](end-ex15websvcsotherref.md)時刻を設定できます。 **Updateitem**要求では、[終了](end-ex15websvcsotherref.md)時刻を設定することなく、[開始](start.md)時刻を設定することもできます。 これにより、[開始](start.md)時刻が[終了](end-ex15websvcsotherref.md)時刻よりも後の場合にエラーが発生することがあります。 期間を保持するために[開始](start.md)時刻が変更された場合、クライアントアプリケーションは[終了](end-ex15websvcsotherref.md)時刻を調整する必要があることに注意してください。 
   
-マスターの予定表の定期的なアイテムを 1 つの予定表アイテムが更新されると、予定表アイテムの元のタイム ゾーンを保持するために**UpdateItem**操作で[MeetingTimeZone](meetingtimezone.md)プロパティを設定しなければなりません。 
+1つの予定表アイテムを定期的マスターの予定表アイテムに更新する場合は、予定表アイテムの元のタイムゾーンを保持するために、 **updateitem**操作によって、[会議 timezone](meetingtimezone.md)プロパティを設定する必要があります。 
   
 ## <a name="setitemfield-request-example"></a>SetItemField 要求の例
 
 ### <a name="description"></a>説明
 
-**UpdateItem**要求の次の使用例は、アイテムの秘密度のプロパティを設定する方法を示しています。 
+次の**updateitem**要求の例は、アイテムに対して [秘密度] プロパティを設定する方法を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -57,10 +57,10 @@ ms.locfileid: "19839865"
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
     <UpdateItem MessageDisposition="SaveOnly" ConflictResolution="AutoResolve" 
-                xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ItemChanges>
         <t:ItemChange>
           <t:ItemId Id="AAAtAEFkb..." ChangeKey="CQAAABYAAAB..."/>
@@ -81,11 +81,11 @@ ms.locfileid: "19839865"
 
 ### <a name="comments"></a>コメント
 
-項目の識別子と変更キーは、読みやすさを保持するために短縮されています。
+読みやすくするために、アイテム識別子と変更キーが短縮されています。
   
-### <a name="setitemfield-request-elements"></a>SetItemField 要求の要素
+### <a name="setitemfield-request-elements"></a>SetItemField Request 要素
 
-次の要素は、要求で使用されます。
+要求では、次の要素が使用されます。
   
 - [UpdateItem](updateitem.md)
     
@@ -95,7 +95,7 @@ ms.locfileid: "19839865"
     
 - [ItemId](itemid.md)
     
-- [更新 (アイテム)](updates-item.md)
+- [Updates (Item)](updates-item.md)
     
 - [SetItemField](setitemfield.md)
     
@@ -109,7 +109,7 @@ ms.locfileid: "19839865"
 
 ### <a name="description"></a>説明
 
-**UpdateItem**要求の次の例では、アイテムの body プロパティにテキストを追加する方法を示します。 
+次の**updateitem**要求の例は、アイテムの body プロパティにテキストを追加する方法を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -118,10 +118,10 @@ ms.locfileid: "19839865"
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
   xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
     <UpdateItem MessageDisposition="SaveOnly" ConflictResolution="AutoResolve" 
-                xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ItemChanges>
         <t:ItemChange>
           <t:ItemId Id="AAAtAEFkbW..." ChangeKey="CQAAABYA..."/>
@@ -142,19 +142,19 @@ ms.locfileid: "19839865"
 
 ### <a name="comments"></a>コメント
 
-次のプロパティは、追加操作をサポートします。
+次のプロパティは、append アクションをサポートします。
   
 - **メッセージ: ReplyTo**
     
-- **アイテムの本文:**
+- **アイテム: 本文**
     
-- すべての出席者と受信者コレクションのプロパティ
+- すべての受信者と出席者のコレクションのプロパティ
     
-項目の識別子と変更キーは、読みやすさを保持するために短縮されています。
+読みやすくするために、アイテム識別子と変更キーが短縮されています。
   
-### <a name="appendtoitemfield-request-elements"></a>AppendToItemField 要求の要素
+### <a name="appendtoitemfield-request-elements"></a>AppendToItemField Request 要素
 
-次の要素は、要求で使用されます。
+要求では、次の要素が使用されます。
   
 - [UpdateItem](updateitem.md)
     
@@ -164,7 +164,7 @@ ms.locfileid: "19839865"
     
 - [ItemId](itemid.md)
     
-- [更新 (アイテム)](updates-item.md)
+- [Updates (Item)](updates-item.md)
     
 - [AppendToItemField](appendtoitemfield.md)
     
@@ -172,13 +172,13 @@ ms.locfileid: "19839865"
     
 - [Message](message-ex15websvcsotherref.md)
     
-- [Body/本文](body.md)
+- [Body](body.md)
     
 ## <a name="deleteitemfield-request-example"></a>DeleteItemField 要求の例
 
 ### <a name="description"></a>説明
 
-**UpdateItem**要求の次の例では、アイテムのプロパティを削除する方法を示します。 
+次の**updateitem**要求の例は、アイテムのプロパティを削除する方法を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -186,10 +186,10 @@ ms.locfileid: "19839865"
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
-  xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
     <UpdateItem MessageDisposition="SaveOnly" ConflictResolution="AutoResolve" 
-                xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ItemChanges>
         <t:ItemChange>
           <t:ItemId Id="AAAtAEFkbWluaXN0cm..." ChangeKey="CQAAABYAA..."/>
@@ -207,11 +207,11 @@ ms.locfileid: "19839865"
 
 ### <a name="comments"></a>コメント
 
-項目の識別子と変更キーは、読みやすさを保持するために短縮されています。
+読みやすくするために、アイテム識別子と変更キーが短縮されています。
   
-### <a name="deleteitemfield-request-elements"></a>DeleteItemField 要求の要素
+### <a name="deleteitemfield-request-elements"></a>DeleteItemField 要求要素
 
-次の要素は、要求で使用されます。
+要求では、次の要素が使用されます。
   
 - [UpdateItem](updateitem.md)
     
@@ -221,17 +221,17 @@ ms.locfileid: "19839865"
     
 - [ItemId](itemid.md)
     
-- [更新 (アイテム)](updates-item.md)
+- [Updates (Item)](updates-item.md)
     
 - [DeleteItemField](deleteitemfield.md)
     
 - [FieldURI](fielduri.md)
     
-## <a name="successful-response-example"></a>正常な応答の例
+## <a name="successful-response-example"></a>成功した応答の例
 
 ### <a name="description"></a>説明
 
-**UpdateItem**要求に正常な応答の例を次に示します。 
+次の例は、 **Updateitem**要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -242,12 +242,12 @@ ms.locfileid: "19839865"
   xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="664" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"/>
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"/>
   </soap:Header>
   <soap:Body>
-    <UpdateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-      xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <UpdateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+      xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:UpdateItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -265,11 +265,11 @@ ms.locfileid: "19839865"
 
 ### <a name="comments"></a>コメント
 
-項目の識別子と変更キーは、読みやすさを保持するために短縮されています。
+読みやすくするために、アイテム識別子と変更キーが短縮されています。
   
-### <a name="successful-response-elements"></a>正常な応答の要素
+### <a name="successful-response-elements"></a>成功した応答要素
 
-次の要素は、応答で使用されます。
+応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -291,15 +291,15 @@ ms.locfileid: "19839865"
 
 
 
-[UpdateItem 処理 (タスク)](updateitem-operation-task.md)
+[UpdateItem 操作 (タスク)](updateitem-operation-task.md)
   
 [UpdateItem 操作 (連絡先)](updateitem-operation-contact.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 
 
-[連絡先を更新](http://msdn.microsoft.com/library/9a865953-b94a-4229-b632-2dee433314be%28Office.15%29.aspx)
+[連絡先の更新](https://msdn.microsoft.com/library/9a865953-b94a-4229-b632-2dee433314be%28Office.15%29.aspx)
   
-[タスクの更新](http://msdn.microsoft.com/library/0a1bf360-d40c-4a99-929b-4c73a14394d5%28Office.15%29.aspx)
+[タスクの更新](https://msdn.microsoft.com/library/0a1bf360-d40c-4a99-929b-4c73a14394d5%28Office.15%29.aspx)
 

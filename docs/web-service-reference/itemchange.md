@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 5cb43b02-d444-4d9c-9075-cdc5a4427daf
-description: ItemChange 要素には、項目 id と、アイテムに適用する更新プログラムが含まれています。
-ms.openlocfilehash: 42484c8deecb106e05023215342af3c7d996d852
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: ItemChange 要素には、アイテムの識別子と、アイテムに適用する更新が含まれています。
+ms.openlocfilehash: 916ef1ba2c7a709ec1fd80ababd72999506773c4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353512"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459918"
 ---
 # <a name="itemchange"></a>ItemChange
 
-**ItemChange**要素には、項目 id と、アイテムに適用する更新プログラムが含まれています。 
+**Itemchange**要素には、アイテムの識別子と、アイテムに適用する更新が含まれています。 
   
 - [UpdateItem](updateitem.md) 
 - [ItemChanges](itemchanges.md)
@@ -50,7 +50,7 @@ ms.locfileid: "21353512"
 
 **ItemChangeType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -60,33 +60,33 @@ ms.locfileid: "21353512"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[ItemId](itemid.md) <br/> |Exchange ストア内のアイテムの一意の識別子と変更キーが含まれています。 [OccurrenceItemId](occurrenceitemid.md)または[RecurringMasterItemId](recurringmasteritemid.md)要素を使用しない場合、この要素が必要です。  <br/> |
-|[OccurrenceItemId](occurrenceitemid.md) <br/> |定期的なアイテムの 1 回の発生を識別します。 使用する場合、この要素が必要です。 [RecurringMasterItemId](recurringmasteritemid.md)または[アイテム Id](itemid.md)要素を使用しない場合、この要素が必要です。  <br/> |
-|[RecurringMasterItemId](recurringmasteritemid.md) <br/> |関連の出現アイテムの id のいずれかを識別することによって、定期的な予定のマスター アイテムを識別します。 使用する場合、この要素が必要です。 [OccurrenceItemId](occurrenceitemid.md)または[アイテム Id](itemid.md)要素を使用しない場合、この要素が必要です。  <br/> |
-|[Updates (Item)](updates-item.md) <br/> |定義する配列が含まれていて、このオプションを設定すると、アイテムのプロパティの変更を削除します。 この要素は必須です。  <br/> |
+|[ItemId](itemid.md) <br/> |Exchange ストア内のアイテムの一意識別子および変更キーが含まれています。 この要素は、 [OccurrenceItemId](occurrenceitemid.md)または[RecurringMasterItemId](recurringmasteritemid.md)要素が使用されていない場合に必要です。  <br/> |
+|[OccurrenceItemId](occurrenceitemid.md) <br/> |定期的なアイテムの1回の出現を識別します。 この要素は、使用する場合は必須です。 この要素は、 [RecurringMasterItemId](recurringmasteritemid.md)または[ItemId](itemid.md)要素が使用されていない場合に必要です。  <br/> |
+|[RecurringMasterItemId](recurringmasteritemid.md) <br/> |関連するオカレンスアイテムの識別子の1つを識別することによって、定期的なアイテムのマスターアイテムを識別します。 この要素は、使用する場合は必須です。 この要素は、 [OccurrenceItemId](occurrenceitemid.md)または[ItemId](itemid.md)要素が使用されていない場合に必要です。  <br/> |
+|[Updates (Item)](updates-item.md) <br/> |アイテムのプロパティに対する追加、設定、および削除の変更を定義する配列を格納します。 この要素は必須です。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ItemChanges](itemchanges.md) <br/> |アイテムと、アイテムに適用する更新プログラムを識別する[ItemChange](itemchange.md)要素の配列が含まれています。  <br/> この要素への XPath 式は、次のようにします。  <br/>  `/UpdateItem/ItemChanges` <br/> |
+|[ItemChanges](itemchanges.md) <br/> |アイテムとアイテムに適用する更新を識別する[Itemchange](itemchange.md)要素の配列が含まれています。  <br/> この要素の XPath 式を次に示します。  <br/>  `/UpdateItem/ItemChanges` <br/> |
    
 ## <a name="remarks"></a>注釈
 
-**ItemChange**要素では、唯一の[アイテム Id](itemid.md)、 [OccurrenceItemId](occurrenceitemid.md)、または[RecurringMasterItemId](recurringmasteritemid.md)要素を使用できます。 
+**Itemchange**要素に使用できる[ItemId](itemid.md)、 [OccurrenceItemId](occurrenceitemid.md)、または[RecurringMasterItemId](recurringmasteritemid.md)要素は1つだけです。 
   
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

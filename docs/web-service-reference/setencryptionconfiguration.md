@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8beccc00-3515-4ecd-85f0-c0f2b03e8f7d
-description: SetEncryptionConfiguration 要素は内部使用のみを目的としています。
-ms.openlocfilehash: a52a55394a3ff05f66db28fcefde85bd9cded738
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: SetEncryptionConfiguration 要素は、内部使用のみを目的としています。
+ms.openlocfilehash: a4f0d2118fbefb5ed345a96b4760e5eb152a604e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833403"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459021"
 ---
 # <a name="setencryptionconfiguration"></a>SetEncryptionConfiguration
 
-**SetEncryptionConfiguration**要素は内部使用のみを目的としています。 
+**Setencryptionconfiguration**要素は、内部使用のみを目的としています。 
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -35,7 +35,7 @@ ms.locfileid: "19833403"
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。
   

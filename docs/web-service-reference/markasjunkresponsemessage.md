@@ -8,16 +8,16 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3e2b7b53-ef3c-438e-93df-b08409dbab46
 description: MarkAsJunkResponseMessage 要素は、MarkAsJunk 要求の応答メッセージを指定します。
-ms.openlocfilehash: 146ece430436c60fced53d4dfbfd7d92c0e42e98
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: be03fc964b56c463320f09e68d143a0377300f5c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832352"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460100"
 ---
 # <a name="markasjunkresponsemessage"></a>MarkAsJunkResponseMessage
 
-**MarkAsJunkResponseMessage**要素は、 **MarkAsJunk**要求の応答メッセージを指定します。 
+**MarkAsJunkResponseMessage**要素は、 **markasjunk**要求の応答メッセージを指定します。 
   
 ```XML
 <MarkAsJunkResponseMessage>
@@ -30,7 +30,7 @@ ms.locfileid: "19832352"
 ```
 
  **MarkAsJunkResponseMessageType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,25 +40,25 @@ ms.locfileid: "19832352"
   
 ### <a name="child-elements"></a>子要素
 
-[メッセージ テキスト](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [MovedItemId](moveditemid.md)
+[Messagetext](messagetext.md)  | 応答[Secmode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [Moveditemid](moveditemid.md)
   
 ### <a name="parent-elements"></a>親要素
 
 [ResponseMessages](responsemessages.md)
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

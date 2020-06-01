@@ -1,5 +1,5 @@
 ---
-title: Bias
+title: バイアス
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: ae10aa44-e6d3-483d-a3e6-bb9c45966810
-description: バイアスの要素は、標準時間と夏時間の時差 (UTC) の要素で識別される、世界協定時刻 (UTC) オフセットからのオフセットを表します。 この値は分単位です。
-ms.openlocfilehash: 770bf97b030ac1293595560bc269f54896e35a15
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Bias 要素は、標準時および夏時間時に Bias (UTC) 要素によって識別される協定世界時 (UTC) オフセットからのオフセットを表します。 この値は分単位です。
+ms.openlocfilehash: 6c9dce88f3eece9c793fb018114f07a85c7cb89b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759505"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460240"
 ---
-# <a name="bias"></a>Bias
+# <a name="bias"></a>バイアス
 
-**バイアス**の要素は、標準時間と夏時間の[時差 (UTC)](bias-utc.md)の要素で識別される、世界協定時刻 (UTC) オフセットからのオフセットを表します。 この値は分単位です。 
+**Bias**要素は、標準時および夏時間時に[bias (utc)](bias-utc.md)要素によって識別される協定世界時 (utc) オフセットからのオフセットを表します。 この値は分単位です。 
   
 ```xml
 <Bias>...</Bias>
@@ -29,7 +29,7 @@ ms.locfileid: "19759505"
 
 **int**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -45,23 +45,23 @@ ms.locfileid: "19759505"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[StandardTime](standardtime.md) <br/> | [バイアス (UTC)](bias-utc.md)の要素で表される UTC 時間からのオフセットを表します。 この要素は、夏時間が発生した地域で夏時間から切り替えに関する情報を標準時も含みます。<br/><br/>[StandardTime](standardtime.md)要素への XPath 式は、次のように。<br/><br/>   `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/StandardTime` <br/><br/> `/GetUserAvailabilityRequest/TimeZone/StandardTime` <br/> |
-|[DaylightTime](daylighttime.md) <br/> | 夏時間が発生した地域の[バイアス (UTC)](bias-utc.md)の要素で表される UTC 時間からのオフセットを表します。 この要素には、標準時間から夏時間への切り替えが発生した場合についての情報も含まれています。  <br/><br/>[DaylightTime](daylighttime.md)要素への XPath 式は、次のように。<br/><br/> `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/DaylightTime` <br/><br/> `/GetUserAvailabilityRequest/TimeZone/DaylightTime` <br/> |
+|[StandardTime](standardtime.md) <br/> | [Bias (utc)](bias-utc.md)要素で表される utc を基準とした時間からのオフセットを表します。 この要素には、夏時間が計測される地域で夏時間から標準時への切り替えに関する情報も含まれます。<br/><br/>[Standardtime](standardtime.md)要素に対する XPath 式を次に示します。<br/><br/>   `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/StandardTime` <br/><br/> `/GetUserAvailabilityRequest/TimeZone/StandardTime` <br/> |
+|[DaylightTime](daylighttime.md) <br/> | 夏時間が計測される地域で、 [Bias (utc)](bias-utc.md)要素によって表される utc を基準とした時刻からのオフセットを表します。 この要素には、標準時から夏時間への切り替えが行われるタイミングに関する情報も含まれています。  <br/><br/>[Daylighttime](daylighttime.md)要素の XPath 式を次に示します。<br/><br/> `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/DaylightTime` <br/><br/> `/GetUserAvailabilityRequest/TimeZone/DaylightTime` <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 テキスト値は必須です。 テキスト値は、整数を表します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-現地時刻を決定するために使用するオフセットは、**バイアス**の要素の 1 つでのみ指定できます。 [DaylightTime](daylighttime.md)要素または[StandardTime](standardtime.md)要素と要素[のバイアス (UTC)](bias-utc.md)によって提供されるバイアスの要素の値の合計は、現地時刻を識別します。 
+現地時刻を決定するために使用されるオフセットは、 **Bias**要素のいずれかによってのみ提供されます。 [Daylighttime](daylighttime.md)要素、 [standardtime](standardtime.md)要素、および[bias (UTC)](bias-utc.md)要素によって提供される bias 要素の値の合計は、現地時刻を示します。 
   
 ## <a name="example"></a>例
 
-夏時間に従って ~ 60 分で、UTC からのオフセットを調整することによってユーザーを識別する XML 要求の一部を次の例に示します。 これにより、バイアス 420 分 utc を基準とします。
+次の例は、UTC を60分間で調整して夏時間を管理するユーザーを識別する、XML 要求の一部を示しています。 これにより、実質的に UTC から420分のずれが生じます。
   
 ```xml
-<TimeZone xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+<TimeZone xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
   <Bias>480</Bias>
   <StandardTime>
     <Bias>0</Bias>
@@ -80,17 +80,17 @@ ms.locfileid: "19759505"
 </TimeZone>
 ```
 
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [GetUserAvailability 操作](getuseravailability-operation.md)
-- [ユーザーの状態を取得します。](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [ユーザーの空き時間情報の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

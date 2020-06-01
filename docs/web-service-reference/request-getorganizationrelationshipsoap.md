@@ -1,22 +1,22 @@
 ---
-title: 要求 (GetOrganizationRelationship) (SOAP)
+title: Request (Get組織関係) (SOAP)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 85dc155c-fad0-4756-b9a8-dedf5040a7c6
-description: 要求要素は、GetOrganizationRelationshipSettingsRequest (SOAP) 要求を表します。 要求は内部使用のみです。 クライアントでは、この要素は使用されません。
-ms.openlocfilehash: d3ae48ca403398288b8399ede82b98322a1b3260
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Request 要素は、GetOrganizationRelationshipSettingsRequest (SOAP) 要求を表します。 Request 要素は、内部使用のみを対象としています。 この要素はクライアントによって使用されません。
+ms.openlocfilehash: 90ccd3579c91c916ea645e6a3b466c9de4706421
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833122"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459561"
 ---
-# <a name="request-getorganizationrelationship-soap"></a>要求 (GetOrganizationRelationship) (SOAP)
+# <a name="request-getorganizationrelationship-soap"></a>Request (Get組織関係) (SOAP)
 
-**要求**要素は、 [GetOrganizationRelationshipSettingsRequest (SOAP)](getorganizationrelationshipsettingsrequest-soap.md)要求を表します。 **要求**は内部使用のみです。 クライアントでは、この要素は使用されません。 
+**Request**要素は、 [Getorganizationrelationshipsettingsrequest (SOAP)](getorganizationrelationshipsettingsrequest-soap.md)要求を表します。 **Request**要素は、内部使用のみを対象としています。 この要素はクライアントによって使用されません。 
   
 ```XML
 <Request>
@@ -24,8 +24,8 @@ ms.locfileid: "19833122"
 </Request>
 ```
 
- **GetOrganizationRelationshipSettingsRequest**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Get組織の Relationshipsettingsrequest**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -35,35 +35,35 @@ ms.locfileid: "19833122"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[ドメイン (SOAP)](domains-soap.md) <br/> |自動検出を実行するは、クエリで使用する必要があるは、ドメインを表します。  <br/> |
+|[Domains (SOAP)](domains-soap.md) <br/> |自動検出が実行され、クエリで使用されるドメインを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetOrganizationRelationshipSettingsRequestMessage (SOAP)](getorganizationrelationshipsettingsrequestmessage-soap.md) <br/> |[GetOrganizationRelationshipSettings 操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)操作要求を表します。  <br/> |
+|[GetOrganizationRelationshipSettingsRequestMessage (SOAP)](getorganizationrelationshipsettingsrequestmessage-soap.md) <br/> |[Get組織の設定操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)操作要求を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|スキーマ名  <br/> |スキーマの自動検出  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|スキーマ名  <br/> |自動検出スキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[GetOrganizationRelationshipSettingsRequest (SOAP)](getorganizationrelationshipsettingsrequest-soap.md)
+[Get組織の Relationshipsettingsrequest (SOAP)](getorganizationrelationshipsettingsrequest-soap.md)
 
 
-[自動検出を使用します。](http://msdn.microsoft.com/library/39726b67-2eb2-451b-9307-cfd0b518b55c%28Office.15%29.aspx)
+[自動検出の使用](https://msdn.microsoft.com/library/39726b67-2eb2-451b-9307-cfd0b518b55c%28Office.15%29.aspx)
 

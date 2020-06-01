@@ -12,16 +12,16 @@ api_type:
 - schema
 ms.assetid: 41177894-2008-44a6-86f8-bc34c0a48e36
 description: GetMessageTrackingReportResponse 要素には、GetMessageTrackingReport 操作に対する応答が含まれています。
-ms.openlocfilehash: bdb8b97e57f92a32cbdc498d09297920366b58bd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 15e1f5c91c07dbaad224fb0cd3bc89f444a18087
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760794"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460569"
 ---
 # <a name="getmessagetrackingreportresponse"></a>GetMessageTrackingReportResponse
 
-**GetMessageTrackingReportResponse**要素には、 [GetMessageTrackingReport 操作](getmessagetrackingreport-operation.md)の応答が含まれています。
+**Getmessagetrackingreportresponse**要素には、 [Getmessagetrackingreport 操作](getmessagetrackingreport-operation.md)に対する応答が含まれています。
   
 ```xml
 <GetMessageTrackingReportResponse ResponseClass="">
@@ -37,7 +37,7 @@ ms.locfileid: "19760794"
 ```
 
  **GetMessageTrackingReportResponseMessageType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -45,28 +45,28 @@ ms.locfileid: "19760794"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**ResponseClass** <br/> | 応答のステータスについて説明します。 <br/><br/>次の値は、この属性の有効です。  <br/><br/>-成功  <br/>-警告  <br/>-エラー  <br/> |
+|**ResponseClass** <br/> | 応答の状態を表します。 <br/><br/>この属性には、次の値が有効です。  <br/><br/>-成功  <br/>-Warning  <br/>-エラー  <br/> |
    
 #### <a name="responseclass-attribute-values"></a>ResponseClass 属性の値
 
 |**値**|**説明**|
 |:-----|:-----|
-|**Success** <br/> |満了する要求をについて説明します。  <br/> |
-|**Warning** <br/> | 処理されなかった要求をについて説明します。 警告は、要求内のアイテムを処理し、それ以降の項目を処理できませんでした、エラーが発生した場合に返される場合があります。<br/><br/> 警告の送信元の例を次に示します。  <br/><br/>-Exchange ストアは、バッチの実行中にオフラインです。  <br/>-Active Directory ドメイン機能 (AD DS) は、オフラインです。  <br/>-メールボックスは移動されました。  <br/>-メッセージ データベース (MDB) は、オフラインです。  <br/>-パスワードの有効期限が切れています。  <br/>クォータを超えています。  <br/> |
-|**Error** <br/> | 満たせない要求をについて説明します。 <br/><br/>次に、エラーのソースの例を示します。  <br/>  無効な属性または要素  <br/><br/>属性または要素の範囲を超えています。  <br/>-不明なタグ  <br/>属性または要素のコンテキストでは有効ではないです。  <br/>-任意のクライアントから不正なアクセス試行  <br/>-クライアント側の有効な呼び出しへの応答でサーバー側エラー  <br/><br/>  エラーに関する情報は、 [ResponseCode](responsecode.md)および[メッセージ テキスト](messagetext.md)の要素を参照しています。  <br/> |
+|**Success** <br/> |満たされる要求を記述します。  <br/> |
+|**Warning** <br/> | 処理されなかった要求を示します。 要求内のアイテムが処理され、その後のアイテムを処理できなかったときにエラーが発生した場合は、警告が返されることがあります。<br/><br/> 警告のソースの例を次に示します。  <br/><br/>-バッチ処理中に Exchange ストアがオフラインになります。  <br/>-Active Directory ドメインの機能 (AD DS) がオフラインになっています。  <br/>-メールボックスが移動されました。  <br/>-メッセージデータベース (MDB) はオフラインです。  <br/>-パスワードの有効期限が切れています。  <br/>-クォータが限界を超えています。  <br/> |
+|**Error** <br/> | 満たされない要求を記述します。 <br/><br/>エラーのソースの例を次に示します。  <br/>  無効な属性または要素  <br/><br/>-範囲外の属性または要素  <br/>-不明なタグ  <br/>-コンテキスト内で有効ではない属性または要素  <br/>-クライアントによる権限のないアクセス試行  <br/>-有効なクライアント側の呼び出しに応答した場合のサーバー側障害  <br/><br/>  エラーに関する情報については、応答[secの](responsecode.md)要素と[messagetext](messagetext.md)要素を参照してください。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[MessageText](messagetext.md) <br/> |応答のステータスの説明を提供します。  <br/> |
-|[ResponseCode](responsecode.md) <br/> |要求で発生した特定のエラーを識別するエラー コードを提供します。  <br/> |
-|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在使用されていない、将来使用するために予約されています。 この要素には、0 の値が含まれています。  <br/> |
-|[MessageXml](messagexml.md) <br/> |追加のエラー応答情報を提供します。  <br/> |
-|[MessageTrackingReport](messagetrackingreport.md) <br/> |[GetMessageTrackingReport 操作](getmessagetrackingreport-operation.md)で返される 1 つのメッセージが含まれています。  <br/> |
-|[診断](diagnostics.md) <br/> |データ センターに報告するために使用されるタイミングとパフォーマンスの情報を提供します。  <br/> |
-|[エラー](errors-ex15websvcsotherref.md) <br/> |Web サービスから返されるエラーを格納するプロパティ バッグに含まれています。  <br/> |
-|[プロパティ (ArrayOfTrackingPropertiesType)](properties-arrayoftrackingpropertiestype.md) <br/> |1 つまたは複数の追跡のプロパティの一覧が含まれています。  <br/> |
+|[MessageText](messagetext.md) <br/> |応答の状態を説明するテキストを提供します。  <br/> |
+|[ResponseCode](responsecode.md) <br/> |要求で発生した特定のエラーを識別するエラーコードを提供します。  <br/> |
+|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在未使用で、今後の使用のために予約されています。 この要素には0の値が含まれています。  <br/> |
+|[MessageXml](messagexml.md) <br/> |エラー応答に関する追加情報を提供します。  <br/> |
+|[および search-messagetrackingreport](messagetrackingreport.md) <br/> |[Getmessagetrackingreport 操作](getmessagetrackingreport-operation.md)で返される1つのメッセージを格納します。  <br/> |
+|[Diagnostics](diagnostics.md) <br/> |データセンターでのレポート作成に使用されるタイミングとパフォーマンスに関する情報を提供します。  <br/> |
+|[エラー](errors-ex15websvcsotherref.md) <br/> |Web サービスによって返されたエラーを格納するためのプロパティバッグが格納されています。  <br/> |
+|[プロパティ (ArrayOfTrackingPropertiesType)](properties-arrayoftrackingpropertiestype.md) <br/> |1つ以上の追跡プロパティの一覧が含まれています。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -76,21 +76,21 @@ ms.locfileid: "19760794"
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [GetMessageTrackingReport 操作](getmessagetrackingreport-operation.md)
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

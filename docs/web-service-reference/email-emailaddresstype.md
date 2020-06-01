@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: dfffa1d5-2c3c-4f56-af63-5853df462e58
-description: Email 要素は、GetUserAvailability クエリのメールボックスのユーザーを表します。
-ms.openlocfilehash: 0e7848d7c4f5001ed86b06d11af1d7623b4bf1f0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Email 要素は、GetUserAvailability クエリのメールボックスユーザーを表します。
+ms.openlocfilehash: 2ed8de9c011a385ec6c4ebd2f8d1d47304343a0e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760211"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459231"
 ---
 # <a name="email-emailaddresstype"></a>電子メール (EmailAddressType)
 
-**Email**要素は、GetUserAvailability クエリのメールボックスのユーザーを表します。 
+**Email**要素は、getuseravailability クエリのメールボックスユーザーを表します。 
   
 - [GetUserAvailabilityRequest](getuseravailabilityrequest.md)  
 - [MailboxDataArray](mailboxdataarray.md) 
@@ -37,7 +37,7 @@ ms.locfileid: "19760211"
 ```
 
  **EmailAddressType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -47,34 +47,34 @@ ms.locfileid: "19760211"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[名 (EmailAddress)](name-emailaddress.md) <br/> |メールボックス ユーザーの表示名を表します。  <br/> |
-|[アドレス (文字列)](address-string.md) <br/> |メールボックス ユーザーの電子メール アドレスを表します。  <br/> |
-|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |メッセージのルーティング プロトコルを表します。  <br/> |
+|[Name (EmailAddress)](name-emailaddress.md) <br/> |メールボックスユーザーの表示名を表します。  <br/> |
+|[Address (string)](address-string.md) <br/> |メールボックスユーザーの電子メールアドレスを表します。  <br/> |
+|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |メッセージのルーティングプロトコルを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[MailboxData](mailboxdata.md) <br/> |個々 のメールボックス ユーザーのメールボックスのユーザーに返されるデータの種類のオプションを表します。  <br/> 以下は、この要素の XPath です。  <br/>  `/GetUserAvailabilityRequest/MailboxDataArray[i]/MailboxData` <br/> |
+|[MailboxData](mailboxdata.md) <br/> |個々のメールボックスユーザー、およびメールボックスユーザーに関して返されるデータの種類のオプションを表します。  <br/> この要素の XPath を次に示します。  <br/>  `/GetUserAvailabilityRequest/MailboxDataArray[i]/MailboxData` <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、インストールされているクライアント アクセス サーバーの役割を持つ MicrosoftExchange Server 2007 を実行しているコンピューターの/EWS/ディレクトリにあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの/EWS/ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [GetUserAvailability 操作](getuseravailability-operation.md)  
 - [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
-- [ユーザーの状態を取得します。](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [ユーザーの空き時間情報の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

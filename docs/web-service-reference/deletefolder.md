@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e37963f4-af9e-4481-b389-16175711e66d
-description: DeleteFolder 要素は、Exchange ストア内のメールボックスからフォルダーを削除する要求を定義します。
-ms.openlocfilehash: d31f98f26f537104e40b303de4199f45c65f49c7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DeleteFolder 要素は、Exchange ストア内のメールボックスからフォルダーを削除するための要求を定義します。
+ms.openlocfilehash: eb705a47b78b19c79b2e87561ba3696ed40e09cd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759978"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458769"
 ---
 # <a name="deletefolder"></a>DeleteFolder
 
-**DeleteFolder**要素は、Exchange ストア内のメールボックスからフォルダーを削除する要求を定義します。 
+**Deletefolder**要素は、Exchange ストア内のメールボックスからフォルダーを削除するための要求を定義します。 
   
 ```XML
 <DeleteFolder DeleteType="">
@@ -30,7 +30,7 @@ ms.locfileid: "19759978"
 ```
 
  **DeleteFolderType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -38,21 +38,21 @@ ms.locfileid: "19759978"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**削除の種類** <br/> |フォルダーを削除する方法について説明します。 この属性は、必要があります。  <br/> |
+|**DeleteType** <br/> |フォルダーが削除される方法について説明します。 この属性は必須です。  <br/> |
    
-#### <a name="deletetype-attribute"></a>削除の種類の属性
+#### <a name="deletetype-attribute"></a>DeleteType 属性
 
 |**値**|**説明**|
 |:-----|:-----|
-|HardDelete  <br/> |フォルダーはストアから完全に削除されます。  <br/> |
-|SoftDelete  <br/> |フォルダーを移動、ごみ箱をあさる場合、収集を有効にします。  <br/> |
-|MoveToDeletedItems  <br/> |フォルダーは、削除済みアイテム フォルダーに移動されます。  <br/> |
+|HardDelete  <br/> |フォルダーがストアから完全に削除されます。  <br/> |
+|SoftDelete  <br/> |収集が有効になっている場合、フォルダーは収集に移動されます。  <br/> |
+|MoveToDeletedItems  <br/> |フォルダーが [削除済みアイテム] フォルダーに移動されます。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[FolderIds](folderids.md) <br/> |削除するフォルダーを識別するために使用されるフォルダー識別子の配列が含まれています。  <br/> |
+|[FolderIds](folderids.md) <br/> |削除するフォルダーを識別するために使用されるフォルダー識別子の配列を格納します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -62,22 +62,22 @@ ms.locfileid: "19759978"
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**MoveToDeletedItems**および**HardDelete**オプションは、時間によって、Web サービスの呼び出しが完了していることを意味する、トランザクション、データベースは削除済みアイテム フォルダーにアイテムを移動または Exchange データベースから項目を完全に削除します。 この現象は、MicrosoftExchange Server 2007 および Exchange Server 2010 と同じです。 
+**MoveToDeletedItems**および**ハード削除**オプションは、トランザクションであり、Web サービスの呼び出しが完了すると、データベースがアイテムを削除済みアイテムフォルダーに移動したか、または Exchange データベースからアイテムを完全に削除したことを意味します。 この動作は、Microsoft Exchange Server 2007 および Exchange Server 2010 の場合と同じです。 
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [DeleteFolder 操作](deletefolder-operation.md)
+- [DeleteFolder 操作 ](deletefolder-operation.md)
 

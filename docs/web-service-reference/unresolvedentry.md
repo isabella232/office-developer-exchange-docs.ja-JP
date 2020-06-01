@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 5ac6116a-3b24-40f8-a877-dbe9a6935919
-description: UnresolvedEntry 要素には、解決するのには、連絡先または配布リストの名前が含まれています。
-ms.openlocfilehash: 98b447cd49685b49f73f75f12d921a65749be245
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: UnresolvedEntry 要素には、解決する連絡先または配布リストの名前が含まれています。
+ms.openlocfilehash: 0f157c1be6c327187456a795c4c1000b8c35b620
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839812"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459841"
 ---
 # <a name="unresolvedentry"></a>UnresolvedEntry
 
-**UnresolvedEntry**要素には、解決するのには、連絡先または配布リストの名前が含まれています。 
+**UnresolvedEntry**要素には、解決する連絡先または配布リストの名前が含まれています。 
   
 [ResolveNames](resolvenames.md)
   
@@ -32,7 +32,7 @@ ms.locfileid: "19839812"
 ```
 
  **NonEmptyStringType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -52,38 +52,38 @@ ms.locfileid: "19839812"
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、パブリックの連絡先または配布リストの名前を表します。 文字列の長さの最小値は、1 つの文字です。
+テキスト値は、パブリック連絡先または配布リストの名前を表します。 文字列の最小の長さは1文字です。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-に対して次のフィールドの名前を解決するのにはこの要素のテキスト値を使用します。
+この要素のテキスト値は、次のフィールドに対して名前を解決するために使用されます。
   
-- 名前
+- 名
     
-- 名字
+- 姓
     
 - 表示名
     
-- 氏名
+- フル ネーム
     
 - Office
     
-- Alias
+- エイリアス
     
 - SMTP アドレス
     
-プレフィックスが付けられたルーティングなど、smtp または sip、電子メール アドレスは、複数値配列に保存されます。 [ResolveNames 操作](resolvenames-operation.md)は、ルーティングの種類を「sip:User1@Contoso.com」など、未解決の名前の先頭に追加するときに、その配列の各値に対して部分的一致を実行します。 ルーティングの種類を指定しない場合**ResolveNames**操作が既定の smtp ルーティングの種類に、照合するプライマリ SMTP アドレスのプロパティでは、および複数値の配列を検索します。 
+Smtp、sip などのプレフィックス付きルーティングタイプを持つ電子メールアドレスは、複数値配列に保存されます。 [ResolveNames 操作](resolvenames-operation.md)は、未解決の名前の先頭 ("sip:User1@Contoso.com" など) にルーティングの種類を追加するときに、その配列の各値に対して部分一致を実行します。 ルーティングの種類を指定しない場合、 **ResolveNames**操作は既定で smtp のルーティングの種類を使用し、それをプライマリ smtp アドレスプロパティに一致させます。複数値配列は検索しません。 
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -92,5 +92,5 @@ ms.locfileid: "19839812"
 [ResolveNames 操作](resolvenames-operation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

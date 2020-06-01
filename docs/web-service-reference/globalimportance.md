@@ -11,21 +11,21 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8bcec699-e771-4f38-b7d9-61f324af1b4e
-description: GlobalImportance 要素には、メールボックス内のすべての会話項目の集計の重要性が含まれています。
-ms.openlocfilehash: c9cdcf20fd3e6eca9ab501cbc747544a4d7b7ded
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GlobalImportance 度要素には、メールボックス内のすべての会話アイテムの集約された重要度が含まれています。
+ms.openlocfilehash: c760168afa3edac20ca0ae7bc677610d8456d178
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831731"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459448"
 ---
 # <a name="globalimportance"></a>GlobalImportance
 
-**GlobalImportance**要素には、メールボックス内のすべての会話項目の集計の重要性が含まれています。 
+**Globalimportance 度**要素には、メールボックス内のすべての会話アイテムの集約された重要度が含まれています。 
   
 [FindConversationResponse](findconversationresponse.md)
   
-[スレッド](conversations-ex15websvcsotherref.md)
+[会話](conversations-ex15websvcsotherref.md)
   
 [会話 (ConversationType)](conversation-conversationtype.md)
   
@@ -36,7 +36,7 @@ ms.locfileid: "19831731"
 ```
 
  **ImportanceChoicesType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -52,40 +52,39 @@ ms.locfileid: "19831731"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[会話 (ConversationType)](conversation-conversationtype.md) <br/> |1 つのテーマを表します。  <br/> |
+|[会話 (ConversationType)](conversation-conversationtype.md) <br/> |単一の会話を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は必須です。 以下は、この要素の有効な値です。
+テキスト値は必須です。 この要素に使用できる値は次のとおりです。
   
 - 低
     
-- Normal
+- 標準
     
 - 高
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web Services.This の要素がホストをで Exchange Server 2010 Service Pack 1 (SP1) を導入する IIS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-
-  [FindConversation 操作](findconversation-operation.md)
+[FindConversation 操作](findconversation-operation.md)
   
 [ApplyConversationAction 操作](applyconversationaction-operation.md)
 
 
-[EWS での会話](http://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
+[EWS での会話](https://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
 

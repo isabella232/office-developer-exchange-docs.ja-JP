@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6b96dace-1260-4b83-869a-7c31c5583daa
-description: GetItem 操作を使用すると、Exchange ストアから連絡先アイテムを取得します。
-ms.openlocfilehash: 8d7436421f0c54a49345e8ef6b37cb442bca4277
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetItem 操作は、Exchange ストアから連絡先アイテムを取得するために使用されます。
+ms.openlocfilehash: 93e8dbe28e130ab64d4b8d12d2befde1f77ae8fa
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760774"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460023"
 ---
 # <a name="getitem-operation-contact"></a>GetItem 操作 (連絡先)
 
-GetItem 操作を使用すると、Exchange ストアから連絡先アイテムを取得します。
+GetItem 操作は、Exchange ストアから連絡先アイテムを取得するために使用されます。
   
-## <a name="getitem-contact-request-example"></a>GetItem (連絡先) の要求の例
+## <a name="getitem-contact-request-example"></a>GetItem (連絡先) 要求の例
 
 ### <a name="description"></a>説明
 
-次の例では、Exchange ストアからアイテムを取得する方法を示します。
+次の例は、Exchange ストアからアイテムを取得する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -35,9 +35,9 @@ GetItem 操作を使用すると、Exchange ストアから連絡先アイテム
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <GetItem xmlns='http://schemas.microsoft.com/exchange/services/2006/messages'>
+    <GetItem xmlns='https://schemas.microsoft.com/exchange/services/2006/messages'>
       <ItemShape>
         <t:BaseShape>AllProperties</t:BaseShape>
       </ItemShape>
@@ -51,14 +51,14 @@ GetItem 操作を使用すると、Exchange ストアから連絡先アイテム
 
 ### <a name="comments"></a>コメント
 
-Exchange ストアから項目を取得する要求は、すべての項目の種類、同じ形式をとります。 さまざまなアイテムには、避難用図形を基にさまざまな情報が返されるので、さまざまなアイテムの要求に対する応答が変更されます。
+Exchange ストアからアイテムを取得する要求では、すべてのアイテムの種類に対して同じ形式が使用されます。 さまざまなアイテムが応答図形に基づいて異なる情報を返すため、さまざまなアイテムに対する要求に対する応答は異なります。
   
 > [!NOTE]
-> 項目の識別子が読みやすさを保持するために小さすぎます。 
+> アイテム識別子は読みやすくするために短縮されています。 
   
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-次の要素は、要求で使用されます。
+要求では、次の要素が使用されます。
   
 - [GetItem](getitem.md)
     
@@ -66,15 +66,15 @@ Exchange ストアから項目を取得する要求は、すべての項目の�
     
 - [BaseShape](baseshape.md)
     
-- [Itemid](itemids.md)
+- [ItemIds](itemids.md)
     
 - [ItemId](itemid.md)
     
-## <a name="successful-getitem-contact-response"></a>GetItem (連絡先) を正常な応答
+## <a name="successful-getitem-contact-response"></a>成功した GetItem (連絡先) 応答
 
 ### <a name="description"></a>説明
 
-次のコード例では、 **AllProperties**[BaseShape](baseshape.md)の正常な GetItem 応答を示しています。
+次のコード例では、**すべての Allproperties**[baseshape](baseshape.md)に対して、成功した GetItem 応答を示します。
   
 ### <a name="code"></a>コード
 
@@ -85,12 +85,12 @@ Exchange ストアから項目を取得する要求は、すべての項目の�
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="602" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                     xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                     xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                     xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                     xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -153,11 +153,11 @@ Exchange ストアから項目を取得する要求は、すべての項目の�
 
 ### <a name="comments"></a>コメント
 
-項目の識別子が読みやすさを保持するために小さすぎます。
+アイテム識別子は読みやすくするために短縮されています。
   
-### <a name="successful-response-elements"></a>正常な応答の要素
+### <a name="successful-response-elements"></a>成功した応答要素
 
-次の要素は、連絡先アイテムの**AllProperties**の応答の形をした GetItem 要求に対して、応答で使用されます。 
+次の要素は、[連絡先] アイテムの**Allproperties**の応答図形を使用して、GetItem 要求の応答で使用されます。 
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -171,7 +171,7 @@ Exchange ストアから項目を取得する要求は、すべての項目の�
     
 - [Items](items.md)
     
-- [Contact](contact.md)
+- [連絡先](contact.md)
     
 - [ItemId](itemid.md)
     
@@ -181,11 +181,11 @@ Exchange ストアから項目を取得する要求は、すべての項目の�
     
 - [Sensitivity](sensitivity.md)
     
-- [Body/本文](body.md)
+- [Body](body.md)
     
 - [DateTimeReceived](datetimereceived.md)
     
-- [Size](size.md)
+- [[サイズ]](size.md)
     
 - [Importance](importance.md)
     
@@ -203,41 +203,41 @@ Exchange ストアから項目を取得する要求は、すべての項目の�
     
 - [DateTimeCreated](datetimecreated.md)
     
-- [添付ファイル付き](hasattachments.md)
+- [HasAttachments](hasattachments.md)
     
-- [カルチャ](culture.md)
+- [Culture](culture.md)
     
-- [表題](fileas.md)
+- [FileAs](fileas.md)
     
 - [FileAsMapping](fileasmapping.md)
     
-- [表示名 (文字列)](displayname-string.md)
+- [DisplayName (文字列)](displayname-string.md)
     
 - [GivenName](givenname.md)
     
-- [[頭文字]](initials.md)
+- [[頭文字](initials.md)]
     
 - [CompleteName](completename.md)
     
-- [[部署名]](firstname.md)
+- [FirstName](firstname.md)
     
-- [[氏名]](lastname.md)
+- [LastName](lastname.md)
     
 - [FullName](fullname.md)
     
-- [[得意先名]](companyname.md)
+- [CompanyName](companyname.md)
     
 - [EmailAddresses](emailaddresses.md)
     
-- [エントリ (EmailAddress)](entry-emailaddress.md)
+- [Entry (EmailAddress)](entry-emailaddress.md)
     
 - [PhysicalAddresses](physicaladdresses.md)
     
-- [エントリ (PhysicalAddress)](entry-physicaladdress.md)
+- [Entry (PhysicalAddress)](entry-physicaladdress.md)
     
-- [番地](street.md)
+- [所在](street.md)
     
-- [City](city.md)
+- [市区町村](city.md)
     
 - [State](state-ex15websvcsotherref.md)
     
@@ -245,13 +245,13 @@ Exchange ストアから項目を取得する要求は、すべての項目の�
     
 - [PhoneNumbers](phonenumbers.md)
     
-- [入力 (電話番号)](entry-phonenumber.md)
+- [Entry (PhoneNumber)](entry-phonenumber.md)
     
-- [役職](jobtitle.md)
+- [JobTitle](jobtitle.md)
     
 - [姓](surname.md)
     
-## <a name="invalid-getitem-contact-request-example"></a>GetItem (連絡先) 要求の無効な使用例
+## <a name="invalid-getitem-contact-request-example"></a>無効な GetItem (Contact) 要求の例
 
 ### <a name="description"></a>説明
 
@@ -263,9 +263,9 @@ Exchange ストアから項目を取得する要求は、すべての項目の�
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <GetItem xmlns='http://schemas.microsoft.com/exchange/services/2006/messages'>
+    <GetItem xmlns='https://schemas.microsoft.com/exchange/services/2006/messages'>
       <ItemShape>
         <t:BaseShape>AllProperties</t:BaseShape>
         <t:IncludeMimeContent>true</t:IncludeMimeContent>
@@ -280,13 +280,13 @@ Exchange ストアから項目を取得する要求は、すべての項目の�
 
 ### <a name="comments"></a>コメント
 
-アイテム識別子は、読みやすさを保持するために短縮されています。
+読みやすくするために、アイテム識別子が短縮されています。
   
-## <a name="getitem-contact-error-response"></a>GetItem (連絡先) のエラー応答
+## <a name="getitem-contact-error-response"></a>GetItem (連絡先) エラー応答
 
 ### <a name="description"></a>説明
 
-GetItem (連絡先) の要求にエラー応答をコード例を次に示します。
+次のコード例は、GetItem (連絡先) 要求に対するエラー応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -297,12 +297,12 @@ GetItem (連絡先) の要求にエラー応答をコード例を次に示しま
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="602" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                     xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                     xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                     xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                     xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Error">
           <m:MessageText>Mime conversion is not supported for this item type.</m:MessageText>
@@ -316,7 +316,7 @@ GetItem (連絡先) の要求にエラー応答をコード例を次に示しま
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a>エラー応答の要素
+### <a name="error-response-elements"></a>エラー応答要素
 
 エラー応答では、次の要素が使用されます。
   
@@ -344,5 +344,5 @@ GetItem (連絡先) の要求にエラー応答をコード例を次に示しま
   [GetItem 操作](getitem-operation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

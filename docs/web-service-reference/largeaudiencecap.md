@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 90709f5b-4a1d-49d2-9236-ecd02bb3cdf8
-description: LargeAudienceCap 要素は、電子メール メッセージの受信者の最大数を指定します。
-ms.openlocfilehash: c207ad37b01e582ebe68f179186354b6d7f8e691
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: LargeAudienceCap 要素は、電子メールメッセージの最大受信者数を指定します。
+ms.openlocfilehash: 932cac7ac1a62de7066573bbb2db3d0a338b2379
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832196"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460107"
 ---
 # <a name="largeaudiencecap"></a>LargeAudienceCap
 
-**LargeAudienceCap**要素は、電子メール メッセージの受信者の最大数を指定します。 
+**LargeAudienceCap**要素は、電子メールメッセージの最大受信者数を指定します。 
   
 ```XML
 <LargeAudienceCap></LargeAudienceCap>
 ```
 
- **整数**
-## <a name="attributes-and-elements"></a>属性および要素
+ **以外**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -38,13 +38,13 @@ ms.locfileid: "19832196"
   
 ### <a name="parent-elements"></a>親要素
 
-[MailTipsConfiguration (MailTipsServiceConfiguration)](mailtipsconfiguration-mailtipsserviceconfiguration.md)
+[Mailヒント構成 (MailTipsServiceConfiguration)](mailtipsconfiguration-mailtipsserviceconfiguration.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**LargeAudienceCap**要素のテキスト値は、電子メール メッセージの宛先として指定できる受信者の最大数です。 
+**LargeAudienceCap**要素のテキスト値は、電子メールメッセージでアドレス指定できる最大受信者数です。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   

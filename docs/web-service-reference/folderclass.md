@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 0041d135-2869-4612-89a5-d1aa86aa1093
-description: FolderClass 要素は、フォルダーのフォルダー クラスを表します。
-ms.openlocfilehash: 87be00563d0375abebf32159ff38d62d03112b95
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: FolderClass 要素は、フォルダーのフォルダークラスを表します。
+ms.openlocfilehash: ee5d382251a66ab5fbcd8054e6b5cfac82b5f994
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760558"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460058"
 ---
 # <a name="folderclass"></a>FolderClass
 
-**FolderClass**要素は、フォルダーのフォルダー クラスを表します。 
+**Folderclass**要素は、フォルダーのフォルダークラスを表します。 
   
 ```xml
 <FolderClass/>
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -45,31 +45,31 @@ ms.locfileid: "19760558"
 |**要素**|**説明**|
 |:-----|:-----|
 |[Folder](folder.md) <br/> |メールボックス内のフォルダーを表します。  <br/> |
-|[CalendarFolder](calendarfolder.md) <br/> |メールボックスの予定表フォルダーを表します。  <br/> |
-|[メッセージ](contactsfolder.md) <br/> |メールボックスの連絡先フォルダーを表します。  <br/> |
+|[CalendarFolder](calendarfolder.md) <br/> |メールボックス内の予定表フォルダーを表します。  <br/> |
+|[ContactsFolder](contactsfolder.md) <br/> |メールボックス内の連絡先フォルダーを表します。  <br/> |
 |[SearchFolder](searchfolder.md) <br/> |メールボックス内の検索フォルダーを表します。  <br/> |
-|[TasksFolder](tasksfolder.md) <br/> |メールボックス内のタスク フォルダーを表します。  <br/> |
+|[TasksFolder](tasksfolder.md) <br/> |メールボックス内のタスクフォルダーを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は必須です。 フォルダー クラス通常の先頭に"IPF"にします。
+テキスト値は必須です。 通常、フォルダークラスは "IPF" で始まります。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

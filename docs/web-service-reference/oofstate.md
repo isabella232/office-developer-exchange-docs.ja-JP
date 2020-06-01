@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3c486a38-06da-4382-ad20-664d067d76ac
-description: 取得またはユーザーの Office (OOF) の状態を設定する OofState 要素を使用します。
-ms.openlocfilehash: f97c050aec102b384fa4d98e6dee43befd4dc9ca
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: OofState 要素は、ユーザーの不在時 (OOF) の状態を取得または設定するために使用されます。
+ms.openlocfilehash: 6aef7d989ee6978019a483f2673895e68a88a7c5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832651"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459736"
 ---
 # <a name="oofstate"></a>OofState
 
-取得またはユーザーの Office (OOF) の状態を設定する**OofState**要素を使用します。 
+**Oofstate**要素は、ユーザーの不在時 (OOF) の状態を取得または設定するために使用されます。 
   
 ```xml
 <OofState>Disabled or Enabled or Scheduled</OofState>
 ```
 
  **OofState**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,42 +44,42 @@ ms.locfileid: "19832651"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[UserOofSettings](useroofsettings.md) <br/> |不在の設定を指定します。  <br/> この要素への XPath 式は、次のようにします。  <br/>  `/SetUserOofSettingsRequest/UserOofSettings` <br/> |
-|[OofSettings](oofsettings.md) <br/> |不在の設定が含まれています。  <br/> この要素への XPath 式は、次のようにします。  <br/>  `/GetUserOofSettingsResponse/OofSettings` <br/> |
+|[UserOofSettings](useroofsettings.md) <br/> |OOF 設定を指定します。  <br/> この要素の XPath 式を次に示します。  <br/>  `/SetUserOofSettingsRequest/UserOofSettings` <br/> |
+|[OofSettings](oofsettings.md) <br/> |不在時の設定が含まれます。  <br/> この要素の XPath 式を次に示します。  <br/>  `/GetUserOofSettingsResponse/OofSettings` <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、 **OofState**要素の必要があります。 次の一覧には、この要素の有効な値が含まれています。 
+**Oofstate**要素にはテキスト値が必要です。 次の一覧に、この要素に使用できる値を示します。 
   
-- **無効になっています。**
+- **Disabled**
     
 - **Enabled**
     
-- **スケジュール**
+- **スケジュール済み**
     
-**[スケジュール済]** の値は、[期間 (UserOofSettings)](duration-useroofsettings.md)の要素で指定された期間内に、不在の状態が**有効**に設定されていることを示します。 
+[**スケジュール**] の値は、[期間 (UserOofSettings)](duration-useroofsettings.md)要素で指定された期間中に OOF の状態が [**有効**] に設定されていることを示します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-SetUsersOofSettingRequest メッセージと、GetUserOofSettingResponse メッセージの両方では、この要素が必要です。
+この要素は、SetUsersOofSettingRequest メッセージと GetUserOofSettingResponse メッセージの両方に必要です。
   
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="example"></a>例
 
-SetUserOofSettings 要求の次の使用例は、 **OofState**を有効にします。
+SetUserOofSettings 要求の次の例では、 **Oofstate**を有効にします。
   
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <SetUserOofSettingsRequest xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-      <Mailbox xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+    <SetUserOofSettingsRequest xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+      <Mailbox xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <Name>David Alexander</Name>
         <Address>someone@example.com</Address>
         <RoutingType>SMTP</RoutingType>
       </Mailbox>
-      <UserOofSettings xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+      <UserOofSettings xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <OofState>Enabled</OofState>
         <ExternalAudience>All</ExternalAudience>
         <Duration>
@@ -98,14 +98,14 @@ SetUserOofSettings 要求の次の使用例は、 **OofState**を有効にしま
 </soap:Envelope>
 ```
 
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

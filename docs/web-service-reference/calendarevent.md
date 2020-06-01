@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 91958c01-1fcb-4ac0-8601-5e5b434c988a
-description: CalendarEvent 要素は、一意の予定表アイテムの出現を表します。
-ms.openlocfilehash: f7fff7ba511ca12813dd4c2d694e89c97589ba31
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: CalendarEvent 要素は、固有の予定表アイテムの出現を表します。
+ms.openlocfilehash: 8bf37c907ed726e33dd2b1eff9add5d6235704da
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759579"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459077"
 ---
 # <a name="calendarevent"></a>CalendarEvent
 
-**CalendarEvent**要素は、一意の予定表アイテムの出現を表します。 
+**CalendarEvent**要素は、固有の予定表アイテムの出現を表します。 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -45,7 +45,7 @@ ms.locfileid: "19759579"
 ```
 
  **CalendarEvent**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -55,33 +55,33 @@ ms.locfileid: "19759579"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[開始時刻](starttime.md) <br/> |予定表イベントの開始を表します。 これは、必須の子要素です。  <br/> |
-|[終了時刻](endtime.md) <br/> |予定表のイベントの終了を表します。 これは、必須の子要素です。  <br/> |
-|[BusyType](busytype.md) <br/> |予定表イベントの空き時間情報の状態を表します。 これは、必須の子要素です。  <br/> |
-|[CalendarEventDetails](calendareventdetails.md) <br/> |カレンダー イベントの追加情報を提供します。 これは、省略可能な子要素です。  <br/> |
+|[StartTime](starttime.md) <br/> |予定表イベントの開始を表します。 これは必須の子要素です。  <br/> |
+|[EndTime](endtime.md) <br/> |予定表イベントの終了を表します。 これは必須の子要素です。  <br/> |
+|[BusyType](busytype.md) <br/> |予定表イベントの空き時間状態セットを表します。 これは必須の子要素です。  <br/> |
+|[CalendarEventDetails](calendareventdetails.md) <br/> |予定表イベントに関する追加情報を提供します。 これはオプションの子要素です。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[CalendarEventArray](calendareventarray.md) <br/> |要求されたユーザーの可用性を表す一意の予定表アイテムの出現回数のセットが含まれています。  <br/> この要素への XPath 2.0 の式は、次のようにします。  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray` <br/> |
+|[CalendarEventArray](calendareventarray.md) <br/> |要求されたユーザーの空き時間情報を表す、一連の一意な予定表アイテムの繰り返しを含みます。  <br/> この要素の XPath 2.0 式を次に示します。  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray` <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-クライアントのタイム ゾーンでは、予定と会議の時刻が返されます。 発生したシーケンスは、すべての子要素の一覧です。 この要素によって提供される詳細のレベルは、要求側に付与するアクセス許可に依存します。
+予定および会議の時刻は、クライアントのタイムゾーンで返されます。 すべての子要素が発生する順序で一覧表示されます。 この要素によって提供される詳細レベルは、リクエスターに付与されるアクセス許可によって異なります。
   
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -92,5 +92,5 @@ MicrosoftExchange Server 2007 がインストールされているクライア�
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[ユーザーの状態を取得します。](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[ユーザーの空き時間情報の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

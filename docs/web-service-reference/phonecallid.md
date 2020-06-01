@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 79e31a4c-fc84-4802-8761-470df8d63694
-description: PhoneCallId 要素は、電話の呼び出しの id を指定します。 この要素は必須です。
-ms.openlocfilehash: 1886d9510fe254c016779166efccc9882fd77d2c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: PhoneCallId 要素は、電話呼び出しの識別子を指定します。 この要素は必須です。
+ms.openlocfilehash: 3e4b9dba5e8be6e45a0c16508531fbc6cf91c170
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832757"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459701"
 ---
 # <a name="phonecallid"></a>PhoneCallId
 
-**PhoneCallId**要素は、電話の呼び出しの id を指定します。 この要素は必須です。 
+**PhoneCallId**要素は、電話呼び出しの識別子を指定します。 この要素は必須です。 
   
 ```xml
 <PhoneCallId Id="" />
 ```
 
  **PhoneCallIdType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -36,7 +36,7 @@ ms.locfileid: "19832757"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|ID  <br/> |切断するのには電話の呼び出しを識別します。 この属性は、必要があります。  <br/> |
+|ID  <br/> |切断する電話通話を識別します。 この属性は必須です。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -46,26 +46,26 @@ ms.locfileid: "19832757"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[DisconnectPhoneCall](disconnectphonecall.md) <br/> |呼び出しを切断するのには要求を表します。  <br/> |
-|[GetPhoneCallInformation](getphonecallinformation.md) <br/> |電話の情報を取得する要求を表します。  <br/> |
+|[電話](disconnectphonecall.md) <br/> |呼び出しを切断する要求を表します。  <br/> |
+|[GetPhoneCallInformation](getphonecallinformation.md) <br/> |電話呼び出し情報を取得するための要求を表します。  <br/> |
 |[PlayOnPhoneResponse (Exchange Web サービス)](playonphoneresponse-exchange-web-services.md) <br/> |PlayOnPhone 要求への応答を定義します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

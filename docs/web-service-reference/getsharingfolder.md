@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: ed5bb61f-89c7-4baa-83ee-30f06a49ff9b
-description: GetSharingFolder 要素は、指定した共有フォルダーのローカル フォルダーの識別子を取得する要求を定義します。 それは、GetSharingFolder 操作の基本要素です。
-ms.openlocfilehash: 7c2f31aa27c1cbde6cdad2b41a341916b4bed2ce
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetSharingFolder 要素は、指定された共有フォルダーのローカルフォルダー識別子を取得する要求を定義します。 これは、GetSharingFolder 操作の基本要素です。
+ms.openlocfilehash: cb76c534d9b30d0a9d1b267396551eb2871e638a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831669"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460506"
 ---
 # <a name="getsharingfolder"></a>GetSharingFolder
 
-**GetSharingFolder**要素は、指定した共有フォルダーのローカル フォルダーの識別子を取得する要求を定義します。 それは、 [GetSharingFolder 操作](getsharingfolder-operation.md)の基本要素です。
+**Getsharingfolder**要素は、指定された共有フォルダーのローカルフォルダー識別子を取得する要求を定義します。 これは、 [Getsharingfolder 操作](getsharingfolder-operation.md)の基本要素です。
   
 ```xml
 <GetSharingFolder>   <SmtpAddress/>   <DataType/>   <SharedFolderId/></GetSharingFolder>
 ```
 
  **GetSharingFolderType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -38,30 +38,30 @@ ms.locfileid: "19831669"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[SmtpAddress](smtpaddress.md) <br/> |共有の関係で相手の SMTP 電子メール アドレスを表します。 この要素は必須です。  <br/> |
-|[DataType](datatype.md) <br/> |共有フォルダーが共有されているデータの種類について説明します。 この要素はオプションです。  <br/> |
-|[SharedFolderId](sharedfolderid.md) <br/> |返される識別子を持つローカルのフォルダーの共有フォルダーの識別子を表します。 この要素はオプションです。  <br/> |
+|[SmtpAddress](smtpaddress.md) <br/> |共有関係にある相手の SMTP 電子メールアドレスを表します。 この要素は必須です。  <br/> |
+|[DataType](datatype.md) <br/> |共有フォルダーによって共有されるデータの種類を表します。 この要素は省略できます。  <br/> |
+|[SharedFolderId](sharedfolderid.md) <br/> |ローカルフォルダーの識別子を取得する必要がある共有フォルダーの識別子を表します。 この要素は省略できます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-GetSharingFolder 要素は、 [SmtpAddress](smtpaddress.md)要素を含める必要があります。 GetSharingFolder 要素は、[データ型](datatype.md)の要素または[SharedFolderId](sharedfolderid.md)要素では、いずれかも含まれている必要がありますが、両方を含めることはできません。 
+GetSharingFolder 要素には、 [Smtpaddress](smtpaddress.md)要素を含める必要があります。 GetSharingFolder 要素には、 [DataType](datatype.md)要素または[SharedFolderId](sharedfolderid.md)要素も含める必要がありますが、両方を含めることはできません。 
   
-この要素を記述するスキーマは、Microsoft Exchange Server を実行しているコンピューターの Exchange Web サービスをホストにクライアント アクセス サーバーの役割がインストールされている IIS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -70,5 +70,5 @@ GetSharingFolder 要素は、 [SmtpAddress](smtpaddress.md)要素を含める必
 [GetSharingFolder 操作](getsharingfolder-operation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

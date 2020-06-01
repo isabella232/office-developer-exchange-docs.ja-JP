@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: adbffbfc-e436-4620-acfc-5dfd41a88cb8
-description: AddDistributionGroupToImList 要素は、配布リストを [インスタント メッセージ] ボックスの一覧に追加する要求を定義します。
-ms.openlocfilehash: b63daeb8b1d60123215bfcdec307f2f948d2ec39
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Adddistribution Grouptoimlist 要素は、インスタントメッセージリストに配布リストを追加する要求を定義します。
+ms.openlocfilehash: 90a84b23678fb0740158f601967905a8847286fd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759280"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460380"
 ---
 # <a name="adddistributiongrouptoimlist"></a>AddDistributionGroupToImList
 
-**AddDistributionGroupToImList**要素は、配布リストを [インスタント メッセージ] ボックスの一覧に追加する要求を定義します。 
+**Adddistribution Grouptoimlist**要素は、インスタントメッセージリストに配布リストを追加する要求を定義します。 
   
 ```XML
 <AddDistributionGroupToImList>
@@ -26,8 +26,8 @@ ms.locfileid: "19759280"
 </AddDistributionGroupToImList>
 ```
 
- **AddDistributionGroupToImListType**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Adddeploy Grouptoimlisttype**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -37,25 +37,25 @@ ms.locfileid: "19759280"
   
 ### <a name="child-elements"></a>子要素
 
-[SmtpAddress](smtpaddress.md) | [(NonEmptyStringType) の表示名](displayname-nonemptystringtype.md)
+[Smtpaddress](smtpaddress.md)  | [DisplayName (非 Emptystringtype)](displayname-nonemptystringtype.md)
   
 ### <a name="parent-elements"></a>親要素
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
 |空にすることができます。  <br/> |false  <br/> |
    
 

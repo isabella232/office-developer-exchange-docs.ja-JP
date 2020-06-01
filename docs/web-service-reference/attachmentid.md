@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 55a5fd77-60d1-40fa-8144-770600cedc6a
-description: AttachmentId 要素は、アイテムまたはファイルの添付ファイルを識別します。 CreateAttachment の応答は、この要素を使用します。
-ms.openlocfilehash: 2910503d1661ca3aaeeb4e319deb39f6b57c5c0a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: AttachmentId 要素は、アイテムまたは添付ファイルを識別します。 この要素は、CreateAttachment の応答で使用されます。
+ms.openlocfilehash: b5dc9299b615f0fc01b8afcbaabf0ec7996e53d1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759451"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459112"
 ---
 # <a name="attachmentid"></a>AttachmentId
 
-**AttachmentId**要素は、アイテムまたはファイルの添付ファイルを識別します。 CreateAttachment の応答は、この要素を使用します。 
+**AttachmentId**要素は、アイテムまたは添付ファイルを識別します。 この要素は、CreateAttachment の応答で使用されます。 
   
 ```xml
 <AttachmentId Id="" RootItemId="" RootItemChangeKey="" />
 ```
 
  **AttachmentIdType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -36,9 +36,9 @@ ms.locfileid: "19759451"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**Id** <br/> |添付ファイルの一意の識別子を指定します。  <br/> |
-|**RootItemId** <br/> |添付ファイルが関連付けられているルート ストア アイテムの一意の識別子を指定します。  <br/> |
-|**RootItemChangeKey** <br/> |添付ファイルが関連付けられているルート ストアの項目のキーの変更を識別します。  <br/> |
+|**Id** <br/> |添付ファイルの一意識別子を識別します。  <br/> |
+|**RootItemId** <br/> |添付ファイルが添付されているルートストアアイテムの一意識別子を識別します。  <br/> |
+|**RootItemChangeKey** <br/> |添付ファイルが添付されているルートストアアイテムの変更キーを識別します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -48,27 +48,27 @@ ms.locfileid: "19759451"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ItemAttachment](itemattachment.md) <br/> |Exchange の他のアイテムに関連付けられている Exchange アイテムを表します。  <br/> |
-|[FileAttachment](fileattachment.md) <br/> |Exchange ストア内のアイテムに関連付けられているファイルを表します。  <br/> |
+|[ItemAttachment](itemattachment.md) <br/> |別の Exchange アイテムに関連付けられている Exchange アイテムを表します。  <br/> |
+|[FileAttachment](fileattachment.md) <br/> |Exchange ストア内のアイテムに添付されているファイルを表します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-添付ファイルが作成されると、ルート アイテムの変更キーが変更されることに注意する必要があります。
+添付ファイルを作成すると、ルートアイテムの変更キーが変更されることに注意してください。
   
-DeleteAttachment および GetAttachment 要求は、 [AttachmentId](attachmentid-getattachment-and-deleteattachment.md)要素を使用します。 
+[AttachmentId (getattachment と deleteattachment)](attachmentid-getattachment-and-deleteattachment.md)要素は、deleteattachment 要求と getattachment 要求で使用されます。 
   
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

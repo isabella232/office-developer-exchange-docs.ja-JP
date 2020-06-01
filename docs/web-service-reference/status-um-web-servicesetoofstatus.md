@@ -1,5 +1,5 @@
 ---
-title: 状態 (UM web サービス - SetOofStatus)
+title: 状態 (UM web サービス-SetOofStatus)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,21 +10,21 @@ api_name:
 api_type:
 - schema
 ms.assetid: 893bcff1-ccdc-493f-b366-ce8a68c813bd
-description: 状態の要素は、SetOofStatus 操作 (UM web サービス) 要求に使用する値を定義します。
-ms.openlocfilehash: 57b4f8fe1a64341b1c2ae0a06bc98f1c9cfd28c4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Status 要素は、SetOofStatus 操作 (UM web サービス) 要求で使用する値を定義します。
+ms.openlocfilehash: 865152baf28c22578664e16db2dcd5f82a04af98
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833583"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459981"
 ---
-# <a name="status-um-web-service---setoofstatus"></a>状態 (UM web サービス - SetOofStatus)
+# <a name="status-um-web-service---setoofstatus"></a>状態 (UM web サービス-SetOofStatus)
 
-**状態**の要素は、 [SetOofStatus 操作 (UM web サービス)](setoofstatus-operation-um-web-service.md)の要求で使用する値を定義します。 
+**Status**要素は、 [setoofstatus 操作 (UM web サービス)](setoofstatus-operation-um-web-service.md)要求で使用する値を定義します。 
   
 [SetOofStatus (UM web サービス)](setoofstatus-um-web-service.md)
   
-[状態 (UM web サービス - SetOofStatus)](status-um-web-servicesetoofstatus.md)
+[状態 (UM web サービス-SetOofStatus)](status-um-web-servicesetoofstatus.md)
   
 ```xml
 <SetOofStatus>
@@ -32,8 +32,8 @@ ms.locfileid: "19833583"
 </SetOofStatus>
 ```
 
- **ブール型 (Boolean)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -49,24 +49,24 @@ ms.locfileid: "19833583"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[SetOofStatus (UM web サービス)](setoofstatus-um-web-service.md) <br/> |要求は、ユーザーのユニファイド メッセージングの Office (OOF) の状態を設定する要求を定義します。  <br/> |
+|[SetOofStatus (UM web サービス)](setoofstatus-um-web-service.md) <br/> |要求を行ったユーザーのユニファイドメッセージングの不在 (OOF) 状態を設定するための要求を定義します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-ブール値は、必要があります。 指定可能な値は次のいずれかです。
+ブール値が必要です。 指定可能な値は次のいずれかです。
   
 - True
     
 - False
     
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |スキーマ名  <br/> |メッセージ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

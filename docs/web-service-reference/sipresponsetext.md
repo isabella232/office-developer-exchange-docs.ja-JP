@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 359a9085-50c0-4c94-8a12-216339ba2018
-description: SIPResponseText 要素は、SIP 応答のテキストを指定します。
-ms.openlocfilehash: 3856275c74b51e29db5884ed490715e9f286eb8b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: SIPResponseText 要素は、SIP 応答テキストを指定します。
+ms.openlocfilehash: 6249e4bb651ba62eb99537d0cdec5bea60670f61
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833502"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460464"
 ---
 # <a name="sipresponsetext"></a>SIPResponseText
 
-**SIPResponseText**要素は、SIP 応答のテキストを指定します。 
+**SIPResponseText**要素は、SIP 応答テキストを指定します。 
   
 ```xml
 <SIPResponseText/>
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,28 +44,28 @@ ms.locfileid: "19833502"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[PhoneCallInformation](phonecallinformation.md) <br/> |電話の状態情報を指定します。  <br/> |
+|[PhoneCallInformation](phonecallinformation.md) <br/> |通話の状態情報を指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-SIP 応答のテキストです。
+SIP 応答テキスト。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、インストールされているクライアント アクセス サーバーの役割と Exchange Server を実行しているコンピューターの/ews/ディレクトリにあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされた Exchange Server を実行しているコンピューターの/ews/ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

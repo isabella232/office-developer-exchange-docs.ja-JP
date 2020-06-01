@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 47fa2a32-6089-4897-8fca-f1827359d49c
-description: GetEncryptionConfigurationResponseMessage は内部使用のみを目的としています。
-ms.openlocfilehash: fb778d3435fbae56034d15fb2df377f804fa5c2b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetEncryptionConfigurationResponseMessage は、内部使用のみを目的としています。
+ms.openlocfilehash: 131b0b0b530c1b2765abf0d168d774b4d0d5f7bc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760703"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458727"
 ---
 # <a name="getencryptionconfigurationresponsemessage"></a>GetEncryptionConfigurationResponseMessage
 
-**GetEncryptionConfigurationResponseMessage**は内部使用のみを目的としています。 
+**GetEncryptionConfigurationResponseMessage**は、内部使用のみを目的としています。 
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -35,7 +35,7 @@ ms.locfileid: "19760703"
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。
   

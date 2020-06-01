@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: c4b98be7-141c-4ba8-97ef-9ad1ed19f61f
-description: 時刻要素は、標準時間と夏時間との間に 1 日の切り替え時間を表します。
-ms.openlocfilehash: 716487fb7ed64dbaa6fa97caf1ea608e4673d2ef
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Time 要素は、標準時と夏時間の切り替え時間を表します。
+ms.openlocfilehash: 97c89fbcbdb85fcdd4d32a1d44075ac42adef053
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839676"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460296"
 ---
-# <a name="time"></a>時刻型 (Time)
+# <a name="time"></a>Time
 
-**時刻**要素は、標準時間と夏時間との間に 1 日の切り替え時間を表します。 
+**Time**要素は、標準時と夏時間の切り替え時間を表します。 
   
 ```xml
 <Time>...</Time>
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,22 +44,22 @@ ms.locfileid: "19839676"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[StandardTime](standardtime.md) <br/> | 基準にして世界協定時刻 (UTC)[バイアス (UTC)](bias-utc.md)の要素で表される時間からのオフセットを表します。 この要素は、夏時間が発生した地域で夏時間から切り替えに関する情報を標準時も含みます。  <br/><br/>  [StandardTime](standardtime.md)要素への XPath 式は、次のように。 <br/> <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/StandardTime`<br/> <br/>  `/GetUserAvailabilityRequest/TimeZone/StandardTime` <br/> |
-|[DaylightTime](daylighttime.md) <br/> | 夏時間が発生した地域の[バイアス (UTC)](bias-utc.md)の要素で表される UTC 時間からのオフセットを表します。 この要素には、標準時間から夏時間への切り替えが発生した場合についての情報も含まれています。  <br/><br/>  [DaylightTime](daylighttime.md)要素への XPath 式は、次のように。  <br/><br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/DaylightTime` <br/><br/>  `/GetUserAvailabilityRequest/TimeZone/DaylightTime` <br/> |
+|[StandardTime](standardtime.md) <br/> | 時間のオフセット (協定世界時 (UTC) を基準として、 [Bias (utc)](bias-utc.md)要素で表される) を表します。 この要素には、夏時間が計測される地域で夏時間から標準時への切り替えに関する情報も含まれます。  <br/><br/>  [Standardtime](standardtime.md)要素に対する XPath 式を次に示します。 <br/> <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/StandardTime`<br/> <br/>  `/GetUserAvailabilityRequest/TimeZone/StandardTime` <br/> |
+|[DaylightTime](daylighttime.md) <br/> | 夏時間が計測される地域で、 [Bias (utc)](bias-utc.md)要素によって表される utc を基準とした時刻からのオフセットを表します。 この要素には、標準時から夏時間への切り替えが行われるタイミングに関する情報も含まれています。  <br/><br/>  [Daylighttime](daylighttime.md)要素の XPath 式を次に示します。  <br/><br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/DaylightTime` <br/><br/>  `/GetUserAvailabilityRequest/TimeZone/DaylightTime` <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、時間、分、および次の形式で秒を表します: hh:mm:ss です。
+Text 値は、時間、分、秒を次の形式で表します。 hh: mm: ss。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-[DaylightTime](daylighttime.md)要素では、**時間**の要素が発生する場合は、夏時間から標準時への移行が発生する時刻を表します。 [時刻](time.md)要素は、 [StandardTime](standardtime.md)要素で発生した場合、標準時間から夏時間への切り替えが発生する時刻を表します。 
+[Daylighttime](daylighttime.md)要素に**time**要素がある場合は、夏時間から標準時への切り替えが行われる時刻を表します。 [Standardtime](standardtime.md)要素に[time](time.md)要素がある場合は、標準時から夏時間への切り替えが行われる時刻を表します。 
   
-この要素には、最小出現回数が 0 と 1 つの最大出現します。
+この要素の最小出現回数は0で、最大出現回数は1です。
   
 ## <a name="example"></a>例
 
-要求の次の部分は、午前 2 時の遷移時間を表します 夏時間への標準時間です。
+要求の次の部分は、2 A.M. に移行する時間を表します。 標準時から夏時間への間隔。
   
 ```xml
 <StandardTime>
@@ -71,17 +71,17 @@ ms.locfileid: "19839676"
 </StandardTime
 ```
 
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [GetUserAvailability 操作](getuseravailability-operation.md)
-- [ユーザーの状態を取得します。](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [ユーザーの空き時間情報の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

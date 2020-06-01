@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: bd0c0bce-3e7c-47c7-af7f-5ee5f5ad9820
-description: TextBody 要素は、テキストの本文を指定します。
-ms.openlocfilehash: 78b18b27891d571605d2eeeeffb5c252cc790c11
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: TextBody 要素は、テキスト本文を指定します。
+ms.openlocfilehash: c0002785fb990a251267218f7a5f232e521db41a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839664"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459484"
 ---
 # <a name="textbody"></a>TextBody
 
-**TextBody**要素は、テキストの本文を指定します。 
+**Textbody**要素は、テキスト本文を指定します。 
   
 ```XML
 <TextBody BodyTypeType=" HTML | Text" IsTruncated=" true | false"></TextBody>
 ```
 
  **BodyType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -32,8 +32,8 @@ ms.locfileid: "19839664"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|BodyTypeType  <br/> |本文の種類を示します。 **BodyTypeType**属性の**テキスト**の値は、プレーン テキスト形式の本文であることを示します。 **BodyTypeType**属性の値を**HTML**の本文が HTML フォーム内でことを示します。 **BodyTypeType**属性が必要です。  <br/> |
-|IsTruncated  <br/> |本文の内容が切り詰められたことを示します。 テキスト値が**false**の**IsTruncated**属性のでは、本文の内容は切り捨てられましたしないことを示します。 テキスト本文の長さは、 [MaximumBodySize](maximumbodysize.md)要素で設定された値より長い場合、正規化された本文は切り捨てられます。  <br/> |
+|BodyTypeType  <br/> |本文の種類を示します。 **Bodytypetype**属性の**テキスト**の値は、本文がプレーンテキスト形式であることを示します。 **Bodytypetype**属性の**html**の値は、本文が HTML 形式であることを示します。 **Bodytypetype**属性は必須です。  <br/> |
+|Istrがありません  <br/> |本文の内容が切り捨てられていることを示します。 **Istruncated** attribute のテキスト値が**false**の場合は、本文のコンテンツが切り捨てられていないことを示します。 テキストの本文の長さが[Maximumbodysize](maximumbodysize.md)要素で設定された値よりも長い場合は、正規化された本文が切り捨てられます。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -41,25 +41,25 @@ ms.locfileid: "19839664"
   
 ### <a name="parent-elements"></a>親要素
 
-[項目](item.md) | [連絡先](contact.md) | [メッセージ](message-ex15websvcsotherref.md) | [DistributionList](distributionlist.md) | [カレンダー項目](calendaritem.md) | [PostItem](postitem.md) | [タスク](task.md)
+[アイテム](item.md)  | [連絡先](contact.md)  | [メッセージ](message-ex15websvcsotherref.md)  | [DistributionList](distributionlist.md)  | [Calendaritem](calendaritem.md)  | [Postitem](postitem.md)  | [タスク](task.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**TextBody**要素のテキスト値は、項目のテキストの本文です。 
+**Textbody**要素のテキスト値は、アイテムの本文です。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

@@ -1,5 +1,5 @@
 ---
-title: ShowExternalRecipientCount
+title: Showexternal受信者カウント
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: db28dbcb-d051-4e5c-a9c2-4b8d5149b4e1
-description: ShowExternalRecipientCount 要素は、メッセージの宛先を外部の受信者の数を示すメール ヒントを表示するのには、GetMailTips 操作の消費者があるかどうかを示します。
-ms.openlocfilehash: 1fd3ceb629689c560dc60afe01f0413602f79a0d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Showexternalrecipients Count 要素は、GetMailTips ヒント操作のコンシューマーが、メッセージの宛先である外部受信者の数を示すメールヒントを表示する必要があるかどうかを示します。
+ms.openlocfilehash: fc32e5c4a95f0e33b5532af9c77d31bd6446e641
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833491"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460471"
 ---
-# <a name="showexternalrecipientcount"></a>ShowExternalRecipientCount
+# <a name="showexternalrecipientcount"></a>Showexternal受信者カウント
 
-**ShowExternalRecipientCount**要素は、メッセージの宛先を外部の受信者の数を示すメール ヒントを表示するのには、 [GetMailTips 操作](getmailtips-operation.md)の消費者があるかどうかを示します。 
+**Showexternalrecipients count**要素は、 [getmailtips ヒント操作](getmailtips-operation.md)のコンシューマーが、メッセージの宛先である外部受信者の数を示すメールヒントを表示する必要があるかどうかを示します。 
   
 ```XML
 <ShowExternalRecipientCount>true | false</ShowExternalRecipientCount>
 ```
 
- **ブール型 (Boolean)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,31 +44,31 @@ ms.locfileid: "19833491"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[MailTipsConfiguration (MailTipsServiceConfiguration)](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |メール ヒント サービスのサービスの構成情報が含まれています。  <br/> |
+|[Mailヒント構成 (MailTipsServiceConfiguration)](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |メールヒントサービスのサービス構成情報が保存されています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-この要素のテキスト値は、 [GetMailTips 操作](getmailtips-operation.md)のコンシューマーは、メッセージの宛先とする外部の受信者の数を示すメール ヒントを表示する必要がある場合**は true**です。 [GetMailTips 操作](getmailtips-operation.md)のコンシューマーは、メッセージの宛先を外部の受信者の数を示すメール ヒントを表示する必要はない場合に、値は**false**です。 
+この要素のテキスト値は、 [Getmailtips ヒント操作](getmailtips-operation.md)のコンシューマーが、メッセージの宛先である外部受信者の数を示すメールヒントを表示する必要がある場合は**true**です。 [Getmailtips ヒント操作](getmailtips-operation.md)のコンシューマーが、メッセージの宛先である外部受信者の数を示すメールヒントを表示する必要がない場合は、値は**false**になります。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[GetMailTips 操作](getmailtips-operation.md)
+[GetMailTips ヒント操作](getmailtips-operation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 82a737c7-da41-4777-8ad8-89851a0b602b
-description: GetRooms 要素は、特定の会議室の一覧内の会議室の一覧を取得する要求のルート要素です。
-ms.openlocfilehash: a787097752cfeee9489e5f118549c2d939ba4c9a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetRooms 要素は、特定の会議室一覧内の部屋の一覧を取得する要求のルート要素です。
+ms.openlocfilehash: 77fde5980a03d4c0509344933b0901cb21ab7197
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760851"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458594"
 ---
 # <a name="getrooms"></a>GetRooms
 
-**GetRooms**要素は、特定の会議室の一覧内の会議室の一覧を取得する要求のルート要素です。 
+**Getrooms**要素は、特定の会議室一覧内の部屋の一覧を取得する要求のルート要素です。 
   
 ```XML
 <GetRooms>
@@ -30,7 +30,7 @@ ms.locfileid: "19760851"
 ```
 
  **GetRoomsType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,9 +40,9 @@ ms.locfileid: "19760851"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[RoomList](roomlist.md) <br/> |会議室の一覧を識別する電子メール アドレスを表します。  <br/> |
+|[RoomList](roomlist.md) <br/> |会議室の一覧を識別する電子メールアドレスを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -52,22 +52,22 @@ ms.locfileid: "19760851"
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

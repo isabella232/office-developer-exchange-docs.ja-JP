@@ -1,5 +1,5 @@
 ---
-title: タイムアウト (時間)
+title: タイムアウト (期間)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: bb15f9a7-8ea5-4765-9877-762c3f98bf50
-description: タイムアウト要素は、プル サブスクリプションの前に時間の長さは、サーバーでタイムアウトを指定します。
-ms.openlocfilehash: 23b210dcdd87f2388aecec246068f12ec6c69a78
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Timeout 要素は、サーバーによってプルサブスクリプションがタイムアウトになるまでの時間の長さを指定します。
+ms.openlocfilehash: b5b0e77d794080cd8e0da1e14acf4cb059b80b08
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839674"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460282"
 ---
-# <a name="timeout-duration"></a>タイムアウト (時間)
+# <a name="timeout-duration"></a>タイムアウト (期間)
 
-**タイムアウト**要素は、プル サブスクリプションの前に時間の長さは、サーバーでタイムアウトを指定します。 
+**Timeout**要素は、サーバーによってプルサブスクリプションがタイムアウトになるまでの時間の長さを指定します。 
   
 ```XML
 <Timeout></Timeout>
 ```
 
  **SubscriptionTimeoutType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,21 +42,21 @@ ms.locfileid: "19839674"
   
 ## <a name="text-value"></a>テキスト値
 
-**タイムアウト**要素のテキスト値は、プル サブスクリプションは、サーバーがタイムアウトする前に、分単位の時間の長さです。 最小値は 1 です。最大値は、1440 です。 
+**Timeout**要素のテキスト値は、サーバーによってプルサブスクリプションがタイムアウトになるまでの時間 (分単位) です。 最小値は1です。最大値は1440です。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

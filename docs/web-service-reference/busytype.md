@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 26d4fae0-8c78-4705-b5e8-d6033712c41e
-description: BusyType 要素は、空き/予約済み状態の設定の予定表のイベントを表します。
-ms.openlocfilehash: 6484bc70c6a05084e5d2bc1738b575fbebe4c132
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: BusyType 要素は、予定表イベントの空き時間状態セットを表します。
+ms.openlocfilehash: 7c2d18c21156a8603d3caeeb796a56c5d8afcba5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759577"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459084"
 ---
 # <a name="busytype"></a>BusyType
 
-**BusyType**要素は、空き/予約済み状態の設定の予定表のイベントを表します。 
+**BusyType**要素は、予定表イベントの空き時間状態セットを表します。 
   
 ```xml
 <BusyType>Free or Tentative or Busy or OOF or NoData</BusyType>
 ```
 
  **BusyType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,35 +44,35 @@ ms.locfileid: "19759577"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[IndividualAttendeeConflictData](individualattendeeconflictdata.md) <br/> |推奨される会議の時刻と同時に発生するタイム ・ ウィンドウのユーザーまたは連絡先の空き時間状況が含まれています。  <br/> この要素への XPath 式は、次のようにします。  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]/AttendeeConflictDataArray/IndividualAttendeeConflictData` <br/> |
-|[CalendarEvent](calendarevent.md) <br/> |独自の予定表アイテムの出現を表します。  <br/> この要素への XPath 式は、次のようにします。  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]` <br/> |
+|[IndividualAttendeeConflictData](individualattendeeconflictdata.md) <br/> |会議の提案時刻と同時に発生する時間枠のユーザーまたは連絡先の空き時間状態を格納します。  <br/> この要素の XPath 式を次に示します。  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]/AttendeeConflictDataArray/IndividualAttendeeConflictData` <br/> |
+|[CalendarEvent](calendarevent.md) <br/> |一意の予定表アイテムの出現を表します。  <br/> この要素の XPath 式を次に示します。  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]` <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、この要素の必要があります。 値は、文字列型です。 [BusyType](busytype.md)要素の値は、次のように。 
+この要素にはテキスト値が必要です。 値は文字列型です。 [BusyType](busytype.md)要素に使用できる値は次のとおりです。 
   
-- Free
+- 空き
     
-- Tentative
+- 仮の予定
     
-- Busy
+- 多忙
     
-- 不在時
+- OOF
     
 - NoData
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -83,5 +83,5 @@ MicrosoftExchange Server 2007 がインストールされているクライア�
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[ユーザーの状態を取得します。](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[ユーザーの空き時間情報の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

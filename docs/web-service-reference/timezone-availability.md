@@ -1,5 +1,5 @@
 ---
-title: タイムゾーン (可用性)
+title: TimeZone (Availability)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d662ffae-1f93-4c08-85a4-c69de2f7c681
-description: タイム ゾーン要素には、タイム ゾーン情報を識別する要素が含まれています。 この要素には、標準時と夏時間の切り替えに関する情報も含まれています。
-ms.openlocfilehash: dc2466e8039819edc82294ff05f1746ada64cb43
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: TimeZone 要素には、タイムゾーン情報を識別する要素が含まれています。 この要素には、標準時から夏時間への切り替えに関する情報も含まれています。
+ms.openlocfilehash: ba4b0a4805dba54450e01e89c5e9ef746404b716
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839717"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460275"
 ---
-# <a name="timezone-availability"></a>タイムゾーン (可用性)
+# <a name="timezone-availability"></a>TimeZone (Availability)
 
-**タイム ゾーン**要素には、タイム ゾーン情報を識別する要素が含まれています。 この要素には、標準時と夏時間の切り替えに関する情報も含まれています。 
+**TimeZone**要素には、タイムゾーン情報を識別する要素が含まれています。 この要素には、標準時から夏時間への切り替えに関する情報も含まれています。 
   
 ```xml
 <TimeZone>
@@ -32,7 +32,7 @@ ms.locfileid: "19839717"
 ```
 
  **SerializableTimeZone**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,29 +42,29 @@ ms.locfileid: "19839717"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[バイアス (UTC)](bias-utc.md) <br/> |世界協定時刻 (UTC) から一般のオフセットを表します。 この値は分単位です。  <br/> |
-|[StandardTime](standardtime.md) <br/> |[バイアス (UTC)](bias-utc.md)の要素で表される UTC 時間からのオフセットを表します。 この要素は、夏時間が発生した地域で夏時間から切り替えに関する情報を標準時も含みます。  <br/> |
-|[DaylightTime](daylighttime.md) <br/> |夏時間が発生した地域の[バイアス (UTC)](bias-utc.md)の要素で表される UTC 時間からのオフセットを表します。 この要素には、標準時間から夏時間への切り替えが発生した場合についての情報も含まれています。  <br/> |
+|[Bias (UTC)](bias-utc.md) <br/> |協定世界時 (UTC) からの一般的なオフセットを表します。 この値は分単位です。  <br/> |
+|[StandardTime](standardtime.md) <br/> |[Bias (utc)](bias-utc.md)要素で表される utc を基準とした時間からのオフセットを表します。 この要素には、夏時間が計測される地域で夏時間から標準時への切り替えに関する情報も含まれます。  <br/> |
+|[DaylightTime](daylighttime.md) <br/> |夏時間が計測される地域で、 [Bias (utc)](bias-utc.md)要素によって表される utc を基準とした時刻からのオフセットを表します。 この要素には、標準時から夏時間への切り替えが行われるタイミングに関する情報も含まれています。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetUserAvailabilityRequest](getuseravailabilityrequest.md) <br/> |ユーザーの利用可能時間情報を取得するための引数が含まれています。 これは、ルート要素です。  <br/> GetUserAvailabilityRequest メッセージの**タイム ゾーン**の要素は、要求内の DateTime 値が指定されているタイム ゾーンを表します。 可用性サービスによって返される DateTime 値は、このタイム ゾーンでもあります。  <br/> 以下は、この要素の XPath です。  <br/>  `/GetUserAvailabilityRequest` <br/> |
-|[WorkingHours](workinghours-ex15websvcsotherref.md) <br/> |要求されたメールボックスのユーザーの作業時間とタイム ゾーンの設定を表します。  <br/> GetUserAvailabilityResponse メッセージの**タイム ゾーン**の要素は、要求されたメールボックス ユーザーのタイム ゾーンの設定を表します。  <br/> 以下は、この要素の XPath です。  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours` <br/> |
+|[GetUserAvailabilityRequest](getuseravailabilityrequest.md) <br/> |ユーザーの空き時間情報を取得するために使用する引数が含まれています。 これはルート要素です。  <br/> GetUserAvailabilityRequest message の**TimeZone**要素は、要求の DateTime 値が指定されているタイムゾーンを表します。 Availability service によって返される DateTime 値もこのタイムゾーンに含まれています。  <br/> この要素の XPath を次に示します。  <br/>  `/GetUserAvailabilityRequest` <br/> |
+|[WorkingHours](workinghours-ex15websvcsotherref.md) <br/> |要求されたメールボックスユーザーのタイムゾーン設定および稼働時間を表します。  <br/> GetUserAvailabilityResponse message の**TimeZone**要素は、要求されたメールボックスユーザーのタイムゾーン設定を表します。  <br/> この要素の XPath を次に示します。  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours` <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-[GetUserAvailabilityRequest](getuseravailabilityrequest.md)要素では、この要素が必要です。 0 回以上すると、親要素は、 [WorkingHours](workinghours-ex15websvcsotherref.md)要素またはこの要素は最大で 1 回に発生します。 
+この要素は[GetUserAvailabilityRequest](getuseravailabilityrequest.md)要素で必要です。 この要素は、親要素が[WorkingHours](workinghours-ex15websvcsotherref.md)要素の数回または少なくとも0回発生します。 
   
 ## <a name="example"></a>例
 
-次の使用例は、クライアント アプリケーションで 8 時間の UTC からのオフセットを識別する XML 要求の一部を示しています。
+次の例は、クライアントアプリケーションで8時間の UTC からのオフセットを識別する XML 要求の一部を示しています。
   
 ```XML
-<TimeZone xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+<TimeZone xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
   <Bias>480</Bias>
   <StandardTime>
     <Bias>0</Bias>
@@ -83,14 +83,14 @@ ms.locfileid: "19839717"
 </TimeZone>
 ```
 
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -98,8 +98,8 @@ ms.locfileid: "19839717"
 
 [GetUserAvailability 操作](getuseravailability-operation.md)
   
-[Bias](bias.md)
+[バイアス](bias.md)
 
 
-[ユーザーの状態を取得します。](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[ユーザーの空き時間情報の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

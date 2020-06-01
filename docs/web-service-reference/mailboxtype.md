@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 696e5fdb-d8c5-40f0-9e79-885eae65dfa4
-description: MailboxType 要素は、電子メール アドレスで表されるメールボックスの種類を表します。
-ms.openlocfilehash: d7232377951e8d9c8f191ac856058bc28467cadd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: MailboxType 要素は、電子メールアドレスによって表されるメールボックスの種類を表します。
+ms.openlocfilehash: 8c322ab8a87730832f5d199698a369656b058a9a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832305"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459799"
 ---
 # <a name="mailboxtype"></a>MailboxType
 
-**MailboxType**要素は、電子メール アドレスで表されるメールボックスの種類を表します。 
+**MailboxType**要素は、電子メールアドレスによって表されるメールボックスの種類を表します。 
   
 ```XML
 <MailboxType>Mailbox | PublicDL | PrivateDL | Contact | PublicFolder | Unknown | OneOff | GroupMailbox</MailboxType>
@@ -29,7 +29,7 @@ ms.locfileid: "19832305"
 
 **MailboxTypeType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -45,38 +45,38 @@ ms.locfileid: "19832305"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[メールボックス](mailbox.md) <br/> |完全に解決された電子メール アドレスを識別します。  <br/> |
-|[RoomList](roomlist.md) <br/> |会議室の一覧を識別します。  <br/> |
+|[メールボックス](mailbox.md) <br/> |完全に解決された電子メールアドレスを識別します。  <br/> |
+|[RoomList](roomlist.md) <br/> |会議室のリストを識別します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-次の表は、 **MailboxType**要素の値を一覧します。 
+次の表に、 **MailboxType**要素に指定できる値を示します。 
   
 |**値**|**説明**|
 |:-----|:-----|
 |メールボックス  <br/> |メールが有効な Active Directory オブジェクトを表します。  <br/> |
-|PublicDL  <br/> |パブリックな配布リストを表します。  <br/> |
-|PrivateDL  <br/> |ユーザーのメールボックス内の個人用配布リストを表します。  <br/> |
-|連絡先  <br/> |ユーザーのメールボックス内の連絡先を表します。  <br/> |
-|パブリック フォルダー  <br/> |パブリック フォルダーを表します。  <br/> |
-|Unknown  <br/> |メールボックスの不明な型を表します。  <br/> |
-|OneOff  <br/> |個人用配布リストの 1 回限りのメンバーを表します。  <br/> |
-|GroupMailbox  <br/> |グループのメールボックスを表します。  <br/> |
+|PublicDL  <br/> |パブリック配布リストを表します。  <br/> |
+|PrivateDL  <br/> |ユーザーのメールボックス内のプライベート配布リストを表します。  <br/> |
+|Contact  <br/> |ユーザーのメールボックス内の連絡先を表します。  <br/> |
+|New-publicfolder  <br/> |パブリックフォルダーを表します。  <br/> |
+|不明  <br/> |不明な種類のメールボックスを表します。  <br/> |
+|OneOff  <br/> |個人用配布リストの1回限りのメンバーを表します。  <br/> |
+|GroupMailbox  <br/> |グループメールボックスを表します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

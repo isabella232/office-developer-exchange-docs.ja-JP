@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 2d8cefc4-b16a-45d0-9ad7-543f83a8eb15
-description: PhoneticLastName 要素には、連絡先の姓が含まれている発音のスペルします。
-ms.openlocfilehash: d17e6c10f6b84df0e3063201cccf9e1683f9ecb7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 電話名のふりがな要素には、連絡先の姓が入力されています。
+ms.openlocfilehash: b99262f54716af01ee4a07de91363058d05fbe88
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832784"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459673"
 ---
 # <a name="phoneticlastname"></a>PhoneticLastName
 
-**PhoneticLastName**要素には、連絡先の姓が含まれている発音のスペルします。 
+**電話**名のふりがな要素には、連絡先の姓が入力されています。 
   
 ```XML
 <PhoneticLastName/>
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,33 +40,33 @@ ms.locfileid: "19832784"
 
 |**要素名**|**説明**|
 |:-----|:-----|
-|[Contact](contact.md) <br/> |Exchange ストア内の連絡先を表します。  <br/> |
+|[連絡先](contact.md) <br/> |Exchange ストア内の連絡先を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、連絡先の姓を表す文字列を発音のスペルします。
+テキスト値は、連絡先の姓を表す文字列で、発音が正しくなります。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
 この要素は Exchange Server 2010 Service Pack 2 (SP2) で導入されました。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 
 
-[連絡先 (Exchange Web サービス) を作成します。](http://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
+[連絡先の作成 (Exchange Web サービス)](https://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
 

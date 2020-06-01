@@ -1,5 +1,5 @@
 ---
-title: UpdateItem 処理 (タスク)
+title: UpdateItem 操作 (タスク)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,35 +11,35 @@ api_name:
 api_type:
 - schema
 ms.assetid: b0a7f114-d040-40eb-a8f3-05ea6489e472
-description: UpdateItem 操作を使用して、Exchange ストア内の作業項目のプロパティを更新します。
-ms.openlocfilehash: d6f966fa663300b476383a136d30cf611d6bfb9b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: UpdateItem 操作は、Exchange ストア内のタスクアイテムのプロパティを更新するために使用されます。
+ms.openlocfilehash: 0041af114d11fd9577037dd154e40b84e8483c35
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839864"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459806"
 ---
-# <a name="updateitem-operation-task"></a>UpdateItem 処理 (タスク)
+# <a name="updateitem-operation-task"></a>UpdateItem 操作 (タスク)
 
-UpdateItem 操作を使用して、Exchange ストア内の作業項目のプロパティを更新します。
+UpdateItem 操作は、Exchange ストア内のタスクアイテムのプロパティを更新するために使用されます。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-仕事の依頼を送信するのに Exchange Web サービスを使用することはできません。 Exchange Web サービスでは、MicrosoftOfficeOutlook によって作成された仕事の依頼を返すことができます。 仕事の依頼は既に送信された場合、タスクの更新要求はエラーを返します。
+Exchange Web サービスを使用してタスクの要求を送信することはできません。 Exchange Web サービスは、Microsoft office outlook によって作成されたタスク要求を返すことができます。 タスクの依頼が既に送信されている場合、タスクを更新する要求はエラーを返します。
   
-## <a name="updating-the-current-occurrence-of-a-recurring-task"></a>定期的な仕事の現在の回を更新
+## <a name="updating-the-current-occurrence-of-a-recurring-task"></a>定期的なタスクの現在の発生を更新する
 
-定期的なタスクに対して UpdateItem 操作の結果は、1 つの非定期的なタスクで UpdateItem 演算の結果によって異なります。 定期的な仕事の発生への変更には、次の更新が行われたときに生成される一時的な仕事が発生します。
+定期的なタスクに対する UpdateItem 操作の結果は、単一の非定期的なタスクに対する UpdateItem 操作の結果とは異なります。 定期的なタスクの発生に変更を加えると、次の更新が行われたときに1回限りのタスクが生成されます。
   
-1. 再生成するか、nonregenerating の定期的なタスクの status プロパティは、**完了**に設定されます。
+1. [再生成] または [再生成なし] のタスクの [状態] プロパティは、[**完了**] に設定されています。
     
-2. 開始日または nonregenerating の定期的なタスクの終了日が変更されます。
+2. 再生成以外のタスクの開始日または終了日が変更されています。
     
-たとえば、 **UpdateItem**要求は、定期的なタスクの完了] の値を**true**にしている場合は、 **UpdateItemResponse**は、新しい Id と変更キーを新しく作成された 1 回限りのタスクを表す含まれます。 要求に含まれていた Id がまだ有効であると、次の出現箇所を表示するのにはその Id で表される定期的なタスクが更新されました。 定期タスクが更新されたために、要求に含まれていた変更キーは有効ではありません。 
+たとえば、 **Updateitem**要求で定期的なタスクの完了値を**true**に設定すると、 **updateitemresponse**には、新しく作成された1回限りのタスクを表す新しい Id と changekey が含まれます。 要求に含まれていた Id は依然として有効であり、その Id で表される定期タスクは、次の出現を表すように更新されています。 要求に含まれていた ChangeKey は、定期タスクが更新されているため無効になりました。 
   
-[GetItem 操作](getitem-operation.md)を使用すると、定期タスクの最新の**変更キー**を取得します。 
+[GetItem 操作](getitem-operation.md)を使用して、定期的なタスクの最新の**changekey**を取得できます。 
   
-非定期的なタスクまたは定期タスクの最後に出現 UpdateItem 応答は、渡されたものとそれに関連付けられた**変更キー**の更新を取得する同じ**Id**を返します。
+非定期的なタスクまたは定期的なタスクの最後の発生の場合、UpdateItem 応答は渡されたものと同じ**Id**を返し、関連付けられた更新された**changekey**を返します。
   
 ## <a name="see-also"></a>関連項目
 

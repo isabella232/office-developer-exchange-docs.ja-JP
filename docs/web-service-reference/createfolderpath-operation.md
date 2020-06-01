@@ -7,50 +7,50 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5a10aa5e-3f25-4ec3-a0b9-284c30918a1f
-description: 操作 CreateFolderPath EWS についての情報を検索します。
-ms.openlocfilehash: 22561e5086c144e25d7e04b68ec6674b87c4718d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: CreateFolderPath EWS 操作に関する情報を検索します。
+ms.openlocfilehash: a8d42cbef854d900c5fb6b72c730dd1e2b903aec
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759819"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458902"
 ---
 # <a name="createfolderpath-operation"></a>CreateFolderPath 操作
 
-**CreateFolderPath** EWS の操作に関する情報を検索します。 
+**Createfolderpath** EWS 操作に関する情報を検索します。 
   
-**CreateFolderPath**操作は、フォルダー階層を作成します。 
+**Createfolderpath**操作は、フォルダー階層を作成します。 
   
 この操作は Exchange Server 2013 で導入されました。
   
-## <a name="using-the-createfolderpath-operation"></a>CreateFolderPath 操作を使用します。
+## <a name="using-the-createfolderpath-operation"></a>CreateFolderPath 操作の使用
 
-**CreateFolderPath**操作の要求は、フォルダーおよび親フォルダーの識別子の配列を受け取るし、配列内のフォルダーの順序に基づいて、フォルダー階層を作成します。 
+**Createfolderpath**操作要求は、フォルダーと親フォルダー識別子の配列を取得し、その配列内のフォルダーの順序に基づいてフォルダー階層を作成します。 
   
-### <a name="createfolderpath-operation-soap-headers"></a>CreateFolderPath 操作の SOAP ヘッダー
+### <a name="createfolderpath-operation-soap-headers"></a>CreateFolderPath operation SOAP ヘッダー
 
-**CreateFolderPath**操作は、次の表に記載されている SOAP ヘッダーを使用できます。 
+**Createfolderpath**操作では、次の表に記載されている SOAP ヘッダーを使用できます。 
   
 |**ヘッダー名**|**要素**|**説明**|
 |:-----|:-----|:-----|
-|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装するユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |RFC 3066、」タグの「識別の言語」を使用してメールボックスへのアクセスに定義されているカルチャを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマのバージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答するサーバーのバージョンを識別します。 このヘッダーは、応答に適用されます。  <br/> |
-|**TimeZoneContext** <br/> |[TimeZoneContext](timezonecontext.md) <br/> |**日付**プロパティのタイム ゾーンの範囲を識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |RFC 3066 で定義されているように、メールボックスへのアクセスに使用されるカルチャ (言語の識別用のタグ) を識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは応答に適用されます。  <br/> |
+|**TimeZoneContext** <br/> |[TimeZoneContext](timezonecontext.md) <br/> |**DateTime**プロパティのタイムゾーンスコープを指定します。 このヘッダーは、要求に適用されます。  <br/> |
    
-## <a name="createfolderpath-operation-request-example-create-a-folder-hierarchy"></a>CreateFolderPath 操作の要求の例: フォルダーの階層を作成します。
+## <a name="createfolderpath-operation-request-example-create-a-folder-hierarchy"></a>CreateFolderPath 操作要求の例: フォルダー階層を作成します。
 
-**CreateFolderPath**操作要求の次の使用例は、3 つのフォルダーは、フォルダー階層を作成する方法を示しています。 既定の受信トレイ フォルダーの深さです。 
+次の**Createfolderpath** operation 要求の例は、既定の受信トレイフォルダーに3つのフォルダー階層を作成する方法を示しています。 
   
 > [!NOTE]
-> すべての項目の識別子と変更キーをこの資料では、読みやすさを保持するために短縮されています。 
+> この記事のすべてのアイテム識別子と変更キーは、読みやすくするために短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
       <t:MailboxCulture>en-US</t:MailboxCulture>
@@ -80,7 +80,7 @@ ms.locfileid: "19759819"
 
 ```
 
-要求 SOAP 本体にはには、次の要素が含まれています。
+要求 SOAP 本文には、次の要素が含まれています。
   
 - [CreateFolderPath](createfolderpath.md)
     
@@ -92,11 +92,11 @@ ms.locfileid: "19759819"
     
 - [Folder](folder.md)
     
-- [表示名 (文字列)](displayname-string.md)
+- [DisplayName (文字列)](displayname-string.md)
     
-## <a name="successful-createfolderpath-operation-response"></a>CreateFolderPath 操作の成功の応答
+## <a name="successful-createfolderpath-operation-response"></a>正常な CreateFolderPath 操作応答
 
-次の使用例は、正常な 3 つの階層のフォルダーにフォルダーを作成する**CreateFolderPath**操作の要求に応答を示しています。 既定の受信トレイ フォルダーの深さです。 
+次の例は、既定の受信トレイフォルダーに3つのフォルダー階層を作成するための**Createfolderpath**操作要求に対する正常な応答を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -107,14 +107,14 @@ ms.locfileid: "19759819"
                            MajorBuildNumber="526" 
                            MinorBuildNumber="0" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <m:CreateFolderPathResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:CreateFolderPathResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
          <m:ResponseMessages>
             <m:CreateFolderPathResponseMessage ResponseClass="Success">
                <m:ResponseCode>NoError</m:ResponseCode>
@@ -173,9 +173,9 @@ ms.locfileid: "19759819"
     
 - [Folder](folder.md)
     
-- [フォルダー Id](folderid.md)
+- [FolderId](folderid.md)
     
-- [表示名 (文字列)](displayname-string.md)
+- [DisplayName (文字列)](displayname-string.md)
     
 - [TotalCount](totalcount.md)
     
@@ -183,9 +183,9 @@ ms.locfileid: "19759819"
     
 - [UnreadCount](unreadcount.md)
     
-## <a name="createfolderpath-operation-error-response"></a>CreateFolderPath 操作のエラー応答
+## <a name="createfolderpath-operation-error-response"></a>CreateFolderPath 操作エラー応答
 
-**CreateFolderPath**操作の要求に対してエラー応答の例を次に示します。 これは、最初のうちに設定された表示名のプロパティの種類がない 2 つのフォルダーを作成する要求に応答します。 せず、表示名のプロパティでは、階層内の最初のフォルダーを作成することはできませんし、階層内の親フォルダーが作成されなかったために、2 番目のフォルダーを作成できません。 
+次の例は、 **Createfolderpath**操作要求へのエラー応答を示しています。 これは、2つのフォルダーを作成する要求に対する応答です。最初には、表示名のプロパティが設定されていません。 階層内の最初のフォルダーは、[表示名] プロパティを使用せずに作成することはできません。また、階層内の親フォルダーが作成されていないため、2番目のフォルダーを作成することはできません。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -195,15 +195,15 @@ ms.locfileid: "19759819"
                            MajorBuildNumber="556" 
                            MinorBuildNumber="14" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <m:CreateFolderPathResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:CreateFolderPathResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
          <m:ResponseMessages>
             <m:CreateFolderPathResponseMessage ResponseClass="Error">
                <m:MessageText>The folder save operation failed due to invalid property values.</m:MessageText>
@@ -227,7 +227,7 @@ ms.locfileid: "19759819"
 
 ```
 
-エラー応答 SOAP 本体にはには、次の要素が含まれています。
+エラー応答 SOAP 本文には、次の要素が含まれています。
   
 - [CreateFolderPathResponse](createfolderpathresponse.md)
     
@@ -247,11 +247,11 @@ ms.locfileid: "19759819"
     
 - [フォルダー](folders-ex15websvcsotherref.md)
     
-EWS を汎用的なこの操作に固有のエラー コードは、 [ResponseCode](responsecode.md)を参照してください。
+EWS で汎用的でこの操作に固有の追加のエラーコードについては、「応答」[を参照してください。](responsecode.md)
   
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の操作](ews-operations-in-exchange.md)
+- [Exchange での EWS 操作](ews-operations-in-exchange.md)
     
 - 
   [FindFolder 操作](findfolder-operation.md)

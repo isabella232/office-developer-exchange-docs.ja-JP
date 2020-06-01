@@ -1,5 +1,5 @@
 ---
-title: 無視します。
+title: 無視
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7789eec5-ceec-43f2-84d5-d0d15b734076
-description: 無視する要素では、同期中にスキップする項目を識別します。
-ms.openlocfilehash: 0ecff9bfeb1257552b7e52c0115e9e814edecd4b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Ignore 要素は、同期中にスキップするアイテムを識別します。
+ms.openlocfilehash: b65d11d8c7655279dac0e7d3cbd13f8a9317540c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831858"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458573"
 ---
-# <a name="ignore"></a>無視します。
+# <a name="ignore"></a>無視
 
-**無視する**要素では、同期中にスキップする項目を識別します。 
+**Ignore**要素は、同期中にスキップするアイテムを識別します。 
   
 [SyncFolderItems](syncfolderitems.md)
   
-[Ignore](ignore.md)
+[無視](ignore.md)
   
 ```xml
 <Ignore>
@@ -34,7 +34,7 @@ ms.locfileid: "19831858"
 ```
 
  **ArrayOfBaseItemIdsType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,35 +44,35 @@ ms.locfileid: "19831858"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[ItemId](itemid.md) <br/> |Exchange ストア内のアイテムの一意の識別子と変更キーが含まれています。  <br/> |
+|[ItemId](itemid.md) <br/> |Exchange ストア内のアイテムの一意識別子および変更キーが含まれています。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[SyncFolderItems](syncfolderitems.md) <br/> |Exchange ストア フォルダー内のアイテムを同期するための要求を定義します。  <br/> |
+|[SyncFolderItems](syncfolderitems.md) <br/> |Exchange ストアフォルダー内のアイテムを同期する要求を定義します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[SyncFolderItems の操作](syncfolderitems-operation.md)
+[SyncFolderItems 操作](syncfolderitems-operation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

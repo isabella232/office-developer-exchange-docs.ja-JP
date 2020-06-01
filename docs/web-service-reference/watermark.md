@@ -1,5 +1,5 @@
 ---
-title: ウォーターマーク
+title: Watermark
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: e1545046-94f9-4ac7-af1c-ea81dfb6822c
-description: 透かしの要素は、メールボックス イベント キュー内のイベント ブックマークを表します。
-ms.openlocfilehash: 1867aa781bc24f5eb3bdb4648fa494a2a7ea396a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ウォーターマーク要素は、メールボックスイベントキュー内のイベントブックマークを表します。
+ms.openlocfilehash: a717196101fea698b0b8c66f92a3d420fda9a421
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839999"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459764"
 ---
-# <a name="watermark"></a>ウォーターマーク
+# <a name="watermark"></a>Watermark
 
-**透かし**の要素は、メールボックス イベント キュー内のイベント ブックマークを表します。 
+**ウォーターマーク**要素は、メールボックスイベントキュー内のイベントブックマークを表します。 
   
 ```xml
 <Watermark/>
 ```
 
  **WatermarkType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,36 +44,36 @@ ms.locfileid: "19839999"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[PullSubscriptionRequest](pullsubscriptionrequest.md) <br/> |プル ベースのイベント通知サブスクリプションをサブスクリプションを表します。  <br/> |
-|[PushSubscriptionRequest](pushsubscriptionrequest.md) <br/> |プッシュ ベースのイベント通知サブスクリプションをサブスクリプションを表します。  <br/> |
-|[GetEvents](getevents.md) <br/> |プル クライアントがサーバーからの通知を要求に使用する操作を表します。  <br/> |
+|[PullSubscriptionRequest](pullsubscriptionrequest.md) <br/> |プルベースのイベント通知サブスクリプションに対するサブスクリプションを表します。  <br/> |
+|[PushSubscriptionRequest](pushsubscriptionrequest.md) <br/> |プッシュベースのイベント通知サブスクリプションのサブスクリプションを表します。  <br/> |
+|[GetEvents](getevents.md) <br/> |プルクライアントがサーバーからの通知を要求するために使用する操作を表します。  <br/> |
 |[CopiedEvent](copiedevent.md) <br/> |アイテムまたはフォルダーがコピーされるイベントを表します。  <br/> |
-|[CreatedEvent](createdevent.md) <br/> |アイテムまたはフォルダーが作成されるイベントを表します。  <br/> |
-|[DeletedEvent](deletedevent.md) <br/> |アイテムまたはフォルダーが削除されたイベントを表します。  <br/> |
-|[ModifiedEvent](modifiedevent.md) <br/> |アイテムまたはフォルダーが変更されたイベントを表します。  <br/> |
-|[MovedEvent](movedevent.md) <br/> |アイテムまたはフォルダーの移動先フォルダーの 1 つの親から別の親フォルダー イベントを表します。  <br/> |
-|[NewMailEvent](newmailevent.md) <br/> |メールボックス内の新しいメール アイテムによって発生したイベントを表します。  <br/> |
-|[StatusEvent](statusevent.md) <br/> |通知メールボックスに新しいアクティビティが発生していないことを表します。  <br/> |
-|[SubscribeResponseMessage](subscriberesponsemessage.md) <br/> |Subscribe 要求の結果ステータスを格納します。  <br/> |
+|[対する createdevent](createdevent.md) <br/> |アイテムまたはフォルダーが作成されるイベントを表します。  <br/> |
+|[DeletedEvent](deletedevent.md) <br/> |アイテムまたはフォルダーが削除されるイベントを表します。  <br/> |
+|[対する modifiedevent](modifiedevent.md) <br/> |アイテムまたはフォルダーが変更されるイベントを表します。  <br/> |
+|[MovedEvent](movedevent.md) <br/> |ある親フォルダーから別の親フォルダーにアイテムまたはフォルダーを移動するイベントを表します。  <br/> |
+|[NewMailEvent](newmailevent.md) <br/> |メールボックス内の新しいメールアイテムによってトリガーされるイベントを表します。  <br/> |
+|[StatusEvent](statusevent.md) <br/> |メールボックス内で新しいアクティビティが発生していないことを示す通知を表します。  <br/> |
+|[メッセージの表示](subscriberesponsemessage.md) <br/> |サブスクライブ要求の状態と結果を格納します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値には、必須またはオプションによっては、この要素を使用する方法があります。
+この要素の使用方法によっては、テキスト値が必須または省略可能である場合があります。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-Subscribe 要求にウォーターマークが含まれている場合、サブスクリプションはウォーターマークから先作成されます。 Subscribe 要求にウォーターマークがメールボックス イベント テーブル内に見つからないことが含まれている場合、`ErrorInvalidWatermark`エラーがクライアント アプリケーションに返されます。 ウォーターマークが古すぎるので、30 日間のウィンドウ イベント テーブルから削除された場合に発生することも透かしがかつてない場合は、イベント テーブルに表示します。 これは、たとえば、ウォーターマークが別のデータベース内のメールボックスの別のサブスクリプションから取得した場合に発生します。 
+Subscribe 要求にウォーターマークが含まれている場合、サブスクリプションはウォーターマークの前から作成されます。 Subscribe 要求に、メールボックスの events テーブルにないウォーターマークが含まれる場合、 `ErrorInvalidWatermark` クライアントアプリケーションにエラーが返されます。 これは、ウォーターマークが古すぎ、[イベント] テーブルの30日間のウィンドウから削除されている場合、またはウォーターマークが events テーブルに存在しない場合に発生することがあります。 これは、たとえば、別のデータベースにあるメールボックスの別のサブスクリプションからウォーターマークが取得された場合などに発生します。 
   
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

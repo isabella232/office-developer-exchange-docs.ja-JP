@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: aac6dc31-edd2-49d7-b845-1df4d77da58c
-description: UserSetting (SOAP) の要素は、1 つのユーザー設定を表します。
-ms.openlocfilehash: cc58dc3705aa83374f68cd42eb4a51562a7707e6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: UserSetting (SOAP) 要素は、1つのユーザー設定を表します。
+ms.openlocfilehash: 8b9bb41e460c0c9d15c9823acb509b0f837eef32
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839953"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459771"
 ---
 # <a name="usersetting-soap"></a>UserSetting (SOAP)
 
-[UserSetting (SOAP)](usersetting-soap.md)の要素は、1 つのユーザー設定を表します。 
+[Usersetting (SOAP)](usersetting-soap.md)要素は、1つのユーザー設定を表します。 
   
 ```XML
 <UserSetting>
@@ -27,7 +27,7 @@ ms.locfileid: "19839953"
 ```
 
  **UserSetting**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -37,27 +37,27 @@ ms.locfileid: "19839953"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[名 (SOAP)](name-soap.md) <br/> |ユーザー設定の名前を表します。  <br/> |
+|[Name (SOAP)](name-soap.md) <br/> |ユーザー設定の名前を表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ユーザー (SOAP)](usersettings-soap.md) <br/> |ユーザー設定のコレクションを表します。  <br/> |
+|[UserSettings (SOAP)](usersettings-soap.md) <br/> |ユーザー設定のコレクションを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|スキーマ名  <br/> |スキーマの自動検出  <br/> |
-|検証ファイル  <br/> |messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|スキーマ名  <br/> |自動検出スキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |はい  <br/> |
    
 

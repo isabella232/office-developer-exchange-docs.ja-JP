@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: bf5278eb-3a1a-4d27-9d16-b8be043bb023
-description: EffectiveRights 要素には、アイテムまたはフォルダーのアクセス許可の設定に基づいて、クライアントの権限が含まれています。 この要素は、読み取り専用です。
-ms.openlocfilehash: 610d9e214a8de648ece667799bb5e67dfcc358f7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: EffectiveRights 要素には、アイテムまたはフォルダーのアクセス許可の設定に基づいてクライアントの権限が含まれています。 この要素は値の取得のみ可能です。
+ms.openlocfilehash: 3055eb73056750508b48ead29136b56e7ce97ee9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760204"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459245"
 ---
 # <a name="effectiverights"></a>EffectiveRights
 
-**EffectiveRights**要素には、アイテムまたはフォルダーのアクセス許可の設定に基づいて、クライアントの権限が含まれています。 この要素は、読み取り専用です。 
+**EffectiveRights**要素には、アイテムまたはフォルダーのアクセス許可の設定に基づいてクライアントの権限が含まれています。 この要素は値の取得のみ可能です。 
   
 ```XML
 <EffectiveRights>
@@ -36,7 +36,7 @@ ms.locfileid: "19760204"
 ```
 
  **EffectiveRightsType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -46,60 +46,60 @@ ms.locfileid: "19760204"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[CreateAssociated](createassociated.md) <br/> |クライアントが、関連付けられている内容のテーブルを作成できるかどうかを示します。 Folder オブジェクトに対してこのプロパティは使用のみ。  <br/> |
-|[CreateContents](createcontents.md) <br/> |クライアントに内容テーブルを作成できるかどうかを示します。 Folder オブジェクトに対してこのプロパティは使用のみ。  <br/> |
-|[CreateHierarchy](createhierarchy.md) <br/> |クライアントが階層テーブルを作成できるかどうかを示します。 Folder オブジェクトに対してこのプロパティは使用のみ。  <br/> |
+|[CreateAssociated](createassociated.md) <br/> |クライアントが関連するコンテンツテーブルを作成できるかどうかを示します。 このプロパティは、folder オブジェクトに対してのみ使用されます。  <br/> |
+|[CreateContents](createcontents.md) <br/> |クライアントがコンテンツテーブルを作成できるかどうかを示します。 このプロパティは、folder オブジェクトに対してのみ使用されます。  <br/> |
+|[CreateHierarchy](createhierarchy.md) <br/> |クライアントが階層テーブルを作成できるかどうかを示します。 このプロパティは、folder オブジェクトに対してのみ使用されます。  <br/> |
 |[Delete](delete.md) <br/> |クライアントがフォルダーまたはアイテムを削除できるかどうかを示します。  <br/> |
-|[変更](modify.md) <br/> |クライアントがフォルダーまたはアイテムを変更できるかどうかを示します。  <br/> |
-|[Read](read.md) <br/> |クライアントがフォルダーまたはアイテムを読み取ることができるかどうかを示します。  <br/> |
-|[ViewPrivateItems](viewprivateitems.md) <br/> |プライベートなアイテムを表示できるかどうかを示します。  <br/> |
+|[Modify](modify.md) <br/> |クライアントがフォルダーまたはアイテムを変更できるかどうかを示します。  <br/> |
+|[読み取り](read.md) <br/> |クライアントがフォルダーまたはアイテムを読み取ることができるかどうかを示します。  <br/> |
+|[ViewPrivateItems](viewprivateitems.md) <br/> |プライベートアイテムを表示できるかどうかを示します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
 |[Folder](folder.md) <br/> |メールボックス内のフォルダーを表します。  <br/> |
-|[TasksFolder](tasksfolder.md) <br/> |メールボックス内のタスク フォルダーを表します。  <br/> |
-|[メッセージ](contactsfolder.md) <br/> |メールボックスの連絡先フォルダーを表します。  <br/> |
-|[CalendarFolder](calendarfolder.md) <br/> |メールボックスの予定表フォルダーを表します。  <br/> |
+|[TasksFolder](tasksfolder.md) <br/> |メールボックス内のタスクフォルダーを表します。  <br/> |
+|[ContactsFolder](contactsfolder.md) <br/> |メールボックス内の連絡先フォルダーを表します。  <br/> |
+|[CalendarFolder](calendarfolder.md) <br/> |メールボックス内の予定表フォルダーを表します。  <br/> |
 |[SearchFolder](searchfolder.md) <br/> |メールボックス内の検索フォルダーを表します。  <br/> |
-|[カレンダー項目](calendaritem.md) <br/> |Exchange 予定表アイテムを表します。  <br/> |
-|[Contact](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
+|[連絡先](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
 |[DistributionList](distributionlist.md) <br/> |配布リストを表します。  <br/> |
-|[アイテム](item.md) <br/> |一般的な Exchange アイテムを表します。  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |Exchange ストア内の会議の取り消し通知を表します。  <br/> |
+|[アイテム](item.md) <br/> |汎用の Exchange アイテムを表します。  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |Exchange ストア内の会議の取り消しを表します。  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Exchange ストア内の会議を表します。  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議出席依頼を表します。  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |Exchange ストア内の会議の返信を表します。  <br/> |
-|[Message](message-ex15websvcsotherref.md) <br/> |Exchange 電子メール メッセージを表します。  <br/> |
-|[タスク](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |Exchange ストア内の会議の応答を表します。  <br/> |
+|[Message](message-ex15websvcsotherref.md) <br/> |Exchange 電子メールメッセージを表します。  <br/> |
+|[Task](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
 |[PostItem](postitem.md) <br/> |Exchange ストア内の投稿アイテムを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**EffectiveRights**は、GetFolder、GetItem、FindFolder、FindItem、SyncFolderHierarchy、および SyncFolderItems の応答でサポートされています。 **EffectiveRights**プロパティは、フォルダーおよびアイテムの [ **AllProperties** ] 図形内に公開されます。 
+**EffectiveRights**は、Getfolder、GetItem、Findfolder、FindItem、SyncFolderHierarchy、および Syncfolderhierarchy 応答でサポートされています。 **EffectiveRights**プロパティは、フォルダーとアイテムの**allproperties**図形に公開されます。 
   
-この**EffectiveRights**プロパティは、 **MAPI の PR_ACCESS**プロパティで提供されている同じ情報へのアクセスを提供します。 
+この**EffectiveRights**プロパティは、 **PR_ACCESS MAPI**プロパティで提供されるものと同じ情報へのアクセスを提供します。 
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
-- [フォルダー レベルのアクセス許可の設定](http://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [フォルダーレベルのアクセス許可を設定する](https://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
 

@@ -11,21 +11,21 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3d075e93-14bc-479d-957f-9b7873d1db39
-description: GlobalHasAttachments 要素には、メールボックス内の少なくとも 1 つのテーマのアイテムに添付ファイルがあるかどうかを示す値が含まれています。
-ms.openlocfilehash: 85443c45f611a2f4bff392ffecb26029564d7558
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GlobalHasAttachments 要素には、メールボックス内の少なくとも1つの会話アイテムに添付ファイルがあるかどうかを示す値が含まれています。
+ms.openlocfilehash: e314e8e5c06ca7d7820b910c05b381765e88911f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831715"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459477"
 ---
 # <a name="globalhasattachments"></a>GlobalHasAttachments
 
-**GlobalHasAttachments**要素には、メールボックス内の少なくとも 1 つのテーマのアイテムに添付ファイルがあるかどうかを示す値が含まれています。 
+**Globalhasattachments**要素には、メールボックス内の少なくとも1つの会話アイテムに添付ファイルがあるかどうかを示す値が含まれています。 
   
 [FindConversationResponse](findconversationresponse.md)
   
-[スレッド](conversations-ex15websvcsotherref.md)
+[会話](conversations-ex15websvcsotherref.md)
   
 [会話 (ConversationType)](conversation-conversationtype.md)
   
@@ -35,8 +35,8 @@ ms.locfileid: "19831715"
 <GlobalHasAttachments/>
 ```
 
- **ブール型 (Boolean)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -52,34 +52,33 @@ ms.locfileid: "19831715"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[会話 (ConversationType)](conversation-conversationtype.md) <br/> |1 つのテーマを表します。  <br/> |
+|[会話 (ConversationType)](conversation-conversationtype.md) <br/> |単一の会話を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**GlobalHasAttachments**要素の値は、メールボックス内の少なくとも 1 つのテーマのアイテムに添付ファイルがあるかどうかを示します。 ブール値を表す文字列値は、必要があります。 **True**の場合は、会話が表示されている 1 つ以上の添付ファイルを持っているを意味します。 **False**の値は、その会話が添付ファイルがないか添付ファイルを非表示にのみを意味します。 
+**Globalhasattachments**要素の値は、メールボックス内の少なくとも1つの会話アイテムに添付ファイルがあるかどうかを示します。 ブール値を表すテキスト値が必要です。 値が**true**の場合は、スレッドに少なくとも1つの添付ファイルがあることを意味します。 値が**false**の場合、会話に添付ファイルがないか、または添付ファイルのみが含まれていることを意味します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web Services.This の要素がホストをで Exchange Server 2010 Service Pack 1 (SP1) を導入する IIS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-
-  [FindConversation 操作](findconversation-operation.md)
+[FindConversation 操作](findconversation-operation.md)
   
 [ApplyConversationAction 操作](applyconversationaction-operation.md)
 
 
-[EWS での会話](http://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
+[EWS での会話](https://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
 

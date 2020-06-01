@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7906711b-80a1-42ae-8b33-26eeac036a5a
-description: GetUserAvailabilityRequest 要素には、ユーザーの利用可能時間情報を取得するための引数が含まれています。 これは、ルート要素です。
-ms.openlocfilehash: 5440f739b09bfbe27ad97cba99c08756686594f7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetUserAvailabilityRequest 要素には、ユーザーの空き時間情報を取得するために使用される引数が含まれています。 これはルート要素です。
+ms.openlocfilehash: 6c2e2c5452b6379171e49cf6aea2d437152ecb9b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831683"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459119"
 ---
 # <a name="getuseravailabilityrequest"></a>GetUserAvailabilityRequest
 
-**GetUserAvailabilityRequest**要素には、ユーザーの利用可能時間情報を取得するための引数が含まれています。 これは、ルート要素です。 
+**GetUserAvailabilityRequest**要素には、ユーザーの空き時間情報を取得するために使用される引数が含まれています。 これはルート要素です。 
   
 ```xml
 <GetUserAvailabilityRequest>
@@ -33,7 +33,7 @@ ms.locfileid: "19831683"
 ```
 
  **GetUserAvailabilityRequestType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -43,32 +43,32 @@ ms.locfileid: "19831683"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[タイムゾーン (可用性)](timezone-availability.md) <br/> |タイム ゾーン情報を識別する要素が含まれています。 この要素には、標準時と夏時間の切り替えに関する情報も含まれています。  <br/> |
-|[MailboxDataArray](mailboxdataarray.md) <br/> |利用可能時間情報のクエリを実行するメールボックスの一覧が含まれています。  <br/> |
-|[FreeBusyViewOptions](freebusyviewoptions.md) <br/> |応答で返される空き時間情報の情報の種類を指定します。  <br/> |
-|[SuggestionsViewOptions](suggestionsviewoptions.md) <br/> |取得するためのオプションが含まれています会議の情報を提案します。  <br/> |
+|[TimeZone (Availability)](timezone-availability.md) <br/> |タイムゾーン情報を識別する要素を格納します。 この要素には、標準時から夏時間への切り替えに関する情報も含まれています。  <br/> |
+|[MailboxDataArray](mailboxdataarray.md) <br/> |可用性情報を照会するメールボックスの一覧が含まれています。  <br/> |
+|[FreeBusyViewOptions](freebusyviewoptions.md) <br/> |応答で返される空き時間情報の種類を指定します。  <br/> |
+|[SuggestionsViewOptions](suggestionsviewoptions.md) <br/> |会議提案情報を取得するためのオプションが含まれています。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの/EWS/ディレクトリにあります。
+この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの/EWS/ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
   
 ## <a name="example"></a>例
 
-次の例では、空き時間情報の要求を示します。
+次の例は、空き時間情報の要求を示しています。
   
 ```
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <GetUserAvailabilityRequest xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-      <TimeZone xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+    <GetUserAvailabilityRequest xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+      <TimeZone xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <Bias>480</Bias>
         <StandardTime>
           <Bias>0</Bias>
@@ -86,7 +86,7 @@ ms.locfileid: "19831683"
         </DaylightTime>
       </TimeZone>
       <MailboxDataArray>
-        <MailboxData xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <MailboxData xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <Email>
             <Name></Name>
             <Address>someone@exchangeserver.example.com</Address>
@@ -97,7 +97,7 @@ ms.locfileid: "19831683"
           <ExcludeNonWorkingHours>false</ExcludeNonWorkingHours>
         </MailboxData>
       </MailboxDataArray>
-      <FreeBusyViewOptions xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+      <FreeBusyViewOptions xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <TimeWindow>
           <StartTime>2006-02-06T00:00:00</StartTime>
           <EndTime>2006-02-30T23:59:59</EndTime>
@@ -110,14 +110,14 @@ ms.locfileid: "19831683"
 </soap:Envelope>
 ```
 
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -128,5 +128,5 @@ ms.locfileid: "19831683"
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[ユーザーの状態を取得します。](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[ユーザーの空き時間情報の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

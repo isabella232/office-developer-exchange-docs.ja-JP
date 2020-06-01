@@ -1,5 +1,5 @@
 ---
-title: DeletedOccurrenceStateDefinition
+title: Deletedocの Enceencestatedefinition
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a9c01c64-e76c-4adc-8b04-88af97bd0cc8
-description: DeletedOccurrenceStateDefinition では、予定表アイテムの削除済みアイテムの状態を指定します。
-ms.openlocfilehash: ad0434d604ee78ebf1905b60857929e1af4d45f6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Deletedoc状態 Encestatedefinition は、予定表アイテムの削除されたアイテムの状態を指定します。
+ms.openlocfilehash: ff8ad1d9c35d7bab3f6fe2cd1896bb16384c18e6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759970"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458797"
 ---
-# <a name="deletedoccurrencestatedefinition"></a>DeletedOccurrenceStateDefinition
+# <a name="deletedoccurrencestatedefinition"></a>Deletedocの Enceencestatedefinition
 
-**DeletedOccurrenceStateDefinition**は、予定表アイテムの削除済みアイテムの状態を指定します。 
+**Deletedoc状態 Encestatedefinition**は、予定表アイテムの削除されたアイテムの状態を指定します。 
   
 ```XML
 <DeletedOccurrenceStateDefinition>
@@ -26,8 +26,8 @@ ms.locfileid: "19759970"
 </DeletedOccurrenceStateDefinition>
 ```
 
- **DeletedOccurrenceStateDefinitionType**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Deletedocの Enceencestatedefinitiontype**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -37,33 +37,33 @@ ms.locfileid: "19759970"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[発生 (タイム ゾーンの切り替え)](occurrence-time-zone-transition.md) <br/> |予定表アイテムが発生した日付を指定します。  <br/> |
-|[IsOccurrencePresent](isoccurrencepresent.md) <br/> |予定表アイテムの出現箇所が存在するかどうかを示すブール値を指定します。  <br/> |
+|[発生 (タイムゾーンの切り替え)](occurrence-time-zone-transition.md) <br/> |予定表アイテムが発生する日付を指定します。  <br/> |
+|[Iソケットの現在の表示](isoccurrencepresent.md) <br/> |予定表アイテムの発生が存在するかどうかを示すブール値を指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[StateDefinition](statedefinition.md) <br/> |状態の定義を指定します。  <br/> |
+|[StateDefinition](statedefinition.md) <br/> |状態定義を指定します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |型のスキーマ  <br/> |
-|検証ファイル  <br/> |types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

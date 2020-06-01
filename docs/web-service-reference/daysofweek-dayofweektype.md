@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: ba8f990d-d37d-403d-b31f-55e5208c8ad5
-description: DaysOfWeek 要素では、項目の定期的なパターンで使用されている週の日について説明します。
-ms.openlocfilehash: a7afb0aeb650284739d559164f06590fc5266c57
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DaysOfWeek 要素は、アイテムの定期的なパターンで使用される曜日を表します。
+ms.openlocfilehash: 44552350679df1fec3d237d9b09f1a5feb9cc4b6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759946"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458825"
 ---
 # <a name="daysofweek-dayofweektype"></a>DaysOfWeek (DayOfWeekType)
 
-**DaysOfWeek**要素では、項目の定期的なパターンで使用されている週の日について説明します。 
+**DaysOfWeek**要素は、アイテムの定期的なパターンで使用される曜日を表します。 
   
 ```xml
 <DaysOfWeek/>
@@ -29,7 +29,7 @@ ms.locfileid: "19759946"
 
 **DayOfWeekType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -45,8 +45,8 @@ ms.locfileid: "19759946"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[RelativeYearlyRecurrence](relativeyearlyrecurrence.md) <br/> |相対年間の定期的なパターンをについて説明します。  <br/> |
-|[RelativeMonthlyRecurrence](relativemonthlyrecurrence.md) <br/> |相対的な毎月の定期的なパターンをについて説明します。  <br/> |
+|[RelativeYearlyRecurrence](relativeyearlyrecurrence.md) <br/> |相対的な年単位の定期的なパターンを記述します。  <br/> |
+|[RelativeMonthlyRecurrence](relativemonthlyrecurrence.md) <br/> |相対的な月単位の定期的なパターンを記述します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -59,24 +59,24 @@ ms.locfileid: "19759946"
 - 木曜日    
 - 金曜日    
 - 土曜日    
-- (、TimeChangePatternTypes では使用されません) の日    
-- (、TimeChangePatternTypes では使用されません) の平日    
-- (、TimeChangePatternTypes では使用されません) WeekendDay
+- Day (TimeChangePatternTypes では使用されません)    
+- Weekday (TimeChangePatternTypes では使用されません)    
+- WeekendDay (TimeChangePatternTypes では使用されません)
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

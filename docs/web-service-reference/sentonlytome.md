@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: b6d4dea5-812d-4b29-917d-071ebd7ddd92
-description: SentOnlyToMe 要素は、メールボックスの所有者が ToRecipients プロパティを適用する場合の条件または例外の順序で受信メッセージの 1 つだけにするかどうかを示します。
-ms.openlocfilehash: 91c31069652a35dc7a38ad6b6e1512cc07d67a98
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: SentOnlyToMe 要素は、条件または例外を適用するために、メールボックスの所有者が受信メッセージの Tor Piowner プロパティにある唯一のものである必要があるかどうかを示します。
+ms.openlocfilehash: 3127550b09d6f5ccf5ba87ad34557afd047f8be0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833353"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458650"
 ---
 # <a name="sentonlytome"></a>SentOnlyToMe
 
-**SentOnlyToMe**要素は、メールボックスの所有者が**ToRecipients**プロパティを適用する場合の条件または例外の順序で受信メッセージの 1 つだけにするかどうかを示します。 
+**SentOnlyToMe**要素は、条件または例外を適用するために、メールボックスの所有者が受信メッセージの**tor piowner**プロパティにある唯一のものである必要があるかどうかを示します。 
   
 ```XML
 <SentOnlyToMe/>true | false</SentOnlyToMe>
 ```
 
- **ブール型 (Boolean)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,29 +44,29 @@ ms.locfileid: "19833353"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[条件](conditions.md) <br/> |条件を表しますが、満たされるとときに、ルールのルールの処理をトリガーします。  <br/> |
-|[Exceptions](exceptions.md) <br/> |受信トレイ ルールの使用可能なルールの例外条件をすべてを表します。  <br/> |
+|[条件](conditions.md) <br/> |ルールのルールの処理を開始するときに実行される条件を表します。  <br/> |
+|[例外](exceptions.md) <br/> |受信トレイルールに対して使用可能なすべてのルールの例外条件を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**True**の場合、テキスト値は、メールボックスの所有者は**ToRecipients**プロパティを適用する場合の条件または例外の順序で受信メッセージの 1 つのみである必要があることを示します。 **False**の値では、メールボックスの所有者では、 **ToRecipients**プロパティを適用する場合の条件または例外の順序で受信メッセージの 1 つにしかならないということを示します。 
+テキスト値が**true の場合**は、条件または例外を適用するために、メールボックスの所有者が、受信メッセージの**torecipients**プロパティ内に1つだけである必要があることを示します。 値が**false**の場合、条件または例外を適用するには、メールボックスの所有者以外は、受信メッセージの**torecipients**プロパティにある必要はありません。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

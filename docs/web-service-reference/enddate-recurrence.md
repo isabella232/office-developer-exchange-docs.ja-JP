@@ -1,5 +1,5 @@
 ---
-title: 終了日 (繰り返し)
+title: EndDate (定期的なアイテム)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 16026595-26f8-4770-8a6d-0d3e4157effd
-description: 終了要素では、定期的な仕事または EndDateRecurrence パターンの種類のある予定表アイテムの終了日を表します。
-ms.openlocfilehash: b8570a069fc0a2d05044a9c85ab2d5c39d70ccdf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: EndDate 要素は、定期的なタスクの終了日または EndDateRecurrence パターンの種類を持つ予定表アイテムを表します。
+ms.openlocfilehash: 53d9b04faf1d8f740c858080b5fcbeadf577df0d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760279"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460163"
 ---
-# <a name="enddate-recurrence"></a>終了日 (繰り返し)
+# <a name="enddate-recurrence"></a>EndDate (定期的なアイテム)
 
-**終了**要素では、定期的な仕事または EndDateRecurrence パターンの種類のある予定表アイテムの終了日を表します。 
+**EndDate**要素は、定期的なタスクの終了日または EndDateRecurrence パターンの種類を持つ予定表アイテムを表します。 
   
 ```xml
 <EndDate/>
 ```
 
  **date**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,28 +44,28 @@ ms.locfileid: "19760279"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[EndDateRecurrence](enddaterecurrence.md) <br/> |開始日と終了日の項目の定期的なパターンについて説明します。  <br/> |
+|[EndDateRecurrence](enddaterecurrence.md) <br/> |アイテムの定期的なパターンの開始日と終了日を示します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-日付を表すテキスト値は、この要素を使用する場合に必要です。 値が 4500 年 9 月 1 日より大きくすることはできません 00時 00分: 00 です。
+この要素を使用する場合は、日付を表すテキスト値が必要です。 この値は、00:00:00 4500 年9月1日より大きくすることはできません。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

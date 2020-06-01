@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 7e0cfa14-cdfb-4b48-b2e9-b1d866bf2c0e
-description: Email 要素は、GetUserPhoto の操作でその写真が要求されたユーザーの電子メール アドレスを識別します。
-ms.openlocfilehash: 21156e8a9aa742035f2c988828a182cfd804ccbb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Email 要素は、GetUserPhoto 操作でその写真が要求されたユーザーの電子メールアドレスを識別します。
+ms.openlocfilehash: 28fc16cee4438f6a6a87924875e029184197a426
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760212"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459224"
 ---
 # <a name="email-string"></a>電子メール (文字列)
 
-**Email**要素は、 **GetUserPhoto**の操作でその写真が要求されたユーザーの電子メール アドレスを識別します。 
+**Email**要素は、 **getuserphoto**操作でその写真が要求されたユーザーの電子メールアドレスを識別します。 
   
 ```XML
 <Email></Email>
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,21 +42,21 @@ ms.locfileid: "19760212"
   
 ## <a name="text-value"></a>テキスト値
 
-**Email**要素のテキスト値は、GetUserPhoto の操作でその写真が要求されたユーザーの電子メール アドレスです。 
+**Email**要素のテキスト値は、getuserphoto 操作でその写真が要求されるユーザーの電子メールアドレスです。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

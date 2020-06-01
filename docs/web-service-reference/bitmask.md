@@ -1,5 +1,5 @@
 ---
-title: ビットマスク
+title: 示す
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: fc7eeac2-555f-4cbc-8b48-26d9ed67748a
-description: Excludes 制限操作時に使用する 16 進数または 10 進数のマスクを表すビットマスク要素。
-ms.openlocfilehash: 86c8c61f22d8d620a9139280b2a43ed7fec4727d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ビットマスク要素は、除外制限操作の間に使用される16進数または10進数のマスクを表します。
+ms.openlocfilehash: f05be466d05b13f8f362afb5fc0552653a532475
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759517"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458811"
 ---
-# <a name="bitmask"></a>ビットマスク
+# <a name="bitmask"></a>示す
 
-[Excludes](excludes.md)制限操作時に使用する 16 進数または 10 進数のマスクを表す**ビットマスク**要素。 
+**ビットマスク**要素は、[除外](excludes.md)制限操作の間に使用される16進数または10進数のマスクを表します。 
   
 ```xml
 <Bitmask Value="" />
@@ -29,7 +29,7 @@ ms.locfileid: "19759517"
 
 **ExcludesValueType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -37,7 +37,7 @@ ms.locfileid: "19759517"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**Value** | 10 進または 16 進数のビットマスクを表します。 値は、次の正規表現で表されます。<br/>' ((0 x|0X)[0-9A-Fa-f]*)|([0-9] *)'。<br/><br/>次に、この属性の値を 16 進数の例を示します。<br/>-0x12AF<br/>-0X334AE<br/><br/>次に、この属性の値を 10 進数の例を示します。<br/>-10<br/>-255<br/>-4562 |
+|**値** | 10進数または16進数のビットマスクを表します。 この値は、次の正規表現で表されます。<br/>`((0x|0X)[0-9A-Fa-f]*)|([0-9]*)`.<br/><br/>この属性の16進値の例を次に示します。<br/>- 0x12AF<br/>- 0X334AE<br/><br/>この属性の10進値の例を次に示します。<br/>-10<br/>-255<br/>-4562 |
    
 ### <a name="child-elements"></a>子要素
 
@@ -47,24 +47,24 @@ ms.locfileid: "19759517"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[除外](excludes.md) <br/> |プロパティのビットごとのマスクを実行します。  <br/> |
+|[Excludes](excludes.md) <br/> |プロパティのビット単位のマスクを実行します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-16 進数の値には、プレフィックス 0x または 0x が必要です。 このプレフィックスが存在しない場合、値は 10 進数と見なされます。
+16進数の値のプレフィックスは、0x または0X である必要があります。 このプレフィックスが存在しない場合、値は10進数値と見なされます。
   
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 298fdd71-a83d-4407-9728-4f0a8e2d857c
-description: UpdateItem 操作を使用して、Exchange ストア内の連絡先アイテムのプロパティを更新します。
-ms.openlocfilehash: f2a501ce8e69068cd30b58011adf4defc68ce365
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: UpdateItem 操作は、Exchange ストア内の連絡先アイテムのプロパティを更新するために使用されます。
+ms.openlocfilehash: 66e1b91ea3154d8a501339aed7b398970e8f5392
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839860"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459827"
 ---
 # <a name="updateitem-operation-contact"></a>UpdateItem 操作 (連絡先)
 
-UpdateItem 操作を使用して、Exchange ストア内の連絡先アイテムのプロパティを更新します。
+UpdateItem 操作は、Exchange ストア内の連絡先アイテムのプロパティを更新するために使用されます。
   
-## <a name="updateitem-contact-request-example"></a>UpdateItem (連絡先) の要求の例
+## <a name="updateitem-contact-request-example"></a>UpdateItem (Contact) 要求の例
 
 ### <a name="description"></a>説明
 
-次のコード例は、連絡先の電子メール アドレスを更新する方法を示します。
+次のコード例は、連絡先の電子メールアドレスを更新する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -36,9 +36,9 @@ UpdateItem 操作を使用して、Exchange ストア内の連絡先アイテム
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
  xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
- xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <UpdateItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
+    <UpdateItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
                 ConflictResolution="AlwaysOverwrite">
       <ItemChanges>
         <t:ItemChange>
@@ -62,11 +62,11 @@ UpdateItem 操作を使用して、Exchange ストア内の連絡先アイテム
 
 ### <a name="comments"></a>コメント
 
-項目の識別子が読みやすさを保持するために小さすぎます。
+アイテム識別子は読みやすくするために短縮されています。
   
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-次の要素は、要求で使用されます。
+要求では、次の要素が使用されます。
   
 - [UpdateItem](updateitem.md)
     
@@ -76,23 +76,23 @@ UpdateItem 操作を使用して、Exchange ストア内の連絡先アイテム
     
 - [ItemId](itemid.md)
     
-- [更新 (アイテム)](updates-item.md)
+- [Updates (Item)](updates-item.md)
     
 - [SetItemField](setitemfield.md)
     
 - [IndexedFieldURI](indexedfielduri.md)
     
-- [Contact](contact.md)
+- [連絡先](contact.md)
     
 - [EmailAddresses](emailaddresses.md)
     
-- [エントリ (EmailAddress)](entry-emailaddress.md)
+- [Entry (EmailAddress)](entry-emailaddress.md)
     
-## <a name="successful-updateitem-contact-response"></a>UpdateItem (連絡先) を正常な応答
+## <a name="successful-updateitem-contact-response"></a>成功した UpdateItem (連絡先) 応答
 
 ### <a name="description"></a>説明
 
-UpdateItem 正常な応答を次のコード例に示します。
+次のコード例は、正常な UpdateItem 応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -103,12 +103,12 @@ UpdateItem 正常な応答を次のコード例に示します。
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="602" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <UpdateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <UpdateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:UpdateItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -126,11 +126,11 @@ UpdateItem 正常な応答を次のコード例に示します。
 
 ### <a name="comments"></a>コメント
 
-項目の識別子が読みやすさを保持するために小さすぎます。
+アイテム識別子は読みやすくするために短縮されています。
   
-### <a name="successful-response-elements"></a>正常な応答の要素
+### <a name="successful-response-elements"></a>成功した応答要素
 
-次の要素は、応答で使用されます。
+応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -142,13 +142,13 @@ UpdateItem 正常な応答を次のコード例に示します。
     
 - [ResponseCode](responsecode.md)
     
-- [アイテム (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
+- [アイテム (非 Emptyarrayofallitemstype)](items-nonemptyarrayofallitemstype.md)
     
-- [Contact](contact.md)
+- [連絡先](contact.md)
     
 - [ItemId](itemid.md)
     
-## <a name="invalid-updateitem-contact-request-example"></a>UpdateItem (連絡先) 要求の無効な使用例
+## <a name="invalid-updateitem-contact-request-example"></a>無効な UpdateItem (連絡先) 要求の例
 
 ### <a name="description"></a>説明
 
@@ -161,9 +161,9 @@ UpdateItem 正常な応答を次のコード例に示します。
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
  xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
- xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <UpdateItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
+    <UpdateItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
                 ConflictResolution="AlwaysOverwrite">
       <ItemChanges>
         <t:ItemChange>
@@ -187,13 +187,13 @@ UpdateItem 正常な応答を次のコード例に示します。
 
 ### <a name="comments"></a>コメント
 
-項目の識別子が読みやすさを保持するために小さすぎます。
+アイテム識別子は読みやすくするために短縮されています。
   
-## <a name="updateitem-contact-error-response"></a>UpdateItem (連絡先) のエラー応答
+## <a name="updateitem-contact-error-response"></a>UpdateItem (Contact) エラー応答
 
 ### <a name="description"></a>説明
 
-UpdateItem (連絡先) 要求に対するエラー応答をコード例を次に示します。
+次のコード例は、UpdateItem (連絡先) 要求に対するエラー応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -201,17 +201,17 @@ UpdateItem (連絡先) 要求に対するエラー応答をコード例を次に
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="602" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
     <soap:Fault>
       <soap:faultcode>Client</soap:faultcode>
       <soap:faultstring>The request failed schema validation.</soap:faultstring>
       <detail>
-        <e:ResponseCode xmlns:e="http://schemas.microsoft.com/exchange/services/2006/errors">ErrorSchemaValidation</e:ResponseCode>
-        <e:Message xmlns:e="http://schemas.microsoft.com/exchange/services/2006/errors">The 'Key' attribute is invalid - The value 'EmailAddress4' is invalid according to its data type 'http://schemas.microsoft.com/exchange/services/2006/types:EmailAddressKeyType' - The Enumeration constraint failed.</e:Message>
-        <e:Line xmlns:e="http://schemas.microsoft.com/exchange/services/2006/errors">17</e:Line>
-        <e:Position xmlns:e="http://schemas.microsoft.com/exchange/services/2006/errors">19</e:Position>
+        <e:ResponseCode xmlns:e="https://schemas.microsoft.com/exchange/services/2006/errors">ErrorSchemaValidation</e:ResponseCode>
+        <e:Message xmlns:e="https://schemas.microsoft.com/exchange/services/2006/errors">The 'Key' attribute is invalid - The value 'EmailAddress4' is invalid according to its data type 'https://schemas.microsoft.com/exchange/services/2006/types:EmailAddressKeyType' - The Enumeration constraint failed.</e:Message>
+        <e:Line xmlns:e="https://schemas.microsoft.com/exchange/services/2006/errors">17</e:Line>
+        <e:Position xmlns:e="https://schemas.microsoft.com/exchange/services/2006/errors">19</e:Position>
       </detail>
     </soap:Fault>
   </soap:Body>
@@ -220,7 +220,7 @@ UpdateItem (連絡先) 要求に対するエラー応答をコード例を次に
 
 ### <a name="comments"></a>コメント
 
-スキーマ検証エラーが原因で発生するエラー応答の SOAP 本文で使用されているいくつかの要素は、メッセージまたは型のスキーマで定義されていません。 **詳細**要素には、エラーに関する情報が含まれています。 [ResponseCode](responsecode.md)要素には、エラー コードが含まれています。 [メッセージ](message-ex15websvcsotherref.md)要素には、1 つが使用可能な場合、エラーの説明が含まれています。 **直線**要素は、スキーマ検証エラーが発生した行番号について説明します。 **位置**の要素は、XML ドキュメントの左端の文字の位置について説明します。 
+スキーマ検証エラーによって発生したエラー応答の SOAP 本文で使用されている一部の要素は、メッセージまたは種類のスキーマで定義されていません。 **Detail**要素には、エラーに関する情報が含まれています。 応答[secの](responsecode.md)要素にエラーコードが含まれています。 [メッセージ](message-ex15websvcsotherref.md)要素には、エラーの説明が含まれています (使用可能な場合)。 **Line**要素は、スキーマ検証エラーが発生した行番号を示します。 **Position**要素は、XML ドキュメントの左端の文字からの位置を表します。 
   
 ## <a name="see-also"></a>関連項目
 
