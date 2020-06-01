@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 09b7504e-08d8-42f9-88cc-a2a37a2e2b8b
-description: DayOfMonth 要素では、定期的なアイテムに発生する月の日について説明します。
-ms.openlocfilehash: 0d0d95849a2562e06b88872b2857cc5e6ca67af3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DayOfMonth 要素は、定期的なアイテムが発生する月の日付を表します。
+ms.openlocfilehash: dc333a46283d5e8eba3a79f62f8c22c22f56e190
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759932"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44442830"
 ---
 # <a name="dayofmonth"></a>DayOfMonth
 
-**DayOfMonth**要素では、定期的なアイテムに発生する月の日について説明します。 
+**DayOfMonth**要素は、定期的なアイテムが発生する月の日付を表します。 
   
 ```xml
 <DayOfMonth/>
@@ -29,7 +29,7 @@ ms.locfileid: "19759932"
 
 **int**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -50,22 +50,22 @@ ms.locfileid: "19759932"
    
 ## <a name="text-value"></a>テキスト値
 
-1 ~ 31 の範囲の整数値を表す文字列値は、必要があります。 特定の月のこの値が大きい場合、月の日数よりも、月の最後の日と見なされます。
+1 ~ 31 の範囲の整数を表すテキスト値が必要です。 特定の月の場合、この値が月の日数よりも大きい場合は、その月の末日が想定されます。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 
