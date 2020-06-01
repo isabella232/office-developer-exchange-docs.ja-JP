@@ -1,5 +1,5 @@
 ---
-title: Exchange 2013 の CHKSGFILES API を使用してバックアップの整合性を検証します。
+title: Exchange 2013 で CHKSGFILES API を使用してバックアップの整合性を検証する
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,21 +7,21 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 607cbeb9-0a02-4079-8a4d-34bdeb560224
-description: CHKSGFILES API を使用して Exchange 2013 の Exchange ストアのバックアップを検証する方法を確認します。
-ms.openlocfilehash: 968484cd5bb7439730685643683e1d850bec33ca
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: CHKSGFILES API を使用して exchange 2013 の Exchange ストアのバックアップを検証する方法について説明します。
+ms.openlocfilehash: c101413793cf3b952d3db3e0f792c8bcf2dd9fc9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758865"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44452861"
 ---
-# <a name="validate-backup-integrity-by-using-the-chksgfiles-api-in-exchange-2013"></a>Exchange 2013 の CHKSGFILES API を使用してバックアップの整合性を検証します。
+# <a name="validate-backup-integrity-by-using-the-chksgfiles-api-in-exchange-2013"></a>Exchange 2013 で CHKSGFILES API を使用してバックアップの整合性を検証する
 
-CHKSGFILES API を使用して Exchange 2013 の Exchange ストアのバックアップを検証する方法を確認します。
+CHKSGFILES API を使用して exchange 2013 の Exchange ストアのバックアップを検証する方法について説明します。
   
-**に適用されます:** Exchange Server 2013 
+**製品:** Exchange Server 2013 
   
-によって、ボリューム シャドウ コピー サービス (VSS) の管理、バックアップの処理中に Exchange Server 2013 は各データベース ファイル全体を読み取るし、チェックサムの整合性を確認できません。 したがって、データベースとトランザクション ログ ファイルの整合性を確認するのには、バックアップ ・ アプリケーションが必要な可能性があります。 バックアップ アプリケーションが Exchange ライターに、バックアップが完了していることを通知する前にシャドウ コピー セットの物理的な整合性を確認することをお勧めします。 バックアップの成功後は、Exchange ストアは、最後のバックアップからロール フォワードする必要はなくなりますが、最後のバックアップの時間し、サーバーからのトランザクション ログの削除を反映するようにバックアップ データベースのヘッダーを更新します。
+ボリュームシャドウコピーサービス (VSS) によって管理されるバックアップ操作では、Exchange Server 2013 は各データベースファイル全体を読み取り、そのチェックサムの整合性を確認することはできません。 そのため、データベースとトランザクション ログ ファイルの整合性を検証する独自のバックアップ アプリケーションが必要になることがあります。 独自のバックアップ アプリケーションでは、Exchange ライターにバックアップの完了を通知する前に、シャドウ コピー セットの物理的な整合性を確認するようにしてください。 バックアップが正常に完了すると、Exchange ストアは、最後に成功したバックアップの時刻を反映するようにバックアップしたデータベースのヘッダーを更新して、最後に成功したバックアップからロールフォワードする必要のなくなったトランザクション ログをサーバーから削除します。
   
 ## <a name="prerequisites-for-validating-backup-integrity"></a>バックアップ整合性を検証するための前提条件
 
@@ -29,7 +29,7 @@ CHKSGFILES API を使用して Exchange 2013 の Exchange ストアのバック�
   
 - Exchange ストアのバックアップのファイル。
 - Visual Studio 2010 以降のいずれかの Visual Studio のバージョン。
-- CHKSGFILES のライブラリとヘッダー ファイルです。 ライブラリとヘッダー ファイルは、 [Microsoft ダウンロード センター](http://www.microsoft.com/en-us/download/details.aspx?id=36802)からダウンロードできます。
+- CHKSGFILES ライブラリ ファイルとヘッダー ファイル。 ライブラリとヘッダーファイルは、 [Microsoft ダウンロードセンター](https://www.microsoft.com/download/details.aspx?id=36802)からダウンロードできます。
     
 ## <a name="validate-backup-integrity"></a>バックアップの整合性の検証
 
@@ -37,7 +37,7 @@ CHKSGFILES API を使用して Exchange 2013 の Exchange ストアのバック�
   
 ### <a name="to-validate-backup-integrity"></a>バックアップの整合性を検証するには
 
-1. **CChkSGFiles**クラスの新しいインスタンスを作成します。 
+1. **CChkSGFiles** クラスの新しいインスタンスを作成します。 
    
    ```cpp
    CCheckSGFiles::ERRerr = CCheckSGFiles::errSuccess;
@@ -51,9 +51,9 @@ CHKSGFILES API を使用して Exchange 2013 の Exchange ストアのバック�
    }
    ```
 
-   最初の行のコードはエラー オブジェクトを作成に成功した場合、その初期値を設定し、データベースの妥当性を検査するオブジェクトを作成します。 次に、 [CChkSGFiles.New 関数](cchksgfiles-new-function.md)は、 **CChkSGFiles**クラスの新しいインスタンスを作成します。 新しいオブジェクトの簡単なチェックでは、新しいインスタンスが作成されたときに、問題が発生したかを示します。 
+   コードの最初の行では、error オブジェクトを作成し、その初期値を success に設定し、データベースの有効性をチェックするオブジェクトを作成します。 その後、 [CChkSGFiles 関数](cchksgfiles-new-function.md)は**CChkSGFiles**クラスの新しいインスタンスを作成します。 新しいオブジェクトのクイックチェックは、新しいインスタンスが作成されたときに問題が発生したかどうかを示します。 
     
-2. **CChkSGFiles**オブジェクトを初期化します。 
+2. **CChkSGFiles** オブジェクトを初期化します。 
    
    ```cpp
    Call( pcchecksgfiles->ErrInit(
@@ -63,9 +63,9 @@ CHKSGFILES API を使用して Exchange 2013 の Exchange ストアのバック�
    wszBaseName ) );
    ```
    
-   パラメーターの詳細については、 [CChkSGFiles.ErrInit 関数](cchksgfiles-errinit-function.md)を参照してください。
+   パラメーターの詳細については、「[CChkSGFiles.ErrInit 関数](cchksgfiles-errinit-function.md)」を参照してください。
    
-3. データベース ヘッダーを確認することでデータベースの整合性を検証するのにには、 [CChkSGFiles.ErrCheckDbHeaders 関数](cchksgfiles-errcheckdbheaders-function.md)を使用します。
+3. [CChkSGFiles.ErrCheckDbHeaders 関数](cchksgfiles-errcheckdbheaders-function.md)を使用して、データベースのヘッダーを確認することで、データベース整合性を検証します。
    
    ```cpp
    err = pcchecksgfiles->ErrCheckDbHeaders(
@@ -86,9 +86,9 @@ CHKSGFILES API を使用して Exchange 2013 の Exchange ストアのバック�
    }
    ```
    
-   パラメーターの詳細については、 [CChkSGFiles.ErrCheckDbHeaders 関数](cchksgfiles-errcheckdbheaders-function.md)を参照してください。
+   パラメーターの詳細については、「[CChkSGFiles.ErrCheckDbHeaders 関数](cchksgfiles-errcheckdbheaders-function.md)」を参照してください。
    
-4. エラーを処理し、 **CChkSGFiles**クラスをメモリから削除するのには、 [CChkSGFiles.Delete 関数](cchksgfiles-delete-function.md)を使用します。 
+4. エラーを処理し、[CChkSGFiles.Delete 関数](cchksgfiles-delete-function.md)を使用してメモリから **CChkSGFiles** クラスを削除します。 
    
    ```cpp
    HandleError:
@@ -98,7 +98,7 @@ CHKSGFILES API を使用して Exchange 2013 の Exchange ストアのバック�
 ## <a name="see-also"></a>関連項目
 
 - [CChkSGFiles クラスの参照](cchksgfiles-class-reference.md)
-- [バックアップを作成し、Exchange 2013 のアプリケーションを復元します。](build-backup-and-restore-applications-for-exchange-2013.md)
+- [Exchange 2013 のバックアップと復元アプリケーションの作成](build-backup-and-restore-applications-for-exchange-2013.md)
 - [Exchange 2013 のバックアップと復元の概念](backup-and-restore-concepts-for-exchange-2013.md)
     
 

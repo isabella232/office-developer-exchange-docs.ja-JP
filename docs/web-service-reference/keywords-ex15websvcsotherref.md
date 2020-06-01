@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c466c845-9806-4a9a-8ba6-ee908b80d012
-description: キーワード要素は、FindMailboxStatisticsByKeywords 操作の検索のキーワードを指定します。
-ms.openlocfilehash: fc12756c54bfc457e8b9124d932ff7c5178719b2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Keywords 要素は、FindMailboxStatisticsByKeywords 操作検索のキーワードを指定します。
+ms.openlocfilehash: d23840c4b651f5d4f42f36a0307a0fe5b25471f4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832192"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44451636"
 ---
 # <a name="keywords"></a>キーワード
 
-**キーワード**要素は、 **FindMailboxStatisticsByKeywords**操作の検索のキーワードを指定します。 
+**Keywords**要素は、 **FindMailboxStatisticsByKeywords**操作検索のキーワードを指定します。 
   
 ```XML
 <KeyWords>
@@ -26,7 +26,7 @@ ms.locfileid: "19832192"
 ```
 
  **ArrayOfStringsType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -36,13 +36,13 @@ ms.locfileid: "19832192"
   
 ### <a name="child-elements"></a>子要素
 
-[文字列型 (String)](string.md)
+[String](string.md)
   
 ### <a name="parent-elements"></a>親要素
 
 [FindMailboxStatisticsByKeywords](findmailboxstatisticsbykeywords.md)
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   

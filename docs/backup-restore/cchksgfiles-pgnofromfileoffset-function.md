@@ -11,19 +11,19 @@ api_name:
 api_type:
 - dllExport
 ms.assetid: 3d69ca6d-5ed1-4038-859e-106e776eeec1
-description: '最終更新日: 2013 年 2 月 22 日'
-ms.openlocfilehash: d42ba7c8178c6fccdddec0b5da88a972f51184c6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: '最終更新日: 2013 年2月22日'
+ms.openlocfilehash: 3c8f749a03b4aa251bf9312eba5d7e2d46c91fae
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758869"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44452896"
 ---
 # <a name="cchksgfilespgnofromfileoffset-function"></a>CChkSGFiles.PgnoFromFileOffset 関数
 
-**に適用されます:** Exchange Server 2003年 |Exchange Server 2007年 |Exchange Server 2010年 |Exchange Server 2013
+**適用対象:** Exchange Server 2003 |Exchange Server 2007 |Exchange Server 2010 |Exchange Server 2013
   
-物理データベース ・ ファイルで指定したバイトのインデックスを作成するには、対応するデータベースの論理ページ番号を返します。 ファイル オフセットが正しくない場合、またはデータベースの**ErrCheckDbHeaders**関数が呼び出されていない場合は、この関数は 0 (ゼロ) を返します。 
+物理データベース ファイルで指定したバイト インデックスに対応するデータベースの論理ページ番号を返します。 ファイル オフセットが無効な場合、またはデータベースに対する **ErrCheckDbHeaders** 関数の呼び出しが行われていない場合、この関数は 0 (ゼロ) を返します。 
   
 ```cs
 Vitual ULONGPgnoFromFileOffset  
@@ -33,29 +33,29 @@ Vitual ULONGPgnoFromFileOffset
 
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 ### <a name="ibfileoffset"></a>ibFileOffset
   
-入力パラメーター。データベース ファイル内のオフセット (バイト単位)。
+入力パラメーター。 データベース ファイル内のオフセット (バイト単位)。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 指定したオフセットを含んでいるデータベース ファイルの論理ページ番号。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**IbFileOffset**パラメーターが有効でない場合、 **PgnoFromFileOffset**関数は、0 (ゼロ) を返します。 
+**ibFileOffset** パラメーターが無効な場合、**PgnoFromFileOffset** 関数は 0 (ゼロ) を返します。 
   
-**PgnoFromFileOffset**は、 **CCheckSGFiles**インスタンス上で、 **ErrCheckDbHeaders**関数を呼び出していない場合にも 0 (ゼロ) を返します。 データベース ヘッダーに割り当てられたページの数、データベースのページ サイズを初期化するために**ErrCheckDbHeaders**を呼び出す必要があります。 
+また、**CCheckSGFiles** インスタンスの **ErrCheckDbHeaders** 関数を呼び出していない場合も、**PgnoFromFileOffset** 関数は 0 (ゼロ) を返します。 **ErrCheckDbHeaders** を呼び出すことで、データベース ヘッダーに割り当てられたデータベースのページ サイズとページ数を初期化する必要があります。 
   
-入力するのには**PgnoFromFileOffset**を使用する必要があります、**ページ\_情報** **ErrCheckDbPages**を呼び出すための準備としての要素を構造化します。 **ErrCheckDbPages**に**rgPageInfo**パラメーターでは、配列の各要素が**ulPgno**メンバーの値が正しく初期化されると、 **PAGE_INFO**構造体である必要があります。 
+**Errcheckdbpages**を呼び出すための準備として、 **Pgnofromfileoffset**を使用して**ページ \_ 情報**構造の要素に入力する必要があります。 **ErrCheckDbPages** への **rgPageInfo** パラメーターは、配列内の各要素が **PAGE_INFO** 構造体であることと、**ulPgno** メンバーの値が正しく初期化されていることを必要とします。 
   
-マルチ スレッド アプリケーションで CHKSGFILES を使用する場合は、マルチ スレッド アプリケーションの部分に、 **PgnoFromFileOffset**関数を呼び出すことができます。 通常この関数を複数回呼び出すデータベースごとにチェックされていることを確認します。 
+マルチスレッド アプリケーションで CHKSGFILES を使用している場合、**PgnoFromFileOffset** 関数は、そのアプリケーションのシングルスレッドの部分で呼び出すことができます。 通常、この関数は確認するデータベースごとに複数回呼び出すことになります。 
   
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>Requirements
 
-Exchange Server 2013 には、CHKSGFILES API の 64 ビット バージョンにはのみが含まれます。
+Exchange Server 2013 には、CHKSGFILES API の64ビットバージョンのみが含まれています。
   
 アプリケーションを実行しているアカウントには、確認するデータベースとログ ファイルに対する読み取りアクセス許可が必要です。
   

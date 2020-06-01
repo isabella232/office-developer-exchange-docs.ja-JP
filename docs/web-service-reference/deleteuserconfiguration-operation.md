@@ -11,34 +11,34 @@ api_name:
 api_type:
 - schema
 ms.assetid: 93e44690-be2d-4fdb-96a8-4ded3c193aed
-description: DeleteUserConfiguration 操作は、フォルダーでユーザー設定のオブジェクトを削除します。
-ms.openlocfilehash: 033134a7e16aa8e7a3d6b928141012b646863a68
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DeleteUserConfiguration 操作は、フォルダーのユーザー構成オブジェクトを削除します。
+ms.openlocfilehash: 064e1ace2c2f51783431ce42670b2a4fd8146b54
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759991"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44451468"
 ---
 # <a name="deleteuserconfiguration-operation"></a>DeleteUserConfiguration 操作
 
-**DeleteUserConfiguration**操作は、フォルダーでユーザー設定のオブジェクトを削除します。 
+**Deleteuserconfiguration**操作は、フォルダーのユーザー構成オブジェクトを削除します。 
   
 > [!IMPORTANT]
-> **DeleteUserConfiguration**操作は、イベント通知システムの移動イベントをトリガーします。 ユーザー設定のオブジェクトを移動するが、ごみ箱をあさる。 
+> **Deleteuserconfiguration**操作は、イベント通知システムの移動イベントをトリガーします。 ユーザー構成オブジェクトは、収集に移動されます。 
   
 ## <a name="deleteuserconfiguration-request-example"></a>DeleteUserConfiguration 要求の例
 
 ### <a name="description"></a>説明
 
-**DeleteUserConfiguration**要求の次の例では、[下書き] フォルダーでユーザー設定のオブジェクトを削除する要求を作成する方法を示します。 
+次の**Deleteuserconfiguration**要求の例は、下書きフォルダーのユーザー構成オブジェクトを削除するための要求を形成する方法を示しています。 
   
 ### <a name="code"></a>コード
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
@@ -58,7 +58,7 @@ ms.locfileid: "19759991"
 
 ### <a name="description"></a>説明
 
-**DeleteUserConfiguration**要求に正常な応答の例を次に示します。 
+次の例は、 **Deleteuserconfiguration**要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -71,15 +71,15 @@ ms.locfileid: "19759991"
                          MajorBuildNumber="639" 
                          MinorBuildNumber="20" 
                          Version="Exchange2010" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:DeleteUserConfigurationResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:DeleteUserConfigurationResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:DeleteUserConfigurationResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -92,6 +92,6 @@ ms.locfileid: "19759991"
 
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の操作](ews-operations-in-exchange.md) 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange での EWS 操作](ews-operations-in-exchange.md) 
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 
