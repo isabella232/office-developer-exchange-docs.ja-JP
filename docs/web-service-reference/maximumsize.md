@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: fb7c3ab3-ef97-44c7-83e0-93cfe8c48e84
-description: 作成要素は、メッセージ内に含まれる条件や例外条件を適用する順序の最大サイズを表します。
-ms.openlocfilehash: 37e3d377b105534fe34b54e262bd47bc450706da
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: MaximumSize 要素は、条件または例外を適用するためにメッセージが必要とされる最大サイズを表します。
+ms.openlocfilehash: 250e0c6aed37b934f5cf6eaed9d93b9f56159d93
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832387"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461752"
 ---
 # <a name="maximumsize"></a>MaximumSize
 
-**作成**要素は、メッセージ内に含まれる条件や例外条件を適用する順序の最大サイズを表します。 
+**MaximumSize**要素は、条件または例外を適用するためにメッセージが必要とされる最大サイズを表します。 
   
 ```XML
 <Maximum/>
 ```
 
  **int**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,24 +40,24 @@ ms.locfileid: "19832387"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[WithinSizeRange](withinsizerange.md) <br/> |適用する場合の条件または例外の順序で受信メッセージをする必要のある最小値と最大サイズを指定します。  <br/> |
+|[WithinSizeRange](withinsizerange.md) <br/> |条件または例外を適用するために、受信メッセージが必要とする最小サイズと最大サイズを指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、バイト単位でのメッセージの最大サイズを識別する整数です。
+テキスト値は、メッセージの最大サイズをバイト単位で示す整数です。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -66,5 +66,5 @@ ms.locfileid: "19832387"
 [MinimumSize](minimumsize.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

@@ -7,33 +7,33 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0a1ad73a-3085-4793-af4d-e4216484c93e
-description: どの Api を検索は、新しいまたはトランスポート エージェントの Exchange 2013 の更新です。
-ms.openlocfilehash: 0caafaf9629da1066d14357416862a7d67b961aa
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: トランスポートエージェントの Exchange 2013 で新規または更新された Api について説明します。
+ms.openlocfilehash: 9cb099757512081347e23bc619c42417929f0f70
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759257"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461822"
 ---
 # <a name="new-and-updated-transport-agent-apis-in-exchange-2013"></a>Exchange 2013 の新規および更新されたトランスポート エージェント API
 
-どの Api を検索は、新しいまたはトランスポート エージェントの Exchange 2013 の更新です。
+トランスポートエージェントの Exchange 2013 で新規または更新された Api について説明します。
 
-**に適用されます:** Exchange Server 2013 
+**製品:** Exchange Server 2013 
   
-この資料には、トランスポート エージェントに影響を与える、新しい Exchange Server 2013 に更新された型が一覧表示されます。 詳細についてはアーキテクチャが変更された Exchange 2013 トランスポート エージェントに影響する、[トランスポート エージェントの概念の Exchange 2013](transport-agent-concepts-in-exchange-2013.md)を参照してください。
+この記事では、トランスポートエージェントに影響を与える Exchange Server 2013 で新規または更新された種類の一覧を示します。 トランスポートエージェントに影響を与える Exchange 2013 のアーキテクチャの変更については、「 [exchange 2013 のトランスポートエージェントの概念](transport-agent-concepts-in-exchange-2013.md)」を参照してください。
   
-## <a name="new-types-for-transport-agent-development-in-exchange-2013"></a>Exchange 2013 のトランスポート エージェントの開発のための新しい種類
+## <a name="new-types-for-transport-agent-development-in-exchange-2013"></a>Exchange 2013 のトランスポート エージェント開発向けの新しい型
 
-次の種類は、新しい Exchange 2013。
+次の種類は、Exchange 2013 で新しく追加されたものです。
   
 - [NextHopCategory](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.NextHopCategory.aspx)
     
 - [RiskLevel](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.RiskLevel.aspx)
     
-## <a name="updated-types-for-transport-agent-development-in-exchange-2013"></a>更新の種類のトランスポート エージェントの開発 Exchange 2013
+## <a name="updated-types-for-transport-agent-development-in-exchange-2013"></a>Exchange 2013 で更新されたトランスポート エージェント開発向けの型
 
-Exchange 2013 では、次の種類が更新されました。
+次の種類が Exchange 2013 で更新されました。
   
 - [ExchangeConfigurationException](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ExchangeConfigurationException.aspx)
     
@@ -49,7 +49,7 @@ Exchange 2013 では、次の種類が更新されました。
     
 - [EncodingFlags](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.EncodingFlags.aspx)
     
-- [HeaderId](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.HeaderId.aspx)
+- [ヘッド Erid](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.HeaderId.aspx)
     
 - [HeaderList](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.HeaderList.aspx)
     
@@ -59,19 +59,19 @@ Exchange 2013 では、次の種類が更新されました。
     
 - [MimeNode](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeNode.aspx)
     
-- [MimePart.PartSubtree](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimePart.PartSubtree.aspx)
+- [MimePart サブツリー](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimePart.PartSubtree.aspx)
     
-- [MimePart.SubtreeEnumerator](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimePart.SubtreeEnumerator.aspx)
+- [MimePart の列挙子](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimePart.SubtreeEnumerator.aspx)
     
 - [BinHexEncoder](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.Encoders.BinHexEncoder.aspx)
     
-- [ConverterStream](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.ConverterStream.aspx)
+- [収束 Terstream](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.ConverterStream.aspx)
     
-- [ConverterWriter](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.ConverterWriter.aspx)
+- [へんかん Terwriter](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.ConverterWriter.aspx)
     
 - [HtmlReader](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.HtmlReader.aspx)
     
-- [HtmlTagContext.AttributeCollection](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.HtmlTagContext.AttributeCollection.aspx)
+- [HtmlTagContext. 属性 Ecollection](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.HtmlTagContext.AttributeCollection.aspx)
     
 - [HtmlWriter](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.HtmlWriter.aspx)
     
@@ -81,7 +81,7 @@ Exchange 2013 では、次の種類が更新されました。
     
 - [EnvelopeRecipientCollection](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.EnvelopeRecipientCollection.aspx)
     
-- [EnvelopeRecipientCollection.Enumerator](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.EnvelopeRecipientCollection.Enumerator.aspx)
+- [EnvelopeRecipientCollection](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.EnvelopeRecipientCollection.Enumerator.aspx)
     
 - [MailItem](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.MailItem.aspx)
     
@@ -97,21 +97,21 @@ Exchange 2013 では、次の種類が更新されました。
     
 - [RoutingDomain](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.RoutingDomain.aspx)
     
-- [経路](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.RoutingHost.aspx)
+- [RoutingHost](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.RoutingHost.aspx)
     
 - [RoutingOverride](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.RoutingOverride.aspx)
     
 - [AttachmentCollection](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Email.AttachmentCollection.aspx)
     
-- [AttachmentCollection.Enumerator](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Email.AttachmentCollection.Enumerator.aspx)
+- [AttachmentCollection 列挙](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Email.AttachmentCollection.Enumerator.aspx)
     
-- [EmailRecipientCollection](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Email.EmailRecipientCollection.aspx)
+- [Email受信者コレクション](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Email.EmailRecipientCollection.aspx)
     
-- [EmailRecipientCollection.Enumerator](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Email.EmailRecipientCollection.Enumerator.aspx)
+- [Email受信者コレクション. 列挙](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Email.EmailRecipientCollection.Enumerator.aspx)
     
 - [QueuedMessageEventSource](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Routing.QueuedMessageEventSource.aspx)
     
-- [RecipientExpansionInfo](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Routing.RecipientExpansionInfo.aspx)
+- [受信者の詳細情報](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Routing.RecipientExpansionInfo.aspx)
     
 - [ResolvedMessageEventHandler](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Routing.ResolvedMessageEventHandler.aspx)
     
@@ -137,8 +137,8 @@ Exchange 2013 では、次の種類が更新されました。
     
 ## <a name="see-also"></a>関連項目
 
-- [トランスポート エージェントの概念には、Exchange 2013](transport-agent-concepts-in-exchange-2013.md)  
-- [Exchange 2013 のトランスポート エージェントを作成します。](creating-transport-agents-for-exchange-2013.md)  
+- [Exchange 2013 におけるトランスポート エージェントの概念](transport-agent-concepts-in-exchange-2013.md)  
+- [Exchange 2013 のトランスポート エージェントの作成](creating-transport-agents-for-exchange-2013.md)  
 - [Exchange 2013 のトランスポート エージェントのリファレンス](transport-agent-reference-for-exchange-2013.md)
     
 

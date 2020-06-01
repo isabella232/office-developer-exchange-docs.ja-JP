@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 2c98e7c6-09b0-47b3-bbf7-8c4ef9510280
-description: FileAsMapping 要素は、連絡先の表示内容を構築する方法を定義します。
-ms.openlocfilehash: 1ba0ae0daa56a72c29d8c0ccad64e3edae5f0b84
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: FileAsMapping 要素は、連絡先に対して表示される内容を作成する方法を定義します。
+ms.openlocfilehash: d846c0af0fbad4df9ee800fe136a4ffcc74c8608
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760486"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461038"
 ---
 # <a name="fileasmapping"></a>FileAsMapping
 
-**FileAsMapping**要素は、連絡先の表示内容を構築する方法を定義します。 
+**Fileasmapping**要素は、連絡先に対して表示される内容を作成する方法を定義します。 
   
 ```xml
 <FileAsMapping/>
 ```
 
  **FileAsMappingType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,11 +44,11 @@ ms.locfileid: "19760486"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Contact](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
+|[連絡先](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-この要素のテキスト値は、次の文字列値の 1 つに制限されています。
+この要素のテキスト値は、次のいずれかの文字列値に制限されています。
   
 - なし
     
@@ -56,25 +56,25 @@ ms.locfileid: "19760486"
     
 - FirstSpaceLast
     
-- 会社
+- Company
     
 - LastCommaFirstCompany
     
 - CompanyLastFirst
     
-- 姓名
+- LastFirst
     
 - LastFirstCompany
     
-- CompanyLastCommaFirst
+- 会社の Lastcommafirst
     
 - LastFirstSuffix
     
-- LastSpaceFirstCompany
+- Lastspace Firstcompany
     
-- CompanyLastSpaceFirst
+- 会社の最終スペース
     
-- LastSpaceFirst
+- Lastspace の先頭
     
 - DisplayName
     
@@ -86,29 +86,29 @@ ms.locfileid: "19760486"
     
 - Empty
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 
 
-[連絡先 (Exchange Web サービス) を作成します。](http://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
+[連絡先の作成 (Exchange Web サービス)](https://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
   
-[連絡先を更新](http://msdn.microsoft.com/library/9a865953-b94a-4229-b632-2dee433314be%28Office.15%29.aspx)
+[連絡先の更新](https://msdn.microsoft.com/library/9a865953-b94a-4229-b632-2dee433314be%28Office.15%29.aspx)
   
-[連絡先を削除します。](http://msdn.microsoft.com/library/fcc3dc84-cd3e-455e-a1a7-ae6921c9b588%28Office.15%29.aspx)
+[連絡先の削除](https://msdn.microsoft.com/library/fcc3dc84-cd3e-455e-a1a7-ae6921c9b588%28Office.15%29.aspx)
 

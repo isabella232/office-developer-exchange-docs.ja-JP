@@ -1,5 +1,5 @@
 ---
-title: ホスト名 (SOAP)
+title: Hostname (SOAP)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,24 +8,24 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 2ef2ab0d-ba70-46bd-80bb-c1e08da9e9bd
-description: ホスト名の要素は、コンピューターのフル コンピューター名のホスト名の部分を表します。
-ms.openlocfilehash: 4ad3003603a4b62101a76082713f62752b43ecaa
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Hostname 要素は、コンピューターの完全なコンピューター名のホスト名部分を表します。
+ms.openlocfilehash: 2c368e710dc192302bc63bd74bba35d84c5ab705
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831846"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460814"
 ---
-# <a name="hostname-soap"></a>ホスト名 (SOAP)
+# <a name="hostname-soap"></a>Hostname (SOAP)
 
-**ホスト名**の要素は、コンピューターのフル コンピューター名のホスト名の部分を表します。 
+**Hostname**要素は、コンピューターの完全なコンピューター名のホスト名部分を表します。 
   
 ```XML
 <Hostname/>
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -41,19 +41,19 @@ ms.locfileid: "19831846"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ProtocolConnection (SOAP)](protocolconnection-soap.md) <br/> |サーバーの Web クライアントのプロトコル接続を表します。  <br/> |
+|[ProtocolConnection (SOAP)](protocolconnection-soap.md) <br/> |サーバー Web クライアントのプロトコル接続を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**ホスト名**の要素のテキスト値は、コンピューターのフル コンピューター名のホスト名の部分です。 
+**Hostname**要素のテキスト値は、コンピューターの完全なコンピューター名のホスト名部分です。 
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|スキーマ名  <br/> |スキーマの自動検出  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|スキーマ名  <br/> |自動検出スキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |はい  <br/> |
    
 

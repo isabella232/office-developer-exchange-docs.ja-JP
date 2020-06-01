@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 5b29898c-ea59-4e6a-914c-c011ec754032
-description: AssociatedCalendarItemId 要素は、MeetingMessage、MeetingRequest、MeetingResponse、MeetingCancellation、または ReminderMessageData に関連付けられている予定表アイテムを表します。
-ms.openlocfilehash: 4445da88d6fec42c1e02cd8de4d2e423485a4472
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: AssociatedCalendarItemId 要素は、会議のメッセージ、会議の依頼、会議の応答、会議の取り消し、または ReminderMessageData に関連付けられている予定表アイテムを表します。
+ms.openlocfilehash: 816372c38243ba0fe5a7606c264dd1c5107350f2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759448"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460884"
 ---
 # <a name="associatedcalendaritemid"></a>AssociatedCalendarItemId
 
-**AssociatedCalendarItemId**要素は、 [MeetingMessage](meetingmessage.md)、 [MeetingRequest](meetingrequest.md)、 [MeetingResponse](meetingresponse.md)、 [MeetingCancellation](meetingcancellation.md)、または[ReminderMessageData](remindermessagedata.md)に関連付けられている予定表アイテムを表します。
+**AssociatedCalendarItemId**要素は、[会議のメッセージ](meetingmessage.md)、[会議の依頼](meetingrequest.md)、会議の[応答](meetingresponse.md)、会議の[取り消し](meetingcancellation.md)、または[ReminderMessageData](remindermessagedata.md)に関連付けられている予定表アイテムを表します。
   
 ```XML
 <AssociatedCalendarItemId Id="" ChangeKey=""/>
 ```
 
  **ItemIdType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -37,7 +37,7 @@ ms.locfileid: "19759448"
 |**属性**|**説明**|
 |:-----|:-----|
 |**Id** <br/> |会議に関連付けられている予定表アイテムを識別します。  <br/> |
-|**変更キー** <br/> |会議に関連付けられている予定表アイテムの特定のバージョンを識別します。  <br/> |
+|**ChangeKey** <br/> |会議に関連付けられている予定表アイテムの特定のバージョンを識別します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -45,24 +45,24 @@ ms.locfileid: "19759448"
   
 ### <a name="parent-elements"></a>親要素
 
-[MeetingMessage](meetingmessage.md) | [MeetingRequest](meetingrequest.md) | [MeetingResponse](meetingresponse.md) | [MeetingCancellation](meetingcancellation.md) | [ReminderMessageData](remindermessagedata.md)
+[会議メッセージ](meetingmessage.md)  | [会議の要求](meetingrequest.md)  | [会議の応答](meetingresponse.md)  | [会議のキャンセル](meetingcancellation.md)  | [ReminderMessageData](remindermessagedata.md)
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-Exchange のビルド番号 15.00.0913.09 以降のバージョンでは、 **ReminderMessageData**要素の子要素として**AssociatedCalendarItemId**の要素を含めることができます。 
+ビルド番号15.00.0913.09 以降のバージョンの Exchange では、 **ReminderMessageData**要素の子要素として**AssociatedCalendarItemId**要素を含めることができます。 
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

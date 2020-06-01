@@ -8,16 +8,16 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9d963e6c-e94d-462b-8c44-95d55c848fb2
 description: GetDiscoverySearchConfigurationResponse 要素は、GetDiscoverySearchConfiguration 要求への応答を指定します。
-ms.openlocfilehash: 6f4bbc05da0c2883f78b31cb46108e993b8b8fdd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 98393943434b5e3460485b7d75c2b5285983f597
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760694"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460982"
 ---
 # <a name="getdiscoverysearchconfigurationresponse"></a>GetDiscoverySearchConfigurationResponse
 
-**GetDiscoverySearchConfigurationResponse**要素は、 **GetDiscoverySearchConfiguration**要求への応答を指定します。 
+**GetDiscoverySearchConfigurationResponse**要素は、 **Getdiscoverysearchconfiguration**要求への応答を指定します。 
   
 ```XML
 <GetDiscoverySearchConfigurationResponse>
@@ -30,7 +30,7 @@ ms.locfileid: "19760694"
 ```
 
  **GetDiscoverySearchConfigurationResponseMessageType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,25 +40,25 @@ ms.locfileid: "19760694"
   
 ### <a name="child-elements"></a>子要素
 
-[メッセージ テキスト](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [DiscoverySearchConfigurations](discoverysearchconfigurations.md)
+[Messagetext](messagetext.md)  | 応答[Secmode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [Discoverysearchconfigurations](discoverysearchconfigurations.md)
   
 ### <a name="parent-elements"></a>親要素
 
 [ResponseMessages](responsemessages.md)
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
 |空にすることができます。  <br/> |false  <br/> |
    
 

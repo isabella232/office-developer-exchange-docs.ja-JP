@@ -1,5 +1,5 @@
 ---
-title: FailedMailbox
+title: 失敗したメールボックス
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3d4c9816-54bb-4932-b4ba-f057c9173a1a
-description: FailedMailbox 要素は、検索に失敗したメールボックスは、エラー メッセージを指定します。
-ms.openlocfilehash: a4f5cd975eba121dd1d8d918b638d34f907588a8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 失敗した Mailbox 要素は、検索で失敗したメールボックスのエラーメッセージを指定します。
+ms.openlocfilehash: 404084bc342eb555db61c4216e936bee6ced9c36
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760464"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461962"
 ---
-# <a name="failedmailbox"></a>FailedMailbox
+# <a name="failedmailbox"></a>失敗したメールボックス
 
-**FailedMailbox**要素は、検索に失敗したメールボックスは、エラー メッセージを指定します。 
+失敗した**mailbox**要素は、検索で失敗したメールボックスのエラーメッセージを指定します。 
   
 ```XML
 <FailedMailbox>
@@ -29,7 +29,7 @@ ms.locfileid: "19760464"
 ```
 
  **FailedSearchMailboxType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -39,37 +39,37 @@ ms.locfileid: "19760464"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[メールボックス (文字列)](mailbox-string.md) <br/> |メールボックスの識別子が含まれています。  <br/> |
-|[エラー コード (int)](errorcode-int.md) <br/> |検索に失敗したメールボックスのエラー コードを指定します。  <br/> |
-|[エラー メッセージ](errormessage.md) <br/> |検証エラーの原因を表します。  <br/> |
+|[メールボックス (文字列)](mailbox-string.md) <br/> |メールボックスの識別子を含みます。  <br/> |
+|[ErrorCode (int)](errorcode-int.md) <br/> |検索に失敗したメールボックスのエラーコードを指定します。  <br/> |
+|[ErrorMessage](errormessage.md) <br/> |検証エラーの理由を表します。  <br/> |
 |[IsArchive](isarchive.md) <br/> |メールボックスがアーカイブであるかどうかを示すブール値を指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FailedMailboxes](failedmailboxes.md) <br/> |失敗したメールボックスの配列を指定します。  <br/> |
+|[失敗したメールボックス](failedmailboxes.md) <br/> |エラーが発生したメールボックスの配列を指定します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |型のスキーマ  <br/> |
-|検証ファイル  <br/> |types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

@@ -11,32 +11,32 @@ api_name:
 api_type:
 - schema
 ms.assetid: a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8
-description: GetItem 操作は、Exchange ストアから、予定表のアイテムを取得します。
-ms.openlocfilehash: 69bce0f0cc7b5c986f9bf4767c3cd429a309e50d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetItem 操作は、Exchange ストアから予定表アイテムを取得します。
+ms.openlocfilehash: 09fe92af12f03ce4cebd1e98f4e01c087ace64f9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760762"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460618"
 ---
 # <a name="getitem-operation-calendar-item"></a>GetItem 操作 (予定表アイテム)
 
-GetItem 操作は、Exchange ストアから、予定表のアイテムを取得します。
+GetItem 操作は、Exchange ストアから予定表アイテムを取得します。
   
 ## <a name="getitem-request-example"></a>GetItem 要求の例
 
 ### <a name="description"></a>説明
 
-GetItem 要求の次の例では、id および項目の件名を取得する要求を作成する方法を示します。
+GetItem 要求の次の例は、アイテムの id と件名を取得するための要求を形成する方法を示しています。
   
 ### <a name="code"></a>コード
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <GetItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ItemShape>
         <t:BaseShape>IdOnly</t:BaseShape>
         <t:AdditionalProperties>
@@ -51,9 +51,9 @@ GetItem 要求の次の例では、id および項目の件名を取得する要
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-次の要素は、要求で使用されます。
+要求では、次の要素が使用されます。
   
 - [GetItem](getitem.md)
     
@@ -65,23 +65,23 @@ GetItem 要求の次の例では、id および項目の件名を取得する要
     
 - [FieldURI](fielduri.md)
     
-- [Itemid](itemids.md)
+- [ItemIds](itemids.md)
     
 - [ItemId](itemid.md)
     
 > [!NOTE]
-> MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。 
+> この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。 
   
-GetItem 操作の要求メッセージには、他のオプションを検索するには、スキーマの階層構造を表示します。 [GetItem](getitem.md)要素から開始します。 
+GetItem 操作の要求メッセージに関するその他のオプションについては、スキーマ階層を参照してください。 [GetItem](getitem.md)要素から開始します。 
   
-## <a name="successful-getitem-response"></a>GetItem 応答の成功
+## <a name="successful-getitem-response"></a>成功した GetItem 応答
 
 ### <a name="description"></a>説明
 
-GetItem 要求に正常な応答の例を次に示します。 この応答を作成する要求は、IdOnly baseshape を使用します。 この例では、応答は、アイテムの ID だけを返します。 
+次の例は、GetItem 要求に対する正常な応答を示しています。 この応答を作成した要求では、IdOnly baseshape が使用されています。 この例では、応答はアイテムの ID のみを返します。 
   
 > [!NOTE]
-> 品目 ID と変更キーは、読みやすさを保持するために短縮されています。 
+> 読みやすくするために、アイテム ID と変更キーが短縮されています。 
   
 ### <a name="code"></a>コード
 
@@ -92,12 +92,12 @@ GetItem 要求に正常な応答の例を次に示します。 この応答を�
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="602" MinorBuildNumber="0" 
-                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"/>
+                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"/>
   </soap:Header>
   <soap:Body>
-    <GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                   xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                   xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                   xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                   xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -115,10 +115,10 @@ GetItem 要求に正常な応答の例を次に示します。 この応答を�
 
 ### <a name="description"></a>説明
 
-GetItem 要求に正常な応答の例を次に示します。 この応答を作成する要求は、既定の baseshape を使用します。 この例では、応答は、予定表アイテムの既定の図形を返します。
+次の例は、GetItem 要求に対する正常な応答を示しています。 この応答を作成した要求では、既定の baseshape が使用されています。 この例では、応答は予定表アイテムの既定の図形を返します。
   
 > [!NOTE]
-> 品目 ID と変更キーは、読みやすさを保持するために短縮されています。 
+> 読みやすくするために、アイテム ID と変更キーが短縮されています。 
   
 ### <a name="code"></a>コード
 
@@ -129,12 +129,12 @@ GetItem 要求に正常な応答の例を次に示します。 この応答を�
                 xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="602" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"/>
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"/>
   </soap:Header>
   <soap:Body>
-    <GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                     xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                     xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                     xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                     xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -166,7 +166,7 @@ GetItem 要求に正常な応答の例を次に示します。 この応答を�
 
 ### <a name="description"></a>説明
 
-GetItem 要求に正常な応答の例を次に示します。 この応答を作成する要求は、AllProperties baseshape を使用します。 この例では、応答は、予定表アイテムの [AllProperties] 図形を返します。
+次の例は、GetItem 要求に対する正常な応答を示しています。 この応答を作成した要求では、[AllProperties baseshape] が使用されています。 この例では、応答は予定表アイテムの AllProperties 図形を返します。
   
 ### <a name="code"></a>コード
 
@@ -177,12 +177,12 @@ GetItem 要求に正常な応答の例を次に示します。 この応答を�
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="602" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"/>
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"/>
   </soap:Header>
   <soap:Body>
-    <GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                     xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                     xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                     xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                     xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -265,11 +265,11 @@ GetItem 要求に正常な応答の例を次に示します。 この応答を�
 
 ### <a name="comments"></a>コメント
 
-GetItem 操作の応答メッセージには、他のオプションを検索するには、スキーマの階層構造を表示します。 [GetItemResponse](getitemresponse.md)要素から開始します。 
+GetItem 操作の応答メッセージに関するその他のオプションについては、スキーマ階層を参照してください。 [GetItemResponse](getitemresponse.md)要素から開始します。 
   
-### <a name="successful-response-elements"></a>正常な応答の要素
+### <a name="successful-response-elements"></a>成功した応答要素
 
-次の要素は、応答で使用されます。
+応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -283,7 +283,7 @@ GetItem 操作の応答メッセージには、他のオプションを検索す
     
 - [Items](items.md)
     
-- [カレンダー項目](calendaritem.md)
+- [CalendarItem](calendaritem.md)
     
 - [ItemId](itemid.md)
     
@@ -293,11 +293,11 @@ GetItem 操作の応答メッセージには、他のオプションを検索す
     
 - [Sensitivity](sensitivity.md)
     
-- [Body/本文](body.md)
+- [Body](body.md)
     
 - [DateTimeReceived](datetimereceived.md)
     
-- [Size](size.md)
+- [[サイズ]](size.md)
     
 - [Importance](importance.md)
     
@@ -317,7 +317,7 @@ GetItem 操作の応答メッセージには、他のオプションを検索す
     
 - [ResponseObjects](responseobjects.md)
     
-- [ForwardItem](forwarditem.md)
+- [Forwarditem と](forwarditem.md)
     
 - [ReminderDueBy](reminderdueby.md)
     
@@ -329,11 +329,11 @@ GetItem 操作の応答メッセージには、他のオプションを検索す
     
 - [DisplayTo](displayto.md)
     
-- [添付ファイル付き](hasattachments.md)
+- [HasAttachments](hasattachments.md)
     
-- [カルチャ](culture.md)
+- [Culture](culture.md)
     
-- [Start](start.md)
+- [開始](start.md)
     
 - [終わり](end-ex15websvcsotherref.md)
     
@@ -357,9 +357,9 @@ GetItem 操作の応答メッセージには、他のオプションを検索す
     
 - [メールボックス](mailbox.md)
     
-- [名 (EmailAddressType)](name-emailaddresstype.md)
+- [Name (EmailAddressType)](name-emailaddresstype.md)
     
-- [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
+- [EmailAddress (非 Emptystringtype)](emailaddress-nonemptystringtype.md)
     
 - [RoutingType (EmailAddressType)](routingtype-emailaddresstype.md)
     
@@ -373,7 +373,7 @@ GetItem 操作の応答メッセージには、他のオプションを検索す
     
 - [期間 (アイテム)](duration-items.md)
     
-- [タイムゾーン (アイテム)](timezone-item.md)
+- [TimeZone (Item)](timezone-item.md)
     
 - [AppointmentSequenceNumber](appointmentsequencenumber.md)
     

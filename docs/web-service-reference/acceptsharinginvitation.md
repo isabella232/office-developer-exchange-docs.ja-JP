@@ -1,5 +1,5 @@
 ---
-title: AcceptSharingInvitation
+title: AcceptSharingInvitation 状
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3c2a47d6-490d-425b-8893-089a4f8882cd
-description: AcceptSharingInvitation 要素を使用して、別のユーザーの予定表や連絡先のデータへのアクセスを可能にするための招待を承諾します。
-ms.openlocfilehash: 06439739e6cc544d5039ac9d18e0452b1d42a0ed
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: AcceptSharingInvitation 要素は、別のユーザーの予定表または連絡先データへのアクセスを許可する招待を受け入れるために使用されます。
+ms.openlocfilehash: c8cdae707bd122e74fa0e284163d1540d857c3de
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760423"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461710"
 ---
-# <a name="acceptsharinginvitation"></a>AcceptSharingInvitation
+# <a name="acceptsharinginvitation"></a>AcceptSharingInvitation 状
 
-**AcceptSharingInvitation**要素を使用して、別のユーザーの予定表や連絡先のデータへのアクセスを可能にするための招待を承諾します。 
+**Acceptsharinginvitation**要素は、別のユーザーの予定表または連絡先データへのアクセスを許可する招待を受け入れるために使用されます。 
   
 ```xml
 <AcceptSharingInvitation>
@@ -30,7 +30,7 @@ ms.locfileid: "19760423"
 ```
 
  **AcceptSharingInvitationType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,32 +40,32 @@ ms.locfileid: "19760423"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[ReferenceItemId](referenceitemid.md) <br/> |応答オブジェクトが参照する項目を識別します。  <br/> |
+|[ReferenceItemId](referenceitemid.md) <br/> |Response オブジェクトが参照するアイテムを識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ResponseObjects](responseobjects.md) <br/> |Exchange ストア内のアイテムに関連付けられているすべての応答オブジェクトのコレクションが含まれています。  <br/> |
-|[アイテム (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md) <br/> |[ParentFolderId (TargetFolderIdType)](parentfolderid-targetfolderidtype.md)の要素で識別されるフォルダーを作成する項目の配列が含まれています。  <br/> |
+|[ResponseObjects](responseobjects.md) <br/> |Exchange ストア内のアイテムに関連付けられているすべての response オブジェクトのコレクションを格納します。  <br/> |
+|[アイテム (非 Emptyarrayofallitemstype)](items-nonemptyarrayofallitemstype.md) <br/> |[ParentFolderId (TargetFolderIdType)](parentfolderid-targetfolderidtype.md)要素によって識別されるフォルダー内に作成するアイテムの配列が含まれています。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Createitem メソッド (AcceptSharingInvitation)](createitem-acceptsharinginvitation.md)
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [CreateItem (AcceptSharingInvitation)](createitem-acceptsharinginvitation.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

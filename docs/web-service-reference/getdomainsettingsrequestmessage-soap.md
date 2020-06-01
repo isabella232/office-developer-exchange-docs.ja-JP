@@ -9,16 +9,16 @@ api_type:
 - schema
 ms.assetid: 34913595-794c-4c62-9622-877f30931c73
 description: GetDomainSettingsRequestMessage 要素は、GetDomainSettings 操作 (SOAP) 操作要求を表します。
-ms.openlocfilehash: 24af4e3dc18c459f5669ba18f7b8c548fcc748fc
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 71648e3df609edfce73ebccf372a82311c03d49d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760719"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462032"
 ---
 # <a name="getdomainsettingsrequestmessage-soap"></a>GetDomainSettingsRequestMessage (SOAP)
 
-**GetDomainSettingsRequestMessage**要素は、 [GetDomainSettings 操作 (SOAP)](getdomainsettings-operation-soap.md)操作要求を表します。 
+**GetDomainSettingsRequestMessage**要素は、 [getdomainsettings 操作 (SOAP)](getdomainsettings-operation-soap.md)操作要求を表します。 
   
 ```XML
 <GetDomainSettingsRequestMessage>
@@ -26,7 +26,7 @@ ms.locfileid: "19760719"
 </GetDomainSettingsRequestMessage>
 ```
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -36,9 +36,9 @@ ms.locfileid: "19760719"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[要求 (GetDomainSettings) (SOAP)](request-getdomainsettingssoap.md) <br/> |ドメインの設定を取得する要求が含まれています。  <br/> |
+|[Request (GetDomainSettings) (SOAP)](request-getdomainsettingssoap.md) <br/> |ドメイン設定を返す要求が含まれています。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -48,14 +48,14 @@ ms.locfileid: "19760719"
 
 なし。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|スキーマ名  <br/> |スキーマの自動検出  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|スキーマ名  <br/> |自動検出スキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

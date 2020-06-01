@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: fa4b1447-dc7b-47ad-a677-78fcee443dc6
-description: PolicyTag 要素は、アイテムまたはフォルダーの保存期間の識別子を指定します。
-ms.openlocfilehash: d6cd5aab1145f6006912541c8f8c1d0a91d1e17e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: PolicyTag 要素は、アイテムまたはフォルダーの保持識別子を指定します。
+ms.openlocfilehash: ddc4d890d1e514586ba5ea7f6a8b541b2e4786c7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832835"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460898"
 ---
 # <a name="policytag"></a>PolicyTag
 
-**PolicyTag**要素は、アイテムまたはフォルダーの保存期間の識別子を指定します。 
+**Policytag**要素は、アイテムまたはフォルダーの保持識別子を指定します。 
   
 ```xml
 <PolicyTag IsExplicit="true | false"></PolicyTag>
 ```
 
  **RetentionTagType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -32,7 +32,7 @@ ms.locfileid: "19832835"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|IsExplicit  <br/> |ポリシー タグがアイテムまたはフォルダーに明示的に設定するかどうかを示します。  <br/> の**場合は true** 、 **IsExplicit**属性のテキスト値は、ポリシー タグがアイテムまたはフォルダーを明示的に設定されていることを示します。 **False**のテキスト値は、ポリシー タグがアイテムまたはフォルダーの親フォルダーのポリシー タグに基づいて暗黙的に設定されていることを示します。  <br/> |
+|IsExplicit  <br/> |アイテムまたはフォルダーにポリシータグが明示的に設定されているかどうかを示します。  <br/> **IsExplicit**属性のテキスト値が**true の場合**は、ポリシータグがアイテムまたはフォルダーに明示的に設定されていることを示します。 テキスト値が**false**の場合は、親フォルダーポリシータグに基づいてアイテムまたはフォルダーにポリシータグが暗黙的に設定されていることを示します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -40,25 +40,25 @@ ms.locfileid: "19832835"
   
 ### <a name="parent-elements"></a>親要素
 
-[SearchPreviewItem](searchpreviewitem.md) | [アイテム](item.md) | [連絡先](contact.md) | [メッセージ](message-ex15websvcsotherref.md) | [DistributionList](distributionlist.md) | [カレンダー項目](calendaritem.md) | [PostItem](postitem.md) | [タスク](task.md)
+[Searchプレビューアイテム](searchpreviewitem.md)  | [アイテム](item.md)  | [連絡先](contact.md)  | [メッセージ](message-ex15websvcsotherref.md)  | [DistributionList](distributionlist.md)  | [Calendaritem](calendaritem.md)  | [Postitem](postitem.md)  | [タスク](task.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**PolicyTag**要素のテキスト値は、ポリシー タグ識別子です。 ポリシーのタグ識別子は、GUID です。 
+**Policytag**要素のテキスト値は、ポリシータグ識別子です。 ポリシータグ識別子は GUID です。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

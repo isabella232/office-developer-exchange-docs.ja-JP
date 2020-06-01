@@ -1,5 +1,5 @@
 ---
-title: エラー コード (int)
+title: ErrorCode (int)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 65537d96-edf9-41ee-9ad5-91ffe37e2269
-description: エラー コード要素は、メールボックスに対して実行が失敗した検索のエラー コードを指定します。
-ms.openlocfilehash: ed8a7771376f921303ea093f4be727c4146faa76
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ErrorCode 要素は、メールボックスに対して実行された、失敗した検索のエラーコードを指定します。
+ms.openlocfilehash: 24170a56e5fa23c3811fcbd27f0240e6ba3c87b7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760319"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460667"
 ---
-# <a name="errorcode-int"></a>エラー コード (int)
+# <a name="errorcode-int"></a>ErrorCode (int)
 
-**エラー コード**要素は、メールボックスに対して実行が失敗した検索のエラー コードを指定します。 
+**ErrorCode**要素は、メールボックスに対して実行された、失敗した検索のエラーコードを指定します。 
   
 ```XML
 <ErrorCode></ErrorCode>
 ```
 
  **int**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,30 +40,30 @@ ms.locfileid: "19760319"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FailedMailbox](failedmailbox.md) <br/> |メールボックスの保留状態を指定します。  <br/> |
+|[失敗したメールボックス](failedmailbox.md) <br/> |メールボックスの保持状態を指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**エラー コード**要素のテキスト値は、メールボックスに対して実行が失敗した検索で返されるエラー コードです。 
+**ErrorCode**要素のテキスト値は、メールボックスに対して実行された検索でエラーが発生した場合に返されるエラーコードです。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |型のスキーマ  <br/> |
-|検証ファイル  <br/> |types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

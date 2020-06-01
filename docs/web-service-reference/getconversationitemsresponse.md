@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8f271894-01cb-4ee3-ba2f-6464e19518ac
-description: GetConversationItemsResponse 要素は、GetConversationItems 要求への応答を定義します。
-ms.openlocfilehash: b7dbb5cd7c3829d51167cb9499ba80edcd4dbdc3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetConversationItemsResponse 要素は、GetConversationItems 要求に対する応答を定義します。
+ms.openlocfilehash: 8c1663ef757148ecb6ebda059412b4fbdc503d07
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760670"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461087"
 ---
 # <a name="getconversationitemsresponse"></a>GetConversationItemsResponse
 
-**GetConversationItemsResponse**要素は、 **GetConversationItems**要求への応答を定義します。 
+**GetConversationItemsResponse**要素は、 **GetConversationItems**要求に対する応答を定義します。 
   
 ```XML
 <GetConversationItemsResponse>
@@ -26,7 +26,7 @@ ms.locfileid: "19760670"
 ```
 
  **GetConversationItemsResponseType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,19 +42,19 @@ ms.locfileid: "19760670"
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

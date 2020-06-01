@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 52fe1e05-3c50-40a1-8752-5c3c64c9f1ed
-description: RecurringDateTransition 要素は、毎年特定の日に発生するタイム ゾーンの移行を表します。
-ms.openlocfilehash: 7cd8f3452a744e0c9a98fd3698dffb9ed8721a6c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: RecurringDateTransition 要素は、年ごとに特定の日付に発生するタイムゾーンの切り替えを表します。
+ms.openlocfilehash: 2acbd3afb50a92d4e4f3d7b552eecb36fe59be8b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833014"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461577"
 ---
 # <a name="recurringdatetransition"></a>RecurringDateTransition
 
-**RecurringDateTransition**要素は、毎年特定の日に発生するタイム ゾーンの移行を表します。 
+**RecurringDateTransition**要素は、年ごとに特定の日付に発生するタイムゾーンの切り替えを表します。 
   
 ```xml
 <RecurringDateTransition>
@@ -33,7 +33,7 @@ ms.locfileid: "19833014"
 ```
 
  **RecurringDateTransitionType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -43,38 +43,38 @@ ms.locfileid: "19833014"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[To](to.md) <br/> |[TransitionsGroup](transitionsgroup.md)タイム ゾーンの移行の対象となる[期間](period.md)を指定します。  <br/> |
-|[TimeOffset](timeoffset.md) <br/> |タイム ゾーンの移行の世界協定時刻 (UTC) からの期間のオフセットを表します。  <br/> |
-|[月 (タイム ゾーンの切り替え)](month-time-zone-transition.md) <br/> |タイム ゾーンの切り替えが発生する月を表します。  <br/> |
-|[日](day.md) <br/> |タイム ゾーンの切り替えが発生する月の日を表します。  <br/> |
+|[To](to.md) <br/> |タイムゾーンの遷移のターゲットである[期間](period.md)[または時間を指定](transitionsgroup.md)します。  <br/> |
+|[TimeOffset](timeoffset.md) <br/> |タイムゾーンの切り替えについて、世界協定時刻 (UTC) からの時間オフセットを表します。  <br/> |
+|[月 (タイムゾーン切り替え)](month-time-zone-transition.md) <br/> |タイムゾーンの切り替えが行われる月を表します。  <br/> |
+|[Day](day.md) <br/> |タイムゾーンの切り替えが発生する月の日付を表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[遷移](transitions.md) <br/> |タイム ゾーンの切り替え効果のコレクションを表します。  <br/> |
-|[TransitionsGroup](transitionsgroup.md) <br/> |タイム ゾーンの切り替え効果のコレクションを表します。  <br/> |
+|[切り替わる](transitions.md) <br/> |タイムゾーンの遷移のコレクションを表します。  <br/> |
+|[遷移 Tionsgroup](transitionsgroup.md) <br/> |タイムゾーンの遷移のコレクションを表します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-[RecurringDateTransition](recurringdatetransition.md)要素によって表すことができるタイム ゾーンの切り替えの例としては毎年 3 月 15 日に移行します。 
+[RecurringDateTransition](recurringdatetransition.md)要素によって表される可能性があるタイムゾーンの遷移の例としては、毎年3月15日に発生する遷移があります。 
   
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

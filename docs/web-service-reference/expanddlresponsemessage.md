@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 1140601b-98cf-4cb4-a019-321c7f63d5be
-description: ExpandDLResponseMessage 要素には、状態および 1 つの ExpandDL 操作要求の結果が含まれています。
-ms.openlocfilehash: 62a81574f9c513b905a92876b3d757c635b4f07b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ExpandDLResponseMessage 要素には、1つの ExpandDL 操作要求の状態と結果が含まれています。
+ms.openlocfilehash: e186c4e14cbb9c922a4d262c85c130b9c33ff939
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760380"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460639"
 ---
 # <a name="expanddlresponsemessage"></a>ExpandDLResponseMessage
 
-**ExpandDLResponseMessage**要素には、状態および 1 つの結果が含まれている[ExpandDL の操作](expanddl-operation.md)を要求します。 
+**ExpandDLResponseMessage**要素には、1つの[expanddl 操作](expanddl-operation.md)要求の状態と結果が含まれています。 
   
 - [ExpandDLResponse](expanddlresponse.md)  
 - [ResponseMessages](responsemessages.md) 
@@ -39,7 +39,7 @@ ms.locfileid: "19760380"
 
 **ExpandDLResponseMessageType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -47,54 +47,54 @@ ms.locfileid: "19760380"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**ResponseClass** <br/> | [ExpandDL 操作](expanddl-operation.md)応答のステータスについて説明します。<br/><br/>次の値は、この属性の有効です。 <br/> <br/>-成功  <br/>-警告  <br/>-エラー  <br/> |
-|**IndexedPagingOffset** <br/> |インデックス付きページング ビューを使用する場合、次の要求に使用する必要があります次のインデックスを表します。  <br/> |
-|**NumeratorOffset** <br/> |分数のページ ビューを使用する場合、次の要求に使用する新しい分子の値を表します。  <br/> |
-|**AbsoluteDenominator** <br/> |分数形式のページングを実行する場合、次の要求に使用する分母を表します。  <br/> |
-|**IncludesLastItemInRange** <br/> |追加のページングが必要ないことを示します。 この属性は現在の結果には、クエリの最後の項目が含まれている場合は true になります。  <br/> |
-|**TotalItemsInView** <br/> |制限を満たすアイテムの総数を表します。  <br/> |
+|**ResponseClass** <br/> | [Expanddl 操作](expanddl-operation.md)応答の状態を表します。<br/><br/>この属性には、次の値が有効です。 <br/> <br/>-成功  <br/>-Warning  <br/>-エラー  <br/> |
+|**IndexedPagingOffset** <br/> |インデックス付きページングビューが使用されている場合に、次の要求に使用される次のインデックスを表します。  <br/> |
+|**NumeratorOffset** <br/> |分数ページビューが使用されている場合に、次の要求に対して使用する新しい分子の値を表します。  <br/> |
+|**AbsoluteDenominator** <br/> |分数のページングを行うときに、次の要求に対して使用する次の分母を表します。  <br/> |
+|**IncludesLastItemInRange** <br/> |追加のページングを必要としないことを示します。 現在の結果にクエリの最後のアイテムが含まれている場合、この属性は true になります。  <br/> |
+|**TotalItemsInView** <br/> |制限に合格したアイテムの合計数を表します。  <br/> |
    
 #### <a name="responseclass-attribute-values"></a>ResponseClass 属性の値
 
 |**値**|**説明**|
 |:-----|:-----|
-|**Success** <br/> |満了する要求をについて説明します。  <br/> |
-|**Warning** <br/> | 処理されなかった要求をについて説明します。 警告は、要求内のアイテムを処理し、それ以降の項目を処理できませんでした、エラーが発生した場合に返される場合があります。<br/><br/> 警告の送信元の例を次に示します。<br/>  <br/>-Exchange ストアは、バッチの実行中にオフラインです。  <br/>-Active Directory ドメイン サービス (AD DS) では、オフラインです。  <br/>-メールボックスを移動します。  <br/>-メールボックス データベース (MDB) は、オフラインです。  <br/>-パスワードの有効期限が切れています。  <br/>クォータを超過しました。  <br/> |
-|**Error** <br/> | 満たせない要求をについて説明します。<br/><br/> 次に、エラーのソースの例を示します。  <br/><br/>-無効な属性または要素  <br/>属性または要素の範囲を超えています。  <br/>-不明なタグ  <br/>属性または要素のコンテキストでは有効ではないです。  <br/>-任意のクライアントから不正なアクセス試行  <br/>-クライアント側の有効な呼び出しへの応答でサーバー側エラー <br/> <br/>  エラーに関する情報は、 [ResponseCode](responsecode.md)および[メッセージ テキスト](messagetext.md)の要素を参照しています。  <br/> |
+|**Success** <br/> |満たされる要求を記述します。  <br/> |
+|**Warning** <br/> | 処理されなかった要求を示します。 要求内のアイテムが処理され、その後のアイテムを処理できなかったときにエラーが発生した場合は、警告が返されることがあります。<br/><br/> 警告のソースの例を次に示します。<br/>  <br/>-バッチ処理中に Exchange ストアがオフラインになります。  <br/>-Active Directory ドメインサービス (AD DS) がオフラインになっています。  <br/>-メールボックスは移動されます。  <br/>-メールボックスデータベース (MDB) がオフラインになっています。  <br/>-パスワードの有効期限が切れています。  <br/>-クォータを超過しました。  <br/> |
+|**Error** <br/> | 満たされない要求を記述します。<br/><br/> エラーのソースの例を次に示します。  <br/><br/>-無効な属性または要素  <br/>-範囲外の属性または要素  <br/>-不明なタグ  <br/>-コンテキスト内で有効ではない属性または要素  <br/>-クライアントによる権限のないアクセス試行  <br/>-有効なクライアント側の呼び出しに応答した場合のサーバー側障害 <br/> <br/>  エラーに関する情報については、応答[secの](responsecode.md)要素と[messagetext](messagetext.md)要素を参照してください。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[MessageText](messagetext.md) <br/> |応答のステータスの説明を提供します。  <br/> |
-|[ResponseCode](responsecode.md) <br/> |要求で発生した特定のエラーを識別するエラー コードを提供します。  <br/> |
-|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在使用されていない将来の使用に予約されているとします。 0 の値が含まれています。  <br/> |
-|[MessageXml](messagexml.md) <br/> |追加のエラー応答情報を提供します。  <br/> |
-|[DLExpansion](dlexpansion.md) <br/> |配布リストに含まれているメールボックスの配列が含まれています。  <br/> |
+|[MessageText](messagetext.md) <br/> |応答の状態を説明するテキストを提供します。  <br/> |
+|[ResponseCode](responsecode.md) <br/> |要求で発生した特定のエラーを識別するエラーコードを提供します。  <br/> |
+|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在未使用で、今後の使用のために予約されています。 このプロパティには0の値が含まれています。  <br/> |
+|[MessageXml](messagexml.md) <br/> |エラー応答に関する追加情報を提供します。  <br/> |
+|[DLExpansion 展開](dlexpansion.md) <br/> |配布リストに含まれているメールボックスの配列を格納します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Exchange Web サービス要求に対する応答メッセージが含まれています。  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Exchange Web サービス要求に対する応答メッセージを含みます。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、インストールされているクライアント アクセス サーバーの役割と Exchange Server を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされた Exchange Server を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [ExpandDL 操作](expanddl-operation.md)
 - 
   [Exchange 用 EWS リファレンス](ews-reference-for-exchange.md)
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

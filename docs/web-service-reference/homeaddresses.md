@@ -1,5 +1,5 @@
 ---
-title: HomeAddresses
+title: ホームアドレス
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 57fb1b9d-2ba8-4359-ae79-35c0d56a2d0f
-description: HomeAddresses 要素では、ホーム アドレスの配列と関連付けられているペルソナにそのソースの帰属の識別子を指定します。
-ms.openlocfilehash: a9d4ceafcac9cf0809668871b4df932b31525ac8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: '[ホームアドレス] 要素は、関連付けられたペルソナのホームアドレスの配列とそのソース attributions の識別子を指定します。'
+ms.openlocfilehash: d6a1808bf000ac8bca1e2ce7865aa099037c5a5d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831817"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460891"
 ---
-# <a name="homeaddresses"></a>HomeAddresses
+# <a name="homeaddresses"></a>ホームアドレス
 
-**HomeAddresses**要素では、ホーム アドレスの配列と関連付けられているペルソナにそのソースの帰属の識別子を指定します。 
+[ホーム**アドレス**] 要素は、関連付けられたペルソナのホームアドレスの配列とそのソース attributions の識別子を指定します。 
   
 ```XML
 <HomeAddresses>
@@ -26,7 +26,7 @@ ms.locfileid: "19831817"
 ```
 
  **ArrayOfPostalAddressAttributedValuesType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -36,34 +36,34 @@ ms.locfileid: "19831817"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[PostalAddressAttributedValue](postaladdressattributedvalue.md) <br/> |郵送先住所と、関連付けられている帰属の配列のインスタンスを指定します。  <br/> |
+|[PostalAddressAttributedValue](postaladdressattributedvalue.md) <br/> |郵送先住所の配列のインスタンスと、それに関連付けられている attributions を指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ペルソナ](persona.md) <br/> |**GetPersona**の要求によって返されるペルソナ データのセットを指定します。  <br/> |
+|[ユーザー](persona.md) <br/> |**Getpersona**要求によって返される一連のペルソナデータを指定します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |型のスキーマ  <br/> |
-|検証ファイル  <br/> |types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8bc59a26-6fe1-42e9-968c-69a94a3fb0ae
-description: AbsoluteDate 要素は、標準または夏時間から標準時から時間が変更されたときの日付を表します。
-ms.openlocfilehash: d14cafb08297e5be3c8620c441f8b84b46ffe53e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: AbsoluteDate 要素は、標準または夏時間から時刻が変更された日付を表します。
+ms.openlocfilehash: 1874fea02c1eeeb41522046963e1d1b2fcea645a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759360"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461731"
 ---
 # <a name="absolutedate"></a>AbsoluteDate
 
-**AbsoluteDate**要素は、標準または夏時間から標準時から時間が変更されたときの日付を表します。 
+**AbsoluteDate**要素は、標準または夏時間から時刻が変更された日付を表します。 
   
 ```xml
 <AbsoluteDate/>
@@ -29,7 +29,7 @@ ms.locfileid: "19759360"
 
 **date**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -45,29 +45,29 @@ ms.locfileid: "19759360"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Standard](standard.md) <br/> |日付と時刻が変更されたとき夏時間から標準時間への時間を表します。  <br/> |
-|[(夏時間)](daylight.md) <br/> |日付と時刻が変更されたとき標準時間から夏時間への時間を表します。  <br/> |
+|[Standard](standard.md) <br/> |夏時間から標準時までの時刻が変更された日付と時刻を表します。  <br/> |
+|[日光](daylight.md) <br/> |時刻が標準時から夏時間に変更された日付と時刻を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、標準または夏時間から標準時との間の移行が発生した日付を表します。
+Text 値は、標準時または夏時間間の切り替えが行われる日付を表します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 
 
 

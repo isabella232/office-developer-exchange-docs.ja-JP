@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 9ef3569d-ee56-4b22-b008-609fb3337da7
-description: RecurrenceId 要素を使用して、定期的な予定表アイテムの特定のインスタンスを識別します。
-ms.openlocfilehash: 078bec85e1ca1530137f9935365d7dd3e530ea34
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: RecurrenceId 要素は、定期的な予定表アイテムの特定のインスタンスを識別するために使用されます。
+ms.openlocfilehash: 58a379f2cffa7ff37181e93ad1c45c9752e84f1d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833005"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461612"
 ---
 # <a name="recurrenceid"></a>RecurrenceId
 
-**RecurrenceId**要素を使用して、定期的な予定表アイテムの特定のインスタンスを識別します。 
+**RecurrenceId**要素は、定期的な予定表アイテムの特定のインスタンスを識別するために使用されます。 
   
 ```xml
 <RecurrenceId/>
 ```
 
  **dateTime**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,32 +44,32 @@ ms.locfileid: "19833005"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[カレンダー項目](calendaritem.md) <br/> |Exchange 予定表アイテムを表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |会議メッセージを表します。  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |会議出席依頼を表します。  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |会議の返信を表します。  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |会議の取り消し通知を表します。  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |会議出席依頼の返信を表します。  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |会議の取り消しを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、予定表アイテムを識別するための日付/時刻値を表します。
+テキスト値は、予定表の発生を識別する日付/時刻の値を表します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-このプロパティは、定期的な予定表アイテムの特定のインスタンスを識別する[UID](uid.md)プロパティを使用して使用します。 
+このプロパティは、定期的な予定表アイテムの特定のインスタンスを識別するために、 [UID](uid.md)プロパティと共に使用されます。 
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

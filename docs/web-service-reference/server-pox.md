@@ -8,19 +8,19 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 0ce51644-7f3a-408c-a398-814439b658dc
-description: サーバー要素は、メール サーバーの名前を指定します。
-ms.openlocfilehash: fafd6684d0857bd8b7e1bac0aae0ed162a6a938a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Server 要素は、メールサーバーの名前を指定します。
+ms.openlocfilehash: 6b29b153bc75b8836bfa113e126d122d620c2984
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833369"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462011"
 ---
 # <a name="server-pox"></a>サーバー (POX)
 
-**サーバー**要素は、メール サーバーの名前を指定します。 
+**Server**要素は、メールサーバーの名前を指定します。 
   
-[(POX) を自動検出](autodiscover-pox.md)
+[自動検出 (POX)](autodiscover-pox.md)
   
 [応答 (POX)](response-pox.md)
   
@@ -34,7 +34,7 @@ ms.locfileid: "19833369"
 <Server/>
 ```
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -50,15 +50,15 @@ ms.locfileid: "19833369"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
+|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、サーバーを識別します。 POP3、SMTP、IMAP、または NNTP などのプロトコル、ホスト名または IP アドレスのいずれかを指定します。 WEB DAV などのプロトコルの URL になります。
+テキスト値は、サーバーを識別します。 POP3、SMTP、IMAP、NNTP などのプロトコルの場合、この値はホスト名または IP アドレスのいずれかになります。 DAV や WEB などのプロトコルの場合は、URL になります。
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[交換の POX の自動検出の XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+[Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
 

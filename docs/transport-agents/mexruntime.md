@@ -11,19 +11,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: eabb2f12-10a7-4ce2-ae4b-9c04010c765f
-description: '最終更新日: 2015 年 9 月 17 日'
-ms.openlocfilehash: 4a34eedfc16d64cbfa67003ed23cf6eba2bb4bad
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: '最終更新日: 2015 年9月17日'
+ms.openlocfilehash: f192965a8375eb46d1ca5b46d3b768a3299c284d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759259"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461836"
 ---
 # <a name="mexruntime"></a>mexRuntime
   
-**に適用されます:** Exchange Server 2013
+**製品:** Exchange Server 2013
   
-**MexRuntime**要素には、監視エージェントの構成情報および SMTP およびインストールされているルーティング エージェントの構成情報を定義する要素が含まれています。 
+**mexRuntime** 要素には、エージェントの監視に関する構成情報を定義する要素と、SMTP とインストールされている ルーティング エージェントに関する構成情報を定義する要素が含まれます。 
   
 - [構成](configuration.md)  
 - [mexRuntime](mexruntime.md)
@@ -35,9 +35,9 @@ ms.locfileid: "19759259"
 </mexRuntime>
 ```
 
-**mexRuntimeType (複合型)**
+**mexRuntimeType (complexType)**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -47,25 +47,25 @@ ms.locfileid: "19759259"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[監視](monitoring.md) <br/> |トランスポートがインストールされているエージェントを監視する方法とタイミングを定義する構成情報が含まれています。  <br/> |
-|[agentList](agentlist.md) <br/> |インストールされている各エージェントの[エージェント](agent.md)の要素が含まれています。  <br/> |
+|[管理](monitoring.md) <br/> |トランスポートがインストールされているエージェントを監視する方法とタイミングを定義する構成情報が含まれています。  <br/> |
+|[agentList](agentlist.md) <br/> |インストールされている各エージェントの [agent](agent.md) 要素が含まれています。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[構成](configuration.md) <br/> |エージェント構成ファイルのルート要素です。  <br/> |
+|[configuration](configuration.md) <br/> |エージェント構成ファイルのルート要素です。  <br/> |
    
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |このファイルには名前空間が定義されていません。  <br/> |
-|スキーマ名  <br/> |該当なし。  <br/> |
+|Namespace  <br/> |このファイルには名前空間が定義されていません。  <br/> |
+|スキーマ名  <br/> |注意事項なし。  <br/> |
 |検証ファイル  <br/> |該当なし。  <br/> |
-|空に設定可能  <br/> |False。  <br/> |
+|空に設定可能  <br/> |不正解。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

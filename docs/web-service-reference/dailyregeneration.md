@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: cafb57e4-c518-45e0-b565-2babd0dab1df
-description: DailyRegeneration 要素では、日、タスクが再生成される頻度について説明します。
-ms.openlocfilehash: 356f7fd2672b2ad87d17e597c52e9f12273ce3c6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DailyRegeneration 要素は、タスクが再生成される頻度 (日単位) を表します。
+ms.openlocfilehash: 518e4666031131f4a5fc80cc72c28a2110b468c5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759904"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462165"
 ---
 # <a name="dailyregeneration"></a>DailyRegeneration
 
-**DailyRegeneration**要素では、日、タスクが再生成される頻度について説明します。 
+**DailyRegeneration**要素は、タスクが再生成される頻度 (日単位) を表します。 
   
 ```xml
 <DailyRegeneration>
@@ -31,7 +31,7 @@ ms.locfileid: "19759904"
 
 **DailyRegeneratingPatternType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -41,30 +41,30 @@ ms.locfileid: "19759904"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[間隔](interval.md) <br/> |差の日数、連続する 2 つの定期的なアイテムの間隔を定義します。 値は、1 ~ 999 の範囲である必要があります。  <br/> |
+|[間隔](interval.md) <br/> |連続する2つのアイテム間の間隔を日単位で定義します。 この値は、1 ~ 999 の範囲にする必要があります。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[定期的な予定 (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |定期タスクの頻度に関する情報が含まれています。  <br/> |
+|[定期的なアイテム (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |定期的なタスクの定期的なアイテムの情報が含まれています。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

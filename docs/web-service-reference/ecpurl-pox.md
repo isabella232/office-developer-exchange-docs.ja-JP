@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 7cbd6076-9981-4c65-a296-5e57518671b5
-description: EcpUrl 要素は、メールが有効なユーザーの Exchange コントロール パネルの URL を指定します。
-ms.openlocfilehash: 7021ce7129db87d85a35b8274ead9e94f5a59e1a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: EcpUrl 要素は、メールが有効なユーザーの Exchange コントロールパネルの URL を指定します。
+ms.openlocfilehash: b761147dc5912652bca2847bd5ec0d305e0624b3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760182"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461276"
 ---
 # <a name="ecpurl-pox"></a>EcpUrl (POX)
 
-**EcpUrl**要素は、メールが有効なユーザーの Exchange コントロール パネルの URL を指定します。 
+**EcpUrl**要素は、メールが有効なユーザーの Exchange コントロールパネルの URL を指定します。 
   
-[(POX) を自動検出](autodiscover-pox.md)
+[自動検出 (POX)](autodiscover-pox.md)
   
 [応答 (POX)](response-pox.md)
   
@@ -32,7 +32,7 @@ ms.locfileid: "19760182"
 <EcpUrl/>
 ```
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -48,19 +48,19 @@ ms.locfileid: "19760182"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
+|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、ユーザーの Exchange コントロール パネルの URL を表します。
+Text 値は、ユーザーの Exchange コントロールパネルの URL を表します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**EcpUrl**要素は、**プロトコル**要素の省略可能な子要素です。 
+**EcpUrl**要素は、 **Protocol**要素のオプションの子要素です。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[交換の POX の自動検出の XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+[Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
 

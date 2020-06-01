@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 89d7a87e-7c93-49b8-83ec-8798e08c1052
-description: FieldURIOrConstant 要素は、プロパティ、または別のプロパティを比較するときに使用する定数値を表します。
-ms.openlocfilehash: a24c2fa044e03d0ac6f900625e325600903df8d0
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: FieldURIOrConstant 要素は、別のプロパティと比較するときに使用するプロパティまたは定数値のいずれかを表します。
+ms.openlocfilehash: 8b5cb888a3bd2026b15e38fc8c005ab5ef5a2b11
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354226"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461227"
 ---
 # <a name="fielduriorconstant"></a>FieldURIOrConstant
 
-**FieldURIOrConstant**要素は、プロパティ、または別のプロパティを比較するときに使用する定数値を表します。 
+**FieldURIOrConstant**要素は、別のプロパティと比較するときに使用するプロパティまたは定数値のいずれかを表します。 
   
 ```xml
 <FieldURIOrConstant>
@@ -49,7 +49,7 @@ ms.locfileid: "21354226"
 
 **FieldURIOrConstantType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -59,35 +59,35 @@ ms.locfileid: "21354226"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[定数](constant.md) <br/> |制限における定数値を識別します。  <br/> |
-|[FieldURI](fielduri.md) <br/> |URI によって頻繁に参照されるプロパティを識別します。  <br/> |
-|[IndexedFieldURI](indexedfielduri.md) <br/> |辞書の個々 のメンバーを識別します。  <br/> |
+|[定数](constant.md) <br/> |制限で定数値を識別します。  <br/> |
+|[FieldURI](fielduri.md) <br/> |URI で頻繁に参照されるプロパティを識別します。  <br/> |
+|[IndexedFieldURI](indexedfielduri.md) <br/> |辞書の個々のメンバーを識別します。  <br/> |
 |[ExtendedFieldURI](extendedfielduri.md) <br/> |MAPI プロパティを識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[IsEqualTo](isequalto.md) <br/> |プロパティを定数値または別のプロパティを比較し、両者が等しい場合に true に評価する検索式を表します。  <br/> |
-|[IsGreaterThan](isgreaterthan.md) <br/> |定数値を持つプロパティ、または別のプロパティを比較し、最初のプロパティ値が大きい場合に true を返す検索式を表します。  <br/> |
-|[IsGreaterThanOrEqualTo](isgreaterthanorequalto.md) <br/> |プロパティに定数値または別のプロパティを比較し、true を指定すると、最初のプロパティは、以上の 2 番目の値またはプロパティに値を返す検索式を表します。  <br/> |
-|[IsLessThan](islessthan.md) <br/> |定数値を持つプロパティ、または別のプロパティを比較し、最初のプロパティは、2 番目の値やプロパティよりも小さい場合は true を返す検索式を表します。  <br/> |
-|[IsLessThanOrEqualTo](islessthanorequalto.md) <br/> |定数値を持つプロパティ、または別のプロパティを比較し、最初のプロパティは、2 番目の値またはプロパティに等しいかそれより小さい場合は true を返す検索式を表します。  <br/> |
-|[IsNotEqualTo](isnotequalto.md) <br/> |定数値を持つプロパティ、または別のプロパティを比較し、値が同じではない場合は true を返す検索式を表します。  <br/> |
+|[IsEqualTo](isequalto.md) <br/> |プロパティを定数値または別のプロパティと比較し、等しい場合は true に評価される検索式を表します。  <br/> |
+|[IsGreaterThan](isgreaterthan.md) <br/> |プロパティを定数値または別のプロパティと比較し、最初のプロパティが大きくなる場合は true を返す検索式を表します。  <br/> |
+|[IsGreaterThanOrEqualTo](isgreaterthanorequalto.md) <br/> |プロパティを定数値または別のプロパティと比較し、最初のプロパティが2番目の値またはプロパティよりも大きいか等しい場合に true を返す検索式を表します。  <br/> |
+|[IsLessThan](islessthan.md) <br/> |プロパティを定数値または別のプロパティと比較し、最初のプロパティが2番目の値またはプロパティより小さい場合に true を返す検索式を表します。  <br/> |
+|[IsLessThanOrEqualTo](islessthanorequalto.md) <br/> |プロパティを定数値または別のプロパティと比較し、最初のプロパティが2番目の値またはプロパティ以下の場合に true を返す検索式を表します。  <br/> |
+|[IsNotEqualTo](isnotequalto.md) <br/> |プロパティを定数値または別のプロパティと比較し、値が同じでない場合は true を返す検索式を表します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
   
 ## <a name="example"></a>例
 
-次の XML の例では、定数と URI のフィールドの両方で使用する FieldURIOrConstant 要素を示します。
+次の XML の例は、定数とフィールド URI の両方で使用される FieldURIOrConstant 要素を示しています。
   
 ```xml
 <Restriction>
-  <Or xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+  <Or xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
     <IsEqualTo>
       <FieldURI FieldURI="item:DateTimeCreated"/>
       <FieldURIOrConstant>
@@ -104,16 +104,16 @@ ms.locfileid: "21354226"
 </Restriction>
 ```
 
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

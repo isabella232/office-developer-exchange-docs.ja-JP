@@ -1,5 +1,5 @@
 ---
-title: CopyItem の操作
+title: CopyItem 操作
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,32 +11,32 @@ api_name:
 api_type:
 - schema
 ms.assetid: bcc68f9e-d511-4c29-bba6-ed535524624a
-description: CopyItem の操作は、項目をコピーし、別のフォルダーにアイテムを配置します。
-ms.openlocfilehash: 95d2371e9185aa25f40eaec37dda54276a54d321
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: CopyItem 操作は、アイテムをコピーし、アイテムを別のフォルダーに配置します。
+ms.openlocfilehash: ec07700a5ebbdc8774aa2134919634b8dfd02406
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759783"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462179"
 ---
-# <a name="copyitem-operation"></a>CopyItem の操作
+# <a name="copyitem-operation"></a>CopyItem 操作
 
-**CopyItem**の操作は、項目をコピーし、別のフォルダーにアイテムを配置します。 
+**Copyitem**操作は、アイテムをコピーし、アイテムを別のフォルダーに配置します。 
   
 ## <a name="copyitem-request-example"></a>CopyItem 要求の例
 
 ### <a name="description"></a>説明
 
-**CopyItem**要求の次の例では、受信トレイにアイテムをコピーするための要求を作成する方法を示します。 
+次の**Copyitem**要求の例は、受信トレイにアイテムをコピーする要求を作成する方法を示しています。 
   
 ### <a name="code"></a>コード
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <CopyItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CopyItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ToFolderId>
         <t:DistinguishedFolderId Id="inbox"/>
       </ToFolderId>
@@ -51,11 +51,11 @@ ms.locfileid: "19759783"
 ### <a name="comments"></a>コメント
 
 > [!NOTE]
-> フォルダー ID と変更キーは、読みやすさを保持するために短縮されています。 
+> 読みやすくするために、フォルダー ID と変更キーが短縮されています。 
   
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-次の要素は、要求で使用されます。
+要求では、次の要素が使用されます。
   
 - [CopyItem](copyitem.md)
     
@@ -63,22 +63,22 @@ ms.locfileid: "19759783"
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
-- [Itemid](itemids.md)
+- [ItemIds](itemids.md)
     
 - [ItemId](itemid.md)
     
 > [!NOTE]
-> この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあります。 
+> この要素を記述するスキーマは、Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。 
   
-**CopyItem**操作の要求メッセージには、他のオプションを検索するには、スキーマの階層構造を表示します。 [CopyItem](copyitem.md)要素から開始します。 
+**Copyitem**操作の要求メッセージに関するその他のオプションについては、スキーマ階層を参照してください。 [Copyitem](copyitem.md)要素から開始します。 
   
-## <a name="successful-copyitem-response"></a>CopyItem の正常な応答
+## <a name="successful-copyitem-response"></a>成功した CopyItem 応答
 
 ### <a name="description"></a>説明
 
-**CopyItem**要求に正常な応答の例を次に示します。 
+次の例は、 **Copyitem**要求に対する正常な応答を示しています。 
   
-応答メッセージでは、新しい項目の項目の識別子が返されます。 **CopyItem**のパブリック フォルダーの管理には、間のメールボックスまたはメールボックスの応答に項目の識別子は返されません。 
+新しいアイテムのアイテム識別子は、応答メッセージで返されます。 メールボックス間またはメールボックスからパブリックフォルダー **Copyitem**操作への応答では、アイテム識別子は返されません。 
   
 ### <a name="code"></a>コード
 
@@ -89,12 +89,12 @@ ms.locfileid: "19759783"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="595" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <CopyItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                      xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CopyItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                      xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CopyItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -110,9 +110,9 @@ ms.locfileid: "19759783"
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a>正常な応答の要素
+### <a name="successful-response-elements"></a>成功した応答要素
 
-次の要素は、応答で使用されます。
+応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -126,13 +126,13 @@ ms.locfileid: "19759783"
     
 - [Items](items.md)
     
-**CopyItem**操作の応答メッセージには、他のオプションを検索するには、スキーマの階層構造を表示します。 [CopyItemResponse](copyitemresponse.md)要素から開始します。 
+**Copyitem**操作の応答メッセージに関するその他のオプションについては、スキーマ階層を参照してください。 [Copyitemresponse](copyitemresponse.md)要素から開始します。 
   
 ## <a name="copyitem-error-response"></a>CopyItem エラー応答
 
 ### <a name="description"></a>説明
 
-**CopyItem**要求に対してエラー応答の例を次に示します。 
+次の例は、 **Copyitem**要求に対するエラー応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -143,12 +143,12 @@ ms.locfileid: "19759783"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="595" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <CopyItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                      xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CopyItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                      xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CopyItemResponseMessage ResponseClass="Error">
           <m:MessageText>Id is malformed.</m:MessageText>
@@ -162,7 +162,7 @@ ms.locfileid: "19759783"
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a>エラー応答の要素
+### <a name="error-response-elements"></a>エラー応答要素
 
 エラー応答では、次の要素が使用されます。
   
@@ -182,11 +182,11 @@ ms.locfileid: "19759783"
     
 - [Items](items.md)
     
-**CopyItem**操作の応答のエラー メッセージには、他のオプションを検索するには、スキーマの階層構造を表示します。 [CopyItemResponse](copyitemresponse.md)要素から開始します。 
+**Copyitem**操作のエラー応答メッセージに関するその他のオプションについては、「スキーマ階層」を参照してください。 [Copyitemresponse](copyitemresponse.md)要素から開始します。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

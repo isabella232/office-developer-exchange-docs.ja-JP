@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 55e17121-aad0-4f90-889f-2c3512e9579c
-description: CanDelete 要素は、顧客が管理対象のフォルダーを削除できるかどうかを示します。
-ms.openlocfilehash: b70b28bd6b3c9452f5d7f249f453218d555754da
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: CanDelete 要素は、管理フォルダーを顧客が削除できるかどうかを示します。
+ms.openlocfilehash: 5fe16c276bdb0c5b3b73ca63099559d3e869db3e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759607"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461591"
 ---
 # <a name="candelete"></a>CanDelete
 
-**CanDelete**要素は、顧客が管理対象のフォルダーを削除できるかどうかを示します。 
+**Candelete**要素は、管理フォルダーを顧客が削除できるかどうかを示します。 
   
 ```xml
 <CanDelete/>
 ```
 
- **ブール型 (Boolean)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,26 +44,26 @@ ms.locfileid: "19759607"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ManagedFolderInformation](managedfolderinformation.md) <br/> |管理フォルダーに関する情報が含まれています。  <br/> |
+|[ManagedFolderInformation](managedfolderinformation.md) <br/> |管理フォルダーに関する情報を格納します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-ブール値を表す文字列値は、この要素が存在する場合に必要です。 **True**を示します、フォルダーを削除できます。**false**の値は、フォルダーを削除できないことを意味します。 
+この要素が存在する場合は、ブール値を表すテキスト値が必要です。 値が**true の場合**は、フォルダーを削除できることを示します。値が**false**の場合は、フォルダーを削除できないことを意味します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-管理フォルダーを削除するには、 [DeleteFolder 操作](deletefolder-operation.md)を使用します。
+管理フォルダーを削除するには、 [deletefolder 操作](deletefolder-operation.md)を使用します。
   
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -72,8 +72,8 @@ MicrosoftExchange Server 2007 がインストールされているクライア�
 [CreateManagedFolder 操作](createmanagedfolder-operation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 
 
-[フォルダーを削除します。](http://msdn.microsoft.com/library/1958add5-5071-4239-adb2-40f7a7d74aee%28Office.15%29.aspx)
+[フォルダーの削除](https://msdn.microsoft.com/library/1958add5-5071-4239-adb2-40f7a7d74aee%28Office.15%29.aspx)
 

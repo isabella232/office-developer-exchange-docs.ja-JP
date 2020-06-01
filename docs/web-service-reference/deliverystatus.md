@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: eab55db3-affb-42be-a586-5caa04052433
-description: DeliveryStatus 要素は、メッセージのステータスを指定します。
-ms.openlocfilehash: 4e6f31e8ef4f98d8e838ba91167c7dd5d6ab2590
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DeliveryStatus 要素は、メッセージの状態を指定します。
+ms.openlocfilehash: ae32202284d3dd272f693fbb7b76070cb6019d28
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760006"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461402"
 ---
 # <a name="deliverystatus"></a>DeliveryStatus
 
-**DeliveryStatus**要素は、メッセージのステータスを指定します。 
+**Deliverystatus**要素は、メッセージの状態を指定します。 
   
 ```XML
 <DeliveryStatus>Unsuccessful | Pending | Delivered | Transferred | Read</DeliveryStatus>
 ```
 
  **MessageTrackingDeliveryStatusType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,38 +44,38 @@ ms.locfileid: "19760006"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |受信者の 1 つのイベントの情報が含まれています。  <br/> |
+|[受信者 Trackingイベント](recipienttrackingevent.md) <br/> |受信者に対する1つのイベントに関する情報が含まれています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**DeliveryStatus**要素の可能なテキスト値を次の表に一覧します。 
+**Deliverystatus**要素の使用可能なテキスト値を次の表に示します。 
   
 **DeliveryStatus 要素の値**
 
 |**値**|**説明**|
 |:-----|:-----|
-|失敗しました。  <br/> |メッセージが配信されなかったことを指定します。  <br/> |
-|Pending  <br/> |メッセージがモデレーターの承認を待機しているかを指定します。  <br/> |
-|配信  <br/> |すべての指定された受信者にメッセージが配信されたことを指定します。  <br/> |
-|転送  <br/> |検索範囲外のサーバにメッセージが転送されたことを指定します。  <br/> |
-|読み取り  <br/> |メッセージが配信され、受信者が読み取ることを指定します。  <br/> |
+|いか  <br/> |メッセージが配信されなかったことを指定します。  <br/> |
+|Pending  <br/> |メッセージがモデレーターからの承認を待機していることを指定します。  <br/> |
+|届け  <br/> |メッセージが指定されたすべての受信者に配信されたことを示します。  <br/> |
+|付与  <br/> |メッセージが検索範囲外のサーバーに転送されたことを示します。  <br/> |
+|Read  <br/> |受信者によってメッセージが配信および開封されたことを示します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**DeliveryStatus**要素は、[Exchange Server 2010 の型**MessageTrackingDeliveryStatusType**のでした。 
+**Deliverystatus**要素の種類は、Exchange Server 2010 の**Messagetrackingdeliverystatustype**た。 
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

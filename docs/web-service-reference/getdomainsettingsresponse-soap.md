@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 43ebd17b-3a70-4878-9254-97a4c2c87b77
-description: GetDomainSettingsResponse 要素は、ドメインの設定を返す GetDomainSettings 操作 (SOAP) への応答を表します。
-ms.openlocfilehash: c4984c2c6c532fcbd45c1a75733e578f6d9491fa
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetDomainSettingsResponse 要素は、GetDomainSettings 操作 (SOAP) への応答を表します。これにより、ドメインの設定が返されます。
+ms.openlocfilehash: 94cb202948e6a0d5a34f5547132c052d1d1b6a40
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760700"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461878"
 ---
 # <a name="getdomainsettingsresponse-soap"></a>GetDomainSettingsResponse (SOAP)
 
-**GetDomainSettingsResponse**要素は、 [GetDomainSettings 操作 (SOAP)](getdomainsettings-operation-soap.md)、ドメインの設定を返す応答を表します。
+**Getdomainsettingsresponse**要素は、 [getdomainsettings 操作 (SOAP)](getdomainsettings-operation-soap.md)への応答を表します。これにより、ドメインの設定が返されます。
   
 ```XML
 <GetDomainSettingsResponse>
@@ -29,7 +29,7 @@ ms.locfileid: "19760700"
 ```
 
  **GetDomainSettingsResponse**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -39,11 +39,11 @@ ms.locfileid: "19760700"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[DomainResponses (SOAP)](domainresponses-soap.md) <br/> |要求された各ドメインの設定の応答の配列が含まれています。  <br/> |
-|[エラー コード (SOAP)](errorcode-soap.md) <br/> |自動検出サービスによって返されるエラー コードを表します。  <br/> |
-|[エラー メッセージ (SOAP)](errormessage-soap.md) <br/> |自動検出サービスによって返されるエラー コードに関連付けられているメッセージを表します。  <br/> |
+|[DomainResponses (SOAP)](domainresponses-soap.md) <br/> |要求された各ドメインの設定に対する応答の配列を格納します。  <br/> |
+|[ErrorCode (SOAP)](errorcode-soap.md) <br/> |自動検出サービスによって返されるエラーコードを表します。  <br/> |
+|[ErrorMessage (SOAP)](errormessage-soap.md) <br/> |自動検出サービスによって返されるエラーコードに関連付けられているメッセージを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -53,14 +53,14 @@ ms.locfileid: "19760700"
 
 なし。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|スキーマ名  <br/> |スキーマの自動検出  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|スキーマ名  <br/> |自動検出スキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -6,24 +6,24 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 1864182b-26f1-444e-b697-a654c2f68982
-description: FileExtension 要素は、ファイルの拡張子を表します。
-ms.openlocfilehash: fb3af508d3b4033871f349eac35ddc270c9d9cb6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: FileExtension 要素は、ファイル拡張子を表します。
+ms.openlocfilehash: a96a1eaa7339021188a768a980c13350be00e8ac
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760488"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461010"
 ---
 # <a name="fileextension-soap"></a>FileExtension (SOAP)
 
-**FileExtension**要素は、ファイルの拡張子を表します。 
+**Fileextension**要素は、ファイル拡張子を表します。 
   
 ```XML
 <FileExtension/>
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -39,20 +39,20 @@ ms.locfileid: "19760488"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[SupportedFileExtensions (SOAP)](supportedfileextensions-soap.md) <br/> |場所を共有するドキュメントのファイル拡張子の一覧が含まれています。  <br/> |
+|[SupportedFileExtensions (SOAP)](supportedfileextensions-soap.md) <br/> |ドキュメント共有の場所にあるファイル拡張子の一覧が含まれています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**FileExtension**要素のテキスト値は、ドキュメントの場所を共有するための有効なファイル拡張子です。 
+**Fileextension**要素のテキスト値は、ドキュメント共有の場所に対する有効なファイル拡張子です。 
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|スキーマ名  <br/> |スキーマの自動検出  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|スキーマ名  <br/> |自動検出スキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -61,7 +61,7 @@ ms.locfileid: "19760488"
 [GetUserSettings 操作 (SOAP)](getusersettings-operation-soap.md)
 
 
-[Exchange の自動検出 web サービスの参照](autodiscover-web-service-reference-for-exchange.md)
+[Exchange 用自動検出 Web サービス リファレンス](autodiscover-web-service-reference-for-exchange.md)
   
-[Exchange 2013 の自動検出の XML 要素を SOAP](soap-autodiscover-xml-elements-for-exchange-2013.md)
+[Exchange 2013 の SOAP 自動検出 XML 要素](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

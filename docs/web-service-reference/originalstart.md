@@ -12,23 +12,23 @@ api_type:
 - schema
 ms.assetid: 4599dd34-15ee-4d57-b886-732081b50784
 description: OriginalStart 要素は、予定表アイテムの元の開始時刻を表します。
-ms.openlocfilehash: 9e5facb3df87ab08e05f23258abdf1767fae64e4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 5346a65c432b8e96cb95e412e3e88fbc40ce36e8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832668"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462368"
 ---
 # <a name="originalstart"></a>OriginalStart
 
-**OriginalStart**要素は、予定表アイテムの元の開始時刻を表します。 
+**Originalstart**要素は、予定表アイテムの元の開始時刻を表します。 
   
 ```xml
 <OriginalStart/>
 ```
 
  **DateTime**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,32 +44,32 @@ ms.locfileid: "19832668"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[カレンダー項目](calendaritem.md) <br/> |Exchange ストア内の予定表アイテムを表します。  <br/> |
-|[FirstOccurrence](firstoccurrence.md) <br/> |定期的な予定表アイテムが最初に見つかった位置を表します。  <br/> |
-|[LastOccurrence](lastoccurrence.md) <br/> |定期的な予定表アイテムが最後に見つかった位置を表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Exchange ストア内の予定表アイテムを表します。  <br/> |
+|[FirstOccurrence](firstoccurrence.md) <br/> |定期的な予定表アイテムの最初の出現を表します。  <br/> |
+|[LastOccurrence](lastoccurrence.md) <br/> |定期的な予定表アイテムの最後の発生を表します。  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議出席依頼を表します。  <br/> |
-|[出現](occurrence.md) <br/> |定期的な予定表アイテムの 1 つの変更されたアイテムを表します。  <br/> |
+|[発生](occurrence.md) <br/> |定期的な予定表アイテムの1つの変更されたアイテムを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-日付と時刻を表すテキスト値は、この要素を使用する場合に必要です。
+この要素を使用する場合は、日付と時刻を表すテキスト値が必要です。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

@@ -1,5 +1,5 @@
 ---
-title: 構成
+title: 環境
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,19 +11,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6fc04e4d-657a-4999-9431-186ccb7832b5
-description: '最終更新日: 2015 年 9 月 17 日'
-ms.openlocfilehash: 342e52e879534b6a130d286d358138c6095e4563
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: '最終更新日: 2015 年9月17日'
+ms.openlocfilehash: b886851b9a0c17d58428f49281d664930d0e4070
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759229"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461563"
 ---
-# <a name="configuration"></a>configuration
+# <a name="configuration"></a>環境
   
-**に適用されます:** Exchange Server 2013
+**製品:** Exchange Server 2013
   
-**構成**要素は、エージェント構成ファイルのルート要素です。 
+**configuration** 要素は、エージェント構成ファイルのルート要素です。 
   
 - [構成](configuration.md) 
 - [mexRuntime](mexruntime.md)
@@ -34,9 +34,9 @@ ms.locfileid: "19759229"
 </configuration>
 ```
 
-**configurationType (複合型)**
+**configurationType (complexType)**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -46,7 +46,7 @@ ms.locfileid: "19759229"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
 |[mexRuntime](mexruntime.md) <br/> |エージェントの監視に関する構成情報を定義する要素と、インストールされているエージェントの SMTP およびルーティングに関する構成情報を定義する要素を格納します。  <br/> |
    
@@ -54,14 +54,14 @@ ms.locfileid: "19759229"
 
 なし。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |このファイルには名前空間が定義されていません。  <br/> |
-|スキーマ名  <br/> |該当なし。  <br/> |
+|Namespace  <br/> |このファイルには名前空間が定義されていません。  <br/> |
+|スキーマ名  <br/> |注意事項なし。  <br/> |
 |検証ファイル  <br/> |該当なし。  <br/> |
-|空に設定可能  <br/> |False。  <br/> |
+|空に設定可能  <br/> |不正解。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

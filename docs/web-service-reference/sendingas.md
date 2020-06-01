@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: b43ce19f-9ab0-4946-acb2-c5aafead9d35
-description: SendingAs 要素は、ユーザーが送信しようとする電子メール アドレスを表します。
-ms.openlocfilehash: a5468ddb8facf99038d319252f7e1c780a888ca1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: SendingAs 要素は、ユーザーが送信しようとしている電子メールアドレスを表します。
+ms.openlocfilehash: cd11bd60cbbe3434fcc1b0b9a1cfe0de9f0b1e21
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833338"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462137"
 ---
 # <a name="sendingas"></a>SendingAs
 
-**SendingAs**要素は、ユーザーが送信しようとする電子メール アドレスを表します。 
+**SendingAs**要素は、ユーザーが送信しようとしている電子メールアドレスを表します。 
   
 ```XML
 <SendingAs>
@@ -34,7 +34,7 @@ ms.locfileid: "19833338"
 ```
 
  **EmailAddressType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,40 +44,40 @@ ms.locfileid: "19833338"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[名 (EmailAddressType)](name-emailaddresstype.md) <br/> |メールボックス ユーザーの名前を表します。 この要素はオプションです。  <br/> |
-|[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |メールボックスのユーザーのプライマリ簡易メール転送プロトコル (SMTP) アドレスを定義します。 この要素はオプションです。  <br/> |
-|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |メールボックスのアドレスの種類を定義します。 既定値は、SMTP です。 この要素はオプションです。  <br/> |
-|[MailboxType](mailboxtype.md) <br/> |電子メール ユーザーで表されるメールボックスの種類を表します。 この要素はオプションです。  <br/> |
-|[ItemId](itemid.md) <br/> |ユーザーのアドレス帳フォルダーから受信者の連絡先または個人用配布リストの項目の識別子を定義します。 この要素はオプションです。  <br/> |
+|[Name (EmailAddressType)](name-emailaddresstype.md) <br/> |メールボックスユーザーの名前を表します。 この要素は省略できます。  <br/> |
+|[EmailAddress (非 Emptystringtype)](emailaddress-nonemptystringtype.md) <br/> |メールボックスユーザーのプライマリ簡易メール転送プロトコル (SMTP) アドレスを定義します。 この要素は省略できます。  <br/> |
+|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |メールボックスのアドレスの種類を定義します。 既定値は SMTP です。 この要素は省略できます。  <br/> |
+|[MailboxType](mailboxtype.md) <br/> |電子メールユーザーによって表されるメールボックスの種類を表します。 この要素は省略できます。  <br/> |
+|[ItemId](itemid.md) <br/> |ユーザーの連絡先フォルダーにある受信者の連絡先またはプライベート配布リストのアイテム識別子を定義します。 この要素は省略できます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetMailTips](getmailtips.md) <br/> |受信者とメール ヒントの種類を取得するのにが含まれています。  <br/> |
+|[GetMailTips](getmailtips.md) <br/> |取得するメールヒントの受信者と種類が含まれています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

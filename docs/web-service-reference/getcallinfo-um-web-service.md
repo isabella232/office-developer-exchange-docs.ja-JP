@@ -11,16 +11,16 @@ api_type:
 - schema
 ms.assetid: 2758904d-ffb0-46ee-a134-e6394276996c
 description: GetCallInfo 要素は、呼び出しに関する情報を取得する要求を定義します。
-ms.openlocfilehash: 749a47abf4dd9ac70c6b29968f36c93988a1d6fe
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 34e743b561aa56a9312a82bad4b504ed3870129d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760647"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461220"
 ---
 # <a name="getcallinfo-um-web-service"></a>GetCallInfo (UM web サービス)
 
-**GetCallInfo**要素は、呼び出しに関する情報を取得する要求を定義します。 
+**Getcallinfo**要素は、呼び出しに関する情報を取得する要求を定義します。 
   
 [GetCallInfo (UM web サービス)](getcallinfo-um-web-service.md)
   
@@ -31,7 +31,7 @@ ms.locfileid: "19760647"
 ```
 
  **complexType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -41,9 +41,9 @@ ms.locfileid: "19760647"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[CallId (UM web サービス)](callid-um-web-service.md) <br/> |に関する情報を取得する呼び出しの id が含まれています。  <br/> |
+|[CallId (UM web サービス)](callid-um-web-service.md) <br/> |情報を取得する通話の識別子が含まれています。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -53,14 +53,14 @@ ms.locfileid: "19760647"
 
 なし。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |スキーマ名  <br/> |メッセージ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -1,5 +1,5 @@
 ---
-title: FailedMailboxes
+title: 失敗したメールボックス
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f34fb6f6-057e-4ae3-8e10-bc92112eafba
-description: FailedMailboxes 要素は、検索に失敗したメールボックスの配列を指定します。
-ms.openlocfilehash: f68cc29dc9da3b1b74369aa21cde65866e42f3b8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Failed メールボックス要素は、検索で失敗したメールボックスの配列を指定します。
+ms.openlocfilehash: 10f10d3f2ac4379d7ddcb3a13019d17a17bb676a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760463"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461955"
 ---
-# <a name="failedmailboxes"></a>FailedMailboxes
+# <a name="failedmailboxes"></a>失敗したメールボックス
 
-**FailedMailboxes**要素は、検索に失敗したメールボックスの配列を指定します。 
+Failed**メールボックス**要素は、検索で失敗したメールボックスの配列を指定します。 
   
 ```XML
 <FailedMailboxes>
@@ -26,7 +26,7 @@ ms.locfileid: "19760463"
 ```
 
  **ArrayOfFailedSearchMailboxesType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -36,34 +36,34 @@ ms.locfileid: "19760463"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[FailedMailbox](failedmailbox.md) <br/> |検索に失敗したメールボックスは、エラー メッセージを指定します。  <br/> |
+|[失敗したメールボックス](failedmailbox.md) <br/> |検索で失敗したメールボックスのエラーメッセージを指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[SearchMailboxesResult](searchmailboxesresult.md) <br/> |**SearchMailboxes**要求の結果が含まれています。  <br/> |
+|[SearchMailboxesResult](searchmailboxesresult.md) <br/> |**Searchmailboxes ボックス**要求の結果が含まれます。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |型のスキーマ  <br/> |
-|検証ファイル  <br/> |types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

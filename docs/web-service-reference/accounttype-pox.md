@@ -8,19 +8,19 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 1e87e78e-d143-4abc-b753-386500d227a5
-description: AccountType 要素では、アカウントの種類を表します。
-ms.openlocfilehash: f2f6f14df180a68b9e68b10e8f88e44a0bc24c6d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: AccountType 要素は、アカウントの種類を表します。
+ms.openlocfilehash: 20ff7cf4e73f1b50668616d3f11edeeb1409815e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760430"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462312"
 ---
 # <a name="accounttype-pox"></a>AccountType (POX)
 
-**AccountType**要素では、アカウントの種類を表します。 
+**AccountType**要素は、アカウントの種類を表します。 
   
-- [(POX) を自動検出](autodiscover-pox.md)
+- [自動検出 (POX)](autodiscover-pox.md)
   
 - [応答 (POX)](response-pox.md)
   
@@ -32,7 +32,7 @@ ms.locfileid: "19760430"
 <AccountType>email</AccountType>
 ```
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -48,13 +48,13 @@ ms.locfileid: "19760430"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[アカウント (POX)](account-pox.md) <br/> |ユーザーのアカウントの設定を指定します。  <br/> |
+|[アカウント (POX)](account-pox.md) <br/> |ユーザーのアカウント設定を指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、アカウントの種類を表します。 使用可能な値は、**電子メール**、電子メール サーバーの設定を表しています。 
+Text 値は、アカウントの種類を表します。 指定可能な値は**email**で、電子メールサーバーの設定を示します。 
   
 ## <a name="see-also"></a>関連項目
 
-- [交換の POX の自動検出の XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+- [Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
 

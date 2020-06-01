@@ -1,5 +1,5 @@
 ---
-title: ユーザー (SOAP)
+title: Users (SOAP)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 4e051617-4eea-47d0-871a-ea1f17a0f711
-description: ユーザーの要素は、設定を取得する対象となるユーザーの電子メール アドレスのコレクションを表します。
-ms.openlocfilehash: d7655f0020a315dcb32adbbc58610ca0e630c1fc
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Users 要素は、設定を取得する必要があるユーザーの電子メールアドレスのコレクションを表します。
+ms.openlocfilehash: 851447a2918e365b7c5d8812a61c9d425d26ffa2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839952"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461899"
 ---
-# <a name="users-soap"></a>ユーザー (SOAP)
+# <a name="users-soap"></a>Users (SOAP)
 
-**ユーザー**の要素は、設定を取得する対象となるユーザーの電子メール アドレスのコレクションを表します。 
+**Users**要素は、設定を取得する必要があるユーザーの電子メールアドレスのコレクションを表します。 
   
 ```XML
 <Users>
@@ -27,7 +27,7 @@ ms.locfileid: "19839952"
 ```
 
  **Users**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -37,29 +37,29 @@ ms.locfileid: "19839952"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[ユーザー (SOAP)](user-soap.md) <br/> |ユーザーの電子メール アドレスを表します。  <br/> |
+|[User (SOAP)](user-soap.md) <br/> |ユーザーの電子メールアドレスを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetUserSettingsRequest (SOAP)](getusersettingsrequest-soap.md) <br/> |1 つまたは複数のユーザーに対して指定した設定を取得する要求を表します。  <br/> |
-|[要求 (SOAP)](request-soap.md) <br/> |要求された構成設定とユーザーを対象に含まれています。  <br/> |
+|[GetUserSettingsRequest (SOAP)](getusersettingsrequest-soap.md) <br/> |1人または複数のユーザーに対して指定された設定を取得する要求を表します。  <br/> |
+|[要求 (SOAP)](request-soap.md) <br/> |要求された構成設定と対象ユーザーが含まれます。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|スキーマ名  <br/> |スキーマの自動検出  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|スキーマ名  <br/> |自動検出スキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

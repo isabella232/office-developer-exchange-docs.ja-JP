@@ -11,29 +11,29 @@ api_name:
 api_type:
 - schema
 ms.assetid: a4a953b8-0710-416c-95ef-59e51eba9982
-description: 予定表ビューの要素は、カレンダーに表示される、一連の予定表のアイテムを返すよう FindItem 操作を定義します。
-ms.openlocfilehash: 79b5ad268a8013092c1122c99bdcd10d876abf2c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: CalendarView 要素は、カレンダーに表示されているように、セット内の予定表アイテムを返す FindItem 操作を定義します。
+ms.openlocfilehash: e547a4b2db5c09ebefd9a072da6cc4733818002e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759601"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462263"
 ---
 # <a name="calendarview"></a>CalendarView
 
-**予定表ビュー**の要素は、カレンダーに表示される、一連の予定表のアイテムを返すよう、 [FindItem 操作](finditem-operation.md)を定義します。 
+**CalendarView**要素は、カレンダーに表示されているように、セット内の予定表アイテムを返す[FindItem 操作](finditem-operation.md)を定義します。 
   
 [FindItem](finditem.md)
   
-[予定表ビュー](calendarview.md)
+[CalendarView](calendarview.md)
   
 ```XML
 <CalendarView MaxEntriesReturned="" StartDate="" EndDate="" />
 ```
 
-**予定表ビュー**
+**CalendarView**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -41,9 +41,9 @@ ms.locfileid: "19759601"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**MaxEntriesReturned** <br/> |FindItem 応答で返す結果の最大数をについて説明します。  <br/> |
-|**開始日** <br/> |予定表アイテムに対してクエリを実行する期間の開始を識別します。 終了時刻は**開始日**は返されません。 前にあるすべての予定表アイテム。 2006 のように、世界協定時刻 (UTC) 形式で**開始日**の値を指定することができます-01-02T12:00:00Z、2006年のように、ローカル時刻とタイム ゾーンのオフセットが指定されている形式で、または -01-02T04:00:00-08時 00分です。  <br/><br/>この属性は、必要があります。  <br/> |
-|**終了日** <br/> |予定表アイテムに対してクエリを実行時間の範囲の末尾を識別します。 開始時刻または**終了日**の後にあるすべての予定表アイテムは返されません。 2006 のように、UTC 形式で**終了日**の値を指定することができます-02-02T12:00:00Z、2006年のように、ローカル時刻とタイム ゾーンのオフセットが指定されている形式で、または -02-02T04:00:00-08時 00分です。  <br/><br/>**終了日**が**開始日**は以上にする必要があります。それ以外の場合、エラーが返されます。 この属性は、必要があります。  <br/> |
+|**MaxEntriesReturned** <br/> |FindItem 応答で返される結果の最大数を表します。  <br/> |
+|**StartDate** <br/> |予定表アイテムを照会する期間の開始日を識別します。 終了時刻**が開始日より前**のすべての予定表アイテムは返されません。 **StartDate**の値は協定世界時 (UTC) 形式で指定できます。2006年-01-02T12:00: 00z、または現地時刻とタイムゾーンオフセットが指定されている形式 (2006-01-02T12:00:00-08:00) で指定できます。  <br/><br/>この属性は必須です。  <br/> |
+|**EndDate** <br/> |予定表アイテムを照会した期間の終わりを識別します。 開始時刻が終了日になっている予定表**アイテムは、** すべて返されません。 **EndDate**の値は、2006年-02-02T12:00: 00z のように UTC 形式で指定することができます。また、2006-02-02T12:00:00-08:00 のように、現地時刻とタイムゾーンオフセットが指定されている形式で指定することもできます。  <br/><br/>**EndDate**は**StartDate**以上である必要があります。それ以外の場合は、エラーが返されます。 この属性は必須です。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -53,17 +53,17 @@ ms.locfileid: "19759601"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FindItem](finditem.md) <br/> |メールボックス内のアイテムを検索するための要求を定義します。<br/><br/> この要素への XPath 式は、次のようにします。  <br/>  `/FindItem` <br/> |
+|[FindItem](finditem.md) <br/> |メールボックス内のアイテムを検索するための要求を定義します。<br/><br/> この要素の XPath 式を次に示します。  <br/>  `/FindItem` <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-FindItem 要求で、**予定表ビュー**の要素を指定すると、Web サービスは、1 つの予定表アイテムと出現する**開始日**と**終了日**に指定した範囲内での定期的な予定表アイテムの一覧を返します。
+**CalendarView**要素が FindItem 要求で指定されている場合、Web サービスは、開始**日と終了**日で指定**された**範囲内の予定表アイテムの1つおよび定期的なアイテムのリストを返します。
   
-FindItem 要求で、**予定表ビュー**の要素を指定しない場合、Web サービスは、1 つの予定表アイテムと定期的なマスターの予定表アイテムの一覧を返します。 定期的な予定表アイテムの予定表アイテムは展開されません。 
+**CalendarView**要素が FindItem 要求で指定されていない場合、Web サービスは、1つの予定表アイテムと定期的なマスター予定表アイテムの一覧を返します。 定期的な予定表アイテムの予定表アイテムは展開されません。 
   
-予定表ビューのクエリを作成する必要がありますのみ予定表クエリを高速化をサポートするために次のプロパティを使用します。
+CalendarView クエリでは、より高速な予定表クエリがサポートされているため、次のプロパティのみを使用してください。
   
-### <a name="recurrence-blob-properties"></a>定期的なアイテムの blob のプロパティ
+### <a name="recurrence-blob-properties"></a>定期的な blob プロパティ
   
 - MapiStartTime
     
@@ -93,9 +93,9 @@ FindItem 要求で、**予定表ビュー**の要素を指定しない場合、W
     
 - AllAttachmentsHidden
     
-- ChangeHighlight
+- ChangeHighlight 表示
     
-### <a name="calculated-from-the-primary-recurrence-blob-or-master"></a>主なパターン blob またはマスターからの計算
+### <a name="calculated-from-the-primary-recurrence-blob-or-master"></a>主要な定期的なアイテムの blob またはマスターから計算されます。
   
 - ItemId
     
@@ -121,7 +121,7 @@ FindItem 要求で、**予定表ビュー**の要素を指定しない場合、W
     
 - TimeZoneDefinitionEnd
     
-### <a name="master-calendar-item-properties"></a>マスターの予定表アイテムのプロパティ
+### <a name="master-calendar-item-properties"></a>マスター予定表アイテムのプロパティ
   
 - EntryId
     
@@ -131,9 +131,9 @@ FindItem 要求で、**予定表ビュー**の要素を指定しない場合、W
     
 - SentRepresentingEmailAddress
     
-- SentRepresentingDisplayName
+- [文] 表示 Displayname
     
-- SentRepresentingEntryId
+- [文]
     
 - AppointmentRecurrenceBlob
     
@@ -165,16 +165,16 @@ FindItem 要求で、**予定表ビュー**の要素を指定しない場合、W
   
 ## <a name="example"></a>例
 
-FindItem 要求の例を次に示します。 要求が成功するには、2006年で開始される予定表アイテムを含む応答が返されます-05-18T00:00:00-08時 00分後、2006 年以前に終了したのか -05-19T00:00:00-08時 00分です。
+次の例は、FindItem 要求を示しています。 成功した要求は、2006年-05-18T00:00:00-08:00 または after and 終了された予定表アイテムを含む応答を返します。これは2006年から 05-19T00:00:00-08:00 です。
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <FindItem Traversal="Shallow" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <FindItem Traversal="Shallow" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ItemShape>
         <t:BaseShape>IdOnly</t:BaseShape>
         <t:AdditionalProperties>
@@ -192,18 +192,18 @@ FindItem 要求の例を次に示します。 要求が成功するには、2006
 </soap:Envelope>
 ```
 
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - 
   [FindItem 操作](finditem-operation.md)
-- [項目を検索します。](http://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
+- [アイテムの検索](https://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
 

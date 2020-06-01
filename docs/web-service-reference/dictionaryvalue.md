@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: f4089381-826f-4f6a-8c6d-e51b910cbe6d
-description: DictionaryValue 要素は、ディクショナリのディクショナリ プロパティの値を指定します。
-ms.openlocfilehash: 78e4cd7e5d3d8f18276912da56bafb44cda76753
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DictionaryValue 要素は、dictionary プロパティの辞書値を指定します。
+ms.openlocfilehash: 9bad9b8cc7aa80aa071c89a1c22609dc8d44f2b6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760044"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462144"
 ---
 # <a name="dictionaryvalue"></a>DictionaryValue
 
-**DictionaryValue**要素は、ディクショナリのディクショナリ プロパティの値を指定します。 
+**Dictionaryvalue**要素は、dictionary プロパティの辞書値を指定します。 
   
 ```xml
 <DictionaryValue>
@@ -31,7 +31,7 @@ ms.locfileid: "19760044"
 ```
 
  **UserConfigurationDictionaryObjectType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -41,35 +41,35 @@ ms.locfileid: "19760044"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[型 (UserConfiguration)](type-userconfiguration.md) <br/> |ディクショナリ オブジェクトの種類を指定します。  <br/> |
-|[値 (UserConfiguration)](value-userconfiguration.md) <br/> |ディクショナリ オブジェクトの値を文字列として指定します。  <br/> |
+|[Type (UserConfiguration)](type-userconfiguration.md) <br/> |Dictionary オブジェクトの種類を指定します。  <br/> |
+|[Value (UserConfiguration)](value-userconfiguration.md) <br/> |Dictionary オブジェクトの値を文字列として指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[DictionaryEntry](dictionaryentry.md) <br/> |1 つのディクショナリ エントリのプロパティの内容を指定します。  <br/> |
+|[DictionaryEntry](dictionaryentry.md) <br/> |単一の辞書エントリプロパティの内容を指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7e45a061-856f-4b44-b053-a7c4d5ad569e
-description: ドメイン要素は、1 つの SMTP ドメインを識別します。
-ms.openlocfilehash: 78eb1edfd347a513b84b9c15d143d76425041e85
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Domain 要素は、1つの SMTP ドメインを識別します。
+ms.openlocfilehash: 3bf8e132b5fa588171ac4f3c095692bc68394663
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760148"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461332"
 ---
 # <a name="domain"></a>ドメイン
 
-**ドメイン**要素は、1 つの SMTP ドメインを識別します。 
+**Domain**要素は、1つの SMTP ドメインを識別します。 
   
 ```xml
 <Domain Name="" IncludeSubdomains="" />
 ```
 
  **StmpDomain**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -36,8 +36,8 @@ ms.locfileid: "19760148"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|名前  <br/> |ドメインの名前を識別します。 この属性は、必要があります。  <br/> |
-|IncludeSubdomains  <br/> |**Name**属性によって識別されるドメインのサブドメインを内部に考慮がかどうかを示します。 この属性は、省略可能です。  <br/> |
+|名前  <br/> |ドメインの名前を識別します。 この属性は必須です。  <br/> |
+|IncludeSubdomains  <br/> |**Name**属性によって識別されるドメインのサブドメインが内部と見なされるかどうかを示します。 この属性は省略可能です。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -47,26 +47,26 @@ ms.locfileid: "19760148"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[InternalDomains (SmtpDomainList)](internaldomains-smtpdomainlist.md) <br/> |組織の内部の SMTP ドメインのリストを識別します。  <br/> |
+|[InternalDomains (SmtpDomainList)](internaldomains-smtpdomainlist.md) <br/> |組織の内部 SMTP ドメインのリストを識別します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

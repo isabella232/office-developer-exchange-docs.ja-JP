@@ -1,22 +1,22 @@
 ---
-title: OrganizationRelationshipSettings (SOAP)
+title: 組織のリレーションシップ設定 (SOAP)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 917481bb-46fc-4b88-8683-4cf812dcb0ab
-description: OrganizationRelationshipSettings 要素は、単一の組織の組織との関係のリストを表します。 OrganizationRelationshipSettings 要素は、内部使用のみ。 クライアントでは、この要素は使用されません。
-ms.openlocfilehash: ed6cc0ef1891cd92c02a8e088e913886048623ee
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 組織の組織上の関係のリストを表す。 この要素は、組織内でのみ使用できます。 この要素はクライアントによって使用されません。
+ms.openlocfilehash: 383b3635e1435c6597ccf793a7990c411c02d36d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832660"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462459"
 ---
-# <a name="organizationrelationshipsettings-soap"></a>OrganizationRelationshipSettings (SOAP)
+# <a name="organizationrelationshipsettings-soap"></a>組織のリレーションシップ設定 (SOAP)
 
-**OrganizationRelationshipSettings**要素は、単一の組織の組織との関係のリストを表します。 **OrganizationRelationshipSettings**要素は、内部使用のみ。 クライアントでは、この要素は使用されません。 
+組織**の**組織上の関係のリストを表す。 この要素は、**組織**内でのみ使用できます。 この要素はクライアントによって使用されません。 
   
 ```XML
 <OrganizationRelationshipSettings>
@@ -34,8 +34,8 @@ ms.locfileid: "19832660"
 </OrganizationRelationshipSettings>
 ```
 
- **OrganizationRelationshipSettings**
-## <a name="attributes-and-elements"></a>属性および要素
+ **組織のリレーションシップ設定**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -45,37 +45,37 @@ ms.locfileid: "19832660"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[DeliveryReportEnabled (SOAP)](deliveryreportenabled-soap.md) <br/> |[DeliveryReportEnabled()](https://msdn.microsoft.com/library/Microsoft.Exchange.SoapWebClient.AutoDiscover.OrganizationRelationshipSettings.DeliveryReportEnabled.aspx)フラグを表します。  <br/> |
+|[DeliveryReportEnabled (SOAP)](deliveryreportenabled-soap.md) <br/> |[Deliveryreportenabled ()](https://msdn.microsoft.com/library/Microsoft.Exchange.SoapWebClient.AutoDiscover.OrganizationRelationshipSettings.DeliveryReportEnabled.aspx)フラグを表します。  <br/> |
 |[DomainNames (SOAP)](domainnames-soap.md) <br/> |ドメイン名のコレクションを表します。  <br/> |
-|[FreeBusyAccessEnabled (SOAP)](freebusyaccessenabled-soap.md) <br/> |[FreeBusyAccessEnabled()](https://msdn.microsoft.com/library/Microsoft.Exchange.SoapWebClient.AutoDiscover.OrganizationRelationshipSettings.FreeBusyAccessEnabled.aspx)フラグを表します。  <br/> |
+|[FreeBusyAccessEnabled (SOAP)](freebusyaccessenabled-soap.md) <br/> |[FreeBusyAccessEnabled ()](https://msdn.microsoft.com/library/Microsoft.Exchange.SoapWebClient.AutoDiscover.OrganizationRelationshipSettings.FreeBusyAccessEnabled.aspx)フラグを表します。  <br/> |
 |[FreeBusyAccessLevel (SOAP)](freebusyaccesslevel-soap.md) <br/> |[FreeBusyAccessLevel](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Directory.SystemConfiguration.OrganizationRelationship.FreeBusyAccessLevel.aspx)プロパティを表します。  <br/> |
-|[MailTipsAccessEnabled (SOAP)](mailtipsaccessenabled-soap.md) <br/> |[MailTipsAccessEnabled()](https://msdn.microsoft.com/library/Microsoft.Exchange.SoapWebClient.AutoDiscover.OrganizationRelationshipSettings.MailTipsAccessEnabled.aspx)フラグを表します。  <br/> |
-|[MailTipsAccessLevel (SOAP)](mailtipsaccesslevel-soap.md) <br/> |[MailTipsAccessLevel](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Directory.SystemConfiguration.OrganizationRelationship.MailTipsAccessLevel.aspx)プロパティを表します。  <br/> |
-|[MailboxMoveEnabled (SOAP)](mailboxmoveenabled-soap.md) <br/> |[MailboxMoveEnabled()](https://msdn.microsoft.com/library/Microsoft.Exchange.SoapWebClient.AutoDiscover.OrganizationRelationshipSettings.MailboxMoveEnabled.aspx)フラグを表します。  <br/> |
-|[名 (SOAP)](name-soap.md) <br/> |組織の関係の名前を表します。  <br/> |
-|[TargetApplicationUri (SOAP)](targetapplicationuri-soap.md) <br/> |ターゲット アプリケーションの URI を定義します。  <br/> |
+|[Mailヒント Accessenabled (SOAP)](mailtipsaccessenabled-soap.md) <br/> |[Mailヒント Accessenabled ()](https://msdn.microsoft.com/library/Microsoft.Exchange.SoapWebClient.AutoDiscover.OrganizationRelationshipSettings.MailTipsAccessEnabled.aspx)フラグを表します。  <br/> |
+|[Mailヒント Accesslevel (SOAP)](mailtipsaccesslevel-soap.md) <br/> |[Mailヒント Accesslevel](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Directory.SystemConfiguration.OrganizationRelationship.MailTipsAccessLevel.aspx)プロパティを表します。  <br/> |
+|[MailboxMoveEnabled (SOAP)](mailboxmoveenabled-soap.md) <br/> |[MailboxMoveEnabled ()](https://msdn.microsoft.com/library/Microsoft.Exchange.SoapWebClient.AutoDiscover.OrganizationRelationshipSettings.MailboxMoveEnabled.aspx)フラグを表します。  <br/> |
+|[Name (SOAP)](name-soap.md) <br/> |組織上の関係の名前を表します。  <br/> |
+|[TargetApplicationUri (SOAP)](targetapplicationuri-soap.md) <br/> |ターゲットアプリケーション URI を定義します。  <br/> |
 |[TargetAutodiscoverEpr (SOAP)](targetautodiscoverepr-soap.md) <br/> |[TargetAutodiscoverEpr](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Directory.SystemConfiguration.OrganizationRelationship.TargetAutodiscoverEpr.aspx)プロパティを表します。  <br/> |
-|[TargetSharingEpr (SOAP)](targetsharingepr-soap.md) <br/> |[TargetSharingEpr](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Directory.SystemConfiguration.OrganizationRelationship.TargetSharingEpr.aspx)プロパティを表します。  <br/> |
+|[TargetSharingEpr (SOAP)](targetsharingepr-soap.md) <br/> |[Targetsharingepr](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Directory.SystemConfiguration.OrganizationRelationship.TargetSharingEpr.aspx)プロパティを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[OrganizationRelationshipSettingsCollection (SOAP)](organizationrelationshipsettingscollection-soap.md) <br/> |クエリに一致する組織との関係のリストを表します。  <br/> |
+|[組織/リレーションシップ設定コレクション (SOAP)](organizationrelationshipsettingscollection-soap.md) <br/> |クエリに一致する組織上の関係のリストを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|スキーマ名  <br/> |スキーマの自動検出  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|スキーマ名  <br/> |自動検出スキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |はい  <br/> |
    
 

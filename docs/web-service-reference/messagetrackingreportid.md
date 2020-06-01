@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 9c604ca3-10fe-4760-b7fd-8b52f1a0c712
-description: MessageTrackingReportId 要素は、メッセージ ID、組織でメッセージが発見された、メッセージが送信されたサーバーとメッセージを一意に識別するための内部 ID でメッセージを表します。
-ms.openlocfilehash: 8e0d85b203b8a34acedb5f6b9fe46359d5e0b97c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: MessageTrackingReportId 要素は、メッセージ ID、メッセージが検出された組織、メッセージが送信されたサーバー、メッセージを一意に識別する内部 ID によってメッセージを表します。
+ms.openlocfilehash: d6e92593d55608e260634602c2aab694804d716d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832456"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460597"
 ---
 # <a name="messagetrackingreportid"></a>MessageTrackingReportId
 
-**MessageTrackingReportId**要素は、メッセージ ID、組織でメッセージが発見された、メッセージが送信されたサーバーとメッセージを一意に識別するための内部 ID でメッセージを表します。 
+**Messagetrackingreportid**要素は、メッセージ ID、メッセージが検出された組織、メッセージが送信されたサーバー、メッセージを一意に識別する内部 ID によってメッセージを表します。 
   
 ```XML
 <MessageTrackingReportId/>
 ```
 
  **NonEmptyStringType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,25 +44,25 @@ ms.locfileid: "19832456"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetMessageTrackingReport](getmessagetrackingreport.md) <br/> |レポートを指定した ID の追跡を取得するために[GetMessageTrackingReport 操作](getmessagetrackingreport-operation.md)の要求が含まれています  <br/> |
-|[MessageTrackingSearchResult](messagetrackingsearchresult.md) <br/> |[FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md)要素の 1 つのメッセージの結果が含まれています。  <br/> |
+|[GetMessageTrackingReport](getmessagetrackingreport.md) <br/> |指定された ID の完全なメッセージ追跡レポートを取得する[Getmessagetrackingreport 操作](getmessagetrackingreport-operation.md)の要求を含みます。  <br/> |
+|[MessageTrackingSearchResult](messagetrackingsearchresult.md) <br/> |[Findmessagetrackingreportresponse](findmessagetrackingreportresponse.md)要素の単一メッセージ結果を格納します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-文字列を表す文字列値は、この要素を使用する場合に必要です。
+この要素を使用する場合は、文字列を表すテキスト値が必要です。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -71,5 +71,5 @@ ms.locfileid: "19832456"
 [GetMessageTrackingReport 操作](getmessagetrackingreport-operation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

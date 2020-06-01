@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: f331c8ac-f1c7-4248-a570-97701969d5bf
-description: DictionaryKey 要素は、ディクショナリ プロパティのディクショナリのキーを指定します。
-ms.openlocfilehash: 7e706f16fe155278ea56f303ffbb5971c1779879
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DictionaryKey 要素は、dictionary プロパティの辞書キーを指定します。
+ms.openlocfilehash: 8d9d897c86eb5048068936433c6c0d77917ff777
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760039"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462151"
 ---
 # <a name="dictionarykey"></a>DictionaryKey
 
-**DictionaryKey**要素は、ディクショナリ プロパティのディクショナリのキーを指定します。 
+**Dictionarykey**要素は、dictionary プロパティの辞書キーを指定します。 
   
 ```xml
 <DictionaryKey>
@@ -31,7 +31,7 @@ ms.locfileid: "19760039"
 ```
 
  **UserConfigurationDictionaryObjectType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -41,35 +41,35 @@ ms.locfileid: "19760039"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[型 (UserConfiguration)](type-userconfiguration.md) <br/> | ディクショナリ オブジェクトの種類を指定します。<br/><br/>型には、次の文字列値のいずれかを指定できます。<br/><br/>-日時  <br/>-ブール値  <br/>バイト  <br/>文字列  <br/>-Integer32  <br/>-UnsignedInteger32  <br/>-Integer64  <br/>-UnsignedInteger64  <br/>-自己責任で使用  <br/>-ByteArray  <br/> |
-|[値 (UserConfiguration)](value-userconfiguration.md) <br/> |ディクショナリ オブジェクトの値を文字列として指定します。  <br/> |
+|[Type (UserConfiguration)](type-userconfiguration.md) <br/> | Dictionary オブジェクトの種類を指定します。<br/><br/>この型には、次のいずれかの文字列値を指定できます。<br/><br/>-DateTime  <br/>-Boolean  <br/>バイト  <br/>文字列  <br/>- Integer32  <br/>- UnsignedInteger32  <br/>- Integer64  <br/>- UnsignedInteger64  <br/>-StringArray  <br/>- ByteArray  <br/> |
+|[Value (UserConfiguration)](value-userconfiguration.md) <br/> |Dictionary オブジェクトの値を文字列として指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[DictionaryEntry](dictionaryentry.md) <br/> |1 つのディクショナリ エントリのプロパティの内容を指定します。  <br/> |
+|[DictionaryEntry](dictionaryentry.md) <br/> |単一の辞書エントリプロパティの内容を指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

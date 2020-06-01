@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 0aaf265d-b723-49c6-8e9c-9ba60141e9ab
-description: DailyRecurrence 要素では、日、予定表アイテム、またはタスクを定期的に、頻度について説明します。
-ms.openlocfilehash: d02c1f7425372d60c10b40527dc5f0d65f923b45
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DailyRecurrence 要素は、予定表アイテムまたはタスクが繰り返される頻度 (日単位) を表します。
+ms.openlocfilehash: d18a04ced19c87996c3a092f6668ab00c5a3f006
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759900"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462172"
 ---
 # <a name="dailyrecurrence"></a>DailyRecurrence
 
-**DailyRecurrence**要素では、日、予定表アイテム、またはタスクを定期的に、頻度について説明します。 
+**DailyRecurrence**要素は、予定表アイテムまたはタスクが繰り返される頻度 (日単位) を表します。 
   
 ```xml
 <DailyRecurrence>
@@ -31,7 +31,7 @@ ms.locfileid: "19759900"
 
 **DailyRecurrencePatternType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -41,31 +41,31 @@ ms.locfileid: "19759900"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[間隔](interval.md) <br/> |差の日数、連続する 2 つの定期的なアイテムの間隔を定義します。 値は 1 から 999 の範囲である必要があります。  <br/> |
+|[間隔](interval.md) <br/> |連続する2つのアイテム間の間隔を日単位で定義します。 この値は 1 ~ 999 の範囲内である必要があります。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[定期的な予定 (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |定期タスクの頻度に関する情報が含まれています。  <br/> |
-|[定期的なアイテム (RecurrenceType)](recurrence-recurrencetype.md) <br/> |予定表アイテムおよび会議出席依頼に定期的なパターンが含まれています。  <br/> |
+|[定期的なアイテム (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |定期的なタスクの定期的なアイテムの情報が含まれています。  <br/> |
+|[Recurrence (RecurrenceType)](recurrence-recurrencetype.md) <br/> |予定表アイテムと会議出席依頼の定期的なパターンを含みます。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

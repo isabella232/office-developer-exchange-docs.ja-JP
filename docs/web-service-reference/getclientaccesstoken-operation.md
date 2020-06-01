@@ -7,44 +7,44 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 086876cc-e22c-4e89-89f9-19e78af51217
-description: 操作 GetClientAccessToken EWS についての情報を検索します。
-ms.openlocfilehash: afa9a315a8421f31c345c9547a5d80bed41e9fbc
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetClientAccessToken EWS 操作についての情報を検索します。
+ms.openlocfilehash: 2d49d675fcedb0e7e8312a9715f095c47fcf3d77
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760655"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462039"
 ---
 # <a name="getclientaccesstoken-operation"></a>GetClientAccessToken 操作
 
-**GetClientAccessToken** EWS の操作に関する情報を検索します。 
+**GetClientAccessToken** EWS 操作についての情報を検索します。 
   
-**GetClientAccessToken**操作では、Outlook のメール アプリケーションにクライアントのアクセスを取得します。 
+**GetClientAccessToken**操作は、Outlook 用メールアプリのクライアントアクセストークンを取得します。 
   
 この操作は Exchange Server 2013 で導入されました。
   
-## <a name="using-the-getclientaccesstoken-operation"></a>GetClientAccessToken 操作を使用します。
+## <a name="using-the-getclientaccesstoken-operation"></a>GetClientAccessToken 操作の使用
 
-**GetClientAccessToken**操作の要求は、2 つの必要な引数: アプリケーション、およびトークンの種類の識別子です。 [GetAppManifests 操作](getappmanifests-operation.md)を使用するアプリケーション id を要求します。 
+**GetClientAccessToken**操作要求は、次の2つの必要な引数を受け取ります。アプリの識別子とトークンの種類。 [Getappmanifests 操作](getappmanifests-operation.md)を使用して、アプリ識別子を要求できます。 
   
 ### <a name="getclientaccesstoken-operation-soap-headers"></a>GetClientAccessToken 操作の SOAP ヘッダー
 
-**GetClientAccessToken**操作は、次の表に記載されている SOAP ヘッダーを使用できます。 
+**GetClientAccessToken**操作では、次の表に示す SOAP ヘッダーを使用できます。 
   
 |**ヘッダー名**|**要素**|**説明**|
 |:-----|:-----|:-----|
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマのバージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答するサーバーのバージョンを識別します。 このヘッダーは、応答に適用されます。  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは応答に適用されます。  <br/> |
    
-## <a name="getclientaccesstoken-operation-request-example-get-a-caller-identity-token"></a>GetClientAccessToken 操作の要求の例: 呼び出し元 id のトークンを取得します。
+## <a name="getclientaccesstoken-operation-request-example-get-a-caller-identity-token"></a>GetClientAccessToken 操作要求の例: 発信者 id トークンを取得します。
 
-**GetClientAccessToken**操作要求の次の例では、アプリケーションの呼び出し元 id のトークンを取得する方法を示します。 
+次の**GetClientAccessToken**操作要求の例は、アプリの発信者番号トークンを取得する方法を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
    </soap:Header>
@@ -62,7 +62,7 @@ ms.locfileid: "19760655"
 
 ```
 
-要求 SOAP 本体にはには、次の要素が含まれています。
+要求 SOAP 本文には、次の要素が含まれています。
   
 - [GetClientAccessToken](getclientaccesstoken.md)
     
@@ -74,12 +74,12 @@ ms.locfileid: "19760655"
     
 - [TokenType](tokentype.md)
     
-## <a name="successful-getclientaccesstoken-operation-response"></a>GetClientAccessToken 操作の成功の応答
+## <a name="successful-getclientaccesstoken-operation-response"></a>成功した GetClientAccessToken 操作の応答
 
-次の例では、アプリケーションの呼び出し元 id のトークンを取得するのには、 **GetClientAccessToken**操作の要求に正常な応答を示します。 
+次の例は、 **GetClientAccessToken**操作要求に対する正常な応答を示しています。アプリの発信者番号トークンを取得します。 
   
 > [!NOTE]
-> この資料では、トークンの値は、読みやすさを保持するために短縮されています。 
+> この記事のトークンの値は、読みやすくするために短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -90,15 +90,15 @@ ms.locfileid: "19760655"
                            MajorBuildNumber="556" 
                            MinorBuildNumber="14" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <m:GetClientAccessTokenResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:GetClientAccessTokenResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
          <m:ResponseMessages>
             <m:GetClientAccessTokenResponseMessage ResponseClass="Success">
                <m:ResponseCode>NoError</m:ResponseCode>
@@ -136,9 +136,9 @@ ms.locfileid: "19760655"
     
 - [TTL (ClientAccessTokenTypeType)](ttl-clientaccesstokentypetype.md)
     
-## <a name="getclientaccesstoken-operation-error-response"></a>GetClientAccessToken 操作のエラー応答
+## <a name="getclientaccesstoken-operation-error-response"></a>GetClientAccessToken 操作エラー応答
 
-**GetClientAccessToken**操作の要求に対してエラー応答の例を次に示します。 これは、適切なアクセス許可のないトークン、拡張子コールバックを取得する要求に応答します。 
+次の例は、 **GetClientAccessToken**操作要求へのエラー応答を示しています。 これは、適切なアクセス許可を持たない拡張コールバックトークンを取得する要求に対する応答です。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -149,15 +149,15 @@ ms.locfileid: "19760655"
                            MajorBuildNumber="556" 
                            MinorBuildNumber="14" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <m:GetClientAccessTokenResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:GetClientAccessTokenResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
          <m:ResponseMessages>
             <m:GetClientAccessTokenResponseMessage ResponseClass="Error">
                <m:MessageText>The caller does not have enough permission for this token request.</m:MessageText>
@@ -170,7 +170,7 @@ ms.locfileid: "19760655"
 </s:Envelope>
 ```
 
-エラー応答 SOAP 本体にはには、次の要素が含まれています。
+エラー応答 SOAP 本文には、次の要素が含まれています。
   
 - [GetClientAccessTokenResponse](getclientaccesstokenresponse.md)
     
@@ -184,14 +184,14 @@ ms.locfileid: "19760655"
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-EWS を汎用的なこの操作に固有のエラー コードは、 [ResponseCode](responsecode.md)を参照してください。
+EWS で汎用的でこの操作に固有の追加のエラーコードについては、「応答」[を参照してください。](responsecode.md)
   
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の操作](ews-operations-in-exchange.md)
+- [Exchange での EWS 操作](ews-operations-in-exchange.md)
     
 - [GetAppManifests 操作](getappmanifests-operation.md)
     
-- [Outlook アドイン](http://msdn.microsoft.com/library/71e64bc9-e347-4f5d-8948-0a47b5dd93e6%28Office.15%29.aspx)
+- [Outlook アドイン](https://msdn.microsoft.com/library/71e64bc9-e347-4f5d-8948-0a47b5dd93e6%28Office.15%29.aspx)
     
 

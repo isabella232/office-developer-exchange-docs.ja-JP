@@ -11,39 +11,39 @@ api_name:
 api_type:
 - schema
 ms.assetid: f268efe5-9a1a-41a2-b6a6-51fcde7720a1
-description: GetEvents 操作は、クライアント アクセス サーバーから、プル サブスクリプションのクライアントによって、通知を要求する使用されます。 GetEvents 操作の応答では、項目と以降のメールボックスに最後に通知するイベントの配列を返します。
-ms.openlocfilehash: 1a23a9d570a4554e54becb7927f25dff89888c74
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetEvents 操作は、プルサブスクリプションクライアントがクライアントアクセスサーバーからの通知を要求するために使用されます。 GetEvents 操作の応答は、最後の通知以降にメールボックスで発生したアイテムとイベントの配列を返します。
+ms.openlocfilehash: 9258fd003c242911866aa7abbca5eba2b9582223
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760705"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462515"
 ---
 # <a name="getevents-operation"></a>GetEvents 操作
 
-**GetEvents**操作は、クライアント アクセス サーバーから、プル サブスクリプションのクライアントによって、通知を要求する使用されます。 **GetEvents**操作の応答では、項目と以降のメールボックスに最後に通知するイベントの配列を返します。 
+**GetEvents**操作は、プルサブスクリプションクライアントがクライアントアクセスサーバーからの通知を要求するために使用されます。 **GetEvents**操作の応答は、最後の通知以降にメールボックスで発生したアイテムとイベントの配列を返します。 
   
 > [!IMPORTANT]
-> **DeleteUserConfiguration**操作は、イベント通知システムの移動イベントをトリガーします。 ユーザー設定のオブジェクトを移動するが、ごみ箱をあさる。 
+> **Deleteuserconfiguration**操作は、イベント通知システムの移動イベントをトリガーします。 ユーザー構成オブジェクトは、収集に移動されます。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-予定表アイテムへの変更は、複数のイベントの生成があります。 これらのイベントは、一時アイテムが作成される、メールボックスでは、通常の予定表の操作、またはその両方の一部として変更される空き時間情報データ記憶域の項目の結果です。 項目のイベント クラスの"IPM.SchedulePlus.FreeBusy.BinaryData」は、Web サービス クライアントによって無視されます。 一時アイテムを削除して作成されます。したがって、これらの項目を取得しようとすると場合、エラーが返ります、項目が見つからなかったことを示します。
+予定表アイテムの変更によって、複数のイベントが生成されることがあります。 これらのイベントは、メールボックス内に作成された一時アイテム、空き時間情報データストレージアイテムが通常の予定表の操作の一部として変更された結果、またはその両方で発生します。 アイテムクラス "IPM.Web サービスクライアントでは、SchedulePlus データ "を無視する必要があります。 これらの一時アイテムは、作成後に削除されます。そのため、これらのアイテムを取得しようとすると、アイテムが見つからなかったことを示すエラーが返されます。
   
 ## <a name="getevents-request-example"></a>GetEvents 要求の例
 
 ### <a name="description"></a>説明
 
-次の例では、イベントとサブスクリプションの識別子とウォーターマークで識別されるサブスクリプションに関連付けられている項目を要求する方法を示します。
+次の例は、サブスクリプション識別子とウォーターマークで識別されるサブスクリプションに関連付けられたイベントとアイテムを要求する方法を示しています。
   
 ### <a name="code"></a>コード
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <GetEvents xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetEvents xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <SubscriptionId>f6bc657d-dde1-4f94-952d-143b95d6483d</SubscriptionId>
       <Watermark>AAAAAMAGAAAAAAAAAQ==</Watermark>
     </GetEvents>
@@ -51,21 +51,21 @@ ms.locfileid: "19760705"
 </soap:Envelope>
 ```
 
-### <a name="getevents-request-elements"></a>GetEvents 要求要素
+### <a name="getevents-request-elements"></a>GetEvents Request 要素
 
-次の要素は、要求で使用されます。
+要求では、次の要素が使用されます。
   
 - [GetEvents](getevents.md)
     
-- [サブスクリプション Id (GetEvents)](subscriptionid-getevents.md)
+- [SubscriptionId (GetEvents)](subscriptionid-getevents.md)
     
-- [透かし](watermark.md)
+- [Watermark](watermark.md)
     
-## <a name="successful-getevents-response-example"></a>GetEvents 応答の成功の例
+## <a name="successful-getevents-response-example"></a>Successful GetEvents response の例
 
 ### <a name="description"></a>説明
 
-最後の通知要求がサーバーに送信された後、次の応答の例は 2 つの新しいメール メッセージの存在を通知を示します。
+次の応答の例は、前回の通知要求がサーバーに送信されてから、2つの新しいメールメッセージが存在するという通知を示しています。
   
 ### <a name="code"></a>コード
 
@@ -76,12 +76,12 @@ ms.locfileid: "19760705"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="628" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <GetEventsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                       xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetEventsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                       xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetEventsResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -112,15 +112,15 @@ ms.locfileid: "19760705"
 ### <a name="comments"></a>コメント
 
 > [!NOTE]
-> アイテムおよびフォルダーの識別子は、読みやすさを保持するために短縮されています。 
+> 読みやすくするために、アイテムとフォルダーの識別子が短縮されています。 
   
-### <a name="getevents-response-elements"></a>GetEvents 応答の要素
+### <a name="getevents-response-elements"></a>GetEvents response 要素
 
-次の要素は、応答で使用されます。
+応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
-- [GetEventsResponse](geteventsresponse.md)
+- [Getイベント応答](geteventsresponse.md)
     
 - [ResponseMessages](responsemessages.md)
     
@@ -130,29 +130,29 @@ ms.locfileid: "19760705"
     
 - [通知](notification-ex15websvcsotherref.md)
     
-- [サブスクリプション Id (GetEvents)](subscriptionid-getevents.md)
+- [SubscriptionId (GetEvents)](subscriptionid-getevents.md)
     
 - [PreviousWatermark](previouswatermark.md)
     
-- [イベント](moreevents.md)
+- [その他のイベント](moreevents.md)
     
 - [NewMailEvent](newmailevent.md)
     
-- [透かし](watermark.md)
+- [Watermark](watermark.md)
     
-- [タイムスタンプ](timestamp.md)
+- [示](timestamp.md)
     
 - [ItemId](itemid.md)
     
 - [ParentFolderId](parentfolderid.md)
     
-**GetEvents**操作の応答メッセージには、他のオプションを検索するには、スキーマの階層構造を表示します。 [通知](notification-ex15websvcsotherref.md)の要素から開始します。 
+**GetEvents**操作の応答メッセージに関するその他のオプションについては、スキーマ階層を参照してください。 [通知](notification-ex15websvcsotherref.md)要素から開始します。 
   
 ## <a name="getevents-error-response-example"></a>GetEvents エラー応答の例
 
 ### <a name="description"></a>説明
 
-**GetEvents**要求に対してエラー応答の例を次に示します。 
+次の例は、 **GetEvents**要求に対するエラー応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -163,12 +163,12 @@ ms.locfileid: "19760705"
                  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="628" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <GetEventsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetEventsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetEventsResponseMessage ResponseClass="Error">
           <m:MessageText>Access is denied. Only the subscription owner may access the subscription.</m:MessageText>
@@ -181,23 +181,23 @@ ms.locfileid: "19760705"
 </soap:Envelope>
 ```
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**GetEvents**要求を処理するときにクライアント アクセス サーバーは、次の手順を実行します。 
+**GetEvents**要求を処理する場合、クライアントアクセスサーバーは次の手順を実行します。 
   
-1. 要求のサブスクリプション Id が、クライアント アクセス サーバーでホストされている有効なサブスクリプションを使用することを確認します。 そうでない場合、 **GetEvents**呼び出しは失敗します。 
+1. 要求の SubscriptionID は、クライアントアクセスサーバーでホストされている有効なサブスクリプションであることが確認されます。 そうでない場合、 **GetEvents**呼び出しは失敗します。 
     
-2. 要求の認証済みユーザーの SMTP アドレスは、サブスクリプションを作成したユーザーの SMTP アドレスと比較されます。 それらが一致しない場合は、 **GetEvents**要求が失敗します。 
+2. 要求に対する認証済みユーザーの SMTP アドレスは、サブスクリプションを作成したユーザーの SMTP アドレスと比較されます。 一致しない場合、 **GetEvents**要求は失敗します。 
     
-3. サブスクリプションのキューでは、クライアントに送信されるを待機しているイベントが照会されます。 キューが空でない場合は、キューから最初の 50 のイベントがキューから取得し、通知にエンコードされました。
+3. サブスクリプションキューは、クライアントへの送信を待機しているイベントに対して照会されます。 キューが空でない場合、キューから最初の50イベントがプルされ、通知にエンコードされます。
     
-4. キュー内のイベントが見つからない場合、StatusEvent が生成され、通知の応答にエンコードします。
+4. キューにイベントが見つからない場合は、StatusEvent が生成され、通知応答にエンコードされます。
     
-5. 通知の応答がクライアントに返されます。
+5. 通知応答がクライアントに返されます。
     
-6. サブスクリプションのキューからの通知に含まれているイベントを削除し、クライアント アクセス サーバー ローカル最新のウォーターマークのサブスクリプションが返される最後のイベントのウォーターマークを設定します。
+6. 通知に含まれるイベントは、サブスクリプションキューから削除され、サブスクリプションのクライアントアクセスサーバーのローカルの最後のウォーターマークは、返される最後のイベントのウォーターマークに設定されます。
     
-7. サブスクリプションのタイムアウト タイマーがリセットされます。
+7. サブスクリプションのタイムアウトタイマーはリセットされます。
     
 ## <a name="see-also"></a>関連項目
 
@@ -208,5 +208,5 @@ ms.locfileid: "19760705"
 [Unsubscribe 操作](unsubscribe-operation.md)
 
 
-[プル サブスクリプションを使用します。](http://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx)
+[プルサブスクリプションの使用](https://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx)
 

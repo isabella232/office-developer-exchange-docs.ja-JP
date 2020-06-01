@@ -9,18 +9,18 @@ api_type:
 - schema
 ms.assetid: 2ef73d13-e8bb-43f6-96c7-3ee157fed739
 description: ServerDN 要素は、Microsoft Exchange Server 2007 を実行しているコンピューターの識別名を指定します。
-ms.openlocfilehash: d2b9ce663d8245a78acd088b0622406c0dfcb4da
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 16c6e7368e221b7e54c8d7d63532bb29464a7e54
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833374"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461997"
 ---
 # <a name="serverdn-pox"></a>ServerDN (POX)
 
-**ServerDN**要素は、Microsoft Exchange Server 2007 を実行しているコンピューターの識別名を指定します。 
+**Serverdn**要素は、Microsoft Exchange Server 2007 を実行しているコンピューターの識別名を指定します。 
   
-[(POX) を自動検出](autodiscover-pox.md)
+[自動検出 (POX)](autodiscover-pox.md)
   
 [応答 (POX)](response-pox.md)
   
@@ -34,7 +34,7 @@ ms.locfileid: "19833374"
 <ServerDN/>
 ```
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -50,19 +50,19 @@ ms.locfileid: "19833374"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
+|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、Exchange サーバーの識別名を表します。
+Text 値は、Exchange サーバーの識別名を表します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**ServerDN**値は、[種類 (POX)](type-pox.md)が為替にのみ使用します。 
+**Serverdn**の値は、 [Type (POX)](type-pox.md)が EXCH と等しい場合にのみ使用されます。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[交換の POX の自動検出の XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+[Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
 

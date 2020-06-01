@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 90f8f9e3-5fc6-4a6a-bdfb-fc91fa51f8a2
-description: ConversationLastSyncTime 要素には、会話が最後に同期された日時が含まれています。 この要素は、会話で指定した時刻までに受信したすべてのアイテムを削除しようとするときに存在する必要があります。
-ms.openlocfilehash: 3b086d69ac0ef307059df4902e65f796c63733d1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ConversationLastSyncTime 要素には、会話が最後に同期された日時が含まれています。 この要素は、指定された時刻までに受信した会話内のすべてのアイテムを削除しようとするときに存在する必要があります。
+ms.openlocfilehash: f7cc6e205ab9936685d7b8c1f34129b799a53021
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759761"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461430"
 ---
 # <a name="conversationlastsynctime"></a>ConversationLastSyncTime
 
-**ConversationLastSyncTime**要素には、会話が最後に同期された日時が含まれています。 この要素は、会話で指定した時刻までに受信したすべてのアイテムを削除しようとするときに存在する必要があります。 
+**ConversationLastSyncTime**要素には、会話が最後に同期された日時が含まれています。 この要素は、指定された時刻までに受信した会話内のすべてのアイテムを削除しようとするときに存在する必要があります。 
   
 [ApplyConversationAction](applyconversationaction.md)
   
@@ -35,8 +35,8 @@ ms.locfileid: "19759761"
 <ConversationLastSyncTime/>
 ```
 
- **xs:dateTime**
-## <a name="attributes-and-elements"></a>属性および要素
+ **xs: dateTime**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -52,24 +52,24 @@ ms.locfileid: "19759761"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ConversationAction](conversationaction.md) <br/> |1 つのテーマを適用する 1 つのアクションが含まれています。  <br/> |
+|[ConversationAction](conversationaction.md) <br/> |単一の会話に適用される1つのアクションが含まれます。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**ConversationLastSyncTime**のテキスト値は、前回の会話の同期を示します。 
+**ConversationLastSyncTime**のテキスト値は、会話が最後に同期された日時を示します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web Services.This の要素がホストをで Exchange Server 2010 Service Pack 1 (SP1) を導入する IIS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -78,5 +78,5 @@ ms.locfileid: "19759761"
 [ApplyConversationAction 操作](applyconversationaction-operation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

@@ -8,24 +8,24 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: f8162724-cf9a-4543-a1ad-5846c8b10bfa
-description: RedirectTarget (SOAP) の要素には、リダイレクト URL または電子メール アドレスのターゲットが含まれています。
-ms.openlocfilehash: 3a8a0c39c6889730c9d17778c6a26f84fcbcd4a7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: RedirectTarget (SOAP) 要素には、リダイレクト URL または電子メールアドレスのターゲットが含まれています。
+ms.openlocfilehash: 092d575560379d43b12dd98a3efa155b59c31450
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833019"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462200"
 ---
 # <a name="redirecttarget-soap"></a>RedirectTarget (SOAP)
 
-[RedirectTarget (SOAP)](redirecttarget-soap.md)の要素には、リダイレクト URL または電子メール アドレスのターゲットが含まれています。 
+[Redirecttarget (SOAP)](redirecttarget-soap.md)要素には、リダイレクト URL または電子メールアドレスのターゲットが含まれています。 
   
 ```XML
 <RedirectTarget/>
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -41,20 +41,20 @@ ms.locfileid: "19833019"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[UserResponse (SOAP)](userresponse-soap.md) <br/> |個々 のユーザーの GetUserSettings の要求に対する応答を表します。  <br/> |
-|[DomainResponse (SOAP)](domainresponse-soap.md) <br/> |指定したドメインの指定された設定が含まれています。  <br/> |
+|[UserResponse (SOAP)](userresponse-soap.md) <br/> |個々のユーザーに対する GetUserSettings 要求への応答を表します。  <br/> |
+|[DomainResponse (SOAP)](domainresponse-soap.md) <br/> |指定したドメインに対して要求された設定が含まれます。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値には、それ以降の GetUserSettings に使用するリダイレクト URL または電子メール アドレスのターゲットが含まれているか、GetDomainSettings を要求します。
+テキスト値には、以降の GetUserSettings または GetDomainSettings 要求に対して使用する必要があるリダイレクト URL または電子メールアドレスのターゲットが含まれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|スキーマ名  <br/> |スキーマの自動検出  <br/> |
-|検証ファイル  <br/> |messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|スキーマ名  <br/> |自動検出スキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |はい  <br/> |
    
 

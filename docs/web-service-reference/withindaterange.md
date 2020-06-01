@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 226aeb15-016f-45ca-992a-c137ba09ca08
-description: WithinDateRange 要素は、受信メッセージが適用の条件または例外のために到着したが、日付の範囲を指定します。
-ms.openlocfilehash: d85ef91c581008c2aafb06b1900c4514aebacd65
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: WithinDateRange 要素は、条件または例外を適用するために、受信メッセージが受信される必要がある日付範囲を指定します。
+ms.openlocfilehash: ef5fb15b64ee4f7060f907818c4ebd4367ced5e7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840025"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461850"
 ---
 # <a name="withindaterange"></a>WithinDateRange
 
-**WithinDateRange**要素は、受信メッセージが適用の条件または例外のために到着したが、日付の範囲を指定します。 
+**WithinDateRange**要素は、条件または例外を適用するために、受信メッセージが受信される必要がある日付範囲を指定します。 
   
 ```XML
 <WithinDateRange>
@@ -31,7 +31,7 @@ ms.locfileid: "19840025"
 ```
 
  **RulePredicateDateRangeType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -41,38 +41,38 @@ ms.locfileid: "19840025"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[StartDateTime](startdatetime.md) <br/> |ルールの時間帯を指定し、この値の後にルールの条件が満たされていることを示します。  <br/> |
-|[EndDateTime](enddatetime.md) <br/> |ルールの時間帯を指定し、この値の前にルールの条件が満たされていることを示します。  <br/> |
+|[StartDateTime](startdatetime.md) <br/> |ルールの期間を指定します。この値の後にルールの条件が満たされていることを示します。  <br/> |
+|[EndDateTime](enddatetime.md) <br/> |ルールの期間を指定します。この値より前にルールの条件が満たされていることを示します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[条件](conditions.md) <br/> |条件を表しますが、満たされるとときに、ルールのルールの処理をトリガーします。  <br/> |
-|[Exceptions](exceptions.md) <br/> |受信トレイ ルールの使用可能なルールの例外条件をすべてを表します。  <br/> |
+|[条件](conditions.md) <br/> |ルールのルールの処理を開始するときに実行される条件を表します。  <br/> |
+|[例外](exceptions.md) <br/> |受信トレイルールに対して使用可能なすべてのルールの例外条件を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

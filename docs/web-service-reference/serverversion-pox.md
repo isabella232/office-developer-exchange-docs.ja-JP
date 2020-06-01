@@ -9,18 +9,18 @@ api_type:
 - schema
 ms.assetid: 2c0bc41c-2452-4fc8-a19c-0e85f9fdbc4a
 description: ServerVersion 要素は、Microsoft Exchange Server を実行しているコンピューターのバージョン番号を表します。
-ms.openlocfilehash: ef0562e166094d75d0dd92f5f48bb558e11a2cad
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 3ef531a69d2dd00ee9784c9eb191684ce517e842
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833391"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461969"
 ---
 # <a name="serverversion-pox"></a>ServerVersion (POX)
 
 **ServerVersion**要素は、Microsoft Exchange Server を実行しているコンピューターのバージョン番号を表します。 
   
-- [(POX) を自動検出](autodiscover-pox.md) 
+- [自動検出 (POX)](autodiscover-pox.md) 
 - [応答 (POX)](response-pox.md)
 - [アカウント (POX)](account-pox.md)
 - [プロトコル (POX)](protocol-pox.md)
@@ -30,7 +30,7 @@ ms.locfileid: "19833391"
 <ServerVersion/>
 ```
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -46,19 +46,19 @@ ms.locfileid: "19833391"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
+|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、Exchange サーバーのバージョン番号を表します。
+Text 値は、Exchange サーバーのバージョン番号を表します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**ServerVersion**の値は[型 (POX)](type-pox.md)要素が EXCH または EXPR に等しい場合です。 **ServerVersion**値は、16 進数であり、MajorVersion、マイナー バージョン、およびサーバーの MajorBuildNumber が含まれています。 
+**ServerVersion**の値は、 [Type (POX)](type-pox.md)要素が EXCH または EXPR と等しい場合にのみ有効です。 **ServerVersion**の値は、サーバーの MajorVersion、MinorVersion、および MajorBuildNumber を含む16進数値です。 
   
 ## <a name="example"></a>例
 
-自動検出の応答を取得し、MajorVersion、マイナー バージョン、および MajorBuildNumber を表示する、 **ServerVersion**の値は次の例の変換が返されます。 次の使用例では、 **ServerVersion**の値の 16 進値を入力できます。 **ServerVersion**の値が入力されていない場合は、738180DA のデフォルトの**ServerVersion**値が使用されます。 
+次の例では、自動検出応答で返される**ServerVersion**値を取得して、MajorVersion、MinorVersion、および MajorBuildNumber を取得して表示します。 この例では、 **ServerVersion**値に16進数の値を入力できるようにします。 **ServerVersion**値が入力されていない場合は、既定の**ServerVersion**値738180da が使用されます。 
   
 ```csharp
 static void Main(string[] args)
@@ -105,5 +105,5 @@ static void Main(string[] args)
 
 ## <a name="see-also"></a>関連項目
 
-- [交換の POX の自動検出の XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+- [Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
 

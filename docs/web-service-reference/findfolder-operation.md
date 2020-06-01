@@ -11,54 +11,54 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7a9855aa-06cc-45ba-ad2a-645c15b7d031
-description: FindFolder 操作は、Exchange Web サービスを使用して識別されたフォルダーのサブフォルダーを検索し、サブフォルダーの設定を記述するプロパティのセットを返します。
-ms.openlocfilehash: 655455b46d4a3192b294bee9d85352d95ded49ae
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: FindFolder 操作は、Exchange Web サービスを使用して、識別されたフォルダーのサブフォルダーを検索し、一連のサブフォルダーを記述する一連のプロパティを返します。
+ms.openlocfilehash: f1cc199bdaf684d8d74687ed7f064eb66fee48ff
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760502"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462585"
 ---
 # <a name="findfolder-operation"></a>FindFolder 操作
 
-**FindFolder**操作は、Exchange Web サービスを使用して識別されたフォルダーのサブフォルダーを検索し、サブフォルダーの設定を記述するプロパティのセットを返します。 
+**Findfolder**操作は、Exchange Web サービスを使用して、識別されたフォルダーのサブフォルダーを検索し、一連のサブフォルダーを記述する一連のプロパティを返します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-FindFolder は、ストリーム再生可能なプロパティの最初の 512 バイトのみを返します。 Unicode では、null で終わる Unicode 文字列を使用して、最初の 255 文字を返します。
+FindFolder は、任意のストリーミング可能なプロパティの最初の 512 バイトだけを返します。 Unicode の場合は、Null 終了の Unicode 文字列を使用して最初の 255 文字を返します。
   
-パブリック フォルダーの深い階層にわたるクエリを実行できません。
+ディープトラバースクエリは、パブリックフォルダーでは実行できません。
   
-制限は、許可およびのみ、フォルダーのプロパティ、項目のプロパティではなくを使用する必要があります。 並べ替え機能では、 **FindFolder**応答を使用できません。 **FindFolder**クエリのクエリをグループ化することはできません。 
+制限は許可され、アイテムのプロパティではなく、フォルダーのプロパティのみを使用する必要があります。 **Findfolder**応答では、並べ替え機能を使用できません。 グループ化されたクエリは、 **Findfolder**クエリでは使用できません。 
   
- **メモ****FindFolder**操作は、管理対象のフォルダーを検索するのにも使用されます。 
+ **メモ****Findfolder**操作は、管理フォルダーを検索するためにも使用されます。 
   
 ### <a name="soap-headers"></a>SOAP ヘッダー
 
-**FindFolder**操作が一覧表示され、次の表に記載されている SOAP ヘッダーを使用できます。 
+**Findfolder**操作では、次の表に記載されている SOAP ヘッダーを使用できます。 
   
 |**Header**|**要素**|**説明**|
 |:-----|:-----|:-----|
-|偽装  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装するユーザーを識別します。  <br/> |
-|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |RFC3066 カルチャを使用してメールボックスへのアクセスを識別します。  <br/> |
-|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマのバージョンを識別します。  <br/> |
-|ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答するサーバーのバージョンを識別します。  <br/> |
-|TimeZoneContext  <br/> |[TimeZoneContext](timezonecontext.md) <br/> |サーバーからのすべての応答に使用するタイム ゾーンを識別します。  <br/> |
+|偽装  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。  <br/> |
+|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |メールボックスへのアクセスに使用する RFC3066 カルチャを指定します。  <br/> |
+|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。  <br/> |
+|ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。  <br/> |
+|TimeZoneContext  <br/> |[TimeZoneContext](timezonecontext.md) <br/> |サーバーからのすべての応答に使用するタイムゾーンを指定します。  <br/> |
    
 ## <a name="findfolder-request-example"></a>FindFolder 要求の例
 
 ### <a name="description"></a>説明
 
-**FindFolder**要求の次の例では、受信トレイ内にあるすべてのフォルダーを検索する要求を作成する方法を示します。 
+**Findfolder**要求の次の例は、受信トレイ内のすべてのフォルダーを検索するための要求を形成する方法を示しています。 
   
 ### <a name="code"></a>コード
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <FindFolder Traversal="Shallow" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <FindFolder Traversal="Shallow" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <FolderShape>
         <t:BaseShape>Default</t:BaseShape>
       </FolderShape>
@@ -72,11 +72,11 @@ FindFolder は、ストリーム再生可能なプロパティの最初の 512 �
 
 ### <a name="comments"></a>コメント
 
-[BaseShape](baseshape.md)の既定値を使用して、応答は、フォルダー名、フォルダー ID では、サブフォルダー、フォルダー、および未読アイテム数内の子フォルダーの数の数を返します。
+[Baseshape](baseshape.md)の既定値を使用すると、応答はフォルダー名、フォルダー ID、サブフォルダー数、フォルダー内で見つかった子フォルダーの数、未読アイテムの数を返します。
   
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-**FindFolder**要求には、次の要素が含まれています。 
+この**Findfolder**要求には、次の要素が含まれています。 
   
 - [FindFolder](findfolder.md)
     
@@ -88,16 +88,16 @@ FindFolder は、ストリーム再生可能なプロパティの最初の 512 �
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
- **FindFolder**要求の追加の要素は、スキーマを参照してください。 
+ **Findfolder**要求の追加要素については、スキーマを参照してください。 
   
 ## <a name="findfolder-response-example"></a>FindFolder 応答の例
 
 ### <a name="description"></a>説明
 
-**FindFolder**要求に正常な応答を Simple Object Access Protocol (SOAP) 本文の例を次に示します。 応答には、 [BaseShape](baseshape.md)の既定値が使用されるときに返される要素が含まれています。 
+次の簡易オブジェクトアクセスプロトコル (SOAP) 本文の例は、 **Findfolder**要求に対する正常な応答を示しています。 応答には、 [Baseshape](baseshape.md)の既定値が使用されたときに返される要素が含まれています。 
   
 > [!NOTE]
-> フォルダー ID と変更キーは、読みやすさを保持するために短縮されています。 
+> 読みやすくするために、フォルダー ID と変更キーが短縮されています。 
   
 ### <a name="code"></a>コード
 
@@ -108,12 +108,12 @@ FindFolder は、ストリーム再生可能なプロパティの最初の 512 �
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="652" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <FindFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <FindFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:FindFolderResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -135,9 +135,9 @@ FindFolder は、ストリーム再生可能なプロパティの最初の 512 �
 </soap:Envelope>
 ```
 
-### <a name="response-elements"></a>応答の要素
+### <a name="response-elements"></a>Response 要素
 
-応答で返されるプロパティは、使用される場合に、 [BaseShape](baseshape.md)と[AdditionalProperties](additionalproperties.md)によって決定されます。 **FindFolder**の正常な応答には、次の要素が含まれています。 
+応答で返されるプロパティは、使用されている場合は[Baseshape](baseshape.md)および[additionalproperties](additionalproperties.md)によって決まります。 正常な**Findfolder**応答には、次の要素が含まれています。 
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -155,9 +155,9 @@ FindFolder は、ストリーム再生可能なプロパティの最初の 512 �
     
 - [Folder](folder.md)
     
-- [フォルダー Id](folderid.md)
+- [FolderId](folderid.md)
     
-- [表示名 (文字列)](displayname-string.md)
+- [DisplayName (文字列)](displayname-string.md)
     
 - [TotalCount](totalcount.md)
     
@@ -167,13 +167,13 @@ FindFolder は、ストリーム再生可能なプロパティの最初の 512 �
     
 ### <a name="comments"></a>コメント
 
- [TotalCount](totalcount.md)とパブリック フォルダーの検索の[UnreadCount](unreadcount.md)要素、 **FindFolder** **AllProperties**応答の形をした要求の応答は返されません。 
+ **Allproperties**応答図形を使用した要求に対する**findfolder**応答では、パブリックフォルダー検索の[totalcount](totalcount.md)要素と[UnreadCount](unreadcount.md)要素は返されません。 
   
 ## <a name="findfolder-error-response-example"></a>FindFolder エラー応答の例
 
 ### <a name="description"></a>説明
 
-不正なフォルダー id で識別されているフォルダーを検索するときに発生するエラー応答を SOAP 本文の例を次に示します。
+次の SOAP 本文の例は、無効なフォルダーの識別子によって識別されるフォルダーを検索すると発生するエラー応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -184,12 +184,12 @@ FindFolder は、ストリーム再生可能なプロパティの最初の 512 �
                  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="652" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <FindFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                          xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <FindFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                          xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:FindFolderResponseMessage ResponseClass="Error">
           <m:MessageText>Id is malformed.</m:MessageText>
@@ -202,9 +202,9 @@ FindFolder は、ストリーム再生可能なプロパティの最初の 512 �
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a>エラー応答の要素
+### <a name="error-response-elements"></a>エラー応答要素
 
-**FindFolder**エラー応答には、次の要素が含まれています。 
+**Findfolder**エラー応答には、次の要素が含まれています。 
   
 - [FindFolderResponse](findfolderresponse.md)
     
@@ -216,17 +216,17 @@ FindFolder は、ストリーム再生可能なプロパティの最初の 512 �
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-## <a name="additional-information"></a>その他の情報
+## <a name="additional-information"></a>追加情報
 
-- フォルダーの[表示名 (文字列)](displayname-string.md)の要素は常に既定の図形に含まれます。 
+- Folder [DisplayName (string)](displayname-string.md)要素は、常に既定の図形に含まれています。 
     
-- 仕事リストとメモのフォルダーの[UnreadCount](unreadcount.md)要素が含まれます。 
+- [UnreadCount](unreadcount.md)要素は、タスクフォルダーとメモフォルダーに含まれています。 
     
-- [ExtendedFieldURI](extendedfielduri.md)要素を使用して管理対象のフォルダーを識別するのに**整数**のプロパティの種類と 0x672D の**PropertyTag**値を使用します。 
+- [ExtendedFieldURI](extendedfielduri.md)要素を使用して、管理フォルダーを識別するには、プロパティの種類が**Integer**の**Propertytag**の値0x672d を使用します。 
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[フォルダーを検索します。](http://msdn.microsoft.com/library/9124d868-017a-43f0-b915-5c0082cacec9%28Office.15%29.aspx)
+[フォルダーの検索](https://msdn.microsoft.com/library/9124d868-017a-43f0-b915-5c0082cacec9%28Office.15%29.aspx)
 

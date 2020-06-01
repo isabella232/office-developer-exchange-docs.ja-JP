@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 9ec86ceb-b271-4718-97ca-b6a532ea7223
-description: NumberOfOccurrences 要素には、定期的なアイテムの出現回数が含まれています。
-ms.openlocfilehash: c18a20f14395aead304bd0158ff64c70e51ec165
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: NumberOfOccurrences 要素は、定期的なアイテムの発生回数を含みます。
+ms.openlocfilehash: f9b72611e87c5f2b98deb14c25988e574a324491
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832656"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462543"
 ---
 # <a name="numberofoccurrences"></a>NumberOfOccurrences
 
-**NumberOfOccurrences**要素には、定期的なアイテムの出現回数が含まれています。 
+**Numberofoccurrences**要素は、定期的なアイテムの発生回数を含みます。 
   
 ```xml
 <NumberOfOccurrences/>
 ```
 
  **int**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,28 +44,28 @@ ms.locfileid: "19832656"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[NumberedRecurrence](numberedrecurrence.md) <br/> |開始日と定期的なアイテムの出現回数を説明します。  <br/> |
+|[NumberedRecurrence](numberedrecurrence.md) <br/> |定期的なアイテムの開始日と発生回数を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、定期的なアイテムの出現回数を表す整数です。 値は 1 ~ 999 の範囲の整数である必要があります。
+テキスト値は、定期的なアイテムの出現回数を表す整数です。 この値は、1 ~ 999 の範囲の整数である必要があります。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

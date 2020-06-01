@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d84d4927-b524-4e62-bf3d-1f12fec8c21a
-description: カテゴリの要素には、メールボックス内のアイテムが属するカテゴリを識別する文字列のコレクションが含まれています。
-ms.openlocfilehash: 8f112a9a736ff4f242b9dfb084b3ad7541cc493d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Categories 要素には、メールボックス内のアイテムが属するカテゴリを識別する文字列のコレクションが含まれています。
+ms.openlocfilehash: 0d9f7068aa81306a10436ed0ca0d45f6d3b2c3a3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759615"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462214"
 ---
 # <a name="categories"></a>カテゴリ
 
-**カテゴリ**の要素には、メールボックス内のアイテムが属するカテゴリを識別する文字列のコレクションが含まれています。 
+**Categories**要素には、メールボックス内のアイテムが属するカテゴリを識別する文字列のコレクションが含まれています。 
   
 ```XML
 <Categories>
@@ -30,7 +30,7 @@ ms.locfileid: "19759615"
 ```
 
  **ArrayOfStringsType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,50 +40,50 @@ ms.locfileid: "19759615"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[String](string.md) <br/> |1 つのカテゴリを識別する文字列が含まれています。  <br/> |
+|[String](string.md) <br/> |1つのカテゴリを識別する文字列を格納します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Item](item.md) <br/> |Exchange ストア内の項目を表します。  <br/> |
-|[RemoveItem](removeitem.md) <br/> |Exchange ストアから項目を削除します。  <br/> |
-|[Message](message-ex15websvcsotherref.md) <br/> |Exchange 電子メール メッセージを表します。  <br/> |
-|[タスク](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
-|[カレンダー項目](calendaritem.md) <br/> |Exchange 予定表アイテムを表します。  <br/> |
-|[会話 (ConversationType)](conversation-conversationtype.md) <br/> |1 つのテーマを表します。  <br/> |
+|[Item](item.md) <br/> |Exchange ストア内のアイテムを表します。  <br/> |
+|[RemoveItem](removeitem.md) <br/> |Exchange ストアからアイテムを削除します。  <br/> |
+|[Message](message-ex15websvcsotherref.md) <br/> |Exchange 電子メールメッセージを表します。  <br/> |
+|[Task](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
+|[会話 (ConversationType)](conversation-conversationtype.md) <br/> |単一の会話を表します。  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Exchange ストア内の会議を表します。  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議出席依頼を表します。  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |Exchange ストア内の会議の返信を表します。  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |Exchange ストア内の会議の取り消し通知を表します。  <br/> |
-|[Contact](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |Exchange ストア内の会議の応答を表します。  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |Exchange ストア内の会議の取り消しを表します。  <br/> |
+|[連絡先](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
 |[DistributionList](distributionlist.md) <br/> |配布リストを表します。  <br/> |
-|[条件](conditions.md) <br/> |条件を表しますが、満たされるとときに、ルールのルールの処理をトリガーします。  <br/> |
-|[Exceptions](exceptions.md) <br/> |受信トレイ ルールの使用可能なルールの例外条件をすべてを表します。  <br/> |
-|[ConversationAction](conversationaction.md) <br/> |1 つのテーマを適用する 1 つのアクションが含まれています。  <br/> |
+|[条件](conditions.md) <br/> |ルールのルールの処理を開始するときに実行される条件を表します。  <br/> |
+|[例外](exceptions.md) <br/> |受信トレイルールに対して使用可能なすべてのルールの例外条件を表します。  <br/> |
+|[ConversationAction](conversationaction.md) <br/> |単一の会話に適用される1つのアクションが含まれます。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

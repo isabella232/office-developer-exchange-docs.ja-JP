@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 4bea1cb5-0a0f-4e14-9b09-f91af8cf9899
-description: AttachmentId 要素は、単一の添付ファイルを識別します。
-ms.openlocfilehash: b0355b4a387c65e97fe973a1667e6b0a517ebf7e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: AttachmentId 要素は、1つの添付ファイルを識別します。
+ms.openlocfilehash: 1096487490f6066f70d2da861b3015f0fbf5a68f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759453"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460856"
 ---
 # <a name="attachmentid-getattachment-and-deleteattachment"></a>AttachmentId (GetAttachment と DeleteAttachment)
 
-**AttachmentId**要素は、単一の添付ファイルを識別します。 
+**AttachmentId**要素は、1つの添付ファイルを識別します。 
   
 ```xml
 <AttachmentId Id="" />
 ```
 
  **RequestAttachmentIdType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -46,20 +46,20 @@ ms.locfileid: "19759453"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[AttachmentIds](attachmentids.md) <br/> | 添付ファイル識別子の配列が含まれています。<br/><br/>  この要素への XPath 式は、次のように。<br/><br/>`/DeleteAttachment/AttachmentIds`<br/><br/>`/GetAttachment/AttachmentIds` <br/> |
+|[AttachmentIds](attachmentids.md) <br/> | 添付ファイル識別子の配列を格納します。<br/><br/>  この要素の XPath 式は次のとおりです。<br/><br/>`/DeleteAttachment/AttachmentIds`<br/><br/>`/GetAttachment/AttachmentIds` <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3704435b-9c84-4cff-a2a0-8288b4ca31ae
-description: GetClientAccessToken 要素には、クライアントのアクセス トークンを取得するための要求が含まれています。
-ms.openlocfilehash: 5b5420c5f44d770293c77c0c0ae5c927da3aa856
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetClientAccessToken 要素には、クライアントアクセストークンを取得する要求が含まれています。
+ms.openlocfilehash: f0306f0d608300131ecbde500ed3b62eab0c7c66
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760652"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461094"
 ---
 # <a name="getclientaccesstoken"></a>GetClientAccessToken
 
-**GetClientAccessToken**要素には、クライアントのアクセス トークンを取得するための要求が含まれています。 
+**GetClientAccessToken**要素には、クライアントアクセストークンを取得する要求が含まれています。 
   
 ```XML
 <GetClientAccessToken>
@@ -26,7 +26,7 @@ ms.locfileid: "19760652"
 ```
 
  **GetClientAccessTokenType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,19 +42,19 @@ ms.locfileid: "19760652"
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

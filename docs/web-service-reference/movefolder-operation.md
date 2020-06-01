@@ -11,36 +11,36 @@ api_name:
 api_type:
 - schema
 ms.assetid: c7233966-6c87-4a14-8156-b1610760176d
-description: MoveFolder 操作は、指定したフォルダーからフォルダーを移動して、別のフォルダーに保存します。
-ms.openlocfilehash: 5da6929f11ce9ba74db190db6d799f25974d2192
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: MoveFolder 操作は、指定されたフォルダーからフォルダーを移動して、別のフォルダーに格納します。
+ms.openlocfilehash: dc572130ca3b2f2b152abbb4a8b68cc6f67790e8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832490"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460583"
 ---
 # <a name="movefolder-operation"></a>MoveFolder 操作
 
-MoveFolder 操作は、指定したフォルダーからフォルダーを移動して、別のフォルダーに保存します。
+MoveFolder 操作は、指定されたフォルダーからフォルダーを移動して、別のフォルダーに格納します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MoveFolder 操作は、CopyFolder 操作に似ています。 識別フォルダーを移動することはできません。 コピー先のフォルダーを同時に複数のフォルダーを移動できます。
+MoveFolder 操作は、CopyFolder 操作に似ています。 識別フォルダーを移動することはできません。 複数のフォルダーを、宛先フォルダーに一度に移動できます。
   
 ## <a name="movefolder-request-example"></a>MoveFolder 要求の例
 
 ### <a name="description"></a>説明
 
-MoveFolder 要求の次の例では、[フォルダー Id](folderid.md)で識別されるフォルダーに移動し、[迷惑メールの識別フォルダーでフォルダーを配置する要求を作成する方法を示します。 
+次の MoveFolder 要求の例は、 [FolderId](folderid.md)によって識別されるフォルダーを移動する要求を形成し、フォルダーを迷惑メールの識別フォルダーに入れる方法を示しています。 
   
 ### <a name="code"></a>コード
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <MoveFolder xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <MoveFolder xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ToFolderId>
         <t:DistinguishedFolderId Id="junkemail"/>
       </ToFolderId>
@@ -55,11 +55,11 @@ MoveFolder 要求の次の例では、[フォルダー Id](folderid.md)で識別
 ### <a name="comments"></a>コメント
 
 > [!NOTE]
-> [フォルダー Id](folderid.md)要素の ID 属性の値が小さすぎると読みやすくするためです。 
+> [FolderId](folderid.md)要素の ID 属性の値は、読みやすくするために短縮されています。 
   
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-MoveFolder 要求には、次の要素が含まれています。
+この MoveFolder 要求には、次の要素が含まれています。
   
 - [MoveFolder](movefolder.md)
     
@@ -69,18 +69,18 @@ MoveFolder 要求には、次の要素が含まれています。
     
 - [FolderIds](folderids.md)
     
-- [フォルダー Id](folderid.md)
+- [FolderId](folderid.md)
     
-MoveFolder 要求を形成するために使用できるその他の要素のスキーマを参照してください。
+MoveFolder 要求の形成に使用できるその他の要素については、スキーマを参照してください。
   
 > [!NOTE]
-> スキーマの既定の場所は、クライアント アクセス サーバーの役割がインストールされているコンピューターで EWS 仮想ディレクトリには。 
+> スキーマの既定の場所は、クライアントアクセスサーバーの役割がインストールされているコンピューター上の EWS 仮想ディレクトリにあります。 
   
-## <a name="successful-movefolder-response-example"></a>MoveFolder 応答の成功の例
+## <a name="successful-movefolder-response-example"></a>成功した MoveFolder 応答の例
 
 ### <a name="description"></a>説明
 
-MoveFolder 要求に正常な応答の例を次に示します。 
+次の例は、MoveFolder 要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -91,12 +91,12 @@ MoveFolder 要求に正常な応答の例を次に示します。
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <MoveFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <MoveFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:MoveFolderResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -115,13 +115,13 @@ MoveFolder 要求に正常な応答の例を次に示します。
 ### <a name="comments"></a>コメント
 
 > [!NOTE]
-> フォルダー ID と変更キーは、読みやすさを保持するために短縮されています。 
+> 読みやすくするために、フォルダー ID と変更キーが短縮されています。 
   
-応答で返されるフォルダー Id があったフォルダーを表す新しいフォルダーの場所に移動します。
+応答で返される FolderId は、新しいフォルダーの場所に移動されたフォルダーを表します。
   
-### <a name="response-elements"></a>応答の要素
+### <a name="response-elements"></a>Response 要素
 
-MoveFolder の応答には、次の要素が含まれています。
+MoveFolder 応答には、次の要素が含まれています。
   
 - [MoveFolderResponse](movefolderresponse.md)
     
@@ -135,13 +135,13 @@ MoveFolder の応答には、次の要素が含まれています。
     
 - [Folder](folder.md)
     
-- [フォルダー Id](folderid.md)
+- [FolderId](folderid.md)
     
 ## <a name="movefolder-error-response-example"></a>MoveFolder エラー応答の例
 
 ### <a name="description"></a>説明
 
-識別フォルダーを移動しようとするときに発生するエラー応答の例を次に示します。
+次の例は、識別フォルダーを移動しようとしたときに発生するエラー応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -152,12 +152,12 @@ MoveFolder の応答には、次の要素が含まれています。
                  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <MoveFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                          xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <MoveFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                          xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:MoveFolderResponseMessage ResponseClass="Error">
           <m:MessageText>Cannot move distinguished folder.</m:MessageText>
@@ -171,7 +171,7 @@ MoveFolder の応答には、次の要素が含まれています。
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a>エラー応答の要素
+### <a name="error-response-elements"></a>エラー応答要素
 
 MoveFolder エラー応答には、次の要素が含まれています。
   

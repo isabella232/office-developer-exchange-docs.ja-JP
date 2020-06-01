@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: f7624f5c-c390-4563-ab9a-08f1024fb914
-description: FindItem 要素では、メールボックス内のアイテムを検索するための要求を定義します。
-ms.openlocfilehash: 6664cd91007f1d39db7e8d446e0135f47d5ab932
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: FindItem 要素は、メールボックス内のアイテムを検索する要求を定義します。
+ms.openlocfilehash: 3aeda1cffc03292734a91bc3fff3289d51c9b445
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353925"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460996"
 ---
 # <a name="finditem"></a>FindItem
 
-**FindItem**要素では、メールボックス内のアイテムを検索するための要求を定義します。 
+**FindItem**要素は、メールボックス内のアイテムを検索する要求を定義します。 
   
 ```xml
 <FindItem Traversal="">
@@ -110,7 +110,7 @@ ms.locfileid: "21353925"
 
 **FindItemType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -118,31 +118,31 @@ ms.locfileid: "21353925"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**トラバーサル** <br/> |検索がフォルダーまたはフォルダーの dumpsters でアイテムを検索するかどうかを定義します。 この属性は、必要があります。  <br/> |
+|**走査** <br/> |検索でフォルダー内のアイテムとフォルダーの dumpsters を検索するかどうかを定義します。 この属性は必須です。  <br/> |
    
-#### <a name="traversal-attribute-values"></a>検査の属性値
+#### <a name="traversal-attribute-values"></a>トラバース属性値
 
 |**値**|**説明**|
 |:-----|:-----|
-|浅い  <br/> |フォルダー内のアイテムの id だけを返します。  <br/> |
-|削除済み (回復可能)  <br/> |フォルダーの内にあるアイテムの id だけを返します。 ごみ箱をあさる。 ノートの検索の制限と組み合わせて、ソフト削除走査返される項目が 0 の原因になる場合でも、検索条件に一致する項目があります。  <br/> |
-|関連  <br/> |フォルダーに関連付けられているアイテムの id だけを返します。  <br/> |
+|浅い  <br/> |フォルダー内のアイテムの id のみを返します。  <br/> |
+|削除済み (回復可能)  <br/> |フォルダーの収集に含まれるアイテムの id のみを返します。 検索条件に一致するアイテムが存在する場合でも、回復可能な削除によって削除された検査によって返されるアイテムが0個になることに注意してください。  <br/> |
+|関連  <br/> |フォルダー内の関連付けられたアイテムの id のみを返します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[ItemShape](itemshape.md) <br/> |[FindItem 操作](finditem-operation.md)の応答に含めるコンテンツ アイテムのプロパティを識別します。  <br/> |
-|[IndexedPageItemView](indexedpageitemview.md) <br/> |どのページの項目の情報について説明します**FindItem**要求に対して返されます。 この要素はオプションです。  <br/> |
-|[FractionalPageItemView](fractionalpageitemview.md) <br/> |ページ ビューが開始され**FindItem**要求内のアイテムの最大数が返されるをについて説明します。 見つかった項目のセットの先頭からのページ ビュー オフセットは、分数で表されます。 この要素はオプションです。  <br/> |
-|[CalendarView](calendarview.md) <br/> |時間は、予定表アイテムの検索を定義する制限に 。 この要素はオプションです。  <br/> |
-|[ContactsView](contactsview.md) <br/> |連絡先アイテムをアルファベット順の表示名を基に検索を定義します。 この要素はオプションです。  <br/> |
-|[GroupBy](groupby.md) <br/> |**FindItem**クエリの任意のグループを指定します。 この要素はオプションです。  <br/> |
-|[DistinguishedGroupBy](distinguishedgroupby.md) <br/> |**FindItem**クエリの標準的なグループ化を提供します。 この要素はオプションです。  <br/> |
-|[Restriction](restriction.md) <br/> |制限またはアイテムや**FindItem**内のフォルダーにフィルターを使用するクエリを定義する/ **FindFolder**検索フォルダーの操作です。 この要素はオプションです。  <br/> |
-|[SortOrder](sortorder.md) <br/> |FindItem 要求内のアイテムの並べ替え方法を定義します。 この要素はオプションです。  <br/> |
-|[ParentFolderIds](parentfolderids.md) <br/> |FindItem と FindFolder 操作を検索するフォルダーを識別します。  <br/> |
-|[QueryString (QueryStringType)](querystring-querystringtype.md) <br/> |ベースの高度なクエリ構文 (AQS) のメールボックスのクエリ文字列が含まれています。  <br/> |
+|[ItemShape](itemshape.md) <br/> |[FindItem 操作](finditem-operation.md)応答に含めるアイテムのプロパティとコンテンツを識別します。  <br/> |
+|[IndexedPageItemView](indexedpageitemview.md) <br/> |**FindItem**要求に対して、ページングされたアイテムの情報を返す方法について説明します。 この要素は省略できます。  <br/> |
+|[FractionalPageItemView](fractionalpageitemview.md) <br/> |ページビューの開始位置と、 **FindItem**要求で返されるアイテムの最大数を指定します。 検索されたアイテムのセットの先頭からのページビューオフセットは、分数で示されます。 この要素は省略できます。  <br/> |
+|[CalendarView](calendarview.md) <br/> |予定表アイテムの検索を定義するための時間範囲制限を指定します。 この要素は省略できます。  <br/> |
+|[ContactsView](contactsview.md) <br/> |アルファベットの表示名に基づいて、連絡先アイテムの検索を定義します。 この要素は省略できます。  <br/> |
+|[GroupBy](groupby.md) <br/> |**FindItem**クエリの任意のグループを指定します。 この要素は省略できます。  <br/> |
+|[DistinguishedGroupBy](distinguishedgroupby.md) <br/> |**FindItem**クエリの標準的なグループを提供します。 この要素は省略できます。  <br/> |
+|[Restriction](restriction.md) <br/> |**FindItem** /  **findfolder**および search folder 操作のアイテムまたはフォルダーをフィルター処理するために使用される制限またはクエリを定義します。 この要素は省略できます。  <br/> |
+|[SortOrder](sortorder.md) <br/> |FindItem 要求でのアイテムの並べ替え方法を定義します。 この要素は省略できます。  <br/> |
+|[ParentFolderIds](parentfolderids.md) <br/> |FindItem および FindFolder 操作を検索するフォルダーを指定します。  <br/> |
+|[QueryString (QueryStringType)](querystring-querystringtype.md) <br/> |高度なクエリ構文 (AQS) に基づくメールボックスクエリ文字列が格納されています。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -150,22 +150,22 @@ ms.locfileid: "21353925"
   
 ## <a name="remarks"></a>注釈
 
-**FindItem**要求で、 [IndexedPageItemView](indexedpageitemview.md)、 [FractionalPageItemView](fractionalpageitemview.md)、[予定表ビュー](calendarview.md)、または[ContactsView](contactsview.md)要素の 1 つだけ含まれていることができます。 **FindItem**要求で[GroupBy](groupby.md)または[DistinguishedGroupBy](distinguishedgroupby.md)要素の 1 つだけ含まれていることができます。 
+**FindItem**要求に含めることができるのは、 [Indexedpageitemview](indexedpageitemview.md)、 [FractionalPageItemView](fractionalpageitemview.md)、 [CalendarView](calendarview.md)、または[ContactsView](contactsview.md)要素のいずれか1つだけです。 **FindItem**要求に含めることができるのは、 [GroupBy](groupby.md)または[DistinguishedGroupBy](distinguishedgroupby.md)要素のいずれか1つだけです。 
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - 
   [FindItem 操作](finditem-operation.md)
-- [項目を検索します。](http://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
+- [アイテムの検索](https://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
 
