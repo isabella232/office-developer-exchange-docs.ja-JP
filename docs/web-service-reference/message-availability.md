@@ -11,66 +11,66 @@ api_name:
 api_type:
 - schema
 ms.assetid: 1eec24dd-c981-41f4-a2f0-c51d43f1d7c0
-description: メッセージ要素には、Office (OOF) の応答の出力が含まれています。
-ms.openlocfilehash: 9facd04767fdcc0fd9dfd84fc6badb1a7633d2b5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Message 要素に、不在 (OOF) 応答が含まれています。
+ms.openlocfilehash: 13d118422ccb5a2897c21b6d124f170bf461dbf6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832452"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44467005"
 ---
-# <a name="message-availability"></a><span data-ttu-id="70169-103">メッセージ (可用性)</span><span class="sxs-lookup"><span data-stu-id="70169-103">Message (Availability)</span></span>
+# <a name="message-availability"></a><span data-ttu-id="ac074-103">メッセージ (可用性)</span><span class="sxs-lookup"><span data-stu-id="ac074-103">Message (Availability)</span></span>
 
-<span data-ttu-id="70169-104">**メッセージ**要素には、Office (OOF) の応答の出力が含まれています。</span><span class="sxs-lookup"><span data-stu-id="70169-104">The **Message** element contains the out of Office (OOF) response.</span></span> 
+<span data-ttu-id="ac074-104">**Message**要素に、不在 (OOF) 応答が含まれています。</span><span class="sxs-lookup"><span data-stu-id="ac074-104">The **Message** element contains the out of Office (OOF) response.</span></span> 
   
 ```xml
 <Message/> 
 ```
 
- <span data-ttu-id="70169-105">**string**</span><span class="sxs-lookup"><span data-stu-id="70169-105">**string**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="70169-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="70169-106">Attributes and elements</span></span>
+ <span data-ttu-id="ac074-105">**string**</span><span class="sxs-lookup"><span data-stu-id="ac074-105">**string**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="ac074-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="ac074-106">Attributes and elements</span></span>
 
-<span data-ttu-id="70169-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="70169-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="ac074-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="ac074-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="70169-108">属性</span><span class="sxs-lookup"><span data-stu-id="70169-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="ac074-108">属性</span><span class="sxs-lookup"><span data-stu-id="ac074-108">Attributes</span></span>
 
-<span data-ttu-id="70169-109">なし。</span><span class="sxs-lookup"><span data-stu-id="70169-109">None.</span></span>
+<span data-ttu-id="ac074-109">なし。</span><span class="sxs-lookup"><span data-stu-id="ac074-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="70169-110">子要素</span><span class="sxs-lookup"><span data-stu-id="70169-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="ac074-110">子要素</span><span class="sxs-lookup"><span data-stu-id="ac074-110">Child elements</span></span>
 
-<span data-ttu-id="70169-111">なし。</span><span class="sxs-lookup"><span data-stu-id="70169-111">None.</span></span>
+<span data-ttu-id="ac074-111">なし。</span><span class="sxs-lookup"><span data-stu-id="ac074-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="70169-112">親要素</span><span class="sxs-lookup"><span data-stu-id="70169-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="ac074-112">親要素</span><span class="sxs-lookup"><span data-stu-id="ac074-112">Parent elements</span></span>
 
-|<span data-ttu-id="70169-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="70169-113">**Element**</span></span>|<span data-ttu-id="70169-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="70169-114">**Description**</span></span>|
+|<span data-ttu-id="ac074-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="ac074-113">**Element**</span></span>|<span data-ttu-id="ac074-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="ac074-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="70169-115">InternalReply</span><span class="sxs-lookup"><span data-stu-id="70169-115">InternalReply</span></span>](internalreply.md) <br/> | <span data-ttu-id="70169-116">送信者のドメインの他のユーザーに送信される不在時のメッセージが含まれています。</span><span class="sxs-lookup"><span data-stu-id="70169-116">Contains the OOF message sent to other users in the sender's domain.</span></span> <br/> <br/>  <span data-ttu-id="70169-117">この要素に使用可能な XPath 式は、次のように。</span><span class="sxs-lookup"><span data-stu-id="70169-117">The following are the possible XPath expressions to this element:</span></span> <br/> <br/>  `/SetUserOofSettingsRequest/UserOofSettings/InternalReply` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/InternalReply` <br/> |
-|[<span data-ttu-id="70169-118">ExternalReply</span><span class="sxs-lookup"><span data-stu-id="70169-118">ExternalReply</span></span>](externalreply.md) <br/> | <span data-ttu-id="70169-119">送信者のドメインの外部アドレスに送信される不在時のメッセージが含まれています。</span><span class="sxs-lookup"><span data-stu-id="70169-119">Contains the OOF message that is sent to addresses outside the sender's domain.</span></span>  <br/> <br/> <span data-ttu-id="70169-120">この要素に使用可能な XPath 式は、次のように。</span><span class="sxs-lookup"><span data-stu-id="70169-120">The following are the possible XPath expressions to this element:</span></span>  <br/><br/>  `/SetUserOofSettingsRequest/UserOofSettings/ExternalReply` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/ExternalReply` <br/> |
-|[<span data-ttu-id="70169-121">ReplyBody</span><span class="sxs-lookup"><span data-stu-id="70169-121">ReplyBody</span></span>](replybody.md) <br/> |<span data-ttu-id="70169-122">不在時のメッセージと、メッセージに使用する言語が含まれています。</span><span class="sxs-lookup"><span data-stu-id="70169-122">Contains an OOF message and the language used for the message.</span></span>  <br/> |
+|[<span data-ttu-id="ac074-115">InternalReply</span><span class="sxs-lookup"><span data-stu-id="ac074-115">InternalReply</span></span>](internalreply.md) <br/> | <span data-ttu-id="ac074-116">送信者のドメイン内の他のユーザーに送信される OOF メッセージを含みます。</span><span class="sxs-lookup"><span data-stu-id="ac074-116">Contains the OOF message sent to other users in the sender's domain.</span></span> <br/> <br/>  <span data-ttu-id="ac074-117">この要素に使用できる XPath 式は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="ac074-117">The following are the possible XPath expressions to this element:</span></span> <br/> <br/>  `/SetUserOofSettingsRequest/UserOofSettings/InternalReply` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/InternalReply` <br/> |
+|[<span data-ttu-id="ac074-118">ExternalReply</span><span class="sxs-lookup"><span data-stu-id="ac074-118">ExternalReply</span></span>](externalreply.md) <br/> | <span data-ttu-id="ac074-119">送信者のドメイン外のアドレスに送信される OOF メッセージを含みます。</span><span class="sxs-lookup"><span data-stu-id="ac074-119">Contains the OOF message that is sent to addresses outside the sender's domain.</span></span>  <br/> <br/> <span data-ttu-id="ac074-120">この要素に使用できる XPath 式は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="ac074-120">The following are the possible XPath expressions to this element:</span></span>  <br/><br/>  `/SetUserOofSettingsRequest/UserOofSettings/ExternalReply` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/ExternalReply` <br/> |
+|[<span data-ttu-id="ac074-121">ReplyBody</span><span class="sxs-lookup"><span data-stu-id="ac074-121">ReplyBody</span></span>](replybody.md) <br/> |<span data-ttu-id="ac074-122">不在時のメッセージと、メッセージに使用する言語が含まれています。</span><span class="sxs-lookup"><span data-stu-id="ac074-122">Contains an OOF message and the language used for the message.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="70169-123">テキスト値</span><span class="sxs-lookup"><span data-stu-id="70169-123">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="ac074-123">テキスト値</span><span class="sxs-lookup"><span data-stu-id="ac074-123">Text value</span></span>
 
-<span data-ttu-id="70169-124">OOF メッセージを設定するのには、テキスト値が必要です。</span><span class="sxs-lookup"><span data-stu-id="70169-124">A text value is required to set the OOF message.</span></span>
+<span data-ttu-id="ac074-124">不在時のメッセージを設定するには、テキスト値が必要です。</span><span class="sxs-lookup"><span data-stu-id="ac074-124">A text value is required to set the OOF message.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="70169-125">備考</span><span class="sxs-lookup"><span data-stu-id="70169-125">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ac074-125">注釈</span><span class="sxs-lookup"><span data-stu-id="ac074-125">Remarks</span></span>
 
-<span data-ttu-id="70169-126">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="70169-126">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="ac074-126">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="ac074-126">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="example"></a><span data-ttu-id="70169-127">例</span><span class="sxs-lookup"><span data-stu-id="70169-127">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ac074-127">例</span><span class="sxs-lookup"><span data-stu-id="ac074-127">Example</span></span>
 
-<span data-ttu-id="70169-128">[SetUserOofSettings 操作](setuseroofsettings-operation.md)要求の次の使用例は、 [OofState](oofstate.md)を**有効**に設定、不在時の期間を 10 日に設定し、内部と外部の OOF メッセージを設定します。</span><span class="sxs-lookup"><span data-stu-id="70169-128">The following example of a [SetUserOofSettings operation](setuseroofsettings-operation.md) request sets the [OofState](oofstate.md) to **Enabled**, sets the duration of OOF to 10 days, and sets the internal and external OOF messages.</span></span>
+<span data-ttu-id="ac074-128">[Setuseroofsettings 操作](setuseroofsettings-operation.md)要求の次の例では、 [Oofstate](oofstate.md)を**有効**に設定し、oof の時間を10日に設定し、内部および外部の oof メッセージを設定します。</span><span class="sxs-lookup"><span data-stu-id="ac074-128">The following example of a [SetUserOofSettings operation](setuseroofsettings-operation.md) request sets the [OofState](oofstate.md) to **Enabled**, sets the duration of OOF to 10 days, and sets the internal and external OOF messages.</span></span>
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <SetUserOofSettingsRequest xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-      <Mailbox xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+    <SetUserOofSettingsRequest xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+      <Mailbox xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <Name>David Alexander</Name>
         <Address>someone@example.com</Address>
         <RoutingType>SMTP</RoutingType>
       </Mailbox>
-      <UserOofSettings xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+      <UserOofSettings xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <OofState>Enabled</OofState>
         <ExternalAudience>All</ExternalAudience>
         <Duration>
@@ -89,17 +89,17 @@ ms.locfileid: "19832452"
 </soap:Envelope>
 ```
 
-## <a name="element-information"></a><span data-ttu-id="70169-129">要素情報</span><span class="sxs-lookup"><span data-stu-id="70169-129">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="ac074-129">要素の情報</span><span class="sxs-lookup"><span data-stu-id="ac074-129">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="70169-130">名前空間</span><span class="sxs-lookup"><span data-stu-id="70169-130">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="70169-131">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="70169-131">Schema Name</span></span>  <br/> |<span data-ttu-id="70169-132">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="70169-132">Types schema</span></span>  <br/> |
-|<span data-ttu-id="70169-133">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="70169-133">Validation File</span></span>  <br/> |<span data-ttu-id="70169-134">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="70169-134">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="70169-135">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="70169-135">Can be Empty</span></span>  <br/> |<span data-ttu-id="70169-136">False</span><span class="sxs-lookup"><span data-stu-id="70169-136">False</span></span>  <br/> |
+|<span data-ttu-id="ac074-130">Namespace</span><span class="sxs-lookup"><span data-stu-id="ac074-130">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="ac074-131">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="ac074-131">Schema Name</span></span>  <br/> |<span data-ttu-id="ac074-132">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="ac074-132">Types schema</span></span>  <br/> |
+|<span data-ttu-id="ac074-133">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="ac074-133">Validation File</span></span>  <br/> |<span data-ttu-id="ac074-134">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="ac074-134">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="ac074-135">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="ac074-135">Can be Empty</span></span>  <br/> |<span data-ttu-id="ac074-136">正しくない</span><span class="sxs-lookup"><span data-stu-id="ac074-136">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="70169-137">関連項目</span><span class="sxs-lookup"><span data-stu-id="70169-137">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ac074-137">関連項目</span><span class="sxs-lookup"><span data-stu-id="ac074-137">See also</span></span>
 
-- [<span data-ttu-id="70169-138">SetUserOofSettings 操作</span><span class="sxs-lookup"><span data-stu-id="70169-138">SetUserOofSettings operation</span></span>](setuseroofsettings-operation.md)
-- [<span data-ttu-id="70169-139">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="70169-139">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="ac074-138">SetUserOofSettings 操作</span><span class="sxs-lookup"><span data-stu-id="ac074-138">SetUserOofSettings operation</span></span>](setuseroofsettings-operation.md)
+- [<span data-ttu-id="ac074-139">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="ac074-139">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

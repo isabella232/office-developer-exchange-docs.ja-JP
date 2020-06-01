@@ -11,68 +11,68 @@ api_name:
 api_type:
 - schema
 ms.assetid: fb57deee-9cc3-4730-9805-ff34f39e3ab7
-description: OldItemId 要素には、コピーまたは移動された項目の一意の識別子が含まれています。
-ms.openlocfilehash: ced7fc6891e0d1fde42a8cb9cad4f4e55493b5d1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: OldItemId 要素には、コピーまたは移動されたアイテムの一意の識別子が含まれています。
+ms.openlocfilehash: 9fab14478ffbb2dd8ad013d59520af943584f2eb
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832648"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467467"
 ---
-# <a name="olditemid"></a><span data-ttu-id="847cc-103">OldItemId</span><span class="sxs-lookup"><span data-stu-id="847cc-103">OldItemId</span></span>
+# <a name="olditemid"></a><span data-ttu-id="63505-103">OldItemId</span><span class="sxs-lookup"><span data-stu-id="63505-103">OldItemId</span></span>
 
-<span data-ttu-id="847cc-104">**OldItemId**要素には、コピーまたは移動された項目の一意の識別子が含まれています。</span><span class="sxs-lookup"><span data-stu-id="847cc-104">The **OldItemId** element contains the unique identifier of the item that was copied or moved.</span></span> 
+<span data-ttu-id="63505-104">**Olditemid**要素には、コピーまたは移動されたアイテムの一意の識別子が含まれています。</span><span class="sxs-lookup"><span data-stu-id="63505-104">The **OldItemId** element contains the unique identifier of the item that was copied or moved.</span></span> 
   
 ```xml
 <OldItemId Id="" ChangeKey=""/>
 ```
 
- <span data-ttu-id="847cc-105">**ItemIdType**</span><span class="sxs-lookup"><span data-stu-id="847cc-105">**ItemIdType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="847cc-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="847cc-106">Attributes and elements</span></span>
+ <span data-ttu-id="63505-105">**ItemIdType**</span><span class="sxs-lookup"><span data-stu-id="63505-105">**ItemIdType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="63505-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="63505-106">Attributes and elements</span></span>
 
-<span data-ttu-id="847cc-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="847cc-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="63505-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="63505-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="847cc-108">属性</span><span class="sxs-lookup"><span data-stu-id="847cc-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="63505-108">属性</span><span class="sxs-lookup"><span data-stu-id="63505-108">Attributes</span></span>
 
-|<span data-ttu-id="847cc-109">**属性**</span><span class="sxs-lookup"><span data-stu-id="847cc-109">**Attribute**</span></span>|<span data-ttu-id="847cc-110">**説明**</span><span class="sxs-lookup"><span data-stu-id="847cc-110">**Description**</span></span>|
+|<span data-ttu-id="63505-109">**属性**</span><span class="sxs-lookup"><span data-stu-id="63505-109">**Attribute**</span></span>|<span data-ttu-id="63505-110">**説明**</span><span class="sxs-lookup"><span data-stu-id="63505-110">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="847cc-111">**Id**</span><span class="sxs-lookup"><span data-stu-id="847cc-111">**Id**</span></span> <br/> |<span data-ttu-id="847cc-112">Exchange ストア内の項目を識別する文字列が含まれています。</span><span class="sxs-lookup"><span data-stu-id="847cc-112">Contains a string that identifies an item in the Exchange store.</span></span> <span data-ttu-id="847cc-113">この属性は、必要があります。</span><span class="sxs-lookup"><span data-stu-id="847cc-113">This attribute is required.</span></span>  <br/> |
-|<span data-ttu-id="847cc-114">**変更キー**</span><span class="sxs-lookup"><span data-stu-id="847cc-114">**ChangeKey**</span></span> <br/> |<span data-ttu-id="847cc-115">Id 属性によって識別される項目のバージョンを識別する文字列が含まれています。</span><span class="sxs-lookup"><span data-stu-id="847cc-115">Contains a string that identifies a version of an item that is identified by the Id attribute.</span></span> <span data-ttu-id="847cc-116">この属性は、省略可能です。</span><span class="sxs-lookup"><span data-stu-id="847cc-116">This attribute is optional.</span></span> <span data-ttu-id="847cc-117">アイテムの正しいバージョンを使用するかどうかを確認するには、この属性を使用します。</span><span class="sxs-lookup"><span data-stu-id="847cc-117">Use this attribute to make sure that the correct version of an item is used.</span></span>  <br/> |
+|<span data-ttu-id="63505-111">**Id**</span><span class="sxs-lookup"><span data-stu-id="63505-111">**Id**</span></span> <br/> |<span data-ttu-id="63505-112">Exchange ストア内のアイテムを識別する文字列を格納します。</span><span class="sxs-lookup"><span data-stu-id="63505-112">Contains a string that identifies an item in the Exchange store.</span></span> <span data-ttu-id="63505-113">この属性は必須です。</span><span class="sxs-lookup"><span data-stu-id="63505-113">This attribute is required.</span></span>  <br/> |
+|<span data-ttu-id="63505-114">**ChangeKey**</span><span class="sxs-lookup"><span data-stu-id="63505-114">**ChangeKey**</span></span> <br/> |<span data-ttu-id="63505-115">Id 属性によって識別されるアイテムのバージョンを識別する文字列を格納します。</span><span class="sxs-lookup"><span data-stu-id="63505-115">Contains a string that identifies a version of an item that is identified by the Id attribute.</span></span> <span data-ttu-id="63505-116">この属性は省略可能です。</span><span class="sxs-lookup"><span data-stu-id="63505-116">This attribute is optional.</span></span> <span data-ttu-id="63505-117">この属性を使用して、アイテムの正しいバージョンが使用されるようにします。</span><span class="sxs-lookup"><span data-stu-id="63505-117">Use this attribute to make sure that the correct version of an item is used.</span></span>  <br/> |
    
-### <a name="child-elements"></a><span data-ttu-id="847cc-118">子要素</span><span class="sxs-lookup"><span data-stu-id="847cc-118">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="63505-118">子要素</span><span class="sxs-lookup"><span data-stu-id="63505-118">Child elements</span></span>
 
-<span data-ttu-id="847cc-119">なし。</span><span class="sxs-lookup"><span data-stu-id="847cc-119">None.</span></span>
+<span data-ttu-id="63505-119">なし。</span><span class="sxs-lookup"><span data-stu-id="63505-119">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="847cc-120">親要素</span><span class="sxs-lookup"><span data-stu-id="847cc-120">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="63505-120">親要素</span><span class="sxs-lookup"><span data-stu-id="63505-120">Parent elements</span></span>
 
-|<span data-ttu-id="847cc-121">**要素**</span><span class="sxs-lookup"><span data-stu-id="847cc-121">**Element**</span></span>|<span data-ttu-id="847cc-122">**説明**</span><span class="sxs-lookup"><span data-stu-id="847cc-122">**Description**</span></span>|
+|<span data-ttu-id="63505-121">**要素**</span><span class="sxs-lookup"><span data-stu-id="63505-121">**Element**</span></span>|<span data-ttu-id="63505-122">**説明**</span><span class="sxs-lookup"><span data-stu-id="63505-122">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="847cc-123">CopiedEvent</span><span class="sxs-lookup"><span data-stu-id="847cc-123">CopiedEvent</span></span>](copiedevent.md) <br/> |<span data-ttu-id="847cc-124">アイテムまたはフォルダーのコピー先のイベントを表します。</span><span class="sxs-lookup"><span data-stu-id="847cc-124">Represents an event in which an item or folder is copied.</span></span>  <br/> |
-|[<span data-ttu-id="847cc-125">MovedEvent</span><span class="sxs-lookup"><span data-stu-id="847cc-125">MovedEvent</span></span>](movedevent.md) <br/> |<span data-ttu-id="847cc-126">アイテムまたはフォルダーが 1 つの親フォルダー間で移動して別の親フォルダー イベントを表します。</span><span class="sxs-lookup"><span data-stu-id="847cc-126">Represents an event in which an item or folder is moved from one parent folder to another parent folder.</span></span>  <br/> |
+|[<span data-ttu-id="63505-123">CopiedEvent</span><span class="sxs-lookup"><span data-stu-id="63505-123">CopiedEvent</span></span>](copiedevent.md) <br/> |<span data-ttu-id="63505-124">アイテムまたはフォルダーがコピーされるイベントを表します。</span><span class="sxs-lookup"><span data-stu-id="63505-124">Represents an event in which an item or folder is copied.</span></span>  <br/> |
+|[<span data-ttu-id="63505-125">MovedEvent</span><span class="sxs-lookup"><span data-stu-id="63505-125">MovedEvent</span></span>](movedevent.md) <br/> |<span data-ttu-id="63505-126">ある親フォルダーから別の親フォルダーにアイテムまたはフォルダーを移動するイベントを表します。</span><span class="sxs-lookup"><span data-stu-id="63505-126">Represents an event in which an item or folder is moved from one parent folder to another parent folder.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="847cc-127">備考</span><span class="sxs-lookup"><span data-stu-id="847cc-127">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="63505-127">注釈</span><span class="sxs-lookup"><span data-stu-id="63505-127">Remarks</span></span>
 
-<span data-ttu-id="847cc-128">MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。</span><span class="sxs-lookup"><span data-stu-id="847cc-128">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="63505-128">この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="63505-128">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="847cc-129">要素情報</span><span class="sxs-lookup"><span data-stu-id="847cc-129">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="63505-129">要素の情報</span><span class="sxs-lookup"><span data-stu-id="63505-129">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="847cc-130">名前空間</span><span class="sxs-lookup"><span data-stu-id="847cc-130">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="847cc-131">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="847cc-131">Schema Name</span></span>  <br/> |<span data-ttu-id="847cc-132">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="847cc-132">Types schema</span></span>  <br/> |
-|<span data-ttu-id="847cc-133">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="847cc-133">Validation File</span></span>  <br/> |<span data-ttu-id="847cc-134">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="847cc-134">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="847cc-135">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="847cc-135">Can be Empty</span></span>  <br/> |<span data-ttu-id="847cc-136">False</span><span class="sxs-lookup"><span data-stu-id="847cc-136">False</span></span>  <br/> |
+|<span data-ttu-id="63505-130">Namespace</span><span class="sxs-lookup"><span data-stu-id="63505-130">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="63505-131">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="63505-131">Schema Name</span></span>  <br/> |<span data-ttu-id="63505-132">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="63505-132">Types schema</span></span>  <br/> |
+|<span data-ttu-id="63505-133">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="63505-133">Validation File</span></span>  <br/> |<span data-ttu-id="63505-134">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="63505-134">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="63505-135">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="63505-135">Can be Empty</span></span>  <br/> |<span data-ttu-id="63505-136">正しくない</span><span class="sxs-lookup"><span data-stu-id="63505-136">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="847cc-137">関連項目</span><span class="sxs-lookup"><span data-stu-id="847cc-137">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="63505-137">関連項目</span><span class="sxs-lookup"><span data-stu-id="63505-137">See also</span></span>
 
 
 
-[<span data-ttu-id="847cc-138">サブスクライブ操作</span><span class="sxs-lookup"><span data-stu-id="847cc-138">Subscribe operation</span></span>](subscribe-operation.md)
+[<span data-ttu-id="63505-138">サブスクライブ操作</span><span class="sxs-lookup"><span data-stu-id="63505-138">Subscribe operation</span></span>](subscribe-operation.md)
   
-[<span data-ttu-id="847cc-139">GetEvents 操作</span><span class="sxs-lookup"><span data-stu-id="847cc-139">GetEvents operation</span></span>](getevents-operation.md)
+[<span data-ttu-id="63505-139">GetEvents 操作</span><span class="sxs-lookup"><span data-stu-id="63505-139">GetEvents operation</span></span>](getevents-operation.md)
   
-[<span data-ttu-id="847cc-140">Unsubscribe 操作</span><span class="sxs-lookup"><span data-stu-id="847cc-140">Unsubscribe operation</span></span>](unsubscribe-operation.md)
+[<span data-ttu-id="63505-140">Unsubscribe 操作</span><span class="sxs-lookup"><span data-stu-id="63505-140">Unsubscribe operation</span></span>](unsubscribe-operation.md)
 
 
-- [<span data-ttu-id="847cc-141">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="847cc-141">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="63505-141">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="63505-141">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

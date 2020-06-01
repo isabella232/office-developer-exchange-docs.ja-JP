@@ -11,73 +11,73 @@ api_name:
 api_type:
 - schema
 ms.assetid: bb86b275-9c29-4daf-8196-8d505b87a4f4
-description: MeetingDurationInMinutes 要素は、提案された会議の期間を指定します。
-ms.openlocfilehash: 2ff60b69fb352c2ac7316f1ca231bb04da67ead2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: MeetingDurationInMinutes 要素は、提案される会議の期間を指定します。
+ms.openlocfilehash: b41e234be40c2ad8b28047ae2e812edfd66af644
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832433"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44467488"
 ---
-# <a name="meetingdurationinminutes"></a><span data-ttu-id="2c907-103">MeetingDurationInMinutes</span><span class="sxs-lookup"><span data-stu-id="2c907-103">MeetingDurationInMinutes</span></span>
+# <a name="meetingdurationinminutes"></a><span data-ttu-id="87dfe-103">MeetingDurationInMinutes</span><span class="sxs-lookup"><span data-stu-id="87dfe-103">MeetingDurationInMinutes</span></span>
 
-<span data-ttu-id="2c907-104">**MeetingDurationInMinutes**要素は、提案された会議の期間を指定します。</span><span class="sxs-lookup"><span data-stu-id="2c907-104">The **MeetingDurationInMinutes** element specifies the duration of the meeting to be suggested.</span></span> 
+<span data-ttu-id="87dfe-104">**MeetingDurationInMinutes**要素は、提案される会議の期間を指定します。</span><span class="sxs-lookup"><span data-stu-id="87dfe-104">The **MeetingDurationInMinutes** element specifies the duration of the meeting to be suggested.</span></span> 
   
-[<span data-ttu-id="2c907-105">GetUserAvailabilityRequest</span><span class="sxs-lookup"><span data-stu-id="2c907-105">GetUserAvailabilityRequest</span></span>](getuseravailabilityrequest.md)
+[<span data-ttu-id="87dfe-105">GetUserAvailabilityRequest</span><span class="sxs-lookup"><span data-stu-id="87dfe-105">GetUserAvailabilityRequest</span></span>](getuseravailabilityrequest.md)
   
-[<span data-ttu-id="2c907-106">SuggestionsViewOptions</span><span class="sxs-lookup"><span data-stu-id="2c907-106">SuggestionsViewOptions</span></span>](suggestionsviewoptions.md)
+[<span data-ttu-id="87dfe-106">SuggestionsViewOptions</span><span class="sxs-lookup"><span data-stu-id="87dfe-106">SuggestionsViewOptions</span></span>](suggestionsviewoptions.md)
   
-[<span data-ttu-id="2c907-107">MeetingDurationInMinutes</span><span class="sxs-lookup"><span data-stu-id="2c907-107">MeetingDurationInMinutes</span></span>](meetingdurationinminutes.md)
+[<span data-ttu-id="87dfe-107">MeetingDurationInMinutes</span><span class="sxs-lookup"><span data-stu-id="87dfe-107">MeetingDurationInMinutes</span></span>](meetingdurationinminutes.md)
   
 ```xml
 <MeetingDurationInMinutes>...</MeetingDurationInMinutes>
 ```
 
- <span data-ttu-id="2c907-108">**int**</span><span class="sxs-lookup"><span data-stu-id="2c907-108">**int**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="2c907-109">属性および要素</span><span class="sxs-lookup"><span data-stu-id="2c907-109">Attributes and elements</span></span>
+ <span data-ttu-id="87dfe-108">**int**</span><span class="sxs-lookup"><span data-stu-id="87dfe-108">**int**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="87dfe-109">属性と要素</span><span class="sxs-lookup"><span data-stu-id="87dfe-109">Attributes and elements</span></span>
 
-<span data-ttu-id="2c907-110">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="2c907-110">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="87dfe-110">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="87dfe-110">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="2c907-111">属性</span><span class="sxs-lookup"><span data-stu-id="2c907-111">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="87dfe-111">属性</span><span class="sxs-lookup"><span data-stu-id="87dfe-111">Attributes</span></span>
 
-<span data-ttu-id="2c907-112">なし。</span><span class="sxs-lookup"><span data-stu-id="2c907-112">None.</span></span>
+<span data-ttu-id="87dfe-112">なし。</span><span class="sxs-lookup"><span data-stu-id="87dfe-112">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="2c907-113">子要素</span><span class="sxs-lookup"><span data-stu-id="2c907-113">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="87dfe-113">子要素</span><span class="sxs-lookup"><span data-stu-id="87dfe-113">Child elements</span></span>
 
-<span data-ttu-id="2c907-114">なし。</span><span class="sxs-lookup"><span data-stu-id="2c907-114">None.</span></span>
+<span data-ttu-id="87dfe-114">なし。</span><span class="sxs-lookup"><span data-stu-id="87dfe-114">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="2c907-115">親要素</span><span class="sxs-lookup"><span data-stu-id="2c907-115">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="87dfe-115">親要素</span><span class="sxs-lookup"><span data-stu-id="87dfe-115">Parent elements</span></span>
 
-|<span data-ttu-id="2c907-116">**要素**</span><span class="sxs-lookup"><span data-stu-id="2c907-116">**Element**</span></span>|<span data-ttu-id="2c907-117">**説明**</span><span class="sxs-lookup"><span data-stu-id="2c907-117">**Description**</span></span>|
+|<span data-ttu-id="87dfe-116">**要素**</span><span class="sxs-lookup"><span data-stu-id="87dfe-116">**Element**</span></span>|<span data-ttu-id="87dfe-117">**説明**</span><span class="sxs-lookup"><span data-stu-id="87dfe-117">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="2c907-118">SuggestionsViewOptions</span><span class="sxs-lookup"><span data-stu-id="2c907-118">SuggestionsViewOptions</span></span>](suggestionsviewoptions.md) <br/> |<span data-ttu-id="2c907-119">取得するためのオプションが含まれています会議の情報を提案します。</span><span class="sxs-lookup"><span data-stu-id="2c907-119">Contains the options for obtaining meeting suggestion information.</span></span>  <br/> <span data-ttu-id="2c907-120">以下は、この要素の XPath です。</span><span class="sxs-lookup"><span data-stu-id="2c907-120">The following is the XPath to this element:</span></span>  <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions` <br/> |
+|[<span data-ttu-id="87dfe-118">SuggestionsViewOptions</span><span class="sxs-lookup"><span data-stu-id="87dfe-118">SuggestionsViewOptions</span></span>](suggestionsviewoptions.md) <br/> |<span data-ttu-id="87dfe-119">会議提案情報を取得するためのオプションが含まれています。</span><span class="sxs-lookup"><span data-stu-id="87dfe-119">Contains the options for obtaining meeting suggestion information.</span></span>  <br/> <span data-ttu-id="87dfe-120">この要素の XPath を次に示します。</span><span class="sxs-lookup"><span data-stu-id="87dfe-120">The following is the XPath to this element:</span></span>  <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions` <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="2c907-121">テキスト値</span><span class="sxs-lookup"><span data-stu-id="2c907-121">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="87dfe-121">テキスト値</span><span class="sxs-lookup"><span data-stu-id="87dfe-121">Text value</span></span>
 
-<span data-ttu-id="2c907-122">テキスト値は必須です。</span><span class="sxs-lookup"><span data-stu-id="2c907-122">A text value is required.</span></span> <span data-ttu-id="2c907-123">テキスト値は、整数を表します。</span><span class="sxs-lookup"><span data-stu-id="2c907-123">The text value represents an integer.</span></span>
+<span data-ttu-id="87dfe-122">テキスト値は必須です。</span><span class="sxs-lookup"><span data-stu-id="87dfe-122">A text value is required.</span></span> <span data-ttu-id="87dfe-123">テキスト値は、整数を表します。</span><span class="sxs-lookup"><span data-stu-id="87dfe-123">The text value represents an integer.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="2c907-124">備考</span><span class="sxs-lookup"><span data-stu-id="2c907-124">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="87dfe-124">注釈</span><span class="sxs-lookup"><span data-stu-id="87dfe-124">Remarks</span></span>
 
-<span data-ttu-id="2c907-125">[SuggestionsViewOptions](suggestionsviewoptions.md)要素を使用する場合、この要素が必要です。</span><span class="sxs-lookup"><span data-stu-id="2c907-125">This element is required if the [SuggestionsViewOptions](suggestionsviewoptions.md) element is used.</span></span> 
+<span data-ttu-id="87dfe-125">この要素は、 [SuggestionsViewOptions](suggestionsviewoptions.md)要素を使用する場合に必要です。</span><span class="sxs-lookup"><span data-stu-id="87dfe-125">This element is required if the [SuggestionsViewOptions](suggestionsviewoptions.md) element is used.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="2c907-126">MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。</span><span class="sxs-lookup"><span data-stu-id="2c907-126">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span> 
+> <span data-ttu-id="87dfe-126">この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="87dfe-126">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span> 
   
-## <a name="element-information"></a><span data-ttu-id="2c907-127">要素情報</span><span class="sxs-lookup"><span data-stu-id="2c907-127">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="87dfe-127">要素の情報</span><span class="sxs-lookup"><span data-stu-id="87dfe-127">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="2c907-128">名前空間</span><span class="sxs-lookup"><span data-stu-id="2c907-128">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="2c907-129">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="2c907-129">Schema Name</span></span>  <br/> |<span data-ttu-id="2c907-130">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="2c907-130">Types schema</span></span>  <br/> |
-|<span data-ttu-id="2c907-131">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="2c907-131">Validation File</span></span>  <br/> |<span data-ttu-id="2c907-132">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="2c907-132">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="2c907-133">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="2c907-133">Can be Empty</span></span>  <br/> |<span data-ttu-id="2c907-134">False</span><span class="sxs-lookup"><span data-stu-id="2c907-134">False</span></span>  <br/> |
+|<span data-ttu-id="87dfe-128">Namespace</span><span class="sxs-lookup"><span data-stu-id="87dfe-128">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="87dfe-129">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="87dfe-129">Schema Name</span></span>  <br/> |<span data-ttu-id="87dfe-130">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="87dfe-130">Types schema</span></span>  <br/> |
+|<span data-ttu-id="87dfe-131">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="87dfe-131">Validation File</span></span>  <br/> |<span data-ttu-id="87dfe-132">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="87dfe-132">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="87dfe-133">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="87dfe-133">Can be Empty</span></span>  <br/> |<span data-ttu-id="87dfe-134">正しくない</span><span class="sxs-lookup"><span data-stu-id="87dfe-134">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="2c907-135">関連項目</span><span class="sxs-lookup"><span data-stu-id="2c907-135">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="87dfe-135">関連項目</span><span class="sxs-lookup"><span data-stu-id="87dfe-135">See also</span></span>
 
 
 
-[<span data-ttu-id="2c907-136">GetUserAvailability 操作</span><span class="sxs-lookup"><span data-stu-id="2c907-136">GetUserAvailability operation</span></span>](getuseravailability-operation.md)
+[<span data-ttu-id="87dfe-136">GetUserAvailability 操作</span><span class="sxs-lookup"><span data-stu-id="87dfe-136">GetUserAvailability operation</span></span>](getuseravailability-operation.md)
 
 
-[<span data-ttu-id="2c907-137">ユーザーの状態を取得します。</span><span class="sxs-lookup"><span data-stu-id="2c907-137">Getting User Availability</span></span>](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[<span data-ttu-id="87dfe-137">ユーザーの空き時間情報の取得</span><span class="sxs-lookup"><span data-stu-id="87dfe-137">Getting User Availability</span></span>](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

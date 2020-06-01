@@ -1,5 +1,5 @@
 ---
-title: Diagnostics
+title: ダン
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: fecea440-970a-49da-9796-534ca470cbd6
-description: 診断の要素は、データ ・ センターのレポートに使用されるタイミングとパフォーマンスの情報を提供します。
-ms.openlocfilehash: 2b9cac54a683967ec274b8681fb9a0c8a844205e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Diagnostics 要素は、データセンターでのレポートに使用されるタイミングとパフォーマンスに関する情報を提供します。
+ms.openlocfilehash: 9eb46ef7ceb877372aff9b029190af8c8d8115cd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760028"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467838"
 ---
-# <a name="diagnostics"></a><span data-ttu-id="fea26-103">Diagnostics</span><span class="sxs-lookup"><span data-stu-id="fea26-103">Diagnostics</span></span>
+# <a name="diagnostics"></a><span data-ttu-id="71a31-103">ダン</span><span class="sxs-lookup"><span data-stu-id="71a31-103">Diagnostics</span></span>
 
-<span data-ttu-id="fea26-104">**診断**の要素は、データ ・ センターのレポートに使用されるタイミングとパフォーマンスの情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="fea26-104">The **Diagnostics** element provides timing and performance information that is used for reporting in a DataCenter.</span></span> 
+<span data-ttu-id="71a31-104">**Diagnostics**要素は、データセンターでのレポートに使用されるタイミングとパフォーマンスに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="71a31-104">The **Diagnostics** element provides timing and performance information that is used for reporting in a DataCenter.</span></span> 
   
 ```XML
 <Diagnostics>
@@ -30,48 +30,48 @@ ms.locfileid: "19760028"
 
 ```
 
- <span data-ttu-id="fea26-105">**ArrayOfStringsType**</span><span class="sxs-lookup"><span data-stu-id="fea26-105">**ArrayOfStringsType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="fea26-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="fea26-106">Attributes and elements</span></span>
+ <span data-ttu-id="71a31-105">**ArrayOfStringsType**</span><span class="sxs-lookup"><span data-stu-id="71a31-105">**ArrayOfStringsType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="71a31-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="71a31-106">Attributes and elements</span></span>
 
-<span data-ttu-id="fea26-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="fea26-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="71a31-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="71a31-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="fea26-108">属性</span><span class="sxs-lookup"><span data-stu-id="fea26-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="71a31-108">属性</span><span class="sxs-lookup"><span data-stu-id="71a31-108">Attributes</span></span>
 
-<span data-ttu-id="fea26-109">なし。</span><span class="sxs-lookup"><span data-stu-id="fea26-109">None.</span></span>
+<span data-ttu-id="71a31-109">なし。</span><span class="sxs-lookup"><span data-stu-id="71a31-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="fea26-110">子要素</span><span class="sxs-lookup"><span data-stu-id="fea26-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="71a31-110">子要素</span><span class="sxs-lookup"><span data-stu-id="71a31-110">Child elements</span></span>
 
-|<span data-ttu-id="fea26-111">**要素**</span><span class="sxs-lookup"><span data-stu-id="fea26-111">**Element**</span></span>|<span data-ttu-id="fea26-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="fea26-112">**Description**</span></span>|
+|<span data-ttu-id="71a31-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="71a31-111">**Element**</span></span>|<span data-ttu-id="71a31-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="71a31-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="fea26-113">String</span><span class="sxs-lookup"><span data-stu-id="fea26-113">String</span></span>](string.md) <br/> |<span data-ttu-id="fea26-114">アイテム、連絡先、タスク、および会話で使用される文字列が含まれています。</span><span class="sxs-lookup"><span data-stu-id="fea26-114">Contains a string that is used by items, contacts, tasks, and conversations.</span></span>  <br/> |
+|[<span data-ttu-id="71a31-113">String</span><span class="sxs-lookup"><span data-stu-id="71a31-113">String</span></span>](string.md) <br/> |<span data-ttu-id="71a31-114">アイテム、連絡先、タスク、会話で使用される文字列が含まれています。</span><span class="sxs-lookup"><span data-stu-id="71a31-114">Contains a string that is used by items, contacts, tasks, and conversations.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="fea26-115">親要素</span><span class="sxs-lookup"><span data-stu-id="fea26-115">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="71a31-115">親要素</span><span class="sxs-lookup"><span data-stu-id="71a31-115">Parent elements</span></span>
 
-|<span data-ttu-id="fea26-116">**要素**</span><span class="sxs-lookup"><span data-stu-id="fea26-116">**Element**</span></span>|<span data-ttu-id="fea26-117">**説明**</span><span class="sxs-lookup"><span data-stu-id="fea26-117">**Description**</span></span>|
+|<span data-ttu-id="71a31-116">**要素**</span><span class="sxs-lookup"><span data-stu-id="71a31-116">**Element**</span></span>|<span data-ttu-id="71a31-117">**説明**</span><span class="sxs-lookup"><span data-stu-id="71a31-117">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="fea26-118">FindMessageTrackingReportResponse</span><span class="sxs-lookup"><span data-stu-id="fea26-118">FindMessageTrackingReportResponse</span></span>](findmessagetrackingreportresponse.md) <br/> |<span data-ttu-id="fea26-119">状態および 1 つの結果が含まれています[FindMessageTrackingReport の操作](findmessagetrackingreport-operation.md)を要求します。</span><span class="sxs-lookup"><span data-stu-id="fea26-119">Contains the status and result of a single [FindMessageTrackingReport operation](findmessagetrackingreport-operation.md) request.</span></span>  <br/> |
-|[<span data-ttu-id="fea26-120">GetMessageTrackingReportResponse</span><span class="sxs-lookup"><span data-stu-id="fea26-120">GetMessageTrackingReportResponse</span></span>](getmessagetrackingreportresponse.md) <br/> |<span data-ttu-id="fea26-121">[GetMessageTrackingReport 操作](getmessagetrackingreport-operation.md)の応答が含まれています。</span><span class="sxs-lookup"><span data-stu-id="fea26-121">Contains the response for the [GetMessageTrackingReport operation](getmessagetrackingreport-operation.md).</span></span>  <br/> |
+|[<span data-ttu-id="71a31-118">FindMessageTrackingReportResponse</span><span class="sxs-lookup"><span data-stu-id="71a31-118">FindMessageTrackingReportResponse</span></span>](findmessagetrackingreportresponse.md) <br/> |<span data-ttu-id="71a31-119">単一の[Findmessagetrackingreport 操作](findmessagetrackingreport-operation.md)要求の状態と結果を格納します。</span><span class="sxs-lookup"><span data-stu-id="71a31-119">Contains the status and result of a single [FindMessageTrackingReport operation](findmessagetrackingreport-operation.md) request.</span></span>  <br/> |
+|[<span data-ttu-id="71a31-120">GetMessageTrackingReportResponse</span><span class="sxs-lookup"><span data-stu-id="71a31-120">GetMessageTrackingReportResponse</span></span>](getmessagetrackingreportresponse.md) <br/> |<span data-ttu-id="71a31-121">[Getmessagetrackingreport 操作](getmessagetrackingreport-operation.md)に対する応答を格納します。</span><span class="sxs-lookup"><span data-stu-id="71a31-121">Contains the response for the [GetMessageTrackingReport operation](getmessagetrackingreport-operation.md).</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="fea26-122">テキスト値</span><span class="sxs-lookup"><span data-stu-id="fea26-122">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="71a31-122">テキスト値</span><span class="sxs-lookup"><span data-stu-id="71a31-122">Text value</span></span>
 
-<span data-ttu-id="fea26-123">なし。</span><span class="sxs-lookup"><span data-stu-id="fea26-123">None.</span></span>
+<span data-ttu-id="71a31-123">なし。</span><span class="sxs-lookup"><span data-stu-id="71a31-123">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="fea26-124">備考</span><span class="sxs-lookup"><span data-stu-id="fea26-124">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="71a31-124">注釈</span><span class="sxs-lookup"><span data-stu-id="71a31-124">Remarks</span></span>
 
-<span data-ttu-id="fea26-125">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="fea26-125">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="71a31-125">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="71a31-125">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="fea26-126">要素情報</span><span class="sxs-lookup"><span data-stu-id="fea26-126">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="71a31-126">要素の情報</span><span class="sxs-lookup"><span data-stu-id="71a31-126">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="fea26-127">名前空間</span><span class="sxs-lookup"><span data-stu-id="fea26-127">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="fea26-128">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="fea26-128">Schema Name</span></span>  <br/> |<span data-ttu-id="fea26-129">メッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="fea26-129">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="fea26-130">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="fea26-130">Validation File</span></span>  <br/> |<span data-ttu-id="fea26-131">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="fea26-131">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="fea26-132">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="fea26-132">Can be Empty</span></span>  <br/> |<span data-ttu-id="fea26-133">False</span><span class="sxs-lookup"><span data-stu-id="fea26-133">False</span></span>  <br/> |
+|<span data-ttu-id="71a31-127">Namespace</span><span class="sxs-lookup"><span data-stu-id="71a31-127">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="71a31-128">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="71a31-128">Schema Name</span></span>  <br/> |<span data-ttu-id="71a31-129">メッセージスキーマ</span><span class="sxs-lookup"><span data-stu-id="71a31-129">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="71a31-130">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="71a31-130">Validation File</span></span>  <br/> |<span data-ttu-id="71a31-131">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="71a31-131">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="71a31-132">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="71a31-132">Can be Empty</span></span>  <br/> |<span data-ttu-id="71a31-133">正しくない</span><span class="sxs-lookup"><span data-stu-id="71a31-133">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="fea26-134">関連項目</span><span class="sxs-lookup"><span data-stu-id="fea26-134">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="71a31-134">関連項目</span><span class="sxs-lookup"><span data-stu-id="71a31-134">See also</span></span>
 
-- [<span data-ttu-id="fea26-135">FindMessageTrackingReport 操作</span><span class="sxs-lookup"><span data-stu-id="fea26-135">FindMessageTrackingReport operation</span></span>](findmessagetrackingreport-operation.md)
-- [<span data-ttu-id="fea26-136">GetMessageTrackingReport 操作</span><span class="sxs-lookup"><span data-stu-id="fea26-136">GetMessageTrackingReport operation</span></span>](getmessagetrackingreport-operation.md)
-- [<span data-ttu-id="fea26-137">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="fea26-137">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="71a31-135">FindMessageTrackingReport 操作</span><span class="sxs-lookup"><span data-stu-id="71a31-135">FindMessageTrackingReport operation</span></span>](findmessagetrackingreport-operation.md)
+- [<span data-ttu-id="71a31-136">GetMessageTrackingReport 操作</span><span class="sxs-lookup"><span data-stu-id="71a31-136">GetMessageTrackingReport operation</span></span>](getmessagetrackingreport-operation.md)
+- [<span data-ttu-id="71a31-137">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="71a31-137">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

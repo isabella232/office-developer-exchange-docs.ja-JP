@@ -11,31 +11,31 @@ api_name:
 api_type:
 - schema
 ms.assetid: 70e6ef33-2046-4eb8-9987-e106009be04b
-description: PlayOnPhone 操作では、発信呼び出しを開始し、電話でメッセージを再生します。
-ms.openlocfilehash: ec77720c69862e210316d61975b0d58c9530a40c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: PlayOnPhone 操作は、発信通話を開始し、電話でメッセージを再生します。
+ms.openlocfilehash: 18af810160e72856599f296c4faa83cf9c73c393
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832819"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467957"
 ---
-# <a name="playonphone-operation-ews"></a><span data-ttu-id="0baf7-103">PlayOnPhone 操作 (EWS)</span><span class="sxs-lookup"><span data-stu-id="0baf7-103">PlayOnPhone operation (EWS)</span></span>
+# <a name="playonphone-operation-ews"></a><span data-ttu-id="525e9-103">PlayOnPhone 操作 (EWS)</span><span class="sxs-lookup"><span data-stu-id="525e9-103">PlayOnPhone operation (EWS)</span></span>
 
-<span data-ttu-id="0baf7-104">**PlayOnPhone**操作では、発信呼び出しを開始し、電話でメッセージを再生します。</span><span class="sxs-lookup"><span data-stu-id="0baf7-104">The **PlayOnPhone** operation initiates an outbound call and plays a message over the telephone.</span></span> 
+<span data-ttu-id="525e9-104">**Playonphone**操作は、発信通話を開始し、電話でメッセージを再生します。</span><span class="sxs-lookup"><span data-stu-id="525e9-104">The **PlayOnPhone** operation initiates an outbound call and plays a message over the telephone.</span></span> 
   
-## <a name="playonphone-request-example"></a><span data-ttu-id="0baf7-105">PlayOnPhone 要求の例</span><span class="sxs-lookup"><span data-stu-id="0baf7-105">PlayOnPhone request example</span></span>
+## <a name="playonphone-request-example"></a><span data-ttu-id="525e9-105">PlayOnPhone 要求の例</span><span class="sxs-lookup"><span data-stu-id="525e9-105">PlayOnPhone request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="0baf7-106">説明</span><span class="sxs-lookup"><span data-stu-id="0baf7-106">Description</span></span>
+### <a name="description"></a><span data-ttu-id="525e9-106">説明</span><span class="sxs-lookup"><span data-stu-id="525e9-106">Description</span></span>
 
-<span data-ttu-id="0baf7-107">**PlayOnPhone**要求の次の例では、電話でメッセージを再生するための要求を作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="0baf7-107">The following example of a **PlayOnPhone** request shows how to form a request to play a message on a phone.</span></span> 
+<span data-ttu-id="525e9-107">次の**Playonphone**要求の例は、電話でメッセージを再生するための要求を形成する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="525e9-107">The following example of a **PlayOnPhone** request shows how to form a request to play a message on a phone.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="0baf7-108">コード</span><span class="sxs-lookup"><span data-stu-id="0baf7-108">Code</span></span>
+### <a name="code"></a><span data-ttu-id="525e9-108">コード</span><span class="sxs-lookup"><span data-stu-id="525e9-108">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
@@ -50,13 +50,13 @@ ms.locfileid: "19832819"
 </soap:Envelope>
 ```
 
-## <a name="playonphone-response-example"></a><span data-ttu-id="0baf7-109">PlayOnPhone の応答の例</span><span class="sxs-lookup"><span data-stu-id="0baf7-109">PlayOnPhone response example</span></span>
+## <a name="playonphone-response-example"></a><span data-ttu-id="525e9-109">PlayOnPhone 応答の例</span><span class="sxs-lookup"><span data-stu-id="525e9-109">PlayOnPhone response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="0baf7-110">説明</span><span class="sxs-lookup"><span data-stu-id="0baf7-110">Description</span></span>
+### <a name="description"></a><span data-ttu-id="525e9-110">説明</span><span class="sxs-lookup"><span data-stu-id="525e9-110">Description</span></span>
 
-<span data-ttu-id="0baf7-111">**PlayOnPhone**要求に正常な応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="0baf7-111">The following example shows a successful response to the **PlayOnPhone** request.</span></span> 
+<span data-ttu-id="525e9-111">次の例は、 **Playonphone**要求に対する正常な応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="525e9-111">The following example shows a successful response to the **PlayOnPhone** request.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="0baf7-112">コード</span><span class="sxs-lookup"><span data-stu-id="0baf7-112">Code</span></span>
+### <a name="code"></a><span data-ttu-id="525e9-112">コード</span><span class="sxs-lookup"><span data-stu-id="525e9-112">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -67,15 +67,15 @@ ms.locfileid: "19832819"
                          MajorBuildNumber="639" 
                          MinorBuildNumber="20" 
                          Version="Exchange2010" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <PlayOnPhoneResponse ResponseClass="Success" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseCode>NoError</ResponseCode>
       <PhoneCallId Id="ZWMtWYtMY29t"/>
     </PlayOnPhoneResponse>
@@ -83,8 +83,8 @@ ms.locfileid: "19832819"
 </s:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="0baf7-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="0baf7-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="525e9-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="525e9-113">See also</span></span>
 
-- [<span data-ttu-id="0baf7-114">Exchange での EWS の操作</span><span class="sxs-lookup"><span data-stu-id="0baf7-114">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
-- [<span data-ttu-id="0baf7-115">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="0baf7-115">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="525e9-114">Exchange での EWS 操作</span><span class="sxs-lookup"><span data-stu-id="525e9-114">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
+- [<span data-ttu-id="525e9-115">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="525e9-115">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
