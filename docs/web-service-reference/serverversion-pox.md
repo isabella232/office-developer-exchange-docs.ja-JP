@@ -9,56 +9,56 @@ api_type:
 - schema
 ms.assetid: 2c0bc41c-2452-4fc8-a19c-0e85f9fdbc4a
 description: ServerVersion 要素は、Microsoft Exchange Server を実行しているコンピューターのバージョン番号を表します。
-ms.openlocfilehash: ef0562e166094d75d0dd92f5f48bb558e11a2cad
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 3ef531a69d2dd00ee9784c9eb191684ce517e842
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833391"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461969"
 ---
-# <a name="serverversion-pox"></a><span data-ttu-id="f3a11-103">ServerVersion (POX)</span><span class="sxs-lookup"><span data-stu-id="f3a11-103">ServerVersion (POX)</span></span>
+# <a name="serverversion-pox"></a><span data-ttu-id="e00f8-103">ServerVersion (POX)</span><span class="sxs-lookup"><span data-stu-id="e00f8-103">ServerVersion (POX)</span></span>
 
-<span data-ttu-id="f3a11-104">**ServerVersion**要素は、Microsoft Exchange Server を実行しているコンピューターのバージョン番号を表します。</span><span class="sxs-lookup"><span data-stu-id="f3a11-104">The **ServerVersion** element represents the version number of the computer that is running Microsoft Exchange Server.</span></span> 
+<span data-ttu-id="e00f8-104">**ServerVersion**要素は、Microsoft Exchange Server を実行しているコンピューターのバージョン番号を表します。</span><span class="sxs-lookup"><span data-stu-id="e00f8-104">The **ServerVersion** element represents the version number of the computer that is running Microsoft Exchange Server.</span></span> 
   
-- [<span data-ttu-id="f3a11-105">(POX) を自動検出</span><span class="sxs-lookup"><span data-stu-id="f3a11-105">AutoDiscover (POX)</span></span>](autodiscover-pox.md) 
-- [<span data-ttu-id="f3a11-106">応答 (POX)</span><span class="sxs-lookup"><span data-stu-id="f3a11-106">Response (POX)</span></span>](response-pox.md)
-- [<span data-ttu-id="f3a11-107">アカウント (POX)</span><span class="sxs-lookup"><span data-stu-id="f3a11-107">Account (POX)</span></span>](account-pox.md)
-- [<span data-ttu-id="f3a11-108">プロトコル (POX)</span><span class="sxs-lookup"><span data-stu-id="f3a11-108">Protocol (POX)</span></span>](protocol-pox.md)
-- [<span data-ttu-id="f3a11-109">ServerVersion (POX)</span><span class="sxs-lookup"><span data-stu-id="f3a11-109">ServerVersion (POX)</span></span>](serverversion-pox.md)
+- [<span data-ttu-id="e00f8-105">自動検出 (POX)</span><span class="sxs-lookup"><span data-stu-id="e00f8-105">AutoDiscover (POX)</span></span>](autodiscover-pox.md) 
+- [<span data-ttu-id="e00f8-106">応答 (POX)</span><span class="sxs-lookup"><span data-stu-id="e00f8-106">Response (POX)</span></span>](response-pox.md)
+- [<span data-ttu-id="e00f8-107">アカウント (POX)</span><span class="sxs-lookup"><span data-stu-id="e00f8-107">Account (POX)</span></span>](account-pox.md)
+- [<span data-ttu-id="e00f8-108">プロトコル (POX)</span><span class="sxs-lookup"><span data-stu-id="e00f8-108">Protocol (POX)</span></span>](protocol-pox.md)
+- [<span data-ttu-id="e00f8-109">ServerVersion (POX)</span><span class="sxs-lookup"><span data-stu-id="e00f8-109">ServerVersion (POX)</span></span>](serverversion-pox.md)
   
 ```xml
 <ServerVersion/>
 ```
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="f3a11-110">属性および要素</span><span class="sxs-lookup"><span data-stu-id="f3a11-110">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="e00f8-110">属性と要素</span><span class="sxs-lookup"><span data-stu-id="e00f8-110">Attributes and elements</span></span>
 
-<span data-ttu-id="f3a11-111">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="f3a11-111">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="e00f8-111">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="e00f8-111">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="f3a11-112">属性</span><span class="sxs-lookup"><span data-stu-id="f3a11-112">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="e00f8-112">属性</span><span class="sxs-lookup"><span data-stu-id="e00f8-112">Attributes</span></span>
 
-<span data-ttu-id="f3a11-113">なし。</span><span class="sxs-lookup"><span data-stu-id="f3a11-113">None.</span></span>
+<span data-ttu-id="e00f8-113">なし。</span><span class="sxs-lookup"><span data-stu-id="e00f8-113">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="f3a11-114">子要素</span><span class="sxs-lookup"><span data-stu-id="f3a11-114">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="e00f8-114">子要素</span><span class="sxs-lookup"><span data-stu-id="e00f8-114">Child elements</span></span>
 
-<span data-ttu-id="f3a11-115">なし。</span><span class="sxs-lookup"><span data-stu-id="f3a11-115">None.</span></span>
+<span data-ttu-id="e00f8-115">なし。</span><span class="sxs-lookup"><span data-stu-id="e00f8-115">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="f3a11-116">親要素</span><span class="sxs-lookup"><span data-stu-id="f3a11-116">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="e00f8-116">親要素</span><span class="sxs-lookup"><span data-stu-id="e00f8-116">Parent elements</span></span>
 
-|<span data-ttu-id="f3a11-117">**要素**</span><span class="sxs-lookup"><span data-stu-id="f3a11-117">**Element**</span></span>|<span data-ttu-id="f3a11-118">**説明**</span><span class="sxs-lookup"><span data-stu-id="f3a11-118">**Description**</span></span>|
+|<span data-ttu-id="e00f8-117">**要素**</span><span class="sxs-lookup"><span data-stu-id="e00f8-117">**Element**</span></span>|<span data-ttu-id="e00f8-118">**説明**</span><span class="sxs-lookup"><span data-stu-id="e00f8-118">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="f3a11-119">プロトコル (POX)</span><span class="sxs-lookup"><span data-stu-id="f3a11-119">Protocol (POX)</span></span>](protocol-pox.md) <br/> |<span data-ttu-id="f3a11-120">クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange を実行しているコンピューターにクライアントを接続するための仕様が含まれています。</span><span class="sxs-lookup"><span data-stu-id="f3a11-120">Contains the specifications for connecting a client to the computer that is running Microsoft Exchange that has the Client Access server role installed.</span></span>  <br/> |
+|[<span data-ttu-id="e00f8-119">プロトコル (POX)</span><span class="sxs-lookup"><span data-stu-id="e00f8-119">Protocol (POX)</span></span>](protocol-pox.md) <br/> |<span data-ttu-id="e00f8-120">クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange を実行しているコンピューターにクライアントを接続するための仕様が含まれています。</span><span class="sxs-lookup"><span data-stu-id="e00f8-120">Contains the specifications for connecting a client to the computer that is running Microsoft Exchange that has the Client Access server role installed.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="f3a11-121">テキスト値</span><span class="sxs-lookup"><span data-stu-id="f3a11-121">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="e00f8-121">テキスト値</span><span class="sxs-lookup"><span data-stu-id="e00f8-121">Text value</span></span>
 
-<span data-ttu-id="f3a11-122">テキスト値は、Exchange サーバーのバージョン番号を表します。</span><span class="sxs-lookup"><span data-stu-id="f3a11-122">The text value represents the Exchange server version number.</span></span>
+<span data-ttu-id="e00f8-122">Text 値は、Exchange サーバーのバージョン番号を表します。</span><span class="sxs-lookup"><span data-stu-id="e00f8-122">The text value represents the Exchange server version number.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="f3a11-123">備考</span><span class="sxs-lookup"><span data-stu-id="f3a11-123">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e00f8-123">注釈</span><span class="sxs-lookup"><span data-stu-id="e00f8-123">Remarks</span></span>
 
-<span data-ttu-id="f3a11-124">**ServerVersion**の値は[型 (POX)](type-pox.md)要素が EXCH または EXPR に等しい場合です。</span><span class="sxs-lookup"><span data-stu-id="f3a11-124">The **ServerVersion** value is only valid if the [Type (POX)](type-pox.md) element is equal to EXCH or EXPR.</span></span> <span data-ttu-id="f3a11-125">**ServerVersion**値は、16 進数であり、MajorVersion、マイナー バージョン、およびサーバーの MajorBuildNumber が含まれています。</span><span class="sxs-lookup"><span data-stu-id="f3a11-125">The **ServerVersion** value is a hexadecimal number that contains the MajorVersion, MinorVersion, and MajorBuildNumber of the server.</span></span> 
+<span data-ttu-id="e00f8-124">**ServerVersion**の値は、 [Type (POX)](type-pox.md)要素が EXCH または EXPR と等しい場合にのみ有効です。</span><span class="sxs-lookup"><span data-stu-id="e00f8-124">The **ServerVersion** value is only valid if the [Type (POX)](type-pox.md) element is equal to EXCH or EXPR.</span></span> <span data-ttu-id="e00f8-125">**ServerVersion**の値は、サーバーの MajorVersion、MinorVersion、および MajorBuildNumber を含む16進数値です。</span><span class="sxs-lookup"><span data-stu-id="e00f8-125">The **ServerVersion** value is a hexadecimal number that contains the MajorVersion, MinorVersion, and MajorBuildNumber of the server.</span></span> 
   
-## <a name="example"></a><span data-ttu-id="f3a11-126">例</span><span class="sxs-lookup"><span data-stu-id="f3a11-126">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e00f8-126">例</span><span class="sxs-lookup"><span data-stu-id="e00f8-126">Example</span></span>
 
-<span data-ttu-id="f3a11-127">自動検出の応答を取得し、MajorVersion、マイナー バージョン、および MajorBuildNumber を表示する、 **ServerVersion**の値は次の例の変換が返されます。</span><span class="sxs-lookup"><span data-stu-id="f3a11-127">The following example coverts a **ServerVersion** value that is returned in an Autodiscover response to obtain and display the MajorVersion, MinorVersion, and MajorBuildNumber.</span></span> <span data-ttu-id="f3a11-128">次の使用例では、 **ServerVersion**の値の 16 進値を入力できます。</span><span class="sxs-lookup"><span data-stu-id="f3a11-128">This example enables you to enter a hexadecimal value for the **ServerVersion** value.</span></span> <span data-ttu-id="f3a11-129">**ServerVersion**の値が入力されていない場合は、738180DA のデフォルトの**ServerVersion**値が使用されます。</span><span class="sxs-lookup"><span data-stu-id="f3a11-129">If no **ServerVersion** value is entered, a default **ServerVersion** value of 738180DA is used.</span></span> 
+<span data-ttu-id="e00f8-127">次の例では、自動検出応答で返される**ServerVersion**値を取得して、MajorVersion、MinorVersion、および MajorBuildNumber を取得して表示します。</span><span class="sxs-lookup"><span data-stu-id="e00f8-127">The following example coverts a **ServerVersion** value that is returned in an Autodiscover response to obtain and display the MajorVersion, MinorVersion, and MajorBuildNumber.</span></span> <span data-ttu-id="e00f8-128">この例では、 **ServerVersion**値に16進数の値を入力できるようにします。</span><span class="sxs-lookup"><span data-stu-id="e00f8-128">This example enables you to enter a hexadecimal value for the **ServerVersion** value.</span></span> <span data-ttu-id="e00f8-129">**ServerVersion**値が入力されていない場合は、既定の**ServerVersion**値738180da が使用されます。</span><span class="sxs-lookup"><span data-stu-id="e00f8-129">If no **ServerVersion** value is entered, a default **ServerVersion** value of 738180DA is used.</span></span> 
   
 ```csharp
 static void Main(string[] args)
@@ -103,7 +103,7 @@ static void Main(string[] args)
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="f3a11-130">関連項目</span><span class="sxs-lookup"><span data-stu-id="f3a11-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e00f8-130">関連項目</span><span class="sxs-lookup"><span data-stu-id="e00f8-130">See also</span></span>
 
-- [<span data-ttu-id="f3a11-131">交換の POX の自動検出の XML 要素</span><span class="sxs-lookup"><span data-stu-id="f3a11-131">POX Autodiscover XML elements for Exchange</span></span>](pox-autodiscover-xml-elements-for-exchange.md)
+- [<span data-ttu-id="e00f8-131">Exchange の POX 自動検出 XML 要素</span><span class="sxs-lookup"><span data-stu-id="e00f8-131">POX Autodiscover XML elements for Exchange</span></span>](pox-autodiscover-xml-elements-for-exchange.md)
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5c8a35b8-a940-4b3e-8768-9ba95766fd79
-description: ConversationNodes 要素は、会話のノードのコレクションを指定します。
-ms.openlocfilehash: 62ec061f6d03abb9db7e511722e5570e70d65772
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ConversationNodes 要素は、会話ノードのコレクションを指定します。
+ms.openlocfilehash: 39ffb97f1004535e2fc70b58f8d56afe129e8ee2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759772"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461395"
 ---
-# <a name="conversationnodes"></a><span data-ttu-id="78623-103">ConversationNodes</span><span class="sxs-lookup"><span data-stu-id="78623-103">ConversationNodes</span></span>
+# <a name="conversationnodes"></a><span data-ttu-id="29ade-103">ConversationNodes</span><span class="sxs-lookup"><span data-stu-id="29ade-103">ConversationNodes</span></span>
 
-<span data-ttu-id="78623-104">**ConversationNodes**要素は、会話のノードのコレクションを指定します。</span><span class="sxs-lookup"><span data-stu-id="78623-104">The **ConversationNodes** element specifies a collection of conversation nodes.</span></span> 
+<span data-ttu-id="29ade-104">**ConversationNodes**要素は、会話ノードのコレクションを指定します。</span><span class="sxs-lookup"><span data-stu-id="29ade-104">The **ConversationNodes** element specifies a collection of conversation nodes.</span></span> 
   
 ```XML
 <ConversationNodes>
@@ -25,45 +25,45 @@ ms.locfileid: "19759772"
 </ConversationNodes>
 ```
 
- <span data-ttu-id="78623-105">**ArrayOfConversationNodesType**</span><span class="sxs-lookup"><span data-stu-id="78623-105">**ArrayOfConversationNodesType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="78623-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="78623-106">Attributes and elements</span></span>
+ <span data-ttu-id="29ade-105">**ArrayOfConversationNodesType**</span><span class="sxs-lookup"><span data-stu-id="29ade-105">**ArrayOfConversationNodesType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="29ade-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="29ade-106">Attributes and elements</span></span>
 
-<span data-ttu-id="78623-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="78623-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="29ade-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="29ade-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="78623-108">属性</span><span class="sxs-lookup"><span data-stu-id="78623-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="29ade-108">属性</span><span class="sxs-lookup"><span data-stu-id="29ade-108">Attributes</span></span>
 
-<span data-ttu-id="78623-109">なし。</span><span class="sxs-lookup"><span data-stu-id="78623-109">None.</span></span>
+<span data-ttu-id="29ade-109">なし。</span><span class="sxs-lookup"><span data-stu-id="29ade-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="78623-110">子要素</span><span class="sxs-lookup"><span data-stu-id="78623-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="29ade-110">子要素</span><span class="sxs-lookup"><span data-stu-id="29ade-110">Child elements</span></span>
 
-|<span data-ttu-id="78623-111">**要素**</span><span class="sxs-lookup"><span data-stu-id="78623-111">**Element**</span></span>|<span data-ttu-id="78623-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="78623-112">**Description**</span></span>|
+|<span data-ttu-id="29ade-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="29ade-111">**Element**</span></span>|<span data-ttu-id="29ade-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="29ade-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="78623-113">ConversationNode</span><span class="sxs-lookup"><span data-stu-id="78623-113">ConversationNode</span></span>](conversationnode.md) <br/> |<span data-ttu-id="78623-114">会話] ウィンドウでノードを指定します。</span><span class="sxs-lookup"><span data-stu-id="78623-114">Specifies a node in a conversation.</span></span>  <br/> |
+|[<span data-ttu-id="29ade-113">ConversationNode</span><span class="sxs-lookup"><span data-stu-id="29ade-113">ConversationNode</span></span>](conversationnode.md) <br/> |<span data-ttu-id="29ade-114">スレッド内のノードを指定します。</span><span class="sxs-lookup"><span data-stu-id="29ade-114">Specifies a node in a conversation.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="78623-115">親要素</span><span class="sxs-lookup"><span data-stu-id="78623-115">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="29ade-115">親要素</span><span class="sxs-lookup"><span data-stu-id="29ade-115">Parent elements</span></span>
 
-|<span data-ttu-id="78623-116">**要素**</span><span class="sxs-lookup"><span data-stu-id="78623-116">**Element**</span></span>|<span data-ttu-id="78623-117">**説明**</span><span class="sxs-lookup"><span data-stu-id="78623-117">**Description**</span></span>|
+|<span data-ttu-id="29ade-116">**要素**</span><span class="sxs-lookup"><span data-stu-id="29ade-116">**Element**</span></span>|<span data-ttu-id="29ade-117">**説明**</span><span class="sxs-lookup"><span data-stu-id="29ade-117">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="78623-118">会話 (ConversationResponseType)</span><span class="sxs-lookup"><span data-stu-id="78623-118">Conversation (ConversationResponseType)</span></span>](conversation-conversationresponsetype.md) <br/> |<span data-ttu-id="78623-119">**GetConversationItems**応答で返される 1 つのテーマを表します。</span><span class="sxs-lookup"><span data-stu-id="78623-119">Represents a single conversation returned in a **GetConversationItems** response.</span></span>  <br/> |
+|[<span data-ttu-id="29ade-118">会話 (ConversationResponseType)</span><span class="sxs-lookup"><span data-stu-id="29ade-118">Conversation (ConversationResponseType)</span></span>](conversation-conversationresponsetype.md) <br/> |<span data-ttu-id="29ade-119">**GetConversationItems**応答で返される1つの会話を表します。</span><span class="sxs-lookup"><span data-stu-id="29ade-119">Represents a single conversation returned in a **GetConversationItems** response.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="78623-120">備考</span><span class="sxs-lookup"><span data-stu-id="78623-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="29ade-120">注釈</span><span class="sxs-lookup"><span data-stu-id="29ade-120">Remarks</span></span>
 
-<span data-ttu-id="78623-121">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="78623-121">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="29ade-121">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="29ade-121">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="78623-122">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="78623-122">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="29ade-122">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="29ade-122">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="78623-123">要素情報</span><span class="sxs-lookup"><span data-stu-id="78623-123">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="29ade-123">要素の情報</span><span class="sxs-lookup"><span data-stu-id="29ade-123">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="78623-124">名前空間</span><span class="sxs-lookup"><span data-stu-id="78623-124">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="78623-125">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="78623-125">Schema Name</span></span>  <br/> |<span data-ttu-id="78623-126">型のスキーマ</span><span class="sxs-lookup"><span data-stu-id="78623-126">Type schema</span></span>  <br/> |
-|<span data-ttu-id="78623-127">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="78623-127">Validation File</span></span>  <br/> |<span data-ttu-id="78623-128">types.xsd</span><span class="sxs-lookup"><span data-stu-id="78623-128">types.xsd</span></span>  <br/> |
-|<span data-ttu-id="78623-129">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="78623-129">Can Be Empty</span></span>  <br/> ||
+|<span data-ttu-id="29ade-124">Namespace</span><span class="sxs-lookup"><span data-stu-id="29ade-124">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="29ade-125">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="29ade-125">Schema Name</span></span>  <br/> |<span data-ttu-id="29ade-126">型スキーマ</span><span class="sxs-lookup"><span data-stu-id="29ade-126">Type schema</span></span>  <br/> |
+|<span data-ttu-id="29ade-127">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="29ade-127">Validation File</span></span>  <br/> |<span data-ttu-id="29ade-128">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="29ade-128">types.xsd</span></span>  <br/> |
+|<span data-ttu-id="29ade-129">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="29ade-129">Can Be Empty</span></span>  <br/> ||
    
-## <a name="see-also"></a><span data-ttu-id="78623-130">関連項目</span><span class="sxs-lookup"><span data-stu-id="78623-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="29ade-130">関連項目</span><span class="sxs-lookup"><span data-stu-id="29ade-130">See also</span></span>
 
 
 
-- [<span data-ttu-id="78623-131">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="78623-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="29ade-131">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="29ade-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

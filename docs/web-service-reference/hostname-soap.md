@@ -1,5 +1,5 @@
 ---
-title: ホスト名 (SOAP)
+title: Hostname (SOAP)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,52 +8,52 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 2ef2ab0d-ba70-46bd-80bb-c1e08da9e9bd
-description: ホスト名の要素は、コンピューターのフル コンピューター名のホスト名の部分を表します。
-ms.openlocfilehash: 4ad3003603a4b62101a76082713f62752b43ecaa
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Hostname 要素は、コンピューターの完全なコンピューター名のホスト名部分を表します。
+ms.openlocfilehash: 2c368e710dc192302bc63bd74bba35d84c5ab705
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831846"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460814"
 ---
-# <a name="hostname-soap"></a><span data-ttu-id="a1075-103">ホスト名 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="a1075-103">Hostname (SOAP)</span></span>
+# <a name="hostname-soap"></a><span data-ttu-id="fe243-103">Hostname (SOAP)</span><span class="sxs-lookup"><span data-stu-id="fe243-103">Hostname (SOAP)</span></span>
 
-<span data-ttu-id="a1075-104">**ホスト名**の要素は、コンピューターのフル コンピューター名のホスト名の部分を表します。</span><span class="sxs-lookup"><span data-stu-id="a1075-104">The **Hostname** element represents the host name portion of the full computer name of the computer.</span></span> 
+<span data-ttu-id="fe243-104">**Hostname**要素は、コンピューターの完全なコンピューター名のホスト名部分を表します。</span><span class="sxs-lookup"><span data-stu-id="fe243-104">The **Hostname** element represents the host name portion of the full computer name of the computer.</span></span> 
   
 ```XML
 <Hostname/>
 ```
 
- <span data-ttu-id="a1075-105">**string**</span><span class="sxs-lookup"><span data-stu-id="a1075-105">**string**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="a1075-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="a1075-106">Attributes and elements</span></span>
+ <span data-ttu-id="fe243-105">**string**</span><span class="sxs-lookup"><span data-stu-id="fe243-105">**string**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="fe243-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="fe243-106">Attributes and elements</span></span>
 
-<span data-ttu-id="a1075-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="a1075-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="fe243-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="fe243-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="a1075-108">属性</span><span class="sxs-lookup"><span data-stu-id="a1075-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="fe243-108">属性</span><span class="sxs-lookup"><span data-stu-id="fe243-108">Attributes</span></span>
 
-<span data-ttu-id="a1075-109">なし。</span><span class="sxs-lookup"><span data-stu-id="a1075-109">None.</span></span>
+<span data-ttu-id="fe243-109">なし。</span><span class="sxs-lookup"><span data-stu-id="fe243-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="a1075-110">子要素</span><span class="sxs-lookup"><span data-stu-id="a1075-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="fe243-110">子要素</span><span class="sxs-lookup"><span data-stu-id="fe243-110">Child elements</span></span>
 
-<span data-ttu-id="a1075-111">なし。</span><span class="sxs-lookup"><span data-stu-id="a1075-111">None.</span></span>
+<span data-ttu-id="fe243-111">なし。</span><span class="sxs-lookup"><span data-stu-id="fe243-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="a1075-112">親要素</span><span class="sxs-lookup"><span data-stu-id="a1075-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="fe243-112">親要素</span><span class="sxs-lookup"><span data-stu-id="fe243-112">Parent elements</span></span>
 
-|<span data-ttu-id="a1075-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="a1075-113">**Element**</span></span>|<span data-ttu-id="a1075-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="a1075-114">**Description**</span></span>|
+|<span data-ttu-id="fe243-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="fe243-113">**Element**</span></span>|<span data-ttu-id="fe243-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="fe243-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="a1075-115">ProtocolConnection (SOAP)</span><span class="sxs-lookup"><span data-stu-id="a1075-115">ProtocolConnection (SOAP)</span></span>](protocolconnection-soap.md) <br/> |<span data-ttu-id="a1075-116">サーバーの Web クライアントのプロトコル接続を表します。</span><span class="sxs-lookup"><span data-stu-id="a1075-116">Represents the protocol connection of the server Web client.</span></span>  <br/> |
+|[<span data-ttu-id="fe243-115">ProtocolConnection (SOAP)</span><span class="sxs-lookup"><span data-stu-id="fe243-115">ProtocolConnection (SOAP)</span></span>](protocolconnection-soap.md) <br/> |<span data-ttu-id="fe243-116">サーバー Web クライアントのプロトコル接続を表します。</span><span class="sxs-lookup"><span data-stu-id="fe243-116">Represents the protocol connection of the server Web client.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="a1075-117">テキスト値</span><span class="sxs-lookup"><span data-stu-id="a1075-117">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="fe243-117">テキスト値</span><span class="sxs-lookup"><span data-stu-id="fe243-117">Text value</span></span>
 
-<span data-ttu-id="a1075-118">**ホスト名**の要素のテキスト値は、コンピューターのフル コンピューター名のホスト名の部分です。</span><span class="sxs-lookup"><span data-stu-id="a1075-118">The text value of the **Hostname** element is the host name portion of the full computer name of the computer.</span></span> 
+<span data-ttu-id="fe243-118">**Hostname**要素のテキスト値は、コンピューターの完全なコンピューター名のホスト名部分です。</span><span class="sxs-lookup"><span data-stu-id="fe243-118">The text value of the **Hostname** element is the host name portion of the full computer name of the computer.</span></span> 
   
-## <a name="element-information"></a><span data-ttu-id="a1075-119">要素情報</span><span class="sxs-lookup"><span data-stu-id="a1075-119">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="fe243-119">要素の情報</span><span class="sxs-lookup"><span data-stu-id="fe243-119">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="a1075-120">名前空間</span><span class="sxs-lookup"><span data-stu-id="a1075-120">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|<span data-ttu-id="a1075-121">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="a1075-121">Schema Name</span></span>  <br/> |<span data-ttu-id="a1075-122">スキーマの自動検出</span><span class="sxs-lookup"><span data-stu-id="a1075-122">Autodiscover schema</span></span>  <br/> |
-|<span data-ttu-id="a1075-123">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="a1075-123">Validation File</span></span>  <br/> |<span data-ttu-id="a1075-124">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="a1075-124">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="a1075-125">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="a1075-125">Can be Empty</span></span>  <br/> |<span data-ttu-id="a1075-126">True</span><span class="sxs-lookup"><span data-stu-id="a1075-126">True</span></span>  <br/> |
+|<span data-ttu-id="fe243-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="fe243-120">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|<span data-ttu-id="fe243-121">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="fe243-121">Schema Name</span></span>  <br/> |<span data-ttu-id="fe243-122">自動検出スキーマ</span><span class="sxs-lookup"><span data-stu-id="fe243-122">Autodiscover schema</span></span>  <br/> |
+|<span data-ttu-id="fe243-123">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="fe243-123">Validation File</span></span>  <br/> |<span data-ttu-id="fe243-124">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="fe243-124">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="fe243-125">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="fe243-125">Can be Empty</span></span>  <br/> |<span data-ttu-id="fe243-126">はい</span><span class="sxs-lookup"><span data-stu-id="fe243-126">True</span></span>  <br/> |
    
 

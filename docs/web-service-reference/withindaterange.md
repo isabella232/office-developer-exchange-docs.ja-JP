@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 226aeb15-016f-45ca-992a-c137ba09ca08
-description: WithinDateRange 要素は、受信メッセージが適用の条件または例外のために到着したが、日付の範囲を指定します。
-ms.openlocfilehash: d85ef91c581008c2aafb06b1900c4514aebacd65
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: WithinDateRange 要素は、条件または例外を適用するために、受信メッセージが受信される必要がある日付範囲を指定します。
+ms.openlocfilehash: ef5fb15b64ee4f7060f907818c4ebd4367ced5e7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840025"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461850"
 ---
-# <a name="withindaterange"></a><span data-ttu-id="9e7e9-103">WithinDateRange</span><span class="sxs-lookup"><span data-stu-id="9e7e9-103">WithinDateRange</span></span>
+# <a name="withindaterange"></a><span data-ttu-id="c8e87-103">WithinDateRange</span><span class="sxs-lookup"><span data-stu-id="c8e87-103">WithinDateRange</span></span>
 
-<span data-ttu-id="9e7e9-104">**WithinDateRange**要素は、受信メッセージが適用の条件または例外のために到着したが、日付の範囲を指定します。</span><span class="sxs-lookup"><span data-stu-id="9e7e9-104">The **WithinDateRange** element specifies the date range within which incoming messages have to have been received in order for the condition or exception to apply.</span></span> 
+<span data-ttu-id="c8e87-104">**WithinDateRange**要素は、条件または例外を適用するために、受信メッセージが受信される必要がある日付範囲を指定します。</span><span class="sxs-lookup"><span data-stu-id="c8e87-104">The **WithinDateRange** element specifies the date range within which incoming messages have to have been received in order for the condition or exception to apply.</span></span> 
   
 ```XML
 <WithinDateRange>
@@ -30,49 +30,49 @@ ms.locfileid: "19840025"
 </WithinDateRange>
 ```
 
- <span data-ttu-id="9e7e9-105">**RulePredicateDateRangeType**</span><span class="sxs-lookup"><span data-stu-id="9e7e9-105">**RulePredicateDateRangeType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="9e7e9-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="9e7e9-106">Attributes and elements</span></span>
+ <span data-ttu-id="c8e87-105">**RulePredicateDateRangeType**</span><span class="sxs-lookup"><span data-stu-id="c8e87-105">**RulePredicateDateRangeType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="c8e87-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="c8e87-106">Attributes and elements</span></span>
 
-<span data-ttu-id="9e7e9-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="9e7e9-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="c8e87-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="c8e87-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="9e7e9-108">属性</span><span class="sxs-lookup"><span data-stu-id="9e7e9-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="c8e87-108">属性</span><span class="sxs-lookup"><span data-stu-id="c8e87-108">Attributes</span></span>
 
-<span data-ttu-id="9e7e9-109">なし。</span><span class="sxs-lookup"><span data-stu-id="9e7e9-109">None.</span></span>
+<span data-ttu-id="c8e87-109">なし。</span><span class="sxs-lookup"><span data-stu-id="c8e87-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="9e7e9-110">子要素</span><span class="sxs-lookup"><span data-stu-id="9e7e9-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="c8e87-110">子要素</span><span class="sxs-lookup"><span data-stu-id="c8e87-110">Child elements</span></span>
 
-|<span data-ttu-id="9e7e9-111">**要素**</span><span class="sxs-lookup"><span data-stu-id="9e7e9-111">**Element**</span></span>|<span data-ttu-id="9e7e9-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="9e7e9-112">**Description**</span></span>|
+|<span data-ttu-id="c8e87-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="c8e87-111">**Element**</span></span>|<span data-ttu-id="c8e87-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="c8e87-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="9e7e9-113">StartDateTime</span><span class="sxs-lookup"><span data-stu-id="9e7e9-113">StartDateTime</span></span>](startdatetime.md) <br/> |<span data-ttu-id="9e7e9-114">ルールの時間帯を指定し、この値の後にルールの条件が満たされていることを示します。</span><span class="sxs-lookup"><span data-stu-id="9e7e9-114">Specifies the rule time period and indicates that the rule condition is met after this value.</span></span>  <br/> |
-|[<span data-ttu-id="9e7e9-115">EndDateTime</span><span class="sxs-lookup"><span data-stu-id="9e7e9-115">EndDateTime</span></span>](enddatetime.md) <br/> |<span data-ttu-id="9e7e9-116">ルールの時間帯を指定し、この値の前にルールの条件が満たされていることを示します。</span><span class="sxs-lookup"><span data-stu-id="9e7e9-116">Specifies the rule time period and indicates that the rule condition is met before this value.</span></span>  <br/> |
+|[<span data-ttu-id="c8e87-113">StartDateTime</span><span class="sxs-lookup"><span data-stu-id="c8e87-113">StartDateTime</span></span>](startdatetime.md) <br/> |<span data-ttu-id="c8e87-114">ルールの期間を指定します。この値の後にルールの条件が満たされていることを示します。</span><span class="sxs-lookup"><span data-stu-id="c8e87-114">Specifies the rule time period and indicates that the rule condition is met after this value.</span></span>  <br/> |
+|[<span data-ttu-id="c8e87-115">EndDateTime</span><span class="sxs-lookup"><span data-stu-id="c8e87-115">EndDateTime</span></span>](enddatetime.md) <br/> |<span data-ttu-id="c8e87-116">ルールの期間を指定します。この値より前にルールの条件が満たされていることを示します。</span><span class="sxs-lookup"><span data-stu-id="c8e87-116">Specifies the rule time period and indicates that the rule condition is met before this value.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="9e7e9-117">親要素</span><span class="sxs-lookup"><span data-stu-id="9e7e9-117">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="c8e87-117">親要素</span><span class="sxs-lookup"><span data-stu-id="c8e87-117">Parent elements</span></span>
 
-|<span data-ttu-id="9e7e9-118">**要素**</span><span class="sxs-lookup"><span data-stu-id="9e7e9-118">**Element**</span></span>|<span data-ttu-id="9e7e9-119">**説明**</span><span class="sxs-lookup"><span data-stu-id="9e7e9-119">**Description**</span></span>|
+|<span data-ttu-id="c8e87-118">**要素**</span><span class="sxs-lookup"><span data-stu-id="c8e87-118">**Element**</span></span>|<span data-ttu-id="c8e87-119">**説明**</span><span class="sxs-lookup"><span data-stu-id="c8e87-119">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="9e7e9-120">条件</span><span class="sxs-lookup"><span data-stu-id="9e7e9-120">Conditions</span></span>](conditions.md) <br/> |<span data-ttu-id="9e7e9-121">条件を表しますが、満たされるとときに、ルールのルールの処理をトリガーします。</span><span class="sxs-lookup"><span data-stu-id="9e7e9-121">Represents the conditions that, when fulfilled, will trigger the rule actions for a rule.</span></span>  <br/> |
-|[<span data-ttu-id="9e7e9-122">Exceptions</span><span class="sxs-lookup"><span data-stu-id="9e7e9-122">Exceptions</span></span>](exceptions.md) <br/> |<span data-ttu-id="9e7e9-123">受信トレイ ルールの使用可能なルールの例外条件をすべてを表します。</span><span class="sxs-lookup"><span data-stu-id="9e7e9-123">Represents all the available rule exception conditions for an Inbox rule.</span></span>  <br/> |
+|[<span data-ttu-id="c8e87-120">条件</span><span class="sxs-lookup"><span data-stu-id="c8e87-120">Conditions</span></span>](conditions.md) <br/> |<span data-ttu-id="c8e87-121">ルールのルールの処理を開始するときに実行される条件を表します。</span><span class="sxs-lookup"><span data-stu-id="c8e87-121">Represents the conditions that, when fulfilled, will trigger the rule actions for a rule.</span></span>  <br/> |
+|[<span data-ttu-id="c8e87-122">例外</span><span class="sxs-lookup"><span data-stu-id="c8e87-122">Exceptions</span></span>](exceptions.md) <br/> |<span data-ttu-id="c8e87-123">受信トレイルールに対して使用可能なすべてのルールの例外条件を表します。</span><span class="sxs-lookup"><span data-stu-id="c8e87-123">Represents all the available rule exception conditions for an Inbox rule.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="9e7e9-124">テキスト値</span><span class="sxs-lookup"><span data-stu-id="9e7e9-124">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="c8e87-124">テキスト値</span><span class="sxs-lookup"><span data-stu-id="c8e87-124">Text value</span></span>
 
-<span data-ttu-id="9e7e9-125">なし。</span><span class="sxs-lookup"><span data-stu-id="9e7e9-125">None.</span></span>
+<span data-ttu-id="c8e87-125">なし。</span><span class="sxs-lookup"><span data-stu-id="c8e87-125">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="9e7e9-126">備考</span><span class="sxs-lookup"><span data-stu-id="9e7e9-126">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c8e87-126">注釈</span><span class="sxs-lookup"><span data-stu-id="c8e87-126">Remarks</span></span>
 
-<span data-ttu-id="9e7e9-127">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="9e7e9-127">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="c8e87-127">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="c8e87-127">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="9e7e9-128">要素情報</span><span class="sxs-lookup"><span data-stu-id="9e7e9-128">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="c8e87-128">要素の情報</span><span class="sxs-lookup"><span data-stu-id="c8e87-128">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="9e7e9-129">名前空間</span><span class="sxs-lookup"><span data-stu-id="9e7e9-129">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="9e7e9-130">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="9e7e9-130">Schema Name</span></span>  <br/> |<span data-ttu-id="9e7e9-131">メッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="9e7e9-131">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="9e7e9-132">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="9e7e9-132">Validation File</span></span>  <br/> |<span data-ttu-id="9e7e9-133">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="9e7e9-133">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="9e7e9-134">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="9e7e9-134">Can be Empty</span></span>  <br/> |<span data-ttu-id="9e7e9-135">True</span><span class="sxs-lookup"><span data-stu-id="9e7e9-135">True</span></span>  <br/> |
+|<span data-ttu-id="c8e87-129">Namespace</span><span class="sxs-lookup"><span data-stu-id="c8e87-129">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="c8e87-130">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="c8e87-130">Schema Name</span></span>  <br/> |<span data-ttu-id="c8e87-131">メッセージスキーマ</span><span class="sxs-lookup"><span data-stu-id="c8e87-131">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="c8e87-132">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="c8e87-132">Validation File</span></span>  <br/> |<span data-ttu-id="c8e87-133">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="c8e87-133">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="c8e87-134">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="c8e87-134">Can be Empty</span></span>  <br/> |<span data-ttu-id="c8e87-135">正しい</span><span class="sxs-lookup"><span data-stu-id="c8e87-135">True</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="9e7e9-136">関連項目</span><span class="sxs-lookup"><span data-stu-id="9e7e9-136">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c8e87-136">関連項目</span><span class="sxs-lookup"><span data-stu-id="c8e87-136">See also</span></span>
 
 
 
-- [<span data-ttu-id="9e7e9-137">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="9e7e9-137">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="c8e87-137">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="c8e87-137">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

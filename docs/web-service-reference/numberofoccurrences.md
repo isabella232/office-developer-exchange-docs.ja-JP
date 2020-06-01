@@ -11,61 +11,61 @@ api_name:
 api_type:
 - schema
 ms.assetid: 9ec86ceb-b271-4718-97ca-b6a532ea7223
-description: NumberOfOccurrences 要素には、定期的なアイテムの出現回数が含まれています。
-ms.openlocfilehash: c18a20f14395aead304bd0158ff64c70e51ec165
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: NumberOfOccurrences 要素は、定期的なアイテムの発生回数を含みます。
+ms.openlocfilehash: f9b72611e87c5f2b98deb14c25988e574a324491
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832656"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462543"
 ---
-# <a name="numberofoccurrences"></a><span data-ttu-id="82c07-103">NumberOfOccurrences</span><span class="sxs-lookup"><span data-stu-id="82c07-103">NumberOfOccurrences</span></span>
+# <a name="numberofoccurrences"></a><span data-ttu-id="e10da-103">NumberOfOccurrences</span><span class="sxs-lookup"><span data-stu-id="e10da-103">NumberOfOccurrences</span></span>
 
-<span data-ttu-id="82c07-104">**NumberOfOccurrences**要素には、定期的なアイテムの出現回数が含まれています。</span><span class="sxs-lookup"><span data-stu-id="82c07-104">The **NumberOfOccurrences** element contains the number of occurrences of a recurring item.</span></span> 
+<span data-ttu-id="e10da-104">**Numberofoccurrences**要素は、定期的なアイテムの発生回数を含みます。</span><span class="sxs-lookup"><span data-stu-id="e10da-104">The **NumberOfOccurrences** element contains the number of occurrences of a recurring item.</span></span> 
   
 ```xml
 <NumberOfOccurrences/>
 ```
 
- <span data-ttu-id="82c07-105">**int**</span><span class="sxs-lookup"><span data-stu-id="82c07-105">**int**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="82c07-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="82c07-106">Attributes and elements</span></span>
+ <span data-ttu-id="e10da-105">**int**</span><span class="sxs-lookup"><span data-stu-id="e10da-105">**int**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="e10da-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="e10da-106">Attributes and elements</span></span>
 
-<span data-ttu-id="82c07-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="82c07-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="e10da-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="e10da-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="82c07-108">属性</span><span class="sxs-lookup"><span data-stu-id="82c07-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="e10da-108">属性</span><span class="sxs-lookup"><span data-stu-id="e10da-108">Attributes</span></span>
 
-<span data-ttu-id="82c07-109">なし。</span><span class="sxs-lookup"><span data-stu-id="82c07-109">None.</span></span>
+<span data-ttu-id="e10da-109">なし。</span><span class="sxs-lookup"><span data-stu-id="e10da-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="82c07-110">子要素</span><span class="sxs-lookup"><span data-stu-id="82c07-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="e10da-110">子要素</span><span class="sxs-lookup"><span data-stu-id="e10da-110">Child elements</span></span>
 
-<span data-ttu-id="82c07-111">なし。</span><span class="sxs-lookup"><span data-stu-id="82c07-111">None.</span></span>
+<span data-ttu-id="e10da-111">なし。</span><span class="sxs-lookup"><span data-stu-id="e10da-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="82c07-112">親要素</span><span class="sxs-lookup"><span data-stu-id="82c07-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="e10da-112">親要素</span><span class="sxs-lookup"><span data-stu-id="e10da-112">Parent elements</span></span>
 
-|<span data-ttu-id="82c07-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="82c07-113">**Element**</span></span>|<span data-ttu-id="82c07-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="82c07-114">**Description**</span></span>|
+|<span data-ttu-id="e10da-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="e10da-113">**Element**</span></span>|<span data-ttu-id="e10da-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="e10da-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="82c07-115">NumberedRecurrence</span><span class="sxs-lookup"><span data-stu-id="82c07-115">NumberedRecurrence</span></span>](numberedrecurrence.md) <br/> |<span data-ttu-id="82c07-116">開始日と定期的なアイテムの出現回数を説明します。</span><span class="sxs-lookup"><span data-stu-id="82c07-116">Describes the start date and the number of occurrences of a recurring item.</span></span>  <br/> |
+|[<span data-ttu-id="e10da-115">NumberedRecurrence</span><span class="sxs-lookup"><span data-stu-id="e10da-115">NumberedRecurrence</span></span>](numberedrecurrence.md) <br/> |<span data-ttu-id="e10da-116">定期的なアイテムの開始日と発生回数を表します。</span><span class="sxs-lookup"><span data-stu-id="e10da-116">Describes the start date and the number of occurrences of a recurring item.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="82c07-117">テキスト値</span><span class="sxs-lookup"><span data-stu-id="82c07-117">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="e10da-117">テキスト値</span><span class="sxs-lookup"><span data-stu-id="e10da-117">Text value</span></span>
 
-<span data-ttu-id="82c07-118">テキスト値は、定期的なアイテムの出現回数を表す整数です。</span><span class="sxs-lookup"><span data-stu-id="82c07-118">The text value is an integer that represents the number of occurrences of a recurring item.</span></span> <span data-ttu-id="82c07-119">値は 1 ~ 999 の範囲の整数である必要があります。</span><span class="sxs-lookup"><span data-stu-id="82c07-119">The value must be an integer in the range of 1 to 999.</span></span>
+<span data-ttu-id="e10da-118">テキスト値は、定期的なアイテムの出現回数を表す整数です。</span><span class="sxs-lookup"><span data-stu-id="e10da-118">The text value is an integer that represents the number of occurrences of a recurring item.</span></span> <span data-ttu-id="e10da-119">この値は、1 ~ 999 の範囲の整数である必要があります。</span><span class="sxs-lookup"><span data-stu-id="e10da-119">The value must be an integer in the range of 1 to 999.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="82c07-120">備考</span><span class="sxs-lookup"><span data-stu-id="82c07-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e10da-120">注釈</span><span class="sxs-lookup"><span data-stu-id="e10da-120">Remarks</span></span>
 
-<span data-ttu-id="82c07-121">MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。</span><span class="sxs-lookup"><span data-stu-id="82c07-121">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="e10da-121">この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="e10da-121">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="82c07-122">要素情報</span><span class="sxs-lookup"><span data-stu-id="82c07-122">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="e10da-122">要素の情報</span><span class="sxs-lookup"><span data-stu-id="e10da-122">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="82c07-123">名前空間</span><span class="sxs-lookup"><span data-stu-id="82c07-123">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="82c07-124">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="82c07-124">Schema name</span></span>  <br/> |<span data-ttu-id="82c07-125">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="82c07-125">Types schema</span></span>  <br/> |
-|<span data-ttu-id="82c07-126">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="82c07-126">Validation file</span></span>  <br/> |<span data-ttu-id="82c07-127">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="82c07-127">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="82c07-128">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="82c07-128">Can be empty</span></span>  <br/> |<span data-ttu-id="82c07-129">False</span><span class="sxs-lookup"><span data-stu-id="82c07-129">False</span></span>  <br/> |
+|<span data-ttu-id="e10da-123">Namespace</span><span class="sxs-lookup"><span data-stu-id="e10da-123">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="e10da-124">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="e10da-124">Schema name</span></span>  <br/> |<span data-ttu-id="e10da-125">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="e10da-125">Types schema</span></span>  <br/> |
+|<span data-ttu-id="e10da-126">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="e10da-126">Validation file</span></span>  <br/> |<span data-ttu-id="e10da-127">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="e10da-127">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="e10da-128">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="e10da-128">Can be empty</span></span>  <br/> |<span data-ttu-id="e10da-129">正しくない</span><span class="sxs-lookup"><span data-stu-id="e10da-129">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="82c07-130">関連項目</span><span class="sxs-lookup"><span data-stu-id="82c07-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e10da-130">関連項目</span><span class="sxs-lookup"><span data-stu-id="e10da-130">See also</span></span>
 
 
 
-- [<span data-ttu-id="82c07-131">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="82c07-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="e10da-131">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="e10da-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

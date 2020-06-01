@@ -1,5 +1,5 @@
 ---
-title: エラー
+title: Error
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: b1f54673-578a-496b-99f5-0fde2c669278
-description: エラー要素は、特定のルールのプロパティの値、述語プロパティの値、またはアクションのプロパティの値の 1 つの検証エラーを表します。
-ms.openlocfilehash: adb2de56b7610aa92b5bf5b8d43ac22f35021b64
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Error 要素は、特定のルールプロパティ値、述語プロパティ値、または action プロパティ値に対する1つの検証エラーを表します。
+ms.openlocfilehash: 9c28f63aa79446d89152868c81c85ffa7b3a8b39
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760321"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460681"
 ---
-# <a name="error"></a><span data-ttu-id="db0c9-103">エラー</span><span class="sxs-lookup"><span data-stu-id="db0c9-103">Error</span></span>
+# <a name="error"></a><span data-ttu-id="bd557-103">Error</span><span class="sxs-lookup"><span data-stu-id="bd557-103">Error</span></span>
 
-<span data-ttu-id="db0c9-104">**エラー**要素は、特定のルールのプロパティの値、述語プロパティの値、またはアクションのプロパティの値の 1 つの検証エラーを表します。</span><span class="sxs-lookup"><span data-stu-id="db0c9-104">The **Error** element represents a single validation error on a particular rule property value, predicate property value, or action property value.</span></span> 
+<span data-ttu-id="bd557-104">**Error**要素は、特定のルールプロパティ値、述語プロパティ値、または action プロパティ値に対する1つの検証エラーを表します。</span><span class="sxs-lookup"><span data-stu-id="bd557-104">The **Error** element represents a single validation error on a particular rule property value, predicate property value, or action property value.</span></span> 
   
 ```XML
 <Error>
@@ -32,50 +32,50 @@ ms.locfileid: "19760321"
 </Error>
 ```
 
- <span data-ttu-id="db0c9-105">**RuleValidationErrorType**</span><span class="sxs-lookup"><span data-stu-id="db0c9-105">**RuleValidationErrorType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="db0c9-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="db0c9-106">Attributes and elements</span></span>
+ <span data-ttu-id="bd557-105">**RuleValidationErrorType**</span><span class="sxs-lookup"><span data-stu-id="bd557-105">**RuleValidationErrorType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="bd557-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="bd557-106">Attributes and elements</span></span>
 
-<span data-ttu-id="db0c9-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="db0c9-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="bd557-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="bd557-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="db0c9-108">属性</span><span class="sxs-lookup"><span data-stu-id="db0c9-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="bd557-108">属性</span><span class="sxs-lookup"><span data-stu-id="bd557-108">Attributes</span></span>
 
-<span data-ttu-id="db0c9-109">なし。</span><span class="sxs-lookup"><span data-stu-id="db0c9-109">None.</span></span>
+<span data-ttu-id="bd557-109">なし。</span><span class="sxs-lookup"><span data-stu-id="bd557-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="db0c9-110">子要素</span><span class="sxs-lookup"><span data-stu-id="db0c9-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="bd557-110">子要素</span><span class="sxs-lookup"><span data-stu-id="bd557-110">Child elements</span></span>
 
-|<span data-ttu-id="db0c9-111">**要素**</span><span class="sxs-lookup"><span data-stu-id="db0c9-111">**Element**</span></span>|<span data-ttu-id="db0c9-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="db0c9-112">**Description**</span></span>|
+|<span data-ttu-id="bd557-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="bd557-111">**Element**</span></span>|<span data-ttu-id="bd557-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="bd557-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="db0c9-113">FieldUri (ルール)</span><span class="sxs-lookup"><span data-stu-id="db0c9-113">FieldUri (Rule)</span></span>](fielduri-rule.md) <br/> |<span data-ttu-id="db0c9-114">検証エラーの原因となったルール] フィールドに URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="db0c9-114">Specifies the URI to the rule field that caused the validation error.</span></span>  <br/> |
-|[<span data-ttu-id="db0c9-115">エラー コード</span><span class="sxs-lookup"><span data-stu-id="db0c9-115">ErrorCode</span></span>](errorcode.md) <br/> |<span data-ttu-id="db0c9-116">失敗した内容を説明するルールの検証のエラー コードを表すルール述語またはアクションごとに検証します。</span><span class="sxs-lookup"><span data-stu-id="db0c9-116">Represents a rule validation error code that describes what failed validation for each rule predicate or action.</span></span>  <br/> |
-|[<span data-ttu-id="db0c9-117">エラー メッセージ</span><span class="sxs-lookup"><span data-stu-id="db0c9-117">ErrorMessage</span></span>](errormessage.md) <br/> |<span data-ttu-id="db0c9-118">検証エラーの原因を表します。</span><span class="sxs-lookup"><span data-stu-id="db0c9-118">Represents the reason for the validation error.</span></span>  <br/> |
-|[<span data-ttu-id="db0c9-119">FieldValue</span><span class="sxs-lookup"><span data-stu-id="db0c9-119">FieldValue</span></span>](fieldvalue.md) <br/> |<span data-ttu-id="db0c9-120">検証エラーが発生したフィールドの値を表します。</span><span class="sxs-lookup"><span data-stu-id="db0c9-120">Represents the value of the field that caused the validation error.</span></span>  <br/> |
+|[<span data-ttu-id="bd557-113">FieldUri (ルール)</span><span class="sxs-lookup"><span data-stu-id="bd557-113">FieldUri (Rule)</span></span>](fielduri-rule.md) <br/> |<span data-ttu-id="bd557-114">検証エラーの原因となったルールフィールドへの URI を指定します。</span><span class="sxs-lookup"><span data-stu-id="bd557-114">Specifies the URI to the rule field that caused the validation error.</span></span>  <br/> |
+|[<span data-ttu-id="bd557-115">ErrorCode</span><span class="sxs-lookup"><span data-stu-id="bd557-115">ErrorCode</span></span>](errorcode.md) <br/> |<span data-ttu-id="bd557-116">ルールの述語またはアクションごとに、検証に失敗したことを示すルールの検証エラーコードを表します。</span><span class="sxs-lookup"><span data-stu-id="bd557-116">Represents a rule validation error code that describes what failed validation for each rule predicate or action.</span></span>  <br/> |
+|[<span data-ttu-id="bd557-117">ErrorMessage</span><span class="sxs-lookup"><span data-stu-id="bd557-117">ErrorMessage</span></span>](errormessage.md) <br/> |<span data-ttu-id="bd557-118">検証エラーの理由を表します。</span><span class="sxs-lookup"><span data-stu-id="bd557-118">Represents the reason for the validation error.</span></span>  <br/> |
+|[<span data-ttu-id="bd557-119">FieldValue</span><span class="sxs-lookup"><span data-stu-id="bd557-119">FieldValue</span></span>](fieldvalue.md) <br/> |<span data-ttu-id="bd557-120">検証エラーの原因となったフィールドの値を表します。</span><span class="sxs-lookup"><span data-stu-id="bd557-120">Represents the value of the field that caused the validation error.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="db0c9-121">親要素</span><span class="sxs-lookup"><span data-stu-id="db0c9-121">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="bd557-121">親要素</span><span class="sxs-lookup"><span data-stu-id="bd557-121">Parent elements</span></span>
 
-|<span data-ttu-id="db0c9-122">**要素**</span><span class="sxs-lookup"><span data-stu-id="db0c9-122">**Element**</span></span>|<span data-ttu-id="db0c9-123">**説明**</span><span class="sxs-lookup"><span data-stu-id="db0c9-123">**Description**</span></span>|
+|<span data-ttu-id="bd557-122">**要素**</span><span class="sxs-lookup"><span data-stu-id="bd557-122">**Element**</span></span>|<span data-ttu-id="bd557-123">**説明**</span><span class="sxs-lookup"><span data-stu-id="bd557-123">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="db0c9-124">ValidationErrors</span><span class="sxs-lookup"><span data-stu-id="db0c9-124">ValidationErrors</span></span>](validationerrors.md) <br/> |<span data-ttu-id="db0c9-125">エラーが発生したルールの各フィールドの規則の妥当性確認エラーの配列を表します。</span><span class="sxs-lookup"><span data-stu-id="db0c9-125">Represents an array of rule validation errors on each rule field that has an error.</span></span>  <br/> |
+|[<span data-ttu-id="bd557-124">ValidationErrors</span><span class="sxs-lookup"><span data-stu-id="bd557-124">ValidationErrors</span></span>](validationerrors.md) <br/> |<span data-ttu-id="bd557-125">エラーが発生した各ルールフィールドのルール検証エラーの配列を表します。</span><span class="sxs-lookup"><span data-stu-id="bd557-125">Represents an array of rule validation errors on each rule field that has an error.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="db0c9-126">テキスト値</span><span class="sxs-lookup"><span data-stu-id="db0c9-126">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="bd557-126">テキスト値</span><span class="sxs-lookup"><span data-stu-id="bd557-126">Text value</span></span>
 
-<span data-ttu-id="db0c9-127">なし。</span><span class="sxs-lookup"><span data-stu-id="db0c9-127">None.</span></span>
+<span data-ttu-id="bd557-127">なし。</span><span class="sxs-lookup"><span data-stu-id="bd557-127">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="db0c9-128">備考</span><span class="sxs-lookup"><span data-stu-id="db0c9-128">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="bd557-128">注釈</span><span class="sxs-lookup"><span data-stu-id="bd557-128">Remarks</span></span>
 
-<span data-ttu-id="db0c9-129">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="db0c9-129">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="bd557-129">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="bd557-129">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="db0c9-130">要素情報</span><span class="sxs-lookup"><span data-stu-id="db0c9-130">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="bd557-130">要素の情報</span><span class="sxs-lookup"><span data-stu-id="bd557-130">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="db0c9-131">名前空間</span><span class="sxs-lookup"><span data-stu-id="db0c9-131">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="db0c9-132">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="db0c9-132">Schema Name</span></span>  <br/> |<span data-ttu-id="db0c9-133">メッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="db0c9-133">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="db0c9-134">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="db0c9-134">Validation File</span></span>  <br/> |<span data-ttu-id="db0c9-135">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="db0c9-135">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="db0c9-136">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="db0c9-136">Can be Empty</span></span>  <br/> |<span data-ttu-id="db0c9-137">True</span><span class="sxs-lookup"><span data-stu-id="db0c9-137">True</span></span>  <br/> |
+|<span data-ttu-id="bd557-131">Namespace</span><span class="sxs-lookup"><span data-stu-id="bd557-131">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="bd557-132">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="bd557-132">Schema Name</span></span>  <br/> |<span data-ttu-id="bd557-133">メッセージスキーマ</span><span class="sxs-lookup"><span data-stu-id="bd557-133">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="bd557-134">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="bd557-134">Validation File</span></span>  <br/> |<span data-ttu-id="bd557-135">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="bd557-135">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="bd557-136">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="bd557-136">Can be Empty</span></span>  <br/> |<span data-ttu-id="bd557-137">正しい</span><span class="sxs-lookup"><span data-stu-id="bd557-137">True</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="db0c9-138">関連項目</span><span class="sxs-lookup"><span data-stu-id="db0c9-138">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bd557-138">関連項目</span><span class="sxs-lookup"><span data-stu-id="bd557-138">See also</span></span>
 
 
 
-- [<span data-ttu-id="db0c9-139">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="db0c9-139">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="bd557-139">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="bd557-139">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

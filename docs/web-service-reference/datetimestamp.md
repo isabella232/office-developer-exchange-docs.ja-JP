@@ -11,60 +11,60 @@ api_name:
 api_type:
 - schema
 ms.assetid: c996c319-28f1-4bed-ab7a-4d0fc866e675
-description: DateTimeStamp 要素は、カレンダー オブジェクトのインスタンスが作成された日時を示します。
-ms.openlocfilehash: 6b81057b0e07d0607aba6f52d54220debc38b0ff
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DateTimeStamp 要素は、予定表オブジェクトのインスタンスが作成された日付と時刻を示します。
+ms.openlocfilehash: 96c3f005e0ffd403afe723bb8b274b7ac2abca1b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759933"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461409"
 ---
-# <a name="datetimestamp"></a><span data-ttu-id="8752c-103">DateTimeStamp</span><span class="sxs-lookup"><span data-stu-id="8752c-103">DateTimeStamp</span></span>
+# <a name="datetimestamp"></a><span data-ttu-id="c2362-103">DateTimeStamp</span><span class="sxs-lookup"><span data-stu-id="c2362-103">DateTimeStamp</span></span>
 
-<span data-ttu-id="8752c-104">**DateTimeStamp**要素は、カレンダー オブジェクトのインスタンスが作成された日時を示します。</span><span class="sxs-lookup"><span data-stu-id="8752c-104">The **DateTimeStamp** element indicates the date and time that an instance of a calendar object was created.</span></span> 
+<span data-ttu-id="c2362-104">**Datetimestamp**要素は、予定表オブジェクトのインスタンスが作成された日付と時刻を示します。</span><span class="sxs-lookup"><span data-stu-id="c2362-104">The **DateTimeStamp** element indicates the date and time that an instance of a calendar object was created.</span></span> 
   
 ```xml
 <DateTimeStamp/>
 ```
 
-<span data-ttu-id="8752c-105">**dateTime**</span><span class="sxs-lookup"><span data-stu-id="8752c-105">**dateTime**</span></span>
+<span data-ttu-id="c2362-105">**dateTime**</span><span class="sxs-lookup"><span data-stu-id="c2362-105">**dateTime**</span></span>
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="8752c-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="8752c-106">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="c2362-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="c2362-106">Attributes and elements</span></span>
 
-<span data-ttu-id="8752c-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="8752c-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="c2362-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="c2362-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="8752c-108">属性</span><span class="sxs-lookup"><span data-stu-id="8752c-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="c2362-108">属性</span><span class="sxs-lookup"><span data-stu-id="c2362-108">Attributes</span></span>
 
-<span data-ttu-id="8752c-109">なし。</span><span class="sxs-lookup"><span data-stu-id="8752c-109">None.</span></span>
+<span data-ttu-id="c2362-109">なし。</span><span class="sxs-lookup"><span data-stu-id="c2362-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="8752c-110">子要素</span><span class="sxs-lookup"><span data-stu-id="8752c-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="c2362-110">子要素</span><span class="sxs-lookup"><span data-stu-id="c2362-110">Child elements</span></span>
 
-<span data-ttu-id="8752c-111">なし。</span><span class="sxs-lookup"><span data-stu-id="8752c-111">None.</span></span>
+<span data-ttu-id="c2362-111">なし。</span><span class="sxs-lookup"><span data-stu-id="c2362-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="8752c-112">親要素</span><span class="sxs-lookup"><span data-stu-id="8752c-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="c2362-112">親要素</span><span class="sxs-lookup"><span data-stu-id="c2362-112">Parent elements</span></span>
 
-|<span data-ttu-id="8752c-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="8752c-113">**Element**</span></span>|<span data-ttu-id="8752c-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="8752c-114">**Description**</span></span>|
+|<span data-ttu-id="c2362-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="c2362-113">**Element**</span></span>|<span data-ttu-id="c2362-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="c2362-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="8752c-115">カレンダー項目</span><span class="sxs-lookup"><span data-stu-id="8752c-115">CalendarItem</span></span>](calendaritem.md) <br/> |<span data-ttu-id="8752c-116">Exchange 予定表アイテムを表します。</span><span class="sxs-lookup"><span data-stu-id="8752c-116">Represents an Exchange calendar item.</span></span>  <br/> |
-|[<span data-ttu-id="8752c-117">MeetingMessage</span><span class="sxs-lookup"><span data-stu-id="8752c-117">MeetingMessage</span></span>](meetingmessage.md) <br/> |<span data-ttu-id="8752c-118">会議メッセージを表します。</span><span class="sxs-lookup"><span data-stu-id="8752c-118">Represents a meeting message.</span></span>  <br/> |
-|[<span data-ttu-id="8752c-119">MeetingRequest</span><span class="sxs-lookup"><span data-stu-id="8752c-119">MeetingRequest</span></span>](meetingrequest.md) <br/> |<span data-ttu-id="8752c-120">会議出席依頼を表します。</span><span class="sxs-lookup"><span data-stu-id="8752c-120">Represents a meeting request.</span></span>  <br/> |
-|[<span data-ttu-id="8752c-121">MeetingResponse</span><span class="sxs-lookup"><span data-stu-id="8752c-121">MeetingResponse</span></span>](meetingresponse.md) <br/> |<span data-ttu-id="8752c-122">会議の返信を表します。</span><span class="sxs-lookup"><span data-stu-id="8752c-122">Represents a meeting response.</span></span>  <br/> |
-|[<span data-ttu-id="8752c-123">MeetingCancellation</span><span class="sxs-lookup"><span data-stu-id="8752c-123">MeetingCancellation</span></span>](meetingcancellation.md) <br/> |<span data-ttu-id="8752c-124">会議の取り消し通知を表します。</span><span class="sxs-lookup"><span data-stu-id="8752c-124">Represents a meeting cancellation.</span></span>  <br/> |
+|[<span data-ttu-id="c2362-115">CalendarItem</span><span class="sxs-lookup"><span data-stu-id="c2362-115">CalendarItem</span></span>](calendaritem.md) <br/> |<span data-ttu-id="c2362-116">Exchange の予定表アイテムを表します。</span><span class="sxs-lookup"><span data-stu-id="c2362-116">Represents an Exchange calendar item.</span></span>  <br/> |
+|[<span data-ttu-id="c2362-117">MeetingMessage</span><span class="sxs-lookup"><span data-stu-id="c2362-117">MeetingMessage</span></span>](meetingmessage.md) <br/> |<span data-ttu-id="c2362-118">会議メッセージを表します。</span><span class="sxs-lookup"><span data-stu-id="c2362-118">Represents a meeting message.</span></span>  <br/> |
+|[<span data-ttu-id="c2362-119">MeetingRequest</span><span class="sxs-lookup"><span data-stu-id="c2362-119">MeetingRequest</span></span>](meetingrequest.md) <br/> |<span data-ttu-id="c2362-120">会議出席依頼を表します。</span><span class="sxs-lookup"><span data-stu-id="c2362-120">Represents a meeting request.</span></span>  <br/> |
+|[<span data-ttu-id="c2362-121">MeetingResponse</span><span class="sxs-lookup"><span data-stu-id="c2362-121">MeetingResponse</span></span>](meetingresponse.md) <br/> |<span data-ttu-id="c2362-122">会議出席依頼の返信を表します。</span><span class="sxs-lookup"><span data-stu-id="c2362-122">Represents a meeting response.</span></span>  <br/> |
+|[<span data-ttu-id="c2362-123">MeetingCancellation</span><span class="sxs-lookup"><span data-stu-id="c2362-123">MeetingCancellation</span></span>](meetingcancellation.md) <br/> |<span data-ttu-id="c2362-124">会議の取り消しを表します。</span><span class="sxs-lookup"><span data-stu-id="c2362-124">Represents a meeting cancellation.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="8752c-125">テキスト値</span><span class="sxs-lookup"><span data-stu-id="8752c-125">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="c2362-125">テキスト値</span><span class="sxs-lookup"><span data-stu-id="c2362-125">Text value</span></span>
 
-<span data-ttu-id="8752c-126">テキスト値は、予定表アイテムを識別するための日付/時刻値を表します。</span><span class="sxs-lookup"><span data-stu-id="8752c-126">The text value represents a date/time value that identifies a calendar occurrence.</span></span>
+<span data-ttu-id="c2362-126">テキスト値は、予定表の発生を識別する日付/時刻の値を表します。</span><span class="sxs-lookup"><span data-stu-id="c2362-126">The text value represents a date/time value that identifies a calendar occurrence.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="8752c-127">要素情報</span><span class="sxs-lookup"><span data-stu-id="8752c-127">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="c2362-127">要素の情報</span><span class="sxs-lookup"><span data-stu-id="c2362-127">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="8752c-128">名前空間</span><span class="sxs-lookup"><span data-stu-id="8752c-128">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="8752c-129">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="8752c-129">Schema Name</span></span>  <br/> |<span data-ttu-id="8752c-130">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="8752c-130">Types schema</span></span>  <br/> |
-|<span data-ttu-id="8752c-131">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="8752c-131">Validation File</span></span>  <br/> |<span data-ttu-id="8752c-132">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="8752c-132">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="8752c-133">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="8752c-133">Can be Empty</span></span>  <br/> |<span data-ttu-id="8752c-134">False</span><span class="sxs-lookup"><span data-stu-id="8752c-134">False</span></span>  <br/> |
+|<span data-ttu-id="c2362-128">Namespace</span><span class="sxs-lookup"><span data-stu-id="c2362-128">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="c2362-129">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="c2362-129">Schema Name</span></span>  <br/> |<span data-ttu-id="c2362-130">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="c2362-130">Types schema</span></span>  <br/> |
+|<span data-ttu-id="c2362-131">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="c2362-131">Validation File</span></span>  <br/> |<span data-ttu-id="c2362-132">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="c2362-132">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="c2362-133">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="c2362-133">Can be Empty</span></span>  <br/> |<span data-ttu-id="c2362-134">正しくない</span><span class="sxs-lookup"><span data-stu-id="c2362-134">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="8752c-135">関連項目</span><span class="sxs-lookup"><span data-stu-id="8752c-135">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c2362-135">関連項目</span><span class="sxs-lookup"><span data-stu-id="c2362-135">See also</span></span>
 
-- [<span data-ttu-id="8752c-136">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="8752c-136">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="c2362-136">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="c2362-136">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

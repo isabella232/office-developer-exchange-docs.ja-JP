@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 5ac0ff6d-9e02-4e4c-973d-cd9e076661d5
-description: GetDomainSettingsRequest 要素は、GetDomainSettings 操作 (SOAP) 操作要求を表します。
-ms.openlocfilehash: 4de525a9ba47a0d9afb0d6db9200fe32845f31d0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetDomainSettingsRequest 要素は、GetDomainSettings operation (SOAP) 操作要求を表します。
+ms.openlocfilehash: 400016d0817131fb70ec7ff3db7fbfdc1b51f8f9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760697"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460961"
 ---
-# <a name="getdomainsettingsrequest-soap"></a><span data-ttu-id="b4e40-103">GetDomainSettingsRequest (SOAP)</span><span class="sxs-lookup"><span data-stu-id="b4e40-103">GetDomainSettingsRequest (SOAP)</span></span>
+# <a name="getdomainsettingsrequest-soap"></a><span data-ttu-id="76bdc-103">GetDomainSettingsRequest (SOAP)</span><span class="sxs-lookup"><span data-stu-id="76bdc-103">GetDomainSettingsRequest (SOAP)</span></span>
 
-<span data-ttu-id="b4e40-104">**GetDomainSettingsRequest**要素は、 [GetDomainSettings 操作 (SOAP)](getdomainsettings-operation-soap.md)操作要求を表します。</span><span class="sxs-lookup"><span data-stu-id="b4e40-104">The **GetDomainSettingsRequest** element represents a [GetDomainSettings operation (SOAP)](getdomainsettings-operation-soap.md) operation request.</span></span> 
+<span data-ttu-id="76bdc-104">**Getdomainsettingsrequest**要素は、 [getdomainsettings operation (SOAP)](getdomainsettings-operation-soap.md)操作要求を表します。</span><span class="sxs-lookup"><span data-stu-id="76bdc-104">The **GetDomainSettingsRequest** element represents a [GetDomainSettings operation (SOAP)](getdomainsettings-operation-soap.md) operation request.</span></span> 
   
 ```XML
 <GetDomainSettingsRequest>
@@ -28,43 +28,43 @@ ms.locfileid: "19760697"
 </GetDomainSettingsRequest>
 ```
 
- <span data-ttu-id="b4e40-105">**GetDomainSettingsRequest**</span><span class="sxs-lookup"><span data-stu-id="b4e40-105">**GetDomainSettingsRequest**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="b4e40-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="b4e40-106">Attributes and elements</span></span>
+ <span data-ttu-id="76bdc-105">**GetDomainSettingsRequest**</span><span class="sxs-lookup"><span data-stu-id="76bdc-105">**GetDomainSettingsRequest**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="76bdc-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="76bdc-106">Attributes and elements</span></span>
 
-<span data-ttu-id="b4e40-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="b4e40-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="76bdc-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="76bdc-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="b4e40-108">属性</span><span class="sxs-lookup"><span data-stu-id="b4e40-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="76bdc-108">属性</span><span class="sxs-lookup"><span data-stu-id="76bdc-108">Attributes</span></span>
 
-<span data-ttu-id="b4e40-109">なし。</span><span class="sxs-lookup"><span data-stu-id="b4e40-109">None.</span></span>
+<span data-ttu-id="76bdc-109">なし。</span><span class="sxs-lookup"><span data-stu-id="76bdc-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="b4e40-110">子要素</span><span class="sxs-lookup"><span data-stu-id="b4e40-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="76bdc-110">子要素</span><span class="sxs-lookup"><span data-stu-id="76bdc-110">Child elements</span></span>
 
-|<span data-ttu-id="b4e40-111">**要素**</span><span class="sxs-lookup"><span data-stu-id="b4e40-111">**Element**</span></span>|<span data-ttu-id="b4e40-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="b4e40-112">**Description**</span></span>|
+|<span data-ttu-id="76bdc-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="76bdc-111">**Element**</span></span>|<span data-ttu-id="76bdc-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="76bdc-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="b4e40-113">ドメイン (SOAP)</span><span class="sxs-lookup"><span data-stu-id="b4e40-113">Domains (SOAP)</span></span>](domains-soap.md) <br/> |<span data-ttu-id="b4e40-114">ドメイン識別子のコレクションを表します。</span><span class="sxs-lookup"><span data-stu-id="b4e40-114">Represents a collection of domain identifiers.</span></span>  <br/> |
-|[<span data-ttu-id="b4e40-115">RequestedSettings (SOAP)</span><span class="sxs-lookup"><span data-stu-id="b4e40-115">RequestedSettings (SOAP)</span></span>](requestedsettings-soap.md) <br/> |<span data-ttu-id="b4e40-116">要求されたドメインの構成設定の名前が含まれています。</span><span class="sxs-lookup"><span data-stu-id="b4e40-116">Contains the names of the requested domain configuration settings.</span></span>  <br/> |
-|[<span data-ttu-id="b4e40-117">RequestedVersion (SOAP)</span><span class="sxs-lookup"><span data-stu-id="b4e40-117">RequestedVersion (SOAP)</span></span>](requestedversion-soap.md) <br/> |<span data-ttu-id="b4e40-118">プロバイダーを使用するサーバーのバージョンを指定します。</span><span class="sxs-lookup"><span data-stu-id="b4e40-118">Specifies the server version that the provider will use.</span></span>  <br/> |
+|[<span data-ttu-id="76bdc-113">Domains (SOAP)</span><span class="sxs-lookup"><span data-stu-id="76bdc-113">Domains (SOAP)</span></span>](domains-soap.md) <br/> |<span data-ttu-id="76bdc-114">ドメイン識別子のコレクションを表します。</span><span class="sxs-lookup"><span data-stu-id="76bdc-114">Represents a collection of domain identifiers.</span></span>  <br/> |
+|[<span data-ttu-id="76bdc-115">RequestedSettings (SOAP)</span><span class="sxs-lookup"><span data-stu-id="76bdc-115">RequestedSettings (SOAP)</span></span>](requestedsettings-soap.md) <br/> |<span data-ttu-id="76bdc-116">要求されたドメイン構成設定の名前が含まれています。</span><span class="sxs-lookup"><span data-stu-id="76bdc-116">Contains the names of the requested domain configuration settings.</span></span>  <br/> |
+|[<span data-ttu-id="76bdc-117">RequestedVersion (SOAP)</span><span class="sxs-lookup"><span data-stu-id="76bdc-117">RequestedVersion (SOAP)</span></span>](requestedversion-soap.md) <br/> |<span data-ttu-id="76bdc-118">プロバイダーが使用するサーバーのバージョンを指定します。</span><span class="sxs-lookup"><span data-stu-id="76bdc-118">Specifies the server version that the provider will use.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="b4e40-119">親要素</span><span class="sxs-lookup"><span data-stu-id="b4e40-119">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="76bdc-119">親要素</span><span class="sxs-lookup"><span data-stu-id="76bdc-119">Parent elements</span></span>
 
-<span data-ttu-id="b4e40-120">なし。</span><span class="sxs-lookup"><span data-stu-id="b4e40-120">None.</span></span>
+<span data-ttu-id="76bdc-120">なし。</span><span class="sxs-lookup"><span data-stu-id="76bdc-120">None.</span></span>
   
-## <a name="text-value"></a><span data-ttu-id="b4e40-121">テキスト値</span><span class="sxs-lookup"><span data-stu-id="b4e40-121">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="76bdc-121">テキスト値</span><span class="sxs-lookup"><span data-stu-id="76bdc-121">Text value</span></span>
 
-<span data-ttu-id="b4e40-122">なし。</span><span class="sxs-lookup"><span data-stu-id="b4e40-122">None.</span></span>
+<span data-ttu-id="76bdc-122">なし。</span><span class="sxs-lookup"><span data-stu-id="76bdc-122">None.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="b4e40-123">要素情報</span><span class="sxs-lookup"><span data-stu-id="b4e40-123">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="76bdc-123">要素の情報</span><span class="sxs-lookup"><span data-stu-id="76bdc-123">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="b4e40-124">名前空間</span><span class="sxs-lookup"><span data-stu-id="b4e40-124">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|<span data-ttu-id="b4e40-125">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="b4e40-125">Schema Name</span></span>  <br/> |<span data-ttu-id="b4e40-126">スキーマの自動検出</span><span class="sxs-lookup"><span data-stu-id="b4e40-126">Autodiscover schema</span></span>  <br/> |
-|<span data-ttu-id="b4e40-127">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="b4e40-127">Validation File</span></span>  <br/> |<span data-ttu-id="b4e40-128">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="b4e40-128">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="b4e40-129">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="b4e40-129">Can be Empty</span></span>  <br/> |<span data-ttu-id="b4e40-130">True</span><span class="sxs-lookup"><span data-stu-id="b4e40-130">True</span></span>  <br/> |
+|<span data-ttu-id="76bdc-124">Namespace</span><span class="sxs-lookup"><span data-stu-id="76bdc-124">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|<span data-ttu-id="76bdc-125">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="76bdc-125">Schema Name</span></span>  <br/> |<span data-ttu-id="76bdc-126">自動検出スキーマ</span><span class="sxs-lookup"><span data-stu-id="76bdc-126">Autodiscover schema</span></span>  <br/> |
+|<span data-ttu-id="76bdc-127">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="76bdc-127">Validation File</span></span>  <br/> |<span data-ttu-id="76bdc-128">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="76bdc-128">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="76bdc-129">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="76bdc-129">Can be Empty</span></span>  <br/> |<span data-ttu-id="76bdc-130">正しい</span><span class="sxs-lookup"><span data-stu-id="76bdc-130">True</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="b4e40-131">関連項目</span><span class="sxs-lookup"><span data-stu-id="b4e40-131">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="76bdc-131">関連項目</span><span class="sxs-lookup"><span data-stu-id="76bdc-131">See also</span></span>
 
 
 
-[<span data-ttu-id="b4e40-132">GetDomainSettings 操作 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="b4e40-132">GetDomainSettings operation (SOAP)</span></span>](getdomainsettings-operation-soap.md)
+[<span data-ttu-id="76bdc-132">GetDomainSettings 操作 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="76bdc-132">GetDomainSettings operation (SOAP)</span></span>](getdomainsettings-operation-soap.md)
 

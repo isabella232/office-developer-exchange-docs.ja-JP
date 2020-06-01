@@ -6,61 +6,61 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 8d2d3276-b180-424e-a707-7256d14a1776
-description: FreeBusyAccessEnabled 要素は、FreeBusyAccessEnabled() フラグを表します。 FreeBusyAccessEnabled 要素は、内部使用のみ。 クライアントでは、この要素は使用されません。
-ms.openlocfilehash: 4727e7054c02a4b5d454cb880691ecc01a075327
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: FreeBusyAccessEnabled 要素は、FreeBusyAccessEnabled () フラグを表します。 FreeBusyAccessEnabled 要素は、内部使用のみを対象としています。 この要素はクライアントによって使用されません。
+ms.openlocfilehash: c148d8fa1301339f8579884dc02b6c9e452f3035
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760599"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461297"
 ---
-# <a name="freebusyaccessenabled-soap"></a><span data-ttu-id="7e284-105">FreeBusyAccessEnabled (SOAP)</span><span class="sxs-lookup"><span data-stu-id="7e284-105">FreeBusyAccessEnabled (SOAP)</span></span>
+# <a name="freebusyaccessenabled-soap"></a><span data-ttu-id="a49d1-105">FreeBusyAccessEnabled (SOAP)</span><span class="sxs-lookup"><span data-stu-id="a49d1-105">FreeBusyAccessEnabled (SOAP)</span></span>
 
-<span data-ttu-id="7e284-106">**FreeBusyAccessEnabled**要素は、 **FreeBusyAccessEnabled()** フラグを表します。</span><span class="sxs-lookup"><span data-stu-id="7e284-106">The **FreeBusyAccessEnabled** element represents the **FreeBusyAccessEnabled()** flag.</span></span> <span data-ttu-id="7e284-107">**FreeBusyAccessEnabled**要素は、内部使用のみ。</span><span class="sxs-lookup"><span data-stu-id="7e284-107">The **FreeBusyAccessEnabled** element is for internal use only.</span></span> <span data-ttu-id="7e284-108">クライアントでは、この要素は使用されません。</span><span class="sxs-lookup"><span data-stu-id="7e284-108">This element is not used by clients.</span></span> 
+<span data-ttu-id="a49d1-106">**FreeBusyAccessEnabled**要素は、 **FreeBusyAccessEnabled ()** フラグを表します。</span><span class="sxs-lookup"><span data-stu-id="a49d1-106">The **FreeBusyAccessEnabled** element represents the **FreeBusyAccessEnabled()** flag.</span></span> <span data-ttu-id="a49d1-107">**FreeBusyAccessEnabled**要素は、内部使用のみを対象としています。</span><span class="sxs-lookup"><span data-stu-id="a49d1-107">The **FreeBusyAccessEnabled** element is for internal use only.</span></span> <span data-ttu-id="a49d1-108">この要素はクライアントによって使用されません。</span><span class="sxs-lookup"><span data-stu-id="a49d1-108">This element is not used by clients.</span></span> 
   
 ```XML
 <FreeBusyAccessEnabled>true | false</FreeBusyAccessEnabled>
 ```
 
- <span data-ttu-id="7e284-109">**ブール型 (Boolean)**</span><span class="sxs-lookup"><span data-stu-id="7e284-109">**Boolean**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="7e284-110">属性および要素</span><span class="sxs-lookup"><span data-stu-id="7e284-110">Attributes and elements</span></span>
+ <span data-ttu-id="a49d1-109">**Boolean**</span><span class="sxs-lookup"><span data-stu-id="a49d1-109">**Boolean**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="a49d1-110">属性と要素</span><span class="sxs-lookup"><span data-stu-id="a49d1-110">Attributes and elements</span></span>
 
-<span data-ttu-id="7e284-111">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="7e284-111">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="a49d1-111">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="a49d1-111">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="7e284-112">属性</span><span class="sxs-lookup"><span data-stu-id="7e284-112">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="a49d1-112">属性</span><span class="sxs-lookup"><span data-stu-id="a49d1-112">Attributes</span></span>
 
-<span data-ttu-id="7e284-113">なし。</span><span class="sxs-lookup"><span data-stu-id="7e284-113">None.</span></span>
+<span data-ttu-id="a49d1-113">なし。</span><span class="sxs-lookup"><span data-stu-id="a49d1-113">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="7e284-114">子要素</span><span class="sxs-lookup"><span data-stu-id="7e284-114">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="a49d1-114">子要素</span><span class="sxs-lookup"><span data-stu-id="a49d1-114">Child elements</span></span>
 
-<span data-ttu-id="7e284-115">なし。</span><span class="sxs-lookup"><span data-stu-id="7e284-115">None.</span></span>
+<span data-ttu-id="a49d1-115">なし。</span><span class="sxs-lookup"><span data-stu-id="a49d1-115">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="7e284-116">親要素</span><span class="sxs-lookup"><span data-stu-id="7e284-116">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="a49d1-116">親要素</span><span class="sxs-lookup"><span data-stu-id="a49d1-116">Parent elements</span></span>
 
-|<span data-ttu-id="7e284-117">**要素**</span><span class="sxs-lookup"><span data-stu-id="7e284-117">**Element**</span></span>|<span data-ttu-id="7e284-118">**説明**</span><span class="sxs-lookup"><span data-stu-id="7e284-118">**Description**</span></span>|
+|<span data-ttu-id="a49d1-117">**要素**</span><span class="sxs-lookup"><span data-stu-id="a49d1-117">**Element**</span></span>|<span data-ttu-id="a49d1-118">**説明**</span><span class="sxs-lookup"><span data-stu-id="a49d1-118">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="7e284-119">OrganizationRelationshipSettings (SOAP)</span><span class="sxs-lookup"><span data-stu-id="7e284-119">OrganizationRelationshipSettings (SOAP)</span></span>](organizationrelationshipsettings-soap.md) <br/> |<span data-ttu-id="7e284-120">1 つの組織の組織との関係のリストを表します。</span><span class="sxs-lookup"><span data-stu-id="7e284-120">Represents a list of organization relationships for a single organization.</span></span>  <br/> |
+|[<span data-ttu-id="a49d1-119">組織のリレーションシップ設定 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="a49d1-119">OrganizationRelationshipSettings (SOAP)</span></span>](organizationrelationshipsettings-soap.md) <br/> |<span data-ttu-id="a49d1-120">1つの組織の組織上の関係のリストを表します。</span><span class="sxs-lookup"><span data-stu-id="a49d1-120">Represents a list of organization relationships for a single organization.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="7e284-121">テキスト値</span><span class="sxs-lookup"><span data-stu-id="7e284-121">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="a49d1-121">テキスト値</span><span class="sxs-lookup"><span data-stu-id="a49d1-121">Text value</span></span>
 
-<span data-ttu-id="7e284-122">の**場合は true** 、 **FreeBusyAccessEnabled**要素のテキスト値は、組織内のユーザーの空き時間情報を取得するために共有を使用することを示します。</span><span class="sxs-lookup"><span data-stu-id="7e284-122">A text value of **true** for the **FreeBusyAccessEnabled** element indicates that the sharing relationship should be used to retrieve free busy information from users in the organization.</span></span> <span data-ttu-id="7e284-123">**False**の値は、共有関係を抑制するかを示します。</span><span class="sxs-lookup"><span data-stu-id="7e284-123">A value of **false** indicates that the sharing relationship should be suppressed.</span></span> 
+<span data-ttu-id="a49d1-122">**FreeBusyAccessEnabled**要素のテキスト値が**true**の場合は、共有関係を使用して、組織内のユーザーから空き時間情報を取得する必要があることを示します。</span><span class="sxs-lookup"><span data-stu-id="a49d1-122">A text value of **true** for the **FreeBusyAccessEnabled** element indicates that the sharing relationship should be used to retrieve free busy information from users in the organization.</span></span> <span data-ttu-id="a49d1-123">値が**false**の場合は、共有リレーションシップを抑制する必要があることを示します。</span><span class="sxs-lookup"><span data-stu-id="a49d1-123">A value of **false** indicates that the sharing relationship should be suppressed.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="7e284-124">備考</span><span class="sxs-lookup"><span data-stu-id="7e284-124">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="a49d1-124">注釈</span><span class="sxs-lookup"><span data-stu-id="a49d1-124">Remarks</span></span>
 
-<span data-ttu-id="7e284-125">許可するか、サーバーから空き時間情報が表示されないようにするには、この要素を使用します。</span><span class="sxs-lookup"><span data-stu-id="7e284-125">Use this element to allow or suppress free/busy information from the server.</span></span> 
+<span data-ttu-id="a49d1-125">この要素を使用して、サーバーからの空き時間情報を許可または抑制します。</span><span class="sxs-lookup"><span data-stu-id="a49d1-125">Use this element to allow or suppress free/busy information from the server.</span></span> 
   
-## <a name="element-information"></a><span data-ttu-id="7e284-126">要素情報</span><span class="sxs-lookup"><span data-stu-id="7e284-126">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="a49d1-126">要素の情報</span><span class="sxs-lookup"><span data-stu-id="a49d1-126">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="7e284-127">名前空間</span><span class="sxs-lookup"><span data-stu-id="7e284-127">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|<span data-ttu-id="7e284-128">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="7e284-128">Schema Name</span></span>  <br/> |<span data-ttu-id="7e284-129">スキーマの自動検出</span><span class="sxs-lookup"><span data-stu-id="7e284-129">Autodiscover schema</span></span>  <br/> |
-|<span data-ttu-id="7e284-130">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="7e284-130">Validation File</span></span>  <br/> |<span data-ttu-id="7e284-131">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="7e284-131">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="7e284-132">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="7e284-132">Can be Empty</span></span>  <br/> |<span data-ttu-id="7e284-133">True</span><span class="sxs-lookup"><span data-stu-id="7e284-133">True</span></span>  <br/> |
+|<span data-ttu-id="a49d1-127">Namespace</span><span class="sxs-lookup"><span data-stu-id="a49d1-127">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|<span data-ttu-id="a49d1-128">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="a49d1-128">Schema Name</span></span>  <br/> |<span data-ttu-id="a49d1-129">自動検出スキーマ</span><span class="sxs-lookup"><span data-stu-id="a49d1-129">Autodiscover schema</span></span>  <br/> |
+|<span data-ttu-id="a49d1-130">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="a49d1-130">Validation File</span></span>  <br/> |<span data-ttu-id="a49d1-131">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="a49d1-131">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="a49d1-132">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="a49d1-132">Can be Empty</span></span>  <br/> |<span data-ttu-id="a49d1-133">正しい</span><span class="sxs-lookup"><span data-stu-id="a49d1-133">True</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="7e284-134">関連項目</span><span class="sxs-lookup"><span data-stu-id="7e284-134">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a49d1-134">関連項目</span><span class="sxs-lookup"><span data-stu-id="a49d1-134">See also</span></span>
 
 
 
-[<span data-ttu-id="7e284-135">GetOrganizationRelationshipSettings 操作 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="7e284-135">GetOrganizationRelationshipSettings operation (SOAP)</span></span>](getorganizationrelationshipsettings-operation-soap.md)
+[<span data-ttu-id="a49d1-135">Get組織の Relationshipsettings 操作 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="a49d1-135">GetOrganizationRelationshipSettings operation (SOAP)</span></span>](getorganizationrelationshipsettings-operation-soap.md)
 
