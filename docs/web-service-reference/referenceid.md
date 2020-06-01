@@ -1,5 +1,5 @@
 ---
-title: 参照 id が
+title: ReferenceId
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 6ec106a5-82f7-4b28-a951-11936877e303
-description: 参照 id が要素では、メールボックスの参照識別子を指定します。
-ms.openlocfilehash: a3ae82ed40c64883efeb050eef83d2470e26af63
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ReferenceId 要素は、メールボックスの参照識別子を指定します。
+ms.openlocfilehash: 98dd9fabf645ea01646ec46ca12cb73b400d8c46
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833034"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468076"
 ---
-# <a name="referenceid"></a>参照 id が
+# <a name="referenceid"></a>ReferenceId
 
-**参照 id が**要素では、メールボックスの参照識別子を指定します。 
+**ReferenceId**要素は、メールボックスの参照識別子を指定します。 
   
 ```XML
 <ReferenceId></ReferenceId>
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,21 +42,21 @@ ms.locfileid: "19833034"
   
 ## <a name="text-value"></a>テキスト値
 
-**参照 id が**要素のテキスト値は、メールボックスの参照識別子です。 
+**ReferenceId**要素のテキスト値は、メールボックスの参照識別子です。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

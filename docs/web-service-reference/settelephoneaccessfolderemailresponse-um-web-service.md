@@ -10,17 +10,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 01d07114-5764-4ea7-948c-1ae95c287f0c
-description: SetTelephoneAccessFolderEmailResponse 要素は、SetTelephoneAccessFolderEmail の操作 (UM web サービス) 要求に対する応答を定義します。
-ms.openlocfilehash: 8558a0efd45cc1b2e0bbaac8a93e4c3e498cef74
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: SetTelephoneAccessFolderEmailResponse 要素は、SetTelephoneAccessFolderEmail 操作 (UM web サービス) 要求に対する応答を定義します。
+ms.openlocfilehash: 85f0f764b2a6a1555fb03d31fbe91bf3d6e2f701
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833460"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467313"
 ---
 # <a name="settelephoneaccessfolderemailresponse-um-web-service"></a>SetTelephoneAccessFolderEmailResponse (UM web サービス)
 
-**SetTelephoneAccessFolderEmailResponse**要素は、 [SetTelephoneAccessFolderEmail 操作 (UM web サービス)](settelephoneaccessfolderemail-operation-um-web-service.md)要求に対する応答を定義します。 
+**SetTelephoneAccessFolderEmailResponse**要素は、 [SETTELEPHONEACCESSFOLDEREMAIL 操作 (UM web サービス)](settelephoneaccessfolderemail-operation-um-web-service.md)要求に対する応答を定義します。 
   
 [SetTelephoneAccessFolderEmailResponse (UM web サービス)](settelephoneaccessfolderemailresponse-um-web-service.md)
   
@@ -29,7 +29,7 @@ ms.locfileid: "19833460"
 ```
 
  **complexType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -49,14 +49,14 @@ ms.locfileid: "19833460"
 
 なし。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |スキーマ名  <br/> |メッセージ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

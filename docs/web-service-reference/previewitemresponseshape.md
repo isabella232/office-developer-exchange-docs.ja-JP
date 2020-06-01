@@ -1,5 +1,5 @@
 ---
-title: PreviewItemResponseShape
+title: プレビュー Itemresponseshape
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 183f4a06-c056-4770-b00b-ad850b97e03d
-description: PreviewItemResponseShape 要素には、探索の検索で返されることを要求したプロパティ セットが含まれています。
-ms.openlocfilehash: 7d6abb232225a6807abe988846eccdd8e265fede
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: プレビュー Itemresponseshape 要素には、探索検索で返される要求されたプロパティセットが含まれています。
+ms.openlocfilehash: 6f00849cdd564a45084b64704e36a6cd09c698f9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832871"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468097"
 ---
-# <a name="previewitemresponseshape"></a>PreviewItemResponseShape
+# <a name="previewitemresponseshape"></a>プレビュー Itemresponseshape
 
-**PreviewItemResponseShape**要素には、探索の検索で返されることを要求したプロパティ セットが含まれています。 
+**プレビュー Itemresponseshape**要素には、探索検索で返される要求されたプロパティセットが含まれています。 
   
 ```XML
 <PreviewItemResponseShape>
@@ -27,7 +27,7 @@ ms.locfileid: "19832871"
 ```
 
  **PreviewItemResponseShapeType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -37,25 +37,25 @@ ms.locfileid: "19832871"
   
 ### <a name="child-elements"></a>子要素
 
-[BaseShape (PreviewItemBaseShapeType)](baseshape-previewitembaseshapetype.md) | [AdditionalProperties](additionalproperties.md)
+[Baseshape (PreviewItemBaseShapeType)](baseshape-previewitembaseshapetype.md)  | [Additionalproperties](additionalproperties.md)
   
 ### <a name="parent-elements"></a>親要素
 
 [SearchMailboxes](searchmailboxes.md)
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

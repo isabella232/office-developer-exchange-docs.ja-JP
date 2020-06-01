@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 45057945-a3ec-4dac-92db-f0dc5fcfc34d
-description: NewMailEvent 要素は、メールボックス内の新しいメール アイテムによって発生するイベントを表します。
-ms.openlocfilehash: 8df3e4a218a8eaa9d129854e4816a3a43beddafa
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: NewMailEvent 要素は、メールボックス内の新しいメールアイテムによってトリガーされるイベントを表します。
+ms.openlocfilehash: aa562b60a7299543af8653bbc767edf329075644
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832527"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466816"
 ---
 # <a name="newmailevent"></a>NewMailEvent
 
-**NewMailEvent**要素は、メールボックス内の新しいメール アイテムによって発生するイベントを表します。 
+**Newmailevent**要素は、メールボックス内の新しいメールアイテムによってトリガーされるイベントを表します。 
   
 ```xml
 <NewMailEvent>
@@ -33,7 +33,7 @@ ms.locfileid: "19832527"
 ```
 
  **BaseObjectChangedEventType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -43,31 +43,31 @@ ms.locfileid: "19832527"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[透かし](watermark.md) <br/> |メールボックス イベント テーブル内のイベント ブックマークを表します。  <br/> |
-|[タイムスタンプ](timestamp.md) <br/> |メールボックス内の新しいメール アイテムの受信のタイムスタンプを表します。  <br/> |
-|[ItemId](itemid.md) <br/> |新しいメール アイテムの識別子を表します。  <br/> |
-|[ParentFolderId](parentfolderid.md) <br/> |新しい電子メール アイテムの親フォルダーの識別子を表します。  <br/> |
+|[Watermark](watermark.md) <br/> |メールボックスイベントテーブル内のイベントブックマークを表します。  <br/> |
+|[示](timestamp.md) <br/> |メールボックスに新しいメールアイテムが到着したときのタイムスタンプを表します。  <br/> |
+|[ItemId](itemid.md) <br/> |新しいメールアイテムの識別子を表します。  <br/> |
+|[ParentFolderId](parentfolderid.md) <br/> |新しいメールアイテムの親フォルダーの識別子を表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[通知](notification-ex15websvcsotherref.md) <br/> |サブスクリプションおよび最後の通知以降に発生したイベントに関する情報が含まれています。  <br/> |
+|[通知](notification-ex15websvcsotherref.md) <br/> |サブスクリプションに関する情報、および前回の通知以降に発生したイベントに関する情報が含まれます。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

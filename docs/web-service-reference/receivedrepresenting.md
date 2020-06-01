@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 1157b042-6dce-4cdc-9700-e22b749da39f
-description: ReceivedRepresenting 要素は、代理人アクセスのシナリオでプリンシパルを識別します。
-ms.openlocfilehash: 1587fcae6975b986711e7223e50c60658833cc80
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ReceivedRepresenting 要素は、代理人アクセスシナリオのプリンシパルを識別します。
+ms.openlocfilehash: f444fb88be9c0df174f0c1490cf7c499cc0c0539
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832973"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468223"
 ---
 # <a name="receivedrepresenting"></a>ReceivedRepresenting
 
-**ReceivedRepresenting**要素は、代理人アクセスのシナリオでプリンシパルを識別します。 
+**ReceivedRepresenting**要素は、代理人アクセスシナリオのプリンシパルを識別します。 
   
 ```xml
 <ReceivedRepresenting>
@@ -30,7 +30,7 @@ ms.locfileid: "19832973"
 ```
 
  **SingleRecipientType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,55 +40,55 @@ ms.locfileid: "19832973"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[メールボックス](mailbox.md) <br/> |メールが有効な Active Directory ディレクトリ サービス オブジェクトを識別します。  <br/> |
+|[メールボックス](mailbox.md) <br/> |メールが有効な Active Directory ディレクトリサービスオブジェクトを識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Message](message-ex15websvcsotherref.md) <br/> |Exchange 電子メール メッセージを表します。  <br/> |
+|[Message](message-ex15websvcsotherref.md) <br/> |Exchange 電子メールメッセージを表します。  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Exchange ストア内の会議を表します。  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議出席依頼を表します。  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |Exchange ストア内の会議の返信を表します。  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |Exchange ストア内の会議の取り消し通知を表します。  <br/> |
-|[AcceptItem](acceptitem.md) <br/> |会議出席依頼、承諾の返信を表します。  <br/> |
-|[TentativelyAcceptItem](tentativelyacceptitem.md) <br/> |仮の予定を表しますが、会議出席依頼に返信します。  <br/> |
-|[DeclineItem](declineitem.md) <br/> |会議出席依頼を辞退の返信を表します。  <br/> |
-|[ReplyToItem](replytoitem.md) <br/> |Exchange ストア内のアイテムの作成者に返信が含まれています。  <br/> |
-|[ReplyAllToItem](replyalltoitem.md) <br/> |Exchange ストア内のアイテムの識別されたすべての受信者への返信が含まれています。  <br/> |
-|[ForwardItem](forwarditem.md) <br/> |受信者に転送するのには、Exchange ストアの項目が含まれています。  <br/> |
-|[CancelCalendarItem](cancelcalendaritem.md) <br/> |会議をキャンセルするために使用される応答オブジェクトを表します。  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |Exchange ストア内の会議の応答を表します。  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |Exchange ストア内の会議の取り消しを表します。  <br/> |
+|[AcceptItem](acceptitem.md) <br/> |会議出席依頼への返信を承諾するかを表します。  <br/> |
+|[TentativelyAcceptItem](tentativelyacceptitem.md) <br/> |会議出席依頼に対する仮の返信を表します。  <br/> |
+|[DeclineItem](declineitem.md) <br/> |会議出席依頼への返信を拒否することを表します。  <br/> |
+|[ReplyToItem](replytoitem.md) <br/> |Exchange ストア内のアイテムの作成者への返信を含みます。  <br/> |
+|[Replyalltoitem と](replyalltoitem.md) <br/> |Exchange ストア内のアイテムの特定の受信者全員への返信を含みます。  <br/> |
+|[Forwarditem と](forwarditem.md) <br/> |受信者に転送するための Exchange ストアアイテムが保存されています。  <br/> |
+|[CancelCalendarItem](cancelcalendaritem.md) <br/> |会議の取り消しに使用される response オブジェクトを表します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**ReceivedRepresenting**要素を使用して**から**とし、内の**ReceivedBy**要素は、アクセスのシナリオを委任します。 次の表に、代理人アクセスのシナリオでこれらの要素を表すエンティティを示します。 
+**ReceivedRepresenting**要素は、代理人アクセスのシナリオで**From**および**ReceivedBy**要素と共に使用されます。 次の表に、これらの要素がデリゲートアクセスシナリオで表すエンティティを示します。 
   
-**代理人アクセスのシナリオ内の要素**
+**代理人アクセスシナリオの要素**
 
 |**要素**|**要素が表すエンティティ**|
 |:-----|:-----|
-|[From](from.md) <br/> |サード ・ パーティ  <br/> |
+|[From](from.md) <br/> |ThirdParty  <br/> |
 |[ReceivedBy](receivedby.md) <br/> |代理人  <br/> |
-|[ReceivedRepresenting](receivedrepresenting.md) <br/> |校長  <br/> |
+|[ReceivedRepresenting](receivedrepresenting.md) <br/> |Principal  <br/> |
    
-代理人アクセス シナリオでは、サード パーティーは、代理人を持っているプリンシパルに会議出席依頼を送信する場合、代理人が参照してください新しい会議出席依頼。 これらの要素は、それらに直接送信されるメッセージと、デリゲートのルールを転送するために送信されるメッセージとを区別するための委任を有効にします。
+代理人アクセスのシナリオでは、ThirdParty が代理人を持つプリンシパルに会議出席依頼を送信すると、代理人には新しい会議出席依頼が表示されます。 これらの要素によって、代理人が直接送信されたメッセージと、代理人の転送ルールによって送信されるメッセージを区別することができます。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

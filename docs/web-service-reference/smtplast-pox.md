@@ -8,19 +8,19 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: f1aa8bd9-c6ac-41ac-8d2d-56fb20006005
-description: SMTPLast 要素は、簡易メール転送プロトコル (SMTP) サーバーの SMTP サーバーを使用して電子メールを送信する前に電子メールをダウンロードすることが必要かどうかを指定します。
-ms.openlocfilehash: 5359f20b33855f4ef48566058bc46bd618e3b2ff
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: SMTPLast 要素は、SMTP サーバーを使用して電子メールを送信する前に、SMTP (Simple Mail Transfer Protocol) サーバーで電子メールをダウンロードする必要があるかどうかを指定します。
+ms.openlocfilehash: 7019da28ffa196a9abc8798aa75aff2756198da3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833505"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468433"
 ---
 # <a name="smtplast-pox"></a>SMTPLast (POX)
 
-**SMTPLast**要素は、簡易メール転送プロトコル (SMTP) サーバーの SMTP サーバーを使用して電子メールを送信する前に電子メールをダウンロードすることが必要かどうかを指定します。 
+**SMTPLast**要素は、smtp サーバーを使用して電子メールを送信する前に、Smtp (Simple Mail Transfer Protocol) サーバーで電子メールをダウンロードする必要があるかどうかを指定します。 
   
-- [(POX) を自動検出](autodiscover-pox.md)
+- [自動検出 (POX)](autodiscover-pox.md)
   
 - [応答 (POX)](response-pox.md)
   
@@ -34,7 +34,7 @@ ms.locfileid: "19833505"
 <SMTPLast>on or off</SMTPLast>
 ```
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -50,13 +50,13 @@ ms.locfileid: "19833505"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
+|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、SMTP サーバーに電子メールが SMTP サーバーを使用して電子メールを送信する前にダウンロードすることが必要かどうかを指定します。 使用可能な値は、**オン**と**オフを**します。 既定値では**オフ**です。
+テキスト値は、smtp サーバーを使用して電子メールを送信する前に、SMTP サーバーで電子メールをダウンロードする必要があるかどうかを指定します。 有効な値は、 **[オン**] または [**オフ**] です。 既定値は**off**です。
   
 ## <a name="see-also"></a>関連項目
 
-- [交換の POX の自動検出の XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+- [Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
 

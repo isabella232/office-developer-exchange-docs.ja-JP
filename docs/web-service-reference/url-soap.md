@@ -9,23 +9,23 @@ api_type:
 - schema
 ms.assetid: 12e8c9a4-61e5-41a5-a9ea-423ce6f464af
 description: Url 要素には、Web クライアントの URL が含まれています。
-ms.openlocfilehash: cb29a4b7e6d9c18b212fb543410ddda160099d6f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 73d52107ede3fa951ab71e1706af51185b341b74
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839913"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468349"
 ---
 # <a name="url-soap"></a>Url (SOAP)
 
-**Url**要素には、Web クライアントの URL が含まれています。 
+**Url**要素には、Web クライアントの url が含まれています。 
   
 ```XML
 <Url/>
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -47,14 +47,14 @@ ms.locfileid: "19839913"
 
 テキスト値は、Web クライアントの URL です。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|スキーマ名  <br/> |スキーマの自動検出  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|スキーマ名  <br/> |自動検出スキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

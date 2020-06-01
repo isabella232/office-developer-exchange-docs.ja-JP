@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: af4032d5-42b3-463e-9d0a-8236d78e5b75
-description: RequestServerVersion 要素には、要求の対象とするスキーマのバージョンを識別するバージョン情報が含まれています。
-ms.openlocfilehash: 0092d90a5fc479363f6d774b793c7148ad29f21c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: RequestServerVersion 要素には、要求に対してターゲットとするスキーマバージョンを識別するバージョン管理情報が含まれています。
+ms.openlocfilehash: c4ae59a03c812d21153e4338734185d933d914ec
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833143"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468321"
 ---
 # <a name="requestserverversion"></a>RequestServerVersion
 
-**RequestServerVersion**要素には、要求の対象とするスキーマのバージョンを識別するバージョン情報が含まれています。 
+**RequestServerVersion**要素には、要求に対してターゲットとするスキーマバージョンを識別するバージョン管理情報が含まれています。 
   
 ```XML
 <RequestServerVersion Version=""/>
 ```
 
  **ExchangeVersionType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -36,19 +36,19 @@ ms.locfileid: "19833143"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|バージョン  <br/> |要求の対象とするバージョンをについて説明します。 対象サーバーのバージョンのバージョンの Exchange が Exchange Server 2010 で始まる場合、この属性が必要です。  <br/> |
+|Version  <br/> |要求の対象となるバージョンを示します。 この属性は、ターゲットサーバーのバージョンが Exchange Server 2010 以降の Exchange のバージョンである場合に必要です。  <br/> |
    
 #### <a name="version-attribute-values"></a>バージョン属性の値
 
 |**値**|**説明**|
 |:-----|:-----|
-|Exchange2007  <br/> |初期リリース版の Exchange 2007 用のスキーマ ファイルを対象とします。  <br/> |
-|Exchange2007_SP1  <br/> |Exchange 2007 Service Pack 1 (SP1)、Exchange 2007 Service Pack 2 (SP2)、および Exchange 2007 Service Pack 3 (SP3) 用のスキーマ ファイルを対象とします。  <br/> |
-|Exchange2010  <br/> |Exchange 2010 用のスキーマ ファイルを対象とします。  <br/> |
-|Exchange2010_SP1  <br/> |Exchange 2010 Service Pack 1 (SP1) 用のスキーマ ファイルを対象とします。  <br/> |
-|Exchange2010_SP2  <br/> |Exchange 2010 Service Pack 2 (SP2) および Exchange 2010 Service Pack 3 (SP3) 用のスキーマ ファイルを対象とします。  <br/> |
-|Exchange2013  <br/> |Exchange 2013 のスキーマ ファイルを対象とします。  <br/> |
-|Exchange2013_SP1  <br/> |Exchange 2013 の Service Pack 1 (SP1) 用のスキーマ ファイルを対象とします。  <br/> |
+|Exchange2007  <br/> |Exchange 2007 の最初のリリースバージョンのスキーマファイルをターゲットにします。  <br/> |
+|Exchange2007_SP1  <br/> |Exchange 2007 Service Pack 1 (SP1)、Exchange 2007 Service Pack 2 (SP2)、および Exchange 2007 Service Pack 3 (SP3) のスキーマファイルを対象とします。  <br/> |
+|Exchange2010  <br/> |Exchange 2010 のスキーマファイルをターゲットにします。  <br/> |
+|Exchange2010_SP1  <br/> |Exchange 2010 Service Pack 1 (SP1) のスキーマファイルをターゲットにします。  <br/> |
+|Exchange2010_SP2  <br/> |Exchange 2010 Service Pack 2 (SP2) および Exchange 2010 Service Pack 3 (SP3) のスキーマファイルを対象とします。  <br/> |
+|Exchange2013  <br/> |Exchange 2013 のスキーマファイルをターゲットにします。  <br/> |
+|Exchange2013_SP1  <br/> |Exchange 2013 Service Pack 1 (SP1) のスキーマファイルをターゲットにします。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -56,27 +56,27 @@ ms.locfileid: "19833143"
   
 ### <a name="parent-elements"></a>親要素
 
-**RequestServerVersion**要素は、SOAP ヘッダーに配置されます。 
+**RequestServerVersion**要素は、SOAP ヘッダーにあります。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 
 
-[バージョン管理の要求](http://msdn.microsoft.com/library/76877b0a-d2e5-4c74-9295-7b445a41d46a%28Office.15%29.aspx)
+[バージョン管理要求](https://msdn.microsoft.com/library/76877b0a-d2e5-4c74-9295-7b445a41d46a%28Office.15%29.aspx)
 

@@ -11,49 +11,49 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3494c996-b834-4813-b1ca-d99642d8b4e7
-description: UpdateFolder 操作を使用して、Exchange ストア内の既存のアイテムのプロパティを変更します。 各 UpdateFolder 操作は、次ので構成されます。
-ms.openlocfilehash: b33937bb09f0dcbe3d3ed61bbf5233423f320d9c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: UpdateFolder 操作は、Exchange ストア内の既存のアイテムのプロパティを変更するために使用されます。 各 UpdateFolder 操作は、次の要素で構成されます。
+ms.openlocfilehash: fb894d9f42358b67f81e9fe8ae41ba61e6f46460
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839836"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467362"
 ---
 # <a name="updatefolder-operation"></a>UpdateFolder 操作
 
-UpdateFolder 操作を使用して、Exchange ストア内の既存のアイテムのプロパティを変更します。 各 UpdateFolder 操作は、次ので構成されます。
+UpdateFolder 操作は、Exchange ストア内の既存のアイテムのプロパティを変更するために使用されます。 各 UpdateFolder 操作は、次の要素で構成されます。
   
-- [フォルダー Id](folderid.md)の要素で、更新するフォルダーを指定します。 
+- 更新するフォルダーを指定する[FolderId](folderid.md)要素。 
     
-- 更新するデータを指定するフォルダーの図形で指定したフォルダー内の要素の内部のパスです。
+- Folder 図形で指定された、フォルダー内の要素の内部パス。更新するデータを指定します。
     
-- 更新プログラムが削除できない場合、更新されたフィールドの新しい値を格納するフォルダーです。
+- 更新が削除されていない場合は、更新されたフィールドの新しい値を含むフォルダー。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-アイテムには、3 つの更新プログラムの基本的な操作を実行できます。 これらのアクションは、次の表に表示されます。
+アイテムに対して3つの基本的な更新操作を実行できます。 これらのアクションを次の表に示します。
   
-|**アクション**|**説明**|
+|**操作**|**説明**|
 |:-----|:-----|
-|追加  <br/> |追加操作では、既存のプロパティにデータを追加します。 そこにある現在のデータが保持されます。 追加のすべてのプロパティには適用できません。  <br/> |
-|設定  <br/> |設定のアクションでは、データが含まれていますまたはプロパティが作成され、存在しない場合、その値を設定する場合、プロパティのデータが置き換えられます。 アクションのセットは、書き込み可能なプロパティに適用できるのみです。  <br/> |
-|削除  <br/> |削除操作では、フォルダーからプロパティを削除します。 これは、空の値を設定することとは異なります。 完了すると、フォルダーのプロパティが存在しません。 削除は、書き込み可能なプロパティに該当する場合のみです。  <br/> |
+|追加  <br/> |Append アクションは、既存のプロパティにデータを追加します。 現在のデータは保持されます。 追加はすべてのプロパティに適用されません。  <br/> |
+|Set  <br/> |Set アクションは、データが含まれている場合はプロパティのデータを置き換えます。存在しない場合は、プロパティを作成して、その値を設定します。 Set アクションは、書き込み可能なプロパティにのみ適用されます。  <br/> |
+|削除  <br/> |削除アクションは、フォルダーからプロパティを削除します。 これは、空の値に設定するのとは異なります。 完了すると、フォルダーのプロパティは存在しません。 Delete は、書き込み可能なプロパティにのみ適用されます。  <br/> |
    
 ## <a name="updatefolder-request-example"></a>UpdateFolder 要求の例
 
 ### <a name="description"></a>説明
 
-UpdateFolder 要求の次の使用例は、フォルダーの表示名を更新する方法を示します。 
+次の UpdateFolder 要求の例は、フォルダーの表示名を更新する方法を示しています。 
   
 ### <a name="code"></a>コード
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <UpdateFolder xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-                  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <UpdateFolder xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+                  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <FolderChanges>
         <t:FolderChange>
           <t:FolderId Id="AScA" ChangeKey="GO3u/"/>
@@ -74,24 +74,24 @@ UpdateFolder 要求の次の使用例は、フォルダーの表示名を更新�
 
 ### <a name="comments"></a>コメント
 
-NewFolderName] にフォルダーの表示名を変更します。
+次の使用例は、フォルダーの表示名を NewFolderName に変更します。
   
 > [!NOTE]
-> [フォルダー Id](folderid.md)要素の属性を**変更キー**と**Id**の値は、読みやすさに短縮されています。 
+> [FolderId](folderid.md)要素の**Id**および**changekey**属性の値は、読みやすくするために短縮されています。 
   
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-次の要素は、要求で使用されます。
+要求では、次の要素が使用されます。
   
 - [UpdateFolder](updatefolder.md)
     
-- [FolderChanges](folderchanges.md)
+- [FolderChanges 変更](folderchanges.md)
     
 - [FolderChange](folderchange.md)
     
-- [フォルダー Id](folderid.md)
+- [FolderId](folderid.md)
     
-- [更新 (アイテム)](updates-item.md)
+- [Updates (フォルダー)](updates-folder.md)
     
 - [SetFolderField](setfolderfield.md)
     
@@ -99,18 +99,18 @@ NewFolderName] にフォルダーの表示名を変更します。
     
 - [Folder](folder.md)
     
-- [表示名 (文字列)](displayname-string.md)
+- [DisplayName (文字列)](displayname-string.md)
     
-UpdateFolder 要求を形成するために使用できるその他の要素のスキーマを参照してください。
+UpdateFolder 要求の形成に使用できるその他の要素については、スキーマを参照してください。
   
 > [!NOTE]
-> スキーマの既定の場所は、クライアント アクセス サーバーの役割がインストールされているコンピューターで EWS 仮想ディレクトリには。 
+> スキーマの既定の場所は、クライアントアクセスサーバーの役割がインストールされているコンピューター上の EWS 仮想ディレクトリにあります。 
   
 ## <a name="updatefolder-response-example"></a>UpdateFolder 応答の例
 
 ### <a name="description"></a>説明
 
-UpdateFolder 要求に正常な応答の例を次に示します。 この例では、フォルダーの更新されたステータスを反映するために新しいキーの変更が返されます。
+次の例は、UpdateFolder 要求に対する正常な応答を示しています。 この例では、フォルダーの更新された状態を反映するために新しい変更キーが返されます。
   
 ### <a name="code"></a>コード
 
@@ -121,12 +121,12 @@ UpdateFolder 要求に正常な応答の例を次に示します。 この例で
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <UpdateFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                          xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <UpdateFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                          xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:UpdateFolderResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -145,13 +145,13 @@ UpdateFolder 要求に正常な応答の例を次に示します。 この例で
 ### <a name="comments"></a>コメント
 
 > [!NOTE]
-> フォルダー ID と変更キーは、読みやすさを保持するために短縮されています。 
+> 読みやすくするために、フォルダー ID と変更キーが短縮されています。 
   
-応答で返されたフォルダー ID は、更新されたフォルダーを表します。
+応答で返されるフォルダー ID は、更新されたフォルダーを表しています。
   
-### <a name="successful-response-elements"></a>正常な応答の要素
+### <a name="successful-response-elements"></a>成功した応答要素
 
-次の要素は、応答で使用されます。
+応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -167,13 +167,13 @@ UpdateFolder 要求に正常な応答の例を次に示します。 この例で
     
 - [Folder](folder.md)
     
-- [フォルダー Id](folderid.md)
+- [FolderId](folderid.md)
     
 ## <a name="updatefolder-error-response-example"></a>UpdateFolder エラー応答の例
 
 ### <a name="description"></a>説明
 
-UpdateFolder 要求に対するエラー応答の例を次に示します。
+次の例は、UpdateFolder 要求に対するエラー応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -184,12 +184,12 @@ UpdateFolder 要求に対するエラー応答の例を次に示します。
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <UpdateFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                          xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <UpdateFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                          xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:UpdateFolderResponseMessage ResponseClass="Error">
           <m:MessageText>The change key is invalid.</m:MessageText>
@@ -205,9 +205,9 @@ UpdateFolder 要求に対するエラー応答の例を次に示します。
 
 ### <a name="comments"></a>コメント
 
-この例では、要求に無効な**変更キー**属性が原因で発生するエラー応答を使用します。 
+この例では、要求内の無効な**Changekey**属性によって発生するエラー応答を示します。 
   
-### <a name="error-response-elements"></a>エラー応答の要素
+### <a name="error-response-elements"></a>エラー応答要素
 
 エラー応答では、次の要素が使用されます。
   
@@ -231,5 +231,5 @@ UpdateFolder 要求に対するエラー応答の例を次に示します。
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

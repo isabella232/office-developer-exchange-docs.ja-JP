@@ -1,5 +1,5 @@
 ---
-title: SyncFolderItems の操作
+title: SyncFolderItems 操作
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,38 +11,38 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7f0de089-8876-47ec-a871-df118ceae75d
-description: SyncFolderItems 操作では、Exchange サーバーとクライアントの間で項目を同期します。
-ms.openlocfilehash: 6b2e4694ac793e17a2b7cb2edb2cb9e6a4a105ea
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: SyncFolderItems 操作は、Exchange サーバーとクライアントの間でアイテムを同期します。
+ms.openlocfilehash: 1a28d895eda11dd43f77ec2662a60a426cfc463c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839640"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468146"
 ---
-# <a name="syncfolderitems-operation"></a>SyncFolderItems の操作
+# <a name="syncfolderitems-operation"></a>SyncFolderItems 操作
 
-SyncFolderItems 操作では、Exchange サーバーとクライアントの間で項目を同期します。
+SyncFolderItems 操作は、Exchange サーバーとクライアントの間でアイテムを同期します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-SyncFolderItems 操作では、最大 512 の変更を返します。 SyncFolderItems の後続の要求は、追加の変更を取得する行う必要があります。 
+SyncFolderItems 操作は、最大512の変更を返します。 追加の変更を取得するには、以降の SyncFolderItems 要求を実行する必要があります。 
   
-SyncFolderItems は、本文や添付ファイルなどのプロパティを返すことができないという点で、FindItem 操作と似ています。 SyncFolderItems 操作が必要なプロパティを返さない場合は、SyncFolderItems によって返された各アイテムの特定のプロパティのセットを取得するのには、 [GetItem 操作](getitem-operation.md)を使用できます。 
+SyncFolderItems は FindItem 操作に似ていますが、本文や添付ファイルなどのプロパティを返すことはできません。 SyncFolderItems 操作が必要なプロパティを返さない場合は、 [GetItem 操作](getitem-operation.md)を使用して、syncfolderitems から返された各アイテムの特定のプロパティセットを取得できます。 
   
 ## <a name="syncfolderitems-request-example"></a>SyncFolderItems 要求の例
 
 ### <a name="description"></a>説明
 
-SyncFolderItems 要求の次の使用例は、フォルダー内のアイテムを同期する方法を示します。 この例では、送信済みアイテム フォルダーで発生した最初の同期ではないフォルダーの項目の同期を使用します。 クライアントが Exchange サーバーと同期する最初の試みの要求では、[同期状態](syncstate-ex15websvcsotherref.md)の要素は含まれません。 フォルダー階層内の項目を同期する最初の試みのすべての項目で返します、メールボックスでは、[無視する](ignore.md)要素で識別される項目の除外。 SyncFolderItems 要求は、前回の同期以降のフォルダーのアイテムに対するすべての変更を同期しようとしています。 この要求は[無視する](ignore.md)要素で指定されている項目を 1 つの同期を無視します。 
+次の SyncFolderItems 要求の例は、フォルダー内のアイテムを同期する方法を示しています。 この例では、[送信済みアイテム] フォルダーに対して行われた最初の同期ではないフォルダーアイテムの同期を示します。 クライアントと Exchange サーバーの同期を最初に試行する要求には、 [Syncstate](syncstate-ex15websvcsotherref.md)要素は含まれていません。 フォルダー階層内のアイテムを最初に同期しようとすると、そのメールボックス内のすべてのアイテムが返されます。[無視](ignore.md)要素で識別されるアイテムは除きます。 この SyncFolderItems 要求は、前回の同期以降のフォルダーアイテムへのすべての変更を同期しようとします。 この要求は、 [ignore](ignore.md)要素で識別される1つのアイテムを同期しようとする試行を無視します。 
   
 ### <a name="code"></a>コード
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <SyncFolderItems xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <SyncFolderItems xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ItemShape>
         <t:BaseShape>Default</t:BaseShape>
       </ItemShape>
@@ -61,11 +61,11 @@ SyncFolderItems 要求の次の使用例は、フォルダー内のアイテム�
 
 ### <a name="comments"></a>コメント
 
-[同期状態](syncstate-ex15websvcsotherref.md)の要素の base64 でエンコードされたデータと[アイテム Id](itemid.md)要素の**Id**属性は、読みやすさを保持するために短縮されています。 
+読みやすくするために、 [Syncstate](syncstate-ex15websvcsotherref.md)要素の base64 でエンコードされたデータと[ItemId](itemid.md)要素**Id**属性は短縮されています。 
   
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-次の要素は、要求で使用されます。
+要求では、次の要素が使用されます。
   
 - [SyncFolderItems](syncfolderitems.md)
     
@@ -77,19 +77,19 @@ SyncFolderItems 要求の次の使用例は、フォルダー内のアイテム�
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
-- [同期状態](syncstate-ex15websvcsotherref.md)
+- [SyncState](syncstate-ex15websvcsotherref.md)
     
-- [Ignore](ignore.md)
+- [無視](ignore.md)
     
 - [ItemId](itemid.md)
     
-- [MaxChangesReturned](maxchangesreturned.md)
+- [Maxの戻り値](maxchangesreturned.md)
     
-## <a name="successful-syncfolderitems-response"></a>SyncFolderItems の正常な応答
+## <a name="successful-syncfolderitems-response"></a>正常な SyncFolderItems 応答
 
 ### <a name="description"></a>説明
 
-SyncFolderItems 要求に正常な応答の例を次に示します。 この例では、送信済みアイテム フォルダーから会議出席依頼が同期されます。
+次の例は、SyncFolderItems 要求に対する正常な応答を示しています。 この例では、[送信済みアイテム] フォルダーから会議出席依頼が同期されます。
   
 ### <a name="code"></a>コード
 
@@ -101,12 +101,12 @@ SyncFolderItems 要求に正常な応答の例を次に示します。 この例
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" 
                          MajorBuildNumber="628" MinorBuildNumber="0" 
-      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <SyncFolderItemsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                             xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                             xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <SyncFolderItemsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                             xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                             xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:SyncFolderItemsResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -144,11 +144,11 @@ SyncFolderItems 要求に正常な応答の例を次に示します。 この例
 
 ### <a name="comments"></a>コメント
 
-[同期状態](syncstate-ex15websvcsotherref.md)の要素の base64 でエンコードされたデータと[アイテム Id](itemid.md)要素の**Id**属性は、読みやすさを保持するために短縮されています。 
+読みやすくするために、 [Syncstate](syncstate-ex15websvcsotherref.md)要素の base64 でエンコードされたデータと[ItemId](itemid.md)要素**Id**属性は短縮されています。 
   
-### <a name="successful-response-elements"></a>正常な応答の要素
+### <a name="successful-response-elements"></a>成功した応答要素
 
-次の要素は、応答で使用されます。
+応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -160,31 +160,31 @@ SyncFolderItems 要求に正常な応答の例を次に示します。 この例
     
 - [ResponseCode](responsecode.md)
     
-- [同期状態](syncstate-ex15websvcsotherref.md)
+- [SyncState](syncstate-ex15websvcsotherref.md)
     
 - [IncludesLastItemInRange](includeslastiteminrange.md)
     
 - [変更 (アイテム)](changes-items.md)
     
-- [(ItemSync) を作成します。](create-itemsync.md)
+- [Create (ItemSync)](create-itemsync.md)
     
 - [MeetingRequest](meetingrequest.md)
     
 - [ItemId](itemid.md)
     
-- [Subject](subject.md)
+- [[件名]](subject.md)
     
 - [Sensitivity](sensitivity.md)
     
 - [IsOutOfDate](isoutofdate.md)
     
-- [HasBeenProcessed](hasbeenprocessed.md)
+- [Hasが処理されました](hasbeenprocessed.md)
     
 - [ResponseType](responsetype.md)
     
 - [IntendedFreeBusyStatus](intendedfreebusystatus.md)
     
-- [Start](start.md)
+- [開始](start.md)
     
 - [終わり](end-ex15websvcsotherref.md)
     
@@ -194,9 +194,9 @@ SyncFolderItems 要求に正常な応答の例を次に示します。 この例
     
 - [メールボックス](mailbox.md)
     
-- [名 (EmailAddressType)](name-emailaddresstype.md)
+- [Name (EmailAddressType)](name-emailaddresstype.md)
     
-- [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
+- [EmailAddress (非 Emptystringtype)](emailaddress-nonemptystringtype.md)
     
 - [RoutingType (EmailAddressType)](routingtype-emailaddresstype.md)
     
@@ -204,7 +204,7 @@ SyncFolderItems 要求に正常な応答の例を次に示します。 この例
 
 ### <a name="description"></a>説明
 
-SyncFolderItems 要求に対してエラー応答の例を次に示します。 このエラーは、無効な同期状態が原因です。
+次の例は、SyncFolderItems 要求に対するエラー応答を示しています。 このエラーは、無効な SyncState が原因で発生しました。
   
 ### <a name="code"></a>コード
 
@@ -216,12 +216,12 @@ SyncFolderItems 要求に対してエラー応答の例を次に示します。 
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" 
                          MajorBuildNumber="628" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <SyncFolderItemsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                             xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                             xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <SyncFolderItemsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                             xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                             xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:SyncFolderItemsResponseMessage ResponseClass="Error">
           <m:MessageText>Synchronization state data is corrupt or otherwise invalid.</m:MessageText>
@@ -236,7 +236,7 @@ SyncFolderItems 要求に対してエラー応答の例を次に示します。 
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a>エラー応答の要素
+### <a name="error-response-elements"></a>エラー応答要素
 
 エラー応答では、次の要素が使用されます。
   
@@ -254,7 +254,7 @@ SyncFolderItems 要求に対してエラー応答の例を次に示します。 
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [同期状態](syncstate-ex15websvcsotherref.md)
+- [SyncState](syncstate-ex15websvcsotherref.md)
     
 - [IncludesLastItemInRange](includeslastiteminrange.md)
     
@@ -262,5 +262,5 @@ SyncFolderItems 要求に対してエラー応答の例を次に示します。 
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

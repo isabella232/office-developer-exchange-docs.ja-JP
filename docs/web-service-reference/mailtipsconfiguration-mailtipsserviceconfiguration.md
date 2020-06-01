@@ -1,5 +1,5 @@
 ---
-title: MailTipsConfiguration (MailTipsServiceConfiguration)
+title: Mailヒント構成 (MailTipsServiceConfiguration)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 9a34515e-815b-4c61-b118-d5f66b80238f
-description: MailTipsConfiguration 要素には、メール ヒントのサービスのサービスの構成情報が含まれています。
-ms.openlocfilehash: ea92af3ebb2d2f720e5823c5317d09d5bcdb3978
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Mailヒント構成要素には、メールヒントサービスのサービス構成情報が含まれています。
+ms.openlocfilehash: 9128ee99545066899c3b27b624f10a9f1bd36c9d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832321"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467789"
 ---
-# <a name="mailtipsconfiguration-mailtipsserviceconfiguration"></a>MailTipsConfiguration (MailTipsServiceConfiguration)
+# <a name="mailtipsconfiguration-mailtipsserviceconfiguration"></a>Mailヒント構成 (MailTipsServiceConfiguration)
 
-**MailTipsConfiguration**要素には、メール ヒントのサービスのサービスの構成情報が含まれています。 
+**Mailヒント構成**要素には、メールヒントサービスのサービス構成情報が含まれています。 
   
 ```XML
 <MailTipsConfiguration>
@@ -35,7 +35,7 @@ ms.locfileid: "19832321"
 ```
 
  **MailTipsServiceConfiguration**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -45,41 +45,41 @@ ms.locfileid: "19832321"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[MailTipsEnabled](mailtipsenabled.md) <br/> |メール ヒントのサービスが利用可能かどうかを示します。 この要素は必須です。  <br/> |
-|[MaxRecipientsPerGetMailTipsRequest](maxrecipientspergetmailtipsrequest.md) <br/> |[GetMailTips 操作](getmailtips-operation.md)に渡すことができる受信者の最大数を示します。 この要素は必須です。  <br/> |
-|[MaxMessageSize](maxmessagesize.md) <br/> |受信者が受け入れることができるメッセージの最大サイズを表します。 この要素は必須です。  <br/> |
-|[LargeAudienceThreshold](largeaudiencethreshold.md) <br/> |クライアントの多くの人々 のしきい値を表します。 この要素は必須です。  <br/> |
-|[ShowExternalRecipientCount](showexternalrecipientcount.md) <br/> |[GetMailTips 操作](getmailtips-operation.md)のコンシューマーにメッセージの宛先を外部の受信者の数を示すメール ヒントを表示するかどうかを示します。 この要素は必須です。  <br/> |
-|[InternalDomains (SmtpDomainList)](internaldomains-smtpdomainlist.md) <br/> |組織の内部の SMTP ドメインのリストを識別します。 この要素は必須です。  <br/> |
+|[Mailヒント有効](mailtipsenabled.md) <br/> |メールヒントサービスが利用可能かどうかを示します。 この要素は必須です。  <br/> |
+|[Max受信者 Spergetmailヒント要求](maxrecipientspergetmailtipsrequest.md) <br/> |[Getmailtips ヒント操作](getmailtips-operation.md)に渡すことができる受信者の最大数を示します。 この要素は必須です。  <br/> |
+|[MaxMessageSize](maxmessagesize.md) <br/> |受信者が受け付けることができる最大メッセージサイズを表します。 この要素は必須です。  <br/> |
+|[LargeAudienceThreshold](largeaudiencethreshold.md) <br/> |クライアントの大規模な対象ユーザーのしきい値を表します。 この要素は必須です。  <br/> |
+|[Showexternal受信者カウント](showexternalrecipientcount.md) <br/> |[Getmailtips ヒント操作](getmailtips-operation.md)のコンシューマーが、メッセージの宛先である外部受信者の数を示すメールヒントを表示する必要があるかどうかを示します。 この要素は必須です。  <br/> |
+|[InternalDomains (SmtpDomainList)](internaldomains-smtpdomainlist.md) <br/> |組織の内部 SMTP ドメインのリストを識別します。 この要素は必須です。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ServiceConfigurationResponseMessageType](serviceconfigurationresponsemessagetype.md) <br/> |サービス構成の設定が含まれています。  <br/> |
+|[ServiceConfigurationResponseMessageType](serviceconfigurationresponsemessagetype.md) <br/> |サービス構成の設定が含まれます。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

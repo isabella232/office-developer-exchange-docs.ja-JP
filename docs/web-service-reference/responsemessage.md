@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: bf57265a-d354-4cd7-bbfc-d93e19cbede6
-description: ResponseMessage 要素は、要求内の単一のエンティティの応答ステータスに関する説明情報を提供します。
-ms.openlocfilehash: 69f1f6f12d10044045b72dd644536e742c479b9e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ResponseMessage 要素は、要求内の1つのエンティティの応答状態に関する説明情報を提供します。
+ms.openlocfilehash: a7f4240b1e988cb69d67118c6db58db0d7babba5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833191"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467159"
 ---
 # <a name="responsemessage"></a>ResponseMessage
 
-**ResponseMessage**要素は、要求内の単一のエンティティの応答ステータスに関する説明情報を提供します。 
+**ResponseMessage**要素は、要求内の1つのエンティティの応答状態に関する説明情報を提供します。 
   
 ```xml
 <ResponseMessage ResponseClass="">
@@ -33,7 +33,7 @@ ms.locfileid: "19833191"
 ```
 
  **ResponseMessageType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -41,37 +41,37 @@ ms.locfileid: "19833191"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**ResponseClass** <br/> | 応答のステータスを表します。 <br/><br/>次の値は、この属性の有効です。  <br/><br/>-成功  <br/>-警告  <br/>-エラー  <br/> |
+|**ResponseClass** <br/> | 応答の状態を表します。 <br/><br/>この属性には、次の値が有効です。  <br/><br/>-成功  <br/>-Warning  <br/>-エラー  <br/> |
    
 #### <a name="responseclass-attribute-values"></a>ResponseClass 属性の値
 
 |**値**|**説明**|
 |:-----|:-----|
-|成功  <br/> |満了する要求をについて説明します。  <br/> |
-|警告  <br/> | 処理されなかった要求をについて説明します。 警告は、要求内のアイテムを処理し、それ以降の項目を処理できませんでした、エラーが発生した場合に返される場合があります。 <br/><br/>以下は、警告の原因が考えられます。  <br/><br/>-Exchange ストアは、バッチの実行中にオフラインです。  <br/>-Active Directory ディレクトリ サービスは、オフラインです。  <br/>-メールボックスを移動します。  <br/>-メッセージ データベース (MDB) は、オフラインです。  <br/>-パスワードの有効期限が切れています。  <br/>クォータを超えています。  <br/> |
-|エラー  <br/> | 満たせない要求をについて説明します。 <br/><br/>以下は、エラーの原因が考えられます。  <br/><br/>-無効な属性または要素  <br/>属性または要素が範囲外です  <br/>-不明なタグ  <br/>属性または要素のコンテキストでは無効です  <br/>の任意のクライアントから不正アクセスしようと  <br/>の有効なクライアント側の呼び出しに応答サーバー側の障害  <br/> <br/> エラーに関する情報は、 [ResponseCode](responsecode.md)および[メッセージ テキスト](messagetext.md)の要素を参照しています。  <br/> |
+|Success  <br/> |満たされる要求を記述します。  <br/> |
+|警告  <br/> | 処理されなかった要求を示します。 要求内のアイテムが処理され、その後のアイテムを処理できなかったときにエラーが発生した場合は、警告が返されることがあります。 <br/><br/>以下に、次のような警告の原因を示します。  <br/><br/>-バッチ処理中に Exchange ストアがオフラインになります。  <br/>-Active Directory ディレクトリサービスがオフラインになっています。  <br/>-メールボックスは移動されます。  <br/>-メッセージデータベース (MDB) はオフラインです。  <br/>-パスワードの有効期限が切れています。  <br/>-クォータが上限を超えています。  <br/> |
+|Error  <br/> | 満たされない要求を記述します。 <br/><br/>エラーの原因として、次のようなものが考えられます。  <br/><br/>-無効な属性または要素  <br/>-属性または要素が範囲外です  <br/>-不明なタグ  <br/>-属性または要素がコンテキスト内で有効ではありません  <br/>-クライアントによる権限のないアクセス試行  <br/>-有効なクライアント側の呼び出しに応答した場合のサーバー側エラー  <br/> <br/> エラーに関する情報については、応答[secの](responsecode.md)要素と[messagetext](messagetext.md)要素を参照してください。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[MessageText](messagetext.md) <br/> |応答のステータスの説明を提供します。  <br/> |
-|[ResponseCode](responsecode.md) <br/> |要求で発生した特定のエラーを識別するエラー コードを提供します。  <br/> |
-|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在使用されていない将来の使用に予約されているとします。 0 の値が含まれています。  <br/> |
-|[MessageXml](messagexml.md) <br/> |追加のエラー応答情報を提供します。  <br/> |
+|[MessageText](messagetext.md) <br/> |応答の状態を説明するテキストを提供します。  <br/> |
+|[ResponseCode](responsecode.md) <br/> |要求で発生した特定のエラーを識別するエラーコードを提供します。  <br/> |
+|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在未使用で、今後の使用のために予約されています。 このプロパティには0の値が含まれています。  <br/> |
+|[MessageXml](messagexml.md) <br/> |エラー応答に関する追加情報を提供します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FreeBusyResponse](freebusyresponse.md) <br/> |1 つのメールボックスのユーザーの空き時間情報が含まれています。 <br/> <br/> この要素への XPath 2.0 の式は、次のようにします。 <br/> <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray[i]/FreeBusyResponse` <br/> |
-|[SuggestionsResponse](suggestionsresponse.md) <br/> |会議の提案の要求の応答の情報と提案のデータが含まれています。  <br/><br/> この要素への XPath 2.0 の式は、次のようにします。<br/>  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse` <br/> |
-|[GetUserOofSettingsResponse](getuseroofsettingsresponse.md) <br/> |応答結果とユーザーの不在時の設定が含まれています。  <br/><br/> この要素への XPath 2.0 の式は、次のようにします。  <br/><br/>  `/GetUserOofSettingsResponse` <br/> |
-|[SetUserOofSettingsResponse](setuseroofsettingsresponse.md) <br/> |実行しようとした[SetUserOofSettingsRequest](setuseroofsettingsrequest.md)メッセージの結果が含まれています。 <br/> <br/> この要素への XPath 2.0 の式は、次のようにします。  <br/><br/>  `/SetUserOofSettingsResponse` <br/> |
+|[FreeBusyResponse](freebusyresponse.md) <br/> |1つのメールボックスユーザーの空き時間情報が含まれています。 <br/> <br/> この要素の XPath 2.0 式を次に示します。 <br/> <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray[i]/FreeBusyResponse` <br/> |
+|[SuggestionsResponse](suggestionsresponse.md) <br/> |要求された会議の提案の応答情報と提案データを格納します。  <br/><br/> この要素の XPath 2.0 式を次に示します。<br/>  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse` <br/> |
+|[GetUserOofSettingsResponse](getuseroofsettingsresponse.md) <br/> |応答結果とユーザーの OOF 設定が含まれます。  <br/><br/> この要素の XPath 2.0 式を次に示します。  <br/><br/>  `/GetUserOofSettingsResponse` <br/> |
+|[SetUserOofSettingsResponse](setuseroofsettingsresponse.md) <br/> |試行された[Setuseroofsettingsrequest](setuseroofsettingsrequest.md)メッセージの結果を格納します。 <br/> <br/> この要素の XPath 2.0 式を次に示します。  <br/><br/>  `/SetUserOofSettingsResponse` <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**ResponseMessageType**型は、Exchange Web サービスの応答をすべてに共通です。 **ResponseMessageType**型は、次の複合型によって拡張されました。 
+**Responsemessagetype**の種類は、すべての Exchange Web サービスの応答に共通です。 **Responsemessagetype**型は、次の複合型によって拡張されます。 
   
 - **ApplyConversationActionResponseMessageType**
     
@@ -89,13 +89,13 @@ ms.locfileid: "19833191"
     
 - **FolderInfoResponseMessageType**
     
-- **GetEventsResponseMessageType**
+- **Getイベント Responsemessagetype**
     
 - **ItemInfoResponseMessageType**
     
 - **ResolveNamesResponseMessageType**
     
-- **SubscribeResponseMessageType**
+- **オンラインでのお電話**
     
 - **SendNotificationResponseMessageType**
     
@@ -103,25 +103,25 @@ ms.locfileid: "19833191"
     
 - **SyncFolderItemsResponseMessageType**
     
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
   
 ### <a name="version-differences"></a>バージョンの相違点
 
-**ApplyConversationActionResponseMessage**および**DeleteItemResponseMessageType**の種類は、Exchange のビルド 15.00.0986.00 で導入されました。 
+**ApplyConversationActionResponseMessage**および**Deleteitemresponsemessagetype**の種類は、Exchange build 15.00.0986.00 で導入されました。 
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [GetUserAvailability 操作](getuseravailability-operation.md)
 - [SetUserOofSettings 操作](setuseroofsettings-operation.md)
 - [GetUserOofSettings 操作](getuseroofsettings-operation.md)
-- [ユーザーの状態を取得します。](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [ユーザーの空き時間情報の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

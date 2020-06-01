@@ -1,5 +1,5 @@
 ---
-title: 発生 (タイム ゾーンの切り替え)
+title: 発生 (タイムゾーンの切り替え)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 5c1142b1-c51f-42e1-bbb2-57e00cad0fdb
-description: 見つかった要素では、タイム ゾーンの切り替えが発生する月の週の日の発生を表します。
-ms.openlocfilehash: bc5160480cc6881bb9d724aa61323f5717d1f2fa
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: オカレンスリンク要素は、タイムゾーンの切り替えが行われる月の曜日の発生を表します。
+ms.openlocfilehash: 846f6b22f43bcda07b9408d768d0845a5acfe668
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832636"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467978"
 ---
-# <a name="occurrence-time-zone-transition"></a>発生 (タイム ゾーンの切り替え)
+# <a name="occurrence-time-zone-transition"></a>発生 (タイムゾーンの切り替え)
 
-**見つかった**要素では、タイム ゾーンの切り替えが発生する月の週の日の発生を表します。 
+**オカレンスリンク**要素は、タイムゾーンの切り替えが行われる月の曜日の発生を表します。 
   
 ```xml
 <Occurrence/>
@@ -29,7 +29,7 @@ ms.locfileid: "19832636"
 
 **int**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -45,37 +45,37 @@ ms.locfileid: "19832636"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[RecurringDayTransition](recurringdaytransition.md) <br/> |毎年同じ日に発生するタイム ゾーンの移行を表します。  <br/> |
+|[RecurringDayTransition](recurringdaytransition.md) <br/> |毎年同じ日に発生するタイムゾーンの切り替えを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、タイム ゾーンの切り替えが発生する月の週の日の発生を表す整数です。 次の表は、可能な値を一覧します。
+Text 値は、タイムゾーンの切り替えが行われる月の曜日の発生を表す整数です。 次の表に、使用可能な値を示します。
   
 |**値**|**説明**|
 |:-----|:-----|
-|1  <br/> |指定した曜日、月の最初から最初に出現します。  <br/> |
-|2  <br/> |指定した曜日、月の最初からの 2 つ目の発生。  <br/> |
-|3  <br/> |指定した曜日、月の最初からの 3 つ目の発生。  <br/> |
-|4  <br/> |指定した曜日、月の最初からの 4 番目の発生。  <br/> |
-|-1  <br/> |指定した曜日、月の最後から最初に出現します。  <br/> |
-|-2  <br/> |指定した曜日、月の最後からの 2 つ目の発生。  <br/> |
-|-3  <br/> |指定した曜日、月の最後からの 3 つ目の発生。  <br/> |
-|-4  <br/> |指定した曜日、月の最後からの 4 番目の発生。  <br/> |
+|1-d  <br/> |月の最初から指定された曜日の最初の出現。  <br/> |
+|pbm-2  <br/> |月の最初から指定された曜日の2回目の出現。  <br/> |
+|1/3  <br/> |月の最初から指定された曜日の3番目の出現。  <br/> |
+|4   <br/> |月の最初の曜日の、指定された曜日の4番目の出現。  <br/> |
+|-1  <br/> |月の終わりから、指定された曜日の最初の出現。  <br/> |
+|-2  <br/> |月の終わりから、指定された曜日の2回目の出現。  <br/> |
+|-3  <br/> |月の終わりから、指定された曜日の3番目の出現。  <br/> |
+|-4  <br/> |月の終わりから、指定された曜日の4番目の出現。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

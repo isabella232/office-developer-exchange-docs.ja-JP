@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ad333be3-1bd9-4e4a-a17d-9fcf7131cf76
-description: TokenValue 要素は、エンコードされたクライアントのアクセス トークンを指定します。
-ms.openlocfilehash: 9815a0c4f96cf0370c0fd190b9d9e9e90fb77e07
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: TokenValue 要素は、エンコードされたクライアントアクセストークンを指定します。
+ms.openlocfilehash: 7aa544cb8b63face7cd41054eebb55b0ed84b35d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839718"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467859"
 ---
 # <a name="tokenvalue"></a>TokenValue
 
-**TokenValue**要素は、エンコードされたクライアントのアクセス トークンを指定します。 
+**Tokenvalue**要素は、エンコードされたクライアントアクセストークンを指定します。 
   
 ```XML
 <TokenValue></TokenValue>
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,21 +42,21 @@ ms.locfileid: "19839718"
   
 ## <a name="text-value"></a>テキスト値
 
-**TokenValue**要素のテキスト値は、エンコードされたクライアントのアクセス トークンです。 
+**Tokenvalue**要素のテキスト値は、エンコードされたクライアントアクセストークンです。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

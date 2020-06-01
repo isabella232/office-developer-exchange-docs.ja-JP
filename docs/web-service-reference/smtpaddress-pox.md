@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 984ccd97-c337-47b6-ba42-3405a8b55a71
-description: SmtpAddress 要素には、ユーザー用に構成するパブリック フォルダーのメッセージ ストアに割り当てられている SMTP アドレスが含まれています。
-ms.openlocfilehash: 43ebb328e31cdec11412e80b743d4d4393b7960a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: SmtpAddress 要素には、ユーザー用に構成されたパブリックフォルダーメッセージストアに割り当てられた SMTP アドレスが含まれています。
+ms.openlocfilehash: 48703a11fb056967c6c76073c2e928d5f6efa264
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833507"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468643"
 ---
 # <a name="smtpaddress-pox"></a>SmtpAddress (POX)
 
-**SmtpAddress**要素には、ユーザー用に構成するパブリック フォルダーのメッセージ ストアに割り当てられている SMTP アドレスが含まれています。 
+**Smtpaddress**要素には、ユーザー用に構成されたパブリックフォルダーメッセージストアに割り当てられた SMTP アドレスが含まれています。 
   
-- [(POX) を自動検出](autodiscover-pox.md)
+- [自動検出 (POX)](autodiscover-pox.md)
   
 - [応答 (POX)](response-pox.md)
   
@@ -32,7 +32,7 @@ ms.locfileid: "19833507"
 <SmtpAddress/>
 ```
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -48,17 +48,17 @@ ms.locfileid: "19833507"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[PublicFolderInformation (POX)](publicfolderinformation-pox.md) <br/> |クライアント ユーザーのパブリック フォルダー情報を検出する自動検出要求の送信に使用できる情報が含まれています。  <br/> |
+|[PublicFolderInformation (POX)](publicfolderinformation-pox.md) <br/> |クライアントが、ユーザーのパブリックフォルダー情報を検出するために自動検出要求を送信するために使用できる情報が含まれています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、ユーザー用に構成するパブリック フォルダー ストアに割り当てられている SMTP アドレスを表します。 この SMTP アドレスは、パブリック フォルダーの設定を検出する自動検出要求の[EMailAddress (POX)](emailaddress-pox.md)要素で使用できます。 
+Text 値は、ユーザーに対して構成されているパブリックフォルダーストアに割り当てられた SMTP アドレスを表します。 この SMTP アドレスは、自動検出要求の[EMailAddress (POX)](emailaddress-pox.md)要素で、パブリックフォルダーの設定を検出するために使用できます。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**SmtpAddress**要素は、 **PublicFolderInformation**要素の必須の子要素です。 
+**Smtpaddress**要素は、 **publicfolderinformation**要素の必須の子要素です。 
   
 ## <a name="see-also"></a>関連項目
 
-- [交換の POX の自動検出の XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+- [Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
 

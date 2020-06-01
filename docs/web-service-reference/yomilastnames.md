@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 893409f1-fe76-40a4-ad7b-8a6bbc2bce12
-description: YomiLastNames 要素は、ルビ日本語姓と名の配列と関連付けられているペルソナにそのソースの帰属の識別子を指定します。
-ms.openlocfilehash: 8b413c20b50e4ccd6b4dc427e70b921ad34c7949
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: YomiLastNames 要素は、関連付けられているペルソナの attributions のふりがな (姓とそのソースの識別子) の配列を指定します。
+ms.openlocfilehash: bc0ffcd796a29a24be3edbc7129333cc332596b6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840059"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44467089"
 ---
 # <a name="yomilastnames"></a>YomiLastNames
 
-**YomiLastNames**要素は、ルビ日本語姓と名の配列と関連付けられているペルソナにそのソースの帰属の識別子を指定します。 
+**YomiLastNames**要素は、関連付けられているペルソナの attributions のふりがな (姓とそのソースの識別子) の配列を指定します。 
   
 ```XML
 <YomiLastNames>
@@ -26,7 +26,7 @@ ms.locfileid: "19840059"
 ```
 
  **ArrayOfStringAttributedValuesType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,21 +40,21 @@ ms.locfileid: "19840059"
   
 ### <a name="parent-elements"></a>親要素
 
-[ペルソナ](persona.md)
+[ユーザー](persona.md)
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

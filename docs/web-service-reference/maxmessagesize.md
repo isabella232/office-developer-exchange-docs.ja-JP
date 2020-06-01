@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: bb98ac72-9409-4332-81bb-ee3bebb9a00e
-description: MaxMessageSize 要素は、受信者が受け入れることができるメッセージの最大サイズを表します。
-ms.openlocfilehash: 13a5679a03420655356269a7e8b5e22950724164
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: MaxMessageSize 要素は、受信者が受け付けることができる最大メッセージサイズを表します。
+ms.openlocfilehash: 727eed38a129800b7d38aa49c41cdacfa13e7a36
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832383"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468412"
 ---
 # <a name="maxmessagesize"></a>MaxMessageSize
 
-**MaxMessageSize**要素は、受信者が受け入れることができるメッセージの最大サイズを表します。 
+**Maxmessagesize**要素は、受信者が受け付けることができる最大メッセージサイズを表します。 
   
 ```XML
 <MaxMessageSize/>
 ```
 
  **int**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,29 +44,29 @@ ms.locfileid: "19832383"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[メール ヒント](mailtips.md) <br/> |さまざまな種類のメール ヒントの値を表します。  <br/> |
-|[MailTipsConfiguration (MailTipsServiceConfiguration)](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |メール ヒント サービスのサービスの構成情報が含まれています。  <br/> |
+|[メールヒント](mailtips.md) <br/> |さまざまな種類のメールヒントの値を表します。  <br/> |
+|[Mailヒント構成 (MailTipsServiceConfiguration)](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |メールヒントサービスのサービス構成情報が保存されています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、受信者のメッセージの最大サイズを表す整数を受け入れることができます。 キロバイトまたはメガバイト単位でこの値を測定することができます。
+テキスト値は、受信者が受け付けることができる最大メッセージサイズを表す整数型 (integer) の値です。 この値は、キロバイトまたはメガバイト単位で測定できます。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: befc70fd-51cb-4258-884c-80c9050f0e82
-description: メールボックス要素では、メールが有効な Active Directory のオブジェクトを識別します。
-ms.openlocfilehash: e9fa21f3678249a9ac13d567b88beaf0177f989f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Mailbox 要素は、メールが有効な Active Directory オブジェクトを識別します。
+ms.openlocfilehash: 284c3ff6f9fece57611169a4ec41eeaa273c6ad3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832258"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468202"
 ---
 # <a name="mailbox"></a>メールボックス
 
-**メールボックス**要素では、メールが有効な Active Directory のオブジェクトを識別します。 
+**Mailbox**要素は、メールが有効な Active Directory オブジェクトを識別します。 
   
 ```XML
 <Mailbox>
@@ -35,7 +35,7 @@ ms.locfileid: "19832258"
 
 **EmailAddressType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -45,67 +45,67 @@ ms.locfileid: "19832258"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[名 (EmailAddressType)](name-emailaddresstype.md) <br/> |メールボックス ユーザーの名前を定義します。 この要素はオプションです。  <br/> |
-|[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |メールボックスのユーザーの簡易メール転送プロトコル (SMTP) アドレスを定義します。 この要素はオプションです。  <br/> |
-|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |メールボックスに使用されるルーティングを定義します。 既定値は、SMTP です。 この要素はオプションです。  <br/> |
-|[MailboxType](mailboxtype.md) <br/> |メールボックスのユーザーのメールボックスの種類を定義します。 この要素はオプションです。  <br/> |
-|[ItemId](itemid.md) <br/> |ユーザーのアドレス帳フォルダーから受信者の連絡先または個人用配布リストの項目の識別子を定義します。 この要素はオプションです。  <br/> |
+|[Name (EmailAddressType)](name-emailaddresstype.md) <br/> |メールボックスユーザーの名前を定義します。 この要素は省略できます。  <br/> |
+|[EmailAddress (非 Emptystringtype)](emailaddress-nonemptystringtype.md) <br/> |メールボックスユーザーの簡易メール転送プロトコル (SMTP) アドレスを定義します。 この要素は省略できます。  <br/> |
+|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |メールボックスに使用されるルーティングを定義します。 既定値は SMTP です。 この要素は省略できます。  <br/> |
+|[MailboxType](mailboxtype.md) <br/> |メールボックスユーザーのメールボックスの種類を定義します。 この要素は省略できます。  <br/> |
+|[ItemId](itemid.md) <br/> |ユーザーの連絡先フォルダーにある受信者の連絡先またはプライベート配布リストのアイテム識別子を定義します。 この要素は省略できます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ExpandDL](expanddl.md) <br/> |配布リストを展開するための要求を定義します。 <br/> <br/> この要素への XPath 式は、次のようにします。` /ExpandDL ` <br/> |
-|[ToRecipients](torecipients.md) <br/> |アイテムの受信者の配列が含まれています。  <br/> |
-|[CcRecipients](ccrecipients.md) <br/> |メッセージのコピーを受け取る受信者のコレクションを表します。  <br/> |
-|[BccRecipients](bccrecipients.md) <br/> |電子メールのブラインド カーボン コピー (Bcc) を受信する受信者のコレクションを表します。  <br/> |
-|[ReplyTo](replyto.md) <br/> |応答を送信する電子メール アドレスの配列を指定します。  <br/> |
-|[送信者](sender.md) <br/> |アイテムの送信者を識別します。  <br/> |
-|[From](from.md) <br/> |メッセージの送信元アドレスを表します。  <br/> |
+|[ExpandDL](expanddl.md) <br/> |配布リストを展開するための要求を定義します。 <br/> <br/> この要素の XPath 式を次に示します。` /ExpandDL ` <br/> |
+|[ToRecipients](torecipients.md) <br/> |アイテムの受信者の配列を格納します。  <br/> |
+|[CcRecipients](ccrecipients.md) <br/> |メッセージのコピーを受信する受信者のコレクションを表します。  <br/> |
+|[BccRecipients](bccrecipients.md) <br/> |電子メールのブラインドカーボンコピー (Bcc) を受信する受信者のコレクションを表します。  <br/> |
+|[ReplyTo](replyto.md) <br/> |返信が送信される電子メールアドレスの配列を指定します。  <br/> |
+|[Sender](sender.md) <br/> |アイテムの送信者を識別します。  <br/> |
+|[From](from.md) <br/> |メッセージが送信された相手のアドレスを表します。  <br/> |
 |[Organizer](organizer.md) <br/> |会議の開催者を表します。  <br/> |
-|[DistinguishedFolderId](distinguishedfolderid.md) <br/> | Microsoft Exchange Server 2007 の既定のフォルダーを識別します。  <br/><br/>  この要素への XPath 式は、次のように。 <br/> <br/>  `/CreateItem/ParentFolderId/DistinguishedFolderId` <br/>  `/CreateFolder/ParentFolderId/DistinguishedFolderId` <br/> |
-|[解決策](resolution.md) <br/> |解決された 1 つのエンティティが含まれています。  <br/> |
-|[DLExpansion](dlexpansion.md) <br/> |配布リストに含まれているメールボックスの配列が含まれています。  <br/> |
-|[Attendee](attendee.md) <br/> |出席者とリソースの予定表アイテムを表します。  <br/> |
+|[DistinguishedFolderId](distinguishedfolderid.md) <br/> | Microsoft Exchange Server 2007 の既定のフォルダーを識別します。  <br/><br/>  この要素の XPath 式は次のとおりです。 <br/> <br/>  `/CreateItem/ParentFolderId/DistinguishedFolderId` <br/>  `/CreateFolder/ParentFolderId/DistinguishedFolderId` <br/> |
+|[Resolution](resolution.md) <br/> |1つの解決済みエンティティを含みます。  <br/> |
+|[DLExpansion 展開](dlexpansion.md) <br/> |配布リストに含まれているメールボックスの配列を格納します。  <br/> |
+|[出席者](attendee.md) <br/> |予定表アイテムの出席者とリソースを表します。  <br/> |
 |[CreateManagedFolder](createmanagedfolder.md) <br/> |メールボックスに管理フォルダーを追加する要求を定義します。  <br/> |
-|[AddDelegate](adddelegate.md) <br/> |メールボックスに代理人を追加する要求を定義します。  <br/> |
-|[GetDelegate](getdelegate.md) <br/> |メールボックスに代理人についての情報を取得する要求を定義します。  <br/> |
-|[RemoveDelegate](removedelegate.md) <br/> |メールボックスからデリゲートを削除する要求を定義します。  <br/> |
-|[UpdateDelegate](updatedelegate.md) <br/> |メールボックスに代理人を更新する要求を定義します。  <br/> |
-|[ReceivedBy](receivedby.md) <br/> |代理人アクセス シナリオでは、デリゲートをについて説明します。  <br/> |
-|[ReceivedRepresenting](receivedrepresenting.md) <br/> |代理人アクセスのシナリオでプリンシパルについて説明します。  <br/> |
+|[AddDelegate](adddelegate.md) <br/> |メールボックスに代理人を追加するための要求を定義します。  <br/> |
+|[GetDelegate](getdelegate.md) <br/> |メールボックスへの代理人に関する情報を取得する要求を定義します。  <br/> |
+|[RemoveDelegate](removedelegate.md) <br/> |メールボックスから代理人を削除するための要求を定義します。  <br/> |
+|[UpdateDelegate](updatedelegate.md) <br/> |メールボックスの代理人を更新する要求を定義します。  <br/> |
+|[ReceivedBy](receivedby.md) <br/> |代理人アクセスのシナリオでのデリゲートについて説明します。  <br/> |
+|[ReceivedRepresenting](receivedrepresenting.md) <br/> |代理人アクセスシナリオのプリンシパルについて説明します。  <br/> |
 |[メンバー](member-ex15websvcsotherref.md) <br/> |配布リストのメンバーを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)と[アイテム Id](itemid.md)要素は、メールボックスまたは配布リストを識別します。 
+[EmailAddress (非 Emptystringtype)](emailaddress-nonemptystringtype.md)要素と[ItemId](itemid.md)要素は、メールボックスまたは配布リストを識別します。 
 
-[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)の要素では、SMTP アドレスを使用してメールボックスまたは配布リストを識別します。 
+[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)要素は、SMTP アドレスによってメールボックスまたは配布リストを識別します。 
 
-[アイテム Id](itemid.md)要素は、特定のメールボックスに関連付けられている項目の識別子で、メールボックスを識別します。 
+[ItemId](itemid.md)要素は、特定のメールボックスに関連付けられているアイテムの識別子によってメールボックスを識別します。 
 
-[アイテム Id](itemid.md)要素は、配布リスト、またはパブリックの連絡先フォルダーの連絡先にメッセージを送信するのには使用できません。 連絡先パブリック フォルダーの連絡先または配布リストにメッセージを送信しようとしましたがときに、createitem メソッド、UpdateItem、または SendItem 操作で使用される場合は、エラーがスローされます。 SMTP アドレスを取得し、[アイテム Id](itemid.md)の要素ではなく、 [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)の要素を使用してメッセージを送信するには、ExpandDL 操作を使用します。 
+[ItemId](itemid.md)要素を使用して、配布リストまたはパブリック連絡先フォルダー内の連絡先にメッセージを送信することはできません。 CreateItem、UpdateItem、または SendItem 操作で、連絡先パブリックフォルダーの配布リストまたは連絡先にメッセージを送信しようとすると、エラーがスローされます。 ExpandDL 操作を使用して SMTP アドレスを取得してから、 [ItemId](itemid.md)要素ではなく[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)要素を使用してメッセージを送信します。 
   
-[(可用性) のメールボックス](mailbox-availability.md)、別の要素では、可用性の操作に関する情報を提供します。 
+もう1つの要素である[メールボックス (可用性)](mailbox-availability.md)は、可用性の運用に関する情報を提供します。 
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

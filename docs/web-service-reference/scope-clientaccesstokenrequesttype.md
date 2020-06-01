@@ -1,5 +1,5 @@
 ---
-title: スコープ (ClientAccessTokenRequestType)
+title: 範囲 (ClientAccessTokenRequestType)
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0370b1c0-b7e5-46e0-ac11-3fe801709fc8
-description: スコープ (ClientAccessTokenRequestType) の要素では、トークンのスコープを指定します。
-ms.openlocfilehash: 0439b494db7e4e1c097039a81394af9441613555
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Scope (ClientAccessTokenRequestType) 要素は、トークンスコープを指定します。
+ms.openlocfilehash: 99700b032e6971a403f2bc87a6c73a01e53ab2c7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833274"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466949"
 ---
-# <a name="scope-clientaccesstokenrequesttype"></a>スコープ (ClientAccessTokenRequestType)
+# <a name="scope-clientaccesstokenrequesttype"></a>範囲 (ClientAccessTokenRequestType)
 
-**スコープ (ClientAccessTokenRequestType)** の要素では、トークンのスコープを指定します。 
+**Scope (ClientAccessTokenRequestType)** 要素は、トークンスコープを指定します。 
   
 ```XML
 <Scope/>
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,22 +42,22 @@ ms.locfileid: "19833274"
   
 ## <a name="text-value"></a>テキスト値
 
-**スコープ (ClientAccessTokenRequestType)** 要素のテキスト値は、トークンのスコープです。 
+**Scope (ClientAccessTokenRequestType)** 要素のテキスト値は、トークンのスコープです。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -66,5 +66,5 @@ ms.locfileid: "19833274"
 [TokenRequest](tokenrequest.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

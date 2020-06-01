@@ -1,5 +1,5 @@
 ---
-title: 並べ替え
+title: SortBy
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3dc4ab23-26b0-42b3-8930-f1c7eefecdeb
-description: 並べ替えの要素には、検索結果の並べ替えに使用されるアイテムのプロパティが含まれています。
-ms.openlocfilehash: 357958e393ba9331d23ee48661f21e2afe00cf01
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: SortBy 要素には、検索結果の並べ替えに使用されるアイテムのプロパティが含まれています。
+ms.openlocfilehash: cf2b1e633bc66e526028078833afade363e4c5e0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833518"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468398"
 ---
-# <a name="sortby"></a>並べ替え
+# <a name="sortby"></a>SortBy
 
-**並べ替え**の要素には、検索結果の並べ替えに使用されるアイテムのプロパティが含まれています。 
+**SortBy**要素には、検索結果の並べ替えに使用されるアイテムのプロパティが含まれています。 
   
 ```XML
 <SortBy Order="">
@@ -27,7 +27,7 @@ ms.locfileid: "19833518"
 ```
 
  **FieldOrderType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -35,29 +35,29 @@ ms.locfileid: "19833518"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|Order  <br/> |**順序**属性のテキスト値は、並べ替え順序です。 **昇順**のテキスト値は、結果を昇順であることを示します。 **降順**のテキスト値は、結果が降順であることを示します。  <br/> |
+|Order  <br/> |**Order**属性のテキスト値は、並べ替えの順序です。 テキスト値が**昇順**の場合は、結果が昇順になることを示します。 テキスト値が**降順**の場合は、結果が降順であることを示します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
-[FieldURI](fielduri.md) | [IndexedFieldURI](indexedfielduri.md)
+[FieldURI](fielduri.md)  | [IndexedFieldURI](indexedfielduri.md)
   
 ### <a name="parent-elements"></a>親要素
 
 [SearchMailboxes](searchmailboxes.md)
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

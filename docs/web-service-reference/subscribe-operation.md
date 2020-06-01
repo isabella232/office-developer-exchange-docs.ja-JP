@@ -1,5 +1,5 @@
 ---
-title: 操作を購読します。
+title: サブスクライブ操作
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,32 +11,32 @@ api_name:
 api_type:
 - schema
 ms.assetid: f17c3d08-c79e-41f1-ba31-6e41e7aafd87
-description: 購読操作を使用して、クライアント アプリケーションがプッシュまたはプルのいずれかの通知をサブスクライブします。 要求メッセージと応答の構造は、イベント通知の種類によって異なることに注意する必要があります。
-ms.openlocfilehash: f6cacab80c8ca2e505ab63a162a161fcf5de8585
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: サブスクライブ操作は、クライアントアプリケーションに対して、プッシュまたはプル通知のどちらかをサブスクライブするために使用されます。 要求メッセージと応答の構造は、イベント通知の種類によって異なることに注意することが重要です。
+ms.openlocfilehash: c40e0e434f698c6535ff5d03fd4d45a453959dd6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833619"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44467047"
 ---
-# <a name="subscribe-operation"></a>操作を購読します。
+# <a name="subscribe-operation"></a>サブスクライブ操作
 
-購読操作を使用して、クライアント アプリケーションがプッシュまたはプルのいずれかの通知をサブスクライブします。 要求メッセージと応答の構造は、イベント通知の種類によって異なることに注意する必要があります。 
+サブスクライブ操作は、クライアントアプリケーションに対して、プッシュまたはプル通知のどちらかをサブスクライブするために使用されます。 要求メッセージと応答の構造は、イベント通知の種類によって異なることに注意することが重要です。 
   
-## <a name="pull-subscription-subscribe-request-example"></a>プル サブスクリプションがサブスクライブ要求の例
+## <a name="pull-subscription-subscribe-request-example"></a>プルサブスクリプションのサブスクライブ要求の例
 
 ### <a name="description"></a>説明
 
-次のコード例では、プル サブスクリプションのイベント通知にサブスクライブする方法を示します。 サブスクリプションは、新しいメールが受信トレイに追加された場合、受信トレイからアイテムが削除される場合、クライアント アプリケーションを通知します。 クライアントが 10 分以内のイベントに関する情報を要求しない場合、サブスクリプションがタイムアウトします。 サブスクリプションが期限切れになった場合は、引き続き通知を要求する新しいサブスクリプションを確立する必要があります。
+次のコード例は、プルイベント通知サブスクリプションをサブスクライブする方法を示しています。 新しいメールが受信トレイに追加された場合、および受信トレイからアイテムが削除された場合、サブスクリプションはクライアントアプリケーションに通知します。 クライアントが10分以内にイベントに関する情報を要求しない場合、サブスクリプションはタイムアウトになります。 サブスクリプションの有効期限が切れた場合は、通知を引き続き要求するために、新しいサブスクリプションを確立する必要があります。
   
 ### <a name="code"></a>コード
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <Subscribe xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <Subscribe xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <PullSubscriptionRequest>
         <t:FolderIds>
           <t:DistinguishedFolderId Id="inbox"/>
@@ -52,11 +52,11 @@ ms.locfileid: "19833619"
 </soap:Envelope>
 ```
 
-### <a name="pull-subscription-subscribe-request-elements"></a>プル サブスクリプション要求の要素を購読します。
+### <a name="pull-subscription-subscribe-request-elements"></a>プルサブスクリプションサブスクライブ要求要素
 
-次の要素は、要求で使用されます。
+要求では、次の要素が使用されます。
   
-- [購読](subscribe.md)
+- [登録](subscribe.md)
     
 - [PullSubscriptionRequest](pullsubscriptionrequest.md)
     
@@ -70,13 +70,13 @@ ms.locfileid: "19833619"
     
 - [Timeout](timeout.md)
     
-Subscribe 操作の要求メッセージには、他のオプションを検索するには、スキーマの階層構造を表示します。 [PullSubscriptionRequest](pullsubscriptionrequest.md)要素から開始します。 
+Subscribe 操作の要求メッセージに関するその他のオプションについては、スキーマ階層を参照してください。 [PullSubscriptionRequest](pullsubscriptionrequest.md)要素から開始します。 
   
-## <a name="successful-pull-subscription-subscribe-response-example"></a>正常な応答例のプル サブスクリプションを購読
+## <a name="successful-pull-subscription-subscribe-response-example"></a>成功したプルサブスクリプションサブスクライブ応答の例
 
 ### <a name="description"></a>説明
 
-成功したプル サブスクリプション応答の例を次に示します。 応答には、サブスクリプション id、サブスクリプションに関連付けられているイベントの配列を取得するために使用されるウォーターマークが含まれています。 サブスクリプションの識別子はクライアント サブスクリプション購読を中止するも使用されます。
+次の例は、成功したプルサブスクリプション応答を示しています。 応答には、サブスクリプションに関連付けられているイベントの配列を取得するために使用されるサブスクリプション識別子とウォーターマークが含まれています。 サブスクリプション識別子は、サブスクリプションからクライアントの登録を解除するためにも使用されます。
   
 ### <a name="code"></a>コード
 
@@ -87,12 +87,12 @@ Subscribe 操作の要求メッセージには、他のオプションを検索�
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="628" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <SubscribeResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                       xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <SubscribeResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                       xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:SubscribeResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -105,9 +105,9 @@ Subscribe 操作の要求メッセージには、他のオプションを検索�
 </soap:Envelope>
 ```
 
-### <a name="pull-subscription-subscribe-response-elements"></a>プル サブスクリプションがサブスクライブの応答の要素
+### <a name="pull-subscription-subscribe-response-elements"></a>プルサブスクリプションのサブスクライブ応答要素
 
-次の要素は、応答で使用されます。
+応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -115,19 +115,19 @@ Subscribe 操作の要求メッセージには、他のオプションを検索�
     
 - [ResponseMessages](responsemessages.md)
     
-- [SubscribeResponseMessage](subscriberesponsemessage.md)
+- [メッセージの表示](subscriberesponsemessage.md)
     
 - [ResponseCode](responsecode.md)
     
-- [サブスクリプション Id (GetEvents)](subscriptionid-getevents.md)
+- [SubscriptionId (GetEvents)](subscriptionid-getevents.md)
     
-- [透かし](watermark.md)
+- [Watermark](watermark.md)
     
-## <a name="pull-subscription-subscribe-error-response-example"></a>プル サブスクリプションの購読エラー応答の例
+## <a name="pull-subscription-subscribe-error-response-example"></a>プルサブスクリプションサブスクライブエラー応答の例
 
 ### <a name="description"></a>説明
 
-Subscribe 要求に対してエラー応答の例を次に示します。 代理人アクセスを使用して通知をサブスクライブしようとしてエラーが発生します。
+次の例は、Subscribe 要求に対するエラー応答を示しています。 このエラーは、代理人アクセスを使用して通知をサブスクライブしようとした場合に発生します。
   
 ### <a name="code"></a>コード
 
@@ -138,12 +138,12 @@ Subscribe 要求に対してエラー応答の例を次に示します。 代理
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <SubscribeResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                       xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <SubscribeResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                       xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:SubscribeResponseMessage ResponseClass="Error">
           <m:MessageText>Subscriptions are not supported for delegate user access.</m:MessageText>
@@ -156,7 +156,7 @@ Subscribe 要求に対してエラー応答の例を次に示します。 代理
 </soap:Envelope>
 ```
 
-### <a name="pull-subscription-error-response-elements"></a>プル サブスクリプションのエラー応答の要素
+### <a name="pull-subscription-error-response-elements"></a>プルサブスクリプションエラー応答要素
 
 エラー応答では、次の要素が使用されます。
   
@@ -166,7 +166,7 @@ Subscribe 要求に対してエラー応答の例を次に示します。 代理
     
 - [ResponseMessages](responsemessages.md)
     
-- [SubscribeResponseMessage](subscriberesponsemessage.md)
+- [メッセージの表示](subscriberesponsemessage.md)
     
 - [MessageText](messagetext.md)
     
@@ -174,26 +174,26 @@ Subscribe 要求に対してエラー応答の例を次に示します。 代理
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-## <a name="push-subscription-request-example"></a>プッシュ サブスクリプション要求の例
+## <a name="push-subscription-request-example"></a>プッシュサブスクリプション要求の例
 
 ### <a name="description"></a>説明
 
-次のコード例では、プッシュ サブスクリプションのイベント通知にサブスクライブする方法を示します。 要求は、フォルダーを監視するため、イベントを監視するのには、状態通知の頻度およびクライアントのプッシュ通知をリッスンする Web サービスの URL の種類を識別します。
+次のコード例は、プッシュイベント通知サブスクリプションをサブスクライブする方法を示しています。 要求は、監視するフォルダー、監視するイベントの種類、状態通知の頻度、およびプッシュ通知を待機するクライアント Web サービスの URL を識別します。
   
 ### <a name="code"></a>コード
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
     <Subscribe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <PushSubscriptionRequest xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-        <FolderIds xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+      <PushSubscriptionRequest xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+        <FolderIds xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <DistinguishedFolderId Id="inbox" />
         </FolderIds>
-        <EventTypes xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <EventTypes xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <EventType>NewMailEvent</EventType>
           <EventType>CopiedEvent</EventType>
           <EventType>CreatedEvent</EventType>
@@ -201,8 +201,8 @@ Subscribe 要求に対してエラー応答の例を次に示します。 代理
           <EventType>ModifiedEvent</EventType>
           <EventType>MovedEvent</EventType>
         </EventTypes>
-        <StatusFrequency xmlns="http://schemas.microsoft.com/exchange/services/2006/types">1</StatusFrequency>
-        <URL xmlns="http://schemas.microsoft.com/exchange/services/2006/types">http://clientWebService/Service.asmx</URL>
+        <StatusFrequency xmlns="https://schemas.microsoft.com/exchange/services/2006/types">1</StatusFrequency>
+        <URL xmlns="https://schemas.microsoft.com/exchange/services/2006/types">http://clientWebService/Service.asmx</URL>
       </PushSubscriptionRequest>
     </Subscribe>
   </soap:Body>
@@ -211,15 +211,15 @@ Subscribe 要求に対してエラー応答の例を次に示します。 代理
 
 ### <a name="comments"></a>コメント
 
-クライアント Web サービスは、プッシュ通知要求をサブスクライブする前に設定する必要がありますが送信されます。それ以外の場合、最初の通知は有効なエンドポイントに送信して、プッシュ通知は失敗します。 詳細については、[プッシュ通知のサンプル アプリケーション](http://msdn.microsoft.com/library/db1f8523-fa44-483f-bdb6-ab5939b52eee%28Office.15%29.aspx)を参照してください。
+プッシュ通知サブスクライブ要求が送信される前に、クライアント Web サービスがセットアップされている必要があります。それ以外の場合、最初の通知は有効なエンドポイントに送信されず、プッシュ通知は失敗します。 詳細については、「[プッシュ通知のサンプルアプリケーション](https://msdn.microsoft.com/library/db1f8523-fa44-483f-bdb6-ab5939b52eee%28Office.15%29.aspx)」を参照してください。
   
-新しい[サブスクリプション Id (GetEvents)](subscriptionid-getevents.md)は、サブスクライブするときに作成されます。 以前のサブスクリプションの透かしを使用して、以前のサブスクリプションが終了した時点で再度のサブスクライブします。 
+再度サブスクライブすると、新しい[SubscriptionId (GetEvents)](subscriptionid-getevents.md)が作成されます。 以前のサブスクリプションのウォーターマークを使用して、前のサブスクリプションが終了した時点でサブスクライブを再度行います。 
   
-### <a name="push-subscription-request-elements"></a>プッシュ サブスクリプション要求の要素
+### <a name="push-subscription-request-elements"></a>プッシュサブスクリプションの要求要素
 
-次の要素は、要求で使用されます。
+要求では、次の要素が使用されます。
   
-- [購読](subscribe.md)
+- [登録](subscribe.md)
     
 - [PushSubscriptionRequest](pushsubscriptionrequest.md)
     
@@ -233,13 +233,13 @@ Subscribe 要求に対してエラー応答の例を次に示します。 代理
     
 - [StatusFrequency](statusfrequency.md)
     
-- [Url](url-ex15websvcsotherref.md)
+- [.Url](url-ex15websvcsotherref.md)
     
-## <a name="successful-push-subscription-response-example"></a>成功したプッシュ サブスクリプション応答の例
+## <a name="successful-push-subscription-response-example"></a>成功したプッシュサブスクリプション応答の例
 
 ### <a name="description"></a>説明
 
-成功したプッシュ サブスクリプション応答の例を次に示します。 
+次の例は、成功したプッシュサブスクリプション応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -250,12 +250,12 @@ Subscribe 要求に対してエラー応答の例を次に示します。 代理
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="628" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <SubscribeResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                       xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <SubscribeResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                       xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseMessages>
         <SubscribeResponseMessage ResponseClass="Success">
           <ResponseCode>NoError</ResponseCode>
@@ -268,9 +268,9 @@ Subscribe 要求に対してエラー応答の例を次に示します。 代理
 </soap:Envelope>
 ```
 
-### <a name="push-subscription-response-elements"></a>プッシュ サブスクリプション応答の要素
+### <a name="push-subscription-response-elements"></a>プッシュサブスクリプション応答要素
 
-次の要素は、応答で使用されます。
+応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -278,13 +278,13 @@ Subscribe 要求に対してエラー応答の例を次に示します。 代理
     
 - [ResponseMessages](responsemessages.md)
     
-- [SubscribeResponseMessage](subscriberesponsemessage.md)
+- [メッセージの表示](subscriberesponsemessage.md)
     
 - [ResponseCode](responsecode.md)
     
-- [サブスクリプション Id (GetEvents)](subscriptionid-getevents.md)
+- [SubscriptionId (GetEvents)](subscriptionid-getevents.md)
     
-- [透かし](watermark.md)
+- [Watermark](watermark.md)
     
 ## <a name="see-also"></a>関連項目
 
@@ -295,7 +295,7 @@ Subscribe 要求に対してエラー応答の例を次に示します。 代理
 [GetEvents 操作](getevents-operation.md)
 
 
-[プル サブスクリプションを使用します。](http://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx)
+[プルサブスクリプションの使用](https://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx)
   
-[プッシュ通知のサンプル アプリケーション](http://msdn.microsoft.com/library/db1f8523-fa44-483f-bdb6-ab5939b52eee%28Office.15%29.aspx)
+[プッシュ通知のサンプル アプリケーション](https://msdn.microsoft.com/library/db1f8523-fa44-483f-bdb6-ab5939b52eee%28Office.15%29.aspx)
 

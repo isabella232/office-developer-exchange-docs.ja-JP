@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 97e4b71e-f45c-4bdb-80f9-805934916c0f
-description: SubmitTime 要素は、サーバーにあるメッセージが送信された時刻を表します。
-ms.openlocfilehash: 3f19e2ac14b412ef8d1ab59eb069f0223cf782ac
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: SubmitTime 要素は、メッセージがサーバーに送信された時刻を表します。
+ms.openlocfilehash: e4409d962988ee308e0c0b461f9448ef68067fe8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833617"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467054"
 ---
 # <a name="submittime"></a>SubmitTime
 
-**SubmitTime**要素は、サーバーにあるメッセージが送信された時刻を表します。 
+**Submittime**要素は、メッセージがサーバーに送信された時刻を表します。 
   
 ```XML
 <SubmitTime/>
 ```
 
  **dateTime**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,24 +44,24 @@ ms.locfileid: "19833617"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[MessageTrackingReport](messagetrackingreport.md) <br/> |[GetMessageTrackingReport 操作](getmessagetrackingreport-operation.md)で返される 1 つのメッセージが含まれています。  <br/> |
+|[および search-messagetrackingreport](messagetrackingreport.md) <br/> |[Getmessagetrackingreport 操作](getmessagetrackingreport-operation.md)で返される1つのメッセージを格納します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-日付と時刻を表すテキスト値は、この要素を使用する場合に必要です。
+この要素を使用する場合は、日付/時刻を表すテキスト値が必要です。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -70,5 +70,5 @@ ms.locfileid: "19833617"
 [GetMessageTrackingReport 操作](getmessagetrackingreport-operation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

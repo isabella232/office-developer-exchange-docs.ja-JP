@@ -11,19 +11,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: 917474e2-a426-4166-b825-53783a41dad4
-description: StatusFrequency 要素は、分単位、サーバーの再試行が行わ、タイムアウトの最大値を表します。
-ms.openlocfilehash: 402f8978c0ec6b377dfa020f23595c8954509a07
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: StatusFrequency 要素は、サーバーによって再試行が試行される最大タイムアウト時間 (分単位) を表します。
+ms.openlocfilehash: db14ecfd54584188b3da16bb369db6c8089c70f4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833589"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44468244"
 ---
 # <a name="statusfrequency"></a>StatusFrequency
 
-**StatusFrequency**要素は、分単位、サーバーの再試行が行わ、タイムアウトの最大値を表します。 
+**Statusfrequency**要素は、サーバーによって再試行が試行される最大タイムアウト時間 (分単位) を表します。 
   
-[購読](subscribe.md)
+[登録](subscribe.md)
   
 [PushSubscriptionRequest](pushsubscriptionrequest.md)
   
@@ -34,7 +34,7 @@ ms.locfileid: "19833589"
 ```
 
  **SubscriptionStatusFrequencyType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -50,39 +50,39 @@ ms.locfileid: "19833589"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[PushSubscriptionRequest](pushsubscriptionrequest.md) <br/> |プッシュ ベースのイベント通知サブスクリプションをサブスクリプションを表します。  <br/> |
+|[PushSubscriptionRequest](pushsubscriptionrequest.md) <br/> |プッシュベースのイベント通知サブスクリプションのサブスクリプションを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-整数値を表すテキスト値は、この要素を使用する場合に必要です。 この要素の値は、1 から 1440 の範囲です。 この要素はオプションです。 既定値は、30 分です。
+この要素を使用する場合は、整数を表すテキスト値が必要です。 この要素で使用できる値は、1 ~ 1440 の範囲です。 この要素は省略できます。 既定値は 30 分です。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**StatusFrequency**値は、クライアントからのプッシュ通知やステータスの ping に応答を受信しません、プッシュ通知を再試行するのには、サーバーによって使用されます。 サーバーが応答を受信しない場合は、通知の送信を停止する前に、何回か、通知の送信を再試行します。 EWS、既定の再試行間隔は、30 秒でそれ以降の再試行は、常に最後の再試行間隔の時間が 2 倍。 サーバー上の他の負荷のための遅延と、再試行の回数は正確ではないです。 (サーバーは、任意の遅延を検出しなかったと仮定した場合)、デフォルトの**StatusFrequency**値に割り当てられている 30 分以内に再試行の間隔が発生する方法を次の表に示します。 
+**Statusfrequency**値は、プッシュ通知またはクライアントからのステータス ping に対する応答が受信されない場合に、プッシュ通知を再試行するためにサーバーによって使用されます。 サーバーが応答を受信しない場合は、通知の送信を停止する前に、何度か通知の送信を再試行します。 EWS では、既定の再試行間隔は30秒で、その後の再試行は常に最後の再試行間隔の2倍の時間になります。 サーバー上の他の負荷が原因で遅延が発生する可能性があるので、再試行時間は正確ではありません。 次の表に、既定の**Statusfrequency**値 (サーバーで遅延が発生しなかった場合) によって割り当てられた30分間の再試行間隔を示します。 
   
-|**再試行**|**秒**|**時間**|
+|**再試行**|**秒**|**Time**|
 |:-----|:-----|:-----|
-|0  <br/> |0  <br/> |初期同期  <br/> |
-|1  <br/> |30  <br/> |00:30  <br/> |
-|2  <br/> |60  <br/> |01:00  <br/> |
-|3  <br/> |120  <br/> |02:00  <br/> |
-|4  <br/> |240  <br/> |04:00  <br/> |
-|5  <br/> |480  <br/> |08:00  <br/> |
-|6  <br/> |960  <br/> |16:00  <br/> |
-|7  <br/> |1920  <br/> |32:00 - **StatusFrequency**の既定値の 30 を超えると、再試行が送信されません。  <br/> |
+|.0  <br/> |.0  <br/> |初期同期  <br/> |
+|1   <br/> |31  <br/> |00:30  <br/> |
+|pbm-2  <br/> |60  <br/> |01:00  <br/> |
+|1/3  <br/> |120  <br/> |02:00  <br/> |
+|4   <br/> |240  <br/> |04:00  <br/> |
+|5   <br/> |480  <br/> |08:00  <br/> |
+|6   <br/> |960  <br/> |16:00  <br/> |
+|7   <br/> |1920  <br/> |32:00- **Statusfrequency**の既定値である30を超えたため、再試行を送信しない  <br/> |
    
-クライアントを受信しない場合の通知メッセージ、サーバーから**StatusFrequency**で指定されたタイムの 2 倍を超える時間の期間、クライアントはサブスクリプションを再作成するなどアクションを実行する必要があります。 
+**Statusfrequency**で指定された時間を超える期間、クライアントがサーバーからの通知メッセージを受信しない場合、クライアントはサブスクリプションの再作成などの操作を実行する必要があります。 
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -94,5 +94,5 @@ ms.locfileid: "19833589"
   
 [Unsubscribe 操作](unsubscribe-operation.md)
   
-[透かし](watermark.md)
+[Watermark](watermark.md)
 

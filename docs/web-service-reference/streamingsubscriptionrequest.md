@@ -11,19 +11,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: d18f3b60-ebb6-4133-b895-a6ec8942d039
-description: StreamingSubscriptionRequest 要素は、ストリーミングのイベント通知サブスクリプションをサブスクリプションを表します。
-ms.openlocfilehash: 088ec3b8048d70803b4837548ca918c0005d91bb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: StreamingSubscriptionRequest 要素は、ストリーミングイベント通知サブスクリプションへのサブスクリプションを表します。
+ms.openlocfilehash: b469ba7598420189c1db0e2fe676a279390eb6bf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833601"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468230"
 ---
 # <a name="streamingsubscriptionrequest"></a>StreamingSubscriptionRequest
 
-**StreamingSubscriptionRequest**要素は、ストリーミングのイベント通知サブスクリプションをサブスクリプションを表します。 
+**Streamingsubscriptionrequest**要素は、ストリーミングイベント通知サブスクリプションへのサブスクリプションを表します。 
   
-[購読](subscribe.md)
+[登録](subscribe.md)
   
 [StreamingSubscriptionRequest](streamingsubscriptionrequest.md)
   
@@ -35,7 +35,7 @@ ms.locfileid: "19833601"
 ```
 
  **StreamingSubscriptionRequest**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -43,37 +43,37 @@ ms.locfileid: "19833601"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**SubscribeToAllFolders** <br/> |サーバーがユーザーのメールボックス内のすべてのフォルダーを購読するかどうかを示します。 **True**の場合は、サーバーがサブスクライブすることを示します。  <br/> |
+|**SubscribeToAllFolders** <br/> |サーバーがユーザーのメールボックス内のすべてのフォルダーをサブスクライブするかどうかを示します。 値が**true の場合**は、サーバーがサブスクライブすることを示します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[FolderIds](folderids.md) <br/> |イベント通知を監視するフォルダーを識別するために使用されるフォルダー識別子の配列が含まれています。  <br/> |
-|[EventTypes](eventtypes.md) <br/> |サブスクリプションを作成するために使用されるイベント通知のコレクションが含まれています。  <br/> |
+|[FolderIds](folderids.md) <br/> |イベント通知を監視するフォルダーを識別するために使用されるフォルダー識別子の配列を格納します。  <br/> |
+|[EventTypes](eventtypes.md) <br/> |サブスクリプションの作成に使用されるイベント通知のコレクションが含まれています。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[購読](subscribe.md) <br/> |サブスクリプションの作成に使用するプロパティが含まれています。  <br/> |
+|[登録](subscribe.md) <br/> |サブスクリプションの作成に使用されるプロパティが含まれています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web Services.This の要素がホストをで Exchange Server 2010 Service Pack 1 (SP1) を導入する IIS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

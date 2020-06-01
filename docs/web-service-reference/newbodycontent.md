@@ -12,23 +12,23 @@ api_type:
 - schema
 ms.assetid: 0303600d-16d8-4685-88f2-980c5ca7e9a6
 description: NewBodyContent 要素は、メッセージの新しい本文の内容を表します。
-ms.openlocfilehash: b87393e460b1eee1c13efebf38e898d17915bd71
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: dcfa927bb284ff00e510d8c7b4b31910a70b3cbb
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832516"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466858"
 ---
 # <a name="newbodycontent"></a>NewBodyContent
 
-**NewBodyContent**要素は、メッセージの新しい本文の内容を表します。 
+**Newbodycontent**要素は、メッセージの新しい本文の内容を表します。 
   
 ```xml
 <NewBodyContent BodyType=""/>
 ```
 
  **BodyType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -53,32 +53,32 @@ ms.locfileid: "19832516"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ReplyToItem](replytoitem.md) <br/> |Exchange ストア内のアイテムの送信者への返信が含まれています。  <br/> |
-|[ReplyAllToItem](replyalltoitem.md) <br/> |Exchange ストア内のアイテムの識別されたすべての受信者と送信者への返信が含まれています。  <br/> |
-|[ForwardItem](forwarditem.md) <br/> |受信者に転送するのには、Exchange ストアの項目が含まれています。  <br/> |
-|[CancelCalendarItem](cancelcalendaritem.md) <br/> |会議をキャンセルするために使用される応答オブジェクトを表します。  <br/> |
-|[PostReplyItem](postreplyitem.md) <br/> |投稿アイテムへの返信が含まれています。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。  <br/> |
+|[ReplyToItem](replytoitem.md) <br/> |Exchange ストア内のアイテムの送信者への返信を含みます。  <br/> |
+|[Replyalltoitem と](replyalltoitem.md) <br/> |Exchange ストア内のアイテムの送信者および特定の受信者への返信を含みます。  <br/> |
+|[Forwarditem と](forwarditem.md) <br/> |受信者に転送するための Exchange ストアアイテムが保存されています。  <br/> |
+|[CancelCalendarItem](cancelcalendaritem.md) <br/> |会議の取り消しに使用される response オブジェクトを表します。  <br/> |
+|[PostReplyItem](postreplyitem.md) <br/> |投稿アイテムへの返信を含みます。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、新しいメッセージの本文の内容を表します。
+Text 値は、メッセージの新しい本文の内容を表します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-EWS 仮想ディレクトリのクライアント アクセス サーバーの役割がインストールされている Exchange サーバーには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Exchange サーバーの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

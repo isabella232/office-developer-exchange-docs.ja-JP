@@ -1,5 +1,5 @@
 ---
-title: ModifiedEvent
+title: 対する modifiedevent
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: ca1309f4-2df7-4289-811c-75c3db0e7072
-description: ModifiedEvent 要素は、アイテムまたはフォルダーが変更されるイベントを表します。
-ms.openlocfilehash: 2e9fb870396d49efb5cdf307a502b4111c2e507e
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: "\"修飾\" 要素は、アイテムまたはフォルダーが変更されるイベントを表します。"
+ms.openlocfilehash: 1a798773601a0857b9064c7fa6a532a7a36517ab
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353813"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468552"
 ---
-# <a name="modifiedevent"></a>ModifiedEvent
+# <a name="modifiedevent"></a>対する modifiedevent
 
-**ModifiedEvent**要素は、アイテムまたはフォルダーが変更されるイベントを表します。 
+"修飾" 要素は、アイテムまたはフォルダーが変更されるイベントを**表します。** 
   
 ```xml
 <ModifiedEvent>
@@ -45,7 +45,7 @@ ms.locfileid: "21353813"
 
 **ModifiedEventType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -55,10 +55,10 @@ ms.locfileid: "21353813"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[Watermark](watermark.md) <br/> |メールボックス イベント テーブル内のイベント ブックマークを表します。  <br/> |
-|[TimeStamp](timestamp.md) <br/> |変更されたアイテムまたはフォルダーのメールボックス イベントのタイムスタンプを表します。  <br/> |
+|[Watermark](watermark.md) <br/> |メールボックスイベントテーブル内のイベントブックマークを表します。  <br/> |
+|[示](timestamp.md) <br/> |変更されたアイテムまたはフォルダーのメールボックスイベントのタイムスタンプを表します。  <br/> |
 |[FolderId](folderid.md) <br/> |変更されたフォルダーの識別子を表します。  <br/> |
 |[ItemId](itemid.md) <br/> |変更されたアイテムの識別子を表します。  <br/> |
 |[ParentFolderId](parentfolderid.md) <br/> |変更されたアイテムまたはフォルダーの親フォルダーの識別子を表します。  <br/> |
@@ -68,22 +68,22 @@ ms.locfileid: "21353813"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[通知](notification-ex15websvcsotherref.md) <br/> |サブスクリプションおよび最後の通知以降に発生したイベントに関する情報が含まれています。  <br/> |
+|[通知](notification-ex15websvcsotherref.md) <br/> |サブスクリプションに関する情報、および前回の通知以降に発生したイベントに関する情報が含まれます。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-フォルダー内のアイテムの各変更に対して 2 つの変更イベントが生成されます。 1 つのイベントは、変更されたアイテムに関連します。 その他のイベントは、アイテムの親フォルダーに関連します。 これは、サブスクリプションが作成されたのと同じフォルダーです。 フォルダーの[UnreadCount](unreadcount.md)プロパティへの潜在的な変更を通信するためにこのフォルダーに関連付けられているイベントを使用します。 
+フォルダー内のアイテムの変更ごとに、2つの変更されたイベントが生成されます。 変更されたアイテムに関連するイベントが1つあります。 その他のイベントは、アイテムの親フォルダーに関連しています。 これは、サブスクリプションが作成されたものと同じフォルダーです。 フォルダーに関連付けられているイベントを使用して、フォルダーの[UnreadCount](unreadcount.md)プロパティに対する潜在的な変更を通知します。 
   
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

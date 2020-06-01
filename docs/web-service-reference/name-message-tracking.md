@@ -1,5 +1,5 @@
 ---
-title: 名前 (メッセージの追跡)
+title: Name (メッセージ追跡)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,25 +11,25 @@ api_name:
 api_type:
 - schema
 ms.assetid: a1669f6d-53f3-4849-9b30-56909aaeac82
-description: Name 要素は、メッセージ ・ トラッキング ・ レポートのプロパティ名を表します。
-ms.openlocfilehash: c905df03842de47b2bcbd62897aa9a8cf464cc6d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Name 要素は、メッセージ追跡レポートのプロパティ名を表します。
+ms.openlocfilehash: 86f049c0a90dbeb55418a5eee58079adf17e5ded
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832501"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44466900"
 ---
-# <a name="name-message-tracking"></a>名前 (メッセージの追跡)
+# <a name="name-message-tracking"></a>Name (メッセージ追跡)
 
-**Name**要素は、メッセージ ・ トラッキング ・ レポートのプロパティ名を表します。 
+**Name**要素は、メッセージ追跡レポートのプロパティ名を表します。 
   
 ```xml
 <Name/>
 ```
 
-**文字列型 (String)**
+**String**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -45,28 +45,28 @@ ms.locfileid: "19832501"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[TrackingPropertyType](trackingpropertytype.md) <br/> |名前と値文字列のペアを使用してレポートを追跡するメッセージのプロパティを作成するを表します。  <br/> |
+|[TrackingPropertyType](trackingpropertytype.md) <br/> |メッセージ追跡レポートのプロパティを作成するために使用される文字列の名前と値のペアを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、この要素が使用される場合に必要です。
+この要素を使用する場合は、テキスト値が必要です。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素に最大で 1 回、 [TrackingPropertyType](trackingpropertytype.md)の要素で発生します。 
+この要素は、 [TrackingPropertyType](trackingpropertytype.md)要素で最大で1回発生する可能性があります。 
   
-この要素を記述するスキーマは、Exchange Web Services.This の要素がホストをで Exchange Server 2010 Service Pack 1 (SP1) を導入する IIS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

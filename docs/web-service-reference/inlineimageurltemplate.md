@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 40238799-25f0-431c-91be-34b915110f03
-description: InlineImageUrlTemplate 要素は、インライン画像の URL のテンプレートを指定します。
-ms.openlocfilehash: 3e989a285d0f571656b7e50c2f2b59928bfa3081
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: InlineImageUrlTemplate 要素は、インラインイメージ URL のテンプレートを指定します。
+ms.openlocfilehash: 2cb9cd31d1adf0c6fecf803a8b42bc88330a14d1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831933"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44468734"
 ---
 # <a name="inlineimageurltemplate"></a>InlineImageUrlTemplate
 
-**InlineImageUrlTemplate**要素は、インライン画像の URL のテンプレートを指定します。 
+**InlineImageUrlTemplate**要素は、インラインイメージ URL のテンプレートを指定します。 
   
 ```XML
 <InlineImageUrlTemplate></InlineImageUrlTemplate>
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,30 +40,30 @@ ms.locfileid: "19831933"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ItemShape](itemshape.md) <br/> |[GetItem 操作](getitem-operation.md)、 [FindItem 操作](finditem-operation.md)、または[SyncFolderItems の操作](syncfolderitems-operation.md)の応答で返されるプロパティのセットを識別します。  <br/> |
+|[ItemShape](itemshape.md) <br/> |[GetItem 操作](getitem-operation.md)、 [FindItem 操作](finditem-operation.md)、または[syncfolderitems 操作](syncfolderitems-operation.md)の応答で返される一連のプロパティを識別します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**InlineImageUrlTemplate**要素のテキスト値は、インライン画像の URL のテンプレートを指定します。 
+**InlineImageUrlTemplate**要素のテキスト値は、インラインイメージ URL のテンプレートを指定します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |型のスキーマ  <br/> |
-|検証ファイル  <br/> |types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

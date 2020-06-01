@@ -1,5 +1,5 @@
 ---
-title: dialString (UM web サービス)
+title: '[] (UM web サービス)'
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,29 +10,29 @@ api_name:
 api_type:
 - schema
 ms.assetid: d1e3cd23-48fe-4ebc-a5c5-2226d223f800
-description: DialString 要素には、ダイヤルする電話番号の値が含まれています。
-ms.openlocfilehash: f27934fa73ead75ab50e99a79c01cb6a1062e3d8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Dial String 要素には、ダイヤルする電話番号の値が含まれています。
+ms.openlocfilehash: 028ea789efabf49a64bc1d5022d9eb2d8df61c51
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760036"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467824"
 ---
-# <a name="dialstring-um-web-service"></a>dialString (UM web サービス)
+# <a name="dialstring-um-web-service"></a>[] (UM web サービス)
 
-**DialString**要素には、ダイヤルする電話番号の値が含まれています。 
+Dial **string**要素には、ダイヤルする電話番号の値が含まれています。 
   
 - [PlayOnPhone (UM web サービス)](playonphone-um-web-service.md) 
-- [dialString (UM web サービス)](dialstring-um-web-service.md) 
-- [PlayOnPhoneGreeting (UM web サービス)](playonphonegreeting-um-web-service.md) 
-- [dialString (UM web サービス)](dialstring-um-web-service.md)
+- [[] (UM web サービス)](dialstring-um-web-service.md) 
+- [Playon電話応答メッセージ (UM web サービス)](playonphonegreeting-um-web-service.md) 
+- [[] (UM web サービス)](dialstring-um-web-service.md)
   
 ```xml
 <dialString/>
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -48,26 +48,26 @@ ms.locfileid: "19760036"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[PlayOnPhone (UM web サービス)](playonphone-um-web-service.md) <br/> |電話でメッセージを再生する要求を定義します。  <br/> |
-|[PlayOnPhoneGreeting (UM web サービス)](playonphonegreeting-um-web-service.md) <br/> |電話に応答メッセージを再生する要求を定義します。  <br/> |
+|[PlayOnPhone (UM web サービス)](playonphone-um-web-service.md) <br/> |電話でメッセージを再生するための要求を定義します。  <br/> |
+|[Playon電話応答メッセージ (UM web サービス)](playonphonegreeting-um-web-service.md) <br/> |電話で案内応答を再生するための要求を定義します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は必須です。 テキスト値は、有効なダイヤル番号を含める必要があります。
+テキスト値は必須です。 テキスト値には、有効なダイヤル番号が含まれている必要があります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |スキーマ名  <br/> |メッセージ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [PlayOnPhone (UM web サービス)](playonphone-um-web-service.md)  
 - [PlayOnPhone 操作 (UM web サービス)](playonphone-operation-um-web-service.md)  
-- [PlayOnPhoneGreeting (UM web サービス)](playonphonegreeting-um-web-service.md)  
-- [PlayOnPhoneGreeting 操作 (UM web サービス)](playonphonegreeting-operation-um-web-service.md)
+- [Playon電話応答メッセージ (UM web サービス)](playonphonegreeting-um-web-service.md)  
+- [Playon電話案内応答操作 (UM web サービス)](playonphonegreeting-operation-um-web-service.md)
 

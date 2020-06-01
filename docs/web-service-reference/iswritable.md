@@ -1,5 +1,5 @@
 ---
-title: IsWritable
+title: IsWritable 可能
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d4af8eee-7001-4a8e-b9bd-d14882f2406b
-description: IsWritable 要素は、基になっている取引先担当者または Active Directory の受信者に書き込むことがあるかどうかを指定します。
-ms.openlocfilehash: 03f258d01ecfc12dfa4e09ac88f4a75340d2acf3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: IsWritable 可能要素は、基になる連絡先または Active Directory 受信者に書き込むことができるかどうかを指定します。
+ms.openlocfilehash: 96075adc1772027456f8829eee43bdc734644c09
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832158"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467572"
 ---
-# <a name="iswritable"></a>IsWritable
+# <a name="iswritable"></a>IsWritable 可能
 
-**IsWritable**要素は、基になっている取引先担当者または Active Directory の受信者に書き込むことがあるかどうかを指定します。 
+**Iswritable 可能**要素は、基になる連絡先または Active Directory 受信者に書き込むことができるかどうかを指定します。 
   
 ```XML
 <IsWritable> true | false </IsWritable>
 ```
 
- **ブール型 (Boolean)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,9 +42,9 @@ ms.locfileid: "19832158"
   
 ## <a name="text-value"></a>テキスト値
 
-**True** **IsWritable**要素のテキスト値は、取引先担当者または Active Directory オブジェクトは、書き込みアクセスに使用できることを示します。 値が**false**のないことを示します、取引先担当者または Active Directory オブジェクトの書き込みアクセスに使用できます。 
+**Iswritable**要素のテキスト値が**true**の場合は、連絡先または Active Directory オブジェクトが書き込みアクセスで利用可能であることを示します。 値が**false**の場合は、連絡先または Active Directory オブジェクトが書き込みアクセスで利用できないことを示します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   

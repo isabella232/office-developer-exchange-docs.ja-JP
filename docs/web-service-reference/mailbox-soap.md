@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 4ad59e5b-4047-4c34-a318-ca06c31d3de8
-description: メールボックスの要素には、検出対象のユーザーの電子メール アドレスが含まれています。
-ms.openlocfilehash: b98397dadf8c467031eb8febe9732d4e426372e5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Mailbox 要素には、検出対象のユーザーの電子メールアドレスが含まれています。
+ms.openlocfilehash: e050cd9d3ca4a2d2450f315f1eedd3862328d096
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832253"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467285"
 ---
 # <a name="mailbox-soap"></a>メールボックス (SOAP)
 
-**メールボックス**の要素には、検出対象のユーザーの電子メール アドレスが含まれています。 
+**Mailbox**要素には、検出対象のユーザーの電子メールアドレスが含まれています。 
   
 ```XML
 <Mailbox/>
@@ -26,7 +26,7 @@ ms.locfileid: "19832253"
 
 **string**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,20 +42,20 @@ ms.locfileid: "19832253"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ユーザー (SOAP)](user-soap.md) <br/> |1 人のユーザーの id を表します。  <br/> |
+|[User (SOAP)](user-soap.md) <br/> |1人のユーザーの id を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**メールボックス**要素のテキスト値は、検出対象のユーザーの電子メール アドレスです。 
+**Mailbox**要素のテキスト値は、検出されるユーザーの電子メールアドレスです。 
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|スキーマ名  <br/> |スキーマの自動検出  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|スキーマ名  <br/> |自動検出スキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

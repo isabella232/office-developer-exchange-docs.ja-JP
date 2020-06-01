@@ -1,5 +1,5 @@
 ---
-title: RequestedServerVersion (SOAP)
+title: Exchangeservice.requestedserverversion (SOAP)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,24 +8,24 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: cf3f9d7a-2add-4457-b009-2929220f90b5
-description: RequestedServerVersion 要素は、サーバーのバージョンが、自動検出の方法でターゲットを呼び出すことを指定します。
-ms.openlocfilehash: 6b9d31f3b7bca087652f04e4943becc5ac4e68e7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Exchangeservice.requestedserverversion 要素は、自動検出メソッドが呼び出し対象とするサーバーのバージョンを指定します。
+ms.openlocfilehash: ff63c82943bdd3476a4284f5aa2075fc9c0194b9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833132"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467908"
 ---
-# <a name="requestedserverversion-soap"></a>RequestedServerVersion (SOAP)
+# <a name="requestedserverversion-soap"></a>Exchangeservice.requestedserverversion (SOAP)
 
-**RequestedServerVersion**要素は、サーバーのバージョンが、**自動検出**の方法でターゲットを呼び出すことを指定します。 
+**Exchangeservice.requestedserverversion**要素は、**自動検出**メソッドが呼び出し対象とするサーバーのバージョンを指定します。 
   
 ```XML
 <RequestedServerVersion/>
 ```
 
  **ExchangeVersion**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -43,28 +43,28 @@ ms.locfileid: "19833132"
   
 ## <a name="text-value"></a>テキスト値
 
-**RequestedServerVersion**要素のテキスト値は、サーバーのバージョンが、**自動検出**の方法でターゲットを呼び出すことを指定します。 次の表は、有効なサーバーのバージョンを示します。 
+**Exchangeservice.requestedserverversion**要素のテキスト値は、**自動検出**メソッドが呼び出すサーバーのバージョンを指定します。 次の表に、有効なサーバーバージョンの一覧を示します。 
   
 |**テキスト値**|**説明**|
 |:-----|:-----|
-|Exchange2007_SP1  <br/> |2007 Service Pack 1 (SP1) を Exchange Server です。  <br/> |
+|Exchange2007_SP1  <br/> |Exchange Server 2007 Service Pack 1 (SP1)。  <br/> |
 |Exchange2010  <br/> |Exchange Server 2010。  <br/> |
-|Exchange2010_SP1  <br/> |2010 Service Pack 1 (SP1) を Exchange Server です。  <br/> |
-|Exchange2010_SP2  <br/> |2010 Service Pack 2 (SP2) を Exchange Server です。  <br/> |
-|Exchange2013  <br/> |Exchange Server 2013。 Exchange2013 フィールドは、Exchange Online とのバージョンの Exchange が Exchange Server 2013 以降を対象とするクライアントに適用されます。  <br/> |
-|Exchange2013_SP1  <br/> |2013 Service Pack 1 (SP1) を Exchange Server です。 Exchange2013_SP1 フィールドは、オンラインの Exchange および Exchange が Exchange Server 2013 sp1 以降のバージョンを対象とするクライアントに適用されます。  <br/> |
+|Exchange2010_SP1  <br/> |Exchange Server 2010 Service Pack 1 (SP1)。  <br/> |
+|Exchange2010_SP2  <br/> |Exchange Server 2010 Service Pack 2 (SP2)。  <br/> |
+|Exchange2013  <br/> |Exchange Server 2013。 Exchange2013 フィールドは、exchange Online と exchange Server 2013 以降のバージョンの Exchange を対象とするクライアントに適用されます。  <br/> |
+|Exchange2013_SP1  <br/> |Exchange Server 2013 Service Pack 1 (SP1)。 Exchange2013_SP1 フィールドは、exchange Online と exchange Server 2013 SP1 以降のバージョンの Exchange を対象とするクライアントに適用されます。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**RequestedServerVersion**要素は、SOAP ヘッダーで設定されています。 
+**Exchangeservice.requestedserverversion**要素は、SOAP ヘッダーで設定されます。 
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|スキーマ名  <br/> |スキーマの自動検出  <br/> |
-|検証ファイル  <br/> |messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|スキーマ名  <br/> |自動検出スキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |はい  <br/> |
    
 

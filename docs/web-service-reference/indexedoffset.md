@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 951ee079-417f-45a2-b47f-633e8cd6b520
-description: IndexedOffset 要素は、FindConversation 応答ページのインデックスのオフセットを示します。
-ms.openlocfilehash: 1332e6e133f20b83bbf5eb713ffb8e0592045d67
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: IndexedOffset 要素は、ページ化された FindConversation 応答のインデックスオフセットを示します。
+ms.openlocfilehash: 15faef8d214f289dd79d03bba7db09427955564e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831911"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467012"
 ---
 # <a name="indexedoffset"></a>IndexedOffset
 
-**IndexedOffset**要素は、 **FindConversation**応答ページのインデックスのオフセットを示します。 
+**IndexedOffset**要素は、ページ化された**findconversation**応答のインデックスオフセットを示します。 
   
 ```XML
 <IndexedOffset></IndexedOffset>
 ```
 
  **int**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,21 +42,21 @@ ms.locfileid: "19831911"
   
 ## <a name="text-value"></a>テキスト値
 
-**IndexedOffset**要素のテキスト値は、 **FindConversation**応答のページのインデックスのオフセットです。 
+**IndexedOffset**要素のテキスト値は、 **findconversation**応答のページインデックスオフセットです。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 67328dab-321b-45ad-929e-cd83e65ad87e
-description: SearchQueries 要素には、メールボックス、および検索に関連するクエリの一覧が含まれています。
-ms.openlocfilehash: 182f1ba63b4226ea4ff6445ae9f039197dec38a5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: SearchQueries 要素には、探索検索に関するメールボックスと関連付けられたクエリの一覧が含まれています。
+ms.openlocfilehash: 66015d71238b4a1055a71aff539ca50150f2a247
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833316"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466914"
 ---
 # <a name="searchqueries"></a>SearchQueries
 
-**SearchQueries**要素には、メールボックス、および検索に関連するクエリの一覧が含まれています。 
+**Searchqueries**要素には、探索検索に関するメールボックスと関連付けられたクエリの一覧が含まれています。 
   
 ```XML
 <SearchQueries>
@@ -26,7 +26,7 @@ ms.locfileid: "19833316"
 ```
 
  ****
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,21 +40,21 @@ ms.locfileid: "19833316"
   
 ### <a name="parent-elements"></a>親要素
 
-[SearchMailboxes](searchmailboxes.md) | [SearchMailboxesResult](searchmailboxesresult.md)
+[Searchmailboxes ボックス](searchmailboxes.md)  | [SearchMailboxesResult](searchmailboxesresult.md)
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

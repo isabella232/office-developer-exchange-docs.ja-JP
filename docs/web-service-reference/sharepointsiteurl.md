@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: de9a7e43-518e-49aa-9826-f54bab4279a3
-description: SharePointSiteURL 要素には、サイトのメールボックスにリンクされている SharePoint サイトの統一リソース ロケーター (URL) が含まれています。
-ms.openlocfilehash: 34f9a04ef8b0f46bb14ec467b0fdd7db8882430e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: SharePointSiteURL 要素には、サイトメールボックスにリンクされている SharePoint サイトの Uniform Resource Locator (URL) が含まれています。
+ms.openlocfilehash: 461ca904e9a050d20b9e067cb40875939608c101
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833473"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467306"
 ---
 # <a name="sharepointsiteurl"></a>SharePointSiteUrl
 
-**SharePointSiteURL**要素には、サイトのメールボックスにリンクされている SharePoint サイトの統一リソース ロケーター (URL) が含まれています。 
+**Sharepointsiteurl**要素には、サイトメールボックスにリンクされている SharePoint サイトの Uniform resource LOCATOR (URL) が含まれています。 
   
 ```XML
 <SharePointSiteURL></SharePointSiteURL>
@@ -25,7 +25,7 @@ ms.locfileid: "19833473"
 
 **string**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -43,21 +43,21 @@ ms.locfileid: "19833473"
   
 ## <a name="text-value"></a>テキスト値
 
-**SharePointSiteURL**要素のテキスト値は、サイトのメールボックスにリンクされている SharePoint サイトの URL です。 
+**Sharepointsiteurl**要素のテキスト値は、サイトメールボックスにリンクされている SharePoint サイトの URL です。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

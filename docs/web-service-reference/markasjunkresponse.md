@@ -8,16 +8,16 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 92827350-f317-46da-99c0-5d7960686194
 description: MarkAsJunkResponse 要素は、MarkAsJunk 要求への応答を指定します。
-ms.openlocfilehash: 2f4ef60071b167df48507bf83b2d7ec1d43e8da1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: ee8027a61175b8cbf25f5b7d0051a6ea6b74fcb3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832351"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468566"
 ---
 # <a name="markasjunkresponse"></a>MarkAsJunkResponse
 
-**MarkAsJunkResponse**要素は、 **MarkAsJunk**要求への応答を指定します。 
+**MarkAsJunkResponse**要素は、 **markasjunk**要求への応答を指定します。 
   
 ```XML
 <MarkAsJunkResponse>
@@ -26,7 +26,7 @@ ms.locfileid: "19832351"
 ```
 
  **MarkAsJunkResponseType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,19 +42,19 @@ ms.locfileid: "19832351"
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

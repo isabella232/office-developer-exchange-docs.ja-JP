@@ -1,5 +1,5 @@
 ---
-title: 解決策
+title: 解決方法
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 573bed4b-d7b1-4baf-b16f-0795cdebf1a7
-description: 解像度の要素には、1 つの解決されたエンティティが含まれています。
-ms.openlocfilehash: d65f6401e54a4397cad1bfcc85384f644fbae405
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Resolution 要素には、1つの解決済みエンティティが含まれています。
+ms.openlocfilehash: 63c80f3c8d7dabf7e6dc1494df04c0be821b28bf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833156"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44468286"
 ---
-# <a name="resolution"></a>解決策
+# <a name="resolution"></a>解決方法
 
-**解像度**の要素には、1 つの解決されたエンティティが含まれています。 
+**Resolution**要素には、1つの解決済みエンティティが含まれています。 
   
 [ResolveNamesResponse](resolvenamesresponse.md)
   
@@ -29,9 +29,9 @@ ms.locfileid: "19833156"
   
 [ResolveNamesResponseMessage](resolvenamesresponsemessage.md)
   
-[ResolutionSet](resolutionset.md)
+[解像度セット](resolutionset.md)
   
-[解決策](resolution.md)
+[Resolution](resolution.md)
   
 ```xml
 <Resolution>
@@ -40,8 +40,8 @@ ms.locfileid: "19833156"
 </Resolution>
 ```
 
- **ResolutionType**
-## <a name="attributes-and-elements"></a>属性および要素
+ **解像度の種類**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -51,29 +51,29 @@ ms.locfileid: "19833156"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[メールボックス](mailbox.md) <br/> |メールが有効な Active Directory ディレクトリ サービス オブジェクトを識別します。  <br/> |
-|[Contact](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
+|[メールボックス](mailbox.md) <br/> |メールが有効な Active Directory ディレクトリサービスオブジェクトを識別します。  <br/> |
+|[連絡先](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ResolutionSet](resolutionset.md) <br/> |あいまいな名前の解決策の配列が含まれています。  <br/> |
+|[解像度セット](resolutionset.md) <br/> |あいまいな名前の解決方法の配列を格納します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

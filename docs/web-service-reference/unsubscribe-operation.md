@@ -1,5 +1,5 @@
 ---
-title: 操作の購読を解除します。
+title: Unsubscribe 操作
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,51 +11,51 @@ api_name:
 api_type:
 - schema
 ms.assetid: 994a9d2b-1501-4804-90f0-12bd914496ec
-description: 購読の取り消し操作を使用して、プル サブスクリプションの通知を終了します。 サブスクリプションのタイムアウトを通知するのではなく、この操作を使用します。 この操作の通知をプルのみです。
-ms.openlocfilehash: 64514a718d473f0fd7d0320bd1ccecddb1940ac8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 登録解除操作を使用して、プル通知サブスクリプションを終了します。 サブスクリプションのタイムアウトを使用するのではなく、この操作を使用します。 この操作は、プル通知に対してのみ有効です。
+ms.openlocfilehash: 054f89af1ba5c780c7de5016a6dfe34086c97f02
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839821"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468027"
 ---
-# <a name="unsubscribe-operation"></a>操作の購読を解除します。
+# <a name="unsubscribe-operation"></a>Unsubscribe 操作
 
-購読の取り消し操作を使用して、プル サブスクリプションの通知を終了します。 サブスクリプションのタイムアウトを通知するのではなく、この操作を使用します。 この操作の通知をプルのみです。
+登録解除操作を使用して、プル通知サブスクリプションを終了します。 サブスクリプションのタイムアウトを使用するのではなく、この操作を使用します。 この操作は、プル通知に対してのみ有効です。
   
-## <a name="unsubscribe-request-example"></a>購読の取り消しの要求の例
+## <a name="unsubscribe-request-example"></a>登録解除要求の例
 
 ### <a name="description"></a>説明
 
-購読を解除するクライアントの通知サービスに送信される SOAP XML メッセージの例を次に示します。
+次の例は、通知サービスからクライアントの登録を解除するために送信される SOAP XML メッセージを示しています。
   
 ### <a name="code"></a>コード
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <Unsubscribe xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <Unsubscribe xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <SubscriptionId>e6fbf5c1-7e26-4bc6-a5f2-882063d5e34e</SubscriptionId>  
     </Unsubscribe>
   </soap:Body>
 </soap:Envelope>
 ```
 
-### <a name="unsubscribe-request-elements"></a>要求要素の購読を解除します。
+### <a name="unsubscribe-request-elements"></a>登録解除の要求要素
 
-次の要素は、要求で使用されます。
+要求では、次の要素が使用されます。
   
-- [購読の取り消し](unsubscribe.md)
+- [登録を解除する](unsubscribe.md)
     
-- [サブスクリプション Id (GetEvents)](subscriptionid-getevents.md)
+- [SubscriptionId (GetEvents)](subscriptionid-getevents.md)
     
-## <a name="successful-unsubscribe-response-example"></a>成功した購読取り消しの応答の例
+## <a name="successful-unsubscribe-response-example"></a>正常な登録解除の応答の例
 
 ### <a name="description"></a>説明
 
-購読の取り消しの要求に正常な応答の例を次に示します。
+次の例は、購読中止要求に対する正常な応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -66,12 +66,12 @@ ms.locfileid: "19839821"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="628" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <UnsubscribeResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <UnsubscribeResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:UnsubscribeResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -82,25 +82,25 @@ ms.locfileid: "19839821"
 </soap:Envelope>
 ```
 
-### <a name="unsubscribe-response-elements"></a>応答要素の購読を解除します。
+### <a name="unsubscribe-response-elements"></a>応答の取り消し要素
 
-次の要素は、応答で使用されます。
+応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
-- [購読の取り消し](unsubscribe.md)
+- [登録を解除する](unsubscribe.md)
     
 - [ResponseMessages](responsemessages.md)
     
-- [UnsubscribeResponseMessage](unsubscriberesponsemessage.md)
+- [非表示の表示/非表示のメッセージ](unsubscriberesponsemessage.md)
     
 - [ResponseCode](responsecode.md)
     
-## <a name="unsubscribe-error-response-example"></a>エラー応答の例の購読を解除します。
+## <a name="unsubscribe-error-response-example"></a>登録解除エラーの応答の例
 
 ### <a name="description"></a>説明
 
-見つからない場合、サブスクリプションの識別子を使用して、購読を解除しようとするへの応答としての登録解除エラー応答は、次の例が発生した Exchange ストアにします。
+次のサブスクライブ解除エラー応答の例は、Exchange ストアに配置できないサブスクリプション識別子を使用してサブスクライブを中止しようとした場合に発生します。
   
 ### <a name="code"></a>コード
 
@@ -111,12 +111,12 @@ ms.locfileid: "19839821"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="628" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <UnsubscribeResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <UnsubscribeResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:UnsubscribeResponseMessage ResponseClass="Error">
           <m:MessageText>The specified subscription was not found.</m:MessageText>
@@ -129,7 +129,7 @@ ms.locfileid: "19839821"
 </soap:Envelope>
 ```
 
-### <a name="unsubscribe-error-response-elements"></a>エラー応答の要素の購読を解除します。
+### <a name="unsubscribe-error-response-elements"></a>登録解除エラー応答要素
 
 エラー応答では、次の要素が使用されます。
   
@@ -139,7 +139,7 @@ ms.locfileid: "19839821"
     
 - [ResponseMessages](responsemessages.md)
     
-- [UnsubscribeResponseMessage](unsubscriberesponsemessage.md)
+- [非表示の表示/非表示のメッセージ](unsubscriberesponsemessage.md)
     
 - [MessageText](messagetext.md)
     
@@ -151,5 +151,5 @@ ms.locfileid: "19839821"
 
 - [サブスクライブ操作](subscribe-operation.md)
 - [GetEvents 操作](getevents-operation.md)
-- [プル サブスクリプションを使用します。](http://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx)
+- [プルサブスクリプションの使用](https://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx)
 

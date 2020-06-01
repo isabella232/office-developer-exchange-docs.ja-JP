@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c85207e1-1315-443b-94ec-2b58f405076b
-description: ResolveNames 要素では、あいまいな名前を解決する要求を定義します。
-ms.openlocfilehash: e97b6e78d99cf8ffa3d680907916882d40963f59
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ResolveNames 要素は、あいまいな名前を解決する要求を定義します。
+ms.openlocfilehash: 9c36a5f84451f91e90a8e7148cf384b5cacd7f29
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833172"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467950"
 ---
 # <a name="resolvenames"></a>ResolveNames
 
-**ResolveNames**要素では、あいまいな名前を解決する要求を定義します。 
+**ResolveNames**要素は、あいまいな名前を解決する要求を定義します。 
   
 ```XML
 <ResolveNames ReturnFullContactData="" SearchScope="" ContactDataShape="">
@@ -31,7 +31,7 @@ ms.locfileid: "19833172"
 ```
 
  **ResolveNamesType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -39,57 +39,57 @@ ms.locfileid: "19833172"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**ReturnFullContactData** <br/> |解決された名前の公開アドレス帳の完全な連絡先の詳細が応答で返されるかどうかについて説明します。 この属性は、パブリック メンバーに必要です。 この値は、プライベートの連絡先と個人用配布リスト、[アイテム Id](itemid.md)が常に返されるには影響しません。  <br/> |
-|**SearchScope** <br/> |ResolveNames 検索範囲の順序を識別します。  <br/> |
-|ContactDataShape  <br/> |連絡先に対して返されるプロパティを識別します。 この属性は、Exchange Server 2010 のサービス パック 2 (SP2) で導入されました。  <br/> |
+|**ReturnFullContactData** <br/> |解決された名前のパブリック連絡先の完全な連絡先の詳細を応答で返すかどうかを指定します。 この属性は、パブリック連絡先に必要です。 この値は、[ [ItemId](itemid.md) ] が常に返されるプライベート連絡先とプライベート配布リストには影響しません。  <br/> |
+|**SearchScope** <br/> |ResolveNames 検索の順序と範囲を指定します。  <br/> |
+|ContactDataShape  <br/> |連絡先に対して返されるプロパティセットを識別します。 この属性は、Exchange Server 2010 Service Pack 2 (SP2) で導入されました。  <br/> |
    
-#### <a name="returnfullcontactdata-attribute-values"></a>ReturnFullContactData 属性の値
+#### <a name="returnfullcontactdata-attribute-values"></a>ReturnFullContactData 属性値
 
 |**値**|**説明**|
 |:-----|:-----|
-|True  <br/> |公開アドレス帳の完全な連絡先の詳細情報が返されます。  <br/> |
-|False  <br/> |公開アドレス帳の完全な連絡先の詳細情報は返されません。  <br/> |
+|True  <br/> |パブリック連絡先の完全な連絡先の詳細が返されます。  <br/> |
+|正しくない  <br/> |パブリック連絡先の完全な連絡先の詳細は返されません。  <br/> |
    
 #### <a name="searchscope-attribute-values"></a>SearchScope 属性の値
 
 |**値**|**説明**|
 |:-----|:-----|
-|ActiveDirectory  <br/> |Active Directory ディレクトリ サービスのみが検索されます。  <br/> |
-|ActiveDirectoryContacts  <br/> |最初に active Directory を検索し、 [ParentFolderIds](parentfolderids.md)プロパティで指定されている連絡先フォルダーを検索し、します。  <br/> |
-|連絡先  <br/> |[ParentFolderIds](parentfolderids.md)プロパティによって指定されている連絡先フォルダーのみが検索されます。  <br/> |
-|ContactsActiveDirectory  <br/> |[ParentFolderIds](parentfolderids.md)プロパティによって指定されている連絡先フォルダーを最初に検索され、Active Directory を検索します。  <br/> |
+|ActiveDirectory  <br/> |Active Directory ディレクトリサービスのみが検索されます。  <br/> |
+|ActiveDirectoryContacts  <br/> |Active Directory が最初に検索され、 [ParentFolderIds](parentfolderids.md)プロパティに指定されている連絡先フォルダーが検索されます。  <br/> |
+|連絡先  <br/> |[ParentFolderIds](parentfolderids.md)プロパティによって識別される連絡先フォルダーのみが検索されます。  <br/> |
+|ContactsActiveDirectory  <br/> |[ParentFolderIds](parentfolderids.md)プロパティによって識別された連絡先フォルダーが最初に検索されてから、Active Directory が検索されます。  <br/> |
    
 #### <a name="contactdatashape-attribute-values"></a>ContactDataShape 属性の値
 
 |**値**|**説明**|
 |:-----|:-----|
-|IdOnly  <br/> |連絡先アイテムの id プロパティが返されます。  <br/> |
-|Default  <br/> |連絡先アイテムのプロパティの既定のセットが返されます。 詳細については、 [EWS の避難用図形](http://msdn.microsoft.com/library/1c5ddc0a-c4e0-4488-8972-7543b5b464df%28Office.15%29.aspx)を参照してください。  <br/> |
-|AllProperties  <br/> |連絡先アイテムのプロパティの AllProperties のセットが返されます。 詳細については、 [EWS の避難用図形](http://msdn.microsoft.com/library/1c5ddc0a-c4e0-4488-8972-7543b5b464df%28Office.15%29.aspx)を参照してください。  <br/> |
+|IdOnly  <br/> |連絡先アイテムの識別子のプロパティが返されます。  <br/> |
+|既定  <br/> |連絡先アイテムのプロパティの既定のセットが返されます。 詳細については、「 [EWS での応答の図形](https://msdn.microsoft.com/library/1c5ddc0a-c4e0-4488-8972-7543b5b464df%28Office.15%29.aspx)」を参照してください。  <br/> |
+|AllProperties  <br/> |連絡先アイテムのプロパティの AllProperties セットが返されます。 詳細については、「 [EWS での応答の図形](https://msdn.microsoft.com/library/1c5ddc0a-c4e0-4488-8972-7543b5b464df%28Office.15%29.aspx)」を参照してください。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[ParentFolderIds](parentfolderids.md) <br/> |**SearchScope**属性は、ActiveDirectoryContacts、連絡先、または ContactsActiveDirectory に設定されている場合を検索する連絡先フォルダー識別子の配列が含まれています。 ParentFolderIds アレイでは、1 つの連絡先フォルダーの識別子を含めることができますのみです。 **ParentFolderIds**要素が存在しない場合は、既定の連絡先フォルダーが検索されます。  <br/> フォルダーの識別子は、代理人アクセスを使用できます。  <br/> 作業中のディレクトリ検索は、アクセス制御リスト (Acl) を使用して実行されます。 一部のユーザーは、いくつかの Active Directory オブジェクトを表示する権限をいない可能性があります。  <br/> この要素はオプションです。  <br/> |
-|[UnresolvedEntry](unresolvedentry.md) <br/> |解決するのには、連絡先または配布リストの名前が含まれています。  <br/> |
+|[ParentFolderIds](parentfolderids.md) <br/> |**Searchscope**属性が ActiveDirectoryContacts、Contacts、または ContactsActiveDirectory に設定されている場合に検索される連絡先フォルダーの識別子の配列を格納します。 ParentFolderIds 配列には、1つの連絡先フォルダーの識別子のみを含めることができます。 **ParentFolderIds**要素が存在しない場合は、既定の連絡先フォルダーが検索されます。  <br/> 代理人アクセスには、フォルダー識別子を使用できます。  <br/> Active Directory 検索は、アクセス制御リスト (Acl) を使用して実行されます。 一部のユーザーは、一部の Active Directory オブジェクトを表示する権限を持っていない場合があります。  <br/> この要素は省略できます。  <br/> |
+|[UnresolvedEntry](unresolvedentry.md) <br/> |解決する連絡先または配布リストの名前を格納します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -102,8 +102,8 @@ ms.locfileid: "19833172"
 [ResolveNamesSearchScopeType](https://msdn.microsoft.com/library/ExchangeWebServices.ResolveNamesSearchScopeType.aspx)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 
 
-[名前解決の使用](http://msdn.microsoft.com/library/9257fb07-89d2-46eb-b885-e2173fe6fbc1%28Office.15%29.aspx)
+[名前解決の使用](https://msdn.microsoft.com/library/9257fb07-89d2-46eb-b885-e2173fe6fbc1%28Office.15%29.aspx)
 

@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: fc4d77d5-6200-4cf3-848a-1088fec0e0d6
-description: LocationSource 要素は、関連付けられている住所、連絡先、電話番号帳の発生元に関する情報を指定します。
-ms.openlocfilehash: 7f5cf5fcca0a72287593349fcf5090a74225d012
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: LocationSource 要素は、関連付けられた郵便番号の発信元に関する情報を指定します。たとえば、連絡先または電話帳などです。
+ms.openlocfilehash: ceba52c43d1c798bb8f5492b779c7c45d7d00b0b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832248"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467103"
 ---
 # <a name="locationsource"></a>LocationSource
 
-**LocationSource**要素は、関連付けられている住所、連絡先、電話番号帳の発生元に関する情報を指定します。 
+**Locationsource**要素は、関連付けられた郵便番号の発信元に関する情報を指定します。たとえば、連絡先または電話帳などです。 
   
 ```XML
 <LocationSource> None | LocationServices | PhonebookServices | Device | Contact | Resource </LocationSource>
 ```
 
  **LocationSourceType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -38,24 +38,24 @@ ms.locfileid: "19832248"
   
 ### <a name="parent-elements"></a>親要素
 
-[値 (PersonaPostalAddressType)](value-personapostaladdresstype.md) | [(PersonaPostalAddressType) の住所](postaladdress-personapostaladdresstype.md)
+[Value (PersonaPostalAddressType)](value-personapostaladdresstype.md)  | ["Postaladdress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**LocationSource**要素のテキスト値は、次の表のとおりです。 
+次の表に、 **Locationsource**要素のテキスト値を示します。 
   
 **LocationSource 要素のテキスト値**
 
 |**値**|**説明**|
 |:-----|:-----|
-|なし  <br/> |場所のソースがありません。  <br/> |
-|LocationServices  <br/> |情報は、サービスの場所から入手されました。  <br/> |
-|PhonebookServices  <br/> |電話帳サービスから情報を取得しました。  <br/> |
-|デバイス  <br/> |デバイスから情報を取得しました。  <br/> |
-|連絡先  <br/> |情報は、取引先担当者から入手されました。  <br/> |
-|リソース  <br/> |リソースから情報を取得しました。  <br/> |
+|なし  <br/> |場所のソースはありません。  <br/> |
+|LocationServices  <br/> |情報は場所サービスから取得されました。  <br/> |
+|電話帳サービス  <br/> |情報は、電話帳サービスから取得されました。  <br/> |
+|Device  <br/> |情報はデバイスから取得されました。  <br/> |
+|Contact  <br/> |連絡先から情報を取得しました。  <br/> |
+|関連情報  <br/> |情報はリソースから取得されました。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   

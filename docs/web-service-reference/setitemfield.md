@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 85284fcb-bd1e-4fda-9dab-cb4cd637cd5b
-description: SetItemField 要素は、UpdateItem 操作内の項目の 1 つのプロパティへの更新プログラムを表します。
-ms.openlocfilehash: bd3e5bca3d61325ef3f218c5ada535346247f391
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: SetItemField 要素は、UpdateItem 操作のアイテムの1つのプロパティに対する更新を表します。
+ms.openlocfilehash: b4606eb7d94b9d0c4c5bcd5a2b56d73a4d4270cb
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353799"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467425"
 ---
 # <a name="setitemfield"></a>SetItemField
 
-**SetItemField**要素は、 [UpdateItem 操作](updateitem-operation.md)内の項目の 1 つのプロパティへの更新プログラムを表します。
+**SetItemField**要素は、 [updateitem 操作](updateitem-operation.md)のアイテムの1つのプロパティに対する更新を表します。
   
 ```xml
 <SetItemField>
@@ -236,7 +236,7 @@ ms.locfileid: "21353799"
 
 **SetItemFieldType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -246,40 +246,40 @@ ms.locfileid: "21353799"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[FieldURI](fielduri.md) <br/> |URI によって頻繁に参照されるプロパティを識別します。  <br/> |
-|[IndexedFieldURI](indexedfielduri.md) <br/> |辞書の個々 のメンバーを識別します。  <br/> |
-|[ExtendedFieldURI](extendedfielduri.md) <br/> |設定するのには、拡張 MAPI プロパティを識別します。  <br/> |
-|[Item](item.md) <br/> |Exchange ストア内の項目を表します。  <br/> |
-|[Message](message-ex15websvcsotherref.md) <br/> |更新する Exchange 電子メール メッセージを表します。  <br/> |
-|[CalendarItem](calendaritem.md) <br/> |更新するのには、Exchange 予定表のアイテムを表します。  <br/> |
-|[連絡先](contact.md) <br/> |Exchange 連絡先を更新する項目を表します。  <br/> |
+|[FieldURI](fielduri.md) <br/> |URI で頻繁に参照されるプロパティを識別します。  <br/> |
+|[IndexedFieldURI](indexedfielduri.md) <br/> |辞書の個々のメンバーを識別します。  <br/> |
+|[ExtendedFieldURI](extendedfielduri.md) <br/> |設定する拡張 MAPI プロパティを識別します。  <br/> |
+|[アイテム](item.md) <br/> |Exchange ストア内のアイテムを表します。  <br/> |
+|[Message](message-ex15websvcsotherref.md) <br/> |更新する Exchange 電子メールメッセージを表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |更新する Exchange 予定表アイテムを表します。  <br/> |
+|[連絡先](contact.md) <br/> |更新する Exchange の連絡先アイテムを表します。  <br/> |
 |[DistributionList](distributionlist.md) <br/> |更新する配布リストを表します。  <br/> |
-|[MeetingMessage](meetingmessage.md) <br/> |会議を更新するメッセージを表します。  <br/> |
+|[MeetingMessage](meetingmessage.md) <br/> |更新する会議メッセージを表します。  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |更新する会議出席依頼を表します。  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |更新するのには会議の返信を表します。  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |更新するのには、会議の取り消し通知を表します。  <br/> |
-|[タスク](task.md) <br/> |更新するタスクを表します。  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |更新する会議の応答を表します。  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |更新する会議の取り消しを表します。  <br/> |
+|[Task](task.md) <br/> |更新するタスクを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Updates (Item)](updates-item.md) <br/> |定義する要素のセットが含まれていて、このオプションを設定すると、アイテムのプロパティの変更を削除します。  <br/> |
+|[Updates (Item)](updates-item.md) <br/> |アイテムのプロパティに対する追加、設定、および削除の変更を定義する一連の要素が含まれています。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

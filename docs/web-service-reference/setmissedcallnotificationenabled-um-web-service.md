@@ -11,16 +11,16 @@ api_type:
 - schema
 ms.assetid: db01f574-ab6c-45c2-aaac-404cec37790b
 description: SetMissedCallNotificationEnabled 要素は、SetMissedCallNotificationEnabled 操作 (UM web サービス) 要求の要求を定義します。
-ms.openlocfilehash: 0e556dec70ba0092fb2889b8c384f4952571dbab
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 9e498c1e100dfbbfc007c33df9728d312384522f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833435"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468167"
 ---
 # <a name="setmissedcallnotificationenabled-um-web-service"></a>SetMissedCallNotificationEnabled (UM web サービス)
 
-**SetMissedCallNotificationEnabled**要素は、 [SetMissedCallNotificationEnabled 操作 (UM web サービス)](setmissedcallnotificationenabled-operation-um-web-service.md)要求の要求を定義します。 
+**SetMissedCallNotificationEnabled**要素は、 [SETMISSEDCALLNOTIFICATIONENABLED 操作 (UM web サービス)](setmissedcallnotificationenabled-operation-um-web-service.md)要求の要求を定義します。 
   
 [SetMissedCallNotificationEnabled (UM web サービス)](setmissedcallnotificationenabled-um-web-service.md)
   
@@ -31,7 +31,7 @@ ms.locfileid: "19833435"
 ```
 
  **complexType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -41,9 +41,9 @@ ms.locfileid: "19833435"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[状態 (UM web サービス - SetMissedCallNotificationEnabled)](status-um-web-servicesetmissedcallnotificationenabled.md) <br/> |[SetMissedCallNotificationEnabled 操作 (UM web サービス)](setmissedcallnotificationenabled-operation-um-web-service.md)の要求で使用する値を定義します。  <br/> |
+|[状態 (UM web サービス-SetMissedCallNotificationEnabled)](status-um-web-servicesetmissedcallnotificationenabled.md) <br/> |[SetMissedCallNotificationEnabled 操作 (UM web サービス)](setmissedcallnotificationenabled-operation-um-web-service.md)要求で使用する値を定義します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -53,14 +53,14 @@ ms.locfileid: "19833435"
 
 なし。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |スキーマ名  <br/> |メッセージ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -1,5 +1,5 @@
 ---
-title: LoginName (POX)
+title: ログイン (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,19 +8,19 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 47495d87-23c9-4d51-9f38-8c1d31f937aa
-description: LoginName 要素は、ユーザーのログオン名を指定します。
-ms.openlocfilehash: dbc0d9cfa6d640c39b64174c144d6d05bc2add78
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: "\"Login/ログイン名\" 要素は、ユーザーのログオン名を指定します。"
+ms.openlocfilehash: a4fffc3c3f4b2a46a660de19a184d99bdf37e3b0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832250"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467817"
 ---
-# <a name="loginname-pox"></a>LoginName (POX)
+# <a name="loginname-pox"></a>ログイン (POX)
 
-**LoginName**要素は、ユーザーのログオン名を指定します。 
+"Login/**ログイン**名" 要素は、ユーザーのログオン名を指定します。 
   
-[(POX) を自動検出](autodiscover-pox.md)
+[自動検出 (POX)](autodiscover-pox.md)
   
 [応答 (POX)](response-pox.md)
   
@@ -28,13 +28,13 @@ ms.locfileid: "19832250"
   
 [プロトコル (POX)](protocol-pox.md)
   
-[LoginName (POX)](loginname-pox.md)
+[ログイン (POX)](loginname-pox.md)
   
 ```xml
 <LoginName/>
 ```
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -50,15 +50,15 @@ ms.locfileid: "19832250"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
+|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、ユーザーのログオン名を指定します。
+Text 値は、ユーザーのログオン名を指定します。
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[交換の POX の自動検出の XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+[Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
 

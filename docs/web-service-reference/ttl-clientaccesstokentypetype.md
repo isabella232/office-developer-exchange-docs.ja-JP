@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: cc8f8caa-fced-49b6-9861-d112590b218a
-description: TTL 要素では、トークンの値に時刻を示します。
-ms.openlocfilehash: 04bd8124c7bd2b02e2ab1cc47ee1d4dca4847079
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: TTL 要素は、トークンの time to live 値を示します。
+ms.openlocfilehash: 0275e97ce02e41cc377f4003aee12c6fff0995e2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839755"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467390"
 ---
 # <a name="ttl-clientaccesstokentypetype"></a>TTL (ClientAccessTokenTypeType)
 
-**TTL**要素では、トークンの値に時刻を示します。 
+**TTL**要素は、トークンの time to live 値を示します。 
   
 ```XML
 <TTL></TTL>
 ```
 
- **整数**
-## <a name="attributes-and-elements"></a>属性および要素
+ **以外**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -38,25 +38,25 @@ ms.locfileid: "19839755"
   
 ### <a name="parent-elements"></a>親要素
 
-[TokenRequest](tokenrequest.md) | [トークン](token.md)
+[Tokenrequest](tokenrequest.md)  | [トークン](token.md)
   
 ## <a name="text-value"></a>テキスト値
 
 **TTL**要素のテキスト値は、トークンが有効である期間を示します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> |false  <br/> |
    
 

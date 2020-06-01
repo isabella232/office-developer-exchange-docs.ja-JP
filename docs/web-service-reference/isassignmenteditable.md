@@ -1,5 +1,5 @@
 ---
-title: IsAssignmentEditable
+title: Is割り当て編集可能
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 0ddf9181-f65e-4ad6-ad69-7b074ea0f2e7
-description: IsAssignmentEditable 要素は、タスクの種類を表します。
-ms.openlocfilehash: 91922c4d6abd4d88ac9e36dd3d4c0224fc1ee716
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Is/編集可能な要素は、タスクの種類を表します。
+ms.openlocfilehash: 5eb091b24e2c97f7aa6072044fed998b6c9c1651
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831992"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468055"
 ---
-# <a name="isassignmenteditable"></a>IsAssignmentEditable
+# <a name="isassignmenteditable"></a>Is割り当て編集可能
 
-**IsAssignmentEditable**要素は、タスクの種類を表します。 
+**Is/編集可能**な要素は、タスクの種類を表します。 
   
 ```xml
 <IsAssignmentEditable/>
 ```
 
- **整数**
-## <a name="attributes-and-elements"></a>属性および要素
+ **以外**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,37 +44,37 @@ ms.locfileid: "19831992"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[タスク](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
+|[Task](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-このプロパティは値の取得のみ可能です。 次の表は、可能な値を一覧します。
+このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 次の表に、使用可能な値を示します。
   
 |**値**|**説明**|
 |:-----|:-----|
-|0  <br/> |すべての作業項目の既定値です。  <br/> |
-|1  <br/> |仕事の依頼です。  <br/> |
-|2  <br/> |仕事の依頼の受信者からの仕事の承諾します。  <br/> |
-|3  <br/> |仕事の依頼の受信者からのタスクの拒否します。  <br/> |
-|4  <br/> |前の仕事の依頼を更新します。  <br/> |
-|5  <br/> |使用されません。  <br/> |
+|.0  <br/> |すべてのタスクアイテムの既定値。  <br/> |
+|1   <br/> |仕事の依頼。  <br/> |
+|pbm-2  <br/> |タスクの依頼の受信者からのタスクの承諾。  <br/> |
+|1/3  <br/> |仕事の依頼の受信者からのタスク declination。  <br/> |
+|4   <br/> |以前のタスクの依頼に対する更新。  <br/> |
+|5   <br/> |不使用。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

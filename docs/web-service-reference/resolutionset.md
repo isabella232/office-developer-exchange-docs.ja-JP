@@ -1,5 +1,5 @@
 ---
-title: ResolutionSet
+title: 解像度セット
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 43d5b876-0e87-4414-9b1d-bff1c1ec825c
-description: ResolutionSet 要素には、あいまいな名前の解決策の配列が含まれています。
-ms.openlocfilehash: ad7bd31c85051e8c80aea25aa9e6f2914cf0ad01
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 解像度セット要素には、あいまいな名前の解決の配列が含まれています。
+ms.openlocfilehash: 483a096a7fcedbabe25758ebcaa31c83405a0ad4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833160"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467173"
 ---
-# <a name="resolutionset"></a>ResolutionSet
+# <a name="resolutionset"></a>解像度セット
 
-**ResolutionSet**要素には、あいまいな名前の解決策の配列が含まれています。 
+解像度**セット**要素には、あいまいな名前の解決の配列が含まれています。 
   
 [ResolveNamesResponse](resolvenamesresponse.md)
   
@@ -29,7 +29,7 @@ ms.locfileid: "19833160"
   
 [ResolveNamesResponseMessage](resolvenamesresponsemessage.md)
   
-[ResolutionSet](resolutionset.md)
+[解像度セット](resolutionset.md)
   
 ```xml
 <ResolutionSet IndexedPagingOffset="" NumeratorOffset="" AbsoluteDenominator="" IncludesLastItemInRange="" TotalItemsInView="">
@@ -37,8 +37,8 @@ ms.locfileid: "19833160"
 </ResolutionSet>
 ```
 
- **ArrayOfResolutionType**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Arrayof解像度の種類**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -46,38 +46,38 @@ ms.locfileid: "19833160"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**IndexedPagingOffset** <br/> |次に、インデックス付きページング ビューを使用しているときに次の要求に使用するインデックスを表します。  <br/> |
-|**NumeratorOffset** <br/> |分数のページ ビューを使用しているときに、次の要求に使用する新しい分子の値を表します。  <br/> |
-|**AbsoluteDenominator** <br/> |分母分数のページ ビューを使用しているときに、次の要求に使用するを表します。  <br/> |
-|**IncludesLastItemInRange** <br/> |追加のページングが必要ないように、この属性が true の場合、現在の結果には、クエリの最後の項目が含まれているされます。  <br/> |
-|**TotalItemsInView** <br/> |ビュー内の項目の合計数を表します。  <br/> |
+|**IndexedPagingOffset** <br/> |インデックス付きのページビューを使用している場合に、次の要求に使用する必要がある次のインデックスを表します。  <br/> |
+|**NumeratorOffset** <br/> |分数のページビューを使用しているときに、次の要求に対して使用する新しい分子の値を表します。  <br/> |
+|**AbsoluteDenominator** <br/> |分数のページビューを使用しているときに、次の要求に対して使用する次の分母を表します。  <br/> |
+|**IncludesLastItemInRange** <br/> |現在の結果にクエリの最後のアイテムが含まれている場合は、この属性は true になり、追加のページングは必要ありません。  <br/> |
+|**TotalItemsInView** <br/> |ビュー内のアイテムの合計数を表します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[解決策](resolution.md) <br/> |解決された 1 つのエンティティが含まれています。  <br/> |
+|[Resolution](resolution.md) <br/> |1つの解決済みエンティティを含みます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ResolveNamesResponseMessage](resolvenamesresponsemessage.md) <br/> |ResolveNames 要求の結果ステータスを格納します。  <br/> |
+|[ResolveNamesResponseMessage](resolvenamesresponsemessage.md) <br/> |ResolveNames 要求の状態と結果を格納します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**ResolutionSet**要素には、100 の解決されたエンティティの最大を含めることができます。 
+**解像度セット**要素には、最大100個の解決済みエンティティを含めることができます。 
   
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -90,5 +90,5 @@ ms.locfileid: "19833160"
 [ResolveNames 操作](resolvenames-operation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

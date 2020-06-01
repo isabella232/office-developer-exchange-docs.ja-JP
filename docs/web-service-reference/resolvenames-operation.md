@@ -11,35 +11,35 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6b4eb4b3-9ad6-4804-a09f-7e20cfea4dbb
-description: ResolveNames 操作解決あいまいな電子メール アドレスと表示名です。
-ms.openlocfilehash: 8443cf834dfdf104daeaaa92fdee3742c3fa3719
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ResolveNames 操作は、あいまいな電子メールアドレスと表示名を解決します。
+ms.openlocfilehash: 51728addddd2bfb9d35b874ae8c11e83a4c8629b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833162"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468279"
 ---
 # <a name="resolvenames-operation"></a>ResolveNames 操作
 
-**ResolveNames**操作解決あいまいな電子メール アドレスと表示名です。 
+**ResolveNames**操作は、あいまいな電子メールアドレスと表示名を解決します。 
   
-## <a name="using-the-resolvenames-operation"></a>ResolveNames 操作を使用します。
+## <a name="using-the-resolvenames-operation"></a>ResolveNames 操作の使用
 
-エイリアスを確認し、適切なメールボックスのユーザーに表示名を解決するのには、この操作を使用できます。 あいまいな名前が存在する場合、 **ResolveNames**操作の応答は、クライアント アプリケーションは、名前を解決できるよう、各メールボックスのユーザーに関する情報を提供します。 
+この操作は、エイリアスを確認し、表示名を適切なメールボックスユーザーに解決するために使用できます。 あいまいな名前が存在する場合、 **ResolveNames**操作の応答は、クライアントアプリケーションが名前を解決できるように、各メールボックスユーザーに関する情報を提供します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-ResolveNames 応答では、最大 100 の候補を返します。 返される 100 の候補は、検索操作で発生した最初の 100 人です。
+ResolveNames 応答は、最大100の候補を返します。 返される100候補は、参照操作で検出された最初の100です。
   
-プレフィックスが付けられたルーティングなど、smtp または sip、電子メール アドレスは、複数値配列に保存されます。 **ResolveNames**操作は、ルーティングの種類を「sip:User1@Contoso.com」など、未解決の名前の先頭に追加するときに、その配列の各値に対して部分的一致を実行します。 ルーティングの種類を指定しない場合**ResolveNames**が既定の smtp ルーティングの種類に、照合するプライマリ smtp アドレスのプロパティでは、および複数値の配列を検索します。 
+Smtp、sip などのプレフィックス付きルーティングタイプを持つ電子メールアドレスは、複数値配列に保存されます。 **ResolveNames**操作は、未解決の名前の先頭 ("sip:User1@Contoso.com" など) にルーティングの種類を追加するときに、その配列の各値に対して部分一致を実行します。 ルーティングの種類を指定しない場合、 **ResolveNames**は smtp のルーティングの種類を既定で設定し、それをプライマリ smtp アドレスプロパティに一致させ、複数値配列は検索しません。 
   
-1 つの要求では、1 つだけのあいまいな名前を指定できます。 最初に active Directory を検索し、ユーザーの連絡先フォルダーを検索し、します。 GetItem 要求で使用できる null 以外の**ItemId**プロパティがあるユーザーの連絡先フォルダーからエントリを解決します。 個人用配布リストの ID である場合は、 [ExpandDL の操作](expanddl-operation.md)で使用できます。 **ReturnFullContactData**属性は、 **true**に設定されている場合**ResolveNames**操作で Active Directory エントリの間で[連絡先](contact.md)を記述する追加のプロパティが返されます。 **ReturnFullContactData**属性は、メンバーとプライベートで返されるデータには影響は、ユーザーの連絡先フォルダーから配布リストを使用します。 
+1つの要求で指定できるあいまいな名前は1つだけです。 Active Directory が最初に検索されてから、ユーザーの連絡先フォルダーが検索されます。 解決されたユーザーの連絡先フォルダーのエントリには、非 null の**ItemId**プロパティがあります。このプロパティは、GetItem 要求で使用できます。 プライベート配布リストの ID である場合は、 [Expanddl 操作](expanddl-operation.md)で使用できます。 **Returnfullcontactdata**属性が**true**に設定されている場合、 **ResolveNames**操作で見つかった Active Directory エントリは、[連絡先](contact.md)を記述する追加のプロパティを返します。 **Returnfullcontactdata**属性は、ユーザーの連絡先フォルダーから連絡先およびプライベート配布リストに対して返されるデータには影響しません。 
   
 ## <a name="resolvenames-request-example"></a>ResolveNames 要求の例
 
 ### <a name="description"></a>説明
 
-**ResolveNames**要求の次の例では、ユーザーのエントリを解決する方法を示します。
+次の**ResolveNames**要求の例は、ユーザーのエントリを解決する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -48,10 +48,10 @@ ResolveNames 応答では、最大 100 の候補を返します。 返される 
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <ResolveNames xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-                  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+    <ResolveNames xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+                  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
                   ReturnFullContactData="true">
       <UnresolvedEntry>User2</UnresolvedEntry>
     </ResolveNames>
@@ -61,32 +61,32 @@ ResolveNames 応答では、最大 100 の候補を返します。 返される 
 
 ### <a name="comments"></a>コメント
 
-この要求への応答は"Jo"または「マイル」で始まるすべてのエントリを返す 返されたアイテムは、パブリックのメールボックス、パブリックとプライベートの配布リスト、および連絡先です。
+この要求への応答では、"Jo" または "Mi" で始まるすべてのエントリが返されます。 返されるアイテムは、パブリックメールボックス、パブリックおよびプライベート配布リスト、および連絡先です。
   
 > [!NOTE]
-> 既定の個人用連絡先フォルダー内の連絡先だけが検索されます。 
+> 既定の個人用連絡先フォルダー内の連絡先のみが検索されます。 
   
-**ResolveNames**要求の可能な結果は、次のように。 
+**ResolveNames**要求に対して考えられる結果は次のとおりです。 
   
-- 解決されたエンティティが含まれていない応答を返します**ResponseClass**属性値**エラー**と同じです。 **メッセージ テキスト**要素には「が**ない結果があります**。
+- 解決されたエンティティを含まない応答は、**エラー**と等しい**ResponseClass**属性値を返します。 **Messagetext**要素には、"**結果が見つかりません**" が含まれています。
     
-- 1 つの解決されたエンティティを含む応答を返します**ResponseClass**属性値**成功した場合**と同じです。
+- 1つの解決されたエンティティを含む応答は、**成功**と等しい**ResponseClass**属性値を返します。
     
-- 複数の可能なエンティティを含む応答を返します**ResponseClass**属性の値**の警告**と同じ。 この例では、エンティティは、一意の id を解決できませんでした。 [複数の結果が見つかりました"**メッセージ テキスト**要素が含まれます 
+- 複数の可能なエンティティが含まれる応答は、**警告**と同じ**ResponseClass**属性値を返します。 この場合、エンティティを一意の id に解決できませんでした。 **Messagetext**要素には、"複数の結果が見つかりました" という文字列が含まれています。 
     
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-次の要素は、要求で使用されます。
+要求では、次の要素が使用されます。
   
 - [ResolveNames](resolvenames.md)
     
 - [UnresolvedEntry](unresolvedentry.md)
     
-## <a name="successful-resolvenames-operation-response-example"></a>ResolveNames 操作の正常な応答例
+## <a name="successful-resolvenames-operation-response-example"></a>成功した ResolveNames 操作の応答の例
 
 ### <a name="description"></a>説明
 
-**ResolveNames**要求に正常な応答の例を次に示します。 
+次の例は、 **ResolveNames**要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -97,12 +97,12 @@ ResolveNames 応答では、最大 100 の候補を返します。 返される 
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <ResolveNamesResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                          xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <ResolveNamesResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                          xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:ResolveNamesResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -130,9 +130,9 @@ ResolveNames 応答では、最大 100 の候補を返します。 返される 
 </soap:Envelope>
 ```
 
-### <a name="successful-resolvenames-response-elements"></a>ResolveNames 応答の成功の要素
+### <a name="successful-resolvenames-response-elements"></a>Successful ResolveNames response 要素
 
-次の要素は、応答で使用されます。
+応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -144,35 +144,35 @@ ResolveNames 応答では、最大 100 の候補を返します。 返される 
     
 - [ResponseCode](responsecode.md)
     
-- [ResolutionSet](resolutionset.md)
+- [解像度セット](resolutionset.md)
     
-- [解決策](resolution.md)
+- [Resolution](resolution.md)
     
 - [メールボックス](mailbox.md)
     
-- [名 (EmailAddressType)](name-emailaddresstype.md)
+- [Name (EmailAddressType)](name-emailaddresstype.md)
     
-- [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
+- [EmailAddress (非 Emptystringtype)](emailaddress-nonemptystringtype.md)
     
 - [RoutingType (EmailAddressType)](routingtype-emailaddresstype.md)
     
 - [MailboxType](mailboxtype.md)
     
-- [Contact](contact.md)
+- [連絡先](contact.md)
     
-- [表示名 (文字列)](displayname-string.md)
+- [DisplayName (文字列)](displayname-string.md)
     
 - [EmailAddresses](emailaddresses.md)
     
-- [エントリ (EmailAddress)](entry-emailaddress.md)
+- [Entry (EmailAddress)](entry-emailaddress.md)
     
 - [ContactSource](contactsource.md)
     
-## <a name="resolvenames-operation-error-response"></a>ResolveNames 操作のエラー応答
+## <a name="resolvenames-operation-error-response"></a>ResolveNames 操作エラー応答
 
 ### <a name="description"></a>説明
 
-**ResolveNames**要求に対してエラー応答の例を次に示します。 解決できない名前を解決しようとしてエラーが発生します。 
+次の例は、 **ResolveNames**要求に対するエラー応答を示しています。 解決できない名前を解決しようとすると、エラーが発生します。 
   
 ### <a name="code"></a>コード
 
@@ -183,12 +183,12 @@ ResolveNames 応答では、最大 100 の候補を返します。 返される 
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <ResolveNamesResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                          xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <ResolveNamesResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                          xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:ResolveNamesResponseMessage ResponseClass="Error">
           <m:MessageText>No results were found.</m:MessageText>
@@ -201,7 +201,7 @@ ResolveNames 応答では、最大 100 の候補を返します。 返される 
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a>エラー応答の要素
+### <a name="error-response-elements"></a>エラー応答要素
 
 エラー応答では、次の要素が使用されます。
   
@@ -226,5 +226,5 @@ ResolveNames 応答では、最大 100 の候補を返します。 返される 
 [ExpandDL 操作](expanddl-operation.md)
 
 
-[名前解決の使用](http://msdn.microsoft.com/library/9257fb07-89d2-46eb-b885-e2173fe6fbc1%28Office.15%29.aspx)
+[名前解決の使用](https://msdn.microsoft.com/library/9257fb07-89d2-46eb-b885-e2173fe6fbc1%28Office.15%29.aspx)
 

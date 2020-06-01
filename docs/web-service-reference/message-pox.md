@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: b0124b70-28ab-4484-ac81-465a42f42776
-description: メッセージ要素には、エラーの自動検出の応答のエラー メッセージが含まれています。
-ms.openlocfilehash: fdcf2f4c7021948aad1ad25392c91203656aaa75
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Message 要素には、エラー自動検出応答のエラーメッセージが含まれています。
+ms.openlocfilehash: 5e2f9d5b2f9ad45359f180f1121a34ccf9cd89cc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832448"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44467992"
 ---
 # <a name="message-pox"></a>メッセージ (POX)
 
-**メッセージ**要素には、エラーの自動検出の応答のエラー メッセージが含まれています。 
+**Message**要素には、エラー自動検出応答のエラーメッセージが含まれています。 
   
 [エラー (POX)](error-pox.md)
   
@@ -28,7 +28,7 @@ ms.locfileid: "19832448"
 <Message/>
 ```
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,15 +44,15 @@ ms.locfileid: "19832448"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[エラー (POX)](error-pox.md) <br/> |自動検出エラー応答が含まれています。  <br/> |
+|[エラー (POX)](error-pox.md) <br/> |自動検出エラー応答を格納します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、エラーの自動検出の応答のエラー メッセージを表します。
+Text 値は、エラー自動検出応答のエラーメッセージを表します。
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[交換の POX の自動検出の XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+[Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
 

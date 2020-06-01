@@ -11,26 +11,26 @@ api_name:
 api_type:
 - schema
 ms.assetid: a88cbe99-7968-454d-a545-4f92c330909f
-description: UploadItems 操作は、Exchange メールボックスに、項目のストリームをアップロードします。
-ms.openlocfilehash: 6b002d531c7011b18ae1f88adfc2923d5a51e81c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: UploadItems 操作は、アイテムのストリームを Exchange メールボックスにアップロードします。
+ms.openlocfilehash: 57e722c7775baa090736875077781cee869c3b01
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839898"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468503"
 ---
 # <a name="uploaditems-operation"></a>UploadItems 操作
 
-**UploadItems**操作は、Exchange メールボックスに、項目のストリームをアップロードします。 
+**UploadItems**操作は、アイテムのストリームを Exchange メールボックスにアップロードします。 
   
 > [!IMPORTANT]
-> **UploadItems**操作は、MicrosoftExchange Server 2010 Service Pack 1 (SP1) で 25 MB の base64 でエンコードされたデータのインポートの最大ペイロードに制限されます。 設定は、web.config ファイルで変更できます。 
+> **UploadItems**操作は、Microsoft exchange Server 2010 Service Pack 1 (SP1) では、base64 でエンコードされたデータの最大値である25mb に制限されています。 この設定は、web.config ファイルで変更できます。 
   
 ## <a name="uploaditems-request-example"></a>UploadItems 要求の例
 
 ### <a name="description"></a>説明
 
-**UploadItems**要求の次の例では、メールボックスに 2 つのアイテムをアップロードする方法を示します。 最初の項目は、新しいアイテムです。 2 番目の項目は、メールボックス内の既存のアイテムの更新されたバージョンです。 
+次の**UploadItems**要求の例は、2つのアイテムをメールボックスにアップロードする方法を示しています。 最初のアイテムは新しいアイテムです。 2番目のアイテムは、メールボックス内の既存のアイテムの更新バージョンです。 
   
 ### <a name="code"></a>コード
 
@@ -39,8 +39,8 @@ ms.locfileid: "19839898"
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010_SP1" />
   </soap:Header>
@@ -80,11 +80,11 @@ ms.locfileid: "19839898"
 
 ### <a name="comments"></a>コメント
 
-識別子は、アイテムのデータは、読みやすさを保持するために短縮されています。
+読みやすくするために、識別子とアイテムデータが短縮されています。
   
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-次の要素は、要求で使用されます。
+要求では、次の要素が使用されます。
   
 - [RequestServerVersion](requestserverversion.md)
     
@@ -92,19 +92,19 @@ ms.locfileid: "19839898"
     
 - [アイテム (NonEmptyArrayOfUploadItemsType)](items-nonemptyarrayofuploaditemstype.md)
     
-- [項目 (UploadItemType)](item-uploaditemtype.md)
+- [Item (UploadItemType)](item-uploaditemtype.md)
     
 - [ParentFolderId](parentfolderid.md)
     
-- [データ (base64Binary)](data-base64binary.md)
+- [Data (base64Binary)](data-base64binary.md)
     
 - [ItemId](itemid.md)
     
-## <a name="successful-uploaditems-response-example"></a>成功した UploadItems の応答の例
+## <a name="successful-uploaditems-response-example"></a>Successful UploadItems response の例
 
 ### <a name="description"></a>説明
 
-**UploadItems**要求に正常な応答の例を次に示します。 
+次の例は、 **UploadItems**要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -117,15 +117,15 @@ ms.locfileid: "19839898"
                          MajorBuildNumber="164"
                          MinorBuildNumber="0"
                          Version="Exchange2010_SP1"
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:UploadItemsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                           xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:UploadItemsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                           xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:UploadItemsResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -143,11 +143,11 @@ ms.locfileid: "19839898"
 
 ### <a name="comments"></a>コメント
 
-アイテム識別子は、読みやすさを保持するために短縮されています。
+読みやすくするために、アイテム識別子が短縮されています。
   
-### <a name="response-elements"></a>応答の要素
+### <a name="response-elements"></a>Response 要素
 
-次の要素は、応答で使用されます。
+応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -165,7 +165,7 @@ ms.locfileid: "19839898"
 
 ### <a name="description"></a>説明
 
-メールボックスに存在しないアイテムを更新しようとして発生したエラーが含まれている**UploadItems**の要求に対する応答の例を次に示します。 
+次の例は、 **UploadItems**要求に対する応答を示しています。これは、メールボックス内に見つからないアイテムを更新しようとしたために発生したエラーを含んでいます。 
   
 ### <a name="code"></a>コード
 
@@ -178,15 +178,15 @@ ms.locfileid: "19839898"
                          MajorBuildNumber="164" 
                          MinorBuildNumber="0" 
                          Version="Exchange2010_SP1" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:UploadItemsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                           xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:UploadItemsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                           xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:UploadItemsResponseMessage ResponseClass="Error">
           <m:MessageText>The specified object was not found in the store.</m:MessageText>
@@ -199,7 +199,7 @@ ms.locfileid: "19839898"
 </s:Envelope>
 ```
 
-### <a name="error-response-elements"></a>エラー応答の要素
+### <a name="error-response-elements"></a>エラー応答要素
 
 エラー応答では、次の要素が使用されます。
   
@@ -224,7 +224,7 @@ ms.locfileid: "19839898"
 [ExportItems 操作](exportitems-operation.md)
 
 
-[Exchange での EWS の操作](ews-operations-in-exchange.md)
+[Exchange での EWS 操作](ews-operations-in-exchange.md)
   
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

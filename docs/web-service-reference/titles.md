@@ -1,5 +1,5 @@
 ---
-title: タイトル
+title: 自体
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8f4fa52b-e98e-4678-90cc-299bcbb7bac3
-description: タイトル要素では、役職名の配列と関連付けられているペルソナにそのソースの帰属の識別子を指定します。
-ms.openlocfilehash: d0d5e14594178138ea5f099e53bce07f56d8ed0a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Titles 要素には、関連付けられているペルソナのジョブタイトルの配列とソース attributions の識別子を指定します。
+ms.openlocfilehash: 0c61c0eb317209020ce194d2a7fae21709cbc592
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839707"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467880"
 ---
-# <a name="titles"></a>タイトル
+# <a name="titles"></a>自体
 
-**タイトル**要素では、役職名の配列と関連付けられているペルソナにそのソースの帰属の識別子を指定します。 
+**Titles**要素には、関連付けられているペルソナのジョブタイトルの配列とソース attributions の識別子を指定します。 
   
 ```XML
 <Titles>
@@ -26,7 +26,7 @@ ms.locfileid: "19839707"
 ```
 
  **ArrayOfStringAttributedValuesType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,21 +40,21 @@ ms.locfileid: "19839707"
   
 ### <a name="parent-elements"></a>親要素
 
-[ペルソナ](persona.md)
+[ユーザー](persona.md)
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

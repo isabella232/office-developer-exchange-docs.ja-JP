@@ -10,23 +10,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 2c92d914-bdee-4337-b3ea-0655fdb658e9
-description: SetTelephoneAccessFolderEmail 操作では、ユニファイド メッセージングはの読み取り元メッセージのユーザーに電話でフォルダーを設定します。
-ms.openlocfilehash: 9497e58f66b8efcf7e358aa529223942298a3bed
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: SetTelephoneAccessFolderEmail 操作は、ユニファイドメッセージングが電話でユーザーにメッセージを読み取るためのフォルダーを設定します。
+ms.openlocfilehash: a2bb630f812ca811b4cbe68db1308dc18e5d3ba0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833459"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467334"
 ---
 # <a name="settelephoneaccessfolderemail-operation-um-web-service"></a>SetTelephoneAccessFolderEmail 操作 (UM web サービス)
 
-SetTelephoneAccessFolderEmail 操作では、ユニファイド メッセージングはの読み取り元メッセージのユーザーに電話でフォルダーを設定します。
+SetTelephoneAccessFolderEmail 操作は、ユニファイドメッセージングが電話でユーザーにメッセージを読み取るためのフォルダーを設定します。
   
 ## <a name="settelephoneaccessfolderemail-request-example"></a>SetTelephoneAccessFolderEmail 要求の例
 
 ### <a name="description"></a>説明
 
-SetTelephoneAccessFolderEmail 要求の次の例では、ユニファイド メッセージングはの読み取り元のユーザーに電話でフォルダーを設定する要求を作成する方法を示します。
+次の SetTelephoneAccessFolderEmail 要求の例は、ユニファイドメッセージングが電話でユーザーに返信するフォルダーを設定する要求を形成する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -34,18 +34,18 @@ SetTelephoneAccessFolderEmail 要求の次の例では、ユニファイド メ�
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <SetTelephoneAccessFolderEmail xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <SetTelephoneAccessFolderEmail xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <base64FolderID>AAAAAGsd2rbQLVtLobUGbrq/9IUBAEX2ikn/L8JJtI5WHI0FAW8AAAFXHhsAAA==</base64FolderID>
     </SetTelephoneAccessFolderEmail>
   </soap:Body>
 </soap:Envelope>
 ```
 
-## <a name="successful-settelephoneaccessfolderemail-response-example"></a>成功した SetTelephoneAccessFolderEmail の応答の例
+## <a name="successful-settelephoneaccessfolderemail-response-example"></a>Successful SetTelephoneAccessFolderEmail response の例
 
 ### <a name="description"></a>説明
 
-SetTelephoneAccessFolderEmail 要求への応答を SetTelephoneAccessFolderEmail の応答の例を次に示します。
+SetTelephoneAccessFolderEmail response の次の例は、SetTelephoneAccessFolderEmail 要求に対する応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -53,7 +53,7 @@ SetTelephoneAccessFolderEmail 要求への応答を SetTelephoneAccessFolderEmai
 <?xml version="1.0" encoding="utf-8" ?> 
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Body>
-    <SetTelephoneAccessFolderEmailResponse xmlns="http://schemas.microsoft.com/exchange/services/2006/messages" /> 
+    <SetTelephoneAccessFolderEmailResponse xmlns="https://schemas.microsoft.com/exchange/services/2006/messages" /> 
   </soap:Body>
 </soap:Envelope>
 ```

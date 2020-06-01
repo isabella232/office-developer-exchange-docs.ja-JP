@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 1eec24dd-c981-41f4-a2f0-c51d43f1d7c0
-description: メッセージ要素には、Office (OOF) の応答の出力が含まれています。
-ms.openlocfilehash: 9facd04767fdcc0fd9dfd84fc6badb1a7633d2b5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Message 要素に、不在 (OOF) 応答が含まれています。
+ms.openlocfilehash: 13d118422ccb5a2897c21b6d124f170bf461dbf6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832452"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44467005"
 ---
 # <a name="message-availability"></a>メッセージ (可用性)
 
-**メッセージ**要素には、Office (OOF) の応答の出力が含まれています。 
+**Message**要素に、不在 (OOF) 応答が含まれています。 
   
 ```xml
 <Message/> 
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,33 +44,33 @@ ms.locfileid: "19832452"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[InternalReply](internalreply.md) <br/> | 送信者のドメインの他のユーザーに送信される不在時のメッセージが含まれています。 <br/> <br/>  この要素に使用可能な XPath 式は、次のように。 <br/> <br/>  `/SetUserOofSettingsRequest/UserOofSettings/InternalReply` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/InternalReply` <br/> |
-|[ExternalReply](externalreply.md) <br/> | 送信者のドメインの外部アドレスに送信される不在時のメッセージが含まれています。  <br/> <br/> この要素に使用可能な XPath 式は、次のように。  <br/><br/>  `/SetUserOofSettingsRequest/UserOofSettings/ExternalReply` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/ExternalReply` <br/> |
+|[InternalReply](internalreply.md) <br/> | 送信者のドメイン内の他のユーザーに送信される OOF メッセージを含みます。 <br/> <br/>  この要素に使用できる XPath 式は次のとおりです。 <br/> <br/>  `/SetUserOofSettingsRequest/UserOofSettings/InternalReply` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/InternalReply` <br/> |
+|[ExternalReply](externalreply.md) <br/> | 送信者のドメイン外のアドレスに送信される OOF メッセージを含みます。  <br/> <br/> この要素に使用できる XPath 式は次のとおりです。  <br/><br/>  `/SetUserOofSettingsRequest/UserOofSettings/ExternalReply` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/ExternalReply` <br/> |
 |[ReplyBody](replybody.md) <br/> |不在時のメッセージと、メッセージに使用する言語が含まれています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-OOF メッセージを設定するのには、テキスト値が必要です。
+不在時のメッセージを設定するには、テキスト値が必要です。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
 ## <a name="example"></a>例
 
-[SetUserOofSettings 操作](setuseroofsettings-operation.md)要求の次の使用例は、 [OofState](oofstate.md)を**有効**に設定、不在時の期間を 10 日に設定し、内部と外部の OOF メッセージを設定します。
+[Setuseroofsettings 操作](setuseroofsettings-operation.md)要求の次の例では、 [Oofstate](oofstate.md)を**有効**に設定し、oof の時間を10日に設定し、内部および外部の oof メッセージを設定します。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <SetUserOofSettingsRequest xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-      <Mailbox xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+    <SetUserOofSettingsRequest xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+      <Mailbox xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <Name>David Alexander</Name>
         <Address>someone@example.com</Address>
         <RoutingType>SMTP</RoutingType>
       </Mailbox>
-      <UserOofSettings xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+      <UserOofSettings xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <OofState>Enabled</OofState>
         <ExternalAudience>All</ExternalAudience>
         <Duration>
@@ -89,17 +89,17 @@ OOF メッセージを設定するのには、テキスト値が必要です。
 </soap:Envelope>
 ```
 
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [SetUserOofSettings 操作](setuseroofsettings-operation.md)
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

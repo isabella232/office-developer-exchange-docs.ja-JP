@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0480b7f5-9312-4efe-bb37-9fffcd7e7a9d
-description: LocationUri 要素には、関連付けられている住所の統一リソース識別子 (URI) を指定する文字列が含まれています。
-ms.openlocfilehash: 19fe76e98a49d5badab0bb3f7604dccb72b9d668
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: LocationUri 要素には、関連する住所の Uniform Resource Identifier (URI) を指定する文字列が含まれています。
+ms.openlocfilehash: 1cf857e29b67fdacdb73fc5bd921973d7dbd481e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832298"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467096"
 ---
 # <a name="locationuri"></a>LocationUri
 
-**LocationUri**要素には、関連付けられている住所の統一リソース識別子 (URI) を指定する文字列が含まれています。 
+**Locationuri**要素には、関連する住所の Uniform resource IDENTIFIER (URI) を指定する文字列が含まれています。 
   
 ```XML
 <LocationUri></LocationUri>
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -38,13 +38,13 @@ ms.locfileid: "19832298"
   
 ### <a name="parent-elements"></a>親要素
 
-[値 (PersonaPostalAddressType)](value-personapostaladdresstype.md) | [(PersonaPostalAddressType) の住所](postaladdress-personapostaladdresstype.md)
+[Value (PersonaPostalAddressType)](value-personapostaladdresstype.md)  | ["Postaladdress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**LocationUri**要素のテキスト値は、郵便の宛先に関する情報への URI を指定する文字列です。 
+**Locationuri**要素のテキスト値は、郵便アドレスに関する情報への URI を指定する文字列です。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   

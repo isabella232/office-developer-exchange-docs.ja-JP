@@ -1,5 +1,5 @@
 ---
-title: データの個数
+title: カウント
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 68314b4a-1e17-4e21-9c2e-224d70ef7a32
-description: 数の要素には、競合 UpdateItem 操作の応答の数が含まれています。
-ms.openlocfilehash: 15cea49eb250336cdc6b7d551d53951aff1372c2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Count 要素には、UpdateItem 操作応答の競合の数が含まれています。
+ms.openlocfilehash: a43896a1b8b6a9d96ab02afe64f9e553639e478e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759788"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466760"
 ---
-# <a name="count"></a>データの個数
+# <a name="count"></a>カウント
 
-[数](count.md)の要素には、競合[UpdateItem 操作](updateitem-operation.md)の応答の数が含まれています。 
+[Count](count.md)要素には、 [updateitem 操作](updateitem-operation.md)応答の競合の数が含まれています。 
   
 [UpdateItemResponse](updateitemresponse.md)
   
@@ -38,7 +38,7 @@ ms.locfileid: "19759788"
 ```
 
  **int**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -54,24 +54,24 @@ ms.locfileid: "19759788"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ConflictResults](conflictresults.md) <br/> |[UpdateItem 操作](updateitem-operation.md)の応答の競合の数が含まれています。  <br/> |
+|[ConflictResults](conflictresults.md) <br/> |[Updateitem 操作](updateitem-operation.md)応答の競合の数を格納します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、競合[UpdateItem 操作](updateitem-operation.md)の応答の数を表す整数です。 
+テキスト値は、 [Updateitem 操作](updateitem-operation.md)応答の競合の数を表す整数です。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

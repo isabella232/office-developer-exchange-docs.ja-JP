@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 0e3e6e5f-06d0-499b-8ca4-d36036521658
-description: ParentFolderId 要素内のフォルダーを識別する新しいフォルダーを作成するか、FindConversation の操作を検索するフォルダーです。
-ms.openlocfilehash: 8e80b9b342274a8b2004838ebd16f8425a2d3fa3
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: ParentFolderId 要素は、新しいフォルダーを作成するフォルダー、または FindConversation 操作を検索するフォルダーを指定します。
+ms.openlocfilehash: 36e63266d10603c4d453a37e2b0d22e02599e516
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353827"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467803"
 ---
 # <a name="parentfolderid-targetfolderidtype"></a>ParentFolderId (TargetFolderIdType)
 
-**ParentFolderId**要素内のフォルダーを識別する新しいフォルダーを作成または[操作の FindConversation](findconversation-operation.md)を検索するフォルダーです。
+**ParentFolderId**要素は、新しいフォルダーを作成するフォルダー、または[findconversation 操作](findconversation-operation.md)を検索するフォルダーを指定します。
   
 ```xml
 <ParentFolderId>
@@ -37,9 +37,9 @@ ms.locfileid: "21353827"
 
 **TargetFolderIdType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
-**ParentFolderId**要素には、2 つの子要素が含まれています。 子要素は、スキーマ内で相互に排他的です。 
+**ParentFolderId**要素には、2つの子要素が含まれています。 子要素は、スキーマ内で相互に排他的です。 
   
 ### <a name="attributes"></a>属性
 
@@ -47,17 +47,17 @@ ms.locfileid: "21353827"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[FolderId](folderid.md) <br/> |必須の識別子とキーを含む、省略可能な変更でフォルダーの新しいフォルダーを作成または[FindConversation 操作](findconversation-operation.md)のために検索されるフォルダーです。 この要素を使用するには、 [DistinguishedFolderId](distinguishedfolderid.md)要素の使用が含まれません。  <br/> |
-|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Microsoft Exchange Server 2007 の既定のフォルダーを識別します。 この要素を使用して、[フォルダー Id](folderid.md)要素の使用が除外されます。  <br/> |
+|[FolderId](folderid.md) <br/> |新しいフォルダーを作成するフォルダーの必須の識別子と省略可能な change キー、および[Findconversation 操作](findconversation-operation.md)の検索先のフォルダーが含まれています。 この要素を使用すると、 [DistinguishedFolderId](distinguishedfolderid.md)要素の使用は除外されます。  <br/> |
+|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Microsoft Exchange Server 2007 の既定のフォルダーを識別します。 この要素を使用すると、 [FolderId](folderid.md)要素の使用は除外されます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[CreateFolder](createfolder.md) <br/> |Exchange データベース内のフォルダーを作成する要求を定義します。  <br/> この要素への XPath 式は、次のようにします。`/CreateFolder` <br/> |
-|[FindConversation](findconversation.md) <br/> |メールボックス内の会話を検索するための要求を定義します。  <br/> |
+|[CreateFolder](createfolder.md) <br/> |Exchange データベースにフォルダーを作成するための要求を定義します。  <br/> この要素の XPath 式を次に示します。`/CreateFolder` <br/> |
+|[FindConversation](findconversation.md) <br/> |メールボックス内のスレッドを検索する要求を定義します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -65,25 +65,25 @@ ms.locfileid: "21353827"
   
 ## <a name="remarks"></a>注釈
 
-2 つの子要素を使用して、新しいフォルダーを格納するフォルダーを定義します。 [フォルダー Id](folderid.md)または[DistinguishedFolderId](distinguishedfolderid.md)要素のいずれか、新しいフォルダーの親フォルダーを識別するを選択する必要があります。 同時に両方の要素を使用することはできません。 この要素は、フォルダーを作成する必要があります。 
+2つの子要素は、新しいフォルダーを格納するフォルダーを定義するために使用されます。 新しいフォルダーの親フォルダーを識別するには、 [FolderId](folderid.md)または[DistinguishedFolderId](distinguishedfolderid.md)のいずれかの要素を選択する必要があります。 両方の要素を同時に使用することはできません。 この要素は、フォルダーを作成するために必要です。 
   
-[ParentFolderId](parentfolderid.md)要素では、既存のアイテムとフォルダーの場所について説明します。 
+[ParentFolderId](parentfolderid.md)要素は、既存のアイテムとフォルダーの場所を表します。 
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - 
   [CreateFolder 操作](createfolder-operation.md)
 - [FindConversation 操作](findconversation-operation.md)
-- [フォルダー (Exchange Web サービス) を作成します。](http://msdn.microsoft.com/library/3b15b0ec-8691-45ed-9a24-a91ff732d6cf%28Office.15%29.aspx)
+- [フォルダーの作成 (Exchange Web サービス)](https://msdn.microsoft.com/library/3b15b0ec-8691-45ed-9a24-a91ff732d6cf%28Office.15%29.aspx)
 

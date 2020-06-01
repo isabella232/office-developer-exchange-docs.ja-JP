@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c2413f0b-8c03-46ae-9990-13338b3c53a6
-description: SortOrder 要素は、FindItem または FindConversation の要求の項目の並べ替え方法を定義します。
-ms.openlocfilehash: e20e5eab7972616c90079786abd78a0f7fedfebe
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 並べ替え要素は、FindItem または FindConversation 会話要求でアイテムを並べ替える方法を定義します。
+ms.openlocfilehash: b520bb3ca6daadc777e7235b2b7420a12e425048
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833519"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468370"
 ---
 # <a name="sortorder"></a>SortOrder
 
-**SortOrder**要素は、 **FindItem**または**FindConversation**の要求の項目の並べ替え方法を定義します。 
+並べ替え**要素は**、 **FindItem**または**findconversation 会話**要求でアイテムを並べ替える方法を定義します。 
   
 ```xml
 <SortOrder>
@@ -30,7 +30,7 @@ ms.locfileid: "19833519"
 ```
 
  **NonEmptyArrayOfFieldOrdersType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,44 +40,42 @@ ms.locfileid: "19833519"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[FieldOrder](fieldorder.md) <br/> |結果の並べ替えに使用する単一のフィールドを表し、並べ替えの方向を示します。 これらの要素の 1 つ以上が含まれている可能性があります。 [FieldOrder](fieldorder.md)要素は、並べ替えの指定された順序で適用されます。  <br/> |
+|[FieldOrder](fieldorder.md) <br/> |結果を並べ替えるための1つのフィールドを表し、並べ替えの方向を示します。 これらの要素の1つ以上を含めることができます。 [Fieldorder](fieldorder.md)要素は、並べ替えに指定された順序で適用されます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FindItem](finditem.md) <br/> |メールボックス内のアイテムを検索するための要求を定義します。  <br/> この要素への XPath 式は、次のようにします。`/FindItem` <br/> |
-|[FindConversation](findconversation.md) <br/> |メールボックス内の会話を検索するための要求を定義します。  <br/> |
+|[FindItem](finditem.md) <br/> |メールボックス内のアイテムを検索するための要求を定義します。  <br/> この要素の XPath 式を次に示します。`/FindItem` <br/> |
+|[FindConversation](findconversation.md) <br/> |メールボックス内のスレッドを検索する要求を定義します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-
-  [FindItem 操作](finditem-operation.md)
+[FindItem 操作](finditem-operation.md)
   
+[FindConversation 操作](findconversation-operation.md)
 
-  [FindConversation 操作](findconversation-operation.md)
 
-
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

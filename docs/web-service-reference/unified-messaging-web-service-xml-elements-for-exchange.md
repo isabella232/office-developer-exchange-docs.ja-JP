@@ -1,5 +1,5 @@
 ---
-title: ユニファイド メッセージング web サービスの XML 要素の交換
+title: Exchange 用のユニファイドメッセージング web サービスの XML 要素
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,28 +10,28 @@ api_name:
 api_type:
 - schema
 ms.assetid: 4f816453-383f-42b3-a48c-9a7c1d86a54d
-description: Exchange ユニファイド メッセージング (UM) web サービスの一部である XML 要素のリファレンス情報を検索します。
-ms.openlocfilehash: cfe075c9506f4a7cf4b3a3a914daea14e95bb975
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Exchange のユニファイドメッセージング (UM) web サービスの一部である XML 要素に関するリファレンス情報を検索します。
+ms.openlocfilehash: f1a3aa99a6649d033fad3ee0696177adb5835baa
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354415"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467369"
 ---
-# <a name="unified-messaging-web-service-xml-elements-for-exchange"></a>ユニファイド メッセージング web サービスの XML 要素の交換
+# <a name="unified-messaging-web-service-xml-elements-for-exchange"></a>Exchange 用のユニファイドメッセージング web サービスの XML 要素
 
-Exchange ユニファイド メッセージング (UM) web サービスの一部である XML 要素のリファレンス情報を検索します。
+Exchange のユニファイドメッセージング (UM) web サービスの一部である XML 要素に関するリファレンス情報を検索します。
   
-ユニファイド メッセージング (UM) の web サービスには、要求と、クライアントとサーバー間で送信される応答を定義するために使用する多くの XML 要素が含まれています。 このセクションでは、個々 の XML 要素についての情報を提供します。
+ユニファイドメッセージング (UM) web サービスには、クライアントとサーバーの間で送信される要求と応答を定義するために使用される多くの XML 要素が含まれています。 このセクションでは、個々の XML 要素について説明します。
   
 > [!NOTE]
-> Exchange が Exchange 2010 以降のバージョンでは、次の理由により、UM web サービスではなく[Exchange Web サービス (EWS)](http://msdn.microsoft.com/library/60285497-0c4e-4e51-84e1-34dd6d89a5d8%28Office.15%29.aspx)で利用可能な UM の操作を使用することお勧めします。 
-> - UM の EWS ベースの機能では、EWS のマネージ API でファースト クラスのサポートがあります。 
-> - Exchange が Exchange 2010 以降のバージョンでは、UM web サービスではなく、EWS に UM のすべての新機能が追加されます。 
+> Exchange 2010 以降のバージョンの Exchange では、次の理由から、UM web サービスではなく、 [Exchange Web Services (EWS)](https://msdn.microsoft.com/library/60285497-0c4e-4e51-84e1-34dd6d89a5d8%28Office.15%29.aspx)で使用可能な um 操作を使用することをお勧めします。 
+> - EWS ベースの UM 機能には、EWS マネージ API でのファーストクラスのサポートが含まれています。 
+> - Exchange 2010 以降のバージョンの Exchange では、すべての新しい UM 機能が EWS に追加されますが、UM web サービスには追加されません。 
   
 ## <a name="see-also"></a>関連項目
 
-- [Exchange ユニファイド メッセージング web サービス リファレンス](unified-messaging-web-service-reference-for-exchange.md)
+- [Exchange 用ユニファイドメッセージング web サービスのリファレンス](unified-messaging-web-service-reference-for-exchange.md)
 - [Exchange の自動検出](../exchange-web-services/autodiscover-for-exchange.md)
 - [Exchange で Web サービスの使用を開始する](../exchange-web-services/start-using-web-services-in-exchange.md)
     
