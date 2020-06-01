@@ -1,5 +1,5 @@
 ---
-title: PersonName
+title: Contact.personname
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: dbd102b8-db70-4196-affe-d7ed66bf3371
-description: PersonName 要素は、エンティティの抽出を使用して検出された個々 の名前を指定します。
-ms.openlocfilehash: 369839cd7ef49e29b570a60c12c9fcba0f6e887f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 個人名要素は、エンティティ抽出で見つかった個人の名前を指定します。
+ms.openlocfilehash: 7784cf1abb9098c181450baeb80468faf46c7d99
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832745"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44434086"
 ---
-# <a name="personname"></a>PersonName
+# <a name="personname"></a>Contact.personname
 
-**PersonName**要素は、エンティティの抽出を使用して検出された個々 の名前を指定します。 
+**個人名**要素は、エンティティ抽出で見つかった個人の名前を指定します。 
   
 ```XML
 <PersonName></PersonName>
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -38,25 +38,25 @@ ms.locfileid: "19832745"
   
 ### <a name="parent-elements"></a>親要素
 
-[連絡先 (ContactType)](contact-contacttype.md)
+[Contact (ContactType)](contact-contacttype.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**PersonName**要素のテキスト値は、エンティティの抽出結果の人の名前です。 
+**個人名**要素のテキスト値は、エンティティ抽出の結果として見つかった人物の名前です。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

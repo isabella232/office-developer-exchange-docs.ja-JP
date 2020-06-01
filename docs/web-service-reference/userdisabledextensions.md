@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c8294eee-6588-4e42-965d-c8261a4770c9
-description: UserDisabledExtensions 要素には、無効になっているアプリが一覧表示されます。
-ms.openlocfilehash: 4d2935779626337c2b5132fe0556a6d707516223
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: UserDisabledExtensions 要素は、無効にされたアプリを一覧表示します。
+ms.openlocfilehash: 42fd16f342e8c5a4f7a5526cb7513cf77ba8246f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839926"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44433680"
 ---
 # <a name="userdisabledextensions"></a>UserDisabledExtensions
 
-**UserDisabledExtensions**要素には、無効になっているアプリが一覧表示されます。 
+**UserDisabledExtensions**要素は、無効にされたアプリを一覧表示します。 
   
 ```XML
 <UserDisabledExtensions>
@@ -26,7 +26,7 @@ ms.locfileid: "19839926"
 ```
 
  **ArrayOfStringsType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -36,25 +36,25 @@ ms.locfileid: "19839926"
   
 ### <a name="child-elements"></a>子要素
 
-[文字列型 (String)](string.md)
+[String](string.md)
   
 ### <a name="parent-elements"></a>親要素
 
 [UserParameters](userparameters.md)
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

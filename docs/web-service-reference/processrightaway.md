@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: f6bba68b-ae4f-41c1-b3e7-c8a31cdb1b0c
-description: ProcessRightAway 要素は、アクションまたはアクションが完了した後に応答を送信するかどうかの処理を開始するとすぐに応答を送信するかどうかを示します。 この要素は、要求された操作を非同期に送信する応答のために存在する必要があります。
-ms.openlocfilehash: 940f8e8fa0a53801ce1c3a45c3aecf1bdb6f519d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ProcessRightAway 要素は、アクションがサーバーで処理を開始するとすぐに応答が送信されるか、またはアクションの完了後に応答が送信されるかを示します。 この要素は、要求されたアクションに応答を非同期送信するために存在する必要があります。
+ms.openlocfilehash: 58d2b926c48db5e7395df64e1f8ee9d6a8f0e73c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832898"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44434072"
 ---
 # <a name="processrightaway"></a>ProcessRightAway
 
-**ProcessRightAway**要素は、アクションまたはアクションが完了した後に応答を送信するかどうかの処理を開始するとすぐに応答を送信するかどうかを示します。 この要素は、要求された操作を非同期に送信する応答のために存在する必要があります。 
+**ProcessRightAway**要素は、アクションがサーバーで処理を開始するとすぐに応答が送信されるか、またはアクションの完了後に応答が送信されるかを示します。 この要素は、要求されたアクションに応答を非同期送信するために存在する必要があります。 
   
 [ApplyConversationAction](applyconversationaction.md)
   
@@ -35,8 +35,8 @@ ms.locfileid: "19832898"
 <ProcessRightAway/>
 ```
 
- **xs:boolean**
-## <a name="attributes-and-elements"></a>属性および要素
+ **xs: boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -52,24 +52,24 @@ ms.locfileid: "19832898"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ConversationAction](conversationaction.md) <br/> |1 つのテーマを適用する 1 つのアクションが含まれています。  <br/> |
+|[ConversationAction](conversationaction.md) <br/> |単一の会話に適用される1つのアクションが含まれます。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**True**の場合、テキスト値は、アクションがサーバー上で処理を開始すると、すぐに応答を送信することを示します。 **False**のテキスト値は、アクションが完了した後に応答を送信することを示します。 
+テキスト値が**true の場合**は、アクションがサーバー上で処理を開始するとすぐに応答が送信されることを示します。 テキスト値が**false**の場合は、アクションが完了した後に応答が送信されることを示します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web Services.This の要素がホストをで Exchange Server 2010 Service Pack 1 (SP1) を導入する IIS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -78,5 +78,5 @@ ms.locfileid: "19832898"
 [ApplyConversationAction 操作](applyconversationaction-operation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 
