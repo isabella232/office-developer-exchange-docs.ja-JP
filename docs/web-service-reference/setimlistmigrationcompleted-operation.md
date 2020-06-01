@@ -7,16 +7,16 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c5c0875b-b941-46a8-8297-1ba397e38442
-description: SetImListMigrationCompleted 操作は、一般的な使用のものではありません。
-ms.openlocfilehash: eca1e3670b554ab5d07d6dcdbe16bfc7e7461f53
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: SetImListMigrationCompleted 操作は、公開するためのものではありません。
+ms.openlocfilehash: 793859d33e3582a5d5a20f57ba1c1e62da0f95bf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833423"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44438041"
 ---
-# <a name="setimlistmigrationcompleted-operation"></a><span data-ttu-id="77d24-103">SetImListMigrationCompleted 操作</span><span class="sxs-lookup"><span data-stu-id="77d24-103">SetImListMigrationCompleted operation</span></span>
+# <a name="setimlistmigrationcompleted-operation"></a><span data-ttu-id="2f099-103">SetImListMigrationCompleted 操作</span><span class="sxs-lookup"><span data-stu-id="2f099-103">SetImListMigrationCompleted operation</span></span>
 
-<span data-ttu-id="77d24-104">SetImListMigrationCompleted 操作は、一般的な使用のものではありません。</span><span class="sxs-lookup"><span data-stu-id="77d24-104">The SetImListMigrationCompleted operation is not intended for public use.</span></span>
+<span data-ttu-id="2f099-104">SetImListMigrationCompleted 操作は、公開するためのものではありません。</span><span class="sxs-lookup"><span data-stu-id="2f099-104">The SetImListMigrationCompleted operation is not intended for public use.</span></span>
   
 

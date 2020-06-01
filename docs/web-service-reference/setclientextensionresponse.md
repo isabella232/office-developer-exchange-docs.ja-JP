@@ -8,16 +8,16 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: e335b166-3ddc-469e-81cb-5679bfad5c14
 description: SetClientExtensionResponse 要素には、SetClientExtension 要求への応答が含まれています。
-ms.openlocfilehash: 0d321dd6e1278cf7510858f1c2ea008d809a8b0e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 97c3a54c6bbaeb1bf22bc87505d7f7f59d10c20b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833397"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44438090"
 ---
-# <a name="setclientextensionresponse"></a><span data-ttu-id="2404c-103">SetClientExtensionResponse</span><span class="sxs-lookup"><span data-stu-id="2404c-103">SetClientExtensionResponse</span></span>
+# <a name="setclientextensionresponse"></a><span data-ttu-id="188ef-103">SetClientExtensionResponse</span><span class="sxs-lookup"><span data-stu-id="188ef-103">SetClientExtensionResponse</span></span>
 
-<span data-ttu-id="2404c-104">**SetClientExtensionResponse**要素には、 **SetClientExtension**要求への応答が含まれています。</span><span class="sxs-lookup"><span data-stu-id="2404c-104">The **SetClientExtensionResponse** element contains the response to a **SetClientExtension** request.</span></span> 
+<span data-ttu-id="188ef-104">**Setclientextensionresponse**要素には、 **setclientextension**要求への応答が含まれています。</span><span class="sxs-lookup"><span data-stu-id="188ef-104">The **SetClientExtensionResponse** element contains the response to a **SetClientExtension** request.</span></span> 
   
 ```XML
 <SetClientExtensionResponse>
@@ -25,36 +25,36 @@ ms.locfileid: "19833397"
 </SetClientExtensionResponse>
 ```
 
- <span data-ttu-id="2404c-105">**SetClientExtensionResponseType**</span><span class="sxs-lookup"><span data-stu-id="2404c-105">**SetClientExtensionResponseType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="2404c-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="2404c-106">Attributes and elements</span></span>
+ <span data-ttu-id="188ef-105">**SetClientExtensionResponseType**</span><span class="sxs-lookup"><span data-stu-id="188ef-105">**SetClientExtensionResponseType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="188ef-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="188ef-106">Attributes and elements</span></span>
 
-<span data-ttu-id="2404c-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="2404c-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="188ef-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="188ef-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="2404c-108">属性</span><span class="sxs-lookup"><span data-stu-id="2404c-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="188ef-108">属性</span><span class="sxs-lookup"><span data-stu-id="188ef-108">Attributes</span></span>
 
-<span data-ttu-id="2404c-109">なし。</span><span class="sxs-lookup"><span data-stu-id="2404c-109">None.</span></span>
+<span data-ttu-id="188ef-109">なし。</span><span class="sxs-lookup"><span data-stu-id="188ef-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="2404c-110">子要素</span><span class="sxs-lookup"><span data-stu-id="2404c-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="188ef-110">子要素</span><span class="sxs-lookup"><span data-stu-id="188ef-110">Child elements</span></span>
 
-[<span data-ttu-id="2404c-111">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="2404c-111">ResponseMessages</span></span>](responsemessages.md)
+[<span data-ttu-id="188ef-111">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="188ef-111">ResponseMessages</span></span>](responsemessages.md)
   
-### <a name="parent-elements"></a><span data-ttu-id="2404c-112">親要素</span><span class="sxs-lookup"><span data-stu-id="2404c-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="188ef-112">親要素</span><span class="sxs-lookup"><span data-stu-id="188ef-112">Parent elements</span></span>
 
-<span data-ttu-id="2404c-113">なし。</span><span class="sxs-lookup"><span data-stu-id="2404c-113">None.</span></span>
+<span data-ttu-id="188ef-113">なし。</span><span class="sxs-lookup"><span data-stu-id="188ef-113">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="2404c-114">備考</span><span class="sxs-lookup"><span data-stu-id="2404c-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="188ef-114">注釈</span><span class="sxs-lookup"><span data-stu-id="188ef-114">Remarks</span></span>
 
-<span data-ttu-id="2404c-115">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="2404c-115">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="188ef-115">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="188ef-115">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="2404c-116">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="2404c-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="188ef-116">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="188ef-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="2404c-117">要素情報</span><span class="sxs-lookup"><span data-stu-id="2404c-117">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="188ef-117">要素の情報</span><span class="sxs-lookup"><span data-stu-id="188ef-117">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="2404c-118">名前空間</span><span class="sxs-lookup"><span data-stu-id="2404c-118">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="2404c-119">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="2404c-119">Schema name</span></span>  <br/> |<span data-ttu-id="2404c-120">メッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="2404c-120">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="2404c-121">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="2404c-121">Validation file</span></span>  <br/> |<span data-ttu-id="2404c-122">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="2404c-122">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="2404c-123">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="2404c-123">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="188ef-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="188ef-118">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="188ef-119">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="188ef-119">Schema name</span></span>  <br/> |<span data-ttu-id="188ef-120">メッセージスキーマ</span><span class="sxs-lookup"><span data-stu-id="188ef-120">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="188ef-121">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="188ef-121">Validation file</span></span>  <br/> |<span data-ttu-id="188ef-122">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="188ef-122">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="188ef-123">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="188ef-123">Can be empty</span></span>  <br/> ||
    
 
