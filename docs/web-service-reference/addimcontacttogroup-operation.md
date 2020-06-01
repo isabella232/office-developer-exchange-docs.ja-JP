@@ -7,46 +7,46 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 376acc42-2684-4596-aca1-82a4a10865c9
-description: 操作 AddImContactToGroup EWS についての情報を検索します。
-ms.openlocfilehash: 669d798b6cabc1cab1fc057a3e18c565467440f7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: AddImContactToGroup EWS 操作に関する情報を検索します。
+ms.openlocfilehash: a69ee0b355e78e1249383cab612a75bcda8d9e8a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759278"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458412"
 ---
 # <a name="addimcontacttogroup-operation"></a>AddImContactToGroup 操作
 
-**AddImContactToGroup** EWS の操作に関する情報を検索します。 
+**Addimcontacttogroup** EWS 操作に関する情報を検索します。 
   
-**AddImContactToGroup** Exchange Web サービス (EWS) 操作では、インスタント メッセージング (IM) の既存の連絡先をグループに追加します。 
+**Addimcontacttogroup** Exchange Web サービス (EWS) 操作は、既存のインスタントメッセージング (IM) 連絡先をグループに追加します。 
   
 この操作は Exchange Server 2013 で導入されました。
   
-## <a name="using-the-addimcontacttogroup-operation"></a>AddImContactToGroup 操作を使用します。
+## <a name="using-the-addimcontacttogroup-operation"></a>AddImContactToGroup 操作の使用
 
-**AddImContactToGroup**操作には、IM の連絡先のみを受け入れることができます。 統合連絡先ストアに新しい IM の連絡先を追加する場合は、 [AddNewImContactToGroup](addnewimcontacttogroup-operation.md)操作を使用します。 
+**Addimcontacttogroup**操作では、IM の連絡先のみを受け入れることができます。 新しい IM 連絡先を統合連絡先ストアに追加する場合は、 [AddNewImContactToGroup](addnewimcontacttogroup-operation.md)操作を使用します。 
   
-**AddImContactToGroup**操作は、次の表に記載されている SOAP ヘッダーを使用できます。 
+**Addimcontacttogroup**操作では、次の表に示す SOAP ヘッダーを使用できます。 
   
-**表 1 です。AddImContactToGroup 操作の SOAP ヘッダー**
+**表1AddImContactToGroup 操作 SOAP ヘッダー**
 
 |**ヘッダー名**|**要素**|**説明**|
 |:-----|:-----|:-----|
-|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装するユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |RFC 3066、」タグの「識別の言語」を使用してメールボックスへのアクセスに定義されているカルチャを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマのバージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答するサーバーのバージョンを識別します。 このヘッダーは、応答に適用されます。  <br/> |
+|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |RFC 3066 で定義されているように、メールボックスへのアクセスに使用されるカルチャ (言語の識別用のタグ) を識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは応答に適用されます。  <br/> |
    
-## <a name="addimcontacttogroup-operation-request-example-add-an-existing-im-contact-to-an-im-group"></a>AddImContactToGroup 操作の要求の例: 既存の IM の IM のグループに連絡先追加
+## <a name="addimcontacttogroup-operation-request-example-add-an-existing-im-contact-to-an-im-group"></a>AddImContactToGroup 操作要求の例: 既存の IM 連絡先を IM グループに追加します。
 
-**AddImContactToGroup**操作要求の次の使用例は、IM グループの既存の IM 連絡先を追加する方法を示します。 
+**Addimcontacttogroup**操作要求の次の例は、既存の im 連絡先を im グループに追加する方法を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
       <t:MailboxCulture>en-US</t:MailboxCulture>
@@ -62,17 +62,17 @@ ms.locfileid: "19759278"
 </soap:Envelope>
 ```
 
-要求 SOAP 本体にはには、次の要素が含まれています。
+要求 SOAP 本文には、次の要素が含まれています。
   
 - [AddImContactToGroup](addimcontacttogroup.md)
     
 - [ContactId](contactid.md)
     
-- [グループ Id](groupid.md)
+- [GroupId](groupid.md)
     
-## <a name="successful-addimcontacttogroup-operation-response"></a>AddImContactToGroup 操作の成功の応答
+## <a name="successful-addimcontacttogroup-operation-response"></a>正常な AddImContactToGroup 操作の応答
 
-**AddImContactToGroup**操作の要求に正常な応答の例を次に示します。 
+次の例は、 **Addimcontacttogroup**操作要求に対する正常な応答を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -83,15 +83,15 @@ ms.locfileid: "19759278"
                            MajorBuildNumber="349" 
                            MinorBuildNumber="0" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <AddImContactToGroupResponse ResponseClass="Success" 
-                                   xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                   xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <ResponseCode>NoError</ResponseCode>
       </AddImContactToGroupResponse>
    </s:Body>
@@ -104,9 +104,9 @@ ms.locfileid: "19759278"
     
 - [ResponseCode](responsecode.md)
     
-## <a name="addimcontacttogroup-operation-errorinvalidimcontactid-error-response"></a>AddImContactToGroup 操作エラー応答の ErrorInvalidImContactId
+## <a name="addimcontacttogroup-operation-errorinvalidimcontactid-error-response"></a>AddImContactToGroup 操作 ErrorInvalidImContactId エラー応答
 
-**AddImContactToGroup**操作要求に対するエラー応答の例を次に示します。 次のエラー応答は、IM の連絡先ではない連絡先を追加しようとしましたがときに発生します。 
+次の例は、 **Addimcontacttogroup**操作要求へのエラー応答を示しています。 IM 連絡先ではない連絡先を追加しようとすると、次のエラー応答が発生します。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -117,15 +117,15 @@ ms.locfileid: "19759278"
                            MajorBuildNumber="349" 
                            MinorBuildNumber="0" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <AddImContactToGroupResponse ResponseClass="Error" 
-                                   xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                   xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <MessageText>The specified Im Contact Id is invalid.</MessageText>
          <ResponseCode>ErrorInvalidImContactId</ResponseCode>
          <DescriptiveLinkKey>0</DescriptiveLinkKey>
@@ -134,7 +134,7 @@ ms.locfileid: "19759278"
 </s:Envelope>
 ```
 
-エラー応答 SOAP 本体にはには、次の要素が含まれています。
+エラー応答 SOAP 本文には、次の要素が含まれています。
   
 - [AddImContactToGroupResponse](addimcontacttogroupresponse.md)
     
@@ -156,6 +156,6 @@ ms.locfileid: "19759278"
     
 - [GetImItemList 操作](getimitemlist-operation.md)
     
-- [Exchange 内の EWS のユーザーと連絡先](http://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
+- [Exchange 内の EWS のユーザーと連絡先](https://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
     
 

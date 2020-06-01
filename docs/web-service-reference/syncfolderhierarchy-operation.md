@@ -11,35 +11,35 @@ api_name:
 api_type:
 - schema
 ms.assetid: b31916b1-bc6c-4451-a475-b7c5417f752d
-description: SyncFolderHierarchy 操作では、Microsoft Exchange Server 2010 を実行しているコンピューターとクライアントの間でフォルダーを同期します。
-ms.openlocfilehash: 33c886d5eec64a9ff2ccc667eedfc2d4cc8dcfd5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: SyncFolderHierarchy 操作は、Microsoft Exchange Server 2010 とクライアントを実行しているコンピューター間でフォルダーを同期します。
+ms.openlocfilehash: 1c7ad2413064161ba54e8a7a30bfcd6f23f218bd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839633"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456431"
 ---
 # <a name="syncfolderhierarchy-operation"></a>SyncFolderHierarchy 操作
 
-SyncFolderHierarchy 操作では、Microsoft Exchange Server 2010 を実行しているコンピューターとクライアントの間でフォルダーを同期します。
+SyncFolderHierarchy 操作は、Microsoft Exchange Server 2010 とクライアントを実行しているコンピューター間でフォルダーを同期します。
   
 > [!NOTE]
-> SyncFolderHierarchy 操作では、 [TotalCount](totalcount.md)の[UnreadCount](unreadcount.md)プロパティが変更されたとき、フォルダーは返されません。 
+> SyncFolderHierarchy 操作では、 [UnreadCount](unreadcount.md)または[totalcount](totalcount.md)のプロパティが変更されたときにフォルダーは返されません。 
   
 ## <a name="syncfolderhierarchy-request-example"></a>SyncFolderHierarchy 要求の例
 
 ### <a name="description"></a>説明
 
-SyncFolderHierarchy 要求の次の使用例は、Exchange サーバーとフォルダーの階層にクライアントを同期する方法を示します。 この例では、1 つ以上の時間が既に同期されているフォルダーの階層を示します。 クライアントが Exchange サーバーと同期する最初の試みの要求では、[同期状態](syncstate-ex15websvcsotherref.md)の要素は含まれません。 最初の要求は、メールボックス内のすべてのフォルダーが返されます。 [同期状態](syncstate-ex15websvcsotherref.md)の要素は、 [SyncFolderHierarchyResponse](syncfolderhierarchyresponse.md)で返されます。 SyncFolderHierarchy の後続の要求の状態を同期するのにはこの要素を使用します。
+次の SyncFolderHierarchy 要求の例は、クライアントフォルダー階層を Exchange サーバーと同期する方法を示しています。 この例では、少なくとも1回同期されているフォルダー階層を示します。 クライアントと Exchange サーバーの同期を最初に試行する要求には、 [Syncstate](syncstate-ex15websvcsotherref.md)要素は含まれていません。 最初の要求では、メールボックス内のすべてのフォルダーが返されます。 [Syncstate](syncstate-ex15websvcsotherref.md)要素は、 [SyncFolderHierarchyResponse](syncfolderhierarchyresponse.md)で返されます。 この要素は、後続の SyncFolderHierarchy 要求の状態を同期するために使用されます。
   
 ### <a name="code"></a>コード
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <SyncFolderHierarchy  xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <SyncFolderHierarchy  xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <FolderShape>
         <t:BaseShape>AllProperties</t:BaseShape>
       </FolderShape>
@@ -51,11 +51,11 @@ SyncFolderHierarchy 要求の次の使用例は、Exchange サーバーとフォ
 
 ### <a name="comments"></a>コメント
 
-[同期状態](syncstate-ex15websvcsotherref.md)の要素の base64 でエンコードされたデータは読みやすさを保持するために短縮されました。 
+読み取りやすさを維持するために、 [Syncstate](syncstate-ex15websvcsotherref.md)要素の base64 でエンコードされたデータは短縮されています。 
   
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-次の要素は、要求で使用されます。
+要求では、次の要素が使用されます。
   
 - [SyncFolderHierarchy](syncfolderhierarchy.md)
     
@@ -63,16 +63,16 @@ SyncFolderHierarchy 要求の次の使用例は、Exchange サーバーとフォ
     
 - [BaseShape](baseshape.md)
     
-- [同期状態](syncstate-ex15websvcsotherref.md)
+- [SyncState](syncstate-ex15websvcsotherref.md)
     
 > [!NOTE]
-> MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、これらの要素を記述するスキーマがあります。 
+> これらの要素を説明するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。 
   
-## <a name="successful-syncfolderhierarchy-response"></a>SyncFolderHierarchy の正常な応答
+## <a name="successful-syncfolderhierarchy-response"></a>成功した SyncFolderHierarchy 応答
 
 ### <a name="description"></a>説明
 
-SyncFolderHierarchy 要求に正常な応答の例を次に示します。 この例では、新しいフォルダーが同期されています。
+次の例は、SyncFolderHierarchy 要求に対する正常な応答を示しています。 この例では、新しいフォルダーが同期されています。
   
 ### <a name="code"></a>コード
 
@@ -84,12 +84,12 @@ SyncFolderHierarchy 要求に正常な応答の例を次に示します。 こ�
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" 
                          MajorBuildNumber="628" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <SyncFolderHierarchyResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                 xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                                 xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <SyncFolderHierarchyResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                 xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                                 xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:SyncFolderHierarchyResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -117,11 +117,11 @@ SyncFolderHierarchy 要求に正常な応答の例を次に示します。 こ�
 
 ### <a name="comments"></a>コメント
 
-[同期状態](syncstate-ex15websvcsotherref.md)の要素の base64 でエンコードされたデータやフォルダーの識別子のデータは、読みやすさを保持するために短縮されています。 
+読みやすくするために、 [Syncstate](syncstate-ex15websvcsotherref.md)要素の base64 でエンコードされたデータとフォルダー識別子データは短縮されています。 
   
-### <a name="successful-response-elements"></a>正常な応答の要素
+### <a name="successful-response-elements"></a>成功した応答要素
 
-次の要素は、応答で使用されます。
+応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -133,23 +133,23 @@ SyncFolderHierarchy 要求に正常な応答の例を次に示します。 こ�
     
 - [ResponseCode](responsecode.md)
     
-- [同期状態](syncstate-ex15websvcsotherref.md)
+- [SyncState](syncstate-ex15websvcsotherref.md)
     
-- [IncludesLastFolderInRange](includeslastfolderinrange.md)
+- [フォルダーに Lastfolderinrange](includeslastfolderinrange.md)
     
-- [(階層) の変更](changes-hierarchy.md)
+- [変更 (階層)](changes-hierarchy.md)
     
-- [(集合的) を作成します。](create-foldersync.md)
+- [Create (FolderSync)](create-foldersync.md)
     
 - [Folder](folder.md)
     
-- [フォルダー Id](folderid.md)
+- [FolderId](folderid.md)
     
 - [ParentFolderId](parentfolderid.md)
     
 - [FolderClass](folderclass.md)
     
-- [表示名 (文字列)](displayname-string.md)
+- [DisplayName (文字列)](displayname-string.md)
     
 - [TotalCount](totalcount.md)
     
@@ -157,11 +157,11 @@ SyncFolderHierarchy 要求に正常な応答の例を次に示します。 こ�
     
 - [UnreadCount](unreadcount.md)
     
-## <a name="syncfolderhierarchy-error-response"></a>SyncFolderHierarchy エラー応答
+## <a name="syncfolderhierarchy-error-response"></a>SyncFolderHierarchy のエラー応答
 
 ### <a name="description"></a>説明
 
-SyncFolderHierarchy 要求に対してエラー応答の例を次に示します。 このエラーは、無効な同期状態が原因です。
+次の例は、SyncFolderHierarchy 要求に対するエラー応答を示しています。 このエラーは、無効な SyncState が原因で発生しました。
   
 ### <a name="code"></a>コード
 
@@ -173,12 +173,12 @@ SyncFolderHierarchy 要求に対してエラー応答の例を次に示します
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" 
                          MajorBuildNumber="628" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <SyncFolderHierarchyResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                 xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                                 xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <SyncFolderHierarchyResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                 xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                                 xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:SyncFolderHierarchyResponseMessage ResponseClass="Error">
           <m:MessageText>Synchronization state data is corrupted or otherwise invalid.</m:MessageText>
@@ -193,7 +193,7 @@ SyncFolderHierarchy 要求に対してエラー応答の例を次に示します
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a>エラー応答の要素
+### <a name="error-response-elements"></a>エラー応答要素
 
 エラー応答では、次の要素が使用されます。
   
@@ -211,13 +211,13 @@ SyncFolderHierarchy 要求に対してエラー応答の例を次に示します
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [同期状態](syncstate-ex15websvcsotherref.md)
+- [SyncState](syncstate-ex15websvcsotherref.md)
     
-- [IncludesLastFolderInRange](includeslastfolderinrange.md)
+- [フォルダーに Lastfolderinrange](includeslastfolderinrange.md)
     
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

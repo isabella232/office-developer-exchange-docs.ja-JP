@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 412d0683-2819-40c5-a0ae-f613499a7b66
-description: UpdateFolder 要素は、指定したフォルダーのプロパティを更新するために使用される演算を表します。
-ms.openlocfilehash: 9a86bf6b3b5917600b3b09f23b3ee4e9cdc0364f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: UpdateFolder 要素は、指定されたフォルダーのプロパティを更新するために使用される操作を表します。
+ms.openlocfilehash: 124ffd02a5ea2e7bf6f21cc7009dde08837906f9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839837"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457047"
 ---
 # <a name="updatefolder"></a>UpdateFolder
 
-**UpdateFolder**要素は、指定したフォルダーのプロパティを更新するために使用される演算を表します。 
+**Updatefolder**要素は、指定されたフォルダーのプロパティを更新するために使用される操作を表します。 
   
 ```xml
 <UpdateFolder>
@@ -30,7 +30,7 @@ ms.locfileid: "19839837"
 ```
 
  **UpdateFolderType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,26 +40,26 @@ ms.locfileid: "19839837"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[FolderChanges](folderchanges.md) <br/> |指定したフォルダーの変更のコレクションが含まれています。  <br/> |
+|[FolderChanges 変更](folderchanges.md) <br/> |指定したフォルダーの変更のコレクションを格納します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

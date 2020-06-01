@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 12c5da4d-290c-4a8a-a965-0bf5d55c7978
-description: CreateItem 操作は、Exchange ストア内の作業項目を作成します。
-ms.openlocfilehash: 5a5203202071ae9391faa9348902424317ee96d1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: CreateItem 操作は、Exchange ストアにタスクアイテムを作成します。
+ms.openlocfilehash: 502108843193e7ed8377b0fade9e106ef3d1976c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759838"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457103"
 ---
 # <a name="createitem-operation-task"></a>CreateItem 操作 (タスク)
 
-CreateItem 操作は、Exchange ストア内の作業項目を作成します。
+CreateItem 操作は、Exchange ストアにタスクアイテムを作成します。
   
-## <a name="task-createitem-request"></a>CreateItem 要求のタスク
+## <a name="task-createitem-request"></a>Task CreateItem 要求
 
 ### <a name="description"></a>説明
 
-CreateItem 要求の次の例では、メールボックス内のタスク項目を作成する方法を示します。
+次の CreateItem 要求の例は、メールボックス内のタスクアイテムを作成する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -36,10 +36,10 @@ CreateItem 要求の次の例では、メールボックス内のタスク項目
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <CreateItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-                xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
+    <CreateItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+                xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
                 MessageDisposition="SaveOnly">
       <Items>
         <t:Task>
@@ -55,49 +55,49 @@ CreateItem 要求の次の例では、メールボックス内のタスク項目
 
 ### <a name="comments"></a>コメント
 
-定期タスクの要求は、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターで受信したときに変更されます。 次の変更が発生します。
+定期的なタスクに対する要求は、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターが受信したときに変更されます。 次の変更が行われます。
   
-- タスクの期間の[開始日 (反復)](startdate-recurrence.md)プロパティの値は、日付のみが保存されます。 時刻の部分が切り捨てられます。 
+- タスクの定期的なアイテムの期間の開始日[(定期的なアイテム)](startdate-recurrence.md)のプロパティには、日付のみが保存されます。 時刻部分は切り捨てられます。 
     
-- 定期的なパターンによって、[開始日 (繰り返し)](startdate-recurrence.md)のプロパティを調整することがあります。 開始日の調整など、定期的なパターンが、毎週月曜日を指定し、開始日が 2006 年 10 月 26 日に設定されている場合は木曜日で、2006 年 10 月 30 日には次の月曜日です。 
+- [StartDate (定期的なアイテム)](startdate-recurrence.md)プロパティは、定期的なパターンに応じて調整できます。 たとえば、定期パターンが毎週月曜日として指定されていて、StartDate が2006年10月26日に設定されている場合、StartDate は次の月曜日である2006年10月30日に調整されます。 
     
-- タスクの[開始日](startdate.md)のプロパティが設定されている場合は、定期的なアイテムの範囲の[開始日 (反復)](startdate-recurrence.md)を一致するように更新されます。 タスクの[DueDate](duedate.md)プロパティに新しい[開始日](startdate.md)に基づいて更新されます。
+- タスクの[startdate](startdate.md)プロパティが設定されている場合は、定期的なアイテムの範囲の[startdate (繰り返し)](startdate-recurrence.md)に合わせて更新されます。 タスクの[DueDate](duedate.md)プロパティも、新しい[StartDate](startdate.md)に基づいて更新されます。
     
-- [開始日](startdate.md)が設定されていない場合は、定期的なアイテムの範囲の[開始日 (反復)](startdate-recurrence.md)を一致するように[DueDate](duedate.md)プロパティのみが更新されます。 
+- [Startdate](startdate.md)が設定されていない場合は、 [DueDate](duedate.md)プロパティのみが更新され、定期的なアイテムの範囲の[startdate (繰り返し)](startdate-recurrence.md)に一致します。 
     
-次の表は、定期的なタスクを毎週月曜日の Task.Recurrence.Pattern を持つクライアント アクセス サーバーが行った変更を示しています。
+次の表に、クライアントアクセスサーバーが、毎週月曜日の定期タスクに対して行う変更を示します。
   
-**定期的なタスクへの変更**
+**定期的なタスクに対する変更**
 
-|**プロパティ**|**元の値**|**更新された値**|
+|**Property**|**元の値**|**更新された値**|
 |:-----|:-----|:-----|
-|Task.StartDate  <br/> |2006 年 1 月 1 日  <br/> |2006 年 10 月 30 日  <br/> |
-|Task.DueDate  <br/> |2006 年 1 月 3 日  <br/> |2006 年 11 月 1 日  <br/> |
-|Task.Recurrence.Range.StartDate  <br/> |2006 年 10 月 26 日  <br/> |2006 年 10 月 30 日  <br/> |
+|タスクの開始日  <br/> |2006年1月1日  <br/> |2006年10月30日  <br/> |
+|DueDate  <br/> |2006年1月3日  <br/> |2006年11月1日  <br/> |
+|タスクの定期的なアイテムの指定。  <br/> |2006年10月26日  <br/> |2006年10月30日  <br/> |
    
-既定では、インストール先のフォルダーが指定されていない場合タスク項目は、[タスク] フォルダーに作成されます。
+既定では、宛先フォルダーが指定されていない場合、タスクアイテムは [タスク] フォルダーに作成されます。
   
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-次の要素は、要求で使用されます。
+要求では、次の要素が使用されます。
   
 - [CreateItem](createitem.md)
     
-- [アイテム (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
+- [アイテム (非 Emptyarrayofallitemstype)](items-nonemptyarrayofallitemstype.md)
     
-- [タスク](task.md)
+- [Task](task.md)
     
-- [Subject](subject.md)
+- [[件名]](subject.md)
     
 - [DueDate](duedate.md)
     
-- [Status](status.md)
+- [状態](status.md)
     
-## <a name="successful-task-createitem-response"></a>Createitem メソッドの応答を正常終了したタスク
+## <a name="successful-task-createitem-response"></a>成功したタスクの CreateItem 応答
 
 ### <a name="description"></a>説明
 
-次の使用例は、CreateItem 要求に正常な応答を示しています。
+次の例は、CreateItem 要求に対する正常な応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -108,12 +108,12 @@ CreateItem 要求の次の例では、メールボックス内のタスク項目
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="653" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"/>
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"/>
   </soap:Header>
   <soap:Body>
-    <CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -129,9 +129,9 @@ CreateItem 要求の次の例では、メールボックス内のタスク項目
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a>正常な応答の要素
+### <a name="successful-response-elements"></a>成功した応答要素
 
-応答では、次の要素が含まれています。
+応答には、次の要素が含まれています。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -143,9 +143,9 @@ CreateItem 要求の次の例では、メールボックス内のタスク項目
     
 - [ResponseCode](responsecode.md)
     
-- [アイテム (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
+- [アイテム (非 Emptyarrayofallitemstype)](items-nonemptyarrayofallitemstype.md)
     
-- [タスク](task.md)
+- [Task](task.md)
     
 - [ItemId](itemid.md)
     
@@ -157,9 +157,9 @@ CreateItem 要求の次の例では、メールボックス内のタスク項目
   [CreateItem 操作](createitem-operation.md)
 
 
-[タスクを作成します。](http://msdn.microsoft.com/library/0ef97334-e8a0-4f67-a23a-dd9e2bbad49f%28Office.15%29.aspx)
+[タスクの作成](https://msdn.microsoft.com/library/0ef97334-e8a0-4f67-a23a-dd9e2bbad49f%28Office.15%29.aspx)
   
-[タスクの更新](http://msdn.microsoft.com/library/0a1bf360-d40c-4a99-929b-4c73a14394d5%28Office.15%29.aspx)
+[タスクの更新](https://msdn.microsoft.com/library/0a1bf360-d40c-4a99-929b-4c73a14394d5%28Office.15%29.aspx)
   
-[タスクを削除します。](http://msdn.microsoft.com/library/a3d7e25f-8a35-4901-b1d9-d31f418ab340%28Office.15%29.aspx)
+[タスクの削除](https://msdn.microsoft.com/library/a3d7e25f-8a35-4901-b1d9-d31f418ab340%28Office.15%29.aspx)
 

@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c037de3d-7881-4de4-8f52-68d4878155eb
-description: UpdateMailboxAssociationResponse 要素は内部使用のみを目的としています。
-ms.openlocfilehash: f2be330ccd78c1e2765e0854d1f8f461e0bea8f8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: UpdateMailboxAssociationResponse 要素は、内部使用のみを目的としています。
+ms.openlocfilehash: e4c511d75ef91f0919d5fe182e85070bdc9aae9c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839882"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457908"
 ---
 # <a name="updatemailboxassociationresponse"></a>UpdateMailboxAssociationResponse
 
-**UpdateMailboxAssociationResponse**要素は内部使用のみを目的としています。 
+**Updatemailboxassociationresponse**要素は、内部使用のみを目的としています。 
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -35,7 +35,7 @@ ms.locfileid: "19839882"
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。
   

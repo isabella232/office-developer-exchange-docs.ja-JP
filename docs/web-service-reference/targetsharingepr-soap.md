@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 0115a740-9264-4e57-a410-197bb39e6c81
-description: TargetSharingEpr 要素は、TargetSharingEpr プロパティを表します。 TargetSharingEpr 要素は、内部使用のみ。
-ms.openlocfilehash: 272133d4d8f6db260f37e2c6977be20f81fdc535
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: TargetSharingEpr 要素は、TargetSharingEpr プロパティを表します。 TargetSharingEpr 要素は、内部使用のみを対象としています。
+ms.openlocfilehash: 8cb8d114ae43dfc8ad76aebe87e0e920c16477f2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839647"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457082"
 ---
 # <a name="targetsharingepr-soap"></a>TargetSharingEpr (SOAP)
  
-**TargetSharingEpr**要素は、 **TargetSharingEpr**プロパティを表します。 **TargetSharingEpr**要素は、内部使用のみ。 クライアントでは、この要素は使用されません。 
+**Targetsharingepr**要素は、 **targetsharingepr**プロパティを表します。 **Targetsharingepr**要素は、内部使用のみを対象としています。 この要素はクライアントによって使用されません。 
   
 ```XML
 <TargetSharingEpr/>
@@ -24,7 +24,7 @@ ms.locfileid: "19839647"
 
 **anyURI**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,22 +40,22 @@ ms.locfileid: "19839647"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |1 つの組織の組織との関係のリストを表します。  <br/> |
+|[組織のリレーションシップ設定 (SOAP)](organizationrelationshipsettings-soap.md) <br/> |1つの組織の組織上の関係のリストを表します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素は、外部の組織に対して、対象サーバーの URL を指定します。 
+この要素は、外部組織のターゲットサーバーの URL を指定します。 
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|スキーマ名  <br/> |スキーマの自動検出  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|スキーマ名  <br/> |自動検出スキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [GetOrganizationRelationshipSettings 操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)
+- [Get組織の Relationshipsettings 操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)
 

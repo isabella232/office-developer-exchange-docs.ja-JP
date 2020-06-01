@@ -1,5 +1,5 @@
 ---
-title: ImAddress (NonEmptyStringType)
+title: ImAddress (非 Emptystringtype)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 13c7b0cc-f506-490b-adaa-3d01fc2400eb
-description: ImAddress 要素には、インスタント メッセージング、インスタント メッセージングのグループに追加される新しい連絡先のアドレスが含まれています。
-ms.openlocfilehash: 6c7912d71eb05de3f6bd805bfb27543c543d2be4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ImAddress 要素には、インスタントメッセージンググループに追加される新しい連絡先のインスタントメッセージングアドレスが含まれています。
+ms.openlocfilehash: eac3b6494f3f52dec007171462a95f9d7306530e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831859"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457607"
 ---
-# <a name="imaddress-nonemptystringtype"></a>ImAddress (NonEmptyStringType)
+# <a name="imaddress-nonemptystringtype"></a>ImAddress (非 Emptystringtype)
 
-**ImAddress**要素には、インスタント メッセージング、インスタント メッセージングのグループに追加される新しい連絡先のアドレスが含まれています。 
+**Imaddress**要素には、インスタントメッセージンググループに追加される新しい連絡先のインスタントメッセージングアドレスが含まれています。 
   
 ```XML
 <ImAddress></ImAddress>
 ```
 
  **NonEmptyStringType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,21 +42,21 @@ ms.locfileid: "19831859"
   
 ## <a name="text-value"></a>テキスト値
 
-**ImAddress**要素のテキスト値は、インスタント メッセージング アドレスです。 
+**Imaddress**要素のテキスト値は、インスタントメッセージングアドレスです。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

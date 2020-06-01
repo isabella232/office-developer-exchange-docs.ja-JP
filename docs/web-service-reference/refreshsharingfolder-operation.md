@@ -11,32 +11,32 @@ api_name:
 api_type:
 - schema
 ms.assetid: 1b047e34-40f0-459f-ac9e-e9f8e7349479
-description: RefreshSharingFolder 操作は、共有されているフォルダーからの最新のデータで指定したローカル フォルダーを更新します。
-ms.openlocfilehash: 0037de28f0720b97cd51c58a6ee7e3c06e84d642
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: RefreshSharingFolder 操作は、指定されたローカルフォルダーを、共有されているフォルダーの最新のデータで更新します。
+ms.openlocfilehash: dd7136ae82353841db09497d23eabe450c1c8b13
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833041"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456760"
 ---
 # <a name="refreshsharingfolder-operation"></a>RefreshSharingFolder 操作
 
-**RefreshSharingFolder**操作は、共有されているフォルダーからの最新のデータで指定したローカル フォルダーを更新します。 
+**Refreshsharingfolder**操作は、指定されたローカルフォルダーを、共有されているフォルダーの最新のデータで更新します。 
   
 ## <a name="soap-headers"></a>SOAP ヘッダー
 
-**RefreshSharingFolder**操作が一覧表示され、次の表に記載されている SOAP ヘッダーを使用できます。 
+**Refreshsharingfolder**操作では、次の表に記載されている SOAP ヘッダーを使用できます。 
   
 |**Header**|**要素**|**説明**|
 |:-----|:-----|:-----|
-|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマのバージョンを識別します。  <br/> |
-|ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答するサーバーのバージョンを識別します。  <br/> |
+|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。  <br/> |
+|ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。  <br/> |
    
 ## <a name="refreshsharingfolder-request-example"></a>RefreshSharingFolder 要求の例
 
 ### <a name="description"></a>説明
 
-次の例では、共有されているフォルダーからの最新のデータで指定したローカル フォルダーを更新する要求を作成する方法を示します。 [SharingFolderId](sharingfolderid.md)要素は、更新するローカル フォルダーの識別子を指定します。 
+次の例は、共有されているフォルダーの最新データを使用して、指定したローカルフォルダーを更新する要求を形成する方法を示しています。 [SharingFolderId](sharingfolderid.md)要素は、更新するローカルフォルダーの識別子を指定します。 
   
 ### <a name="code"></a>コード
 
@@ -45,22 +45,22 @@ ms.locfileid: "19833041"
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010"/>
   </soap:Header>
   <soap:Body>
-    <RefreshSharingFolder xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <RefreshSharingFolder xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:SharingFolderId Id="AAMkAD=" ChangeKey="AwAAA=" />
     </RefreshSharingFolder>
   </soap:Body>
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-次の要素は、要求で使用されます。
+要求では、次の要素が使用されます。
   
 - [RequestServerVersion](requestserverversion.md)
     
@@ -68,11 +68,11 @@ ms.locfileid: "19833041"
     
 - [SharingFolderId](sharingfolderid.md)
     
-## <a name="successful-refreshsharingfolder-response"></a>RefreshSharingFolder の正常な応答
+## <a name="successful-refreshsharingfolder-response"></a>正常な RefreshSharingFolder 応答
 
 ### <a name="description"></a>説明
 
-**RefreshSharingFolder**要求に正常な応答の例を次に示します。 
+次の例は、 **Refreshsharingfolder**要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -87,22 +87,22 @@ ms.locfileid: "19833041"
                          MajorBuildNumber="639" 
                          MinorBuildNumber="11" 
                          Version="Exchange2010" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
     <RefreshSharingFolderResponseMessage ResponseClass="Success"
-                                xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-                                xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                                xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+                                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                                xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseCode>NoError</m:ResponseCode>
     </RefreshSharingFolderResponseMessage>
   </soap:Body>
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a>正常な応答の要素
+### <a name="successful-response-elements"></a>成功した応答要素
 
-次の要素は、応答で使用されます。
+応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -114,7 +114,7 @@ ms.locfileid: "19833041"
 
 ### <a name="description"></a>説明
 
-**RefreshSharingFolder**要求に対してエラー応答の例を次に示します。 この例では、指定したローカル フォルダーに対応するサブスクリプションが見つからなかったために**RefreshSharingFolder**要求が失敗しました。 
+次の例は、 **Refreshsharingfolder**要求に対するエラー応答を示しています。 この例では、指定したローカルフォルダーに対応するサブスクリプションが見つからなかったため、 **Refreshsharingfolder**要求が失敗しました。 
   
 ### <a name="code"></a>コード
 
@@ -129,13 +129,13 @@ ms.locfileid: "19833041"
                          MajorBuildNumber="639" 
                          MinorBuildNumber="11" 
                          Version="Exchange2010" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
     <RefreshSharingFolderResponseMessage ResponseClass="Error"
-                                xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-                                xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                                xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+                                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                                xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:MessageText>Failed to synchronize the sharing folder.</m:MessageText>
       <m:ResponseCode>ErrorSharingSynchronizationFailed</m:ResponseCode>
       <m:DescriptiveLinkKey>0</m:DescriptiveLinkKey>
@@ -147,7 +147,7 @@ ms.locfileid: "19833041"
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a>エラー応答の要素
+### <a name="error-response-elements"></a>エラー応答要素
 
 エラー応答では、次の要素が使用されます。
   
@@ -176,7 +176,7 @@ ms.locfileid: "19833041"
 [RefreshSharingFolderResponseMessageType](https://msdn.microsoft.com/library/ExchangeWebServices.RefreshSharingFolderResponseMessageType.aspx)
 
 
-[Exchange での EWS の操作](ews-operations-in-exchange.md)
+[Exchange での EWS 操作](ews-operations-in-exchange.md)
   
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

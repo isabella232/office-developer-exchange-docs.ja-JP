@@ -11,32 +11,32 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6f6c334c-b190-4e55-8f0a-38f2a018d1b3
-description: CreateFolder 操作フォルダー、予定表フォルダー、連絡先フォルダー、仕事フォルダー、および検索を作成するフォルダーです。
-ms.openlocfilehash: 97156d4a3747cacbdcf9563d21d93a0aa44c3358
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: CreateFolder 操作は、フォルダー、予定表フォルダー、連絡先フォルダー、タスクフォルダー、および検索フォルダーを作成します。
+ms.openlocfilehash: 125a6d212e5eaf85ace71c048de809f3a05ba9b6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759816"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457551"
 ---
 # <a name="createfolder-operation"></a>CreateFolder 操作
 
-CreateFolder 操作フォルダー、予定表フォルダー、連絡先フォルダー、仕事フォルダー、および検索を作成するフォルダーです。
+CreateFolder 操作は、フォルダー、予定表フォルダー、連絡先フォルダー、タスクフォルダー、および検索フォルダーを作成します。
   
 ## <a name="createfolder-request-example"></a>CreateFolder 要求の例
 
 ### <a name="description"></a>説明
 
-CreateFolder 要求の次の例では、メールボックスのルートに 2 つの新しいフォルダーを作成する要求を作成する方法を示します。
+CreateFolder 要求の次の例は、メールボックスルートに2つの新しいフォルダーを作成するための要求を形成する方法を示しています。
   
 ### <a name="code"></a>コード
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <CreateFolder xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateFolder xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ParentFolderId>
         <t:DistinguishedFolderId Id="msgfolderroot"/>
       </ParentFolderId>
@@ -53,9 +53,9 @@ CreateFolder 要求の次の例では、メールボックスのルートに 2 �
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-次の要素は、要求で使用されます。
+要求では、次の要素が使用されます。
   
 - [CreateFolder](createfolder.md)
     
@@ -67,26 +67,26 @@ CreateFolder 要求の次の例では、メールボックスのルートに 2 �
     
 - [Folder](folder.md)
     
-- [表示名 (文字列)](displayname-string.md)
+- [DisplayName (文字列)](displayname-string.md)
     
 > [!NOTE]
-> MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、これらの要素を記述するスキーマがあります。 
+> これらの要素を説明するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。 
   
-CreateFolder 操作の要求メッセージには、他のオプションを検索するには、スキーマの階層構造を表示します。 [CreateFolder](createfolder.md)要素から開始します。 
+CreateFolder 操作の要求メッセージに関するその他のオプションについては、スキーマ階層を参照してください。 [CreateFolder](createfolder.md)要素から開始します。 
   
 > [!NOTE]
-> フォルダーの後で行う get 呼び出しの制限に戻ります **: 開催者の予定表**のプロパティを使用して、制限付き検索フォルダーを作成する場合、**メッセージ: から**プロパティを所定の位置にします。 これら 2 つのプロパティは、同じ基になる MAPI プロパティにマップします。 
+> **Calendar: オーガナイザー**プロパティを使用して、制限付きの検索フォルダーを作成すると、それ以降の get フォルダー呼び出しでは、その場所にある**メッセージ: from**プロパティを使用して制限が返されます。 これら2つのプロパティは、同じ基になる MAPI プロパティにマップされます。 
   
-CreateFolder 操作は、汎用フォルダーの種類の要素を使用してフォルダーを作成し、 **FolderClass**の要素を設定するときにのみ、フォルダーのカスタム クラスの作成をサポートしています。 
+CreateFolder 操作では、汎用フォルダーの種類要素を使用してフォルダーを作成し、 **Folderclass**要素を設定することによってのみ、カスタムフォルダークラスの作成がサポートされます。 
   
-## <a name="successful-createfolder-response-example"></a>CreateFolder 応答の成功の例
+## <a name="successful-createfolder-response-example"></a>Successful CreateFolder response の例
 
 ### <a name="description"></a>説明
 
-CreateFolder 要求に正常な応答の例を次に示します。 この例では、応答は、新しいフォルダーの識別子を返します。
+次の例は、CreateFolder 要求に対する正常な応答を示しています。 この例では、応答は新しいフォルダーの識別子を返します。
   
 > [!NOTE]
-> フォルダー ID と変更キーは、読みやすさを保持するために短縮されています。 
+> 読みやすくするために、フォルダー ID と変更キーが短縮されています。 
   
 ### <a name="code"></a>コード
 
@@ -97,12 +97,12 @@ CreateFolder 要求に正常な応答の例を次に示します。 この例で
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="595" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <CreateFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                          xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                          xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CreateFolderResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -126,9 +126,9 @@ CreateFolder 要求に正常な応答の例を次に示します。 この例で
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a>正常な応答の要素
+### <a name="successful-response-elements"></a>成功した応答要素
 
-次の要素は、応答で使用されます。
+応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -144,15 +144,15 @@ CreateFolder 要求に正常な応答の例を次に示します。 この例で
     
 - [Folder](folder.md)
     
-- [フォルダー Id](folderid.md)
+- [FolderId](folderid.md)
     
-CreateFolder 操作の応答メッセージには、他のオプションを検索するには、スキーマの階層構造を表示します。 [CreateFolderResponse](createfolderresponse.md)要素から開始します。 
+CreateFolder 操作の応答メッセージに関するその他のオプションについては、スキーマ階層を参照してください。 [Createfolderresponse](createfolderresponse.md)要素から開始します。 
   
 ## <a name="createfolder-error-response"></a>CreateFolder エラー応答
 
 ### <a name="description"></a>説明
 
-CreateFolder 要求に対してエラー応答の例を次に示します。
+次の例は、CreateFolder 要求に対するエラー応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -163,12 +163,12 @@ CreateFolder 要求に対してエラー応答の例を次に示します。
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="595" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <CreateFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                          xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                          xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CreateFolderResponseMessage ResponseClass="Error">
           <m:MessageText>A folder with the specified name already exists.</m:MessageText>
@@ -182,7 +182,7 @@ CreateFolder 要求に対してエラー応答の例を次に示します。
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a>エラー応答の要素
+### <a name="error-response-elements"></a>エラー応答要素
 
 エラー応答では、次の要素が使用されます。
   
@@ -202,7 +202,7 @@ CreateFolder 要求に対してエラー応答の例を次に示します。
     
 - [フォルダー](folders-ex15websvcsotherref.md)
     
-CreateFolder 操作の応答のエラー メッセージについては、他のオプションを検索するには、スキーマの階層構造を表示します。 [CreateFolderResponse](createfolderresponse.md)要素から開始します。 
+CreateFolder 操作のエラー応答メッセージに関するその他のオプションについては、「スキーマ階層」を参照してください。 [Createfolderresponse](createfolderresponse.md)要素から開始します。 
   
 ## <a name="see-also"></a>関連項目
 
@@ -217,8 +217,8 @@ CreateFolder 操作の応答のエラー メッセージについては、他の
  **CreateFolderType**
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 
 
-[フォルダー (Exchange Web サービス) を作成します。](http://msdn.microsoft.com/library/3b15b0ec-8691-45ed-9a24-a91ff732d6cf%28Office.15%29.aspx)
+[フォルダーの作成 (Exchange Web サービス)](https://msdn.microsoft.com/library/3b15b0ec-8691-45ed-9a24-a91ff732d6cf%28Office.15%29.aspx)
 

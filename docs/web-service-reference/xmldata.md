@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e47f1d32-3ee3-4a1d-b7f9-80973ed57bd4
-description: XmlData 要素には、ユーザーの構成オブジェクトの XML データのプロパティの内容が含まれています。
-ms.openlocfilehash: 6cd14d9e3873dd3aac352dce82afb2c309477214
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: XmlData 要素には、ユーザー構成オブジェクトの XML データプロパティコンテンツが含まれています。
+ms.openlocfilehash: 2fb3e2ccbb6e9ccc409a5d0cfdd895b2a63214ff
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840048"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457019"
 ---
 # <a name="xmldata"></a>XmlData
 
-**XmlData**要素には、ユーザーの構成オブジェクトの XML データのプロパティの内容が含まれています。 
+**XmlData**要素には、ユーザー構成オブジェクトの XML データプロパティコンテンツが含まれています。 
   
 ```XML
 <XmlData/>
@@ -29,7 +29,7 @@ ms.locfileid: "19840048"
 
 **Base64Binary**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -45,26 +45,26 @@ ms.locfileid: "19840048"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[UserConfiguration](userconfiguration.md) <br/> |1 人のユーザーの構成オブジェクトを定義します。  <br/> |
+|[UserConfiguration](userconfiguration.md) <br/> |1つのユーザー構成オブジェクトを定義します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

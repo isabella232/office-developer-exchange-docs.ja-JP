@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c5604161-bbc0-40bc-ad75-ff7e837d745f
-description: ItemShape 要素は、GetItem 操作、FindItem 操作、または SyncFolderItems 操作の応答で返されるプロパティのセットを識別します。
-ms.openlocfilehash: 95174a85a8fa05cb2612e1289d46c8db32b6e052
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ItemShape 要素は、GetItem 操作、FindItem 操作、または SyncFolderItems 操作の応答で返される一連のプロパティを識別します。
+ms.openlocfilehash: ffb666ee331b55a4f04cad076c705e4bec980e03
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832191"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458125"
 ---
 # <a name="itemshape"></a>ItemShape
 
-**ItemShape**要素は、 [GetItem 操作](getitem-operation.md)、 [FindItem 操作](finditem-operation.md)、または[SyncFolderItems の操作](syncfolderitems-operation.md)の応答で返されるプロパティのセットを識別します。 
+**Itemshape**要素は、 [GetItem 操作](getitem-operation.md)、 [FindItem 操作](finditem-operation.md)、または[syncfolderitems 操作](syncfolderitems-operation.md)の応答で返される一連のプロパティを識別します。 
   
 ```XML
 <ItemShape>
@@ -35,7 +35,7 @@ ms.locfileid: "19832191"
 ```
 
  **ItemResponseShapeType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -45,39 +45,39 @@ ms.locfileid: "19832191"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[BaseShape](baseshape.md) <br/> |アイテムまたはフォルダーの応答で返されるプロパティの基本構成を識別します。  <br/> |
-|[IncludeMimeContent](includemimecontent.md) <br/> |応答で、多目的インターネット メール拡張 (MIME) のコンテンツ項目を返すかどうかを指定します。  <br/> |
-|[BodyType](bodytype.md) <br/> |応答の本文のテキストを書式設定する方法を識別します。  <br/> |
-|[ConvertHtmlCodePageToUTF8](converthtmlcodepagetoutf8.md) <br/> |項目の HTML 本文が UTF8 に変換されるかどうかを示します。  <br/> |
-|[FilterHtmlContent](filterhtmlcontent.md) <br/> |HTML コンテンツのフィルタ リングが有効になっているかどうかを指定します。  <br/> |
-|[AdditionalProperties](additionalproperties.md) <br/> |応答で返される追加プロパティを識別します。  <br/> |
+|[BaseShape](baseshape.md) <br/> |アイテムまたはフォルダーの応答で返されるプロパティの基本的な構成を識別します。  <br/> |
+|[IncludeMimeContent](includemimecontent.md) <br/> |アイテムのマルチパーパスインターネットメール内線 (MIME) コンテンツを応答で返すかどうかを指定します。  <br/> |
+|[BodyType](bodytype.md) <br/> |応答で本文テキストを書式設定する方法を指定します。  <br/> |
+|[ConvertHtmlCodePageToUTF8](converthtmlcodepagetoutf8.md) <br/> |アイテムの HTML 本文を UTF8 に変換するかどうかを示します。  <br/> |
+|[FilterHtmlContent](filterhtmlcontent.md) <br/> |HTML コンテンツフィルターを有効にするかどうかを指定します。  <br/> |
+|[AdditionalProperties](additionalproperties.md) <br/> |応答で返される追加のプロパティを識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetItem](getitem.md) <br/> |Exchange ストア内のメールボックスからアイテムを取得する要求を定義します。  <br/> この要素への XPath 式は、次のようにします。  <br/>  `/GetItem` <br/> |
-|[FindItem](finditem.md) <br/> |フォルダーに含まれるすべての項目を検索するための要求を定義します。  <br/> この要素への XPath 式は、次のようにします。  <br/>  `/FindItem` <br/> |
-|[SyncFolderItems](syncfolderitems.md) <br/> |Exchange ストア フォルダー内のアイテムを同期するための要求を定義します。  <br/> この要素への XPath 式は、次のようにします。  <br/>  `/SyncFolderItems` <br/> |
+|[GetItem](getitem.md) <br/> |Exchange ストア内のメールボックスからアイテムを取得するための要求を定義します。  <br/> この要素の XPath 式を次に示します。  <br/>  `/GetItem` <br/> |
+|[FindItem](finditem.md) <br/> |フォルダーに含まれるすべてのアイテムを検索するための要求を定義します。  <br/> この要素の XPath 式を次に示します。  <br/>  `/FindItem` <br/> |
+|[SyncFolderItems](syncfolderitems.md) <br/> |Exchange ストアフォルダー内のアイテムを同期する要求を定義します。  <br/> この要素の XPath 式を次に示します。  <br/>  `/SyncFolderItems` <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -89,8 +89,8 @@ ms.locfileid: "19832191"
 
   [FindItem 操作](finditem-operation.md)
   
-[SyncFolderItems の操作](syncfolderitems-operation.md)
+[SyncFolderItems 操作](syncfolderitems-operation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

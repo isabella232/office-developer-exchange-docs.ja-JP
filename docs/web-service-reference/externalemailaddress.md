@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f7fc08e6-a906-4a18-93cd-56a5b8d460b0
-description: ExternalEmailAddress 要素には、メールボックスの外部電子メール アドレスが含まれています。
-ms.openlocfilehash: 0c1498ad5130d32526757fab9abf21fc03975bae
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ExternalEmailAddress 要素には、メールボックスの外部電子メールアドレスが含まれています。
+ms.openlocfilehash: c530e0c1a9efb5da3a0e147de3a3ec6e0d7569fc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760436"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456928"
 ---
 # <a name="externalemailaddress"></a>ExternalEmailAddress
 
-**ExternalEmailAddress**要素には、メールボックスの外部電子メール アドレスが含まれています。 
+**ExternalEmailAddress**要素には、メールボックスの外部電子メールアドレスが含まれています。 
   
 ```XML
 <ExternalEmailAddress></ExternalEmailAddress>
@@ -25,7 +25,7 @@ ms.locfileid: "19760436"
 
 **string**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -43,21 +43,21 @@ ms.locfileid: "19760436"
   
 ## <a name="text-value"></a>テキスト値
 
-**ExternalEmailAddress**要素のテキスト値は、メールボックスの外部電子メール アドレスです。 
+**ExternalEmailAddress**要素のテキスト値は、メールボックスの外部電子メールアドレスです。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

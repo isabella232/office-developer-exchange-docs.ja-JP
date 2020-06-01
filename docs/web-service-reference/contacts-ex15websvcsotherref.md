@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 0cc67cdf-9707-45e7-92c6-fa83a016cdbe
-description: 連絡先の要素には、タスクに関連付けられている連絡先の一覧が含まれています。
-ms.openlocfilehash: da7963d30f58f7da52e76e3f7f1d0f7fd68abf74
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 連絡先要素には、タスクに関連付けられている連絡先の一覧が含まれています。
+ms.openlocfilehash: c2b7bbadd494081a3e47b7b6c489218fab31d574
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759672"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458391"
 ---
 # <a name="contacts"></a>連絡先
 
-**連絡先**の要素には、タスクに関連付けられている連絡先の一覧が含まれています。 
+**連絡先**要素には、タスクに関連付けられている連絡先の一覧が含まれています。 
   
 ```xml
 <Contacts>
@@ -30,7 +30,7 @@ ms.locfileid: "19759672"
 ```
 
  **ArrayOfStringsType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,32 +40,32 @@ ms.locfileid: "19759672"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[String](string.md) <br/> |連絡先の名前のコンマ区切りのリストを表します。  <br/> |
+|[String](string.md) <br/> |連絡先名のコンマ区切りリストを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[タスク](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
+|[Task](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

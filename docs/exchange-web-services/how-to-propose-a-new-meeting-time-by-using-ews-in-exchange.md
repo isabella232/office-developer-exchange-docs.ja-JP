@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: d5ac8e5b-3876-4f20-b4d3-44505e066042
 description: Exchange で EWS を使用して Exchange クライアント アプリケーションから新しい会議日時を提案する方法について説明します。
-ms.openlocfilehash: f9edd8511332474a728635a6aa369a772da24786
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: HT
+ms.openlocfilehash: 4f001bb82d2325624b567412620283619b51f25b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759039"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456813"
 ---
 # <a name="propose-a-new-meeting-time-by-using-ews-in-exchange"></a>Exchange で EWS を使用して会議の新しい日時を提案する
 
@@ -33,11 +33,11 @@ Exchange で EWS を使用して Exchange クライアント アプリケーシ�
     
 会議の参照を見つけるには、次の手順を使用します。
   
-1. [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) EWS 操作 (または [Folder.FindItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.finditems%28v=EXCHG.80%29.aspx) EWS マネージ API メソッド) を使用して、対象の会議出席依頼アイテムまたは予定表アイテムを見つけます。 あるいは、[SyncFolderItems](http://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx) EWS 操作を使用して、対象の会議出席依頼アイテムまたは予定表アイテムの識別子を取得することもできます。 
+1. [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) EWS 操作 (または [Folder.FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.finditems%28v=EXCHG.80%29.aspx) EWS マネージ API メソッド) を使用して、対象の会議出席依頼アイテムまたは予定表アイテムを見つけます。 あるいは、[SyncFolderItems](https://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx) EWS 操作を使用して、対象の会議出席依頼アイテムまたは予定表アイテムの識別子を取得することもできます。 
     
 2. **FindItem** 操作 (または **Folder.FindItems** メソッド) の結果を解析して、会議アイテムのアイテム識別子を取得します。 
     
-3. [GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) EWS 操作を使用して、会議の応答オブジェクトを取得します。 
+3. [GetItem](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) EWS 操作を使用して、会議の応答オブジェクトを取得します。 
     
 次の XML は、アイテムの応答オブジェクトを要求するために何が送られるかを示しています。
   
@@ -45,9 +45,9 @@ Exchange で EWS を使用して Exchange クライアント アプリケーシ�
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
     <t:MailboxCulture>en-US</t:MailboxCulture>
@@ -71,25 +71,25 @@ Exchange で EWS を使用して Exchange クライアント アプリケーシ�
 </soap:Envelope>
 ```
 
-アイテム識別子、会議の開始時刻と終了時刻、応答オブジェクト コレクション、および会議日時変更提案を開催者が許可しているかどうかを要求した場合、**GetItem** 操作の応答は次の XML のようになります。 [ResponseObjects](http://msdn.microsoft.com/library/ad29e064-3f3d-4b7b-aa4c-9ec27326381d%28Office.15%29.aspx) 要素で表される応答オブジェクト コレクションには、予定表アイテムに有効な応答のセットが含まれます。 **ProposeNewTime** 要素は、新しい会議日時をユーザーが提案できることを示す応答オブジェクトです。 [AcceptItem](http://msdn.microsoft.com/library/05a15431-77e1-411a-a16b-5481d364d3cc%28Office.15%29.aspx)、[TentativelyAcceptItem](http://msdn.microsoft.com/library/ce6f50ef-ad8a-47e4-915a-487b2ef7a2e0%28Office.15%29.aspx)、および [DeclineItem](http://msdn.microsoft.com/library/2d8d2389-924e-4d03-a324-35d56cf0d6b1%28Office.15%29.aspx) 要素は、新しい会議日時を会議開催者に提案するために使用できる応答オブジェクトを表します。 
+アイテム識別子、会議の開始時刻と終了時刻、応答オブジェクト コレクション、および会議日時変更提案を開催者が許可しているかどうかを要求した場合、**GetItem** 操作の応答は次の XML のようになります。 [ResponseObjects](https://msdn.microsoft.com/library/ad29e064-3f3d-4b7b-aa4c-9ec27326381d%28Office.15%29.aspx) 要素で表される応答オブジェクト コレクションには、予定表アイテムに有効な応答のセットが含まれます。 **ProposeNewTime** 要素は、新しい会議日時をユーザーが提案できることを示す応答オブジェクトです。 [AcceptItem](https://msdn.microsoft.com/library/05a15431-77e1-411a-a16b-5481d364d3cc%28Office.15%29.aspx)、[TentativelyAcceptItem](https://msdn.microsoft.com/library/ce6f50ef-ad8a-47e4-915a-487b2ef7a2e0%28Office.15%29.aspx)、および [DeclineItem](https://msdn.microsoft.com/library/2d8d2389-924e-4d03-a324-35d56cf0d6b1%28Office.15%29.aspx) 要素は、新しい会議日時を会議開催者に提案するために使用できる応答オブジェクトを表します。 
   
 ```XML
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" 
                          MinorVersion="0" 
                          MajorBuildNumber="815" 
                          MinorBuildNumber="6" 
                          Version="V2_7" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -124,9 +124,9 @@ Exchange で EWS を使用して Exchange クライアント アプリケーシ�
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
-<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+<soap:Envelope xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013"/>
   </soap:Header>
@@ -148,22 +148,22 @@ Exchange で EWS を使用して Exchange クライアント アプリケーシ�
 この要求への応答には、出席者の予定表に追加された予定表アイテムの識別子、および出席者の [削除済みアイテム] フォルダーに置かれた会議出席依頼のコピーが含まれます。 新しい日時の提案を含む応答メッセージは、出席者の [送信済みアイテム] フォルダーにも保存されます (会議応答メッセージのハンドルを取得するには、その会議応答メッセージを見つける必要があります)。
   
 ```XML
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" 
                          MinorVersion="0" 
                          MajorBuildNumber="815" 
                          MinorBuildNumber="6" 
                          Version="V2_7" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -182,7 +182,7 @@ Exchange で EWS を使用して Exchange クライアント アプリケーシ�
 </s:Envelope>
 ```
 
-出席者が新しい会議日時の提案で応答すると、開催者は [MeetingResponse](http://msdn.microsoft.com/library/9f798e79-dafd-4d4d-9967-95fd8e5c0502%28Office.15%29.aspx) メッセージを受け取ります。 **MeetingResponse** メッセージには、会議の新しい開始時刻と終了時刻の提案、開催者の予定表の中の関連予定表アイテムの識別子が含まれます。 開催者はその情報を使用して、会議を表す既存の予定表アイテムを更新できます。 新しい会議日時を提案する **MeetingResponse** メッセージに開催者が応答するワークフローを次に示します。 
+出席者が新しい会議日時の提案で応答すると、開催者は [MeetingResponse](https://msdn.microsoft.com/library/9f798e79-dafd-4d4d-9967-95fd8e5c0502%28Office.15%29.aspx) メッセージを受け取ります。 **MeetingResponse** メッセージには、会議の新しい開始時刻と終了時刻の提案、開催者の予定表の中の関連予定表アイテムの識別子が含まれます。 開催者はその情報を使用して、会議を表す既存の予定表アイテムを更新できます。 新しい会議日時を提案する **MeetingResponse** メッセージに開催者が応答するワークフローを次に示します。 
   
 1. **ProposedStart** 要素、または **ProposedEnd** 要素が **MeetingResponse** で設定されているかどうかを判断します。 設定されている場合は、手順 2 に進みます。 設定されていない場合、**MeetingResponse** メッセージは、出席者が会議を承諾した、仮承諾した、または辞退したことのみを示します。 
     
@@ -190,9 +190,9 @@ Exchange で EWS を使用して Exchange クライアント アプリケーシ�
     
 3. 元の開始時刻と終了時刻を、提案された新しい会議日時と比較します。提案された新しい会議日時を開催者が受け入れることができる場合は、手順 4 に進みます。それ以外の場合、会議開催者は、提案された会議日時を無視するか、新しい会議日時を提案した出席者にメール応答を送信できます。
     
-4. (省略可能) [GetUserAvailability](http://msdn.microsoft.com/library/8da17226-5d3a-4525-9ffa-d83730f47bb1%28Office.15%29.aspx) EWS 操作呼び出しを実行して、提案された日時がすべての出席者 (部屋およびリソース メールボックスを含む) にとって都合がよいかどうかを調べます。 (これを行うには、[ExchangeService.GetUserAvailability](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.getuseravailability%28v=exchg.80%29.aspx) EWS マネージ API メソッドを使用することもできます。) 
+4. (省略可能) [GetUserAvailability](https://msdn.microsoft.com/library/8da17226-5d3a-4525-9ffa-d83730f47bb1%28Office.15%29.aspx) EWS 操作呼び出しを実行して、提案された日時がすべての出席者 (部屋およびリソース メールボックスを含む) にとって都合がよいかどうかを調べます。 (これを行うには、[ExchangeService.GetUserAvailability](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.getuseravailability%28v=exchg.80%29.aspx) EWS マネージ API メソッドを使用することもできます。) 
     
-5. その後開催者は、[UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) EWS 操作 (または [Appointment.Update](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment.update%28v=exchg.80%29.aspx) EWS マネージ API メソッド) を使用して、提案された新しい会議日時に基づいて会議を更新し、最新情報をすべての出席者に送信できます。 
+5. その後開催者は、[UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) EWS 操作 (または [Appointment.Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.update%28v=exchg.80%29.aspx) EWS マネージ API メソッド) を使用して、提案された新しい会議日時に基づいて会議を更新し、最新情報をすべての出席者に送信できます。 
     
 次の図は、会議開催者、出席者、および EWS 呼び出しを処理する Exchange サーバーの間で行われるプロセスを示しています。
   
@@ -210,7 +210,7 @@ Exchange で EWS を使用して Exchange クライアント アプリケーシ�
 
 - [Exchange の予定表と EWS](calendars-and-ews-in-exchange.md)
     
-- [Exchange 2013 の EWS を使用して予定と会議を作成する](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)
+- [Exchange 2013 で EWS を使用して予定と会議を作成する](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)
     
 - [Exchange の EWS を使用して予定と会議を取得する](how-to-get-appointments-and-meetings-by-using-ews-in-exchange.md)
     

@@ -11,27 +11,27 @@ api_name:
 api_type:
 - schema
 ms.assetid: 417e994b-0a17-4c24-9527-04796b80b029
-description: CreateItem 操作を使用して、Exchange ストア内の連絡先を作成します。
-ms.openlocfilehash: 05e4715f3c6675401ae7afac852395f7459c02c9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: CreateItem 操作は、Exchange ストアで連絡先を作成するために使用されます。
+ms.openlocfilehash: e1d78392b94d328cf687655cd93e6c9568f6274f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759834"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457124"
 ---
 # <a name="createitem-operation-contact"></a>CreateItem 操作 (連絡先)
 
-CreateItem 操作を使用して、Exchange ストア内の連絡先を作成します。
+CreateItem 操作は、Exchange ストアで連絡先を作成するために使用されます。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-個人用配布リストの作成はサポートされていません。 [CompleteName](completename.md)コンテナー内のすべてのプロパティは読み取り専用であり、連絡先アイテムに設定することはできません。 
+プライベート配布リストの作成はサポートされていません。 [CompleteName](completename.md)コンテナー内のすべてのプロパティは読み取り専用であり、連絡先アイテムには設定できません。 
   
 ## <a name="createitem-request-example"></a>CreateItem 要求の例
 
 ### <a name="description"></a>説明
 
-有効な createitem メソッドの SOAP 要求の次の例では、既定の連絡先フォルダーに連絡先を作成する方法を示します。
+次の有効な CreateItem SOAP 要求の例は、既定の連絡先フォルダーに連絡先を作成する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -40,9 +40,9 @@ CreateItem 操作を使用して、Exchange ストア内の連絡先を作成し
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
  xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
- xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <CreateItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages" >
+    <CreateItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages" >
       <SavedItemFolderId>
         <t:DistinguishedFolderId Id="contacts"/>
       </SavedItemFolderId>
@@ -74,9 +74,9 @@ CreateItem 操作を使用して、Exchange ストア内の連絡先を作成し
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-次の要素は、応答で使用されます。
+応答では、次の要素が使用されます。
   
 - [CreateItem](createitem.md)
     
@@ -84,27 +84,27 @@ CreateItem 操作を使用して、Exchange ストア内の連絡先を作成し
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
-- [アイテム (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
+- [アイテム (非 Emptyarrayofallitemstype)](items-nonemptyarrayofallitemstype.md)
     
-- [Contact](contact.md)
+- [連絡先](contact.md)
     
-- [表題](fileas.md)
+- [FileAs](fileas.md)
     
 - [GivenName](givenname.md)
     
-- [[得意先名]](companyname.md)
+- [CompanyName](companyname.md)
     
 - [EmailAddresses](emailaddresses.md)
     
-- [エントリ (EmailAddress)](entry-emailaddress.md)
+- [Entry (EmailAddress)](entry-emailaddress.md)
     
 - [PhysicalAddresses](physicaladdresses.md)
     
-- [エントリ (PhysicalAddress)](entry-physicaladdress.md)
+- [Entry (PhysicalAddress)](entry-physicaladdress.md)
     
-- [番地](street.md)
+- [所在](street.md)
     
-- [City](city.md)
+- [市区町村](city.md)
     
 - [State](state-ex15websvcsotherref.md)
     
@@ -112,17 +112,17 @@ CreateItem 操作を使用して、Exchange ストア内の連絡先を作成し
     
 - [PhoneNumbers](phonenumbers.md)
     
-- [入力 (電話番号)](entry-phonenumber.md)
+- [Entry (PhoneNumber)](entry-phonenumber.md)
     
-- [役職](jobtitle.md)
+- [JobTitle](jobtitle.md)
     
 - [姓](surname.md)
     
-## <a name="successful-createitem-request"></a>Createitem メソッドの要求が成功しました。
+## <a name="successful-createitem-request"></a>成功した CreateItem 要求
 
 ### <a name="description"></a>説明
 
-次の例では、連絡先が作成されている CreateItem 要求に正常な応答を示します。 この例では、応答には、新しく作成されたアイテムの識別子が含まれています。
+次の例は、連絡先を作成した CreateItem 要求に対する正常な応答を示しています。 この例では、応答に新しく作成されたアイテムの識別子が含まれています。
   
 ### <a name="code"></a>コード
 
@@ -133,12 +133,12 @@ CreateItem 操作を使用して、Exchange ストア内の連絡先を作成し
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="602" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -156,11 +156,11 @@ CreateItem 操作を使用して、Exchange ストア内の連絡先を作成し
 
 ### <a name="comments"></a>コメント
 
-項目の識別子が読みやすさを保持するために小さすぎます。
+アイテム識別子は読みやすくするために短縮されています。
   
-### <a name="successful-response-elements"></a>正常な応答の要素
+### <a name="successful-response-elements"></a>成功した応答要素
 
-次の要素は、応答で使用されます。
+応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -172,17 +172,17 @@ CreateItem 操作を使用して、Exchange ストア内の連絡先を作成し
     
 - [ResponseCode](responsecode.md)
     
-- [アイテム (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
+- [アイテム (非 Emptyarrayofallitemstype)](items-nonemptyarrayofallitemstype.md)
     
-- [Contact](contact.md)
+- [連絡先](contact.md)
     
 - [ItemId](itemid.md)
     
-## <a name="invalid-createitem-request-example"></a>CreateItem 要求の無効な使用例
+## <a name="invalid-createitem-request-example"></a>無効な CreateItem 要求の例
 
 ### <a name="description"></a>説明
 
-次の使用例は、互換性のない方法ですが、有効な XML が含まれている要求を示しています。 検索フォルダーで連絡先を作成できません。
+次の例は、有効な XML で互換性のない命令を含む要求を示しています。 検索フォルダーに連絡先を作成することはできません。
   
 ### <a name="code"></a>コード
 
@@ -190,9 +190,9 @@ CreateItem 操作を使用して、Exchange ストア内の連絡先を作成し
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <CreateItem xmlns='http://schemas.microsoft.com/exchange/services/2006/messages'>
+    <CreateItem xmlns='https://schemas.microsoft.com/exchange/services/2006/messages'>
       <SavedItemFolderId>
         <t:DistinguishedFolderId Id='searchfolders'/>
       </SavedItemFolderId>
@@ -206,11 +206,11 @@ CreateItem 操作を使用して、Exchange ストア内の連絡先を作成し
 </soap:Envelope>
 ```
 
-## <a name="createitem-contact-error-response"></a>Createitem メソッド (連絡先) のエラー応答
+## <a name="createitem-contact-error-response"></a>CreateItem (Contact) エラー応答
 
 ### <a name="description"></a>説明
 
-次の使用例は、createitem メソッド (連絡先) の要求にエラー応答を示しています。
+次の例は、CreateItem (Contact) 要求に対するエラー応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -221,12 +221,12 @@ CreateItem 操作を使用して、Exchange ストア内の連絡先を作成し
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="602" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Error">
           <m:MessageText>Cannot create a contact in a non-contact Folder.</m:MessageText>
@@ -240,7 +240,7 @@ CreateItem 操作を使用して、Exchange ストア内の連絡先を作成し
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a>エラー応答の要素
+### <a name="error-response-elements"></a>エラー応答要素
 
 エラー応答では、次の要素が使用されます。
   
@@ -258,7 +258,7 @@ CreateItem 操作を使用して、Exchange ストア内の連絡先を作成し
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [アイテム (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
+- [アイテム (非 Emptyarrayofallitemstype)](items-nonemptyarrayofallitemstype.md)
     
 ## <a name="see-also"></a>関連項目
 

@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 734f1a58-adda-4830-973e-e84bf7b870d5
 description: SuggestionQuality 要素は、提案された会議の時間の品質を表します。
-ms.openlocfilehash: e67e0149226b36c22cdd00acd78f6582f826dd3e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 3f8c15ccabd03687dc386a0328020cbc0bc802c4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839624"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457978"
 ---
 # <a name="suggestionquality"></a>SuggestionQuality
 
@@ -42,7 +42,7 @@ ms.locfileid: "19839624"
 ```
 
  **SuggestionQuality**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -58,34 +58,34 @@ ms.locfileid: "19839624"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[提案](suggestion.md) <br/> |単一会議の時間を提案します。  <br/> この要素への XPath 式は、次のようにします。  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]` <br/> |
+|[提案](suggestion.md) <br/> |1つの会議時間の提案を表します。  <br/> この要素の XPath 式を次に示します。  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]` <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**SuggestionQuality**の値を表す文字列値は、必要があります。 指定可能な値は次のいずれかです。 
+**SuggestionQuality**値を表すテキスト値が必要です。 指定可能な値は次のいずれかです。 
   
-- **優れた**ユーザーおよびリソースの 100% は、推奨される会議の時刻を使用できます。 
+- 推奨される会議時間について、ユーザーとリソース**の 100%** が利用可能です。 
     
-- **良い**ユーザーおよびリソースの利用可能な最小の割合は、 [GoodThreshold](goodthreshold.md)要素の値に 50 を加えたよりも同等以上です。 
+- **適切な**使用可能なユーザーとリソースの最小パーセンテージは、 [GoodThreshold](goodthreshold.md)要素の値に50を加えた値と等しいか、それよりも大きくなっています。 
     
-- **フェア**ユーザーおよび提案された会議の時間に利用できるリソースの最大の割合は、 [GoodThreshold](goodthreshold.md)要素の値に 50 を加算した値です。 **公正な**品質会議の時間の最小値は、50% です。 
+- **公正**提案された会議の時間に対して使用できるユーザーとリソースの最大パーセンテージは、 [GoodThreshold](goodthreshold.md)要素の値と50に等しくなります。 **フェア**クオリティ会議の時間の最小値は50% です。 
     
-- **低下**ユーザーおよびリソースの 50% 未満の場合は、提案された会議の時間を利用できます。 
+- **低**提案された会議の時間について、ユーザーとリソースの50% 未満が利用可能です。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**SuggestionQuality**型は、また、 [DayQuality](dayquality.md)と[MinimumSuggestionQuality](minimumsuggestionquality.md)の要素の型です。 
+**SuggestionQuality**型は、 [Dayquality](dayquality.md)および[MinimumSuggestionQuality](minimumsuggestionquality.md)要素の型でもあります。 
   
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -96,5 +96,5 @@ MicrosoftExchange Server 2007 がインストールされているクライア�
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[ユーザーの状態を取得します。](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[ユーザーの空き時間情報の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

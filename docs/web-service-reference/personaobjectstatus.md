@@ -1,5 +1,5 @@
 ---
-title: PersonaObjectStatus
+title: 個人情報
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1354c86e-7740-42c4-9e63-b372b3906846
-description: PersonaObjectStatus 要素は、ペルソナが関連付けられている情報が完全または部分的なのかどうかを指定します。
-ms.openlocfilehash: e216807f8b7d9de47b9cf40c10676579b8086547
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 個人の情報は、関連付けられたペルソナの情報が完全であるか一部であるかを指定します。
+ms.openlocfilehash: 66dbe30cebb0aa5845d9580ad057d1cf5ab9b037
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832741"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457236"
 ---
-# <a name="personaobjectstatus"></a>PersonaObjectStatus
+# <a name="personaobjectstatus"></a>個人情報
 
-**PersonaObjectStatus**要素は、ペルソナが関連付けられている情報が完全または部分的なのかどうかを指定します。 
+**個人**の情報は、関連付けられたペルソナの情報が完全であるか一部であるかを指定します。 
   
 ```XML
 <PersonaObjectStatus></PersonaObjectStatus>
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -38,25 +38,25 @@ ms.locfileid: "19832741"
   
 ### <a name="parent-elements"></a>親要素
 
-[ペルソナ](persona.md)
+[ユーザー](persona.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**PersonaObjectStatus**要素のテキスト値は、ペルソナが完全または部分的なのかどうかを示します。 
+個人が完全か一部かを示す、**個人**情報要素のテキスト値が表示されます。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

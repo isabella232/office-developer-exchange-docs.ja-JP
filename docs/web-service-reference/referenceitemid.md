@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8fd4bb12-a94b-43f5-be3b-f435684e311d
-description: ReferenceItemId 要素は、応答オブジェクトを参照する項目を識別します。
-ms.openlocfilehash: d29f2dfec8f2c23fe0ac8c84d2bb9029fce613d2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ReferenceItemId 要素は、response オブジェクトが参照する項目を識別します。
+ms.openlocfilehash: 3b77d75de91af8ec8fb7ae2d507377d1d976febf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833032"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457229"
 ---
 # <a name="referenceitemid"></a>ReferenceItemId
 
-**ReferenceItemId**要素は、応答オブジェクトを参照する項目を識別します。 
+**Referenceitemid**要素は、response オブジェクトが参照する項目を識別します。 
   
 ```xml
 <ReferenceItemId Id="" ChangeKey="" />
 ```
 
  **ItemIdType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -36,8 +36,8 @@ ms.locfileid: "19833032"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**Id** <br/> |Exchange ストア内の特定の項目を識別します。  <br/> |
-|**変更キー** <br/> |アイテムの特定のバージョンを識別します。  <br/> |
+|**Id** <br/> |Exchange ストア内の特定のアイテムを識別します。  <br/> |
+|**ChangeKey** <br/> |特定のバージョンのアイテムを識別します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -47,33 +47,33 @@ ms.locfileid: "19833032"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[AcceptItem](acceptitem.md) <br/> |会議出席依頼、承諾の返信を表します。  <br/> |
-|[AcceptSharingInvitation](acceptsharinginvitation.md) <br/> |共有への招待の承諾、返信を表します。  <br/> |
-|[CancelCalendarItem](cancelcalendaritem.md) <br/> |会議をキャンセルするために使用される応答オブジェクトを表します。  <br/> |
-|[DeclineItem](declineitem.md) <br/> |会議出席依頼を辞退の返信を表します。  <br/> |
-|[ForwardItem](forwarditem.md) <br/> |受信者に転送するのには、Exchange ストアの項目が含まれています。  <br/> |
-|[RemoveItem](removeitem.md) <br/> |Exchange ストアから項目を削除します。  <br/> |
-|[ReplyAllToItem](replyalltoitem.md) <br/> |Exchange ストア内のアイテムの識別されたすべての受信者への返信が含まれています。  <br/> |
-|[ReplyToItem](replytoitem.md) <br/> |Exchange ストア内のアイテムの作成者に返信が含まれています。  <br/> |
-|[SuppressReadReceipt](suppressreadreceipt.md) <br/> |読み取り受信確認の要求に応答するために使用します。  <br/> |
-|[TentativelyAcceptItem](tentativelyacceptitem.md) <br/> |仮の予定を表しますが、会議出席依頼に返信します。  <br/> |
+|[AcceptItem](acceptitem.md) <br/> |会議出席依頼への返信を承諾するかを表します。  <br/> |
+|[AcceptSharingInvitation 状](acceptsharinginvitation.md) <br/> |共有への招待への返信を受け付けるかを表します。  <br/> |
+|[CancelCalendarItem](cancelcalendaritem.md) <br/> |会議の取り消しに使用される response オブジェクトを表します。  <br/> |
+|[DeclineItem](declineitem.md) <br/> |会議出席依頼への返信を拒否することを表します。  <br/> |
+|[Forwarditem と](forwarditem.md) <br/> |受信者に転送するための Exchange ストアアイテムが保存されています。  <br/> |
+|[RemoveItem](removeitem.md) <br/> |Exchange ストアからアイテムを削除します。  <br/> |
+|[Replyalltoitem と](replyalltoitem.md) <br/> |Exchange ストア内のアイテムの特定の受信者全員への返信を含みます。  <br/> |
+|[ReplyToItem](replytoitem.md) <br/> |Exchange ストア内のアイテムの作成者への返信を含みます。  <br/> |
+|[SuppressReadReceipt](suppressreadreceipt.md) <br/> |開封確認メッセージ要求に応答するために使用されます。  <br/> |
+|[TentativelyAcceptItem](tentativelyacceptitem.md) <br/> |会議出席依頼に対する仮の返信を表します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Microsoft Exchange Server を実行しているコンピューターの Exchange Web サービスをホストにクライアント アクセス サーバーの役割がインストールされている IIS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

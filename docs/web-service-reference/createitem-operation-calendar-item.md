@@ -11,27 +11,27 @@ api_name:
 api_type:
 - schema
 ms.assetid: aa4a7c94-f668-4bd2-8079-c855f6ab17e1
-description: CreateItem 操作は、Exchange ストア内の予定表アイテムを作成します。
-ms.openlocfilehash: c2174dd806b922e640ef7afcab32b98c67c65b41
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: CreateItem 操作は、Exchange ストアに予定表アイテムを作成します。
+ms.openlocfilehash: 535edf9fe567bc3063a5b853f01d604ea4c7eb95
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759833"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457502"
 ---
 # <a name="createitem-operation-calendar-item"></a>CreateItem 操作 (予定表アイテム)
 
-CreateItem 操作は、Exchange ストア内の予定表アイテムを作成します。
+CreateItem 操作は、Exchange ストアに予定表アイテムを作成します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-CreateItem 操作は、予定、会議、および会議出席依頼を作成します。 出席者なしの予定表アイテムが作成されると、予定とみなされます。 出席者が指定されている場合、予定表アイテムは会議です。 CreateItem 操作を使用して会議を作成するとき、会議出席依頼は、会議出席依頼を送信するのには、SendMeetingInvitations 属性が設定されている場合に特定の出席者に自動的に送信します。
+CreateItem 操作は、予定、会議、および会議出席依頼を作成します。 予定表アイテムが出席者なしで作成された場合は、予定と見なされます。 出席者が指定されている場合、予定表アイテムは会議です。 CreateItem 操作を使用して会議を作成する場合、会議出席依頼を送信するように Sendmeeting の招待属性が設定されている場合、会議出席依頼は特定の出席者に自動的に送信されます。
   
-## <a name="createitem-calendar-item-request-example"></a>Createitem メソッド (予定表アイテム) の要求の例
+## <a name="createitem-calendar-item-request-example"></a>CreateItem (予定表アイテム) の要求の例
 
 ### <a name="description"></a>説明
 
-CreateItem 要求の次の例では、2 つの必須出席者に会議を作成する方法を示します。 この要求では、2 つの出席者に会議出席依頼を送信します。
+次の CreateItem 要求の例は、2つの必須出席者を含む会議を作成する方法を示しています。 この要求は、2人の出席者に会議出席依頼を送信します。
   
 ### <a name="code"></a>コード
 
@@ -39,16 +39,16 @@ CreateItem 要求の次の例では、2 つの必須出席者に会議を作成�
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <CreateItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-                xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
+    <CreateItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+                xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
                 SendMeetingInvitations="SendToAllAndSaveCopy" >
       <SavedItemFolderId>
         <t:DistinguishedFolderId Id="calendar"/>
       </SavedItemFolderId>
       <Items>
-        <t:CalendarItem xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <t:CalendarItem xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <Subject>Planning Meeting</Subject>
           <Body BodyType="Text">Plan the agenda for next week's meeting.</Body>
           <ReminderIsSet>true</ReminderIsSet>
@@ -79,11 +79,11 @@ CreateItem 要求の次の例では、2 つの必須出席者に会議を作成�
 
 ### <a name="comments"></a>コメント
 
-会議出席依頼に応答する方法の例は、 [CreateItem 操作 (会議出席依頼)](createitem-operation-meeting-request.md)のトピックを参照してください。 
+会議出席依頼に返信する方法の例については、「 [CreateItem 操作 (会議出席依頼)](createitem-operation-meeting-request.md) 」を参照してください。 
   
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-次の要素は、要求で使用されます。
+要求では、次の要素が使用されます。
   
 - [CreateItem](createitem.md)
     
@@ -91,19 +91,19 @@ CreateItem 要求の次の例では、2 つの必須出席者に会議を作成�
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
-- [アイテム (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
+- [アイテム (非 Emptyarrayofallitemstype)](items-nonemptyarrayofallitemstype.md)
     
-- [カレンダー項目](calendaritem.md)
+- [CalendarItem](calendaritem.md)
     
-- [Subject](subject.md)
+- [[件名]](subject.md)
     
-- [Body/本文](body.md)
+- [Body](body.md)
     
 - [ReminderIsSet](reminderisset.md)
     
 - [ReminderMinutesBeforeStart](reminderminutesbeforestart.md)
     
-- [Start](start.md)
+- [開始](start.md)
     
 - [終わり](end-ex15websvcsotherref.md)
     
@@ -115,17 +115,17 @@ CreateItem 要求の次の例では、2 つの必須出席者に会議を作成�
     
 - [RequiredAttendees](requiredattendees.md)
     
-- [Attendee](attendee.md)
+- [出席者](attendee.md)
     
 - [メールボックス](mailbox.md)
     
-- [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
+- [EmailAddress (非 Emptystringtype)](emailaddress-nonemptystringtype.md)
     
-## <a name="successful-createitem-calendar-item-response"></a>Createitem メソッドが成功した (予定表アイテム) の応答
+## <a name="successful-createitem-calendar-item-response"></a>成功した CreateItem (予定表アイテム) の応答
 
 ### <a name="description"></a>説明
 
-次の使用例は、CreateItem 要求に正常な応答を示しています。
+次の例は、CreateItem 要求に対する正常な応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -136,12 +136,12 @@ CreateItem 要求の次の例では、2 つの必須出席者に会議を作成�
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -159,11 +159,11 @@ CreateItem 要求の次の例では、2 つの必須出席者に会議を作成�
 
 ### <a name="comments"></a>コメント
 
-[ItemId](itemid.md)要素の**Id**と**変更キー**属性は、読みやすさを保持するために短縮されています。 
+[ItemId](itemid.md)要素**Id**および**changekey**属性は読みやすいように短縮されています。 
   
-### <a name="successful-response-elements"></a>正常な応答の要素
+### <a name="successful-response-elements"></a>成功した応答要素
 
-次の要素は、応答で使用されます。
+応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -177,7 +177,7 @@ CreateItem 要求の次の例では、2 つの必須出席者に会議を作成�
     
 - [Items](items.md)
     
-- [カレンダー項目](calendaritem.md)
+- [CalendarItem](calendaritem.md)
     
 - [ItemId](itemid.md)
     

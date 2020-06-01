@@ -1,5 +1,5 @@
 ---
-title: CreateItem 操作 (電子メール)
+title: CreateItem 操作 (電子メールメッセージ)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,32 +11,32 @@ api_name:
 api_type:
 - schema
 ms.assetid: fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1
-description: CreateItem 操作を使用して、電子メール メッセージを作成します。
-ms.openlocfilehash: 591209165cfbafc2d5f4036dd8fab6659523a044
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: CreateItem 操作は、電子メールメッセージを作成するために使用されます。
+ms.openlocfilehash: 384ed8ff653029c2b7db0b36986d85842b0a06cf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759835"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457117"
 ---
-# <a name="createitem-operation-email-message"></a>CreateItem 操作 (電子メール)
+# <a name="createitem-operation-email-message"></a>CreateItem 操作 (電子メールメッセージ)
 
-CreateItem 操作を使用して、電子メール メッセージを作成します。
+CreateItem 操作は、電子メールメッセージを作成するために使用されます。
   
 ## <a name="createitem-request-example"></a>CreateItem 要求の例
 
 ### <a name="description"></a>説明
 
-CreateItem 要求の次の例では、新しい電子メール メッセージを作成、メッセージを送信し、[下書き] フォルダーのコピーを保存する方法を示します。
+CreateItem 要求の次の例は、新しい電子メールメッセージを作成し、メッセージを送信して、そのコピーを [下書き] フォルダーに保存する方法を示しています。
   
 ### <a name="code"></a>コード
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <CreateItem MessageDisposition="SendAndSaveCopy" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateItem MessageDisposition="SendAndSaveCopy" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <SavedItemFolderId>
         <t:DistinguishedFolderId Id="drafts" />
       </SavedItemFolderId>
@@ -58,39 +58,39 @@ CreateItem 要求の次の例では、新しい電子メール メッセージ�
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-次の要素は、要求で使用されます。 
+要求では、次の要素が使用されます。 
   
 - [CreateItem](createitem.md)
     
 - [SavedItemFolderId](saveditemfolderid.md)
     
-- [アイテム (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
+- [アイテム (非 Emptyarrayofallitemstype)](items-nonemptyarrayofallitemstype.md)
     
 - [Message](message-ex15websvcsotherref.md)
     
 - [ItemClass](itemclass.md)
     
-- [Subject](subject.md)
+- [[件名]](subject.md)
     
-- [Body/本文](body.md)
+- [Body](body.md)
     
 - [ToRecipients](torecipients.md)
     
 - [メールボックス](mailbox.md)
     
-- [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
+- [EmailAddress (非 Emptystringtype)](emailaddress-nonemptystringtype.md)
     
 - [IsRead](isread.md)
     
-CreateItem 操作の要求メッセージには、他のオプションを検索するには、スキーマの階層構造を表示します。 [CreateItem](createitem.md)要素から開始します。 
+CreateItem 操作の要求メッセージに関するその他のオプションについては、スキーマ階層を参照してください。 [CreateItem](createitem.md)要素から開始します。 
   
-## <a name="successful-createitem-response"></a>Createitem メソッドの正常な応答
+## <a name="successful-createitem-response"></a>成功した CreateItem 応答
 
 ### <a name="description"></a>説明
 
-次の使用例は、CreateItem 要求に正常な応答を示しています。
+次の例は、CreateItem 要求に対する正常な応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -100,12 +100,12 @@ CreateItem 操作の要求メッセージには、他のオプションを検索
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
-    <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="595" MinorBuildNumber="0" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+    <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="595" MinorBuildNumber="0" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -117,9 +117,9 @@ CreateItem 操作の要求メッセージには、他のオプションを検索
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a>正常な応答の要素
+### <a name="successful-response-elements"></a>成功した応答要素
 
-応答では、次の要素が含まれています。 
+応答には、次の要素が含まれています。 
   
 - [CreateItemResponse](createitemresponse.md)
     
@@ -131,13 +131,13 @@ CreateItem 操作の要求メッセージには、他のオプションを検索
     
 - [Items](items.md)
     
-CreateItem 操作の応答メッセージには、他のオプションを検索するには、スキーマの階層構造を表示します。 [CreateItemResponse](createitemresponse.md)要素から開始します。 
+CreateItem 操作の応答メッセージに関するその他のオプションについては、スキーマ階層を参照してください。 [Createitemresponse](createitemresponse.md)要素から開始します。 
   
-## <a name="error-createitem-response"></a>Createitem メソッドのエラー応答
+## <a name="error-createitem-response"></a>エラー CreateItem 応答
 
 ### <a name="description"></a>説明
 
-次の使用例は、CreateItem 要求に対してエラー応答を示しています。
+次の例は、CreateItem 要求に対するエラー応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -147,12 +147,12 @@ CreateItem 操作の応答メッセージには、他のオプションを検索
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
-    <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="595" MinorBuildNumber="0" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+    <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="595" MinorBuildNumber="0" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Error">
           <m:MessageText>The user account which was used to submit this request does not have the right to send mail on behalf of the specified sending account.</m:MessageText>
@@ -166,7 +166,7 @@ CreateItem 操作の応答メッセージには、他のオプションを検索
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a>エラー応答の要素
+### <a name="error-response-elements"></a>エラー応答要素
 
 エラー応答では、次の要素が使用されます。 
   
@@ -184,7 +184,7 @@ CreateItem 操作の応答メッセージには、他のオプションを検索
     
 - [Items](items.md)
     
-CreateItem 操作の応答のエラー メッセージについては、他のオプションを検索するには、スキーマの階層構造を表示します。 [CreateItemResponse](createitemresponse.md)要素から開始します。 
+CreateItem 操作のエラー応答メッセージに関するその他のオプションについては、「スキーマ階層」を参照してください。 [Createitemresponse](createitemresponse.md)要素から開始します。 
   
 ## <a name="see-also"></a>関連項目
 

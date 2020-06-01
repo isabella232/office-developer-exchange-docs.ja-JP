@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5af26dc5-6aaf-44a0-8d05-c1d116930a51
-description: KeywordStat 要素は、キーワードの統計情報を指定します。
-ms.openlocfilehash: 1d40ba5dfd249df3cb7d104500efdfd187b325da
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: KeywordStat 要素は、キーワード統計情報を指定します。
+ms.openlocfilehash: d9c0524de04e256e94e279fd1ae0bbfd6a5de0f9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832194"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458118"
 ---
 # <a name="keywordstat"></a>KeywordStat
 
-**KeywordStat**要素は、キーワードの統計情報を指定します。 
+**KeywordStat**要素は、キーワード統計情報を指定します。 
   
 ```XML
 <KeywordStat>
@@ -28,7 +28,7 @@ ms.locfileid: "19832194"
 ```
 
  **KeywordStatisticsSearchResultType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -38,13 +38,13 @@ ms.locfileid: "19832194"
   
 ### <a name="child-elements"></a>子要素
 
-[キーワード](keyword.md) | [ItemHits](itemhits.md) | [サイズ (長)](size-long.md)
+[キーワード](keyword.md)  | [Itemhits](itemhits.md)  | [サイズ (長い)](size-long.md)
   
 ### <a name="parent-elements"></a>親要素
 
 [KeywordStats](keywordstats.md)
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   

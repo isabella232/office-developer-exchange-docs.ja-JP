@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 7750528c-acb2-43e5-a1e1-ee201c0e1730
 description: Exchange で EWS マネージ API または EWS を使用して、会話の検索、会話へのアクションの適用、会話でのアイテムの取得の方法について説明します。
-ms.openlocfilehash: 71ef7674086607e1544111071928f3dd74073a77
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: HT
+ms.openlocfilehash: 2dc66195f8d37836c32fc33737728c61fc5444ae
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759085"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456789"
 ---
 # <a name="work-with-conversations-by-using-ews-in-exchange"></a>Exchange において EWS を使用して会話を処理する
 
@@ -25,8 +25,8 @@ Exchange のコンテキストでは、会話は関連のある一連の電子�
 
 |**EWS マネージ API のプロパティ**|**EWS の要素**|**説明**|
 |:-----|:-----|:-----|
-|[ConversationTopic](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.emailmessage.conversationtopic%28v=exchg.80%29.aspx) <br/> |[ConversationTopic](http://msdn.microsoft.com/library/46cacf42-4039-4c8a-9b20-c42cdd9f2760%28Office.15%29.aspx) <br/> |元のメッセージに設定された件名の値の正規化されたフォームが含まれています。 これは、**Thread-Topic** メッセージ ヘッダーと同じです。 この値は読み取り専用です。  <br/> |
-|[ConversationIndex](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.emailmessage.conversationindex%28v=exchg.80%29.aspx) <br/> |[ConversationIndex](http://msdn.microsoft.com/library/fdf47e22-8d93-4ae4-883b-0c9f07f48724%28Office.15%29.aspx) <br/> |会話内のアイテムの位置を表します。 これは、**Thread-Index** メッセージ ヘッダーと同じです。 この値は読み取り専用です。  <br/> |
+|[ConversationTopic](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.conversationtopic%28v=exchg.80%29.aspx) <br/> |[ConversationTopic](https://msdn.microsoft.com/library/46cacf42-4039-4c8a-9b20-c42cdd9f2760%28Office.15%29.aspx) <br/> |元のメッセージに設定された件名の値の正規化されたフォームが含まれています。 これは、**Thread-Topic** メッセージ ヘッダーと同じです。 この値は読み取り専用です。  <br/> |
+|[ConversationIndex](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.conversationindex%28v=exchg.80%29.aspx) <br/> |[ConversationIndex](https://msdn.microsoft.com/library/fdf47e22-8d93-4ae4-883b-0c9f07f48724%28Office.15%29.aspx) <br/> |会話内のアイテムの位置を表します。 これは、**Thread-Index** メッセージ ヘッダーと同じです。 この値は読み取り専用です。  <br/> |
    
 Exchange は同じ **ConversationTopic** 値を最初のメッセージの返信に適用してから、元のメッセージに対する相対的なメッセージの位置を表す **ConversationIndex** の値を更新します。 電子メール スレッドの件名が変更になった場合、Exchange は新しい **ConversationTopic** 値および新しい **ConversationIndex** 値を新しい会話に適用します。 
   
@@ -34,17 +34,17 @@ Exchange は同じ **ConversationTopic** 値を最初のメッセージの返信
 
 |**目的**|**使用する EWS マネージ API メソッド**|**使用する EWS 操作**|
 |:-----|:-----|:-----|
-|会話を検索する  <br/> |[ExchangeService.FindConversation](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.findconversation%28v=exchg.80%29.aspx) <br/> |[FindConversation](http://msdn.microsoft.com/library/2384908a-c203-45b6-98aa-efd6a4c23aac%28Office.15%29.aspx) <br/> |
-|会話の操作を適用する  <br/> |[Conversation.EnableAlwaysCategorizeItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.conversation.enablealwayscategorizeitems%28v=exchg.80%29.aspx) <br/> [Conversation.EnableAlwaysDeleteItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.conversation.enablealwaysdeleteitems%28v=exchg.80%29.aspx) <br/> [Conversation.EnableAlwaysMoveItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.conversation.enablealwaysmoveitems%28v=exchg.80%29.aspx) <br/> [ExchangeService.CopyItemsInConversations](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.copyitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.DeleteItemsInConversations](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.deleteitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.DisableAlwaysCategorizeItemsInConversations](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.disablealwayscategorizeitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.DisableAlwaysDeleteItemsInConversations](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.disablealwaysdeleteitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.DisableAlwaysMoveItemsInConversations](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.disablealwaysmoveitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.EnableAlwaysCategorizeItemsInConversations](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.enablealwayscategorizeitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.EnableAlwaysDeleteItemsInConversations](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.enablealwaysdeleteitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.EnableAlwaysMoveItemsInConversations](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.enablealwaysmoveitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.MoveItemsInConversations](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.moveitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.SetFlagStatusForItemsInConversations](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.setflagstatusforitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.SetReadStateForItemsInConversations](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.setreadstateforitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.SetRetentionPolicyForItemsInConversations](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.exchangeservice.setretentionpolicyforitemsinconversations%28v=exchg.80%29.aspx) <br/> |[ApplyConversationAction](http://msdn.microsoft.com/library/73d7943d-d361-4f8b-9948-d85f886efa1a%28Office.15%29.aspx) <br/> |
-|1 つ以上の会話のアイテムを取得する  <br/> |[ExchangeService.GetConversationItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.getconversationitems%28v=exchg.80%29.aspx) <br/> |[GetConversationItems](http://msdn.microsoft.com/library/8ae00a99-b37b-4194-829c-fe300db6ab99%28Office.15%29.aspx) <br/> |
+|会話を検索する  <br/> |[ExchangeService.FindConversation](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.findconversation%28v=exchg.80%29.aspx) <br/> |[FindConversation](https://msdn.microsoft.com/library/2384908a-c203-45b6-98aa-efd6a4c23aac%28Office.15%29.aspx) <br/> |
+|会話の操作を適用する  <br/> |[Conversation.EnableAlwaysCategorizeItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.conversation.enablealwayscategorizeitems%28v=exchg.80%29.aspx) <br/> [Conversation.EnableAlwaysDeleteItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.conversation.enablealwaysdeleteitems%28v=exchg.80%29.aspx) <br/> [Conversation.EnableAlwaysMoveItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.conversation.enablealwaysmoveitems%28v=exchg.80%29.aspx) <br/> [ExchangeService.CopyItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.copyitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.DeleteItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.deleteitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.DisableAlwaysCategorizeItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.disablealwayscategorizeitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.DisableAlwaysDeleteItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.disablealwaysdeleteitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.DisableAlwaysMoveItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.disablealwaysmoveitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.EnableAlwaysCategorizeItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.enablealwayscategorizeitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.EnableAlwaysDeleteItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.enablealwaysdeleteitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.EnableAlwaysMoveItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.enablealwaysmoveitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.MoveItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.moveitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.SetFlagStatusForItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.setflagstatusforitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.SetReadStateForItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.setreadstateforitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.SetRetentionPolicyForItemsInConversations](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.setretentionpolicyforitemsinconversations%28v=exchg.80%29.aspx) <br/> |[ApplyConversationAction](https://msdn.microsoft.com/library/73d7943d-d361-4f8b-9948-d85f886efa1a%28Office.15%29.aspx) <br/> |
+|1 つ以上の会話のアイテムを取得する  <br/> |[ExchangeService.GetConversationItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.getconversationitems%28v=exchg.80%29.aspx) <br/> |[GetConversationItems](https://msdn.microsoft.com/library/8ae00a99-b37b-4194-829c-fe300db6ab99%28Office.15%29.aspx) <br/> |
 
 <a name="bk_findewsma"> </a>
 
 ## <a name="find-a-conversation-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して会話を検索する
 
-次の例に示すように、[ExchangeService.FindConversation](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.findconversation%28v=exchg.80%29.aspx) EWS マネージ API メソッドを使用して、会話を検索することができます。 この例では、受信トレイ フォルダーのうち、件名に「news」という単語を含む最初の 10 個の会話を取得します。 その後、会話のトピック、最後の配信時間、およびグローバルな一意の受信者リストをコンソール ウィンドウに書き込みます。 
+次の例に示すように、[ExchangeService.FindConversation](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.findconversation%28v=exchg.80%29.aspx) EWS マネージ API メソッドを使用して、会話を検索することができます。 この例では、受信トレイ フォルダーのうち、件名に「news」という単語を含む最初の 10 個の会話を取得します。 その後、会話のトピック、最後の配信時間、およびグローバルな一意の受信者リストをコンソール ウィンドウに書き込みます。 
   
-この例では、**service** が有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
+この例では、**service** が有効な [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーから既に認証されていると想定しています。 
   
 ```cs
 static void FindConversation(ExchangeService service)
@@ -75,14 +75,14 @@ static void FindConversation(ExchangeService service)
 
 ## <a name="find-a-conversation-by-using-ews"></a>EWS を使用して会話を検索する
 
-次の例に示すように、[FindConversation](http://msdn.microsoft.com/library/2384908a-c203-45b6-98aa-efd6a4c23aac%28Office.15%29.aspx) EWS 操作を使用して、会話を検索することができます。 この例では、受信トレイ フォルダーのうち、件名に「news」という単語を含む最初の 10 個の会話を取得します。 これは、EWS マネージ API を使用して[会話を検索する](#bk_findewsma)場合に、EWS マネージ API が送信する XML 要求でもあります。
+次の例に示すように、[FindConversation](https://msdn.microsoft.com/library/2384908a-c203-45b6-98aa-efd6a4c23aac%28Office.15%29.aspx) EWS 操作を使用して、会話を検索することができます。この例では、「ニュース」という単語を含む件名が入っている受信トレイ フォルダーで、最初の 10 個の会話を取得します。これは、EWS マネージ API を使用して[会話を検索する](#bk_findewsma)場合に、EWS マネージ API が送信する XML 要求でもあります。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
   </soap:Header>
@@ -101,31 +101,31 @@ static void FindConversation(ExchangeService service)
 
 ```
 
-サーバーは、**FindConversation** 要求に対して [FindConversationResponse](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) メッセージで応答します。このメッセージには、[ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) の値として **NoError** が含まれており、それは、操作が正常に完了したことを示しています。 また、この応答には、「news」という単語を含む件名が入っているメールボックス内の会話が 1 つだけ含まれています。 
+サーバーは、**FindConversation** 要求に対して [FindConversationResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) メッセージで応答します。このメッセージには、[ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) の値として **NoError** が含まれており、それは、操作が正常に完了したことを示しています。 また、この応答には、「news」という単語を含む件名が入っているメールボックス内の会話が 1 つだけ含まれています。 
   
 **ItemId**、**ChangeKey**、および **ConversationId** の属性は読みやすいよう短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15"
                          MinorVersion="0"
                          MajorBuildNumber="883"
                          MinorBuildNumber="10"
                          Version="V2_10"
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <FindConversationResponse ResponseClass="Success"
-                              xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                              xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseCode>NoError</ResponseCode>
       <Conversations>
-        <Conversation xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <Conversation xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <ConversationId Id="aO2NM+Q=" />
           <ConversationTopic>Today's top news headlines</ConversationTopic>
           <UniqueRecipients>
@@ -192,7 +192,7 @@ static void FindConversation(ExchangeService service)
 
 次の例に示すように、いくつかの EWS マネージ API メソッドを使用して、会話の操作を会話に適用できます。この例では、会話の既存のアイテムにカテゴリを追加し、会話の将来のアイテムに同じカテゴリを適用します。また、フォルダーへの会話のアイテムの自動移動を有効にする方法も示します。この例では、アイテムが [下書き] フォルダーに移動されます。
   
-この例では、**service** が有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
+この例では、**service** が有効な [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
   
 会話の操作を適用するメソッドの完全な一覧については、表 2 を参照してください。
   
@@ -219,16 +219,16 @@ static void ApplyConversationActions(ExchangeService service, Conversation conve
 
 ## <a name="apply-conversation-actions-by-using-ews"></a>EWS を使用して会話の操作を適用する
 
-次の例に示すように、[ApplyConversationAction](http://msdn.microsoft.com/library/73d7943d-d361-4f8b-9948-d85f886efa1a%28Office.15%29.aspx) 操作を使用して、カテゴリ化、削除、移動などの会話の操作を適用できます。 この例では、会話の既存のアイテムにカテゴリを追加し、会話の将来のアイテムに同じカテゴリを適用します。 また、フォルダーへの会話のアイテムの自動移動を有効にする方法も示します。この例では、アイテムは [下書き] フォルダーに移動されます。 これは、EWS マネージ API を使用して[会話の操作を適用する](#bk_applyewsma)場合に、EWS マネージ API が送信する XML 要求でもあります。
+次の例に示すように、[ApplyConversationAction](https://msdn.microsoft.com/library/73d7943d-d361-4f8b-9948-d85f886efa1a%28Office.15%29.aspx) 操作を使用して、カテゴリ化、削除、移動などの会話の操作を適用できます。この例では、会話の既存のアイテムにカテゴリを追加し、会話の将来のアイテムに同じカテゴリを適用します。また、フォルダーへの会話のアイテムの自動移動を有効にする方法も示します。この例では、アイテムは [下書き] フォルダーに移動されます。これは、EWS マネージ API を使用して[会話の操作を適用](#bk_applyewsma)場合に、EWS マネージ API が送信する XML 要求でもあります。
   
 **ConversationId** 要素の値は読みやすいよう短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
   </soap:Header>
@@ -249,17 +249,17 @@ static void ApplyConversationActions(ExchangeService service, Conversation conve
 </soap:Envelope>
 ```
 
-サーバーは、[ApplyConversationActionResponse](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) メッセージで **ApplyConversationAction** 要求に応答します。このメッセージには、操作が正常に完了したことを示す、**NoError** の [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) の値が含まれます。 
+サーバーは、[ApplyConversationActionResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) メッセージで **ApplyConversationAction** 要求に応答します。このメッセージには、操作が正常に完了したことを示す、**NoError** の [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) の値が含まれます。 
 
 <a name="bk_getitemssingleewsma"> </a>
 
 ## <a name="get-items-in-a-single-conversation-by-using-the-conversation-identifier-in-the-ews-managed-api"></a>EWS マネージ API の会話 ID を使用して 1 つの会話のアイテムを取得する
 
-[ExchangeService.GetConversationItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.getconversationitems%28v=exchg.80%29.aspx) EWS マネージ API メソッドを使用して、会話内のアイテムを取得できます。 次の使用例では、受信トレイ内の最初の会話の会話ノードのセットを提供します。 各アイテムのアイテム識別子、件名、受信時刻が応答で返されるほかに、会話インデックスと親の会話のインデックス プロパティも返されます。 会話インデックス プロパティを使用すると、ノードの階層構造を再構築できます。 
+[ExchangeService.GetConversationItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.getconversationitems%28v=exchg.80%29.aspx) EWS マネージ API メソッドを使用して、会話内のアイテムを取得できます。 次の使用例では、受信トレイ内の最初の会話の会話ノードのセットを提供します。 各アイテムのアイテム識別子、件名、受信時刻が応答で返されるほかに、会話インデックスと親の会話のインデックス プロパティも返されます。 会話インデックス プロパティを使用すると、ノードの階層構造を再構築できます。 
   
 この例では、既定の [削除済みアイテム] および [下書き] フォルダー内のすべての会話のアイテムは無視します。
   
-この例では、**service** が有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
+この例では、**service** が有効な [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
   
 ```cs
 static void GetConversationItemsSingleConversation(ExchangeService service)
@@ -321,11 +321,11 @@ static void GetConversationItemsSingleConversation(ExchangeService service)
 
 ## <a name="get-items-in-many-conversations-by-using-the-conversationrequest-object-in-the-ews-managed-api"></a>EWS マネージ API の ConversationRequest オブジェクトを使用して多数の会話のアイテムを取得する
 
-[ConversationRequest](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.conversationrequest%28v=exchg.80%29.aspx) オブジェクトと [ExchangeService.GetConversationItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.getconversationitems%28v=exchg.80%29.aspx) EWS マネージ API メソッドを使用して、2 つ以上の会話からアイテムを取得できます。 次の例では、受信トレイ内の最初の 2 つの会話の会話ノードのセットを提供します。 各アイテムのアイテム識別子、件名、受信時刻が応答で返されるほかに、会話インデックスと親の会話のインデックス プロパティも返されます。 会話インデックス プロパティを使用すると、ノードの階層構造を再構築できます。 次の使用例は、受信トレイの最初の 2 つのアイテムが別の会話からであると想定しています。 
+[ConversationRequest](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.conversationrequest%28v=exchg.80%29.aspx) オブジェクトと [ExchangeService.GetConversationItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.getconversationitems%28v=exchg.80%29.aspx) EWS マネージ API メソッドを使用して、2 つ以上の会話からアイテムを取得できます。 次の例では、受信トレイ内の最初の 2 つの会話の会話ノードのセットを提供します。 各アイテムのアイテム識別子、件名、受信時刻が応答で返されるほかに、会話インデックスと親の会話のインデックス プロパティも返されます。 会話インデックス プロパティを使用すると、ノードの階層構造を再構築できます。 次の使用例は、受信トレイの最初の 2 つのアイテムが別の会話からであると想定しています。 
   
 この例では、既定の [削除済みアイテム] および [下書き] フォルダー内のすべての会話のアイテムは無視します。
   
-この例では、**service** が有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
+この例では、**service** が有効な [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
   
 ```cs
 static void GetConversationItemsManyConversations(ExchangeService service)
@@ -396,7 +396,7 @@ static void GetConversationItemsManyConversations(ExchangeService service)
 
 ## <a name="get-items-in-conversations-by-using-the-conversation-identifier-in-ews"></a>EWS の会話 ID を使用して会話のアイテムを取得する
 
-[GetConversationItems](http://msdn.microsoft.com/library/8ae00a99-b37b-4194-829c-fe300db6ab99%28Office.15%29.aspx) EWS 操作を使用して、会話内のアイテムを取得できます。 次の使用例では、受信トレイ内の最初の会話の会話ノードのセットを提供します。 各アイテムのアイテム識別子、件名、受信時刻が応答で返されるほかに、会話インデックスと親の会話のインデックス プロパティも返されます。 会話インデックス プロパティを使用すると、ノードの階層構造を再構築できます。 
+[GetConversationItems](https://msdn.microsoft.com/library/8ae00a99-b37b-4194-829c-fe300db6ab99%28Office.15%29.aspx) EWS 操作を使用して、会話内のアイテムを取得できます。次の使用例では、受信トレイ内の最初の会話の会話ノードのセットを提供します。各アイテムのアイテム識別子、件名、受信時刻が応答で返されるほかに、会話インデックスと親の会話のインデックス プロパティも返されます。会話インデックス プロパティを使用すると、ノードの階層構造を再構築できます。 
   
 この例では、既定の [削除済みアイテム] および [下書き] フォルダー内のすべての会話のアイテムは無視します。
   
@@ -407,9 +407,9 @@ static void GetConversationItemsManyConversations(ExchangeService service)
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m=http://schemas.microsoft.com/exchange/services/2006/messages
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m=https://schemas.microsoft.com/exchange/services/2006/messages
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
   </soap:Header>
@@ -437,27 +437,27 @@ static void GetConversationItemsManyConversations(ExchangeService service)
 </soap:Envelope>
 ```
 
-サーバーは、**GetConversationItems** 要求に対して [GetConversationItemsResponse](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) メッセージで応答します。このメッセージには、[ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) の値として **NoError** が含まれおり、それは、操作が正常に完了したことを示しています。 応答は、会話の [ConversationNodes](http://msdn.microsoft.com/library/5c8a35b8-a940-4b3e-8768-9ba95766fd79%28Office.15%29.aspx) にも含まれています。 
+サーバーは、**GetConversationItems** 要求に対して [GetConversationItemsResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) メッセージで応答します。このメッセージには、[ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) の値として **NoError** が含まれおり、それは、操作が正常に完了したことを示しています。 応答は、会話の [ConversationNodes](https://msdn.microsoft.com/library/5c8a35b8-a940-4b3e-8768-9ba95766fd79%28Office.15%29.aspx) にも含まれています。 
   
 **ItemId**、**SyncState**、および **ConversationId** の属性は読みやすいよう短縮されています。 
   
 ```XML
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15"
                          MinorVersion="0"
                          MajorBuildNumber="873"
                          MinorBuildNumber="9"
                          Version="V2_9"
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetConversationItemsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                                    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetConversationItemsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                                    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetConversationItemsResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -563,15 +563,15 @@ static void GetConversationItemsManyConversations(ExchangeService service)
 
 ## <a name="version-differences"></a>バージョンの相違点
 
-Exchange Server 2010 Service Pack 1 (SP1) を使用している場合、[FindConversation](http://msdn.microsoft.com/ja-JP/library/office/jj220668%28v=exchg.80%29.aspx) メソッドは利用できるオプションが少なく、[FindConversation](http://msdn.microsoft.com/library/2384908a-c203-45b6-98aa-efd6a4c23aac%28Office.15%29.aspx) 操作は要求の要素が少なくなります。 
+Exchange Server 2010 Service Pack 1 (SP1) を使用している場合、[FindConversation](https://msdn.microsoft.com/library/office/jj220668%28v=exchg.80%29.aspx) メソッドは利用できるオプションが少なく、[FindConversation](https://msdn.microsoft.com/library/2384908a-c203-45b6-98aa-efd6a4c23aac%28Office.15%29.aspx) 操作は要求の要素が少なくなります。 
   
 **表 3. FindConversation の Exchange 2010 SP1 バージョンのサポート**
 
 |**EWS マネージ API メソッド**|**EWS 要素**|
 |:-----|:-----|
-|[FindConversation (ViewBase、FolderId)](http://msdn.microsoft.com/ja-JP/library/office/jj220668%28v=exchg.80%29.aspx) <br/> |[IndexedPageItemView](http://msdn.microsoft.com/library/6d1b0b04-cc35-4a57-bd7a-824136d14fda%28Office.15%29.aspx) <br/> [SortOrder](http://msdn.microsoft.com/library/c2413f0b-8c03-46ae-9990-13338b3c53a6%28Office.15%29.aspx) <br/> [ParentFolderId](http://msdn.microsoft.com/library/0e3e6e5f-06d0-499b-8ca4-d36036521658%28Office.15%29.aspx) <br/> |
+|[FindConversation (ViewBase、FolderId)](https://msdn.microsoft.com/library/office/jj220668%28v=exchg.80%29.aspx) <br/> |[IndexedPageItemView](https://msdn.microsoft.com/library/6d1b0b04-cc35-4a57-bd7a-824136d14fda%28Office.15%29.aspx) <br/> [SortOrder](https://msdn.microsoft.com/library/c2413f0b-8c03-46ae-9990-13338b3c53a6%28Office.15%29.aspx) <br/> [ParentFolderId](https://msdn.microsoft.com/library/0e3e6e5f-06d0-499b-8ca4-d36036521658%28Office.15%29.aspx) <br/> |
    
-[GetConversationItems](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.exchangeservice.getconversationitems%28v=exchg.80%29.aspx) EWS マネージ API メソッド、および [GetConversationItems](http://msdn.microsoft.com/library/8ae00a99-b37b-4194-829c-fe300db6ab99%28Office.15%29.aspx) EWS 操作は、Exchange Server 2013 で導入されました。 Exchange の以前のバージョンを対象とするアプリケーションは、表 2 に示すように、会話の操作のみを会話に適用できます。 
+[GetConversationItems](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.getconversationitems%28v=exchg.80%29.aspx) EWS マネージ API メソッド、および [GetConversationItems](https://msdn.microsoft.com/library/8ae00a99-b37b-4194-829c-fe300db6ab99%28Office.15%29.aspx) EWS 操作は、Exchange Server 2013 で導入されました。 Exchange の以前のバージョンを対象とするアプリケーションは、表 2 に示すように、会話の操作のみを会話に適用できます。 
   
 **FindConversation** EWS マネージ API メソッド、および **FindConversation** EWS メソッドは、Exchange 2010 または Exchange 2007 の最初のリリース バージョンでは利用できません。 
   
@@ -579,7 +579,7 @@ Exchange Server 2010 Service Pack 1 (SP1) を使用している場合、[FindCon
 
 - [Exchange のメールと EWS](email-and-ews-in-exchange.md)
 - [Exchange で EWS とともに検索フィルターを使用する](how-to-use-search-filters-with-ews-in-exchange.md)   
-- [Exchange 2013: プログラムを使用してメールボックス内の会話を検索する](http://code.msdn.microsoft.com/exchange/Exchange-2013-Find-d4b6b3af)    
-- [Exchange 2013: メールボックス内の会話を管理するための操作を適用する](http://code.msdn.microsoft.com/exchange/Exchange-2013-Apply-accde0b5)
+- [Exchange 2013: プログラムを使用してメールボックス内の会話を検索する](https://code.msdn.microsoft.com/exchange/Exchange-2013-Find-d4b6b3af)    
+- [Exchange 2013: メールボックス内の会話を管理するための操作を適用する](https://code.msdn.microsoft.com/exchange/Exchange-2013-Apply-accde0b5)
     
 

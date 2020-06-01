@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7a8a8cc1-392b-4db5-bb76-710477e31396
-description: DayOfWeek の要素には、メールボックス ユーザーのスケジュールの稼働日のリストが含まれています。
-ms.openlocfilehash: a6a68017291ba13f45b3970307669222d583fcbb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DayOfWeek 要素には、メールボックスユーザーに対してスケジュールされた稼働日の一覧が含まれています。
+ms.openlocfilehash: 06d4a7d5541b3b71fcbf9be9beb7512d06853283
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759942"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457446"
 ---
 # <a name="dayofweek-workingperiod"></a>DayOfWeek (WorkingPeriod)
 
-**DayOfWeek**の要素には、メールボックス ユーザーのスケジュールの稼働日のリストが含まれています。 
+**DayOfWeek**要素には、メールボックスユーザーに対してスケジュールされた稼働日の一覧が含まれています。 
   
 - [GetUserAvailabilityResponse](getuseravailabilityresponse.md)  
 - [FreeBusyResponseArray](freebusyresponsearray.md)  
@@ -38,7 +38,7 @@ ms.locfileid: "19759942"
 
 **DaysOfWeek**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -54,11 +54,11 @@ ms.locfileid: "19759942"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[WorkingPeriod](workingperiod.md) <br/> |日、およびメールボックス ユーザーの時間は、稼働日に含まれています。<br/><br/>この要素への XPath 式は、次のようにします。<br/><br/>`/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/WorkingPeriodArray/WorkingPeriod[i[` <br/> |
+|[WorkingPeriod](workingperiod.md) <br/> |メールボックスユーザーの勤務週の曜日と時間を含みます。<br/><br/>この要素の XPath 式を次に示します。<br/><br/>`/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/WorkingPeriodArray/WorkingPeriod[i[` <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-メールボックスのユーザーに稼働日を表す設定日が設定されている場合は、テキスト値が返されます。 以下は、この要素の有効な値です。
+メールボックスユーザーが稼働日を表すように日付を設定している場合は、テキスト値が返されます。 この要素に使用できる値は次のとおりです。
   
 - 日曜日    
 - 月曜日    
@@ -68,26 +68,26 @@ ms.locfileid: "19759942"
 - 金曜日    
 - 土曜日 
     
-テキスト値は、その順序で返されます。
+この順序でテキスト値が返されます。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素と、可用性の[曜日 (タイムゾーン)](dayofweek-timezone.md)の違いが型であることを確認する必要があります。 
+この要素と Availability [DayOfWeek (TimeZone)](dayofweek-timezone.md)要素の違いは、型である点に注意してください。 
   
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [GetUserAvailability 操作](getuseravailability-operation.md)  
 - [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
-- [ユーザーの状態を取得します。](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [ユーザーの空き時間情報の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

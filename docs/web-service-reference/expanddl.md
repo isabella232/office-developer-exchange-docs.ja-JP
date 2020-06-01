@@ -12,16 +12,16 @@ api_type:
 - schema
 ms.assetid: affe84a5-ad98-4aba-83f4-8732938b763d
 description: ExpandDL 要素は、配布リストを展開するための要求を定義します。
-ms.openlocfilehash: ef93ed4684427a74a4fd2c38b4020ecb743fbaaf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 52b1ea1b51ce185c7a266e3002a4484e4b813bc0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760369"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456935"
 ---
 # <a name="expanddl"></a>ExpandDL
 
-**ExpandDL**要素は、配布リストを展開するための要求を定義します。 
+**Expanddl**要素は、配布リストを展開するための要求を定義します。 
   
 ```xml
 <ExpandDL>
@@ -30,7 +30,7 @@ ms.locfileid: "19760369"
 ```
 
  **ExpandDLType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,28 +40,28 @@ ms.locfileid: "19760369"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[メールボックス](mailbox.md) <br/> |完全に解決された電子メール アドレスまたは配布リストを識別します。 このメールボックスでは、展開する配布リストを表します。  <br/> |
+|[メールボックス](mailbox.md) <br/> |完全に解決された電子メールアドレスまたは配布リストを識別します。 このメールボックスは、展開する配布リストを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-1 つの配布リストの配布リストの展開のみ実行されます。 配布リストの展開は、再帰的ではありません。
+配布リストの展開は、1つの配布リストに対してのみ実行されます。 配布リストの展開が再帰的ではありません。
   
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

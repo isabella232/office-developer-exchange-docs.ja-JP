@@ -1,5 +1,5 @@
 ---
-title: (フォルダー) の更新
+title: Updates (フォルダー)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,25 +11,25 @@ api_name:
 api_type:
 - schema
 ms.assetid: b047e3a4-a5ab-4098-b7a0-273bc809e702
-description: 更新プログラム要素を定義する要素のセットが含まれています。 追加、設定、およびフォルダーのプロパティへの変更を削除します。
-ms.openlocfilehash: 31f25b1e88fb8756f189a6d75259dd4fc198582f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Updates 要素には、フォルダーのプロパティに対する追加、設定、および削除の変更を定義する一連の要素が含まれています。
+ms.openlocfilehash: 3282171dfc188a9d4735a19a97e80fe0e2f79b89
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839891"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457180"
 ---
-# <a name="updates-folder"></a>(フォルダー) の更新
+# <a name="updates-folder"></a>Updates (フォルダー)
 
-**更新プログラム**要素を定義する要素のセットが含まれています。 追加、設定、およびフォルダーのプロパティへの変更を削除します。 
+**Updates**要素には、フォルダーのプロパティに対する追加、設定、および削除の変更を定義する一連の要素が含まれています。 
   
 - [UpdateFolder](updatefolder.md)
   
-- [FolderChanges](folderchanges.md)
+- [FolderChanges 変更](folderchanges.md)
   
 - [FolderChange](folderchange.md)
   
-- [(フォルダー) の更新](updates-folder.md)
+- [Updates (フォルダー)](updates-folder.md)
   
 ```xml
 <Updates>
@@ -41,7 +41,7 @@ ms.locfileid: "19839891"
 
 **NonEmptyArrayOfFolderChangeDescriptionsType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -51,34 +51,34 @@ ms.locfileid: "19839891"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[AppendToFolderField](appendtofolderfield.md) <br/> |[UpdateFolder 操作](updatefolder-operation.md)中にフォルダーのプロパティを追加するデータを表します。  <br/> |
-|[SetFolderField](setfolderfield.md) <br/> |[UpdateFolder 操作](updatefolder-operation.md)でフォルダーの 1 つのプロパティには、更新プログラムを表します。  <br/> |
-|[DeleteFolderField](deletefolderfield.md) <br/> |[UpdateFolder 操作](updatefolder-operation.md)中に、フォルダーから特定のプロパティを削除する操作を表します。  <br/> |
+|[AppendToFolderField](appendtofolderfield.md) <br/> |[Updatefolder 操作](updatefolder-operation.md)中に folder プロパティに追加するデータを表します。  <br/> |
+|[SetFolderField](setfolderfield.md) <br/> |[Updatefolder 操作](updatefolder-operation.md)のフォルダーの1つのプロパティに対する更新を表します。  <br/> |
+|[DeleteFolderField](deletefolderfield.md) <br/> |[Updatefolder 操作](updatefolder-operation.md)中にフォルダーから特定のプロパティを削除する操作を表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FolderChange](folderchange.md) <br/> |1 つのフォルダーで実行される変更のコレクションを表します。  <br/> この要素への XPath 式は、次のようにします。`/UpdateFolder/FolderChanges/FolderChange[i]` <br/> |
+|[FolderChange](folderchange.md) <br/> |1つのフォルダーに対して実行される変更のコレクションを表します。  <br/> この要素の XPath 式を次に示します。`/UpdateFolder/FolderChanges/FolderChange[i]` <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - 
   [UpdateFolder 操作](updatefolder-operation.md)
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

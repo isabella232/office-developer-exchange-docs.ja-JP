@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: df5bface-f070-49e0-8527-6129ed8e8095
-description: GetFederationInformationRequest 要素は、GetFederationInformation の操作 (SOAP) 操作の呼び出しのパラメーターを表します。
-ms.openlocfilehash: fee9340fdb0cb388bd18b95187f20b72e0e46a92
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetFederationInformationRequest 要素は、GetFederationInformation 操作 (SOAP) 操作の呼び出しのパラメーターを表します。
+ms.openlocfilehash: 1df0a88ed8fbc75eb5723d1390baeefd3ad73652
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760733"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456585"
 ---
 # <a name="getfederationinformationrequest-soap"></a>GetFederationInformationRequest (SOAP)
 
-**GetFederationInformationRequest**要素は、 [GetFederationInformation 操作 (SOAP)](getfederationinformation-operation-soap.md)操作の呼び出しのパラメーターを表します。
+**GetFederationInformationRequest**要素は、 [GETFEDERATIONINFORMATION 操作 (SOAP)](getfederationinformation-operation-soap.md)操作の呼び出しのパラメーターを表します。
   
 ```XML
 <GetFederationInformationRequest>
@@ -28,7 +28,7 @@ ms.locfileid: "19760733"
 
 **GetFederationInformationRequest**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -38,9 +38,9 @@ ms.locfileid: "19760733"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[ドメイン (GetFederationInformation) (SOAP)](domain-getfederationinformationsoap.md) <br/> |フェデレーションの信頼されているドメインを識別します。  <br/> |
+|[ドメイン (GetFederationInformation) (SOAP)](domain-getfederationinformationsoap.md) <br/> |フェデレーション信頼があるドメインを識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -50,14 +50,14 @@ ms.locfileid: "19760733"
 
 なし。 
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|スキーマ名  <br/> |スキーマの自動検出  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|スキーマ名  <br/> |自動検出スキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

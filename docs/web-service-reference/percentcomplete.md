@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 58a67f8a-c4dc-42dc-97ae-a9e5cc672d2d
-description: 達成率の要素は、タスクの完了状態を説明します。
-ms.openlocfilehash: 18e53221ecdf60df195445ed7692c03795bdcc1e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 達成率の要素は、タスクの完了状態を表します。
+ms.openlocfilehash: b7dd2f18bd3ef6addeb6d3a7b004510f35b9cb3d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832717"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456886"
 ---
 # <a name="percentcomplete"></a>PercentComplete
 
-**達成率**の要素は、タスクの完了状態を説明します。 
+**達成**率の要素は、タスクの完了状態を表します。 
   
 ```xml
 <PercentComplete/>
 ```
 
- **二重**
-## <a name="attributes-and-elements"></a>属性および要素
+ **再度**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,35 +44,35 @@ ms.locfileid: "19832717"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[タスク](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
+|[Task](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-0 から 100 までの整数を表す文字列値は、必要があります。
+0 ~ 100 の整数を表すテキスト値が必要です。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-[CompleteDate](completedate.md)要素を設定または**完了**の[状態](status.md)の要素の設定と同じ効果を**達成率**を 100 に設定します。 で、これらのプロパティには、少なくとも 2 つ設定、処理された最後のプロパティ値が決まります。 これらの要素に設定されている要求。 たとえば、**達成率**は、100、 [CompleteDate](completedate.md)には、2007 年 1 月 1 日[状態](status.md)が [未開始、し、プロパティがこの順序でストリーム配信、影響がある未開始、[に、タスクの[ステータス](status.md)を設定するのにはCompleteDate](completedate.md)は**null**との**達成率**を 0 にします。 
+**達成**率を100に設定すると、 [completedate](completedate.md)要素を設定するか、 [Status](status.md)要素を**Completed**に設定した場合と同じ結果になります。 これらのプロパティの少なくとも2つを設定する要求では、最後に処理されたプロパティによって、これらの要素に設定されている値が決まります。 たとえば、**達成**率が100、 [completedate](completedate.md)が2007、[状態](status.md)が NotStarted で、プロパティがこの順序でストリーミングされている場合は、タスクの[状態](status.md)を NotStarted に、 [completedate](completedate.md)は**null**、**達成**率を0に設定することになります。 
   
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 
 
-[タスクを作成します。](http://msdn.microsoft.com/library/0ef97334-e8a0-4f67-a23a-dd9e2bbad49f%28Office.15%29.aspx)
+[タスクの作成](https://msdn.microsoft.com/library/0ef97334-e8a0-4f67-a23a-dd9e2bbad49f%28Office.15%29.aspx)
   
-[タスクを削除します。](http://msdn.microsoft.com/library/a3d7e25f-8a35-4901-b1d9-d31f418ab340%28Office.15%29.aspx)
+[タスクの削除](https://msdn.microsoft.com/library/a3d7e25f-8a35-4901-b1d9-d31f418ab340%28Office.15%29.aspx)
 

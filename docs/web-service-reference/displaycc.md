@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: af386e06-80f3-42c7-8b3c-1f7993c49d10
-description: DisplayCc 要素は、[cc] ボックスの内容のために使用される表示文字列を表します。 これは、すべての Cc 受信者の表示名の連結された文字列です。
-ms.openlocfilehash: 12f1839683445f224ebba9a3864f29412128d200
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DisplayCc 要素は、[Cc] ボックスの内容に使用される表示文字列を表します。 これは、すべての Cc 受信者表示名の連結された文字列です。
+ms.openlocfilehash: 74e033751a464111a8451247d0bdb08c35b55708
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760097"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456543"
 ---
 # <a name="displaycc"></a>DisplayCc
 
-**DisplayCc**要素は、[cc] ボックスの内容のために使用される表示文字列を表します。 これは、すべての Cc 受信者の表示名の連結された文字列です。 
+**Displaycc**要素は、[Cc] ボックスの内容に使用される表示文字列を表します。 これは、すべての Cc 受信者表示名の連結された文字列です。 
   
 ```xml
 <DisplayCc/>
 ```
 
- **文字列型 (String)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **String**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,35 +44,35 @@ ms.locfileid: "19760097"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[カレンダー項目](calendaritem.md) <br/> |Exchange 予定表アイテムを表します。  <br/> |
-|[Contact](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
+|[連絡先](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
 |[DistributionList](distributionlist.md) <br/> |配布リストを表します。  <br/> |
-|[アイテム](item.md) <br/> |Exchange ストア内の項目を表します。  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |Exchange ストア内の会議の取り消し通知を表します。  <br/> |
+|[アイテム](item.md) <br/> |Exchange ストア内のアイテムを表します。  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |Exchange ストア内の会議の取り消しを表します。  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Exchange ストア内の会議を表します。  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議出席依頼を表します。  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |Exchange ストア内の会議の返信を表します。  <br/> |
-|[Message](message-ex15websvcsotherref.md) <br/> |Exchange 電子メール メッセージを表します。  <br/> |
-|[タスク](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |Exchange ストア内の会議の応答を表します。  <br/> |
+|[Message](message-ex15websvcsotherref.md) <br/> |Exchange 電子メールメッセージを表します。  <br/> |
+|[Task](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、[cc] ボックスの内容のために使用される表示文字列を表します。
+Text 値は、[Cc] ボックスの内容に使用される表示文字列を表します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

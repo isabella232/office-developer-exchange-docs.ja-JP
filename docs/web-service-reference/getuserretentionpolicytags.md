@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 452a383b-983a-4d19-a406-6a27e0ec3e8a
-description: GetUserRetentionPolicyTags 要素は、ユーザーに関連付けられている保持タグを取得する要求です。
-ms.openlocfilehash: dfcd823658b9f44d1c602bdb46212004c75ac3cb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetUserRetentionPolicyTags 要素は、ユーザーに関連付けられている保持タグを取得するための要求です。
+ms.openlocfilehash: e2a0b783a2a1091711b35ffd60474055597881c8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831698"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457684"
 ---
 # <a name="getuserretentionpolicytags"></a>GetUserRetentionPolicyTags
 
-**GetUserRetentionPolicyTags**要素は、ユーザーに関連付けられている保持タグを取得する要求です。 
+**GetUserRetentionPolicyTags**要素は、ユーザーに関連付けられている保持タグを取得するための要求です。 
   
 ```XML
 <GetUserRetentionPolicyTags/>
@@ -25,7 +25,7 @@ ms.locfileid: "19831698"
 ```
 
  ****
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -41,19 +41,19 @@ ms.locfileid: "19831698"
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

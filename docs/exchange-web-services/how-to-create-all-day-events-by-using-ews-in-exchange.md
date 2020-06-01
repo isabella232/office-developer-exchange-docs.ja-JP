@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 0fcb484b-4ffc-41a5-aeed-8c797766b70c
 description: Exchange で EWS マネージ API または EWS を使用して、終日イベントを作成する方法について説明します。
-ms.openlocfilehash: 0547fdf0ca92ba0648caeb5de6940d90d2a8ff46
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: HT
+ms.openlocfilehash: 6be638c17cc0e0c86fa6b4217169aa7259dfd4aa
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758931"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456865"
 ---
 # <a name="create-all-day-events-by-using-ews-in-exchange"></a>Exchange で EWS を使用して終日イベントを作成する
 
 Exchange で EWS マネージ API または EWS を使用して、終日イベントを作成する方法について説明します。
   
-終日イベントは、休日や休暇など、1 日または複数の日で発生する事項を表す方法を提供します。 EWS マネージ API または EWS を使用した終日イベントの作成は、簡単な作業です。 [予定の作成](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)と似ていますが、少しだけ違いがあります。
+終日イベントは、休日や休暇など、1 日または複数の日で発生する事項を表す方法を提供します。EWS マネージ API または EWS を使用した終日イベントの作成は、簡単な作業です。[予定の作成](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)と似ていますが、少しだけ違いがあります。
   
 ## <a name="setting-start-and-end-times"></a>開始時間と終了時間の設定
 
@@ -35,7 +35,7 @@ Exchange で EWS マネージ API または EWS を使用して、終日イベ�
   
 ## <a name="create-an-all-day-event-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して終日イベントを作成する
 
-次の例は、EWS マネージ API を使用して、_startDate_ パラメーターによって指定される日付から始まり、_numDays_ パラメーターによって指定される日数続く終日イベントを作成する方法を示します。 予定は [ExchangeService.TimeZone](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.timezone%28v=exchg.80%29.aspx) プロパティによって指定されるタイム ゾーンで作成されます。 この例では、_service_ パラメーターで渡される [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトが、[Credentials](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservicebase.credentials%28v=exchg.80%29.aspx) プロパティと [Url](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.url%28v=exchg.80%29.aspx) プロパティの有効な値で初期化されているものとします。 
+次の例は、EWS マネージ API を使用して、_startDate_ パラメーターによって指定される日付から始まり、_numDays_ パラメーターによって指定される日数続く終日イベントを作成する方法を示します。 予定は [ExchangeService.TimeZone](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.timezone%28v=exchg.80%29.aspx) プロパティによって指定されるタイム ゾーンで作成されます。 この例では、_service_ パラメーターで渡される [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトが、[Credentials](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservicebase.credentials%28v=exchg.80%29.aspx) プロパティと [Url](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.url%28v=exchg.80%29.aspx) プロパティの有効な値で初期化されているものとします。 
   
 ```cs
 static void CreateAllDayAppointment(ExchangeService service, DateTime startDate, int numDays)
@@ -69,14 +69,14 @@ static void CreateAllDayAppointment(ExchangeService service, DateTime startDate,
 
 ## <a name="create-an-all-day-event-by-using-ews"></a>EWS を使用して終日イベントを作成する
 
-次の例では、終日イベントを作成する EWS [CreateItem 操作](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx)要求を示します。 予定は、[TimeZoneContext](http://msdn.microsoft.com/library/573c462b-aa1d-4ba0-8852-e3f48b26873b%28Office.15%29.aspx) 要素で示すように、米国東部標準時ゾーンで作成されます。 なお、[Start](http://msdn.microsoft.com/library/7cfe9979-c893-4f9b-b3a1-8f9e17515a4b%28Office.15%29.aspx) 要素と [End](http://msdn.microsoft.com/library/72329821-32ff-495d-b6e5-fdc011003c2e%28Office.15%29.aspx) 要素の値の時間部分は両方とも 04:00Z であり、これは夏時間中の米国東部標準時ゾーンの午前 0 時に変換されます。 
+次の例では、終日イベントを作成する EWS [CreateItem 操作](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx)要求を示します。 予定は、[TimeZoneContext](https://msdn.microsoft.com/library/573c462b-aa1d-4ba0-8852-e3f48b26873b%28Office.15%29.aspx) 要素で示すように、米国東部標準時ゾーンで作成されます。 なお、[Start](https://msdn.microsoft.com/library/7cfe9979-c893-4f9b-b3a1-8f9e17515a4b%28Office.15%29.aspx) 要素と [End](https://msdn.microsoft.com/library/72329821-32ff-495d-b6e5-fdc011003c2e%28Office.15%29.aspx) 要素の値の時間部分は両方とも 04:00Z であり、これは夏時間中の米国東部標準時ゾーンの午前 0 時に変換されます。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+    xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
     <t:TimeZoneContext>

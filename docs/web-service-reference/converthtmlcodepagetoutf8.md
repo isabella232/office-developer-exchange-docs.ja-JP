@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f02c8331-0a4e-4d01-adc2-2b93ed838a42
-description: ConvertHtmlCodePageToUTF8 要素は、項目の HTML 本文が UTF8 に変換されるかどうかを示します。
-ms.openlocfilehash: aff6579835097a273101188c02a9919003b71b58
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ConvertHtmlCodePageToUTF8 要素は、アイテムの HTML 本文が UTF8 に変換されるかどうかを示します。
+ms.openlocfilehash: a714eacd8cc105146a1471f062ec35dc16730d61
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759773"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457593"
 ---
 # <a name="converthtmlcodepagetoutf8"></a>ConvertHtmlCodePageToUTF8
 
-**ConvertHtmlCodePageToUTF8**要素は、項目の HTML 本文が UTF8 に変換されるかどうかを示します。 
+**ConvertHtmlCodePageToUTF8**要素は、アイテムの HTML 本文が UTF8 に変換されるかどうかを示します。 
   
 ```XML
 <ConvertHtmlCodePageToUTF8/>
 ```
 
- **xs:boolean**
-## <a name="attributes-and-elements"></a>属性および要素
+ **xs: boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,30 +40,30 @@ ms.locfileid: "19759773"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ItemShape](itemshape.md) <br/> |応答で返されるプロパティのセットを識別します。  <br/> |
+|[ItemShape](itemshape.md) <br/> |応答で返される一連のプロパティを識別します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-の**場合は true** 、 **ConvertHtmlCodePageToUTF8**要素のテキスト値は、HTML 本文が UTF8 に変換することを示します。 テキスト値が**false**のでは、HTML 本文が UTF8 に変換されないことを示します。 
+**ConvertHtmlCodePageToUTF8**要素のテキスト値が**true**の場合は、HTML 本文が UTF8 に変換されることを示します。 テキスト値が**false**の場合は、HTML 本文が UTF8 に変換されないことを示します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-要求に**ConvertHtmlCodePageToUTF8**要素が指定されていない場合、既定値の**true**が使用されます。 
+**ConvertHtmlCodePageToUTF8**要素が要求で指定されていない場合は、既定値の**true**が使用されます。 
   
-この要素を記述するスキーマは、Exchange Web Services.This の要素がホストをで Exchange Server 2010 Service Pack 1 (SP1) を導入する IIS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

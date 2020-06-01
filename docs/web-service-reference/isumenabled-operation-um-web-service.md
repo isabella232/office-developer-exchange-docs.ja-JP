@@ -10,23 +10,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: fbe6cd95-f7a5-42b9-8a9d-b6159a269d55
-description: IsUMEnabled 操作では、ユニファイド メッセージングのメールボックスが有効になっているかどうかを決定します。
-ms.openlocfilehash: 9d94a359d6b11e41762d21aa2fe5501bd9f7b577
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: IsUMEnabled 操作は、メールボックスがユニファイドメッセージングに対して有効になっているかどうかを判断します。
+ms.openlocfilehash: b1478f5a113059251fe1b036ac7d77e5a4ab4f50
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832107"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458237"
 ---
 # <a name="isumenabled-operation-um-web-service"></a>IsUMEnabled 操作 (UM web サービス)
 
-IsUMEnabled 操作では、ユニファイド メッセージングのメールボックスが有効になっているかどうかを決定します。
+IsUMEnabled 操作は、メールボックスがユニファイドメッセージングに対して有効になっているかどうかを判断します。
   
 ## <a name="isumenabled-request-example"></a>IsUMEnabled 要求の例
 
 ### <a name="description"></a>説明
 
-IsUMEnabled 要求の次の例では、ユニファイド メッセージングのメールボックスが有効になっているかどうかを判断するための要求を作成する方法を示します。
+次の IsUMEnabled 要求の例は、メールボックスがユニファイドメッセージングに対して有効になっているかどうかを判断する要求を形成する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -34,16 +34,16 @@ IsUMEnabled 要求の次の例では、ユニファイド メッセージング�
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <IsUMEnabled xmlns="http://schemas.microsoft.com/exchange/services/2006/messages" />
+    <IsUMEnabled xmlns="https://schemas.microsoft.com/exchange/services/2006/messages" />
   </soap:Body>
 </soap:Envelope>
 ```
 
-## <a name="successful-isumenabled-response-example"></a>成功した IsUMEnabled の応答の例
+## <a name="successful-isumenabled-response-example"></a>Successful IsUMEnabled response の例
 
 ### <a name="description"></a>説明
 
-IsUMEnabled 要求に正常な応答の例を次に示します。
+次の例は、IsUMEnabled 要求に対する正常な応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -51,7 +51,7 @@ IsUMEnabled 要求に正常な応答の例を次に示します。
 <?xml version="1.0" encoding="utf-8" ?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Body>
-    <IsUMEnabledResponse xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <IsUMEnabledResponse xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <IsUMEnabledResponse>true</IsUMEnabledResponse> 
     </IsUMEnabledResponse>
   </soap:Body>
@@ -67,5 +67,5 @@ IsUMEnabled 要求に正常な応答の例を次に示します。
 [IsUMEnabledResponse (UM web サービス)](isumenabledresponse-um-web-service.md)
 
 
-[ユニファイド メッセージング web サービスの XML 要素の交換](unified-messaging-web-service-xml-elements-for-exchange.md)
+[Exchange 用のユニファイドメッセージング web サービスの XML 要素](unified-messaging-web-service-xml-elements-for-exchange.md)
 

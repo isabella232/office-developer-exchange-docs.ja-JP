@@ -6,24 +6,24 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: e13c0edd-2ab1-49bb-a993-54a8db2dfbb9
-description: TargetApplicationUri 要素は、ターゲット アプリケーションの URI を定義します。 TargetApplicationUri 要素は、内部使用のみ。 クライアントでは、この要素は使用されません。
-ms.openlocfilehash: fa401d4c1e8c1460804f116d840fe21129957852
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: TargetApplicationUri 要素は、ターゲットアプリケーション URI を定義します。 TargetApplicationUri 要素は、内部使用のみを対象としています。 この要素はクライアントによって使用されません。
+ms.openlocfilehash: 88968aac604b77cd057dbc69c396227a489ac9a8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839645"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457089"
 ---
 # <a name="targetapplicationuri-soap"></a>TargetApplicationUri (SOAP)
 
-**TargetApplicationUri**要素は、ターゲット アプリケーションの URI を定義します。 **TargetApplicationUri**要素は、内部使用のみ。 クライアントでは、この要素は使用されません。 
+**Targetapplicationuri**要素は、ターゲットアプリケーション uri を定義します。 **Targetapplicationuri**要素は、内部使用のみを対象としています。 この要素はクライアントによって使用されません。 
   
 ```XML
 <TargetApplicationUri/>
 ```
 
  **anyURI**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -39,24 +39,24 @@ ms.locfileid: "19839645"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |1 つの組織の組織との関係の一覧を表します  <br/> |
+|[組織のリレーションシップ設定 (SOAP)](organizationrelationshipsettings-soap.md) <br/> |1つの組織の組織上の関係のリストを表します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素は、対象の外部組織の URI を定義します。
+この要素は、外部組織のターゲット URI を定義します。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|スキーマ名  <br/> |スキーマの自動検出  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|スキーマ名  <br/> |自動検出スキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[GetOrganizationRelationshipSettings 操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)
+[Get組織の Relationshipsettings 操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)
 

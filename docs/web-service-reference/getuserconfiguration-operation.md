@@ -11,31 +11,31 @@ api_name:
 api_type:
 - schema
 ms.assetid: 71d50e3c-92bd-435f-8118-b28bb85f8138
-description: GetUserConfiguration 操作は、フォルダーからユーザーの構成オブジェクトを取得します。
-ms.openlocfilehash: 6c1cdf381126e54f9b9eeaed260e7c2b23b0b2a6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetUserConfiguration 操作は、フォルダーからユーザー構成オブジェクトを取得します。
+ms.openlocfilehash: fb28e88d1a47b0ea8f63ed33b1efacae8538e1c8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831687"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458209"
 ---
 # <a name="getuserconfiguration-operation"></a>GetUserConfiguration 操作
 
-**GetUserConfiguration**操作は、フォルダーからユーザーの構成オブジェクトを取得します。 
+**Getuserconfiguration**操作は、フォルダーからユーザー構成オブジェクトを取得します。 
   
 ## <a name="getuserconfiguration-request-example"></a>GetUserConfiguration 要求の例
 
 ### <a name="description"></a>説明
 
-**GetUserConfiguration**要求の次の例では、[下書き] フォルダーでユーザーの構成オブジェクトを取得する要求を作成する方法を示します。 
+次の**Getuserconfiguration**要求の例は、下書きフォルダーでユーザー構成オブジェクトを取得する要求を形成する方法を示しています。 
   
 ### <a name="code"></a>コード
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
@@ -52,11 +52,11 @@ ms.locfileid: "19831687"
 </soap:Envelope>
 ```
 
-## <a name="getuserconfiguration-response-example"></a>GetUserConfiguration の応答の例
+## <a name="getuserconfiguration-response-example"></a>GetUserConfiguration 応答の例
 
 ### <a name="description"></a>説明
 
-**GetUserConfiguration**要求に正常な応答の例を次に示します。 
+次の例は、 **Getuserconfiguration**要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -69,15 +69,15 @@ ms.locfileid: "19831687"
                          MajorBuildNumber="639" 
                          MinorBuildNumber="20" 
                          Version="Exchange2010" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetUserConfigurationResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetUserConfigurationResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetUserConfigurationResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -110,7 +110,7 @@ ms.locfileid: "19831687"
 
 
 
-[Exchange での EWS の操作](ews-operations-in-exchange.md)
+[Exchange での EWS 操作](ews-operations-in-exchange.md)
   
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

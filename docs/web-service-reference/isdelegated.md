@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: c12907db-be80-4924-9469-8e58612cf42c
-description: IsDelegated 要素は、会議は、代理人アクセス権限を持つアカウントによって処理されたかどうかを示します。
-ms.openlocfilehash: a6f42a57b2d0fdb760e4c36d3211ba57289a3c7c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: IsDelegated 要素は、代理人アクセス権を持つアカウントによって会議が処理されたかどうかを示します。
+ms.openlocfilehash: 2c62b59665431d5ea203e972a506aa90afc76601
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832005"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456445"
 ---
 # <a name="isdelegated"></a>IsDelegated
 
-**IsDelegated**要素は、会議は、代理人アクセス権限を持つアカウントによって処理されたかどうかを示します。 
+**Isdelegated**要素は、代理人アクセス権を持つアカウントによって会議が処理されたかどうかを示します。 
   
 ```xml
 <IsDelegated/>
 ```
 
- **ブール型 (Boolean)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,31 +44,31 @@ ms.locfileid: "19832005"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[MeetingCancellation](meetingcancellation.md) <br/> |Exchange ストア内の会議の取り消し通知を表します。  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |Exchange ストア内の会議の取り消しを表します。  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Exchange ストア内の会議を表します。  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議出席依頼を表します。  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |Exchange ストア内の会議の返信を表します。  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |Exchange ストア内の会議の応答を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**True**の場合、テキスト値は、会議は、代理人アクセス権限を持つアカウントによって処理されたことを示します。 
+テキスト値が**true の場合**は、会議が代理人アクセス権を持つアカウントによって処理されたことを示します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

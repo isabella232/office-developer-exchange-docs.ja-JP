@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ecb533ba-c24a-4940-a852-7988cb385113
-description: Id 要素は内部使用のみを目的としています。
-ms.openlocfilehash: 9b970b6427575a4e96815e2388fb9ae4d545f6b5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Identity 要素は、内部使用のみを目的としています。
+ms.openlocfilehash: 62764947e90d3bc7db850774870937bff084fa25
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831850"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456473"
 ---
-# <a name="identity"></a>Identity
+# <a name="identity"></a>ID
 
-**Id**要素は内部使用のみを目的としています。 
+**Identity**要素は、内部使用のみを目的としています。 
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -35,7 +35,7 @@ ms.locfileid: "19831850"
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。
   

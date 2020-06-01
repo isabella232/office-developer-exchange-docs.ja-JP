@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1dc4eee7-ad47-4aad-963b-b2b8c6cb89e7
-description: ExtendedAttribute 要素は内部使用のみを目的としています。
-ms.openlocfilehash: d505d2e05c0b971efcaa895882a62181fd84c71d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ExtendedAttribute 要素は、内部使用のみを目的としています。
+ms.openlocfilehash: f6cd22cced6134e37a11b770713fdcfe2d932442
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760382"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456515"
 ---
 # <a name="extendedattribute"></a>ExtendedAttribute
 
-**ExtendedAttribute**要素は内部使用のみを目的としています。 
+**ExtendedAttribute**要素は、内部使用のみを目的としています。 
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -35,7 +35,7 @@ ms.locfileid: "19760382"
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。
   

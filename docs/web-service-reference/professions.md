@@ -1,5 +1,5 @@
 ---
-title: 職業
+title: Professions
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d82d0d47-6bc2-4bc8-a796-b770adfdfeb6
-description: 職業要素では、職業の値の配列と関連付けられているペルソナにそのソースの帰属の識別子を指定します。
-ms.openlocfilehash: 9aae3deb03b48b2aefe10886a8faa911ff01ff0f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Professions 要素は、関連付けられているペルソナの職業値の配列とそのソース attributions の識別子を指定します。
+ms.openlocfilehash: b9e3c4d112bad610641585024ea9282d835b3bd8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832894"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458013"
 ---
-# <a name="professions"></a>職業
+# <a name="professions"></a>Professions
 
-**職業**要素では、**職業**の値の配列と関連付けられているペルソナにそのソースの帰属の識別子を指定します。 
+**Professions**要素は、関連付けられているペルソナの**職業**値の配列とそのソース attributions の識別子を指定します。 
   
 ```XML
 <Professions>
@@ -26,7 +26,7 @@ ms.locfileid: "19832894"
 ```
 
  **ArrayOfStringAttributedValuesType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,19 +42,19 @@ ms.locfileid: "19832894"
 
 ペルソナ
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

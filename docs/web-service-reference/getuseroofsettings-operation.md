@@ -11,39 +11,39 @@ api_name:
 api_type:
 - schema
 ms.assetid: 153e4440-495b-4972-9811-2fbea740142a
-description: GetUserOofSettings 操作は、メールボックス ユーザーの Office (OOF) の設定とメッセージを取得します。
-ms.openlocfilehash: 75a734999842cc33c213e02dc114f23372ae51fd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetUserOofSettings 操作は、メールボックスユーザーの不在時 (OOF) の設定とメッセージを取得します。
+ms.openlocfilehash: 622faa622b0ea231a6331ff62631885d4252c1f5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831691"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457698"
 ---
 # <a name="getuseroofsettings-operation"></a>GetUserOofSettings 操作
 
-**GetUserOofSettings**操作は、メールボックス ユーザーの Office (OOF) の設定とメッセージを取得します。 
+**Getuseroofsettings**操作は、メールボックスユーザーの不在時 (OOF) の設定とメッセージを取得します。 
   
 ## <a name="soap-headers"></a>SOAP ヘッダー
 
-**GetUserOofSettings**操作が一覧表示され、次の表に記載されている SOAP ヘッダーを使用できます。 
+**Getuseroofsettings**操作では、次の表に記載されている SOAP ヘッダーを使用できます。 
   
 |**Header**|**要素**|**説明**|
 |:-----|:-----|:-----|
-|偽装  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装するユーザーを識別します。  <br/> |
-|ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答するサーバーのバージョンを識別します。  <br/> |
+|偽装  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。  <br/> |
+|ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。  <br/> |
    
-## <a name="using-the-getuseroofsettings-operation"></a>GetUserOofSettings 操作を使用します。
+## <a name="using-the-getuseroofsettings-operation"></a>GetUserOofSettings 操作の使用
 
-**GetUserOofSettings**操作は、ユーザーの不在時の設定へのアクセスを提供します。 ユーザーは、ユーザーの電子メール アドレスで識別されます。 OOF メッセージが不在時が有効になっている場合は、不在時のメッセージは送信されません。 
+**Getuseroofsettings**操作を使用すると、ユーザーの不在時の設定にアクセスできます。 ユーザーは、ユーザーの電子メールアドレスによって識別されます。 OOF メッセージが null で、OOF が有効になっている場合、不在時メッセージは送信されません。 
   
 > [!IMPORTANT]
-> 不在時のメッセージは、MicrosoftOfficeOutlook で設定されている場合この操作は HTML 形式で、不在時のメッセージを返します。 
+> OOF メッセージが Microsoft office outlook によって設定されている場合、この操作は OOF メッセージを HTML 形式で返します。 
   
 ## <a name="getuseroofsettings-request-example"></a>GetUserOofSettings 要求の例
 
 ### <a name="description"></a>説明
 
-次の例では、単一のユーザーの不在時の情報を取得する**GetUserOofSettings**要求を示します。 
+次の例は、1人のユーザーの OOF 情報を取得する**Getuseroofsettings**要求を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -53,8 +53,8 @@ ms.locfileid: "19831691"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <GetUserOofSettingsRequest xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-      <Mailbox xmlns ="http://schemas.microsoft.com/exchange/services/2006/types">
+    <GetUserOofSettingsRequest xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+      <Mailbox xmlns ="https://schemas.microsoft.com/exchange/services/2006/types">
         <Address>User1@example.com</Address>
       </Mailbox>
     </GetUserOofSettingsRequest>
@@ -62,21 +62,21 @@ ms.locfileid: "19831691"
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-次の要素は、要求で使用されます。
+要求では、次の要素が使用されます。
   
 - [GetUserOofSettingsRequest](getuseroofsettingsrequest.md)
     
 - [メールボックス (可用性)](mailbox-availability.md)
     
-- [アドレス (文字列)](address-string.md)
+- [Address (string)](address-string.md)
     
-## <a name="successful-getuseroofsettings-response-example"></a>成功した GetUserOofSettings の応答の例
+## <a name="successful-getuseroofsettings-response-example"></a>Successful GetUserOofSettings response の例
 
 ### <a name="description"></a>説明
 
-OOF メッセージが不在時の無効な状態の例を次に示します。
+次の例は、不在時のメッセージで無効になっている OOF 状態を示しています。
   
 ### <a name="code"></a>コード
 
@@ -87,14 +87,14 @@ OOF メッセージが不在時の無効な状態の例を次に示します。
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <GetUserOofSettingsResponse xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetUserOofSettingsResponse xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseMessage ResponseClass="Success">
         <ResponseCode>NoError</ResponseCode>
       </ResponseMessage>
-      <OofSettings xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+      <OofSettings xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <OofState>Disabled</OofState>
         <ExternalAudience>All</ExternalAudience>
         <Duration>
@@ -114,9 +114,9 @@ OOF メッセージが不在時の無効な状態の例を次に示します。
 </soap:Envelope>
 ```
 
-### <a name="successful-getuseroofsettings-response-elements"></a>成功した GetUserOofSettings の応答の要素
+### <a name="successful-getuseroofsettings-response-elements"></a>Successful GetUserOofSettings response 要素
 
-次の要素は、応答で使用されます。
+応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -132,11 +132,11 @@ OOF メッセージが不在時の無効な状態の例を次に示します。
     
 - [ExternalAudience](externalaudience.md)
     
-- [期間 (UserOofSettings)](duration-useroofsettings.md)
+- [Duration (UserOofSettings)](duration-useroofsettings.md)
     
-- [開始時刻](starttime.md)
+- [StartTime](starttime.md)
     
-- [終了時刻](endtime.md)
+- [EndTime](endtime.md)
     
 - [InternalReply](internalreply.md)
     
@@ -150,7 +150,7 @@ OOF メッセージが不在時の無効な状態の例を次に示します。
 
 ### <a name="description"></a>説明
 
-次の例では、他のユーザーの不在時の情報にアクセスしようとする原因となったエラー応答を示します。
+次の例は、別のユーザーの OOF 情報にアクセスしようとした場合に発生するエラー応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -161,7 +161,7 @@ OOF メッセージが不在時の無効な状態の例を次に示します。
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
     <soap:Fault>
@@ -169,7 +169,7 @@ OOF メッセージが不在時の無効な状態の例を次に示します。
       <faultstring>Microsoft.Exchange.Data.Storage.AccessDeniedException: User is not mailbox owner. User = S-1-5-21-3642464542-282065186-3871681729-1155, MailboxGuid = S-1-5-21-3642464542-282065186-3871681729-1156 ---> User is not mailbox owner. </faultstring>
       <faultactor>https://CAS01.example.com/EWS/Exchange.asmx</faultactor>
       <detail>
-        <ErrorCode xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">-2146233088</ErrorCode>
+        <ErrorCode xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">-2146233088</ErrorCode>
       </detail>
     </soap:Fault>
   </soap:Body>
@@ -180,5 +180,5 @@ OOF メッセージが不在時の無効な状態の例を次に示します。
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

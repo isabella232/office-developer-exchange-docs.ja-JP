@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 15dea99c-7f5d-4af1-82ff-4255127fe567
-description: GetUserOofSettingsRequest 要素は、メールボックスにユーザーの Office (OOF) の設定を取得するための引数を含むルート要素です。
-ms.openlocfilehash: e64818961283f90e447e2044cf7f918eccd21f06
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetUserOofSettingsRequest 要素は、メールボックスユーザーの不在時 (OOF) の設定を取得するために使用される引数を含むルート要素です。
+ms.openlocfilehash: f515e8cf016d3aff6c652ae92a0da71a8f0a5f6b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831692"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457831"
 ---
 # <a name="getuseroofsettingsrequest"></a>GetUserOofSettingsRequest
 
-**GetUserOofSettingsRequest**要素は、メールボックスにユーザーの Office (OOF) の設定を取得するための引数を含むルート要素です。 
+**Getuseroofsettingsrequest**要素は、メールボックスユーザーの不在時 (OOF) の設定を取得するために使用される引数を含むルート要素です。 
   
 ```xml
 <GetUserOofSettingsRequest>
@@ -30,7 +30,7 @@ ms.locfileid: "19831692"
 ```
 
  **GetUserOofSettingsRequest**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,28 +40,28 @@ ms.locfileid: "19831692"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[メールボックス (可用性)](mailbox-availability.md) <br/> |SetUserOofSettings または GetUserOofSettings の要求をメールボックスのユーザーを識別します。  <br/> |
+|[メールボックス (可用性)](mailbox-availability.md) <br/> |SetUserOofSettings または GetUserOofSettings 要求のメールボックスユーザーを識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="example"></a>例
 
-次に、単一のユーザーの不在時の情報を取得する GetUserOofSettings 要求の例を示します。
+1人のユーザーの OOF 情報を取得する、GetUserOofSettings 要求の例を次に示します。
   
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <GetUserOofSettingsRequest xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-      <Mailbox xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+    <GetUserOofSettingsRequest xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+      <Mailbox xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <Name>David Alexander</Name>
         <Address>someone@example.com</Address>
         <RoutingType>SMTP</RoutingType>
@@ -71,14 +71,14 @@ MicrosoftExchange Server 2007 がインストールされているクライア�
 </soap:Envelope>
 ```
 
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

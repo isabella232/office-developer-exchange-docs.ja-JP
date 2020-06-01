@@ -1,5 +1,5 @@
 ---
-title: Folder
+title: フォルダー
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 812948d8-c7db-45ce-bb3a-77233a53a974
-description: Folder 要素は、作成、取得、検索、同期、または更新するフォルダーを定義します。
-ms.openlocfilehash: ecfea52d2105599372a22b78778ac0d0d066bc60
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Folder 要素は、作成、取得、検索、同期、更新を行うフォルダーを定義します。
+ms.openlocfilehash: 156813b3f7ecc6a2e1437f473ae1daa76b138e6e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760564"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457250"
 ---
-# <a name="folder"></a>Folder
+# <a name="folder"></a>フォルダー
 
-**Folder**要素は、作成、取得、検索、同期、または更新するフォルダーを定義します。 
+**Folder**要素は、作成、取得、検索、同期、更新を行うフォルダーを定義します。 
   
 ```xml
 <Folder>
@@ -35,12 +35,12 @@ ms.locfileid: "19760564"
    <ManagedFolderInformation/>
    <UnreadCount/>
    <PermissionSet/>
-      <EffectiveRights/>
+   <EffectiveRights/>
 </Folder>
 ```
 
  **FolderType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -50,49 +50,49 @@ ms.locfileid: "19760564"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[フォルダー Id](folderid.md) <br/> |フォルダーの識別子と変更キーが含まれています。  <br/> |
+|[FolderId](folderid.md) <br/> |フォルダーの識別子と変更キーが含まれています。  <br/> |
 |[ParentFolderId](parentfolderid.md) <br/> |フォルダーを含む親フォルダーの識別子を表します。  <br/> |
-|[FolderClass](folderclass.md) <br/> |指定されたフォルダーのフォルダー クラスを表します。  <br/> |
-|[表示名 (文字列)](displayname-string.md) <br/> |フォルダーの表示名が含まれています。  <br/> |
+|[FolderClass](folderclass.md) <br/> |指定したフォルダーのフォルダークラスを表します。  <br/> |
+|[DisplayName (文字列)](displayname-string.md) <br/> |フォルダーの表示名を含みます。  <br/> |
 |[TotalCount](totalcount.md) <br/> |指定したフォルダー内のアイテムの合計数を表します。  <br/> |
-|[ChildFolderCount](childfoldercount.md) <br/> |フォルダー内に含まれる子フォルダーの数を表します。 このプロパティは値の取得のみ可能です。  <br/> |
+|[ChildFolderCount](childfoldercount.md) <br/> |フォルダー内に含まれる子フォルダーの数を表します。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。  <br/> |
 |[ExtendedProperty](extendedproperty.md) <br/> |フォルダーの拡張プロパティを識別します。  <br/> |
-|[ManagedFolderInformation](managedfolderinformation.md) <br/> |管理フォルダーに関する情報が含まれています。  <br/> |
+|[ManagedFolderInformation](managedfolderinformation.md) <br/> |管理フォルダーに関する情報を格納します。  <br/> |
 |[UnreadCount](unreadcount.md) <br/> |指定したフォルダー内の未読アイテムの数を表します。  <br/> |
-|[PermissionSet (PermissionSetType)](permissionset-permissionsettype.md) <br/> |フォルダーに対して構成されているすべてのアクセス許可が含まれています。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。  <br/> |
-|[EffectiveRights](effectiverights.md) <br/> |アイテムまたはフォルダーのアクセス許可の設定に基づいて、クライアントの権限が含まれています。 この要素は、読み取り専用です。 この要素は、Exchange 2007 SP1 で導入されました。  <br/> |
+|[PermissionSet (PermissionSetType)](permissionset-permissionsettype.md) <br/> |フォルダーに対して構成されているすべてのアクセス許可が含まれます。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。  <br/> |
+|[EffectiveRights](effectiverights.md) <br/> |アイテムまたはフォルダーのアクセス許可の設定に基づいたクライアントの権限が含まれています。 この要素は値の取得のみ可能です。 この要素は、Exchange 2007 SP1 で導入されました。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[AppendToFolderField](appendtofolderfield.md) <br/> |[UpdateFolder 操作](updatefolder-operation.md)中にフォルダーのプロパティを追加するデータを指定します。  <br/> |
-|[(集合的) を作成します。](create-foldersync.md) <br/> |ローカル クライアント ストアに作成する 1 つのフォルダーを識別します。  <br/> |
-|[SetFolderField](setfolderfield.md) <br/> |[UpdateFolder 操作](updatefolder-operation.md)でフォルダーの 1 つのプロパティには、更新プログラムを表します。  <br/> |
-|[更新 (集合的)](update-foldersync.md) <br/> |ローカル クライアント ストアで更新する 1 つのフォルダーを識別します。  <br/> |
-|[フォルダー](folders-ex15websvcsotherref.md) <br/> |フォルダーの操作で使用されているフォルダーの配列が含まれています。  <br/> |
+|[AppendToFolderField](appendtofolderfield.md) <br/> |[Updatefolder 操作](updatefolder-operation.md)中に folder プロパティに追加するデータを指定します。  <br/> |
+|[Create (FolderSync)](create-foldersync.md) <br/> |ローカルクライアントストアに作成する1つのフォルダーを識別します。  <br/> |
+|[SetFolderField](setfolderfield.md) <br/> |[Updatefolder 操作](updatefolder-operation.md)のフォルダーの1つのプロパティに対する更新を表します。  <br/> |
+|[Update (FolderSync)](update-foldersync.md) <br/> |ローカルクライアントストアで更新する1つのフォルダーを識別します。  <br/> |
+|[フォルダー](folders-ex15websvcsotherref.md) <br/> |Folder 操作で使用されるフォルダーの配列が含まれています。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、インストールされているクライアント アクセス サーバーの役割を持つ Exchange 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Exchange 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[SyncFolderItems の操作](syncfolderitems-operation.md)
+[SyncFolderItems 操作](syncfolderitems-operation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

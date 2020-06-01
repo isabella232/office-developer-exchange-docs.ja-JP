@@ -6,24 +6,24 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 967df8c0-ee95-4202-b037-0c4b9fbbf5ee
-description: ExternalAccessAllowed 要素は、場所を共有するドキュメントは、外部の接続からに使用できるかどうかを示します。
-ms.openlocfilehash: 7d2a4027fe6de0c24191272d65605310af6a16bf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ExternalAccessAllowed 要素は、ドキュメント共有の場所が外部接続で使用できるかどうかを示します。
+ms.openlocfilehash: eb0ce0067a9ac9deea78b2778ce7f9e493ffb26f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760434"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457964"
 ---
 # <a name="externalaccessallowed-soap"></a>ExternalAccessAllowed (SOAP)
 
-**ExternalAccessAllowed**要素は、場所を共有するドキュメントは、外部の接続からに使用できるかどうかを示します。 
+**Externalaccessallowed**要素は、ドキュメント共有の場所が外部接続で使用できるかどうかを示します。 
   
 ```XML
 <ExternalAccessAllowed /> 
 ```
 
- **ブール型 (Boolean)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -39,20 +39,20 @@ ms.locfileid: "19760434"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[DocumentSharingLocation (SOAP)](documentsharinglocation-soap.md) <br/> |場所を共有するドキュメントの場所およびメタデータの情報を表します。  <br/> |
+|[DocumentSharingLocation (SOAP)](documentsharinglocation-soap.md) <br/> |ドキュメント共有場所の場所とメタデータ情報を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**ExternalAccessAllowed**要素のブール値は、共有の場所は外部の接続からに使用できるかどうかを示します。 
+**Externalaccessallowed**要素の Boolean 値は、共有場所が外部接続で使用可能かどうかを示します。 
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|スキーマ名  <br/> |スキーマの自動検出  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|スキーマ名  <br/> |自動検出スキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -61,7 +61,7 @@ ms.locfileid: "19760434"
 [GetUserSettings 操作 (SOAP)](getusersettings-operation-soap.md)
 
 
-[Exchange の自動検出 web サービスの参照](autodiscover-web-service-reference-for-exchange.md)
+[Exchange 用自動検出 Web サービス リファレンス](autodiscover-web-service-reference-for-exchange.md)
   
-[Exchange 2013 の自動検出の XML 要素を SOAP](soap-autodiscover-xml-elements-for-exchange-2013.md)
+[Exchange 2013 の SOAP 自動検出 XML 要素](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 68f607f5-7271-46a6-8ffc-91878185a683
-description: GoodThreshold 要素は、適切な提案された会議の時間として修飾するまでの時間のために開くまでの時間が必要な出席者の割合を指定します。
-ms.openlocfilehash: 8044cb2b52cb572fad8731253dffa34de9d097fa
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GoodThreshold 要素には、適切な会議時間として期間を修飾するために期間を開いておく必要がある出席者の割合を指定します。
+ms.openlocfilehash: 34ea433ad7315d61df8cf8e22bae1166d3210af3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831746"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457313"
 ---
 # <a name="goodthreshold"></a>GoodThreshold
 
-**GoodThreshold**要素は、適切な提案された会議の時間として修飾するまでの時間のために開くまでの時間が必要な出席者の割合を指定します。 
+**GoodThreshold**要素には、適切な会議時間として期間を修飾するために期間を開いておく必要がある出席者の割合を指定します。 
   
 [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
   
@@ -34,7 +34,7 @@ ms.locfileid: "19831746"
 ```
 
  **int**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -50,27 +50,27 @@ ms.locfileid: "19831746"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[SuggestionsViewOptions](suggestionsviewoptions.md) <br/> |取得するためのオプションが含まれています会議の情報を提案します。  <br/> 以下は、この要素の XPath です。  <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions` <br/> |
+|[SuggestionsViewOptions](suggestionsviewoptions.md) <br/> |会議提案情報を取得するためのオプションが含まれています。  <br/> この要素の XPath を次に示します。  <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions` <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は必須です。 整数型の値は 0 から 50 です。
+テキスト値は必須です。 必要な整数値は、0 ~ 50 です。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-[SuggestionsViewOptions](suggestionsviewoptions.md)要素を使用する場合、この要素が必要です。 **GoodThreshold**要素は、どのような会議は公正と見なされますも決定します。 競合している参加者の割合は、以下より適切なしきい値と、50% よりも高い提案された会議の時間として修飾公平にします。 適切なしきい値を加えた 50 な公平としきい値を定義している割合に相当します。 
+この要素は、 [SuggestionsViewOptions](suggestionsviewoptions.md)要素を使用する場合に必要です。 **GoodThreshold**要素は、どの会議が公正であると見なされるかも決定します。 競合のある出席者の割合が、適切なしきい値を超え、かつ50パーセントよりも大きい場合、会議の提案時間は公正になります。 良好しきい値 + 50 は、適正/公正しきい値を定義するパーセンテージと等しくなります。 
   
 > [!NOTE]
-> MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。 
+> この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。 
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -79,5 +79,5 @@ ms.locfileid: "19831746"
 [GetUserAvailability 操作](getuseravailability-operation.md)
 
 
-[ユーザーの状態を取得します。](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[ユーザーの空き時間情報の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

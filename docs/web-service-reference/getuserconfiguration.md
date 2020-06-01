@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 4044c0a1-cd88-41ae-9cc4-a7cf2b279094
-description: GetUserConfiguration 要素は、ユーザーの構成オブジェクトを取得する要求を表します。
-ms.openlocfilehash: 81f2ca4995de69d6547412ec699a2ceaddcce385
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetUserConfiguration 要素は、ユーザー構成オブジェクトを取得する要求を表します。
+ms.openlocfilehash: 46a2a5ebbabfc038692a5de83e0a960e05295061
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831688"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457712"
 ---
 # <a name="getuserconfiguration"></a>GetUserConfiguration
 
-**GetUserConfiguration**要素は、ユーザーの構成オブジェクトを取得する要求を表します。 
+**Getuserconfiguration**要素は、ユーザー構成オブジェクトを取得する要求を表します。 
   
 ```XML
 <GetUserConfiguration>
@@ -31,7 +31,7 @@ ms.locfileid: "19831688"
 ```
 
  **GetUserConfigurationType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -41,10 +41,10 @@ ms.locfileid: "19831688"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[UserConfigurationName](userconfigurationname.md) <br/> |ユーザーの構成オブジェクトの名前を表します。 この要素は、GetUserConfiguration 要求内に存在する必要があります。  <br/> |
-|[UserConfigurationProperties](userconfigurationproperties.md) <br/> |取得するユーザーの構成プロパティの型を指定します。 この要素は、GetUserConfiguration 要求内に存在する必要があります。  <br/> |
+|[UserConfigurationName](userconfigurationname.md) <br/> |ユーザー構成オブジェクトの名前を表します。 この要素は、GetUserConfiguration 要求に存在する必要があります。  <br/> |
+|[UserConfigurationProperties](userconfigurationproperties.md) <br/> |返すユーザー構成プロパティの種類を指定します。 この要素は、GetUserConfiguration 要求に存在する必要があります。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -54,22 +54,22 @@ ms.locfileid: "19831688"
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

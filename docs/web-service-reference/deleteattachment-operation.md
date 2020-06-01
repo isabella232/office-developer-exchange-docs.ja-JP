@@ -11,27 +11,27 @@ api_name:
 api_type:
 - schema
 ms.assetid: 4d48e595-b98c-48e7-bbeb-cacf91d12a78
-description: DeleteAttachment 操作を使用して、Exchange ストア内の既存の項目からファイルおよびアイテムの添付ファイルを削除します。
-ms.openlocfilehash: 4b94bfd8d6333c1f52be8ad7d0d111ab2a0552b3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DeleteAttachment 操作は、Exchange ストア内の既存のアイテムからファイルおよびアイテムの添付ファイルを削除するために使用されます。
+ms.openlocfilehash: 1d34ce4c5ba1d955989a35dafb8ab3c5d229d505
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759964"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457334"
 ---
 # <a name="deleteattachment-operation"></a>DeleteAttachment 操作
 
-DeleteAttachment 操作を使用して、Exchange ストア内の既存の項目からファイルおよびアイテムの添付ファイルを削除します。
+DeleteAttachment 操作は、Exchange ストア内の既存のアイテムからファイルおよびアイテムの添付ファイルを削除するために使用されます。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この操作では、ID で 1 つまたは複数の添付ファイルを削除できます。
+この操作により、ID で1つ以上の添付ファイルを削除することができます。
   
 ## <a name="deleteattachment-request-example"></a>DeleteAttachment 要求の例
 
 ### <a name="description"></a>説明
 
-DeleteAttachment 要求の次の例では、アイテムの添付ファイルを削除する方法を示します。
+次の DeleteAttachment 要求の例は、アイテムの添付ファイルを削除する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -40,10 +40,10 @@ DeleteAttachment 要求の次の例では、アイテムの添付ファイルを
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <DeleteAttachment xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-                      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <DeleteAttachment xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+                      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <AttachmentIds>
         <t:AttachmentId Id="AAAtAEFkbWluaX"/>
       </AttachmentIds>
@@ -54,11 +54,11 @@ DeleteAttachment 要求の次の例では、アイテムの添付ファイルを
 
 ### <a name="comments"></a>コメント
 
-添付ファイル識別子が読みやすさを保持するために小さすぎます。
+添付ファイル識別子は読みやすいように短縮されています。
   
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-次の要素は、要求で使用されます。
+要求では、次の要素が使用されます。
   
 - [DeleteAttachment](deleteattachment.md)
     
@@ -70,7 +70,7 @@ DeleteAttachment 要求の次の例では、アイテムの添付ファイルを
 
 ### <a name="description"></a>説明
 
-DeleteAttachment 要求に正常な応答の例を次に示します。
+次の例は、DeleteAttachment 要求に対する正常な応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -81,12 +81,12 @@ DeleteAttachment 要求に正常な応答の例を次に示します。
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="662" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"/>
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"/>
   </soap:Header>
   <soap:Body>
-    <DeleteAttachmentResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                              xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                              xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <DeleteAttachmentResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                              xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                              xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:DeleteAttachmentResponseMessage xsi:type="m:DeleteAttachmentResponseMessageType" ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -100,16 +100,16 @@ DeleteAttachment 要求に正常な応答の例を次に示します。
 
 ### <a name="comments"></a>コメント
 
-CreateAttachment 操作では、 **RootItemId**と**RootItemChangeKey**を含む AttachmentIdType 型の要素を返します。 DeleteAttachment 要求内の識別子には、これらの属性は許可されていません。 DeleteAttachment は、これらの属性が含まれていない RequestAttachmentIdType の種類の要素を使用します。
+CreateAttachment 操作は、 **RootItemId**と**RootItemChangeKey**を含む AttachmentIdType type の要素を返します。 これらの属性は、DeleteAttachment 要求内の識別子には許可されていません。 DeleteAttachment は、RequestAttachmentIdType 型の要素を使用します。これらの属性は含まれていません。
   
-DeleteAttachment の応答には、親項目の ID が含まれています。 アイテムから添付ファイルが削除されると、アイテムの変更キーが変更されます。 DeleteAttachment の応答から、新しいアイテムの変更キーを取得できます。
+DeleteAttachment 応答には、親アイテムの ID が含まれています。 アイテムから添付ファイルが削除されると、アイテムの変更キーが変更されます。 新しいアイテム変更キーは、DeleteAttachment 応答から取得できます。
   
 > [!NOTE]
-> [RootItemId](rootitemid.md)の識別子と変更キーは、読みやすさを保持するために短縮されています。 
+> 読みやすくするために、 [RootItemId](rootitemid.md) Identifier および changekey が短縮されています。 
   
-### <a name="successful-response-elements"></a>正常な応答の要素
+### <a name="successful-response-elements"></a>成功した応答要素
 
-次の要素は、応答で使用されます。
+応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     

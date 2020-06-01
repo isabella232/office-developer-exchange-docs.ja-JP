@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 9dbb83ed-1ded-48f3-8e06-2489fc8b28d5
-description: DelegationState 要素では、委任されたタスクのステータスを表します。
-ms.openlocfilehash: 00b0e41ae223f1c70f9a3a21662e8858f8690a86
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Taskitem.delegationstate 要素は、委任されたタスクの状態を表します。
+ms.openlocfilehash: b938b5a2240283c265006dd47cd6ff475ad80978
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759956"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457369"
 ---
 # <a name="delegationstate"></a>DelegationState
 
-**DelegationState**要素では、委任されたタスクのステータスを表します。 
+**Taskitem.delegationstate**要素は、委任されたタスクの状態を表します。 
   
 ```xml
 <DelegationState/>
@@ -29,7 +29,7 @@ ms.locfileid: "19759956"
 
 **TaskDelegateStateType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -45,11 +45,11 @@ ms.locfileid: "19759956"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[タスク](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
+|[Task](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-これは、プロパティは読み取り専用プロパティです。 指定可能な値は次のいずれかです。
+これは読み取り専用のプロパティです。 指定可能な値は次のいずれかです。
   
 - NoMatch
     
@@ -57,28 +57,28 @@ ms.locfileid: "19759956"
     
 - Owned (所有)
     
-- 了承済み
+- Accepted
     
-- 辞退
+- 同意
     
 - Max
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-Microsoft Exchange Server 2007 で Exchange Web サービスでは、タスクの割り当てをサポートしていません。
+Microsoft Exchange Server 2007 の exchange Web サービスは、タスク割り当てをサポートしていません。
   
-この要素を記述するスキーマは、インストールされているクライアント アクセス サーバーの役割を持つ Exchange 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Exchange 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

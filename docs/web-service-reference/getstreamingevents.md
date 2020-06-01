@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: dbe83857-c4f8-4d98-813f-e03c289697a1
-description: GetStreamingEvents 要素は、サーバーからのストリーミングの通知を要求するクライアントによって使用される演算を表します。
-ms.openlocfilehash: b07015541cf9c2fbbbc11ebc9f10421bdb9ee84f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetStreamingEvents 要素は、サーバーからのストリーミング通知を要求するためにクライアントによって使用される操作を表します。
+ms.openlocfilehash: ec133ecd69c05a2208e95f925133570af0233cf2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831679"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457320"
 ---
 # <a name="getstreamingevents"></a>GetStreamingEvents
 
-**GetStreamingEvents**要素は、サーバーからのストリーミングの通知を要求するクライアントによって使用される演算を表します。 
+**Getstreamingevents**要素は、サーバーからのストリーミング通知を要求するためにクライアントによって使用される操作を表します。 
   
 [GetStreamingEvents](getstreamingevents.md)
   
@@ -33,7 +33,7 @@ ms.locfileid: "19831679"
 ```
 
  **GetStreamingEventsType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -43,10 +43,10 @@ ms.locfileid: "19831679"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[サブスクリプション Id (GetStreamingEvents)](subscriptionid-getstreamingevents.md) <br/> |イベントを照会するサブスクリプションの識別子を表します。  <br/> |
-|[タイムアウト](connectiontimeout.md) <br/> |接続を開いたままにしておく秒数を表します。  <br/> |
+|[SubscriptionId (GetStreamingEvents)](subscriptionid-getstreamingevents.md) <br/> |イベントを照会するサブスクリプションの識別子を表します。  <br/> |
+|[ConnectionTimeout](connectiontimeout.md) <br/> |接続を開いたままにする時間を分単位で表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -56,18 +56,18 @@ ms.locfileid: "19831679"
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web Services.This の要素がホストをで Exchange Server 2010 Service Pack 1 (SP1) を導入する IIS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -80,5 +80,5 @@ ms.locfileid: "19831679"
 [Unsubscribe 操作](unsubscribe-operation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

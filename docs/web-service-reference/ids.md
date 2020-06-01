@@ -1,5 +1,5 @@
 ---
-title: Id
+title: Rid
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c54cdeaf-6761-4d1a-a329-fb279f0e2a64
-description: Id 要素には、タイム ゾーン定義の識別子の配列が含まれています。
-ms.openlocfilehash: e4f8afb1292b3cb9f3990d4613b7461050976a59
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Ids 要素には、タイムゾーン定義識別子の配列が含まれています。
+ms.openlocfilehash: 1c5a6974c8d3abc318ff122f3db09d8c3472dc65
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831856"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457621"
 ---
-# <a name="ids"></a>Id
+# <a name="ids"></a>Rid
 
-**Id**要素には、タイム ゾーン定義の識別子の配列が含まれています。 
+**Ids**要素には、タイムゾーン定義識別子の配列が含まれています。 
   
 ```XML
 <Ids>
@@ -30,7 +30,7 @@ ms.locfileid: "19831856"
 ```
 
  **NonEmptyArrayOfTimeZoneIdType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,28 +40,28 @@ ms.locfileid: "19831856"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[Id (タイムゾーン)](id-timezone.md) <br/> |単一のタイム ゾーン定義を識別する要素です。  <br/> |
+|[Id (TimeZone)](id-timezone.md) <br/> |1つのタイムゾーン定義を識別する要素。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetServerTimeZones](getservertimezones.md) <br/> |Exchange サーバーからのタイム ゾーン定義を取得する要求を定義します。  <br/> |
+|[GetServerTimeZones](getservertimezones.md) <br/> |Exchange サーバーからタイムゾーン定義を取得するための要求を定義します。  <br/> |
    
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

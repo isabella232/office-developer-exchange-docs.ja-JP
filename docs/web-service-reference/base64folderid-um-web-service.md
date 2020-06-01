@@ -10,17 +10,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 662f8f2f-49a7-4c7a-9065-98a02a49cfcd
-description: Base64FolderId 要素には、元となるユニファイド メッセージング メッセージを読み取り、SetTelephoneAccessFolderEmail の操作 (UM web サービス) の要求に電話で、既定の電子メール フォルダーとして指定するフォルダーの識別子が含まれています。
-ms.openlocfilehash: 7d710542418a717c6fcad243a22682e5840ebbd2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Base64FolderId 要素には、ユニファイドメッセージングが SetTelephoneAccessFolderEmail 操作 (UM web サービス) 要求で電話でメッセージを読み取る既定の電子メールフォルダーとして指定するフォルダーの識別子が含まれています。
+ms.openlocfilehash: ea31c7a0f93188e563bf95c4a3e6e91f0866746c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759488"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458048"
 ---
 # <a name="base64folderid-um-web-service"></a>base64FolderId (UM web サービス)
 
-**Base64FolderId**要素には、元となるユニファイド メッセージング メッセージを読み取り[(UM web サービス) の SetTelephoneAccessFolderEmail 操作](settelephoneaccessfolderemail-operation-um-web-service.md)の要求の電話で、既定の電子メール フォルダーとして指定するフォルダーの識別子が含まれています。 
+**Base64FolderId**要素には、ユニファイドメッセージングが[SETTELEPHONEACCESSFOLDEREMAIL 操作 (UM web サービス)](settelephoneaccessfolderemail-operation-um-web-service.md)要求で電話でメッセージを読み取る既定の電子メールフォルダーとして指定するフォルダーの識別子が含まれています。 
   
 [SetTelephoneAccessFolderEmail (UM web サービス)](settelephoneaccessfolderemail-um-web-service.md)
   
@@ -31,7 +31,7 @@ ms.locfileid: "19759488"
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -47,24 +47,24 @@ ms.locfileid: "19759488"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[SetTelephoneAccessFolderEmail (UM web サービス)](settelephoneaccessfolderemail-um-web-service.md) <br/> |電子メール フォルダーには、電話のアクセスを設定する要求を定義します。  <br/> |
+|[SetTelephoneAccessFolderEmail (UM web サービス)](settelephoneaccessfolderemail-um-web-service.md) <br/> |電話アクセスの電子メールフォルダーを設定するための要求を定義します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は必須です。 テキスト値は、フォルダーの MAPI ID を表します。
+テキスト値は必須です。 Text 値は、フォルダーの MAPI ID を表します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-電子メール フォルダーには、電話のアクセスを設定するには、 [SetTelephoneAccessFolderEmail 操作 (UM web サービス)](settelephoneaccessfolderemail-operation-um-web-service.md)を使用します。
+電話アクセスの電子メールフォルダーを設定するには、 [SetTelephoneAccessFolderEmail 操作 (UM web サービス)](settelephoneaccessfolderemail-operation-um-web-service.md)を使用します。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |スキーマ名  <br/> |メッセージ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -74,9 +74,7 @@ ms.locfileid: "19759488"
   
 [SetTelephoneAccessFolderEmail 操作 (UM web サービス)](settelephoneaccessfolderemail-operation-um-web-service.md)
   
-
-  [FindFolder 操作](findfolder-operation.md)
+[FindFolder 操作](findfolder-operation.md)
   
-
-  [FindItem 操作](finditem-operation.md)
+[FindItem 操作](finditem-operation.md)
 

@@ -1,5 +1,5 @@
 ---
-title: OutOfOffice
+title: 不在
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: fe1256ab-5c0f-467d-abb3-b38a2dc312ae
-description: OutOfOffice 要素は、応答メッセージと応答メッセージを送信するための継続時間を表します。
-ms.openlocfilehash: f35b84d7a8a37c7a57b58c97fd0d37318bb50a33
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: 不在要素は、応答メッセージと、応答メッセージを送信するまでの時間を表します。
+ms.openlocfilehash: 082a81b62e2b783b302b3e749e0066131a46d73e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354268"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456900"
 ---
-# <a name="outofoffice"></a>OutOfOffice
+# <a name="outofoffice"></a>不在
 
-**OutOfOffice**要素は、応答メッセージと応答メッセージを送信するための継続時間を表します。 
+**不在**要素は、応答メッセージと、応答メッセージを送信するまでの時間を表します。 
   
 ```XML
 <OutOfOffice>
@@ -38,7 +38,7 @@ ms.locfileid: "21354268"
 
 **OutOfOfficeMailTip**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -48,16 +48,16 @@ ms.locfileid: "21354268"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[ReplyBody](replybody.md) <br/> |Office (OOF) メッセージと、メッセージに使用する言語が含まれています。  <br/> |
-|[Duration (UserOofSettings)](duration-useroofsettings.md) <br/> |[OofState](oofstate.md)要素は、[スケジュール済] に設定されている場合に、不在の状態が有効になっている期間が含まれています。  <br/> |
+|[ReplyBody](replybody.md) <br/> |不在 (OOF) メッセージと、メッセージに使用する言語が含まれています。  <br/> |
+|[Duration (UserOofSettings)](duration-useroofsettings.md) <br/> |[Oofstate](oofstate.md)要素が [スケジュール済み] に設定されている場合に、不在時の状態が有効になる期間を含みます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[MailTips](mailtips.md) <br/> |さまざまな種類のメール ヒントの値を表します。  <br/> |
+|[メールヒント](mailtips.md) <br/> |さまざまな種類のメールヒントの値を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -67,16 +67,16 @@ ms.locfileid: "21354268"
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

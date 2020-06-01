@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 330de503-498d-447e-b4a9-c20fc1699fd1
 description: Exchange アプリケーションのモニターとトラブルシューティングに役立つ EWS と REST の要求と応答の HTTP ヘッダーについて説明します。
-ms.openlocfilehash: bcf362952c29956729c44397043a56bf3603d0af
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: HT
+ms.openlocfilehash: 3a8ce889ec7a6b9e70ec25a95ac248902f48ca6c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759084"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456305"
 ---
 # <a name="instrumenting-client-requests-for-ews-and-rest-in-exchange"></a>Exchange で EWS と REST のクライアントの要求をインストルメント化する
 
@@ -27,17 +27,17 @@ Exchange アプリケーションのモニターとトラブルシューティ�
 
 |**HTTP ヘッダー (EWS)**|**EWS マネージ API の同等物**|**メモ**|
 |:-----|:-----|:-----|
-|User-Agent  <br/> |[ExchangeService.UserAgent](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservicebase.useragent%28v=exchg.80%29.aspx) <br/> |クライアント アプリケーションを識別する一意の値に設定します。<br/><br/> アプリケーションが送信するすべての要求に同じ値を使用すると、呼び出しの失敗が発生した場合に、Microsoft がトラブルシューティングを行うのに役立ちます。  <br/> |
-|client-request-id  <br/> |[ExchangeService.ClientRequestId](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservicebase.clientrequestid%28v=exchg.80%29.aspx) <br/> |アプリケーションが送信する要求ごとに異なる一意の値に設定します。<br/><br/> GUID を使用することをお勧めします。 この一意の識別子は、問題が発生した場合に 2 つのシステムの間でアクティビティを関連付けるために使用されます。  <br/> |
-|return-client-request-id  <br/> |[ExchangeService.ReturnClientRequestId](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservicebase.returnclientrequestid%28v=exchg.80%29.aspx) <br/> |**true** に設定することで、対応する応答で client-request-id の値を返す必要があることを Exchange サーバーに通知します。<br/><br/> これを使用して、ネットワーク トレースまたは EWS マネージ API のトレースで要求と応答を関連付けることができます。  <br/> |
-|X-ClientStatistics  <br/> |[ExchangeService.SendClientLatencies](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservicebase.sendclientlatencies%28v=exchg.80%29.aspx) <br/> |アプリケーションが Exchange Online または Office 365 の一部としての Exchange Online にアクセスしている場合に、Microsoft に [EWS の待機時間を報告](#bk_ReportLatency)するために使用されます。  <br/> |
+|User-Agent  <br/> |[ExchangeService.UserAgent](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservicebase.useragent%28v=exchg.80%29.aspx) <br/> |クライアント アプリケーションを識別する一意の値に設定します。<br/><br/> アプリケーションが送信するすべての要求に同じ値を使用すると、呼び出しの失敗が発生した場合に、Microsoft がトラブルシューティングを行うのに役立ちます。  <br/> |
+|client-request-id  <br/> |[ExchangeService.ClientRequestId](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservicebase.clientrequestid%28v=exchg.80%29.aspx) <br/> |アプリケーションが送信する要求ごとに異なる一意の値に設定します。<br/><br/> GUID を使用することをお勧めします。 この一意の識別子は、問題が発生した場合に 2 つのシステムの間でアクティビティを関連付けるために使用されます。  <br/> |
+|return-client-request-id  <br/> |[ExchangeService.ReturnClientRequestId](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservicebase.returnclientrequestid%28v=exchg.80%29.aspx) <br/> |**true** に設定することで、対応する応答で client-request-id の値を返す必要があることを Exchange サーバーに通知します。<br/><br/> これを使用して、ネットワーク トレースまたは EWS マネージ API のトレースで要求と応答を関連付けることができます。  <br/> |
+|X-ClientStatistics  <br/> |[ExchangeService.SendClientLatencies](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservicebase.sendclientlatencies%28v=exchg.80%29.aspx) <br/> |アプリケーションが Exchange Online または Office 365 の一部としての Exchange Online にアクセスしている場合に、Microsoft に [EWS の待機時間を報告](#bk_ReportLatency)するために使用されます。  <br/> |
    
 ## <a name="log-information-from-responses"></a>応答からのログ情報
 
 クライアントが送信する要求にインストルメンテーションを追加できるのと同様、Exchange も HTTP ヘッダーの形式でインストルメンテーションを応答に追加します。クライアントはこの情報を要求のインストルメンテーションの情報とともにキャプチャする必要があります。
   
 > [!NOTE]
-> EWS マネージ API を使用している場合、HTTP ヘッダーに直接相当するものはありません。 しかし、すべての HTTP 応答ヘッダーに、[ExchangeService.HttpResponseHeaders](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservicebase.httpresponseheaders%28v=exchg.80%29.aspx) プロパティ経由でアクセスできます。 
+> EWS マネージ API を使用している場合、HTTP ヘッダーに直接相当するものはありません。 しかし、すべての HTTP 応答ヘッダーに、[ExchangeService.HttpResponseHeaders](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservicebase.httpresponseheaders%28v=exchg.80%29.aspx) プロパティ経由でアクセスできます。 
   
 **表 2. HTTP 応答ヘッダー**
 
@@ -53,7 +53,7 @@ Exchange アプリケーションのモニターとトラブルシューティ�
 ## <a name="report-ews-latency-to-microsoft"></a>Microsoft への EWS の待機時間の報告
 <a name="bk_ReportLatency"> </a>
 
-アプリケーションが EWS マネージ API または EWS を使用して Exchange Online に接続する場合に、EWS 要求の要求の待機時間を Microsoft に直接報告できます。 情報は、X-ClientStatistics 要求ヘッダーを使用して渡されます。 EWS マネージ API を使用する場合、必要なのは [ExchangeService.SendClientLatencies](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservicebase.sendclientlatencies%28v=exchg.80%29.aspx) プロパティを **true** に設定することだけです。 EWS を使用する場合は、要求を発行してから応答を受け取るまでの時間を測定し、アプリケーションが送信するその次の EWS 要求に X-ClientStatistics ヘッダーを追加する必要があります。使用する形式は次のとおりです。
+アプリケーションが EWS マネージ API または EWS を使用して Exchange Online に接続する場合に、EWS 要求の要求の待機時間を Microsoft に直接報告できます。 情報は、X-ClientStatistics 要求ヘッダーを使用して渡されます。 EWS マネージ API を使用する場合、必要なのは [ExchangeService.SendClientLatencies](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservicebase.sendclientlatencies%28v=exchg.80%29.aspx) プロパティを **true** に設定することだけです。 EWS を使用する場合は、要求を発行してから応答を受け取るまでの時間を測定し、アプリケーションが送信するその次の EWS 要求に X-ClientStatistics ヘッダーを追加する必要があります。使用する形式は次のとおりです。
   
 `X-ClientStatistics: MessageId=<value of request-id header>,ResponseTime=<time in milliseconds>,SoapAction=<EWS operation>`
   

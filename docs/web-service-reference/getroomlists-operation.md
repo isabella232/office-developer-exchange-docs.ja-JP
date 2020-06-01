@@ -11,34 +11,34 @@ api_name:
 api_type:
 - schema
 ms.assetid: 55d451f9-547f-44ac-872e-9cb220ea7b7c
-description: GetRoomLists 操作は、Exchange 組織内で利用可能なルームのリストを取得します。
-ms.openlocfilehash: 139a669bfc6b7c4bc9bd9c07f9f9cf52954860c0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetRoomLists 操作は、Exchange 組織内で使用可能な会議室一覧を取得します。
+ms.openlocfilehash: d1393a6a5e99b7e0a7e354d2b7dd035d04356ec2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760846"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458279"
 ---
 # <a name="getroomlists-operation"></a>GetRoomLists 操作
 
-**GetRoomLists**操作は、Exchange 組織内で利用可能なルームのリストを取得します。 
+**GetRoomLists**操作は、Exchange 組織内で使用可能な会議室一覧を取得します。 
   
 ## <a name="soap-headers"></a>SOAP ヘッダー
 
-**GetRoomLists**操作が一覧表示され、次の表に記載されている SOAP ヘッダーを使用できます。 
+**GetRoomLists**操作では、次の表に記載されている SOAP ヘッダーを使用できます。 
   
 |**Header**|**要素**|**説明**|
 |:-----|:-----|:-----|
-|偽装  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装するユーザーを識別します。  <br/> |
-|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |RFC3066 カルチャを使用してメールボックスへのアクセスを識別します。  <br/> |
-|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマのバージョンを識別します。  <br/> |
-|ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答するサーバーのバージョンを識別します。  <br/> |
+|偽装  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。  <br/> |
+|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |メールボックスへのアクセスに使用する RFC3066 カルチャを指定します。  <br/> |
+|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。  <br/> |
+|ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。  <br/> |
    
 ## <a name="getroomlists-request-example"></a>GetRoomLists 要求の例
 
 ### <a name="description"></a>説明
 
-次に、サーバー上で利用可能なルームのリストを返す**GetRoomLists**要求の例を示します。 
+以下は、サーバーで使用可能な会議室一覧を返す**GetRoomLists**要求の例です。 
   
 ### <a name="code"></a>コード
 
@@ -46,8 +46,8 @@ ms.locfileid: "19760846"
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
   <soap:Header>
     <t:RequestServerVersion Version ="Exchange2010_SP1"/>
   </soap:Header>
@@ -58,17 +58,17 @@ ms.locfileid: "19760846"
 
 ```
 
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-次の要素は、要求で使用されます。
+要求では、次の要素が使用されます。
   
 - [GetRoomLists](getroomlists.md)
     
-## <a name="successful-getroomlists-response-example"></a>成功した GetRoomLists の応答の例
+## <a name="successful-getroomlists-response-example"></a>Successful GetRoomLists response の例
 
 ### <a name="description"></a>説明
 
-次は、 **GetRoomLists**要求への応答の例です。 この応答は、サーバー上で 1 つの部屋の一覧を示しています。 
+**GetRoomLists**要求に対する応答の例を次に示します。 この応答は、サーバー上に1つの会議室一覧を表示します。 
   
 ### <a name="code"></a>コード
 
@@ -76,13 +76,13 @@ ms.locfileid: "19760846"
 <?xml version="1.0" encoding="utf-8"?>
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
-    <h:ServerVersionInfo MajorVersion="14" MinorVersion="1" MajorBuildNumber="164" MinorBuildNumber="0" Version="Exchange2010_SP1" xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+    <h:ServerVersionInfo MajorVersion="14" MinorVersion="1" MajorBuildNumber="164" MinorBuildNumber="0" Version="Exchange2010_SP1" xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" xmlns="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <GetRoomListsResponse ResponseClass="Success" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetRoomListsResponse ResponseClass="Success" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseCode>NoError</ResponseCode>
-      <m:RoomLists xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
-        <t:Address xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:RoomLists xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
+        <t:Address xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
           <t:Name>Room List</t:Name>
           <t:EmailAddress>RoomList@contoso.com</t:EmailAddress>
           <t:RoutingType>SMTP</t:RoutingType>
@@ -95,19 +95,19 @@ ms.locfileid: "19760846"
 
 ```
 
-### <a name="successful-getroomlists-response-elements"></a>成功した GetRoomLists の応答の要素
+### <a name="successful-getroomlists-response-elements"></a>Successful GetRoomLists response 要素
 
-次の要素は、応答で使用されます。
+応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
-- [GetRoomListsResponse](getroomlistsresponse.md)
+- [た getroomlistsresponse](getroomlistsresponse.md)
     
 - [ResponseCode](responsecode.md)
     
 - [RoomLists](roomlists.md)
     
-- [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
+- [EmailAddress (非 Emptystringtype)](emailaddress-nonemptystringtype.md)
     
 - [RoutingType (EmailAddress)](routingtype-emailaddress.md)
     
@@ -117,7 +117,7 @@ ms.locfileid: "19760846"
 
 #### <a name="description"></a>説明
 
-ルーム リストを定義していないサーバーからルームの一覧を取得しようとする応答の例を次に示します。
+次の例は、会議室一覧が定義されていないサーバーから、会議室一覧を取得しようとした場合の応答を示しています。
   
 #### <a name="code"></a>コード
 
@@ -125,25 +125,25 @@ ms.locfileid: "19760846"
 <?xml version="1.0" encoding="utf-8"?>
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
-    <h:ServerVersionInfo MajorVersion="14" MinorVersion="1" MajorBuildNumber="164" MinorBuildNumber="0" Version="Exchange2010_SP1" xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+    <h:ServerVersionInfo MajorVersion="14" MinorVersion="1" MajorBuildNumber="164" MinorBuildNumber="0" Version="Exchange2010_SP1" xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" xmlns="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <GetRoomListsResponse ResponseClass="Success" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetRoomListsResponse ResponseClass="Success" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseCode>NoError</ResponseCode>
-      <m:RoomLists xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"/>
+      <m:RoomLists xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"/>
     </GetRoomListsResponse>
   </s:Body>
 </s:Envelope>
 
 ```
 
-#### <a name="getroomlists-error-response-elements"></a>GetRoomLists エラー応答の要素
+#### <a name="getroomlists-error-response-elements"></a>GetRoomLists Error response 要素
 
 エラー応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
-- [GetRoomListsResponse](getroomlistsresponse.md)
+- [た getroomlistsresponse](getroomlistsresponse.md)
     
 - [ResponseCode](responsecode.md)
     
@@ -153,7 +153,7 @@ ms.locfileid: "19760846"
 
 
 
-[Exchange での EWS の操作](ews-operations-in-exchange.md)
+[Exchange での EWS 操作](ews-operations-in-exchange.md)
   
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

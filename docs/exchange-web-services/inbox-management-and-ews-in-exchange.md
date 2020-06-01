@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 3dfa0fc9-64bb-4d18-bff7-bf6b3bed4a0d
 description: 受信トレイのルールと受信拒否リストを使用して、EWS Mマネージ API または EWS アプリケーションで受信トレイを管理する方法を紹介します。
-ms.openlocfilehash: fe06c5ee87e2679506ca7247c5fc2c96912dee86
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: HT
+ms.openlocfilehash: 7c88015386dc882f14184765e0046a866e8c0e10
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759077"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456317"
 ---
 # <a name="inbox-management-and-ews-in-exchange"></a>Exchange での受信トレイの管理と EWS
 
@@ -23,7 +23,7 @@ Exchange メールボックスには、ユーザーが受信メールを自動�
 
 |**目的…**|**使う機能**|
 |:-----|:-----|
-|特定の条件 (送信者、件名、添付物など) に基づいて、受信メッセージにアクション (別のフォルダーへの移動、削除など) を行う  <br/> |受信トレイ ルール  <br/> |
+|特定の条件 (送信者、件名、添付物など) に基づいて、受信メッセージにアクション (別のフォルダーへの移動、削除など) を行う  <br/> |受信トレイのルール  <br/> |
 |特定の送信者からのすべての受信メールを削除する  <br/> |受信拒否リスト  <br/> |
    
 ## <a name="inbox-rules"></a>受信トレイ ルール
@@ -31,7 +31,7 @@ Exchange メールボックスには、ユーザーが受信メールを自動�
 
 現実問題: すべてのメールが同じように作成されているわけではありません。数年前に参加し、なかなか退会する機会がなかったインターネットのねこ動画の配布リストからのメールが、自分の上司から受け取るメールと同じ数ほどあるとします。インターネットのねこ動画は面白いですが、配布リストからのメールに使用されるトラフィック量は大きいですし、配布リストからのメールが受信トレイに大量に来るため重要なメッセージを簡単に見失ってしまう恐れがあります。多くのユーザーは、受信トレイ ルールを使用してそのようなメッセージを減らし、受信トレイをはるかに使いやすい場所にします。Exchange Web サービス (EWS) を使用すれば、アプリケーションは、制限ルールの機能を有効に活用できます。
   
-EWS マネージ API では、ルールを操作するために [ExchangeService.GetInboxRules](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx) メソッドと [ExchangeService.UpdateInboxRules](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx) メソッドが提供されます。EWS では、ルールを操作するために [GetInboxRules](http://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx) 操作と [UpdateInboxRules](http://msdn.microsoft.com/library/f982a237-471e-45c5-a2b5-468cfc53150b%28Office.15%29.aspx) 操作が提供されます。ただし、EWS マネージ API と EWS には、受信トレイ ルールを操作する場合、次の制限があることにご注意ください。 
+EWS マネージ API では、ルールを操作するために [ExchangeService.GetInboxRules](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx) メソッドと [ExchangeService.UpdateInboxRules](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx) メソッドが提供されます。EWS では、ルールを操作するために [GetInboxRules](https://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx) 操作と [UpdateInboxRules](https://msdn.microsoft.com/library/f982a237-471e-45c5-a2b5-468cfc53150b%28Office.15%29.aspx) 操作が提供されます。ただし、EWS マネージ API と EWS には、受信トレイ ルールを操作する場合、次の制限があることにご注意ください。 
   
 - EWS では、"クライアントのみ" ルール、または Outlook で設定されている "このコンピューターでのみ" 実行されるルールにアクセスしたり、作成したりすることはできません。
     
@@ -71,22 +71,22 @@ EWS マネージ API では、ルールを操作するために [ExchangeService
 ### <a name="putting-the-pieces-together---parts-of-a-rule"></a>ルールの構成要素を理解する
 <a name="bk_Pieces"> </a>
 
-ルールの構成要素を視覚化する方法の 1 つとして、受信メールの整理をする担当者に指示を行うことを想像してください。この担当者に次のように言うかもしれません。"メッセージが \<例外をここに挿入\> でない限り、\<条件をここに挿入\> メッセージを受け取った場合に、\<アクションをここに挿入\> してください。各構成要素をさらに詳しく見てみましょう。
+ルールの各部を視覚化する方法の1つは、受信メールを整理する必要があるユーザーに指示を与えることを想像することです。 この人物には、「メッセージが到着した場合はメッセージを受信しない」と言うことがあります。 \<insert conditions here\> \<insert actions here\> \<insert exceptions here\> 各パーツを詳しく見てみましょう。
   
 #### <a name="conditions"></a>条件
 <a name="bk_Conditions"> </a>
 
-[条件](http://msdn.microsoft.com/library/f049a48c-9585-43f7-8549-0b8cb19a5eea%28Office.15%29.aspx) は、ルールを適用する場合について説明します。ルールの条件は省略できます (ルールがすべての受信メッセージに適用されます) が、普通は受信メッセージのサブセットに適用される条件をルールに設定します。たとえば、"メッセージが Sadie からの場合" または "メッセージが 'ねこ動画の愛好家' の配布リストに送信される場合" などです。ルールには複数の条件を指定することができます。ルールに複数の条件がある場合、ルール エンジンが指定されたアクションを実行するためには、すべての条件が満たされる必要があります。 
+[条件](https://msdn.microsoft.com/library/f049a48c-9585-43f7-8549-0b8cb19a5eea%28Office.15%29.aspx) は、ルールを適用する場合について説明します。ルールの条件は省略できます (ルールがすべての受信メッセージに適用されます) が、普通は受信メッセージのサブセットに適用される条件をルールに設定します。たとえば、"メッセージが Sadie からの場合" または "メッセージが 'ねこ動画の愛好家' の配布リストに送信される場合" などです。ルールには複数の条件を指定することができます。ルールに複数の条件がある場合、ルール エンジンが指定されたアクションを実行するためには、すべての条件が満たされる必要があります。 
   
 #### <a name="actions"></a>アクション
 <a name="bk_Actions"> </a>
 
-[アクション](http://msdn.microsoft.com/library/c5aa96b1-2d8b-422f-8c2f-f118572ab23f%28Office.15%29.aspx)は、ルール適用時の動作について説明します。 たとえば、"メッセージを 'ねこ' フォルダーに移動する" または "メッセージを重要度 '低' でマークする" などがあります。 ルールには複数のアクションを指定することができます。 ルールに対して複数のアクションを指定すると、ルールの適用時にすべてのアクションが実行されます。 
+[Actions](https://msdn.microsoft.com/library/c5aa96b1-2d8b-422f-8c2f-f118572ab23f%28Office.15%29.aspx) describe what happens when a rule applies. Examples are "move the message to the 'Cats' folder" or "mark the message with 'Low' importance". Rules can have multiple actions. When you specify multiple actions for a rule, all the actions are performed when the rule is applied. 
   
 #### <a name="exceptions"></a>例外
 <a name="bk_Exceptions"> </a>
 
-[例外](http://msdn.microsoft.com/library/7cd63ac2-3441-4ed4-915b-6f90af4b28fc%28Office.15%29.aspx)は、条件に指定された基準が満たされた場合でも、ルールを適用しない場合について説明します。 たとえば、"メッセージが自分だけに送信される場合は除く" または "メッセージが母親からの場合を除く" などです。 ルールに複数の例外を指定することができます。 ルールに複数の例外があった場合、いずれかの例外が満たされれば、ルールは適用されません。 
+例 
   
 ### <a name="example-herding-those-cats"></a>例:これらのねこ動画を寄せ集める
 <a name="bk_Example"> </a>
@@ -107,7 +107,7 @@ EWS マネージ API では、ルールを操作するために [ExchangeService
 |:-----|:-----|
 |条件  <br/> |'インターネットのねこ動画愛好家' 配布リストに送信される  <br/> |
 |アクション  <br/> |メッセージを'ねこ' フォルダーに移動する、  <br/> かつ、以降のルールは処理しない  <br/> |
-|例外  <br/> |'母親' から  <br/> |
+|Exceptions  <br/> |'母親' から  <br/> |
    
 > [!NOTE]
 > "以降のルールは処理しない" は、該当したルールのアクションの 1 つであることに注意してください。通常、どのルールが特定のメッセージで機能するかについての混乱を避けるため、このアクションを含めることをお勧めします。ただし、このアクションを省略しルールを適切に順序付ければ、受信メールのより高度な処理を実行できます。この場合、おそらく、インターネットのねこ動画 メッセージでは、高度な処理をあまり行わないことが安全策です。 
@@ -123,7 +123,7 @@ EWS マネージ API では、ルールを操作するために [ExchangeService
 ## <a name="blocking-senders"></a>送信者をブロックする
 <a name="bk_Blocking"> </a>
 
-特定の送信者からのすべてのメールを迷惑メール フォルダーに移動するルールを作成できますが、これは迷惑メールのオプションで受信拒否リストを使用して行うこともできます。ユーザーが指定できるルールの数には制限があるため、受信拒否リストを使用するのが有効な方法です。[ExchangeService.MarkAsJunk](how-to-add-and-remove-email-addresses-from-blocked-senders-list-by-using-ews.md) EWS マネージ API メソッドまたは [MarkAsJunk](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.markasjunk%28v=exchg.80%29.aspx) EWS 操作を使用して、 [受信拒否リストに対して特定のメール アドレスを追加または削除](http://msdn.microsoft.com/library/1f71f04d-56a9-4fee-a4e7-d1034438329e%28Office.15%29.aspx)できます。EWS が受信拒否リストにアクセスするためには、ユーザーのメールボックスに、追加または削除するメール アドレスからのメール メッセージを含める必要があります。 
+特定の送信者からのすべてのメールを迷惑メール フォルダーに移動するルールを作成できますが、これは迷惑メールのオプションで受信拒否リストを使用して行うこともできます。ユーザーが指定できるルールの数には制限があるため、受信拒否リストを使用するのが有効な方法です。[ExchangeService.MarkAsJunk](how-to-add-and-remove-email-addresses-from-blocked-senders-list-by-using-ews.md) EWS マネージ API メソッドまたは [MarkAsJunk](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.markasjunk%28v=exchg.80%29.aspx) EWS 操作を使用して、 [受信拒否リストに対して特定のメール アドレスを追加または削除](https://msdn.microsoft.com/library/1f71f04d-56a9-4fee-a4e7-d1034438329e%28Office.15%29.aspx)できます。EWS が受信拒否リストにアクセスするためには、ユーザーのメールボックスに、追加または削除するメール アドレスからのメール メッセージを含める必要があります。 
   
 ## <a name="in-this-section"></a>このセクションの内容
 <a name="bk_InThisSection"> </a>
@@ -135,13 +135,13 @@ EWS マネージ API では、ルールを操作するために [ExchangeService
 ## <a name="see-also"></a>関連項目
 
 
-- [Exchange 用の Web サービス クライアントの開発](develop-web-service-clients-for-exchange.md)
+- [Exchange の Web サービス クライアントを開発する](develop-web-service-clients-for-exchange.md)
     
-- [GetInboxRules の操作](http://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx)
+- [GetInboxRules の操作](https://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx)
     
-- [UpdateInboxRules の操作](http://msdn.microsoft.com/library/f982a237-471e-45c5-a2b5-468cfc53150b%28Office.15%29.aspx)
+- [UpdateInboxRules の操作](https://msdn.microsoft.com/library/f982a237-471e-45c5-a2b5-468cfc53150b%28Office.15%29.aspx)
     
 - 
-  [MarkAsJunk 操作](http://msdn.microsoft.com/library/1f71f04d-56a9-4fee-a4e7-d1034438329e%28Office.15%29.aspx)
+  [MarkAsJunk 操作](https://msdn.microsoft.com/library/1f71f04d-56a9-4fee-a4e7-d1034438329e%28Office.15%29.aspx)
     
 

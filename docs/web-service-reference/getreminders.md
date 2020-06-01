@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 943c3d5d-7d29-4d70-932c-8a4fe44a0037
-description: GetReminders 要素は、事前通知を取得する要求を指定します。
-ms.openlocfilehash: f4ecc858af2150bb3f88ebdf9ed541892f2fead1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetReminders 要素は、アラームを取得する要求を指定します。
+ms.openlocfilehash: 8b869730f39876b838fbcbef3c39661238ed203c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760840"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458300"
 ---
 # <a name="getreminders"></a>GetReminders
 
-**GetReminders**要素は、事前通知を取得する要求を指定します。 
+**Getreminders**要素は、アラームを取得する要求を指定します。 
   
 ```XML
 <GetReminders>
@@ -30,7 +30,7 @@ ms.locfileid: "19760840"
 ```
 
  **GetRemindersType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,30 +40,30 @@ ms.locfileid: "19760840"
   
 ### <a name="child-elements"></a>子要素
 
-[BeginTime](begintime.md) | [終了時刻 (ReminderMessageDataType)](endtime-remindermessagedatatype.md) | [MaxItems](maxitems.md) | [ReminderType](remindertype.md)
+[Begintime](begintime.md)  | [EndTime (ReminderMessageDataType)](endtime-remindermessagedatatype.md)  | [MaxItems](maxitems.md)  | [ReminderType](remindertype.md)
   
 ### <a name="parent-elements"></a>親要素
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

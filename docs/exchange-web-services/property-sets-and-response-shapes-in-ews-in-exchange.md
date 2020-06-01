@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 04a29804-6067-48e7-9f5c-534e253a230e
 description: EWS マネージ API および Exchange の EWS から返される応答の図形とプロパティ セットを管理する方法について説明します。
-ms.openlocfilehash: d9fd6c155438dfd03cfc9536397316cf3faa2287
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: HT
+ms.openlocfilehash: 8f539a2131798e764574ef92f75deb654c02c90f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759199"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457663"
 ---
 # <a name="property-sets-and-response-shapes-in-ews-in-exchange"></a>Exchange の EWS でのプロパティ セットと応答の図形
 
@@ -19,27 +19,27 @@ EWS マネージ API および Exchange の EWS から返される応答の図�
   
 Exchange のデータ保存には、連絡先や予定表のエントリなど、さまざまなアイテムを同じフォルダーに格納できる柔軟なストレージ ソリューションが採用されています。しかしそのために、EWS 操作や EWS マネージ API メソッドへの呼び出しから返されるデータを管理するのが困難になることがあります。
   
-Exchange Online、Office 365 の一部である Exchange Online、または Exchange 2013 以降の Excahange バージョンから返されるデータの管理を容易にするために、EWS マネージ API はプロパティ セットを使用し、EWS は応答の図形を使用します。 これらは、ストア アイテムの最も一般的なプロパティを提供する事前定義されたコレクションです。 返されるプロパティのセットは、アイテムの種類によって決まります。 つまり、Exchange マネージ API の [Item.Bind](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) メソッドを使用してアイテムをバインドすると、バインドするアイテムの種類によって異なるプロパティのセットを取得します。 予定表アイテムへのバインドでは、連絡先アイテムへのバインドとは異なるプロパティのセットが返されます。 同様に、EWS を使用している場合、[GetItem 操作](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx)は返されるアイテムの種類に応じて異なるプロパティ セットを返します。 
+Exchange Online、Office 365 の一部である Exchange Online、または Exchange 2013 以降の Excahange バージョンから返されるデータの管理を容易にするために、EWS マネージ API はプロパティ セットを使用し、EWS は応答の図形を使用します。 これらは、ストア アイテムの最も一般的なプロパティを提供する事前定義されたコレクションです。 返されるプロパティのセットは、アイテムの種類によって決まります。 つまり、Exchange マネージ API の [Item.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) メソッドを使用してアイテムをバインドすると、バインドするアイテムの種類によって異なるプロパティのセットを取得します。 予定表アイテムへのバインドでは、連絡先アイテムへのバインドとは異なるプロパティのセットが返されます。 同様に、EWS を使用している場合、[GetItem 操作](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx)は返されるアイテムの種類に応じて異なるプロパティ セットを返します。 
   
-[Folder.Bind](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) メソッドでフォルダーをバインドしたり、[GetFolder 操作](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) を使用したりしても、要求したフォルダーに応じて異なるプロパティ セットが返されます。 
+[Folder.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) メソッドでフォルダーをバインドしたり、[GetFolder 操作](https://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) を使用したりしても、要求したフォルダーに応じて異なるプロパティ セットが返されます。 
   
 **表 1. 事前定義された応答の図形**
 
 |**応答の図形**|**EWS マネージ API の同等物**|**説明**|
 |:-----|:-----|:-----|
-|ID のみ  <br/> |[BasePropertySet.IdOnly](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.basepropertyset%28v=exchg.80%29.aspx) <br/> |アイテムまたはフォルダーの ID のみを返します。ほとんどのアプリケーションは、この応答の図形を使用し、さらに必要なプロパティを指定します。  <br/> |
+|ID のみ  <br/> |[BasePropertySet.IdOnly](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.basepropertyset%28v=exchg.80%29.aspx) <br/> |アイテムまたはフォルダーの ID のみを返します。ほとんどのアプリケーションは、この応答の図形を使用し、さらに必要なプロパティを指定します。  <br/> |
 |既定値  <br/> |該当なし  <br/> |アイテムまたはフォルダー (EWS のみ) の既定である事前定義プロパティ セットを返します。  <br/> |
-|すべてのプロパティ  <br/> |[BasePropertySet.FirstClassProperties](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.basepropertyset%28v=exchg.80%29.aspx) <br/> |クライアント アプリケーションで最も頻繁に使用されるプロパティを返します。プロパティ パスを使用して追加のプロパティを返すことができます。  <br/> |
+|すべてのプロパティ  <br/> |[BasePropertySet.FirstClassProperties](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.basepropertyset%28v=exchg.80%29.aspx) <br/> |クライアント アプリケーションで最も頻繁に使用されるプロパティを返します。プロパティ パスを使用して追加のプロパティを返すことができます。  <br/> |
    
 ## <a name="default-response-shapes"></a>既定の応答の図形
 
 EWS には、フォルダーまたはフォルダー アイテムの既定の応答の図形セットが含まれています。 
   
-次の表は、[FindFolder](http://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx) と [GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) の EWS 操作によって、フォルダーごとに返される既定のプロパティを示します。 
+次の表は、[FindFolder](https://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx) と [GetFolder](https://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) の EWS 操作によって、フォルダーごとに返される既定のプロパティを示します。 
   
 **表 2. 既定のフォルダーのプロパティ**
 
-|**プロパティ**|**受信トレイ**|**予定表**|**連絡先**|**削除済みアイテム**|**下書き**|**メモ**|**その他のフォルダー**|**送信トレイ**|
+|**Property**|**受信トレイ**|**予定表**|**連絡先**|**削除済みアイテム**|**下書き**|**メモ**|**その他のフォルダー**|**送信トレイ**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 |表示名  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |
 |フォルダー ID  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |
@@ -47,7 +47,7 @@ EWS には、フォルダーまたはフォルダー アイテムの既定の応
 |総件数  <br/> |X  <br/> ||X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |
 |未読件数  <br/> |X  <br/> |||X  <br/> |X  <br/> ||X  <br/> |X  <br/> |
    
-次の表は、[FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) と [GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) の EWS 操作によってアイテムの種類ごとに返される既定のプロパティを示します。 
+次の表は、[FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) と [GetItem](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) の EWS 操作によってアイテムの種類ごとに返される既定のプロパティを示します。 
   
 **表 3. 既定のアイテム プロパティ**
 
@@ -91,7 +91,7 @@ EWS には、フォルダーまたはフォルダー アイテムの既定の応
     
 ### <a name="all-properties-set-and-response-shape"></a>すべてのプロパティ セットと応答の図形
 
-次の表では、EWS マネージ API の [Item.Bind](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) メソッドと [Item.FindItems](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) メソッドを呼び出して返されるファースト クラスのプロパティ、および [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) と [GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) の EWS 操作により返される、「すべてのプロパティ」の応答の図形を示しています。 
+次の表では、EWS マネージ API の [Item.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) メソッドと [Item.FindItems](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) メソッドを呼び出して返されるファースト クラスのプロパティ、および [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) と [GetItem](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) の EWS 操作により返される、「すべてのプロパティ」の応答の図形を示しています。 
   
 プロパティ セットにさらにプロパティを追加したり、拡張プロパティを含めたりすることができます。 詳細については、「[Exchange における EWS のプロパティと拡張プロパティ](properties-and-extended-properties-in-ews-in-exchange.md)」をご参照ください。
   
@@ -137,7 +137,7 @@ EWS には、フォルダーまたはフォルダー アイテムの既定の応
 |DateTimeStamp  <br/> |x  <br/> |||||
 |DelegationState  <br/> |||||x  <br/> |
 |Delegator  <br/> |||||x  <br/> |
-|DeletedOccurances  <br/> |x  <br/> |||||
+|DeletedOccurrences  <br/> |x  <br/> |||||
 |Department  <br/> ||x  <br/> ||||
 |DirectoryId  <br/> ||x  <br/> ||||
 |DirectReports  <br/> ||x  <br/> ||||
@@ -152,7 +152,7 @@ EWS には、フォルダーまたはフォルダー アイテムの既定の応
 |EndTimeZone  <br/> |x  <br/> |||||
 |FileAs  <br/> ||x  <br/> ||||
 |FileAsMapping  <br/> ||x  <br/> ||||
-|FirstOccurance  <br/> |x  <br/> |||||
+|FirstOccurrence  <br/> |x  <br/> |||||
 |接続元  <br/> |||x  <br/> |x  <br/> ||
 |Generation  <br/> ||x  <br/> ||||
 |GivenName  <br/> ||x  <br/> ||||
@@ -245,18 +245,18 @@ EWS には、フォルダーまたはフォルダー アイテムの既定の応
    
 注:
   
-1. [アイテムへバインド](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx)するとき、および [GetItem 操作](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx)からの応答に含まれます。 [Item.FindItems](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) メソッドの結果や [FindItem 操作](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)からの応答には含まれません。
+1. [アイテムへバインド](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx)するとき、および [GetItem 操作](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx)からの応答に含まれます。 [Item.FindItems](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) メソッドの結果や [FindItem 操作](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)からの応答には含まれません。
     
 ## <a name="see-also"></a>関連項目
 
 - [Exchange の Web サービス クライアントを開発する](develop-web-service-clients-for-exchange.md)
     
-- [FindItem 操作](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)
+- [FindItem 操作](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)
     
-- [GetItem 操作](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx)
+- [GetItem 操作](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx)
     
-- [FindFolder 操作](http://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx)
+- [FindFolder 操作](https://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx)
     
-- [GetFolder 操作](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx)
+- [GetFolder 操作](https://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx)
     
 

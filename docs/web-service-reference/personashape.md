@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 61d87cd5-3270-40d1-bab7-d0d5bf938607
-description: PersonaShape 要素は、ペルソナの FindPeople 要求から返されるプロパティのセットを指定します。
-ms.openlocfilehash: f974c62c3c255a58d28ec716ffb34dc8964d1cfe
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: PersonaShape 要素は、FindPeople 要求から返される一連のペルソナプロパティを指定します。
+ms.openlocfilehash: 49cbae714a3b854496dc91ea6102f4b676623690
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832743"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457572"
 ---
 # <a name="personashape"></a>PersonaShape
 
-**PersonaShape**要素は、ペルソナの**FindPeople**要求から返されるプロパティのセットを指定します。 
+**PersonaShape**要素は、 **findpeople**要求から返される一連のペルソナプロパティを指定します。 
   
 ```XML
 <PersonaShape>
@@ -27,7 +27,7 @@ ms.locfileid: "19832743"
 ```
 
  **PersonaResponseShapeType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -37,25 +37,25 @@ ms.locfileid: "19832743"
   
 ### <a name="child-elements"></a>子要素
 
-[BaseShape](baseshape.md) | [AdditionalProperties](additionalproperties.md)
+[Baseshape](baseshape.md)  | [Additionalproperties](additionalproperties.md)
   
 ### <a name="parent-elements"></a>親要素
 
 [FindPeople](findpeople.md)
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
 |空にすることができます。  <br/> |false  <br/> |
    
 

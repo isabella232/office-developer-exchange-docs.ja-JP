@@ -6,24 +6,24 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 630cdbb5-d1c7-422c-924a-abf5738e9e5e
-description: エンドポイント要素は、セキュリティ トークン サービスのエンドポイントを指定します。
-ms.openlocfilehash: 85e1ad785b35649238ac3944f51472addf617c20
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Endpoint 要素は、security token service エンドポイントを指定します。
+ms.openlocfilehash: 93659bbefa4a95063304cf3abad81cb61767070a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760295"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458398"
 ---
 # <a name="endpoint-soap"></a>エンドポイント (SOAP)
 
-**エンドポイント**要素は、セキュリティ トークン サービスのエンドポイントを指定します。 
+**Endpoint**要素は、security token service エンドポイントを指定します。 
   
 ```XML
 <Endpoint/>
 ```
 
- **xs:anyURI**
-## <a name="attributes-and-elements"></a>属性および要素
+ **xs: anyURI**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -39,23 +39,23 @@ ms.locfileid: "19760295"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[TokenIssuer (SOAP)](tokenissuer-soap.md) <br/> |セキュリティ トークン サービスの URI のエンドポイントを指定します。  <br/> |
+|[TokenIssuer (SOAP)](tokenissuer-soap.md) <br/> |セキュリティトークンサービスの URI とエンドポイントを指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、セキュリティ トークンの web サービスのエンドポイントを表します。
+Text 値は、セキュリティトークン web サービスのエンドポイントを表します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-エンドポイントは、セキュリティ トークンの web サービスと通信するために使用されます。
+エンドポイントは、セキュリティトークン web サービスとの通信に使用されます。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|スキーマ名  <br/> |スキーマの自動検出  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|スキーマ名  <br/> |自動検出スキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |はい  <br/> |
    
 

@@ -1,5 +1,5 @@
 ---
-title: (UM web サービス) に接続を切断します。
+title: Disconnect (UM web サービス)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,19 +10,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: 2f8c1e8c-3bd4-4988-96b9-735c347b29f7
-description: 切断要素は、呼び出しの切断要求を定義します。
-ms.openlocfilehash: 764532bdadd69caaa68406c84277197def3160af
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Disconnect 要素は、呼び出しを切断する要求を定義します。
+ms.openlocfilehash: a00d957927a7a97d12c0d8c0c662956a18529cde
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760093"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458454"
 ---
-# <a name="disconnect-um-web-service"></a>(UM web サービス) に接続を切断します。
+# <a name="disconnect-um-web-service"></a>Disconnect (UM web サービス)
 
-**切断**要素は、呼び出しの切断要求を定義します。 
+**Disconnect**要素は、呼び出しを切断する要求を定義します。 
   
-- [(UM web サービス) に接続を切断します。](disconnect-um-web-service.md)
+- [Disconnect (UM web サービス)](disconnect-um-web-service.md)
   
 ```xml
 <Disconnect>
@@ -31,7 +31,7 @@ ms.locfileid: "19760093"
 ```
 
  **complexType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -41,9 +41,9 @@ ms.locfileid: "19760093"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[CallId (UM web サービス)](callid-um-web-service.md) <br/> |切断するのには、呼び出しの id。  <br/> |
+|[CallId (UM web サービス)](callid-um-web-service.md) <br/> |切断する呼び出しの識別子。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -53,19 +53,19 @@ ms.locfileid: "19760093"
 
 なし。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |スキーマ名  <br/> |メッセージ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [操作 (UM web サービス) に接続を切断します。](disconnect-operation-um-web-service.md)  
+- [Disconnect 操作 (UM web サービス)](disconnect-operation-um-web-service.md)  
 - [PlayOnPhone 操作 (UM web サービス)](playonphone-operation-um-web-service.md) 
-- [PlayOnPhoneGreeting 操作 (UM web サービス)](playonphonegreeting-operation-um-web-service.md)  
+- [Playon電話案内応答操作 (UM web サービス)](playonphonegreeting-operation-um-web-service.md)  
 - [CallId (UM web サービス)](callid-um-web-service.md)
 

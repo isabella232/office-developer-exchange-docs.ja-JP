@@ -1,5 +1,5 @@
 ---
-title: ドメイン (メッセージの追跡)
+title: ドメイン (メッセージ追跡)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 4e8e9efa-8885-4ca5-bf90-424e63768dc3
-description: ドメイン要素を検索するドメインを表します。
-ms.openlocfilehash: dc161557b59acc580d918f2e196457714bce4ba9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Domain 要素は、検索対象のドメインを表します。
+ms.openlocfilehash: 77da9028766881b9bc633e1b3318cd4d70c6b72f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760142"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457026"
 ---
-# <a name="domain-message-tracking"></a>ドメイン (メッセージの追跡)
+# <a name="domain-message-tracking"></a>ドメイン (メッセージ追跡)
 
-**ドメイン**要素を検索するドメインを表します。 
+**Domain**要素は、検索対象のドメインを表します。 
   
 ```XML
 <Domain/>
 ```
 
  **NonEmptyStringType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,26 +44,26 @@ ms.locfileid: "19760142"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FindMessageTrackingReport](findmessagetrackingreport.md) <br/> |検索するメッセージの種類の条件が含まれています。  <br/> |
+|[FindMessageTrackingReport](findmessagetrackingreport.md) <br/> |検索するメッセージの種類に関する条件を含みます。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-文字列を表す文字列値は、この要素を使用する場合に必要です。
+この要素を使用する場合は、文字列を表すテキスト値が必要です。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

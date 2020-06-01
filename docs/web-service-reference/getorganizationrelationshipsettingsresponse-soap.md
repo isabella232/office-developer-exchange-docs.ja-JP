@@ -1,22 +1,22 @@
 ---
-title: GetOrganizationRelationshipSettingsResponse (SOAP)
+title: Get組織の Relationshipsettingsresponse (SOAP)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 2f43b817-92c2-4e04-8095-479d790f768c
-description: GetOrganizationRelationshipSettingsResponse 要素には、GetOrganizationRelationshipSettings (SOAP) の操作の応答が含まれています。 GetOrganizationRelationshipSettingsResponse 要素は、内部使用のみ。 クライアントでは、この要素は使用されません。
-ms.openlocfilehash: 907113df2186a93345c6e0bc7dd470909508bd38
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetOrganizationRelationshipSettingsResponse 要素には、Get組織の設定操作 (SOAP) 応答が含まれています。 GetOrganizationRelationshipSettingsResponse 要素は、内部使用のみを対象としています。 この要素はクライアントによって使用されません。
+ms.openlocfilehash: 0f34fbc6577b379dd0ac379564c5e6bbd940d379
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760808"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457922"
 ---
-# <a name="getorganizationrelationshipsettingsresponse-soap"></a>GetOrganizationRelationshipSettingsResponse (SOAP)
+# <a name="getorganizationrelationshipsettingsresponse-soap"></a>Get組織の Relationshipsettingsresponse (SOAP)
 
-**GetOrganizationRelationshipSettingsResponse**要素には、 [GetOrganizationRelationshipSettings 操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)の応答が含まれています。 **GetOrganizationRelationshipSettingsResponse**要素は、内部使用のみ。 クライアントでは、この要素は使用されません。 
+**Getorganizationrelationshipsettingsresponse**要素には、 [Get組織の設定操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)応答が含まれています。 **Getorganizationrelationshipsettingsresponse**要素は、内部使用のみを対象としています。 この要素はクライアントによって使用されません。 
   
 ```XML
 <GetOrganizationRelationshipSettingResponse>
@@ -26,8 +26,8 @@ ms.locfileid: "19760808"
 </GetOrganizationRelationshipSettingResponse>
 ```
 
- **GetOrganizationRelationshipSettingsResponse**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Get組織の Relationshipsettingsresponse**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -37,11 +37,11 @@ ms.locfileid: "19760808"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[エラー コード (SOAP)](errorcode-soap.md) <br/> |自動検出サービスによって返されるエラー コードを表します。  <br/> |
-|[エラー メッセージ (SOAP)](errormessage-soap.md) <br/> |自動検出サービスによって返されるエラー コードに関連付けられているメッセージを表します。  <br/> |
-|[OrganizationRelationshipSettingsCollection (SOAP)](organizationrelationshipsettingscollection-soap.md) <br/> |クエリに一致する組織との関係のコレクションを表します。  <br/> |
+|[ErrorCode (SOAP)](errorcode-soap.md) <br/> |自動検出サービスによって返されるエラーコードを表します。  <br/> |
+|[ErrorMessage (SOAP)](errormessage-soap.md) <br/> |自動検出サービスによって返されるエラーコードに関連付けられているメッセージを表します。  <br/> |
+|[組織/リレーションシップ設定コレクション (SOAP)](organizationrelationshipsettingscollection-soap.md) <br/> |クエリに一致する組織上の関係のコレクションを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -51,18 +51,18 @@ ms.locfileid: "19760808"
 
 なし。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|スキーマ名  <br/> |スキーマの自動検出  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|スキーマ名  <br/> |自動検出スキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[GetOrganizationRelationshipSettings 操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)
+[Get組織の Relationshipsettings 操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)
 

@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 199d1839-f061-4070-a977-874b0c08e5be
 description: IdOfFolderToShare 要素は、共有されるサーバー上のフォルダーの識別子を表します。
-ms.openlocfilehash: 1e3e53819f23bbc5753ac21b9e3ea6593ac4826c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 93a4740d9adefbb35aae071f0a6bfcb4b2021b4d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831853"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457628"
 ---
 # <a name="idoffoldertoshare"></a>IdOfFolderToShare
 
@@ -28,7 +28,7 @@ ms.locfileid: "19831853"
 ```
 
  **FolderIdType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -36,8 +36,8 @@ ms.locfileid: "19831853"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|ID  <br/> |Exchange ストア内のフォルダーを識別する文字列が含まれています。 この属性は、必要があります。  <br/> |
-|ChangeKey  <br/> |Id 属性によって識別されるフォルダーのバージョンを識別する文字列が含まれています。 この属性は、省略可能です。 フォルダーの正しいバージョンを使用するかどうかを確認するには、この属性を使用します。  <br/> |
+|ID  <br/> |Exchange ストア内のフォルダーを識別する文字列を格納します。 この属性は必須です。  <br/> |
+|ChangeKey  <br/> |Id 属性によって識別されるフォルダーのバージョンを識別する文字列を格納します。 この属性は省略可能です。 この属性を使用して、適切なバージョンのフォルダーが使用されていることを確認します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -47,20 +47,20 @@ ms.locfileid: "19831853"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetSharingMetadata](getsharingmetadata.md) <br/> |共有への招待を識別する不透明な認証トークンを取得する要求を定義します。  <br/> |
+|[GetSharingMetadata](getsharingmetadata.md) <br/> |共有への招待を識別する非透過の認証トークンを取得する要求を定義します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Microsoft Exchange Server を実行しているコンピューターの Exchange Web サービスをホストにクライアント アクセス サーバーの役割がインストールされている IIS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -69,5 +69,5 @@ ms.locfileid: "19831853"
 [GetSharingMetadata 操作](getsharingmetadata-operation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

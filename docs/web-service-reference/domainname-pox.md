@@ -1,5 +1,5 @@
 ---
-title: ドメイン名 (POX)
+title: DomainName (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,29 +8,29 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 2b4af2b2-58b5-4f28-9cb3-c07a11377747
-description: ドメイン名の要素は、ユーザーのドメインを指定します。
-ms.openlocfilehash: c38d2e470bd174ab6dd7e5e1dd3eee23daea5e69
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DomainName 要素は、ユーザーのドメインを指定します。
+ms.openlocfilehash: ff38d6a876e396317dedece0a81a9f9f0db0f587
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760150"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458426"
 ---
-# <a name="domainname-pox"></a>ドメイン名 (POX)
+# <a name="domainname-pox"></a>DomainName (POX)
 
-**ドメイン名**の要素は、ユーザーのドメインを指定します。 
+**DomainName**要素は、ユーザーのドメインを指定します。 
   
-- [(POX) を自動検出](autodiscover-pox.md)  
+- [自動検出 (POX)](autodiscover-pox.md)  
 - [応答 (POX)](response-pox.md)  
 - [アカウント (POX)](account-pox.md) 
 - [プロトコル (POX)](protocol-pox.md) 
-- [ドメイン名 (POX)](domainname-pox.md)
+- [DomainName (POX)](domainname-pox.md)
   
 ```xml
 <DomainName/>
 ```
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -46,17 +46,17 @@ ms.locfileid: "19760150"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
+|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、ユーザーのドメインを指定します。
+Text 値は、ユーザーのドメインを指定します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-値が指定されていない場合は、ユーザー プリンシパル名 (UPN) 形式で電子メール アドレスを使用する既定の認証。 例:\<ユーザー名\>@\<ドメイン\>。
+値が指定されていない場合、既定の認証では電子メールアドレスがユーザープリンシパル名 (UPN) 形式として使用されます。 次に例を示します \<Username\> @ \<Domain\> 。
   
 ## <a name="see-also"></a>関連項目
 
-- [交換の POX の自動検出の XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+- [Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
 

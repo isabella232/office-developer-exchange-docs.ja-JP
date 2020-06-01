@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5941a439-94d2-4133-81fc-7240863a13df
 description: Exchange の Exchange 管理シェルの新機能に関する情報を検索します。
-ms.openlocfilehash: 906e078ab6d500a2cb3d364957ffc2fee67a06b4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: bda6607be20f2a21bc22d472d63615d46634d8ab
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759240"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457145"
 ---
 # <a name="new-and-updated-exchange-management-shell-cmdlets"></a>新規および更新された Exchange 管理シェル コマンドレット
 
 Exchange の Exchange 管理シェルの新機能に関する情報を検索します。
   
-**に適用されます:** オンライン交換 |Exchange Server 2013年 |Office 365
+**適用対象:** Exchange Online |Exchange Server 2013 |Office 365
   
 この記事では、新しい Exchange 管理シェル コマンドレット、変更されたコマンドレットに関する情報を提供します。また、Exchange Online、Office 365 の一部としての Exchange Online、オンプレミスの Exchange から削除されたコマンドレットに関する情報を提供します。
   
@@ -29,711 +29,711 @@ Exchange の Exchange 管理シェルの新機能に関する情報を検索し�
 
 ビルド 15.00.0847.032 (Exchange Server 2013 SP1) で次のコマンドレットが導入されました。
   
-- **Get AuthRedirect**
+- **取得-AuthRedirect**
     
-- **新しい-AuthRedirect**
+- **New-AuthRedirect**
     
-- **削除 AuthRedirect**
+- **削除-AuthRedirect**
     
-- **セット AuthRedirect**
+- **Set-AuthRedirect**
     
-- **新しい-DataClassification**
+- **新しい-Datacl/認定**
     
-- **削除 DataClassification**
+- **削除-Datacl/認定**
     
-- **セット DataClassification**
+- **Set-Datacl/認定**
     
-- **新しいフィンガー プリント**
+- **新規-指紋**
     
-- **Get MapiVirtualDirectory\***
+- **MapiVirtualDirectory\***
     
-- **新しい-MapiVirtualDirectory\***
+- **MapiVirtualDirectory\***
     
-- **削除 MapiVirtualDirectory\***
+- **MapiVirtualDirectory\***
     
-- **セット MapiVirtualDirectory\***
+- **MapiVirtualDirectory\***
     
-- **Get OMEConfiguration**
+- **取得-OMEConfiguration 低**
     
-- **セット OMEConfiguration**
+- **設定-OMEConfiguration 設定**
     
-- **Get SmimeConfig**
+- **Get-SmimeConfig**
     
-- **セット SmimeConfig**
+- **Set-SmimeConfig**
     
-- **Get IntraOrganizationConfiguration**
+- **Get-intraorganizationconfiguration**
     
-- **Get IntraOrganizationConnector**
+- **New-intraorganizationconnector**
     
-- **新しい-IntraOrganizationConnector**
+- **New-intraorganizationconnector**
     
-- **削除 IntraOrganizationConnector**
+- **New-intraorganizationconnector**
     
-- **セット IntraOrganizationConnector**
+- **New-intraorganizationconnector**
     
-- **Get HistoricalSearch**
+- **Start-historicalsearch**
     
-- **開始 HistoricalSearch**
+- **Start-historicalsearch**
     
-- **Stop HistoricalSearch**
+- **Start-historicalsearch**
     
 - **新しい-SearchDocumentFormat**
     
-- **削除 SearchDocumentFormat**
+- **削除-SearchDocumentFormat**
     
 ### <a name="updated-cmdlets"></a>更新されたコマンドレット
 
 次のコマンドレットは、ビルド 15.00.0847.032 (Exchange 2013 SP1) で更新されました。
   
-- **Get AuditLogSearch**
+- **取得-AuditLogSearch**
     
-- **Get QuarantineMessage**
+- **Get-quarantinemessage**
     
-- **新しい-InboundConnector**
+- **New-inboundconnector**
     
-- **新しい-MailboxDatabase**
+- **Set-mailboxdatabase**
     
-- **新しい-PublicFolderMoveRequest**
+- **Get-publicfoldermoverequest**
     
-- **新しい-TransportRule**
+- **New-transportrule**
     
-- **セット FrontendTransportService**
+- **Set-FrontendTransportService**
     
-- **セット InboundConnector**
+- **New-inboundconnector**
     
-- **セット-メールボックス**
+- **Set-Mailbox**
     
-- **セット MailboxTransportService**
+- **Set-mailboxtransportservice**
     
-- **セット MoveRequest**
+- **New-moverequest**
     
-- **セット OrganizationConfig**
+- **Set-OrganizationConfig**
     
-- **セット OwaMailboxPolicy**
+- **セット-Owam/Boxpolicy**
     
-- **セット OwaVirtualDirectory**
+- **Set-owavirtualdirectory**
     
-- **セット組織**
+- **設定-TransportConfig**
     
-- **セット TransportRule**
+- **New-transportrule**
     
-- **セット TransportServer**
+- **Set-TransportServer**
     
-- **セット TransportService**
+- **Set-TransportService**
     
-- **テスト MRSHealth**
+- **Test-MRSHealth**
     
-- **テスト OAuthConnectivity**
+- **テスト-OAuthConnectivity**
     
 ### <a name="removed-cmdlets"></a>削除されたコマンドレット
 
 次のコマンドレットは、ビルド 15.00.0847.032 (Exchange 2013 SP1) から削除されました。
   
-- **Get AvailabilityReportOutage**
+- **New-availabilityreportoutage**
     
-- **新しい-AvailabilityReportOutage**
+- **New-availabilityreportoutage**
     
-- **削除 AvailabilityReportOutage**
+- **New-availabilityreportoutage**
     
-- **セット AvailabilityReportOutage**
+- **New-availabilityreportoutage**
     
 ## <a name="new-and-updated-cmdlets-in-exchange-2013"></a>Exchange 2013 の新規コマンドレットと更新されたコマンドレット
 
 ### <a name="new-cmdlets"></a>新規コマンドレット
 <a name="bk_new"> </a>
 
-次のコマンドレットは、Exchange 2013 で導入されました。
+次のコマンドレットが Exchange 2013 で導入されました。
   
-- **Get ActiveSyncDeviceAutoblockThreshold**
+- **ActiveSyncDeviceAutoblockThreshold**
     
-- **セット ActiveSyncDeviceAutoblockThreshold**
+- **ActiveSyncDeviceAutoblockThreshold**
     
-- **無効にするアプリケーション**
+- **Disable-App**
     
-- **有効にするアプリケーション**
+- **Enable-App**
     
-- **取得アプリケーション**
+- **Get-App**
     
-- **新アプリ**
+- **New-App**
     
-- **削除アプリ**
+- **Remove-App**
     
-- **セット アプリケーション**
+- **Set-App**
     
-- **Get AuthConfig**
+- **取得-AuthConfig**
     
-- **セット AuthConfig**
+- **設定-AuthConfig**
     
-- **Get AuthServer**
+- **取得-AuthServer**
     
 - **新しい-AuthServer**
     
-- **削除 AuthServer**
+- **削除-AuthServer**
     
-- **セット AuthServer**
+- **Set-AuthServer**
     
-- **新しい-AvailabilityConfig**
+- **Get-availabilityconfig**
     
-- **削除 AvailabilityConfig**
+- **Get-availabilityconfig**
     
-- **Get CalendarDiagnosticAnalysis**
+- **CalendarDiagnosticAnalysis**
     
-- **Get ClassificationRuleCollection**
+- **Get-classificationrulecollection**
     
-- **新しい-ClassificationRuleCollection**
+- **Get-classificationrulecollection**
     
-- **削除 ClassificationRuleCollection**
+- **Get-classificationrulecollection**
     
-- **セット ClassificationRuleCollection**
+- **Get-classificationrulecollection**
     
-- **Get ConnectSubscription**
+- **取得-ConnectSubscription**
     
 - **新しい-ConnectSubscription**
     
-- **削除 ConnectSubscription**
+- **削除-ConnectSubscription**
     
-- **セット ConnectSubscription**
+- **設定-ConnectSubscription**
     
-- **Get DataClassification**
+- **取得-Datacl/確認**
     
-- **Get DataClassificationConfig**
+- **Get-dataclassificationconfig**
     
-- **Get DlpPolicy**
+- **取得-DlpPolicy**
     
-- **新しい-DlpPolicy**
+- **新-DlpPolicy**
     
-- **削除 DlpPolicy**
+- **削除-DlpPolicy**
     
-- **セット DlpPolicy**
+- **設定-DlpPolicy**
     
-- **エクスポート DlpPolicyCollection**
+- **Export-DlpPolicyCollection**
     
-- **インポート-DlpPolicyCollection**
+- **Import-DlpPolicyCollection**
     
-- **Get DlpPolicyTemplate**
+- **Remove-dlppolicytemplate**
     
-- **インポート-DlpPolicyTemplate**
+- **Remove-dlppolicytemplate**
     
-- **削除 DlpPolicyTemplate**
+- **Remove-dlppolicytemplate**
     
-- **Get ExchangeServerAccessLicense**
+- **ExchangeServerAccessLicense**
     
-- **Get ExchangeServerAccessLicenseUser**
+- **ExchangeServerAccessLicenseUser**
     
-- **Get FfoMigrationReport**
+- **FfoMigrationReport**
     
-- **Get FrontendTransportService**
+- **Get-FrontendTransportService**
     
-- **セット FrontendTransportService**
+- **Set-FrontendTransportService**
     
-- **追加 GlobalMonitoringOverride**
+- **追加-GlobalMonitoringOverride**
     
-- **Get GlobalMonitoringOverride**
+- **取得-GlobalMonitoringOverride**
     
-- **削除 GlobalMonitoringOverride**
+- **削除-GlobalMonitoringOverride**
     
-- **Get GroupActivityReport**
+- **Get-GroupActivityReport**
     
-- **Get HealthReport**
+- **HealthReport**
     
-- **Get HostedConnectionFilterPolicy**
+- **Remove-hostedconnectionfilterpolicy**
     
-- **新しい-HostedConnectionFilterPolicy**
+- **Remove-hostedconnectionfilterpolicy**
     
-- **削除 HostedConnectionFilterPolicy**
+- **Remove-hostedconnectionfilterpolicy**
     
-- **セット HostedConnectionFilterPolicy**
+- **Remove-hostedconnectionfilterpolicy**
     
-- **Get HostedContentFilterPolicy**
+- **Set-hostedcontentfilterpolicy**
     
-- **新しい-HostedContentFilterPolicy**
+- **Set-hostedcontentfilterpolicy**
     
-- **削除 HostedContentFilterPolicy**
+- **Set-hostedcontentfilterpolicy**
     
-- **セット HostedContentFilterPolicy**
+- **Set-hostedcontentfilterpolicy**
     
-- **Get HostedOutboundSpamFilterPolicy**
+- **HostedOutboundSpamFilterPolicy**
     
-- **セット HostedOutboundSpamFilterPolicy**
+- **HostedOutboundSpamFilterPolicy**
     
-- **削除 HybridConfiguration**
+- **HybridConfiguration**
     
-- **Get HybridMailflow**
+- **Get-hybridmailflow**
     
-- **セット HybridMailflow**
+- **Get-hybridmailflow**
     
-- **Get HybridMailflowDatacenterIPs**
+- **HybridMailflowDatacenterIPs**
     
-- **Get InboundConnector**
+- **New-inboundconnector**
     
-- **新しい-InboundConnector**
+- **New-inboundconnector**
     
-- **削除 InboundConnector**
+- **New-inboundconnector**
     
-- **セット InboundConnector**
+- **New-inboundconnector**
     
-- **Get MailboxActivityReport**
+- **Get-mailboxactivityreport**
     
-- **無効にする MailboxQuarantine**
+- **MailboxQuarantine**
     
-- **有効にする MailboxQuarantine**
+- **MailboxQuarantine**
     
-- **Get MailboxTransportService**
+- **Set-mailboxtransportservice**
     
-- **セット MailboxTransportService**
+- **Set-mailboxtransportservice**
     
-- **Get MailDetailDlpPolicyReport**
+- **Get-MailDetailDlpPolicyReport**
     
-- **Get MailDetailMalwareReport**
+- **Get-maildetailmalwarereport**
     
-- **Get MailDetailReport**
+- **取得-MailDetailReport**
     
-- **Get MailDetailSpamReport**
+- **Get-maildetailspamreport**
     
-- **Get MailDetailTransportRuleReport**
+- **Get-maildetailtransportrulereport**
     
-- **Get MailFilterListReport**
+- **Get-MailFilterListReport**
     
-- **Get MailTrafficPolicyReport**
+- **Get-mailtrafficpolicyreport**
     
-- **Get MailTrafficReport**
+- **Get-mailtrafficreport**
     
-- **Get MailTrafficSummaryReport**
+- **Get-mailtrafficsummaryreport**
     
-- **Get MailTrafficTopReport**
+- **Get-mailtraffictopreport**
     
-- **Get MalwareFilteringServer**
+- **Set-malwarefilteringserver**
     
-- **セット MalwareFilteringServer**
+- **Set-malwarefilteringserver**
     
-- **Get MalwareFilterPolicy**
+- **New-malwarefilterpolicy**
     
-- **新しい-MalwareFilterPolicy**
+- **New-malwarefilterpolicy**
     
-- **削除 MalwareFilterPolicy**
+- **New-malwarefilterpolicy**
     
-- **セット MalwareFilterPolicy**
+- **New-malwarefilterpolicy**
     
-- **Get MalwareFilterRecoveryItem**
+- **MalwareFilterRecoveryItem**
     
-- **削除 MalwareFilterRecoveryItem**
+- **MalwareFilterRecoveryItem**
     
-- **再開 MalwareFilterRecoveryItem**
+- **MalwareFilterRecoveryItem**
     
-- **送信 MapiSubmitSystemProbe**
+- **MapiSubmitSystemProbe**
     
-- **"リダイレクト"メッセージ**
+- **Redirect-Message**
     
-- **Get MessageTrace**
+- **メッセージトレースの取得**
     
-- **Get MessageTraceDetail**
+- **MessageTraceDetail の取得**
     
-- **完了 MigrationBatch**
+- **完了-New-migrationbatch**
     
-- **削除 MigrationBatch**
+- **New-migrationbatch**
     
-- **Get MigrationConfig**
+- **は、get-migrationconfig**
     
-- **セット MigrationConfig**
+- **は、get-migrationconfig**
     
-- **Get MigrationEndpoint**
+- **New-migrationendpoint**
     
-- **新しい-MigrationEndpoint**
+- **New-migrationendpoint**
     
-- **削除 MigrationEndpoint**
+- **New-migrationendpoint**
     
-- **セット MigrationEndpoint**
+- **New-migrationendpoint**
     
-- **Get MigrationStatistics**
+- **MigrationStatistics**
     
-- **Get MigrationUser**
+- **MigrationUser**
     
-- **削除 MigrationUser**
+- **MigrationUser**
     
-- **Get MigrationUserStatistics**
+- **Get-migrationuserstatistics**
     
-- **クリア MobileDevice**
+- **Clear-mobiledevice**
     
-- **Get MobileDevice**
+- **Get-MobileDevice**
     
-- **削除 MobileDevice**
+- **Clear-mobiledevice**
     
-- **Get MobileDeviceMailboxPolicy**
+- **New-mobiledevicemailboxpolicy**
     
-- **新しい-MobileDeviceMailboxPolicy**
+- **New-mobiledevicemailboxpolicy**
     
-- **削除 MobileDeviceMailboxPolicy**
+- **New-mobiledevicemailboxpolicy**
     
-- **セット MobileDeviceMailboxPolicy**
+- **New-mobiledevicemailboxpolicy**
     
-- **Get MobileDeviceStatistics**
+- **MobileDeviceStatistics**
     
-- **Get MonitoringItemHelp**
+- **取得-MonitoringItemHelp**
     
-- **Get MonitoringItemIdentity**
+- **取得-MonitoringItemIdentity**
     
-- **呼び出す MonitoringProbe**
+- **呼び出し-MonitoringProbe**
     
-- **取得通知**
+- **取得-通知**
     
-- **設定通知**
+- **設定-通知**
     
-- **テスト OAuthConnectivity**
+- **テスト-OAuthConnectivity**
     
-- **Get OnPremisesOrganization**
+- **OnPremisesOrganization**
     
-- **新しい-OnPremisesOrganization**
+- **OnPremisesOrganization**
     
-- **削除 OnPremisesOrganization**
+- **OnPremisesOrganization**
     
-- **セット OnPremisesOrganization**
+- **OnPremisesOrganization**
     
-- **有効にする OrganizationCustomization**
+- **組織のカスタマイズを有効にする**
     
-- **Get OutboundConnector**
+- **取得-OutboundConnector**
     
 - **新しい-OutboundConnector**
     
-- **削除 OutboundConnector**
+- **-OutboundConnector の削除**
     
-- **セット OutboundConnector**
+- **設定-OutboundConnector**
     
-- **Get PartnerApplication**
+- **PartnerApplication の取得**
     
-- **新しい-PartnerApplication**
+- **新しいパートナーアプリケーション**
     
-- **削除 PartnerApplication**
+- **削除-パートナーアプリケーション**
     
-- **セット PartnerApplication**
+- **セットパートナーアプリケーション**
     
-- **Get PendingFederatedDomain**
+- **Get-pendingfederateddomain**
     
-- **セット PendingFederatedDomain**
+- **Get-pendingfederateddomain**
     
-- **Get PolicyTipConfig**
+- **取得-ポリシーヒント Config**
     
-- **新しい-PolicyTipConfig**
+- **新しいポリシーヒントの構成**
     
-- **削除 PolicyTipConfig**
+- **削除-ポリシーヒント Config**
     
-- **セット PolicyTipConfig**
+- **設定-ポリシーヒント Config**
     
-- **ダンプ ProvisioningCache**
+- **ダンプ-プロビジョニングキャッシュ**
     
-- **リセット ProvisioningCache**
+- **リセット-プロビジョニングキャッシュ**
     
-- **更新 PublicFolderMailbox**
+- **Update-PublicFolderMailbox**
     
-- **Get PublicFolderMailboxDiagnostics**
+- **PublicFolderMailboxDiagnostics**
     
-- **Get PublicFolderMigrationRequest**
+- **Set-publicfoldermigrationrequest**
     
-- **新しい-PublicFolderMigrationRequest**
+- **Set-publicfoldermigrationrequest**
     
-- **削除 PublicFolderMigrationRequest**
+- **Set-publicfoldermigrationrequest**
     
-- **再開 PublicFolderMigrationRequest**
+- **Set-publicfoldermigrationrequest**
     
-- **セット PublicFolderMigrationRequest**
+- **Set-publicfoldermigrationrequest**
     
-- **中断 PublicFolderMigrationRequest**
+- **Set-publicfoldermigrationrequest**
     
-- **Get PublicFolderMigrationRequestStatistics**
+- **PublicFolderMigrationRequestStatistics**
     
-- **Get QuarantineMessage**
+- **Get-quarantinemessage**
     
-- **リリース QuarantineMessage**
+- **Get-quarantinemessage**
     
-- **Get QueueDigest**
+- **Get-queuedigest**
     
-- **Get ResourcePolicy**
+- **取得-ResourcePolicy**
     
 - **新しい-ResourcePolicy**
     
-- **削除 ResourcePolicy**
+- **削除-ResourcePolicy**
     
-- **セット ResourcePolicy**
+- **設定-ResourcePolicy**
     
-- **追加 ResubmitRequest**
+- **追加-ResubmitRequest**
     
-- **Get ResubmitRequest**
+- **Get-ResubmitRequest**
     
-- **削除 ResubmitRequest**
+- **削除-ResubmitRequest**
     
-- **セット ResubmitRequest**
+- **設定-ResubmitRequest**
     
-- **Get ServerComponentState**
+- **取得-ServerComponentState**
     
-- **セット ServerComponentState**
+- **Set-ServerComponentState**
     
-- **Get ServerHealth**
+- **取得-ServerHealth**
     
-- **セット ServerMonitor**
+- **Set-ServerMonitor**
     
-- **追加 ServerMonitoringOverride**
+- **追加-ServerMonitoringOverride**
     
-- **Get ServerMonitoringOverride**
+- **取得-ServerMonitoringOverride**
     
-- **Get SiteMailbox**
+- **SiteMailbox**
     
-- **新しい-SiteMailbox**
+- **SiteMailbox**
     
-- **セット SiteMailbox**
+- **SiteMailbox**
     
-- **テスト SiteMailbox**
+- **SiteMailbox**
     
-- **更新 SiteMailbox**
+- **SiteMailbox**
     
-- **Get SiteMailboxDiagnostics**
+- **Get-SiteMailboxDiagnostics**
     
-- **Get SiteMailboxProvisioningPolicy**
+- **Get-Sitemailboxプロビジョニングポリシー**
     
-- **新しい-SiteMailboxProvisioningPolicy**
+- **新しい-Sitemailboxプロビジョニングポリシー**
     
-- **削除 SiteMailboxProvisioningPolicy**
+- **削除-Sitemailboxプロビジョニングポリシー**
     
-- **セット SiteMailboxProvisioningPolicy**
+- **設定-Sitemailboxプロビジョニングポリシー**
     
-- **[元に戻す-SoftDeletedMailbox**
+- **元に戻す-SoftDeletedMailbox**
     
-- **Get StaleMailboxDetailReport**
+- **Get-stalemailboxdetailreport**
     
-- **Get StaleMailboxReport**
+- **Get-stalemailboxreport**
     
-- **更新 StoreMailboxState**
+- **更新-StoreMailboxState**
     
-- **新しい-SyncMailPublicFolder**
+- **SyncMailPublicFolder**
     
-- **Get TransportService**
+- **取得-TransportService**
     
-- **セット TransportService**
+- **Set-TransportService**
     
-- **無効にする UMCallAnsweringRule**
+- **Enable-umcallansweringrule**
     
-- **有効にする UMCallAnsweringRule**
+- **Enable-umcallansweringrule**
     
-- **Get UMCallAnsweringRule**
+- **Enable-umcallansweringrule**
     
-- **新しい-UMCallAnsweringRule**
+- **Enable-umcallansweringrule**
     
-- **削除 UMCallAnsweringRule**
+- **Enable-umcallansweringrule**
     
-- **セット UMCallAnsweringRule**
+- **Enable-umcallansweringrule**
     
-- **Get UMCallRouterSettings**
+- **Get-UMCallRouterSettings**
     
-- **セット UMCallRouterSettings**
+- **Set-UMCallRouterSettings**
     
-- **無効にする UMService**
+- **Disable-UMService**
     
-- **有効にする UMService**
+- **Enable-UMService**
     
-- **Get UMService**
+- **Get-UMService**
     
-- **セット UMService**
+- **Set-UMService**
     
-- **Get UserPhoto**
+- **Get-UserPhoto**
     
-- **削除 UserPhoto**
+- **Remove-UserPhoto**
     
-- **セット UserPhoto**
+- **Set-UserPhoto**
     
-- **Get WorkloadManagementPolicy**
+- **WorkloadManagementPolicy**
     
-- **新しい-WorkloadManagementPolicy**
+- **WorkloadManagementPolicy**
     
-- **削除 WorkloadManagementPolicy**
+- **WorkloadManagementPolicy**
     
-- **Get WorkloadPolicy**
+- **Get-workloadpolicy**
     
-- **新しい-WorkloadPolicy**
+- **Get-workloadpolicy**
     
-- **削除 WorkloadPolicy**
+- **Get-workloadpolicy**
     
-- **セット WorkloadPolicy**
+- **Get-workloadpolicy**
     
 ### <a name="modified-cmdlets"></a>変更されたコマンドレット
 <a name="bk_update"> </a>
 
 Exchange 2013 では、次のコマンドレットの入力または出力の種類が変更されました。
   
-- **クリア ActiveSyncDevice**
+- **Clear-activesyncdevice**
     
-- **削除 ActiveSyncDevice**
+- **Clear-activesyncdevice**
     
-- **Get ActiveSyncMailboxPolicy**
+- **New-activesyncmailboxpolicy**
     
-- **新しい-ActiveSyncMailboxPolicy**
+- **New-activesyncmailboxpolicy**
     
-- **新しい-ActiveSyncVirtualDirectory**
+- **Set-activesyncvirtualdirectory**
     
-- **新しい-AutodiscoverVirtualDirectory**
+- **New-autodiscovervirtualdirectory**
     
-- **セット AvailabilityConfig**
+- **Get-availabilityconfig**
     
-- **有効にする ExchangeCertificate**
+- **Get-exchangecertificate**
     
-- **エクスポート ExchangeCertificate**
+- **Get-exchangecertificate**
     
-- **します**
+- **Get-exchangecertificate**
     
-- **削除 ExchangeCertificate**
+- **Get-exchangecertificate**
     
-- **Get FailedContentIndexDocuments**
+- **取得-失敗 Contentindexdocuments**
     
-- **Get FederationInformation**
+- **Get-federationinformation**
     
-- **新しい-HybridConfiguration**
+- **HybridConfiguration**
     
-- **セット HybridConfiguration**
+- **HybridConfiguration**
     
-- **新しいメールボックス**
+- **New-Mailbox**
     
-- **再開 MailboxDatabaseCopy**
+- **Update-mailboxdatabasecopy**
     
-- **セット MailboxDatabaseCopy**
+- **Update-mailboxdatabasecopy**
     
-- **中断 MailboxDatabaseCopy**
+- **Update-mailboxdatabasecopy**
     
-- **更新 MailboxDatabaseCopy**
+- **Update-MailboxDatabaseCopy**
     
-- **Get MailboxExportRequest**
+- **New-mailboxexportrequest**
     
-- **セット MailboxExportRequest**
+- **New-mailboxexportrequest**
     
-- **追加 MailboxFolderPermission**
+- **Add-mailboxfolderpermission**
     
-- **削除 MailboxFolderPermission**
+- **Add-mailboxfolderpermission**
     
-- **セット MailboxFolderPermission**
+- **Add-mailboxfolderpermission**
     
-- **Get MailboxImportRequest**
+- **New-mailboximportrequest**
     
-- **セット MailboxImportRequest**
+- **New-mailboximportrequest**
     
-- **Get MailboxRestoreRequest**
+- **Get-mailboxrestorerequest**
     
-- **セット MailboxRestoreRequest**
+- **Get-mailboxrestorerequest**
     
-- **Get MailboxSearch**
+- **Get-mailboxsearch**
     
-- **削除 MailboxSearch**
+- **Get-mailboxsearch**
     
-- **セット MailboxSearch**
+- **Set-MailboxSearch**
     
-- **開始 MailboxSearch**
+- **Start-MailboxSearch**
     
-- **Stop MailboxSearch**
+- **Stop-MailboxSearch**
     
-- **無効にする MailPublicFolder**
+- **Set-mailpublicfolder**
     
-- **Get MailPublicFolder**
+- **Get-MailPublicFolder**
     
-- **セット MailPublicFolder**
+- **Set-mailpublicfolder**
     
-- **Get MigrationBatch**
+- **New-migrationbatch**
     
-- **新しい-MigrationBatch**
+- **New-MigrationBatch**
     
-- **セット MigrationBatch**
+- **New-migrationbatch**
     
-- **テスト MigrationServerAvailability**
+- **Test-migrationserveravailability**
     
-- **Get MoveRequest**
+- **New-moverequest**
     
-- **新しい-OfflineAddressBook**
+- **Update-offlineaddressbook**
     
-- **Get OrganizationConfig**
+- **Get-OrganizationConfig**
     
-- **セット OrganizationConfig**
+- **Set-OrganizationConfig**
     
-- **テスト OutlookConnectivity**
+- **テスト-OutlookConnectivity**
     
-- **テスト OutlookWebServices**
+- **テスト-OutlookWebServices 方法**
     
-- **Get OwaMailboxPolicy**
+- **取得-Owam/Boxpolicy**
     
-- **OwaVirtualDirectory で新しい**
+- **Set-owavirtualdirectory**
     
-- **新しい-PowerShellVirtualDirectory**
+- **Get-powershellvirtualdirectory**
     
-- **パブリック フォルダーの取得**
+- **New-publicfolder**
     
-- **新しいパブリック フォルダー**
+- **New-publicfolder**
     
-- **パブリック フォルダーの設定**
+- **New-publicfolder**
     
-- **追加 PublicFolderClientPermission**
+- **Add-PublicFolderClientPermission**
     
-- **Get PublicFolderClientPermission**
+- **Get-PublicFolderClientPermission**
     
-- **削除 PublicFolderClientPermission**
+- **Remove-PublicFolderClientPermission**
     
-- **Get PublicFolderItemStatistics**
+- **取得-PublicFolderItemStatistics**
     
-- **Get PublicFolderStatistics**
+- **Get-PublicFolderStatistics**
     
-- **受信者の取得**
+- **Get-Recipient**
     
-- **Resourceconfig とのセット**
+- **Set-ResourceConfig**
     
-- **テスト WebServicesConnectivity**
+- **テスト-Webサービス接続**
     
-- **新しい-WebServicesVirtualDirectory**
+- **Set-webservicesvirtualdirectory**
     
 ### <a name="removed-cmdlets"></a>削除されたコマンドレット
 <a name="bk_removed"> </a>
 
-次のコマンドレットは、Exchange 2013 から削除されました。
+次のコマンドレットが Exchange 2013 から削除されました。
   
-- **更新 FileDistributionService**
+- **FileDistributionService**
     
-- **復元メールボックス**
+- **復元-メールボックス**
     
-- **クリーニング MailboxDatabase**
+- **Set-mailboxdatabase**
     
-- **移行が完了**
+- **完全移行**
     
-- **Get MigrationStatus**
+- **MigrationStatus**
     
-- **パブリック フォルダーの更新**
+- **New-publicfolder**
     
-- **追加 PublicFolderAdministrativePermission**
+- **Add-publicfolderadministrativepermission**
     
-- **Get PublicFolderAdministrativePermission**
+- **Add-publicfolderadministrativepermission**
     
-- **削除 PublicFolderAdministrativePermission**
+- **Add-publicfolderadministrativepermission**
     
 - **新しい-PublicFolderDatabase**
     
-- **削除 PublicFolderDatabase**
+- **削除-PublicFolderDatabase**
     
-- **セット PublicFolderDatabase**
+- **Set-PublicFolderDatabase**
     
-- **新しい-PublicFolderDatabaseRepairRequest**
+- **PublicFolderDatabaseRepairRequest**
     
-- **更新 PublicFolderHierarchy**
+- **更新-PublicFolderHierarchy**
     
-- **再開 PublicFolderReplication**
+- **Resume-PublicFolderReplication**
     
-- **中断 PublicFolderReplication**
+- **Suspend-PublicFolderReplication**
     
-- **開始 RetentionAutoTagLearning**
+- **RetentionAutoTagLearning**
     
-- **テスト SystemHealth**
+- **テスト-SystemHealth**
     
-- **無効にする UMServer**
+- **Disable-UMServer**
     
-- **有効にする UMServer**
+- **Enable-UMServer**
     
-- **Get UMServer**
+- **取得-UMServer**
     
-- **セット UMServer**
+- **Set-UMServer**
     
 ## <a name="see-also"></a>関連項目
 
-- [Exchange 管理シェル コマンドレットの入力と出力タイプ](exchange-management-shell-cmdlet-input-and-output-types.md)    
-- [Exchange 管理シェルを使用してメール ユーザーの一覧を取得します。](how-to-get-a-list-of-mail-users-by-using-the-exchange-management-shell.md)    
-- [Exchange 2013 コマンドレット](http://technet.microsoft.com/en-us/library/bb124413%28v=exchg.150%29.aspx)
+- [Exchange 管理シェル コマンドレットの入力と出力の種類](exchange-management-shell-cmdlet-input-and-output-types.md)    
+- [Exchange 管理シェルを使用してメールユーザーの一覧を取得する](how-to-get-a-list-of-mail-users-by-using-the-exchange-management-shell.md)    
+- [Exchange 2013 cmdlets](https://technet.microsoft.com/library/bb124413%28v=exchg.150%29.aspx)
     
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 43d0c1cb-92ca-4399-9b3a-acb2b5c22624
-description: DeleteAttachment 要素は、Exchange ストアからの添付ファイルを削除する要求のルート要素です。
-ms.openlocfilehash: 2beedd647febf025f6e3140ec37b196c9aeb7611
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DeleteAttachment 要素は、Exchange ストアから添付ファイルを削除する要求のルート要素です。
+ms.openlocfilehash: ae8dd5abc1dced2645e579a62f1f57a66cbc9877
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759960"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457348"
 ---
 # <a name="deleteattachment"></a>DeleteAttachment
 
-**DeleteAttachment**要素は、Exchange ストアからの添付ファイルを削除する要求のルート要素です。 
+**Deleteattachment**要素は、Exchange ストアから添付ファイルを削除する要求のルート要素です。 
   
 ```xml
 <DeleteAttachment>
@@ -31,7 +31,7 @@ ms.locfileid: "19759960"
 
 **DeleteAttachmentType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -41,26 +41,26 @@ ms.locfileid: "19759960"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[AttachmentIds](attachmentids.md) <br/> |添付ファイルを削除するのには使用されている添付ファイルの識別子の配列が含まれています。  <br/> |
+|[AttachmentIds](attachmentids.md) <br/> |添付ファイルの削除に使用される添付ファイル識別子の配列が含まれています。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

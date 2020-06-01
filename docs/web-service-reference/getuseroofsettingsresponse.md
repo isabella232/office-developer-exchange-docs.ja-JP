@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 011cb38b-da3c-4b1b-8836-a6b212b511f6
-description: GetUserOofSettingsResponse 要素には、応答メッセージと、ユーザーの Office (OOF) の設定が含まれています。
-ms.openlocfilehash: dc63b6d54471973ce5961a5a5ad6a23f6521fc0e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetUserOofSettingsResponse 要素には、応答メッセージと、ユーザーの不在時 (OOF) の設定が含まれています。
+ms.openlocfilehash: f7f28c67fd36630ffb5294ab35c0fef2f467ba22
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831693"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457817"
 ---
 # <a name="getuseroofsettingsresponse"></a>GetUserOofSettingsResponse
 
-**GetUserOofSettingsResponse**要素には、応答メッセージと、ユーザーの Office (OOF) の設定が含まれています。 
+**Getuseroofsettingsresponse**要素には、応答メッセージと、ユーザーの不在時 (OOF) の設定が含まれています。 
   
 ```xml
 <GetUserOofSettingsResponse>
@@ -32,7 +32,7 @@ ms.locfileid: "19831693"
 ```
 
  **GetUserOofSettingsResponse**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,28 +42,28 @@ ms.locfileid: "19831693"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[ResponseMessage](responsemessage.md) <br/> |応答ステータスに関する説明情報を提供します。  <br/> |
-|[OofSettings](oofsettings.md) <br/> |不在の設定が含まれています。  <br/> |
-|[AllowExternalOof](allowexternaloof.md) <br/> |外部の OOF メッセージを送信するを識別する値が含まれています。  <br/> |
+|[ResponseMessage](responsemessage.md) <br/> |応答状態に関する説明情報を提供します。  <br/> |
+|[OofSettings](oofsettings.md) <br/> |不在時の設定が含まれます。  <br/> |
+|[AllowExternalOof](allowexternaloof.md) <br/> |外部の OOF メッセージが送信されるユーザーを識別する値を格納します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

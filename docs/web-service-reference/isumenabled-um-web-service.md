@@ -10,24 +10,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 33810bbd-837f-4a71-9ed9-cb4b8c52186d
-description: IsUMEnabled 要素は、ユニファイド メッセージングのメールボックスが有効になっているかどうかを示します。
-ms.openlocfilehash: 5f4d59c5497158e5afbc8bb5db4900bd129df50b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: IsUMEnabled 要素は、メールボックスがユニファイドメッセージングに対して有効になっているかどうかを示します。
+ms.openlocfilehash: ea5bde677c62664acad8afd5c8142e96d82b7a74
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832113"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458230"
 ---
 # <a name="isumenabled-um-web-service"></a>IsUMEnabled (UM web サービス)
 
-**IsUMEnabled**要素は、ユニファイド メッセージングのメールボックスが有効になっているかどうかを示します。 
+**IsUMEnabled**要素は、メールボックスがユニファイドメッセージングに対して有効になっているかどうかを示します。 
   
 ```xml
 <IsUMEnabled/>
 ```
 
- **ブール型 (Boolean)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -45,20 +45,20 @@ ms.locfileid: "19832113"
   
 ## <a name="text-value"></a>テキスト値
 
-ブール値を表す文字列値は、この要素が含まれている場合に必要です。 **True**の場合は、ユニファイド メッセージングのメールボックスが有効になっていることを示します。 **False**の値は、ユニファイド メッセージングのメールボックスが有効になっていないことを意味します。 
+この要素が含まれている場合は、ブール値を表すテキスト値が必要です。 値が**true**の場合は、メールボックスがユニファイドメッセージングに対して有効になっていることを示します。 値が**false**の場合は、メールボックスがユニファイドメッセージングに対して有効になっていないことを意味します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-ユニファイド メッセージングのメールボックスが有効になっているかどうかを確認するのには、 [IsUMEnabled 操作 (UM web サービス)](isumenabled-operation-um-web-service.md)を使用します。
+メールボックスがユニファイドメッセージングに対して有効になっているかどうかを確認するには、 [IsUMEnabled 操作 (UM web サービス)](isumenabled-operation-um-web-service.md)を使用します。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |スキーマ名  <br/> |メッセージ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -67,5 +67,5 @@ ms.locfileid: "19832113"
 [IsUMEnabled 操作 (UM web サービス)](isumenabled-operation-um-web-service.md)
 
 
-[ユニファイド メッセージング web サービスの XML 要素の交換](unified-messaging-web-service-xml-elements-for-exchange.md)
+[Exchange 用のユニファイドメッセージング web サービスの XML 要素](unified-messaging-web-service-xml-elements-for-exchange.md)
 

@@ -1,5 +1,5 @@
 ---
-title: IsVoicemail
+title: IsVoicemail メール
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 96d81d6e-4b75-43ad-b151-2dd4fd57db94
-description: IsVoicemail 要素は、適用の条件または例外のためにボイス メール メッセージを受信したメッセージがある必要があるかどうかを示します。
-ms.openlocfilehash: 513498301aa65eaf0cac5769c940eeedf5c9e629
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: IsVoicemail メール要素は、条件または例外を適用するために、受信メッセージがボイスメールメッセージである必要があるかどうかを示します。
+ms.openlocfilehash: 8c60513a54cbf2398fde4b71ab1fbcf8a5efb608
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832136"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458139"
 ---
-# <a name="isvoicemail"></a>IsVoicemail
+# <a name="isvoicemail"></a>IsVoicemail メール
 
-**IsVoicemail**要素は、適用の条件または例外のためにボイス メール メッセージを受信したメッセージがある必要があるかどうかを示します。 
+**Isvoicemail**メール要素は、条件または例外を適用するために、受信メッセージがボイスメールメッセージである必要があるかどうかを示します。 
   
 ```XML
 <IsVoicemail>true | false</IsVoicemail>
 ```
 
- **ブール型 (Boolean)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,29 +44,29 @@ ms.locfileid: "19832136"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[条件](conditions.md) <br/> |条件を表しますが、満たされるとときに、ルールのルールの処理をトリガーします。  <br/> |
-|[Exceptions](exceptions.md) <br/> |受信トレイ ルールの使用可能なルールの例外条件をすべてを表す例外を表します。  <br/> |
+|[条件](conditions.md) <br/> |ルールのルールの処理を開始するときに実行される条件を表します。  <br/> |
+|[例外](exceptions.md) <br/> |受信トレイルールに対して使用可能なルールの例外条件をすべて表す例外を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**True**の場合、テキスト値は、メッセージは適用の条件または例外のためにボイス メール メッセージである必要があることを示します。 **False**の値は、メッセージでは、ボイス メール メッセージに適用する条件または例外の順にならないということを示します。 
+**True**のテキスト値は、条件または例外を適用するために、メッセージがボイスメールメッセージである必要があることを示します。 値が**false**の場合、条件または例外を適用するために、メッセージがボイスメールメッセージではない必要があることを示します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: f613c705-17ce-48ce-aa64-4dc2cea25e31
-description: RootItemId 要素は、削除された添付ファイルのルート アイテムを識別します。
-ms.openlocfilehash: 484b185db63c9692eaca7e43c49d6e95375a1a98
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: RootItemId 要素は、削除された添付ファイルのルートアイテムを識別します。
+ms.openlocfilehash: d8badd465fd5a93e1a6354d55ac5c4b080897152
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833251"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457096"
 ---
 # <a name="rootitemid"></a>RootItemId
 
-**RootItemId**要素は、削除された添付ファイルのルート アイテムを識別します。 
+**RootItemId**要素は、削除された添付ファイルのルートアイテムを識別します。 
   
 [DeleteAttachmentResponse](deleteattachmentresponse.md)
   
@@ -36,7 +36,7 @@ ms.locfileid: "19833251"
 ```
 
  **RootItemIdType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,8 +44,8 @@ ms.locfileid: "19833251"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**RootItemId** <br/> |削除された添付ファイルのルート アイテムを識別します。  <br/> |
-|**RootItemChangeKey** <br/> |削除された添付ファイルのルート アイテムの新しいキーの変更を識別します。  <br/> |
+|**RootItemId** <br/> |削除された添付ファイルのルートアイテムを識別します。  <br/> |
+|**RootItemChangeKey** <br/> |削除された添付ファイルのルートアイテムの新しい変更キーを識別します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -55,22 +55,22 @@ ms.locfileid: "19833251"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[DeleteAttachmentResponseMessage](deleteattachmentresponsemessage.md) <br/> |DeleteAttachment 要求の結果ステータスを格納します。  <br/> |
+|[DeleteAttachmentResponseMessage](deleteattachmentresponsemessage.md) <br/> |DeleteAttachment 要求の状態と結果を格納します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**RootItemId**要素は、DeleteAttachment 応答にのみ使用されます。 ルート項目 id、およびより重要なは、親アイテムに新しいキーの変更を識別します。 
+**RootItemId**要素は、deleteattachment 応答でのみ使用されます。 これにより、ルートアイテム識別子が識別されます。さらに重要なのは、親アイテムに対する新しい変更キーです。 
   
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -81,5 +81,5 @@ MicrosoftExchange Server 2007 がインストールされているクライア�
 [DeleteAttachment 操作](deleteattachment-operation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

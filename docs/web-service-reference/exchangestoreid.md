@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5acceb42-a757-4c74-ab1c-b1abf7bf1e0a
-description: ExchangeStoreId 要素は、インスタント メッセージング (IM) グループの識別子を指定します。
-ms.openlocfilehash: 815e9c2f368558ea38efce3671dbdc33d4d97168
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ExchangeStoreId 要素は、インスタントメッセージング (IM) グループ識別子を指定します。
+ms.openlocfilehash: c1b1e1830987449eeb7ea186d00743ea9cc75a77
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760361"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456991"
 ---
 # <a name="exchangestoreid"></a>ExchangeStoreId
 
-**ExchangeStoreId**要素は、インスタント メッセージング (IM) グループの識別子を指定します。 
+**ExchangeStoreId**要素は、インスタントメッセージング (IM) グループ識別子を指定します。 
   
 ```XML
 <ExchangeStoreId Id="" ChangeKey=""/>
 ```
 
  **ItemIdType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -33,7 +33,7 @@ ms.locfileid: "19760361"
 |**属性**|**説明**|
 |:-----|:-----|
 |ID  <br/> |**Id**属性のテキスト値は、グループの識別子です。  <br/> |
-|ChangeKey  <br/> |**変更キー**属性のテキスト値は、グループのキーの変更です。  <br/> |
+|ChangeKey  <br/> |**Changekey**属性のテキスト値は、グループの変更キーです。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -43,26 +43,26 @@ ms.locfileid: "19760361"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ImGroup](imgroup.md) <br/> |インスタント メッセージングのグループを表します。  <br/> |
+|[ImGroup](imgroup.md) <br/> |インスタントメッセージンググループを表します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |型のスキーマ  <br/> |
-|検証ファイル  <br/> |types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

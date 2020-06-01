@@ -1,5 +1,5 @@
 ---
-title: GetInboxRules 操作
+title: GetInboxRules の操作
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,31 +11,31 @@ api_name:
 api_type:
 - schema
 ms.assetid: b4b2701a-4a23-4acc-8c75-19f7955ad7ae
-description: GetInboxRules 操作は、識別されたユーザーのメールボックスの受信トレイ ルールを取得するために、Exchange Web サービスを使用します。
-ms.openlocfilehash: f8a5068b1f189cc6fd5feef6dfec29204a0b8887
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Getinbox Rules 操作は、Exchange Web サービスを使用して、識別されたユーザーのメールボックス内の受信トレイルールを取得します。
+ms.openlocfilehash: f4c4c03f55c9f32be4a067024f4387888edd5fe9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760756"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457936"
 ---
-# <a name="getinboxrules-operation"></a>GetInboxRules 操作
+# <a name="getinboxrules-operation"></a>GetInboxRules の操作
 
-**GetInboxRules**操作は、識別されたユーザーのメールボックスの受信トレイ ルールを取得するために、Exchange Web サービスを使用します。 
+**Getinbox rules**操作は、Exchange Web サービスを使用して、識別されたユーザーのメールボックス内の受信トレイルールを取得します。 
   
-## <a name="getinboxrules-request-example"></a>GetInboxRules 要求の例
+## <a name="getinboxrules-request-example"></a>Get受信トレイの要求の例
 
 ### <a name="description"></a>説明
 
-要求クライアントがサーバーに送信する XML の例を次に示します。 要求は、 [MailboxSmtpAddress](mailboxsmtpaddress.md)要素内でユーザーを識別します。 識別されたユーザーのすべての受信トレイのルールでは、応答で返されます。 
+次の例は、クライアントがサーバーに送信する要求 XML を示しています。 この要求は、 [MailboxSmtpAddress](mailboxsmtpaddress.md)要素でユーザーを識別します。 識別されたユーザーのすべての受信トレイルールが応答で返されます。 
   
 ### <a name="code"></a>コード
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+        xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
         xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010_SP1" />
@@ -48,20 +48,20 @@ ms.locfileid: "19760756"
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-要求には、次の省略可能な要素が含まれています。
+要求には、次のオプションの要素が含まれます。
   
 - [MailboxSmtpAddress](mailboxsmtpaddress.md)
     
-## <a name="successful-getinboxrules-response-example"></a>成功した GetInboxRules の応答の例
+## <a name="successful-getinboxrules-response-example"></a>成功した Get受信トレイの応答の例
 
 ### <a name="description"></a>説明
 
-Simple Object Access Protocol (SOAP) 本文の次の使用例は、 **GetInboxRules**要求に正常な応答を示しています。 この例では、応答には、1 つのルールが含まれています。 
+次の簡易オブジェクトアクセスプロトコル (SOAP) 本文の例は、 **Get受信トレイ**の要求に対する正常な応答を示しています。 この例では、応答に1つのルールが含まれています。 
   
 > [!NOTE]
-> [フォルダー Id](folderid.md)の要素の**変更キー**属性と**Id**の値は、読みやすさを保持するために短縮されています。 
+> [FolderId](folderid.md)要素の**Id**および**changekey**属性の値は、読みやすさを維持するために短縮されています。 
   
 ### <a name="code"></a>コード
 
@@ -73,19 +73,19 @@ Simple Object Access Protocol (SOAP) 本文の次の使用例は、 **GetInboxRu
         MinorVersion="1" MajorBuildNumber="139"
         MinorBuildNumber="0"
         Version="Exchange2010_SP1"
-        xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-        xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+        xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+        xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <GetInboxRulesResponse ResponseClass="Success"
-        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseCode>NoError</ResponseCode>
       <OutlookRuleBlobExists>true</OutlookRuleBlobExists>
       <InboxRules>
-        <Rule xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <Rule xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <RuleId>dCsAAABjzvA=</RuleId>
           <DisplayName>MoveInterestingToJunk</DisplayName>
           <Priority>1</Priority>
@@ -107,21 +107,21 @@ Simple Object Access Protocol (SOAP) 本文の次の使用例は、 **GetInboxRu
 </s:Envelope>
 ```
 
-### <a name="response-elements"></a>応答の要素
+### <a name="response-elements"></a>Response 要素
 
-応答では、次の要素が含まれています。
+応答には、次の要素が含まれています。
   
-- [GetInboxRulesResponse](getinboxrulesresponse.md)
+- [Get受信規則の応答](getinboxrulesresponse.md)
     
 - [ResponseCode](responsecode.md)
     
 - [OutlookRuleBlobExists](outlookruleblobexists.md)
     
-- [InboxRules](inboxrules.md)
+- [受信トレイのルール](inboxrules.md)
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[UpdateInboxRules の操作](updateinboxrules-operation.md)
+[UpdateInboxRules 操作](updateinboxrules-operation.md)
 

@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6d1b0b04-cc35-4a57-bd7a-824136d14fda
-description: IndexedPageItemView 要素は、ページがどのように会話を説明または FindItem 操作または FindConversation 操作の要求の情報が返される項目です。
-ms.openlocfilehash: f1743e22087158c1889977f03774fccbc5577390
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: IndexedPageItemView 要素は、ページ化された会話またはアイテム情報が FindItem 操作または FindConversation 操作要求に対してどのように返されるかを表します。
+ms.openlocfilehash: 0a66f17855fd425082e3651886d3eeec4f217ac4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831919"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456914"
 ---
 # <a name="indexedpageitemview"></a>IndexedPageItemView
 
-**IndexedPageItemView**要素は、ページがどのように会話を説明または[FindItem 操作](finditem-operation.md)または[FindConversation 操作](findconversation-operation.md)の要求の情報が返される項目です。 
+**Indexedpageitemview**要素は、ページ化された会話またはアイテム情報が[FindItem 操作](finditem-operation.md)または[findconversation 操作](findconversation-operation.md)要求に対してどのように返されるかを表します。 
   
 ```XML
 <IndexedPageViewItemView MaxEntriesReturned="" Offset="" BasePoint=""/>
 ```
 
  **IndexedPageViewType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -36,16 +36,16 @@ ms.locfileid: "19831919"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**MaxEntriesReturned** <br/> |アイテムや会話の応答を返すの最大数について説明します。 この属性は、省略可能です。  <br/> |
-|**Offset** <br/> |**ベース ポイント**からのオフセットを示します。 **ベース ポイント**と等しい場合、開始オフセットが正の数値です。 **ベース ポイント**が終了する場合、オフセットが負の場合と処理されます。 どの項目を識別または会話の応答で配信される最初になります。 この属性は、必要があります。  <br/> |
-|**ベース ポイント** <br/> |項目やテーマのページを一連の項目または検索条件を使用して検出された会話の前後から開始されるかどうかについて説明します。 末尾からのシークを常に検索を進めます。 この属性は、必要があります。  <br/> |
+|**MaxEntriesReturned** <br/> |応答で返されるアイテムまたはスレッドの最大数を表します。 この属性は省略可能です。  <br/> |
+|**Offset** <br/> |**BasePoint**からのオフセットを記述します。 **BasePoint**が先頭と等しい場合、オフセットは正になります。 **BasePoint**が End と等しい場合、オフセットは負の値として処理されます。 これにより、応答で最初に配信されるアイテムまたは会話が特定されます。 この属性は必須です。  <br/> |
+|**BasePoint** <br/> |アイテムまたはスレッドのページが、検索条件を使用して検出されたアイテムまたは会話のセットの先頭または末尾から開始するかどうかを指定します。 末尾からシークすると、常に逆方向に検索されます。 この属性は必須です。  <br/> |
    
-#### <a name="basepoint-attribute"></a>ベース ポイントの属性
+#### <a name="basepoint-attribute"></a>BasePoint 属性
 
 |**値**|**説明**|
 |:-----|:-----|
-|先頭  <br/> |ページ ビューでは、会話やアイテムの検索結果セットの先頭から開始されます。  <br/> |
-|終了  <br/> |ページ ビューは、見つかった会話やアイテム セットの末尾から開始します。  <br/> |
+|始まる  <br/> |ページビューは、検出されたスレッドまたはアイテムセットの先頭から開始されます。  <br/> |
+|End  <br/> |ページビューは、検出されたスレッドまたはアイテムセットの末尾から開始されます。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -55,26 +55,26 @@ ms.locfileid: "19831919"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FindItem](finditem.md) <br/> |メールボックス内のアイテムを検索するための要求を定義します。  <br/> この要素への XPath 式は、次のようにします。  <br/>  `/FindItem` <br/> |
-|[FindConversation](findconversation.md) <br/> |メールボックス内の会話を検索するための要求を定義します。  <br/> |
+|[FindItem](finditem.md) <br/> |メールボックス内のアイテムを検索するための要求を定義します。  <br/> この要素の XPath 式を次に示します。  <br/>  `/FindItem` <br/> |
+|[FindConversation](findconversation.md) <br/> |メールボックス内のスレッドを検索する要求を定義します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-末尾からのシークでは、オフセットによって識別される原点に移動します。 さらに、ポインターが再び要求されたレコードの数によって。 などの場合は 100 個のレコードがある、オフセットが末尾から 25、75 から検索を開始します。 10 個のレコードが返された場合ポインターが逆方向、さらに 10 が 65 を記録し、65 75 からのレコードを返します。 次のインデックスは、64 です。 ページの末尾からの次のオフセットは、100-36 に相当する 64 です。 36 は、次のインデックス付きのページを取得する、末尾からの次のオフセットの値です。
+最後からシークするには、オフセットで識別される原点への移動が必要になります。 さらに、要求されたレコードの数だけポインターが戻されます。 たとえば、100レコードがあり、オフセットが最後から25である場合、検索は75から開始されます。 10件のレコードが返された場合、ポインターは10レコード後ろに65に移動され、レコード 65 ~ 75 を返します。 次のインデックスは64です。 ページの最後からの次のオフセットは、36と等しい 100-64 です。 36は、次のインデックスページを取得するために末尾からの次のオフセットの値です。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
 ## <a name="example"></a>例
 
-[FindItem 操作](finditem-operation.md)要求の例を次に示します。 ID とトピックは、各項目が返されます。 最大六つのアイテムは、 **MaxEntriesReturned**属性で指定されている、応答で返されます。 アイテムは、重要度別にグループ化の順序を昇順に表示されます。 グループ内のアイテムは、件名ごとに集約されます。 
+次の例は、 [FindItem 操作](finditem-operation.md)要求を示しています。 各アイテムは、ID と subject で返されます。 応答では、 **maxん返さ**れた属性によって指定されているように、最大6つのアイテムが返されます。 アイテムは重要度別にグループ化されて昇順に表示されます。 グループ内のアイテムは、件名によって集約されます。 
   
 ```XML
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <FindItem Traversal="Shallow" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <FindItem Traversal="Shallow" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ItemShape>
         <t:BaseShape>IdOnly</t:BaseShape>
         <t:AdditionalProperties>
@@ -96,25 +96,23 @@ ms.locfileid: "19831919"
 </soap:Envelope>
 ```
 
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-
-  [FindItem 操作](finditem-operation.md)
+[FindItem 操作](finditem-operation.md)
   
+[FindConversation 操作](findconversation-operation.md)
 
-  [FindConversation 操作](findconversation-operation.md)
 
-
-[項目を検索します。](http://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
+[アイテムの検索](https://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
 

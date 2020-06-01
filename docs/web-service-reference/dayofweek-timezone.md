@@ -1,5 +1,5 @@
 ---
-title: DayOfWeek (タイムゾーン)
+title: DayOfWeek (TimeZone)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 416e8892-ebb1-4fac-82cf-e27549a6c175
-description: DayOfWeek の要素では、タイム ゾーンの切り替えが発生する曜日を表します。
-ms.openlocfilehash: 7816b90000be36cf3a3354d26d978684bfdcfe40
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DayOfWeek 要素は、タイムゾーンの切り替えが行われる曜日を表します。
+ms.openlocfilehash: 7bc05f417268ccfb20adae12e2694d8360023ab2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759935"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457845"
 ---
-# <a name="dayofweek-timezone"></a>DayOfWeek (タイムゾーン)
+# <a name="dayofweek-timezone"></a>DayOfWeek (TimeZone)
 
-**DayOfWeek**の要素では、タイム ゾーンの切り替えが発生する曜日を表します。 
+**DayOfWeek**要素は、タイムゾーンの切り替えが行われる曜日を表します。 
   
 ```xml
 <DayOfWeek>...</DayOfWeek>
@@ -29,7 +29,7 @@ ms.locfileid: "19759935"
 
 **DayOfWeekType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -45,9 +45,9 @@ ms.locfileid: "19759935"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[StandardTime](standardtime.md) <br/> | 基準にして世界協定時刻 (UTC)[バイアス (UTC)](bias-utc.md)の要素で表される時間からのオフセットを表します。<br/><br/>この要素は、夏時間が発生した地域で夏時間から切り替えに関する情報を標準時も含みます。<br/><br/>この要素への XPath 式は、次のように。<br/><br/>`/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/StandardTime`<br/><br/>`/GetUserAvailabilityRequest/TimeZone/StandardTime` <br/> |
-|[DaylightTime](daylighttime.md) <br/> | 夏時間が発生した地域の[バイアス (UTC)](bias-utc.md)の要素で表される UTC 時間からのオフセットを表します。<br/><br/>この要素には、標準時間から夏時間への切り替えが発生した場合についての情報も含まれています。<br/><br/>この要素への XPath 式は、次のように。<br/><br/>`/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/DaylightTime`<br/><br/>`/GetUserAvailabilityRequest/TimeZone/DaylightTime` <br/> |
-|[RecurringDayTransition](recurringdaytransition.md) <br/> |毎年同じ日に発生するタイム ゾーンの移行を表します。  <br/> |
+|[StandardTime](standardtime.md) <br/> | 時間のオフセット (協定世界時 (UTC) を基準として、 [Bias (utc)](bias-utc.md)要素で表される) を表します。<br/><br/>この要素には、夏時間が計測される地域で夏時間から標準時への切り替えに関する情報も含まれます。<br/><br/>この要素の XPath 式は次のとおりです。<br/><br/>`/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/StandardTime`<br/><br/>`/GetUserAvailabilityRequest/TimeZone/StandardTime` <br/> |
+|[DaylightTime](daylighttime.md) <br/> | 夏時間が計測される地域で、 [Bias (utc)](bias-utc.md)要素によって表される utc を基準とした時刻からのオフセットを表します。<br/><br/>この要素には、標準時から夏時間への切り替えが行われるタイミングに関する情報も含まれています。<br/><br/>この要素の XPath 式は次のとおりです。<br/><br/>`/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/DaylightTime`<br/><br/>`/GetUserAvailabilityRequest/TimeZone/DaylightTime` <br/> |
+|[RecurringDayTransition](recurringdaytransition.md) <br/> |毎年同じ日に発生するタイムゾーンの切り替えを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -60,27 +60,27 @@ ms.locfileid: "19759935"
 - 木曜日    
 - 金曜日    
 - 土曜日    
-- 日    
-- 週日   
+- Day    
+- 平日   
 - WeekendDay
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-5 の値を持つ[DayOrder](dayorder.md)要素、10 の値を持つ[月](month.md)の要素、および**日曜日の値を持つ値**が含まれている[StandardTime](standardtime.md)要素は、標準時間から夏時間への移行を提供します。時間の節約は、10 月の 5 番目の日曜日に発生します。 
+値5、値が10の[month](month.md)要素、日曜日という値を持つ**DayOfWeek**要素を含む[Dayorder](dayorder.md)要素を含む[standardtime](standardtime.md)要素は、標準時から夏時間への切り替えが10月の5番目の日曜日に行われることを意味します。 
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [GetUserAvailability 操作](getuseravailability-operation.md)
-- [ユーザーの状態を取得します。](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [ユーザーの空き時間情報の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

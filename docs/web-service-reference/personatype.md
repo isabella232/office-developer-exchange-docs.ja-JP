@@ -1,5 +1,5 @@
 ---
-title: PersonaType
+title: 個人の Atype
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 81c157f0-16ae-4cd5-abf3-6aaf22ca8c70
-description: PersonaType 要素は、ユーザーまたは配布リストなど、ペルソナの種類を指定します。
-ms.openlocfilehash: 409339857b727144226f4ca233075196eef4308a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 個人用の Atype 要素は、ユーザーの種類 (人物、配布リストなど) を指定します。
+ms.openlocfilehash: 9b62d2b8f1545e84a5b726fec0085dd7c9c898f5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832748"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457565"
 ---
-# <a name="personatype"></a>PersonaType
+# <a name="personatype"></a>個人の Atype
 
-**PersonaType**要素は、ユーザーまたは配布リストなど、ペルソナの種類を指定します。 
+**個人用の atype**要素は、ユーザーの種類 (人物、配布リストなど) を指定します。 
   
 ```XML
 <PersonaType></PersonaType>
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -38,25 +38,25 @@ ms.locfileid: "19832748"
   
 ### <a name="parent-elements"></a>親要素
 
-[ペルソナ](persona.md)
+[ユーザー](persona.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**PersonaType**要素のテキスト値は、ペルソナの種類です。 
+**個人 atype**要素のテキスト値は、ペルソナの種類です。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

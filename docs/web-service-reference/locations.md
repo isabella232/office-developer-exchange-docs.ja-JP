@@ -1,5 +1,5 @@
 ---
-title: Locations
+title: 場所
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 764d6a6e-e13b-4cd5-ad68-60bb422eebce
-description: 場所の要素は、場所の値の配列と関連付けられているペルソナにそのソースの帰属の識別子を指定します。
-ms.openlocfilehash: 308fbdda4062b418a8925aa99d025b96e096778d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Location 要素は、場所の値の配列と、関連するペルソナのソース attributions の識別子を指定します。
+ms.openlocfilehash: d72371a6ee05b395142abca164c4fa2cc5757611
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832249"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458083"
 ---
-# <a name="locations"></a>Locations
+# <a name="locations"></a>場所
 
-**場所**の要素は、場所の値の配列と関連付けられているペルソナにそのソースの帰属の識別子を指定します。 
+Location**要素は、場所**の値の配列と、関連するペルソナのソース attributions の識別子を指定します。 
   
 ```XML
 <Locations>
@@ -26,7 +26,7 @@ ms.locfileid: "19832249"
 ```
 
  **ArrayOfStringAttributedValuesType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,9 +40,9 @@ ms.locfileid: "19832249"
   
 ### <a name="parent-elements"></a>親要素
 
-[ペルソナ](persona.md)
+[ユーザー](persona.md)
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   

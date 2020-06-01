@@ -1,5 +1,5 @@
 ---
-title: GetConversationItems の操作
+title: GetConversationItems 操作
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,48 +7,48 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8ae00a99-b37b-4194-829c-fe300db6ab99
-description: GetConversationItems の操作に関する情報を検索します。
-ms.openlocfilehash: 9d9fb9cc04bcbb5846162c77c852defa51dff98b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetConversationItems 操作についての情報を検索します。
+ms.openlocfilehash: ddeb5386e56653a32ca2e6d212518704cd0f0c58
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760672"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457782"
 ---
-# <a name="getconversationitems-operation"></a>GetConversationItems の操作
+# <a name="getconversationitems-operation"></a>GetConversationItems 操作
 
-**GetConversationItems**の操作に関する情報を検索します。 
+**GetConversationItems**操作についての情報を検索します。 
   
-**GetConversationItems**操作では、会話内のノードで構成されたアイテムの 1 つまたは複数のセットを取得します。 
+**GetConversationItems**操作は、スレッド内のノードに整理されている1つまたは複数のアイテムのセットを取得します。 
   
 この操作は Exchange Server 2013 で導入されました。
   
-## <a name="using-the-getconversationitems-operation"></a>GetConversationItems 操作を使用します。
+## <a name="using-the-getconversationitems-operation"></a>GetConversationItems 操作の使用
 
-**GetConversationItems**操作を使用すると、原色の両方の会話とアーカイブ メールボックス内のアイテムを取得します。 
+**GetConversationItems**操作を使用して、プライマリメールボックスとアーカイブメールボックスの両方について、スレッド内のアイテムを取得することができます。 
   
 ### <a name="getconversationitems-operation-soap-headers"></a>GetConversationItems 操作の SOAP ヘッダー
 
-**GetConversationItems**操作は、次の表に記載されている SOAP ヘッダーを使用できます。 
+**GetConversationItems**操作では、次の表に示す SOAP ヘッダーを使用できます。 
   
 |**ヘッダー名**|**要素**|**説明**|
 |:-----|:-----|:-----|
-|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装するユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマのバージョンを識別します。 この要素の最小値は、 **Exchange2013**です。 このヘッダーは、要求に適用されます。  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答するサーバーのバージョンを識別します。 このヘッダーは、応答に適用されます。  <br/> |
+|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。 この要素の最小値は**Exchange2013**です。 このヘッダーは、要求に適用されます。  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは応答に適用されます。  <br/> |
    
-## <a name="getconversationitems-operation-request-example-get-items-in-a-single-conversation"></a>GetConversationItems 操作の要求の例: 1 つの会話でアイテムを取得
+## <a name="getconversationitems-operation-request-example-get-items-in-a-single-conversation"></a>GetConversationItems 操作要求の例: 1 つの会話内のアイテムを取得する
 
-**GetConversationItems**操作要求の次の例では、削除済みアイテムおよび [下書き] フォルダー内にある項目を除いて、1 つのテーマでの会話のすべての項目を取得する方法を示します。 応答で返される各項目は、項目 id、件名、およびアイテムをメールボックスで受信した時間に含まれます。 
+次の**GetConversationItems**操作要求の例は、単一の会話ですべてのスレッドアイテムを取得する方法を示しています。ただし、[削除済みアイテム] フォルダーと [下書き] フォルダーにあるアイテムは例外です。 応答で返される各アイテムには、アイテム識別子、件名、およびアイテムがメールボックスで受信された日時が含まれます。 
   
 > [!NOTE]
-> すべての項目の識別子と変更キーをこの資料では、読みやすさを保持するために短縮されています。 
+> この記事のすべてのアイテム識別子と変更キーは、読みやすくするために短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
@@ -77,15 +77,15 @@ ms.locfileid: "19760672"
 </soap:Envelope>
 ```
 
-**GetConversationItems**要求の次の使用例では、次のオプションは含まれません。 
+この**GetConversationItems**要求の例には、次のオプションは含まれていません。 
   
-- [MaxItemsToReturn](maxitemstoreturn.md)要素の応答を取得するアイテムの最大数を設定します。 
+- 応答で返されるアイテムの最大数を設定する[Maxitemstoreturn](maxitemstoreturn.md)要素。 
     
-- [MailboxScope](mailboxscope.md)要素、 **GetConversationItems**操作は、プライマリ メールボックス、アーカイブ先のメールボックス、または両方のメールボックスに対して実行するかどうかを示すことによってメールボックスのスコープを設定します。 
+- [MailboxScope](mailboxscope.md)要素。 **GetConversationItems**操作がプライマリメールボックス、アーカイブメールボックス、または両方のメールボックスで実行されるかどうかを示すことによって、メールボックスのスコープを設定します。 
     
-- [同期状態 (base64Binary)](syncstate-base64binary.md)要素、だけは、スレッドの会話の項目を取得するのには同期の状態を設定します。 この要素は、会話ごとに設定されています。 
+- [Syncstate (base64Binary)](syncstate-base64binary.md)要素。同期状態は、会話で新規または更新された会話アイテムのみを取得するように設定されています。 この要素は、会話ごとに設定されます。 
     
-要求 SOAP 本体にはには、次の要素が含まれています。
+要求 SOAP 本文には、次の要素が含まれています。
   
 - [GetConversationItems](getconversationitems.md)
     
@@ -101,17 +101,17 @@ ms.locfileid: "19760672"
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
-- [並べ替え順序 (ConversationNodeSortOrder)](sortorder-conversationnodesortorder.md)
+- [ソート順序 (ConversationNodeSortOrder)](sortorder-conversationnodesortorder.md)
     
-- [スレッド](conversations-ex15websvcsotherref.md)
+- [会話](conversations-ex15websvcsotherref.md)
     
 - [会話 (ConversationRequestType)](conversation-conversationrequesttype.md)
     
 - [ConversationId](conversationid.md)
     
-## <a name="successful-getconversationitems-operation-response"></a>GetConversationItems 操作の成功の応答
+## <a name="successful-getconversationitems-operation-response"></a>成功した GetConversationItems 操作の応答
 
-次の例では、1 つの会話でアイテムを取得する**GetConversationItems**操作要求に正常な応答を示します。 
+次の例は、1回の会話でアイテムを取得するための**GetConversationItems**操作要求に対する正常な応答を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -122,15 +122,15 @@ ms.locfileid: "19760672"
                            MajorBuildNumber="545"
                            MinorBuildNumber="11"
                            Version="Exchange2013"
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <m:GetConversationItemsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                                      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:GetConversationItemsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                                      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
          <m:ResponseMessages>
             <m:GetConversationItemsResponseMessage ResponseClass="Success">
                <m:ResponseCode>NoError</m:ResponseCode>
@@ -201,7 +201,7 @@ ms.locfileid: "19760672"
 </s:Envelope>
 ```
 
-**GetConversationItems**の後続の操作要求の同期状態を保存することをお勧めします。 
+後続の**GetConversationItems**操作要求の syncstate を保存することをお勧めします。 
   
 応答 SOAP 本文には、次の要素が含まれています。
   
@@ -217,7 +217,7 @@ ms.locfileid: "19760672"
     
 - [ConversationId](conversationid.md)
     
-- [同期状態 (base64Binary)](syncstate-base64binary.md)
+- [SyncState (base64Binary)](syncstate-base64binary.md)
     
 - [ConversationNodes](conversationnodes.md)
     
@@ -225,28 +225,28 @@ ms.locfileid: "19760672"
     
 - [InternetMessageId](internetmessageid.md)
     
-- [アイテム (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
+- [アイテム (非 Emptyarrayofallitemstype)](items-nonemptyarrayofallitemstype.md)
     
 - [Message](message-ex15websvcsotherref.md)
     
 - [ItemId](itemid.md)
     
-- [Subject](subject.md)
+- [[件名]](subject.md)
     
 - [DateTimeReceived](datetimereceived.md)
     
-## <a name="getconversationitems-operation-error-response"></a>GetConversationItems 操作のエラー応答
+## <a name="getconversationitems-operation-error-response"></a>GetConversationItems 操作エラー応答
 
-次の使用例は、メールボックス、または、会話のすべての項目内にあるフォルダーは無視されるは、存在しないのいずれかの会話で項目を取得する**GetConversationItems**の操作要求に対するエラー応答を示しています。 
+次の例は、 **GetConversationItems**操作要求に対するエラー応答を示しています。これは、メールボックスに存在しなくなった、または無視されたすべてのスレッドアイテムが存在する会話内のアイテムを取得するためです。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
-    <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="556" MinorBuildNumber="8" Version="Exchange2013" xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="556" MinorBuildNumber="8" Version="Exchange2013" xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" xmlns="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetConversationItemsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetConversationItemsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetConversationItemsResponseMessage ResponseClass="Error">
           <m:MessageText>The specified object was not found in the store.</m:MessageText>
@@ -261,11 +261,10 @@ ms.locfileid: "19760672"
 
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の操作](ews-operations-in-exchange.md)
+- [Exchange での EWS 操作](ews-operations-in-exchange.md)
     
 - [ApplyConversationAction 操作](applyconversationaction-operation.md)
     
-- 
-  [FindConversation 操作](findconversation-operation.md)
+- [FindConversation 操作](findconversation-operation.md)
     
 

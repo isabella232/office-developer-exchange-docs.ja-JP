@@ -1,5 +1,5 @@
 ---
-title: 開始日 (繰り返し)
+title: StartDate (定期的な予定)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,25 +11,25 @@ api_name:
 api_type:
 - schema
 ms.assetid: bd65ac06-b3ac-4c9b-9568-3e4dc94378e7
-description: 開始要素では、定期的な仕事または予定表アイテムの開始日を表します。
-ms.openlocfilehash: 6a38e63bbcf010ab6dca8f66440a2b0a559cf88d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: StartDate 要素は、定期的な仕事または予定表アイテムの開始日を表します。
+ms.openlocfilehash: 4514f126b1de31c64a2650b9e7cb6b7412a726c7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833551"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457208"
 ---
-# <a name="startdate-recurrence"></a>開始日 (繰り返し)
+# <a name="startdate-recurrence"></a>StartDate (定期的な予定)
 
-**開始**要素では、定期的な仕事または予定表アイテムの開始日を表します。 
+**StartDate**要素は、定期的な仕事または予定表アイテムの開始日を表します。 
   
 ```xml
 <StartDate/>
 ```
 
-**日付**
+**Date**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -45,28 +45,28 @@ ms.locfileid: "19833551"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[EndDateRecurrence](enddaterecurrence.md) <br/> |開始日と終了日の項目の定期的なパターンについて説明します。  <br/> |
-|[NoEndRecurrence](noendrecurrence.md) <br/> |定義された終了日がない項目の定期的なパターンの開始日について説明します。  <br/> |
-|[NumberedRecurrence](numberedrecurrence.md) <br/> |開始日と定期的なアイテムの出現回数を説明します。  <br/> |
+|[EndDateRecurrence](enddaterecurrence.md) <br/> |アイテムの定期的なパターンの開始日と終了日を示します。  <br/> |
+|[NoEndRecurrence](noendrecurrence.md) <br/> |定義済みの終了日を持たないアイテムの定期的なパターンの開始日を示します。  <br/> |
+|[NumberedRecurrence](numberedrecurrence.md) <br/> |定期的なアイテムの開始日と発生回数を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-日付を表すテキスト値は、この要素を使用する場合に必要です。 1601、4 月、1 より小さい値を指定できません 00時 00分: 00 です。
+この要素を使用する場合は、日付を表すテキスト値が必要です。 この値は、Apr、1、1601 00:00:00 より小さくすることはできません。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 
