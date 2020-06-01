@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 779305a6-ad1e-424e-8a69-4e3bef61d787
-description: SmtpAddress 要素では、偽装に使用するアカウントの簡易メール転送プロトコル (SMTP) アドレス、または予定表または連絡先の共有の依頼の簡易メール転送プロトコル (SMTP) 受信者のアドレスを表します。
-ms.openlocfilehash: 39588f0892cdcec819a1972547155730be5785f4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: SmtpAddress 要素は、偽装に使用されるアカウントの簡易メール転送プロトコル (SMTP) アドレス、または予定表または連絡先共有要求の SMTP (Simple Mail Transfer Protocol) 受信者アドレスを表します。
+ms.openlocfilehash: 915ff328cc384c1f2884e9fbea8c10c1ebc79288
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833511"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466690"
 ---
 # <a name="smtpaddress"></a>SmtpAddress
 
-**SmtpAddress**要素では、偽装に使用するアカウントの簡易メール転送プロトコル (SMTP) アドレス、または予定表または連絡先の共有の依頼の簡易メール転送プロトコル (SMTP) 受信者のアドレスを表します。 
+**Smtpaddress**要素は、偽装に使用されるアカウントの簡易メール転送プロトコル (smtp) アドレス、または予定表または連絡先共有要求の Smtp (Simple Mail transfer protocol) 受信者アドレスを表します。 
   
 ```xml
 <SmtpAddress/>
@@ -29,7 +29,7 @@ ms.locfileid: "19833511"
 
 **SmtpAddressType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -45,29 +45,29 @@ ms.locfileid: "19833511"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ConnectingSID](connectingsid.md) <br/> |ExchangeImpersonation SOAP ヘッダーを使用する際に偽装するアカウントを表します。  <br/> この要素への XPath 式は、次のようにします。  <br/>  `/ExchangeImpersonation/ConnectingSID` <br/> |
-|[InvalidRecipient](invalidrecipient.md) <br/> |予定表の共有または共有メッセージを取引先担当者の無効な受信者を表します。  <br/> |
-|[受信者 (ArrayOfSmtpAddressType)](recipients-arrayofsmtpaddresstype.md) <br/> |共有フォルダーへのアクセスを許可する受信者のコレクションを表します。  <br/> |
-|[GetSharingFolder](getsharingfolder.md) <br/> |指定した共有フォルダーのローカル フォルダーの識別子を取得する要求を定義します。  <br/> |
+|[ConnectingSID](connectingsid.md) <br/> |ExchangeImpersonation SOAP ヘッダーを使用しているときに偽装するアカウントを表します。  <br/> この要素の XPath 式を次に示します。  <br/>  `/ExchangeImpersonation/ConnectingSID` <br/> |
+|[InvalidRecipient](invalidrecipient.md) <br/> |予定表共有または連絡先共有メッセージの無効な受信者を表します。  <br/> |
+|[受信者 (ArrayOfSmtpAddressType)](recipients-arrayofsmtpaddresstype.md) <br/> |共有フォルダーへのアクセスが許可される受信者のコレクションを表します。  <br/> |
+|[GetSharingFolder](getsharingfolder.md) <br/> |指定された共有フォルダーのローカルフォルダー識別子を取得する要求を定義します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-SMTP アドレスを表す文字列値は、必要があります。
+SMTP アドレスを表すテキスト値が必要です。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Microsoft Exchange Server を実行しているコンピューターの Exchange Web サービスをホストにクライアント アクセス サーバーの役割がインストールされている IIS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

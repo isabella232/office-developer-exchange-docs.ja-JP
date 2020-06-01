@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d42ec77b-fb9f-404a-9bf2-1801e8744676
-description: BodyType 要素は、応答の本文のテキストを書式設定する方法を識別します。
-ms.openlocfilehash: f8be2e96390b40faa367cf0d34c533accc3b8afb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: BodyType 要素は、本文テキストがどのように応答で書式設定されるかを識別します。
+ms.openlocfilehash: 448d20ac54b09a2f4f6a273a1099519371ac7f5b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759537"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465948"
 ---
 # <a name="bodytype"></a>BodyType
 
-**BodyType**要素は、応答の本文のテキストを書式設定する方法を識別します。 
+**Bodytype**要素は、本文テキストがどのように応答で書式設定されるかを識別します。 
   
 ```xml
 <BodyType>Best or HTML or Text</BodyType>
@@ -29,7 +29,7 @@ ms.locfileid: "19759537"
 
 **BodyTypeResponseType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -45,38 +45,38 @@ ms.locfileid: "19759537"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ItemShape](itemshape.md) <br/> | GetItem、FindItem、または SyncFolderItems の応答に含めるコンテンツ アイテムのプロパティを識別します。  <br/><br/>この要素への XPath 式は、次のように。<br/><br/>  `/GetItem/ItemShape`<br/><br/>`/FindItem/ItemShape`<br/><br/>`/SyncFolderItems/ItemShape` <br/> |
-|[AttachmentShape](attachmentshape.md) <br/> |[GetAttachment](getattachment.md)要求への応答で返されるその他の拡張アイテム プロパティを識別します。  <br/><br/>この要素への XPath 式は、次のようにします。<br/><br/>  `/GetAttachment/AttachmentShape` <br/> |
+|[ItemShape](itemshape.md) <br/> | GetItem、FindItem、または SyncFolderItems 応答に含めるアイテムのプロパティとコンテンツを指定します。  <br/><br/>この要素の XPath 式は次のとおりです。<br/><br/>  `/GetItem/ItemShape`<br/><br/>`/FindItem/ItemShape`<br/><br/>`/SyncFolderItems/ItemShape` <br/> |
+|[AttachmentShape](attachmentshape.md) <br/> |[Getattachment](getattachment.md)要求に対する応答で返される追加の拡張アイテムプロパティを識別します。  <br/><br/>この要素の XPath 式を次に示します。<br/><br/>  `/GetAttachment/AttachmentShape` <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**BodyType**要素の有効な値を次の表に一覧します。 
+**Bodytype**要素に使用できる値を次の表に示します。 
   
 |**値**|**説明**|
 |:-----|:-----|
-|ベスト  <br/> |応答には、本文テキストの豊富な利用可能なコンテンツが返されます。 これは、コンテンツは、テキストまたは html 形式かどうか不明ではない場合に便利です。<br/><br/> ストアド本文がテキスト形式の場合は、返された本文をテキストになります。 それ以外の場合、応答であっても、ストアドの本文が HTML または rtf 形式のいずれかの形式では場合、HTML が返されます。<br/><br/> 既定値です。  <br/> |
-|HTML  <br/> |応答では、アイテムの本文を HTML として返します。  <br/> |
-|テキスト型 (Text)  <br/> |応答では、アイテムの本文をプレーン テキストとして返します。  <br/> |
+|高  <br/> |応答によって、本文の中で最も豊富な利用可能なコンテンツが返されます。 これは、コンテンツがテキストであるか HTML であるかにかかわらず、不明な場合に便利です。<br/><br/> 保存された本文がプレーンテキストの場合、返される本文はテキストになります。 それ以外の場合、保存された本文が HTML または RTF 形式の場合、応答は HTML を返します。<br/><br/> これは既定の値です。  <br/> |
+|HTML  <br/> |応答は、アイテムの本文を HTML として返します。  <br/> |
+|テキスト  <br/> |応答は、アイテムの本文をプレーンテキストとして返します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-[Body](body.md)要素の**BodyType**属性を確認することによって応答で返される本文の種類を識別することができます。 **BodyType**属性は、HTML またはテキストのいずれかとして本体を識別します。 
+応答で返される本文の種類を特定するには、 [body](body.md)要素の**bodytype**属性をチェックします。 **Bodytype**属性は、本文を HTML またはテキストのいずれかとして識別します。 
   
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="example"></a>例
 
-**BodyType**要素が使用されている要求の次の使用例を示しています。 
+次の要求の例は、 **Bodytype**要素が使用されている場所を示しています。 
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <GetAttachment xmlns="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <GetAttachment xmlns="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <AttachmentShape>
         <t:BodyType>Best</t:BodyType>
       </AttachmentShape>
@@ -88,15 +88,15 @@ MicrosoftExchange Server 2007 がインストールされているクライア�
 </soap:Envelope>
 ```
 
-Id 属性が読みやすさを維持するのには小さすぎます。
+Id 属性は読みやすくするために短縮されています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空に設定可能  <br/> |いいえ  <br/> |
    
 

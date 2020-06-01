@@ -11,19 +11,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: 57b6079a-3d83-4429-861e-c551e9e1a991
-description: ルームの要素は、会議室を表す 1 つまたは複数の要素の一覧です。
-ms.openlocfilehash: e95112d3d565da29c309e45710ffc0ea9b4d5064
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ルーム要素は、会議室を表す1つまたは複数の要素のリストです。
+ms.openlocfilehash: f8b60a9680f6abba459ebecc96613abfdd93766d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833249"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466186"
 ---
 # <a name="rooms"></a>ルーム
 
-**ルーム**の要素は、会議室を表す 1 つまたは複数の要素の一覧です。 
+**ルーム**要素は、会議室を表す1つまたは複数の要素のリストです。 
   
-[GetRoomsResponse](getroomsresponse.md)
+[た getroomsresponse](getroomsresponse.md)
   
 [ルーム](rooms.md)
   
@@ -32,7 +32,7 @@ ms.locfileid: "19833249"
 ```
 
  **ArrayOfRoomsType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,28 +42,28 @@ ms.locfileid: "19833249"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[ルーム](room.md) <br/> |電子メール アドレスと、会議室を表す表示名を定義します。  <br/> |
+|[作る](room.md) <br/> |会議室を表す電子メールアドレスと表示名を定義します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetRoomsResponse](getroomsresponse.md) <br/> ||
+|[た getroomsresponse](getroomsresponse.md) <br/> ||
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -72,5 +72,5 @@ ms.locfileid: "19833249"
 [GetRooms 操作](getrooms-operation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

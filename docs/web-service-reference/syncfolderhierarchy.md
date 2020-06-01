@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 55df4d01-e48e-4263-a851-78a66ad1093a
-description: SyncFolderHierarchy 要素は、クライアント上のフォルダー階層を同期するための要求を定義します。
-ms.openlocfilehash: f72640e5605dd83e92cd323cb00e4d2f64406245
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: SyncFolderHierarchy 要素は、クライアント上のフォルダー階層を同期する要求を定義します。
+ms.openlocfilehash: 68b607dbf603e955f74dfaccadd3ce6c4c9fb6ab
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839634"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466648"
 ---
 # <a name="syncfolderhierarchy"></a>SyncFolderHierarchy
 
-**SyncFolderHierarchy**要素は、クライアント上のフォルダー階層を同期するための要求を定義します。 
+**Syncfolderhierarchy**要素は、クライアント上のフォルダー階層を同期する要求を定義します。 
   
 ```xml
 <SyncFolderHierarchy>
@@ -31,7 +31,7 @@ ms.locfileid: "19839634"
 ```
 
  **SyncFolderHierarchyType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -41,28 +41,28 @@ ms.locfileid: "19839634"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[FolderShape](foldershape.md) <br/> |[SyncFolderHierarchy](syncfolderhierarchy.md)の応答に含めるフォルダーのプロパティを識別します。  <br/> |
-|[SyncFolderId](syncfolderid.md) <br/> |同期する項目を含むフォルダーを表します。 この要素はオプションです。  <br/> |
-|[同期状態](syncstate-ex15websvcsotherref.md) <br/> |各成功した要求の後に更新された同期データの base64 でエンコードされたフォームが含まれています。 これを使用して、同期の状態を識別します。  <br/> |
+|[FolderShape](foldershape.md) <br/> |[Syncfolderhierarchy](syncfolderhierarchy.md)応答に含めるフォルダーのプロパティを識別します。  <br/> |
+|[SyncFolderId](syncfolderid.md) <br/> |同期するアイテムを含むフォルダを表します。 この要素は省略できます。  <br/> |
+|[SyncState](syncstate-ex15websvcsotherref.md) <br/> |要求が成功するたびに更新される同期データの base64 でエンコードされた形式が含まれます。 これは、同期状態を識別するために使用されます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -71,5 +71,5 @@ MicrosoftExchange Server 2007 がインストールされているクライア�
 [SyncFolderHierarchy 操作](syncfolderhierarchy-operation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

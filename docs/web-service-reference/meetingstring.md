@@ -1,5 +1,5 @@
 ---
-title: MeetingString
+title: Meetingsuggestion.meetingstring
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 713a30fe-17ad-48a3-88a2-4f83da9db7a5
-description: MeetingString 要素は、エンティティの抽出の結果として、会議の名前を指定します。
-ms.openlocfilehash: b16dae2d47a1bc51f62fdb18e2bcc0de1942a177
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: "\"会議文字列\" 要素は、エンティティ抽出の結果としての会議の名前を指定します。"
+ms.openlocfilehash: 1ad5d7a7d9b6f84a0ecc30129c9f1cd2ca3153f8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832442"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466326"
 ---
-# <a name="meetingstring"></a>MeetingString
+# <a name="meetingstring"></a>Meetingsuggestion.meetingstring
 
-**MeetingString**要素は、エンティティの抽出の結果として、会議の名前を指定します。 
+"会議**文字列**" 要素は、エンティティ抽出の結果としての会議の名前を指定します。 
   
 ```XML
 <MeetingString></MeetingString>
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,21 +42,21 @@ ms.locfileid: "19832442"
   
 ## <a name="text-value"></a>テキスト値
 
-**MeetingString**要素のテキスト値は、会議の名前です。 
+"会議**文字列**" 要素のテキスト値は、会議の名前です。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

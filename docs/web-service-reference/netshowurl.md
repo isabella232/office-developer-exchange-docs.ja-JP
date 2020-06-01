@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: a5d48fc1-b141-422c-bcb0-05d0f9ba90dd
-description: NetShowUrl 要素は、ブロードキャストのオンライン会議の URL を指定します。
-ms.openlocfilehash: 2440e6c1501331d715d0e5ceb31b3b928122f927
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: NetShowUrl 要素は、Microsoft NetShow online 会議の URL を指定します。
+ms.openlocfilehash: 66e288a5e66eecf404698135cc3257085b852034
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832519"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466333"
 ---
 # <a name="netshowurl"></a>NetShowUrl
 
-**NetShowUrl**要素は、ブロードキャストのオンライン会議の URL を指定します。 
+**Netshowurl**要素は、Microsoft NetShow online 会議の URL を指定します。 
   
 ```xml
 <NetShowUrl/>
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -45,30 +45,30 @@ ms.locfileid: "19832519"
 |**要素**|**説明**|
 |:-----|:-----|
 |[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議を表します。  <br/> |
-|[カレンダー項目](calendaritem.md) <br/> |Exchange 予定表アイテムを表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-URL を表す文字列値は、この要素が使用される場合に必要です。
+この要素を使用する場合は、URL を表すテキスト値が必要です。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この NetShowUrl プロパティでは、開催者の予定表アイテムの読み取り-書き込み可能です。 会議出席依頼の出席者のために読み取り専用をお勧めします。
+この NetShowUrl プロパティは、開催者の予定表アイテムに対して読み取り/書き込み可能です。 会議出席依頼と出席者には読み取り専用です。
   
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

@@ -11,22 +11,22 @@ api_name:
 api_type:
 - dllExport
 ms.assetid: eea20a55-4a2a-4209-ae79-dc1ee1cd631b
-description: '最終更新日: 2013 年 2 月 25 日'
-ms.openlocfilehash: 099ec33663baa2414a0c28b90364523b6191c697
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: '最終更新日: 2013 年2月25日'
+ms.openlocfilehash: 12b07fba69054d327c7250bbf83e4c77016e8b3f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758866"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466200"
 ---
 # <a name="cchksgfileserrterm-function"></a>CChkSGFiles.ErrTerm 関数
   
-**に適用されます:** Exchange Server 2003年 |Exchange Server 2007年 |Exchange Server 2010年 |Exchange Server 2013
+**適用対象:** Exchange Server 2003 |Exchange Server 2007 |Exchange Server 2010 |Exchange Server 2013
   
 すべてのデータベース ページとログが正常に検証されたかどうかを示す、データベースとログの検証の全体的な状態を提供します。
   
 > [!IMPORTANT]
-> ストレージ ・ グループは利用可能な Exchange 2013 です。 CHKSGFILES API では、データベースと Exchange Server 2010 より前のバージョンの Exchange ストレージ ・ グループの下位互換性のため、ストレージ ・ グループを指定できます。 Exchange 2013 のデータベースに対して CHKSGFILES を実行するときは、空の文字列にストレージ ・ グループの識別子を指定するパラメーターを設定してください。 
+> ストレージグループは、Exchange 2013 では使用できません。 Exchange Server 2010 より前のバージョンの Exchange でデータベースおよびストレージグループとの下位互換性を維持するために、CHKSGFILES API ではストレージグループを指定することができます。 Exchange 2013 データベースに対して CHKSGFILES を実行するときは、ストレージグループ識別子を指定するパラメーターを空の文字列に設定する必要があります。 
   
 ```cs
 Vitual ERRErrTerm 
@@ -36,33 +36,33 @@ Vitual ERRErrTerm
 
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 ### <a name="ulflags"></a>ulFlags
   
 オプションの入力パラメーター。この値は、今後の使用のために予約されています。このパラメーターで渡された値は 0 (ゼロ) になります。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
-[エラー](cchksgfiles-err-enumeration.md)の列挙体からのエラー コードです。 
+[ERR](cchksgfiles-err-enumeration.md) 列挙型のエラー コード。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**CChkSGFiles**オブジェクトは、 **ErrInit**関数を使用して登録されているすべてのデータベースが実際にチェック アウトするかどうかを決定します。 このオブジェクト関数を使用して、 **ErrCheckDbPages**のことを確認するのには、 **ErrCheckDbHeaders**関数で指定されたページが実際にいることを確認するデータベースの数が同じです。 正しい数の各データベース内のページが正常にチェックされていない場合、 **ErrTerm**関数はエラーを返します。 
+**CChkSGFiles** オブジェクトは、**ErrInit** 関数に登録されているすべてのデータベースが実際にチェックされたかどうかを判別します。 このオブジェクトは **ErrCheckDbPages** 関数を使って、**ErrCheckDbHeaders** 関数で示されているのと同じ数のデータベース ページが実際に検証されたことを確認します。 各データベースで適切な数のページが正常にチェックされていない場合、**ErrTerm** 関数はエラーを返します。 
   
-**ErrCheckDbPages**でチェックするデータベース ページの数が**ErrCheckDbHeaders**で示されるよりも短い場合は、この関数は、Windows イベント ログに、エラーを作成し、 **ErrTerm**には、エラーが返されます。 
+**ErrCheckDbPages** でチェックしたデータベース ページの数が **ErrCheckDbHeaders** で示されている数よりも少ない場合、この関数は Windows イベント ログにエラーを作成し、**ErrTerm** がエラーを返します。 
   
-**ErrCheckDbPages**でチェックするデータベース ページの数が**ErrCheckDbHeaders**で示されるよりも大きい場合は、この関数は、アプリケーションが不必要をチェックするいくつかを示すために Windows イベント ログに警告を作成します。データベースのページが 2 回以上。 この場合、ただし、 **ErrTerm**関数は成功します。 
+**ErrCheckDbPages** でチェックしたデータベース ページの数が **ErrCheckDbHeaders** で示されている数よりも多い場合、この関数は、アプリケーションが一部のデータベース ページを複数回にわたり不必要にチェックした可能性を示す警告を Windows イベント ログに作成します。 ただし、この場合には **ErrTerm** 関数は成功します。 
   
-**CChkSGFiles**オブジェクトは、 **ErrInit**に登録されているログ ファイルが実際にチェック アウトするかどうかも決定します。 表示しない場合は、すべてのログが正常にチェック、 **ErrTerm**関数はエラーを返します。 
+また、**CChkSGFiles** オブジェクトは **ErrInit** に登録されたログ ファイルが実際にチェックされたかどうかを判別します。 正常にチェックされなかったログがあると、**ErrTerm** 関数はエラーを返します。 
   
-**ErrTerm**にエラーが返されるときも、 **ErrInit**に登録されているすべてのデータベースの検証の状態をチェックすることが見つかると、最初のエラーになります。
+**ErrTerm** がエラーを返す場合、この関数は **ErrInit** に登録されているすべてのデータベースの検証状態をチェックしますが、このエラーが最初に検出されます。
   
-マルチ スレッド アプリケーションで CHKSGFILES を使用する場合は、シングル スレッド アプリケーションの部分に、 **ErrTerm**関数を呼び出す必要があり、呼び出すことができます 1 回の**CCheckSGFiles**オブジェクトごとに。 
+マルチスレッドアプリケーションで CHKSGFILES を使用している場合は、アプリケーションの単一スレッドの部分で**Errterm**関数を呼び出す必要があり、 **CCheckSGFiles**オブジェクトごとに1回だけ呼び出すことができます。 
   
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>Requirements
 
-Exchange 2013 には、CHKSGFILES の 64 ビット バージョンにはのみが含まれます。
+Exchange 2013 には、CHKSGFILES の64ビットバージョンのみが含まれています。
   
 アプリケーションを実行しているアカウントには、確認するデータベースとログ ファイルに対する読み取りアクセス許可が必要です。
   

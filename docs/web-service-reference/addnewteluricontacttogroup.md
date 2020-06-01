@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: cff8ef19-3e19-4107-9b35-c8a2b87a41bc
-description: AddNewTelUriContactToGroup 要素は、AddNewTelUriContactToGroup の WSDL 操作の入力データを指定します。
-ms.openlocfilehash: d99d557530397aa9edd2c23b595bdcb348783dd4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: AddNewTelUriContactToGroup 要素は、AddNewTelUriContactToGroup WSDL 操作の入力データを指定します。
+ms.openlocfilehash: 151c5b1dab7a3ffc9630fb4e4192b90bd1d4ae38
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759292"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464932"
 ---
 # <a name="addnewteluricontacttogroup"></a>AddNewTelUriContactToGroup
 
-**AddNewTelUriContactToGroup**要素は、 **AddNewTelUriContactToGroup**の WSDL 操作の入力データを指定します。 
+**AddNewTelUriContactToGroup**要素は、 **AddNewTelUriContactToGroup** WSDL 操作の入力データを指定します。 
   
 ```XML
 <AddNewTelUriContactToGroup>
@@ -29,7 +29,7 @@ ms.locfileid: "19759292"
 ```
 
  **AddNewTelUriContactToGroupType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -39,29 +39,29 @@ ms.locfileid: "19759292"
   
 ### <a name="child-elements"></a>子要素
 
-[TelUriAddress](teluriaddress.md) | [ImContactSipUriAddress](imcontactsipuriaddress.md) | [ImTelephoneNumber](imtelephonenumber.md) | [グループ Id](groupid.md)
+[Teluriaddress](teluriaddress.md)  | [Imcontactsi紫 Iaddress](imcontactsipuriaddress.md)  | [ImTelephoneNumber](imtelephonenumber.md)  | [GroupId](groupid.md)
   
 ### <a name="parent-elements"></a>親要素
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [AddNewTelUriContactToGroup 操作](addnewteluricontacttogroup-operation.md)
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

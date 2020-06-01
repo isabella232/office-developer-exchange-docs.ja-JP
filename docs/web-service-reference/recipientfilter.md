@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 956c287a-a38a-49a7-a877-6d2088dfbc06
-description: RecipientFilter 要素は、指定したメッセージ追跡レポートを使用する受信者のアドレスを表します。
-ms.openlocfilehash: c31ed469132b110a690416b112d5e4e96e44c501
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 受信者 Filter 要素は、指定されたメッセージ追跡レポートで使用する受信者のアドレスを表します。
+ms.openlocfilehash: 945adf9155434e0690debfccc7caf70ba0cb94ec
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832972"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465808"
 ---
 # <a name="recipientfilter"></a>RecipientFilter
 
-**RecipientFilter**要素は、指定したメッセージ追跡レポートを使用する受信者のアドレスを表します。 
+受信者**filter**要素は、指定されたメッセージ追跡レポートで使用する受信者のアドレスを表します。 
   
 ```XML
  <RecipientFilter>
@@ -34,7 +34,7 @@ ms.locfileid: "19832972"
 ```
 
  **EmailAddressType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,36 +44,36 @@ ms.locfileid: "19832972"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[名 (EmailAddressType)](name-emailaddresstype.md) <br/> |メールボックス ユーザーの名前を表します。 この要素はオプションです。  <br/> |
-|[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |メールボックスのユーザーのプライマリ簡易メール転送プロトコル (SMTP) アドレスを定義します。 この要素はオプションです。  <br/> |
-|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |この受信者へのルーティング プロトコルを表します。 既定値は、SMTP です。 この要素はオプションです。  <br/> |
-|[MailboxType](mailboxtype.md) <br/> |電子メール アドレスで表されるメールボックスの種類を表します。 この要素はオプションです。  <br/> |
-|[ItemId](itemid.md) <br/> |ユーザーのアドレス帳フォルダーから受信者の連絡先または個人用配布リストの項目の識別子を定義します。 この要素はオプションです。  <br/> |
+|[Name (EmailAddressType)](name-emailaddresstype.md) <br/> |メールボックスユーザーの名前を表します。 この要素は省略できます。  <br/> |
+|[EmailAddress (非 Emptystringtype)](emailaddress-nonemptystringtype.md) <br/> |メールボックスユーザーのプライマリ簡易メール転送プロトコル (SMTP) アドレスを定義します。 この要素は省略できます。  <br/> |
+|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |この受信者のルーティングプロトコルを表します。 既定値は SMTP です。 この要素は省略できます。  <br/> |
+|[MailboxType](mailboxtype.md) <br/> |電子メールアドレスによって表されるメールボックスの種類を表します。 この要素は省略できます。  <br/> |
+|[ItemId](itemid.md) <br/> |ユーザーの連絡先フォルダーにある受信者の連絡先またはプライベート配布リストのアイテム識別子を定義します。 この要素は省略できます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetMessageTrackingReport](getmessagetrackingreport.md) <br/> |レポートを指定した ID の追跡を取得するために[GetMessageTrackingReport 操作](getmessagetrackingreport-operation.md)の要求が含まれています  <br/> |
+|[GetMessageTrackingReport](getmessagetrackingreport.md) <br/> |指定された ID の完全なメッセージ追跡レポートを取得する[Getmessagetrackingreport 操作](getmessagetrackingreport-operation.md)の要求を含みます。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -82,5 +82,5 @@ ms.locfileid: "19832972"
 [GetMessageTrackingReport 操作](getmessagetrackingreport-operation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

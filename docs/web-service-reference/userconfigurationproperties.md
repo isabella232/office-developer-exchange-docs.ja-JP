@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: c143a6ec-62ad-4d48-b844-b1ad88054bc1
-description: UserConfigurationProperties 要素は、GetUserConfiguration の操作で取得するプロパティの型を指定します。
-ms.openlocfilehash: 4f993765bb7c36f28a41a3f2fa7e28698a3f709e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: UserConfigurationProperties 要素は、GetUserConfiguration 操作で取得するプロパティの種類を指定します。
+ms.openlocfilehash: af6bee64516a7410d96ecc7581e8e819f550ddc1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839928"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466494"
 ---
 # <a name="userconfigurationproperties"></a>UserConfigurationProperties
 
-**UserConfigurationProperties**要素は、GetUserConfiguration の操作で取得するプロパティの型を指定します。 
+**Userconfigurationproperties**要素は、getuserconfiguration 操作で取得するプロパティの種類を指定します。 
   
 ```xml
 <UserConfigurationProperties>Id | Dictionary | XmlData | BinaryData | All</UserConfigurationProperties>
 ```
 
  **UserConfigurationPropertyType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,36 +44,36 @@ ms.locfileid: "19839928"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetUserConfiguration](getuserconfiguration.md) <br/> |ユーザーの構成オブジェクトを取得する要求を指定します。  <br/> |
+|[GetUserConfiguration](getuserconfiguration.md) <br/> |ユーザー構成オブジェクトを取得する要求を指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-次の表は、 **UserConfigurationProperties**要素の値を一覧します。 
+次の表に、 **Userconfigurationproperties**要素に指定できる値を示します。 
   
 |**値**|**説明**|
 |:-----|:-----|
-|ID  <br/> |識別子のプロパティを指定します。  <br/> |
-|Dictionary  <br/> |ディクショナリ プロパティの種類を指定します。  <br/> |
-|XmlData  <br/> |プロパティの XML データ型を指定します。  <br/> |
-|データ  <br/> |バイナリ データのプロパティの種類を指定します。  <br/> |
-|All  <br/> |識別子、ディクショナリ、XML データ、およびバイナリ データのプロパティの種類を指定します。  <br/> |
+|ID  <br/> |Identifier プロパティを指定します。  <br/> |
+|Dictionary  <br/> |ディクショナリのプロパティの種類を指定します。  <br/> |
+|XmlData  <br/> |XML データプロパティの種類を指定します。  <br/> |
+|BinaryData  <br/> |バイナリデータのプロパティの種類を指定します。  <br/> |
+|すべて  <br/> |識別子、辞書、XML データ、およびバイナリデータのプロパティの種類を指定します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

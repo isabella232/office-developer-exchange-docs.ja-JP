@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: cdc09dda-ce20-4504-880d-9da6025ca812
-description: ResponseType 要素は、受信した会議の受信者の応答の種類を表します。
-ms.openlocfilehash: fcfd47cb988ee00303b2c4205cb3d058cb6599b2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ResponseType 要素は、会議に対して受信される受信者応答の種類を表します。
+ms.openlocfilehash: ef8183b71e267a20427873ca44b269b828686cbe
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833200"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465395"
 ---
 # <a name="responsetype"></a>ResponseType
 
-**ResponseType**要素は、受信した会議の受信者の応答の種類を表します。 
+**Responsetype**要素は、会議に対して受信される受信者応答の種類を表します。 
   
 ```xml
 <ResponseType/>
 ```
 
  **ResponseTypeType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,44 +44,44 @@ ms.locfileid: "19833200"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Attendee](attendee.md) <br/> |出席者および会議のためのリソースを表します。  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |Exchange ストア内の会議の取り消し通知を表します。  <br/> |
-|[MeetingMessage](meetingmessage.md) <br/> |Exchange ストア内の会議のメッセージを表します。  <br/> |
+|[出席者](attendee.md) <br/> |会議の出席者とリソースを表します。  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |Exchange ストアの会議の取り消しを表します。  <br/> |
+|[MeetingMessage](meetingmessage.md) <br/> |Exchange ストア内の会議メッセージを表します。  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議出席依頼を表します。  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |Exchange ストア内の会議の返信を表します。  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |Exchange ストア内の会議の応答を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は必須です。 この要素の使用可能なテキスト値は、次のように。
+テキスト値は必須です。 この要素に使用できるテキスト値は次のとおりです。
   
-- Unknown
+- 不明
     
-- Organizer
+- 開催者
     
-- Tentative
+- 仮の予定
     
 - 承諾
     
-- 辞退
+- 同意
     
 - NoResponseReceived
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

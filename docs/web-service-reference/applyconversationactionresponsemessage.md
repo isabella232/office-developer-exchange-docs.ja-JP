@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: a09edc89-7f2f-4846-a3a5-06694c97b9f6
-description: ApplyConversationActionResponseMessage 要素には、ステータスと ApplyConversationAction の操作要求の結果が含まれています。
-ms.openlocfilehash: d8c5571cfc9c2ea6aaf09cb26a0e47e4abfc3f40
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ApplyConversationActionResponseMessage 要素には、ApplyConversationAction 操作要求の状態と結果が含まれています。
+ms.openlocfilehash: 377aee12d8cc7d6b4aff8d6fc2a6cb67b3bcd10b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759414"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464694"
 ---
 # <a name="applyconversationactionresponsemessage"></a>ApplyConversationActionResponseMessage
 
-**ApplyConversationActionResponseMessage**要素には、ステータスと[ApplyConversationAction の操作](applyconversationaction-operation.md)要求の結果が含まれています。  
+**ApplyConversationActionResponseMessage**要素には、 [ApplyConversationAction 操作](applyconversationaction-operation.md)要求の状態と結果が含まれています。  
   
 - [ApplyConversationActionResponse](applyconversationactionresponse.md)
 - [ResponseMessages](responsemessages.md)
@@ -37,7 +37,7 @@ ms.locfileid: "19759414"
 ```
 
  **ApplyConversationActionResponseMessageType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -45,54 +45,54 @@ ms.locfileid: "19759414"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**ResponseClass** <br/> | 応答のステータスについて説明します。<br/><br/>次の値は、この属性の有効です。<ul><li>成功</li><li>警告</li><li>エラー</li></ul> |
+|**ResponseClass** <br/> | 応答の状態を表します。<br/><br/>この属性には、次の値が有効です。<ul><li>Success</li><li>警告</li><li>Error</li></ul> |
    
 #### <a name="responseclass-attribute-values"></a>ResponseClass 属性の値
 
 |**値**|**説明**|
 |:-----|:-----|
-|**Success** <br/> |満了する要求をについて説明します。  <br/> |
-|**Warning** <br/> | 処理されなかった要求をについて説明します。 警告は、要求内のアイテムを処理し、それ以降の項目を処理できませんでした、エラーが発生した場合に返される場合があります。<br/><br/>警告の送信元の例を次に示します。<ul><li>Exchange ストアは、バッチの実行中にオフラインです。</li><li>Active Directory ドメイン サービス (AD DS) では、オフラインです。</li><li>メールボックスは移動されました。</li><li>メッセージ データベース (MDB) は、オフラインです。</li><li>パスワードの有効期限が切れています。</li><li>クォータを超えています。</li></ul> |
-|**Error** <br/> | 満たせない要求をについて説明します。<br/><br/>次に、エラーのソースの例を示します。  <ul><li>無効な属性または要素</li><li>属性または要素の範囲を超えています。</li><li>不明なタグ  </li><li>属性または要素のコンテキストでは有効ではないです。</li><li>任意のクライアントから不正なアクセスの試行</li><li>有効なクライアント側の呼び出しへの応答でサーバー側の障害</li></ul>エラーに関する情報は、 [ResponseCode](responsecode.md)および[メッセージ テキスト](messagetext.md)の要素を参照しています。  <br/> |
+|**Success** <br/> |満たされる要求を記述します。  <br/> |
+|**Warning** <br/> | 処理されなかった要求を示します。 要求内のアイテムが処理され、その後のアイテムを処理できなかったときにエラーが発生した場合は、警告が返されることがあります。<br/><br/>警告のソースの例を次に示します。<ul><li>Exchange ストアは、バッチ処理中にオフラインになります。</li><li>Active Directory ドメインサービス (AD DS) がオフラインになっています。</li><li>メールボックスが移動されました。</li><li>メッセージデータベース (MDB) がオフラインになっています。</li><li>パスワードの有効期限が切れています。</li><li>クォータが制限を超えています。</li></ul> |
+|**Error** <br/> | 満たされない要求を記述します。<br/><br/>エラーのソースの例を次に示します。  <ul><li>無効な属性または要素</li><li>範囲外の属性または要素</li><li>不明なタグ  </li><li>コンテキストで有効ではない属性または要素</li><li>クライアントによる権限のないアクセス試行</li><li>有効なクライアント側の呼び出しに応答した場合のサーバー側エラー</li></ul>エラーに関する情報については、応答[secの](responsecode.md)要素と[messagetext](messagetext.md)要素を参照してください。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[MessageText](messagetext.md) <br/> |応答のステータスの説明を提供します。  <br/> |
-|[ResponseCode](responsecode.md) <br/> |要求で発生した特定のエラーを識別するエラー コードを提供します。  <br/> |
-|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在使用されていない、将来使用するために予約されています。 この要素には、0 の値が含まれています。  <br/> |
-|[MessageXml](messagexml.md) <br/> |追加のエラー応答情報を提供します。  <br/> |
+|[MessageText](messagetext.md) <br/> |応答の状態を説明するテキストを提供します。  <br/> |
+|[ResponseCode](responsecode.md) <br/> |要求で発生した特定のエラーを識別するエラーコードを提供します。  <br/> |
+|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在未使用で、今後の使用のために予約されています。 この要素には0の値が含まれています。  <br/> |
+|[MessageXml](messagexml.md) <br/> |エラー応答に関する追加情報を提供します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Exchange Web サービス要求に対する応答メッセージが含まれています。  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Exchange Web サービス要求に対する応答メッセージを含みます。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web Services.This の要素がホストをで Exchange Server 2010 Service Pack 1 (SP1) を導入する IIS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
 ### <a name="version-differences"></a>バージョンの相違点
 
-Exchange のビルド 15.00.0986.00 以降のバージョンでは、 **ApplyConversationActionResponseMessage**要素は型**ApplyConversationActionResponseMessageType**のです。 以前のバージョンでは、型**ResponseMessageType**の要素です。
+Build 15.00.0986.00 以降のバージョンの Exchange では、 **ApplyConversationActionResponseMessage**要素の型は**ApplyConversationActionResponseMessageType**です。 以前のバージョンでは、要素の種類は**Responsemessagetype**です。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [ApplyConversationAction 操作](applyconversationaction-operation.md)
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

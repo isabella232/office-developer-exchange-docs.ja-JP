@@ -1,5 +1,5 @@
 ---
-title: RetentionPolicyTag
+title: New-retentionpolicytag
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f46679d0-9236-41e2-8624-72300079c67c
-description: RetentionPolicyTag 要素は、メールボックス アイテムの保持ポリシーを指定します。
-ms.openlocfilehash: 2525f6d7a0ca583342d28dd9f4857a69b3a8c05a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: New-retentionpolicytag 要素は、メールボックスアイテムのアイテム保持ポリシーを指定します。
+ms.openlocfilehash: 3ece841e14e6cf11ab15e4a4d8b83a778ae32e46
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833226"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465178"
 ---
-# <a name="retentionpolicytag"></a>RetentionPolicyTag
+# <a name="retentionpolicytag"></a>New-retentionpolicytag
 
-**RetentionPolicyTag**要素は、メールボックス アイテムの保持ポリシーを指定します。 
+**New-retentionpolicytag**要素は、メールボックスアイテムのアイテム保持ポリシーを指定します。 
   
 ```XML
 <RetentionPolicyTag>
@@ -34,7 +34,7 @@ ms.locfileid: "19833226"
 ```
 
  **RetentionPolicyTagType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,25 +44,25 @@ ms.locfileid: "19833226"
   
 ### <a name="child-elements"></a>子要素
 
-[表示名 (文字列)](displayname-string.md) | [RetentionId](retentionid.md) | [RetentionPeriod](retentionperiod.md) | [型 (ElcFolderType)](type-elcfoldertype.md) | [RetentionAction](retentionaction.md) | [説明](description.md) | [IsVisible](isvisible.md)  |  [OptedInto](optedinto.md) | [IsArchive](isarchive.md)
+[DisplayName (文字列)](displayname-string.md)  | [RetentionId](retentionid.md)  | [保存期間](retentionperiod.md)  | [Type (ElcFolderType)](type-elcfoldertype.md)  | [Retentionaction](retentionaction.md)  | [説明](description.md)  | [IsVisible](isvisible.md)  | [Optedinto](optedinto.md)  | [Isarchive](isarchive.md)
   
 ### <a name="parent-elements"></a>親要素
 
 [RetentionPolicyTags](retentionpolicytags.md)
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

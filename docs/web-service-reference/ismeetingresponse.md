@@ -1,5 +1,5 @@
 ---
-title: IsMeetingResponse
+title: Is会議の応答
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 85090943-81c6-4fbe-a2db-007dced6a4cf
-description: IsMeetngResponsequest 要素は、受信メッセージに適用する条件または例外の順序で会議の返信をする必要があるかどうかを示します。
-ms.openlocfilehash: 9040859452a48916a969b6d8e4e370b5785c1c1a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: IsMeetngResponsequest 要素は、条件または例外を適用するために、受信メッセージが会議の応答である必要があるかどうかを示します。
+ms.openlocfilehash: 40714b7e926768f55207d870b79f21f07163bb37
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832053"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465934"
 ---
-# <a name="ismeetingresponse"></a>IsMeetingResponse
+# <a name="ismeetingresponse"></a>Is会議の応答
 
-**IsMeetngResponsequest**要素は、受信メッセージに適用する条件または例外の順序で会議の返信をする必要があるかどうかを示します。 
+**IsMeetngResponsequest**要素は、条件または例外を適用するために、受信メッセージが会議の応答である必要があるかどうかを示します。 
   
 ```XML
 <IsMeetingResponse/>true | false</IsMeetingResponse>
 ```
 
- **ブール型 (Boolean)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,29 +44,29 @@ ms.locfileid: "19832053"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[条件](conditions.md) <br/> |条件を表しますが、満たされるとときに、ルールのルールの処理をトリガーします。  <br/> |
-|[Exceptions](exceptions.md) <br/> |受信トレイ ルールの使用可能なルールの例外条件をすべてを表します。  <br/> |
+|[条件](conditions.md) <br/> |ルールのルールの処理を開始するときに実行される条件を表します。  <br/> |
+|[例外](exceptions.md) <br/> |受信トレイルールに対して使用可能なすべてのルールの例外条件を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**True**の場合、テキスト値は、メッセージで会議の返信をするために条件または例外を適用する必要があることを示します。 **False**のテキスト値は、メッセージでは、会議の返信を適用する場合の条件または例外の順にならないということを示します。 
+**True**のテキスト値は、条件または例外を適用するために、メッセージが会議の応答である必要があることを示します。 テキスト値が**false**の場合は、条件または例外を適用するために、メッセージが会議出席依頼の返信ではない必要があることを示します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

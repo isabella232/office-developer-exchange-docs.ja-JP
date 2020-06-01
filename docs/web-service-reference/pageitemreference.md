@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: efeb5a93-c77f-44f1-b9af-8759acd2c8b5
-description: PageItemReference 要素は、ページ アイテムへの参照を指定します。
-ms.openlocfilehash: 36f22fee2cd8ef4743476e7d12512504daee12e4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: PageItemReference 要素は、ページアイテムの参照を指定します。
+ms.openlocfilehash: ff53f82f6346e24f7d73373330ce4f5abb5ec475
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832683"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465647"
 ---
 # <a name="pageitemreference"></a>PageItemReference
 
-**PageItemReference**要素は、ページ アイテムへの参照を指定します。 
+**Pageitemreference**要素は、ページアイテムの参照を指定します。 
   
 ```XML
 <PageItemReference></PageItemReference>
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,21 +42,21 @@ ms.locfileid: "19832683"
   
 ## <a name="text-value"></a>テキスト値
 
-**PageItemReference**要素のテキスト値は、ページ アイテムへの参照です。 
+**Pageitemreference**要素のテキスト値は、ページアイテムの参照です。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

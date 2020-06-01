@@ -1,5 +1,5 @@
 ---
-title: RetentionPeriod
+title: 保存期間
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 49db6a4f-4a20-4495-8f76-d756cc895b66
-description: RetentionPeriod 要素では、リテンション ・ ポリシーが有効になっている日数を指定します。
-ms.openlocfilehash: cd1c667d21c4dd47ed282076ce7843150389c46e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 保存期間要素は、アイテム保持ポリシーが有効になる日数を指定します。
+ms.openlocfilehash: c9d049e2c1ed4e8abdec9faa7b8e365468d3d2ac
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833220"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465192"
 ---
-# <a name="retentionperiod"></a>RetentionPeriod
+# <a name="retentionperiod"></a>保存期間
 
-**RetentionPeriod**要素では、リテンション ・ ポリシーが有効になっている日数を指定します。 
+**保存期間**要素は、アイテム保持ポリシーが有効になる日数を指定します。 
   
 ```XML
 <RetentionPeriod></RetentionPeriod>
 ```
 
- **整数**
-## <a name="attributes-and-elements"></a>属性および要素
+ **以外**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -38,25 +38,25 @@ ms.locfileid: "19833220"
   
 ### <a name="parent-elements"></a>親要素
 
-[RetentionPolicyTag](retentionpolicytag.md)
+[New-retentionpolicytag](retentionpolicytag.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**RetentionPeriod**要素のテキスト値は、アイテム保持ポリシーが有効になっている日数です。 
+**保存期間**要素のテキスト値は、アイテムに対してアイテム保持ポリシーが有効になっている日数です。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

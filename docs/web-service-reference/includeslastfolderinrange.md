@@ -1,5 +1,5 @@
 ---
-title: IncludesLastFolderInRange
+title: フォルダーに Lastfolderinrange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 95837904-17be-49b7-831c-de4fb20fccfb
-description: IncludesLastFolderInRange 要素は、最後の項目を同期するが、応答に含まれているかどうかを示します。
-ms.openlocfilehash: 6c4af5b394ee2fab6bc98f7bb6afa9ee80551869
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: この要素は、最後に同期する項目が応答に含まれているかどうかを示します。
+ms.openlocfilehash: 9ba401cf639ef7988fa7a1437a64d09ff54c5960
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831908"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466452"
 ---
-# <a name="includeslastfolderinrange"></a>IncludesLastFolderInRange
+# <a name="includeslastfolderinrange"></a>フォルダーに Lastfolderinrange
 
-**IncludesLastFolderInRange**要素は、最後の項目を同期するが、応答に含まれているかどうかを示します。 
+この**要素は**、最後に同期する項目が応答に含まれているかどうかを示します。 
   
 [SyncFolderHierarchyResponse](syncfolderhierarchyresponse.md)
   
@@ -29,14 +29,14 @@ ms.locfileid: "19831908"
   
 [SyncFolderHierarchyResponseMessage](syncfolderhierarchyresponsemessage.md)
   
-[IncludesLastFolderInRange](includeslastfolderinrange.md)
+[フォルダーに Lastfolderinrange](includeslastfolderinrange.md)
   
 ```xml
 <IncludesLastFolderInRange/>
 ```
 
- **ブール型 (Boolean)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -52,24 +52,24 @@ ms.locfileid: "19831908"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[SyncFolderHierarchyResponseMessage](syncfolderhierarchyresponsemessage.md) <br/> |SyncFolderHierarchy 要求の結果ステータスを格納します。  <br/> |
+|[SyncFolderHierarchyResponseMessage](syncfolderhierarchyresponsemessage.md) <br/> |SyncFolderHierarchy 要求の状態と結果を格納します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-ブール値を表す文字列値は、必要があります。
+ブール値を表すテキスト値が必要です。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -81,5 +81,5 @@ MicrosoftExchange Server 2007 がインストールされているクライア�
 
   [Exchange 用 EWS リファレンス](ews-reference-for-exchange.md)
   
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

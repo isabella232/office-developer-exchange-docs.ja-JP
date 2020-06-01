@@ -12,16 +12,16 @@ api_type:
 - schema
 ms.assetid: 34602cb1-dc33-4552-a98c-3e77f614daa3
 description: SearchParameters 要素は、検索フォルダーを定義するパラメーターを表します。
-ms.openlocfilehash: b534574a1292d78c8df99f5186990b114fc4e70a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: cd9f255621b17d01113392e67a0301b01b70f326
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833299"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466669"
 ---
 # <a name="searchparameters"></a>SearchParameters
 
-**SearchParameters**要素は、検索フォルダーを定義するパラメーターを表します。 
+**Searchparameters**要素は、検索フォルダーを定義するパラメーターを表します。 
   
 ```xml
 <SearchParameters Traversal="">
@@ -31,7 +31,7 @@ ms.locfileid: "19833299"
 ```
 
  **SearchParametersType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -39,37 +39,37 @@ ms.locfileid: "19833299"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**トラバーサル** <br/> |検索フォルダーがフォルダー階層を走査する方法について説明します。 オプションは、**深い**または**簡易**検索のいずれかのです。  <br/> |
+|**走査** <br/> |検索フォルダーがフォルダー階層をトラバースする方法について説明します。 オプションは、 **Deep**検索または**浅い**検索のどちらかです。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[Restriction](restriction.md) <br/> |制限またはアイテムまたはフォルダーの FindItem/FindFolder、検索フォルダーの操作にフィルターを適用するために使用するクエリを表します。  <br/> |
-|[BaseFolderIds](basefolderids.md) <br/> |検索フォルダーの内容を判断するためにマイニングするフォルダーのコレクションを表します。  <br/> |
+|[Restriction](restriction.md) <br/> |FindItem/FindFolder および search folder 操作のアイテムまたはフォルダーをフィルター処理するために使用される制限またはクエリを表します。  <br/> |
+|[BaseFolderIds](basefolderids.md) <br/> |検索フォルダーのコンテンツを特定するためにマイニングされるフォルダーのコレクションを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[SearchFolder](searchfolder.md) <br/> |メールボックスに格納されている検索フォルダーを表します。  <br/> |
+|[SearchFolder](searchfolder.md) <br/> |メールボックスに含まれている検索フォルダーを表します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

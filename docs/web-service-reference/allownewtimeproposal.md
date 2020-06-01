@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: afdb4ec9-2daf-48a1-a0bb-a7f647f212f2
-description: AllowNewTimeProposal 要素は、かどうか会議の新しい日時を提案できるは会議の出席者でことを示します。
-ms.openlocfilehash: d5deed5044769c477ffe54cc533d5261ba2e1932
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: AllowNewTimeProposal 要素は、新しい会議日時を出席者の会議のために提案できるかどうかを示します。
+ms.openlocfilehash: b3f2c569bced08c66144680a4fddd6e8bac0cecf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759311"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464806"
 ---
 # <a name="allownewtimeproposal"></a>AllowNewTimeProposal
 
-**AllowNewTimeProposal**要素は、かどうか会議の新しい日時を提案できるは会議の出席者でことを示します。 
+**Allownewtimeproposal**要素は、新しい会議日時を出席者の会議のために提案できるかどうかを示します。 
   
 ```xml
 <AllowNewTimeProposal/>
 ```
 
- **ブール型 (Boolean)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -45,31 +45,31 @@ ms.locfileid: "19759311"
 |**要素**|**説明**|
 |:-----|:-----|
 |[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議を表します。  <br/> |
-|[カレンダー項目](calendaritem.md) <br/> |Exchange 予定表アイテムを表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-ブール値を表す文字列値は、必要があります。 **True**の場合は、会議の時間の新しい提案を作成することができることを示します**false**の値は、新しい日時の指定が許可されていないことを示します。 開催者は、会議出席依頼でこの値を設定します。 
+ブール値を表すテキスト値が必要です。 **True**の値は、会議時間の新しい提案を作成できることを示します。値が**false**の場合は、新しい時間提案が許可されていないことを示します。 開催者は、会議出席依頼にこの値を設定します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-AllowNewTimeProposal プロパティは、開催者の予定表アイテムの読み取り-書き込み可能です。 会議出席依頼と出席者の予定表アイテムに対しては読み取り専用をお勧めします。
+AllowNewTimeProposal プロパティは、開催者の予定表アイテムに対しては読み取り/書き込み可能です。 会議出席依頼と出席者の予定表アイテムに対しては読み取り専用になります。
   
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 > [!NOTE]
-> Exchange Web サービスでは、新しい時間の提案のメッセージをサポートしていません。 新しい時間の提案のメッセージに関連するプロパティを取得するには、拡張プロパティを使用します。 
+> Exchange Web サービスは新しい時間提案メッセージをサポートしていません。 新しい時間提案メッセージに関連するプロパティを取得するには、拡張プロパティを使用します。 
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

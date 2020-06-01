@@ -8,19 +8,19 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 8949a9b7-1871-4031-9a86-61636e695e4c
-description: OABUrl 要素は、Exchange トポロジの場合、オフライン アドレス帳の構成サーバーの URL を指定します。
-ms.openlocfilehash: dda622e24892f2a8f0b2186483683ff6d3c28a22
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: OABUrl 要素は、Exchange トポロジのオフラインアドレス帳構成サーバーの URL を指定します。
+ms.openlocfilehash: ea6efc3160a130a2293fa09534bfd0f76171e7cd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832633"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465892"
 ---
 # <a name="oaburl-pox"></a>OABUrl (POX)
 
-**OABUrl**要素は、Exchange トポロジの場合、オフライン アドレス帳の構成サーバーの URL を指定します。 
+**OABUrl**要素は、Exchange トポロジのオフラインアドレス帳構成サーバーの URL を指定します。 
   
-[(POX) を自動検出](autodiscover-pox.md)
+[自動検出 (POX)](autodiscover-pox.md)
   
 [応答 (POX)](response-pox.md)
   
@@ -34,7 +34,7 @@ ms.locfileid: "19832633"
 <OABUrl/>
 ```
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -50,15 +50,15 @@ ms.locfileid: "19832633"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
+|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、Exchange トポロジの場合、オフライン アドレス帳の構成サーバーの URL を指定します。
+Text 値は、Exchange トポロジのオフラインアドレス帳構成サーバーの URL を指定します。
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[交換の POX の自動検出の XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+[Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
 

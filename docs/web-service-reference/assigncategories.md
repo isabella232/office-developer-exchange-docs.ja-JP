@@ -1,5 +1,5 @@
 ---
-title: AssignCategories
+title: カテゴリを割り当てる
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - schema
 ms.assetid: f5c73fed-7b00-446d-8296-71a0c86e7fc6
-description: AssignCategories 要素は、電子メール メッセージにスタンプされているカテゴリを表します。
-ms.openlocfilehash: 96c77306d649677c1be745e8cadc2886e4a84c8a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 割り当てカテゴリ要素は、電子メールメッセージにスタンプされる分類項目を表します。
+ms.openlocfilehash: e2dad0e2ef46421ae92a0d2826d161e5e2af3b93
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759441"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464743"
 ---
-# <a name="assigncategories"></a>AssignCategories
+# <a name="assigncategories"></a>カテゴリを割り当てる
 
-**AssignCategories**要素は、電子メール メッセージにスタンプされているカテゴリを表します。 
+割り当て**カテゴリ**要素は、電子メールメッセージにスタンプされる分類項目を表します。 
   
 - [ルール (RuleType)](rule-ruletype.md)
   
-- [アクション](actions.md)
+- [Actions](actions.md)
   
 ```XML
 <AssignCategories>
@@ -34,7 +34,7 @@ ms.locfileid: "19759441"
 ```
 
  **ArrayOfStringsType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,34 +44,34 @@ ms.locfileid: "19759441"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[String](string.md) <br/> |1 つのカテゴリを識別する文字列が含まれています。  <br/> |
+|[String](string.md) <br/> |1つのカテゴリを識別する文字列を格納します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[アクション](actions.md) <br/> |条件が満たされるときに、メッセージに対して実行される使用可能なアクションのセットを表します。  <br/> |
+|[Actions](actions.md) <br/> |条件が満たされたときに、メッセージに対して実行できるアクションのセットを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

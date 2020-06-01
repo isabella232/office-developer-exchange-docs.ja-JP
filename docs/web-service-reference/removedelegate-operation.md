@@ -11,47 +11,47 @@ api_name:
 api_type:
 - schema
 ms.assetid: 1d42d5ff-8fde-4f8a-b18d-57b1ef7a946a
-description: RemoveDelegate 操作は、ユーザーのメールボックスから、1 つまたは複数のデリゲートを削除します。
-ms.openlocfilehash: 6f3371d19bd8a7fd967d4959d85037ae6b51f6aa
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: RemoveDelegate 操作は、ユーザーのメールボックスから1つ以上の代理人を削除します。
+ms.openlocfilehash: b2e342225e7e79c44dcd86b76b4b7d47b16b860b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833088"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466599"
 ---
 # <a name="removedelegate-operation"></a>RemoveDelegate 操作
 
-**RemoveDelegate**操作は、ユーザーのメールボックスから、1 つまたは複数のデリゲートを削除します。 
+**Removedelegate**操作は、ユーザーのメールボックスから1つ以上の代理人を削除します。 
   
 ## <a name="soap-headers"></a>SOAP ヘッダー
 
-**RemoveDelegate**操作が一覧表示され、次の表に記載されている SOAP ヘッダーを使用できます。 
+**Removedelegate**操作では、次の表に記載されている SOAP ヘッダーを使用できます。 
   
 |**Header**|**要素**|**説明**|
 |:-----|:-----|:-----|
-|偽装  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装するユーザーを識別します。  <br/> |
-|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |RFC3066 カルチャを使用してメールボックスへのアクセスを識別します。  <br/> |
-|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマのバージョンを識別します。  <br/> |
-|ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答するサーバーのバージョンを識別します。  <br/> |
+|偽装  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。  <br/> |
+|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |メールボックスへのアクセスに使用する RFC3066 カルチャを指定します。  <br/> |
+|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。  <br/> |
+|ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。  <br/> |
    
 ## <a name="removedelegate-request-example"></a>RemoveDelegate 要求の例
 
 ### <a name="description"></a>説明
 
-次のコード例は、user1 のメールボックスからの 2 つのデリゲートを削除する方法を示しています。 この例では、代理人のプライマリ SMTP アドレスを使用して 1 つのデリゲートが削除され、代理人のセキュリティ識別子 (SID) を使用して、もう 1 つが削除されます。
+次のコード例は、user1 メールボックスから2つの代理人を削除する方法を示しています。 この例では、代理人のプライマリ SMTP アドレスを使用して1つの委任が削除され、もう1つのデリゲートは代理人のセキュリティ識別子 (SID) を使用して削除されます。
   
 ### <a name="code"></a>コード
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1"/>
   </soap:Header>
   <soap:Body>
-    <RemoveDelegate xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-                    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <RemoveDelegate xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+                    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <Mailbox>
         <t:EmailAddress>user1@example.com</t:EmailAddress>
       </Mailbox>
@@ -70,13 +70,13 @@ ms.locfileid: "19833088"
 
 ### <a name="comments"></a>コメント
 
-**RemoveDelegate**操作では、指定した代理ユーザーのメールボックスを持つまたは Active Directory ディレクトリ サービスに存在するは必要はありません。 代理エントリが孤立した場合は、 **RemoveDelegate**操作が成功します。 
+**Removedelegate**操作では、指定された代理ユーザーがメールボックスを持っていたり、Active directory ディレクトリサービスに存在していたりする必要はありません。 委任エントリが孤立している場合、 **removedelegate**操作は成功します。 
   
-## <a name="removedelegate-response-example"></a>RemoveDelegate の応答の例
+## <a name="removedelegate-response-example"></a>RemoveDelegate 応答の例
 
 ### <a name="description"></a>説明
 
-**RemoveDelegate**要求に正常な応答を**RemoveDelegate**の応答の例を次に示します。 応答には、各メールボックスから削除されるデリゲートの**DelegateUserResponseMessageType**要素が含まれています。 
+**Removedelegate**応答の次の例は、 **removedelegate**要求に対する正常な応答を示しています。 応答には、メールボックスから削除された各代理人の**DelegateUserResponseMessageType**要素が含まれています。 
   
 ### <a name="code"></a>コード
 
@@ -91,12 +91,12 @@ ms.locfileid: "19833088"
                          MajorBuildNumber="206" 
                          MinorBuildNumber="0" 
                          Version="Exchange2007_SP1" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <m:RemoveDelegateResponse xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
+    <m:RemoveDelegateResponse xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
                               ResponseClass="Success" 
-                              xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+                              xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseCode>NoError</m:ResponseCode>
       <m:ResponseMessages>
         <m:DelegateUserResponseMessageType ResponseClass="Success">
@@ -111,11 +111,11 @@ ms.locfileid: "19833088"
 </soap:Envelope>
 ```
 
-## <a name="removedelegate-error-response-example"></a>RemoveDelegate エラー応答の例
+## <a name="removedelegate-error-response-example"></a>RemoveDelegate エラーの応答の例
 
 ### <a name="description"></a>説明
 
-**RemoveDelegate**エラー応答の次の使用例は、存在しないデリゲートを削除する要求の結果を示しています。 
+次に示す**Removedelegate**エラー応答の例は、存在しない代理人を削除する要求の結果を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -130,12 +130,12 @@ ms.locfileid: "19833088"
                          MajorBuildNumber="206"
                          MinorBuildNumber="0"
                          Version="Exchange2007_SP1"
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <m:RemoveDelegateResponse xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+    <m:RemoveDelegateResponse xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
                               ResponseClass="Success"
-                              xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+                              xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseCode>NoError</m:ResponseCode>
       <m:ResponseMessages>
         <m:DelegateUserResponseMessageType ResponseClass="Error">
@@ -153,5 +153,5 @@ ms.locfileid: "19833088"
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

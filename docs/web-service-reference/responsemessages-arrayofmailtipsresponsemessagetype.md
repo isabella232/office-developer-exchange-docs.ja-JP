@@ -1,5 +1,5 @@
 ---
-title: ResponseMessages (ArrayOfMailTipsResponseMessageType)
+title: ResponseMessages (Arrayofmailヒント Responsemessages)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 00878187-fac2-45b9-ba1c-df7ffac71089
-description: ResponseMessages 要素は、メール ヒントの応答メッセージの一覧を表します。
-ms.openlocfilehash: 80610af191f3fa600abe2ba8dbba2aac63f3ab1e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ResponseMessages 要素は、メールヒント応答メッセージのリストを表します。
+ms.openlocfilehash: 2db58029ead9332b832006bc81d751d77df54b07
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833192"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465451"
 ---
-# <a name="responsemessages-arrayofmailtipsresponsemessagetype"></a>ResponseMessages (ArrayOfMailTipsResponseMessageType)
+# <a name="responsemessages-arrayofmailtipsresponsemessagetype"></a>ResponseMessages (Arrayofmailヒント Responsemessages)
 
-**ResponseMessages**要素は、メール ヒントの応答メッセージの一覧を表します。 
+**Responsemessages**要素は、メールヒント応答メッセージのリストを表します。 
   
 ```XML
 <ResponseMessages>
@@ -29,8 +29,8 @@ ms.locfileid: "19833192"
 </ResponseMessages>
 ```
 
- **ArrayOfMailTipsResponseMessageType**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Arrayofmailヒント Responsemessagetype**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,39 +40,39 @@ ms.locfileid: "19833192"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[MailTipsResponseMessageType](mailtipsresponsemessagetype.md) <br/> |メールのヒントの設定を表します。  <br/> |
+|[Mailヒント Responsemessagetype](mailtipsresponsemessagetype.md) <br/> |メールヒントの設定を表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetMailTipsResponse](getmailtipsresponse.md) <br/> |[GetMailTips 操作](getmailtips-operation.md)の応答メッセージを表します。  <br/> |
+|[Getmailヒント応答](getmailtipsresponse.md) <br/> |[Getmailtips ヒント操作](getmailtips-operation.md)の応答メッセージを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[GetMailTips 操作](getmailtips-operation.md)
+[GetMailTips ヒント操作](getmailtips-operation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

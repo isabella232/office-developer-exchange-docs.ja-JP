@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: a67df9b9-8fdb-42de-b9c5-8377b71fa3d9
-description: AlternatePublicFolderItemId 要素は、別の識別子の形式に変換する、パブリック フォルダー アイテムの識別子について説明します。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。
-ms.openlocfilehash: 2240f3ff80c2c5b705611c3cf9286faa62d204cc
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: AlternatePublicFolderItemId 要素は、別の識別子形式に変換するためのパブリックフォルダーアイテム識別子を表します。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。
+ms.openlocfilehash: 11a9fafec78a9bd14e4d98982fd38954d45e4d1a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759318"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464771"
 ---
 # <a name="alternatepublicfolderitemid"></a>AlternatePublicFolderItemId
 
-**AlternatePublicFolderItemId**要素は、別の識別子の形式に変換する、パブリック フォルダー アイテムの識別子について説明します。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。 
+**Alternatepublicfolderitemid**要素は、別の識別子形式に変換するためのパブリックフォルダーアイテム識別子を表します。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。 
   
 - [ConvertId](convertid.md)
   
@@ -34,7 +34,7 @@ ms.locfileid: "19759318"
 ```
 
  **AlternatePublicFolderItemIdType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,20 +42,20 @@ ms.locfileid: "19759318"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|フォルダー Id  <br/> |パブリック フォルダーのアイテムを含むパブリック フォルダーを識別します。 この属性は、必要があります。  <br/> |
-|Format  <br/> |変換するパブリック フォルダーの項目の識別子を記述する形式を識別します。 この属性は、必要があります。  <br/> |
-|ItemId  <br/> |変換するパブリック フォルダーのアイテムの識別子です。 この属性は、必要があります。  <br/> |
+|FolderId  <br/> |パブリックフォルダーアイテムを含むパブリックフォルダーを識別します。 この属性は必須です。  <br/> |
+|Format  <br/> |変換するパブリックフォルダーアイテム識別子を説明する形式を識別します。 この属性は必須です。  <br/> |
+|ItemId  <br/> |識別子変換するパブリックフォルダーアイテム。 この属性は必須です。  <br/> |
    
-#### <a name="format-attribute-values"></a>属性の値を書式設定
+#### <a name="format-attribute-values"></a>書式属性値
 
 |**値**|**説明**|
 |:-----|:-----|
-|EwsLegacyId  <br/> |Exchange 2007 の最初のリリース版の Exchange Web サービスによって生成される識別子について説明します。  <br/> |
+|EwsLegacyId  <br/> |Exchange 2007 の最初のリリースバージョンで Exchange Web サービスによって生成された識別子について説明します。  <br/> |
 |EwsId  <br/> |Exchange 2007 SP1 以降の Exchange Web サービスによって生成される識別子について説明します。  <br/> |
-|EntryId  <br/> |PR_ENTRYID プロパティと同様に、MAPI 識別子をについて説明します。  <br/> |
-|HexEntryId  <br/> |PR_ENTRYID プロパティの 16 進数でエンコードされた表現を説明します。 これは、可用性の予定表のイベント識別子の形式です。  <br/> |
-|StoreId  <br/> |Exchange ストア識別子をについて説明します。  <br/> |
-|OwaId  <br/> |Outlook Web Access 識別子をについて説明します。  <br/> |
+|EntryId  <br/> |PR_ENTRYID プロパティのように、MAPI 識別子について説明します。  <br/> |
+|HexEntryId  <br/> |PR_ENTRYID プロパティの16進数でエンコードされた表現を記述します。 これは、可用性カレンダーイベント識別子の形式です。  <br/> |
+|StoreId  <br/> |Exchange ストア識別子について説明します。  <br/> |
+|OwaId  <br/> |Outlook Web Access 識別子を表します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -65,24 +65,24 @@ ms.locfileid: "19759318"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[SourceIds](sourceids.md) <br/> |変換するソース識別子が含まれます。 この要素は、Exchange 2007 SP1 で導入されました。  <br/> |
+|[SourceIds](sourceids.md) <br/> |変換するソース識別子を含みます。 この要素は、Exchange 2007 SP1 で導入されました。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [ConvertId 操作](convertid-operation.md)
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
-- [識別子に変換します。](http://msdn.microsoft.com/library/a5391746-b6ef-4f48-8fc8-8255258651aa%28Office.15%29.aspx)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [識別子の変換](https://msdn.microsoft.com/library/a5391746-b6ef-4f48-8fc8-8255258651aa%28Office.15%29.aspx)
 

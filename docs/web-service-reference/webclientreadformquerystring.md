@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 13e8871a-32a6-4bb9-9493-864c4c07efff
-description: WebClientReadFormQueryString 要素は、Outlook Web App 内の項目を参照するのには Outlook Web App エンドポイントへの連結に URL を表します。
-ms.openlocfilehash: 8096c14956d132a631b0ade6f2eae12a2bff9c06
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: WebClientReadFormQueryString 要素は、outlook web app エンドポイントに連結して Outlook Web App 内のアイテムを読み取るための URL を表します。
+ms.openlocfilehash: d7102ef288c0aafa6cdada09eda321b546edddb7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840007"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464981"
 ---
 # <a name="webclientreadformquerystring"></a>WebClientReadFormQueryString
 
-**WebClientReadFormQueryString**要素は、Outlook Web App 内の項目を参照するのには Outlook Web App エンドポイントへの連結に URL を表します。 
+**Webclientreadformquerystring**要素は、outlook web app エンドポイントに連結して Outlook web app 内のアイテムを読み取るための URL を表します。 
   
 ```XML
 <WebClientReadFormQueryString/>
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,47 +44,47 @@ ms.locfileid: "19840007"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[カレンダー項目](calendaritem.md) <br/> |Exchange 予定表アイテムを表します。  <br/> |
-|[Contact](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
+|[連絡先](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
 |[DistributionList](distributionlist.md) <br/> |配布リストを表します。  <br/> |
-|[アイテム](item.md) <br/> |Exchange ストア内の項目を表します。  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |Exchange ストア内の会議の取り消し通知を表します。  <br/> |
+|[アイテム](item.md) <br/> |Exchange ストア内のアイテムを表します。  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |Exchange ストア内の会議の取り消しを表します。  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Exchange ストア内の会議を表します。  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議出席依頼を表します。  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |Exchange ストア内の会議の返信を表します。  <br/> |
-|[Message](message-ex15websvcsotherref.md) <br/> |Exchange 電子メール メッセージを表します。  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |Exchange ストア内の会議の応答を表します。  <br/> |
+|[Message](message-ex15websvcsotherref.md) <br/> |Exchange 電子メールメッセージを表します。  <br/> |
 |[PostItem](postitem.md) <br/> |Exchange ストア内の投稿アイテムを表します。  <br/> |
-|[RemoveItem](removeitem.md) <br/> |Exchange ストアから項目を削除します。  <br/> |
-|[タスク](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
+|[RemoveItem](removeitem.md) <br/> |Exchange ストアからアイテムを削除します。  <br/> |
+|[Task](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-文字列を表す文字列値は、この要素を使用する場合に必要です。
+この要素を使用する場合は、文字列を表すテキスト値が必要です。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-Outlook Web App の URL のアイテム id は、アイテムの EWS 識別子です。 EWS の項目の識別子が URL エンコードし、アイテムを Outlook Web App の URL を取得するクエリ文字列に追加します。
+Outlook Web App URL のアイテム識別子は、アイテムの EWS 識別子です。 EWS のアイテム識別子を URL でエンコードし、クエリ文字列に追加して、アイテムの Outlook Web App の URL を取得することができます。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
 ### <a name="version-differences"></a>バージョンの相違点
 
-15.0.775.38 (CU3) をビルドするバージョンの Exchange が Exchange Server 2013 でメジャー バージョン 15 で開始および終了を Exchange オンライン バージョン 15.00.0775.009 も返さない正しいクエリ文字列のフラグメント**WebClientReadFormQueryString**要素にします。 
+メジャーバージョン15以降のバージョンの Exchange と Exchange Server 2013 のビルド 15.0.775.38 (CU3) および Exchange Online バージョン15.00.0775.009 は、 **Webclientreadformquerystring**要素に正しいクエリ文字列フラグメントを返しません。 
   
-15 の主要なバージョンより前のバージョンの Exchange では、Outlook Web App の Url のアイテム id は、Outlook Web App の識別子です。 15 のメジャー バージョンより前の Exchange のバージョンを対象とする場合は、識別子に変換する[ConvertId の操作](convertid-operation.md)を使用する必要です。 
+メジャーバージョン15より前のバージョンの Exchange では、Outlook Web App Url のアイテム識別子は Outlook Web App 識別子です。 メジャーバージョン15より前のバージョンの Exchange を対象としている場合は、変換[tid 操作](convertid-operation.md)を使用して識別子を変換する必要があります。 
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

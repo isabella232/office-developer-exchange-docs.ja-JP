@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 9a0859c5-fa23-4496-9b63-15c97818f857
-description: AlternateMailboxes 要素は、メールボックスを別のコレクションを表します。
-ms.openlocfilehash: 31662ebdcb8286feb506e59c10d45055d71d6652
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: AlternateMailboxes 要素は、代替メールボックスのコレクションを表します。
+ms.openlocfilehash: b68b0b15ad2a06d3be9e8fcbc3b9a4d61e4ee8be
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759315"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464841"
 ---
 # <a name="alternatemailboxes-soap"></a>AlternateMailboxes (SOAP)
 
-**AlternateMailboxes**要素は、メールボックスを別のコレクションを表します。 
+**AlternateMailboxes**要素は、代替メールボックスのコレクションを表します。 
   
 ```XML
 <AlternateMailboxes>
@@ -27,7 +27,7 @@ ms.locfileid: "19759315"
 ```
 
  **AlternateMailboxes**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -37,27 +37,27 @@ ms.locfileid: "19759315"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[AlternateMailbox (SOAP)](alternatemailbox-soap.md) <br/> |別のメールボックスを表します。  <br/> |
+|[AlternateMailbox (SOAP)](alternatemailbox-soap.md) <br/> |代替メールボックスを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[AlternateMailboxCollectionSetting (SOAP)](alternatemailboxcollectionsetting-soap.md) <br/> |代替メールボックスの設定のコレクションが含まれています。  <br/> |
+|[AlternateMailboxCollectionSetting (SOAP)](alternatemailboxcollectionsetting-soap.md) <br/> |代替メールボックス設定のコレクションを格納します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|スキーマ名  <br/> |スキーマの自動検出  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|スキーマ名  <br/> |自動検出スキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |はい  <br/> |
    
 

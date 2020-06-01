@@ -1,5 +1,5 @@
 ---
-title: AddDelegateResponse
+title: 含む adddelegateresponse
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d7e6bebb-5dbf-43c1-aacf-4b3ca6a7c429
-description: AddDelegateResponse 要素には、ステータスおよび AddDelegate 操作要求の結果が含まれています。
-ms.openlocfilehash: a1d56e9994b3a7916fe0fbe40be1e6d8ff473730
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 含む adddelegateresponse 要素には、AddDelegate 操作要求の状態と結果が含まれています。
+ms.openlocfilehash: 1c38563ab38facf89fd5eab119542374949244c2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759276"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466459"
 ---
-# <a name="adddelegateresponse"></a>AddDelegateResponse
+# <a name="adddelegateresponse"></a>含む adddelegateresponse
 
-**AddDelegateResponse**要素には、ステータスおよび[AddDelegate 操作](adddelegate-operation.md)要求の結果が含まれています。 
+**含む adddelegateresponse**要素には、 [adddelegate 操作](adddelegate-operation.md)要求の状態と結果が含まれています。 
   
 ```xml
 <AddDelegateResponse>
@@ -34,7 +34,7 @@ ms.locfileid: "19759276"
 ```
 
  **AddDelegateResponseMessageType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,34 +44,34 @@ ms.locfileid: "19759276"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[ResponseMessages (ArrayOfDelegateUserResponseMessageType)](responsemessages-arrayofdelegateuserresponsemessagetype.md) <br/> |Exchange Web サービス代理人の管理要求の応答メッセージが含まれています。  <br/> |
-|[MessageText](messagetext.md) <br/> |応答のステータスの説明を提供します。  <br/> |
-|[ResponseCode](responsecode.md) <br/> |要求で発生した特定のエラーを識別するエラー コードを提供します。  <br/> |
-|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在使用されていない将来の使用に予約されているとします。 0 の値が含まれています。  <br/> |
-|[MessageXml](messagexml.md) <br/> |追加のエラー応答情報を提供します。  <br/> |
+|[ResponseMessages (ArrayOfDelegateUserResponseMessageType)](responsemessages-arrayofdelegateuserresponsemessagetype.md) <br/> |Exchange Web サービスの委任管理要求に対する応答メッセージが保存されています。  <br/> |
+|[MessageText](messagetext.md) <br/> |応答の状態を説明するテキストを提供します。  <br/> |
+|[ResponseCode](responsecode.md) <br/> |要求で発生した特定のエラーを識別するエラーコードを提供します。  <br/> |
+|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在未使用で、今後の使用のために予約されています。 このプロパティには0の値が含まれています。  <br/> |
+|[MessageXml](messagexml.md) <br/> |エラー応答に関する追加情報を提供します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [AddDelegate 操作](adddelegate-operation.md)
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
-- [デリゲートを追加します。](http://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [代理人の追加](https://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 1d784ded-b874-4eb1-8f6d-2e0e03330e1e
-description: InternalReply 要素には、外出中 (OOF) 応答を送信するユーザーのドメインまたは信頼されるドメイン内の他のユーザーの出力が含まれています。
-ms.openlocfilehash: ac5e9eadac7f45c233007ffb05f4d2430875ec52
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: InternalReply 要素には、ユーザーのドメインまたは信頼されたドメイン内の他のユーザーに送信される不在 (OOF) 応答が含まれています。
+ms.openlocfilehash: 24c278ebd3acf83e87fbf72650eb3d5d438d5c22
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831955"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465584"
 ---
 # <a name="internalreply"></a>InternalReply
 
-**InternalReply**要素には、外出中 (OOF) 応答を送信するユーザーのドメインまたは信頼されるドメイン内の他のユーザーの出力が含まれています。 
+**Internalreply**要素には、ユーザーのドメインまたは信頼されたドメイン内の他のユーザーに送信される不在 (OOF) 応答が含まれています。 
   
 ```XML
 <InternalReply>
@@ -30,7 +30,7 @@ ms.locfileid: "19831955"
 ```
 
  **ReplyBody**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -38,40 +38,40 @@ ms.locfileid: "19831955"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|xml:lang  <br/> |**InternalReply**メッセージで使用される言語を指定します。 この属性に指定できる値は、IETF RFC 3066 で定義されます。  <br/> |
+|xml: lang  <br/> |**Internalreply**メッセージで使用される言語を指定します。 この属性に指定できる値は、IETF RFC 3066 で定義されています。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[メッセージ (可用性)](message-availability.md) <br/> |不在時の応答が含まれています。  <br/> |
+|[メッセージ (可用性)](message-availability.md) <br/> |OOF 応答を含みます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[UserOofSettings](useroofsettings.md) <br/> |不在の設定を指定します。  <br/> この要素への XPath 式は、次のようにします。  <br/>  `/SetUserOofSettingsRequest/UserOofSettings` <br/> |
-|[OofSettings](oofsettings.md) <br/> |不在の設定が含まれています。  <br/> この要素への XPath 式は、次のようにします。  <br/>  `/GetUserOofSettingsResponse/OofSettings` <br/> |
+|[UserOofSettings](useroofsettings.md) <br/> |OOF 設定を指定します。  <br/> この要素の XPath 式を次に示します。  <br/>  `/SetUserOofSettingsRequest/UserOofSettings` <br/> |
+|[OofSettings](oofsettings.md) <br/> |不在時の設定が含まれます。  <br/> この要素の XPath 式を次に示します。  <br/>  `/GetUserOofSettingsResponse/OofSettings` <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
 ## <a name="example"></a>例
 
-SetUserOofSettings 要求の次の使用例は、 [OofState](oofstate.md)を**有効**に設定、10 日間、不在時の期間を設定し、内部と外部の OOF メッセージを設定します。
+SetUserOofSettings 要求の次の例では、 [Oofstate](oofstate.md)を**有効**に設定し、不在時の時間を10日間に設定し、内部および外部の oof メッセージを設定します。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <SetUserOofSettingsRequest xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-      <Mailbox xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+    <SetUserOofSettingsRequest xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+      <Mailbox xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <Name>David Alexander</Name>
         <Address>someone@example.com</Address>
         <RoutingType>SMTP</RoutingType>
       </Mailbox>
-      <UserOofSettings xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+      <UserOofSettings xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <OofState>Enabled</OofState>
         <ExternalAudience>All</ExternalAudience>
         <Duration>
@@ -90,14 +90,14 @@ SetUserOofSettings 要求の次の使用例は、 [OofState](oofstate.md)を**�
 </soap:Envelope>
 ```
 
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

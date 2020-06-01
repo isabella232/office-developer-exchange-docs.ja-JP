@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c5aa96b1-2d8b-422f-8c2f-f118572ab23f
-description: アクション要素では、一連の条件が満たされるときに、メッセージに対して実行される利用可能なアクションを表します。
-ms.openlocfilehash: 093d2f28135c6077b6cea488591573af0182934b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Actions 要素は、条件が満たされたときにメッセージに対して実行できる一連のアクションを表します。
+ms.openlocfilehash: 2ac53778b583595fa8be07f2c5110a9e2df16eca
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759272"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465066"
 ---
 # <a name="actions"></a>アクション
 
-**アクション**要素では、一連の条件が満たされるときに、メッセージに対して実行される利用可能なアクションを表します。 
+**Actions**要素は、条件が満たされたときにメッセージに対して実行できる一連のアクションを表します。 
   
 [ルール (RuleType)](rule-ruletype.md)
   
@@ -44,7 +44,7 @@ ms.locfileid: "19759272"
 ```
 
  **RuleActionsType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -54,47 +54,47 @@ ms.locfileid: "19759272"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[AssignCategories](assigncategories.md) <br/> |電子メール メッセージにスタンプされているカテゴリを表します。  <br/> |
-|[CopyToFolder](copytofolder.md) <br/> |電子メール アイテムをコピーするフォルダーの ID を識別します。  <br/> |
-|[Delete](delete.md) <br/> |メッセージを削除済みアイテム フォルダーに移動するかどうかを示します。  <br/> |
-|[ForwardAsAttachmentToRecipients](forwardasattachmenttorecipients.md) <br/> |メッセージが添付ファイルとして転送するのには電子メール アドレスを示します。  <br/> |
-|[ForwardToRecipients](forwardtorecipients.md) <br/> |メッセージが転送される電子メール アドレスを示します。  <br/> |
-|[MarkImportance](markimportance.md) <br/> |メッセージにスタンプするのには重要度を指定します。  <br/> |
-|[MarkAsRead](markasread.md) <br/> |メッセージは開封としてマークするかどうかを示します。  <br/> |
-|[MoveToFolder](movetofolder.md) <br/> |電子メール アイテムに移動するフォルダーの ID を識別します。  <br/> |
-|[PermanentDelete](permanentdelete.md) <br/> |メッセージを完全に削除し、削除済みアイテム フォルダーに保存されないかどうかを示します。  <br/> |
-|[RedirectToRecipients](redirecttorecipients.md) <br/> |メッセージがリダイレクトされるように電子メール アドレスを示します。  <br/> |
-|[SendSMSAlertToRecipients](sendsmsalerttorecipients.md) <br/> |ショート メッセージ サービス (SMS) アラートが送信するのには携帯電話の番号を示します。  <br/> |
-|[ServerReplyWithMessage](serverreplywithmessage.md) <br/> |示します。 受信メッセージへの応答として送信するのには、テンプレートのメッセージの ID です。  <br/> |
-|[StopProcessingRules](stopprocessingrules.md) <br/> |後のルールが評価されるかどうかを示します。  <br/> |
+|[カテゴリを割り当てる](assigncategories.md) <br/> |電子メールメッセージにスタンプされている分類項目を表します。  <br/> |
+|[CopyToFolder](copytofolder.md) <br/> |電子メールアイテムがコピーされるフォルダーの ID を指定します。  <br/> |
+|[Delete](delete.md) <br/> |メッセージを [削除済みアイテム] フォルダーに移動するかどうかを示します。  <br/> |
+|[ForwardAsAttachmentToRecipients 添付ファイル](forwardasattachmenttorecipients.md) <br/> |添付ファイルとして転送されるメッセージの送信先の電子メールアドレスを示します。  <br/> |
+|[Forwardトーラス (Pitor)](forwardtorecipients.md) <br/> |メッセージが転送される電子メールアドレスを示します。  <br/> |
+|[マーク (重要)](markimportance.md) <br/> |メッセージに対してスタンプされる重要度を指定します。  <br/> |
+|[MarkAsRead](markasread.md) <br/> |メッセージを開封済みとしてマークするかどうかを示します。  <br/> |
+|[MoveToFolder](movetofolder.md) <br/> |電子メールアイテムの移動先フォルダーの ID を指定します。  <br/> |
+|[PermanentDelete](permanentdelete.md) <br/> |メッセージが完全に削除され、削除済みアイテムフォルダーに保存されないようにするかどうかを示します。  <br/> |
+|[RedirectToRecipients](redirecttorecipients.md) <br/> |メッセージがリダイレクトされる電子メールアドレスを示します。  <br/> |
+|[SendSMSAlertToRecipients](sendsmsalerttorecipients.md) <br/> |短いメッセージサービス (SMS) の通知が送信される携帯電話の番号を示します。  <br/> |
+|[ServerReplyWithMessage](serverreplywithmessage.md) <br/> |を示し. 受信メッセージへの返信として送信されるテンプレートメッセージの ID です。  <br/> |
+|[StopProcessingRules](stopprocessingrules.md) <br/> |後続のルールを評価するかどうかを示します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ルール (RuleType)](rule-ruletype.md) <br/> |ユーザーのメールボックス内の 1 つのルールを表します。  <br/> |
+|[ルール (RuleType)](rule-ruletype.md) <br/> |ユーザーのメールボックス内の1つのルールを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [条件](conditions.md)
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

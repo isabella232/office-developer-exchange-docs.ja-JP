@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 7dae4db5-28d3-4b81-b071-458c814c36b9
-description: VotingResponse 要素は、送信された投票を指定します。 この要素があるだけ返信要求メッセージへの応答で、承認への応答ではなく。
-ms.openlocfilehash: 865b24a4f7ec1cc7b53d4928b04f071cddf5fbfc
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: VotingResponse 要素は、送信される投票を指定します。 この要素は、承認に対する応答に対してではなく、投票要求メッセージへの応答にのみ存在します。
+ms.openlocfilehash: ed7caff79d1ff2946800630c167350fe866e29dc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839996"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466466"
 ---
 # <a name="votingresponse"></a>VotingResponse
 
-**VotingResponse**要素は、送信された投票を指定します。 この要素があるだけ返信要求メッセージへの応答で、承認への応答ではなく。 
+**VotingResponse**要素は、送信される投票を指定します。 この要素は、承認に対する応答に対してではなく、投票要求メッセージへの応答にのみ存在します。 
   
 ```XML
 <VotingResponse />
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,22 +42,22 @@ ms.locfileid: "19839996"
   
 ## <a name="text-value"></a>テキスト値
 
-**VotingResponse**要素のテキスト値は、票を送信します。 
+**VotingResponse**要素のテキスト値は、送信される投票です。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -66,5 +66,5 @@ ms.locfileid: "19839996"
 [VotingInformation](votinginformation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

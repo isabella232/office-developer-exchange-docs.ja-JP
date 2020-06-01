@@ -1,5 +1,5 @@
 ---
-title: 注釈
+title: アノテーションフィーチャー
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: e0392635-9d0f-46d5-84ef-0a8a3036479a
-description: アノテーション要素には、ユーザーによって追加されたメモが含まれています。
-ms.openlocfilehash: e0170ef9940b64d4c6a10a08182189571f2beb5a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Annotation 要素には、ユーザーが追加したオプションのメモが含まれています。
+ms.openlocfilehash: 291d875085f9bc13e92a14b844b66878f5e6eb2a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759320"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44466116"
 ---
-# <a name="annotation"></a>注釈
+# <a name="annotation"></a>アノテーションフィーチャー
 
-**アノテーション**要素には、ユーザーによって追加されたメモが含まれています。 
+**Annotation**要素には、ユーザーが追加したオプションのメモが含まれています。 
   
 ```XML
 <Annotation></Annotation>
 ```
 
- **使用されています**
-## <a name="attributes-and-elements"></a>属性および要素
+ **xs: 文字列**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,28 +40,28 @@ ms.locfileid: "19759320"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[EnhancedLocation](enhancedlocation.md) <br/> |場所の名前、住所、メモなどの位置情報を指定します。  <br/> |
+|[EnhancedLocation](enhancedlocation.md) <br/> |場所に関する名前、住所、オプションのメモなどの場所情報を指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-アノテーション要素のテキスト値では、ユーザーに関するメモを追加する場所です。
+Annotation 要素のテキスト値は、ユーザーが場所に関するメモを追加したことを示します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |型のスキーマ  <br/> |
-|検証ファイル  <br/> |types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

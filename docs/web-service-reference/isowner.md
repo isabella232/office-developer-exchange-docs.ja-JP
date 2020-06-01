@@ -1,5 +1,5 @@
 ---
-title: IsOwner
+title: IsOwner 場合
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ea0f0afc-32fe-46cb-8530-62a6ce9490f6
-description: IsOwner 要素は、指定された電子メールのユーザーは、所有者であるかどうかを指定します。
-ms.openlocfilehash: aac3c2a599093282542025468d73c55ec4569e29
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: IsOwner 要素は、指定された電子メールユーザーが所有者であるかどうかを指定します。
+ms.openlocfilehash: 2dd085aba34052d95efd1e72edca7be4aba71155
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832080"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466522"
 ---
-# <a name="isowner"></a>IsOwner
+# <a name="isowner"></a>IsOwner 場合
 
-**IsOwner**要素は、指定された電子メールのユーザーは、所有者であるかどうかを指定します。 
+**Isowner**要素は、指定された電子メールユーザーが所有者であるかどうかを指定します。 
   
 ```XML
 <IsOwner>true | false</IsOwner>
 ```
 
- **ブール型 (Boolean)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,30 +40,30 @@ ms.locfileid: "19832080"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[RightsManagementLicenseData](rightsmanagementlicensedata.md) <br/> |権限管理のライセンスについての情報を指定します。  <br/> |
+|[RightsManagementLicenseData](rightsmanagementlicensedata.md) <br/> |Rights management のライセンスに関する情報を指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-の**場合は true** 、 **IsOwner**要素のテキスト値は、ユーザーが項目を発行する権限の所有者であることを示します。 **False**の値は、ユーザーが項目を発行する権限の所有者ではないことを示します。 
+**Isowner**要素のテキスト値が**true の場合**は、ユーザーがアイテムに対して発行された権限の所有者であることを示します。 値が**false**の場合は、ユーザーがアイテムに対して発行された権限の所有者ではないことを示します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |型のスキーマ  <br/> |
-|検証ファイル  <br/> |types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 72dc4391-72db-44d2-85d9-4718d59886a7
-description: ParentItemId 要素は、関連付けられている添付ファイルへのリンクを親項目を識別します。
-ms.openlocfilehash: 9bd875ee5ead8b87996288a640e1bb14e3a5e8b8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ParentItemId 要素は、関連付けられた添付ファイルにリンクする親アイテムを識別します。
+ms.openlocfilehash: 4f3e33da0af2438948313f0e335cd03e076d135a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832703"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465745"
 ---
 # <a name="parentitemid"></a>ParentItemId
 
-**ParentItemId**要素は、関連付けられている添付ファイルへのリンクを親項目を識別します。 
+**Parentitemid**要素は、関連付けられた添付ファイルにリンクする親アイテムを識別します。 
   
 - [CreateAttachment](createattachment.md)
   
@@ -33,7 +33,7 @@ ms.locfileid: "19832703"
 
 **ItemIdType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -41,8 +41,8 @@ ms.locfileid: "19832703"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**Id** <br/> |添付ファイルを関連付けるには Exchange ストア内の 1 つの項目を識別します。 この値は、文字列です。 この属性は、必要があります。  <br/> |
-|**変更キー** <br/> |Exchange ストア内の**Id**属性によって識別される項目の指定のバージョンを識別します。 これを使用して、添付ファイルを更新するときに現在の項目が使用されているかどうかを確認します。 この値は、文字列です。 この属性は、省略可能です。  <br/> |
+|**Id** <br/> |添付ファイルに関連付ける Exchange ストア内の1つのアイテムを識別します。 この値は文字列です。 この属性は必須です。  <br/> |
+|**ChangeKey** <br/> |Exchange ストアの**Id**属性によって識別されるアイテムの指定されていないバージョンを識別します。 これは、添付ファイルによって更新されるときに、現在のアイテムが使用されるようにするために使用されます。 この値は文字列です。 この属性は省略可能です。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -52,22 +52,22 @@ ms.locfileid: "19832703"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[CreateAttachment](createattachment.md) <br/> |メールボックス内のアイテムに添付ファイルを作成する要求を定義します。  <br/> この要素への XPath 式は、次のようにします。  <br/>  `/CreateAttachment` <br/> |
+|[CreateAttachment](createattachment.md) <br/> |メールボックス内のアイテムの添付ファイルを作成するための要求を定義します。  <br/> この要素の XPath 式を次に示します。  <br/>  `/CreateAttachment` <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-[CreateAttachment 操作](createattachment-operation.md)では、この要素が必要です。 この要素は、基本的に[アイテム Id](itemid.md)の要素と同じです。 
+この要素は、 [Createattachment 操作](createattachment-operation.md)で必要です。 この要素は、基本的に[ItemId](itemid.md)要素と同じです。 
   
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |[http://schemas.microsoft.com/exchange/services/2006/messages](http://schemas.microsoft.com/exchange/services/2006/messages) <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |[https://schemas.microsoft.com/exchange/services/2006/messages](https://schemas.microsoft.com/exchange/services/2006/messages) <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

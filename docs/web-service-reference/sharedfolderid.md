@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 21181ba3-9626-4284-9717-0b1c16948e8f
-description: SharedFolderId 要素は、GetSharingFolder 操作の要求で返されます、ローカル フォルダーの識別子を共有フォルダーの識別子を表します。
-ms.openlocfilehash: 6d4e541ef3cae89e413efa8cc5f1beaf651dc4dd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: SharedFolderId 要素は、GetSharingFolder 操作要求によって返される必要のあるローカルフォルダー識別子である、共有フォルダーの識別子を表します。
+ms.openlocfilehash: 546e148540708725bcf335f39bf69d193124d210
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833477"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466123"
 ---
 # <a name="sharedfolderid"></a>SharedFolderId
 
-**SharedFolderId**要素は、 [GetSharingFolder 操作](getsharingfolder-operation.md)の要求で返されます、ローカル フォルダーの識別子を共有フォルダーの識別子を表します。 
+**SharedFolderId**要素は、 [getsharingfolder 操作](getsharingfolder-operation.md)要求によって返される必要のあるローカルフォルダー識別子である、共有フォルダーの識別子を表します。 
   
 ```xml
 <SharedFolderId/>
 ```
 
  **NonEmptyStringType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,24 +44,24 @@ ms.locfileid: "19833477"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetSharingFolder](getsharingfolder.md) <br/> |指定した共有フォルダーのローカル フォルダーの識別子を取得する要求を定義します。  <br/> |
+|[GetSharingFolder](getsharingfolder.md) <br/> |指定された共有フォルダーのローカルフォルダー識別子を取得する要求を定義します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、 [GetSharingFolder 操作](getsharingfolder-operation.md)の要求で返されます、ローカル フォルダーの識別子を共有フォルダーの識別子を表す文字列です。 
+テキスト値は、 [Getsharingfolder 操作](getsharingfolder-operation.md)要求によって返されるローカルフォルダー識別子である、共有フォルダーの識別子を表す文字列です。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -70,5 +70,5 @@ ms.locfileid: "19833477"
 [GetSharingFolder 操作](getsharingfolder-operation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

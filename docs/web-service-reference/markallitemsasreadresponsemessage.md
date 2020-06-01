@@ -8,16 +8,16 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: e52f56d4-c6a3-458a-8abb-4e0c19d32341
 description: MarkAllItemsAsReadResponseMessage 要素は、MarkAllItemsAsRead 要求の応答メッセージを指定します。
-ms.openlocfilehash: e1e0ba3748fe12b6c7f54f0acaa5e1f699a4869a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: a3609f356dd20e121105b5ca57b389d492e852ff
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832349"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465815"
 ---
 # <a name="markallitemsasreadresponsemessage"></a>MarkAllItemsAsReadResponseMessage
 
-**MarkAllItemsAsReadResponseMessage**要素は、 **MarkAllItemsAsRead**要求の応答メッセージを指定します。 
+**MarkAllItemsAsReadResponseMessage**要素は、 **Markallitemsasread**要求の応答メッセージを指定します。 
   
 ```XML
 <MarkAllItemsAsReadResponseMessage>
@@ -29,7 +29,7 @@ ms.locfileid: "19832349"
 ```
 
  ****
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -39,25 +39,25 @@ ms.locfileid: "19832349"
   
 ### <a name="child-elements"></a>子要素
 
-[メッセージ テキスト](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md)
+[Messagetext](messagetext.md)  | 応答[Secmode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)
   
 ### <a name="parent-elements"></a>親要素
 
 [ResponseMessages](responsemessages.md)
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

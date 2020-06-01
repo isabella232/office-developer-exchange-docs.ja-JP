@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 4db469ae-1515-47ea-9905-6aabf199febd
-description: IsNotSupported 要素は、マネージ コードの Api を使用してルールを変更できないかどうかを示します。
-ms.openlocfilehash: 2468d47dbfdcaf1a28ed1a4afb1e7ea60147d1dc
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: IsNotSupported 要素は、マネージコード Api を使用してルールを変更できないかどうかを示します。
+ms.openlocfilehash: e2d0c506209978fd5e8702e0de6cddf2e9c4b7fa
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832057"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465836"
 ---
 # <a name="isnotsupported"></a>IsNotSupported
 
-**IsNotSupported**要素は、マネージ コードの Api を使用してルールを変更できないかどうかを示します。 
+**IsNotSupported**要素は、マネージコード api を使用してルールを変更できないかどうかを示します。 
   
 ```XML
 <IsNotSupported/>
 ```
 
- **ブール型 (Boolean)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -48,24 +48,24 @@ ms.locfileid: "19832057"
    
 ## <a name="text-value"></a>テキスト値
 
-**True**の場合、テキスト値は、マネージ コードの Api を使用してルールを変更できないことを示します。 **False**の値は、マネージ コードの Api を使用してルールを変更できることをことを示します。 
+テキスト値が**true の場合**は、マネージコード api を使用してルールを変更できないことを示します。 値が**false**の場合、マネージコード api を使用してルールを変更できることを示します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

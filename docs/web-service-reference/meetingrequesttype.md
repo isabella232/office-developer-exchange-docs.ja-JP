@@ -1,5 +1,5 @@
 ---
-title: MeetingRequestType
+title: 会議の Requesttype
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: bcd5c97c-19aa-4b1d-a8e8-e8c4bd473dd9
-description: MeetingRequestType 要素は、会議出席依頼の種類について説明します。
-ms.openlocfilehash: 7269587e2fa72aeb9070a7b53ee9215829729329
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 会議の Requesttype 要素は、会議出席依頼の種類を表します。
+ms.openlocfilehash: e90c44dd4124d698ca5ef7655f6429a7167673e6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832432"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44465787"
 ---
-# <a name="meetingrequesttype"></a>MeetingRequestType
+# <a name="meetingrequesttype"></a>会議の Requesttype
 
-**MeetingRequestType**要素は、会議出席依頼の種類について説明します。 
+会議の**requesttype**要素は、会議出席依頼の種類を表します。 
   
 ```xml
 <MeetingRequestType/>
 ```
 
- **MeetingRequestTypeType**
-## <a name="attributes-and-elements"></a>属性および要素
+ **会議の Requesttypetype**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -48,34 +48,34 @@ ms.locfileid: "19832432"
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は必須です。 次の表は、この要素の使用可能なテキスト値を示します。
+テキスト値は必須です。 次の表に、この要素に使用できるテキスト値を示します。
   
 |**値**|**説明**|
 |:-----|:-----|
-|FullUpdate  <br/> |会議出席依頼が既存の要求に完全な更新であることを識別します。 フル更新には、時間と情報が更新されました。  <br/> |
-|InformationalUpdate  <br/> |情報コンテンツの更新のみを含む会議出席依頼を識別します。  <br/> |
-|NewMeetingRequest  <br/> |新しい会議出席依頼と会議出席依頼を識別します。  <br/> |
-|なし  <br/> |会議出席依頼の種類にすることを示しますが定義されていません。  <br/> |
-|古い  <br/> |として古い会議出席依頼を識別します。  <br/> |
-|PrincipalWantsCopy  <br/> |会議出席依頼が代理人に会議のメッセージを転送するには情報とマークされている彼のコピーのあるプリンシパルに属していることを示します。  <br/> |
-|SilentUpdate  <br/> |会議出席依頼を既存の会議に更新プログラムがサイレントとして識別します。  <br/> |
+|FullUpdate  <br/> |既存の要求に対する完全な更新として会議出席依頼を識別します。 完全更新により、時間と情報のコンテンツが更新されました。  <br/> |
+|InformationalUpdate  <br/> |更新された情報コンテンツのみが含まれている会議出席依頼を識別します。  <br/> |
+|NewMeetingRequest  <br/> |会議出席依頼を新しい会議出席依頼として識別します。  <br/> |
+|なし  <br/> |会議出席依頼の種類が定義されていないことを示します。  <br/> |
+|最新  <br/> |会議出席依頼を古いものとして識別します。  <br/> |
+|PrincipalWantsCopy  <br/> |会議出席依頼が代理人に会議メッセージを転送しており、そのコピーが情報としてマークされているプリンシパルに属していることを示します。  <br/> |
+|孤立した更新  <br/> |既存の会議へのサイレント更新として会議出席依頼を識別します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

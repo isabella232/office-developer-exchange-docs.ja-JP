@@ -1,5 +1,5 @@
 ---
-title: サブスクリプション Id (GetEvents)
+title: SubscriptionId (GetEvents)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 77c0abab-69e8-428e-8c20-22258e4ef71b
-description: サブスクリプション Id 要素は、サブスクリプションの識別子を表します。
-ms.openlocfilehash: 8867b7da7c75cfd9d41f708c0481627d5186cc14
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: SubscriptionId 要素は、サブスクリプションの識別子を表します。
+ms.openlocfilehash: e103386f466d65717878b4a6c811f3c3ad6e7c7d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833622"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465353"
 ---
-# <a name="subscriptionid-getevents"></a>サブスクリプション Id (GetEvents)
+# <a name="subscriptionid-getevents"></a>SubscriptionId (GetEvents)
 
-**サブスクリプション Id**要素は、サブスクリプションの識別子を表します。 
+**SubscriptionId**要素は、サブスクリプションの識別子を表します。 
   
 ```xml
 <SubscriptionId/>
 ```
 
  **SubscriptionIdType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,29 +44,29 @@ ms.locfileid: "19833622"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetEvents](getevents.md) <br/> |プル クライアントがサーバーからの通知を要求に使用する操作を表します。  <br/> |
-|[通知](notification-ex15websvcsotherref.md) <br/> |サブスクリプションおよび最後の通知以降に発生したイベントに関する情報が含まれています。  <br/> |
-|[SubscribeResponseMessage](subscriberesponsemessage.md) <br/> |Subscribe 要求の結果ステータスを格納します。  <br/> |
-|[購読の取り消し](unsubscribe.md) <br/> |サブスクリプションの購読を解除するためのプロパティが含まれています。  <br/> |
+|[GetEvents](getevents.md) <br/> |プルクライアントがサーバーからの通知を要求するために使用する操作を表します。  <br/> |
+|[通知](notification-ex15websvcsotherref.md) <br/> |サブスクリプションに関する情報、および前回の通知以降に発生したイベントに関する情報が含まれます。  <br/> |
+|[メッセージの表示](subscriberesponsemessage.md) <br/> |サブスクライブ要求の状態と結果を格納します。  <br/> |
+|[登録を解除する](unsubscribe.md) <br/> |サブスクリプションの登録を解除するために使用されるプロパティが含まれています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は必須です。 テキスト値は、GUID です。
+テキスト値は必須です。 テキスト値は GUID です。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-サブスクリプションの識別子を表す GUID は、サブスクリプションが作成されると、クライアント アクセス サーバーによって生成されます。
+サブスクリプション識別子を表す GUID は、サブスクリプションの作成時にクライアントアクセスサーバーによって生成されます。
   
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |messages.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

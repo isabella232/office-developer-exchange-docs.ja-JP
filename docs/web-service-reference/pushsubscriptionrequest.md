@@ -11,19 +11,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: 70caa0ca-40a1-421f-b4e6-0658f22d0b8e
-description: PushSubscriptionRequest 要素は、プッシュ ベースのイベント通知サブスクリプションをサブスクリプションを表します。
-ms.openlocfilehash: 34717d37b8e5bb50c927e57088299fbcb18a2514
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: PushSubscriptionRequest 要素は、プッシュベースのイベント通知サブスクリプションへのサブスクリプションを表します。
+ms.openlocfilehash: dcdb767ed175468aa4ec940f3147c164e4707e40
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832929"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465514"
 ---
 # <a name="pushsubscriptionrequest"></a>PushSubscriptionRequest
 
-**PushSubscriptionRequest**要素は、プッシュ ベースのイベント通知サブスクリプションをサブスクリプションを表します。 
+**Pushsubscriptionrequest**要素は、プッシュベースのイベント通知サブスクリプションへのサブスクリプションを表します。 
   
-[購読](subscribe.md)
+[登録](subscribe.md)
   
 [PushSubscriptionRequest](pushsubscriptionrequest.md)
   
@@ -38,7 +38,7 @@ ms.locfileid: "19832929"
 ```
 
  **PushSubscriptionRequestType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -46,40 +46,40 @@ ms.locfileid: "19832929"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**SubscribeToAllFolders** <br/> |使用可能なすべてのフォルダーを購読するかどうかを示します。 この属性は、省略可能です。  <br/> |
+|**SubscribeToAllFolders** <br/> |利用可能なすべてのフォルダーを購読するかどうかを示します。 この属性は省略可能です。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[FolderIds](folderids.md) <br/> |イベント通知を監視するフォルダーを識別するために使用されるフォルダー識別子の配列が含まれています。  <br/> |
-|[EventTypes](eventtypes.md) <br/> |サブスクリプションを作成するために使用されるイベント通知のコレクションが含まれています。  <br/> |
-|[透かし](watermark.md) <br/> |メールボックス イベント テーブル内のイベント ブックマークを表します。 透かしによって表されるイベントからサブスクリプションの作成に使用されます。 Subscribe 要求からのウォーターマークが見つからない場合、エラー応答がクライアントに返されます。 これは、透かしは、30 日間またはウォーターマークがメールボックス内に存在しなかったかどうかよりも古い場合に発生します。  <br/> |
-|[StatusFrequency](statusfrequency.md) <br/> |(分)、通知のメッセージがクライアントに送信、イベントが発生していない場合、頻度を表します。  <br/> |
-|[Url](url-ex15websvcsotherref.md) <br/> |クライアント プッシュ通知のための Web サービスの場所を表します。  <br/> |
+|[FolderIds](folderids.md) <br/> |イベント通知を監視するフォルダーを識別するために使用されるフォルダー識別子の配列を格納します。  <br/> |
+|[EventTypes](eventtypes.md) <br/> |サブスクリプションの作成に使用されるイベント通知のコレクションが含まれています。  <br/> |
+|[Watermark](watermark.md) <br/> |メールボックスイベントテーブル内のイベントブックマークを表します。 これは、ウォーターマークで表されるイベントから開始するサブスクリプションを作成するために使用されます。 Subscribe 要求のウォーターマークが見つからない場合は、クライアントにエラー応答が返されます。 これは、ウォーターマークが30日よりも古い場合、またはウォーターマークがメールボックスに存在しない場合に発生することがあります。  <br/> |
+|[StatusFrequency](statusfrequency.md) <br/> |イベントが発生していない場合に通知メッセージがクライアントに送信される頻度 (分単位) を表します。  <br/> |
+|[.Url](url-ex15websvcsotherref.md) <br/> |プッシュ通知用のクライアント Web サービスの場所を表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[購読](subscribe.md) <br/> |サブスクリプションを作成するためのプロパティが含まれています。  <br/> |
+|[登録](subscribe.md) <br/> |サブスクリプションの作成に使用されるプロパティが含まれています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

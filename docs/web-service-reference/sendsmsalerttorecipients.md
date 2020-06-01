@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c4dd000b-11b6-4b7b-91e0-dbfeae11d770
-description: SendSMSAlertToRecipients 要素では、ショート メッセージ サービス (SMS) アラートが送信するのには携帯電話の番号を示します。
-ms.openlocfilehash: b28202c71257fccca67879713d5d7df03f69b06d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: SendSMSAlertToRecipients 要素は、短いメッセージサービス (SMS) の通知が送信される携帯電話の番号を示します。
+ms.openlocfilehash: ed17bf9ad20a51cbead4b86f385a53d19562fa64
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833347"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464848"
 ---
 # <a name="sendsmsalerttorecipients"></a>SendSMSAlertToRecipients
 
-**SendSMSAlertToRecipients**要素では、ショート メッセージ サービス (SMS) アラートが送信するのには携帯電話の番号を示します。 
+**SendSMSAlertToRecipients**要素は、短いメッセージサービス (SMS) の通知が送信される携帯電話の番号を示します。 
   
 ```XML
 <SendSMSAlertToRecipients>
@@ -30,7 +30,7 @@ ms.locfileid: "19833347"
 ```
 
  **ArrayOfEmailAddressesType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,36 +40,36 @@ ms.locfileid: "19833347"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[アドレス (EmailAddressType)](address-emailaddresstype.md) <br/> |完全に解決された電子メール アドレスを表します。  <br/> |
+|[Address (EmailAddressType)](address-emailaddresstype.md) <br/> |完全に解決された電子メールアドレスを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[アクション](actions.md) <br/> |条件が満たされるときに、メッセージに対して実行される使用可能なアクションのセットを表します。  <br/> |
+|[Actions](actions.md) <br/> |条件が満たされたときに、メッセージに対して実行できるアクションのセットを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

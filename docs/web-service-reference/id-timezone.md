@@ -1,5 +1,5 @@
 ---
-title: Id (タイムゾーン)
+title: Id (TimeZone)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 4c7350b4-ffa1-4e7d-9433-80b4383bd0d2
-description: Id 要素は、単一のタイム ゾーン定義を識別します。
-ms.openlocfilehash: 4f2e18ca8a582a930cce9e0565821d9732daf555
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Id 要素は、1つのタイムゾーン定義を識別します。
+ms.openlocfilehash: 18ded1c9c0b6f0219d6256ebe19b9b1f7173da2c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831854"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466137"
 ---
-# <a name="id-timezone"></a>Id (タイムゾーン)
+# <a name="id-timezone"></a>Id (TimeZone)
 
-**Id**要素は、単一のタイム ゾーン定義を識別します。 
+**Id**要素は、1つのタイムゾーン定義を識別します。 
   
 ```xml
 <Id>...</Id>
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,28 +44,28 @@ ms.locfileid: "19831854"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Id](ids.md) <br/> |タイム ゾーン定義の識別子の配列が含まれています。  <br/> |
+|[Rid](ids.md) <br/> |タイムゾーン定義識別子の配列を格納します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は必須です。 テキスト値は、タイム ゾーン定義の一意の識別子を表します。
+テキスト値は必須です。 テキスト値は、タイムゾーン定義の一意識別子を表します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

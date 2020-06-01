@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: dacd9db7-b8f0-445d-a3d1-3356b8c2bcd1
-description: LargeAudienceThreshold 要素は、クライアントの多くの人々 のしきい値を表します。
-ms.openlocfilehash: a222e992ba2d716f6539c7b146277358a76fe552
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: LargeAudienceThreshold 要素は、クライアントの大規模な対象ユーザーのしきい値を表します。
+ms.openlocfilehash: 6d85f9eaf8b7723713877d376876461befa92324
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832201"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466389"
 ---
 # <a name="largeaudiencethreshold"></a>LargeAudienceThreshold
 
-**LargeAudienceThreshold**要素は、クライアントの多くの人々 のしきい値を表します。 
+**LargeAudienceThreshold**要素は、クライアントの大規模な対象ユーザーのしきい値を表します。 
   
 ```XML
 <LargeAudienceThreshold/>
 ```
 
  **int**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,28 +44,28 @@ ms.locfileid: "19832201"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[MailTipsConfiguration (MailTipsServiceConfiguration)](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |メール ヒント サービスのサービスの構成情報が含まれています。  <br/> |
+|[Mailヒント構成 (MailTipsServiceConfiguration)](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |メールヒントサービスのサービス構成情報が保存されています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、メッセージを複数の人にことを示す対象しきい値を表す整数です。
+テキスト値は、メッセージが複数のユーザーに送信されることを示す、対象ユーザーのしきい値を表す整数です。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

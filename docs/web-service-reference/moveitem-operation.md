@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: dcf40fa7-7796-4a5c-bf5b-7a509a18d208
-description: MoveItem 操作を使用して、1 つまたは複数の項目を単一の宛先フォルダーに移動します。
-ms.openlocfilehash: c5619befb02ec20ef0911992484dcc00cc2c5e92
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: MoveItem 操作は、1つまたは複数のアイテムを1つの宛先フォルダーに移動するために使用されます。
+ms.openlocfilehash: 6a455e483ad2e5c84b91cfaa7562f4f1ec46a112
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832492"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465682"
 ---
 # <a name="moveitem-operation"></a>MoveItem 操作
 
-**MoveItem**操作を使用して、1 つまたは複数の項目を単一の宛先フォルダーに移動します。 
+**Moveitem**操作は、1つまたは複数のアイテムを1つの宛先フォルダーに移動するために使用されます。 
   
 ## <a name="moveitem-request-example"></a>MoveItem 要求の例
 
 ### <a name="description"></a>説明
 
-**MoveItem**要求の次の例では、[下書き] フォルダーにアイテムを移動する方法を示します。 
+次の**Moveitem**要求の例は、アイテムを [下書き] フォルダーに移動する方法を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -36,10 +36,10 @@ ms.locfileid: "19832492"
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <MoveItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <MoveItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <ToFolderId>
         <t:DistinguishedFolderId Id="drafts"/>
       </ToFolderId>
@@ -53,14 +53,14 @@ xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
 
 ### <a name="comments"></a>コメント
 
-[ToFolderId](tofolderid.md)要素は、項目の移動先フォルダーを指定します。 [Itemid](itemids.md)コレクション内のすべてのアイテムがコピー先のフォルダー終了することに注意してください。 別のインストール先のフォルダーにアイテムを配置するのには別の**MoveItem**呼び出しを行う必要があります。 
+[ToFolderId](tofolderid.md)要素は、アイテムの移動先のフォルダーを指定します。 [Itemids](itemids.md)コレクションに一覧表示されているすべての項目は、宛先フォルダーに配置されることに注意してください。 異なる移動先フォルダーにアイテムを配置するには、個別の**Moveitem**呼び出しを行う必要があります。 
   
 > [!NOTE]
-> 項目の識別子と変更キーは、読みやすさを保持するために短縮されています。 
+> 読みやすくするために、アイテム識別子と変更キーが短縮されています。 
   
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-次の要素は、要求で使用されます。
+要求では、次の要素が使用されます。
   
 - [MoveItem](moveitem.md)
     
@@ -68,7 +68,7 @@ xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
-- [Itemid](itemids.md)
+- [ItemIds](itemids.md)
     
 - [ItemId](itemid.md)
     
@@ -76,9 +76,9 @@ xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
 
 ### <a name="description"></a>説明
 
-**MoveItem**要求に正常な応答の例を次に示します。 
+次の例は、 **Moveitem**要求に対する正常な応答を示しています。 
   
-応答メッセージでは、新しい項目の項目の識別子が返されます。 **MoveItem**操作のパブリック フォルダーには、応答間のメールボックスまたはメールボックスのアイテム識別子は返されません。 
+新しいアイテムのアイテム識別子は、応答メッセージで返されます。 メールボックス間またはメールボックスからパブリックフォルダー **moveitem**操作への応答では、アイテム識別子は返されません。 
   
 ### <a name="code"></a>コード
 
@@ -89,12 +89,12 @@ xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="662" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"/>
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"/>
   </soap:Header>
   <soap:Body>
-    <MoveItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                      xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <MoveItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                      xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:MoveItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -112,11 +112,11 @@ xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
 
 ### <a name="comments"></a>コメント
 
-移動が成功した場合、 **MoveItem**操作は成功を示します。 
+移動が成功した場合、 **Moveitem**操作は成功したことを示します。 
   
-### <a name="successful-response-elements"></a>正常な応答の要素
+### <a name="successful-response-elements"></a>成功した応答要素
 
-次の要素は、応答で使用されます。
+応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -134,5 +134,5 @@ xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

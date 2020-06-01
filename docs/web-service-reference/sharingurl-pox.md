@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: d590188a-5aa6-46c6-ab5f-2a0dd6793109
-description: SharingUrl 要素には、組織間の予定表と連絡先の共有に使用する共有サーバーの URL が含まれています。
-ms.openlocfilehash: 0a62c5145da97976de12e7cdc29800a332877b44
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: SharingUrl 要素には、予定表と連絡先を組織間で共有するために使用される共有サーバーの URL が含まれています。
+ms.openlocfilehash: 9c793935808dbd20d2dc0631b82ee74db3f8a19f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833489"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465255"
 ---
 # <a name="sharingurl-pox"></a>SharingUrl (POX)
 
-**SharingUrl**要素には、組織間の予定表と連絡先の共有に使用する共有サーバーの URL が含まれています。 
+**Sharingurl**要素には、予定表と連絡先を組織間で共有するために使用される共有サーバーの URL が含まれています。 
   
-[(POX) を自動検出](autodiscover-pox.md)
+[自動検出 (POX)](autodiscover-pox.md)
   
 [応答 (POX)](response-pox.md)
   
@@ -32,7 +32,7 @@ ms.locfileid: "19833489"
 <SharingUrl/>
 ```
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -48,19 +48,19 @@ ms.locfileid: "19833489"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
+|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、組織間の予定表と連絡先の共有に使用する共有サーバーの URL を表します。
+Text 値は、予定表と連絡先を組織間で共有するために使用される共有サーバーの URL を表します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**SharingUrl**要素は、**プロトコル**要素の省略可能な子要素です。 
+**Sharingurl**要素は、**プロトコル**要素のオプションの子要素です。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[交換の POX の自動検出の XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+[Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
 

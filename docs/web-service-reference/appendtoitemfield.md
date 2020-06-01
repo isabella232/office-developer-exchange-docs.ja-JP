@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 66dbcb4a-ae6d-4648-8610-67187bdb105c
-description: AppendToItemField 要素は、UpdateItem 操作中に 1 つのアイテムのプロパティを追加するデータを識別します。
-ms.openlocfilehash: b432399e84ee4a3fd7edc5d3f803079435c79143
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: AppendToItemField 要素は、UpdateItem 操作中にアイテムの1つのプロパティに追加するデータを識別します。
+ms.openlocfilehash: 902239155bff45d6f81989de954c9459cf012288
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759338"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466046"
 ---
 # <a name="appendtoitemfield"></a>AppendToItemField
 
-**AppendToItemField**要素は、 [UpdateItem 操作](updateitem-operation.md)中に 1 つのアイテムのプロパティを追加するデータを識別します。
+**Appendtoitemfield**要素は、 [updateitem 操作](updateitem-operation.md)中にアイテムの1つのプロパティに追加するデータを識別します。
   
 - [UpdateItem](updateitem.md)
   
@@ -29,7 +29,7 @@ ms.locfileid: "19759338"
   
 - [ItemChange](itemchange.md)
   
-- [更新 (アイテム)](updates-item.md)
+- [Updates (Item)](updates-item.md)
   
 - [AppendToItemField](appendtoitemfield.md)
   
@@ -41,7 +41,7 @@ ms.locfileid: "19759338"
 ```
 
  **AppendToItemFieldType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -51,51 +51,51 @@ ms.locfileid: "19759338"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[FieldURI](fielduri.md) <br/> |URI によって頻繁に参照されるプロパティを識別します。  <br/> |
-|[IndexedFieldURI](indexedfielduri.md) <br/> |辞書の個々 のメンバーを識別します。  <br/> |
-|[ExtendedFieldURI](extendedfielduri.md) <br/> |追加するのには、拡張 MAPI プロパティを識別します。  <br/> |
-|[アイテム](item.md) <br/> |Exchange ストア内の項目を表します。  <br/> |
-|[Message](message-ex15websvcsotherref.md) <br/> |Exchange 電子メール メッセージを表します。  <br/> |
-|[カレンダー項目](calendaritem.md) <br/> |Exchange 予定表アイテムを表します。  <br/> |
-|[Contact](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
+|[FieldURI](fielduri.md) <br/> |URI で頻繁に参照されるプロパティを識別します。  <br/> |
+|[IndexedFieldURI](indexedfielduri.md) <br/> |辞書の個々のメンバーを識別します。  <br/> |
+|[ExtendedFieldURI](extendedfielduri.md) <br/> |追加する拡張 MAPI プロパティを識別します。  <br/> |
+|[アイテム](item.md) <br/> |Exchange ストア内のアイテムを表します。  <br/> |
+|[Message](message-ex15websvcsotherref.md) <br/> |Exchange 電子メールメッセージを表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
+|[連絡先](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
 |[DistributionList](distributionlist.md) <br/> |配布リストを表します。  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Exchange ストア内の会議を表します。  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |Exchange ストア内の会議の返信を表します。  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |Exchange ストア内の会議の応答を表します。  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議出席依頼を表します。  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |Exchange ストア内の会議の取り消し通知を表します。  <br/> |
-|[タスク](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |Exchange ストア内の会議の取り消しを表します。  <br/> |
+|[Task](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[更新 (アイテム)](updates-item.md) <br/> |定義する配列が含まれていて、このオプションを設定すると、アイテムのプロパティの変更を削除します。  <br/> この要素への XPath 式は、次のようにします。`/UpdateItem/ItemChanges/ItemChange[i]/Updates` <br/> |
+|[Updates (Item)](updates-item.md) <br/> |アイテムのプロパティに対する追加、設定、および削除の変更を定義する配列を格納します。  <br/> この要素の XPath 式を次に示します。`/UpdateItem/ItemChanges/ItemChange[i]/Updates` <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-特定のプロパティのサポートだけでは、操作を追加します。 追加することをサポートしていないプロパティを追加しようとするは、エラーになります。
+追加操作をサポートするのは、特定のプロパティだけです。 追加をサポートしないプロパティに追加しようとすると、エラーが発生します。
   
-更新操作の場合は、1 つの要求内で 1 つのプロパティを変更できます。 その 1 つのプロパティは、 [Path](path.md)要素に参照されなければなりません。 だけ、派生クラス内の**項目**要素では、**パス**要素を 1 つだけ、1 つのプロパティを格納できますし。 
+更新操作では、1つの要求内で変更できるプロパティは1つだけです。 この単一のプロパティは[Path](path.md)要素で参照する必要があります。 派生クラスの**Item**要素は、1つの**Path**要素を使用して合意した1つのプロパティのみを保持できます。 
   
 > [!NOTE]
-> [Path](path.md)要素は、抽象です。 [FieldURI](fielduri.md)、 [IndexedFieldURI](indexedfielduri.md)、または[ExtendedFieldURI](extendedfielduri.md)要素によってそれに置き換え 必要があります。 
+> [Path](path.md)要素は抽象型です。 [FieldURI](fielduri.md)、 [IndexedFieldURI](indexedfielduri.md)、または[ExtendedFieldURI](extendedfielduri.md)要素に置き換える必要があります。 
   
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - 
   [UpdateItem 操作](updateitem-operation.md)
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

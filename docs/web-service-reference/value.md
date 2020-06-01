@@ -11,25 +11,25 @@ api_name:
 api_type:
 - schema
 ms.assetid: 9a30cadd-909e-41b1-b4e9-291643dd89c6
-description: 値の要素には、拡張プロパティの値が含まれています。
-ms.openlocfilehash: 4b8674d267b78f0384f9457e794e88ace8234826
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Value 要素には、拡張プロパティの値が含まれています。
+ms.openlocfilehash: 5de1528dda6d58ea772d050e709c0720e389fae6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839984"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465213"
 ---
 # <a name="value"></a>値
 
-**値**の要素には、拡張プロパティの値が含まれています。 
+**Value**要素には、拡張プロパティの値が含まれています。 
   
 ```xml
 <Value/>
 ```
 
-**文字列型 (String)**
+**String**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -45,29 +45,29 @@ ms.locfileid: "19839984"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Values](values.md) <br/> |拡張プロパティの値のコレクションが含まれています。  <br/> |
-|[ExtendedProperty](extendedproperty.md) <br/> |フォルダーおよびアイテムの拡張プロパティを識別します。  <br/> |
+|[値](values.md) <br/> |拡張プロパティの値のコレクションを格納します。  <br/> |
+|[ExtendedProperty](extendedproperty.md) <br/> |フォルダーとアイテムの拡張プロパティを識別します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、ExtendedFieldURI の登録するときの属性によって指定されている型との互換性である必要があります。
+テキスト値は、ExtendedFieldURI の Recordtype 属性によって示される型と互換性がある必要があります。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**値**要素は、両方の拡張プロパティの 1 つと複数値を持つインスタンスで発生します。 単一の値のインスタンスでは、 [ExtendedProperty](extendedproperty.md)要素の直接の子として存在します。 複数値を持つインスタンスの**値**のコレクションの直接の子として存在します。 
+**Value**要素は、単一および複数値の拡張プロパティインスタンスの両方で発生します。 単一値インスタンスの場合、これは[Extendedproperty](extendedproperty.md)要素の直接の子として存在します。 複数値インスタンスの場合、これは**Values**コレクションの直接の子として存在します。 
   
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

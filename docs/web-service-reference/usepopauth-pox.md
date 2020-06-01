@@ -8,19 +8,19 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 28f552d8-6bb8-49b4-a45c-b2053670f1cc
-description: UsePOPAuth 要素は、POP3 アカウントの種類の指定された認証情報は、簡易メール転送プロトコル (SMTP) を使用してもかどうかを示します。
-ms.openlocfilehash: be03568d697b1f5461d49dba388a1d3f1008a67e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: UsePOPAuth 要素は、POP3 の種類のアカウントに対して提供された認証情報が簡易メール転送プロトコル (SMTP) にも使用されるかどうかを示します。
+ms.openlocfilehash: 8d5bfffaab31c382ad43915e18b8a7a2b2737c21
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839916"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466508"
 ---
 # <a name="usepopauth-pox"></a>UsePOPAuth (POX)
 
-**UsePOPAuth**要素は、POP3 アカウントの種類の指定された認証情報は、簡易メール転送プロトコル (SMTP) を使用してもかどうかを示します。 
+**Usepopauth**要素は、POP3 の種類のアカウントに対して提供された認証情報が簡易メール転送プロトコル (SMTP) にも使用されるかどうかを示します。 
   
-[(POX) を自動検出](autodiscover-pox.md)
+[自動検出 (POX)](autodiscover-pox.md)
   
 [応答 (POX)](response-pox.md)
   
@@ -34,7 +34,7 @@ ms.locfileid: "19839916"
 <UsePOPAuth>on or off</UsePOPAuth>
 ```
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -50,19 +50,19 @@ ms.locfileid: "19839916"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
+|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、POP3 アカウントの種類に用意されている認証情報が smtp も使用するかどうかを示します。 使用可能な値は、**オン**と**オフを**します。
+テキスト値は、POP3 の種類のアカウントに対して提供された認証情報が SMTP にも使用されるかどうかを示します。 有効な値は、 **[オン**] または [**オフ**] です。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**UsePOPAuth**要素は、[型 (POX)](type-pox.md)が SMTP である場合にのみ使用されます。 
+**Usepopauth**要素は、 [Type (POX)](type-pox.md)が SMTP の場合にのみ使用されます。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[交換の POX の自動検出の XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+[Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
 

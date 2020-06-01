@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 628acf0b-3ebc-42f1-8ce2-7a02b4c8141f
-description: SetUserOofSettingsRequest 要素には、メールボックスのユーザーの Office (OOF) の設定を設定するための引数が含まれています。
-ms.openlocfilehash: ed54bb1d066da7b15605fb81931a6ef75dfc61bf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: SetUserOofSettingsRequest 要素には、メールボックスユーザーの不在時 (OOF) の設定を設定するために使用する引数が含まれています。
+ms.openlocfilehash: 10edc9809fd72f80c316de1c6688eaedec4f93df
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833474"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466151"
 ---
 # <a name="setuseroofsettingsrequest"></a>SetUserOofSettingsRequest
 
-**SetUserOofSettingsRequest**要素には、メールボックスのユーザーの Office (OOF) の設定を設定するための引数が含まれています。 
+**Setuseroofsettingsrequest**要素には、メールボックスユーザーの不在時 (OOF) の設定を設定するために使用する引数が含まれています。 
   
 ```xml
 <SetUserOofSettingsRequest>
@@ -31,7 +31,7 @@ ms.locfileid: "19833474"
 ```
 
  **SetUserOofSettingsRequest**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -41,34 +41,34 @@ ms.locfileid: "19833474"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[メールボックス (可用性)](mailbox-availability.md) <br/> |SetUserOofSettings または GetUserOofSettings の要求をメールボックスのユーザーを識別します。  <br/> |
-|[UserOofSettings](useroofsettings.md) <br/> |不在の設定を指定します。  <br/> |
+|[メールボックス (可用性)](mailbox-availability.md) <br/> |SetUserOofSettings または GetUserOofSettings 要求のメールボックスユーザーを識別します。  <br/> |
+|[UserOofSettings](useroofsettings.md) <br/> |OOF 設定を指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="example"></a>例
 
-SetUserOofSettings 要求の次の例では、10 日間、不在時の設定を設定します。
+SetUserOofSettings 要求の次の例では、OOF 設定を10日間設定しています。
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <SetUserOofSettingsRequest xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-      <Mailbox xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+    <SetUserOofSettingsRequest xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+      <Mailbox xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <Name>David Alexander</Name>
         <Address>someone@example.com</Address>
         <RoutingType>SMTP</RoutingType>
       </Mailbox>
-      <UserOofSettings xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+      <UserOofSettings xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <OofState>Enabled</OofState>
         <ExternalAudience>All</ExternalAudience>
         <Duration>
@@ -87,14 +87,14 @@ SetUserOofSettings 要求の次の例では、10 日間、不在時の設定を�
 </soap:Envelope>
 ```
 
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

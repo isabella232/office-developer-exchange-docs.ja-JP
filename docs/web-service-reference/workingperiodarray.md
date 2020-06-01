@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3a3f6393-eacc-4734-b6c9-b67023fe2830
-description: WorkingPeriodArray 要素には、メールボックス ユーザーの期間の情報を作業が含まれています。
-ms.openlocfilehash: 02712f05dc3373a532d769f476341b78ad25a79c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: WorkingPeriodArray 要素には、メールボックスユーザーの勤務期間情報が含まれています。
+ms.openlocfilehash: a9ca55866a574c5208d8561fca6daf417867fef6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840043"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465199"
 ---
 # <a name="workingperiodarray"></a>WorkingPeriodArray
 
-**WorkingPeriodArray**要素には、メールボックス ユーザーの期間の情報を作業が含まれています。 
+**WorkingPeriodArray**要素には、メールボックスユーザーの勤務期間情報が含まれています。 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -42,7 +42,7 @@ ms.locfileid: "19840043"
 ```
 
  **ArrayOfWorkingPeriod**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -52,30 +52,30 @@ ms.locfileid: "19840043"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[WorkingPeriod](workingperiod.md) <br/> |日、およびメールボックス ユーザーの時間は、稼働日に含まれています。  <br/> |
+|[WorkingPeriod](workingperiod.md) <br/> |メールボックスユーザーの勤務週の曜日と時間を含みます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[WorkingHours](workinghours-ex15websvcsotherref.md) <br/> |要求されたメールボックスのユーザーの作業時間とタイム ゾーンの設定を表します。  <br/> この要素への XPath 式は、次のようにします。  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours` <br/> |
+|[WorkingHours](workinghours-ex15websvcsotherref.md) <br/> |要求されたメールボックスユーザーのタイムゾーン設定および稼働時間を表します。  <br/> この要素の XPath 式を次に示します。  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours` <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-[WorkingHours](workinghours-ex15websvcsotherref.md)要素を使用する場合、この要素が必要です。 発生したシーケンスは、すべての子要素の一覧です。 
+この要素は、 [WorkingHours](workinghours-ex15websvcsotherref.md)要素を使用する場合に必要です。 すべての子要素が発生する順序で一覧表示されます。 
   
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -86,5 +86,5 @@ MicrosoftExchange Server 2007 がインストールされているクライア�
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[ユーザーの状態を取得します。](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[ユーザーの空き時間情報の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

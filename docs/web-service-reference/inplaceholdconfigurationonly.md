@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 921ecc73-b7e2-40a7-8458-68f18dd5a13b
-description: InPlaceHoldConfigurationOnly 要素を含めるかどうかと、インプレース保持構成を指定します。
-ms.openlocfilehash: 3ad020a10e43d8f54e3d603906c856e01b1956eb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: InPlaceHoldConfigurationOnly 要素は、インプレースホールド構成を含めるかどうかを指定します。
+ms.openlocfilehash: ca364ee7d8a9e2e4a608f8f6c4ca5851fa7d4b64
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831934"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466102"
 ---
 # <a name="inplaceholdconfigurationonly"></a>InPlaceHoldConfigurationOnly
 
-**InPlaceHoldConfigurationOnly**要素を含めるかどうかと、インプレース保持構成を指定します。 
+**InPlaceHoldConfigurationOnly**要素は、インプレースホールド構成を含めるかどうかを指定します。 
   
 ```XML
 <InPlaceHoldConfigurationOnly>true | false</InPlaceHoldConfigurationOnly>
 ```
 
- **ブール型 (Boolean)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,21 +42,21 @@ ms.locfileid: "19831934"
   
 ## <a name="text-value"></a>テキスト値
 
-の**場合は true** 、 **InPlaceHoldConfigurationOnly**要素のテキスト値は、埋め込み先の保留中の構成が含まれていることを示します。 **False**の値は、埋め込み先の保留中の構成が含まれていないことを示します。 
+**InPlaceHoldConfigurationOnly**要素のテキスト値が**true**の場合は、インプレースホールド構成が含まれていることを示します。 値が**false**の場合は、インプレースホールド構成が含まれていないことを示します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

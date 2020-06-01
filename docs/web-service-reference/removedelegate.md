@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: f21c5171-62e7-47c8-99b1-22e1ff5883bb
-description: RemoveDelegate 要素は、メールボックスからデリゲートを削除する要求を定義します。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。
-ms.openlocfilehash: 27618b1767c99b26a5f4c06e97a20e063b598d9d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: RemoveDelegate 要素は、メールボックスから代理人を削除するための要求を定義します。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。
+ms.openlocfilehash: eca357ad1ed2dc692f9f192b97abd3a5d765fafb
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833085"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465521"
 ---
 # <a name="removedelegate"></a>RemoveDelegate
 
-**RemoveDelegate**要素は、メールボックスからデリゲートを削除する要求を定義します。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。 
+**Removedelegate**要素は、メールボックスから代理人を削除するための要求を定義します。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。 
   
 ```xml
 <RemoveDelegate>
@@ -31,7 +31,7 @@ ms.locfileid: "19833085"
 ```
 
  **RemoveDelegateType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -41,27 +41,27 @@ ms.locfileid: "19833085"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[メールボックス](mailbox.md) <br/> |主体のメールボックスを識別します。  <br/> |
-|[ユーザー Id](userids.md) <br/> |主体のメールボックスから削除する代理人のユーザーの配列が含まれています。 この要素は、Exchange 2007 SP1 で導入されました。  <br/> |
+|[メールボックス](mailbox.md) <br/> |プリンシパルのメールボックスを識別します。  <br/> |
+|[UserIds](userids.md) <br/> |プリンシパルのメールボックスから削除するデリゲートユーザーの配列を格納します。 この要素は、Exchange 2007 SP1 で導入されました。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -70,5 +70,5 @@ ms.locfileid: "19833085"
 [RemoveDelegate 操作](removedelegate-operation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

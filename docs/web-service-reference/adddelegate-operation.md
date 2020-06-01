@@ -11,45 +11,45 @@ api_name:
 api_type:
 - schema
 ms.assetid: 012d8cc5-648c-4ba0-a155-15c422b1e994
-description: AddDelegate 操作では、1 つまたは複数主体のメールボックスを委任し、特定のアクセス許可の設定を追加します。
-ms.openlocfilehash: 28d4ded2625efc3d6eade44f5fafc06c2ffca7ae
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: AddDelegate 操作は、1つ以上の代理人をプリンシパルのメールボックスに追加し、特定のアクセス許可を設定します。
+ms.openlocfilehash: 80adbe71d69be1025dc9593c6a9002bc68fdcb76
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759275"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466515"
 ---
 # <a name="adddelegate-operation"></a>AddDelegate 操作
 
-**AddDelegate**操作では、1 つまたは複数主体のメールボックスを委任し、特定のアクセス許可の設定を追加します。 
+**Adddelegate**操作は、1つ以上の代理人をプリンシパルのメールボックスに追加し、特定のアクセス許可を設定します。 
   
 ## <a name="soap-headers"></a>SOAP ヘッダー
 
-**AddDelegate**操作が一覧表示され、次の表に記載されている SOAP ヘッダーを使用できます。 
+**Adddelegate**操作では、次の表に記載されている SOAP ヘッダーを使用できます。 
   
 |**Header**|**要素**|**説明**|
 |:-----|:-----|:-----|
-|偽装  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装するユーザーを識別します。  <br/> |
-|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |RFC3066 カルチャを使用してメールボックスへのアクセスを識別します。  <br/> |
-|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマのバージョンを識別します。  <br/> |
-|ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答するサーバーのバージョンを識別します。  <br/> |
+|偽装  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。  <br/> |
+|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |メールボックスへのアクセスに使用する RFC3066 カルチャを指定します。  <br/> |
+|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。  <br/> |
+|ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。  <br/> |
    
 ## <a name="adddelegate-request-example"></a>AddDelegate 要求の例
 
 ### <a name="description"></a>説明
 
-**AddDelegate**要求の次の使用例は、user2 が所有するフォルダーに user1 のアクセス許可の委任を付与する試みを示しています。 User1 には、user2 の予定表フォルダーと user2 の連絡先フォルダーに参照者レベルのアクセス許可を作成者レベルのアクセス許可が与えられます。 User1 は会議のメッセージのコピーを受信しませんし、user2 のメールボックスにプライベート アイテムを表示することはできません。 User1 と user2 の両方に会議出席依頼が送信されます。 
+次の**Adddelegate**要求の例では、user2 によって所有されているフォルダーに user1 の代理人アクセス許可を付与しようとしています。 User1 には、user2's の予定表フォルダーとレビューアーレベルのアクセス許可を user2's の連絡先フォルダーに付与するための、作成者レベルのアクセス許可が付与されます。 User1 は会議メッセージのコピーを受信せず、user2's メールボックス内のプライベートアイテムを表示することができません。 会議出席依頼は user1 と user2 の両方に送信されます。 
   
 ### <a name="code"></a>コード
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1"/>
   </soap:Header>
-  <soap:Body xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+  <soap:Body xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
     <AddDelegate>
       <Mailbox>
         <t:EmailAddress>user2@example.com</t:EmailAddress>
@@ -77,7 +77,7 @@ ms.locfileid: "19759275"
 
 ### <a name="description"></a>説明
 
-**AddDelegate**要求に正常な応答を**AddDelegate**応答の例を次に示します。 
+Adddelegate 応答の次**AddDelegate**の例は、 **adddelegate**要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -92,12 +92,12 @@ ms.locfileid: "19759275"
                          MajorBuildNumber="206" 
                          MinorBuildNumber="0" 
                          Version="Exchange2007_SP1" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <m:AddDelegateResponse xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
+    <m:AddDelegateResponse xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
                            ResponseClass="Success" 
-                           xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+                           xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseCode>NoError</m:ResponseCode>
       <m:ResponseMessages>
         <m:DelegateUserResponseMessageType ResponseClass="Success">
@@ -122,7 +122,7 @@ ms.locfileid: "19759275"
 
 ### <a name="description"></a>説明
 
-主体のメールボックスに既に追加されているデリゲートを追加する要求への応答の例を次に示します。
+次の例は、既にプリンシパルのメールボックスに追加されている代理人を追加する要求に対する応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -137,12 +137,12 @@ ms.locfileid: "19759275"
                          MajorBuildNumber="206" 
                          MinorBuildNumber="0" 
                          Version="Exchange2007_SP1" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <m:AddDelegateResponse xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+    <m:AddDelegateResponse xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
                            ResponseClass="Success"
-                           xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+                           xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseCode>NoError</m:ResponseCode>
       <m:ResponseMessages>
         <m:DelegateUserResponseMessageType ResponseClass="Error">
@@ -158,9 +158,9 @@ ms.locfileid: "19759275"
 
 ### <a name="comments"></a>コメント
 
-デリゲートを追加しようとすると ErrorDelegateAlreadyExists の応答コードが返された場合は、 [GetDelegate 操作](getdelegate-operation.md)を使用して、現在のすべての権限を代理人を取得し、 [UpdateDelegate 操作](updatedelegate-operation.md)を使用して新しいアクセス許可を設定するのには。 
+代理人を追加しようとしたときに ErrorDelegateAlreadyExists 応答コードが返された場合は、 [Getdelegate 操作](getdelegate-operation.md)を使用して代理人に対する現在のアクセス許可をすべて取得した後、 [updatedelegate 操作](updatedelegate-operation.md)を使用して新しいアクセス許可を設定します。 
   
 ## <a name="see-also"></a>関連項目
 
-- [デリゲートを追加します。](http://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
+- [代理人の追加](https://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
 

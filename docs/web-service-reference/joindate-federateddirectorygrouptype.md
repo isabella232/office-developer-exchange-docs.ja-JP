@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: dc85d67d-7637-433b-b4b6-c44faf247464
-description: JoinDate (FederatedDirectoryGroupType) の要素は内部使用のみを目的としています。
-ms.openlocfilehash: 73ffab47ffe34dcea1fc0fad0608c535d655ab62
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: JoinDate (FederatedDirectoryGroupType) 要素は、内部使用のみを目的としています。
+ms.openlocfilehash: 1dbce71c6e5ccfb7dcbc6795e37310b283e849f4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832181"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466431"
 ---
 # <a name="joindate-federateddirectorygrouptype"></a>JoinDate (FederatedDirectoryGroupType)
 
-**JoinDate (FederatedDirectoryGroupType)** の要素は内部使用のみを目的としています。 
+**Joindate (FederatedDirectoryGroupType)** 要素は、内部使用のみを目的としています。 
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -35,7 +35,7 @@ ms.locfileid: "19832181"
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。
   

@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 3e5cf65c-8d0b-4fd9-8207-56c07f914acd
-description: ArrayOfUserResponse 要素には、UserResponse (SOAP) の要素の配列が含まれています。
-ms.openlocfilehash: 7fab572c5e783a09c37e07492ddcd55d5ba34c84
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ArrayOfUserResponse 要素には、UserResponse (SOAP) 要素の配列が含まれています。
+ms.openlocfilehash: fb14b6cd714a0561e9c8e17bd1779d955ba16dfc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759440"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44466011"
 ---
 # <a name="arrayofuserresponse-soap"></a>ArrayOfUserResponse (SOAP)
 
-**ArrayOfUserResponse**要素には、 [UserResponse (SOAP)](userresponse-soap.md)の要素の配列が含まれています。 
+**Arrayofuserresponse**要素には、 [USERRESPONSE (SOAP)](userresponse-soap.md)要素の配列が含まれています。 
   
 ```XML
 <ArrayOfUserResponse>
@@ -27,7 +27,7 @@ ms.locfileid: "19759440"
 ```
 
  **ArrayOfUserResponse**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -37,9 +37,9 @@ ms.locfileid: "19759440"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[UserResponse (SOAP)](userresponse-soap.md) <br/> |指定したユーザーの要求された設定が含まれています。  <br/> |
+|[UserResponse (SOAP)](userresponse-soap.md) <br/> |指定したユーザーの要求された設定を含みます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -49,14 +49,14 @@ ms.locfileid: "19759440"
 
 なし。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|スキーマ名  <br/> |スキーマの自動検出  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|スキーマ名  <br/> |自動検出スキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

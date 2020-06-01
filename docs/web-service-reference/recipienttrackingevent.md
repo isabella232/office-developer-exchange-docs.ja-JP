@@ -1,5 +1,5 @@
 ---
-title: RecipientTrackingEvent
+title: 受信者 Trackingイベント
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 2bffdac7-c2f5-4805-ae7e-bd865301acb6
-description: RecipientTrackingEvent 要素には、受信者の 1 つのイベントの情報が含まれています。
-ms.openlocfilehash: c5488ba105f9a853a490d6f0f4ff9ff15b537e23
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 受信者 Trackingevent 要素には、受信者に対する1つのイベントに関する情報が含まれています。
+ms.openlocfilehash: e9a014cdfac122f112205cfa5032535a770f9d82
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832989"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465486"
 ---
-# <a name="recipienttrackingevent"></a>RecipientTrackingEvent
+# <a name="recipienttrackingevent"></a>受信者 Trackingイベント
 
-**RecipientTrackingEvent**要素には、受信者の 1 つのイベントの情報が含まれています。 
+受信者**trackingevent**要素には、受信者に対する1つのイベントに関する情報が含まれています。 
   
 ```XML
 <RecipientTrackingEvent>
@@ -40,8 +40,8 @@ ms.locfileid: "19832989"
 </RecipientTrackingEvent>
 ```
 
- **RecipientTrackingEventType**
-## <a name="attributes-and-elements"></a>属性および要素
+ **受信者 Trackingeventtype**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -51,43 +51,43 @@ ms.locfileid: "19832989"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
 |[日付 (MessageTracking)](date-messagetracking.md) <br/> |この要素は必須です。  <br/> |
-|[Recipient](recipient.md) <br/> |この要素は必須です。  <br/> |
+|[[受信者]](recipient.md) <br/> |この要素は必須です。  <br/> |
 |[DeliveryStatus](deliverystatus.md) <br/> |この要素は必須です。  <br/> |
-|[EventDescription](eventdescription.md) <br/> |この要素は必須です。  <br/> |
-|[EventData](eventdata.md) <br/> |この要素はオプションです。  <br/> |
+|[イベントの説明](eventdescription.md) <br/> |この要素は必須です。  <br/> |
+|[EventData](eventdata.md) <br/> |この要素は省略できます。  <br/> |
 |[サーバー (MessageTracking)](server-messagetracking.md) <br/> |この要素は必須です。  <br/> |
-|[Internalid など](internalid.md) <br/> |この要素は必須です。  <br/> |
-|[BccRecipient](bccrecipient.md) <br/> |この要素はオプションです。  <br/> |
-|[HiddenRecipient](hiddenrecipient.md) <br/> |この要素はオプションです。  <br/> |
-|[UniquePathId](uniquepathid.md) <br/> |この要素はオプションです。  <br/> |
-|[RootAddress](rootaddress.md) <br/> |この要素はオプションです。  <br/> |
-|[プロパティ (ArrayOfTrackingPropertiesType)](properties-arrayoftrackingpropertiestype.md) <br/> |この要素はオプションです。  <br/> |
+|[InternalId](internalid.md) <br/> |この要素は必須です。  <br/> |
+|[BccRecipient](bccrecipient.md) <br/> |この要素は省略できます。  <br/> |
+|[HiddenRecipient](hiddenrecipient.md) <br/> |この要素は省略できます。  <br/> |
+|[UniquePathId](uniquepathid.md) <br/> |この要素は省略できます。  <br/> |
+|[RootAddress](rootaddress.md) <br/> |この要素は省略できます。  <br/> |
+|[プロパティ (ArrayOfTrackingPropertiesType)](properties-arrayoftrackingpropertiestype.md) <br/> |この要素は省略できます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[RecipientTrackingEvents](recipienttrackingevents.md) <br/> |受信者の 1 つまたは複数の追跡イベントのリストが含まれています。  <br/> |
+|[受信者 Trackingevents](recipienttrackingevents.md) <br/> |受信者の1つまたは複数の追跡イベントのリストを格納します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -96,5 +96,5 @@ ms.locfileid: "19832989"
 [GetMessageTrackingReport 操作](getmessagetrackingreport-operation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

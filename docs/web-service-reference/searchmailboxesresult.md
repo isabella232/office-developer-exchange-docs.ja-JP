@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ddb276c4-6c8a-46ef-a2eb-46b6a0bfce09
-description: SearchMailboxesResult 要素には、SearchMailboxes 要求の結果が含まれています。
-ms.openlocfilehash: 93e5837216ef8942b77ac2a91f5ef5f0ad001756
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: SearchMailboxesResult 要素には、SearchMailboxes ボックス要求の結果が含まれています。
+ms.openlocfilehash: 79d593d99762aedc6290578b5458f9ac3cad3d26
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833300"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466704"
 ---
 # <a name="searchmailboxesresult"></a>SearchMailboxesResult
 
-**SearchMailboxesResult**要素には、 **SearchMailboxes**要求の結果が含まれています。 
+**SearchMailboxesResult**要素には、 **searchmailboxes ボックス**要求の結果が含まれています。 
   
 ```XML
 <SearchMailboxesResult>
@@ -36,7 +36,7 @@ ms.locfileid: "19833300"
 ```
 
  **SearchMailboxesResultType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -46,25 +46,25 @@ ms.locfileid: "19833300"
   
 ### <a name="child-elements"></a>子要素
 
-[SearchQueries](searchqueries.md) | [結果](resulttype.md) | [ItemCount](itemcount.md) | [サイズ (長)](size-long.md) | [PageItemCount](pageitemcount.md) | [PageItemSize](pageitemsize.md) | [KeywordStats](keywordstats.md) | [(の項目ArrayOfSearchPreviewItemsType)](items-arrayofsearchpreviewitemstype.md) | [FailedMailboxes](failedmailboxes.md) | [絞り込み条件](refiners.md) | [MailboxStats](mailboxstats.md)
+[Searchqueries](searchqueries.md)  | [ResultType](resulttype.md)  | [ItemCount](itemcount.md)  | [サイズ (長い)](size-long.md)  | [PageItemCount](pageitemcount.md)  | [Pageitemsize](pageitemsize.md)  | [KeywordStats](keywordstats.md)  | [アイテム (Arrayofsearchプレビュー Itemstype)](items-arrayofsearchpreviewitemstype.md)  | [失敗したメールボックス](failedmailboxes.md)  | [絞り込み条件](refiners.md)  | [MailboxStats](mailboxstats.md)
   
 ### <a name="parent-elements"></a>親要素
 
 [SearchMailboxesResponseMessage](searchmailboxesresponsemessage.md)
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
 |空にすることができます。  <br/> |false  <br/> |
    
 

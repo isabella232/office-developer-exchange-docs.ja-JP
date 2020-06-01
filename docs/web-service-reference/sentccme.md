@@ -1,5 +1,5 @@
 ---
-title: SentCcMe
+title: Ccme の説明
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: bf5044e4-cbdf-4e24-a16f-b6454a51fcd5
-description: SentCcMe 要素は、メールボックスの所有者が条件または例外を適用する順序で受信メッセージの CcRecipients プロパティであるかどうかを示します。
-ms.openlocfilehash: 634a83d477efbe8683255c4fab71e3f7f1ab2191
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 送信された Ccme 要素は、条件または例外を適用するために、メールボックスの所有者が受信メッセージの CcRecipients プロパティにある必要があるかどうかを示します。
+ms.openlocfilehash: 1fae56a8e7d4e56c56884e5fff051ecd9f138a6d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833354"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465479"
 ---
-# <a name="sentccme"></a>SentCcMe
+# <a name="sentccme"></a>Ccme の説明
 
-**SentCcMe**要素は、メールボックスの所有者が条件または例外を適用する順序で受信メッセージの**CcRecipients**プロパティであるかどうかを示します。 
+送信された**Ccme**要素は、条件または例外を適用するために、メールボックスの所有者が受信メッセージの**Ccrecipients**プロパティにある必要があるかどうかを示します。 
   
 ```XML
 <SentCcMe>true | false</SentCcMe>
 ```
 
- **ブール型 (Boolean)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,29 +44,29 @@ ms.locfileid: "19833354"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[条件](conditions.md) <br/> |条件を表しますが、満たされるとときに、ルールのルールの処理をトリガーします。  <br/> |
-|[Exceptions](exceptions.md) <br/> |受信トレイ ルールの使用可能なルールの例外条件をすべてを表します。  <br/> |
+|[条件](conditions.md) <br/> |ルールのルールの処理を開始するときに実行される条件を表します。  <br/> |
+|[例外](exceptions.md) <br/> |受信トレイルールに対して使用可能なすべてのルールの例外条件を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**True**の場合、テキスト値は、メールボックスの所有者を適用する場合の条件または例外の順序で受信メッセージの**CcRecipients**プロパティである必要があることを示します。 **False**の値は、適用する条件または例外の順序で受信メッセージの**CcRecipients**プロパティでは、メールボックスの所有者でなければなりませんことを示します。 
+テキスト値が**true の場合**は、条件または例外を適用するために、メールボックスの所有者が受信メッセージの**Ccrecipients**プロパティにある必要があることを示します。 値が**false**の場合、条件または例外を適用するために、メールボックスの所有者が受信メッセージの**Ccrecipients**プロパティにない必要があることを示します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

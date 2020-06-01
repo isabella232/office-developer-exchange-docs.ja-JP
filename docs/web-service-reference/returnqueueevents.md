@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 69d22417-320c-4c6f-9fb4-2020f2480bb2
-description: ReturnQueueEvents 要素は、タスクを実行している人が特権を持つ役割のことを示します。
-ms.openlocfilehash: 02f4ca86ffa14117105ec186ae039065cb626670
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ReturnQueueEvents 要素は、タスクを実行しているユーザーが特権の役割を持っていることを示します。
+ms.openlocfilehash: 9d07bc8c3d32f1cd532febaf4ae04e4a2d31d243
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833233"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466592"
 ---
 # <a name="returnqueueevents"></a>ReturnQueueEvents
 
-**ReturnQueueEvents**要素は、タスクを実行している人が特権を持つ役割のことを示します。 
+**Returnqueueevents**要素は、タスクを実行しているユーザーが特権の役割を持っていることを示します。 
   
 ```XML
 <ReturnQueueEvents>true | false</ReturnQueueEvents>
 ```
 
- **ブール型 (Boolean)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,24 +44,24 @@ ms.locfileid: "19833233"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetMessageTrackingReport](getmessagetrackingreport.md) <br/> |レポートを指定した ID の追跡を取得するために[GetMessageTrackingReport 操作](getmessagetrackingreport-operation.md)の要求が含まれています  <br/> |
+|[GetMessageTrackingReport](getmessagetrackingreport.md) <br/> |指定された ID の完全なメッセージ追跡レポートを取得する[Getmessagetrackingreport 操作](getmessagetrackingreport-operation.md)の要求を含みます。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-ブール値を表す文字列値は、必要があります。 **True**の場合のことを示します、タスクを実行している人、特権を持つ役割です。**false**の値は、タスクを実行している人が特権を持つロールされていないことを示します。 
+ブール値を表すテキスト値が必要です。 値が**true の場合**は、タスクを実行しているユーザーが特権ロールに含まれていることを示します。値が**false**の場合は、タスクを実行しているユーザーが特権ロールに含まれていないことを示します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -70,5 +70,5 @@ ms.locfileid: "19833233"
 [GetMessageTrackingReport 操作](getmessagetrackingreport-operation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

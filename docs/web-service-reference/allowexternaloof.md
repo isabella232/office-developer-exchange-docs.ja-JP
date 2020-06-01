@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e5387172-5b92-4bb1-8394-180e9c7ff771
-description: AllowExternalOof 要素には、外部の Office (OOF) メッセージを送信するを識別する値が含まれています。
-ms.openlocfilehash: 1c87a51676bf6e44b2e650a4e973d0ab89a52e31
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: AllowExternalOof 要素には、外部の不在時 (OOF) メッセージが送信されるユーザーを識別する値が含まれています。
+ms.openlocfilehash: e4934bc4bc86e1f9f764279a13ecaeca073d9e5d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759316"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464813"
 ---
 # <a name="allowexternaloof"></a>AllowExternalOof
 
-**AllowExternalOof**要素には、外部の Office (OOF) メッセージを送信するを識別する値が含まれています。 
+**AllowExternalOof**要素には、外部の不在時 (OOF) メッセージが送信されるユーザーを識別する値が含まれています。 
   
 - [GetUserOofSettingsResponse](getuseroofsettingsresponse.md)
   
@@ -32,7 +32,7 @@ ms.locfileid: "19759316"
 ```
 
  **ExternalAudience**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -48,32 +48,32 @@ ms.locfileid: "19759316"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetUserOofSettingsResponse](getuseroofsettingsresponse.md) <br/> |応答結果とユーザーの不在時の設定が含まれています。  <br/> |
+|[GetUserOofSettingsResponse](getuseroofsettingsresponse.md) <br/> |応答結果とユーザーの OOF 設定が含まれます。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、この要素の必要があります。 次の表は、この要素の有効な値を一覧します。
+この要素にはテキスト値が必要です。 次の表に、この要素で使用できる値を示します。
   
 |**値**|**説明**|
 |:-----|:-----|
-|**None** <br/> |メールボックス ユーザーの組織外のユーザーにメッセージを送信するメールの送信者は、外部の OOF メッセージの応答を受信しません。  <br/> |
-|**呼ばれる** <br/> |メールボックス ユーザーの組織の外部ユーザーへのメッセージのみが表示されます、外部の OOF メッセージ応答送信者がユーザーの Exchange の場合に送信したメールの送信者は、連絡先リストを保存します。  <br/> |
-|**All** <br/> |メールボックス ユーザーの組織外のユーザーにメッセージを送信するメールの送信者が外部の OOF メッセージの応答を受け取ります。  <br/> |
+|**なし** <br/> |メールボックスユーザーの組織外の電子メール送信者は、ユーザーにメッセージを送信すると、外部の不在時メッセージ応答を受信しません。  <br/> |
+|**一般的** <br/> |メールボックスユーザーの組織外の電子メール送信者がユーザーにメッセージを送信すると、送信者がユーザーの Exchange ストアの連絡先リストにある場合にのみ、外部の OOF メッセージ応答が受信されます。  <br/> |
+|**All** <br/> |メールボックスユーザーの組織外の電子メール送信者は、ユーザーにメッセージを送信すると、外部の OOF メッセージ応答を受信します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素は、 [ExternalAudience](externalaudience.md)要素と同じ型を共有します。 
+この要素は、 [Externalaudience](externalaudience.md)要素と同じ型を共有します。 
   
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 009058b0-c5a7-4fdc-b1a1-af0abaf70ab9
-description: ManagedByOrganization 要素は、管理する組織を指定します。
-ms.openlocfilehash: f72f64d8316d5507cae99d146c1eaceea1713074
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ManagedByOrganization 要素は、管理組織を指定します。
+ms.openlocfilehash: ee46a39c4573f0f2088992ec9bd2a0d60ec8fdcf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832336"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465843"
 ---
 # <a name="managedbyorganization"></a>ManagedByOrganization
 
-**ManagedByOrganization**要素は、管理する組織を指定します。 
+**Managedbyorganization**要素は、管理組織を指定します。 
   
 ```XML
 <ManagedByOrganization></ManagedByOrganization>
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,21 +42,21 @@ ms.locfileid: "19832336"
   
 ## <a name="text-value"></a>テキスト値
 
-**ManagedByOrganization**要素のテキスト値は、探索検索を管理する組織を識別します。 
+**Managedbyorganization**要素のテキスト値は、探索検索を管理する組織を識別します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

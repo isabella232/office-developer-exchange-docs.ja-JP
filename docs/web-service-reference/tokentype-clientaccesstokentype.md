@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 96103f15-a3e0-497c-af21-90adbf9a4b14
-description: TokenType 要素は、GetClientAccessToken の応答で返されるクライアントのアクセス トークンの種類を識別します。
-ms.openlocfilehash: c9adb60acf76fefebd58e2fd3bc899332a63dbee
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: TokenType 要素は、GetClientAccessToken 応答で返されるクライアントアクセストークンの種類を識別します。
+ms.openlocfilehash: 49ba2973967b12396e0c7f56129c89c40ccbcf97
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839725"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466053"
 ---
 # <a name="tokentype-clientaccesstokentype"></a>TokenType (ClientAccessTokenType)
 
-**TokenType**要素は、 **GetClientAccessToken**の応答で返されるクライアントのアクセス トークンの種類を識別します。 
+**TokenType**要素は、 **GetClientAccessToken**応答で返されるクライアントアクセストークンの種類を識別します。 
   
 ```XML
 <TokenType>CallerIdentity | ExtensionCallback | ScopedToken</TokenType>
 ```
 
  **ClientAccessTokenTypeType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -38,25 +38,25 @@ ms.locfileid: "19839725"
   
 ### <a name="parent-elements"></a>親要素
 
-[TokenRequest](tokenrequest.md) | [(ClientAccessTokenType) をトークン](token-clientaccesstokentype.md)
+[Tokenrequest](tokenrequest.md)  | [トークン (ClientAccessTokenType)](token-clientaccesstokentype.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**CallerIdentity**のテキスト値は、呼び出し元 id のクライアントのアクセス トークンが返されますを意味します。 **ExtensionCallback**のテキスト値は、拡張機能コールバック クライアントのアクセス トークンが返されることを示します。 テキスト値が**ScopedToken**のクライアントのアクセス トークンがスコープのトークンであることを示します。 
+**Calleridentity**のテキスト値は、呼び出し id クライアントアクセストークンが返されることを意味します。 **Extensioncallback**というテキスト値は、拡張コールバッククライアントアクセストークンが返されることを示します。 **ScopedToken**のテキスト値は、クライアントアクセストークンがスコープ付きのトークンであることを示します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> |false  <br/> |
    
 

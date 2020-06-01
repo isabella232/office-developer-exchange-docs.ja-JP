@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: e924c66f-d17f-44e5-9e8e-e02d6117f431
-description: MiddleNames 要素では、ミドル ネームの値の配列と関連付けられているペルソナにそのソースの帰属の識別子を指定します。
-ms.openlocfilehash: 58ea2e1128ee78944a5f75d9496e0f17e16fe0f4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: MiddleNames 要素は、関連付けられているペルソナの中間の名前の値とそのソース attributions の識別子の配列を指定します。
+ms.openlocfilehash: 08a2a4b1fafac6cdf25a745968a269b1c0ab6494
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832463"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44466270"
 ---
 # <a name="middlenames"></a>MiddleNames
 
-**MiddleNames**要素では、ミドル ネームの値の配列と関連付けられているペルソナにそのソースの帰属の識別子を指定します。 
+**MiddleNames**要素は、関連付けられているペルソナの中間の名前の値とそのソース attributions の識別子の配列を指定します。 
   
 ```XML
 <MiddleNames>
@@ -26,7 +26,7 @@ ms.locfileid: "19832463"
 ```
 
  **ArrayOfStringAttributedValuesType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,21 +40,21 @@ ms.locfileid: "19832463"
   
 ### <a name="parent-elements"></a>親要素
 
-[ペルソナ](persona.md)
+[ユーザー](persona.md)
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

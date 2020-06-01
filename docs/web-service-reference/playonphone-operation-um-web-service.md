@@ -10,23 +10,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7d55be55-f8b6-4e96-a61e-26fa190217fd
-description: PlayOnPhone 操作では、発信呼び出しし、DialString 要素で指定されている電話で指定されたメッセージを再生します。
-ms.openlocfilehash: b55bb45d6654f57503879f33e1cd5013ddb69a2e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: PlayOnPhone 操作は、発信呼び出しを行い、ダイヤル文字列要素で指定されている電話で指定されたメッセージを再生します。
+ms.openlocfilehash: c5ff82bcd822aa2c659d1782ea4a1349d198bc80
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832818"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466235"
 ---
 # <a name="playonphone-operation-um-web-service"></a>PlayOnPhone 操作 (UM web サービス)
 
-PlayOnPhone 操作では、発信呼び出しし、 **DialString**要素で指定されている電話で指定されたメッセージを再生します。 
+PlayOnPhone 操作は、発信呼び出しを行い、ダイヤル**文字列**要素で指定されている電話で指定されたメッセージを再生します。 
   
 ## <a name="playonphone-request-example"></a>PlayOnPhone 要求の例
 
 ### <a name="description"></a>説明
 
-PlayOnPhone 要求の次の例では、発信呼び出しを行い、メッセージを再生する要求を作成する方法を示します。
+次の PlayOnPhone 要求の例は、発信通話を行い、メッセージを再生するための要求を形成する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -34,7 +34,7 @@ PlayOnPhone 要求の次の例では、発信呼び出しを行い、メッセ�
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <PlayOnPhone xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <PlayOnPhone xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <entryId>AAAAAGsd2rbQLVtLobUGbrq/9IUHAEX2ikn/L8JJtI5WHI0FAW8AAAFXHhsAACxVpEl+KVVLl957wp//x6UAGAetcDUAAA==</entryId>
       <DialString>12345</DialString>
     </PlayOnPhone>
@@ -42,11 +42,11 @@ PlayOnPhone 要求の次の例では、発信呼び出しを行い、メッセ�
 </soap:Envelope>
 ```
 
-## <a name="successful-playonphone-response-example"></a>成功した PlayOnPhone の応答の例
+## <a name="successful-playonphone-response-example"></a>成功した PlayOnPhone 応答の例
 
 ### <a name="description"></a>説明
 
-PlayOnPhone 要求への応答を PlayOnPhone の応答の例を次に示します。
+次の PlayOnPhone 応答の例は、PlayOnPhone 要求に対する応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -54,7 +54,7 @@ PlayOnPhone 要求への応答を PlayOnPhone の応答の例を次に示しま�
 <?xml version="1.0" encoding="utf-8" ?> 
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Body>
-    <PlayOnPhoneResponse xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <PlayOnPhoneResponse xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <PlayOnPhoneResponse>NDEzYjEzNmMtZTE2Zi00NTJlLWI3YzctNDhkMTE3MDE3YjlmQGRmLWV1bS0wMS5leGNoYW5nZS5jb3JwLm1pY3Jvc29mdC5jb20=</PlayOnPhoneResponse> 
     </PlayOnPhoneResponse>
   </soap:Body>
@@ -69,5 +69,5 @@ PlayOnPhone 要求への応答を PlayOnPhone の応答の例を次に示しま�
   
 [PlayOnPhoneResponse (UM web サービス)](playonphoneresponse-um-web-service.md)
   
-[PlayOnPhoneGreeting 操作 (UM web サービス)](playonphonegreeting-operation-um-web-service.md)
+[Playon電話案内応答操作 (UM web サービス)](playonphonegreeting-operation-um-web-service.md)
 

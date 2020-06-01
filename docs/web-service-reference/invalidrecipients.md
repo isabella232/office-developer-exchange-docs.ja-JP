@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e4e7b50e-2fa9-4649-94a6-6002f341ecc4
-description: InvalidRecipients 要素は、無効な要求を共有フォルダーの受信者を表します。
-ms.openlocfilehash: 02ad8935bde347c563875bf5bfb31968b70d81b6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: InvalidRecipients 要素は、無効なフォルダー共有要求の受信者を表します。
+ms.openlocfilehash: 99e0817f0ff873c4732b03cc7d68aa8e0070813c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831966"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465563"
 ---
 # <a name="invalidrecipients"></a>InvalidRecipients
 
-**InvalidRecipients**要素は、無効な要求を共有フォルダーの受信者を表します。 
+**Invalidrecipients**要素は、無効なフォルダー共有要求の受信者を表します。 
   
 ```XML
 <InvalidRecipients>
@@ -29,8 +29,8 @@ ms.locfileid: "19831966"
 </InvalidRecipients>
 ```
 
- **ArrayOfInvalidRecipientsType**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Arrayofinvalid受信者 Stype**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,29 +40,29 @@ ms.locfileid: "19831966"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[InvalidRecipient](invalidrecipient.md) <br/> |受信者が有効な理由については、無効な受信者の SMTP アドレスが含まれています。  <br/> |
+|[InvalidRecipient](invalidrecipient.md) <br/> |無効な受信者の SMTP アドレスと、受信者が無効である理由についての情報を格納します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetSharingMetadataResponse](getsharingmetadataresponse.md) <br/> |[GetSharingMetadata 操作](getsharingmetadata-operation.md)要求に対する応答を定義します。  <br/> |
-|[GetSharingMetadataResponseMessage](getsharingmetadataresponsemessage.md) <br/> |状態および 1 つの結果が含まれています[GetSharingMetadata の操作](getsharingmetadata-operation.md)を要求します。  <br/> |
+|[GetSharingMetadataResponse](getsharingmetadataresponse.md) <br/> |[Getsharingmetadata 操作](getsharingmetadata-operation.md)要求への応答を定義します。  <br/> |
+|[GetSharingMetadataResponseMessage](getsharingmetadataresponsemessage.md) <br/> |1つの[Getsharingmetadata 操作](getsharingmetadata-operation.md)要求の状態と結果を格納します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -71,5 +71,5 @@ ms.locfileid: "19831966"
 [GetSharingMetadata 操作](getsharingmetadata-operation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

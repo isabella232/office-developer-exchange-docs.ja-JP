@@ -8,39 +8,39 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 758d965c-ef63-4de4-9120-e293abf14ff8
-description: GetUserSettings 操作には、ユーザーのクライアント アクセスの構成のクエリが含まれています。
-ms.openlocfilehash: 8bb8f766da3419ea33f89716e588a22d3924e1a4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetUserSettings 操作には、ユーザーのクライアントアクセス構成に対するクエリが含まれています。
+ms.openlocfilehash: e274fd4e1ca954ea25ea91a52e363c9a434b290a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831704"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466144"
 ---
 # <a name="getusersettings-operation-soap"></a>GetUserSettings 操作 (SOAP)
 
-**GetUserSettings**操作には、ユーザーのクライアント アクセスの構成のクエリが含まれています。 
+**Getusersettings**操作には、ユーザーのクライアントアクセス構成に対するクエリが含まれています。 
   
 ## <a name="getusersettings-request-example"></a>GetUserSettings 要求の例
 
 ### <a name="description"></a>説明
 
-次の XML の例は、ユーザーの表示名、識別名、展開の ID、メールボックス サーバー、メールボックスの識別名、Active Directory サーバー、クライアント アクセス サーバーのバージョン、およびサポートされている Exchange Web を要求する自動検出要求の本文を示しています。サービスのスキーマです。
+次の XML の例は、ユーザーの表示名、識別名、展開 ID、メールボックスサーバー、メールボックスの識別名、Active Directory サーバー、クライアントアクセスサーバーのバージョン、およびサポートされている Exchange Web サービスのスキーマを要求する自動検出要求の本文を示しています。
   
 ### <a name="code"></a>コード
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:a="http://schemas.microsoft.com/exchange/2010/Autodiscover"      
+<soap:Envelope xmlns:a="https://schemas.microsoft.com/exchange/2010/Autodiscover"      
                xmlns:wsa="http://www.w3.org/2005/08/addressing" 
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"      
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <a:RequestedServerVersion>Exchange2010</a:RequestedServerVersion>
-    <wsa:Action>http://schemas.microsoft.com/exchange/2010/Autodiscover/Autodiscover/GetUserSettings</wsa:Action>
+    <wsa:Action>https://schemas.microsoft.com/exchange/2010/Autodiscover/Autodiscover/GetUserSettings</wsa:Action>
     <wsa:To>https://myserver.contoso.com/autodiscover/autodiscover.svc</wsa:To>
   </soap:Header>
   <soap:Body>
-    <a:GetUserSettingsRequestMessage xmlns:a="http://schemas.microsoft.com/exchange/2010/Autodiscover">
+    <a:GetUserSettingsRequestMessage xmlns:a="https://schemas.microsoft.com/exchange/2010/Autodiscover">
       <a:Request>
         <a:Users>
           <a:User>
@@ -64,9 +64,9 @@ ms.locfileid: "19831704"
 
 ```
 
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-次の要素は、要求の本体で使用されます。
+要求本文では、次の要素が使用されます。
   
 - [GetUserSettingsRequestMessage (SOAP)](getusersettingsrequestmessage-soap.md)
     
@@ -74,31 +74,31 @@ ms.locfileid: "19831704"
     
 - [要求 (SOAP)](request-soap.md)
     
-- [RequestedServerVersion (SOAP)](requestedserverversion-soap.md)
+- [Exchangeservice.requestedserverversion (SOAP)](requestedserverversion-soap.md)
     
 - [RequestedSettings (SOAP)](requestedsettings-soap.md)
     
-- [(SOAP) の設定](setting-soap.md)
+- [Setting (SOAP)](setting-soap.md)
     
-- [ユーザー (SOAP)](user-soap.md)
+- [User (SOAP)](user-soap.md)
     
-- [ユーザー (SOAP)](users-soap.md)
+- [Users (SOAP)](users-soap.md)
     
-## <a name="getusersettings-response-example"></a>GetUserSettings の応答の例
+## <a name="getusersettings-response-example"></a>GetUserSettings response の例
 
 ### <a name="description"></a>説明
 
-次の例では、正常な**GetUserSettings**応答を示します。 
+次の例は、正常な**Getusersettings**応答を示しています。 
   
 ### <a name="code"></a>コード
 
 ```XML
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns:a="http://www.w3.org/2005/08/addressing">
   <s:Header>
-    <a:Action s:mustUnderstand="1">http://schemas.microsoft.com/exchange/2010/Autodiscover/Autodiscover/GetUserSettingsResponse</a:Action>
+    <a:Action s:mustUnderstand="1">https://schemas.microsoft.com/exchange/2010/Autodiscover/Autodiscover/GetUserSettingsResponse</a:Action>
   </s:Header>
   <s:Body>
-  <GetUserSettingsResponseMessage xmlns="http://schemas.microsoft.com/exchange/2010/Autodiscover">
+  <GetUserSettingsResponseMessage xmlns="https://schemas.microsoft.com/exchange/2010/Autodiscover">
       <Response xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
         <ErrorCode>NoError</ErrorCode>
         <ErrorMessage />
@@ -150,17 +150,17 @@ ms.locfileid: "19831704"
 </s:Envelope>
 ```
 
-### <a name="response-elements"></a>応答の要素
+### <a name="response-elements"></a>Response 要素
 
-応答の本体では、次の要素が使用されます。
+応答本文では、次の要素が使用されます。
   
-- [エラー コード (SOAP)](errorcode-soap.md)
+- [ErrorCode (SOAP)](errorcode-soap.md)
     
-- [エラー メッセージ (SOAP)](errormessage-soap.md)
+- [ErrorMessage (SOAP)](errormessage-soap.md)
     
 - [GetUserSettingsResponseMessage (SOAP)](getusersettingsresponsemessage-soap.md)
     
-- [名 (SOAP)](name-soap.md)
+- [Name (SOAP)](name-soap.md)
     
 - [RedirectTarget (SOAP)](redirecttarget-soap.md)
     
@@ -174,9 +174,9 @@ ms.locfileid: "19831704"
     
 - [UserSettingErrors (SOAP)](usersettingerrors-soap.md)
     
-- [ユーザー (SOAP)](usersettings-soap.md)
+- [UserSettings (SOAP)](usersettings-soap.md)
     
-- [値 (SOAP)](value-soap.md)
+- [Value (SOAP)](value-soap.md)
     
 ## <a name="see-also"></a>関連項目
 
@@ -187,5 +187,5 @@ ms.locfileid: "19831704"
 [GetFederationInformation 操作 (SOAP)](getfederationinformation-operation-soap.md)
 
 
-[Exchange 2013 の自動検出の XML 要素を SOAP](soap-autodiscover-xml-elements-for-exchange-2013.md)
+[Exchange 2013 の SOAP 自動検出 XML 要素](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

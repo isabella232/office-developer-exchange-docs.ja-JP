@@ -6,24 +6,24 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 70946a1a-a121-4b47-8e67-ccbc1a25b0f1
-description: ServiceUrl 要素は、web サービスを共有するドキュメントの URL を表します。
-ms.openlocfilehash: a80cd43121d6a5f58e60ac6d03747c9ac32e4e7c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ServiceUrl 要素は、ドキュメント共有 web サービスの URL を表します。
+ms.openlocfilehash: 14b553f53c9af3f746a111d6e48a443ba33646dc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833394"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465773"
 ---
 # <a name="serviceurl-soap"></a>ServiceUrl (SOAP)
 
-**ServiceUrl**要素は、web サービスを共有するドキュメントの URL を表します。 
+**Serviceurl**要素は、ドキュメント共有 web サービスの URL を表します。 
   
 ```XML
 <ServiceUrl />
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -39,20 +39,20 @@ ms.locfileid: "19833394"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[DocumentSharingLocation (SOAP)](documentsharinglocation-soap.md) <br/> |場所を共有するドキュメントの場所およびメタデータの情報を表します。  <br/> |
+|[DocumentSharingLocation (SOAP)](documentsharinglocation-soap.md) <br/> |ドキュメント共有場所の場所とメタデータ情報を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**ServiceUrl**要素のテキスト値は、web サービスを共有するドキュメントの URL です。 
+**Serviceurl**要素のテキスト値は、ドキュメント共有 web サービスの URL です。 
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|スキーマ名  <br/> |スキーマの自動検出  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|スキーマ名  <br/> |自動検出スキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -61,7 +61,7 @@ ms.locfileid: "19833394"
 [GetUserSettings 操作 (SOAP)](getusersettings-operation-soap.md)
 
 
-[Exchange の自動検出 web サービスの参照](autodiscover-web-service-reference-for-exchange.md)
+[Exchange 用自動検出 Web サービス リファレンス](autodiscover-web-service-reference-for-exchange.md)
   
-[Exchange 2013 の自動検出の XML 要素を SOAP](soap-autodiscover-xml-elements-for-exchange-2013.md)
+[Exchange 2013 の SOAP 自動検出 XML 要素](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

@@ -10,17 +10,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 42aac88f-8513-416d-8be4-77378b71a45b
-description: ResetPINResponse 要素は、ResetPIN 操作 (UM web サービス) 要求に応答を定義します。
-ms.openlocfilehash: 9c85909a5a03fd4c470468bd025a4de650472423
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ResetPINResponse 要素は、ResetPIN 操作 (UM web サービス) 要求への応答を定義します。
+ms.openlocfilehash: a30d75b91823ebc021cfffa4e77be04fc6cd7951
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833154"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44466207"
 ---
 # <a name="resetpinresponse-um-web-service"></a>ResetPINResponse (UM web サービス)
 
-ResetPINResponse 要素は、 [ResetPIN 操作 (UM web サービス)](resetpin-operation-um-web-service.md)要求に対する応答を定義します。 
+ResetPINResponse 要素は、 [resetpin 操作 (UM web サービス)](resetpin-operation-um-web-service.md)要求への応答を定義します。 
   
 [ResetPINResponse (UM web サービス)](resetpinresponse-um-web-service.md)
   
@@ -29,7 +29,7 @@ ResetPINResponse 要素は、 [ResetPIN 操作 (UM web サービス)](resetpin-o
 ```
 
  **complexType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -47,16 +47,16 @@ ResetPINResponse 要素は、 [ResetPIN 操作 (UM web サービス)](resetpin-o
   
 ## <a name="text-value"></a>テキスト値
 
-テキスト値が必要ではありません。
+テキスト値は必須ではありません。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |スキーマ名  <br/> |メッセージ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

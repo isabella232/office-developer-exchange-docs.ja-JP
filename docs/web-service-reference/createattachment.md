@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e33b403a-b7d3-48ee-8d24-6b7abf0d70bc
-description: CreateAttachment 要素は、Exchange ストア内のアイテムに添付ファイルを作成する要求を定義します。
-ms.openlocfilehash: d403eb5ca15623d3a973f7b224dbcde5529cf1bc
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: CreateAttachment 要素は、Exchange ストア内のアイテムに添付ファイルを作成するための要求を定義します。
+ms.openlocfilehash: 4cba1b8865dae5da58b9617b249a29314c67331a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759799"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466438"
 ---
 # <a name="createattachment"></a>CreateAttachment
 
-**CreateAttachment**要素は、Exchange ストア内のアイテムに添付ファイルを作成する要求を定義します。 
+**Createattachment**要素は、Exchange ストア内のアイテムに添付ファイルを作成するための要求を定義します。 
   
 ```xml
 <CreateAttachment>
@@ -31,7 +31,7 @@ ms.locfileid: "19759799"
 ```
 
  **CreateAttachmentType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -41,28 +41,28 @@ ms.locfileid: "19759799"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[ParentItemId](parentitemid.md) <br/> |作成された添付ファイルを含む親の Exchange ストアの項目を識別します。 [ParentItemId](parentitemid.md)要素は、実際の Exchange の ID の項目を格納する必要があります。 [GetItem 操作](getitem-operation.md)を使用して、実際のオンライン ストアのアイテムを取得することができます。[GetAttachment 操作](getattachment-operation.md)を使用して添付ファイルが取得されます。 [ParentItemId](parentitemid.md)の添付ファイルの ID が渡された場合、エラーが発生します。 [ParentItemId](parentitemid.md)は、既存のアイテムの添付ファイルの ID を表している場合、 [CreateAttachment 操作](createattachment-operation.md)は、既存の添付ファイルに新しい添付ファイルを追加します。  <br/> この要素は、 [CreateAttachment 操作](createattachment-operation.md)に必要です。  <br/> |
-|[添付ファイル](attachments-ex15websvcsotherref.md) <br/> |アイテムまたは Exchange ストア内のアイテムに添付するファイルが含まれています。  <br/> |
+|[ParentItemId](parentitemid.md) <br/> |作成された添付ファイルを含む親 Exchange ストアアイテムを識別します。 [Parentitemid](parentitemid.md)要素は、実際の Exchange ストアアイテムの ID を提供する必要があります。 実際のストアアイテムは、 [GetItem 操作](getitem-operation.md)を使用して取得できます。添付ファイルは、 [Getattachment 操作](getattachment-operation.md)を使用して取得されます。 [Parentitemid](parentitemid.md)に添付ファイルの id が渡されると、エラーが発生します。 [Parentitemid](parentitemid.md)が既存のアイテムの添付ファイルの id を表す場合、 [createattachment 操作](createattachment-operation.md)は既存の添付ファイルに新しい添付ファイルを追加します。  <br/> この要素は、 [Createattachment 操作](createattachment-operation.md)に必要です。  <br/> |
+|[添付ファイル](attachments-ex15websvcsotherref.md) <br/> |Exchange ストア内のアイテムに添付するアイテムまたはファイルが保存されています。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-アイテムの添付ファイルは、ストアのアイテムとしては存在しません。 アイテムの添付ファイルまたは別の添付ファイルとしてのみ存在します。 [GetAttachment](getattachment.md)要求を使用して項目の添付ファイルを取得することができますのみです。 
+アイテムの添付ファイルは、ストアアイテムとして存在しません。 アイテムまたは他の添付ファイルの添付ファイルとしてのみ存在します。 アイテムの添付ファイルは、 [Getattachment](getattachment.md)要求を使用してのみ取得できます。 
   
-次の項目の添付ファイルを作成することができます。
+次のアイテムの添付ファイルを作成できます。
   
-- Item
+- 項目
     
-- Message
+- メッセージ
     
-- カレンダー項目
+- CalendarItem
     
-- 連絡先
+- Contact
     
 - タスク
     
@@ -70,21 +70,21 @@ ms.locfileid: "19759799"
     
 - MeetingRequest
     
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="example"></a>例
 
-次の例では、作成し、Exchange ストア内の別のアイテムにアイテムを添付する方法を示します。
+次の例は、Exchange ストア内の別のアイテムにアイテムを作成して接続する方法を示しています。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <CreateAttachment xmlns="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <CreateAttachment xmlns="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <ParentItemId Id="ASkAS"/>
       <Attachments>
         <t:ItemAttachment>
@@ -101,14 +101,14 @@ MicrosoftExchange Server 2007 がインストールされているクライア�
 </soap:Envelope>
 ```
 
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

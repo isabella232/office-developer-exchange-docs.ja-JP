@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: aadc1f90-e9ab-4411-b51f-2d43e5e22f2a
-description: AltitudeAccuracy 要素は、住所のプロパティの高度の精度を指定します。
-ms.openlocfilehash: 09ec86e4913327feb47067f5e5de7a60efc47bc5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: AltitudeAccuracy 要素は、郵送先住所の高度なプロパティの精度を指定します。
+ms.openlocfilehash: 3025982baae130421e5d48aa76ea8dc073f7a656
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759313"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464750"
 ---
 # <a name="altitudeaccuracy"></a>AltitudeAccuracy
 
-**AltitudeAccuracy**要素は、住所のプロパティの高度の精度を指定します。 
+**AltitudeAccuracy**要素は、郵送先住所の高度なプロパティの精度を指定します。 
   
 ```XML
 <AltitudeAccuracy></AltitudeAccuracy>
 ```
 
- **xs:double**
-## <a name="attributes-and-elements"></a>属性および要素
+ **xs: double**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,28 +40,28 @@ ms.locfileid: "19759313"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[住所 (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md) <br/> |場所の郵便の宛先を指定します。  <br/> |
+|["Postaladdress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md) <br/> |場所の住所を指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**AltitudeAccuracy**要素のテキスト値は、住所の高度のプロパティの正確さの見積もりです。 
+**AltitudeAccuracy**要素のテキスト値は、郵送先住所の標高プロパティの正確な推定値です。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |型のスキーマ  <br/> |
-|検証ファイル  <br/> |types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

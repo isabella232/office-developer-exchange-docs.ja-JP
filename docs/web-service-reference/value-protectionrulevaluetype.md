@@ -1,5 +1,5 @@
 ---
-title: 値 (ProtectionRuleValueType)
+title: Value (ProtectionRuleValueType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: b039bd6e-2198-47cf-9c78-a5e8b9d51c98
-description: 値要素は、1 つの受信者または送信者の部署を識別します。
-ms.openlocfilehash: 6173f94dcfb83eafd62e35f185a5e8c669d50f6c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Value 要素は、1人の受信者または送信者の部署を識別します。
+ms.openlocfilehash: 908ea451800abc343fb6e4d4a4ed98d57223bd23
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839975"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465241"
 ---
-# <a name="value-protectionrulevaluetype"></a>値 (ProtectionRuleValueType)
+# <a name="value-protectionrulevaluetype"></a>Value (ProtectionRuleValueType)
 
-**値**要素は、1 つの受信者または送信者の部署を識別します。 
+**Value**要素は、1人の受信者または送信者の部署を識別します。 
   
 ```XML
 <Value/>
@@ -29,7 +29,7 @@ ms.locfileid: "19839975"
 
 **ProtectionRuleValueType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -45,27 +45,27 @@ ms.locfileid: "19839975"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[RecipientIs](recipientis.md) <br/> |電子メール メッセージの受信者と一致している**値**の子要素で指定した受信者のいずれかを指定します。  <br/> |
-|[SenderDepartments](senderdepartments.md) <br/> |送信者の部署と一致している**値**の子要素で指定された部門のいずれかを指定します。  <br/> |
+|[RecipientIs](recipientis.md) <br/> |電子メールメッセージのすべての受信者が、子の**値**要素内の指定された受信者のいずれかと一致することを指定します。  <br/> |
+|[SenderDepartments](senderdepartments.md) <br/> |送信者の部署が、子の**値**要素で指定された各部に一致することを指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-この要素は空でない文字列の値を含める必要があります。
+この要素には、空でない文字列値を含める必要があります。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

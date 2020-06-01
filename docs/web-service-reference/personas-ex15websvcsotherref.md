@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a7d2bbd6-5fb8-44d3-8d0d-ad623a117870
-description: ペルソナの要素は、GetImItems と GetImItemList の操作から返されたペルソナの配列を指定します。
-ms.openlocfilehash: 288478e74a31f60018284b07e41a0b07f38c61dc
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ペルソナ要素は、GetImItems および GetImItemList 操作から返されるペルソナの配列を指定します。
+ms.openlocfilehash: 4ac2ffb68e5328fb99b9bda25ef21762e446e90b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832737"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465661"
 ---
 # <a name="personas"></a>ペルソナ
 
-**ペルソナ**の要素は、 **GetImItems**と**GetImItemList**の操作から返されたペルソナの配列を指定します。 
+**ペルソナ**要素は、 **getimitems**および**getimitemlist**操作から返されるペルソナの配列を指定します。 
   
 ```XML
 <Personas>
@@ -26,7 +26,7 @@ ms.locfileid: "19832737"
 ```
 
  **ArrayOfPeopleType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -36,25 +36,25 @@ ms.locfileid: "19832737"
   
 ### <a name="child-elements"></a>子要素
 
-[ペルソナ](persona.md)
+[ユーザー](persona.md)
   
 ### <a name="parent-elements"></a>親要素
 
 [ImItemList](imitemlist.md)
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

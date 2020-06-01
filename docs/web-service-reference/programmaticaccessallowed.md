@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a1fc7dff-a303-4809-b7f4-9672f86c183c
-description: ProgrammaticAccessAllowed 要素は、権限の管理対象データのプログラムによるアクセスが有効になっているかどうかを指定します。
-ms.openlocfilehash: 50bcce745bd94bf9c2e5ced93825722307e0a096
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ProgrammaticAccessAllowed 要素は、権限管理データのプログラムによるアクセスを有効にするかどうかを指定します。
+ms.openlocfilehash: 8a5cf4e57a97807e5940a0402768d7123b9912d2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832889"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465640"
 ---
 # <a name="programmaticaccessallowed"></a>ProgrammaticAccessAllowed
 
-**ProgrammaticAccessAllowed**要素は、権限の管理対象データのプログラムによるアクセスが有効になっているかどうかを指定します。 
+**ProgrammaticAccessAllowed**要素は、権限管理データのプログラムによるアクセスを有効にするかどうかを指定します。 
   
 ```XML
 <ProgrammaticAccessAllowed> true | false </ProgrammaticAccessAllowed>
 ```
 
- **ブール型 (Boolean)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,21 +42,21 @@ ms.locfileid: "19832889"
   
 ## <a name="text-value"></a>テキスト値
 
-の**場合は true** 、 **ProgrammaticAccessAllowed**要素のテキスト値は、データがプログラムでアクセスできることを示します。 **False**の値は、データがプログラムによってアクセス可能ではないことを示します。 
+**ProgrammaticAccessAllowed**要素のテキスト値が**true**の場合は、データがプログラムによってアクセス可能であることを示します。 値が**false**の場合は、データがプログラムでアクセスできないことを示します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> |false  <br/> |
    
 
