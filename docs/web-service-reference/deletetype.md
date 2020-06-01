@@ -1,5 +1,5 @@
 ---
-title: 削除の種類
+title: DeleteType
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,29 +11,29 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6e3136cd-9cb4-493a-aa85-9678f719002d
-description: 削除の種類の要素では、会話内の項目を削除する方法を示します。
-ms.openlocfilehash: abaa0c3d8b7001b2f42a38d1c82475edba32d2c5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DeleteType 要素は、スレッド内のアイテムが削除される方法を示します。
+ms.openlocfilehash: 199f7afc29fe866865509d2fb90d24944113d5c0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759988"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44442634"
 ---
-# <a name="deletetype"></a>削除の種類
+# <a name="deletetype"></a>DeleteType
 
-**削除の種類**の要素では、会話内の項目を削除する方法を示します。 
+**Deletetype**要素は、スレッド内のアイテムが削除される方法を示します。 
   
 - [ApplyConversationAction](applyconversationaction.md)  
 - [ConversationActions](conversationactions.md)  
 - [ConversationAction](conversationaction.md)  
-- [削除の種類](deletetype.md)
+- [DeleteType](deletetype.md)
   
 ```XML
 <DeleteType> HardDelete | MoveToDeletedItems | SoftDelete </DeleteType>
 ```
 
  **DisposalType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -49,33 +49,33 @@ ms.locfileid: "19759988"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ConversationAction](conversationaction.md) <br/> |1 つのテーマを適用する 1 つのアクションが含まれています。  <br/> |
+|[ConversationAction](conversationaction.md) <br/> |単一の会話に適用される1つのアクションが含まれます。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**削除の種類**の要素のテキスト値では、会話内の項目を削除する方法を示します。 可能なテキスト値は、次のように。 
+**Deletetype**要素のテキスト値は、スレッド内のアイテムが削除される方法を示します。 可能なテキスト値を次に示します。 
   
-- HardDelete - では、会話内のアイテムがメールボックス データベースから完全に削除することを示します。
+- ハード削除-会話内のアイテムがメールボックスデータベースから完全に削除されることを示します。
     
-- MoveToDeleteItems では、会話内のアイテムが削除済みアイテム フォルダーに移動したことを示します。
+- MoveToDeleteItems-スレッド内のアイテムが [削除済みアイテム] フォルダーに移動されたことを示します。
     
-- SoftDelete では、会話内のアイテムに移動したことを示します、ごみ箱をあさる場合、収集を有効にします。
+- SoftDelete-メッセージの収集が有効になっている場合に、スレッド内のアイテムが収集に移動されることを示します。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web Services.This の要素がホストをで Exchange Server 2010 Service Pack 1 (SP1) を導入する IIS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [ApplyConversationAction 操作](applyconversationaction-operation.md)
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

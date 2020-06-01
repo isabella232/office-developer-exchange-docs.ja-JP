@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 6cb71be1-c4fe-4ce7-9604-11fc01956ee9
 description: PhoneNumbers 要素は、連絡先の電話番号のコレクションを表します。
-ms.openlocfilehash: 43161e0adb4a98d354873e65868ddae37cd80e97
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: b64d811618176377048d9ba80d8d7573f2df034a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832773"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44440233"
 ---
 # <a name="phonenumbers"></a>PhoneNumbers
 
@@ -30,7 +30,7 @@ ms.locfileid: "19832773"
 ```
 
  **PhoneNumberDictionaryType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,39 +40,39 @@ ms.locfileid: "19832773"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[入力 (電話番号)](entry-phonenumber.md) <br/> |連絡先の電話番号を表します。  <br/> |
+|[Entry (PhoneNumber)](entry-phonenumber.md) <br/> |連絡先の電話番号を表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Contact](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
+|[連絡先](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 
 
-[連絡先 (Exchange Web サービス) を作成します。](http://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
+[連絡先の作成 (Exchange Web サービス)](https://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
   
-[連絡先を更新](http://msdn.microsoft.com/library/9a865953-b94a-4229-b632-2dee433314be%28Office.15%29.aspx)
+[連絡先の更新](https://msdn.microsoft.com/library/9a865953-b94a-4229-b632-2dee433314be%28Office.15%29.aspx)
   
-[連絡先を削除します。](http://msdn.microsoft.com/library/fcc3dc84-cd3e-455e-a1a7-ae6921c9b588%28Office.15%29.aspx)
+[連絡先の削除](https://msdn.microsoft.com/library/fcc3dc84-cd3e-455e-a1a7-ae6921c9b588%28Office.15%29.aspx)
 

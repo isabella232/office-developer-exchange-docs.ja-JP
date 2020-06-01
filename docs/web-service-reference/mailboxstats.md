@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 022d6512-7e91-4b60-8a7b-3bcd571f3107
-description: MailboxStats 要素は、1 つまたは複数の MailboxStat 要素の一覧を指定します。
-ms.openlocfilehash: d01c2b21545d4297c66f46727813513374efe540
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: MailboxStats 要素は、1つ以上の MailboxStat 要素のリストを指定します。
+ms.openlocfilehash: 1f712aa10816f100ca8092c750abfb444354c4bb
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832322"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44440548"
 ---
 # <a name="mailboxstats"></a>MailboxStats
 
-**MailboxStats**要素は、1 つまたは複数の**MailboxStat**要素の一覧を指定します。 
+**MailboxStats**要素は、1つ以上の**MailboxStat**要素のリストを指定します。 
   
 ```XML
 <MailboxStats>
@@ -27,7 +27,7 @@ ms.locfileid: "19832322"
 
 **ArrayOfMailboxStatisticsItemsType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -43,19 +43,19 @@ ms.locfileid: "19832322"
 
 [SearchMailboxesResult](searchmailboxesresult.md)
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 
