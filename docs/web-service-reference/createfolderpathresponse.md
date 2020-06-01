@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 569eaca5-6761-4f5d-aa19-2bf3ac584ae3
-description: CreateFolderPathResponse 要素を使用して、フォルダーのパスを取得します。
-ms.openlocfilehash: f6cc8e63aec4cd7868fffa1a4b7c312c741d9c60
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: CreateFolderPathResponse 要素は、フォルダーのパスを取得するために使用されます。
+ms.openlocfilehash: 3cb8fb15e8850c4ae14082dfdc01c62225879a4a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759821"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463791"
 ---
-# <a name="createfolderpathresponse"></a><span data-ttu-id="6a6e6-103">CreateFolderPathResponse</span><span class="sxs-lookup"><span data-stu-id="6a6e6-103">CreateFolderPathResponse</span></span>
+# <a name="createfolderpathresponse"></a><span data-ttu-id="586cb-103">CreateFolderPathResponse</span><span class="sxs-lookup"><span data-stu-id="586cb-103">CreateFolderPathResponse</span></span>
 
-<span data-ttu-id="6a6e6-104">**CreateFolderPathResponse**要素を使用して、フォルダーのパスを取得します。</span><span class="sxs-lookup"><span data-stu-id="6a6e6-104">The **CreateFolderPathResponse** element is used to return a folder path.</span></span> 
+<span data-ttu-id="586cb-104">**Createfolderpathresponse**要素は、フォルダーのパスを取得するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="586cb-104">The **CreateFolderPathResponse** element is used to return a folder path.</span></span> 
   
 ```XML
 <CreateFolderPathResponse>
@@ -25,36 +25,36 @@ ms.locfileid: "19759821"
 </CreateFolderPathResponse>
 ```
 
- <span data-ttu-id="6a6e6-105">**CreateFolderPathResponseType**</span><span class="sxs-lookup"><span data-stu-id="6a6e6-105">**CreateFolderPathResponseType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="6a6e6-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="6a6e6-106">Attributes and elements</span></span>
+ <span data-ttu-id="586cb-105">**CreateFolderPathResponseType**</span><span class="sxs-lookup"><span data-stu-id="586cb-105">**CreateFolderPathResponseType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="586cb-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="586cb-106">Attributes and elements</span></span>
 
-<span data-ttu-id="6a6e6-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="6a6e6-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="586cb-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="586cb-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="6a6e6-108">属性</span><span class="sxs-lookup"><span data-stu-id="6a6e6-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="586cb-108">属性</span><span class="sxs-lookup"><span data-stu-id="586cb-108">Attributes</span></span>
 
-<span data-ttu-id="6a6e6-109">なし。</span><span class="sxs-lookup"><span data-stu-id="6a6e6-109">None.</span></span>
+<span data-ttu-id="586cb-109">なし。</span><span class="sxs-lookup"><span data-stu-id="586cb-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="6a6e6-110">子要素</span><span class="sxs-lookup"><span data-stu-id="6a6e6-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="586cb-110">子要素</span><span class="sxs-lookup"><span data-stu-id="586cb-110">Child elements</span></span>
 
-[<span data-ttu-id="6a6e6-111">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="6a6e6-111">ResponseMessages</span></span>](responsemessages.md)
+[<span data-ttu-id="586cb-111">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="586cb-111">ResponseMessages</span></span>](responsemessages.md)
   
-### <a name="parent-elements"></a><span data-ttu-id="6a6e6-112">親要素</span><span class="sxs-lookup"><span data-stu-id="6a6e6-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="586cb-112">親要素</span><span class="sxs-lookup"><span data-stu-id="586cb-112">Parent elements</span></span>
 
-<span data-ttu-id="6a6e6-113">なし。</span><span class="sxs-lookup"><span data-stu-id="6a6e6-113">None.</span></span>
+<span data-ttu-id="586cb-113">なし。</span><span class="sxs-lookup"><span data-stu-id="586cb-113">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="6a6e6-114">備考</span><span class="sxs-lookup"><span data-stu-id="6a6e6-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="586cb-114">注釈</span><span class="sxs-lookup"><span data-stu-id="586cb-114">Remarks</span></span>
 
-<span data-ttu-id="6a6e6-115">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="6a6e6-115">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="586cb-115">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="586cb-115">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="6a6e6-116">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="6a6e6-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="586cb-116">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="586cb-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="6a6e6-117">要素情報</span><span class="sxs-lookup"><span data-stu-id="6a6e6-117">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="586cb-117">要素の情報</span><span class="sxs-lookup"><span data-stu-id="586cb-117">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="6a6e6-118">名前空間</span><span class="sxs-lookup"><span data-stu-id="6a6e6-118">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="6a6e6-119">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="6a6e6-119">Schema name</span></span>  <br/> |<span data-ttu-id="6a6e6-120">メッセージ スキーマ</span><span class="sxs-lookup"><span data-stu-id="6a6e6-120">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="6a6e6-121">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="6a6e6-121">Validation file</span></span>  <br/> |<span data-ttu-id="6a6e6-122">messages.xsd</span><span class="sxs-lookup"><span data-stu-id="6a6e6-122">messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="6a6e6-123">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="6a6e6-123">Can be empty</span></span>  <br/> |<span data-ttu-id="6a6e6-124">false</span><span class="sxs-lookup"><span data-stu-id="6a6e6-124">false</span></span>  <br/> |
+|<span data-ttu-id="586cb-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="586cb-118">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="586cb-119">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="586cb-119">Schema name</span></span>  <br/> |<span data-ttu-id="586cb-120">メッセージスキーマ</span><span class="sxs-lookup"><span data-stu-id="586cb-120">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="586cb-121">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="586cb-121">Validation file</span></span>  <br/> |<span data-ttu-id="586cb-122">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="586cb-122">messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="586cb-123">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="586cb-123">Can be empty</span></span>  <br/> |<span data-ttu-id="586cb-124">false</span><span class="sxs-lookup"><span data-stu-id="586cb-124">false</span></span>  <br/> |
    
 

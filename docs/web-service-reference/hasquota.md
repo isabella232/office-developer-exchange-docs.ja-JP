@@ -11,61 +11,61 @@ api_name:
 api_type:
 - schema
 ms.assetid: b6e4fef0-92a9-415f-81ae-0c5ecb7c12ad
-description: HasQuota 要素は、管理対象のフォルダーがクォータを持つかどうかを示します。
-ms.openlocfilehash: 26f14ee7c9d4de267733bca11f7884d1d391b3dd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: HasQuota 要素は、管理フォルダーにクォータがあるかどうかを示します。
+ms.openlocfilehash: 6e32aa4c69943774be928339936cca5016c58d85
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831807"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462753"
 ---
-# <a name="hasquota"></a><span data-ttu-id="b3aac-103">HasQuota</span><span class="sxs-lookup"><span data-stu-id="b3aac-103">HasQuota</span></span>
+# <a name="hasquota"></a><span data-ttu-id="26fab-103">HasQuota</span><span class="sxs-lookup"><span data-stu-id="26fab-103">HasQuota</span></span>
 
-<span data-ttu-id="b3aac-104">**HasQuota**要素は、管理対象のフォルダーがクォータを持つかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="b3aac-104">The **HasQuota** element indicates whether the managed folder has a quota.</span></span> 
+<span data-ttu-id="26fab-104">**Hasquota**要素は、管理フォルダーにクォータがあるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="26fab-104">The **HasQuota** element indicates whether the managed folder has a quota.</span></span> 
   
 ```xml
 <HasQuota/>
 ```
 
- <span data-ttu-id="b3aac-105">**ブール型 (Boolean)**</span><span class="sxs-lookup"><span data-stu-id="b3aac-105">**Boolean**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="b3aac-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="b3aac-106">Attributes and elements</span></span>
+ <span data-ttu-id="26fab-105">**Boolean**</span><span class="sxs-lookup"><span data-stu-id="26fab-105">**Boolean**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="26fab-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="26fab-106">Attributes and elements</span></span>
 
-<span data-ttu-id="b3aac-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="b3aac-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="26fab-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="26fab-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="b3aac-108">属性</span><span class="sxs-lookup"><span data-stu-id="b3aac-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="26fab-108">属性</span><span class="sxs-lookup"><span data-stu-id="26fab-108">Attributes</span></span>
 
-<span data-ttu-id="b3aac-109">なし。</span><span class="sxs-lookup"><span data-stu-id="b3aac-109">None.</span></span>
+<span data-ttu-id="26fab-109">なし。</span><span class="sxs-lookup"><span data-stu-id="26fab-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="b3aac-110">子要素</span><span class="sxs-lookup"><span data-stu-id="b3aac-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="26fab-110">子要素</span><span class="sxs-lookup"><span data-stu-id="26fab-110">Child elements</span></span>
 
-<span data-ttu-id="b3aac-111">なし。</span><span class="sxs-lookup"><span data-stu-id="b3aac-111">None.</span></span>
+<span data-ttu-id="26fab-111">なし。</span><span class="sxs-lookup"><span data-stu-id="26fab-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="b3aac-112">親要素</span><span class="sxs-lookup"><span data-stu-id="b3aac-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="26fab-112">親要素</span><span class="sxs-lookup"><span data-stu-id="26fab-112">Parent elements</span></span>
 
-|<span data-ttu-id="b3aac-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="b3aac-113">**Element**</span></span>|<span data-ttu-id="b3aac-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="b3aac-114">**Description**</span></span>|
+|<span data-ttu-id="26fab-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="26fab-113">**Element**</span></span>|<span data-ttu-id="26fab-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="26fab-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="b3aac-115">ManagedFolderInformation</span><span class="sxs-lookup"><span data-stu-id="b3aac-115">ManagedFolderInformation</span></span>](managedfolderinformation.md) <br/> |<span data-ttu-id="b3aac-116">管理フォルダーに関する情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="b3aac-116">Contains information about a managed folder.</span></span>  <br/> |
+|[<span data-ttu-id="26fab-115">ManagedFolderInformation</span><span class="sxs-lookup"><span data-stu-id="26fab-115">ManagedFolderInformation</span></span>](managedfolderinformation.md) <br/> |<span data-ttu-id="26fab-116">管理フォルダーに関する情報を格納します。</span><span class="sxs-lookup"><span data-stu-id="26fab-116">Contains information about a managed folder.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="b3aac-117">テキスト値</span><span class="sxs-lookup"><span data-stu-id="b3aac-117">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="26fab-117">テキスト値</span><span class="sxs-lookup"><span data-stu-id="26fab-117">Text value</span></span>
 
-<span data-ttu-id="b3aac-118">テキスト値は、ブール値を表します。</span><span class="sxs-lookup"><span data-stu-id="b3aac-118">The text value represents a Boolean value.</span></span> <span data-ttu-id="b3aac-119">**True**の場合は、フォルダーが、クォータを持っていることを示します**false**の値は、フォルダーがクォータを持っていないことを示します。</span><span class="sxs-lookup"><span data-stu-id="b3aac-119">A value of **true** indicates that the folder has a quota; a value of **false** indicates that the folder does not have a quota.</span></span> 
+<span data-ttu-id="26fab-118">テキスト値は、ブール値を表します。</span><span class="sxs-lookup"><span data-stu-id="26fab-118">The text value represents a Boolean value.</span></span> <span data-ttu-id="26fab-119">値が**true の場合**は、フォルダーにクォータがあることを示します。値が**false**の場合は、フォルダーにクォータがないことを示します。</span><span class="sxs-lookup"><span data-stu-id="26fab-119">A value of **true** indicates that the folder has a quota; a value of **false** indicates that the folder does not have a quota.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="b3aac-120">備考</span><span class="sxs-lookup"><span data-stu-id="b3aac-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="26fab-120">注釈</span><span class="sxs-lookup"><span data-stu-id="26fab-120">Remarks</span></span>
 
-<span data-ttu-id="b3aac-121">MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。</span><span class="sxs-lookup"><span data-stu-id="b3aac-121">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="26fab-121">この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="26fab-121">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="b3aac-122">要素情報</span><span class="sxs-lookup"><span data-stu-id="b3aac-122">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="26fab-122">要素の情報</span><span class="sxs-lookup"><span data-stu-id="26fab-122">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="b3aac-123">名前空間</span><span class="sxs-lookup"><span data-stu-id="b3aac-123">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="b3aac-124">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="b3aac-124">Schema name</span></span>  <br/> |<span data-ttu-id="b3aac-125">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="b3aac-125">Types schema</span></span>  <br/> |
-|<span data-ttu-id="b3aac-126">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="b3aac-126">Validation file</span></span>  <br/> |<span data-ttu-id="b3aac-127">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="b3aac-127">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="b3aac-128">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="b3aac-128">Can be empty</span></span>  <br/> |<span data-ttu-id="b3aac-129">False</span><span class="sxs-lookup"><span data-stu-id="b3aac-129">False</span></span>  <br/> |
+|<span data-ttu-id="26fab-123">Namespace</span><span class="sxs-lookup"><span data-stu-id="26fab-123">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="26fab-124">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="26fab-124">Schema name</span></span>  <br/> |<span data-ttu-id="26fab-125">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="26fab-125">Types schema</span></span>  <br/> |
+|<span data-ttu-id="26fab-126">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="26fab-126">Validation file</span></span>  <br/> |<span data-ttu-id="26fab-127">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="26fab-127">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="26fab-128">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="26fab-128">Can be empty</span></span>  <br/> |<span data-ttu-id="26fab-129">正しくない</span><span class="sxs-lookup"><span data-stu-id="26fab-129">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="b3aac-130">関連項目</span><span class="sxs-lookup"><span data-stu-id="b3aac-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="26fab-130">関連項目</span><span class="sxs-lookup"><span data-stu-id="26fab-130">See also</span></span>
 
 
 
-- [<span data-ttu-id="b3aac-131">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="b3aac-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="26fab-131">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="26fab-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

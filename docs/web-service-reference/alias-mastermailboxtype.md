@@ -1,5 +1,5 @@
 ---
-title: エイリアス (MasterMailboxType)
+title: Alias (MasterMailboxType)
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,38 +7,38 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: db21bc31-0e83-46ea-8570-1865e90ebde7
-description: エイリアス (MasterMailboxType) の要素は内部使用のみを目的としています。
-ms.openlocfilehash: 609dd5c4736f3a6fe51e8ad3a0750efdf5e389e9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Alias (MasterMailboxType) 要素は、内部使用のみを目的としています。
+ms.openlocfilehash: b49836a83dc0224a58b1bf0d0739d26dad26a3d3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759304"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463511"
 ---
-# <a name="alias-mastermailboxtype"></a><span data-ttu-id="a03ee-103">エイリアス (MasterMailboxType)</span><span class="sxs-lookup"><span data-stu-id="a03ee-103">Alias (MasterMailboxType)</span></span>
+# <a name="alias-mastermailboxtype"></a><span data-ttu-id="86362-103">Alias (MasterMailboxType)</span><span class="sxs-lookup"><span data-stu-id="86362-103">Alias (MasterMailboxType)</span></span>
 
-<span data-ttu-id="a03ee-104">**エイリアス (MasterMailboxType)** の要素は内部使用のみを目的としています。</span><span class="sxs-lookup"><span data-stu-id="a03ee-104">The **Alias (MasterMailboxType)** element is intended for internal use only.</span></span> 
+<span data-ttu-id="86362-104">**Alias (MasterMailboxType)** 要素は、内部使用のみを目的としています。</span><span class="sxs-lookup"><span data-stu-id="86362-104">The **Alias (MasterMailboxType)** element is intended for internal use only.</span></span> 
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="a03ee-105">属性および要素</span><span class="sxs-lookup"><span data-stu-id="a03ee-105">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="86362-105">属性と要素</span><span class="sxs-lookup"><span data-stu-id="86362-105">Attributes and elements</span></span>
 
-<span data-ttu-id="a03ee-106">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="a03ee-106">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="86362-106">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="86362-106">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="a03ee-107">属性</span><span class="sxs-lookup"><span data-stu-id="a03ee-107">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="86362-107">属性</span><span class="sxs-lookup"><span data-stu-id="86362-107">Attributes</span></span>
 
-<span data-ttu-id="a03ee-108">なし。</span><span class="sxs-lookup"><span data-stu-id="a03ee-108">None.</span></span>
+<span data-ttu-id="86362-108">なし。</span><span class="sxs-lookup"><span data-stu-id="86362-108">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="a03ee-109">子要素</span><span class="sxs-lookup"><span data-stu-id="a03ee-109">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="86362-109">子要素</span><span class="sxs-lookup"><span data-stu-id="86362-109">Child elements</span></span>
 
-<span data-ttu-id="a03ee-110">なし。</span><span class="sxs-lookup"><span data-stu-id="a03ee-110">None.</span></span>
+<span data-ttu-id="86362-110">なし。</span><span class="sxs-lookup"><span data-stu-id="86362-110">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="a03ee-111">親要素</span><span class="sxs-lookup"><span data-stu-id="a03ee-111">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="86362-111">親要素</span><span class="sxs-lookup"><span data-stu-id="86362-111">Parent elements</span></span>
 
-<span data-ttu-id="a03ee-112">なし。</span><span class="sxs-lookup"><span data-stu-id="a03ee-112">None.</span></span>
+<span data-ttu-id="86362-112">なし。</span><span class="sxs-lookup"><span data-stu-id="86362-112">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="a03ee-113">備考</span><span class="sxs-lookup"><span data-stu-id="a03ee-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="86362-113">注釈</span><span class="sxs-lookup"><span data-stu-id="86362-113">Remarks</span></span>
 
-<span data-ttu-id="a03ee-114">この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。</span><span class="sxs-lookup"><span data-stu-id="a03ee-114">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
+<span data-ttu-id="86362-114">この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。</span><span class="sxs-lookup"><span data-stu-id="86362-114">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
   
-<span data-ttu-id="a03ee-115">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="a03ee-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="86362-115">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="86362-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
 

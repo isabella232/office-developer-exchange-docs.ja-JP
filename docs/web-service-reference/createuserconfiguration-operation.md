@@ -11,31 +11,31 @@ api_name:
 api_type:
 - schema
 ms.assetid: eb5b8ab6-9743-481c-aac9-f9aa889bd353
-description: CreateUserConfiguration 操作では、フォルダーにユーザー設定のオブジェクトを作成します。
-ms.openlocfilehash: 5f0eb7d18736008af39199cbc52cc3a6e6abda09
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: CreateUserConfiguration 操作は、ユーザー構成オブジェクトをフォルダーに作成します。
+ms.openlocfilehash: 0c9233146d21c7014be15896426b968106485200
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759855"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463784"
 ---
-# <a name="createuserconfiguration-operation"></a><span data-ttu-id="5a37c-103">CreateUserConfiguration 操作</span><span class="sxs-lookup"><span data-stu-id="5a37c-103">CreateUserConfiguration operation</span></span>
+# <a name="createuserconfiguration-operation"></a><span data-ttu-id="03174-103">CreateUserConfiguration 操作</span><span class="sxs-lookup"><span data-stu-id="03174-103">CreateUserConfiguration operation</span></span>
 
-<span data-ttu-id="5a37c-104">**CreateUserConfiguration**操作では、フォルダーにユーザー設定のオブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="5a37c-104">The **CreateUserConfiguration** operation creates a user configuration object on a folder.</span></span> 
+<span data-ttu-id="03174-104">**CreateUserConfiguration**操作は、ユーザー構成オブジェクトをフォルダーに作成します。</span><span class="sxs-lookup"><span data-stu-id="03174-104">The **CreateUserConfiguration** operation creates a user configuration object on a folder.</span></span> 
   
-## <a name="createuserconfiguration-request-example"></a><span data-ttu-id="5a37c-105">CreateUserConfiguration 要求の例</span><span class="sxs-lookup"><span data-stu-id="5a37c-105">CreateUserConfiguration request example</span></span>
+## <a name="createuserconfiguration-request-example"></a><span data-ttu-id="03174-105">CreateUserConfiguration 要求の例</span><span class="sxs-lookup"><span data-stu-id="03174-105">CreateUserConfiguration request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="5a37c-106">説明</span><span class="sxs-lookup"><span data-stu-id="5a37c-106">Description</span></span>
+### <a name="description"></a><span data-ttu-id="03174-106">説明</span><span class="sxs-lookup"><span data-stu-id="03174-106">Description</span></span>
 
-<span data-ttu-id="5a37c-107">**CreateUserConfiguration**要求の次の例では、[下書き] フォルダーでユーザーの構成オブジェクトを作成する要求を作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="5a37c-107">The following example of a **CreateUserConfiguration** request shows how to form a request to create a user configuration object on the Drafts folder.</span></span> 
+<span data-ttu-id="03174-107">次の**CreateUserConfiguration**要求の例は、下書きフォルダーでユーザー構成オブジェクトを作成するための要求を形成する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="03174-107">The following example of a **CreateUserConfiguration** request shows how to form a request to create a user configuration object on the Drafts folder.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="5a37c-108">コード</span><span class="sxs-lookup"><span data-stu-id="5a37c-108">Code</span></span>
+### <a name="code"></a><span data-ttu-id="03174-108">コード</span><span class="sxs-lookup"><span data-stu-id="03174-108">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:xs="http://www.w3.org/2001/XMLSchema">
   
@@ -67,13 +67,13 @@ ms.locfileid: "19759855"
 </soap:Envelope>
 ```
 
-## <a name="createuserconfiguration-response-example"></a><span data-ttu-id="5a37c-109">CreateUserConfiguration の応答の例</span><span class="sxs-lookup"><span data-stu-id="5a37c-109">CreateUserConfiguration response example</span></span>
+## <a name="createuserconfiguration-response-example"></a><span data-ttu-id="03174-109">CreateUserConfiguration response の例</span><span class="sxs-lookup"><span data-stu-id="03174-109">CreateUserConfiguration response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="5a37c-110">説明</span><span class="sxs-lookup"><span data-stu-id="5a37c-110">Description</span></span>
+### <a name="description"></a><span data-ttu-id="03174-110">説明</span><span class="sxs-lookup"><span data-stu-id="03174-110">Description</span></span>
 
-<span data-ttu-id="5a37c-111">**CreateUserConfiguration**要求に正常な応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="5a37c-111">The following example shows a successful response to the **CreateUserConfiguration** request.</span></span> 
+<span data-ttu-id="03174-111">次の例は、 **CreateUserConfiguration**要求に対する正常な応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="03174-111">The following example shows a successful response to the **CreateUserConfiguration** request.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="5a37c-112">コード</span><span class="sxs-lookup"><span data-stu-id="5a37c-112">Code</span></span>
+### <a name="code"></a><span data-ttu-id="03174-112">コード</span><span class="sxs-lookup"><span data-stu-id="03174-112">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -84,15 +84,15 @@ ms.locfileid: "19759855"
                          MajorBuildNumber="639" 
                          MinorBuildNumber="20" 
                          Version="Exchange2010" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:CreateUserConfigurationResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:CreateUserConfigurationResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:CreateUserConfigurationResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -103,11 +103,11 @@ ms.locfileid: "19759855"
 </s:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="5a37c-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="5a37c-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="03174-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="03174-113">See also</span></span>
 
 
 
-[<span data-ttu-id="5a37c-114">Exchange での EWS の操作</span><span class="sxs-lookup"><span data-stu-id="5a37c-114">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
+[<span data-ttu-id="03174-114">Exchange での EWS 操作</span><span class="sxs-lookup"><span data-stu-id="03174-114">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
   
-- [<span data-ttu-id="5a37c-115">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="5a37c-115">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="03174-115">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="03174-115">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

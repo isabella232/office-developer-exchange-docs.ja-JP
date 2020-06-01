@@ -11,33 +11,33 @@ api_name:
 api_type:
 - schema
 ms.assetid: 73d7943d-d361-4f8b-9948-d85f886efa1a
-description: ApplyConversationAction 操作では、設定を 1 回だけか、会話内のすべてのアイテムで次の操作をします。 ApplyConversationAction 操作を使用すると、分類、移動、コピー、削除、および会話のすべてのアイテムの読み取り状態を設定できます。 会話で新着メッセージをアクションを設定することもできます。
-ms.openlocfilehash: 2a485b84ee87aec2ed807e3f4f0901b83432fa0a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ApplyConversationAction 操作は、スレッド内のすべてのアイテムに対して1回限りまたはフォローアップのアクションを設定します。 ApplyConversationAction 操作を使用すると、会話内のすべてのアイテムに対して、分類、移動、コピー、削除、および読み取り状態の設定を行うことができます。 会話の新しいメッセージに対してアクションを設定することもできます。
+ms.openlocfilehash: cdab239a5b0b1406d2ce31f4604e4737d037cd7e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759366"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463504"
 ---
-# <a name="applyconversationaction-operation"></a><span data-ttu-id="76cc9-105">ApplyConversationAction 操作</span><span class="sxs-lookup"><span data-stu-id="76cc9-105">ApplyConversationAction operation</span></span>
+# <a name="applyconversationaction-operation"></a><span data-ttu-id="4043e-105">ApplyConversationAction 操作</span><span class="sxs-lookup"><span data-stu-id="4043e-105">ApplyConversationAction operation</span></span>
 
-<span data-ttu-id="76cc9-106">**ApplyConversationAction**操作では、設定を 1 回だけか、会話内のすべてのアイテムで次の操作をします。</span><span class="sxs-lookup"><span data-stu-id="76cc9-106">The **ApplyConversationAction** operation sets a one-time or follow up action on all the items in a conversation.</span></span> <span data-ttu-id="76cc9-107">**ApplyConversationAction**操作を使用すると、分類、移動、コピー、削除、および会話のすべてのアイテムの読み取り状態を設定できます。</span><span class="sxs-lookup"><span data-stu-id="76cc9-107">The **ApplyConversationAction** operation allows you to categorize, move, copy, delete, and set the read state on all items in a conversation.</span></span> <span data-ttu-id="76cc9-108">会話で新着メッセージをアクションを設定することもできます。</span><span class="sxs-lookup"><span data-stu-id="76cc9-108">Actions can also be set for new messages in a conversation.</span></span> 
+<span data-ttu-id="4043e-106">**ApplyConversationAction**操作は、スレッド内のすべてのアイテムに対して1回限りまたはフォローアップのアクションを設定します。</span><span class="sxs-lookup"><span data-stu-id="4043e-106">The **ApplyConversationAction** operation sets a one-time or follow up action on all the items in a conversation.</span></span> <span data-ttu-id="4043e-107">**ApplyConversationAction**操作を使用すると、会話内のすべてのアイテムに対して、分類、移動、コピー、削除、および読み取り状態の設定を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="4043e-107">The **ApplyConversationAction** operation allows you to categorize, move, copy, delete, and set the read state on all items in a conversation.</span></span> <span data-ttu-id="4043e-108">会話の新しいメッセージに対してアクションを設定することもできます。</span><span class="sxs-lookup"><span data-stu-id="4043e-108">Actions can also be set for new messages in a conversation.</span></span> 
   
-## <a name="applyconversationaction-request-example"></a><span data-ttu-id="76cc9-109">ApplyConversationAction 要求の例</span><span class="sxs-lookup"><span data-stu-id="76cc9-109">ApplyConversationAction request example</span></span>
+## <a name="applyconversationaction-request-example"></a><span data-ttu-id="4043e-109">ApplyConversationAction 要求の例</span><span class="sxs-lookup"><span data-stu-id="4043e-109">ApplyConversationAction request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="76cc9-110">説明</span><span class="sxs-lookup"><span data-stu-id="76cc9-110">Description</span></span>
+### <a name="description"></a><span data-ttu-id="4043e-110">説明</span><span class="sxs-lookup"><span data-stu-id="4043e-110">Description</span></span>
 
-<span data-ttu-id="76cc9-111">**ApplyConversationAction**要求の次の例では、指定したスレッドの別のフォルダーにアイテムを移動する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="76cc9-111">The following example of an **ApplyConversationAction** request shows how to move the items in the specified conversation to another folder.</span></span> <span data-ttu-id="76cc9-112">会話に追加される項目は、指定したフォルダーにも移動されます。</span><span class="sxs-lookup"><span data-stu-id="76cc9-112">Items that are added to the conversation will also be moved to the specified folder.</span></span> 
+<span data-ttu-id="4043e-111">**ApplyConversationAction**要求の次の例は、指定されたスレッド内のアイテムを別のフォルダーに移動する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="4043e-111">The following example of an **ApplyConversationAction** request shows how to move the items in the specified conversation to another folder.</span></span> <span data-ttu-id="4043e-112">会話に追加されたアイテムも、指定したフォルダーに移動されます。</span><span class="sxs-lookup"><span data-stu-id="4043e-112">Items that are added to the conversation will also be moved to the specified folder.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="76cc9-113">コード</span><span class="sxs-lookup"><span data-stu-id="76cc9-113">Code</span></span>
+### <a name="code"></a><span data-ttu-id="4043e-113">コード</span><span class="sxs-lookup"><span data-stu-id="4043e-113">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010_SP1" />
   </soap:Header>
@@ -57,17 +57,17 @@ ms.locfileid: "19759366"
 </soap:Envelope>
 ```
 
-### <a name="remarks"></a><span data-ttu-id="76cc9-114">備考</span><span class="sxs-lookup"><span data-stu-id="76cc9-114">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="4043e-114">注釈</span><span class="sxs-lookup"><span data-stu-id="4043e-114">Remarks</span></span>
 
-<span data-ttu-id="76cc9-115">会話とフォルダーの識別子は、読みやすさを保持するために短縮されています。</span><span class="sxs-lookup"><span data-stu-id="76cc9-115">The conversation and folder identifiers have been shortened to preserve readability.</span></span>
+<span data-ttu-id="4043e-115">読みやすくするために、会話とフォルダーの識別子が短縮されています。</span><span class="sxs-lookup"><span data-stu-id="4043e-115">The conversation and folder identifiers have been shortened to preserve readability.</span></span>
   
-## <a name="applyconversationaction-response-example"></a><span data-ttu-id="76cc9-116">ApplyConversationAction の応答の例</span><span class="sxs-lookup"><span data-stu-id="76cc9-116">ApplyConversationAction response example</span></span>
+## <a name="applyconversationaction-response-example"></a><span data-ttu-id="4043e-116">ApplyConversationAction response の例</span><span class="sxs-lookup"><span data-stu-id="4043e-116">ApplyConversationAction response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="76cc9-117">説明</span><span class="sxs-lookup"><span data-stu-id="76cc9-117">Description</span></span>
+### <a name="description"></a><span data-ttu-id="4043e-117">説明</span><span class="sxs-lookup"><span data-stu-id="4043e-117">Description</span></span>
 
-<span data-ttu-id="76cc9-118">**ApplyConversationAction**要求に正常な応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="76cc9-118">The following example shows a successful response to an **ApplyConversationAction** request.</span></span> 
+<span data-ttu-id="4043e-118">次の例は、 **ApplyConversationAction**要求に対する正常な応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="4043e-118">The following example shows a successful response to an **ApplyConversationAction** request.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="76cc9-119">コード</span><span class="sxs-lookup"><span data-stu-id="76cc9-119">Code</span></span>
+### <a name="code"></a><span data-ttu-id="4043e-119">コード</span><span class="sxs-lookup"><span data-stu-id="4043e-119">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -78,15 +78,15 @@ ms.locfileid: "19759366"
                          MajorBuildNumber="91" 
                          MinorBuildNumber="0" 
                          Version="Exchange2010_SP1" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:ApplyConversationActionResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:ApplyConversationActionResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:ApplyConversationActionResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -97,10 +97,10 @@ ms.locfileid: "19759366"
 </s:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="76cc9-120">関連項目</span><span class="sxs-lookup"><span data-stu-id="76cc9-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4043e-120">関連項目</span><span class="sxs-lookup"><span data-stu-id="4043e-120">See also</span></span>
 
-- [<span data-ttu-id="76cc9-121">ApplyConversationAction 操作</span><span class="sxs-lookup"><span data-stu-id="76cc9-121">ApplyConversationAction operation</span></span>](applyconversationaction-operation.md)
-- [<span data-ttu-id="76cc9-122">Exchange での EWS の操作</span><span class="sxs-lookup"><span data-stu-id="76cc9-122">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
-- [<span data-ttu-id="76cc9-123">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="76cc9-123">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
-- [<span data-ttu-id="76cc9-124">EWS での会話</span><span class="sxs-lookup"><span data-stu-id="76cc9-124">Conversations in EWS</span></span>](http://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
+- [<span data-ttu-id="4043e-121">ApplyConversationAction 操作</span><span class="sxs-lookup"><span data-stu-id="4043e-121">ApplyConversationAction operation</span></span>](applyconversationaction-operation.md)
+- [<span data-ttu-id="4043e-122">Exchange での EWS 操作</span><span class="sxs-lookup"><span data-stu-id="4043e-122">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
+- [<span data-ttu-id="4043e-123">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="4043e-123">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="4043e-124">EWS での会話</span><span class="sxs-lookup"><span data-stu-id="4043e-124">Conversations in EWS</span></span>](https://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
 

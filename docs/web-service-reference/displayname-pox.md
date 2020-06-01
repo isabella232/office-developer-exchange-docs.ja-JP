@@ -9,49 +9,49 @@ api_type:
 - schema
 ms.assetid: dab23ed1-7fcf-4870-a634-f39d0742923a
 description: DisplayName 要素は、ユーザーの表示名を表します。
-ms.openlocfilehash: 7e4e5b1a97b8e627454a192a3fec2b8a02520a66
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 14522080a519d12a05567e4a65cba8ea00098b7d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760111"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463658"
 ---
-# <a name="displayname-pox"></a><span data-ttu-id="ea8fc-103">DisplayName (POX)</span><span class="sxs-lookup"><span data-stu-id="ea8fc-103">DisplayName (POX)</span></span>
+# <a name="displayname-pox"></a><span data-ttu-id="3a978-103">DisplayName (POX)</span><span class="sxs-lookup"><span data-stu-id="3a978-103">DisplayName (POX)</span></span>
 
-<span data-ttu-id="ea8fc-104">**DisplayName**要素は、ユーザーの表示名を表します。</span><span class="sxs-lookup"><span data-stu-id="ea8fc-104">The **DisplayName** element represents the user's display name.</span></span> 
+<span data-ttu-id="3a978-104">**DisplayName**要素は、ユーザーの表示名を表します。</span><span class="sxs-lookup"><span data-stu-id="3a978-104">The **DisplayName** element represents the user's display name.</span></span> 
   
-- [<span data-ttu-id="ea8fc-105">(POX) を自動検出</span><span class="sxs-lookup"><span data-stu-id="ea8fc-105">AutoDiscover (POX)</span></span>](autodiscover-pox.md) 
-- [<span data-ttu-id="ea8fc-106">応答 (POX)</span><span class="sxs-lookup"><span data-stu-id="ea8fc-106">Response (POX)</span></span>](response-pox.md) 
-- [<span data-ttu-id="ea8fc-107">ユーザー (POX)</span><span class="sxs-lookup"><span data-stu-id="ea8fc-107">User (POX)</span></span>](user-pox.md) 
-- [<span data-ttu-id="ea8fc-108">DisplayName (POX)</span><span class="sxs-lookup"><span data-stu-id="ea8fc-108">DisplayName (POX)</span></span>](displayname-pox.md)
+- [<span data-ttu-id="3a978-105">自動検出 (POX)</span><span class="sxs-lookup"><span data-stu-id="3a978-105">AutoDiscover (POX)</span></span>](autodiscover-pox.md) 
+- [<span data-ttu-id="3a978-106">応答 (POX)</span><span class="sxs-lookup"><span data-stu-id="3a978-106">Response (POX)</span></span>](response-pox.md) 
+- [<span data-ttu-id="3a978-107">ユーザー (POX)</span><span class="sxs-lookup"><span data-stu-id="3a978-107">User (POX)</span></span>](user-pox.md) 
+- [<span data-ttu-id="3a978-108">DisplayName (POX)</span><span class="sxs-lookup"><span data-stu-id="3a978-108">DisplayName (POX)</span></span>](displayname-pox.md)
   
 ```xml
 <DisplayName/>
 ```
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="ea8fc-109">属性および要素</span><span class="sxs-lookup"><span data-stu-id="ea8fc-109">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="3a978-109">属性と要素</span><span class="sxs-lookup"><span data-stu-id="3a978-109">Attributes and elements</span></span>
 
-<span data-ttu-id="ea8fc-110">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="ea8fc-110">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="3a978-110">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="3a978-110">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="ea8fc-111">属性</span><span class="sxs-lookup"><span data-stu-id="ea8fc-111">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="3a978-111">属性</span><span class="sxs-lookup"><span data-stu-id="3a978-111">Attributes</span></span>
 
-<span data-ttu-id="ea8fc-112">なし。</span><span class="sxs-lookup"><span data-stu-id="ea8fc-112">None.</span></span>
+<span data-ttu-id="3a978-112">なし。</span><span class="sxs-lookup"><span data-stu-id="3a978-112">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="ea8fc-113">子要素</span><span class="sxs-lookup"><span data-stu-id="ea8fc-113">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="3a978-113">子要素</span><span class="sxs-lookup"><span data-stu-id="3a978-113">Child elements</span></span>
 
-<span data-ttu-id="ea8fc-114">なし。</span><span class="sxs-lookup"><span data-stu-id="ea8fc-114">None.</span></span>
+<span data-ttu-id="3a978-114">なし。</span><span class="sxs-lookup"><span data-stu-id="3a978-114">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="ea8fc-115">親要素</span><span class="sxs-lookup"><span data-stu-id="ea8fc-115">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="3a978-115">親要素</span><span class="sxs-lookup"><span data-stu-id="3a978-115">Parent elements</span></span>
 
-|<span data-ttu-id="ea8fc-116">**要素**</span><span class="sxs-lookup"><span data-stu-id="ea8fc-116">**Element**</span></span>|<span data-ttu-id="ea8fc-117">**説明**</span><span class="sxs-lookup"><span data-stu-id="ea8fc-117">**Description**</span></span>|
+|<span data-ttu-id="3a978-116">**要素**</span><span class="sxs-lookup"><span data-stu-id="3a978-116">**Element**</span></span>|<span data-ttu-id="3a978-117">**説明**</span><span class="sxs-lookup"><span data-stu-id="3a978-117">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="ea8fc-118">ユーザー (POX)</span><span class="sxs-lookup"><span data-stu-id="ea8fc-118">User (POX)</span></span>](user-pox.md) <br/> |<span data-ttu-id="ea8fc-119">ユーザー固有の情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="ea8fc-119">Provides user-specific information.</span></span>  <br/> |
+|[<span data-ttu-id="3a978-118">ユーザー (POX)</span><span class="sxs-lookup"><span data-stu-id="3a978-118">User (POX)</span></span>](user-pox.md) <br/> |<span data-ttu-id="3a978-119">ユーザー固有の情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="3a978-119">Provides user-specific information.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="ea8fc-120">テキスト値</span><span class="sxs-lookup"><span data-stu-id="ea8fc-120">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="3a978-120">テキスト値</span><span class="sxs-lookup"><span data-stu-id="3a978-120">Text value</span></span>
 
-<span data-ttu-id="ea8fc-121">テキスト値は、ユーザーの表示名を表します。</span><span class="sxs-lookup"><span data-stu-id="ea8fc-121">The text value represents the user's display name.</span></span>
+<span data-ttu-id="3a978-121">Text 値は、ユーザーの表示名を表します。</span><span class="sxs-lookup"><span data-stu-id="3a978-121">The text value represents the user's display name.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="ea8fc-122">関連項目</span><span class="sxs-lookup"><span data-stu-id="ea8fc-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3a978-122">関連項目</span><span class="sxs-lookup"><span data-stu-id="3a978-122">See also</span></span>
 
-- [<span data-ttu-id="ea8fc-123">交換の POX の自動検出の XML 要素</span><span class="sxs-lookup"><span data-stu-id="ea8fc-123">POX Autodiscover XML elements for Exchange</span></span>](pox-autodiscover-xml-elements-for-exchange.md)
+- [<span data-ttu-id="3a978-123">Exchange の POX 自動検出 XML 要素</span><span class="sxs-lookup"><span data-stu-id="3a978-123">POX Autodiscover XML elements for Exchange</span></span>](pox-autodiscover-xml-elements-for-exchange.md)
 

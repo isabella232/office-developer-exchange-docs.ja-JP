@@ -11,73 +11,73 @@ api_name:
 api_type:
 - schema
 ms.assetid: c56f997d-28f3-4590-97b0-cb71f016dbe4
-description: DaysOfWeek 要素では、項目の定期的なパターンで使用されている週の日について説明します。
-ms.openlocfilehash: 0b730ff5a7bc9aa6b324fc080022d056c5342296
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DaysOfWeek 要素は、アイテムの定期的なパターンで使用される曜日を表します。
+ms.openlocfilehash: 3036cbe3f93ff87b9a4d5dc7bf164e3e952b06fd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759945"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463721"
 ---
-# <a name="daysofweek-daysofweektype"></a><span data-ttu-id="09286-103">DaysOfWeek (DaysOfWeekType)</span><span class="sxs-lookup"><span data-stu-id="09286-103">DaysOfWeek (DaysOfWeekType)</span></span>
+# <a name="daysofweek-daysofweektype"></a><span data-ttu-id="0324d-103">DaysOfWeek (DaysOfWeekType)</span><span class="sxs-lookup"><span data-stu-id="0324d-103">DaysOfWeek (DaysOfWeekType)</span></span>
 
-<span data-ttu-id="09286-104">**DaysOfWeek**要素では、項目の定期的なパターンで使用されている週の日について説明します。</span><span class="sxs-lookup"><span data-stu-id="09286-104">The **DaysOfWeek** element describes days of the week that are used in item recurrence patterns.</span></span> 
+<span data-ttu-id="0324d-104">**DaysOfWeek**要素は、アイテムの定期的なパターンで使用される曜日を表します。</span><span class="sxs-lookup"><span data-stu-id="0324d-104">The **DaysOfWeek** element describes days of the week that are used in item recurrence patterns.</span></span> 
   
 ```XML
 <DaysOfWeek/>
 ```
 
-<span data-ttu-id="09286-105">**DaysOfWeekType**</span><span class="sxs-lookup"><span data-stu-id="09286-105">**DaysOfWeekType**</span></span>
+<span data-ttu-id="0324d-105">**DaysOfWeekType**</span><span class="sxs-lookup"><span data-stu-id="0324d-105">**DaysOfWeekType**</span></span>
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="09286-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="09286-106">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="0324d-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="0324d-106">Attributes and elements</span></span>
 
-<span data-ttu-id="09286-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="09286-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="0324d-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="0324d-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="09286-108">属性</span><span class="sxs-lookup"><span data-stu-id="09286-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="0324d-108">属性</span><span class="sxs-lookup"><span data-stu-id="0324d-108">Attributes</span></span>
 
-<span data-ttu-id="09286-109">なし。</span><span class="sxs-lookup"><span data-stu-id="09286-109">None.</span></span>
+<span data-ttu-id="0324d-109">なし。</span><span class="sxs-lookup"><span data-stu-id="0324d-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="09286-110">子要素</span><span class="sxs-lookup"><span data-stu-id="09286-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="0324d-110">子要素</span><span class="sxs-lookup"><span data-stu-id="0324d-110">Child elements</span></span>
 
-<span data-ttu-id="09286-111">なし。</span><span class="sxs-lookup"><span data-stu-id="09286-111">None.</span></span>
+<span data-ttu-id="0324d-111">なし。</span><span class="sxs-lookup"><span data-stu-id="0324d-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="09286-112">親要素</span><span class="sxs-lookup"><span data-stu-id="09286-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="0324d-112">親要素</span><span class="sxs-lookup"><span data-stu-id="0324d-112">Parent elements</span></span>
 
-|<span data-ttu-id="09286-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="09286-113">**Element**</span></span>|<span data-ttu-id="09286-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="09286-114">**Description**</span></span>|
+|<span data-ttu-id="0324d-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="0324d-113">**Element**</span></span>|<span data-ttu-id="0324d-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="0324d-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="09286-115">WeeklyRecurrence</span><span class="sxs-lookup"><span data-stu-id="09286-115">WeeklyRecurrence</span></span>](weeklyrecurrence.md) <br/> |<span data-ttu-id="09286-116">毎週の定期的なパターンをについて説明します。</span><span class="sxs-lookup"><span data-stu-id="09286-116">Describes a weekly recurrence pattern.</span></span>  <br/> |
+|[<span data-ttu-id="0324d-115">WeeklyRecurrence</span><span class="sxs-lookup"><span data-stu-id="0324d-115">WeeklyRecurrence</span></span>](weeklyrecurrence.md) <br/> |<span data-ttu-id="0324d-116">週単位の定期的なパターンを記述します。</span><span class="sxs-lookup"><span data-stu-id="0324d-116">Describes a weekly recurrence pattern.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="09286-117">テキスト値</span><span class="sxs-lookup"><span data-stu-id="09286-117">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="0324d-117">テキスト値</span><span class="sxs-lookup"><span data-stu-id="0324d-117">Text value</span></span>
 
-<span data-ttu-id="09286-118">テキスト値は必須です。</span><span class="sxs-lookup"><span data-stu-id="09286-118">A text value is required.</span></span> <span data-ttu-id="09286-119">指定可能な値は次のいずれかです。</span><span class="sxs-lookup"><span data-stu-id="09286-119">The following are the possible values:</span></span>
+<span data-ttu-id="0324d-118">テキスト値は必須です。</span><span class="sxs-lookup"><span data-stu-id="0324d-118">A text value is required.</span></span> <span data-ttu-id="0324d-119">指定可能な値は次のいずれかです。</span><span class="sxs-lookup"><span data-stu-id="0324d-119">The following are the possible values:</span></span>
   
-- <span data-ttu-id="09286-120">日曜日</span><span class="sxs-lookup"><span data-stu-id="09286-120">Sunday</span></span>    
-- <span data-ttu-id="09286-121">月曜日</span><span class="sxs-lookup"><span data-stu-id="09286-121">Monday</span></span>    
-- <span data-ttu-id="09286-122">火曜日</span><span class="sxs-lookup"><span data-stu-id="09286-122">Tuesday</span></span>    
-- <span data-ttu-id="09286-123">水曜日</span><span class="sxs-lookup"><span data-stu-id="09286-123">Wednesday</span></span>    
-- <span data-ttu-id="09286-124">木曜日</span><span class="sxs-lookup"><span data-stu-id="09286-124">Thursday</span></span>    
-- <span data-ttu-id="09286-125">金曜日</span><span class="sxs-lookup"><span data-stu-id="09286-125">Friday</span></span>    
-- <span data-ttu-id="09286-126">土曜日</span><span class="sxs-lookup"><span data-stu-id="09286-126">Saturday</span></span>    
-- <span data-ttu-id="09286-127">(この値は毎週の定期的なパターンに対して有効ではありません) の日</span><span class="sxs-lookup"><span data-stu-id="09286-127">Day (this value is not valid for a weekly recurrence pattern)</span></span>    
-- <span data-ttu-id="09286-128">(この値は毎週の定期的なパターンに対して有効ではありません) の平日</span><span class="sxs-lookup"><span data-stu-id="09286-128">Weekday (this value is not valid for a weekly recurrence pattern)</span></span>    
-- <span data-ttu-id="09286-129">(この値は毎週の定期的なパターンに対して有効ではありません) WeekendDay</span><span class="sxs-lookup"><span data-stu-id="09286-129">WeekendDay (this value is not valid for a weekly recurrence pattern)</span></span>
+- <span data-ttu-id="0324d-120">日曜日</span><span class="sxs-lookup"><span data-stu-id="0324d-120">Sunday</span></span>    
+- <span data-ttu-id="0324d-121">月曜日</span><span class="sxs-lookup"><span data-stu-id="0324d-121">Monday</span></span>    
+- <span data-ttu-id="0324d-122">火曜日</span><span class="sxs-lookup"><span data-stu-id="0324d-122">Tuesday</span></span>    
+- <span data-ttu-id="0324d-123">水曜日</span><span class="sxs-lookup"><span data-stu-id="0324d-123">Wednesday</span></span>    
+- <span data-ttu-id="0324d-124">木曜日</span><span class="sxs-lookup"><span data-stu-id="0324d-124">Thursday</span></span>    
+- <span data-ttu-id="0324d-125">金曜日</span><span class="sxs-lookup"><span data-stu-id="0324d-125">Friday</span></span>    
+- <span data-ttu-id="0324d-126">土曜日</span><span class="sxs-lookup"><span data-stu-id="0324d-126">Saturday</span></span>    
+- <span data-ttu-id="0324d-127">Day (この値は、週単位の定期的なパターンに対しては無効です)</span><span class="sxs-lookup"><span data-stu-id="0324d-127">Day (this value is not valid for a weekly recurrence pattern)</span></span>    
+- <span data-ttu-id="0324d-128">Weekday (この値は、週単位の定期的なパターンに対しては無効です)</span><span class="sxs-lookup"><span data-stu-id="0324d-128">Weekday (this value is not valid for a weekly recurrence pattern)</span></span>    
+- <span data-ttu-id="0324d-129">WeekendDay (この値は、週単位の定期的なパターンに対しては無効です)</span><span class="sxs-lookup"><span data-stu-id="0324d-129">WeekendDay (this value is not valid for a weekly recurrence pattern)</span></span>
     
-<span data-ttu-id="09286-130">毎週の定期的なパターンでは、複数の値を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="09286-130">A weekly recurrence pattern can contain multiple values.</span></span> <span data-ttu-id="09286-131">値は、空白文字で区切られます。</span><span class="sxs-lookup"><span data-stu-id="09286-131">Values are separated by a space character.</span></span> <span data-ttu-id="09286-132">たとえば、火曜日と木曜日の毎週、テキスト値に「火曜日木曜日」です。</span><span class="sxs-lookup"><span data-stu-id="09286-132">For example, for a weekly recurrence on Tuesdays and Thursdays, the text value will be "Tuesday Thursday".</span></span>
+<span data-ttu-id="0324d-130">週単位の定期的なパターンでは、複数の値を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="0324d-130">A weekly recurrence pattern can contain multiple values.</span></span> <span data-ttu-id="0324d-131">値は空白文字で区切られます。</span><span class="sxs-lookup"><span data-stu-id="0324d-131">Values are separated by a space character.</span></span> <span data-ttu-id="0324d-132">たとえば、火曜日と木曜日の週単位の定期的な予定の場合、テキスト値は "火曜日木曜日" になります。</span><span class="sxs-lookup"><span data-stu-id="0324d-132">For example, for a weekly recurrence on Tuesdays and Thursdays, the text value will be "Tuesday Thursday".</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="09286-133">備考</span><span class="sxs-lookup"><span data-stu-id="09286-133">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="0324d-133">注釈</span><span class="sxs-lookup"><span data-stu-id="0324d-133">Remarks</span></span>
 
-<span data-ttu-id="09286-134">この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="09286-134">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2010 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="0324d-134">この要素を記述するスキーマは、Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。</span><span class="sxs-lookup"><span data-stu-id="0324d-134">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2010 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="09286-135">要素情報</span><span class="sxs-lookup"><span data-stu-id="09286-135">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="0324d-135">要素の情報</span><span class="sxs-lookup"><span data-stu-id="0324d-135">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="09286-136">名前空間</span><span class="sxs-lookup"><span data-stu-id="09286-136">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="09286-137">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="09286-137">Schema Name</span></span>  <br/> |<span data-ttu-id="09286-138">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="09286-138">Types schema</span></span>  <br/> |
-|<span data-ttu-id="09286-139">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="09286-139">Validation File</span></span>  <br/> |<span data-ttu-id="09286-140">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="09286-140">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="09286-141">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="09286-141">Can be Empty</span></span>  <br/> |<span data-ttu-id="09286-142">False</span><span class="sxs-lookup"><span data-stu-id="09286-142">False</span></span>  <br/> |
+|<span data-ttu-id="0324d-136">Namespace</span><span class="sxs-lookup"><span data-stu-id="0324d-136">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="0324d-137">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="0324d-137">Schema Name</span></span>  <br/> |<span data-ttu-id="0324d-138">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="0324d-138">Types schema</span></span>  <br/> |
+|<span data-ttu-id="0324d-139">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="0324d-139">Validation File</span></span>  <br/> |<span data-ttu-id="0324d-140">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="0324d-140">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="0324d-141">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="0324d-141">Can be Empty</span></span>  <br/> |<span data-ttu-id="0324d-142">正しくない</span><span class="sxs-lookup"><span data-stu-id="0324d-142">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="09286-143">関連項目</span><span class="sxs-lookup"><span data-stu-id="09286-143">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0324d-143">関連項目</span><span class="sxs-lookup"><span data-stu-id="0324d-143">See also</span></span>
 
-- [<span data-ttu-id="09286-144">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="09286-144">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="0324d-144">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="0324d-144">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
