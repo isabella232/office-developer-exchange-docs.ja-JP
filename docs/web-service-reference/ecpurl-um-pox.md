@@ -1,24 +1,24 @@
 ---
-title: EcpUrl-um (POX)
+title: EcpUrl (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 455c77c6-c03f-49a7-a8ca-aa0023b6e73b
-description: Um の EcpUrl 要素は、メールが有効なユーザーのボイス メールの設定にアクセスするために使用できる URL を生成する EcpUrl (POX) 要素の値と組み合わせて使用できますが、部分的な URL を指定します。
-ms.openlocfilehash: 5f9be67f02703bbdfeb114eda13c5ce59f83290d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: EcpUrl 要素は、EcpUrl (POX) 要素の値と組み合わせて、メールが有効なユーザーのボイスメール設定にアクセスするために使用できる URL を生成できる、部分的な URL を指定します。
+ms.openlocfilehash: 0fa3d42113d7d9accd6bba3d3b065477baf4d484
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760189"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463490"
 ---
-# <a name="ecpurl-um-pox"></a>EcpUrl-um (POX)
+# <a name="ecpurl-um-pox"></a>EcpUrl (POX)
 
-**Um の EcpUrl**要素は、メールが有効なユーザーのボイス メールの設定にアクセスするために使用できる URL を生成する[EcpUrl (POX)](ecpurl-pox.md)要素の値と組み合わせて使用できますが、部分的な URL を指定します。 
+**EcpUrl**要素は、 [EcpUrl (POX)](ecpurl-pox.md)要素の値と組み合わせて、メールが有効なユーザーのボイスメール設定にアクセスするために使用できる url を生成できる、部分的な url を指定します。 
   
-[(POX) を自動検出](autodiscover-pox.md)
+[自動検出 (POX)](autodiscover-pox.md)
   
 [応答 (POX)](response-pox.md)
   
@@ -26,13 +26,13 @@ ms.locfileid: "19760189"
   
 [プロトコル (POX)](protocol-pox.md)
   
-[EcpUrl-um (POX)](ecpurl-um-pox.md)
+[EcpUrl (POX)](ecpurl-um-pox.md)
   
 ```XML
 <EcpUrl-um/>
 ```
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -48,19 +48,19 @@ ms.locfileid: "19760189"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
+|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、ユーザーのボイス メールの設定にアクセスするために使用できる URL を生成する[EcpUrl (POX)](ecpurl-pox.md)要素の値と組み合わせて使用できますが、部分的な URL を表します。 
+テキスト値は、 [EcpUrl (POX)](ecpurl-pox.md)要素の値と組み合わせて、ユーザーのボイスメール設定にアクセスするために使用できる url を生成できる url の部分を表します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**Um の EcpUrl**要素は、**プロトコル**要素の省略可能な子要素です。 
+**EcpUrl**要素は、 **Protocol**要素のオプションの子要素です。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[交換の POX の自動検出の XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+[Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
 

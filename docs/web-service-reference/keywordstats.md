@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 79b24034-6456-4c9c-adf6-03d06024c4e8
-description: KeywordStats 要素は、1 つまたは複数の KeywordStat 要素の一覧を指定します。
-ms.openlocfilehash: d1f68059375fc0359b46d60b0184adc268d8fffb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: KeywordStats 要素は、1つ以上の KeywordStat 要素のリストを指定します。
+ms.openlocfilehash: bf471c1712a96b44dbc533a2cb26e32546a6db38
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832193"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463294"
 ---
 # <a name="keywordstats"></a>KeywordStats
 
-**KeywordStats**要素は、1 つまたは複数の**KeywordStat**要素の一覧を指定します。 
+**KeywordStats**要素は、1つ以上の**KeywordStat**要素のリストを指定します。 
   
 ```XML
 <KeywordStats>
@@ -26,7 +26,7 @@ ms.locfileid: "19832193"
 ```
 
  **ArrayOfKeywordStatisticsSearchResultsType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,7 +42,7 @@ ms.locfileid: "19832193"
 
 [SearchMailboxesResult](searchmailboxesresult.md)
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   

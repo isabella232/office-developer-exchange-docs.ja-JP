@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 8b206274-eaa4-40d3-b504-af27335c8f43
 description: EWS マネージ API アセンブリをアプリケーションと共に再配布する方法を紹介します。
-ms.openlocfilehash: d8fc57c4a2b3ed7d6218aeeed0fe88c2d3e0fbe0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: HT
+ms.openlocfilehash: e64b4cdb8938caa819ba30621112a25946ef0424
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759178"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463826"
 ---
 # <a name="redistribution-requirements-for-the-ews-managed-api"></a>EWS マネージ API の再配布の要件
 
@@ -36,6 +36,6 @@ EWS マネージ API アプリケーションを設計する際には、ユー�
 
 - [Exchange の EWS クライアントの設計の概要](ews-client-design-overview-for-exchange.md)
     
-- [EWS マネージ API (ダウンロード)](http://aka.ms/ews-managed-api-readme)
+- [EWS マネージ API (ダウンロード)](https://aka.ms/ews-managed-api-readme)
     
 

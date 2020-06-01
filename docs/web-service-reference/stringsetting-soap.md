@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: bf7096d8-42d4-4bf5-bbdd-851af2754000
-description: StringSetting 要素は、文字列型の値は、ユーザー設定を表します。
-ms.openlocfilehash: af2c8ed243182e3491723be172ae162554250951
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: StringSetting 要素は、string 型の値を設定するユーザーを表します。
+ms.openlocfilehash: 215d1187c0968577e894c9f9cddea050789697b9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833606"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463077"
 ---
 # <a name="stringsetting-soap"></a>StringSetting (SOAP)
 
-**StringSetting**要素は、文字列型の値は、ユーザー設定を表します。 
+**Stringsetting**要素は、string 型の値を設定するユーザーを表します。 
   
 ```XML
 <StringSetting>
@@ -28,7 +28,7 @@ ms.locfileid: "19833606"
 ```
 
  **StringSetting**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -38,10 +38,10 @@ ms.locfileid: "19833606"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[名 (SOAP)](name-soap.md) <br/> |ユーザー設定の名前を表します。  <br/> |
-|[値 (SOAP)](value-soap.md) <br/> |ユーザー設定値を表します。  <br/> |
+|[Name (SOAP)](name-soap.md) <br/> |ユーザー設定の名前を表します。  <br/> |
+|[Value (SOAP)](value-soap.md) <br/> |ユーザー設定の値を表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -51,18 +51,18 @@ ms.locfileid: "19833606"
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**StringSetting**型は、 **UserSetting**型を拡張します。 
+**Stringsetting**型は、 **usersetting**型を拡張します。 
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|スキーマ名  <br/> |スキーマの自動検出  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|スキーマ名  <br/> |自動検出スキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

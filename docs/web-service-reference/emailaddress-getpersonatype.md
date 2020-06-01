@@ -1,5 +1,5 @@
 ---
-title: EmailAddress (GetPersonaType)
+title: EmailAddress (Get個人 Atype)
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 052055b5-4630-40ed-9b24-9e7f4bf7ba1d
-description: EmailAddress (GetPersonaType) の要素では、ペルソナに関連付けられている電子メール アドレスを指定します。
-ms.openlocfilehash: a28a4a61a9719875fe99e1c950bcd3ec3af9ab13
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: EmailAddress (Get個人 Atype) 要素は、ペルソナに関連付けられている電子メールアドレスを指定します。
+ms.openlocfilehash: b58f61202cd94ff282b21138b47b40887b38752a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760217"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463455"
 ---
-# <a name="emailaddress-getpersonatype"></a>EmailAddress (GetPersonaType)
+# <a name="emailaddress-getpersonatype"></a>EmailAddress (Get個人 Atype)
 
-**EmailAddress (GetPersonaType)** の要素では、ペルソナに関連付けられている電子メール アドレスを指定します。 
+**EmailAddress (Get個人 atype)** 要素は、ペルソナに関連付けられている電子メールアドレスを指定します。 
   
 ```XML
 <EmailAddress>
@@ -31,7 +31,7 @@ ms.locfileid: "19760217"
 ```
 
  **EmailAddressType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -41,29 +41,29 @@ ms.locfileid: "19760217"
   
 ### <a name="child-elements"></a>子要素
 
-[名 (文字列)](name-string.md) | [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) | [RoutingType (EmailAddressType)](routingtype-emailaddresstype.md) | [MailboxType](mailboxtype.md) | [アイテム Id](itemid.md) | [OriginalDisplayName](originaldisplayname.md)
+[Name (string)](name-string.md)  | [EmailAddress (非 Emptystringtype)](emailaddress-nonemptystringtype.md)  | [Routingtype (EmailAddressType)](routingtype-emailaddresstype.md)  | [MailboxType](mailboxtype.md)  | [ItemId](itemid.md)  | [Originaldisplayname](originaldisplayname.md)
   
 ### <a name="parent-elements"></a>親要素
 
 [GetPersona](getpersona.md)
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [GetPersona](getpersona.md)
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

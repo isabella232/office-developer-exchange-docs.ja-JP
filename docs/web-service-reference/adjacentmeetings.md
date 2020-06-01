@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 50a9c381-9166-476e-8421-29e51b94499b
 description: AdjacentMeetings 要素は、会議の時刻に隣接しているすべての予定表アイテムを識別します。
-ms.openlocfilehash: 9ab818f4f67c32c01101cc595ccb92424a872ef0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 7c89095e24af799df22a848be06a0fd65d53be7f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759302"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463581"
 ---
 # <a name="adjacentmeetings"></a>AdjacentMeetings
 
@@ -29,8 +29,8 @@ ms.locfileid: "19759302"
 </AdjacentMeetings>
 ```
 
- **NonEmptyArrayOfAllItemsType**
-## <a name="attributes-and-elements"></a>属性および要素
+ **非 Emptyarrayofallitemstype**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,34 +40,34 @@ ms.locfileid: "19759302"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[カレンダー項目](calendaritem.md) <br/> |Exchange 予定表アイテムを表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[カレンダー項目](calendaritem.md) <br/> |Exchange 予定表アイテムを表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議出席依頼を表します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
   
 > [!NOTE]
-> 追加の子要素は、スキーマの有効な[カレンダー項目](calendaritem.md)要素は、 **AdjacentMeetings**要素内で Exchange Web サービス (EWS) から返される唯一の子要素です。 このトピックでは、スキーマでは有効が EWS では返されませんが、子要素が指定されていません。 
+> 追加の子要素はスキーマに従って有効ですが、 [Calendaritem](calendaritem.md)要素は、Exchange Web サービス (EWS) が**AdjacentMeetings**要素内で返す唯一の子要素です。 このトピックでは、スキーマに従って有効な子要素は表示されませんが、EWS では返されません。 
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

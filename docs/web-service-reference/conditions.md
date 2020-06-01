@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: f049a48c-9585-43f7-8549-0b8cb19a5eea
-description: 条件要素が条件を識別するには、満たされるとときに、ルールのルールの処理がトリガーされます。
-ms.openlocfilehash: f66777e82892122c4c7dac45bdef3c42f5c4a577
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 条件要素は、処理されるときにルールのルールの処理をトリガーする条件を示します。
+ms.openlocfilehash: 2c6b4794a87cca79b4c723197b57360ad0ff973d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759650"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463203"
 ---
 # <a name="conditions"></a>条件
 
-**条件**要素が条件を識別するには、満たされるとときに、ルールのルールの処理がトリガーされます。 
+**条件**要素は、処理されるときにルールのルールの処理をトリガーする条件を示します。 
   
 ```XML
 <Conditions>
@@ -63,7 +63,7 @@ ms.locfileid: "19759650"
 ```
 
  **RulePredicatesType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -73,72 +73,72 @@ ms.locfileid: "19759650"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[Categories](categories-ex15websvcsotherref.md) <br/> |カテゴリ適用する場合の条件または例外の順序で受信したメッセージに適用する必要がありますにはが含まれています。  <br/> |
-|[ContainsBodyStrings](containsbodystrings.md) <br/> |適用する場合の条件または例外の順序で受信メッセージの本文に表示する文字列を示します。  <br/> |
-|[ContainsHeaderStrings](containsheaderstrings.md) <br/> |適用する場合の条件または例外の順序で受信メッセージのヘッダーに表示される文字列を示します。  <br/> |
-|[ContainsRecipientStrings](containsrecipientstrings.md) <br/> |**ToRecipients**または**CcRecipients**のいずれかの条件または例外を適用する順序で受信メッセージのプロパティに表示される文字列を示します。  <br/> |
-|[ContainsSenderStrings](containssenderstrings.md) <br/> |**** プロパティに適用する条件または例外の順序で受信したメッセージに表示する文字列を示します。  <br/> |
-|[ContainsSubjectOrBodyStrings](containssubjectorbodystrings.md) <br/> |適用する場合の条件または例外の順序で受信したメッセージの件名または本文に表示する文字列を示します。  <br/> |
-|[ContainsSubjectStrings](containssubjectstrings.md) <br/> |適用する場合の条件または例外の順序で受信したメッセージの件名に表示される文字列を示します。  <br/> |
-|[FlaggedForAction](flaggedforaction.md) <br/> |適用する場合の条件または例外の順序で受信したメッセージを表示する必要がありますアクションの値のフラグを指定します。  <br/> |
-|[FromAddresses](fromaddresses.md) <br/> |元の条件または例外を適用する順序で受信したメッセージを送信する必要がある電子メール アドレスを示します。  <br/> |
-|[FromConnectedAccounts](fromconnectedaccounts.md) <br/> |受信メッセージの適用の条件または例外のために集められたを持つ必要がある電子メール アカウントの名前を表します。  <br/> |
-|[添付ファイル付き](hasattachments.md) <br/> |受信したメッセージを添付ファイルのある条件または例外を適用する必要があるかどうかを示します。  <br/> |
-|[Importance](importance.md) <br/> |適用する場合の条件または例外の順序で受信したメッセージにスタンプする重要性を指定します。  <br/> |
-|[IsApprovalRequest](isapprovalrequest.md) <br/> |受信メッセージに適用する条件または例外の順序で要求を承認をする必要があるかどうかを示します。  <br/> |
-|[IsAutomaticForward](isautomaticforward.md) <br/> |受信メッセージに適用する条件または例外の順に自動転送をする必要があるかどうかを示します。  <br/> |
-|[IsAutomaticReply](isautomaticreply.md) <br/> |受信メッセージに適用する条件または例外の順序で自動返信をする必要があるかどうかを示します。  <br/> |
-|[暗号化されたチャレンジ](isencrypted.md) <br/> |受信メッセージが S/MIME 暗号化を適用する場合の条件または例外の順序である必要があるかどうかを示します。  <br/> |
-|[IsMeetingRequest](ismeetingrequest.md) <br/> |かどうかメッセージを受信する必要がある会議出席依頼を適用する場合の条件または例外の順序で示します。  <br/> |
-|[IsMeetingResponse](ismeetingresponse.md) <br/> |受信メッセージが会議のためには条件や例外条件を適用する返答をする必要があるかどうかを示します。  <br/> |
-|[IsNDR](isndr.md) <br/> |適用する場合の条件または例外の順序で受信メッセージが配信不能レポート (Ndr) をする必要があるかどうかを示します。  <br/> |
-|[IsPermissionControlled](ispermissioncontrolled.md) <br/> |適用する場合の条件または例外の順序で受信メッセージがアクセス許可の制御 (RMS 保護) をする必要があるかどうかを示します。  <br/> |
-|[IsReadReceipt](isreadreceipt.md) <br/> |かどうかの受信メッセージ読み取る必要があります適用の条件または例外のために領収書を示します。  <br/> |
-|[入手](issigned.md) <br/> |S/MIME の署名を適用する場合の条件または例外の順序で受信したメッセージがある必要があるかどうかを示します。  <br/> |
-|[IsVoicemail](isvoicemail.md) <br/> |適用の条件または例外のためにボイス メール メッセージを受信したメッセージがある必要があるかどうかを示します。  <br/> |
-|[ItemClasses](itemclasses.md) <br/> |適用する場合の条件または例外の順序で受信したメッセージにスタンプする必要があります項目クラスを表します。  <br/> |
-|[MessageClassifications](messageclassifications.md) <br/> |メッセージの分類を適用する場合の条件または例外の順序で受信したメッセージにスタンプする必要があることを表します。  <br/> |
-|[NotSentToMe](notsenttome.md) <br/> |**ToRecipients**プロパティを適用する場合の条件または例外の順序で受信したメッセージのメールボックスの所有者がある必要がありますいないかどうかを示します。  <br/> |
-|[SentCcMe](sentccme.md) <br/> |**CcRecipients**プロパティを適用する場合の条件または例外の順序で受信メッセージのあるメールボックスの所有者があるかどうかを示します。  <br/> |
-|[SentOnlyToMe](sentonlytome.md) <br/> |**ToRecipients**プロパティを適用する場合の条件または例外の順序で受信メッセージの 1 つのみを使用するメールボックスの所有者があるかどうかを示します。  <br/> |
-|[SentToAddresses](senttoaddresses.md) <br/> |適用する条件または例外の順序でに送信されている受信メッセージを持つ電子メール アドレスを示します。  <br/> |
-|[SentToMe](senttome.md) <br/> |**ToRecipients**プロパティを適用する場合の条件または例外の順序で受信したメッセージのあるメールボックスの所有者があるかどうかを示します。  <br/> |
-|[SentToOrCcMe](senttoorccme.md) <br/> |**ToRecipients**または**CcRecipients**のいずれかの条件または例外を適用する順序で受信メッセージのプロパティで、メールボックスの所有者があるかどうかを示します。  <br/> |
-|[Sensitivity](sensitivity.md) <br/> |感度を適用する場合の条件または例外の順序で受信したメッセージにスタンプする必要があることを示します。  <br/> |
-|[WithinDateRange](withindaterange.md) <br/> |受信したメッセージが適用の条件または例外のために到着した日付の範囲を指定します。  <br/> |
-|[WithinSizeRange](withinsizerange.md) <br/> |適用する場合の条件または例外の順序で受信メッセージをする必要のある最小値と最大サイズを指定します。  <br/> |
+|[Categories](categories-ex15websvcsotherref.md) <br/> |条件または例外を適用するために、受信メッセージに適用する必要があるカテゴリを含みます。  <br/> |
+|[大き Body文字列](containsbodystrings.md) <br/> |条件または例外を適用するために、受信メッセージの本文に表示する必要がある文字列を示します。  <br/> |
+|[ContainsHeaderStrings](containsheaderstrings.md) <br/> |条件または例外を適用するために、受信メッセージのヘッダーに表示する必要がある文字列を示します。  <br/> |
+|[持つ受信者文字列](containsrecipientstrings.md) <br/> |条件または例外を適用するために、受信メッセージの**torな piの**イベントまたは**ccrecipients**各プロパティに表示する必要がある文字列を示します。  <br/> |
+|[文字列](containssenderstrings.md) <br/> |条件または例外を適用するために、受信メッセージの**From**プロパティに表示する必要がある文字列を示します。  <br/> |
+|[ContainsSubjectOrBodyStrings](containssubjectorbodystrings.md) <br/> |条件または例外を適用するために、受信メッセージの本文または件名のどちらかに表示する必要がある文字列を示します。  <br/> |
+|[大き Subjectstrings](containssubjectstrings.md) <br/> |条件または例外を適用するために、受信メッセージの件名に表示する必要がある文字列を示します。  <br/> |
+|[FlaggedForAction](flaggedforaction.md) <br/> |条件または例外を適用するために、受信メッセージに表示する必要があるアクション値のフラグを指定します。  <br/> |
+|[FromAddresses](fromaddresses.md) <br/> |条件または例外を適用するために、受信メッセージを送信する必要がある電子メールアドレスを示します。  <br/> |
+|[FromConnectedAccounts](fromconnectedaccounts.md) <br/> |条件または例外を適用するために、受信メッセージが集計されている必要がある電子メールアカウント名を表します。  <br/> |
+|[HasAttachments](hasattachments.md) <br/> |条件または例外を適用するために、受信メッセージに添付ファイルを含める必要があるかどうかを示します。  <br/> |
+|[Importance](importance.md) <br/> |条件または例外を適用するために、受信メッセージにスタンプされる重要度を指定します。  <br/> |
+|[IsApprovalRequest](isapprovalrequest.md) <br/> |条件または例外を適用するために、受信メッセージが承認要求であるかどうかを示します。  <br/> |
+|[Is自動転送](isautomaticforward.md) <br/> |条件または例外を適用するために、受信メッセージを自動転送する必要があるかどうかを示します。  <br/> |
+|[Is自動応答](isautomaticreply.md) <br/> |条件または例外を適用するために、受信メッセージが自動応答である必要があるかどうかを示します。  <br/> |
+|[IsEncrypted](isencrypted.md) <br/> |条件または例外を適用するために、受信メッセージを S/MIME で暗号化する必要があるかどうかを示します。  <br/> |
+|[Is会議要求](ismeetingrequest.md) <br/> |条件または例外を適用するために、受信メッセージが会議出席依頼である必要があるかどうかを示します。  <br/> |
+|[Is会議の応答](ismeetingresponse.md) <br/> |条件または例外を適用するために、受信メッセージが会議出席依頼に応答する必要があるかどうかを示します。  <br/> |
+|[IsNDR](isndr.md) <br/> |条件または例外を適用するために、受信メッセージが配信不能レポート (Ndr) である必要があるかどうかを示します。  <br/> |
+|[IsPermissionControlled](ispermissioncontrolled.md) <br/> |条件または例外を適用するために、受信メッセージが権限制御される (RMS 保護) 必要があるかどうかを示します。  <br/> |
+|[IsReadReceipt](isreadreceipt.md) <br/> |条件または例外を適用するために、受信メッセージが開封確認である必要があるかどうかを示します。  <br/> |
+|[IsSigned](issigned.md) <br/> |条件または例外を適用するために、受信メッセージが S/MIME で署名されている必要があるかどうかを示します。  <br/> |
+|[IsVoicemail メール](isvoicemail.md) <br/> |条件または例外を適用するために、受信メッセージがボイスメールメッセージである必要があるかどうかを示します。  <br/> |
+|[ItemClasses](itemclasses.md) <br/> |条件または例外を適用するために、受信メッセージにスタンプする必要があるアイテムクラスを表します。  <br/> |
+|[MessageClassifications](messageclassifications.md) <br/> |条件または例外を適用するために、受信メッセージにスタンプする必要があるメッセージ分類を表します。  <br/> |
+|[NotSentToMe](notsenttome.md) <br/> |条件または例外を適用するために、メールボックスの所有者が受信メッセージの**トーラス**プロパティに含まれないようにする必要があるかどうかを示します。  <br/> |
+|[Ccme の説明](sentccme.md) <br/> |条件または例外を適用するために、メールボックスの所有者が受信メッセージの**Ccrecipients**プロパティにある必要があるかどうかを示します。  <br/> |
+|[SentOnlyToMe](sentonlytome.md) <br/> |条件または例外を適用するために、メールボックスの所有者が受信メッセージの**Torecipients**プロパティにある唯一の所有者である必要があるかどうかを示します。  <br/> |
+|[住所](senttoaddresses.md) <br/> |条件または例外を適用するために、受信メッセージの送信先の電子メールアドレスを指定します。  <br/> |
+|[SentToMe](senttome.md) <br/> |条件または例外を適用するために、メールボックスの所有者が受信メッセージの**Torecipients**プロパティにある必要があるかどうかを示します。  <br/> |
+|[「Orccme」](senttoorccme.md) <br/> |条件または例外を適用するために、メールボックスの所有者が受信メッセージの**Torecipients**イベントまたは**ccrecipients**プロパティのいずれかに含まれている必要があるかどうかを示します。  <br/> |
+|[Sensitivity](sensitivity.md) <br/> |条件または例外を適用するために、受信メッセージにスタンプする必要がある感度を示します。  <br/> |
+|[WithinDateRange](withindaterange.md) <br/> |条件または例外を適用するために、受信メッセージが受信される必要がある日付範囲を指定します。  <br/> |
+|[WithinSizeRange](withinsizerange.md) <br/> |条件または例外を適用するために、受信メッセージが必要とする最小サイズと最大サイズを指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ルール (RuleType)](rule-ruletype.md) <br/> |1 つのルールが含まれていて、ユーザーのメールボックス内のルールを表します。  <br/> |
+|[ルール (RuleType)](rule-ruletype.md) <br/> |1つのルールを含み、ユーザーのメールボックス内のルールを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[Exceptions](exceptions.md)
+[例外](exceptions.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

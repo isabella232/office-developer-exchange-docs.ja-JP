@@ -8,19 +8,19 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: a24092c9-58be-4008-92c4-68ec5c6c0fa6
-description: CertPrincipalName 要素は、SSL を使用して Microsoft Exchange Server 2007 組織に接続するために必要な Secure Sockets Layer (SSL) 証明書のプリンシパル名を指定します。
-ms.openlocfilehash: d2766b16a3e8a1bcd013de332d9c07f709fcf949
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: CertPrincipalName 要素は、SSL を使用して Microsoft Exchange Server 2007 組織に接続するために必要な SSL (Secure Sockets Layer) 証明書プリンシパル名を指定します。
+ms.openlocfilehash: fb2a1c8577bce41945b669be56f2a94a2c4dca26
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759618"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463343"
 ---
 # <a name="certprincipalname-pox"></a>CertPrincipalName (POX)
 
-**CertPrincipalName**要素は、SSL を使用して Microsoft Exchange Server 2007 組織に接続するために必要な Secure Sockets Layer (SSL) 証明書のプリンシパル名を指定します。 
+**CertPrincipalName**要素は、ssl を使用して Microsoft Exchange Server 2007 組織に接続するために必要な Ssl (Secure Sockets layer) 証明書プリンシパル名を指定します。 
   
-[(POX) を自動検出](autodiscover-pox.md)
+[自動検出 (POX)](autodiscover-pox.md)
   
 [応答 (POX)](response-pox.md)
   
@@ -34,7 +34,7 @@ ms.locfileid: "19759618"
 <CertPrincipalName>none or servername</CertPrinicpalName>
 ```
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -50,21 +50,21 @@ ms.locfileid: "19759618"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアント アクセス サーバーの役割がインストールされている Exchange 2007 を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
+|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントアクセスサーバーの役割がインストールされている Exchange 2007 を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 テキスト値は、SSL を使用して Microsoft Exchange 組織に接続するために必要な SSL 証明書のプリンシパル名を指定します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**CertPrincipalName**要素が指定されていない場合、デフォルトは msstd:SERVER に設定されてサーバーと[サーバー (POX)](server-pox.md)要素で指定されている値があります。 たとえば、example.com としてサーバーを指定すると、 **CertPrincipalName**は空白のままに[SSL (POX)](ssl-pox.md)がオンに、 **CertPrincipalName**の既定値になります msstd:example.com。 
+**CertPrincipalName**要素が指定されていない場合、既定で msstd: server が設定されます。ここで、Server は[server (POX)](server-pox.md)要素で指定された値です。 たとえば、SERVER が example.com として指定されていて、 [SSL (POX)](ssl-pox.md)が有効になっている場合、 **CertPrincipalName**を空白のままにすると、既定値の**CertPrincipalName**は msstd: example .com になります。 
   
-何も指定されて**いない**場合、Windows は MSDN で、[プリンシパル名](http://go.microsoft.com/fwlink/?LinkId=93417)」のトピックに含まれる情報に基づいて証明書のプリンシパル名を検証します。 
+**何も**指定されていない場合、WINDOWS は MSDN の[プリンシパル名](https://go.microsoft.com/fwlink/?LinkId=93417)のトピックに記載されている情報に従って、証明書のプリンシパル名を検証します。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[交換の POX の自動検出の XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+[Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
 

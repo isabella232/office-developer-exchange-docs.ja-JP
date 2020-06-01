@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6ff3ac48-02ba-40ec-a71b-c401bb2b127c
-description: DistinguishedGroupBy 要素は、FindItem クエリの標準的なグループ化を提供します。
-ms.openlocfilehash: 0635366447675bf28dedf3af4f7d76094ee5e0a4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DistinguishedGroupBy 要素は、FindItem クエリの標準的なグループを提供します。
+ms.openlocfilehash: 004613d55419a19f69e960203ae13d8d906b74c8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760129"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463140"
 ---
 # <a name="distinguishedgroupby"></a>DistinguishedGroupBy
 
-**DistinguishedGroupBy**要素は、FindItem クエリの標準的なグループ化を提供します。 
+**DistinguishedGroupBy**要素は、FindItem クエリの標準的なグループを提供します。 
   
 - [FindItem](finditem.md) 
 - [DistinguishedGroupBy](distinguishedgroupby.md)
@@ -33,7 +33,7 @@ ms.locfileid: "19760129"
 ```
 
  **DistinguishedGroupByType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -43,34 +43,34 @@ ms.locfileid: "19760129"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[StandardGroupBy](standardgroupby.md) <br/> |標準のグループ化と集計のグループ化された FindItem 操作のメカニズムを表します。  <br/> |
+|[StandardGroupBy](standardgroupby.md) <br/> |グループ化された FindItem 操作の標準のグループ化および集約メカニズムを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FindItem](finditem.md) <br/> |メールボックス内のアイテムを検索するための要求を定義します。<br/><br/>この要素への XPath 式は、次のようにします。`/FindItem` <br/> |
+|[FindItem](finditem.md) <br/> |メールボックス内のアイテムを検索するための要求を定義します。<br/><br/>この要素の XPath 式を次に示します。`/FindItem` <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-FindItem 操作に**DistinguishedGroupBy**要素を追加することがグループ化されたときの結果でなければなりませんバックアップとグループ化の要件を満たす標準的なグループの 1 つとします。 **DistinguishedGroupBy**要素も指定しない場合、 [GroupBy](groupby.md)要素は、結果が返される FindItem グループ化を解除します。 
+**DistinguishedGroupBy**要素は、結果がグループ化され、グループの要件を満たしている場合に、その結果がグループ化されている必要があるときに、FindItem 操作に追加できます。 **DistinguishedGroupBy**要素も[GroupBy](groupby.md)要素も指定されていない場合、FindItem 結果はグループ解除されます。 
   
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - 
   [FindItem 操作](finditem-operation.md)
-- [項目を検索します。](http://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
+- [アイテムの検索](https://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c228f7e7-6dc8-476d-9b8c-99cd5b6f9f0c
-description: DraftItemIds 要素には、会話の下書きアイテムをアイテムの識別子の配列が含まれています。
-ms.openlocfilehash: f6639b20641ff68fff989d2de5fa4ec2c550d5ce
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DraftItemIds 要素には、スレッド内の下書きアイテムのアイテム識別子の配列が含まれています。
+ms.openlocfilehash: 5e635e354c9d2d768bab5efaafafde272fe568d3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760163"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463574"
 ---
 # <a name="draftitemids"></a>DraftItemIds
 
-**DraftItemIds**要素には、会話の下書きアイテムをアイテムの識別子の配列が含まれています。 
+**DraftItemIds**要素には、スレッド内の下書きアイテムのアイテム識別子の配列が含まれています。 
   
 ```XML
 <DraftItemIds>
@@ -28,8 +28,8 @@ ms.locfileid: "19760163"
 </DraftItemIds>
 ```
 
- **NonEmptyArrayOfBaseItemIdsType**
-## <a name="attributes-and-elements"></a>属性および要素
+ **非 Emptyarrayofbaseitemidstype**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -39,25 +39,25 @@ ms.locfileid: "19760163"
   
 ### <a name="child-elements"></a>子要素
 
-[ItemId](itemid.md) | [OccurrenceItemId](occurrenceitemid.md) | [RecurringMasterItemId](recurringmasteritemid.md) | [RecurringMasterItemIdRanges](recurringmasteritemidranges.md)
+[ItemId](itemid.md)  | [OccurrenceItemId](occurrenceitemid.md)  | [RecurringMasterItemId](recurringmasteritemid.md)  | [RecurringMasterItemIdRanges](recurringmasteritemidranges.md)
   
 ### <a name="parent-elements"></a>親要素
 
 [会話 (ConversationType)](conversation-conversationtype.md)
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 05989915-121c-4f26-93cc-af8d454ab442
-description: DeliveryRestricted 要素は、配信の制限が、送信者のメッセージを防ぐため、受信者に到達できないかどうかを示します。
-ms.openlocfilehash: ba1c6e00b93c9e442a427fe98a5e15bf5fe1effd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DeliveryRestricted 要素は、配信の制限によって送信者のメッセージが受信者に届かないようにするかどうかを示します。
+ms.openlocfilehash: 58fc85873326179d7745db4ba7d4854a76ced6a7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760008"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462690"
 ---
 # <a name="deliveryrestricted"></a>DeliveryRestricted
 
-**DeliveryRestricted**要素は、配信の制限が、送信者のメッセージを防ぐため、受信者に到達できないかどうかを示します。 
+**Deliveryrestricted**要素は、配信の制限によって送信者のメッセージが受信者に届かないようにするかどうかを示します。 
   
 ```XML
 <DeliveryRestricted>true | false</DeliveryRestricted>
 ```
 
- **ブール型 (Boolean)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,26 +44,26 @@ ms.locfileid: "19760008"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[メール ヒント](mailtips.md) <br/> |さまざまな種類のメール ヒントの値を表します。  <br/> |
+|[メールヒント](mailtips.md) <br/> |さまざまな種類のメールヒントの値を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-この要素のテキスト値は、配信の制限は送信者のメッセージを防ぐため、受信者に到達できない場合**true** 。 値は、配信の制限できなくなる、送信者のメッセージが受信者に届かない場合**は false** 。 
+この要素のテキスト値は、配信の制限によって送信者のメッセージが受信者に届かないようにする場合は**true**です。 配信の制限によって送信者のメッセージが受信者に到達できない場合、値は**false**になります。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

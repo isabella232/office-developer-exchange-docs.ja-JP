@@ -1,5 +1,5 @@
 ---
-title: タイムアウト
+title: ConnectionTimeout
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,28 +11,28 @@ api_name:
 api_type:
 - schema
 ms.assetid: 14da68a0-bcca-4281-a774-47644baa4ee9
-description: タイムアウト要素は、接続を開いたままにしておく秒数を指定します。
-ms.openlocfilehash: 2bb40ba502853c70ef107c4c740fdfe7073abe31
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ConnectionTimeout 要素は、接続を開いたままにする時間を分単位で指定します。
+ms.openlocfilehash: 671e3cf5466ee8b3543036811708bd7f54afdcce
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759659"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463854"
 ---
-# <a name="connectiontimeout"></a>タイムアウト
+# <a name="connectiontimeout"></a>ConnectionTimeout
 
-**タイムアウト**要素は、接続を開いたままにしておく秒数を指定します。 
+**ConnectionTimeout**要素は、接続を開いたままにする時間を分単位で指定します。 
   
 [GetStreamingEvents の操作](getstreamingevents-operation.md)
   
-[タイムアウト](connectiontimeout.md)
+[ConnectionTimeout](connectiontimeout.md)
   
 ```xml
 <ConnectionTimeout/>
 ```
 
  **int**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -48,24 +48,24 @@ ms.locfileid: "19759659"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetStreamingEvents](getstreamingevents.md) <br/> |ストリーミング接続からイベント通知を取得する要求を定義します。  <br/> |
+|[GetStreamingEvents](getstreamingevents.md) <br/> |ストリーミング接続からイベント通知を取得するための要求を定義します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値では、ストリーミング接続を開いたままにする時間 (分) の最大数を示す整数を表します。 値は、1 から 30 日までの間でなければなりません。
+テキスト値は、ストリーミング接続を開いたままにしておく最大時間 (分単位) を示す整数を表します。 この値は、1 ~ 30 の範囲である必要があります。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web Services.This の要素がホストをで Exchange Server 2010 Service Pack 1 (SP1) を導入する IIS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -74,5 +74,5 @@ ms.locfileid: "19759659"
 [GetStreamingEvents の操作](getstreamingevents-operation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

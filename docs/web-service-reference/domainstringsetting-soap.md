@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 268805b5-baf7-4826-b92e-cb9f9f5792ea
-description: DomainStringSetting 要素は、文字列型の値は、ドメインの設定を表します。
-ms.openlocfilehash: 860a2d60f55c22e0404be5f0dd0d1fec41fe48f2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DomainStringSetting 要素は、string 型の値を設定するドメインを表します。
+ms.openlocfilehash: 791c4598d9f1ed471c3ce3b6083498b5da0f2b72
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760159"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463588"
 ---
 # <a name="domainstringsetting-soap"></a>DomainStringSetting (SOAP)
 
-**DomainStringSetting**要素は、文字列型の値は、ドメインの設定を表します。 
+**Domainstringsetting**要素は、string 型の値を設定するドメインを表します。 
   
 ```XML
 <DomainStringSetting>
@@ -28,7 +28,7 @@ ms.locfileid: "19760159"
 ```
 
  **DomainStringSetting**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -38,10 +38,10 @@ ms.locfileid: "19760159"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[名 (SOAP)](name-soap.md) <br/> |設定の名前を表します。  <br/> |
-|[値 (SOAP)](value-soap.md) <br/> |ユーザー設定値を表します。  <br/> |
+|[Name (SOAP)](name-soap.md) <br/> |設定の名前を表します。  <br/> |
+|[Value (SOAP)](value-soap.md) <br/> |ユーザー設定の値を表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -51,14 +51,14 @@ ms.locfileid: "19760159"
 
 なし。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|スキーマ名  <br/> |スキーマの自動検出  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|スキーマ名  <br/> |自動検出スキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

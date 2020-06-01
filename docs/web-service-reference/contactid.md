@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 86f66275-1e39-48ed-bd89-ac3bffc465a7
 description: ContactId 要素は、連絡先を一意に識別します。
-ms.openlocfilehash: 4fd3693ed89194c85e5f1770f1db3903d835f43e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 17e8012283078d5d6e2cd1d2e88eef37b008be42
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759682"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463182"
 ---
 # <a name="contactid"></a>ContactId
 
@@ -24,7 +24,7 @@ ms.locfileid: "19759682"
 ```
 
  **ItemIdType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -33,7 +33,7 @@ ms.locfileid: "19759682"
 |**属性**|**説明**|
 |:-----|:-----|
 |ID  <br/> |**Id**属性のテキスト値は、連絡先アイテムの識別子です。  <br/> |
-|ChangeKey  <br/> |**変更キー**属性のテキスト値は、連絡先アイテムの変更キーです。  <br/> |
+|ChangeKey  <br/> |**Changekey**属性のテキスト値は、連絡先アイテムの変更キーです。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -41,21 +41,21 @@ ms.locfileid: "19759682"
   
 ### <a name="parent-elements"></a>親要素
 
-[AddImContactToGroup](addimcontacttogroup.md) | [RemoveContactFromImList](removecontactfromimlist.md) | [RemoveImContactFromGroup](removeimcontactfromgroup.md)
+[Addimcontacttogroup](addimcontacttogroup.md)  | [RemoveContactFromImList](removecontactfromimlist.md)  | [Removeimcontactfromgroup](removeimcontactfromgroup.md)
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> |false  <br/> |
    
 

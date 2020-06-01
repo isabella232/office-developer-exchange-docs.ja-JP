@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ddeb11db-797d-4939-91d5-3e44be5f0778
-description: HasBlockedImages 要素は、アイテムの画像がブロックされているかどうかを示すブール値を指定します。
-ms.openlocfilehash: fbe9967c898016aeef27e3c86e8a1cf603bd87fc
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: HasBlockedImages 要素は、アイテムに画像がブロックされているかどうかを示すブール値を指定します。
+ms.openlocfilehash: 370ab4b12ae841815faa344b2fd3a6d3ddc16bcb
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831795"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462795"
 ---
 # <a name="hasblockedimages"></a>HasBlockedImages
 
-**HasBlockedImages**要素は、アイテムの画像がブロックされているかどうかを示すブール値を指定します。 
+**HasBlockedImages**要素は、アイテムに画像がブロックされているかどうかを示すブール値を指定します。 
   
 ```XML
 <HasBlockedImages> true | false </HasBlockedImages>
 ```
 
- **ブール型 (Boolean)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,30 +40,30 @@ ms.locfileid: "19831795"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Item](item.md) <br/> |Exchange ストア内の一般的な項目を表します。  <br/> |
+|[Item](item.md) <br/> |Exchange ストア内の汎用アイテムを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-の**場合は true** 、 **HasBlockedImages**要素のテキスト値は、アイテムの画像がブロックされていることを示します。 **False**の値は、項目がすべてブロックされている画像を持っていないことを示します。 
+**HasBlockedImages**要素のテキスト値が**true**の場合は、アイテムに画像がブロックされていることを示します。 値が**false**の場合は、アイテムにブロックされた画像が含まれていないことを示します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |型のスキーマ  <br/> |
-|検証ファイル  <br/> |types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

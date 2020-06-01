@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: ef681f8a-136a-4c0e-ade6-ddcdbf2d85ad
-description: FractionalPageFolderView 要素は、ページ ビューが起動し、フォルダーの最大数は、FindFolder 要求で返されるについて説明します。
-ms.openlocfilehash: 3cb5f8333634a0c484ae3ce6a6256631cff57cc5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: FractionalPageFolderView 要素は、ページビューの開始位置と、FindFolder 要求で返されるフォルダーの最大数を示します。
+ms.openlocfilehash: a8627c6277b49655d3933679128b844118633cda
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760589"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463070"
 ---
 # <a name="fractionalpagefolderview"></a>FractionalPageFolderView
 
-**FractionalPageFolderView**要素は、ページ ビューが起動し、フォルダーの最大数は、 [FindFolder](findfolder.md)要求で返されるについて説明します。 
+**FractionalPageFolderView**要素は、ページビューの開始位置と、 [findfolder](findfolder.md)要求で返されるフォルダーの最大数を示します。 
   
 [FindFolder](findfolder.md)
   
@@ -32,7 +32,7 @@ ms.locfileid: "19760589"
 ```
 
  **FractionalPageViewType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,9 +40,9 @@ ms.locfileid: "19760589"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**MaxEntriesReturned** <br/> |[FindFolder](findfolder.md)の応答で返す結果の最大数を指定します。 この属性は、省略可能です。  <br/> |
-|**分子** <br/> |結果セットの先頭からのオフセットを表す分数の分子を表します。 この属性は、必要があります。 分子は分母となる以下にする必要があります。 この属性は、0 以上である整数値を表す必要があります。 詳細については、このトピックの後半の「解説」を参照してください。  <br/> |
-|**分母** <br/> |結果セット内のフォルダーの合計数の先頭からのオフセットを表す分数の分母を表します。 この属性は、必要があります。 この属性が 1 より大きい整数値を表す必要があります。 詳細については、このトピックの後半の「解説」を参照してください。  <br/> |
+|**MaxEntriesReturned** <br/> |[Findfolder](findfolder.md)応答で返される結果の最大数を指定します。 この属性は省略可能です。  <br/> |
+|**分子** <br/> |結果セットの先頭からの、分数のオフセットの分子を表します。 この属性は必須です。 分子は、分母以下の値である必要があります。 この属性は、ゼロ以上の整数値を表す必要があります。 詳細については、このトピックで後述する「備考」を参照してください。  <br/> |
+|**分母** <br/> |結果セット内のフォルダーの総数の先頭からの、分単位のオフセットの分母を表します。 この属性は必須です。 この属性は、1より大きい整数値を表す必要があります。 詳細については、このトピックで後述する「備考」を参照してください。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -52,27 +52,27 @@ ms.locfileid: "19760589"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FindFolder](findfolder.md) <br/> |メールボックス内のフォルダーを識別するための要求を定義します。  <br/> この要素への XPath 式は、次のようにします。  <br/>  `/FindFolder` <br/> |
+|[FindFolder](findfolder.md) <br/> |メールボックス内のフォルダーを識別する要求を定義します。  <br/> この要素の XPath 式を次に示します。  <br/>  `/FindFolder` <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-検出されたフォルダーのセットの先頭からのページ ビュー オフセットは、分数で表されます。 分数の**分子**と**分母**の属性によって定義されているは、情報のページを開始する位置について説明します。 などの**分子**が 4 と等しいし、**分母**を"5"と等しい、エントリで返される情報の開始ページには 5 分の 4 つの結果セットにする方法が配置されています。 
+検索されたフォルダーのセットの先頭からのページビューオフセットは、分数で示されます。 **分子**および**分母**属性で定義されている分数は、情報のページが開始する場所を示します。 たとえば、**分子**が4で、**分母**が5の場合、返された情報のページは、結果セット内の fifths にあるエントリから始まります。 
   
-割合は、0 に評価されると、結果セットの先頭を示します。 分数を 1 つに評価する場合、結果セットの末尾を示します。
+分数が0に評価された場合は、結果セットの開始を示します。 分数が1に評価される場合は、結果セットの末尾を示します。
   
 > [!NOTE]
-> 分数は、ページの開始位置を表す、結果セットにどのように多くの結果が返されます。 
+> 分数は、結果セット内の結果の数ではなく、ページの開始点を表します。 
   
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -82,5 +82,5 @@ MicrosoftExchange Server 2007 がインストールされているクライア�
   [FindFolder 操作](findfolder-operation.md)
 
 
-[フォルダーを検索します。](http://msdn.microsoft.com/library/9124d868-017a-43f0-b915-5c0082cacec9%28Office.15%29.aspx)
+[フォルダーの検索](https://msdn.microsoft.com/library/9124d868-017a-43f0-b915-5c0082cacec9%28Office.15%29.aspx)
 

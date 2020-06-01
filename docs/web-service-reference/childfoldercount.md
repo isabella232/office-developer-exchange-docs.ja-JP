@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: e0e4eabd-802f-4dd0-9911-89e08c66a15e
-description: ChildFolderCount 要素は、フォルダー内に含まれる直下の子フォルダーの数を表します。 このプロパティは値の取得のみ可能です。
-ms.openlocfilehash: db2ed19b23f046d296fea17533fbeadbf8a584c5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ChildFolderCount 要素は、フォルダー内に含まれる直下の子フォルダーの数を表します。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。
+ms.openlocfilehash: 6ea3b9c000c7836b55c6bf359c95870ed28350e0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759622"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463945"
 ---
 # <a name="childfoldercount"></a>ChildFolderCount
 
-**ChildFolderCount**要素は、フォルダー内に含まれる直下の子フォルダーの数を表します。 このプロパティは値の取得のみ可能です。 
+**Childfoldercount**要素は、フォルダー内に含まれる直下の子フォルダーの数を表します。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 
   
 ```xml
 <ChildFolderCount/>
 ```
 
  **int**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -45,31 +45,31 @@ ms.locfileid: "19759622"
 |**要素**|**説明**|
 |:-----|:-----|
 |[Folder](folder.md) <br/> |メールボックス内のフォルダーを表します。  <br/> |
-|[CalendarFolder](calendarfolder.md) <br/> |メールボックスの予定表フォルダーを表します。  <br/> |
-|[メッセージ](contactsfolder.md) <br/> |メールボックスの連絡先フォルダーを表します。  <br/> |
+|[CalendarFolder](calendarfolder.md) <br/> |メールボックス内の予定表フォルダーを表します。  <br/> |
+|[ContactsFolder](contactsfolder.md) <br/> |メールボックス内の連絡先フォルダーを表します。  <br/> |
 |[SearchFolder](searchfolder.md) <br/> |メールボックス内の検索フォルダーを表します。  <br/> |
-|[TasksFolder](tasksfolder.md) <br/> |メールボックス内のタスク フォルダーを表します。  <br/> |
+|[TasksFolder](tasksfolder.md) <br/> |メールボックス内のタスクフォルダーを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、整数を表します。 このプロパティは値の取得のみ可能です。
+テキスト値は、整数を表します。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

@@ -1,5 +1,5 @@
 ---
-title: 表示名 (VotingOptionDataType)
+title: DisplayName (VotingOptionDataType)
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 08e89583-438c-4c9f-8475-3bc28f555e95
-description: (VotingOptionDataType) の表示名要素では、返信のオプションの表示名を指定します。
-ms.openlocfilehash: 09f593000fd318ae90a31d961b33c8fe3879f7c9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DisplayName (VotingOptionDataType) 要素は、投票オプションの表示名を指定します。
+ms.openlocfilehash: 42291dc032517a13259fde01217b3543d3329f7d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760113"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463602"
 ---
-# <a name="displayname-votingoptiondatatype"></a>表示名 (VotingOptionDataType)
+# <a name="displayname-votingoptiondatatype"></a>DisplayName (VotingOptionDataType)
 
-**(VotingOptionDataType) の表示名**要素では、返信のオプションの表示名を指定します。 
+**DisplayName (VotingOptionDataType)** 要素は、投票オプションの表示名を指定します。 
   
 ```XML
 <DisplayName />
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,25 +42,25 @@ ms.locfileid: "19760113"
   
 ## <a name="text-value"></a>テキスト値
 
-**(VotingOptionDataType) の表示名**要素のテキスト値は、返信のオプションの表示名です。 
+**DisplayName (VotingOptionDataType)** 要素のテキスト値は、投票オプションの表示名です。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [VotingOptionData](votingoptiondata.md)
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

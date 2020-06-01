@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3febe5b5-9c42-4074-b4d9-75b871b2f582
-description: ID 要素は、アプリケーションの識別子を指定します。
-ms.openlocfilehash: 1206cb759634ba519bfd21607b9c5e3dd680b4f8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ID 要素は、アプリの識別子を指定します。
+ms.openlocfilehash: 47d0a7d4a49c0d256640602f43df13c9ebca471e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831851"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462886"
 ---
 # <a name="id-string"></a>ID (文字列)
 
-**ID**要素は、アプリケーションの識別子を指定します。 
+**ID**要素は、アプリの識別子を指定します。 
   
 ```XML
 <ID></ID>
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -38,25 +38,25 @@ ms.locfileid: "19831851"
   
 ### <a name="parent-elements"></a>親要素
 
-[DisableApp](disableapp.md) | [UninstallApp](uninstallapp.md)
+[Disableapp](disableapp.md)  | [アン Installapp](uninstallapp.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**ID**要素のテキスト値は、アプリケーションの識別子です。 
+**ID**要素のテキスト値は、アプリの識別子です。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
 |空にすることができます。  <br/> |false  <br/> |
    
 

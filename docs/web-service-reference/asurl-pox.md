@@ -8,19 +8,19 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 6727f282-ec4c-4e61-8414-e7ba5f9865e7
-description: ASUrl 要素は、メールが有効なユーザーの Exchange の可用性 Web サービスの最適なエンドポイントのインスタンスの URL を指定します。
-ms.openlocfilehash: fd765049aaccd93f2d6269375420f571108825a2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ASUrl 要素は、メールが有効なユーザーの Exchange Availability Web サービスの最適なエンドポイントインスタンスの URL を指定します。
+ms.openlocfilehash: 62fc3c18b2c41bb131ec5bc8546089b73f247f99
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759449"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464421"
 ---
 # <a name="asurl-pox"></a>ASUrl (POX)
 
-**ASUrl**要素は、メールが有効なユーザーの Exchange の可用性 Web サービスの最適なエンドポイントのインスタンスの URL を指定します。 
+**Asurl**要素は、メールが有効なユーザーの Exchange Availability Web サービスの最適なエンドポイントインスタンスの URL を指定します。 
   
-- [(POX) を自動検出](autodiscover-pox.md)
+- [自動検出 (POX)](autodiscover-pox.md)
   
 - [応答 (POX)](response-pox.md)
   
@@ -34,7 +34,7 @@ ms.locfileid: "19759449"
 <ASUrl/>
 ```
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -50,13 +50,13 @@ ms.locfileid: "19759449"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
+|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値には、可用性サービスにアクセスするために使用される URL が含まれています。
+Text 値には、可用性サービスへのアクセスに使用される URL が含まれています。
   
 ## <a name="see-also"></a>関連項目
 
-- [交換の POX の自動検出の XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+- [Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
 

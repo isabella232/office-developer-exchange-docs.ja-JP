@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6bcf6c18-2695-44b1-aabe-dadc52b2633a
-description: ConferenceType 要素では、予定表アイテムで実行される会議の種類について説明します。
-ms.openlocfilehash: d312420606c5e1914fe321ae7c7c512f0833199c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ConferenceType 要素は、予定表アイテムで実行される会議の種類を表します。
+ms.openlocfilehash: 482fc09d709e2b151b255107af59cb98de236aec
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759648"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463931"
 ---
 # <a name="conferencetype"></a>ConferenceType
 
-**ConferenceType**要素では、予定表アイテムで実行される会議の種類について説明します。 
+**ConferenceType**要素は、予定表アイテムで実行される会議の種類を表します。 
   
 ```xml
 <ConferenceType/>
 ```
 
  **int**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,37 +44,37 @@ ms.locfileid: "19759648"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[カレンダー項目](calendaritem.md) <br/> |Exchange 予定表アイテムを表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議出席依頼を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-整数値を表すテキスト値は、この要素を使用する場合に必要です。 以下は、この要素の有効な値です。
+この要素を使用する場合は、整数値を表すテキスト値が必要です。 この要素に使用できる値は次のとおりです。
   
-- 0 NetMeeting を =
+- 0 = NetMeeting
     
-- 1 NetShow を =
+- 1 = NetShow
     
 - 2 = チャット
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**MeetingWorkspaceUrl**プロパティは、開催者の予定表アイテムの読み取り-書き込み可能です。 会議出席依頼と出席者の予定表アイテムに対しては読み取り専用をお勧めします。 
+**MeetingWorkspaceUrl**プロパティは、開催者の予定表アイテムの読み取り/書き込みが可能です。 会議出席依頼と出席者の予定表アイテムに対しては読み取り専用になります。 
   
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。 
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。 
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

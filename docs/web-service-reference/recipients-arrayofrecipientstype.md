@@ -1,5 +1,5 @@
 ---
-title: 受信者 (ArrayOfRecipientsType)
+title: 受信者 (Arrayof受信者 Stype)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: f4b71403-cbae-4176-8b2e-3597048c057b
-description: 宛先の要素は、メッセージのコピーを受け取る受信者のコレクションを表します。
-ms.openlocfilehash: b24a029bfacd6cc40e85a201b8ca90efd7790e9f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Recipients 要素は、メッセージのコピーを受信する受信者のコレクションを表します。
+ms.openlocfilehash: 0e18152a8143b888ad27f48137c06613694f5713
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832991"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463875"
 ---
-# <a name="recipients-arrayofrecipientstype"></a>受信者 (ArrayOfRecipientsType)
+# <a name="recipients-arrayofrecipientstype"></a>受信者 (Arrayof受信者 Stype)
 
-**宛先**の要素は、メッセージのコピーを受け取る受信者のコレクションを表します。 
+**Recipients**要素は、メッセージのコピーを受信する受信者のコレクションを表します。 
   
 ```XML
 <Recipients>
@@ -29,8 +29,8 @@ ms.locfileid: "19832991"
 </Recipients>
 ```
 
- **ArrayOfRecipientsType**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Arrayof受信者 Stype**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,36 +40,36 @@ ms.locfileid: "19832991"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[メールボックス](mailbox.md) <br/> |メールが有効な Active Directory のオブジェクトを識別します。  <br/> |
+|[メールボックス](mailbox.md) <br/> |メールが有効な Active Directory オブジェクトを識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetMailTips](getmailtips.md) <br/> |受信者とメール ヒントの種類を取得するのにが含まれています。  <br/> |
+|[GetMailTips](getmailtips.md) <br/> |取得するメールヒントの受信者と種類が含まれています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

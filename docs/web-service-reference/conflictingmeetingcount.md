@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 11f4d93a-b514-4a27-8d19-f4f0a35a185e
-description: ConflictingMeetingCount 要素は、予定表のアイテムと競合する会議の数を表します。
-ms.openlocfilehash: ace800982c284cf65ff22d92c711197ee5ee1d06
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: '[Conflict Ting面会 Count] 要素は、予定表アイテムと競合する会議の数を表します。'
+ms.openlocfilehash: d53245e1b5d1f0182b28b15bf55ba9742bbb2a07
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759652"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463861"
 ---
 # <a name="conflictingmeetingcount"></a>ConflictingMeetingCount
 
-**ConflictingMeetingCount**要素は、予定表のアイテムと競合する会議の数を表します。 
+[Conflict **ting面会 count** ] 要素は、予定表アイテムと競合する会議の数を表します。 
   
 ```xml
 <ConflictingMeetingCount/>
 ```
 
  **int**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -45,30 +45,30 @@ ms.locfileid: "19759652"
 |**要素**|**説明**|
 |:-----|:-----|
 |[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議を表します。  <br/> |
-|[カレンダー項目](calendaritem.md) <br/> |Exchange 予定表アイテムを表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、整数を表します。 このプロパティは値の取得のみ可能です。
+テキスト値は、整数を表します。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-予定表アイテムが発生した場合、最低では、同じ予定表フォルダー内の別の予定表アイテムと同時に競合するいると見なされます。 Noncalendar フォルダー内の予定表アイテムの場合は、既定の予定表フォルダーの予定表アイテムが比較されます。 会議出席依頼は、既定の予定表フォルダーの予定表アイテムと比較されます。
+予定表アイテムは、少なくとも部分的に、同じ予定表フォルダー内の別の予定表アイテムと同じタイミングで発生した場合に競合していると見なされます。 予定表アイテムが予定表以外のフォルダーにある場合は、既定の予定表フォルダー内の予定表アイテムと比較されます。 会議出席依頼は、既定の予定表フォルダー内の予定表アイテムと比較されます。
   
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

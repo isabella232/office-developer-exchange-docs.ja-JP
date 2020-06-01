@@ -9,18 +9,18 @@ api_type:
 - schema
 ms.assetid: dab23ed1-7fcf-4870-a634-f39d0742923a
 description: DisplayName 要素は、ユーザーの表示名を表します。
-ms.openlocfilehash: 7e4e5b1a97b8e627454a192a3fec2b8a02520a66
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 14522080a519d12a05567e4a65cba8ea00098b7d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760111"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463658"
 ---
 # <a name="displayname-pox"></a>DisplayName (POX)
 
 **DisplayName**要素は、ユーザーの表示名を表します。 
   
-- [(POX) を自動検出](autodiscover-pox.md) 
+- [自動検出 (POX)](autodiscover-pox.md) 
 - [応答 (POX)](response-pox.md) 
 - [ユーザー (POX)](user-pox.md) 
 - [DisplayName (POX)](displayname-pox.md)
@@ -29,7 +29,7 @@ ms.locfileid: "19760111"
 <DisplayName/>
 ```
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -49,9 +49,9 @@ ms.locfileid: "19760111"
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、ユーザーの表示名を表します。
+Text 値は、ユーザーの表示名を表します。
   
 ## <a name="see-also"></a>関連項目
 
-- [交換の POX の自動検出の XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+- [Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
 

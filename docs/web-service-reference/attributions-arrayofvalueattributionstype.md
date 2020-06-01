@@ -1,5 +1,5 @@
 ---
-title: 帰属 (ArrayOfValueAttributionsType)
+title: Attributions (ArrayOfValueAttributionsType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 7f36b6ee-8ecf-48c9-8cb6-dfb2da0ce2a2
-description: 帰属要素は、その関連付けられている値要素の帰属の配列を指定します。
-ms.openlocfilehash: a64510cacb9923682418ca8a9b203c765a129bdd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Attributions 要素は、関連付けられた Value 要素の Attributions の配列を指定します。
+ms.openlocfilehash: 9fd552670c529009838125063869f65e130c1e63
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759471"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463994"
 ---
-# <a name="attributions-arrayofvalueattributionstype"></a>帰属 (ArrayOfValueAttributionsType)
+# <a name="attributions-arrayofvalueattributionstype"></a>Attributions (ArrayOfValueAttributionsType)
 
-**帰属**要素は、その関連付けられている**値**要素の帰属の配列を指定します。 
+**Attributions**要素は、関連付けられた**Value**要素の Attributions の配列を指定します。 
   
 ```XML
 <Attributions>
@@ -26,7 +26,7 @@ ms.locfileid: "19759471"
 ```
 
  **ArrayOfValueAttributionsType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -36,38 +36,38 @@ ms.locfileid: "19759471"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[属性 (文字列)](attribution-string.md) <br/> |属性を識別するために使う文字列を指定します。  <br/> |
+|[属性 (string)](attribution-string.md) <br/> |属性を識別するために使用する文字列を指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[BodyContentAttributedValue](bodycontentattributedvalue.md) <br/> |アイテムの本文の内容を指定します。  <br/> |
-|[EmailAddressAttributedValue](emailaddressattributedvalue.md) <br/> |電子メール アドレスと関連付けられている、帰属の配列のインスタンスを指定します。  <br/> |
+|[BodyContentAttributedValue](bodycontentattributedvalue.md) <br/> |アイテムの本文のコンテンツを指定します。  <br/> |
+|[EmailAddressAttributedValue](emailaddressattributedvalue.md) <br/> |電子メールアドレスの配列のインスタンスと、それに関連付けられている attributions を指定します。  <br/> |
 |[ExtendedPropertyAttributedValue](extendedpropertyattributedvalue.md) <br/> |ペルソナの拡張プロパティを指定します。  <br/> |
-|[PhoneNumberAttributedValue](phonenumberattributedvalue.md) <br/> |電話番号と、関連付けられている帰属の配列のインスタンスを指定します。  <br/> |
-|[PostalAddressAttributedValue](postaladdressattributedvalue.md) <br/> |郵送先住所と、関連付けられている帰属の配列のインスタンスを指定します。  <br/> |
-|[StringArrayAttributedValue](stringarrayattributedvalue.md) <br/> |ペルソナの要素のデータを文字列の配列のインスタンスを指定します。  <br/> |
-|[StringAttributedValue](stringattributedvalue.md) <br/> |ペルソナの要素に関連付けられている属性の配列のインスタンスを指定します。  <br/> |
+|[PhoneNumberAttributedValue](phonenumberattributedvalue.md) <br/> |電話番号の配列のインスタンスと、それに関連付けられている attributions を指定します。  <br/> |
+|[PostalAddressAttributedValue](postaladdressattributedvalue.md) <br/> |郵送先住所の配列のインスタンスと、それに関連付けられている attributions を指定します。  <br/> |
+|[StringArrayAttributedValue](stringarrayattributedvalue.md) <br/> |Persona 要素の文字列データの配列のインスタンスを指定します。  <br/> |
+|[StringAttributedValue](stringattributedvalue.md) <br/> |Persona 要素に関連付けられている属性の配列のインスタンスを指定します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |型のスキーマ  <br/> |
-|検証ファイル  <br/> |types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

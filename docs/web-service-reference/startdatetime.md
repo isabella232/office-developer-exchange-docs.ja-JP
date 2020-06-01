@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6fd41b7b-6c83-43b6-8b16-0bdb3d173d73
-description: させる要素は、ルールや検索の開始日時を指定します。
-ms.openlocfilehash: 4bc32ed5626d692fc73dfa8bd7c46923aba72f9e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: StartDateTime 要素は、ルールまたは検索の開始日時を指定します。
+ms.openlocfilehash: 28b78fad87abb1148cfe49fee4f9bb98f822eae5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833552"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462844"
 ---
 # <a name="startdatetime"></a>StartDateTime
 
-**させる**要素は、ルールや検索の開始日時を指定します。 
+**StartDateTime**要素は、ルールまたは検索の開始日時を指定します。 
   
 ```XML
 <StartDate/>
@@ -29,7 +29,7 @@ ms.locfileid: "19833552"
 
 **dateTime**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -46,26 +46,26 @@ ms.locfileid: "19833552"
 |**要素**|**説明**|
 |:-----|:-----|
 |[FindMessageTrackingReport](findmessagetrackingreport.md) <br/> |検索するメッセージの種類の条件を指定します。  <br/> |
-|[WithinDateRange](withindaterange.md) <br/> |受信したメッセージが適用の条件または例外のために到着した日付の範囲を指定します。  <br/> |
+|[WithinDateRange](withindaterange.md) <br/> |条件または例外を適用するために、受信メッセージが受信される必要がある日付範囲を指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
- 日付と時刻を表すテキスト値は、この要素を使用する場合に必要です。 
+ この要素を使用する場合は、日付/時刻を表すテキスト値が必要です。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

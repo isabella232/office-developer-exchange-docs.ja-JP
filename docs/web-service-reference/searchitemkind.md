@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 89513c26-b751-4619-a300-0ed8f55b0102
-description: SearchItemKind 要素は、FindMailboxStatisticsByKeyword 操作のために検索される項目の種類を示します。
-ms.openlocfilehash: 1c099fc49ec882c1672b265ff0e3aa2c71c5f95b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: SearchItemKind 要素は、FindMailboxStatisticsByKeyword 操作で検索されるアイテムの種類を示します。
+ms.openlocfilehash: e0625ac169c3083702494c094da15d38d220fe67
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833298"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464001"
 ---
 # <a name="searchitemkind"></a>SearchItemKind
 
-**SearchItemKind**要素は、 **FindMailboxStatisticsByKeyword**操作のために検索される項目の種類を示します。 
+**Searchitemkind**要素は、 **FindMailboxStatisticsByKeyword**操作で検索されるアイテムの種類を示します。 
   
 ```XML
 <SearchItemKind>Email | Meetings | Tasks | Notes | Docs | Journals | Contacts | Im | Voicemail | Faxes | Posts | Rssfeeds</SearchItemKind>
 ```
 
  **SearchItemKindType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,45 +42,45 @@ ms.locfileid: "19833298"
   
 ## <a name="text-value"></a>テキスト値
 
-**SearchItemKind**要素のテキスト値は、キーワードの検索対象となる項目の種類です。 次の一覧には、 **SearchItemKind**要素で使用できるテキストの値が含まれています。 
+**Searchitemkind**要素のテキスト値は、キーワードを検索するアイテムの種類です。 次のリストには、 **Searchitemkind**要素で使用できるテキスト値が含まれています。 
   
-- **電子メール**には、キーワードは、電子メール メッセージを検索することを示します。 
+- **Email** -キーワードを検索する電子メールメッセージを示します。 
     
-- **会議**では、キーワードの会議を検索することを示します。 
+- **会議**-キーワードを検索する会議を指定します。 
     
-- **タスク**では、キーワードは、タスクを検索することを示します。 
+- **タスク**-キーワードを検索するタスクを指定します。 
     
-- **ノート**には、キーワードの注釈を検索することを示します。 
+- **メモ**-キーワードに対して notes が検索されることを示します。 
     
-- **ドキュメント**では、キーワードのドキュメントを検索することを示します。 
+- **Docs** -ドキュメントがキーワードで検索されることを示します。 
     
-- **仕訳帳**には、キーワードは、仕訳帳を検索することを示します。 
+- **ジャーナル**-キーワードに対してジャーナルが検索されることを示します。 
     
-- **連絡先**には、キーワードの連絡先を検索することを示します。 
+- **連絡先**-キーワードを検索することを示します。 
     
-- **Im**のでは、インスタント メッセージのキーワードは検索されることを示します。 
+- **Im** -キーワードを検索するインスタントメッセージを示します。 
     
-- **ボイスメール**のでは、ボイス ・ メールでキーワードが検索されることを示します。 
+- **ボイスメール**-キーワードに対してボイスメールが検索されたことを示します。 
     
-- **Fax**には、キーワードは、fax メッセージを検索することを示します。 
+- **Fax** -キーワードが検索されたことを示します。 
     
-- **投稿**を - には、キーワードの投稿を検索することを示します。 
+- **投稿**-キーワードに対して投稿が検索されることを示します。 
     
-- **Rssfeeds**では、キーワードの RSS フィードを検索することを示します。 
+- **Rssfeeds** -RSS フィードがキーワードに対して検索されることを示します。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

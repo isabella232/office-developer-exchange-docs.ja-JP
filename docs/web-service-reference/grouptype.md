@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5c31552f-22b8-4bf0-8cac-046fd92ac0d4
-description: GroupType 要素では、インスタント メッセージング (IM) のグループのグループ クラスを指定します。
-ms.openlocfilehash: 330a1567ce85877ba73c6205898ea66b59585e16
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GroupType 要素は、インスタントメッセージング (IM) グループのグループクラスを指定します。
+ms.openlocfilehash: b8790a23507c51dfffceaddf3641ce820223c366
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831800"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462802"
 ---
 # <a name="grouptype"></a>GroupType
 
-**GroupType**要素では、インスタント メッセージング (IM) のグループのグループ クラスを指定します。 
+**GroupType**要素は、インスタントメッセージング (IM) グループのグループクラスを指定します。 
   
 ```XML
 <GroupType></GroupType>
 ```
 
  **NonEmptyStringType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,30 +40,30 @@ ms.locfileid: "19831800"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ImGroup](imgroup.md) <br/> |インスタント メッセージングのグループを表します。  <br/> |
+|[ImGroup](imgroup.md) <br/> |インスタントメッセージンググループを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**GroupType**要素のテキスト値は、グループの種類を指定する文字列値です。 
+**GroupType**要素のテキスト値は、グループの種類を指定する文字列型 (string) の値です。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |型のスキーマ  <br/> |
-|検証ファイル  <br/> |types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

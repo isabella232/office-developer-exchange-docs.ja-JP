@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 4300f9d6-8bf9-48c2-9f07-d80197864e17
-description: ConnectionStatus 要素は、ストリーミングのサブスクリプションの状態の説明を提供します。
-ms.openlocfilehash: 567308d79eaccba24230deddf5d78a724b8746af
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ConnectionStatus 要素は、ストリーミングサブスクリプションの状態に関するテキストの説明を提供します。
+ms.openlocfilehash: 928537201041950011ae06444e3c412228d252ea
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759660"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462718"
 ---
 # <a name="connectionstatus"></a>ConnectionStatus
 
-**ConnectionStatus**要素は、ストリーミングのサブスクリプションの状態の説明を提供します。 
+**Connectionstatus**要素は、ストリーミングサブスクリプションの状態に関するテキストの説明を提供します。 
   
 ```xml
 <ConnectionStatus>OK or Closed</ConnectionStatus>
 ```
 
  **ConnectionStatusType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,28 +44,28 @@ ms.locfileid: "19759660"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetStreamingEventsResponseMessage](getstreamingeventsresponsemessage.md) <br/> |状態および 1 つの結果が含まれています[GetStreamingEvents の操作](getstreamingevents-operation.md)を要求します。  <br/> |
+|[GetStreamingEventsResponseMessage](getstreamingeventsresponsemessage.md) <br/> |1つの[Getstreamingevents 操作](getstreamingevents-operation.md)要求の状態と結果を格納します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は必須です。 この要素の使用可能なテキスト値は、次のように。
+テキスト値は必須です。 この要素に使用できるテキスト値は次のとおりです。
   
 - OK
     
 - 更新不可
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web Services.This の要素がホストをで Exchange Server 2010 Service Pack 1 (SP1) を導入する IIS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -74,5 +74,5 @@ ms.locfileid: "19759660"
 [GetStreamingEvents の操作](getstreamingevents-operation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

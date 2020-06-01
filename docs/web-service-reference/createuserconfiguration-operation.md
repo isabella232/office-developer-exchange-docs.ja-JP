@@ -11,31 +11,31 @@ api_name:
 api_type:
 - schema
 ms.assetid: eb5b8ab6-9743-481c-aac9-f9aa889bd353
-description: CreateUserConfiguration 操作では、フォルダーにユーザー設定のオブジェクトを作成します。
-ms.openlocfilehash: 5f0eb7d18736008af39199cbc52cc3a6e6abda09
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: CreateUserConfiguration 操作は、ユーザー構成オブジェクトをフォルダーに作成します。
+ms.openlocfilehash: 0c9233146d21c7014be15896426b968106485200
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759855"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463784"
 ---
 # <a name="createuserconfiguration-operation"></a>CreateUserConfiguration 操作
 
-**CreateUserConfiguration**操作では、フォルダーにユーザー設定のオブジェクトを作成します。 
+**CreateUserConfiguration**操作は、ユーザー構成オブジェクトをフォルダーに作成します。 
   
 ## <a name="createuserconfiguration-request-example"></a>CreateUserConfiguration 要求の例
 
 ### <a name="description"></a>説明
 
-**CreateUserConfiguration**要求の次の例では、[下書き] フォルダーでユーザーの構成オブジェクトを作成する要求を作成する方法を示します。 
+次の**CreateUserConfiguration**要求の例は、下書きフォルダーでユーザー構成オブジェクトを作成するための要求を形成する方法を示しています。 
   
 ### <a name="code"></a>コード
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:xs="http://www.w3.org/2001/XMLSchema">
   
@@ -67,11 +67,11 @@ ms.locfileid: "19759855"
 </soap:Envelope>
 ```
 
-## <a name="createuserconfiguration-response-example"></a>CreateUserConfiguration の応答の例
+## <a name="createuserconfiguration-response-example"></a>CreateUserConfiguration response の例
 
 ### <a name="description"></a>説明
 
-**CreateUserConfiguration**要求に正常な応答の例を次に示します。 
+次の例は、 **CreateUserConfiguration**要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -84,15 +84,15 @@ ms.locfileid: "19759855"
                          MajorBuildNumber="639" 
                          MinorBuildNumber="20" 
                          Version="Exchange2010" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:CreateUserConfigurationResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:CreateUserConfigurationResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:CreateUserConfigurationResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -107,7 +107,7 @@ ms.locfileid: "19759855"
 
 
 
-[Exchange での EWS の操作](ews-operations-in-exchange.md)
+[Exchange での EWS 操作](ews-operations-in-exchange.md)
   
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

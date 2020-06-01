@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: c6a9bafd-a15b-4b04-8070-6e0a693f9683
-description: 期間要素では、予定表アイテムの期間を表します。
-ms.openlocfilehash: e0992688f8fbaf8a9dea0e21e3dbea43ef2d161b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Duration 要素は、予定表アイテムの期間を表します。
+ms.openlocfilehash: 2434ae081fcdd0fa06f0ffbc016537691132a4cf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760175"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463553"
 ---
 # <a name="duration-items"></a>期間 (アイテム)
 
-**期間**要素では、予定表アイテムの期間を表します。 
+**Duration**要素は、予定表アイテムの期間を表します。 
   
 ```xml
 <Duration/>
 ```
 
- **文字列型 (String)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **String**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,27 +44,27 @@ ms.locfileid: "19760175"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[カレンダー項目](calendaritem.md) <br/> |Exchange 予定表アイテムを表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議出席依頼を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、予定表アイテムの期間を表します。 このプロパティは値の取得のみ可能です。
+テキスト値は、予定表アイテムの期間を表します。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

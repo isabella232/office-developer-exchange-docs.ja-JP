@@ -1,5 +1,5 @@
 ---
-title: Condition
+title: 条件
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 0790a3f2-cb31-4036-a757-7821aa0722cb
-description: 条件要素では、実行されるルールのアクション部の満たされている必要がある条件を識別します。
-ms.openlocfilehash: d49f2984799b15c0499af59abecbb34abe15f7c3
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Condition 要素は、実行するルールのアクション部分に対して満たす必要がある条件を指定します。
+ms.openlocfilehash: 2aea11197f072a4dbe21292bb47075d6f273d31b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353561"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463224"
 ---
-# <a name="condition"></a>Condition
+# <a name="condition"></a>条件
 
-**条件**要素では、実行されるルールのアクション部の満たされている必要がある条件を識別します。 
+**Condition**要素は、実行するルールのアクション部分に対して満たす必要がある条件を指定します。 
   
 ```xml
 <Condition>
@@ -55,7 +55,7 @@ ms.locfileid: "21353561"
 
 **ProtectionRuleConditionType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -65,19 +65,19 @@ ms.locfileid: "21353561"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[AllInternal](allinternal.md) <br/> |電子メール メッセージのすべての受信者が送信者の組織の内部場合は、 **true**に評価されます。  <br/> |
-|[And (ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |すべての子要素と一致するが**true**と評価されるかを指定します。 保護ルール子の 1 つ以上の条件が存在する必要がありますを指定します。  <br/> |
-|[RecipientIs](recipientis.md) <br/> |電子メール メッセージの受信者と一致している[値 (ProtectionRuleValueType)](value-protectionrulevaluetype.md)の子要素で指定した受信者のいずれかを指定します。  <br/> |
-|[SenderDepartments](senderdepartments.md) <br/> |送信者の部署と一致している[値 (ProtectionRuleValueType)](value-protectionrulevaluetype.md)の子要素で指定された部門のいずれかを指定します。  <br/> |
+|[AllInternal](allinternal.md) <br/> |電子メールメッセージのすべての受信者が送信者の組織の内部にある場合は、 **true**に評価されます。  <br/> |
+|[および (ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |**True**に評価するためにすべての子要素を一致させる必要があることを指定します。 保護ルールの子条件が複数存在する必要があることを指定します。  <br/> |
+|[RecipientIs](recipientis.md) <br/> |電子メールメッセージのすべての受信者が、子の[値 (ProtectionRuleValueType)](value-protectionrulevaluetype.md)要素で指定された受信者のいずれかと一致するように指定します。  <br/> |
+|[SenderDepartments](senderdepartments.md) <br/> |送信者の部署が、子の[値 (ProtectionRuleValueType)](value-protectionrulevaluetype.md)要素で指定された部署のいずれかと一致することを指定します。  <br/> |
 |[True](true.md) <br/> |常に一致する条件を指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Rule](rule.md) <br/> |1 つの保護ルールが含まれています。  <br/> |
+|[Rule](rule.md) <br/> |1つの保護ルールを含みます。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -87,16 +87,16 @@ ms.locfileid: "21353561"
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

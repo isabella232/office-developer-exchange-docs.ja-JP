@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c56f997d-28f3-4590-97b0-cb71f016dbe4
-description: DaysOfWeek 要素では、項目の定期的なパターンで使用されている週の日について説明します。
-ms.openlocfilehash: 0b730ff5a7bc9aa6b324fc080022d056c5342296
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DaysOfWeek 要素は、アイテムの定期的なパターンで使用される曜日を表します。
+ms.openlocfilehash: 3036cbe3f93ff87b9a4d5dc7bf164e3e952b06fd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759945"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463721"
 ---
 # <a name="daysofweek-daysofweektype"></a>DaysOfWeek (DaysOfWeekType)
 
-**DaysOfWeek**要素では、項目の定期的なパターンで使用されている週の日について説明します。 
+**DaysOfWeek**要素は、アイテムの定期的なパターンで使用される曜日を表します。 
   
 ```XML
 <DaysOfWeek/>
@@ -29,7 +29,7 @@ ms.locfileid: "19759945"
 
 **DaysOfWeekType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -45,7 +45,7 @@ ms.locfileid: "19759945"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[WeeklyRecurrence](weeklyrecurrence.md) <br/> |毎週の定期的なパターンをについて説明します。  <br/> |
+|[WeeklyRecurrence](weeklyrecurrence.md) <br/> |週単位の定期的なパターンを記述します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -58,26 +58,26 @@ ms.locfileid: "19759945"
 - 木曜日    
 - 金曜日    
 - 土曜日    
-- (この値は毎週の定期的なパターンに対して有効ではありません) の日    
-- (この値は毎週の定期的なパターンに対して有効ではありません) の平日    
-- (この値は毎週の定期的なパターンに対して有効ではありません) WeekendDay
+- Day (この値は、週単位の定期的なパターンに対しては無効です)    
+- Weekday (この値は、週単位の定期的なパターンに対しては無効です)    
+- WeekendDay (この値は、週単位の定期的なパターンに対しては無効です)
     
-毎週の定期的なパターンでは、複数の値を含めることができます。 値は、空白文字で区切られます。 たとえば、火曜日と木曜日の毎週、テキスト値に「火曜日木曜日」です。
+週単位の定期的なパターンでは、複数の値を含めることができます。 値は空白文字で区切られます。 たとえば、火曜日と木曜日の週単位の定期的な予定の場合、テキスト値は "火曜日木曜日" になります。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

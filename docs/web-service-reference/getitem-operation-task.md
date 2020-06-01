@@ -11,27 +11,27 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8265dd06-1752-4470-8074-5f0e3e970f52
-description: GetItem 操作を使用すると、Exchange ストアからタスクを取得します。
-ms.openlocfilehash: 412710f32ed8702e1a28a596833c3a7e47e3ed76
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetItem 操作は、Exchange ストアからタスクを取得するために使用されます。
+ms.openlocfilehash: 17a23d4c2a35761e831610f3514c980a5a67e12b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760782"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463336"
 ---
 # <a name="getitem-operation-task"></a>GetItem 操作 (タスク)
 
-GetItem 操作を使用すると、Exchange ストアからタスクを取得します。
+GetItem 操作は、Exchange ストアからタスクを取得するために使用されます。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-タスクの GetItem 要求の形式は、他の項目の種類の GetItem と同じです。 唯一の違いは、応答の図形内で追加のプロパティを要求できます。 このようなプロパティを追加する必要がありますか、タスクに関連するプロパティまたはプロパティの拡張
+タスクの GetItem 要求の形式は、その他のアイテムの種類に対する GetItem と同じです。 唯一の違いは、応答図形内で追加のプロパティを要求できる点です。 その他のプロパティは、タスク関連のプロパティまたは拡張プロパティである必要があります。
   
-## <a name="task-getitem-request-example"></a>GetItem 要求のタスクの例
+## <a name="task-getitem-request-example"></a>タスク GetItem 要求の例
 
 ### <a name="description"></a>説明
 
-GetItem 要求の次の例では、作業項目を取得する方法を示します。
+GetItem 要求の次の例は、タスクアイテムを取得する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -40,10 +40,10 @@ GetItem 要求の次の例では、作業項目を取得する方法を示しま
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <GetItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <GetItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <ItemShape>
         <t:BaseShape>AllProperties</t:BaseShape>
       </ItemShape>
@@ -58,11 +58,11 @@ xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
 ### <a name="comments"></a>コメント
 
 > [!NOTE]
-> 項目の識別子と変更キーは、読みやすさを保持するために短縮されています。 
+> 読みやすくするために、アイテム識別子と変更キーが短縮されています。 
   
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-次の要素は、要求で使用されます。
+要求では、次の要素が使用されます。
   
 - [GetItem](getitem.md)
     
@@ -70,15 +70,15 @@ xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
     
 - [BaseShape](baseshape.md)
     
-- [Itemid](itemids.md)
+- [ItemIds](itemids.md)
     
 - [ItemId](itemid.md)
     
-## <a name="task-getitem-response-example"></a>タスク GetItem 応答の例
+## <a name="task-getitem-response-example"></a>タスクの GetItem 応答の例
 
 ### <a name="description"></a>説明
 
-GetItem 要求に正常な応答の例を次に示します。
+次の例は、GetItem 要求に対する正常な応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -89,12 +89,12 @@ GetItem 要求に正常な応答の例を次に示します。
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="662" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"/>
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"/>
   </soap:Header>
   <soap:Body>
-    <GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                     xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                     xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                     xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                     xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -136,11 +136,11 @@ GetItem 要求に正常な応答の例を次に示します。
 ### <a name="comments"></a>コメント
 
 > [!NOTE]
-> アイテムおよびフォルダーの識別子と変更キーは、読みやすさを保持するために短縮されています。 
+> 読みやすくするために、アイテムとフォルダーの識別子および変更キーが短縮されています。 
   
-### <a name="successful-response-elements"></a>正常な応答の要素
+### <a name="successful-response-elements"></a>成功した応答要素
 
-次の要素は、応答で使用されます。
+応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -154,7 +154,7 @@ GetItem 要求に正常な応答の例を次に示します。
     
 - [Items](items.md)
     
-- [タスク](task.md)
+- [Task](task.md)
     
 - [ItemId](itemid.md)
     
@@ -162,15 +162,15 @@ GetItem 要求に正常な応答の例を次に示します。
     
 - [ItemClass](itemclass.md)
     
-- [Subject](subject.md)
+- [[件名]](subject.md)
     
 - [Sensitivity](sensitivity.md)
     
-- [Body/本文](body.md)
+- [Body](body.md)
     
 - [DateTimeReceived](datetimereceived.md)
     
-- [Size](size.md)
+- [[サイズ]](size.md)
     
 - [Importance](importance.md)
     
@@ -188,19 +188,19 @@ GetItem 要求に正常な応答の例を次に示します。
     
 - [DateTimeCreated](datetimecreated.md)
     
-- [添付ファイル付き](hasattachments.md)
+- [HasAttachments](hasattachments.md)
     
-- [カルチャ](culture.md)
+- [Culture](culture.md)
     
 - [ChangeCount](changecount.md)
     
-- [完了](iscomplete.md)
+- [IsComplete](iscomplete.md)
     
 - [IsRecurring](isrecurring.md)
     
-- [達成率](percentcomplete.md)
+- [PercentComplete](percentcomplete.md)
     
-- [Status](status.md)
+- [状態](status.md)
     
 - [StatusDescription](statusdescription.md)
     
@@ -212,9 +212,9 @@ GetItem 要求に正常な応答の例を次に示します。
   [GetItem 操作](getitem-operation.md)
 
 
-[タスクを作成します。](http://msdn.microsoft.com/library/0ef97334-e8a0-4f67-a23a-dd9e2bbad49f%28Office.15%29.aspx)
+[タスクの作成](https://msdn.microsoft.com/library/0ef97334-e8a0-4f67-a23a-dd9e2bbad49f%28Office.15%29.aspx)
   
-[タスクの更新](http://msdn.microsoft.com/library/0a1bf360-d40c-4a99-929b-4c73a14394d5%28Office.15%29.aspx)
+[タスクの更新](https://msdn.microsoft.com/library/0a1bf360-d40c-4a99-929b-4c73a14394d5%28Office.15%29.aspx)
   
-[タスクを削除します。](http://msdn.microsoft.com/library/a3d7e25f-8a35-4901-b1d9-d31f418ab340%28Office.15%29.aspx)
+[タスクの削除](https://msdn.microsoft.com/library/a3d7e25f-8a35-4901-b1d9-d31f418ab340%28Office.15%29.aspx)
 

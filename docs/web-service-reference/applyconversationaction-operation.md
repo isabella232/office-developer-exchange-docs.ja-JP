@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 73d7943d-d361-4f8b-9948-d85f886efa1a
-description: ApplyConversationAction 操作では、設定を 1 回だけか、会話内のすべてのアイテムで次の操作をします。 ApplyConversationAction 操作を使用すると、分類、移動、コピー、削除、および会話のすべてのアイテムの読み取り状態を設定できます。 会話で新着メッセージをアクションを設定することもできます。
-ms.openlocfilehash: 2a485b84ee87aec2ed807e3f4f0901b83432fa0a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ApplyConversationAction 操作は、スレッド内のすべてのアイテムに対して1回限りまたはフォローアップのアクションを設定します。 ApplyConversationAction 操作を使用すると、会話内のすべてのアイテムに対して、分類、移動、コピー、削除、および読み取り状態の設定を行うことができます。 会話の新しいメッセージに対してアクションを設定することもできます。
+ms.openlocfilehash: cdab239a5b0b1406d2ce31f4604e4737d037cd7e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759366"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463504"
 ---
 # <a name="applyconversationaction-operation"></a>ApplyConversationAction 操作
 
-**ApplyConversationAction**操作では、設定を 1 回だけか、会話内のすべてのアイテムで次の操作をします。 **ApplyConversationAction**操作を使用すると、分類、移動、コピー、削除、および会話のすべてのアイテムの読み取り状態を設定できます。 会話で新着メッセージをアクションを設定することもできます。 
+**ApplyConversationAction**操作は、スレッド内のすべてのアイテムに対して1回限りまたはフォローアップのアクションを設定します。 **ApplyConversationAction**操作を使用すると、会話内のすべてのアイテムに対して、分類、移動、コピー、削除、および読み取り状態の設定を行うことができます。 会話の新しいメッセージに対してアクションを設定することもできます。 
   
 ## <a name="applyconversationaction-request-example"></a>ApplyConversationAction 要求の例
 
 ### <a name="description"></a>説明
 
-**ApplyConversationAction**要求の次の例では、指定したスレッドの別のフォルダーにアイテムを移動する方法を示します。 会話に追加される項目は、指定したフォルダーにも移動されます。 
+**ApplyConversationAction**要求の次の例は、指定されたスレッド内のアイテムを別のフォルダーに移動する方法を示しています。 会話に追加されたアイテムも、指定したフォルダーに移動されます。 
   
 ### <a name="code"></a>コード
 
@@ -36,8 +36,8 @@ ms.locfileid: "19759366"
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010_SP1" />
   </soap:Header>
@@ -57,15 +57,15 @@ ms.locfileid: "19759366"
 </soap:Envelope>
 ```
 
-### <a name="remarks"></a>備考
+### <a name="remarks"></a>注釈
 
-会話とフォルダーの識別子は、読みやすさを保持するために短縮されています。
+読みやすくするために、会話とフォルダーの識別子が短縮されています。
   
-## <a name="applyconversationaction-response-example"></a>ApplyConversationAction の応答の例
+## <a name="applyconversationaction-response-example"></a>ApplyConversationAction response の例
 
 ### <a name="description"></a>説明
 
-**ApplyConversationAction**要求に正常な応答の例を次に示します。 
+次の例は、 **ApplyConversationAction**要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -78,15 +78,15 @@ ms.locfileid: "19759366"
                          MajorBuildNumber="91" 
                          MinorBuildNumber="0" 
                          Version="Exchange2010_SP1" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:ApplyConversationActionResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:ApplyConversationActionResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:ApplyConversationActionResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -100,7 +100,7 @@ ms.locfileid: "19759366"
 ## <a name="see-also"></a>関連項目
 
 - [ApplyConversationAction 操作](applyconversationaction-operation.md)
-- [Exchange での EWS の操作](ews-operations-in-exchange.md)
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
-- [EWS での会話](http://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
+- [Exchange での EWS 操作](ews-operations-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS での会話](https://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
 

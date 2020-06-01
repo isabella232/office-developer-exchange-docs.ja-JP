@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: a00f7f56-d7f1-429d-ae02-97043718c864
-description: CalendarEventArray 要素には、要求されたユーザーの可用性を表す一意の予定表アイテムの出現回数のセットが含まれています。
-ms.openlocfilehash: 2e56b7b2b94e12401ba708dfca94101064d625e1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: CalendarEventArray 要素には、要求されたユーザーの空き時間情報を表す、一連の一意な予定表アイテムが含まれています。
+ms.openlocfilehash: 6badba2477a9d48c6d109740de454e2815d3c211
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759580"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463371"
 ---
 # <a name="calendareventarray"></a>CalendarEventArray
 
-**CalendarEventArray**要素には、要求されたユーザーの可用性を表す一意の予定表アイテムの出現回数のセットが含まれています。 
+**CalendarEventArray**要素には、要求されたユーザーの空き時間情報を表す、一連の一意な予定表アイテムが含まれています。 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -40,7 +40,7 @@ ms.locfileid: "19759580"
 ```
 
  **ArrayOfCalendarEvent**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -50,30 +50,30 @@ ms.locfileid: "19759580"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[CalendarEvent](calendarevent.md) <br/> |独自の予定表アイテムの出現を表します。  <br/> |
+|[CalendarEvent](calendarevent.md) <br/> |一意の予定表アイテムの出現を表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FreeBusyView](freebusyview.md) <br/> |特定のユーザーの利用可能時間情報が含まれています。  <br/> この要素への XPath 2.0 の式は、次のようにします。  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView` <br/> |
+|[FreeBusyView](freebusyview.md) <br/> |特定のユーザーの空き時間情報が保存されています。  <br/> この要素の XPath 2.0 式を次に示します。  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView` <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素によって提供される詳細のレベルは、要求側に付与するアクセス許可に依存します。 [FreeBusyViewType](freebusyviewtype.md)要素は、**空き時間情報**、 **FreeBusyMerged**、**詳細**、または**DetailedMerged**に設定されている場合、この要素は含まれています。 この要素では、予定表アイテムが要求された時間ウィンドウ内に存在しない場合、すべての子要素は含まれません。 
+この要素によって提供される詳細レベルは、リクエスターに付与されるアクセス許可によって異なります。 この要素は、 [FreeBusyViewType](freebusyviewtype.md)要素が**FreeBusy**、 **FreeBusyMerged**、 **Detailed**、または**DetailedMerged**に設定されている場合に含まれます。 要求された時間枠に予定表アイテムが存在しない場合、この要素には子要素は含まれません。 
   
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -84,5 +84,5 @@ MicrosoftExchange Server 2007 がインストールされているクライア�
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[ユーザーの状態を取得します。](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[ユーザーの空き時間情報の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

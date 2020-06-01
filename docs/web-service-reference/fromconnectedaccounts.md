@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d4d7ddd7-078d-4f1a-a26b-22dce0c49f3a
-description: FromConnectedAccounts 要素は、受信メッセージの適用の条件または例外のために集められたを持つ必要がある電子メール アカウントの名前を表します。
-ms.openlocfilehash: 426e81bbbe96fb5fb4b36506438dc4af4f560eef
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: FromConnectedAccounts 要素は、条件または例外を適用するために、受信メッセージを集計しておく必要がある電子メールアカウント名を表します。
+ms.openlocfilehash: 159ae064827c2f9c2b470580ad5457264e8dae93
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760604"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464050"
 ---
 # <a name="fromconnectedaccounts"></a>FromConnectedAccounts
 
-**FromConnectedAccounts**要素は、受信メッセージの適用の条件または例外のために集められたを持つ必要がある電子メール アカウントの名前を表します。 
+**Fromconnectedaccounts**要素は、条件または例外を適用するために、受信メッセージを集計しておく必要がある電子メールアカウント名を表します。 
   
 ```XML
 <FromConnectedAccounts>
@@ -30,7 +30,7 @@ ms.locfileid: "19760604"
 ```
 
  **ArrayOfStringsType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,37 +40,37 @@ ms.locfileid: "19760604"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[String](string.md) <br/> |受信メッセージの適用の条件または例外のために集められたを持つ必要がある電子メール アカウント名を表します。  <br/> |
+|[String](string.md) <br/> |条件または例外を適用するために、受信メッセージを集計する必要がある電子メールアカウント名を表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[条件](conditions.md) <br/> |条件を表しますが、満たされるとときに、ルールのルールの処理をトリガーします。  <br/> |
-|[Exceptions](exceptions.md) <br/> |受信トレイ ルールの使用可能なルールの例外条件をすべてを表す例外を表します。  <br/> |
+|[条件](conditions.md) <br/> |ルールのルールの処理を開始するときに実行される条件を表します。  <br/> |
+|[例外](exceptions.md) <br/> |受信トレイルールに対して使用可能なルールの例外条件をすべて表す例外を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

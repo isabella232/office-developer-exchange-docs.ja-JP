@@ -1,5 +1,5 @@
 ---
-title: AggregationRestriction
+title: 集約 Ationrestriction
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d05044f9-d2ff-4aca-956c-20c9cb2f7709
-description: AggregationRestriction 要素は、FindPeople の要求に起因するペルソナ プロパティのセットに適用され、指定した制限に従って結果をフィルター処理する値を指定します。
-ms.openlocfilehash: 8b4d5952dedb4de0201d2ecf2219c69f65f7dc09
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 集約 Ationrestriction 要素は、FindPeople 要求の結果として得られる一連のペルソナプロパティに適用される値を指定し、指定された制限に従って結果をフィルター処理します。
+ms.openlocfilehash: f07e54235cf13b43da26ed1c56596d3c7c357bf2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759309"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463525"
 ---
-# <a name="aggregationrestriction"></a>AggregationRestriction
+# <a name="aggregationrestriction"></a>集約 Ationrestriction
 
-**AggregationRestriction**要素は、FindPeople の要求に起因するペルソナ プロパティのセットに適用され、指定した制限に従って結果をフィルター処理する値を指定します。 
+**集約 Ationrestriction**要素は、findpeople 要求の結果として得られる一連のペルソナプロパティに適用される値を指定し、指定された制限に従って結果をフィルター処理します。 
   
 ```XML
 <AggregationRestriction>
@@ -26,7 +26,7 @@ ms.locfileid: "19759309"
 ```
 
  **RestrictionType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,21 +42,21 @@ ms.locfileid: "19759309"
 
 [FindPeople](findpeople.md)
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**AggregationRestriction**要素は、 **SearchExpression**の代替グループを使用する任意の子要素を含めることができます。 **SearchExpression**代替グループの一部になっている要素:[含む](contains.md)、[除外](excludes.md)、 [Exists](exists.md)、[しない](not.md)、[または](or.md)、[および](and.md)、 [IsEqualTo](isequalto.md)、 [IsNotEqualTo](isnotequalto.md)、 [IsGreaterThan](isgreaterthan.md)、 [IsGreaterThanOrEqualTo](isgreaterthanorequalto.md)、 [IsLessThan](islessthan.md)、および[IsLessThanOrEqualTo](islessthanorequalto.md)。
+**集約 Ationrestriction**要素には、 **searchexpression** substitution グループを使用する子要素を含めることができます。 **Searchexpression**置換グループの一部である要素は次のとおりです[。 Contains](contains.md)、[除外](excludes.md)、 [Exists](exists.md)、 [Not](not.md)、 [and](and.md) [、](or.md) [IsEqualTo](isequalto.md)、IsNotEqualTo、 [IsGreaterThan](isgreaterthan.md)、 [IsGreaterThanOrEqualTo](isgreaterthanorequalto.md)、 [is](isnotequalto.md)、および[IsLessThan](islessthan.md) [IsLessThanOrEqualTo](islessthanorequalto.md)。
   
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
 |空にすることができます。  <br/> |false  <br/> |
    
 

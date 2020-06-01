@@ -8,16 +8,16 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a7034730-210d-4916-b992-dda342f890f8
 description: ExtendedProperties 要素は、追加のプロパティの配列を指定します。
-ms.openlocfilehash: b92108ecde63d4a3ac3cc80861c204c4d1950cc0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 36011e0252ed391daefab190d4da679fb3a3f856
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760412"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463098"
 ---
 # <a name="extendedproperties-nonemptyarrayofextendedpropertytype"></a>ExtendedProperties (NonEmptyArrayOfExtendedPropertyType)
 
-**ExtendedProperties**要素は、追加のプロパティの配列を指定します。 
+**Extendedproperties**要素は、追加のプロパティの配列を指定します。 
   
 ```XML
 <ExtendedProperties>
@@ -26,7 +26,7 @@ ms.locfileid: "19760412"
 ```
 
  **NonEmptyArrayOfExtendedPropertyType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -36,35 +36,35 @@ ms.locfileid: "19760412"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[ExtendedProperty](extendedproperty.md) <br/> |フォルダーおよびアイテムの拡張 MAPI プロパティを識別します。  <br/> |
+|[ExtendedProperty](extendedproperty.md) <br/> |フォルダーとアイテムの拡張 MAPI プロパティを識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ImGroup](imgroup.md) <br/> |インスタント メッセージングのグループを表します。  <br/> |
-|[SearchPreviewItem](searchpreviewitem.md) <br/> |アイテムを開かずにプレビューを表示するメールボックスのアイテムの最初の 256 文字を指定します。  <br/> |
+|[ImGroup](imgroup.md) <br/> |インスタントメッセージンググループを表します。  <br/> |
+|[Searchプレビューアイテム](searchpreviewitem.md) <br/> |アイテムを開かずに、プレビューのメールボックスアイテムの最初の256文字を指定します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |型のスキーマ  <br/> |
-|検証ファイル  <br/> |types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

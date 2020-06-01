@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: e60e525f-c136-469a-b68b-b3dc01f400a6
-description: IsReadReceipt 要素は、あるかどうかの受信メッセージ読み取る必要があります適用の条件または例外のために領収書を示します。
-ms.openlocfilehash: 78714aafb116a609a69d77b3b4f0fd15695bda34
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: IsReadReceipt 要素は、条件または例外を適用するために、受信メッセージが開封確認である必要があるかどうかを示します。
+ms.openlocfilehash: e86a7776bc43204dae9fc92f21d4304255ddb888
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832094"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463903"
 ---
 # <a name="isreadreceipt"></a>IsReadReceipt
 
-**IsReadReceipt**要素は、あるかどうかの受信メッセージ読み取る必要があります適用の条件または例外のために領収書を示します。 
+**Isreadreceipt**要素は、条件または例外を適用するために、受信メッセージが開封確認である必要があるかどうかを示します。 
   
 ```XML
 <IsReadReceipt> true | false</IsReadReceipt>
 ```
 
- **ブール型 (Boolean)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,29 +44,29 @@ ms.locfileid: "19832094"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[条件](conditions.md) <br/> |条件を表しますが、満たされるとときに、そのルールのルールの処理をトリガーします。  <br/> |
-|[Exceptions](exceptions.md) <br/> |受信トレイ ルールの使用可能なルールの例外条件をすべてを表します。  <br/> |
+|[条件](conditions.md) <br/> |そのルールのルールの処理を開始するときに実行される条件を表します。  <br/> |
+|[例外](exceptions.md) <br/> |受信トレイルールの利用可能なすべてのルールの例外条件を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**True**の場合、テキスト値は、メッセージは開封済みメッセージを適用する場合の条件または例外の順序である必要があることを示します。 メッセージが開封済みの条件または例外を適用する、値が**false**にします。
+テキスト値が**true の場合**、条件または例外を適用するには、メッセージが開封確認メッセージである必要があることを示します。 条件または例外を適用するために、メッセージが開封確認を必要としない場合、値は**false**になります。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

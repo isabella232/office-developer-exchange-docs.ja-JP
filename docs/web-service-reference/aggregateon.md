@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 9b0a03f2-3282-46e1-b1a0-cbb9a0fbe9bb
-description: AggregateOn 要素は、グループ化された FindItem 結果セットをグループ化した項目の順序を決定するために使用されるプロパティを表します。
-ms.openlocfilehash: fe14de23e6a4c90d826200cae927427acfccc3c8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: AggregateOn 要素は、グループ化された FindItem 結果セットのグループ化されたアイテムの順序を決定するために使用されるプロパティを表します。
+ms.openlocfilehash: 04359c187ef11538d64f8f0d3ea2fe84bc3d048b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759305"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463567"
 ---
 # <a name="aggregateon"></a>AggregateOn
 
-**AggregateOn**要素は、グループ化された FindItem 結果セットをグループ化した項目の順序を決定するために使用されるプロパティを表します。 
+**AggregateOn**要素は、グループ化された FindItem 結果セットのグループ化されたアイテムの順序を決定するために使用されるプロパティを表します。 
   
 - [FindItem](finditem.md)  
 - [GroupBy](groupby.md)
@@ -47,7 +47,7 @@ ms.locfileid: "19759305"
  
 **AggregateOnType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -55,39 +55,39 @@ ms.locfileid: "19759305"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**Aggregate** <br/> | アイテムのグループの順序付けに使用される[FieldURI](fielduri.md)要素によって識別されるプロパティの最大値または最小値を示します。<br/><br/>指定可能な値は次のいずれかです。  <br/><br/>-最小値  <br/>-最大  <br/> |
+|**Aggregate** <br/> | アイテムのグループの順序付けに使用される[FieldURI](fielduri.md)要素によって識別されるプロパティの最大値または最小値を示します。<br/><br/>指定可能な値は次のいずれかです。  <br/><br/>-最小  <br/>-最大  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[FieldURI](fielduri.md) <br/> |URI によって頻繁に参照されるプロパティを識別します。  <br/> |
-|[IndexedFieldURI](indexedfielduri.md) <br/> |辞書の個々 のメンバーを識別します。  <br/> |
-|[ExtendedFieldURI](extendedfielduri.md) <br/> |取得、設定、または作成する拡張の MAPI プロパティを識別します。  <br/> |
+|[FieldURI](fielduri.md) <br/> |URI で頻繁に参照されるプロパティを識別します。  <br/> |
+|[IndexedFieldURI](indexedfielduri.md) <br/> |辞書の個々のメンバーを識別します。  <br/> |
+|[ExtendedFieldURI](extendedfielduri.md) <br/> |取得、設定、または作成する拡張 MAPI プロパティを識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GroupBy](groupby.md) <br/> |FindItem クエリの任意のグループを指定します。  <br/> この要素への XPath 式は、次のようにします。`/FindItem/GroupBy` <br/> |
+|[GroupBy](groupby.md) <br/> |FindItem クエリの任意のグループを指定します。  <br/> この要素の XPath 式を次に示します。`/FindItem/GroupBy` <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-[FindItem 操作](finditem-operation.md)では、グループ化された結果を返すことができます。 グループ化された結果を指定したグループ化のプロパティに対して同じ値を持つすべての項目がまとめし、そのグループの子として表示されます。 たとえば、送信者をグループ化する場合すべてのメールは送信者 A、B、送信側に、いるかどうかに基づいて別のグループに編成されています。 これらのグループは、送信者のグループの子です。 
+[FindItem 操作](finditem-operation.md)は、グループ化された結果を返すことができます。 グループ化された結果内で、特定のグループ化プロパティの値が同じであるすべてのアイテムが一緒に収集され、そのグループの子として表示されます。 たとえば、送信者によってグループ化した場合、すべての電子メールは送信者 A、送信者 B のどちらからの場合でも、別のグループに整理されます。 これらのグループは、送信者グループの子です。 
   
-送信者グループ内のグループのそれぞれには、実際の送信者から送信された電子メールなどの項目のコレクションが含まれています。 グループ内のアイテムを並べ替えるには、[並べ替え順序](sortorder.md)の要素を使用できます。 ただし、アイテムのプロパティの値に基づいてグループを並べ替えるには、集計を使用する必要があります。 
+Sender グループ内の各グループには、各送信者から送られた実際の電子メールなど、アイテムのコレクションが含まれています。 並べ替え[順序](sortorder.md)要素を使用して、グループ内のアイテムを並べ替えることができます。 ただし、アイテムのプロパティ値に基づいてグループを並べ替えるには、aggregation を使用する必要があります。 
   
-集約、グループの順序は、グループ内のアイテムの特定のプロパティに基づいています。 集計を使用して、グループ内のアイテムを並べ替えるには、グループの並べ替えに使用する代表的なプロパティを識別する必要があります。 **AggregateOn**要素を使用すると、代表的なプロパティを指定します。 
+集約では、グループの順序は、グループ内のアイテムの特定のプロパティに基づきます。 集約を使用してグループ内のアイテムを並べ替える場合は、グループを並べ替えるための代表的なプロパティを指定する必要があります。 **AggregateOn**要素を使用して、典型的なプロパティを指定できます。 
   
-代表的なプロパティを識別すると、**集計**属性が最大値または特定のプロパティの最小値のグループを並べ替えるかどうかを示すために使用されます。 **集計**属性は、最大値に設定されている場合、 **AggregateOn**プロパティの最大値で始まるグループが並べ替えられます。 **集計**属性は、最小値に設定されている場合、 **AggregateOn**プロパティの最小値で始まるグループが並べ替えられます。 
+代表的なプロパティを指定すると、**集計**属性を使用して、グループが、識別されたプロパティの最大値または最小値に従って並べ替えられているかどうかを示します。 **Aggregate**属性が [最大] に設定されている場合、グループは**AggregateOn**プロパティの最大値を先頭に並べ替えられます。 **Aggregate**属性が [最小] に設定されている場合、グループは**AggregateOn**プロパティの最小値を先頭に並べ替えられます。 
   
-など、送信者別にグループ化 FindItem のグループ化されたクエリを発行する場合は、最新の電子メール メッセージのグループが上になるようにグループを注文することができますによってグループ化する送信者と集計、**集計**を受信した日付と時刻の最大値の属性です。 
+たとえば、sender でグループ化されたクエリを発行する場合に、最新の電子メールメッセージが一番上になるようにグループの順序を指定する場合は、送信者によってグループ化し、**集約**属性が [最大] で受信した日付/時刻を集計することができます。 
   
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="example"></a>例
 
-次の例では、グループ化された FindItem 要求と応答を示します。 **ConversationTopic**プロパティでグループ化された項目を返す要求の例です。 A と B の 2 つのグループは、 [DateTimeReceived](datetimereceived.md)プロパティの最大値に基づく順序を降順で返されます。 
+次の例は、グループ化された FindItem 要求と応答を示しています。 この例では、 **ConversationTopic**プロパティによってグループ化されたアイテムを返す要求を示します。 2つのグループ A と B は、 [DateTimeReceived](datetimereceived.md)プロパティの最大値に基づいて、降順で返されます。 
   
 ```XML
 <!-- EXAMPLE REQUEST -->
@@ -95,10 +95,10 @@ MicrosoftExchange Server 2007 がインストールされているクライア�
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <FindItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-                xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+    <FindItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+                xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
                 Traversal="Shallow">
       <ItemShape>
         <t:BaseShape>IdOnly</t:BaseShape>
@@ -127,12 +127,12 @@ MicrosoftExchange Server 2007 がインストールされているクライア�
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="652" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <FindItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                      xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <FindItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                      xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:FindItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -187,24 +187,24 @@ MicrosoftExchange Server 2007 がインストールされているクライア�
 </soap:Envelope>
 ```
 
-グループ内のアイテムを並べ替えるには、[並べ替え順序](sortorder.md)の要素を使用します。 
+グループ内のアイテムを並べ替えるには、並べ替え[順序](sortorder.md)要素を使用します。 
   
 > [!NOTE]
-> 項目の識別子と変更キーは、読みやすさを保持するために短縮されています。 
+> 読みやすくするために、アイテムの識別子と変更キーが短縮されています。 
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - 
   [FindItem 操作](finditem-operation.md)
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
-- [項目を検索します。](http://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [アイテムの検索](https://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
 

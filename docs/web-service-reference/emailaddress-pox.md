@@ -8,19 +8,19 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 0e9836a8-ccc9-4cc0-aa6a-9b299c5841d0
-description: EMailAddress 要素は、ユーザーの電子メール アドレスを識別します。
-ms.openlocfilehash: 7675ef18565d27db62f5662e651e982176001815
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: EMailAddress 要素は、ユーザーの電子メールアドレスを識別します。
+ms.openlocfilehash: 207de9acd62782d651055d6f6dab12c8ebe6e807
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760218"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463441"
 ---
 # <a name="emailaddress-pox"></a>EMailAddress (POX)
 
-**EMailAddress**要素は、ユーザーの電子メール アドレスを識別します。 
+**EMailAddress**要素は、ユーザーの電子メールアドレスを識別します。 
   
-- [(POX) を自動検出](autodiscover-pox.md) 
+- [自動検出 (POX)](autodiscover-pox.md) 
 - [要求 (POX)](request-pox.md) 
 - [EMailAddress (POX)](emailaddress-pox.md)
   
@@ -28,7 +28,7 @@ ms.locfileid: "19760218"
 <EMailAddress/>
 ```
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,17 +44,17 @@ ms.locfileid: "19760218"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[要求 (POX)](request-pox.md) <br/> |自動検出サービスへの要求が含まれています。  <br/> |
+|[要求 (POX)](request-pox.md) <br/> |自動検出サービスへの要求を含みます。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、ユーザーの電子メール アドレスを表します。
+テキスト値は、ユーザーの電子メールアドレスを表します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 [LegacyDN (POX)](legacydn-pox.md)要素は、自動検出要求の代替要素を提供します。 
   
 ## <a name="see-also"></a>関連項目
 
-- [交換の POX の自動検出の XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+- [Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
 

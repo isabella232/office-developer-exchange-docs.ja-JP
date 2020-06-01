@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: dd9b6c43-a512-4b3b-a071-4abde02ed55f
-description: DueDate 要素は、項目が期限の日付を表します。
-ms.openlocfilehash: b24891972f240bc6ee5d0fe868445b96abdc089a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DueDate 要素は、アイテムの期限の日付を表します。
+ms.openlocfilehash: b88bb5c64ee48e02b1600c6865ce650e7bcdaa3b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760169"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463560"
 ---
 # <a name="duedate"></a>DueDate
 
-**DueDate**要素は、項目が期限の日付を表します。 
+**DueDate**要素は、アイテムの期限の日付を表します。 
   
 ```xml
 <DueDate/>
 ```
 
  **dateTime**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,27 +44,27 @@ ms.locfileid: "19760169"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[タスク](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
-|[Flag](flag.md) <br/> |メールボックス アイテムにフラグを指定します。  <br/> |
+|[Task](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
+|[Flag](flag.md) <br/> |メールボックスアイテムのフラグを指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-日付と時刻を表すテキスト値は、この要素を使用する場合に必要です。
+この要素を使用する場合は、日付と時刻を表すテキスト値が必要です。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

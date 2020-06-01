@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: f56e6c31-a566-4761-8755-d90ffe6fe790
-description: IsInError 要素は、ルールにエラーが発生するかどうかを示します。
-ms.openlocfilehash: 9f77bbe11106174d0e82c5257e08c3728d67c60c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: IsInError 要素は、ルールがエラー状態であるかどうかを示します。
+ms.openlocfilehash: 9e642c9f89434bdcad97b0c16dc35f99196051d7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832033"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464218"
 ---
 # <a name="isinerror"></a>IsInError
 
-**IsInError**要素は、ルールにエラーが発生するかどうかを示します。 
+**IsInError**要素は、ルールがエラー状態であるかどうかを示します。 
   
 ```XML
 <IsInError/>
 ```
 
- **ブール型 (Boolean)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -48,24 +48,24 @@ ms.locfileid: "19832033"
    
 ## <a name="text-value"></a>テキスト値
 
-**True**の場合、テキスト値は、ルールが、エラー状態にあることを示します。 **False**の値は、ルールがエラー状態でないことを示します。 
+テキスト値が**true の場合**は、ルールがエラー状態であることを示します。 値が**false**の場合は、ルールがエラー状態ではないことを示します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 
