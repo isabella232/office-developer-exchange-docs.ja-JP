@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8309e468-115b-4d6e-b33c-c4719dcecc4c
-description: ユーザーの構成オブジェクトのプロパティのエントリをディクショナリのディクショナリの要素を定義します。
-ms.openlocfilehash: 151abfe7a9a9ae05b8b61af87c33675e025920ec
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Dictionary 要素は、ユーザー構成オブジェクトの辞書のプロパティエントリのセットを定義します。
+ms.openlocfilehash: 8e5267717aab2317b2bc1581a775ead81025a08a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760035"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455668"
 ---
-# <a name="dictionary"></a><span data-ttu-id="9d819-103">Dictionary</span><span class="sxs-lookup"><span data-stu-id="9d819-103">Dictionary</span></span>
+# <a name="dictionary"></a><span data-ttu-id="478c0-103">Dictionary</span><span class="sxs-lookup"><span data-stu-id="478c0-103">Dictionary</span></span>
 
-<span data-ttu-id="9d819-104">ユーザーの構成オブジェクトのプロパティのエントリをディクショナリの**ディクショナリ**の要素を定義します。</span><span class="sxs-lookup"><span data-stu-id="9d819-104">The **Dictionary** element defines a set of dictionary property entries for a user configuration object.</span></span> 
+<span data-ttu-id="478c0-104">**Dictionary**要素は、ユーザー構成オブジェクトの辞書のプロパティエントリのセットを定義します。</span><span class="sxs-lookup"><span data-stu-id="478c0-104">The **Dictionary** element defines a set of dictionary property entries for a user configuration object.</span></span> 
   
 ```xml
 <Dictionary>
@@ -29,45 +29,45 @@ ms.locfileid: "19760035"
 </Dictionary>
 ```
 
- <span data-ttu-id="9d819-105">**UserConfigurationDictionaryType**</span><span class="sxs-lookup"><span data-stu-id="9d819-105">**UserConfigurationDictionaryType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="9d819-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="9d819-106">Attributes and elements</span></span>
+ <span data-ttu-id="478c0-105">**UserConfigurationDictionaryType**</span><span class="sxs-lookup"><span data-stu-id="478c0-105">**UserConfigurationDictionaryType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="478c0-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="478c0-106">Attributes and elements</span></span>
 
-<span data-ttu-id="9d819-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="9d819-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="478c0-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="478c0-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="9d819-108">属性</span><span class="sxs-lookup"><span data-stu-id="9d819-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="478c0-108">属性</span><span class="sxs-lookup"><span data-stu-id="478c0-108">Attributes</span></span>
 
-<span data-ttu-id="9d819-109">なし。</span><span class="sxs-lookup"><span data-stu-id="9d819-109">None.</span></span>
+<span data-ttu-id="478c0-109">なし。</span><span class="sxs-lookup"><span data-stu-id="478c0-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="9d819-110">子要素</span><span class="sxs-lookup"><span data-stu-id="9d819-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="478c0-110">子要素</span><span class="sxs-lookup"><span data-stu-id="478c0-110">Child elements</span></span>
 
-|<span data-ttu-id="9d819-111">**要素**</span><span class="sxs-lookup"><span data-stu-id="9d819-111">**Element**</span></span>|<span data-ttu-id="9d819-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="9d819-112">**Description**</span></span>|
+|<span data-ttu-id="478c0-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="478c0-111">**Element**</span></span>|<span data-ttu-id="478c0-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="478c0-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="9d819-113">DictionaryEntry</span><span class="sxs-lookup"><span data-stu-id="9d819-113">DictionaryEntry</span></span>](dictionaryentry.md) <br/> |<span data-ttu-id="9d819-114">1 つのディクショナリ エントリのプロパティの内容を指定します。</span><span class="sxs-lookup"><span data-stu-id="9d819-114">Specifies the contents of a single dictionary entry property.</span></span>  <br/> |
+|[<span data-ttu-id="478c0-113">DictionaryEntry</span><span class="sxs-lookup"><span data-stu-id="478c0-113">DictionaryEntry</span></span>](dictionaryentry.md) <br/> |<span data-ttu-id="478c0-114">単一の辞書エントリプロパティの内容を指定します。</span><span class="sxs-lookup"><span data-stu-id="478c0-114">Specifies the contents of a single dictionary entry property.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="9d819-115">親要素</span><span class="sxs-lookup"><span data-stu-id="9d819-115">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="478c0-115">親要素</span><span class="sxs-lookup"><span data-stu-id="478c0-115">Parent elements</span></span>
 
-|<span data-ttu-id="9d819-116">**要素**</span><span class="sxs-lookup"><span data-stu-id="9d819-116">**Element**</span></span>|<span data-ttu-id="9d819-117">**説明**</span><span class="sxs-lookup"><span data-stu-id="9d819-117">**Description**</span></span>|
+|<span data-ttu-id="478c0-116">**要素**</span><span class="sxs-lookup"><span data-stu-id="478c0-116">**Element**</span></span>|<span data-ttu-id="478c0-117">**説明**</span><span class="sxs-lookup"><span data-stu-id="478c0-117">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="9d819-118">UserConfiguration</span><span class="sxs-lookup"><span data-stu-id="9d819-118">UserConfiguration</span></span>](userconfiguration.md) <br/> |<span data-ttu-id="9d819-119">1 人のユーザーの構成オブジェクトを定義します。</span><span class="sxs-lookup"><span data-stu-id="9d819-119">Defines a single user configuration object.</span></span>  <br/> |
+|[<span data-ttu-id="478c0-118">UserConfiguration</span><span class="sxs-lookup"><span data-stu-id="478c0-118">UserConfiguration</span></span>](userconfiguration.md) <br/> |<span data-ttu-id="478c0-119">1つのユーザー構成オブジェクトを定義します。</span><span class="sxs-lookup"><span data-stu-id="478c0-119">Defines a single user configuration object.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="9d819-120">テキスト値</span><span class="sxs-lookup"><span data-stu-id="9d819-120">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="478c0-120">テキスト値</span><span class="sxs-lookup"><span data-stu-id="478c0-120">Text value</span></span>
 
-<span data-ttu-id="9d819-121">なし。</span><span class="sxs-lookup"><span data-stu-id="9d819-121">None.</span></span>
+<span data-ttu-id="478c0-121">なし。</span><span class="sxs-lookup"><span data-stu-id="478c0-121">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="9d819-122">備考</span><span class="sxs-lookup"><span data-stu-id="9d819-122">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="478c0-122">注釈</span><span class="sxs-lookup"><span data-stu-id="478c0-122">Remarks</span></span>
 
-<span data-ttu-id="9d819-123">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="9d819-123">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="478c0-123">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="478c0-123">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="9d819-124">要素情報</span><span class="sxs-lookup"><span data-stu-id="9d819-124">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="478c0-124">要素の情報</span><span class="sxs-lookup"><span data-stu-id="478c0-124">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="9d819-125">名前空間</span><span class="sxs-lookup"><span data-stu-id="9d819-125">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="9d819-126">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="9d819-126">Schema Name</span></span>  <br/> |<span data-ttu-id="9d819-127">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="9d819-127">Types schema</span></span>  <br/> |
-|<span data-ttu-id="9d819-128">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="9d819-128">Validation File</span></span>  <br/> |<span data-ttu-id="9d819-129">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="9d819-129">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="9d819-130">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="9d819-130">Can be Empty</span></span>  <br/> |<span data-ttu-id="9d819-131">False</span><span class="sxs-lookup"><span data-stu-id="9d819-131">False</span></span>  <br/> |
+|<span data-ttu-id="478c0-125">Namespace</span><span class="sxs-lookup"><span data-stu-id="478c0-125">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="478c0-126">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="478c0-126">Schema Name</span></span>  <br/> |<span data-ttu-id="478c0-127">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="478c0-127">Types schema</span></span>  <br/> |
+|<span data-ttu-id="478c0-128">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="478c0-128">Validation File</span></span>  <br/> |<span data-ttu-id="478c0-129">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="478c0-129">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="478c0-130">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="478c0-130">Can be Empty</span></span>  <br/> |<span data-ttu-id="478c0-131">正しくない</span><span class="sxs-lookup"><span data-stu-id="478c0-131">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="9d819-132">関連項目</span><span class="sxs-lookup"><span data-stu-id="9d819-132">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="478c0-132">関連項目</span><span class="sxs-lookup"><span data-stu-id="478c0-132">See also</span></span>
 
-- [<span data-ttu-id="9d819-133">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="9d819-133">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="478c0-133">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="478c0-133">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

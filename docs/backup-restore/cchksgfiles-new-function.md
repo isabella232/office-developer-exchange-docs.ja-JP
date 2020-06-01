@@ -11,43 +11,43 @@ api_name:
 api_type:
 - dllExport
 ms.assetid: 588d8c74-c9ce-4d5e-8a79-a2a68676e858
-description: '最終更新日: 2013 年 2 月 22 日'
-ms.openlocfilehash: b40f8b1a95477715b29defb4addabfb333e92d04
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: '最終更新日: 2013 年2月22日'
+ms.openlocfilehash: d18d3ef20890012a1d8c193ec87bdca10a1ed451
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758856"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455234"
 ---
-# <a name="cchksgfilesnew-function"></a><span data-ttu-id="7c8e5-103">CChkSGFiles.New 関数</span><span class="sxs-lookup"><span data-stu-id="7c8e5-103">CChkSGFiles.New function</span></span>
+# <a name="cchksgfilesnew-function"></a><span data-ttu-id="f4783-103">CChkSGFiles.New 関数</span><span class="sxs-lookup"><span data-stu-id="f4783-103">CChkSGFiles.New function</span></span>
 
-<span data-ttu-id="7c8e5-104">**に適用されます:** Exchange Server 2003年 |Exchange Server 2007年 |Exchange Server 2010年 |Exchange Server 2013</span><span class="sxs-lookup"><span data-stu-id="7c8e5-104">**Applies to:** Exchange Server 2003 | Exchange Server 2007 | Exchange Server 2010 | Exchange Server 2013</span></span>
+<span data-ttu-id="f4783-104">**適用対象:** Exchange Server 2003 |Exchange Server 2007 |Exchange Server 2010 |Exchange Server 2013</span><span class="sxs-lookup"><span data-stu-id="f4783-104">**Applies to:** Exchange Server 2003 | Exchange Server 2007 | Exchange Server 2010 | Exchange Server 2013</span></span>
   
-<span data-ttu-id="7c8e5-105">**CChkSGFiles**クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="7c8e5-105">Creates a new instance of the **CChkSGFiles** class.</span></span> <span data-ttu-id="7c8e5-106">チェックするには、ストレージ グループおよびデータベースを指定する前に、この関数を呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="7c8e5-106">You must call this function before you can specify the storage group and databases to be checked.</span></span> 
+<span data-ttu-id="f4783-105">**CChkSGFiles** クラスの新しいインスタンスを作成します。</span><span class="sxs-lookup"><span data-stu-id="f4783-105">Creates a new instance of the **CChkSGFiles** class.</span></span> <span data-ttu-id="f4783-106">この関数を呼び出してから、確認するストレージ グループとデータベースを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f4783-106">You must call this function before you can specify the storage group and databases to be checked.</span></span> 
   
 ```cs
 Static CCheckSGFiles  * __stdcall New  ();
 
 ```
 
-## <a name="parameters"></a><span data-ttu-id="7c8e5-107">Parameters</span><span class="sxs-lookup"><span data-stu-id="7c8e5-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="f4783-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f4783-107">Parameters</span></span>
 
-<span data-ttu-id="7c8e5-108">なし。</span><span class="sxs-lookup"><span data-stu-id="7c8e5-108">None.</span></span>
+<span data-ttu-id="f4783-108">なし。</span><span class="sxs-lookup"><span data-stu-id="f4783-108">None.</span></span>
   
-## <a name="return-value"></a><span data-ttu-id="7c8e5-109">Return value</span><span class="sxs-lookup"><span data-stu-id="7c8e5-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="f4783-109">Return value</span><span class="sxs-lookup"><span data-stu-id="f4783-109">Return value</span></span>
 
-<span data-ttu-id="7c8e5-110">新しく作成されたオブジェクトへの参照 (ポインター)。</span><span class="sxs-lookup"><span data-stu-id="7c8e5-110">A reference (pointer) to the newly created object.</span></span>
+<span data-ttu-id="f4783-110">新しく作成されたオブジェクトへの参照 (ポインター)。</span><span class="sxs-lookup"><span data-stu-id="f4783-110">A reference (pointer) to the newly created object.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="7c8e5-111">備考</span><span class="sxs-lookup"><span data-stu-id="7c8e5-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f4783-111">注釈</span><span class="sxs-lookup"><span data-stu-id="f4783-111">Remarks</span></span>
 
-<span data-ttu-id="7c8e5-112">**新規**の関数は、 **CCheckSGFiles**オブジェクトを作成し、そのオブジェクトへの参照 (ポインター) を呼び出し元に返します。</span><span class="sxs-lookup"><span data-stu-id="7c8e5-112">The **New** function creates a **CCheckSGFiles** object and returns to the caller a reference (pointer) to that object.</span></span> <span data-ttu-id="7c8e5-113">**CCheckSGFiles**クラスのすべての他の関数を呼び出す前にこの関数を呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="7c8e5-113">You must call this function before it calls any of the other functions in the **CCheckSGFiles** class.</span></span> 
+<span data-ttu-id="f4783-112">**New** 関数は、**CCheckSGFiles** オブジェクトを作成して、そのオブジェクトへの参照 (ポインター) を呼び出し元に返します。</span><span class="sxs-lookup"><span data-stu-id="f4783-112">The **New** function creates a **CCheckSGFiles** object and returns to the caller a reference (pointer) to that object.</span></span> <span data-ttu-id="f4783-113">この関数を最初に呼び出してから、**CCheckSGFiles** クラスのその他の関数を呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="f4783-113">You must call this function before it calls any of the other functions in the **CCheckSGFiles** class.</span></span> 
   
-<span data-ttu-id="7c8e5-114">マルチ スレッド アプリケーションで CHKSGFILES を使用する場合、シングル スレッド アプリケーションの部分で、**新規**の関数を呼び出す必要があり、 **CCheckSGFiles**オブジェクトごとに 1 回のみ呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="7c8e5-114">If you're using CHKSGFILES in a multithreaded application, you must call the **New** function in the single-threaded portion of the application, and you can call it only once for each **CCheckSGFiles** object.</span></span> 
+<span data-ttu-id="f4783-114">マルチスレッド アプリケーションで CHKSGFILES を使用している場合は、そのアプリケーションのシングルスレッドの部分で **New** 関数を呼び出す必要があります。また、その関数は **CCheckSGFiles** オブジェクトごとに 1 回だけ呼び出すことができます。 </span><span class="sxs-lookup"><span data-stu-id="f4783-114">If you're using CHKSGFILES in a multithreaded application, you must call the **New** function in the single-threaded portion of the application, and you can call it only once for each **CCheckSGFiles** object.</span></span> 
   
-## <a name="requirements"></a><span data-ttu-id="7c8e5-115">必要条件</span><span class="sxs-lookup"><span data-stu-id="7c8e5-115">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="f4783-115">Requirements</span><span class="sxs-lookup"><span data-stu-id="f4783-115">Requirements</span></span>
 
-<span data-ttu-id="7c8e5-116">Exchange 2013 には、CHKSGFILES API の 64 ビット バージョンにはのみが含まれます。</span><span class="sxs-lookup"><span data-stu-id="7c8e5-116">Exchange 2013 only includes a 64-bit version of the CHKSGFILES API.</span></span>
+<span data-ttu-id="f4783-116">Exchange 2013 には、CHKSGFILES API の64ビットバージョンのみが含まれています。</span><span class="sxs-lookup"><span data-stu-id="f4783-116">Exchange 2013 only includes a 64-bit version of the CHKSGFILES API.</span></span>
   
-<span data-ttu-id="7c8e5-117">アプリケーションを実行しているアカウントには、確認するデータベースとログ ファイルに対する読み取りアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="7c8e5-117">The account that the application is running under must have read access permissions to the database and log files that are to be checked.</span></span>
+<span data-ttu-id="f4783-117">アプリケーションを実行しているアカウントには、確認するデータベースとログ ファイルに対する読み取りアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="f4783-117">The account that the application is running under must have read access permissions to the database and log files that are to be checked.</span></span>
   
 
