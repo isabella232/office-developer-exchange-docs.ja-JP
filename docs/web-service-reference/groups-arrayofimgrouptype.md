@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 544dbb60-d6cb-47e1-b157-f0166147b6cf
-description: グループ要素は、インスタント メッセージング (IM) のグループの配列を表します。
-ms.openlocfilehash: 7632c922666742d6ab9428a2b1e78ae6a1d544b6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Groups 要素は、インスタントメッセージング (IM) グループの配列を表します。
+ms.openlocfilehash: ad866afdecbcac0e555978647e3a46a033361672
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831784"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530072"
 ---
-# <a name="groups-arrayofimgrouptype"></a><span data-ttu-id="50193-103">グループ (ArrayOfImGroupType)</span><span class="sxs-lookup"><span data-stu-id="50193-103">Groups (ArrayOfImGroupType)</span></span>
+# <a name="groups-arrayofimgrouptype"></a><span data-ttu-id="327a3-103">グループ (ArrayOfImGroupType)</span><span class="sxs-lookup"><span data-stu-id="327a3-103">Groups (ArrayOfImGroupType)</span></span>
 
-<span data-ttu-id="50193-104">**グループ**要素は、インスタント メッセージング (IM) のグループの配列を表します。</span><span class="sxs-lookup"><span data-stu-id="50193-104">The **Groups** element represents an array of instant messaging (IM) groups.</span></span> 
+<span data-ttu-id="327a3-104">**Groups**要素は、インスタントメッセージング (IM) グループの配列を表します。</span><span class="sxs-lookup"><span data-stu-id="327a3-104">The **Groups** element represents an array of instant messaging (IM) groups.</span></span> 
   
 ```XML
 <Groups>
@@ -25,28 +25,28 @@ ms.locfileid: "19831784"
 </Groups>
 ```
 
-<span data-ttu-id="50193-105">**ArrayOfImGroupType**</span><span class="sxs-lookup"><span data-stu-id="50193-105">**ArrayOfImGroupType**</span></span>
+<span data-ttu-id="327a3-105">**ArrayOfImGroupType**</span><span class="sxs-lookup"><span data-stu-id="327a3-105">**ArrayOfImGroupType**</span></span>
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="50193-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="50193-106">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="327a3-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="327a3-106">Attributes and elements</span></span>
 
-<span data-ttu-id="50193-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="50193-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="327a3-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="327a3-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="50193-108">属性</span><span class="sxs-lookup"><span data-stu-id="50193-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="327a3-108">属性</span><span class="sxs-lookup"><span data-stu-id="327a3-108">Attributes</span></span>
 
-<span data-ttu-id="50193-109">なし。</span><span class="sxs-lookup"><span data-stu-id="50193-109">None.</span></span>
+<span data-ttu-id="327a3-109">なし。</span><span class="sxs-lookup"><span data-stu-id="327a3-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="50193-110">子要素</span><span class="sxs-lookup"><span data-stu-id="50193-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="327a3-110">子要素</span><span class="sxs-lookup"><span data-stu-id="327a3-110">Child elements</span></span>
 
-[<span data-ttu-id="50193-111">ImGroup</span><span class="sxs-lookup"><span data-stu-id="50193-111">ImGroup</span></span>](imgroup.md)
+[<span data-ttu-id="327a3-111">ImGroup</span><span class="sxs-lookup"><span data-stu-id="327a3-111">ImGroup</span></span>](imgroup.md)
   
-### <a name="parent-elements"></a><span data-ttu-id="50193-112">親要素</span><span class="sxs-lookup"><span data-stu-id="50193-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="327a3-112">親要素</span><span class="sxs-lookup"><span data-stu-id="327a3-112">Parent elements</span></span>
 
-[<span data-ttu-id="50193-113">ImItemList</span><span class="sxs-lookup"><span data-stu-id="50193-113">ImItemList</span></span>](imitemlist.md)
+[<span data-ttu-id="327a3-113">ImItemList</span><span class="sxs-lookup"><span data-stu-id="327a3-113">ImItemList</span></span>](imitemlist.md)
   
-## <a name="remarks"></a><span data-ttu-id="50193-114">備考</span><span class="sxs-lookup"><span data-stu-id="50193-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="327a3-114">注釈</span><span class="sxs-lookup"><span data-stu-id="327a3-114">Remarks</span></span>
 
-<span data-ttu-id="50193-115">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="50193-115">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="327a3-115">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="327a3-115">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="50193-116">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="50193-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="327a3-116">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="327a3-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
 

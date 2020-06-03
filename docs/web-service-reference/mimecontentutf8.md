@@ -7,77 +7,77 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 31544c95-5231-4b57-958c-2a689464d29b
-description: MimeContentUTF8 要素には、base64Binary の形式で表されるオブジェクトの UTF-8 の MIME ストリームが含まれているし、e メール アドレスの国際化をサポートし、[RFC6530]。
-ms.openlocfilehash: 47599b6634738fd488e5b020f69e36d5fcf550a6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: MimeContentUTF8 要素には、base64Binary 形式で表され、電子メールアドレスの国際化および [RFC6530] をサポートするオブジェクトの UTF-8 MIME ストリームが含まれています。
+ms.openlocfilehash: a9214bda876c1aadac5b026b3adf38faea8ef17a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832466"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530430"
 ---
-# <a name="mimecontentutf8"></a><span data-ttu-id="165ec-103">MimeContentUTF8</span><span class="sxs-lookup"><span data-stu-id="165ec-103">MimeContentUTF8</span></span>
+# <a name="mimecontentutf8"></a><span data-ttu-id="958f8-103">MimeContentUTF8</span><span class="sxs-lookup"><span data-stu-id="958f8-103">MimeContentUTF8</span></span>
 
-<span data-ttu-id="165ec-104">**MimeContentUTF8**要素には、base64Binary の形式で表され、 [[RFC6530]](http://www.rfc-editor.org/rfc/rfc6530.txt)電子メール アドレスの国際化をサポートしているオブジェクトの UTF-8 の MIME ストリームが含まれています。</span><span class="sxs-lookup"><span data-stu-id="165ec-104">The **MimeContentUTF8** element contains the UTF-8 MIME stream of an object that is represented in base64Binary format and supports email address internationalization and [[RFC6530]](http://www.rfc-editor.org/rfc/rfc6530.txt).</span></span>
+<span data-ttu-id="958f8-104">**MimeContentUTF8**要素には、base64Binary 形式で表され、電子メールアドレスの国際化および[[RFC6530]](http://www.rfc-editor.org/rfc/rfc6530.txt)をサポートするオブジェクトの utf-8 MIME ストリームが含まれています。</span><span class="sxs-lookup"><span data-stu-id="958f8-104">The **MimeContentUTF8** element contains the UTF-8 MIME stream of an object that is represented in base64Binary format and supports email address internationalization and [[RFC6530]](http://www.rfc-editor.org/rfc/rfc6530.txt).</span></span>
   
 ```XML
 <MimeContentUTF8 CharacterSet="" />
 ```
 
- <span data-ttu-id="165ec-105">**MimeContentType**</span><span class="sxs-lookup"><span data-stu-id="165ec-105">**MimeContentType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="165ec-106">属性および要素</span><span class="sxs-lookup"><span data-stu-id="165ec-106">Attributes and elements</span></span>
+ <span data-ttu-id="958f8-105">**MimeContentType**</span><span class="sxs-lookup"><span data-stu-id="958f8-105">**MimeContentType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="958f8-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="958f8-106">Attributes and elements</span></span>
 
-<span data-ttu-id="165ec-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="165ec-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="958f8-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="958f8-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="165ec-108">属性</span><span class="sxs-lookup"><span data-stu-id="165ec-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="958f8-108">属性</span><span class="sxs-lookup"><span data-stu-id="958f8-108">Attributes</span></span>
 
-|<span data-ttu-id="165ec-109">**属性**</span><span class="sxs-lookup"><span data-stu-id="165ec-109">**Attribute**</span></span>|<span data-ttu-id="165ec-110">**説明**</span><span class="sxs-lookup"><span data-stu-id="165ec-110">**Description**</span></span>|
+|<span data-ttu-id="958f8-109">**属性**</span><span class="sxs-lookup"><span data-stu-id="958f8-109">**Attribute**</span></span>|<span data-ttu-id="958f8-110">**説明**</span><span class="sxs-lookup"><span data-stu-id="958f8-110">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="165ec-111">**文字セット**</span><span class="sxs-lookup"><span data-stu-id="165ec-111">**CharacterSet**</span></span> <br/> |<span data-ttu-id="165ec-112">かどうか、この属性の値は無視されます、サーバーがします。</span><span class="sxs-lookup"><span data-stu-id="165ec-112">If set, the value for this attribute is ignored by the server.</span></span>  <br/> |
+|<span data-ttu-id="958f8-111">**CharacterSet**</span><span class="sxs-lookup"><span data-stu-id="958f8-111">**CharacterSet**</span></span> <br/> |<span data-ttu-id="958f8-112">設定した場合、この属性の値はサーバーによって無視されます。</span><span class="sxs-lookup"><span data-stu-id="958f8-112">If set, the value for this attribute is ignored by the server.</span></span>  <br/> |
    
-### <a name="child-elements"></a><span data-ttu-id="165ec-113">子要素</span><span class="sxs-lookup"><span data-stu-id="165ec-113">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="958f8-113">子要素</span><span class="sxs-lookup"><span data-stu-id="958f8-113">Child elements</span></span>
 
-<span data-ttu-id="165ec-114">なし。</span><span class="sxs-lookup"><span data-stu-id="165ec-114">None.</span></span>
+<span data-ttu-id="958f8-114">なし。</span><span class="sxs-lookup"><span data-stu-id="958f8-114">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="165ec-115">親要素</span><span class="sxs-lookup"><span data-stu-id="165ec-115">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="958f8-115">親要素</span><span class="sxs-lookup"><span data-stu-id="958f8-115">Parent elements</span></span>
 
-<span data-ttu-id="165ec-116">[カレンダー項目](calendaritem.md) | [連絡先](contact.md) | [DistributionList](distributionlist.md) | [アイテム](item.md) | [MeetingCancellation](meetingcancellation.md) | [MeetingMessage](meetingmessage.md) | [MeetingRequest](meetingrequest.md)  |  [MeetingResponse](meetingresponse.md) | [メッセージ](message-ex15websvcsotherref.md) | [での RemoveItem](removeitem.md) | [タスク](task.md)</span><span class="sxs-lookup"><span data-stu-id="165ec-116">[CalendarItem](calendaritem.md) | [Contact](contact.md) | [DistributionList](distributionlist.md) | [Item](item.md) | [MeetingCancellation](meetingcancellation.md) | [MeetingMessage](meetingmessage.md) | [MeetingRequest](meetingrequest.md) | [MeetingResponse](meetingresponse.md) | [Message](message-ex15websvcsotherref.md) | [RemoveItem](removeitem.md) | [Task](task.md)</span></span>
+<span data-ttu-id="958f8-116">[Calendaritem](calendaritem.md)  | [連絡先](contact.md)  | [DistributionList](distributionlist.md)  | [アイテム](item.md)  | [会議のキャンセル](meetingcancellation.md)  | [会議メッセージ](meetingmessage.md)  | [会議の要求](meetingrequest.md)  | [会議の応答](meetingresponse.md)  | [メッセージ](message-ex15websvcsotherref.md)  | [Removeitem](removeitem.md)  | [タスク](task.md)</span><span class="sxs-lookup"><span data-stu-id="958f8-116">[CalendarItem](calendaritem.md) | [Contact](contact.md) | [DistributionList](distributionlist.md) | [Item](item.md) | [MeetingCancellation](meetingcancellation.md) | [MeetingMessage](meetingmessage.md) | [MeetingRequest](meetingrequest.md) | [MeetingResponse](meetingresponse.md) | [Message](message-ex15websvcsotherref.md) | [RemoveItem](removeitem.md) | [Task](task.md)</span></span>
   
-## <a name="text-value"></a><span data-ttu-id="165ec-117">テキスト値</span><span class="sxs-lookup"><span data-stu-id="165ec-117">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="958f8-117">テキスト値</span><span class="sxs-lookup"><span data-stu-id="958f8-117">Text value</span></span>
 
-<span data-ttu-id="165ec-118">Base64binary の MIME ストリームを表すテキスト値は、この要素を使用する場合に必要です。</span><span class="sxs-lookup"><span data-stu-id="165ec-118">A text value that represents a base64binary MIME stream is required if this element is used.</span></span>
+<span data-ttu-id="958f8-118">この要素を使用する場合は、base64binary MIME ストリームを表すテキスト値が必要です。</span><span class="sxs-lookup"><span data-stu-id="958f8-118">A text value that represents a base64binary MIME stream is required if this element is used.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="165ec-119">備考</span><span class="sxs-lookup"><span data-stu-id="165ec-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="958f8-119">注釈</span><span class="sxs-lookup"><span data-stu-id="958f8-119">Remarks</span></span>
 
-<span data-ttu-id="165ec-120">メッセージの内容は次の 3 つのレベルの**MimeContentUTF8**の値に格納される前にエンコードします。</span><span class="sxs-lookup"><span data-stu-id="165ec-120">The message content goes through the following three levels of encoding before it is stored in the **MimeContentUTF8** value:</span></span> 
+<span data-ttu-id="958f8-120">メッセージコンテンツは、 **MimeContentUTF8**値に格納される前に、次の3つのエンコードレベルで行われます。</span><span class="sxs-lookup"><span data-stu-id="958f8-120">The message content goes through the following three levels of encoding before it is stored in the **MimeContentUTF8** value:</span></span> 
   
-1. <span data-ttu-id="165ec-121">メッセージ テキスト、本文のエンコーディングには、iso 2022 の jp 日本語の文字などは、これ。</span><span class="sxs-lookup"><span data-stu-id="165ec-121">Message text — This is the body encoding, such as iso-2022-jp for Japanese characters.</span></span>
+1. <span data-ttu-id="958f8-121">メッセージテキスト: これは、日本語の文字の iso-2022-jp などの本文のエンコードです。</span><span class="sxs-lookup"><span data-stu-id="958f8-121">Message text — This is the body encoding, such as iso-2022-jp for Japanese characters.</span></span>
     
-2. <span data-ttu-id="165ec-122">MIME ストリーム-これは、UTF8 エンコーディングのメッセージ要素のテキスト、 **MimeContentUTF8** 、または[MimeContent](mimecontent.md)要素のメッセージ テキストの ASCII エンコードします。</span><span class="sxs-lookup"><span data-stu-id="165ec-122">MIME stream — This is the UTF8 encoding of the message text for the **MimeContentUTF8** element, or the ASCII encoding of the message text for the [MimeContent](mimecontent.md) element.</span></span> 
+2. <span data-ttu-id="958f8-122">MIME ストリーム— **MimeContentUTF8**要素のメッセージテキストの UTF8 エンコード、または[MimeContent](mimecontent.md)要素のメッセージテキストの ASCII エンコーディングです。</span><span class="sxs-lookup"><span data-stu-id="958f8-122">MIME stream — This is the UTF8 encoding of the message text for the **MimeContentUTF8** element, or the ASCII encoding of the message text for the [MimeContent](mimecontent.md) element.</span></span> 
     
-3. <span data-ttu-id="165ec-123">XML ドキュメント-これは、常に base64 でエンコードされた ASCII ストリーム、MIME ストリームの場所などの文字 '\<'、XML パーサーから非表示には、xml では、意味のあります。</span><span class="sxs-lookup"><span data-stu-id="165ec-123">XML document — This is always the base64-encoded ASCII stream of the MIME stream, where characters such as '\<', which are meaningful to XML, are hidden from XML parsers.</span></span>
+3. <span data-ttu-id="958f8-123">XML ドキュメント—これは常に MIME ストリームの base64 でエンコードされた ASCII ストリームです。これは、XML に意味のある ' ' のような文字 \< が xml パーサーに表示されません。</span><span class="sxs-lookup"><span data-stu-id="958f8-123">XML document — This is always the base64-encoded ASCII stream of the MIME stream, where characters such as '\<', which are meaningful to XML, are hidden from XML parsers.</span></span>
     
-<span data-ttu-id="165ec-124">各レベルでは、その前にあるレベルの独立しています。</span><span class="sxs-lookup"><span data-stu-id="165ec-124">Each level is independent of the level that precedes it.</span></span>
+<span data-ttu-id="958f8-124">各レベルは、その前にあるレベルから独立しています。</span><span class="sxs-lookup"><span data-stu-id="958f8-124">Each level is independent of the level that precedes it.</span></span>
   
-<span data-ttu-id="165ec-125">**MimeContentUTF8**要素には、アイテムが返されるその他のプロパティが含まれている同じデータが含まれて可能性があります。</span><span class="sxs-lookup"><span data-stu-id="165ec-125">The **MimeContentUTF8** element might contain the same data that other properties that are returned with an item contain.</span></span> 
+<span data-ttu-id="958f8-125">**MimeContentUTF8**要素には、アイテムによって返されるその他のプロパティと同じデータが含まれている場合があります。</span><span class="sxs-lookup"><span data-stu-id="958f8-125">The **MimeContentUTF8** element might contain the same data that other properties that are returned with an item contain.</span></span> 
   
-<span data-ttu-id="165ec-126">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="165ec-126">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="958f8-126">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="958f8-126">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-### <a name="version-differences"></a><span data-ttu-id="165ec-127">バージョンの相違点</span><span class="sxs-lookup"><span data-stu-id="165ec-127">Version differences</span></span>
+### <a name="version-differences"></a><span data-ttu-id="958f8-127">バージョンの相違点</span><span class="sxs-lookup"><span data-stu-id="958f8-127">Version differences</span></span>
 
-<span data-ttu-id="165ec-128">この要素は、Exchange のビルド 15.00.0986.00 以降のバージョンで利用できます。</span><span class="sxs-lookup"><span data-stu-id="165ec-128">This element is available in versions of Exchange starting with build 15.00.0986.00.</span></span>
+<span data-ttu-id="958f8-128">この要素は、build 15.00.0986.00 以降のバージョンの Exchange で使用できます。</span><span class="sxs-lookup"><span data-stu-id="958f8-128">This element is available in versions of Exchange starting with build 15.00.0986.00.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="165ec-129">要素情報</span><span class="sxs-lookup"><span data-stu-id="165ec-129">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="958f8-129">要素の情報</span><span class="sxs-lookup"><span data-stu-id="958f8-129">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="165ec-130">名前空間</span><span class="sxs-lookup"><span data-stu-id="165ec-130">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="165ec-131">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="165ec-131">Schema Name</span></span>  <br/> |<span data-ttu-id="165ec-132">タイプのスキーマ</span><span class="sxs-lookup"><span data-stu-id="165ec-132">Types schema</span></span>  <br/> |
-|<span data-ttu-id="165ec-133">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="165ec-133">Validation File</span></span>  <br/> |<span data-ttu-id="165ec-134">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="165ec-134">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="165ec-135">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="165ec-135">Can be Empty</span></span>  <br/> |<span data-ttu-id="165ec-136">False</span><span class="sxs-lookup"><span data-stu-id="165ec-136">False</span></span>  <br/> |
+|<span data-ttu-id="958f8-130">Namespace</span><span class="sxs-lookup"><span data-stu-id="958f8-130">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="958f8-131">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="958f8-131">Schema Name</span></span>  <br/> |<span data-ttu-id="958f8-132">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="958f8-132">Types schema</span></span>  <br/> |
+|<span data-ttu-id="958f8-133">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="958f8-133">Validation File</span></span>  <br/> |<span data-ttu-id="958f8-134">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="958f8-134">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="958f8-135">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="958f8-135">Can be Empty</span></span>  <br/> |<span data-ttu-id="958f8-136">正しくない</span><span class="sxs-lookup"><span data-stu-id="958f8-136">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="165ec-137">関連項目</span><span class="sxs-lookup"><span data-stu-id="165ec-137">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="958f8-137">関連項目</span><span class="sxs-lookup"><span data-stu-id="958f8-137">See also</span></span>
 
 
 
-- [<span data-ttu-id="165ec-138">Exchange での EWS の XML 要素</span><span class="sxs-lookup"><span data-stu-id="165ec-138">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="958f8-138">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="958f8-138">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
