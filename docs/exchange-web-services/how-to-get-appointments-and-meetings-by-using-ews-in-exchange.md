@@ -3,26 +3,26 @@ title: Exchange の EWS を使用して予定と会議を取得する
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 1bae582a-8cb3-4e77-be2a-7e107fad26fe
 description: EWS マネージ API または Exchange の EWS を使用して、予定と会議を取得する方法を説明します。
-ms.openlocfilehash: c78d70ca2266bd192b82f644d902ad8c958d2d4a
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
-ms.translationtype: HT
+localization_priority: Priority
+ms.openlocfilehash: d951bfeccdf50ae1397ecdd4887ed05548b25001
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353694"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528091"
 ---
-# <a name="get-appointments-and-meetings-by-using-ews-in-exchange"></a><span data-ttu-id="fae71-103">Exchange の EWS を使用して予定と会議を取得する</span><span class="sxs-lookup"><span data-stu-id="fae71-103">How to: Get appointments and meetings by using EWS in Exchange</span></span>
+# <a name="get-appointments-and-meetings-by-using-ews-in-exchange"></a><span data-ttu-id="9b1c8-103">Exchange の EWS を使用して予定と会議を取得する</span><span class="sxs-lookup"><span data-stu-id="9b1c8-103">Get appointments and meetings by using EWS in Exchange</span></span>
 
-<span data-ttu-id="fae71-104">EWS マネージ API または Exchange の EWS を使用して、予定と会議を取得する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="fae71-104">Learn how to get appointments and meetings by using the EWS Managed API or EWS in Exchange.</span></span>
+<span data-ttu-id="9b1c8-104">EWS マネージ API または Exchange の EWS を使用して、予定と会議を取得する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="9b1c8-104">Learn how to get appointments and meetings by using the EWS Managed API or EWS in Exchange.</span></span>
   
-<span data-ttu-id="fae71-105">[CalendarFolder.FindAppointments](http://msdn.microsoft.com/ja-JP/library/dd636179%28v=exchg.80%29.aspx) EWS マネージ API メソッド、または [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) EWS 操作を使用して、予定表フォルダーから予定と会議を取得できます。</span><span class="sxs-lookup"><span data-stu-id="fae71-105">You can retrieve appointments and meetings from a calendar folder by using the [CalendarFolder.FindAppointmentshttp://msdn.microsoft.com/en-us/library/dd636179(v=exchg.80).aspx](http://msdn.microsoft.com/ja-JP/library/dd636179%28v=exchg.80%29.aspx) EWS Managed API method or the [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) EWS operation.</span></span> 
+<span data-ttu-id="9b1c8-105">[CalendarFolder.FindAppointments](https://msdn.microsoft.com/library/dd636179%28v=exchg.80%29.aspx) EWS マネージ API メソッド、または [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) EWS 操作を使用して、予定表フォルダーから予定と会議を取得できます。</span><span class="sxs-lookup"><span data-stu-id="9b1c8-105">You can retrieve appointments and meetings from a calendar folder by using the [CalendarFolder.FindAppointments](https://msdn.microsoft.com/library/dd636179%28v=exchg.80%29.aspx) EWS Managed API method or the [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) EWS operation.</span></span> 
   
-## <a name="get-appointments-by-using-the-ews-managed-api"></a><span data-ttu-id="fae71-106">EWS マネージ API を使用して、予定を取得する</span><span class="sxs-lookup"><span data-stu-id="fae71-106">Get appointments by using the EWS Managed API</span></span>
-<span data-ttu-id="fae71-107"><a name="bk_retrieveappsEWSMA"> </a></span><span class="sxs-lookup"><span data-stu-id="fae71-107"></span></span>
+## <a name="get-appointments-by-using-the-ews-managed-api"></a><span data-ttu-id="9b1c8-106">EWS マネージ API を使用して、予定を取得する</span><span class="sxs-lookup"><span data-stu-id="9b1c8-106">Get appointments by using the EWS Managed API</span></span>
+<span data-ttu-id="9b1c8-107"><a name="bk_retrieveappsEWSMA"> </a></span><span class="sxs-lookup"><span data-stu-id="9b1c8-107"><a name="bk_retrieveappsEWSMA"> </a></span></span>
 
-<span data-ttu-id="fae71-108">次のコード例は、EWS マネージ API を使用して、指定した開始時刻から終了時刻までの範囲にあるユーザーの予定を取得する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="fae71-108">The following code example shows how to use the EWS Managed API to retrieve a user's appointments that fall between a specified start and end time.</span></span>
+<span data-ttu-id="9b1c8-108">次のコード例は、EWS マネージ API を使用して、指定した開始時刻から終了時刻までの範囲にあるユーザーの予定を取得する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="9b1c8-108">The following code example shows how to use the EWS Managed API to retrieve a user's appointments that fall between a specified start and end time.</span></span>
   
 ```cs
        // Initialize values for the start and end times, and the number of appointments to retrieve.
@@ -52,7 +52,7 @@ ms.locfileid: "21353694"
 
 <br/>
 
-<span data-ttu-id="fae71-109">以下に示すのは、コード例からの出力です。</span><span class="sxs-lookup"><span data-stu-id="fae71-109">The following is the output from the code example.</span></span>
+<span data-ttu-id="9b1c8-109">以下に示すのは、コード例からの出力です。</span><span class="sxs-lookup"><span data-stu-id="9b1c8-109">The following is the output from the code example.</span></span>
   
 ```text
 The first five appointments on your calendar from 8/21/2013 to 9/20/2013 are: 
@@ -68,17 +68,17 @@ Subject: Tennis at the club Start: 8/22/2013 11:00:00 AM End: 8/22/2013 12:00:00
 Subject: Online training webcast: 8/22/2013 2:00:00 PM End: 8/22/2013 3:00:00 PM
 ```
 
-## <a name="get-appointments-by-using-ews"></a><span data-ttu-id="fae71-110">EWS を使用して、予定を取得する</span><span class="sxs-lookup"><span data-stu-id="fae71-110">Get appointments by using EWS</span></span>
-<span data-ttu-id="fae71-111"><a name="bk_xml"> </a></span><span class="sxs-lookup"><span data-stu-id="fae71-111"></span></span>
+## <a name="get-appointments-by-using-ews"></a><span data-ttu-id="9b1c8-110">EWS を使用して、予定を取得する</span><span class="sxs-lookup"><span data-stu-id="9b1c8-110">Get appointments by using EWS</span></span>
+<span data-ttu-id="9b1c8-111"><a name="bk_xml"> </a></span><span class="sxs-lookup"><span data-stu-id="9b1c8-111"><a name="bk_xml"> </a></span></span>
 
-<span data-ttu-id="fae71-112">次の XML は [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 操作のフォルダー ID を返す [GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) 操作の要求を示します。</span><span class="sxs-lookup"><span data-stu-id="fae71-112">The following XML shows a [GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) operation request to return a folder ID for the [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)  operation.</span></span> 
+<span data-ttu-id="9b1c8-112">次の XML は [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 操作のフォルダー ID を返す [GetFolder](https://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) 操作の要求を示します。</span><span class="sxs-lookup"><span data-stu-id="9b1c8-112">The following XML shows a [GetFolder](https://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) operation request to return a folder ID for the [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) operation.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-       xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-       xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+       xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+       xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -97,20 +97,20 @@ Subject: Online training webcast: 8/22/2013 2:00:00 PM End: 8/22/2013 3:00:00 PM
 
 <br/>
 
-<span data-ttu-id="fae71-p101">次の XML は **GetFolder** 応答を示します。**FolderID** 属性と **ChangeKey** 属性は読みやすいように短縮されていますので、ご注意ください。</span><span class="sxs-lookup"><span data-stu-id="fae71-p101">The following XML shows the **GetFolder** response. Note that the **FolderID** and **ChangeKey** attributes are shortened for readability.</span></span> 
+<span data-ttu-id="9b1c8-p101">次の XML は **GetFolder** 応答を示します。**FolderID** 属性と **ChangeKey** 属性は読みやすいように短縮されていますので、ご注意ください。</span><span class="sxs-lookup"><span data-stu-id="9b1c8-p101">The following XML shows the **GetFolder** response. Note that the **FolderID** and **ChangeKey** attributes are shortened for readability.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="731" MinorBuildNumber="10" Version="V2_3" 
- xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
- xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
- xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetFolderResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -128,14 +128,14 @@ Subject: Online training webcast: 8/22/2013 2:00:00 PM End: 8/22/2013 3:00:00 PM
 
 <br/>
 
-<span data-ttu-id="fae71-p102">次の XML は、要求された予定を返すために使用される **FindItem** 要求を示します。**FolderID** 属性と **ChangeKey** 属性は読みやすいように短縮されていますので、ご注意ください。</span><span class="sxs-lookup"><span data-stu-id="fae71-p102">The following XML shows the **FindItem** request used to return the requested appointments. Note that the **FolderID** and **ChangeKey** attributes are shortened for readability.</span></span> 
+<span data-ttu-id="9b1c8-p102">次の XML は、要求された予定を返すために使用される **FindItem** 要求を示します。**FolderID** 属性と **ChangeKey** 属性は読みやすいように短縮されていますので、ご注意ください。</span><span class="sxs-lookup"><span data-stu-id="9b1c8-p102">The following XML shows the **FindItem** request used to return the requested appointments. Note that the **FolderID** and **ChangeKey** attributes are shortened for readability.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-       xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-       xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+       xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+       xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -160,21 +160,21 @@ Subject: Online training webcast: 8/22/2013 2:00:00 PM End: 8/22/2013 3:00:00 PM
 
 <br/>
 
-<span data-ttu-id="fae71-p103">次の XML は **FindItem** 応答を示します。**ItemID** 属性と **ChangeKey** 属性は読みやすいように短縮されていますので、ご注意ください。</span><span class="sxs-lookup"><span data-stu-id="fae71-p103">The following XML shows the **FindItem** response. Note that the **ItemID** and **ChangeKey** attributes are shortened for readability.</span></span> 
+<span data-ttu-id="9b1c8-p103">次の XML は **FindItem** 応答を示します。**ItemID** 属性と **ChangeKey** 属性は読みやすいように短縮されていますので、ご注意ください。</span><span class="sxs-lookup"><span data-stu-id="9b1c8-p103">The following XML shows the **FindItem** response. Note that the **ItemID** and **ChangeKey** attributes are shortened for readability.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="731" MinorBuildNumber="10" Version="V2_3" 
- xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
- xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:FindItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:FindItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:FindItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -219,20 +219,20 @@ xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
 </s:Envelope>
 ```
 
-## <a name="recurring-meetings-and-the-calendar-view"></a><span data-ttu-id="fae71-119">定期的な会議および予定表の表示</span><span class="sxs-lookup"><span data-stu-id="fae71-119">Recurring meetings and the calendar view</span></span>
-<span data-ttu-id="fae71-120"><a name="bk_recurring"> </a></span><span class="sxs-lookup"><span data-stu-id="fae71-120"></span></span>
+## <a name="recurring-meetings-and-the-calendar-view"></a><span data-ttu-id="9b1c8-119">定期的な会議および予定表の表示</span><span class="sxs-lookup"><span data-stu-id="9b1c8-119">Recurring meetings and the calendar view</span></span>
+<span data-ttu-id="9b1c8-120"><a name="bk_recurring"> </a></span><span class="sxs-lookup"><span data-stu-id="9b1c8-120"><a name="bk_recurring"> </a></span></span>
 
-<span data-ttu-id="fae71-121">繰り返し連続で発生するアイテムや、繰り返し連続で発生するアイテムの例外は、メールボックス内の実際のアイテムではなく、定期的なマスターへの添付物として内部に格納されるため、予定表フォルダーはメールボックス内の他のフォルダーとは少し異なります。</span><span class="sxs-lookup"><span data-stu-id="fae71-121">Items in a Calendar folder are a little different from items in other folders in a mailbox because occurrences in a recurring series and exceptions to a recurring series are not actual items in the mailbox, but rather are stored internally as attachments to a recurring master. Therefore, in order to retrieve all appointments in a given date range, you need to use a calendar view. To learn more about retrieving appointments and calendar views, see How to: Get appointments and meetings by using EWS in Exchange.</span></span> <span data-ttu-id="fae71-122">つまり、[ExchangeService.FindItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)、または EWS [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 操作など、EWS マネージ API **FindItems** メソッドのいずれかを使用して、**開始**値と**終了**値のセット間の値を返す EWS 要求を作成することができますが、EWS は各予定表アイテムの添付テーブルを確認して、例外や発生アイテムを検索することはしません。</span><span class="sxs-lookup"><span data-stu-id="fae71-122">The calendar folder is a little different from other folders in a mailbox because occurrences in a recurring series and exceptions to a recurring series are not actual items in the mailbox, but rather are stored internally as attachments to a recurring master. This means that although you can create an EWS request that returns values between a set of **start** and **end** values by using one of the EWS Managed API **FindItems** overload methods, such as [ExchangeService.FindItemshttp://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems(v=exchg.80).aspx](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) or the EWS [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) operation, EWS would not look through the attachment table of every calendar item to find exceptions and occurrences.</span></span> 
+<span data-ttu-id="9b1c8-121">繰り返し連続で発生するアイテムや、繰り返し連続で発生するアイテムの例外は、メールボックス内の実際のアイテムではなく、定期的なマスターへの添付物として内部に格納されるため、予定表フォルダーはメールボックス内の他のフォルダーとは少し異なります。</span><span class="sxs-lookup"><span data-stu-id="9b1c8-121">The calendar folder is a little different from other folders in a mailbox because occurrences in a recurring series and exceptions to a recurring series are not actual items in the mailbox, but rather are stored internally as attachments to a recurring master.</span></span> <span data-ttu-id="9b1c8-122">つまり、[ExchangeService.FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)、または EWS [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 操作など、EWS マネージ API **FindItems** メソッドのいずれかを使用して、**開始**値と**終了**値のセット間の値を返す EWS 要求を作成することができますが、EWS は各予定表アイテムの添付テーブルを確認して、例外や発生アイテムを検索することはしません。</span><span class="sxs-lookup"><span data-stu-id="9b1c8-122">This means that although you can create an EWS request that returns values between a set of **start** and **end** values by using one of the EWS Managed API **FindItems** overload methods, such as [ExchangeService.FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) or the EWS [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) operation, EWS would not look through the attachment table of every calendar item to find exceptions and occurrences.</span></span> 
   
-<span data-ttu-id="fae71-123">むしろ、本当に実行したいことは、[CalendarView](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.calendarview%28v=exchg.80%29.aspx) オブジェクトを使用して、2 つの SQL テーブルのユニオン上に *Dataview* を適用する操作に類似する操作です。</span><span class="sxs-lookup"><span data-stu-id="fae71-123">Instead, what you really want to do is something akin to applying a  *Dataview*  onto a union of two SQL tables, using a [CalendarView](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.calendarview%28v=exchg.80%29.aspx) object.</span></span> <span data-ttu-id="fae71-124">パフォーマンス上の理由から、[PropertySet](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx) プロパティを使用して、返すことを望む予定や会議の件数や望みのプロパティを指示し、応答のサイズを制限することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="fae71-124">Instead, what you really want to do is something akin to applying a Dataview onto a union of two SQL tables, using a  CalendarView http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.calendarview(v=exchg.80).aspx  object. Note that for performance reasons, we recommend that you use the  PropertySet http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.propertyset(v=exchg.80).aspx  property to limit the size of the response by indicating the number of appointments or meetings you want returned, as well as the specific properties you want.</span></span> 
+<span data-ttu-id="9b1c8-123">むしろ、本当に実行したいことは、[CalendarView](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.calendarview%28v=exchg.80%29.aspx) オブジェクトを使用して、2 つの SQL テーブルのユニオン上に *Dataview* を適用する操作に類似する操作です。</span><span class="sxs-lookup"><span data-stu-id="9b1c8-123">Instead, what you really want to do is something akin to applying a  *Dataview*  onto a union of two SQL tables, using a [CalendarView](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.calendarview%28v=exchg.80%29.aspx) object.</span></span> <span data-ttu-id="9b1c8-124">パフォーマンス上の理由から、[PropertySet](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx) プロパティを使用して、返すことを望む予定や会議の件数や望みのプロパティを指示し、応答のサイズを制限することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="9b1c8-124">Note that for performance reasons, we recommend that you use the [PropertySet](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx) property to limit the size of the response by indicating the number of appointments or meetings you want returned, as well as the specific properties you want.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="fae71-125">関連項目</span><span class="sxs-lookup"><span data-stu-id="fae71-125">See also</span></span>
-<span data-ttu-id="fae71-126"><a name="bk_additional"> </a></span><span class="sxs-lookup"><span data-stu-id="fae71-126"></span></span>
+## <a name="see-also"></a><span data-ttu-id="9b1c8-125">関連項目</span><span class="sxs-lookup"><span data-stu-id="9b1c8-125">See also</span></span>
+<span data-ttu-id="9b1c8-126"><a name="bk_additional"> </a></span><span class="sxs-lookup"><span data-stu-id="9b1c8-126"><a name="bk_additional"> </a></span></span>
 
-- [<span data-ttu-id="fae71-127">Exchange の予定表と EWS</span><span class="sxs-lookup"><span data-stu-id="fae71-127">Calendars and EWS in Exchange</span></span>](calendars-and-ews-in-exchange.md)   
-- [<span data-ttu-id="fae71-128">Exchange 2013 の EWS を使用して予定と会議を作成する</span><span class="sxs-lookup"><span data-stu-id="fae71-128">How to: Create appointments and meetings by using EWS in Exchange 2013</span></span>](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)  
-- [<span data-ttu-id="fae71-129">Exchange の EWS を使用して予定と会議を更新する</span><span class="sxs-lookup"><span data-stu-id="fae71-129">How to: Update appointments and meetings by using EWS in Exchange</span></span>](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)  
-- [<span data-ttu-id="fae71-130">Exchange で EWS を使用して、予定を削除し、会議をキャンセルする</span><span class="sxs-lookup"><span data-stu-id="fae71-130">How to: Delete appointments and cancel meetings by using EWS in Exchange</span></span>](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md) 
-- [<span data-ttu-id="fae71-131">Exchange 用の Web サービス クライアントの開発</span><span class="sxs-lookup"><span data-stu-id="fae71-131">Develop web service clients for Exchange</span></span>](develop-web-service-clients-for-exchange.md)
+- [<span data-ttu-id="9b1c8-127">Exchange の予定表と EWS</span><span class="sxs-lookup"><span data-stu-id="9b1c8-127">Calendars and EWS in Exchange</span></span>](calendars-and-ews-in-exchange.md)   
+- [<span data-ttu-id="9b1c8-128">Exchange 2013 で EWS を使用して予定と会議を作成する</span><span class="sxs-lookup"><span data-stu-id="9b1c8-128">Create appointments and meetings by using EWS in Exchange 2013</span></span>](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)  
+- [<span data-ttu-id="9b1c8-129">Exchange で EWS を使用して予定と会議を更新する</span><span class="sxs-lookup"><span data-stu-id="9b1c8-129">Update appointments and meetings by using EWS in Exchange</span></span>](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)  
+- [<span data-ttu-id="9b1c8-130">Exchange の EWS を使用して、予定を削除し、会議をキャンセルする</span><span class="sxs-lookup"><span data-stu-id="9b1c8-130">Delete appointments and cancel meetings by using EWS in Exchange</span></span>](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md) 
+- [<span data-ttu-id="9b1c8-131">Exchange の Web サービス クライアントを開発する</span><span class="sxs-lookup"><span data-stu-id="9b1c8-131">Develop web service clients for Exchange</span></span>](develop-web-service-clients-for-exchange.md)
     
 

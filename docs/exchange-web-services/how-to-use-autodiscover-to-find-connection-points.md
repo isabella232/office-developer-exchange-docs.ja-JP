@@ -3,82 +3,82 @@ title: 自動検出を使用して接続ポイントを検索する
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 03896542-549b-4c45-973c-98f9025ea26c
 description: 自動検出サービスを使用して、適切な Exchange サーバーにクライアント アプリケーションを誘導する方法について説明します。
-ms.openlocfilehash: eb3fb3664e5789638c097a43cf48f757bb0713ae
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
-ms.translationtype: HT
+localization_priority: Priority
+ms.openlocfilehash: c1895fa0d2cce489467a726614e9457052624ef6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353981"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527594"
 ---
-# <a name="use-autodiscover-to-find-connection-points"></a><span data-ttu-id="95c22-103">自動検出を使用して接続ポイントを検索する</span><span class="sxs-lookup"><span data-stu-id="95c22-103">Use Autodiscover to find connection points</span></span>
+# <a name="use-autodiscover-to-find-connection-points"></a><span data-ttu-id="a9112-103">自動検出を使用して接続ポイントを検索する</span><span class="sxs-lookup"><span data-stu-id="a9112-103">Use Autodiscover to find connection points</span></span>
 
-<span data-ttu-id="95c22-104">自動検出サービスを使用して、適切な Exchange サーバーにクライアント アプリケーションを誘導する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="95c22-104">Find out how to use the Autodiscover service to direct your client application to the correct Exchange server.</span></span>
+<span data-ttu-id="a9112-104">自動検出サービスを使用して、適切な Exchange サーバーにクライアント アプリケーションを誘導する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="a9112-104">Find out how to use the Autodiscover service to direct your client application to the correct Exchange server.</span></span>
   
-<span data-ttu-id="95c22-p101">Exchange 自動検出サービスは、Exchange Online、Office 365 の一部としての Exchange Online、または Exchange 2013 以降のバージョンの Exchange を実行する Exchange サーバー上でホストされているメール アカウントの構成設定をクライアント アプリケーションに提供します。自動検出サービスは、構成設定を提供する Web サービスです。自動検出サービスは、クライアント アプリケーションに Exchange サーバーの構成情報を提供する Web サービスです。クライアント アプリケーションは、自動検出を使用して、特定のメールボックスの自動検出サービスのエンドポイントを決定します。この記事では、Exchange サーバーからの応答に従って適切なエンドポイントを検索する方法について説明します。 </span><span class="sxs-lookup"><span data-stu-id="95c22-p101">The Exchange Autodiscover service provides your client application with configuration settings for email accounts that are hosted on Exchange Online, Exchange Online as part of Office 365, or an Exchange server running a version of Exchange starting with Exchange 2013. The Autodiscover service is a web service that provides configuration settings. The Autodiscover service is a web service that provides Exchange server configuration information to your client application. Client applications use Autodiscover to determine the endpoint of the Autodiscover service for a specific mailbox. This article explains how to follow the responses from an Exchange server to find the correct endpoint.</span></span> 
+<span data-ttu-id="a9112-p101">Exchange 自動検出サービスは、Exchange Online、Office 365 の一部としての Exchange Online、または Exchange 2013 以降のバージョンの Exchange を実行する Exchange サーバー上でホストされているメール アカウントの構成設定をクライアント アプリケーションに提供します。自動検出サービスは、構成設定を提供する Web サービスです。自動検出サービスは、クライアント アプリケーションに Exchange サーバーの構成情報を提供する Web サービスです。クライアント アプリケーションは、自動検出を使用して、特定のメールボックスの自動検出サービスのエンドポイントを決定します。この記事では、Exchange サーバーからの応答に従って適切なエンドポイントを検索する方法について説明します。 </span><span class="sxs-lookup"><span data-stu-id="a9112-p101">The Exchange Autodiscover service provides your client application with configuration settings for email accounts that are hosted on Exchange Online, Exchange Online as part of Office 365, or an Exchange server running a version of Exchange starting with Exchange 2013. The Autodiscover service is a web service that provides configuration settings. The Autodiscover service is a web service that provides Exchange server configuration information to your client application. Client applications use Autodiscover to determine the endpoint of the Autodiscover service for a specific mailbox. This article explains how to follow the responses from an Exchange server to find the correct endpoint.</span></span> 
   
-<span data-ttu-id="95c22-110">メール アドレスの構成設定を取得する方法の詳細については、「[自動検出を使用して Exchange からユーザー設定を取得する](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)」および「[Exchange サーバーからドメイン設定を取得する](how-to-get-domain-settings-from-an-exchange-server.md)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="95c22-110">For information about how to get email address configuration settings, see How to: Get user settings from an Exchange server and How to: Get domain settings from an Exchange server.</span></span>
+<span data-ttu-id="a9112-110">メール アドレスの構成設定を取得する方法の詳細については、「[自動検出を使用して Exchange からユーザー設定を取得する](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)」および「[Exchange サーバーからドメイン設定を取得する](how-to-get-domain-settings-from-an-exchange-server.md)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="a9112-110">For information about how to get email address configuration settings, see [Get user settings from Exchange by using Autodiscover](how-to-get-user-settings-from-exchange-by-using-autodiscover.md) and [Get domain settings from an Exchange server](how-to-get-domain-settings-from-an-exchange-server.md).</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="95c22-p102">適切なエンドポイントを検索するプロセスは、ユーザーまたはドメイン設定の要求の一部です。自動検出サービスは、一連のリダイレクト応答を使用して、クライアント アプリケーションにメール アドレスの適切なエンドポイントを指示します。</span><span class="sxs-lookup"><span data-stu-id="95c22-p102">The process for finding the correct endpoint is part of the request for user or domain settings. The Autodiscover service uses a series of redirect responses to send the client application to the correct endpoint for an email address.</span></span> 
+> <span data-ttu-id="a9112-p102">適切なエンドポイントを検索するプロセスは、ユーザーまたはドメイン設定の要求の一部です。自動検出サービスは、一連のリダイレクト応答を使用して、クライアント アプリケーションにメール アドレスの適切なエンドポイントを指示します。</span><span class="sxs-lookup"><span data-stu-id="a9112-p102">The process for finding the correct endpoint is part of the request for user or domain settings. The Autodiscover service uses a series of redirect responses to send the client application to the correct endpoint for an email address.</span></span> 
   
-<span data-ttu-id="95c22-113">自動検出サービスにアクセスするには、次の Exchange 開発テクノロジのうちの 1 つを使用できます。</span><span class="sxs-lookup"><span data-stu-id="95c22-113">You can use one of the following Exchange development technologies to access the Autodiscover service:</span></span>
+<span data-ttu-id="a9112-113">自動検出サービスにアクセスするには、次の Exchange 開発テクノロジのうちの 1 つを使用できます。</span><span class="sxs-lookup"><span data-stu-id="a9112-113">You can use one of the following Exchange development technologies to access the Autodiscover service:</span></span>
 
-- <span data-ttu-id="95c22-114">Exchange Web サービス (EWS) マネージ API</span><span class="sxs-lookup"><span data-stu-id="95c22-114">The Exchange Web Services (EWS) Managed API</span></span>
+- <span data-ttu-id="a9112-114">Exchange Web サービス (EWS) マネージ API</span><span class="sxs-lookup"><span data-stu-id="a9112-114">The Exchange Web Services (EWS) Managed API</span></span>
     
-- <span data-ttu-id="95c22-115">EWS</span><span class="sxs-lookup"><span data-stu-id="95c22-115">EWS</span></span>
+- <span data-ttu-id="a9112-115">EWS</span><span class="sxs-lookup"><span data-stu-id="a9112-115">EWS</span></span>
     
-<span data-ttu-id="95c22-116">EWS を使用する場合は、次の方法を使用してユーザー設定を取得できます。</span><span class="sxs-lookup"><span data-stu-id="95c22-116">If you are using EWS, you can use the following methods to retrieve user settings:</span></span>
+<span data-ttu-id="a9112-116">EWS を使用する場合は、次の方法を使用してユーザー設定を取得できます。</span><span class="sxs-lookup"><span data-stu-id="a9112-116">If you are using EWS, you can use the following methods to retrieve user settings:</span></span>
     
-- <span data-ttu-id="95c22-117">SOAP ベースの自動検出サービス</span><span class="sxs-lookup"><span data-stu-id="95c22-117">The SOAP-based Autodiscover service</span></span>
+- <span data-ttu-id="a9112-117">SOAP ベースの自動検出サービス</span><span class="sxs-lookup"><span data-stu-id="a9112-117">The SOAP-based Autodiscover service</span></span>
     
-- <span data-ttu-id="95c22-118">XML (POX) 自動検出サービス</span><span class="sxs-lookup"><span data-stu-id="95c22-118">The XML (POX) Autodiscover service</span></span>
+- <span data-ttu-id="a9112-118">XML (POX) 自動検出サービス</span><span class="sxs-lookup"><span data-stu-id="a9112-118">The XML (POX) Autodiscover service</span></span>
     
-- <span data-ttu-id="95c22-119">SOAP または XML の自動検出サービスから生成される、自動生成されたプロキシ</span><span class="sxs-lookup"><span data-stu-id="95c22-119">An autogenerated proxy generated from the SOAP or XML Autodiscover service</span></span>
+- <span data-ttu-id="a9112-119">SOAP または XML の自動検出サービスから生成される、自動生成されたプロキシ</span><span class="sxs-lookup"><span data-stu-id="a9112-119">An autogenerated proxy generated from the SOAP or XML Autodiscover service</span></span>
     
-<span data-ttu-id="95c22-120">これらの方法の詳細については、「[Exchange の自動検出](autodiscover-for-exchange.md)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="95c22-120">For more information about these methods, see [Autodiscover in Exchange 2013](autodiscover-for-exchange.md).</span></span>
+<span data-ttu-id="a9112-120">これらの方法の詳細については、「[Exchange の自動検出](autodiscover-for-exchange.md)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="a9112-120">For more information about these methods, see [Autodiscover for Exchange](autodiscover-for-exchange.md).</span></span>
 
-<span data-ttu-id="95c22-121">これらの Exchange 開発テクノロジの詳細については、「[Exchange の EWS マネージ API、EWS、および Web サービスについて学ぶ](explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="95c22-121">For more information about these Exchange development technologies, see [EWS Managed API, EWS, and web services in Exchange](explore-the-ews-managed-api-ews-and-web-services-in-exchange.md).</span></span> 
+<span data-ttu-id="a9112-121">これらの Exchange 開発テクノロジの詳細については、「[Exchange の EWS マネージ API、EWS、および Web サービスについて学ぶ](explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a9112-121">For more information about these Exchange development technologies, see [Explore the EWS Managed API, EWS, and web services in Exchange](explore-the-ews-managed-api-ews-and-web-services-in-exchange.md).</span></span> 
 
-<span data-ttu-id="95c22-p103">EWS マネージ API は、ユーザー設定を取得するためのオブジェクト ベースのインターフェイスを提供します。クライアント アプリケーションがマネージ コードを使用する場合は、EWS マネージ API を使用することをお勧めします。EWS マネージ API インターフェイスは、標準的な自動生成された Web サービス プロキシよりも、単純なオブジェクト モデルに対してより最適化されています。</span><span class="sxs-lookup"><span data-stu-id="95c22-p103">The EWS Managed API provides an object-based interface for retrieving user settings. If your client application uses managed code, we recommend that you use the EWS Managed API. The EWS Managed API interface is better optimized for a simple object model than the typical autogenerated web service proxy.</span></span> 
+<span data-ttu-id="a9112-p103">EWS マネージ API は、ユーザー設定を取得するためのオブジェクト ベースのインターフェイスを提供します。クライアント アプリケーションがマネージ コードを使用する場合は、EWS マネージ API を使用することをお勧めします。EWS マネージ API インターフェイスは、標準的な自動生成された Web サービス プロキシよりも、単純なオブジェクト モデルに対してより最適化されています。</span><span class="sxs-lookup"><span data-stu-id="a9112-p103">The EWS Managed API provides an object-based interface for retrieving user settings. If your client application uses managed code, we recommend that you use the EWS Managed API. The EWS Managed API interface is better optimized for a simple object model than the typical autogenerated web service proxy.</span></span> 
   
-<span data-ttu-id="95c22-125">EWS を使用している場合は、POX の自動検出サービスよりも豊富な機能をサポートしている SOAP の自動検出サービスの使用をお勧めします。</span><span class="sxs-lookup"><span data-stu-id="95c22-125">If you are using EWS, we suggest that you use the SOAP Autodiscover service, because it supports a richer set of features than the POX Autodiscover service.</span></span>
+<span data-ttu-id="a9112-125">EWS を使用している場合は、POX の自動検出サービスよりも豊富な機能をサポートしている SOAP の自動検出サービスの使用をお勧めします。</span><span class="sxs-lookup"><span data-stu-id="a9112-125">If you are using EWS, we suggest that you use the SOAP Autodiscover service, because it supports a richer set of features than the POX Autodiscover service.</span></span>
   
-## <a name="prerequisites-for-finding-an-endpoint"></a><span data-ttu-id="95c22-126">エンドポイントを検索するための前提条件</span><span class="sxs-lookup"><span data-stu-id="95c22-126">Prerequisites for finding an endpoint</span></span>
-<span data-ttu-id="95c22-127"><a name="bk_Prereq"> </a></span><span class="sxs-lookup"><span data-stu-id="95c22-127"></span></span>
+## <a name="prerequisites-for-finding-an-endpoint"></a><span data-ttu-id="a9112-126">エンドポイントを検索するための前提条件</span><span class="sxs-lookup"><span data-stu-id="a9112-126">Prerequisites for finding an endpoint</span></span>
+<span data-ttu-id="a9112-127"><a name="bk_Prereq"> </a></span><span class="sxs-lookup"><span data-stu-id="a9112-127"><a name="bk_Prereq"> </a></span></span>
 
-<span data-ttu-id="95c22-128">自動検出サービスを使用するクライアント アプリケーションを作成するには、次のものにアクセスできる必要があります。</span><span class="sxs-lookup"><span data-stu-id="95c22-128">Before you can create a client application that uses the Autodiscover service, you need to have access to the following:</span></span>
+<span data-ttu-id="a9112-128">自動検出サービスを使用するクライアント アプリケーションを作成するには、次のものにアクセスできる必要があります。</span><span class="sxs-lookup"><span data-stu-id="a9112-128">Before you can create a client application that uses the Autodiscover service, you need to have access to the following:</span></span>
   
-- <span data-ttu-id="95c22-p104">Exchange Online または Exchange 2007 SP1 以降のバージョンの Exchange を実行しているサーバー。SOAP ベースの自動検出サービスを使用している場合は、Exchange Online または Exchange 2010 以降のバージョンの Exchange。</span><span class="sxs-lookup"><span data-stu-id="95c22-p104">Exchange Online or a server that is running a version of Exchange starting with Exchange 2007 SP1. If you are using the SOAP-based Autodiscover service, Exchange Online or a version of Exchange starting with Exchange 2010.</span></span>
+- <span data-ttu-id="a9112-p104">Exchange Online または Exchange 2007 SP1 以降のバージョンの Exchange を実行しているサーバー。SOAP ベースの自動検出サービスを使用している場合は、Exchange Online または Exchange 2010 以降のバージョンの Exchange。</span><span class="sxs-lookup"><span data-stu-id="a9112-p104">Exchange Online or a server that is running a version of Exchange starting with Exchange 2007 SP1. If you are using the SOAP-based Autodiscover service, Exchange Online or a version of Exchange starting with Exchange 2010.</span></span>
     
-- <span data-ttu-id="95c22-131">クライアント アプリケーションからの接続を受け入れるように構成されている Exchange サーバー。</span><span class="sxs-lookup"><span data-stu-id="95c22-131">An Exchange server that is configured to accept connections from your client application. For information about how to configure your Exchange server, see EWS client application access.</span></span> <span data-ttu-id="95c22-132">Exchange サーバーを構成する方法の詳細については、「[Exchange において、EWS へのクライアント アプリケーションのアクセスを制御する](controlling-client-application-access-to-ews-in-exchange.md)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="95c22-132">For information about how to configure your Exchange server, see [Controlling client application access to EWS in Exchange](controlling-client-application-access-to-ews-in-exchange.md).</span></span>
+- <span data-ttu-id="a9112-131">クライアント アプリケーションからの接続を受け入れるように構成されている Exchange サーバー。</span><span class="sxs-lookup"><span data-stu-id="a9112-131">An Exchange server that is configured to accept connections from your client application.</span></span> <span data-ttu-id="a9112-132">Exchange サーバーを構成する方法の詳細については、「[Exchange において、EWS へのクライアント アプリケーションのアクセスを制御する](controlling-client-application-access-to-ews-in-exchange.md)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="a9112-132">For information about how to configure your Exchange server, see [Controlling client application access to EWS in Exchange](controlling-client-application-access-to-ews-in-exchange.md).</span></span>
     
-- <span data-ttu-id="95c22-133">EWS を使用する権限を持つアカウント。</span><span class="sxs-lookup"><span data-stu-id="95c22-133">An account that is authorized to use EWS.</span></span> <span data-ttu-id="95c22-134">アカウントを構成する方法の詳細については、「[Exchange において、EWS へのクライアント アプリケーションのアクセスを制御する](controlling-client-application-access-to-ews-in-exchange.md)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="95c22-134">For information about how to configure an account, see [Controlling client application access to EWS in Exchange](controlling-client-application-access-to-ews-in-exchange.md).</span></span>
+- <span data-ttu-id="a9112-133">EWS を使用する権限を持つアカウント。</span><span class="sxs-lookup"><span data-stu-id="a9112-133">An account that is authorized to use EWS.</span></span> <span data-ttu-id="a9112-134">アカウントを構成する方法の詳細については、「[Exchange において、EWS へのクライアント アプリケーションのアクセスを制御する](controlling-client-application-access-to-ews-in-exchange.md)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="a9112-134">For information about how to configure an account, see [Controlling client application access to EWS in Exchange](controlling-client-application-access-to-ews-in-exchange.md).</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="95c22-135">EWS マネージ API を使用する場合、状況によっては証明書の検証コールバックを提供する必要があります。</span><span class="sxs-lookup"><span data-stu-id="95c22-135">If you are using the EWS Managed API, you must provide a certificate validation callback in some circumstances.</span></span> <span data-ttu-id="95c22-136">Visual Studio で作成されたものなど、いくつかの生成されたプロキシ ライブラリによる証明書の検証コールバックが必要になる場合もあります。</span><span class="sxs-lookup"><span data-stu-id="95c22-136">If you are using the EWS Managed API, you will need to provide a certificate validation callback method in some circumstances. You might also need a certificate validation callback method with some generated proxy libraries, such as those created by Visual Studio.</span></span> <span data-ttu-id="95c22-137">詳細については、「[EWS マネージ API のサーバー証明書を検証する](how-to-validate-a-server-certificate-for-the-ews-managed-api.md)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="95c22-137">For more information, see [Validate a server certificate for the EWS Managed API](how-to-validate-a-server-certificate-for-the-ews-managed-api.md).</span></span> 
+> <span data-ttu-id="a9112-135">EWS マネージ API を使用する場合、状況によっては証明書の検証コールバックを提供する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a9112-135">If you are using the EWS Managed API, you must provide a certificate validation callback in some circumstances.</span></span> <span data-ttu-id="a9112-136">Visual Studio で作成されたものなど、いくつかの生成されたプロキシ ライブラリによる証明書の検証コールバックが必要になる場合もあります。</span><span class="sxs-lookup"><span data-stu-id="a9112-136">You may also need a certificate validation callback with some generated proxy libraries, such as those created by Visual Studio.</span></span> <span data-ttu-id="a9112-137">詳細については、「[EWS マネージ API のサーバー証明書を検証する](how-to-validate-a-server-certificate-for-the-ews-managed-api.md)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="a9112-137">For more information, see [Validate a server certificate for the EWS Managed API](how-to-validate-a-server-certificate-for-the-ews-managed-api.md).</span></span> 
   
-### <a name="core-concepts-for-finding-an-endpoint"></a><span data-ttu-id="95c22-138">エンドポイントを検索するための中核となる概念</span><span class="sxs-lookup"><span data-stu-id="95c22-138">Core concepts for finding an endpoint</span></span>
-<span data-ttu-id="95c22-139"><a name="bk_Core"> </a></span><span class="sxs-lookup"><span data-stu-id="95c22-139"></span></span>
+### <a name="core-concepts-for-finding-an-endpoint"></a><span data-ttu-id="a9112-138">エンドポイントを検索するための中核となる概念</span><span class="sxs-lookup"><span data-stu-id="a9112-138">Core concepts for finding an endpoint</span></span>
+<span data-ttu-id="a9112-139"><a name="bk_Core"> </a></span><span class="sxs-lookup"><span data-stu-id="a9112-139"><a name="bk_Core"> </a></span></span>
 
-<span data-ttu-id="95c22-140">自動検出を使用してエンドポイントを検索する前に、次の表に一覧表示されている概念について理解してください。</span><span class="sxs-lookup"><span data-stu-id="95c22-140">Before you use Autodiscover to find an endpoint, you should be familiar with the concepts listed in the following table.</span></span>
+<span data-ttu-id="a9112-140">自動検出を使用してエンドポイントを検索する前に、次の表に一覧表示されている概念について理解してください。</span><span class="sxs-lookup"><span data-stu-id="a9112-140">Before you use Autodiscover to find an endpoint, you should be familiar with the concepts listed in the following table.</span></span>
   
-|<span data-ttu-id="95c22-141">**概念**</span><span class="sxs-lookup"><span data-stu-id="95c22-141">**Concept**</span></span>|<span data-ttu-id="95c22-142">**説明**</span><span class="sxs-lookup"><span data-stu-id="95c22-142">**Description**</span></span>|
+|<span data-ttu-id="a9112-141">**概念**</span><span class="sxs-lookup"><span data-stu-id="a9112-141">**Concept**</span></span>|<span data-ttu-id="a9112-142">**説明**</span><span class="sxs-lookup"><span data-stu-id="a9112-142">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="95c22-143">Exchange の自動検出</span><span class="sxs-lookup"><span data-stu-id="95c22-143">Autodiscover for Exchange</span></span>](autodiscover-for-exchange.md) <br/> |<span data-ttu-id="95c22-144">自動検出サービスの動作方法の概要を示します。</span><span class="sxs-lookup"><span data-stu-id="95c22-144">Provides an overview of how the Autodiscover service works.</span></span>  <br/> |
+|[<span data-ttu-id="a9112-143">Exchange の自動検出</span><span class="sxs-lookup"><span data-stu-id="a9112-143">Autodiscover for Exchange</span></span>](autodiscover-for-exchange.md) <br/> |<span data-ttu-id="a9112-144">自動検出サービスの動作方法の概要を示します。</span><span class="sxs-lookup"><span data-stu-id="a9112-144">Provides an overview of how the Autodiscover service works.</span></span>  <br/> |
    
-<span data-ttu-id="95c22-145">EWS マネージ API を使用する場合は、[Microsoft.Exchange.WebServices.Data](http://msdn.microsoft.com/ja-JP/library/dd633907%28v=exchg.80%29.aspx) 名前空間の [Microsoft.Exchange.WebServices.Data.ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) クラスを使用して、EWS への接続を管理します。</span><span class="sxs-lookup"><span data-stu-id="95c22-145">If you are using the EWS Managed API, you use the [Microsoft.Exchange.WebServices.Data.ExchangeServicehttp://msdn.microsoft.com/en-us/library/exchange/dd635811(v=exchg.80).aspx](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) class in the  [Microsoft.Exchange.WebServices.Datahttp://msdn.microsoft.com/en-us/library/exchange/dd633907(v=exchg.80).aspx](http://msdn.microsoft.com/ja-JP/library/dd633907%28v=exchg.80%29.aspx) namespace to manage your connection to EWS. The code examples in this section assume that you reference the following namespaces in your code:</span></span> <span data-ttu-id="95c22-146">この記事の EWS マネージ API のコード サンプルを使用するには、コード内で次の名前空間を参照する必要があります。</span><span class="sxs-lookup"><span data-stu-id="95c22-146">To use the EWS Managed API code samples in this article, you need to reference the following namespaces in your code:</span></span> 
+<span data-ttu-id="a9112-145">EWS マネージ API を使用する場合は、[Microsoft.Exchange.WebServices.Data](https://msdn.microsoft.com/library/dd633907%28v=exchg.80%29.aspx) 名前空間の [Microsoft.Exchange.WebServices.Data.ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) クラスを使用して、EWS への接続を管理します。</span><span class="sxs-lookup"><span data-stu-id="a9112-145">If you are using the EWS Managed API, you use the [Microsoft.Exchange.WebServices.Data.ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) class in the [Microsoft.Exchange.WebServices.Data](https://msdn.microsoft.com/library/dd633907%28v=exchg.80%29.aspx) namespace to manage your connection to EWS.</span></span> <span data-ttu-id="a9112-146">この記事の EWS マネージ API のコード サンプルを使用するには、コード内で次の名前空間を参照する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a9112-146">To use the EWS Managed API code samples in this article, you need to reference the following namespaces in your code:</span></span> 
   
-- <span data-ttu-id="95c22-147">**System.Net**</span><span class="sxs-lookup"><span data-stu-id="95c22-147">**System.Net**</span></span>
+- <span data-ttu-id="a9112-147">**System.Net**</span><span class="sxs-lookup"><span data-stu-id="a9112-147">**System.Net**</span></span>
     
-- <span data-ttu-id="95c22-148">**Microsoft.Exchange.WebServices.Data.ExchangeService**</span><span class="sxs-lookup"><span data-stu-id="95c22-148">**Microsoft.Exchange.WebServices.Data.ExchangeService**</span></span>
+- <span data-ttu-id="a9112-148">**Microsoft.Exchange.WebServices.Data.ExchangeService**</span><span class="sxs-lookup"><span data-stu-id="a9112-148">**Microsoft.Exchange.WebServices.Data.ExchangeService**</span></span>
     
-## <a name="find-the-correct-endpoint-by-using-the-ews-managed-api"></a><span data-ttu-id="95c22-149">EWS マネージ API を使用して、適切なエンドポイントを検索する</span><span class="sxs-lookup"><span data-stu-id="95c22-149">Find the correct endpoint by using the EWS Managed API</span></span>
-<span data-ttu-id="95c22-150"><a name="bk_Managed"> </a></span><span class="sxs-lookup"><span data-stu-id="95c22-150"></span></span>
+## <a name="find-the-correct-endpoint-by-using-the-ews-managed-api"></a><span data-ttu-id="a9112-149">EWS マネージ API を使用して、適切なエンドポイントを検索する</span><span class="sxs-lookup"><span data-stu-id="a9112-149">Find the correct endpoint by using the EWS Managed API</span></span>
+<span data-ttu-id="a9112-150"><a name="bk_Managed"> </a></span><span class="sxs-lookup"><span data-stu-id="a9112-150"><a name="bk_Managed"> </a></span></span>
 
-<span data-ttu-id="95c22-151">EWS マネージ API を使用する場合、自動検出サービスの呼び出しは **ExchangeService** クラスによって処理されます。</span><span class="sxs-lookup"><span data-stu-id="95c22-151">If you are using the EWS Managed API, calls to the Autodiscover service are handled by the **ExchangeService** class.</span></span> <span data-ttu-id="95c22-152">メール アカウントの適切なエンドポイントを決定するには、**[ExchangeService]** オブジェクトに **AutodiscoverUrl** メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="95c22-152">To determine the correct endpoint for an email account, you call the **AutodiscoverUrl** method on an **[ExchangeService]** object.</span></span> <span data-ttu-id="95c22-153">次のコード例では、EWS マネージ API を使用して、メール アドレスの EWS の Web サービス エンドポイントを適切なクライアント アクセス サーバー上の Exchange.asmx ファイルに設定する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="95c22-153">If you are using the EWS Managed API, calls to the Autodiscover service are handled by the ExchangeService class. To determine the correct endpoint for an email account, you call the AutodiscoverUrl method on an ExchangeService object. The following code example shows how to set the EWS web service endpoint for an email address to the Exchange.asmx file on the correct Client Access server by using the EWS Managed API.</span></span> 
+<span data-ttu-id="a9112-151">EWS マネージ API を使用する場合、自動検出サービスの呼び出しは **ExchangeService** クラスによって処理されます。</span><span class="sxs-lookup"><span data-stu-id="a9112-151">If you are using the EWS Managed API, calls to the Autodiscover service are handled by the **ExchangeService** class.</span></span> <span data-ttu-id="a9112-152">メール アカウントの適切なエンドポイントを決定するには、**[ExchangeService]** オブジェクトに **AutodiscoverUrl** メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="a9112-152">To determine the correct endpoint for an email account, you call the **AutodiscoverUrl** method on an **[ExchangeService]** object.</span></span> <span data-ttu-id="a9112-153">次のコード例では、EWS マネージ API を使用して、メール アドレスの EWS の Web サービス エンドポイントを適切なクライアント アクセス サーバー上の Exchange.asmx ファイルに設定する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="a9112-153">The following code example shows how to set the EWS web service endpoint for an email address to the Exchange.asmx file on the correct Client Access server by using the EWS Managed API.</span></span> 
   
 ```cs
 NetworkCredential credentials = new NetworkCredential(securelyStoredEmail, securelyStoredPassword);
@@ -87,28 +87,28 @@ service.Credentials = credentials;
 service.AutodiscoverUrl("User1@contoso.com");
 ```
 
-## <a name="find-the-correct-endpoint-by-using-ews"></a><span data-ttu-id="95c22-154">EWS を使用して、適切なエンドポイントを検索する</span><span class="sxs-lookup"><span data-stu-id="95c22-154">Find the correct endpoint by using EWS</span></span>
-<span data-ttu-id="95c22-155"><a name="bk_SOAP"> </a></span><span class="sxs-lookup"><span data-stu-id="95c22-155"></span></span>
+## <a name="find-the-correct-endpoint-by-using-ews"></a><span data-ttu-id="a9112-154">EWS を使用して、適切なエンドポイントを検索する</span><span class="sxs-lookup"><span data-stu-id="a9112-154">Find the correct endpoint by using EWS</span></span>
+<span data-ttu-id="a9112-155"><a name="bk_SOAP"> </a></span><span class="sxs-lookup"><span data-stu-id="a9112-155"><a name="bk_SOAP"> </a></span></span>
 
-<span data-ttu-id="95c22-156">SOAP の自動検出サービスは、EWS の適切なエンドポイントにアプリケーションを誘導するために、一連の要求と応答を使用する場合があります。</span><span class="sxs-lookup"><span data-stu-id="95c22-156">The SOAP Autodiscover service may use a series of requests and responses to direct your application to the correct endpoint for EWS.</span></span> <span data-ttu-id="95c22-157">メール アカウントの適切なエンドポイントを決定するプロセスについては、「[Exchange の自動検出](autodiscover-for-exchange.md)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="95c22-157">For information about the process for determining the correct endpoint for an email account, see [Autodiscover for Exchange](autodiscover-for-exchange.md).</span></span> <span data-ttu-id="95c22-158">次の XML の例では、適切なエンドポイントを検索するために SOAP の自動検出の要求を行う場合に予想される一連の要求と応答を示します。</span><span class="sxs-lookup"><span data-stu-id="95c22-158">The following XML examples show the series of requests and responses that you can expect when making a SOAP Autodiscover request to find the correct endpoint.</span></span>
+<span data-ttu-id="a9112-156">SOAP の自動検出サービスは、EWS の適切なエンドポイントにアプリケーションを誘導するために、一連の要求と応答を使用する場合があります。</span><span class="sxs-lookup"><span data-stu-id="a9112-156">The SOAP Autodiscover service may use a series of requests and responses to direct your application to the correct endpoint for EWS.</span></span> <span data-ttu-id="a9112-157">メール アカウントの適切なエンドポイントを決定するプロセスについては、「[Exchange の自動検出](autodiscover-for-exchange.md)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="a9112-157">For information about the process for determining the correct endpoint for an email account, see [Autodiscover for Exchange](autodiscover-for-exchange.md).</span></span> <span data-ttu-id="a9112-158">次の XML の例では、適切なエンドポイントを検索するために SOAP の自動検出の要求を行う場合に予想される一連の要求と応答を示します。</span><span class="sxs-lookup"><span data-stu-id="a9112-158">The following XML examples show the series of requests and responses that you can expect when making a SOAP Autodiscover request to find the correct endpoint.</span></span>
   
-### <a name="soap-autodiscover-endpoint-request"></a><span data-ttu-id="95c22-159">SOAP の自動検出エンドポイントの要求</span><span class="sxs-lookup"><span data-stu-id="95c22-159">SOAP Autodiscover endpoint request</span></span>
+### <a name="soap-autodiscover-endpoint-request"></a><span data-ttu-id="a9112-159">SOAP の自動検出エンドポイントの要求</span><span class="sxs-lookup"><span data-stu-id="a9112-159">SOAP Autodiscover endpoint request</span></span>
 
-<span data-ttu-id="95c22-160">次の例では、適切なエンドポイントを検索するために自動検出サービスに送信される XML 要求を示します。</span><span class="sxs-lookup"><span data-stu-id="95c22-160">The following example shows an XML request that is sent to the Autodiscover service to find the correct endpoint.</span></span>
+<span data-ttu-id="a9112-160">次の例では、適切なエンドポイントを検索するために自動検出サービスに送信される XML 要求を示します。</span><span class="sxs-lookup"><span data-stu-id="a9112-160">The following example shows an XML request that is sent to the Autodiscover service to find the correct endpoint.</span></span>
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:a="http://schemas.microsoft.com/exchange/2010/Autodiscover" 
+<soap:Envelope xmlns:a="https://schemas.microsoft.com/exchange/2010/Autodiscover" 
         xmlns:wsa="http://www.w3.org/2005/08/addressing" 
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+        xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <a:RequestedServerVersion>Exchange2013</a:RequestedServerVersion>
-    <wsa:Action>http://schemas.microsoft.com/exchange/2010/Autodiscover/Autodiscover/GetUserSettings</wsa:Action>
+    <wsa:Action>https://schemas.microsoft.com/exchange/2010/Autodiscover/Autodiscover/GetUserSettings</wsa:Action>
     <wsa:To>https://mail.microsoft.com/autodiscover/autodiscover.svc</wsa:To>
   </soap:Header>
   <soap:Body>
-    <a:GetUserSettingsRequestMessage xmlns:a="http://schemas.microsoft.com/exchange/2010/Autodiscover">
+    <a:GetUserSettingsRequestMessage xmlns:a="https://schemas.microsoft.com/exchange/2010/Autodiscover">
       <a:Request>
         <a:Users>
           <a:User>
@@ -126,21 +126,21 @@ service.AutodiscoverUrl("User1@contoso.com");
 
 ```
 
-### <a name="soap-autodiscover-redirection-response"></a><span data-ttu-id="95c22-161">SOAP 自動検出リダイレクト応答</span><span class="sxs-lookup"><span data-stu-id="95c22-161">SOAP Autodiscover redirection response</span></span>
+### <a name="soap-autodiscover-redirection-response"></a><span data-ttu-id="a9112-161">SOAP 自動検出リダイレクト応答</span><span class="sxs-lookup"><span data-stu-id="a9112-161">SOAP Autodiscover redirection response</span></span>
 
-<span data-ttu-id="95c22-p111">自動検出サービスは、HTTP 302 リダイレクト応答と SOAP リダイレクト応答の 2 つのうち、いずれかのリダイレクト応答で応答する場合があります。Exchange サーバーからの応答が HTTP 302 リダイレクトである場合、クライアント アプリケーションはリダイレクトのアドレスが受入可能であることを検証してから、リダイレクト応答に従う必要があります。</span><span class="sxs-lookup"><span data-stu-id="95c22-p111">The Autodiscover service may respond with one of two redirection responses: an HTTP 302 redirect, or a SOAP redirection response. If the response from the Exchange server is an HTTP 302 redirect, the client application should validate that the redirection address is acceptable and then follow the redirection response.</span></span>
+<span data-ttu-id="a9112-p111">自動検出サービスは、HTTP 302 リダイレクト応答と SOAP リダイレクト応答の 2 つのうち、いずれかのリダイレクト応答で応答する場合があります。Exchange サーバーからの応答が HTTP 302 リダイレクトである場合、クライアント アプリケーションはリダイレクトのアドレスが受入可能であることを検証してから、リダイレクト応答に従う必要があります。</span><span class="sxs-lookup"><span data-stu-id="a9112-p111">The Autodiscover service may respond with one of two redirection responses: an HTTP 302 redirect, or a SOAP redirection response. If the response from the Exchange server is an HTTP 302 redirect, the client application should validate that the redirection address is acceptable and then follow the redirection response.</span></span>
   
 > [!IMPORTANT]
-> <span data-ttu-id="95c22-164">リダイレクト応答を検証するための条件については、「[Exchange の自動検出](autodiscover-for-exchange.md)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="95c22-164">For criteria for validating a redirection response, see [Autodiscover for Exchange 2013](autodiscover-for-exchange.md).</span></span> 
+> <span data-ttu-id="a9112-164">リダイレクト応答を検証するための条件については、「[Exchange の自動検出](autodiscover-for-exchange.md)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="a9112-164">For criteria for validating a redirection response, see [Autodiscover for Exchange](autodiscover-for-exchange.md).</span></span> 
   
-<span data-ttu-id="95c22-p112">自動検出サービスが、**UserResponse** 要素の [エラーコード](http://msdn.microsoft.com/library/0bb00cee-c66b-4f34-b99d-355458f5e83b%28Office.15%29.aspx) 要素で示されるリダイレクト応答を返す場合は、クライアント アプリケーションは **RedirectTarget** 要素を使用して、リダイレクト応答で指定されたサーバーに送信される新しい設定要求を作成する必要があります。次の例では、サーバーからのリダイレクト応答を示します。</span><span class="sxs-lookup"><span data-stu-id="95c22-p112">If the Autodiscover service returns a redirection response, indicated by the [ErrorCode](http://msdn.microsoft.com/library/0bb00cee-c66b-4f34-b99d-355458f5e83b%28Office.15%29.aspx) element of the **UserResponse** element, your client application should use the **RedirectTarget** element to construct a new settings request that is sent to the server specified in the redirection response. The following example shows a redirection response from the server.</span></span> 
+<span data-ttu-id="a9112-p112">自動検出サービスが、**UserResponse** 要素の [エラーコード](https://msdn.microsoft.com/library/0bb00cee-c66b-4f34-b99d-355458f5e83b%28Office.15%29.aspx) 要素で示されるリダイレクト応答を返す場合は、クライアント アプリケーションは **RedirectTarget** 要素を使用して、リダイレクト応答で指定されたサーバーに送信される新しい設定要求を作成する必要があります。次の例では、サーバーからのリダイレクト応答を示します。</span><span class="sxs-lookup"><span data-stu-id="a9112-p112">If the Autodiscover service returns a redirection response, indicated by the [ErrorCode](https://msdn.microsoft.com/library/0bb00cee-c66b-4f34-b99d-355458f5e83b%28Office.15%29.aspx) element of the **UserResponse** element, your client application should use the **RedirectTarget** element to construct a new settings request that is sent to the server specified in the redirection response. The following example shows a redirection response from the server.</span></span> 
   
 ```XML
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns:a="http://www.w3.org/2005/08/addressing">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/" xmlns:a="http://www.w3.org/2005/08/addressing">
   <s:Header>
-    <a:Action s:mustUnderstand="1">http://schemas.microsoft.com/exchange/2010/
+    <a:Action s:mustUnderstand="1">https://schemas.microsoft.com/exchange/2010/
         Autodiscover/Autodiscover/GetUserSettingsResponse</a:Action>
-    <h:ServerVersionInfo xmlns:h="http://schemas.microsoft.com/exchange/2010/Autodiscover" 
+    <h:ServerVersionInfo xmlns:h="https://schemas.microsoft.com/exchange/2010/Autodiscover" 
         xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
       <h:MajorVersion>15</h:MajorVersion>
       <h:MinorVersion>0</h:MinorVersion>
@@ -150,7 +150,7 @@ service.AutodiscoverUrl("User1@contoso.com");
     </h:ServerVersionInfo>
   </s:Header>
   <s:Body>
-    <GetUserSettingsResponseMessage xmlns="http://schemas.microsoft.com/exchange/2010/Autodiscover">
+    <GetUserSettingsResponseMessage xmlns="https://schemas.microsoft.com/exchange/2010/Autodiscover">
       <Response xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
         <ErrorCode>NoError</ErrorCode>
         <ErrorMessage />
@@ -170,22 +170,22 @@ service.AutodiscoverUrl("User1@contoso.com");
 
 ```
 
-<span data-ttu-id="95c22-p113">リダイレクトを行った後は、クライアントはリダイレクト URL を使用して別の要求を準備します。次のコードは、リダイレクト応答から作成される要求の例を示します。</span><span class="sxs-lookup"><span data-stu-id="95c22-p113">After a redirection, the client uses the redirection URL to prepare another request. The following code shows an example of the request that you create from the redirection response.</span></span>
+<span data-ttu-id="a9112-p113">リダイレクトを行った後は、クライアントはリダイレクト URL を使用して別の要求を準備します。次のコードは、リダイレクト応答から作成される要求の例を示します。</span><span class="sxs-lookup"><span data-stu-id="a9112-p113">After a redirection, the client uses the redirection URL to prepare another request. The following code shows an example of the request that you create from the redirection response.</span></span>
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:a="http://schemas.microsoft.com/exchange/2010/Autodiscover" 
+<soap:Envelope xmlns:a="https://schemas.microsoft.com/exchange/2010/Autodiscover" 
         xmlns:wsa="http://www.w3.org/2005/08/addressing" 
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+        xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <a:RequestedServerVersion>Exchange2013</a:RequestedServerVersion>
-    <wsa:Action>http://schemas.microsoft.com/exchange/2010/
+    <wsa:Action>https://schemas.microsoft.com/exchange/2010/
         Autodiscover/Autodiscover/GetUserSettings</wsa:Action>
     <wsa:To>https://autodiscover.exchange.microsoft.com/autodiscover/autodiscover.svc</wsa:To>
   </soap:Header>
   <soap:Body>
-    <a:GetUserSettingsRequestMessage xmlns:a="http://schemas.microsoft.com/exchange/2010/Autodiscover">
+    <a:GetUserSettingsRequestMessage xmlns:a="https://schemas.microsoft.com/exchange/2010/Autodiscover">
       <a:Request>
         <a:Users>
           <a:User>
@@ -203,15 +203,15 @@ service.AutodiscoverUrl("User1@contoso.com");
 
 ```
 
-<span data-ttu-id="95c22-p114">クライアント アプリケーションが自動検出サービスの適切なエンドポイントを指示されると、サーバーは、**UserResponse** 要素の [ErrorCode](http://msdn.microsoft.com/library/0bb00cee-c66b-4f34-b99d-355458f5e83b%28Office.15%29.aspx) 要素が **NoError** に設定されていて、要求されたユーザー設定を含んだ応答を送信します。要求されたユーザー設定である、**InternalEwsUrl** と **ExternalEwsUrl** のみが返されます。次の例は、サーバーからの応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="95c22-p114">When the client application has been directed to the correct endpoint for the Autodiscover service, the server will send a response with the [ErrorCode](http://msdn.microsoft.com/library/0bb00cee-c66b-4f34-b99d-355458f5e83b%28Office.15%29.aspx) element of the **UserResponse** element set to **NoError** and containing the requested user settings. Only the requested user settings, **InternalEwsUrl** and **ExternalEwsUrl**, are returned. The following example shows the response from the server.</span></span> 
+<span data-ttu-id="a9112-p114">クライアント アプリケーションが自動検出サービスの適切なエンドポイントを指示されると、サーバーは、**UserResponse** 要素の [ErrorCode](https://msdn.microsoft.com/library/0bb00cee-c66b-4f34-b99d-355458f5e83b%28Office.15%29.aspx) 要素が **NoError** に設定されていて、要求されたユーザー設定を含んだ応答を送信します。要求されたユーザー設定である、**InternalEwsUrl** と **ExternalEwsUrl** のみが返されます。次の例は、サーバーからの応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="a9112-p114">When the client application has been directed to the correct endpoint for the Autodiscover service, the server will send a response with the [ErrorCode](https://msdn.microsoft.com/library/0bb00cee-c66b-4f34-b99d-355458f5e83b%28Office.15%29.aspx) element of the **UserResponse** element set to **NoError** and containing the requested user settings. Only the requested user settings, **InternalEwsUrl** and **ExternalEwsUrl**, are returned. The following example shows the response from the server.</span></span> 
   
 ```XML
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" 
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/" 
         xmlns:a="http://www.w3.org/2005/08/addressing">
   <s:Header>
-    <a:Action s:mustUnderstand="1">http://schemas.microsoft.com/exchange/2010/
+    <a:Action s:mustUnderstand="1">https://schemas.microsoft.com/exchange/2010/
         Autodiscover/Autodiscover/GetUserSettingsResponse</a:Action>
-    <h:ServerVersionInfo xmlns:h="http://schemas.microsoft.com/exchange/2010/Autodiscover" 
+    <h:ServerVersionInfo xmlns:h="https://schemas.microsoft.com/exchange/2010/Autodiscover" 
         xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
       <h:MajorVersion>15</h:MajorVersion>
       <h:MinorVersion>0</h:MinorVersion>
@@ -221,7 +221,7 @@ service.AutodiscoverUrl("User1@contoso.com");
     </h:ServerVersionInfo>
   </s:Header>
   <s:Body>
-    <GetUserSettingsResponseMessage xmlns="http://schemas.microsoft.com/exchange/2010/Autodiscover">
+    <GetUserSettingsResponseMessage xmlns="https://schemas.microsoft.com/exchange/2010/Autodiscover">
       <Response xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
         <ErrorCode>NoError</ErrorCode>
         <ErrorMessage />
@@ -249,19 +249,19 @@ service.AutodiscoverUrl("User1@contoso.com");
 </s:Envelope>
 ```
 
-## <a name="next-steps"></a><span data-ttu-id="95c22-172">次の手順</span><span class="sxs-lookup"><span data-stu-id="95c22-172">Next steps</span></span>
-<span data-ttu-id="95c22-173"><a name="bk_Next"> </a></span><span class="sxs-lookup"><span data-stu-id="95c22-173"></span></span>
+## <a name="next-steps"></a><span data-ttu-id="a9112-172">次の手順</span><span class="sxs-lookup"><span data-stu-id="a9112-172">Next steps</span></span>
+<span data-ttu-id="a9112-173"><a name="bk_Next"> </a></span><span class="sxs-lookup"><span data-stu-id="a9112-173"><a name="bk_Next"> </a></span></span>
 
-<span data-ttu-id="95c22-p115">自動検出プロセスに従ってエンドポイントを検索すると、要求されたドメインまたはユーザー設定が返されます。特定の設定を要求することについては、次の記事をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="95c22-p115">Finding the endpoint by following the Autodiscover process returns the requested domain or user settings. For information about making a request for specific settings, see the following articles:</span></span>
+<span data-ttu-id="a9112-p115">自動検出プロセスに従ってエンドポイントを検索すると、要求されたドメインまたはユーザー設定が返されます。特定の設定を要求することについては、次の記事をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="a9112-p115">Finding the endpoint by following the Autodiscover process returns the requested domain or user settings. For information about making a request for specific settings, see the following articles:</span></span>
   
-- [<span data-ttu-id="95c22-176">Exchange サーバーからドメイン設定を取得する</span><span class="sxs-lookup"><span data-stu-id="95c22-176">How to: Get domain settings from an Exchange server</span></span>](how-to-get-domain-settings-from-an-exchange-server.md)    
-- [<span data-ttu-id="95c22-177">自動検出を使用して Exchange からユーザー設定を取得する</span><span class="sxs-lookup"><span data-stu-id="95c22-177">How to: Get user settings from Exchange by using Autodiscover</span></span>](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)
+- [<span data-ttu-id="a9112-176">Exchange サーバーからドメイン設定を取得する</span><span class="sxs-lookup"><span data-stu-id="a9112-176">Get domain settings from an Exchange server</span></span>](how-to-get-domain-settings-from-an-exchange-server.md)    
+- [<span data-ttu-id="a9112-177">自動検出を使用して Exchange からユーザー設定を取得する</span><span class="sxs-lookup"><span data-stu-id="a9112-177">Get user settings from Exchange by using Autodiscover</span></span>](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)
     
-## <a name="see-also"></a><span data-ttu-id="95c22-178">関連項目</span><span class="sxs-lookup"><span data-stu-id="95c22-178">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a9112-178">関連項目</span><span class="sxs-lookup"><span data-stu-id="a9112-178">See also</span></span>
 
-- [<span data-ttu-id="95c22-179">EWS アプリケーションの設定</span><span class="sxs-lookup"><span data-stu-id="95c22-179">Setting up your EWS application</span></span>](setting-up-your-ews-application.md)   
-- [<span data-ttu-id="95c22-180">Exchange の自動検出</span><span class="sxs-lookup"><span data-stu-id="95c22-180">Autodiscover for Exchange</span></span>](autodiscover-for-exchange.md)    
-- [<span data-ttu-id="95c22-181">Exchange 用自動検出 Web サービス リファレンス</span><span class="sxs-lookup"><span data-stu-id="95c22-181">Autodiscover web service reference for Exchange</span></span>](http://msdn.microsoft.com/library/a01124a8-a8cf-4b80-8625-d7ee05690bca%28Office.15%29.aspx)    
-- [<span data-ttu-id="95c22-182">Exchange 用 EWS リファレンス</span><span class="sxs-lookup"><span data-stu-id="95c22-182">EWS reference for Exchange</span></span>](http://msdn.microsoft.com/library/2a873474-1bb2-4cb1-a556-40e8c4159f4a%28Office.15%29.aspx)
+- [<span data-ttu-id="a9112-179">EWS アプリケーションの設定</span><span class="sxs-lookup"><span data-stu-id="a9112-179">Setting up your EWS application</span></span>](setting-up-your-ews-application.md)   
+- [<span data-ttu-id="a9112-180">Exchange の自動検出</span><span class="sxs-lookup"><span data-stu-id="a9112-180">Autodiscover for Exchange</span></span>](autodiscover-for-exchange.md)    
+- [<span data-ttu-id="a9112-181">Exchange 用自動検出 Web サービス リファレンス</span><span class="sxs-lookup"><span data-stu-id="a9112-181">Autodiscover web service reference for Exchange</span></span>](https://msdn.microsoft.com/library/a01124a8-a8cf-4b80-8625-d7ee05690bca%28Office.15%29.aspx)    
+- [<span data-ttu-id="a9112-182">Exchange 用 EWS リファレンス</span><span class="sxs-lookup"><span data-stu-id="a9112-182">EWS reference for Exchange</span></span>](https://msdn.microsoft.com/library/2a873474-1bb2-4cb1-a556-40e8c4159f4a%28Office.15%29.aspx)
     
 
