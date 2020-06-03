@@ -16,7 +16,7 @@ ms.openlocfilehash: faf653fb0c594cbb79f52e1abdac50e542dcb92a
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44463322"
 ---
 # <a name="changecount"></a>ChangeCount
@@ -44,7 +44,7 @@ ms.locfileid: "44463322"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Task](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
+|[タスク](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

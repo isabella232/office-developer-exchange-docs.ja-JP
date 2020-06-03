@@ -16,7 +16,7 @@ ms.openlocfilehash: e90c44dd4124d698ca5ef7655f6429a7167673e6
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44465787"
 ---
 # <a name="meetingrequesttype"></a>会議の Requesttype

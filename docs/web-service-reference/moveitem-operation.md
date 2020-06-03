@@ -16,7 +16,7 @@ ms.openlocfilehash: 6a455e483ad2e5c84b91cfaa7562f4f1ec46a112
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44465682"
 ---
 # <a name="moveitem-operation"></a>MoveItem 操作
@@ -25,7 +25,7 @@ ms.locfileid: "44465682"
   
 ## <a name="moveitem-request-example"></a>MoveItem 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の**Moveitem**要求の例は、アイテムを [下書き] フォルダーに移動する方法を示しています。 
   
@@ -74,7 +74,7 @@ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
     
 ## <a name="moveitem-response-example"></a>MoveItem 応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、 **Moveitem**要求に対する正常な応答を示しています。 
   

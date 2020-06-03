@@ -13,7 +13,7 @@ ms.openlocfilehash: 3b88429488dbecd4ed7c3adf56462f34fa0d4b17
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44465185"
 ---
 # <a name="soap-autodiscover-xml-elements-for-exchange-2013"></a>Exchange 2013 の SOAP 自動検出 XML 要素
@@ -33,8 +33,7 @@ SOAP 自動検出の WSDL ファイルおよびスキーマファイルの場所
 ## <a name="related-sections"></a>関連情報
 
 - [Exchange 用 SOAP 自動検出 Web サービス リファレンス](soap-autodiscover-web-service-reference-for-exchange.md)    
-- 
-  [Exchange 用 EWS リファレンス](ews-reference-for-exchange.md)    
+- [Exchange 用 EWS リファレンス](ews-reference-for-exchange.md)    
 - [Exchange 用ユニファイドメッセージング web サービスのリファレンス](unified-messaging-web-service-reference-for-exchange.md)
     
 ## <a name="see-also"></a>関連項目

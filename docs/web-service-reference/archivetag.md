@@ -12,7 +12,7 @@ ms.openlocfilehash: 23167f3c96a6756fe4c6d915a4de91e815e620d9
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44464764"
 ---
 # <a name="archivetag"></a>ArchiveTag
@@ -44,15 +44,15 @@ ms.locfileid: "44464764"
 |:-----|:-----|
 |[CalendarFolder](calendarfolder.md) <br/> |主に予定表アイテムを含むフォルダーを表します。  <br/> |
 |[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
-|[連絡先](contact.md) <br/> |Exchange ストア内の連絡先アイテムを表します。  <br/> |
+|[Contact](contact.md) <br/> |Exchange ストア内の連絡先アイテムを表します。  <br/> |
 |[ContactsFolder](contactsfolder.md) <br/> |メールボックスに含まれている連絡先フォルダーを表します。  <br/> |
 |[DistributionList](distributionlist.md) <br/> |配布リストを表します。  <br/> |
 |[Folder](folder.md) <br/> |作成、取得、検索、同期、更新を行うフォルダーを定義します。  <br/> |
-|[アイテム](item.md) <br/> |Exchange ストア内の汎用アイテムを表します。  <br/> |
+|[Item](item.md) <br/> |Exchange ストア内の汎用アイテムを表します。  <br/> |
 |[Message](message-ex15websvcsotherref.md) <br/> |Microsoft Exchange の電子メールメッセージを表します。  <br/> |
 |[PostItem](postitem.md) <br/> |Exchange ストア内の投稿アイテムを表します。  <br/> |
 |[SearchFolder](searchfolder.md) <br/> |メールボックスに含まれている検索フォルダーを表します。  <br/> |
-|[Task](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
+|[タスク](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
 |[TasksFolder](tasksfolder.md) <br/> |メールボックスに含まれる tasks フォルダーを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値

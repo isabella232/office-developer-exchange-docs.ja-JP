@@ -12,7 +12,7 @@ ms.openlocfilehash: 0f7690e2df7e71c4e478dec191671af24f96294b
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44465668"
 ---
 # <a name="installappresponse"></a>InstallAppResponse
@@ -43,7 +43,7 @@ ms.locfileid: "44465668"
 
 |**値**|**説明**|
 |:-----|:-----|
-|Success  <br/> |成功を示します。  <br/> |
+|成功  <br/> |成功を示します。  <br/> |
 |警告  <br/> |警告を示します。  <br/> |
 |Error  <br/> |エラーを示します。  <br/> |
    

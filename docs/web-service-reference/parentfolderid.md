@@ -16,7 +16,7 @@ ms.openlocfilehash: 3bad638aa21019472df8f487f1e065d2e725e750
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44465752"
 ---
 # <a name="parentfolderid"></a>ParentFolderId
@@ -50,14 +50,14 @@ ms.locfileid: "44465752"
 |:-----|:-----|
 |[CalendarFolder](calendarfolder.md) <br/> |メールボックス内の予定表フォルダーを表します。  <br/> |
 |[CalendarItem](calendaritem.md) <br/> |メールボックス内の予定表アイテムを表します。  <br/> |
-|[連絡先](contact.md) <br/> |メールボックス内の連絡先アイテムを表します。  <br/> |
+|[Contact](contact.md) <br/> |メールボックス内の連絡先アイテムを表します。  <br/> |
 |[ContactsFolder](contactsfolder.md) <br/> |メールボックス内の連絡先フォルダーを表します。  <br/> |
 |[CopiedEvent](copiedevent.md) <br/> |アイテムまたはフォルダーがコピーされるイベントを表します。  <br/> |
 |[対する createdevent](createdevent.md) <br/> |アイテムまたはフォルダーが作成されるイベントを表します。  <br/> |
 |[DeletedEvent](deletedevent.md) <br/> |アイテムまたはフォルダーが削除されるイベントを表します。  <br/> |
 |[DistributionList](distributionlist.md) <br/> |メールボックス内のプライベート配布リストを表します。  <br/> |
 |[Folder](folder.md) <br/> |メールボックス内のフォルダーを表します。  <br/> |
-|[アイテム](item.md) <br/> |汎用の Exchange アイテムを表します。  <br/> |
+|[Item](item.md) <br/> |汎用の Exchange アイテムを表します。  <br/> |
 |[Item (UploadItemType)](item-uploaditemtype.md) <br/> |メールボックスにアップロードする単一のアイテムを表します。  <br/> |
 |[MeetingCancellation](meetingcancellation.md) <br/> |メールボックス内の会議の取り消しを表します。  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |メールボックス内の会議メッセージを表します。  <br/> |
@@ -71,7 +71,7 @@ ms.locfileid: "44465752"
 |[TentativelyAcceptItem](tentativelyacceptitem.md) <br/> |会議出席依頼に対する仮の返信を表します。  <br/> |
 |[DeclineItem](declineitem.md) <br/> |会議出席依頼への返信を拒否することを表します。  <br/> |
 |[RemoveItem](removeitem.md) <br/> |Exchange ストアからアイテムを削除します。  <br/> |
-|[Task](task.md) <br/> |メールボックス内のタスクアイテムを表します。  <br/> |
+|[タスク](task.md) <br/> |メールボックス内のタスクアイテムを表します。  <br/> |
 |[ReplyToItem](replytoitem.md) <br/> |Exchange ストア内のアイテムの作成者への返信を含みます。  <br/> |
 |[Replyalltoitem と](replyalltoitem.md) <br/> |Exchange ストア内のアイテムの特定の受信者全員への返信を含みます。  <br/> |
 |[Forwarditem と](forwarditem.md) <br/> |受信者に転送するための Exchange ストアアイテムが保存されています。  <br/> |

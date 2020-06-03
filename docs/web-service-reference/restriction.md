@@ -16,7 +16,7 @@ ms.openlocfilehash: 6037ba15417d67d393ca70f3edf2248749c396e1
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44465290"
 ---
 # <a name="restriction"></a>制限
@@ -43,7 +43,7 @@ ms.locfileid: "44465290"
 |**Element**|**説明**|
 |:-----|:-----|
 |[And](and.md) <br/> |2つ以上の検索式の間でブール値**と**演算を実行できる検索式を表します。  <br/> |
-|[Contains](contains.md) <br/> |指定したプロパティに指定した定数文字列値が含まれているかどうかを決定する検索式を表します。  <br/> |
+|[内容](contains.md) <br/> |指定したプロパティに指定した定数文字列値が含まれているかどうかを決定する検索式を表します。  <br/> |
 |[Excludes](excludes.md) <br/> |プロパティのビット単位のマスクを実行します。  <br/> |
 |[Exists](exists.md) <br/> |指定されたプロパティがアイテムに存在する場合に**true**を返す検索式を表します。  <br/> |
 |[IsEqualTo](isequalto.md) <br/> |プロパティを定数値または別のプロパティと比較し、等しい場合は**true**に評価される検索式を表します。  <br/> |

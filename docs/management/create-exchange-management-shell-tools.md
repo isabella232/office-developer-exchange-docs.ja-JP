@@ -12,7 +12,7 @@ ms.openlocfilehash: c6e11fa5b55aa514b12f4f52bc9346ac213d3781
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44463728"
 ---
 # <a name="create-exchange-management-shell-tools"></a>Exchange 管理シェル ツールの作成
@@ -45,8 +45,7 @@ Exchange 管理シェル コマンドレットは、オブジェクトを受け�
 ## <a name="see-also"></a>関連項目
 
 - [Exchange 管理シェルの名前空間](exchange-management-shell-namespaces.md)  
-- 
-  [Exchange Server PowerShell (Exchange 管理シェル)](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-management-shell?view=exchange-ps)  
+- [Exchange Server PowerShell (Exchange 管理シェル)](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-management-shell?view=exchange-ps)  
 - [Windows PowerShell](https://msdn.microsoft.com/library/dd835506%28v=vs.85%29.aspx)
     
 

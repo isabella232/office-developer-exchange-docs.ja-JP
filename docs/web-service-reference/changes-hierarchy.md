@@ -16,7 +16,7 @@ ms.openlocfilehash: a296d87f23e85d42b4c8c858e92eddfb586a8324
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44463273"
 ---
 # <a name="changes-hierarchy"></a>変更 (階層)
@@ -86,8 +86,7 @@ ms.locfileid: "44463273"
 [SyncFolderHierarchy 操作](syncfolderhierarchy-operation.md)
 
 
-
-  [Exchange 用 EWS リファレンス](ews-reference-for-exchange.md)
+[Exchange 用 EWS リファレンス](ews-reference-for-exchange.md)
   
 - [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

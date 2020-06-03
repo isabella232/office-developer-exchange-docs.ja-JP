@@ -16,7 +16,7 @@ ms.openlocfilehash: 20cbed08d41599a433f3e2aa6e4a662018fbdc48
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44465780"
 ---
 # <a name="mileage"></a>Mileage
@@ -44,8 +44,8 @@ ms.locfileid: "44465780"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[連絡先](contact.md) <br/> |Exchange ストア内の連絡先アイテムを表します。  <br/> |
-|[Task](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
+|[Contact](contact.md) <br/> |Exchange ストア内の連絡先アイテムを表します。  <br/> |
+|[タスク](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 

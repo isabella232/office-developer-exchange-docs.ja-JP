@@ -16,7 +16,7 @@ ms.openlocfilehash: 23c3fe13c44cdd0e5a054ecb3378bc3d633e55aa
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44463819"
 ---
 # <a name="contactsview"></a>ContactsView
@@ -102,7 +102,6 @@ ms.locfileid: "44463819"
    
 ## <a name="see-also"></a>関連項目
 
-- 
-  [FindItem 操作](finditem-operation.md)
+- [FindItem 操作](finditem-operation.md)
 - [アイテムの検索](https://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: 19fe450f5b1647be2df75138dbe67dd9e1c05c21
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44465703"
 ---
 # <a name="includeunsearchableitems"></a>Include非 Searchableitems

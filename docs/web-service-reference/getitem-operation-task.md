@@ -16,7 +16,7 @@ ms.openlocfilehash: 17a23d4c2a35761e831610f3514c980a5a67e12b
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44463336"
 ---
 # <a name="getitem-operation-task"></a>GetItem 操作 (タスク)
@@ -29,7 +29,7 @@ GetItem 操作は、Exchange ストアからタスクを取得するために使
   
 ## <a name="task-getitem-request-example"></a>タスク GetItem 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 GetItem 要求の次の例は、タスクアイテムを取得する方法を示しています。
   
@@ -76,7 +76,7 @@ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
     
 ## <a name="task-getitem-response-example"></a>タスクの GetItem 応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、GetItem 要求に対する正常な応答を示しています。
   
@@ -154,7 +154,7 @@ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
     
 - [Items](items.md)
     
-- [Task](task.md)
+- [タスク](task.md)
     
 - [ItemId](itemid.md)
     
@@ -162,7 +162,7 @@ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
     
 - [ItemClass](itemclass.md)
     
-- [[件名]](subject.md)
+- [件名](subject.md)
     
 - [Sensitivity](sensitivity.md)
     
@@ -170,7 +170,7 @@ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
     
 - [DateTimeReceived](datetimereceived.md)
     
-- [[サイズ]](size.md)
+- [Size](size.md)
     
 - [Importance](importance.md)
     
@@ -208,8 +208,7 @@ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
 
 
 
-
-  [GetItem 操作](getitem-operation.md)
+[GetItem 操作](getitem-operation.md)
 
 
 [タスクの作成](https://msdn.microsoft.com/library/0ef97334-e8a0-4f67-a23a-dd9e2bbad49f%28Office.15%29.aspx)

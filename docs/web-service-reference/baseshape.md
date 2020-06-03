@@ -16,7 +16,7 @@ ms.openlocfilehash: 9b3f00ff94fbfe6ad6373b16ad95eb9136f81c64
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44464491"
 ---
 # <a name="baseshape"></a>BaseShape
@@ -56,7 +56,7 @@ ms.locfileid: "44464491"
 |**値**|**説明**|
 |:-----|:-----|
 |IdOnly  <br/> |アイテムまたはフォルダーの ID のみを返します。  <br/> |
-|既定  <br/> |アイテムまたはフォルダーの既定値として定義されているプロパティのセットを返します。  <br/> |
+|既定値  <br/> |アイテムまたはフォルダーの既定値として定義されているプロパティのセットを返します。  <br/> |
 |AllProperties  <br/> |フォルダーを作成するために Exchange ビジネスロジック層で使用されるすべてのプロパティを返します。  <br/> |
    
 次の表に、FindFolder 要求に対して返される既定のプロパティを示します。 指定したフォルダーのすべてのサブフォルダーが名前で順に返されます。
@@ -65,7 +65,7 @@ ms.locfileid: "44464491"
 
 |**Folder**|**既定のプロパティ**|
 |:-----|:-----|
-|Inbox  <br/> |FolderId、表示名、未読数、合計数、サブフォルダー数  <br/> |
+|受信トレイ  <br/> |FolderId、表示名、未読数、合計数、サブフォルダー数  <br/> |
 |連絡先  <br/> |FolderId、表示名、合計数、サブフォルダー数  <br/> |
 |カレンダー  <br/> |FolderId、表示名、サブフォルダー数  <br/> |
 |下書き  <br/> |FolderId、表示名、未読数、合計数、サブフォルダー数  <br/> |
@@ -73,7 +73,7 @@ ms.locfileid: "44464491"
 |その他のフォルダー  <br/> |FolderId、表示名、未読数、合計数、サブフォルダー数  <br/> |
 |送信トレイ  <br/> |FolderId、表示名、未読数、合計数、サブフォルダー数  <br/> |
 |タスク  <br/> |FolderId、表示名、過去の期限数、合計数、サブフォルダー数  <br/> |
-|Notes (メモ)  <br/> |FolderId、表示名、合計数、サブフォルダー数  <br/> |
+|メモ  <br/> |FolderId、表示名、合計数、サブフォルダー数  <br/> |
    
 ## <a name="remarks"></a>注釈
 

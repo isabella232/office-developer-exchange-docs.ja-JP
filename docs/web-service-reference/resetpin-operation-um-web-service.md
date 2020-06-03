@@ -15,7 +15,7 @@ ms.openlocfilehash: 8de64ce7a47e9c426f8eb9298e1ca00508fb616c
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44465493"
 ---
 # <a name="resetpin-operation-um-web-service"></a>ResetPIN 操作 (UM web サービス)
@@ -28,7 +28,7 @@ ResetPIN 操作は、PIN ポリシーに基づいて新しい PIN を作成し�
   
 ## <a name="resetpin-request-example"></a>ResetPIN 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の ResetPIN 要求の例は、メールボックスの PIN をリセットする要求を形成する方法を示しています。
   
@@ -45,7 +45,7 @@ ResetPIN 操作は、PIN ポリシーに基づいて新しい PIN を作成し�
 
 ## <a name="successful-resetpin-response-example"></a>正常な ResetPIN 応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の ResetPIN 応答の例は、ResetPIN 要求に対する応答を示しています。
   

@@ -16,7 +16,7 @@ ms.openlocfilehash: 377aee12d8cc7d6b4aff8d6fc2a6cb67b3bcd10b
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44464694"
 ---
 # <a name="applyconversationactionresponsemessage"></a>ApplyConversationActionResponseMessage
@@ -45,7 +45,7 @@ ms.locfileid: "44464694"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**ResponseClass** <br/> | 応答の状態を表します。<br/><br/>この属性には、次の値が有効です。<ul><li>Success</li><li>警告</li><li>Error</li></ul> |
+|**ResponseClass** <br/> | 応答の状態を表します。<br/><br/>この属性には、次の値が有効です。<ul><li>成功</li><li>警告</li><li>Error</li></ul> |
    
 #### <a name="responseclass-attribute-values"></a>ResponseClass 属性の値
 

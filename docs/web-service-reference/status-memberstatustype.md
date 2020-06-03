@@ -16,7 +16,7 @@ ms.openlocfilehash: bfa0c349d6af51c1b2238c9749d2656541d31906
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44465465"
 ---
 # <a name="status-memberstatustype"></a>Status (MemberStatusType)
