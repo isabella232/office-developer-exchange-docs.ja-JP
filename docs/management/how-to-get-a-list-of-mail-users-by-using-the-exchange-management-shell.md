@@ -1,31 +1,31 @@
 ---
-title: Exchange 管理シェルを使用してメール ユーザーの一覧を取得します。
+title: Exchange 管理シェルを使用してメールユーザーの一覧を取得する
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
 ms.assetid: 8b790dc8-5c4f-4acf-bbe7-63523395fbe7
 description: Exchange 管理シェル コマンドレットを使用して、Exchange メールボックスのユーザーの一覧を取得するツールを作成する方法について説明します。
-ms.openlocfilehash: e9493571e98760e5a11674db9a552111c1ec29b2
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+localization_priority: Priority
+ms.openlocfilehash: 817d92ef1bb88017f471681b448c052ecaa54e7e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354002"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44435710"
 ---
-# <a name="get-a-list-of-mail-users-by-using-the-exchange-management-shell"></a>Exchange 管理シェルを使用してメール ユーザーの一覧を取得します。
+# <a name="get-a-list-of-mail-users-by-using-the-exchange-management-shell"></a>Exchange 管理シェルを使用してメールユーザーの一覧を取得する
 
 Exchange 管理シェル コマンドレットを使用して、Exchange メールボックスのユーザーの一覧を取得するツールを作成する方法について説明します。
   
-**に適用されます:** オンライン交換 |Exchange Server 2013年 |Office 365 
+**適用対象:** Exchange Online |Exchange Server 2013 |Office 365 
   
-Exchange Online ユーザーの一覧を取得する、Office 365 の一部として Exchange のオンラインまたは、Exchange 管理シェル コマンドレットを呼び出すマネージ ツールを使用して Exchange 2013 で開始する Exchange のバージョンは、2 段階のプロセス。 。 Exchange サーバー上のリモートの実行空間を確立する最初に、次に、リモートの実行空間内のユーザー情報を取得するコマンドレットを実行します。 
+Exchange 管理シェル コマンドレットを呼び出す管理ツールを使用して、Exchange Online、Office 365 の一部としての Exchange Online、Exchange 2013 以降のバージョンの Exchange からユーザーの一覧を取得することは、2 段階のプロセスです。 最初に、Exchange サーバー上のリモートの実行空間を確立し、次にリモートの実行空間内でユーザー情報を取得するコマンドレットを実行します。 
 
-リモートの実行空間に接続するには、組織のセキュリティ要件を満たしている認証スキームを使用して Exchange サーバーとの認証する必要があります。 
+リモートの実行空間に接続するには、組織のセキュリティ要件を満たしている認証スキームを使用して、Exchange サーバーとの認証を行う必要があります。 
 
-この資料では、リモートの実行空間を設定し、Exchange サーバーからユーザーの一覧を取得するのには、Exchange 管理シェル コマンドレットを実行するに使用できるコード例を提供します。
+この記事では、リモートの実行空間を設定し、Exchange サーバーからユーザーの一覧を取得するための Exchange 管理シェル コマンドレットを実行するのに使用できるコード例を提供します。
 
 <a name="bk_prerequisites"> </a>
 
@@ -33,17 +33,17 @@ Exchange Online ユーザーの一覧を取得する、Office 365 の一部と�
 
 このタスクを実行するには、次の名前空間への参照が必要です。
   
-- **System.Collections.ObjectModel**
-- **System.Management.Automation**
-- **System.Management.Automation.Remoting**
-- **System.Management.Automation.Runspaces**
+- **System.web モデル**
+- **システム管理**
+- **システムの管理**
+- **システム管理の自動化**
     
 > [!NOTE]
 >  Visual Studio を使用してアプリケーションを作成する場合は、System.Management.Automation.dll アセンブリへの参照をプロジェクトに追加する必要があります。アセンブリは次の場所のいずれかにあります。
 > - オペレーティング システムが Windows XP および Windows Vista の場合、Windows PowerShell のインストール ディレクトリ ($PSHOME)。
 > - オペレーティング システムが Windows 7 および Windows 8 の場合は次のフォルダー:Windows\assembly\GAC_MSIL\System.Management.Automation。 
   
-読み込まない Exchange 2013 の管理] スナップインで、Exchange 管理シェル コマンドレットを自動化するアプリケーションを実行するコンピューターで実行空間にします。 代わりに、アプリケーションはこの資料で後述するよう、リモートの実行空間を作成しています。
+Exchange 管理シェルコマンドレットを自動化するアプリケーションを実行しているコンピューターの実行空間に、Exchange 2013 管理スナップインを読み込まないようにします。 代わりに、この記事で後述するように、アプリケーションはリモートの実行空間を作成する必要があります。
 
 <a name="bk_gettinglistmailbox"> </a>
 
@@ -51,7 +51,7 @@ Exchange Online ユーザーの一覧を取得する、Office 365 の一部と�
 
 Exchange 管理シェル コマンドレットを使用するリモートの実行空間への接続に使用する方法は、使用している認証スキームによって異なります。このセクションでは、次の表に記載されている認証方法を使用している場合に、リモートの実行空間に接続する方法を示すコード例を提供します。
   
-|**認証方法**|**適用されます。**|**URI**|
+|**認証方法**|**適用対象**|**URI**|
 |:-----|:-----|:-----|
 |[基本認証を使用して Exchange Online のリモートの実行空間に接続します。](#bk_basic) <br/> |Exchange Online サーバー  <br/> |`https://outlook.office365.com/PowerShell-LiveID`<br/><br/>`https://<server>/PowerShell-LiveID`  <br/> |
 |[証明書による認証を使用してリモートの実行空間に接続します。](#bk_cert) <br/> |Exchange Online と Exchange オンプレミス サーバー  <br/> |`https://outlook.office365.com/PowerShell`<br/><br/>`https://<server>/PowerShell`<br/><br/>`http://<server>/PowerShell`  <br/> |
@@ -61,17 +61,17 @@ Exchange 管理シェル コマンドレットを使用するリモートの実�
 
 ### <a name="connect-to-a-remote-runspace-on-exchange-online-by-using-basic-authentication"></a>基本認証を使用して Exchange Online のリモートの実行空間に接続します。
 
-次のコード例は **GetUsersUsingBasicAuth** メソッドを定義します。これは、基本認証を使用して、リモートの Exchange Online サーバーに Exchange 管理シェルの実行空間を作成します。このメソッドは次に、「[リモートの実行空間からメールボックスのユーザーの一覧を取得する](#bk_remote)」セクションで定義されているように、リモート サーバー上のユーザーの一覧を返す **GetUserInformation** メソッドを呼び出します。
+次のコード例では、 **GetUsersUsingBasicAuth**メソッドを定義します。このメソッドは、基本認証を使用して、リモート exchange Online Server に Exchange 管理シェルの実行空間を作成します。 このメソッドは、「リモートの実行[空間からメールボックスユーザーのリストを取得](#bk_remote)する」で定義されているように、 **getuserinformation**メソッドを呼び出して、リモートサーバー上のユーザーの一覧を返します。
   
 このメソッドは、以下のパラメーターを必要とします。
   
--  **liveIDConnectionUri**&ndash;アプリケーションを認証するオンラインの Exchange サーバーの URI を含む文字列です。 Office 365 のオンラインの Exchange を実行する場合、URI は、 `https://outlook.office365.com/PowerShell-LiveID`。URI は、それ以外の場合、 `https://<servername>/PowerShell-LiveID`。 
+-  **liveIDConnectionUri** &ndash;アプリケーションを認証する Exchange Online サーバーの URI を含む文字列。 Exchange Online が Office 365 で実行されている場合は、URI はになり `https://outlook.office365.com/PowerShell-LiveID` ます。それ以外の場合、uri は `https://<servername>/PowerShell-LiveID` です。 
     
--  **schemaUri**&ndash; Exchange 管理シェルのスキーマを定義するスキーマ ドキュメントの URI を含む文字列です。 スキーマの URI は、 `http://schemas.microsoft.com/powershell/Microsoft.Exchange`。 
+-  **Schemauri** &ndash;Exchange 管理シェルスキーマを定義するスキーマドキュメントの URI を含む文字列。 スキーマ URI は `https://schemas.microsoft.com/powershell/Microsoft.Exchange` です。 
     
--  **資格情報**&ndash;アプリケーションを実行したユーザーの資格情報を格納する[PSCredential](http://msdn.microsoft.com/en-us/library/system.management.automation.pscredential%28VS.85%29.aspx)オブジェクトです。 
+-  **資格情報** &ndash;アプリケーションを実行しているユーザーの資格情報を含む[PSCredential](https://msdn.microsoft.com/library/system.management.automation.pscredential%28VS.85%29.aspx)オブジェクト。 
     
--  **カウント**&ndash;取得するのには Exchange メールボックス ユーザーの数です。 
+-  **count** &ndash;取得する Exchange メールボックスユーザーの数。 
     
 ```cs
 public Collection<PSObject> GetUsersUsingBasicAuth(
@@ -107,15 +107,15 @@ public Collection<PSObject> GetUsersUsingBasicAuth(
 
 ### <a name="connect-to-a-remote-runspace-by-using-certificate-authentication"></a>証明書による認証を使用してリモートの実行空間に接続します。
 
-次のコード例は **GetUsersUsingCertificate** メソッドを定義します。これは証明書を使用して、リモート サーバーに Exchange 管理シェルの実行空間を作成します。このメソッドは次に、「[リモートの実行空間からメールボックスのユーザーの一覧を取得する](#bk_remote)」セクションで定義されているように、リモート サーバー上のユーザーの一覧を返す **GetUserInformation** メソッドを呼び出します。
+次のコード例では、 **GetUsersUsingCertificate**メソッドを定義します。このメソッドは、証明書を使用してリモートサーバー上に Exchange 管理シェルの実行空間を作成します。 このメソッドは、「リモートの実行[空間からメールボックスユーザーのリストを取得](#bk_remote)する」で定義されているように、 **getuserinformation**メソッドを呼び出して、リモートサーバー上のユーザーの一覧を返します。
   
 このメソッドは、以下のパラメーターを必要とします。
   
--  **拇印**&ndash;アプリケーションを認証するために使用される証明書の拇印を含む文字列です。 
+-  **thumbprint** &ndash;アプリケーションを認証するために使用される証明書の拇印を含む文字列。 
     
--  **certConnectionUri**&ndash;証明書を認証するサーバーの URI を含む文字列です。 URI は、次の表に記載されているのいずれかになります。 
+-  **Certconnectionuri** &ndash;証明書の認証を行うサーバーの URI を含む文字列。 URI は、次の表に記載されているいずれかになります。 
     
-    **表 1 です。certConnectionUri Uri**
+    **表1certConnectionUri Uri**
 
     |**Server**|**URI**|
     |:-----|:-----|
@@ -123,9 +123,9 @@ public Collection<PSObject> GetUsersUsingBasicAuth(
     |SSL を使用する Exchange サーバー  <br/> |`https://<servername>/PowerShell`  <br/> |
     |Office 365 の一部としての Exchange Online  <br/> |`https://outlook.office365.com/PowerShell`  <br/> |
    
-- **schemaUri**&ndash; Exchange 管理シェルのスキーマを定義するスキーマ ドキュメントの URI を含む文字列です。 スキーマの URI は、 http://schemas.microsoft.com/powershell/Microsoft.Exchange。 
+- **Schemauri** &ndash;Exchange 管理シェルスキーマを定義するスキーマドキュメントの URI を含む文字列。 スキーマ URI は https://schemas.microsoft.com/powershell/Microsoft.Exchange です。 
     
-- **カウント**&ndash;取得するのには Exchange メールボックス ユーザーの数です。 
+- **count** &ndash;取得する Exchange メールボックスユーザーの数。 
     
 ```cs
 public Collection<PSObject> GetUsersUsingCertificate(
@@ -160,24 +160,24 @@ public Collection<PSObject> GetUsersUsingCertificate(
 
 ### <a name="connect-to-a-remote-runspace-on-an-exchange-server-by-using-kerberos-authentication"></a>Kerberos 認証を使用して Exchange サーバーのリモートの実行空間に接続する
 
-次のコード例は **GetUsersUsingKerberos** メソッドを定義します。これは、Kerberos 認証を使用して、リモート サーバーに Exchange 管理シェルの実行空間を作成します。このメソッドは次に、「[リモートの実行空間からメールボックスのユーザーの一覧を取得する](#bk_remote)」セクションで定義されているように、リモート サーバー上のユーザーの一覧を返す **GetUserInformation** メソッドを呼び出します。
+次のコード例では、 **GetUsersUsingKerberos**メソッドを定義します。このメソッドは、Kerberos 認証を使用してリモートサーバー上に Exchange 管理シェルの実行空間を作成します。 このメソッドは、「リモートの実行[空間からメールボックスユーザーのリストを取得](#bk_remote)する」で定義されているように、 **getuserinformation**メソッドを呼び出して、リモートサーバー上のユーザーの一覧を返します。
   
 このメソッドは、以下のパラメーターを必要とします。
   
-- **kerberosUri**&ndash;アプリケーションは、認証を Kerberos サーバーの URI を含む文字列です。 URI は、次の表に記載されているのいずれかになります。 
+- **kerberosUri** &ndash;アプリケーションを認証する Kerberos サーバーの URI を含む文字列。 URI は、次の表に記載されているいずれかになります。 
     
-    **表 2 になります。kerberosUri Uri**
+    **表2kerberosUri Uri**
 
     |**Server**|**URI**|
     |:-----|:-----|
     |SSL を使用しない Exchange サーバー  <br/> |`http://<servername>/PowerShell`  <br/> |
     |SSL を使用する Exchange サーバー  <br/> |`https://<servername>/PowerShell`  <br/> |
    
-- **schemaUri**&ndash; Exchange 管理シェルのスキーマを定義するスキーマ ドキュメントの URI を含む文字列です。 スキーマの URI は、 http://schemas.microsoft.com/powershell/Microsoft.Exchange。 
+- **Schemauri** &ndash;Exchange 管理シェルスキーマを定義するスキーマドキュメントの URI を含む文字列。 スキーマ URI は https://schemas.microsoft.com/powershell/Microsoft.Exchange です。 
     
-- **資格情報**&ndash;アプリケーションを実行したユーザーの資格情報を格納する[PSCredential](http://msdn.microsoft.com/en-us/library/system.management.automation.pscredential%28VS.85%29.aspx)オブジェクトです。 
+- **資格情報** &ndash;アプリケーションを実行しているユーザーの資格情報を含む[PSCredential](https://msdn.microsoft.com/library/system.management.automation.pscredential%28VS.85%29.aspx)オブジェクト。 
     
-- **カウント**&ndash;取得するのには Exchange メールボックス ユーザーの数です。 
+- **count** &ndash;取得する Exchange メールボックスユーザーの数。 
     
 ```cs
 public Collection<PSObject> GetUsersUsingKerberos(
@@ -212,13 +212,13 @@ public Collection<PSObject> GetUsersUsingKerberos(
 
 ## <a name="get-a-list-of-mailbox-users-from-a-remote-runspace"></a>リモートの実行空間からメールボックスのユーザーの一覧を取得します。
 
-コード例を次は、Exchange メールボックス ユーザーを表す[PSObject](http://msdn.microsoft.com/en-us/library/system.management.automation.pscredential%28VS.85%29.aspx)インスタンスのコレクションを取得する、 **GetUserInformation**メソッドを定義します。 このメソッドは、リモート サーバーからユーザーの一覧を取得する**GetUsersUsingBasicAuth**、 **GetUsersUsingCertificate**、および**GetUsersUsingKerberos**のメソッドによって呼び出されます。 
+次のコード例では、Exchange メールボックスユーザーを表す[PSObject](https://msdn.microsoft.com/library/system.management.automation.pscredential%28VS.85%29.aspx)インスタンスのコレクションを返す**getuserinformation**メソッドを定義します。 このメソッドは、 **GetUsersUsingBasicAuth**、 **GetUsersUsingCertificate**、および**GetUsersUsingKerberos**メソッドによって呼び出され、リモートサーバーからユーザーのリストを返します。 
   
 このメソッドは、以下のパラメーターを必要とします。
   
-- **カウント**&ndash;取得するのには Exchange メールボックス ユーザーの数です。 
+- **count** &ndash;取得する Exchange メールボックスユーザーの数。 
     
-- **実行空間**&ndash;リモートの Exchange サーバーに対して確立されているリモートの実行空間です。 
+- 実行**空間** &ndash;リモート Exchange サーバーに対して確立されたリモートの実行空間。 
     
 ```cs
 public Collection<PSObject> GetUserInformation(int count, Runspace runspace)
@@ -249,11 +249,11 @@ End Function
 
 ```
 
-**GetUserInformation**メソッドはユーザーのメールボックスに以上の_数_に戻ります。 この例のコードを簡略化するには、メソッドをフィルター処理したりしないそれ以外の場合に返されるメールボックス ユーザーを制限します。 
+**Getuserinformation**メソッドは、 _count ユーザー数_を超える数のメールボックスを返します。 この例のコードを簡略化するために、このメソッドは、返されるメールボックス ユーザーのフィルター処理やその他の方法による制限を行いません。 
   
 ## <a name="see-also"></a>関連項目
 
 - [Exchange 管理シェル ツールの作成](create-exchange-management-shell-tools.md)   
-- [Exchange 管理シェル コマンドレットの応答を使用します。](how-to-use-the-exchange-management-shell-cmdlet-response.md)
+- [Exchange 管理シェルコマンドレットの応答を使用する](how-to-use-the-exchange-management-shell-cmdlet-response.md)
     
 

@@ -1,30 +1,30 @@
 ---
-title: Exchange の購読グループとメールボックス サーバー間のアフィニティを維持します。
+title: Exchange の購読グループとメールボックス サーバー間のアフィニティを維持する
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 1bda4094-88c3-4f61-9219-6ee70f6e81cf
 description: サブスクリプション グループとメールボックス サーバー間のアフィニティの維持について説明します。
-ms.openlocfilehash: 7cfbfb5cc19e092c37e3d48a7fcc4f27023516e1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+localization_priority: Priority
+ms.openlocfilehash: 1618216cf69e08b2ae774264e0910856a59851af
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758972"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44455758"
 ---
-# <a name="maintain-affinity-between-a-group-of-subscriptions-and-the-mailbox-server-in-exchange"></a>Exchange の購読グループとメールボックス サーバー間のアフィニティを維持します。
+# <a name="maintain-affinity-between-a-group-of-subscriptions-and-the-mailbox-server-in-exchange"></a>Exchange の購読グループとメールボックス サーバー間のアフィニティを維持する
 
 サブスクリプション グループとメールボックス サーバー間のアフィニティの維持について説明します。
   
-アフィニティは、特定のメールボックス サーバーと一連の要求および応答メッセージの関連付けです。 Exchange のほとんどの機能のため、アフィニティは、サーバーによって処理されます。 ただしは、通知を使用すると、例外です。 クライアントの通知サブスクリプションをメールボックス サーバーとの類似性を維持するための責任です。 このアフィニティは、負荷分散装置とクライアント アクセス サーバーのクライアントとサーバーがルートの通知サブスクリプションとサブスクリプションを保持しているメールボックス サーバーに関連する要求の間で有効にします。 関係なしには、クライアントのサブスクリプションでは、返される[ErrorSubscriptionNotFound](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx)エラーが発生することができますが含まれていない別のメールボックス サーバーに要求をルーティングを取得可能性があります。 
+アフィニティは、特定のメールボックス サーバーと一連の要求および応答メッセージの関連付けです。 Exchange のほとんどの機能では、アフィニティはサーバーによって処理されます。 ただし、通知は例外です。 通知サブスクリプションについては、クライアントがメールボックス サーバーとのアフィニティを維持します。 このアフィニティにより、クライアントとサーバーの間のロード バランサーとクライアント アクセス サーバーは、通知サブスクリプションと関連する要求を、サブスクリプションを維持するメールボックス サーバーにルーティングします。 アフィニティを使用しない場合、要求はクライアントのサブスクリプションを含まない別のメールボックスサーバーにルーティングされ、 [ErrorSubscriptionNotFound](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx)エラーが返されることがあります。 
   
 ## <a name="how-is-affinity-maintained"></a>アフィニティはどのように維持されますか？
 <a name="bk_howmaintained"> </a>
 
 Exchange でのアフィニティは、Cookie に基づきます。クライアントがサブスクリプション要求に特定のヘッダーを含めることにより、Cookie の作成をトリガーし、次いでサブスクリプションの応答に Cookie が含められます。クライアントは、要求が適切なメールボックス サーバーにルーティングされるようにするために、それ以降の要求で Cookie を送信します。
   
-具体的には、Exchange でのアフィニティは、次のように処理されます。  
+具体的には、Exchange でのアフィニティは、次のように処理されます。 
   
 - X-AnchorMailbox – 初期サブスクリプション要求に含まれる HTTP ヘッダー。同じメールボックス サーバーとアフィニティを共有するメールボックスのグループの最初のメールボックスを識別します。
     
@@ -37,21 +37,21 @@ Exchange でのアフィニティは、Cookie に基づきます。クライア�
 
 同じ手順を使用して、複数のメールボックスのサブスクリプションとメールボックス サーバーに対するアフィニティを維持できます。ストリーミング、プル、またはプッシュの通知のどれを使用しているかには関係なく、オンプレミスの Exchange Server または Exchange Online のどちらを対象としているかにも関係ありません。
   
-1. メールボックスごとに[自動検出を呼び出す](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)し、GroupingInformation と ExternalEwsUrl のユーザー設定を取得します。 SOAP の自動検出の[設定](http://msdn.microsoft.com/library/43db26e1-f7be-49fd-b26b-fc1b10bd3458%28Office.15%29.aspx)要素を使用して POX の自動検出は、 [GroupingInformation](http://msdn.microsoft.com/library/2d8a007f-d79c-43c8-90e3-2c6d883f3a7c%28Office.15%29.aspx)要素を使用します。 
+1. 各メールボックスで [Autodiscover を呼び出して](how-to-get-user-settings-from-exchange-by-using-autodiscover.md) GroupingInformation と ExternalEwsUrl のユーザー設定を取得します。SOAP の自動検出では [Setting](https://msdn.microsoft.com/library/43db26e1-f7be-49fd-b26b-fc1b10bd3458%28Office.15%29.aspx) 要素を使用し、POX の自動検出では [GroupingInformation](https://msdn.microsoft.com/library/2d8a007f-d79c-43c8-90e3-2c6d883f3a7c%28Office.15%29.aspx) 要素を使用します。 
     
 2. 自動検出応答からの GroupingInformation と ExternalEwsUrl 設定を使用して、メールボックスを同じグループの ExternalEwsUrl と GroupingInformation の連結された値に配置します。グループに 200 個を超えるメールボックスがある場合は、グループをさらに分解して、各グループが 200 個を超えるメールボックスを持たないようにします。
     
-3. 作成し、プロシージャの残りの部分の 1 つの[ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=EXCHG.80%29.aspx)オブジェクトを使用します。 使用すると、同じ**ExchangeService**オブジェクト、cookie およびヘッダー (設定している) 場合は自動的に維持されます。 グループ ストリーミングのサブスクリプションの単一の接続にする予定がない場合としている偽装されたユーザーごとに別の**ExchangeService**オブジェクトを作成するに注意してください。 
+3. 手順の残りの部分には、1つの[ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=EXCHG.80%29.aspx)オブジェクトを作成して使用します。 同じ **ExchangeService** オブジェクトを使用する場合、Cookie とヘッダー (設定されている場合) は自動的に維持されます。 ストリーミングのサブスクリプションを単一の接続にグループ化する予定がない場合は、偽装されたユーザーごとに様々な **ExchangeService** オブジェクトを自由に作成できます。 
     
-4. グループ内のすべてのユーザーがアルファベット順に並べ替えられたときに、ユーザー名が最初に表示するユーザーの要求を[送信するサブスクリプション](notification-subscriptions-mailbox-events-and-ews-in-exchange.md)(私たちを参照してくださいアンカーのメールボックスのユーザーとしてこのユーザー)。 次の操作を行います。 
+4. グループ内のすべてのユーザーがアルファベット順に並べ替えられるときに、最初にユーザー名が表示されるユーザーの[サブスクリプション要求を送信](notification-subscriptions-mailbox-events-and-ews-in-exchange.md)します (このユーザーは、アンカーメールボックスユーザーと呼ばれます)。 以下のことを行います。 
     
   - アンカーのメールボックス ユーザーの SMTP アドレスに設定された値を持つ X-AnchorMailbox ヘッダーを含めます。
     
   - 値が true に設定された X-PreferServerAffinity ヘッダーを含めます。
     
-  - [ApplicationImpersonation](http://technet.microsoft.com/en-us/library/dd776119%28v=exchg.150%29.aspx)ロール ( [ExchangeImpersonation](http://msdn.microsoft.com/library/d8cbac49-47d0-4745-a2a7-545d33f8da93%28Office.15%29.aspx)型) を使用します。 
+  - [Applicationimpersonation](https://technet.microsoft.com/library/dd776119%28v=exchg.150%29.aspx)役割 ( [exchangeimpersonation](https://msdn.microsoft.com/library/d8cbac49-47d0-4745-a2a7-545d33f8da93%28Office.15%29.aspx)型) を使用します。 
     
-5. サブスクリプションの応答で、X-BackEndOverrideCookie の値を取得します。このグループ内のユーザーに対するそれ以降のサブスクリプション要求のそれぞれに、この値を含めます。
+5. サブスクリプションの応答で、X-BackEndOverrideCookie の値を取得します。 このグループ内のユーザーに対するそれ以降のサブスクリプション要求のそれぞれに、この値を含めます。
     
 6. グループ内の追加ユーザーごとに、サブスクリプション要求を送信して、次の操作を行います。
     
@@ -59,44 +59,44 @@ Exchange でのアフィニティは、Cookie に基づきます。クライア�
     
   - 値が true に設定された X-PreferServerAffinity ヘッダーを含めます。
     
-  - サブスクリプションのアンカーのメールボックス ユーザーの応答で返された X BackEndOverrideCookie が含まれます。
+  - アンカーメールボックスユーザーのサブスクリプション応答で返された X-backendoverridecookie を含めます。
     
-  - [ApplicationImpersonation](http://technet.microsoft.com/en-us/library/dd776119%28v=exchg.150%29.aspx)ロール ( [ExchangeImpersonation](http://msdn.microsoft.com/library/d8cbac49-47d0-4745-a2a7-545d33f8da93%28Office.15%29.aspx)型) を使用します。 
+  - [Applicationimpersonation](https://technet.microsoft.com/library/dd776119%28v=exchg.150%29.aspx)役割 ( [exchangeimpersonation](https://msdn.microsoft.com/library/d8cbac49-47d0-4745-a2a7-545d33f8da93%28Office.15%29.aspx)型) を使用します。 
     
     サーバーは X-PreferServerAffinity と X-BackendOverrideCookie の値を一緒に使用して、メールボックス サーバーへのルーティングを実行することに注意してください。X-AnchorMailbox ヘッダーも必要ですが、他の 2 つの値が有効な場合、サーバーでは無視されます。X-AnchorMailbox と X-PreferServerAffinity が要求内にあり、X-BackendOverrideCookie が含まれていない場合、X-AnchorMailbox の値が要求のルーティングに使用されます。
     
     X-PreferServerAffinity と X-BackendOverrideCookie の値がルーティングを実行するため、アンカーのメールボックスが別のグループまたはサーバーに移動する場合、X-BackendOverrideCookie が要求をグループの適切なサーバーにルーティングし、ロジックは変わりません。
     
-7. グループの 1 つの[GetStreamingEvents](http://msdn.microsoft.com/library/dbe83857-c4f8-4d98-813f-e03c289697a1%28Office.15%29.aspx)または[GetEvents](http://msdn.microsoft.com/library/22d4da6b-d8a8-484f-82c4-3e4b8f5431cd%28Office.15%29.aspx)要求を送信して、次の操作を行います。 
+7. グループに対して 1 つの [GetStreamingEvents](https://msdn.microsoft.com/library/dbe83857-c4f8-4d98-813f-e03c289697a1%28Office.15%29.aspx) または [GetEvents](https://msdn.microsoft.com/library/22d4da6b-d8a8-484f-82c4-3e4b8f5431cd%28Office.15%29.aspx) 要求を送信し、次の操作を行います。 
     
-  - 各グループ内のメールボックスの 1 つのサブスクリプションの応答で返された[サブスクリプション Id](http://msdn.microsoft.com/library/3f86c178-2311-4844-82db-c2a0e469d116%28Office.15%29.aspx)値が含まれます。 
+  - グループ内のメールボックスの各サブスクリプションの応答で返される [SubscriptionId](https://msdn.microsoft.com/library/3f86c178-2311-4844-82db-c2a0e469d116%28Office.15%29.aspx) の値を含めます。 
     
-  - グループに対しては、200 以上のサブスクリプションが存在する場合は、複数の要求を作成します。 要求に含める[サブスクリプション Id](http://msdn.microsoft.com/library/3f86c178-2311-4844-82db-c2a0e469d116%28Office.15%29.aspx)値の最大数は、200 です。 
+  - グループで 200 以上のサブスクリプションが存在する場合は、複数の要求を作成してください。要求に含める [SubscriptionId](https://msdn.microsoft.com/library/3f86c178-2311-4844-82db-c2a0e469d116%28Office.15%29.aspx) の値の最大数は 200 です。 
     
-  - 移動先のメールボックスを使用できるよりもより多くの接続が必要な場合にサービス アカウントを使用してグループのアンカーのメールボックスの偽装それ以外の場合、偽装を使用しません。 理想的には、調整の制限を受けることはありませんように[GetStreamingEvents](http://msdn.microsoft.com/library/dbe83857-c4f8-4d98-813f-e03c289697a1%28Office.15%29.aspx)または[GetEvents](http://msdn.microsoft.com/library/22d4da6b-d8a8-484f-82c4-3e4b8f5431cd%28Office.15%29.aspx)要求ごとに一意のメールボックスの権限を借用します。 
+  - 対象となるメールボックスで使用できるよりもより多くの接続が必要な場合は、サービス アカウントを使用してグループのアンカーのメールボックスを偽装します。それ以外の場合は、偽装を使用しません。理想的には、[GetStreamingEvents](https://msdn.microsoft.com/library/dbe83857-c4f8-4d98-813f-e03c289697a1%28Office.15%29.aspx) または [GetEvents](https://msdn.microsoft.com/library/22d4da6b-d8a8-484f-82c4-3e4b8f5431cd%28Office.15%29.aspx) 要求ごとに一意のメールボックスを偽装すると、調整の制限が発生しません。 
     
-  - ApplicationImpersonation を使用して、[移動先のメールボックスを使用できるよりもより多くの接続](how-to-maintain-affinity-between-group-of-subscriptions-and-mailbox-server.md#bk_throttling)が必要な場合それ以外の場合、ApplicationImpersonation を使用しません。
+  - [対象となるメールボックスで利用できるよりも多くの接続](how-to-maintain-affinity-between-group-of-subscriptions-and-mailbox-server.md#bk_throttling)が必要な場合は、ApplicationImpersonation を使用します。それ以外の場合、ApplicationImpersonation を使用しません。
     
-  - X PreferServerAffinity ヘッダーをインクルードし、true に設定します。 この値は、手順 2 で作成した**ExchangeService**オブジェクトを使用している場合に自動的に含まれます。 
+  - X-PreferServerAffinity ヘッダーを含め、値を true に設定します。 手順 2 で作成した **ExchangeService** オブジェクトを使用している場合、この値は自動的に含められます。 
     
-  - グループ (、X-BackEndOverrideCookie アンカー メールボックス ユーザーのサブスクリプションの応答で返された) の X-BackEndOverrideCookie が含まれます。 この値は、手順 2 で作成した**ExchangeService**オブジェクトを使用している場合に自動的に含まれます。 
+  - グループの X-backendoverridecookie (アンカーメールボックスユーザーのサブスクリプション応答で返された X-backendoverridecookie) を含めます。 手順 2 で作成した **ExchangeService** オブジェクトを使用している場合、この値は自動的に含められます。 
     
 8. 返されたイベントを別のスレッドに渡して処理します。
     
 ## <a name="what-throttling-values-do-i-need-to-take-into-consideration"></a>考慮に入れる必要がある調整の値は何ですか？
 <a name="bk_throttling"> </a>
 
-通知の実装を計画するときは、2 つの値を考慮に入れるたい: 接続の数をおよびサブスクリプションの数です。 次の表は、各[調整](ews-throttling-in-exchange.md)の設定の既定値と設定を使用する方法です。 、値ごとに、予算は、移動先のメールボックスに割り当てられます。 このため、多くのシナリオで必要な手順は、追加の接続を得るために偽装を使用します。 
+通知の実装を計画する際には、2つの値を考慮する必要があります。接続数、およびサブスクリプション数。 次の表に、各[調整](ews-throttling-in-exchange.md)の設定の既定値と設定の使用方法を示します。 値ごとに、割り当て量が、対象のメールボックスに割り当てられます。 このため、多くのシナリオで、追加の接続を得るために偽装を使用することが必要な手順となります。 
   
-**表 1 です。既定のスロットル値**
+**表1既定の調整値**
 
-|**領域の考慮事項**|**調整設定**|**既定値**|**説明**|
+|**考慮すべき領域**|**調整設定**|**既定値**|**説明**|
 |:-----|:-----|:-----|:-----|
-|ストリーミング接続  <br/> |既定の接続切断の制限  <br/> |Exchange のオンライン 10  <br/> Exchange 2013 の 3  <br/> |アカウントを持つことができる、ストリーミングの同時接続の最大数は、サーバー上で同時に開きます。 この制限内で作業対象のメールボックスに割り当てられている ApplicationImpersonation の役割を持つサービス アカウントを使用して、イベントをストリームを取得するときは、各サブスクリプション ID のグループの最初のユーザーを偽装します。  <br/> |
+|ストリーミング接続  <br/> |既定の接続切断の制限  <br/> |Exchange Online では 10  <br/> Exchange 2013 では 3  <br/> |アカウントがサーバー上で同時に開くことができる同時ストリーミング接続の最大数。 この制限内で作業するには、対象のメールボックスに割り当てられている ApplicationImpersonation の役割を持つサービス アカウントを使用して、ストリーミングされたイベントを取得するときに、各サブスクリプション ID のグループの最初のユーザーを偽装します。  <br/> |
 |プルまたはプッシュの接続  <br/> |EWSMaxConcurrency  <br/> |27  <br/> |アカウントがサーバー上で同時に開いておくことができる並行プルまたはプッシュの最大接続数 (受信されているが、まだ応答されていない要求)。  <br/> |
-|サブスクリプション  <br/> |EWSMaxSubscriptions  <br/> |Exchange のオンライン 20  <br/> Exchange 2013 5000  <br/> |アカウントが同時に持つことができる、期限が切れていないサブスクリプションの最大数。この値は、サーバーでサブスクリプションが作成されたときに減少します。  <br/> |
+|サブスクリプション  <br/> |EWSMaxSubscriptions  <br/> |Exchange Online では 20  <br/> Exchange 2013 では 5000  <br/> |アカウントが同時に持つことができる、期限が切れていないサブスクリプションの最大数。この値は、サーバーでサブスクリプションが作成されたときに減少します。  <br/> |
    
-次の例では、すべてターゲット メールボックスと対象のメールボックスに割り当てられている[ApplicationImpersonation](http://technet.microsoft.com/en-us/library/dd776119%28v=exchg.150%29.aspx)の役割を持つサービス アカウントの間で予算を処理する方法を示します。 
+次の例は、ターゲットメールボックスと、ターゲットメールボックスに対して[Applicationimpersonation](https://technet.microsoft.com/library/dd776119%28v=exchg.150%29.aspx)役割が割り当てられているサービスアカウントの間で、予算がどのように処理されるかを示しています。 
   
 - ServiceAccount1 (sa1) は、(m1、m2、m3 など) の多くのユーザーを偽装し、メールボックスごとにサブスクリプションを作成します。サブスクリプションが作成されると、サブスクリプションの所有者は sa1 となり、sa1 がサブスクリプションとの接続を開くと、EWS が強制してサブスクリプションが sa1 に所有されます。
     
@@ -104,7 +104,7 @@ Exchange でのアフィニティは、Cookie に基づきます。クライア�
     
 1. 偽装をせず、接続が sa1 に対して課金されます。
     
-2. すべてのユーザーを偽装して、たとえば m1-接続は m1 の予算のコピーを請求するためです。 (M1 自体、Exchange Online を使用して、10 個の接続を開くことができ、m1 を偽装しているすべてのサービス アカウントは、コピー元の予算を使用して 10 個の接続を開くことができます)。
+2. ユーザーのいずれか (たとえば、m1) を偽装することによって、接続が m1's の予算のコピーに対して課金されるようにします。 (M1 自体は Exchange Online を使用して10個の接続を開くことができ、m1 を偽装するすべてのサービスアカウントは、コピーされた予算を使用して10個の接続を開くことができます)。
     
 - 接続制限に達した場合、次の回避策を利用できます。
     
@@ -115,32 +115,32 @@ Exchange でのアフィニティは、Cookie に基づきます。クライア�
 ## <a name="example-maintaining-affinity-between-a-group-of-subscriptions-and-the-mailbox-server"></a>例:サブスクリプション グループとメールボックス サーバー間のアフィニティを維持する
 <a name="bk_ce"> </a>
 
-ですが、アクションの説明を参照してください。 次のコード例は、ユーザーをグループ化し、メールボックス サーバーとのアフィニティを維持するために X AnchorMailbox X PreferServerAffinity のヘッダーと X BackendOverrideCookie の cookie を使用する方法を示しています。 ヘッダーおよび cookie はアフィニティのストーリーの中で重要であるために、次の使用例は、EWS の XML 要求と応答について説明します。 EWS のマネージ API を使用して、サブスクリプションの要求と応答の本文を作成するのには、 [EWS を使用して Exchange でのメールボックスのイベントに関する通知をストリーム](how-to-stream-notifications-about-mailbox-events-by-using-ews-in-exchange.md)し[、EWS を使用して Exchange メールボックスのイベントに関する通知をプル](how-to-pull-notifications-about-mailbox-events-by-using-ews-in-exchange.md)を参照してください。 このセクションには、アフィニティを維持し、要求にヘッダーを追加する特定追加の手順にはが含まれています。
+それでは、アクションを見てみましょう。 次のコード例は、ユーザーをグループ化し、X-AnchorMailbox ヘッダー、X-PreferServerAffinity ヘッダー、および X-BackendOverrideCookie Cookie を使用して、メールボックス サーバーとのアフィニティを維持する方法を示します。 ヘッダーおよび Cookie はアフィニティのストーリーの中で重要であるため、この例は、EWS の XML 要求と応答に焦点を当てています。 EWS マネージ API を使用して、サブスクリプション要求と応答の本文を作成するには、「exchange[での ews を使用したメールボックスイベントに関するストリーム通知](how-to-stream-notifications-about-mailbox-events-by-using-ews-in-exchange.md)」と「 [EXCHANGE での ews を使用したメールボックスイベントに関するプル通知](how-to-pull-notifications-about-mailbox-events-by-using-ews-in-exchange.md)」を参照してください。 このセクションには、アフィニティを維持し、要求にヘッダーを追加するための、特定の追加の手順が含まれています。
   
-この例では、4 つのユーザー: alfred@contoso.com、alisa@contoso.com、ronnie@contoso.com、および sadie@contoso.com。 次の図は、GroupingInformation と ExternalEwsUrl の[自動検出の設定](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)ユーザーを示します。 
+この例では、4 人のユーザーとして alfred@contoso.com、alisa@contoso.com、ronnie@contoso.com、および sadie@contoso.com が含まれています。次の図では、ユーザーの GroupingInformation と ExternalEwsUrl の[自動検出の設定](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)を示します。 
   
-**図 1 です。グループのメールボックスに使用される自動検出の設定**
+**図1。メールボックスのグループ化に使用される自動検出の設定**
 
 ![各ユーザーの GroupingInformation および ExternalEwsUrl の値を表示している表。](media/Exchange2013_NotificationAffinityAutoDResults.png)
   
 自動検出応答からの設定を使用して、GroupingInformation と ExternalEwsUrl の設定の連結された値により、メールボックスがグループ化されます。この例では、Alfred と Sadie は同じ値を持つ 1 つのグループであり、Alisa および Ronnie は別のグループにいて同じ値を共有しています。
   
-**図 2 になります。メールボックスのグループを作成します。**
+**図2メールボックスグループの作成**
 
 ![Autodiscover 設定を使用してどのようにメールボックス グループが作成されるかを示した表。](media/Exchange2013_NotificationAffinityGrouping.png)
   
-この例では、グループ A にフォーカスします私たちはグループ B に同じ手順を使用ですが、別の X AnchorMailbox 値を使用して、そのグループの。
+この例の目的のために、グループ A に注目します。グループ B と同じ手順を使用しますが、そのグループには別の X-anchormailbox 値を使用します。
   
-X AnchorMailbox ヘッダーを設定とアンカーのメールボックス (alfred@contoso.com)、サブスクリプション要求を作成する[ApplicationImpersonation](http://technet.microsoft.com/en-us/library/dd776119%28v=exchg.150%29.aspx)を使用して、その電子メール アドレスと、X PreferServerAffinity ヘッダーの値が true です。 これら 2 つのヘッダー値を設定すると、応答の X BackEndOverrideCookie を作成するサーバーが発生します。
+[Applicationimpersonation](https://technet.microsoft.com/library/dd776119%28v=exchg.150%29.aspx)を使用して、アンカーメールボックスのサブスクリプション要求 (alfred@contoso.com) を作成し、x-anchormailbox ヘッダーを自分の電子メールアドレスに設定し、x-x-preferserveraffinity header 値を true に設定します。 これらの2つのヘッダー値を設定すると、サーバーによって応答の X-backendoverridecookie が作成されます。
   
-EWS のマネージ API を使用する場合は、ように、サブスクリプション要求に 2 つのヘッダーを追加するのには[立てて](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice_members%28v=exchg.80%29.aspx)[Add](http://msdn.microsoft.com/EN-US/library/cy7xta5e)メソッドを使用します。 
+EWS マネージ API を使用している場合は、次に示すように、 [Httpheaders](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice_members%28v=exchg.80%29.aspx)の[add](https://msdn.microsoft.com/library/cy7xta5e)メソッドを使用して、2つのヘッダーをサブスクリプション要求に追加します。 
   
 ```cs
 service.HttpHeaders.Add("X-AnchorMailbox", Mailbox.SMTPAddress);
 service.HttpHeaders.Add("X-PreferServerAffinity", "true");
 ```
 
-アルフレッドのサブスクリプションの要求は次のような。
+そのため、このような形式のサブスクリプション要求は次のようになります。
   
 ```XML
 POST https://outlook.office365.com/EWS/Exchange.asmx HTTP/1.1
@@ -151,7 +151,7 @@ X-AnchorMailbox: alfred@contoso.com
 X-PreferServerAffinity: true
 Host: outlook.office365.com
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
     <t:ExchangeImpersonation>
@@ -175,7 +175,7 @@ Host: outlook.office365.com
 </soap:Envelope>
 ```
 
-アルフレッドのサブスクリプションの要求への応答は、次の XML メッセージと、X の BackEndOverrideCookie が含まれています。 このグループ内のユーザーのすべての後続の要求に対しては、この cookie を再送信します。 応答が Exchange 2010 によって使用される exchangecookie クッキーなどの他の cookie にはも含まれていることを確認します。 Exchange Online、Exchange オンライン Office 365 の一部のバージョンの Exchange が Exchange 2013 年から始まるとそれ以降のサブスクリプション要求に含まれている場合、exchangecookie を無視します。
+次の XML メッセージは、Alfred のサブスクリプション要求に対する応答で、X-backendoverridecookie が含まれています。 このグループ内のユーザーのすべての後続の要求に対して、この Cookie を再送信します。 応答には、Exchange 2010 で使用されている exchangecookie Cookie など、追加の Cookie も含まれていることに注意してください。 Exchange Online 、Office 365 の一部としての Exchange Online、および Exchange 2013 以降のバージョンの Exchange は、後続のサブスクリプション要求に含まれている場合に、exchangecookie を無視します。
   
 ```XML
 HTTP/1.1 200 OK
@@ -186,22 +186,22 @@ Set-Cookie: X-BackEndOverrideCookie=CO1PR06MB222.namprd06.prod.outlook.com~19419
 Set-Cookie: X-BackEndCookie=alfred@contoso.com=Ox8XKzcXLxg==; 
     expires=Wed, 25-Sep-2013 18:52:49 GMT; path=/EWS; secure; HttpOnly
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15"
                          MinorVersion="0"
                          MajorBuildNumber="775"
                          MinorBuildNumber="7"
                          Version="V2_4"
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:SubscribeResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:SubscribeResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:SubscribeResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -213,24 +213,24 @@ Set-Cookie: X-BackEndCookie=alfred@contoso.com=Ox8XKzcXLxg==;
 </s:Envelope>
 ```
 
-アルフレッドの応答からの X-BackEndOverrideCookie を使用して、X AnchorMailbox ヘッダー、Sadie のサブスクリプション要求が作成される、グループ a: Sadie のサブスクリプション要求の他のメンバーは次のようになります。
+X-backendoverridecookie を Alfred の応答と X-anchormailbox ヘッダーで使用すると、サブスクリプション要求が s e に対して作成され、その他のグループのサブスクリプション要求は次のようになります。
   
 ```XML
 POST https://outlook.office365.com/EWS/Exchange.asmx HTTP/1.1
 Content-Type: text/xml; charset=utf-8
 Accept: text/xml
 User-Agent: ExchangeServicesClient/15.00.0516.014
-X-AnchorMailbox: alfred@consoso.com
+X-AnchorMailbox: alfred@contoso.com
 X-PreferServerAffinity: true
 Host: outlook.office365.com
 Cookie: X-BackEndOverrideCookie=CO1PR06MB222.namprd06.prod.outlook.com~1941996295
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
     <t:ExchangeImpersonation>
       <t:ConnectingSID>
-        <t:SmtpAddress>sadie@consoso.com </t:SmtpAddress>
+        <t:SmtpAddress>sadie@contoso.com </t:SmtpAddress>
       </t:ConnectingSID>
     </t:ExchangeImpersonation>
   </soap:Header>
@@ -250,7 +250,7 @@ Cookie: X-BackEndOverrideCookie=CO1PR06MB222.namprd06.prod.outlook.com~194199629
 
 ```
 
-Sadie のサブスクリプションの応答は、次のように検索します。 X-BackEndOverrideCookie が含まれていないことに注意してください。 クライアントは、以降の要求は、その値をキャッシュします。
+このように、サブスクリプション応答は次のようになります。 X-BackEndOverrideCookie が含まれていないことに注意してください。 以降の要求では、クライアントがその値をキャッシュします。
   
 ```XML
 HTTP/1.1 200 OK
@@ -259,22 +259,22 @@ Set-Cookie: exchangecookie=640ea858f69d47ff8cce8b44c337f6d9; path=/
 Set-Cookie: X-BackEndCookie=alfred@contoso.com=Ox8XKzcXLxg==; 
    expires= Wed, 25-Sep-2013 18:53:06 GMT; path=/EWS; secure; HttpOnly
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15"
                          MinorVersion="0"
                          MajorBuildNumber="775"
                          MinorBuildNumber="7"
                          Version="V2_4"
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:SubscribeResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:SubscribeResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:SubscribeResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -286,7 +286,7 @@ Set-Cookie: X-BackEndCookie=alfred@contoso.com=Ox8XKzcXLxg==;
 </s:Envelope>
 ```
 
-グループ内のすべてのサブスクリプションのサブスクリプション応答の[サブスクリプション Id](http://msdn.microsoft.com/library/3f86c178-2311-4844-82db-c2a0e469d116%28Office.15%29.aspx)値を使用すると、 [GetStreamingEvents](http://msdn.microsoft.com/library/dbe83857-c4f8-4d98-813f-e03c289697a1%28Office.15%29.aspx)操作の要求が作成されました。 このグループの数が 200 未満のサブスクリプションがあるため、すべての送信要求が 1 つ。 X PreferServerAffinity ヘッダーの設定を true に、X の BackEndOverrideCookie が含まれています。 
+サブスクリプション応答からの [SubscriptionId](https://msdn.microsoft.com/library/3f86c178-2311-4844-82db-c2a0e469d116%28Office.15%29.aspx) の値を使用して、[GetStreamingEvents](https://msdn.microsoft.com/library/dbe83857-c4f8-4d98-813f-e03c289697a1%28Office.15%29.aspx) 操作の要求がグループ内のすべてのサブスクリプションに対して作成されました。このグループのサブスクリプションが 200 未満であるため、すべて 1 つの要求で送信されます。X-PreferServerAffinity ヘッダーが true に設定され、X-BackEndOverrideCookie が含められます。  
   
 ```XML
 POST https://outlook.office365.com/EWS/Exchange.asmx HTTP/1.1
@@ -298,7 +298,7 @@ X-PreferServerAffinity: true
 Host: outlook.office365.com
 Cookie: X-BackEndOverrideCookie=CO1PR06MB222.namprd06.prod.outlook.com~1941996295
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
     <t:ExchangeImpersonation>
@@ -324,27 +324,27 @@ Cookie: X-BackEndOverrideCookie=CO1PR06MB222.namprd06.prod.outlook.com~194199629
 ## <a name="how-has-affinity-changed"></a>アフィニティはどのように変化したのでしょうか？
 <a name="bk_howchanged"> </a>
 
-Exchange 2010 では、サブスクリプションが使用されます、クライアント アクセス サーバーで、図 3 に示すように。 図 4 に示すようには、Exchange 2010 以降のバージョンの Exchange メールボックス サーバーで、サブスクリプションが維持されます。
+Exchange 2010 では、図 3 に示すようにサブスクリプションがクライアント アクセス サーバーで維持されます。 Exchange 2010 以降のバージョンの Exchange では、図 4 に示すようにメールボックス サーバーでサブスクリプションが維持されます。
   
-**図 3 です。Exchange 2010 での類似性を維持するためのプロセス**
+**図 3.Exchange 2010 でアフィニティを維持するためのプロセス**
 
 ![Exchange 2010 のクライアント アクセス サーバーで、アクティブ サブスクリプションのテーブルがどのように維持されるかを示す図。](media/Exchange2013_NoficationAffinity2010.png)
   
-**図 4 です。オンラインの Exchange および Exchange 2013 のアフィニティを維持するためのプロセス**
+**図 4.Exchange Online および Exchange 2013 でアフィニティを維持するためのプロセス**
 
 ![ロード バランサーおよびクライアント アクセス サーバーが、要求をどのように Exchange Server および Exchange Online でアクティブ サブスクリプションのテーブルを維持するメールボックス サーバーにルーティングするかを示す図。](media/Exchange2013_NoficationAffinity2013.png)
   
-Exchange 2010 クライアントだけを知っているロード バランサーのアドレスとサーバーによって返される exchangecookie が適切なクライアント アクセス サーバーに要求がルーティングされることを保証します。 ただし、それ以降のバージョン、ロード バランサー、およびクライアント アクセス サーバーの役割の両方があるメールボックス サーバーを取得する前に、適切に要求をルーティングします。 追加情報が必要であるには、新しいヘッダーおよび cookie が導入された理由であります。 [通知サブスクリプション、メールボックス イベント、および Exchange 内](notification-subscriptions-mailbox-events-and-ews-in-exchange.md)の資料では、Exchange 2013 のサブスクリプションを維持する方法について説明します。 
+Exchange 2010 では、クライアントはロード バランサーのアドレスのみを認識し、サーバーによって返される exchangecookie により、要求が適切なクライアント アクセス サーバーにルーティングされます。 ただし、それ以降のバージョンでは、ロード バランサーとクライアント アクセス サーバーの役割の両方で、メールボックス サーバーに到達する前に、適切に要求をルーティングする必要があります。 そのためには追加情報が必要であり、これが新しいヘッダーおよび Cookie が導入された理由です。 記事「[Exchange での通知サブスクリプション、メールボックス イベント、および EWS](notification-subscriptions-mailbox-events-and-ews-in-exchange.md)」では、Exchange 2013 でサブスクリプションを維持する方法について説明しています。 
   
-以降のバージョンで Exchange 2010 を使用する exchangecookie がまだ返されることがわかります可能性があります。 要求でこの cookie を含む危害はありませんが、それ以降のバージョンの Exchange を無視すること。
+Exchange 2010 が使用する exchangecookie が、以降のバージョンで依然として返されることに気付くかもしれません。 この cookie を要求に含めるには害はありませんが、それ以降のバージョンの Exchange は無視します。
   
 ## <a name="see-also"></a>関連項目
 
-- [Notification subscriptions, mailbox events, and EWS in Exchange](notification-subscriptions-mailbox-events-and-ews-in-exchange.md)
-- [Exchange の EWS を使用してメールボックスのイベントに関する通知をストリーム](how-to-stream-notifications-about-mailbox-events-by-using-ews-in-exchange.md)
-- [EWS を使用して Exchange でメールボックスのイベントに関する通知をプルします。](how-to-pull-notifications-about-mailbox-events-by-using-ews-in-exchange.md)
+- [Exchange の通知サブスクリプション、メールボックス イベント、および EWS](notification-subscriptions-mailbox-events-and-ews-in-exchange.md)
+- [Exchange での EWS を使用したメールボックス イベントに関するストリーム通知](how-to-stream-notifications-about-mailbox-events-by-using-ews-in-exchange.md)
+- [Exchange での EWS を使用したメールボックス イベントに関するプル通知](how-to-pull-notifications-about-mailbox-events-by-using-ews-in-exchange.md)
 - [Exchange における EWS での通知関連エラーの処理](handling-notification-related-errors-in-ews-in-exchange.md)
-- [EWS サブスクリプション用の関係を管理するうえで変更しています.](http://blogs.msdn.com/b/mstehle/archive/2013/04/17/changes-in-managing-affinity-for-ews-subscriptions.aspx)
-- [EWS の交換で調整](ews-throttling-in-exchange.md)
+- [EWS サブスクリプションのアフィニティの管理の変更...](https://blogs.msdn.com/b/mstehle/archive/2013/04/17/changes-in-managing-affinity-for-ews-subscriptions.aspx)
+- [Exchange での EWS 調整](ews-throttling-in-exchange.md)
     
 

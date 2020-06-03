@@ -3,42 +3,42 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
 ms.assetid: 6c969133-6036-448b-af39-a3caf9917e98
-description: Exchange web サービスの参照情報を検索します。
-ms.openlocfilehash: 417ade6956ee5e09fe7ad63f09e59f0079d58613
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Exchange の web サービスに関する参照情報を検索します。
+localization_priority: Priority
+ms.openlocfilehash: 8bdb3d6c4244bf8e0f092f5a9ffa3de5e8f1c3c2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840003"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467348"
 ---
-# <a name="web-services-reference-for-exchange"></a>Exchange web サービスの参照
+# <a name="web-services-reference-for-exchange"></a>Exchange の Web サービス リファレンス
 
-Exchange web サービスの参照情報を検索します。
+Exchange の web サービスに関する参照情報を検索します。
   
-このセクションには、Exchange オンラインで、Office 365 の一部のバージョンの Exchange が Exchange Server 2007 以降と Exchange のオンラインに表示されるか、または Api のリファレンス情報が含まれています。 このセクションには、次の内容が含まれています。
+このセクションには、exchange Online に含まれる Api、Office 365 の一部としての Exchange Online、Exchange Server 2007 以降の exchange のバージョンに関するリファレンス情報が記載されています。 このセクションには次のコンテンツが含まれています。
   
-- [Exchange の EWS 参照](ews-reference-for-exchange.md): 含まれている API リファレンス ドキュメントは、Exchange Web サービス (EWS) API。 これは、クライアントとメールボックスの情報にアクセスするために Exchange に接続するサービスを作成するための主要な API です。 このコンテンツには、EWS で使用可能な操作とに送信され、Exchange から受信する XML インスタンスに関する情報を提供する XML リファレンス ドキュメントについての情報が含まれています。 
+- [Exchange 用 ews リファレンス](ews-reference-for-exchange.md): Exchange Web サービス (EWS) API の api リファレンスドキュメントが含まれています。 これは、メールボックス情報へのアクセスを取得するために Exchange に接続するクライアントおよびサービスを作成するための主な API です。 このコンテンツには、EWS で利用できる操作に関する情報と、Exchange から送受信されるインスタンス XML に関する情報を提供する XML 参照ドキュメントが含まれています。 
     
-- [EWS のマネージ API の参照](http://msdn.microsoft.com/library/c6ca36f4-a67c-4e3c-aae7-9ead7b704e15%28Office.15%29.aspx)EWS のマネージ API に含まれている API リファレンスのドキュメントです。 EWS のマネージ API は、シンプルで多機能なインターフェイスを開発し、EWS を使用するアプリケーションを拡張するのです。 
+- [Ews マネージ api リファレンス](ews-managed-api-reference-for-exchange.md): EWS マネージ API の api リファレンスドキュメントが含まれています。 EWS マネージ API は、EWS を使用するアプリケーションを開発および拡張するための、シンプルで完全な機能を備えたインターフェイスです。 
     
-- [Exchange の自動検出 web サービスの参照](autodiscover-web-service-reference-for-exchange.md)Exchange によって提供される自動検出サービスに含まれている XML API 参照。 自動検出 Api は、Exchange サービスのエンドポイントを自動的に検出することを可能にするクライアント アプリケーションに提供情報を提供します。 
+- [Exchange 用の自動検出 web サービスリファレンス](autodiscover-web-service-reference-for-exchange.md): exchange によって提供される自動検出サービスの XML API リファレンスが含まれています。 自動検出 Api は、Exchange サービスエンドポイントを自動的に検出できるようにするためのプロビジョニング情報をクライアントアプリケーションに提供します。 
     
-- [Exchange ユニファイド メッセージングの web サービス参照](unified-messaging-web-service-reference-for-exchange.md)ユニファイド メッセージング (UM) web サービスの XML API リファレンスが含まれています。 UM web サービスは、クライアント アプリケーションが Exchange UM 機能にアクセスを提供します。 EWS が UM 機能も提供することに注意してください。 
+- [ユニファイドメッセージング web サービスリファレンス Exchange](unified-messaging-web-service-reference-for-exchange.md) : ユニファイドメッセージング (UM) web サービスの XML API リファレンスが含まれています。 UM web サービスは、クライアントアプリケーションに Exchange の UM 機能へのアクセスを提供します。 EWS では UM 機能も提供されることに注意してください。 
     
-- [EWS 交換用のオブジェクト モデルを生成する](http://msdn.microsoft.com/library/67d7d831-9c53-46da-80e4-18f562e71284%28Office.15%29.aspx)、ExchangeWebServices 名前空間の自動生成されたプロキシ クラスの API リファレンスが含まれています。 
+- [Exchange 用の EWS によって生成されたオブジェクトモデル](ews-generated-object-models-reference-for-exchange.md)— exchangewebservices 名前空間に自動生成されたプロキシクラスの API リファレンスが含まれています。 
     
     > [!NOTE]
-    > .NET Framework 3.5 以降の.NET Framework のバージョンに基づくクライアントの場合は、EWS のマネージ API を使用して、EWS にアクセスすることをお勧めします。 詳細については、 [EWS のマネージ API のクライアント アプリケーションを使い始める](http://msdn.microsoft.com/library/c2267733-6f4f-49e5-9614-1e4a24c3af1a%28Office.15%29.aspx)を参照してください。 
+    > .NET Framework 3.5 以降の .NET Framework のバージョンに基づくクライアントでは、ews マネージ API を使用して EWS にアクセスすることをお勧めします。 詳細については、「 [EWS マネージ API クライアントアプリケーションの概要](../exchange-web-services/get-started-with-ews-managed-api-client-applications.md)」を参照してください。 
   
-セットを使用する Api の詳細については、 [Exchange の EWS クライアントの設計の概要](http://msdn.microsoft.com/library/b26f67aa-7c66-4d7d-98b3-746f26ab37f4%28Office.15%29.aspx)を参照してください。
+使用する Api のセットの詳細については、「 [EWS クライアント設計の概要 (Exchange](../exchange-web-services/ews-client-design-overview-for-exchange.md))」を参照してください。
   
-Exchange XML 参照は、クライアントとサーバー間で送信される XML インスタンスに基づいています。 EWS および SOAP の自動検出サービスは、WSDL と XSD ファイルの XML が記載されています。 UM web サービスと POX の自動検出サービスは、公開された WSDL ファイルとスキーマ ファイルの構造を記述することはありません。 XML リファレンス スキーマ ファイルが指定されていないサービスは、監視およびクライアントとサービス間で交換するようにキャプチャできる XML インスタンスに基づいています。
+Exchange XML 参照は、クライアントとサーバーの間で送信される XML インスタンスに基づいています。 XML は、EWS および SOAP 自動検出サービス用の WSDL ファイルと XSD ファイルで記述されています。 UM web サービスと POX 自動検出サービスには、その構造を記述する公開された WSDL およびスキーマファイルがありません。 スキーマファイルが含まれていないサービスの XML リファレンスは、クライアントとサービスの間で交換されたときに、監視およびキャプチャできる XML インスタンスに基づいています。
   
 ## <a name="see-also"></a>関連項目
 
-- [Exchange、EWS の管理 API、EWS、および web サービスを探索します。](../exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)
+- [Exchange の EWS マネージ API、EWS、および Web サービスについて学ぶ](../exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)
 - [Exchange で Web サービスの使用を開始する](../exchange-web-services/start-using-web-services-in-exchange.md)
 - [Exchange の自動検出](../exchange-web-services/autodiscover-for-exchange.md)
     

@@ -1,43 +1,43 @@
 ---
-title: GetFolder の操作
+title: GetFolder 操作
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
 api_name:
 - GetFolder
 api_type:
 - schema
 ms.assetid: 355bcf93-dc71-4493-b177-622afac5fdb9
-description: GetFolder の操作は、Exchange ストアからフォルダーを取得します。
-ms.openlocfilehash: 1d2806e4febb6059b8a866d585bc70f49befbdef
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetFolder 操作は、Exchange ストアからフォルダーを取得します。
+localization_priority: Priority
+ms.openlocfilehash: 9d511f309b9210fd9b5a49ff6c60bc7982992973
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760742"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459182"
 ---
-# <a name="getfolder-operation"></a>GetFolder の操作
+# <a name="getfolder-operation"></a>GetFolder 操作
 
-**GetFolder**の操作は、Exchange ストアからフォルダーを取得します。 
+**Getfolder**操作は、Exchange ストアからフォルダーを取得します。 
   
 ## <a name="getfolder-request-example"></a>GetFolder 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
-**GetFolder**要求の次の例では、フォルダーの識別子を取得、フォルダーの名前、そのフォルダー内の項目の数を子フォルダーの数と未読アイテム数を表示する方法を示します。 
+次の**Getfolder**要求の例は、フォルダー識別子、表示名、そのフォルダー内のアイテム数、子フォルダーの数、およびフォルダー内の未読アイテム数を取得する方法を示しています。 
   
 ### <a name="code"></a>コード
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-   xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+   xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <GetFolder xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <GetFolder xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <FolderShape>
         <t:BaseShape>Default</t:BaseShape>
       </FolderShape>
@@ -49,9 +49,9 @@ ms.locfileid: "19760742"
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-この**GetFolder**要求には、次の要素が含まれています。 
+この**Getfolder**要求には、次の要素が含まれています。 
   
 - [GetFolder](getfolder.md)
     
@@ -63,19 +63,19 @@ ms.locfileid: "19760742"
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
-**GetFolder**要求を形成するために使用できるその他の要素のスキーマを参照してください。 
+**Getfolder**要求の形成に使用できるその他の要素については、スキーマを参照してください。 
   
 > [!NOTE]
 > この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。 
   
-## <a name="getfolder-response-example"></a>GetFolder の応答の例
+## <a name="getfolder-response-example"></a>GetFolder 応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
-**GetFolder**要求に正常な応答を Simple Object Access Protocol (SOAP) 本文の例を次に示します。 
+次の簡易オブジェクトアクセスプロトコル (SOAP) 本文の例は、 **Getfolder**要求に対する正常な応答を示しています。 
   
 > [!NOTE]
-> フォルダー ID と変更キーは、読みやすさを保持するために短縮されています。 
+> 読みやすくするために、フォルダー ID と変更キーが短縮されています。 
   
 ### <a name="code"></a>コード
 
@@ -85,12 +85,12 @@ ms.locfileid: "19760742"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="628" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <GetFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                       xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                       xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetFolderResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -110,9 +110,9 @@ ms.locfileid: "19760742"
 </soap:Envelope>
 ```
 
-### <a name="response-elements"></a>応答の要素
+### <a name="response-elements"></a>Response 要素
 
-この**GetFolder**の応答には、次の要素が含まれています。 
+この**Getfolder**応答には、次の要素が含まれています。 
   
 - [GetFolderResponse](getfolderresponse.md)
     
@@ -124,9 +124,9 @@ ms.locfileid: "19760742"
     
 - [Folder](folder.md)
     
-- [フォルダー Id](folderid.md)
+- [FolderId](folderid.md)
     
-- [表示名 (文字列)](displayname-string.md)
+- [DisplayName (文字列)](displayname-string.md)
     
 - [TotalCount](totalcount.md)
     
@@ -136,9 +136,9 @@ ms.locfileid: "19760742"
     
 ## <a name="getfolder-error-response-example"></a>GetFolder エラー応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
-要求に不正な[フォルダー Id](folderid.md)が原因で発生するエラー応答を SOAP 本文の例を次に示します。 
+次の SOAP 本文の例は、要求の[FolderId](folderid.md)が正しくないことが原因で発生するエラー応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -149,12 +149,12 @@ ms.locfileid: "19760742"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="628" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <GetFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                       xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                       xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetFolderResponseMessage ResponseClass="Error">
           <m:MessageText>Id is malformed.</m:MessageText>
@@ -168,9 +168,9 @@ ms.locfileid: "19760742"
 </soap:Envelope>
 ```
 
-### <a name="response-elements"></a>応答の要素
+### <a name="response-elements"></a>Response 要素
 
-この**GetFolder**エラー応答には、次の要素が含まれています。 
+この**Getfolder**エラー応答には、次の要素が含まれています。 
   
 - [GetFolderResponse](getfolderresponse.md)
     
@@ -188,11 +188,11 @@ ms.locfileid: "19760742"
     
 ## <a name="version-differences"></a>バージョンの相違点
 
-アプリケーションを対象とする Exchange のオンライン、Office 365 の一部として Exchange のオンライン、または、設置型バージョンの Exchange から Exchange 2013 では、フォルダーのアクセス許可は返されません[BaseShape](baseshape.md)の要素に**AllProperties**の値が設定されている場合[GetFolder](getfolder-operation.md)操作要求します。 フォルダーのアクセス許可を取得するには、 **GetFolder**要求内の[AdditionalProperties](additionalproperties.md)要素に[PermissionSet (PermissionSetType)](permissionset-permissionsettype.md)の要素を追加します。 
+Exchange Online を対象とするアプリケーション、Office 365 の一部としての Exchange Online、または exchange 2013 以降のオンプレミスバージョンの Exchange の場合、フォルダーのアクセス許可は、 [Baseshape](baseshape.md)要素の値が[getfolder](getfolder-operation.md)操作要求で**allproperties**の値になっている場合は返されません。 フォルダーのアクセス許可を取得するには、 [PermissionSet (PermissionSetType)](permissionset-permissionsettype.md)要素を、 **Getfolder**要求の[additionalproperties](additionalproperties.md)要素に追加します。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

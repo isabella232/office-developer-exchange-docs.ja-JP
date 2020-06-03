@@ -3,21 +3,21 @@ title: メール、カレンダー、連絡先用の Microsoft Graph の Outlook
 manager: sethgros
 ms.date: 07/27/2018
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 3b2e71a6-5fa5-4008-b243-d3a6e9173b3d
 description: Office 365 または Exchange Online において、メール、予定表、連絡先へのアクセスに使用できる Microsoft Graph API の詳細です。
-ms.openlocfilehash: 3065de389157345afd5ed07e302ace99e2048bdf
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
-ms.translationtype: HT
+localization_priority: Priority
+ms.openlocfilehash: 7ca77596afb59ffab76001abd495de7328d2dd29
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353295"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463868"
 ---
 # <a name="microsoft-graph-rest-apis-for-mail-calendars-and-contacts"></a>メール、予定表、連絡先用の Microsoft Graph の REST API
 
-Office 365 または Exchange Online において、メール、予定表、連絡先へのアクセスに使用できる Microsoft Graph API の詳細です。
+Office 365、Exchange Online、またはハイブリッド展開の Exchange Server のメール、予定表、連絡先へのアクセスに使用できる Microsoft Graph Api についての情報を参照してください。
 
-Office 365 および Exchange Online は、電子メール、予定表、および連絡先で作業する新しい方法を提供します。 Microsoft Graph のメール、予定表、連絡先用の REST API は、Exchange データにアクセスして操作する強力で簡単な方法を提供します。 これらの API は、認証用の OAuth バージョン 2.0、データ抽象化用の OData バージョン 4.0 および JSON など、オープンな標準に基づいています。 これには以下の利点があります。
+ハイブリッド展開の Office 365、Exchange Online、および Exchange Server は、電子メール、予定表、連絡先を操作するための新しい方法を提供します。 Microsoft Graph のメール、予定表、連絡先用の REST API は、Exchange データにアクセスして操作する強力で簡単な方法を提供します。 これらの API は、認証用の OAuth バージョン 2.0、データ抽象化用の OData バージョン 4.0 および JSON など、オープンな標準に基づいています。 これには以下の利点があります。
 
 - これらの API は認証に OAuth を求めるため、アプリケーションがユーザーの資格情報を処理または格納する必要はありません。
 
@@ -44,4 +44,5 @@ Office 365 および Exchange Online は、電子メール、予定表、およ�
 ## <a name="see-also"></a>関連項目
 
 - [Microsoft Graph のドキュメント](https://developer.microsoft.com/graph/docs/concepts/overview)   
+- [REST API のオンプレミスの要件](https://blogs.technet.microsoft.com/exchange/2016/09/26/on-premises-architectural-requirements-for-the-rest-api)   
 

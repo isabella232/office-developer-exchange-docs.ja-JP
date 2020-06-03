@@ -3,27 +3,27 @@ title: Exchange の偽装を使用して予定を追加する
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 78d5e51b-900f-4302-b9a8-fdc9aa4b65a5
 description: Exchange の EWS マネージ API または EWS で偽造を使用し、ユーザーの予定表に予定を追加する方法について説明します。
-ms.openlocfilehash: ab10a7d65a5603a84e12d918dd54198927d88b8a
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
-ms.translationtype: HT
+localization_priority: Priority
+ms.openlocfilehash: b1473d72113f8cc07d05364a4d87fedf23c7351d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353456"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455332"
 ---
 # <a name="add-appointments-by-using-exchange-impersonation"></a>Exchange の偽装を使用して予定を追加する
 
 Exchange の EWS マネージ API または EWS で偽造を使用し、ユーザーの予定表に予定を追加する方法について説明します。
   
-**AppplicationImpersonation** の[役割が有効になっている](how-to-configure-impersonation.md)サービス アカウントを使用して、Exchange の予定表に予定を直接挿入するサービス アプリケーションを作成することができます。 偽装を使用すると、アプリケーションがユーザーとして動作し、ユーザーが Outlook などのクライアントを使用して予定表に予定を追加するかのように動作します。 
+**Applicationimpersonation** [役割が有効になっ](how-to-configure-impersonation.md)ているサービスアカウントを使用して、Exchange 予定表に予定を直接挿入するサービスアプリケーションを作成できます。 偽装を使用すると、アプリケーションがユーザーとして動作し、ユーザーが Outlook などのクライアントを使用して予定表に予定を追加するかのように動作します。 
   
 偽装を使用する場合は、次のことに注意してください。
   
-- [ExchangeService](http://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.aspx) オブジェクトは、サービス アカウントにバインドする必要があります。 同じ **ExchangeService** オブジェクトを使用して、複数のアカウントを偽装できます。その場合、偽装する各アカウント用に [ImpersonatedUserId](http://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.impersonateduserid.aspx) プロパティを変更します。 
+- [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.aspx) オブジェクトは、サービス アカウントにバインドする必要があります。 同じ **ExchangeService** オブジェクトを使用して、複数のアカウントを偽装できます。その場合、偽装する各アカウント用に [ImpersonatedUserId](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.impersonateduserid.aspx) プロパティを変更します。 
     
-- 偽装されたアカウントに保存するアイテムは、1 回のみ使用できます。 たとえば、複数のアカウントで同じ予定を保存する場合は、アカウントごとに[予定](http://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.aspx)オブジェクトを作成する必要があります。 
+- 偽装されたアカウントに保存するアイテムは、1 回のみ使用できます。 たとえば、複数のアカウントで同じ予定を保存する場合は、アカウントごとに[予定](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.aspx)オブジェクトを作成する必要があります。 
     
 ## <a name="prerequisites"></a>前提条件
 
@@ -35,7 +35,7 @@ Exchange の EWS マネージ API または EWS で偽造を使用し、ユー�
   
 -  _service_ — Exchange Server のサービス アプリケーションのアカウントにバインドされる **ExchangeService** オブジェクト。 
     
--  _emailAddresses_ — SMTP メール アドレスの文字列のリストを含む [System.List](http://msdn.microsoft.com/library/6sh2ey19.aspx) オブジェクト。 
+-  _emailAddresses_ — SMTP メール アドレスの文字列のリストを含む [System.List](https://msdn.microsoft.com/library/6sh2ey19.aspx) オブジェクト。 
     
 -  _factory_ — **IAppointmentFactory** インターフェイスを実装するオブジェクト。 このインターフェイスには、**ExchangeService** オブジェクトをパラメータとして使用する **GetAppointment** という方法があり、**予定**オブジェクトを返します。 **IAppointmentFactory** のインターフェイスは、[IAppointmentFactory インターフェイス](#bk_IAppointmentFactory)と定義されます。
     
@@ -73,7 +73,7 @@ private static void CreateAppointments(ExchangeService service, List<string> ema
 }
 ```
 
-予定を保存するときに、コードは、出席者が [RequiredAttendees](http://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.requiredattendees.aspx) プロパティに追加されているかどうかを判断するための確認を行います。 追加されている場合は、[SendToAllAndSaveCopy](http://msdn.microsoft.com/library/microsoft.exchange.webservices.data.sendinvitationsmode.aspx) 列挙値を指定して [Appointment.Save](http://msdn.microsoft.com/library/dd635394.aspx) メソッドが呼び出され、出席者は会議出席依頼を受信します。それ以外の場合、[SendToNone](http://msdn.microsoft.com/library/microsoft.exchange.webservices.data.sendinvitationsmode.aspx) 列挙値を指定して **Appointment.Save** メソッドが呼び出され、[Appointment.IsMeeting](http://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.ismeeting.aspx) プロパティが **false** に設定されて偽装されたユーザーの予定表に予定が保存されます。
+予定を保存するときに、コードは、出席者が [RequiredAttendees](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.requiredattendees.aspx) プロパティに追加されているかどうかを判断するための確認を行います。 追加されている場合は、[SendToAllAndSaveCopy](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.sendinvitationsmode.aspx) 列挙値を指定して [Appointment.Save](https://msdn.microsoft.com/library/dd635394.aspx) メソッドが呼び出され、出席者は会議出席依頼を受信します。それ以外の場合、[SendToNone](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.sendinvitationsmode.aspx) 列挙値を指定して **Appointment.Save** メソッドが呼び出され、[Appointment.IsMeeting](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.ismeeting.aspx) プロパティが **false** に設定されて偽装されたユーザーの予定表に予定が保存されます。
   
 ### <a name="iappointmentfactory-interface"></a>IAppointmentFactory インターフェイス
 <a name="bk_IAppointmentFactory"> </a>
@@ -111,14 +111,14 @@ class AppointmentFactory : IAppointmentFactory
 
 ## <a name="add-appointments-by-using-impersonation-with-ews"></a>EWS で偽装を使用して予定を追加する
 
-EWS では、予定表の所有者の代わりにアプリケーションでカレンダーにアイテムを追加するために偽装を使用できます。 次の例は、[CreateItem](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) 操作を使用して、偽装されたアカウントの予定表に予定を追加する方法を示します。 
+EWS では、予定表の所有者の代わりにアプリケーションでカレンダーにアイテムを追加するために偽装を使用できます。 次の例は、[CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) 操作を使用して、偽装されたアカウントの予定表に予定を追加する方法を示します。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-       xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-       xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+       xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+       xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
     <t:TimeZoneContext>
@@ -157,17 +157,17 @@ EWS では、予定表の所有者の代わりにアプリケーションでカ�
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="775" MinorBuildNumber="7" Version="V2_4" 
- xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
- xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -191,7 +191,7 @@ EWS では、予定表の所有者の代わりにアプリケーションでカ�
 
 - [Exchange の偽装と EWS](impersonation-and-ews-in-exchange.md)
     
-- [ApplicationImpersonation 役割](http://technet.microsoft.com/ja-JP/library/dd776119%28v=exchg.150%29.aspx)
+- [ApplicationImpersonation 役割](https://technet.microsoft.com/library/dd776119%28v=exchg.150%29.aspx)
     
 - [偽装を構成する](how-to-configure-impersonation.md)
     
@@ -202,6 +202,6 @@ EWS では、予定表の所有者の代わりにアプリケーションでカ�
 - [CreateItem 操作 (予定表アイテム)](../web-service-reference/createitem-operation-calendar-item.md)
     
 - 
-  [ExchangeService.ImpersonatedUserId プロパティ](https://docs.microsoft.com/en-us/dotnet/api/microsoft.exchange.webservices.data.exchangeservice.impersonateduserid?view=exchange-ews-api)
+  [ExchangeService.ImpersonatedUserId プロパティ](https://docs.microsoft.com/dotnet/api/microsoft.exchange.webservices.data.exchangeservice.impersonateduserid?view=exchange-ews-api)
     
 

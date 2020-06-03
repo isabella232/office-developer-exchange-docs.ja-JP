@@ -1,41 +1,41 @@
 ---
-title: GetItem 操作 (電子メール)
+title: GetItem 操作 (電子メールメッセージ)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
 api_name:
 - GetItem
 api_type:
 - schema
 ms.assetid: e8492e3b-1c8d-4b14-8070-9530f8306edd
-description: GetItem 操作は、電子メール メッセージに関する情報にアクセスできます。
-ms.openlocfilehash: 133a893ec7cd0c206d9db573f8b952eb3c2286df
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetItem 操作を使用すると、ユーザーは電子メールメッセージに関する情報にアクセスできます。
+localization_priority: Priority
+ms.openlocfilehash: f8be01cad3d4c4534f66593cbe8bcee477726972
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760775"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459995"
 ---
-# <a name="getitem-operation-email-message"></a>GetItem 操作 (電子メール)
+# <a name="getitem-operation-email-message"></a>GetItem 操作 (電子メールメッセージ)
 
-GetItem 操作は、電子メール メッセージに関する情報にアクセスできます。
+GetItem 操作を使用すると、ユーザーは電子メールメッセージに関する情報にアクセスできます。
   
-## <a name="using-the-getitem-operation-for-messages"></a>メッセージの GetItem 操作を使用します。
+## <a name="using-the-getitem-operation-for-messages"></a>メッセージに対して GetItem 操作を使用する
 
-GetItem 要求は、次の情報を用意する必要があります。
+GetItem 要求には、次の情報が含まれている必要があります。
   
-- 返される項目の情報を識別するのには[アイテム Id](itemid.md)の要素です。 
+- 取得するアイテム情報を識別する[ItemId](itemid.md)要素。 
     
-- 返す項目のプロパティを識別する[ItemShape](itemshape.md)要素です。 
+- 取得するアイテムプロパティを識別するための[Itemshape](itemshape.md)要素。 
     
 ## <a name="getitem-request-example"></a>GetItem 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
-GetItem 要求の次の例では、電子メール メッセージに関する情報にアクセスする方法を示します。
+GetItem 要求の次の例は、電子メールメッセージに関する情報へのアクセス方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -45,11 +45,11 @@ GetItem 要求の次の例では、電子メール メッセージに関する�
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
   xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
     <GetItem
-      xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <ItemShape>
         <t:BaseShape>Default</t:BaseShape>
         <t:IncludeMimeContent>true</t:IncludeMimeContent>
@@ -62,9 +62,9 @@ GetItem 要求の次の例では、電子メール メッセージに関する�
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-次の要素は、要求で使用されます。
+要求では、次の要素が使用されます。
   
 - [GetItem](getitem.md)
     
@@ -74,15 +74,15 @@ GetItem 要求の次の例では、電子メール メッセージに関する�
     
 - [IncludeMimeContent](includemimecontent.md)
     
-- [Itemid](itemids.md)
+- [ItemIds](itemids.md)
     
 - [ItemId](itemid.md)
     
-## <a name="successful-getitem-e-mail-message-response-example"></a>成功 GetItem (電子メール メッセージ) の応答の例
+## <a name="successful-getitem-e-mail-message-response-example"></a>成功した GetItem (電子メールメッセージ) の応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
-GetItem 要求に正常な応答の例を次に示します。
+次の例は、GetItem 要求に対する正常な応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -93,12 +93,12 @@ GetItem 要求に正常な応答の例を次に示します。
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                     xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                     xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                     xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                     xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -159,11 +159,11 @@ GetItem 要求に正常な応答の例を次に示します。
 
 ### <a name="comments"></a>コメント
 
-MIME コンテンツ、フォルダー、およびアイテムの識別子は、読みやすさを保持するために短縮されています。
+読みやすくするために、MIME コンテンツ、フォルダー、およびアイテムの識別子が短縮されています。
   
-### <a name="successful-response-elements"></a>正常な応答の要素
+### <a name="successful-response-elements"></a>成功した応答要素
 
-次の要素は、応答で使用されます。
+応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -183,11 +183,11 @@ MIME コンテンツ、フォルダー、およびアイテムの識別子は、
     
 - [ItemId](itemid.md)
     
-- [Subject](subject.md)
+- [件名](subject.md)
     
 - [Sensitivity](sensitivity.md)
     
-- [Body/本文](body.md)
+- [Body](body.md)
     
 - [Size](size.md)
     
@@ -199,19 +199,19 @@ MIME コンテンツ、フォルダー、およびアイテムの識別子は、
     
 - [ReplyToItem](replytoitem.md)
     
-- [ReplyAllToItem](replyalltoitem.md)
+- [Replyalltoitem と](replyalltoitem.md)
     
-- [ForwardItem](forwarditem.md)
+- [Forwarditem と](forwarditem.md)
     
-- [添付ファイル付き](hasattachments.md)
+- [HasAttachments](hasattachments.md)
     
 - [ToRecipients](torecipients.md)
     
 - [メールボックス](mailbox.md)
     
-- [名 (EmailAddressType)](name-emailaddresstype.md)
+- [Name (EmailAddressType)](name-emailaddresstype.md)
     
-- [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
+- [EmailAddress (非 Emptystringtype)](emailaddress-nonemptystringtype.md)
     
 - [RoutingType (EmailAddressType)](routingtype-emailaddresstype.md)
     
@@ -223,11 +223,11 @@ MIME コンテンツ、フォルダー、およびアイテムの識別子は、
     
 - [IsRead](isread.md)
     
-## <a name="getitem-e-mail-message-error-response-example"></a>GetItem (電子メール メッセージ) のエラー応答の例
+## <a name="getitem-e-mail-message-error-response-example"></a>GetItem (電子メールメッセージ) エラーの応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
-GetItem 要求に対してエラー応答の例を次に示します。 無効な追加のプロパティを取得しようとしてエラーが発生しました。
+次の例は、GetItem 要求に対するエラー応答を示しています。 このエラーは、無効な追加のプロパティを取得しようとしたことが原因で発生しました。
   
 ### <a name="code"></a>コード
 
@@ -238,12 +238,12 @@ GetItem 要求に対してエラー応答の例を次に示します。 無効�
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                     xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                     xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                     xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                     xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Error">
           <m:MessageText>Property is not valid for this object type.</m:MessageText>
@@ -260,7 +260,7 @@ GetItem 要求に対してエラー応答の例を次に示します。 無効�
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a>エラー応答の要素
+### <a name="error-response-elements"></a>エラー応答要素
 
 エラー応答では、次の要素が使用されます。
   
@@ -286,6 +286,5 @@ GetItem 要求に対してエラー応答の例を次に示します。 無効�
 
 
 
-
-  [GetItem 操作](getitem-operation.md)
+[GetItem 操作](getitem-operation.md)
 

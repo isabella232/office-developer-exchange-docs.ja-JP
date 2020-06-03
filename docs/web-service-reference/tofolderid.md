@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: bd6a4265-ad40-43f6-bcc4-0bf5df4e984c
-description: ToFolderId 要素は、先のフォルダーにコピーまたは移動されたアイテムまたはフォルダーを表します。
-ms.openlocfilehash: 9d2fd6c177711cfe3a5d3415320440259e2f5289
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: ToFolderId 要素は、コピーまたは移動されたアイテムまたはフォルダーの移動先フォルダーを表します。
+ms.openlocfilehash: c9cceb17fd55b7357d54b37bf4c8da1137d39b6a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353659"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44468776"
 ---
 # <a name="tofolderid"></a>ToFolderId
 
-**ToFolderId**要素は、先のフォルダーにコピーまたは移動されたアイテムまたはフォルダーを表します。 
+**ToFolderId**要素は、コピーまたは移動されたアイテムまたはフォルダーの移動先フォルダーを表します。 
   
 ```xml
 <ToFolderId>
@@ -37,7 +37,7 @@ ms.locfileid: "21353659"
 
 **TargetFolderIdType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -47,39 +47,37 @@ ms.locfileid: "21353659"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[FolderId](folderid.md) <br/> |先のフォルダーにコピーまたは移動されたアイテムまたはフォルダーの識別子が含まれています。  <br/> |
-|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |コピーまたは移動されたアイテムまたはフォルダーの移動先フォルダーを識別します。  <br/> |
+|[FolderId](folderid.md) <br/> |コピーまたは移動したアイテムまたはフォルダーの宛先フォルダーの識別子が含まれています。  <br/> |
+|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |コピーまたは移動されたアイテムまたはフォルダーについて、名前付きの移動先フォルダーを識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[MoveFolder](movefolder.md) <br/> |Exchange ストア内のフォルダーを移動する要求を定義します。  <br/> この要素への XPath 式は、次のようにします。  <br/>  `/MoveFolder` <br/> |
-|[CopyFolder](copyfolder.md) <br/> |Exchange ストア内のフォルダーをコピーするのには要求を定義します。  <br/> この要素への XPath 式は、次のようにします。  <br/>  `/CopyFolder` <br/> |
-|[MoveItem](moveitem.md) <br/> |Exchange ストア内のアイテムを移動する要求を定義します。  <br/> この要素への XPath 式は、次のようにします。  <br/>  `/MoveItem` <br/> |
-|[CopyItem](copyitem.md) <br/> |Exchange ストア内の項目をコピーするための要求を定義します。  <br/> この要素への XPath 式は、次のようにします。  <br/>  `/CopyItem` <br/> |
+|[MoveFolder](movefolder.md) <br/> |Exchange ストア内のフォルダーを移動する要求を定義します。  <br/> この要素の XPath 式を次に示します。  <br/>  `/MoveFolder` <br/> |
+|[CopyFolder](copyfolder.md) <br/> |Exchange ストア内のフォルダーをコピーするための要求を定義します。  <br/> この要素の XPath 式を次に示します。  <br/>  `/CopyFolder` <br/> |
+|[MoveItem](moveitem.md) <br/> |Exchange ストア内のアイテムを移動する要求を定義します。  <br/> この要素の XPath 式を次に示します。  <br/>  `/MoveItem` <br/> |
+|[CopyItem](copyitem.md) <br/> |Exchange ストア内のアイテムをコピーするための要求を定義します。  <br/> この要素の XPath 式を次に示します。  <br/>  `/CopyItem` <br/> |
    
 ## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [MoveFolder 操作](movefolder-operation.md)  
 - [CopyFolder 操作](copyfolder-operation.md) 
-- 
-  [MoveItem 操作](moveitem-operation.md) 
-- 
-  [CopyItem 操作](copyitem-operation.md)
+- [MoveItem 操作](moveitem-operation.md) 
+- [CopyItem 操作](copyitem-operation.md)
 
