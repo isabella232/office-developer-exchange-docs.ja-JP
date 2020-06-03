@@ -13,56 +13,56 @@ ms.openlocfilehash: 60a8cbeb4b689da85bbb72c2d93759799b913f2f
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44465885"
 ---
-# <a name="majorbuildnumber-soap"></a><span data-ttu-id="47ecb-103">MajorBuildNumber (SOAP)</span><span class="sxs-lookup"><span data-stu-id="47ecb-103">MajorBuildNumber (SOAP)</span></span>
+# <a name="majorbuildnumber-soap"></a><span data-ttu-id="bde92-103">MajorBuildNumber (SOAP)</span><span class="sxs-lookup"><span data-stu-id="bde92-103">MajorBuildNumber (SOAP)</span></span>
 
-<span data-ttu-id="47ecb-104">**MajorBuildNumber**要素は、サーバーの主要なビルド番号を表します。</span><span class="sxs-lookup"><span data-stu-id="47ecb-104">The **MajorBuildNumber** element represents major build number for the server.</span></span> 
+<span data-ttu-id="bde92-104">**MajorBuildNumber**要素は、サーバーの主要なビルド番号を表します。</span><span class="sxs-lookup"><span data-stu-id="bde92-104">The **MajorBuildNumber** element represents major build number for the server.</span></span> 
   
 ```XML
 <MajorBuildNumber/>
 ```
 
- <span data-ttu-id="47ecb-105">**xs: int**</span><span class="sxs-lookup"><span data-stu-id="47ecb-105">**xs:int**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="47ecb-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="47ecb-106">Attributes and elements</span></span>
+ <span data-ttu-id="bde92-105">**xs: int**</span><span class="sxs-lookup"><span data-stu-id="bde92-105">**xs:int**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="bde92-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="bde92-106">Attributes and elements</span></span>
 
-<span data-ttu-id="47ecb-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="47ecb-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="bde92-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="bde92-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="47ecb-108">属性</span><span class="sxs-lookup"><span data-stu-id="47ecb-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="bde92-108">属性</span><span class="sxs-lookup"><span data-stu-id="bde92-108">Attributes</span></span>
 
-<span data-ttu-id="47ecb-109">なし。</span><span class="sxs-lookup"><span data-stu-id="47ecb-109">None.</span></span>
+<span data-ttu-id="bde92-109">なし。</span><span class="sxs-lookup"><span data-stu-id="bde92-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="47ecb-110">子要素</span><span class="sxs-lookup"><span data-stu-id="47ecb-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="bde92-110">子要素</span><span class="sxs-lookup"><span data-stu-id="bde92-110">Child elements</span></span>
 
-<span data-ttu-id="47ecb-111">なし。</span><span class="sxs-lookup"><span data-stu-id="47ecb-111">None.</span></span>
+<span data-ttu-id="bde92-111">なし。</span><span class="sxs-lookup"><span data-stu-id="bde92-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="47ecb-112">親要素</span><span class="sxs-lookup"><span data-stu-id="47ecb-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="bde92-112">親要素</span><span class="sxs-lookup"><span data-stu-id="bde92-112">Parent elements</span></span>
 
-|<span data-ttu-id="47ecb-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="47ecb-113">**Element**</span></span>|<span data-ttu-id="47ecb-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="47ecb-114">**Description**</span></span>|
+|<span data-ttu-id="bde92-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="bde92-113">**Element**</span></span>|<span data-ttu-id="bde92-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="bde92-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="47ecb-115">ServerVersionInfo (SOAP)</span><span class="sxs-lookup"><span data-stu-id="47ecb-115">ServerVersionInfo (SOAP)</span></span>](serverversioninfo-soap.md) <br/> |<span data-ttu-id="47ecb-116">要求を処理したサーバーのバージョンが保存されています。</span><span class="sxs-lookup"><span data-stu-id="47ecb-116">Contains the version of the server that processed the request.</span></span>  <br/> |
+|[<span data-ttu-id="bde92-115">ServerVersionInfo (SOAP)</span><span class="sxs-lookup"><span data-stu-id="bde92-115">ServerVersionInfo (SOAP)</span></span>](serverversioninfo-soap.md) <br/> |<span data-ttu-id="bde92-116">要求を処理したサーバーのバージョンが保存されています。</span><span class="sxs-lookup"><span data-stu-id="bde92-116">Contains the version of the server that processed the request.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="47ecb-117">テキスト値</span><span class="sxs-lookup"><span data-stu-id="47ecb-117">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="bde92-117">テキスト値</span><span class="sxs-lookup"><span data-stu-id="bde92-117">Text value</span></span>
 
-<span data-ttu-id="47ecb-118">MajorBuildNumber 要素のテキスト値は、要求を処理したサーバーのメジャービルド番号を表す整数型 (integer) の値です。</span><span class="sxs-lookup"><span data-stu-id="47ecb-118">The text value of the MajorBuildNumber element is an integer that represents the major build number of the server that processed the request.</span></span>
+<span data-ttu-id="bde92-118">MajorBuildNumber 要素のテキスト値は、要求を処理したサーバーのメジャービルド番号を表す整数型 (integer) の値です。</span><span class="sxs-lookup"><span data-stu-id="bde92-118">The text value of the MajorBuildNumber element is an integer that represents the major build number of the server that processed the request.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="47ecb-119">要素の情報</span><span class="sxs-lookup"><span data-stu-id="47ecb-119">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="bde92-119">要素の情報</span><span class="sxs-lookup"><span data-stu-id="bde92-119">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="47ecb-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="47ecb-120">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|<span data-ttu-id="47ecb-121">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="47ecb-121">Schema Name</span></span>  <br/> |<span data-ttu-id="47ecb-122">自動検出スキーマ</span><span class="sxs-lookup"><span data-stu-id="47ecb-122">Autodiscover schema</span></span>  <br/> |
-|<span data-ttu-id="47ecb-123">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="47ecb-123">Validation File</span></span>  <br/> |<span data-ttu-id="47ecb-124">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="47ecb-124">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="47ecb-125">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="47ecb-125">Can be Empty</span></span>  <br/> |<span data-ttu-id="47ecb-126">正しい</span><span class="sxs-lookup"><span data-stu-id="47ecb-126">True</span></span>  <br/> |
+|<span data-ttu-id="bde92-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="bde92-120">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|<span data-ttu-id="bde92-121">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="bde92-121">Schema Name</span></span>  <br/> |<span data-ttu-id="bde92-122">自動検出スキーマ</span><span class="sxs-lookup"><span data-stu-id="bde92-122">Autodiscover schema</span></span>  <br/> |
+|<span data-ttu-id="bde92-123">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="bde92-123">Validation File</span></span>  <br/> |<span data-ttu-id="bde92-124">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="bde92-124">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="bde92-125">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="bde92-125">Can be Empty</span></span>  <br/> |<span data-ttu-id="bde92-126">正しい</span><span class="sxs-lookup"><span data-stu-id="bde92-126">True</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="47ecb-127">関連項目</span><span class="sxs-lookup"><span data-stu-id="47ecb-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bde92-127">関連項目</span><span class="sxs-lookup"><span data-stu-id="bde92-127">See also</span></span>
 
 
 
-[<span data-ttu-id="47ecb-128">GetUserSettings 操作 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="47ecb-128">GetUserSettings operation (SOAP)</span></span>](getusersettings-operation-soap.md)
+[<span data-ttu-id="bde92-128">GetUserSettings 操作 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="bde92-128">GetUserSettings operation (SOAP)</span></span>](getusersettings-operation-soap.md)
   
-[<span data-ttu-id="47ecb-129">GetDomainSettings 操作 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="47ecb-129">GetDomainSettings operation (SOAP)</span></span>](getdomainsettings-operation-soap.md)
+[<span data-ttu-id="bde92-129">GetDomainSettings 操作 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="bde92-129">GetDomainSettings operation (SOAP)</span></span>](getdomainsettings-operation-soap.md)
   
-[<span data-ttu-id="47ecb-130">GetFederationInformation 操作 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="47ecb-130">GetFederationInformation operation (SOAP)</span></span>](getfederationinformation-operation-soap.md)
+[<span data-ttu-id="bde92-130">GetFederationInformation 操作 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="bde92-130">GetFederationInformation operation (SOAP)</span></span>](getfederationinformation-operation-soap.md)
 

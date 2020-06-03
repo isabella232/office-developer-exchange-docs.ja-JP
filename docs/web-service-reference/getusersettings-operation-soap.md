@@ -13,20 +13,20 @@ ms.openlocfilehash: e274fd4e1ca954ea25ea91a52e363c9a434b290a
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44466144"
 ---
-# <a name="getusersettings-operation-soap"></a><span data-ttu-id="efc12-103">GetUserSettings 操作 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="efc12-103">GetUserSettings operation (SOAP)</span></span>
+# <a name="getusersettings-operation-soap"></a><span data-ttu-id="1463e-103">GetUserSettings 操作 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="1463e-103">GetUserSettings operation (SOAP)</span></span>
 
-<span data-ttu-id="efc12-104">**Getusersettings**操作には、ユーザーのクライアントアクセス構成に対するクエリが含まれています。</span><span class="sxs-lookup"><span data-stu-id="efc12-104">The **GetUserSettings** operation contains a query for users' client access configuration.</span></span> 
+<span data-ttu-id="1463e-104">**Getusersettings**操作には、ユーザーのクライアントアクセス構成に対するクエリが含まれています。</span><span class="sxs-lookup"><span data-stu-id="1463e-104">The **GetUserSettings** operation contains a query for users' client access configuration.</span></span> 
   
-## <a name="getusersettings-request-example"></a><span data-ttu-id="efc12-105">GetUserSettings 要求の例</span><span class="sxs-lookup"><span data-stu-id="efc12-105">GetUserSettings request example</span></span>
+## <a name="getusersettings-request-example"></a><span data-ttu-id="1463e-105">GetUserSettings 要求の例</span><span class="sxs-lookup"><span data-stu-id="1463e-105">GetUserSettings request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="efc12-106">説明</span><span class="sxs-lookup"><span data-stu-id="efc12-106">Description</span></span>
+### <a name="description"></a><span data-ttu-id="1463e-106">Description</span><span class="sxs-lookup"><span data-stu-id="1463e-106">Description</span></span>
 
-<span data-ttu-id="efc12-107">次の XML の例は、ユーザーの表示名、識別名、展開 ID、メールボックスサーバー、メールボックスの識別名、Active Directory サーバー、クライアントアクセスサーバーのバージョン、およびサポートされている Exchange Web サービスのスキーマを要求する自動検出要求の本文を示しています。</span><span class="sxs-lookup"><span data-stu-id="efc12-107">The following XML example shows an Autodiscover request body that requests a user's display name, distinguished name, deployment ID, mailbox server, mailbox distinguished name, Active Directory server, Client Access server version, and supported Exchange Web Services schemas.</span></span>
+<span data-ttu-id="1463e-107">次の XML の例は、ユーザーの表示名、識別名、展開 ID、メールボックスサーバー、メールボックスの識別名、Active Directory サーバー、クライアントアクセスサーバーのバージョン、およびサポートされている Exchange Web サービスのスキーマを要求する自動検出要求の本文を示しています。</span><span class="sxs-lookup"><span data-stu-id="1463e-107">The following XML example shows an Autodiscover request body that requests a user's display name, distinguished name, deployment ID, mailbox server, mailbox distinguished name, Active Directory server, Client Access server version, and supported Exchange Web Services schemas.</span></span>
   
-### <a name="code"></a><span data-ttu-id="efc12-108">コード</span><span class="sxs-lookup"><span data-stu-id="efc12-108">Code</span></span>
+### <a name="code"></a><span data-ttu-id="1463e-108">コード</span><span class="sxs-lookup"><span data-stu-id="1463e-108">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -64,33 +64,33 @@ ms.locfileid: "44466144"
 
 ```
 
-### <a name="request-elements"></a><span data-ttu-id="efc12-109">Request 要素</span><span class="sxs-lookup"><span data-stu-id="efc12-109">Request elements</span></span>
+### <a name="request-elements"></a><span data-ttu-id="1463e-109">Request 要素</span><span class="sxs-lookup"><span data-stu-id="1463e-109">Request elements</span></span>
 
-<span data-ttu-id="efc12-110">要求本文では、次の要素が使用されます。</span><span class="sxs-lookup"><span data-stu-id="efc12-110">The following elements are used in the request body:</span></span>
+<span data-ttu-id="1463e-110">要求本文では、次の要素が使用されます。</span><span class="sxs-lookup"><span data-stu-id="1463e-110">The following elements are used in the request body:</span></span>
   
-- [<span data-ttu-id="efc12-111">GetUserSettingsRequestMessage (SOAP)</span><span class="sxs-lookup"><span data-stu-id="efc12-111">GetUserSettingsRequestMessage (SOAP)</span></span>](getusersettingsrequestmessage-soap.md)
+- [<span data-ttu-id="1463e-111">GetUserSettingsRequestMessage (SOAP)</span><span class="sxs-lookup"><span data-stu-id="1463e-111">GetUserSettingsRequestMessage (SOAP)</span></span>](getusersettingsrequestmessage-soap.md)
     
-- [<span data-ttu-id="efc12-112">メールボックス (SOAP)</span><span class="sxs-lookup"><span data-stu-id="efc12-112">Mailbox (SOAP)</span></span>](mailbox-soap.md)
+- [<span data-ttu-id="1463e-112">メールボックス (SOAP)</span><span class="sxs-lookup"><span data-stu-id="1463e-112">Mailbox (SOAP)</span></span>](mailbox-soap.md)
     
-- [<span data-ttu-id="efc12-113">要求 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="efc12-113">Request (SOAP)</span></span>](request-soap.md)
+- [<span data-ttu-id="1463e-113">要求 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="1463e-113">Request (SOAP)</span></span>](request-soap.md)
     
-- [<span data-ttu-id="efc12-114">Exchangeservice.requestedserverversion (SOAP)</span><span class="sxs-lookup"><span data-stu-id="efc12-114">RequestedServerVersion (SOAP)</span></span>](requestedserverversion-soap.md)
+- [<span data-ttu-id="1463e-114">Exchangeservice.requestedserverversion (SOAP)</span><span class="sxs-lookup"><span data-stu-id="1463e-114">RequestedServerVersion (SOAP)</span></span>](requestedserverversion-soap.md)
     
-- [<span data-ttu-id="efc12-115">RequestedSettings (SOAP)</span><span class="sxs-lookup"><span data-stu-id="efc12-115">RequestedSettings (SOAP)</span></span>](requestedsettings-soap.md)
+- [<span data-ttu-id="1463e-115">RequestedSettings (SOAP)</span><span class="sxs-lookup"><span data-stu-id="1463e-115">RequestedSettings (SOAP)</span></span>](requestedsettings-soap.md)
     
-- [<span data-ttu-id="efc12-116">Setting (SOAP)</span><span class="sxs-lookup"><span data-stu-id="efc12-116">Setting (SOAP)</span></span>](setting-soap.md)
+- [<span data-ttu-id="1463e-116">Setting (SOAP)</span><span class="sxs-lookup"><span data-stu-id="1463e-116">Setting (SOAP)</span></span>](setting-soap.md)
     
-- [<span data-ttu-id="efc12-117">User (SOAP)</span><span class="sxs-lookup"><span data-stu-id="efc12-117">User (SOAP)</span></span>](user-soap.md)
+- [<span data-ttu-id="1463e-117">User (SOAP)</span><span class="sxs-lookup"><span data-stu-id="1463e-117">User (SOAP)</span></span>](user-soap.md)
     
-- [<span data-ttu-id="efc12-118">Users (SOAP)</span><span class="sxs-lookup"><span data-stu-id="efc12-118">Users (SOAP)</span></span>](users-soap.md)
+- [<span data-ttu-id="1463e-118">Users (SOAP)</span><span class="sxs-lookup"><span data-stu-id="1463e-118">Users (SOAP)</span></span>](users-soap.md)
     
-## <a name="getusersettings-response-example"></a><span data-ttu-id="efc12-119">GetUserSettings response の例</span><span class="sxs-lookup"><span data-stu-id="efc12-119">GetUserSettings response example</span></span>
+## <a name="getusersettings-response-example"></a><span data-ttu-id="1463e-119">GetUserSettings response の例</span><span class="sxs-lookup"><span data-stu-id="1463e-119">GetUserSettings response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="efc12-120">説明</span><span class="sxs-lookup"><span data-stu-id="efc12-120">Description</span></span>
+### <a name="description"></a><span data-ttu-id="1463e-120">Description</span><span class="sxs-lookup"><span data-stu-id="1463e-120">Description</span></span>
 
-<span data-ttu-id="efc12-121">次の例は、正常な**Getusersettings**応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="efc12-121">The following example shows a successful **GetUserSettings** response.</span></span> 
+<span data-ttu-id="1463e-121">次の例は、正常な**Getusersettings**応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="1463e-121">The following example shows a successful **GetUserSettings** response.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="efc12-122">コード</span><span class="sxs-lookup"><span data-stu-id="efc12-122">Code</span></span>
+### <a name="code"></a><span data-ttu-id="1463e-122">コード</span><span class="sxs-lookup"><span data-stu-id="1463e-122">Code</span></span>
 
 ```XML
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns:a="http://www.w3.org/2005/08/addressing">
@@ -150,42 +150,42 @@ ms.locfileid: "44466144"
 </s:Envelope>
 ```
 
-### <a name="response-elements"></a><span data-ttu-id="efc12-123">Response 要素</span><span class="sxs-lookup"><span data-stu-id="efc12-123">Response elements</span></span>
+### <a name="response-elements"></a><span data-ttu-id="1463e-123">Response 要素</span><span class="sxs-lookup"><span data-stu-id="1463e-123">Response elements</span></span>
 
-<span data-ttu-id="efc12-124">応答本文では、次の要素が使用されます。</span><span class="sxs-lookup"><span data-stu-id="efc12-124">The following elements are used in the response body:</span></span>
+<span data-ttu-id="1463e-124">応答本文では、次の要素が使用されます。</span><span class="sxs-lookup"><span data-stu-id="1463e-124">The following elements are used in the response body:</span></span>
   
-- [<span data-ttu-id="efc12-125">ErrorCode (SOAP)</span><span class="sxs-lookup"><span data-stu-id="efc12-125">ErrorCode (SOAP)</span></span>](errorcode-soap.md)
+- [<span data-ttu-id="1463e-125">ErrorCode (SOAP)</span><span class="sxs-lookup"><span data-stu-id="1463e-125">ErrorCode (SOAP)</span></span>](errorcode-soap.md)
     
-- [<span data-ttu-id="efc12-126">ErrorMessage (SOAP)</span><span class="sxs-lookup"><span data-stu-id="efc12-126">ErrorMessage (SOAP)</span></span>](errormessage-soap.md)
+- [<span data-ttu-id="1463e-126">ErrorMessage (SOAP)</span><span class="sxs-lookup"><span data-stu-id="1463e-126">ErrorMessage (SOAP)</span></span>](errormessage-soap.md)
     
-- [<span data-ttu-id="efc12-127">GetUserSettingsResponseMessage (SOAP)</span><span class="sxs-lookup"><span data-stu-id="efc12-127">GetUserSettingsResponseMessage (SOAP)</span></span>](getusersettingsresponsemessage-soap.md)
+- [<span data-ttu-id="1463e-127">GetUserSettingsResponseMessage (SOAP)</span><span class="sxs-lookup"><span data-stu-id="1463e-127">GetUserSettingsResponseMessage (SOAP)</span></span>](getusersettingsresponsemessage-soap.md)
     
-- [<span data-ttu-id="efc12-128">Name (SOAP)</span><span class="sxs-lookup"><span data-stu-id="efc12-128">Name (SOAP)</span></span>](name-soap.md)
+- [<span data-ttu-id="1463e-128">Name (SOAP)</span><span class="sxs-lookup"><span data-stu-id="1463e-128">Name (SOAP)</span></span>](name-soap.md)
     
-- [<span data-ttu-id="efc12-129">RedirectTarget (SOAP)</span><span class="sxs-lookup"><span data-stu-id="efc12-129">RedirectTarget (SOAP)</span></span>](redirecttarget-soap.md)
+- [<span data-ttu-id="1463e-129">RedirectTarget (SOAP)</span><span class="sxs-lookup"><span data-stu-id="1463e-129">RedirectTarget (SOAP)</span></span>](redirecttarget-soap.md)
     
-- [<span data-ttu-id="efc12-130">応答 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="efc12-130">Response (SOAP)</span></span>](response-soap.md)
+- [<span data-ttu-id="1463e-130">応答 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="1463e-130">Response (SOAP)</span></span>](response-soap.md)
     
-- [<span data-ttu-id="efc12-131">UserResponse (SOAP)</span><span class="sxs-lookup"><span data-stu-id="efc12-131">UserResponse (SOAP)</span></span>](userresponse-soap.md)
+- [<span data-ttu-id="1463e-131">UserResponse (SOAP)</span><span class="sxs-lookup"><span data-stu-id="1463e-131">UserResponse (SOAP)</span></span>](userresponse-soap.md)
     
-- [<span data-ttu-id="efc12-132">UserResponses (SOAP)</span><span class="sxs-lookup"><span data-stu-id="efc12-132">UserResponses (SOAP)</span></span>](userresponses-soap.md)
+- [<span data-ttu-id="1463e-132">UserResponses (SOAP)</span><span class="sxs-lookup"><span data-stu-id="1463e-132">UserResponses (SOAP)</span></span>](userresponses-soap.md)
     
-- [<span data-ttu-id="efc12-133">UserSetting (SOAP)</span><span class="sxs-lookup"><span data-stu-id="efc12-133">UserSetting (SOAP)</span></span>](usersetting-soap.md)
+- [<span data-ttu-id="1463e-133">UserSetting (SOAP)</span><span class="sxs-lookup"><span data-stu-id="1463e-133">UserSetting (SOAP)</span></span>](usersetting-soap.md)
     
-- [<span data-ttu-id="efc12-134">UserSettingErrors (SOAP)</span><span class="sxs-lookup"><span data-stu-id="efc12-134">UserSettingErrors (SOAP)</span></span>](usersettingerrors-soap.md)
+- [<span data-ttu-id="1463e-134">UserSettingErrors (SOAP)</span><span class="sxs-lookup"><span data-stu-id="1463e-134">UserSettingErrors (SOAP)</span></span>](usersettingerrors-soap.md)
     
-- [<span data-ttu-id="efc12-135">UserSettings (SOAP)</span><span class="sxs-lookup"><span data-stu-id="efc12-135">UserSettings (SOAP)</span></span>](usersettings-soap.md)
+- [<span data-ttu-id="1463e-135">UserSettings (SOAP)</span><span class="sxs-lookup"><span data-stu-id="1463e-135">UserSettings (SOAP)</span></span>](usersettings-soap.md)
     
-- [<span data-ttu-id="efc12-136">Value (SOAP)</span><span class="sxs-lookup"><span data-stu-id="efc12-136">Value (SOAP)</span></span>](value-soap.md)
+- [<span data-ttu-id="1463e-136">Value (SOAP)</span><span class="sxs-lookup"><span data-stu-id="1463e-136">Value (SOAP)</span></span>](value-soap.md)
     
-## <a name="see-also"></a><span data-ttu-id="efc12-137">関連項目</span><span class="sxs-lookup"><span data-stu-id="efc12-137">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1463e-137">関連項目</span><span class="sxs-lookup"><span data-stu-id="1463e-137">See also</span></span>
 
 
 
-[<span data-ttu-id="efc12-138">GetDomainSettings 操作 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="efc12-138">GetDomainSettings operation (SOAP)</span></span>](getdomainsettings-operation-soap.md)
+[<span data-ttu-id="1463e-138">GetDomainSettings 操作 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="1463e-138">GetDomainSettings operation (SOAP)</span></span>](getdomainsettings-operation-soap.md)
   
-[<span data-ttu-id="efc12-139">GetFederationInformation 操作 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="efc12-139">GetFederationInformation operation (SOAP)</span></span>](getfederationinformation-operation-soap.md)
+[<span data-ttu-id="1463e-139">GetFederationInformation 操作 (SOAP)</span><span class="sxs-lookup"><span data-stu-id="1463e-139">GetFederationInformation operation (SOAP)</span></span>](getfederationinformation-operation-soap.md)
 
 
-[<span data-ttu-id="efc12-140">Exchange 2013 の SOAP 自動検出 XML 要素</span><span class="sxs-lookup"><span data-stu-id="efc12-140">SOAP Autodiscover XML elements for Exchange 2013</span></span>](soap-autodiscover-xml-elements-for-exchange-2013.md)
+[<span data-ttu-id="1463e-140">Exchange 2013 の SOAP 自動検出 XML 要素</span><span class="sxs-lookup"><span data-stu-id="1463e-140">SOAP Autodiscover XML elements for Exchange 2013</span></span>](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

@@ -12,12 +12,12 @@ ms.openlocfilehash: a89b89d2fa602e46925bcdae51631df0d9573300
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44467208"
 ---
-# <a name="onlinemeetingsettings"></a><span data-ttu-id="61c8e-103">OnlineMeetingSettings</span><span class="sxs-lookup"><span data-stu-id="61c8e-103">OnlineMeetingSettings</span></span>
+# <a name="onlinemeetingsettings"></a><span data-ttu-id="74351-103">OnlineMeetingSettings</span><span class="sxs-lookup"><span data-stu-id="74351-103">OnlineMeetingSettings</span></span>
 
-<span data-ttu-id="61c8e-104">**OnlineMeetingSettings**要素は、オンライン会議の設定を指定します。</span><span class="sxs-lookup"><span data-stu-id="61c8e-104">The **OnlineMeetingSettings** element specifies the settings for online meetings.</span></span> 
+<span data-ttu-id="74351-104">**OnlineMeetingSettings**要素は、オンライン会議の設定を指定します。</span><span class="sxs-lookup"><span data-stu-id="74351-104">The **OnlineMeetingSettings** element specifies the settings for online meetings.</span></span> 
   
 ```XML
 <OnlineMeetingSettings>
@@ -27,36 +27,36 @@ ms.locfileid: "44467208"
 </OnlineMeetingSettings>
 ```
 
- <span data-ttu-id="61c8e-105">**OnlineMeetingSettingsType**</span><span class="sxs-lookup"><span data-stu-id="61c8e-105">**OnlineMeetingSettingsType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="61c8e-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="61c8e-106">Attributes and elements</span></span>
+ <span data-ttu-id="74351-105">**OnlineMeetingSettingsType**</span><span class="sxs-lookup"><span data-stu-id="74351-105">**OnlineMeetingSettingsType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="74351-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="74351-106">Attributes and elements</span></span>
 
-<span data-ttu-id="61c8e-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="61c8e-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="74351-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="74351-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="61c8e-108">属性</span><span class="sxs-lookup"><span data-stu-id="61c8e-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="74351-108">属性</span><span class="sxs-lookup"><span data-stu-id="74351-108">Attributes</span></span>
 
-<span data-ttu-id="61c8e-109">なし。</span><span class="sxs-lookup"><span data-stu-id="61c8e-109">None.</span></span>
+<span data-ttu-id="74351-109">なし。</span><span class="sxs-lookup"><span data-stu-id="74351-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="61c8e-110">子要素</span><span class="sxs-lookup"><span data-stu-id="61c8e-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="74351-110">子要素</span><span class="sxs-lookup"><span data-stu-id="74351-110">Child elements</span></span>
 
-<span data-ttu-id="61c8e-111">[Lobbybypass](lobbybypass.md)  | [Accesslevel](accesslevel.md)  | [プレゼンター](presenters.md)</span><span class="sxs-lookup"><span data-stu-id="61c8e-111">[LobbyBypass](lobbybypass.md) | [AccessLevel](accesslevel.md) | [Presenters](presenters.md)</span></span>
+<span data-ttu-id="74351-111">[Lobbybypass](lobbybypass.md)  | [Accesslevel](accesslevel.md)  | [プレゼンター](presenters.md)</span><span class="sxs-lookup"><span data-stu-id="74351-111">[LobbyBypass](lobbybypass.md) | [AccessLevel](accesslevel.md) | [Presenters](presenters.md)</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="61c8e-112">親要素</span><span class="sxs-lookup"><span data-stu-id="61c8e-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="74351-112">親要素</span><span class="sxs-lookup"><span data-stu-id="74351-112">Parent elements</span></span>
 
-[<span data-ttu-id="61c8e-113">CalendarItem</span><span class="sxs-lookup"><span data-stu-id="61c8e-113">CalendarItem</span></span>](calendaritem.md)
+[<span data-ttu-id="74351-113">CalendarItem</span><span class="sxs-lookup"><span data-stu-id="74351-113">CalendarItem</span></span>](calendaritem.md)
   
-## <a name="remarks"></a><span data-ttu-id="61c8e-114">注釈</span><span class="sxs-lookup"><span data-stu-id="61c8e-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="74351-114">注釈</span><span class="sxs-lookup"><span data-stu-id="74351-114">Remarks</span></span>
 
-<span data-ttu-id="61c8e-115">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="61c8e-115">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="74351-115">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="74351-115">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="61c8e-116">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="61c8e-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="74351-116">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="74351-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="61c8e-117">要素の情報</span><span class="sxs-lookup"><span data-stu-id="61c8e-117">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="74351-117">要素の情報</span><span class="sxs-lookup"><span data-stu-id="74351-117">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="61c8e-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="61c8e-118">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="61c8e-119">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="61c8e-119">Schema name</span></span>  <br/> |<span data-ttu-id="61c8e-120">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="61c8e-120">Types schema</span></span>  <br/> |
-|<span data-ttu-id="61c8e-121">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="61c8e-121">Validation file</span></span>  <br/> |<span data-ttu-id="61c8e-122">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="61c8e-122">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="61c8e-123">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="61c8e-123">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="74351-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="74351-118">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="74351-119">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="74351-119">Schema name</span></span>  <br/> |<span data-ttu-id="74351-120">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="74351-120">Types schema</span></span>  <br/> |
+|<span data-ttu-id="74351-121">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="74351-121">Validation file</span></span>  <br/> |<span data-ttu-id="74351-122">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="74351-122">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="74351-123">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="74351-123">Can be empty</span></span>  <br/> ||
    
 
