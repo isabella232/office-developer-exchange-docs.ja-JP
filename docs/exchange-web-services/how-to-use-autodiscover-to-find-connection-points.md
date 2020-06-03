@@ -3,15 +3,15 @@ title: 自動検出を使用して接続ポイントを検索する
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 03896542-549b-4c45-973c-98f9025ea26c
 description: 自動検出サービスを使用して、適切な Exchange サーバーにクライアント アプリケーションを誘導する方法について説明します。
-ms.openlocfilehash: eb3fb3664e5789638c097a43cf48f757bb0713ae
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
-ms.translationtype: HT
+localization_priority: Priority
+ms.openlocfilehash: c1895fa0d2cce489467a726614e9457052624ef6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353981"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527594"
 ---
 # <a name="use-autodiscover-to-find-connection-points"></a>自動検出を使用して接続ポイントを検索する
 
@@ -69,7 +69,7 @@ EWS を使用している場合は、POX の自動検出サービスよりも豊
 |:-----|:-----|
 |[Exchange の自動検出](autodiscover-for-exchange.md) <br/> |自動検出サービスの動作方法の概要を示します。  <br/> |
    
-EWS マネージ API を使用する場合は、[Microsoft.Exchange.WebServices.Data](http://msdn.microsoft.com/ja-JP/library/dd633907%28v=exchg.80%29.aspx) 名前空間の [Microsoft.Exchange.WebServices.Data.ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) クラスを使用して、EWS への接続を管理します。 この記事の EWS マネージ API のコード サンプルを使用するには、コード内で次の名前空間を参照する必要があります。 
+EWS マネージ API を使用する場合は、[Microsoft.Exchange.WebServices.Data](https://msdn.microsoft.com/library/dd633907%28v=exchg.80%29.aspx) 名前空間の [Microsoft.Exchange.WebServices.Data.ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) クラスを使用して、EWS への接続を管理します。 この記事の EWS マネージ API のコード サンプルを使用するには、コード内で次の名前空間を参照する必要があります。 
   
 - **System.Net**
     
@@ -98,17 +98,17 @@ SOAP の自動検出サービスは、EWS の適切なエンドポイントに�
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:a="http://schemas.microsoft.com/exchange/2010/Autodiscover" 
+<soap:Envelope xmlns:a="https://schemas.microsoft.com/exchange/2010/Autodiscover" 
         xmlns:wsa="http://www.w3.org/2005/08/addressing" 
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+        xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <a:RequestedServerVersion>Exchange2013</a:RequestedServerVersion>
-    <wsa:Action>http://schemas.microsoft.com/exchange/2010/Autodiscover/Autodiscover/GetUserSettings</wsa:Action>
+    <wsa:Action>https://schemas.microsoft.com/exchange/2010/Autodiscover/Autodiscover/GetUserSettings</wsa:Action>
     <wsa:To>https://mail.microsoft.com/autodiscover/autodiscover.svc</wsa:To>
   </soap:Header>
   <soap:Body>
-    <a:GetUserSettingsRequestMessage xmlns:a="http://schemas.microsoft.com/exchange/2010/Autodiscover">
+    <a:GetUserSettingsRequestMessage xmlns:a="https://schemas.microsoft.com/exchange/2010/Autodiscover">
       <a:Request>
         <a:Users>
           <a:User>
@@ -133,14 +133,14 @@ SOAP の自動検出サービスは、EWS の適切なエンドポイントに�
 > [!IMPORTANT]
 > リダイレクト応答を検証するための条件については、「[Exchange の自動検出](autodiscover-for-exchange.md)」をご覧ください。 
   
-自動検出サービスが、**UserResponse** 要素の [エラーコード](http://msdn.microsoft.com/library/0bb00cee-c66b-4f34-b99d-355458f5e83b%28Office.15%29.aspx) 要素で示されるリダイレクト応答を返す場合は、クライアント アプリケーションは **RedirectTarget** 要素を使用して、リダイレクト応答で指定されたサーバーに送信される新しい設定要求を作成する必要があります。次の例では、サーバーからのリダイレクト応答を示します。 
+自動検出サービスが、**UserResponse** 要素の [エラーコード](https://msdn.microsoft.com/library/0bb00cee-c66b-4f34-b99d-355458f5e83b%28Office.15%29.aspx) 要素で示されるリダイレクト応答を返す場合は、クライアント アプリケーションは **RedirectTarget** 要素を使用して、リダイレクト応答で指定されたサーバーに送信される新しい設定要求を作成する必要があります。次の例では、サーバーからのリダイレクト応答を示します。 
   
 ```XML
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns:a="http://www.w3.org/2005/08/addressing">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/" xmlns:a="http://www.w3.org/2005/08/addressing">
   <s:Header>
-    <a:Action s:mustUnderstand="1">http://schemas.microsoft.com/exchange/2010/
+    <a:Action s:mustUnderstand="1">https://schemas.microsoft.com/exchange/2010/
         Autodiscover/Autodiscover/GetUserSettingsResponse</a:Action>
-    <h:ServerVersionInfo xmlns:h="http://schemas.microsoft.com/exchange/2010/Autodiscover" 
+    <h:ServerVersionInfo xmlns:h="https://schemas.microsoft.com/exchange/2010/Autodiscover" 
         xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
       <h:MajorVersion>15</h:MajorVersion>
       <h:MinorVersion>0</h:MinorVersion>
@@ -150,7 +150,7 @@ SOAP の自動検出サービスは、EWS の適切なエンドポイントに�
     </h:ServerVersionInfo>
   </s:Header>
   <s:Body>
-    <GetUserSettingsResponseMessage xmlns="http://schemas.microsoft.com/exchange/2010/Autodiscover">
+    <GetUserSettingsResponseMessage xmlns="https://schemas.microsoft.com/exchange/2010/Autodiscover">
       <Response xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
         <ErrorCode>NoError</ErrorCode>
         <ErrorMessage />
@@ -174,18 +174,18 @@ SOAP の自動検出サービスは、EWS の適切なエンドポイントに�
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:a="http://schemas.microsoft.com/exchange/2010/Autodiscover" 
+<soap:Envelope xmlns:a="https://schemas.microsoft.com/exchange/2010/Autodiscover" 
         xmlns:wsa="http://www.w3.org/2005/08/addressing" 
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+        xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <a:RequestedServerVersion>Exchange2013</a:RequestedServerVersion>
-    <wsa:Action>http://schemas.microsoft.com/exchange/2010/
+    <wsa:Action>https://schemas.microsoft.com/exchange/2010/
         Autodiscover/Autodiscover/GetUserSettings</wsa:Action>
     <wsa:To>https://autodiscover.exchange.microsoft.com/autodiscover/autodiscover.svc</wsa:To>
   </soap:Header>
   <soap:Body>
-    <a:GetUserSettingsRequestMessage xmlns:a="http://schemas.microsoft.com/exchange/2010/Autodiscover">
+    <a:GetUserSettingsRequestMessage xmlns:a="https://schemas.microsoft.com/exchange/2010/Autodiscover">
       <a:Request>
         <a:Users>
           <a:User>
@@ -203,15 +203,15 @@ SOAP の自動検出サービスは、EWS の適切なエンドポイントに�
 
 ```
 
-クライアント アプリケーションが自動検出サービスの適切なエンドポイントを指示されると、サーバーは、**UserResponse** 要素の [ErrorCode](http://msdn.microsoft.com/library/0bb00cee-c66b-4f34-b99d-355458f5e83b%28Office.15%29.aspx) 要素が **NoError** に設定されていて、要求されたユーザー設定を含んだ応答を送信します。要求されたユーザー設定である、**InternalEwsUrl** と **ExternalEwsUrl** のみが返されます。次の例は、サーバーからの応答を示しています。 
+クライアント アプリケーションが自動検出サービスの適切なエンドポイントを指示されると、サーバーは、**UserResponse** 要素の [ErrorCode](https://msdn.microsoft.com/library/0bb00cee-c66b-4f34-b99d-355458f5e83b%28Office.15%29.aspx) 要素が **NoError** に設定されていて、要求されたユーザー設定を含んだ応答を送信します。要求されたユーザー設定である、**InternalEwsUrl** と **ExternalEwsUrl** のみが返されます。次の例は、サーバーからの応答を示しています。 
   
 ```XML
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" 
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/" 
         xmlns:a="http://www.w3.org/2005/08/addressing">
   <s:Header>
-    <a:Action s:mustUnderstand="1">http://schemas.microsoft.com/exchange/2010/
+    <a:Action s:mustUnderstand="1">https://schemas.microsoft.com/exchange/2010/
         Autodiscover/Autodiscover/GetUserSettingsResponse</a:Action>
-    <h:ServerVersionInfo xmlns:h="http://schemas.microsoft.com/exchange/2010/Autodiscover" 
+    <h:ServerVersionInfo xmlns:h="https://schemas.microsoft.com/exchange/2010/Autodiscover" 
         xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
       <h:MajorVersion>15</h:MajorVersion>
       <h:MinorVersion>0</h:MinorVersion>
@@ -221,7 +221,7 @@ SOAP の自動検出サービスは、EWS の適切なエンドポイントに�
     </h:ServerVersionInfo>
   </s:Header>
   <s:Body>
-    <GetUserSettingsResponseMessage xmlns="http://schemas.microsoft.com/exchange/2010/Autodiscover">
+    <GetUserSettingsResponseMessage xmlns="https://schemas.microsoft.com/exchange/2010/Autodiscover">
       <Response xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
         <ErrorCode>NoError</ErrorCode>
         <ErrorMessage />
@@ -261,7 +261,7 @@ SOAP の自動検出サービスは、EWS の適切なエンドポイントに�
 
 - [EWS アプリケーションの設定](setting-up-your-ews-application.md)   
 - [Exchange の自動検出](autodiscover-for-exchange.md)    
-- [Exchange 用自動検出 Web サービス リファレンス](http://msdn.microsoft.com/library/a01124a8-a8cf-4b80-8625-d7ee05690bca%28Office.15%29.aspx)    
-- [Exchange 用 EWS リファレンス](http://msdn.microsoft.com/library/2a873474-1bb2-4cb1-a556-40e8c4159f4a%28Office.15%29.aspx)
+- [Exchange 用自動検出 Web サービス リファレンス](https://msdn.microsoft.com/library/a01124a8-a8cf-4b80-8625-d7ee05690bca%28Office.15%29.aspx)    
+- [Exchange 用 EWS リファレンス](https://msdn.microsoft.com/library/2a873474-1bb2-4cb1-a556-40e8c4159f4a%28Office.15%29.aspx)
     
 

@@ -3,15 +3,15 @@ title: Exchange での代理人アクセスと EWS
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 240d1776-7adc-46cd-9099-88ffeba0a8aa
 description: Exchange の EWS マネージ API と EWS を使用してユーザーのメールボックスに代理人アクセスできるようにする方法を説明します。
-ms.openlocfilehash: 344255d86a51e13b21f1eda5113d292395d7cb8f
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
-ms.translationtype: HT
+localization_priority: Priority
+ms.openlocfilehash: 4223d625213a3f71726ec5b8d3f09f9e2e7e7e51
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354051"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528455"
 ---
 # <a name="delegate-access-and-ews-in-exchange"></a>Exchange での代理人アクセスと EWS
 
@@ -33,17 +33,18 @@ Exchange の EWS マネージ API と EWS を使用してユーザーのメー�
   
 メールの送信や会議のスケジュールに関して、代理人には「代理送信」のアクセス許可が与えられます。そのため、代理人から送信されたメールまたは会議出席依頼の受信者がそれを Outlook で受信した場合、「*メールボックスの所有者*の*代理人として送信*」したことが表示されます。 「代理人として送信」のテキストを含めることは、クライアント実装の詳細事項の 1 つです。これは "from" と "sender" の値を使用して作成できます。 "from" の値はメールボックスの所有者を示し、"sender" の値はメール送信した代理人を示します。 ユーザーを偽装しているサービス アカウントが、メールボックスの所有者の代わりにメールの送信や会議のスケジュールを行う場合、メッセージはメールボックスの所有者「として」送信されます。 受信者には、サービス アカウントから送信されたメールであることを確認する手段はありません。 フォルダーのアクセス許可が付与され、代理人としてのアクセス権が付与されていないユーザーは、メールボックスの所有者として送信したり、代理送信したりできません。 そのようなユーザーはメールボックスのフォルダーへのアクセス権を持ち、フォルダーにアイテムを作成できる場合もありますが、アイテムを送信することはできません。 
   
-フォルダーのアクセス許可を直接変更するのが適しているのはどのような場合でしょうか。 一般に、フォルダーへのアクセスをユーザーに提供するものの「代理送信」のアクセス許可は付与しない場合、アクセス許可の要件が [DelegateFolderPermissionLevel](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.delegatefolderpermissionlevel%28v=exchg.80%29.aspx) EWS マネージ API 列挙値または [PermissionLevel](http://msdn.microsoft.com/library/87978600-3523-451e-a725-ef092c543e2a%28Office.15%29.aspx) EWS の要素の値にマップしない場合、または単一のカスタム フォルダーへのアクセスをユーザーに提供する場合です。 
+フォルダーのアクセス許可を直接変更するのが適しているのはどのような場合でしょうか。 一般に、フォルダーへのアクセスをユーザーに提供するものの「代理送信」のアクセス許可は付与しない場合、アクセス許可の要件が [DelegateFolderPermissionLevel](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.delegatefolderpermissionlevel%28v=exchg.80%29.aspx) EWS マネージ API 列挙値または [PermissionLevel](https://msdn.microsoft.com/library/87978600-3523-451e-a725-ef092c543e2a%28Office.15%29.aspx) EWS の要素の値にマップしない場合、または単一のカスタム フォルダーへのアクセスをユーザーに提供する場合です。 
   
 フォルダーのアクセス許可を変更するだけで目標を達成でき、代理人を追加する必要がない場合 (つまり、「代理送信」のアクセス許可が必要ない場合) は、[「Exchange で EWS を使用して別のユーザーのフォルダーのアクセス許可を設定する」](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md)を参照してください。 
-  
-なお、[Outlook](http://office.microsoft.com/ja-JP/outlook-help/allow-someone-else-to-manage-your-mail-and-calendar-HA102749417.aspx) または [Exchange Server PowerShell (Exchange 管理シェル)](https://docs.microsoft.com/en-us/powershell/exchange/exchange-server/exchange-management-shell?view=exchange-ps) を使用して代理人アクセスを設定することもできます。 
+
+なお、[Outlook](https://office.microsoft.com/outlook-help/allow-someone-else-to-manage-your-mail-and-calendar-HA102749417.aspx) または [Exchange Server PowerShell (Exchange 管理シェル)](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-management-shell?view=exchange-ps) を使用して代理人アクセスを設定することもできます。 
+
   
 ## <a name="how-does-delegate-access-work"></a>代理人アクセスはどのように機能するか
 
 代理人アクセスにより、ユーザーはメールボックス所有者のフォルダーの一部または全部にアクセスし、メールボックス所有者の代理として行動できるようになります。 メールボックスの所有者はユーザーの場合もあれば、会議室のようなリソースの場合もあります。 たとえば、予約要求を処理するため、受付係に会議室の予定表フォルダーへの代理アクセス権を付与できます。 EWS マネージ API または EWS を使用すれば、メールボックスの所有者または管理者は、代理人を追加すること、代理人がアクセスできるフォルダーを指定すること、そのフォルダーに対するアクセス許可を指定することができるようになります。 代理人には、次のフォルダーへのアクセス権を与えることができます。 
   
-- 予定表
+- カレンダー
     
 - タスク
     
@@ -60,7 +61,7 @@ Exchange の EWS マネージ API と EWS を使用してユーザーのメー�
 ## <a name="delegate-permissions"></a>代理アクセス権
 <a name="bk_delegateperms"> </a>
 
-管理者またはメールボックスの所有者がメールボックスに代理人を追加するときは、1 つ以上のフォルダーのアクセス許可レベルを設定することもできます。 フォルダーのアクセス許可レベルが設定されていない場合、アクセス許可の値の既定値は、[なし] に設定されます。 あるフォルダーに対して複数のユーザーが同じアクセス許可レベルを持つことも、ユーザーが持つアクセス許可レベルをフォルダーごとに変えることもできます。 EWS マネージ API を使用する場合は、[DelegateUser.Permissions](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.delegateuser.permissions%28v=exchg.80%29.aspx) プロパティ (各フォルダーの [DelegateFolderPermissionLevel](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.delegatefolderpermissionlevel%28v=exchg.80%29.aspx) 列挙値の 1 つを指定する) を使用して、フォルダーに対する代理アクセス権を設定します。 EWS を使用する場合は、[DelegatePermissions](http://msdn.microsoft.com/library/292badc7-bab3-4368-9d7c-9a8b7edb279b%28Office.15%29.aspx) 要素を使用して代理アクセス権を設定し、[PermissionLevel](http://msdn.microsoft.com/library/87978600-3523-451e-a725-ef092c543e2a%28Office.15%29.aspx) 要素を使用してアクセス許可レベルを定義します。 
+管理者またはメールボックスの所有者がメールボックスに代理人を追加するときは、1 つ以上のフォルダーのアクセス許可レベルを設定することもできます。 フォルダーのアクセス許可レベルが設定されていない場合、アクセス許可の値の既定値は、[なし] に設定されます。 あるフォルダーに対して複数のユーザーが同じアクセス許可レベルを持つことも、ユーザーが持つアクセス許可レベルをフォルダーごとに変えることもできます。 EWS マネージ API を使用する場合は、[DelegateUser.Permissions](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.delegateuser.permissions%28v=exchg.80%29.aspx) プロパティ (各フォルダーの [DelegateFolderPermissionLevel](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.delegatefolderpermissionlevel%28v=exchg.80%29.aspx) 列挙値の 1 つを指定する) を使用して、フォルダーに対する代理アクセス権を設定します。 EWS を使用する場合は、[DelegatePermissions](https://msdn.microsoft.com/library/292badc7-bab3-4368-9d7c-9a8b7edb279b%28Office.15%29.aspx) 要素を使用して代理アクセス権を設定し、[PermissionLevel](https://msdn.microsoft.com/library/87978600-3523-451e-a725-ef092c543e2a%28Office.15%29.aspx) 要素を使用してアクセス許可レベルを定義します。 
   
 **表 2. 代理アクセス権レベル**
 
@@ -72,7 +73,7 @@ Exchange の EWS マネージ API と EWS を使用してユーザーのメー�
 |Reviewer  <br/> |代理人はアイテムを読むことができます。たとえば、Reviewer のアクセス許可を持つ代理人は、別のユーザーの受信トレイのメッセージを読むことができます。  <br/> |
 |Custom  <br/> |メールボックスの所有者が代理人にアクセス許可のカスタム セットを与えている場合です。  <br/> |
    
-[DelegateUser.ViewPrivateItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.delegateuser.viewprivateitems%28v=exchg.80%29.aspx) EWS マネージ API プロパティと [ViewPrivateItems](http://msdn.microsoft.com/library/80b949ac-440c-4a01-b428-ebafb5b1b802%28Office.15%29.aspx) EWS 要素は、メール、連絡先、予定表、タスク、メモ、ジャーナルのすべてのフォルダーを含む、メールボックス所有者のすべてのフォルダーに影響を与えるグローバルな設定です。 1 つのフォルダーだけを選んで、その中の非公開アイテムへのアクセスを許可することはできません。 
+[DelegateUser.ViewPrivateItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.delegateuser.viewprivateitems%28v=exchg.80%29.aspx) EWS マネージ API プロパティと [ViewPrivateItems](https://msdn.microsoft.com/library/80b949ac-440c-4a01-b428-ebafb5b1b802%28Office.15%29.aspx) EWS 要素は、メール、連絡先、予定表、タスク、メモ、ジャーナルのすべてのフォルダーを含む、メールボックス所有者のすべてのフォルダーに影響を与えるグローバルな設定です。 1 つのフォルダーだけを選んで、その中の非公開アイテムへのアクセスを許可することはできません。 
   
 ## <a name="explicit-access"></a>明示的なアクセス
 <a name="bk_explicit"> </a>
@@ -90,15 +91,15 @@ Exchange の EWS マネージ API と EWS を使用してユーザーのメー�
 ### <a name="explicit-access-and-the-ews-managed-api"></a>明示的なアクセスと EWS マネージ API
 <a name="bk_explicitewsma"> </a>
 
-[FolderId](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) 入力パラメーターでターゲット フォルダーを指定する次のオーバーロードされたメソッドのいずれかを使用すれば、明示的な代理人アクセスを開始できます。 
+[FolderId](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) 入力パラメーターでターゲット フォルダーを指定する次のオーバーロードされたメソッドのいずれかを使用すれば、明示的な代理人アクセスを開始できます。 
   
-- [Folder.Bind](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx)
+- [Folder.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx)
     
-- [ExchangeService.FindItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)
+- [ExchangeService.FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)
     
-- [ExchangeService.FindAppointments](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.findappointments%28v=exchg.80%29.aspx)
+- [ExchangeService.FindAppointments](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.findappointments%28v=exchg.80%29.aspx)
     
-- [ExchangeService.FindFolders](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.findfolders%28v=exchg.80%29.aspx)
+- [ExchangeService.FindFolders](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.findfolders%28v=exchg.80%29.aspx)
     
 - その他多数。
     
@@ -127,7 +128,7 @@ FindItemsResults<Item> results = service.FindItems(new FolderId(WellKnownFolderN
 ### <a name="explicit-access-and-ews"></a>明示的なアクセスと EWS
 <a name="bk_explicitewsma"> </a>
 
-[GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx)、[FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)、または [FindFolder](http://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx) 操作を使用して、明示的なアクセスを開始できます。これらの操作は、[DistinguishedFolderId](http://msdn.microsoft.com/library/50018162-2941-4227-8a5b-d6b4686bb32f%28Office.15%29.aspx) 要素を使用して対象フォルダーを指定するオプションを提供します。**DistinguishedFolderId** 要素には省略可能な子要素が 1 つだけあります。すなわち、[Mailbox](http://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) 要素です。**Mailbox** 要素は、**DistinguishedFolderId** 要素の子として使用する場合、代理人がアクセスするメールボックスを指定します。呼び出し元のユーザーにメールボックス所有者のフォルダーにアクセスする権限がある場合、応答にはそのメールボックス内のアイテムまたはフォルダーの識別子のコレクションが含まれます。応答で返されるアイテムおよびフォルダーの識別子を暗黙的な代理人アクセスで使用できます。  
+[GetFolder](https://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx)、[FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)、または [FindFolder](https://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx) 操作を使用して、明示的なアクセスを開始できます。これらの操作は、[DistinguishedFolderId](https://msdn.microsoft.com/library/50018162-2941-4227-8a5b-d6b4686bb32f%28Office.15%29.aspx) 要素を使用して対象フォルダーを指定するオプションを提供します。**DistinguishedFolderId** 要素には省略可能な子要素が 1 つだけあります。すなわち、[Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) 要素です。**Mailbox** 要素は、**DistinguishedFolderId** 要素の子として使用する場合、代理人がアクセスするメールボックスを指定します。呼び出し元のユーザーにメールボックス所有者のフォルダーにアクセスする権限がある場合、応答にはそのメールボックス内のアイテムまたはフォルダーの識別子のコレクションが含まれます。応答で返されるアイテムおよびフォルダーの識別子を暗黙的な代理人アクセスで使用できます。  
   
 ## <a name="implicit-access"></a>暗黙的なアクセス
 <a name="bk_implicit"> </a>
@@ -138,11 +139,11 @@ FindItemsResults<Item> results = service.FindItems(new FolderId(WellKnownFolderN
   
 ### <a name="implicit-access-and-the-ews-managed-api"></a>暗黙的なアクセスと EWS マネージ API
 
-[FindItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) メソッドでアイテム ID を取得したら、後続の [Item.Bind](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) メソッドの呼び出しでそのアイテム ID を使用し、アイテムにバインドできます。 次いで、タスクを完了するために必要な [Item.Update](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.item.update%28v=exchg.80%29.aspx)、[Item.Delete](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.item.delete%28v=exchg.80%29.aspx)、[Item.Copy](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.item.copy%28v=exchg.80%29.aspx) メソッド (あるいは、アイテム ID を必要とする任意のメソッド呼び出し) を呼び出すことができます。 アイテムを含むフォルダー (および該当する場合は、アイテムの移動先のフォルダー) の適切なアクセス許可を持っているなら、代理人はアクセス許可レベルに応じて変更を実行できます。 
+[FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) メソッドでアイテム ID を取得したら、後続の [Item.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) メソッドの呼び出しでそのアイテム ID を使用し、アイテムにバインドできます。 次いで、タスクを完了するために必要な [Item.Update](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.item.update%28v=exchg.80%29.aspx)、[Item.Delete](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.item.delete%28v=exchg.80%29.aspx)、[Item.Copy](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.item.copy%28v=exchg.80%29.aspx) メソッド (あるいは、アイテム ID を必要とする任意のメソッド呼び出し) を呼び出すことができます。 アイテムを含むフォルダー (および該当する場合は、アイテムの移動先のフォルダー) の適切なアクセス許可を持っているなら、代理人はアクセス許可レベルに応じて変更を実行できます。 
   
 ### <a name="implicit-access-and-ews"></a>暗黙的なアクセスと EWS
 
-[FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 操作でアイテム ID を取得したら、後続の [GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) 操作でそのアイテム ID を使用して、アイテムにバインドできます。次いで、タスクを完了するために必要な [UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx)、[DeleteItem](../web-service-reference/deleteitem-operation.md)、[CopyItem](http://msdn.microsoft.com/library/bcc68f9e-d511-4c29-bba6-ed535524624a%28Office.15%29.aspx) 操作 (あるいはアイテム ID を必要とする任意の操作) を呼び出すことができます。アイテムを含むフォルダー (および該当する場合は、アイテムの移動先のフォルダー) の適切なアクセス許可を持っているなら、代理人はアクセス許可レベルに応じて変更を実行できます。 
+[FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 操作でアイテム ID を取得したら、後続の [GetItem](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) 操作でそのアイテム ID を使用して、アイテムにバインドできます。次いで、タスクを完了するために必要な [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx)、[DeleteItem](../web-service-reference/deleteitem-operation.md)、[CopyItem](https://msdn.microsoft.com/library/bcc68f9e-d511-4c29-bba6-ed535524624a%28Office.15%29.aspx) 操作 (あるいはアイテム ID を必要とする任意の操作) を呼び出すことができます。アイテムを含むフォルダー (および該当する場合は、アイテムの移動先のフォルダー) の適切なアクセス許可を持っているなら、代理人はアクセス許可レベルに応じて変更を実行できます。 
   
 ## <a name="in-this-section"></a>このセクションの内容
 <a name="bk_implicit"> </a>
@@ -162,10 +163,9 @@ FindItemsResults<Item> results = service.FindItems(new FolderId(WellKnownFolderN
 ## <a name="see-also"></a>関連項目
 
 
-- [Exchange の Web サービス クライアントを開発する](develop-web-service-clients-for-exchange.md)
-    
-- [自分のメールと予定表の管理を他のユーザーに許可する](http://office.microsoft.com/ja-JP/outlook-help/allow-someone-else-to-manage-your-mail-and-calendar-HA102749417.aspx)
-    
-- [Add- MailboxPermission](http://technet.microsoft.com/ja-JP/library/bb124097%28v=exchg.150%29.aspx)
-    
+- [Exchange 用の Web サービス クライアントの開発](develop-web-service-clients-for-exchange.md)
 
+- [自分のメールと予定表の管理を他のユーザーに許可する](https://office.microsoft.com/outlook-help/allow-someone-else-to-manage-your-mail-and-calendar-HA102749417.aspx)  
+
+- [Add- MailboxPermission](https://technet.microsoft.com/library/bb124097%28v=exchg.150%29.aspx)
+    

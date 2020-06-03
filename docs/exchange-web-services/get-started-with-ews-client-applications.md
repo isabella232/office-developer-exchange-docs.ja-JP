@@ -3,15 +3,15 @@ title: EWS クライアント アプリケーションの概要
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: e6fd5c23-0ba5-4a7b-bdde-4a553447069f
 description: Exchange Web サービス (EWS) を使用して、Exchange の初めてのアプリケーションを作成します。
-ms.openlocfilehash: 06606bdc2b37c8bf65b8b10dc7a516bdc911b256
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
-ms.translationtype: HT
+localization_priority: Priority
+ms.openlocfilehash: fd02c46777dabd04b492ba3c4420a0737640c5eb
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353778"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528399"
 ---
 # <a name="get-started-with-ews-client-applications"></a>EWS クライアント アプリケーションの概要
 
@@ -25,9 +25,10 @@ EWS 操作は、あらゆるオペレーティング システムまたは言語
 
 Exchange メールボックス アカウントを既に所有している場合は、この手順を省略してもかまいません。それ以外の場合は、次のいずれかの方法で、初めての EWS アプリケーション用の Exchange メールボックスをセットアップします。
   
-- [Office 365 の開発者向けサイトを取得する](http://msdn.microsoft.com/ja-JP/library/office/fp179924.aspx) (推奨)。最も簡単に Exchange メールボックスを入手する方法です。
+- [Office 365 の開発者向けサイトを取得する](https://msdn.microsoft.com/library/office/fp179924.aspx) (推奨)。最も簡単に Exchange メールボックスを入手する方法です。
     
-- [Exchange Server](http://office.microsoft.com/en-us/exchange/microsoft-exchange-try-or-buy-exchange-we-can-help-you-decide-FX103746846.aspx?WT%2Eintid1=ODC%5FENUS%5FFX103472230%5FXT103965589) をダウンロードする。
+- [Exchange Server](https://office.microsoft.com/exchange/microsoft-exchange-try-or-buy-exchange-we-can-help-you-decide-FX103746846.aspx?WT%2Eintid1=ODC%5FENUS%5FFX103472230%5FXT103965589) をダウンロードする。
+
     
 Exchange サーバーから電子メールを送受信できることを確認したら、開発環境をセットアップするための準備が完了します。Outlook Web App を使用して、電子メールが送信できることを確認します。
   
@@ -206,14 +207,14 @@ main メソッドの後でスタブ アウトされていた  `ShowNumberOfMessa
       /// This is the XML request that is sent to the Exchange server.
       var getFolderSOAPRequest =
 "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
-"<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"\n" +
-"   xmlns:t=\"http://schemas.microsoft.com/exchange/services/2006/types\">\n" +
+"<soap:Envelope xmlns:soap=\"https://schemas.xmlsoap.org/soap/envelope/\"\n" +
+"   xmlns:t=\"https://schemas.microsoft.com/exchange/services/2006/types\">\n" +
 "<soap:Header>\n" +
 "    <t:RequestServerVersion Version=\"Exchange2007_SP1\" />\n" +
 "  </soap:Header>\n" +
 "  <soap:Body>\n" +
-"    <GetFolder xmlns=\"http://schemas.microsoft.com/exchange/services/2006/messages\"\n" +
-"               xmlns:t=\"http://schemas.microsoft.com/exchange/services/2006/types\">\n" +
+"    <GetFolder xmlns=\"https://schemas.microsoft.com/exchange/services/2006/messages\"\n" +
+"               xmlns:t=\"https://schemas.microsoft.com/exchange/services/2006/types\">\n" +
 "      <FolderShape>\n" +
 "        <t:BaseShape>Default</t:BaseShape>\n" +
 "      </FolderShape>\n" +
@@ -254,7 +255,7 @@ main メソッドの後でスタブ アウトされていた  `ShowNumberOfMessa
             Tracing.WriteLine(stringBuilder.ToString());
             // Check the response for error codes. If there is an error, throw an application exception.
             IEnumerable<XElement> errorCodes = from errorCode in responseEnvelope.Descendants
-                                               ("{http://schemas.microsoft.com/exchange/services/2006/messages}ResponseCode")
+                                               ("{https://schemas.microsoft.com/exchange/services/2006/messages}ResponseCode")
                                                select errorCode;
             foreach (var errorCode in errorCodes)
             {
@@ -274,26 +275,26 @@ main メソッドの後でスタブ アウトされていた  `ShowNumberOfMessa
             // Process the response.
             IEnumerable<XElement> folders = from folderElement in
                                               responseEnvelope.Descendants
-                                              ("{http://schemas.microsoft.com/exchange/services/2006/messages}Folders")
+                                              ("{https://schemas.microsoft.com/exchange/services/2006/messages}Folders")
                                             select folderElement;
             foreach (var folder in folders)
             {
               Tracing.Write("Folder name:     ");
               var folderName = from folderElement in
                                  folder.Descendants
-                                 ("{http://schemas.microsoft.com/exchange/services/2006/types}DisplayName")
+                                 ("{https://schemas.microsoft.com/exchange/services/2006/types}DisplayName")
                                select folderElement.Value;
               Tracing.WriteLine(folderName.ElementAt(0));
               Tracing.Write("Total messages:  ");
               var totalCount = from folderElement in
                                  folder.Descendants
-                                   ("{http://schemas.microsoft.com/exchange/services/2006/types}TotalCount")
+                                   ("{https://schemas.microsoft.com/exchange/services/2006/types}TotalCount")
                                select folderElement.Value;
               Tracing.WriteLine(totalCount.ElementAt(0));
               Tracing.Write("Unread messages: ");
               var unreadCount = from folderElement in
                                  folder.Descendants
-                                   ("{http://schemas.microsoft.com/exchange/services/2006/types}UnreadCount")
+                                   ("{https://schemas.microsoft.com/exchange/services/2006/types}UnreadCount")
                                select folderElement.Value;
               Tracing.WriteLine(unreadCount.ElementAt(0));
             }
@@ -329,9 +330,9 @@ main メソッドの後でスタブアウトされていた SendTestEmail メソ
 var createItemSOAPRequest =
       "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
       "<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" \n" +
-      "               xmlns:m=\"http://schemas.microsoft.com/exchange/services/2006/messages\" \n" +
-      "               xmlns:t=\"http://schemas.microsoft.com/exchange/services/2006/types\" \n" +
-      "               xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n" +
+      "               xmlns:m=\"https://schemas.microsoft.com/exchange/services/2006/messages\" \n" +
+      "               xmlns:t=\"https://schemas.microsoft.com/exchange/services/2006/types\" \n" +
+      "               xmlns:soap=\"https://schemas.xmlsoap.org/soap/envelope/\">\n" +
       "  <soap:Header>\n" +
       "    <t:RequestServerVersion Version=\"Exchange2007_SP1\" />\n" +
       "  </soap:Header>\n" +
@@ -385,7 +386,7 @@ var createItemSOAPRequest =
             Tracing.WriteLine(stringBuilder.ToString());
             // Check the response for error codes. If there is an error, throw an application exception.
             IEnumerable<XElement> errorCodes = from errorCode in responseEnvelope.Descendants
-                                               ("{http://schemas.microsoft.com/exchange/services/2006/messages}ResponseCode")
+                                               ("{https://schemas.microsoft.com/exchange/services/2006/messages}ResponseCode")
                                                select errorCode;
             foreach (var errorCode in errorCodes)
             {
@@ -424,22 +425,21 @@ var createItemSOAPRequest =
 
 初めての EWS アプリケーションの作成は完了しました。ここからは、EWS を使用する別の方法について見つけましょう。次に、入門編としてのアイデアをいくつか示します。
   
-- ユーザーの電子メール アドレスに応じて適切な Exchange サーバーに接続するように、アプリケーションに[自動検出](autodiscover-for-exchange.md)を実装する。「[Exchange 2013: Get user settings with Autodiscover](http://code.msdn.microsoft.com/Exchange-2013-Get-user-7e22c86e)」サンプルも参照してください。 
+- ユーザーの電子メール アドレスに応じて適切な Exchange サーバーに接続するように、アプリケーションに[自動検出](autodiscover-for-exchange.md)を実装する。「[Exchange 2013: Get user settings with Autodiscover](https://code.msdn.microsoft.com/Exchange-2013-Get-user-7e22c86e)」サンプルも参照してください。 
     
-- EWS の詳細について、[EWS のリファレンス](http://msdn.microsoft.com/library/2a873474-1bb2-4cb1-a556-40e8c4159f4a%28Office.15%29.aspx)で調べる。 
+- EWS の詳細について、[EWS のリファレンス](https://msdn.microsoft.com/library/2a873474-1bb2-4cb1-a556-40e8c4159f4a%28Office.15%29.aspx)で調べる。 
     
-- 使用可能な操作について、[EWS の操作](http://msdn.microsoft.com/library/cf6fd871-9a65-4f34-8557-c8c71dd7ce09%28Office.15%29.aspx)で確認する。 
+- 使用可能な操作について、[EWS の操作](https://msdn.microsoft.com/library/cf6fd871-9a65-4f34-8557-c8c71dd7ce09%28Office.15%29.aspx)で確認する。 
     
 - [EWS エディタ](http://ewseditor.codeplex.com/)を使用して、サーバーとやり取りされる SOAP トラフィックを確認する。 
     
-カスタムアプリケーションに問題が発生したときには、[質問やコメントをフォーラムに投稿してみてください](http://social.technet.microsoft.com/Forums/exchange/en-US/home?forum=exchangesvrdevelopment) (最初の投稿は忘れずにお読みください)。 
+カスタムアプリケーションに問題が発生したときには、[質問やコメントをフォーラムに投稿してみてください](https://social.technet.microsoft.com/Forums/exchange/home?forum=exchangesvrdevelopment) (最初の投稿は忘れずにお読みください)。 
   
 ## <a name="see-also"></a>関連項目
 
 - [Exchange で Web サービスの使用を開始する](start-using-web-services-in-exchange.md)   
-- [Exchange の EWS Managed API、EWS、および Web サービスについて学ぶ](explore-the-ews-managed-api-ews-and-web-services-in-exchange.md) 
+- [Exchange の EWS マネージ API、EWS、Web サービスについて探究してみましょう](explore-the-ews-managed-api-ews-and-web-services-in-exchange.md) 
 - [Exchange の EWS クライアントの設計の概要](ews-client-design-overview-for-exchange.md)   
 - [Exchange の Web サービス クライアントを開発する](develop-web-service-clients-for-exchange.md)  
 - [EWS マネージ API クライアント アプリケーションの概要](get-started-with-ews-managed-api-client-applications.md)
     
-

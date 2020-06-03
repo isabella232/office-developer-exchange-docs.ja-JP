@@ -1,39 +1,39 @@
 ---
-title: EWS の参照の交換
+title: Exchange 用 EWS リファレンス
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
 ms.assetid: 2a873474-1bb2-4cb1-a556-40e8c4159f4a
-description: 参照の情報を検索 EWS XML 要素と WSDL オペレーション Exchange します。
-ms.openlocfilehash: 32717929aad4af7c1ce6010b58b48d4059c91b22
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Exchange での EWS XML 要素と WSDL 操作のリファレンス情報を検索します。
+localization_priority: Priority
+ms.openlocfilehash: 2b60130f5dd268321465ea045ebd73ab33b3a0ab
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760342"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530622"
 ---
-# <a name="ews-reference-for-exchange"></a>EWS の参照の交換
+# <a name="ews-reference-for-exchange"></a>Exchange 用 EWS リファレンス
 
-参照の情報を検索 EWS XML 要素と WSDL オペレーション Exchange します。
+Exchange での EWS XML 要素と WSDL 操作のリファレンス情報を検索します。
   
-このセクションには、クライアントとサーバー間で送信される EWS の XML 要素のリファレンス情報が含まれています。 XML 要素の参照には、要素が表すと要素が含まれている潜在的な階層についての情報の概要が含まれています。 このドキュメントでは、クライアントとサーバー間で送信される XML インスタンスについて説明します。 これらの要素を記述するスキーマは、EWS をホストしているサーバーの仮想ディレクトリにあります。 
+ここでは、クライアントとサーバー間で送信される EWS XML 要素に関するリファレンス情報について説明します。 XML 要素リファレンスには、要素が表す内容の概要と、要素を含む可能性のある階層に関する情報が含まれています。 このドキュメントでは、クライアントとサーバー間で送信される XML インスタンスについて説明します。 これらの要素を説明するスキーマは、EWS をホストするサーバーの仮想ディレクトリにあります。 
   
-このセクションの WSDL 操作内容は、EWS の操作だけでなくすべての SOAP ヘッダーといくつかの操作に関連するエラー メッセージについての概要情報と要求と応答の例を提供します。 EWS の別のバージョンで利用可能な機能を確認するのには、バージョン情報を使用できます。 サーバーとの間に送信される SOAP メッセージに含まれる XML の構造を理解するには、操作の参照情報が役立ちます。 
+このセクションの WSDL 操作の内容は、すべての EWS 操作の概要情報と、一部の操作の SOAP ヘッダーと関連するエラーメッセージに関する情報を提供します。 バージョン情報を使用して、EWS の各バージョンで使用できる機能を確認できます。 操作参照情報は、サーバーとの間で送受信される SOAP メッセージに含まれる XML の構造を理解するのに役立ちます。 
   
 ## <a name="in-this-section"></a>このセクションの内容
 <a name="bk_InThisSection"> </a>
 
-- [Exchange での EWS の操作](ews-operations-in-exchange.md)
+- [Exchange での EWS 操作](ews-operations-in-exchange.md)
     
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
     
 ## <a name="see-also"></a>関連項目
 
-- [Exchange web サービスの参照](web-services-reference-for-exchange.md)
-- [Exchange、EWS の管理 API、EWS、および web サービスを探索します。](../exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)
+- [Exchange の Web サービス リファレンス](web-services-reference-for-exchange.md)
+- [Exchange の EWS マネージ API、EWS、および Web サービスについて学ぶ](../exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)
 - [Exchange で Web サービスの使用を開始する](../exchange-web-services/start-using-web-services-in-exchange.md)
     
 

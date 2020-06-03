@@ -3,31 +3,31 @@ title: 自動検出を使用して Exchange からユーザー設定を取得す
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 6d90c305-4802-4e18-8d52-f60349feaa8d
 description: 自動検出を使用して Exchange サーバーからユーザー構成設定を取得する方法について説明します。
-ms.openlocfilehash: f37de55d6681bcdef381561b166adf209d3919a9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: HT
+localization_priority: Priority
+ms.openlocfilehash: 5f7ea04e6b04f674d4cb481cf9243d46437d6950
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758956"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528000"
 ---
 # <a name="get-user-settings-from-exchange-by-using-autodiscover"></a>自動検出を使用して Exchange からユーザー設定を取得する
 
 自動検出を使用して Exchange サーバーからユーザー構成設定を取得する方法について説明します。
   
-自動検出では、ユーザーの電子メール アドレスとパスワードだけを使用して、ユーザーの構成情報に簡単にアクセスできるようにすることで、アプリケーションの構成が簡略化されます。 ユーザーの表示名や外部の Web サービスの URL など、[多くのユーザー構成設定](http://msdn.microsoft.com/library/43db26e1-f7be-49fd-b26b-fc1b10bd3458%28Office.15%29.aspx)が自動検出で利用できます。 
+自動検出では、ユーザーの電子メール アドレスとパスワードだけを使用して、ユーザーの構成情報に簡単にアクセスできるようにすることで、アプリケーションの構成が簡略化されます。 ユーザーの表示名や外部の Web サービスの URL など、[多くのユーザー構成設定](https://msdn.microsoft.com/library/43db26e1-f7be-49fd-b26b-fc1b10bd3458%28Office.15%29.aspx)が自動検出で利用できます。 
   
 自動検出サービスからユーザーの設定を取得するために、次の開発テクノロジのうちのいずれかを使用できます。
   
 - [EWS マネージ API クライアント アプリケーションの概要](get-started-with-ews-managed-api-client-applications.md)
     
-- [SOAP 自動検出 Web サービス](http://msdn.microsoft.com/library/61c21ea9-7fea-4f56-8ada-bf80e1e6b074%28Office.15%29.aspx)
+- [SOAP 自動検出 Web サービス](https://msdn.microsoft.com/library/61c21ea9-7fea-4f56-8ada-bf80e1e6b074%28Office.15%29.aspx)
     
-- [POX 自動検出 Web サービス](http://msdn.microsoft.com/library/877152f0-f4b1-4f63-b2ce-924f4bdf2d20%28Office.15%29.aspx)
+- [POX 自動検出 Web サービス](https://msdn.microsoft.com/library/877152f0-f4b1-4f63-b2ce-924f4bdf2d20%28Office.15%29.aspx)
     
-EWS マネージ API は、ユーザー設定を取得するためのオブジェクト ベースのインターフェイスを提供します。 クライアント アプリケーションがマネージ コードを使用する場合は、EWS マネージ API を使用することをお勧めします。 EWS マネージ API を使用している場合は、必要な設定が [Microsoft.Exchange.WebServices.Autodiscover.UserSettingName](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.autodiscover.usersettingname%28v=EXCHG.80%29.aspx) 列挙型で利用可能かどうかを判別します。 利用可能でない場合は、SOAP または POX の自動検出サービスの使用をお勧めします。 
+EWS マネージ API は、ユーザー設定を取得するためのオブジェクト ベースのインターフェイスを提供します。 クライアント アプリケーションがマネージ コードを使用する場合は、EWS マネージ API を使用することをお勧めします。 EWS マネージ API を使用している場合は、必要な設定が [Microsoft.Exchange.WebServices.Autodiscover.UserSettingName](https://msdn.microsoft.com/library/microsoft.exchange.webservices.autodiscover.usersettingname%28v=EXCHG.80%29.aspx) 列挙型で利用可能かどうかを判別します。 利用可能でない場合は、SOAP または POX の自動検出サービスの使用をお勧めします。 
   
 Web サービスを使用している場合は、POX の自動検出サービスよりも豊富な機能をサポートしている SOAP の自動検出サービスの使用をお勧めします。 SOAP の自動検出サービスを使用できない場合、POX の自動検出サービスは代替として最適です。
   
@@ -41,12 +41,12 @@ Web サービスを使用している場合は、POX の自動検出サービス
 - SOAP ベースの自動検出サービス、Exchange Online、または Exchange 2010 以降のバージョンの Exchange を使用しているか。
     
 > [!NOTE]
-> EWS マネージ API を使用している場合は、状況によっては[証明書の検証コールバック メソッドを指定](how-to-validate-a-server-certificate-for-the-ews-managed-api.md)する必要があります。 また、Visual Studio で作成されたものなど、生成されたいくつかのプロキシ ライブラリを使用した、証明書の検証コールバック メソッドが必要になる場合もあります。 
+> EWS マネージ API を使用している場合は、状況によっては[証明書の検証コールバック メソッドを指定](how-to-validate-a-server-certificate-for-the-ews-managed-api.md)する必要があります。また、Visual Studio で作成されたものなど、生成されたいくつかのプロキシ ライブラリを使用した、証明書の検証コールバック メソッドが必要になる場合もあります。 
   
 ## <a name="get-user-settings-by-using-the-ews-managed-api"></a>EWS マネージ API を使用してユーザー設定を取得する
 <a name="bk_Managed"> </a>
 
-[GetUserSettings](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.autodiscover.autodiscoverservice.getusersettings%28v=exchg.80%29.aspx) メソッドを使用して、次の例のように、ユーザーの構成情報を取得します。 この例では、([UserSettingName](http://msdn.microsoft.com/ja-JP/library/exchange/microsoft.exchange.webservices.autodiscover.usersettingname%28v=exchg.80%29.aspx) 列挙型で利用できるものから) 返されるユーザー設定の配列を指定でき、メソッドは Exchange サーバーからのリダイレクト応答に従います。 
+[GetUserSettings](https://msdn.microsoft.com/library/microsoft.exchange.webservices.autodiscover.autodiscoverservice.getusersettings%28v=exchg.80%29.aspx) メソッドを使用して、次の例のように、ユーザーの構成情報を取得します。 この例では、([UserSettingName](https://msdn.microsoft.com/library/exchange/microsoft.exchange.webservices.autodiscover.usersettingname%28v=exchg.80%29.aspx) 列挙型で利用できるものから) 返されるユーザー設定の配列を指定でき、メソッドは Exchange サーバーからのリダイレクト応答に従います。 
   
 ```cs
 using System;
@@ -105,23 +105,23 @@ Console.WriteLine(userresponse.Settings[UserSettingName.UserDisplayName]);
 
 EWS マネージ API を使用していない場合は、SOAP の自動検出 Web サービスを使用することをお勧めします。SOAP の自動検出 Web サービスが失敗した、または利用できない場合にのみ、POX 自動検出 Web サービスを使用します。  
   
-ユーザー設定を取得するには、[GetUserSettings 操作 (SOAP)](http://msdn.microsoft.com/library/758d965c-ef63-4de4-9120-e293abf14ff8%28Office.15%29.aspx) を使用します。 指定された設定は [UserSetting 要素](http://msdn.microsoft.com/library/aac6dc31-edd2-49d7-b845-1df4d77da58c%28Office.15%29.aspx)として返されます。
+ユーザー設定を取得するには、[GetUserSettings 操作 (SOAP)](https://msdn.microsoft.com/library/758d965c-ef63-4de4-9120-e293abf14ff8%28Office.15%29.aspx) を使用します。 指定された設定は [UserSetting 要素](https://msdn.microsoft.com/library/aac6dc31-edd2-49d7-b845-1df4d77da58c%28Office.15%29.aspx)として返されます。
   
 次の例では、サーバーからユーザー設定を取得する SOAP 自動検出要求を示しています。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:a="http://schemas.microsoft.com/exchange/2010/Autodiscover" 
+<soap:Envelope xmlns:a="https://schemas.microsoft.com/exchange/2010/Autodiscover" 
         xmlns:wsa="http://www.w3.org/2005/08/addressing" 
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+        xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <a:RequestedServerVersion>Exchange2013</a:RequestedServerVersion>
-    <wsa:Action>http://schemas.microsoft.com/exchange/2010/Autodiscover/Autodiscover/GetUserSettings</wsa:Action>
+    <wsa:Action>https://schemas.microsoft.com/exchange/2010/Autodiscover/Autodiscover/GetUserSettings</wsa:Action>
     <wsa:To>https://autodiscover.exchange.microsoft.com/autodiscover/autodiscover.svc</wsa:To>
   </soap:Header>
   <soap:Body>
-    <a:GetUserSettingsRequestMessage xmlns:a="http://schemas.microsoft.com/exchange/2010/Autodiscover">
+    <a:GetUserSettingsRequestMessage xmlns:a="https://schemas.microsoft.com/exchange/2010/Autodiscover">
       <a:Request>
         <a:Users>
           <a:User>
@@ -154,11 +154,11 @@ EWS マネージ API を使用していない場合は、SOAP の自動検出 We
 次の例では、クライアントからの要求を解析した後に、サーバーによって返される SOAP 応答を示します。応答には、要求される設定のみが含まれます (存在する場合)。
   
 ```XML
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns:a="http://www.w3.org/2005/08/addressing">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/" xmlns:a="http://www.w3.org/2005/08/addressing">
   <s:Header>
-    <a:Action s:mustUnderstand="1">http://schemas.microsoft.com/exchange/2010/
+    <a:Action s:mustUnderstand="1">https://schemas.microsoft.com/exchange/2010/
         Autodiscover/Autodiscover/GetUserSettingsResponse</a:Action>
-    <h:ServerVersionInfo xmlns:h="http://schemas.microsoft.com/exchange/2010/Autodiscover" 
+    <h:ServerVersionInfo xmlns:h="https://schemas.microsoft.com/exchange/2010/Autodiscover" 
         xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
       <h:MajorVersion>15</h:MajorVersion>
       <h:MinorVersion>0</h:MinorVersion>
@@ -168,7 +168,7 @@ EWS マネージ API を使用していない場合は、SOAP の自動検出 We
     </h:ServerVersionInfo>
   </s:Header>
   <s:Body>
-    <GetUserSettingsResponseMessage xmlns="http://schemas.microsoft.com/exchange/2010/Autodiscover">
+    <GetUserSettingsResponseMessage xmlns="https://schemas.microsoft.com/exchange/2010/Autodiscover">
       <Response xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
         <ErrorCode>NoError</ErrorCode>
         <ErrorMessage />
@@ -252,16 +252,16 @@ EWS マネージ API を使用していない場合は、SOAP の自動検出 We
 ## <a name="get-user-settings-by-using-pox-autodiscover"></a>POX 自動検出を使用してユーザー設定を取得する
 <a name="bk_POX"> </a>
 
-SOAP の自動検出 Web サービスを使用することをお勧めしますが、POX の自動検出 Web サービスは、SOAP が使用できない場合のための適切なバックアップ オプションです。 たとえば、Exchange 2007 は SOAP の自動検出 Web サービスをサポートしていないため、Exchange 2007 を対象としている場合は、POX の自動検出 Web サービスを利用する必要があります。 SOAP の自動検出 Web サービスとは異なり、POX の自動検出サービスでは特定の設定を要求できません。 その代わりに、サーバーが [Protocol 要素](http://msdn.microsoft.com/library/f77e4d66-6fdd-4999-9339-f7d7f9c86f44%28Office.15%29.aspx)の子要素として、使用可能な設定の完全な一覧を返します。
+SOAP の自動検出 Web サービスを使用することをお勧めしますが、POX の自動検出 Web サービスは、SOAP が使用できない場合のための適切なバックアップ オプションです。 たとえば、Exchange 2007 は SOAP の自動検出 Web サービスをサポートしていないため、Exchange 2007 を対象としている場合は、POX の自動検出 Web サービスを利用する必要があります。 SOAP の自動検出 Web サービスとは異なり、POX の自動検出サービスでは特定の設定を要求できません。 その代わりに、サーバーが [Protocol 要素](https://msdn.microsoft.com/library/f77e4d66-6fdd-4999-9339-f7d7f9c86f44%28Office.15%29.aspx)の子要素として、使用可能な設定の完全な一覧を返します。
   
 次の例では、サーバーからユーザー設定を取得する SOAP の自動検出要求を示しています。次の XML は、HTTP POST 経由でサーバーに送信されます。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<Autodiscover xmlns="http://schemas.microsoft.com/exchange/autodiscover/outlook/requestschema/2006">
+<Autodiscover xmlns="https://schemas.microsoft.com/exchange/autodiscover/outlook/requestschema/2006">
   <Request>
     <EMailAddress>mara@contoso.com</EMailAddress>
-    <AcceptableResponseSchema>http://schemas.microsoft.com/exchange/autodiscover/outlook/responseschema/2006a</AcceptableResponseSchema>
+    <AcceptableResponseSchema>https://schemas.microsoft.com/exchange/autodiscover/outlook/responseschema/2006a</AcceptableResponseSchema>
   </Request>
 </Autodiscover>
 ```
@@ -270,8 +270,8 @@ SOAP の自動検出 Web サービスを使用することをお勧めします�
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<Autodiscover xmlns="http://schemas.microsoft.com/exchange/autodiscover/responseschema/2006">
-  <Response xmlns="http://schemas.microsoft.com/exchange/autodiscover/outlook/responseschema/2006a">
+<Autodiscover xmlns="https://schemas.microsoft.com/exchange/autodiscover/responseschema/2006">
+  <Response xmlns="https://schemas.microsoft.com/exchange/autodiscover/outlook/responseschema/2006a">
     <User>
       <DisplayName>Mara Whitley</DisplayName>
       <LegacyDN>/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=f5eeabead90d4b6fb51d6379474692cd-Mara</LegacyDN>
@@ -336,17 +336,17 @@ SOAP の自動検出 Web サービスを使用することをお勧めします�
 ## <a name="next-steps"></a>次の手順
 <a name="bk_Next"> </a>
 
-サーバーからユーザーのために必要な構成の詳細を取得すると、アプリケーションで必要な処理を行うために Exchange と通信する準備ができたことになります。 次のステップは、Exchange と通信する方法や、行う内容によって異なります。 いくらかインスピレーションが必要で、EWS を使用している場合は、アイデアを得るために、「[Exchange 101 のコード サンプル](http://code.msdn.microsoft.com/exchange/Exchange-2013-101-Code-3c38582c)」を確認することができます。 
+サーバーからユーザーのために必要な構成の詳細を取得すると、アプリケーションで必要な処理を行うために Exchange と通信する準備ができたことになります。 次のステップは、Exchange と通信する方法や、行う内容によって異なります。 いくらかインスピレーションが必要で、EWS を使用している場合は、アイデアを得るために、「[Exchange 101 のコード サンプル](https://code.msdn.microsoft.com/exchange/Exchange-2013-101-Code-3c38582c)」を確認することができます。 
   
 ## <a name="see-also"></a>関連項目
 
 
 - [Exchange の自動検出](autodiscover-for-exchange.md)
     
-- [Exchange Web サービス (EWS) マネージ API](http://msdn.microsoft.com/ja-JP/library/exchange/jj220535%28v=exchg.80%29.aspx)
+- [Exchange Web サービス (EWS) マネージ API](https://msdn.microsoft.com/library/exchange/jj220535%28v=exchg.80%29.aspx)
     
-- [Exchange 用 SOAP 自動検出 Web サービス リファレンス](http://msdn.microsoft.com/library/61c21ea9-7fea-4f56-8ada-bf80e1e6b074%28Office.15%29.aspx)
+- [Exchange 用 SOAP 自動検出 Web サービス リファレンス](https://msdn.microsoft.com/library/61c21ea9-7fea-4f56-8ada-bf80e1e6b074%28Office.15%29.aspx)
     
-- [Exchange 用 POX 自動検出 Web サービス リファレンス](http://msdn.microsoft.com/library/877152f0-f4b1-4f63-b2ce-924f4bdf2d20%28Office.15%29.aspx)
+- [Exchange 用 POX 自動検出 Web サービス リファレンス](https://msdn.microsoft.com/library/877152f0-f4b1-4f63-b2ce-924f4bdf2d20%28Office.15%29.aspx)
     
 

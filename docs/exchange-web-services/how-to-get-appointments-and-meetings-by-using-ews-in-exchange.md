@@ -3,21 +3,21 @@ title: Exchange の EWS を使用して予定と会議を取得する
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 1bae582a-8cb3-4e77-be2a-7e107fad26fe
 description: EWS マネージ API または Exchange の EWS を使用して、予定と会議を取得する方法を説明します。
-ms.openlocfilehash: c78d70ca2266bd192b82f644d902ad8c958d2d4a
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
-ms.translationtype: HT
+localization_priority: Priority
+ms.openlocfilehash: d951bfeccdf50ae1397ecdd4887ed05548b25001
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353694"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528091"
 ---
 # <a name="get-appointments-and-meetings-by-using-ews-in-exchange"></a>Exchange の EWS を使用して予定と会議を取得する
 
 EWS マネージ API または Exchange の EWS を使用して、予定と会議を取得する方法を説明します。
   
-[CalendarFolder.FindAppointments](http://msdn.microsoft.com/ja-JP/library/dd636179%28v=exchg.80%29.aspx) EWS マネージ API メソッド、または [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) EWS 操作を使用して、予定表フォルダーから予定と会議を取得できます。 
+[CalendarFolder.FindAppointments](https://msdn.microsoft.com/library/dd636179%28v=exchg.80%29.aspx) EWS マネージ API メソッド、または [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) EWS 操作を使用して、予定表フォルダーから予定と会議を取得できます。 
   
 ## <a name="get-appointments-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して、予定を取得する
 <a name="bk_retrieveappsEWSMA"> </a>
@@ -71,14 +71,14 @@ Subject: Online training webcast: 8/22/2013 2:00:00 PM End: 8/22/2013 3:00:00 PM
 ## <a name="get-appointments-by-using-ews"></a>EWS を使用して、予定を取得する
 <a name="bk_xml"> </a>
 
-次の XML は [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 操作のフォルダー ID を返す [GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) 操作の要求を示します。 
+次の XML は [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 操作のフォルダー ID を返す [GetFolder](https://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) 操作の要求を示します。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-       xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-       xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+       xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+       xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -101,16 +101,16 @@ Subject: Online training webcast: 8/22/2013 2:00:00 PM End: 8/22/2013 3:00:00 PM
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="731" MinorBuildNumber="10" Version="V2_3" 
- xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
- xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
- xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetFolderResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -133,9 +133,9 @@ Subject: Online training webcast: 8/22/2013 2:00:00 PM End: 8/22/2013 3:00:00 PM
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-       xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-       xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+       xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+       xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -164,17 +164,17 @@ Subject: Online training webcast: 8/22/2013 2:00:00 PM End: 8/22/2013 3:00:00 PM
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="731" MinorBuildNumber="10" Version="V2_3" 
- xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
- xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:FindItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:FindItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:FindItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -222,17 +222,17 @@ xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
 ## <a name="recurring-meetings-and-the-calendar-view"></a>定期的な会議および予定表の表示
 <a name="bk_recurring"> </a>
 
-繰り返し連続で発生するアイテムや、繰り返し連続で発生するアイテムの例外は、メールボックス内の実際のアイテムではなく、定期的なマスターへの添付物として内部に格納されるため、予定表フォルダーはメールボックス内の他のフォルダーとは少し異なります。 つまり、[ExchangeService.FindItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)、または EWS [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 操作など、EWS マネージ API **FindItems** メソッドのいずれかを使用して、**開始**値と**終了**値のセット間の値を返す EWS 要求を作成することができますが、EWS は各予定表アイテムの添付テーブルを確認して、例外や発生アイテムを検索することはしません。 
+繰り返し連続で発生するアイテムや、繰り返し連続で発生するアイテムの例外は、メールボックス内の実際のアイテムではなく、定期的なマスターへの添付物として内部に格納されるため、予定表フォルダーはメールボックス内の他のフォルダーとは少し異なります。 つまり、[ExchangeService.FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)、または EWS [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 操作など、EWS マネージ API **FindItems** メソッドのいずれかを使用して、**開始**値と**終了**値のセット間の値を返す EWS 要求を作成することができますが、EWS は各予定表アイテムの添付テーブルを確認して、例外や発生アイテムを検索することはしません。 
   
-むしろ、本当に実行したいことは、[CalendarView](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.calendarview%28v=exchg.80%29.aspx) オブジェクトを使用して、2 つの SQL テーブルのユニオン上に *Dataview* を適用する操作に類似する操作です。 パフォーマンス上の理由から、[PropertySet](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx) プロパティを使用して、返すことを望む予定や会議の件数や望みのプロパティを指示し、応答のサイズを制限することをお勧めします。 
+むしろ、本当に実行したいことは、[CalendarView](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.calendarview%28v=exchg.80%29.aspx) オブジェクトを使用して、2 つの SQL テーブルのユニオン上に *Dataview* を適用する操作に類似する操作です。 パフォーマンス上の理由から、[PropertySet](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx) プロパティを使用して、返すことを望む予定や会議の件数や望みのプロパティを指示し、応答のサイズを制限することをお勧めします。 
   
 ## <a name="see-also"></a>関連項目
 <a name="bk_additional"> </a>
 
 - [Exchange の予定表と EWS](calendars-and-ews-in-exchange.md)   
-- [Exchange 2013 の EWS を使用して予定と会議を作成する](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)  
-- [Exchange の EWS を使用して予定と会議を更新する](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)  
-- [Exchange で EWS を使用して、予定を削除し、会議をキャンセルする](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md) 
-- [Exchange 用の Web サービス クライアントの開発](develop-web-service-clients-for-exchange.md)
+- [Exchange 2013 で EWS を使用して予定と会議を作成する](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)  
+- [Exchange で EWS を使用して予定と会議を更新する](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)  
+- [Exchange の EWS を使用して、予定を削除し、会議をキャンセルする](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md) 
+- [Exchange の Web サービス クライアントを開発する](develop-web-service-clients-for-exchange.md)
     
 

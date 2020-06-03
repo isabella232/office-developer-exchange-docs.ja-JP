@@ -3,28 +3,28 @@ title: Exchange で EWS を使用して、予定を削除し、会議をキャ�
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 42412265-3968-468a-a8c2-7e8af3c6deb9
 description: Exchange の EWS マネージ API または EWS を使用して、予定と会議を削除する方法を説明します。
-ms.openlocfilehash: c71272bf753432a9f343adc917b444424fe3ba33
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
-ms.translationtype: HT
+localization_priority: Priority
+ms.openlocfilehash: 6a2fdaa357f4088da4bbd0643187d05a5bc51c0c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354079"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528133"
 ---
 # <a name="delete-appointments-and-cancel-meetings-by-using-ews-in-exchange"></a>Exchange で EWS を使用して、予定を削除し、会議をキャンセルする
 
 Exchange の EWS マネージ API または EWS を使用して、予定と会議を削除する方法を説明します。
   
-会議と予定の根本的な違いは、会議には出席者がいますが、予定にはいない点です。 予定も会議も、単一のインスタンスまたは定期的に連続で発生するアイテムの一部ですが、予定は出席者、会議室、またはリソースを含まないため、メッセージの送信を必要としません。 内部的には、Exchange は会議と予定の両方に同じオブジェクトを使用します。 EWS マネージ API [Appointment クラス](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) または EWS [CalendarItem](http://msdn.microsoft.com/library/Title Topic ID Project Name Writer Editor Publish Preview.aspx) 要素を使用して、会議や予定を操作します。 
+会議と予定の根本的な違いは、会議には出席者がいますが、予定にはいない点です。 予定も会議も、単一のインスタンスまたは定期的に連続で発生するアイテムの一部ですが、予定は出席者、会議室、またはリソースを含まないため、メッセージの送信を必要としません。 内部的には、Exchange は会議と予定の両方に同じオブジェクトを使用します。 EWS マネージ API [Appointment クラス](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) または EWS [CalendarItem](https://msdn.microsoft.com/library/Title Topic ID Project Name Writer Editor Publish Preview.aspx) 要素を使用して、会議や予定を操作します。 
   
 **表 1. 予定や会議を削除するための EWS マネージ API メソッドおよび EWS 操作**
 
 |**EWS マネージ API メソッド**|**EWS 操作**|**目的**|
 |:-----|:-----|:-----|
-|[Appointment.Delete](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) <br/> |[DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |予定を削除します。  <br/> |
-|[Appointment.Delete](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) <br/> |[Createitem (予定表アイテム)](../web-service-reference/createitem-operation-calendar-item.md) <br/> |会議を削除します。  <br/> |
+|[Appointment.Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) <br/> |[DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |予定を削除します。  <br/> |
+|[Appointment.Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) <br/> |[Createitem (予定表アイテム)](../web-service-reference/createitem-operation-calendar-item.md) <br/> |会議を削除します。  <br/> |
    
 EWS を使用して予定を削除する場合、[DeleteItem](../web-service-reference/deleteitem-operation.md) 操作を使用しますが、会議を削除する場合は、[CreateItem](../web-service-reference/createitem-operation-calendar-item.md) 操作を使用することにご注意ください。 直観に反しているように思えるかもしれませんが、これは会議出席依頼の返信オブジェクトを作成して、会議のキャンセル メッセージを出席者に送信する必要があるためです。 
 
@@ -32,9 +32,9 @@ EWS を使用して予定を削除する場合、[DeleteItem](../web-service-ref
 
 ## <a name="delete-an-appointment-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して予定を削除する
 
-次のコード例は、[Delete](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) メソッドを使用して予定表フォルダーから予定を削除する方法と、[ExchangeService.FindItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) メソッドを使用して削除済みアイテム フォルダー内で予定を検索し、予定が削除されたことを確認する方法を示します。 
+次のコード例は、[Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) メソッドを使用して予定表フォルダーから予定を削除する方法と、[ExchangeService.FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) メソッドを使用して削除済みアイテム フォルダー内で予定を検索し、予定が削除されたことを確認する方法を示します。 
   
-この例では、ユーザーが Exchange サーバーから認証されていて、**service** という名前の [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトを取得済みであると想定しています。 ローカル変数 `appointmentId` は、既存の予定に関連付けられた識別子です。 
+この例では、ユーザーが Exchange サーバーから認証されていて、**service** という名前の [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトを取得済みであると想定しています。 ローカル変数 `appointmentId` は、既存の予定に関連付けられた識別子です。 
   
 ```cs
 // Instantiate an appointment object by binding to it by using the ItemId.
@@ -68,8 +68,8 @@ Console.WriteLine("The appointment " + "\"" + deletedItem.Subject + "\"" + " is 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
     <t:TimeZoneContext>
@@ -91,16 +91,16 @@ Console.WriteLine("The appointment " + "\"" + deletedItem.Subject + "\"" + " is 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="800" MinorBuildNumber="5" Version="V2_6" 
- xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
- xmlns="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+ xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:DeleteItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:DeleteItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:DeleteItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -112,12 +112,12 @@ Console.WriteLine("The appointment " + "\"" + deletedItem.Subject + "\"" + " is 
 
 ```
 
-次の例は、[FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 操作の要求 XML を表しています。この操作は、アイテムの件名と削除された予定のオブジェクトの件名を比較するために、削除済みアイテム フォルダー内の最初のアイテムを取得します。  
+次の例は、[FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 操作の要求 XML を表しています。この操作は、アイテムの件名と削除された予定のオブジェクトの件名を比較するために、削除済みアイテム フォルダー内の最初のアイテムを取得します。  
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages
-" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages
+" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
     <t:TimeZoneContext>
@@ -144,23 +144,23 @@ Console.WriteLine("The appointment " + "\"" + deletedItem.Subject + "\"" + " is 
 
 ```
 
-次の例は、検証手順で、[FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 操作によって返される応答 XML を表しています。 
+次の例は、検証手順で、[FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 操作によって返される応答 XML を表しています。 
   
 > [!NOTE]
 > **ItemId** 属性と **ChangeKey** 属性は読みやすいように短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="800" MinorBuildNumber="5" Version="V2_6" 
- xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
- xmlns="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+ xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:FindItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:FindItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:FindItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -187,17 +187,17 @@ xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
 
 予定表フォルダーから予定アイテムを削除することに加え、会議を削除する場合は、出席者に会議のキャンセルを送信することもできます。会議をキャンセルするのに、次の 3 つのメソッドを使用できます。
   
-- [Appointment.Delete](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx)
+- [Appointment.Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx)
     
-- [Appointment.CancelMeeting](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment.cancelmeeting%28v=exchg.80%29.aspx)
+- [Appointment.CancelMeeting](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.cancelmeeting%28v=exchg.80%29.aspx)
     
-- [CancelMeetingMessage](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.cancelmeetingmessage%28v=exchg.80%29.aspx)
+- [CancelMeetingMessage](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.cancelmeetingmessage%28v=exchg.80%29.aspx)
     
-選択するメソッドは、キャンセルのメッセージで指定する必要のある詳細レベルによって異なります。 [Appointment.CancelMeeting](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment.cancelmeeting%28v=exchg.80%29.aspx) を使用すると、更新されたメッセージをパラメーターとして渡すことによって、キャンセルのメッセージを簡単に更新できます。 [CancelMeetingMessage](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.cancelmeetingmessage%28v=exchg.80%29.aspx) では、メッセージのプロパティを変更してからキャンセル通知を送信できるので、開封確認の要求などの操作を行うことができます。 
+選択するメソッドは、キャンセルのメッセージで指定する必要のある詳細レベルによって異なります。 [Appointment.CancelMeeting](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.cancelmeeting%28v=exchg.80%29.aspx) を使用すると、更新されたメッセージをパラメーターとして渡すことによって、キャンセルのメッセージを簡単に更新できます。 [CancelMeetingMessage](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.cancelmeetingmessage%28v=exchg.80%29.aspx) では、メッセージのプロパティを変更してからキャンセル通知を送信できるので、開封確認の要求などの操作を行うことができます。 
   
-このセクションのコード例では、会議を削除して、会議のキャンセル通知を送信する異なる方法を示します。 これらの例では、ユーザーが Exchange サーバーから認証されていて、**service** という名前の [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトを取得済みであることを前提としています。 ローカル変数 `meetingId` は、対象のユーザーが会議開催者である既存の会議に関連付けられた識別子です。 
+このセクションのコード例では、会議を削除して、会議のキャンセル通知を送信する異なる方法を示します。 これらの例では、ユーザーが Exchange サーバーから認証されていて、**service** という名前の [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトを取得済みであることを前提としています。 ローカル変数 `meetingId` は、対象のユーザーが会議開催者である既存の会議に関連付けられた識別子です。 
   
-次のコード例は、[Appointment.Delete](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) メソッドを使用して会議を削除する方法を示しています。 
+次のコード例は、[Appointment.Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) メソッドを使用して会議を削除する方法を示しています。 
   
 ```cs
 // Instantiate an appointment object for the meeting by binding to it using the ItemId.
@@ -219,7 +219,7 @@ Console.WriteLine("The meeting " + "\"" + deletedItem.Subject + "\"" + " is now 
 
 ```
 
-次のコード例は、[CancelMeeting](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment.cancelmeeting%28v=exchg.80%29.aspx) メソッドを使用して会議を削除する方法を示しています。 
+次のコード例は、[CancelMeeting](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.cancelmeeting%28v=exchg.80%29.aspx) メソッドを使用して会議を削除する方法を示しています。 
   
 ```cs
 // Instantiate an appointment object by binding to it using the ItemId.
@@ -230,7 +230,7 @@ meeting.CancelMeeting("The outdoor meeting has been cancelled due to hailstorms.
 
 ```
 
-次のコード例は、[Appointment.CreateCancelMeetingMessage](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment.createcancelmeetingmessage%28v=exchg.80%29.aspx) メソッドを使用して会議を削除する方法を示しています。 
+次のコード例は、[Appointment.CreateCancelMeetingMessage](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.createcancelmeetingmessage%28v=exchg.80%29.aspx) メソッドを使用して会議を削除する方法を示しています。 
   
 ```cs
 // Instantiate an appointment object by binding to it using the ItemId.
@@ -247,14 +247,14 @@ cancelMessage.SendAndSaveCopy();
 ## <a name="delete-a-meeting-by-using-ews"></a>EWS を使用して会議を削除する
 <a name="bk_EWSDeleteApptAndMeeting"> </a>
 
-次の例の要求と応答の XML は、「[EWS マネージ API を使用して予定を削除する](#bk_DeleteMtgEWSMA)」の [Appointment.Delete](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) メソッドを使用した EWS マネージ API コードの呼び出しに対応します。 
+次の例の要求と応答の XML は、「[EWS マネージ API を使用して予定を削除する](#bk_DeleteMtgEWSMA)」の [Appointment.Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) メソッドを使用した EWS マネージ API コードの呼び出しに対応します。 
   
-次の例では、[CreateItem](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) 操作を使用して、出席者にキャンセルのメッセージを送信し、会議を削除する場合の要求 XML を示します。 
+次の例では、[CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) 操作を使用して、出席者にキャンセルのメッセージを送信し、会議を削除する場合の要求 XML を示します。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
     <t:TimeZoneContext>
@@ -275,22 +275,22 @@ cancelMessage.SendAndSaveCopy();
 
 ```
 
-次の例では、会議の削除に使用される [CreateItem](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) 操作要求への応答として返される XML の例を示します。 
+次の例では、会議の削除に使用される [CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) 操作要求への応答として返される XML の例を示します。 
   
 > [!NOTE]
 > **ItemId** 属性と **ChangeKey** 属性は読みやすいように短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="800" MinorBuildNumber="5" Version="V2_6" 
- xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
- xmlns="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+ xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -307,12 +307,12 @@ cancelMessage.SendAndSaveCopy();
 
 ```
 
-次の例は、[FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 操作の要求 XML を表しています。この操作は、アイテムの件名と削除された予定のオブジェクトの件名を比較するために、削除済みアイテム フォルダー内の最初のアイテムを取得します。  
+次の例は、[FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 操作の要求 XML を表しています。この操作は、アイテムの件名と削除された予定のオブジェクトの件名を比較するために、削除済みアイテム フォルダー内の最初のアイテムを取得します。  
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
     <t:TimeZoneContext>
@@ -339,23 +339,23 @@ cancelMessage.SendAndSaveCopy();
 
 ```
 
-次の例は、検証手順で、[FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 操作によって返される XML を表しています。 
+次の例は、検証手順で、[FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) 操作によって返される XML を表しています。 
   
 > [!NOTE]
 > **Id** 属性と **ChangeKey** 属性は読みやすいように短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="800" MinorBuildNumber="5" Version="V2_6" 
- xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
- xmlns="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+ xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:FindItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:FindItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:FindItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>

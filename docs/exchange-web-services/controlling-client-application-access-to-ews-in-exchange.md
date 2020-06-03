@@ -3,15 +3,15 @@ title: Exchange において、EWS へのクライアント アプリケーシ�
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 60ac3f7b-ba8a-4c93-99f7-c27002caff93
 description: EWS へのクライアント アプリケーションのアクセスを管理するためのオプションについての詳細です。
-ms.openlocfilehash: e3a0e07b733b4ebc070ab6b3fc73c8aec4b62785
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
-ms.translationtype: HT
+localization_priority: Priority
+ms.openlocfilehash: b887b8167e3d38946b1d6caffe12655ded89569f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353064"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528462"
 ---
 # <a name="controlling-client-application-access-to-ews-in-exchange"></a>Exchange において、EWS へのクライアント アプリケーションのアクセスを制御する
 
@@ -70,17 +70,16 @@ EWS へのクライアント アプリケーションのアクセスを管理す
 
 管理者は、EWS アクセス制御を構成する際、以下の Exchange 管理シェル コマンドレットを使用します。 
   
-- [Get-CASMailbox](http://technet.microsoft.com/ja-JP/library/bb124754.aspx)   
-- [Set-CASMailbox](http://technet.microsoft.com/ja-JP/library/bb125264.aspx)   
-- [Get-OrganizationConfig](http://technet.microsoft.com/ja-JP/library/aa997571.aspx)   
-- [Set-OrganizationConfig](http://technet.microsoft.com/ja-JP/library/aa997443.aspx)
+- [Get-CASMailbox](https://technet.microsoft.com/library/bb124754.aspx)   
+- [Set-CASMailbox](https://technet.microsoft.com/library/bb125264.aspx)   
+- [Get-OrganizationConfig](https://technet.microsoft.com/library/aa997571.aspx)   
+- [Set-OrganizationConfig](https://technet.microsoft.com/library/aa997443.aspx)
     
 ## <a name="see-also"></a>関連項目
 
 - [Exchange で Web サービスの使用を開始する](start-using-web-services-in-exchange.md)  
 - [Exchange で EWS へのアクセスを制御する](how-to-control-access-to-ews-in-exchange.md)
-- 
-  [Exchange Server PowerShell (Exchange 管理シェル)](https://docs.microsoft.com/en-us/powershell/exchange/exchange-server/exchange-management-shell?view=exchange-ps)
-- [Windows PowerShell](http://msdn.microsoft.com/ja-JP/library/dd835506%28v=vs.85%29.aspx)
+- [Exchange Server PowerShell (Exchange 管理シェル)](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-management-shell?view=exchange-ps)
+- [Windows PowerShell](https://msdn.microsoft.com/library/dd835506%28v=vs.85%29.aspx)
     
 

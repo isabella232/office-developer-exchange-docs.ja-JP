@@ -3,23 +3,23 @@ title: Exchange Online と Exchange の開発
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: f33d1093-75ba-4ff2-8d15-b0bf73a401bf
-description: Office 365 の一部としての Exchange Online、Exchange Online、Exchange 2013、EWS マネージ API、Exchange 2010、Exchange 2007 を含む Exchange サーバーに関する、開発者向けの詳細なドキュメントです。
-ms.openlocfilehash: 2af9e52c3f7cf03d7571d1640ef7bfa45b5e97be
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
-ms.translationtype: HT
+description: Office 365 の一部としての Exchange Online とオンプレミスの exchange Server のバージョンを含む、Exchange Server の開発者向けの詳細なドキュメントを参照してください。
+localization_priority: Priority
+ms.openlocfilehash: 12a29ca07801561e7a746603d795468d9cb7491f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353246"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528497"
 ---
 # <a name="exchange-online-and-exchange-development"></a>Exchange Online と Exchange の開発
 
-Office 365 の一部としての Exchange Online、Exchange Online、Exchange 2013、EWS マネージ API、Exchange 2010、Exchange 2007 を含む Exchange サーバーに関する、開発者向けの詳細なドキュメントです。
+Office 365 の一部としての Exchange Online とオンプレミスの exchange Server のバージョンを含む、Exchange Server の開発者向けの詳細なドキュメントを参照してください。
 
-各種ドキュメント (使い方、概要、新機能、API のリファレンス) を使い、サービス、Web サイト、デスクトップ コンピューター、モバイル デバイスなどからメールボックス データへのアクセスおよび管理を行うツール、および Exchange Online や Exchange 2013 サーバーに保存されているメール、予定表、連絡先、その他のアイテム用のカスタム ソリューションを作成するためのツールを開発します。
+[方法]、[スタート]、[新機能]、および [API リファレンスドキュメント] を使用して、サービス、web サイト、デスクトップコンピューター、およびモバイルデバイスのメールボックスデータにアクセスして管理するためのツールを開発し、Exchange Online または Exchange 2010、2013、2016、および2019サーバーに格納されている電子メール、予定表、連絡先、
 
-アプリケーションの開発には、Exchange Web サービス (EWS)、自動検出、Outlook アドイン、およびその他の API を使うことができます。 このページでは、適切な Exchange テクノロジを選択するための説明をします。
+アプリケーションを開発するために、Graph API、REST API、Exchange Web サービス (EWS)、自動検出、Outlook アドイン、またはその他の Api を使用できます。 このページでは、適切な Exchange テクノロジを選択するための説明をします。
 
 ## <a name="exchange-developer-content"></a>Exchange の開発者向けコンテンツ
 
@@ -35,12 +35,12 @@ Office 365 の一部としての Exchange Online、Exchange Online、Exchange 20
 |.NET Framework または Java に基づかないメールボックス クライアント。 |[Exchange の EWS マネージ API、EWS、Web サービスについて学ぶ](exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange.md) |
 |EWS にアクセスするために .NET Framework を使用するメールボックス クライアント。 |[EWS マネージ API クライアント アプリケーションの概要](exchange-web-services/get-started-with-ews-managed-api-client-applications.md) |
 |EWS にアクセスするために Java を使用するメールボックス クライアント。 |[GitHub の EWS Java API](https://github.com/OfficeDev/ews-java-api) |
-|Outlook ユーザー インターフェイスをカスタマイズする、または Outlook ビジネス ロジックに依存するアプリケーション。  |[Outlook VBA リファレンス](https://msdn.microsoft.com/ja-JP/VBA/VBA-Outlook) |
+|Outlook ユーザー インターフェイスをカスタマイズする、または Outlook ビジネス ロジックに依存するアプリケーション。  |[Outlook VBA リファレンス](https://msdn.microsoft.com/VBA/VBA-Outlook) |
 |Exchange Online または Exchange 2013 を対象とし、以前のバージョンの Exchange からの移行に必要なアプリケーション。  |[Exchange テクノロジへの移行](migrating-to-exchange-online-and-exchange-2013-technologies.md) |
 |マネージ コードの Windows PowerShell を使うカスタム管理ツール。   |[Exchange 管理シェル](management/exchange-management-shell.md) |
 |Exchange データのバックアップまたは復元を行うソリューション。  |[Exchange のバックアップと復元](backup-restore/backup-and-restore-for-exchange-2013.md) |
 |トランスポート パイプライン内のメッセージのアクセスをサポートする拡張機能。   |[Exchange のトランスポート エージェント](transport-agents/transport-agents-in-exchange-2013.md)  |
-|モバイル デバイス用のメールボックス クライアント。   |[Exchange ActiveSync](https://technet.microsoft.com/ja-JP/library/aa998357.aspx) |
+|モバイル デバイス用のメールボックス クライアント。   |[Exchange ActiveSync](https://technet.microsoft.com/library/aa998357.aspx) |
 
 ## <a name="exchange-interactions-with-custom-applications"></a>Exchange とカスタム アプリケーションの相互作用
 
@@ -57,8 +57,8 @@ Exchange は、アプリケーションのアーキテクチャと機能によ�
 ## <a name="see-also"></a>関連項目
 
 - 
-  [Exchange 用 EWS リファレンス](https://msdn.microsoft.com/en-us/library/dn186243(v=exchg.150).aspx)
-- [Office ブログの Exchange に関する情報を読む](https://www.microsoft.com/ja-JP/microsoft-365/blog/)
+  [Exchange 用 EWS リファレンス](https://msdn.microsoft.com/library/dn186243(v=exchg.150).aspx)
+- [Office ブログの Exchange に関する情報を読む](https://www.microsoft.com/microsoft-365/blog/)
 - [Exchange 2013 の 101 のサンプル コードを取得する](https://code.msdn.microsoft.com/office/Exchange-2013-101-Code-3c38582c)
 - [EWS マネージ API の入手 (GitHub)](https://github.com/OfficeDev/ews-managed-api/blob/master/README.md)
-- [Exchange Server サポート情報](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wf=0&wfname=productselection&gprid=730&x=13&y=7&st=1&wfxredirect=1&sd=gn&ccsid=635890984021344661&forceorigin=esmc)
+- [Exchange Server サポート情報](https://support.microsoft.com/getsupport?oaspworkflow=start_1.0.0.0&wf=0&wfname=productselection&gprid=730&x=13&y=7&st=1&wfxredirect=1&sd=gn&ccsid=635890984021344661&forceorigin=esmc)

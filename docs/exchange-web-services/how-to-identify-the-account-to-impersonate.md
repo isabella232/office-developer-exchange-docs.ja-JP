@@ -3,15 +3,15 @@ title: 偽装するアカウントを識別する
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: c7749f12-b97f-48d9-88e5-a545e108efb0
 description: サービス アプリケーションが EWS を使用して偽装するユーザーを識別する方法について説明します。
-ms.openlocfilehash: 01c6ee797359c38c8539257003a2f110fdf253cf
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
-ms.translationtype: HT
+localization_priority: Priority
+ms.openlocfilehash: 7159707abe96632aba2ed70dc0057417e087349f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354296"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527993"
 ---
 # <a name="identify-the-account-to-impersonate"></a>偽装するアカウントを識別する
 
@@ -21,7 +21,7 @@ ms.locfileid: "21354296"
   
 - プライマリ SMTP アドレス。
     
-- ユーザー プリンシパル名 (UPN)。
+- ユーザープリンシパル名 (UPN)。
     
 - セキュリティ識別子 (SID)。
     
@@ -29,7 +29,7 @@ ms.locfileid: "21354296"
   
 ## <a name="identifying-the-user-account-to-impersonate"></a>偽装するユーザー アカウントを識別する
 
-アプリケーションは、EWS マネージ API または EWS SOAP 要求を使用して、偽装するユーザー アカウントを識別できます。 EWS マネージ API は、[ExchangeService.ImpersonatedUserId](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.impersonateduserid.aspx) プロパティを使用して、偽装されたユーザーを識別します。 次の XML フラグメントに示すように、EWS は [ExchangeImpersonation](http://msdn.microsoft.com/library/d8cbac49-47d0-4745-a2a7-545d33f8da93%28Office.15%29.aspx) 要素を使用します。 
+アプリケーションは、EWS マネージ API または EWS SOAP 要求を使用して、偽装するユーザー アカウントを識別できます。 EWS マネージ API は、[ExchangeService.ImpersonatedUserId](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.impersonateduserid.aspx) プロパティを使用して、偽装されたユーザーを識別します。 次の XML フラグメントに示すように、EWS は [ExchangeImpersonation](https://msdn.microsoft.com/library/d8cbac49-47d0-4745-a2a7-545d33f8da93%28Office.15%29.aspx) 要素を使用します。 
   
 ```XML
 <soap:Header>
@@ -47,13 +47,13 @@ ms.locfileid: "21354296"
 
 SMTP 電子メール アドレスは、ユーザー アカウントに関連付けられているプライマリ電子メール アドレスです。
   
-EWS マネージ API アプリケーションで、SMTP 電子メール アドレスを [ConnectingIdType.SMTP](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.connectingidtype.aspx) 列挙値と共に指定します。 
+EWS マネージ API アプリケーションで、SMTP 電子メール アドレスを [ConnectingIdType.SMTP](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.connectingidtype.aspx) 列挙値と共に指定します。 
   
 ```cs
 exchangeServiceInstance.ImpersonatedUserId = new ImpersonatedUserId(ConnectingIdType.SMTP, "alisa@contoso.com");
 ```
 
-EWS SOAP 要求で、[PrimarySmtpAddress ](http://msdn.microsoft.com/library/eee79904-9412-4e61-b9b8-aff0ce25fade%28Office.15%29.aspx) 要素にはユーザー アカウントの電子メール アドレスが含まれています。 
+EWS SOAP 要求で、[PrimarySmtpAddress ](https://msdn.microsoft.com/library/eee79904-9412-4e61-b9b8-aff0ce25fade%28Office.15%29.aspx) 要素にはユーザー アカウントの電子メール アドレスが含まれています。 
   
 ```XML
 <soap:Header>
@@ -67,12 +67,12 @@ EWS SOAP 要求で、[PrimarySmtpAddress ](http://msdn.microsoft.com/library/eee
 
 ### <a name="use-the-upn-to-identify-the-user-account"></a>UPN を使用してユーザー アカウントを識別する
 
-UPN には、ユーザー アカウントの場所を示す完全修飾ドメイン名 (FQDN) が含まれています。 これは必ずしもユーザーのメールボックス ドメインではありません。 ユーザー検索を正常に行うには、Active Directory ドメイン サービス (AD DS) 内のユーザー アカウントで **UserPrincipleName** 属性を正しく設定する必要があります。 
+UPN には、ユーザー アカウントの場所を示す完全修飾ドメイン名 (FQDN) が含まれています。 これは必ずしもユーザーのメールボックス ドメインではありません。 ユーザー参照が成功するには、Active Directory ドメインサービス (AD DS) のユーザーアカウントで**UserPrincipalName**属性が正しく設定されている必要があります。 
   
-EWS マネージ API アプリケーションで、UPN を [ConnectingIdType.PrincipleName](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.connectingidtype.aspx) 列挙値と共に指定します。 
+EWS マネージ API アプリケーションで、UPN を[ConnectingIdType](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.connectingidtype.aspx)列挙値と共に指定します。 
   
 ```cs
-exchangeServiceInstance.ImpersonatedUserId = new ImpersonatedUserId(ConnectingIdType.PrincipleName, "alias@billing.contoso.com");
+exchangeServiceInstance.ImpersonatedUserId = new ImpersonatedUserId(ConnectingIdType.PrincipalName, "alias@billing.contoso.com");
 ```
 
 EWS SOAP 要求で、[PrincipalName 要素 (ConnectingSIDType complexType) (EWS)](../web-service-reference/principalname.md) 要素にはユーザー アカウントの UPN が含まれています。 
@@ -91,13 +91,13 @@ EWS SOAP 要求で、[PrincipalName 要素 (ConnectingSIDType complexType) (EWS)
 
 SID は、セキュリティ記述子定義言語 (SDDL) フォームで偽装するアカウントの識別子です。
   
-EWS マネージ API アプリケーションで、SID を [ConnectingIdType.SID](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.connectingidtype.aspx) 列挙値と共に指定します。 
+EWS マネージ API アプリケーションで、SID を [ConnectingIdType.SID](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.connectingidtype.aspx) 列挙値と共に指定します。 
   
 ```cs
 exchangeServiceInstance.ImpersonatedUserId = new ImpersonatedUserId(ConnectingIdType.SID, "S-1-5-21-1493619105-1843311271-3936346804-1118");
 ```
 
-EWS SOAP 要求で、[SID](http://msdn.microsoft.com/library/2f33b29b-163b-4106-a74d-6fb76ec38951%28Office.15%29.aspx) 要素には、ユーザー アカウントの SID が含まれています。 
+EWS SOAP 要求で、[SID](https://msdn.microsoft.com/library/2f33b29b-163b-4106-a74d-6fb76ec38951%28Office.15%29.aspx) 要素には、ユーザー アカウントの SID が含まれています。 
   
 ```XML
 <soap:Header>
@@ -116,8 +116,8 @@ EWS SOAP 要求で、[SID](http://msdn.microsoft.com/library/2f33b29b-163b-4106-
     
 - [Exchange の偽装を使用して予定を追加する](how-to-add-appointments-by-using-exchange-impersonation.md)
     
-- [ExchangeService クラス](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.aspx)
+- [ExchangeService クラス](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.aspx)
     
-- [ExchangeImpersonation](http://msdn.microsoft.com/library/d8cbac49-47d0-4745-a2a7-545d33f8da93%28Office.15%29.aspx)
+- [ExchangeImpersonation](https://msdn.microsoft.com/library/d8cbac49-47d0-4745-a2a7-545d33f8da93%28Office.15%29.aspx)
     
 

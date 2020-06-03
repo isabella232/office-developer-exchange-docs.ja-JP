@@ -3,21 +3,21 @@ title: Exchange の EWS を使用して空き時間情報を取得する
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 0e6709c0-dc3d-4280-8c53-cbec9bbdcc9e
 description: EWS マネージ API または Exchange の EWS を使用して、空き時間情報と提案の会議時間を取得する方法について説明します。
-ms.openlocfilehash: 0633c204207317c03740d35b1da4b9626152d2e3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: HT
+localization_priority: Priority
+ms.openlocfilehash: 19f0181161b2e2dbde70f3ec7427d9d66c5bdc4d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758974"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528030"
 ---
 # <a name="get-freebusy-information-by-using-ews-in-exchange"></a>Exchange の EWS を使用して空き時間情報を取得する
 
 EWS マネージ API または Exchange の EWS を使用して、空き時間情報と提案の会議時間を取得する方法について説明します。
   
-EWS マネージ API または EWS でプログラムを使用して[会議を作成](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)し、会議出席依頼を送信できれば便利ですが、多くの場合、出席者全員に都合のよい時間に設定することは困難です。 全員が参加できる時間を手動で確認する必要がある場合、このタスクを自動化する目的は達成されません。 幸いなことに、EWS マネージ API メソッドの [ExchangeService.GetUserAvailability](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.getuseravailability%28v=exchg.80%29.aspx) および EWS 操作の [GetUserAvailability](http://msdn.microsoft.com/library/7906711b-80a1-42ae-8b33-26eeac036a5a%28Office.15%29.aspx) でこの問題を解決できます。 このメソッドまたは操作を使用して Exchange サーバーに対してクエリを実行すると、会議の設定に最適な時間を検索したり、出席者の空き時間情報の取得だけを行ったりできます。 参加者の一覧について空き時間情報を取得したり、Exchange サーバーで会議に適した時間を検索したり、あるいはその両方を組み合わせて実行できます。 
+EWS マネージ API または EWS でプログラムを使用して[会議を作成](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)し、会議出席依頼を送信できれば便利ですが、多くの場合、出席者全員に都合のよい時間に設定することは困難です。 全員が参加できる時間を手動で確認する必要がある場合、このタスクを自動化する目的は達成されません。 幸いなことに、EWS マネージ API メソッドの [ExchangeService.GetUserAvailability](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.getuseravailability%28v=exchg.80%29.aspx) および EWS 操作の [GetUserAvailability](https://msdn.microsoft.com/library/7906711b-80a1-42ae-8b33-26eeac036a5a%28Office.15%29.aspx) でこの問題を解決できます。 このメソッドまたは操作を使用して Exchange サーバーに対してクエリを実行すると、会議の設定に最適な時間を検索したり、出席者の空き時間情報の取得だけを行ったりできます。 参加者の一覧について空き時間情報を取得したり、Exchange サーバーで会議に適した時間を検索したり、あるいはその両方を組み合わせて実行できます。 
   
 図 1 はこの問題とその解決策を示しています。
   
@@ -28,9 +28,9 @@ EWS マネージ API または EWS でプログラムを使用して[会議を�
 ## <a name="get-suggested-meeting-times-and-freebusy-information-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して、提案の会議時間と空き時間情報を取得する
 <a name="bk_getavailewsma"> </a>
 
-次の例に示すとおり、**FreeBusyAndSuggestions** の [AvailabilityData](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.availabilitydata%28v=exchg.80%29.aspx) 列挙値を [ExchangeService.GetUserAvailability](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.getuseravailability%28v=exchg.80%29.aspx) メソッド呼び出しで使用すると、提案の会議時間、および出席者に対してスケジュール設定されているすべてのイベント時間の両方のリストを取得できます。 
+次の例に示すとおり、**FreeBusyAndSuggestions** の [AvailabilityData](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.availabilitydata%28v=exchg.80%29.aspx) 列挙値を [ExchangeService.GetUserAvailability](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.getuseravailability%28v=exchg.80%29.aspx) メソッド呼び出しで使用すると、提案の会議時間、および出席者に対してスケジュール設定されているすべてのイベント時間の両方のリストを取得できます。 
   
-この例では、ユーザーが Exchange サーバーから認証されていて、**service** という名前の [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトを取得済みであると想定しています。 
+この例では、ユーザーが Exchange サーバーから認証されていて、**service** という名前の [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトを取得済みであると想定しています。 
   
 ```cs
 private static void GetSuggestedMeetingTimesAndFreeBusyInfo(ExchangeService service)
@@ -101,14 +101,14 @@ private static void GetSuggestedMeetingTimesAndFreeBusyInfo(ExchangeService serv
 ## <a name="get-suggested-meeting-times-and-freebusy-information-by-using-ews"></a>EWS を使用して、提案の会議時間と空き時間情報を取得する
 <a name="bk_getavailews"> </a>
 
-次の例に示すとおり、[GetUserAvailability](http://msdn.microsoft.com/library/7906711b-80a1-42ae-8b33-26eeac036a5a%28Office.15%29.aspx) 操作を使用すると、提案の会議時間、および出席者に対してスケジュール設定されているすべてのイベント時間の両方のリストを取得できます。 これは、EWS マネージ API を使用して[提案の会議時間を取得する](#bk_getavailewsma)ときに、EWS マネージ API が送信する XML 要求でもあります。
+次の図に示すとおり、[GetUserAvailability](https://msdn.microsoft.com/library/7906711b-80a1-42ae-8b33-26eeac036a5a%28Office.15%29.aspx) 操作を使用すると、提示される会議時間、および出席者に対してスケジュール設定されているすべてのイベント時間のリストを取得できます。これは、EWS マネージ API を使用して[提示される会議時間を取得する](#bk_getavailewsma)ときに、EWS マネージ API が送信する XML 要求でもあります。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010" />
     <t:TimeZoneContext>
@@ -207,28 +207,28 @@ private static void GetSuggestedMeetingTimesAndFreeBusyInfo(ExchangeService serv
 
 ```
 
-次の例に示すように、サーバーは [GetUserAvailability 要求](http://msdn.microsoft.com/library/7906711b-80a1-42ae-8b33-26eeac036a5a%28Office.15%29.aspx)に [GetUserAvailability 応答](http://msdn.microsoft.com/library/6999510a-d60e-43da-8964-57b5fb3e9d11%28Office.15%29.aspx)メッセージで応答します。 
+次の例に示すように、サーバーは [GetUserAvailability 要求](https://msdn.microsoft.com/library/7906711b-80a1-42ae-8b33-26eeac036a5a%28Office.15%29.aspx)に [GetUserAvailability 応答](https://msdn.microsoft.com/library/6999510a-d60e-43da-8964-57b5fb3e9d11%28Office.15%29.aspx)メッセージで応答します。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="873" MinorBuildNumber="9" Version="V2_9" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <GetUserAvailabilityResponse xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetUserAvailabilityResponse xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <FreeBusyResponseArray>
         <FreeBusyResponse>
           <ResponseMessage ResponseClass="Success">
             <ResponseCode>NoError</ResponseCode>
           </ResponseMessage>
           <FreeBusyView>
-            <FreeBusyViewType xmlns="http://schemas.microsoft.com/exchange/services/2006/types">FreeBusy</FreeBusyViewType>
-            <CalendarEventArray xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <FreeBusyViewType xmlns="https://schemas.microsoft.com/exchange/services/2006/types">FreeBusy</FreeBusyViewType>
+            <CalendarEventArray xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
               <CalendarEvent>
                 <StartTime>2014-02-13T08:00:00</StartTime>
                 <EndTime>2014-02-13T10:00:00</EndTime>
@@ -240,7 +240,7 @@ private static void GetSuggestedMeetingTimesAndFreeBusyInfo(ExchangeService serv
                 <BusyType>Busy</BusyType>
               </CalendarEvent>
             </CalendarEventArray>
-            <WorkingHours xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <WorkingHours xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
               <TimeZone>
                 <Bias>480</Bias>
                 <StandardTime>
@@ -273,8 +273,8 @@ private static void GetSuggestedMeetingTimesAndFreeBusyInfo(ExchangeService serv
             <ResponseCode>NoError</ResponseCode>
           </ResponseMessage>
           <FreeBusyView>
-            <FreeBusyViewType xmlns="http://schemas.microsoft.com/exchange/services/2006/types">FreeBusy</FreeBusyViewType>
-            <CalendarEventArray xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <FreeBusyViewType xmlns="https://schemas.microsoft.com/exchange/services/2006/types">FreeBusy</FreeBusyViewType>
+            <CalendarEventArray xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
               <CalendarEvent>
                 <StartTime>2014-02-12T00:00:00</StartTime>
                 <EndTime>2014-02-13T00:00:00</EndTime>
@@ -296,7 +296,7 @@ private static void GetSuggestedMeetingTimesAndFreeBusyInfo(ExchangeService serv
                 <BusyType>Tentative</BusyType>
               </CalendarEvent>
             </CalendarEventArray>
-            <WorkingHours xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <WorkingHours xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
               <TimeZone>
                 <Bias>480</Bias>
                 <StandardTime>
@@ -330,7 +330,7 @@ private static void GetSuggestedMeetingTimesAndFreeBusyInfo(ExchangeService serv
           <ResponseCode>NoError</ResponseCode>
         </ResponseMessage>
         <SuggestionDayResultArray>
-          <SuggestionDayResult xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+          <SuggestionDayResult xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
             <Date>2014-02-13T00:00:00</Date>
             <DayQuality>Excellent</DayQuality>
             <SuggestionArray>
@@ -375,8 +375,8 @@ private static void GetSuggestedMeetingTimesAndFreeBusyInfo(ExchangeService serv
 
 - [Exchange の予定表と EWS](calendars-and-ews-in-exchange.md)
     
-- [Exchange 2013 の EWS を使用して予定と会議を作成する](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)
+- [Exchange 2013 で EWS を使用して予定と会議を作成する](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)
     
-- [Exchange の EWS を使用して予定と会議を更新する](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)
+- [Exchange で EWS を使用して予定と会議を更新する](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)
     
 

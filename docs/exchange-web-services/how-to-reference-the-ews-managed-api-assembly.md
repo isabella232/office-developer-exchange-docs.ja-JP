@@ -3,27 +3,27 @@ title: EWS マネージ API アセンブリの参照
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 130990db-6297-42dc-9f5d-f68a2400872a
 description: EWS マネージ API アセンブリを参照する方法についての情報を探します。
-ms.openlocfilehash: a08ce43d139440186f611049fa1e457ea44f0362
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
-ms.translationtype: HT
+localization_priority: Priority
+ms.openlocfilehash: d49091781da279d87a1eab35608f19ece43a0333
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353687"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527762"
 ---
 # <a name="reference-the-ews-managed-api-assembly"></a>EWS マネージ API アセンブリの参照
 
 EWS マネージ API アセンブリを参照する方法についての情報を探します。
   
-EWS マネージ API は、Exchange Web サービス (EWS) を使用するアプリケーションを開発して拡張するためのシンプルかつフル機能を備えたインターフェイスを提供します。 EWS マネージ API アプリケーションを開発するために Visual Studio を使用しているにせよ、別のコード エディターを使用しているにせよ、EWS マネージ API アセンブリを参照する必要があります。 EWS マネージ API をまだインストールしていない場合は、必ず [API をダウンロード](http://aka.ms/ews-managed-api-readme)してください。
+EWS マネージ API は、Exchange Web サービス (EWS) を使用するアプリケーションを開発して拡張するためのシンプルかつフル機能を備えたインターフェイスを提供します。 EWS マネージ API アプリケーションを開発するために Visual Studio を使用しているにせよ、別のコード エディターを使用しているにせよ、EWS マネージ API アセンブリを参照する必要があります。 EWS マネージ API をまだインストールしていない場合は、必ず [API をダウンロード](https://aka.ms/ews-managed-api-readme)してください。
   
 > [!NOTE]
 > EWS マネージ API は、[GitHub](https://github.com/officedev/ews-managed-api) でオープンソース プロジェクトとして利用可能になりました。 オープン ソース ライブラリを使用して、以下のことができます。 
 > - バグ修正と API の機能強化に貢献します。 
 > - 公式のリリースで利用可能になる前に、修正プログラムや拡張機能を取得できます。 
-> - API の最も包括的かつ最新の実装にアクセスし、それを参照用として使用するか、それを新しいプラットフォーム上の新しいライブラリを作成するために使用します。
+> - API の最も包括的かつ最新の実装にアクセスして、参照として使用するか、新しいプラットフォームで新しいライブラリを作成します。
 > 
 >  GitHub を通した皆様の[貢献](https://github.com/OfficeDev/ews-managed-api/blob/master/CONTRIBUTING.md)を歓迎いたします。 
   

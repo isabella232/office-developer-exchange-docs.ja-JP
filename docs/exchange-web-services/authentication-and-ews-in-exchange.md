@@ -3,15 +3,15 @@ title: Exchange での認証と EWS
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 9a83df96-aca0-42b3-b8f5-2b414f0363f1
 description: Exchange を対象とする EWS アプリケーションの適切な認証基準の選択に役立つ情報を紹介します。
-ms.openlocfilehash: a4aae4678f1d6ffa5c08350f0bcccce5a4885f20
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
-ms.translationtype: HT
+localization_priority: Priority
+ms.openlocfilehash: 69018b6f88fc80e1e18edd96ed0e16d52064572d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353666"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528483"
 ---
 # <a name="authentication-and-ews-in-exchange"></a>Exchange での認証と EWS
 
@@ -37,19 +37,19 @@ Exchange には認証オプションが用意されており、次の中から�
   
 **表 1. OAuth を使用するメリットとデメリット**
 
-|**メリット**|**デメリット**|
+|**メリット**|**欠点**|
 |:-----|:-----|
 | OAuth は業界標準の認証プロトコルです。<br/><br/>認証はサードパーティのプロバイダーによって管理されます。アプリケーションで Exchange の資格情報を収集して保存する必要はありません。<br/><br/>アプリケーションは認証プロバイダーから不透明なトークンを受信するだけなので、心配の種は少なくて済みます。そのため、アプリケーションでセキュリティ違反があっても、トークンが公開されるだけでユーザーの Exchange 資格情報が公開されることはありません。  <br/> | OAuth はサード パーティの認証プロバイダーに依存しています。このためユーザーの組織や顧客に追加のコストが発生します。<br/><br/>OAuth 標準の実装は基本認証の実装よりも困難です。<br/><br/>OAuth を実装するには、認証プロバイダーと Exchange サーバーの両方にアプリケーションを統合する必要があります。  <br/> |
    
-デメリットを最小限にするには、[Microsoft Azure AD Authentication Library](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) を使用して、クラウドまたはオンプレミスの Active Directory ドメイン サービス (AD DS) に対してユーザーを認証し、Exchange サーバーへの呼び出しをセキュリティ保護するためのアクセス トークンを取得します。Exchange Online には、ADAL (ただし、任意のサードパーティのライブラリも使用可) でサポートされている Azure Active Directory サービスによって発行されたトークンが必要です。  
+デメリットを最小限にするには、[Microsoft Azure AD Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) を使用して、クラウドまたはオンプレミスの Active Directory ドメイン サービス (AD DS) に対してユーザーを認証し、Exchange サーバーへの呼び出しをセキュリティ保護するためのアクセス トークンを取得します。Exchange Online には、ADAL (ただし、任意のサードパーティのライブラリも使用可) でサポートされている Azure Active Directory サービスによって発行されたトークンが必要です。  
   
 EWS アプリケーションで OAuth 認証を使用する方法の詳細については、次のリソースを参照してください。
   
-- [Office 365 試用版](https://docs.microsoft.com/ja-JP/office/developer-program/office-365-developer-program)。クライアント アプリケーションのテストに使用する Exchange サーバーをセットアップします。
+- [Office 365 試用版](https://docs.microsoft.com/office/developer-program/office-365-developer-program)。クライアント アプリケーションのテストに使用する Exchange サーバーをセットアップします。
     
-- [.NET 用 Azure AD Authentication ライブラリ](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-authentication-libraries)
+- [.NET 用 Azure AD Authentication ライブラリ](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries)
     
-- 「[Azure Active Directory を構成する](http://msdn.microsoft.com/library/055e1155-2d4d-4c85-b44e-d406872ba595%28Office.15%29.aspx)」。アプリケーションでの認証に OAuth トークンを使用できるようにします。
+- 「[Azure Active Directory を構成する](https://msdn.microsoft.com/library/055e1155-2d4d-4c85-b44e-d406872ba595%28Office.15%29.aspx)」。アプリケーションでの認証に OAuth トークンを使用できるようにします。
     
 - 学習できるコード例については、「[OAuth を使用して EWS アプリケーションを認証する](how-to-authenticate-an-ews-application-by-using-oauth.md)」のサンプル コードを確認してください。 
     
@@ -59,9 +59,10 @@ NTLM 認証が使用できるのは、オンプレミスの Exchange サーバ�
   
 **表 2. NTLM 認証を使用するメリットとデメリット**
 
-|**メリット**|**デメリット**|
+|**メリット**|**欠点**|
 |:-----|:-----|
-| “追加設定なし” で Exchange サーバーで機能する。 [Exchange 管理シェル コマンドレット](how-to-control-access-to-ews-in-exchange.md)を使用して、Exchange サービスへのアクセスを構成できる。<br/><br/>.NET Framework の [CredentialCache](http://msdn2.microsoft.com/ja-JP/library/615e0wsd) オブジェクトを使用して、ユーザーの資格情報を自動的に取得する。<br/><br/>オンプレミスの Exchange サーバーへの認証にログオン ユーザーの資格情報を使用する[コード サンプルが利用可能](http://code.msdn.microsoft.com/office/Exchange-2013-101-Code-3c38582c)。  <br/> | ユーザーは、NTLM 認証を使用するためにドメインにログオンする必要がある。<br/><br/>ユーザーのドメイン アカウントに関連付けられていないメール アカウントへのアクセスが困難。<br/><br/>サービス アプリケーションに、NTLM 認証を利用するためのドメイン アカウントが必要。  <br/> |
+| “追加設定なし” で Exchange サーバーで機能する。 [Exchange 管理シェル コマンドレット](how-to-control-access-to-ews-in-exchange.md)を使用して、Exchange サービスへのアクセスを構成できる。<br/><br/>.NET Framework の [CredentialCache](https://msdn2.microsoft.com/library/615e0wsd) オブジェクトを使用して、ユーザーの資格情報を自動的に取得する。<br/><br/>オンプレミスの Exchange サーバーへの認証にログオン ユーザーの資格情報を使用する[コード サンプルが利用可能](https://code.msdn.microsoft.com/office/Exchange-2013-101-Code-3c38582c)。  <br/> | ユーザーは、NTLM 認証を使用するためにドメインにログオンする必要がある。<br/><br/>ユーザーのドメイン アカウントに関連付けられていないメール アカウントへのアクセスが困難。<br/><br/>サービス アプリケーションに、NTLM 認証を利用するためのドメイン アカウントが必要。  <br/> |
+
    
 ## <a name="basic-authentication"></a>基本認証
 
@@ -69,18 +70,17 @@ NTLM 認証が使用できるのは、オンプレミスの Exchange サーバ�
   
 **表 3. 基本認証を使用するメリットとデメリット**
 
-|**メリット**|**デメリット**|
+|**メリット**|**欠点**|
 |:-----|:-----|
-| “追加設定なし” で Exchange サーバーで機能する。 [Exchange 管理シェル コマンドレット](how-to-control-access-to-ews-in-exchange.md)を使用して、Exchange サービスへのアクセスを構成できる。<br/><br/>Windows アプリケーションで、ログオン ユーザーの既定の資格情報を使用できる。<br/><br/>基本認証を使用して EWS を呼び出す方法を示す多数の[コード サンプルが利用可能](http://code.msdn.microsoft.com/office/Exchange-2013-101-Code-3c38582c)。  <br/> | アプリケーションでユーザーの資格情報を収集して保存することが必要。<br/><br/>すべてのユーザーが基本認証を使用するには、NTLM 認証を無効にする必要がある。<br/><br/>アプリケーションでセキュリティ違反が発生した場合、攻撃者にユーザーのメール アドレスとパスワードが漏洩する可能性がある。  <br/> |
+| “追加設定なし” で Exchange サーバーで機能する。 [Exchange 管理シェル コマンドレット](how-to-control-access-to-ews-in-exchange.md)を使用して、Exchange サービスへのアクセスを構成できる。<br/><br/>Windows アプリケーションで、ログオン ユーザーの既定の資格情報を使用できる。<br/><br/>基本認証を使用して EWS を呼び出す方法を示す多数の[コード サンプルが利用可能](https://code.msdn.microsoft.com/office/Exchange-2013-101-Code-3c38582c)。  <br/> | アプリケーションでユーザーの資格情報を収集して保存することが必要。<br/><br/>すべてのユーザーが基本認証を使用するように強制する場合は、NTLM 認証を無効にする必要があります。<br/><br/>アプリケーションでセキュリティ違反が発生した場合、攻撃者にユーザーのメール アドレスとパスワードが漏洩する可能性がある。  <br/> |
    
 基本認証が、ユーザーの組織と顧客のセキュリティ要件を満たしているかどうかを判断する必要があります。基本認証は、簡単なテストやデモ アプリケーションなどで、詳細なセットアップ タスクを行わないようにする場合に、最適な選択肢になることがあります。
   
 ## <a name="see-also"></a>関連項目
 
 - [Exchange で Web サービスの使用を開始する](start-using-web-services-in-exchange.md)   
-- [Microsoft Azure AD を使用して Web アプリケーションへのサインオンを追加する](http://msdn.microsoft.com/library/055e1155-2d4d-4c85-b44e-d406872ba595%28Office.15%29.aspx)    
+- [Microsoft Azure AD を使用して Web アプリケーションへのサインオンを追加する](https://msdn.microsoft.com/library/055e1155-2d4d-4c85-b44e-d406872ba595%28Office.15%29.aspx)    
 - [Exchange で EWS へのアクセスを制御する](how-to-control-access-to-ews-in-exchange.md)    
-- [Exchange で EWS へのクライアント アプリケーションのアクセスを制御する](controlling-client-application-access-to-ews-in-exchange.md)    
-- [サポートされているトークンとクレームの種類](http://msdn.microsoft.com/library/9d35e4bc-7b72-49d1-b723-5464eee6be2c%28Office.15%29.aspx)
-    
-
+- [Exchange で EWS へのクライアント アプリケーションのアクセスを制御する](controlling-client-application-access-to-ews-in-exchange.md)   
+- [サポートされているトークンとクレームの種類](https://msdn.microsoft.com/library/9d35e4bc-7b72-49d1-b723-5464eee6be2c%28Office.15%29.aspx)
+ 
