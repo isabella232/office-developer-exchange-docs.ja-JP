@@ -1,34 +1,34 @@
 ---
-title: 追加し、Exchange の EWS を使用して、[受信拒否リストから電子メール アドレスを削除
+title: Exchange で EWS を使用して、受信拒否リストに対してメール アドレスを追加、削除する
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: b88288ee-6af7-45b5-a55c-5929cd0c16f1
 description: 受信拒否リストに対してメール アドレスを追加および削除するために EWS マネージ API または EWS を使用する方法を説明します。
-ms.openlocfilehash: c03ed585ebd62802000179d8c837786ba5f9aab4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 270613a739acba165c7bac1bd2c1ef275b5d3aca
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758899"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528280"
 ---
-# <a name="add-and-remove-email-addresses-from-the-blocked-senders-list-by-using-ews-in-exchange"></a><span data-ttu-id="afad1-103">追加し、Exchange の EWS を使用して、[受信拒否リストから電子メール アドレスを削除</span><span class="sxs-lookup"><span data-stu-id="afad1-103">Add and remove email addresses from the Blocked Senders List by using EWS in Exchange</span></span>
+# <a name="add-and-remove-email-addresses-from-the-blocked-senders-list-by-using-ews-in-exchange"></a><span data-ttu-id="b8d7b-103">Exchange で EWS を使用して、受信拒否リストに対してメール アドレスを追加、削除する</span><span class="sxs-lookup"><span data-stu-id="b8d7b-103">Add and remove email addresses from the Blocked Senders List by using EWS in Exchange</span></span>
 
-<span data-ttu-id="afad1-104">受信拒否リストに対してメール アドレスを追加および削除するために EWS マネージ API または EWS を使用する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="afad1-104">Find out how to use the EWS Managed API or EWS to add email addresses to and remove them from the Blocked Senders List.</span></span>
+<span data-ttu-id="b8d7b-104">受信拒否リストに対してメール アドレスを追加および削除するために EWS マネージ API または EWS を使用する方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="b8d7b-104">Find out how to use the EWS Managed API or EWS to add email addresses to and remove them from the Blocked Senders List.</span></span>
   
-<span data-ttu-id="afad1-p101">ユーザーの [迷惑メール] オプションの [受信拒否リスト] によって、指定した送信者からのすべてのメール メッセージを迷惑メール フォルダーに移動する方法が提供されています。EWS マネージ API または EWS アプリケーションで、受信拒否リストに対してメール アドレスの追加と削除を行えるようにできます。</span><span class="sxs-lookup"><span data-stu-id="afad1-p101">The Blocked Senders List in a user's Junk Email options provides a way to move all email messages from specified senders to the Junk Email folder. You can enable your EWS Managed API or EWS application to add email addresses to or remove them from the Blocked Senders List.</span></span>
+<span data-ttu-id="b8d7b-p101">ユーザーの [迷惑メール] オプションの [受信拒否リスト] によって、指定した送信者からのすべてのメール メッセージを迷惑メール フォルダーに移動する方法が提供されています。EWS マネージ API または EWS アプリケーションで、受信拒否リストに対してメール アドレスの追加と削除を行えるようにできます。</span><span class="sxs-lookup"><span data-stu-id="b8d7b-p101">The Blocked Senders List in a user's Junk Email options provides a way to move all email messages from specified senders to the Junk Email folder. You can enable your EWS Managed API or EWS application to add email addresses to or remove them from the Blocked Senders List.</span></span>
   
-<span data-ttu-id="afad1-107">電子メール アドレスからのメッセージに電子メール アドレスを追加したり、受信拒否リストから削除する前にユーザーのメールボックスに存在する必要があります注意してください。</span><span class="sxs-lookup"><span data-stu-id="afad1-107">Note that a message from the email address must exist in the user's mailbox before you can add the email address to or remove it from the Blocked Senders List.</span></span> <span data-ttu-id="afad1-108">[ExchangeService.MarkAsJunk](http://msdn.microsoft.com/ja-jp/library/microsoft.exchange.webservices.data.exchangeservice.markasjunk%28v=exchg.80%29.aspx) EWS のマネージ API のメソッドと[MarkAsJunk](http://msdn.microsoft.com/library/1f71f04d-56a9-4fee-a4e7-d1034438329e%28Office.15%29.aspx)の EWS の操作は、項目 Id のコレクションを使用します。</span><span class="sxs-lookup"><span data-stu-id="afad1-108">The [ExchangeService.MarkAsJunk](http://msdn.microsoft.com/ja-jp/library/microsoft.exchange.webservices.data.exchangeservice.markasjunk%28v=exchg.80%29.aspx) EWS Managed API method and the [MarkAsJunk](http://msdn.microsoft.com/library/1f71f04d-56a9-4fee-a4e7-d1034438329e%28Office.15%29.aspx) EWS operation use a collection of item IDs.</span></span> <span data-ttu-id="afad1-109">項目コレクション内の Id は、迷惑メールのステータスを変更する対象のメールボックス内のメッセージを示しています。</span><span class="sxs-lookup"><span data-stu-id="afad1-109">The item IDs in the collection indicate messages in the mailbox for which the junk mail status should be changed.</span></span> 
+<span data-ttu-id="b8d7b-107">メールアドレスからのメッセージは、受信拒否リストに電子メールアドレスを追加したり削除したりする前に、ユーザーのメールボックスに存在している必要があることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="b8d7b-107">Note that a message from the email address must exist in the user's mailbox before you can add the email address to or remove it from the Blocked Senders List.</span></span> <span data-ttu-id="b8d7b-108">ExchangeService では、アイテム Id のコレクションを使用して、[ジャンク](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.markasjunk%28v=exchg.80%29.aspx)の EWS マネージ API メソッドと[markasjunk](https://msdn.microsoft.com/library/1f71f04d-56a9-4fee-a4e7-d1034438329e%28Office.15%29.aspx) ews の操作を実行しています。</span><span class="sxs-lookup"><span data-stu-id="b8d7b-108">The [ExchangeService.MarkAsJunk](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.markasjunk%28v=exchg.80%29.aspx) EWS Managed API method and the [MarkAsJunk](https://msdn.microsoft.com/library/1f71f04d-56a9-4fee-a4e7-d1034438329e%28Office.15%29.aspx) EWS operation use a collection of item IDs.</span></span> <span data-ttu-id="b8d7b-109">コレクション内のアイテム Id は、迷惑メールの状態を変更する必要があるメールボックス内のメッセージを示します。</span><span class="sxs-lookup"><span data-stu-id="b8d7b-109">The item IDs in the collection indicate messages in the mailbox for which the junk mail status should be changed.</span></span> 
   
-<span data-ttu-id="afad1-110">[Get MailboxJunkEmailConfiguration](http://technet.microsoft.com/ja-jp/library/dd979784%28v=exchg.150%29.aspx)と[セット MailboxJunkEmailConfiguration](http://technet.microsoft.com/ja-jp/library/dd979780%28v=exchg.150%29.aspx) Exchange 管理シェル コマンドレットを使用するには [受信拒否リストに直接アクセスします。</span><span class="sxs-lookup"><span data-stu-id="afad1-110">You can use the [Get-MailboxJunkEmailConfiguration](http://technet.microsoft.com/ja-jp/library/dd979784%28v=exchg.150%29.aspx) and [Set-MailboxJunkEmailConfiguration](http://technet.microsoft.com/ja-jp/library/dd979780%28v=exchg.150%29.aspx) Exchange Management Shell cmdlets to access the Blocked Senders List directly.</span></span> 
+<span data-ttu-id="b8d7b-110">[Set-mailboxjunkemailconfiguration](https://technet.microsoft.com/library/dd979784%28v=exchg.150%29.aspx)および[Set-mailboxjunkemailconfiguration](https://technet.microsoft.com/library/dd979780%28v=exchg.150%29.aspx) Exchange 管理シェルコマンドレットを使用して、受信拒否リストに直接アクセスすることができます。</span><span class="sxs-lookup"><span data-stu-id="b8d7b-110">You can use the [Get-MailboxJunkEmailConfiguration](https://technet.microsoft.com/library/dd979784%28v=exchg.150%29.aspx) and [Set-MailboxJunkEmailConfiguration](https://technet.microsoft.com/library/dd979780%28v=exchg.150%29.aspx) Exchange Management Shell cmdlets to access the Blocked Senders List directly.</span></span> 
   
-## <a name="add-an-email-address-to-or-remove-it-from-the-blocked-senders-list-by-using-the-ews-managed-api"></a><span data-ttu-id="afad1-111">EWS マネージ API を使用して、受信拒否リストに対してメール アドレスを追加または削除します。</span><span class="sxs-lookup"><span data-stu-id="afad1-111">Add an email address to or remove it from the Blocked Senders List by using the EWS Managed API</span></span>
-<span data-ttu-id="afad1-112"><a name="bk_AddRemoveEWSMA"> </a></span><span class="sxs-lookup"><span data-stu-id="afad1-112"></span></span>
+## <a name="add-an-email-address-to-or-remove-it-from-the-blocked-senders-list-by-using-the-ews-managed-api"></a><span data-ttu-id="b8d7b-111">EWS マネージ API を使用して、受信拒否リストに対してメール アドレスを追加または削除します。</span><span class="sxs-lookup"><span data-stu-id="b8d7b-111">Add an email address to or remove it from the Blocked Senders List by using the EWS Managed API</span></span>
+<span data-ttu-id="b8d7b-112"><a name="bk_AddRemoveEWSMA"> </a></span><span class="sxs-lookup"><span data-stu-id="b8d7b-112"><a name="bk_AddRemoveEWSMA"> </a></span></span>
 
-<span data-ttu-id="afad1-113">電子メール メッセージの送信者を [受信拒否リストに追加するに**MarkAsJunk**メソッドを使用し、**引数 isJunk**パラメーターを**true**に設定します。</span><span class="sxs-lookup"><span data-stu-id="afad1-113">To add the sender of an email message to the Blocked Senders List, use the **MarkAsJunk** method and set the **isJunk** parameter to **true**.</span></span> <span data-ttu-id="afad1-114">電子メール メッセージの送信者を [受信拒否リストから削除するには、 **false を指定**する**引数 isJunk**パラメーターを設定します。</span><span class="sxs-lookup"><span data-stu-id="afad1-114">To remove the sender of an email message from the Blocked Senders List, set the **isJunk** parameter to **false**.</span></span>
+<span data-ttu-id="b8d7b-113">メール メッセージの送信者を受信拒否リストに追加するには、**MarkAsJunk** メソッドを使用し、**isJunk** パラメーターを **true** にセットします。</span><span class="sxs-lookup"><span data-stu-id="b8d7b-113">To add the sender of an email message to the Blocked Senders List, use the **MarkAsJunk** method and set the **isJunk** parameter to **true**.</span></span> <span data-ttu-id="b8d7b-114">メール メッセージの送信者を受信拒否リストから削除するには、**isJunk** パラメーターを **false** にセットします。</span><span class="sxs-lookup"><span data-stu-id="b8d7b-114">To remove the sender of an email message from the Blocked Senders List, set the **isJunk** parameter to **false**.</span></span>
   
-<span data-ttu-id="afad1-115">次の例では、迷惑メッセージのステータスを変更するのには、 **MarkAsJunk**メソッドを使用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="afad1-115">The following example shows how to use the **MarkAsJunk** method to change the junk status of a message.</span></span> 
+<span data-ttu-id="b8d7b-115">次の例では、メッセージの迷惑ステータスを変更するための **MarkAsJunk** メソッドの使用方法を示します。</span><span class="sxs-lookup"><span data-stu-id="b8d7b-115">The following example shows how to use the **MarkAsJunk** method to change the junk status of a message.</span></span> 
   
 ```cs
 private static void MarkMessageAsJunk(ExchangeService service, ItemId messageId, bool isJunk, bool moveItem)
@@ -67,17 +67,17 @@ private static void MarkMessageAsJunk(ExchangeService service, ItemId messageId,
 }
 ```
 
-## <a name="add-an-email-address-to-or-remove-it-from-the-blocked-senders-list-by-using-ews"></a><span data-ttu-id="afad1-116">EWS を使用して、受信拒否リストに対してメール アドレスを追加または削除する</span><span class="sxs-lookup"><span data-stu-id="afad1-116">Add an email address to or remove it from the Blocked Senders List by using EWS</span></span>
-<span data-ttu-id="afad1-117"><a name="bk_AddRemoveEWS"> </a></span><span class="sxs-lookup"><span data-stu-id="afad1-117"></span></span>
+## <a name="add-an-email-address-to-or-remove-it-from-the-blocked-senders-list-by-using-ews"></a><span data-ttu-id="b8d7b-116">EWS を使用して、受信拒否リストに対してメール アドレスを追加または削除する</span><span class="sxs-lookup"><span data-stu-id="b8d7b-116">Add an email address to or remove it from the Blocked Senders List by using EWS</span></span>
+<span data-ttu-id="b8d7b-117"><a name="bk_AddRemoveEWS"> </a></span><span class="sxs-lookup"><span data-stu-id="b8d7b-117"><a name="bk_AddRemoveEWS"> </a></span></span>
 
-<span data-ttu-id="afad1-118">次の EWS の SOAP 要求では、 **true を指定**する[MarkAsJunk](http://msdn.microsoft.com/library/f06bafc6-7ee3-4b2b-9fd1-7c51328f4729%28Office.15%29.aspx)要素に**引数 IsJunk**属性を設定することにより迷惑メールとしてアイテムをマークします。</span><span class="sxs-lookup"><span data-stu-id="afad1-118">The following EWS SOAP request marks an item as junk by setting the **IsJunk** attribute on the [MarkAsJunk](http://msdn.microsoft.com/library/f06bafc6-7ee3-4b2b-9fd1-7c51328f4729%28Office.15%29.aspx) element to **true**.</span></span> <span data-ttu-id="afad1-119">移動メッセージ [迷惑メール] フォルダーに**MarkAsJunk**要素を**true**に、 **MoveItem**属性を設定することによってします。</span><span class="sxs-lookup"><span data-stu-id="afad1-119">It also moves the message to the Junk Email folder by setting the **MoveItem** attribute on the **MarkAsJunk** element to **true**.</span></span>
+<span data-ttu-id="b8d7b-118">次の EWS の SOAP 要求は、[MarkAsJunk](https://msdn.microsoft.com/library/f06bafc6-7ee3-4b2b-9fd1-7c51328f4729%28Office.15%29.aspx) 要素の **IsJunk** 属性を **true** に設定して、アイテムを迷惑アイテムとしてマークします。</span><span class="sxs-lookup"><span data-stu-id="b8d7b-118">The following EWS SOAP request marks an item as junk by setting the **IsJunk** attribute on the [MarkAsJunk](https://msdn.microsoft.com/library/f06bafc6-7ee3-4b2b-9fd1-7c51328f4729%28Office.15%29.aspx) element to **true**.</span></span> <span data-ttu-id="b8d7b-119">また、**MarkAsJunk** 要素の **MoveItem** 属性を **true** に設定して、メッセージを迷惑メール フォルダーに移動します。</span><span class="sxs-lookup"><span data-stu-id="b8d7b-119">It also moves the message to the Junk Email folder by setting the **MoveItem** attribute on the **MarkAsJunk** element to **true**.</span></span>
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+    xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
   </soap:Header>
@@ -92,21 +92,21 @@ private static void MarkMessageAsJunk(ExchangeService service, ItemId messageId,
 </soap:Envelope>
 ```
 
-<span data-ttu-id="afad1-120">次の EWS の SOAP 応答には、正常な応答が表示されます。</span><span class="sxs-lookup"><span data-stu-id="afad1-120">The following EWS SOAP response shows the successful response.</span></span> <span data-ttu-id="afad1-121">応答内の[MovedItemId](http://msdn.microsoft.com/library/7d5425ab-1e75-43d1-b801-802ff5139df6%28Office.15%29.aspx)要素には、移動後の項目の項目 ID が含まれています。</span><span class="sxs-lookup"><span data-stu-id="afad1-121">The [MovedItemId](http://msdn.microsoft.com/library/7d5425ab-1e75-43d1-b801-802ff5139df6%28Office.15%29.aspx) element in the response contains the item ID for the item after it was moved.</span></span> 
+<span data-ttu-id="b8d7b-120">次の EWS の SOAP 応答では、正常な応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="b8d7b-120">The following EWS SOAP response shows the successful response.</span></span> <span data-ttu-id="b8d7b-121">応答内の [MovedItemId](https://msdn.microsoft.com/library/7d5425ab-1e75-43d1-b801-802ff5139df6%28Office.15%29.aspx) 要素には、移動後のアイテムのアイテム ID が含まれます。</span><span class="sxs-lookup"><span data-stu-id="b8d7b-121">The [MovedItemId](https://msdn.microsoft.com/library/7d5425ab-1e75-43d1-b801-802ff5139df6%28Office.15%29.aspx) element in the response contains the item ID for the item after it was moved.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="712" MinorBuildNumber="22" Version="V2_3" 
-        xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-        xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+        xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+        xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
         xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:MarkAsJunkResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:MarkAsJunkResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:MarkAsJunkResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -119,13 +119,13 @@ private static void MarkMessageAsJunk(ExchangeService service, ItemId messageId,
 </s:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="afad1-122">関連項目</span><span class="sxs-lookup"><span data-stu-id="afad1-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b8d7b-122">関連項目</span><span class="sxs-lookup"><span data-stu-id="b8d7b-122">See also</span></span>
 
-- [<span data-ttu-id="afad1-123">Exchange での受信トレイの管理と EWS</span><span class="sxs-lookup"><span data-stu-id="afad1-123">Inbox management and EWS in Exchange</span></span>](inbox-management-and-ews-in-exchange.md)   
-- [<span data-ttu-id="afad1-124">ExchangeService.MarkAsJunk</span><span class="sxs-lookup"><span data-stu-id="afad1-124">ExchangeService.MarkAsJunk</span></span>](http://msdn.microsoft.com/ja-jp/library/microsoft.exchange.webservices.data.exchangeservice.markasjunk%28v=exchg.80%29.aspx)   
-- [<span data-ttu-id="afad1-125">MarkAsJunk の操作</span><span class="sxs-lookup"><span data-stu-id="afad1-125">MarkAsJunk operation</span></span>](http://msdn.microsoft.com/library/1f71f04d-56a9-4fee-a4e7-d1034438329e%28Office.15%29.aspx)   
-- [<span data-ttu-id="afad1-126">Get MailboxJunkEmailConfiguration</span><span class="sxs-lookup"><span data-stu-id="afad1-126">Get-MailboxJunkEmailConfiguration</span></span>](http://technet.microsoft.com/ja-jp/library/dd979784%28v=exchg.150%29.aspx)   
-- [<span data-ttu-id="afad1-127">セット MailboxJunkEmailConfiguration</span><span class="sxs-lookup"><span data-stu-id="afad1-127">Set-MailboxJunkEmailConfiguration</span></span>](http://technet.microsoft.com/ja-jp/library/dd979780%28v=exchg.150%29.aspx) 
-- [<span data-ttu-id="afad1-128">Exchange 管理シェル</span><span class="sxs-lookup"><span data-stu-id="afad1-128">Exchange Management Shell</span></span>](../management/exchange-management-shell.md)
+- [<span data-ttu-id="b8d7b-123">Exchange での受信トレイの管理と EWS</span><span class="sxs-lookup"><span data-stu-id="b8d7b-123">Inbox management and EWS in Exchange</span></span>](inbox-management-and-ews-in-exchange.md)   
+- [<span data-ttu-id="b8d7b-124">ExchangeService</span><span class="sxs-lookup"><span data-stu-id="b8d7b-124">ExchangeService.MarkAsJunk</span></span>](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.markasjunk%28v=exchg.80%29.aspx)   
+- [<span data-ttu-id="b8d7b-125">MarkAsJunk 操作</span><span class="sxs-lookup"><span data-stu-id="b8d7b-125">MarkAsJunk operation</span></span>](https://msdn.microsoft.com/library/1f71f04d-56a9-4fee-a4e7-d1034438329e%28Office.15%29.aspx)   
+- [<span data-ttu-id="b8d7b-126">Set-mailboxjunkemailconfiguration</span><span class="sxs-lookup"><span data-stu-id="b8d7b-126">Get-MailboxJunkEmailConfiguration</span></span>](https://technet.microsoft.com/library/dd979784%28v=exchg.150%29.aspx)   
+- [<span data-ttu-id="b8d7b-127">Set-mailboxjunkemailconfiguration</span><span class="sxs-lookup"><span data-stu-id="b8d7b-127">Set-MailboxJunkEmailConfiguration</span></span>](https://technet.microsoft.com/library/dd979780%28v=exchg.150%29.aspx) 
+- [<span data-ttu-id="b8d7b-128">Exchange Management Shell</span><span class="sxs-lookup"><span data-stu-id="b8d7b-128">Exchange Management Shell</span></span>](../management/exchange-management-shell.md)
     
 
