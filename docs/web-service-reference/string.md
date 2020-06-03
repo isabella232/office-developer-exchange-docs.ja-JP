@@ -1,5 +1,5 @@
 ---
-title: String
+title: 文字列
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -16,10 +16,10 @@ ms.openlocfilehash: fbb4219d35c4acdc2c80b21b73e6479a2ef317f7
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44463105"
 ---
-# <a name="string"></a>String
+# <a name="string"></a>文字列
 
 **String**要素は、アイテム、連絡先、タスク、会話で使用される文字列を表します。 
   

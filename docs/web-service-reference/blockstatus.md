@@ -12,7 +12,7 @@ ms.openlocfilehash: e88236274bfa70216e872025c2a94231f837df1f
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462277"
 ---
 # <a name="blockstatus"></a>BlockStatus
@@ -41,9 +41,9 @@ ms.locfileid: "44462277"
 |**要素**|**説明**|
 |:-----|:-----|
 |[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
-|[連絡先](contact.md) <br/> |Exchange ストア内の連絡先アイテムを表します。  <br/> |
+|[Contact](contact.md) <br/> |Exchange ストア内の連絡先アイテムを表します。  <br/> |
 |[DistributionList](distributionlist.md) <br/> |配布リストを表します。  <br/> |
-|[アイテム](item.md) <br/> |Exchange ストア内の汎用アイテムを表します。  <br/> |
+|[Item](item.md) <br/> |Exchange ストア内の汎用アイテムを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 

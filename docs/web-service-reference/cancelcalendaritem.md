@@ -16,7 +16,7 @@ ms.openlocfilehash: 45ad76d19bd43e2081aa9b9eb63547e091014803
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462256"
 ---
 # <a name="cancelcalendaritem"></a>CancelCalendarItem
@@ -52,7 +52,7 @@ ms.locfileid: "44462256"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[[件名]](subject.md) <br/> |Exchange ストアアイテムの subject プロパティを表します。  <br/> |
+|[件名](subject.md) <br/> |Exchange ストアアイテムの subject プロパティを表します。  <br/> |
 |[Body](body.md) <br/> |**Cancelcalendaritem**では使用されません。 本文のコンテンツを設定するには、 [Newbodycontent](newbodycontent.md)プロパティを使用します。  <br/> |
 |[ToRecipients](torecipients.md) <br/> |アイテムの受信者のセットが含まれています。 次に、アイテムのプライマリ受信者を示します。  <br/> |
 |[CcRecipients](ccrecipients.md) <br/> |メッセージのコピーを受信する受信者のコレクションを表します。  <br/> |

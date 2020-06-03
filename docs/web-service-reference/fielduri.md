@@ -16,7 +16,7 @@ ms.openlocfilehash: 6b84e6ef0a5e33217677b7c92e0ef6dc32d68ac4
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44461234"
 ---
 # <a name="fielduri"></a>FieldURI
@@ -407,7 +407,7 @@ ms.locfileid: "44461234"
 |[IsLessThanOrEqualTo](islessthanorequalto.md) <br/> |プロパティを定数値または別のプロパティと比較し、最初のプロパティが2番目のプロパティより小さい場合に**true**を返す検索式を表します。  <br/> |
 |[IsNotEqualTo](isnotequalto.md) <br/> |プロパティを定数値または別のプロパティと比較し、値が同じでない場合は**true**を返す検索式を表します。  <br/> |
 |[Excludes](excludes.md) <br/> |プロパティのビット単位のマスクを実行します。  <br/> |
-|[Contains](contains.md) <br/> |指定したプロパティに指定した定数文字列値が含まれているかどうかを決定する検索式を表します。  <br/> |
+|[内容](contains.md) <br/> |指定したプロパティに指定した定数文字列値が含まれているかどうかを決定する検索式を表します。  <br/> |
 |[FieldOrder](fieldorder.md) <br/> |結果を並べ替えるための1つのフィールドを表し、並べ替えの方向を示します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値

@@ -16,7 +16,7 @@ ms.openlocfilehash: 4104e79449acc6e358b729cf2de769d28dac52bd
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44461682"
 ---
 # <a name="postreplyitem"></a>PostReplyItem
@@ -93,13 +93,13 @@ ms.locfileid: "44461682"
 |[ItemId](itemid.md) <br/> |Exchange ストア内のアイテムの一意識別子および変更キーが含まれています。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。  <br/> |
 |[ParentFolderId](parentfolderid.md) <br/> |アイテムまたはフォルダーを含む親フォルダーの識別子を表します。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。  <br/> |
 |[ItemClass](itemclass.md) <br/> |アイテムのメッセージクラスを表します。  <br/> |
-|[[件名]](subject.md) <br/> |Exchange ストアアイテムおよび応答オブジェクトの件名を表します。 件名は255文字に制限されます。  <br/> |
+|[件名](subject.md) <br/> |Exchange ストアアイテムおよび応答オブジェクトの件名を表します。 件名は255文字に制限されます。  <br/> |
 |[Sensitivity](sensitivity.md) <br/> |アイテムの秘密度レベルを示します。  <br/> |
 |[Body](body.md) <br/> |メッセージの実際の本文の内容を表します。  <br/> |
-|[添付ファイル](attachments-ex15websvcsotherref.md) <br/> |Exchange ストア内のアイテムに添付されているアイテムまたはファイルが保存されています。  <br/> |
+|[Attachments](attachments-ex15websvcsotherref.md) <br/> |Exchange ストア内のアイテムに添付されているアイテムまたはファイルが保存されています。  <br/> |
 |[DateTimeReceived](datetimereceived.md) <br/> |メールボックス内のアイテムが受信された日付と時刻を表します。  <br/> |
-|[[サイズ]](size.md) <br/> |アイテムのサイズ (バイト単位) を表します。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。  <br/> |
-|[カテゴリ](categories-ex15websvcsotherref.md) <br/> |メールボックス内のアイテムが属するカテゴリを識別する文字列のコレクションを表します。  <br/> |
+|[Size](size.md) <br/> |アイテムのサイズ (バイト単位) を表します。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。  <br/> |
+|[Categories](categories-ex15websvcsotherref.md) <br/> |メールボックス内のアイテムが属するカテゴリを識別する文字列のコレクションを表します。  <br/> |
 |[Importance](importance.md) <br/> |アイテムの重要度について説明します。  <br/> |
 |[InReplyTo](inreplyto.md) <br/> |このアイテムが返信であるアイテムの識別子を表します。  <br/> |
 |[IsSubmitted](issubmitted.md) <br/> |アイテムが送信トレイの既定フォルダーに送信されたかどうかを示します。  <br/> |

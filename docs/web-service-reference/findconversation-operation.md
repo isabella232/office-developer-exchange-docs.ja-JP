@@ -16,7 +16,7 @@ ms.openlocfilehash: ef768807431ff3e02c6af7277c1c2a750607ed92
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462655"
 ---
 # <a name="findconversation-operation"></a>FindConversation 操作
@@ -25,7 +25,7 @@ ms.locfileid: "44462655"
   
 ## <a name="findconversation-request-example"></a>FindConversation 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、 **Findconversation**要求の例で、受信トレイフォルダー内の最初の会話を検索するための要求を形成する方法を示しています。 
   
@@ -68,7 +68,7 @@ ms.locfileid: "44462655"
     
 ## <a name="successful-findconversation-response-example"></a>成功した FindConversation の応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、 **Findconversation**要求に対する正常な応答を示しています。 
   
@@ -190,7 +190,7 @@ ms.locfileid: "44462655"
     
 - [UnreadCount](unreadcount.md)
     
-- [[サイズ]](size.md)
+- [Size](size.md)
     
 - [GlobalSize](globalsize.md)
     
@@ -212,7 +212,7 @@ ms.locfileid: "44462655"
     
 ## <a name="findconversation-error-response-example"></a>FindConversation エラーの応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、スキーマ検証エラーによって発生した**findconversation**要求に対するエラー応答を示しています。 
   

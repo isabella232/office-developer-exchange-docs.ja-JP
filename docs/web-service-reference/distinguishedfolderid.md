@@ -16,7 +16,7 @@ ms.openlocfilehash: be883cbca00910b24e4c45ba047803e5a5024566
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462697"
 ---
 # <a name="distinguishedfolderid"></a>DistinguishedFolderId
@@ -46,7 +46,7 @@ ms.locfileid: "44462697"
 |**値**|**説明**|
 |:-----|:-----|
 |予定表  <br/> |予定表フォルダーを表します。  <br/> |
-|contacts  <br/> |連絡先フォルダーを表します。  <br/> |
+|連絡先  <br/> |連絡先フォルダーを表します。  <br/> |
 |deleteditems  <br/> |[削除済みアイテム] フォルダーを表します。  <br/> |
 |下書き  <br/> |[下書き] フォルダーを表します。  <br/> |
 |inbox  <br/> |受信トレイフォルダーを表します。  <br/> |

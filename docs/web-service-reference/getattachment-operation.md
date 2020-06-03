@@ -16,7 +16,7 @@ ms.openlocfilehash: ac7eafd61c62b077a8d20e5fd8d004924bf06cf1
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44461290"
 ---
 # <a name="getattachment-operation"></a>GetAttachment 操作
@@ -25,7 +25,7 @@ GetAttachment 操作は、Exchange ストア内のアイテムの既存の添付
   
 ## <a name="getattachment-request-example"></a>GetAttachment 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の GetAttachment 要求の例は、添付ファイルを取得する方法を示しています。
   
@@ -72,7 +72,7 @@ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
     
 ## <a name="getattachment-response-example"></a>GetAttachment 応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、GetAttachment 要求に対する正常な応答を示しています。 次の使用例は、添付ファイルを取得します。
   
@@ -126,7 +126,7 @@ GetAttachment の応答メッセージには常に、完全な添付ファイル
     
 - [ResponseCode](responsecode.md)
     
-- [添付ファイル](attachments-ex15websvcsotherref.md)
+- [Attachments](attachments-ex15websvcsotherref.md)
     
 - [FileAttachment](fileattachment.md)
     

@@ -16,7 +16,7 @@ ms.openlocfilehash: d30e5391bb4305cae0004a9788df971a57297cae
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462937"
 ---
 # <a name="findmessagetrackingreport"></a>FindMessageTrackingReport
@@ -59,7 +59,7 @@ ms.locfileid: "44462937"
 |[Sender (EmailAddressType)](sender-emailaddresstype.md) <br/> |電子メールメッセージの送信者の連絡先情報が保存されています。  <br/> |
 |[PurportedSender](purportedsender.md) <br/> |電子メールメッセージの申し立て送信者の連絡先情報が含まれています。  <br/> |
 |[[受信者]](recipient.md) <br/> |メッセージの受信者の電子メールアドレスが保存されています。  <br/> |
-|[[件名]](subject.md) <br/> |電子メールメッセージの件名を含みます。  <br/> |
+|[件名](subject.md) <br/> |電子メールメッセージの件名を含みます。  <br/> |
 |[StartDateTime](startdatetime.md) <br/> |検索の開始日時を格納します。  <br/> |
 |[EndDateTime](enddatetime.md) <br/> |検索を終了する日付と時刻を含みます。  <br/> |
 |[MessageId](messageid.md) <br/> |検索のメッセージ識別子を含みます。  <br/> |

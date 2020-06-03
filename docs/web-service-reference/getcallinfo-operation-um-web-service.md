@@ -15,7 +15,7 @@ ms.openlocfilehash: 6b5664dfe16f9c74cc7175098145141b815a6355
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44461241"
 ---
 # <a name="getcallinfo-operation-um-web-service"></a>GetCallInfo 操作 (UM web サービス)
@@ -24,7 +24,7 @@ GetCallInfo 操作は、 [Callid (UM web サービス)](callid-um-web-service.md
   
 ## <a name="getcallinfo-request-example"></a>GetCallInfo 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の GetCallInfo 要求の例は、指定された発信呼び出しに関する情報を取得するための要求を形成する方法を示しています。
   
@@ -43,7 +43,7 @@ GetCallInfo 操作は、 [Callid (UM web サービス)](callid-um-web-service.md
 
 ## <a name="successful-getcallinfo-response-example"></a>Successful GetCallInfo response の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 GetCallInfo 応答の次の例は、GetCallInfo 要求に対する応答を示しています。
   

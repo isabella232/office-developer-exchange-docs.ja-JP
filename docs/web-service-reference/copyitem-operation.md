@@ -16,7 +16,7 @@ ms.openlocfilehash: ec07700a5ebbdc8774aa2134919634b8dfd02406
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462179"
 ---
 # <a name="copyitem-operation"></a>CopyItem 操作
@@ -25,7 +25,7 @@ ms.locfileid: "44462179"
   
 ## <a name="copyitem-request-example"></a>CopyItem 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の**Copyitem**要求の例は、受信トレイにアイテムをコピーする要求を作成する方法を示しています。 
   
@@ -74,7 +74,7 @@ ms.locfileid: "44462179"
   
 ## <a name="successful-copyitem-response"></a>成功した CopyItem 応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、 **Copyitem**要求に対する正常な応答を示しています。 
   
@@ -130,7 +130,7 @@ ms.locfileid: "44462179"
   
 ## <a name="copyitem-error-response"></a>CopyItem エラー応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、 **Copyitem**要求に対するエラー応答を示しています。 
   

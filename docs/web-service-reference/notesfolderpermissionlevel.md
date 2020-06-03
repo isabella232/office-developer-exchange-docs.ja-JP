@@ -16,7 +16,7 @@ ms.openlocfilehash: 205802592a1fc01451b4fc497e9e0c4c66afd478
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462627"
 ---
 # <a name="notesfolderpermissionlevel"></a>注釈 Folderpermissionlevel

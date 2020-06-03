@@ -16,7 +16,7 @@ ms.openlocfilehash: f1cc199bdaf684d8d74687ed7f064eb66fee48ff
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462585"
 ---
 # <a name="findfolder-operation"></a>FindFolder 操作
@@ -47,7 +47,7 @@ FindFolder は、任意のストリーミング可能なプロパティの最初
    
 ## <a name="findfolder-request-example"></a>FindFolder 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 **Findfolder**要求の次の例は、受信トレイ内のすべてのフォルダーを検索するための要求を形成する方法を示しています。 
   
@@ -92,7 +92,7 @@ FindFolder は、任意のストリーミング可能なプロパティの最初
   
 ## <a name="findfolder-response-example"></a>FindFolder 応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の簡易オブジェクトアクセスプロトコル (SOAP) 本文の例は、 **Findfolder**要求に対する正常な応答を示しています。 応答には、 [Baseshape](baseshape.md)の既定値が使用されたときに返される要素が含まれています。 
   
@@ -171,7 +171,7 @@ FindFolder は、任意のストリーミング可能なプロパティの最初
   
 ## <a name="findfolder-error-response-example"></a>FindFolder エラー応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の SOAP 本文の例は、無効なフォルダーの識別子によって識別されるフォルダーを検索すると発生するエラー応答を示しています。
   

@@ -16,7 +16,7 @@ ms.openlocfilehash: 248047206a661afe723543e52c51b57847148423
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462578"
 ---
 # <a name="findfolder"></a>FindFolder
@@ -68,7 +68,7 @@ ms.locfileid: "44462578"
 |[FolderShape](foldershape.md) <br/> |FindFolder 応答に含めるフォルダーのプロパティを識別します。  <br/> |
 |[IndexedPageFolderView](indexedpagefolderview.md) <br/> |ページアイテムの情報が FindFolder 応答で返される方法について説明します。 この要素は省略できます。  <br/> |
 |[FractionalPageFolderView](fractionalpagefolderview.md) <br/> |ページビューの開始位置と、FindFolder 要求で返されるフォルダーの最大数を指定します。 この要素は省略できます。  <br/> |
-|[Restriction](restriction.md) <br/> |FindFolder 操作でフォルダーにフィルターを適用するために使用される制限またはクエリを定義します。 この要素は省略できます。  <br/> |
+|[制限](restriction.md) <br/> |FindFolder 操作でフォルダーにフィルターを適用するために使用される制限またはクエリを定義します。 この要素は省略できます。  <br/> |
 |[ParentFolderIds](parentfolderids.md) <br/> |検索する FindFolder 操作のフォルダーを識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
@@ -111,6 +111,5 @@ FindFolder 要求の次の例は、受信トレイ内のすべてのフォルダ
    
 ## <a name="see-also"></a>関連項目
 
-- 
-  [FindFolder 操作](findfolder-operation.md)
+- [FindFolder 操作](findfolder-operation.md)
 

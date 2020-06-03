@@ -12,7 +12,7 @@ ms.openlocfilehash: 62fb259672c47242a57b939deb4887e1e5519e2a
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44461759"
 ---
 # <a name="transport-agents-in-exchange"></a>Exchange のトランスポート エージェント
@@ -23,7 +23,7 @@ Exchange 2013 には、Exchange トランスポート動作の拡張をサポー
 
 |ご参考までに|説明|
 |:-----|:-----|
-|Availability  <br/> |トランスポートエージェントは、Exchange 2007 以降のバージョンの Exchange で使用できます。 トランスポートエージェントは、Office 365 または Exchange Online ではサポートされていません。  <br/> |
+|可用性  <br/> |トランスポートエージェントは、Exchange 2007 以降のバージョンの Exchange で使用できます。 トランスポートエージェントは、Office 365 または Exchange Online ではサポートされていません。  <br/> |
 |リモート使用  <br/> |トランスポート エージェントは Exchange サーバー上で実行し、リモート使用をサポートしていません。  <br/> |
 |サポートされている言語  <br/> |トランスポート エージェントには、任意の .NET Framework 言語を使用できます。  <br/> |
 |利用可能なテスト ツールとデバッグ ツール  <br/> |トランスポート エージェントのデバッグには、Visual Studio 2012 以降の Visual Studio の各バージョンを使用してください。  <br/> |
@@ -46,8 +46,7 @@ Exchange 2013 には、Exchange トランスポート動作の拡張をサポー
 ## <a name="see-also"></a>関連項目
 
 - [Exchange Online と Exchange の開発](../exchange-server-development.md)    
-- 
-  [Exchange の EWS Managed API、EWS、および Web サービスについて学ぶ](../exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)   
+- [Exchange の EWS マネージ API、EWS、Web サービスについて探究してみましょう](../exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)   
 - [Exchange のバックアップと復元](../backup-restore/backup-and-restore-for-exchange-2013.md) 
     
 

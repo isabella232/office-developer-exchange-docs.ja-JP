@@ -12,7 +12,7 @@ ms.openlocfilehash: d7a1077d334862df2a24e27bc23e02539a1bafb1
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462074"
 ---
 # <a name="directreports"></a>DirectReports
@@ -40,7 +40,7 @@ ms.locfileid: "44462074"
 
 |**要素名**|**説明**|
 |:-----|:-----|
-|[連絡先](contact.md) <br/> |Exchange ストア内の連絡先アイテムを表します。  <br/> |
+|[Contact](contact.md) <br/> |Exchange ストア内の連絡先アイテムを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 

@@ -16,7 +16,7 @@ ms.openlocfilehash: 365e4e81b04419ed42f0bd9c8e022b6f8e559a2a
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462571"
 ---
 # <a name="findfolderresponse"></a>FindFolderResponse
@@ -67,8 +67,7 @@ ms.locfileid: "44462571"
 
 
 
-
-  [FindFolder 操作](findfolder-operation.md)
+[FindFolder 操作](findfolder-operation.md)
 
 
 [フォルダーの検索](https://msdn.microsoft.com/library/9124d868-017a-43f0-b915-5c0082cacec9%28Office.15%29.aspx)

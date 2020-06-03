@@ -16,7 +16,7 @@ ms.openlocfilehash: 1bb63e50c06e81337d1142a6624213fb2db12457
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44461353"
 ---
 # <a name="foldername"></a>FolderName
@@ -79,8 +79,7 @@ Exchange Web サービスを使用して管理されたカスタムフォルダ�
 
 
 
-
-  [FindFolder 操作](findfolder-operation.md)
+[FindFolder 操作](findfolder-operation.md)
 
 
 [フォルダーの検索](https://msdn.microsoft.com/library/9124d868-017a-43f0-b915-5c0082cacec9%28Office.15%29.aspx)

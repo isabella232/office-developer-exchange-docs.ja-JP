@@ -16,7 +16,7 @@ ms.openlocfilehash: ca941e0c7e5b9b08f6f495ccae0d634d72b8f429
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462536"
 ---
 # <a name="finditemresponsemessage"></a>FindItemResponseMessage
@@ -87,7 +87,6 @@ ms.locfileid: "44462536"
    
 ## <a name="see-also"></a>関連項目
 
-- 
-  [FindItem 操作](finditem-operation.md)
+- [FindItem 操作](finditem-operation.md)
 - [アイテムの検索](https://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
 

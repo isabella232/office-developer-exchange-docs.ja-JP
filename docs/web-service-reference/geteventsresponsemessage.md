@@ -16,7 +16,7 @@ ms.openlocfilehash: d307aa1f5234ab5a7a2527c55f5e48814ea2687b
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462858"
 ---
 # <a name="geteventsresponsemessage"></a>GetEventsResponseMessage
@@ -48,7 +48,7 @@ ms.locfileid: "44462858"
 
 |**値**|**説明**|
 |:-----|:-----|
-|Success  <br/> |満たされる要求を記述します。  <br/> |
+|成功  <br/> |満たされる要求を記述します。  <br/> |
 |警告  <br/> | 処理されなかった要求を示します。 要求内のアイテムが処理され、その後のアイテムを処理できなかったときにエラーが発生した場合は、警告が返されることがあります。 <br/><br/>警告のソースの例を次に示します。 <br/> <br/>-バッチ処理中に Exchange ストアがオフラインになります。  <br/>-Active Directory ドメインサービス (AD DS) がオフラインになっています。  <br/>-メールボックスが移動されました。  <br/>-メールボックスデータベース (MDB) がオフラインになっています。  <br/>-パスワードの有効期限が切れています。  <br/>-クォータを超過しました。  <br/> |
 |Error  <br/> | 満たされない要求を記述します。 <br/><br/>エラーのソースの例を次に示します。  <br/><br/>-無効な属性または要素  <br/>-範囲外の属性または要素  <br/>-不明なタグ  <br/>-コンテキスト内で有効ではない属性または要素  <br/>-クライアントによる権限のないアクセス試行  <br/>-有効なクライアント側の呼び出しに応答した場合のサーバー側障害  <br/><br/>  エラーに関する情報については、応答[secの](responsecode.md)要素と[messagetext](messagetext.md)要素を参照してください。  <br/> |
    

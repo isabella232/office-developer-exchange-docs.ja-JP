@@ -16,7 +16,7 @@ ms.openlocfilehash: fc3e56fbb1bee411fa31751f558f520874133076
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44463217"
 ---
 # <a name="messagetrackingreport"></a>および search-messagetrackingreport
@@ -50,7 +50,7 @@ ms.locfileid: "44463217"
 |:-----|:-----|
 |[Sender (EmailAddressType)](sender-emailaddresstype.md) <br/> |電子メールメッセージの送信者の連絡先情報が保存されています。  <br/> |
 |[PurportedSender](purportedsender.md) <br/> |電子メールメッセージの申し立て送信者の連絡先情報が含まれています。  <br/> |
-|[[件名]](subject.md) <br/> |電子メールメッセージの件名を含みます。  <br/> |
+|[件名](subject.md) <br/> |電子メールメッセージの件名を含みます。  <br/> |
 |[SubmitTime](submittime.md) <br/> |電子メールメッセージが送信された時刻を格納します。  <br/> |
 |[OriginalRecipients](originalrecipients.md) <br/> |電子メールメッセージの受信者のリストが保存されています。  <br/> |
 |[受信者 Trackingevents](recipienttrackingevents.md) <br/> |受信者の1つまたは複数の追跡イベントのリストを含みます。  <br/> |

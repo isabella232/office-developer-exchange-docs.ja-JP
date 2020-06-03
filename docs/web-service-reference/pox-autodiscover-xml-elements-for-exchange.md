@@ -13,7 +13,7 @@ ms.openlocfilehash: 9085491197f5aa79ffe54c5c920708d7b100458f
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462249"
 ---
 # <a name="pox-autodiscover-xml-elements-for-exchange"></a>Exchange の POX 自動検出 XML 要素
@@ -27,8 +27,7 @@ Exchange の POX 自動検出 web サービスの XML 要素リファレンス�
 
 [Exchange 用 POX 自動検出 Web サービス リファレンス](pox-autodiscover-web-service-reference-for-exchange.md)
   
-
-  [Exchange 用 EWS リファレンス](ews-reference-for-exchange.md)
+[Exchange 用 EWS リファレンス](ews-reference-for-exchange.md)
   
 [Exchange 用ユニファイドメッセージング web サービスのリファレンス](unified-messaging-web-service-reference-for-exchange.md)
   
