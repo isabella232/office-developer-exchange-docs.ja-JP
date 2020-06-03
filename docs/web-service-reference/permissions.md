@@ -16,10 +16,10 @@ ms.openlocfilehash: b8616cefdb8c453106753fb0788a6c7d6a0ded79
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44459217"
 ---
-# <a name="permissions"></a>アクセス許可
+# <a name="permissions"></a>Permissions
 
 **Permissions**要素には、フォルダーのアクセス許可のコレクションが含まれています。 
   

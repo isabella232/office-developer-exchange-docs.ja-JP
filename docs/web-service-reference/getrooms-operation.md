@@ -16,7 +16,7 @@ ms.openlocfilehash: 4cb124b96637b9fcdca15595faebb2ce4d304de0
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460548"
 ---
 # <a name="getrooms-operation"></a>GetRooms 操作
@@ -36,7 +36,7 @@ ms.locfileid: "44460548"
    
 ## <a name="getrooms-request-example"></a>GetRooms 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 ルームリストに関連付けられているルームを取得する**getrooms**要求の例を次に示します。 
   
@@ -75,7 +75,7 @@ ms.locfileid: "44460548"
     
 ## <a name="successful-getrooms-response-example"></a>正常な GetRooms 応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の応答は、会議室リストに関連付けられているルームの電子メールアドレス情報を示しています。
   
@@ -137,7 +137,7 @@ ms.locfileid: "44460548"
     
 ## <a name="getrooms-error-response-example"></a>GetRooms エラー応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、存在しない会議室一覧の会議室情報を取得しようとしたときに発生するエラー応答を示しています。
   

@@ -16,7 +16,7 @@ ms.openlocfilehash: 0f70f1fe4348b5b74cef6be6414618af1e3de260
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44459855"
 ---
 # <a name="items-nonemptyarrayofallitemstype"></a>アイテム (非 Emptyarrayofallitemstype)
@@ -65,13 +65,13 @@ ms.locfileid: "44459855"
 |[Item](item.md) <br/> |Exchange ストア内のアイテムを表します。  <br/> |
 |[Message](message-ex15websvcsotherref.md) <br/> |Exchange 電子メールメッセージを表します。  <br/> |
 |[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
-|[連絡先](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
+|[Contact](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
 |[DistributionList](distributionlist.md) <br/> |配布リストを表します。  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Exchange ストア内の会議メッセージを表します。  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議出席依頼を表します。  <br/> |
 |[MeetingResponse](meetingresponse.md) <br/> |Exchange ストア内の会議の応答を表します。  <br/> |
 |[MeetingCancellation](meetingcancellation.md) <br/> |Exchange ストア内の会議の取り消しを表します。  <br/> |
-|[Task](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
+|[タスク](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
 |[ReplyToItem](replytoitem.md) <br/> |Exchange ストア内のアイテムの送信者への返信を含みます。  <br/> |
 |[Forwarditem と](forwarditem.md) <br/> |受信者に転送するための Exchange ストアアイテムが保存されています。  <br/> |
 |[Replyalltoitem と](replyalltoitem.md) <br/> |Exchange ストア内のアイテムの送信者および特定の受信者への返信を含みます。  <br/> |
@@ -108,11 +108,9 @@ ms.locfileid: "44459855"
 
 
 
-
-  [CreateFolder 操作](createfolder-operation.md)
+[CreateFolder 操作](createfolder-operation.md)
   
-
-  [CreateItem 操作](createitem-operation.md)
+[CreateItem 操作](createitem-operation.md)
 
 
 [フォルダーの作成 (Exchange Web サービス)](https://msdn.microsoft.com/library/3b15b0ec-8691-45ed-9a24-a91ff732d6cf%28Office.15%29.aspx)

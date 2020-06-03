@@ -16,7 +16,7 @@ ms.openlocfilehash: 0041af114d11fd9577037dd154e40b84e8483c35
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44459806"
 ---
 # <a name="updateitem-operation-task"></a>UpdateItem 操作 (タスク)
@@ -45,6 +45,5 @@ Exchange Web サービスを使用してタスクの要求を送信すること�
 
 
 
-
-  [UpdateItem 操作](updateitem-operation.md)
+[UpdateItem 操作](updateitem-operation.md)
 

@@ -16,7 +16,7 @@ ms.openlocfilehash: db9b541fb2527ae3c09cbdb33bedea7fb215bd30
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44461017"
 ---
 # <a name="fileattachment"></a>FileAttachment
@@ -56,7 +56,7 @@ ms.locfileid: "44461017"
 |[ContentType](contenttype.md) <br/> |添付ファイルのコンテンツのマルチパーパスインターネットメール内線 (MIME) の種類について説明します。  <br/> |
 |[ContentId](contentid.md) <br/> |添付ファイルのコンテンツの識別子を表します。 [ContentId](contentid.md)は、任意の文字列値に設定できます。 アプリケーションでは、 [ContentId](contentid.md)を使用して独自の識別メカニズムを実装できます。  <br/> |
 |[ContentLocation](contentlocation.md) <br/> |添付ファイルのコンテンツの場所に対応する Uniform Resource Identifier (URI) を含みます。  <br/> |
-|[[サイズ]](size.md) <br/> |添付ファイルのサイズ (バイト単位) を表します。  <br/> |
+|[Size](size.md) <br/> |添付ファイルのサイズ (バイト単位) を表します。  <br/> |
 |[LastModifiedTime](lastmodifiedtime.md) <br/> |添付ファイルが最後に変更された日時を表します。  <br/> |
 |[IsInline](isinline.md) <br/> |添付ファイルがアイテム内にインラインで表示されるかどうかを表します。  <br/> |
 |[IsContactPhoto](iscontactphoto.md) <br/> |添付ファイルが連絡先の画像であるかどうかを示します。  <br/> |
@@ -66,7 +66,7 @@ ms.locfileid: "44461017"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[添付ファイル](attachments-ex15websvcsotherref.md) <br/> |Exchange ストア内のアイテムに添付されているアイテムまたはファイルが保存されています。  <br/> |
+|[Attachments](attachments-ex15websvcsotherref.md) <br/> |Exchange ストア内のアイテムに添付されているアイテムまたはファイルが保存されています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 

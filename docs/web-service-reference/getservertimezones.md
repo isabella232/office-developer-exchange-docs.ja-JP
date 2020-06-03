@@ -16,7 +16,7 @@ ms.openlocfilehash: 797e4543c94b0628242bcf544fe9a735ebaa5a63
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460940"
 ---
 # <a name="getservertimezones"></a>GetServerTimeZones
@@ -42,7 +42,7 @@ ms.locfileid: "44460940"
 
 |**値**|**説明**|
 |:-----|:-----|
-|**false** <br/> |各タイムゾーンの完全な定義を返します。  <br/> |
+|**true** <br/> |各タイムゾーンの完全な定義を返します。  <br/> |
 |**false** <br/> |各タイムゾーンの名前と識別子のみを返します。  <br/> |
    
 ### <a name="child-elements"></a>子要素

@@ -16,7 +16,7 @@ ms.openlocfilehash: 3aeda1cffc03292734a91bc3fff3289d51c9b445
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460996"
 ---
 # <a name="finditem"></a>FindItem
@@ -139,7 +139,7 @@ ms.locfileid: "44460996"
 |[ContactsView](contactsview.md) <br/> |アルファベットの表示名に基づいて、連絡先アイテムの検索を定義します。 この要素は省略できます。  <br/> |
 |[GroupBy](groupby.md) <br/> |**FindItem**クエリの任意のグループを指定します。 この要素は省略できます。  <br/> |
 |[DistinguishedGroupBy](distinguishedgroupby.md) <br/> |**FindItem**クエリの標準的なグループを提供します。 この要素は省略できます。  <br/> |
-|[Restriction](restriction.md) <br/> |**FindItem** /  **findfolder**および search folder 操作のアイテムまたはフォルダーをフィルター処理するために使用される制限またはクエリを定義します。 この要素は省略できます。  <br/> |
+|[制限](restriction.md) <br/> |**FindItem** /  **findfolder**および search folder 操作のアイテムまたはフォルダーをフィルター処理するために使用される制限またはクエリを定義します。 この要素は省略できます。  <br/> |
 |[SortOrder](sortorder.md) <br/> |FindItem 要求でのアイテムの並べ替え方法を定義します。 この要素は省略できます。  <br/> |
 |[ParentFolderIds](parentfolderids.md) <br/> |FindItem および FindFolder 操作を検索するフォルダーを指定します。  <br/> |
 |[QueryString (QueryStringType)](querystring-querystringtype.md) <br/> |高度なクエリ構文 (AQS) に基づくメールボックスクエリ文字列が格納されています。  <br/> |
@@ -165,7 +165,6 @@ ms.locfileid: "44460996"
    
 ## <a name="see-also"></a>関連項目
 
-- 
-  [FindItem 操作](finditem-operation.md)
+- [FindItem 操作](finditem-operation.md)
 - [アイテムの検索](https://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
 

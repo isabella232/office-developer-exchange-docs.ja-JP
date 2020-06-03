@@ -12,7 +12,7 @@ ms.openlocfilehash: 9900a80136a1a7eaae4634afd31568679f6dba1b
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44459462"
 ---
 # <a name="globaliconindex"></a>GlobalIconIndex
@@ -47,7 +47,7 @@ ms.locfileid: "44459462"
 |**値**|**説明**|
 |:-----|:-----|
 |||
-|既定  <br/> |既定のアイコンを指定します。  <br/> |
+|既定値  <br/> |既定のアイコンを指定します。  <br/> |
 |PostItem  <br/> |投稿アイテムのアイコンを指定します。  <br/> |
 |MailRead  <br/> |[メールの閲覧] アイコンを指定します。  <br/> |
 |メール未開封  <br/> |[未読のメール] アイコンを指定します。  <br/> |

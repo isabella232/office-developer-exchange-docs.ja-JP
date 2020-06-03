@@ -12,7 +12,7 @@ ms.openlocfilehash: 26a521d8647a010fe956596eaf63d4df4756edb2
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44459533"
 ---
 # <a name="getappmanifestsresponsemessage"></a>GetAppManifestsResponseMessage
@@ -43,7 +43,7 @@ ms.locfileid: "44459533"
 
 |**値**|**説明**|
 |:-----|:-----|
-|Success  <br/> |成功を示します。  <br/> |
+|成功  <br/> |成功を示します。  <br/> |
 |警告  <br/> |警告を示します。  <br/> |
 |Error  <br/> |エラーを示します。  <br/> |
    

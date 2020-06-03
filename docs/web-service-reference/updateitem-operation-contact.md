@@ -16,7 +16,7 @@ ms.openlocfilehash: 66e1b91ea3154d8a501339aed7b398970e8f5392
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44459827"
 ---
 # <a name="updateitem-operation-contact"></a>UpdateItem 操作 (連絡先)
@@ -25,7 +25,7 @@ UpdateItem 操作は、Exchange ストア内の連絡先アイテムのプロパ
   
 ## <a name="updateitem-contact-request-example"></a>UpdateItem (Contact) 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次のコード例は、連絡先の電子メールアドレスを更新する方法を示しています。
   
@@ -82,7 +82,7 @@ UpdateItem 操作は、Exchange ストア内の連絡先アイテムのプロパ
     
 - [IndexedFieldURI](indexedfielduri.md)
     
-- [連絡先](contact.md)
+- [Contact](contact.md)
     
 - [EmailAddresses](emailaddresses.md)
     
@@ -90,7 +90,7 @@ UpdateItem 操作は、Exchange ストア内の連絡先アイテムのプロパ
     
 ## <a name="successful-updateitem-contact-response"></a>成功した UpdateItem (連絡先) 応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次のコード例は、正常な UpdateItem 応答を示しています。
   
@@ -144,13 +144,13 @@ UpdateItem 操作は、Exchange ストア内の連絡先アイテムのプロパ
     
 - [アイテム (非 Emptyarrayofallitemstype)](items-nonemptyarrayofallitemstype.md)
     
-- [連絡先](contact.md)
+- [Contact](contact.md)
     
 - [ItemId](itemid.md)
     
 ## <a name="invalid-updateitem-contact-request-example"></a>無効な UpdateItem (連絡先) 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次のコード例は、無効な要求を示しています。
   
@@ -191,7 +191,7 @@ UpdateItem 操作は、Exchange ストア内の連絡先アイテムのプロパ
   
 ## <a name="updateitem-contact-error-response"></a>UpdateItem (Contact) エラー応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次のコード例は、UpdateItem (連絡先) 要求に対するエラー応答を示しています。
   
@@ -226,6 +226,5 @@ UpdateItem 操作は、Exchange ストア内の連絡先アイテムのプロパ
 
 
 
-
-  [UpdateItem 操作](updateitem-operation.md)
+[UpdateItem 操作](updateitem-operation.md)
 

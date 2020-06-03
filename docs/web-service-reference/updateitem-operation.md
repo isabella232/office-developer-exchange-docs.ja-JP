@@ -16,7 +16,7 @@ ms.openlocfilehash: c001b7656862144023e9704cb04e6b4c0030f9df
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44459392"
 ---
 # <a name="updateitem-operation"></a>UpdateItem 操作
@@ -46,7 +46,7 @@ ms.locfileid: "44459392"
   
 ## <a name="setitemfield-request-example"></a>SetItemField 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の**updateitem**要求の例は、アイテムに対して [秘密度] プロパティを設定する方法を示しています。 
   
@@ -107,7 +107,7 @@ ms.locfileid: "44459392"
     
 ## <a name="appendtoitemfield-request-example"></a>AppendToItemField 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の**updateitem**要求の例は、アイテムの body プロパティにテキストを追加する方法を示しています。 
   
@@ -176,7 +176,7 @@ ms.locfileid: "44459392"
     
 ## <a name="deleteitemfield-request-example"></a>DeleteItemField 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の**updateitem**要求の例は、アイテムのプロパティを削除する方法を示しています。 
   
@@ -229,7 +229,7 @@ ms.locfileid: "44459392"
     
 ## <a name="successful-response-example"></a>成功した応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、 **Updateitem**要求に対する正常な応答を示しています。 
   

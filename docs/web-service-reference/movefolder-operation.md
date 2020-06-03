@@ -16,7 +16,7 @@ ms.openlocfilehash: dc572130ca3b2f2b152abbb4a8b68cc6f67790e8
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460583"
 ---
 # <a name="movefolder-operation"></a>MoveFolder 操作
@@ -29,7 +29,7 @@ MoveFolder 操作は、CopyFolder 操作に似ています。 識別フォルダ
   
 ## <a name="movefolder-request-example"></a>MoveFolder 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の MoveFolder 要求の例は、 [FolderId](folderid.md)によって識別されるフォルダーを移動する要求を形成し、フォルダーを迷惑メールの識別フォルダーに入れる方法を示しています。 
   
@@ -78,7 +78,7 @@ MoveFolder 要求の形成に使用できるその他の要素については、
   
 ## <a name="successful-movefolder-response-example"></a>成功した MoveFolder 応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、MoveFolder 要求に対する正常な応答を示しています。 
   
@@ -139,7 +139,7 @@ MoveFolder 応答には、次の要素が含まれています。
     
 ## <a name="movefolder-error-response-example"></a>MoveFolder エラー応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、識別フォルダーを移動しようとしたときに発生するエラー応答を示しています。
   

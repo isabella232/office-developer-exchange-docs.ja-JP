@@ -16,7 +16,7 @@ ms.openlocfilehash: 1afe7fe13501af4a14f72c731703fe41e1f33049
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460541"
 ---
 # <a name="getservertimezones-operation"></a>GetServerTimeZones 操作

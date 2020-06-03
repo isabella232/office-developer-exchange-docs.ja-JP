@@ -16,7 +16,7 @@ ms.openlocfilehash: e186c4e14cbb9c922a4d262c85c130b9c33ff939
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460639"
 ---
 # <a name="expanddlresponsemessage"></a>ExpandDLResponseMessage
@@ -94,7 +94,6 @@ ms.locfileid: "44460639"
 ## <a name="see-also"></a>関連項目
 
 - [ExpandDL 操作](expanddl-operation.md)
-- 
-  [Exchange 用 EWS リファレンス](ews-reference-for-exchange.md)
+- [Exchange 用 EWS リファレンス](ews-reference-for-exchange.md)
 - [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

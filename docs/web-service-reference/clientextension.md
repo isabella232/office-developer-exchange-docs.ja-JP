@@ -12,7 +12,7 @@ ms.openlocfilehash: d3d9ce1d242a63f28da3464f0faff86abde502c9
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460198"
 ---
 # <a name="clientextension"></a>ClientExtension
@@ -50,7 +50,7 @@ ms.locfileid: "44460198"
 
 |**値**|**説明**|
 |:-----|:-----|
-|既定  <br/> |アプリが既定で利用できることを示します。  <br/> |
+|既定値  <br/> |アプリが既定で利用できることを示します。  <br/> |
 |Kirkland  <br/> |アプリがプライベートであることを示します。  <br/> |
 |プレース  <br/> |アプリが marketplace アプリであることを示します。  <br/> |
    
@@ -61,7 +61,7 @@ ms.locfileid: "44460198"
 |なし  <br/> |アプリにスコープがないことを示します。  <br/> |
 |User  <br/> |アプリがユーザーごとにあることを示します。  <br/> |
 |組織  <br/> |アプリが組織用であることを示します。  <br/> |
-|既定  <br/> |アプリが既定のアプリであることを示します。  <br/> |
+|既定値  <br/> |アプリが既定のアプリであることを示します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 

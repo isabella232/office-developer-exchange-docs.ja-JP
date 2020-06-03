@@ -13,7 +13,7 @@ ms.openlocfilehash: fd655e088b73372bc1dd68a740ebc2b516d1804a
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460968"
 ---
 # <a name="getdomainsettings-operation-soap"></a>GetDomainSettings 操作 (SOAP)
@@ -22,7 +22,7 @@ ms.locfileid: "44460968"
   
 ## <a name="getdomainsettings-request-example"></a>GetDomainSettings 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の**Getdomainsettings**要求の例は、ユーザーの**Externalewsurl**ドメイン設定の要求を示しています。 クライアントは、この要求をサーバーに送信します。 
   
@@ -76,7 +76,7 @@ ms.locfileid: "44460968"
     
 ## <a name="getdomainsettings-response-example"></a>GetDomainSettings 応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、サーバーがクライアントに送信する**Getdomainsettings**要求に対する正常な応答を示しています。 
   

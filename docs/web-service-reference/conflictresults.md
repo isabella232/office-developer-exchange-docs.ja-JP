@@ -16,7 +16,7 @@ ms.openlocfilehash: 923c7950e21039adf28e232486f4df5fc04889d1
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460170"
 ---
 # <a name="conflictresults"></a>ConflictResults
@@ -75,8 +75,7 @@ ms.locfileid: "44460170"
 
 
 
-
-  [UpdateItem 操作](updateitem-operation.md)
+[UpdateItem 操作](updateitem-operation.md)
   
  **ConflictResultsType**
 

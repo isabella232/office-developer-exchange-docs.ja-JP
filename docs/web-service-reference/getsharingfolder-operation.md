@@ -16,7 +16,7 @@ ms.openlocfilehash: cf66eb390b0287e89bb8402f26a2e728868a2b18
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460513"
 ---
 # <a name="getsharingfolder-operation"></a>GetSharingFolder 操作
@@ -90,7 +90,7 @@ ms.locfileid: "44460513"
   
 ## <a name="successful-getsharingfolder-response"></a>成功した GetSharingFolder 応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、 **Getsharingfolder**要求に対する正常な応答を示しています。 [SharingFolderId](sharingfolderid.md)要素の**Id**属性は、共有関係のローカルフォルダーの識別子を表します。 
   
@@ -123,7 +123,7 @@ ms.locfileid: "44460513"
 
 ## <a name="getsharingfolder-error-response"></a>GetSharingFolder エラー応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、 **Getsharingfolder**要求に対するエラー応答を示しています。 この例では、要求で[SharingFolderId](sharingfolderid.md)要素と[DataType](datatype.md)要素の両方が指定されているため、エラーが発生しました。 これら2つの要素のどちらか一方のみを指定できますが、両方を指定することはできません。 
   

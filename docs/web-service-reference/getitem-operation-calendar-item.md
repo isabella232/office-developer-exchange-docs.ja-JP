@@ -16,7 +16,7 @@ ms.openlocfilehash: 09fe92af12f03ce4cebd1e98f4e01c087ace64f9
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460618"
 ---
 # <a name="getitem-operation-calendar-item"></a>GetItem 操作 (予定表アイテム)
@@ -25,7 +25,7 @@ GetItem 操作は、Exchange ストアから予定表アイテムを取得しま
   
 ## <a name="getitem-request-example"></a>GetItem 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 GetItem 要求の次の例は、アイテムの id と件名を取得するための要求を形成する方法を示しています。
   
@@ -76,7 +76,7 @@ GetItem 操作の要求メッセージに関するその他のオプションに
   
 ## <a name="successful-getitem-response"></a>成功した GetItem 応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、GetItem 要求に対する正常な応答を示しています。 この応答を作成した要求では、IdOnly baseshape が使用されています。 この例では、応答はアイテムの ID のみを返します。 
   
@@ -297,7 +297,7 @@ GetItem 操作の応答メッセージに関するその他のオプションに
     
 - [DateTimeReceived](datetimereceived.md)
     
-- [[サイズ]](size.md)
+- [Size](size.md)
     
 - [Importance](importance.md)
     
@@ -383,6 +383,5 @@ GetItem 操作の応答メッセージに関するその他のオプションに
 
 
 
-
-  [GetItem 操作](getitem-operation.md)
+[GetItem 操作](getitem-operation.md)
 

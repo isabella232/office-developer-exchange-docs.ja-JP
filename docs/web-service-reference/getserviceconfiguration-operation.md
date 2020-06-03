@@ -16,7 +16,7 @@ ms.openlocfilehash: b8ea2cef366a52765850dddcc8c1ef1e8fa68b22
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460912"
 ---
 # <a name="getserviceconfiguration-operation"></a>GetServiceConfiguration 操作
@@ -25,7 +25,7 @@ ms.locfileid: "44460912"
   
 ## <a name="getserviceconfiguration-request-example"></a>GetServiceConfiguration 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の**GetServiceConfiguration**要求の例は、ユニファイドメッセージングサービスの構成情報を取得するための要求を形成する方法を示しています。 
   
@@ -53,7 +53,7 @@ ms.locfileid: "44460912"
 
 ## <a name="getserviceconfiguration-response-example"></a>GetServiceConfiguration response の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、 **GetServiceConfiguration**要求に対する正常な応答を示しています。 
   
@@ -95,7 +95,7 @@ ms.locfileid: "44460912"
 
 ## <a name="getserviceconfiguration-error-response-example"></a>GetServiceConfiguration エラー応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、 **GetServiceConfiguration**要求へのエラー応答を示しています。 このエラーは、構成名が正しくないことが原因で発生しました。 
   

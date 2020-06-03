@@ -16,7 +16,7 @@ ms.openlocfilehash: 93e8dbe28e130ab64d4b8d12d2befde1f77ae8fa
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460023"
 ---
 # <a name="getitem-operation-contact"></a>GetItem 操作 (連絡先)
@@ -25,7 +25,7 @@ GetItem 操作は、Exchange ストアから連絡先アイテムを取得する
   
 ## <a name="getitem-contact-request-example"></a>GetItem (連絡先) 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、Exchange ストアからアイテムを取得する方法を示しています。
   
@@ -72,7 +72,7 @@ Exchange ストアからアイテムを取得する要求では、すべての�
     
 ## <a name="successful-getitem-contact-response"></a>成功した GetItem (連絡先) 応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次のコード例では、**すべての Allproperties**[baseshape](baseshape.md)に対して、成功した GetItem 応答を示します。
   
@@ -171,7 +171,7 @@ Exchange ストアからアイテムを取得する要求では、すべての�
     
 - [Items](items.md)
     
-- [連絡先](contact.md)
+- [Contact](contact.md)
     
 - [ItemId](itemid.md)
     
@@ -185,7 +185,7 @@ Exchange ストアからアイテムを取得する要求では、すべての�
     
 - [DateTimeReceived](datetimereceived.md)
     
-- [[サイズ]](size.md)
+- [Size](size.md)
     
 - [Importance](importance.md)
     
@@ -253,7 +253,7 @@ Exchange ストアからアイテムを取得する要求では、すべての�
     
 ## <a name="invalid-getitem-contact-request-example"></a>無効な GetItem (Contact) 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次のコード例は、無効な要求を示しています。
   
@@ -284,7 +284,7 @@ Exchange ストアからアイテムを取得する要求では、すべての�
   
 ## <a name="getitem-contact-error-response"></a>GetItem (連絡先) エラー応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次のコード例は、GetItem (連絡先) 要求に対するエラー応答を示しています。
   
@@ -340,8 +340,7 @@ Exchange ストアからアイテムを取得する要求では、すべての�
 
 
 
-
-  [GetItem 操作](getitem-operation.md)
+[GetItem 操作](getitem-operation.md)
 
 
 - [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)

@@ -10,7 +10,7 @@ ms.openlocfilehash: 681dfee7e0a66a483b8638810da5e4e0ac0f05ac
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44459329"
 ---
 # <a name="recurrence-patterns-and-ews"></a>定期的なパターンと EWS
@@ -41,7 +41,7 @@ Exchange の定期的なパターンと定期的なアイテムについて説�
   
 **表 1. 使用可能な定期的なパターン**
 
-|**EWS マネージ API クラス**|**EWS の要素**|**例**|
+|**EWS マネージ API のクラス**|**EWS の要素**|**例**|
 |:-----|:-----|:-----|
 |[Recurrence.DailyPattern](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.recurrence.dailypattern%28v=exchg.80%29.aspx) <br/> |[DailyRecurrence](https://msdn.microsoft.com/library/0aaf265d-b723-49c6-8e9c-9ba60141e9ab%28Office.15%29.aspx) <br/> |毎日繰り返します。  <br/> 隔日で繰り返します。  <br/> |
 |[Recurrence.MonthlyPattern](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.recurrence.monthlypattern%28v=exchg.80%29.aspx) <br/> |[AbsoluteMonthlyRecurrence](https://msdn.microsoft.com/library/178fa0ae-9dfc-417f-933c-d657d31c2161%28Office.15%29.aspx) <br/> |毎月 10 日に繰り返します。  <br/> 隔月の 21 日に繰り返します。  <br/> |

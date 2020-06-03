@@ -16,7 +16,7 @@ ms.openlocfilehash: 5d022827990b96fd8790ae9566ef49028ebe404c
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44459960"
 ---
 # <a name="status"></a>状態
@@ -44,7 +44,7 @@ ms.locfileid: "44459960"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Task](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
+|[タスク](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 

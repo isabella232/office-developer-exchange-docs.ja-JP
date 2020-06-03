@@ -16,7 +16,7 @@ ms.openlocfilehash: b9c0f28333594a6c17ee9581a227fc4773874fd6
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460800"
 ---
 # <a name="create-itemsync"></a>Create (ItemSync)
@@ -106,13 +106,13 @@ ms.locfileid: "44460800"
 |[Item](item.md) <br/> |作成する汎用の Exchange アイテムを表します。  <br/> |
 |[Message](message-ex15websvcsotherref.md) <br/> |作成する Exchange 電子メールメッセージを表します。  <br/> |
 |[CalendarItem](calendaritem.md) <br/> |作成する Exchange 予定表アイテムを表します。  <br/> |
-|[連絡先](contact.md) <br/> |作成する Exchange の連絡先アイテムを表します。  <br/> |
+|[Contact](contact.md) <br/> |作成する Exchange の連絡先アイテムを表します。  <br/> |
 |[DistributionList](distributionlist.md) <br/> |作成する配布リストを表します。  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |作成する会議メッセージを表します。  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |作成する会議出席依頼を表します。  <br/> |
 |[MeetingResponse](meetingresponse.md) <br/> |作成する会議の応答を表します。  <br/> |
 |[MeetingCancellation](meetingcancellation.md) <br/> |作成する会議の取り消しを表します。  <br/> |
-|[Task](task.md) <br/> |作成するタスクを表します。  <br/> |
+|[タスク](task.md) <br/> |作成するタスクを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 

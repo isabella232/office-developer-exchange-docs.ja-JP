@@ -16,7 +16,7 @@ ms.openlocfilehash: 35ce49303c1e6009ce6c12b00c51713b39b64ca0
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44459056"
 ---
 # <a name="companyname"></a>CompanyName
@@ -44,7 +44,7 @@ ms.locfileid: "44459056"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[連絡先](contact.md) <br/> |Exchange ストア内の連絡先アイテムを表します。  <br/> |
+|[Contact](contact.md) <br/> |Exchange ストア内の連絡先アイテムを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 

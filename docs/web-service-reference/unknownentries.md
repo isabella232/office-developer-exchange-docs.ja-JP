@@ -16,7 +16,7 @@ ms.openlocfilehash: 68cb2518b895ca0a74e6b9ed649ee92b7502ab05
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44459420"
 ---
 # <a name="unknownentries"></a>UnknownEntries
@@ -70,8 +70,7 @@ ms.locfileid: "44459420"
 
 
 
-
-  [UpdateFolder 操作](updatefolder-operation.md)
+[UpdateFolder 操作](updatefolder-operation.md)
 
 
 - [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)

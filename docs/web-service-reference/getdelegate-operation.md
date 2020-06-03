@@ -16,7 +16,7 @@ ms.openlocfilehash: 400bf5d1cafcbb789aaa749c62c7a908622d4ddb
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44461066"
 ---
 # <a name="getdelegate-operation"></a>GetDelegate 操作
@@ -36,7 +36,7 @@ ms.locfileid: "44461066"
    
 ## <a name="getdelegate-request-example"></a>GetDelegate 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次のコード例は、user3's メールボックスに設定されているすべての代理人の設定を取得する方法を示しています。 各ユーザーのすべてのアクセス許可が応答で返されます。
   
@@ -70,7 +70,7 @@ ms.locfileid: "44461066"
   
 ## <a name="getdelegate-response-example"></a>GetDelegate 応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 **Getdelegate**応答の次の例は、 **getdelegate**要求に対する正常な応答を示しています。 応答には、代理人のアクセス許可、代理人が会議メッセージのコピーを受信するかどうか、および会議出席依頼を配信したユーザーを表示できるかどうかに関する情報が含まれます。 
   
