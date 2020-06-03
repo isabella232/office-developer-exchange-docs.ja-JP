@@ -16,23 +16,23 @@ ms.openlocfilehash: 57e722c7775baa090736875077781cee869c3b01
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44468503"
 ---
-# <a name="uploaditems-operation"></a><span data-ttu-id="ad77d-103">UploadItems 操作</span><span class="sxs-lookup"><span data-stu-id="ad77d-103">UploadItems operation</span></span>
+# <a name="uploaditems-operation"></a><span data-ttu-id="1ccb4-103">UploadItems 操作</span><span class="sxs-lookup"><span data-stu-id="1ccb4-103">UploadItems operation</span></span>
 
-<span data-ttu-id="ad77d-104">**UploadItems**操作は、アイテムのストリームを Exchange メールボックスにアップロードします。</span><span class="sxs-lookup"><span data-stu-id="ad77d-104">The **UploadItems** operation uploads a stream of items into an Exchange mailbox.</span></span> 
+<span data-ttu-id="1ccb4-104">**UploadItems**操作は、アイテムのストリームを Exchange メールボックスにアップロードします。</span><span class="sxs-lookup"><span data-stu-id="1ccb4-104">The **UploadItems** operation uploads a stream of items into an Exchange mailbox.</span></span> 
   
 > [!IMPORTANT]
-> <span data-ttu-id="ad77d-105">**UploadItems**操作は、Microsoft exchange Server 2010 Service Pack 1 (SP1) では、base64 でエンコードされたデータの最大値である25mb に制限されています。</span><span class="sxs-lookup"><span data-stu-id="ad77d-105">The **UploadItems** operation is restricted in MicrosoftExchange Server 2010 Service Pack 1 (SP1) to a maximum import payload of 25MB of base64 encoded data.</span></span> <span data-ttu-id="ad77d-106">この設定は、web.config ファイルで変更できます。</span><span class="sxs-lookup"><span data-stu-id="ad77d-106">The setting can be altered in the web.config file.</span></span> 
+> <span data-ttu-id="1ccb4-105">**UploadItems**操作は、Microsoft exchange Server 2010 Service Pack 1 (SP1) では、base64 でエンコードされたデータの最大値である25mb に制限されています。</span><span class="sxs-lookup"><span data-stu-id="1ccb4-105">The **UploadItems** operation is restricted in MicrosoftExchange Server 2010 Service Pack 1 (SP1) to a maximum import payload of 25MB of base64 encoded data.</span></span> <span data-ttu-id="1ccb4-106">この設定は、web.config ファイルで変更できます。</span><span class="sxs-lookup"><span data-stu-id="1ccb4-106">The setting can be altered in the web.config file.</span></span> 
   
-## <a name="uploaditems-request-example"></a><span data-ttu-id="ad77d-107">UploadItems 要求の例</span><span class="sxs-lookup"><span data-stu-id="ad77d-107">UploadItems request example</span></span>
+## <a name="uploaditems-request-example"></a><span data-ttu-id="1ccb4-107">UploadItems 要求の例</span><span class="sxs-lookup"><span data-stu-id="1ccb4-107">UploadItems request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="ad77d-108">説明</span><span class="sxs-lookup"><span data-stu-id="ad77d-108">Description</span></span>
+### <a name="description"></a><span data-ttu-id="1ccb4-108">Description</span><span class="sxs-lookup"><span data-stu-id="1ccb4-108">Description</span></span>
 
-<span data-ttu-id="ad77d-109">次の**UploadItems**要求の例は、2つのアイテムをメールボックスにアップロードする方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="ad77d-109">The following example of an **UploadItems** request shows how to upload two items into a mailbox.</span></span> <span data-ttu-id="ad77d-110">最初のアイテムは新しいアイテムです。</span><span class="sxs-lookup"><span data-stu-id="ad77d-110">The first item is a new item.</span></span> <span data-ttu-id="ad77d-111">2番目のアイテムは、メールボックス内の既存のアイテムの更新バージョンです。</span><span class="sxs-lookup"><span data-stu-id="ad77d-111">The second item is an updated version of an existing item in the mailbox.</span></span> 
+<span data-ttu-id="1ccb4-109">次の**UploadItems**要求の例は、2つのアイテムをメールボックスにアップロードする方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="1ccb4-109">The following example of an **UploadItems** request shows how to upload two items into a mailbox.</span></span> <span data-ttu-id="1ccb4-110">最初のアイテムは新しいアイテムです。</span><span class="sxs-lookup"><span data-stu-id="1ccb4-110">The first item is a new item.</span></span> <span data-ttu-id="1ccb4-111">2番目のアイテムは、メールボックス内の既存のアイテムの更新バージョンです。</span><span class="sxs-lookup"><span data-stu-id="1ccb4-111">The second item is an updated version of an existing item in the mailbox.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="ad77d-112">コード</span><span class="sxs-lookup"><span data-stu-id="ad77d-112">Code</span></span>
+### <a name="code"></a><span data-ttu-id="1ccb4-112">コード</span><span class="sxs-lookup"><span data-stu-id="1ccb4-112">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -78,35 +78,35 @@ ms.locfileid: "44468503"
 </soap:Envelope>
 ```
 
-### <a name="comments"></a><span data-ttu-id="ad77d-113">コメント</span><span class="sxs-lookup"><span data-stu-id="ad77d-113">Comments</span></span>
+### <a name="comments"></a><span data-ttu-id="1ccb4-113">コメント</span><span class="sxs-lookup"><span data-stu-id="1ccb4-113">Comments</span></span>
 
-<span data-ttu-id="ad77d-114">読みやすくするために、識別子とアイテムデータが短縮されています。</span><span class="sxs-lookup"><span data-stu-id="ad77d-114">Identifiers and the item data have been shortened to preserve readability.</span></span>
+<span data-ttu-id="1ccb4-114">読みやすくするために、識別子とアイテムデータが短縮されています。</span><span class="sxs-lookup"><span data-stu-id="1ccb4-114">Identifiers and the item data have been shortened to preserve readability.</span></span>
   
-### <a name="request-elements"></a><span data-ttu-id="ad77d-115">Request 要素</span><span class="sxs-lookup"><span data-stu-id="ad77d-115">Request elements</span></span>
+### <a name="request-elements"></a><span data-ttu-id="1ccb4-115">Request 要素</span><span class="sxs-lookup"><span data-stu-id="1ccb4-115">Request elements</span></span>
 
-<span data-ttu-id="ad77d-116">要求では、次の要素が使用されます。</span><span class="sxs-lookup"><span data-stu-id="ad77d-116">The following elements are used in the request:</span></span>
+<span data-ttu-id="1ccb4-116">要求では、次の要素が使用されます。</span><span class="sxs-lookup"><span data-stu-id="1ccb4-116">The following elements are used in the request:</span></span>
   
-- [<span data-ttu-id="ad77d-117">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="ad77d-117">RequestServerVersion</span></span>](requestserverversion.md)
+- [<span data-ttu-id="1ccb4-117">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="1ccb4-117">RequestServerVersion</span></span>](requestserverversion.md)
     
-- [<span data-ttu-id="ad77d-118">UploadItems</span><span class="sxs-lookup"><span data-stu-id="ad77d-118">UploadItems</span></span>](uploaditems.md)
+- [<span data-ttu-id="1ccb4-118">UploadItems</span><span class="sxs-lookup"><span data-stu-id="1ccb4-118">UploadItems</span></span>](uploaditems.md)
     
-- [<span data-ttu-id="ad77d-119">アイテム (NonEmptyArrayOfUploadItemsType)</span><span class="sxs-lookup"><span data-stu-id="ad77d-119">Items (NonEmptyArrayOfUploadItemsType)</span></span>](items-nonemptyarrayofuploaditemstype.md)
+- [<span data-ttu-id="1ccb4-119">アイテム (NonEmptyArrayOfUploadItemsType)</span><span class="sxs-lookup"><span data-stu-id="1ccb4-119">Items (NonEmptyArrayOfUploadItemsType)</span></span>](items-nonemptyarrayofuploaditemstype.md)
     
-- [<span data-ttu-id="ad77d-120">Item (UploadItemType)</span><span class="sxs-lookup"><span data-stu-id="ad77d-120">Item (UploadItemType)</span></span>](item-uploaditemtype.md)
+- [<span data-ttu-id="1ccb4-120">Item (UploadItemType)</span><span class="sxs-lookup"><span data-stu-id="1ccb4-120">Item (UploadItemType)</span></span>](item-uploaditemtype.md)
     
-- [<span data-ttu-id="ad77d-121">ParentFolderId</span><span class="sxs-lookup"><span data-stu-id="ad77d-121">ParentFolderId</span></span>](parentfolderid.md)
+- [<span data-ttu-id="1ccb4-121">ParentFolderId</span><span class="sxs-lookup"><span data-stu-id="1ccb4-121">ParentFolderId</span></span>](parentfolderid.md)
     
-- [<span data-ttu-id="ad77d-122">Data (base64Binary)</span><span class="sxs-lookup"><span data-stu-id="ad77d-122">Data (base64Binary)</span></span>](data-base64binary.md)
+- [<span data-ttu-id="1ccb4-122">Data (base64Binary)</span><span class="sxs-lookup"><span data-stu-id="1ccb4-122">Data (base64Binary)</span></span>](data-base64binary.md)
     
-- [<span data-ttu-id="ad77d-123">ItemId</span><span class="sxs-lookup"><span data-stu-id="ad77d-123">ItemId</span></span>](itemid.md)
+- [<span data-ttu-id="1ccb4-123">ItemId</span><span class="sxs-lookup"><span data-stu-id="1ccb4-123">ItemId</span></span>](itemid.md)
     
-## <a name="successful-uploaditems-response-example"></a><span data-ttu-id="ad77d-124">Successful UploadItems response の例</span><span class="sxs-lookup"><span data-stu-id="ad77d-124">Successful UploadItems response example</span></span>
+## <a name="successful-uploaditems-response-example"></a><span data-ttu-id="1ccb4-124">Successful UploadItems response の例</span><span class="sxs-lookup"><span data-stu-id="1ccb4-124">Successful UploadItems response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="ad77d-125">説明</span><span class="sxs-lookup"><span data-stu-id="ad77d-125">Description</span></span>
+### <a name="description"></a><span data-ttu-id="1ccb4-125">Description</span><span class="sxs-lookup"><span data-stu-id="1ccb4-125">Description</span></span>
 
-<span data-ttu-id="ad77d-126">次の例は、 **UploadItems**要求に対する正常な応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="ad77d-126">The following example shows a successful response to the **UploadItems** request.</span></span> 
+<span data-ttu-id="1ccb4-126">次の例は、 **UploadItems**要求に対する正常な応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="1ccb4-126">The following example shows a successful response to the **UploadItems** request.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="ad77d-127">コード</span><span class="sxs-lookup"><span data-stu-id="ad77d-127">Code</span></span>
+### <a name="code"></a><span data-ttu-id="1ccb4-127">コード</span><span class="sxs-lookup"><span data-stu-id="1ccb4-127">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -141,33 +141,33 @@ ms.locfileid: "44468503"
 </s:Envelope>
 ```
 
-### <a name="comments"></a><span data-ttu-id="ad77d-128">コメント</span><span class="sxs-lookup"><span data-stu-id="ad77d-128">Comments</span></span>
+### <a name="comments"></a><span data-ttu-id="1ccb4-128">コメント</span><span class="sxs-lookup"><span data-stu-id="1ccb4-128">Comments</span></span>
 
-<span data-ttu-id="ad77d-129">読みやすくするために、アイテム識別子が短縮されています。</span><span class="sxs-lookup"><span data-stu-id="ad77d-129">Item identifiers have been shortened to preserve readability.</span></span>
+<span data-ttu-id="1ccb4-129">読みやすくするために、アイテム識別子が短縮されています。</span><span class="sxs-lookup"><span data-stu-id="1ccb4-129">Item identifiers have been shortened to preserve readability.</span></span>
   
-### <a name="response-elements"></a><span data-ttu-id="ad77d-130">Response 要素</span><span class="sxs-lookup"><span data-stu-id="ad77d-130">Response elements</span></span>
+### <a name="response-elements"></a><span data-ttu-id="1ccb4-130">Response 要素</span><span class="sxs-lookup"><span data-stu-id="1ccb4-130">Response elements</span></span>
 
-<span data-ttu-id="ad77d-131">応答では、次の要素が使用されます。</span><span class="sxs-lookup"><span data-stu-id="ad77d-131">The following elements are used in the response:</span></span>
+<span data-ttu-id="1ccb4-131">応答では、次の要素が使用されます。</span><span class="sxs-lookup"><span data-stu-id="1ccb4-131">The following elements are used in the response:</span></span>
   
-- [<span data-ttu-id="ad77d-132">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="ad77d-132">ServerVersionInfo</span></span>](serverversioninfo.md)
+- [<span data-ttu-id="1ccb4-132">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="1ccb4-132">ServerVersionInfo</span></span>](serverversioninfo.md)
     
-- [<span data-ttu-id="ad77d-133">UploadItemsResponse</span><span class="sxs-lookup"><span data-stu-id="ad77d-133">UploadItemsResponse</span></span>](uploaditemsresponse.md)
+- [<span data-ttu-id="1ccb4-133">UploadItemsResponse</span><span class="sxs-lookup"><span data-stu-id="1ccb4-133">UploadItemsResponse</span></span>](uploaditemsresponse.md)
     
-- [<span data-ttu-id="ad77d-134">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="ad77d-134">ResponseMessages</span></span>](responsemessages.md)
+- [<span data-ttu-id="1ccb4-134">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="1ccb4-134">ResponseMessages</span></span>](responsemessages.md)
     
-- [<span data-ttu-id="ad77d-135">UploadItemsResponseMessage</span><span class="sxs-lookup"><span data-stu-id="ad77d-135">UploadItemsResponseMessage</span></span>](uploaditemsresponsemessage.md)
+- [<span data-ttu-id="1ccb4-135">UploadItemsResponseMessage</span><span class="sxs-lookup"><span data-stu-id="1ccb4-135">UploadItemsResponseMessage</span></span>](uploaditemsresponsemessage.md)
     
-- [<span data-ttu-id="ad77d-136">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="ad77d-136">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="1ccb4-136">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="1ccb4-136">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="ad77d-137">ItemId</span><span class="sxs-lookup"><span data-stu-id="ad77d-137">ItemId</span></span>](itemid.md)
+- [<span data-ttu-id="1ccb4-137">ItemId</span><span class="sxs-lookup"><span data-stu-id="1ccb4-137">ItemId</span></span>](itemid.md)
     
-## <a name="uploaditems-error-response-example"></a><span data-ttu-id="ad77d-138">UploadItems エラー応答の例</span><span class="sxs-lookup"><span data-stu-id="ad77d-138">UploadItems Error response example</span></span>
+## <a name="uploaditems-error-response-example"></a><span data-ttu-id="1ccb4-138">UploadItems エラー応答の例</span><span class="sxs-lookup"><span data-stu-id="1ccb4-138">UploadItems Error response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="ad77d-139">説明</span><span class="sxs-lookup"><span data-stu-id="ad77d-139">Description</span></span>
+### <a name="description"></a><span data-ttu-id="1ccb4-139">Description</span><span class="sxs-lookup"><span data-stu-id="1ccb4-139">Description</span></span>
 
-<span data-ttu-id="ad77d-140">次の例は、 **UploadItems**要求に対する応答を示しています。これは、メールボックス内に見つからないアイテムを更新しようとしたために発生したエラーを含んでいます。</span><span class="sxs-lookup"><span data-stu-id="ad77d-140">The following example shows a response to the **UploadItems** request that contains an error caused by an attempt to update an item that cannot be found in the mailbox.</span></span> 
+<span data-ttu-id="1ccb4-140">次の例は、 **UploadItems**要求に対する応答を示しています。これは、メールボックス内に見つからないアイテムを更新しようとしたために発生したエラーを含んでいます。</span><span class="sxs-lookup"><span data-stu-id="1ccb4-140">The following example shows a response to the **UploadItems** request that contains an error caused by an attempt to update an item that cannot be found in the mailbox.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="ad77d-141">コード</span><span class="sxs-lookup"><span data-stu-id="ad77d-141">Code</span></span>
+### <a name="code"></a><span data-ttu-id="1ccb4-141">コード</span><span class="sxs-lookup"><span data-stu-id="1ccb4-141">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -199,32 +199,32 @@ ms.locfileid: "44468503"
 </s:Envelope>
 ```
 
-### <a name="error-response-elements"></a><span data-ttu-id="ad77d-142">エラー応答要素</span><span class="sxs-lookup"><span data-stu-id="ad77d-142">Error response elements</span></span>
+### <a name="error-response-elements"></a><span data-ttu-id="1ccb4-142">エラー応答要素</span><span class="sxs-lookup"><span data-stu-id="1ccb4-142">Error response elements</span></span>
 
-<span data-ttu-id="ad77d-143">エラー応答では、次の要素が使用されます。</span><span class="sxs-lookup"><span data-stu-id="ad77d-143">The following elements are used in the error response:</span></span>
+<span data-ttu-id="1ccb4-143">エラー応答では、次の要素が使用されます。</span><span class="sxs-lookup"><span data-stu-id="1ccb4-143">The following elements are used in the error response:</span></span>
   
-- [<span data-ttu-id="ad77d-144">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="ad77d-144">ServerVersionInfo</span></span>](serverversioninfo.md)
+- [<span data-ttu-id="1ccb4-144">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="1ccb4-144">ServerVersionInfo</span></span>](serverversioninfo.md)
     
-- [<span data-ttu-id="ad77d-145">UploadItemsResponse</span><span class="sxs-lookup"><span data-stu-id="ad77d-145">UploadItemsResponse</span></span>](uploaditemsresponse.md)
+- [<span data-ttu-id="1ccb4-145">UploadItemsResponse</span><span class="sxs-lookup"><span data-stu-id="1ccb4-145">UploadItemsResponse</span></span>](uploaditemsresponse.md)
     
-- [<span data-ttu-id="ad77d-146">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="ad77d-146">ResponseMessages</span></span>](responsemessages.md)
+- [<span data-ttu-id="1ccb4-146">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="1ccb4-146">ResponseMessages</span></span>](responsemessages.md)
     
-- [<span data-ttu-id="ad77d-147">UploadItemsResponseMessage</span><span class="sxs-lookup"><span data-stu-id="ad77d-147">UploadItemsResponseMessage</span></span>](uploaditemsresponsemessage.md)
+- [<span data-ttu-id="1ccb4-147">UploadItemsResponseMessage</span><span class="sxs-lookup"><span data-stu-id="1ccb4-147">UploadItemsResponseMessage</span></span>](uploaditemsresponsemessage.md)
     
-- [<span data-ttu-id="ad77d-148">MessageText</span><span class="sxs-lookup"><span data-stu-id="ad77d-148">MessageText</span></span>](messagetext.md)
+- [<span data-ttu-id="1ccb4-148">MessageText</span><span class="sxs-lookup"><span data-stu-id="1ccb4-148">MessageText</span></span>](messagetext.md)
     
-- [<span data-ttu-id="ad77d-149">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="ad77d-149">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="1ccb4-149">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="1ccb4-149">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="ad77d-150">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="ad77d-150">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
+- [<span data-ttu-id="1ccb4-150">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="1ccb4-150">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
     
-## <a name="see-also"></a><span data-ttu-id="ad77d-151">関連項目</span><span class="sxs-lookup"><span data-stu-id="ad77d-151">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1ccb4-151">関連項目</span><span class="sxs-lookup"><span data-stu-id="1ccb4-151">See also</span></span>
 
 
 
-[<span data-ttu-id="ad77d-152">ExportItems 操作</span><span class="sxs-lookup"><span data-stu-id="ad77d-152">ExportItems operation</span></span>](exportitems-operation.md)
+[<span data-ttu-id="1ccb4-152">ExportItems 操作</span><span class="sxs-lookup"><span data-stu-id="1ccb4-152">ExportItems operation</span></span>](exportitems-operation.md)
 
 
-[<span data-ttu-id="ad77d-153">Exchange での EWS 操作</span><span class="sxs-lookup"><span data-stu-id="ad77d-153">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
+[<span data-ttu-id="1ccb4-153">Exchange での EWS 操作</span><span class="sxs-lookup"><span data-stu-id="1ccb4-153">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
   
-- [<span data-ttu-id="ad77d-154">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="ad77d-154">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="1ccb4-154">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="1ccb4-154">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

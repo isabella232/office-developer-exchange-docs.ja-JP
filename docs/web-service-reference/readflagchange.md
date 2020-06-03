@@ -16,12 +16,12 @@ ms.openlocfilehash: 354f8085a6ea5b738d8619e2ffeb0fbccefd51da
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44468307"
 ---
-# <a name="readflagchange"></a><span data-ttu-id="986f7-104">ReadFlagChange</span><span class="sxs-lookup"><span data-stu-id="986f7-104">ReadFlagChange</span></span>
+# <a name="readflagchange"></a><span data-ttu-id="ddee8-104">ReadFlagChange</span><span class="sxs-lookup"><span data-stu-id="ddee8-104">ReadFlagChange</span></span>
 
-<span data-ttu-id="986f7-105">**Readflagchange**要素は、アイテムが読み取られたときに、 [syncfolderitems 操作](syncfolderitems-operation.md)の応答で返されます。</span><span class="sxs-lookup"><span data-stu-id="986f7-105">The **ReadFlagChange** element is returned in [SyncFolderItems operation](syncfolderitems-operation.md) responses when an item has been read.</span></span> <span data-ttu-id="986f7-106">このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。</span><span class="sxs-lookup"><span data-stu-id="986f7-106">This property is read-only.</span></span> 
+<span data-ttu-id="ddee8-105">**Readflagchange**要素は、アイテムが読み取られたときに、 [syncfolderitems 操作](syncfolderitems-operation.md)の応答で返されます。</span><span class="sxs-lookup"><span data-stu-id="ddee8-105">The **ReadFlagChange** element is returned in [SyncFolderItems operation](syncfolderitems-operation.md) responses when an item has been read.</span></span> <span data-ttu-id="ddee8-106">このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。</span><span class="sxs-lookup"><span data-stu-id="ddee8-106">This property is read-only.</span></span> 
   
 ```xml
 <ReadFlagChange>
@@ -30,44 +30,44 @@ ms.locfileid: "44468307"
 </ReadFlagChange>
 ```
 
- <span data-ttu-id="986f7-107">**SyncFolderItemsReadFlagType**</span><span class="sxs-lookup"><span data-stu-id="986f7-107">**SyncFolderItemsReadFlagType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="986f7-108">属性と要素</span><span class="sxs-lookup"><span data-stu-id="986f7-108">Attributes and elements</span></span>
+ <span data-ttu-id="ddee8-107">**SyncFolderItemsReadFlagType**</span><span class="sxs-lookup"><span data-stu-id="ddee8-107">**SyncFolderItemsReadFlagType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="ddee8-108">属性と要素</span><span class="sxs-lookup"><span data-stu-id="ddee8-108">Attributes and elements</span></span>
 
-<span data-ttu-id="986f7-109">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="986f7-109">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="ddee8-109">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="ddee8-109">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="986f7-110">属性</span><span class="sxs-lookup"><span data-stu-id="986f7-110">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="ddee8-110">属性</span><span class="sxs-lookup"><span data-stu-id="ddee8-110">Attributes</span></span>
 
-<span data-ttu-id="986f7-111">なし。</span><span class="sxs-lookup"><span data-stu-id="986f7-111">None.</span></span>
+<span data-ttu-id="ddee8-111">なし。</span><span class="sxs-lookup"><span data-stu-id="ddee8-111">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="986f7-112">子要素</span><span class="sxs-lookup"><span data-stu-id="986f7-112">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="ddee8-112">子要素</span><span class="sxs-lookup"><span data-stu-id="ddee8-112">Child elements</span></span>
 
-|<span data-ttu-id="986f7-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="986f7-113">**Element**</span></span>|<span data-ttu-id="986f7-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="986f7-114">**Description**</span></span>|
+|<span data-ttu-id="ddee8-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="ddee8-113">**Element**</span></span>|<span data-ttu-id="ddee8-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="ddee8-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="986f7-115">ItemId</span><span class="sxs-lookup"><span data-stu-id="986f7-115">ItemId</span></span>](itemid.md) <br/> |<span data-ttu-id="986f7-116">読み取りフラグが変更されたアイテムを識別します。</span><span class="sxs-lookup"><span data-stu-id="986f7-116">Identifies the item for which the read-flag has been changed.</span></span>  <br/> |
-|[<span data-ttu-id="986f7-117">IsRead</span><span class="sxs-lookup"><span data-stu-id="986f7-117">IsRead</span></span>](isread.md) <br/> |<span data-ttu-id="986f7-118">読み取りフラグが**true**に設定されているかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="986f7-118">Indicates whether the read-flag has been set to **true**.</span></span>  <br/> |
+|[<span data-ttu-id="ddee8-115">ItemId</span><span class="sxs-lookup"><span data-stu-id="ddee8-115">ItemId</span></span>](itemid.md) <br/> |<span data-ttu-id="ddee8-116">読み取りフラグが変更されたアイテムを識別します。</span><span class="sxs-lookup"><span data-stu-id="ddee8-116">Identifies the item for which the read-flag has been changed.</span></span>  <br/> |
+|[<span data-ttu-id="ddee8-117">IsRead</span><span class="sxs-lookup"><span data-stu-id="ddee8-117">IsRead</span></span>](isread.md) <br/> |<span data-ttu-id="ddee8-118">読み取りフラグが**true**に設定されているかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="ddee8-118">Indicates whether the read-flag has been set to **true**.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="986f7-119">親要素</span><span class="sxs-lookup"><span data-stu-id="986f7-119">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="ddee8-119">親要素</span><span class="sxs-lookup"><span data-stu-id="ddee8-119">Parent elements</span></span>
 
-|<span data-ttu-id="986f7-120">**要素**</span><span class="sxs-lookup"><span data-stu-id="986f7-120">**Element**</span></span>|<span data-ttu-id="986f7-121">**説明**</span><span class="sxs-lookup"><span data-stu-id="986f7-121">**Description**</span></span>|
+|<span data-ttu-id="ddee8-120">**要素**</span><span class="sxs-lookup"><span data-stu-id="ddee8-120">**Element**</span></span>|<span data-ttu-id="ddee8-121">**説明**</span><span class="sxs-lookup"><span data-stu-id="ddee8-121">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="986f7-122">変更 (アイテム)</span><span class="sxs-lookup"><span data-stu-id="986f7-122">Changes (Items)</span></span>](changes-items.md) <br/> |<span data-ttu-id="986f7-123">クライアント上のアイテムと Exchange サーバー上のアイテムの間の相違点の種類を表す、変更の種類のシーケンス配列を含みます。</span><span class="sxs-lookup"><span data-stu-id="986f7-123">Contains a sequence array of change types that represent the types of differences between the items on the client and the items on the Exchange server.</span></span>  <br/> |
+|[<span data-ttu-id="ddee8-122">変更 (アイテム)</span><span class="sxs-lookup"><span data-stu-id="ddee8-122">Changes (Items)</span></span>](changes-items.md) <br/> |<span data-ttu-id="ddee8-123">クライアント上のアイテムと Exchange サーバー上のアイテムの間の相違点の種類を表す、変更の種類のシーケンス配列を含みます。</span><span class="sxs-lookup"><span data-stu-id="ddee8-123">Contains a sequence array of change types that represent the types of differences between the items on the client and the items on the Exchange server.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="986f7-124">注釈</span><span class="sxs-lookup"><span data-stu-id="986f7-124">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ddee8-124">注釈</span><span class="sxs-lookup"><span data-stu-id="ddee8-124">Remarks</span></span>
 
-<span data-ttu-id="986f7-125">この要素を記述するスキーマは、Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。</span><span class="sxs-lookup"><span data-stu-id="986f7-125">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2010 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="ddee8-125">この要素を記述するスキーマは、Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。</span><span class="sxs-lookup"><span data-stu-id="ddee8-125">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2010 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="986f7-126">要素の情報</span><span class="sxs-lookup"><span data-stu-id="986f7-126">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="ddee8-126">要素の情報</span><span class="sxs-lookup"><span data-stu-id="ddee8-126">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="986f7-127">Namespace</span><span class="sxs-lookup"><span data-stu-id="986f7-127">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="986f7-128">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="986f7-128">Schema Name</span></span>  <br/> |<span data-ttu-id="986f7-129">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="986f7-129">Types schema</span></span>  <br/> |
-|<span data-ttu-id="986f7-130">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="986f7-130">Validation File</span></span>  <br/> |<span data-ttu-id="986f7-131">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="986f7-131">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="986f7-132">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="986f7-132">Can be Empty</span></span>  <br/> |<span data-ttu-id="986f7-133">正しくない</span><span class="sxs-lookup"><span data-stu-id="986f7-133">False</span></span>  <br/> |
+|<span data-ttu-id="ddee8-127">Namespace</span><span class="sxs-lookup"><span data-stu-id="ddee8-127">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="ddee8-128">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="ddee8-128">Schema Name</span></span>  <br/> |<span data-ttu-id="ddee8-129">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="ddee8-129">Types schema</span></span>  <br/> |
+|<span data-ttu-id="ddee8-130">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="ddee8-130">Validation File</span></span>  <br/> |<span data-ttu-id="ddee8-131">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="ddee8-131">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="ddee8-132">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="ddee8-132">Can be Empty</span></span>  <br/> |<span data-ttu-id="ddee8-133">正しくない</span><span class="sxs-lookup"><span data-stu-id="ddee8-133">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="986f7-134">関連項目</span><span class="sxs-lookup"><span data-stu-id="986f7-134">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ddee8-134">関連項目</span><span class="sxs-lookup"><span data-stu-id="ddee8-134">See also</span></span>
 
 
 
-- [<span data-ttu-id="986f7-135">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="986f7-135">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="ddee8-135">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="ddee8-135">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
