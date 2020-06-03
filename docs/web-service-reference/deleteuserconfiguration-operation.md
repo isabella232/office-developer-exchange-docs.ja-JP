@@ -16,23 +16,23 @@ ms.openlocfilehash: 064e1ace2c2f51783431ce42670b2a4fd8146b54
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44451468"
 ---
-# <a name="deleteuserconfiguration-operation"></a><span data-ttu-id="11a46-103">DeleteUserConfiguration 操作</span><span class="sxs-lookup"><span data-stu-id="11a46-103">DeleteUserConfiguration operation</span></span>
+# <a name="deleteuserconfiguration-operation"></a><span data-ttu-id="11bf4-103">DeleteUserConfiguration 操作</span><span class="sxs-lookup"><span data-stu-id="11bf4-103">DeleteUserConfiguration operation</span></span>
 
-<span data-ttu-id="11a46-104">**Deleteuserconfiguration**操作は、フォルダーのユーザー構成オブジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="11a46-104">The **DeleteUserConfiguration** operation deletes a user configuration object on a folder.</span></span> 
+<span data-ttu-id="11bf4-104">**Deleteuserconfiguration**操作は、フォルダーのユーザー構成オブジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="11bf4-104">The **DeleteUserConfiguration** operation deletes a user configuration object on a folder.</span></span> 
   
 > [!IMPORTANT]
-> <span data-ttu-id="11a46-105">**Deleteuserconfiguration**操作は、イベント通知システムの移動イベントをトリガーします。</span><span class="sxs-lookup"><span data-stu-id="11a46-105">The **DeleteUserConfiguration** operation will trigger a move event for the event notification system.</span></span> <span data-ttu-id="11a46-106">ユーザー構成オブジェクトは、収集に移動されます。</span><span class="sxs-lookup"><span data-stu-id="11a46-106">The user configuration object will be moved to the dumpster.</span></span> 
+> <span data-ttu-id="11bf4-105">**Deleteuserconfiguration**操作は、イベント通知システムの移動イベントをトリガーします。</span><span class="sxs-lookup"><span data-stu-id="11bf4-105">The **DeleteUserConfiguration** operation will trigger a move event for the event notification system.</span></span> <span data-ttu-id="11bf4-106">ユーザー構成オブジェクトは、収集に移動されます。</span><span class="sxs-lookup"><span data-stu-id="11bf4-106">The user configuration object will be moved to the dumpster.</span></span> 
   
-## <a name="deleteuserconfiguration-request-example"></a><span data-ttu-id="11a46-107">DeleteUserConfiguration 要求の例</span><span class="sxs-lookup"><span data-stu-id="11a46-107">DeleteUserConfiguration request example</span></span>
+## <a name="deleteuserconfiguration-request-example"></a><span data-ttu-id="11bf4-107">DeleteUserConfiguration 要求の例</span><span class="sxs-lookup"><span data-stu-id="11bf4-107">DeleteUserConfiguration request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="11a46-108">説明</span><span class="sxs-lookup"><span data-stu-id="11a46-108">Description</span></span>
+### <a name="description"></a><span data-ttu-id="11bf4-108">Description</span><span class="sxs-lookup"><span data-stu-id="11bf4-108">Description</span></span>
 
-<span data-ttu-id="11a46-109">次の**Deleteuserconfiguration**要求の例は、下書きフォルダーのユーザー構成オブジェクトを削除するための要求を形成する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="11a46-109">The following example of a **DeleteUserConfiguration** request shows how to form a request to delete a user configuration object on the Drafts folder.</span></span> 
+<span data-ttu-id="11bf4-109">次の**Deleteuserconfiguration**要求の例は、下書きフォルダーのユーザー構成オブジェクトを削除するための要求を形成する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="11bf4-109">The following example of a **DeleteUserConfiguration** request shows how to form a request to delete a user configuration object on the Drafts folder.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="11a46-110">コード</span><span class="sxs-lookup"><span data-stu-id="11a46-110">Code</span></span>
+### <a name="code"></a><span data-ttu-id="11bf4-110">コード</span><span class="sxs-lookup"><span data-stu-id="11bf4-110">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -54,13 +54,13 @@ ms.locfileid: "44451468"
 </soap:Envelope>
 ```
 
-## <a name="deleteuserconfiguration-response-example"></a><span data-ttu-id="11a46-111">DeleteUserConfiguration の応答の例</span><span class="sxs-lookup"><span data-stu-id="11a46-111">DeleteUserConfiguration response example</span></span>
+## <a name="deleteuserconfiguration-response-example"></a><span data-ttu-id="11bf4-111">DeleteUserConfiguration の応答の例</span><span class="sxs-lookup"><span data-stu-id="11bf4-111">DeleteUserConfiguration response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="11a46-112">説明</span><span class="sxs-lookup"><span data-stu-id="11a46-112">Description</span></span>
+### <a name="description"></a><span data-ttu-id="11bf4-112">Description</span><span class="sxs-lookup"><span data-stu-id="11bf4-112">Description</span></span>
 
-<span data-ttu-id="11a46-113">次の例は、 **Deleteuserconfiguration**要求に対する正常な応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="11a46-113">The following example shows a successful response to the **DeleteUserConfiguration** request.</span></span> 
+<span data-ttu-id="11bf4-113">次の例は、 **Deleteuserconfiguration**要求に対する正常な応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="11bf4-113">The following example shows a successful response to the **DeleteUserConfiguration** request.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="11a46-114">コード</span><span class="sxs-lookup"><span data-stu-id="11a46-114">Code</span></span>
+### <a name="code"></a><span data-ttu-id="11bf4-114">コード</span><span class="sxs-lookup"><span data-stu-id="11bf4-114">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -90,8 +90,8 @@ ms.locfileid: "44451468"
 </s:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="11a46-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="11a46-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="11bf4-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="11bf4-115">See also</span></span>
 
-- [<span data-ttu-id="11a46-116">Exchange での EWS 操作</span><span class="sxs-lookup"><span data-stu-id="11a46-116">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md) 
-- [<span data-ttu-id="11a46-117">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="11a46-117">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="11bf4-116">Exchange での EWS 操作</span><span class="sxs-lookup"><span data-stu-id="11bf4-116">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md) 
+- [<span data-ttu-id="11bf4-117">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="11bf4-117">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

@@ -12,38 +12,38 @@ ms.openlocfilehash: b5e38404cbb1907a1118ab3ae8e56abb5a8d5e41
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44456756"
 ---
-# <a name="removeimgroup-operation"></a><span data-ttu-id="289e8-103">RemoveImGroup 操作</span><span class="sxs-lookup"><span data-stu-id="289e8-103">RemoveImGroup operation</span></span>
+# <a name="removeimgroup-operation"></a><span data-ttu-id="0607d-103">RemoveImGroup 操作</span><span class="sxs-lookup"><span data-stu-id="0607d-103">RemoveImGroup operation</span></span>
 
-<span data-ttu-id="289e8-104">**Removeimgroup** EWS 操作に関する情報を検索します。</span><span class="sxs-lookup"><span data-stu-id="289e8-104">Find information about the **RemoveImGroup** EWS operation.</span></span> 
+<span data-ttu-id="0607d-104">**Removeimgroup** EWS 操作に関する情報を検索します。</span><span class="sxs-lookup"><span data-stu-id="0607d-104">Find information about the **RemoveImGroup** EWS operation.</span></span> 
   
-<span data-ttu-id="289e8-105">**Removeimgroup**操作は、1つのインスタントメッセージング (IM) グループをメールボックスから削除します。</span><span class="sxs-lookup"><span data-stu-id="289e8-105">The **RemoveImGroup** operation removes a single instant messaging (IM) group from a mailbox.</span></span> 
+<span data-ttu-id="0607d-105">**Removeimgroup**操作は、1つのインスタントメッセージング (IM) グループをメールボックスから削除します。</span><span class="sxs-lookup"><span data-stu-id="0607d-105">The **RemoveImGroup** operation removes a single instant messaging (IM) group from a mailbox.</span></span> 
   
-<span data-ttu-id="289e8-106">この操作は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="289e8-106">This operation was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="0607d-106">この操作は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="0607d-106">This operation was introduced in Exchange Server 2013.</span></span>
   
-## <a name="using-the-removeimgroup-operation"></a><span data-ttu-id="289e8-107">RemoveImGroup 操作の使用</span><span class="sxs-lookup"><span data-stu-id="289e8-107">Using the RemoveImGroup operation</span></span>
+## <a name="using-the-removeimgroup-operation"></a><span data-ttu-id="0607d-107">RemoveImGroup 操作の使用</span><span class="sxs-lookup"><span data-stu-id="0607d-107">Using the RemoveImGroup operation</span></span>
 
-<span data-ttu-id="289e8-108">**Removeimgroup**操作は、1つのグループ識別子引数のみを受け取ります。</span><span class="sxs-lookup"><span data-stu-id="289e8-108">The **RemoveImGroup** operation only takes a single group identifier argument.</span></span> 
+<span data-ttu-id="0607d-108">**Removeimgroup**操作は、1つのグループ識別子引数のみを受け取ります。</span><span class="sxs-lookup"><span data-stu-id="0607d-108">The **RemoveImGroup** operation only takes a single group identifier argument.</span></span> 
   
-### <a name="removeimgroup-operation-soap-headers"></a><span data-ttu-id="289e8-109">RemoveImGroup 操作 SOAP ヘッダー</span><span class="sxs-lookup"><span data-stu-id="289e8-109">RemoveImGroup operation SOAP headers</span></span>
+### <a name="removeimgroup-operation-soap-headers"></a><span data-ttu-id="0607d-109">RemoveImGroup 操作 SOAP ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0607d-109">RemoveImGroup operation SOAP headers</span></span>
 
-<span data-ttu-id="289e8-110">**Removeimgroup**操作では、次の表に示す SOAP ヘッダーを使用できます。</span><span class="sxs-lookup"><span data-stu-id="289e8-110">The **RemoveImGroup** operation can use the SOAP headers that are listed in the following table.</span></span> 
+<span data-ttu-id="0607d-110">**Removeimgroup**操作では、次の表に示す SOAP ヘッダーを使用できます。</span><span class="sxs-lookup"><span data-stu-id="0607d-110">The **RemoveImGroup** operation can use the SOAP headers that are listed in the following table.</span></span> 
   
-|<span data-ttu-id="289e8-111">**ヘッダー名**</span><span class="sxs-lookup"><span data-stu-id="289e8-111">**Header name**</span></span>|<span data-ttu-id="289e8-112">**要素**</span><span class="sxs-lookup"><span data-stu-id="289e8-112">**Element**</span></span>|<span data-ttu-id="289e8-113">**説明**</span><span class="sxs-lookup"><span data-stu-id="289e8-113">**Description**</span></span>|
+|<span data-ttu-id="0607d-111">**ヘッダー名**</span><span class="sxs-lookup"><span data-stu-id="0607d-111">**Header name**</span></span>|<span data-ttu-id="0607d-112">**要素**</span><span class="sxs-lookup"><span data-stu-id="0607d-112">**Element**</span></span>|<span data-ttu-id="0607d-113">**説明**</span><span class="sxs-lookup"><span data-stu-id="0607d-113">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="289e8-114">**偽装**</span><span class="sxs-lookup"><span data-stu-id="289e8-114">**Impersonation**</span></span> <br/> |[<span data-ttu-id="289e8-115">ExchangeImpersonation</span><span class="sxs-lookup"><span data-stu-id="289e8-115">ExchangeImpersonation</span></span>](exchangeimpersonation.md) <br/> |<span data-ttu-id="289e8-116">クライアントアプリケーションが偽装しているユーザーを識別します。</span><span class="sxs-lookup"><span data-stu-id="289e8-116">Identifies the user whom the client application is impersonating.</span></span> <span data-ttu-id="289e8-117">このヘッダーは、要求に適用されます。</span><span class="sxs-lookup"><span data-stu-id="289e8-117">This header is applicable to a request.</span></span>  <br/> |
-|<span data-ttu-id="289e8-118">**MailboxCulture**</span><span class="sxs-lookup"><span data-stu-id="289e8-118">**MailboxCulture**</span></span> <br/> |[<span data-ttu-id="289e8-119">MailboxCulture</span><span class="sxs-lookup"><span data-stu-id="289e8-119">MailboxCulture</span></span>](mailboxculture.md) <br/> |<span data-ttu-id="289e8-120">RFC 3066 で定義されているように、メールボックスへのアクセスに使用されるカルチャ (言語の識別用のタグ) を識別します。</span><span class="sxs-lookup"><span data-stu-id="289e8-120">Identifies the culture, as defined in RFC 3066, "Tags for the Identification of Languages", to be used to access the mailbox.</span></span> <span data-ttu-id="289e8-121">このヘッダーは、要求に適用されます。</span><span class="sxs-lookup"><span data-stu-id="289e8-121">This header is applicable to a request.</span></span>  <br/> |
-|<span data-ttu-id="289e8-122">**RequestVersion**</span><span class="sxs-lookup"><span data-stu-id="289e8-122">**RequestVersion**</span></span> <br/> |[<span data-ttu-id="289e8-123">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="289e8-123">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="289e8-124">操作要求のスキーマバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="289e8-124">Identifies the schema version for the operation request.</span></span> <span data-ttu-id="289e8-125">このヘッダーは、要求に適用されます。</span><span class="sxs-lookup"><span data-stu-id="289e8-125">This header is applicable to a request.</span></span>  <br/> |
-|<span data-ttu-id="289e8-126">**ServerVersion**</span><span class="sxs-lookup"><span data-stu-id="289e8-126">**ServerVersion**</span></span> <br/> |[<span data-ttu-id="289e8-127">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="289e8-127">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="289e8-128">要求に応答したサーバーのバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="289e8-128">Identifies the version of the server that responded to the request.</span></span> <span data-ttu-id="289e8-129">このヘッダーは応答に適用されます。</span><span class="sxs-lookup"><span data-stu-id="289e8-129">This header is applicable to a response.</span></span>  <br/> |
+|<span data-ttu-id="0607d-114">**偽装**</span><span class="sxs-lookup"><span data-stu-id="0607d-114">**Impersonation**</span></span> <br/> |[<span data-ttu-id="0607d-115">ExchangeImpersonation</span><span class="sxs-lookup"><span data-stu-id="0607d-115">ExchangeImpersonation</span></span>](exchangeimpersonation.md) <br/> |<span data-ttu-id="0607d-116">クライアントアプリケーションが偽装しているユーザーを識別します。</span><span class="sxs-lookup"><span data-stu-id="0607d-116">Identifies the user whom the client application is impersonating.</span></span> <span data-ttu-id="0607d-117">このヘッダーは、要求に適用されます。</span><span class="sxs-lookup"><span data-stu-id="0607d-117">This header is applicable to a request.</span></span>  <br/> |
+|<span data-ttu-id="0607d-118">**MailboxCulture**</span><span class="sxs-lookup"><span data-stu-id="0607d-118">**MailboxCulture**</span></span> <br/> |[<span data-ttu-id="0607d-119">MailboxCulture</span><span class="sxs-lookup"><span data-stu-id="0607d-119">MailboxCulture</span></span>](mailboxculture.md) <br/> |<span data-ttu-id="0607d-120">RFC 3066 で定義されているように、メールボックスへのアクセスに使用されるカルチャ (言語の識別用のタグ) を識別します。</span><span class="sxs-lookup"><span data-stu-id="0607d-120">Identifies the culture, as defined in RFC 3066, "Tags for the Identification of Languages", to be used to access the mailbox.</span></span> <span data-ttu-id="0607d-121">このヘッダーは、要求に適用されます。</span><span class="sxs-lookup"><span data-stu-id="0607d-121">This header is applicable to a request.</span></span>  <br/> |
+|<span data-ttu-id="0607d-122">**RequestVersion**</span><span class="sxs-lookup"><span data-stu-id="0607d-122">**RequestVersion**</span></span> <br/> |[<span data-ttu-id="0607d-123">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="0607d-123">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="0607d-124">操作要求のスキーマバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="0607d-124">Identifies the schema version for the operation request.</span></span> <span data-ttu-id="0607d-125">このヘッダーは、要求に適用されます。</span><span class="sxs-lookup"><span data-stu-id="0607d-125">This header is applicable to a request.</span></span>  <br/> |
+|<span data-ttu-id="0607d-126">**ServerVersion**</span><span class="sxs-lookup"><span data-stu-id="0607d-126">**ServerVersion**</span></span> <br/> |[<span data-ttu-id="0607d-127">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="0607d-127">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="0607d-128">要求に応答したサーバーのバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="0607d-128">Identifies the version of the server that responded to the request.</span></span> <span data-ttu-id="0607d-129">このヘッダーは応答に適用されます。</span><span class="sxs-lookup"><span data-stu-id="0607d-129">This header is applicable to a response.</span></span>  <br/> |
    
-## <a name="removeimgroup-operation-request-example"></a><span data-ttu-id="289e8-130">RemoveImGroup 操作要求の例</span><span class="sxs-lookup"><span data-stu-id="289e8-130">RemoveImGroup operation request example</span></span>
+## <a name="removeimgroup-operation-request-example"></a><span data-ttu-id="0607d-130">RemoveImGroup 操作要求の例</span><span class="sxs-lookup"><span data-stu-id="0607d-130">RemoveImGroup operation request example</span></span>
 
-<span data-ttu-id="289e8-131">次の**Removeimgroup**操作要求の例は、IM グループを削除する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="289e8-131">The following example of a **RemoveImGroup** operation request shows how to remove an IM group.</span></span> 
+<span data-ttu-id="0607d-131">次の**Removeimgroup**操作要求の例は、IM グループを削除する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="0607d-131">The following example of a **RemoveImGroup** operation request shows how to remove an IM group.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="289e8-132">このグループ ID は読みやすいように短縮されています。</span><span class="sxs-lookup"><span data-stu-id="289e8-132">The group ID has been shortened to preserve readability.</span></span> 
+> <span data-ttu-id="0607d-132">このグループ ID は読みやすいように短縮されています。</span><span class="sxs-lookup"><span data-stu-id="0607d-132">The group ID has been shortened to preserve readability.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -63,15 +63,15 @@ ms.locfileid: "44456756"
 </soap:Envelope>
 ```
 
-<span data-ttu-id="289e8-133">要求 SOAP 本文には、次の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="289e8-133">The request SOAP body contains the following elements:</span></span>
+<span data-ttu-id="0607d-133">要求 SOAP 本文には、次の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="0607d-133">The request SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="289e8-134">RemoveImGroup</span><span class="sxs-lookup"><span data-stu-id="289e8-134">RemoveImGroup</span></span>](removeimgroup.md)
+- [<span data-ttu-id="0607d-134">RemoveImGroup</span><span class="sxs-lookup"><span data-stu-id="0607d-134">RemoveImGroup</span></span>](removeimgroup.md)
     
-- [<span data-ttu-id="289e8-135">GroupId</span><span class="sxs-lookup"><span data-stu-id="289e8-135">GroupId</span></span>](groupid.md)
+- [<span data-ttu-id="0607d-135">GroupId</span><span class="sxs-lookup"><span data-stu-id="0607d-135">GroupId</span></span>](groupid.md)
     
-## <a name="successful-removeimgroup-operation-response"></a><span data-ttu-id="289e8-136">RemoveImGroup 操作の応答が正常に行われる</span><span class="sxs-lookup"><span data-stu-id="289e8-136">Successful RemoveImGroup operation response</span></span>
+## <a name="successful-removeimgroup-operation-response"></a><span data-ttu-id="0607d-136">RemoveImGroup 操作の応答が正常に行われる</span><span class="sxs-lookup"><span data-stu-id="0607d-136">Successful RemoveImGroup operation response</span></span>
 
-<span data-ttu-id="289e8-137">次の例は、 **Removeimgroup**操作要求に対する正常な応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="289e8-137">The following example shows a successful response to a **RemoveImGroup** operation request.</span></span> 
+<span data-ttu-id="0607d-137">次の例は、 **Removeimgroup**操作要求に対する正常な応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="0607d-137">The following example shows a successful response to a **RemoveImGroup** operation request.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -97,15 +97,15 @@ ms.locfileid: "44456756"
 </s:Envelope>
 ```
 
-<span data-ttu-id="289e8-138">応答 SOAP 本文には、次の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="289e8-138">The response SOAP body contains the following elements:</span></span>
+<span data-ttu-id="0607d-138">応答 SOAP 本文には、次の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="0607d-138">The response SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="289e8-139">RemoveImGroupResponse</span><span class="sxs-lookup"><span data-stu-id="289e8-139">RemoveImGroupResponse</span></span>](removeimgroupresponse.md)
+- [<span data-ttu-id="0607d-139">RemoveImGroupResponse</span><span class="sxs-lookup"><span data-stu-id="0607d-139">RemoveImGroupResponse</span></span>](removeimgroupresponse.md)
     
-- [<span data-ttu-id="289e8-140">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="289e8-140">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="0607d-140">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="0607d-140">ResponseCode</span></span>](responsecode.md)
     
-## <a name="removeimgroup-operation-errorinvalidimgroupid-error-response"></a><span data-ttu-id="289e8-141">RemoveImGroup 操作 ErrorInvalidImGroupId エラー応答</span><span class="sxs-lookup"><span data-stu-id="289e8-141">RemoveImGroup operation ErrorInvalidImGroupId error response</span></span>
+## <a name="removeimgroup-operation-errorinvalidimgroupid-error-response"></a><span data-ttu-id="0607d-141">RemoveImGroup 操作 ErrorInvalidImGroupId エラー応答</span><span class="sxs-lookup"><span data-stu-id="0607d-141">RemoveImGroup operation ErrorInvalidImGroupId error response</span></span>
 
-<span data-ttu-id="289e8-142">次の例は、 **Removeimgroup**操作要求へのエラー応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="289e8-142">The following example shows an error response to a **RemoveImGroup** operation request.</span></span> <span data-ttu-id="289e8-143">メールボックスに存在しないグループを削除しようとすると、次のエラー応答が発生します。</span><span class="sxs-lookup"><span data-stu-id="289e8-143">The following error response occurs when an attempt is made to remove a group that does not exist in the mailbox.</span></span> 
+<span data-ttu-id="0607d-142">次の例は、 **Removeimgroup**操作要求へのエラー応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="0607d-142">The following example shows an error response to a **RemoveImGroup** operation request.</span></span> <span data-ttu-id="0607d-143">メールボックスに存在しないグループを削除しようとすると、次のエラー応答が発生します。</span><span class="sxs-lookup"><span data-stu-id="0607d-143">The following error response occurs when an attempt is made to remove a group that does not exist in the mailbox.</span></span> 
   
 ```XML
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
@@ -132,21 +132,21 @@ ms.locfileid: "44456756"
 </s:Envelope>
 ```
 
-<span data-ttu-id="289e8-144">エラー応答 SOAP 本文には、次の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="289e8-144">The error response SOAP body contains the following elements:</span></span>
+<span data-ttu-id="0607d-144">エラー応答 SOAP 本文には、次の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="0607d-144">The error response SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="289e8-145">RemoveImGroupResponse</span><span class="sxs-lookup"><span data-stu-id="289e8-145">RemoveImGroupResponse</span></span>](removeimgroupresponse.md)
+- [<span data-ttu-id="0607d-145">RemoveImGroupResponse</span><span class="sxs-lookup"><span data-stu-id="0607d-145">RemoveImGroupResponse</span></span>](removeimgroupresponse.md)
     
-- [<span data-ttu-id="289e8-146">MessageText</span><span class="sxs-lookup"><span data-stu-id="289e8-146">MessageText</span></span>](messagetext.md)
+- [<span data-ttu-id="0607d-146">MessageText</span><span class="sxs-lookup"><span data-stu-id="0607d-146">MessageText</span></span>](messagetext.md)
     
-- [<span data-ttu-id="289e8-147">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="289e8-147">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="0607d-147">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="0607d-147">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="289e8-148">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="289e8-148">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
+- [<span data-ttu-id="0607d-148">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="0607d-148">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
     
-<span data-ttu-id="289e8-149">EWS で汎用的でこの操作に固有の追加のエラーコードについては、「応答」[を参照してください。](responsecode.md)</span><span class="sxs-lookup"><span data-stu-id="289e8-149">For additional error codes that are generic to EWS and specific to this operation, see [ResponseCode](responsecode.md).</span></span>
+<span data-ttu-id="0607d-149">EWS で汎用的でこの操作に固有の追加のエラーコードについては、「応答」[を参照してください。](responsecode.md)</span><span class="sxs-lookup"><span data-stu-id="0607d-149">For additional error codes that are generic to EWS and specific to this operation, see [ResponseCode](responsecode.md).</span></span>
   
-## <a name="removeimgroup-operation-errorinvalididmalformed-error-response"></a><span data-ttu-id="289e8-150">RemoveImGroup 操作 ErrorInvalidIdMalformed エラー応答</span><span class="sxs-lookup"><span data-stu-id="289e8-150">RemoveImGroup operation ErrorInvalidIdMalformed error response</span></span>
+## <a name="removeimgroup-operation-errorinvalididmalformed-error-response"></a><span data-ttu-id="0607d-150">RemoveImGroup 操作 ErrorInvalidIdMalformed エラー応答</span><span class="sxs-lookup"><span data-stu-id="0607d-150">RemoveImGroup operation ErrorInvalidIdMalformed error response</span></span>
 
-<span data-ttu-id="289e8-151">次の例は、 **Removeimgroup**操作要求へのエラー応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="289e8-151">The following example shows an error response to a **RemoveImGroup** operation request.</span></span> <span data-ttu-id="289e8-152">誤って書式設定されたグループ識別子を持つグループを削除しようとすると、次のエラー応答が発生します。</span><span class="sxs-lookup"><span data-stu-id="289e8-152">The following error response occurs when an attempt is made to remove a group with an incorrectly formatted group identifier.</span></span> 
+<span data-ttu-id="0607d-151">次の例は、 **Removeimgroup**操作要求へのエラー応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="0607d-151">The following example shows an error response to a **RemoveImGroup** operation request.</span></span> <span data-ttu-id="0607d-152">誤って書式設定されたグループ識別子を持つグループを削除しようとすると、次のエラー応答が発生します。</span><span class="sxs-lookup"><span data-stu-id="0607d-152">The following error response occurs when an attempt is made to remove a group with an incorrectly formatted group identifier.</span></span> 
   
 ```XML
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
@@ -173,22 +173,22 @@ ms.locfileid: "44456756"
 </s:Envelope>
 ```
 
-<span data-ttu-id="289e8-153">エラー応答 SOAP 本文には、次の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="289e8-153">The error response SOAP body contains the following elements:</span></span>
+<span data-ttu-id="0607d-153">エラー応答 SOAP 本文には、次の要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="0607d-153">The error response SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="289e8-154">RemoveImGroupResponse</span><span class="sxs-lookup"><span data-stu-id="289e8-154">RemoveImGroupResponse</span></span>](removeimgroupresponse.md)
+- [<span data-ttu-id="0607d-154">RemoveImGroupResponse</span><span class="sxs-lookup"><span data-stu-id="0607d-154">RemoveImGroupResponse</span></span>](removeimgroupresponse.md)
     
-- [<span data-ttu-id="289e8-155">MessageText</span><span class="sxs-lookup"><span data-stu-id="289e8-155">MessageText</span></span>](messagetext.md)
+- [<span data-ttu-id="0607d-155">MessageText</span><span class="sxs-lookup"><span data-stu-id="0607d-155">MessageText</span></span>](messagetext.md)
     
-- [<span data-ttu-id="289e8-156">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="289e8-156">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="0607d-156">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="0607d-156">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="289e8-157">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="289e8-157">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
+- [<span data-ttu-id="0607d-157">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="0607d-157">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
     
-## <a name="see-also"></a><span data-ttu-id="289e8-158">関連項目</span><span class="sxs-lookup"><span data-stu-id="289e8-158">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0607d-158">関連項目</span><span class="sxs-lookup"><span data-stu-id="0607d-158">See also</span></span>
 
-- [<span data-ttu-id="289e8-159">Exchange 内の EWS のユーザーと連絡先</span><span class="sxs-lookup"><span data-stu-id="289e8-159">People and contacts in EWS in Exchange</span></span>](https://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
+- [<span data-ttu-id="0607d-159">Exchange 内の EWS のユーザーと連絡先</span><span class="sxs-lookup"><span data-stu-id="0607d-159">People and contacts in EWS in Exchange</span></span>](https://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
     
-- [<span data-ttu-id="289e8-160">AddImGroup 操作</span><span class="sxs-lookup"><span data-stu-id="289e8-160">AddImGroup operation</span></span>](addimgroup-operation.md)
+- [<span data-ttu-id="0607d-160">AddImGroup 操作</span><span class="sxs-lookup"><span data-stu-id="0607d-160">AddImGroup operation</span></span>](addimgroup-operation.md)
     
-- [<span data-ttu-id="289e8-161">SetImGroup 操作</span><span class="sxs-lookup"><span data-stu-id="289e8-161">SetImGroup operation</span></span>](setimgroup-operation.md)
+- [<span data-ttu-id="0607d-161">SetImGroup 操作</span><span class="sxs-lookup"><span data-stu-id="0607d-161">SetImGroup operation</span></span>](setimgroup-operation.md)
     
 

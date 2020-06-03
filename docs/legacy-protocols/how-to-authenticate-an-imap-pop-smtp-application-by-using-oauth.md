@@ -8,99 +8,99 @@ ms.openlocfilehash: fbe4eaefc5befcc173096c9b8526adebf74a0aad
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44438437"
 ---
-# <a name="authenticate-an-imap-pop-or-smtp-connection-using-oauth"></a><span data-ttu-id="7d11d-103">OAuth を使用して IMAP、POP、または SMTP 接続を認証する</span><span class="sxs-lookup"><span data-stu-id="7d11d-103">Authenticate an IMAP, POP or SMTP connection using OAuth</span></span>
+# <a name="authenticate-an-imap-pop-or-smtp-connection-using-oauth"></a><span data-ttu-id="16677-103">OAuth を使用して IMAP、POP、または SMTP 接続を認証する</span><span class="sxs-lookup"><span data-stu-id="16677-103">Authenticate an IMAP, POP or SMTP connection using OAuth</span></span>
 
-<span data-ttu-id="7d11d-104">OAuth 認証を使用して IMAP、POP、または SMTP プロトコルに接続し、Office 365 ユーザーの電子メールデータにアクセスする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="7d11d-104">Learn how to use OAuth authentication to connect with IMAP, POP or SMTP protocols and access email data for Office 365 users.</span></span>
+<span data-ttu-id="16677-104">OAuth 認証を使用して IMAP、POP、または SMTP プロトコルに接続し、Office 365 ユーザーの電子メールデータにアクセスする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="16677-104">Learn how to use OAuth authentication to connect with IMAP, POP or SMTP protocols and access email data for Office 365 users.</span></span>
 
-> <span data-ttu-id="7d11d-105">OAuth2 では、以下に示す IMAP、POP、SMTP プロトコルのサポートは、Outlook.com ユーザーに対してサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7d11d-105">OAuth2 support for IMAP, POP, SMTP protocols as described below is not supported for Outlook.com users.</span></span>
+> <span data-ttu-id="16677-105">OAuth2 では、以下に示す IMAP、POP、SMTP プロトコルのサポートは、Outlook.com ユーザーに対してサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="16677-105">OAuth2 support for IMAP, POP, SMTP protocols as described below is not supported for Outlook.com users.</span></span>
 
-<span data-ttu-id="7d11d-106">OAuth 2.0 に精通していない場合は、まず「 [Microsoft identity platform (v2.0)」の概要](/azure/active-directory/develop/v2-overview)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7d11d-106">If you're not familiar with OAuth 2.0, start by reading the [Microsoft identity platform (v2.0) overview](/azure/active-directory/develop/v2-overview).</span></span> <span data-ttu-id="7d11d-107">このドキュメントでは、Sdk を含む Microsoft identity platform のさまざまなコンポーネントについて説明します。</span><span class="sxs-lookup"><span data-stu-id="7d11d-107">That document introduces you to different components of Microsoft identity platform, including SDKs.</span></span>
+<span data-ttu-id="16677-106">OAuth 2.0 に精通していない場合は、まず「 [Microsoft identity platform (v2.0)」の概要](/azure/active-directory/develop/v2-overview)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="16677-106">If you're not familiar with OAuth 2.0, start by reading the [Microsoft identity platform (v2.0) overview](/azure/active-directory/develop/v2-overview).</span></span> <span data-ttu-id="16677-107">このドキュメントでは、Sdk を含む Microsoft identity platform のさまざまなコンポーネントについて説明します。</span><span class="sxs-lookup"><span data-stu-id="16677-107">That document introduces you to different components of Microsoft identity platform, including SDKs.</span></span>
 
-<span data-ttu-id="7d11d-108">Azure Active Directory によって提供される OAuth 認証サービスを使用して、アプリケーションが IMAP、POP、または SMTP プロトコルを使用して Office 365 で Exchange Online にアクセスできるようにすることができます。</span><span class="sxs-lookup"><span data-stu-id="7d11d-108">You can use the OAuth authentication service provided by Azure Active Directory to enable your application to connect with IMAP, POP or SMTP protocols to access Exchange Online in Office 365.</span></span> <span data-ttu-id="7d11d-109">アプリケーションで OAuth を使用するには、次のことを行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="7d11d-109">To use OAuth with your application you need to:</span></span>
+<span data-ttu-id="16677-108">Azure Active Directory によって提供される OAuth 認証サービスを使用して、アプリケーションが IMAP、POP、または SMTP プロトコルを使用して Office 365 で Exchange Online にアクセスできるようにすることができます。</span><span class="sxs-lookup"><span data-stu-id="16677-108">You can use the OAuth authentication service provided by Azure Active Directory to enable your application to connect with IMAP, POP or SMTP protocols to access Exchange Online in Office 365.</span></span> <span data-ttu-id="16677-109">アプリケーションで OAuth を使用するには、次のことを行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="16677-109">To use OAuth with your application you need to:</span></span>
 
-1. <span data-ttu-id="7d11d-110">Azure Active Directory に[アプリケーションを登録する](#register-your-application)。</span><span class="sxs-lookup"><span data-stu-id="7d11d-110">[Register your application](#register-your-application) with Azure Active Directory.</span></span>
-1. <span data-ttu-id="7d11d-111">Azure Active Directory で[アプリケーションを構成](#configure-your-application)します。</span><span class="sxs-lookup"><span data-stu-id="7d11d-111">[Configure your application](#configure-your-application) in Azure Active Directory.</span></span>
-1. <span data-ttu-id="7d11d-112">トークンサーバーから[アクセストークンを取得](#get-an-access-token)します。</span><span class="sxs-lookup"><span data-stu-id="7d11d-112">[Get an access token](#get-an-access-token) from a token server.</span></span>
-1. <span data-ttu-id="7d11d-113">アクセストークンを使用して[接続要求を認証](#authenticate-connection-requests)します。</span><span class="sxs-lookup"><span data-stu-id="7d11d-113">[Authenticate connection requests](#authenticate-connection-requests) with an access token.</span></span>
+1. <span data-ttu-id="16677-110">Azure Active Directory に[アプリケーションを登録する](#register-your-application)。</span><span class="sxs-lookup"><span data-stu-id="16677-110">[Register your application](#register-your-application) with Azure Active Directory.</span></span>
+1. <span data-ttu-id="16677-111">Azure Active Directory で[アプリケーションを構成](#configure-your-application)します。</span><span class="sxs-lookup"><span data-stu-id="16677-111">[Configure your application](#configure-your-application) in Azure Active Directory.</span></span>
+1. <span data-ttu-id="16677-112">トークンサーバーから[アクセストークンを取得](#get-an-access-token)します。</span><span class="sxs-lookup"><span data-stu-id="16677-112">[Get an access token](#get-an-access-token) from a token server.</span></span>
+1. <span data-ttu-id="16677-113">アクセストークンを使用して[接続要求を認証](#authenticate-connection-requests)します。</span><span class="sxs-lookup"><span data-stu-id="16677-113">[Authenticate connection requests](#authenticate-connection-requests) with an access token.</span></span>
 
-## <a name="register-your-application"></a><span data-ttu-id="7d11d-114">アプリケーションを登録する</span><span class="sxs-lookup"><span data-stu-id="7d11d-114">Register your application</span></span>
+## <a name="register-your-application"></a><span data-ttu-id="16677-114">アプリケーションを登録する</span><span class="sxs-lookup"><span data-stu-id="16677-114">Register your application</span></span>
 
-<span data-ttu-id="7d11d-115">OAuth を使用するには、アプリケーションが Azure Active Directory に登録されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="7d11d-115">To use OAuth, an application must be registered with Azure Active Directory.</span></span>
+<span data-ttu-id="16677-115">OAuth を使用するには、アプリケーションが Azure Active Directory に登録されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="16677-115">To use OAuth, an application must be registered with Azure Active Directory.</span></span>
 
-<span data-ttu-id="7d11d-116">「 [Microsoft identity platform を使用してアプリケーションを登録](/azure/active-directory/develop/quickstart-register-app)する」に記載されている手順に従って、新しいアプリケーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="7d11d-116">Follow the instructions listed in [Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app) to create a new application.</span></span>
+<span data-ttu-id="16677-116">「 [Microsoft identity platform を使用してアプリケーションを登録](/azure/active-directory/develop/quickstart-register-app)する」に記載されている手順に従って、新しいアプリケーションを作成します。</span><span class="sxs-lookup"><span data-stu-id="16677-116">Follow the instructions listed in [Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app) to create a new application.</span></span>
 
-## <a name="configure-your-application"></a><span data-ttu-id="7d11d-117">アプリケーションを構成する</span><span class="sxs-lookup"><span data-stu-id="7d11d-117">Configure your application</span></span>
+## <a name="configure-your-application"></a><span data-ttu-id="16677-117">アプリケーションを構成する</span><span class="sxs-lookup"><span data-stu-id="16677-117">Configure your application</span></span>
 
-<span data-ttu-id="7d11d-118">[「Configure a client application to access Web api](/azure/active-directory/develop/quickstart-configure-app-access-web-apis) 」に記載されている手順に従います。</span><span class="sxs-lookup"><span data-stu-id="7d11d-118">Follow the instructions listed in [Configure a client application to access web APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis)</span></span>
+<span data-ttu-id="16677-118">[「Configure a client application to access Web api](/azure/active-directory/develop/quickstart-configure-app-access-web-apis) 」に記載されている手順に従います。</span><span class="sxs-lookup"><span data-stu-id="16677-118">Follow the instructions listed in [Configure a client application to access web APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis)</span></span>
 
-<span data-ttu-id="7d11d-119">統合するプロトコルに対応する次の1つ以上のアクセス許可のスコープを追加してください。</span><span class="sxs-lookup"><span data-stu-id="7d11d-119">Make sure to add one or more of the following permission scopes that correspond to the protocols you would like to integrate with.</span></span> <span data-ttu-id="7d11d-120">**アクセス許可の追加**ウィザードで、[ **Microsoft Graph** ] を選択し、[**アクセス許可の委任**] をクリックして、次のアクセス許可スコープを検索します。</span><span class="sxs-lookup"><span data-stu-id="7d11d-120">In the **Add a permission** wizard, select **Microsoft Graph** and then **Delegated permissions** to find the following permission scopes listed.</span></span>
+<span data-ttu-id="16677-119">統合するプロトコルに対応する次の1つ以上のアクセス許可のスコープを追加してください。</span><span class="sxs-lookup"><span data-stu-id="16677-119">Make sure to add one or more of the following permission scopes that correspond to the protocols you would like to integrate with.</span></span> <span data-ttu-id="16677-120">**アクセス許可の追加**ウィザードで、[ **Microsoft Graph** ] を選択し、[**アクセス許可の委任**] をクリックして、次のアクセス許可スコープを検索します。</span><span class="sxs-lookup"><span data-stu-id="16677-120">In the **Add a permission** wizard, select **Microsoft Graph** and then **Delegated permissions** to find the following permission scopes listed.</span></span>
 
-| <span data-ttu-id="7d11d-121">プロトコル</span><span class="sxs-lookup"><span data-stu-id="7d11d-121">Protocol</span></span>  | <span data-ttu-id="7d11d-122">アクセス許可の適用範囲</span><span class="sxs-lookup"><span data-stu-id="7d11d-122">Permission scope</span></span>        |
+| <span data-ttu-id="16677-121">プロトコル</span><span class="sxs-lookup"><span data-stu-id="16677-121">Protocol</span></span>  | <span data-ttu-id="16677-122">アクセス許可の適用範囲</span><span class="sxs-lookup"><span data-stu-id="16677-122">Permission scope</span></span>        |
 |-----------|-------------------------|
-| <span data-ttu-id="7d11d-123">IMAP</span><span class="sxs-lookup"><span data-stu-id="7d11d-123">IMAP</span></span>      | `IMAP.AccessAsUser.All` |
-| <span data-ttu-id="7d11d-124">POP</span><span class="sxs-lookup"><span data-stu-id="7d11d-124">POP</span></span>       | `POP.AccessAsUser.All`  |
-| <span data-ttu-id="7d11d-125">SMTP 認証</span><span class="sxs-lookup"><span data-stu-id="7d11d-125">SMTP AUTH</span></span> | `SMTP.Send`             |
+| <span data-ttu-id="16677-123">IMAP</span><span class="sxs-lookup"><span data-stu-id="16677-123">IMAP</span></span>      | `IMAP.AccessAsUser.All` |
+| <span data-ttu-id="16677-124">POP</span><span class="sxs-lookup"><span data-stu-id="16677-124">POP</span></span>       | `POP.AccessAsUser.All`  |
+| <span data-ttu-id="16677-125">SMTP 認証</span><span class="sxs-lookup"><span data-stu-id="16677-125">SMTP AUTH</span></span> | `SMTP.Send`             |
 
-## <a name="get-an-access-token"></a><span data-ttu-id="7d11d-126">アクセス トークンを取得する</span><span class="sxs-lookup"><span data-stu-id="7d11d-126">Get an access token</span></span>
+## <a name="get-an-access-token"></a><span data-ttu-id="16677-126">アクセス トークンを取得する</span><span class="sxs-lookup"><span data-stu-id="16677-126">Get an access token</span></span>
 
-<span data-ttu-id="7d11d-127">[Msal クライアントライブラリ](/azure/active-directory/develop/msal-overview)のいずれかを使用して、クライアントアプリケーションからアクセストークンを取得することができます。</span><span class="sxs-lookup"><span data-stu-id="7d11d-127">You can use one of our [MSAL client libraries](/azure/active-directory/develop/msal-overview) to fetch an access token from your client application.</span></span>
+<span data-ttu-id="16677-127">[Msal クライアントライブラリ](/azure/active-directory/develop/msal-overview)のいずれかを使用して、クライアントアプリケーションからアクセストークンを取得することができます。</span><span class="sxs-lookup"><span data-stu-id="16677-127">You can use one of our [MSAL client libraries](/azure/active-directory/develop/msal-overview) to fetch an access token from your client application.</span></span>
 
-<span data-ttu-id="7d11d-128">または、次の一覧から適切なフローを選択し、対応する手順に従って、基になる identity platform REST Api を呼び出し、アクセストークンを取得することもできます。</span><span class="sxs-lookup"><span data-stu-id="7d11d-128">Alternatively, you can select an appropriate flow from the following list and follow the corresponding steps to call the underlying identity platform REST APIs and retrieve an access token.</span></span>
+<span data-ttu-id="16677-128">または、次の一覧から適切なフローを選択し、対応する手順に従って、基になる identity platform REST Api を呼び出し、アクセストークンを取得することもできます。</span><span class="sxs-lookup"><span data-stu-id="16677-128">Alternatively, you can select an appropriate flow from the following list and follow the corresponding steps to call the underlying identity platform REST APIs and retrieve an access token.</span></span>
 
-1. [<span data-ttu-id="7d11d-129">OAuth2 認証コードフロー</span><span class="sxs-lookup"><span data-stu-id="7d11d-129">OAuth2 authorization code flow</span></span>](/azure/active-directory/develop/v2-oauth2-auth-code-flow)
-1. [<span data-ttu-id="7d11d-130">OAuth2 デバイス承認の付与フロー</span><span class="sxs-lookup"><span data-stu-id="7d11d-130">OAuth2 Device authorization grant flow</span></span>](/azure/active-directory/develop/v2-oauth2-device-code)
+1. [<span data-ttu-id="16677-129">OAuth2 認証コードフロー</span><span class="sxs-lookup"><span data-stu-id="16677-129">OAuth2 authorization code flow</span></span>](/azure/active-directory/develop/v2-oauth2-auth-code-flow)
+1. [<span data-ttu-id="16677-130">OAuth2 デバイス承認の付与フロー</span><span class="sxs-lookup"><span data-stu-id="16677-130">OAuth2 Device authorization grant flow</span></span>](/azure/active-directory/develop/v2-oauth2-device-code)
 
-<span data-ttu-id="7d11d-131">OAuth2 クライアント資格情報の付与フローを介した IMAP、POP、SMTP 認証プロトコルへの OAuth アクセスはサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7d11d-131">OAuth access to IMAP, POP, SMTP AUTH protocols via OAuth2 client credentials grant flow is not supported.</span></span> <span data-ttu-id="7d11d-132">アプリケーションが Microsoft 365 組織のすべてのメールボックスに永続的にアクセスする必要がある場合は、Microsoft Graph Api を使用して、ユーザーなしでアクセスを許可し、詳細なアクセス許可を有効にし、管理者が特定のメールボックスのセットへのアクセスを許可されるようにすることをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="7d11d-132">If your application needs persistent access to all mailboxes in a Microsoft 365 organization, we recommend that you use the Microsoft Graph APIs which allow access without a user, enable granular permissions and let administrators scope such access to a specific set of mailboxes.</span></span>
+<span data-ttu-id="16677-131">OAuth2 クライアント資格情報の付与フローを介した IMAP、POP、SMTP 認証プロトコルへの OAuth アクセスはサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="16677-131">OAuth access to IMAP, POP, SMTP AUTH protocols via OAuth2 client credentials grant flow is not supported.</span></span> <span data-ttu-id="16677-132">アプリケーションが Microsoft 365 組織のすべてのメールボックスに永続的にアクセスする必要がある場合は、Microsoft Graph Api を使用して、ユーザーなしでアクセスを許可し、詳細なアクセス許可を有効にし、管理者が特定のメールボックスのセットへのアクセスを許可されるようにすることをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="16677-132">If your application needs persistent access to all mailboxes in a Microsoft 365 organization, we recommend that you use the Microsoft Graph APIs which allow access without a user, enable granular permissions and let administrators scope such access to a specific set of mailboxes.</span></span>
 
-<span data-ttu-id="7d11d-133">アプリケーションを承認してアクセストークンを要求するときには、Outlook リソース Url を含む完全な範囲を指定してください。</span><span class="sxs-lookup"><span data-stu-id="7d11d-133">Make sure to specify the full scopes, including Outlook resource URLs, when authorizing your application and requesting an access token.</span></span>
+<span data-ttu-id="16677-133">アプリケーションを承認してアクセストークンを要求するときには、Outlook リソース Url を含む完全な範囲を指定してください。</span><span class="sxs-lookup"><span data-stu-id="16677-133">Make sure to specify the full scopes, including Outlook resource URLs, when authorizing your application and requesting an access token.</span></span>
 
-| <span data-ttu-id="7d11d-134">プロトコル</span><span class="sxs-lookup"><span data-stu-id="7d11d-134">Protocol</span></span>  | <span data-ttu-id="7d11d-135">アクセス許可のスコープ文字列</span><span class="sxs-lookup"><span data-stu-id="7d11d-135">Permission scope string</span></span> |
+| <span data-ttu-id="16677-134">プロトコル</span><span class="sxs-lookup"><span data-stu-id="16677-134">Protocol</span></span>  | <span data-ttu-id="16677-135">アクセス許可のスコープ文字列</span><span class="sxs-lookup"><span data-stu-id="16677-135">Permission scope string</span></span> |
 |-----------|-------------------------|
-| <span data-ttu-id="7d11d-136">IMAP</span><span class="sxs-lookup"><span data-stu-id="7d11d-136">IMAP</span></span>      | `https://outlook.office.com/IMAP.AccessAsUser.All` |
-| <span data-ttu-id="7d11d-137">POP</span><span class="sxs-lookup"><span data-stu-id="7d11d-137">POP</span></span>       | `https://outlook.office.com/POP.AccessAsUser.All`  |
-| <span data-ttu-id="7d11d-138">SMTP 認証</span><span class="sxs-lookup"><span data-stu-id="7d11d-138">SMTP AUTH</span></span> | `https://outlook.office.com/SMTP.Send`             |
+| <span data-ttu-id="16677-136">IMAP</span><span class="sxs-lookup"><span data-stu-id="16677-136">IMAP</span></span>      | `https://outlook.office.com/IMAP.AccessAsUser.All` |
+| <span data-ttu-id="16677-137">POP</span><span class="sxs-lookup"><span data-stu-id="16677-137">POP</span></span>       | `https://outlook.office.com/POP.AccessAsUser.All`  |
+| <span data-ttu-id="16677-138">SMTP 認証</span><span class="sxs-lookup"><span data-stu-id="16677-138">SMTP AUTH</span></span> | `https://outlook.office.com/SMTP.Send`             |
 
-<span data-ttu-id="7d11d-139">また、 [offline_access](/azure/active-directory/develop/v2-permissions-and-consent#offline_access)スコープを要求することもできます。</span><span class="sxs-lookup"><span data-stu-id="7d11d-139">In addition, you can request for [offline_access](/azure/active-directory/develop/v2-permissions-and-consent#offline_access) scope.</span></span> <span data-ttu-id="7d11d-140">ユーザーが offline_access スコープを承認すると、アプリは Microsoft identity platform token endpoint から更新トークンを受け取ることができます。</span><span class="sxs-lookup"><span data-stu-id="7d11d-140">When a user approves the offline_access scope, your app can receive refresh tokens from the Microsoft identity platform token endpoint.</span></span> <span data-ttu-id="7d11d-141">更新トークンは長期間の場合があります。</span><span class="sxs-lookup"><span data-stu-id="7d11d-141">Refresh tokens are long-lived.</span></span> <span data-ttu-id="7d11d-142">アプリは、新しいアクセストークンを古いものとして期限切れにすることができます。</span><span class="sxs-lookup"><span data-stu-id="7d11d-142">Your app can get new access tokens as older ones expire.</span></span>
+<span data-ttu-id="16677-139">また、 [offline_access](/azure/active-directory/develop/v2-permissions-and-consent#offline_access)スコープを要求することもできます。</span><span class="sxs-lookup"><span data-stu-id="16677-139">In addition, you can request for [offline_access](/azure/active-directory/develop/v2-permissions-and-consent#offline_access) scope.</span></span> <span data-ttu-id="16677-140">ユーザーが offline_access スコープを承認すると、アプリは Microsoft identity platform token endpoint から更新トークンを受け取ることができます。</span><span class="sxs-lookup"><span data-stu-id="16677-140">When a user approves the offline_access scope, your app can receive refresh tokens from the Microsoft identity platform token endpoint.</span></span> <span data-ttu-id="16677-141">更新トークンは長期間の場合があります。</span><span class="sxs-lookup"><span data-stu-id="16677-141">Refresh tokens are long-lived.</span></span> <span data-ttu-id="16677-142">アプリは、新しいアクセストークンを古いものとして期限切れにすることができます。</span><span class="sxs-lookup"><span data-stu-id="16677-142">Your app can get new access tokens as older ones expire.</span></span>
 
-## <a name="authenticate-connection-requests"></a><span data-ttu-id="7d11d-143">接続要求を認証する</span><span class="sxs-lookup"><span data-stu-id="7d11d-143">Authenticate connection requests</span></span>
+## <a name="authenticate-connection-requests"></a><span data-ttu-id="16677-143">接続要求を認証する</span><span class="sxs-lookup"><span data-stu-id="16677-143">Authenticate connection requests</span></span>
 
-<span data-ttu-id="7d11d-144">Office 365 メールサーバーへの接続は、 [office 365 の IMAP および POP の電子メール設定](https://support.office.com/article/pop-and-imap-email-settings-for-outlook-8361e398-8af4-4e97-b147-6c6c4ac95353)を使用して開始できます。</span><span class="sxs-lookup"><span data-stu-id="7d11d-144">You can initiate a connection to Office 365 mail servers using the [IMAP and POP email settings for Office 365](https://support.office.com/article/pop-and-imap-email-settings-for-outlook-8361e398-8af4-4e97-b147-6c6c4ac95353).</span></span>
+<span data-ttu-id="16677-144">Office 365 メールサーバーへの接続は、 [office 365 の IMAP および POP の電子メール設定](https://support.office.com/article/pop-and-imap-email-settings-for-outlook-8361e398-8af4-4e97-b147-6c6c4ac95353)を使用して開始できます。</span><span class="sxs-lookup"><span data-stu-id="16677-144">You can initiate a connection to Office 365 mail servers using the [IMAP and POP email settings for Office 365](https://support.office.com/article/pop-and-imap-email-settings-for-outlook-8361e398-8af4-4e97-b147-6c6c4ac95353).</span></span>
 
-### <a name="sasl-xoauth2"></a><span data-ttu-id="7d11d-145">SASL XOAUTH2</span><span class="sxs-lookup"><span data-stu-id="7d11d-145">SASL XOAUTH2</span></span>
+### <a name="sasl-xoauth2"></a><span data-ttu-id="16677-145">SASL XOAUTH2</span><span class="sxs-lookup"><span data-stu-id="16677-145">SASL XOAUTH2</span></span>
 
-<span data-ttu-id="7d11d-146">OAuth の統合には、アプリケーションで、アクセストークンのエンコードと送信に SASL XOAUTH2 format を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7d11d-146">OAuth integration with requires your application to use SASL XOAUTH2 format for encoding and transmitting the access token.</span></span> <span data-ttu-id="7d11d-147">SASL XOAUTH2 は、次の形式でユーザー名とアクセストークンをエンコードします。</span><span class="sxs-lookup"><span data-stu-id="7d11d-147">SASL XOAUTH2 encodes the username, access token together in the following format:</span></span>
+<span data-ttu-id="16677-146">OAuth の統合には、アプリケーションで、アクセストークンのエンコードと送信に SASL XOAUTH2 format を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="16677-146">OAuth integration with requires your application to use SASL XOAUTH2 format for encoding and transmitting the access token.</span></span> <span data-ttu-id="16677-147">SASL XOAUTH2 は、次の形式でユーザー名とアクセストークンをエンコードします。</span><span class="sxs-lookup"><span data-stu-id="16677-147">SASL XOAUTH2 encodes the username, access token together in the following format:</span></span>
 
 ```text
 base64("user=" + userName + "^Aauth=Bearer " + accessToken + "^A^A")
 ```
 
-<span data-ttu-id="7d11d-148">`^A`**コントロール**  +  **a** () を表し `%x01` ます。</span><span class="sxs-lookup"><span data-stu-id="7d11d-148">`^A` represents a **Control** + **A** (`%x01`).</span></span>
+<span data-ttu-id="16677-148">`^A`**コントロール**  +  **a** () を表し `%x01` ます。</span><span class="sxs-lookup"><span data-stu-id="16677-148">`^A` represents a **Control** + **A** (`%x01`).</span></span>
 
-<span data-ttu-id="7d11d-149">たとえば、アクセストークンを使用してアクセスする SASL XOAUTH2 形式は次のように `test@contoso.onmicrosoft.com` `EwBAAl3BAAUFFpUAo7J3Ve0bjLBWZWCclRC3EoAA` なります。</span><span class="sxs-lookup"><span data-stu-id="7d11d-149">For example, the SASL XOAUTH2 format to access `test@contoso.onmicrosoft.com` with access token `EwBAAl3BAAUFFpUAo7J3Ve0bjLBWZWCclRC3EoAA` is:</span></span>
+<span data-ttu-id="16677-149">たとえば、アクセストークンを使用してアクセスする SASL XOAUTH2 形式は次のように `test@contoso.onmicrosoft.com` `EwBAAl3BAAUFFpUAo7J3Ve0bjLBWZWCclRC3EoAA` なります。</span><span class="sxs-lookup"><span data-stu-id="16677-149">For example, the SASL XOAUTH2 format to access `test@contoso.onmicrosoft.com` with access token `EwBAAl3BAAUFFpUAo7J3Ve0bjLBWZWCclRC3EoAA` is:</span></span>
 
 ```text
 base64("user=test@contoso.onmicrosoft.com^Aauth=Bearer EwBAAl3BAAUFFpUAo7J3Ve0bjLBWZWCclRC3EoAA^A^A")
 ```
 
-<span data-ttu-id="7d11d-150">Base64 エンコード後は、次の文字列に変換されます。</span><span class="sxs-lookup"><span data-stu-id="7d11d-150">After base64 encoding, this translates to the following string.</span></span> <span data-ttu-id="7d11d-151">読みやすくするために改行が挿入されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="7d11d-151">Note that line breaks are inserted for readability.</span></span>
+<span data-ttu-id="16677-150">Base64 エンコード後は、次の文字列に変換されます。</span><span class="sxs-lookup"><span data-stu-id="16677-150">After base64 encoding, this translates to the following string.</span></span> <span data-ttu-id="16677-151">読みやすくするために改行が挿入されることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="16677-151">Note that line breaks are inserted for readability.</span></span>
 
 ```text
 dXNlcj10ZXN0QGNvbnRvc28ub25taWNyb3NvZnQuY29tAWF1dGg9QmVhcmVy
 IEV3QkFBbDNCQUFVRkZwVUFvN0ozVmUwYmpMQldaV0NjbFJDM0VvQUEBAQ==
 ```
 
-### <a name="imap-protocol-exchange"></a><span data-ttu-id="7d11d-152">IMAP プロトコルの Exchange</span><span class="sxs-lookup"><span data-stu-id="7d11d-152">IMAP Protocol Exchange</span></span>
+### <a name="imap-protocol-exchange"></a><span data-ttu-id="16677-152">IMAP プロトコルの Exchange</span><span class="sxs-lookup"><span data-stu-id="16677-152">IMAP Protocol Exchange</span></span>
 
-<span data-ttu-id="7d11d-153">IMAP サーバー接続を認証するには、クライアントは次の形式のコマンドで応答する必要があり `AUTHENTICATE` ます。</span><span class="sxs-lookup"><span data-stu-id="7d11d-153">To authenticate a IMAP server connection, the client will have to respond with an `AUTHENTICATE` command in the following format:</span></span>
+<span data-ttu-id="16677-153">IMAP サーバー接続を認証するには、クライアントは次の形式のコマンドで応答する必要があり `AUTHENTICATE` ます。</span><span class="sxs-lookup"><span data-stu-id="16677-153">To authenticate a IMAP server connection, the client will have to respond with an `AUTHENTICATE` command in the following format:</span></span>
 
 ```text
 AUTHENTICATE XOAUTH2 <base64 string in XOAUTH2 format>
 ```
 
-<span data-ttu-id="7d11d-154">認証に成功した結果として得られるクライアントとサーバー間のメッセージ交換の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="7d11d-154">Sample client-server message exchange that results in an authentication success:</span></span>
+<span data-ttu-id="16677-154">認証に成功した結果として得られるクライアントとサーバー間のメッセージ交換の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="16677-154">Sample client-server message exchange that results in an authentication success:</span></span>
 
 ```text
 [connection begins]
@@ -111,7 +111,7 @@ C: A01 AUTHENTICATE XOAUTH2 dXNlcj1zb21ldXNlckBleGFtcGxlLmNvbQFhdXRoPUJlYXJlciB5
 S: A01 OK AUTHENTICATE completed.
 ```
 
-<span data-ttu-id="7d11d-155">認証エラーが発生するクライアントサーバーのメッセージ交換の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="7d11d-155">Sample client-server message exchange that results in an authentication failure:</span></span>
+<span data-ttu-id="16677-155">認証エラーが発生するクライアントサーバーのメッセージ交換の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="16677-155">Sample client-server message exchange that results in an authentication failure:</span></span>
 
 ```text
 [connection begins]
@@ -121,16 +121,16 @@ C: A01 AUTHENTICATE XOAUTH2 dXNlcj1zb21ldXNlckBleGFtcGxlLmNvbQFhdXRoPUJlYXJlciB5
 S: A01 NO AUTHENTICATE failed.
 ```
 
-### <a name="pop-protocol-exchange"></a><span data-ttu-id="7d11d-156">POP プロトコルの交換</span><span class="sxs-lookup"><span data-stu-id="7d11d-156">POP Protocol Exchange</span></span>
+### <a name="pop-protocol-exchange"></a><span data-ttu-id="16677-156">POP プロトコルの交換</span><span class="sxs-lookup"><span data-stu-id="16677-156">POP Protocol Exchange</span></span>
 
-<span data-ttu-id="7d11d-157">POP サーバー接続を認証するには、クライアントは `AUTH` コマンドを次の形式で2行に分割して応答する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7d11d-157">To authenticate a POP server connection, the client will have to respond with an `AUTH` command split into two lines in the following format:</span></span>    
+<span data-ttu-id="16677-157">POP サーバー接続を認証するには、クライアントは `AUTH` コマンドを次の形式で2行に分割して応答する必要があります。</span><span class="sxs-lookup"><span data-stu-id="16677-157">To authenticate a POP server connection, the client will have to respond with an `AUTH` command split into two lines in the following format:</span></span>    
 
 ```text 
 AUTH XOAUTH2 
 <base64 string in XOAUTH2 format>   
 ``` 
 
-<span data-ttu-id="7d11d-158">認証に成功した結果として得られるクライアントとサーバー間のメッセージ交換の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="7d11d-158">Sample client-server message exchange that results in an authentication success:</span></span>    
+<span data-ttu-id="16677-158">認証に成功した結果として得られるクライアントとサーバー間のメッセージ交換の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="16677-158">Sample client-server message exchange that results in an authentication success:</span></span>    
 
 ```text 
 [connection begins] 
@@ -143,7 +143,7 @@ S: +OK User successfully authenticated.
 [connection continues...]   
 ``` 
 
-<span data-ttu-id="7d11d-159">認証エラーが発生するクライアントサーバーのメッセージ交換の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="7d11d-159">Sample client-server message exchange that results in an authentication failure:</span></span>    
+<span data-ttu-id="16677-159">認証エラーが発生するクライアントサーバーのメッセージ交換の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="16677-159">Sample client-server message exchange that results in an authentication failure:</span></span>    
 
 ```text 
 [connection begins] 
@@ -155,15 +155,15 @@ l0Q2cBAQ=
 S: -ERR Authentication failure: unknown user name or bad password.  
 ```
 
-### <a name="smtp-protocol-exchange"></a><span data-ttu-id="7d11d-160">SMTP プロトコルの Exchange</span><span class="sxs-lookup"><span data-stu-id="7d11d-160">SMTP Protocol Exchange</span></span>
+### <a name="smtp-protocol-exchange"></a><span data-ttu-id="16677-160">SMTP プロトコルの Exchange</span><span class="sxs-lookup"><span data-stu-id="16677-160">SMTP Protocol Exchange</span></span>
 
-<span data-ttu-id="7d11d-161">SMTP サーバー接続を認証するには、クライアントは次の形式のコマンドで応答する必要があり `AUTH` ます。</span><span class="sxs-lookup"><span data-stu-id="7d11d-161">To authenticate a SMTP server connection, the client will have to respond with an `AUTH` command in the following format:</span></span>
+<span data-ttu-id="16677-161">SMTP サーバー接続を認証するには、クライアントは次の形式のコマンドで応答する必要があり `AUTH` ます。</span><span class="sxs-lookup"><span data-stu-id="16677-161">To authenticate a SMTP server connection, the client will have to respond with an `AUTH` command in the following format:</span></span>
 
 ```text
 AUTH XOAUTH2 <base64 string in XOAUTH2 format>
 ```
 
-<span data-ttu-id="7d11d-162">認証に成功した結果として得られるクライアントとサーバー間のメッセージ交換の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="7d11d-162">Sample client-server message exchange that results in an authentication success:</span></span>
+<span data-ttu-id="16677-162">認証に成功した結果として得られるクライアントとサーバー間のメッセージ交換の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="16677-162">Sample client-server message exchange that results in an authentication success:</span></span>
 
 ```text
 [connection begins]
@@ -176,7 +176,7 @@ S: 235 2.7.0 Authentication successful
 [connection continues...]
 ```
 
-<span data-ttu-id="7d11d-163">認証エラーが発生するクライアントサーバーのメッセージ交換の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="7d11d-163">Sample client-server message exchange that results in an authentication failure:</span></span>
+<span data-ttu-id="16677-163">認証エラーが発生するクライアントサーバーのメッセージ交換の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="16677-163">Sample client-server message exchange that results in an authentication failure:</span></span>
 
 ```text
 [connection begins]
@@ -188,10 +188,10 @@ l0Q2cBAQ==
 S: 535 5.7.3 Authentication unsuccessful [SN2PR00CA0018.namprd00.prod.outlook.com]
 ```
 
-## <a name="see-also"></a><span data-ttu-id="7d11d-164">関連項目</span><span class="sxs-lookup"><span data-stu-id="7d11d-164">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="16677-164">関連項目</span><span class="sxs-lookup"><span data-stu-id="16677-164">See also</span></span>
 
-- [<span data-ttu-id="7d11d-165">Exchange における認証と EWS</span><span class="sxs-lookup"><span data-stu-id="7d11d-165">Authentication and EWS in Exchange</span></span>](../exchange-web-services/authentication-and-ews-in-exchange.md)
-- [<span data-ttu-id="7d11d-166">IMAP、POP 接続の設定</span><span class="sxs-lookup"><span data-stu-id="7d11d-166">IMAP, POP Connection settings</span></span>](https://support.office.com/article/pop-and-imap-email-settings-for-outlook-8361e398-8af4-4e97-b147-6c6c4ac95353)
-- [<span data-ttu-id="7d11d-167">インターネットメッセージアクセスプロトコル</span><span class="sxs-lookup"><span data-stu-id="7d11d-167">Internet Message Access Protocol</span></span>](https://tools.ietf.org/html/rfc3501)
-- [<span data-ttu-id="7d11d-168">Post Office Protocol</span><span class="sxs-lookup"><span data-stu-id="7d11d-168">Post Office Protocol</span></span>](https://tools.ietf.org/html/rfc1081)
-- [<span data-ttu-id="7d11d-169">認証用の SMTP サービス拡張機能</span><span class="sxs-lookup"><span data-stu-id="7d11d-169">SMTP Service extension for Authentication</span></span>](https://tools.ietf.org/html/rfc4954)
+- [<span data-ttu-id="16677-165">Exchange における認証と EWS</span><span class="sxs-lookup"><span data-stu-id="16677-165">Authentication and EWS in Exchange</span></span>](../exchange-web-services/authentication-and-ews-in-exchange.md)
+- [<span data-ttu-id="16677-166">IMAP、POP 接続の設定</span><span class="sxs-lookup"><span data-stu-id="16677-166">IMAP, POP Connection settings</span></span>](https://support.office.com/article/pop-and-imap-email-settings-for-outlook-8361e398-8af4-4e97-b147-6c6c4ac95353)
+- [<span data-ttu-id="16677-167">インターネットメッセージアクセスプロトコル</span><span class="sxs-lookup"><span data-stu-id="16677-167">Internet Message Access Protocol</span></span>](https://tools.ietf.org/html/rfc3501)
+- [<span data-ttu-id="16677-168">Post Office Protocol</span><span class="sxs-lookup"><span data-stu-id="16677-168">Post Office Protocol</span></span>](https://tools.ietf.org/html/rfc1081)
+- [<span data-ttu-id="16677-169">認証用の SMTP サービス拡張機能</span><span class="sxs-lookup"><span data-stu-id="16677-169">SMTP Service extension for Authentication</span></span>](https://tools.ietf.org/html/rfc4954)

@@ -12,12 +12,12 @@ ms.openlocfilehash: 4e4ac1b38869d3c5dabe142c63b2aac9477036fd
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44450915"
 ---
-# <a name="managementrole"></a><span data-ttu-id="606df-103">Get-managementrole</span><span class="sxs-lookup"><span data-stu-id="606df-103">ManagementRole</span></span>
+# <a name="managementrole"></a><span data-ttu-id="de069-103">Get-managementrole</span><span class="sxs-lookup"><span data-stu-id="de069-103">ManagementRole</span></span>
 
-<span data-ttu-id="606df-104">**Managementrole**要素は、ユーザーおよびアプリケーションの管理役割のリストを指定します。</span><span class="sxs-lookup"><span data-stu-id="606df-104">The **ManagementRole** element specifies a list of user and application management roles.</span></span> 
+<span data-ttu-id="de069-104">**Managementrole**要素は、ユーザーおよびアプリケーションの管理役割のリストを指定します。</span><span class="sxs-lookup"><span data-stu-id="de069-104">The **ManagementRole** element specifies a list of user and application management roles.</span></span> 
   
 ```XML
 <ManagementRole>
@@ -26,36 +26,36 @@ ms.locfileid: "44450915"
 </ManagementRole>
 ```
 
- <span data-ttu-id="606df-105">**ManagementRoleType**</span><span class="sxs-lookup"><span data-stu-id="606df-105">**ManagementRoleType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="606df-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="606df-106">Attributes and elements</span></span>
+ <span data-ttu-id="de069-105">**ManagementRoleType**</span><span class="sxs-lookup"><span data-stu-id="de069-105">**ManagementRoleType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="de069-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="de069-106">Attributes and elements</span></span>
 
-<span data-ttu-id="606df-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="606df-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="de069-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="de069-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="606df-108">属性</span><span class="sxs-lookup"><span data-stu-id="606df-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="de069-108">属性</span><span class="sxs-lookup"><span data-stu-id="de069-108">Attributes</span></span>
 
-<span data-ttu-id="606df-109">なし。</span><span class="sxs-lookup"><span data-stu-id="606df-109">None.</span></span>
+<span data-ttu-id="de069-109">なし。</span><span class="sxs-lookup"><span data-stu-id="de069-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="606df-110">子要素</span><span class="sxs-lookup"><span data-stu-id="606df-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="de069-110">子要素</span><span class="sxs-lookup"><span data-stu-id="de069-110">Child elements</span></span>
 
-<span data-ttu-id="606df-111">[Userroles](userroles.md)  | [Applicationroles](applicationroles.md)</span><span class="sxs-lookup"><span data-stu-id="606df-111">[UserRoles](userroles.md) | [ApplicationRoles](applicationroles.md)</span></span>
+<span data-ttu-id="de069-111">[Userroles](userroles.md)  | [Applicationroles](applicationroles.md)</span><span class="sxs-lookup"><span data-stu-id="de069-111">[UserRoles](userroles.md) | [ApplicationRoles](applicationroles.md)</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="606df-112">親要素</span><span class="sxs-lookup"><span data-stu-id="606df-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="de069-112">親要素</span><span class="sxs-lookup"><span data-stu-id="de069-112">Parent elements</span></span>
 
-<span data-ttu-id="606df-113">なし。</span><span class="sxs-lookup"><span data-stu-id="606df-113">None.</span></span>
+<span data-ttu-id="de069-113">なし。</span><span class="sxs-lookup"><span data-stu-id="de069-113">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="606df-114">注釈</span><span class="sxs-lookup"><span data-stu-id="606df-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="de069-114">注釈</span><span class="sxs-lookup"><span data-stu-id="de069-114">Remarks</span></span>
 
-<span data-ttu-id="606df-115">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="606df-115">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="de069-115">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="de069-115">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="606df-116">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="606df-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="de069-116">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="de069-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="606df-117">要素の情報</span><span class="sxs-lookup"><span data-stu-id="606df-117">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="de069-117">要素の情報</span><span class="sxs-lookup"><span data-stu-id="de069-117">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="606df-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="606df-118">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="606df-119">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="606df-119">Schema name</span></span>  <br/> |<span data-ttu-id="606df-120">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="606df-120">Types schema</span></span>  <br/> |
-|<span data-ttu-id="606df-121">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="606df-121">Validation file</span></span>  <br/> |<span data-ttu-id="606df-122">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="606df-122">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="606df-123">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="606df-123">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="de069-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="de069-118">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="de069-119">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="de069-119">Schema name</span></span>  <br/> |<span data-ttu-id="de069-120">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="de069-120">Types schema</span></span>  <br/> |
+|<span data-ttu-id="de069-121">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="de069-121">Validation file</span></span>  <br/> |<span data-ttu-id="de069-122">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="de069-122">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="de069-123">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="de069-123">Can be empty</span></span>  <br/> ||
    
 
