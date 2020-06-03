@@ -6,32 +6,32 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: fb2952e2-cbfe-43ac-b746-f071faa7665c
 description: Exchange で EWS マネージ API または EWS を使用して、1 回の呼び出しで予定表アイテムの作成、取得、更新、または削除をバッチ処理する方法について説明します。
-ms.openlocfilehash: e18e74490b536c07e90c64f76f81c98b4eab6024
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
-ms.translationtype: HT
+ms.openlocfilehash: 10c5c28e4dda27c9ac9770088db122f0a8e8c101
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353848"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527902"
 ---
 # <a name="process-calendar-items-in-batches-in-exchange"></a>Exchange においてバッチ処理で予定表アイテムを処理する
 
 Exchange で EWS マネージ API または EWS を使用して、1 回の呼び出しで予定表アイテムの作成、取得、更新、または削除をバッチ処理する方法について説明します。
-  
-EWS マネージ API または EWS を使用すると、予定と会議のバッチ処理を行うことができ、Exchange サーバーに対するクライアントの呼び出し回数が減少します。 EWS マネージ API を使用して予定表アイテムのバッチ処理を作成、取得、更新、削除する場合は、[ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクト メソッドを使用します。1 つの予定表アイテムが処理対象の場合には [Appointment](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) オブジェクト メソッドを使用します。 EWS を使用している場合は、単一の呼び出しと同じバッチ呼び出しの操作を使用します。 
-  
+
+EWS マネージ API または EWS を使用すると、予定と会議のバッチ処理を行うことができ、Exchange サーバーに対するクライアントの呼び出し回数が減少します。 EWS マネージ API を使用して予定表アイテムのバッチ処理を作成、取得、更新、削除する場合は、[ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクト メソッドを使用します。1 つの予定表アイテムが処理対象の場合には [Appointment](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) オブジェクト メソッドを使用します。 EWS を使用している場合は、単一の呼び出しと同じバッチ呼び出しの操作を使用します。
+
 **表 1. 予定表アイテムをバッチ処理するための EWS マネージ API メソッドと EWS 操作**
 
 |**目的**|**使用する EWS マネージ API メソッド**|**使用する EWS 操作**|
 |:-----|:-----|:-----|
-|バッチ処理で予定表アイテムを作成する  <br/> |[CreateItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) <br/> |[CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) <br/> |
-|バッチ処理で予定表アイテムを取得する  <br/> |[BindToItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) <br/> |[GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) <br/> |
-|バッチ処理で予定表アイテムを更新する  <br/> |[UpdateItems](http://msdn.microsoft.com/ja-JP/library/dd634705%28v=exchg.80%29.aspx) <br/> |[UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
-|バッチ処理で予定表アイテムを削除する  <br/> |[DeleteItems](http://msdn.microsoft.com/ja-JP/library/dd635460%28v=exchg.80%29.aspx) <br/> |[DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |
-   
+|バッチ処理で予定表アイテムを作成する  <br/> |[CreateItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) <br/> |[CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) <br/> |
+|バッチ処理で予定表アイテムを取得する  <br/> |[BindToItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) <br/> |
+|バッチ処理で予定表アイテムを更新する  <br/> |[UpdateItems](https://msdn.microsoft.com/library/dd634705%28v=exchg.80%29.aspx) <br/> |[UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
+|バッチ処理で予定表アイテムを削除する  <br/> |[DeleteItems](https://msdn.microsoft.com/library/dd635460%28v=exchg.80%29.aspx) <br/> |[DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |
+
 この記事では、EWS マネージ API または EWS を使用して予定表アイテムのバッチ処理を行うための基本的なタスクの実行方法について説明します。
-  
+
 この記事の EWS マネージ API の例では、メソッドが連続して呼び出される場合に予定表アイテムのバッチを作成、取得、更新、および削除できます。
-  
+
 ```cs
 Collection<ItemId> itemIds = BatchCreateCalendarItems(service);
 Collection<Appointment> myAppointments = BatchGetCalendarItems(service, itemIds);
@@ -43,10 +43,10 @@ BatchDeleteCalendarItemsTwice(service, itemIds);
 ## <a name="create-calendar-items-in-batches-by-using-the-ews-managed-api"></a>EWS マネージ API を使用してバッチ処理で予定表アイテムを作成する
 <a name="bk_createewsma"> </a>
 
-次の例に示されているように、EWS マネージ API の [CreateItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) メソッドを使用すると、バッチ処理で予定表アイテムを作成できます。 この例では 3 つの [Appointment](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) オブジェクト (単一インスタンスの予定、定期的な予定、および会議) を作成して、これらをコレクションに追加します。 
-  
-この例では、ユーザーが Exchange サーバーから認証されていて、**service** という名前の [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトを取得済みであると想定しています。 
-  
+次の例に示されているように、EWS マネージ API の [CreateItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) メソッドを使用すると、バッチ処理で予定表アイテムを作成できます。 この例では 3 つの [Appointment](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) オブジェクト (単一インスタンスの予定、定期的な予定、および会議) を作成して、これらをコレクションに追加します。
+
+この例では、ユーザーが Exchange サーバーから認証されていて、**service** という名前の [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトを取得済みであると想定しています。
+
 ```cs
 public static Collection<ItemId> BatchCreateCalendarItems(ExchangeService service)
 {
@@ -89,7 +89,7 @@ public static Collection<ItemId> BatchCreateCalendarItems(ExchangeService servic
     Collection<Appointment> calendarItems = new Collection<Appointment>() { appt1, recurrAppt2, meeting3 };
     // Instantiate a collection of item IDs to populate from the values that are returned by the Exchange server.
     Collection<ItemId> itemIds = new Collection<ItemId>();
-            
+
     // Send the batch of Appointment objects.
     // Note that multiple calls to the Exchange server might be made when Appointment objects have attachments.
     // Note also that the the ID of the item collection passed as the first parameter to CreateItems is set on return.
@@ -122,19 +122,19 @@ return itemIds;
 
 ```
 
-コレクション内の [Appointment](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) オブジェクトは、予定または会議、および単一のインスタンスか定期的なアイテムのいずれかとして使用できます。 
-  
+コレクション内の [Appointment](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) オブジェクトは、予定または会議、および単一のインスタンスか定期的なアイテムのいずれかとして使用できます。
+
 ## <a name="create-calendar-items-in-batches-by-using-ews"></a>EWS を使用してバッチ処理で予定表アイテムを作成する
 <a name="bk_createews"> </a>
 
-次のコード例に示すように、EWS の [CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) 操作を使用して、バッチ処理で予定表アイテムを作成できます。これは、EWS マネージ API を使用して[バッチ処理で予定表アイテムを作成](#bk_createewsma)するときに EWS マネージ API が送信する XML 要求でもあります。
-  
+次のコード例に示すように、EWS の [CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) 操作を使用して、バッチ処理で予定表アイテムを作成できます。これは、EWS マネージ API を使用して[バッチ処理で予定表アイテムを作成](#bk_createewsma)するときに EWS マネージ API が送信する XML 要求でもあります。
+
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
     <t:TimeZoneContext>
@@ -206,24 +206,24 @@ return itemIds;
 
 ```
 
-サーバーは、**CreateItem** 要求に [CreateItemResponse](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) メッセージで応答します。このメッセージには、それぞれの新しい予定表アイテムが正常に作成および保存されたことを示す、**NoError** の [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 値が含まれます。  
-  
+サーバーは、**CreateItem** 要求に [CreateItemResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) メッセージで応答します。このメッセージには、それぞれの新しい予定表アイテムが正常に作成および保存されたことを示す、**NoError** の [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 値が含まれます。 
+
 予定表アイテムは Exchange Server に渡された各予定表アイテムの要素の値にしたがって、会議か予定、または単一のインスタンスか定期的なアイテムのいずれかになります。
-  
-次の XML はサーバーからの応答です。**ItemId** 属性と **ChangeKey** 属性は読みやすいように短縮されています。 
-  
+
+次の XML はサーバーからの応答です。**ItemId** 属性と **ChangeKey** 属性は読みやすいように短縮されています。
+
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
-    <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="847" MinorBuildNumber="12" Version="V2_8" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+    <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="847" MinorBuildNumber="12" Version="V2_8"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -259,10 +259,10 @@ return itemIds;
 ## <a name="get-calendar-items-in-batches-by-using-the-ews-managed-api"></a>EWS マネージ API を使用してバッチ処理で予定表アイテムを取得する
 <a name="bk_getewsma"> </a>
 
-次の例に示されているように、EWS マネージ API の [BindToItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) メソッドを使用すると、バッチ処理で予定表アイテムを取得できます。 
-  
-この例では、ユーザーが Exchange サーバーから認証されていて、**service** という名前の [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトを取得済みであると想定しています。 
-  
+次の例に示されているように、EWS マネージ API の [BindToItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) メソッドを使用すると、バッチ処理で予定表アイテムを取得できます。
+
+この例では、ユーザーが Exchange サーバーから認証されていて、**service** という名前の [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトを取得済みであると想定しています。
+
 ```cs
 public static Collection<Appointment> BatchGetCalendarItems(ExchangeService service, Collection<ItemId> itemIds)
 {
@@ -276,7 +276,7 @@ public static Collection<Appointment> BatchGetCalendarItems(ExchangeService serv
                                                    AppointmentSchema.AppointmentType,
                                                    AppointmentSchema.Location,
                                                    AppointmentSchema.RequiredAttendees);
-            
+
     ServiceResponseCollection<GetItemResponse> response = service.BindToItems(itemIds, appointmentProps);
     Collection<Appointment> calendarItems = new Collection<Appointment>();
     foreach (GetItemResponse items in response)
@@ -313,16 +313,16 @@ public static Collection<Appointment> BatchGetCalendarItems(ExchangeService serv
 ## <a name="get-calendar-items-in-batches-by-using-ews"></a>EWS を使用してバッチ処理で予定表アイテムを取得する
 <a name="bk_getews"> </a>
 
-次の例に示すように、EWS の [GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) 操作を使用して、バッチ処理で予定表アイテムを取得できます。これは、EWS マネージ API を使用して[バッチ処理で予定表アイテムを取得](#bk_getewsma)するときに EWS マネージ API が送信する XML 要求でもあります。
-  
-**ItemId** 属性と **ChangeKey** 属性は読みやすいように短縮されています。 
-  
+次の例に示すように、EWS の [GetItem](https://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) 操作を使用して、バッチ処理で予定表アイテムを取得できます。これは、EWS マネージ API を使用して[バッチ処理で予定表アイテムを取得](#bk_getewsma)するときに EWS マネージ API が送信する XML 要求でもあります。
+
+**ItemId** 属性と **ChangeKey** 属性は読みやすいように短縮されています。
+
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
     <t:TimeZoneContext>
@@ -355,20 +355,20 @@ public static Collection<Appointment> BatchGetCalendarItems(ExchangeService serv
 
 ```
 
-サーバーは **GetItem** 要求に [GetItemResponse](http://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx) メッセージで応答します。このメッセージには、次の例に示すように、各アイテムの要求されたプロパティが含まれます。 
-  
+サーバーは **GetItem** 要求に [GetItemResponse](https://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx) メッセージで応答します。このメッセージには、次の例に示すように、各アイテムの要求されたプロパティが含まれます。
+
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
-    <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="847" MinorBuildNumber="16" Version="V2_8" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+    <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="847" MinorBuildNumber="16" Version="V2_8"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -477,32 +477,32 @@ public static Collection<Appointment> BatchGetCalendarItems(ExchangeService serv
 ## <a name="update-calendar-items-in-batches-by-using-the-ews-managed-api"></a>EWS マネージ API を使用してバッチ処理で予定表アイテムを更新する
 <a name="bk_updateewsma"> </a>
 
-次の例に示されているように、EWS マネージ API の [UpdateItems](http://msdn.microsoft.com/ja-JP/library/dd634705%28v=exchg.80%29.aspx) メソッドを使用すると、バッチ処理で予定表アイテムのプロパティを更新できます。 
-  
-この例では、ユーザーが Exchange サーバーから認証されていて、**service** という名前の [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトを取得済みであると想定しています。 
-  
+次の例に示されているように、EWS マネージ API の [UpdateItems](https://msdn.microsoft.com/library/dd634705%28v=exchg.80%29.aspx) メソッドを使用すると、バッチ処理で予定表アイテムのプロパティを更新できます。
+
+この例では、ユーザーが Exchange サーバーから認証されていて、**service** という名前の [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトを取得済みであると想定しています。
+
 ```cs
-public static Collection<ItemId> BatchUpdateCalendarItems(ExchangeService service, Collection<Appointment> calenderItems)
+public static Collection<ItemId> BatchUpdateCalendarItems(ExchangeService service, Collection<Appointment> calendarItems)
 {
     int i = 1;
     // Appointment item IDs to return.
     Collection<ItemId> itemIds = new Collection<ItemId>();
-            
+
     // Update the subject of each calendar item locally.
-    foreach (Appointment appointment in calenderItems)
+    foreach (Appointment appointment in calendarItems)
     {
         // Update the subject of each calendar item in the collection
         appointment.Subject = "Company headquarters are moving down the street to 1234 Contoso Drive!: " + appointment.Subject.ToString();
-        Console.WriteLine("Updated the subject property for calendar item {0} of {1}, item id {2}.", i, calenderItems.Count, appointment.Id.ToString().Substring(0, 5));
+        Console.WriteLine("Updated the subject property for calendar item {0} of {1}, item id {2}.", i, calendarItems.Count, appointment.Id.ToString().Substring(0, 5));
         i++;
         // Collect item IDs to return instead of appointment objects.
         itemIds.Add(appointment.Id);
     }
     // Send the updated items to the server.
     // This method call results in an UpdateItem call to EWS.
-    ServiceResponseCollection<UpdateItemResponse> response = service.UpdateItems(calenderItems, 
-                                                                                 WellKnownFolderName.Calendar, 
-                                                                                 ConflictResolutionMode.AutoResolve, 
+    ServiceResponseCollection<UpdateItemResponse> response = service.UpdateItems(calendarItems,
+                                                                                 WellKnownFolderName.Calendar,
+                                                                                 ConflictResolutionMode.AutoResolve,
                                                                                  MessageDisposition.SendAndSaveCopy,
                                                                                     SendInvitationsOrCancellationsMode.SendToChangedAndSaveCopy);
     // Display the result of the UpdateItems method call.
@@ -523,21 +523,21 @@ public static Collection<ItemId> BatchUpdateCalendarItems(ExchangeService servic
         }
     }
     return itemIds;
-}  
+}
 
 ```
 
 ## <a name="update-calendar-items-in-batches-by-using-ews"></a>EWS を使用してバッチ処理で予定表アイテムを更新する
 <a name="bk_updateews"> </a>
 
-次のコード例に示されているように、EWS の [UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) 操作を使用して、複数の予定表アイテムを更新できます。これは、EWS マネージ API を使用して[バッチ処理で予定表アイテムを更新](#bk_updateewsma)するときに EWS マネージ API が送信する XML 要求でもあります。
-  
+次のコード例に示されているように、EWS の [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) 操作を使用して、複数の予定表アイテムを更新できます。これは、EWS マネージ API を使用して[バッチ処理で予定表アイテムを更新](#bk_updateewsma)するときに EWS マネージ API が送信する XML 要求でもあります。
+
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
     <t:TimeZoneContext>
@@ -545,7 +545,7 @@ public static Collection<ItemId> BatchUpdateCalendarItems(ExchangeService servic
     </t:TimeZoneContext>
   </soap:Header>
   <soap:Body>
-    <m:UpdateItem MessageDisposition="SendAndSaveCopy" ConflictResolution="AutoResolve" 
+    <m:UpdateItem MessageDisposition="SendAndSaveCopy" ConflictResolution="AutoResolve"
                   SendMeetingInvitationsOrCancellations="SendToChangedAndSaveCopy">
       <m:SavedItemFolderId>
         <t:DistinguishedFolderId Id="calendar" />
@@ -592,20 +592,20 @@ public static Collection<ItemId> BatchUpdateCalendarItems(ExchangeService servic
 
 ```
 
-サーバーは、**UpdateItem** 要求に [UpdateItemResponse](http://msdn.microsoft.com/library/023b79b4-c675-4669-9112-d85499ec4fc4%28Office.15%29.aspx) メッセージで応答します。このメッセージには、それぞれの更新がサーバーで正常に行われたことを示す、**NoError** の [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 値が含まれます。競合は、[ConflictResult](http://msdn.microsoft.com/library/08cdd547-4de7-4c7a-b60f-e618dc217d20%28Office.15%29.aspx) 要素で報告されます。 
-  
+サーバーは、**UpdateItem** 要求に [UpdateItemResponse](https://msdn.microsoft.com/library/023b79b4-c675-4669-9112-d85499ec4fc4%28Office.15%29.aspx) メッセージで応答します。このメッセージには、それぞれの更新がサーバーで正常に行われたことを示す、**NoError** の [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 値が含まれます。競合は、[ConflictResult](https://msdn.microsoft.com/library/08cdd547-4de7-4c7a-b60f-e618dc217d20%28Office.15%29.aspx) 要素で報告されます。
+
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
-    <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="859" MinorBuildNumber="13" 
-                         Version="V2_8" xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+    <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="859" MinorBuildNumber="13"
+                         Version="V2_8" xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:UpdateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:UpdateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:UpdateItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -650,18 +650,18 @@ public static Collection<ItemId> BatchUpdateCalendarItems(ExchangeService servic
 ## <a name="delete-calendar-items-in-batches-by-using-the-ews-managed-api"></a>EWS マネージ API を使用してバッチ処理で予定表アイテムを削除する
 <a name="bk_deleteewsma"> </a>
 
-次の例に示されているように、EWS マネージ API [DeleteItems](http://msdn.microsoft.com/ja-JP/library/dd635460%28v=exchg.80%29.aspx) メソッドを使用すると、バッチ処理で予定表アイテムを削除できます。 この例では 2 回削除要求を行い、例外がスローされないこと、ただしサーバーが **ErrorItemNotFound** エラーを返して、呼び出しが行われたときに削除対象のアイテムがストアになかったことを示しています。 アイテムが既に削除されていたり、無効なアイテム ID がサーバーに渡されると、このエラーが返されます。 
-  
-この例では、ユーザーが Exchange サーバーから認証されていて、**service** という名前の [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトを取得済みであると想定しています。 
-  
+次の例に示されているように、EWS マネージ API [DeleteItems](https://msdn.microsoft.com/library/dd635460%28v=exchg.80%29.aspx) メソッドを使用すると、バッチ処理で予定表アイテムを削除できます。 この例では 2 回削除要求を行い、例外がスローされないこと、ただしサーバーが **ErrorItemNotFound** エラーを返して、呼び出しが行われたときに削除対象のアイテムがストアになかったことを示しています。 アイテムが既に削除されていたり、無効なアイテム ID がサーバーに渡されると、このエラーが返されます。
+
+この例では、ユーザーが Exchange サーバーから認証されていて、**service** という名前の [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトを取得済みであると想定しています。
+
 ```cs
 public static void BatchDeleteCalendarItemsTwice(ExchangeService service, Collection<ItemId> itemIds)
 {
     // Delete the batch of appointment objects
     // This method call results in a DeleteItem call to EWS.
-    ServiceResponseCollection<ServiceResponse> response = service.DeleteItems(itemIds, 
-                                                                                DeleteMode.MoveToDeletedItems, 
-                                                                                SendCancellationsMode.SendToAllAndSaveCopy, 
+    ServiceResponseCollection<ServiceResponse> response = service.DeleteItems(itemIds,
+                                                                                DeleteMode.MoveToDeletedItems,
+                                                                                SendCancellationsMode.SendToAllAndSaveCopy,
                                                                                 AffectedTaskOccurrence.AllOccurrences);
     int counter = 1;
     // Show the IDs and errors for each message.
@@ -673,7 +673,7 @@ public static void BatchDeleteCalendarItemsTwice(ExchangeService service, Collec
         Console.WriteLine("ErrorMessage: {0}\r\n", resp.ErrorMessage);
         counter++;
     }
-            
+
     // Now attempt to delete the same items again.
     response = service.DeleteItems(itemIds,
                                     DeleteMode.MoveToDeletedItems,
@@ -693,21 +693,21 @@ public static void BatchDeleteCalendarItemsTwice(ExchangeService service, Collec
 
 ```
 
-2 回目に **DeleteItems** メソッドが呼び出されると、例外はスローされませんが、結果にサーバーが **ErrorItemNotFound** エラーを返します。 
-  
+2 回目に **DeleteItems** メソッドが呼び出されると、例外はスローされませんが、結果にサーバーが **ErrorItemNotFound** エラーを返します。
+
 ## <a name="delete-calendar-items-in-batches-by-using-ews"></a>EWS を使用してバッチ処理で予定表アイテムを削除する
 <a name="bk_deleteews"> </a>
 
-次のコード例に示されているように、[DeleteItem](../web-service-reference/deleteitem-operation.md) EWS 操作を使用して、バッチ処理で予定表アイテムを削除できます。これは、EWS マネージ API を使用して[バッチ処理で予定表アイテムを削除](#bk_deleteewsma)するときに EWS マネージ API が送信する XML 要求でもあります。  
-  
-**ItemId** 属性と **ChangeKey** 属性は読みやすいように短縮されています。 
-  
+次のコード例に示されているように、[DeleteItem](../web-service-reference/deleteitem-operation.md) EWS 操作を使用して、バッチ処理で予定表アイテムを削除できます。これは、EWS マネージ API を使用して[バッチ処理で予定表アイテムを削除](#bk_deleteewsma)するときに EWS マネージ API が送信する XML 要求でもあります。 
+
+**ItemId** 属性と **ChangeKey** 属性は読みやすいように短縮されています。
+
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
     <t:TimeZoneContext>
@@ -715,8 +715,8 @@ public static void BatchDeleteCalendarItemsTwice(ExchangeService service, Collec
     </t:TimeZoneContext>
   </soap:Header>
   <soap:Body>
-    <m:DeleteItem DeleteType="MoveToDeletedItems" 
-                  AffectedTaskOccurrences="AllOccurrences" 
+    <m:DeleteItem DeleteType="MoveToDeletedItems"
+                  AffectedTaskOccurrences="AllOccurrences"
                   SendMeetingCancellations="SendToAllAndSaveCopy">
       <m:ItemIds>
         <t:ItemId Id="AAMkA" ChangeKey="DwAAA" />
@@ -729,21 +729,21 @@ public static void BatchDeleteCalendarItemsTwice(ExchangeService service, Collec
 
 ```
 
-サーバーは、**DeleteItem** 要求に [DeleteItemResponse](http://msdn.microsoft.com/library/86463d66-fe47-4a19-a81b-e24841e816ab%28Office.15%29.aspx) メッセージで応答します。このメッセージには、削除された各アイテムの **NoError** の [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 値が含まれます。  
-  
+サーバーは、**DeleteItem** 要求に [DeleteItemResponse](https://msdn.microsoft.com/library/86463d66-fe47-4a19-a81b-e24841e816ab%28Office.15%29.aspx) メッセージで応答します。このメッセージには、削除された各アイテムの **NoError** の [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 値が含まれます。 
+
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
-    <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="859" MinorBuildNumber="13" Version="V2_8" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+    <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="859" MinorBuildNumber="13" Version="V2_8"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:DeleteItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:DeleteItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:DeleteItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -761,21 +761,21 @@ public static void BatchDeleteCalendarItemsTwice(ExchangeService service, Collec
 
 ```
 
-関連付けられたアイテムが既に削除されているときに **DeleteItem** 要求が行われると、例外はスローされませんが、結果としてサーバーが **ErrorItemNotFound** エラーを返します。次の例では、関連付けられたアイテムが既に削除されているときに、サーバーが **DeleteItem** 要求に応答します。 
-  
+関連付けられたアイテムが既に削除されているときに **DeleteItem** 要求が行われると、例外はスローされませんが、結果としてサーバーが **ErrorItemNotFound** エラーを返します。次の例では、関連付けられたアイテムが既に削除されているときに、サーバーが **DeleteItem** 要求に応答します。
+
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
-    <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="859" MinorBuildNumber="13" Version="V2_8" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+    <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="859" MinorBuildNumber="13" Version="V2_8"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:DeleteItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:DeleteItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:DeleteItemResponseMessage ResponseClass="Error">
           <m:MessageText>The specified object was not found in the store.</m:MessageText>
@@ -803,23 +803,23 @@ public static void BatchDeleteCalendarItemsTwice(ExchangeService service, Collec
 <a name="bk_successful"> </a>
 
 バッチ要求の 1 つ以上の予定表アイテムを要求どおりに処理できないと、失敗した予定表アイテムごとにエラーが返されます。バッチ処理のそれ以外の予定表アイテムは想定どおりに処理されます。対象アイテムが削除されたために送信、取得、更新できなかったり、対象アイテムが別のフォルダーに移動したためにアイテム ID が新しくなり、送信されたアイテム ID で変更できない場合は、バッチ処理でエラーが生じます。このセクションの情報には、予定表アイテムのバッチ処理で生じたエラーの詳細を取得する方法が示されています。
-  
-EWS マネージ API を使用してバッチ処理が成功したかどうかは、[ServiceResponseCollection](http://msdn.microsoft.com/ja-JP/library/dd633715%28v=exchg.80%29.aspx) の [OverallResult](http://msdn.microsoft.com/ja-JP/library/dd634515%28v=exchg.80%29.aspx) プロパティが [ServiceResult.Success](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.serviceresult%28v=exchg.80%29.aspx) と等しいかどうかを調べることで確認できます。 等しい場合は、すべての予定表アイテムが正常に処理されています。 **OverallResult** が **ServiceResult.Success** と等しくない場合は、1 つ以上の予定表アイテムが正常に処理されませんでした。 **ServiceResponseCollection** で返される各オブジェクトには、次のプロパティが含まれます。 
-  
-- [ErrorCode](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.serviceresponse.errorcode%28v=exchg.80%29.aspx)
-    
-- [ErrorDetails](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.serviceresponse.errordetails%28v=exchg.80%29.aspx)
-    
-- [ErrorMessage](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.serviceresponse.errormessage%28v=exchg.80%29.aspx)
-    
-- [ErrorProperties](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.serviceresponse.errorproperties%28v=exchg.80%29.aspx)
-    
-- [Result](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.serviceresponse.result%28v=exchg.80%29.aspx)
-    
-これらのプロパティには、予定表アイテムを要求どおりに処理できなかった原因についての情報が含まれます。この記事の例では、エラーが生じた各アイテムの **Result**、**ErrorCode**、**ErrorMessage** が出力されます。これらの結果を使用して問題を調査できます。 
-  
-EWS でバッチ処理が成功したことを確認するには、各処理対象アイテムの [ResponseClass](http://msdn.microsoft.com/library/bf57265a-d354-4cd7-bbfc-d93e19cbede6%28Office.15%29.aspx) 属性を調べます。すべての応答メッセージの派生元となる基本タイプの **ResponseMessageType** の基本構造を次に示します。  
-  
+
+EWS マネージ API を使用してバッチ処理が成功したかどうかは、[ServiceResponseCollection](https://msdn.microsoft.com/library/dd633715%28v=exchg.80%29.aspx) の [OverallResult](https://msdn.microsoft.com/library/dd634515%28v=exchg.80%29.aspx) プロパティが [ServiceResult.Success](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresult%28v=exchg.80%29.aspx) と等しいかどうかを調べることで確認できます。 等しい場合は、すべての予定表アイテムが正常に処理されています。 **OverallResult** が **ServiceResult.Success** と等しくない場合は、1 つ以上の予定表アイテムが正常に処理されませんでした。 **ServiceResponseCollection** で返される各オブジェクトには、次のプロパティが含まれます。
+
+- [ErrorCode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresponse.errorcode%28v=exchg.80%29.aspx)
+
+- [ErrorDetails](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresponse.errordetails%28v=exchg.80%29.aspx)
+
+- [ErrorMessage](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresponse.errormessage%28v=exchg.80%29.aspx)
+
+- [ErrorProperties](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresponse.errorproperties%28v=exchg.80%29.aspx)
+
+- [Result](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.serviceresponse.result%28v=exchg.80%29.aspx)
+
+これらのプロパティには、予定表アイテムを要求どおりに処理できなかった原因についての情報が含まれます。この記事の例では、エラーが生じた各アイテムの **Result**、**ErrorCode**、**ErrorMessage** が出力されます。これらの結果を使用して問題を調査できます。
+
+EWS でバッチ処理が成功したことを確認するには、各処理対象アイテムの [ResponseClass](https://msdn.microsoft.com/library/bf57265a-d354-4cd7-bbfc-d93e19cbede6%28Office.15%29.aspx) 属性を調べます。すべての応答メッセージの派生元となる基本タイプの **ResponseMessageType** の基本構造を次に示します。 
+
 ```XML
 <ResponseMessage ResponseClass="Success | Warning | Error">
             <MessageText/>
@@ -829,21 +829,19 @@ EWS でバッチ処理が成功したことを確認するには、各処理対�
 </ResponseMessage>
 ```
 
-**ResponseClass** 属性は、予定表アイテムが正常に処理された場合には **Success** に設定され、正常に処理されなかった場合には **Error** に設定されます。予定表アイテムの場合、バッチ処理中に **Warning** が示されることはありません。**ResponseClass** が **Success** の場合、それに続く [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 要素は必ず **NoError** に設定されます。**ResponseClass** が **Error** の場合、[MessageText](http://msdn.microsoft.com/library/59a23bdc-0d9a-4942-8b3c-9cdb11db1ab1%28Office.15%29.aspx)、**ResponseCode**、[MessageXml](http://msdn.microsoft.com/library/bcaf9e35-d351-48f3-baad-f90c633cba8a%28Office.15%29.aspx) の各要素の値を確認し、問題の原因を特定する必要があります。[DescriptiveLinkKey](http://msdn.microsoft.com/library/f7f36749-00f3-4915-b17c-e3caa0af6e67%28Office.15%29.aspx) は現在使用されていません。 
-  
+**ResponseClass** 属性は、予定表アイテムが正常に処理された場合には **Success** に設定され、正常に処理されなかった場合には **Error** に設定されます。予定表アイテムの場合、バッチ処理中に **Warning** が示されることはありません。**ResponseClass** が **Success** の場合、それに続く [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 要素は必ず **NoError** に設定されます。**ResponseClass** が **Error** の場合、[MessageText](https://msdn.microsoft.com/library/59a23bdc-0d9a-4942-8b3c-9cdb11db1ab1%28Office.15%29.aspx)、**ResponseCode**、[MessageXml](https://msdn.microsoft.com/library/bcaf9e35-d351-48f3-baad-f90c633cba8a%28Office.15%29.aspx) の各要素の値を確認し、問題の原因を特定する必要があります。[DescriptiveLinkKey](https://msdn.microsoft.com/library/f7f36749-00f3-4915-b17c-e3caa0af6e67%28Office.15%29.aspx) は現在使用されていません。
+
 ## <a name="see-also"></a>関連項目
 
 
 - [Exchange の予定表と EWS](calendars-and-ews-in-exchange.md)
-    
-- [Exchange の EWS を使用して予定と会議を取得する](how-to-get-appointments-and-meetings-by-using-ews-in-exchange.md)
-    
-- [Exchange で EWS を使用して予定と会議を更新する](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)
-    
-- [Exchange の EWS を使用して、予定を削除し、会議をキャンセルする](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md)
-    
-- [Exchange においてバッチ処理で予定表アイテムを処理する](how-to-process-calendar-items-in-batches-in-exchange.md)
-    
-- [EWS のバッチ要求の調整の影響](ews-throttling-in-exchange.md#bk_ThrottlingBatch)
-    
 
+- [Exchange の EWS を使用して予定と会議を取得する](how-to-get-appointments-and-meetings-by-using-ews-in-exchange.md)
+
+- [Exchange で EWS を使用して予定と会議を更新する](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)
+
+- [Exchange の EWS を使用して、予定を削除し、会議をキャンセルする](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md)
+
+- [Exchange においてバッチ処理で予定表アイテムを処理する](how-to-process-calendar-items-in-batches-in-exchange.md)
+
+- [EWS のバッチ要求の調整の影響](ews-throttling-in-exchange.md#throttling-implications-for-ews-batch-requests)

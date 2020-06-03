@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 74456709-1250-4943-bae0-11a3db44a684
-description: PreviousHopServer 要素は、メッセージを承諾する前のサーバー名を表します。
-ms.openlocfilehash: d9641fdba3b7ef5b487139074c8e475edec9e74c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: PreviousHopServer 要素は、メッセージを受け入れた前のサーバー名を表します。
+ms.openlocfilehash: f85896107c720179d76e0cbeb31588e17c1f3d95
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832879"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528880"
 ---
 # <a name="previoushopserver"></a>PreviousHopServer
 
-**PreviousHopServer**要素は、メッセージを承諾する前のサーバー名を表します。 
+**PreviousHopServer**要素は、メッセージを受け入れた前のサーバー名を表します。 
   
 ```XML
 <PreviousHopServer/>
 ```
 
  **NonEmptyStringType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,28 +44,28 @@ ms.locfileid: "19832879"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[MessageTrackingSearchResult](messagetrackingsearchresult.md) <br/> |[FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md)要素の 1 つのメッセージの結果が含まれています。  <br/> |
+|[MessageTrackingSearchResult](messagetrackingsearchresult.md) <br/> |[Findmessagetrackingreportresponse](findmessagetrackingreportresponse.md)要素の単一メッセージ結果を格納します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-文字列を表す文字列値は、この要素を使用する場合に必要です。
+この要素を使用する場合は、文字列を表すテキスト値が必要です。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a573b4af-9bed-41cf-aea4-5f9cc0ab43a6
-description: 範囲の要素では、定期的なアイテムの範囲の配列を指定します。
-ms.openlocfilehash: d38d55740da13047be6a97b375c612eb07717909
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 範囲要素は、繰り返し範囲の配列を指定します。
+ms.openlocfilehash: 884ef5d8ffbc5dd0fbc153a7b17430ccc7e131c5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832944"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528876"
 ---
 # <a name="ranges"></a>範囲
 
-**範囲**の要素では、定期的なアイテムの範囲の配列を指定します。 
+**範囲**要素は、繰り返し範囲の配列を指定します。 
   
 ```XML
 <Ranges>
@@ -26,7 +26,7 @@ ms.locfileid: "19832944"
 ```
 
  **ArrayOfOccurrenceRangesType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -36,25 +36,25 @@ ms.locfileid: "19832944"
   
 ### <a name="child-elements"></a>子要素
 
-[Range/範囲](range.md)
+[Range](range.md)
   
 ### <a name="parent-elements"></a>親要素
 
 [RecurringMasterItemIdRanges](recurringmasteritemidranges.md)
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> |false  <br/> |
    
 

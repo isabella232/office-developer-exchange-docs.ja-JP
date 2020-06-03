@@ -1,34 +1,34 @@
 ---
-title: 追加し、Exchange の EWS を使用して、[受信拒否リストから電子メール アドレスを削除
+title: Exchange で EWS を使用して、受信拒否リストに対してメール アドレスを追加、削除する
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: b88288ee-6af7-45b5-a55c-5929cd0c16f1
 description: 受信拒否リストに対してメール アドレスを追加および削除するために EWS マネージ API または EWS を使用する方法を説明します。
-ms.openlocfilehash: c03ed585ebd62802000179d8c837786ba5f9aab4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 270613a739acba165c7bac1bd2c1ef275b5d3aca
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758899"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528280"
 ---
-# <a name="add-and-remove-email-addresses-from-the-blocked-senders-list-by-using-ews-in-exchange"></a>追加し、Exchange の EWS を使用して、[受信拒否リストから電子メール アドレスを削除
+# <a name="add-and-remove-email-addresses-from-the-blocked-senders-list-by-using-ews-in-exchange"></a>Exchange で EWS を使用して、受信拒否リストに対してメール アドレスを追加、削除する
 
 受信拒否リストに対してメール アドレスを追加および削除するために EWS マネージ API または EWS を使用する方法を説明します。
   
 ユーザーの [迷惑メール] オプションの [受信拒否リスト] によって、指定した送信者からのすべてのメール メッセージを迷惑メール フォルダーに移動する方法が提供されています。EWS マネージ API または EWS アプリケーションで、受信拒否リストに対してメール アドレスの追加と削除を行えるようにできます。
   
-電子メール アドレスからのメッセージに電子メール アドレスを追加したり、受信拒否リストから削除する前にユーザーのメールボックスに存在する必要があります注意してください。 [ExchangeService.MarkAsJunk](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.markasjunk%28v=exchg.80%29.aspx) EWS のマネージ API のメソッドと[MarkAsJunk](http://msdn.microsoft.com/library/1f71f04d-56a9-4fee-a4e7-d1034438329e%28Office.15%29.aspx)の EWS の操作は、項目 Id のコレクションを使用します。 項目コレクション内の Id は、迷惑メールのステータスを変更する対象のメールボックス内のメッセージを示しています。 
+メールアドレスからのメッセージは、受信拒否リストに電子メールアドレスを追加したり削除したりする前に、ユーザーのメールボックスに存在している必要があることに注意してください。 ExchangeService では、アイテム Id のコレクションを使用して、[ジャンク](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.markasjunk%28v=exchg.80%29.aspx)の EWS マネージ API メソッドと[markasjunk](https://msdn.microsoft.com/library/1f71f04d-56a9-4fee-a4e7-d1034438329e%28Office.15%29.aspx) ews の操作を実行しています。 コレクション内のアイテム Id は、迷惑メールの状態を変更する必要があるメールボックス内のメッセージを示します。 
   
-[Get MailboxJunkEmailConfiguration](http://technet.microsoft.com/en-us/library/dd979784%28v=exchg.150%29.aspx)と[セット MailboxJunkEmailConfiguration](http://technet.microsoft.com/en-us/library/dd979780%28v=exchg.150%29.aspx) Exchange 管理シェル コマンドレットを使用するには [受信拒否リストに直接アクセスします。 
+[Set-mailboxjunkemailconfiguration](https://technet.microsoft.com/library/dd979784%28v=exchg.150%29.aspx)および[Set-mailboxjunkemailconfiguration](https://technet.microsoft.com/library/dd979780%28v=exchg.150%29.aspx) Exchange 管理シェルコマンドレットを使用して、受信拒否リストに直接アクセスすることができます。 
   
 ## <a name="add-an-email-address-to-or-remove-it-from-the-blocked-senders-list-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して、受信拒否リストに対してメール アドレスを追加または削除します。
 <a name="bk_AddRemoveEWSMA"> </a>
 
-電子メール メッセージの送信者を [受信拒否リストに追加するに**MarkAsJunk**メソッドを使用し、**引数 isJunk**パラメーターを**true**に設定します。 電子メール メッセージの送信者を [受信拒否リストから削除するには、 **false を指定**する**引数 isJunk**パラメーターを設定します。
+メール メッセージの送信者を受信拒否リストに追加するには、**MarkAsJunk** メソッドを使用し、**isJunk** パラメーターを **true** にセットします。 メール メッセージの送信者を受信拒否リストから削除するには、**isJunk** パラメーターを **false** にセットします。
   
-次の例では、迷惑メッセージのステータスを変更するのには、 **MarkAsJunk**メソッドを使用する方法を示します。 
+次の例では、メッセージの迷惑ステータスを変更するための **MarkAsJunk** メソッドの使用方法を示します。 
   
 ```cs
 private static void MarkMessageAsJunk(ExchangeService service, ItemId messageId, bool isJunk, bool moveItem)
@@ -70,14 +70,14 @@ private static void MarkMessageAsJunk(ExchangeService service, ItemId messageId,
 ## <a name="add-an-email-address-to-or-remove-it-from-the-blocked-senders-list-by-using-ews"></a>EWS を使用して、受信拒否リストに対してメール アドレスを追加または削除する
 <a name="bk_AddRemoveEWS"> </a>
 
-次の EWS の SOAP 要求では、 **true を指定**する[MarkAsJunk](http://msdn.microsoft.com/library/f06bafc6-7ee3-4b2b-9fd1-7c51328f4729%28Office.15%29.aspx)要素に**引数 IsJunk**属性を設定することにより迷惑メールとしてアイテムをマークします。 移動メッセージ [迷惑メール] フォルダーに**MarkAsJunk**要素を**true**に、 **MoveItem**属性を設定することによってします。
+次の EWS の SOAP 要求は、[MarkAsJunk](https://msdn.microsoft.com/library/f06bafc6-7ee3-4b2b-9fd1-7c51328f4729%28Office.15%29.aspx) 要素の **IsJunk** 属性を **true** に設定して、アイテムを迷惑アイテムとしてマークします。 また、**MarkAsJunk** 要素の **MoveItem** 属性を **true** に設定して、メッセージを迷惑メール フォルダーに移動します。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+    xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
   </soap:Header>
@@ -92,21 +92,21 @@ private static void MarkMessageAsJunk(ExchangeService service, ItemId messageId,
 </soap:Envelope>
 ```
 
-次の EWS の SOAP 応答には、正常な応答が表示されます。 応答内の[MovedItemId](http://msdn.microsoft.com/library/7d5425ab-1e75-43d1-b801-802ff5139df6%28Office.15%29.aspx)要素には、移動後の項目の項目 ID が含まれています。 
+次の EWS の SOAP 応答では、正常な応答を示しています。 応答内の [MovedItemId](https://msdn.microsoft.com/library/7d5425ab-1e75-43d1-b801-802ff5139df6%28Office.15%29.aspx) 要素には、移動後のアイテムのアイテム ID が含まれます。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="712" MinorBuildNumber="22" Version="V2_3" 
-        xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-        xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+        xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+        xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
         xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:MarkAsJunkResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:MarkAsJunkResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:MarkAsJunkResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -122,10 +122,10 @@ private static void MarkMessageAsJunk(ExchangeService service, ItemId messageId,
 ## <a name="see-also"></a>関連項目
 
 - [Exchange での受信トレイの管理と EWS](inbox-management-and-ews-in-exchange.md)   
-- [ExchangeService.MarkAsJunk](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.markasjunk%28v=exchg.80%29.aspx)   
-- [MarkAsJunk の操作](http://msdn.microsoft.com/library/1f71f04d-56a9-4fee-a4e7-d1034438329e%28Office.15%29.aspx)   
-- [Get MailboxJunkEmailConfiguration](http://technet.microsoft.com/en-us/library/dd979784%28v=exchg.150%29.aspx)   
-- [セット MailboxJunkEmailConfiguration](http://technet.microsoft.com/en-us/library/dd979780%28v=exchg.150%29.aspx) 
-- [Exchange 管理シェル](../management/exchange-management-shell.md)
+- [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.markasjunk%28v=exchg.80%29.aspx)   
+- [MarkAsJunk 操作](https://msdn.microsoft.com/library/1f71f04d-56a9-4fee-a4e7-d1034438329e%28Office.15%29.aspx)   
+- [Set-mailboxjunkemailconfiguration](https://technet.microsoft.com/library/dd979784%28v=exchg.150%29.aspx)   
+- [Set-mailboxjunkemailconfiguration](https://technet.microsoft.com/library/dd979780%28v=exchg.150%29.aspx) 
+- [Exchange Management Shell](../management/exchange-management-shell.md)
     
 

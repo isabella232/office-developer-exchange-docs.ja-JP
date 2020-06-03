@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 59d2f05e-90fb-471e-ac06-70becc15b295
 description: パブリック フォルダーのコンテンツを含むパブリック フォルダーの情報の要求はすべて、ターゲット フォルダーのコンテンツを保持するパブリック フォルダー メールボックスにルーティングされる必要があります。そのメールボックスへの要求をルーティングするには、X-AnchorMailbox ヘッダーと X-PublicFolderMailbox ヘッダーを特定の値に設定する必要があります。
-ms.openlocfilehash: 64fafecb9882b17a3394e54640df78f7aa180343
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
-ms.translationtype: HT
+ms.openlocfilehash: 523b9c8efc65253f7970fffeb5800e451784522d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354023"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527741"
 ---
 # <a name="route-public-folder-content-requests"></a>パブリック フォルダーのコンテンツ要求のルーティング
 
@@ -39,11 +39,11 @@ ms.locfileid: "21354023"
   
 - [パブリック フォルダー階層の要求をルーティング](how-to-route-public-folder-hierarchy-requests.md)して取得した **X-AnchorMailbox** ヘッダーと **X-PublicFolderInformation** ヘッダーを使用します。
     
-- EWS マネージ API の [FindFolders](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx) メソッドを呼び出して、**PR_REPLICA_LIST** (0x66980102) プロパティの要求を含めます。 
+- EWS マネージ API の [FindFolders](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx) メソッドを呼び出して、**PR_REPLICA_LIST** (0x66980102) プロパティの要求を含めます。 
     
 **PR_REPLICA_LIST** の値は、フォルダーのコンテンツを含むパブリック フォルダー メールボックスのメールボックス GUID を識別します。**PR_REPLICA_LIST** プロパティはバイト配列ですが、このシナリオでは GUID としてキャストされます。GUID とドメイン名が連結されて、自動検出を呼び出すためのアドレスが形成されます。 
   
-この例では、`service` をメールボックス ユーザーの [ExchangeService](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクト、`PFHAnchorHeader` と `PFHMailboxHeader` を **X-AnchorMailbox** ヘッダーと **X-PublicFolderMailbox** ヘッダーの値、ドメインをテナントによって使用されるドメイン名とします。 
+この例では、`service` をメールボックス ユーザーの [ExchangeService](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクト、`PFHAnchorHeader` と `PFHMailboxHeader` を **X-AnchorMailbox** ヘッダーと **X-PublicFolderMailbox** ヘッダーの値、ドメインをテナントによって使用されるドメイン名とします。 
   
 ```cs
 public static string GetMailboxGuidAddress(ExchangeService service, String PFHAnchorHeader, String PFHMailboxHeader, String domain)
@@ -111,7 +111,7 @@ public static string CompareGuidsForEquality(List<string> list)
 
 ## <a name="determine-the-guid-of-the-public-folder-mailbox-by-using-ews"></a>EWS を使用してパブリック フォルダー メールボックスの GUID を特定する
 
-次のコード例では、EWS [FindFolder](http://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx) 操作を使用して **PR_REPLICA_LIST** (0x66980102) プロパティの値を取得する方法を示します。[ExtendedFieldURI](http://msdn.microsoft.com/library/b3c6ea3a-9ead-44b9-9d99-64ecf12bde23%28Office.15%29.aspx) 要素の、**PropertyTag** 属性は **PR_REPLICA_LIST** プロパティの 10 進数 (26264) に、**PropertyType** 属性は **Binary** に設定します。
+次のコード例では、EWS [FindFolder](https://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx) 操作を使用して **PR_REPLICA_LIST** (0x66980102) プロパティの値を取得する方法を示します。[ExtendedFieldURI](https://msdn.microsoft.com/library/b3c6ea3a-9ead-44b9-9d99-64ecf12bde23%28Office.15%29.aspx) 要素の、**PropertyTag** 属性は **PR_REPLICA_LIST** プロパティの 10 進数 (26264) に、**PropertyType** 属性は **Binary** に設定します。
   
 これは、[EWS マネージ API を使用してパブリック フォルダー メールボックスの GUID を特定](#bk_determineguidewsma)するために **FindFolders** メソッドを使用するときに、EWS マネージ API が送信する XML 要求です。
   
@@ -127,7 +127,7 @@ Cookie: ClientId=KZPBLKA9ZMPXAQDW
 Content-Length: 1005
 Expect: 100-continue
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013_SP1" />
   </soap:Header>
@@ -149,15 +149,15 @@ Expect: 100-continue
 </soap:Envelope>
 ```
 
-サーバーは、**FindFolder** 要求に対して **PR_REPLICA_LIST** の拡張プロパティの値を含む [FindFolderResponse](http://msdn.microsoft.com/library/f5dd813c-9698-4a39-8fca-3a825df365ed%28Office.15%29.aspx) メッセージで応答します。プロパティの値は、Base-64 のエンコードされたバイト配列の文字列形式として EWS 応答に表れることに注意してください。応答内のいくつかのヘッダー値は読みやすいように短縮されています。 
+サーバーは、**FindFolder** 要求に対して **PR_REPLICA_LIST** の拡張プロパティの値を含む [FindFolderResponse](https://msdn.microsoft.com/library/f5dd813c-9698-4a39-8fca-3a825df365ed%28Office.15%29.aspx) メッセージで応答します。プロパティの値は、Base-64 のエンコードされたバイト配列の文字列形式として EWS 応答に表れることに注意してください。応答内のいくつかのヘッダー値は読みやすいように短縮されています。 
   
 ```XML
-<?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
-    <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="1019" MinorBuildNumber="15" Version="V2_17" xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="1019" MinorBuildNumber="15" Version="V2_17" xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" xmlns="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
   </s:Header>
   <s:Body>
-    <m:FindFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:FindFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:FindFolderResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -193,7 +193,8 @@ XML で返された **PR_REPLICA_LIST** の値 (MWVjMmEyMzYtZWQ5My00Zjg4LWI5YzYt
 ## <a name="make-an-autodiscover-request"></a>自動検出を要求する
 <a name="bk_makeautodrequest"> </a>
 
-`GetMailboxGuidAddress` メソッドによって返されたアドレスを使用して自動検出を呼び出します。 「[Exchange 2013: 自動検出によるユーザー設定の取得](http://code.msdn.microsoft.com/exchange/Exchange-2013-Get-user-7e22c86e)」のコード例を使用して、自動検出サービスを呼び出すことをお勧めします。これは、このコード例が自動検出プロセスを効率化するためです。 このコード例では、次の表に記載されているコマンドライン引数を使用して POX 自動検出サービスを呼び出し、メールボックスの GUID に関連付けられている [AutoDiscoverSMTPAddress](http://msdn.microsoft.com/ja-JP/library/office/dn750991%28v=exchg.150%29.aspx) の値を取得します。 
+`GetMailboxGuidAddress` メソッドによって返されたアドレスを使用して自動検出を呼び出します。 「[Exchange 2013: 自動検出によるユーザー設定の取得](https://code.msdn.microsoft.com/exchange/Exchange-2013-Get-user-7e22c86e)」のコード例を使用して、自動検出サービスを呼び出すことをお勧めします。これは、このコード例が自動検出プロセスを効率化するためです。 このコード例では、次の表に記載されているコマンドライン引数を使用して POX 自動検出サービスを呼び出し、メールボックスの GUID に関連付けられている [AutoDiscoverSMTPAddress](https://msdn.microsoft.com/library/office/dn750991%28v=exchg.150%29.aspx) の値を取得します。 
+
   
 |**引数**|**説明**|
 |:-----|:-----|
@@ -213,10 +214,10 @@ XML で返された **PR_REPLICA_LIST** の値 (MWVjMmEyMzYtZWQ5My00Zjg4LWI5YzYt
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<Autodiscover xmlns="http://schemas.microsoft.com/exchange/autodiscover/outlook/requestschema/2006">
+<Autodiscover xmlns="https://schemas.microsoft.com/exchange/autodiscover/outlook/requestschema/2006">
   <Request>
     <EMailAddress>1ec2a236-ed93-4f88-b9c6-33e63fa4aa44@contoso.com</EMailAddress>
-    <AcceptableResponseSchema>http://schemas.microsoft.com/exchange/autodiscover/outlook/responseschema/2006a</AcceptableResponseSchema>
+    <AcceptableResponseSchema>https://schemas.microsoft.com/exchange/autodiscover/outlook/responseschema/2006a</AcceptableResponseSchema>
   </Request>
 </Autodiscover>
 ```
@@ -237,16 +238,16 @@ XML で返された **PR_REPLICA_LIST** の値 (MWVjMmEyMzYtZWQ5My00Zjg4LWI5YzYt
 
 |**EWS マネージ API メソッド**|**EWS 操作**|
 |:-----|:-----|
-|[Item.Bind](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) <br/> [Item.Update](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.item.update%28v=exchg.80%29.aspx) <br/> [Item.Copy](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.item.copy%28v=exchg.80%29.aspx) <br/> [Item.Move](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.item.move%28v=exchg.80%29.aspx) <br/> [Item.Delete](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.item.delete%28v=exchg.80%29.aspx) <br/> [Folder.Bind](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) <br/> [Folder.FindItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.folder.finditems%28v=exchg.80%29.aspx) <br/> |[CreateItem](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) <br/> [GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) <br/> [UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> [CopyItem](http://msdn.microsoft.com/library/bcc68f9e-d511-4c29-bba6-ed535524624a%28Office.15%29.aspx) <br/> [MoveItem](http://msdn.microsoft.com/library/dcf40fa7-7796-4a5c-bf5b-7a509a18d208%28Office.15%29.aspx) <br/> [DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> [GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) <br/> [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) <br/> |
+|[Item.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) <br/> [Item.Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.update%28v=exchg.80%29.aspx) <br/> [Item.Copy](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.copy%28v=exchg.80%29.aspx) <br/> [Item.Move](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.move%28v=exchg.80%29.aspx) <br/> [Item.Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.delete%28v=exchg.80%29.aspx) <br/> [Folder.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) <br/> [Folder.FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.finditems%28v=exchg.80%29.aspx) <br/> |[CreateItem](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) <br/> [GetItem](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) <br/> [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> [CopyItem](https://msdn.microsoft.com/library/bcc68f9e-d511-4c29-bba6-ed535524624a%28Office.15%29.aspx) <br/> [MoveItem](https://msdn.microsoft.com/library/dcf40fa7-7796-4a5c-bf5b-7a509a18d208%28Office.15%29.aspx) <br/> [DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> [GetFolder](https://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) <br/> [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) <br/> |
    
-EWS マネージ API を使用してこれらのヘッダーを追加するには、[HttpHeaders.Add](http://msdn.microsoft.com/ja-JP/library/system.net.http.headers.httpheaders.add%28v=vs.118%29.aspx) メソッドを使用します。 
+EWS マネージ API を使用してこれらのヘッダーを追加するには、[HttpHeaders.Add](https://msdn.microsoft.com/library/system.net.http.headers.httpheaders.add%28v=vs.118%29.aspx) メソッドを使用します。 
   
 ```cs
 service.HttpHeaders.Add("X-AnchorMailbox", "NewPublicFolder@contoso.com");
 service.HttpHeaders.Add("X-PublicFolderMailbox", "NewPublicFolder@contoso.com");
 ```
 
-次のコードは、**X-AnchorMailbox** ヘッダーと **X-PublicFolderMailbox** ヘッダーがこの記事の例で取得した値に設定されている [GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) 要求を示します。 
+次のコードは、**X-AnchorMailbox** ヘッダーと **X-PublicFolderMailbox** ヘッダーがこの記事の例で取得した値に設定されている [GetFolder](https://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) 要求を示します。 
   
 ```XML
 POST https://outlook.office365.com/EWS/Exchange.asmx HTTP/1.1
@@ -259,7 +260,7 @@ Host: outlook.office365.com
 Content-Length: 688
 Expect: 100-continue
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013_SP1" />
   </soap:Header>
@@ -282,5 +283,4 @@ Expect: 100-continue
 - [Exchange の自動検出](autodiscover-for-exchange.md)    
 - [自動検出エンドポイントの一覧を生成する](how-to-generate-a-list-of-autodiscover-endpoints.md)   
 - [自動検出を使用して Exchange からユーザー設定を取得する](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)
-    
-
+  

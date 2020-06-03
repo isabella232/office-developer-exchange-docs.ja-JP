@@ -1,5 +1,5 @@
 ---
-title: データ
+title: BinaryData
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 57e9fba3-5751-4c37-b0c8-ac6dde1c7544
-description: データ要素には、バイナリ データのプロパティの内容が含まれています。
-ms.openlocfilehash: d98da312bbf970df54ddeaf525d00217275d1f82
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: BinaryData 要素には、バイナリデータプロパティのコンテンツが含まれています。
+ms.openlocfilehash: 8f7f62e37613ef74aa760014cf27291b80cca127
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759502"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527412"
 ---
-# <a name="binarydata"></a>データ
+# <a name="binarydata"></a>BinaryData
 
-**データ**要素には、バイナリ データのプロパティの内容が含まれています。 
+**Binarydata**要素には、バイナリデータプロパティのコンテンツが含まれています。 
   
 ```xml
 <BinaryData/>
 ```
 
  **Base64Binary**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,28 +44,28 @@ ms.locfileid: "19759502"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[UserConfiguration](userconfiguration.md) <br/> |1 人のユーザーの構成オブジェクトを定義します。  <br/> |
+|[UserConfiguration](userconfiguration.md) <br/> |1つのユーザー構成オブジェクトを定義します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**データ**要素には、バイナリ データが含まれています。 
+**Binarydata**要素にはバイナリデータが含まれています。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c5e251af-f795-43cc-baaf-95d84475677c
-description: DeleteRuleOperation 要素には、既存の受信トレイ ルールを削除する操作が含まれています。
-ms.openlocfilehash: 3410361e0b896fb0ef01c1873c9f8b0ac99afe58
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DeleteRuleOperation 要素には、既存の受信トレイルールを削除する操作が含まれています。
+ms.openlocfilehash: 6b17f7f99f1fd9b9889db00fdf55fba5eef5aba8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759993"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526922"
 ---
 # <a name="deleteruleoperation"></a>DeleteRuleOperation
 
-**DeleteRuleOperation**要素には、既存の受信トレイ ルールを削除する操作が含まれています。 
+**DeleteRuleOperation**要素には、既存の受信トレイルールを削除する操作が含まれています。 
   
 - [UpdateInboxRules](updateinboxrules.md)
 - [Operations](operations.md)
@@ -33,7 +33,7 @@ ms.locfileid: "19759993"
 ```
 
  **DeleteRuleOperationType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -43,37 +43,37 @@ ms.locfileid: "19759993"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[規則 Id](ruleid.md) <br/> |削除する規則の識別子を指定します。  <br/> |
+|[RuleId](ruleid.md) <br/> |削除するルールの識別子を指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Operations](operations.md) <br/> |受信トレイ ルール操作の配列が含まれています。  <br/> |
+|[Operations](operations.md) <br/> |受信トレイに対して実行できるルール操作の配列が含まれています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [UpdateInboxRules](updateinboxrules.md) 
 - [SetRuleOperation](setruleoperation.md) 
 - [CreateRuleOperation](createruleoperation.md)
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

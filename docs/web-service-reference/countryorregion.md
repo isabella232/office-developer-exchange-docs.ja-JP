@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: e978cd19-96ce-4ebf-81df-eadf2d775132
-description: 国の要素では、国または地域の特定の物理アドレスを表します。
-ms.openlocfilehash: 84a8cc4c76af616f116f35b733a645a6a0e4640c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Country 要素は、指定された物理的な住所の国または地域を表します。
+ms.openlocfilehash: 2e5b8ec40676123c17d6c7f987f139246dbd0493
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759793"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527097"
 ---
 # <a name="countryorregion"></a>CountryOrRegion
 
-**国**の要素では、国または地域の特定の物理アドレスを表します。 
+**Country**要素は、指定された物理的な住所の国または地域を表します。 
   
 ```xml
 <Country/>
 ```
 
- **文字列型 (String)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **String**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,28 +44,28 @@ ms.locfileid: "19759793"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[エントリ (PhysicalAddress)](entry-physicaladdress.md) <br/> |連絡先アイテムの 1 つの物理アドレスをについて説明します。  <br/> |
+|[Entry (PhysicalAddress)](entry-physicaladdress.md) <br/> |連絡先アイテムの単一の物理アドレスを記述します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、国の名前を表す文字列値です。
+テキスト値は、国の名前を表す文字列型 (string) の値です。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

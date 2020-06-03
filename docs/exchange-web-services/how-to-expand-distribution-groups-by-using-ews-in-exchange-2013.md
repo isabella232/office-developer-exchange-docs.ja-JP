@@ -6,33 +6,33 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 25ee84e7-63bc-4f51-9b7d-e7f46fd574d5
 description: Exchange で EWS マネージ API または EWS を使用して配布グループを展開する方法について説明します。
-ms.openlocfilehash: 0f9186fb71b3005c71a70e89aafb674ae15e4814
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: HT
+ms.openlocfilehash: 2cbeb65b5a722bce4d5cab8fd716230874a6afca
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758942"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528119"
 ---
 # <a name="expand-distribution-groups-by-using-ews-in-exchange-2013"></a>Exchange 2013 の EWS を使用して配布グループを展開する
 
 Exchange で EWS マネージ API または EWS を使用して配布グループを展開する方法について説明します。
   
-[ExchangeService.ExpandGroup](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.exchangeservice.expandgroup%28v=exchg.80%29.aspx) EWS マネージ API メソッドまたは [ExpandDL](http://msdn.microsoft.com/library/1f7837e7-9eff-4e10-9577-c40f7ed6af94%28Office.15%29.aspx) EWS 操作を使用して、配布グループを展開し、すべての受信者を識別できます。 
+[ExchangeService.ExpandGroup](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.expandgroup%28v=exchg.80%29.aspx) EWS マネージ API メソッドまたは [ExpandDL](https://msdn.microsoft.com/library/1f7837e7-9eff-4e10-9577-c40f7ed6af94%28Office.15%29.aspx) EWS 操作を使用して、配布グループを展開し、すべての受信者を識別できます。 
   
-[ExpandGroup](http://msdn.microsoft.com/ja-JP/library/office/ee344007%28v=exchg.80%29.aspx) メソッドはオーバーロードされているため、いくつかの方法で呼び出すことができます。 
+[ExpandGroup](https://msdn.microsoft.com/library/office/ee344007%28v=exchg.80%29.aspx) メソッドはオーバーロードされているため、いくつかの方法で呼び出すことができます。 
   
-- [ExpandGroup(String)](http://msdn.microsoft.com/ja-JP/library/office/ee343988%28v=exchg.80%29.aspx): SMTP アドレスによって識別されるグループを展開します。 
+- [ExpandGroup(String)](https://msdn.microsoft.com/library/office/ee343988%28v=exchg.80%29.aspx): SMTP アドレスによって識別されるグループを展開します。 
     
-- [ExpandGroup(EmailAddress)](http://msdn.microsoft.com/ja-JP/library/office/ee344007%28v=exchg.80%29.aspx): メール アドレスによって識別されるグループを展開します。 
+- [ExpandGroup(EmailAddress)](https://msdn.microsoft.com/library/office/ee344007%28v=exchg.80%29.aspx): メール アドレスによって識別されるグループを展開します。 
     
-- [ExpandGroup(ItemId)](http://msdn.microsoft.com/ja-JP/library/office/ee356407%28v=exchg.80%29.aspx): グループ ID によって識別されるグループを展開します。 
+- [ExpandGroup(ItemId)](https://msdn.microsoft.com/library/office/ee356407%28v=exchg.80%29.aspx): グループ ID によって識別されるグループを展開します。 
     
-- [ExpanGroup(String, String)](http://msdn.microsoft.com/ja-JP/library/office/ee356468%28v=exchg.80%29.aspx): SMTP アドレスと、そのアドレスのルーティングの種類によって識別されるグループを展開します。 
+- [ExpanGroup(String, String)](https://msdn.microsoft.com/library/office/ee356468%28v=exchg.80%29.aspx): SMTP アドレスと、そのアドレスのルーティングの種類によって識別されるグループを展開します。 
     
 ## <a name="expand-a-universal-distribution-group-or-security-group-by-using-ews-managed-api"></a>EWS マネージ API を使用してユニバーサル配布グループまたはセキュリティ グループを展開する
 <a name="bk_ExpandDGEWSMA"> </a>
 
-次の例では、メール アドレスを使ってユニバーサル配布グループまたはセキュリティ グループを展開する方法を示します。これは最も簡単なアプローチです。 この例では、**service** が有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
+次の例では、メール アドレスを使ってユニバーサル配布グループまたはセキュリティ グループを展開する方法を示します。これは最も簡単なアプローチです。 この例では、**service** が有効な [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
   
 ```cs
 // Return the expanded group.
@@ -82,7 +82,7 @@ ExpandDistributionLists(service, "employees@contoso.com");
 ## <a name="expand-a-contact-group-by-using-ews-managed-api"></a>EWS マネージ API を使用して連絡先グループを展開する
 <a name="bk_ExpandDGEWSMA"> </a>
 
-連絡先グループには関連付けられているメール アドレスがないため、[ExpandGroup(ItemId)](http://msdn.microsoft.com/ja-JP/library/office/ee356407%28v=exchg.80%29.aspx) メソッドを使用して、ItemId に基づいてグループを展開する必要があります。 前の例のように関数を作成し、2 番目のパラメーターの型を文字列から [ItemId](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.itemid%28v=exchg.80%29.aspx) に変更できます。
+連絡先グループには関連付けられているメール アドレスがないため、[ExpandGroup(ItemId)](https://msdn.microsoft.com/library/office/ee356407%28v=exchg.80%29.aspx) メソッドを使用して、ItemId に基づいてグループを展開する必要があります。 前の例のように関数を作成し、2 番目のパラメーターの型を文字列から [ItemId](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.itemid%28v=exchg.80%29.aspx) に変更できます。
   
 ```cs
 private static void ExpandContactGroup(ExchangeService service, ItemId groupID)
@@ -114,15 +114,15 @@ ExpandContactGroup(service, new ItemId("AAMkADBlY…");
 ## <a name="expand-a-universal-distribution-group-or-security-group-by-using-ews"></a>EWS を使用して、ユニバーサル配布グループまたはセキュリティ グループを展開する
 <a name="bk_ExpandDGEWSMA"> </a>
 
-次の例では、[ExpandDL](http://msdn.microsoft.com/library/1f7837e7-9eff-4e10-9577-c40f7ed6af94%28Office.15%29.aspx) 操作を使用するときにクライアントからサーバーに送信される XML 要求メッセージを示します。 これは、EWS マネージ API を使用して[ユニバーサル配布グループを展開する](#bk_ExpandDGEWSMA)場合に、EWS マネージ API が送信する XML 要求でもあります。 
+次の例では、[ExpandDL](https://msdn.microsoft.com/library/1f7837e7-9eff-4e10-9577-c40f7ed6af94%28Office.15%29.aspx) 操作を使用するときにクライアントからサーバーに送信される XML 要求メッセージを示します。これは、EWS マネージ API を使用して[ユニバーサル配布グループを展開する](#bk_ExpandDGEWSMA)場合に、EWS マネージ API が送信する XML 要求でもあります。  
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+<soap:Envelope xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <ExpandDL xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-              xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <ExpandDL xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+              xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <Mailbox>
         <t:EmailAddress>employees@contoso.com</t:EmailAddress>
       </Mailbox>
@@ -135,34 +135,34 @@ ExpandContactGroup(service, new ItemId("AAMkADBlY…");
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
 <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
      xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 <ExpandDLResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                       xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <ResponseMessages xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+  <ResponseMessages xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
     <ExpandDLResponseMessage ResponseClass="Success">
       <ResponseCode>NoError</ResponseCode>
       <DLExpansion IncludesLastItemInRange="true" TotalItemsInView="4">
-        <Mailbox xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <Mailbox xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <Name>Sadie Daniels</Name>
           <EmailAddress>sadie@contoso.com</EmailAddress>
           <RoutingType>SMTP</RoutingType>
           <MailboxType>Mailbox</MailboxType>
         </Mailbox>
-        <Mailbox xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <Mailbox xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <Name>Alfred Welker</Name>
           <EmailAddress>alfred@contoso.com</EmailAddress>
           <RoutingType>SMTP</RoutingType>
           <MailboxType>Mailbox</MailboxType>
         </Mailbox>
-        <Mailbox xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <Mailbox xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <Name>Contoso Sales</Name>
           <EmailAddress>sales@contoso.com</EmailAddress>
           <RoutingType>SMTP</RoutingType>
           <MailboxType>PublicDL</MailboxType>
         </Mailbox>
-        <Mailbox xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <Mailbox xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <Name>Contoso Support</Name>
           <EmailAddress>support@contoso.com</EmailAddress>
           <RoutingType>SMTP</RoutingType>
@@ -181,17 +181,17 @@ EWS マネージ API を使用する場合とは異なり、EWS を使用して�
 ## <a name="expand-a-contact-group-by-using-ews"></a>EWS を使用して連絡先グループを展開する
 <a name="bk_ExpandDGEWSMA"> </a>
 
-連絡先グループを展開するための XML 要求は、配布グループを展開するための要求に似ています。 メール アドレスの代わりに、連絡先グループの [ItemId](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) を使用します。 この例の **ItemId** は、読みやすさのために短くしてあります。 
+連絡先グループを展開するための XML 要求は、配布グループを展開するための要求に似ています。 メール アドレスの代わりに、連絡先グループの [ItemId](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) を使用します。 この例の **ItemId** は、読みやすさのために短くしてあります。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+<soap:Envelope xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <ExpandDL xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-              xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <ExpandDL xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+              xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <Mailbox>
-         <ItemId xmlns="http://schemas.microsoft.com/exchange/services/2006/types" Id="AAMkADBlY…" />
+         <ItemId xmlns="https://schemas.microsoft.com/exchange/services/2006/types" Id="AAMkADBlY…" />
       </Mailbox>
     </ExpandDL>
   </soap:Body>

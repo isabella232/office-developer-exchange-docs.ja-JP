@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 5829149e-7bfe-4820-bcc6-910e9264acc9
-description: Path 要素は、プロパティ識別子のすべてのスキーマの基本型です。 この型は抽象であり、インスタンス ドキュメント内で直接発生ことはありません。
-ms.openlocfilehash: a5a1ca5179ccf339e5a1f15621c92e2870f4f2d9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Path 要素は、すべてのプロパティ識別子の基本スキーマの種類です。 この型は abstract で、インスタンスドキュメント内で直接発生することはありません。
+ms.openlocfilehash: 5ba18084243e9720a76b9ac28023778c6d546bc4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832700"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529015"
 ---
 # <a name="path"></a>パス
 
-**Path**要素は、プロパティ識別子のすべてのスキーマの基本型です。 この型は抽象であり、インスタンス ドキュメント内で直接発生ことはありません。 
+**Path**要素は、すべてのプロパティ識別子の基本スキーマの種類です。 この型は abstract で、インスタンスドキュメント内で直接発生することはありません。 
   
 ```xml
 <Path/>
 ```
 
  **BasePathToElementType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,9 +44,9 @@ ms.locfileid: "19832700"
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-次の要素は、**パス**要素の代わりに使用されます。 
+**Path**要素を置き換えるには、次の要素を使用します。 
   
 - [FieldURI](fielduri.md)
     
@@ -56,20 +56,20 @@ ms.locfileid: "19832700"
     
 - [ExtendedFieldURI](extendedfielduri.md)
     
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

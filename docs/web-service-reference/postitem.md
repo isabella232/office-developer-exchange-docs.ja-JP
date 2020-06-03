@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7727ed84-9591-4a1c-bb04-12129926499b
-description: PostItem エレメントでは、Exchange ストア内の投稿アイテムを表します。
-ms.openlocfilehash: 3fb6d6cfe334999c93ca0238547dd5aee8150a5f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: PostItem 要素は、Exchange ストア内の投稿アイテムを表します。
+ms.openlocfilehash: 5fba1a9a6a3abc95ea2ce65cafa2b62bc7423f28
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832866"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528868"
 ---
 # <a name="postitem"></a>PostItem
 
-**PostItem**エレメントでは、Exchange ストア内の投稿アイテムを表します。 
+**Postitem**要素は、Exchange ストア内の投稿アイテムを表します。 
   
 ```xml
 <PostItem>
@@ -75,7 +75,7 @@ ms.locfileid: "19832866"
 ```
 
  **PostItemType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -85,89 +85,89 @@ ms.locfileid: "19832866"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[MimeContent](mimecontent.md) <br/> |Base64Binary の形式で表されるオブジェクトのネイティブの多目的インターネット メール拡張 (MIME) ストリームが含まれています。  <br/> |
-|[ItemId](itemid.md) <br/> |Exchange ストア内のアイテムの一意の識別子と変更キーが含まれています。 このプロパティは値の取得のみ可能です。  <br/> |
-|[ParentFolderId](parentfolderid.md) <br/> |アイテムまたはフォルダーを含む親フォルダーの識別子を表します。 このプロパティは値の取得のみ可能です。  <br/> |
-|[ItemClass](itemclass.md) <br/> |アイテムのメッセージ クラスを表します。  <br/> |
-|[Subject](subject.md) <br/> |Exchange ストアのアイテムおよび応答オブジェクトのサブジェクトを表します。 件名は、255 文字までに制限されています。  <br/> |
+|[MimeContent](mimecontent.md) <br/> |Base64Binary 形式で表されるオブジェクトのネイティブな汎用インターネットメール内線 (MIME) ストリームが保存されています。  <br/> |
+|[ItemId](itemid.md) <br/> |Exchange ストア内のアイテムの一意識別子および変更キーが含まれています。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。  <br/> |
+|[ParentFolderId](parentfolderid.md) <br/> |アイテムまたはフォルダーを含む親フォルダーの識別子を表します。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。  <br/> |
+|[ItemClass](itemclass.md) <br/> |アイテムのメッセージクラスを表します。  <br/> |
+|[件名](subject.md) <br/> |Exchange ストアアイテムおよび応答オブジェクトの件名を表します。 件名は255文字に制限されます。  <br/> |
 |[Sensitivity](sensitivity.md) <br/> |アイテムの秘密度レベルを示します。  <br/> |
-|[Body/本文](body.md) <br/> |メッセージの実際の本文の内容を表します。  <br/> |
-|[添付ファイル](attachments-ex15websvcsotherref.md) <br/> |アイテムや、Exchange ストア内のアイテムに関連付けられているファイルが含まれています。  <br/> |
-|[DateTimeReceived](datetimereceived.md) <br/> |メールボックス内のアイテムを受信したときの日時を表します。  <br/> |
-|[Size](size.md) <br/> |アイテムのバイト単位のサイズを表します。 このプロパティは値の取得のみ可能です。  <br/> |
+|[Body](body.md) <br/> |メッセージの実際の本文の内容を表します。  <br/> |
+|[Attachments](attachments-ex15websvcsotherref.md) <br/> |Exchange ストア内のアイテムに添付されているアイテムまたはファイルが保存されています。  <br/> |
+|[DateTimeReceived](datetimereceived.md) <br/> |メールボックス内のアイテムが受信された日付と時刻を表します。  <br/> |
+|[Size](size.md) <br/> |アイテムのサイズ (バイト単位) を表します。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。  <br/> |
 |[Categories](categories-ex15websvcsotherref.md) <br/> |メールボックス内のアイテムが属するカテゴリを識別する文字列のコレクションを表します。  <br/> |
-|[Importance](importance.md) <br/> |アイテムの重要性をについて説明します。  <br/> |
-|[InReplyTo](inreplyto.md) <br/> |このアイテムの返信するアイテムの識別子を表します。  <br/> |
-|[IsSubmitted](issubmitted.md) <br/> |アイテムが [送信トレイ] 既定フォルダーに送信されたかどうかを示します。  <br/> |
-|[IsDraft](isdraft.md) <br/> |アイテムはまだ送信されていないかどうかを表します。  <br/> |
-|[IsFromMe](isfromme.md) <br/> |ユーザーが彼または彼女自身にアイテムを送信するかどうかを示します。  <br/> |
-|[IsResend](isresend.md) <br/> |アイテムが以前送信されたかどうかを示します。  <br/> |
+|[Importance](importance.md) <br/> |アイテムの重要度について説明します。  <br/> |
+|[InReplyTo](inreplyto.md) <br/> |このアイテムが返信であるアイテムの識別子を表します。  <br/> |
+|[IsSubmitted](issubmitted.md) <br/> |アイテムが送信トレイの既定フォルダーに送信されたかどうかを示します。  <br/> |
+|[IsDraft](isdraft.md) <br/> |アイテムがまだ送信されていないかどうかを表します。  <br/> |
+|[IsFromMe](isfromme.md) <br/> |ユーザーが自分にアイテムを送信したかどうかを示します。  <br/> |
+|[IsResend](isresend.md) <br/> |アイテムが以前に送信されたかどうかを示します。  <br/> |
 |[IsUnmodified](isunmodified.md) <br/> |アイテムが変更されたかどうかを示します。  <br/> |
-|[InternetMessageHeaders](internetmessageheaders.md) <br/> |メールボックス内のアイテムに含まれるすべてのインターネット メッセージ ヘッダーのコレクションを表します。  <br/> |
-|[DateTimeSent](datetimesent.md) <br/> |メールボックス内のアイテムが送信された日時を表します。  <br/> |
-|[DateTimeCreated](datetimecreated.md) <br/> |メールボックス内の特定のアイテムが作成された日時を表します。  <br/> |
-|[ResponseObjects](responseobjects.md) <br/> |Exchange ストア内のアイテムに関連付けられているすべての応答オブジェクトのコレクションが含まれています。  <br/> |
-|[ReminderDueBy](reminderdueby.md) <br/> |イベントが発生したときの日時を表します。 [ReminderMinutesBeforeStart](reminderminutesbeforestart.md)要素によってアラームが表示されたときを決定する使用されます。  <br/> |
-|[ReminderIsSet](reminderisset.md) <br/> |Exchange ストアのアイテムのアラームが設定されたかどうかを示します。  <br/> |
-|[ReminderMinutesBeforeStart](reminderminutesbeforestart.md) <br/> |分前にアラームが表示されるときに、イベントの数を表します。  <br/> |
-|[DisplayCc](displaycc.md) <br/> |[Cc] ボックスの内容のために使用される表示文字列を表します。 これは、すべての Cc 受信者の表示名の連結された文字列です。  <br/> |
-|[DisplayTo](displayto.md) <br/> |ボックスの内容のために使用される表示文字列を表します。 これは、すべての受信者の表示名の連結された文字列です。  <br/> |
-|[添付ファイル付き](hasattachments.md) <br/> |項目に 1 つ以上の添付ファイルがある場合に**true**に設定されているプロパティを表します。 このプロパティは値の取得のみ可能です。  <br/> |
-|[ExtendedProperty](extendedproperty.md) <br/> |フォルダーおよびアイテムの拡張プロパティを識別します。  <br/> |
-|[カルチャ](culture.md) <br/> |メールボックス内の指定したアイテムのカルチャを表します。  <br/> |
-|[EffectiveRights](effectiverights.md) <br/> |アイテムまたはフォルダーのアクセス許可の設定に基づいて、クライアントの権限が含まれています。 この要素は、読み取り専用です。  <br/> |
-|[LastModifiedName](lastmodifiedname.md) <br/> |最後の項目を変更するのにはユーザーの表示名が含まれています。  <br/> |
-|[LastModifiedTime](lastmodifiedtime.md) <br/> |アイテムが最後に修正された日時を示します。  <br/> |
+|[InternetMessageHeaders](internetmessageheaders.md) <br/> |メールボックス内のアイテムに含まれるすべてのインターネットメッセージヘッダーのコレクションを表します。  <br/> |
+|[DateTimeSent](datetimesent.md) <br/> |メールボックス内のアイテムが送信された日付と時刻を表します。  <br/> |
+|[DateTimeCreated](datetimecreated.md) <br/> |メールボックス内の特定のアイテムが作成された日付と時刻を表します。  <br/> |
+|[ResponseObjects](responseobjects.md) <br/> |Exchange ストア内のアイテムに関連付けられているすべての response オブジェクトのコレクションを格納します。  <br/> |
+|[ReminderDueBy](reminderdueby.md) <br/> |イベントが発生した日付と時刻を表します。 これは、アラームがいつ表示されるかを決定するために[ReminderMinutesBeforeStart](reminderminutesbeforestart.md)要素によって使用されます。  <br/> |
+|[ReminderIsSet](reminderisset.md) <br/> |Exchange ストア内のアイテムにアラームが設定されているかどうかを示します。  <br/> |
+|[ReminderMinutesBeforeStart](reminderminutesbeforestart.md) <br/> |アラームが表示されるイベントの前の時間 (分単位) を表します。  <br/> |
+|[DisplayCc](displaycc.md) <br/> |[Cc] ボックスの内容に使用される表示文字列を表します。 これは、すべての Cc 受信者表示名の連結された文字列です。  <br/> |
+|[DisplayTo](displayto.md) <br/> |[宛先] ボックスの内容に対して使用される表示文字列を表します。 これは、すべての受信者の表示名の連結文字列です。  <br/> |
+|[HasAttachments](hasattachments.md) <br/> |アイテムに少なくとも1つの添付ファイルがある場合に**true**に設定されるプロパティを表します。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。  <br/> |
+|[ExtendedProperty](extendedproperty.md) <br/> |フォルダーとアイテムの拡張プロパティを識別します。  <br/> |
+|[Culture](culture.md) <br/> |メールボックス内の特定のアイテムのカルチャを表します。  <br/> |
+|[EffectiveRights](effectiverights.md) <br/> |アイテムまたはフォルダーのアクセス許可の設定に基づいたクライアントの権限が含まれています。 この要素は値の取得のみ可能です。  <br/> |
+|[LastModifiedName](lastmodifiedname.md) <br/> |アイテムを最後に変更したユーザーの表示名を含みます。  <br/> |
+|[LastModifiedTime](lastmodifiedtime.md) <br/> |アイテムが最後に変更された日時を示します。  <br/> |
 |[IsAssociated](isassociated.md) <br/> |アイテムがフォルダーに関連付けられているかどうかを示します。  <br/> |
-|[WebClientReadFormQueryString](webclientreadformquerystring.md) <br/> |Outlook Web App 内の項目を参照するのには Microsoft Office Outlook の Web アプリケーションのエンドポイントを結合するための URL を表します。  <br/> |
-|[WebClientEditFormQueryString](webclienteditformquerystring.md) <br/> |Outlook Web App 内の項目を編集するのには Outlook Web App エンドポイントへの連結に URL を表します。  <br/> |
-|[ConversationId](conversationid.md) <br/> |アイテムや会話の識別子が含まれています。  <br/> |
-|[UniqueBody](uniquebody.md) <br/> |このスレッドの一意の本文を表すテキストまたは HTML フラグメントを表します。  <br/> |
-|[ConversationIndex](conversationindex.md) <br/> |このメッセージが属するスレッドを表すバイナリの ID が含まれています。  <br/> |
-|[ConversationTopic](conversationtopic.md) <br/> |会話 id を表します。  <br/> |
-|[From](from.md) <br/> |投稿アイテムの送信元アドレスを表します。 **** 要素は、作成時にのみ設定できます。  <br/> |
-|[InternetMessageId](internetmessageid.md) <br/> |アイテムのインターネット メッセージ id を表します。  <br/> |
-|[IsRead](isread.md) <br/> |メッセージが読み取られたかどうかを示します。  <br/> |
-|[PostedTime](postedtime.md) <br/> |[PostItem](postitem.md)転記された時間を表します。  <br/> |
-|[参照資料](references.md) <br/> |返信に元のメッセージを関連付けるために使用する Usenet ヘッダーを表します。  <br/> |
-|[送信者](sender.md) <br/> |アイテムの送信者を識別します。  <br/> |
+|[WebClientReadFormQueryString](webclientreadformquerystring.md) <br/> |Outlook Web app のアイテムを読み取るために Microsoft Office Outlook Web App エンドポイントに連結する URL を表します。  <br/> |
+|[WebClientEditFormQueryString](webclienteditformquerystring.md) <br/> |Outlook web app エンドポイントに連結して Outlook Web App のアイテムを編集するための URL を表します。  <br/> |
+|[ConversationId](conversationid.md) <br/> |アイテムまたは会話の識別子が含まれています。  <br/> |
+|[UniqueBody](uniquebody.md) <br/> |この会話の一意の本文を表す HTML フラグメントまたはプレーンテキストを表します。  <br/> |
+|[ConversationIndex](conversationindex.md) <br/> |このメッセージが属しているスレッドを表すバイナリ ID を含みます。  <br/> |
+|[ConversationTopic](conversationtopic.md) <br/> |会話識別子を表します。  <br/> |
+|[From](from.md) <br/> |投稿アイテムの送信元のアドレスを表します。 **From**要素は、作成時にのみ設定できます。  <br/> |
+|[InternetMessageId](internetmessageid.md) <br/> |アイテムのインターネットメッセージ識別子を表します。  <br/> |
+|[IsRead](isread.md) <br/> |メッセージが開封されたかどうかを示します。  <br/> |
+|[PostedTime](postedtime.md) <br/> |[Postitem](postitem.md)が投稿された時刻を表します。  <br/> |
+|[References](references.md) <br/> |元のメッセージに返信を関連付けるために使用される Usenet ヘッダーを表します。  <br/> |
+|[Sender](sender.md) <br/> |アイテムの送信者を識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[SetItemField](setitemfield.md) <br/> |UpdateItem 操作内の項目の 1 つのプロパティには、更新プログラムを表します。  <br/> |
-|[AppendToItemField](appendtoitemfield.md) <br/> |[UpdateItem 操作](updateitem-operation.md)中に 1 つのアイテムまたはフォルダーのプロパティを追加するデータを識別します。  <br/> |
-|[ItemAttachment](itemattachment.md) <br/> |Exchange の他のアイテムに関連付けられている Exchange アイテムを表します。  <br/> |
-|[(ItemSync) を作成します。](create-itemsync.md) <br/> |ローカル クライアント ストアに作成する 1 つの項目を識別します。  <br/> |
-|[更新プログラム (ItemSync)](update-itemsync.md) <br/> |ローカル クライアント ストアで更新する 1 つの項目を識別します。  <br/> |
-|[ReadFlagChange](readflagchange.md) <br/> |アイテムを開封したときに、 [SyncFolderItems](syncfolderitems.md)の応答で返されます。 このプロパティは値の取得のみ可能です。 この要素は、Exchange 2007 SP1 で導入されました。  <br/> |
-|[Items](items.md) <br/> |項目の配列が含まれています。  <br/> |
-|[ConflictingMeetings](conflictingmeetings.md) <br/> |会議の時間と競合するすべての項目を識別します。  <br/> |
-|[AdjacentMeetings](adjacentmeetings.md) <br/> |会議の時刻に隣接しているすべての予定表のアイテムについて説明します。  <br/> |
+|[SetItemField](setitemfield.md) <br/> |UpdateItem 操作のアイテムの1つのプロパティに対する更新を表します。  <br/> |
+|[AppendToItemField](appendtoitemfield.md) <br/> |[Updateitem 操作](updateitem-operation.md)中に、アイテムまたはフォルダーの1つのプロパティに追加するデータを識別します。  <br/> |
+|[ItemAttachment](itemattachment.md) <br/> |別の Exchange アイテムに関連付けられている Exchange アイテムを表します。  <br/> |
+|[Create (ItemSync)](create-itemsync.md) <br/> |ローカルクライアントストアに作成する単一のアイテムを識別します。  <br/> |
+|[Update (ItemSync)](update-itemsync.md) <br/> |ローカルクライアントストアで更新する単一のアイテムを識別します。  <br/> |
+|[ReadFlagChange](readflagchange.md) <br/> |アイテムが読み取られたときの[Syncfolderitems](syncfolderitems.md)応答で返されます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 この要素は、Exchange 2007 SP1 で導入されました。  <br/> |
+|[Items](items.md) <br/> |項目の配列を格納します。  <br/> |
+|[ConflictingMeetings](conflictingmeetings.md) <br/> |会議の時間と競合するすべてのアイテムを識別します。  <br/> |
+|[AdjacentMeetings](adjacentmeetings.md) <br/> |会議の時刻に隣接しているすべての予定表アイテムを説明します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

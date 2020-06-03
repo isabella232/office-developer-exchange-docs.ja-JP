@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 886e7d35-9096-480b-8a8c-a7db27da06c2
 description: クライアントを同期するために、EWS マネージ API または EWS を使用して、フォルダー内のすべてのアイテムの一覧、またはフォルダー内で発生した変更の一覧を取得する方法を紹介します。
-ms.openlocfilehash: 8763c053463e4787741ef992ddb99d29be4192fc
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
-ms.translationtype: HT
+ms.openlocfilehash: e75f90b2d28d782465de89000796deccdd125e25
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353785"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527713"
 ---
 # <a name="synchronize-items-by-using-ews-in-exchange"></a>Exchange で EWS を使用してアイテムを同期する
 
@@ -19,14 +19,14 @@ ms.locfileid: "21353785"
   
 Exchange の EWS では、アイテムの同期とフォルダーの同期を使用して、クライアントとサーバー間でメールボックスのコンテンツを同期します。アイテムの同期では、フォルダーにあるアイテムの初期の一覧を取得し、その後段階的にそれらのアイテムに対して行われた変更を取得し、さらに新しいアイテムも取得します。
   
-クライアントにアイテムを同期する前に、まず[フォルダー階層を同期する](how-to-synchronize-folders-by-using-ews-in-exchange.md)必要があることに注意してください。 フォルダー階層をクライアント上に適切に設定した後、EWS マネージ API を使用してアイテムの同期を実行する場合は、まず [ExchangeService.SyncFolderItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderitems%28v=exchg.80%29.aspx) メソッドを使用して、[受信トレイ内のアイテムの初期の一覧を取得します](#bk_cesyncongoingewsma)。 次に、後続の呼び出し中に _cSyncState_ パラメーターの値を更新して、受信トレイ内の変更されたアイテムの一覧を取得します。 
+クライアントにアイテムを同期する前に、まず[フォルダー階層を同期する](how-to-synchronize-folders-by-using-ews-in-exchange.md)必要があることに注意してください。 フォルダー階層をクライアント上に適切に設定した後、EWS マネージ API を使用してアイテムの同期を実行する場合は、まず [ExchangeService.SyncFolderItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderitems%28v=exchg.80%29.aspx) メソッドを使用して、[受信トレイ内のアイテムの初期の一覧を取得します](#bk_cesyncongoingewsma)。 次に、後続の呼び出し中に _cSyncState_ パラメーターの値を更新して、受信トレイ内の変更されたアイテムの一覧を取得します。 
   
-[フォルダー階層を同期](how-to-synchronize-folders-by-using-ews-in-exchange.md)した後、EWS を使用してアイテムの同期を実行するには、[SyncFolderItems operation](http://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx) を使用して、[受信トレイ内のアイテムの初期の一覧](#bk_ewsexamplea)を要求して、応答を解析します。その後任意の時点で[メールボックス内のアイテムへの変更を取得](#bk_ewsexamplec)して、応答を解析します。クライアントは、初期の一覧または変更されたアイテムの一覧を受信した後、[ローカルに更新を実行します](#bk_nextsteps)。後で変更を取得する方法とタイミングは、アプリケーションが使用している[同期のデザイン パターン](mailbox-synchronization-and-ews-in-exchange.md#bk_syncpatterns) によって異なります。 
+[フォルダー階層を同期](how-to-synchronize-folders-by-using-ews-in-exchange.md)した後、EWS を使用してアイテムの同期を実行するには、[SyncFolderItems operation](https://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx) を使用して、[受信トレイ内のアイテムの初期の一覧](#bk_ewsexamplea)を要求して、応答を解析します。その後任意の時点で[メールボックス内のアイテムへの変更を取得](#bk_ewsexamplec)して、応答を解析します。クライアントは、初期の一覧または変更されたアイテムの一覧を受信した後、[ローカルに更新を実行します](#bk_nextsteps)。後で変更を取得する方法とタイミングは、アプリケーションが使用している[同期のデザイン パターン](mailbox-synchronization-and-ews-in-exchange.md#bk_syncpatterns) によって異なります。 
   
 ## <a name="get-the-list-of-all-items-or-changed-items-by-using-the-ews-managed-api"></a>EWS マネージ API を使用してすべてのアイテムまたは変更されたアイテムの一覧を取得する
 <a name="bk_cesyncongoingewsma"> </a>
 
-次のコード例では、受信トレイ フォルダー内のすべてのアイテムの初期の一覧を取得してから、前回の同期以降に発生した受信トレイ フォルダー内のアイテムに対する変更の一覧を取得する方法を示します。 [SyncFolderItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderitems%28v=exchg.80%29.aspx) メソッドの最初の呼び出し中に、_cSyncState_ の値を null に設定します。 メソッドが完了したら、次の **SyncFolderItems** メソッド呼び出しで使用するために _cSyncState_ の値をローカルに保存します。 最初の呼び出しと後続の呼び出しの両方で、変更がなくなるまで、**SyncFolderItems** メソッドの連続呼び出しを使用して、10 回のバッチ処理でアイテムが取得されます。 
+次のコード例では、受信トレイ フォルダー内のすべてのアイテムの初期の一覧を取得してから、前回の同期以降に発生した受信トレイ フォルダー内のアイテムに対する変更の一覧を取得する方法を示します。 [SyncFolderItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderitems%28v=exchg.80%29.aspx) メソッドの最初の呼び出し中に、_cSyncState_ の値を null に設定します。 メソッドが完了したら、次の **SyncFolderItems** メソッド呼び出しで使用するために _cSyncState_ の値をローカルに保存します。 最初の呼び出しと後続の呼び出しの両方で、変更がなくなるまで、**SyncFolderItems** メソッドの連続呼び出しを使用して、10 回のバッチ処理でアイテムが取得されます。 
   
 次の例は、_propertySet_ パラメーターを IdOnly に設定して、Exchange データベースの呼び出し回数を減らしています。これは[同期のベスト プラクティス](mailbox-synchronization-and-ews-in-exchange.md#bk_bestpractices)です。 この例では、**service** は有効な **ExchangeService** オブジェクト バインドであり、_cSyncState_ は前の **SyncFolderItems** の呼び出しによって返された同期状態を表すものとします。 
   
@@ -74,21 +74,21 @@ while (moreChangesAvailable);
 
 ```
 
-**SyncFolderItems** メソッドは、[Body](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.item.body%28v=exchg.80%29.aspx) や [Attachments](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.item.attachments%28v=exchg.80%29.aspx) などのプロパティを返すことができないという点で [FindItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) メソッドに似ています。 **SyncFolderItems** メソッドで返すことができないプロパティが必要な場合は、**SyncFolderItems** を呼び出す際に [IdOnly](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.propertyset.idonly%28v=exchg.80%29.aspx) プロパティ セットを指定してから、[ExchangeService.LoadPropertiesForItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.loadpropertiesforitems%28v=exchg.80%29.aspx) メソッドを使用して、**SyncFolderItems** メソッドによって返されたアイテムに必要なプロパティを取得します。 
+**SyncFolderItems** メソッドは、[Body](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.body%28v=exchg.80%29.aspx) や [Attachments](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.attachments%28v=exchg.80%29.aspx) などのプロパティを返すことができないという点で [FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) メソッドに似ています。 **SyncFolderItems** メソッドで返すことができないプロパティが必要な場合は、**SyncFolderItems** を呼び出す際に [IdOnly](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.propertyset.idonly%28v=exchg.80%29.aspx) プロパティ セットを指定してから、[ExchangeService.LoadPropertiesForItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.loadpropertiesforitems%28v=exchg.80%29.aspx) メソッドを使用して、**SyncFolderItems** メソッドによって返されたアイテムに必要なプロパティを取得します。 
   
 サーバー上の新しいアイテムまたは変更されたアイテムの一覧を取得した後、[クライアント上でアイテムを作成または更新します](#bk_nextsteps)。
   
 ## <a name="get-the-initial-list-of-items-by-using-ews"></a>EWS を使用してアイテムの初期のリストを取得する
 <a name="bk_ewsexamplea"> </a>
 
-次の例は、[SyncFolderItems 操作](http://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx)を使用して、受信トレイ内のアイテムの初期の一覧を取得する XML 要求を示しています。 これは、[SyncFolderItems メソッドを使用してアイテムの一覧を取得する](#bk_cesyncongoingewsma)際に、EWS マネージ API が送信する XML 要求でもあります。 **SyncFolderItems** 操作の [SyncState](http://msdn.microsoft.com/library/e5ebaae3-0f07-481d-ac67-d9687a3c7ac3%28Office.15%29.aspx) 要素は、これが最初の同期であるために含まれません。 次の例は、[BaseShape](http://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) 要素を **IdOnly** に設定して、Exchange データベースの呼び出し回数を減らしています。これは[同期のベスト プラクティス](mailbox-synchronization-and-ews-in-exchange.md#bk_bestpractices)です。
+次の例は、[SyncFolderItems 操作](https://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx)を使用して、受信トレイ内のアイテムの初期の一覧を取得する XML 要求を示しています。 これは、[SyncFolderItems メソッドを使用してアイテムの一覧を取得する](#bk_cesyncongoingewsma)際に、EWS マネージ API が送信する XML 要求でもあります。 **SyncFolderItems** 操作の [SyncState](https://msdn.microsoft.com/library/e5ebaae3-0f07-481d-ac67-d9687a3c7ac3%28Office.15%29.aspx) 要素は、これが最初の同期であるために含まれません。 次の例は、[BaseShape](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) 要素を **IdOnly** に設定して、Exchange データベースの呼び出し回数を減らしています。これは[同期のベスト プラクティス](mailbox-synchronization-and-ews-in-exchange.md#bk_bestpractices)です。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
   </soap:Header>
@@ -109,26 +109,26 @@ while (moreChangesAvailable);
 
 <a name="bk_responsesyncfolderitems"> </a>
 
-次の例は、クライアントからの **SyncFolderItems** 操作の要求を処理した後にサーバーによって返される XML 応答を示します。最初の応答には、最初の同期中はすべてのアイテムが新しいものと見なされるため、5 つのアイテムの [Create](http://msdn.microsoft.com/library/cb5e64a2-66a5-4447-921e-7c13efb8f6bf%28Office.15%29.aspx) 要素が含まれます。読みやすくするため、一部の属性と要素の値が短縮されています。 
+次の例は、クライアントからの **SyncFolderItems** 操作の要求を処理した後にサーバーによって返される XML 応答を示します。最初の応答には、最初の同期中はすべてのアイテムが新しいものと見なされるため、5 つのアイテムの [Create](https://msdn.microsoft.com/library/cb5e64a2-66a5-4447-921e-7c13efb8f6bf%28Office.15%29.aspx) 要素が含まれます。読みやすくするため、一部の属性と要素の値が短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15"
                          MinorVersion="0"
                          MajorBuildNumber="785"
                          MinorBuildNumber="6"
                          Version="V2_6"
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:SyncFolderItemsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:SyncFolderItemsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:SyncFolderItemsResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -178,14 +178,14 @@ while (moreChangesAvailable);
 ## <a name="get-the-changes-since-the-last-sync-by-using-ews"></a>EWS を使用して前回の同期以降の変更を取得する
 <a name="bk_ewsexamplec"> </a>
 
-次の例は、[SyncFolderItems 操作](http://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx)を使用して、受信トレイ内のアイテムに行われた変更の一覧を取得する XML 要求を示します。これは、[受信トレイに対して行われた変更の一覧を取得する](#bk_cesyncongoingewsma)際に、EWS マネージ API が送信する XML 要求でもあります。次の例では、[SyncState](http://msdn.microsoft.com/library/e5ebaae3-0f07-481d-ac67-d9687a3c7ac3%28Office.15%29.aspx) 要素の値を[以前の応答](#bk_responsesyncfolderitems)で返された値に設定します。またこの例では、デモ用に [BaseShape](http://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) 要素を **IdOnly** ではなく、**AllProperties** に設定し、返される追加のプロパティを表示します。[BaseShape](http://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) 要素を **IdOnly** に設定することは[同期のベスト プラクティス](mailbox-synchronization-and-ews-in-exchange.md#bk_bestpractices)です。**SyncState** の値は読みやすいように短縮されています。 
+次の例は、[SyncFolderItems 操作](https://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx)を使用して、受信トレイ内のアイテムに行われた変更の一覧を取得する XML 要求を示します。これは、[受信トレイに対して行われた変更の一覧を取得する](#bk_cesyncongoingewsma)際に、EWS マネージ API が送信する XML 要求でもあります。次の例では、[SyncState](https://msdn.microsoft.com/library/e5ebaae3-0f07-481d-ac67-d9687a3c7ac3%28Office.15%29.aspx) 要素の値を[以前の応答](#bk_responsesyncfolderitems)で返された値に設定します。またこの例では、デモ用に [BaseShape](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) 要素を **IdOnly** ではなく、**AllProperties** に設定し、返される追加のプロパティを表示します。[BaseShape](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) 要素を **IdOnly** に設定することは[同期のベスト プラクティス](mailbox-synchronization-and-ews-in-exchange.md#bk_bestpractices)です。**SyncState** の値は読みやすいように短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
       <t:RequestServerVersion Version="Exchange2010_SP2" />
   </soap:Header>
@@ -209,16 +209,16 @@ while (moreChangesAvailable);
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="731" MinorBuildNumber="10" Version="V2_3"
-                 xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                 xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                 xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                 xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:SyncFolderItemsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:SyncFolderItemsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:SyncFolderItemsResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -420,16 +420,16 @@ while (moreChangesAvailable);
 </s:Envelope>
 ```
 
-**SyncFolderItems** 操作は、要素の [Body](http://msdn.microsoft.com/library/7851ea9b-9f87-4adc-a26f-7a27df4a9bca%28Office.15%29.aspx) や [Attachments](http://msdn.microsoft.com/library/b470e614-34bb-44f0-8790-7ddbdcbbd29d%28Office.15%29.aspx) などの要素を返すことができないという点で [FindItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) メソッドに似ています。 **SyncFolderItems** 操作で返すことができないプロパティが必要な場合は、**SyncFolderItems** を呼び出す際に [BaseShape](http://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) 要素の値を IdOnly に設定してから、[GetItem 操作](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx)を使用して **SyncFolderItems** 操作によって返されたアイテムに必要なプロパティを取得します。 
+**SyncFolderItems** 操作は、要素の [Body](https://msdn.microsoft.com/library/7851ea9b-9f87-4adc-a26f-7a27df4a9bca%28Office.15%29.aspx) や [Attachments](https://msdn.microsoft.com/library/b470e614-34bb-44f0-8790-7ddbdcbbd29d%28Office.15%29.aspx) などの要素を返すことができないという点で [FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) メソッドに似ています。 **SyncFolderItems** 操作で返すことができないプロパティが必要な場合は、**SyncFolderItems** を呼び出す際に [BaseShape](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) 要素の値を IdOnly に設定してから、[GetItem 操作](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx)を使用して **SyncFolderItems** 操作によって返されたアイテムに必要なプロパティを取得します。 
   
 サーバー上の変更されたアイテムの一覧を取得した後、[クライアント上でアイテムを更新します](#bk_nextsteps)。
   
 ## <a name="update-the-client"></a>クライアントを更新する
 <a name="bk_nextsteps"> </a>
 
-EWS マネージ API を使用している場合は、新しいアイテムまたは変更されたアイテムの一覧を取得した後、[LoadPropertiesForItems](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice.loadpropertiesforitems%28v=exchg.80%29.aspx) メソッドを使用して新しいアイテムまたは変更されたアイテムのプロパティを取得し、プロパティをローカル値と比較して、クライアント上のアイテムを更新します。 
+EWS マネージ API を使用している場合は、新しいアイテムまたは変更されたアイテムの一覧を取得した後、[LoadPropertiesForItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.loadpropertiesforitems%28v=exchg.80%29.aspx) メソッドを使用して新しいアイテムまたは変更されたアイテムのプロパティを取得し、プロパティをローカル値と比較して、クライアント上のアイテムを更新します。 
   
-EWS を使用している場合は、[GetItem 操作](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx)を使用して新しいアイテムまたは変更されたアイテムのプロパティを取得し、クライアント上のアイテムを更新します。 
+EWS を使用している場合は、[GetItem 操作](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx)を使用して新しいアイテムまたは変更されたアイテムのプロパティを取得し、クライアント上のアイテムを更新します。 
   
 ## <a name="see-also"></a>関連項目
 

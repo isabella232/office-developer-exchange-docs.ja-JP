@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: e0d14b7f-5bde-4c0b-b6f7-816d11081286
-description: 正確さの要素は、緯度の正確さと関連付けられている住所の経度を指定します。
-ms.openlocfilehash: 8960364477e1fd251ee8505d0f8b07d5a922cd93
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 精度要素は、関連付けられた郵便番号の緯度と経度の精度を指定します。
+ms.openlocfilehash: ab251caee427a5209482eb9381fd2e243bc3a3d6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760425"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527552"
 ---
 # <a name="accuracy"></a>Accuracy
 
-**正確さ**の要素は、緯度の正確さと関連付けられている住所の経度を指定します。 
+**精度**要素は、関連付けられた郵便番号の緯度と経度の精度を指定します。 
   
 ```XML
 <Accuracy></Accuracy>
 ```
 
- **xs:double**
-## <a name="attributes-and-elements"></a>属性および要素
+ **xs: double**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,26 +40,26 @@ ms.locfileid: "19760425"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[住所 (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md) <br/> |ペルソナの郵便の宛先を指定します。  <br/> |
+|["Postaladdress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md) <br/> |ペルソナの住所を指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |型のスキーマ  <br/> |
-|検証ファイル  <br/> |types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

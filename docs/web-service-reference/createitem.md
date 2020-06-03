@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c3707feb-3fd4-4b8a-a68f-2abadd455163
-description: CreateItem 要素は、Exchange ストア内のアイテムを作成する要求を定義します。
-ms.openlocfilehash: 9453323bff07749f5852dae75284c61c0895adb6
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: CreateItem 要素は、Exchange ストア内のアイテムを作成するための要求を定義します。
+ms.openlocfilehash: 235664b7baeceeccb14135fd346123f0f7d99346
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353127"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527062"
 ---
 # <a name="createitem"></a>CreateItem
 
-**CreateItem**要素は、Exchange ストア内のアイテムを作成する要求を定義します。 
+**CreateItem**要素は、Exchange ストア内のアイテムを作成するための要求を定義します。 
   
 ```xml
 <CreateItem MessageDisposition="" SendMeetingInvitations="">
@@ -32,7 +32,7 @@ ms.locfileid: "21353127"
 
 **CreateItemType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,31 +40,31 @@ ms.locfileid: "21353127"
 
 |属性|説明|
 |:-----|:-----|
-|**MessageDisposition** <br/> |作成後のアイテムの処理方法について説明します。 属性は、電子メール メッセージに必要です。 この属性は、電子メール メッセージに該当する場合のみです。  <br/> |
-|**SendMeetingInvitations** <br/> |作成後に会議出席依頼を処理する方法について説明します。 この属性は、予定表アイテムの必要があります。  <br/> |
+|**MessageDisposition** <br/> |アイテムが作成された後に処理される方法について説明します。 電子メールメッセージの属性は必須です。 この属性は、電子メールメッセージにのみ適用されます。  <br/> |
+|**Send会議の招待** <br/> |会議出席依頼が作成された後に処理される方法について説明します。 この属性は、予定表アイテムに必要です。  <br/> |
    
 #### <a name="messagedisposition-attribute"></a>MessageDisposition 属性
 
 |値|説明|
 |:-----|:-----|
-|SaveOnly  <br/> |メッセージ アイテムは、 [SavedItemFolderId](saveditemfolderid.md)要素で指定されているフォルダーに保存されます。 [SendItem 操作](senditem-operation.md)を使用してメッセージを後で送信することができます。 アイテム識別子は、応答で返されます。 メッセージ アイテム以外の項目の種類の項目の識別子は返されません。 これには、応答オブジェクトが含まれます。  <br/> |
-|SendOnly  <br/> |アイテムを送信しますが、送信済みアイテム フォルダーにコピーは保存されません。 アイテム識別子は、応答で返されません。<br/><br/>**注**: **createitem メソッド**がデリゲートのアクセスをサポートしていませんこのオプションを使用してインストール先のフォルダーを指定することはできませんので、SendOnly オプションを使用するとします。 回避するに項目を作成し、項目の識別子を取得する、SendItem 操作を使用して、アイテムを送信するには。           |
-|SendAndSaveCopy  <br/> |アイテムが送信され、 [SavedItemFolderId](saveditemfolderid.md)要素で指定されているフォルダーにコピーが保存されます。 アイテム識別子は、応答で返されません。<br/><br/>**注**: 会議出席依頼は、 [SavedItemFolderId](saveditemfolderid.md)プロパティで指定されたフォルダーには保存されません。 予定表の作成、保存だけの**SavedItemFolderId**プロパティによって予定表アイテムの場所を指定することができます。 会議出席依頼アイテムの保存場所を制御することはできません。 関連付けられている予定表アイテムのみがコピーされ、 **SavedItemFolderId**プロパティで指定されたフォルダーに保存されます。           |
+|SaveOnly  <br/> |メッセージアイテムは、 [SavedItemFolderId](saveditemfolderid.md)要素によって指定されたフォルダーに保存されます。 メッセージは、 [SendItem 操作](senditem-operation.md)を使用して後で送信できます。 アイテム識別子が応答で返されます。 アイテムの識別子は、メッセージアイテム以外のアイテムの種類に対しては返されません。 これには、応答オブジェクトが含まれます。  <br/> |
+|SendOnly  <br/> |アイテムは送信されますが、[送信済みアイテム] フォルダーにコピーは保存されません。 応答では、アイテム識別子は返されません。<br/><br/>**注**: このオプションでは宛先フォルダーを指定できないため、 **CreateItem**は、sendonly オプションが使用されている場合は代理人アクセスをサポートしていません。 回避策として、アイテムを作成し、アイテム識別子を取得してから、SendItem 操作を使用してアイテムを送信します。           |
+|SendAndSaveCopy  <br/> |アイテムが送信され、 [SavedItemFolderId](saveditemfolderid.md)要素によって識別されるフォルダーにコピーが保存されます。 応答では、アイテム識別子は返されません。<br/><br/>**注**: 会議出席依頼は、 [SavedItemFolderId](saveditemfolderid.md)プロパティによって指定されたフォルダーには保存されません。 予定表の場合、 **SavedItemFolderId**プロパティで指定できるのは、予定表アイテムの保存場所のみです。 会議出席依頼アイテムが保存される場所を制御することはできません。 関連付けられた予定表アイテムのみがコピーされ、 **SavedItemFolderId**プロパティによって識別されるフォルダーに保存されます。           |
    
-#### <a name="sendmeetinginvitations-attribute"></a>SendMeetingInvitations 属性
+#### <a name="sendmeetinginvitations-attribute"></a>Send会議の招待の属性
 
 |値|説明|
 |:-----|:-----|
-|SendToNone  <br/> |アイテムが会議出席依頼の場合は、これは予定表のアイテムとして保存しますが、送信されません。  <br/> |
-|SendOnlyToAll  <br/> |会議出席依頼は、すべての出席者に送信されますが、送信済みアイテム フォルダーには保存されません。  <br/> |
-|SendToAllAndSaveCopy  <br/> |すべての出席者に会議出席依頼が送信され、 [SavedItemFolderId](saveditemfolderid.md)要素で指定されているフォルダーにコピーが保存されます。  <br/> |
+|SendToNone  <br/> |アイテムが会議出席依頼の場合、予定表アイテムとして保存されますが、送信されません。  <br/> |
+|SendOnlyToAll  <br/> |会議出席依頼はすべての出席者に送信されますが、[送信済みアイテム] フォルダーには保存されません。  <br/> |
+|SendToAllAndSaveCopy  <br/> |会議出席依頼はすべての出席者に送信され、 [SavedItemFolderId](saveditemfolderid.md)要素によって識別されるフォルダーにコピーが保存されます。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
 |要素|説明|
 |:-----|:-----|
-|[SavedItemFolderId](saveditemfolderid.md) <br/> |新しいアイテムを作成することができますターゲット フォルダーを識別します。 **MessageDisposition**属性は、SendOnly に設定されている場合は、作成したメッセージのみ送信されます。 [SavedItemFolderId](saveditemfolderid.md)要素で指定されたフォルダーにメッセージは送信されません。  <br/> |
-|[Items (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md) <br/> |[SavedItemFolderId](saveditemfolderid.md)要素で指定されたフォルダーに作成する項目の配列が含まれています。  <br/> |
+|[SavedItemFolderId](saveditemfolderid.md) <br/> |新しいアイテムを作成できるターゲットフォルダーを指定します。 **MessageDisposition**属性が sendonly に設定されている場合は、作成されたメッセージのみが送信されます。 このメッセージは、 [SavedItemFolderId](saveditemfolderid.md)要素によって識別されるフォルダーには配置されません。  <br/> |
+|[アイテム (非 Emptyarrayofallitemstype)](items-nonemptyarrayofallitemstype.md) <br/> |[SavedItemFolderId](saveditemfolderid.md)要素によって識別されるフォルダー内に作成するアイテムの配列が含まれています。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -72,24 +72,23 @@ ms.locfileid: "21353127"
   
 ## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [CreateItemResponse](createitemresponse.md)  
-- 
-  [CreateItem 操作](createitem-operation.md)
-- [電子メール メッセージの作成](http://msdn.microsoft.com/library/05bfb83c-2866-427d-a9fe-14ba3cb02793%28Office.15%29.aspx) 
-- [連絡先 (Exchange Web サービス) を作成します。](http://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)  
-- [タスクを作成します。](http://msdn.microsoft.com/library/0ef97334-e8a0-4f67-a23a-dd9e2bbad49f%28Office.15%29.aspx) 
-- [予定の作成](http://msdn.microsoft.com/library/2385391e-c9e7-4d45-b803-c4ff94d5c94e%28Office.15%29.aspx)
+- [CreateItem 操作](createitem-operation.md)
+- [電子メールメッセージの作成](https://msdn.microsoft.com/library/05bfb83c-2866-427d-a9fe-14ba3cb02793%28Office.15%29.aspx) 
+- [連絡先の作成 (Exchange Web サービス)](https://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)  
+- [タスクの作成](https://msdn.microsoft.com/library/0ef97334-e8a0-4f67-a23a-dd9e2bbad49f%28Office.15%29.aspx) 
+- [予定の作成](https://msdn.microsoft.com/library/2385391e-c9e7-4d45-b803-c4ff94d5c94e%28Office.15%29.aspx)
 

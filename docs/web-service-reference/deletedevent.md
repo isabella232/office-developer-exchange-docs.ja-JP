@@ -12,16 +12,16 @@ api_type:
 - schema
 ms.assetid: c4565eb4-b537-466c-b1ff-11602533812b
 description: DeletedEvent 要素は、アイテムまたはフォルダーが削除されるイベントを表します。
-ms.openlocfilehash: 5ddc909ffc9c74ea6b423610e915d5b9ff9bff43
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+ms.openlocfilehash: 5eb0c947aacc592f81c595da2cc00bf4874f300b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354408"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526943"
 ---
 # <a name="deletedevent"></a>DeletedEvent
 
-**DeletedEvent**要素は、アイテムまたはフォルダーが削除されるイベントを表します。 
+**Deletedevent**要素は、アイテムまたはフォルダーが削除されるイベントを表します。 
   
 ```xml
 <DeletedEvent>
@@ -43,7 +43,7 @@ ms.locfileid: "21354408"
 
 **BaseObjectChangedEventType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -53,32 +53,32 @@ ms.locfileid: "21354408"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[Watermark](watermark.md) <br/> |メールボックス イベント テーブル内のイベント ブックマークを表します。  <br/> |
-|[TimeStamp](timestamp.md) <br/> |アイテムまたはフォルダーの削除済みメールボックス イベントのタイムスタンプを表します。  <br/> |
+|[Watermark](watermark.md) <br/> |メールボックスイベントテーブル内のイベントブックマークを表します。  <br/> |
+|[示](timestamp.md) <br/> |削除されたアイテムまたはフォルダーのメールボックスイベントのタイムスタンプを表します。  <br/> |
 |[FolderId](folderid.md) <br/> |削除されたフォルダーの識別子を表します。  <br/> |
-|[ItemId](itemid.md) <br/> |削除された項目の識別子を表します。  <br/> |
-|[ParentFolderId](parentfolderid.md) <br/> |フォルダーを削除する前に、削除された項目の親フォルダーの識別子を表します。  <br/> |
+|[ItemId](itemid.md) <br/> |削除されたアイテムの識別子を表します。  <br/> |
+|[ParentFolderId](parentfolderid.md) <br/> |削除する前に削除されたアイテムまたはフォルダーの親フォルダーの識別子を表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[通知](notification-ex15websvcsotherref.md) <br/> |サブスクリプションおよび最後の通知以降に発生したイベントに関する情報が含まれています。  <br/> |
+|[通知](notification-ex15websvcsotherref.md) <br/> |サブスクリプションに関する情報、および前回の通知以降に発生したイベントに関する情報が含まれます。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

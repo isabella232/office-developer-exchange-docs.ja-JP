@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: bf614551-f5b0-4f80-bdac-628f685faee9
-description: DebugData 要素には、自動検出エラー応答のデバッグ データが含まれています。
-ms.openlocfilehash: 84e171333e1d4d54928834915c088e486e4cfe8a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DebugData 要素には、自動検出エラー応答のデバッグデータが含まれています。
+ms.openlocfilehash: 79b5f4d3fa1379b7052dcd03053bc8bac6430017
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759944"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526950"
 ---
 # <a name="debugdata-pox"></a>DebugData (POX)
 
-**DebugData**要素には、自動検出エラー応答のデバッグ データが含まれています。 
+**Debugdata**要素には、自動検出エラー応答のデバッグデータが含まれています。 
   
 - [エラー (POX)](error-pox.md) 
 - [DebugData (POX)](debugdata-pox.md)
@@ -27,7 +27,7 @@ ms.locfileid: "19759944"
 <DebugData/>
 ```
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -43,13 +43,13 @@ ms.locfileid: "19759944"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[エラー (POX)](error-pox.md) <br/> |自動検出エラー応答が含まれています。  <br/> |
+|[エラー (POX)](error-pox.md) <br/> |自動検出エラー応答を格納します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、自動検出エラー応答のデバッグ データを表します。
+Text 値は、自動検出エラー応答のデバッグデータを表します。
   
 ## <a name="see-also"></a>関連項目
 
-- [交換の POX の自動検出の XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+- [Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
 

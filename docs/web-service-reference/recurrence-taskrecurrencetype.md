@@ -1,5 +1,5 @@
 ---
-title: Recurrence (TaskRecurrenceType)
+title: 定期的なアイテム (TaskRecurrenceType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 99f8414a-9110-4721-a6e5-ebf225d7ed0a
-description: 定期的なアイテムの要素には、定期タスクの頻度に関する情報が含まれています。
-ms.openlocfilehash: 0ec43447e47050a0bd483d8441da88e4a7f08923
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: 繰り返し要素には、定期的なタスクの繰り返し情報が含まれています。
+ms.openlocfilehash: 933fd6b003d8d193e1561f2a22b65ac00237c345
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354422"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528833"
 ---
-# <a name="recurrence-taskrecurrencetype"></a>Recurrence (TaskRecurrenceType)
+# <a name="recurrence-taskrecurrencetype"></a>定期的なアイテム (TaskRecurrenceType)
 
-**定期的なアイテム**の要素には、定期タスクの頻度に関する情報が含まれています。 
+**繰り返し**要素には、定期的なタスクの繰り返し情報が含まれています。 
   
 ```xml
 <Recurrence>
@@ -236,7 +236,7 @@ ms.locfileid: "21354422"
 
 **TaskRecurrenceType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -246,21 +246,21 @@ ms.locfileid: "21354422"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[RelativeYearlyRecurrence](relativeyearlyrecurrence.md) <br/> |定期的なタスクの相対的な年 1 回定期的なパターンをについて説明します。  <br/> |
-|[AbsoluteYearlyRecurrence](absoluteyearlyrecurrence.md) <br/> |定期的な仕事の年間の定期的なパターンを表します。  <br/> |
-|[RelativeMonthlyRecurrence](relativemonthlyrecurrence.md) <br/> |定期的なタスクの相対的な毎月定期的なパターンをについて説明します。  <br/> |
-|[AbsoluteMonthlyRecurrence](absolutemonthlyrecurrence.md) <br/> |定期的な仕事の毎月の定期的なパターンを表します。  <br/> |
-|[WeeklyRecurrence](weeklyrecurrence.md) <br/> |週、および日のタスクが繰り返し発生する頻度について説明します。  <br/> |
-|[DailyRecurrence](dailyrecurrence.md) <br/> |頻度を日数でタスクが繰り返し発生するについて説明します。  <br/> |
-|[DailyRegeneration](dailyregeneration.md) <br/> |次の項目の現在のタスクの完了の期限後、何日間について説明します。  <br/> |
-|[WeeklyRegeneration](weeklyregeneration.md) <br/> |次の項目の現在のタスクの完了の期限後の数週間をについて説明します。  <br/> |
-|[MonthlyRegeneration](monthlyregeneration.md) <br/> |次に一致する現在のタスクの完了が原因である後数か月間について説明します。  <br/> |
-|[YearlyRegeneration](yearlyregeneration.md) <br/> |数年の後、次に一致する現在のタスクの完了が原因であるについて説明します。  <br/> |
-|[NoEndRecurrence](noendrecurrence.md) <br/> |定義された終了日がない定期的なパターンをについて説明します。  <br/> この要素の使用は、 [EndDateRecurrence](enddaterecurrence.md)と[NumberedRecurrence](numberedrecurrence.md)の要素の使用を除外します。  <br/> |
-|[EndDateRecurrence](enddaterecurrence.md) <br/> |開始日と終了日の項目の定期的なパターンについて説明します。  <br/> この要素の使用は、 [NoEndRecurrence](noendrecurrence.md)と[NumberedRecurrence](numberedrecurrence.md)の要素の使用を除外します。  <br/> 再生のパターンとは、 [EndDateRecurrence](enddaterecurrence.md)を使用できません。  <br/> |
-|[NumberedRecurrence](numberedrecurrence.md) <br/> |開始日と定期的なアイテムの出現回数を説明します。  <br/> この要素の使用は、 [NoEndRecurrence](noendrecurrence.md)と[EndDateRecurrence](enddaterecurrence.md)の要素の使用を除外します。  <br/> |
+|[RelativeYearlyRecurrence](relativeyearlyrecurrence.md) <br/> |定期的なタスクの相対的な年単位のパターンを記述します。  <br/> |
+|[AbsoluteYearlyRecurrence](absoluteyearlyrecurrence.md) <br/> |定期的なタスクの年単位の頻度パターンを表します。  <br/> |
+|[RelativeMonthlyRecurrence](relativemonthlyrecurrence.md) <br/> |定期的なタスクの相対的な月単位のパターンを記述します。  <br/> |
+|[AbsoluteMonthlyRecurrence](absolutemonthlyrecurrence.md) <br/> |定期タスクの月単位の定期的なパターンを表します。  <br/> |
+|[WeeklyRecurrence](weeklyrecurrence.md) <br/> |頻度 (週単位) と、タスクが繰り返される曜日を表します。  <br/> |
+|[DailyRecurrence](dailyrecurrence.md) <br/> |タスクが繰り返される頻度 (日単位) を表します。  <br/> |
+|[DailyRegeneration](dailyregeneration.md) <br/> |現在のタスクの完了後、次に発生する期限を指定します。  <br/> |
+|[WeeklyRegeneration](weeklyregeneration.md) <br/> |現在のタスクの完了後、次に発生する週数を指定します。  <br/> |
+|[月の明示再生](monthlyregeneration.md) <br/> |現在のタスクの完了後、次に発生する期限を指定します。  <br/> |
+|[YearlyRegeneration](yearlyregeneration.md) <br/> |現在のタスクの完了後、次に発生する年の数を表します。  <br/> |
+|[NoEndRecurrence](noendrecurrence.md) <br/> |定義済みの終了日がない定期的なパターンを記述します。  <br/> この要素を使用すると、 [EndDateRecurrence](enddaterecurrence.md)要素と[番号 ed再発](numberedrecurrence.md)要素の使用が除外されます。  <br/> |
+|[EndDateRecurrence](enddaterecurrence.md) <br/> |アイテムの定期的なパターンの開始日と終了日を示します。  <br/> この要素を使用すると、 [Noendrecurrence なパターン](noendrecurrence.md)要素と[番号 ed再発](numberedrecurrence.md)要素の使用が除外されます。  <br/> [EndDateRecurrence](enddaterecurrence.md)を再生成パターンと共に使用することはできません。  <br/> |
+|[NumberedRecurrence](numberedrecurrence.md) <br/> |定期的なアイテムの開始日と発生回数を表します。  <br/> この要素を使用すると、 [Noendrecurrence](noendrecurrence.md)要素と[EndDateRecurrence](enddaterecurrence.md)要素の使用が除外されます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -270,18 +270,18 @@ ms.locfileid: "21354422"
    
 ## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

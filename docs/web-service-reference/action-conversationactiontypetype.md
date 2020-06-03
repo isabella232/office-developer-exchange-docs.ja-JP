@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8bbc12f2-76c5-4fda-828f-56b2086a0454
-description: Action 要素には、ConversationId 要素で指定されたスレッド上で実行するアクションが含まれています。
-ms.openlocfilehash: b468eeaf0c2509bfa53cbd83f497f0bae20a7f68
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Action 要素には、ConversationId 要素によって指定された会話に対して実行するアクションが含まれています。
+ms.openlocfilehash: f97b04b98cdc29bee9aff5fa1fc6f37400b8314c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759265"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527545"
 ---
 # <a name="action-conversationactiontypetype"></a>アクション (ConversationActionTypeType)
 
-**Action**要素には、 [ConversationId](conversationid.md)要素で指定されたスレッド上で実行するアクションが含まれています。 
+**Action**要素には、 [ConversationId](conversationid.md)要素によって指定された会話に対して実行するアクションが含まれています。 
   
 - [ApplyConversationAction](applyconversationaction.md)
   
@@ -36,7 +36,7 @@ ms.locfileid: "19759265"
 ```
 
  **ConversationActionTypeType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -52,43 +52,43 @@ ms.locfileid: "19759265"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ConversationAction](conversationaction.md) <br/> |1 つのテーマを適用する 1 つのアクションが含まれています。  <br/> |
+|[ConversationAction](conversationaction.md) <br/> |単一の会話に適用される1つのアクションが含まれます。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**Action**要素のテキスト値では、会話するアクションが実行されますを示します。 可能なテキスト値と対応するアクションを次に示します。 
+**Action**要素のテキスト値は、会話に対して実行されるアクションを示します。 可能なテキスト値とそれに対応するアクションを次に示します。 
   
-- **AlwaysCategorize** - 現在の項目との会話では、[カテゴリ](categories-ex15websvcsotherref.md)の要素で識別されるカテゴリを使用して自動的に設定されます。 
+- **AlwaysCategorize** -会話内の現在のアイテムと新しいアイテムは、 [categories](categories-ex15websvcsotherref.md)要素で識別されるカテゴリで自動的に設定されます。 
     
-- **AlwaysDelete** - 現在の項目との会話に新しいアイテムが自動的に削除されます。 削除モードは、[削除の種類](deletetype.md)の要素によって設定されます。 
+- **Always delete** -現在のアイテムとスレッドの新しいアイテムは自動的に削除されます。 削除モードは[Deletetype](deletetype.md)要素によって設定されます。 
     
-- **AlwaysMove** - 現在の項目との会話では、 [DestinationFolderId](destinationfolderid.md)要素で指定されたフォルダーに自動的に移動されます。 
+- **Always move** -現在のアイテムとスレッド内の新しいアイテムは、 [DestinationFolderId](destinationfolderid.md)要素によって識別されるフォルダーに自動的に移動されます。 
     
-- **削除**・ スレッドの現在のアイテムは削除されます。 会話でそれ以降の項目は削除されません。 削除モードは、[削除の種類](deletetype.md)の要素によって設定されます。 
+- **Delete** -スレッド内の現在のアイテムは削除されます。 スレッド内の後続のアイテムは削除されません。 削除モードは[Deletetype](deletetype.md)要素によって設定されます。 
     
-- **移動**- スレッドの現在のアイテムは、 [DestinationFolderId](destinationfolderid.md)要素で指定されたフォルダーに移動されます。 スレッドのそれ以降のアイテムは移動されません。 
+- **Move** -スレッド内の現在のアイテムは、 [DestinationFolderId](destinationfolderid.md)要素によって識別されるフォルダーに移動されます。 スレッド内の後続のアイテムは移動されません。 
     
-- **コピー** - スレッドの現在のアイテムは、 [DestinationFolderId](destinationfolderid.md)要素で指定されたフォルダーにコピーされます。 スレッドのそれ以降のアイテムはコピーされません。 
+- **Copy** -スレッド内の現在のアイテムは、 [DestinationFolderId](destinationfolderid.md)要素によって識別されるフォルダーにコピーされます。 スレッド内の後続のアイテムはコピーされません。 
     
-- **SetReadState**のスレッドの現在のアイテムの読み取り状態の設定があります。 [IsRead](isread.md)要素によって、読み取りの状態が設定されています。 
+- **Setreadstate** -会話内の現在のアイテムの読み取り状態が設定されます。 読み取り状態は、 [isread](isread.md)要素によって設定されます。 
     
-- **フラグ**スレッドの現在のアイテムは、フラグが設定されている[フラグ](flag.md)の要素で定義されているがあります。 
+- **Flag** -スレッド内の現在のアイテムには、 [flag](flag.md)要素で定義されているフラグが設定されます。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web Services.This の要素がホストをで Exchange Server 2010 Service Pack 1 (SP1) を導入する IIS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [ApplyConversationAction 操作](applyconversationaction-operation.md)
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

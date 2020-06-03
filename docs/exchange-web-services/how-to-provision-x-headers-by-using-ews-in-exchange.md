@@ -6,28 +6,28 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 45a99a14-a85f-47f8-af48-18eb6c6cc230
 description: Exchange で EWS マネージ API または EWS を使用して、メールボックスの X ヘッダーを準備する方法について説明します。
-ms.openlocfilehash: de572764921da432cfa203b3dcf166d1d34dd0cd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: HT
+ms.openlocfilehash: 409ddb944bbac7a60242de39cdf7ae13b17cc76a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759041"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527769"
 ---
 # <a name="provision-x-headers-by-using-ews-in-exchange"></a>Exchange で EWS を使用して X ヘッダーを準備する
 
 Exchange で EWS マネージ API または EWS を使用して、メールボックスの X ヘッダーを準備する方法について説明します。
   
-X ヘッダーは、情報を伝達するために電子メールのヘッダー コレクションに追加される非標準のヘッダーです。 たとえば、Exchange は **X-MS-Exchange-Organization-SCL** ヘッダーでメッセージにスタンプを設定し、電子メールに設定された spam confidence level (SCL) 属性を示します。 Outlook などの電子メール クライアントは、この情報を使用して、電子メールで実行するアクションの種類を判別します (たとえば、Outlook ではユーザーがアクションを実行しない限りイメージを表示しないようにできます)。 
+X ヘッダーは、情報を伝達するために電子メールのヘッダー コレクションに追加される非標準のヘッダーです。たとえば、Exchange は **X-MS-Exchange-Organization-SCL** ヘッダーでメッセージにスタンプを設定し、電子メールに設定された spam confidence level (SCL) 属性を示します。Outlook などの電子メール クライアントは、この情報を使用して、電子メールで実行するアクションの種類を判別します (たとえば、Outlook ではユーザーがアクションを実行しない限りイメージを表示しないようにできます)。 
   
 Exchange は、電子メールと共に X ヘッダーを受信する初回に、名前付きプロパティとしてその X ヘッダーをメールボックス スキーマに追加します。X ヘッダー値は最初の電子メールには保存されませんが、その X ヘッダーが含まれる後続の電子メールにはすべて保存されます。このため、アプリケーションでは、ユーザーが X ヘッダーを使用する前に X ヘッダーを準備する必要があります。メールボックスへの電子メールのトランスポート配信のときに、名前付きプロパティと X ヘッダー間のマッピングが行われます。つまり、トランスポート配信で電子メールを受信する必要があります。X ヘッダーが含まれる電子メールだけをメールボックスに保存して、名前付きプロパティに対するマッピングを作成することはできません。
   
 > [!NOTE]
-> X ヘッダーが保存されていないことが確認された場合、[トランスポート エージェント](http://code.msdn.microsoft.com/Exchange-2013-Build-an-32f62f5a)または[ヘッダー ファイアウォール](http://technet.microsoft.com/ja-JP/library/bb232136%28v=exchg.150%29.aspx)によって、X ヘッダーがメールボックスに到着する前にフィルタリング処理されているかどうかを判別します。 
+> X ヘッダーが保存されていないことが確認された場合、[トランスポート エージェント](https://code.msdn.microsoft.com/Exchange-2013-Build-an-32f62f5a)または[ヘッダー ファイアウォール](https://technet.microsoft.com/library/bb232136%28v=exchg.150%29.aspx)によって、X ヘッダーがメールボックスに到着する前にフィルタリング処理されているかどうかを判別します。 r
   
 ## <a name="provision-an-x-header-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して X ヘッダーを準備する
 <a name="bk_example1"> </a>
 
-次のコード例は、EWS マネージ API [EmailMessage.Send](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.emailmessage.send%28v=exchg.80%29.aspx) メソッドを使用して、メールボックスの X ヘッダーを準備する方法を示しています。 この例では、**service** は有効な [ExchangeService](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、対象のメールボックスは[名前付きプロパティのクォータ](http://technet.microsoft.com/ja-JP/library/bb851492%28v=EXCHG.80%29.aspx)を超過していないことを前提としています。
+次のコード例は、EWS マネージ API [EmailMessage.Send](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.emailmessage.send%28v=exchg.80%29.aspx) メソッドを使用して、メールボックスの X ヘッダーを準備する方法を示しています。 この例では、**service** は有効な [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、対象のメールボックスは[名前付きプロパティのクォータ](https://technet.microsoft.com/library/bb851492%28v=EXCHG.80%29.aspx)を超過していないことを前提としています。
   
 ```cs
 private static void ProvisionCustomXHeaderByEmail(ExchangeService service)
@@ -66,14 +66,14 @@ private static void ProvisionCustomXHeaderByEmail(ExchangeService service)
 ## <a name="provision-an-x-header-by-using-ews"></a>EWS を使用して X ヘッダーを準備する
 <a name="bk_example1"> </a>
 
-次のコード例は、EWS [CreateItem](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) 操作を行って、X ヘッダーが含まれるメールボックスを準備するために電子メールを作成し送信する方法を示しています。 これは、[EWS マネージ API を使用して X ヘッダーを準備する](#bk_example1)場合に、EWS マネージ API が送信する XML 要求でもあります。
+次のコード例は、EWS [CreateItem](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) 操作を行って、X ヘッダーが含まれるメールボックスを準備するために電子メールを作成し送信する方法を示しています。 これは、[EWS マネージ API を使用して X ヘッダーを準備する](#bk_example1)場合に、EWS マネージ API が送信する XML 要求でもあります。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
   </soap:Header>
@@ -115,15 +115,15 @@ Exchange Online で、Office 365 の一部としての Exchange Online で、ま
 
 - [Exchange における EWS のプロパティと拡張プロパティ](properties-and-extended-properties-in-ews-in-exchange.md)
     
-- [Exchange 2013: プログラムを使用してカスタム X ヘッダーをプロビジョニングする](http://code.msdn.microsoft.com/exchange/Exchange-2013-Provision-d4ef5719)
+- [Exchange 2013: プログラムを使用してカスタム X ヘッダーをプロビジョニングする](https://code.msdn.microsoft.com/exchange/Exchange-2013-Provision-d4ef5719)
     
-- [名前付きプロパティ、X ヘッダー、ユーザー](http://blogs.technet.com/b/exchange/archive/2009/04/06/3407221.aspx)
+- [名前付きプロパティ、X ヘッダー、ユーザー](https://blogs.technet.com/b/exchange/archive/2009/04/06/3407221.aspx)
     
-- [名前付きプロパティ、ラウンド 2: 展望](http://blogs.technet.com/b/exchange/archive/2009/06/12/3407672.aspx)
+- [名前付きプロパティ、ラウンド 2: 展望](https://blogs.technet.com/b/exchange/archive/2009/06/12/3407672.aspx)
     
-- [ヘッダー ファイアウォール](http://technet.microsoft.com/ja-JP/library/bb232136%28v=exchg.150%29.aspx)
+- [ヘッダー ファイアウォール](https://technet.microsoft.com/library/bb232136%28v=exchg.150%29.aspx)
     
-- [EWS、MIME、および欠落しているインターネット メッセージ ヘッダー](http://msdn.microsoft.com/library/office/hh545614%28v=exchg.140%29.aspx)
+- [EWS、MIME、および欠落しているインターネット メッセージ ヘッダー](https://msdn.microsoft.com/library/office/hh545614%28v=exchg.140%29.aspx)
     
 - [Exchange で EWS を使用してバッチ処理でメール メッセージを処理する](how-to-process-email-messages-in-batches-by-using-ews-in-exchange.md)
     

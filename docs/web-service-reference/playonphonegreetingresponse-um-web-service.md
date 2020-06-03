@@ -10,17 +10,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7189d69a-9288-4fc8-8d78-4977ee1a7253
-description: PlayOnPhoneGreetingResponse 要素は、PlayOnPhoneGreeting の操作 (UM web サービス) 要求に対する応答を定義します。
-ms.openlocfilehash: abae8dad57a5bc13b17e8f5a7a1ca41bf0586a3a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: PlayOnPhoneGreetingResponse 要素は、Playon電話案内応答操作 (UM web サービス) 要求への応答を定義します。
+ms.openlocfilehash: ca448860ef0e59607f73421c71d9c8f75c740773
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832837"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528854"
 ---
 # <a name="playonphonegreetingresponse-um-web-service"></a>PlayOnPhoneGreetingResponse (UM web サービス)
 
-**PlayOnPhoneGreetingResponse**要素は、 [PlayOnPhoneGreeting 操作 (UM web サービス)](playonphonegreeting-operation-um-web-service.md)要求に対する応答を定義します。 
+**PlayOnPhoneGreetingResponse**要素は、 [Playon電話案内応答操作 (UM web サービス)](playonphonegreeting-operation-um-web-service.md)要求への応答を定義します。 
   
 [PlayOnPhoneGreetingResponse (UM web サービス)](playonphonegreetingresponse-um-web-service.md)
   
@@ -29,7 +29,7 @@ ms.locfileid: "19832837"
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -47,26 +47,26 @@ ms.locfileid: "19832837"
   
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は必須です。 テキスト値には、 [GetCallInfo 操作 (UM web サービス)](getcallinfo-operation-um-web-service.md)の要求または[切断の操作 (UM web サービス)](disconnect-operation-um-web-service.md)要求の[CallId (UM web サービス)](callid-um-web-service.md)の値として使用する値が含まれています。 
+テキスト値は必須です。 テキスト値には、 [Getcallinfo 操作 (um web](getcallinfo-operation-um-web-service.md)サービス) 要求または[切断操作 (um web サービス)](disconnect-operation-um-web-service.md)要求の[callid (um web サービス)](callid-um-web-service.md)の値として使用する値が含まれています。 
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |スキーマ名  <br/> |メッセージ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[PlayOnPhoneGreeting 操作 (UM web サービス)](playonphonegreeting-operation-um-web-service.md)
+[Playon電話案内応答操作 (UM web サービス)](playonphonegreeting-operation-um-web-service.md)
   
 [CallId (UM web サービス)](callid-um-web-service.md)
   
 [GetCallInfo 操作 (UM web サービス)](getcallinfo-operation-um-web-service.md)
   
-[操作 (UM web サービス) に接続を切断します。](disconnect-operation-um-web-service.md)
+[Disconnect 操作 (UM web サービス)](disconnect-operation-um-web-service.md)
 

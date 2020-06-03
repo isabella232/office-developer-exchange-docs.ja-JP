@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 6eef2188-6194-48f1-ad7e-46104aecdf56
-description: ProtocolConnection 要素は、サーバーの Web クライアントのプロトコルの接続を表します。
-ms.openlocfilehash: 8b5396821cd959e41d24fcf7a94c519f9c634a1f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ProtocolConnection 要素は、サーバー Web クライアントのプロトコル接続を表します。
+ms.openlocfilehash: b9df3febe36db53d7c5bf0610ba857f13aa96abc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832915"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528861"
 ---
 # <a name="protocolconnection-soap"></a>ProtocolConnection (SOAP)
 
-**ProtocolConnection**要素は、サーバーの Web クライアントのプロトコルの接続を表します。 
+**Protocolconnection**要素は、サーバー Web クライアントのプロトコル接続を表します。 
   
 ```XML
 <ProtocolConnection>
@@ -29,7 +29,7 @@ ms.locfileid: "19832915"
 ```
 
  **ProtocolConnection**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -39,30 +39,30 @@ ms.locfileid: "19832915"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[ホスト名 (SOAP)](hostname-soap.md) <br/> |コンピューターのフル コンピューター名のホスト名の部分を表します。  <br/> |
+|[Hostname (SOAP)](hostname-soap.md) <br/> |コンピューターの完全なコンピューター名のホスト名部分を表します。  <br/> |
 |[ポート (SOAP)](port-soap.md) <br/> |プロトコルに使用するポート番号を表します。  <br/> |
-|[EncryptionMethod (SOAP)](encryptionmethod-soap.md) <br/> |POP、IMAP、および SMTP のプロトコルに使用される暗号化メソッドを表します。  <br/> |
+|[EncryptionMethod (SOAP)](encryptionmethod-soap.md) <br/> |POP、IMAP、および SMTP プロトコルに使用される暗号化方式を表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ProtocolConnections (SOAP)](protocolconnections-soap.md) <br/> |0 個以上のプロトコルの接続が含まれています。  <br/> |
+|[ProtocolConnections (SOAP)](protocolconnections-soap.md) <br/> |0個以上のプロトコル接続を含みます。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|スキーマ名  <br/> |スキーマの自動検出  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|スキーマ名  <br/> |自動検出スキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

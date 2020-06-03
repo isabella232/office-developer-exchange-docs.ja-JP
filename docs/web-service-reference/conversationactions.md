@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3d6c663d-4bd9-4eec-b95a-cd683f592672
-description: ConversationActions 要素には、会話およびそれらに適用するアクションのコレクションが含まれています。
-ms.openlocfilehash: 3dff7ff66f758f1cd2eb3cd7b8126294d2799fc0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ConversationActions 要素には、スレッドのコレクションと、それらに適用するアクションが含まれています。
+ms.openlocfilehash: 2db84f78b4b8c92e0a6ef7d69fba7c778fb5f96d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759757"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527104"
 ---
 # <a name="conversationactions"></a>ConversationActions
 
-**ConversationActions**要素には、会話およびそれらに適用するアクションのコレクションが含まれています。 
+**ConversationActions**要素には、スレッドのコレクションと、それらに適用するアクションが含まれています。 
   
 [ApplyConversationAction](applyconversationaction.md)
   
@@ -34,7 +34,7 @@ ms.locfileid: "19759757"
 ```
 
  **NonEmptyArrayOfApplyConversationActionType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,32 +44,32 @@ ms.locfileid: "19759757"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[ConversationAction](conversationaction.md) <br/> |1 つのテーマを適用する 1 つのアクションが含まれています。  <br/> |
+|[ConversationAction](conversationaction.md) <br/> |単一の会話に適用される1つのアクションが含まれます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ApplyConversationAction](applyconversationaction.md) <br/> |会話内のアイテムにアクションを適用する要求を定義します。  <br/> |
+|[ApplyConversationAction](applyconversationaction.md) <br/> |会話内のアイテムにアクションを適用するための要求を定義します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web Services.This の要素がホストをで Exchange Server 2010 Service Pack 1 (SP1) を導入する IIS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: cd97bd7f-55ed-4acb-b2e6-a69797b87a41
-description: RemoveImContactFromGroupResponse 要素は、RemoveImContactFromGroup 要求への応答を定義します。
-ms.openlocfilehash: 30c56eb6474db7777e415e2017a293880faee657
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: RemoveImContactFromGroupResponse 要素は、RemoveImContactFromGroup 要求に対する応答を定義します。
+ms.openlocfilehash: 71dc2deed8715dde802cb38c00b9c48ebce9462a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833103"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528707"
 ---
 # <a name="removeimcontactfromgroupresponse"></a>RemoveImContactFromGroupResponse
 
-**RemoveImContactFromGroupResponse**要素は、 **RemoveImContactFromGroup**要求への応答を定義します。 
+**RemoveImContactFromGroupResponse**要素は、 **Removeimcontactfromgroup**要求に対する応答を定義します。 
   
 ```XML
 <RemoveImContactFromGroupResponse>
@@ -29,7 +29,7 @@ ms.locfileid: "19833103"
 ```
 
  **RemoveImContactFromGroupResponseMessageType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -39,25 +39,25 @@ ms.locfileid: "19833103"
   
 ### <a name="child-elements"></a>子要素
 
-[メッセージ テキスト](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md)
+[Messagetext](messagetext.md)  | 応答[Secmode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)
   
 ### <a name="parent-elements"></a>親要素
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
 |空にすることができます。  <br/> |false  <br/> |
    
 

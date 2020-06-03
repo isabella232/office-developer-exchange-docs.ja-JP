@@ -1,5 +1,5 @@
 ---
-title: データ (base64Binary)
+title: Data (base64Binary)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,25 +11,25 @@ api_name:
 api_type:
 - schema
 ms.assetid: 26d8c2d0-bed2-4aed-b381-20e2ace6892f
-description: データ要素には、エクスポートされたアイテムを 1 つまたはメールボックスにアップロードするアイテムのデータが含まれています。
-ms.openlocfilehash: 9560273e31a64edb2254489961733dfe7360ad01
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Data 要素には、1つのエクスポートされたアイテムまたはメールボックスにアップロードするアイテムのデータが含まれています。
+ms.openlocfilehash: 43ee16ca7caf634756ca00a88715d9834adad92b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759902"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526971"
 ---
-# <a name="data-base64binary"></a>データ (base64Binary)
+# <a name="data-base64binary"></a>Data (base64Binary)
 
-**データ**要素には、エクスポートされたアイテムを 1 つまたはメールボックスにアップロードするアイテムのデータが含まれています。 
+**Data**要素には、1つのエクスポートされたアイテムまたはメールボックスにアップロードするアイテムのデータが含まれています。 
   
 ```XML
 <Data/>
 ```
 
-**xs:base64Binary**
+**xs: base64Binary**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -45,25 +45,25 @@ ms.locfileid: "19759902"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ExportItemsResponseMessage](exportitemsresponsemessage.md) <br/> |状態および 1 つのメールボックス アイテムをエクスポートするのには要求の結果が含まれています。  <br/> |
-|[項目 (UploadItemType)](item-uploaditemtype.md) <br/> |メールボックスにアップロードする 1 つの項目を表します。  <br/> |
+|[ExportItemsResponseMessage](exportitemsresponsemessage.md) <br/> |1つのメールボックスアイテムをエクスポートする要求の状態と結果を格納します。  <br/> |
+|[Item (UploadItemType)](item-uploaditemtype.md) <br/> |メールボックスにアップロードする単一のアイテムを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**データ**要素には、プロパティ名とメールボックスにアップロードするには、エクスポートされたアイテムの値が含まれています。 
+**Data**要素には、エクスポートされたアイテムまたはメールボックスにアップロードされるアイテムのプロパティ名と値が含まれています。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web Services.This の要素がホストをで Exchange Server 2010 Service Pack 1 (SP1) を導入する IIS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: ca090dec-e2c5-49c8-a057-8d1f2409147f
-description: Action 要素では、ルールの条件部分と一致する場合、どのようなアクションを実行する必要がありますを識別します。
-ms.openlocfilehash: 8f699e698d3159c5ff2636da506542da3b218251
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Action 要素は、ルールの条件部分が一致する場合に実行する必要のあるアクションを識別します。
+ms.openlocfilehash: 220a6fea16abb9ea823ae6239537b8c121702589
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760446"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527510"
 ---
 # <a name="action-protectionruleactiontype"></a>アクション (ProtectionRuleActionType)
 
-**Action**要素では、ルールの条件部分と一致する場合、どのようなアクションを実行する必要がありますを識別します。 
+**Action**要素は、ルールの条件部分が一致する場合に実行する必要のあるアクションを識別します。 
   
 ```xml
 <Action Name="">
@@ -31,7 +31,7 @@ ms.locfileid: "19760446"
 ```
 
  **ProtectionRuleActionType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -43,30 +43,30 @@ ms.locfileid: "19760446"
    
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[引数](argument.md) <br/> |アクションに引数を指定します。 指定されたアクションが引数を指定する必要がない場合は、この要素は表示されません。 アクションが 1 つまたは複数の引数を必要とする場合、この要素は 1 つまたは複数回を発生します。 **RightsProtectMessage**アクションは、1 つの引数に含まれます。  <br/> |
+|[Arg1 と Arg2 の値](argument.md) <br/> |アクションに引数を指定します。 この要素は、指定されたアクションで引数を指定する必要がない場合は発生しません。 アクションに1つ以上の引数が必要な場合、この要素は1回以上発生する可能性があります。 **RightsProtectMessage**アクションには、1つの引数が含まれます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Rule](rule.md) <br/> |1 つの保護ルールが含まれています。  <br/> |
+|[Rule](rule.md) <br/> |1つの保護ルールを含みます。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 
