@@ -12,7 +12,7 @@ ms.openlocfilehash: 62bf3f50e7b7fe3eaf929c32ad56ca1adcbe8c89
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44465990"
 ---
 # <a name="inboxurl-mastermailboxtype"></a>受信トレイの Url (MasterMailboxType)

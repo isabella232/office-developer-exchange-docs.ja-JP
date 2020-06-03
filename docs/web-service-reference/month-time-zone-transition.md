@@ -16,7 +16,7 @@ ms.openlocfilehash: 1fa32ea355cc3fe826f9c34b2fd147a0d8201673
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44467740"
 ---
 # <a name="month-time-zone-transition"></a>月 (タイムゾーン切り替え)

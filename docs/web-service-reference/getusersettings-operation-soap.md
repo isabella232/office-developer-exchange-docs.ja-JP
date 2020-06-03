@@ -13,7 +13,7 @@ ms.openlocfilehash: e274fd4e1ca954ea25ea91a52e363c9a434b290a
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44466144"
 ---
 # <a name="getusersettings-operation-soap"></a>GetUserSettings 操作 (SOAP)
@@ -22,7 +22,7 @@ ms.locfileid: "44466144"
   
 ## <a name="getusersettings-request-example"></a>GetUserSettings 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の XML の例は、ユーザーの表示名、識別名、展開 ID、メールボックスサーバー、メールボックスの識別名、Active Directory サーバー、クライアントアクセスサーバーのバージョン、およびサポートされている Exchange Web サービスのスキーマを要求する自動検出要求の本文を示しています。
   
@@ -86,7 +86,7 @@ ms.locfileid: "44466144"
     
 ## <a name="getusersettings-response-example"></a>GetUserSettings response の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、正常な**Getusersettings**応答を示しています。 
   

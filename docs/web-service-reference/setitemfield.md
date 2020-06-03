@@ -16,7 +16,7 @@ ms.openlocfilehash: b4606eb7d94b9d0c4c5bcd5a2b56d73a4d4270cb
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44467425"
 ---
 # <a name="setitemfield"></a>SetItemField
@@ -251,16 +251,16 @@ ms.locfileid: "44467425"
 |[FieldURI](fielduri.md) <br/> |URI で頻繁に参照されるプロパティを識別します。  <br/> |
 |[IndexedFieldURI](indexedfielduri.md) <br/> |辞書の個々のメンバーを識別します。  <br/> |
 |[ExtendedFieldURI](extendedfielduri.md) <br/> |設定する拡張 MAPI プロパティを識別します。  <br/> |
-|[アイテム](item.md) <br/> |Exchange ストア内のアイテムを表します。  <br/> |
+|[Item](item.md) <br/> |Exchange ストア内のアイテムを表します。  <br/> |
 |[Message](message-ex15websvcsotherref.md) <br/> |更新する Exchange 電子メールメッセージを表します。  <br/> |
 |[CalendarItem](calendaritem.md) <br/> |更新する Exchange 予定表アイテムを表します。  <br/> |
-|[連絡先](contact.md) <br/> |更新する Exchange の連絡先アイテムを表します。  <br/> |
+|[Contact](contact.md) <br/> |更新する Exchange の連絡先アイテムを表します。  <br/> |
 |[DistributionList](distributionlist.md) <br/> |更新する配布リストを表します。  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |更新する会議メッセージを表します。  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |更新する会議出席依頼を表します。  <br/> |
 |[MeetingResponse](meetingresponse.md) <br/> |更新する会議の応答を表します。  <br/> |
 |[MeetingCancellation](meetingcancellation.md) <br/> |更新する会議の取り消しを表します。  <br/> |
-|[Task](task.md) <br/> |更新するタスクを表します。  <br/> |
+|[タスク](task.md) <br/> |更新するタスクを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -283,6 +283,5 @@ ms.locfileid: "44467425"
    
 ## <a name="see-also"></a>関連項目
 
-- 
-  [UpdateItem 操作](updateitem-operation.md)
+- [UpdateItem 操作](updateitem-operation.md)
 

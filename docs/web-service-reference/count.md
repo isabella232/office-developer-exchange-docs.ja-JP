@@ -16,7 +16,7 @@ ms.openlocfilehash: a43896a1b8b6a9d96ab02afe64f9e553639e478e
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44466760"
 ---
 # <a name="count"></a>カウント
@@ -77,8 +77,7 @@ ms.locfileid: "44466760"
 
 
 
-
-  [UpdateItem 操作](updateitem-operation.md)
+[UpdateItem 操作](updateitem-operation.md)
   
  **ConflictResultsType**
 

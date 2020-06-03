@@ -16,7 +16,7 @@ ms.openlocfilehash: f18bb6658bf7a68e2262ebee7ce86255ea527ac4
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44467145"
 ---
 # <a name="updateitemresponse"></a>UpdateItemResponse
@@ -65,8 +65,7 @@ ms.locfileid: "44467145"
 
 
 
-
-  [UpdateItem 操作](updateitem-operation.md)
+[UpdateItem 操作](updateitem-operation.md)
   
 [UpdateItem](updateitem.md)
 

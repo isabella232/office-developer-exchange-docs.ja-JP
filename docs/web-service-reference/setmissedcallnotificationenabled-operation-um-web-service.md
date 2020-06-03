@@ -15,7 +15,7 @@ ms.openlocfilehash: ca4942942a81bc187e8e18a5e6f003f8587f79d1
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44467397"
 ---
 # <a name="setmissedcallnotificationenabled-operation-um-web-service"></a>SetMissedCallNotificationEnabled 操作 (UM web サービス)
@@ -24,7 +24,7 @@ SetMissedCallNotificationEnabled 操作は、不在着信通知を有効また�
   
 ## <a name="setmissedcallnotificationenabled-request-example"></a>SetMissedCallNotificationEnabled 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の SetMissedCallNotificationEnabled 要求の例は、不在着信通知を有効にする要求を形成する方法を示しています。
   
@@ -43,7 +43,7 @@ SetMissedCallNotificationEnabled 操作は、不在着信通知を有効また�
 
 ## <a name="successful-setmissedcallnotificationenabled-response-example"></a>Successful SetMissedCallNotificationEnabled response の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の Playon電話案内応答の例は、SetMissedCallNotificationEnabled 要求に対する応答を示しています。
   

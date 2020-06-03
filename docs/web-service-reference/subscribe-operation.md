@@ -16,7 +16,7 @@ ms.openlocfilehash: c40e0e434f698c6535ff5d03fd4d45a453959dd6
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44467047"
 ---
 # <a name="subscribe-operation"></a>サブスクライブ操作
@@ -25,7 +25,7 @@ ms.locfileid: "44467047"
   
 ## <a name="pull-subscription-subscribe-request-example"></a>プルサブスクリプションのサブスクライブ要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次のコード例は、プルイベント通知サブスクリプションをサブスクライブする方法を示しています。 新しいメールが受信トレイに追加された場合、および受信トレイからアイテムが削除された場合、サブスクリプションはクライアントアプリケーションに通知します。 クライアントが10分以内にイベントに関する情報を要求しない場合、サブスクリプションはタイムアウトになります。 サブスクリプションの有効期限が切れた場合は、通知を引き続き要求するために、新しいサブスクリプションを確立する必要があります。
   
@@ -74,7 +74,7 @@ Subscribe 操作の要求メッセージに関するその他のオプション�
   
 ## <a name="successful-pull-subscription-subscribe-response-example"></a>成功したプルサブスクリプションサブスクライブ応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、成功したプルサブスクリプション応答を示しています。 応答には、サブスクリプションに関連付けられているイベントの配列を取得するために使用されるサブスクリプション識別子とウォーターマークが含まれています。 サブスクリプション識別子は、サブスクリプションからクライアントの登録を解除するためにも使用されます。
   
@@ -125,7 +125,7 @@ Subscribe 操作の要求メッセージに関するその他のオプション�
     
 ## <a name="pull-subscription-subscribe-error-response-example"></a>プルサブスクリプションサブスクライブエラー応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、Subscribe 要求に対するエラー応答を示しています。 このエラーは、代理人アクセスを使用して通知をサブスクライブしようとした場合に発生します。
   
@@ -176,7 +176,7 @@ Subscribe 操作の要求メッセージに関するその他のオプション�
     
 ## <a name="push-subscription-request-example"></a>プッシュサブスクリプション要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次のコード例は、プッシュイベント通知サブスクリプションをサブスクライブする方法を示しています。 要求は、監視するフォルダー、監視するイベントの種類、状態通知の頻度、およびプッシュ通知を待機するクライアント Web サービスの URL を識別します。
   
@@ -237,7 +237,7 @@ Subscribe 操作の要求メッセージに関するその他のオプション�
     
 ## <a name="successful-push-subscription-response-example"></a>成功したプッシュサブスクリプション応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、成功したプッシュサブスクリプション応答を示しています。 
   

@@ -16,7 +16,7 @@ ms.openlocfilehash: fb894d9f42358b67f81e9fe8ae41ba61e6f46460
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44467362"
 ---
 # <a name="updatefolder-operation"></a>UpdateFolder 操作
@@ -41,7 +41,7 @@ UpdateFolder 操作は、Exchange ストア内の既存のアイテムのプロ�
    
 ## <a name="updatefolder-request-example"></a>UpdateFolder 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の UpdateFolder 要求の例は、フォルダーの表示名を更新する方法を示しています。 
   
@@ -108,7 +108,7 @@ UpdateFolder 要求の形成に使用できるその他の要素については�
   
 ## <a name="updatefolder-response-example"></a>UpdateFolder 応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、UpdateFolder 要求に対する正常な応答を示しています。 この例では、フォルダーの更新された状態を反映するために新しい変更キーが返されます。
   
@@ -171,7 +171,7 @@ UpdateFolder 要求の形成に使用できるその他の要素については�
     
 ## <a name="updatefolder-error-response-example"></a>UpdateFolder エラー応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、UpdateFolder 要求に対するエラー応答を示しています。
   

@@ -16,7 +16,7 @@ ms.openlocfilehash: b2e342225e7e79c44dcd86b76b4b7d47b16b860b
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44466599"
 ---
 # <a name="removedelegate-operation"></a>RemoveDelegate 操作
@@ -36,7 +36,7 @@ ms.locfileid: "44466599"
    
 ## <a name="removedelegate-request-example"></a>RemoveDelegate 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次のコード例は、user1 メールボックスから2つの代理人を削除する方法を示しています。 この例では、代理人のプライマリ SMTP アドレスを使用して1つの委任が削除され、もう1つのデリゲートは代理人のセキュリティ識別子 (SID) を使用して削除されます。
   
@@ -74,7 +74,7 @@ ms.locfileid: "44466599"
   
 ## <a name="removedelegate-response-example"></a>RemoveDelegate 応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 **Removedelegate**応答の次の例は、 **removedelegate**要求に対する正常な応答を示しています。 応答には、メールボックスから削除された各代理人の**DelegateUserResponseMessageType**要素が含まれています。 
   
@@ -113,7 +113,7 @@ ms.locfileid: "44466599"
 
 ## <a name="removedelegate-error-response-example"></a>RemoveDelegate エラーの応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次に示す**Removedelegate**エラー応答の例は、存在しない代理人を削除する要求の結果を示しています。 
   

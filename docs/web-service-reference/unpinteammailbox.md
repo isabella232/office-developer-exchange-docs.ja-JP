@@ -12,7 +12,7 @@ ms.openlocfilehash: a6b01bfa9c5908765ff04ef7f5edbef0b99a9be2
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44467243"
 ---
 # <a name="unpinteammailbox"></a>非 Pxcb Ammailbox

@@ -12,7 +12,7 @@ ms.openlocfilehash: b969ac3f7bc2bbd3fc77bf753a15696c3b6d8216
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44466403"
 ---
 # <a name="findpeopleresponse"></a>FindPeopleResponse
@@ -45,7 +45,7 @@ ms.locfileid: "44466403"
 
 |**値**|**説明**|
 |:-----|:-----|
-|Success  <br/> |成功を示します。  <br/> |
+|成功  <br/> |成功を示します。  <br/> |
 |警告  <br/> |警告を示します。  <br/> |
 |Error  <br/> |エラーを示します。  <br/> |
    

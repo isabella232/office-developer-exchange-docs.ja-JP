@@ -16,7 +16,7 @@ ms.openlocfilehash: 85b610d649b84c14e892ea81fe74ad53b331e67f
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44466620"
 ---
 # <a name="updatefolderresponse"></a>UpdateFolderResponse
@@ -65,8 +65,7 @@ ms.locfileid: "44466620"
 
 
 
-
-  [UpdateFolder 操作](updatefolder-operation.md)
+[UpdateFolder 操作](updatefolder-operation.md)
   
 [UpdateFolder](updatefolder.md)
 

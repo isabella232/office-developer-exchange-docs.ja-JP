@@ -16,7 +16,7 @@ ms.openlocfilehash: 80adbe71d69be1025dc9593c6a9002bc68fdcb76
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44466515"
 ---
 # <a name="adddelegate-operation"></a>AddDelegate 操作
@@ -36,7 +36,7 @@ ms.locfileid: "44466515"
    
 ## <a name="adddelegate-request-example"></a>AddDelegate 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の**Adddelegate**要求の例では、user2 によって所有されているフォルダーに user1 の代理人アクセス許可を付与しようとしています。 User1 には、user2's の予定表フォルダーとレビューアーレベルのアクセス許可を user2's の連絡先フォルダーに付与するための、作成者レベルのアクセス許可が付与されます。 User1 は会議メッセージのコピーを受信せず、user2's メールボックス内のプライベートアイテムを表示することができません。 会議出席依頼は user1 と user2 の両方に送信されます。 
   
@@ -75,7 +75,7 @@ ms.locfileid: "44466515"
 
 ## <a name="adddelegate-response-example"></a>AddDelegate 応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 Adddelegate 応答の次**AddDelegate**の例は、 **adddelegate**要求に対する正常な応答を示しています。 
   
@@ -120,7 +120,7 @@ Adddelegate 応答の次**AddDelegate**の例は、 **adddelegate**要求に対�
 
 ## <a name="adddelegate-error-response-example"></a>AddDelegate エラー応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、既にプリンシパルのメールボックスに追加されている代理人を追加する要求に対する応答を示しています。
   

@@ -15,7 +15,7 @@ ms.openlocfilehash: c5ff82bcd822aa2c659d1782ea4a1349d198bc80
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44466235"
 ---
 # <a name="playonphone-operation-um-web-service"></a>PlayOnPhone 操作 (UM web サービス)
@@ -24,7 +24,7 @@ PlayOnPhone 操作は、発信呼び出しを行い、ダイヤル**文字列**�
   
 ## <a name="playonphone-request-example"></a>PlayOnPhone 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の PlayOnPhone 要求の例は、発信通話を行い、メッセージを再生するための要求を形成する方法を示しています。
   
@@ -44,7 +44,7 @@ PlayOnPhone 操作は、発信呼び出しを行い、ダイヤル**文字列**�
 
 ## <a name="successful-playonphone-response-example"></a>成功した PlayOnPhone 応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の PlayOnPhone 応答の例は、PlayOnPhone 要求に対する応答を示しています。
   

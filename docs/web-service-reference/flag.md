@@ -12,7 +12,7 @@ ms.openlocfilehash: 7229a26181ee9baf80be5c32c0ef99483310ccb3
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44466263"
 ---
 # <a name="flag"></a>フラグ
@@ -51,7 +51,7 @@ ms.locfileid: "44466263"
 |**要素**|**説明**|
 |:-----|:-----|
 |[ConversationAction](conversationaction.md) <br/> |単一の会話に適用される1つのアクションが含まれます。  <br/> |
-|[アイテム](item.md) <br/> |Exchange ストア内の汎用アイテムを表します。  <br/> |
+|[Item](item.md) <br/> |Exchange ストア内の汎用アイテムを表します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

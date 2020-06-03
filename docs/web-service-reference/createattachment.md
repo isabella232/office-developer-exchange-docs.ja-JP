@@ -16,7 +16,7 @@ ms.openlocfilehash: 4cba1b8865dae5da58b9617b249a29314c67331a
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44466438"
 ---
 # <a name="createattachment"></a>CreateAttachment
@@ -44,7 +44,7 @@ ms.locfileid: "44466438"
 |**Element**|**説明**|
 |:-----|:-----|
 |[ParentItemId](parentitemid.md) <br/> |作成された添付ファイルを含む親 Exchange ストアアイテムを識別します。 [Parentitemid](parentitemid.md)要素は、実際の Exchange ストアアイテムの ID を提供する必要があります。 実際のストアアイテムは、 [GetItem 操作](getitem-operation.md)を使用して取得できます。添付ファイルは、 [Getattachment 操作](getattachment-operation.md)を使用して取得されます。 [Parentitemid](parentitemid.md)に添付ファイルの id が渡されると、エラーが発生します。 [Parentitemid](parentitemid.md)が既存のアイテムの添付ファイルの id を表す場合、 [createattachment 操作](createattachment-operation.md)は既存の添付ファイルに新しい添付ファイルを追加します。  <br/> この要素は、 [Createattachment 操作](createattachment-operation.md)に必要です。  <br/> |
-|[添付ファイル](attachments-ex15websvcsotherref.md) <br/> |Exchange ストア内のアイテムに添付するアイテムまたはファイルが保存されています。  <br/> |
+|[Attachments](attachments-ex15websvcsotherref.md) <br/> |Exchange ストア内のアイテムに添付するアイテムまたはファイルが保存されています。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 

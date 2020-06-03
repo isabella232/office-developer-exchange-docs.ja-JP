@@ -16,7 +16,7 @@ ms.openlocfilehash: 27e70cd9e11b480ab6bbb9b28275f142da7c76ac
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44466683"
 ---
 # <a name="messagetrackingsearchresult"></a>MessageTrackingSearchResult
@@ -50,7 +50,7 @@ ms.locfileid: "44466683"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[[件名]](subject.md) <br/> |電子メールメッセージの件名を含みます。  <br/> |
+|[件名](subject.md) <br/> |電子メールメッセージの件名を含みます。  <br/> |
 |[Sender (EmailAddressType)](sender-emailaddresstype.md) <br/> |電子メールメッセージの送信者のアドレスを含みます。  <br/> |
 |[PurportedSender](purportedsender.md) <br/> |電子メールメッセージの申し立て送信者の連絡先情報が含まれています。  <br/> |
 |[受信者 (Arrayof受信者 Stype)](recipients-arrayofrecipientstype.md) <br/> |このメッセージを受信した電子メールアドレスの一覧が含まれています。  <br/> |

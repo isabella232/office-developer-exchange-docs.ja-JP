@@ -16,7 +16,7 @@ ms.openlocfilehash: cd9f255621b17d01113392e67a0301b01b70f326
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44466669"
 ---
 # <a name="searchparameters"></a>SearchParameters
@@ -45,7 +45,7 @@ ms.locfileid: "44466669"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Restriction](restriction.md) <br/> |FindItem/FindFolder および search folder 操作のアイテムまたはフォルダーをフィルター処理するために使用される制限またはクエリを表します。  <br/> |
+|[制限](restriction.md) <br/> |FindItem/FindFolder および search folder 操作のアイテムまたはフォルダーをフィルター処理するために使用される制限またはクエリを表します。  <br/> |
 |[BaseFolderIds](basefolderids.md) <br/> |検索フォルダーのコンテンツを特定するためにマイニングされるフォルダーのコレクションを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素

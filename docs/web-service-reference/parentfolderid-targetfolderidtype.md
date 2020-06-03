@@ -16,7 +16,7 @@ ms.openlocfilehash: 36e63266d10603c4d453a37e2b0d22e02599e516
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44467803"
 ---
 # <a name="parentfolderid-targetfolderidtype"></a>ParentFolderId (TargetFolderIdType)
@@ -82,8 +82,7 @@ ms.locfileid: "44467803"
    
 ## <a name="see-also"></a>関連項目
 
-- 
-  [CreateFolder 操作](createfolder-operation.md)
+- [CreateFolder 操作](createfolder-operation.md)
 - [FindConversation 操作](findconversation-operation.md)
 - [フォルダーの作成 (Exchange Web サービス)](https://msdn.microsoft.com/library/3b15b0ec-8691-45ed-9a24-a91ff732d6cf%28Office.15%29.aspx)
 
