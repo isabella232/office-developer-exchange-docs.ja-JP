@@ -11,32 +11,32 @@ api_name:
 api_type:
 - schema
 ms.assetid: eaf29427-ecf8-4a5e-9a54-db2e6414b35e
-description: GetSharingMetadata 操作は、共有への招待を識別する不透明な認証トークンを取得します。
-ms.openlocfilehash: e2e04d83310e7a8a731cca655a432325574cd9e8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetSharingMetadata 操作は、共有への招待を識別する非透過の認証トークンを取得します。
+ms.openlocfilehash: 0390b9caa7b2e9847b1e8dcdc1b911a35e3c5864
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831671"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530184"
 ---
 # <a name="getsharingmetadata-operation"></a>GetSharingMetadata 操作
 
-**GetSharingMetadata**操作は、共有への招待を識別する不透明な認証トークンを取得します。 
+**Getsharingmetadata**操作は、共有への招待を識別する非透過の認証トークンを取得します。 
   
 ## <a name="soap-headers"></a>SOAP ヘッダー
 
-**GetSharingMetadata**操作が一覧表示され、次の表に記載されている SOAP ヘッダーを使用できます。 
+**Getsharingmetadata**操作では、次の表に記載されている SOAP ヘッダーを使用できます。 
   
 |**Header**|**要素**|**説明**|
 |:-----|:-----|:-----|
-|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマのバージョンを識別します。  <br/> |
-|ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答するサーバーのバージョンを識別します。  <br/> |
+|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。  <br/> |
+|ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。  <br/> |
    
 ## <a name="getsharingmetadata-request-example"></a>GetSharingMetadata 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
-次の例では、共有への招待を識別する不透明な認証トークンを取得する要求を作成する方法を示します。 この例では、user1@contoso.com は user1@fabikam.com と user2@test.com と[IdOfFolderToShare](idoffoldertoshare.md)の要素で指定されているフォルダーを共有しようとします。 
+次の例は、共有への招待を識別する非透過の認証トークンを取得する要求を形成する方法を示しています。 この例では、user1@contoso.com は、 [IdOfFolderToShare](idoffoldertoshare.md)要素によって指定されたフォルダーを user1@fabikam.com および user2@test.com で共有したいと考えています。 
   
 ### <a name="code"></a>コード
 
@@ -45,8 +45,8 @@ ms.locfileid: "19831671"
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010"/>
   </soap:Header>
@@ -65,13 +65,13 @@ ms.locfileid: "19831671"
 
 ### <a name="comments"></a>コメント
 
-[受信者 (ArrayOfSmtpAddressType)](recipients-arrayofsmtpaddresstype.md)の要素には、指定された共有への招待の受信者の 1 つの[SmtpAddress](smtpaddress.md)要素が含まれます。 
+[Recipients (ArrayOfSmtpAddressType)](recipients-arrayofsmtpaddresstype.md)要素には、共有への招待の対象となる受信者ごとに1つの[smtpaddress](smtpaddress.md)要素が含まれています。 
   
-## <a name="successful-getsharingmetadata-response"></a>GetSharingMetadata の正常な応答
+## <a name="successful-getsharingmetadata-response"></a>正常な GetSharingMetadata 応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
-**GetSharingMetadata**要求に正常な応答の例を次に示します。 この例では、2 人の受信者は、対応する**GetSharingMetadata**要求で指定された: user1@fabrikam.com と user2@test.com。 
+次の例は、 **Getsharingmetadata**要求に対する正常な応答を示しています。 この例では、対応する**Getsharingmetadata**要求で2人の受信者が指定されています。 user1@fabrikam.com および user2@test.com。 
   
 ### <a name="code"></a>コード
 
@@ -86,13 +86,13 @@ ms.locfileid: "19831671"
                          MajorBuildNumber="639" 
                          MinorBuildNumber="11" 
                          Version="Exchange2010" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
     <GetSharingMetadataResponseMessage ResponseClass="Success" 
-                                xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-                                xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                                xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+                                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                                xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseCode>NoError</ResponseCode>
       <m:EncryptedSharedFolderDataCollection>
         <t:EncryptedSharedFolderData>
@@ -156,17 +156,17 @@ ms.locfileid: "19831671"
 
 ### <a name="comments"></a>コメント
 
-応答には、 **GetSharingMetadata**要求で指定されている有効な受信者で表されるそれぞれの組織の 1 つの[EncryptedSharedFolderData](encryptedsharedfolderdata.md)要素が含まれています。 
+応答には、 **Getsharingmetadata**要求で指定されている有効な受信者によって表される各組織に対して、1つの[Encryptedsharedfolderdata](encryptedsharedfolderdata.md)要素が含まれています。 
   
-無効な受信者が要求で指定されている場合でも、 **GetSharingMetadata**の要求は成功します。 [InvalidRecipients](invalidrecipients.md)要素には、無効な受信者に関する情報が含まれています。 なぜ、受信者が無効である理由については、 [ResponseCode (InvalidRecipientResponseCodeType)](responsecode-invalidrecipientresponsecodetype.md)を参照してください。
+**Getsharingmetadata**要求は、要求で無効な受信者が指定されていても、成功します。 [Invalidrecipients](invalidrecipients.md)要素には、無効な受信者に関する情報が含まれています。 受信者が無効である可能性がある理由については、「//」を[参照して](responsecode-invalidrecipientresponsecodetype.md)ください。
   
-すべての受信者が無効である場合、 [EncryptedSharedFolderDataCollection](encryptedsharedfolderdatacollection.md)要素は空になります。 
+指定したすべての受信者が無効な場合、 [EncryptedSharedFolderDataCollection](encryptedsharedfolderdatacollection.md)要素は空になります。 
   
 ## <a name="getsharingmetadata-error-response"></a>GetSharingMetadata エラー応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
-**GetSharingMetadata**要求に対してエラー応答の例を次に示します。 
+次の例は、 **Getsharingmetadata**要求に対するエラー応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -181,13 +181,13 @@ ms.locfileid: "19831671"
                          MajorBuildNumber="639" 
                          MinorBuildNumber="11" 
                          Version="Exchange2010" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
     <GetSharingMetadataResponseMessage ResponseClass="Error" 
-                                xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-                                xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                                xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+                                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                                xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:MessageText>The SMTP address format is invalid.</MessageText>
       <m:ResponseCode>ErrorInvalidSmtpAddress</ResponseCode>
       <m:DescriptiveLinkKey>0</DescriptiveLinkKey>
@@ -209,7 +209,7 @@ ms.locfileid: "19831671"
 [GetSharingMetadataResponseMessageType](https://msdn.microsoft.com/library/ExchangeWebServices.GetSharingMetadataResponseMessageType.aspx)
 
 
-[Exchange での EWS の操作](ews-operations-in-exchange.md)
+[Exchange での EWS 操作](ews-operations-in-exchange.md)
   
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

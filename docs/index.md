@@ -1,1 +1,1 @@
-# <a name="welcome-to-officedocs-dev-exchange-docs"></a>Officedocs dev の exchange ドキュメントへようこそ!
+# <a name="welcome-to-officedocs-dev-exchange-docs"></a>Officedocs へようこそ-exchange-ドキュメント

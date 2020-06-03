@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: bbaeddf6-9a67-4ee0-af99-7a7a5bbdc0e1
-description: 除外要素は、指定されたプロパティと提供された値のビットごとのマスクを実行します。
-ms.openlocfilehash: febd4171210319d8f7e475f9879c5f895f508713
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: 除外要素は、指定されたプロパティと指定された値のビット単位のマスクを実行します。
+ms.openlocfilehash: d5fcd8b86b454aa731bd43974b5b7d674fe76ed6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354387"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530615"
 ---
 # <a name="excludes"></a>Excludes
 
-**除外**要素は、指定されたプロパティと提供された値のビットごとのマスクを実行します。 
+**除外**要素は、指定されたプロパティと指定された値のビット単位のマスクを実行します。 
   
 ```xml
 <Excludes>
@@ -46,7 +46,7 @@ ms.locfileid: "21354387"
 
 **ExcludesType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -56,46 +56,46 @@ ms.locfileid: "21354387"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[FieldURI](fielduri.md) <br/> |URI によって頻繁に参照されるプロパティを識別します。  <br/> |
-|[IndexedFieldURI](indexedfielduri.md) <br/> |辞書の個々 のメンバーを識別します。  <br/> |
+|[FieldURI](fielduri.md) <br/> |URI で頻繁に参照されるプロパティを識別します。  <br/> |
+|[IndexedFieldURI](indexedfielduri.md) <br/> |辞書の個々のメンバーを識別します。  <br/> |
 |[ExtendedFieldURI](extendedfielduri.md) <br/> |MAPI プロパティを識別します。  <br/> |
-|[Bitmask](bitmask.md) <br/> |[Excludes](excludes.md)制限操作時に使用する 16 進数または 10 進数のマスクを表します。 ビットマスクでは、16 進数を表している場合は、0x または 0x で始まる必要があります。 それ以外の場合と見なされます 10 進数です。  <br/> |
+|[示す](bitmask.md) <br/> |[除外](excludes.md)制限操作で使用する16進数または10進数のマスクを表します。 ビットマスクが16進数を表す場合は、0x または0X でプレフィックスする必要があります。 それ以外の場合は、10進数値と見なされます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Restriction](restriction.md) <br/> |制限またはアイテムまたはフォルダーの FindItem/FindFolder、検索フォルダーの操作にフィルターを適用するために使用するクエリを表します。  <br/> |
-|[Not](not.md) <br/> |含まれている検索式のブール値を否定する検索式を表します。  <br/> |
-|[And](and.md) <br/> |使用すると、2 つまたは複数の検索式間で論理 And 演算を実行する検索式を表します。 **すべての And に含まれている検索式に**該当**する場合は、And 演算の結果は**  <br/> |
-|[Or](or.md) <br/> |含まれている検索式に対して論理 OR を実行する検索式を表します。 その子のいずれかの**場合は true**を返す場合、要素[または](or.md)要素は**true**を返します。  <br/> |
+|[制限](restriction.md) <br/> |FindItem/FindFolder および search folder 操作のアイテムまたはフォルダーをフィルター処理するために使用される制限またはクエリを表します。  <br/> |
+|[Not](not.md) <br/> |含まれる検索式のブール値を否定する検索式を表します。  <br/> |
+|[And](and.md) <br/> |2つ以上の検索式の間でブール値と演算を実行できる検索式を表します。 And 操作の結果は、に含まれるすべての検索式が**true**である場合に**true**となります。  <br/> |
+|[Or](or.md) <br/> |含まれる検索式に対して論理 OR を実行する検索式を表します。 [または](or.md)のいずれかの子が**true**を返した場合、Or 要素は**true**を返します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-**除外**は、0 に次のように実行されると操作が解決した場合を**true**に解決されます。 
+を**除外**すると、次のように実行された AND 操作が0に解決される場合は**true**になります。 
   
-1. プロパティのビットごとの値
+1. プロパティのビット単位の値
     
-2. プロパティ ビットマスク値
+2. プロパティのビットマスク値
     
-**除外**は、整数値を持つプロパティにのみ適用できます。 プロパティの型が整数以外の場合は、応答に**ErrorUnsupportedPathForQuery**のエラー コードが返されます。 
+**除外**は、整数値を持つプロパティにのみ適用できます。 プロパティの型が整数以外の場合は、エラーコード**Error、Supportedpathforquery**が応答で返されます。 
   
-Not(Excludes) を呼び出すことによって、逆の操作を行うことができます。
+逆の操作を実行するには、Not (除外) を呼び出します。
   
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

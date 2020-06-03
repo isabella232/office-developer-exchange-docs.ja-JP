@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9d91aa89-9f9f-4877-846d-aaf48bbeec7c
-description: ReadFlag 要素は、フォルダー内のアイテムに設定するのには読み取りの状態を示します。
-ms.openlocfilehash: f3156a51fbdd3372dd28f2065499d26a50b3d497
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ReadFlag 要素は、フォルダー内のアイテムに設定する読み取り状態を示します。
+ms.openlocfilehash: 1d3b9f3fe199ed2e63bdb632135120a5f89f4d1f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832954"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529897"
 ---
 # <a name="readflag"></a>ReadFlag
 
-**ReadFlag**要素は、フォルダー内のアイテムに設定するのには読み取りの状態を示します。 
+**Readflag**要素は、フォルダー内のアイテムに設定する読み取り状態を示します。 
   
 ```XML
 <ReadFlag>true | false</ReadFlag>
 ```
 
- **ブール型 (Boolean)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,21 +42,21 @@ ms.locfileid: "19832954"
   
 ## <a name="text-value"></a>テキスト値
 
-の**場合は true** 、 **ReadFlag**要素のテキスト値は、フォルダー内のアイテムは開封としてマークされることを示します。 **False**の値は、フォルダー内のアイテムをマークすることを示します、未読です。 
+**Readflag**要素のテキスト値が**true の場合**は、フォルダー内のアイテムが開封済みとしてマークされることを示します。 値が**false**の場合は、フォルダー内のアイテムが未読としてマークされることを示します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

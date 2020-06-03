@@ -12,16 +12,16 @@ api_type:
 - schema
 ms.assetid: a4593377-22dd-415f-b01d-387389ef650f
 description: MoveItem 要素は、Exchange ストア内のアイテムを移動する要求を定義します。
-ms.openlocfilehash: cd7f35bdabe8a596f4c186df1c8cd54e0ea1c540
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 61dbb91cc20a71f50999241b3daa21bf8ebfbcc8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832486"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530402"
 ---
 # <a name="moveitem"></a>MoveItem
 
-**MoveItem**要素は、Exchange ストア内のアイテムを移動する要求を定義します。 
+**Moveitem**要素は、Exchange ストア内のアイテムを移動する要求を定義します。 
   
 ```XML
 <MoveItem>
@@ -32,7 +32,7 @@ ms.locfileid: "19832486"
 ```
 
  **MoveItemType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,11 +42,11 @@ ms.locfileid: "19832486"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[ToFolderId](tofolderid.md) <br/> |移動された項目のコピー先フォルダーを表します。  <br/> |
-|[Itemid](itemids.md) <br/> |[ToFolderId](tofolderid.md)要素によって表されるフォルダーに移動する特定の項目の配列が含まれています。  <br/> |
-|[ReturnNewItemIds](returnnewitemids.md) <br/> |新しい項目の項目の識別子が応答で返されるかどうかを示します。  <br/> |
+|[ToFolderId](tofolderid.md) <br/> |移動されたアイテムの移動先のフォルダーを表します。  <br/> |
+|[ItemIds](itemids.md) <br/> |[ToFolderId](tofolderid.md)要素によって表されるフォルダーに移動する、識別されたアイテムの配列を格納します。  <br/> |
+|[ReturnNewItemIds](returnnewitemids.md) <br/> |新しいアイテムのアイテム識別子が応答で返されるかどうかを示します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -56,26 +56,25 @@ ms.locfileid: "19832486"
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
+[MoveItem 操作](moveitem-operation.md)
 
-  [MoveItem 操作](moveitem-operation.md)
 
-
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

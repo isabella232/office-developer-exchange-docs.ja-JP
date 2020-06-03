@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: d6cf1bd3-a19b-4d5f-9e25-8e337a4939e0
-description: FirstDayOfWeek の要素では、週の最初の日を指定します。
-ms.openlocfilehash: 99858d17213d077ce7c51ad1c746588f2f3939a7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: FirstDayOfWeek 要素は、週の最初の曜日を指定します。
+ms.openlocfilehash: 1b4aee8e1ce2548cd6b0047623b0bcda47ad316b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760544"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530973"
 ---
 # <a name="firstdayofweek"></a>FirstDayOfWeek
 
-**FirstDayOfWeek**の要素では、週の最初の日を指定します。 
+**FirstDayOfWeek**要素は、週の最初の曜日を指定します。 
   
 ```XML
 <FirstDayOfWeek> Sunday | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday</FirstDayOfWeek>
 ```
 
  **DayOfWeekType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,11 +44,11 @@ ms.locfileid: "19760544"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[WeeklyRecurrence](weeklyrecurrence.md) <br/> |毎週の定期的なパターンをについて説明します。  <br/> |
+|[WeeklyRecurrence](weeklyrecurrence.md) <br/> |週単位の定期的なパターンを記述します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**FirstDayOfWeek**要素のテキスト値は、週の曜日が週の最初の日として使用されることを示します。 可能なテキスト値は、次のように。 
+**FirstDayOfWeek**要素のテキスト値は、週の最初の曜日として使用される曜日を示します。 可能なテキスト値を次に示します。 
   
 - 日曜日
     
@@ -64,22 +64,22 @@ ms.locfileid: "19760544"
     
 - 土曜日
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web Services.This の要素がホストをで Exchange Server 2010 Service Pack 1 (SP1) を導入する IIS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

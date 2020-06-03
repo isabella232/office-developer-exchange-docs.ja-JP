@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 22244afb-99ec-41b4-8f73-3fbccd56d1ab
-description: MarkAllItemsAsRead 要素には、フォルダー内のすべてのアイテムへの要求が含まれています。
-ms.openlocfilehash: 9d7eb8eb7194cb5d77e909dc08abfb70e2385d56
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: MarkAllItemsAsRead 要素には、フォルダー内のすべてのアイテムを開封済みとしてマークする要求が含まれています。
+ms.openlocfilehash: 0338b2a1eed503b7e8fb0ec8b4a8ebcf12b6dbd6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832346"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530889"
 ---
 # <a name="markallitemsasread"></a>MarkAllItemsAsRead
 
-**MarkAllItemsAsRead**要素には、フォルダー内のすべてのアイテムへの要求が含まれています。 
+**Markallitemsasread**要素には、フォルダー内のすべてのアイテムを開封済みとしてマークする要求が含まれています。 
   
 ```XML
 <MarkAllItemsAsRead>
@@ -28,7 +28,7 @@ ms.locfileid: "19832346"
 ```
 
  **MarkAllItemsAsReadType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -38,25 +38,25 @@ ms.locfileid: "19832346"
   
 ### <a name="child-elements"></a>子要素
 
-[ReadFlag](readflag.md) | [SuppressReadReceipts](suppressreadreceipts.md) | [FolderIds](folderids.md)
+[Readflag](readflag.md)  | [SuppressReadReceipts](suppressreadreceipts.md)  | [FolderIds](folderids.md)
   
 ### <a name="parent-elements"></a>親要素
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

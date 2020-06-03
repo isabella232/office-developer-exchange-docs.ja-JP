@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 055cdee8-3c7d-47db-9f27-740f4a674729
-description: DeleteItem 要素は、Exchange ストア内のメールボックスからアイテムを削除する要求を定義します。
-ms.openlocfilehash: de64787750c88c8a47bb69daddc0a1d2ebe8bde9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DeleteItem 要素は、Exchange ストア内のメールボックスからアイテムを削除するための要求を定義します。
+ms.openlocfilehash: ed13ee32b487f49740aed80e8705257d3e2e6938
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759990"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529204"
 ---
 # <a name="deleteitem"></a>DeleteItem
 
-**DeleteItem**要素は、Exchange ストア内のメールボックスからアイテムを削除する要求を定義します。 
+**DeleteItem**要素は、Exchange ストア内のメールボックスからアイテムを削除するための要求を定義します。 
   
 ```XML
 <DeleteItem DeleteType="" SendMeetingCancellations="" AffectedTaskOccurrences="" SuppressReadReceipts="">
@@ -30,7 +30,7 @@ ms.locfileid: "19759990"
 ```
 
  **DeleteItemType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -38,63 +38,63 @@ ms.locfileid: "19759990"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**削除の種類** <br/> |アイテムを削除する方法について説明します。 この属性は、必要があります。  <br/> |
-|**SendMeetingCancellations** <br/> |予定表アイテムの削除を参加者に伝達するかどうかについて説明します。 予定表アイテムが削除されたとき、この属性が必要です。 この属性は、非予定表アイテムが削除された場合は省略可能です。  <br/> |
-|**AffectedTaskOccurrences** <br/> |[DeleteItem 操作](deleteitem-operation.md)によって、タスクのインスタンスまたはタスク マスターを削除するかどうかについて説明します。 タスクが削除されるとき、この属性が必要です。 以外の項目が削除されたとき、この属性はオプションです。  <br/> |
-|**SuppressReadReceipts** <br/> |削除済みアイテムの開封確認メッセージを抑制するかどうかを示します。 テキストの値**は true**では、開封確認のメッセージが抑制されていることを示します。 **False**の値は、送信者に開封確認を送信することを示します。 この属性は、省略可能です。  <br/> |
+|**DeleteType** <br/> |アイテムが削除される方法について説明します。 この属性は必須です。  <br/> |
+|**Send会議のキャンセル** <br/> |予定表アイテムの削除が出席者に伝達されるかどうかを指定します。 この属性は、予定表アイテムが削除されるときに必要になります。 非予定表アイテムが削除された場合、この属性は省略可能です。  <br/> |
+|**AffectedTaskOccurrences** <br/> |[DeleteItem 操作](deleteitem-operation.md)によってタスクインスタンスまたはタスクマスターが削除されるかどうかを指定します。 この属性は、タスクを削除するときに必要になります。 非タスクアイテムが削除されている場合、この属性は省略可能です。  <br/> |
+|**SuppressReadReceipts** <br/> |削除済みアイテムの開封確認を抑制するかどうかを示します。 テキスト値が**true**の場合、開封確認が抑制されることを示します。 値が**false**の場合、開封確認が送信者に送信されることを示します。 この属性は省略可能です。  <br/> |
    
-#### <a name="deletetype-attribute"></a>削除の種類の属性
+#### <a name="deletetype-attribute"></a>DeleteType 属性
 
 |**値**|**説明**|
 |:-----|:-----|
-|HardDelete  <br/> |アイテムはストアから完全に削除されます。  <br/> |
-|SoftDelete  <br/> |アイテムを移動、ごみ箱をあさる場合、収集を有効にします。  <br/> |
-|MoveToDeletedItems  <br/> |アイテムは、削除済みアイテム フォルダーに移動されます。  <br/> |
+|HardDelete  <br/> |アイテムがストアから完全に削除されます。  <br/> |
+|SoftDelete  <br/> |収集が有効になっている場合、アイテムは収集に移動されます。  <br/> |
+|MoveToDeletedItems  <br/> |アイテムが [削除済みアイテム] フォルダーに移動されます。  <br/> |
    
-#### <a name="sendmeetingcancellations-attribute"></a>SendMeetingCancellations 属性
+#### <a name="sendmeetingcancellations-attribute"></a>Send会議のキャンセル属性
 
 |**値**|**説明**|
 |:-----|:-----|
-|SendToNone  <br/> |取り消しメッセージを送信することがなく、予定表アイテムが削除されます。  <br/> |
-|SendOnlyToAll  <br/> |予定表アイテムが削除され、すべての出席者にキャンセル通知が送信されます。  <br/> |
-|SendToAllAndSaveCopy  <br/> |予定表アイテムが削除され、すべての出席者にキャンセル通知が送信されます。 取り消しについてのメッセージのコピーは、送信済みアイテム フォルダーに保存されます。  <br/> |
+|SendToNone  <br/> |キャンセルメッセージを送信せずに予定表アイテムが削除されます。  <br/> |
+|SendOnlyToAll  <br/> |予定表アイテムが削除され、すべての出席者に取り消しメッセージが送信されます。  <br/> |
+|SendToAllAndSaveCopy  <br/> |予定表アイテムが削除され、すべての出席者に取り消しメッセージが送信されます。 取り消しメッセージのコピーが [送信済みアイテム] フォルダーに保存されます。  <br/> |
    
 #### <a name="affectedtaskoccurrences-attribute"></a>AffectedTaskOccurrences 属性
 
 |**値**|**説明**|
 |:-----|:-----|
-|AllOccurrences  <br/> |削除項目の要求は、マスターのタスクを削除し、したがってすべての定期的なタスクに関連付けられているマスターのタスクします。  <br/> |
-|SpecifiedOccurrenceOnly  <br/> |削除項目の要求では、タスクの特定の個所だけを削除します。  <br/> |
+|AllOccurrences  <br/> |アイテムの削除要求は、マスタータスクを削除します。したがって、マスタータスクに関連付けられているすべての定期的なタスクを削除します。  <br/> |
+|変数のみ  <br/> |アイテムの削除要求では、タスクの特定のオカレンスのみが削除されます。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[Itemid](itemids.md) <br/> |アイテム、出現アイテム、および Exchange ストアのメールボックスから削除するのにはマスターの定期的なアイテムの配列が含まれています。 [DeleteItem の操作](deleteitem-operation.md)は、任意の項目の種類を実行できます。  <br/> |
+|[ItemIds](itemids.md) <br/> |Exchange ストア内のメールボックスから削除する項目、オカレンスアイテム、定期的なマスターアイテムの配列を格納します。 [DeleteItem 操作](deleteitem-operation.md)は、任意のアイテムの種類に対して実行できます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**MoveToDeletedItems**および**HardDelete**オプションは、時間によって、Web サービスの呼び出しが完了していることを意味する、トランザクション、データベースは削除済みアイテム フォルダーにアイテムを移動または Exchange データベースから項目を完全に削除します。 この現象は、MicrosoftExchange Server 2007 および Exchange Server 2010 と同じです。 
+**MoveToDeletedItems**および**ハード削除**オプションは、トランザクションであり、Web サービスの呼び出しが完了すると、データベースがアイテムを削除済みアイテムフォルダーに移動したか、または Exchange データベースからアイテムを完全に削除したことを意味します。 この動作は、Microsoft Exchange Server 2007 および Exchange Server 2010 の場合と同じです。 
   
-**SoftDelete**オプションの動作は別のターゲットのバージョンの Exchange で異なります。 Exchange 2007 用の**SoftDelete**のビット設定項目を示す項目を移動する Exchange データベースに、ごみ箱をあさる時に、不確定な将来のフォルダーです。 Exchange 2010 の**SoftDelete**はすぐにアイテムを移動、ごみ箱をあさる。 **SoftDelete**は、フォルダーの削除のオプションではありません。 アイテムとフォルダーの**SoftDelete**の走査の検索では、結果は返されません。 
+**Softdelete**オプションは、Exchange のターゲットバージョンによって動作が異なります。 Exchange 2007 用の**Softdelete**は、今後、不確定な時点でアイテムが収集フォルダーに移動されることを exchange データベースに示すように、アイテムのビットを設定します。 Exchange 2010 用の**Softdelete**は、直ちにアイテムを収集に移動します。 **Softdelete**はフォルダー削除のオプションではありません。 **ソフト削除**によるアイテムとフォルダーの検索では、結果は返されません。 
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [DeleteItemResponse](deleteitemresponse.md)  
-- [DeleteItem の操作](deleteitem-operation.md)
+- [DeleteItem 操作](deleteitem-operation.md)
 

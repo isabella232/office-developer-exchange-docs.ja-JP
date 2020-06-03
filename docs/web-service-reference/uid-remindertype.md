@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 169e7825-4480-46d2-9f84-cdab27c8bcfb
-description: UID (ReminderType) の要素では、アラームに関連付けられている予定表アイテムを識別します。
-ms.openlocfilehash: e0ad877eee29937b93e2659f84769938c983f11d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: UID (ReminderType) 要素は、アラームに関連付けられている予定表アイテムを識別します。
+ms.openlocfilehash: ab7e59725a87ff21bb2df052b5893abf6217f78a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839766"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530374"
 ---
 # <a name="uid-remindertype"></a>UID (ReminderType)
 
-**UID (ReminderType)** の要素では、アラームに関連付けられている予定表アイテムを識別します。 
+**UID (ReminderType)** 要素は、アラームに関連付けられている予定表アイテムを識別します。 
   
 ```XML
 <UID />
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -38,26 +38,26 @@ ms.locfileid: "19839766"
   
 ## <a name="text-value"></a>テキスト値
 
-**UID (ReminderType)** の要素のテキスト値は、予定表アイテムを識別します。 
+**UID (ReminderType)** 要素のテキスト値は、予定表アイテムを識別します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

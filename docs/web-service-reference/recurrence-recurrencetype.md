@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3d1c2c1c-4103-47ce-ad3c-ad16ec6e9b12
-description: 定期的なアイテムの要素には、予定表アイテムおよび会議出席依頼に定期的なパターンが含まれています。
-ms.openlocfilehash: d9c6009e11eb5b66cdd749b8e085935060f99ab7
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: 繰り返し要素には、予定表アイテムと会議出席依頼の定期的なパターンが含まれています。
+ms.openlocfilehash: d00445c75fb35c3bb99eeed06e30cb1cf2883597
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353351"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529890"
 ---
 # <a name="recurrence-recurrencetype"></a>Recurrence (RecurrenceType)
 
-**定期的なアイテム**の要素には、予定表アイテムおよび会議出席依頼に定期的なパターンが含まれています。 
+**繰り返し**要素には、予定表アイテムと会議出席依頼の定期的なパターンが含まれています。 
   
 ```xml
 <Recurrence>
@@ -151,7 +151,7 @@ ms.locfileid: "21353351"
 
 **RecurrenceType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -161,41 +161,41 @@ ms.locfileid: "21353351"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[RelativeYearlyRecurrence](relativeyearlyrecurrence.md) <br/> |相対年間の定期的なパターンをについて説明します。  <br/> |
+|[RelativeYearlyRecurrence](relativeyearlyrecurrence.md) <br/> |相対的な年単位の定期的なパターンを記述します。  <br/> |
 |[AbsoluteYearlyRecurrence](absoluteyearlyrecurrence.md) <br/> |1 年ごと。  <br/> |
-|[RelativeMonthlyRecurrence](relativemonthlyrecurrence.md) <br/> |定期的な予定表アイテムの相対的な毎月定期的なパターンをについて説明します。  <br/> |
+|[RelativeMonthlyRecurrence](relativemonthlyrecurrence.md) <br/> |定期的な予定表アイテムの相対的な月単位のパターンを記述します。  <br/> |
 |[AbsoluteMonthlyRecurrence](absolutemonthlyrecurrence.md) <br/> |1 か月ごと。  <br/> |
-|[WeeklyRecurrence](weeklyrecurrence.md) <br/> |週、および定期的に繰り返されるタスクの予定表アイテムで、頻度を説明します。  <br/> |
-|[DailyRecurrence](dailyrecurrence.md) <br/> |日単位での周波数を表すタスクの予定表アイテムが再発するのです。  <br/> |
-|[NoEndRecurrence](noendrecurrence.md) <br/> |定義された終了日がない定期的なパターンをについて説明します。  <br/> この要素の使用は、 [EndDateRecurrence](enddaterecurrence.md)と[NumberedRecurrence](numberedrecurrence.md)の要素の使用を除外します。  <br/> |
-|[EndDateRecurrence](enddaterecurrence.md) <br/> |開始日と終了日の項目の定期的なパターンについて説明します。  <br/> この要素の使用は、 [NoEndRecurrence](noendrecurrence.md)と[NumberedRecurrence](numberedrecurrence.md)の要素の使用を除外します。  <br/> |
-|[NumberedRecurrence](numberedrecurrence.md) <br/> |開始日と定期的なアイテムの出現回数を説明します。  <br/> この要素の使用は、 [NoEndRecurrence](noendrecurrence.md)と[EndDateRecurrence](enddaterecurrence.md)の要素の使用を除外します。  <br/> |
+|[WeeklyRecurrence](weeklyrecurrence.md) <br/> |頻度 (週単位) と予定表アイテムまたはタスクが繰り返される日数を示します。  <br/> |
+|[DailyRecurrence](dailyrecurrence.md) <br/> |予定表アイテムまたはタスクが繰り返される頻度 (日単位) を指定します。  <br/> |
+|[NoEndRecurrence](noendrecurrence.md) <br/> |定義済みの終了日がない定期的なパターンを記述します。  <br/> この要素を使用すると、 [EndDateRecurrence](enddaterecurrence.md)要素と[番号 ed再発](numberedrecurrence.md)要素の使用が除外されます。  <br/> |
+|[EndDateRecurrence](enddaterecurrence.md) <br/> |アイテムの定期的なパターンの開始日と終了日を示します。  <br/> この要素を使用すると、 [Noendrecurrence なパターン](noendrecurrence.md)要素と[番号 ed再発](numberedrecurrence.md)要素の使用が除外されます。  <br/> |
+|[NumberedRecurrence](numberedrecurrence.md) <br/> |定期的なアイテムの開始日と発生回数を表します。  <br/> この要素を使用すると、 [Noendrecurrence](noendrecurrence.md)要素と[EndDateRecurrence](enddaterecurrence.md)要素の使用が除外されます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[CalendarItem](calendaritem.md) <br/> |Exchange 予定表アイテムを表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議出席依頼を表します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素は、 [CalendarItemType](calendaritemtype.md)に RecurringMaster の値が設定されている場合に有効です。 
+[Calendaritemtype](calendaritemtype.md)に示す値が指定されている場合、この要素は有効です。 
   
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

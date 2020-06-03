@@ -1,5 +1,5 @@
 ---
-title: Data
+title: データ
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: f875e6c2-be18-439a-a7b1-bb49a149b538
-description: データ要素には、共有データを表す暗号化されたデータが含まれています。
-ms.openlocfilehash: acd66691f16d11f41dee5efb9de03c129ff416c2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Data 要素には、共有データを表す暗号化されたデータが含まれています。
+ms.openlocfilehash: cd13d68afcd0f40486865887676d2b5669c276f8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759901"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529218"
 ---
-# <a name="data"></a>Data
+# <a name="data"></a>データ
 
-**データ**要素には、共有データを表す暗号化されたデータが含まれています。 
+**Data**要素には、共有データを表す暗号化されたデータが含まれています。 
   
 - [EncryptedSharedFolderData](encryptedsharedfolderdata.md)  
 - [Data](data.md)
@@ -32,7 +32,7 @@ ms.locfileid: "19759901"
 
 **EncryptedDataContainerType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -48,27 +48,27 @@ ms.locfileid: "19759901"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[EncryptedSharedFolderData](encryptedsharedfolderdata.md) <br/> |クライアントを使用してその予定表の共有を承認または連絡先データを他のクライアントで暗号化されたデータが含まれています。  <br/> |
+|[EncryptedSharedFolderData](encryptedsharedfolderdata.md) <br/> |クライアントが他のクライアントと予定表または連絡先データの共有を承認するために使用できる暗号化されたデータを格納します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [GetSharingMetadata 操作](getsharingmetadata-operation.md)
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

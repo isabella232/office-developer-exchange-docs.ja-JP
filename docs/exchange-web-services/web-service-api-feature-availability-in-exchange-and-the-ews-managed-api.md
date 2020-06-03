@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 07d3e6e8-d549-4ad7-baa4-bc531dfb7dd2
 description: EWS および Web サービス API のどの機能が Exchange および EWS マネージ API の各バージョンで使用できるかについて説明します。
-ms.openlocfilehash: d19ab062c8d418e373e8268b1ab039e5436e71bf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: HT
+ms.openlocfilehash: f15cf4784a59c18d1bb9ae20af378baed084acc3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759192"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529848"
 ---
 # <a name="web-service-api-feature-availability-in-exchange-and-the-ews-managed-api"></a>Exchange および EWS マネージ API の Web サービス API 機能の可用性
 
@@ -19,7 +19,7 @@ EWS および Web サービス API のどの機能が Exchange および EWS マ
   
 Exchange クライアント アプリケーションには、Exchange の多くのバージョンを対象としているものがあります。 このため、ユーザーのメールボックスをホストする Exchange のバージョンに応じて、[EWS クライアント機能](ews-client-design-overview-for-exchange.md#EWSFeatures)のオンとオフを切り替えるようにアプリケーションを設計する必要があります。 この記事では、Exchange および EWS マネージ API の各バージョンで使用できるサービス API 機能についての情報を提供します。 この情報を使用すると、Exchange の複数バージョンを実行しているお客様にアプリケーションを幅広く適用できるように設計できます。 
   
-Exchange の各バージョンの違いについて詳しくは、EWS スキーマ ファイルと関連する[リファレンス ドキュメント](http://msdn.microsoft.com/library/6c969133-6036-448b-af39-a3caf9917e98%28Office.15%29.aspx)をご参照ください。
+Exchange の各バージョンの違いについて詳しくは、EWS スキーマ ファイルと関連する[リファレンス ドキュメント](https://msdn.microsoft.com/library/6c969133-6036-448b-af39-a3caf9917e98%28Office.15%29.aspx)をご参照ください。
   
 ## <a name="api-features-by-exchange-version"></a>Exchange バージョンごとの API 機能
 <a name="bk_apifeatures"> </a>
@@ -65,19 +65,19 @@ EWS および Autodiscover を含む Exchange Web サービス API は、複数�
 |[検索 (ストア)](search-and-ews-in-exchange.md) <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |
 |[同期](mailbox-synchronization-and-ews-in-exchange.md) <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |
 |[統合連絡先ストア](people-and-contacts-in-ews-in-exchange.md) <br/> |X  <br/> ||X  <br/> ||||||
-|[ユニファイド メッセージング Web サービス](http://msdn.microsoft.com/library/83afea8a-c716-41df-9eb2-e1000357afb6%28Office.15%29.aspx) <br/> |X  <br/> ||X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |
+|[ユニファイド メッセージング Web サービス](https://msdn.microsoft.com/library/83afea8a-c716-41df-9eb2-e1000357afb6%28Office.15%29.aspx) <br/> |X  <br/> ||X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |
 |ユニファイド メッセージング (EWS ベース)  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |||
 |[ユーザー構成オブジェクト](persistent-application-settings-in-ews-in-exchange.md) <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |||
 |[ユーザーの写真](how-to-get-user-photos-by-using-ews-in-exchange.md) <br/> |X  <br/> ||X  <br/> ||||||
    
-Exchange の各バージョンで使用できる Web サービス機能について詳しくは、「[EWS 操作](http://msdn.microsoft.com/library/cf6fd871-9a65-4f34-8557-c8c71dd7ce09%28Office.15%29.aspx)」、「[自動検出サービス](http://msdn.microsoft.com/library/a01124a8-a8cf-4b80-8625-d7ee05690bca%28Office.15%29.aspx)」、および「[ExchangeService メソッド](http://msdn.microsoft.com/ja-JP/library/office/microsoft.exchange.webservices.data.exchangeservice_methods%28v=exchg.80%29.aspx)」をお読みください。
+Exchange の各バージョンで使用できる Web サービス機能について詳しくは、「[EWS 操作](https://msdn.microsoft.com/library/cf6fd871-9a65-4f34-8557-c8c71dd7ce09%28Office.15%29.aspx)」、「[自動検出サービス](https://msdn.microsoft.com/library/a01124a8-a8cf-4b80-8625-d7ee05690bca%28Office.15%29.aspx)」、および「[ExchangeService メソッド](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice_methods%28v=exchg.80%29.aspx)」をお読みください。
   
 ## <a name="to-learn-more"></a>詳細情報
 <a name="bk_apifeatures"> </a>
 
 Exchange の各バージョンに固有の違いについては、次のいずれかで理解できます。
   
-- [EWS スキーマ](http://msdn.microsoft.com/library/6c969133-6036-448b-af39-a3caf9917e98%28Office.15%29.aspx)を表示し、EWS の各バージョン間の相違点を詳しく調査します。 
+- [EWS スキーマ](https://msdn.microsoft.com/library/6c969133-6036-448b-af39-a3caf9917e98%28Office.15%29.aspx)を表示し、EWS の各バージョン間の相違点を詳しく調査します。 
     
 - [EWSEditor](http://ewseditor.codeplex.com/) をダウンロードします。 EWSEditor を使用して、各ターゲット バージョンを指定し、そのスキーマ バージョンに応じたクエリを送信します。
     

@@ -1,5 +1,5 @@
 ---
-title: GroupIds
+title: Groupid
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 4d32cb3b-eb84-4816-89cd-26dcf5131bc8
-description: GroupIds 要素は、インスタント メッセージングのグループ id の配列を指定します。
-ms.openlocfilehash: 0e463a3a74eb3a4996b521f77e1175913b22d16b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GroupIds 要素は、インスタントメッセージンググループ識別子の配列を識別します。
+ms.openlocfilehash: 7583a197413063289739f0f32d9410047fc2f23d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831763"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530086"
 ---
-# <a name="groupids"></a>GroupIds
+# <a name="groupids"></a>Groupid
 
-**GroupIds**要素は、インスタント メッセージングのグループ id の配列を指定します。 
+**Groupids**要素は、インスタントメッセージンググループ識別子の配列を識別します。 
   
 ```XML
 <GroupIds>
@@ -28,8 +28,8 @@ ms.locfileid: "19831763"
 </GroupIds>
 ```
 
- **NonEmptyArrayOfBaseItemIdsType**
-## <a name="attributes-and-elements"></a>属性および要素
+ **非 Emptyarrayofbaseitemidstype**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -39,25 +39,25 @@ ms.locfileid: "19831763"
   
 ### <a name="child-elements"></a>子要素
 
-[ItemId](itemid.md) | [OccurrenceItemId](occurrenceitemid.md) | [RecurringMasterItemId](recurringmasteritemid.md) | [RecurringMasterItemIdRanges](recurringmasteritemidranges.md)
+[ItemId](itemid.md)  | [OccurrenceItemId](occurrenceitemid.md)  | [RecurringMasterItemId](recurringmasteritemid.md)  | [RecurringMasterItemIdRanges](recurringmasteritemidranges.md)
   
 ### <a name="parent-elements"></a>親要素
 
 [GetImItems](getimitems.md)
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

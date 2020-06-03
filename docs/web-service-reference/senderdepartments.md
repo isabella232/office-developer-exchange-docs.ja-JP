@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: b016cdde-d597-40ac-87c4-63ca68bd539d
-description: SenderDepartments 要素は、送信者の部署と一致している値 (ProtectionRuleValueType) の子要素で指定された部門のいずれかを指定します。
-ms.openlocfilehash: d40e6299bd46ede559cc2cce3bcc9d1611e96bd7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: SenderDepartments 要素は、送信者の部署が、子の値 (ProtectionRuleValueType) 要素で指定された部署のいずれかと一致することを指定します。
+ms.openlocfilehash: cf15b974b9c0cfb09767661f17334defc4041e43
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833331"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530346"
 ---
 # <a name="senderdepartments"></a>SenderDepartments
 
-**SenderDepartments**要素は、送信者の部署と一致している[値 (ProtectionRuleValueType)](value-protectionrulevaluetype.md)の子要素で指定された部門のいずれかを指定します。 
+**SenderDepartments**要素は、送信者の部署が、子の[値 (ProtectionRuleValueType)](value-protectionrulevaluetype.md)要素で指定された部署のいずれかと一致することを指定します。 
   
 ```XML
 <SenderDepartments>
@@ -30,7 +30,7 @@ ms.locfileid: "19833331"
 ```
 
  **ProtectionRuleSenderDepartmentsType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,33 +40,33 @@ ms.locfileid: "19833331"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[値 (ProtectionRuleValueType)](value-protectionrulevaluetype.md) <br/> |1 人の送信者の部署を識別します。  <br/> |
+|[Value (ProtectionRuleValueType)](value-protectionrulevaluetype.md) <br/> |単一の送信者部署を識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[条件](condition.md) <br/> |実行するルールのアクション部の満たされている必要がある条件を識別します。  <br/> |
-|[(ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |すべての子要素と一致するが**true**と評価されるかを指定します。 保護ルール子の 1 つ以上の条件が存在する必要がありますを指定します。  <br/> |
+|[条件](condition.md) <br/> |実行するルールのアクション部分に対して満たす必要がある条件を指定します。  <br/> |
+|[および (ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |**True**に評価するためにすべての子要素を一致させる必要があることを指定します。 保護ルールの子条件が複数存在する必要があることを指定します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

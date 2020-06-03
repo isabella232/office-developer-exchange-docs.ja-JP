@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1a4726e5-bace-4399-8b36-a0de1e35d3bc
-description: GroupType (MasterMailboxType) の要素は内部使用のみを目的としています。
-ms.openlocfilehash: 0f52d31f7fee94b492924b67215e970573850705
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GroupType (MasterMailboxType) 要素は、内部使用のみを目的としています。
+ms.openlocfilehash: a1ddb85e4aaf762a4148ca2ecb139b69b7d676fe
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831785"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530058"
 ---
 # <a name="grouptype-mastermailboxtype"></a>GroupType (MasterMailboxType)
 
-**GroupType (MasterMailboxType)** の要素は内部使用のみを目的としています。 
+**GroupType (MasterMailboxType)** 要素は、内部使用のみを目的としています。 
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -35,7 +35,7 @@ ms.locfileid: "19831785"
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。
   

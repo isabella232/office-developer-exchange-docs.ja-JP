@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3ff9d15a-7220-4785-ae6b-583a7eb82005
-description: FolderIds 要素には、コピー、移動、取得、削除、またはイベント通知を監視するフォルダーを識別するために使用されるフォルダー識別子の配列が含まれています。
-ms.openlocfilehash: 911a74ca778ee988c270c16c67620a40656d82d8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: FolderIds 要素には、イベント通知のコピー、移動、取得、削除、または監視を行うフォルダーを識別するために使用されるフォルダー識別子の配列が含まれています。
+ms.openlocfilehash: ff0476f72c7da088bd2b39f58ab560dcc82197e4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760565"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530994"
 ---
 # <a name="folderids"></a>FolderIds
 
-**FolderIds**要素には、コピー、移動、取得、削除、またはイベント通知を監視するフォルダーを識別するために使用されるフォルダー識別子の配列が含まれています。 
+**FolderIds**要素には、イベント通知のコピー、移動、取得、削除、または監視を行うフォルダーを識別するために使用されるフォルダー識別子の配列が含まれています。 
   
 ```xml
 <FolderIds>
@@ -30,8 +30,8 @@ ms.locfileid: "19760565"
 </FolderIds>
 ```
 
- **NonEmptyArrayOfBaseFolderIdsType**
-## <a name="attributes-and-elements"></a>属性および要素
+ **非 Emptyarrayofbasefolderidstype**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -41,42 +41,41 @@ ms.locfileid: "19760565"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[フォルダー Id](folderid.md) <br/> |フォルダーの識別子と変更キーが含まれています。  <br/> |
-|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |名前で参照できる Microsoft Exchange Server のフォルダーを識別します。  <br/> |
+|[FolderId](folderid.md) <br/> |フォルダーの識別子と変更キーが含まれています。  <br/> |
+|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |名前で参照できる Microsoft Exchange Server フォルダーを識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetFolder](getfolder.md) <br/> |Exchange ストアからフォルダーを取得する要求を定義します。  <br/> この要素への XPath 式は、次のようにします。`/GetFolder` <br/> |
-|[DeleteFolder](deletefolder.md) <br/> |Exchange ストアからフォルダーを削除する要求を定義します。  <br/> この要素への XPath 式は、次のようにします。`/DeleteFolder` <br/> |
-|[EmptyFolder](emptyfolder.md) <br/> |Exchange ストアからフォルダーを削除する要求を定義します。  <br/> この要素への XPath 式は、次のようにします。`/EmptyFolder` <br/> |
-|[MoveFolder](movefolder.md) <br/> |Exchange ストア内のフォルダーを移動する要求を定義します。  <br/> この要素への XPath 式は、次のようにします。`/MoveFolder` <br/> |
-|[CopyFolder](copyfolder.md) <br/> |Exchange ストア内のフォルダーをコピーするのには要求を定義します。  <br/> この要素への XPath 式は、次のようにします。`/CopyFolder` <br/> |
-|[PushSubscriptionRequest](pushsubscriptionrequest.md) <br/> |プッシュ ベースのイベント通知サブスクリプションをサブスクリプションを表します。  <br/> |
-|[PullSubscriptionRequest](pullsubscriptionrequest.md) <br/> |プル ベースのイベント通知サブスクリプションをサブスクリプションを表します。  <br/> |
+|[GetFolder](getfolder.md) <br/> |Exchange ストアからフォルダーを取得するための要求を定義します。  <br/> この要素の XPath 式を次に示します。`/GetFolder` <br/> |
+|[DeleteFolder](deletefolder.md) <br/> |Exchange ストアからフォルダーを削除するための要求を定義します。  <br/> この要素の XPath 式を次に示します。`/DeleteFolder` <br/> |
+|[EmptyFolder](emptyfolder.md) <br/> |Exchange ストアからフォルダーを削除するための要求を定義します。  <br/> この要素の XPath 式を次に示します。`/EmptyFolder` <br/> |
+|[MoveFolder](movefolder.md) <br/> |Exchange ストア内のフォルダーを移動する要求を定義します。  <br/> この要素の XPath 式を次に示します。`/MoveFolder` <br/> |
+|[CopyFolder](copyfolder.md) <br/> |Exchange ストア内のフォルダーをコピーするための要求を定義します。  <br/> この要素の XPath 式を次に示します。`/CopyFolder` <br/> |
+|[PushSubscriptionRequest](pushsubscriptionrequest.md) <br/> |プッシュベースのイベント通知サブスクリプションのサブスクリプションを表します。  <br/> |
+|[PullSubscriptionRequest](pullsubscriptionrequest.md) <br/> |プルベースのイベント通知サブスクリプションに対するサブスクリプションを表します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages と http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマです。タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd です。Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages と https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ。Types スキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd。型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-
-  [GetFolder 操作](getfolder-operation.md)
+[GetFolder 操作](getfolder-operation.md)
   
 [DeleteFolder 操作](deletefolder-operation.md)
   

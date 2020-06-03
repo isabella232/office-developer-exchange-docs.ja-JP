@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 10cdefab-2c21-4a7d-b534-e1aa1d209476
-description: 写真 (MasterMailboxType) の要素は内部使用のみを目的としています。
-ms.openlocfilehash: 93e41e137b571403ecba9950123278b09491acbb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Photo (MasterMailboxType) 要素は、内部使用のみを目的としています。
+ms.openlocfilehash: b088f4310ba27e6fae2db096e3bad5270bac4c9c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832783"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529939"
 ---
 # <a name="photo-mastermailboxtype"></a>写真 (MasterMailboxType)
 
-**写真 (MasterMailboxType)** の要素は内部使用のみを目的としています。 
+**Photo (MasterMailboxType)** 要素は、内部使用のみを目的としています。 
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -35,7 +35,7 @@ ms.locfileid: "19832783"
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。
   

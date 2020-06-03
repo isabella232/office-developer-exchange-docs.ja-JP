@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 9728619b-4674-4b9d-9f6c-e75c6165966c
 description: GroupBy 要素は、FindItem クエリの任意のグループ化を指定します。
-ms.openlocfilehash: cdf9b9906025bc91768bb4a14acb2573801c4e12
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+ms.openlocfilehash: 0d681e5376e4dd71921cc97f270211e49179db85
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353218"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530100"
 ---
 # <a name="groupby"></a>GroupBy
 
@@ -49,7 +49,7 @@ ms.locfileid: "21353218"
 
 **GroupByType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -57,49 +57,48 @@ ms.locfileid: "21353218"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**Order** <br/> | 応答で返されるグループ化されたアイテムの配列内のグループの順序を決定します。 この属性は、型 SortDirectionType のです。  <br/> |
+|**Order** <br/> | 応答で返されるグループ化されたアイテムの配列内のグループの順序を指定します。 この属性の型は Sortdirection 型です。  <br/> |
    
-#### <a name="order-attribute-values"></a>順序属性の値
+#### <a name="order-attribute-values"></a>Order 属性の値
 
 |**値**|**説明**|
 |:-----|:-----|
 |Ascending/昇順  <br/> |グループは昇順で並べ替えられます。  <br/> |
-|降順  <br/> |グループは降順で並べ替えられます。  <br/> |
+|Descending/降順  <br/> |グループは、降順で順序付けられます。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[FieldURI](fielduri.md) <br/> |URI によって頻繁に参照されるプロパティを識別します。  <br/> |
-|[IndexedFieldURI](indexedfielduri.md) <br/> |辞書の個々 のメンバーを識別します。  <br/> |
-|[ExtendedFieldURI](extendedfielduri.md) <br/> |取得、設定、または作成する拡張の MAPI プロパティを識別します。  <br/> |
+|[FieldURI](fielduri.md) <br/> |URI で頻繁に参照されるプロパティを識別します。  <br/> |
+|[IndexedFieldURI](indexedfielduri.md) <br/> |辞書の個々のメンバーを識別します。  <br/> |
+|[ExtendedFieldURI](extendedfielduri.md) <br/> |取得、設定、または作成する拡張 MAPI プロパティを識別します。  <br/> |
 |[AggregateOn](aggregateon.md) <br/> |応答内のグループの順序を決定するために使用されるフィールドを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FindItem](finditem.md) <br/> |メールボックス内のアイテムを検索するための要求を定義します。  <br/><br/> この要素への XPath 式は、次のようにします。`/FindItem` <br/> |
+|[FindItem](finditem.md) <br/> |メールボックス内のアイテムを検索するための要求を定義します。  <br/><br/> この要素の XPath 式を次に示します。`/FindItem` <br/> |
    
 ## <a name="remarks"></a>注釈
 
-FindItem 応答グループのコレクションが含まれます。 **GroupBy**プロパティの値が一致するすべての項目は、各グループが含まれます。 [FieldURI](fielduri.md)、 [IndexedFieldURI](indexedfielduri.md)、または[ExtendedFieldURI](extendedfielduri.md)要素のグループ化を決定するプロパティが識別されます。 
+FindItem 応答には、グループのコレクションが含まれています。 各グループには、 **GroupBy**プロパティに一致する値を持つすべてのアイテムが含まれます。 グループ化を決定するプロパティは、 [FieldURI](fielduri.md)、 [IndexedFieldURI](indexedfielduri.md)、または[ExtendedFieldURI](extendedfielduri.md)要素で識別されます。 
   
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- 
-  [FindItem 操作](finditem-operation.md)
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
-- [項目を検索します。](http://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
+- [FindItem 操作](finditem-operation.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [アイテムの検索](https://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
 

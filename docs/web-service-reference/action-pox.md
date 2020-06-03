@@ -8,19 +8,19 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: a3462c6b-453c-462a-830d-f29ee4a2babb
-description: Action 要素では、ユーザーの構成情報を取得する別の自動検出要求が必要かどうかを決定するために使用される情報を提供します。
-ms.openlocfilehash: 118bb59f2c929e3c74683dbf3f073da34d67a3e7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Action 要素は、ユーザー構成情報を返すために別の自動検出要求が必要かどうかを判断するために使用される情報を提供します。
+ms.openlocfilehash: f6d542b908948d09020b850b60ca1bdb025dd342
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760441"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529694"
 ---
 # <a name="action-pox"></a>アクション (POX)
 
-**Action**要素では、ユーザーの構成情報を取得する別の自動検出要求が必要かどうかを決定するために使用される情報を提供します。 
+**Action**要素は、ユーザー構成情報を返すために別の自動検出要求が必要かどうかを判断するために使用される情報を提供します。 
   
-- [(POX) を自動検出](autodiscover-pox.md)
+- [自動検出 (POX)](autodiscover-pox.md)
   
 - [応答 (POX)](response-pox.md)
   
@@ -32,7 +32,7 @@ ms.locfileid: "19760441"
 <Action>redirectUrl or redirectAddr or settings</Action>
 ```
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -48,19 +48,19 @@ ms.locfileid: "19760441"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[アカウント (POX)](account-pox.md) <br/> |ユーザーのアカウントの設定を指定します。  <br/> |
+|[アカウント (POX)](account-pox.md) <br/> |ユーザーのアカウント設定を指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、別の自動検出要求がユーザーの構成情報を取得する必要があるかどうかを表します。 次の表は、可能な値を一覧します。
+Text 値は、ユーザーの構成情報を取得するために別の自動検出要求が必要かどうかを表します。 次の表に、使用可能な値を示します。
   
 |**値**|**説明**|
 |:-----|:-----|
-|redirectUrl  <br/> |この値を指定する場合、 [RedirectUrl (POX)](redirecturl-pox.md)要素はそれ以降の自動検出の要求で使用するクライアント アクセス サーバーの URL を指定します。 クライアント アプリケーションでは、10 リダイレクト後のリダイレクトを停止する必要があります。  <br/> |
-|redirectAddr  <br/> |この値を指定する場合、 [RedirectAddr (POX)](redirectaddr-pox.md)要素は後続の自動検出要求に使用する電子メール アドレスを指定します。  <br/> |
-|settings  <br/> |この値を指定する場合、自動検出の応答には、アカウントを構成するために使用する設定が含まれています。 [プロトコル (POX)](protocol-pox.md)要素にほとんどの設定が存在します。  <br/> |
+|redirectUrl  <br/> |この値が指定されている場合、 [Redirecturl (POX)](redirecturl-pox.md)要素は、以降の自動検出要求で使用されるクライアントアクセスサーバーの URL を指定します。 クライアントアプリケーションは、10回リダイレクトした後にリダイレクトを停止する必要があります。  <br/> |
+|redirectAddr  <br/> |この値が指定されている場合、 [Redirectaddr (POX)](redirectaddr-pox.md)要素は、以降の自動検出要求に使用する電子メールアドレスを指定します。  <br/> |
+|設定  <br/> |この値が指定されている場合、自動検出応答には、アカウントの構成に使用される設定が含まれます。 ほとんどの設定は[Protocol (POX)](protocol-pox.md)要素にあります。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [交換の POX の自動検出の XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+- [Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
 

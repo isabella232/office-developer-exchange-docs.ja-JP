@@ -8,24 +8,24 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 0b2a83cf-e173-4073-9603-b2ea3b36ec1a
-description: MajorVersion 要素は、サーバーのメジャー バージョン番号を表します。
-ms.openlocfilehash: ca619d4c36e17ca9a811019f0a13b45353cab1e2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: MajorVersion 要素は、サーバーのメジャーバージョン番号を表します。
+ms.openlocfilehash: 2c564b110ec7497a2e9c92a00bfb7f376a657849
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832333"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44531008"
 ---
 # <a name="majorversion-soap"></a>MajorVersion (SOAP)
 
-**MajorVersion**要素は、サーバーのメジャー バージョン番号を表します。 
+**MajorVersion**要素は、サーバーのメジャーバージョン番号を表します。 
   
 ```XML
 <MajorVersion/>
 ```
 
  **int**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -41,20 +41,20 @@ ms.locfileid: "19832333"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ServerVersionInfo (SOAP)](serverversioninfo-soap.md) <br/> |要求を処理したサーバーのバージョンが含まれています。  <br/> |
+|[ServerVersionInfo (SOAP)](serverversioninfo-soap.md) <br/> |要求を処理したサーバーのバージョンが保存されています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**MajorVersion**要素のテキスト値は、要求を処理したサーバーのメジャー バージョン番号を表す整数です。 
+**MajorVersion**要素のテキスト値は、要求を処理したサーバーのメジャーバージョン番号を表す整数型 (integer) の値です。 
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|スキーマ名  <br/> |スキーマの自動検出  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|スキーマ名  <br/> |自動検出スキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

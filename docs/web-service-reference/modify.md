@@ -1,5 +1,5 @@
 ---
-title: Modify
+title: 変更
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7a51e9e1-addb-4343-8a22-78f23763c0a8
-description: 変更要素は、クライアントがフォルダーまたはアイテムを変更できるかどうかを示します。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。
-ms.openlocfilehash: 29fd2184e83f66a9b7e7db4173a765cee2922be8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Modify 要素は、クライアントがフォルダーまたはアイテムを変更できるかどうかを示します。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。
+ms.openlocfilehash: e7712644ac9c32afab06be49b438ad83bbb31058
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832514"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530416"
 ---
-# <a name="modify"></a>Modify
+# <a name="modify"></a>変更
 
-**変更**要素は、クライアントがフォルダーまたはアイテムを変更できるかどうかを示します。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。 
+**Modify**要素は、クライアントがフォルダーまたはアイテムを変更できるかどうかを示します。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。 
   
 ```xml
 <Modify>true or false</Modify>
 ```
 
  **boolean**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,31 +44,31 @@ ms.locfileid: "19832514"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[EffectiveRights](effectiverights.md) <br/> |アイテムまたはフォルダーのアクセス許可の設定に基づいてクライアントの権限が含まれています。 この要素は、Exchange 2007 SP1 で導入されました。  <br/> |
+|[EffectiveRights](effectiverights.md) <br/> |アイテムまたはフォルダーのアクセス許可の設定に基づいて、クライアントの権限が含まれています。 この要素は、Exchange 2007 SP1 で導入されました。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**True**の場合、テキスト値は、アイテムまたはフォルダーに、クライアントが変更できることを示します。 
+テキスト値が**true の場合**は、クライアントがアイテムまたはフォルダーを変更できることを示します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 
 
-[フォルダー レベルのアクセス許可の設定](http://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
+[フォルダーレベルのアクセス許可を設定する](https://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 734914b5-3a16-4744-90a5-741fd30c4676
-description: AttachmentShape 要素は、GetAttachment 要求への応答で返される追加のプロパティを識別します。
-ms.openlocfilehash: dc6769faa5fd28ce31b796f86c507aec54abff7a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: AttachmentShape 要素は、GetAttachment 要求に対する応答で返される追加のプロパティを識別します。
+ms.openlocfilehash: e70fbaad0f649c5afdc151b777efef0f8927ba1c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759455"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529666"
 ---
 # <a name="attachmentshape"></a>AttachmentShape
 
-**AttachmentShape**要素は、 [GetAttachment](getattachment.md)要求への応答で返される追加のプロパティを識別します。 
+**Attachmentshape**要素は、 [getattachment](getattachment.md)要求に対する応答で返される追加のプロパティを識別します。 
   
 - [GetAttachment](getattachment.md)
   
@@ -37,7 +37,7 @@ ms.locfileid: "19759455"
 ```
 
  **AttachmentResponseShapeType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -47,38 +47,38 @@ ms.locfileid: "19759455"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[IncludeMimeContent](includemimecontent.md) <br/> |応答で、多目的インターネット メール拡張 (MIME) のコンテンツ アイテムまたは添付ファイルが返されるかどうかを指定します。 この要素はオプションです。  <br/> |
-|[BodyType](bodytype.md) <br/> |応答の本文のテキストを書式設定する方法を識別します。 この要素はオプションです。  <br/> |
-|[FilterHtmlContent](filterhtmlcontent.md) <br/> |添付ファイルから安全でない HTML コンテンツがフィルター処理されたかどうかを指定します。 この要素はオプションです。  <br/> |
-|[AdditionalProperties](additionalproperties.md) <br/> |応答で返される追加プロパティを識別します。 この要素はオプションです。  <br/> |
+|[IncludeMimeContent](includemimecontent.md) <br/> |アイテムまたは添付ファイルのマルチパーパスインターネットメール内線 (MIME) コンテンツを応答で返すかどうかを指定します。 この要素は省略できます。  <br/> |
+|[BodyType](bodytype.md) <br/> |応答で本文テキストを書式設定する方法を指定します。 この要素は省略できます。  <br/> |
+|[FilterHtmlContent](filterhtmlcontent.md) <br/> |安全でない可能性のある HTML コンテンツを添付ファイルからフィルター処理するかどうかを指定します。 この要素は省略できます。  <br/> |
+|[AdditionalProperties](additionalproperties.md) <br/> |応答で返される追加のプロパティを識別します。 この要素は省略できます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetAttachment](getattachment.md) <br/> |Exchange ストア内のメールボックスから添付ファイルを取得する要求を定義する要素。  <br/> この要素への XPath 式は、次のようにします。  <br/>  `/GetAttachment` <br/> |
+|[GetAttachment](getattachment.md) <br/> |Exchange ストア内のメールボックスから添付ファイルを取得するための要求を定義する要素。  <br/> この要素の XPath 式を次に示します。  <br/>  `/GetAttachment` <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [GetAttachment 操作](getattachment-operation.md)
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 337b89ef-e1b7-45ed-92f3-8abe4200e4c7
-description: SendItem 操作を使用して配置されている電子メール メッセージを送信する Exchange ストアにします。
-ms.openlocfilehash: 780778b1599d0d5e5f4b6e5b58b67773bbe18cda
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: SendItem 操作は、Exchange ストアにある電子メールメッセージを送信するために使用されます。
+ms.openlocfilehash: 9136379e50723211fe5a483c7f113da4fa125fc1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833336"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530339"
 ---
 # <a name="senditem-operation"></a>SendItem 操作
 
-SendItem 操作を使用して配置されている電子メール メッセージを送信する Exchange ストアにします。
+SendItem 操作は、Exchange ストアにある電子メールメッセージを送信するために使用されます。
   
-## <a name="senditem-e-mail-message-request-example"></a>SendItem (電子メール メッセージ) の要求の例
+## <a name="senditem-e-mail-message-request-example"></a>SendItem (電子メールメッセージ) の要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
-次の例では、電子メール メッセージを送信する方法を示します。
+次の例は、電子メールメッセージを送信する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -35,9 +35,9 @@ SendItem 操作を使用して配置されている電子メール メッセー�
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <SendItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages" 
+    <SendItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages" 
               SaveItemToFolder="true">
       <ItemIds>
         <t:ItemId Id="AAAtAEF=" ChangeKey="CQAAABY+T" />
@@ -49,23 +49,23 @@ SendItem 操作を使用して配置されている電子メール メッセー�
 
 ### <a name="comments"></a>コメント
 
-項目の識別子が読みやすさを保持するために小さすぎます。
+アイテム識別子は読みやすくするために短縮されています。
   
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-次の要素は、要求で使用されます。
+要求では、次の要素が使用されます。
   
 - [SendItem](senditem.md)
     
-- [Itemid](itemids.md)
+- [ItemIds](itemids.md)
     
 - [ItemId](itemid.md)
     
-## <a name="successful-senditem-e-mail-message-response"></a>SendItem (電子メール メッセージ) の正常な応答
+## <a name="successful-senditem-e-mail-message-response"></a>Successful SendItem (電子メールメッセージ) 応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
-SendItem の正常な応答の例を次に示します。
+次の例は、成功した SendItem 応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -76,12 +76,12 @@ SendItem の正常な応答の例を次に示します。
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="602" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <SendItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                      xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <SendItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                      xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:SendItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -92,9 +92,9 @@ SendItem の正常な応答の例を次に示します。
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a>正常な応答の要素
+### <a name="successful-response-elements"></a>成功した応答要素
 
-次の要素は、応答で使用されます。
+応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -108,15 +108,15 @@ SendItem の正常な応答の例を次に示します。
     
 ### <a name="comments"></a>コメント
 
-代理人設定識別フォルダー送信済みアイテムを識別する送信済みアイテムのコピーを移動するのには失敗、送信済みアイテムのコピーを保存する SendAndSaveCopy オプションを使用してプリンシパルの [下書き] フォルダーにある電子メール メッセージを送信しようとしています。フォルダーです。 アイテムは、プリンシパルの [下書き] フォルダーに残ります。 この問題を回避する方法では、 [DistinguishedFolderId](distinguishedfolderid.md)要素内のプリンシパルのメールボックスを指定します。 
+[送信済みアイテム] 識別フォルダーにコピーを保存するために SendAndSaveCopy オプションが設定されているプリンシパルの [下書き] フォルダーにある電子メールメッセージを送信しようとする代理人は、送信済みアイテムのコピーを送信済みアイテムの識別フォルダーに移動することを黙って失敗します。 アイテムはプリンシパルの [下書き] フォルダーに残ります。 この問題の回避策は、プリンシパルのメールボックスを[DistinguishedFolderId](distinguishedfolderid.md)要素で指定することです。 
   
-考慮すべきその他のシナリオは、代理人が電子メール メッセージを作成し、代理人のメールボックスの [下書き] フォルダーに保存するときです。 デリゲートは、アイテムを送信し、プリンシパルの送信済みアイテムの識別フォルダーにコピーを保存しようとすると、メッセージは正常に送信、代理人の [下書き] フォルダーに下書きメッセージは送信済みのメッセージがない、上司またはプリンシパルアイテム] フォルダーに送信し、応答は、成功します。
+代理人が電子メールメッセージを作成して、代理人のメールボックスの [下書き] フォルダーに保存する場合に考慮すべきもう1つのシナリオがあります。 代理人がアイテムを送信し、プリンシパルの送信済みアイテムの識別フォルダーにコピーを保存しようとすると、メッセージは正常に送信され、下書きメッセージは代理人の下書きフォルダーに残り、送信されたメッセージは代理人またはプリンシパルの [送信済みアイテム] フォルダーに表示されず、応答は成功します。
   
-## <a name="invalid-senditem-e-mail-message-request-example"></a>SendItem (電子メール メッセージ) 要求の無効な使用例
+## <a name="invalid-senditem-e-mail-message-request-example"></a>無効な SendItem (電子メールメッセージ) 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
-次のコード サンプルでは、要求に無効な識別子の例を示します。
+次のコードサンプルは、無効な識別子を持つ要求の例を示しています。
   
 ### <a name="code"></a>コード
 
@@ -124,9 +124,9 @@ SendItem の正常な応答の例を次に示します。
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <SendItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages" 
+    <SendItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages" 
               SaveItemToFolder="true">
       <ItemIds>
         <t:ItemId Id="%BadItemId%" ChangeKey="CQAAABYAAA" />
@@ -136,11 +136,11 @@ SendItem の正常な応答の例を次に示します。
 </soap:Envelope>
 ```
 
-## <a name="senditem-e-mail-message-error-response"></a>SendItem (電子メール メッセージ) のエラー応答
+## <a name="senditem-e-mail-message-error-response"></a>SendItem (電子メールメッセージ) エラー応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
-SendItem 要求に対して無効な識別子が含まれていますエラー応答の例を次に示します。
+次の例は、無効な識別子を含む SendItem 要求へのエラー応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -151,12 +151,12 @@ SendItem 要求に対して無効な識別子が含まれていますエラー�
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="602" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <SendItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                      xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <SendItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                      xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:SendItemResponseMessage ResponseClass="Error">
           <m:MessageText>Id is malformed.</m:MessageText>
@@ -169,7 +169,7 @@ SendItem 要求に対して無効な識別子が含まれていますエラー�
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a>エラー応答の要素
+### <a name="error-response-elements"></a>エラー応答要素
 
 エラー応答では、次の要素が使用されます。
   
@@ -191,11 +191,10 @@ SendItem 要求に対して無効な識別子が含まれていますエラー�
 
 
 
-
-  [SendItem 操作](senditem-operation.md)
+[SendItem 操作](senditem-operation.md)
   
  **SendItemType**
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 82420338-a1f7-4887-b338-b2d93b2c2bf1
-description: DayOfWeekIndex 要素は、1 か月の週が相対的な定期的なパターンの使用について説明します。
-ms.openlocfilehash: 4987685d0c3cefdfad4f5be1368776a5b859bf94
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DayOfWeekIndex 要素は、相対的な定期的なパターンで使用される月の週を示します。
+ms.openlocfilehash: c9235d83a944f9c8883439dd2adf190b88977f16
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759941"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529211"
 ---
 # <a name="dayofweekindex"></a>DayOfWeekIndex
 
-**DayOfWeekIndex**要素は、1 か月の週が相対的な定期的なパターンの使用について説明します。 
+**DayOfWeekIndex**要素は、相対的な定期的なパターンで使用される月の週を示します。 
   
 ```xml
 <DayOfWeekIndex/>
@@ -29,7 +29,7 @@ ms.locfileid: "19759941"
 
 **DayOfWeekIndexType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -45,35 +45,35 @@ ms.locfileid: "19759941"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[RelativeYearlyRecurrence](relativeyearlyrecurrence.md) <br/> |相対年間の定期的なパターンをについて説明します。  <br/> |
-|[RelativeMonthlyRecurrence](relativemonthlyrecurrence.md) <br/> |相対的な毎月の定期的なパターンをについて説明します。  <br/> |
+|[RelativeYearlyRecurrence](relativeyearlyrecurrence.md) <br/> |相対的な年単位の定期的なパターンを記述します。  <br/> |
+|[RelativeMonthlyRecurrence](relativemonthlyrecurrence.md) <br/> |相対的な月単位の定期的なパターンを記述します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 テキスト値は必須です。 指定可能な値は次のいずれかです。
   
 - 第 1    
-- 第 2    
+- 秒    
 - 第 3    
 - 第 4    
 - 末尾
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-たとえば、その月の第 3 週に 1 か月の第 2 月曜日に発生します。 1 か月は、金曜日に起動する場合、月の最初の週、いくつかの日が含まれています、だけ月曜日が含まれていません。 したがって、第 1 月曜日は、第 2 週に発生する必要があります。
+たとえば、月の第2月曜日は、その月の第3週に発生する場合があります。 1か月の金曜日に開始する場合、その月の最初の週には数日だけが含まれ、月曜日は含まれません。 そのため、最初の月曜日は2週間以内に実行する必要があります。
   
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

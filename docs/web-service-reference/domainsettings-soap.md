@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: f3d37f5a-c9ea-4ed9-a011-94d33bda64d1
-description: DomainSettings 要素は、自動検出要求の送信、または、自動検出応答によって返されるドメインの設定を表します。
-ms.openlocfilehash: 961051399dc8babd8cba6eeaf43456071d0f40a6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DomainSettings 要素は、自動検出要求で送信された、または自動検出応答によって返されたドメイン設定を表します。
+ms.openlocfilehash: 67e3753b0cf5c7c653664ff087f697ce7ae2b7a4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760166"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530699"
 ---
 # <a name="domainsettings-soap"></a>DomainSettings (SOAP)
 
-**DomainSettings**要素は、自動検出要求の送信、または、自動検出応答によって返されるドメインの設定を表します。 
+**Domainsettings**要素は、自動検出要求で送信された、または自動検出応答によって返されたドメイン設定を表します。 
   
 ```XML
 <DomainSettings>
@@ -27,7 +27,7 @@ ms.locfileid: "19760166"
 ```
 
  **DomainSettings**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -37,28 +37,28 @@ ms.locfileid: "19760166"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[DomainSetting (SOAP)](domainsetting-soap.md) <br/> |[GetDomainSettings 操作 (SOAP)](getdomainsettings-operation-soap.md)要求によって返されるドメインの設定が含まれています。  <br/> |
+|[DomainSetting (SOAP)](domainsetting-soap.md) <br/> |[Getdomainsettings operation (SOAP)](getdomainsettings-operation-soap.md)要求によって返されるドメイン設定が保存されています。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[DomainResponse (SOAP)](domainresponse-soap.md) <br/> |指定したドメインの指定された設定が含まれています。  <br/> |
+|[DomainResponse (SOAP)](domainresponse-soap.md) <br/> |指定したドメインに対して要求された設定が含まれます。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|スキーマ名  <br/> |スキーマの自動検出  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|スキーマ名  <br/> |自動検出スキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

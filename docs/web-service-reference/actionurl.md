@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9697f2e5-a5f7-471a-a052-ae79e06eb09d
-description: ActionUrl 要素は、AppStatus 要素で示された問題を解決するために、ユーザーが移動する必要がある URL を識別します。
-ms.openlocfilehash: b138797aa8f4e277d94e85e2dd13c0d4c6afaa51
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ActionUrl 要素は、AppStatus 要素によって示された問題を修正するために、ユーザーが移動する必要のある URL を識別します。
+ms.openlocfilehash: 2335595b4be6452f41c25f15d359e6939609c9b9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19759271"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529673"
 ---
 # <a name="actionurl"></a>ActionUrl
 
-**ActionUrl**要素は、 [AppStatus](appstatus-ex15websvcsotherref.md)要素で示された問題を解決するために、ユーザーが移動する必要がある URL を識別します。 
+**Actionurl**要素は、 [appstatus](appstatus-ex15websvcsotherref.md)要素によって示された問題を修正するために、ユーザーが移動する必要のある url を識別します。 
   
 ```XML
 <ActionUrl/>
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,25 +42,25 @@ ms.locfileid: "19759271"
   
 ## <a name="text-value"></a>テキスト値
 
-**ActionUrl**要素のテキスト値は、 **AppStatus**要素で示された問題を解決するために、ユーザーが移動する必要がある URL を識別します。 
+**Actionurl**要素のテキスト値は、 **appstatus**要素によって示された問題を修正するために、ユーザーが移動する必要のある url を示します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> | http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |該当しない  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> | https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |該当なし  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [メタデータ](metadata-ex15websvcsotherref.md)
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

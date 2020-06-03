@@ -1,5 +1,5 @@
 ---
-title: 表示
+title: FolderNames
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6cbe4083-5705-4695-a54e-8dab3e472662
-description: 表示要素には、メールボックスに追加するのには管理対象のフォルダーを名前付きの配列が含まれています。
-ms.openlocfilehash: 819b3c2df1cfcae3a5d4a48539e369a00b1f7229
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: FolderNames 要素には、メールボックスに追加する名前付きの管理フォルダーの配列が含まれています。
+ms.openlocfilehash: 00cb1a81f420469033ccbc745313d2719b155aff
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760568"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530987"
 ---
-# <a name="foldernames"></a>表示
+# <a name="foldernames"></a>FolderNames
 
-**表示**要素には、メールボックスに追加するのには管理対象のフォルダーを名前付きの配列が含まれています。 
+**Foldernames**要素には、メールボックスに追加する名前付きの管理フォルダーの配列が含まれています。 
   
 [CreateManagedFolder](createmanagedfolder.md)
   
-[表示](foldernames.md)
+[FolderNames](foldernames.md)
   
 ```xml
 <FolderNames>
@@ -33,8 +33,8 @@ ms.locfileid: "19760568"
 </FolderNames>
 ```
 
- **NonEmptyArrayOfFolderNamesType**
-## <a name="attributes-and-elements"></a>属性および要素
+ **非 Emptyarrayoffoldernamestん**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,38 +44,37 @@ ms.locfileid: "19760568"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[フォルダー名](foldername.md) <br/> |メールボックスに追加するのには 1 つの管理フォルダーを識別します。  <br/> |
+|[FolderName](foldername.md) <br/> |メールボックスに追加する単一の管理フォルダーを識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[CreateManagedFolder](createmanagedfolder.md) <br/> |メールボックスに管理フォルダーを追加する要求のルート要素です。  <br/> この要素への XPath 式は、次のようにします。  <br/>  `/CreateManagedFolder` <br/> |
+|[CreateManagedFolder](createmanagedfolder.md) <br/> |メールボックスに管理フォルダーを追加する要求のルート要素。  <br/> この要素の XPath 式を次に示します。  <br/>  `/CreateManagedFolder` <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
+[FindFolder 操作](findfolder-operation.md)
 
-  [FindFolder 操作](findfolder-operation.md)
 
-
-[フォルダーを検索します。](http://msdn.microsoft.com/library/9124d868-017a-43f0-b915-5c0082cacec9%28Office.15%29.aspx)
+[フォルダーの検索](https://msdn.microsoft.com/library/9124d868-017a-43f0-b915-5c0082cacec9%28Office.15%29.aspx)
   
-[管理フォルダーを追加します。](http://msdn.microsoft.com/library/846658c6-7043-40fb-8439-19f97c2a967f%28Office.15%29.aspx)
+[管理フォルダーの追加](https://msdn.microsoft.com/library/846658c6-7043-40fb-8439-19f97c2a967f%28Office.15%29.aspx)
 

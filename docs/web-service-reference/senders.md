@@ -1,5 +1,5 @@
 ---
-title: 送信者
+title: '[Senders (送信者)]'
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 69d88bb1-397c-4fb8-bd2b-21cccc5bb35d
-description: 送信者要素では、簡易メール転送プロトコル (SMTP) アドレスの配列を指定します。
-ms.openlocfilehash: 0794b042c00183d56b2fb2aefe8587e0fdf1344d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: '[送信者] 要素は、SMTP (Simple Mail Transfer Protocol) アドレスの配列を指定します。'
+ms.openlocfilehash: 125d448be53b2ae297cd1e7249a04da6eda5d960
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833329"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530573"
 ---
-# <a name="senders"></a>送信者
+# <a name="senders"></a>[Senders (送信者)]
 
-**送信者**要素では、簡易メール転送プロトコル (SMTP) アドレスの配列を指定します。 
+[**送信者**] 要素は、SMTP (Simple Mail Transfer Protocol) アドレスの配列を指定します。 
   
 ```XML
 <Senders>
@@ -26,7 +26,7 @@ ms.locfileid: "19833329"
 ```
 
  **ArrayOfSmtpAddressType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,19 +42,19 @@ ms.locfileid: "19833329"
 
 [FindMailboxStatisticsByKeywords](findmailboxstatisticsbykeywords.md)
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

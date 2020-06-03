@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 113b049f-69a1-40a3-ab98-8a2facd32391
-description: DisplayNameLastFirstSortKey 要素には、姓、名、名前の順での表示名の並べ替えキーが含まれています。
-ms.openlocfilehash: e5373c1c8c5615c6f949964f4a62b740594f072b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: DisplayNameLastFirstSortKey 要素には、姓と名の順序で表示名の並べ替えキーが含まれています。
+ms.openlocfilehash: 04f6ea5ab128a2ce9f7e6090ac260eae0ee4c722
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760124"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530868"
 ---
 # <a name="displaynamelastfirstsortkey"></a>DisplayNameLastFirstSortKey
 
-**DisplayNameLastFirstSortKey**要素には、姓、名、名前の順での表示名の並べ替えキーが含まれています。 
+**Displaynamelastfirstsortkey**要素には、姓と名の順序で表示名の並べ替えキーが含まれています。 
   
 ```XML
 <DisplayNameLastFirstSortKey></DisplayNameLastFirstSortKey>
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -38,25 +38,25 @@ ms.locfileid: "19760124"
   
 ### <a name="parent-elements"></a>親要素
 
-[ペルソナ](persona.md)
+[ユーザー](persona.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**DisplayNameLastFirstSortKey**要素のテキスト値では、ペルソナの名前の並べ替えキーを姓、名、姓の順序で。 
+**Displaynamelastfirstsortkey**要素のテキスト値は、姓、名の順序による、ペルソナの名前の並べ替えキーです。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

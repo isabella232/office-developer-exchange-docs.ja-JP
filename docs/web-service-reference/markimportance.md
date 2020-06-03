@@ -1,5 +1,5 @@
 ---
-title: MarkImportance
+title: マーク (重要)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 32b8b08f-65e9-4764-b40a-63245551f4a3
-description: MarkImportance 要素は、メッセージにスタンプするのには重要度を指定します。
-ms.openlocfilehash: 32b1fa63ef47327e7d3af717ed9f452e43b16380
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: MarkImportance な要素は、メッセージにスタンプされる重要度を指定します。
+ms.openlocfilehash: 051307c0943a22e0c46439410806d168603d8a69
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832356"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530882"
 ---
-# <a name="markimportance"></a>MarkImportance
+# <a name="markimportance"></a>マーク (重要)
 
-**MarkImportance**要素は、メッセージにスタンプするのには重要度を指定します。 
+**Markimportance**な要素は、メッセージにスタンプされる重要度を指定します。 
   
 ```XML
 <MarkImportance/>
 ```
 
  **ImportanceChoicesType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,34 +44,34 @@ ms.locfileid: "19832356"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[アクション](actions.md) <br/> |条件が満たされるときに、メッセージに対して実行される使用可能なアクションのセットを表します。  <br/> |
+|[Actions](actions.md) <br/> |条件が満たされたときに、メッセージに対して実行できるアクションのセットを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-この要素のテキスト値は、次の文字列値の 1 つに制限されています。
+この要素のテキスト値は、次のいずれかの文字列値に制限されています。
   
 - 低
     
-- Normal
+- 標準
     
 - 高
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

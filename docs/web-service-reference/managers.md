@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9be5f734-af42-4bf1-9eb4-f3e4f0917640
-description: マネージャーの要素では、マネージャーの名前の配列とペルソナの場合は、そのソース帰属の識別子を指定します。
-ms.openlocfilehash: 7f26b61692c3690074b7c328c53d63087550da15
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Managers 要素は、マネージャー名の配列と、ペルソナのソース attributions の識別子を指定します。
+ms.openlocfilehash: 49fccb4e6e4b920887d6f8fbc41c5ccdba1cbbe2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832347"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530896"
 ---
 # <a name="managers"></a>マネージャー
 
-**マネージャー**の要素では、マネージャーの名前の配列とペルソナの場合は、そのソース帰属の識別子を指定します。 
+**Managers**要素は、マネージャー名の配列と、ペルソナのソース attributions の識別子を指定します。 
   
 ```XML
 <Managers>
@@ -26,7 +26,7 @@ ms.locfileid: "19832347"
 ```
 
  **ArrayOfStringAttributedValuesType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,21 +40,21 @@ ms.locfileid: "19832347"
   
 ### <a name="parent-elements"></a>親要素
 
-[ペルソナ](persona.md)
+[ユーザー](persona.md)
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素は Exchange Server 2013 で導入されました。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
 |空にすることができます。  <br/> ||
    
 

@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c66c28a5-1b2c-4913-b0c5-e3d9849aa4af
-description: PhoneticFirstName 要素に、連絡先の氏名が含まれている発音のスペルします。
-ms.openlocfilehash: 48bba2105deb0c41414c618b399da09458645312
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: この要素には、連絡先の名前の先頭にスペルが入力されています。
+ms.openlocfilehash: a72ae885473e670ab197134fcd44e5d82ce6e450
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832777"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529946"
 ---
 # <a name="phoneticfirstname"></a>PhoneticFirstName
 
-**PhoneticFirstName**要素に、連絡先の氏名が含まれている発音のスペルします。 
+この**要素には、** 連絡先の名前の先頭にスペルが入力されています。 
   
 ```XML
 <PhoneticFirstName/>
 ```
 
  **string**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,29 +44,29 @@ ms.locfileid: "19832777"
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、連絡先の名を表す文字列を発音のスペルします。
+テキスト値は、連絡先の名の先頭を表す文字列です。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
 この要素は Exchange Server 2010 Service Pack 2 (SP2) で導入されました。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 
 
-[連絡先 (Exchange Web サービス) を作成します。](http://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
+[連絡先の作成 (Exchange Web サービス)](https://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
 

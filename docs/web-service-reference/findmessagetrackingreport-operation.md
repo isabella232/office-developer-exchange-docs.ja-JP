@@ -11,21 +11,21 @@ api_name:
 api_type:
 - schema
 ms.assetid: 12942f24-2a8e-4d7f-a137-8da5932a6b46
-description: FindMessageTrackingReport 操作は、指定した条件を満たすメッセージを検索します。
-ms.openlocfilehash: 103655b1c190f43bd11cfd3bfeabc22422d726a1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: FindMessageTrackingReport 操作は、指定された条件に一致するメッセージを検索します。
+ms.openlocfilehash: ec3073da4cf3961d3f2fe2727bf0cf0533e0ffb6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760527"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530917"
 ---
 # <a name="findmessagetrackingreport-operation"></a>FindMessageTrackingReport 操作
 
-**FindMessageTrackingReport**操作は、指定した条件を満たすメッセージを検索します。 
+**Findmessagetrackingreport**操作は、指定された条件に一致するメッセージを検索します。 
   
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の操作](ews-operations-in-exchange.md)
+- [Exchange での EWS 操作](ews-operations-in-exchange.md)
   
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

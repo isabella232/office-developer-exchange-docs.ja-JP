@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: fd87e9b7-c231-44fa-9f5b-19ae96cda5cc
-description: SubscribeResponse 要素は、Subscribe 要求への応答を定義します。
-ms.openlocfilehash: 9c4fb0e9282acd2dfd8dcb66669815edcbd69ff2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: SubscribeResponse 要素は、Subscribe 要求に対する応答を定義します。
+ms.openlocfilehash: 1f7079694c873aacbf44b1030e495cbe2f48d163
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833615"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530952"
 ---
 # <a name="subscriberesponse"></a>SubscribeResponse
 
-**SubscribeResponse**要素は、Subscribe 要求への応答を定義します。 
+**SubscribeResponse**要素は、Subscribe 要求に対する応答を定義します。 
   
 [SubscribeResponse](subscriberesponse.md)
   
@@ -31,8 +31,8 @@ ms.locfileid: "19833615"
 </SubscribeResponse>
 ```
 
- **SubscribeResponseType**
-## <a name="attributes-and-elements"></a>属性および要素
+ **電話機の種類**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -42,26 +42,26 @@ ms.locfileid: "19833615"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Exchange Web サービス要求に対する応答メッセージが含まれています。  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Exchange Web サービス要求に対する応答メッセージを含みます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空にすることができます。  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空にすることができます。  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

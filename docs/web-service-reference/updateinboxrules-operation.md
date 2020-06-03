@@ -1,5 +1,5 @@
 ---
-title: UpdateInboxRules 操作
+title: UpdateInboxRules の操作
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,27 +11,27 @@ api_name:
 api_type:
 - schema
 ms.assetid: f982a237-471e-45c5-a2b5-468cfc53150b
-description: UpdateInboxRules 操作は、指定した操作を適用することによって認証されたユーザーの受信トレイ ルールを更新します。 UpdateInboxRules を使用して、または受信トレイ ルールを削除するのには、受信トレイ ルールを設定するのには、受信トレイのルールを作成します。
-ms.openlocfilehash: 6e979421d619fed6625fe05db86c1f8c6a7418c9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Updateinbox Rules 操作は、指定された操作を適用することによって、認証済みのユーザーの受信トレイルールを更新します。 Updateinbox ルールは、受信トレイルールを作成したり、受信トレイルールを設定したり、受信トレイルールを削除したりするために使用します。
+ms.openlocfilehash: a6ced4be25c6fe4649ad649ba01194791548bf67
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839855"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44531001"
 ---
-# <a name="updateinboxrules-operation"></a>UpdateInboxRules 操作
+# <a name="updateinboxrules-operation"></a>UpdateInboxRules の操作
 
-UpdateInboxRules 操作は、指定した操作を適用することによって認証されたユーザーの受信トレイ ルールを更新します。 **UpdateInboxRules**を使用して、または受信トレイ ルールを削除するのには、受信トレイ ルールを設定するのには、受信トレイのルールを作成します。 
+Updateinbox Rules 操作は、指定された操作を適用することによって、認証済みのユーザーの受信トレイルールを更新します。 **Updateinbox**ルールは、受信トレイルールを作成したり、受信トレイルールを設定したり、受信トレイルールを削除したりするために使用します。 
   
-**UpdateInboxRules**操作を使用する場合、Exchange Web サービスは、クライアント側の送信規則を削除します。 フォルダー関連情報 (FAI) メッセージのルールでクライアントと他の場所では、クライアント側の送信規則が格納されます。 EWS では、既定では、Outlook は、再作成を前提に基づく FAI メッセージ ルールを削除します。 ただし、Outlook は、拡張のルールとしても存在しないルールを再作成できません、拡張ルールとクライアント側の送信規則が存在しません。 その結果、これらのルールは失われます。 ソリューションを設計するときこれを考慮することをお勧めします。 
+**Update受信トレイルール**操作を使用すると、Exchange Web サービスによってクライアント側の送信ルールが削除されます。 クライアント側の送信ルールは、クライアントのルールのフォルダー関連情報 (FAI) メッセージにのみ保存されます。 EWS は既定で、このルール FAI メッセージを削除します。これは、Outlook がこれを再作成するという前提に基づいて行われます。 ただし、Outlook で再作成できるのは、拡張ルールとしても存在しているルールです。けれども、クライアント側の送信ルールは拡張ルールとして存在していません。 その結果、これらのルールは失われます。 ソリューションの設計時にこのことを考慮にするようお勧めします。 
   
-## <a name="updateinboxrules-create-rule-request-example"></a>UpdateInboxRules (ルールの作成) の要求の例
+## <a name="updateinboxrules-create-rule-request-example"></a>Update受信トレイルール (ルールの作成) 要求の例
 
-Exchange Web サービスを使用すると、Exchange ストア内のユーザーのメールボックスで受信トレイ ルールを作成します。 [CreateRuleOperation](createruleoperation.md)要素と組み合わせて[UpdateInboxRules](updateinboxrules.md)要素を使用して、ルールを作成します。 
+Exchange Web サービスを使用して、Exchange ストア内のユーザーのメールボックスに受信トレイルールを作成できます。 ルールを作成するには、 [CreateRuleOperation](createruleoperation.md)要素と共に[update受信トレイルール](updateinboxrules.md)要素を使用します。 
   
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
-クライアントは、要求の XML を構築し、サーバーに送信します。
+クライアントは、要求 XML を構築し、サーバーに送信します。
   
 ### <a name="code"></a>コード
 
@@ -39,8 +39,8 @@ Exchange Web サービスを使用すると、Exchange ストア内のユーザ�
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
   <soap:Header>
     <t:RequestServerVersion Version ="Exchange2010_SP1"/>
   </soap:Header>
@@ -75,11 +75,11 @@ Exchange Web サービスを使用すると、Exchange ストア内のユーザ�
 
 ### <a name="comments"></a>コメント
 
-次の使用例は、電子メールの件名に「おもしろい」に相当する文字列が含まれている場合、[迷惑メール] フォルダーに電子メール メッセージを移動するルールを作成します。
+この例では、電子メールの件名に "おもしろい" という文字列が含まれている場合に、電子メールメッセージを [迷惑メール] フォルダーに移動するルールを作成します。
   
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-**UpdateInboxRules**要求には、次の要素が含まれています。 
+**Update受信トレイルール**要求には、次の要素が含まれています。 
   
 - [MailboxSmtpAddress](mailboxsmtpaddress.md)
     
@@ -87,13 +87,13 @@ Exchange Web サービスを使用すると、Exchange ストア内のユーザ�
     
 - [Operations](operations.md)
     
-[操作](operations.md)要素には、ルールを作成する[CreateRuleOperation](createruleoperation.md)要素が含まれています。 
+[操作](operations.md)要素には、ルールを作成するための[CreateRuleOperation](createruleoperation.md)要素が含まれています。 
   
-## <a name="updateinboxrules-create-rule-response-example"></a>UpdateInboxRules (ルールの作成) の応答の例
+## <a name="updateinboxrules-create-rule-response-example"></a>Update受信トレイルール (作成ルール) の応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
-Simple Object Access Protocol (SOAP) 本文の次の使用例は、ルールを作成する**UpdateInboxRules**要求に正常な応答を示しています。 
+次の簡易オブジェクトアクセスプロトコル (SOAP) 本文の例は、ルールを作成する**Update受信トレイルール**要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -105,15 +105,15 @@ Simple Object Access Protocol (SOAP) 本文の次の使用例は、ルールを�
         MinorVersion="1" 
         MajorBuildNumber="139" 
         MinorBuildNumber="0" Version="Exchange2010_SP1" 
-        xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-        xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+        xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+        xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
         xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
         xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <UpdateInboxRulesResponse 
-         ResponseClass="Success" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+         ResponseClass="Success" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseCode>NoError</ResponseCode>
     </UpdateInboxRulesResponse>
   </s:Body>
@@ -121,25 +121,25 @@ Simple Object Access Protocol (SOAP) 本文の次の使用例は、ルールを�
 
 ```
 
-### <a name="successful-response-elements"></a>正常な応答の要素
+### <a name="successful-response-elements"></a>成功した応答要素
 
-次の要素は、応答で使用されます。
+応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
-- [UpdateInboxRulesResponse](updateinboxrulesresponse.md)
+- [Update受信トレイルールの応答](updateinboxrulesresponse.md)
     
 - [ResponseMessages](responsemessages.md)
     
 - [ResponseCode](responsecode.md)
     
-## <a name="updateinboxrules-set-rule-request-example"></a>UpdateInboxRules (ルールのセット) の要求の例
+## <a name="updateinboxrules-set-rule-request-example"></a>Update受信トレイルール (Set Rule) 要求の例
 
-Exchange ストア内のユーザーのメールボックスの受信トレイのルールを変更するのには Exchange Web サービスを使用することができます。 [SetRuleOperation](setruleoperation.md)要素と組み合わせて[UpdateInboxRules](updateinboxrules.md)要素を使用して、ルールを変更します。 
+Exchange Web サービスを使用して、Exchange ストア内のユーザーのメールボックスの受信トレイルールを変更できます。 ルールを変更するには、 [SetRuleOperation](setruleoperation.md)要素と共に[update受信トレイルール](updateinboxrules.md)要素を使用します。 
   
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
-クライアントは、要求の XML を構築し、サーバーに送信します。
+クライアントは、要求 XML を構築し、サーバーに送信します。
   
 ### <a name="code"></a>コード
 
@@ -147,16 +147,16 @@ Exchange ストア内のユーザーのメールボックスの受信トレイ�
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
   <soap:Header>
     <t:RequestServerVersion Version ="Exchange2010_SP1"/>
   </soap:Header>
   <soap:Body>
       <m:UpdateInboxRules>
         <m:RemoveOutlookRuleBlob>true</m:RemoveOutlookRuleBlob>
-        <Operations xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-          <SetRuleOperation xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <Operations xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+          <SetRuleOperation xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
             <Rule>
               <RuleId>Nh8AAAAwW/w=</RuleId>
               <DisplayName>(Modified) This is Junk</DisplayName>
@@ -183,14 +183,14 @@ Exchange ストア内のユーザーのメールボックスの受信トレイ�
 
 ### <a name="comments"></a>コメント
 
-この例で表示名を変更 (更新) これは、迷惑メールです。
+次の使用例は、表示名を "(変更) が迷惑メールである" に変更します。
   
 > [!NOTE]
-> [フォルダー Id](folderid.md)要素の属性を**変更キー**と**Id**の値は、読みやすさに短縮されています。 
+> [FolderId](folderid.md)要素の**Id**および**changekey**属性の値は、読みやすくするために短縮されています。 
   
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-**UpdateInboxRules**要求には、次の要素が含まれています。 
+**Update受信トレイルール**要求には、次の要素が含まれています。 
   
 - [MailboxSmtpAddress](mailboxsmtpaddress.md)
     
@@ -198,13 +198,13 @@ Exchange ストア内のユーザーのメールボックスの受信トレイ�
     
 - [Operations](operations.md)
     
-[操作](operations.md)要素には、ルールを変更する[SetRuleOperation](setruleoperation.md)要素が含まれています。 
+[操作](operations.md)要素には、ルールを変更するための[SetRuleOperation](setruleoperation.md)要素が含まれています。 
   
-## <a name="updateinboxrules-set-rule-response-example"></a>UpdateInboxRules (ルールを設定する) 応答の例
+## <a name="updateinboxrules-set-rule-response-example"></a>Update受信トレイルール (Set Rule) response の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
-Simple Object Access Protocol (SOAP) 本文の次の使用例は、ルールを変更する**UpdateInboxRules**要求に正常な応答を示しています。 
+次の簡易オブジェクトアクセスプロトコル (SOAP) 本文の例は、ルールを変更する**Update受信トレイルール**要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -217,15 +217,15 @@ Simple Object Access Protocol (SOAP) 本文の次の使用例は、ルールを�
         MajorBuildNumber="139" 
         MinorBuildNumber="0" 
         Version="Exchange2010_SP1" 
-        xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-        xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+        xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+        xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
         xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
         xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <UpdateInboxRulesResponse 
-          ResponseClass="Success" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+          ResponseClass="Success" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseCode>NoError</ResponseCode>
     </UpdateInboxRulesResponse>
   </s:Body>
@@ -233,25 +233,25 @@ Simple Object Access Protocol (SOAP) 本文の次の使用例は、ルールを�
 
 ```
 
-### <a name="successful-response-elements"></a>正常な応答の要素
+### <a name="successful-response-elements"></a>成功した応答要素
 
-次の要素は、応答で使用されます。
+応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
-- [UpdateInboxRulesResponse](updateinboxrulesresponse.md)
+- [Update受信トレイルールの応答](updateinboxrulesresponse.md)
     
 - [ResponseMessages](responsemessages.md)
     
 - [ResponseCode](responsecode.md)
     
-## <a name="updateinboxrules-delete-rule-request-example"></a>UpdateInboxRules (ルールの削除) の要求の例
+## <a name="updateinboxrules-delete-rule-request-example"></a>Update受信トレイルール (デリートルール) 要求の例
 
-Exchange Web サービスを使用すると、Exchange ストア内のユーザーのメールボックスの受信トレイ ルールを削除します。 [DeleteRuleOperation](deleteruleoperation.md)要素と連携して動作規則を削除するのには[UpdateInboxRules](updateinboxrules.md)を使用します。 
+Exchange Web サービスを使用して、Exchange ストア内のユーザーのメールボックスの受信トレイルールを削除できます。 ルールを削除するには、 [DeleteRuleOperation](deleteruleoperation.md)要素と共に[Update受信トレイルール](updateinboxrules.md)を使用します。 
   
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
-クライアントは、要求の XML を構築し、サーバーに送信します。
+クライアントは、要求 XML を構築し、サーバーに送信します。
   
 ### <a name="code"></a>コード
 
@@ -259,8 +259,8 @@ Exchange Web サービスを使用すると、Exchange ストア内のユーザ�
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
   <soap:Header>
     <t:RequestServerVersion Version ="Exchange2010_SP1"/>
   </soap:Header>
@@ -280,11 +280,11 @@ Exchange Web サービスを使用すると、Exchange ストア内のユーザ�
 
 ### <a name="comments"></a>コメント
 
-この例では、既存の特定の規則を削除します。
+この例では、既存の識別されたルールを削除します。
   
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-**UpdateInboxRules**要求には、次の要素が含まれています。 
+**Update受信トレイルール**要求には、次の要素が含まれています。 
   
 - [MailboxSmtpAddress](mailboxsmtpaddress.md)
     
@@ -292,13 +292,13 @@ Exchange Web サービスを使用すると、Exchange ストア内のユーザ�
     
 - [Operations](operations.md)
     
-[操作](operations.md)要素には、ルールを削除する[DeleteRuleOperation](deleteruleoperation.md)要素が含まれています。 
+[操作](operations.md)要素には、ルールを削除するための[DeleteRuleOperation](deleteruleoperation.md)要素が含まれています。 
   
-## <a name="updateinboxrules-delete-rule-response-example"></a>UpdateInboxRules (ルールの削除) 応答の例
+## <a name="updateinboxrules-delete-rule-response-example"></a>Update受信トレイルール (デリートルール) の応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
-Simple Object Access Protocol (SOAP) 本文の次の使用例は、ルールを削除する**UpdateInboxRules**要求に正常な応答を示しています。 
+次の簡易オブジェクトアクセスプロトコル (SOAP) 本文の例は、ルールを削除する**Update受信トレイルール**要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -311,13 +311,13 @@ Simple Object Access Protocol (SOAP) 本文の次の使用例は、ルールを�
         MajorBuildNumber="139" 
         MinorBuildNumber="0" 
         Version="Exchange2010_SP1" 
-        xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-        xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+        xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+        xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
         xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <UpdateInboxRulesResponse ResponseClass="Success" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <UpdateInboxRulesResponse ResponseClass="Success" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseCode>NoError</ResponseCode>
     </UpdateInboxRulesResponse>
   </s:Body>
@@ -325,13 +325,13 @@ Simple Object Access Protocol (SOAP) 本文の次の使用例は、ルールを�
 
 ```
 
-### <a name="successful-response-elements"></a>正常な応答の要素
+### <a name="successful-response-elements"></a>成功した応答要素
 
-次の要素は、応答で使用されます。
+応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
-- [UpdateInboxRulesResponse](updateinboxrulesresponse.md)
+- [Update受信トレイルールの応答](updateinboxrulesresponse.md)
     
 - [ResponseMessages](responsemessages.md)
     
