@@ -10,7 +10,7 @@ ms.openlocfilehash: 3a8ce889ec7a6b9e70ec25a95ac248902f48ca6c
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44456305"
 ---
 # <a name="instrumenting-client-requests-for-ews-and-rest-in-exchange"></a>Exchange で EWS と REST のクライアントの要求をインストルメント化する

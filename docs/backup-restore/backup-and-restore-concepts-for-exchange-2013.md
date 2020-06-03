@@ -12,7 +12,7 @@ ms.openlocfilehash: fd35699839af105dd3fe285776b071c1d03d58dd
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44437985"
 ---
 # <a name="backup-and-restore-concepts-for-exchange-2013"></a>Exchange 2013 のバックアップと復元の概念
@@ -29,7 +29,7 @@ Exchange 2013 には、最大100データベースのサポートが含まれて
   
 **表1Exchange 2013 データベースファイル**
 
-|ファイルの種類|拡張子|説明|
+|ファイルの種類|拡張子|Description|
 |:-----|:-----|:-----|
 |データベース ファイル  <br/> |\*.edb  <br/> |メモリ内のデータベースにコミットされたすべての変更を記録します。  <br/> |
 |トランザクション ログ ストリーム  <br/> |\*.log  <br/> |データベースにコミットされる、メッセージの変更または作成などのレコードの操作。それぞれ 1 MB のサイズに制限されます。  <br/> |

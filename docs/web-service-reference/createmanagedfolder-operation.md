@@ -16,7 +16,7 @@ ms.openlocfilehash: 779c730b55b9b441644108a6837f9e22d39cc2f4
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44444594"
 ---
 # <a name="createmanagedfolder-operation"></a>CreateManagedFolder 操作
@@ -40,7 +40,7 @@ FindFolder および GetFolder 操作を使用して、管理フォルダーに�
   
 ## <a name="createmanagedfolder-request-example"></a>CreateManagedFolder 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の CreateManagedFolder 要求の例は、Test 管理フォルダーという名前の管理フォルダーをメールボックスに追加する方法を示しています。
   
@@ -79,7 +79,7 @@ CreateManagedFolder 操作の要求メッセージに関するその他のオプ
   
 ## <a name="successful-createmanagedfolder-response"></a>成功した CreateManagedFolder 応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次のコード例は、CreateManagedFolder 要求に対する正常な応答を示しています。
   
@@ -138,7 +138,7 @@ CreateManagedFolder 操作の応答メッセージに関するその他のオプ
   
 ## <a name="createmanagedfolder-error-response"></a>CreateManagedFolder エラー応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次のコード例は、CreateManagedFolder 要求に対するエラー応答を示しています。
   
@@ -192,11 +192,9 @@ CreateManagedFolder 操作の応答メッセージに関するその他のオプ
 
 
 
-
-  [GetFolder 操作](getfolder-operation.md)
+[GetFolder 操作](getfolder-operation.md)
   
-
-  [FindFolder 操作](findfolder-operation.md)
+[FindFolder 操作](findfolder-operation.md)
 
 
 [フォルダーの検索](https://msdn.microsoft.com/library/9124d868-017a-43f0-b915-5c0082cacec9%28Office.15%29.aspx)

@@ -16,7 +16,7 @@ ms.openlocfilehash: 384ed8ff653029c2b7db0b36986d85842b0a06cf
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457117"
 ---
 # <a name="createitem-operation-email-message"></a>CreateItem 操作 (電子メールメッセージ)
@@ -25,7 +25,7 @@ CreateItem 操作は、電子メールメッセージを作成するために使
   
 ## <a name="createitem-request-example"></a>CreateItem 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 CreateItem 要求の次の例は、新しい電子メールメッセージを作成し、メッセージを送信して、そのコピーを [下書き] フォルダーに保存する方法を示しています。
   
@@ -72,7 +72,7 @@ CreateItem 要求の次の例は、新しい電子メールメッセージを作
     
 - [ItemClass](itemclass.md)
     
-- [[件名]](subject.md)
+- [件名](subject.md)
     
 - [Body](body.md)
     
@@ -88,7 +88,7 @@ CreateItem 操作の要求メッセージに関するその他のオプション
   
 ## <a name="successful-createitem-response"></a>成功した CreateItem 応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、CreateItem 要求に対する正常な応答を示しています。
   
@@ -135,7 +135,7 @@ CreateItem 操作の応答メッセージに関するその他のオプション
   
 ## <a name="error-createitem-response"></a>エラー CreateItem 応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、CreateItem 要求に対するエラー応答を示しています。
   
@@ -190,6 +190,5 @@ CreateItem 操作のエラー応答メッセージに関するその他のオプ
 
 
 
-
-  [CreateItem 操作](createitem-operation.md)
+[CreateItem 操作](createitem-operation.md)
 

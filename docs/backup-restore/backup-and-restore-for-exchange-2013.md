@@ -12,7 +12,7 @@ ms.openlocfilehash: 1c5d99be60501fd1c4414ea22294bd05645bb0a7
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44455241"
 ---
 # <a name="backup-and-restore-for-exchange"></a>Exchange のバックアップと復元
@@ -55,8 +55,7 @@ VSS writer アーキテクチャは Exchange 2013 で更新されましたが、
 ## <a name="see-also"></a>関連項目
 
 - [ボリュームシャドウコピーサービス (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb968832%28v=vs.85%29.aspx)   
-- 
-  [Exchange の EWS Managed API、EWS、および Web サービスについて学ぶ](../exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)  
+- [Exchange の EWS マネージ API、EWS、Web サービスについて探究してみましょう](../exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)  
 - [Exchange Management Shell](../management/exchange-management-shell.md)   
 - [Exchange のトランスポート エージェント](../transport-agents/transport-agents-in-exchange-2013.md) 
     

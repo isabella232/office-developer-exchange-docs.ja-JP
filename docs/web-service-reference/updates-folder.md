@@ -16,7 +16,7 @@ ms.openlocfilehash: 3282171dfc188a9d4735a19a97e80fe0e2f79b89
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457180"
 ---
 # <a name="updates-folder"></a>Updates (フォルダー)
@@ -78,7 +78,6 @@ ms.locfileid: "44457180"
    
 ## <a name="see-also"></a>関連項目
 
-- 
-  [UpdateFolder 操作](updatefolder-operation.md)
+- [UpdateFolder 操作](updatefolder-operation.md)
 - [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

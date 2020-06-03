@@ -12,7 +12,7 @@ ms.openlocfilehash: 5b01fc6924f82e76943795df877ae84b1fde087b
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44456389"
 ---
 # <a name="transaction-logs-and-checkpoint-files-for-backup-and-restore-in-exchange"></a>Exchange でのバックアップと復元のトランザクションログとチェックポイントファイル

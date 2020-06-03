@@ -10,7 +10,7 @@ ms.openlocfilehash: 7c88015386dc882f14184765e0046a866e8c0e10
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44456317"
 ---
 # <a name="inbox-management-and-ews-in-exchange"></a>Exchange での受信トレイの管理と EWS
@@ -135,7 +135,7 @@ EWS マネージ API では、ルールを操作するために [ExchangeService
 ## <a name="see-also"></a>関連項目
 
 
-- [Exchange の Web サービス クライアントを開発する](develop-web-service-clients-for-exchange.md)
+- [Exchange 用の Web サービス クライアントの開発](develop-web-service-clients-for-exchange.md)
     
 - [GetInboxRules の操作](https://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx)
     

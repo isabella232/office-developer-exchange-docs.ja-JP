@@ -10,7 +10,7 @@ ms.openlocfilehash: 06faf7dd7459b14792abbea21761e909c8eb9fb6
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44455346"
 ---
 # <a name="access-contacts-as-a-delegate-by-using-ews-in-exchange"></a>Exchange で EWS を使用して、代理人として連絡先にアクセスする
@@ -285,7 +285,7 @@ EWS マネージ API を使用すると、代理人アクセスを使用して�
   
 **表 2. 代理人として連絡先を操作する EWS マネージ API メソッド**
 
-|**Task**|**EWS マネージ API メソッド**|**コード例**|
+|**タスク**|**EWS マネージ API メソッド**|**コード例**|
 |:-----|:-----|:-----|
 |連絡先を取得する  <br/> |[Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) <br/> |[EWS マネージ API を使用してアイテムを取得する](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_getewsma) <br/> |
 |連絡先を更新する  <br/> |[Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) の後に [Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.update%28v=exchg.80%29.aspx) <br/> |[EWS マネージ API を使用してアイテムを更新する](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_updateewsma) <br/> |

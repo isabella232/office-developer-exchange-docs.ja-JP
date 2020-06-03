@@ -16,7 +16,7 @@ ms.openlocfilehash: b5e7a24c5214574ef385cd6ffca87ed5f861c188
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44456949"
 ---
 # <a name="exists"></a>Exists
@@ -50,7 +50,7 @@ ms.locfileid: "44456949"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Restriction](restriction.md) <br/> |FindItem/FindFolder および search folder 操作のアイテムまたはフォルダーをフィルター処理するために使用される制限またはクエリを表します。  <br/> |
+|[制限](restriction.md) <br/> |FindItem/FindFolder および search folder 操作のアイテムまたはフォルダーをフィルター処理するために使用される制限またはクエリを表します。  <br/> |
 |[Not](not.md) <br/> |含まれる検索式のブール値を否定する検索式を表します。  <br/> |
 |[And](and.md) <br/> |2つ以上の検索式の間でブール値と演算を実行できる検索式を表します。 And 操作の結果は、に含まれるすべての検索式が**true**である場合に**true**となります。  <br/> |
 |[Or](or.md) <br/> |含まれる検索式に対して論理 OR を実行する検索式を表します。 [または](or.md)、いずれかの子が**true**を返した場合は**true**を返します。  <br/> |

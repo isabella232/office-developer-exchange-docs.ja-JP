@@ -16,7 +16,7 @@ ms.openlocfilehash: dd7136ae82353841db09497d23eabe450c1c8b13
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44456760"
 ---
 # <a name="refreshsharingfolder-operation"></a>RefreshSharingFolder 操作
@@ -34,7 +34,7 @@ ms.locfileid: "44456760"
    
 ## <a name="refreshsharingfolder-request-example"></a>RefreshSharingFolder 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、共有されているフォルダーの最新データを使用して、指定したローカルフォルダーを更新する要求を形成する方法を示しています。 [SharingFolderId](sharingfolderid.md)要素は、更新するローカルフォルダーの識別子を指定します。 
   
@@ -70,7 +70,7 @@ ms.locfileid: "44456760"
     
 ## <a name="successful-refreshsharingfolder-response"></a>正常な RefreshSharingFolder 応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、 **Refreshsharingfolder**要求に対する正常な応答を示しています。 
   
@@ -112,7 +112,7 @@ ms.locfileid: "44456760"
     
 ## <a name="refreshsharingfolder-error-response"></a>RefreshSharingFolder エラー応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、 **Refreshsharingfolder**要求に対するエラー応答を示しています。 この例では、指定したローカルフォルダーに対応するサブスクリプションが見つからなかったため、 **Refreshsharingfolder**要求が失敗しました。 
   

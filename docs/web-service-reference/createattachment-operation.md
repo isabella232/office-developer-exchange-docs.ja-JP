@@ -16,7 +16,7 @@ ms.openlocfilehash: 8028c56aa306774b54b39e5ee1ac0382b9113fa0
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44456571"
 ---
 # <a name="createattachment-operation"></a>CreateAttachment 操作
@@ -25,7 +25,7 @@ CreateAttachment 操作は、アイテムまたは添付ファイルのいずれ
   
 ## <a name="file-createattachment-request-example"></a>ファイル CreateAttachment 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の CreateAttachment 要求の例は、添付ファイルを作成する方法を示しています。
   
@@ -67,7 +67,7 @@ CreateAttachment 操作は、アイテムまたは添付ファイルのいずれ
     
 - [ParentItemId](parentitemid.md)
     
-- [添付ファイル](attachments-ex15websvcsotherref.md)
+- [Attachments](attachments-ex15websvcsotherref.md)
     
 - [FileAttachment](fileattachment.md)
     
@@ -77,7 +77,7 @@ CreateAttachment 操作は、アイテムまたは添付ファイルのいずれ
     
 ## <a name="successful-file-createattachment-response-example"></a>正常なファイル CreateAttachment の応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、CreateAttachment 要求に対する正常な応答を示しています。
   
@@ -129,7 +129,7 @@ CreateAttachment 操作は、アイテムまたは添付ファイルのいずれ
     
 - [ResponseCode](responsecode.md)
     
-- [添付ファイル](attachments-ex15websvcsotherref.md)
+- [Attachments](attachments-ex15websvcsotherref.md)
     
 - [FileAttachment](fileattachment.md)
     
@@ -137,7 +137,7 @@ CreateAttachment 操作は、アイテムまたは添付ファイルのいずれ
     
 ## <a name="item-createattachment-request-example"></a>アイテム CreateAttachment 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の CreateAttachment 要求の例は、アイテムの添付ファイルを作成する方法を示しています。
   
@@ -180,7 +180,7 @@ CreateAttachment 操作は、アイテムまたは添付ファイルのいずれ
     
 - [ParentItemId](parentitemid.md)
     
-- [添付ファイル](attachments-ex15websvcsotherref.md)
+- [Attachments](attachments-ex15websvcsotherref.md)
     
 - [ItemAttachment](itemattachment.md)
     
@@ -188,11 +188,11 @@ CreateAttachment 操作は、アイテムまたは添付ファイルのいずれ
     
 - [Message](message-ex15websvcsotherref.md)
     
-- [[件名]](subject.md)
+- [件名](subject.md)
     
 ## <a name="successful-item-createattachment-response-example"></a>正常なアイテム CreateAttachment の応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、CreateAttachment 要求に対する正常な応答を示しています。
   
@@ -244,7 +244,7 @@ CreateAttachment 操作は、アイテムまたは添付ファイルのいずれ
     
 - [ResponseCode](responsecode.md)
     
-- [添付ファイル](attachments-ex15websvcsotherref.md)
+- [Attachments](attachments-ex15websvcsotherref.md)
     
 - [ItemAttachment](itemattachment.md)
     
@@ -252,7 +252,7 @@ CreateAttachment 操作は、アイテムまたは添付ファイルのいずれ
     
 ## <a name="createattachment-error-response-example"></a>CreateAttachment エラー応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、CreateAttachment 要求に対するエラー応答を示しています。 このエラーは、添付ファイルの名前が指定されていないことが原因で発生します。
   
@@ -309,7 +309,7 @@ CreateAttachment 操作は、アイテムまたは添付ファイルのいずれ
     
 - [ExceptionFieldURI](exceptionfielduri.md)
     
-- [添付ファイル](attachments-ex15websvcsotherref.md)
+- [Attachments](attachments-ex15websvcsotherref.md)
     
 ## <a name="remarks"></a>注釈
 

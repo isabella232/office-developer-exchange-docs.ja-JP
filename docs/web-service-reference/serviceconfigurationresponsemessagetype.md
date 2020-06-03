@@ -16,7 +16,7 @@ ms.openlocfilehash: 4c84a49b2403343a1defd00696858489497d6214
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44439106"
 ---
 # <a name="serviceconfigurationresponsemessagetype"></a>ServiceConfigurationResponseMessageType

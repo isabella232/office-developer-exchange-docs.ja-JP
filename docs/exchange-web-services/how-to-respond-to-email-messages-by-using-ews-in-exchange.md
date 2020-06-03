@@ -10,7 +10,7 @@ ms.openlocfilehash: 81599051f603654cdf8a50b789b37d7e76664a53
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44455710"
 ---
 # <a name="respond-to-email-messages-by-using-ews-in-exchange"></a>Exchange において EWS を使用してメール メッセージに応答する
@@ -33,7 +33,7 @@ EWS マネージ API には、メッセージへの応答に使用できる [ Re
   
 次のコード例は、**Reply** メソッドを使用してメール メッセージに応答する方法を示しています。 
   
-この例では、**service** が有効な [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 ローカル変数 *ItemId* は、対応するアイテムの [Id](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) です。 この例では、[FindRecentlySent メソッド](#bk_findlast)を呼び出して、メッセージに返信済みのマークが付けられたことを確認します。 
+この例では、**service** が有効な [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーから既に認証されていると想定しています。 ローカル変数 *ItemId* は、対応するアイテムの [Id](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) です。 この例では、[FindRecentlySent メソッド](#bk_findlast)を呼び出して、メッセージに返信済みのマークが付けられたことを確認します。 
   
 ```cs
 // As a best practice, limit the properties returned by the Bind method to only those that are required.

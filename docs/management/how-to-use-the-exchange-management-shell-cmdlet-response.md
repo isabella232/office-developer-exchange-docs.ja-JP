@@ -12,7 +12,7 @@ ms.openlocfilehash: c1b81356ab5dc288ab08287d47581871c36beb05
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44435703"
 ---
 # <a name="use-the-exchange-management-shell-cmdlet-response"></a>Exchange 管理シェルコマンドレットの応答を使用する

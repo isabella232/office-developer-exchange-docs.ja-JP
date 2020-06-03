@@ -10,7 +10,7 @@ ms.openlocfilehash: 6be638c17cc0e0c86fa6b4217169aa7259dfd4aa
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44456865"
 ---
 # <a name="create-all-day-events-by-using-ews-in-exchange"></a>Exchange で EWS を使用して終日イベントを作成する

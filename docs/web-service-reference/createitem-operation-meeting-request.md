@@ -16,7 +16,7 @@ ms.openlocfilehash: f9e6bd1742e6a30d08736ea67c0ff80b7a18e88a
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457110"
 ---
 # <a name="createitem-operation-meeting-request"></a>CreateItem 操作 (会議出席依頼)
@@ -29,7 +29,7 @@ CreateItem 操作には、会議出席依頼に返信するための3つのオ�
   
 ## <a name="accept-meeting-request-example"></a>会議出席依頼の承諾の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、会議出席依頼の招待を承諾する方法を示しています。
   
@@ -73,7 +73,7 @@ CreateItem 操作には、会議出席依頼に返信するための3つのオ�
     
 ## <a name="successful-accept-meeting-response-example"></a>正常な会議の応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、CreateItem 要求に対する正常な応答を示しています。
   
@@ -121,7 +121,7 @@ CreateItem 操作には、会議出席依頼に返信するための3つのオ�
     
 ## <a name="accept-meeting-error-response-example"></a>会議エラー応答の承諾の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、CreateItem 要求へのエラー応答を示しています。 このエラーは、Exchange ストアに存在しない会議出席依頼を承諾しようとしたために発生します。
   
@@ -177,8 +177,7 @@ CreateItem 操作には、会議出席依頼に返信するための3つのオ�
 
 
 
-
-  [CreateItem 操作](createitem-operation.md)
+[CreateItem 操作](createitem-operation.md)
   
 [CreateItem 操作 (予定表アイテム)](createitem-operation-calendar-item.md)
 

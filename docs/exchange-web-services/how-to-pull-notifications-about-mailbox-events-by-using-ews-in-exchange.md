@@ -10,7 +10,7 @@ ms.openlocfilehash: 3d77c0d4efb8fc853eea64ff2429af5c3dbead27
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44456742"
 ---
 # <a name="pull-notifications-about-mailbox-events-by-using-ews-in-exchange"></a>Exchange の EWS を使用してメールボックス イベントに関する通知を取得する
@@ -141,9 +141,9 @@ GetEventsResults events = subscription.GetEvents();
     
 - [Exchange での EWS を使用したメールボックス イベントに関するストリーム通知](how-to-stream-notifications-about-mailbox-events-by-using-ews-in-exchange.md)
     
-- [サブスクリプション グループと Exchange のメールボックス サーバー間のアフィニティを維持する](how-to-maintain-affinity-between-group-of-subscriptions-and-mailbox-server.md)
+- [Exchange の購読グループとメールボックス サーバー間のアフィニティを維持する](how-to-maintain-affinity-between-group-of-subscriptions-and-mailbox-server.md)
     
-- [Exchange の EWS における、通知関連エラーの処理](handling-notification-related-errors-in-ews-in-exchange.md)
+- [Exchange における EWS での通知関連エラーの処理](handling-notification-related-errors-in-ews-in-exchange.md)
     
 - [Exchange のメールボックス同期と EWS](mailbox-synchronization-and-ews-in-exchange.md)
     

@@ -16,7 +16,7 @@ ms.openlocfilehash: e9bb9199027c2af2cbbb664ef7ad4fa70b7ef718
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44455745"
 ---
 # <a name="deletefolder-operation"></a>DeleteFolder 操作
@@ -25,7 +25,7 @@ ms.locfileid: "44455745"
   
 ## <a name="deletefolder-request-example"></a>DeleteFolder 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の**deletefolder**要求の例は、フォルダーを削除する要求を形成する方法を示しています。 
   
@@ -71,7 +71,7 @@ ms.locfileid: "44455745"
   
 ## <a name="successful-deletefolder-response"></a>正常な DeleteFolder 応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、 **Deletefolder**要求に対する正常な応答を示しています。 
   
@@ -118,7 +118,7 @@ ms.locfileid: "44455745"
   
 ## <a name="deletefolder-error-response"></a>DeleteFolder エラー応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、 **Deletefolder**要求に対するエラー応答を示しています。 このエラーは、メールボックスに存在しないフォルダーを削除する要求が原因で発生しました。 
   

@@ -16,7 +16,7 @@ ms.openlocfilehash: e6f5ee8a1130d7c040f3ddd94021eff6d4a758b0
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44455675"
 ---
 # <a name="deleteitemfield"></a>DeleteItemField
@@ -86,6 +86,5 @@ ms.locfileid: "44455675"
    
 ## <a name="see-also"></a>関連項目
 
-- 
-  [UpdateItem 操作](updateitem-operation.md)
+- [UpdateItem 操作](updateitem-operation.md)
 

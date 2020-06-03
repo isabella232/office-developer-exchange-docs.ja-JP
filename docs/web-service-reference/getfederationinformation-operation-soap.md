@@ -13,7 +13,7 @@ ms.openlocfilehash: 533b2f6d282e3287f4945df56b169f5bc93ff445
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44455626"
 ---
 # <a name="getfederationinformation-operation-soap"></a>GetFederationInformation 操作 (SOAP)
@@ -24,7 +24,7 @@ ms.locfileid: "44455626"
   
 ## <a name="getfederationinformation-request-example"></a>GetFederationInformation 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 **GetFederationInformation**要求の次の例は、ユーザーのフェデレーション情報の要求を示しています。 クライアントは、この要求をサーバーに送信します。 
   
@@ -72,7 +72,7 @@ ms.locfileid: "44455626"
     
 ## <a name="getfederationinformation-response-example"></a>GetFederationInformation response の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、サーバーがクライアントに送信する**GetFederationInformation**要求に対する正常な応答を示しています。 
   

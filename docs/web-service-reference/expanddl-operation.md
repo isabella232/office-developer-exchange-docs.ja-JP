@@ -16,7 +16,7 @@ ms.openlocfilehash: 8edaf057538e2c1136465f0ff7937c14477b2c47
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44454051"
 ---
 # <a name="expanddl-operation"></a>ExpandDL 操作
@@ -58,7 +58,7 @@ ExpandDL 操作では、Exchange .asmx に配置されている Web サービス
   
 ## <a name="expanddl-private-distribution-list-request-example"></a>ExpandDL プライベート配布リスト要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の ExpandDL 要求の例は、プライベート配布リストを展開するための要求を形成する方法を示しています。
   
@@ -86,7 +86,7 @@ ExpandDL 操作では、Exchange .asmx に配置されている Web サービス
   
 ## <a name="expanddl-public-distribution-list-request-example"></a>ExpandDL パブリック配布リスト要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の ExpandDL 要求の例は、パブリック配布リストを展開するための要求を形成する方法を示しています。 この例では、表示名を使用して配布リストを展開する方法を示します。
   
@@ -126,7 +126,7 @@ ExpandDL 操作では、Exchange .asmx に配置されている Web サービス
   
 ## <a name="successful-expanddl-response-example"></a>Successful ExpandDL 応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次に示す ExpandDL 応答の例は、上記の要求に対する応答を示しています。 配布リストの展開では、以下について説明します。 
   
@@ -221,7 +221,7 @@ ExpandDL 操作の応答メッセージに関するその他のオプション�
   
 ## <a name="expanddl-error-response"></a>ExpandDL エラー応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、ExpandDL 要求に対するエラー応答を示しています。
   

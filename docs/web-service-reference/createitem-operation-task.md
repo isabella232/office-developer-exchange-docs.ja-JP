@@ -16,7 +16,7 @@ ms.openlocfilehash: 502108843193e7ed8377b0fade9e106ef3d1976c
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457103"
 ---
 # <a name="createitem-operation-task"></a>CreateItem 操作 (タスク)
@@ -25,7 +25,7 @@ CreateItem 操作は、Exchange ストアにタスクアイテムを作成しま
   
 ## <a name="task-createitem-request"></a>Task CreateItem 要求
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の CreateItem 要求の例は、メールボックス内のタスクアイテムを作成する方法を示しています。
   
@@ -85,9 +85,9 @@ CreateItem 操作は、Exchange ストアにタスクアイテムを作成しま
     
 - [アイテム (非 Emptyarrayofallitemstype)](items-nonemptyarrayofallitemstype.md)
     
-- [Task](task.md)
+- [タスク](task.md)
     
-- [[件名]](subject.md)
+- [件名](subject.md)
     
 - [DueDate](duedate.md)
     
@@ -95,7 +95,7 @@ CreateItem 操作は、Exchange ストアにタスクアイテムを作成しま
     
 ## <a name="successful-task-createitem-response"></a>成功したタスクの CreateItem 応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、CreateItem 要求に対する正常な応答を示しています。
   
@@ -145,7 +145,7 @@ CreateItem 操作は、Exchange ストアにタスクアイテムを作成しま
     
 - [アイテム (非 Emptyarrayofallitemstype)](items-nonemptyarrayofallitemstype.md)
     
-- [Task](task.md)
+- [タスク](task.md)
     
 - [ItemId](itemid.md)
     
@@ -153,8 +153,7 @@ CreateItem 操作は、Exchange ストアにタスクアイテムを作成しま
 
 
 
-
-  [CreateItem 操作](createitem-operation.md)
+[CreateItem 操作](createitem-operation.md)
 
 
 [タスクの作成](https://msdn.microsoft.com/library/0ef97334-e8a0-4f67-a23a-dd9e2bbad49f%28Office.15%29.aspx)

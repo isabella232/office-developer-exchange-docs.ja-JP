@@ -10,7 +10,7 @@ ms.openlocfilehash: e25f1a49a430e8c95829d404fa53451b76cab167
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44455871"
 ---
 # <a name="set-folder-permissions-for-another-user-by-using-ews-in-exchange"></a>Exchange で EWS を使用して別のユーザーのフォルダーのアクセス許可を設定する
@@ -82,7 +82,7 @@ Exchange で EWS マネージ API または EWS を使用して、フォルダ�
 |PublishingAuthor (出版著者)  <br/> |True  <br/> |True  <br/> |False  <br/> |True  <br/> |False  <br/> |Owned (所有)  <br/> |Owned (所有)  <br/> |FullDetails  <br/> |
 |Author (著者)  <br/> |True  <br/> |正しくない  <br/> |False  <br/> |True  <br/> |False  <br/> |Owned (所有)  <br/> |Owned (所有)  <br/> |FullDetails  <br/> |
 |NoneditingAuthor (非編集著者)  <br/> |True  <br/> |正しくない  <br/> |False  <br/> |True  <br/> |正しくない  <br/> |None (なし)  <br/> |Owned (所有)  <br/> |FullDetails  <br/> |
-|Reviewer (校閲者)  <br/> |False  <br/> |正しくない  <br/> |False  <br/> |True  <br/> |False  <br/> |なし  <br/> |なし  <br/> |FullDetails  <br/> |
+|Reviewer (校閲者)  <br/> |False  <br/> |正しくない  <br/> |False  <br/> |True  <br/> |正しくない  <br/> |なし  <br/> |なし  <br/> |FullDetails  <br/> |
 |Contributor (投稿者)  <br/> |True  <br/> |False  <br/> |False  <br/> |True  <br/> |False  <br/> |なし  <br/> |なし  <br/> |なし  <br/> |
    
 フォルダー レベルのアクセス許可の要求でカスタム以外のアクセス許可レベルを指定する場合、個別アクセス許可の設定を指定する必要はありません。 アクセス許可レベルを設定する場合、個別アクセス許可を指定すると、応答で **ErrorInvalidPermissionSettings** エラーが返されます。 

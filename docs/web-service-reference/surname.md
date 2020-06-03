@@ -16,7 +16,7 @@ ms.openlocfilehash: cc3c9ca89757735c5aa5cb9e335486f8daa07ccf
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44455927"
 ---
 # <a name="surname"></a>Surname
@@ -44,7 +44,7 @@ ms.locfileid: "44455927"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[連絡先](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
+|[Contact](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 

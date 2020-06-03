@@ -13,7 +13,7 @@ ms.openlocfilehash: 30f6a5c2c6e3034fde8849ab1fced3519029b1f9
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44448976"
 ---
 # <a name="response-pox"></a>応答 (POX)

@@ -16,7 +16,7 @@ ms.openlocfilehash: 6c593e0d6e8820452bb27a6baa569980e329ef10
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44455738"
 ---
 # <a name="deletefolderresponsemessage"></a>DeleteFolderResponseMessage
@@ -86,8 +86,7 @@ ms.locfileid: "44455738"
 ## <a name="see-also"></a>関連項目
 
 - [DeleteFolder 操作](deletefolder-operation.md)
-- 
-  [Exchange 用 EWS リファレンス](ews-reference-for-exchange.md)
+- [Exchange 用 EWS リファレンス](ews-reference-for-exchange.md)
 - [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 - [フォルダーの削除](https://msdn.microsoft.com/library/1958add5-5071-4239-adb2-40f7a7d74aee%28Office.15%29.aspx)
 

@@ -16,7 +16,7 @@ ms.openlocfilehash: e1d78392b94d328cf687655cd93e6c9568f6274f
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457124"
 ---
 # <a name="createitem-operation-contact"></a>CreateItem 操作 (連絡先)
@@ -29,7 +29,7 @@ CreateItem 操作は、Exchange ストアで連絡先を作成するために使
   
 ## <a name="createitem-request-example"></a>CreateItem 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の有効な CreateItem SOAP 要求の例は、既定の連絡先フォルダーに連絡先を作成する方法を示しています。
   
@@ -86,7 +86,7 @@ CreateItem 操作は、Exchange ストアで連絡先を作成するために使
     
 - [アイテム (非 Emptyarrayofallitemstype)](items-nonemptyarrayofallitemstype.md)
     
-- [連絡先](contact.md)
+- [Contact](contact.md)
     
 - [FileAs](fileas.md)
     
@@ -120,7 +120,7 @@ CreateItem 操作は、Exchange ストアで連絡先を作成するために使
     
 ## <a name="successful-createitem-request"></a>成功した CreateItem 要求
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、連絡先を作成した CreateItem 要求に対する正常な応答を示しています。 この例では、応答に新しく作成されたアイテムの識別子が含まれています。
   
@@ -174,13 +174,13 @@ CreateItem 操作は、Exchange ストアで連絡先を作成するために使
     
 - [アイテム (非 Emptyarrayofallitemstype)](items-nonemptyarrayofallitemstype.md)
     
-- [連絡先](contact.md)
+- [Contact](contact.md)
     
 - [ItemId](itemid.md)
     
 ## <a name="invalid-createitem-request-example"></a>無効な CreateItem 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、有効な XML で互換性のない命令を含む要求を示しています。 検索フォルダーに連絡先を作成することはできません。
   
@@ -208,7 +208,7 @@ CreateItem 操作は、Exchange ストアで連絡先を作成するために使
 
 ## <a name="createitem-contact-error-response"></a>CreateItem (Contact) エラー応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、CreateItem (Contact) 要求に対するエラー応答を示しています。
   
@@ -264,6 +264,5 @@ CreateItem 操作は、Exchange ストアで連絡先を作成するために使
 
 
 
-
-  [CreateItem 操作](createitem-operation.md)
+[CreateItem 操作](createitem-operation.md)
 

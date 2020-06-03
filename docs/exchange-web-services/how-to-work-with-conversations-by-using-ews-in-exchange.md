@@ -10,7 +10,7 @@ ms.openlocfilehash: 2dc66195f8d37836c32fc33737728c61fc5444ae
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44456789"
 ---
 # <a name="work-with-conversations-by-using-ews-in-exchange"></a>Exchange において EWS を使用して会話を処理する
@@ -192,7 +192,7 @@ static void FindConversation(ExchangeService service)
 
 次の例に示すように、いくつかの EWS マネージ API メソッドを使用して、会話の操作を会話に適用できます。この例では、会話の既存のアイテムにカテゴリを追加し、会話の将来のアイテムに同じカテゴリを適用します。また、フォルダーへの会話のアイテムの自動移動を有効にする方法も示します。この例では、アイテムが [下書き] フォルダーに移動されます。
   
-この例では、**service** が有効な [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
+この例では、**service** が有効な [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーから既に認証されていると想定しています。 
   
 会話の操作を適用するメソッドの完全な一覧については、表 2 を参照してください。
   

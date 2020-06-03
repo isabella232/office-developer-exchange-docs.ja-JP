@@ -16,7 +16,7 @@ ms.openlocfilehash: 1c7ad2413064161ba54e8a7a30bfcd6f23f218bd
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44456431"
 ---
 # <a name="syncfolderhierarchy-operation"></a>SyncFolderHierarchy 操作
@@ -28,7 +28,7 @@ SyncFolderHierarchy 操作は、Microsoft Exchange Server 2010 とクライア�
   
 ## <a name="syncfolderhierarchy-request-example"></a>SyncFolderHierarchy 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の SyncFolderHierarchy 要求の例は、クライアントフォルダー階層を Exchange サーバーと同期する方法を示しています。 この例では、少なくとも1回同期されているフォルダー階層を示します。 クライアントと Exchange サーバーの同期を最初に試行する要求には、 [Syncstate](syncstate-ex15websvcsotherref.md)要素は含まれていません。 最初の要求では、メールボックス内のすべてのフォルダーが返されます。 [Syncstate](syncstate-ex15websvcsotherref.md)要素は、 [SyncFolderHierarchyResponse](syncfolderhierarchyresponse.md)で返されます。 この要素は、後続の SyncFolderHierarchy 要求の状態を同期するために使用されます。
   
@@ -70,7 +70,7 @@ SyncFolderHierarchy 操作は、Microsoft Exchange Server 2010 とクライア�
   
 ## <a name="successful-syncfolderhierarchy-response"></a>成功した SyncFolderHierarchy 応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、SyncFolderHierarchy 要求に対する正常な応答を示しています。 この例では、新しいフォルダーが同期されています。
   
@@ -159,7 +159,7 @@ SyncFolderHierarchy 操作は、Microsoft Exchange Server 2010 とクライア�
     
 ## <a name="syncfolderhierarchy-error-response"></a>SyncFolderHierarchy のエラー応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、SyncFolderHierarchy 要求に対するエラー応答を示しています。 このエラーは、無効な SyncState が原因で発生しました。
   
