@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 5ad37ceb-2922-4420-9051-c29d0d57c420
-description: SharingFolderId 要素は、共有の関係では、ローカル フォルダーの識別子を表します。
-ms.openlocfilehash: e0eb1fbd7155040508daf253f5eb4b1352d7426d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: SharingFolderId 要素は、共有関係のローカルフォルダーの識別子を表します。
+ms.openlocfilehash: 02780251639ee651ca65d8eadded43260852aaf8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833485"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526579"
 ---
 # <a name="sharingfolderid"></a>SharingFolderId
 
-**SharingFolderId**要素は、共有の関係では、ローカル フォルダーの識別子を表します。 
+**SharingFolderId**要素は、共有関係のローカルフォルダーの識別子を表します。 
   
 ```xml
 <SharingFolderId Id="" ChangeKey="" />
 ```
 
  **FolderIdType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -36,8 +36,8 @@ ms.locfileid: "19833485"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|ID  <br/> |Exchange ストア内のフォルダーを識別する文字列が含まれています。 この属性は、必要があります。  <br/> |
-|ChangeKey  <br/> |Id 属性によって識別されるフォルダーのバージョンを識別する文字列が含まれています。 この属性は、省略可能です。 フォルダーの正しいバージョンを使用するかどうかを確認するには、この属性を使用します。  <br/> |
+|ID  <br/> |Exchange ストア内のフォルダーを識別する文字列を格納します。 この属性は必須です。  <br/> |
+|ChangeKey  <br/> |Id 属性によって識別されるフォルダーのバージョンを識別する文字列を格納します。 この属性は省略可能です。 この属性を使用して、適切なバージョンのフォルダーが使用されていることを確認します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -47,26 +47,26 @@ ms.locfileid: "19833485"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[RefreshSharingFolder](refreshsharingfolder.md) <br/> |指定したローカル フォルダーを更新する要求を定義します。  <br/> |
-|[GetSharingFolderResponse](getsharingfolderresponse.md) <br/> |[GetSharingFolder 操作](getsharingfolder-operation.md)要求に対する応答を定義します。  <br/> |
-|[GetSharingFolderResponseMessage](getsharingfolderresponsemessage.md) <br/> |状態および 1 つの結果が含まれています[GetSharingFolder の操作](getsharingfolder-operation.md)を要求します。  <br/> |
+|[RefreshSharingFolder](refreshsharingfolder.md) <br/> |指定したローカルフォルダーを更新する要求を定義します。  <br/> |
+|[GetSharingFolderResponse](getsharingfolderresponse.md) <br/> |[Getsharingfolder 操作](getsharingfolder-operation.md)要求への応答を定義します。  <br/> |
+|[GetSharingFolderResponseMessage](getsharingfolderresponsemessage.md) <br/> |1つの[Getsharingfolder 操作](getsharingfolder-operation.md)要求の状態と結果を格納します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Microsoft Exchange Server を実行しているコンピューターの Exchange Web サービスをホストにクライアント アクセス サーバーの役割がインストールされている IIS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

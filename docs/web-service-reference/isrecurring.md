@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: f4df6997-8d5b-4893-a4a5-fc7047e0a9c3
-description: IsRecurring 要素では、予定表アイテム、会議出席依頼、またはタスクの定期的なアイテムの一部であるかどうかを示します。 この要素は、読み取り専用です。
-ms.openlocfilehash: dfb0c28fe225792c7128409a8cf010627c624fe0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: IsRecurring 要素は、予定表アイテム、会議出席依頼、またはタスクが定期的なアイテムの一部であるかどうかを示します。 この要素は値の取得のみ可能です。
+ms.openlocfilehash: 72c71c1955b69f1c0df855ce4bd0ed02d4c89122
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19832104"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526488"
 ---
 # <a name="isrecurring"></a>IsRecurring
 
-**IsRecurring**要素では、予定表アイテム、会議出席依頼、またはタスクの定期的なアイテムの一部であるかどうかを示します。 この要素は、読み取り専用です。 
+**Isrecurring**要素は、予定表アイテム、会議出席依頼、またはタスクが定期的なアイテムの一部であるかどうかを示します。 この要素は値の取得のみ可能です。 
   
 ```xml
 <IsRecurring/>
 ```
 
- **ブール型 (Boolean)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,58 +44,58 @@ ms.locfileid: "19832104"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[カレンダー項目](calendaritem.md) <br/> |Exchange 予定表アイテムを表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議出席依頼を表します。  <br/> |
 |[タスク](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-ブール値を表す文字列値は、必要があります。
+ブール値を表すテキスト値が必要です。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-次の表は、開催者と出席者と会議出席依頼と更新プログラムの別の予定表アイテムの種類に対して、 **IsRecurring**プロパティを設定する方法を示します。 
+次の表は、開催者と出席者、および会議出席依頼と更新について、さまざまな予定表アイテムの種類に対して**Isrecurring**プロパティを設定する方法を示しています。 
   
-|**カレンダー項目の種類**|**オーガナイザー <br/> (IsRecurring)**|**出席者<br/>(IsRecurring)**|**会議の更新の要求/ <br/> (IsRecurring)**|
+|**CalendarItem 型**|**開催者 <br/> (isrecurring)**|**出席者 <br/> (isrecurring)**|**会議出席依頼/更新 <br/> (isrecurring)**|
 |:-----|:-----|:-----|:-----|
-|1 回  <br/> |**FALSE** <br/> |**FALSE** <br/> |**FALSE** <br/> |
-|定期的なマスター  <br/> |**FALSE** <br/> |**場合は TRUE。** <br/> |**場合は TRUE。** <br/> |
-|定期的な例外  <br/> |**場合は TRUE。** <br/> |**場合は TRUE。** <br/> |**場合は TRUE。** <br/> |
+|単一の発生  <br/> |**FALSE** <br/> |**FALSE** <br/> |**FALSE** <br/> |
+|定期的なマスター  <br/> |**FALSE** <br/> |**FALSE** <br/> |**FALSE** <br/> |
+|定期的な例外  <br/> |**FALSE** <br/> |**FALSE** <br/> |**FALSE** <br/> |
    
-開催者の定期的なマスターの予定表のアイテムに設定されている**IsRecurring**プロパティの値が正しくありません。この値を**TRUE**に設定する必要があります。 
+開催者の定期的なマスター予定表アイテムに対して設定されている**Isrecurring**なプロパティの値が正しくありません。この値は**TRUE**に設定する必要があります。 
   
 > [!NOTE]
-> GetUserAvailability 操作では、 [IsRecurring (CalendarEventDetails)](isrecurring-calendareventdetails.md)の要素もあります。 
+> GetUserAvailability 操作には、 [Isrecurring (CalendarEventDetails)](isrecurring-calendareventdetails.md)要素もあります。 
   
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[TaskType.IsRecurring](https://msdn.microsoft.com/library/ExchangeWebServices.TaskType.IsRecurring.aspx)
+[TaskType IsRecurring](https://msdn.microsoft.com/library/ExchangeWebServices.TaskType.IsRecurring.aspx)
   
-[CalendarEventDetails.IsRecurring](https://msdn.microsoft.com/library/ExchangeWebServices.CalendarEventDetails.IsRecurring.aspx)
+[CalendarEventDetails](https://msdn.microsoft.com/library/ExchangeWebServices.CalendarEventDetails.IsRecurring.aspx)
   
-[CalendarItemType.IsRecurring](https://msdn.microsoft.com/library/ExchangeWebServices.CalendarItemType.IsRecurring.aspx)
+[CalendarItemType](https://msdn.microsoft.com/library/ExchangeWebServices.CalendarItemType.IsRecurring.aspx)
   
-[MeetingRequestMessageType.IsRecurring](https://msdn.microsoft.com/library/ExchangeWebServices.MeetingRequestMessageType.IsRecurring.aspx)
+[会議の要求の Messagetype。 IsRecurring](https://msdn.microsoft.com/library/ExchangeWebServices.MeetingRequestMessageType.IsRecurring.aspx)
   
-[CalendarItemType.IsRecurringSpecified](https://msdn.microsoft.com/library/ExchangeWebServices.CalendarItemType.IsRecurringSpecified.aspx)
+[CalendarItemType](https://msdn.microsoft.com/library/ExchangeWebServices.CalendarItemType.IsRecurringSpecified.aspx)
   
-[MeetingRequestMessageType.IsRecurringSpecified](https://msdn.microsoft.com/library/ExchangeWebServices.MeetingRequestMessageType.IsRecurringSpecified.aspx)
+[会議の IsRecurringSpecified](https://msdn.microsoft.com/library/ExchangeWebServices.MeetingRequestMessageType.IsRecurringSpecified.aspx)
   
-[TaskType.IsRecurringSpecified](https://msdn.microsoft.com/library/ExchangeWebServices.TaskType.IsRecurringSpecified.aspx)
+[IsRecurringSpecified](https://msdn.microsoft.com/library/ExchangeWebServices.TaskType.IsRecurringSpecified.aspx)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

@@ -16,7 +16,7 @@ ms.openlocfilehash: 1a28d895eda11dd43f77ec2662a60a426cfc463c
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44468146"
 ---
 # <a name="syncfolderitems-operation"></a>SyncFolderItems 操作
@@ -31,7 +31,7 @@ SyncFolderItems は FindItem 操作に似ていますが、本文や添付ファ
   
 ## <a name="syncfolderitems-request-example"></a>SyncFolderItems 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の SyncFolderItems 要求の例は、フォルダー内のアイテムを同期する方法を示しています。 この例では、[送信済みアイテム] フォルダーに対して行われた最初の同期ではないフォルダーアイテムの同期を示します。 クライアントと Exchange サーバーの同期を最初に試行する要求には、 [Syncstate](syncstate-ex15websvcsotherref.md)要素は含まれていません。 フォルダー階層内のアイテムを最初に同期しようとすると、そのメールボックス内のすべてのアイテムが返されます。[無視](ignore.md)要素で識別されるアイテムは除きます。 この SyncFolderItems 要求は、前回の同期以降のフォルダーアイテムへのすべての変更を同期しようとします。 この要求は、 [ignore](ignore.md)要素で識別される1つのアイテムを同期しようとする試行を無視します。 
   
@@ -87,7 +87,7 @@ SyncFolderItems は FindItem 操作に似ていますが、本文や添付ファ
     
 ## <a name="successful-syncfolderitems-response"></a>正常な SyncFolderItems 応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、SyncFolderItems 要求に対する正常な応答を示しています。 この例では、[送信済みアイテム] フォルダーから会議出席依頼が同期されます。
   
@@ -172,7 +172,7 @@ SyncFolderItems は FindItem 操作に似ていますが、本文や添付ファ
     
 - [ItemId](itemid.md)
     
-- [[件名]](subject.md)
+- [件名](subject.md)
     
 - [Sensitivity](sensitivity.md)
     
@@ -202,7 +202,7 @@ SyncFolderItems は FindItem 操作に似ていますが、本文や添付ファ
     
 ## <a name="syncfolderitems-error-response"></a>SyncFolderItems エラー応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、SyncFolderItems 要求に対するエラー応答を示しています。 このエラーは、無効な SyncState が原因で発生しました。
   

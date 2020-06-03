@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 9e2d3433-22d7-444b-9883-e5649297d8fe
-description: InvalidRecipient 要素には、受信者が有効な理由については、無効な受信者の SMTP アドレスが含まれています。
-ms.openlocfilehash: 800056666e486e9337dcd1c2786f7e6db1e060bb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: InvalidRecipient 要素には、無効な受信者の SMTP アドレスと、受信者が無効である理由に関する情報が含まれています。
+ms.openlocfilehash: f301b31c1054625151ce90e41fca5e3efc21f473
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831961"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526551"
 ---
 # <a name="invalidrecipient"></a>InvalidRecipient
 
-**InvalidRecipient**要素には、受信者が有効な理由については、無効な受信者の SMTP アドレスが含まれています。 
+**Invalidrecipient**要素には、無効な受信者の SMTP アドレスと、受信者が無効である理由に関する情報が含まれています。 
   
 ```XML
 <InvalidRecipient>
@@ -32,8 +32,8 @@ ms.locfileid: "19831961"
 
 ```
 
- **InvalidRecipientType**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Invalid受信者の種類**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -43,30 +43,30 @@ ms.locfileid: "19831961"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[SmtpAddress](smtpaddress.md) <br/> |無効な受信者の SMTP アドレスが含まれています。 この要素は必須です。  <br/> |
-|[ResponseCode (InvalidRecipientResponseCodeType)](responsecode-invalidrecipientresponsecodetype.md) <br/> |要求で発生した特定のエラーを識別するエラー コードを提供します。 この要素は必須です。  <br/> |
-|[MessageText](messagetext.md) <br/> |応答のステータスの説明を提供します。 この要素はオプションです。  <br/> |
+|[SmtpAddress](smtpaddress.md) <br/> |無効な受信者の SMTP アドレスを含みます。 この要素は必須です。  <br/> |
+|[応答 Secmode (Invalid受信者応答 Secodetype)](responsecode-invalidrecipientresponsecodetype.md) <br/> |要求で発生した特定のエラーを識別するエラーコードを提供します。 この要素は必須です。  <br/> |
+|[MessageText](messagetext.md) <br/> |応答の状態を説明するテキストを提供します。 この要素は省略できます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[InvalidRecipients](invalidrecipients.md) <br/> |無効な要求を共有フォルダーの受信者を表します。  <br/> |
+|[InvalidRecipients](invalidrecipients.md) <br/> |無効なフォルダー共有要求の受信者を表します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -75,5 +75,5 @@ ms.locfileid: "19831961"
 [GetSharingMetadata 操作](getsharingmetadata-operation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

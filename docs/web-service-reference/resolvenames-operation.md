@@ -16,7 +16,7 @@ ms.openlocfilehash: 51728addddd2bfb9d35b874ae8c11e83a4c8629b
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44468279"
 ---
 # <a name="resolvenames-operation"></a>ResolveNames 操作
@@ -37,7 +37,7 @@ Smtp、sip などのプレフィックス付きルーティングタイプを持
   
 ## <a name="resolvenames-request-example"></a>ResolveNames 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の**ResolveNames**要求の例は、ユーザーのエントリを解決する方法を示しています。
   
@@ -84,7 +84,7 @@ Smtp、sip などのプレフィックス付きルーティングタイプを持
     
 ## <a name="successful-resolvenames-operation-response-example"></a>成功した ResolveNames 操作の応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、 **ResolveNames**要求に対する正常な応答を示しています。 
   
@@ -158,7 +158,7 @@ Smtp、sip などのプレフィックス付きルーティングタイプを持
     
 - [MailboxType](mailboxtype.md)
     
-- [連絡先](contact.md)
+- [Contact](contact.md)
     
 - [DisplayName (文字列)](displayname-string.md)
     
@@ -170,7 +170,7 @@ Smtp、sip などのプレフィックス付きルーティングタイプを持
     
 ## <a name="resolvenames-operation-error-response"></a>ResolveNames 操作エラー応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、 **ResolveNames**要求に対するエラー応答を示しています。 解決できない名前を解決しようとすると、エラーが発生します。 
   

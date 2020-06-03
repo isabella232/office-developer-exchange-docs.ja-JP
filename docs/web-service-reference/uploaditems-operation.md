@@ -16,7 +16,7 @@ ms.openlocfilehash: 57e722c7775baa090736875077781cee869c3b01
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44468503"
 ---
 # <a name="uploaditems-operation"></a>UploadItems 操作
@@ -28,7 +28,7 @@ ms.locfileid: "44468503"
   
 ## <a name="uploaditems-request-example"></a>UploadItems 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の**UploadItems**要求の例は、2つのアイテムをメールボックスにアップロードする方法を示しています。 最初のアイテムは新しいアイテムです。 2番目のアイテムは、メールボックス内の既存のアイテムの更新バージョンです。 
   
@@ -102,7 +102,7 @@ ms.locfileid: "44468503"
     
 ## <a name="successful-uploaditems-response-example"></a>Successful UploadItems response の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、 **UploadItems**要求に対する正常な応答を示しています。 
   
@@ -163,7 +163,7 @@ ms.locfileid: "44468503"
     
 ## <a name="uploaditems-error-response-example"></a>UploadItems エラー応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、 **UploadItems**要求に対する応答を示しています。これは、メールボックス内に見つからないアイテムを更新しようとしたために発生したエラーを含んでいます。 
   

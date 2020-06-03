@@ -1,5 +1,5 @@
 ---
-title: Interval
+title: Interval/間隔
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: d0c97a5f-96be-40c6-b7d4-abf4c3870adf
-description: 間隔の要素は、連続する 2 つの定期的なアイテムの間隔を定義します。
-ms.openlocfilehash: 55d26b5b1b51aca3effa93a2e6852c1ae57ef4b0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Interval 要素は、連続する2つのアイテム間の間隔を定義します。
+ms.openlocfilehash: 70a41cfc438f057cbe11d792f0004d46d0abcc85
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19831962"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526565"
 ---
-# <a name="interval"></a>Interval
+# <a name="interval"></a>Interval/間隔
 
-**間隔**の要素は、連続する 2 つの定期的なアイテムの間隔を定義します。 
+**Interval**要素は、連続する2つのアイテム間の間隔を定義します。 
   
 ```xml
 <Interval/>
 ```
 
  **int**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -45,34 +45,34 @@ ms.locfileid: "19831962"
 |**要素**|**説明**|
 |:-----|:-----|
 |[AbsoluteMonthlyRecurrence](absolutemonthlyrecurrence.md) <br/> |1 か月ごと。  <br/> |
-|[DailyRegeneration](dailyregeneration.md) <br/> |日後にタスクが再生成される頻度を説明します。  <br/> |
-|[DailyRecurrence](dailyrecurrence.md) <br/> |頻度を日数でタスクが繰り返し発生するについて説明します。  <br/> |
-|[MonthlyRegeneration](monthlyregeneration.md) <br/> |月のタスクが再生成される頻度を説明します。  <br/> |
-|[RelativeMonthlyRecurrence](relativemonthlyrecurrence.md) <br/> |定期的なタスクの相対的な月単位のパターンについて説明します。  <br/> |
-|[WeeklyRecurrence](weeklyrecurrence.md) <br/> |週単位、およびタスクが繰り返し発生する日は、頻度について説明します。  <br/> |
-|[WeeklyRegeneration](weeklyregeneration.md) <br/> |週間後、タスクが再生成される頻度を説明します。  <br/> |
-|[YearlyRegeneration](yearlyregeneration.md) <br/> |年間で、タスクが再生成される頻度を説明します。  <br/> |
+|[DailyRegeneration](dailyregeneration.md) <br/> |タスクが再生成される頻度 (日単位) を表します。  <br/> |
+|[DailyRecurrence](dailyrecurrence.md) <br/> |タスクが繰り返される頻度 (日単位) を表します。  <br/> |
+|[月の明示再生](monthlyregeneration.md) <br/> |タスクが再生成される頻度 (月単位) を表します。  <br/> |
+|[RelativeMonthlyRecurrence](relativemonthlyrecurrence.md) <br/> |定期的なタスクの相対月パターンを表します。  <br/> |
+|[WeeklyRecurrence](weeklyrecurrence.md) <br/> |頻度 (週単位) と、タスクが繰り返される曜日を表します。  <br/> |
+|[WeeklyRegeneration](weeklyregeneration.md) <br/> |タスクが再生成される頻度 (週単位) を表します。  <br/> |
+|[YearlyRegeneration](yearlyregeneration.md) <br/> |タスクが再生成される頻度 (年単位) を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-整数値を表す文字列値は、必要があります。
+整数を表すテキスト値が必要です。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空にすることができます。  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空にすることができます。  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

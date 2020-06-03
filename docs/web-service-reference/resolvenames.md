@@ -16,7 +16,7 @@ ms.openlocfilehash: 9c36a5f84451f91e90a8e7148cf384b5cacd7f29
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44467950"
 ---
 # <a name="resolvenames"></a>ResolveNames
@@ -64,7 +64,7 @@ ms.locfileid: "44467950"
 |**値**|**説明**|
 |:-----|:-----|
 |IdOnly  <br/> |連絡先アイテムの識別子のプロパティが返されます。  <br/> |
-|既定  <br/> |連絡先アイテムのプロパティの既定のセットが返されます。 詳細については、「 [EWS での応答の図形](https://msdn.microsoft.com/library/1c5ddc0a-c4e0-4488-8972-7543b5b464df%28Office.15%29.aspx)」を参照してください。  <br/> |
+|既定値  <br/> |連絡先アイテムのプロパティの既定のセットが返されます。 詳細については、「 [EWS での応答の図形](https://msdn.microsoft.com/library/1c5ddc0a-c4e0-4488-8972-7543b5b464df%28Office.15%29.aspx)」を参照してください。  <br/> |
 |AllProperties  <br/> |連絡先アイテムのプロパティの AllProperties セットが返されます。 詳細については、「 [EWS での応答の図形](https://msdn.microsoft.com/library/1c5ddc0a-c4e0-4488-8972-7543b5b464df%28Office.15%29.aspx)」を参照してください。  <br/> |
    
 ### <a name="child-elements"></a>子要素

@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 2d7be675-626c-4173-89e9-e32beef81ad5
-description: TokenIssuer 要素は、セキュリティ トークン サービスの Uri (SOAP) または端点 (SOAP) を指定します。
-ms.openlocfilehash: 1c267fc6cbfdadd471c568473cc9aeeafb43ae2d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: TokenIssuer 要素は、security token service の Uri (SOAP) とエンドポイント (SOAP) を指定します。
+ms.openlocfilehash: e9c0b4140de26c7ff05daf4e863b3e8a17fedc62
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839708"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526327"
 ---
 # <a name="tokenissuer-soap"></a>TokenIssuer (SOAP)
 
-**TokenIssuer**要素は、セキュリティ トークン サービスの[Uri (SOAP)](uri-soap.md)または[端点 (SOAP)](endpoint-soap.md)を指定します。 
+**Tokenissuer**要素は、security token Service の[Uri (Soap)](uri-soap.md)と[エンドポイント (soap)](endpoint-soap.md)を指定します。 
   
 ```XML
 <TokenIssuer>
@@ -26,7 +26,7 @@ ms.locfileid: "19839708"
 ```
 
  **TokenIssuer**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -36,35 +36,35 @@ ms.locfileid: "19839708"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[Uri (SOAP)](uri-soap.md) <br/> |セキュリティ トークンを発行したセキュリティ トークン サービスの URI。  <br/> |
-|[エンドポイント (SOAP)](endpoint-soap.md) <br/> |Web サービス エンドポイントの URI です。  <br/> |
+|[Uri (SOAP)](uri-soap.md) <br/> |セキュリティトークンを発行したセキュリティトークンサービスの URI。  <br/> |
+|[エンドポイント (SOAP)](endpoint-soap.md) <br/> |Web サービスエンドポイント URI。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[TokenIssuers (SOAP)](tokenissuers-soap.md) <br/> |[エンドポイント (SOAP)](endpoint-soap.md)セキュリティ トークン サービスの[Uri (SOAP)](uri-soap.md)のコレクションを表します。  <br/> |
+|[TokenIssuers 者 (SOAP)](tokenissuers-soap.md) <br/> |セキュリティトークンサービス[Uri (soap)](uri-soap.md)と[エンドポイント (soap)](endpoint-soap.md)のコレクションを表します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**TokenIssuer**要素を使用して、セキュリティ トークンを使用する場合は、セキュリティ トークン サービスを指定します。 
+**Tokenissuer**要素を使用して、セキュリティトークンを使用するときにセキュリティトークンサービスを指定します。 
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|スキーマ名  <br/> |スキーマの自動検出  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |True  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|スキーマ名  <br/> |自動検出スキーマ  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しい  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[Exchange の自動検出 web サービスの参照](autodiscover-web-service-reference-for-exchange.md)
+[Exchange 用自動検出 Web サービス リファレンス](autodiscover-web-service-reference-for-exchange.md)
   
-[Exchange 2013 の自動検出の XML 要素を SOAP](soap-autodiscover-xml-elements-for-exchange-2013.md)
+[Exchange 2013 の SOAP 自動検出 XML 要素](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

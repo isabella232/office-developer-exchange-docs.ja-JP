@@ -16,7 +16,7 @@ ms.openlocfilehash: 63c80f3c8d7dabf7e6dc1494df04c0be821b28bf
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44468286"
 ---
 # <a name="resolution"></a>解決方法
@@ -54,7 +54,7 @@ ms.locfileid: "44468286"
 |**Element**|**説明**|
 |:-----|:-----|
 |[メールボックス](mailbox.md) <br/> |メールが有効な Active Directory ディレクトリサービスオブジェクトを識別します。  <br/> |
-|[連絡先](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
+|[Contact](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 

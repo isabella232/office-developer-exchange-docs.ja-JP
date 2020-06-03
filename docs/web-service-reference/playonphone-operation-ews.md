@@ -16,7 +16,7 @@ ms.openlocfilehash: 18af810160e72856599f296c4faa83cf9c73c393
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44467957"
 ---
 # <a name="playonphone-operation-ews"></a>PlayOnPhone 操作 (EWS)
@@ -25,7 +25,7 @@ ms.locfileid: "44467957"
   
 ## <a name="playonphone-request-example"></a>PlayOnPhone 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の**Playonphone**要求の例は、電話でメッセージを再生するための要求を形成する方法を示しています。 
   
@@ -52,7 +52,7 @@ ms.locfileid: "44467957"
 
 ## <a name="playonphone-response-example"></a>PlayOnPhone 応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、 **Playonphone**要求に対する正常な応答を示しています。 
   

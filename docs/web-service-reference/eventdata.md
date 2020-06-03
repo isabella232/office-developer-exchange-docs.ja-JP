@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 74acdbad-d6ee-47e6-82fb-e45ecaaa0500
 description: EventData 要素は、イベントの処理手順に関連付けられているデータを表します。
-ms.openlocfilehash: 2bf38cd4fd956580b31b6e455b947066f07f5593
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: ef5da21a3300a6939c60d62584b46ca48b071853
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760337"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526180"
 ---
 # <a name="eventdata"></a>EventData
 
@@ -30,7 +30,7 @@ ms.locfileid: "19760337"
 ```
 
  **ArrayOfStringsType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -40,36 +40,36 @@ ms.locfileid: "19760337"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
-|[String](string.md) <br/> |イベントを識別する文字列が含まれています。  <br/> |
+|[String](string.md) <br/> |イベントを識別する文字列を格納します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |受信者の 1 つのイベントの情報が含まれています。  <br/> |
+|[受信者 Trackingイベント](recipienttrackingevent.md) <br/> |受信者に対する1つのイベントに関する情報が含まれています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

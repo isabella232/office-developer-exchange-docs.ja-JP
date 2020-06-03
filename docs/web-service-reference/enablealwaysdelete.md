@@ -1,5 +1,5 @@
 ---
-title: EnableAlwaysDelete
+title: Enablealways Delete
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7753aec5-3f93-4aeb-a28e-8b9b42ca7f9b
-description: EnableAlwaysDelete 要素は、会話内のすべての新しいアイテムの削除を有効にするフラグを指定します。
-ms.openlocfilehash: f86765c641604afbf13ac962f4b34fbd8de56200
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Enablealways Delete 要素は、スレッド内のすべての新しいアイテムの削除を有効にするフラグを指定します。
+ms.openlocfilehash: 14784d3a6ba52c76b64b81e15c0522d66d125cbf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760278"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526208"
 ---
-# <a name="enablealwaysdelete"></a>EnableAlwaysDelete
+# <a name="enablealwaysdelete"></a>Enablealways Delete
 
-**EnableAlwaysDelete**要素は、会話内のすべての新しいアイテムの削除を有効にするフラグを指定します。 
+**Enablealways delete**要素は、スレッド内のすべての新しいアイテムの削除を有効にするフラグを指定します。 
   
 [ApplyConversationAction](applyconversationaction.md)
   
@@ -29,14 +29,14 @@ ms.locfileid: "19760278"
   
 [ConversationAction](conversationaction.md)
   
-[EnableAlwaysDelete](enablealwaysdelete.md)
+[Enablealways Delete](enablealwaysdelete.md)
   
 ```XML
 <EnableAlwaysDelete/>
 ```
 
- **xs:boolean**
-## <a name="attributes-and-elements"></a>属性および要素
+ **xs: boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -52,24 +52,24 @@ ms.locfileid: "19760278"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ConversationAction](conversationaction.md) <br/> |1 つのテーマを適用する 1 つのアクションが含まれています。  <br/> |
+|[ConversationAction](conversationaction.md) <br/> |単一の会話に適用される1つのアクションが含まれます。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**EnableAlwaysDelete**要素のテキスト値が**true**の通信でのすべての項目の削除を有効にするにはそれ以外の場合、 **false を指定**します。
+**Enablealways delete**要素のテキスト値は、スレッド内のすべてのアイテムの削除を有効にする**場合は true**です。それ以外の場合は**false**。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web Services.This の要素がホストをで Exchange Server 2010 Service Pack 1 (SP1) を導入する IIS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -16,7 +16,7 @@ ms.openlocfilehash: b7cf5325d925f8d6588115a8657a2077e940f9d2
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44468559"
 ---
 # <a name="updatedelegate-operation"></a>UpdateDelegate 操作
@@ -36,7 +36,7 @@ ms.locfileid: "44468559"
    
 ## <a name="updatedelegate-request-example"></a>UpdateDelegate 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の**updatedelegate**要求の例は、user1 アカウントの代理アクセス許可を更新する方法を示しています。 User2 には、タスクフォルダーの [なし] アクセス許可レベルが与えられており、プライベートアイテムを表示するためのアクセス許可が付与されています。 User3 には、ジャーナルフォルダーに対するレビュー担当者のアクセス許可が付与されます。 会議出席依頼は代理人に送信され、要求に関する情報は User1 に送信されます。 
   
@@ -86,7 +86,7 @@ ms.locfileid: "44468559"
   
 ## <a name="updatedelegate-response-example"></a>UpdateDelegate 応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、 **Updatedelegate**操作に対する正常な応答を示しています。 
   
@@ -143,7 +143,7 @@ ms.locfileid: "44468559"
 
 ## <a name="updatedelegate-error-response-example"></a>UpdateDelegate エラー応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、 **Updatedelegate**要求に対するエラー応答を示しています。 代理人がプリンシパルの委任リストに存在しないため、エラーが生成されました。 
   

@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: e2846abb-0b16-4732-bbd8-038a674672f6
 description: ExportItems 操作は、メールボックスからアイテムをエクスポートします。
-ms.openlocfilehash: 6f0760705c05de2a615544fe52ac50b398be6040
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 547a490a27d2414d2eda1d89cdac036a34eddccd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760383"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526047"
 ---
 # <a name="exportitems-operation"></a>ExportItems 操作
 
@@ -25,9 +25,9 @@ ms.locfileid: "19760383"
   
 ## <a name="exportitems-request-example"></a>ExportItems 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
-**ExportItems**要求の次の例では、メールボックスからエクスポートされた 3 つの項目を取得する要求を作成する方法を示します。 
+次の**ExportItems**要求の例は、メールボックスからエクスポートされた3つのアイテムを取得するための要求を形成する方法を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -36,8 +36,8 @@ ms.locfileid: "19760383"
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xmlns:xsd="http://www.w3.org/2001/XMLSchema"
       xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-      xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+      xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010_SP1" />
   </soap:Header>
@@ -53,27 +53,27 @@ ms.locfileid: "19760383"
 </soap:Envelope>
 ```
 
-### <a name="comment"></a>Comment
+### <a name="comment"></a>コメント
 
-アイテム識別子の例では、読みやすさを保持するために短縮されています。
+この例のアイテム識別子は読みやすいように短縮されています。
   
-### <a name="request-elements"></a>要素を要求します。
+### <a name="request-elements"></a>Request 要素
 
-次の要素は、要求で使用されます。
+要求では、次の要素が使用されます。
   
 - [RequestServerVersion](requestserverversion.md)
     
 - [ExportItems](exportitems.md)
     
-- [Itemid (NonEmptyArrayOfItemIdsType)](itemids-nonemptyarrayofitemidstype.md)
+- [ItemIds (非 Emptyarrayofitemidstype)](itemids-nonemptyarrayofitemidstype.md)
     
 - [ItemId](itemid.md)
     
-## <a name="successful-exportitems-response-example"></a>成功した ExportItems の応答の例
+## <a name="successful-exportitems-response-example"></a>Successful ExportItems response の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
-**ExportItems**要求に正常な応答の例を次に示します。 
+次の例は、 **ExportItems**要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -86,15 +86,15 @@ ms.locfileid: "19760383"
     MajorBuildNumber="139"
     MinorBuildNumber="0"
     Version="Exchange2010_SP1"
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-    xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+    xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:ExportItemsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:ExportItemsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:ExportItemsResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -147,13 +147,13 @@ ms.locfileid: "19760383"
 </s:Envelope>
 ```
 
-### <a name="comment"></a>Comment
+### <a name="comment"></a>コメント
 
-項目の識別子と変更キーを例には、読みやすさを保持するために短縮されています。
+この例のアイテム識別子と変更キーは、読みやすくするために短縮されています。
   
-### <a name="response-elements"></a>応答の要素
+### <a name="response-elements"></a>Response 要素
 
-次の要素は、応答で使用されます。
+応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -167,13 +167,13 @@ ms.locfileid: "19760383"
     
 - [ItemId](itemid.md)
     
-- [データ (base64Binary)](data-base64binary.md)
+- [Data (base64Binary)](data-base64binary.md)
     
 ## <a name="exportitems-error-response-example"></a>ExportItems エラー応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
-正常にエクスポートされたアイテムの 1 つと 2 つのエラーを保持する**ExportItems**要求への応答の例を次に示します。 例の最初の項目が正常にエクスポートされます。 2 番目の項目には、キー不正な変更にはが含まれています。 3 番目の項目は、問題のメールボックスからアイテムをエクスポートするのには試行を表します。 
+次の例は、2つのエラーと1つのアイテムが正常にエクスポートされた**ExportItems**要求への応答を示しています。 この例の最初の項目は正常にエクスポートされています。 2番目の項目に不適切な変更キーが含まれています。 3番目の項目は、誤ったメールボックスからアイテムをエクスポートしようとしたことを表します。 
   
 ### <a name="code"></a>コード
 
@@ -186,15 +186,15 @@ ms.locfileid: "19760383"
                          MajorBuildNumber="164" 
                          MinorBuildNumber="0" 
                          Version="Exchange2010_SP1" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:ExportItemsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                           xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:ExportItemsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                           xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:ExportItemsResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -229,9 +229,9 @@ ms.locfileid: "19760383"
 
 ### <a name="comments"></a>コメント
 
-項目の識別子、キーを変更して、データの例では、読みやすさを保持するために短縮されています。
+この例のアイテム識別子、変更キー、データは、読みやすくするために短縮されています。
   
-### <a name="error-response-elements"></a>エラー応答の要素
+### <a name="error-response-elements"></a>エラー応答要素
 
 エラー応答では、次の要素が使用されます。
   
@@ -247,7 +247,7 @@ ms.locfileid: "19760383"
     
 - [ItemId](itemid.md)
     
-- [データ (base64Binary)](data-base64binary.md)
+- [Data (base64Binary)](data-base64binary.md)
     
 - [MessageText](messagetext.md)
     
@@ -258,7 +258,7 @@ ms.locfileid: "19760383"
 - **値**
     
 > [!NOTE]
-> **値**要素がスキーマ内に存在しません。 この要素は、任意の整形式の XML を含めることができます[MessageXml](messagexml.md)要素は、**値**のインスタンスの要素が発生するために有効です。 
+> **Value**要素がスキーマに存在しません。 この要素は、**値**instance 要素が発生する[MessageXml](messagexml.md)要素が整形式の XML を含むことができるため、有効です。 
   
 ## <a name="see-also"></a>関連項目
 
@@ -267,7 +267,7 @@ ms.locfileid: "19760383"
 [UploadItems 操作](uploaditems-operation.md)
 
 
-[Exchange での EWS の操作](ews-operations-in-exchange.md)
+[Exchange での EWS 操作](ews-operations-in-exchange.md)
   
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

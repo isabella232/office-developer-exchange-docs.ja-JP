@@ -11,19 +11,19 @@ api_name:
 api_type:
 - dllExport
 ms.assetid: eed4d88b-8ac5-4c03-9ed9-e529e6072450
-description: '最終更新日: 2013 年 2 月 22 日'
-ms.openlocfilehash: a502371f596967be58b6ead61b4e435bba30be88
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: '最終更新日: 2013 年2月22日'
+ms.openlocfilehash: 7ec94e1dc0b68c055d4b908b19458ee4c38eb1aa
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758855"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526712"
 ---
 # <a name="cchksgfileserrgetheader-function-reserved"></a>CChkSGFiles.ErrGetHeader 関数 (予約済み)
 
-**に適用されます:** Exchange Server 2003年 |Exchange Server 2007年 |Exchange Server 2010年 |Exchange Server 2013
+**適用対象:** Exchange Server 2003 |Exchange Server 2007 |Exchange Server 2010 |Exchange Server 2013
   
-今後の使用のために予約されており、実装されていません。この関数を呼び出さないでください。  
+今後の使用のために予約されており、実装されていません。 この関数を呼び出さないでください。 
   
 ```cs
 Vitual ERRErrGetHeader  
@@ -36,7 +36,7 @@ Vitual ERRErrGetHeader
 
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>パラメーター
 
 ### <a name="wszfile"></a>wszFile
   
@@ -58,12 +58,12 @@ Vitual ERRErrGetHeader
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 なし。
   
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>Requirements
 
-Exchange Server 2013 には、CHKSGFILES API の 64 ビット バージョンにはのみが含まれます。
+Exchange Server 2013 には、CHKSGFILES API の64ビットバージョンのみが含まれています。
   
 

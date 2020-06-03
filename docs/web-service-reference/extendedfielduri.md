@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: b3c6ea3a-9ead-44b9-9d99-64ecf12bde23
 description: ExtendedFieldURI 要素は、拡張 MAPI プロパティを識別します。
-ms.openlocfilehash: 50ce46652863b0c534d09d58d4b9f7c8095deef2
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+ms.openlocfilehash: fd365010016c68236107991717ed538c97dc0d50
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353792"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526033"
 ---
 # <a name="extendedfielduri"></a>ExtendedFieldURI
 
@@ -29,7 +29,7 @@ ms.locfileid: "21353792"
 
 **PathToExtendedFieldType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -37,57 +37,59 @@ ms.locfileid: "21353792"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**DistinguishedPropertySetId** <br/> |よく知られている定義プロパティは、拡張 MAPI プロパティの Id を設定します。<br/><br/>この属性を使用する場合、 **PropertySetId**と**PropertyTag**の属性は使用できません。 **PropertyId**または**プロパティ名**のいずれかの属性、および**登録するとき**の属性とは、この属性を使用する必要があります。<br/><br/>このトピックの後半の**DistinguishedPropertySetId**の属性テーブルは、この属性の可能な値を示します。<br/><br/>この属性は、省略可能です。  <br/> |
-|**PropertySetId** <br/> |プロパティ セットまたは名前空間を識別する GUID で拡張 MAPI を識別します。<br/><br/>この属性を使用する場合、 **DistinguishedPropertySetId**と**PropertyTag**の属性は使用できません。 **PropertyId**または**プロパティ名**のいずれかの属性、および**登録するとき**の属性とは、この属性を使用する必要があります。<br/><br/>この属性は、省略可能です。  <br/> |
-|**PropertyTag** <br/> |タグの型部分のないプロパティ タグを識別します。 **PropertyTag**は、16 進数または短整数のいずれかとして表すことができます。<br/><br/>0x8000 から 0 xfffe までの間では、プロパティのカスタム範囲を表します。 メールボックス データベースでは、最初にカスタム プロパティを検出すると、0x8000-0 xfffe のカスタム プロパティ範囲内のプロパティ タグがそのカスタム プロパティで割り当てられます。 指定されたカスタム プロパティ タグは、データベース間でほとんどの場合によって異なります。 したがって、プロパティ タグによるカスタム プロパティ要求は異なるデータベースに異なるプロパティを返すことができます。 カスタム プロパティには、 **PropertyTag**属性の使用は禁止されています。 代わりに、 **PropertySetId**属性と**プロパティ名**または**PropertyId**属性を使用します。<br/><br/>**重要**: 0x8000 から 0 xfffe までの任意のカスタム プロパティの GUID と名前と id を使用してアクセス。 **PropertyTag**属性を使用する場合は、 **DistinguishedPropertySetId**、 **PropertySetId**、**プロパティ名**、および**PropertyId**属性を使用できません。<br/><br/>この属性は、省略可能です。<br/><br/>**注**: 0x8000-0 xfffe のユーザー設定の範囲内のプロパティのプロパティ タグの属性を使用することはできません。 ここでは名前付きプロパティを使用する必要があります。           |
-|**PropertyName** <br/> |名前を使用して拡張プロパティを識別します。 このプロパティは、 **DistinguishedPropertySetId**または**PropertySetId**のいずれかに結合する必要があります。<br/><br/>この属性を使用する場合、 **PropertyId**および**PropertyTag**属性は使用できません。<br/><br/>この属性は、省略可能です。  <br/> |
-|**PropertyId** <br/> |拡張プロパティをそのディスパッチ ID を識別します。 10 進または 16 進数のいずれかの形式では、ディスパッチ ID を識別できます。 このプロパティは、 **DistinguishedPropertySetId**または**PropertySetId**のいずれかに結合する必要があります。<br/><br/>この属性を使用する場合、**プロパティ名**と**PropertyTag**の属性は使用できません。<br/><br/>この属性は、省略可能です。  <br/> |
-|**PropertyType** <br/> |プロパティ タグのプロパティ型を表します。 これは、プロパティ タグの最下位ワードに対応しています。<br/><br/>このトピックで後で登録するときの属性テーブルには、この属性の有効な値が含まれています。<br/><br/>この属性は、必要があります。  <br/> |
+|**DistinguishedPropertySetId** <br/> |拡張 MAPI プロパティの既知のプロパティセット Id を定義します。<br/><br/>この属性を使用する場合、 **Propertysetid**属性と**propertysetid**属性は使用できません。 この属性は、 **PropertyId**属性または**PropertyName**属性、 **recordtype**属性のいずれかで使用する必要があります。<br/><br/>このトピックの後半の**DistinguishedPropertySetId**属性の表に、この属性に指定できる値を示します。<br/><br/>この属性は省略可能です。  <br/> |
+|**PropertySetId** <br/> |MAPI 拡張プロパティセットまたは名前空間を識別する GUID で識別します。<br/><br/>この属性を使用する場合、 **DistinguishedPropertySetId**および**propertytag**属性を使用することはできません。 この属性は、 **PropertyId**属性または**PropertyName**属性、 **recordtype**属性のいずれかで使用する必要があります。<br/><br/>この属性は省略可能です。  <br/> |
+|**PropertyTag** <br/> |タグの種類の部分がないプロパティタグを識別します。 **Propertytag**は、16進数または短整数のいずれかの形式で表すことができます。<br/><br/>0x8000 ~ 0xFFFE の範囲は、プロパティのユーザー設定範囲を表します。 メールボックスデータベースが初めてカスタムプロパティを検出すると、そのカスタムプロパティが0xFFFE のカスタムプロパティ範囲内にプロパティタグとして割り当てられます。 指定したカスタムプロパティタグは、データベースごとに異なる可能性があります。 そのため、プロパティタグによってカスタムプロパティを取得すると、データベースごとに異なるプロパティを返すことができます。 **Propertytag**属性の使用は、カスタムプロパティでは禁止されています。 代わりに、 **Propertysetid**属性と**PropertyName**属性または**PropertyId**属性を使用します。<br/><br/>**重要**: GUID + NAME/ID を使用して、0X8000 ~ 0xFFFE の任意のカスタムプロパティにアクセスできます。 **Propertytag**属性が使用されている場合、 **DistinguishedPropertySetId**、 **propertytag**、 **PropertyName**、および**PropertyId**属性は使用できません。<br/><br/>この属性は省略可能です。<br/><br/>**注**: カスタム範囲 0X8000 ~ 0xFFFE 内のプロパティに対して、プロパティタグ属性を使用することはできません。 この場合は、名前付きプロパティを使用する必要があります。           |
+|**PropertyName** <br/> |名前によって拡張プロパティを識別します。 このプロパティは、 **DistinguishedPropertySetId**または**propertysetid**と組み合わせて使用する必要があります。<br/><br/>この属性を使用する場合、 **PropertyId**および**propertytag**属性を使用することはできません。<br/><br/>この属性は省略可能です。  <br/> |
+|**PropertyId** <br/> |ディスパッチ ID によって拡張プロパティを識別します。 ディスパッチ ID は、10進数または16進数のどちらかの形式で識別できます。 このプロパティは、 **DistinguishedPropertySetId**または**propertysetid**と組み合わせて使用する必要があります。<br/><br/>この属性を使用する場合、 **PropertyName**属性と**propertytag**属性を使用することはできません。<br/><br/>この属性は省略可能です。  <br/> |
+|**Recordtype** <br/> |プロパティタグのプロパティの種類を表します。 これは、プロパティタグの重要な単語に対応しています。<br/><br/>このトピックの後半の Recordtype 属性テーブルには、この属性に指定できる値が含まれています。<br/><br/>この属性は必須です。  <br/> |
    
 #### <a name="distinguishedpropertysetid-attribute"></a>DistinguishedPropertySetId 属性
 
 |**値**|**説明**|
 |:-----|:-----|
-|会議  <br/> |会議を識別するプロパティは、名前で ID を設定します。  <br/> |
-|Appointment  <br/> |予定のプロパティ セット ID を名前で識別します。  <br/> |
-|Common  <br/> |名前で共通のプロパティ セット ID を識別します。  <br/> |
-|PublicStrings  <br/> |パブリック文字列のプロパティ セット ID を名前で識別します。  <br/> |
-|Address  <br/> |名前によるアドレスのプロパティ セット ID を識別します。  <br/> |
-|InternetHeaders  <br/> |インターネット ヘッダーのプロパティ セット ID を名前で識別します。  <br/> |
-|CalendarAssistant  <br/> |予定表のアシスタントのプロパティ セット ID を名前で識別します。  <br/> |
-|UnifiedMessaging  <br/> |名前によって、ユニファイド メッセージングのプロパティ セット ID を識別します。  <br/> |
+|アドレス  <br/> |Address プロパティセット ID を名前で識別します。  <br/> |
+|Appointment  <br/> |予定のプロパティセット ID を名前で識別します。  <br/> |
+|CalendarAssistant  <br/> |カレンダーアシスタントのプロパティセット ID を名前で識別します。  <br/> |
+|共通  <br/> |名前によって、共通プロパティセット ID を識別します。  <br/> |
+|InternetHeaders  <br/> |インターネットヘッダーのプロパティセット ID を名前で識別します。  <br/> |
+|会議  <br/> |名前によって、会議のプロパティセット ID を識別します。  <br/> |
+|共有  <br/> | <br/> |
+|PublicStrings  <br/> |パブリック文字列のプロパティセット ID を名前で識別します。  <br/> |
+|タスク  <br/> |タスクのプロパティセット ID を名前で識別します。  <br/> |
+|UnifiedMessaging  <br/> |ユニファイドメッセージングのプロパティセット ID を名前で識別します。  <br/> |
    
-#### <a name="propertytype-attribute"></a>属性を登録するとき
+#### <a name="propertytype-attribute"></a>Recordtype 属性
 
 |**値**|**説明**|
 |:-----|:-----|
-|ApplicationTime  <br/> |Double 型の値、日付と時刻として解釈されます。 日付は、整数部と小数部は時刻をです。  <br/> |
-|ApplicationTimeArray  <br/> |日付と時刻として解釈される 2 つの値の配列。  <br/> |
-|バイナリ  <br/> |Base64 エンコードのバイナリ値です。  <br/> |
-|BinaryArray  <br/> |Base64 エンコードのバイナリ値の配列。  <br/> |
-|ブール型 (Boolean)。  <br/> |ブール値**true**または**false を指定**します。  <br/> |
-|CLSID  <br/> |GUID 文字列です。  <br/> |
-|CLSIDArray  <br/> |GUID の文字列の配列。  <br/> |
-|通貨型 (Currency)  <br/> |セントの値として解釈される 64 ビット整数。  <br/> |
-|CurrencyArray  <br/> |セントの値として解釈される 64 ビット整数の配列。  <br/> |
-|倍精度浮動小数点型 (Double)  <br/> |64 ビットの浮動小数点値です。  <br/> |
-|DoubleArray  <br/> |64 ビット浮動小数点値の配列。  <br/> |
-|Error  <br/> |SCODE の値です。32 ビット符号なし整数。  <br/> 制限、または値を取得または設定は使用されません。 これは、レポート用にのみ存在します。  <br/> |
-|浮動小数点型 (Float)  <br/> |32 ビットの浮動小数点値です。  <br/> |
-|FloatArray  <br/> |32 ビット浮動小数点値の配列。  <br/> |
-|整数  <br/> |符号付き 32 ビット (Int32) 整数。  <br/> |
-|IntegerArray  <br/> |符号付き 32 ビット (Int32) 整数の配列。  <br/> |
-|Long 型 (Long)  <br/> |符号付きまたは符号なし 64 ビット (Int64) 整数。  <br/> |
-|LongArray  <br/> |符号付きまたは符号なしの 64 ビット (Int64) 整数の配列。  <br/> |
-|Null  <br/> |プロパティの値がないことを示します。  <br/> 制限、または値を取得または設定は使用されません。 これは、レポート用にのみ存在します。  <br/> |
-|オブジェクト  <br/> |IUnknown インターフェイスを実装するオブジェクトへのポインター。  <br/> 制限、または値を取得または設定は使用されません。 これは、レポート用にのみ存在します。  <br/> |
-|ObjectArray  <br/> |IUnknown インターフェイスを実装するオブジェクトへのポインターの配列。  <br/> 制限、または値を取得または設定は使用されません。 これは、レポート用にのみ存在します。  <br/> |
-|長い形式の日付 (スラッシュ区切り)  <br/> |符号付き 16 ビット整数。  <br/> |
-|ShortArray  <br/> |16 ビット符号付き整数の配列。  <br/> |
-|SystemTime  <br/> |FILETIME 構造体の形式で 64 ビットの整数データと時刻値。  <br/> |
-|SystemTimeArray  <br/> |FILETIME 構造体の形式で 64 ビット整数のデータと時刻の値の配列。  <br/> |
-|String  <br/> |Unicode 文字列です。  <br/> |
-|自己責任で使用  <br/> |Unicode 文字列の配列。  <br/> |
+|ApplicationTime  <br/> |日付と時刻として解釈される倍精度浮動小数点型 (double) の値を指定します。 整数部分は日付で、小数部分は時刻です。  <br/> |
+|ApplicationTimeArray  <br/> |日付と時刻として解釈される倍精度浮動小数点型 (double) の値の配列を指定します。  <br/> |
+|バイナリ  <br/> |Base64 でエンコードされたバイナリ値。  <br/> |
+|BinaryArray  <br/> |Base64 でエンコードされたバイナリ値の配列。  <br/> |
+|ブール型  <br/> |ブール値**true**または**false**。  <br/> |
+|CLSID  <br/> |GUID 文字列。  <br/> |
+|CLSIDArray  <br/> |GUID 文字列の配列。  <br/> |
+|通貨  <br/> |セントの数値として解釈される64ビットの整数。  <br/> |
+|CurrencyArray  <br/> |セントの数値として解釈される64ビットの整数の配列。  <br/> |
+|倍精度浮動小数点数  <br/> |64ビットの浮動小数点値。  <br/> |
+|DoubleArray  <br/> |64ビットの浮動小数点値の配列。  <br/> |
+|Error  <br/> |SCODE 値。32ビットの符号なし整数。  <br/> 制限のため、または値の取得および設定には使用されません。 これはレポートにのみ存在します。  <br/> |
+|浮動小数点数  <br/> |32ビットの浮動小数点値。  <br/> |
+|FloatArray  <br/> |32ビットの浮動小数点値の配列。  <br/> |
+|整数  <br/> |符号付き32ビット (Int32) 整数。  <br/> |
+|整数配列  <br/> |符号付き32ビット (Int32) 整数の配列。  <br/> |
+|Long  <br/> |符号付きまたは符号なしの64ビット (Int64) 整数。  <br/> |
+|LongArray  <br/> |符号付きまたは符号なしの64ビット (Int64) 整数の配列。  <br/> |
+|Null  <br/> |プロパティ値がないことを示します。  <br/> 制限のため、または値の取得および設定には使用されません。 これはレポートにのみ存在します。  <br/> |
+|オブジェクト  <br/> |IUnknown インターフェイスを実装するオブジェクトへのポインター。  <br/> 制限のため、または値の取得および設定には使用されません。 これはレポートにのみ存在します。  <br/> |
+|ObjectArray  <br/> |IUnknown インターフェイスを実装するオブジェクトへのポインターの配列。  <br/> 制限のため、または値の取得および設定には使用されません。 これはレポートにのみ存在します。  <br/> |
+|長い形式の日付 (スラッシュ区切り)  <br/> |符号付き16ビット整数。  <br/> |
+|Short 配列  <br/> |符号付き16ビット整数の配列。  <br/> |
+|SystemTime  <br/> |FILETIME 構造体の形式での、64ビットの整数データおよび時刻の値。  <br/> |
+|SystemTimeArray  <br/> |FILETIME 構造体の形式で、64ビットの整数データおよび時刻の値の配列。  <br/> |
+|文字列  <br/> |Unicode 文字列。  <br/> |
+|StringArray  <br/> |Unicode 文字列の配列。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -97,49 +99,49 @@ ms.locfileid: "21353792"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ExtendedProperty](extendedproperty.md) <br/> |フォルダーおよびアイテムの拡張プロパティを識別します。  <br/> |
-|[AdditionalProperties](additionalproperties.md) <br/> | 追加のプロパティを識別します。<br/><br/>この要素への XPath 式は、次のように。<br/><br/>`/FindFolder/FolderShape/AdditionalProperties` <br/>  `/GetFolder/FolderShape/AdditionalProperties` <br/>  `/SyncFolderHierarchy/FolderShape/AdditionalProperties` <br/>  `/GetItem/ItemShape/AdditionalProperties` <br/>  `/FindItem/ItemShape/AdditionalProperties` <br/>  `/SyncFolderItems/ItemShape/AdditionalProperties` <br/>  `/GetAttachment/AttachmentShape/AdditionalProperties` <br/> |
-|[SetItemField](setitemfield.md) <br/> |[UpdateItem 操作](updateitem-operation.md)内の項目の 1 つのプロパティには、更新プログラムを表します。  <br/> |
-|[SetFolderField](setfolderfield.md) <br/> |[UpdateFolder 操作](updatefolder-operation.md)でフォルダーの 1 つのプロパティには、更新プログラムを表します。  <br/> |
-|[DeleteItemField](deleteitemfield.md) <br/> |[UpdateItem 操作](updateitem-operation.md)中にアイテムから指定されたプロパティを削除する削除操作を表します。  <br/> |
-|[DeleteFolderField](deletefolderfield.md) <br/> |UpdateFolder の呼び出し中にフォルダーから特定のプロパティを削除する削除操作を表します。  <br/> |
-|[AppendToItemField](appendtoitemfield.md) <br/> |[UpdateItem 操作](updateitem-operation.md)中に 1 つのアイテムのプロパティを追加するデータを識別します。  <br/> |
-|[AppendToFolderField](appendtofolderfield.md) <br/> |[UpdateFolder 操作](updatefolder-operation.md)中にフォルダーのプロパティを追加するデータを指定します。  <br/> |
-|[存在します。](exists.md) <br/> |**True**を返す指定されたプロパティが存在する場合、アイテムの検索式を表します。  <br/> |
-|[FieldURIOrConstant](fielduriorconstant.md) <br/> |プロパティまたは別のプロパティを比較するときに使用する定数値のいずれかを表します。  <br/> |
-|[IsEqualTo](isequalto.md) <br/> |プロパティを定数値または別のプロパティを比較し、これらが等しい場合**は true**に評価する検索式を表します。  <br/> |
-|[IsGreaterThan](isgreaterthan.md) <br/> |最初のプロパティ値が大きい場合、プロパティ、定数値または別プロパティは、返す**場合は true**を比較する検索式を表します。  <br/> |
-|[IsGreaterThanOrEqualTo](isgreaterthanorequalto.md) <br/> |最初のプロパティには、もう 1 つ以上の場合は、プロパティ、定数値または別プロパティは、返す**場合は true**を比較するための検索式を表します。  <br/> |
-|[IsLessThan](islessthan.md) <br/> |定数値を持つプロパティ、または別のプロパティを比較し、最初のプロパティが以下の場合に**true**を返す検索式を表す 2 番目の。  <br/> |
-|[IsLessThanOrEqualTo](islessthanorequalto.md) <br/> |定数値を持つプロパティ、または別のプロパティを比較し、最初のプロパティが以下の場合に**true**を返す検索式を表す 2 番目の。  <br/> |
-|[IsNotEqualTo](isnotequalto.md) <br/> |値が同じではない場合、プロパティを定数値または別プロパティは、返す**場合は true**を比較する検索式を表します。  <br/> |
-|[Excludes](excludes.md) <br/> |プロパティのビットごとのマスクを実行します。  <br/> |
-|[内容](contains.md) <br/> |指定したプロパティに指定された文字列定数の値が含まれているかどうかを判断する検索式を表します。  <br/> |
-|[FieldOrder](fieldorder.md) <br/> |結果の並べ替えに使用する単一のフィールドを表し、並べ替えの方向を示します。  <br/> |
+|[ExtendedProperty](extendedproperty.md) <br/> |フォルダーとアイテムの拡張プロパティを識別します。  <br/> |
+|[AdditionalProperties](additionalproperties.md) <br/> | 追加のプロパティを識別します。<br/><br/>この要素の XPath 式は次のとおりです。<br/><br/>`/FindFolder/FolderShape/AdditionalProperties` <br/>  `/GetFolder/FolderShape/AdditionalProperties` <br/>  `/SyncFolderHierarchy/FolderShape/AdditionalProperties` <br/>  `/GetItem/ItemShape/AdditionalProperties` <br/>  `/FindItem/ItemShape/AdditionalProperties` <br/>  `/SyncFolderItems/ItemShape/AdditionalProperties` <br/>  `/GetAttachment/AttachmentShape/AdditionalProperties` <br/> |
+|[SetItemField](setitemfield.md) <br/> |[Updateitem 操作](updateitem-operation.md)のアイテムの1つのプロパティに対する更新を表します。  <br/> |
+|[SetFolderField](setfolderfield.md) <br/> |[Updatefolder 操作](updatefolder-operation.md)のフォルダーの1つのプロパティに対する更新を表します。  <br/> |
+|[DeleteItemField](deleteitemfield.md) <br/> |[Updateitem 操作](updateitem-operation.md)中に、アイテムから特定のプロパティを削除するための削除操作を表します。  <br/> |
+|[DeleteFolderField](deletefolderfield.md) <br/> |UpdateFolder 呼び出しの実行中にフォルダーから特定のプロパティを削除するための削除操作を表します。  <br/> |
+|[AppendToItemField](appendtoitemfield.md) <br/> |[Updateitem 操作](updateitem-operation.md)中に、アイテムの1つのプロパティに追加するデータを識別します。  <br/> |
+|[AppendToFolderField](appendtofolderfield.md) <br/> |[Updatefolder 操作](updatefolder-operation.md)中に folder プロパティに追加するデータを指定します。  <br/> |
+|[Exists](exists.md) <br/> |指定されたプロパティがアイテムに存在する場合に**true**を返す検索式を表します。  <br/> |
+|[FieldURIOrConstant](fielduriorconstant.md) <br/> |別のプロパティと比較するときに使用するプロパティまたは定数の値を表します。  <br/> |
+|[IsEqualTo](isequalto.md) <br/> |プロパティを定数値または別のプロパティと比較し、等しい場合は**true**に評価される検索式を表します。  <br/> |
+|[IsGreaterThan](isgreaterthan.md) <br/> |プロパティを定数値または別のプロパティと比較し、最初のプロパティが大きくなる場合は**true**を返す検索式を表します。  <br/> |
+|[IsGreaterThanOrEqualTo](isgreaterthanorequalto.md) <br/> |プロパティを定数値または別のプロパティと比較し、最初のプロパティが2番目のプロパティ以上の場合に**true**を返す検索式を表します。  <br/> |
+|[IsLessThan](islessthan.md) <br/> |プロパティを定数値または別のプロパティと比較し、最初のプロパティが2番目のプロパティより小さい場合に**true**を返す検索式を表します。  <br/> |
+|[IsLessThanOrEqualTo](islessthanorequalto.md) <br/> |プロパティを定数値または別のプロパティと比較し、最初のプロパティが2番目のプロパティより小さい場合に**true**を返す検索式を表します。  <br/> |
+|[IsNotEqualTo](isnotequalto.md) <br/> |プロパティを定数値または別のプロパティと比較し、値が同じでない場合は**true**を返す検索式を表します。  <br/> |
+|[Excludes](excludes.md) <br/> |プロパティのビット単位のマスクを実行します。  <br/> |
+|[内容](contains.md) <br/> |指定したプロパティに指定した定数文字列値が含まれているかどうかを決定する検索式を表します。  <br/> |
+|[FieldOrder](fieldorder.md) <br/> |結果を並べ替えるための1つのフィールドを表し、並べ替えの方向を示します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-いくつかの属性は、他の属性と組み合わせて使用できません。 拡張プロパティの属性の無効な組み合わせが付属しているすべての要求は、エラー メッセージが生成されます。
+一部の属性は、他の属性と組み合わせて使用することはできません。 拡張プロパティ属性の無効な組み合わせで受け取った要求には、エラーメッセージが生成されます。
   
-MicrosoftExchange Server 2007 がインストールされているクライアント アクセス サーバーの役割を実行しているコンピューターの EWS 仮想ディレクトリには、この要素を記述するスキーマがあります。
+この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 > [!NOTE]
-> Microsoft .net では、long 型の値は、64 ビット符号付き整数の MAPI と COM、long 型の値は、32 ビット整数。 ほとんどの開発者は、Exchange Web サービス クライアント アプリケーションを開発するのに着眼点フレームワークを使用します。 MAPI ではなく .NET の名前付けの使用、名前を付けます。
+> Microsoft .NET では、Long は64ビットの符号付き整数です。 MAPI と COM では、Long は32ビットの整数です。 ほとんどの開発者は、Microsoft.NET フレームワークを使用して、Exchange Web サービスクライアントアプリケーションを開発します。 そのため、MAPI の名前付けの代わりに .NET の名前付けを使用します。
 > 
-> 、0x0E07、PR_MESSAGE_FLAGS の MAPI プロパティは、PT\_時間を入力します。 .NET では、整数値と見なされます。 として PR_MESSAGE_FLAGS の拡張プロパティが定義されている`<t:ExtendedFieldURI PropertyTag="0x0E07" PropertyType="Integer"/>`。 
+> たとえば、PR_MESSAGE_FLAGS MAPI プロパティ0x0E07 は、PT \_ LONG 型です。 .NET では、これは整数と見なされます。 PR_MESSAGE_FLAGS の拡張プロパティは、として定義され `<t:ExtendedFieldURI PropertyTag="0x0E07" PropertyType="Integer"/>` ます。 
   
 ## <a name="example"></a>例
 
-要求の次の例では、2 つのカスタム プロパティを持つアイテムを作成します。 最初のカスタム プロパティを**true**に設定するブール値を持つ**IsMyHouse**と呼びます。 2 番目のユーザー設定の拡張プロパティを" **HousePrices**を"といいます。 通貨の値の配列が含まれています。 
+次の要求例では、2つのカスタムプロパティを持つアイテムを作成します。 最初のカスタムプロパティは、ブール値が**true**に設定された**ismyhouse**という名前です。 2番目のカスタム拡張プロパティには、 **HousePrices**という名前が付けられます。 通貨値の配列が含まれています。 
   
 ```XML
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <CreateItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+    <CreateItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
     MessageDisposition="SaveOnly">
       <SavedItemFolderId>
         <t:DistinguishedFolderId Id="inbox"/>
@@ -172,18 +174,18 @@ MicrosoftExchange Server 2007 がインストールされているクライア�
 </soap:Envelope>
 ```
 
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [FieldURI](fielduri.md)
 - [IndexedFieldURI](indexedfielduri.md)
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

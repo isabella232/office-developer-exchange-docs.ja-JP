@@ -1,5 +1,5 @@
 ---
-title: 状態 (UM web サービス - SetMissedCallNotificationEnabled)
+title: 状態 (UM web サービス-SetMissedCallNotificationEnabled)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,21 +10,21 @@ api_name:
 api_type:
 - schema
 ms.assetid: e272d905-1a66-44f6-bb1d-59fa9e4d8dea
-description: 状態の要素は、SetMissedCallNotificationEnabled 操作 (UM web サービス) 要求に使用する値を定義します。
-ms.openlocfilehash: 3bd07f0ed0f44bd00dad9f56aa8218bad0a82a9a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Status 要素は、SetMissedCallNotificationEnabled 操作 (UM web サービス) 要求で使用する値を定義します。
+ms.openlocfilehash: f184c3af49033bc09c28dd66f786935b72c3590b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19833585"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526859"
 ---
-# <a name="status-um-web-service---setmissedcallnotificationenabled"></a>状態 (UM web サービス - SetMissedCallNotificationEnabled)
+# <a name="status-um-web-service---setmissedcallnotificationenabled"></a>状態 (UM web サービス-SetMissedCallNotificationEnabled)
 
-**状態**の要素は、 [SetMissedCallNotificationEnabled 操作 (UM web サービス)](setmissedcallnotificationenabled-operation-um-web-service.md)の要求で使用する値を定義します。 
+**Status**要素は、 [SETMISSEDCALLNOTIFICATIONENABLED 操作 (UM web サービス)](setmissedcallnotificationenabled-operation-um-web-service.md)要求で使用する値を定義します。 
   
 [SetMissedCallNotificationEnabled (UM web サービス)](setmissedcallnotificationenabled-um-web-service.md)
   
-[状態 (UM web サービス - SetMissedCallNotificationEnabled)](status-um-web-servicesetmissedcallnotificationenabled.md)
+[状態 (UM web サービス-SetMissedCallNotificationEnabled)](status-um-web-servicesetmissedcallnotificationenabled.md)
   
 ```xml
 <SetMissedCallNotificationEnabled>
@@ -32,8 +32,8 @@ ms.locfileid: "19833585"
 </SetMissedCallNotificationEnabled>
 ```
 
- **ブール型 (Boolean)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -53,20 +53,20 @@ ms.locfileid: "19833585"
    
 ## <a name="text-value"></a>テキスト値
 
-ブール値のテキスト値は、必要があります。 指定可能な値は次のいずれかです。
+ブール型のテキスト値が必要です。 指定可能な値は次のいずれかです。
   
 - True
     
 - False
     
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |スキーマ名  <br/> |メッセージ  <br/> |
-|検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

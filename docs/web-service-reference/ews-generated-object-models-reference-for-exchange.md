@@ -9,12 +9,12 @@ api_type:
 - schema
 ms.assetid: 67d7d831-9c53-46da-80e4-18f562e71284
 description: Exchange 用のアプリケーションを開発するのに EWS によって生成されるオブジェクト モデル参照を使用している場合に EWS 開発で使用できる他のオプションについて説明します。
-ms.openlocfilehash: 94735a205748116457cb74efc2a75b0b2aa2c9ec
-ms.sourcegitcommit: 4221fd619bc309d2f8ab0497ec780b427acc6530
-ms.translationtype: HT
+ms.openlocfilehash: 0ab659fa57a591939b85ab8cfbc4104c9c775060
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "25441534"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526166"
 ---
 # <a name="ews-generated-object-models-for-exchange"></a>Exchange 用に EWS で生成されたオブジェクト モデル
 
@@ -55,5 +55,5 @@ EWS マネージ API を使用してアプリケーションを開発できな�
 ## <a name="see-also"></a>関連項目
 
 - [Exchange の Web サービス リファレンス](web-services-reference-for-exchange.md)
-- [Exchange の EWS マネージ API、EWS、Web サービスについて学ぶ](../exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)
+- [Exchange の EWS マネージド API、EWS、Web サービスについて学ぶ](../exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)
 - [EWS およびその他の Exchange の Web サービスの新機能](../exchange-web-services/whats-new-in-ews-and-other-web-services-in-exchange.md)

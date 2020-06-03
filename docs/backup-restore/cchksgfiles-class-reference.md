@@ -7,40 +7,40 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9347d5f6-95bb-4045-9c86-0dc0ded24fe8
-description: Exchange 2013 に CHKSGFILES API のリファレンス情報を検索します。
-ms.openlocfilehash: 583ac5e16ab60d119c3028bf81123e9f60a58ff4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Exchange 2013 の CHKSGFILES API に関するリファレンス情報について紹介します。
+ms.openlocfilehash: 38b1f2c900767c22594636f0c6ddf4855961aec4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19758863"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526733"
 ---
 # <a name="cchksgfiles-class-reference"></a>CChkSGFiles クラスの参照
 
-Exchange 2013 に CHKSGFILES API のリファレンス情報を検索します。
+Exchange 2013 の CHKSGFILES API に関するリファレンス情報について紹介します。
   
-**に適用されます:** Exchange Server 2013 
+**製品:** Exchange Server 2013 
   
-CHKSGFILES API では、プログラムを使用して Exchange Server 2013 のトランザクション ログ ファイルとデータベースの整合性を確認するのにはバックアップと復元のアプリケーションを使用できます。 バックアップではこの API を使用し、ボリューム シャドウ コピー サービス (VSS) を使用するアプリケーションを復元できます。
+CHKSGFILES API を使用すると、バックアップおよび復元アプリケーションで、Exchange Server 2013 トランザクションログファイルとデータベースの整合性をプログラムによって確認できます。 この API は、ボリューム シャドウ コピー サービス (VSS) を使用するバックアップおよび復元アプリケーションで使用できます。
   
 > [!NOTE]
-> ストレージ ・ グループは利用可能な Exchange 2013 です。 バージョンの Exchange が Exchange Server 2010 で始まるから、ストレージ ・ グループのサポートが削除されました。 CHKSGFILES API では、データベースと Exchange 2010 より前のバージョンの Exchange ストレージ ・ グループとの下位互換性のため、ストレージ ・ グループを指定できます。 Exchange 2013 のデータベースに対して CHKSGFILES を実行するときは、空の文字列にストレージ ・ グループの識別子を指定するパラメーターを設定してください。 
+> ストレージグループは、Exchange 2013 では使用できません。 ストレージグループのサポートは、Exchange Server 2010 以降のバージョンの Exchange から削除されました。 Exchange 2010 より前のバージョンの Exchange でデータベースおよびストレージグループとの下位互換性を維持するために、CHKSGFILES API ではストレージグループを指定できます。 Exchange 2013 データベースに対して CHKSGFILES を実行するときは、ストレージグループ識別子を指定するパラメーターを空の文字列に設定する必要があります。 
   
 ## <a name="file-location"></a>ファイルの場所
 <a name="bk_fileslocation"> </a>
 
-CHKSGFILES API は、Exchange 2013 の一部として組み込まれています。 メールボックス サーバーの役割がインストールされているコンピューターでは、この API を使用できます。 
+CHKSGFILES API は、Exchange 2013 の一部として出荷されます。 この API は、メールボックス サーバーの役割をインストールしたコンピューター上で使用できます。 
   
 既定では、CHKSGFILES DLL は C:\Program Files\Microsoft\Exchange\V15\Bin ディレクトリにインストールされます。
   
-Exchange 2013 には、CHKSGFILES api (amd64) の 64 ビット バージョンのみが含まれています。 
+Exchange 2013 には、CHKSGFILES API の64ビット (amd64) バージョンのみが含まれています。 
   
-[Microsoft ダウンロード センター](http://www.microsoft.com/en-us/download/details.aspx?id=36802)から、カスタムのアプリケーションでは、CHKSGFILE.lib ライブラリが含まれている .zip ファイルと使用するための CHKSGFILES.hxx ヘッダー ファイルをダウンロードできます。
+CHKSGFILE ライブラリおよび CHKSGFILES のヘッダーファイルを含む .zip ファイルは、 [Microsoft ダウンロードセンター](https://www.microsoft.com/download/details.aspx?id=36802)からカスタムアプリケーションで使用するためにダウンロードできます。
   
 ## <a name="development-languages"></a>開発言語
 <a name="bk_developmentlanguages"> </a>
 
-CHKSGFILES API は、ネイティブ C または C++ での Visual Studio 2005 以降で、Visual Studio のバージョンで使用する目的としています。 CHKSGFILES API は、マネージ コードで使用するためのものではありません。 CHKSGFILES と COM 相互運用機能アセンブリを作成できますが、配送は行っておりません Exchange 2013 で、サポートされている COM 相互運用機能アセンブリです。
+CHKSGFILES API は、visual studio 2005 (ネイティブ C/c + +) 以降のバージョンの Visual Studio で使用することを目的としています。 CHKSGFILES API は、マネージ コードでの使用を目的としていません。 COM 相互運用機能アセンブリは CHKSGFILES を使用して作成できますが、Exchange 2013 でサポートされている COM 相互運用機能アセンブリは提供していません。
   
 ## <a name="in-this-section"></a>このセクションの内容
 <a name="bk_inthissection"> </a>
@@ -57,7 +57,7 @@ CHKSGFILES API は、ネイティブ C または C++ での Visual Studio 2005 �
     
 - [CChkSGFiles.ErrCheckLogs 関数](cchksgfiles-errchecklogs-function.md)
     
-- [(予約済み) の CChkSGFiles.ErrGetHeader 関数](cchksgfiles-errgetheader-function-reserved.md)
+- [CChkSGFiles.ErrGetHeader 関数 (予約済み)](cchksgfiles-errgetheader-function-reserved.md)
     
 - [CChkSGFiles.ErrInit 関数](cchksgfiles-errinit-function.md)
     
@@ -75,7 +75,7 @@ CHKSGFILES API は、ネイティブ C または C++ での Visual Studio 2005 �
     
 ## <a name="see-also"></a>関連項目
 
-- [オンラインの Exchange および Exchange の開発](../exchange-server-development.md)
-- [バックアップ、復元、および災害復旧](http://technet.microsoft.com/en-us/library/dd876874)
+- [Exchange Online と Exchange の開発](../exchange-server-development.md)
+- [バックアップ、復元、および障害回復](https://technet.microsoft.com/library/dd876874)
     
 

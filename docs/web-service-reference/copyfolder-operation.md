@@ -16,7 +16,7 @@ ms.openlocfilehash: 1f9a7a3f3ede2d3cf8f9d41677d8ce0487266f17
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44468895"
 ---
 # <a name="copyfolder-operation"></a>CopyFolder 操作
@@ -29,7 +29,7 @@ CopyFolder 操作は、 [movefolder 操作](movefolder-operation.md)に似てい
   
 ## <a name="copyfolder-request-example"></a>CopyFolder 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の CopyFolder 要求の例は、フォルダーを受信トレイフォルダーにコピーする方法を示しています。
   
@@ -81,7 +81,7 @@ CopyFolder 操作の要求メッセージに関するその他のオプション
   
 ## <a name="successful-copyfolder-response"></a>成功した CopyFolder 応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、CopyFolder 要求に対する正常な応答を示しています。 
   
@@ -146,7 +146,7 @@ CopyFolder 操作の応答メッセージに関するその他のオプション
   
 ## <a name="copyfolder-error-response"></a>CopyFolder エラー応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、CopyFolder 要求に対するエラー応答を示しています。 同じ表示名のフォルダーが既に存在するため、エラーが発生しました。
   

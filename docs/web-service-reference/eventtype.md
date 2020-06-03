@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 04b70f9e-c226-4130-958e-0db0275cf58b
-description: イベントの種類の要素は、サブスクリプションを作成するために使用し、通知で報告されるイベントの種類を識別します。
-ms.openlocfilehash: fb54c9e042f105d10e68cb0e9b48feae7ed8bf7b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: EventType 要素は、サブスクリプションを作成し、通知で報告されるイベントの種類を識別するために使用されます。
+ms.openlocfilehash: 58c7ce571434b6fb8ac0b1dc2a3f8cd4fd56ff17
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19760336"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526173"
 ---
 # <a name="eventtype"></a>EventType
 
-**イベントの種類**の要素は、サブスクリプションを作成するために使用し、通知で報告されるイベントの種類を識別します。 
+**EventType**要素は、サブスクリプションを作成し、通知で報告されるイベントの種類を識別するために使用されます。 
   
 ```xml
 <EventType/>
 ```
 
  **NotificationEventTypeType**
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -52,11 +52,11 @@ ms.locfileid: "19760336"
   
 - CopiedEvent
     
-- CreatedEvent
+- 対する createdevent
     
 - DeletedEvent
     
-- ModifiedEvent
+- 対する modifiedevent
     
 - MovedEvent
     
@@ -64,18 +64,18 @@ ms.locfileid: "19760336"
     
 - FreeBusyChangedEvent
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web Services.This の要素がホストをで Exchange Server 2010 Service Pack 1 (SP1) を導入する IIS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

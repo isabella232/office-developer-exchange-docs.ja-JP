@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 089ee599-f45e-46f5-a18a-5cfb3d2851ff
-description: ItemAttachment 要素は、Exchange の他のアイテムに関連付けられている Exchange アイテムを表します。
-ms.openlocfilehash: 7bd3d22430fe04f1b28ae240102500609fe8d703
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: ItemAttachment 要素は、別の Exchange アイテムに関連付けられている Exchange アイテムを表します。
+ms.openlocfilehash: c3a07fa091c05654a03cbff58fb20204c26c9061
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353148"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526439"
 ---
 # <a name="itemattachment"></a>ItemAttachment
 
-**ItemAttachment**要素は、Exchange の他のアイテムに関連付けられている Exchange アイテムを表します。 
+**Itemattachment**要素は、別の exchange アイテムに関連付けられている exchange アイテムを表します。 
   
 ```xml
 <ItemAttachment>
@@ -151,7 +151,7 @@ ms.locfileid: "21353148"
 
 **ItemAttachmentType**
 
-## <a name="attributes-and-elements"></a>属性および要素
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -161,31 +161,31 @@ ms.locfileid: "21353148"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**説明**|
+|**Element**|**説明**|
 |:-----|:-----|
 |[AttachmentId](attachmentid.md) <br/> |添付ファイルを識別します。  <br/> |
 |[Name (AttachmentType)](name-attachmenttype.md) <br/> |添付ファイルの名前を表します。  <br/> |
-|[ContentType](contenttype.md) <br/> |添付ファイルのコンテンツの多目的インターネット メール拡張 (MIME) の種類について説明します。  <br/> |
-|[ContentId](contentid.md) <br/> |添付ファイルの内容には、識別子を表します。 [ContentId](contentid.md)は、任意の文字列値に設定できます。 アプリケーションは、独自の識別メカニズムを実装するために、 [ContentId](contentid.md)を使用できます。  <br/> |
-|[ContentLocation](contentlocation.md) <br/> |統一リソース識別子 (URI) の添付ファイルのコンテンツの場所に対応するが含まれています。  <br/> |
-|[Size](size.md) <br/> |添付ファイルのバイト単位でサイズを表します。  <br/> |
-|[LastModifiedTime](lastmodifiedtime.md) <br/> |添付ファイルが最後に変更されたときを表します。  <br/> |
-|[IsInline](isinline.md) <br/> |添付ファイルの項目内でのインラインで表示されているかどうかを表します。  <br/> |
+|[ContentType](contenttype.md) <br/> |添付ファイルのコンテンツのマルチパーパスインターネットメール内線 (MIME) の種類について説明します。  <br/> |
+|[ContentId](contentid.md) <br/> |添付ファイルのコンテンツの識別子を表します。 [ContentId](contentid.md)は、任意の文字列値に設定できます。 アプリケーションでは、 [ContentId](contentid.md)を使用して独自の識別メカニズムを実装できます。  <br/> |
+|[ContentLocation](contentlocation.md) <br/> |添付ファイルのコンテンツの場所に対応する Uniform Resource Identifier (URI) を含みます。  <br/> |
+|[Size](size.md) <br/> |添付ファイルのサイズ (バイト単位) を表します。  <br/> |
+|[LastModifiedTime](lastmodifiedtime.md) <br/> |添付ファイルが最後に変更された日時を表します。  <br/> |
+|[IsInline](isinline.md) <br/> |添付ファイルがアイテム内にインラインで表示されるかどうかを表します。  <br/> |
 |[Item](item.md) <br/> |一般的な Exchange アイテムの添付ファイルを表します。  <br/> |
-|[Message](message-ex15websvcsotherref.md) <br/> |Exchange 電子メール メッセージの添付ファイルを表します。  <br/> |
+|[Message](message-ex15websvcsotherref.md) <br/> |Exchange 電子メールメッセージの添付ファイルを表します。  <br/> |
 |[CalendarItem](calendaritem.md) <br/> |Exchange 予定表アイテムの添付ファイルを表します。  <br/> |
-|[連絡先](contact.md) <br/> |Exchange 連絡先アイテムの添付ファイルを表します。  <br/> |
+|[Contact](contact.md) <br/> |Exchange の連絡先アイテムの添付ファイルを表します。  <br/> |
 |[タスク](task.md) <br/> |Exchange タスクの添付ファイルを表します。  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Exchange ストア内の会議を表します。  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議出席依頼を表します。  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |Exchange ストア内の会議の返信を表します。  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |Exchange ストア内の会議の取り消し通知を表します。  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |Exchange ストア内の会議の応答を表します。  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |Exchange ストア内の会議の取り消しを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[添付ファイル](attachments-ex15websvcsotherref.md) <br/> |アイテムや、Exchange ストア内のアイテムに関連付けられているファイルが含まれています。  <br/> |
+|[Attachments](attachments-ex15websvcsotherref.md) <br/> |Exchange ストア内のアイテムに添付されているアイテムやファイルが保存されています。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -195,16 +195,16 @@ ms.locfileid: "21353148"
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 
