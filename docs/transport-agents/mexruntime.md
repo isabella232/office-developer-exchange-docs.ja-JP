@@ -16,17 +16,17 @@ ms.openlocfilehash: f192965a8375eb46d1ca5b46d3b768a3299c284d
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44461836"
 ---
-# <a name="mexruntime"></a><span data-ttu-id="f383f-103">mexRuntime</span><span class="sxs-lookup"><span data-stu-id="f383f-103">mexRuntime</span></span>
+# <a name="mexruntime"></a><span data-ttu-id="41970-103">mexRuntime</span><span class="sxs-lookup"><span data-stu-id="41970-103">mexRuntime</span></span>
   
-<span data-ttu-id="f383f-104">**製品:** Exchange Server 2013</span><span class="sxs-lookup"><span data-stu-id="f383f-104">**Applies to:** Exchange Server 2013</span></span>
+<span data-ttu-id="41970-104">**製品:** Exchange Server 2013</span><span class="sxs-lookup"><span data-stu-id="41970-104">**Applies to:** Exchange Server 2013</span></span>
   
-<span data-ttu-id="f383f-105">**mexRuntime** 要素には、エージェントの監視に関する構成情報を定義する要素と、SMTP とインストールされている ルーティング エージェントに関する構成情報を定義する要素が含まれます。</span><span class="sxs-lookup"><span data-stu-id="f383f-105">The **mexRuntime** element contains elements that define configuration information for agent monitoring and configuration information for SMTP and routing agents that are installed.</span></span> 
+<span data-ttu-id="41970-105">**mexRuntime** 要素には、エージェントの監視に関する構成情報を定義する要素と、SMTP とインストールされている ルーティング エージェントに関する構成情報を定義する要素が含まれます。</span><span class="sxs-lookup"><span data-stu-id="41970-105">The **mexRuntime** element contains elements that define configuration information for agent monitoring and configuration information for SMTP and routing agents that are installed.</span></span> 
   
-- [<span data-ttu-id="f383f-106">構成</span><span class="sxs-lookup"><span data-stu-id="f383f-106">configuration</span></span>](configuration.md)  
-- [<span data-ttu-id="f383f-107">mexRuntime</span><span class="sxs-lookup"><span data-stu-id="f383f-107">mexRuntime</span></span>](mexruntime.md)
+- [<span data-ttu-id="41970-106">構成</span><span class="sxs-lookup"><span data-stu-id="41970-106">configuration</span></span>](configuration.md)  
+- [<span data-ttu-id="41970-107">mexRuntime</span><span class="sxs-lookup"><span data-stu-id="41970-107">mexRuntime</span></span>](mexruntime.md)
   
 ```XML
 <mexRuntime>
@@ -35,39 +35,39 @@ ms.locfileid: "44461836"
 </mexRuntime>
 ```
 
-<span data-ttu-id="f383f-108">**mexRuntimeType (complexType)**</span><span class="sxs-lookup"><span data-stu-id="f383f-108">**mexRuntimeType (complexType)**</span></span>
+<span data-ttu-id="41970-108">**mexRuntimeType (complexType)**</span><span class="sxs-lookup"><span data-stu-id="41970-108">**mexRuntimeType (complexType)**</span></span>
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="f383f-109">属性と要素</span><span class="sxs-lookup"><span data-stu-id="f383f-109">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="41970-109">属性と要素</span><span class="sxs-lookup"><span data-stu-id="41970-109">Attributes and elements</span></span>
 
-<span data-ttu-id="f383f-110">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="f383f-110">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="41970-110">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="41970-110">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="f383f-111">属性</span><span class="sxs-lookup"><span data-stu-id="f383f-111">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="41970-111">属性</span><span class="sxs-lookup"><span data-stu-id="41970-111">Attributes</span></span>
 
-<span data-ttu-id="f383f-112">なし。</span><span class="sxs-lookup"><span data-stu-id="f383f-112">None.</span></span>
+<span data-ttu-id="41970-112">なし。</span><span class="sxs-lookup"><span data-stu-id="41970-112">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="f383f-113">子要素</span><span class="sxs-lookup"><span data-stu-id="f383f-113">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="41970-113">子要素</span><span class="sxs-lookup"><span data-stu-id="41970-113">Child elements</span></span>
 
-|<span data-ttu-id="f383f-114">**Element**</span><span class="sxs-lookup"><span data-stu-id="f383f-114">**Element**</span></span>|<span data-ttu-id="f383f-115">**説明**</span><span class="sxs-lookup"><span data-stu-id="f383f-115">**Description**</span></span>|
+|<span data-ttu-id="41970-114">**Element**</span><span class="sxs-lookup"><span data-stu-id="41970-114">**Element**</span></span>|<span data-ttu-id="41970-115">**説明**</span><span class="sxs-lookup"><span data-stu-id="41970-115">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="f383f-116">管理</span><span class="sxs-lookup"><span data-stu-id="f383f-116">monitoring</span></span>](monitoring.md) <br/> |<span data-ttu-id="f383f-117">トランスポートがインストールされているエージェントを監視する方法とタイミングを定義する構成情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="f383f-117">Contains configuration information that defines how and when transport monitors agents that are installed.</span></span>  <br/> |
-|[<span data-ttu-id="f383f-118">agentList</span><span class="sxs-lookup"><span data-stu-id="f383f-118">agentList</span></span>](agentlist.md) <br/> |<span data-ttu-id="f383f-119">インストールされている各エージェントの [agent](agent.md) 要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="f383f-119">Contains an [agent](agent.md) element for each agent that is installed.</span></span>  <br/> |
+|[<span data-ttu-id="41970-116">管理</span><span class="sxs-lookup"><span data-stu-id="41970-116">monitoring</span></span>](monitoring.md) <br/> |<span data-ttu-id="41970-117">トランスポートがインストールされているエージェントを監視する方法とタイミングを定義する構成情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="41970-117">Contains configuration information that defines how and when transport monitors agents that are installed.</span></span>  <br/> |
+|[<span data-ttu-id="41970-118">agentList</span><span class="sxs-lookup"><span data-stu-id="41970-118">agentList</span></span>](agentlist.md) <br/> |<span data-ttu-id="41970-119">インストールされている各エージェントの [agent](agent.md) 要素が含まれています。</span><span class="sxs-lookup"><span data-stu-id="41970-119">Contains an [agent](agent.md) element for each agent that is installed.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="f383f-120">親要素</span><span class="sxs-lookup"><span data-stu-id="f383f-120">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="41970-120">親要素</span><span class="sxs-lookup"><span data-stu-id="41970-120">Parent elements</span></span>
 
-|<span data-ttu-id="f383f-121">**要素**</span><span class="sxs-lookup"><span data-stu-id="f383f-121">**Element**</span></span>|<span data-ttu-id="f383f-122">**説明**</span><span class="sxs-lookup"><span data-stu-id="f383f-122">**Description**</span></span>|
+|<span data-ttu-id="41970-121">**要素**</span><span class="sxs-lookup"><span data-stu-id="41970-121">**Element**</span></span>|<span data-ttu-id="41970-122">**説明**</span><span class="sxs-lookup"><span data-stu-id="41970-122">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="f383f-123">configuration</span><span class="sxs-lookup"><span data-stu-id="f383f-123">configuration</span></span>](configuration.md) <br/> |<span data-ttu-id="f383f-124">エージェント構成ファイルのルート要素です。</span><span class="sxs-lookup"><span data-stu-id="f383f-124">The root element for the agents configuration file.</span></span>  <br/> |
+|[<span data-ttu-id="41970-123">configuration</span><span class="sxs-lookup"><span data-stu-id="41970-123">configuration</span></span>](configuration.md) <br/> |<span data-ttu-id="41970-124">エージェント構成ファイルのルート要素です。</span><span class="sxs-lookup"><span data-stu-id="41970-124">The root element for the agents configuration file.</span></span>  <br/> |
    
-## <a name="element-information"></a><span data-ttu-id="f383f-125">要素の情報</span><span class="sxs-lookup"><span data-stu-id="f383f-125">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="41970-125">要素の情報</span><span class="sxs-lookup"><span data-stu-id="41970-125">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="f383f-126">Namespace</span><span class="sxs-lookup"><span data-stu-id="f383f-126">Namespace</span></span>  <br/> |<span data-ttu-id="f383f-127">このファイルには名前空間が定義されていません。</span><span class="sxs-lookup"><span data-stu-id="f383f-127">This file does not define a namespace.</span></span>  <br/> |
-|<span data-ttu-id="f383f-128">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="f383f-128">Schema Name</span></span>  <br/> |<span data-ttu-id="f383f-129">注意事項なし。</span><span class="sxs-lookup"><span data-stu-id="f383f-129">Not available.</span></span>  <br/> |
-|<span data-ttu-id="f383f-130">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="f383f-130">Validation File</span></span>  <br/> |<span data-ttu-id="f383f-131">該当なし。</span><span class="sxs-lookup"><span data-stu-id="f383f-131">Not available.</span></span>  <br/> |
-|<span data-ttu-id="f383f-132">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="f383f-132">Can be Empty</span></span>  <br/> |<span data-ttu-id="f383f-133">不正解。</span><span class="sxs-lookup"><span data-stu-id="f383f-133">False.</span></span>  <br/> |
+|<span data-ttu-id="41970-126">Namespace</span><span class="sxs-lookup"><span data-stu-id="41970-126">Namespace</span></span>  <br/> |<span data-ttu-id="41970-127">このファイルには名前空間が定義されていません。</span><span class="sxs-lookup"><span data-stu-id="41970-127">This file does not define a namespace.</span></span>  <br/> |
+|<span data-ttu-id="41970-128">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="41970-128">Schema Name</span></span>  <br/> |<span data-ttu-id="41970-129">注意事項なし。</span><span class="sxs-lookup"><span data-stu-id="41970-129">Not available.</span></span>  <br/> |
+|<span data-ttu-id="41970-130">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="41970-130">Validation File</span></span>  <br/> |<span data-ttu-id="41970-131">該当なし。</span><span class="sxs-lookup"><span data-stu-id="41970-131">Not available.</span></span>  <br/> |
+|<span data-ttu-id="41970-132">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="41970-132">Can be Empty</span></span>  <br/> |<span data-ttu-id="41970-133">不正解。</span><span class="sxs-lookup"><span data-stu-id="41970-133">False.</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="f383f-134">関連項目</span><span class="sxs-lookup"><span data-stu-id="f383f-134">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="41970-134">関連項目</span><span class="sxs-lookup"><span data-stu-id="41970-134">See also</span></span>
 
-- [<span data-ttu-id="f383f-135">Exchange 2013 のエージェント構成ファイルの要素</span><span class="sxs-lookup"><span data-stu-id="f383f-135">Agents configuration file elements for Exchange 2013</span></span>](agents-configuration-file-elements-for-exchange-2013.md)
+- [<span data-ttu-id="41970-135">Exchange 2013 のエージェント構成ファイルの要素</span><span class="sxs-lookup"><span data-stu-id="41970-135">Agents configuration file elements for Exchange 2013</span></span>](agents-configuration-file-elements-for-exchange-2013.md)
 

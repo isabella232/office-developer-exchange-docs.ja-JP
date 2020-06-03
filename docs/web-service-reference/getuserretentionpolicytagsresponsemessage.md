@@ -12,12 +12,12 @@ ms.openlocfilehash: e65266e72010f42a2052bbb8cfab21ea4059f92b
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44461808"
 ---
-# <a name="getuserretentionpolicytagsresponsemessage"></a><span data-ttu-id="f4548-103">GetUserRetentionPolicyTagsResponseMessage</span><span class="sxs-lookup"><span data-stu-id="f4548-103">GetUserRetentionPolicyTagsResponseMessage</span></span>
+# <a name="getuserretentionpolicytagsresponsemessage"></a><span data-ttu-id="06c41-103">GetUserRetentionPolicyTagsResponseMessage</span><span class="sxs-lookup"><span data-stu-id="06c41-103">GetUserRetentionPolicyTagsResponseMessage</span></span>
 
-<span data-ttu-id="f4548-104">**GetUserRetentionPolicyTagsResponseMessage**要素は、 **GetUserRetentionPolicyTags**要求の応答メッセージを指定します。</span><span class="sxs-lookup"><span data-stu-id="f4548-104">The **GetUserRetentionPolicyTagsResponseMessage** element specifies the response message for a **GetUserRetentionPolicyTags** request.</span></span> 
+<span data-ttu-id="06c41-104">**GetUserRetentionPolicyTagsResponseMessage**要素は、 **GetUserRetentionPolicyTags**要求の応答メッセージを指定します。</span><span class="sxs-lookup"><span data-stu-id="06c41-104">The **GetUserRetentionPolicyTagsResponseMessage** element specifies the response message for a **GetUserRetentionPolicyTags** request.</span></span> 
   
 ```XML
 <GetUserRetentionPolicyTagsResponseMessage>
@@ -29,36 +29,36 @@ ms.locfileid: "44461808"
 </GetUserRetentionPolicyTagsResponseMessage>
 ```
 
- <span data-ttu-id="f4548-105">**GetUserRetentionPolicyTagsResponseMessageType**</span><span class="sxs-lookup"><span data-stu-id="f4548-105">**GetUserRetentionPolicyTagsResponseMessageType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="f4548-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="f4548-106">Attributes and elements</span></span>
+ <span data-ttu-id="06c41-105">**GetUserRetentionPolicyTagsResponseMessageType**</span><span class="sxs-lookup"><span data-stu-id="06c41-105">**GetUserRetentionPolicyTagsResponseMessageType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="06c41-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="06c41-106">Attributes and elements</span></span>
 
-<span data-ttu-id="f4548-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="f4548-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="06c41-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="06c41-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="f4548-108">属性</span><span class="sxs-lookup"><span data-stu-id="f4548-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="06c41-108">属性</span><span class="sxs-lookup"><span data-stu-id="06c41-108">Attributes</span></span>
 
-<span data-ttu-id="f4548-109">なし。</span><span class="sxs-lookup"><span data-stu-id="f4548-109">None.</span></span>
+<span data-ttu-id="06c41-109">なし。</span><span class="sxs-lookup"><span data-stu-id="06c41-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="f4548-110">子要素</span><span class="sxs-lookup"><span data-stu-id="f4548-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="06c41-110">子要素</span><span class="sxs-lookup"><span data-stu-id="06c41-110">Child elements</span></span>
 
-<span data-ttu-id="f4548-111">[Messagetext](messagetext.md)  | 応答[Secmode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [RetentionPolicyTags](retentionpolicytags.md)</span><span class="sxs-lookup"><span data-stu-id="f4548-111">[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [RetentionPolicyTags](retentionpolicytags.md)</span></span>
+<span data-ttu-id="06c41-111">[Messagetext](messagetext.md)  | 応答[Secmode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [RetentionPolicyTags](retentionpolicytags.md)</span><span class="sxs-lookup"><span data-stu-id="06c41-111">[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [RetentionPolicyTags](retentionpolicytags.md)</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="f4548-112">親要素</span><span class="sxs-lookup"><span data-stu-id="f4548-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="06c41-112">親要素</span><span class="sxs-lookup"><span data-stu-id="06c41-112">Parent elements</span></span>
 
-[<span data-ttu-id="f4548-113">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="f4548-113">ResponseMessages</span></span>](responsemessages.md)
+[<span data-ttu-id="06c41-113">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="06c41-113">ResponseMessages</span></span>](responsemessages.md)
   
-## <a name="remarks"></a><span data-ttu-id="f4548-114">注釈</span><span class="sxs-lookup"><span data-stu-id="f4548-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="06c41-114">注釈</span><span class="sxs-lookup"><span data-stu-id="06c41-114">Remarks</span></span>
 
-<span data-ttu-id="f4548-115">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="f4548-115">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="06c41-115">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="06c41-115">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="f4548-116">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="f4548-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="06c41-116">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="06c41-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="f4548-117">要素の情報</span><span class="sxs-lookup"><span data-stu-id="f4548-117">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="06c41-117">要素の情報</span><span class="sxs-lookup"><span data-stu-id="06c41-117">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="f4548-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="f4548-118">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="f4548-119">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="f4548-119">Schema name</span></span>  <br/> |<span data-ttu-id="f4548-120">メッセージスキーマ</span><span class="sxs-lookup"><span data-stu-id="f4548-120">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="f4548-121">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="f4548-121">Validation file</span></span>  <br/> |<span data-ttu-id="f4548-122">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="f4548-122">messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="f4548-123">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="f4548-123">Can be empty</span></span>  <br/> |<span data-ttu-id="f4548-124">false</span><span class="sxs-lookup"><span data-stu-id="f4548-124">false</span></span>  <br/> |
+|<span data-ttu-id="06c41-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="06c41-118">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="06c41-119">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="06c41-119">Schema name</span></span>  <br/> |<span data-ttu-id="06c41-120">メッセージスキーマ</span><span class="sxs-lookup"><span data-stu-id="06c41-120">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="06c41-121">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="06c41-121">Validation file</span></span>  <br/> |<span data-ttu-id="06c41-122">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="06c41-122">messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="06c41-123">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="06c41-123">Can be empty</span></span>  <br/> |<span data-ttu-id="06c41-124">false</span><span class="sxs-lookup"><span data-stu-id="06c41-124">false</span></span>  <br/> |
    
 
