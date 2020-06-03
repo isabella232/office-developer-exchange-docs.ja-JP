@@ -16,65 +16,65 @@ ms.openlocfilehash: e103386f466d65717878b4a6c811f3c3ad6e7c7d
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44465353"
 ---
-# <a name="subscriptionid-getevents"></a><span data-ttu-id="6902d-103">SubscriptionId (GetEvents)</span><span class="sxs-lookup"><span data-stu-id="6902d-103">SubscriptionId (GetEvents)</span></span>
+# <a name="subscriptionid-getevents"></a><span data-ttu-id="bd97e-103">SubscriptionId (GetEvents)</span><span class="sxs-lookup"><span data-stu-id="bd97e-103">SubscriptionId (GetEvents)</span></span>
 
-<span data-ttu-id="6902d-104">**SubscriptionId**要素は、サブスクリプションの識別子を表します。</span><span class="sxs-lookup"><span data-stu-id="6902d-104">The **SubscriptionId** element represents the identifier for a subscription.</span></span> 
+<span data-ttu-id="bd97e-104">**SubscriptionId**要素は、サブスクリプションの識別子を表します。</span><span class="sxs-lookup"><span data-stu-id="bd97e-104">The **SubscriptionId** element represents the identifier for a subscription.</span></span> 
   
 ```xml
 <SubscriptionId/>
 ```
 
- <span data-ttu-id="6902d-105">**SubscriptionIdType**</span><span class="sxs-lookup"><span data-stu-id="6902d-105">**SubscriptionIdType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="6902d-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="6902d-106">Attributes and elements</span></span>
+ <span data-ttu-id="bd97e-105">**SubscriptionIdType**</span><span class="sxs-lookup"><span data-stu-id="bd97e-105">**SubscriptionIdType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="bd97e-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="bd97e-106">Attributes and elements</span></span>
 
-<span data-ttu-id="6902d-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="6902d-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="bd97e-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="bd97e-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="6902d-108">属性</span><span class="sxs-lookup"><span data-stu-id="6902d-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="bd97e-108">属性</span><span class="sxs-lookup"><span data-stu-id="bd97e-108">Attributes</span></span>
 
-<span data-ttu-id="6902d-109">なし。</span><span class="sxs-lookup"><span data-stu-id="6902d-109">None.</span></span>
+<span data-ttu-id="bd97e-109">なし。</span><span class="sxs-lookup"><span data-stu-id="bd97e-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="6902d-110">子要素</span><span class="sxs-lookup"><span data-stu-id="6902d-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="bd97e-110">子要素</span><span class="sxs-lookup"><span data-stu-id="bd97e-110">Child elements</span></span>
 
-<span data-ttu-id="6902d-111">なし。</span><span class="sxs-lookup"><span data-stu-id="6902d-111">None.</span></span>
+<span data-ttu-id="bd97e-111">なし。</span><span class="sxs-lookup"><span data-stu-id="bd97e-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="6902d-112">親要素</span><span class="sxs-lookup"><span data-stu-id="6902d-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="bd97e-112">親要素</span><span class="sxs-lookup"><span data-stu-id="bd97e-112">Parent elements</span></span>
 
-|<span data-ttu-id="6902d-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="6902d-113">**Element**</span></span>|<span data-ttu-id="6902d-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="6902d-114">**Description**</span></span>|
+|<span data-ttu-id="bd97e-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="bd97e-113">**Element**</span></span>|<span data-ttu-id="bd97e-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="bd97e-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="6902d-115">GetEvents</span><span class="sxs-lookup"><span data-stu-id="6902d-115">GetEvents</span></span>](getevents.md) <br/> |<span data-ttu-id="6902d-116">プルクライアントがサーバーからの通知を要求するために使用する操作を表します。</span><span class="sxs-lookup"><span data-stu-id="6902d-116">Represents the operation used by pull clients to request notifications from the server.</span></span>  <br/> |
-|[<span data-ttu-id="6902d-117">通知</span><span class="sxs-lookup"><span data-stu-id="6902d-117">Notification</span></span>](notification-ex15websvcsotherref.md) <br/> |<span data-ttu-id="6902d-118">サブスクリプションに関する情報、および前回の通知以降に発生したイベントに関する情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="6902d-118">Contains information about the subscription and the events that have occurred since the last notification.</span></span>  <br/> |
-|[<span data-ttu-id="6902d-119">メッセージの表示</span><span class="sxs-lookup"><span data-stu-id="6902d-119">SubscribeResponseMessage</span></span>](subscriberesponsemessage.md) <br/> |<span data-ttu-id="6902d-120">サブスクライブ要求の状態と結果を格納します。</span><span class="sxs-lookup"><span data-stu-id="6902d-120">Contains the status and result of a Subscribe request.</span></span>  <br/> |
-|[<span data-ttu-id="6902d-121">登録を解除する</span><span class="sxs-lookup"><span data-stu-id="6902d-121">Unsubscribe</span></span>](unsubscribe.md) <br/> |<span data-ttu-id="6902d-122">サブスクリプションの登録を解除するために使用されるプロパティが含まれています。</span><span class="sxs-lookup"><span data-stu-id="6902d-122">Contains the properties used to unsubscribe from a subscription.</span></span>  <br/> |
+|[<span data-ttu-id="bd97e-115">GetEvents</span><span class="sxs-lookup"><span data-stu-id="bd97e-115">GetEvents</span></span>](getevents.md) <br/> |<span data-ttu-id="bd97e-116">プルクライアントがサーバーからの通知を要求するために使用する操作を表します。</span><span class="sxs-lookup"><span data-stu-id="bd97e-116">Represents the operation used by pull clients to request notifications from the server.</span></span>  <br/> |
+|[<span data-ttu-id="bd97e-117">通知</span><span class="sxs-lookup"><span data-stu-id="bd97e-117">Notification</span></span>](notification-ex15websvcsotherref.md) <br/> |<span data-ttu-id="bd97e-118">サブスクリプションに関する情報、および前回の通知以降に発生したイベントに関する情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="bd97e-118">Contains information about the subscription and the events that have occurred since the last notification.</span></span>  <br/> |
+|[<span data-ttu-id="bd97e-119">メッセージの表示</span><span class="sxs-lookup"><span data-stu-id="bd97e-119">SubscribeResponseMessage</span></span>](subscriberesponsemessage.md) <br/> |<span data-ttu-id="bd97e-120">サブスクライブ要求の状態と結果を格納します。</span><span class="sxs-lookup"><span data-stu-id="bd97e-120">Contains the status and result of a Subscribe request.</span></span>  <br/> |
+|[<span data-ttu-id="bd97e-121">登録を解除する</span><span class="sxs-lookup"><span data-stu-id="bd97e-121">Unsubscribe</span></span>](unsubscribe.md) <br/> |<span data-ttu-id="bd97e-122">サブスクリプションの登録を解除するために使用されるプロパティが含まれています。</span><span class="sxs-lookup"><span data-stu-id="bd97e-122">Contains the properties used to unsubscribe from a subscription.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="6902d-123">テキスト値</span><span class="sxs-lookup"><span data-stu-id="6902d-123">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="bd97e-123">テキスト値</span><span class="sxs-lookup"><span data-stu-id="bd97e-123">Text value</span></span>
 
-<span data-ttu-id="6902d-124">テキスト値は必須です。</span><span class="sxs-lookup"><span data-stu-id="6902d-124">A text value is required.</span></span> <span data-ttu-id="6902d-125">テキスト値は GUID です。</span><span class="sxs-lookup"><span data-stu-id="6902d-125">The text value is a GUID.</span></span>
+<span data-ttu-id="bd97e-124">テキスト値は必須です。</span><span class="sxs-lookup"><span data-stu-id="bd97e-124">A text value is required.</span></span> <span data-ttu-id="bd97e-125">テキスト値は GUID です。</span><span class="sxs-lookup"><span data-stu-id="bd97e-125">The text value is a GUID.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="6902d-126">注釈</span><span class="sxs-lookup"><span data-stu-id="6902d-126">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="bd97e-126">注釈</span><span class="sxs-lookup"><span data-stu-id="bd97e-126">Remarks</span></span>
 
-<span data-ttu-id="6902d-127">サブスクリプション識別子を表す GUID は、サブスクリプションの作成時にクライアントアクセスサーバーによって生成されます。</span><span class="sxs-lookup"><span data-stu-id="6902d-127">The GUID that represents the subscription identifier is generated by the Client Access server when the subscription is created.</span></span>
+<span data-ttu-id="bd97e-127">サブスクリプション識別子を表す GUID は、サブスクリプションの作成時にクライアントアクセスサーバーによって生成されます。</span><span class="sxs-lookup"><span data-stu-id="bd97e-127">The GUID that represents the subscription identifier is generated by the Client Access server when the subscription is created.</span></span>
   
-<span data-ttu-id="6902d-128">この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="6902d-128">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="bd97e-128">この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="bd97e-128">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="6902d-129">要素の情報</span><span class="sxs-lookup"><span data-stu-id="6902d-129">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="bd97e-129">要素の情報</span><span class="sxs-lookup"><span data-stu-id="bd97e-129">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="6902d-130">Namespace</span><span class="sxs-lookup"><span data-stu-id="6902d-130">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="6902d-131">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="6902d-131">Schema name</span></span>  <br/> |<span data-ttu-id="6902d-132">メッセージスキーマ</span><span class="sxs-lookup"><span data-stu-id="6902d-132">messages schema</span></span>  <br/> |
-|<span data-ttu-id="6902d-133">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="6902d-133">Validation file</span></span>  <br/> |<span data-ttu-id="6902d-134">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="6902d-134">messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="6902d-135">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="6902d-135">Can be empty</span></span>  <br/> |<span data-ttu-id="6902d-136">正しくない</span><span class="sxs-lookup"><span data-stu-id="6902d-136">False</span></span>  <br/> |
+|<span data-ttu-id="bd97e-130">Namespace</span><span class="sxs-lookup"><span data-stu-id="bd97e-130">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="bd97e-131">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="bd97e-131">Schema name</span></span>  <br/> |<span data-ttu-id="bd97e-132">メッセージスキーマ</span><span class="sxs-lookup"><span data-stu-id="bd97e-132">messages schema</span></span>  <br/> |
+|<span data-ttu-id="bd97e-133">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="bd97e-133">Validation file</span></span>  <br/> |<span data-ttu-id="bd97e-134">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="bd97e-134">messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="bd97e-135">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="bd97e-135">Can be empty</span></span>  <br/> |<span data-ttu-id="bd97e-136">正しくない</span><span class="sxs-lookup"><span data-stu-id="bd97e-136">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="6902d-137">関連項目</span><span class="sxs-lookup"><span data-stu-id="6902d-137">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bd97e-137">関連項目</span><span class="sxs-lookup"><span data-stu-id="bd97e-137">See also</span></span>
 
 
 
-[<span data-ttu-id="6902d-138">サブスクライブ操作</span><span class="sxs-lookup"><span data-stu-id="6902d-138">Subscribe operation</span></span>](subscribe-operation.md)
+[<span data-ttu-id="bd97e-138">サブスクライブ操作</span><span class="sxs-lookup"><span data-stu-id="bd97e-138">Subscribe operation</span></span>](subscribe-operation.md)
   
-[<span data-ttu-id="6902d-139">GetEvents 操作</span><span class="sxs-lookup"><span data-stu-id="6902d-139">GetEvents operation</span></span>](getevents-operation.md)
+[<span data-ttu-id="bd97e-139">GetEvents 操作</span><span class="sxs-lookup"><span data-stu-id="bd97e-139">GetEvents operation</span></span>](getevents-operation.md)
   
-[<span data-ttu-id="6902d-140">Unsubscribe 操作</span><span class="sxs-lookup"><span data-stu-id="6902d-140">Unsubscribe operation</span></span>](unsubscribe-operation.md)
+[<span data-ttu-id="bd97e-140">Unsubscribe 操作</span><span class="sxs-lookup"><span data-stu-id="bd97e-140">Unsubscribe operation</span></span>](unsubscribe-operation.md)
 

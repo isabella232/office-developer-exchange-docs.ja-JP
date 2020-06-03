@@ -16,55 +16,55 @@ ms.openlocfilehash: 145010b345c3f9792a37c0662b87649b7f20a618
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44463595"
 ---
-# <a name="adjacentmeetingcount"></a><span data-ttu-id="e89a5-103">AdjacentMeetingCount</span><span class="sxs-lookup"><span data-stu-id="e89a5-103">AdjacentMeetingCount</span></span>
+# <a name="adjacentmeetingcount"></a><span data-ttu-id="7be38-103">AdjacentMeetingCount</span><span class="sxs-lookup"><span data-stu-id="7be38-103">AdjacentMeetingCount</span></span>
 
-<span data-ttu-id="e89a5-104">**AdjacentMeetingCount**要素は、会議の時間に隣接する予定表アイテムの合計数を表します。</span><span class="sxs-lookup"><span data-stu-id="e89a5-104">The **AdjacentMeetingCount** element represents the total number of calendar items that are adjacent to a meeting time.</span></span> 
+<span data-ttu-id="7be38-104">**AdjacentMeetingCount**要素は、会議の時間に隣接する予定表アイテムの合計数を表します。</span><span class="sxs-lookup"><span data-stu-id="7be38-104">The **AdjacentMeetingCount** element represents the total number of calendar items that are adjacent to a meeting time.</span></span> 
   
 ```xml
 <AdjacentMeetingCount/>
 ```
 
- <span data-ttu-id="e89a5-105">**Int**</span><span class="sxs-lookup"><span data-stu-id="e89a5-105">**Int**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="e89a5-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="e89a5-106">Attributes and elements</span></span>
+ <span data-ttu-id="7be38-105">**Int**</span><span class="sxs-lookup"><span data-stu-id="7be38-105">**Int**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="7be38-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="7be38-106">Attributes and elements</span></span>
 
-<span data-ttu-id="e89a5-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="e89a5-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="7be38-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="7be38-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="e89a5-108">属性</span><span class="sxs-lookup"><span data-stu-id="e89a5-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="7be38-108">属性</span><span class="sxs-lookup"><span data-stu-id="7be38-108">Attributes</span></span>
 
-<span data-ttu-id="e89a5-109">なし。</span><span class="sxs-lookup"><span data-stu-id="e89a5-109">None.</span></span>
+<span data-ttu-id="7be38-109">なし。</span><span class="sxs-lookup"><span data-stu-id="7be38-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="e89a5-110">子要素</span><span class="sxs-lookup"><span data-stu-id="e89a5-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="7be38-110">子要素</span><span class="sxs-lookup"><span data-stu-id="7be38-110">Child elements</span></span>
 
-<span data-ttu-id="e89a5-111">なし。</span><span class="sxs-lookup"><span data-stu-id="e89a5-111">None.</span></span>
+<span data-ttu-id="7be38-111">なし。</span><span class="sxs-lookup"><span data-stu-id="7be38-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="e89a5-112">親要素</span><span class="sxs-lookup"><span data-stu-id="e89a5-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="7be38-112">親要素</span><span class="sxs-lookup"><span data-stu-id="7be38-112">Parent elements</span></span>
 
-|<span data-ttu-id="e89a5-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="e89a5-113">**Element**</span></span>|<span data-ttu-id="e89a5-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="e89a5-114">**Description**</span></span>|
+|<span data-ttu-id="7be38-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="7be38-113">**Element**</span></span>|<span data-ttu-id="7be38-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="7be38-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="e89a5-115">CalendarItem</span><span class="sxs-lookup"><span data-stu-id="e89a5-115">CalendarItem</span></span>](calendaritem.md) <br/> |<span data-ttu-id="e89a5-116">Exchange の予定表アイテムを表します。</span><span class="sxs-lookup"><span data-stu-id="e89a5-116">Represents an Exchange calendar item.</span></span>  <br/> |
-|[<span data-ttu-id="e89a5-117">MeetingRequest</span><span class="sxs-lookup"><span data-stu-id="e89a5-117">MeetingRequest</span></span>](meetingrequest.md) <br/> |<span data-ttu-id="e89a5-118">Exchange ストア内の会議を表します。</span><span class="sxs-lookup"><span data-stu-id="e89a5-118">Represents a meeting in the Exchange store.</span></span>  <br/> |
+|[<span data-ttu-id="7be38-115">CalendarItem</span><span class="sxs-lookup"><span data-stu-id="7be38-115">CalendarItem</span></span>](calendaritem.md) <br/> |<span data-ttu-id="7be38-116">Exchange の予定表アイテムを表します。</span><span class="sxs-lookup"><span data-stu-id="7be38-116">Represents an Exchange calendar item.</span></span>  <br/> |
+|[<span data-ttu-id="7be38-117">MeetingRequest</span><span class="sxs-lookup"><span data-stu-id="7be38-117">MeetingRequest</span></span>](meetingrequest.md) <br/> |<span data-ttu-id="7be38-118">Exchange ストア内の会議を表します。</span><span class="sxs-lookup"><span data-stu-id="7be38-118">Represents a meeting in the Exchange store.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="e89a5-119">テキスト値</span><span class="sxs-lookup"><span data-stu-id="e89a5-119">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="7be38-119">テキスト値</span><span class="sxs-lookup"><span data-stu-id="7be38-119">Text value</span></span>
 
-<span data-ttu-id="e89a5-120">整数を表すテキスト値が必要です。</span><span class="sxs-lookup"><span data-stu-id="e89a5-120">A text value that represents an integer is required.</span></span>
+<span data-ttu-id="7be38-120">整数を表すテキスト値が必要です。</span><span class="sxs-lookup"><span data-stu-id="7be38-120">A text value that represents an integer is required.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="e89a5-121">注釈</span><span class="sxs-lookup"><span data-stu-id="e89a5-121">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="7be38-121">注釈</span><span class="sxs-lookup"><span data-stu-id="7be38-121">Remarks</span></span>
 
-<span data-ttu-id="e89a5-122">この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="e89a5-122">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="7be38-122">この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="7be38-122">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="e89a5-123">要素の情報</span><span class="sxs-lookup"><span data-stu-id="e89a5-123">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="7be38-123">要素の情報</span><span class="sxs-lookup"><span data-stu-id="7be38-123">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="e89a5-124">Namespace</span><span class="sxs-lookup"><span data-stu-id="e89a5-124">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="e89a5-125">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="e89a5-125">Schema name</span></span>  <br/> |<span data-ttu-id="e89a5-126">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="e89a5-126">Types schema</span></span>  <br/> |
-|<span data-ttu-id="e89a5-127">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="e89a5-127">Validation file</span></span>  <br/> |<span data-ttu-id="e89a5-128">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="e89a5-128">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="e89a5-129">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="e89a5-129">Can be empty</span></span>  <br/> |<span data-ttu-id="e89a5-130">正しくない</span><span class="sxs-lookup"><span data-stu-id="e89a5-130">False</span></span>  <br/> |
+|<span data-ttu-id="7be38-124">Namespace</span><span class="sxs-lookup"><span data-stu-id="7be38-124">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="7be38-125">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="7be38-125">Schema name</span></span>  <br/> |<span data-ttu-id="7be38-126">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="7be38-126">Types schema</span></span>  <br/> |
+|<span data-ttu-id="7be38-127">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="7be38-127">Validation file</span></span>  <br/> |<span data-ttu-id="7be38-128">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="7be38-128">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="7be38-129">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="7be38-129">Can be empty</span></span>  <br/> |<span data-ttu-id="7be38-130">正しくない</span><span class="sxs-lookup"><span data-stu-id="7be38-130">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="e89a5-131">関連項目</span><span class="sxs-lookup"><span data-stu-id="e89a5-131">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7be38-131">関連項目</span><span class="sxs-lookup"><span data-stu-id="7be38-131">See also</span></span>
 
-- [<span data-ttu-id="e89a5-132">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="e89a5-132">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="7be38-132">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="7be38-132">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

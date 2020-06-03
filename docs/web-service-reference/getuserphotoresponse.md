@@ -12,12 +12,12 @@ ms.openlocfilehash: c0dfb6979ade0192b376c3f7115fef78a4cc7e06
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44463308"
 ---
-# <a name="getuserphotoresponse"></a><span data-ttu-id="2f138-103">GetUserPhotoResponse</span><span class="sxs-lookup"><span data-stu-id="2f138-103">GetUserPhotoResponse</span></span>
+# <a name="getuserphotoresponse"></a><span data-ttu-id="75204-103">GetUserPhotoResponse</span><span class="sxs-lookup"><span data-stu-id="75204-103">GetUserPhotoResponse</span></span>
 
-<span data-ttu-id="2f138-104">**GetUserPhotoResponse**要素には、getuserphoto 要求への応答が含まれています。</span><span class="sxs-lookup"><span data-stu-id="2f138-104">The **GetUserPhotoResponse** element contains the response to a GetUserPhoto request.</span></span> 
+<span data-ttu-id="75204-104">**GetUserPhotoResponse**要素には、getuserphoto 要求への応答が含まれています。</span><span class="sxs-lookup"><span data-stu-id="75204-104">The **GetUserPhotoResponse** element contains the response to a GetUserPhoto request.</span></span> 
   
 ```XML
 <GetUserPhotoResponse>
@@ -30,36 +30,36 @@ ms.locfileid: "44463308"
 </GetUserPhotoResponse>
 ```
 
- <span data-ttu-id="2f138-105">**GetUserPhotoResponseMessageType**</span><span class="sxs-lookup"><span data-stu-id="2f138-105">**GetUserPhotoResponseMessageType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="2f138-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="2f138-106">Attributes and elements</span></span>
+ <span data-ttu-id="75204-105">**GetUserPhotoResponseMessageType**</span><span class="sxs-lookup"><span data-stu-id="75204-105">**GetUserPhotoResponseMessageType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="75204-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="75204-106">Attributes and elements</span></span>
 
-<span data-ttu-id="2f138-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="2f138-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="75204-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="75204-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="2f138-108">属性</span><span class="sxs-lookup"><span data-stu-id="2f138-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="75204-108">属性</span><span class="sxs-lookup"><span data-stu-id="75204-108">Attributes</span></span>
 
-<span data-ttu-id="2f138-109">なし。</span><span class="sxs-lookup"><span data-stu-id="2f138-109">None.</span></span>
+<span data-ttu-id="75204-109">なし。</span><span class="sxs-lookup"><span data-stu-id="75204-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="2f138-110">子要素</span><span class="sxs-lookup"><span data-stu-id="2f138-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="75204-110">子要素</span><span class="sxs-lookup"><span data-stu-id="75204-110">Child elements</span></span>
 
-<span data-ttu-id="2f138-111">[Messagetext](messagetext.md)  | 応答[Secmode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [Haschanged](haschanged.md)  | [PictureData](picturedata.md)</span><span class="sxs-lookup"><span data-stu-id="2f138-111">[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [HasChanged](haschanged.md) | [PictureData](picturedata.md)</span></span>
+<span data-ttu-id="75204-111">[Messagetext](messagetext.md)  | 応答[Secmode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [Haschanged](haschanged.md)  | [PictureData](picturedata.md)</span><span class="sxs-lookup"><span data-stu-id="75204-111">[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [HasChanged](haschanged.md) | [PictureData](picturedata.md)</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="2f138-112">親要素</span><span class="sxs-lookup"><span data-stu-id="2f138-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="75204-112">親要素</span><span class="sxs-lookup"><span data-stu-id="75204-112">Parent elements</span></span>
 
-<span data-ttu-id="2f138-113">なし。</span><span class="sxs-lookup"><span data-stu-id="2f138-113">None.</span></span>
+<span data-ttu-id="75204-113">なし。</span><span class="sxs-lookup"><span data-stu-id="75204-113">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="2f138-114">注釈</span><span class="sxs-lookup"><span data-stu-id="2f138-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="75204-114">注釈</span><span class="sxs-lookup"><span data-stu-id="75204-114">Remarks</span></span>
 
-<span data-ttu-id="2f138-115">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="2f138-115">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="75204-115">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="75204-115">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="2f138-116">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="2f138-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="75204-116">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="75204-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="2f138-117">要素の情報</span><span class="sxs-lookup"><span data-stu-id="2f138-117">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="75204-117">要素の情報</span><span class="sxs-lookup"><span data-stu-id="75204-117">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="2f138-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="2f138-118">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="2f138-119">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="2f138-119">Schema name</span></span>  <br/> |<span data-ttu-id="2f138-120">メッセージスキーマ</span><span class="sxs-lookup"><span data-stu-id="2f138-120">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="2f138-121">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="2f138-121">Validation file</span></span>  <br/> |<span data-ttu-id="2f138-122">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="2f138-122">messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="2f138-123">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="2f138-123">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="75204-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="75204-118">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="75204-119">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="75204-119">Schema name</span></span>  <br/> |<span data-ttu-id="75204-120">メッセージスキーマ</span><span class="sxs-lookup"><span data-stu-id="75204-120">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="75204-121">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="75204-121">Validation file</span></span>  <br/> |<span data-ttu-id="75204-122">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="75204-122">messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="75204-123">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="75204-123">Can be empty</span></span>  <br/> ||
    
 

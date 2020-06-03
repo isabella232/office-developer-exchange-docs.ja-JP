@@ -12,12 +12,12 @@ ms.openlocfilehash: 011aa34886b4f50542c68661d9b61be3a3ce3a1f
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44463889"
 ---
-# <a name="markallitemsasreadresponse"></a><span data-ttu-id="cdd7a-103">MarkAllItemsAsReadResponse</span><span class="sxs-lookup"><span data-stu-id="cdd7a-103">MarkAllItemsAsReadResponse</span></span>
+# <a name="markallitemsasreadresponse"></a><span data-ttu-id="436aa-103">MarkAllItemsAsReadResponse</span><span class="sxs-lookup"><span data-stu-id="436aa-103">MarkAllItemsAsReadResponse</span></span>
 
-<span data-ttu-id="cdd7a-104">**Markallitemsasreadresponse**要素は、 **Markallitemsasread**要求への応答を指定します。</span><span class="sxs-lookup"><span data-stu-id="cdd7a-104">The **MarkAllItemsAsReadResponse** element specifies the response to a **MarkAllItemsAsRead** request.</span></span> 
+<span data-ttu-id="436aa-104">**Markallitemsasreadresponse**要素は、 **Markallitemsasread**要求への応答を指定します。</span><span class="sxs-lookup"><span data-stu-id="436aa-104">The **MarkAllItemsAsReadResponse** element specifies the response to a **MarkAllItemsAsRead** request.</span></span> 
   
 ```XML
 <MarkAllItemsAsReadResponse>
@@ -25,36 +25,36 @@ ms.locfileid: "44463889"
 </MarkAllItemsAsReadResponse>
 ```
 
- <span data-ttu-id="cdd7a-105">**MarkAllItemsAsReadResponseType**</span><span class="sxs-lookup"><span data-stu-id="cdd7a-105">**MarkAllItemsAsReadResponseType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="cdd7a-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="cdd7a-106">Attributes and elements</span></span>
+ <span data-ttu-id="436aa-105">**MarkAllItemsAsReadResponseType**</span><span class="sxs-lookup"><span data-stu-id="436aa-105">**MarkAllItemsAsReadResponseType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="436aa-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="436aa-106">Attributes and elements</span></span>
 
-<span data-ttu-id="cdd7a-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="cdd7a-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="436aa-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="436aa-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="cdd7a-108">属性</span><span class="sxs-lookup"><span data-stu-id="cdd7a-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="436aa-108">属性</span><span class="sxs-lookup"><span data-stu-id="436aa-108">Attributes</span></span>
 
-<span data-ttu-id="cdd7a-109">なし。</span><span class="sxs-lookup"><span data-stu-id="cdd7a-109">None.</span></span>
+<span data-ttu-id="436aa-109">なし。</span><span class="sxs-lookup"><span data-stu-id="436aa-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="cdd7a-110">子要素</span><span class="sxs-lookup"><span data-stu-id="cdd7a-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="436aa-110">子要素</span><span class="sxs-lookup"><span data-stu-id="436aa-110">Child elements</span></span>
 
-[<span data-ttu-id="cdd7a-111">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="cdd7a-111">ResponseMessages</span></span>](responsemessages.md)
+[<span data-ttu-id="436aa-111">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="436aa-111">ResponseMessages</span></span>](responsemessages.md)
   
-### <a name="parent-elements"></a><span data-ttu-id="cdd7a-112">親要素</span><span class="sxs-lookup"><span data-stu-id="cdd7a-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="436aa-112">親要素</span><span class="sxs-lookup"><span data-stu-id="436aa-112">Parent elements</span></span>
 
-<span data-ttu-id="cdd7a-113">なし。</span><span class="sxs-lookup"><span data-stu-id="cdd7a-113">None.</span></span>
+<span data-ttu-id="436aa-113">なし。</span><span class="sxs-lookup"><span data-stu-id="436aa-113">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="cdd7a-114">注釈</span><span class="sxs-lookup"><span data-stu-id="cdd7a-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="436aa-114">注釈</span><span class="sxs-lookup"><span data-stu-id="436aa-114">Remarks</span></span>
 
-<span data-ttu-id="cdd7a-115">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="cdd7a-115">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="436aa-115">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="436aa-115">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="cdd7a-116">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="cdd7a-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="436aa-116">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="436aa-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="cdd7a-117">要素の情報</span><span class="sxs-lookup"><span data-stu-id="cdd7a-117">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="436aa-117">要素の情報</span><span class="sxs-lookup"><span data-stu-id="436aa-117">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="cdd7a-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="cdd7a-118">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="cdd7a-119">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="cdd7a-119">Schema name</span></span>  <br/> |<span data-ttu-id="cdd7a-120">メッセージスキーマ</span><span class="sxs-lookup"><span data-stu-id="cdd7a-120">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="cdd7a-121">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="cdd7a-121">Validation file</span></span>  <br/> |<span data-ttu-id="cdd7a-122">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="cdd7a-122">messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="cdd7a-123">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="cdd7a-123">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="436aa-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="436aa-118">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="436aa-119">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="436aa-119">Schema name</span></span>  <br/> |<span data-ttu-id="436aa-120">メッセージスキーマ</span><span class="sxs-lookup"><span data-stu-id="436aa-120">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="436aa-121">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="436aa-121">Validation file</span></span>  <br/> |<span data-ttu-id="436aa-122">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="436aa-122">messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="436aa-123">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="436aa-123">Can be empty</span></span>  <br/> ||
    
 
