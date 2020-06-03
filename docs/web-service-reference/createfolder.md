@@ -16,7 +16,7 @@ ms.openlocfilehash: c2a971a6b827553a1632c2a86e4d36e3b83a2de3
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457544"
 ---
 # <a name="createfolder"></a>CreateFolder
@@ -67,8 +67,7 @@ ms.locfileid: "44457544"
 
 
 
-
-  [CreateFolder 操作](createfolder-operation.md)
+[CreateFolder 操作](createfolder-operation.md)
 
 
 [フォルダーの作成 (Exchange Web サービス)](https://msdn.microsoft.com/library/3b15b0ec-8691-45ed-9a24-a91ff732d6cf%28Office.15%29.aspx)

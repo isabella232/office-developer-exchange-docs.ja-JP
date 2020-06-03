@@ -16,7 +16,7 @@ ms.openlocfilehash: 01fe8b7341c38ad33089c56271434ad3f9a4e5f0
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458363"
 ---
 # <a name="createmanagedfolder"></a>CreateManagedFolder
@@ -78,8 +78,7 @@ Exchange Web サービスを使用して管理フォルダーをメールボッ�
 
 [CreateManagedFolder 操作](createmanagedfolder-operation.md)
   
-
-  [FindFolder 操作](findfolder-operation.md)
+[FindFolder 操作](findfolder-operation.md)
 
 
 [フォルダーの検索](https://msdn.microsoft.com/library/9124d868-017a-43f0-b915-5c0082cacec9%28Office.15%29.aspx)

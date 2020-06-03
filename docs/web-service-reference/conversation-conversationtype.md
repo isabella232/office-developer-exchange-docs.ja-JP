@@ -16,7 +16,7 @@ ms.openlocfilehash: 9969a6cfe1f977b1c24e03771f231f4eb03d1ac6
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458937"
 ---
 # <a name="conversation-conversationtype"></a>会話 (ConversationType)
@@ -84,7 +84,7 @@ ms.locfileid: "44458937"
 |[GlobalUniqueSenders](globaluniquesenders.md) <br/> |メールボックス内のスレッドアイテムのすべての送信者の一覧が含まれています。  <br/> |
 |[LastDeliveryTime](lastdeliverytime.md) <br/> |現在のフォルダーで、このスレッドで最後に受信したメッセージの配信時刻を含みます。  <br/> |
 |[GlobalLastDeliveryTime](globallastdeliverytime.md) <br/> |メールボックス内のすべてのフォルダーにわたって、この会話で最後に受信したメッセージの配信時刻を含みます。  <br/> |
-|[カテゴリ](categories-ex15websvcsotherref.md) <br/> |現在のフォルダー内のすべての会話アイテムに適用されるカテゴリを識別する文字列のコレクションが含まれています。  <br/> |
+|[Categories](categories-ex15websvcsotherref.md) <br/> |現在のフォルダー内のすべての会話アイテムに適用されるカテゴリを識別する文字列のコレクションが含まれています。  <br/> |
 |[GlobalCategories](globalcategories.md) <br/> |メールボックス内のすべての会話アイテムのカテゴリリストが保存されています。  <br/> |
 |[FlagStatus](flagstatus.md) <br/> |現在のフォルダー内のスレッドアイテムの集約フラグの状態を含みます。  <br/> |
 |[GlobalFlagStatus](globalflagstatus.md) <br/> |メールボックス内のすべての会話アイテムの集約フラグの状態を格納します。  <br/> |
@@ -94,7 +94,7 @@ ms.locfileid: "44458937"
 |[GlobalMessageCount](globalmessagecount.md) <br/> |メールボックス内の会話アイテムの合計数が含まれます。  <br/> |
 |[UnreadCount](unreadcount.md) <br/> |フォルダー内の未読の会話アイテムの数が含まれます。  <br/> |
 |[GlobalUnreadCount](globalunreadcount.md) <br/> |メールボックス内のすべての未開封の会話アイテムの数を含みます。  <br/> |
-|[[サイズ]](size.md) <br/> |現在のフォルダー内のすべての会話アイテムのサイズから計算された会話のサイズを格納します。  <br/> |
+|[Size](size.md) <br/> |現在のフォルダー内のすべての会話アイテムのサイズから計算された会話のサイズを格納します。  <br/> |
 |[GlobalSize](globalsize.md) <br/> |メールボックス内のすべての会話アイテムのサイズによって計算された会話のサイズを含みます。  <br/> |
 |[ItemClasses (ArrayOfItemClassType)](itemclasses-arrayofitemclasstype.md) <br/> |現在のフォルダー内の会話アイテムのすべてのアイテムクラスを表すアイテムクラスのリストが含まれます。  <br/> |
 |[GlobalItemClasses](globalitemclasses.md) <br/> |メールボックス内の会話アイテムのすべてのアイテムクラスを表すアイテムクラスのリストが含まれています。  <br/> |

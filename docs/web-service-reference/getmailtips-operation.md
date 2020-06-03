@@ -16,7 +16,7 @@ ms.openlocfilehash: 41a4bb99ee7ae4e416ec8a106968bb7869e60345
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458657"
 ---
 # <a name="getmailtips-operation"></a>GetMailTips ヒント操作
@@ -25,7 +25,7 @@ ms.locfileid: "44458657"
   
 ## <a name="getmailtips-request-example"></a>GetMailTips ヒント要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 クライアントは、要求 XML を構築し、サーバーに送信します。 要求は、クライアントが送信しているユーザー、メールヒントを取得するメールボックス、および要求されているメールヒントを識別します。 この例では、クライアントは、選択したメールボックスのすべてのメールヒントを返すように要求します。
   
@@ -72,7 +72,7 @@ ms.locfileid: "44458657"
     
 ## <a name="successful-getmailtips-response-example"></a>成功した GetMailTips ヒントの応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の簡易オブジェクトアクセスプロトコル (SOAP) 本文の例は、 **Getmailtips ヒント**要求に対する正常な応答を示しています。 
   

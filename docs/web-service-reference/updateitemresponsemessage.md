@@ -16,7 +16,7 @@ ms.openlocfilehash: ef25dcf26e06f199587cef885d8cbc9e93b52bdb
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457943"
 ---
 # <a name="updateitemresponsemessage"></a>UpdateItemResponseMessage
@@ -89,8 +89,7 @@ ms.locfileid: "44457943"
    
 ## <a name="see-also"></a>関連項目
 
-- 
-  [UpdateItem 操作](updateitem-operation.md)
+- [UpdateItem 操作](updateitem-operation.md)
 - [連絡先の更新](https://msdn.microsoft.com/library/9a865953-b94a-4229-b632-2dee433314be%28Office.15%29.aspx)
 - [タスクの更新](https://msdn.microsoft.com/library/0a1bf360-d40c-4a99-929b-4c73a14394d5%28Office.15%29.aspx)
 

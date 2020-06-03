@@ -10,7 +10,7 @@ ms.openlocfilehash: 8f539a2131798e764574ef92f75deb654c02c90f
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457663"
 ---
 # <a name="property-sets-and-response-shapes-in-ews-in-exchange"></a>Exchange の EWS でのプロパティ セットと応答の図形
@@ -28,7 +28,7 @@ Exchange Online、Office 365 の一部である Exchange Online、または Exch
 |**応答の図形**|**EWS マネージ API の同等物**|**説明**|
 |:-----|:-----|:-----|
 |ID のみ  <br/> |[BasePropertySet.IdOnly](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.basepropertyset%28v=exchg.80%29.aspx) <br/> |アイテムまたはフォルダーの ID のみを返します。ほとんどのアプリケーションは、この応答の図形を使用し、さらに必要なプロパティを指定します。  <br/> |
-|既定値  <br/> |該当なし  <br/> |アイテムまたはフォルダー (EWS のみ) の既定である事前定義プロパティ セットを返します。  <br/> |
+|既定値  <br/> |N/A  <br/> |アイテムまたはフォルダー (EWS のみ) の既定である事前定義プロパティ セットを返します。  <br/> |
 |すべてのプロパティ  <br/> |[BasePropertySet.FirstClassProperties](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.basepropertyset%28v=exchg.80%29.aspx) <br/> |クライアント アプリケーションで最も頻繁に使用されるプロパティを返します。プロパティ パスを使用して追加のプロパティを返すことができます。  <br/> |
    
 ## <a name="default-response-shapes"></a>既定の応答の図形
@@ -249,7 +249,7 @@ EWS には、フォルダーまたはフォルダー アイテムの既定の応
     
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の Web サービス クライアントを開発する](develop-web-service-clients-for-exchange.md)
+- [Exchange 用の Web サービス クライアントの開発](develop-web-service-clients-for-exchange.md)
     
 - [FindItem 操作](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)
     

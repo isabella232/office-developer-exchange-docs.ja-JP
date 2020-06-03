@@ -12,7 +12,7 @@ ms.openlocfilehash: a1027a0a1ee06cf3e83833b1d84c13d77b07c0b9
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458440"
 ---
 # <a name="addentityfeedback-operation"></a>AddEntityFeedback 操作
@@ -70,13 +70,13 @@ Soap 要求には、1つの要素の**エンティティフィードのバック
   <br/> |
 |**ClientId** <br/> |はい  <br/> |クライアントの種類 (Outlook、OWA など)。  <br/> |ClientIDType 列挙型  <br/> |
 |**ClientSessionId** <br/> |はい  <br/> |セッション ID を識別する GUID。 クライアントで生成されます。  <br/> |GUID  <br/> |
-|**ClientVersion** <br/> |はい  <br/> |クライアントのバージョン (例: 15.01.0101.000)。  <br/> |String  <br/> |
+|**ClientVersion** <br/> |はい  <br/> |クライアントのバージョン (例: 15.01.0101.000)。  <br/> |文字列  <br/> |
 |**EntityAddSource** <br/> |いいえ  <br/> |移行元のエンティティ (EntityRelevanceAPI、型、貼り付けなど)。  <br/> |EntityAddSource 列挙  <br/> |
 |**EntrySequenceNumber** <br/> |はい  <br/> |クライアントセッションあたりの増分整数。 データ損失を検出するために使用されます。  <br/> |Int  <br/> |
-|**EventType** <br/> |はい  <br/> |イベントの種類 (たとえば、エンティティが追加され、エンティティが削除された場合)。  <br/> |String  <br/> |
+|**EventType** <br/> |はい  <br/> |イベントの種類 (たとえば、エンティティが追加され、エンティティが削除された場合)。  <br/> |文字列  <br/> |
 |**JSONPropertyBag** <br/> |いいえ  <br/> |イベント (キー/値のペアの JSON blob) に関連付けられている追加のプロパティ。  <br/> |JSON Blob  <br/> |
 |**TargetEntityList** <br/> |いいえ  <br/> |イベントに関連付けられているエンティティのリスト。  <br/> |JSON 文字列  <br/> |
-|**TransactionId** <br/> |いいえ  <br/> |Id (GUID) は、クエリログの ID を関連付けます。  <br/> |String  <br/> |
+|**TransactionId** <br/> |いいえ  <br/> |Id (GUID) は、クエリログの ID を関連付けます。  <br/> |文字列  <br/> |
    
 ### <a name="successful-addentityfeedback-operation-response"></a>AddEntityFeedback 操作の成功応答
 

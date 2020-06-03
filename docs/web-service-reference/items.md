@@ -16,7 +16,7 @@ ms.openlocfilehash: 489e34ad0e4bcc2520febb3c213db970fa496051
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458132"
 ---
 # <a name="items"></a>アイテム
@@ -55,13 +55,13 @@ ms.locfileid: "44458132"
 |[Item](item.md) <br/> |Exchange ストア内のアイテムを表します。  <br/> |
 |[Message](message-ex15websvcsotherref.md) <br/> |Exchange 電子メールメッセージを表します。  <br/> |
 |[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
-|[連絡先](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
+|[Contact](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
 |[DistributionList](distributionlist.md) <br/> |配布リストを表します。  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Exchange ストア内の会議メッセージを表します。  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議出席依頼を表します。  <br/> |
 |[MeetingResponse](meetingresponse.md) <br/> |Exchange ストア内の会議の応答を表します。  <br/> |
 |[MeetingCancellation](meetingcancellation.md) <br/> |Exchange ストア内の会議の取り消しを表します。  <br/> |
-|[Task](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
+|[タスク](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
 |[PostItem](postitem.md) <br/> |Exchange ストア内の投稿アイテムを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
@@ -97,8 +97,7 @@ ms.locfileid: "44458132"
 
 
 
-
-  [Exchange 用 EWS リファレンス](ews-reference-for-exchange.md)
+[Exchange 用 EWS リファレンス](ews-reference-for-exchange.md)
   
 - [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

@@ -16,7 +16,7 @@ ms.openlocfilehash: c4d7c21ab70c21ceb63e53d008d25aebf8e22270
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458972"
 ---
 # <a name="subject"></a>件名
@@ -46,11 +46,11 @@ ms.locfileid: "44458972"
 |:-----|:-----|
 |[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
 |[CancelCalendarItem](cancelcalendaritem.md) <br/> |予定表アイテムの応答の取り消しオブジェクトを表します。  <br/> |
-|[連絡先](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
+|[Contact](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
 |[DistributionList](distributionlist.md) <br/> |配布リストを表します。  <br/> |
 |[FindMessageTrackingReport](findmessagetrackingreport.md) <br/> |検索するメッセージの種類の条件を指定します。  <br/> |
 |[Forwarditem と](forwarditem.md) <br/> |転送アイテムのスマート応答オブジェクトを表します。  <br/> |
-|[アイテム](item.md) <br/> |Exchange ストア内のアイテムを表します。  <br/> |
+|[Item](item.md) <br/> |Exchange ストア内のアイテムを表します。  <br/> |
 |[MeetingCancellation](meetingcancellation.md) <br/> |Exchange ストア内の会議の取り消しを表します。  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Exchange ストア内の会議メッセージを表します。  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議出席依頼を表します。  <br/> |
@@ -61,7 +61,7 @@ ms.locfileid: "44458972"
 |[RemoveItem](removeitem.md) <br/> |アイテムの削除応答オブジェクトを表します。  <br/> |
 |[Replyalltoitem と](replyalltoitem.md) <br/> |応答のすべてのスマート応答オブジェクトを表します。  <br/> |
 |[ReplyToItem](replytoitem.md) <br/> |返信先アイテムのスマート応答オブジェクトを表します。  <br/> |
-|[Task](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
+|[タスク](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 

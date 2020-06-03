@@ -16,7 +16,7 @@ ms.openlocfilehash: 14d8d1936b3cfd52bdb816343c86606cb8ccf76f
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458923"
 ---
 # <a name="createattachmentresponsemessage"></a>CreateAttachmentResponseMessage
@@ -65,7 +65,7 @@ ms.locfileid: "44458923"
 |[ResponseCode](responsecode.md) <br/> |要求で発生した特定のエラーを識別するエラーコードを提供します。  <br/> |
 |[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在未使用で、今後の使用のために予約されています。 このプロパティには0の値が含まれています。  <br/> |
 |[MessageXml](messagexml.md) <br/> |エラー応答に関する追加情報を提供します。  <br/> |
-|[添付ファイル](attachments-ex15websvcsotherref.md) <br/> |Exchange ストア内のアイテムに添付されているアイテムまたはファイルが保存されています。  <br/> |
+|[Attachments](attachments-ex15websvcsotherref.md) <br/> |Exchange ストア内のアイテムに添付されているアイテムまたはファイルが保存されています。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -93,7 +93,6 @@ ms.locfileid: "44458923"
 
 - [CreateAttachment 操作](createattachment-operation.md) 
 - [CreateAttachment](createattachment.md)
-- 
-  [Exchange 用 EWS リファレンス](ews-reference-for-exchange.md) 
+- [Exchange 用 EWS リファレンス](ews-reference-for-exchange.md) 
 - [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

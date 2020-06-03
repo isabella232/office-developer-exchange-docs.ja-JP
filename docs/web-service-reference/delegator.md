@@ -16,7 +16,7 @@ ms.openlocfilehash: 63f97838d732c29e1e434783e7a12cf45e195e76
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457362"
 ---
 # <a name="delegator"></a>Delegator
@@ -45,7 +45,7 @@ ms.locfileid: "44457362"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Task](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
+|[タスク](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 

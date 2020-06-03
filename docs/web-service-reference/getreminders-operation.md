@@ -12,7 +12,7 @@ ms.openlocfilehash: dcbe20c674d7524a7776d374fa6964899abf472f
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458307"
 ---
 # <a name="getreminders-operation"></a>GetReminders 操作
@@ -150,7 +150,7 @@ SOAP 本文には、次の要素も含めることができます。
     
 - [Reminder](reminder.md)
     
-- [[件名]](subject.md)
+- [件名](subject.md)
     
 - [場所](location-remindermessagedatatype.md)
     

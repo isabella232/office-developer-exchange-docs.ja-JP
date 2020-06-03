@@ -16,7 +16,7 @@ ms.openlocfilehash: fb28e88d1a47b0ea8f63ed33b1efacae8538e1c8
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458209"
 ---
 # <a name="getuserconfiguration-operation"></a>GetUserConfiguration 操作
@@ -25,7 +25,7 @@ ms.locfileid: "44458209"
   
 ## <a name="getuserconfiguration-request-example"></a>GetUserConfiguration 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の**Getuserconfiguration**要求の例は、下書きフォルダーでユーザー構成オブジェクトを取得する要求を形成する方法を示しています。 
   
@@ -54,7 +54,7 @@ ms.locfileid: "44458209"
 
 ## <a name="getuserconfiguration-response-example"></a>GetUserConfiguration 応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、 **Getuserconfiguration**要求に対する正常な応答を示しています。 
   

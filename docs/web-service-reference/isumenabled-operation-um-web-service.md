@@ -15,7 +15,7 @@ ms.openlocfilehash: b1478f5a113059251fe1b036ac7d77e5a4ab4f50
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458237"
 ---
 # <a name="isumenabled-operation-um-web-service"></a>IsUMEnabled 操作 (UM web サービス)
@@ -24,7 +24,7 @@ IsUMEnabled 操作は、メールボックスがユニファイドメッセー�
   
 ## <a name="isumenabled-request-example"></a>IsUMEnabled 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の IsUMEnabled 要求の例は、メールボックスがユニファイドメッセージングに対して有効になっているかどうかを判断する要求を形成する方法を示しています。
   
@@ -41,7 +41,7 @@ IsUMEnabled 操作は、メールボックスがユニファイドメッセー�
 
 ## <a name="successful-isumenabled-response-example"></a>Successful IsUMEnabled response の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、IsUMEnabled 要求に対する正常な応答を示しています。
   

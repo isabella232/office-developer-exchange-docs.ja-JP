@@ -16,7 +16,7 @@ ms.openlocfilehash: 386dd2aa4e114d8382d5c83a3d6da70b1ccbbada
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457530"
 ---
 # <a name="createfolderresponsemessage"></a>CreateFolderResponseMessage
@@ -84,9 +84,7 @@ ms.locfileid: "44457530"
    
 ## <a name="see-also"></a>関連項目
 
-- 
-  [CreateFolder 操作](createfolder-operation.md)
-- 
-  [Exchange 用 EWS リファレンス](ews-reference-for-exchange.md) 
+- [CreateFolder 操作](createfolder-operation.md)
+- [Exchange 用 EWS リファレンス](ews-reference-for-exchange.md) 
 - [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

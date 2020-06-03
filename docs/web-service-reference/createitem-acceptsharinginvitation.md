@@ -16,7 +16,7 @@ ms.openlocfilehash: eda846b72f42fe886497b355d9cddade7c5f4044
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457516"
 ---
 # <a name="createitem-acceptsharinginvitation"></a>CreateItem (AcceptSharingInvitation)
@@ -25,7 +25,7 @@ ms.locfileid: "44457516"
   
 ## <a name="accept-sharing-invitation-request-example"></a>共有への招待の要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、共有への招待を承諾する方法を示しています。
   
@@ -65,7 +65,7 @@ ms.locfileid: "44457516"
   
 ## <a name="successful-accept-sharing-invitation-response-example"></a>成功した共有への招待の応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、 **CreateItem**要求に対する正常な応答を示しています。 
   
@@ -117,7 +117,7 @@ ms.locfileid: "44457516"
     
 ## <a name="accept-sharing-invitation-error-response-example"></a>共有への招待の承諾のエラー応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、 **CreateItem**要求に対するエラー応答を示しています。 このエラーは、Exchange ストアに存在しない共有への招待を承諾しようとしたことが原因で発生します。 
   
@@ -177,6 +177,5 @@ ms.locfileid: "44457516"
 
 
 
-
-  [CreateItem 操作](createitem-operation.md)
+[CreateItem 操作](createitem-operation.md)
 

@@ -16,7 +16,7 @@ ms.openlocfilehash: c51fb17f0b0f9c3dd1db8b0ff31f230fac37ce67
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458881"
 ---
 # <a name="createfolderresponse"></a>CreateFolderResponse
@@ -65,8 +65,7 @@ ms.locfileid: "44458881"
 
 
 
-
-  [CreateFolder 操作](createfolder-operation.md)
+[CreateFolder 操作](createfolder-operation.md)
   
 [CreateFolder](createfolder.md)
 

@@ -16,7 +16,7 @@ ms.openlocfilehash: 5eb97bef349ca02848f65fa58370b9c81c6653d0
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457005"
 ---
 # <a name="distributionlist"></a>DistributionList
@@ -87,13 +87,13 @@ ms.locfileid: "44457005"
 |[ItemId](itemid.md) <br/> |Exchange ストア内の配布リストアイテムの一意識別子および変更キーが含まれています。  <br/> |
 |[ParentFolderId](parentfolderid.md) <br/> |配布リストアイテムを含む親フォルダーの識別子を表します。  <br/> |
 |[ItemClass](itemclass.md) <br/> |配布リストアイテムのメッセージクラスを表します。  <br/> |
-|[[件名]](subject.md) <br/> |Exchange ストアアイテムおよび応答オブジェクトの件名を表します。  <br/> |
+|[件名](subject.md) <br/> |Exchange ストアアイテムおよび応答オブジェクトの件名を表します。  <br/> |
 |[Sensitivity](sensitivity.md) <br/> |配布リストアイテムの秘密度の状態を格納します。  <br/> |
 |[Body](body.md) <br/> |配布リストアイテムの実際の本文のコンテンツを表します。  <br/> |
-|[添付ファイル](attachments-ex15websvcsotherref.md) <br/> |Exchange ストア内の配布リストアイテムに添付されているアイテムまたはファイルが保存されています。  <br/> |
+|[Attachments](attachments-ex15websvcsotherref.md) <br/> |Exchange ストア内の配布リストアイテムに添付されているアイテムまたはファイルが保存されています。  <br/> |
 |[DateTimeReceived](datetimereceived.md) <br/> |メールボックス内の配布リストアイテムが受信された日付と時刻を表します。  <br/> |
-|[[サイズ]](size.md) <br/> |配布リストアイテムのサイズ (バイト単位) を表します。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。  <br/> |
-|[カテゴリ](categories-ex15websvcsotherref.md) <br/> |メールボックス内の配布リストアイテムが属するカテゴリを識別する文字列のコレクションを表します。  <br/> |
+|[Size](size.md) <br/> |配布リストアイテムのサイズ (バイト単位) を表します。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。  <br/> |
+|[Categories](categories-ex15websvcsotherref.md) <br/> |メールボックス内の配布リストアイテムが属するカテゴリを識別する文字列のコレクションを表します。  <br/> |
 |[Importance](importance.md) <br/> |配布リストアイテムの重要度について説明します。  <br/> |
 |[InReplyTo](inreplyto.md) <br/> |このアイテムが返信であるアイテムの識別子を表します。  <br/> |
 |[IsSubmitted](issubmitted.md) <br/> |アイテムが送信トレイの既定フォルダーに送信されたかどうかを示します。  <br/> |

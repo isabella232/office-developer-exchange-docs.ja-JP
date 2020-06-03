@@ -16,7 +16,7 @@ ms.openlocfilehash: d1393a6a5e99b7e0a7e354d2b7dd035d04356ec2
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458279"
 ---
 # <a name="getroomlists-operation"></a>GetRoomLists 操作
@@ -36,7 +36,7 @@ ms.locfileid: "44458279"
    
 ## <a name="getroomlists-request-example"></a>GetRoomLists 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 以下は、サーバーで使用可能な会議室一覧を返す**GetRoomLists**要求の例です。 
   
@@ -66,7 +66,7 @@ ms.locfileid: "44458279"
     
 ## <a name="successful-getroomlists-response-example"></a>Successful GetRoomLists response の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 **GetRoomLists**要求に対する応答の例を次に示します。 この応答は、サーバー上に1つの会議室一覧を表示します。 
   
@@ -115,7 +115,7 @@ ms.locfileid: "44458279"
     
 ### <a name="getroomlists-error-response-example"></a>GetRoomLists エラー応答の例
 
-#### <a name="description"></a>説明
+#### <a name="description"></a>Description
 
 次の例は、会議室一覧が定義されていないサーバーから、会議室一覧を取得しようとした場合の応答を示しています。
   

@@ -16,7 +16,7 @@ ms.openlocfilehash: 125a6d212e5eaf85ace71c048de809f3a05ba9b6
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457551"
 ---
 # <a name="createfolder-operation"></a>CreateFolder 操作
@@ -25,7 +25,7 @@ CreateFolder 操作は、フォルダー、予定表フォルダー、連絡先�
   
 ## <a name="createfolder-request-example"></a>CreateFolder 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 CreateFolder 要求の次の例は、メールボックスルートに2つの新しいフォルダーを作成するための要求を形成する方法を示しています。
   
@@ -81,7 +81,7 @@ CreateFolder 操作では、汎用フォルダーの種類要素を使用して�
   
 ## <a name="successful-createfolder-response-example"></a>Successful CreateFolder response の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、CreateFolder 要求に対する正常な応答を示しています。 この例では、応答は新しいフォルダーの識別子を返します。
   
@@ -150,7 +150,7 @@ CreateFolder 操作の応答メッセージに関するその他のオプショ�
   
 ## <a name="createfolder-error-response"></a>CreateFolder エラー応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、CreateFolder 要求に対するエラー応答を示しています。
   
@@ -208,11 +208,9 @@ CreateFolder 操作のエラー応答メッセージに関するその他のオ�
 
 
 
-
-  [FindItem 操作](finditem-operation.md)
+[FindItem 操作](finditem-operation.md)
   
-
-  [FindFolder 操作](findfolder-operation.md)
+[FindFolder 操作](findfolder-operation.md)
   
  **CreateFolderType**
 

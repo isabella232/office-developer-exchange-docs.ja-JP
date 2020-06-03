@@ -16,7 +16,7 @@ ms.openlocfilehash: 622faa622b0ea231a6331ff62631885d4252c1f5
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457698"
 ---
 # <a name="getuseroofsettings-operation"></a>GetUserOofSettings 操作
@@ -41,7 +41,7 @@ ms.locfileid: "44457698"
   
 ## <a name="getuseroofsettings-request-example"></a>GetUserOofSettings 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、1人のユーザーの OOF 情報を取得する**Getuseroofsettings**要求を示しています。 
   
@@ -74,7 +74,7 @@ ms.locfileid: "44457698"
     
 ## <a name="successful-getuseroofsettings-response-example"></a>Successful GetUserOofSettings response の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、不在時のメッセージで無効になっている OOF 状態を示しています。
   
@@ -148,7 +148,7 @@ ms.locfileid: "44457698"
     
 ## <a name="getuseroofsettings-error-response-example"></a>GetUserOofSettings エラー応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、別のユーザーの OOF 情報にアクセスしようとした場合に発生するエラー応答を示しています。
   

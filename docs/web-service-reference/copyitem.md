@@ -16,7 +16,7 @@ ms.openlocfilehash: b9af1670fd580107de08ad3b950191399436388d
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458503"
 ---
 # <a name="copyitem"></a>CopyItem
@@ -69,8 +69,7 @@ ms.locfileid: "44458503"
 
 
 
-
-  [CopyItem 操作](copyitem-operation.md)
+[CopyItem 操作](copyitem-operation.md)
 
 
 - [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)

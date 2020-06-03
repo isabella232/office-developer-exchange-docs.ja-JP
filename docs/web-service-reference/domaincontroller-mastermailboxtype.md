@@ -12,7 +12,7 @@ ms.openlocfilehash: 0c05da4da746f756624acee7212014ede8e83729
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458720"
 ---
 # <a name="domaincontroller-mastermailboxtype"></a>DomainController (MasterMailboxType)

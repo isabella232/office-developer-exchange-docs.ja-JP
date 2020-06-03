@@ -16,7 +16,7 @@ ms.openlocfilehash: cfe36364431a8fe81c3f62e68356b634f00bee78
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457796"
 ---
 # <a name="getattachmentresponsemessage"></a>GetAttachmentResponseMessage
@@ -52,7 +52,7 @@ ms.locfileid: "44457796"
 
 |**値**|**説明**|
 |:-----|:-----|
-|Success  <br/> |満たされる要求を記述します。  <br/> |
+|成功  <br/> |満たされる要求を記述します。  <br/> |
 |警告  <br/> | 処理されなかった要求を示します。 要求内のアイテムが処理され、その後のアイテムを処理できなかったときにエラーが発生した場合は、警告が返されることがあります。 <br/><br/>警告のソースの例を次に示します。 <br/> <br/>-バッチ処理中に Exchange ストアがオフラインになります。  <br/>-Active Directory ドメインサービス (AD DS) がオフラインになっています。  <br/>-メールボックスは移動されます。  <br/>-メッセージデータベース (MDB) はオフラインです。  <br/>-パスワードの有効期限が切れています。  <br/>-クォータが上限を超えています。  <br/> |
 |Error  <br/> | 満たされない要求を記述します。 <br/><br/>エラーのソースの例を次に示します。  <br/><br/>-無効な属性または要素  <br/>-属性または要素が範囲外です  <br/>-不明なタグ  <br/>-属性または要素がコンテキスト内で有効ではありません  <br/>-クライアントによる権限のないアクセス試行  <br/>-有効なクライアント側の呼び出しに応答した場合のサーバー側エラー  <br/><br/>  エラーに関する情報については、応答[secの](responsecode.md)要素と[messagetext](messagetext.md)要素を参照してください。  <br/> |
    
@@ -64,7 +64,7 @@ ms.locfileid: "44457796"
 |[ResponseCode](responsecode.md) <br/> |要求で発生した特定のエラーを識別するエラーコードを提供します。  <br/> |
 |[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在未使用で、今後の使用のために予約されています。 このプロパティには0の値が含まれています。  <br/> |
 |[MessageXml](messagexml.md) <br/> |エラー応答に関する追加情報を提供します。  <br/> |
-|[添付ファイル](attachments-ex15websvcsotherref.md) <br/> |Exchange ストア内のアイテムに ttached れているアイテムまたはファイルが含まれます。  <br/> |
+|[Attachments](attachments-ex15websvcsotherref.md) <br/> |Exchange ストア内のアイテムに ttached れているアイテムまたはファイルが含まれます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 

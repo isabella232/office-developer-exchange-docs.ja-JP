@@ -16,7 +16,7 @@ ms.openlocfilehash: 1d34ce4c5ba1d955989a35dafb8ab3c5d229d505
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457334"
 ---
 # <a name="deleteattachment-operation"></a>DeleteAttachment 操作
@@ -29,7 +29,7 @@ DeleteAttachment 操作は、Exchange ストア内の既存のアイテムから
   
 ## <a name="deleteattachment-request-example"></a>DeleteAttachment 要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の DeleteAttachment 要求の例は、アイテムの添付ファイルを削除する方法を示しています。
   
@@ -68,7 +68,7 @@ DeleteAttachment 操作は、Exchange ストア内の既存のアイテムから
     
 ## <a name="deleteattachment-response-example"></a>DeleteAttachment 応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、DeleteAttachment 要求に対する正常な応答を示しています。
   

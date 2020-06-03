@@ -16,7 +16,7 @@ ms.openlocfilehash: 6304d2c7a3c9253c03c07eb37e9a57226e794a24
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457852"
 ---
 # <a name="createitemresponsemessage"></a>CreateItemResponseMessage
@@ -87,9 +87,7 @@ ms.locfileid: "44457852"
    
 ## <a name="see-also"></a>関連項目
 
-- 
-  [CreateItem 操作](createitem-operation.md)
-- 
-  [Exchange 用 EWS リファレンス](ews-reference-for-exchange.md)
+- [CreateItem 操作](createitem-operation.md)
+- [Exchange 用 EWS リファレンス](ews-reference-for-exchange.md)
 - [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

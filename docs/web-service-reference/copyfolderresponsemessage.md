@@ -16,7 +16,7 @@ ms.openlocfilehash: 796ec57116e4b4943ca370e45cf0abefe7782c08
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458510"
 ---
 # <a name="copyfolderresponsemessage"></a>CopyFolderResponseMessage
@@ -88,7 +88,6 @@ ms.locfileid: "44458510"
 ## <a name="see-also"></a>関連項目
 
 - [CopyFolder 操作](copyfolder-operation.md)
-- 
-  [Exchange 用 EWS リファレンス](ews-reference-for-exchange.md) 
+- [Exchange 用 EWS リファレンス](ews-reference-for-exchange.md) 
 - [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 

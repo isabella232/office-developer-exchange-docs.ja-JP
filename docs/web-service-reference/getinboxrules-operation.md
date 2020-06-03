@@ -16,7 +16,7 @@ ms.openlocfilehash: f4c4c03f55c9f32be4a067024f4387888edd5fe9
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457936"
 ---
 # <a name="getinboxrules-operation"></a>GetInboxRules の操作
@@ -25,7 +25,7 @@ ms.locfileid: "44457936"
   
 ## <a name="getinboxrules-request-example"></a>Get受信トレイの要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、クライアントがサーバーに送信する要求 XML を示しています。 この要求は、 [MailboxSmtpAddress](mailboxsmtpaddress.md)要素でユーザーを識別します。 識別されたユーザーのすべての受信トレイルールが応答で返されます。 
   
@@ -56,7 +56,7 @@ ms.locfileid: "44457936"
     
 ## <a name="successful-getinboxrules-response-example"></a>成功した Get受信トレイの応答の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の簡易オブジェクトアクセスプロトコル (SOAP) 本文の例は、 **Get受信トレイ**の要求に対する正常な応答を示しています。 この例では、応答に1つのルールが含まれています。 
   

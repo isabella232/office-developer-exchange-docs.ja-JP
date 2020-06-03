@@ -16,7 +16,7 @@ ms.openlocfilehash: a3fb2b62ea2fa895a664034d2150f46a3099f6c1
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457432"
 ---
 # <a name="declineitem"></a>DeclineItem
@@ -61,7 +61,7 @@ ms.locfileid: "44457432"
 |[ItemClass](itemclass.md) <br/> |アイテムのメッセージクラスを表します。  <br/> |
 |[Sensitivity](sensitivity.md) <br/> |アイテムの秘密度レベルを示します。  <br/> |
 |[Body](body.md) <br/> |メッセージの実際の本文の内容を表します。  <br/> |
-|[添付ファイル](attachments-ex15websvcsotherref.md) <br/> |Exchange ストア内のアイテムに添付されているアイテムまたはファイルが保存されています。  <br/> |
+|[Attachments](attachments-ex15websvcsotherref.md) <br/> |Exchange ストア内のアイテムに添付されているアイテムまたはファイルが保存されています。  <br/> |
 |[InternetMessageHeaders](internetmessageheaders.md) <br/> |Headers コレクション内の指定されたヘッダーのインターネットメッセージヘッダー名を表します。  <br/> |
 |[Sender](sender.md) <br/> |アイテムの送信者を識別します。  <br/> |
 |[ToRecipients](torecipients.md) <br/> |アイテムの受信者のセットが含まれています。 次に、アイテムのプライマリ受信者を示します。  <br/> |

@@ -16,7 +16,7 @@ ms.openlocfilehash: 535edf9fe567bc3063a5b853f01d604ea4c7eb95
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457502"
 ---
 # <a name="createitem-operation-calendar-item"></a>CreateItem 操作 (予定表アイテム)
@@ -29,7 +29,7 @@ CreateItem 操作は、予定、会議、および会議出席依頼を作成し
   
 ## <a name="createitem-calendar-item-request-example"></a>CreateItem (予定表アイテム) の要求の例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の CreateItem 要求の例は、2つの必須出席者を含む会議を作成する方法を示しています。 この要求は、2人の出席者に会議出席依頼を送信します。
   
@@ -95,7 +95,7 @@ CreateItem 操作は、予定、会議、および会議出席依頼を作成し
     
 - [CalendarItem](calendaritem.md)
     
-- [[件名]](subject.md)
+- [件名](subject.md)
     
 - [Body](body.md)
     
@@ -123,7 +123,7 @@ CreateItem 操作は、予定、会議、および会議出席依頼を作成し
     
 ## <a name="successful-createitem-calendar-item-response"></a>成功した CreateItem (予定表アイテム) の応答
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 
 次の例は、CreateItem 要求に対する正常な応答を示しています。
   
@@ -185,6 +185,5 @@ CreateItem 操作は、予定、会議、および会議出席依頼を作成し
 
 
 
-
-  [CreateItem 操作](createitem-operation.md)
+[CreateItem 操作](createitem-operation.md)
 

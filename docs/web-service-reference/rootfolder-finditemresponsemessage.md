@@ -16,7 +16,7 @@ ms.openlocfilehash: 3bbab325dff26139739c50ef519b215aea620a0b
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457131"
 ---
 # <a name="rootfolder-finditemresponsemessage"></a>RootFolder (FindItemResponseMessage)
@@ -75,8 +75,7 @@ ms.locfileid: "44457131"
 
 
 
-
-  [FindItem 操作](finditem-operation.md)
+[FindItem 操作](finditem-operation.md)
   
 [IndexedPagingOffset](https://msdn.microsoft.com/library/ExchangeWebServices.FindItemParentType.IndexedPagingOffset.aspx)
   
