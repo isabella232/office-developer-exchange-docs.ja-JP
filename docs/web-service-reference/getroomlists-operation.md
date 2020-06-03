@@ -16,31 +16,31 @@ ms.openlocfilehash: d1393a6a5e99b7e0a7e354d2b7dd035d04356ec2
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458279"
 ---
-# <a name="getroomlists-operation"></a><span data-ttu-id="02945-103">GetRoomLists 操作</span><span class="sxs-lookup"><span data-stu-id="02945-103">GetRoomLists operation</span></span>
+# <a name="getroomlists-operation"></a><span data-ttu-id="74aa6-103">GetRoomLists 操作</span><span class="sxs-lookup"><span data-stu-id="74aa6-103">GetRoomLists operation</span></span>
 
-<span data-ttu-id="02945-104">**GetRoomLists**操作は、Exchange 組織内で使用可能な会議室一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="02945-104">The **GetRoomLists** operation gets the room lists that are available within the Exchange organization.</span></span> 
+<span data-ttu-id="74aa6-104">**GetRoomLists**操作は、Exchange 組織内で使用可能な会議室一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="74aa6-104">The **GetRoomLists** operation gets the room lists that are available within the Exchange organization.</span></span> 
   
-## <a name="soap-headers"></a><span data-ttu-id="02945-105">SOAP ヘッダー</span><span class="sxs-lookup"><span data-stu-id="02945-105">SOAP Headers</span></span>
+## <a name="soap-headers"></a><span data-ttu-id="74aa6-105">SOAP ヘッダー</span><span class="sxs-lookup"><span data-stu-id="74aa6-105">SOAP Headers</span></span>
 
-<span data-ttu-id="02945-106">**GetRoomLists**操作では、次の表に記載されている SOAP ヘッダーを使用できます。</span><span class="sxs-lookup"><span data-stu-id="02945-106">The **GetRoomLists** operation can use the SOAP headers that are listed and described in the following table.</span></span> 
+<span data-ttu-id="74aa6-106">**GetRoomLists**操作では、次の表に記載されている SOAP ヘッダーを使用できます。</span><span class="sxs-lookup"><span data-stu-id="74aa6-106">The **GetRoomLists** operation can use the SOAP headers that are listed and described in the following table.</span></span> 
   
-|<span data-ttu-id="02945-107">**Header**</span><span class="sxs-lookup"><span data-stu-id="02945-107">**Header**</span></span>|<span data-ttu-id="02945-108">**要素**</span><span class="sxs-lookup"><span data-stu-id="02945-108">**Element**</span></span>|<span data-ttu-id="02945-109">**説明**</span><span class="sxs-lookup"><span data-stu-id="02945-109">**Description**</span></span>|
+|<span data-ttu-id="74aa6-107">**Header**</span><span class="sxs-lookup"><span data-stu-id="74aa6-107">**Header**</span></span>|<span data-ttu-id="74aa6-108">**要素**</span><span class="sxs-lookup"><span data-stu-id="74aa6-108">**Element**</span></span>|<span data-ttu-id="74aa6-109">**説明**</span><span class="sxs-lookup"><span data-stu-id="74aa6-109">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="02945-110">偽装</span><span class="sxs-lookup"><span data-stu-id="02945-110">Impersonation</span></span>  <br/> |[<span data-ttu-id="02945-111">ExchangeImpersonation</span><span class="sxs-lookup"><span data-stu-id="02945-111">ExchangeImpersonation</span></span>](exchangeimpersonation.md) <br/> |<span data-ttu-id="02945-112">クライアントアプリケーションが偽装しているユーザーを識別します。</span><span class="sxs-lookup"><span data-stu-id="02945-112">Identifies the user whom the client application is impersonating.</span></span>  <br/> |
-|<span data-ttu-id="02945-113">MailboxCulture</span><span class="sxs-lookup"><span data-stu-id="02945-113">MailboxCulture</span></span>  <br/> |[<span data-ttu-id="02945-114">MailboxCulture</span><span class="sxs-lookup"><span data-stu-id="02945-114">MailboxCulture</span></span>](mailboxculture.md) <br/> |<span data-ttu-id="02945-115">メールボックスへのアクセスに使用する RFC3066 カルチャを指定します。</span><span class="sxs-lookup"><span data-stu-id="02945-115">Identifies the RFC3066 culture to be used to access the mailbox.</span></span>  <br/> |
-|<span data-ttu-id="02945-116">RequestVersion</span><span class="sxs-lookup"><span data-stu-id="02945-116">RequestVersion</span></span>  <br/> |[<span data-ttu-id="02945-117">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="02945-117">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="02945-118">操作要求のスキーマバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="02945-118">Identifies the schema version for the operation request.</span></span>  <br/> |
-|<span data-ttu-id="02945-119">ServerVersion</span><span class="sxs-lookup"><span data-stu-id="02945-119">ServerVersion</span></span>  <br/> |[<span data-ttu-id="02945-120">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="02945-120">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="02945-121">要求に応答したサーバーのバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="02945-121">Identifies the version of the server that responded to the request.</span></span>  <br/> |
+|<span data-ttu-id="74aa6-110">偽装</span><span class="sxs-lookup"><span data-stu-id="74aa6-110">Impersonation</span></span>  <br/> |[<span data-ttu-id="74aa6-111">ExchangeImpersonation</span><span class="sxs-lookup"><span data-stu-id="74aa6-111">ExchangeImpersonation</span></span>](exchangeimpersonation.md) <br/> |<span data-ttu-id="74aa6-112">クライアントアプリケーションが偽装しているユーザーを識別します。</span><span class="sxs-lookup"><span data-stu-id="74aa6-112">Identifies the user whom the client application is impersonating.</span></span>  <br/> |
+|<span data-ttu-id="74aa6-113">MailboxCulture</span><span class="sxs-lookup"><span data-stu-id="74aa6-113">MailboxCulture</span></span>  <br/> |[<span data-ttu-id="74aa6-114">MailboxCulture</span><span class="sxs-lookup"><span data-stu-id="74aa6-114">MailboxCulture</span></span>](mailboxculture.md) <br/> |<span data-ttu-id="74aa6-115">メールボックスへのアクセスに使用する RFC3066 カルチャを指定します。</span><span class="sxs-lookup"><span data-stu-id="74aa6-115">Identifies the RFC3066 culture to be used to access the mailbox.</span></span>  <br/> |
+|<span data-ttu-id="74aa6-116">RequestVersion</span><span class="sxs-lookup"><span data-stu-id="74aa6-116">RequestVersion</span></span>  <br/> |[<span data-ttu-id="74aa6-117">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="74aa6-117">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="74aa6-118">操作要求のスキーマバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="74aa6-118">Identifies the schema version for the operation request.</span></span>  <br/> |
+|<span data-ttu-id="74aa6-119">ServerVersion</span><span class="sxs-lookup"><span data-stu-id="74aa6-119">ServerVersion</span></span>  <br/> |[<span data-ttu-id="74aa6-120">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="74aa6-120">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="74aa6-121">要求に応答したサーバーのバージョンを識別します。</span><span class="sxs-lookup"><span data-stu-id="74aa6-121">Identifies the version of the server that responded to the request.</span></span>  <br/> |
    
-## <a name="getroomlists-request-example"></a><span data-ttu-id="02945-122">GetRoomLists 要求の例</span><span class="sxs-lookup"><span data-stu-id="02945-122">GetRoomLists request example</span></span>
+## <a name="getroomlists-request-example"></a><span data-ttu-id="74aa6-122">GetRoomLists 要求の例</span><span class="sxs-lookup"><span data-stu-id="74aa6-122">GetRoomLists request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="02945-123">説明</span><span class="sxs-lookup"><span data-stu-id="02945-123">Description</span></span>
+### <a name="description"></a><span data-ttu-id="74aa6-123">Description</span><span class="sxs-lookup"><span data-stu-id="74aa6-123">Description</span></span>
 
-<span data-ttu-id="02945-124">以下は、サーバーで使用可能な会議室一覧を返す**GetRoomLists**要求の例です。</span><span class="sxs-lookup"><span data-stu-id="02945-124">The following is an example of a **GetRoomLists** request that returns the room lists that are available on the server.</span></span> 
+<span data-ttu-id="74aa6-124">以下は、サーバーで使用可能な会議室一覧を返す**GetRoomLists**要求の例です。</span><span class="sxs-lookup"><span data-stu-id="74aa6-124">The following is an example of a **GetRoomLists** request that returns the room lists that are available on the server.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="02945-125">コード</span><span class="sxs-lookup"><span data-stu-id="02945-125">Code</span></span>
+### <a name="code"></a><span data-ttu-id="74aa6-125">コード</span><span class="sxs-lookup"><span data-stu-id="74aa6-125">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -58,19 +58,19 @@ ms.locfileid: "44458279"
 
 ```
 
-### <a name="request-elements"></a><span data-ttu-id="02945-126">Request 要素</span><span class="sxs-lookup"><span data-stu-id="02945-126">Request elements</span></span>
+### <a name="request-elements"></a><span data-ttu-id="74aa6-126">Request 要素</span><span class="sxs-lookup"><span data-stu-id="74aa6-126">Request elements</span></span>
 
-<span data-ttu-id="02945-127">要求では、次の要素が使用されます。</span><span class="sxs-lookup"><span data-stu-id="02945-127">The following element is used in the request:</span></span>
+<span data-ttu-id="74aa6-127">要求では、次の要素が使用されます。</span><span class="sxs-lookup"><span data-stu-id="74aa6-127">The following element is used in the request:</span></span>
   
-- [<span data-ttu-id="02945-128">GetRoomLists</span><span class="sxs-lookup"><span data-stu-id="02945-128">GetRoomLists</span></span>](getroomlists.md)
+- [<span data-ttu-id="74aa6-128">GetRoomLists</span><span class="sxs-lookup"><span data-stu-id="74aa6-128">GetRoomLists</span></span>](getroomlists.md)
     
-## <a name="successful-getroomlists-response-example"></a><span data-ttu-id="02945-129">Successful GetRoomLists response の例</span><span class="sxs-lookup"><span data-stu-id="02945-129">Successful GetRoomLists response example</span></span>
+## <a name="successful-getroomlists-response-example"></a><span data-ttu-id="74aa6-129">Successful GetRoomLists response の例</span><span class="sxs-lookup"><span data-stu-id="74aa6-129">Successful GetRoomLists response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="02945-130">説明</span><span class="sxs-lookup"><span data-stu-id="02945-130">Description</span></span>
+### <a name="description"></a><span data-ttu-id="74aa6-130">Description</span><span class="sxs-lookup"><span data-stu-id="74aa6-130">Description</span></span>
 
-<span data-ttu-id="02945-131">**GetRoomLists**要求に対する応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="02945-131">The following is an example of a response to a **GetRoomLists** request.</span></span> <span data-ttu-id="02945-132">この応答は、サーバー上に1つの会議室一覧を表示します。</span><span class="sxs-lookup"><span data-stu-id="02945-132">This response shows one room list on the server.</span></span> 
+<span data-ttu-id="74aa6-131">**GetRoomLists**要求に対する応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="74aa6-131">The following is an example of a response to a **GetRoomLists** request.</span></span> <span data-ttu-id="74aa6-132">この応答は、サーバー上に1つの会議室一覧を表示します。</span><span class="sxs-lookup"><span data-stu-id="74aa6-132">This response shows one room list on the server.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="02945-133">コード</span><span class="sxs-lookup"><span data-stu-id="02945-133">Code</span></span>
+### <a name="code"></a><span data-ttu-id="74aa6-133">コード</span><span class="sxs-lookup"><span data-stu-id="74aa6-133">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -95,31 +95,31 @@ ms.locfileid: "44458279"
 
 ```
 
-### <a name="successful-getroomlists-response-elements"></a><span data-ttu-id="02945-134">Successful GetRoomLists response 要素</span><span class="sxs-lookup"><span data-stu-id="02945-134">Successful GetRoomLists response elements</span></span>
+### <a name="successful-getroomlists-response-elements"></a><span data-ttu-id="74aa6-134">Successful GetRoomLists response 要素</span><span class="sxs-lookup"><span data-stu-id="74aa6-134">Successful GetRoomLists response elements</span></span>
 
-<span data-ttu-id="02945-135">応答では、次の要素が使用されます。</span><span class="sxs-lookup"><span data-stu-id="02945-135">The following elements are used in the response:</span></span>
+<span data-ttu-id="74aa6-135">応答では、次の要素が使用されます。</span><span class="sxs-lookup"><span data-stu-id="74aa6-135">The following elements are used in the response:</span></span>
   
-- [<span data-ttu-id="02945-136">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="02945-136">ServerVersionInfo</span></span>](serverversioninfo.md)
+- [<span data-ttu-id="74aa6-136">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="74aa6-136">ServerVersionInfo</span></span>](serverversioninfo.md)
     
-- [<span data-ttu-id="02945-137">た getroomlistsresponse</span><span class="sxs-lookup"><span data-stu-id="02945-137">GetRoomListsResponse</span></span>](getroomlistsresponse.md)
+- [<span data-ttu-id="74aa6-137">た getroomlistsresponse</span><span class="sxs-lookup"><span data-stu-id="74aa6-137">GetRoomListsResponse</span></span>](getroomlistsresponse.md)
     
-- [<span data-ttu-id="02945-138">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="02945-138">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="74aa6-138">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="74aa6-138">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="02945-139">RoomLists</span><span class="sxs-lookup"><span data-stu-id="02945-139">RoomLists</span></span>](roomlists.md)
+- [<span data-ttu-id="74aa6-139">RoomLists</span><span class="sxs-lookup"><span data-stu-id="74aa6-139">RoomLists</span></span>](roomlists.md)
     
-- [<span data-ttu-id="02945-140">EmailAddress (非 Emptystringtype)</span><span class="sxs-lookup"><span data-stu-id="02945-140">EmailAddress (NonEmptyStringType)</span></span>](emailaddress-nonemptystringtype.md)
+- [<span data-ttu-id="74aa6-140">EmailAddress (非 Emptystringtype)</span><span class="sxs-lookup"><span data-stu-id="74aa6-140">EmailAddress (NonEmptyStringType)</span></span>](emailaddress-nonemptystringtype.md)
     
-- [<span data-ttu-id="02945-141">RoutingType (EmailAddress)</span><span class="sxs-lookup"><span data-stu-id="02945-141">RoutingType (EmailAddress)</span></span>](routingtype-emailaddress.md)
+- [<span data-ttu-id="74aa6-141">RoutingType (EmailAddress)</span><span class="sxs-lookup"><span data-stu-id="74aa6-141">RoutingType (EmailAddress)</span></span>](routingtype-emailaddress.md)
     
-- [<span data-ttu-id="02945-142">MailboxType</span><span class="sxs-lookup"><span data-stu-id="02945-142">MailboxType</span></span>](mailboxtype.md)
+- [<span data-ttu-id="74aa6-142">MailboxType</span><span class="sxs-lookup"><span data-stu-id="74aa6-142">MailboxType</span></span>](mailboxtype.md)
     
-### <a name="getroomlists-error-response-example"></a><span data-ttu-id="02945-143">GetRoomLists エラー応答の例</span><span class="sxs-lookup"><span data-stu-id="02945-143">GetRoomLists Error response example</span></span>
+### <a name="getroomlists-error-response-example"></a><span data-ttu-id="74aa6-143">GetRoomLists エラー応答の例</span><span class="sxs-lookup"><span data-stu-id="74aa6-143">GetRoomLists Error response example</span></span>
 
-#### <a name="description"></a><span data-ttu-id="02945-144">説明</span><span class="sxs-lookup"><span data-stu-id="02945-144">Description</span></span>
+#### <a name="description"></a><span data-ttu-id="74aa6-144">Description</span><span class="sxs-lookup"><span data-stu-id="74aa6-144">Description</span></span>
 
-<span data-ttu-id="02945-145">次の例は、会議室一覧が定義されていないサーバーから、会議室一覧を取得しようとした場合の応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="02945-145">The following example shows the response to an attempt to get room lists from a server that does not have any room lists defined.</span></span>
+<span data-ttu-id="74aa6-145">次の例は、会議室一覧が定義されていないサーバーから、会議室一覧を取得しようとした場合の応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="74aa6-145">The following example shows the response to an attempt to get room lists from a server that does not have any room lists defined.</span></span>
   
-#### <a name="code"></a><span data-ttu-id="02945-146">コード</span><span class="sxs-lookup"><span data-stu-id="02945-146">Code</span></span>
+#### <a name="code"></a><span data-ttu-id="74aa6-146">コード</span><span class="sxs-lookup"><span data-stu-id="74aa6-146">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -137,23 +137,23 @@ ms.locfileid: "44458279"
 
 ```
 
-#### <a name="getroomlists-error-response-elements"></a><span data-ttu-id="02945-147">GetRoomLists Error response 要素</span><span class="sxs-lookup"><span data-stu-id="02945-147">GetRoomLists Error response elements</span></span>
+#### <a name="getroomlists-error-response-elements"></a><span data-ttu-id="74aa6-147">GetRoomLists Error response 要素</span><span class="sxs-lookup"><span data-stu-id="74aa6-147">GetRoomLists Error response elements</span></span>
 
-<span data-ttu-id="02945-148">エラー応答では、次の要素が使用されます。</span><span class="sxs-lookup"><span data-stu-id="02945-148">The following elements are used in the error response:</span></span>
+<span data-ttu-id="74aa6-148">エラー応答では、次の要素が使用されます。</span><span class="sxs-lookup"><span data-stu-id="74aa6-148">The following elements are used in the error response:</span></span>
   
-- [<span data-ttu-id="02945-149">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="02945-149">ServerVersionInfo</span></span>](serverversioninfo.md)
+- [<span data-ttu-id="74aa6-149">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="74aa6-149">ServerVersionInfo</span></span>](serverversioninfo.md)
     
-- [<span data-ttu-id="02945-150">た getroomlistsresponse</span><span class="sxs-lookup"><span data-stu-id="02945-150">GetRoomListsResponse</span></span>](getroomlistsresponse.md)
+- [<span data-ttu-id="74aa6-150">た getroomlistsresponse</span><span class="sxs-lookup"><span data-stu-id="74aa6-150">GetRoomListsResponse</span></span>](getroomlistsresponse.md)
     
-- [<span data-ttu-id="02945-151">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="02945-151">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="74aa6-151">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="74aa6-151">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="02945-152">RoomLists</span><span class="sxs-lookup"><span data-stu-id="02945-152">RoomLists</span></span>](roomlists.md)
+- [<span data-ttu-id="74aa6-152">RoomLists</span><span class="sxs-lookup"><span data-stu-id="74aa6-152">RoomLists</span></span>](roomlists.md)
     
-## <a name="see-also"></a><span data-ttu-id="02945-153">関連項目</span><span class="sxs-lookup"><span data-stu-id="02945-153">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="74aa6-153">関連項目</span><span class="sxs-lookup"><span data-stu-id="74aa6-153">See also</span></span>
 
 
 
-[<span data-ttu-id="02945-154">Exchange での EWS 操作</span><span class="sxs-lookup"><span data-stu-id="02945-154">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
+[<span data-ttu-id="74aa6-154">Exchange での EWS 操作</span><span class="sxs-lookup"><span data-stu-id="74aa6-154">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
   
-- [<span data-ttu-id="02945-155">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="02945-155">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="74aa6-155">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="74aa6-155">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

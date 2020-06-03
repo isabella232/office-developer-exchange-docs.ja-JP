@@ -16,20 +16,20 @@ ms.openlocfilehash: fb28e88d1a47b0ea8f63ed33b1efacae8538e1c8
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458209"
 ---
-# <a name="getuserconfiguration-operation"></a><span data-ttu-id="81e6c-103">GetUserConfiguration 操作</span><span class="sxs-lookup"><span data-stu-id="81e6c-103">GetUserConfiguration operation</span></span>
+# <a name="getuserconfiguration-operation"></a><span data-ttu-id="34c2c-103">GetUserConfiguration 操作</span><span class="sxs-lookup"><span data-stu-id="34c2c-103">GetUserConfiguration operation</span></span>
 
-<span data-ttu-id="81e6c-104">**Getuserconfiguration**操作は、フォルダーからユーザー構成オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="81e6c-104">The **GetUserConfiguration** operation gets a user configuration object from a folder.</span></span> 
+<span data-ttu-id="34c2c-104">**Getuserconfiguration**操作は、フォルダーからユーザー構成オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="34c2c-104">The **GetUserConfiguration** operation gets a user configuration object from a folder.</span></span> 
   
-## <a name="getuserconfiguration-request-example"></a><span data-ttu-id="81e6c-105">GetUserConfiguration 要求の例</span><span class="sxs-lookup"><span data-stu-id="81e6c-105">GetUserConfiguration request example</span></span>
+## <a name="getuserconfiguration-request-example"></a><span data-ttu-id="34c2c-105">GetUserConfiguration 要求の例</span><span class="sxs-lookup"><span data-stu-id="34c2c-105">GetUserConfiguration request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="81e6c-106">説明</span><span class="sxs-lookup"><span data-stu-id="81e6c-106">Description</span></span>
+### <a name="description"></a><span data-ttu-id="34c2c-106">Description</span><span class="sxs-lookup"><span data-stu-id="34c2c-106">Description</span></span>
 
-<span data-ttu-id="81e6c-107">次の**Getuserconfiguration**要求の例は、下書きフォルダーでユーザー構成オブジェクトを取得する要求を形成する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="81e6c-107">The following example of a **GetUserConfiguration** request shows how to form a request to get a user configuration object on the Drafts folder.</span></span> 
+<span data-ttu-id="34c2c-107">次の**Getuserconfiguration**要求の例は、下書きフォルダーでユーザー構成オブジェクトを取得する要求を形成する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="34c2c-107">The following example of a **GetUserConfiguration** request shows how to form a request to get a user configuration object on the Drafts folder.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="81e6c-108">コード</span><span class="sxs-lookup"><span data-stu-id="81e6c-108">Code</span></span>
+### <a name="code"></a><span data-ttu-id="34c2c-108">コード</span><span class="sxs-lookup"><span data-stu-id="34c2c-108">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -52,13 +52,13 @@ ms.locfileid: "44458209"
 </soap:Envelope>
 ```
 
-## <a name="getuserconfiguration-response-example"></a><span data-ttu-id="81e6c-109">GetUserConfiguration 応答の例</span><span class="sxs-lookup"><span data-stu-id="81e6c-109">GetUserConfiguration response example</span></span>
+## <a name="getuserconfiguration-response-example"></a><span data-ttu-id="34c2c-109">GetUserConfiguration 応答の例</span><span class="sxs-lookup"><span data-stu-id="34c2c-109">GetUserConfiguration response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="81e6c-110">説明</span><span class="sxs-lookup"><span data-stu-id="81e6c-110">Description</span></span>
+### <a name="description"></a><span data-ttu-id="34c2c-110">Description</span><span class="sxs-lookup"><span data-stu-id="34c2c-110">Description</span></span>
 
-<span data-ttu-id="81e6c-111">次の例は、 **Getuserconfiguration**要求に対する正常な応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="81e6c-111">The following example shows a successful response to the **GetUserConfiguration** request.</span></span> 
+<span data-ttu-id="34c2c-111">次の例は、 **Getuserconfiguration**要求に対する正常な応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="34c2c-111">The following example shows a successful response to the **GetUserConfiguration** request.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="81e6c-112">コード</span><span class="sxs-lookup"><span data-stu-id="81e6c-112">Code</span></span>
+### <a name="code"></a><span data-ttu-id="34c2c-112">コード</span><span class="sxs-lookup"><span data-stu-id="34c2c-112">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -106,11 +106,11 @@ ms.locfileid: "44458209"
 </s:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="81e6c-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="81e6c-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="34c2c-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="34c2c-113">See also</span></span>
 
 
 
-[<span data-ttu-id="81e6c-114">Exchange での EWS 操作</span><span class="sxs-lookup"><span data-stu-id="81e6c-114">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
+[<span data-ttu-id="34c2c-114">Exchange での EWS 操作</span><span class="sxs-lookup"><span data-stu-id="34c2c-114">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
   
-- [<span data-ttu-id="81e6c-115">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="81e6c-115">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="34c2c-115">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="34c2c-115">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

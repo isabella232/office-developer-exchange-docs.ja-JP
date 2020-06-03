@@ -16,12 +16,12 @@ ms.openlocfilehash: ceb24bc8b31a7d7313add213c26bef5efd3c89ae
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458216"
 ---
-# <a name="getuseravailabilityresponse"></a><span data-ttu-id="89014-103">GetUserAvailabilityResponse</span><span class="sxs-lookup"><span data-stu-id="89014-103">GetUserAvailabilityResponse</span></span>
+# <a name="getuseravailabilityresponse"></a><span data-ttu-id="0871c-103">GetUserAvailabilityResponse</span><span class="sxs-lookup"><span data-stu-id="0871c-103">GetUserAvailabilityResponse</span></span>
 
-<span data-ttu-id="89014-104">**GetUserAvailabilityResponse**要素は、ユーザーの空き時間情報または推奨される会議時刻情報を定義するプロパティを含むルート要素です。</span><span class="sxs-lookup"><span data-stu-id="89014-104">The **GetUserAvailabilityResponse** element is the root element that contains the properties that define user availability information or suggested meeting time information.</span></span> 
+<span data-ttu-id="0871c-104">**GetUserAvailabilityResponse**要素は、ユーザーの空き時間情報または推奨される会議時刻情報を定義するプロパティを含むルート要素です。</span><span class="sxs-lookup"><span data-stu-id="0871c-104">The **GetUserAvailabilityResponse** element is the root element that contains the properties that define user availability information or suggested meeting time information.</span></span> 
   
 ```xml
 <GetUserAvailabilityResponse>
@@ -30,33 +30,33 @@ ms.locfileid: "44458216"
 </GetUserAvailabilityResponse>
 ```
 
- <span data-ttu-id="89014-105">**GetUserAvailabilityResponseType**</span><span class="sxs-lookup"><span data-stu-id="89014-105">**GetUserAvailabilityResponseType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="89014-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="89014-106">Attributes and elements</span></span>
+ <span data-ttu-id="0871c-105">**GetUserAvailabilityResponseType**</span><span class="sxs-lookup"><span data-stu-id="0871c-105">**GetUserAvailabilityResponseType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="0871c-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="0871c-106">Attributes and elements</span></span>
 
-<span data-ttu-id="89014-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="89014-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="0871c-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="0871c-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="89014-108">属性</span><span class="sxs-lookup"><span data-stu-id="89014-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="0871c-108">属性</span><span class="sxs-lookup"><span data-stu-id="0871c-108">Attributes</span></span>
 
-<span data-ttu-id="89014-109">なし。</span><span class="sxs-lookup"><span data-stu-id="89014-109">None.</span></span>
+<span data-ttu-id="0871c-109">なし。</span><span class="sxs-lookup"><span data-stu-id="0871c-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="89014-110">子要素</span><span class="sxs-lookup"><span data-stu-id="89014-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="0871c-110">子要素</span><span class="sxs-lookup"><span data-stu-id="0871c-110">Child elements</span></span>
 
-|<span data-ttu-id="89014-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="89014-111">**Element**</span></span>|<span data-ttu-id="89014-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="89014-112">**Description**</span></span>|
+|<span data-ttu-id="0871c-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="0871c-111">**Element**</span></span>|<span data-ttu-id="0871c-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="0871c-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="89014-113">FreeBusyResponseArray</span><span class="sxs-lookup"><span data-stu-id="89014-113">FreeBusyResponseArray</span></span>](freebusyresponsearray.md) <br/> |<span data-ttu-id="89014-114">要求されたユーザーの空き時間情報と応答の状態を含みます。</span><span class="sxs-lookup"><span data-stu-id="89014-114">Contains the requested users' availability information and the response status.</span></span>  <br/> |
-|[<span data-ttu-id="89014-115">SuggestionsResponse</span><span class="sxs-lookup"><span data-stu-id="89014-115">SuggestionsResponse</span></span>](suggestionsresponse.md) <br/> |<span data-ttu-id="89014-116">要求された会議の提案の応答状態情報と提案データを格納します。</span><span class="sxs-lookup"><span data-stu-id="89014-116">Contains response status information and suggestion data for requested meeting suggestions.</span></span>  <br/> |
+|[<span data-ttu-id="0871c-113">FreeBusyResponseArray</span><span class="sxs-lookup"><span data-stu-id="0871c-113">FreeBusyResponseArray</span></span>](freebusyresponsearray.md) <br/> |<span data-ttu-id="0871c-114">要求されたユーザーの空き時間情報と応答の状態を含みます。</span><span class="sxs-lookup"><span data-stu-id="0871c-114">Contains the requested users' availability information and the response status.</span></span>  <br/> |
+|[<span data-ttu-id="0871c-115">SuggestionsResponse</span><span class="sxs-lookup"><span data-stu-id="0871c-115">SuggestionsResponse</span></span>](suggestionsresponse.md) <br/> |<span data-ttu-id="0871c-116">要求された会議の提案の応答状態情報と提案データを格納します。</span><span class="sxs-lookup"><span data-stu-id="0871c-116">Contains response status information and suggestion data for requested meeting suggestions.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="89014-117">親要素</span><span class="sxs-lookup"><span data-stu-id="89014-117">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="0871c-117">親要素</span><span class="sxs-lookup"><span data-stu-id="0871c-117">Parent elements</span></span>
 
-<span data-ttu-id="89014-118">なし。</span><span class="sxs-lookup"><span data-stu-id="89014-118">None.</span></span>
+<span data-ttu-id="0871c-118">なし。</span><span class="sxs-lookup"><span data-stu-id="0871c-118">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="89014-119">注釈</span><span class="sxs-lookup"><span data-stu-id="89014-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="0871c-119">注釈</span><span class="sxs-lookup"><span data-stu-id="0871c-119">Remarks</span></span>
 
-<span data-ttu-id="89014-120">この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="89014-120">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="0871c-120">この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。</span><span class="sxs-lookup"><span data-stu-id="0871c-120">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="example"></a><span data-ttu-id="89014-121">例</span><span class="sxs-lookup"><span data-stu-id="89014-121">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0871c-121">例</span><span class="sxs-lookup"><span data-stu-id="0871c-121">Example</span></span>
 
-<span data-ttu-id="89014-122">GetUserAvailability 応答の次の例は、GetUserAvailability 要求に対する応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="89014-122">The following example of a GetUserAvailability response shows a response to a GetUserAvailability request.</span></span>
+<span data-ttu-id="0871c-122">GetUserAvailability 応答の次の例は、GetUserAvailability 要求に対する応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="0871c-122">The following example of a GetUserAvailability response shows a response to a GetUserAvailability request.</span></span>
   
 ```
 <?xml version="1.0" encoding="utf-8" ?>
@@ -118,23 +118,23 @@ ms.locfileid: "44458216"
 </GetUserAvailabilityResponse>
 ```
 
-<span data-ttu-id="89014-123">[ID](id.md)要素の内容は、読みやすくするために短縮されています。</span><span class="sxs-lookup"><span data-stu-id="89014-123">The [ID](id.md) element contents were shortened to preserve readability.</span></span> 
+<span data-ttu-id="0871c-123">[ID](id.md)要素の内容は、読みやすくするために短縮されています。</span><span class="sxs-lookup"><span data-stu-id="0871c-123">The [ID](id.md) element contents were shortened to preserve readability.</span></span> 
   
-## <a name="element-information"></a><span data-ttu-id="89014-124">要素の情報</span><span class="sxs-lookup"><span data-stu-id="89014-124">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="0871c-124">要素の情報</span><span class="sxs-lookup"><span data-stu-id="0871c-124">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="89014-125">Namespace</span><span class="sxs-lookup"><span data-stu-id="89014-125">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="89014-126">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="89014-126">Schema Name</span></span>  <br/> |<span data-ttu-id="89014-127">メッセージスキーマ</span><span class="sxs-lookup"><span data-stu-id="89014-127">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="89014-128">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="89014-128">Validation File</span></span>  <br/> |<span data-ttu-id="89014-129">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="89014-129">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="89014-130">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="89014-130">Can be Empty</span></span>  <br/> |<span data-ttu-id="89014-131">正しくない</span><span class="sxs-lookup"><span data-stu-id="89014-131">False</span></span>  <br/> |
+|<span data-ttu-id="0871c-125">Namespace</span><span class="sxs-lookup"><span data-stu-id="0871c-125">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="0871c-126">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="0871c-126">Schema Name</span></span>  <br/> |<span data-ttu-id="0871c-127">メッセージスキーマ</span><span class="sxs-lookup"><span data-stu-id="0871c-127">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="0871c-128">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="0871c-128">Validation File</span></span>  <br/> |<span data-ttu-id="0871c-129">メッセージ .xsd</span><span class="sxs-lookup"><span data-stu-id="0871c-129">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="0871c-130">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="0871c-130">Can be Empty</span></span>  <br/> |<span data-ttu-id="0871c-131">正しくない</span><span class="sxs-lookup"><span data-stu-id="0871c-131">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="89014-132">関連項目</span><span class="sxs-lookup"><span data-stu-id="89014-132">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0871c-132">関連項目</span><span class="sxs-lookup"><span data-stu-id="0871c-132">See also</span></span>
 
 
 
-[<span data-ttu-id="89014-133">GetUserAvailabilityRequest</span><span class="sxs-lookup"><span data-stu-id="89014-133">GetUserAvailabilityRequest</span></span>](getuseravailabilityrequest.md)
+[<span data-ttu-id="0871c-133">GetUserAvailabilityRequest</span><span class="sxs-lookup"><span data-stu-id="0871c-133">GetUserAvailabilityRequest</span></span>](getuseravailabilityrequest.md)
 
 
-[<span data-ttu-id="89014-134">ユーザーの空き時間情報の取得</span><span class="sxs-lookup"><span data-stu-id="89014-134">Getting User Availability</span></span>](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[<span data-ttu-id="0871c-134">ユーザーの空き時間情報の取得</span><span class="sxs-lookup"><span data-stu-id="0871c-134">Getting User Availability</span></span>](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

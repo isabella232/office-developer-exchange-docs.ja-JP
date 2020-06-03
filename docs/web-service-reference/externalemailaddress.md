@@ -12,52 +12,52 @@ ms.openlocfilehash: c530e0c1a9efb5da3a0e147de3a3ec6e0d7569fc
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44456928"
 ---
-# <a name="externalemailaddress"></a><span data-ttu-id="c36dc-103">ExternalEmailAddress</span><span class="sxs-lookup"><span data-stu-id="c36dc-103">ExternalEmailAddress</span></span>
+# <a name="externalemailaddress"></a><span data-ttu-id="21a7b-103">ExternalEmailAddress</span><span class="sxs-lookup"><span data-stu-id="21a7b-103">ExternalEmailAddress</span></span>
 
-<span data-ttu-id="c36dc-104">**ExternalEmailAddress**要素には、メールボックスの外部電子メールアドレスが含まれています。</span><span class="sxs-lookup"><span data-stu-id="c36dc-104">The **ExternalEmailAddress** element contains the external email address of the mailbox.</span></span> 
+<span data-ttu-id="21a7b-104">**ExternalEmailAddress**要素には、メールボックスの外部電子メールアドレスが含まれています。</span><span class="sxs-lookup"><span data-stu-id="21a7b-104">The **ExternalEmailAddress** element contains the external email address of the mailbox.</span></span> 
   
 ```XML
 <ExternalEmailAddress></ExternalEmailAddress>
 ```
 
-<span data-ttu-id="c36dc-105">**string**</span><span class="sxs-lookup"><span data-stu-id="c36dc-105">**string**</span></span>
+<span data-ttu-id="21a7b-105">**string**</span><span class="sxs-lookup"><span data-stu-id="21a7b-105">**string**</span></span>
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="c36dc-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="c36dc-106">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="21a7b-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="21a7b-106">Attributes and elements</span></span>
 
-<span data-ttu-id="c36dc-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="c36dc-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="21a7b-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="21a7b-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="c36dc-108">属性</span><span class="sxs-lookup"><span data-stu-id="c36dc-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="21a7b-108">属性</span><span class="sxs-lookup"><span data-stu-id="21a7b-108">Attributes</span></span>
 
-<span data-ttu-id="c36dc-109">なし。</span><span class="sxs-lookup"><span data-stu-id="c36dc-109">None.</span></span>
+<span data-ttu-id="21a7b-109">なし。</span><span class="sxs-lookup"><span data-stu-id="21a7b-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="c36dc-110">子要素</span><span class="sxs-lookup"><span data-stu-id="c36dc-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="21a7b-110">子要素</span><span class="sxs-lookup"><span data-stu-id="21a7b-110">Child elements</span></span>
 
-<span data-ttu-id="c36dc-111">なし。</span><span class="sxs-lookup"><span data-stu-id="c36dc-111">None.</span></span>
+<span data-ttu-id="21a7b-111">なし。</span><span class="sxs-lookup"><span data-stu-id="21a7b-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="c36dc-112">親要素</span><span class="sxs-lookup"><span data-stu-id="c36dc-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="21a7b-112">親要素</span><span class="sxs-lookup"><span data-stu-id="21a7b-112">Parent elements</span></span>
 
-[<span data-ttu-id="c36dc-113">SearchableMailbox</span><span class="sxs-lookup"><span data-stu-id="c36dc-113">SearchableMailbox</span></span>](searchablemailbox.md)
+[<span data-ttu-id="21a7b-113">SearchableMailbox</span><span class="sxs-lookup"><span data-stu-id="21a7b-113">SearchableMailbox</span></span>](searchablemailbox.md)
   
-## <a name="text-value"></a><span data-ttu-id="c36dc-114">テキスト値</span><span class="sxs-lookup"><span data-stu-id="c36dc-114">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="21a7b-114">テキスト値</span><span class="sxs-lookup"><span data-stu-id="21a7b-114">Text value</span></span>
 
-<span data-ttu-id="c36dc-115">**ExternalEmailAddress**要素のテキスト値は、メールボックスの外部電子メールアドレスです。</span><span class="sxs-lookup"><span data-stu-id="c36dc-115">The text value of the **ExternalEmailAddress** element is the external email address of the mailbox.</span></span> 
+<span data-ttu-id="21a7b-115">**ExternalEmailAddress**要素のテキスト値は、メールボックスの外部電子メールアドレスです。</span><span class="sxs-lookup"><span data-stu-id="21a7b-115">The text value of the **ExternalEmailAddress** element is the external email address of the mailbox.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="c36dc-116">注釈</span><span class="sxs-lookup"><span data-stu-id="c36dc-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="21a7b-116">注釈</span><span class="sxs-lookup"><span data-stu-id="21a7b-116">Remarks</span></span>
 
-<span data-ttu-id="c36dc-117">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="c36dc-117">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="21a7b-117">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="21a7b-117">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="c36dc-118">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="c36dc-118">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="21a7b-118">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="21a7b-118">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="c36dc-119">要素の情報</span><span class="sxs-lookup"><span data-stu-id="c36dc-119">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="21a7b-119">要素の情報</span><span class="sxs-lookup"><span data-stu-id="21a7b-119">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="c36dc-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="c36dc-120">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="c36dc-121">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="c36dc-121">Schema name</span></span>  <br/> |<span data-ttu-id="c36dc-122">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="c36dc-122">Types schema</span></span>  <br/> |
-|<span data-ttu-id="c36dc-123">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="c36dc-123">Validation file</span></span>  <br/> |<span data-ttu-id="c36dc-124">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="c36dc-124">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="c36dc-125">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="c36dc-125">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="21a7b-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="21a7b-120">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="21a7b-121">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="21a7b-121">Schema name</span></span>  <br/> |<span data-ttu-id="21a7b-122">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="21a7b-122">Types schema</span></span>  <br/> |
+|<span data-ttu-id="21a7b-123">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="21a7b-123">Validation file</span></span>  <br/> |<span data-ttu-id="21a7b-124">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="21a7b-124">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="21a7b-125">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="21a7b-125">Can be empty</span></span>  <br/> ||
    
 

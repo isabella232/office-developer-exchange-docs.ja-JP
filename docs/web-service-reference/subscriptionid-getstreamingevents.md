@@ -12,61 +12,61 @@ ms.openlocfilehash: babf02c514e7fe8711f51ac52e425a18f3ab47f7
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457999"
 ---
-# <a name="subscriptionid-getstreamingevents"></a><span data-ttu-id="11bf8-103">SubscriptionId (GetStreamingEvents)</span><span class="sxs-lookup"><span data-stu-id="11bf8-103">SubscriptionId (GetStreamingEvents)</span></span>
+# <a name="subscriptionid-getstreamingevents"></a><span data-ttu-id="7b926-103">SubscriptionId (GetStreamingEvents)</span><span class="sxs-lookup"><span data-stu-id="7b926-103">SubscriptionId (GetStreamingEvents)</span></span>
 
-<span data-ttu-id="11bf8-104">**SubscriptionId**要素は、ストリーミングサブスクリプションの識別子を表します。</span><span class="sxs-lookup"><span data-stu-id="11bf8-104">The **SubscriptionId** element represents the identifier for a streaming subscription.</span></span> 
+<span data-ttu-id="7b926-104">**SubscriptionId**要素は、ストリーミングサブスクリプションの識別子を表します。</span><span class="sxs-lookup"><span data-stu-id="7b926-104">The **SubscriptionId** element represents the identifier for a streaming subscription.</span></span> 
   
 ```XML
 <SubscriptionId/>
 ```
 
- <span data-ttu-id="11bf8-105">**SubscriptionIdType**</span><span class="sxs-lookup"><span data-stu-id="11bf8-105">**SubscriptionIdType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="11bf8-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="11bf8-106">Attributes and elements</span></span>
+ <span data-ttu-id="7b926-105">**SubscriptionIdType**</span><span class="sxs-lookup"><span data-stu-id="7b926-105">**SubscriptionIdType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="7b926-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="7b926-106">Attributes and elements</span></span>
 
-<span data-ttu-id="11bf8-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="11bf8-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="7b926-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="7b926-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="11bf8-108">属性</span><span class="sxs-lookup"><span data-stu-id="11bf8-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="7b926-108">属性</span><span class="sxs-lookup"><span data-stu-id="7b926-108">Attributes</span></span>
 
-<span data-ttu-id="11bf8-109">なし。</span><span class="sxs-lookup"><span data-stu-id="11bf8-109">None.</span></span>
+<span data-ttu-id="7b926-109">なし。</span><span class="sxs-lookup"><span data-stu-id="7b926-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="11bf8-110">子要素</span><span class="sxs-lookup"><span data-stu-id="11bf8-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="7b926-110">子要素</span><span class="sxs-lookup"><span data-stu-id="7b926-110">Child elements</span></span>
 
-<span data-ttu-id="11bf8-111">なし。</span><span class="sxs-lookup"><span data-stu-id="11bf8-111">None.</span></span>
+<span data-ttu-id="7b926-111">なし。</span><span class="sxs-lookup"><span data-stu-id="7b926-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="11bf8-112">親要素</span><span class="sxs-lookup"><span data-stu-id="11bf8-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="7b926-112">親要素</span><span class="sxs-lookup"><span data-stu-id="7b926-112">Parent elements</span></span>
 
-|<span data-ttu-id="11bf8-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="11bf8-113">**Element**</span></span>|<span data-ttu-id="11bf8-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="11bf8-114">**Description**</span></span>|
+|<span data-ttu-id="7b926-113">**要素**</span><span class="sxs-lookup"><span data-stu-id="7b926-113">**Element**</span></span>|<span data-ttu-id="7b926-114">**説明**</span><span class="sxs-lookup"><span data-stu-id="7b926-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="11bf8-115">GetStreamingEvents</span><span class="sxs-lookup"><span data-stu-id="11bf8-115">GetStreamingEvents</span></span>](getstreamingevents.md) <br/> |<span data-ttu-id="11bf8-116">サーバーからのストリーミング通知を要求するためにクライアントによって使用される操作を表します。</span><span class="sxs-lookup"><span data-stu-id="11bf8-116">Represents the operation that is used by clients to request streaming notifications from the server.</span></span>  <br/> |
+|[<span data-ttu-id="7b926-115">GetStreamingEvents</span><span class="sxs-lookup"><span data-stu-id="7b926-115">GetStreamingEvents</span></span>](getstreamingevents.md) <br/> |<span data-ttu-id="7b926-116">サーバーからのストリーミング通知を要求するためにクライアントによって使用される操作を表します。</span><span class="sxs-lookup"><span data-stu-id="7b926-116">Represents the operation that is used by clients to request streaming notifications from the server.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="11bf8-117">テキスト値</span><span class="sxs-lookup"><span data-stu-id="11bf8-117">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="7b926-117">テキスト値</span><span class="sxs-lookup"><span data-stu-id="7b926-117">Text value</span></span>
 
-<span data-ttu-id="11bf8-118">テキスト値は必須です。</span><span class="sxs-lookup"><span data-stu-id="11bf8-118">A text value is required.</span></span> <span data-ttu-id="11bf8-119">テキスト値は GUID です。</span><span class="sxs-lookup"><span data-stu-id="11bf8-119">The text value is a GUID.</span></span>
+<span data-ttu-id="7b926-118">テキスト値は必須です。</span><span class="sxs-lookup"><span data-stu-id="7b926-118">A text value is required.</span></span> <span data-ttu-id="7b926-119">テキスト値は GUID です。</span><span class="sxs-lookup"><span data-stu-id="7b926-119">The text value is a GUID.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="11bf8-120">注釈</span><span class="sxs-lookup"><span data-stu-id="11bf8-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="7b926-120">注釈</span><span class="sxs-lookup"><span data-stu-id="7b926-120">Remarks</span></span>
 
-<span data-ttu-id="11bf8-121">サブスクリプション識別子を表す GUID は、サブスクリプションの作成時にクライアントアクセスサーバーによって生成されます。</span><span class="sxs-lookup"><span data-stu-id="11bf8-121">The GUID that represents the subscription identifier is generated by the Client Access server when the subscription is created.</span></span>
+<span data-ttu-id="7b926-121">サブスクリプション識別子を表す GUID は、サブスクリプションの作成時にクライアントアクセスサーバーによって生成されます。</span><span class="sxs-lookup"><span data-stu-id="7b926-121">The GUID that represents the subscription identifier is generated by the Client Access server when the subscription is created.</span></span>
   
-<span data-ttu-id="11bf8-122">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="11bf8-122">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="7b926-122">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="7b926-122">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="11bf8-123">要素の情報</span><span class="sxs-lookup"><span data-stu-id="11bf8-123">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="7b926-123">要素の情報</span><span class="sxs-lookup"><span data-stu-id="7b926-123">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="11bf8-124">Namespace</span><span class="sxs-lookup"><span data-stu-id="11bf8-124">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="11bf8-125">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="11bf8-125">Schema name</span></span>  <br/> |<span data-ttu-id="11bf8-126">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="11bf8-126">Types schema</span></span>  <br/> |
-|<span data-ttu-id="11bf8-127">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="11bf8-127">Validation file</span></span>  <br/> |<span data-ttu-id="11bf8-128">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="11bf8-128">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="11bf8-129">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="11bf8-129">Can be empty</span></span>  <br/> |<span data-ttu-id="11bf8-130">正しくない</span><span class="sxs-lookup"><span data-stu-id="11bf8-130">False</span></span>  <br/> |
+|<span data-ttu-id="7b926-124">Namespace</span><span class="sxs-lookup"><span data-stu-id="7b926-124">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="7b926-125">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="7b926-125">Schema name</span></span>  <br/> |<span data-ttu-id="7b926-126">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="7b926-126">Types schema</span></span>  <br/> |
+|<span data-ttu-id="7b926-127">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="7b926-127">Validation file</span></span>  <br/> |<span data-ttu-id="7b926-128">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="7b926-128">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="7b926-129">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="7b926-129">Can be empty</span></span>  <br/> |<span data-ttu-id="7b926-130">正しくない</span><span class="sxs-lookup"><span data-stu-id="7b926-130">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="11bf8-131">関連項目</span><span class="sxs-lookup"><span data-stu-id="11bf8-131">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7b926-131">関連項目</span><span class="sxs-lookup"><span data-stu-id="7b926-131">See also</span></span>
 
 
 
-[<span data-ttu-id="11bf8-132">GetStreamingEvents の操作</span><span class="sxs-lookup"><span data-stu-id="11bf8-132">GetStreamingEvents operation</span></span>](getstreamingevents-operation.md)
+[<span data-ttu-id="7b926-132">GetStreamingEvents の操作</span><span class="sxs-lookup"><span data-stu-id="7b926-132">GetStreamingEvents operation</span></span>](getstreamingevents-operation.md)
 
 
-- [<span data-ttu-id="11bf8-133">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="11bf8-133">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="7b926-133">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="7b926-133">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
