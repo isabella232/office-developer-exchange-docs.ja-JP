@@ -12,12 +12,12 @@ ms.openlocfilehash: 7d0c528b5b7f9adae271a42380550115fbcf94d0
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460737"
 ---
-# <a name="displaynames"></a><span data-ttu-id="8aecd-103">DisplayNames</span><span class="sxs-lookup"><span data-stu-id="8aecd-103">DisplayNames</span></span>
+# <a name="displaynames"></a><span data-ttu-id="9a5b2-103">DisplayNames</span><span class="sxs-lookup"><span data-stu-id="9a5b2-103">DisplayNames</span></span>
 
-<span data-ttu-id="8aecd-104">**Displaynames**要素は、表示名の配列と、関連付けられているペルソナのソース attributions の識別子を指定します。</span><span class="sxs-lookup"><span data-stu-id="8aecd-104">The **DisplayNames** element specifies an array of display names and the identifiers of their source attributions for the associated persona.</span></span> 
+<span data-ttu-id="9a5b2-104">**Displaynames**要素は、表示名の配列と、関連付けられているペルソナのソース attributions の識別子を指定します。</span><span class="sxs-lookup"><span data-stu-id="9a5b2-104">The **DisplayNames** element specifies an array of display names and the identifiers of their source attributions for the associated persona.</span></span> 
   
 ```xml
 <DisplayNames>
@@ -25,43 +25,43 @@ ms.locfileid: "44460737"
 </DisplayNames>
 ```
 
- <span data-ttu-id="8aecd-105">**ArrayOfStringAttributedValuesType**</span><span class="sxs-lookup"><span data-stu-id="8aecd-105">**ArrayOfStringAttributedValuesType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="8aecd-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="8aecd-106">Attributes and elements</span></span>
+ <span data-ttu-id="9a5b2-105">**ArrayOfStringAttributedValuesType**</span><span class="sxs-lookup"><span data-stu-id="9a5b2-105">**ArrayOfStringAttributedValuesType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="9a5b2-106">属性と要素</span><span class="sxs-lookup"><span data-stu-id="9a5b2-106">Attributes and elements</span></span>
 
-<span data-ttu-id="8aecd-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="8aecd-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="9a5b2-107">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="9a5b2-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="8aecd-108">属性</span><span class="sxs-lookup"><span data-stu-id="8aecd-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="9a5b2-108">属性</span><span class="sxs-lookup"><span data-stu-id="9a5b2-108">Attributes</span></span>
 
-<span data-ttu-id="8aecd-109">なし</span><span class="sxs-lookup"><span data-stu-id="8aecd-109">None</span></span>
+<span data-ttu-id="9a5b2-109">なし</span><span class="sxs-lookup"><span data-stu-id="9a5b2-109">None</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="8aecd-110">子要素</span><span class="sxs-lookup"><span data-stu-id="8aecd-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="9a5b2-110">子要素</span><span class="sxs-lookup"><span data-stu-id="9a5b2-110">Child elements</span></span>
 
-|<span data-ttu-id="8aecd-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="8aecd-111">**Element**</span></span>|<span data-ttu-id="8aecd-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="8aecd-112">**Description**</span></span>|
+|<span data-ttu-id="9a5b2-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="9a5b2-111">**Element**</span></span>|<span data-ttu-id="9a5b2-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="9a5b2-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="8aecd-113">StringAttributedValue</span><span class="sxs-lookup"><span data-stu-id="8aecd-113">StringAttributedValue</span></span>](stringattributedvalue.md) <br/> |<span data-ttu-id="8aecd-114">Persona 要素に関連付けられている属性の配列のインスタンスを指定します。</span><span class="sxs-lookup"><span data-stu-id="8aecd-114">Specifies an instance in an array of attributes associated with a persona element.</span></span>  <br/> |
+|[<span data-ttu-id="9a5b2-113">StringAttributedValue</span><span class="sxs-lookup"><span data-stu-id="9a5b2-113">StringAttributedValue</span></span>](stringattributedvalue.md) <br/> |<span data-ttu-id="9a5b2-114">Persona 要素に関連付けられている属性の配列のインスタンスを指定します。</span><span class="sxs-lookup"><span data-stu-id="9a5b2-114">Specifies an instance in an array of attributes associated with a persona element.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="8aecd-115">親要素</span><span class="sxs-lookup"><span data-stu-id="8aecd-115">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="9a5b2-115">親要素</span><span class="sxs-lookup"><span data-stu-id="9a5b2-115">Parent elements</span></span>
 
-|<span data-ttu-id="8aecd-116">**要素**</span><span class="sxs-lookup"><span data-stu-id="8aecd-116">**Element**</span></span>|<span data-ttu-id="8aecd-117">**説明**</span><span class="sxs-lookup"><span data-stu-id="8aecd-117">**Description**</span></span>|
+|<span data-ttu-id="9a5b2-116">**要素**</span><span class="sxs-lookup"><span data-stu-id="9a5b2-116">**Element**</span></span>|<span data-ttu-id="9a5b2-117">**説明**</span><span class="sxs-lookup"><span data-stu-id="9a5b2-117">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="8aecd-118">ユーザー</span><span class="sxs-lookup"><span data-stu-id="8aecd-118">Persona</span></span>](persona.md) <br/> |<span data-ttu-id="8aecd-119">**Getpersona**要求によって返される一連のペルソナデータを指定します。</span><span class="sxs-lookup"><span data-stu-id="8aecd-119">Specifies a set of persona data returned by a **GetPersona** request.</span></span>  <br/> |
+|[<span data-ttu-id="9a5b2-118">ユーザー</span><span class="sxs-lookup"><span data-stu-id="9a5b2-118">Persona</span></span>](persona.md) <br/> |<span data-ttu-id="9a5b2-119">**Getpersona**要求によって返される一連のペルソナデータを指定します。</span><span class="sxs-lookup"><span data-stu-id="9a5b2-119">Specifies a set of persona data returned by a **GetPersona** request.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="8aecd-120">注釈</span><span class="sxs-lookup"><span data-stu-id="8aecd-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="9a5b2-120">注釈</span><span class="sxs-lookup"><span data-stu-id="9a5b2-120">Remarks</span></span>
 
-<span data-ttu-id="8aecd-121">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="8aecd-121">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="9a5b2-121">この要素は Exchange Server 2013 で導入されました。</span><span class="sxs-lookup"><span data-stu-id="9a5b2-121">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="8aecd-122">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="8aecd-122">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="9a5b2-122">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="9a5b2-122">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="8aecd-123">要素の情報</span><span class="sxs-lookup"><span data-stu-id="8aecd-123">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="9a5b2-123">要素の情報</span><span class="sxs-lookup"><span data-stu-id="9a5b2-123">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="8aecd-124">Namespace</span><span class="sxs-lookup"><span data-stu-id="8aecd-124">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="8aecd-125">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="8aecd-125">Schema Name</span></span>  <br/> |<span data-ttu-id="8aecd-126">型スキーマ</span><span class="sxs-lookup"><span data-stu-id="8aecd-126">Type schema</span></span>  <br/> |
-|<span data-ttu-id="8aecd-127">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="8aecd-127">Validation File</span></span>  <br/> |<span data-ttu-id="8aecd-128">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="8aecd-128">types.xsd</span></span>  <br/> |
-|<span data-ttu-id="8aecd-129">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="8aecd-129">Can Be Empty</span></span>  <br/> ||
+|<span data-ttu-id="9a5b2-124">Namespace</span><span class="sxs-lookup"><span data-stu-id="9a5b2-124">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="9a5b2-125">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="9a5b2-125">Schema Name</span></span>  <br/> |<span data-ttu-id="9a5b2-126">型スキーマ</span><span class="sxs-lookup"><span data-stu-id="9a5b2-126">Type schema</span></span>  <br/> |
+|<span data-ttu-id="9a5b2-127">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="9a5b2-127">Validation File</span></span>  <br/> |<span data-ttu-id="9a5b2-128">型 .xsd</span><span class="sxs-lookup"><span data-stu-id="9a5b2-128">types.xsd</span></span>  <br/> |
+|<span data-ttu-id="9a5b2-129">空にすることができます。</span><span class="sxs-lookup"><span data-stu-id="9a5b2-129">Can Be Empty</span></span>  <br/> ||
    
-## <a name="see-also"></a><span data-ttu-id="8aecd-130">関連項目</span><span class="sxs-lookup"><span data-stu-id="8aecd-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9a5b2-130">関連項目</span><span class="sxs-lookup"><span data-stu-id="9a5b2-130">See also</span></span>
 
-- [<span data-ttu-id="8aecd-131">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="8aecd-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="9a5b2-131">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="9a5b2-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

@@ -12,12 +12,12 @@ ms.openlocfilehash: b7dd13936a25a43394b9a2d5eea8808fe08b4eb6
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460590"
 ---
-# <a name="metadata"></a><span data-ttu-id="50162-103">のメタデータ</span><span class="sxs-lookup"><span data-stu-id="50162-103">Metadata</span></span>
+# <a name="metadata"></a><span data-ttu-id="63ec5-103">のメタデータ</span><span class="sxs-lookup"><span data-stu-id="63ec5-103">Metadata</span></span>
 
-<span data-ttu-id="50162-104">**Metadata**要素には、メールアプリに関するメタデータが含まれています。</span><span class="sxs-lookup"><span data-stu-id="50162-104">The **Metadata** element contains metadata about the mail app.</span></span> 
+<span data-ttu-id="63ec5-104">**Metadata**要素には、メールアプリに関するメタデータが含まれています。</span><span class="sxs-lookup"><span data-stu-id="63ec5-104">The **Metadata** element contains metadata about the mail app.</span></span> 
   
 ```XML
 <Metadata>
@@ -27,43 +27,43 @@ ms.locfileid: "44460590"
 </Metadata>
 ```
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="50162-105">属性と要素</span><span class="sxs-lookup"><span data-stu-id="50162-105">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="63ec5-105">属性と要素</span><span class="sxs-lookup"><span data-stu-id="63ec5-105">Attributes and elements</span></span>
 
-<span data-ttu-id="50162-106">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="50162-106">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="63ec5-106">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="63ec5-106">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="50162-107">属性</span><span class="sxs-lookup"><span data-stu-id="50162-107">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="63ec5-107">属性</span><span class="sxs-lookup"><span data-stu-id="63ec5-107">Attributes</span></span>
 
-<span data-ttu-id="50162-108">なし。</span><span class="sxs-lookup"><span data-stu-id="50162-108">None.</span></span>
+<span data-ttu-id="63ec5-108">なし。</span><span class="sxs-lookup"><span data-stu-id="63ec5-108">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="50162-109">子要素</span><span class="sxs-lookup"><span data-stu-id="50162-109">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="63ec5-109">子要素</span><span class="sxs-lookup"><span data-stu-id="63ec5-109">Child elements</span></span>
 
-<span data-ttu-id="50162-110">[Endnodeurl](endnodeurl.md)  | [Appstatus](appstatus-ex15websvcsotherref.md)  | [Actionurl](actionurl.md)</span><span class="sxs-lookup"><span data-stu-id="50162-110">[EndNodeUrl](endnodeurl.md) | [AppStatus](appstatus-ex15websvcsotherref.md) | [ActionUrl](actionurl.md)</span></span>
+<span data-ttu-id="63ec5-110">[Endnodeurl](endnodeurl.md)  | [Appstatus](appstatus-ex15websvcsotherref.md)  | [Actionurl](actionurl.md)</span><span class="sxs-lookup"><span data-stu-id="63ec5-110">[EndNodeUrl](endnodeurl.md) | [AppStatus](appstatus-ex15websvcsotherref.md) | [ActionUrl](actionurl.md)</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="50162-111">親要素</span><span class="sxs-lookup"><span data-stu-id="50162-111">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="63ec5-111">親要素</span><span class="sxs-lookup"><span data-stu-id="63ec5-111">Parent elements</span></span>
 
-[<span data-ttu-id="50162-112">App</span><span class="sxs-lookup"><span data-stu-id="50162-112">App</span></span>](app.md)
+[<span data-ttu-id="63ec5-112">App</span><span class="sxs-lookup"><span data-stu-id="63ec5-112">App</span></span>](app.md)
   
-## <a name="remarks"></a><span data-ttu-id="50162-113">注釈</span><span class="sxs-lookup"><span data-stu-id="50162-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="63ec5-113">注釈</span><span class="sxs-lookup"><span data-stu-id="63ec5-113">Remarks</span></span>
 
-<span data-ttu-id="50162-114">この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。</span><span class="sxs-lookup"><span data-stu-id="50162-114">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
+<span data-ttu-id="63ec5-114">この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。</span><span class="sxs-lookup"><span data-stu-id="63ec5-114">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
   
-<span data-ttu-id="50162-115">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="50162-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="63ec5-115">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="63ec5-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="50162-116">要素の情報</span><span class="sxs-lookup"><span data-stu-id="50162-116">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="63ec5-116">要素の情報</span><span class="sxs-lookup"><span data-stu-id="63ec5-116">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="50162-117">Namespace</span><span class="sxs-lookup"><span data-stu-id="50162-117">Namespace</span></span>  <br/> | https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="50162-118">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="50162-118">Schema Name</span></span>  <br/> |<span data-ttu-id="50162-119">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="50162-119">Types schema</span></span>  <br/> |
-|<span data-ttu-id="50162-120">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="50162-120">Validation File</span></span>  <br/> |<span data-ttu-id="50162-121">該当なし</span><span class="sxs-lookup"><span data-stu-id="50162-121">Not applicable</span></span>  <br/> |
-|<span data-ttu-id="50162-122">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="50162-122">Can be Empty</span></span>  <br/> |<span data-ttu-id="50162-123">正しくない</span><span class="sxs-lookup"><span data-stu-id="50162-123">False</span></span>  <br/> |
+|<span data-ttu-id="63ec5-117">Namespace</span><span class="sxs-lookup"><span data-stu-id="63ec5-117">Namespace</span></span>  <br/> | https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="63ec5-118">スキーマ名</span><span class="sxs-lookup"><span data-stu-id="63ec5-118">Schema Name</span></span>  <br/> |<span data-ttu-id="63ec5-119">Types スキーマ</span><span class="sxs-lookup"><span data-stu-id="63ec5-119">Types schema</span></span>  <br/> |
+|<span data-ttu-id="63ec5-120">検証ファイル</span><span class="sxs-lookup"><span data-stu-id="63ec5-120">Validation File</span></span>  <br/> |<span data-ttu-id="63ec5-121">該当なし</span><span class="sxs-lookup"><span data-stu-id="63ec5-121">Not applicable</span></span>  <br/> |
+|<span data-ttu-id="63ec5-122">空に設定可能</span><span class="sxs-lookup"><span data-stu-id="63ec5-122">Can be Empty</span></span>  <br/> |<span data-ttu-id="63ec5-123">正しくない</span><span class="sxs-lookup"><span data-stu-id="63ec5-123">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="50162-124">関連項目</span><span class="sxs-lookup"><span data-stu-id="50162-124">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="63ec5-124">関連項目</span><span class="sxs-lookup"><span data-stu-id="63ec5-124">See also</span></span>
 
 
 
-[<span data-ttu-id="50162-125">App</span><span class="sxs-lookup"><span data-stu-id="50162-125">App</span></span>](app.md)
+[<span data-ttu-id="63ec5-125">App</span><span class="sxs-lookup"><span data-stu-id="63ec5-125">App</span></span>](app.md)
 
 
-- [<span data-ttu-id="50162-126">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="50162-126">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="63ec5-126">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="63ec5-126">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

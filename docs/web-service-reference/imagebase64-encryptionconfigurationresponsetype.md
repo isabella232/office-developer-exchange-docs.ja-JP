@@ -12,33 +12,33 @@ ms.openlocfilehash: cbe36bef7ce9b9f68ebc0dff69c3c62090fce996
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460716"
 ---
-# <a name="imagebase64-encryptionconfigurationresponsetype"></a><span data-ttu-id="d769c-103">ImageBase64 (EncryptionConfigurationResponseType)</span><span class="sxs-lookup"><span data-stu-id="d769c-103">ImageBase64 (EncryptionConfigurationResponseType)</span></span>
+# <a name="imagebase64-encryptionconfigurationresponsetype"></a><span data-ttu-id="10d24-103">ImageBase64 (EncryptionConfigurationResponseType)</span><span class="sxs-lookup"><span data-stu-id="10d24-103">ImageBase64 (EncryptionConfigurationResponseType)</span></span>
 
-<span data-ttu-id="d769c-104">**ImageBase64**要素は、内部使用のみを目的としています。</span><span class="sxs-lookup"><span data-stu-id="d769c-104">The **ImageBase64** element is intended for internal use only.</span></span> 
+<span data-ttu-id="10d24-104">**ImageBase64**要素は、内部使用のみを目的としています。</span><span class="sxs-lookup"><span data-stu-id="10d24-104">The **ImageBase64** element is intended for internal use only.</span></span> 
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="d769c-105">属性と要素</span><span class="sxs-lookup"><span data-stu-id="d769c-105">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="10d24-105">属性と要素</span><span class="sxs-lookup"><span data-stu-id="10d24-105">Attributes and elements</span></span>
 
-<span data-ttu-id="d769c-106">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="d769c-106">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="10d24-106">以下のセクションで、属性、子要素、親要素について説明します。</span><span class="sxs-lookup"><span data-stu-id="10d24-106">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="d769c-107">属性</span><span class="sxs-lookup"><span data-stu-id="d769c-107">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="10d24-107">属性</span><span class="sxs-lookup"><span data-stu-id="10d24-107">Attributes</span></span>
 
-<span data-ttu-id="d769c-108">なし。</span><span class="sxs-lookup"><span data-stu-id="d769c-108">None.</span></span>
+<span data-ttu-id="10d24-108">なし。</span><span class="sxs-lookup"><span data-stu-id="10d24-108">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="d769c-109">子要素</span><span class="sxs-lookup"><span data-stu-id="d769c-109">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="10d24-109">子要素</span><span class="sxs-lookup"><span data-stu-id="10d24-109">Child elements</span></span>
 
-<span data-ttu-id="d769c-110">なし。</span><span class="sxs-lookup"><span data-stu-id="d769c-110">None.</span></span>
+<span data-ttu-id="10d24-110">なし。</span><span class="sxs-lookup"><span data-stu-id="10d24-110">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="d769c-111">親要素</span><span class="sxs-lookup"><span data-stu-id="d769c-111">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="10d24-111">親要素</span><span class="sxs-lookup"><span data-stu-id="10d24-111">Parent elements</span></span>
 
-<span data-ttu-id="d769c-112">なし。</span><span class="sxs-lookup"><span data-stu-id="d769c-112">None.</span></span>
+<span data-ttu-id="10d24-112">なし。</span><span class="sxs-lookup"><span data-stu-id="10d24-112">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="d769c-113">注釈</span><span class="sxs-lookup"><span data-stu-id="d769c-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="10d24-113">注釈</span><span class="sxs-lookup"><span data-stu-id="10d24-113">Remarks</span></span>
 
-<span data-ttu-id="d769c-114">この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。</span><span class="sxs-lookup"><span data-stu-id="d769c-114">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
+<span data-ttu-id="10d24-114">この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。</span><span class="sxs-lookup"><span data-stu-id="10d24-114">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
   
-<span data-ttu-id="d769c-115">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="d769c-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="10d24-115">この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。</span><span class="sxs-lookup"><span data-stu-id="10d24-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
 

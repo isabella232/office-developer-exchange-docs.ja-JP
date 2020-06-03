@@ -16,20 +16,20 @@ ms.openlocfilehash: b8ea2cef366a52765850dddcc8c1ef1e8fa68b22
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460912"
 ---
-# <a name="getserviceconfiguration-operation"></a><span data-ttu-id="8b093-104">GetServiceConfiguration 操作</span><span class="sxs-lookup"><span data-stu-id="8b093-104">GetServiceConfiguration operation</span></span>
+# <a name="getserviceconfiguration-operation"></a><span data-ttu-id="f925f-104">GetServiceConfiguration 操作</span><span class="sxs-lookup"><span data-stu-id="f925f-104">GetServiceConfiguration operation</span></span>
 
-<span data-ttu-id="8b093-105">**GetServiceConfiguration**操作は、指定されたサービスの種類の構成情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="8b093-105">The **GetServiceConfiguration** operation gets configuration information for the specified type of service.</span></span> <span data-ttu-id="8b093-106">この操作は、ユニファイドメッセージング、保護ルール、およびメールヒントサービスの構成設定を返すことができます。</span><span class="sxs-lookup"><span data-stu-id="8b093-106">This operation can return configuration settings for the Unified Messaging, Protection Rules, and Mail Tips services.</span></span> 
+<span data-ttu-id="f925f-105">**GetServiceConfiguration**操作は、指定されたサービスの種類の構成情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="f925f-105">The **GetServiceConfiguration** operation gets configuration information for the specified type of service.</span></span> <span data-ttu-id="f925f-106">この操作は、ユニファイドメッセージング、保護ルール、およびメールヒントサービスの構成設定を返すことができます。</span><span class="sxs-lookup"><span data-stu-id="f925f-106">This operation can return configuration settings for the Unified Messaging, Protection Rules, and Mail Tips services.</span></span> 
   
-## <a name="getserviceconfiguration-request-example"></a><span data-ttu-id="8b093-107">GetServiceConfiguration 要求の例</span><span class="sxs-lookup"><span data-stu-id="8b093-107">GetServiceConfiguration request example</span></span>
+## <a name="getserviceconfiguration-request-example"></a><span data-ttu-id="f925f-107">GetServiceConfiguration 要求の例</span><span class="sxs-lookup"><span data-stu-id="f925f-107">GetServiceConfiguration request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="8b093-108">説明</span><span class="sxs-lookup"><span data-stu-id="8b093-108">Description</span></span>
+### <a name="description"></a><span data-ttu-id="f925f-108">Description</span><span class="sxs-lookup"><span data-stu-id="f925f-108">Description</span></span>
 
-<span data-ttu-id="8b093-109">次の**GetServiceConfiguration**要求の例は、ユニファイドメッセージングサービスの構成情報を取得するための要求を形成する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="8b093-109">The following example of a **GetServiceConfiguration** request shows how to form a request to get configuration information for the Unified Messaging service.</span></span> 
+<span data-ttu-id="f925f-109">次の**GetServiceConfiguration**要求の例は、ユニファイドメッセージングサービスの構成情報を取得するための要求を形成する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="f925f-109">The following example of a **GetServiceConfiguration** request shows how to form a request to get configuration information for the Unified Messaging service.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="8b093-110">コード</span><span class="sxs-lookup"><span data-stu-id="8b093-110">Code</span></span>
+### <a name="code"></a><span data-ttu-id="f925f-110">コード</span><span class="sxs-lookup"><span data-stu-id="f925f-110">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -51,13 +51,13 @@ ms.locfileid: "44460912"
 </soap:Envelope>
 ```
 
-## <a name="getserviceconfiguration-response-example"></a><span data-ttu-id="8b093-111">GetServiceConfiguration response の例</span><span class="sxs-lookup"><span data-stu-id="8b093-111">GetServiceConfiguration response example</span></span>
+## <a name="getserviceconfiguration-response-example"></a><span data-ttu-id="f925f-111">GetServiceConfiguration response の例</span><span class="sxs-lookup"><span data-stu-id="f925f-111">GetServiceConfiguration response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="8b093-112">説明</span><span class="sxs-lookup"><span data-stu-id="8b093-112">Description</span></span>
+### <a name="description"></a><span data-ttu-id="f925f-112">Description</span><span class="sxs-lookup"><span data-stu-id="f925f-112">Description</span></span>
 
-<span data-ttu-id="8b093-113">次の例は、 **GetServiceConfiguration**要求に対する正常な応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="8b093-113">The following example shows a successful response to the **GetServiceConfiguration** request.</span></span> 
+<span data-ttu-id="f925f-113">次の例は、 **GetServiceConfiguration**要求に対する正常な応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="f925f-113">The following example shows a successful response to the **GetServiceConfiguration** request.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="8b093-114">コード</span><span class="sxs-lookup"><span data-stu-id="8b093-114">Code</span></span>
+### <a name="code"></a><span data-ttu-id="f925f-114">コード</span><span class="sxs-lookup"><span data-stu-id="f925f-114">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -93,13 +93,13 @@ ms.locfileid: "44460912"
 </s:Envelope>
 ```
 
-## <a name="getserviceconfiguration-error-response-example"></a><span data-ttu-id="8b093-115">GetServiceConfiguration エラー応答の例</span><span class="sxs-lookup"><span data-stu-id="8b093-115">GetServiceConfiguration Error response example</span></span>
+## <a name="getserviceconfiguration-error-response-example"></a><span data-ttu-id="f925f-115">GetServiceConfiguration エラー応答の例</span><span class="sxs-lookup"><span data-stu-id="f925f-115">GetServiceConfiguration Error response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="8b093-116">説明</span><span class="sxs-lookup"><span data-stu-id="8b093-116">Description</span></span>
+### <a name="description"></a><span data-ttu-id="f925f-116">Description</span><span class="sxs-lookup"><span data-stu-id="f925f-116">Description</span></span>
 
-<span data-ttu-id="8b093-117">次の例は、 **GetServiceConfiguration**要求へのエラー応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="8b093-117">The following example shows an error response to the **GetServiceConfiguration** request.</span></span> <span data-ttu-id="8b093-118">このエラーは、構成名が正しくないことが原因で発生しました。</span><span class="sxs-lookup"><span data-stu-id="8b093-118">This error was caused by an incorrect configuration name.</span></span> 
+<span data-ttu-id="f925f-117">次の例は、 **GetServiceConfiguration**要求へのエラー応答を示しています。</span><span class="sxs-lookup"><span data-stu-id="f925f-117">The following example shows an error response to the **GetServiceConfiguration** request.</span></span> <span data-ttu-id="f925f-118">このエラーは、構成名が正しくないことが原因で発生しました。</span><span class="sxs-lookup"><span data-stu-id="f925f-118">This error was caused by an incorrect configuration name.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="8b093-119">コード</span><span class="sxs-lookup"><span data-stu-id="8b093-119">Code</span></span>
+### <a name="code"></a><span data-ttu-id="f925f-119">コード</span><span class="sxs-lookup"><span data-stu-id="f925f-119">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -129,11 +129,11 @@ ms.locfileid: "44460912"
 </s:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="8b093-120">関連項目</span><span class="sxs-lookup"><span data-stu-id="8b093-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f925f-120">関連項目</span><span class="sxs-lookup"><span data-stu-id="f925f-120">See also</span></span>
 
 
 
-[<span data-ttu-id="8b093-121">Exchange での EWS 操作</span><span class="sxs-lookup"><span data-stu-id="8b093-121">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
+[<span data-ttu-id="f925f-121">Exchange での EWS 操作</span><span class="sxs-lookup"><span data-stu-id="f925f-121">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
   
-- [<span data-ttu-id="8b093-122">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="8b093-122">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="f925f-122">Exchange の EWS XML 要素</span><span class="sxs-lookup"><span data-stu-id="f925f-122">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
