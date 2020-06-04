@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: 80b949ac-440c-4a01-b428-ebafb5b1b802
-description: ViewPrivateItems 要素は、代理人のユーザーまたはクライアント アプリケーションが主体のメールボックスにプライベート アイテムを表示する権限を持つかどうかを示します。
-ms.openlocfilehash: c35f24ae79e907424cb5cfb0efeec2307334ca12
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: ViewPrivateItems 要素は、代理人のユーザーまたはクライアントアプリケーションがプリンシパルのメールボックス内のプライベートアイテムを表示するためのアクセス許可を持っているかどうかを示します。
+ms.openlocfilehash: 4e1375f7c4a3c660cc5de885deff8d094250ca7b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19839994"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44525970"
 ---
 # <a name="viewprivateitems"></a>ViewPrivateItems
 
-**ViewPrivateItems**要素は、代理人のユーザーまたはクライアント アプリケーションが主体のメールボックスにプライベート アイテムを表示する権限を持つかどうかを示します。 
+**Viewprivateitems**要素は、代理人のユーザーまたはクライアントアプリケーションがプリンシパルのメールボックス内のプライベートアイテムを表示するためのアクセス許可を持っているかどうかを示します。 
   
 ```XML
 <ViewPrivateItems>true | false</ViewPrivateItems>
 ```
 
- **ブール型 (Boolean)**
-## <a name="attributes-and-elements"></a>属性および要素
+ **Boolean**
+## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
   
@@ -44,25 +44,25 @@ ms.locfileid: "19839994"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[DelegateUser](delegateuser.md) <br/> |1 つのデリゲートを追加するメールボックスの更新を識別します。  <br/> |
-|[EffectiveRights](effectiverights.md) <br/> |アイテムまたはフォルダーのアクセス許可の設定に基づいて、クライアントの権限が含まれています。 この要素は、読み取り専用です。  <br/> |
+|[DelegateUser](delegateuser.md) <br/> |メールボックスに追加または更新する単一の代理人を指定します。  <br/> |
+|[EffectiveRights](effectiverights.md) <br/> |アイテムまたはフォルダーのアクセス許可の設定に基づいたクライアントの権限が含まれています。 この要素は値の取得のみ可能です。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**True**の場合、代理人またはクライアント アイテムを表示できますプライベート主体のメールボックス内を示します。 **False**の値は、プライベートなアイテムが、代理人またはクライアントに表示されていないことを示します。 
+値が**true の場合**は、代理人またはクライアントがプリンシパルのメールボックス内のプライベートアイテムを表示できることを示します。 値が**false**の場合は、代理人またはクライアントがプライベートアイテムを表示できないことを示します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |タイプのスキーマ  <br/> |
-|検証ファイル  <br/> |Types.xsd  <br/> |
-|空に設定可能  <br/> |False  <br/> |
+|名前空間  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|スキーマ名  <br/> |Types スキーマ  <br/> |
+|検証ファイル  <br/> |型 .xsd  <br/> |
+|空に設定可能  <br/> |正しくない  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -73,8 +73,8 @@ ms.locfileid: "19839994"
 [UpdateDelegate 操作](updatedelegate-operation.md)
 
 
-- [Exchange での EWS の XML 要素](ews-xml-elements-in-exchange.md)
+- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
 
 
-[デリゲートを追加します。](http://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
+[代理人の追加](https://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
 

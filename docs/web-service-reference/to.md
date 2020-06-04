@@ -16,7 +16,7 @@ ms.openlocfilehash: 8cce700eedd64035f2e21be4db6b517f3f85d98d
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44468797"
 ---
 # <a name="to"></a>宛先
@@ -70,7 +70,7 @@ ms.locfileid: "44468797"
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|名前空間  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |Types スキーマ  <br/> |
 |検証ファイル  <br/> |型 .xsd  <br/> |
 |空に設定可能  <br/> |正しくない  <br/> |

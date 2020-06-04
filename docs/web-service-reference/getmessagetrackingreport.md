@@ -16,7 +16,7 @@ ms.openlocfilehash: 30596acd209580147e0f03e12a7868502159b29c
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44466578"
 ---
 # <a name="getmessagetrackingreport"></a>GetMessageTrackingReport
@@ -68,7 +68,7 @@ ms.locfileid: "44466578"
 
 |||
 |:-----|:-----|
-|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|名前空間  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |スキーマ名  <br/> |メッセージスキーマ  <br/> |
 |検証ファイル  <br/> |メッセージ .xsd  <br/> |
 |空に設定可能  <br/> |正しくない  <br/> |
