@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 82dfa204-e316-432f-a753-5bd97f576389
 description: UnpinTeamMailboxResponse 要素は、サイトメールボックスの固定を解除する要求に対する応答を含みます。
 ms.openlocfilehash: ba1f61a7b5b5b4d5af6805c13d84ee15e3559751
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.sourcegitcommit: eeda51cb037aa25566adb293f25574674fdb2d9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44467236"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45012581"
 ---
 # <a name="unpinteammailboxresponse"></a>UnpinTeamMailboxResponse
 

@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.assetid: 4b3eb746-74c4-42a0-aa2c-742c147f1871
 description: Exchange で EWS マネージ API または EWS を使用して、フォルダーを作成、取得、更新、削除する方法について説明します。
 localization_priority: Priority
-ms.openlocfilehash: a184d8da4d6949f01f47afc6a9fb7ed30729fd3b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: c09c0c76edda4af025a6ac7121fdf9ab9660fcab
+ms.sourcegitcommit: eeda51cb037aa25566adb293f25574674fdb2d9e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44456382"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45012546"
 ---
 # <a name="work-with-folders-by-using-ews-in-exchange"></a>Exchange で EWS を使用してフォルダーを操作する
 
@@ -38,7 +38,7 @@ Exchange の EWS は、フォルダーを使用してメールボックスの構
   
 これらの例では、**service** が有効な [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーは Exchange サーバーに既に認証されていると想定しています。 
   
-```cs
+```csharp
 // Create a custom folder.
 Folder folder = new Folder(service);
 folder.DisplayName = "Custom Folder";
@@ -49,7 +49,7 @@ folder.Save(WellKnownFolderName.Inbox);
 
 [CalendarFolder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.calendarfolder%28v=exchg.80%29.aspx)、[ContactsFolder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.contactsfolder%28v=exchg.80%29.aspx)、[SearchFolder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfolder%28v=exchg.80%29.aspx)、[TasksFolder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.tasksfolder%28v=exchg.80%29.aspx) など異なるタイプのフォルダーを作成するには、特定のクラスの新しいインスタンス (汎用の **Folder** クラスではなく) を作成し、**FolderClass** プロパティは設定しません。 たとえば、次のコード例は、新しい [TasksFolder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.tasksfolder%28v=exchg.80%29.aspx) を作成する方法を示しています。
   
-```cs
+```csharp
 // Create a custom Tasks folder.
 TasksFolder folder = new TasksFolder(service);
 folder.DisplayName = "Custom Tasks";
@@ -71,7 +71,7 @@ EWS を使用すると、1 つまたは複数のフォルダーを作成でき�
   
 これは、新しいフォルダーが作成されて [Folder.Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.save%28v=exchg.80%29.aspx) メソッドが呼び出されると、EWS マネージ API が送信する XML 要求でもあります。 
   
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
@@ -103,7 +103,7 @@ EWS を使用すると、1 つまたは複数のフォルダーを作成でき�
 ## <a name="create-a-folder-hierarchy-by-using-ews"></a>EWS を使用してフォルダー階層を作成する
 <a name="bk_createfolderhierarchy"> </a>
 
-EWS [CreateFolderPath](https://msdn.microsoft.com/library/5a10aa5e-3f25-4ec3-a0b9-284c30918a1f%28Office.15%29.aspx) 操作を使用すると、1 回の呼び出しで 1 つのフォルダー階層を作成できます。この機能は、EWS マネージ API では利用できません。代わりに、EWS マネージ API を使用している場合には「[EWS を使用してフォルダーを作成する](#bk_createfolderews)」に記されているようにフォルダーを 1 つずつ作成できます。
+You can create a folder hierarchy in a single call by using the EWS [CreateFolderPath](https://msdn.microsoft.com/library/5a10aa5e-3f25-4ec3-a0b9-284c30918a1f%28Office.15%29.aspx) operation. The same functionality is not available in the EWS Managed API. Instead, if you are using the EWS Managed API, you can create folders one by one, as shown in [Create a folder by using EWS](#bk_createfolderews).
   
 > [!NOTE]
 > EWS マネージ API はこの機能を実装していません。 
@@ -115,7 +115,7 @@ EWS [CreateFolderPath](https://msdn.microsoft.com/library/5a10aa5e-3f25-4ec3-a0b
   
 この例では、**service** が有効な [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
   
-```cs
+```csharp
 // As a best practice, limit the properties returned to only those that are required.
 // In this scenario, you only need the FolderId.
 PropertySet propSet = new PropertySet(BasePropertySet.IdOnly);
@@ -139,7 +139,7 @@ EWS を使用すると、1 つまたは複数のフォルダーを取得でき�
   
 複数のフォルダーを取得するには、複数の [FolderIds](https://msdn.microsoft.com/library/812948d8-c7db-45ce-bb3a-77233a53a974%28Office.15%29.aspx) 要素を **GetFolder** 操作要求メッセージに含めます。 
   
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
@@ -160,7 +160,7 @@ EWS を使用すると、1 つまたは複数のフォルダーを取得でき�
 
 次の XML の例は、**GetFolder** 操作要求に対する応答として、サーバーからクライアントに送信される [GetFolderResponse](https://msdn.microsoft.com/library/47abeec8-78dd-4297-8525-099174ec880d%28Office.15%29.aspx) メッセージを示しています。 受信トレイ フォルダーの [FolderId](https://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx) 値のみが入っています。 読みやすくするため、一部の属性と要素の値が短縮されています。 
   
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
@@ -202,7 +202,7 @@ EWS を使用すると、1 つまたは複数のフォルダーを取得でき�
   
 この例では、**service** が有効な [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
   
-```XML
+```csharp
 // Create a new folder view, and pass in the maximum number of folders to return.
 FolderView view = new FolderView(folderViewSize);
 // Create an extended property definition for the PR_ATTR_HIDDEN property,
@@ -226,7 +226,7 @@ FindFoldersResults findFolderResults = service.FindFolders(WellKnownFolderName.M
   
 これは、[FindFolders](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.findfolders%28v=exchg.80%29.aspx) メソッドが呼びされるときに EWS マネージ API が送信する XML 要求でもあります。 
   
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
@@ -260,7 +260,7 @@ FindFoldersResults findFolderResults = service.FindFolders(WellKnownFolderName.M
   
 これは、[FindFolder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx) メソッドを使用して複数のフォルダーが取得されるときに、EWS マネージ API が送信する XML 応答でもあります。 読みやすいように、いくつかの属性と要素の値に短縮されていて、簡略化するために含まれていないフォルダーもあります。 
   
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15"
@@ -368,7 +368,7 @@ folder.Update();
   
 これは、[Folder.Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.update%28v=exchg.80%29.aspx) メソッドを使用して 1 つのフォルダーが更新されるときに、EWS マネージ API が送信する XML 要求でもあります。 読みやすくするため、一部の属性と要素の値が短縮されています。 
   
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
@@ -425,7 +425,7 @@ EWS を使用してフィルダーを削除するには、最初に、「[EWS �
   
 また、これは [Folder.Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.delete%28v=exchg.80%29.aspx) メソッドを使用して 1 つのフォルダーが削除されるときに、EWS マネージ API が送信する XML 要求でもあります。 読みやすくするため、一部の属性と要素の値が短縮されています。 
   
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
