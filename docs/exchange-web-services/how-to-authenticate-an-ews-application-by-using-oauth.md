@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.assetid: 1d8d57f9-4df5-4f21-9bbb-a89e0e259052
 description: EWS Managed API アプリケーションで、OAuth 認証を使用する方法について説明します。
 localization_priority: Priority
-ms.openlocfilehash: e2bcb339ddac51b888660b6f982a8377591b1a29
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 0375095faac918859354da026118ea4ccfd6792b
+ms.sourcegitcommit: eeda51cb037aa25566adb293f25574674fdb2d9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528252"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45012567"
 ---
 <!-- markdownlint-disable MD025 -->
 # <a name="authenticate-an-ews-application-by-using-oauth"></a>OAuth を使用して EWS アプリケーションを認証する
@@ -63,7 +63,7 @@ OAuth を使用するには、アプリケーションが Azure Active Directory
 
 1. 左側のナビゲーションで、[**管理**] の下にある [ **API のアクセス許可**] を選択します。 
 
-1. [**アクセス許可の追加**] を選択します。 [ **API アクセス許可の要求**] ページで、[**サポートされているレガシ api**] の下の [ **Exchange** ] を選択します。 
+1. [**アクセス許可を追加**] を選択します。 [ **API アクセス許可の要求**] ページで、[**サポートされているレガシ api**] の下の [ **Exchange** ] を選択します。 
 
 1. 委任されたアクセス許可を使用するには、[委任された**アクセス許可**] を選択してから、[ **EWS** **EWS**の下に directory.accessasuser.all。 [**アクセス許可の追加**] をクリックします。 
 
@@ -81,7 +81,7 @@ OAuth を使用するには、アプリケーションが Azure Active Directory
 
 ## <a name="add-code-to-get-an-authentication-token"></a>認証トークンを取得するコードを追加する
 
-次のコードスニペットは、Microsoft 認証ライブラリを使用して、委任されたアクセス許可とアプリケーションのアクセス許可の認証トークンを取得する方法を示しています。 これらのスニペットは、認証要求を行うために必要な情報が、**アプリケーションの app.config**ファイルに格納されていることを前提としています。 これらの例には、エラーチェックは含まれていません。完全なコードについては、[コードサンプル](#code-samples)を参照してください。
+次のコードスニペットは、Microsoft 認証ライブラリを使用して、委任されたアクセス許可とアプリケーションのアクセス許可の認証トークンを取得する方法を示しています。 これらのスニペットは、認証要求を行うために必要な情報が、アプリケーションの**App.config**ファイルに格納されていることを前提としています。 これらの例には、エラーチェックは含まれていません。完全なコードについては、[コードサンプル](#code-samples)を参照してください。
 
 ### <a name="delegated-permissions"></a>委任されたアクセス許可
 
@@ -115,7 +115,7 @@ var app = ConfidentialClientApplicationBuilder
 // The permission scope required for EWS access
 var ewsScopes = new string[] { "https://outlook.office.com/.default" };
 
-//Make the toekn request
+//Make the token request
 AuthenticationResult authResult = await app.AcquireTokenForClient(ewsScopes).ExecuteAsync();
 
 ```
@@ -280,7 +280,7 @@ namespace ews_oauth_samples
 }
 ```
 
-どちらの場合も、サンプルコードでは、次のエントリを持つ**app.config**ファイルが必要です。
+両方のサンプルコードでは、次のエントリを含む**App.config**ファイルが必要です。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
