@@ -4,12 +4,12 @@ description: IMAP、POP、および SMTP アプリケーションで OAuth 認�
 author: svpsiva
 ms.date: 02/19/2020
 ms.audience: Developer
-ms.openlocfilehash: f83a932790cde558e741ece1e87403103aff18fd
-ms.sourcegitcommit: eeda51cb037aa25566adb293f25574674fdb2d9e
+ms.openlocfilehash: fbe4eaefc5befcc173096c9b8526adebf74a0aad
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45012560"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44438437"
 ---
 # <a name="authenticate-an-imap-pop-or-smtp-connection-using-oauth"></a>OAuth を使用して IMAP、POP、または SMTP 接続を認証する
 
@@ -91,10 +91,6 @@ Base64 エンコード後は、次の文字列に変換されます。 読みや
 dXNlcj10ZXN0QGNvbnRvc28ub25taWNyb3NvZnQuY29tAWF1dGg9QmVhcmVy
 IEV3QkFBbDNCQUFVRkZwVUFvN0ozVmUwYmpMQldaV0NjbFJDM0VvQUEBAQ==
 ```
-
-### <a name="sasl-xoauth2-authentication-for-shared-mailboxes-in-office-365"></a>Office 365 の共有メールボックスのための SASL XOAUTH2 認証
-
-OAuth を使用した共有メールボックスアクセスの場合、アプリケーションはユーザーの代わりにアクセストークンを取得する必要がありますが、SASL XOAUTH2 encoded string の userName フィールドを共有メールボックスの電子メールアドレスに置き換えます。 
 
 ### <a name="imap-protocol-exchange"></a>IMAP プロトコルの Exchange
 
