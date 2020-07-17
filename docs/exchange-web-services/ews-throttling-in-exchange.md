@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.assetid: b4fff4c9-c625-4d2a-9d14-bb28a5da5baf
 description: Exchange を使用しているときに EWS に影響を与える調整ポリシーについて説明します。
 localization_priority: Priority
-ms.openlocfilehash: 0c6ac49629ad4cdb4419cc8638d8e60ecb6509d6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 27db12c01180abbaf92b5b9a09a072212b6012ec
+ms.sourcegitcommit: eeda51cb037aa25566adb293f25574674fdb2d9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455402"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45012553"
 ---
 # <a name="ews-throttling-in-exchange"></a>Exchange での EWS 調整
 
@@ -239,7 +239,7 @@ while (fiResults.MoreAvailable == true);
 
 通知アプリケーションがマルチスレッドで、同時に接続要求を行って、ユーザーアカウントによって受信された特定のメッセージに関する詳細情報を取得する場合は、 **Ewsmaxconcurrency**ポリシーの制限を超えることができます。 これに対処するには、サーバーが使用するものも含めて同時接続をアプリケーションで監視し、クライアントに要求のキューを実装することをご検討ください。
 
-**HangingConnectionLimit** は、ストリーミング通知にのみ適用されます。この制限は web.config ファイルで設定されます。つまり、オンプレミスの Exchange サーバーで Exchange 管理者はこの値を設定できますが、Exchange Online のメールボックスはこの制限の既定値を使用する必要があります (Exchange Online と Exchange 2013 のどちらも既定値は 3 です)。詳細については、「[考慮に入れる必要がある調整の値](how-to-maintain-affinity-between-group-of-subscriptions-and-mailbox-server.md#bk_throttling)」をご覧ください。
+**HangingConnectionLimit**は、ストリーミング通知にのみ適用されます。 この制限は web.config ファイルで設定されます。 Exchange 管理者はオンプレミスの Exchange サーバーでこの値を設定できますが、exchange Online のメールボックスではこの制限の既定値を使用する必要があります。これは、exchange Online、Exchange 2019、Exchange 2016、exchange 2013 の場合は10です。 詳細については、「[考慮する必要のある調整値](how-to-maintain-affinity-between-group-of-subscriptions-and-mailbox-server.md#bk_throttling)」を参照してください。
 
 ## <a name="throttling-policy-and-application-performance"></a>調整ポリシーとアプリケーションのパフォーマンス
 
