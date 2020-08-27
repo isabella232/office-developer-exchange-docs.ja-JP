@@ -4,18 +4,18 @@ description: IMAP、POP、および SMTP アプリケーションで OAuth 認�
 author: svpsiva
 ms.date: 02/19/2020
 ms.audience: Developer
-ms.openlocfilehash: f83a932790cde558e741ece1e87403103aff18fd
-ms.sourcegitcommit: eeda51cb037aa25566adb293f25574674fdb2d9e
+ms.openlocfilehash: e1bef8e35d78c35693dadc94b24b6aeecaf4e439
+ms.sourcegitcommit: 636c05a929279812c6ef87d75b01c166a4a05584
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45012560"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47254987"
 ---
 # <a name="authenticate-an-imap-pop-or-smtp-connection-using-oauth"></a>OAuth を使用して IMAP、POP、または SMTP 接続を認証する
 
 OAuth 認証を使用して IMAP、POP、または SMTP プロトコルに接続し、Office 365 ユーザーの電子メールデータにアクセスする方法について説明します。
 
-> OAuth2 では、以下に示す IMAP、POP、SMTP プロトコルのサポートは、Outlook.com ユーザーに対してサポートされていません。
+> 以下に示すように、Microsoft 365 (web 上の Office を含む) および Outlook.com ユーザーの両方でサポートされている IMAP、POP、SMTP プロトコルの OAuth2 サポートがサポートされています。
 
 OAuth 2.0 に精通していない場合は、まず「 [Microsoft identity platform (v2.0)」の概要](/azure/active-directory/develop/v2-overview)を参照してください。 このドキュメントでは、Sdk を含む Microsoft identity platform のさまざまなコンポーネントについて説明します。
 
@@ -30,7 +30,7 @@ Azure Active Directory によって提供される OAuth 認証サービスを�
 
 OAuth を使用するには、アプリケーションが Azure Active Directory に登録されている必要があります。
 
-「 [Microsoft identity platform を使用してアプリケーションを登録](/azure/active-directory/develop/quickstart-register-app)する」に記載されている手順に従って、新しいアプリケーションを作成します。
+「 [Microsoft identity platform を使用してアプリケーションを登録](/azure/active-directory/develop/quickstart-register-app) する」に記載されている手順に従って、新しいアプリケーションを作成します。
 
 ## <a name="configure-your-application"></a>アプリケーションを構成する
 
@@ -63,7 +63,7 @@ OAuth2 クライアント資格情報の付与フローを介した IMAP、POP�
 | POP       | `https://outlook.office.com/POP.AccessAsUser.All`  |
 | SMTP 認証 | `https://outlook.office.com/SMTP.Send`             |
 
-また、 [offline_access](/azure/active-directory/develop/v2-permissions-and-consent#offline_access)スコープを要求することもできます。 ユーザーが offline_access スコープを承認すると、アプリは Microsoft identity platform token endpoint から更新トークンを受け取ることができます。 更新トークンは長期間の場合があります。 アプリは、新しいアクセストークンを古いものとして期限切れにすることができます。
+また、 [offline_access](/azure/active-directory/develop/v2-permissions-and-consent#offline_access) スコープを要求することもできます。 ユーザーが offline_access スコープを承認すると、アプリは Microsoft identity platform token endpoint から更新トークンを受け取ることができます。 更新トークンは長期間の場合があります。 アプリは、新しいアクセストークンを古いものとして期限切れにすることができます。
 
 ## <a name="authenticate-connection-requests"></a>接続要求を認証する
 
