@@ -1,17 +1,17 @@
 ---
 title: Exchange の偽装と EWS
 manager: sethgros
-ms.date: 11/16/2014
+ms.date: 08/24/2020
 ms.audience: Developer
 ms.assetid: 7e1ea63c-eb29-43d2-827f-2f2b1846483b
 description: Exchange サービス アプリケーションで偽装を使用する方法とタイミングについて説明します。
 localization_priority: Priority
-ms.openlocfilehash: 8151b3d83421786d99ee0c82eaf4f7a5c0721f25
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: da35fb04f316c21a1c85c71b789b7f1485653466
+ms.sourcegitcommit: 636c05a929279812c6ef87d75b01c166a4a05584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44466613"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47254973"
 ---
 # <a name="impersonation-and-ews-in-exchange"></a>Exchange の偽装と EWS
 
@@ -60,6 +60,10 @@ Exchange [サービス アプリケーション](ews-application-types.md)で偽
 - [偽装するアカウントを識別する](how-to-identify-the-account-to-impersonate.md)
     
 - [Exchange の偽装を使用して予定を追加する](how-to-add-appointments-by-using-exchange-impersonation.md)
+
+## <a name="performance-considerations-for-ews-impersonation"></a>EWS の偽装のパフォーマンスに関する考慮事項
+
+EWS の偽装を使用する場合、X-AnchorMailbox が常に正しく設定されている必要があります。  そうでない場合は、500 または 503 のエラー メッセージが表示されることがあります。 これは、パフォーマンスにおいても、Exchange Online または Exchange 2013 の通知においても重要です。  設定をしない場合、呼び出しを完了するまでに 2 倍以上の時間がかかる可能性があります。 場合によっては、タイムアウトになることもあります。 
     
 ## <a name="see-also"></a>関連項目
 
