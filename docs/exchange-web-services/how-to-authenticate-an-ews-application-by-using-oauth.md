@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.assetid: 1d8d57f9-4df5-4f21-9bbb-a89e0e259052
 description: EWS Managed API アプリケーションで、OAuth 認証を使用する方法について説明します。
 localization_priority: Priority
-ms.openlocfilehash: 0375095faac918859354da026118ea4ccfd6792b
-ms.sourcegitcommit: eeda51cb037aa25566adb293f25574674fdb2d9e
-ms.translationtype: MT
+ms.openlocfilehash: 795cbcc3dd1c895850086ebf0e23da905c1c99b7
+ms.sourcegitcommit: 636c05a929279812c6ef87d75b01c166a4a05584
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45012567"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47254966"
 ---
 <!-- markdownlint-disable MD025 -->
 # <a name="authenticate-an-ews-application-by-using-oauth"></a>OAuth を使用して EWS アプリケーションを認証する
@@ -19,7 +19,7 @@ ms.locfileid: "45012567"
 
 EWS Managed API アプリケーションで、OAuth 認証を使用する方法について説明します。
 
-Azure Active Directory によって提供される OAuth 認証サービスを使用して、EWS マネージ API アプリケーションが Office 365 の Exchange Online にアクセスできるようにすることができます。 OAuth をアプリケーションで使用するには、次のようにする必要があります。
+Azure Active Directory が提供する OAuth の認証サービスを使用すると、EWS Managed API アプリケーションが Office 365 での Exchange Online にアクセスできるようにすることができます。 OAuth をアプリケーションで使用するには、次のようにする必要があります。
 
 1. Azure Active Directory に[アプリケーションを登録する](#register-your-application)。
 
@@ -32,21 +32,21 @@ Azure Active Directory によって提供される OAuth 認証サービスを�
 
 この記事のコードを使用するには、次に対するアクセス権が必要です。
 
-- Exchange Online メールボックスを含む Office 365 アカウント。 Office 365 アカウントを持っていない場合は、 [office 365 開発者プログラムにサインアップ](https://developer.microsoft.com/office/dev-program)して、無料の office 365 サブスクリプションを取得することができます。
+- Exchange Online メールボックスを使用している Office 365 アカウント。 Office 365 アカウントをお持ちでない場合は、[Office 365 開発者プログラムに新規登録](https://developer.microsoft.com/office/dev-program)して、無料の Office 365 サブスクリプションを取得できます。
 
-- [.Net 用の Microsoft 認証ライブラリ](/dotnet/api/microsoft.identity.client?view=azure-dotnet)。
+- [.NET 用の Microsoft Authentication Library](/dotnet/api/microsoft.identity.client?view=azure-dotnet)。
 
 - [EWS マネージ API](https://github.com/officedev/ews-managed-api)。
 
 
-Exchange Online で EWS Api にアクセスするために使用できる OAuth アクセス許可には2種類あります。 チュートリアルを開始する前に、使用する特定のアクセス許可の種類を選択する必要があります。
+Exchange Online で EWS API へのアクセスに使用できる OAuth 許可には 2 つの種類があります。 チュートリアルを続行する前に、使用するアクセス許可の具体的な種類を選択する必要があります。
 
-* **委任されたアクセス許可**は、サインインしているユーザーが存在するアプリで使用します。 これらのアプリの場合、ユーザーまたは管理者は、API 呼び出しを行うときに、アプリが要求するアクセス許可とアプリがサインインしているユーザーとして機能する権限を同意ます。 
-* **アプリケーションのアクセス許可**は、サインインしているユーザーが存在しない状態で実行されるアプリで使用されます。たとえば、バックグラウンドサービスまたはデーモンとして実行され、複数のメールボックスにアクセスできるアプリがあります。
+* **委任されたアクセス許可**は、サインインしているユーザーが存在するアプリで使用します。 これに該当するアプリの場合は、ユーザーまたは管理者がアプリの要求するアクセス許可に同意します。アプリは API 呼び出しを行う時に、サインインしているユーザーとして動作できます。 
+* **アプリケーションのアクセス許可**は、サインインしているユーザーが存在しないアプリで使用します。たとえば、バックグラウンド サービスやデーモンとして実行され、複数のメールボックスにアクセスできるアプリです。
 
 ## <a name="register-your-application"></a>アプリケーションを登録する
 
-OAuth を使用するには、アプリケーションが Azure Active Directory によって発行されたアプリケーション ID を持っている必要があります。 このチュートリアルでは、アプリケーションがコンソールアプリケーションであることを前提としているため、アプリケーションを Azure Active Directory を使用して公開クライアントとして登録する必要があります。
+OAuth を使用するには、アプリケーションに Azure Active Directory が発行したアプリケーション ID が必要です。 このチュートリアルでは、アプリケーションがコンソール アプリケーションであることが前提となるので、アプリケーションを Azure Active Directory にパブリック クライアントとして登録する必要があります。
 
 1. ブラウザーを開き、[Azure Active Directory 管理センター](https://aad.portal.azure.com)へ移動して、**個人用アカウント** (別名: Microsoft アカウント)、または**職場/学校アカウント**を使用してログインします。
 
@@ -55,33 +55,33 @@ OAuth を使用するには、アプリケーションが Azure Active Directory
 1. **[新規登録]** を選択します。 
             **[アプリケーションを登録]** ページで、次のように値を設定します。
 
-    - **名前**をアプリのフレンドリ名に設定します。
-    - **サポートされているアカウントの種類**を、シナリオに適した選択肢に設定します。
-    - **リダイレクト URI**の場合は、ドロップダウンを [**パブリッククライアント (モバイル & デスクトップ)** ] に変更し、値をに設定し `urn:ietf:wg:oauth:2.0:oob` ます。
+    - **[名前]** をアプリのフレンドリ名に設定します。
+    - **[サポートされているアカウントの種類]** をシナリオに合った選択肢に設定します。
+    - **リダイレクト URI** については、ドロップダウンを **[パブリック クライアント (モバイルとデスクトップ)]** に変更し、値を `urn:ietf:wg:oauth:2.0:oob` に設定します。
 
-1. **[登録]** を選択します。 次のページで、**アプリケーション (クライアント) ID**の値をコピーして保存します。後で必要になります。
+1. **[登録]** を選択します。 次のページで、**[アプリケーション (クライアント) ID]** の値をコピーして保存します。この値は後で必要になります。
 
-1. 左側のナビゲーションで、[**管理**] の下にある [ **API のアクセス許可**] を選択します。 
+1. 左側のナビゲーションの **[管理]** で **[API のアクセス許可]** を選択します。 
 
-1. [**アクセス許可を追加**] を選択します。 [ **API アクセス許可の要求**] ページで、[**サポートされているレガシ api**] の下の [ **Exchange** ] を選択します。 
+1. **[アクセス許可を追加]** を選択します。 **[API アクセス許可を要求する]** ページの **[サポートされているレガシ API]** で、**[Exchange]** を選択します。 
 
-1. 委任されたアクセス許可を使用するには、[委任された**アクセス許可**] を選択してから、[ **EWS** **EWS**の下に directory.accessasuser.all。 [**アクセス許可の追加**] をクリックします。 
+1. 委任されたアクセス許可を使用するには、**[委任されたアクセス許可]** を選択して、**[EWS]** で **[EWS.AccessAsUser.All]** を選択します。 **[アクセス許可を追加する]** をクリックします。 
 
-アプリケーションのアクセス許可を使用するには、次の追加の手順に従います。
+アプリケーションのアクセス許可を使用するには、次の追加の手順を実行します。
 
-1. [**アプリケーションの権限**] を選択し、[ **full_access_as_app**] を選択します。 [**アクセス許可の追加**] をクリックします。
+1. **[アプリケーションのアクセス許可]** を選択して、次に **[full_access_as_app]** を選択します。 **[アクセス許可を追加する]** をクリックします。
 
-1. [**組織に対する管理者の同意を許可**する] を選択し、同意ダイアログを承諾します。 
+1. **[組織に対して管理者の同意を与える]** を選択して、同意ダイアログに同意します。 
 
-1. [**管理**] の下にある左側のナビゲーションで、[**証明書 & シークレット**] を選択します。 
+1. 左側のナビゲーション ウィンドウの **[管理]** で、**[証明書とシークレット]** を選択します。 
 
-1. [**新しいクライアントシークレット**] を選択し、簡単な説明を入力して [**追加**] を選択します。
+1. **[新しいクライアント シークレット]** を選択して、短い説明を入力して **[追加]** を選択します。
 
-1. 新しく追加したクライアントシークレットの**値**をコピーして保存し、後で必要になります。 
+1. 新しく追加したシークレットの **[値]** をコピーして保存します。この値は後で必要になります。 
 
 ## <a name="add-code-to-get-an-authentication-token"></a>認証トークンを取得するコードを追加する
 
-次のコードスニペットは、Microsoft 認証ライブラリを使用して、委任されたアクセス許可とアプリケーションのアクセス許可の認証トークンを取得する方法を示しています。 これらのスニペットは、認証要求を行うために必要な情報が、アプリケーションの**App.config**ファイルに格納されていることを前提としています。 これらの例には、エラーチェックは含まれていません。完全なコードについては、[コードサンプル](#code-samples)を参照してください。
+次のコード スニペットは、Microsoft Authentication Library を使用して、委任されたアクセス許可とアプリケーションのアクセス許可の認証トークンを取得する方法を示しています。 これらのスニペットは、認証要求を行うために必要な情報がアプリケーションの **App.config** ファイルに格納されていると仮定します。 これらの例では、エラー チェックは含まれません。完全なコードについては、[コード サンプル](#code-samples)を参照してください。
 
 ### <a name="delegated-permissions"></a>委任されたアクセス許可
 
@@ -131,7 +131,7 @@ ewsClient.Url = new Uri("https://outlook.office365.com/EWS/Exchange.asmx");
 ewsClient.Credentials = new OAuthCredentials(authResult.AccessToken);
 ```
 
-アプリケーションのアクセス許可を使用するには、アクセスするメールボックスを明示的に偽装する必要もあります。 
+アプリケーションのアクセス許可を使用するには、アクセスしたいメールボックスを明示的に偽装する必要もあります。 
 
 ```cs
 //Impersonate the mailbox you'd like to access.
@@ -142,7 +142,7 @@ ewsClient.ImpersonatedUserId = new ImpersonatedUserId(ConnectingIdType.SmtpAddre
 
 ### <a name="delegated-permissions"></a>委任されたアクセス許可
 
-次に示す完全なコードサンプルは、委任されたアクセス許可を使用して OAuth 認証された EWS 要求を作成する方法を示しています。
+以下の完全なコード サンプルでは、委任されたアクセス許可を使用して OAuth 認証が行われる EWS 要求を示します。
 
 ```cs
 using Microsoft.Exchange.WebServices.Data;
@@ -211,7 +211,10 @@ namespace EwsOAuth
 
 ### <a name="application-permissions"></a>アプリケーションのアクセス許可
 
-以下に、アプリケーションのアクセス許可を使用して OAuth 認証された EWS 要求を作成する方法を示す完全なコードサンプルを示します。
+以下の完全なコード サンプルでは、アプリケーションのアクセス許可を使用して OAuth 認証が行われる EWS 要求を示します。
+
+> [!NOTE]
+> 偽装を使用するとき、必ず X-AnchorMailbox 要求ヘッダーを使用し、偽装メールボックスの SMTP に設定する必要があります。
 
 ```cs
 using System;
@@ -260,6 +263,9 @@ namespace ews_oauth_samples
                 //Impersonate the mailbox you'd like to access.
                 ewsClient.ImpersonatedUserId = new ImpersonatedUserId(ConnectingIdType.SmtpAddress, "test@demotenant.onmicrosoft.com");
 
+                //Include x-anchormailbox header
+                ewsClient.HttpHeaders.Add("X-AnchorMailbox", "test@demotenant.onmicrosoft.com");
+
                 // Make an EWS call
                 var folders = ewsClient.FindFolders(WellKnownFolderName.MsgFolderRoot, new FolderView(10));
                 foreach (var folder in folders)
@@ -280,7 +286,7 @@ namespace ews_oauth_samples
 }
 ```
 
-両方のサンプルコードでは、次のエントリを含む**App.config**ファイルが必要です。
+どちらの場合も、サンプル コードには次のエントリを持つ **App.config** ファイルが必要です。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
