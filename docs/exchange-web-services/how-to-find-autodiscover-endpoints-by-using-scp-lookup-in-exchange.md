@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.assetid: b24228a8-5127-4bac-aef0-9c9e8843c9ff
 description: Active Directory ドメイン サービス (AD DS) で自動検出 SCP オブジェクトを見つけ、それらのオブジェクトを使用して、Exchange 自動検出サービスで使用する自動検出エンドポイント URL を検出する方法について説明します。
 localization_priority: Priority
-ms.openlocfilehash: c0c0364a7d69364e12db902f1f22d65c4b5a0cc5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 5468c18b6d614016915c292c2e02c1a4b570ae37
+ms.sourcegitcommit: 37d4ecd4f469690ba1de87baad2f2f58c40c96ba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44455878"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49348809"
 ---
 # <a name="find-autodiscover-endpoints-by-using-scp-lookup-in-exchange"></a>Exchange の SCP 参照を使用して自動検出エンドポイントを見つける
 
@@ -173,7 +173,7 @@ namespace ScpLookup
                     {
                         // Save the first SCP pointer that is not scoped to a domain as a fallback
                         // in case you do not get any results from this server.
-                        if (entryKeywords.Count == 1 &amp;&amp; string.IsNullOrEmpty(fallBackLdapPath))
+                        if (entryKeywords.Count == 1 && string.IsNullOrEmpty(fallBackLdapPath))
                         {
                             fallBackLdapPath = ptrLdapPath;
                             Console.WriteLine("Saved fallback SCP pointer: " + fallBackLdapPath);
@@ -283,7 +283,7 @@ namespace ScpLookup
                 }
                 // If after all this, you still have no URLs in your list,
                 // try the fallback SCP pointer, if you have one.
-                if (scpUrlList.Count == 0 &amp;&amp; fallBackLdapPath != null)
+                if (scpUrlList.Count == 0 && fallBackLdapPath != null)
                 {
                     return GetScpUrls(fallBackLdapPath, domain);
                 }

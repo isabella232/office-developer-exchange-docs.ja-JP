@@ -4,12 +4,12 @@ description: IMAP、POP、および SMTP アプリケーションで OAuth 認�
 author: svpsiva
 ms.date: 02/19/2020
 ms.audience: Developer
-ms.openlocfilehash: e1bef8e35d78c35693dadc94b24b6aeecaf4e439
-ms.sourcegitcommit: 636c05a929279812c6ef87d75b01c166a4a05584
+ms.openlocfilehash: 4662aa904ed162edcced6c096eac8cf636180f6a
+ms.sourcegitcommit: 37d4ecd4f469690ba1de87baad2f2f58c40c96ba
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47254987"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49348816"
 ---
 # <a name="authenticate-an-imap-pop-or-smtp-connection-using-oauth"></a>OAuth を使用して IMAP、POP、または SMTP 接続を認証する
 
@@ -17,7 +17,7 @@ OAuth 認証を使用して IMAP、POP、または SMTP プロトコルに接続
 
 > 以下に示すように、Microsoft 365 (web 上の Office を含む) および Outlook.com ユーザーの両方でサポートされている IMAP、POP、SMTP プロトコルの OAuth2 サポートがサポートされています。
 
-OAuth 2.0 に精通していない場合は、まず「 [Microsoft identity platform (v2.0)」の概要](/azure/active-directory/develop/v2-overview)を参照してください。 このドキュメントでは、Sdk を含む Microsoft identity platform のさまざまなコンポーネントについて説明します。
+OAuth 2.0 プロトコルに精通していない場合は、まず「 [Microsoft identity platform の oauth 2.0 プロトコルの概要」](/azure/active-directory/develop/active-directory-v2-protocols)を参照してください。 OAuth 2.0 プロトコルを実装してユーザーを認証し、セキュリティで保護された Api にアクセスする Microsoft Authentication Libariers (MSAL) の詳細については、 [「Msal の概要」](/azure/active-directory/develop/msal-overview)を参照してください。
 
 Azure Active Directory によって提供される OAuth 認証サービスを使用して、アプリケーションが IMAP、POP、または SMTP プロトコルを使用して Office 365 で Exchange Online にアクセスできるようにすることができます。 アプリケーションで OAuth を使用するには、次のことを行う必要があります。
 
@@ -36,7 +36,7 @@ OAuth を使用するには、アプリケーションが Azure Active Directory
 
 [「Configure a client application to access Web api](/azure/active-directory/develop/quickstart-configure-app-access-web-apis) 」に記載されている手順に従います。
 
-統合するプロトコルに対応する次の1つ以上のアクセス許可のスコープを追加してください。 **アクセス許可の追加**ウィザードで、[ **Microsoft Graph** ] を選択し、[**アクセス許可の委任**] をクリックして、次のアクセス許可スコープを検索します。
+統合するプロトコルに対応する次の1つ以上のアクセス許可のスコープを追加してください。 **アクセス許可の追加** ウィザードで、[ **Microsoft Graph** ] を選択し、[**アクセス許可の委任**] をクリックして、次のアクセス許可スコープを検索します。
 
 | プロトコル  | アクセス許可の適用範囲        |
 |-----------|-------------------------|

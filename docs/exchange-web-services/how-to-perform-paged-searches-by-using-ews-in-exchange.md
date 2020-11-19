@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.assetid: 64ed70e4-32eb-4c25-bfc4-43d1477296e5
 description: Exchange を対象とする EWS マネージ API または EWS のアプリケーションでページングされた検索を実行する方法を説明します。
 localization_priority: Priority
-ms.openlocfilehash: 2b608584918c936f62883b8b444d59c05c5952ff
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: fa36a2ce77150f29e5a62876138c9693a3b4ab1f
+ms.sourcegitcommit: 37d4ecd4f469690ba1de87baad2f2f58c40c96ba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44456835"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49348823"
 ---
 # <a name="perform-paged-searches-by-using-ews-in-exchange"></a>Exchange で EWS を使用してページング検索を実行する
 
@@ -139,7 +139,7 @@ static void PageSearchItems(ExchangeService service, WellKnownFolderName folder)
         {
             FindItemsResults<Item> results = service.FindItems(folder, view);
             moreItems = results.MoreAvailable;
-            if (moreItems &amp;&amp; anchorId != null)
+            if (moreItems && anchorId != null)
             {
                 // Check the first result to make sure it matches
                 // the last result (anchor) from the previous page.
@@ -152,12 +152,23 @@ static void PageSearchItems(ExchangeService service, WellKnownFolderName folder)
             }
             if (moreItems)
                 view.Offset += pageSize;
+                
             anchorId = results.Items.Last<Item>().Id;
+            
             // Because you're including an additional item on the end of your results
             // as an anchor, you don't want to display it.
             // Set the number to loop as the smaller value between
             // the number of items in the collection and the page size.
-            int displayCount = results.Items.Count > pageSize ? pageSize : results.Items.Count;
+            int displayCount = 0;
+            if ((results.MoreAvailable == false && results.Items.Count > pageSize) || (results.Items.Count < pageSize))
+            {
+                displayCount = results.Items.Count;
+            }
+            else
+            {
+                displayCount = pageSize;
+            }
+            
             for (int i = 0; i < displayCount; i++)
             {
                 Item item = results.Items[i];
