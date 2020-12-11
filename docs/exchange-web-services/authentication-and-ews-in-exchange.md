@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.assetid: 9a83df96-aca0-42b3-b8f5-2b414f0363f1
 description: Exchange を対象とする EWS アプリケーションの適切な認証基準の選択に役立つ情報を紹介します。
 localization_priority: Priority
-ms.openlocfilehash: 69018b6f88fc80e1e18edd96ed0e16d52064572d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
-ms.translationtype: MT
+ms.openlocfilehash: 0b35921f33b935f9a5a490e15d4e76d1a3e3c9dc
+ms.sourcegitcommit: 843a2e030a94b12aec70c553ca4e06e39ac02d82
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528483"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49603835"
 ---
 # <a name="authentication-and-ews-in-exchange"></a>Exchange での認証と EWS
 
@@ -72,12 +72,15 @@ NTLM 認証が使用できるのは、オンプレミスの Exchange サーバ�
 
 |**メリット**|**欠点**|
 |:-----|:-----|
-| “追加設定なし” で Exchange サーバーで機能する。 [Exchange 管理シェル コマンドレット](how-to-control-access-to-ews-in-exchange.md)を使用して、Exchange サービスへのアクセスを構成できる。<br/><br/>Windows アプリケーションで、ログオン ユーザーの既定の資格情報を使用できる。<br/><br/>基本認証を使用して EWS を呼び出す方法を示す多数の[コード サンプルが利用可能](https://code.msdn.microsoft.com/office/Exchange-2013-101-Code-3c38582c)。  <br/> | アプリケーションでユーザーの資格情報を収集して保存することが必要。<br/><br/>すべてのユーザーが基本認証を使用するように強制する場合は、NTLM 認証を無効にする必要があります。<br/><br/>アプリケーションでセキュリティ違反が発生した場合、攻撃者にユーザーのメール アドレスとパスワードが漏洩する可能性がある。  <br/> |
+| “追加設定なし” で Exchange サーバーで機能する。 [Exchange 管理シェル コマンドレット](how-to-control-access-to-ews-in-exchange.md)を使用して、Exchange サービスへのアクセスを構成できる。<br/><br/>Windows アプリケーションで、ログオン ユーザーの既定の資格情報を使用できる。<br/><br/>基本認証を使用して EWS を呼び出す方法を示す多数の[コード サンプルが利用可能](https://code.msdn.microsoft.com/office/Exchange-2013-101-Code-3c38582c)。  <br/> | アプリケーションでユーザーの資格情報を収集して保存することが必要。<br/><br/>すべてのユーザーが基本認証を使用するようにさせるには、NTLM 認証を無効にする必要がある。<br/><br/>アプリケーションでセキュリティ違反が発生した場合、攻撃者にユーザーのメール アドレスとパスワードが漏洩する可能性がある。  <br/> |
    
 基本認証が、ユーザーの組織と顧客のセキュリティ要件を満たしているかどうかを判断する必要があります。基本認証は、簡単なテストやデモ アプリケーションなどで、詳細なセットアップ タスクを行わないようにする場合に、最適な選択肢になることがあります。
+
+> [!NOTE]
+> Exchange Online に接続するための EWS の基本認証はサポートされていません。 すべての新規または既存の EWS アプリケーションで OAuth 認証を使用して、Exchange Online に接続します。 EWS の OAuth 認証は、Microsoft 365 の一部として Exchange Online でのみ利用可能です。 OAuth を使用する EWS アプリケーションは、Azure Active Directory に最初に登録する必要があります。
   
 ## <a name="see-also"></a>関連項目
-
+- [OAuth を使用して EWS アプリケーションを認証する](how-to-authenticate-an-ews-application-by-using-oauth.md)
 - [Exchange で Web サービスの使用を開始する](start-using-web-services-in-exchange.md)   
 - [Microsoft Azure AD を使用して Web アプリケーションへのサインオンを追加する](https://msdn.microsoft.com/library/055e1155-2d4d-4c85-b44e-d406872ba595%28Office.15%29.aspx)    
 - [Exchange で EWS へのアクセスを制御する](how-to-control-access-to-ews-in-exchange.md)    
