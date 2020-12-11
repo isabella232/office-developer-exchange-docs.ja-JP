@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.assetid: 76136f28-0dad-4ecc-9dd7-a45a1861e4b0
 description: Exchange の通知サブスクリプションと EWS のメールボックス イベントについて説明します。
 localization_priority: Priority
-ms.openlocfilehash: 2a99b1922e021a8f5f221381d7f2965c3e1ab504
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 00a0941e615f35a46bb77c00648b75fcd2a45286
+ms.sourcegitcommit: 843a2e030a94b12aec70c553ca4e06e39ac02d82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44459355"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49603842"
 ---
 # <a name="notification-subscriptions-mailbox-events-and-ews-in-exchange"></a>Exchange の通知サブスクリプション、メールボックス イベント、および EWS
 
@@ -51,7 +51,7 @@ EWS には、独立して動作し、クライアントにサーバーの変更�
     
 - FreeBusyChanged - ユーザーの空き時間情報が変更されました。
     
-EWS イベントの別の種類である Status イベントは、[EventType](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.eventtype%28v=exchg.80%29.aspx) 要素によって定義されますが、このイベントにはサブスクライブしません。その代わり、ストリーミング通知とプッシュ通知のみに関するクライアントの状態を確認するために、そのイベントはサーバーによって送信されます。クライアントは、このイベントのニーズに応答する必要があり、そうしないとクライアントはタイムアウトになります。 
+EWS イベントの別の種類である Status イベントは、[EventType](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.eventtype%28v=exchg.80%29.aspx) 要素によって定義されますが、このイベントにはサブスクライブしません。その代わり、ストリーミング通知とプッシュ通知のみに関するクライアントの状態を確認するために、そのイベントはサーバーによって送信されます。クライアントは、このイベントに応答する必要があり、そうしないとクライアントはタイムアウトになります。 
   
 たいていの場合、1 つのユーザー アクションで、複数の通知が作成されます。このことを示すため、次の図では、いくつかの一般的なシナリオとそれぞれに作成された通知を図示しています。クライアントの設定によって受信する通知は変わってくるので、これは構成オプションと結果の通知すべてを網羅したリストではありません。
   
