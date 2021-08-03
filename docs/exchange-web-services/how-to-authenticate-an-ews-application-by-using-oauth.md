@@ -8,7 +8,7 @@ description: EWS Managed API アプリケーションで、OAuth 認証を使用
 localization_priority: Priority
 ms.openlocfilehash: a7b1d2a099cf5f3c95f8453605363de12ff33c54
 ms.sourcegitcommit: 843a2e030a94b12aec70c553ca4e06e39ac02d82
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2020
 ms.locfileid: "49603828"
