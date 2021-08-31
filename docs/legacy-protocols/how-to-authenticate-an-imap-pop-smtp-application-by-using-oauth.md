@@ -1,110 +1,98 @@
 ---
-title: OAuth を使用して IMAP、POP、または SMTP 接続を認証する
+title: OAuth を使用して IMAP、POP、SMTP 接続を認証する
 description: IMAP、POP、および SMTP アプリケーションで OAuth 認証を使用する方法について説明します。
 author: svpsiva
-ms.date: 02/19/2020
+ms.date: 07/08/2021
 ms.audience: Developer
-ms.openlocfilehash: 4662aa904ed162edcced6c096eac8cf636180f6a
-ms.sourcegitcommit: 37d4ecd4f469690ba1de87baad2f2f58c40c96ba
+ms.openlocfilehash: 4a307a6e329d5320b2b304d17a78a61db6d111bd
+ms.sourcegitcommit: 357b882a02e37b380a23b8a45b15f9c006a40b02
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49348816"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58764589"
 ---
-# <a name="authenticate-an-imap-pop-or-smtp-connection-using-oauth"></a>OAuth を使用して IMAP、POP、または SMTP 接続を認証する
+# <a name="authenticate-an-imap-pop-or-smtp-connection-using-oauth"></a>OAuth を使用して IMAP、POP、SMTP 接続を認証する
 
-OAuth 認証を使用して IMAP、POP、または SMTP プロトコルに接続し、Office 365 ユーザーの電子メールデータにアクセスする方法について説明します。
+OAuth 認証を使用して IMAP、POP、SMTP プロトコルに接続し、ユーザーの電子メール データにOffice 365します。
 
-> 以下に示すように、Microsoft 365 (web 上の Office を含む) および Outlook.com ユーザーの両方でサポートされている IMAP、POP、SMTP プロトコルの OAuth2 サポートがサポートされています。
+> 以下で説明する IMAP、POP、SMTP プロトコルの OAuth2 サポートは、Microsoft 365 (Office on the web を含む) と Outlook.com ユーザーの両方でサポートされています。
 
-OAuth 2.0 プロトコルに精通していない場合は、まず「 [Microsoft identity platform の oauth 2.0 プロトコルの概要」](/azure/active-directory/develop/active-directory-v2-protocols)を参照してください。 OAuth 2.0 プロトコルを実装してユーザーを認証し、セキュリティで保護された Api にアクセスする Microsoft Authentication Libariers (MSAL) の詳細については、 [「Msal の概要」](/azure/active-directory/develop/msal-overview)を参照してください。
+OAuth 2.0 プロトコルについて理解していない場合は、まず、OAuth [2.0](/azure/active-directory/develop/active-directory-v2-protocols)プロトコルの概要をMicrosoft ID プラットフォームしてください。 OAuth 2.0 プロトコルを実装してユーザーを認証し、セキュリティで保護された API にアクセスする Microsoft Authentication Libariers [(MSAL)](/azure/active-directory/develop/msal-overview)の詳細については、「MSAL の概要」を参照してください。
 
-Azure Active Directory によって提供される OAuth 認証サービスを使用して、アプリケーションが IMAP、POP、または SMTP プロトコルを使用して Office 365 で Exchange Online にアクセスできるようにすることができます。 アプリケーションで OAuth を使用するには、次のことを行う必要があります。
+Azure Active Directory によって提供される OAuth 認証サービスを使用して、アプリケーションが IMAP、POP、または SMTP プロトコルに接続して、Exchange OnlineにアクセスOffice 365。 OAuth をアプリケーションで使用するには、次の必要があります。
 
 1. Azure Active Directory に[アプリケーションを登録する](#register-your-application)。
-1. Azure Active Directory で[アプリケーションを構成](#configure-your-application)します。
-1. トークンサーバーから[アクセストークンを取得](#get-an-access-token)します。
-1. アクセストークンを使用して[接続要求を認証](#authenticate-connection-requests)します。
+1. [アプリケーションを構成](#configure-your-application)するには、Azure Active Directory。
+1. [トークン サーバーからアクセス トークン](#get-an-access-token) を取得します。
+1. [アクセス トークンを使用して接続](#authenticate-connection-requests) 要求を認証します。
 
 ## <a name="register-your-application"></a>アプリケーションを登録する
 
-OAuth を使用するには、アプリケーションが Azure Active Directory に登録されている必要があります。
+OAuth を使用するには、アプリケーションをアプリケーションに登録するAzure Active Directory。
 
-「 [Microsoft identity platform を使用してアプリケーションを登録](/azure/active-directory/develop/quickstart-register-app) する」に記載されている手順に従って、新しいアプリケーションを作成します。
-
-## <a name="configure-your-application"></a>アプリケーションを構成する
-
-[「Configure a client application to access Web api](/azure/active-directory/develop/quickstart-configure-app-access-web-apis) 」に記載されている手順に従います。
-
-統合するプロトコルに対応する次の1つ以上のアクセス許可のスコープを追加してください。 **アクセス許可の追加** ウィザードで、[ **Microsoft Graph** ] を選択し、[**アクセス許可の委任**] をクリックして、次のアクセス許可スコープを検索します。
-
-| プロトコル  | アクセス許可の適用範囲        |
-|-----------|-------------------------|
-| IMAP      | `IMAP.AccessAsUser.All` |
-| POP       | `POP.AccessAsUser.All`  |
-| SMTP 認証 | `SMTP.Send`             |
+「アプリケーションをアプリケーションに登録する」に記載されている手順に従って[、Microsoft ID プラットフォーム](/azure/active-directory/develop/quickstart-register-app)アプリケーションを作成します。
 
 ## <a name="get-an-access-token"></a>アクセス トークンを取得する
 
-[Msal クライアントライブラリ](/azure/active-directory/develop/msal-overview)のいずれかを使用して、クライアントアプリケーションからアクセストークンを取得することができます。
+MSAL クライアント ライブラリのいずれかを使用 [して](/azure/active-directory/develop/msal-overview) 、クライアント アプリケーションからアクセス トークンを取得できます。
 
-または、次の一覧から適切なフローを選択し、対応する手順に従って、基になる identity platform REST Api を呼び出し、アクセストークンを取得することもできます。
+または、次の一覧から適切なフローを選択し、対応する手順に従って基になる ID プラットフォーム REST API を呼び出し、アクセス トークンを取得できます。
 
-1. [OAuth2 認証コードフロー](/azure/active-directory/develop/v2-oauth2-auth-code-flow)
-1. [OAuth2 デバイス承認の付与フロー](/azure/active-directory/develop/v2-oauth2-device-code)
+1. [OAuth2 承認コード フロー](/azure/active-directory/develop/v2-oauth2-auth-code-flow)
+1. [OAuth2 デバイス承認付与フロー](/azure/active-directory/develop/v2-oauth2-device-code)
 
-OAuth2 クライアント資格情報の付与フローを介した IMAP、POP、SMTP 認証プロトコルへの OAuth アクセスはサポートされていません。 アプリケーションが Microsoft 365 組織のすべてのメールボックスに永続的にアクセスする必要がある場合は、Microsoft Graph Api を使用して、ユーザーなしでアクセスを許可し、詳細なアクセス許可を有効にし、管理者が特定のメールボックスのセットへのアクセスを許可されるようにすることをお勧めします。
+OAuth2 クライアント資格情報付与フローを介した IMAP、POP、SMTP AUTH プロトコルへの OAuth アクセスはサポートされていません。 アプリケーションで Microsoft 365 組織内のすべてのメールボックスへの永続的なアクセスが必要な場合は、ユーザーなしでアクセスを許可する Microsoft Graph API を使用し、詳細なアクセス許可を有効にし、管理者が特定のメールボックス セットへのアクセスをスコープに設定することをお勧めします。
 
-アプリケーションを承認してアクセストークンを要求するときには、Outlook リソース Url を含む完全な範囲を指定してください。
+アプリケーションを承認し、アクセス トークンを要求する場合Outlookリソース URL を含む、完全なスコープを指定してください。
 
-| プロトコル  | アクセス許可のスコープ文字列 |
+| プロトコル  | アクセス許可スコープの文字列 |
 |-----------|-------------------------|
 | IMAP      | `https://outlook.office.com/IMAP.AccessAsUser.All` |
 | POP       | `https://outlook.office.com/POP.AccessAsUser.All`  |
-| SMTP 認証 | `https://outlook.office.com/SMTP.Send`             |
+| SMTP AUTH | `https://outlook.office.com/SMTP.Send`             |
 
-また、 [offline_access](/azure/active-directory/develop/v2-permissions-and-consent#offline_access) スコープを要求することもできます。 ユーザーが offline_access スコープを承認すると、アプリは Microsoft identity platform token endpoint から更新トークンを受け取ることができます。 更新トークンは長期間の場合があります。 アプリは、新しいアクセストークンを古いものとして期限切れにすることができます。
+さらに、スコープを [要求offline_accessできます](/azure/active-directory/develop/v2-permissions-and-consent#offline_access) 。 ユーザーがスコープを承認offline_access、アプリはトークン エンドポイントから更新トークンMicrosoft ID プラットフォームできます。 更新トークンは長時間使用されます。 古いアクセス トークンの有効期限が切れると、アプリは新しいアクセス トークンを取得できます。
 
-## <a name="authenticate-connection-requests"></a>接続要求を認証する
+## <a name="authenticate-connection-requests"></a>接続要求の認証
 
-Office 365 メールサーバーへの接続は、 [office 365 の IMAP および POP の電子メール設定](https://support.office.com/article/pop-and-imap-email-settings-for-outlook-8361e398-8af4-4e97-b147-6c6c4ac95353)を使用して開始できます。
+メール サーバーの IMAP および POP Office 365設定を使用して、メール サーバーへの接続[を](https://support.office.com/article/pop-and-imap-email-settings-for-outlook-8361e398-8af4-4e97-b147-6c6c4ac95353)開始Office 365。
 
 ### <a name="sasl-xoauth2"></a>SASL XOAUTH2
 
-OAuth の統合には、アプリケーションで、アクセストークンのエンコードと送信に SASL XOAUTH2 format を使用する必要があります。 SASL XOAUTH2 は、次の形式でユーザー名とアクセストークンをエンコードします。
+OAuth との統合では、アプリケーションでアクセス トークンのエンコードと送信に SASL XOAUTH2 形式を使用する必要があります。 SASL XOAUTH2 は、ユーザー名とアクセス トークンを次の形式でエンコードします。
 
 ```text
 base64("user=" + userName + "^Aauth=Bearer " + accessToken + "^A^A")
 ```
 
-`^A`**コントロール**  +  **a** () を表し `%x01` ます。
+`^A`コントロール A ( **)**  +  **を表** します `%x01` 。
 
-たとえば、アクセストークンを使用してアクセスする SASL XOAUTH2 形式は次のように `test@contoso.onmicrosoft.com` `EwBAAl3BAAUFFpUAo7J3Ve0bjLBWZWCclRC3EoAA` なります。
+たとえば、アクセス トークンを使用してアクセスする SASL XOAUTH2 `test@contoso.onmicrosoft.com` 形式は次 `EwBAAl3BAAUFFpUAo7J3Ve0bjLBWZWCclRC3EoAA` のようになります。
 
 ```text
 base64("user=test@contoso.onmicrosoft.com^Aauth=Bearer EwBAAl3BAAUFFpUAo7J3Ve0bjLBWZWCclRC3EoAA^A^A")
 ```
 
-Base64 エンコード後は、次の文字列に変換されます。 読みやすくするために改行が挿入されることに注意してください。
+base64 エンコード後、これは次の文字列に変換されます。 読みやすさのために改行が挿入されます。
 
 ```text
 dXNlcj10ZXN0QGNvbnRvc28ub25taWNyb3NvZnQuY29tAWF1dGg9QmVhcmVy
 IEV3QkFBbDNCQUFVRkZwVUFvN0ozVmUwYmpMQldaV0NjbFJDM0VvQUEBAQ==
 ```
 
-### <a name="sasl-xoauth2-authentication-for-shared-mailboxes-in-office-365"></a>Office 365 の共有メールボックスのための SASL XOAUTH2 認証
+### <a name="sasl-xoauth2-authentication-for-shared-mailboxes-in-office-365"></a>サーバー内の共有メールボックスの SASL XOAUTH2 認証Office 365
 
-OAuth を使用した共有メールボックスアクセスの場合、アプリケーションはユーザーの代わりにアクセストークンを取得する必要がありますが、SASL XOAUTH2 encoded string の userName フィールドを共有メールボックスの電子メールアドレスに置き換えます。 
+OAuth を使用して共有メールボックスにアクセスする場合、アプリケーションはユーザーに代わってアクセス トークンを取得する必要がありますが、SASL XOAUTH2 エンコード文字列の userName フィールドを共有メールボックスの電子メール アドレスに置き換える必要があります。 
 
-### <a name="imap-protocol-exchange"></a>IMAP プロトコルの Exchange
+### <a name="imap-protocol-exchange"></a>IMAP プロトコル Exchange
 
-IMAP サーバー接続を認証するには、クライアントは次の形式のコマンドで応答する必要があり `AUTHENTICATE` ます。
+IMAP サーバー接続を認証するには、クライアントは次の形式のコマンド `AUTHENTICATE` で応答する必要があります。
 
 ```text
 AUTHENTICATE XOAUTH2 <base64 string in XOAUTH2 format>
 ```
 
-認証に成功した結果として得られるクライアントとサーバー間のメッセージ交換の例を次に示します。
+認証が成功するクライアントとサーバーのメッセージ交換の例を次に示します。
 
 ```text
 [connection begins]
@@ -115,7 +103,7 @@ C: A01 AUTHENTICATE XOAUTH2 dXNlcj1zb21ldXNlckBleGFtcGxlLmNvbQFhdXRoPUJlYXJlciB5
 S: A01 OK AUTHENTICATE completed.
 ```
 
-認証エラーが発生するクライアントサーバーのメッセージ交換の例を次に示します。
+認証エラーが発生するクライアントとサーバーのメッセージ交換の例を次に示します。
 
 ```text
 [connection begins]
@@ -125,16 +113,16 @@ C: A01 AUTHENTICATE XOAUTH2 dXNlcj1zb21ldXNlckBleGFtcGxlLmNvbQFhdXRoPUJlYXJlciB5
 S: A01 NO AUTHENTICATE failed.
 ```
 
-### <a name="pop-protocol-exchange"></a>POP プロトコルの交換
+### <a name="pop-protocol-exchange"></a>POP プロトコル Exchange
 
-POP サーバー接続を認証するには、クライアントは `AUTH` コマンドを次の形式で2行に分割して応答する必要があります。    
+POP サーバー接続を認証するには、クライアントはコマンドを次の形式で 2 行に分割 `AUTH` して応答する必要があります。    
 
 ```text 
 AUTH XOAUTH2 
 <base64 string in XOAUTH2 format>   
 ``` 
 
-認証に成功した結果として得られるクライアントとサーバー間のメッセージ交換の例を次に示します。    
+認証が成功するクライアントとサーバーのメッセージ交換の例を次に示します。    
 
 ```text 
 [connection begins] 
@@ -147,7 +135,7 @@ S: +OK User successfully authenticated.
 [connection continues...]   
 ``` 
 
-認証エラーが発生するクライアントサーバーのメッセージ交換の例を次に示します。    
+認証エラーが発生するクライアントとサーバーのメッセージ交換の例を次に示します。    
 
 ```text 
 [connection begins] 
@@ -159,15 +147,15 @@ l0Q2cBAQ=
 S: -ERR Authentication failure: unknown user name or bad password.  
 ```
 
-### <a name="smtp-protocol-exchange"></a>SMTP プロトコルの Exchange
+### <a name="smtp-protocol-exchange"></a>SMTP プロトコル Exchange
 
-SMTP サーバー接続を認証するには、クライアントは次の形式のコマンドで応答する必要があり `AUTH` ます。
+SMTP サーバー接続を認証するには、クライアントは次の形式のコマンド `AUTH` で応答する必要があります。
 
 ```text
 AUTH XOAUTH2 <base64 string in XOAUTH2 format>
 ```
 
-認証に成功した結果として得られるクライアントとサーバー間のメッセージ交換の例を次に示します。
+認証が成功するクライアントとサーバーのメッセージ交換の例を次に示します。
 
 ```text
 [connection begins]
@@ -180,7 +168,7 @@ S: 235 2.7.0 Authentication successful
 [connection continues...]
 ```
 
-認証エラーが発生するクライアントサーバーのメッセージ交換の例を次に示します。
+認証エラーが発生するクライアントとサーバーのメッセージ交換の例を次に示します。
 
 ```text
 [connection begins]
@@ -196,6 +184,6 @@ S: 535 5.7.3 Authentication unsuccessful [SN2PR00CA0018.namprd00.prod.outlook.co
 
 - [Exchange における認証と EWS](../exchange-web-services/authentication-and-ews-in-exchange.md)
 - [IMAP、POP 接続の設定](https://support.office.com/article/pop-and-imap-email-settings-for-outlook-8361e398-8af4-4e97-b147-6c6c4ac95353)
-- [インターネットメッセージアクセスプロトコル](https://tools.ietf.org/html/rfc3501)
-- [Post Office Protocol](https://tools.ietf.org/html/rfc1081)
+- [インターネット メッセージ アクセス プロトコル](https://tools.ietf.org/html/rfc3501)
+- [Post Office プロトコル](https://tools.ietf.org/html/rfc1081)
 - [認証用の SMTP サービス拡張機能](https://tools.ietf.org/html/rfc4954)

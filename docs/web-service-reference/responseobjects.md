@@ -11,23 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: ad29e064-3f3d-4b7b-aa4c-9ec27326381d
-description: ResponseObjects 要素には、Exchange ストア内のアイテムに関連付けられているすべての response オブジェクトのコレクションが含まれています。
-ms.openlocfilehash: 675bfda4addb38535736efc0c790577ff4739108
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ResponseObjects 要素には、アイテム ストア内のアイテムに関連付けられているすべての応答オブジェクトのコレクションExchangeされます。
+ms.openlocfilehash: 9f80fd9703dcd7d9293a3a51eccb6cf2b6903064
+ms.sourcegitcommit: 357b882a02e37b380a23b8a45b15f9c006a40b02
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457439"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58764582"
 ---
 # <a name="responseobjects"></a>ResponseObjects
 
-**Responseobjects**要素には、Exchange ストア内のアイテムに関連付けられているすべての response オブジェクトのコレクションが含まれています。 
+**ResponseObjects 要素** には、アイテム ストア内のアイテムに関連付けられているすべての応答オブジェクトのコレクションがExchangeされます。 
   
 ```XML
 <ResponseObjects>
    <AcceptItem/>
    <TentativelyAcceptItem/>
    <DeclineItem/>
+   <ProposeNewTime>
    <ReplyToItem/>
    <ForwardItem/>
    <ReplyAllToItem/>
@@ -39,7 +40,7 @@ ms.locfileid: "44457439"
 </ResponseObjects>
 ```
 
- **非 Emptyarrayofresponseobjectstype**
+ **NonEmptyArrayOfResponseObjectsType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -52,33 +53,34 @@ ms.locfileid: "44457439"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[AcceptItem](acceptitem.md) <br/> |会議出席依頼への返信を承諾するかを表します。  <br/> |
-|[TentativelyAcceptItem](tentativelyacceptitem.md) <br/> |会議出席依頼に対する仮の返信を表します。  <br/> |
-|[DeclineItem](declineitem.md) <br/> |会議出席依頼への返信を拒否することを表します。  <br/> |
-|[ReplyToItem](replytoitem.md) <br/> |Exchange ストア内のアイテムの作成者への返信を含みます。  <br/> |
-|[Forwarditem と](forwarditem.md) <br/> |受信者に転送するための Exchange ストアアイテムが保存されています。  <br/> |
-|[Replyalltoitem と](replyalltoitem.md) <br/> |Exchange ストア内のアイテムの特定の受信者全員への返信を含みます。  <br/> |
-|[CancelCalendarItem](cancelcalendaritem.md) <br/> |会議の取り消しに使用される response オブジェクトを表します。  <br/> |
-|[RemoveItem](removeitem.md) <br/> |Exchange ストアからアイテムを削除します。  <br/> |
-|[PostReplyItem](postreplyitem.md) <br/> |投稿アイテムへの返信を含みます。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。  <br/> |
-|[SuppressReadReceipt](suppressreadreceipt.md) <br/> |開封確認要求を抑制するために使用されます。  <br/> |
-|[AcceptSharingInvitation 状](acceptsharinginvitation.md) <br/> |別のユーザーの予定表または連絡先データへのアクセスを許可する招待を承諾するために使用されます。  <br/> |
+|[AcceptItem](acceptitem.md) <br/> |会議出席依頼に対する Accept 返信を表します。  <br/> |
+|[TentativelyAcceptItem](tentativelyacceptitem.md) <br/> |会議出席依頼に対する仮返信を表します。  <br/> |
+|[DeclineItem](declineitem.md) <br/> |会議出席依頼に対する辞退の返信を表します。  <br/> |
+|[ProposeNewTime](proposenewtime.md) <br/> |会議の出席者が新しい会議時間を提案できる状態を示します。 この要素は、2013 Microsoft Exchange Server Service Pack 1 (SP1) で導入されました。  <br/> |
+|[ReplyToItem](replytoitem.md) <br/> |ストア内のアイテムの作成者への返信Exchangeします。  <br/> |
+|[ForwardItem](forwarditem.md) <br/> |受信者に転送Exchangeストア アイテムを格納します。  <br/> |
+|[ReplyAllToItem](replyalltoitem.md) <br/> |アイテムストア内のアイテムの識別された受信者全員に対する返信Exchangeします。  <br/> |
+|[CancelCalendarItem](cancelcalendaritem.md) <br/> |会議のキャンセルに使用される応答オブジェクトを表します。  <br/> |
+|[RemoveItem](removeitem.md) <br/> |アイテムをストアからExchangeします。  <br/> |
+|[PostReplyItem](postreplyitem.md) <br/> |投稿アイテムへの返信を含む。 この要素は、2007 Microsoft Exchange Server パック 1 (SP1) で導入されました。  <br/> |
+|[SuppressReadReceipt](suppressreadreceipt.md) <br/> |読み取り受信要求を抑制するために使用します。  <br/> |
+|[AcceptSharingInvitation](acceptsharinginvitation.md) <br/> |別のユーザーの予定表または連絡先データへのアクセスを許可する招待を受け入れる場合に使用します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
-|[Contact](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |予定表アイテムのExchangeを表します。  <br/> |
+|[Contact](contact.md) <br/> |連絡先アイテムExchangeを表します。  <br/> |
 |[DistributionList](distributionlist.md) <br/> |配布リストを表します。  <br/> |
-|[Item](item.md) <br/> |Exchange ストア内のアイテムを表します。  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |Exchange ストア内の会議の取り消しを表します。  <br/> |
-|[MeetingMessage](meetingmessage.md) <br/> |Exchange ストア内の会議を表します。  <br/> |
-|[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議出席依頼を表します。  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |Exchange ストア内の会議の応答を表します。  <br/> |
-|[Message](message-ex15websvcsotherref.md) <br/> |Exchange 電子メールメッセージを表します。  <br/> |
-|[RemoveItem](removeitem.md) <br/> |Exchange ストアからアイテムを削除します。  <br/> |
-|[タスク](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
+|[項目](item.md) <br/> |ストア内のアイテムをExchangeします。  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |会議ストアでの会議の取り消しExchangeします。  <br/> |
+|[MeetingMessage](meetingmessage.md) <br/> |ユーザー ストア内の会議Exchangeします。  <br/> |
+|[MeetingRequest](meetingrequest.md) <br/> |ユーザー ストア内の会議出席依頼Exchangeします。  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |会議ストアの会議の応答Exchangeします。  <br/> |
+|[メッセージ](message-ex15websvcsotherref.md) <br/> |電子メール メッセージExchangeを表します。  <br/> |
+|[RemoveItem](removeitem.md) <br/> |アイテムをストアからExchangeします。  <br/> |
+|[タスク](task.md) <br/> |ストア内のタスクをExchangeします。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -89,13 +91,13 @@ ms.locfileid: "44457439"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |不正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

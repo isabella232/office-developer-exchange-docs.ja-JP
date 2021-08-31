@@ -1,5 +1,5 @@
 ---
-title: 変更 (アイテム)
+title: Changes (Items)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d3139fef-0455-4b89-babd-5d6783b50a58
-description: Changes 要素には、クライアント上のアイテムと Exchange サーバー上のアイテムの間の相違点の種類を表す、変更の種類のシーケンス配列が含まれています。
-ms.openlocfilehash: 6fda7b5602f172bae84ad7b211db2811def4f883
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Changes 要素には、クライアント上のアイテムとサーバー上のアイテムの違いの種類を表す変更の種類のシーケンス配列がExchangeされます。
+ms.openlocfilehash: ede81d8ecae9751c477ae05cbd13f914fedf8e0f
+ms.sourcegitcommit: 357b882a02e37b380a23b8a45b15f9c006a40b02
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463266"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58764631"
 ---
-# <a name="changes-items"></a>変更 (アイテム)
+# <a name="changes-items"></a>Changes (Items)
 
-**Changes**要素には、クライアント上のアイテムと Exchange サーバー上のアイテムの間の相違点の種類を表す、変更の種類のシーケンス配列が含まれています。 
+**Changes 要素** には、クライアント上のアイテムとサーバー上のアイテムの違いの種類を表す変更の種類のシーケンス配列がExchangeされます。 
   
 [SyncFolderItemsResponse](syncfolderitemsresponse.md)
   
@@ -29,13 +29,14 @@ ms.locfileid: "44463266"
   
 [SyncFolderItemsResponseMessage](syncfolderitemsresponsemessage.md)
   
-[変更 (アイテム)](changes-items.md)
+[Changes (Items)](changes-items.md)
   
 ```xml
 <Changes>
    <Create/>
    <Update/>
    <Delete/>
+   <ReadFlagChange/>
 </Changes>
 ```
 
@@ -52,29 +53,29 @@ ms.locfileid: "44463266"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Create (ItemSync)](create-itemsync.md) <br/> |ローカルクライアントストアに作成する単一のアイテムを識別します。  <br/> |
-|[Update (ItemSync)](update-itemsync.md) <br/> |ローカルクライアントストアで更新する単一のアイテムを識別します。  <br/> |
-|[削除 (ItemSync)](delete-itemsync.md) <br/> |ローカルクライアントストアで削除する単一のアイテムを識別します。  <br/> |
-|[ReadFlagChange](readflagchange.md) <br/> |アイテムが読み取られたときに、 [Syncfolderitems 操作](syncfolderitems-operation.md)の応答で返されます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。  <br/> |
+|[Create (ItemSync)](create-itemsync.md) <br/> |ローカル クライアント ストアに作成する 1 つのアイテムを識別します。  <br/> |
+|[Update (ItemSync)](update-itemsync.md) <br/> |ローカル クライアント ストアで更新する 1 つのアイテムを識別します。  <br/> |
+|[Delete (ItemSync)](delete-itemsync.md) <br/> |ローカル クライアント ストアで削除する 1 つのアイテムを識別します。  <br/> |
+|[ReadFlagChange](readflagchange.md) <br/> |アイテムの読 [み取り時に SyncFolderItems](syncfolderitems-operation.md) 操作の応答で返されます。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[SyncFolderItemsResponseMessage](syncfolderitemsresponsemessage.md) <br/> |[Syncfolderitems 操作](syncfolderitems-operation.md)要求の状態と結果を格納します。  <br/> |
+|[SyncFolderItemsResponseMessage](syncfolderitemsresponsemessage.md) <br/> |[SyncFolderItems](syncfolderitems-operation.md)操作要求の状態と結果を格納します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-この要素を記述するスキーマは、Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |不正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -83,5 +84,5 @@ ms.locfileid: "44463266"
 [SyncFolderItems 操作](syncfolderitems-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 
