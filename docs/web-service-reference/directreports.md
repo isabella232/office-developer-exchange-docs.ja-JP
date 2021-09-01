@@ -7,20 +7,22 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ab88739f-9018-4887-ae46-f1471242628c
-description: DirectReports 要素には、連絡先の直属の部下を識別する SMTP 情報が含まれています。
-ms.openlocfilehash: d7a1077d334862df2a24e27bc23e02539a1bafb1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: DirectReports 要素には、連絡先の直接レポートを識別する SMTP 情報が含まれる。
+ms.openlocfilehash: 216f6e99a3caf46f9d3bc792dcb4641c3681a9fb
+ms.sourcegitcommit: 63e48eaf2891a6db1a718b55cd69e3a0433c4a9c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462074"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "58851108"
 ---
 # <a name="directreports"></a>DirectReports
 
-**Directreports**要素には、連絡先の直属の部下を識別する SMTP 情報が含まれています。 
+**DirectReports 要素** には、連絡先の直接レポートを識別する SMTP 情報が含まれる。 
   
 ```XML
-<DirectReports/>
+<DirectReports>
+   <Mailbox/>
+</DirectReports>
 ```
 
  **SingleRecipientType**
@@ -34,19 +36,17 @@ ms.locfileid: "44462074"
   
 ### <a name="child-elements"></a>子要素
 
-なし。
-  
+|**Element**|**説明**|
+|:-----|:-----|
+|[メールボックス](mailbox.md) <br/> |メールが有効な Active Directory ディレクトリ サービス オブジェクトを識別します。  <br/> |
+     
 ### <a name="parent-elements"></a>親要素
 
 |**要素名**|**説明**|
 |:-----|:-----|
-|[Contact](contact.md) <br/> |Exchange ストア内の連絡先アイテムを表します。  <br/> |
+|[Contact](contact.md) <br/> |ストア内の連絡先アイテムExchangeします。  <br/> |
    
-## <a name="text-value"></a>テキスト値
-
-なし。
-  
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
@@ -57,12 +57,12 @@ ms.locfileid: "44462074"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 - [連絡先の作成 (Exchange Web サービス)](https://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
 
