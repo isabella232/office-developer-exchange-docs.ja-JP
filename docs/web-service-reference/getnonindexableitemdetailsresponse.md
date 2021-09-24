@@ -1,23 +1,23 @@
 ---
-title: Getnonindexableitem、Response
+title: GetNonIndexableItemDetailsResponse
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6cf2aea3-c6f7-4cad-a45d-2daffeece4b6
-description: GetNonIndexableItemDetails Response 要素は、GetNonIndexableItemDetails 要求への応答を指定します。
-ms.openlocfilehash: 7563a772e04f72c50ddfea0a69fa511d2a538b8e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetNonIndexableItemDetailsResponse 要素は、GetNonIndexableItemDetails 要求への応答を指定します。
+ms.openlocfilehash: ec7762f26d44d398c0811921380c8099a0cf9338
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455619"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509791"
 ---
-# <a name="getnonindexableitemdetailsresponse"></a>Getnonindexableitem、Response
+# <a name="getnonindexableitemdetailsresponse"></a>GetNonIndexableItemDetailsResponse
 
-**Getnonindexableitemdetails response**要素は、 **getnonindexableitemdetails**要求への応答を指定します。 
+**GetNonIndexableItemDetailsResponse** 要素は **、GetNonIndexableItemDetails** 要求への応答を指定します。 
   
 ```XML
 <GetNonIndexableItemDetailsResponse>
@@ -29,7 +29,7 @@ ms.locfileid: "44455619"
 </GetNonIndexableItemDetailsResponse>
 ```
 
- **Getnonindexableitem/[Responsemessagetype]**
+ **GetNonIndexableItemDetailsResponseMessageType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -40,7 +40,7 @@ ms.locfileid: "44455619"
   
 ### <a name="child-elements"></a>子要素
 
-[Messagetext](messagetext.md)  | 応答[Secmode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [Nonindexableitemの取得結果](nonindexableitemdetailsresult.md)
+[MessageText](messagetext.md)  | [ResponseCode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [NonIndexableItemDetailsResult](nonindexableitemdetailsresult.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -57,8 +57,8 @@ ms.locfileid: "44455619"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

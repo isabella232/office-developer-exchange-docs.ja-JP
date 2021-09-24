@@ -5,41 +5,41 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ResolveNames
 api_type:
 - schema
 ms.assetid: 6b4eb4b3-9ad6-4804-a09f-7e20cfea4dbb
-description: ResolveNames 操作は、あいまいな電子メールアドレスと表示名を解決します。
-ms.openlocfilehash: 51728addddd2bfb9d35b874ae8c11e83a4c8629b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ResolveNames 操作は、あいまいなメール アドレスと表示名を解決します。
+ms.openlocfilehash: f5ab0e3ee23cc085d8aa425c6eeb0ac7c392b9bb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468279"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509449"
 ---
 # <a name="resolvenames-operation"></a>ResolveNames 操作
 
-**ResolveNames**操作は、あいまいな電子メールアドレスと表示名を解決します。 
+**ResolveNames 操作は**、あいまいなメール アドレスと表示名を解決します。 
   
 ## <a name="using-the-resolvenames-operation"></a>ResolveNames 操作の使用
 
-この操作は、エイリアスを確認し、表示名を適切なメールボックスユーザーに解決するために使用できます。 あいまいな名前が存在する場合、 **ResolveNames**操作の応答は、クライアントアプリケーションが名前を解決できるように、各メールボックスユーザーに関する情報を提供します。 
+この操作を使用すると、エイリアスを確認し、表示名を適切なメールボックス ユーザーに解決できます。 あいまいな名前が存在する場合 **、ResolveNames** 操作応答は、クライアント アプリケーションが名前を解決できるよう、各メールボックス ユーザーに関する情報を提供します。 
   
 ## <a name="remarks"></a>注釈
 
-ResolveNames 応答は、最大100の候補を返します。 返される100候補は、参照操作で検出された最初の100です。
+ResolveNames 応答は、最大 100 の候補を返します。 返される 100 の候補は、ルックアップ操作で検出された最初の 100 です。
   
-Smtp、sip などのプレフィックス付きルーティングタイプを持つ電子メールアドレスは、複数値配列に保存されます。 **ResolveNames**操作は、未解決の名前の先頭 ("sip:User1@Contoso.com" など) にルーティングの種類を追加するときに、その配列の各値に対して部分一致を実行します。 ルーティングの種類を指定しない場合、 **ResolveNames**は smtp のルーティングの種類を既定で設定し、それをプライマリ smtp アドレスプロパティに一致させ、複数値配列は検索しません。 
+smtp や sip などのプレフィックス付きルーティングの種類を持つ電子メール アドレスは、複数値配列に保存されます。 **ResolveNames** 操作は、"sip:User1@Contoso.com" などの未解決の名前の先頭にルーティングの種類を追加すると、その配列の各値に対して部分的に一致します。 ルーティングの種類を指定しない場合 **、ResolveNames** は既定で smtp のルーティングの種類に設定され、プライマリ smtp アドレス プロパティに一致し、複数値配列を検索しません。 
   
-1つの要求で指定できるあいまいな名前は1つだけです。 Active Directory が最初に検索されてから、ユーザーの連絡先フォルダーが検索されます。 解決されたユーザーの連絡先フォルダーのエントリには、非 null の**ItemId**プロパティがあります。このプロパティは、GetItem 要求で使用できます。 プライベート配布リストの ID である場合は、 [Expanddl 操作](expanddl-operation.md)で使用できます。 **Returnfullcontactdata**属性が**true**に設定されている場合、 **ResolveNames**操作で見つかった Active Directory エントリは、[連絡先](contact.md)を記述する追加のプロパティを返します。 **Returnfullcontactdata**属性は、ユーザーの連絡先フォルダーから連絡先およびプライベート配布リストに対して返されるデータには影響しません。 
+1 つの要求で指定できるあいまいな名前は 1 つのみです。 Active Directory が最初に検索され、次にユーザーの連絡先フォルダーが検索されます。 ユーザーの連絡先フォルダーから解決されたエントリには、Null 以外の **ItemId** プロパティが設定され、GetItem 要求で使用できます。 プライベート配布リストの ID である場合は [、ExpandDL 操作で使用できます](expanddl-operation.md)。 **ReturnFullContactData** 属性が **true** に設定されている場合 **、ResolveNames** 操作で見つかった Active Directory エントリは、Contact を表す追加のプロパティを返 [します](contact.md)。 **ReturnFullContactData** 属性は、ユーザーの連絡先フォルダーから連絡先とプライベート配布リストに返されるデータには影響しません。 
   
 ## <a name="resolvenames-request-example"></a>ResolveNames 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の**ResolveNames**要求の例は、ユーザーのエントリを解決する方法を示しています。
+**ResolveNames 要求の次の例は、User** のエントリを解決する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -61,20 +61,20 @@ Smtp、sip などのプレフィックス付きルーティングタイプを持
 
 ### <a name="comments"></a>コメント
 
-この要求への応答では、"Jo" または "Mi" で始まるすべてのエントリが返されます。 返されるアイテムは、パブリックメールボックス、パブリックおよびプライベート配布リスト、および連絡先です。
+この要求に対する応答は、"Jo" または "Mi" で始まるすべてのエントリを返します。 返されるアイテムは、パブリック メールボックス、パブリックおよびプライベート配布リスト、および連絡先です。
   
 > [!NOTE]
-> 既定の個人用連絡先フォルダー内の連絡先のみが検索されます。 
+> 既定の個人用連絡先フォルダー内の連絡先だけが検索されます。 
   
-**ResolveNames**要求に対して考えられる結果は次のとおりです。 
+**ResolveNames** 要求の結果を次に示します。 
   
-- 解決されたエンティティを含まない応答は、**エラー**と等しい**ResponseClass**属性値を返します。 **Messagetext**要素には、"**結果が見つかりません**" が含まれています。
+- 解決済みエンティティを含む応答は、Error に等しい **ResponseClass** 属性値を **返します**。 **MessageText 要素には**"結果が **見つかりません." が含まれる。**
     
-- 1つの解決されたエンティティを含む応答は、**成功**と等しい**ResponseClass**属性値を返します。
+- 1 つの解決済みエンティティを含む応答は、Success に等しい **ResponseClass** 属性値を **返します**。
     
-- 複数の可能なエンティティが含まれる応答は、**警告**と同じ**ResponseClass**属性値を返します。 この場合、エンティティを一意の id に解決できませんでした。 **Messagetext**要素には、"複数の結果が見つかりました" という文字列が含まれています。 
+- 複数のエンティティを含む応答は、Warning に等しい **ResponseClass** 属性値を **返します**。 この場合、エンティティを一意の ID に解決する必要があります。 **MessageText 要素には**"複数の結果が見つかりました" が含まれる。 
     
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 要求では、次の要素が使用されます。
   
@@ -82,11 +82,11 @@ Smtp、sip などのプレフィックス付きルーティングタイプを持
     
 - [UnresolvedEntry](unresolvedentry.md)
     
-## <a name="successful-resolvenames-operation-response-example"></a>成功した ResolveNames 操作の応答の例
+## <a name="successful-resolvenames-operation-response-example"></a>ResolveNames 操作応答の成功例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **ResolveNames**要求に対する正常な応答を示しています。 
+次の例は **、ResolveNames** 要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -130,7 +130,7 @@ Smtp、sip などのプレフィックス付きルーティングタイプを持
 </soap:Envelope>
 ```
 
-### <a name="successful-resolvenames-response-elements"></a>Successful ResolveNames response 要素
+### <a name="successful-resolvenames-response-elements"></a>ResolveNames 応答要素の成功
 
 応答では、次の要素が使用されます。
   
@@ -144,15 +144,15 @@ Smtp、sip などのプレフィックス付きルーティングタイプを持
     
 - [ResponseCode](responsecode.md)
     
-- [解像度セット](resolutionset.md)
+- [ResolutionSet](resolutionset.md)
     
-- [Resolution](resolution.md)
+- [解決策](resolution.md)
     
 - [メールボックス](mailbox.md)
     
 - [Name (EmailAddressType)](name-emailaddresstype.md)
     
-- [EmailAddress (非 Emptystringtype)](emailaddress-nonemptystringtype.md)
+- [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
     
 - [RoutingType (EmailAddressType)](routingtype-emailaddresstype.md)
     
@@ -160,7 +160,7 @@ Smtp、sip などのプレフィックス付きルーティングタイプを持
     
 - [Contact](contact.md)
     
-- [DisplayName (文字列)](displayname-string.md)
+- [DisplayName (string)](displayname-string.md)
     
 - [EmailAddresses](emailaddresses.md)
     
@@ -170,9 +170,9 @@ Smtp、sip などのプレフィックス付きルーティングタイプを持
     
 ## <a name="resolvenames-operation-error-response"></a>ResolveNames 操作エラー応答
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **ResolveNames**要求に対するエラー応答を示しています。 解決できない名前を解決しようとすると、エラーが発生します。 
+次の例は、ResolveNames 要求に対する **エラー応答を示** しています。 このエラーは、解決できない名前を解決しようとして発生します。 
   
 ### <a name="code"></a>コード
 

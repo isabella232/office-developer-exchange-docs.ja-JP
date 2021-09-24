@@ -1,23 +1,23 @@
 ---
-title: 会話 (ConversationResponseType)
+title: Conversation (ConversationResponseType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 57310ba7-f411-43fa-a096-acef0481afec
-description: 会話 (GetConversationItemsResponseMessageType) 要素は、GetConversationItems 応答で返される1つの会話を表します。
-ms.openlocfilehash: e729a9525030ec1e7abc2ffcb40fc92812b17001
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Conversation (GetConversationItemsResponseMessageType) 要素は、GetConversationItems 応答で返される 1 つの会話を表します。
+ms.openlocfilehash: 093ad09368844e284400aa7a43bd9d08b019a4f6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466774"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517225"
 ---
-# <a name="conversation-conversationresponsetype"></a>会話 (ConversationResponseType)
+# <a name="conversation-conversationresponsetype"></a>Conversation (ConversationResponseType)
 
-**会話**(GetConversationItemsResponseMessageType) 要素は、 **GetConversationItems**応答で返される1つの会話を表します。 
+Conversation  (GetConversationItemsResponseMessageType) 要素は **、GetConversationItems** 応答で返される 1 つの会話を表します。 
   
 ```XML
 <Conversation />
@@ -58,7 +58,7 @@ ms.locfileid: "44466774"
   
 ## <a name="example"></a>例
 
-Microsoft Win32 # 4
+Microsoft.Win32.RegistryKey#4
   
 ## <a name="element-information"></a>要素の情報
 
@@ -67,6 +67,6 @@ Microsoft Win32 # 4
 |Namespace  <br/> |
 |スキーマ名  <br/> |
 |検証ファイル  <br/> |
-|空にすることができます。  <br/> |
+|空の場合  <br/> |
    
 

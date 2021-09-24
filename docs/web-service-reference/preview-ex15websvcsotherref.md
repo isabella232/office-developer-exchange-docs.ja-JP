@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5d33f557-c9d5-4f7f-82c0-d800412f8b7e
-description: Preview 要素は、アイテムの最初の256文字を表示用に指定します。
-ms.openlocfilehash: 883a9b7ed45add423cbe942d1eabb90c53ac1ddf
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Preview 要素は、表示するアイテムの最初の 256 文字を指定します。
+ms.openlocfilehash: f91423133cb0944e323680d905ed06486ec0d0b1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468111"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59534664"
 ---
 # <a name="preview"></a>Preview
 
-**Preview**要素は、アイテムの最初の256文字を表示用に指定します。 
+**Preview 要素** は、表示するアイテムの最初の 256 文字を指定します。 
   
 ```XML
 <Preview></Preview>
@@ -38,11 +38,11 @@ ms.locfileid: "44468111"
   
 ### <a name="parent-elements"></a>親要素
 
-[会話 (ConversationType)](conversation-conversationtype.md)  | [Searchプレビューアイテム](searchpreviewitem.md)  | [アイテム](item.md)  | [連絡先](contact.md)  | [メッセージ](message-ex15websvcsotherref.md)  | [DistributionList](distributionlist.md)  | [Calendaritem](calendaritem.md)  | [Postitem](postitem.md)  | [タスク](task.md)
+[Conversation (ConversationType)](conversation-conversationtype.md)  | [SearchPreviewItem](searchpreviewitem.md)  | [アイテム](item.md)  | [連絡先](contact.md)  | [メッセージ](message-ex15websvcsotherref.md)  | [DistributionList](distributionlist.md)  | [CalendarItem](calendaritem.md)  | [PostItem](postitem.md)  | [タスク](task.md)
   
 ## <a name="text-value"></a>テキスト値
 
-Preview 要素のテキスト値は、アイテムの最初の256文字です。
+Preview 要素のテキスト値は、アイテムの最初の 256 文字です。
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ Preview 要素のテキスト値は、アイテムの最初の256文字です。
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

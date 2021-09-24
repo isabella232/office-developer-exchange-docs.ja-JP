@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f0805560-7a2f-455b-94d2-ec4f1e3652c3
-description: SuppressReadReceipts 要素は、開封確認を抑制する必要があるかどうかを示します。
-ms.openlocfilehash: aa604d4907582bd73727ba664958a589a222f9cb
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SuppressReadReceipts 要素は、読み取りレシートを抑制するかどうかを示します。
+ms.openlocfilehash: 1f63f46f4e74a3123661caba39b737910bc2ef30
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455934"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517652"
 ---
 # <a name="suppressreadreceipts"></a>SuppressReadReceipts
 
-**SuppressReadReceipts**要素は、開封確認を抑制する必要があるかどうかを示します。 
+**SuppressReadReceipts 要素** は、読み取りレシートを抑制するかどうかを示します。 
   
 ```XML
 <SuppressReadReceipts>true | false</SuppressReadReceipts>
@@ -38,11 +38,11 @@ ms.locfileid: "44455934"
   
 ### <a name="parent-elements"></a>親要素
 
-[ConversationAction](conversationaction.md)  | [Markallitemsasread](markallitemsasread.md)
+[ConversationAction](conversationaction.md)  | [MarkAllItemsAsRead](markallitemsasread.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**SuppressReadReciepts**要素のテキスト値が**true**である場合、開封確認が抑制されていることを示します。 値が**false**の場合、開封確認が送信者に送信されることを示します。 
+**SuppressReadReciepts** 要素のテキスト値 **が true** の場合、読み取りレシートが抑制されます。 false の **値は** 、読み取りレシートが送信者に送信されます。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44455934"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

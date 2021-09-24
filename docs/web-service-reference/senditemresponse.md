@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SendItemResponse
 api_type:
 - schema
 ms.assetid: 26ac41c7-57d9-473e-ab7a-bae93e1d2aba
-description: SendItemResponse 要素は、SendItem 要求への応答を定義します。
-ms.openlocfilehash: dd90510547c3db8c3531663c23d05055bd774fab
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SendItemResponse 要素は、SendItem 要求に対する応答を定義します。
+ms.openlocfilehash: bed5884ba60174203782a916f1ac3702ae8b0128
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462130"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523420"
 ---
 # <a name="senditemresponse"></a>SendItemResponse
 
-**Senditemresponse**要素は、SendItem 要求への応答を定義します。 
+**SendItemResponse** 要素は、SendItem 要求に対する応答を定義します。 
   
 ```xml
 <SendItemResponse>
@@ -42,7 +42,7 @@ ms.locfileid: "44462130"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Exchange Web サービス要求に対する応答メッセージを含みます。  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Web サービス要求の応答メッセージExchange含まれます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -50,16 +50,16 @@ ms.locfileid: "44462130"
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -70,5 +70,5 @@ ms.locfileid: "44462130"
 [SendItem](senditem.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

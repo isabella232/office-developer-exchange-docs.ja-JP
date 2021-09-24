@@ -1,28 +1,28 @@
 ---
-title: ResetPINResponse (UM web サービス)
+title: ResetPINResponse (UM Web サービス)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ResetPINResponse
 api_type:
 - schema
 ms.assetid: 42aac88f-8513-416d-8be4-77378b71a45b
-description: ResetPINResponse 要素は、ResetPIN 操作 (UM web サービス) 要求への応答を定義します。
-ms.openlocfilehash: a30d75b91823ebc021cfffa4e77be04fc6cd7951
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ResetPINResponse 要素は、ResetPIN 操作 (UM Web サービス) 要求への応答を定義します。
+ms.openlocfilehash: 8a68dad67fd2af02ab6cd40662b387adf9f75f38
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466207"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523574"
 ---
-# <a name="resetpinresponse-um-web-service"></a>ResetPINResponse (UM web サービス)
+# <a name="resetpinresponse-um-web-service"></a>ResetPINResponse (UM Web サービス)
 
-ResetPINResponse 要素は、 [resetpin 操作 (UM web サービス)](resetpin-operation-um-web-service.md)要求への応答を定義します。 
+ResetPINResponse 要素は [、ResetPIN 操作 (UM Web サービス)](resetpin-operation-um-web-service.md) 要求への応答を定義します。 
   
-[ResetPINResponse (UM web サービス)](resetpinresponse-um-web-service.md)
+[ResetPINResponse (UM Web サービス)](resetpinresponse-um-web-service.md)
   
 ```xml
 <ResetPINResponse />
@@ -55,12 +55,12 @@ ResetPINResponse 要素は、 [resetpin 操作 (UM web サービス)](resetpin-o
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |スキーマ名  <br/> |メッセージ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[ResetPIN 操作 (UM web サービス)](resetpin-operation-um-web-service.md)
+[ResetPIN 操作 (UM Web サービス)](resetpin-operation-um-web-service.md)
 

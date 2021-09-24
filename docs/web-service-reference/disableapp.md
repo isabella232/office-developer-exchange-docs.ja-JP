@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 42d2a888-fa62-4970-8306-9ddde4eeb1f0
 description: DisableApp 要素は、アプリを無効にする要求を指定します。
-ms.openlocfilehash: e99464677dc34e011e45548083fb830b819649fa
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: d417a0913f01a6995bce10d2316f83bf18a7f01c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457824"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510121"
 ---
 # <a name="disableapp"></a>DisableApp
 
-**Disableapp**要素は、アプリを無効にする要求を指定します。 
+**DisableApp 要素** は、アプリを無効にする要求を指定します。 
   
 ```XML
 <DisableApp>
@@ -39,7 +39,7 @@ ms.locfileid: "44457824"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ID (文字列)](id-string.md) <br/> |アイテムの id を指定します。  <br/> |
+|[ID (String)](id-string.md) <br/> |アイテムの識別子を指定します。  <br/> |
 |[DisableReason](disablereason.md) <br/> |アプリを無効にする理由を指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
@@ -57,11 +57,11 @@ ms.locfileid: "44457824"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

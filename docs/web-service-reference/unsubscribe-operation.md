@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Unsubscribe
 api_type:
 - schema
 ms.assetid: 994a9d2b-1501-4804-90f0-12bd914496ec
-description: 登録解除操作を使用して、プル通知サブスクリプションを終了します。 サブスクリプションのタイムアウトを使用するのではなく、この操作を使用します。 この操作は、プル通知に対してのみ有効です。
-ms.openlocfilehash: 054f89af1ba5c780c7de5016a6dfe34086c97f02
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Unsubscribe 操作は、プル通知サブスクリプションを終了するために使用されます。 サブスクリプションのタイムアウトを行うのではなく、この操作を使用します。 この操作はプル通知でのみ有効です。
+ms.openlocfilehash: 96d30bcd585b07a7ed0497a4a4c723485e8626ab
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468027"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517505"
 ---
 # <a name="unsubscribe-operation"></a>Unsubscribe 操作
 
-登録解除操作を使用して、プル通知サブスクリプションを終了します。 サブスクリプションのタイムアウトを使用するのではなく、この操作を使用します。 この操作は、プル通知に対してのみ有効です。
+Unsubscribe 操作は、プル通知サブスクリプションを終了するために使用されます。 サブスクリプションのタイムアウトを行うのではなく、この操作を使用します。 この操作はプル通知でのみ有効です。
   
 ## <a name="unsubscribe-request-example"></a>登録解除要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、通知サービスからクライアントの登録を解除するために送信される SOAP XML メッセージを示しています。
+次の例は、通知サービスからクライアントをサブスクライブ解除するために送信される SOAP XML メッセージを示しています。
   
 ### <a name="code"></a>コード
 
@@ -43,7 +43,7 @@ ms.locfileid: "44468027"
 </soap:Envelope>
 ```
 
-### <a name="unsubscribe-request-elements"></a>登録解除の要求要素
+### <a name="unsubscribe-request-elements"></a>要求要素の登録解除
 
 要求では、次の要素が使用されます。
   
@@ -51,11 +51,11 @@ ms.locfileid: "44468027"
     
 - [SubscriptionId (GetEvents)](subscriptionid-getevents.md)
     
-## <a name="successful-unsubscribe-response-example"></a>正常な登録解除の応答の例
+## <a name="successful-unsubscribe-response-example"></a>成功した配信停止応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、購読中止要求に対する正常な応答を示しています。
+次の例は、Unsubscribe 要求に対する正常な応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -82,7 +82,7 @@ ms.locfileid: "44468027"
 </soap:Envelope>
 ```
 
-### <a name="unsubscribe-response-elements"></a>応答の取り消し要素
+### <a name="unsubscribe-response-elements"></a>応答要素の登録解除
 
 応答では、次の要素が使用されます。
   
@@ -92,15 +92,15 @@ ms.locfileid: "44468027"
     
 - [ResponseMessages](responsemessages.md)
     
-- [非表示の表示/非表示のメッセージ](unsubscriberesponsemessage.md)
+- [UnsubscribeResponseMessage](unsubscriberesponsemessage.md)
     
 - [ResponseCode](responsecode.md)
     
-## <a name="unsubscribe-error-response-example"></a>登録解除エラーの応答の例
+## <a name="unsubscribe-error-response-example"></a>Unsubscribe Error 応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次のサブスクライブ解除エラー応答の例は、Exchange ストアに配置できないサブスクリプション識別子を使用してサブスクライブを中止しようとした場合に発生します。
+購読解除エラー応答の次の例は、サブスクリプションストアに含めできないサブスクリプション識別子を使用して購読解除を試みExchangeします。
   
 ### <a name="code"></a>コード
 
@@ -129,7 +129,7 @@ ms.locfileid: "44468027"
 </soap:Envelope>
 ```
 
-### <a name="unsubscribe-error-response-elements"></a>登録解除エラー応答要素
+### <a name="unsubscribe-error-response-elements"></a>Unsubscribe Error response 要素
 
 エラー応答では、次の要素が使用されます。
   
@@ -139,7 +139,7 @@ ms.locfileid: "44468027"
     
 - [ResponseMessages](responsemessages.md)
     
-- [非表示の表示/非表示のメッセージ](unsubscriberesponsemessage.md)
+- [UnsubscribeResponseMessage](unsubscriberesponsemessage.md)
     
 - [MessageText](messagetext.md)
     
@@ -151,5 +151,5 @@ ms.locfileid: "44468027"
 
 - [サブスクライブ操作](subscribe-operation.md)
 - [GetEvents 操作](getevents-operation.md)
-- [プルサブスクリプションの使用](https://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx)
+- [プル サブスクリプションの使用](https://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx)
 

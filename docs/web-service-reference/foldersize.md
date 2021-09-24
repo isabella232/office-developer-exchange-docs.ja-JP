@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FolderSize
 api_type:
 - schema
 ms.assetid: 27e5f0cd-e23a-4ddd-943a-9f17bf0fd87b
-description: FolderSize 要素は、管理フォルダーのすべてのコンテンツの合計サイズを示します。
-ms.openlocfilehash: 8ed493cfb0c2cabd02d28354c115a73662992473
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: FolderSize 要素は、管理フォルダーのすべてのコンテンツの合計サイズを表します。
+ms.openlocfilehash: 0e877e035e8bc4f1b81f0d939fac21d178ea805c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461339"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509988"
 ---
 # <a name="foldersize"></a>FolderSize
 
-**Foldersize**要素は、管理フォルダーのすべてのコンテンツの合計サイズを示します。 
+**FolderSize** 要素は、管理フォルダーのすべてのコンテンツの合計サイズを表します。 
   
 ```xml
 <FolderSize/>
@@ -44,24 +44,24 @@ ms.locfileid: "44461339"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ManagedFolderInformation](managedfolderinformation.md) <br/> |管理フォルダーに関する情報を格納します。  <br/> |
+|[ManagedFolderInformation](managedfolderinformation.md) <br/> |管理フォルダーに関する情報が含まれる。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-Text 値は、フォルダーの合計サイズをメガバイト単位で表します。
+テキスト値は、フォルダーの合計サイズをメガバイト単位で表します。
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -70,5 +70,5 @@ Text 値は、フォルダーの合計サイズをメガバイト単位で表し
 [CreateManagedFolder 操作](createmanagedfolder-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

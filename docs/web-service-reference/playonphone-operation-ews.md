@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PlayOnPhone
 api_type:
 - schema
 ms.assetid: 70e6ef33-2046-4eb8-9987-e106009be04b
-description: PlayOnPhone 操作は、発信通話を開始し、電話でメッセージを再生します。
-ms.openlocfilehash: 18af810160e72856599f296c4faa83cf9c73c393
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: PlayOnPhone 操作は、発信呼び出しを開始し、電話でメッセージを再生します。
+ms.openlocfilehash: f6f5ef30849e1ed536316fe48a8dd29d3d68b230
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467957"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516552"
 ---
 # <a name="playonphone-operation-ews"></a>PlayOnPhone 操作 (EWS)
 
-**Playonphone**操作は、発信通話を開始し、電話でメッセージを再生します。 
+**PlayOnPhone 操作は**、発信呼び出しを開始し、電話でメッセージを再生します。 
   
 ## <a name="playonphone-request-example"></a>PlayOnPhone 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の**Playonphone**要求の例は、電話でメッセージを再生するための要求を形成する方法を示しています。 
+**PlayOnPhone** 要求の次の例は、電話でメッセージを再生する要求を形成する方法を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -52,9 +52,9 @@ ms.locfileid: "44467957"
 
 ## <a name="playonphone-response-example"></a>PlayOnPhone 応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **Playonphone**要求に対する正常な応答を示しています。 
+次の例は **、PlayOnPhone** 要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -85,6 +85,6 @@ ms.locfileid: "44467957"
 
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS 操作](ews-operations-in-exchange.md)
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS 操作 (Exchange](ews-operations-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

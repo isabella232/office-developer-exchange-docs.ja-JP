@@ -5,25 +5,25 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - TrackingPropertyType
 api_type:
 - schema
 ms.assetid: 1d0f219b-1063-4eaa-9d3b-da384a544f89
 description: TrackingPropertyType 要素は、メッセージ追跡レポートのプロパティを作成するために使用される文字列の名前と値のペアを表します。
-ms.openlocfilehash: 7812b52dd57fed0a9b6f1a8fc4e77660932a60dc
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: f26f2a2f512d0816ac34d801169972c670e5ff25
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468083"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517540"
 ---
 # <a name="trackingpropertytype"></a>TrackingPropertyType
 
-**TrackingPropertyType**要素は、メッセージ追跡レポートのプロパティを作成するために使用される文字列の名前と値のペアを表します。 
+**TrackingPropertyType** 要素は、メッセージ追跡レポートのプロパティを作成するために使用される文字列の名前と値のペアを表します。 
   
-[プロパティ (ArrayOfTrackingPropertiesType)](properties-arrayoftrackingpropertiestype.md)
+[Properties (ArrayOfTrackingPropertiesType)](properties-arrayoftrackingpropertiestype.md)
   
 [TrackingPropertyType](trackingpropertytype.md)
   
@@ -47,14 +47,14 @@ ms.locfileid: "44468083"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Name (メッセージ追跡)](name-message-tracking.md) <br/> |メッセージ追跡レポートプロパティの名前を定義します。  <br/> |
-|[値 (メッセージ追跡)](value-message-tracking.md) <br/> |メッセージ追跡レポートのプロパティの値を定義します。 この要素は省略できます。  <br/> |
+|[Name (メッセージ追跡)](name-message-tracking.md) <br/> |メッセージ追跡レポート プロパティの名前を定義します。  <br/> |
+|[Value (Message Tracking)](value-message-tracking.md) <br/> |メッセージ追跡レポート プロパティの値を定義します。 この要素は省略できます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロパティ (ArrayOfTrackingPropertiesType)](properties-arrayoftrackingpropertiestype.md) <br/> |1つ以上の追跡プロパティの一覧が含まれています。  <br/> |
+|[Properties (ArrayOfTrackingPropertiesType)](properties-arrayoftrackingpropertiestype.md) <br/> |1 つ以上の追跡プロパティの一覧が含まれる。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -62,20 +62,20 @@ ms.locfileid: "44468083"
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
+この要素を記述するスキーマは、Exchange Web Services をホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

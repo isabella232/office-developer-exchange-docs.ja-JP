@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0bb00cee-c66b-4f34-b99d-355458f5e83b
-description: ErrorCode 要素は、各ルール述語またはアクションの検証に失敗したことを示すルールの検証エラーコードを表します。
-ms.openlocfilehash: 6432aeee786d74a9afcb346cb66765f9001257de
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ErrorCode 要素は、ルールの述語またはアクションごとに失敗した検証を説明するルール検証エラー コードを表します。
+ms.openlocfilehash: a582b09a579074a6728bb79b351b8c7a120c05de
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460079"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517113"
 ---
 # <a name="errorcode"></a>ErrorCode
 
-**ErrorCode**要素は、各ルール述語またはアクションの検証に失敗したことを示すルールの検証エラーコードを表します。 
+**ErrorCode 要素は**、ルールの述語またはアクションごとに失敗した検証を説明するルール検証エラー コードを表します。 
   
 ```XML
 <ErrorCode/>
@@ -40,11 +40,11 @@ ms.locfileid: "44460079"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Error](error.md) <br/> |特定のルールプロパティ値、述語プロパティ値、または action プロパティ値に対する1つの検証エラーを表します。  <br/> |
+|[エラー](error.md) <br/> |特定のルール プロパティ値、述語プロパティ値、またはアクション プロパティ値に対する 1 つの検証エラーを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-この要素のテキスト値は、次の文字列のいずれかに制限されています。
+この要素のテキスト値は、次のいずれかの文字列に制限されます。
   
 - ADOperationFailure
     
@@ -76,23 +76,23 @@ ms.locfileid: "44460079"
     
 - MissingParameter
     
-- 誤 Singrangevalue
+- MissingRangeValue
     
-- NotSettable 可能
+- NotSettable
     
 - RecipientDoesNotExist
     
 - RuleNotFound
     
-- Sizeless0
+- SizeLessThanZero
     
 - StringValueTooBig
     
-- アン Supportedaddress
+- サポートされていないAddress
     
 - UnexpectedError
     
-- アン Supportedrule
+- サポートされていないRule
     
 ## <a name="remarks"></a>注釈
 
@@ -103,13 +103,13 @@ ms.locfileid: "44460079"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

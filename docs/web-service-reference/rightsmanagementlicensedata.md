@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 38f0b7f4-2338-4e90-af67-e0951e8edfa3
 description: RightsManagementLicenseData 要素は、アイテムの権限管理ライセンスに関する情報を指定します。
-ms.openlocfilehash: 892edfd6775838b1e6329e8db0ee9bb8e3c519ff
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 8875e9bad425224f86b6de5149f87a36c2a2581e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463189"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523469"
 ---
 # <a name="rightsmanagementlicensedata"></a>RightsManagementLicenseData
 
-**RightsManagementLicenseData**要素は、アイテムの権限管理ライセンスに関する情報を指定します。 
+**RightsManagementLicenseData** 要素は、アイテムの権限管理ライセンスに関する情報を指定します。 
   
 ```XML
 <RightsManagementLicenseData>
@@ -51,11 +51,11 @@ ms.locfileid: "44463189"
   
 ### <a name="child-elements"></a>子要素
 
-[RightsManagedMessageDecryptionStatus](rightsmanagedmessagedecryptionstatus.md)  | [RMSTemplateId](rmstemplateid.md)  | [TemplateName](templatename.md)  | [Templatedescription](templatedescription.md)  | [Editallowed](editallowed.md)  | [ReplyAllowed](replyallowed.md)  | [ReplyAllAllowed](replyallallowed.md)  | [Forwardallowed](forwardallowed.md)  | [Modify受信者の許可](modifyrecipientsallowed.md)  | [ExtractAllowed](extractallowed.md)  | [Printallowed](printallowed.md)  | [Exportallowed](exportallowed.md)  | [ProgrammaticAccessAllowed](programmaticaccessallowed.md)  | [Isowner](isowner.md)  |  場合[ContentOwner](contentowner.md)  | [ContentExpiryDate](contentexpirydate.md)
+[RightsManagedMessageDecryptionStatus](rightsmanagedmessagedecryptionstatus.md)  | [RMSTemplateId](rmstemplateid.md)  | [TemplateName](templatename.md)  | [TemplateDescription](templatedescription.md)  | [EditAllowed](editallowed.md)  | [ReplyAllowed](replyallowed.md)  | [ReplyAllAllowed](replyallallowed.md)  | [ForwardAllowed](forwardallowed.md)  | [ModifyRecipientsAllowed](modifyrecipientsallowed.md)  | [ExtractAllowed](extractallowed.md)  | [PrintAllowed](printallowed.md)  | [ExportAllowed](exportallowed.md)  | [ProgrammaticAccessAllowed](programmaticaccessallowed.md)  | [IsOwner](isowner.md)  | [ContentOwner](contentowner.md)  | [ContentExpiryDate](contentexpirydate.md)
   
 ### <a name="parent-elements"></a>親要素
 
-[アイテム](item.md)  | [メッセージ](message-ex15websvcsotherref.md)  | [会議メッセージ](meetingmessage.md)  | [会議の要求](meetingrequest.md)  | [会議の応答](meetingresponse.md)  | [会議のキャンセル](meetingcancellation.md)  | [タスク](task.md)  | [Postitem](postitem.md)  | [Calendaritem](calendaritem.md)  | [連絡先](contact.md)  | [DistributionList](distributionlist.md)
+[アイテム](item.md)  | [メッセージ](message-ex15websvcsotherref.md)  | [MeetingMessage](meetingmessage.md)  | [MeetingRequest](meetingrequest.md)  | [MeetingResponse](meetingresponse.md)  | [MeetingCancellation](meetingcancellation.md)  | [タスク](task.md)  | [PostItem](postitem.md)  | [CalendarItem](calendaritem.md)  | [連絡先](contact.md)  | [DistributionList](distributionlist.md)
   
 ## <a name="remarks"></a>注釈
 
@@ -68,8 +68,8 @@ ms.locfileid: "44463189"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

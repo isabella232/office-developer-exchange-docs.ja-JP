@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ContactSource
 api_type:
 - schema
 ms.assetid: 500b0423-864e-4cde-a39b-6b5b06d1aa6a
-description: ContactSource 要素は、連絡先が Exchange ストアまたは Active Directory ドメインサービス (AD DS) に配置されているかどうかを表します。
-ms.openlocfilehash: 5447dedf199c5ad6b944aa33e6dca03e83a3c340
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ContactSource 要素は、連絡先がドメイン ストアまたは Active Directory ドメイン サービス (EXCHANGE DS) にあるかどうかをADします。
+ms.openlocfilehash: 538739a47d257de90b961a2c4d391e95eae0d620
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462711"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59536737"
 ---
 # <a name="contactsource"></a>ContactSource
 
-**Contactsource**要素は、連絡先が Exchange ストアまたは Active Directory ドメインサービス (AD DS) に配置されているかどうかを表します。 
+**ContactSource 要素** は、連絡先がドメイン ストアまたは Active Directory ドメイン サービス (EXCHANGE DS) にあるかどうかをADします。 
   
 ```xml
 <ContactSource/>
@@ -44,12 +44,12 @@ ms.locfileid: "44462711"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Contact](contact.md) <br/> |Exchange ストア内の連絡先アイテムを表します。  <br/> |
+|[Contact](contact.md) <br/> |ストア内の連絡先アイテムExchangeします。  <br/> |
 |[DistributionList](distributionlist.md) <br/> |配布リストを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-この要素に使用できる値は次のとおりです。
+この要素で使用できる値は次のとおりです。
   
 - ActiveDirectory
     
@@ -64,13 +64,13 @@ ms.locfileid: "44462711"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -1,33 +1,33 @@
 ---
-title: Current会議時間
+title: CurrentMeetingTime
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CurrentMeetingTime
 api_type:
 - schema
 ms.assetid: 1ff68154-24b5-465a-a31c-3d3bab0d491e
-description: Currentmeeting Time 要素は、会議の出席者から提案された会議時間で更新する会議の開始時刻を表します。
-ms.openlocfilehash: e79616fd735cbf6410e85450bd75c1276923f171
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: CurrentMeetingTime 要素は、会議出席者が提案した会議の時刻で更新する会議の開始時刻を表します。
+ms.openlocfilehash: ef208d232a376d3a7fcffc08db1b8864635c0d0a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458776"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59536156"
 ---
-# <a name="currentmeetingtime"></a>Current会議時間
+# <a name="currentmeetingtime"></a>CurrentMeetingTime
 
-**Currentmeeting time**要素は、会議の出席者から提案された会議時間で更新する会議の開始時刻を表します。 
+**CurrentMeetingTime** 要素は、会議出席者が提案した会議の時刻で更新する会議の開始時刻を表します。 
   
 [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
   
 [SuggestionsViewOptions](suggestionsviewoptions.md)
   
-[Current会議時間](currentmeetingtime.md)
+[CurrentMeetingTime](currentmeetingtime.md)
   
 ```xml
 <CurrentMeetingTime>...</CurrentMeetingTime>
@@ -50,23 +50,23 @@ ms.locfileid: "44458776"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[SuggestionsViewOptions](suggestionsviewoptions.md) <br/> |会議提案情報を取得するためのオプションが含まれています。  <br/> この要素の XPath を次に示します。  <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions` <br/> |
+|[SuggestionsViewOptions](suggestionsviewoptions.md) <br/> |会議の提案情報を取得するためのオプションが含まれる。  <br/> 次に、この要素の XPath を示します。  <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions` <br/> |
    
 ## <a name="remarks"></a>注釈
 
 この要素は必須ではありません。
   
 > [!NOTE]
-> この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの/EWS/ディレクトリにあります。 
+> この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの /EWS/ ディレクトリにあります。 
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -75,5 +75,5 @@ ms.locfileid: "44458776"
 [GetUserAvailability 操作](getuseravailability-operation.md)
 
 
-[ユーザーの空き時間情報の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[ユーザーの可用性の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

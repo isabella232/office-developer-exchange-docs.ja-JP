@@ -5,32 +5,32 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DeleteUserConfiguration
 api_type:
 - schema
 ms.assetid: 93e44690-be2d-4fdb-96a8-4ded3c193aed
-description: DeleteUserConfiguration 操作は、フォルダーのユーザー構成オブジェクトを削除します。
-ms.openlocfilehash: 064e1ace2c2f51783431ce42670b2a4fd8146b54
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: DeleteUserConfiguration 操作は、フォルダー上のユーザー構成オブジェクトを削除します。
+ms.openlocfilehash: 4332515a91d9207f3ef8f9905edd2b9155042d65
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44451468"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510177"
 ---
 # <a name="deleteuserconfiguration-operation"></a>DeleteUserConfiguration 操作
 
-**Deleteuserconfiguration**操作は、フォルダーのユーザー構成オブジェクトを削除します。 
+**DeleteUserConfiguration 操作は**、フォルダー上のユーザー構成オブジェクトを削除します。 
   
 > [!IMPORTANT]
-> **Deleteuserconfiguration**操作は、イベント通知システムの移動イベントをトリガーします。 ユーザー構成オブジェクトは、収集に移動されます。 
+> **DeleteUserConfiguration 操作は**、イベント通知システムの移動イベントをトリガーします。 ユーザー構成オブジェクトは、ゴミ箱に移動されます。 
   
 ## <a name="deleteuserconfiguration-request-example"></a>DeleteUserConfiguration 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の**Deleteuserconfiguration**要求の例は、下書きフォルダーのユーザー構成オブジェクトを削除するための要求を形成する方法を示しています。 
+**DeleteUserConfiguration** 要求の次の例は、下書きフォルダーでユーザー構成オブジェクトを削除する要求を形成する方法を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -54,11 +54,11 @@ ms.locfileid: "44451468"
 </soap:Envelope>
 ```
 
-## <a name="deleteuserconfiguration-response-example"></a>DeleteUserConfiguration の応答の例
+## <a name="deleteuserconfiguration-response-example"></a>DeleteUserConfiguration 応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **Deleteuserconfiguration**要求に対する正常な応答を示しています。 
+次の例は **、DeleteUserConfiguration** 要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -92,6 +92,6 @@ ms.locfileid: "44451468"
 
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS 操作](ews-operations-in-exchange.md) 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS 操作 (Exchange](ews-operations-in-exchange.md) 
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

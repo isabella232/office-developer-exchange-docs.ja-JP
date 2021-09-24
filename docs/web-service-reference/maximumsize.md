@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fb7c3ab3-ef97-44c7-83e0-93cfe8c48e84
-description: MaximumSize 要素は、条件または例外を適用するためにメッセージが必要とされる最大サイズを表します。
-ms.openlocfilehash: 250e0c6aed37b934f5cf6eaed9d93b9f56159d93
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MaximumSize 要素は、条件または例外を適用するためにメッセージが必要な最大サイズを表します。
+ms.openlocfilehash: cfc0e65674fc96e31f3daebe6a6c378309b1aa3f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461752"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522648"
 ---
 # <a name="maximumsize"></a>MaximumSize
 
-**MaximumSize**要素は、条件または例外を適用するためにメッセージが必要とされる最大サイズを表します。 
+**MaximumSize** 要素は、条件または例外を適用するためにメッセージが必要な最大サイズを表します。 
   
 ```XML
 <Maximum/>
@@ -40,11 +40,11 @@ ms.locfileid: "44461752"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[WithinSizeRange](withinsizerange.md) <br/> |条件または例外を適用するために、受信メッセージが必要とする最小サイズと最大サイズを指定します。  <br/> |
+|[WithinSizeRange](withinsizerange.md) <br/> |条件または例外を適用するために受信メッセージが必要な最小サイズと最大サイズを指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、メッセージの最大サイズをバイト単位で示す整数です。
+テキスト値は、メッセージの最大サイズをバイト単位で識別する整数です。
   
 ## <a name="remarks"></a>注釈
 
@@ -55,9 +55,9 @@ ms.locfileid: "44461752"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -66,5 +66,5 @@ ms.locfileid: "44461752"
 [MinimumSize](minimumsize.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

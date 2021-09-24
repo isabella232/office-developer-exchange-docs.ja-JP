@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Agents
 api_type:
 - schema
 ms.assetid: 3047653b-d712-46c1-ae0a-73f3975f5e9d
-description: Fetagents および Exchange 2013 の構成ファイルの XML 要素についての情報を参照してください。
-ms.openlocfilehash: f19fe8316a78cef668db881e630562d3be8be64a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: XML 要素に関する情報は、agents.config 2013 fetagents.config構成ファイルExchangeします。
+ms.openlocfilehash: bdf394130f7818c5b956e8b15eed86a6318b9698
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461570"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510422"
 ---
 # <a name="agents-configuration-file-elements-for-exchange-2013"></a>Exchange 2013 のエージェント構成ファイルの要素
 
-Fetagents および Exchange 2013 の構成ファイルの XML 要素についての情報を参照してください。
+XML 要素に関する情報は、agents.config 2013 fetagents.config構成ファイルExchangeします。
   
 **製品:** Exchange Server 2013
   
@@ -29,10 +29,10 @@ Exchange サーバーにクライアント アクセス サーバーの役割ま
   
 フロント エンド トランスポート サービスはクライアント アクセス サーバー上で実行し、fetagents.config という名前のファイルに書き込みを行います。トランスポート サービスとメールボックス トランスポート サービスはメールボックス サーバー上で実行し、agents.config という名前のファイルに書き込みを行います。クライアント アクセス サーバーの役割とメールボックス サーバーの役割の両方を備えたコンピューターには、fetagents.config と agents.config の両方のファイルが存在することになります。  
   
-これらのファイルへの書き込みは、Exchange 管理シェルでトランスポート エージェントのコマンドレットを使用する方法のみがサポートされています。 トランスポートエージェントのコマンドレットの詳細については、TechNet の「[メールフローのコマンドレット](https://technet.microsoft.com/library/aa998553%28v=exchg.150%29.aspx)」を参照してください。 
+これらのファイルへの書き込みは、Exchange 管理シェルでトランスポート エージェントのコマンドレットを使用する方法のみがサポートされています。 トランスポート エージェントコマンドレットの詳細については[、「Mail Flowコマンドレット on TechNet」](https://technet.microsoft.com/library/aa998553%28v=exchg.150%29.aspx)を参照してください。 
   
 > [!NOTE]
-> クライアントアクセスサーバー上のフロントエンドトランスポートサービスとメールボックスサーバー上のトランスポートサービスを拡張するエージェントを区別するために、トランスポートエージェントのコマンドレットにはトランスポートサービス用に "ハブ"、フロントエンドトランスポートサービスの場合は "フロントエンド" という値を持つ_Transportservice_パラメーターがあります。 
+> クライアント アクセス サーバー上のフロント エンド トランスポート サービスを拡張するエージェントとメールボックス サーバー上のトランスポート サービスを区別するために、トランスポート エージェントコマンドレットには、トランスポート サービスの値が "Hub"、フロントエンド トランスポート サービスの "FrontEnd" の  _TransportService_ パラメーターがあります。 
   
 agents.config ファイルまたは fetagents.config ファイルを読み込むことで、サーバー上に 1 つ以上のエージェントが存在するかどうかと、そのエージェントの構成情報を確認できます。このドキュメントでは、agents.config ファイルまたは fetagents.config ファイルの情報を読み取るために使用できるリファレンスを提供します。これらのファイルの形式は、どちらも同じです。このドキュメントでは、これらのファイルへの書き込み方法に関する情報は提供していません。
   
@@ -42,12 +42,12 @@ agents.config ファイルまたは fetagents.config ファイルを読み込む
 ## <a name="location-of-the-transport-agent-configuration-files"></a>トランスポート エージェント構成ファイルの場所
 <a name="bk_ConfigLoc"> </a>
 
-Exchange 2013 をインストールすると、インストールされているサーバーの役割に応じて、インストーラーによって \TransportRoles\Agents または fetagents という名前の XML ファイルが作成され \<ExchangeInstallFolder\> ます (ここで、 \<ExchangeInstallFolder\> は exchange 2013 をインストールしたフォルダーです)。 クライアントアクセスサーバーの役割をインストールすると、Exchange 2013 は fetagents ファイルを fetagents にコピーします。メールボックスサーバーの役割をインストールすると、Exchange 2013 によってエージェント web.config ファイルが agent.config にコピーされます。Exchange 2013 は、サーバー上のトランスポートエージェント構成を変更するときに、このファイルを読み取りおよび書き込みます。
+Exchange 2013 をインストールすると、インストールされているサーバーの役割に応じて、agents.config.template または fetagents.config.template という名前の XML ファイルが \<ExchangeInstallFolder\> \TransportRoles\Agents フォルダー (Exchange 2013 をインストールしたフォルダー) に作成されます。 \<ExchangeInstallFolder\> クライアント アクセス サーバーの役割をインストールする場合、Exchange 2013 は fetagents.config.template ファイルをコピーしてfetagents.config。メールボックス サーバーの役割をインストールする場合、Exchange 2013 は agents.config.template ファイルをコピーして、agents.config。Exchange 2013 では、サーバー上のトランスポート エージェント構成を変更すると、このファイルの読み取りと書き込みを行います。
   
 ## <a name="verifying-a-transport-agent-installation"></a>トランスポート エージェントのインストールの検証
 <a name="bk_verifyinstall"> </a>
 
-.NET Framework が提供する XML 機能を使用すると、XML ファイル (agents.config または fetagents.config) を読み取って検証できます。 トランスポート エージェントのインストールと構成を検証するには、構成ファイルの XML を読み取って、トランスポート エージェントに対応する [agent](agent.md) 要素を見つけます。 特定のトランスポート エージェントの **agent** 要素が存在しない場合、そのトラスポート エージェントはインストールされていません。 トランスポート エージェントがインストールされている場合は、**agent** 要素の属性を読み取ることで、そのエージェントの構成を確認できます。 
+.NET Framework が提供する XML 機能を使用すると、XML ファイル (agents.config または fetagents.config) を読み取って検証できます。トランスポート エージェントのインストールと構成を検証するには、構成ファイルの XML を読み取って、トランスポート エージェントに対応する [agent](agent.md) 要素を見つけます。特定のトランスポート エージェントの **agent** 要素が存在しない場合、そのトラスポート エージェントはインストールされていません。トランスポート エージェントがインストールされている場合は、**agent** 要素の属性を読み取ることで、そのエージェントの構成を確認できます。 
   
 ## <a name="configuration-file-element-hierarchy"></a>構成ファイルの要素の階層構造
 <a name="bk_elementref"> </a>
@@ -73,7 +73,7 @@ Exchange 2013 をインストールすると、インストールされている
 ## <a name="in-this-section"></a>このセクションの内容
 <a name="bk_elementreflist"> </a>
 
-- [agent](agent.md)
+- [エージェント](agent.md)
     
 - [agentExecution](agentexecution.md)
     
@@ -85,7 +85,7 @@ Exchange 2013 をインストールすると、インストールされている
     
 - [mexRuntime](mexruntime.md)
     
-- [管理](monitoring.md)
+- [監視](monitoring.md)
     
 ## <a name="see-also"></a>関連項目
 
@@ -93,6 +93,6 @@ Exchange 2013 をインストールすると、インストールされている
 - [Exchange 2013 におけるトランスポート エージェントの概念](transport-agent-concepts-in-exchange-2013.md)
 - [Exchange 2013 のトランスポート エージェントのリファレンス](transport-agent-reference-for-exchange-2013.md)
 - [Exchange 2013 のトランスポート エージェントの名前空間](transport-agent-namespaces-in-exchange-2013.md)
-- [メールフローのコマンドレット](https://docs.microsoft.com/powershell/exchange/?view=exchange-ps)
+- [メール Flowコマンドレット](https://docs.microsoft.com/powershell/exchange/?view=exchange-ps)
     
 

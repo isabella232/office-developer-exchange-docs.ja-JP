@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateUserConfiguration
 api_type:
 - schema
 ms.assetid: eb5b8ab6-9743-481c-aac9-f9aa889bd353
-description: CreateUserConfiguration 操作は、ユーザー構成オブジェクトをフォルダーに作成します。
-ms.openlocfilehash: 0c9233146d21c7014be15896426b968106485200
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: CreateUserConfiguration 操作は、フォルダーにユーザー構成オブジェクトを作成します。
+ms.openlocfilehash: 7b18bf732126ab7296cdc9afd598470102e17c60
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463784"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59536272"
 ---
 # <a name="createuserconfiguration-operation"></a>CreateUserConfiguration 操作
 
-**CreateUserConfiguration**操作は、ユーザー構成オブジェクトをフォルダーに作成します。 
+**CreateUserConfiguration 操作は**、フォルダーにユーザー構成オブジェクトを作成します。 
   
 ## <a name="createuserconfiguration-request-example"></a>CreateUserConfiguration 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の**CreateUserConfiguration**要求の例は、下書きフォルダーでユーザー構成オブジェクトを作成するための要求を形成する方法を示しています。 
+**CreateUserConfiguration** 要求の次の例は、下書きフォルダーにユーザー構成オブジェクトを作成する要求を形成する方法を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -67,11 +67,11 @@ ms.locfileid: "44463784"
 </soap:Envelope>
 ```
 
-## <a name="createuserconfiguration-response-example"></a>CreateUserConfiguration response の例
+## <a name="createuserconfiguration-response-example"></a>CreateUserConfiguration 応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **CreateUserConfiguration**要求に対する正常な応答を示しています。 
+次の例は **、CreateUserConfiguration** 要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -107,7 +107,7 @@ ms.locfileid: "44463784"
 
 
 
-[Exchange での EWS 操作](ews-operations-in-exchange.md)
+[EWS 操作 (Exchange](ews-operations-in-exchange.md)
   
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

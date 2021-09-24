@@ -5,25 +5,25 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - RoomLists
 api_type:
 - schema
 ms.assetid: 2b190823-b11e-4635-97e4-3aba5865fd05
-description: RoomLists 要素は、会議室のリストを表す1つまたは複数のアドレスのリストです。
-ms.openlocfilehash: 8f6393b617331e5878e48113c94ca3546cba095e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: RoomLists 要素は、会議室のリストを表す 1 つ以上のアドレスのリストです。
+ms.openlocfilehash: e2825ccf5f660e00da61a605282613c07678a74b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459049"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523490"
 ---
 # <a name="roomlists"></a>RoomLists
 
-**RoomLists**要素は、会議室のリストを表す1つまたは複数のアドレスのリストです。 
+**RoomLists 要素** は、会議室のリストを表す 1 つ以上のアドレスのリストです。 
   
-[た getroomlistsresponse](getroomlistsresponse.md)
+[GetRoomListsResponse](getroomlistsresponse.md)
   
 [RoomLists](roomlists.md)
   
@@ -44,26 +44,26 @@ ms.locfileid: "44459049"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Address (EmailAddressType)](address-emailaddresstype.md) <br/> |会議室一覧を表す電子メールアドレスと表示名を定義します。 この要素は省略できます。  <br/> |
+|[Address (EmailAddressType)](address-emailaddresstype.md) <br/> |ルーム リストを表す電子メール アドレスと表示名を定義します。 この要素は省略できます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[た getroomlistsresponse](getroomlistsresponse.md) <br/> |[GetRoomLists 操作](getroomlists-operation.md)要求の状態と結果を格納します。  <br/> |
+|[GetRoomListsResponse](getroomlistsresponse.md) <br/> |GetRoomLists 操作要求の状態 [と結果を格納](getroomlists-operation.md) します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされた Exchange Server を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされているコンピューター Exchange Server EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -72,5 +72,5 @@ ms.locfileid: "44459049"
 [GetRoomLists 操作](getroomlists-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

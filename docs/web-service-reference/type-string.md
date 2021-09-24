@@ -1,23 +1,23 @@
 ---
-title: 型 (string)
+title: Type (string)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d5eea7a8-c40d-42a6-8e0d-67f3252496cf
-description: Type 要素は、住所または電話番号の種類を指定します。たとえば、「ホーム」または「ビジネス」です。
-ms.openlocfilehash: 83dd6576e8a365be61c4e6d2f3afc8a59aba92a6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Type 要素は、郵便番号または電話番号の種類 (HomeorBusiness など) を指定します。
+ms.openlocfilehash: 341c79758c3cbf5133bb79a6986a676903a48ef0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465717"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523210"
 ---
-# <a name="type-string"></a>型 (string)
+# <a name="type-string"></a>Type (string)
 
-**Type**要素は、住所または電話番号の種類を指定します (例: "自宅" または "会社")。 
+**Type 要素** は、"Home" や "Business" などの住所または電話番号の種類を指定します。 
   
 ```XML
 <Type></Type>
@@ -38,11 +38,11 @@ ms.locfileid: "44465717"
   
 ### <a name="parent-elements"></a>親要素
 
-[電話](phone.md)  | [PhoneNumber](phonenumber.md)  | [Value (PersonaPostalAddressType)](value-personapostaladdresstype.md)  | ["Postaladdress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)
+[電話](phone.md)  | [PhoneNumber](phonenumber.md)  | [Value (PersonaPostalAddressType)](value-personapostaladdresstype.md)  | [PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**Type**要素のテキスト値は、住所または電話番号の種類です。 たとえば、 **Type**要素には "Home" または "Business" という値が必要です。 
+Type 要素のテキスト **値** は、住所または電話番号の種類です。 たとえば、"Home" または "Business" の値は **、Type** 要素の予期される値です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44465717"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

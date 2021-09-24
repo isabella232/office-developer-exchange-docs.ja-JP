@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: abce5b3e-971d-42fc-aeea-caa7202214de
-description: RetentionPolicyType 要素は、スレッド内のアイテムに適用されるアイテム保持ポリシーの種類を指定します。
-ms.openlocfilehash: 3900718f10e1e11d5864ebf7e64a3e1e22aa45c7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: RetentionPolicyType 要素は、会話内のアイテムに適用されるアイテム保持ポリシーの種類を指定します。
+ms.openlocfilehash: 961f72c35443e9f265e9313166fa77c8cd93d654
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462872"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509386"
 ---
 # <a name="retentionpolicytype"></a>RetentionPolicyType
 
-**RetentionPolicyType**要素は、スレッド内のアイテムに適用されるアイテム保持ポリシーの種類を指定します。 
+**RetentionPolicyType** 要素は、会話内のアイテムに適用されるアイテム保持ポリシーの種類を指定します。 
   
 ```XML
 <RetentionPolicyType> Delete | Archive </RetentionPolicyType>
@@ -42,7 +42,7 @@ ms.locfileid: "44462872"
   
 ## <a name="text-value"></a>テキスト値
 
-**RetentionPolicyType**要素のテキスト値は、会話内のアイテムに適用される保持タイプです。 [**削除**] のテキスト値は、保持保持期間の期限が切れたときにスレッド内のアイテムが削除されることを示します。 **Archive**のテキスト値は、保持保持期間が経過すると、スレッド内のアイテムがアーカイブメールボックスに移動されることを示します。 
+**RetentionPolicyType 要素のテキスト** 値は、会話内のアイテムに適用される保持の種類です。 Delete のテキスト **値は** 、保持の有効期限が切れると、会話内のアイテムが削除されます。 アーカイブのテキスト **値は** 、保持保持の有効期限が切れると、会話内のアイテムがアーカイブ メールボックスに移動されます。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44462872"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

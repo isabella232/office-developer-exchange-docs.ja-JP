@@ -1,23 +1,23 @@
 ---
-title: 会社名
+title: CompanyNames
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 615fa52d-86ff-4630-b188-5fdb9391eee2
-description: 会社名要素には、会社名の配列と、関連付けられたペルソナのソース attributions の識別子が含まれています。
-ms.openlocfilehash: 25daa43873fe00837004217e3f814a7201638450
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: CompanyNames 要素には、会社名の配列と、関連付けられたペルサのソース属性の識別子が含まれる。
+ms.openlocfilehash: ca5be5960ab0b1c154809c5d6acc9b5503e52169
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463259"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517239"
 ---
-# <a name="companynames"></a>会社名
+# <a name="companynames"></a>CompanyNames
 
-会社**名**要素には、会社名の配列と、関連付けられたペルソナのソース attributions の識別子が含まれています。 
+**CompanyNames 要素** には、会社名の配列と、関連付けられたペルサのソース属性の識別子が含まれる。 
   
 ```XML
 <CompanyNames>
@@ -38,13 +38,13 @@ ms.locfileid: "44463259"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[StringAttributedValue](stringattributedvalue.md) <br/> |Persona 要素に関連付けられている属性の配列のインスタンスを指定します。  <br/> |
+|[StringAttributedValue](stringattributedvalue.md) <br/> |ペルサ要素に関連付けられた属性の配列内のインスタンスを指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ユーザー](persona.md) <br/> |**Getpersona**要求によって返される一連のペルソナデータを指定します。  <br/> |
+|[ユーザー](persona.md) <br/> |**GetPersona** 要求によって返されるペルソナ データのセットを指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -58,12 +58,12 @@ ms.locfileid: "44463259"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

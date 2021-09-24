@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fedc04e0-cfd2-4652-a2a8-51de859ae847
-description: HasIrm 要素は、会話内の少なくとも1つのメッセージと現在のフォルダーが IRM で保護されたメッセージであるかどうかを指定します。
-ms.openlocfilehash: 1596610ed5f6b2bac353900624fbec9140aaa693
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: HasIrm 要素は、会話と現在のフォルダー内の少なくとも 1 つのメッセージが IRM で保護されたメッセージであるかどうかを指定します。
+ms.openlocfilehash: ef194c045bfd2b416e382c12381afd68ba56dcf3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462781"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516693"
 ---
 # <a name="hasirm"></a>HasIrm
 
-**Hasirm**要素は、会話内の少なくとも1つのメッセージと現在のフォルダーが IRM で保護されたメッセージであるかどうかを指定します。 
+**HasIrm 要素は**、会話と現在のフォルダー内の少なくとも 1 つのメッセージが IRM で保護されたメッセージであるかどうかを指定します。 
   
 ```XML
 <HasIrm> true | false </HasIrm>
@@ -38,11 +38,11 @@ ms.locfileid: "44462781"
   
 ### <a name="parent-elements"></a>親要素
 
-[会話 (ConversationType)](conversation-conversationtype.md)
+[Conversation (ConversationType)](conversation-conversationtype.md)
   
 ## <a name="text-value"></a>テキスト値
 
-スレッドに少なくとも1つのメッセージがあり、現在のフォルダーに IRM がある場合は、 **Hasirm**要素のテキスト値は**true**です。 それ以外の場合、値は**false**になります。
+HasIrm 要素の **テキスト値** は、会話内のメッセージが少なくとも 1 つ、現在のフォルダーに IRM がある場合は true です。 それ以外の場合、値は **false です**。
   
 ## <a name="remarks"></a>注釈
 
@@ -55,16 +55,16 @@ ms.locfileid: "44462781"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[会話 (ConversationType)](conversation-conversationtype.md)
+[Conversation (ConversationType)](conversation-conversationtype.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

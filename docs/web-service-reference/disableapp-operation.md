@@ -5,40 +5,40 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 211731a3-2470-49af-bda3-1ddfc15a8e46
 description: DisableApp EWS 操作に関する情報を検索します。
-ms.openlocfilehash: 8e1f3a257a70c042a01ed70da97cfa0573a2d454
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 7a4d3a13351042cc1a192388416381ebe28206bd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462067"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510156"
 ---
 # <a name="disableapp-operation"></a>DisableApp 操作
 
-**Disableapp** EWS 操作に関する情報を検索します。 
+**DisableApp** EWS 操作に関する情報を検索します。 
   
-**Disableapp**操作は、Outlook 用のメールアプリを無効にします。 
+**DisableApp 操作は**、ユーザーのメール アプリを無効Outlook。 
   
 この操作は Exchange Server 2013 で導入されました。
   
 ## <a name="using-the-disableapp-operation"></a>DisableApp 操作の使用
 
-**Disableapp**操作は、要求で2つの引数を受け取り、無効にするメールアプリと、無効にされた理由を識別します。 
+**DisableApp 操作は**、無効にするメール アプリと無効にされた理由を識別する 2 つの引数を要求で受け取ります。 
   
-### <a name="disableapp-operation-soap-headers"></a>DisableApp operation SOAP ヘッダー
+### <a name="disableapp-operation-soap-headers"></a>DisableApp 操作 SOAP ヘッダー
 
-**Disableapp**操作では、次の表に記載されている SOAP ヘッダーを使用できます。 
+**DisableApp 操作では**、次の表に示す SOAP ヘッダーを使用できます。 
   
-|**ヘッダー名**|**要素**|**説明**|
+|**ヘッダー名**|**Element**|**説明**|
 |:-----|:-----|:-----|
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは応答に適用されます。  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマ バージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは、応答に適用されます。  <br/> |
    
-## <a name="disableapp-operation-request-example-disable-a-mail-app-installed-in-a-mailbox"></a>DisableApp 操作要求の例: メールボックスにインストールされたメールアプリを無効にする
+## <a name="disableapp-operation-request-example-disable-a-mail-app-installed-in-a-mailbox"></a>DisableApp 操作要求の例: メールボックスにインストールされているメール アプリを無効にする
 
-次の**Disableapp** operation 要求の例は、メールアプリを無効にする方法を示しています。 アプリ識別子は、 [Getappmanifests 操作](getappmanifests-operation.md)の応答で返されるアプリマニフェストにあります。 
+DisableApp 操作要求の次 **の例** は、メール アプリを無効にする方法を示しています。 アプリ識別子は [、GetAppManifests](getappmanifests-operation.md) 操作応答で返されるアプリ マニフェストで確認できます。 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -65,13 +65,13 @@ ms.locfileid: "44462067"
   
 - [DisableApp](disableapp.md)
     
-- [ID (文字列)](id-string.md)
+- [ID (String)](id-string.md)
     
 - [DisableReason](disablereason.md)
     
-## <a name="successful-disableapp-operation-response"></a>正常な DisableApp 操作応答
+## <a name="successful-disableapp-operation-response"></a>DisableApp 操作の応答の成功
 
-次の例は、メールアプリを無効にするための**Disableapp**操作要求に対する正常な応答を示しています。 
+次の例は、メール アプリを無効にする **DisableApp** 操作要求に対する正常な応答を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -105,7 +105,7 @@ ms.locfileid: "44462067"
     
 ## <a name="disableapp-operation-error-response"></a>DisableApp 操作エラー応答
 
-次の例は、 **Disableapp**操作要求へのエラー応答を示しています。 これは、メールボックスにインストールされていないメールアプリを無効にする要求に対する応答です。 
+次の例は、DisableApp 操作要求に対する **エラー応答を** 示しています。 これは、メールボックスにインストールされていないメール アプリを無効にする要求に対する応答です。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -133,14 +133,14 @@ ms.locfileid: "44462067"
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-EWS で汎用的でこの操作に固有の追加のエラーコードについては、「応答」[を参照してください。](responsecode.md)
+EWS に汎用的で、この操作に固有の追加のエラー コードについては [、「ResponseCode」を参照してください](responsecode.md)。
   
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS 操作](ews-operations-in-exchange.md)   
+- [EWS 操作 (Exchange](ews-operations-in-exchange.md)   
 - [InstallApp 操作](installapp-operation.md)   
-- [アン Installapp 操作](uninstallapp-operation.md)   
-- [Getappmanifests が](getappmanifests.md)   
+- [UninstallApp 操作](uninstallapp-operation.md)   
+- [GetAppManifests](getappmanifests.md)   
 - [GetAppMarketplaceUrl 操作](getappmarketplaceurl-operation.md)   
 - [Outlook アドイン](https://msdn.microsoft.com/library/71e64bc9-e347-4f5d-8948-0a47b5dd93e6%28Office.15%29.aspx)
     

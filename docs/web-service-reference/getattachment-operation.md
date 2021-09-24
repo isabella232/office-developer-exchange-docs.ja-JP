@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetAttachment
 api_type:
 - schema
 ms.assetid: 24d10a15-b942-415e-9024-a6375708f326
-description: GetAttachment 操作は、Exchange ストア内のアイテムの既存の添付ファイルを取得するために使用されます。
-ms.openlocfilehash: ac7eafd61c62b077a8d20e5fd8d004924bf06cf1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetAttachment 操作は、ストア内のアイテムの既存の添付ファイルを取得Exchangeされます。
+ms.openlocfilehash: 44a9e1988deb513039f7700e11c645c366641519
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461290"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509938"
 ---
 # <a name="getattachment-operation"></a>GetAttachment 操作
 
-GetAttachment 操作は、Exchange ストア内のアイテムの既存の添付ファイルを取得するために使用されます。
+GetAttachment 操作は、ストア内のアイテムの既存の添付ファイルを取得Exchangeされます。
   
 ## <a name="getattachment-request-example"></a>GetAttachment 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の GetAttachment 要求の例は、添付ファイルを取得する方法を示しています。
+GetAttachment 要求の次の例は、添付ファイルを取得する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -51,14 +51,14 @@ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
 
 ### <a name="comments"></a>コメント
 
-[Attachmentshape](attachmentshape.md)要素を使用すると、どの添付ファイル情報を返すかを指定できます。 空の[Attachmentshape](attachmentshape.md)要素は有効であり、アイテムの添付ファイルの MIME コンテンツのない添付ファイル、テキストの本文の種類、および追加のプロパティを持たない添付ファイルをレンダリングします。 
+[AttachmentShape 要素](attachmentshape.md)を使用すると、返す添付ファイル情報を指定できます。 空の [AttachmentShape](attachmentshape.md) 要素は有効であり、アイテムの添付ファイル、テキスト本文の種類、追加のプロパティがない場合は、MIME コンテンツなしで添付ファイルをレンダリングします。 
   
-[AttachmentIds](attachmentids.md)コレクションを使用すると、返される1つ以上の添付ファイル識別子を指定できます。 これらの型は RequestAttachmentIdType であることに注意してください。 **createattachment**から受け取る AttachmentIds は、 **RootItemId**属性と**RootItemChangeKey**属性を削除してから、 **getattachment**に渡す必要があります。
+[AttachmentIds コレクションを使用](attachmentids.md)すると、返す 1 つ以上の添付ファイル識別子を指定できます。 これらは RequestAttachmentIdType 型なので **、CreateAttachment** から受け取る AttachmentId は **、GetAttachment** に渡す前に **RootItemId** 属性と **RootItemChangeKey** 属性を削除する必要があります。
   
 > [!NOTE]
-> 読みやすくするために、添付ファイル識別子と変更キーが短縮されています。 
+> 読みやすさを維持するために、添付ファイル識別子と変更キーが短縮されました。 
   
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 要求では、次の要素が使用されます。
   
@@ -68,13 +68,13 @@ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
     
 - [AttachmentIds](attachmentids.md)
     
-- [AttachmentId (GetAttachment と DeleteAttachment)](attachmentid-getattachment-and-deleteattachment.md)
+- [AttachmentId (GetAttachment and DeleteAttachment)](attachmentid-getattachment-and-deleteattachment.md)
     
 ## <a name="getattachment-response-example"></a>GetAttachment 応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、GetAttachment 要求に対する正常な応答を示しています。 次の使用例は、添付ファイルを取得します。
+次の例は、GetAttachment 要求に対する正常な応答を示しています。 次の使用例は、添付ファイルを返します。
   
 ### <a name="code"></a>コード
 
@@ -110,7 +110,7 @@ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
 
 ### <a name="comments"></a>コメント
 
-GetAttachment の応答メッセージには常に、完全な添付ファイルが含まれます。つまり、すべてのプロパティが常に含まれます。 添付ファイルの場合、これらのプロパティは[Name (AttachmentType)](name-attachmenttype.md)、 [ContentType](contenttype.md)、 [ContentId](contentid.md)、 [contentlocation](contentlocation.md)、および[Content](content.md)です。 アイテムの添付ファイルの場合、これらのプロパティは、GetItem 呼び出しで**allproperties**図形が使用されている場合と同様に、 [Name (attachmenttype)](name-attachmenttype.md)、 [ContentType](contenttype.md)、 [ContentId](contentid.md)、 [contentlocation](contentlocation.md) 、およびすべてのアイテムのプロパティに該当します。 [Attachmentshape](attachmentshape.md)要素が存在する場合、コンシューマーアプリケーションは、アイテムの添付ファイルに追加の拡張プロパティを要求できます。 
+GetAttachment の応答メッセージには、常に完全な添付ファイルが含まれます。つまり、すべてのプロパティが常に含まれます。 添付ファイルの場合、これらのプロパティは[Name (AttachmentType)](name-attachmenttype.md) [、ContentType、ContentId、ContentLocation、](contenttype.md)[および](contentlocation.md) [Content です](content.md)。 [](contentid.md) アイテムの添付ファイルの場合、これらのプロパティは、GetItem 呼び出しで **AllProperties** 図形が使用されている場合と同様に、Name [(AttachmentType)](name-attachmenttype.md) [、ContentType](contenttype.md) [、ContentId、ContentLocation、](contentlocation.md)およびすべてのアイテムのプロパティです。 [](contentid.md) [AttachmentShape](attachmentshape.md)要素が存在する場合、コンシューマー アプリケーションはアイテム添付ファイルの追加の拡張プロパティを要求できます。 
   
 ### <a name="successful-response-elements"></a>成功した応答要素
 
@@ -126,15 +126,15 @@ GetAttachment の応答メッセージには常に、完全な添付ファイル
     
 - [ResponseCode](responsecode.md)
     
-- [Attachments](attachments-ex15websvcsotherref.md)
+- [添付ファイル](attachments-ex15websvcsotherref.md)
     
 - [FileAttachment](fileattachment.md)
     
-- [AttachmentId (GetAttachment と DeleteAttachment)](attachmentid-getattachment-and-deleteattachment.md)
+- [AttachmentId (GetAttachment and DeleteAttachment)](attachmentid-getattachment-and-deleteattachment.md)
     
 - [Name (AttachmentType)](name-attachmenttype.md)
     
-- [Content](content.md)
+- [コンテンツ](content.md)
     
 ## <a name="see-also"></a>関連項目
 

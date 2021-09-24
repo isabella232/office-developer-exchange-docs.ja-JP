@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ServerHint
 api_type:
 - schema
 ms.assetid: 5ac60472-a565-43d1-a5fb-8be0c9511f82
-description: ServerHint 要素は、リモートサイトまたはフォレスト内のメッセージを追跡するための開始点を表します。
-ms.openlocfilehash: 76a719901f4e4d1da67ce377ab8b73e4a4592dc4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ServerHint 要素は、リモート サイトまたはフォレスト内のメッセージを追跡する開始点を表します。
+ms.openlocfilehash: 57ca0688a2af12d7325b213733d069dfd5fc6c20
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461990"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523385"
 ---
 # <a name="serverhint"></a>ServerHint
 
-**Serverhint**要素は、リモートサイトまたはフォレスト内のメッセージを追跡するための開始点を表します。 
+**ServerHint 要素** は、リモート サイトまたはフォレスト内のメッセージを追跡する開始点を表します。 
   
 ```xml
 <ServerHint/>
@@ -52,16 +52,16 @@ ms.locfileid: "44461990"
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
+この要素を記述するスキーマは、Exchange Web Services をホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -70,5 +70,5 @@ ms.locfileid: "44461990"
 [FindMessageTrackingReport 操作](findmessagetrackingreport-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

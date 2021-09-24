@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9d91aa89-9f9f-4877-846d-aaf48bbeec7c
 description: ReadFlag 要素は、フォルダー内のアイテムに設定する読み取り状態を示します。
-ms.openlocfilehash: 1d3b9f3fe199ed2e63bdb632135120a5f89f4d1f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: ac079f6adbdb2686221dd52d748b05ac4141d6c6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529897"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523651"
 ---
 # <a name="readflag"></a>ReadFlag
 
-**Readflag**要素は、フォルダー内のアイテムに設定する読み取り状態を示します。 
+**ReadFlag 要素** は、フォルダー内のアイテムに設定する読み取り状態を示します。 
   
 ```XML
 <ReadFlag>true | false</ReadFlag>
@@ -42,7 +42,7 @@ ms.locfileid: "44529897"
   
 ## <a name="text-value"></a>テキスト値
 
-**Readflag**要素のテキスト値が**true の場合**は、フォルダー内のアイテムが開封済みとしてマークされることを示します。 値が**false**の場合は、フォルダー内のアイテムが未読としてマークされることを示します。 
+**ReadFlag** 要素 **のテキスト値が true** の場合は、フォルダー内のアイテムが読み取りとしてマークされます。 false の **値は** 、フォルダー内のアイテムが未読としてマークされます。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44529897"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

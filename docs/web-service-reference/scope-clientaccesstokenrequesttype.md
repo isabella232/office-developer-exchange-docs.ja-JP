@@ -1,23 +1,23 @@
 ---
-title: 範囲 (ClientAccessTokenRequestType)
+title: Scope (ClientAccessTokenRequestType)
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0370b1c0-b7e5-46e0-ac11-3fe801709fc8
 description: Scope (ClientAccessTokenRequestType) 要素は、トークンスコープを指定します。
-ms.openlocfilehash: 99700b032e6971a403f2bc87a6c73a01e53ab2c7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 7443c80ecdad7c89238d3b9de8bbc7b45a317e22
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466949"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522657"
 ---
-# <a name="scope-clientaccesstokenrequesttype"></a>範囲 (ClientAccessTokenRequestType)
+# <a name="scope-clientaccesstokenrequesttype"></a>Scope (ClientAccessTokenRequestType)
 
-**Scope (ClientAccessTokenRequestType)** 要素は、トークンスコープを指定します。 
+Scope **(ClientAccessTokenRequestType) 要素は** 、トークンスコープを指定します。 
   
 ```XML
 <Scope/>
@@ -42,7 +42,7 @@ ms.locfileid: "44466949"
   
 ## <a name="text-value"></a>テキスト値
 
-**Scope (ClientAccessTokenRequestType)** 要素のテキスト値は、トークンのスコープです。 
+**Scope (ClientAccessTokenRequestType)** 要素のテキスト値は、トークン スコープです。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,9 +55,9 @@ ms.locfileid: "44466949"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -66,5 +66,5 @@ ms.locfileid: "44466949"
 [TokenRequest](tokenrequest.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

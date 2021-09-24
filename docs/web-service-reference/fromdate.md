@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cbb1320c-479e-4bd3-a462-4ab14c24b1c5
 description: FromDate 要素は、メッセージが送信された日付を指定します。
-ms.openlocfilehash: c08873a11915f4e82ad5b6f62423d0abdb9a429b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 1749f92e70e081c554f412f21b8ae3d8cf2db1f2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463063"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509952"
 ---
 # <a name="fromdate"></a>FromDate
 
-**FromDate**要素は、メッセージが送信された日付を指定します。 
+**FromDate 要素** は、メッセージが送信された日付を指定します。 
   
 ```XML
 <FromDate></FromDate>
@@ -40,11 +40,11 @@ ms.locfileid: "44463063"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FindMailboxStatisticsByKeywords](findmailboxstatisticsbykeywords.md) <br/> |キーワードでメールボックス統計情報を検索する要求を指定します。  <br/> |
+|[FindMailboxStatisticsByKeywords](findmailboxstatisticsbykeywords.md) <br/> |キーワードによってメールボックスの統計情報を検索する要求を指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**FromDate**要素のテキスト値は、メッセージが送信された日付と時刻です。 
+FromDate 要素の **テキスト値** は、メッセージが送信された日時です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,13 +55,13 @@ ms.locfileid: "44463063"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

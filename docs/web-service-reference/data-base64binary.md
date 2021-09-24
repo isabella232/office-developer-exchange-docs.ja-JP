@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Data
 api_type:
 - schema
 ms.assetid: 26d8c2d0-bed2-4aed-b381-20e2ace6892f
-description: Data 要素には、1つのエクスポートされたアイテムまたはメールボックスにアップロードするアイテムのデータが含まれています。
-ms.openlocfilehash: 43ee16ca7caf634756ca00a88715d9834adad92b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Data 要素には、エクスポートされた 1 つのアイテムまたはメールボックスにアップロードするアイテムのデータが含まれる。
+ms.openlocfilehash: 69e15746f17febb74a0ec2f56eef0eaa1e298015
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526971"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59535935"
 ---
 # <a name="data-base64binary"></a>Data (base64Binary)
 
-**Data**要素には、1つのエクスポートされたアイテムまたはメールボックスにアップロードするアイテムのデータが含まれています。 
+**Data 要素** には、エクスポートされた 1 つのアイテムまたはメールボックスにアップロードするアイテムのデータが含まれる。 
   
 ```XML
 <Data/>
 ```
 
-**xs: base64Binary**
+**xs:base64Binary**
 
 ## <a name="attributes-and-elements"></a>属性と要素
 
@@ -45,25 +45,25 @@ ms.locfileid: "44526971"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ExportItemsResponseMessage](exportitemsresponsemessage.md) <br/> |1つのメールボックスアイテムをエクスポートする要求の状態と結果を格納します。  <br/> |
-|[Item (UploadItemType)](item-uploaditemtype.md) <br/> |メールボックスにアップロードする単一のアイテムを表します。  <br/> |
+|[ExportItemsResponseMessage](exportitemsresponsemessage.md) <br/> |1 つのメールボックス アイテムをエクスポートする要求の状態と結果を格納します。  <br/> |
+|[Item (UploadItemType)](item-uploaditemtype.md) <br/> |メールボックスにアップロードする 1 つのアイテムを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**Data**要素には、エクスポートされたアイテムまたはメールボックスにアップロードされるアイテムのプロパティ名と値が含まれています。 
+**Data 要素** には、エクスポートされたアイテムまたはメールボックスにアップロードされるアイテムのプロパティ名と値が含まれます。 
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
+この要素を記述するスキーマは、Exchange Web Services をホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

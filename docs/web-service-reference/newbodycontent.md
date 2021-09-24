@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - NewBodyContent
 api_type:
 - schema
 ms.assetid: 0303600d-16d8-4685-88f2-980c5ca7e9a6
-description: NewBodyContent 要素は、メッセージの新しい本文の内容を表します。
-ms.openlocfilehash: dcfa927bb284ff00e510d8c7b4b31910a70b3cbb
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: NewBodyContent 要素は、メッセージの新しい本文コンテンツを表します。
+ms.openlocfilehash: 48f6a12e0492249d239196ca3be19857e34e0099
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466858"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509517"
 ---
 # <a name="newbodycontent"></a>NewBodyContent
 
-**Newbodycontent**要素は、メッセージの新しい本文の内容を表します。 
+**NewBodyContent 要素は**、メッセージの新しい本文コンテンツを表します。 
   
 ```xml
 <NewBodyContent BodyType=""/>
@@ -42,8 +42,8 @@ ms.locfileid: "44466858"
 
 |**値**|**説明**|
 |:-----|:-----|
-|**HTML** <br/> |すべての本文を HTML に変換します。  <br/> |
-|**Text** <br/> |すべての本文をテキスト形式に変換します。  <br/> |
+|**HTML** <br/> |すべてのボディを HTML に変換します。  <br/> |
+|**Text** <br/> |すべての本文をプレーン テキストに変換します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -53,32 +53,32 @@ ms.locfileid: "44466858"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ReplyToItem](replytoitem.md) <br/> |Exchange ストア内のアイテムの送信者への返信を含みます。  <br/> |
-|[Replyalltoitem と](replyalltoitem.md) <br/> |Exchange ストア内のアイテムの送信者および特定の受信者への返信を含みます。  <br/> |
-|[Forwarditem と](forwarditem.md) <br/> |受信者に転送するための Exchange ストアアイテムが保存されています。  <br/> |
-|[CancelCalendarItem](cancelcalendaritem.md) <br/> |会議の取り消しに使用される response オブジェクトを表します。  <br/> |
-|[PostReplyItem](postreplyitem.md) <br/> |投稿アイテムへの返信を含みます。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。  <br/> |
+|[ReplyToItem](replytoitem.md) <br/> |ストア内のアイテムの送信者に対する返信Exchangeします。  <br/> |
+|[ReplyAllToItem](replyalltoitem.md) <br/> |送信者への返信と、ユーザー ストア内のアイテムの識別された受信者Exchangeします。  <br/> |
+|[ForwardItem](forwarditem.md) <br/> |受信者に転送Exchangeストア アイテムを格納します。  <br/> |
+|[CancelCalendarItem](cancelcalendaritem.md) <br/> |会議のキャンセルに使用される応答オブジェクトを表します。  <br/> |
+|[PostReplyItem](postreplyitem.md) <br/> |投稿アイテムへの返信を含む。 この要素は、2007 Microsoft Exchange Server パック 1 (SP1) で導入されました。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-Text 値は、メッセージの新しい本文の内容を表します。
+テキスト値は、メッセージの新しい本文コンテンツを表します。
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Exchange サーバーの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Exchangeサーバーの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

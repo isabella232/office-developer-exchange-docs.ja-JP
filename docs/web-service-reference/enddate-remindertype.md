@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 616e9a88-afd2-4df3-aa3b-f126bdebfaec
-description: EndDate 要素は、アラームのアイテムの終了日を指定します。
-ms.openlocfilehash: 37ebb31f4ff94e7e5eeacf218c9cbccdaf4f3ace
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: EndDate 要素は、アラームの終了日を指定します。
+ms.openlocfilehash: 66c5a6b0b03ca2b240b469bd232d5b6b6487e15d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460156"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517099"
 ---
 # <a name="enddate-remindertype"></a>EndDate (ReminderType)
 
-**EndDate**要素は、アラームのアイテムの終了日を指定します。 
+**EndDate 要素** は、アラームの終了日を指定します。 
   
 ```XML
 <EndDate/>
@@ -42,7 +42,7 @@ ms.locfileid: "44460156"
   
 ## <a name="text-value"></a>テキスト値
 
-**EndDate**要素のテキスト値は、アイテムの終了日です。 
+EndDate 要素の **テキスト値** は、アイテムの終了日です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,9 +55,9 @@ ms.locfileid: "44460156"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -66,5 +66,5 @@ ms.locfileid: "44460156"
 [Reminder](reminder.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

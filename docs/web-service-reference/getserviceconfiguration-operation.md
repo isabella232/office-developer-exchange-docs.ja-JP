@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetServiceConfiguration
 api_type:
 - schema
 ms.assetid: 070cbfe5-325a-4955-8e4a-8230ea0459a7
-description: GetServiceConfiguration 操作は、指定されたサービスの種類の構成情報を取得します。 この操作は、ユニファイドメッセージング、保護ルール、およびメールヒントサービスの構成設定を返すことができます。
-ms.openlocfilehash: b8ea2cef366a52765850dddcc8c1ef1e8fa68b22
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetServiceConfiguration 操作は、指定した種類のサービスの構成情報を取得します。 この操作では、ユニファイド メッセージング、保護ルール、およびメール サービスの構成ヒントできます。
+ms.openlocfilehash: 29246e17313e4f3d9fb02532513eb3fbd033a86e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460912"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516931"
 ---
 # <a name="getserviceconfiguration-operation"></a>GetServiceConfiguration 操作
 
-**GetServiceConfiguration**操作は、指定されたサービスの種類の構成情報を取得します。 この操作は、ユニファイドメッセージング、保護ルール、およびメールヒントサービスの構成設定を返すことができます。 
+**GetServiceConfiguration 操作は**、指定した種類のサービスの構成情報を取得します。 この操作では、ユニファイド メッセージング、保護ルール、およびメール サービスの構成ヒントできます。 
   
 ## <a name="getserviceconfiguration-request-example"></a>GetServiceConfiguration 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の**GetServiceConfiguration**要求の例は、ユニファイドメッセージングサービスの構成情報を取得するための要求を形成する方法を示しています。 
+**GetServiceConfiguration** 要求の次の例は、ユニファイド メッセージング サービスの構成情報を取得する要求を形成する方法を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -51,11 +51,11 @@ ms.locfileid: "44460912"
 </soap:Envelope>
 ```
 
-## <a name="getserviceconfiguration-response-example"></a>GetServiceConfiguration response の例
+## <a name="getserviceconfiguration-response-example"></a>GetServiceConfiguration 応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **GetServiceConfiguration**要求に対する正常な応答を示しています。 
+次の例は **、GetServiceConfiguration** 要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -95,9 +95,9 @@ ms.locfileid: "44460912"
 
 ## <a name="getserviceconfiguration-error-response-example"></a>GetServiceConfiguration エラー応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **GetServiceConfiguration**要求へのエラー応答を示しています。 このエラーは、構成名が正しくないことが原因で発生しました。 
+次の例は **、GetServiceConfiguration** 要求に対するエラー応答を示しています。 このエラーは、正しくない構成名が原因で発生しました。 
   
 ### <a name="code"></a>コード
 
@@ -133,7 +133,7 @@ ms.locfileid: "44460912"
 
 
 
-[Exchange での EWS 操作](ews-operations-in-exchange.md)
+[EWS 操作 (Exchange](ews-operations-in-exchange.md)
   
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

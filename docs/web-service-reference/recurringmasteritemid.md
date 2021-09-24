@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - RecurringMasterItemId
 api_type:
 - schema
 ms.assetid: 5800b58c-f3d7-4d8f-acc0-d13e02f4e258
-description: RecurringMasterItemId 要素は、関連するオカレンスアイテムの1つの識別子を識別することによって、定期的なアイテムのマスターアイテムを識別します。
-ms.openlocfilehash: 896a9ce95d619e7bb44c8158288bc4f62ce417d9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: RecurringMasterItemId 要素は、関連するオカレンス アイテムの 1 つの識別子を識別することで、定期的なマスター アイテムを識別します。
+ms.openlocfilehash: d00794f2b5b1893e1829a3f09df9f3e88266964d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529883"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523630"
 ---
 # <a name="recurringmasteritemid"></a>RecurringMasterItemId
 
-**RecurringMasterItemId**要素は、関連するオカレンスアイテムの1つの識別子を識別することによって、定期的なアイテムのマスターアイテムを識別します。 
+**RecurringMasterItemId** 要素は、関連するオカレンス アイテムの 1 つの識別子を識別することで、定期的なマスター アイテムを識別します。 
   
 ```XML
 <RecurringMasterItemId OccurrenceId="" ChangeKey="" />
@@ -36,8 +36,8 @@ ms.locfileid: "44529883"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**OccurrenceId** <br/> |定期的なアイテムのマスターアイテムの1つの発生を識別します。 この属性は必須です。  <br/> |
-|**ChangeKey** <br/> |定期的なアイテムの1つのオカレンスの特定のバージョンを識別します。 また、定期的なマスターアイテムと単一のオカレンスに同じ変更キーが含まれているため、これらも確認されます。 この属性は省略可能です。  <br/> |
+|**OccurrenceId** <br/> |定期的なマスター アイテムの 1 回の出現を識別します。 この属性は必須です。  <br/> |
+|**ChangeKey** <br/> |定期的なマスター アイテムが 1 回出現する特定のバージョンを識別します。 また、定期的なマスター アイテムと 1 つのオカレンスに同じ変更キーが含まれるため、定期的なマスター アイテムも識別されます。 この属性は省略可能です。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -47,9 +47,9 @@ ms.locfileid: "44529883"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GlobalItemIds](globalitemids.md) <br/> |メールボックス内のすべての会話アイテムのアイテム識別子のコレクションが含まれています。  <br/> |
-|[ItemChange](itemchange.md) <br/> |アイテム識別子と、アイテムに適用する更新を含みます。 <br/> <br/> この要素の XPath 式を次に示します。 <br/> <br/>  `/UpdateItem/ItemChanges/ItemChange[i]` <br/> |
-|[ItemIds](itemids.md) <br/> | Exchange ストア内のアイテムの削除、送信、取得、移動、またはコピーに使用されるアイテム、オカレンスアイテム、定期的なマスターアイテムの一意の id が含まれています。 <br/> <br/>  この要素の XPath 式は次のとおりです。  <br/><br/>  `/DeleteItem/ItemIds` <br/>  `/SendItem/ItemIds` <br/>  `/GetItem/ItemIds` <br/>  `/MoveItem/ItemIds` <br/>  `/CopyItem//ItemIds` <br/> |
+|[GlobalItemIds](globalitemids.md) <br/> |メールボックス内のすべての会話アイテムのアイテム識別子のコレクションを格納します。  <br/> |
+|[ItemChange](itemchange.md) <br/> |アイテム識別子とアイテムに適用する更新プログラムが含まれています。 <br/> <br/> 次に、この要素の XPath 式を示します。 <br/> <br/>  `/UpdateItem/ItemChanges/ItemChange[i]` <br/> |
+|[ItemIds](itemids.md) <br/> | Exchange ストア内のアイテムの削除、送信、取得、移動、またはコピーに使用されるアイテム、オカレンス アイテム、および定期的なマスター アイテムの一意の ID をExchangeします。 <br/> <br/>  この要素の XPath 式を次に示します。  <br/><br/>  `/DeleteItem/ItemIds` <br/>  `/SendItem/ItemIds` <br/>  `/GetItem/ItemIds` <br/>  `/MoveItem/ItemIds` <br/>  `/CopyItem//ItemIds` <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -61,7 +61,7 @@ ms.locfileid: "44529883"
   
 ## <a name="example"></a>例
 
-次の例では、56lkjh6 という識別子を持つオカレンスの1つを識別することによって、定期的なマスターアイテムを識別します。
+次の例では、識別子 56lkjh6 を使用して、定期的なマスター アイテムの 1 つを識別します。
   
 ```XML
 <RecurringMasterItemId OccurrenceId="56lkjh6" />
@@ -72,9 +72,9 @@ ms.locfileid: "44529883"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

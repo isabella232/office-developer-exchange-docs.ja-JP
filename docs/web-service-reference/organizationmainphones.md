@@ -1,23 +1,23 @@
 ---
-title: 組織のメイン電話
+title: OrganizationMainPhones
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8e69ae44-0e6d-4fb8-97c6-37cf23577c38
-description: 組織の主要な電話番号の配列と、関連付けられているペルソナのソース attributions の id を指定します。
-ms.openlocfilehash: 792cd20a361d038e797e64b461c565f85cada251
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: OrganizationMainPhones 要素は、組織の主要電話番号の配列と、関連付けられたペルサのソース属性の識別子を指定します。
+ms.openlocfilehash: bdee726138ef6a433bfd0b9827f54eb6f89c1461
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462466"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59534973"
 ---
-# <a name="organizationmainphones"></a>組織のメイン電話
+# <a name="organizationmainphones"></a>OrganizationMainPhones
 
-組織**の主要**な電話番号の配列と、関連付けられているペルソナのソース attributions の id を指定します。 
+**OrganizationMainPhones** 要素は、組織の主要電話番号の配列と、関連付けられたペルサのソース属性の識別子を指定します。 
   
 ```XML
 <OrganizationMainPhones>
@@ -53,8 +53,8 @@ ms.locfileid: "44462466"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: df981e16-c8b2-416f-90dc-9732065a20bf
-description: EmailText (SetEncryptionConfigurationType) 要素は、内部使用のみを目的としています。
-ms.openlocfilehash: 38cf4082a47366a1549df31424cd4cdc189c6ae9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: EmailText (SetEncryptionConfigurationType) 要素は、内部での使用のみを目的とします。
+ms.openlocfilehash: 05e569c10769033f2a70e1bfb1d7abfe9e9098a2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460184"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517120"
 ---
 # <a name="emailtext-setencryptionconfigurationtype"></a>EmailText (SetEncryptionConfigurationType)
 
-**Emailtext (SetEncryptionConfigurationType)** 要素は、内部使用のみを目的としています。 
+**EmailText (SetEncryptionConfigurationType)** 要素は、内部での使用のみを目的とします。 
 
 ## <a name="attributes-and-elements"></a>属性と要素
 

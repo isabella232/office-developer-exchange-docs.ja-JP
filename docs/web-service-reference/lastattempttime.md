@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b4ffdf0f-1210-429d-8eea-665db2aad3bb
-description: LastAttemptTime 要素には、アイテムのインデックス作成が最後に試行された日時が含まれています。
-ms.openlocfilehash: 8ef7d8d436f7e12a5c1e6a1d0762fcf777a95d05
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: LastAttemptTime 要素には、アイテムのインデックスを作成する最後の試行が行われた日時が含まれる。
+ms.openlocfilehash: 7bc0ffa9a0b7b6fd0079ce2430689d1b5f5f2f35
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459848"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509631"
 ---
 # <a name="lastattempttime"></a>LastAttemptTime
 
-**LastAttemptTime**要素には、アイテムのインデックス作成が最後に試行された日時が含まれています。 
+**LastAttemptTime** 要素には、アイテムのインデックスを作成する最後の試行が行われた日時が含まれる。 
   
 ```XML
 <LastAttemptTime></LastAttemptTime>
@@ -42,7 +42,7 @@ ms.locfileid: "44459848"
   
 ## <a name="text-value"></a>テキスト値
 
-**LastAttemptTime**要素のテキスト値は、アイテムのインデックス作成が最後に試行された日時を表します。 
+**LastAttemptTime 要素のテキスト** 値は、アイテムのインデックスを作成する最後の試行が行われた時刻と日付を表します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44459848"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 593e0c79-9ec2-4040-a6a3-3c5c61cbdf7c
-description: NonIndexableItemStatistic 要素には、インデックスを作成できないアイテムの1つの統計情報が含まれています。
-ms.openlocfilehash: cc7bee9fd2759a16dd16538d6712e40ceb005fec
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: NonIndexableItemStatistic 要素には、インデックスを作成できないアイテムの統計が 1 つ含まれている
+ms.openlocfilehash: 93bdaad2f10adf52ef99f51106596f155af2f18c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462683"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509547"
 ---
 # <a name="nonindexableitemstatistic"></a>NonIndexableItemStatistic
 
-**Nonindexableitemstatistic**要素には、インデックスを作成できないアイテムの1つの統計情報が含まれています。 
+**NonIndexableItemStatistic** 要素には、インデックスを作成できないアイテムの統計が 1 つ含まれている 
   
 ```XML
 <NonIndexableItemStatistic>
@@ -55,8 +55,8 @@ ms.locfileid: "44462683"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |いいえ  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 

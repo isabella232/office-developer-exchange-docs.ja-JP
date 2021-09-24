@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5f24dc30-3ac2-4c82-9dfc-be9dbdb585be
 description: MailboxStat 要素は、探索検索で検索されたメールボックスの統計情報を指定します。
-ms.openlocfilehash: 417f63f5e1aa34c2157b1d5ad868461113afec7b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: d48f033df4cfec47313ce690acd19d916b963c00
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44451433"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522811"
 ---
 # <a name="mailboxstat"></a>MailboxStat
 
-**MailboxStat**要素は、探索検索で検索されたメールボックスの統計情報を指定します。 
+**MailboxStat 要素** は、探索検索で検索されたメールボックスの統計情報を指定します。 
   
 ```XML
 <MailboxStat>
@@ -40,7 +40,7 @@ ms.locfileid: "44451433"
   
 ### <a name="child-elements"></a>子要素
 
-[MailboxId](mailboxid.md)  | [DisplayName (文字列)](displayname-string.md)  | [ItemCount](itemcount.md)  | [サイズ (長い)](size-long.md)
+[MailboxId](mailboxid.md)  | [DisplayName (string)](displayname-string.md)  | [ItemCount](itemcount.md)  | [サイズ (長)](size-long.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -57,8 +57,8 @@ ms.locfileid: "44451433"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

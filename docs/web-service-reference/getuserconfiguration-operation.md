@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetUserConfiguration
 api_type:
 - schema
 ms.assetid: 71d50e3c-92bd-435f-8118-b28bb85f8138
 description: GetUserConfiguration 操作は、フォルダーからユーザー構成オブジェクトを取得します。
-ms.openlocfilehash: fb28e88d1a47b0ea8f63ed33b1efacae8538e1c8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: be6c662cf49a7c2441f94084dd909e86fe703e20
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458209"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516847"
 ---
 # <a name="getuserconfiguration-operation"></a>GetUserConfiguration 操作
 
-**Getuserconfiguration**操作は、フォルダーからユーザー構成オブジェクトを取得します。 
+**GetUserConfiguration 操作は**、フォルダーからユーザー構成オブジェクトを取得します。 
   
 ## <a name="getuserconfiguration-request-example"></a>GetUserConfiguration 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の**Getuserconfiguration**要求の例は、下書きフォルダーでユーザー構成オブジェクトを取得する要求を形成する方法を示しています。 
+**GetUserConfiguration** 要求の次の例は、下書きフォルダーでユーザー構成オブジェクトを取得する要求を形成する方法を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -54,9 +54,9 @@ ms.locfileid: "44458209"
 
 ## <a name="getuserconfiguration-response-example"></a>GetUserConfiguration 応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **Getuserconfiguration**要求に対する正常な応答を示しています。 
+次の例は **、GetUserConfiguration** 要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -110,7 +110,7 @@ ms.locfileid: "44458209"
 
 
 
-[Exchange での EWS 操作](ews-operations-in-exchange.md)
+[EWS 操作 (Exchange](ews-operations-in-exchange.md)
   
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

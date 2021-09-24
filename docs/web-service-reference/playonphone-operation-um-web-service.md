@@ -1,32 +1,32 @@
 ---
-title: PlayOnPhone 操作 (UM web サービス)
+title: PlayOnPhone 操作 (UM Web サービス)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PlayOnPhone
 api_type:
 - schema
 ms.assetid: 7d55be55-f8b6-4e96-a61e-26fa190217fd
-description: PlayOnPhone 操作は、発信呼び出しを行い、ダイヤル文字列要素で指定されている電話で指定されたメッセージを再生します。
-ms.openlocfilehash: c5ff82bcd822aa2c659d1782ea4a1349d198bc80
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: PlayOnPhone 操作は、発信呼び出しを行い、DialString 要素で指定された電話で指定されたメッセージを再生します。
+ms.openlocfilehash: 4d18727da18c36e6410c3cc6ab3bbf873993be72
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466235"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516566"
 ---
-# <a name="playonphone-operation-um-web-service"></a>PlayOnPhone 操作 (UM web サービス)
+# <a name="playonphone-operation-um-web-service"></a>PlayOnPhone 操作 (UM Web サービス)
 
-PlayOnPhone 操作は、発信呼び出しを行い、ダイヤル**文字列**要素で指定されている電話で指定されたメッセージを再生します。 
+PlayOnPhone 操作は、発信呼び出しを行い **、DialString** 要素で指定された電話で指定されたメッセージを再生します。 
   
 ## <a name="playonphone-request-example"></a>PlayOnPhone 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の PlayOnPhone 要求の例は、発信通話を行い、メッセージを再生するための要求を形成する方法を示しています。
+PlayOnPhone 要求の次の例は、送信呼び出しを行い、メッセージを再生する要求を形成する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -42,11 +42,11 @@ PlayOnPhone 操作は、発信呼び出しを行い、ダイヤル**文字列**�
 </soap:Envelope>
 ```
 
-## <a name="successful-playonphone-response-example"></a>成功した PlayOnPhone 応答の例
+## <a name="successful-playonphone-response-example"></a>PlayOnPhone 応答の成功例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の PlayOnPhone 応答の例は、PlayOnPhone 要求に対する応答を示しています。
+PlayOnPhone 応答の次の例は、PlayOnPhone 要求に対する応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -65,9 +65,9 @@ PlayOnPhone 操作は、発信呼び出しを行い、ダイヤル**文字列**�
 
 
 
-[PlayOnPhone (UM web サービス)](playonphone-um-web-service.md)
+[PlayOnPhone (UM Web サービス)](playonphone-um-web-service.md)
   
-[PlayOnPhoneResponse (UM web サービス)](playonphoneresponse-um-web-service.md)
+[PlayOnPhoneResponse (UM Web サービス)](playonphoneresponse-um-web-service.md)
   
-[Playon電話案内応答操作 (UM web サービス)](playonphonegreeting-operation-um-web-service.md)
+[PlayOnPhoneGreeting 操作 (UM Web サービス)](playonphonegreeting-operation-um-web-service.md)
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - OofState
 api_type:
 - schema
 ms.assetid: 3c486a38-06da-4382-ad20-664d067d76ac
-description: OofState 要素は、ユーザーの不在時 (OOF) の状態を取得または設定するために使用されます。
-ms.openlocfilehash: 6aef7d989ee6978019a483f2673895e68a88a7c5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: OofState 要素を使用して、ユーザーのアウト オブ Office (OOF) 状態を取得または設定します。
+ms.openlocfilehash: 4d0d893e364fc85d36e37400538a336473832efd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459736"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509538"
 ---
 # <a name="oofstate"></a>OofState
 
-**Oofstate**要素は、ユーザーの不在時 (OOF) の状態を取得または設定するために使用されます。 
+**OofState** 要素は、ユーザーの Out of the Office (OOF) 状態を取得または設定するために使用されます。 
   
 ```xml
 <OofState>Disabled or Enabled or Scheduled</OofState>
@@ -44,30 +44,30 @@ ms.locfileid: "44459736"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[UserOofSettings](useroofsettings.md) <br/> |OOF 設定を指定します。  <br/> この要素の XPath 式を次に示します。  <br/>  `/SetUserOofSettingsRequest/UserOofSettings` <br/> |
-|[OofSettings](oofsettings.md) <br/> |不在時の設定が含まれます。  <br/> この要素の XPath 式を次に示します。  <br/>  `/GetUserOofSettingsResponse/OofSettings` <br/> |
+|[UserOofSettings](useroofsettings.md) <br/> |OOF 設定を指定します。  <br/> 次に、この要素の XPath 式を示します。  <br/>  `/SetUserOofSettingsRequest/UserOofSettings` <br/> |
+|[OofSettings](oofsettings.md) <br/> |OOF 設定が含まれる。  <br/> 次に、この要素の XPath 式を示します。  <br/>  `/GetUserOofSettingsResponse/OofSettings` <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**Oofstate**要素にはテキスト値が必要です。 次の一覧に、この要素に使用できる値を示します。 
+OofState 要素にはテキスト **値が必要** です。 次の一覧には、この要素に使用できる値が含まれます。 
   
 - **Disabled**
     
-- **Enabled**
+- **Enabled (有効)**
     
 - **スケジュール済み**
     
-[**スケジュール**] の値は、[期間 (UserOofSettings)](duration-useroofsettings.md)要素で指定された期間中に OOF の状態が [**有効**] に設定されていることを示します。 
+値 Scheduled は **、期間** [(UserOofSettings)](duration-useroofsettings.md)要素によって識別される期間中に OOF の状態が [有効] に設定されています。  
   
 ## <a name="remarks"></a>注釈
 
-この要素は、SetUsersOofSettingRequest メッセージと GetUserOofSettingResponse メッセージの両方に必要です。
+この要素は、SetUsersOofSettingRequest メッセージと GetUserOofSettingResponse メッセージの両方で必要です。
   
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="example"></a>例
 
-SetUserOofSettings 要求の次の例では、 **Oofstate**を有効にします。
+SetUserOofSettings 要求の次の例では **、OofState を有効にしています**。
   
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -103,9 +103,9 @@ SetUserOofSettings 要求の次の例では、 **Oofstate**を有効にします
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

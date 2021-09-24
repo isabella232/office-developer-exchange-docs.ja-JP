@@ -1,23 +1,23 @@
 ---
-title: 場所 (ReminderMessageDataType)
+title: Location (ReminderMessageDataType)
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 173148af-5dda-4322-8d0c-da3ba3780a43
-description: Location (ReminderMessageDataType) 要素は、アラームの予定表アイテムの場所を指定します。
-ms.openlocfilehash: 16474c1b635a3e2337a89b98b6660293276774bf
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Location (ReminderMessageDataType) 要素は、アラームの場所である予定表アイテムの場所を指定します。
+ms.openlocfilehash: db6b8ab0ff5970d6d18af6c7baf4e6ba6609ccd7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44433722"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509638"
 ---
-# <a name="location-remindermessagedatatype"></a>場所 (ReminderMessageDataType)
+# <a name="location-remindermessagedatatype"></a>Location (ReminderMessageDataType)
 
-**Location (ReminderMessageDataType)** 要素は、アラームの予定表アイテムの場所を指定します。 
+Location **(ReminderMessageDataType)** 要素は、アラームの場所である予定表アイテムの場所を指定します。 
   
 ```xml
 <Location/>
@@ -42,7 +42,7 @@ ms.locfileid: "44433722"
   
 ## <a name="text-value"></a>テキスト値
 
-**Location**要素のテキスト値は、予定表アイテムの場所です。 
+Location 要素のテキスト **値** は、予定表アイテムの場所です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,9 +55,9 @@ ms.locfileid: "44433722"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -66,5 +66,5 @@ ms.locfileid: "44433722"
 [Reminder](reminder.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

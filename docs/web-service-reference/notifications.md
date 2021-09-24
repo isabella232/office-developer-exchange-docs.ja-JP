@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Notifications
 api_type:
 - schema
 ms.assetid: 153cc420-d2fe-42f1-afb2-9a31ee09a750
-description: 通知要素には、サブスクリプションに関する情報の配列と、最後の通知以降に発生したイベントが含まれます。
-ms.openlocfilehash: 88fc56ba6e672e3dea7a1d31f7cc1fda018b9a15
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Notifications 要素には、サブスクリプションと、前回の通知以降に発生したイベントに関する情報の配列が含まれる。
+ms.openlocfilehash: ab3c5bff205c450b71d772316b977040cded9ad5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462620"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59537526"
 ---
 # <a name="notifications"></a>通知
 
-**通知**要素には、サブスクリプションに関する情報の配列と、最後の通知以降に発生したイベントが含まれます。 
+**Notifications 要素** には、サブスクリプションと、前回の通知以降に発生したイベントに関する情報の配列が含まれる。 
   
 ```xml
 <Notifications>
@@ -29,7 +29,7 @@ ms.locfileid: "44462620"
 </Notifications>
 ```
 
- **非 Emptyarrayofnotificationstype**
+ **NonEmptyArrayOfNotificationsType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -42,13 +42,13 @@ ms.locfileid: "44462620"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[通知](notification-ex15websvcsotherref.md) <br/> |サブスクリプションに関する情報、および前回の通知以降に発生したイベントに関する情報が含まれます。  <br/> |
+|[通知](notification-ex15websvcsotherref.md) <br/> |サブスクリプションと、前回の通知以降に発生したイベントに関する情報が格納されます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetStreamingEventsResponseMessage](getstreamingeventsresponsemessage.md) <br/> |1つの[Getstreamingevents 操作](getstreamingevents-operation.md)要求の状態と結果を格納します。  <br/> |
+|[GetStreamingEventsResponseMessage](getstreamingeventsresponsemessage.md) <br/> |1 つの [GetStreamingEvents](getstreamingevents-operation.md) 操作要求の状態と結果を格納します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -56,16 +56,16 @@ ms.locfileid: "44462620"
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
+この要素を記述するスキーマは、Exchange Web Services をホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages と https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ。Types スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd。型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ。型スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd;Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

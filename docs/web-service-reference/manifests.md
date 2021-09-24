@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 650d9fc0-1504-4db4-95d6-d3ba86df66ca
-description: Manifest 要素には、電子メールアカウント用にインストールされている、base64 でエンコードされたアプリのマニフェストのコレクションが含まれています。
-ms.openlocfilehash: 91239e2337f7a1886d8947f558a86110755a93df
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Manifests 要素には、電子メール アカウント用にインストールされている base64 エンコードアプリ マニフェストのコレクションが含まれています。
+ms.openlocfilehash: e29a892fa69f33e9b7bb81f8abc9cc13b4649c51
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44450817"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522671"
 ---
 # <a name="manifests"></a>マニフェスト
 
-**Manifest**要素には、電子メールアカウント用にインストールされている、base64 でエンコードされたアプリのマニフェストのコレクションが含まれています。 
+**Manifests 要素** には、電子メール アカウント用にインストールされている base64 エンコードアプリ マニフェストのコレクションが含まれています。 
   
 ```XML
 <Manifests>
@@ -53,8 +53,8 @@ ms.locfileid: "44450817"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

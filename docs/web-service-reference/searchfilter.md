@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1a7ee364-b7da-4197-aab2-57134537109a
-description: SearchFilter 要素には、Getsearchablemailemailrequest から返されるメールボックスをフィルター処理するためのクエリ文字列が含まれています。
-ms.openlocfilehash: 5bc7389ecc54dd6d1c97debdb97e6fce42517ef4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SearchFilter 要素には、GetSearchableMailboxes 要求から返されるメールボックスをフィルター処理するクエリ文字列が含まれます。
+ms.openlocfilehash: 19bb3109942c9a3064cbeaae4a19380d97c94feb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467432"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509358"
 ---
 # <a name="searchfilter"></a>SearchFilter
 
-**Searchfilter**要素には、 **Getsearchablemailemailrequest**から返されるメールボックスをフィルター処理するためのクエリ文字列が含まれています。 
+**SearchFilter 要素には****、GetSearchableMailboxes** 要求から返されるメールボックスをフィルター処理するクエリ文字列が含まれます。 
   
 ```XML
 <SearchFilter></SearchFilter>
@@ -42,7 +42,7 @@ ms.locfileid: "44467432"
   
 ## <a name="text-value"></a>テキスト値
 
-**Searchfilter**要素のテキスト値は、探索検索用のメールボックスをフィルター処理するためのクエリ文字列です。 
+SearchFilter 要素の **テキスト値** は、探索検索のためにメールボックスをフィルター処理するクエリ文字列です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44467432"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

@@ -5,33 +5,33 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetItem
 api_type:
 - schema
 ms.assetid: 8265dd06-1752-4470-8074-5f0e3e970f52
-description: GetItem 操作は、Exchange ストアからタスクを取得するために使用されます。
-ms.openlocfilehash: 17a23d4c2a35761e831610f3514c980a5a67e12b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetItem 操作は、ユーザー ストアからタスクを取得Exchangeされます。
+ms.openlocfilehash: 36e7b5ecc37c05f64c3b6617f45396805be0e532
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463336"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509841"
 ---
 # <a name="getitem-operation-task"></a>GetItem 操作 (タスク)
 
-GetItem 操作は、Exchange ストアからタスクを取得するために使用されます。
+GetItem 操作は、ユーザー ストアからタスクを取得Exchangeされます。
   
 ## <a name="remarks"></a>注釈
 
-タスクの GetItem 要求の形式は、その他のアイテムの種類に対する GetItem と同じです。 唯一の違いは、応答図形内で追加のプロパティを要求できる点です。 その他のプロパティは、タスク関連のプロパティまたは拡張プロパティである必要があります。
+タスクの GetItem 要求の形式は、他のアイテムの種類の GetItem と同じです。 唯一の違いは、応答図形内で追加のプロパティを要求できる点です。 このような追加のプロパティは、タスク関連のプロパティまたは拡張プロパティである必要があります。
   
 ## <a name="task-getitem-request-example"></a>タスク GetItem 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-GetItem 要求の次の例は、タスクアイテムを取得する方法を示しています。
+GetItem 要求の次の例は、タスク アイテムを取得する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -58,9 +58,9 @@ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
 ### <a name="comments"></a>コメント
 
 > [!NOTE]
-> 読みやすくするために、アイテム識別子と変更キーが短縮されています。 
+> アイテム識別子と変更キーは、読みやすさを維持するために短縮されました。 
   
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 要求では、次の要素が使用されます。
   
@@ -74,9 +74,9 @@ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
     
 - [ItemId](itemid.md)
     
-## <a name="task-getitem-response-example"></a>タスクの GetItem 応答の例
+## <a name="task-getitem-response-example"></a>タスク GetItem 応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
 次の例は、GetItem 要求に対する正常な応答を示しています。
   
@@ -136,7 +136,7 @@ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
 ### <a name="comments"></a>コメント
 
 > [!NOTE]
-> 読みやすくするために、アイテムとフォルダーの識別子および変更キーが短縮されています。 
+> アイテムとフォルダーの識別子と変更キーは、読みやすさを維持するために短縮されました。 
   
 ### <a name="successful-response-elements"></a>成功した応答要素
 
@@ -162,7 +162,7 @@ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
     
 - [ItemClass](itemclass.md)
     
-- [件名](subject.md)
+- [[件名]](subject.md)
     
 - [Sensitivity](sensitivity.md)
     
@@ -170,7 +170,7 @@ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
     
 - [DateTimeReceived](datetimereceived.md)
     
-- [Size](size.md)
+- [サイズ](size.md)
     
 - [Importance](importance.md)
     

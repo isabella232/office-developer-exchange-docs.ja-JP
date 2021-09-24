@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8f5fcbcb-05ed-462a-99cf-a6b112a4aef6
 description: GlobalParentFolderIds 要素は、グローバル親フォルダーの識別子を指定します。
-ms.openlocfilehash: 11c520fa0f4a1ed6d6c9d694b407e39cd036b9cd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 7ab3d1ba627c5568b2c1f4579689c43c96624558
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459098"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516826"
 ---
 # <a name="globalparentfolderids"></a>GlobalParentFolderIds
 
-**GlobalParentFolderIds**要素は、グローバル親フォルダーの識別子を指定します。 
+**GlobalParentFolderIds 要素は**、グローバル親フォルダーの識別子を指定します。 
   
 ```XML
 <GlobalParentFolderIds>
@@ -26,7 +26,7 @@ ms.locfileid: "44459098"
 </GlobalParentFolderIds>
 ```
 
- **非 Emptyarrayofbasefolderidstype**
+ **NonEmptyArrayOfBaseFolderIdsType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -39,14 +39,14 @@ ms.locfileid: "44459098"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[FolderId](folderid.md) <br/> |フォルダーの識別子と変更キーが含まれています。  <br/> |
+|[FolderId](folderid.md) <br/> |フォルダーの識別子と変更キーを格納します。  <br/> |
 |[DistinguishedFolderId](distinguishedfolderid.md) <br/> |名前で参照できるフォルダーを識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[会話 (ConversationType)](conversation-conversationtype.md) <br/> |単一の会話を表します。  <br/> |
+|[Conversation (ConversationType)](conversation-conversationtype.md) <br/> |1 つの会話を表します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -60,12 +60,12 @@ ms.locfileid: "44459098"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

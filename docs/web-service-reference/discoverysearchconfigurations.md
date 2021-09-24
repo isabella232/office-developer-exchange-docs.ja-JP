@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f04b14c9-384c-4016-b113-52a49e15e73b
-description: Discoverysearchconfigurations 要素は、Discoverysearchconfigurations 要素の配列を指定します。
-ms.openlocfilehash: 6af4c8198f2ad73f8b39f9718e11b88aa8075c39
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: DiscoverySearchConfigurations 要素は、DiscoverySearchConfiguration 要素の配列を指定します。
+ms.openlocfilehash: 0bb104451d4bfe24e5e1bc9c5d2c98f226794c22
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461381"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59535534"
 ---
 # <a name="discoverysearchconfigurations"></a>DiscoverySearchConfigurations
 
-**Discoverysearchconfigurations**要素は、 **discoverysearchconfigurations**要素の配列を指定します。 
+**DiscoverySearchConfigurations 要素** は **、DiscoverySearchConfiguration** 要素の配列を指定します。 
   
 ```XML
 <DiscoverySearchConfigurations>
@@ -44,7 +44,7 @@ ms.locfileid: "44461381"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetDiscoverySearchConfigurationResponseMessage](getdiscoverysearchconfigurationresponsemessage.md) <br/> |**Getdiscoverysearchconfiguration**要求の応答メッセージを指定します。  <br/> |
+|[GetDiscoverySearchConfigurationResponseMessage](getdiscoverysearchconfigurationresponsemessage.md) <br/> |**GetDiscoverySearchConfiguration 要求の応答メッセージを指定** します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -57,11 +57,11 @@ ms.locfileid: "44461381"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

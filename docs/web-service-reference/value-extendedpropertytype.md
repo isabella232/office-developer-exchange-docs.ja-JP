@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7a210393-0e8e-4f43-9360-4512b6dcba35
-description: Value 要素は、ペルソナの拡張プロパティの配列を指定します。
-ms.openlocfilehash: 1a658a6fb2e7987a64b7a6e826bac77190964844
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Value 要素は、ペルサの拡張プロパティの配列を指定します。
+ms.openlocfilehash: 30cc8e0907eccc88c029a7eb929b34c849a2977a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467586"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510646"
 ---
 # <a name="value-extendedpropertytype"></a>Value (ExtendedPropertyType)
 
-**Value**要素は、ペルソナの拡張プロパティの配列を指定します。 
+**Value 要素** は、ペルサの拡張プロパティの配列を指定します。 
   
 ```XML
 <Value>
@@ -56,8 +56,8 @@ ms.locfileid: "44467586"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

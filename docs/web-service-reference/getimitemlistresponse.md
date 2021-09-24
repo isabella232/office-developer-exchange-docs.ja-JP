@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 00422885-0e7b-4b50-a9ca-01f24ff9858f
-description: GetImItemListResponse 要素は、GetImItemList 要求に対する応答を定義します。
-ms.openlocfilehash: e1e6e30bc1304cf4898b125d3a041c1f0a8a9ab6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetImItemListResponse 要素は、GetImItemList 要求への応答を定義します。
+ms.openlocfilehash: 68631bbcdeaec55654872376a106fb3aab397cc8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456053"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509876"
 ---
 # <a name="getimitemlistresponse"></a>GetImItemListResponse
 
-**Getimitemlistresponse**要素は、 **getimitemlist**要求に対する応答を定義します。 
+**GetImItemListResponse** 要素は **、GetImItemList 要求への応答を定義** します。 
   
 ```XML
 <GetImItemListResponse>
@@ -40,7 +40,7 @@ ms.locfileid: "44456053"
   
 ### <a name="child-elements"></a>子要素
 
-[Messagetext](messagetext.md)  | 応答[Secmode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [Imitemlist](imitemlist.md)
+[MessageText](messagetext.md)  | [ResponseCode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [ImItemList](imitemlist.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -57,8 +57,8 @@ ms.locfileid: "44456053"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

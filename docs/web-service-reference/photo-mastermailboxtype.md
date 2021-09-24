@@ -1,23 +1,23 @@
 ---
-title: 写真 (MasterMailboxType)
+title: Photo (MasterMailboxType)
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 10cdefab-2c21-4a7d-b534-e1aa1d209476
-description: Photo (MasterMailboxType) 要素は、内部使用のみを目的としています。
-ms.openlocfilehash: b088f4310ba27e6fae2db096e3bad5270bac4c9c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Photo (MasterMailboxType) 要素は、内部での使用のみを目的とします。
+ms.openlocfilehash: a277ee6ab880ffc0cbb2fc7903ec7433d0982006
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529939"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516644"
 ---
-# <a name="photo-mastermailboxtype"></a>写真 (MasterMailboxType)
+# <a name="photo-mastermailboxtype"></a>Photo (MasterMailboxType)
 
-**Photo (MasterMailboxType)** 要素は、内部使用のみを目的としています。 
+Photo **(MasterMailboxType) 要素** は、内部での使用のみを目的とします。 
 
 ## <a name="attributes-and-elements"></a>属性と要素
 

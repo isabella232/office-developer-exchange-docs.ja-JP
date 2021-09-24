@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsModerated
 api_type:
 - schema
 ms.assetid: a7562256-feb9-41a1-857e-b5d41cbed680
-description: IsModerated 要素は、受信者のメールボックスがモデレートされているかどうかを示します。
-ms.openlocfilehash: 930d5a7e09712f35d22850a93462d051a34785a1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: IsModerated 要素は、受信者のメールボックスがモデ管理されているかどうかを示します。
+ms.openlocfilehash: e06e7e01e08cb8418adafaae09cae94ceb5c3b2c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44435486"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522902"
 ---
 # <a name="ismoderated"></a>IsModerated
 
-**Ismoderated**要素は、受信者のメールボックスがモデレートされているかどうかを示します。 
+**IsModerated 要素** は、受信者のメールボックスがモデ管理されているかどうかを示します。 
   
 ```XML
 <IsModerated>true | false</IsModerated>
@@ -44,11 +44,11 @@ ms.locfileid: "44435486"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[メールヒント](mailtips.md) <br/> |さまざまな種類のメールヒントの値を表します。  <br/> |
+|[メールヒント](mailtips.md) <br/> |さまざまな種類のメール ヒントの値を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-この要素のテキスト値は、受信者のメールボックスがモデレートされている場合は**true**です。 受信者のメールボックスがモデレートされていない場合、値は**false**になります。 
+この要素のテキスト値は、 **受信者** のメールボックスがモデレドされている場合は true です。 受信者の **メールボックスがモ** デ管理されていない場合、値は false です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -59,13 +59,13 @@ ms.locfileid: "44435486"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

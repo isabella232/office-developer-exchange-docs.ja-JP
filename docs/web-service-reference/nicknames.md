@@ -1,23 +1,23 @@
 ---
-title: ニックネーム
+title: Nicknames
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: bbafce39-7fc6-4099-bc27-b40c0ad44c77
-description: ニックネーム要素は、ニックネーム値の配列と、関連付けられているペルソナのソース attributions の識別子を指定します。
-ms.openlocfilehash: c6b7de5e1c93797603a2950b4a9527c5d370f93d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Nicknames 要素は、ニックネーム値の配列と、関連付けられたペルサのソース属性の識別子を指定します。
+ms.openlocfilehash: 38ae06233a6b6f9eb07881faec1e530f5c0cb559
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457775"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59537625"
 ---
-# <a name="nicknames"></a>ニックネーム
+# <a name="nicknames"></a>Nicknames
 
-**ニックネーム**要素は、ニックネーム値の配列と、関連付けられているペルソナのソース attributions の識別子を指定します。 
+**Nicknames 要素** は、ニックネーム値の配列と、関連付けられたペルサのソース属性の識別子を指定します。 
   
 ```XML
 <Nicknames>
@@ -54,8 +54,8 @@ ms.locfileid: "44457775"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

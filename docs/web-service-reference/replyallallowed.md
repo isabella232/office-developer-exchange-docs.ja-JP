@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d22f68cf-b18b-45d0-a9ff-414b7db0e67e
-description: ReplyAllAllowed 要素は、すべての返信を権限管理データに対して許可するかどうかを指定します。
-ms.openlocfilehash: 56dfe7670ed87581999bfe0a340bcc72c99d04ea
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ReplyAllAllowed 要素は、権限管理データに対してすべての返信を許可するかどうかを指定します。
+ms.openlocfilehash: 56b383e4273ca78ee291eeb658d69873109593f3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467915"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523595"
 ---
 # <a name="replyallallowed"></a>ReplyAllAllowed
 
-**ReplyAllAllowed**要素は、すべての返信を権限管理データに対して許可するかどうかを指定します。 
+**ReplyAllAllowed 要素** は、権限管理データに対してすべての返信を許可するかどうかを指定します。 
   
 ```XML
 <ReplyAllAllowed> true | false </ReplyAllAllowed>
@@ -42,7 +42,7 @@ ms.locfileid: "44467915"
   
 ## <a name="text-value"></a>テキスト値
 
-**ReplyAllAllowed**要素のテキスト値が**true**の場合は、すべての返信が権限管理データに対して許可されていることを示します。 値が**false**の場合は、全員に返信が許可されていないことを示します。 
+**ReplyAllAllowed** 要素のテキスト値 **が true** の場合、権限管理データに対してすべての返信が許可されます。 false の **値は** 、返信のすべてが許可されていない状態を示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44467915"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

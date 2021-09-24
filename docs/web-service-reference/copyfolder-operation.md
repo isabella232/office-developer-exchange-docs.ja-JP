@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CopyFolder
 api_type:
 - schema
 ms.assetid: c7ea0d68-9793-4144-b378-d99536776db9
 description: CopyFolder 操作は、メールボックス内のフォルダーをコピーします。
-ms.openlocfilehash: 1f9a7a3f3ede2d3cf8f9d41677d8ce0487266f17
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 7bfe9c85f3782f751e23b79afe193c9369a4720c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468895"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510337"
 ---
 # <a name="copyfolder-operation"></a>CopyFolder 操作
 
@@ -25,16 +25,16 @@ CopyFolder 操作は、メールボックス内のフォルダーをコピーし
   
 ## <a name="using-the-copyfolder-operation"></a>CopyFolder 操作の使用
 
-CopyFolder 操作は、 [movefolder 操作](movefolder-operation.md)に似ています。 識別されたフォルダーをコピーし、コピーしたフォルダーの**Id**および**changekey**を返します。 
+CopyFolder 操作は [MoveFolder 操作に似ています](movefolder-operation.md)。 識別されたフォルダーをコピーし、コピーされたフォルダー **の Id** と **ChangeKey** を返します。 
   
 ## <a name="copyfolder-request-example"></a>CopyFolder 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の CopyFolder 要求の例は、フォルダーを受信トレイフォルダーにコピーする方法を示しています。
+CopyFolder 要求の次の例は、フォルダーを受信トレイ フォルダーにコピーする方法を示しています。
   
 > [!NOTE]
-> [FolderId](folderid.md)要素の**Id**属性の値は、読みやすくするために短縮されています。 
+> [FolderId](folderid.md)要素 **の Id** 属性の値が、読みやすさのために短縮されました。 
   
 ### <a name="code"></a>コード
 
@@ -58,9 +58,9 @@ CopyFolder 操作は、 [movefolder 操作](movefolder-operation.md)に似てい
 
 ### <a name="comments"></a>コメント
 
-フォルダーは、 [ToFolderId](tofolderid.md)または[FolderIds](folderids.md)要素で使用するために、 [DistinguishedFolderId](distinguishedfolderid.md)要素または[FolderId](folderid.md)要素のいずれかで識別できます。 
+フォルダーは[、ToFolderId](tofolderid.md)要素または[FolderIds](folderids.md)要素で使用するために[、DistinguishedFolderId](distinguishedfolderid.md)要素または[FolderId](folderid.md)要素のいずれかによって識別できます。 
   
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 要求では、次の要素が使用されます。
   
@@ -75,18 +75,18 @@ CopyFolder 操作は、 [movefolder 操作](movefolder-operation.md)に似てい
 - [FolderId](folderid.md)
     
 > [!NOTE]
-> この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。 
+> この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。 
   
-CopyFolder 操作の要求メッセージに関するその他のオプションについては、スキーマ階層を参照してください。 [Copyfolder](copyfolder.md)要素から開始します。 
+CopyFolder 操作の要求メッセージの他のオプションを見つけるには、スキーマ階層を確認します。 [CopyFolder 要素から開始](copyfolder.md)します。 
   
-## <a name="successful-copyfolder-response"></a>成功した CopyFolder 応答
+## <a name="successful-copyfolder-response"></a>CopyFolder 応答の成功
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
 次の例は、CopyFolder 要求に対する正常な応答を示しています。 
   
 > [!NOTE]
-> 読みやすくするために、フォルダー ID と変更キーが短縮されています。 
+> フォルダー ID と変更キーは、読みやすさを維持するために短縮されました。 
   
 ### <a name="code"></a>コード
 
@@ -120,9 +120,9 @@ CopyFolder 操作の要求メッセージに関するその他のオプション
 
 ### <a name="comment"></a>コメント
 
-応答で返される[FolderId](folderid.md)要素は、新しいフォルダーの場所にコピーされたフォルダーを表します。 
+応答 [で返される FolderId](folderid.md) 要素は、新しいフォルダーの場所にコピーされたフォルダーを表します。 
   
-### <a name="response-elements"></a>Response 要素
+### <a name="response-elements"></a>応答要素
 
 応答では、次の要素が使用されます。
   
@@ -142,13 +142,13 @@ CopyFolder 操作の要求メッセージに関するその他のオプション
     
 - [FolderId](folderid.md)
     
-CopyFolder 操作の応答メッセージに関するその他のオプションについては、スキーマ階層を参照してください。 [Copyfolderresponse](copyfolderresponse.md)要素から開始します。 
+CopyFolder 操作の応答メッセージの他のオプションを見つけるには、スキーマ階層を確認します。 [CopyFolderResponse 要素から開始](copyfolderresponse.md)します。 
   
 ## <a name="copyfolder-error-response"></a>CopyFolder エラー応答
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、CopyFolder 要求に対するエラー応答を示しています。 同じ表示名のフォルダーが既に存在するため、エラーが発生しました。
+次の例は、CopyFolder 要求に対するエラー応答を示しています。 同じ表示名を持つフォルダーが既に存在していたため、エラーが発生しました。
   
 ### <a name="code"></a>コード
 
@@ -196,10 +196,10 @@ CopyFolder 操作の応答メッセージに関するその他のオプション
     
 - [フォルダー](folders-ex15websvcsotherref.md)
     
-CopyFolder 操作のエラー応答メッセージに関するその他のオプションについては、スキーマ階層を参照してください。 [Copyfolderresponse](copyfolderresponse.md)要素から開始します。 
+CopyFolder 操作のエラー応答メッセージの他のオプションを見つけるには、スキーマ階層を参照してください。 [CopyFolderResponse 要素から開始](copyfolderresponse.md)します。 
   
 ## <a name="see-also"></a>関連項目
 
 - [MoveFolder 操作](movefolder-operation.md)
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c9778823-f290-4827-ba19-5f391ed4f877
-description: MailboxScope 要素は、会話の検索またはフェッチがプライマリメールボックス、アーカイブメールボックス、またはプライマリメールボックスとアーカイブメールボックスのいずれかにまたがる必要があるかどうかを識別します。
-ms.openlocfilehash: 92823c06d4fe186917c3cfb532eda821bd6a95a7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MailboxScope 要素は、会話の検索またはフェッチをプライマリ メールボックス、アーカイブ メールボックス、またはプライマリ メールボックスとアーカイブ メールボックスの両方にまたがるべきかどうかを識別します。
+ms.openlocfilehash: 705c72ae2aefbb16599f392eb712d080668490b0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455374"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522881"
 ---
 # <a name="mailboxscope"></a>MailboxScope
 
-**MailboxScope**要素は、会話の検索またはフェッチがプライマリメールボックス、アーカイブメールボックス、またはプライマリメールボックスとアーカイブメールボックスのいずれかにまたがる必要があるかどうかを識別します。 
+**MailboxScope 要素** は、会話の検索またはフェッチをプライマリ メールボックス、アーカイブ メールボックス、またはプライマリ メールボックスとアーカイブ メールボックスの両方にまたがるべきかどうかを識別します。 
   
 ```XML
 <MailboxScope> PrimaryOnly | ArchiveOnly | All </MailboxScope>
@@ -39,11 +39,11 @@ ms.locfileid: "44455374"
   
 ### <a name="parent-elements"></a>親要素
 
-[Findconversation](findconversation.md)  | [GetConversationItems](getconversationitems.md)  | [会話 (ConversationType)](conversation-conversationtype.md)
+[FindConversation](findconversation.md)  | [GetConversationItems](getconversationitems.md)  | [Conversation (ConversationType)](conversation-conversationtype.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**MailboxScope**要素のテキスト値は、プライマリメールボックス、アーカイブメールボックス、またはプライマリメールボックスとアーカイブメールボックスの両方で、会話内のアイテムを検索または取得するためのスコープです。 Text 値が**Primaryonly**の場合は、ユーザーのプライマリメールボックスを対象とするスコープを示します。 アーカイブのテキスト値は、ユーザーのアーカイブメールボックスを対象とするスコープ**のみ**を示します。 Text 値は、プライマリメールボックスとアーカイブメールボックスの両方をターゲットとするスコープ**を示します**。 
+**MailboxScope** 要素のテキスト値は、プライマリ メールボックス、アーカイブ メールボックス、またはプライマリ メールボックスとアーカイブ メールボックスの両方で会話内のアイテムを検索または取得するスコープです。 **PrimaryOnly のテキスト値は**、ユーザーのプライマリ メールボックスを対象とするスコープを示します。 **ArchiveOnly のテキスト値は**、ユーザーのアーカイブ メールボックスを対象とするスコープを示します。 All のテキスト **値は** 、プライマリ メールボックスとアーカイブ メールボックスの両方を対象とするスコープを示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -56,8 +56,8 @@ ms.locfileid: "44455374"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d0278642-2b15-4605-974e-325b829a0528
-description: KeywordStatisticsSearchResult 要素には、単一のキーワード検索結果が含まれています。
-ms.openlocfilehash: f433640aecb10a01c66f890bb30b7a120df3298f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: KeywordStatisticsSearchResult 要素には、1 つのキーワード検索結果が含まれる。
+ms.openlocfilehash: 21e4dfd8c30ff8340b213f6ed5c5b72bddc3fa6d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530037"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522874"
 ---
 # <a name="keywordstatisticssearchresult"></a>KeywordStatisticsSearchResult
 
-**KeywordStatisticsSearchResult**要素には、単一のキーワード検索結果が含まれています。 
+**KeywordStatisticsSearchResult** 要素には、1 つのキーワード検索結果が含まれる。 
   
 
   
@@ -40,7 +40,7 @@ ms.locfileid: "44530037"
   
 ### <a name="child-elements"></a>子要素
 
-[キーワード](keyword.md)  | [Itemhits](itemhits.md)  | [サイズ (長い)](size-long.md)
+[キーワード](keyword.md)  | [ItemHits](itemhits.md)  | [サイズ (長)](size-long.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -57,8 +57,8 @@ ms.locfileid: "44530037"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UnifiedMessagingConfiguration
 api_type:
 - schema
 ms.assetid: cbdb4268-077e-44ed-8ec2-9d759c84cc6d
-description: UnifiedMessagingConfiguration 要素には、ユニファイドメッセージングサービスのサービス構成情報が含まれています。
-ms.openlocfilehash: 3f9f4ed65721929c552615c07e2239f48ef837f3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: UnifiedMessagingConfiguration 要素には、ユニファイド メッセージング サービスのサービス構成情報が含まれている。
+ms.openlocfilehash: 861be041117a9df4329ed5b6995635aee3220003
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528693"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517498"
 ---
 # <a name="unifiedmessagingconfiguration"></a>UnifiedMessagingConfiguration
 
-**UnifiedMessagingConfiguration**要素には、ユニファイドメッセージングサービスのサービス構成情報が含まれています。 
+**UnifiedMessagingConfiguration** 要素には、ユニファイド メッセージング サービスのサービス構成情報が含まれている。 
   
 ```XML
 <UnifiedMessagingConfiguration>
@@ -44,15 +44,15 @@ ms.locfileid: "44528693"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[UmEnabled](umenabled.md) <br/> |アカウントに対してユニファイドメッセージングが有効になっているかどうかを示します。 この要素は必須です。  <br/> |
-|[PlayOnPhoneDialString (Exchange Web サービス)](playonphonedialstring-exchange-web-services.md) <br/> |電話での通話のダイヤル文字列を識別します。 この要素は必須です。  <br/> |
-|[Playon電話有効](playonphoneenabled.md) <br/> |電話での再生機能が有効になっているかどうかを示します。 この要素は必須です。  <br/> |
+|[UmEnabled](umenabled.md) <br/> |アカウントに対してユニファイド メッセージングが有効かどうかを示します。 この要素は必須です。  <br/> |
+|[PlayOnPhoneDialString (Exchange Web サービス)](playonphonedialstring-exchange-web-services.md) <br/> |Play-on-電話を識別します。 この要素は必須です。  <br/> |
+|[PlayOnPhoneEnabled](playonphoneenabled.md) <br/> |Play-on-電話機能が有効かどうかを示します。 この要素は必須です。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ServiceConfigurationResponseMessageType](serviceconfigurationresponsemessagetype.md) <br/> |サービス構成の設定が含まれます。  <br/> |
+|[ServiceConfigurationResponseMessageType](serviceconfigurationresponsemessagetype.md) <br/> |サービス構成設定が含まれる。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -67,13 +67,13 @@ ms.locfileid: "44528693"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

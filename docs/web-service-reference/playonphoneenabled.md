@@ -1,27 +1,27 @@
 ---
-title: Playon電話有効
+title: PlayOnPhoneEnabled
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PlayOnPhoneEnabled
 api_type:
 - schema
 ms.assetid: 6f800912-be4c-46f9-aa1e-dff0bbf877c5
-description: Playonphone Enabled 要素は、電話での再生機能が有効になっているかどうかを示します。
-ms.openlocfilehash: 8342e2bcc9c767903e0f6c180000a0f00eccc311
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: PlayOnPhoneEnabled 要素は、Play-on-電話機能が有効かどうかを示します。
+ms.openlocfilehash: ebbcea0d055b8cdc869f468295eb20396caa99fd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529932"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516518"
 ---
-# <a name="playonphoneenabled"></a>Playon電話有効
+# <a name="playonphoneenabled"></a>PlayOnPhoneEnabled
 
-**Playonphone enabled**要素は、電話での再生機能が有効になっているかどうかを示します。 
+**PlayOnPhoneEnabled** 要素は、Play-on-電話機能が有効かどうかを示します。 
   
 ```XML
 <PlayOnPhoneEnabled>true | false</PlayOnPhoneEnabled>
@@ -44,11 +44,11 @@ ms.locfileid: "44529932"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |ユニファイドメッセージングサービスの構成情報が含まれています。  <br/> |
+|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |ユニファイド メッセージング サービスの構成情報が含まれる。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-Phone オン電話がアカウントに対して有効になっている場合、 **Playonphone enabled**要素の値は**true**になります。それ以外の場合、値は**false**になります。
+**PlayOnPhoneEnabled** 要素は、アカウントで再生電話が有効になっている場合は true の値を持っています。それ以外の場合、値は false **です**。
   
 ## <a name="remarks"></a>注釈
 
@@ -61,13 +61,13 @@ Phone オン電話がアカウントに対して有効になっている場合�
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

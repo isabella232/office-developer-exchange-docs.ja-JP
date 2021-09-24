@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 72cec5ec-8485-431c-95b7-b9c2247669d6
 description: LegacyDN 要素は、従来の識別名でメールボックスを識別します。
-ms.openlocfilehash: b5eb23d285925f97cc25f53b56bca669bbbb5840
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: c40f76ec37407a0ac6db27bcccad0c5b9d5924b9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463238"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509623"
 ---
 # <a name="legacydn"></a>LegacyDN
 
-**LegacyDN**要素は、従来の識別名でメールボックスを識別します。 
+**LegacyDN 要素は**、従来の識別名でメールボックスを識別します。 
   
 ```XML
 <LegacyDN></LegacyDN>
@@ -39,11 +39,11 @@ ms.locfileid: "44463238"
   
 ### <a name="parent-elements"></a>親要素
 
-[メールボックス (NonEmptyArrayOfLegacyDNsType)](mailboxes-nonemptyarrayoflegacydnstype.md)
+[Mailboxes (NonEmptyArrayOfLegacyDNsType)](mailboxes-nonemptyarrayoflegacydnstype.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**LegacyDN**要素のテキスト値は、ターゲットメールボックスの従来の識別名です。 
+LegacyDN 要素の **テキスト値** は、ターゲット メールボックスの従来の識別名です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -56,8 +56,8 @@ ms.locfileid: "44463238"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

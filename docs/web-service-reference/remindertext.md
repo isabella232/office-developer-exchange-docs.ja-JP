@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4b429e55-6057-4dd7-8bb5-fa8a8c0cc223
-description: ReminderText 要素は、アラームメッセージのテキストを指定します。
-ms.openlocfilehash: 019ba9efe83b596be67a670497eaa6f8db1b8549
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ReminderText 要素は、アラーム メッセージのテキストを指定します。
+ms.openlocfilehash: 37a1a11e9df18ec5145ad37ebc5d6394a7ca1748
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458482"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523672"
 ---
 # <a name="remindertext"></a>ReminderText
 
-**ReminderText**要素は、アラームメッセージのテキストを指定します。 
+**ReminderText 要素** は、アラーム メッセージのテキストを指定します。 
   
 ```XML
 <ReminderText/>
@@ -42,7 +42,7 @@ ms.locfileid: "44458482"
   
 ## <a name="text-value"></a>テキスト値
 
-**ReminderText**要素のテキスト値は、アラームメッセージのテキストです。 
+ReminderText 要素の **テキスト値** は、アラーム メッセージのテキストです。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,9 +55,9 @@ ms.locfileid: "44458482"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -66,5 +66,5 @@ ms.locfileid: "44458482"
 [ReminderMessageData](remindermessagedata.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a0d217b6-d7c0-4b99-ada9-19c758ae4a5b
-description: OwaLink 要素は、Microsoft Outlook Web App でアイテムをプレビューするためのリンクを指定します。
-ms.openlocfilehash: 176484387d690bb8e0040507c11feffd6b4f4be5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: OwaLink 要素は、アイテムをプレビューするリンクを指定Microsoft Outlook Web App。
+ms.openlocfilehash: 38b90251cf5aa1b4d058d2be70d12f9fd4c25424
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467460"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59534906"
 ---
 # <a name="owalink"></a>OwaLink
 
-**Owalink**要素は、Microsoft Outlook Web App でアイテムをプレビューするためのリンクを指定します。 
+**OwaLink 要素は**、アイテムをプレビューするリンクを指定Microsoft Outlook Web App。 
   
 ```XML
 <OwaLink></OwaLink>
@@ -38,11 +38,11 @@ ms.locfileid: "44467460"
   
 ### <a name="parent-elements"></a>親要素
 
-[Searchプレビューアイテム](searchpreviewitem.md)
+[SearchPreviewItem](searchpreviewitem.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**Owalink**要素のテキスト値は、Outlook Web App でアイテムを表示するための URL です。 
+**OwaLink** 要素のテキスト値は、アイテムを表示する URL Outlook Web App。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44467460"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

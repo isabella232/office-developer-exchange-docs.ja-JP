@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 30369db5-4d45-40e8-bc83-3236667fc404
-description: ItemHoldPeriod 要素は、メールボックスクエリに一致するコンテンツを保持する時間の長さを指定します。
-ms.openlocfilehash: 185666b72cc96dd88605b7baa6433d070e7ebc91
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ItemHoldPeriod 要素は、メールボックス クエリに一致するコンテンツを保持する時間を指定します。
+ms.openlocfilehash: de56c410c876917bbe8d545c9ef4f38ee6948b21
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44452287"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522853"
 ---
 # <a name="itemholdperiod"></a>ItemHoldPeriod
 
-**ItemHoldPeriod**要素は、メールボックスクエリに一致するコンテンツを保持する時間の長さを指定します。 
+**ItemHoldPeriod** 要素は、メールボックス クエリに一致するコンテンツを保持する時間を指定します。 
   
 ```XML
 <ItemHoldPeriod/>
@@ -42,7 +42,7 @@ ms.locfileid: "44452287"
   
 ## <a name="text-value"></a>テキスト値
 
-テキスト値には、"無制限" または任意の[Timespan](https://msdn.microsoft.com/library/1ecy8h51%28v=vs.110%29.aspx)値の文字列値を指定できます。 
+テキスト値には、"Unlimited" または任意の Timespan 値の [文字列値を指定](https://msdn.microsoft.com/library/1ecy8h51%28v=vs.110%29.aspx) できます。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,9 +55,9 @@ ms.locfileid: "44452287"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -66,5 +66,5 @@ ms.locfileid: "44452287"
 [SetHoldOnMailboxes](setholdonmailboxes.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

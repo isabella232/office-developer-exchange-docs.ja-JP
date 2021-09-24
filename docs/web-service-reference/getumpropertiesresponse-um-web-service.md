@@ -1,28 +1,28 @@
 ---
-title: GetUMPropertiesResponse (UM web サービス)
+title: GetUMPropertiesResponse (UM Web サービス)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetUMPropertiesResponse
 api_type:
 - schema
 ms.assetid: fcd93ce5-7403-46a9-b46e-56d2ebdd2f79
-description: GetUMPropertiesResponse 要素は、GetUMProperties 操作 (UM web サービス) 要求への応答を定義します。
-ms.openlocfilehash: 3247489a305c694c10764d7a0c6f02b1fad51ebf
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetUMPropertiesResponse 要素は、GetUMProperties 操作 (UM Web サービス) 要求への応答を定義します。
+ms.openlocfilehash: 97c3850d46369d4ab533629a8b24e199db3dd44a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459126"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522965"
 ---
-# <a name="getumpropertiesresponse-um-web-service"></a>GetUMPropertiesResponse (UM web サービス)
+# <a name="getumpropertiesresponse-um-web-service"></a>GetUMPropertiesResponse (UM Web サービス)
 
-**Getumpropertiesresponse**要素は、 [getumproperties 操作 (UM web サービス)](getumproperties-operation-um-web-service.md)要求への応答を定義します。 
+**GetUMPropertiesResponse** 要素は [、GetUMProperties 操作 (UM Web サービス)](getumproperties-operation-um-web-service.md)要求への応答を定義します。 
   
-[GetUMPropertiesResponse (UM web サービス)](getumpropertiesresponse-um-web-service.md)
+[GetUMPropertiesResponse (UM Web サービス)](getumpropertiesresponse-um-web-service.md)
   
 ```xml
 <GetUMPropertiesResponse>
@@ -47,10 +47,10 @@ ms.locfileid: "44459126"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[MissedCallNotificationEnabled (UM web サービス)](missedcallnotificationenabled-um-web-service.md) <br/> |不在着信通知を有効にするかどうかを示します。  <br/> |
-|[PlayOnPhoneDialString (UM web サービス)](playonphonedialstring-um-web-service.md) <br/> |[Playonphone 操作 (um web サービス)](playonphone-operation-um-web-service.md)および[Playonphone 案内応答操作 (um web サービス)](playonphonegreeting-operation-um-web-service.md)に使用する既定のダイヤル文字列が含まれています。  <br/> |
-|[受付電話番号 (UM web サービス)](telephoneaccessnumbers-um-web-service.md) <br/> |ユーザーが電話でユニファイドメッセージングにアクセスする際に使用できる電話番号の一覧が含まれています。  <br/> |
-|[受付電話 Accessfolderemail (UM web サービス)](telephoneaccessfolderemail-um-web-service.md) <br/> |ユニファイドメッセージングが電話でメッセージを読み取る電子メールフォルダーの識別子が含まれています。  <br/> |
+|[MissedCallNotificationEnabled (UM Web サービス)](missedcallnotificationenabled-um-web-service.md) <br/> |欠けている通話通知が有効かどうかを示します。  <br/> |
+|[PlayOnPhoneDialString (UM Web サービス)](playonphonedialstring-um-web-service.md) <br/> |[PlayOnPhone](playonphone-operation-um-web-service.md)操作 (UM Web サービス) および[PlayOnPhoneGreeting](playonphonegreeting-operation-um-web-service.md)操作 (UM Web サービス) に使用する既定のダイヤル文字列が含まれます。  <br/> |
+|[TelephoneAccessNumbers (UM Web サービス)](telephoneaccessnumbers-um-web-service.md) <br/> |ユーザーが電話を介してユニファイド メッセージングにアクセスするために使用できる電話番号の一覧を格納します。  <br/> |
+|[TelephoneAccessFolderEmail (UM Web サービス)](telephoneaccessfolderemail-um-web-service.md) <br/> |ユニファイド メッセージングが電話でメッセージを読み取る電子メール フォルダーの識別子を格納します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -66,12 +66,12 @@ ms.locfileid: "44459126"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |スキーマ名  <br/> |メッセージ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[GetUMProperties 操作 (UM web サービス)](getumproperties-operation-um-web-service.md)
+[GetUMProperties 操作 (UM Web サービス)](getumproperties-operation-um-web-service.md)
 

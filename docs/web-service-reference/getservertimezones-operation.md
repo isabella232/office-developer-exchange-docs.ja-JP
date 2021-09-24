@@ -5,39 +5,39 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetServerTimeZones
 api_type:
 - schema
 ms.assetid: 680173e1-e916-466b-b573-5a3182316345
-description: GetServerTimeZones 操作は、Exchange サーバーで使用可能なタイムゾーン定義からの情報を返します。
-ms.openlocfilehash: 1afe7fe13501af4a14f72c731703fe41e1f33049
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetServerTimeZones 操作は、サーバー上で使用可能なタイム ゾーン定義から情報をExchangeします。
+ms.openlocfilehash: f46222251729d5e82042f267d4b6293afb16de00
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460541"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516952"
 ---
 # <a name="getservertimezones-operation"></a>GetServerTimeZones 操作
 
-**GetServerTimeZones**操作は、Exchange サーバーで使用可能なタイムゾーン定義からの情報を返します。 
+**GetServerTimeZones** 操作は、サーバー上で使用可能なタイム ゾーン定義から情報をExchangeします。 
   
 ## <a name="soap-headers"></a>SOAP ヘッダー
 
-**GetServerTimeZones**操作では、次の表に記載されている SOAP ヘッダーを使用できます。 
+**GetServerTimeZones** 操作では、次の表に示す SOAP ヘッダーを使用できます。 
   
-|**Header**|**要素**|**説明**|
+|**Header**|**Element**|**説明**|
 |:-----|:-----|:-----|
-|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |メールボックスへのアクセスに使用する RFC3066 カルチャを指定します。  <br/> |
-|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。  <br/> |
+|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |メールボックスへのアクセスに使用する RFC3066 カルチャを識別します。  <br/> |
+|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマ バージョンを識別します。  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。  <br/> |
    
 ## <a name="getservertimezones-request-examples"></a>GetServerTimeZones 要求の例
 
-### <a name="getting-the-name-and-identifier-of-each-time-zone"></a>各タイムゾーンの名前と識別子を取得する
+### <a name="getting-the-name-and-identifier-of-each-time-zone"></a>各タイム ゾーンの名前と識別子を取得する
 
-次のコード例は、東部標準時と太平洋標準時のタイムゾーンの名前と識別子を取得する方法を示しています。
+次のコード例は、東部標準時と太平洋標準時のタイム ゾーンの名前と識別子を取得する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -63,11 +63,11 @@ ms.locfileid: "44460541"
 
 ### <a name="comments"></a>コメント
 
-各[Id (TimeZone)](id-timezone.md)要素には、要求されているタイムゾーン定義の識別子が含まれています。 すべてのタイムゾーンに関する情報を要求するには、要求から[Ids](ids.md)要素を省略します。 
+各 [Id (TimeZone)](id-timezone.md) 要素には、要求されているタイム ゾーン定義の識別子が含まれる。 すべてのタイム ゾーンの情報を要求するには、 [要求から Ids](ids.md) 要素を省略します。 
   
-### <a name="getting-the-full-definition-of-each-time-zone"></a>各タイムゾーンの完全な定義を取得する
+### <a name="getting-the-full-definition-of-each-time-zone"></a>各タイム ゾーンの完全な定義を取得する
 
-次のコード例は、東部標準時タイムゾーンの全タイムゾーン定義を取得する方法を示しています。
+次のコード例は、東部標準時ゾーンの完全なタイム ゾーン定義を取得する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -92,13 +92,13 @@ ms.locfileid: "44460541"
 
 ### <a name="comments"></a>コメント
 
-各[Id (TimeZone)](id-timezone.md)要素には、要求されているタイムゾーン定義の識別子が含まれています。 すべてのタイムゾーンに関する情報を要求するには、要求から[Ids](ids.md)要素を省略します。 
+各 [Id (TimeZone)](id-timezone.md) 要素には、要求されているタイム ゾーン定義の識別子が含まれる。 すべてのタイム ゾーンの情報を要求するには、 [要求から Ids](ids.md) 要素を省略します。 
   
 ## <a name="getservertimezones-response-examples"></a>GetServerTimeZones 応答の例
 
-### <a name="receiving-the-time-zone-name-and-identifier-only"></a>タイムゾーンの名前と識別子のみを受信する
+### <a name="receiving-the-time-zone-name-and-identifier-only"></a>タイム ゾーン名と識別子のみ受け取る
 
-**GetServerTimeZones** response の次の例は、 **ReturnFullTimeZoneData**属性が**false**に設定されている**GetServerTimeZones**要求に対する正常な応答を示しています。 応答には、東部標準時と太平洋標準時のタイムゾーンの名前と識別子が含まれます。
+**GetServerTimeZones** 応答の次の例は **、ReturnFullTimeZoneData** 属性が false に設定された **GetServerTimeZones** 要求に対する正常な応答を示 **しています**。 応答には、東部標準時と太平洋標準時のタイム ゾーンの名前と識別子が含まれる。
   
 ### <a name="code"></a>コード
 
@@ -132,9 +132,9 @@ ms.locfileid: "44460541"
 </soap:Envelope>
 ```
 
-### <a name="receiving-a-full-time-zone-definition"></a>完全なタイムゾーン定義を受信する
+### <a name="receiving-a-full-time-zone-definition"></a>フル タイム ゾーン定義の受信
 
-**GetServerTimeZones** response の次の例は、 **ReturnFullTimeZoneData**属性が**true**に設定されている**GetServerTimeZones**要求に対する正常な応答を示しています。 応答には、東部標準時 (東部標準時) タイムゾーンの完全なタイムゾーン定義が含まれています。
+**GetServerTimeZones** 応答の次の例は **、ReturnFullTimeZoneData** 属性が true に設定された **GetServerTimeZones** 要求に対する正常な応答を示 **しています**。 応答には、東部標準時のタイム ゾーンの完全なタイム ゾーン定義が含まれる。
   
 ### <a name="code"></a>コード
 
@@ -228,7 +228,7 @@ ms.locfileid: "44460541"
  **GetServerTimeZonesType**
 
 
-[Exchange での EWS 操作](ews-operations-in-exchange.md)
+[EWS 操作 (Exchange](ews-operations-in-exchange.md)
   
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

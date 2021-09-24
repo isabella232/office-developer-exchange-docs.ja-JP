@@ -1,23 +1,23 @@
 ---
-title: WeddingAnniversaries 日
+title: WeddingAnniversaries
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9e1388cc-ddc4-42f7-889b-17d781e80ace
-description: WeddingAnniversaries 日要素は、文字列として格納される結婚記念日の配列と、関連するペルソナのソース attributions の識別子を指定します。
-ms.openlocfilehash: 0aa55af7a546a7a403a75e2dabb753bb8d76ece7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: WeddingAnniversaries 要素は、結婚記念日の日付の配列を指定し、文字列として格納され、関連付けられたペルサのソース属性の識別子を指定します。
+ms.openlocfilehash: 254bd2dcb95bed66f39edb20e065d55d6691034d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464883"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517260"
 ---
-# <a name="weddinganniversaries"></a>WeddingAnniversaries 日
+# <a name="weddinganniversaries"></a>WeddingAnniversaries
 
-**Weddinganniversaries**日要素は、文字列として格納される結婚記念日の配列と、関連するペルソナのソース attributions の識別子を指定します。 
+**WeddingAnniversaries** 要素は、結婚記念日の日付の配列を指定し、文字列として格納され、関連付けられたペルサのソース属性の識別子を指定します。 
   
 ```XML
 <WeddingAnniversaries>
@@ -53,8 +53,8 @@ ms.locfileid: "44464883"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

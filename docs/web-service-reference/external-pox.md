@@ -1,32 +1,32 @@
 ---
-title: 外部 (POX)
+title: External (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8eed1f79-6eb3-4a88-80fb-d4edf9f34fda
-description: External 要素には、クライアントが組織のネットワークの外部から Exchange に接続するために使用できる Url のコレクションが含まれています。
-ms.openlocfilehash: 45d7e72c5a43c5c468c1edd303a5e5ea8c2cb62e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: External 要素には、クライアントが組織のネットワークの外部Exchangeに接続するために使用できる URL のコレクションが含まれる。
+ms.openlocfilehash: 0e7e92029a01a25d5017d3b5199a7899403c975f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457971"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510100"
 ---
-# <a name="external-pox"></a>外部 (POX)
+# <a name="external-pox"></a>External (POX)
 
-**External**要素には、クライアントが組織のネットワークの外部から Exchange に接続するために使用できる url のコレクションが含まれています。 
+**External 要素** には、クライアントが組織のネットワークの外部からExchangeに接続するために使用できる URL のコレクションが含まれる。 
   
-[自動検出 (POX)](autodiscover-pox.md)
+[AutoDiscover (POX)](autodiscover-pox.md)
   
-[応答 (POX)](response-pox.md)
+[Response (POX)](response-pox.md)
   
-[アカウント (POX)](account-pox.md)
+[Account (POX)](account-pox.md)
   
-[プロトコル (POX)](protocol-pox.md)
+[Protocol (POX)](protocol-pox.md)
   
-[外部 (POX)](external-pox.md)
+[External (POX)](external-pox.md)
   
 ```XML
 <External>
@@ -51,22 +51,22 @@ ms.locfileid: "44457971"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[OWAUrl (POX)](owaurl-pox.md) <br/> |Outlook Web Access をホストするクライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行している特定のコンピューターにアクセスするために使用される URL と認証スキーマについて説明します。  <br/> |
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターにクライアントを接続するための仕様が含まれています。 この**プロトコル**要素には、2つの子要素 (接続プロトコルを指定する[Type (POX)](type-pox.md)要素と、可用性 web サービスの EWS エンドポイントを指定する[asurl (POX)](asurl-pox.md)要素のみが含まれます。  <br/> |
+|[OWAUrl (POX)](owaurl-pox.md) <br/> |Web Access をホストするクライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server を実行している特定のコンピューターにアクセスするために使用される URL と認証スキーマOutlookします。  <br/> |
+|[Protocol (POX)](protocol-pox.md) <br/> |クライアント アクセス サーバーの役割がインストールされているクライアントを実行しているコンピューター Microsoft Exchange Server接続するための仕様が含まれている。 この **Protocol** 要素には、接続プロトコルを指定する [Type (POX)](type-pox.md) 要素と、可用性 Web サービスの EWS エンドポイントを指定する [ASUrl (POX)](asurl-pox.md) 要素の 2 つの子要素があります。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
+|[Protocol (POX)](protocol-pox.md) <br/> |クライアント アクセス サーバーの役割がインストールされているクライアントを実行しているコンピューター Microsoft Exchange Server接続するための仕様が含まれている。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-**External**要素は、 **Protocol**要素のオプションの子要素です。 
+**External 要素** は、Protocol 要素の省略可能な子 **要素** です。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+[POX 自動検出 XML 要素のExchange](pox-autodiscover-xml-elements-for-exchange.md)
 

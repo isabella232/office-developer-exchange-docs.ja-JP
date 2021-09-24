@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: d49329d7-e095-474f-8391-c3d61cac2e95
-description: WebClientUrlCollectionSetting (SOAP) 要素は、Exchange Web クライアントの Url のコレクションであるユーザー設定を表します。
-ms.openlocfilehash: 5cfa82517ebfa7f6c019ad179fb8b2def8a35265
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: WebClientUrlCollectionSetting (SOAP) 要素は、Web クライアント URL のコレクションであるExchangeを表します。
+ms.openlocfilehash: 622c3fe49a89eb2288d3bd56a6a452e656a25e9b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464967"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517267"
 ---
 # <a name="webclienturlcollectionsetting-soap"></a>WebClientUrlCollectionSetting (SOAP)
 
-[Webclienturlcollectionsetting (SOAP)](webclienturlcollectionsetting-soap.md)要素は、Exchange Web クライアントの url のコレクションであるユーザー設定を表します。 
+[WebClientUrlCollectionSetting (SOAP)](webclienturlcollectionsetting-soap.md)要素は、Web クライアント URL のコレクションであるユーザー Exchangeを表します。 
   
 [WebClientUrlCollectionSetting (SOAP)](webclienturlcollectionsetting-soap.md)
   
@@ -41,7 +41,7 @@ ms.locfileid: "44464967"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[WebClientUrl (SOAP)](webclienturl-soap.md) <br/> |Exchange Web クライアントの URL を表します。  <br/> |
+|[WebClientUrl (SOAP)](webclienturl-soap.md) <br/> |Web クライアントの URL をExchangeします。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -57,7 +57,7 @@ ms.locfileid: "44464967"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
 |空に設定可能  <br/> |はい  <br/> |
    
 

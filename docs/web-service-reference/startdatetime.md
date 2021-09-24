@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - StartDateTime
 api_type:
 - schema
 ms.assetid: 6fd41b7b-6c83-43b6-8b16-0bdb3d173d73
 description: StartDateTime 要素は、ルールまたは検索の開始日時を指定します。
-ms.openlocfilehash: 28b78fad87abb1148cfe49fee4f9bb98f822eae5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 524858a0b33a25defeae339f7780a7b47c4f21cf
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462844"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517701"
 ---
 # <a name="startdatetime"></a>StartDateTime
 
-**StartDateTime**要素は、ルールまたは検索の開始日時を指定します。 
+**StartDateTime** 要素は、ルールまたは検索の開始日時を指定します。 
   
 ```XML
 <StartDate/>
@@ -46,7 +46,7 @@ ms.locfileid: "44462844"
 |**要素**|**説明**|
 |:-----|:-----|
 |[FindMessageTrackingReport](findmessagetrackingreport.md) <br/> |検索するメッセージの種類の条件を指定します。  <br/> |
-|[WithinDateRange](withindaterange.md) <br/> |条件または例外を適用するために、受信メッセージが受信される必要がある日付範囲を指定します。  <br/> |
+|[WithinDateRange](withindaterange.md) <br/> |条件または例外を適用するために受信メッセージを受信する必要がある日付範囲を指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -61,11 +61,11 @@ ms.locfileid: "44462844"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

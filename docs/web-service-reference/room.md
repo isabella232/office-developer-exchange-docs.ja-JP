@@ -5,27 +5,27 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Room
 api_type:
 - schema
 ms.assetid: a2cde8b8-2d31-4ebf-8171-f4dfd650d079
 description: Room 要素は、会議室を表します。
-ms.openlocfilehash: 3d5d587853e435016fdff6b9d268892a35fea825
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 062b89652ba809f245c1ac3ccee1005cbf0eabbd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460534"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523539"
 ---
 # <a name="room"></a>Room
 
-**Room**要素は、会議室を表します。 
+**Room 要素** は、会議室を表します。 
   
-[ルーム](rooms.md)
+[Rooms](rooms.md)
   
-[作る](room.md)
+[Room](room.md)
   
 ```XML
 <Room>
@@ -46,13 +46,13 @@ ms.locfileid: "44460534"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Id (EmailAddressType)](id-emailaddresstype.md) <br/> |会議室を表す電子メールアドレスと表示名を含む識別子。  <br/> |
+|[Id (EmailAddressType)](id-emailaddresstype.md) <br/> |会議室を表す電子メール アドレスと表示名を含む識別子。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ルーム](rooms.md) <br/> |同じ建物内にあるなど、共通の機能に関連付けられている会議室のリストを定義します。  <br/> |
+|[Rooms](rooms.md) <br/> |共通機能に関連付けられた会議室の一覧 (同じ建物内など) を定義します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -63,9 +63,9 @@ ms.locfileid: "44460534"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -74,5 +74,5 @@ ms.locfileid: "44460534"
 [GetRooms 操作](getrooms-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

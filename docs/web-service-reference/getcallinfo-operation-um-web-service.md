@@ -1,32 +1,32 @@
 ---
-title: GetCallInfo 操作 (UM web サービス)
+title: GetCallInfo 操作 (UM Web サービス)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetCallInfo
 api_type:
 - schema
 ms.assetid: 6bccd418-caf7-4eb9-8a6f-410e56a635c3
-description: GetCallInfo 操作は、CallId (UM web サービス) によって指定された発信呼び出しの状態を返します。
-ms.openlocfilehash: 6b5664dfe16f9c74cc7175098145141b815a6355
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetCallInfo 操作は、CallId (UM Web サービス) で指定された発信呼び出しの状態を返します。
+ms.openlocfilehash: 0563190ab267b3a48d7ccacbdb1e136c6e3da0b4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461241"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509945"
 ---
-# <a name="getcallinfo-operation-um-web-service"></a>GetCallInfo 操作 (UM web サービス)
+# <a name="getcallinfo-operation-um-web-service"></a>GetCallInfo 操作 (UM Web サービス)
 
-GetCallInfo 操作は、 [Callid (UM web サービス)](callid-um-web-service.md)によって指定された発信呼び出しの状態を返します。
+GetCallInfo 操作は [、CallId (UM Web サービス)](callid-um-web-service.md)で指定された発信呼び出しの状態を返します。
   
 ## <a name="getcallinfo-request-example"></a>GetCallInfo 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の GetCallInfo 要求の例は、指定された発信呼び出しに関する情報を取得するための要求を形成する方法を示しています。
+GetCallInfo 要求の次の例は、指定された発信呼び出しに関する情報を取得する要求を形成する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -41,9 +41,9 @@ GetCallInfo 操作は、 [Callid (UM web サービス)](callid-um-web-service.md
 </soap:Envelope>
 ```
 
-## <a name="successful-getcallinfo-response-example"></a>Successful GetCallInfo response の例
+## <a name="successful-getcallinfo-response-example"></a>GetCallInfo 応答の成功例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
 GetCallInfo 応答の次の例は、GetCallInfo 要求に対する応答を示しています。
   
@@ -67,13 +67,13 @@ GetCallInfo 応答の次の例は、GetCallInfo 要求に対する応答を示�
 
 
 
-[GetCallInfo (UM web サービス)](getcallinfo-um-web-service.md)
+[GetCallInfo (UM Web サービス)](getcallinfo-um-web-service.md)
   
-[GetCallInfoResponse (UM web サービス)](getcallinforesponse-um-web-service.md)
+[GetCallInfoResponse (UM Web サービス)](getcallinforesponse-um-web-service.md)
   
-[CallId (UM web サービス)](callid-um-web-service.md)
+[CallId (UM Web サービス)](callid-um-web-service.md)
   
-[CallState (UM web サービス)](callstate-um-web-service.md)
+[CallState (UM Web サービス)](callstate-um-web-service.md)
   
-[EventCause (UM web サービス)](eventcause-um-web-service.md)
+[EventCause (UM Web サービス)](eventcause-um-web-service.md)
 

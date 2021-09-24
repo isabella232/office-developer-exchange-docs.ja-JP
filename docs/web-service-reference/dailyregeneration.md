@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DailyRegeneration
 api_type:
 - schema
 ms.assetid: cafb57e4-c518-45e0-b565-2babd0dab1df
-description: DailyRegeneration 要素は、タスクが再生成される頻度 (日単位) を表します。
-ms.openlocfilehash: 518e4666031131f4a5fc80cc72c28a2110b468c5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: DailyRegeneration 要素は、タスクが再生成される頻度を日数で表します。
+ms.openlocfilehash: 7fbcb05e45a8700a3d23d1e8ed0d6f9e2ba75db2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462165"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59535949"
 ---
 # <a name="dailyregeneration"></a>DailyRegeneration
 
-**DailyRegeneration**要素は、タスクが再生成される頻度 (日単位) を表します。 
+**DailyRegeneration 要素** は、タスクが再生成される頻度を日数で表します。 
   
 ```xml
 <DailyRegeneration>
@@ -43,28 +43,28 @@ ms.locfileid: "44462165"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[間隔](interval.md) <br/> |連続する2つのアイテム間の間隔を日単位で定義します。 この値は、1 ~ 999 の範囲にする必要があります。  <br/> |
+|[間隔](interval.md) <br/> |2 つの連続する定期的なアイテム間の間隔を日数で定義します。 値は 1 ~ 999 の範囲である必要があります。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[定期的なアイテム (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |定期的なタスクの定期的なアイテムの情報が含まれています。  <br/> |
+|[Recurrence (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |定期的なタスクの定期的な情報が含まれています。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

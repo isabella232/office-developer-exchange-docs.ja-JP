@@ -1,23 +1,23 @@
 ---
-title: 数値
+title: 番号
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 19866c08-d670-4791-bcda-95eed0b73a7c
-description: Number 要素は、電話番号を指定します。
-ms.openlocfilehash: d54e76d64061aeefc4c2bfa4e30b0b6fff6d4f6c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Number 要素は電話番号を指定します。
+ms.openlocfilehash: 7fac124e114119572c17a702e1140ab004d4e630
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462606"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59537465"
 ---
-# <a name="number"></a>数値
+# <a name="number"></a>番号
 
-**Number**要素は、電話番号を指定します。 
+**Number 要素** は電話番号を指定します。 
   
 ```XML
 <Number></Number>
@@ -42,7 +42,7 @@ ms.locfileid: "44462606"
   
 ## <a name="text-value"></a>テキスト値
 
-**Number**要素のテキスト値は、文字列形式で表される電話番号です。 
+Number 要素のテキスト **値** は、文字列形式で表される電話番号です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44462606"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

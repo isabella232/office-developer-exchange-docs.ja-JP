@@ -1,27 +1,27 @@
 ---
-title: ForwardAsAttachmentToRecipients 添付ファイル
+title: ForwardAsAttachmentToRecipients
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ForwardAsAttachmentToRecipients
 api_type:
 - schema
 ms.assetid: 8649ea14-672f-43c9-b10a-a2b02efd5867
-description: Forwardasattachmenttorattachmentpiattachment要素は、メッセージが添付ファイルとして転送される電子メールアドレスを示します。
-ms.openlocfilehash: bf8c3563460eea811602074bf16f9253b4610832
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ForwardAsAttachmentToRecipients 要素は、添付ファイルとして転送するメッセージの電子メール アドレスを示します。
+ms.openlocfilehash: 3063ffd9080e29020520095d71b354f32ec63a54
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44453337"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509931"
 ---
-# <a name="forwardasattachmenttorecipients"></a>ForwardAsAttachmentToRecipients 添付ファイル
+# <a name="forwardasattachmenttorecipients"></a>ForwardAsAttachmentToRecipients
 
-**Forwardasattachmenttorattachmentpiattachment要素**は、メッセージが添付ファイルとして転送される電子メールアドレスを示します。 
+**ForwardAsAttachmentToRecipients** 要素は、添付ファイルとして転送するメッセージの電子メール アドレスを示します。 
   
 ```XML
 <ForwardAsAttachmentToRecipients>
@@ -42,13 +42,13 @@ ms.locfileid: "44453337"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Address (EmailAddressType)](address-emailaddresstype.md) <br/> |完全に解決された電子メールアドレスを表します。  <br/> |
+|[Address (EmailAddressType)](address-emailaddresstype.md) <br/> |完全に解決された電子メール アドレスを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Actions](actions.md) <br/> |条件が満たされたときに、メッセージに対して実行できるアクションのセットを表します。  <br/> |
+|[Actions](actions.md) <br/> |条件が満たされた場合にメッセージに対して実行できる一連のアクションを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -63,13 +63,13 @@ ms.locfileid: "44453337"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

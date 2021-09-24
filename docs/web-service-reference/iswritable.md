@@ -1,23 +1,23 @@
 ---
-title: IsWritable 可能
+title: IsWritable
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d4af8eee-7001-4a8e-b9bd-d14882f2406b
-description: IsWritable 可能要素は、基になる連絡先または Active Directory 受信者に書き込むことができるかどうかを指定します。
-ms.openlocfilehash: 96075adc1772027456f8829eee43bdc734644c09
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: IsWritable 要素は、基になる連絡先または Active Directory 受信者を書き込むかどうかを指定します。
+ms.openlocfilehash: 2663e18f2589516f304930b86a717455b6ab77c3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467572"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516714"
 ---
-# <a name="iswritable"></a>IsWritable 可能
+# <a name="iswritable"></a>IsWritable
 
-**Iswritable 可能**要素は、基になる連絡先または Active Directory 受信者に書き込むことができるかどうかを指定します。 
+**IsWritable 要素** は、基になる連絡先または Active Directory 受信者を書き込むかどうかを指定します。 
   
 ```XML
 <IsWritable> true | false </IsWritable>
@@ -38,11 +38,11 @@ ms.locfileid: "44467572"
   
 ### <a name="parent-elements"></a>親要素
 
-[属性 (PersonaAttributionType)](attribution-personaattributiontype.md)
+[Attribution (PersonaAttributionType)](attribution-personaattributiontype.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**Iswritable**要素のテキスト値が**true**の場合は、連絡先または Active Directory オブジェクトが書き込みアクセスで利用可能であることを示します。 値が**false**の場合は、連絡先または Active Directory オブジェクトが書き込みアクセスで利用できないことを示します。 
+**IsWritable** 要素の **テキスト値が true** の場合、連絡先または Active Directory オブジェクトが書き込みアクセスに使用できます。 false の **値は** 、連絡先または Active Directory オブジェクトが書き込みアクセスに使用できない状態を示します。 
   
 ## <a name="remarks"></a>注釈
 

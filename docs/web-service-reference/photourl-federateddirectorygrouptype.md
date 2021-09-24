@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e7a3a16e-67a3-4083-be40-b5f72656b9ca
-description: PhotoUrl (FederatedDirectoryGroupType) 要素は、内部使用のみを目的としています。
-ms.openlocfilehash: e7148ac706025f01809d0d3bc53fa8c31e9cfe71
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: PhotoUrl (FederatedDirectoryGroupType) 要素は、内部での使用のみを目的とします。
+ms.openlocfilehash: 98a5d259f5d096c061ad84d4af514ec16c07fb3a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459210"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516574"
 ---
 # <a name="photourl-federateddirectorygrouptype"></a>PhotoUrl (FederatedDirectoryGroupType)
 
-**PhotoUrl (FederatedDirectoryGroupType)** 要素は、内部使用のみを目的としています。 
+**PhotoUrl (FederatedDirectoryGroupType)** 要素は、内部での使用のみを目的とします。 
 
 ## <a name="attributes-and-elements"></a>属性と要素
 

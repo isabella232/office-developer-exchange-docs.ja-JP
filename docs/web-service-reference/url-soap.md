@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 12e8c9a4-61e5-41a5-a9ea-423ce6f464af
-description: Url 要素には、Web クライアントの URL が含まれています。
-ms.openlocfilehash: 73d52107ede3fa951ab71e1706af51185b341b74
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Url 要素には、Web クライアントの URL が含まれる。
+ms.openlocfilehash: b2ca87be53b5a02a953b313ff2bd89c4e74b572d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468349"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517393"
 ---
 # <a name="url-soap"></a>Url (SOAP)
 
-**Url**要素には、Web クライアントの url が含まれています。 
+**Url 要素** には、Web クライアントの URL が含まれる。 
   
 ```XML
 <Url/>
@@ -41,7 +41,7 @@ ms.locfileid: "44468349"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[WebClientUrl (SOAP)](webclienturl-soap.md) <br/> |Exchange Web クライアントの URL を表します。  <br/> |
+|[WebClientUrl (SOAP)](webclienturl-soap.md) <br/> |Web クライアントの URL をExchangeします。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -53,8 +53,8 @@ ms.locfileid: "44468349"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

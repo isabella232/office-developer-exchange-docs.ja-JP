@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: af1dd9bf-df47-473d-a2ce-ab9a01a37606
-description: FindMailboxStatisticsByKeywordsResponse 要素は、FindMailboxStatisticsByKeywords 要求に対する応答を指定します。
-ms.openlocfilehash: a0595ec9ee0cedf5150852dc39eca50b598e15aa
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: FindMailboxStatisticsByKeywordsResponse 要素は、FindMailboxStatisticsByKeywords 要求への応答を指定します。
+ms.openlocfilehash: 8b4b5ebed303382aa4accb9176a09d77150e53e0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460989"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510107"
 ---
 # <a name="findmailboxstatisticsbykeywordsresponse"></a>FindMailboxStatisticsByKeywordsResponse
 
-**FindMailboxStatisticsByKeywordsResponse**要素は、 **FindMailboxStatisticsByKeywords**要求に対する応答を指定します。 
+**FindMailboxStatisticsByKeywordsResponse** 要素は **、FindMailboxStatisticsByKeywords** 要求への応答を指定します。 
   
 ```XML
 <FindMailboxStatisticsByKeywordsResponse>
@@ -38,7 +38,7 @@ ms.locfileid: "44460989"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Exchange Web サービス (EWS) 要求に対する応答メッセージが保存されています。  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Web サービス (EWS) 要求Exchange応答メッセージが含まれます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -53,13 +53,13 @@ ms.locfileid: "44460989"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

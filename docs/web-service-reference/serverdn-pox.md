@@ -4,29 +4,29 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 2ef73d13-e8bb-43f6-96c7-3ee157fed739
-description: ServerDN 要素は、Microsoft Exchange Server 2007 を実行しているコンピューターの識別名を指定します。
-ms.openlocfilehash: 16c6e7368e221b7e54c8d7d63532bb29464a7e54
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ServerDN 要素は、2007 年に実行されているコンピューターの識別名Microsoft Exchange Serverします。
+ms.openlocfilehash: 4ae47f2e6ddecf37f9cc13529d8ce7c393d82129
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461997"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517799"
 ---
 # <a name="serverdn-pox"></a>ServerDN (POX)
 
-**Serverdn**要素は、Microsoft Exchange Server 2007 を実行しているコンピューターの識別名を指定します。 
+**ServerDN 要素** は、2007 年に実行されているコンピューターの識別名Microsoft Exchange Serverします。 
   
-[自動検出 (POX)](autodiscover-pox.md)
+[AutoDiscover (POX)](autodiscover-pox.md)
   
-[応答 (POX)](response-pox.md)
+[Response (POX)](response-pox.md)
   
-[アカウント (POX)](account-pox.md)
+[Account (POX)](account-pox.md)
   
-[プロトコル (POX)](protocol-pox.md)
+[Protocol (POX)](protocol-pox.md)
   
 [ServerDN (POX)](serverdn-pox.md)
   
@@ -50,19 +50,19 @@ ms.locfileid: "44461997"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
+|[Protocol (POX)](protocol-pox.md) <br/> |クライアント アクセス サーバーの役割がインストールされている 2007 年Microsoft Exchange Serverコンピューターにクライアントを接続するための仕様が含まれている。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-Text 値は、Exchange サーバーの識別名を表します。
+テキスト値は、サーバーの識別名Exchangeします。
   
 ## <a name="remarks"></a>注釈
 
-**Serverdn**の値は、 [Type (POX)](type-pox.md)が EXCH と等しい場合にのみ使用されます。 
+**ServerDN 値は**、Type [(POX) が EXCH](type-pox.md)と等しい場合にのみ使用されます。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+[POX 自動検出 XML 要素のExchange](pox-autodiscover-xml-elements-for-exchange.md)
 

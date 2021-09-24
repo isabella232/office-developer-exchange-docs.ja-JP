@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Year
 api_type:
 - schema
 ms.assetid: 93bf2847-53fa-496c-9a1e-dc9a9ffd0b9f
-description: Year 要素は、年に応じて変化するタイムゾーンを定義するために使用されます。 この要素は省略できます。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。
-ms.openlocfilehash: cc83f9b2137f151f3f8ef0ceaf603ec036989961
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Year 要素は、年に応じて変化するタイム ゾーンを定義するために使用されます。 この要素は省略できます。 この要素は、2007 Microsoft Exchange Server パック 1 (SP1) で導入されました。
+ms.openlocfilehash: 80b4ce642a7a08631140e583fb9d92143f485ea3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465171"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509281"
 ---
 # <a name="year"></a>Year
 
-**Year**要素は、年に応じて変化するタイムゾーンを定義するために使用されます。 この要素は省略できます。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。 
+Year **要素** は、年に応じて変化するタイム ゾーンを定義するために使用されます。 この要素は省略できます。 この要素は、2007 Microsoft Exchange Server パック 1 (SP1) で導入されました。 
   
 ```xml
 <Year/>
@@ -45,27 +45,27 @@ ms.locfileid: "44465171"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[StandardTime](standardtime.md) <br/> |時間のオフセット (協定世界時 (UTC) を基準として、 [Bias (utc)](bias-utc.md)要素で表される時刻からのオフセットを表します。  <br/> |
-|[DaylightTime](daylighttime.md) <br/> |夏時間が計測される地域[で、協定](bias-utc.md)世界時 (utc) からの相対時刻からのオフセットを表します (utc)。  <br/> |
+|[StandardTime](standardtime.md) <br/> |Bias (UTC) 要素で表される協定世界時 [(UTC)](bias-utc.md) を基準にした時刻からのオフセットを表します。  <br/> |
+|[DaylightTime](daylighttime.md) <br/> |夏時間が観測される地域の Bias (UTC) 要素で表される協定世界時 [(UTC)](bias-utc.md) を基準にした時刻からのオフセットを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-Year 要素は年を表す文字列を受け取ります。 年の形式は YYYY 年です。
+Year 要素は、年を表す文字列を受け取ります。 年形式は YYYY です。
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

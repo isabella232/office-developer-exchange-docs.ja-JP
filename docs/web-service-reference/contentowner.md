@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a1741eda-c232-4d89-8abc-50b2627ad29b
 description: ContentOwner 要素は、コンテンツ所有者の名前を指定します。
-ms.openlocfilehash: 08dafcac2f9ad4be19e0cb3ccd03249a997e0fa3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 94da97aad80318d9c70d1f871bc4c8e71d545aca
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461479"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523133"
 ---
 # <a name="contentowner"></a>ContentOwner
 
-**ContentOwner**要素は、コンテンツ所有者の名前を指定します。 
+**ContentOwner 要素** は、コンテンツ所有者の名前を指定します。 
   
 ```XML
 <ContentOwner></ContentOwner>
@@ -40,7 +40,7 @@ ms.locfileid: "44461479"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[RightsManagementLicenseData](rightsmanagementlicensedata.md) <br/> |Rights management のライセンスに関する情報を指定します。  <br/> |
+|[RightsManagementLicenseData](rightsmanagementlicensedata.md) <br/> |権限管理ライセンスに関する情報を指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -58,12 +58,12 @@ ContentOwner 要素のテキスト値は、コンテンツの有効期限を指�
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

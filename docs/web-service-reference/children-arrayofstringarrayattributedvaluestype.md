@@ -1,23 +1,23 @@
 ---
-title: 子 (ArrayOfStringArrayAttributedValuesType)
+title: Children (ArrayOfStringArrayAttributedValuesType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d37b3fd5-63f1-4003-a6ec-54adfce23d52
-description: 子要素は、関連付けられたペルソナの子の名前とソース attributions の id の配列を指定します。
-ms.openlocfilehash: f4217f8a444bfdb6d86ff7b912294cfad9cbdcdc
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Children 要素は、関連付けられたペルサのソース属性の子名と識別子の配列を指定します。
+ms.openlocfilehash: 878f491af3047d313920cd0f3574de2daa8c21f0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460233"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59536975"
 ---
-# <a name="children-arrayofstringarrayattributedvaluestype"></a>子 (ArrayOfStringArrayAttributedValuesType)
+# <a name="children-arrayofstringarrayattributedvaluestype"></a>Children (ArrayOfStringArrayAttributedValuesType)
 
-**子**要素は、関連付けられたペルソナの子の名前とソース attributions の id の配列を指定します。 
+**Children 要素** は、関連付けられたペルサのソース属性の子名と識別子の配列を指定します。 
   
 ```XML
 <Children>
@@ -38,13 +38,13 @@ ms.locfileid: "44460233"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[StringArrayAttributedValue](stringarrayattributedvalue.md) <br/> |Persona 要素の文字列データの配列のインスタンスを指定します。  <br/> |
+|[StringArrayAttributedValue](stringarrayattributedvalue.md) <br/> |ペルサ要素の文字列データの配列のインスタンスを指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ユーザー](persona.md) <br/> |**Getpersona**要求によって返される一連のペルソナデータを指定します。  <br/> |
+|[ユーザー](persona.md) <br/> |**GetPersona** 要求によって返されるペルソナ データのセットを指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -58,12 +58,12 @@ ms.locfileid: "44460233"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

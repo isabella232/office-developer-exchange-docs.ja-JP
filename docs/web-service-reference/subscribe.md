@@ -1,27 +1,27 @@
 ---
-title: 登録
+title: Subscribe
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Subscribe
 api_type:
 - schema
 ms.assetid: 6c2ee57d-e216-4a94-92db-faa3cb0e244a
-description: Subscribe 要素には、サブスクリプションの作成に使用されるプロパティが含まれています。
-ms.openlocfilehash: f60e67654fb6af76e8081036a3463f5be401862d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Subscribe 要素には、サブスクリプションの作成に使用されるプロパティが含まれる。
+ms.openlocfilehash: 172539f8d9644db39f8b9b3c60cbb6717afae1dd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530959"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517673"
 ---
-# <a name="subscribe"></a>登録
+# <a name="subscribe"></a>Subscribe
 
-**Subscribe**要素には、サブスクリプションの作成に使用されるプロパティが含まれています。 
+**Subscribe 要素** には、サブスクリプションの作成に使用されるプロパティが含まれる。 
   
 ```XML
 <Subscribe>
@@ -44,9 +44,9 @@ ms.locfileid: "44530959"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[PullSubscriptionRequest](pullsubscriptionrequest.md) <br/> |プルベースのイベント通知のサブスクリプションを表します。  <br/> |
-|[PushSubscriptionRequest](pushsubscriptionrequest.md) <br/> |プッシュベースのイベント通知のサブスクリプションを表します。  <br/> |
-|[StreamingSubscriptionRequest](streamingsubscriptionrequest.md) <br/> |ストリーミングイベント通知のサブスクリプションを表します。  <br/> |
+|[PullSubscriptionRequest](pullsubscriptionrequest.md) <br/> |プル ベースのイベント通知のサブスクリプションを表します。  <br/> |
+|[PushSubscriptionRequest](pushsubscriptionrequest.md) <br/> |プッシュ ベースのイベント通知のサブスクリプションを表します。  <br/> |
+|[StreamingSubscriptionRequest](streamingsubscriptionrequest.md) <br/> |ストリーミング イベント通知のサブスクリプションを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -61,9 +61,9 @@ ms.locfileid: "44530959"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0e524a09-86f8-4a71-ac5c-66527ae70790
-description: GetUserPhoto 要素には、ユーザーの写真を取得する要求が含まれています。
-ms.openlocfilehash: 64b0ec67abd70fb237549eb0fed1968275c615ba
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetUserPhoto 要素には、ユーザーの写真を取得する要求が含まれる。
+ms.openlocfilehash: 16697acbf3d6559915ea0e72f908cc72da971d58
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463910"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522979"
 ---
 # <a name="getuserphoto"></a>GetUserPhoto
 
-**Getuserphoto**要素には、ユーザーの写真を取得する要求が含まれています。 
+**GetUserPhoto 要素** には、ユーザーの写真を取得する要求が含まれる。 
   
 ```XML
 <GetUserPhoto>
@@ -37,7 +37,7 @@ ms.locfileid: "44463910"
   
 ### <a name="child-elements"></a>子要素
 
-[電子メール (文字列)](email-string.md)  | [SizeRequested](sizerequested.md)
+[メール (文字列)](email-string.md)  | [SizeRequested](sizerequested.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -54,8 +54,8 @@ ms.locfileid: "44463910"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

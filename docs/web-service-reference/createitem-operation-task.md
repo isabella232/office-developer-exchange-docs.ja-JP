@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateItem
 api_type:
 - schema
 ms.assetid: 12c5da4d-290c-4a8a-a965-0bf5d55c7978
-description: CreateItem 操作は、Exchange ストアにタスクアイテムを作成します。
-ms.openlocfilehash: 502108843193e7ed8377b0fade9e106ef3d1976c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: CreateItem 操作では、タスク アイテムが作成され、Exchangeされます。
+ms.openlocfilehash: 814a32e82cd5c1c95be252d1b53387741898dd40
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457103"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510259"
 ---
 # <a name="createitem-operation-task"></a>CreateItem 操作 (タスク)
 
-CreateItem 操作は、Exchange ストアにタスクアイテムを作成します。
+CreateItem 操作では、タスク アイテムが作成され、Exchangeされます。
   
-## <a name="task-createitem-request"></a>Task CreateItem 要求
+## <a name="task-createitem-request"></a>タスクの CreateItem 要求
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の CreateItem 要求の例は、メールボックス内のタスクアイテムを作成する方法を示しています。
+CreateItem 要求の次の例は、メールボックスにタスク アイテムを作成する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -55,39 +55,39 @@ CreateItem 操作は、Exchange ストアにタスクアイテムを作成しま
 
 ### <a name="comments"></a>コメント
 
-定期的なタスクに対する要求は、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターが受信したときに変更されます。 次の変更が行われます。
+定期的なタスクの要求は、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターによって受信された場合に変更されます。 次の変更が行われます。
   
-- タスクの定期的なアイテムの期間の開始日[(定期的なアイテム)](startdate-recurrence.md)のプロパティには、日付のみが保存されます。 時刻部分は切り捨てられます。 
+- タスクの定期的な範囲の [StartDate (Recurrence)](startdate-recurrence.md) プロパティの日付だけが保存されます。 タイム パーツは切り捨てられて表示されます。 
     
-- [StartDate (定期的なアイテム)](startdate-recurrence.md)プロパティは、定期的なパターンに応じて調整できます。 たとえば、定期パターンが毎週月曜日として指定されていて、StartDate が2006年10月26日に設定されている場合、StartDate は次の月曜日である2006年10月30日に調整されます。 
+- StartDate [(Recurrence)](startdate-recurrence.md) プロパティは、定期的なパターンに応じて調整できます。 たとえば、定期的なパターンが毎週月曜日として指定され、StartDate が 2006 年 10 月 26 日 (木曜日) に設定されている場合、StartDate は次の月曜日である 2006 年 10 月 30 日に調整されます。 
     
-- タスクの[startdate](startdate.md)プロパティが設定されている場合は、定期的なアイテムの範囲の[startdate (繰り返し)](startdate-recurrence.md)に合わせて更新されます。 タスクの[DueDate](duedate.md)プロパティも、新しい[StartDate](startdate.md)に基づいて更新されます。
+- タスクの [StartDate](startdate.md) プロパティが設定されている場合は、定期的な範囲の [StartDate (Recurrence)](startdate-recurrence.md) に一致する更新されます。 タスク [の DueDate](duedate.md) プロパティも、新しい StartDate に基づいて [更新されます](startdate.md)。
     
-- [Startdate](startdate.md)が設定されていない場合は、 [DueDate](duedate.md)プロパティのみが更新され、定期的なアイテムの範囲の[startdate (繰り返し)](startdate-recurrence.md)に一致します。 
+- [StartDate が設定されていない](startdate.md)場合、定期的な範囲の[StartDate (Recurrence)](startdate-recurrence.md)に一致する[DueDate](duedate.md)プロパティだけが更新されます。 
     
-次の表に、クライアントアクセスサーバーが、毎週月曜日の定期タスクに対して行う変更を示します。
+次の表は、毎週月曜日の Task.Recurrence.Pattern を持つ定期的なタスクに対してクライアント アクセス サーバーが行った変更を示しています。
   
-**定期的なタスクに対する変更**
+**定期的なタスクへの変更**
 
-|**Property**|**元の値**|**更新された値**|
+|**プロパティ**|**元の値**|**更新された値**|
 |:-----|:-----|:-----|
-|タスクの開始日  <br/> |2006年1月1日  <br/> |2006年10月30日  <br/> |
-|DueDate  <br/> |2006年1月3日  <br/> |2006年11月1日  <br/> |
-|タスクの定期的なアイテムの指定。  <br/> |2006年10月26日  <br/> |2006年10月30日  <br/> |
+|Task.StartDate  <br/> |2006 年 1 月 1 日  <br/> |2006 年 10 月 30 日  <br/> |
+|Task.DueDate  <br/> |2006 年 1 月 3 日  <br/> |2006 年 11 月 1 日  <br/> |
+|Task.Recurrence.Range.StartDate  <br/> |2006 年 10 月 26 日  <br/> |2006 年 10 月 30 日  <br/> |
    
-既定では、宛先フォルダーが指定されていない場合、タスクアイテムは [タスク] フォルダーに作成されます。
+既定では、移動先フォルダーを指定しない場合、タスク アイテムは Tasks フォルダーに作成されます。
   
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 要求では、次の要素が使用されます。
   
 - [CreateItem](createitem.md)
     
-- [アイテム (非 Emptyarrayofallitemstype)](items-nonemptyarrayofallitemstype.md)
+- [Items (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
     
 - [タスク](task.md)
     
-- [件名](subject.md)
+- [[件名]](subject.md)
     
 - [DueDate](duedate.md)
     
@@ -95,7 +95,7 @@ CreateItem 操作は、Exchange ストアにタスクアイテムを作成しま
     
 ## <a name="successful-task-createitem-response"></a>成功したタスクの CreateItem 応答
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
 次の例は、CreateItem 要求に対する正常な応答を示しています。
   
@@ -131,7 +131,7 @@ CreateItem 操作は、Exchange ストアにタスクアイテムを作成しま
 
 ### <a name="successful-response-elements"></a>成功した応答要素
 
-応答には、次の要素が含まれています。
+応答には、次の要素が含まれます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -143,7 +143,7 @@ CreateItem 操作は、Exchange ストアにタスクアイテムを作成しま
     
 - [ResponseCode](responsecode.md)
     
-- [アイテム (非 Emptyarrayofallitemstype)](items-nonemptyarrayofallitemstype.md)
+- [Items (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
     
 - [タスク](task.md)
     

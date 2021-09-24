@@ -1,23 +1,23 @@
 ---
-title: Sender (文字列)
+title: Sender (string)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2c4c94b7-2d81-4585-b7b5-38646f990594
-description: Sender 要素は、アイテムを送信したユーザーの電子メールアドレスを指定します。
-ms.openlocfilehash: 530b875729e860d2b4f2069fb4e07fb5b3236d7a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Sender 要素は、アイテムを送信したユーザーの電子メール アドレスを指定します。
+ms.openlocfilehash: 064f5ec3bad13ed8dafc05501327014451fb6d15
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455318"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523405"
 ---
-# <a name="sender-string"></a>Sender (文字列)
+# <a name="sender-string"></a>Sender (string)
 
-**Sender**要素は、アイテムを送信したユーザーの電子メールアドレスを指定します。 
+**Sender 要素** は、アイテムを送信したユーザーの電子メール アドレスを指定します。 
   
 ```XML
 <Sender></Sender>
@@ -38,11 +38,11 @@ ms.locfileid: "44455318"
   
 ### <a name="parent-elements"></a>親要素
 
-[Searchプレビューアイテム](searchpreviewitem.md)
+[SearchPreviewItem](searchpreviewitem.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**Sender**要素のテキスト値は、探索検索を実行することによって検出された電子メールの送信者です。 
+Sender 要素のテキスト **値** は、検出検索を実行して見つかった電子メールの送信者です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44455318"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

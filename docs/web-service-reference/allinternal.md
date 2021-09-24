@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - AllInternal
 api_type:
 - schema
 ms.assetid: b7e5072f-5d9f-4ee0-b58b-4d75d878ea1c
-description: 電子メールメッセージのすべての受信者が送信者の組織の内部にある場合、AllInternal 要素は true に評価されます。
-ms.openlocfilehash: c5ffe15eca5d680994acb62913ebf5effacce214
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: 電子メール メッセージのすべての受信者が送信者の組織の内部である場合、AllInternal 要素は true と評価されます。
+ms.openlocfilehash: 5ccc484de19449bc47a39f170f691649ae4beb7f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464834"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523230"
 ---
 # <a name="allinternal"></a>AllInternal
 
-電子メールメッセージのすべての受信者が送信者の組織の内部にある場合、 **AllInternal**要素は**true**に評価されます。 
+電子メール メッセージのすべての受信者が送信者の組織の内部である場合 **、AllInternal** 要素は true と評価されます。 
   
 ```xml
 <AllInternal/>
@@ -44,12 +44,12 @@ ms.locfileid: "44464834"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[条件](condition.md) <br/> |実行するルールのアクション部分に対して満たす必要がある条件を指定します。  <br/> |
-|[および (ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |**True**に評価するためにすべての子要素を一致させる必要があることを指定します。  <br/> |
+|[Condition](condition.md) <br/> |ルールのアクション 部分を実行するために満たす必要がある条件を識別します。  <br/> |
+|[And (ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |true に評価するには、すべての子要素が一致 **する必要があります**。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**AllInternal**要素は空である必要があります。 
+**AllInternal 要素は** 空である必要があります。 
   
 ## <a name="remarks"></a>注釈
 
@@ -60,11 +60,11 @@ ms.locfileid: "44464834"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

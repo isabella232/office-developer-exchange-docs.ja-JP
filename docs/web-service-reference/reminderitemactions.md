@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 135d7fc3-7d5b-4e30-9a6f-62eb02d7ab98
 description: ReminderItemActions 要素は、アラームアイテムのアクションを指定します。
-ms.openlocfilehash: c9b42e420f81cd0cb15bf1bd17366d9a996f1b0b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 4694a32883ef08e830c855efa5f719a3333cecb3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458559"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523622"
 ---
 # <a name="reminderitemactions"></a>ReminderItemActions
 
-**ReminderItemActions**要素は、アラームアイテムのアクションを指定します。 
+**ReminderItemActions 要素は**、アラームアイテムのアクションを指定します。 
   
 ```XML
 <ReminderItemActions>
@@ -53,9 +53,9 @@ ms.locfileid: "44458559"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -64,5 +64,5 @@ ms.locfileid: "44458559"
 [PerformReminderAction](performreminderaction.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

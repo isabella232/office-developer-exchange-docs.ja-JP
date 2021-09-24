@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5c8a35b8-a940-4b3e-8768-9ba95766fd79
 description: ConversationNodes 要素は、会話ノードのコレクションを指定します。
-ms.openlocfilehash: 39ffb97f1004535e2fc70b58f8d56afe129e8ee2
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 8bacbc83676d9642ae8f842affbc11338cbdff0c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461395"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59536625"
 ---
 # <a name="conversationnodes"></a>ConversationNodes
 
-**ConversationNodes**要素は、会話ノードのコレクションを指定します。 
+**ConversationNodes 要素は**、会話ノードのコレクションを指定します。 
   
 ```XML
 <ConversationNodes>
@@ -38,13 +38,13 @@ ms.locfileid: "44461395"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ConversationNode](conversationnode.md) <br/> |スレッド内のノードを指定します。  <br/> |
+|[ConversationNode](conversationnode.md) <br/> |会話内のノードを指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[会話 (ConversationResponseType)](conversation-conversationresponsetype.md) <br/> |**GetConversationItems**応答で返される1つの会話を表します。  <br/> |
+|[Conversation (ConversationResponseType)](conversation-conversationresponsetype.md) <br/> |**GetConversationItems** 応答で返される 1 つの会話を表します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -58,12 +58,12 @@ ms.locfileid: "44461395"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

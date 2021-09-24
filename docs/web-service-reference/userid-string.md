@@ -1,23 +1,23 @@
 ---
-title: UserId (文字列)
+title: UserId (string)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1796c2f2-5248-4a07-9aa0-0ca7453d7217
-description: UserId 要素は、電子メールユーザーのユーザー識別子を指定します。
-ms.openlocfilehash: 45edcf9215ca3e63f43ff75c2e9deb24c953ac09
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: UserId 要素は、電子メール ユーザーのユーザー識別子を指定します。
+ms.openlocfilehash: 775898111d637e9c91bf2e057012124d1f5b61a8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459385"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517364"
 ---
-# <a name="userid-string"></a>UserId (文字列)
+# <a name="userid-string"></a>UserId (string)
 
-**UserId**要素は、電子メールユーザーのユーザー識別子を指定します。 
+**UserId 要素** は、電子メール ユーザーのユーザー識別子を指定します。 
   
 ```XML
 <UserId></UserId>
@@ -38,11 +38,11 @@ ms.locfileid: "44459385"
   
 ### <a name="parent-elements"></a>親要素
 
-[Emailuser.displayname](emailuser.md)
+[EmailUser](emailuser.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**UserId**要素のテキスト値は、電子メールユーザーの識別子です。 
+UserId 要素の **テキスト値** は、電子メール ユーザーの識別子です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44459385"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

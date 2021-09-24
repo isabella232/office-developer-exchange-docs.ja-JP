@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FreeBusyViewType
 api_type:
 - schema
 ms.assetid: 7c7f82ba-fa52-4a3e-bec7-39d373c66fc7
 description: FreeBusyViewType 要素は、応答で返される空き時間情報の種類を表します。
-ms.openlocfilehash: 3556ad236693ac9aa018b8aa3af7843765da6aa4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 6eec490b39ccb9c02e7a16c8da7cfdd57f9b92c5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459568"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509925"
 ---
 # <a name="freebusyviewtype"></a>FreeBusyViewType
 
-**FreeBusyViewType**要素は、応答で返される空き時間情報の種類を表します。 
+**FreeBusyViewType** 要素は、応答で返される空き時間情報の種類を表します。 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -54,74 +54,74 @@ ms.locfileid: "44459568"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FreeBusyView](freebusyview.md) <br/> |特定のユーザーの空き時間情報が保存されています。  <br/> この要素の XPath 式を次に示します。  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView` <br/> |
+|[FreeBusyView](freebusyview.md) <br/> |特定のユーザーの可用性情報が含まれる。  <br/> 次に、この要素の XPath 式を示します。  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView` <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は必須です。 次の表に、この要素で使用できる値を示します。
+テキスト値は必須です。 次の表に、この要素に使用できる値を示します。
   
 |**値**|**説明**|
 |:-----|:-----|
-|なし  <br/> |この値は、要求に対しては無効です。 この値は、応答に対して有効です。  <br/> |
-|MergedOnly  <br/> |集約された空き時間ストリームを表します。 1つのフォレストのターゲットユーザーが可用性サービスを構成していないフォレスト間のシナリオでは、リクエスターの可用性サービスが空き時間情報パブリックフォルダーからターゲットユーザーの空き時間情報を取得します。 パブリックフォルダーは、空き時間情報のみをマージされた形式で格納するため、 **MergedOnly**のみが利用可能な情報です。  <br/> |
-|FreeBusy  <br/> |従来の状態の情報を表します。これは、空き時間、仮の予定、および OOF です。 これには、予定の開始時刻と終了時刻も含まれます。 このビューは、従来の空き時間表示よりも豊富です。個々の会議の開始時刻と終了時刻は、集計された空き時間ストリームの代わりに提供されます。  <br/> |
-|FreeBusyMerged  <br/> |**FreeBusy**のすべてのプロパティを表し、マージされた空き時間情報を含むストリームを表します。  <br/> |
-|詳細  <br/> |従来の状態の情報を表します。これは、空き時間、仮の予定、および OOF です。予定の開始/終了時刻。また、件名、場所、重要度など、予定のさまざまなプロパティを指定できます。 この要求されたビューは、要求元ユーザーが特権を持っている情報の最大量を返します。 マージされた空き時間情報のみを使用できる場合は、Microsoft Exchange Server 2003 フォレスト内のユーザーに関する情報を要求すると、 **MergedOnly**が返されます。 それ以外の場合は、 **FreeBusy**または**Detailed**が返されます。  <br/> 配布リストに**詳細**が指定されている場合は、リストのメンバーの空き時間情報が結合され、 **MergedOnly**が返されます。  <br/> |
-|DetailedMerged  <br/> |マージされた空き時間情報のストリームに**詳細**が含まれるすべてのプロパティを表します。 マージされた空き時間情報のみが利用可能な場合 (たとえば、Exchange 2003 を実行しているコンピューター上にメールボックスが存在する場合)、 **MergedOnly**が返されます。 それ以外の場合は、 **FreeBusyMerged**または**DetailedMerged**が返されます。  <br/> |
+|なし  <br/> |この値は要求に対して無効です。 この値は、応答に対して有効です。  <br/> |
+|MergedOnly  <br/> |集計された空き時間情報ストリームを表します。 1 つのフォレスト内のターゲット ユーザーに可用性サービスが構成されていないフォレスト間のシナリオでは、要求者の可用性サービスは、空き時間情報のパブリック フォルダーからターゲット ユーザーの空き時間情報を取得します。 パブリック フォルダーには、結合された形式の空き時間情報だけが格納されるので、使用可能な情報は **MergedOnly** のみです。  <br/> |
+|FreeBusy  <br/> |従来の状態情報 (空き時間情報、空き時間情報、暫定的情報、OOF) を表します。 これには、予定の開始/終了時間も含まれます。 このビューは、集計された空き時間情報ストリームの代わりに個々の会議の開始時間と終了時間が提供されるので、従来の空き時間情報ビューよりもリッチです。  <br/> |
+|FreeBusyMerged  <br/> |結合された空き時間情報のストリームを使用して **、FreeBusy** のすべてのプロパティを表します。  <br/> |
+|詳細  <br/> |従来の状態情報を表します。空き時間情報、空き時間情報、暫定的情報、OOF。予定の開始/終了時間。題、場所、重要度など、予定のさまざまなプロパティを指定します。 この要求されたビューは、要求元のユーザーが特権を持つ情報の最大量を返します。 Microsoft Exchange Server 2003 フォレスト内のユーザーの情報を要求する場合と同様に、マージされた空き時間情報のみを使用できる場合は **、MergedOnly** が返されます。 それ以外の **場合、FreeBusy** **または Detailed** が返されます。  <br/> 配布 **リストに詳細** が指定されている場合、リストのメンバーの空き時間情報がマージされ **、MergedOnly** が返されます。  <br/> |
+|Detailedmerged  <br/> |[詳細] のすべてのプロパティ **を、** マージされた空き時間情報のストリームで表します。 たとえば、メールボックスが Exchange 2003 を実行しているコンピューターに存在する場合など、結合された空き時間情報のみを使用できる場合は **、MergedOnly** が返されます。 それ以外の **場合、FreeBusyMerged または** **DetailedMerged が** 返されます。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素は、 [FreeBusyView](freebusyview.md)要素を使用する場合に必要です。 返される空き時間情報の種類は、 [Requestedview](requestedview.md)要素で指定されます。 この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。 
+[FreeBusyView](freebusyview.md)要素を使用する場合は、この要素が必要です。 返される空き時間情報の種類は [、RequestedView 要素で指定](requestedview.md) されます。 この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。 
   
-次の表は、さまざまなビューの種類と、それに対応する MAPI プロパティに対して返されるものを示しています。 各ビューの種類は、以前のビューの種類に基づいて作成されます。
+次の表は、さまざまなビューの種類と対応する MAPI プロパティに対して返される値を示しています。 各ビューの種類は、以前のビューの種類に基なります。
   
 |**FreeBusyViewType**|**Properties**|**MAPI Calendar プロパティ**|
 |:-----|:-----|:-----|
 |**MergedOnly** <br/> |MergedFreeBusyStream  <br/> ||
-|**FreeBusy** <br/> |クラシック状態  <br/> |PropTag (0x80860003)  <br/> |
+|**FreeBusy** <br/> |従来の状態  <br/> |PropTag (0x80860003)  <br/> |
 |**FreeBusy** <br/> |就業時間  <br/> ||
 |**FreeBusy** <br/> |開始時刻  <br/> |PR_START_DATE  <br/> |
 |**FreeBusy** <br/> |終了時刻  <br/> |PR_END_DATE  <br/> |
-|**FreeBusyMerged** <br/> |クラシック状態  <br/> |PropTag (0x80860003)  <br/> |
+|**FreeBusyMerged** <br/> |従来の状態  <br/> |PropTag (0x80860003)  <br/> |
 |**FreeBusyMerged** <br/> |就業時間  <br/> ||
 |**FreeBusyMerged** <br/> |開始時刻  <br/> |PR_START_DATE  <br/> |
 |**FreeBusyMerged** <br/> |終了時刻  <br/> |PR_END_DATE  <br/> |
 |**FreeBusyMerged** <br/> |MergedFreeBusyStream  <br/> ||
-|**詳細** <br/> |クラシック状態  <br/> |PropTag (0x80860003)  <br/> |
+|**詳細** <br/> |従来の状態  <br/> |PropTag (0x80860003)  <br/> |
 |**詳細** <br/> |就業時間  <br/> ||
 |**詳細** <br/> |開始時刻  <br/> |PR_START_DATE  <br/> |
 |**詳細** <br/> |終了時刻  <br/> |PR_END_DATE  <br/> |
 |**詳細** <br/> |件名  <br/> |PR_SUBJECT  <br/> |
-|**詳細** <br/> |場所  <br/> |PR_LOCATION  <br/> |
-|**詳細** <br/> |エントリ Id (プライベートでない場合)  <br/> ||
-|**詳細** <br/> |プライベートフラグ  <br/> ||
+|**詳細** <br/> |Location  <br/> |PR_LOCATION  <br/> |
+|**詳細** <br/> |Entry-Id(private を指定しない場合)  <br/> ||
+|**詳細** <br/> |プライベート フラグ  <br/> ||
 |**詳細** <br/> |IsMeeting  <br/> ||
 |**詳細** <br/> |IsRecurring  <br/> ||
 |**詳細** <br/> |IsException  <br/> ||
 |**詳細** <br/> |IsReminderSet  <br/> ||
-|**詳細** <br/> |不在時のメッセージ (要求された場合)  <br/> ||
-|**DetailedMerged** <br/> |クラシック状態  <br/> |PropTag (0x80860003)  <br/> |
-|**DetailedMerged** <br/> |就業時間  <br/> ||
-|**DetailedMerged** <br/> |開始時刻  <br/> |PR_START_DATE  <br/> |
-|**DetailedMerged** <br/> |終了時刻  <br/> |PR_END_DATE  <br/> |
-|**DetailedMerged** <br/> |件名  <br/> |PR_SUBJECT  <br/> |
-|**DetailedMerged** <br/> |場所  <br/> |PR_LOCATION  <br/> |
-|**DetailedMerged** <br/> |エントリ Id (プライベートでない場合)  <br/> ||
-|**DetailedMerged** <br/> |プライベートフラグ  <br/> ||
-|**DetailedMerged** <br/> |MergedFreeBusyStream  <br/> ||
-|**DetailedMerged** <br/> |IsMeeting  <br/> ||
-|**DetailedMerged** <br/> |IsRecurring  <br/> ||
-|**DetailedMerged** <br/> |IsException  <br/> ||
-|**DetailedMerged** <br/> |IsReminderSet  <br/> ||
+|**詳細** <br/> |Out of Office メッセージ (要求された場合)  <br/> ||
+|**Detailedmerged** <br/> |従来の状態  <br/> |PropTag (0x80860003)  <br/> |
+|**Detailedmerged** <br/> |就業時間  <br/> ||
+|**Detailedmerged** <br/> |開始時刻  <br/> |PR_START_DATE  <br/> |
+|**Detailedmerged** <br/> |終了時刻  <br/> |PR_END_DATE  <br/> |
+|**Detailedmerged** <br/> |件名  <br/> |PR_SUBJECT  <br/> |
+|**Detailedmerged** <br/> |Location  <br/> |PR_LOCATION  <br/> |
+|**Detailedmerged** <br/> |Entry-Id(private を指定しない場合)  <br/> ||
+|**Detailedmerged** <br/> |プライベート フラグ  <br/> ||
+|**Detailedmerged** <br/> |MergedFreeBusyStream  <br/> ||
+|**Detailedmerged** <br/> |IsMeeting  <br/> ||
+|**Detailedmerged** <br/> |IsRecurring  <br/> ||
+|**Detailedmerged** <br/> |IsException  <br/> ||
+|**Detailedmerged** <br/> |IsReminderSet  <br/> ||
    
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -132,5 +132,5 @@ ms.locfileid: "44459568"
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[ユーザーの空き時間情報の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[ユーザーの可用性の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

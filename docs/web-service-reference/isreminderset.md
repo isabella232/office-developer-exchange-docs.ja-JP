@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsReminderSet
 api_type:
 - schema
 ms.assetid: 6aea4cb7-ca14-4949-8e7f-660b565f6556
 description: IsReminderSet 要素は、予定表イベントにアラームが設定されているかどうかを示します。
-ms.openlocfilehash: e2f5fa072b549bdaf636a15313e7dfe72172f768
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: fb1af55c53d3328d00d80cf50cf3df3c9d029eda
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460338"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509652"
 ---
 # <a name="isreminderset"></a>IsReminderSet
 
-**IsReminderSet**要素は、予定表イベントにアラームが設定されているかどうかを示します。 
+**IsReminderSet** 要素は、予定表イベントにアラームが設定されているかどうかを示します。 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -60,24 +60,24 @@ ms.locfileid: "44460338"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[CalendarEventDetails](calendareventdetails.md) <br/> |予定表イベントに関する追加情報を提供します。  <br/> この要素の XPath 式を次に示します。  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]/CalendarEventDetails` <br/> |
+|[CalendarEventDetails](calendareventdetails.md) <br/> |予定表イベントに関する追加情報を提供します。  <br/> 次に、この要素の XPath 式を示します。  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]/CalendarEventDetails` <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-この要素が応答で返される場合は、テキスト値が必要です。 この要素は、 [IsPrivate](isprivate.md)要素が**true**に設定されていない限り、 [CalendarEventDetails](calendareventdetails.md)要素を使用する場合に必要です。
+この要素が応答で返される場合は、テキスト値が必要です。 [IsPrivate](isprivate.md)要素が true に設定されていない限り [、CalendarEventDetails](calendareventdetails.md)要素を使用する場合は、この要素が必要 **です**。
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -88,5 +88,5 @@ ms.locfileid: "44460338"
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[ユーザーの空き時間情報の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[ユーザーの可用性の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

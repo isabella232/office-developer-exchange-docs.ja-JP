@@ -5,48 +5,48 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 28ec96c3-45af-48ff-9f17-718a527dc0ad
-description: RemoveContactFromImList EWS 操作についての情報を検索します。
-ms.openlocfilehash: 8b3d83a0b53bad169d9f3478540e5087901f3a12
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: RemoveContactFromImList EWS 操作に関する情報を検索します。
+ms.openlocfilehash: cc72dc1b0abf9032fabafbaac53d29f41968dafb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458468"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523587"
 ---
 # <a name="removecontactfromimlist-operation"></a>RemoveContactFromImList 操作
 
-**RemoveContactFromImList** EWS 操作についての情報を検索します。 
+**RemoveContactFromImList** EWS 操作に関する情報を検索します。 
   
-**RemoveContactFromImList**操作は、lync が連絡先ストアに対して Exchange を使用している場合に、lync インスタントメッセージング (IM) リストから連絡先を削除します。 
+**RemoveContactFromImList 操作では**、Lync が連絡先ストアに対して連絡先を使用するときに、Lync インスタント メッセージング (IM) リストから連絡先Exchange削除します。 
   
 この操作は Exchange Server 2013 で導入されました。
   
 ## <a name="using-the-removecontactfromimlist-operation"></a>RemoveContactFromImList 操作の使用
 
-**RemoveContactFromImList**操作は、Exchange サーバーに格納されている Lync 連絡先リストから削除する連絡先を識別する1つの引数を受け取ります。 この操作対象の連絡先の一覧は、Outlook 2013 では**Lync 連絡先**と呼ばれます。 
+**RemoveContactFromImList** 操作は、連絡先サーバーに保存されている Lync 連絡先リストから削除する連絡先を識別する 1 つの引数Exchangeします。 この操作の対象となる連絡先の一覧は、2013 年に **Lync 連絡先** Outlookされます。 
   
 > [!CAUTION]
-> 連絡先リストから連絡先を削除する場合は、 [DeleteItem 操作](deleteitem-operation.md)を使用しないでください。 **Lync 連絡先**リストから連絡先を削除できるようにするには、追加のサーバー側処理が必要になることがあります。 **Lync 連絡先**リストは、既定の**lync 連絡先**メールボックスフォルダーに相当する概念であることに注意してください。 
+> 連絡先リストから連絡先 [を削除するには、DeleteItem](deleteitem-operation.md) 操作を使用しない。 Lync 連絡先リストからの連絡先の削除をサポートするために、サーバー側の追加処理 **が必要になる場合** があります。 Lync 連絡先リスト **は、既定** の Lync 連絡先メールボックス フォルダーの概 **念に相当します** 。 
   
-### <a name="removecontactfromimlist-operation-soap-headers"></a>RemoveContactFromImList 操作の SOAP ヘッダー
+### <a name="removecontactfromimlist-operation-soap-headers"></a>RemoveContactFromImList 操作 SOAP ヘッダー
 
-**RemoveContactFromImList**操作では、次の表に示す SOAP ヘッダーを使用できます。 
+**RemoveContactFromImList 操作では**、次の表に示す SOAP ヘッダーを使用できます。 
   
-|**ヘッダー名**|**要素**|**説明**|
+|**ヘッダー名**|**Element**|**説明**|
 |:-----|:-----|:-----|
-|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |RFC 3066 で定義されているように、メールボックスへのアクセスに使用されるカルチャ (言語の識別用のタグ) を識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは応答に適用されます。  <br/> |
+|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |メールボックスへのアクセスに使用する RFC 3066「言語の識別用タグ」で定義されているカルチャを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマ バージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは、応答に適用されます。  <br/> |
    
-## <a name="removecontactfromimlist-operation-request-example-remove-a-contact-from-the-lync-contacts-list"></a>RemoveContactFromImList 操作要求の例: Lync 連絡先リストから連絡先を削除します。
+## <a name="removecontactfromimlist-operation-request-example-remove-a-contact-from-the-lync-contacts-list"></a>RemoveContactFromImList 操作要求の例: Lync 連絡先リストから連絡先を削除する
 
-次の**RemoveContactFromImList**操作要求の例は、 **Lync 連絡先**リストから連絡先を削除する方法を示しています。 **RemoveContactFromImList**操作は、 **Lync の連絡先**リストから削除された連絡先を識別するための一意の連絡先識別子を1つだけ受け入れます。 
+**RemoveContactFromImList** 操作要求の次の例は、Lync 連絡先リストから連絡先を削除 **する方法を示** しています。 **RemoveContactFromImList 操作は**、Lync 連絡先リストから削除された連絡先を識別する 1 つの一意の連絡先識別子 **を受け入** れます。 
   
 > [!NOTE]
-> この記事のすべてのアイテム識別子と変更キーは、読みやすくするために短縮されています。 
+> この記事のすべてのアイテム識別子と変更キーは、読みやすさを維持するために短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -72,9 +72,9 @@ ms.locfileid: "44458468"
     
 - [ContactId](contactid.md)
     
-## <a name="successful-removecontactfromimlist-operation-response"></a>成功した RemoveContactFromImList 操作の応答
+## <a name="successful-removecontactfromimlist-operation-response"></a>成功した RemoveContactFromImList 操作応答
 
-次の例は、 **RemoveContactFromImList**操作要求に対する正常な応答を示しています。これは、 **Lync 連絡先**リストから連絡先を削除することです。 
+次の例は、Lync 連絡先リストから連絡先を削除する **RemoveContactFromImList** 操作要求に対する正常な応答 **を示** しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -108,7 +108,7 @@ ms.locfileid: "44458468"
     
 ## <a name="removecontactfromimlist-operation-error-response"></a>RemoveContactFromImList 操作エラー応答
 
-次の例は、 **RemoveContactFromImList**操作要求へのエラー応答を示しています。 これは、連絡先がリストに存在しなくなったときに、 **Lync の連絡先**リストから連絡先を削除する要求に対する応答です。 
+次の例は **、RemoveContactFromImList** 操作要求に対するエラー応答を示しています。 これは、連絡先がリストに存在しなくなったときに Lync **連絡先** リストから連絡先を削除する要求に対する応答です。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -149,7 +149,7 @@ ms.locfileid: "44458468"
     
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS 操作](ews-operations-in-exchange.md)
+- [EWS 操作 (Exchange](ews-operations-in-exchange.md)
     
 - [GetImItemList 操作](getimitemlist-operation.md)
     

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4ac8fb39-6b92-4a88-bc13-17715ef6b63c
-description: NewDisplayName 要素には、インスタントメッセージンググループの更新された表示名が含まれています。
-ms.openlocfilehash: e3355cfd990eb9c00ccd514dcc914a3e3831b08f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: NewDisplayName 要素には、インスタント メッセージング グループの更新された表示名が含まれる。
+ms.openlocfilehash: 27a4a6e9bd041c9074bcad1250cd59bea435ccda
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466844"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509524"
 ---
 # <a name="newdisplayname"></a>NewDisplayName
 
-**Newdisplayname**要素には、インスタントメッセージンググループの更新された表示名が含まれています。 
+**NewDisplayName** 要素には、インスタント メッセージング グループの更新された表示名が含まれる。 
   
 ```XML
 <NewDisplayName></NewDisplayName>
@@ -42,7 +42,7 @@ ms.locfileid: "44466844"
   
 ## <a name="text-value"></a>テキスト値
 
-**Newdisplayname**要素のテキスト値は、更新されたインスタントメッセージンググループの表示名です。 
+**NewDisplayName 要素のテキスト** 値は、インスタント メッセージング グループの更新された表示名です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44466844"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

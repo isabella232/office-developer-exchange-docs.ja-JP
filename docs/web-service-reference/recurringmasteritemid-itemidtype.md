@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 48d831cf-10d8-480b-86d2-f9c0b14b8167
-description: RecurringMasterItemId (ItemIdType) 要素は、関連するオカレンスアイテムの1つの識別子を識別することによって、定期的なアイテムのマスターアイテムを識別します。
-ms.openlocfilehash: c725998ad3a728ef1f47ff6491592b461753b895
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: RecurringMasterItemId (ItemIdType) 要素は、関連するオカレンス アイテムの 1 つの識別子を識別することで、定期的なマスター アイテムを識別します。
+ms.openlocfilehash: 491bb6686ad6cc9ee8169144b659d828e3920e45
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468440"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522741"
 ---
 # <a name="recurringmasteritemid-itemidtype"></a>RecurringMasterItemId (ItemIdType)
 
-**RecurringMasterItemId (ItemIdType)** 要素は、関連するオカレンスアイテムの1つの識別子を識別することによって、定期的なアイテムのマスターアイテムを識別します。 
+**RecurringMasterItemId (ItemIdType)** 要素は、関連するオカレンス アイテムの 1 つの識別子を識別することで、定期的なマスター アイテムを識別します。 
   
 ```XML
 <RecurringMasterItemId Id="" ChangeKey=""/>
@@ -34,8 +34,8 @@ ms.locfileid: "44468440"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|ID  <br/> |定期的なアイテムのマスターアイテムの1つの発生を識別します。 この属性は必須です。  <br/> |
-|ChangeKey  <br/> |定期的なアイテムの1つのオカレンスの特定のバージョンを識別します。 また、定期的なマスターアイテムと単一のオカレンスに同じ変更キーが含まれているため、これらも確認されます。 この属性は省略可能です。  <br/> |
+|ID  <br/> |定期的なマスター アイテムの 1 回の出現を識別します。 この属性は必須です。  <br/> |
+|ChangeKey  <br/> |定期的なマスター アイテムが 1 回出現する特定のバージョンを識別します。 また、定期的なマスター アイテムと 1 つのオカレンスに同じ変更キーが含まれるため、定期的なマスター アイテムも識別されます。 この属性は省略可能です。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -56,9 +56,9 @@ ms.locfileid: "44468440"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -67,5 +67,5 @@ ms.locfileid: "44468440"
 [Reminder](reminder.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

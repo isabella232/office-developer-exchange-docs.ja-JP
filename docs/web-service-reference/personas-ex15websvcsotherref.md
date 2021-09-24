@@ -1,23 +1,23 @@
 ---
-title: ペルソナ
+title: Personas
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a7d2bbd6-5fb8-44d3-8d0d-ad623a117870
-description: ペルソナ要素は、GetImItems および GetImItemList 操作から返されるペルソナの配列を指定します。
-ms.openlocfilehash: 4ac2ffb68e5328fb99b9bda25ef21762e446e90b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Personas 要素は、GetImItems および GetImItemList 操作から返されるペルサの配列を指定します。
+ms.openlocfilehash: a48e147ea2c0e7d67ad56fb1e41febd3c7e7a4f6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465661"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59534678"
 ---
-# <a name="personas"></a>ペルソナ
+# <a name="personas"></a>Personas
 
-**ペルソナ**要素は、 **getimitems**および**getimitemlist**操作から返されるペルソナの配列を指定します。 
+Personas **要素は****、GetImItems および GetImItemList** 操作から返されるペルサの **配列を指定** します。 
   
 ```XML
 <Personas>
@@ -53,8 +53,8 @@ ms.locfileid: "44465661"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

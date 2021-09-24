@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateUserConfigurationResponse
 api_type:
 - schema
 ms.assetid: 115d4a5d-0c90-45d5-a3a3-4e61d80df78a
-description: CreateUserConfigurationResponse 要素は、1つの CreateUserConfiguration 要求に対する応答を定義します。
-ms.openlocfilehash: d1b3e2a0ab156c5175f9c1e676866690c33ace9f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: CreateUserConfigurationResponse 要素は、1 つの CreateUserConfiguration 要求に対する応答を定義します。
+ms.openlocfilehash: 2d97628f4907cc7c05b5ba4dc3b3f0a22533e54f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463770"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59536170"
 ---
 # <a name="createuserconfigurationresponse"></a>CreateUserConfigurationResponse
 
-**CreateUserConfigurationResponse**要素は、1つの**CreateUserConfiguration**要求に対する応答を定義します。 
+**CreateUserConfigurationResponse** 要素は、1 つの **CreateUserConfiguration** 要求に対する応答を定義します。 
   
 ```xml
 <CreateUserConfigurationResponse>
@@ -42,7 +42,7 @@ ms.locfileid: "44463770"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Exchange Web サービス要求に対する応答メッセージを含みます。  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Web サービス要求の応答メッセージExchange含まれます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -61,13 +61,13 @@ ms.locfileid: "44463770"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

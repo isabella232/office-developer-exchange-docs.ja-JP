@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PlayOnPhoneDialString
 api_type:
 - schema
 ms.assetid: 02b77f6a-042d-49a9-9445-342885c43e99
-description: PlayOnPhoneDialString 要素は、電話で再生するダイヤル文字列を識別します。
-ms.openlocfilehash: 310934895295af179e651b94c33dfb86d0f94e1d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: PlayOnPhoneDialString 要素は、Play-on-on-電話を識別します。
+ms.openlocfilehash: dba106f1de87efecb6a7d9b1ba5d378a29c2f2cc
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466221"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516532"
 ---
 # <a name="playonphonedialstring-exchange-web-services"></a>PlayOnPhoneDialString (Exchange Web サービス)
 
-**PlayOnPhoneDialString**要素は、電話で再生するダイヤル文字列を識別します。 
+**PlayOnPhoneDialString** 要素は、Play-on-on-電話を識別します。 
   
 ```XML
 <PlayOnPhoneDialString/>
@@ -44,11 +44,11 @@ ms.locfileid: "44466221"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |ユニファイドメッセージングサービスのサービス構成情報が含まれています。  <br/> |
+|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |ユニファイド メッセージング サービスのサービス構成情報が含まれる。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-この要素のテキスト値は、電話で再生するダイヤル文字列です。
+この要素のテキスト値は、Play-on-on-電話文字列です。
   
 ## <a name="remarks"></a>注釈
 
@@ -61,13 +61,13 @@ ms.locfileid: "44466221"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

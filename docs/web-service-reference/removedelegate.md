@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - RemoveDelegate
 api_type:
 - schema
 ms.assetid: f21c5171-62e7-47c8-99b1-22e1ff5883bb
-description: RemoveDelegate 要素は、メールボックスから代理人を削除するための要求を定義します。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。
-ms.openlocfilehash: eca357ad1ed2dc692f9f192b97abd3a5d765fafb
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: RemoveDelegate 要素は、メールボックスから代理人を削除する要求を定義します。 この要素は、2007 Microsoft Exchange Server パック 1 (SP1) で導入されました。
+ms.openlocfilehash: 8ef8e2f6fb296ea4d3a9b8739f856bfe9a50985a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465521"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523581"
 ---
 # <a name="removedelegate"></a>RemoveDelegate
 
-**Removedelegate**要素は、メールボックスから代理人を削除するための要求を定義します。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。 
+**RemoveDelegate 要素** は、メールボックスから代理人を削除する要求を定義します。 この要素は、2007 Microsoft Exchange Server パック 1 (SP1) で導入されました。 
   
 ```xml
 <RemoveDelegate>
@@ -44,7 +44,7 @@ ms.locfileid: "44465521"
 |**Element**|**説明**|
 |:-----|:-----|
 |[メールボックス](mailbox.md) <br/> |プリンシパルのメールボックスを識別します。  <br/> |
-|[UserIds](userids.md) <br/> |プリンシパルのメールボックスから削除するデリゲートユーザーの配列を格納します。 この要素は、Exchange 2007 SP1 で導入されました。  <br/> |
+|[UserIds](userids.md) <br/> |プリンシパルのメールボックスから削除する代理人ユーザーの配列を含む。 この要素は、2007 SP1 Exchange導入されました。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -52,16 +52,16 @@ ms.locfileid: "44465521"
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -70,5 +70,5 @@ ms.locfileid: "44465521"
 [RemoveDelegate 操作](removedelegate-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

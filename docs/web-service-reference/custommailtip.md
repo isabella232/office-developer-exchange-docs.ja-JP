@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CustomMailTip
 api_type:
 - schema
 ms.assetid: eb57dc71-96e5-4718-a51a-a1b9c62abd6f
-description: CustomMailTip 要素は、カスタマイズされたメールヒントメッセージを表します。
-ms.openlocfilehash: 70810b9c2a73703586d06a4141d31c0fd39abb5d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: CustomMailTip 要素は、カスタマイズされたメール ヒント メッセージを表します。
+ms.openlocfilehash: 0146d645c24747eba2310fbc9328c8b93b0b347f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458335"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59536163"
 ---
 # <a name="custommailtip"></a>CustomMailTip
 
-**Custommailtip**要素は、カスタマイズされたメールヒントメッセージを表します。 
+**CustomMailTip 要素は**、カスタマイズされたメール ヒント メッセージを表します。 
   
 ```XML
 <CustomMailTip/>
@@ -44,7 +44,7 @@ ms.locfileid: "44458335"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[メールヒント](mailtips.md) <br/> |さまざまな種類のメールヒントの値を表します。  <br/> |
+|[メールヒント](mailtips.md) <br/> |さまざまな種類のメール ヒントの値を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -59,13 +59,13 @@ ms.locfileid: "44458335"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

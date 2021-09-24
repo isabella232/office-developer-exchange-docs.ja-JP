@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3aba59a0-f12a-48b5-842b-11cf4530dd51
-description: DeleteFromFolderStateDefinition 要素は、アイテムがフォルダーから削除されるときの状態を指定します。
-ms.openlocfilehash: 0ea8c61a6839790869781d5d87ca81772b2e38d6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: DeleteFromFolderStateDefinition 要素は、アイテムがフォルダーから削除される状態を指定します。
+ms.openlocfilehash: 270edfc0b7abd70b74ff8c8b4353140ec5fbe27b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455724"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510240"
 ---
 # <a name="deletefromfolderstatedefinition"></a>DeleteFromFolderStateDefinition
 
-**Deletefromfolderstatedefinition**要素は、アイテムがフォルダーから削除されるときの状態を指定します。 
+**DeleteFromFolderStateDefinition 要素は**、アイテムがフォルダーから削除される状態を指定します。 
   
 ```XML
 <DeleteFromFolderStateDefinition>
@@ -39,8 +39,8 @@ ms.locfileid: "44455724"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[発生 (タイムゾーンの切り替え)](occurrence-time-zone-transition.md) <br/> |予定表アイテムが発生する日付を指定します。  <br/> |
-|[Iソケットの現在の表示](isoccurrencepresent.md) <br/> |予定表アイテムの発生が存在するかどうかを示すブール値を指定します。  <br/> |
+|[Occurrence (タイム ゾーン切り替え)](occurrence-time-zone-transition.md) <br/> |予定表アイテムが出現する日付を指定します。  <br/> |
+|[IsOccurrencePresent](isoccurrencepresent.md) <br/> |予定表アイテムが出現するかどうかを示すブール型 (Boolean) の値を指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -60,10 +60,10 @@ ms.locfileid: "44455724"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

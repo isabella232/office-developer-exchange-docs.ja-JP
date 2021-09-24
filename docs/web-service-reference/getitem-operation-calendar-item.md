@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetItem
 api_type:
 - schema
 ms.assetid: a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8
-description: GetItem 操作は、Exchange ストアから予定表アイテムを取得します。
-ms.openlocfilehash: 09fe92af12f03ce4cebd1e98f4e01c087ace64f9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetItem 操作は、ストアから予定表アイテムExchangeします。
+ms.openlocfilehash: ff118be17e3e084a11dd74a0434db3f6c0e8bd8d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460618"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516966"
 ---
 # <a name="getitem-operation-calendar-item"></a>GetItem 操作 (予定表アイテム)
 
-GetItem 操作は、Exchange ストアから予定表アイテムを取得します。
+GetItem 操作は、ストアから予定表アイテムExchangeします。
   
 ## <a name="getitem-request-example"></a>GetItem 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-GetItem 要求の次の例は、アイテムの id と件名を取得するための要求を形成する方法を示しています。
+GetItem 要求の次の例は、アイテムの ID と件名を取得する要求を形成する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -51,7 +51,7 @@ GetItem 要求の次の例は、アイテムの id と件名を取得するた�
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 要求では、次の要素が使用されます。
   
@@ -70,18 +70,18 @@ GetItem 要求の次の例は、アイテムの id と件名を取得するた�
 - [ItemId](itemid.md)
     
 > [!NOTE]
-> この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。 
+> この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。 
   
-GetItem 操作の要求メッセージに関するその他のオプションについては、スキーマ階層を参照してください。 [GetItem](getitem.md)要素から開始します。 
+GetItem 操作の要求メッセージの他のオプションを見つけるには、スキーマ階層を確認します。 [GetItem 要素から開始](getitem.md)します。 
   
-## <a name="successful-getitem-response"></a>成功した GetItem 応答
+## <a name="successful-getitem-response"></a>GetItem 応答の成功
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、GetItem 要求に対する正常な応答を示しています。 この応答を作成した要求では、IdOnly baseshape が使用されています。 この例では、応答はアイテムの ID のみを返します。 
+次の例は、GetItem 要求に対する正常な応答を示しています。 この応答を作成した要求では、IdOnly ベースシェープが使用されました。 この例では、応答はアイテムの ID のみを返します。 
   
 > [!NOTE]
-> 読みやすくするために、アイテム ID と変更キーが短縮されています。 
+> アイテム ID と変更キーは、読みやすさを維持するために短縮されました。 
   
 ### <a name="code"></a>コード
 
@@ -115,10 +115,10 @@ GetItem 操作の要求メッセージに関するその他のオプションに
 
 ### <a name="description"></a>説明
 
-次の例は、GetItem 要求に対する正常な応答を示しています。 この応答を作成した要求では、既定の baseshape が使用されています。 この例では、応答は予定表アイテムの既定の図形を返します。
+次の例は、GetItem 要求に対する正常な応答を示しています。 この応答を作成した要求では、Default ベースシェープが使用されました。 この例では、応答は予定表アイテムの既定の図形を返します。
   
 > [!NOTE]
-> 読みやすくするために、アイテム ID と変更キーが短縮されています。 
+> アイテム ID と変更キーは、読みやすさを維持するために短縮されました。 
   
 ### <a name="code"></a>コード
 
@@ -166,7 +166,7 @@ GetItem 操作の要求メッセージに関するその他のオプションに
 
 ### <a name="description"></a>説明
 
-次の例は、GetItem 要求に対する正常な応答を示しています。 この応答を作成した要求では、[AllProperties baseshape] が使用されています。 この例では、応答は予定表アイテムの AllProperties 図形を返します。
+次の例は、GetItem 要求に対する正常な応答を示しています。 この応答を作成した要求では、AllProperties ベースシェープが使用されました。 この例では、応答は予定表アイテムの AllProperties 図形を返します。
   
 ### <a name="code"></a>コード
 
@@ -265,7 +265,7 @@ GetItem 操作の要求メッセージに関するその他のオプションに
 
 ### <a name="comments"></a>コメント
 
-GetItem 操作の応答メッセージに関するその他のオプションについては、スキーマ階層を参照してください。 [GetItemResponse](getitemresponse.md)要素から開始します。 
+GetItem 操作の応答メッセージの他のオプションを見つけるには、スキーマ階層を確認します。 [GetItemResponse 要素から開始](getitemresponse.md)します。 
   
 ### <a name="successful-response-elements"></a>成功した応答要素
 
@@ -297,7 +297,7 @@ GetItem 操作の応答メッセージに関するその他のオプションに
     
 - [DateTimeReceived](datetimereceived.md)
     
-- [Size](size.md)
+- [サイズ](size.md)
     
 - [Importance](importance.md)
     
@@ -317,7 +317,7 @@ GetItem 操作の応答メッセージに関するその他のオプションに
     
 - [ResponseObjects](responseobjects.md)
     
-- [Forwarditem と](forwarditem.md)
+- [ForwardItem](forwarditem.md)
     
 - [ReminderDueBy](reminderdueby.md)
     
@@ -333,9 +333,9 @@ GetItem 操作の応答メッセージに関するその他のオプションに
     
 - [Culture](culture.md)
     
-- [開始](start.md)
+- [Start](start.md)
     
-- [終わり](end-ex15websvcsotherref.md)
+- [終わり ](end-ex15websvcsotherref.md)
     
 - [IsAllDayEvent](isalldayevent.md)
     
@@ -353,13 +353,13 @@ GetItem 操作の応答メッセージに関するその他のオプションに
     
 - [MyResponseType](myresponsetype.md)
     
-- [Organizer](organizer.md)
+- [開催者](organizer.md)
     
 - [メールボックス](mailbox.md)
     
 - [Name (EmailAddressType)](name-emailaddresstype.md)
     
-- [EmailAddress (非 Emptystringtype)](emailaddress-nonemptystringtype.md)
+- [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
     
 - [RoutingType (EmailAddressType)](routingtype-emailaddresstype.md)
     
@@ -369,9 +369,9 @@ GetItem 操作の応答メッセージに関するその他のオプションに
     
 - [ConflictingMeetings](conflictingmeetings.md)
     
-- [場所](location.md)
+- [Location](location.md)
     
-- [期間 (アイテム)](duration-items.md)
+- [Duration (Items)](duration-items.md)
     
 - [TimeZone (Item)](timezone-item.md)
     

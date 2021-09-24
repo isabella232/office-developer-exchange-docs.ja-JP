@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UserIds
 api_type:
 - schema
 ms.assetid: 78a09c3a-1646-4c55-95a2-1109fb11e1c6
-description: UserIds 要素には、プリンシパルのメールボックスから取得または削除するデリゲートユーザーの配列が含まれています。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。
-ms.openlocfilehash: de4661226c154ef0d2d5ac55c57405e20c4d2aee
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: UserIds 要素には、プリンシパルのメールボックスから取得または削除する代理人ユーザーの配列が含まれる。 この要素は、2007 Microsoft Exchange Server パック 1 (SP1) で導入されました。
+ms.openlocfilehash: c99c39a75060780974cb26546e3a9d2947a9dfb8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459778"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517359"
 ---
 # <a name="userids"></a>UserIds
 
-**UserIds**要素には、プリンシパルのメールボックスから取得または削除するデリゲートユーザーの配列が含まれています。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。 
+**UserIds 要素には**、プリンシパルのメールボックスから取得または削除する代理人ユーザーの配列が含まれる。 この要素は、2007 Microsoft Exchange Server パック 1 (SP1) で導入されました。 
   
 ```xml
 <UserIds>
@@ -42,27 +42,27 @@ ms.locfileid: "44459778"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[UserId](userid.md) <br/> |プリンシパルのメールボックスから取得または削除する代理人を指定します。 この要素は、Exchange 2007 SP1 で導入されました。  <br/> |
+|[UserId](userid.md) <br/> |プリンシパルのメールボックスから取得または削除する代理人を識別します。 この要素は、2007 SP1 Exchange導入されました。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetDelegate](getdelegate.md) <br/> |メールボックスへの代理人に関する情報を取得する要求を定義します。 この要素は、Exchange 2007 SP1 で導入されました。  <br/> |
-|[RemoveDelegate](removedelegate.md) <br/> |メールボックスから代理人を削除するための要求を定義します。 この要素は、Exchange 2007 SP1 で導入されました。  <br/> |
+|[GetDelegate](getdelegate.md) <br/> |メールボックスへの代理人に関する情報を取得する要求を定義します。 この要素は、2007 SP1 Exchange導入されました。  <br/> |
+|[RemoveDelegate](removedelegate.md) <br/> |メールボックスから代理人を削除する要求を定義します。 この要素は、2007 SP1 Exchange導入されました。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -73,5 +73,5 @@ ms.locfileid: "44459778"
 [RemoveDelegate 操作](removedelegate-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

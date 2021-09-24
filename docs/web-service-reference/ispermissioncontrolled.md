@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsPermissionControlled
 api_type:
 - schema
 ms.assetid: a2fd0340-f31f-4389-a1cd-7e93b40bb3c6
-description: IsPermissionControlled 要素は、条件または例外を適用するために、受信メッセージがアクセス許可制御 (RMS protected) である必要があるかどうかを示します。
-ms.openlocfilehash: 5fba06c1c56512f4a362f773f119ea346a4c0d2b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: IsPermissionControlled 要素は、条件または例外を適用するために、受信メッセージをアクセス許可制御 (RMS 保護) する必要があるかどうかを示します。
+ms.openlocfilehash: d43badedd3ee95b832357cca62937388bd24b751
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460387"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509749"
 ---
 # <a name="ispermissioncontrolled"></a>IsPermissionControlled
 
-**Ispermissioncontrolled**要素は、条件または例外を適用するために、受信メッセージがアクセス許可制御 (RMS protected) である必要があるかどうかを示します。 
+**IsPermissionControlled** 要素は、条件または例外を適用するために、受信メッセージをアクセス許可制御 (RMS 保護) する必要があるかどうかを示します。 
   
 ```XML
 <IsPermissionControlled>true | false</IsPermissionControlled>
@@ -44,12 +44,12 @@ ms.locfileid: "44460387"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[条件](conditions.md) <br/> |ルールのルールの処理を開始するときに実行される条件を表します。  <br/> |
-|[例外](exceptions.md) <br/> |受信トレイルールに対して使用可能なすべてのルールの例外条件を表します。  <br/> |
+|[条件](conditions.md) <br/> |満たされると、ルールのルール アクションをトリガーする条件を表します。  <br/> |
+|[例外](exceptions.md) <br/> |受信トレイ ルールで使用可能なすべてのルール例外条件を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値が**true の場合**は、条件または例外を適用するために、メッセージが RMS で保護されている必要があることを示します。 値が**false**の場合、条件または例外を適用するために、メッセージが RMS で保護されていないことを示します。 
+true のテキスト **値は** 、条件または例外が適用されるには、メッセージが RMS で保護されている必要があります。 false の **値は** 、条件または例外を適用するために、メッセージを RMS で保護しなけらなけい場合を示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -60,13 +60,13 @@ ms.locfileid: "44460387"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

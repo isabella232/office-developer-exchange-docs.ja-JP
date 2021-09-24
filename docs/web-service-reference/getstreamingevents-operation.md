@@ -1,35 +1,35 @@
 ---
-title: GetStreamingEvents の操作
+title: GetStreamingEvents 操作
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetStreamingEvents
 api_type:
 - schema
 ms.assetid: 8da95423-72bc-4034-90a8-162eedcd059b
 description: GetStreamingEvents EWS 操作に関する情報を検索します。
-ms.openlocfilehash: 27744ec40d7c7cb551f35ed5f6fcb726f23d4865
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 794407c2224e606be4f32cc610eff9f95e65a83b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530170"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523063"
 ---
-# <a name="getstreamingevents-operation"></a>GetStreamingEvents の操作
+# <a name="getstreamingevents-operation"></a>GetStreamingEvents 操作
 
-**Getstreamingevents** EWS 操作に関する情報を検索します。 
+**GetStreamingEvents** EWS 操作に関する情報を検索します。 
   
-**Getstreamingevents**操作は、ストリーミングサブスクリプションクライアントがクライアントアクセスサーバーからの通知を要求するために使用されます。 **Getstreamingevents**応答は、最後の通知以降にメールボックスで発生したアイテムとイベントの配列を返します。 
+**GetStreamingEvents** 操作は、サブスクリプション クライアントをストリーミングしてクライアント アクセス サーバーから通知を要求するために使用されます。 **GetStreamingEvents** 応答は、最後の通知以降にメールボックスで発生したアイテムとイベントの配列を返します。 
   
 ## <a name="getstreamingevents-request-example"></a>GetStreamingEvents 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の**Getstreamingevents**操作の例は、サブスクリプション識別子によって識別されるサブスクリプションに関連付けられているイベントとアイテムを要求する方法を示しています。 
+**GetStreamingEvents** 操作の次の例は、サブスクリプション識別子によって識別されるサブスクリプションに関連付けられているイベントとアイテムを要求する方法を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -57,11 +57,11 @@ ms.locfileid: "44530170"
     
 - [ConnectionTimeout](connectiontimeout.md)
     
-## <a name="successful-getstreamingevents-response-example"></a>Successful GetStreamingEvents 応答の例
+## <a name="successful-getstreamingevents-response-example"></a>GetStreamingEvents 応答の成功例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の**Getstreamingevents**応答の例は、新しい電子メールメッセージの受信時にクライアントに送信される通知を示しています。 CreatedEvent、NewMail、および、次のイベントの通知が含まれています。 
+**GetStreamingEvents 応答の次** の例は、新しい電子メール メッセージを受信するときにクライアントに送信される通知を示しています。 これには、CreatedEvent、NewMail、および ModifiedEvent のイベントに関する通知が含まれます。 
   
 ### <a name="code"></a>コード
 
@@ -112,19 +112,19 @@ ms.locfileid: "44530170"
     
 - [GetStreamingEventsResponseMessage](getstreamingeventsresponsemessage.md)
     
-- [注釈 Folderpermissionlevel](notesfolderpermissionlevel.md)
+- [NotesFolderPermissionLevel](notesfolderpermissionlevel.md)
     
 - [通知](notification-ex15websvcsotherref.md)
     
 - [SubscriptionId (GetStreamingEvents)](subscriptionid-getstreamingevents.md)
     
-**Getstreamingevents**操作の応答メッセージに関するその他のオプションについては、スキーマ階層を参照してください。 [通知](notification-ex15websvcsotherref.md)要素から開始します。 
+**GetStreamingEvents** 操作の応答メッセージに関するその他のオプションを見つけるには、スキーマ階層を参照してください。 Notification 要素 [から開始](notification-ex15websvcsotherref.md) します。 
   
 ## <a name="getstreamingevents-error-response-example"></a>GetStreamingEvents エラー応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **Getstreamingevents**要求に対するエラー応答を示しています。 
+次の例は **、GetStreamingEvents 要求** に対するエラー応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -155,21 +155,21 @@ ms.locfileid: "44530170"
 
 ## <a name="remarks"></a>注釈
 
-**Getstreamingevents**要求を処理する場合、クライアントアクセスサーバーは次の手順を実行します。 
+**GetStreamingEvents 要求を処理する** 場合、クライアント アクセス サーバーは次の手順を実行します。 
   
-1. 要求の[SubscriptionId (GetStreamingEvents)](subscriptionid-getstreamingevents.md)は、クライアントアクセスサーバーでホストされている有効なサブスクリプションであることが確認されます。 そうでない場合、 **Getstreamingevents**呼び出しは失敗します。 
+1. 要求 [の SubscriptionId (GetStreamingEvents)](subscriptionid-getstreamingevents.md) が、クライアント アクセス サーバーでホストされている有効なサブスクリプションとして確認されます。 それではない場合 **、GetStreamingEvents 呼び出しは失敗** します。 
     
-2. 要求の認証済みユーザーの SMTP アドレスは、偽装権限を持っていることが検証されます。 そうでない場合、 **Getstreamingevents**要求は失敗します。 
+2. 要求の認証されたユーザーの SMTP アドレスが偽装権限を持っている検証されます。 そうしない場合 **、GetStreamingEvents 要求は失敗** します。 
     
-3. サブスクリプションキューは、クライアントへの送信を待機しているイベントに対して照会されます。 キューが空でない場合、キューから最初の50イベントがプルされ、通知にエンコードされます。
+3. サブスクリプション キューは、クライアントへの送信を待機しているイベントに対して照会されます。 キューが空ではない場合、キューの最初の 50 イベントがキューからプルされ、通知にエンコードされます。
     
-4. キューにイベントが見つからない場合は、 [Statusevent](statusevent.md)が生成され、通知応答にエンコードされます。 
+4. キューにイベントが見つからない場合 [、StatusEvent](statusevent.md) が生成され、通知応答にエンコードされます。 
     
 5. 通知応答がクライアントに返されます。
     
-6. 通知に含まれるイベントは、サブスクリプションキューから削除され、サブスクリプションのクライアントアクセスサーバーの最後のウォーターマークは、返される最後のイベントのウォーターマークに設定されます。
+6. 通知に含まれるイベントはサブスクリプション キューから削除され、サブスクリプションのクライアント アクセス サーバーローカルの最後の透かしは、返される最後のイベントの透かしに設定されます。
     
-7. サブスクリプションのタイムアウトタイマーはリセットされます。
+7. サブスクリプションのタイムアウト タイマーがリセットされます。
     
 ## <a name="see-also"></a>関連項目
 

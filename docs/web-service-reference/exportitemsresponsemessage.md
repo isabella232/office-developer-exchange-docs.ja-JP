@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ExportItemsResponseMessage
 api_type:
 - schema
 ms.assetid: 830fb008-3c45-4988-9041-91a3da3fe689
-description: ExportItemsResponseMessage 要素には、1つのメールボックスアイテムをエクスポートする要求の状態と結果が含まれています。
-ms.openlocfilehash: 3265836ce6d9d6ef97a4e598bbb3f50e7c5047c6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ExportItemsResponseMessage 要素には、1 つのメールボックス アイテムをエクスポートする要求の状態と結果が含まれる。
+ms.openlocfilehash: 72a7d1bb969e12b38a0caee294325bd2c7a72e4d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468947"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517085"
 ---
 # <a name="exportitemsresponsemessage"></a>ExportItemsResponseMessage
 
-**ExportItemsResponseMessage**要素には、1つのメールボックスアイテムをエクスポートする要求の状態と結果が含まれています。 
+**ExportItemsResponseMessage** 要素には、1 つのメールボックス アイテムをエクスポートする要求の状態と結果が含まれる。 
   
 - [ExportItemsResponse](exportitemsresponse.md)  
 - [ResponseMessages](responsemessages.md) 
@@ -48,32 +48,32 @@ ms.locfileid: "44468947"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**ResponseClass** <br/> | 応答の状態を表します。<br/><br/> この属性には、次の値が有効です。 <br/> <br/>-成功  <br/>-Warning  <br/>-エラー  <br/> |
+|**ResponseClass** <br/> | 応答の状態を説明します。<br/><br/> この属性には、次の値が有効です。 <br/> <br/>- 成功  <br/>- 警告  <br/>- エラー  <br/> |
    
-#### <a name="responseclass-attribute-values"></a>ResponseClass 属性の値
+#### <a name="responseclass-attribute-values"></a>ResponseClass 属性値
 
 |**値**|**説明**|
 |:-----|:-----|
-|**Success** <br/> |満たされる要求を記述します。  <br/> |
-|**Warning** <br/> | 処理されなかった要求を示します。 要求内のアイテムが処理され、その後のアイテムを処理できなかったときにエラーが発生した場合は、警告が返されることがあります。<br/><br/> 警告のソースの例を次に示します。  <br/><br/>-バッチ処理中に Exchange ストアがオフラインになります。  <br/>-Active Directory ドメインサービス (AD DS) がオフラインになっています。  <br/>-メールボックスが移動されました。  <br/>-メッセージデータベース (MDB) はオフラインです。  <br/>-パスワードの有効期限が切れています。  <br/>-クォータが限界を超えています。  <br/> |
-|**Error** <br/> | 満たされない要求を記述します。 <br/><br/>エラーのソースの例を次に示します。  <br/><br/>-無効な属性または要素  <br/>-範囲外の属性または要素  <br/>-不明なタグ  <br/>-コンテキスト内で有効ではない属性または要素  <br/>-クライアントによる権限のないアクセス試行  <br/>-有効なクライアント側の呼び出しに応答した場合のサーバー側障害  <br/><br/>  エラーに関する情報については、応答[secの](responsecode.md)要素と[messagetext](messagetext.md)要素を参照してください。  <br/> |
+|**Success** <br/> |満たされた要求について説明します。  <br/> |
+|**Warning** <br/> | 処理されていない要求について説明します。 要求内のアイテムの処理中にエラーが発生し、後続のアイテムを処理できない場合は、警告が返される場合があります。<br/><br/> 次に、警告の発生源の例を示します。  <br/><br/>- バッチExchangeストアはオフラインです。  <br/>- Active Directory ドメイン サービス (AD DS) がオフラインです。  <br/>- メールボックスが移動されました。  <br/>- メッセージ データベース (MDB) がオフラインです。  <br/>- パスワードの有効期限が切れています。  <br/>- クォータを超えました。  <br/> |
+|**エラー** <br/> | 満たできない要求について説明します。 <br/><br/>エラーの原因の例を次に示します。  <br/><br/>- 無効な属性または要素  <br/>- 範囲外の属性または要素  <br/>- 不明なタグ  <br/>- コンテキストで無効な属性または要素  <br/>- 任意のクライアントによる承認されていないアクセス試行  <br/>- 有効なクライアント側の呼び出しに応答したサーバー側のエラー  <br/><br/>  エラーに関する情報は [、ResponseCode](responsecode.md) 要素と [MessageText 要素で確認](messagetext.md) できます。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[MessageText](messagetext.md) <br/> |応答の状態を説明するテキストを提供します。  <br/> |
-|[ResponseCode](responsecode.md) <br/> |要求で発生した特定のエラーを識別するエラーコードを提供します。  <br/> |
-|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在未使用で、今後の使用のために予約されています。 この要素には0の値が含まれています。  <br/> |
-|[MessageXml](messagexml.md) <br/> |エラー応答に関する追加情報を提供します。  <br/> |
-|[ItemId](itemid.md) <br/> |エクスポートされたアイテムのアイテム識別子を含みます。  <br/> |
-|[Data (base64Binary)](data-base64binary.md) <br/> |エクスポートされたアイテムの内容を含みます。  <br/> |
+|[MessageText](messagetext.md) <br/> |応答の状態のテキストの説明を提供します。  <br/> |
+|[ResponseCode](responsecode.md) <br/> |要求が発生した特定のエラーを識別するエラー コードを提供します。  <br/> |
+|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在未使用で、将来の使用のために予約されています。 この要素には、値 0 が含まれる。  <br/> |
+|[MessageXml](messagexml.md) <br/> |追加のエラー応答情報を提供します。  <br/> |
+|[ItemId](itemid.md) <br/> |エクスポートされたアイテムのアイテム識別子を格納します。  <br/> |
+|[Data (base64Binary)](data-base64binary.md) <br/> |エクスポートされたアイテムの内容を格納します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Exchange Web サービス要求に対する応答メッセージを含みます。  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Web サービス要求の応答メッセージExchange含まれます。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -81,16 +81,16 @@ ms.locfileid: "44468947"
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
+この要素を記述するスキーマは、Exchange Web Services をホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7dae4db5-28d3-4b81-b071-458c814c36b9
-description: VotingResponse 要素は、送信される投票を指定します。 この要素は、承認に対する応答に対してではなく、投票要求メッセージへの応答にのみ存在します。
-ms.openlocfilehash: ed7caff79d1ff2946800630c167350fe866e29dc
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: VotingResponse 要素は、送信された投票を指定します。 この要素は、承認に対する応答ではなく、投票要求メッセージへの応答にのみ存在します。
+ms.openlocfilehash: 4d554cc3fc92911420b48b2da86d3ca3004018f7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466466"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510555"
 ---
 # <a name="votingresponse"></a>VotingResponse
 
-**VotingResponse**要素は、送信される投票を指定します。 この要素は、承認に対する応答に対してではなく、投票要求メッセージへの応答にのみ存在します。 
+**VotingResponse 要素** は、送信された投票を指定します。 この要素は、承認に対する応答ではなく、投票要求メッセージへの応答にのみ存在します。 
   
 ```XML
 <VotingResponse />
@@ -42,7 +42,7 @@ ms.locfileid: "44466466"
   
 ## <a name="text-value"></a>テキスト値
 
-**VotingResponse**要素のテキスト値は、送信される投票です。 
+**VotingResponse 要素のテキスト** 値は、送信された投票です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,9 +55,9 @@ ms.locfileid: "44466466"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -66,5 +66,5 @@ ms.locfileid: "44466466"
 [VotingInformation](votinginformation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

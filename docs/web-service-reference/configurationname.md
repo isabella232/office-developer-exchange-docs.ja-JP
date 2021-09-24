@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ConfigurationName
 api_type:
 - schema
 ms.assetid: 3b524a2f-9c6b-4550-9f3d-f78d176b0f7b
 description: ConfigurationName 要素は、要求されたサービス構成を名前で指定します。
-ms.openlocfilehash: 5e1216253a633af643dbd276827842dbe2db5d5f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 39f847c256614cd0c207f440691bd87d09ed237b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463924"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523126"
 ---
 # <a name="configurationname"></a>ConfigurationName
 
-**ConfigurationName**要素は、要求されたサービス構成を名前で指定します。 
+**ConfigurationName 要素は**、要求されたサービス構成を名前で指定します。 
   
 ```xml
 <ConfigurationName>MailTips or UnifiedMessagingConfiguration or ProtectionRules</ConfigurationName>
@@ -44,19 +44,19 @@ ms.locfileid: "44463924"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[RequestedConfiguration](requestedconfiguration.md) <br/> |要求されたサービス構成を含みます。  <br/> |
+|[RequestedConfiguration](requestedconfiguration.md) <br/> |要求されたサービス構成が含まれる。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-次の表に、 **ConfigurationName**要素に指定できる値を示します。 
+次の表に **、ConfigurationName** 要素に使用できる値を示します。 
   
 **ConfigurationName 要素の値**
 
 |**値**|**説明**|
 |:-----|:-----|
-|メール ヒント  <br/> |メールヒントサービスの構成を識別します。  <br/> |
-|UnifiedMessagingConfiguration  <br/> |ユニファイドメッセージングサービスの構成を識別します。  <br/> |
-|ProtectionRules  <br/> |保護ルールサービスの構成を識別します。  <br/> |
+|メール ヒント  <br/> |MailTips サービス構成を識別します。  <br/> |
+|UnifiedMessagingConfiguration  <br/> |ユニファイド メッセージング サービスの構成を識別します。  <br/> |
+|ProtectionRules  <br/> |Protection Rules サービス構成を識別します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -67,13 +67,13 @@ ms.locfileid: "44463924"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

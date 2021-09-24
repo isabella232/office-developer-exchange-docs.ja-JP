@@ -1,23 +1,23 @@
 ---
-title: Locationの Statedefinition
+title: LocationBasedStateDefinition
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2bb2cb78-e168-414e-8d07-414ab5c69185
-description: Locationが Statedefinition 要素は、内部使用のみを目的としています。
-ms.openlocfilehash: dd1e97b2071eeb82f7c9032b83ea52f83ee4a1ec
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: LocationBasedStateDefinition 要素は、内部での使用のみを目的とします。
+ms.openlocfilehash: f3ad52225e34082b3dc507a45ec0ab147a3c0fcc
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460303"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522839"
 ---
-# <a name="locationbasedstatedefinition"></a>Locationの Statedefinition
+# <a name="locationbasedstatedefinition"></a>LocationBasedStateDefinition
 
-**Locationが Statedefinition**要素は、内部使用のみを目的としています。 
+**LocationBasedStateDefinition 要素** は、内部での使用のみを目的とします。 
   
 ```XML
 <LocationBasedStateDefinition />

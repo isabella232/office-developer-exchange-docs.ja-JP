@@ -5,47 +5,47 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9279c3ad-f7c8-4bbc-b0a7-2c78416cb39a
-description: GetNonIndexableItemDetails EWS 操作についての情報を検索します。
-ms.openlocfilehash: a443e04b0622ddbaaeb1bc8c04bfd05679c6207e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetNonIndexableItemDetails EWS 操作に関する情報を検索します。
+ms.openlocfilehash: d494765d56bc06c2e7f90b99174622b00449116d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530212"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516973"
 ---
 # <a name="getnonindexableitemdetails-operation"></a>GetNonIndexableItemDetails 操作
 
-**Getnonindexableitemdetails** EWS 操作についての情報を検索します。 
+**GetNonIndexableItemDetails** EWS 操作に関する情報を検索します。 
   
-**Getnonindexableitemdetails**操作は、インデックスを作成できないアイテムに関する詳細を取得します。 これには、アイテム識別子、エラー コード、エラーの説明、アイテムのインデックス作成をしようとしたタイミング、ファイルに関する追加情報が含まれますが、これに限定されません。 
+**GetNonIndexableItemDetails 操作は**、インデックスを作成できないアイテムの詳細を取得します。 これには、アイテム識別子、エラー コード、エラーの説明、アイテムのインデックス作成をしようとしたタイミング、ファイルに関する追加情報が含まれますが、これに限定されません。 
   
 > [!NOTE]
-> このスキーマは複数のメールボックスを検索できることを示していますが、Exchange 2013 の最初のリリースバージョンでは、サービスは単一のメールボックス内のインデックス付けされていないアイテムについてのみアイテムの詳細を取得することをサポートしています。 
+> スキーマは複数のメールボックスを検索できると示しますが、最初のリリース バージョンの Exchange 2013 では、サービスは 1 つのメールボックス内のインデックスを作成できないアイテムのアイテムの詳細の取得のみをサポートします。 
   
 この操作は Exchange Server 2013 で導入されました。
   
 ## <a name="using-the-getnonindexableitemdetails-operation"></a>GetNonIndexableItemDetails 操作の使用
 
-**Getnonindexableitemdetails**操作は、インデックスを作成できないメールボックスアイテムを識別し、アイテムのインデックスを作成できない理由についての情報を提供します。 インデックスを作成できないアイテムは、探索検索時に検索されません。 
+**GetNonIndexableItemDetails** 操作は、インデックスを作成できないメールボックス アイテムを識別し、アイテムをインデックス化できない理由に関する情報を提供します。 インデックスを作成できないアイテムは、探索検索中は検索されません。 
   
 ### <a name="getnonindexableitemdetails-operation-soap-headers"></a>GetNonIndexableItemDetails 操作 SOAP ヘッダー
 
-**Getnonindexableitemdetails**操作では、次の表に記載されている SOAP ヘッダーを使用できます。 
+**GetNonIndexableItemDetails** 操作では、次の表に示す SOAP ヘッダーを使用できます。 
   
-|**ヘッダー名**|**要素**|**説明**|
+|**ヘッダー名**|**Element**|**説明**|
 |:-----|:-----|:-----|
-|**Get-managementrole** <br/> |[Get-managementrole](managementrole.md) <br/> |発信者が要求を行うために必要なサーバーの役割を指定します。 このヘッダーは、要求に適用されます。  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは応答に適用されます。  <br/> |
+|**ManagementRole** <br/> |[ManagementRole](managementrole.md) <br/> |呼び出し元が要求を行うのに必要なサーバーの役割を識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマ バージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは、応答に適用されます。  <br/> |
    
-## <a name="getnonindexableitemdetails-operation-request-example-get-the-details-of-an-item-that-cannot-be-indexed"></a>GetNonIndexableItemDetails 操作要求の例: インデックスを作成できないアイテムの詳細を取得します。
+## <a name="getnonindexableitemdetails-operation-request-example-get-the-details-of-an-item-that-cannot-be-indexed"></a>GetNonIndexableItemDetails 操作要求の例: インデックスを作成できないアイテムの詳細を取得する
 
-次の**Getnonindexableitemdetails**操作要求の例は、単一のメールボックスに対してインデックスを作成できないアイテムの詳細を要求する方法を示しています。 検索は、プライマリメールボックスとアーカイブメールボックスの両方に対して実行されます。 
+**GetNonIndexableItemDetails** 操作要求の次の例は、1 つのメールボックスに対してインデックスを作成できないアイテムの詳細を要求する方法を示しています。 検索は、プライマリ メールボックスとアーカイブ メールボックスの両方で実行されます。 
   
 > [!NOTE]
-> この例の従来のドメイン名はすべて、読みやすいように短縮されています。 
+> この例のすべての従来のドメイン名は、読みやすさを維持するために短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -71,15 +71,15 @@ ms.locfileid: "44530212"
   
 - [GetNonIndexableItemDetails](getnonindexableitemdetails.md)
     
-- [メールボックス (NonEmptyArrayOfLegacyDNsType)](mailboxes-nonemptyarrayoflegacydnstype.md)
+- [Mailboxes (NonEmptyArrayOfLegacyDNsType)](mailboxes-nonemptyarrayoflegacydnstype.md)
     
 - [LegacyDN](legacydn.md)
     
 - [SearchArchiveOnly](searcharchiveonly.md)
     
-## <a name="successful-getnonindexableitemdetails-operation-response"></a>成功した GetNonIndexableItemDetails 操作の応答
+## <a name="successful-getnonindexableitemdetails-operation-response"></a>GetNonIndexableItemDetails 操作応答の成功
 
-次の例は、 **Getnonindexableitemdetails**操作要求に対する正常な応答を示しています。1つのメールボックスに対してインデックスを作成できないアイテムを取得します。 この例のインデックス化できないアイテムは、バイナリファイル abc ファイルで、形式が不明です。 
+次の例は、1 つのメールボックスに対してインデックスを作成できないアイテムを取得する **GetNonIndexableItemDetails** 操作要求に対する正常な応答を示しています。 インデックスを作成できないこの例のアイテムは、不明な形式の binaryfile.abc ファイルです。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -123,11 +123,11 @@ ms.locfileid: "44530212"
 
 応答 SOAP 本文には、次の要素が含まれています。
   
-- [Getnonindexableitem、Response](getnonindexableitemdetailsresponse.md)
+- [GetNonIndexableItemDetailsResponse](getnonindexableitemdetailsresponse.md)
     
 - [ResponseCode](responsecode.md)
     
-- [Nonindexableitemの取得結果](nonindexableitemdetailsresult.md)
+- [NonIndexableItemDetailsResult](nonindexableitemdetailsresult.md)
     
 - [NonIndexableItemDetail](nonindexableitemdetail.md)
     
@@ -137,7 +137,7 @@ ms.locfileid: "44530212"
     
 - [ErrorDescription](errordescription.md)
     
-- [Ispartiのインデックス付き](ispartiallyindexed.md)
+- [IsPartiallyIndexed](ispartiallyindexed.md)
     
 - [IsPermanentFailure](ispermanentfailure.md)
     
@@ -151,7 +151,7 @@ ms.locfileid: "44530212"
     
 ## <a name="getnonindexableitemdetails-operation-error-response"></a>GetNonIndexableItemDetails 操作エラー応答
 
-次の例は、 **Getnonindexableitemdetails**操作要求へのエラー応答を示しています。 これは、複数のメールボックスからインデックスを作成できないアイテムのアイテムの詳細を取得する要求に対する応答です。 
+次の例は **、GetNonIndexableItemDetails** 操作要求に対するエラー応答を示しています。 これは、複数のメールボックスからインデックスを作成できないアイテムのアイテムの詳細を取得する要求に対する応答です。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -179,7 +179,7 @@ ms.locfileid: "44530212"
 
 エラー応答 SOAP 本文には、次の要素が含まれています。
   
-- [Getnonindexableitem、Response](getnonindexableitemdetailsresponse.md)
+- [GetNonIndexableItemDetailsResponse](getnonindexableitemdetailsresponse.md)
     
 - [MessageText](messagetext.md)
     
@@ -187,15 +187,15 @@ ms.locfileid: "44530212"
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-EWS で汎用的でこの操作に固有の追加のエラーコードについては、「応答」[を参照してください。](responsecode.md)
+EWS に汎用的で、この操作に固有の追加のエラー コードについては [、「ResponseCode」を参照してください](responsecode.md)。
   
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS 操作](ews-operations-in-exchange.md)
+- [EWS 操作 (Exchange](ews-operations-in-exchange.md)
     
-- [Getsearchablemailemail箱操作](getsearchablemailboxes-operation.md)
+- [GetSearchableMailboxes 操作](getsearchablemailboxes-operation.md)
     
-- [SearchMailboxes ボックスの操作](searchmailboxes-operation.md)
+- [SearchMailboxes 操作](searchmailboxes-operation.md)
     
 - [GetHoldOnMailboxes 操作](getholdonmailboxes-operation.md)
     

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Time
 api_type:
 - schema
 ms.assetid: be12e41e-6871-4f6b-b2d4-3dfa404f9ea1
-description: Time 要素は、標準時と夏時間の間で時刻が変更された時刻を表します。
-ms.openlocfilehash: c25d0bc3394fdfab42a29eab8b370bc4263618ed
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Time 要素は、標準時と夏時間の間で時刻が変化する時刻を表します。
+ms.openlocfilehash: 0c669340778496958ef6dff082e48b5b7f6209b5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465738"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523308"
 ---
 # <a name="time-timechangetype"></a>Time (TimeChangeType)
 
-**Time**要素は、標準時と夏時間の間で時刻が変更された時刻を表します。 
+**Time 要素** は、標準時と夏時間の間で時刻が変化する時刻を表します。 
   
 ```xml
 <Time/>
@@ -44,29 +44,29 @@ ms.locfileid: "44465738"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[日光](daylight.md) <br/> |夏時間から標準時までの時刻が変更された日付と時刻を表します。  <br/> |
-|[Standard](standard.md) <br/> |夏時間から標準時までの時刻が変更された日付と時刻を表します。  <br/> |
+|[Daylight](daylight.md) <br/> |夏時間から標準時に時刻が変更される日時を表します。  <br/> |
+|[Standard](standard.md) <br/> |夏時間から標準時に時刻が変更される日時を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-Text 値は、標準時と夏時間の間で時刻が変更された時刻を表します。
+テキスト値は、標準時と夏時間の間で時刻が変化する時刻を表します。
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

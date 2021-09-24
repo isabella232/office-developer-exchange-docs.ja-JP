@@ -4,29 +4,29 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 9f35f29f-204d-4178-9d8e-ba83af3afe43
-description: MdbDN 要素は、メールボックスデータベースの識別名を表します。
-ms.openlocfilehash: 6eb1ddbd7ebf725b38ddc9bc70434c918aaca39f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MdbDN 要素は、メールボックス データベースの識別名を表します。
+ms.openlocfilehash: b7f4762b7d2920981fe07c512223e52b38f1df0b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468391"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522647"
 ---
 # <a name="mdbdn-pox"></a>MdbDN (POX)
 
-**MdbDN**要素は、メールボックスデータベースの識別名を表します。 
+**MdbDN 要素** は、メールボックス データベースの識別名を表します。 
   
-[自動検出 (POX)](autodiscover-pox.md)
+[AutoDiscover (POX)](autodiscover-pox.md)
   
-[応答 (POX)](response-pox.md)
+[Response (POX)](response-pox.md)
   
-[アカウント (POX)](account-pox.md)
+[Account (POX)](account-pox.md)
   
-[プロトコル (POX)](protocol-pox.md)
+[Protocol (POX)](protocol-pox.md)
   
 [MdbDN (POX)](mdbdn-pox.md)
   
@@ -50,15 +50,15 @@ ms.locfileid: "44468391"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
+|[Protocol (POX)](protocol-pox.md) <br/> |クライアント アクセス サーバーの役割がインストールされている 2007 年Microsoft Exchange Serverコンピューターにクライアントを接続するための仕様が含まれている。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-Text 値は、メールボックスデータベースの識別名を表します。
+テキスト値は、メールボックス データベースの識別名を表します。
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+[POX 自動検出 XML 要素のExchange](pox-autodiscover-xml-elements-for-exchange.md)
 

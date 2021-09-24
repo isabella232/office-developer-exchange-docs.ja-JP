@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0073d195-75fd-4c89-97e0-2ad6d91f99f9
-description: ClientExtensions 要素には、アプリに関するユーザーおよび構成情報の配列が含まれています。
-ms.openlocfilehash: 016b4c910f3c21a20d72b926a1c568925aa9d37e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ClientExtensions 要素には、ユーザーの配列とアプリに関する構成情報が含まれる。
+ms.openlocfilehash: f9cd68ebdd0a376d57fe1e413ec094f8304c2cd3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461458"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59536890"
 ---
 # <a name="clientextensions"></a>ClientExtensions
 
-**Clientextensions**要素には、アプリに関するユーザーおよび構成情報の配列が含まれています。 
+**ClientExtensions 要素** には、ユーザーの配列とアプリに関する構成情報が含まれる。 
   
 ```XML
 <ClientExtensions>
@@ -38,13 +38,13 @@ ms.locfileid: "44461458"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ClientExtension](clientextension.md) <br/> |アプリに関するユーザーおよび構成情報が含まれています。  <br/> |
+|[ClientExtension](clientextension.md) <br/> |アプリに関するユーザー情報と構成情報が含まれる。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetClientExtensionResponse](getclientextensionresponse.md) <br/> |アプリの構成情報を取得するための応答を表します。  <br/> |
+|[GetClientExtensionResponse](getclientextensionresponse.md) <br/> |アプリに関する構成情報を取得する応答を表します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

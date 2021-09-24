@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5e7c5687-cb9e-4f0b-ac8f-b82591914a39
 description: ApprovalDecision 要素は、承認要求メッセージに対して行われた決定を指定します。
-ms.openlocfilehash: a8dc168edec882ba97cdea764f8d20c71ed85f8a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 903b75f04255a19ebb7a9b4d0e47b685f22d4339
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463448"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517232"
 ---
 # <a name="approvaldecision"></a>ApprovalDecision
 
-**Approvaldecision**要素は、承認要求メッセージに対して行われた決定を指定します。 
+**ApprovalDecision 要素** は、承認要求メッセージに対して行われた決定を指定します。 
   
 ```XML
 <ApprovalDecision> 1 | 2 </ApprovalDecision>
@@ -42,7 +42,7 @@ ms.locfileid: "44463448"
   
 ## <a name="text-value"></a>テキスト値
 
-**Approvaldecision**要素のテキスト値は、承認された場合は1、拒否した場合は2です。 
+**ApprovalDecision 要素のテキスト値** は、承認済みの場合は 1、拒否された場合は 2 です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,12 +55,12 @@ ms.locfileid: "44463448"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [ApprovalRequestData](approvalrequestdata.md)
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

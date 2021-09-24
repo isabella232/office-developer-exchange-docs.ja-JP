@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cfaea527-613c-4bbf-b174-f408147d9768
-description: WorkCitySortKey 要素には、ペルソナに関連付けられた勤務先市区町村の値の並べ替えキーが含まれています。
-ms.openlocfilehash: d5084882f30066cd8046af8fd18269f4af86020d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: WorkCitySortKey 要素には、ペルサに関連付けられた作業都市値の並べ替えキーが含まれます。
+ms.openlocfilehash: dad387065d484bb0940e7a3f0f4a3516407307fa
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459694"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509302"
 ---
 # <a name="workcitysortkey"></a>WorkCitySortKey
 
-**WorkCitySortKey**要素には、ペルソナに関連付けられた勤務先市区町村の値の並べ替えキーが含まれています。 
+**WorkCitySortKey** 要素には、ペルサに関連付けられた作業都市値の並べ替えキーが含まれます。 
   
 ```XML
 <WorkCitySortKey></WorkCitySortKey>
@@ -42,7 +42,7 @@ ms.locfileid: "44459694"
   
 ## <a name="text-value"></a>テキスト値
 
-**WorkCitySortKey**要素のテキスト値には、ペルソナを構成する連絡先の勤務先市区町村プロパティを並べ替えるための並べ替えキーが含まれています。 
+**WorkCitySortKey** 要素のテキスト値には、ペルサを構成する連絡先の作業都市プロパティを並べ替える並べ替えキーが含まれている。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44459694"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

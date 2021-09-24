@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 943c3d5d-7d29-4d70-932c-8a4fe44a0037
 description: GetReminders 要素は、アラームを取得する要求を指定します。
-ms.openlocfilehash: 8b869730f39876b838fbcbef3c39661238ed203c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 3f4e512d18adb12e27e7c132a54b5ff2238e2b27
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458300"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59535011"
 ---
 # <a name="getreminders"></a>GetReminders
 
-**Getreminders**要素は、アラームを取得する要求を指定します。 
+**GetReminders 要素は**、アラームを取得する要求を指定します。 
   
 ```XML
 <GetReminders>
@@ -40,7 +40,7 @@ ms.locfileid: "44458300"
   
 ### <a name="child-elements"></a>子要素
 
-[Begintime](begintime.md)  | [EndTime (ReminderMessageDataType)](endtime-remindermessagedatatype.md)  | [MaxItems](maxitems.md)  | [ReminderType](remindertype.md)
+[BeginTime](begintime.md)  | [EndTime (ReminderMessageDataType)](endtime-remindermessagedatatype.md)  | [MaxItems](maxitems.md)  | [ReminderType](remindertype.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -57,13 +57,13 @@ ms.locfileid: "44458300"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

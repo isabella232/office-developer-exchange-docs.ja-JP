@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: be838fc2-cfcb-4856-b095-a8e5366bb6c6
-description: Value 要素は、住所に関連付けられている情報を指定します。
-ms.openlocfilehash: 2d644ff45fe89061ccd90279773f3a5a5b7fe7cc
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Value 要素は、郵便番号に関連付けられた情報を指定します。
+ms.openlocfilehash: 2f017cfc513b9c22d65f8437565646506f3be1ab
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466473"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517344"
 ---
 # <a name="value-personapostaladdresstype"></a>Value (PersonaPostalAddressType)
 
-**Value**要素は、住所に関連付けられている情報を指定します。 
+**Value 要素は**、郵便番号に関連付けられた情報を指定します。 
   
 ```XML
 <Value>
@@ -51,7 +51,7 @@ ms.locfileid: "44466473"
   
 ### <a name="child-elements"></a>子要素
 
-[番地](street.md)  | [市区町村](city.md)  | [状態](state-ex15websvcsotherref.md)  | [国](country.md)  | [郵便](postalcode.md)  |  番号[Postofficebox が](postofficebox.md)  | [型 (string)](type-string.md)  | [緯度](latitude.md)  | [経度](longitude.md)  | [精度](accuracy.md)  | [高度](altitude.md)  | [AltitudeAccuracy](altitudeaccuracy.md)  | [FormattedAddress](formattedaddress.md)  | [Locationuri](locationuri.md)  | [Locationsource](locationsource.md)
+[Street](street.md)  | [City](city.md)  | [状態](state-ex15websvcsotherref.md)  | [国](country.md)  | [PostalCode](postalcode.md)  | [PostOfficeBox](postofficebox.md)  | [型 (文字列)](type-string.md)  | [緯度](latitude.md)  | [経度](longitude.md)  | [精度](accuracy.md)  | [高度](altitude.md)  | [AltitudeAccuracy](altitudeaccuracy.md)  | [FormattedAddress](formattedaddress.md)  | [LocationUri](locationuri.md)  | [LocationSource](locationsource.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -68,8 +68,8 @@ ms.locfileid: "44466473"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

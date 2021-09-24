@@ -5,28 +5,28 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Create
 api_type:
 - schema
 ms.assetid: cb5e64a2-66a5-4447-921e-7c13efb8f6bf
-description: Create 要素は、ローカルのクライアントストアに作成する単一のアイテムを識別します。
-ms.openlocfilehash: b9c0f28333594a6c17ee9581a227fc4773874fd6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Create 要素は、ローカル クライアント ストアで作成する 1 つのアイテムを識別します。
+ms.openlocfilehash: 2b36fad021c7ccb767eb80b31f71f12ef6cbbd22
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460800"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510336"
 ---
 # <a name="create-itemsync"></a>Create (ItemSync)
 
-**Create**要素は、ローカルのクライアントストアに作成する単一のアイテムを識別します。 
+**Create 要素は**、ローカル クライアント ストアで作成する 1 つのアイテムを識別します。 
   
 - [SyncFolderItemsResponse](syncfolderitemsresponse.md) 
 - [ResponseMessages](responsemessages.md) 
 - [SyncFolderItemsResponseMessage](syncfolderitemsresponsemessage.md) 
-- [変更 (アイテム)](changes-items.md) 
+- [Changes (Items)](changes-items.md) 
 - [Create (ItemSync)](create-itemsync.md)
   
 ```xml
@@ -103,38 +103,38 @@ ms.locfileid: "44460800"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Item](item.md) <br/> |作成する汎用の Exchange アイテムを表します。  <br/> |
-|[Message](message-ex15websvcsotherref.md) <br/> |作成する Exchange 電子メールメッセージを表します。  <br/> |
-|[CalendarItem](calendaritem.md) <br/> |作成する Exchange 予定表アイテムを表します。  <br/> |
-|[Contact](contact.md) <br/> |作成する Exchange の連絡先アイテムを表します。  <br/> |
+|[Item](item.md) <br/> |作成するアイテムのExchangeを表します。  <br/> |
+|[Message](message-ex15websvcsotherref.md) <br/> |作成するExchangeメッセージを表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |作成する予定表Exchangeを表します。  <br/> |
+|[Contact](contact.md) <br/> |作成する連絡先Exchangeを表します。  <br/> |
 |[DistributionList](distributionlist.md) <br/> |作成する配布リストを表します。  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |作成する会議メッセージを表します。  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |作成する会議出席依頼を表します。  <br/> |
 |[MeetingResponse](meetingresponse.md) <br/> |作成する会議の応答を表します。  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |作成する会議の取り消しを表します。  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |作成する会議のキャンセルを表します。  <br/> |
 |[タスク](task.md) <br/> |作成するタスクを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[変更 (アイテム)](changes-items.md) <br/> |クライアント上のアイテムと Exchange サーバー上のアイテムの間の相違点の種類を表す、変更の種類のシーケンス配列を含みます。  <br/> |
+|[Changes (Items)](changes-items.md) <br/> |クライアント上のアイテムとクライアント サーバー上のアイテムの違いの種類を表す変更の種類のシーケンス配列をExchangeします。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [SyncFolderItems 操作](syncfolderitems-operation.md)
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

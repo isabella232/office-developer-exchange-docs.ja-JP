@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c8294eee-6588-4e42-965d-c8261a4770c9
-description: UserDisabledExtensions 要素は、無効にされたアプリを一覧表示します。
-ms.openlocfilehash: 42fd16f342e8c5a4f7a5526cb7513cf77ba8246f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: UserDisabledExtensions 要素には、無効になっているアプリの一覧が表示されます。
+ms.openlocfilehash: e18eb1a7e53eab83c72fb6d974e25e7efbe2dd9c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44433680"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517372"
 ---
 # <a name="userdisabledextensions"></a>UserDisabledExtensions
 
-**UserDisabledExtensions**要素は、無効にされたアプリを一覧表示します。 
+**UserDisabledExtensions 要素には**、無効になっているアプリの一覧が表示されます。 
   
 ```XML
 <UserDisabledExtensions>
@@ -53,8 +53,8 @@ ms.locfileid: "44433680"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

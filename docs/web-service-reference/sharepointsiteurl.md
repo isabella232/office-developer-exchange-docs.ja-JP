@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: ITPro
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: de9a7e43-518e-49aa-9826-f54bab4279a3
-description: SharePointSiteURL 要素には、サイトメールボックスにリンクされている SharePoint サイトの Uniform Resource Locator (URL) が含まれています。
-ms.openlocfilehash: 461ca904e9a050d20b9e067cb40875939608c101
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SharePointSiteURL 要素には、サイト メールボックスにリンクされている SharePointの Uniform Resource Locator (URL) が含まれる。
+ms.openlocfilehash: c36dacadddf2706437a8a51dd2e115529210d542
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467306"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517682"
 ---
 # <a name="sharepointsiteurl"></a>SharePointSiteUrl
 
-**Sharepointsiteurl**要素には、サイトメールボックスにリンクされている SharePoint サイトの Uniform resource LOCATOR (URL) が含まれています。 
+**SharePointSiteURL** 要素には、サイト メールボックスにリンクされている SharePointの Uniform Resource Locator (URL) が含まれる。 
   
 ```XML
 <SharePointSiteURL></SharePointSiteURL>
@@ -43,7 +43,7 @@ ms.locfileid: "44467306"
   
 ## <a name="text-value"></a>テキスト値
 
-**Sharepointsiteurl**要素のテキスト値は、サイトメールボックスにリンクされている SharePoint サイトの URL です。 
+**SharePointSiteURL** 要素のテキスト値は、サイト メールボックスにリンクSharePointサイトの URL です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -56,8 +56,8 @@ ms.locfileid: "44467306"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

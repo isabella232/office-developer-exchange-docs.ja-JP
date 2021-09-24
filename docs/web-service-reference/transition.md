@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Transition
 api_type:
 - schema
 ms.assetid: 23ce171a-a9c9-47ed-a366-822777048eea
-description: Transition 要素は、タイムゾーンの切り替えを表します。
-ms.openlocfilehash: 05495eb4a493feedc88532cc4bc8b949493481f5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Transition 要素は、タイム ゾーンの遷移を表します。
+ms.openlocfilehash: c3dfe9116f73cb9d883984d20e01c8fb76982a77
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467495"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523301"
 ---
 # <a name="transition"></a>Transition
 
-**Transition**要素は、タイムゾーンの切り替えを表します。 
+**Transition 要素** は、タイム ゾーンの遷移を表します。 
   
 ```xml
 <Transition>
@@ -29,7 +29,7 @@ ms.locfileid: "44467495"
 </Transition>
 ```
 
- **遷移 Tiontype**
+ **TransitionType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -42,30 +42,30 @@ ms.locfileid: "44467495"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[To](to.md) <br/> |タイムゾーンの遷移のターゲットである[期間](period.md)[または時間を指定](transitionsgroup.md)します。  <br/> |
+|[To](to.md) <br/> |タイム ゾーン遷移 [の](period.md) ターゲットである Period または [TransitionsGroup](transitionsgroup.md) を指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[切り替わる](transitions.md) <br/> |タイムゾーンの遷移のコレクションを表します。  <br/> |
+|[Transitions](transitions.md) <br/> |タイム ゾーンの切り替えのコレクションを表します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされているコンピューター Microsoft Exchange Server EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

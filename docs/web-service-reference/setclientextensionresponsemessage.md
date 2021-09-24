@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3365e58c-adb3-4d92-92cc-acc95ce36cca
 description: SetClientExtensionResponseMessage 要素は、SetClientExtension 要求の応答メッセージを指定します。
-ms.openlocfilehash: 3743d2f1643bece044ff7b7c8ccac95bbd7401ea
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 0d0dbb0ba92760f36a0aeffe0089f82651bfb122
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468720"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517708"
 ---
 # <a name="setclientextensionresponsemessage"></a>SetClientExtensionResponseMessage
 
-**SetClientExtensionResponseMessage**要素は、 **setclientextension**要求の応答メッセージを指定します。 
+**SetClientExtensionResponseMessage** 要素は **、SetClientExtension** 要求の応答メッセージを指定します。 
   
 ```XML
 <SetClientExtensionResponseMessage>
@@ -39,7 +39,7 @@ ms.locfileid: "44468720"
   
 ### <a name="child-elements"></a>子要素
 
-[Messagetext](messagetext.md)  | 応答[Secmode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)
+[MessageText](messagetext.md)  | [ResponseCode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -56,8 +56,8 @@ ms.locfileid: "44468720"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

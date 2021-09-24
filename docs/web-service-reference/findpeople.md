@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 12c70441-77b9-4619-8e66-1b7e3a63ba48
-description: FindPeople 要素は、FindPeople 要求で使用されるデータのセットを指定します。 データには、次の要素の0つ以上が含まれます。ペルソナ図形 (省略可能)、インデックス付きページアイテムビュー、制限 (省略可能)、集計制限 (省略可能)、並べ替え順序 (省略可能)、親フォルダー Id、およびクエリ文字列 (省略可能)。
-ms.openlocfilehash: 4777601b7146ec857b5c79fa9d4ced59a7247889
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: FindPeople 要素は、FindPeople 要求で使用されるデータのセットを指定します。 データには、ペルサ図形 (オプション)、インデックス付きページ アイテム ビュー、制限 (オプション)、集計制限 (オプション)、並べ替え順序 (オプション)、親フォルダー ID、およびクエリ文字列 (オプション) の 0 個以上が含まれます。
+ms.openlocfilehash: 44070c79ad5d1615929a6169d1808cf365b7cab4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462902"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59535164"
 ---
 # <a name="findpeople"></a>FindPeople
 
-**Findpeople**要素は、findpeople 要求で使用されるデータのセットを指定します。 データには、次の要素の0つ以上が含まれます。ペルソナ図形 (省略可能)、インデックス付きページアイテムビュー、制限 (省略可能)、集計制限 (省略可能)、並べ替え順序 (省略可能)、親フォルダー Id、およびクエリ文字列 (省略可能)。 
+**FindPeople 要素は**、FindPeople 要求で使用されるデータのセットを指定します。 データには、ペルサ図形 (オプション)、インデックス付きページ アイテム ビュー、制限 (オプション)、集計制限 (オプション)、並べ替え順序 (オプション)、親フォルダー ID、およびクエリ文字列 (オプション) の 0 個以上が含まれます。 
   
 ```XML
 <FindPeople>
@@ -42,7 +42,7 @@ ms.locfileid: "44462902"
   
 ### <a name="child-elements"></a>子要素
 
-[PersonaShape](personashape.md)  | [Indexedpageitemview](indexedpageitemview.md)  | [制限](restriction.md)  | [集約 Ationrestriction](aggregationrestriction.md)  | [ソート順序](sortorder.md)  | [ParentFolderId (TargetFolderIdType)](parentfolderid-targetfolderidtype.md)  | [QueryString (QueryStringType)](querystring-querystringtype.md)
+[PersonaShape](personashape.md)  | [IndexedPageItemView](indexedpageitemview.md)  | [制限](restriction.md)  | [AggregationRestriction](aggregationrestriction.md)  | [SortOrder](sortorder.md)  | [ParentFolderId (TargetFolderIdType)](parentfolderid-targetfolderidtype.md)  | [QueryString (QueryStringType)](querystring-querystringtype.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -59,8 +59,8 @@ ms.locfileid: "44462902"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

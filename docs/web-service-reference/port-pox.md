@@ -1,34 +1,34 @@
 ---
-title: ポート (POX)
+title: Port (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 4046821a-d6f3-4764-82be-4011221ce7a3
-description: Port 要素は、ストアへの接続に使用されるポートを指定します。
-ms.openlocfilehash: 2da59e03a57b44fb12d14368d1b585ba845eacfe
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Port 要素は、ストアへの接続に使用するポートを指定します。
+ms.openlocfilehash: 5c29a0f760d8228a6e21d2e9287e69072fca557e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464015"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516497"
 ---
-# <a name="port-pox"></a>ポート (POX)
+# <a name="port-pox"></a>Port (POX)
 
-**Port**要素は、ストアへの接続に使用されるポートを指定します。 
+**Port 要素** は、ストアへの接続に使用するポートを指定します。 
   
-[自動検出 (POX)](autodiscover-pox.md)
+[AutoDiscover (POX)](autodiscover-pox.md)
   
-[応答 (POX)](response-pox.md)
+[Response (POX)](response-pox.md)
   
-[アカウント (POX)](account-pox.md)
+[Account (POX)](account-pox.md)
   
-[プロトコル (POX)](protocol-pox.md)
+[Protocol (POX)](protocol-pox.md)
   
-[ポート (POX)](port-pox.md)
+[Port (POX)](port-pox.md)
   
 ```xml
 <Port/>
@@ -50,19 +50,19 @@ ms.locfileid: "44464015"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
+|[Protocol (POX)](protocol-pox.md) <br/> |クライアント アクセス サーバーの役割がインストールされている 2007 年Microsoft Exchange Serverコンピューターにクライアントを接続するための仕様が含まれている。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-Text 値は、Exchange サーバーへのアクセスに使用されるポートを表します。
+テキスト値は、サーバーへのアクセスに使用されるポートExchangeします。
   
 ## <a name="remarks"></a>注釈
 
-[サーバー (POX)](server-pox.md)要素に URL が含まれている場合、**ポート**値は使用されません。 
+Server  [(POX)](server-pox.md)要素に URL が含まれている場合、Port 値は使用されません。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+[POX 自動検出 XML 要素のExchange](pox-autodiscover-xml-elements-for-exchange.md)
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 32fa8946-3d5d-4123-8127-efc2ac369553
-description: Created Time 要素は、ペルソナが作成された日時を指定します。
-ms.openlocfilehash: 81ad700121a48355426da7432de413daacef66cd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: CreationTime 要素は、ペルサが作成された時間を指定します。
+ms.openlocfilehash: d35d1901dc8bcd0314fa9fd4a215b11104b5555b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44443831"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59536148"
 ---
 # <a name="creationtime"></a>CreationTime
 
-Created **time**要素は、ペルソナが作成された日時を指定します。 
+**CreationTime 要素** は、ペルサが作成された時間を指定します。 
   
 ```XML
 <CreationTime></CreationTime>
@@ -42,7 +42,7 @@ Created **time**要素は、ペルソナが作成された日時を指定しま�
   
 ## <a name="text-value"></a>テキスト値
 
-**状態要素の**テキスト値は、ペルソナが作成された日付と時刻です。 
+CreationTime 要素の **テキスト値** は、ペルサが作成された日時です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ Created **time**要素は、ペルソナが作成された日時を指定しま�
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

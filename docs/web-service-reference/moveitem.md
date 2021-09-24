@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MoveItem
 api_type:
 - schema
 ms.assetid: a4593377-22dd-415f-b01d-387389ef650f
-description: MoveItem 要素は、Exchange ストア内のアイテムを移動する要求を定義します。
-ms.openlocfilehash: 61dbb91cc20a71f50999241b3daa21bf8ebfbcc8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MoveItem 要素は、ストア内のアイテムを移動する要求をExchangeします。
+ms.openlocfilehash: 5df569722534b8a248da64b71f21219866173aab
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530402"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509603"
 ---
 # <a name="moveitem"></a>MoveItem
 
-**Moveitem**要素は、Exchange ストア内のアイテムを移動する要求を定義します。 
+**MoveItem 要素は**、アイテムストア内のアイテムを移動する要求をExchangeします。 
   
 ```XML
 <MoveItem>
@@ -44,8 +44,8 @@ ms.locfileid: "44530402"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ToFolderId](tofolderid.md) <br/> |移動されたアイテムの移動先のフォルダーを表します。  <br/> |
-|[ItemIds](itemids.md) <br/> |[ToFolderId](tofolderid.md)要素によって表されるフォルダーに移動する、識別されたアイテムの配列を格納します。  <br/> |
+|[ToFolderId](tofolderid.md) <br/> |移動したアイテムの移動先フォルダーを表します。  <br/> |
+|[ItemIds](itemids.md) <br/> |[ToFolderId](tofolderid.md)要素で表されるフォルダーに移動する、識別されたアイテムの配列を格納します。  <br/> |
 |[ReturnNewItemIds](returnnewitemids.md) <br/> |新しいアイテムのアイテム識別子が応答で返されるかどうかを示します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
@@ -65,9 +65,9 @@ ms.locfileid: "44530402"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -76,5 +76,5 @@ ms.locfileid: "44530402"
 [MoveItem 操作](moveitem-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -3,15 +3,15 @@ title: Exchange での EWS の削除に関連するメールボックス イベ�
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 83511eea-e0b5-4ef0-83b1-0c5434e6d3ab
 description: Exchange で EWS を使用してアイテムを削除する場合に、発生するメールボックス イベントを検出します。
-ms.openlocfilehash: c3d98ff798e3d0f6d214111d51da2c81278fd17d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: fa04d49f02cfec621f00a9b51b121cff22ca393b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457656"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510415"
 ---
 # <a name="pull-notifications-for-ews-deletion-related-mailbox-events-in-exchange"></a>Exchange での EWS の削除に関連するメールボックス イベントのプル通知
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c5624a87-3436-40ce-8d6b-cc01eecab64d
-description: Action 要素には、Exchange サーバーがアプリに対して実行するアクションが含まれています。
-ms.openlocfilehash: 29579e26377edacb5fb0bb8406144eeb116b8d15
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Action 要素には、サーバーがアプリで実行Exchangeアクションが含まれる。
+ms.openlocfilehash: a0f5c2743ef976db2faddbb7509a8a015ef4dd8f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529687"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510380"
 ---
 # <a name="action-setclientextensionactiontype"></a>Action (SetClientExtensionActionType)
 
-**Action**要素には、Exchange サーバーがアプリに対して実行するアクションが含まれています。 
+**Action 要素** には、サーバーがアプリで実行Exchangeアクションが含まれる。 
   
 ```XML
 <Action ActionId="" ExtensionId="">
@@ -34,28 +34,28 @@ ms.locfileid: "44529687"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|ActionId  <br/> |アクションの id を指定します。 この属性は必須です。  <br/> |
+|ActionId  <br/> |アクションの識別子を指定します。 この属性は必須です。  <br/> |
 |ExtensionId  <br/> |拡張機能の識別子を指定します。 この属性は省略可能です。  <br/> |
    
 #### <a name="actionid"></a>ActionId
 
 |**値**|**説明**|
 |:-----|:-----|
-|Configure  <br/> |構成操作を示します。  <br/> |
-|Install  <br/> |インストールアクションを示します。  <br/> |
-|Uninstall  <br/> |アンインストールアクションを示します。  <br/> |
+|Configure  <br/> |構成アクションを示します。  <br/> |
+|Install  <br/> |インストール アクションを示します。  <br/> |
+|アンインストール  <br/> |アンインストール アクションを示します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ClientExtension](clientextension.md) <br/> |アプリに関するユーザーおよび構成情報が含まれています。  <br/> |
+|[ClientExtension](clientextension.md) <br/> |アプリに関するユーザー情報と構成情報が含まれる。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Actions (ArrayOfSetClientExtensionActionsType)](actions-arrayofsetclientextensionactionstype.md) <br/> |**Action**要素の配列を指定します。  <br/> |
+|[Actions (ArrayOfSetClientExtensionActionsType)](actions-arrayofsetclientextensionactionstype.md) <br/> |Action 要素の配列 **を指定** します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -69,10 +69,10 @@ ms.locfileid: "44529687"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

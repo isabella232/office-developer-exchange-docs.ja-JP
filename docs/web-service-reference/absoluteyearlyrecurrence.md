@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - AbsoluteYearlyRecurrence
 api_type:
 - schema
 ms.assetid: 96f53e2c-3893-4f6e-a78a-ac179f45c5db
-description: AbsoluteYearlyRecurrence 要素は、年単位の定期的なパターンを表します。
-ms.openlocfilehash: 19b617dfd5c0a3d206d62439c880da084fd5f5f0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: AbsoluteYearlyRecurrence 要素は、年次の定期的なパターンを表します。
+ms.openlocfilehash: b7aedae92900fcac724b3047470568036a40c49e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460415"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510394"
 ---
 # <a name="absoluteyearlyrecurrence"></a>AbsoluteYearlyRecurrence
 
-**AbsoluteYearlyRecurrence**要素は、年単位の定期的なパターンを表します。 
+**AbsoluteYearlyRecurrence 要素は**、年次の定期的なパターンを表します。 
   
 ```xml
 <AbsoluteYearlyRecurrence>
@@ -43,30 +43,30 @@ ms.locfileid: "44460415"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[DayOfMonth](dayofmonth.md) <br/> |定期的なアイテムが発生する月の日付を表します。 このプロパティの値の範囲は、1 ~ 31 です。 特定の月の場合、この値はその月の日数よりも長くなるため、月の最後の日はこのプロパティの値と見なされます。  <br/> |
-|[月 (アイテムの定期的な予定)](month-item-recurrence.md) <br/> |年単位の定期的なアイテムが発生する月を表します。  <br/> |
+|[DayOfMonth](dayofmonth.md) <br/> |定期的なアイテムが発生する月の日を表します。 このプロパティの値の範囲は 1 ~ 31 です。 特定の月の場合、この値が月の日数より大きい場合は、このプロパティの月の最後の日が想定されます。  <br/> |
+|[Month (定期的なアイテム)](month-item-recurrence.md) <br/> |年次定期的なアイテムが発生する月を示します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[定期的なアイテム (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |定期的なタスクの定期的なアイテムの情報が含まれています。  <br/> |
-|[Recurrence (RecurrenceType)](recurrence-recurrencetype.md) <br/> |予定表アイテムと会議出席依頼の定期的なパターンを含みます。  <br/> |
+|[Recurrence (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |定期的なタスクの定期的な情報が含まれています。  <br/> |
+|[Recurrence (RecurrenceType)](recurrence-recurrencetype.md) <br/> |予定表アイテムと会議出席依頼の定期的なパターンが含まれます。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空にできる  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

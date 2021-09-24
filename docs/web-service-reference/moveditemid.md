@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7d5425ab-1e75-43d1-b801-802ff5139df6
-description: MovedItemId 要素は、MarkAsJunk 操作によって移動されたアイテムの id を指定します。
-ms.openlocfilehash: 5cf8800ec672278691348bbcd8c6c8cc7a12905b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MovedItemId 要素は、MarkAsJunk 操作によって移動されたアイテムの識別子を指定します。
+ms.openlocfilehash: 0775aaed119242fc2a2057fb20807d5be30692e5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468615"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509596"
 ---
 # <a name="moveditemid"></a>MovedItemId
 
-**Moveditemid**要素は、 **markasjunk**操作によって移動されたアイテムの id を指定します。 
+**MovedItemId** 要素は **、MarkAsJunk** 操作によって移動されたアイテムの識別子を指定します。 
   
 ```XML
 <MovedItemId Id="" ChangeKey=""/>
@@ -32,8 +32,8 @@ ms.locfileid: "44468615"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|ID  <br/> |**Id**属性の値は、 **markasjunk**操作によって移動されるアイテムのアイテム識別子です。 移動後も、アイテムの識別子は変わりません。  <br/> |
-|ChangeKey  <br/> |**Changekey**属性の値は、移動されたアイテムの変更キーです。 **Markasjunk**操作によってアイテムが移動された後に、change キーが変更されます。  <br/> |
+|ID  <br/> |Id 属性の値は **、MarkAsJunk** 操作によって移動されるアイテムのアイテム識別子です。  アイテム識別子は、移動後も同じままです。  <br/> |
+|ChangeKey  <br/> |**ChangeKey** 属性の値は、移動したアイテムの変更キーです。 **MarkAsJunk** 操作によってアイテムを移動すると、変更キーが変更されます。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -54,8 +54,8 @@ ms.locfileid: "44468615"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

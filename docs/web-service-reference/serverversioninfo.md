@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ServerVersionInfo
 api_type:
 - schema
 ms.assetid: c04a6872-ca27-432b-aac2-36b023d0afc6
-description: ServerVersionInfo 要素は、Microsoft Exchange Server のバージョン番号を表します。
-ms.openlocfilehash: 5bd1fbd8fdee584a9d272fa8ab82f2a31c1357fe
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ServerVersionInfo 要素は、バージョン番号Microsoft Exchange Server表します。
+ms.openlocfilehash: 6907559e1ac98981028a017b64a38a343c36da70
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466830"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517715"
 ---
 # <a name="serverversioninfo"></a>ServerVersionInfo
 
-**ServerVersionInfo**要素は、Microsoft Exchange Server のバージョン番号を表します。 
+**ServerVersionInfo 要素** は、バージョン番号Microsoft Exchange Server表します。 
   
 ```xml
 <ServerVersionInfo MajorVersion="" MinorVersion="" MajorBuildNumber="" MinorBuildNumber="" Version="" />
@@ -35,11 +35,11 @@ ms.locfileid: "44466830"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|MajorVersion  <br/> |メジャーバージョン番号について説明します。  <br/> |
-|MinorVersion  <br/> |マイナーバージョン番号を記述します。  <br/> |
-|MajorBuildNumber  <br/> |主要なビルド番号を記述します。  <br/> |
-|MinorBuildNumber または  <br/> |マイナービルド番号を記述します。  <br/> |
-|バージョン  <br/> |Exchange Web サービス (EWS) スキーマのバージョンについて説明します。  <br/> |
+|MajorVersion  <br/> |メジャー バージョン番号について説明します。  <br/> |
+|MinorVersion  <br/> |マイナー バージョン番号について説明します。  <br/> |
+|MajorBuildNumber  <br/> |メジャー ビルド番号を説明します。  <br/> |
+|MinorBuildNumber  <br/> |マイナー ビルド番号について説明します。  <br/> |
+|バージョン  <br/> |Web サービス (EWS) Exchangeバージョンについて説明します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -51,22 +51,22 @@ ms.locfileid: "44466830"
   
 ## <a name="remarks"></a>注釈
 
-この要素は、Exchange Web サービス応答メッセージの SOAP ヘッダーで返されます。
+この要素は、Web Services 応答メッセージの SOAP ヘッダー Exchange返されます。
   
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの EWS 仮想ディレクトリにあります。 
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされているコンピューター Microsoft Exchange Server EWS 仮想ディレクトリにあります。 
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空にできる  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

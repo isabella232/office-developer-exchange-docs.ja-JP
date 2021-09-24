@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: b2b409b1-ea3d-41f4-be0b-ff4c780fc23e
 description: GetFederationInformationResponseMessage 要素は、GetFederationInformation 操作 (SOAP) 要求への応答を定義します。
-ms.openlocfilehash: c3ec4517515e21dcf45cdee5c27c0f17894f8d0b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 34c0efb091311d3aaed0b92d67ac9508f8259664
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460037"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523168"
 ---
 # <a name="getfederationinformationresponsemessage-soap"></a>GetFederationInformationResponseMessage (SOAP)
 
-**GetFederationInformationResponseMessage**要素は、 [GETFEDERATIONINFORMATION 操作 (SOAP)](getfederationinformation-operation-soap.md)要求への応答を定義します。 
+**GetFederationInformationResponseMessage** 要素は [、GetFederationInformation 操作 (SOAP)](getfederationinformation-operation-soap.md)要求への応答を定義します。 
   
 ```XML
 <GetFederationInformationResponseMessage>
@@ -39,7 +39,7 @@ ms.locfileid: "44460037"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Response (GetFederationInformation) (SOAP)](response-getfederationinformationsoap.md) <br/> |[GetFederationInformation 操作 (SOAP)](getfederationinformation-operation-soap.md)応答情報を格納します。  <br/> |
+|[Response (GetFederationInformation) (SOAP)](response-getfederationinformationsoap.md) <br/> |[GetFederationInformation 操作 (SOAP) 応答情報が](getfederationinformation-operation-soap.md)含まれる。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -51,8 +51,8 @@ ms.locfileid: "44460037"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

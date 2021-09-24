@@ -5,15 +5,15 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9347d5f6-95bb-4045-9c86-0dc0ded24fe8
 description: Exchange 2013 の CHKSGFILES API に関するリファレンス情報について紹介します。
-ms.openlocfilehash: 38b1f2c900767c22594636f0c6ddf4855961aec4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 2daf31c41a47684b85ede196b415884335c3ca79
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526733"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510534"
 ---
 # <a name="cchksgfiles-class-reference"></a>CChkSGFiles クラスの参照
 
@@ -21,26 +21,26 @@ Exchange 2013 の CHKSGFILES API に関するリファレンス情報につい�
   
 **製品:** Exchange Server 2013 
   
-CHKSGFILES API を使用すると、バックアップおよび復元アプリケーションで、Exchange Server 2013 トランザクションログファイルとデータベースの整合性をプログラムによって確認できます。 この API は、ボリューム シャドウ コピー サービス (VSS) を使用するバックアップおよび復元アプリケーションで使用できます。
+CHKSGFILES API を使用すると、アプリケーションのバックアップと復元を行って、Exchange Server 2013 トランザクション ログ ファイルとデータベースの整合性をプログラムで検証できます。 この API は、ボリューム シャドウ コピー サービス (VSS) を使用するバックアップおよび復元アプリケーションで使用できます。
   
 > [!NOTE]
-> ストレージグループは、Exchange 2013 では使用できません。 ストレージグループのサポートは、Exchange Server 2010 以降のバージョンの Exchange から削除されました。 Exchange 2010 より前のバージョンの Exchange でデータベースおよびストレージグループとの下位互換性を維持するために、CHKSGFILES API ではストレージグループを指定できます。 Exchange 2013 データベースに対して CHKSGFILES を実行するときは、ストレージグループ識別子を指定するパラメーターを空の文字列に設定する必要があります。 
+> Storageグループは 2013 年Exchangeできません。 ストレージ グループのサポートは、2010 年ExchangeバージョンExchange Serverされました。 Exchange のバージョンが Exchange 2010 より前のバージョンのデータベースおよびストレージ グループとの下位互換性を保つには、CHKSGFILES API を使用してストレージ グループを指定できます。 CHKSGFILES を 2013 Exchangeデータベースに対して実行する場合は、ストレージ グループ識別子を指定するパラメーターを空の文字列に設定する必要があります。 
   
 ## <a name="file-location"></a>ファイルの場所
 <a name="bk_fileslocation"> </a>
 
-CHKSGFILES API は、Exchange 2013 の一部として出荷されます。 この API は、メールボックス サーバーの役割をインストールしたコンピューター上で使用できます。 
+CHKSGFILES API は、2013 年にExchangeされます。 この API は、メールボックス サーバーの役割をインストールしたコンピューター上で使用できます。 
   
 既定では、CHKSGFILES DLL は C:\Program Files\Microsoft\Exchange\V15\Bin ディレクトリにインストールされます。
   
-Exchange 2013 には、CHKSGFILES API の64ビット (amd64) バージョンのみが含まれています。 
+Exchange 2013 には、CHKSGFILES API の 64 ビット (amd64) バージョンだけが含まれています。 
   
-CHKSGFILE ライブラリおよび CHKSGFILES のヘッダーファイルを含む .zip ファイルは、 [Microsoft ダウンロードセンター](https://www.microsoft.com/download/details.aspx?id=36802)からカスタムアプリケーションで使用するためにダウンロードできます。
+カスタム アプリケーションで使用する CHKSGFILE.lib ライブラリと CHKSGFILES.hxx ヘッダー ファイルを含む .zip ファイルを [Microsoft](https://www.microsoft.com/download/details.aspx?id=36802)ダウンロード センターからダウンロードできます。
   
 ## <a name="development-languages"></a>開発言語
 <a name="bk_developmentlanguages"> </a>
 
-CHKSGFILES API は、visual studio 2005 (ネイティブ C/c + +) 以降のバージョンの Visual Studio で使用することを目的としています。 CHKSGFILES API は、マネージ コードでの使用を目的としていません。 COM 相互運用機能アセンブリは CHKSGFILES を使用して作成できますが、Exchange 2013 でサポートされている COM 相互運用機能アセンブリは提供していません。
+CHKSGFILES API は、ネイティブ C/C++ の Visual Studio 2005 Visual Studioバージョンで使用することを目的とします。 CHKSGFILES API は、マネージ コードでの使用を目的としていません。 CHKSGFILES を使用して COM 相互運用機能アセンブリを作成することもできますが、サポートされている COM 相互運用機能アセンブリは 2013 年Exchangeされません。
   
 ## <a name="in-this-section"></a>このセクションの内容
 <a name="bk_inthissection"> </a>

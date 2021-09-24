@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - WorkingPeriod
 api_type:
 - schema
 ms.assetid: 3b4e48af-9880-42b9-a0dc-dae7ac43c264
-description: WorkingPeriod 要素には、メールボックスユーザーの勤務週の曜日と時間が含まれます。
-ms.openlocfilehash: 5c217169fb193d4bb6dae4e18570873d55de6127
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: WorkingPeriod 要素には、メールボックス ユーザーの勤務週の日と時間が含まれる。
+ms.openlocfilehash: 052d0e053b5a5c29da093bc63ddf5d2c9e640541
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459680"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59537220"
 ---
 # <a name="workingperiod"></a>WorkingPeriod
 
-**WorkingPeriod**要素には、メールボックスユーザーの勤務週の曜日と時間が含まれます。 
+**WorkingPeriod 要素** には、メールボックス ユーザーの勤務週の日と時間が含まれる。 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -58,28 +58,28 @@ ms.locfileid: "44459680"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[DayOfWeek (WorkingPeriod)](dayofweek-workingperiod.md) <br/> |メールボックスユーザーに対してスケジュールされた稼働日の一覧が含まれます。  <br/> |
-|[StartTimeInMinutes](starttimeinminutes.md) <br/> |メールボックスユーザーの稼働日の開始を表します。  <br/> |
-|[EndTimeInMinutes](endtimeinminutes.md) <br/> |メールボックスユーザーの稼働日の終了日を表します。  <br/> |
+|[DayOfWeek (WorkingPeriod)](dayofweek-workingperiod.md) <br/> |メールボックス ユーザーにスケジュールされている作業日の一覧を格納します。  <br/> |
+|[StartTimeInMinutes](starttimeinminutes.md) <br/> |メールボックス ユーザーの作業日の開始日を表します。  <br/> |
+|[EndTimeInMinutes](endtimeinminutes.md) <br/> |メールボックス ユーザーの作業日の終了日を表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[WorkingPeriodArray](workingperiodarray.md) <br/> |メールボックスユーザーの作業期間情報が保存されています。  <br/> この要素の XPath 式を次に示します。  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/WorkingPeriodArray` <br/> |
+|[WorkingPeriodArray](workingperiodarray.md) <br/> |メールボックス ユーザーの作業期間情報が含まれる。  <br/> 次に、この要素の XPath 式を示します。  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/WorkingPeriodArray` <br/> |
    
 ## <a name="remarks"></a>注釈
 
-すべての子要素が発生する順序で一覧表示されます。 この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+すべての子要素は、その子要素が発生する順序で一覧表示されます。 この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -90,5 +90,5 @@ ms.locfileid: "44459680"
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[ユーザーの空き時間情報の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[ユーザーの可用性の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 
