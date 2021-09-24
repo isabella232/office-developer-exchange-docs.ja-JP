@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6ad95936-f61b-431a-9d86-df160b5d4b2d
-description: Emails2 要素には、EmailAddressAttributedValue 値の配列と、関連付けられているペルソナのソース attributions の識別子が含まれます。
-ms.openlocfilehash: b9445dfdc556ade1ad96d6e56c35ec1e56627e8c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Emails2 要素には、EmailAddressAttributedValue 値の配列と、関連付けられたペルサのソース属性の識別子が含まれます。
+ms.openlocfilehash: 4f72dc160607bc2b92d25c9e62ea5a73d5f8fc6a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463413"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520788"
 ---
 # <a name="emails2"></a>Emails2
 
-**Emails2**要素には、 **EmailAddressAttributedValue**値の配列と、関連付けられているペルソナのソース attributions の識別子が含まれます。 
+**Emails2 要素には****、EmailAddressAttributedValue** 値の配列と、関連付けられたペルサのソース属性の識別子が含まれます。 
   
 ```XML
 <Emails2>
@@ -38,13 +38,13 @@ ms.locfileid: "44463413"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[EmailAddressAttributedValue](emailaddressattributedvalue.md) <br/> |電子メールアドレスの配列のインスタンスと、それに関連付けられている attributions を指定します。  <br/> |
+|[EmailAddressAttributedValue](emailaddressattributedvalue.md) <br/> |電子メール アドレスの配列とその関連付けられた属性のインスタンスを指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ユーザー](persona.md) <br/> |**Getpersona**要求によって返される一連のペルソナデータを指定します。  <br/> |
+|[ユーザー](persona.md) <br/> |**GetPersona** 要求によって返されるペルソナ データのセットを指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -58,12 +58,12 @@ ms.locfileid: "44463413"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

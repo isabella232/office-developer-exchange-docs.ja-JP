@@ -4,19 +4,19 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 394f6015-721b-4800-9286-039d430f09b3
 description: DocumentSharingLocations 要素には、ドキュメント共有場所の場所とメタデータ情報の一覧が含まれています。
-ms.openlocfilehash: af8b076c7a3bd26355a53457a43f4a5f86bf517e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 179ad59e51b0519fa95b4031f5c9df52a44dba1a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457040"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538339"
 ---
 # <a name="documentsharinglocations-soap"></a>DocumentSharingLocations (SOAP)
 
-**Documentsharinglocations**要素には、ドキュメント共有場所の場所とメタデータ情報の一覧が含まれています。 
+**DocumentSharingLocations** 要素には、ドキュメント共有場所の場所とメタデータ情報の一覧が含まれています。 
   
 ```XML
 <DocumentSharingLocations>
@@ -37,7 +37,7 @@ ms.locfileid: "44457040"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[DocumentSharingLocation (SOAP)](documentsharinglocation-soap.md) <br/> |ドキュメント共有の場所の場所とメタデータが保存されています。  <br/> |
+|[DocumentSharingLocation (SOAP)](documentsharinglocation-soap.md) <br/> |ドキュメント共有場所の場所とメタデータを格納します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -51,12 +51,12 @@ ms.locfileid: "44457040"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [GetUserSettings 操作 (SOAP)](getusersettings-operation-soap.md)
 - [Exchange 用自動検出 Web サービス リファレンス](autodiscover-web-service-reference-for-exchange.md)
-- [Exchange 2013 の SOAP 自動検出 XML 要素](soap-autodiscover-xml-elements-for-exchange-2013.md)
+- [SOAP 自動検出 XML 要素 (2013 Exchange)](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

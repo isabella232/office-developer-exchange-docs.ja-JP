@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 00566965-6cbd-4f31-9fa9-85b3e5559c0c
 description: GetNonIndexableItemDetailsResponseMessage 要素は、GetNonIndexableItemDetails 要求の応答メッセージを指定します。
-ms.openlocfilehash: 4cf6b422cc29b20b09d05ea45628fa7133b437b2
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 4bd0abe287f7165a5f7bcfe2d89731ddb62ab23c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456522"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520529"
 ---
 # <a name="getnonindexableitemdetailsresponsemessage"></a>GetNonIndexableItemDetailsResponseMessage
 
-**GetNonIndexableItemDetailsResponseMessage**要素は、 **Getnonindexableitemdetails**要求の応答メッセージを指定します。 
+**GetNonIndexableItemDetailsResponseMessage** 要素は **、GetNonIndexableItemDetails** 要求の応答メッセージを指定します。 
   
 ```XML
 <GetNonIndexableItemDetailsResponseMessage>
@@ -29,7 +29,7 @@ ms.locfileid: "44456522"
 </GetNonIndexableItemDetailsResponseMessage>
 ```
 
- **Getnonindexableitem/[Responsemessagetype]**
+ **GetNonIndexableItemDetailsResponseMessageType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -40,7 +40,7 @@ ms.locfileid: "44456522"
   
 ### <a name="child-elements"></a>子要素
 
-[Messagetext](messagetext.md)  | 応答[Secmode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [Nonindexableitemの取得結果](nonindexableitemdetailsresult.md)
+[MessageText](messagetext.md)  | [ResponseCode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [NonIndexableItemDetailsResult](nonindexableitemdetailsresult.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -57,8 +57,8 @@ ms.locfileid: "44456522"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

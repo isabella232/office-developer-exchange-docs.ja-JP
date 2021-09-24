@@ -3,15 +3,15 @@ title: Exchange において EWS を使用してメール メッセージに応�
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9d584991-4d67-4d36-ae2f-99970af8488f
 description: Exchange で EWS マネージ API または EWS を使用してメール メッセージに応答する方法について説明します。
-ms.openlocfilehash: 81599051f603654cdf8a50b789b37d7e76664a53
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 97928420a304e6683bc571230650e2756083ccf5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455710"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513095"
 ---
 # <a name="respond-to-email-messages-by-using-ews-in-exchange"></a>Exchange において EWS を使用してメール メッセージに応答する
 
@@ -29,11 +29,11 @@ EWS マネージ API または EWS を使用して、メッセージに返信し
 ## <a name="reply-to-an-email-message-by-using-the-ews-managed-api"></a>EWS マネージ API を使用してメール メッセージに返信する
 <a name="bk_replyewsma"> </a>
 
-EWS マネージ API には、メッセージへの応答に使用できる [ Reply ](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.reply%28v=exchg.80%29.aspx) と [CreateReply](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.createreply%28v=exchg.80%29.aspx) という 2 つのメソッドがあります。 **Reply** メソッドは、2 つのパラメーターだけを取ります。既存の本文の先頭に追加する応答メッセージと、すべての受信者に送信するか (ture) 送信者だけに送信するか (false) を指定する **Boolean** 値です。 他の受信者をメッセージに追加したり、応答に追加プロパティを設定したり、添付物を追加したりする必要がある場合は、**CreateReply** メソッドを使用します。このメソッドでは、[EmailMessage](email-properties-and-elements-in-ews-in-exchange.md) オブジェクトで使用可能なすべての[ファースト クラスのプロパティ](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx)を設定できます。 
+EWS マネージ API には、メッセージへの応答に使用できる [ Reply ](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.reply%28v=exchg.80%29.aspx) と [CreateReply](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.createreply%28v=exchg.80%29.aspx) という 2 つのメソッドがあります。 **Reply** メソッドは、2 つのパラメーターだけを取ります。既存の本文の先頭に追加する応答メッセージと、すべての受信者に送信するか (ture) 送信者だけに送信するか (false) を指定する **Boolean** 値です。 他の受信者をメッセージに追加したり、応答に追加プロパティを設定したり、添付物を追加したりする必要がある場合は、**CreateReply** メソッドを使用します。このメソッドでは、[EmailMessage](email-properties-and-elements-in-ews-in-exchange.md) オブジェクトで使用可能なすべての [ファースト クラスのプロパティ](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx)を設定できます。 
   
 次のコード例は、**Reply** メソッドを使用してメール メッセージに応答する方法を示しています。 
   
-この例では、**service** が有効な [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーから既に認証されていると想定しています。 ローカル変数 *ItemId* は、対応するアイテムの [Id](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) です。 この例では、[FindRecentlySent メソッド](#bk_findlast)を呼び出して、メッセージに返信済みのマークが付けられたことを確認します。 
+この例では、**service** が有効な [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 ローカル変数 *ItemId* は、対応するアイテムの [Id](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) です。 この例では、[FindRecentlySent メソッド](#bk_findlast)を呼び出して、メッセージに返信済みのマークが付けられたことを確認します。 
   
 ```cs
 // As a best practice, limit the properties returned by the Bind method to only those that are required.
@@ -82,7 +82,7 @@ reply.SendAndSaveCopy();
 ## <a name="reply-to-an-email-message-by-using-ews"></a>EWS を使用してメール メッセージに返信する
 <a name="bk_replyews"> </a>
 
-次のコード例は、EWS を使用してメッセージに返信する方法を示しています。 **MessageDisposition** 属性が **SendAndSaveCopy** に設定されている [CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) 操作を使用して、メッセージを送信し、送信済みアイテム フォルダーに応答を保存します。 [ReplyAllToItem](https://msdn.microsoft.com/library/8ca970ca-ca73-40db-9233-7b271cc5f44f%28Office.15%29.aspx) 要素を [Items](https://msdn.microsoft.com/library/d61ef1cc-ddfc-480a-9625-7b436cb33ae0%28Office.15%29.aspx) 要素の子として含めてメッセージ スレッド上の全員に返信するか、[ReplyToItem](https://msdn.microsoft.com/library/35ee751a-41c0-4216-ad8b-78f7ada43a2f%28Office.15%29.aspx) 要素を含めて送信者にのみ返信します。 
+次のコード例は、EWS を使用してメッセージに返信する方法を示しています。**MessageDisposition** 属性が **SendAndSaveCopy** に設定されている [CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) 操作を使用して、メッセージを送信し、送信済みアイテム フォルダーに応答を保存します。[ReplyAllToItem](https://msdn.microsoft.com/library/8ca970ca-ca73-40db-9233-7b271cc5f44f%28Office.15%29.aspx) 要素を [Items](https://msdn.microsoft.com/library/d61ef1cc-ddfc-480a-9625-7b436cb33ae0%28Office.15%29.aspx) 要素の子として含めてメッセージ スレッド上の全員に返信するか、[ReplyToItem](https://msdn.microsoft.com/library/35ee751a-41c0-4216-ad8b-78f7ada43a2f%28Office.15%29.aspx) 要素を含めて送信者にのみ返信します。 
   
 これは、[Reply](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.reply%28v=exchg.80%29.aspx) メソッドまたは [CreateReply](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.createreply%28v=exchg.80%29.aspx) メソッドを呼び出す際に、EWS マネージ API が送信する XML 要求でもあります。 
   
@@ -111,7 +111,7 @@ reply.SendAndSaveCopy();
 
 サーバーは、**CreateItem** 要求に [CreateItemResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) メッセージで応答します。このメッセージには、応答が正常に作成および送信されたことを示す、**NoError** の [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 要素の値が含まれます。
   
-応答メッセージに添付物を追加する必要がある場合、前述したように **CreateItem** 操作を呼び出しますが、**MessageDisposition** は **SaveOnly** に変更します。 次に、[CreateAttachment](https://msdn.microsoft.com/library/e066db95-6963-4507-a8d0-8efad287f550%28Office.15%29.aspx) 操作を呼び出してから、[SendItem](https://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx) 操作を呼び出します。 
+応答メッセージに添付ファイルを追加する必要がある場合、前述したように **CreateItem** 操作を呼び出しますが、**MessageDisposition** は **SaveOnly** に変更します。次に、[CreateAttachment](https://msdn.microsoft.com/library/e066db95-6963-4507-a8d0-8efad287f550%28Office.15%29.aspx) 操作を呼び出してから、[SendItem](https://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx) 操作を呼び出します。 
   
 ## <a name="forward-an-email-message-by-using-the-ews-managed-api"></a>EWS マネージ API を使用してメール メッセージを転送する
 <a name="bk_forwardewsma"> </a>
@@ -164,7 +164,7 @@ forward.SendAndSaveCopy();
 ## <a name="forward-an-email-message-by-using-ews"></a>EWS を使用してメール メッセージを転送する
 <a name="bk_forwardews"> </a>
 
-次のコード例は、EWS を使用してメッセージを転送する方法を示しています。 **MessageDisposition** 属性が **SendAndSaveCopy** に設定されている [CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) 操作を使用して、メッセージを送信し、送信済みアイテム フォルダーに応答を保存します。 [ForwardItem](https://msdn.microsoft.com/library/97786086-8b91-4471-8af8-d21e8d66de87%28Office.15%29.aspx) 要素は、そのアイテムが転送されるメッセージであることを示します。 
+次のコード例は、EWS を使用してメッセージを転送する方法を示しています。**MessageDisposition** 属性が **SendAndSaveCopy** に設定されている [CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) 操作を使用して、メッセージを送信し、送信済みアイテム フォルダーに応答を保存します。[ForwardItem](https://msdn.microsoft.com/library/97786086-8b91-4471-8af8-d21e8d66de87%28Office.15%29.aspx) 要素は、そのアイテムが転送されるメッセージであることを示します。 
   
 これは、[Forward](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.forward%28v=exchg.80%29.aspx) メソッドまたは [CreateForward](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.createforward%28v=exchg.80%29.aspx) メソッドを呼び出す際に、EWS マネージ API が送信する XML 要求でもあります。 
   
@@ -198,7 +198,7 @@ forward.SendAndSaveCopy();
 
 サーバーは、**CreateItem** 要求に [CreateItemResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) メッセージで応答します。このメッセージには、転送済みメッセージが正常に作成および送信されたことを示す、**NoError** の [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 要素の値が含まれます。
   
-応答メッセージに添付物を追加する必要がある場合、**CreateItem** 操作を呼び出しますが、**MessageDisposition** を **SaveOnly** に変更します。 次に、[CreateAttachment](https://msdn.microsoft.com/library/e066db95-6963-4507-a8d0-8efad287f550%28Office.15%29.aspx) 操作を呼び出してから、[SendItem](https://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx) 操作を呼び出します。 
+応答メッセージに添付ファイルを追加する必要がある場合、**CreateItem** 操作を呼び出しますが、**MessageDisposition** は **SaveOnly** に変更します。次に、[CreateAttachment](https://msdn.microsoft.com/library/e066db95-6963-4507-a8d0-8efad287f550%28Office.15%29.aspx) 操作を呼び出してから、[SendItem](https://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx) 操作を呼び出します。 
   
 ## <a name="find-the-message-last-replied-to-or-forwarded-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して最後に返信または転送されたメッセージを検索する
 <a name="bk_findlast"> </a>

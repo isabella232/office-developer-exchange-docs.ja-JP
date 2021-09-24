@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Resolution
 api_type:
 - schema
 ms.assetid: 573bed4b-d7b1-4baf-b16f-0795cdebf1a7
-description: Resolution 要素には、1つの解決済みエンティティが含まれています。
-ms.openlocfilehash: 63c80f3c8d7dabf7e6dc1494df04c0be821b28bf
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Resolution 要素には、1 つの解決済みエンティティが含まれる。
+ms.openlocfilehash: 41e37c7224ca269bbd7c37b084806e9b8ecc67f3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468286"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539081"
 ---
 # <a name="resolution"></a>解決方法
 
-**Resolution**要素には、1つの解決済みエンティティが含まれています。 
+**Resolution 要素には**、1 つの解決済みエンティティが含まれる。 
   
 [ResolveNamesResponse](resolvenamesresponse.md)
   
@@ -29,9 +29,9 @@ ms.locfileid: "44468286"
   
 [ResolveNamesResponseMessage](resolvenamesresponsemessage.md)
   
-[解像度セット](resolutionset.md)
+[ResolutionSet](resolutionset.md)
   
-[Resolution](resolution.md)
+[解決策](resolution.md)
   
 ```xml
 <Resolution>
@@ -40,7 +40,7 @@ ms.locfileid: "44468286"
 </Resolution>
 ```
 
- **解像度の種類**
+ **ResolutionType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -53,27 +53,27 @@ ms.locfileid: "44468286"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[メールボックス](mailbox.md) <br/> |メールが有効な Active Directory ディレクトリサービスオブジェクトを識別します。  <br/> |
-|[Contact](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
+|[メールボックス](mailbox.md) <br/> |メールが有効な Active Directory ディレクトリ サービス オブジェクトを識別します。  <br/> |
+|[Contact](contact.md) <br/> |連絡先アイテムExchangeを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[解像度セット](resolutionset.md) <br/> |あいまいな名前の解決方法の配列を格納します。  <br/> |
+|[ResolutionSet](resolutionset.md) <br/> |あいまいな名前の解像度の配列を含む。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - AttachmentShape
 api_type:
 - schema
 ms.assetid: 734914b5-3a16-4744-90a5-741fd30c4676
-description: AttachmentShape 要素は、GetAttachment 要求に対する応答で返される追加のプロパティを識別します。
-ms.openlocfilehash: e70fbaad0f649c5afdc151b777efef0f8927ba1c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: AttachmentShape 要素は、GetAttachment 要求への応答で返す追加のプロパティを識別します。
+ms.openlocfilehash: 2c7ceb25f481ec07577117e46e26537e657e18c7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529666"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520039"
 ---
 # <a name="attachmentshape"></a>AttachmentShape
 
-**Attachmentshape**要素は、 [getattachment](getattachment.md)要求に対する応答で返される追加のプロパティを識別します。 
+**AttachmentShape 要素は**[、GetAttachment](getattachment.md)要求への応答で返す追加のプロパティを識別します。 
   
 - [GetAttachment](getattachment.md)
   
@@ -49,16 +49,16 @@ ms.locfileid: "44529666"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[IncludeMimeContent](includemimecontent.md) <br/> |アイテムまたは添付ファイルのマルチパーパスインターネットメール内線 (MIME) コンテンツを応答で返すかどうかを指定します。 この要素は省略できます。  <br/> |
-|[BodyType](bodytype.md) <br/> |応答で本文テキストを書式設定する方法を指定します。 この要素は省略できます。  <br/> |
+|[IncludeMimeContent](includemimecontent.md) <br/> |アイテムまたは添付ファイルの多目的インターネット メール拡張機能 (MIME) コンテンツを応答で返すかどうかを指定します。 この要素は省略できます。  <br/> |
+|[BodyType](bodytype.md) <br/> |本文テキストが応答で書式設定される方法を識別します。 この要素は省略できます。  <br/> |
 |[FilterHtmlContent](filterhtmlcontent.md) <br/> |安全でない可能性のある HTML コンテンツを添付ファイルからフィルター処理するかどうかを指定します。 この要素は省略できます。  <br/> |
-|[AdditionalProperties](additionalproperties.md) <br/> |応答で返される追加のプロパティを識別します。 この要素は省略できます。  <br/> |
+|[AdditionalProperties](additionalproperties.md) <br/> |応答で返す追加のプロパティを識別します。 この要素は省略できます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetAttachment](getattachment.md) <br/> |Exchange ストア内のメールボックスから添付ファイルを取得するための要求を定義する要素。  <br/> この要素の XPath 式を次に示します。  <br/>  `/GetAttachment` <br/> |
+|[GetAttachment](getattachment.md) <br/> |メールボックス ストア内のメールボックスから添付ファイルを取得する要求を定義するExchange。  <br/> 次に、この要素の XPath 式を示します。  <br/>  `/GetAttachment` <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -73,12 +73,12 @@ ms.locfileid: "44529666"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [GetAttachment 操作](getattachment-operation.md)
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

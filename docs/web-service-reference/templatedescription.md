@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 95afb55b-a4e8-4b04-9b06-a3a882cb8af5
 description: TemplateDescription 要素は、Rights Management テンプレートの説明を指定します。
-ms.openlocfilehash: 0f5443213fa75c5c05b4cba4609130bb1b3f371e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: a6ce9b6fad5c00a74548e02bb11279b8ddb0db5f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459946"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520381"
 ---
 # <a name="templatedescription"></a>TemplateDescription
 
-**Templatedescription**要素は、Rights Management テンプレートの説明を指定します。 
+**TemplateDescription 要素** は、Rights Management テンプレートの説明を指定します。 
   
 ```XML
 <TemplateDescription></TemplateDescription>
@@ -42,7 +42,7 @@ ms.locfileid: "44459946"
   
 ## <a name="text-value"></a>テキスト値
 
-**Templatedescription**要素のテキスト値は、アイテムに適用される権限管理テンプレートの説明です。 
+**TemplateDescription** 要素のテキスト値は、アイテムに適用される Rights Management テンプレートの説明です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44459946"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

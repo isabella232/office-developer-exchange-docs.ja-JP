@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 204da113-539b-403d-8316-f43d7428fc61
 description: SearchQuery 要素は、探索検索クエリを指定します。
-ms.openlocfilehash: 53f26651c84e4bea8cd06224dcdb39935336bde8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 9a281ce454d2b664d91a7bbca150606608fa9a59
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466893"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59534315"
 ---
 # <a name="searchquery"></a>SearchQuery
 
-**Searchquery**要素は、探索検索クエリを指定します。 
+**SearchQuery 要素** は、探索検索クエリを指定します。 
   
 ```XML
 <SearchQuery></SearchQuery>
@@ -42,7 +42,7 @@ ms.locfileid: "44466893"
   
 ## <a name="text-value"></a>テキスト値
 
-**Searchquery**要素のテキスト値は検索クエリ文字列です。 
+SearchQuery 要素の **テキスト値** は、検索クエリ文字列です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44466893"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

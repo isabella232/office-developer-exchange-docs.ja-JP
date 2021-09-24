@@ -1,23 +1,23 @@
 ---
-title: EmailAddress (Get個人 Atype)
+title: EmailAddress (GetPersonaType)
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 052055b5-4630-40ed-9b24-9e7f4bf7ba1d
-description: EmailAddress (Get個人 Atype) 要素は、ペルソナに関連付けられている電子メールアドレスを指定します。
-ms.openlocfilehash: b58f61202cd94ff282b21138b47b40887b38752a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: EmailAddress (GetPersonaType) 要素は、ペルソナに関連付けられている電子メール アドレスを指定します。
+ms.openlocfilehash: 7d024234c66c2b90bdd5d04f25d67db54770bdb5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463455"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520807"
 ---
-# <a name="emailaddress-getpersonatype"></a>EmailAddress (Get個人 Atype)
+# <a name="emailaddress-getpersonatype"></a>EmailAddress (GetPersonaType)
 
-**EmailAddress (Get個人 atype)** 要素は、ペルソナに関連付けられている電子メールアドレスを指定します。 
+**EmailAddress (GetPersonaType)** 要素は、ペルソナに関連付けられている電子メール アドレスを指定します。 
   
 ```XML
 <EmailAddress>
@@ -41,7 +41,7 @@ ms.locfileid: "44463455"
   
 ### <a name="child-elements"></a>子要素
 
-[Name (string)](name-string.md)  | [EmailAddress (非 Emptystringtype)](emailaddress-nonemptystringtype.md)  | [Routingtype (EmailAddressType)](routingtype-emailaddresstype.md)  | [MailboxType](mailboxtype.md)  | [ItemId](itemid.md)  | [Originaldisplayname](originaldisplayname.md)
+[名前 (文字列)](name-string.md)  | [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)  | [RoutingType (EmailAddressType)](routingtype-emailaddresstype.md)  | [MailboxType](mailboxtype.md)  | [ItemId](itemid.md)  | [OriginalDisplayName](originaldisplayname.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -58,12 +58,12 @@ ms.locfileid: "44463455"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [GetPersona](getpersona.md)
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

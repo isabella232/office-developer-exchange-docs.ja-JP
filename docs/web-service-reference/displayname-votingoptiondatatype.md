@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 08e89583-438c-4c9f-8475-3bc28f555e95
 description: DisplayName (VotingOptionDataType) 要素は、投票オプションの表示名を指定します。
-ms.openlocfilehash: 42291dc032517a13259fde01217b3543d3329f7d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: a238421aa17f81a990e968a3094a352b27eeb82d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463602"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520850"
 ---
 # <a name="displayname-votingoptiondatatype"></a>DisplayName (VotingOptionDataType)
 
-**DisplayName (VotingOptionDataType)** 要素は、投票オプションの表示名を指定します。 
+**DisplayName (VotingOptionDataType) 要素は**、投票オプションの表示名を指定します。 
   
 ```XML
 <DisplayName />
@@ -55,12 +55,12 @@ ms.locfileid: "44463602"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [VotingOptionData](votingoptiondata.md)
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

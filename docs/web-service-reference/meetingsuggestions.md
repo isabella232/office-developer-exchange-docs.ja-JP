@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c99e9a60-9e38-425d-ad03-47c8917f41da
-description: 会議提案要素は、エンティティ抽出結果を含む、会議提案要素の配列を指定します。
-ms.openlocfilehash: 9e0753919dcfaa3a20b88403085b2951706324bb
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MeetingSuggestions 要素は、エンティティ抽出結果を含む MeetingSuggestion 要素の配列を指定します。
+ms.openlocfilehash: 1af0a7f062c3d0174396503003626b922a313166
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466291"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59532466"
 ---
 # <a name="meetingsuggestions"></a>MeetingSuggestions
 
-**会議提案**要素は、エンティティ抽出結果を含む、**会議提案**要素の配列を指定します。 
+**MeetingSuggestions 要素** は、エンティティ抽出結果を含む **MeetingSuggestion** 要素の配列を指定します。 
   
 ```XML
 <MeetingSuggestions>
@@ -53,8 +53,8 @@ ms.locfileid: "44466291"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

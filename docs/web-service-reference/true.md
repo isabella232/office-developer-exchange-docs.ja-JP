@@ -1,25 +1,25 @@
 ---
-title: 正しい
+title: 正解
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 96b4c288-c4d5-4378-8fc1-1a3ae98eedc9
 description: True 要素は、常に一致する条件を指定します。
-ms.openlocfilehash: 6ac0bc407c9c4cab23805d042e67d99359900137
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 8dca53009dd6dd22db32a294324c5b9745de894a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467404"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520305"
 ---
-# <a name="true"></a>正しい
+# <a name="true"></a>正解
 
-**True**要素は、常に一致する条件を指定します。 
+**True 要素** は、常に一致する条件を指定します。 
   
 ```xml
 <True/>
@@ -43,8 +43,8 @@ ms.locfileid: "44467404"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[条件](condition.md) <br/> |実行するルールのアクション部分に対して満たす必要がある条件を指定します。  <br/> |
-|[および (ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |**True**に評価するためにすべての子要素を一致させる必要があることを指定します。  <br/> |
+|[Condition](condition.md) <br/> |ルールのアクション 部分を実行するために満たす必要がある条件を識別します。  <br/> |
+|[And (ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |true に評価するには、すべての子要素が一致 **する必要があります**。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -59,11 +59,11 @@ ms.locfileid: "44467404"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

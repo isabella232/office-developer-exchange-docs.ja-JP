@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SentOnlyToMe
 api_type:
 - schema
 ms.assetid: b6d4dea5-812d-4b29-917d-071ebd7ddd92
-description: SentOnlyToMe 要素は、条件または例外を適用するために、メールボックスの所有者が受信メッセージの Tor Piowner プロパティにある唯一のものである必要があるかどうかを示します。
-ms.openlocfilehash: 3127550b09d6f5ccf5ba87ad34557afd047f8be0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SentOnlyToMe 要素は、メールボックスの所有者が、条件または例外を適用するために受信メッセージの ToRecipients プロパティ内の唯一の所有者である必要があるかどうかを示します。
+ms.openlocfilehash: c82989cbfc3725b1c8a4fea560d9f8ce30956ea5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458650"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59534307"
 ---
 # <a name="sentonlytome"></a>SentOnlyToMe
 
-**SentOnlyToMe**要素は、条件または例外を適用するために、メールボックスの所有者が受信メッセージの**tor piowner**プロパティにある唯一のものである必要があるかどうかを示します。 
+**SentOnlyToMe** 要素は、メールボックスの所有者が、条件または例外を適用するために受信メッセージの **ToRecipients** プロパティ内の唯一の所有者である必要があるかどうかを示します。 
   
 ```XML
 <SentOnlyToMe/>true | false</SentOnlyToMe>
@@ -44,12 +44,12 @@ ms.locfileid: "44458650"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[条件](conditions.md) <br/> |ルールのルールの処理を開始するときに実行される条件を表します。  <br/> |
-|[例外](exceptions.md) <br/> |受信トレイルールに対して使用可能なすべてのルールの例外条件を表します。  <br/> |
+|[条件](conditions.md) <br/> |満たされると、ルールのルール アクションをトリガーする条件を表します。  <br/> |
+|[例外](exceptions.md) <br/> |受信トレイ ルールで使用可能なすべてのルール例外条件を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値が**true の場合**は、条件または例外を適用するために、メールボックスの所有者が、受信メッセージの**torecipients**プロパティ内に1つだけである必要があることを示します。 値が**false**の場合、条件または例外を適用するには、メールボックスの所有者以外は、受信メッセージの**torecipients**プロパティにある必要はありません。 
+true **のテキスト値** は、メールボックスの所有者が、条件または例外を適用するために、受信メッセージの **ToRecipients** プロパティ内の唯一の所有者である必要があります。 false の **値** は、条件または例外を適用するために、受信メッセージの **ToRecipients** プロパティ内のメールボックスの所有者が唯一の所有者である必要はないと示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -60,13 +60,13 @@ ms.locfileid: "44458650"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

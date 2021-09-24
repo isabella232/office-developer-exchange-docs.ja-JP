@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 10ee69ac-efce-40b7-9861-23779a5c4660
-description: EmailText (EncryptionConfigurationResponseType) 要素は、内部使用のみを目的としています。
-ms.openlocfilehash: c5e639e8b8101c25ee9234d8e27583aeb623d997
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: EmailText (EncryptionConfigurationResponseType) 要素は、内部での使用のみを目的とします。
+ms.openlocfilehash: 85c9508f8a52217c79191a4a3c779a54a6d4c608
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456151"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519703"
 ---
 # <a name="emailtext-encryptionconfigurationresponsetype"></a>EmailText (EncryptionConfigurationResponseType)
 
-**Emailtext (EncryptionConfigurationResponseType)** 要素は、内部使用のみを目的としています。 
+**EmailText (EncryptionConfigurationResponseType)** 要素は、内部での使用のみを目的とします。 
 
 ## <a name="attributes-and-elements"></a>属性と要素
 

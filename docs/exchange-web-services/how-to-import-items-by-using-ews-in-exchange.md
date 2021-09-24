@@ -3,15 +3,15 @@ title: Exchange の EWS を使用してアイテムをインポートする
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: dd3d3221-c98e-4fa0-81f0-77f733d2f432
 description: Exchange の EWS マネージ API または EWS を使用して、予定、電子メール、連絡先、タスクなどのアイテムをインポートする方法について説明します。
-ms.openlocfilehash: bc874c667c31beb4e59a305626247488cb1a1781
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 1e111a03f43c7c6ea30ab0dedf5cc0bb5c6a41f8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527986"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513165"
 ---
 # <a name="import-items-by-using-ews-in-exchange"></a>Exchange の EWS を使用してアイテムをインポートする
 

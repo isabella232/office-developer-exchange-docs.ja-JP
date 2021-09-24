@@ -1,23 +1,23 @@
 ---
-title: 電子メール (文字列)
+title: Email (String)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7e0cfa14-cdfb-4b48-b2e9-b1d866bf2c0e
-description: Email 要素は、GetUserPhoto 操作でその写真が要求されたユーザーの電子メールアドレスを識別します。
-ms.openlocfilehash: 28fc16cee4438f6a6a87924875e029184197a426
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Email 要素は、GetUserPhoto 操作で写真が要求されたユーザーの電子メール アドレスを識別します。
+ms.openlocfilehash: a7ed2356f696ebc1e6cc938a7ed5588786d228fa
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459224"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538227"
 ---
-# <a name="email-string"></a>電子メール (文字列)
+# <a name="email-string"></a>Email (String)
 
-**Email**要素は、 **getuserphoto**操作でその写真が要求されたユーザーの電子メールアドレスを識別します。 
+**Email 要素** は **、GetUserPhoto** 操作で写真が要求されたユーザーの電子メール アドレスを識別します。 
   
 ```XML
 <Email></Email>
@@ -42,7 +42,7 @@ ms.locfileid: "44459224"
   
 ## <a name="text-value"></a>テキスト値
 
-**Email**要素のテキスト値は、getuserphoto 操作でその写真が要求されるユーザーの電子メールアドレスです。 
+Email 要素のテキスト **値は、GetUserPhoto** 操作で写真が要求されたユーザーの電子メール アドレスです。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44459224"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

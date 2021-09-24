@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ab7b884e-ecf1-4e58-86ec-856b13a95f2b
-description: ImGroup 要素は、インスタントメッセージンググループを表します。
-ms.openlocfilehash: a0ff3fcb82e7f18837af5a6f5daa16e90043034d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ImGroup 要素はインスタント メッセージング グループを表します。
+ms.openlocfilehash: 6bcf3a8c587ba1c14aadfaa792cbd2f9405c69ce
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460688"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59533112"
 ---
 # <a name="imgroup"></a>ImGroup
 
-**Imgroup**要素は、インスタントメッセージンググループを表します。 
+**ImGroup 要素** はインスタント メッセージング グループを表します。 
   
 ```XML
 <ImGroup>
@@ -41,11 +41,11 @@ ms.locfileid: "44460688"
   
 ### <a name="child-elements"></a>子要素
 
-[DisplayName (非 Emptystringtype)](displayname-nonemptystringtype.md)  | [GroupType](grouptype.md)  | [ExchangeStoreId](exchangestoreid.md)  | [Membercorrelationkey](membercorrelationkey.md)  | [Extendedproperties (NonEmptyArrayOfExtendedPropertyType)](extendedproperties-nonemptyarrayofextendedpropertytype.md)  | [Smtpaddress](smtpaddress.md)
+[DisplayName (NonEmptyStringType)](displayname-nonemptystringtype.md)  | [GroupType](grouptype.md)  | [ExchangeStoreId](exchangestoreid.md)  | [MemberCorrelationKey](membercorrelationkey.md)  | [ExtendedProperties (NonEmptyArrayOfExtendedPropertyType)](extendedproperties-nonemptyarrayofextendedpropertytype.md)  | [SmtpAddress](smtpaddress.md)
   
 ### <a name="parent-elements"></a>親要素
 
-[グループ (ArrayOfImGroupType)](groups-arrayofimgrouptype.md)  | [Adddeploy Grouptoimlistresponse](adddistributiongrouptoimlistresponse.md)  | [AddImGroupResponse](addimgroupresponse.md)
+[グループ (ArrayOfImGroupType)](groups-arrayofimgrouptype.md)  | [AddDistributionGroupToImListResponse](adddistributiongrouptoimlistresponse.md)  | [AddImGroupResponse](addimgroupresponse.md)
   
 ## <a name="remarks"></a>注釈
 
@@ -58,8 +58,8 @@ ms.locfileid: "44460688"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8ea43d5a-4bcf-497e-a559-6efe94fa604b
-description: ホーム電話要素は、関連付けられたペルソナの自宅の電話番号の配列とソース attributions の識別子を指定します。
-ms.openlocfilehash: b55d6ca752a5b00a27eb158c6a22412a9f4ecdda
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: HomePhones 要素は、ホーム電話番号の配列と、関連付けられたペルサのソース属性の識別子を指定します。
+ms.openlocfilehash: a43aa06ce4eb423d540a7b338b44b4c56dbc850b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460835"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519500"
 ---
 # <a name="homephones"></a>HomePhones
 
-ホーム**電話要素は、関連**付けられたペルソナの自宅の電話番号の配列とソース attributions の識別子を指定します。 
+**HomePhones 要素** は、ホーム電話番号の配列と、関連付けられたペルサのソース属性の識別子を指定します。 
   
 ```XML
 <HomePhones>
@@ -38,13 +38,13 @@ ms.locfileid: "44460835"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[PhoneNumberAttributedValue](phonenumberattributedvalue.md) <br/> |ペルソナの1つの属性付き電話番号が含まれています。  <br/> |
+|[PhoneNumberAttributedValue](phonenumberattributedvalue.md) <br/> |ペルサの属性付き電話番号が 1 つ含まれる。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ユーザー](persona.md) <br/> |**Getpersona**要求によって返される一連のペルソナデータを指定します。  <br/> |
+|[ユーザー](persona.md) <br/> |**GetPersona** 要求によって返されるペルソナ データのセットを指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -58,12 +58,12 @@ ms.locfileid: "44460835"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

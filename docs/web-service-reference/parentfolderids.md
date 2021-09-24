@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ParentFolderIds
 api_type:
 - schema
 ms.assetid: e7998023-e5e0-465c-91fa-2aa6d1559f64
-description: ParentFolderIds 要素は、検索する FindItem および FindFolder 操作のフォルダーを識別します。
-ms.openlocfilehash: 6bc4b9cfe96c6c83cbeb623ec176e33177356bbc
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ParentFolderIds 要素は、検索する FindItem 操作と FindFolder 操作のフォルダーを識別します。
+ms.openlocfilehash: e9e0f14651b205ad64be04dbe1d0707a109f3edc
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465430"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512906"
 ---
 # <a name="parentfolderids"></a>ParentFolderIds
 
-**ParentFolderIds**要素は、検索する FindItem および findfolder 操作のフォルダーを識別します。 
+**ParentFolderIds 要素は**、検索する FindItem 操作と FindFolder 操作のフォルダーを識別します。 
   
 ```xml
 <ParentFolderIds>
@@ -35,7 +35,7 @@ ms.locfileid: "44465430"
 <ParentFolderIds>
 ```
 
-**非 Emptyarrayofbasefolderidstype**
+**NonEmptyArrayOfBaseFolderIdsType**
 
 ## <a name="attributes-and-elements"></a>属性と要素
 
@@ -49,20 +49,20 @@ ms.locfileid: "44465430"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[FolderId](folderid.md) <br/> |フォルダーの識別子と変更キーが含まれています。 **ParentFolderIds**要素では、この要素または[DistinguishedFolderId](distinguishedfolderid.md)要素のいずれかを使用する必要があります。  <br/> |
-|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |名前で参照できる Microsoft Exchange Server 2007 フォルダーを識別します。 **ParentFolderIds**要素では、この要素または[FolderId](folderid.md)要素のいずれかを使用する必要があります。  <br/> |
+|[FolderId](folderid.md) <br/> |フォルダーの識別子と変更キーを格納します。 **ParentFolderIds 要素** は、この要素または [DistinguishedFolderId 要素のいずれかを使用する必要](distinguishedfolderid.md)があります。  <br/> |
+|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |名前でMicrosoft Exchange Serverできる 2007 フォルダーを識別します。 **ParentFolderIds 要素** は、この要素または FolderId 要素のいずれかを使用 [する必要](folderid.md)があります。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FindFolder](findfolder.md) <br/> |メールボックス内のフォルダーを識別する要求を定義します。  <br/> |
-|[FindItem](finditem.md) <br/> |メールボックス内のアイテムを検索するための要求を定義します。  <br/> |
-|[ResolveNames](resolvenames.md) <br/> |あいまいな名前を解決する要求を定義します。  <br/> |
+|[FindFolder](findfolder.md) <br/> |メールボックス内のフォルダーを識別するための要求を定義します。  <br/> |
+|[FindItem](finditem.md) <br/> |メールボックス内のアイテムを検索する要求を定義します。  <br/> |
+|[ResolveNames](resolvenames.md) <br/> |あいまいな名前を解決するための要求を定義します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-**ParentFolderIds**要素では、 [FolderId](folderid.md)または[DistinguishedFolderId](distinguishedfolderid.md)要素のいずれかを使用する必要があります。 検索に対して定義できるフォルダーの数に制限はありません。 
+**ParentFolderIds 要素** は [、FolderId](folderid.md)または [DistinguishedFolderId 要素のいずれかを使用する必要](distinguishedfolderid.md)があります。 検索には、無制限の数のフォルダーを定義できます。 
   
 ## <a name="example"></a>例
 
@@ -88,9 +88,9 @@ ms.locfileid: "44465430"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

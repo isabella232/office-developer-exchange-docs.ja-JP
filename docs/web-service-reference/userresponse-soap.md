@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 5007b1ba-bfcc-40d7-b1cb-e32fbaf54ffd
 description: UserResponse 要素は、個々のユーザーに対する GetUserSettings 要求への応答を表します。
-ms.openlocfilehash: 73848cb19d9c859e07216f354965ac4051d0d20c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 8def0183a5c2e212e80699a3c2f58c64f67ce690
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468902"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538542"
 ---
 # <a name="userresponse-soap"></a>UserResponse (SOAP)
 
-**Userresponse**要素は、個々のユーザーに対する getusersettings 要求への応答を表します。 
+**UserResponse 要素** は、個々のユーザーに対する GetUserSettings 要求への応答を表します。 
   
 ```XML
 <UserResponse>
@@ -43,18 +43,18 @@ ms.locfileid: "44468902"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ErrorCode (SOAP)](errorcode-soap.md) <br/> |自動検出サービスによって返されるエラーコードを表します。  <br/> |
-|[ErrorMessage (SOAP)](errormessage-soap.md) <br/> |自動検出サービスによって返されるエラーコードに関連付けられているメッセージを表します。  <br/> |
-|[RedirectTarget (SOAP)](redirecttarget-soap.md) <br/> |リダイレクト URL またはメールアドレスのターゲットを含みます。  <br/> |
-|[UserSettingErrors (SOAP)](usersettingerrors-soap.md) <br/> |返すことができなかった設定に関する情報のコレクションを表します。  <br/> |
+|[ErrorCode (SOAP)](errorcode-soap.md) <br/> |自動検出サービスによって返されるエラー コードを表します。  <br/> |
+|[ErrorMessage (SOAP)](errormessage-soap.md) <br/> |自動検出サービスによって返されるエラー コードに関連付けられているメッセージを表します。  <br/> |
+|[RedirectTarget (SOAP)](redirecttarget-soap.md) <br/> |リダイレクト URL または電子メール アドレスのターゲットが含まれる。  <br/> |
+|[UserSettingErrors (SOAP)](usersettingerrors-soap.md) <br/> |取得できない設定に関する情報のコレクションを表します。  <br/> |
 |[UserSettings (SOAP)](usersettings-soap.md) <br/> |ユーザーに対して要求された設定。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ArrayOfUserResponse (SOAP)](arrayofuserresponse-soap.md) <br/> |ユーザー応答の配列を格納します。  <br/> |
-|[UserResponses (SOAP)](userresponses-soap.md) <br/> |要求された各ユーザーの構成設定が含まれます。  <br/> |
+|[ArrayOfUserResponse (SOAP)](arrayofuserresponse-soap.md) <br/> |ユーザー応答の配列を含む。  <br/> |
+|[UserResponses (SOAP)](userresponses-soap.md) <br/> |要求された各ユーザーの構成設定が含まれる。  <br/> |
    
 ## <a name="element-information"></a>要素の情報
 
@@ -62,12 +62,12 @@ ms.locfileid: "44468902"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[Exchange 2013 の SOAP 自動検出 XML 要素](soap-autodiscover-xml-elements-for-exchange-2013.md)
+[SOAP 自動検出 XML 要素 (2013 Exchange)](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

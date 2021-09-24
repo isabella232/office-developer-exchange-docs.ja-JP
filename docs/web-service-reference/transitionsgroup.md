@@ -1,27 +1,27 @@
 ---
-title: 遷移 Tionsgroup
+title: TransitionsGroup
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - TransitionsGroup
 api_type:
 - schema
 ms.assetid: 19d56080-546a-4d53-929e-363d56186759
-description: 推移 Tionsgroup 要素は、タイムゾーンの遷移の配列を表します。
-ms.openlocfilehash: 9f08dec048d410dadab9580e7886b2499d943176
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: TransitionsGroup 要素は、タイム ゾーン遷移の配列を表します。
+ms.openlocfilehash: c24eeb803ce106224bda5b410d39298cbe57a7df
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467418"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538738"
 ---
-# <a name="transitionsgroup"></a>遷移 Tionsgroup
+# <a name="transitionsgroup"></a>TransitionsGroup
 
-**推移 Tionsgroup**要素は、タイムゾーンの遷移の配列を表します。 
+**TransitionsGroup** 要素は、タイム ゾーン遷移の配列を表します。 
   
 ```xml
 <TransitionsGroup Id="">
@@ -31,7 +31,7 @@ ms.locfileid: "44467418"
 </TransitionsGroup>
 ```
 
- **Arrayofstype Tionstype**
+ **ArrayOfTransitionsType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -40,38 +40,38 @@ ms.locfileid: "44467418"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|ID  <br/> |遷移グループの一意の識別子を表す文字列型 (string) の値を指定します。  <br/> |
+|ID  <br/> |遷移グループの一意の識別子を表す文字列値。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[AbsoluteDateTransition](absolutedatetransition.md) <br/> |特定の日付および特定の時刻に発生するタイムゾーンの切り替えを表します。  <br/> |
-|[RecurringDayTransition](recurringdaytransition.md) <br/> |毎年同じ日に発生するタイムゾーンの切り替えを表します。  <br/> |
-|[RecurringDateTransition](recurringdatetransition.md) <br/> |指定した日に発生するタイムゾーンの切り替えを表します。  <br/> |
+|[AbsoluteDateTransition](absolutedatetransition.md) <br/> |特定の日付と特定の時刻に発生するタイム ゾーン遷移を表します。  <br/> |
+|[RecurringDayTransition](recurringdaytransition.md) <br/> |毎年同じ日に発生するタイム ゾーン遷移を表します。  <br/> |
+|[RecurringDateTransition](recurringdatetransition.md) <br/> |指定した年の日に発生するタイム ゾーンの遷移を表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[遷移のグループ](transitionsgroups.md) <br/> |タイムゾーン遷移グループの配列を表します。  <br/> |
+|[TransitionsGroups](transitionsgroups.md) <br/> |タイム ゾーン移行グループの配列を表します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされているコンピューター Microsoft Exchange Server EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

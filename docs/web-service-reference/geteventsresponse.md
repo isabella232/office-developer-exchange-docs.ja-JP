@@ -1,27 +1,27 @@
 ---
-title: Getイベント応答
+title: GetEventsResponse
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetEventsResponse
 api_type:
 - schema
 ms.assetid: 5b735d19-55ae-4e6f-a5e3-2bfbdf3d8749
-description: Getイベント Response 要素は、GetEvents 要求への応答を表します。
-ms.openlocfilehash: 27335ec9adb7887514c98be34016cd766dc4127d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetEventsResponse 要素は、GetEvents 要求に対する応答を表します。
+ms.openlocfilehash: ff5baabb1a3337ed4c6d405a4accf3b5d9879678
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462865"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59533812"
 ---
-# <a name="geteventsresponse"></a>Getイベント応答
+# <a name="geteventsresponse"></a>GetEventsResponse
 
-**Getイベント response**要素は、GetEvents 要求への応答を表します。 
+**GetEventsResponse** 要素は、GetEvents 要求に対する応答を表します。 
   
 ```xml
 <GetEventsResponse>
@@ -29,7 +29,7 @@ ms.locfileid: "44462865"
 </GetEventsResponse>
 ```
 
- **Getイベント Responsetype**
+ **GetEventsResponseType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -42,7 +42,7 @@ ms.locfileid: "44462865"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Exchange Web サービス要求に対する応答メッセージを含みます。  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Web サービス要求の応答メッセージExchange含まれます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -50,15 +50,15 @@ ms.locfileid: "44462865"
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |いいえ  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 

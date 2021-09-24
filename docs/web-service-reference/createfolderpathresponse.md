@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 569eaca5-6761-4f5d-aa19-2bf3ac584ae3
-description: CreateFolderPathResponse 要素は、フォルダーのパスを取得するために使用されます。
-ms.openlocfilehash: 3cb8fb15e8850c4ae14082dfdc01c62225879a4a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: CreateFolderPathResponse 要素は、フォルダー パスを返す場合に使用します。
+ms.openlocfilehash: f9539d794379ce54c6c7f13591b819d26890c618
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463791"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520928"
 ---
 # <a name="createfolderpathresponse"></a>CreateFolderPathResponse
 
-**Createfolderpathresponse**要素は、フォルダーのパスを取得するために使用されます。 
+**CreateFolderPathResponse 要素** は、フォルダー パスを返す場合に使用します。 
   
 ```XML
 <CreateFolderPathResponse>
@@ -53,8 +53,8 @@ ms.locfileid: "44463791"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

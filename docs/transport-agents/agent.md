@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - agent
 api_type:
 - schema
 ms.assetid: 0bf744a5-9d79-4c82-8ea7-45fdb3f55300
-description: '最終更新日: 2015 年9月17日'
-ms.openlocfilehash: a810bb229015054e0f244773760235114655a982
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: '最終更新日: 2015 年 9 月 17 日'
+ms.openlocfilehash: 8bcfdd9bffd4c7a15af40528fd431a99c7868637
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455682"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520969"
 ---
 # <a name="agent"></a>agent
   
@@ -28,7 +28,7 @@ ms.locfileid: "44455682"
 - [構成](configuration.md) 
 - [mexRuntime](mexruntime.md)
 - [agentList](agentlist.md)
-- [agent](agent.md)
+- [エージェント](agent.md)
   
 ```XML
 <agent
@@ -50,11 +50,11 @@ ms.locfileid: "44455682"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**name** <br/> |エージェントのインストール時に指定された名前。 この属性には、空でない文字列値が必要です (最大 64 文字)。  <br/> |
+|**name** <br/> |エージェントのインストール時に指定された名前。この属性には、空でない文字列値が必要です (最大 64 文字)。  <br/> |
 |**baseType** <br/> |エージェントの派生元クラスの完全な名前。名前空間も含みます。この属性には、少なくとも 1 文字以上の空でない文字列値が必要です。  <br/> |
-|**classFactory** <br/> |エージェントのインスタンスを作成するエージェントファクトリを実装するクラスの名前空間を含む完全な名前。 この属性には、エージェントのインスタンスを作成するエージェントファクトリを実装するクラスの完全修飾名を含める必要があります。 このクラスは、 [Smtpreceiveagentfactory](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgentFactory.aspx)または[routingagentfactory](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Routing.RoutingAgentFactory.aspx)クラスから派生する必要があります。  <br/> |
+|**classFactory** <br/> |エージェントのインスタンスを作成するエージェント ファクトリを実装するクラスの名前空間を含む完全な名前。 この属性には、エージェントのインスタンスを作成するエージェント ファクトリを実装するクラスの完全修飾名が含まれている必要があります。 このクラスは [、SmtpReceiveAgentFactory](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgentFactory.aspx) クラスまたは [RoutingAgentFactory クラスから派生する必要](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Routing.RoutingAgentFactory.aspx) があります。  <br/> |
 |**assemblyPath** <br/> |エージェントのコードを含んでいるアセンブリの完全修飾パス。ファイル名も含みます。この属性には、少なくとも 1 文字以上の空でない文字列値が必要です。  <br/> |
-|**enabled** <br/> |エージェントが有効かどうかを示すブール値。 エージェントが有効な場合の値は **true**、それ以外の場合の値は **false** です。 この属性は必須です。  <br/> |
+|**enabled** <br/> |エージェントが有効かどうかを示すブール値。エージェントが有効な場合の値は **true**、それ以外の場合の値は **false** です。この属性は必須です。<br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -71,7 +71,7 @@ ms.locfileid: "44455682"
 |||
 |:-----|:-----|
 |Namespace  <br/> |このファイルには名前空間が定義されていません。  <br/> |
-|スキーマ名  <br/> |注意事項なし。  <br/> |
+|スキーマ名  <br/> |該当なし。  <br/> |
 |検証ファイル  <br/> |該当なし。  <br/> |
 |空に設定可能  <br/> |不正解。  <br/> |
    

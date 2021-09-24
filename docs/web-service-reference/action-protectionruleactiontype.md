@@ -1,27 +1,27 @@
 ---
-title: アクション (ProtectionRuleActionType)
+title: Action (ProtectionRuleActionType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Action
 api_type:
 - schema
 ms.assetid: ca090dec-e2c5-49c8-a057-8d1f2409147f
-description: Action 要素は、ルールの条件部分が一致する場合に実行する必要のあるアクションを識別します。
-ms.openlocfilehash: 220a6fea16abb9ea823ae6239537b8c121702589
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Action 要素は、ルールの条件部分が一致する場合に実行する必要があるアクションを識別します。
+ms.openlocfilehash: 6ca051622bb05b2ae2690f6b32ee11662161a4c1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527510"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59534006"
 ---
-# <a name="action-protectionruleactiontype"></a>アクション (ProtectionRuleActionType)
+# <a name="action-protectionruleactiontype"></a>Action (ProtectionRuleActionType)
 
-**Action**要素は、ルールの条件部分が一致する場合に実行する必要のあるアクションを識別します。 
+**Action 要素は**、ルールの条件部分が一致する場合に実行する必要があるアクションを識別します。 
   
 ```xml
 <Action Name="">
@@ -45,13 +45,13 @@ ms.locfileid: "44527510"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Arg1 と Arg2 の値](argument.md) <br/> |アクションに引数を指定します。 この要素は、指定されたアクションで引数を指定する必要がない場合は発生しません。 アクションに1つ以上の引数が必要な場合、この要素は1回以上発生する可能性があります。 **RightsProtectMessage**アクションには、1つの引数が含まれます。  <br/> |
+|[Arg1 と Arg2 の値](argument.md) <br/> |アクションの引数を指定します。 指定したアクションで引数を指定する必要がなされない場合、この要素は発生しません。 アクションに 1 つ以上の引数が必要な場合、この要素は 1 つ以上発生する可能性があります。 **RightsProtectMessage アクションには**、1 つの引数が含まれる。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Rule](rule.md) <br/> |1つの保護ルールを含みます。  <br/> |
+|[Rule](rule.md) <br/> |1 つの保護ルールが含まれる。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -62,11 +62,11 @@ ms.locfileid: "44527510"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

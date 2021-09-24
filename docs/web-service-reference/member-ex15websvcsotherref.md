@@ -1,27 +1,27 @@
 ---
-title: Member
+title: メンバー
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Member
 api_type:
 - schema
 ms.assetid: af9c5ff8-02a4-41fc-876d-14ac05f1ee77
 description: Member 要素は、配布リストのメンバーを表します。
-ms.openlocfilehash: e84223b7c41846ca2f174293bff46a8825777a0e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 1cd8132e8383af0901c53e9432254b383c5c6215
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457306"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59532398"
 ---
-# <a name="member"></a>Member
+# <a name="member"></a>メンバー
 
-**Member**要素は、配布リストのメンバーを表します。 
+**Member 要素** は、配布リストのメンバーを表します。 
   
 ```xml
 <Member Key="">
@@ -40,20 +40,20 @@ ms.locfileid: "44457306"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|キー  <br/> |配布リストのメンバーの一意の識別子を提供します。 この属性は省略可能です。  <br/> |
+|キー  <br/> |配布リスト メンバーの一意の識別子を提供します。 この属性は省略可能です。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[メールボックス](mailbox.md) <br/> |配布リストのメンバーの電子メールアドレスを表します。 この要素は省略できます。  <br/> |
-|[Status (MemberStatusType)](status-memberstatustype.md) <br/> |配布リストのメンバーの状態に関する情報を提供します。 この要素は省略できます。  <br/> |
+|[メールボックス](mailbox.md) <br/> |配布リスト メンバーの電子メール アドレスを表します。 この要素は省略できます。  <br/> |
+|[Status (MemberStatusType)](status-memberstatustype.md) <br/> |配布リスト メンバーの状態に関する情報を提供します。 この要素は省略できます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Members (MemberListType)](members-memberlisttype.md) <br/> |配布リストのメンバーの一覧が含まれています。  <br/> |
+|[Members (MemberListType)](members-memberlisttype.md) <br/> |配布リスト メンバーの一覧を含む。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -64,11 +64,11 @@ ms.locfileid: "44457306"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

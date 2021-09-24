@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3e23c2a1-05d8-4fec-897c-f684a5b97e4c
-description: ReminderGroup 要素は、アラームが予定表アイテムまたはタスクのどちらであるかを指定します。
-ms.openlocfilehash: be6f4a7d7e9d495ed7b42ed40c60f016468e8c2c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ReminderGroup 要素は、予定表アイテムまたはタスクのアラームを指定します。
+ms.openlocfilehash: 7ec19505e9237680aee1b3a31332db7fdc4c0dd4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529869"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512472"
 ---
 # <a name="remindergroup"></a>ReminderGroup
 
-**ReminderGroup**要素は、アラームが予定表アイテムまたはタスクのどちらであるかを指定します。 
+**ReminderGroup** 要素は、予定表アイテムまたはタスクのアラームを指定します。 
   
 ```XML
 <ReminderGroup> Calendar | Task </ReminderGroup>
@@ -42,7 +42,7 @@ ms.locfileid: "44529869"
   
 ## <a name="text-value"></a>テキスト値
 
-**ReminderGroup**要素のテキスト値は、アラームのグループの種類です。 **予定**表のテキスト値は、予定表アイテムのアラームであることを指定します。 **タスク**のテキスト値は、タスクアイテムのアラームであることを指定します。 
+**ReminderGroup** 要素のテキスト値は、アラームのグループの種類です。 Calendar のテキスト **値は** 、アラームが予定表アイテム用である場合に指定します。 Task のテキスト値 **は** 、アラームがタスク アイテム用に指定されます。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,9 +55,9 @@ ms.locfileid: "44529869"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -66,5 +66,5 @@ ms.locfileid: "44529869"
 [Reminder](reminder.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

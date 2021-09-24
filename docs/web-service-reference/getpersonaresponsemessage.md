@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a5bf44c6-c46b-442d-98d4-8b49fdf14b30
-description: GetPersonaResponseMessage には、GetPersona 要求の結果として得られる応答データが含まれています。
-ms.openlocfilehash: 6391e1b6682180e292d03c5db651e8edc6f46b52
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetPersonaResponseMessage には、GetPersona 要求に起因する応答データが含まれる。
+ms.openlocfilehash: 3f59aa924b6a4d42e4d661bcb3f4b1cf905b86a0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458328"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59533561"
 ---
 # <a name="getpersonaresponsemessage"></a>GetPersonaResponseMessage
 
-**GetPersonaResponseMessage**には、 **getpersona**要求の結果として得られる応答データが含まれています。 
+**GetPersonaResponseMessage** には **、GetPersona** 要求に起因する応答データが含まれる。 
   
 ```XML
 <GetPersonaResponseMessage>
@@ -40,7 +40,7 @@ ms.locfileid: "44458328"
   
 ### <a name="child-elements"></a>子要素
 
-[Messagetext](messagetext.md)  | 応答[Secmode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [Persona](persona.md)
+[MessageText](messagetext.md)  | [ResponseCode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [Persona](persona.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -57,8 +57,8 @@ ms.locfileid: "44458328"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

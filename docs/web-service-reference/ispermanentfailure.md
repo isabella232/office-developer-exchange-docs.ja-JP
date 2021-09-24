@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 18dc3a97-cc0a-4092-934e-a6e86f52e668
-description: IsPermanentFailure 要素は、アイテムに対する以前のインデックス作成の試行が失敗したかどうかを示します。
-ms.openlocfilehash: 48a13eebfa16c538c1b10d92f080d51f1b318d12
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: IsPermanentFailure 要素は、アイテムのインデックスを作成する以前の試行が失敗したかどうかを示します。
+ms.openlocfilehash: e5ed20de3c3de9c39d1487e3177c1b6ec358d990
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460394"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59532721"
 ---
 # <a name="ispermanentfailure"></a>IsPermanentFailure
 
-**IsPermanentFailure**要素は、アイテムに対する以前のインデックス作成の試行が失敗したかどうかを示します。 
+**IsPermanentFailure** 要素は、アイテムのインデックスを作成する以前の試行が失敗したかどうかを示します。 
   
 ```XML
 <IsPermanentFailure>true | false</IsPermanentFailure>
@@ -42,7 +42,7 @@ ms.locfileid: "44460394"
   
 ## <a name="text-value"></a>テキスト値
 
-**IsPermanentFailure**要素のテキスト値が**true**になっている場合、メールボックスアイテムの以前のインデックス作成の試行が失敗したことを示します。 値が**false**の場合、メールボックスアイテムの以前のインデックス作成が成功したことを示します。 
+**IsPermanentFailure** 要素のテキスト値 **が true** の場合、メールボックス アイテムのインデックスを作成する以前の試行が失敗しました。 false の **値は** 、メールボックス アイテムのインデックスを作成する以前の試行が成功したかどうかを示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44460394"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

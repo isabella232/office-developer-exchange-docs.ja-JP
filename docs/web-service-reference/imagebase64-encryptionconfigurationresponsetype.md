@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 16b97e95-a980-47eb-8108-28a70d3dfea4
-description: ImageBase64 要素は、内部使用のみを目的としています。
-ms.openlocfilehash: cbe36bef7ce9b9f68ebc0dff69c3c62090fce996
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ImageBase64 要素は内部での使用のみを目的とします。
+ms.openlocfilehash: da7ceec89722ed7027c17e4fe734752b28bd33e8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460716"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59533091"
 ---
 # <a name="imagebase64-encryptionconfigurationresponsetype"></a>ImageBase64 (EncryptionConfigurationResponseType)
 
-**ImageBase64**要素は、内部使用のみを目的としています。 
+**ImageBase64 要素は** 内部での使用のみを目的とします。 
 
 ## <a name="attributes-and-elements"></a>属性と要素
 

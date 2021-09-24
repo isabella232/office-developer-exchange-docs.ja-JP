@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: aac6dc31-edd2-49d7-b845-1df4d77da58c
-description: UserSetting (SOAP) 要素は、1つのユーザー設定を表します。
-ms.openlocfilehash: 8b9bb41e460c0c9d15c9823acb509b0f837eef32
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: UserSetting (SOAP) 要素は、1 つのユーザー設定を表します。
+ms.openlocfilehash: e59f997f925f7d9885fab27df618d474269eacac
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459771"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538493"
 ---
 # <a name="usersetting-soap"></a>UserSetting (SOAP)
 
-[Usersetting (SOAP)](usersetting-soap.md)要素は、1つのユーザー設定を表します。 
+[UserSetting (SOAP)](usersetting-soap.md)要素は、1 つのユーザー設定を表します。 
   
 ```XML
 <UserSetting>
@@ -57,7 +57,7 @@ ms.locfileid: "44459771"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
 |空に設定可能  <br/> |はい  <br/> |
    
 

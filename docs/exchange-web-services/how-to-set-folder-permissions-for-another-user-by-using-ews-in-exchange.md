@@ -3,15 +3,15 @@ title: Exchange で EWS を使用して別のユーザーのフォルダーの�
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7eb81676-a780-4c56-b4f2-c4ed2697107d
 description: Exchange で EWS マネージ API または EWS を使用して、フォルダーのアクセス許可レベルを設定する方法について説明します。
-ms.openlocfilehash: e25f1a49a430e8c95829d404fa53451b76cab167
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 15288af0448a48c176529912604f628ae9bc2f19
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455871"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513088"
 ---
 # <a name="set-folder-permissions-for-another-user-by-using-ews-in-exchange"></a>Exchange で EWS を使用して別のユーザーのフォルダーのアクセス許可を設定する
 
@@ -59,11 +59,11 @@ Exchange で EWS マネージ API または EWS を使用して、フォルダ�
 - なし    
 - Owner (所有者)    
 - PublishingEditor (出版編集者)    
-- エディター    
+- Editor (編集者)    
 - PublishingAuthor (出版著者)    
-- 設定元    
+- Author (著者)    
 - NoneditingAuthor (非編集著者)    
-- レビュー担当者    
+- Reviewer (校閲者)    
 - 共同作成者   
 - Custom: この値は、アプリケーションでは設定できません。 個別アクセス許可のカスタム コレクションがアプリケーションに含まれている場合、サーバーはこの値を設定します。    
 - FreeBusyTimeOnly: これは予定表フォルダーにのみ設定できます。   
@@ -75,14 +75,14 @@ Exchange で EWS マネージ API または EWS を使用して、フォルダ�
 
 |権限レベル|アイテム作成可能|サブ フォルダー作成可能|フォルダーの所有者になる|フォルダーを表示可能|連絡先フォルダーにする|アイテムの編集|アイテムの削除|アイテムの参照可能|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|なし  <br/> |正しくない  <br/> |正しくない  <br/> |正しくない  <br/> |正しくない  <br/> |正しくない  <br/> |なし  <br/> |なし  <br/> |なし  <br/> |
+|None (なし)  <br/> |False  <br/> |False  <br/> |False  <br/> |False  <br/> |False  <br/> |なし  <br/> |なし  <br/> |なし  <br/> |
 |Owner  <br/> |True  <br/> |True  <br/> |True  <br/> |True  <br/> |True  <br/> |すべて  <br/> |すべて  <br/> |FullDetails  <br/> |
-|PublishingEditor (出版編集者)  <br/> |True  <br/> |True  <br/> |False  <br/> |True  <br/> |正しくない  <br/> |すべて  <br/> |すべて  <br/> |FullDetails  <br/> |
-|Editor (編集者)  <br/> |True  <br/> |正しくない  <br/> |False  <br/> |True  <br/> |正しくない  <br/> |すべて  <br/> |すべて  <br/> |FullDetails  <br/> |
+|PublishingEditor (出版編集者)  <br/> |True  <br/> |True  <br/> |False  <br/> |True  <br/> |False  <br/> |すべて  <br/> |すべて  <br/> |FullDetails  <br/> |
+|Editor (編集者)  <br/> |True  <br/> |False  <br/> |False  <br/> |True  <br/> |False  <br/> |すべて  <br/> |すべて  <br/> |FullDetails  <br/> |
 |PublishingAuthor (出版著者)  <br/> |True  <br/> |True  <br/> |False  <br/> |True  <br/> |False  <br/> |Owned (所有)  <br/> |Owned (所有)  <br/> |FullDetails  <br/> |
-|Author (著者)  <br/> |True  <br/> |正しくない  <br/> |False  <br/> |True  <br/> |False  <br/> |Owned (所有)  <br/> |Owned (所有)  <br/> |FullDetails  <br/> |
-|NoneditingAuthor (非編集著者)  <br/> |True  <br/> |正しくない  <br/> |False  <br/> |True  <br/> |正しくない  <br/> |None (なし)  <br/> |Owned (所有)  <br/> |FullDetails  <br/> |
-|Reviewer (校閲者)  <br/> |False  <br/> |正しくない  <br/> |False  <br/> |True  <br/> |正しくない  <br/> |なし  <br/> |なし  <br/> |FullDetails  <br/> |
+|Author (著者)  <br/> |True  <br/> |False  <br/> |False  <br/> |True  <br/> |False  <br/> |Owned (所有)  <br/> |Owned (所有)  <br/> |FullDetails  <br/> |
+|NoneditingAuthor (非編集著者)  <br/> |True  <br/> |False  <br/> |False  <br/> |True  <br/> |False  <br/> |None (なし)  <br/> |Owned (所有)  <br/> |FullDetails  <br/> |
+|Reviewer (校閲者)  <br/> |False  <br/> |False  <br/> |False  <br/> |True  <br/> |False  <br/> |なし  <br/> |なし  <br/> |FullDetails  <br/> |
 |Contributor (投稿者)  <br/> |True  <br/> |False  <br/> |False  <br/> |True  <br/> |False  <br/> |なし  <br/> |なし  <br/> |なし  <br/> |
    
 フォルダー レベルのアクセス許可の要求でカスタム以外のアクセス許可レベルを指定する場合、個別アクセス許可の設定を指定する必要はありません。 アクセス許可レベルを設定する場合、個別アクセス許可を指定すると、応答で **ErrorInvalidPermissionSettings** エラーが返されます。 
@@ -173,7 +173,7 @@ fldperm.CanCreateSubFolders = true;
   </soap:Envelope>
 ```
 
-サーバーは、**GetFolder** 要求に [GetFolderResponse](https://msdn.microsoft.com/library/47abeec8-78dd-4297-8525-099174ec880d%28Office.15%29.aspx) メッセージで応答します。このメッセージには、フォルダーが正常に取得されたことを示す、値が **NoError** の [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx)要素が含まれます。 [FolderId](https://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx) 値と [ParentFolderId](https://msdn.microsoft.com/library/258f4b1f-367e-4c7d-9c29-eb775a2398c7%28Office.15%29.aspx) 値は、読みやすくするために短縮してあります。 
+サーバーは、**GetFolder** 要求に [GetFolderResponse](https://msdn.microsoft.com/library/47abeec8-78dd-4297-8525-099174ec880d%28Office.15%29.aspx) メッセージで応答します。このメッセージには、フォルダーが正常に取得されたことを示す、**NoError** の [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 要素の値が含まれます。[FolderId](https://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx) 値と [ParentFolderId](https://msdn.microsoft.com/library/258f4b1f-367e-4c7d-9c29-eb775a2398c7%28Office.15%29.aspx) 値は、読みやすくするために短縮してあります。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -241,7 +241,7 @@ fldperm.CanCreateSubFolders = true;
 </s:Envelope>
 ```
 
-次に、**UpdateFolder** 操作を使用して、更新された [PermissionSet](https://msdn.microsoft.com/library/6ac1bd17-a089-46bb-b9e6-f5b1dfe1076d%28Office.15%29.aspx) を送信します。それには、新規ユーザーのための [Permission](https://msdn.microsoft.com/library/b8d0429a-0e58-4480-9847-4901970c7033%28Office.15%29.aspx) が含まれています。 [UpdateFolder](https://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx) 操作で各フォルダーの [SetFolderField](https://msdn.microsoft.com/library/8c69db7b-54b5-4ae2-abca-4d6e0937a790%28Office.15%29.aspx) 要素を含めると、そのフォルダーのすべてのアクセス許可設定が上書きされることに注意してください。 同様に、**UpdateFolder** 操作の [DeleteFolderField](https://msdn.microsoft.com/library/f9c2187b-4c60-4358-b4b4-ede50eadae48%28Office.15%29.aspx) オプションを含めると、フォルダーのすべてのアクセス許可設定が削除されます。 
+次に、**UpdateFolder** 操作を使用して、更新された [PermissionSet](https://msdn.microsoft.com/library/6ac1bd17-a089-46bb-b9e6-f5b1dfe1076d%28Office.15%29.aspx) を送信します。それには、新規ユーザーのための [Permission](https://msdn.microsoft.com/library/b8d0429a-0e58-4480-9847-4901970c7033%28Office.15%29.aspx) が含まれています。[UpdateFolder](https://msdn.microsoft.com/library/8c69db7b-54b5-4ae2-abca-4d6e0937a790%28Office.15%29.aspx) 操作で各フォルダーの [SetFolderField](https://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx) 要素を含めると、そのフォルダーのすべてのアクセス許可設定が上書きされることに注意してください。同様に、**UpdateFolder** 操作の [DeleteFolderField](https://msdn.microsoft.com/library/f9c2187b-4c60-4358-b4b4-ede50eadae48%28Office.15%29.aspx) オプションを含めると、フォルダーのすべてのアクセス許可設定が削除されます。 
   
 これは、[フォルダーのアクセス許可を追加する](#bk_enableewsma)ために **Update** メソッドを呼び出す際に、EWS マネージ API が送信する XML 要求でもあります。
   
@@ -412,7 +412,7 @@ EWS の次のコード例は、既定および匿名のアクセス許可を除�
 </soap:Envelope>
 ```
 
-サーバーは、**GetFolder** 要求に [GetFolderResponse](https://msdn.microsoft.com/library/47abeec8-78dd-4297-8525-099174ec880d%28Office.15%29.aspx) メッセージで応答します。このメッセージには、フォルダーが正常に取得されたことを示す、値が **NoError** の [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx)要素が含まれます。 **FolderId** 要素の値と **ParentFolderId** 要素の値は、読みやすくするために短縮してあります。 
+サーバーは、**GetFolder** 要求に [GetFolderResponse](https://msdn.microsoft.com/library/47abeec8-78dd-4297-8525-099174ec880d%28Office.15%29.aspx) メッセージで応答します。このメッセージには、フォルダーが正常に取得されたことを示す、**NoError** の [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 要素の値が含まれます。**FolderId** 要素と **ParentFolderId** 要素の値は、読みやすいよう短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -568,13 +568,13 @@ EWS の次のコード例は、既定および匿名のアクセス許可を除�
 
 EWS マネージ API を使用して、特定のフォルダーのフォルダーのアクセス許可を更新することもできます。アクセス許可を更新するには、次のことを行います。 
   
-1. 古いアクセス許可の[フォルダーのアクセス許可を削除します](#bk_removeewsma)が、(まだ) **Update** メソッドを呼び出しません。 
+1. 古いアクセス許可の [フォルダーのアクセス許可を削除します](#bk_removeewsma)が、(まだ) **Update** メソッドを呼び出しません。 
     
 2. [新規または変更されたユーザーのフォルダーのアクセス許可を追加します](#bk_enableewsma)。
     
 3. **Update** メソッドを呼び出して、変更を保存します。 
     
-同じユーザーのアクセス許可の 2 つのセットを追加しようとする場合、「指定したアクセス許可のセットには、重複したユーザー Id が含まれています」という説明がある **ServiceResponseException** エラーを受け取ります。 このケースでは、**Permission** コレクションから現在のアクセス許可を削除してから、新しいアクセス許可を **Permission** コレクションに追加します。 
+同じユーザーにアクセス許可を 2 セット追加しようとすると、次の説明と共に、**ServiceResponseException** エラーが返されます。"指定したアクセス許可セットには、重複したユーザー ID が含まれています"。このケースでは、**Permission** コレクションから現在のアクセス許可を削除してから、新しいアクセス許可を **Permission** コレクションに追加します。 
   
 ## <a name="updating-folder-permissions-by-using-ews"></a>EWS を使用してフォルダーのアクセス許可を更新する
 <a name="bk_updateews"> </a>
@@ -585,9 +585,9 @@ EWS を使用して、削除と追加のプロセスを組み合わせ、特定�
     
 2. **UpdateFolder** 操作を使用して、更新されたアクセス許可の一覧を送信します。 
     
-これらは、EWS を使用して[アクセスの有効化](#bk_enableews)または[アクセスの削除](#bk_removeews)を行うのに使用するのと同じ 2 つの操作です。 唯一の違いは、**GetFolder** 応答を受信したときにユーザーの **Permission** 設定が含まれていることです。 単に既存の **Permission** 要素を新しい **Permission** 要素に取り替え、新しい **Permission** の値 (複数の場合もある) を指定して **UpdateFolder** 操作を送信します。 
+EWS を使用して [アクセスの有効化](#bk_enableews)または [アクセスの削除](#bk_removeews)を行うのに使用するのと同じ 2 つの操作です。唯一の違いは、**GetFolder** 応答を受信したときにユーザーの **Permission** 設定が含まれていることです。単に既存の **Permission** 要素を新しい **Permission** 要素に取り替え、新しい **Permission** の値 (複数の場合もある) を指定して **UpdateFolder** 操作を送信します。  
   
-同じユーザーに、アクセス許可のセットを 2 つ追加しようとすると、値が **ErrorDuplicateUserIdsSpecified** の **ResponseCode** を受け取ります。 このケースでは、要求からユーザーのアクセス許可の古い値を削除してから、要求を再試行します。
+同じユーザーに、アクセス許可のセットを 2 つ追加しようとすると、**ErrorDuplicateUserIdsSpecified** の値の **ResponseCode** を受け取ります。このケースでは、要求からユーザーのアクセス許可の古い値を削除してから、要求を再試行します。
 
 ## <a name="next-steps"></a>次の手順
 

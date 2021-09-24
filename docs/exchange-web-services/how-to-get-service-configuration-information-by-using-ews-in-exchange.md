@@ -3,21 +3,21 @@ title: Exchange で EWS を使用して、サービス構成情報を取得す�
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9379740a-96e1-490d-a229-0f9937c548d2
 description: Exchange の EWS から UM、ポリシー微調整、メールのヒント、保護ルールのサービス構成情報を取得する方法を紹介します。
-ms.openlocfilehash: 7546d9524f1e004eda2bdc55687fb44beafa44af
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 30d4058104726c79f473a88a09398689675b988d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528007"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513172"
 ---
 # <a name="get-service-configuration-information-by-using-ews-in-exchange"></a>Exchange で EWS を使用して、サービス構成情報を取得する
 
 Exchange の EWS から UM、ポリシー微調整、メールのヒント、保護ルールのサービス構成情報を取得する方法を紹介します。
   
-EWS アプリケーションが、ユニファイド メッセージング (UM)、ポリシー微調整、メールのヒント、保護ルールと連携している場合、 アプリケーションは [GetServiceConfiguration 操作](https://msdn.microsoft.com/library/070cbfe5-325a-4955-8e4a-8230ea0459a7%28Office.15%29.aspx)を呼び出して、必要なサービス構成情報を取得する必要があります。 **GetServiceConfiguration** 操作では、EWS のこれらの機能のそれぞれに固有の構成情報が返されます。 
+EWS アプリケーションが、ユニファイド メッセージング (UM)、ポリシー微調整、メールのヒント、保護ルールと連携している場合、アプリケーションは [GetServiceConfiguration 操作](https://msdn.microsoft.com/library/070cbfe5-325a-4955-8e4a-8230ea0459a7%28Office.15%29.aspx)を呼び出して、必要なサービス構成情報を取得する必要があります。**GetServiceConfiguration** 操作では、EWS のこれらの機能のそれぞれに固有の構成情報が返されます。 
   
 > [!NOTE]
 > EWS マネージ API はこの機能を実装していません。 
@@ -42,9 +42,9 @@ private static void GetServiceConfiguration(ExchangeService service, NetworkCred
   const string getServiceConfigurationRequest = 
     "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
     "<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n" +
-    "               xmlns:m=\"https://schemas.microsoft.com/exchange/services/2006/messages\"\n" +
-    "               xmlns:t=\"https://schemas.microsoft.com/exchange/services/2006/types\" \n" +
-    "               xmlns:soap=\"https://schemas.xmlsoap.org/soap/envelope/\"\n" +
+    "               xmlns:m=\"http://schemas.microsoft.com/exchange/services/2006/messages\"\n" +
+    "               xmlns:t=\"http://schemas.microsoft.com/exchange/services/2006/types\" \n" +
+    "               xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"\n" +
     "               xmlns:xs=\"http://www.w3.org/2001/XMLSchema\">\n" +
     "  <soap:Header>\n" +
     "    <t:RequestServerVersion Version=\"Exchange2013\" />\n" +

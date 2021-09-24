@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f4f958ed-9cf4-4ebf-9b01-e2df9a7cbd63
-description: GetPasswordExpirationDate 要素は、電子メールアカウントのパスワードの有効期限日を取得する要求を定義します。 この要素は、GetPasswordExpirationDate 操作操作の基本要素です。
-ms.openlocfilehash: ececbf51f71c7d87705d727229fce2314d922efb
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetPasswordExpirationDate 要素は、電子メール アカウントのパスワード有効期限を取得する要求を定義します。 この要素は、GetPasswordExpirationDate 操作の基本要素です。
+ms.openlocfilehash: e5c74cc773438780fad0448cd2ae449dae07738f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456494"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520515"
 ---
 # <a name="getpasswordexpirationdate"></a>GetPasswordExpirationDate
 
-**GetPasswordExpirationDate**要素は、電子メールアカウントのパスワードの有効期限日を取得する要求を定義します。 この要素は、 [GetPasswordExpirationDate 操作](getpasswordexpirationdate-operation.md)操作の基本要素です。 
+**GetPasswordExpirationDate** 要素は、電子メール アカウントのパスワード有効期限を取得する要求を定義します。 この要素は [、GetPasswordExpirationDate 操作の基本要素](getpasswordexpirationdate-operation.md) です。 
   
 ```XML
 <GetPasswordExpirationDate>
@@ -38,7 +38,7 @@ ms.locfileid: "44456494"
 
 |**要素名**|**説明**|
 |:-----|:-----|
-|[MailboxSmtpAddress](mailboxsmtpaddress.md) <br/> |パスワードの有効期限の日付を返す電子メールアカウントの電子メールアドレスを表します。  <br/> |
+|[MailboxSmtpAddress](mailboxsmtpaddress.md) <br/> |パスワードの有効期限が返される電子メール アカウントの電子メール アドレスを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -55,9 +55,9 @@ ms.locfileid: "44456494"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -66,5 +66,5 @@ ms.locfileid: "44456494"
 [GetPasswordExpirationDate 操作](getpasswordexpirationdate-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

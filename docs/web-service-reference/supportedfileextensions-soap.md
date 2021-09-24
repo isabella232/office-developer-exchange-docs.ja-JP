@@ -4,19 +4,19 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6f73d18c-7bb1-4ab6-a23b-6d948e590b53
-description: SupportedFileExtensions 要素には、ドキュメントの共有の場所に保存できるファイル拡張子が表示されます。
-ms.openlocfilehash: d783b147a25ebbe3bff59c2142012b50bd80004e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SupportedFileExtensions 要素には、ドキュメント共有の場所に格納できるファイル拡張子が一覧表示されます。
+ms.openlocfilehash: 0b0fd8bb36bf284155cbdad1da70f38b22a0a2b6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44433988"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538962"
 ---
 # <a name="supportedfileextensions-soap"></a>SupportedFileExtensions (SOAP)
 
-**SupportedFileExtensions**要素には、ドキュメントの共有の場所に保存できるファイル拡張子が表示されます。 
+**SupportedFileExtensions** 要素には、ドキュメント共有の場所に格納できるファイル拡張子が一覧表示されます。 
   
 ```XML
 <SupportedFileExtensions /> 
@@ -49,8 +49,8 @@ ms.locfileid: "44433988"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -61,5 +61,5 @@ ms.locfileid: "44433988"
 
 [Exchange 用自動検出 Web サービス リファレンス](autodiscover-web-service-reference-for-exchange.md)
   
-[Exchange 2013 の SOAP 自動検出 XML 要素](soap-autodiscover-xml-elements-for-exchange-2013.md)
+[SOAP 自動検出 XML 要素 (2013 Exchange)](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

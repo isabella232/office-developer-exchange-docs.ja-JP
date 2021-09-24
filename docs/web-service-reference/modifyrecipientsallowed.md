@@ -1,23 +1,23 @@
 ---
-title: Modify受信者の許可
+title: ModifyRecipientsAllowed
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3f25e673-0df0-4285-bf03-a083a395cdab
-description: Modify受信者 Sallowed 要素は、受信者の変更を有効にするかどうかを指定します。
-ms.openlocfilehash: 3154ec3aceb2da7911002d505e0c452bf920d71f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ModifyRecipientsAllowed 要素は、受信者の変更が有効かどうかを指定します。
+ms.openlocfilehash: 4366f9ed0a6843f9a297718cb999fb8c3a02ee17
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465696"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520396"
 ---
-# <a name="modifyrecipientsallowed"></a>Modify受信者の許可
+# <a name="modifyrecipientsallowed"></a>ModifyRecipientsAllowed
 
-**Modify受信者 Sallowed**要素は、受信者の変更を有効にするかどうかを指定します。 
+**ModifyRecipientsAllowed 要素は**、受信者の変更が有効かどうかを指定します。 
   
 ```XML
 <ModifyRecipientsAllowed> true | false </ModifyRecipientsAllowed>
@@ -42,7 +42,7 @@ ms.locfileid: "44465696"
   
 ## <a name="text-value"></a>テキスト値
 
-**Modifyrecipient Sallowed**要素のテキスト値が**true**になっている場合は、そのアイテムで権限管理が有効になっているアイテムに対してアイテム受信者リストが変更可能であることを示します。 値が**false**の場合、受信者の一覧は変更できないことを示します。 
+**ModifyRecipientsAllowed** 要素のテキスト値 **true** は、権限管理が有効になっているアイテムのアイテムの受信者リストが変更可能な状態を示します。 false の **値は** 、受信者リストが変更不可かどうかを示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44465696"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

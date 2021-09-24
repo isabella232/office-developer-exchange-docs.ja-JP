@@ -1,28 +1,28 @@
 ---
-title: アカウント (POX)
+title: Account (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 488fdbdc-e9d9-4301-91ab-e22eb42e549e
-description: Account 要素は、ユーザーのアカウント設定を指定するか、エラー応答を含みます。
-ms.openlocfilehash: ffd8ebe4b7bd9d4b3f6a9b42fc557ac6189a068d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Account 要素は、ユーザーのアカウント設定を指定するか、エラー応答を含む。
+ms.openlocfilehash: 89799ab62a2aa4945b0e8f3209ab1fbc7d2fa2e6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462319"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59534054"
 ---
-# <a name="account-pox"></a>アカウント (POX)
+# <a name="account-pox"></a>Account (POX)
 
-**Account**要素は、ユーザーのアカウント設定を指定するか、エラー応答を含みます。 
+**Account 要素** は、ユーザーのアカウント設定を指定するか、エラー応答を含む。 
   
-- [自動検出 (POX)](autodiscover-pox.md)
-- [応答 (POX)](response-pox.md)
-- [アカウント (POX)](account-pox.md)
+- [AutoDiscover (POX)](autodiscover-pox.md)
+- [Response (POX)](response-pox.md)
+- [Account (POX)](account-pox.md)
   
 ```XML
 <Account>
@@ -59,23 +59,23 @@ ms.locfileid: "44462319"
 |**Element**|**説明**|
 |:-----|:-----|
 |[AccountType (POX)](accounttype-pox.md) <br/> |アカウントの種類を表します。  <br/> |
-|[アクション (POX)](action-pox.md) <br/> |ユーザー構成情報を返すために別の自動検出要求が必要かどうかを判断するために使用される情報を提供します。  <br/> |
-|[Microsoft Online (POX)](microsoftonline-pox.md) <br/> |ユーザーのメールボックスが、Office 365 の一部として Exchange Online または Exchange Online でホストされているかどうかを示す値を格納します。  <br/> |
-|[RedirectUrl (POX)](redirecturl-pox.md) <br/> |自動検出設定を取得するために使用する必要がある、クライアントアクセスサーバーの役割がインストールされている Exchange Server を実行しているコンピューターの URL が含まれています。  <br/> |
-|[RedirectAddr (POX)](redirectaddr-pox.md) <br/> |以降の自動検出要求に使用する電子メールアドレスを指定します。  <br/> |
-|[Image (POX)](image-pox.md) <br/> |構成環境をブランド化するために使用されるイメージのパスを含みます。  <br/> |
-|[ServiceHome (POX)](servicehome-pox.md) <br/> |インターネットサービスプロバイダー (ISP) のホームページの URL が含まれています。  <br/> |
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントをクライアントアクセスサーバーに接続するための仕様が含まれています。  <br/> |
-|[PublicFolderInformation (POX)](publicfolderinformation-pox.md) <br/> |クライアントが、ユーザーのパブリックフォルダー情報を検出するために自動検出要求を送信するために使用できる情報が含まれています。  <br/> |
-|[エラー (POX)](error-pox.md) <br/> |自動検出エラー応答を格納します。  <br/> |
+|[Action (POX)](action-pox.md) <br/> |ユーザー構成情報を返す際に別の自動検出要求が必要かどうかを判断するために使用される情報を提供します。  <br/> |
+|[MicrosoftOnline (POX)](microsoftonline-pox.md) <br/> |ユーザーのメールボックスがユーザーのメールボックスでホストされるかどうかを示す値をExchange Online、Exchange Onlineの一部としてOffice 365。  <br/> |
+|[RedirectUrl (POX)](redirecturl-pox.md) <br/> |自動検出設定を取得するために使用Exchange Serverクライアント アクセス サーバーの役割がインストールされているコンピューターを実行しているコンピューターの URL が含まれる。  <br/> |
+|[RedirectAddr (POX)](redirectaddr-pox.md) <br/> |後続の自動検出要求に使用する電子メール アドレスを指定します。  <br/> |
+|[イメージ (POX)](image-pox.md) <br/> |構成エクスペリエンスのブランド化に使用されるイメージのパスが含まれる。  <br/> |
+|[ServiceHome (POX)](servicehome-pox.md) <br/> |インターネット サービス プロバイダー (ISP) のホーム ページの URL が含まれる。  <br/> |
+|[Protocol (POX)](protocol-pox.md) <br/> |クライアントをクライアント アクセス サーバーに接続するための仕様が含まれる。  <br/> |
+|[PublicFolderInformation (POX)](publicfolderinformation-pox.md) <br/> |クライアントが自動検出要求を送信して、ユーザーのパブリック フォルダー情報を検出するために使用できる情報が含まれる。  <br/> |
+|[Error (POX)](error-pox.md) <br/> |自動検出エラー応答が含まれる。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[応答 (POX)](response-pox.md) <br/> |自動検出サービスからの応答を含みます。  <br/> |
+|[Response (POX)](response-pox.md) <br/> |自動検出サービスからの応答を格納します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+- [POX 自動検出 XML 要素のExchange](pox-autodiscover-xml-elements-for-exchange.md)
 

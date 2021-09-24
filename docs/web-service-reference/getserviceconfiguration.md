@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetServiceConfiguration
 api_type:
 - schema
 ms.assetid: acbb29e4-d853-4302-8e32-7018775d54e4
 description: GetServiceConfiguration 要素は、GetServiceConfiguration 要求を定義します。
-ms.openlocfilehash: e9357a9e3be22e129c4910c01231f9dbd22a2dbe
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: fdc4fd84c658dd0cd2ecabe7fefc06113bca173a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457873"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59533435"
 ---
 # <a name="getserviceconfiguration"></a>GetServiceConfiguration
 
-**GetServiceConfiguration**要素は、GetServiceConfiguration 要求を定義します。 
+**GetServiceConfiguration 要素** は、GetServiceConfiguration 要求を定義します。 
   
 ```XML
 <GetServiceConfiguration>
@@ -43,8 +43,8 @@ ms.locfileid: "44457873"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ActingAs](actingas.md) <br/> |発信者が送信者として送信しているユーザーを識別します。 この要素は省略できます。 この要素が存在しない場合、認証されたユーザーは送信者と見なされます。 送信者ヒントを要求するには、 **Actingas**要素を含める必要があります。 **Actingas**要素が存在しない場合、ルーティングの種類が含まれていない場合、電子メールアドレスが含まれていない場合、電子メールアドレスが含まれていない場合、Active Directory ドメインサービス (AD ds) 内のユーザーに解決されない場合、または ad ds 内の複数のユーザーに解決される場合は、応答で ErrorInvalidArgument  <br/> |
-|[RequestedConfiguration](requestedconfiguration.md) <br/> |要求されたサービス構成を含みます。 この要素は必須です。  <br/> |
+|[ActingAs](actingas.md) <br/> |呼び出し元が送信するユーザーを識別します。 この要素は省略できます。 この要素が存在しない場合、認証されたユーザーは送信者と見なされます。 送信者 **ヒントを要求するには、ActingAs** 要素を含める必要があります。 **ActingAs** 要素が見つからない場合、ルーティングの種類が含まれているか、電子メール アドレスが含まれているか、無効な電子メール アドレスが含まれているか、Active Directory ドメイン サービス (AD DS) のユーザーに解決されないか、AD DS の複数のユーザーに解決される場合、ErrorInvalidArgument エラーが応答で返される可能性があります。  <br/> |
+|[RequestedConfiguration](requestedconfiguration.md) <br/> |要求されたサービス構成が含まれる。 この要素は必須です。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -63,13 +63,13 @@ ms.locfileid: "44457873"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

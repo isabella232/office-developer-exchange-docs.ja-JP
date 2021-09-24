@@ -1,23 +1,23 @@
 ---
-title: ホーム Fax
+title: HomeFaxes
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 459ddb1c-8cff-4125-b6fa-dc93c183dee8
-description: '[ホーム fax] 要素は、自宅の fax 番号の配列と、関連付けられているペルソナのソース attributions の識別子を指定します。'
-ms.openlocfilehash: d49eb9e12547e4011e4ba403cb898c0fe6e9bf02
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: HomeFaxes 要素は、ホーム FAX 番号の配列と、関連付けられたペルサのソース属性の識別子を指定します。
+ms.openlocfilehash: b5bae218223ae53d68efbbe8737834098231474c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460849"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519507"
 ---
-# <a name="homefaxes"></a>ホーム Fax
+# <a name="homefaxes"></a>HomeFaxes
 
-[**ホーム fax]** 要素は、自宅の fax 番号の配列と、関連付けられているペルソナのソース attributions の識別子を指定します。 
+**HomeFaxes 要素** は、ホーム FAX 番号の配列と、関連付けられたペルサのソース属性の識別子を指定します。 
   
 ```XML
 <HomeFaxes>
@@ -38,13 +38,13 @@ ms.locfileid: "44460849"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[PhoneNumberAttributedValue](phonenumberattributedvalue.md) <br/> |ペルソナの1つの属性付き電話番号が含まれています。  <br/> |
+|[PhoneNumberAttributedValue](phonenumberattributedvalue.md) <br/> |ペルサの属性付き電話番号が 1 つ含まれる。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ユーザー](persona.md) <br/> |**Getpersona**要求によって返される一連のペルソナデータを指定します。  <br/> |
+|[ユーザー](persona.md) <br/> |**GetPersona** 要求によって返されるペルソナ データのセットを指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -58,12 +58,12 @@ ms.locfileid: "44460849"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

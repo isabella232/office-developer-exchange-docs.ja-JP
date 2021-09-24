@@ -3,15 +3,15 @@ title: Exchange で EWS を使用してアイテムを同期する
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 886e7d35-9096-480b-8a8c-a7db27da06c2
 description: クライアントを同期するために、EWS マネージ API または EWS を使用して、フォルダー内のすべてのアイテムの一覧、またはフォルダー内で発生した変更の一覧を取得する方法を紹介します。
-ms.openlocfilehash: e75f90b2d28d782465de89000796deccdd125e25
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 82d9304f4060583a5bbffdcf4020c5822ab7c006
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527713"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513081"
 ---
 # <a name="synchronize-items-by-using-ews-in-exchange"></a>Exchange で EWS を使用してアイテムを同期する
 
@@ -28,7 +28,7 @@ Exchange の EWS では、アイテムの同期とフォルダーの同期を使
 
 次のコード例では、受信トレイ フォルダー内のすべてのアイテムの初期の一覧を取得してから、前回の同期以降に発生した受信トレイ フォルダー内のアイテムに対する変更の一覧を取得する方法を示します。 [SyncFolderItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderitems%28v=exchg.80%29.aspx) メソッドの最初の呼び出し中に、_cSyncState_ の値を null に設定します。 メソッドが完了したら、次の **SyncFolderItems** メソッド呼び出しで使用するために _cSyncState_ の値をローカルに保存します。 最初の呼び出しと後続の呼び出しの両方で、変更がなくなるまで、**SyncFolderItems** メソッドの連続呼び出しを使用して、10 回のバッチ処理でアイテムが取得されます。 
   
-次の例は、_propertySet_ パラメーターを IdOnly に設定して、Exchange データベースの呼び出し回数を減らしています。これは[同期のベスト プラクティス](mailbox-synchronization-and-ews-in-exchange.md#bk_bestpractices)です。 この例では、**service** は有効な **ExchangeService** オブジェクト バインドであり、_cSyncState_ は前の **SyncFolderItems** の呼び出しによって返された同期状態を表すものとします。 
+次の例は、_propertySet_ パラメーターを IdOnly に設定して、Exchange データベースの呼び出し回数を減らしています。これは [同期のベスト プラクティス](mailbox-synchronization-and-ews-in-exchange.md#bk_bestpractices)です。 この例では、**service** は有効な **ExchangeService** オブジェクト バインドであり、_cSyncState_ は前の **SyncFolderItems** の呼び出しによって返された同期状態を表すものとします。 
   
 ```cs
 // Track whether there are more items available for download on the server.
@@ -81,7 +81,7 @@ while (moreChangesAvailable);
 ## <a name="get-the-initial-list-of-items-by-using-ews"></a>EWS を使用してアイテムの初期のリストを取得する
 <a name="bk_ewsexamplea"> </a>
 
-次の例は、[SyncFolderItems 操作](https://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx)を使用して、受信トレイ内のアイテムの初期の一覧を取得する XML 要求を示しています。 これは、[SyncFolderItems メソッドを使用してアイテムの一覧を取得する](#bk_cesyncongoingewsma)際に、EWS マネージ API が送信する XML 要求でもあります。 **SyncFolderItems** 操作の [SyncState](https://msdn.microsoft.com/library/e5ebaae3-0f07-481d-ac67-d9687a3c7ac3%28Office.15%29.aspx) 要素は、これが最初の同期であるために含まれません。 次の例は、[BaseShape](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) 要素を **IdOnly** に設定して、Exchange データベースの呼び出し回数を減らしています。これは[同期のベスト プラクティス](mailbox-synchronization-and-ews-in-exchange.md#bk_bestpractices)です。
+次の例は、[SyncFolderItems 操作](https://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx)を使用して、受信トレイ内のアイテムの初期の一覧を取得する XML 要求を示しています。 これは、[SyncFolderItems メソッドを使用してアイテムの一覧を取得する](#bk_cesyncongoingewsma)際に、EWS マネージ API が送信する XML 要求でもあります。 **SyncFolderItems** 操作の [SyncState](https://msdn.microsoft.com/library/e5ebaae3-0f07-481d-ac67-d9687a3c7ac3%28Office.15%29.aspx) 要素は、これが最初の同期であるために含まれません。 次の例は、[BaseShape](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) 要素を **IdOnly** に設定して、Exchange データベースの呼び出し回数を減らしています。これは [同期のベスト プラクティス](mailbox-synchronization-and-ews-in-exchange.md#bk_bestpractices)です。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -178,7 +178,7 @@ while (moreChangesAvailable);
 ## <a name="get-the-changes-since-the-last-sync-by-using-ews"></a>EWS を使用して前回の同期以降の変更を取得する
 <a name="bk_ewsexamplec"> </a>
 
-次の例は、[SyncFolderItems 操作](https://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx)を使用して、受信トレイ内のアイテムに行われた変更の一覧を取得する XML 要求を示します。これは、[受信トレイに対して行われた変更の一覧を取得する](#bk_cesyncongoingewsma)際に、EWS マネージ API が送信する XML 要求でもあります。次の例では、[SyncState](https://msdn.microsoft.com/library/e5ebaae3-0f07-481d-ac67-d9687a3c7ac3%28Office.15%29.aspx) 要素の値を[以前の応答](#bk_responsesyncfolderitems)で返された値に設定します。またこの例では、デモ用に [BaseShape](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) 要素を **IdOnly** ではなく、**AllProperties** に設定し、返される追加のプロパティを表示します。[BaseShape](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) 要素を **IdOnly** に設定することは[同期のベスト プラクティス](mailbox-synchronization-and-ews-in-exchange.md#bk_bestpractices)です。**SyncState** の値は読みやすいように短縮されています。 
+次の例は、[SyncFolderItems 操作](https://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx)を使用して、受信トレイ内のアイテムに行われた変更の一覧を取得する XML 要求を示します。これは、[受信トレイに対して行われた変更の一覧を取得する](#bk_cesyncongoingewsma)際に、EWS マネージ API が送信する XML 要求でもあります。次の例では、[SyncState](https://msdn.microsoft.com/library/e5ebaae3-0f07-481d-ac67-d9687a3c7ac3%28Office.15%29.aspx) 要素の値を [以前の応答](#bk_responsesyncfolderitems)で返された値に設定します。またこの例では、デモ用に [BaseShape](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) 要素を **IdOnly** ではなく、**AllProperties** に設定し、返される追加のプロパティを表示します。[BaseShape](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) 要素を **IdOnly** に設定することは [同期のベスト プラクティス](mailbox-synchronization-and-ews-in-exchange.md#bk_bestpractices)です。**SyncState** の値は読みやすいように短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

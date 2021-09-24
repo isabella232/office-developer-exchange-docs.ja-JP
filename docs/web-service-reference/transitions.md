@@ -1,27 +1,27 @@
 ---
-title: 切り替わる
+title: Transitions
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Transitions
 api_type:
 - schema
 ms.assetid: 26f38f1c-96a3-440e-805c-1437886d11c5
-description: トランジションビュー要素は、タイムゾーンの遷移の配列を表します。
-ms.openlocfilehash: d48fb8872b2f7e052f733c32e5dd1c9b4d04d898
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Transitions 要素は、タイム ゾーン遷移の配列を表します。
+ms.openlocfilehash: 7756878ed21bbe778bf51e99ade212f53414f998
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467439"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520312"
 ---
-# <a name="transitions"></a>切り替わる
+# <a name="transitions"></a>Transitions
 
-**トランジションビュー**要素は、タイムゾーンの遷移の配列を表します。 
+**Transitions 要素** は、タイム ゾーン遷移の配列を表します。 
   
 ```xml
 <Transitions Id="">
@@ -32,7 +32,7 @@ ms.locfileid: "44467439"
 </Transitions>
 ```
 
- **Arrayofstype Tionstype**
+ **ArrayOfTransitionsType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -41,24 +41,24 @@ ms.locfileid: "44467439"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|ID  <br/> |タイムゾーン定義の一意識別子を表します。  <br/> |
+|ID  <br/> |タイム ゾーン定義の一意の識別子を表します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[AbsoluteDateTransition](absolutedatetransition.md) <br/> |特定の日付および特定の時刻に発生するタイムゾーンの切り替えを表します。  <br/> |
-|[RecurringDayTransition](recurringdaytransition.md) <br/> |毎年同じ日に発生するタイムゾーンの切り替えを表します。  <br/> |
-|[RecurringDateTransition](recurringdatetransition.md) <br/> |指定した日に発生するタイムゾーンの切り替えを表します。  <br/> |
-|[Transition](transition.md) <br/> |タイムゾーンの切り替えを表します。  <br/> |
+|[AbsoluteDateTransition](absolutedatetransition.md) <br/> |特定の日付と特定の時刻に発生するタイム ゾーン遷移を表します。  <br/> |
+|[RecurringDayTransition](recurringdaytransition.md) <br/> |毎年同じ日に発生するタイム ゾーン遷移を表します。  <br/> |
+|[RecurringDateTransition](recurringdatetransition.md) <br/> |指定した年の日に発生するタイム ゾーンの遷移を表します。  <br/> |
+|[Transition](transition.md) <br/> |タイム ゾーンの切り替えを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[StartTimeZone](starttimezone.md) <br/> |[Calendaritem](calendaritem.md)または[会議要求](meetingrequest.md)の開始時刻のタイムゾーンを定義します。  <br/> |
-|[EndTimeZone](endtimezone.md) <br/> |[Calendaritem](calendaritem.md)または[会議の要求](meetingrequest.md)の終了時刻のタイムゾーンを定義します。  <br/> |
-|[TimeZoneDefinition](timezonedefinition.md) <br/> |タイムゾーンを定義します。  <br/> |
+|[StartTimeZone](starttimezone.md) <br/> |[CalendarItem](calendaritem.md)または MeetingRequest の開始時刻のタイム ゾーン[を定義します](meetingrequest.md)。  <br/> |
+|[EndTimeZone](endtimezone.md) <br/> |[CalendarItem](calendaritem.md)または MeetingRequest の終了時刻のタイム ゾーン[を定義します](meetingrequest.md)。  <br/> |
+|[TimeZoneDefinition](timezonedefinition.md) <br/> |タイム ゾーンを定義します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -73,13 +73,13 @@ ms.locfileid: "44467439"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

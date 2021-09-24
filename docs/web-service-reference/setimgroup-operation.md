@@ -5,45 +5,45 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2d48aa07-8152-4c3d-a519-061253e80174
 description: SetImGroup EWS 操作に関する情報を検索します。
-ms.openlocfilehash: 37b290559fff0b2de57669741547ba4b1b56c28c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 3499647aa9aaa62b56336f5e016344a05cf7578f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44438076"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59534294"
 ---
 # <a name="setimgroup-operation"></a>SetImGroup 操作
 
-**Setimgroup** EWS 操作に関する情報を検索します。 
+**SetImGroup** EWS 操作に関する情報を検索します。 
   
-**Setimgroup**操作は、インスタントメッセージング (IM) グループの表示名を変更します。 
+**SetImGroup 操作は**、インスタント メッセージング (IM) グループの表示名を変更します。 
   
 この操作は Exchange Server 2013 で導入されました。
   
 ## <a name="using-the-setimgroup-operation"></a>SetImGroup 操作の使用
 
-**Setimgroup**操作は、1つの表示名の引数のみを受け取ります。 
+**SetImGroup 操作は**、1 つの表示名引数のみを受け取ります。 
   
 ### <a name="setimgroup-operation-soap-headers"></a>SetImGroup 操作 SOAP ヘッダー
 
-**Setimgroup**操作では、次の表に示す SOAP ヘッダーを使用できます。 
+**SetImGroup 操作では**、次の表に示す SOAP ヘッダーを使用できます。 
   
-|**ヘッダー名**|**要素**|**説明**|
+|**ヘッダー名**|**Element**|**説明**|
 |:-----|:-----|:-----|
-|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |RFC 3066 で定義されているように、メールボックスへのアクセスに使用されるカルチャ (言語の識別用のタグ) を識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは応答に適用されます。  <br/> |
+|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |メールボックスへのアクセスに使用する RFC 3066「言語の識別用タグ」で定義されているカルチャを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマ バージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは、応答に適用されます。  <br/> |
    
 ## <a name="setimgroup-operation-request-example"></a>SetImGroup 操作要求の例
 
-**Setimgroup**操作要求の次の例は、IM グループの表示名を "MyNewGroupName" に変更する方法を示しています。 
+**SetImGroup 操作要求の次の例は、IM** グループの表示名を "MyNewGroupName" に変更する方法を示しています。 
   
 > [!NOTE]
-> 読みやすくするために、Exchange ストア識別子が短縮されています。 
+> 読Exchange保持するために、ストア識別子の値が短縮されました。 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -72,9 +72,9 @@ ms.locfileid: "44438076"
     
 - [NewDisplayName](newdisplayname.md)
     
-## <a name="successful-setimgroup-operation-response"></a>SetImGroup 操作応答の成功
+## <a name="successful-setimgroup-operation-response"></a>SetImGroup 操作の正常な応答
 
-次の例は、 **Setimgroup**操作要求に対する正常な応答を示しています。 
+次の例は **、SetImGroup** 操作要求に対する正常な応答を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -108,7 +108,7 @@ ms.locfileid: "44438076"
     
 ## <a name="setimgroup-operation-error-response"></a>SetImGroup 操作エラー応答
 
-次の例は、 **Setimgroup**操作要求へのエラー応答を示しています。 グループの表示名を既存のグループの表示名に変更しようとすると、次のエラーが返されます。 
+次の例は **、SetImGroup** 操作要求に対するエラー応答を示しています。 グループ表示名を既存のグループ表示名に変更しようとすると、次のエラー応答が発生します。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -146,7 +146,7 @@ ms.locfileid: "44438076"
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-EWS で汎用的でこの操作に固有の追加のエラーコードについては、「応答」[を参照してください。](responsecode.md)
+EWS に汎用的で、この操作に固有の追加のエラー コードについては [、「ResponseCode」を参照してください](responsecode.md)。
   
 ## <a name="see-also"></a>関連項目
 

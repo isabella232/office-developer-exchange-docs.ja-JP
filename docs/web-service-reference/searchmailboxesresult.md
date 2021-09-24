@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ddb276c4-6c8a-46ef-a2eb-46b6a0bfce09
-description: SearchMailboxesResult 要素には、SearchMailboxes ボックス要求の結果が含まれています。
-ms.openlocfilehash: 79d593d99762aedc6290578b5458f9ac3cad3d26
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SearchMailboxesResult 要素には、SearchMailboxes 要求の結果が含まれる。
+ms.openlocfilehash: dee1e12a6d083ca3f8d3ddb509775b454e3e8fc0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466704"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59534406"
 ---
 # <a name="searchmailboxesresult"></a>SearchMailboxesResult
 
-**SearchMailboxesResult**要素には、 **searchmailboxes ボックス**要求の結果が含まれています。 
+**SearchMailboxesResult** 要素には **、SearchMailboxes 要求の結果が含** まれる。 
   
 ```XML
 <SearchMailboxesResult>
@@ -46,7 +46,7 @@ ms.locfileid: "44466704"
   
 ### <a name="child-elements"></a>子要素
 
-[Searchqueries](searchqueries.md)  | [ResultType](resulttype.md)  | [ItemCount](itemcount.md)  | [サイズ (長い)](size-long.md)  | [PageItemCount](pageitemcount.md)  | [Pageitemsize](pageitemsize.md)  | [KeywordStats](keywordstats.md)  | [アイテム (Arrayofsearchプレビュー Itemstype)](items-arrayofsearchpreviewitemstype.md)  | [失敗したメールボックス](failedmailboxes.md)  | [絞り込み条件](refiners.md)  | [MailboxStats](mailboxstats.md)
+[SearchQueries](searchqueries.md)  | [ResultType](resulttype.md)  | [ItemCount](itemcount.md)  | [サイズ (長)](size-long.md)  | [PageItemCount](pageitemcount.md)  | [PageItemSize](pageitemsize.md)  | [KeywordStats](keywordstats.md)  | [アイテム (ArrayOfSearchPreviewItemsType)](items-arrayofsearchpreviewitemstype.md)  | [FailedMailboxes](failedmailboxes.md)  | [絞り込み条件](refiners.md)  | [MailboxStats](mailboxstats.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -63,8 +63,8 @@ ms.locfileid: "44466704"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

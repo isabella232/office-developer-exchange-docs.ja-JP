@@ -5,54 +5,54 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1b56f83f-3b87-4b55-8259-fde6692da681
-description: GetReminders EWS 操作についての情報を検索します。
-ms.openlocfilehash: dcbe20c674d7524a7776d374fa6964899abf472f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetReminders EWS 操作に関する情報を検索します。
+ms.openlocfilehash: e47dbb6ffceac3535bb72f93ee27bbb3f3f259e6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458307"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513564"
 ---
 # <a name="getreminders-operation"></a>GetReminders 操作
 
-**Getreminders** EWS 操作についての情報を検索します。 
+**GetReminders** EWS 操作に関する情報を検索します。 
   
-**Getreminders** Exchange Web サービス (EWS) 操作は、予定表およびタスクアイテムのアラームを取得します。 
+**GetReminders Exchange** Web サービス (EWS) 操作は、予定表アイテムとタスク アイテムのアラームを取得します。 
   
 この操作は Exchange Server 2013 で導入されました。
   
 ## <a name="using-the-getreminders-operation"></a>GetReminders 操作の使用
 
-**Getreminders**操作は、要求で渡された要素の値に応じて、ユーザーのメールボックス内の現在の予定表と今後の予定表およびタスクアイテムの事前通知を取得します。 この操作では、アラームが設定されているタスクだけでなく、すべての現在の予定表および今後の予定表アイテムを取得することができます。 個人用の予定表アイテムは、応答に含まれます。 アラームが設定されていないタスクは、応答には含まれません。また、アラームやフォローアップフラグが付いた電子メールには含まれません。 
+**GetReminders 操作** は、要求で渡された要素の値に応じて、ユーザーのメールボックス内の現在および将来の予定表アイテムとタスク アイテムのリマインダーを取得します。 この操作では、すべての現在および将来の予定表アイテムと、アラームが設定されているタスクを取得できます。 プライベート予定表アイテムは、応答に含まれます。 リマインダーのないタスクは応答に含まれません。また、リマインダーやフォローアップ フラグを含むメールでもありません。 
   
-現在のすべてのアラームを取得するには、 [ReminderType](remindertype.md)を [**すべて**] に設定し、 [EndTime](endtime-remindermessagedatatype.md)を現在の時刻に設定することをお勧めします。 
+すべての現在のアラームを取得するには[、ReminderType](remindertype.md)を Allに[、EndTime](endtime-remindermessagedatatype.md)を現在の時刻に設定することをお勧めします。 
   
-要求に[Begintime](begintime.md)および**EndTime**要素が含まれている場合、応答には、その間に発生する予定表およびタスクアイテムのアラームが含まれています。これらのアイテムの間には、 **begintime**と**endtime**の間に発生するアラームがあります。
+[BeginTime 要素と EndTime](begintime.md)要素が要求に含まれている場合、応答には **、BeginTime** と **EndTime** の間に発生するアラームが含まれる予定表アイテムとタスク アイテムのリマインダーが含まれます。 
   
-次の表では、 **Begintime**要素と**EndTime**要素が含まれている場合の**ReminderType**要素の動作について説明します。 
+次の表では **、BeginTime** 要素と EndTime 要素が含まれている場合の **ReminderType** 要素 **の動作について** 説明します。 
   
-|ReminderType * * 要素の値 * *|**説明**|
+|ReminderType** 要素の値**|**説明**|
 |:-----|:-----|
-|すべて  <br/> |**Begintime**と**EndTime**の間に発生するアラーム。  <br/> |
-|Current  <br/> |**すべて**の返信と、要求された時間枠より前のアラームに加えて、保存期間に関係なくすべての予定を表示します。  <br/> |
-|古く  <br/> |完了していない**すべて**のマイナスイベントによって返されるアラーム。すべての予定を差し引いた。 **前**の値を使用するには、 **Begintime**要素と**EndTime**要素を設定する必要があります。  <br/> |
+|すべて  <br/> |BeginTime と **EndTime** の間で発生 **するアラーム**。  <br/> |
+|Current  <br/> |**All** によって返されるアラームに加えて、イベントがまだ進行中の場合は要求されたタイム ウィンドウよりも前のリマインダーに加えて、年齢に関係なくすべての予定が返されます。  <br/> |
+|Old  <br/> |All によって返される **アラーム 、** まだ完了していないイベントからすべての予定を差し引いたイベントを減算します。 **Old 値を使用** するには **、BeginTime** 要素と EndTime 要素を **設定する必要** があります。  <br/> |
    
-### <a name="getreminders-operation-soap-headers"></a>GetReminders 操作の SOAP ヘッダー
+### <a name="getreminders-operation-soap-headers"></a>GetReminders 操作 SOAP ヘッダー
 
-**Getreminders**操作では、次の表に記載されている SOAP ヘッダーを使用できます。 
+**GetReminders 操作** では、次の表に示す SOAP ヘッダーを使用できます。 
   
-|**ヘッダー名**|**要素**|**説明**|
+|**ヘッダー名**|**Element**|**説明**|
 |:-----|:-----|:-----|
-|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |RFC 3066 で定義されているように、メールボックスへのアクセスに使用されるカルチャ (言語の識別用のタグ) を識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは応答に適用されます。  <br/> |
+|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |メールボックスへのアクセスに使用する RFC 3066「言語の識別用タグ」で定義されているカルチャを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマ バージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは、応答に適用されます。  <br/> |
    
-## <a name="getreminders-operation-request-example"></a>GetReminders 操作の要求の例
+## <a name="getreminders-operation-request-example"></a>GetReminders 操作要求の例
 
-次の**Getreminders**操作要求の例は、 **Begintime**と**EndTime**の間に発生する最初の5つの予定表アイテムを取得する方法を示しています。
+**GetReminders** 操作要求の次の例は **、BeginTime** と EndTime の間に発生する最初の 5 つの予定表アイテムを取得する方法 **を示しています**。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -80,18 +80,18 @@ ms.locfileid: "44458307"
     
 - [ReminderType](remindertype.md)
     
-SOAP 本文には、次の要素も含めることができます。
+SOAP 本文には、次の要素を含めすることもできます。
   
 - [BeginTime](begintime.md)
     
 - [MaxItems](maxitems.md)
     
-## <a name="successful-getreminders-operation-response"></a>成功した GetReminders 操作の応答
+## <a name="successful-getreminders-operation-response"></a>GetReminders 操作応答の成功
 
-次の例は、 **Getreminders**操作要求に対する正常な応答を示しています。 応答には、"teams meeting" 予定表アイテムの事前通知と、"会議メモを送信するタスク" タスクに関する事前通知が含まれています。 
+次の例は **、GetReminders 操作要求に対する** 正常な応答を示しています。 応答には、"チーム会議" 予定表アイテムのリマインダーと"会議メモを送信するタスク" タスクのリマインダーが含まれる。 
   
 > [!NOTE]
-> 読みやすくするために、識別子が短縮されています。 
+> 識別子は、読みやすさを維持するために短縮されました。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -150,9 +150,9 @@ SOAP 本文には、次の要素も含めることができます。
     
 - [Reminder](reminder.md)
     
-- [件名](subject.md)
+- [[件名]](subject.md)
     
-- [場所](location-remindermessagedatatype.md)
+- [Location](location-remindermessagedatatype.md)
     
 - [ReminderTime](remindertime.md)
     
@@ -170,7 +170,7 @@ SOAP 本文には、次の要素も含めることができます。
     
 ## <a name="getreminders-operation-error-response-example"></a>GetReminders 操作エラー応答の例
 
-次の例は、 **Getreminders**操作要求へのエラー応答を示しています。 これは、終了日が開始日よりも前の要求に対する応答です。 
+次の例は **、GetReminders 操作要求に対するエラー応答を** 示しています。 これは、終了日が開始日より前の要求に対する応答です。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -208,7 +208,7 @@ SOAP 本文には、次の要素も含めることができます。
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-EWS で汎用的でこの操作に固有の追加のエラーコードについては、「応答」[を参照してください。](responsecode.md)
+EWS に汎用的で、この操作に固有の追加のエラー コードについては [、「ResponseCode」を参照してください](responsecode.md)。
   
 ## <a name="see-also"></a>関連項目
 

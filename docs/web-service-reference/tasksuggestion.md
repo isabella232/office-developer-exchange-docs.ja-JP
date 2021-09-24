@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ade9ea3b-bdf1-4999-ac7d-44c6452cef36
-description: TaskSuggestion 要素には、アイテムから抽出されたエンティティから発生したタスクの提案が含まれています。
-ms.openlocfilehash: 49564c246596dabbf7fbacf2924eeb877698ea1a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: TaskSuggestion 要素には、アイテムから抽出されたエンティティから発生したタスク候補が含まれる。
+ms.openlocfilehash: a7d74523b57825b97c6c6d9c2194d84af3f38d5b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468125"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538878"
 ---
 # <a name="tasksuggestion"></a>TaskSuggestion
 
-**Tasksuggestion**要素には、アイテムから抽出されたエンティティから発生したタスクの提案が含まれています。 
+**TaskSuggestion 要素** には、アイテムから抽出されたエンティティから発生したタスク候補が含まれる。 
   
 ```XML
 <TaskSuggestion>
@@ -39,7 +39,7 @@ ms.locfileid: "44468125"
   
 ### <a name="child-elements"></a>子要素
 
-[Position](position.md)  | [Taskstring](taskstring.md)  | [タスク](assignees.md)実施者
+[位置](position.md)  | [TaskString](taskstring.md)  | [割り当て人](assignees.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -56,8 +56,8 @@ ms.locfileid: "44468125"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

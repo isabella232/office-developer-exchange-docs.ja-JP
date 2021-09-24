@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cdfc4edd-463c-409b-9bef-6fb915d00b99
-description: StartTime (ReminderMessageDataType) 要素は、アラームがあるアイテムの開始時刻を指定します。
-ms.openlocfilehash: bdd940656d5441a0a36cfcef8f4e0b5db1474a7a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: StartTime (ReminderMessageDataType) 要素は、アラームの開始時刻を指定します。
+ms.openlocfilehash: 85bf86250c13239691e6b47d92390bc11eb8cbd6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459000"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539018"
 ---
 # <a name="starttime-remindermessagedatatype"></a>StartTime (ReminderMessageDataType)
 
-**StartTime (ReminderMessageDataType)** 要素は、アラームがあるアイテムの開始時刻を指定します。 
+StartTime **(ReminderMessageDataType)** 要素は、アラームの開始時刻を指定します。 
   
 ```XML
 <StartTime/>
@@ -43,7 +43,7 @@ ms.locfileid: "44459000"
   
 ## <a name="text-value"></a>テキスト値
 
-**StartTime (ReminderMessageDataType)** 要素のテキスト値は、アラームがあるアイテムの開始時刻です。 
+**StartTime (ReminderMessageDataType)** 要素のテキスト値は、アラームの開始時刻です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -56,12 +56,12 @@ ms.locfileid: "44459000"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [ReminderMessageData](remindermessagedata.md)
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

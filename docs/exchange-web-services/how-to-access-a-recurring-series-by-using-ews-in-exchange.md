@@ -3,15 +3,15 @@ title: Exchange の EWS を使用して、定期的なアイテムにアクセ�
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 196a5671-2836-4696-b734-d5ecfdbf8962
 description: Exchange の EWS マネージ API または EWS を使用して、定期的に連続で発生する予定表アイテムにアクセスする方法を説明します。
-ms.openlocfilehash: dca41472b3b2f775f420b6654d7e43ef456b0583
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 280affe532beb282bdd5cdb0c02a3dfaa62751e5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456893"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513242"
 ---
 # <a name="access-a-recurring-series-by-using-ews-in-exchange"></a>Exchange の EWS を使用して、定期的なアイテムにアクセスする
 
@@ -178,7 +178,7 @@ public static void GetRelatedRecurrenceCalendarItems(ExchangeService service, It
 
 ## <a name="access-calendar-items-in-a-recurring-series-by-using-ews"></a>EWS を使用して、繰り返し連続で発生する予定アイテムにアクセスする
 
-繰り返し連続で発生する予定表アイテムへのアクセス方法は、予定表アイテムの単一インスタンスへのアクセス方法によく似ています。[GetItem](https://msdn.microsoft.com/library/769df8eb-9c72-48b5-a49f-82c6b86bc5fc%28Office.15%29.aspx) 操作要求を使用して、必要な予定インスタンスの [OccurrenceItemId](https://msdn.microsoft.com/library/4a15bbc3-5b93-4193-b9ec-da32f0a9a552%28Office.15%29.aspx) で、求めているプロパティを指定します。[OccurrenceItemId](https://msdn.microsoft.com/library/4a15bbc3-5b93-4193-b9ec-da32f0a9a552%28Office.15%29.aspx) は、発生アイテムの定期的マスターの**ItemId** と、一連のインデックス値を含んでいます。 
+繰り返し連続で発生する予定表アイテムへのアクセス方法は、予定表アイテムの単一インスタンスへのアクセス方法によく似ています。[GetItem](https://msdn.microsoft.com/library/769df8eb-9c72-48b5-a49f-82c6b86bc5fc%28Office.15%29.aspx) 操作要求を使用して、必要な予定インスタンスの [OccurrenceItemId](https://msdn.microsoft.com/library/4a15bbc3-5b93-4193-b9ec-da32f0a9a552%28Office.15%29.aspx) で、求めているプロパティを指定します。[OccurrenceItemId](https://msdn.microsoft.com/library/4a15bbc3-5b93-4193-b9ec-da32f0a9a552%28Office.15%29.aspx) は、発生アイテムの定期的マスターの **ItemId** と、一連のインデックス値を含んでいます。 
   
 次の XML は、インデックスによって指定される一連のアイテムを返すために使用する [GetItem](https://msdn.microsoft.com/library/769df8eb-9c72-48b5-a49f-82c6b86bc5fc%28Office.15%29.aspx) 要求を示しています。定期的マスターの **ItemID** の値は読みやすいよう短縮されていますので、ご注意ください。 
   

@@ -1,27 +1,27 @@
 ---
-title: Exchange 管理シェルコマンドレットの応答を使用する
+title: 管理シェルコマンドレットExchange応答を使用する
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: dac8e526-11c6-4c2e-b9a2-f016b1fc738a
 description: Exchange の管理アプリケーションで、Exchange 管理シェル コマンドレットからの応答を使用する方法について説明します。
-ms.openlocfilehash: c1b81356ab5dc288ab08287d47581871c36beb05
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: be66be31e435be1553eba16d8f367a79317618f2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44435703"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520964"
 ---
-# <a name="use-the-exchange-management-shell-cmdlet-response"></a>Exchange 管理シェルコマンドレットの応答を使用する
+# <a name="use-the-exchange-management-shell-cmdlet-response"></a>管理シェルコマンドレットExchange応答を使用する
 
 Exchange の管理アプリケーションで、Exchange 管理シェル コマンドレットからの応答を使用する方法について説明します。
   
-**適用対象:** Exchange Online |Exchange Server 2013 |Office 365
+**適用対象: Exchange Online |** Exchange Server 2013 |Office 365
   
-各 Exchange 管理シェルコマンドレットは、Exchange 管理シェル環境の任意のオブジェクトの一貫性のあるビューを提供する1つ以上の[PSObject](https://msdn.microsoft.com/library/system.management.automation.psobject%28VS.85%29.aspx)インスタンスを返します。 この記事では、 **PSObject**インスタンスのプロパティを使用して、基になる Exchange SERVER 2013 API オブジェクトのプロパティ値を取得する方法について説明します。 
+各 Exchange管理シェル コマンドレットは、1 つ以上の[PSObject](https://msdn.microsoft.com/library/system.management.automation.psobject%28VS.85%29.aspx)インスタンスを返し、管理シェル環境内の任意のオブジェクトを一貫Exchangeします。 この記事では **、PSObject** インスタンスのプロパティを使用して、基になる API オブジェクトのプロパティ値を 2013 API オブジェクトExchange Server説明します。 
   
 ## <a name="prerequisites-for-using-cmdlet-responses"></a>コマンドレットの応答を使用するための前提条件
 <a name="prerequisites_bk"> </a>
@@ -43,11 +43,11 @@ Exchange 管理シェルでは、ローカル サーバーで実行されるコ�
 ## <a name="use-the-cmdlet-response"></a>コマンドレット応答を使用する
 <a name="usingPSObject_bk"> </a>
 
-[PSObject](https://msdn.microsoft.com/library/system.management.automation.psobject%28VS.85%29.aspx)クラスは、基になる EXCHANGE 2013 API オブジェクトの値を含む、次の3つのパブリックプロパティを公開します。[プロパティ](https://msdn.microsoft.com/library/system.management.automation.psobject.properties%28VS.85%29.aspx)、[メソッド](https://msdn.microsoft.com/library/system.management.automation.psobject.methods%28VS.85%29.aspx)、および[メンバー](https://msdn.microsoft.com/library/system.management.automation.psobject.members%28VS.85%29.aspx)。 Exchange 2013 API オブジェクトによって公開される各プロパティには、 **properties**および**Members**プロパティに対応するキーと値のペアがあります。 アプリケーションでは、プロパティの名前によって**Properties**コレクションのインデックスを作成し、プロパティの値を取得できます。 
+[PSObject クラスは](https://msdn.microsoft.com/library/system.management.automation.psobject%28VS.85%29.aspx)、基になる Exchange 2013 API オブジェクトの値を含む次の 3 つの[](https://msdn.microsoft.com/library/system.management.automation.psobject.methods%28VS.85%29.aspx)パブリック プロパティを[](https://msdn.microsoft.com/library/system.management.automation.psobject.members%28VS.85%29.aspx)公開します。 [](https://msdn.microsoft.com/library/system.management.automation.psobject.properties%28VS.85%29.aspx) 2013 API オブジェクトによってExchangeプロパティには、Properties プロパティと **Members** プロパティに対応するキーと値のペアがあります。 アプリケーションは、プロパティの **名前で Properties** コレクションにインデックスを付け、プロパティの値を取得できます。 
   
-**PSObject** インスタンスの **TypeNames** プロパティを使用して、**PSObject** インスタンスがカプセル化する、基になる Exchange オブジェクトの種類を決定できます。 **TypeNames** プロパティは文字列のコレクションであり、表される型のオブジェクト階層が含まれています。 これらの名前を使用して **PSObject** インスタンスが表すオブジェクトを決定し、適切にプロパティを抽出できるようにします。 
+**PSObject** インスタンスの **TypeNames** プロパティを使用して、**PSObject** インスタンスがカプセル化する、基になる Exchange オブジェクトの種類を決定できます。**TypeNames** プロパティは文字列のコレクションであり、表される型のオブジェクト階層が含まれています。これらの名前を使用して **PSObject** インスタンスが表すオブジェクトを決定し、適切にプロパティを抽出できるようにします。 
   
-次のコード例では、コマンドレットの応答を使用して、コンソール上の **PSObject** インスタンスの **Properties** コレクションの内容を印刷します。 コード例には **System.Automation.Management** 名前空間の参照が必要です。 
+次のコード例では、コマンドレットの応答を使用して、コンソール上の **PSObject** インスタンスの **Properties** コレクションの内容を印刷します。コード例には **System.Automation.Management** 名前空間の参照が必要です。 
   
 ```cs
 foreach (PSPropertyInfo propertyInfo in psObject.Properties)
@@ -69,6 +69,6 @@ Next
 ## <a name="see-also"></a>関連項目
 
 - [Exchange 管理シェル ツールの作成](create-exchange-management-shell-tools.md)   
-- [Exchange 管理シェルを使用してメールユーザーの一覧を取得する](how-to-get-a-list-of-mail-users-by-using-the-exchange-management-shell.md)
+- [管理シェルを使用してメール ユーザーのリストをExchangeする](how-to-get-a-list-of-mail-users-by-using-the-exchange-management-shell.md)
     
 

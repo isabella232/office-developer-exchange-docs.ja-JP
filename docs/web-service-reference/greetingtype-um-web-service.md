@@ -1,30 +1,30 @@
 ---
-title: GreetingType (UM web サービス)
+title: GreetingType (UM Web サービス)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GreetingType
 api_type:
 - schema
 ms.assetid: 55bdf809-054c-4653-b76b-9fb36e010117
-description: GreetingType 要素は、Playon電話案内応答操作 (UM web サービス) 要求で使用する案内応答の種類を定義します。
-ms.openlocfilehash: 4ade61fc26d963826a1d5e515c93ab6ef6830fd8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GreetingType 要素は、PlayOnPhoneGreeting 操作 (UM Web サービス) 要求で使用する案内応答の種類を定義します。
+ms.openlocfilehash: bc1445c2d147a2373e4b899a64e76aaa9f84d54b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530107"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519605"
 ---
-# <a name="greetingtype-um-web-service"></a>GreetingType (UM web サービス)
+# <a name="greetingtype-um-web-service"></a>GreetingType (UM Web サービス)
 
-**GreetingType**要素は、 [playon電話案内応答操作 (UM web サービス)](playonphonegreeting-operation-um-web-service.md)要求で使用する案内応答の種類を定義します。 
+**GreetingType 要素は**[、PlayOnPhoneGreeting 操作 (UM Web サービス)](playonphonegreeting-operation-um-web-service.md)要求で使用する案内応答の種類を定義します。 
   
-[Playon電話応答メッセージ (UM web サービス)](playonphonegreeting-um-web-service.md)
+[PlayOnPhoneGreeting (UM Web サービス)](playonphonegreeting-um-web-service.md)
   
-[GreetingType (UM web サービス)](greetingtype-um-web-service.md)
+[GreetingType (UM Web サービス)](greetingtype-um-web-service.md)
   
 ```xml
 <GreetingType/>
@@ -47,7 +47,7 @@ ms.locfileid: "44530107"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Playon電話応答メッセージ (UM web サービス)](playonphonegreeting-um-web-service.md) <br/> |電話でユニファイドメッセージングの案内応答を再生するための要求を定義します。  <br/> |
+|[PlayOnPhoneGreeting (UM Web サービス)](playonphonegreeting-um-web-service.md) <br/> |電話でユニファイド メッセージングの案内応答を再生する要求を定義します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -63,12 +63,12 @@ ms.locfileid: "44530107"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |スキーマ名  <br/> |メッセージ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[Playon電話案内応答操作 (UM web サービス)](playonphonegreeting-operation-um-web-service.md)
+[PlayOnPhoneGreeting 操作 (UM Web サービス)](playonphonegreeting-operation-um-web-service.md)
 

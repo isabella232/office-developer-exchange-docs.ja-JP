@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsEnabled
 api_type:
 - schema
 ms.assetid: c7e3035e-a4ef-4c11-8cb0-214790a554ff
-description: IsEnabled 要素は、ルールが有効になっているかどうかを示します。
-ms.openlocfilehash: 7a150dc4a27cf4ff7da9825d1daae2b747088539
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: IsEnabled 要素は、ルールが有効かどうかを示します。
+ms.openlocfilehash: 481b55aee6d2c4b591324caf6eeab947e2902da2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455311"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520508"
 ---
 # <a name="isenabled"></a>IsEnabled
 
-**IsEnabled**要素は、ルールが有効になっているかどうかを示します。 
+**IsEnabled 要素** は、ルールが有効かどうかを示します。 
   
 ```XML
 <IsEnabled/>
@@ -44,11 +44,11 @@ ms.locfileid: "44455311"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ルール (RuleType)](rule-ruletype.md) <br/> |ユーザーのメールボックス内のルールを表します。  <br/> |
+|[Rule (RuleType)](rule-ruletype.md) <br/> |ユーザーのメールボックス内のルールを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値が**true の場合**は、ルールが有効で実行可能であることを示します。 値が**false**の場合は、ルールを実行できないことを示します。 
+true のテキスト **値は** 、ルールが有効であり、実行可能な状態を示します。 false の **値は** 、ルールを実行できないことを示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -59,13 +59,13 @@ ms.locfileid: "44455311"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

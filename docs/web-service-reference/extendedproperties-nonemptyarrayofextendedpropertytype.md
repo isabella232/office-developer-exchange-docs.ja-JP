@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a7034730-210d-4916-b992-dda342f890f8
 description: ExtendedProperties 要素は、追加のプロパティの配列を指定します。
-ms.openlocfilehash: 36011e0252ed391daefab190d4da679fb3a3f856
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 69099842ad25a0d4f65250b3477563537c569907
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463098"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520564"
 ---
 # <a name="extendedproperties-nonemptyarrayofextendedpropertytype"></a>ExtendedProperties (NonEmptyArrayOfExtendedPropertyType)
 
-**Extendedproperties**要素は、追加のプロパティの配列を指定します。 
+**ExtendedProperties 要素** は、追加のプロパティの配列を指定します。 
   
 ```XML
 <ExtendedProperties>
@@ -44,8 +44,8 @@ ms.locfileid: "44463098"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ImGroup](imgroup.md) <br/> |インスタントメッセージンググループを表します。  <br/> |
-|[Searchプレビューアイテム](searchpreviewitem.md) <br/> |アイテムを開かずに、プレビューのメールボックスアイテムの最初の256文字を指定します。  <br/> |
+|[ImGroup](imgroup.md) <br/> |インスタント メッセージング グループを表します。  <br/> |
+|[SearchPreviewItem](searchpreviewitem.md) <br/> |アイテムを開かなくても、プレビュー用のメールボックス アイテムの最初の 256 文字を指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -59,12 +59,12 @@ ms.locfileid: "44463098"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 468bfdd7-d5df-4bca-8f76-34bd5fb722bb
-description: TelUriAddress 要素には、連絡先の tel Uniform Resource Identifier (URI) が含まれています。
-ms.openlocfilehash: 967d21974ef789dec1d252e650c6391a07b6ac0e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: TelUriAddress 要素には、連絡先の TEL Uniform リソース識別子 (URI) が含まれています。
+ms.openlocfilehash: 2bdbf499491322f6654e0ae24f3a079334c8b4a0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468839"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59534202"
 ---
 # <a name="teluriaddress"></a>TelUriAddress
 
-**Teluriaddress**要素には、連絡先の Tel Uniform resource IDENTIFIER (URI) が含まれています。 
+**TelUriAddress 要素には**、連絡先の TEL Uniform リソース識別子 (URI) が含まれています。 
   
 ```XML
 <TelUriAddress></TelUriAddress>
@@ -42,7 +42,7 @@ ms.locfileid: "44468839"
   
 ## <a name="text-value"></a>テキスト値
 
-**Teluriaddress**要素のテキスト値は、連絡先の tel URI です。 
+**TelUriAddress 要素のテキスト** 値は、連絡先の電話 URI です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44468839"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

@@ -1,27 +1,27 @@
 ---
-title: Is会議の応答
+title: IsMeetingResponse
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsMeetingResponse
 api_type:
 - schema
 ms.assetid: 85090943-81c6-4fbe-a2db-007dced6a4cf
-description: IsMeetngResponsequest 要素は、条件または例外を適用するために、受信メッセージが会議の応答である必要があるかどうかを示します。
-ms.openlocfilehash: 40714b7e926768f55207d870b79f21f07163bb37
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: IsMeetngResponsequest 要素は、条件または例外を適用するために受信メッセージが会議の応答である必要かどうかを示します。
+ms.openlocfilehash: ff6008eef7ae5198738e68db62303b06a619e41d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465934"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59532752"
 ---
-# <a name="ismeetingresponse"></a>Is会議の応答
+# <a name="ismeetingresponse"></a>IsMeetingResponse
 
-**IsMeetngResponsequest**要素は、条件または例外を適用するために、受信メッセージが会議の応答である必要があるかどうかを示します。 
+**IsMeetngResponsequest** 要素は、条件または例外を適用するために受信メッセージが会議の応答である必要かどうかを示します。 
   
 ```XML
 <IsMeetingResponse/>true | false</IsMeetingResponse>
@@ -44,12 +44,12 @@ ms.locfileid: "44465934"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[条件](conditions.md) <br/> |ルールのルールの処理を開始するときに実行される条件を表します。  <br/> |
-|[例外](exceptions.md) <br/> |受信トレイルールに対して使用可能なすべてのルールの例外条件を表します。  <br/> |
+|[条件](conditions.md) <br/> |満たされると、ルールのルール アクションをトリガーする条件を表します。  <br/> |
+|[例外](exceptions.md) <br/> |受信トレイ ルールで使用可能なすべてのルール例外条件を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**True**のテキスト値は、条件または例外を適用するために、メッセージが会議の応答である必要があることを示します。 テキスト値が**false**の場合は、条件または例外を適用するために、メッセージが会議出席依頼の返信ではない必要があることを示します。 
+true のテキスト **値は** 、条件または例外が適用されるには、メッセージが会議の応答である必要があります。 false のテキスト値 **は** 、条件または例外を適用するために、メッセージが会議の応答でなくする必要があります。 
   
 ## <a name="remarks"></a>注釈
 
@@ -60,13 +60,13 @@ ms.locfileid: "44465934"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

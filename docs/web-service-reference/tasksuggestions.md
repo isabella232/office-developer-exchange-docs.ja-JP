@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7d3c6314-2a5c-4fc3-b5f9-ae6d4946aac3
-description: TaskSuggestions 要素は、アイテムから抽出されたタスク提案の配列を指定します。
-ms.openlocfilehash: 024f8daff6dd61d6563fff4849ed09602c95efb5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: TaskSuggestions 要素は、アイテムから抽出されたタスク候補の配列を指定します。
+ms.openlocfilehash: 1fc1d8f7addcc22dc99d034a0ba16ca7a11958f2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468118"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538850"
 ---
 # <a name="tasksuggestions"></a>TaskSuggestions
 
-**Tasksuggestions**要素は、アイテムから抽出されたタスク提案の配列を指定します。 
+**TaskSuggestions 要素** は、アイテムから抽出されたタスク候補の配列を指定します。 
   
 ```XML
 <TaskSuggestions>
@@ -54,8 +54,8 @@ ms.locfileid: "44468118"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

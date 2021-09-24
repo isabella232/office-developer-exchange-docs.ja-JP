@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d72e9f7e-2795-44f1-a55f-06b94f5e41ea
-description: Name (ExtendedAttributeType) 要素は、内部使用のみを目的としています。
-ms.openlocfilehash: 3244923cf1c3bb4147af8c8cf9ddb488f2cbc5e0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Name (ExtendedAttributeType) 要素は、内部での使用のみを目的とします。
+ms.openlocfilehash: eb17cefb1117cc3c6cebb808ae11d296af3d987c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466921"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59537733"
 ---
 # <a name="name-extendedattributetype"></a>Name (ExtendedAttributeType)
 
-**Name (ExtendedAttributeType)** 要素は、内部使用のみを目的としています。 
+Name **(ExtendedAttributeType)** 要素は、内部での使用のみを目的とします。 
 
 ## <a name="attributes-and-elements"></a>属性と要素
 

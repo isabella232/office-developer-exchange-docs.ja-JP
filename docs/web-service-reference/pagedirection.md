@@ -1,29 +1,29 @@
 ---
-title: ページの方向
+title: PageDirection
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 013947f3-cf3c-40b1-baf6-405f26bd375e
-description: PageDirection 要素には、検索結果の改ページ位置の方向が含まれています。 値が Previous または Next。
-ms.openlocfilehash: 22816ff73af49e0f029b5618fa3d45f8880d0f82
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: PageDirection 要素には、検索結果のページネーションの方向が含まれる。 値は [前へ] または [次へ] です。
+ms.openlocfilehash: d6e0cd7b1654e5a8f371f3812ee21858662fcf9f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459729"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539156"
 ---
-# <a name="pagedirection"></a>ページの方向
+# <a name="pagedirection"></a>PageDirection
 
-**Pagedirection**要素には、検索結果の改ページ位置の方向が含まれています。 値が Previous または Next。 
+**PageDirection 要素** には、検索結果のページネーションの方向が含まれる。 値は [前へ] または [次へ] です。 
   
 ```XML
 <PageDirection> Previous | Next </PageDirection>
 ```
 
- **Searchpagedirection 型**
+ **SearchPageDirectionType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -38,11 +38,11 @@ ms.locfileid: "44459729"
   
 ### <a name="parent-elements"></a>親要素
 
-[Searchmailboxes ボックス](searchmailboxes.md)  | [Getnonindexableitemdetails](getnonindexableitemdetails.md)
+[SearchMailboxes](searchmailboxes.md)  | [GetNonIndexableItemDetails](getnonindexableitemdetails.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**Pagedirection**要素のテキスト値は、検索結果のページネーションの方向です。 
+**PageDirection** 要素のテキスト値は、検索結果をページ分割する方向です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44459729"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

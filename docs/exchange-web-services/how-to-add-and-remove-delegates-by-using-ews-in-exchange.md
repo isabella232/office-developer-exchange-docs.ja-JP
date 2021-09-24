@@ -3,15 +3,15 @@ title: Exchange で EWS を使用して代理人を追加および削除する
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cc7760bf-633b-483a-84ae-b52f437af2d3
 description: Exchange の EWS マネージ API または EWS を使用してユーザーのメールボックスに対して代理人を追加または削除する方法について説明します。
-ms.openlocfilehash: 9db0171db51c0847d54bbcec7e28937eaed18d43
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 67370360e24da55b7a908d0a34b7ac1ec949877d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455339"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520207"
 ---
 # <a name="add-and-remove-delegates-by-using-ews-in-exchange"></a>Exchange で EWS を使用して代理人を追加および削除する
 
@@ -83,7 +83,7 @@ public static Collection<DelegateUserResponse> AddDelegates(ExchangeService serv
 
 次のコード例は、[AddDelegate](https://msdn.microsoft.com/library/012d8cc5-648c-4ba0-a155-15c422b1e994%28Office.15%29.aspx) EWS 操作を使用して予定表、連絡先、およびメールの別々の代理人を追加する方法を示しています。 変更するメールボックスは [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) 要素で指定され、各代理人の[アクセス許可](delegate-access-and-ews-in-exchange.md#bk_delegateperms)の設定は [DelegateUser](https://msdn.microsoft.com/library/aac4e74e-f69b-4c41-a0c9-489610330fbf%28Office.15%29.aspx) 要素に含まれます。 それぞれの代理人に、対象となるフォルダーに対する編集者アクセス許可が与えられます。 
   
-これは、**AddDelegates** メソッドを使用して[代理人を追加](#bk_adddelegateewsma)するときに EWS マネージ API が送信する XML 要求でもあります。
+これは、**AddDelegates** メソッドを使用して [代理人を追加](#bk_adddelegateewsma)するときに EWS マネージ API が送信する XML 要求でもあります。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -257,7 +257,7 @@ public static Collection<DelegateUserResponse> RemoveDelegates(ExchangeService s
 
 [RemoveDelegate](https://msdn.microsoft.com/library/1d42d5ff-8fde-4f8a-b18d-57b1ef7a946a%28Office.15%29.aspx) EWS 操作を使用して、メールボックスから代理人を削除できます。この例では、[代理人の追加の例](#bk_adddelegateews)で設定された代理人アクセス許可が削除されます。 
   
-これは、**RemoveDelegates** メソッドを使用して[代理人を削除](#bk_removedelegateewsma)するときに EWS マネージ API が送信する XML 要求でもあります。
+これは、**RemoveDelegates** メソッドを使用して [代理人を削除](#bk_removedelegateewsma)するときに EWS マネージ API が送信する XML 要求でもあります。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

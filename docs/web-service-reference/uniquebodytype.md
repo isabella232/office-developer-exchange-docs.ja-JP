@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8f7276aa-e354-40e4-b9cb-950fad46ac93
-description: UniqueBodyType 要素は、一意の本文がテキスト形式または HTML 形式のどちらで返されるかを指定します。
-ms.openlocfilehash: 7e6c4631ef589555ce4d5da747c200ffe956f3a1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: UniqueBodyType 要素は、一意の本文をテキスト形式または HTML 形式で返すかどうかを指定します。
+ms.openlocfilehash: a0149e41da24646fdf38a465434bfad3557ece22
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459441"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520270"
 ---
 # <a name="uniquebodytype"></a>UniqueBodyType
 
-**UniqueBodyType**要素は、一意の本文がテキスト形式または HTML 形式のどちらで返されるかを指定します。 
+**UniqueBodyType** 要素は、一意の本文をテキスト形式または HTML 形式で返すかどうかを指定します。 
   
 ```XML
 <UniqueBodyType> Best | HTML | Text </UniqueBodyType>
@@ -42,15 +42,15 @@ ms.locfileid: "44459441"
   
 ## <a name="text-value"></a>テキスト値
 
-**UniqueBodyType**要素のテキスト値は、で一意の本文が返される形式を示します。 次の表に、この要素で使用できる値を示します。 
+**UniqueBodyType** 要素のテキスト値は、一意の本文が返される形式を示します。 次の表に、この要素に使用できる値を示します。 
   
 ****
 
 |**値**|**説明**|
 |:-----|:-----|
-|高  <br/> |応答によって、本文の中で最も豊富な利用可能なコンテンツが返されます。 これは、コンテンツがテキストであるか HTML であるかにかかわらず、不明な場合に便利です。  <br/> 保存された本文がプレーンテキストの場合、返される本文はテキストになります。 それ以外の場合、保存された本文が HTML または RTF 形式の場合、応答は HTML を返します。  <br/> これは既定の値です。  <br/> |
-|HTML  <br/> |応答は、一意の本文を HTML として返します。  <br/> |
-|テキスト  <br/> |応答は、プレーンテキストとして一意の本文を返します。  <br/> |
+|高  <br/> |応答は、本文テキストの利用可能な最もリッチなコンテンツを返します。 これは、コンテンツがテキストか HTML か不明な場合に便利です。  <br/> 格納された本文がプレーン テキストの場合、返される本文はテキストです。 それ以外の場合、格納されている本文が HTML 形式または RTF 形式の場合、応答は HTML を返します。  <br/> これが既定値です。  <br/> |
+|HTML  <br/> |応答は、HTML として一意の本文を返します。  <br/> |
+|テキスト  <br/> |応答は、一意の本文をプレーン テキストとして返します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -63,9 +63,9 @@ ms.locfileid: "44459441"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -74,5 +74,5 @@ ms.locfileid: "44459441"
 [ItemShape](itemshape.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

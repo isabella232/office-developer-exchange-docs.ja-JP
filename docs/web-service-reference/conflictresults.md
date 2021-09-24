@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ConflictResults
 api_type:
 - schema
 ms.assetid: 08cdd547-4de7-4c7a-b60f-e618dc217d20
-description: ConflictResults 要素には、UpdateItem 操作応答の競合の数が含まれています。
-ms.openlocfilehash: 923c7950e21039adf28e232486f4df5fc04889d1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ConflictResults 要素には、UpdateItem 操作応答の競合の数が含まれる。
+ms.openlocfilehash: 44b9c6952905274128c3651999b97cb2ee0c1fe8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460170"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519941"
 ---
 # <a name="conflictresults"></a>ConflictResults
 
-[ConflictResults](conflictresults.md)要素には、 [updateitem 操作](updateitem-operation.md)応答の競合の数が含まれています。 
+[ConflictResults 要素](conflictresults.md)には、UpdateItem 操作応答の競合[の数が含](updateitem-operation.md)まれる。 
   
 [UpdateItemResponse](updateitemresponse.md)
   
@@ -50,26 +50,26 @@ ms.locfileid: "44460170"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Count](count.md) <br/> |[Updateitem 操作](updateitem-operation.md)応答の競合の数を格納します。  <br/> |
+|[Count](count.md) <br/> |UpdateItem 操作応答の競合の [数を格納](updateitem-operation.md) します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[UpdateItemResponseMessage](updateitemresponsemessage.md) <br/> |1つの[Updateitem 操作](updateitem-operation.md)要求の状態と結果を格納します。  <br/> |
+|[UpdateItemResponseMessage](updateitemresponsemessage.md) <br/> |単一の UpdateItem 操作要求の状態と [結果を格納](updateitem-operation.md) します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされた Exchange Server を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされているコンピューター Exchange Server EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

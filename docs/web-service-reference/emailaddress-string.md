@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5b847017-fa89-4094-bfa1-cc436b760207
-description: EmailAddress 要素は、1つの電子メールアドレスを指定します。
-ms.openlocfilehash: b245611868d473e35f96e0d0b37f7cb4fbe9c94c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: EmailAddress 要素は、1 つの電子メール アドレスを指定します。
+ms.openlocfilehash: 84e41d4346bc280e07587b0ed192de03e56ffab0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526229"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520806"
 ---
 # <a name="emailaddress-string"></a>EmailAddress (文字列)
 
-**EmailAddress**要素は、1つの電子メールアドレスを指定します。 
+**EmailAddress 要素は**、1 つの電子メール アドレスを指定します。 
   
 ```XML
 <EmailAddress></EmailAddress>
@@ -40,11 +40,11 @@ ms.locfileid: "44526229"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[EmailAddressEntity](emailaddressentity.md) <br/> |1つの電子メールアドレスエンティティを指定します。  <br/> |
+|[EmailAddressEntity](emailaddressentity.md) <br/> |1 つの電子メール アドレス エンティティを指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**EmailAddress**要素のテキスト値は、電子メールアドレスを指定する文字列型 (string) の値です。 
+**EmailAddress** 要素のテキスト値は、電子メール アドレスを指定する文字列値です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -58,10 +58,10 @@ ms.locfileid: "44526229"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

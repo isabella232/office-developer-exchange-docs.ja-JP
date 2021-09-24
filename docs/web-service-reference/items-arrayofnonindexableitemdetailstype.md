@@ -1,23 +1,23 @@
 ---
-title: アイテム (ArrayOfNonIndexableItemDetailsType)
+title: Items (ArrayOfNonIndexableItemDetailsType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: da795880-12b4-4341-bcb8-31616f4ba46f
-description: Items 要素には、インデックスを持たないアイテムのアイテムの詳細の配列が含まれています。
-ms.openlocfilehash: 81ca175933b0d23a939f6fdc45cb5a10e7157350
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Items 要素には、インデックスを作成できないアイテムのアイテム詳細の配列が含まれます。
+ms.openlocfilehash: 82553a704d60cb7398a678bc54e1622e3eb415b3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459904"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519423"
 ---
-# <a name="items-arrayofnonindexableitemdetailstype"></a>アイテム (ArrayOfNonIndexableItemDetailsType)
+# <a name="items-arrayofnonindexableitemdetailstype"></a>Items (ArrayOfNonIndexableItemDetailsType)
 
-**Items**要素には、インデックスを持たないアイテムのアイテムの詳細の配列が含まれています。 
+**Items 要素** には、インデックスを作成できないアイテムのアイテム詳細の配列が含まれます。 
   
 ```XML
 <Items>
@@ -40,7 +40,7 @@ ms.locfileid: "44459904"
   
 ### <a name="parent-elements"></a>親要素
 
-[Nonindexableitemの取得結果](nonindexableitemdetailsresult.md)
+[NonIndexableItemDetailsResult](nonindexableitemdetailsresult.md)
   
 ## <a name="remarks"></a>注釈
 
@@ -53,9 +53,9 @@ ms.locfileid: "44459904"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -64,5 +64,5 @@ ms.locfileid: "44459904"
 [GetNonIndexableItemDetails 操作](getnonindexableitemdetails-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

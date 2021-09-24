@@ -1,27 +1,27 @@
 ---
-title: 月の明示再生
+title: MonthlyRegeneration
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MonthlyRegeneration
 api_type:
 - schema
 ms.assetid: 9a52ca97-a663-41fe-b61a-61d8c53833ca
-description: 月単位の再生要素には、タスクが再生成される頻度 (月数) を指定します。
-ms.openlocfilehash: c941bc2606790646d2797df27c854996901c0bc6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MonthlyRegeneration 要素は、タスクが再生成される頻度を月数で表します。
+ms.openlocfilehash: bd69c7fa03959e1fb6657ef8d94f61bcdf4e2b82
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462739"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520388"
 ---
-# <a name="monthlyregeneration"></a>月の明示再生
+# <a name="monthlyregeneration"></a>MonthlyRegeneration
 
-月単位の**再生**要素には、タスクが再生成される頻度 (月数) を指定します。 
+**MonthlyRegeneration 要素** は、タスクが再生成される頻度を月数で表します。 
   
 ```xml
 <MonthlyRegeneration>
@@ -42,30 +42,30 @@ ms.locfileid: "44462739"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[間隔](interval.md) <br/> |2つの連続する定期的なアイテム間の間隔 (月数) を定義します。  <br/> |
+|[間隔](interval.md) <br/> |2 つの連続する定期的なアイテム間の間隔を月で定義します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[定期的なアイテム (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |定期的なタスクの定期的なアイテムの情報が含まれています。  <br/> |
+|[Recurrence (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |定期的なタスクの定期的な情報が含まれています。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

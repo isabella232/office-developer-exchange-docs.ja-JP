@@ -5,50 +5,50 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0cb5525f-faa3-48f1-9551-df55ffc26f46
-description: AddNewImContactToGroup EWS 操作についての情報を検索します。
-ms.openlocfilehash: e91cc067b4161b366e6713a9adc16873e63b1562
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: AddNewImContactToGroup EWS 操作に関する情報を検索します。
+ms.openlocfilehash: 0060b7a0f169e5d8ce0034625ea0c4b367521301
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465030"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520137"
 ---
 # <a name="addnewimcontacttogroup-operation"></a>AddNewImContactToGroup 操作
 
-**AddNewImContactToGroup** EWS 操作についての情報を検索します。 
+**AddNewImContactToGroup** EWS 操作に関する情報を検索します。 
   
-**AddNewImContactToGroup**操作は、新しい連絡先をインスタントメッセージング (IM) グループに追加します。 
+**AddNewImContactToGroup 操作は**、インスタント メッセージング (IM) グループに新しい連絡先を追加します。 
   
 この操作は Exchange Server 2013 で導入されました。
   
 ## <a name="using-the-addnewimcontacttogroup-operation"></a>AddNewImContactToGroup 操作の使用
 
-**AddNewImContactToGroup**操作は、次の3つの引数を受け取り、IM グループに新しい連絡先を追加します。 
+**AddNewImContactToGroup** 操作では、次の 3 つの引数を使用して、IM グループに新しい連絡先を追加します。 
   
-- **Imaddress**プロパティ-連絡先の IM アドレスを識別します。 このプロパティは必須です。 
+- **ImAddress プロパティ** - 連絡先の IM アドレスを識別します。 このプロパティは必須です。 
     
-- **DisplayName**プロパティ-連絡先の表示名を識別します。 
+- **DisplayName** プロパティ - 連絡先の表示名を識別します。 
     
-- **GroupId**プロパティ-連絡先が追加されるグループを識別します。 
+- **GroupId** プロパティ - 連絡先が追加されるグループを識別します。 
     
-この操作は、グループに追加された連絡先のペルソナを返します。
+この操作は、グループに追加された連絡先のペルシャを返します。
   
-### <a name="addnewimcontacttogroup-operation-soap-headers"></a>AddNewImContactToGroup 操作の SOAP ヘッダー
+### <a name="addnewimcontacttogroup-operation-soap-headers"></a>AddNewImContactToGroup 操作 SOAP ヘッダー
 
-**AddNewImContactToGroup**操作では、次の表に示す SOAP ヘッダーを使用できます。 
+**AddNewImContactToGroup** 操作では、次の表に示す SOAP ヘッダーを使用できます。 
   
-|**ヘッダー名**|**要素**|**説明**|
+|**ヘッダー名**|**Element**|**説明**|
 |:-----|:-----|:-----|
-|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |RFC 3066 で定義されているように、メールボックスへのアクセスに使用されるカルチャ (言語の識別用のタグ) を識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは応答に適用されます。  <br/> |
+|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |メールボックスへのアクセスに使用する RFC 3066「言語の識別用タグ」で定義されているカルチャを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマ バージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは、応答に適用されます。  <br/> |
    
-## <a name="addnewimcontacttogroup-operation-request-example-add-a-new-im-contact-to-a-group"></a>AddNewImContactToGroup 操作要求の例: 新しい IM 連絡先をグループに追加します。
+## <a name="addnewimcontacttogroup-operation-request-example-add-a-new-im-contact-to-a-group"></a>AddNewImContactToGroup 操作要求の例: グループに新しい IM 連絡先を追加する
 
-次の**AddNewImContactToGroup**操作要求の例は、新しい連絡先を既存の IM グループに追加する方法を示しています。 この例の**GroupId**プロパティの値は、 [addimgroup 操作](addimgroup-operation.md)の結果から返されました。 **ExchangeStoreId**プロパティには、 **GroupId**プロパティの値が含まれています。 
+**AddNewImContactToGroup** 操作要求の次の例は、既存の IM グループに新しい連絡先を追加する方法を示しています。 この **例の GroupId** プロパティ値は [、AddImGroup](addimgroup-operation.md)操作の結果から返されました。 **ExchangeStoreId プロパティ** には **、GroupId プロパティの値が** 含まれる。 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -74,24 +74,24 @@ ms.locfileid: "44465030"
 ```
 
 > [!NOTE]
-> **GroupId**値は読みやすいように短縮されています。 
+> **読みやすさを** 維持するために GroupId 値が短縮されました。 
   
 要求 SOAP 本文には、次の要素が含まれています。
   
 - [AddNewImContactToGroup](addnewimcontacttogroup.md)
     
-- [ImAddress (文字列)](imaddress-string.md)
+- [ImAddress (String)](imaddress-string.md)
     
-- [DisplayName (文字列)](displayname-string.md)
+- [DisplayName (string)](displayname-string.md)
     
 - [GroupId](groupid.md)
     
-## <a name="successful-addnewimcontacttogroup-operation-response"></a>成功した AddNewImContactToGroup 操作の応答
+## <a name="successful-addnewimcontacttogroup-operation-response"></a>AddNewImContactToGroup 操作応答の成功
 
-次の例は、 **AddNewImContactToGroup**操作要求に対する正常な応答を示しています。 応答には、新しく作成された連絡先のペルソナが含まれています。 連絡先が Exchange の [クイック連絡先] フォルダーに追加されます。 
+次の例は **、AddNewImContactToGroup** 操作要求に対する正常な応答を示しています。 応答には、新しく作成された連絡先のペルサが含まれる。 連絡先は、連絡先の [クイック連絡先] フォルダーに追加Exchange。 
   
 > [!NOTE]
-> 読みやすくするために、識別子が短縮されています。 
+> 識別子は、読みやすさを維持するために短縮されました。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -198,11 +198,11 @@ ms.locfileid: "44465030"
     
 - [PersonaId](personaid.md)
     
-- [個人の Atype](personatype.md)
+- [PersonaType](personatype.md)
     
 - [CreationTime](creationtime.md)
     
-- [DisplayName (文字列)](displayname-string.md)
+- [DisplayName (string)](displayname-string.md)
     
 - [DisplayNameFirstLast](displaynamefirstlast.md)
     
@@ -218,19 +218,19 @@ ms.locfileid: "44465030"
     
 - [RoutingType (EmailAddressType)](routingtype-emailaddresstype.md)
     
-- [ImAddress (文字列)](imaddress-string.md)
+- [ImAddress (String)](imaddress-string.md)
     
 - [RelevanceScore](relevancescore.md)
     
 - [Attributions (ArrayOfPersonaAttributionsType)](attributions-arrayofpersonaattributionstype.md)
     
-- [属性 (PersonaAttributionType)](attribution-personaattributiontype.md)
+- [Attribution (PersonaAttributionType)](attribution-personaattributiontype.md)
     
-- [ID (文字列)](id-string.md)
+- [ID (String)](id-string.md)
     
 - [SourceId](sourceid.md)
     
-- [IsWritable 可能](iswritable.md)
+- [IsWritable](iswritable.md)
     
 - [IsQuickContact](isquickcontact.md)
     
@@ -242,7 +242,7 @@ ms.locfileid: "44465030"
     
 - [StringAttributedValue](stringattributedvalue.md)
     
-- [値 (ArrayOfStringValueType)](value-arrayofstringvaluetype.md)
+- [Value (ArrayOfStringValueType)](value-arrayofstringvaluetype.md)
     
 - [FileAsIds](fileasids.md)
     
@@ -254,7 +254,7 @@ ms.locfileid: "44465030"
     
 ## <a name="addnewimcontacttogroup-operation-error-response"></a>AddNewImContactToGroup 操作エラー応答
 
-次の例は、 **AddNewImContactToGroup**操作要求へのエラー応答を示しています。 これは、依頼者のメールボックスにないグループに連絡先を追加する要求に対する応答です。 
+次の例は **、AddNewImContactToGroup** 操作要求に対するエラー応答を示しています。 これは、要求者のメールボックスに含まれるグループに連絡先を追加する要求に対する応答です。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -297,7 +297,7 @@ ms.locfileid: "44465030"
     
 - [MessageXml](messagexml.md)
     
-EWS で汎用的でこの操作に固有の追加のエラーコードについては、「応答」[を参照してください。](responsecode.md)
+EWS に汎用的で、この操作に固有の追加のエラー コードについては [、「ResponseCode」を参照してください](responsecode.md)。
   
 ## <a name="see-also"></a>関連項目
 

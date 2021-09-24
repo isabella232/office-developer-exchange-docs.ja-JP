@@ -1,35 +1,35 @@
 ---
-title: Exchange 2013 用の SmtpReceiveAgent トランスポートエージェントを作成する
+title: 2013 年の SmtpReceiveAgent トランスポート エージェントExchangeする
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cdc7c462-74a7-49d6-95b2-155d783840e9
-description: Exchange 2013 で使用する、カスタムの SmtpReceiveAgent トランスポートエージェントを作成する方法について説明します。
-ms.openlocfilehash: 5ba021d02849ffc7e125029f0fd18ebf14c3f8da
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: 2013 で使用するカスタム SmtpReceiveAgent トランスポート エージェントを作成するExchangeします。
+ms.openlocfilehash: a441f93113798c10421e9073e266c28fd87bca8d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459140"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513032"
 ---
-# <a name="create-an-smtpreceiveagent-transport-agent-for-exchange-2013"></a>Exchange 2013 用の SmtpReceiveAgent トランスポートエージェントを作成する
+# <a name="create-an-smtpreceiveagent-transport-agent-for-exchange-2013"></a>2013 年の SmtpReceiveAgent トランスポート エージェントExchangeする
 
-Exchange 2013 で使用する、カスタムの SmtpReceiveAgent トランスポートエージェントを作成する方法について説明します。
+2013 で使用するカスタム SmtpReceiveAgent トランスポート エージェントを作成するExchangeします。
   
 **製品:** Exchange Server 2013
   
-関連するコードスニペットとサンプルアプリ:
+関連するコード スニペットとサンプル アプリ:
 
-- [Exchange 2013: 本文変換トランスポートエージェントを構築する](https://code.msdn.microsoft.com/Exchange/Exchange-2013-Build-a-body-ed36ecb0)
+- [Exchange 2013: 本文変換トランスポート エージェントを作成する](https://code.msdn.microsoft.com/Exchange/Exchange-2013-Build-a-body-ed36ecb0)
   
-[Smtpreceiveagentfactory](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgentFactory.aspx)および[smtpreceiveagent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.aspx)クラスを使用すると、メールボックスサーバー上のクライアントアクセスサーバーまたはトランスポートサービス上のフロントエンドトランスポートサービスの動作を拡張することができます。 これらのクラスを使用して、組織に到着したメッセージに応答するように設計されたトランスポート エージェントを実装できます。 
+[SmtpReceiveAgentFactory](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgentFactory.aspx)クラスと[SmtpReceiveAgent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.aspx)クラスを使用すると、クライアント アクセス サーバー上のフロントエンド トランスポート サービスまたはメールボックス サーバー上のトランスポート サービスの動作を拡張できます。 これらのクラスを使用して、組織に到着したメッセージに応答するように設計されたトランスポート エージェントを実装できます。 
   
-[Smtpreceiveagentfactory](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgentFactory.aspx)および[smtpreceiveagent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.aspx)クラスには、次の表に示すイベントが含まれています。 
+[SmtpReceiveAgentFactory](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgentFactory.aspx)クラスと[SmtpReceiveAgent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.aspx)クラスには、次の表に示すイベントが含まれます。 
   
-**表1SmtpReceiveAgent クラスのイベント**
+**表 1.SmtpReceiveAgent クラス イベント**
 
 |**イベント**|**説明**|
 |:-----|:-----|
@@ -58,9 +58,9 @@ Exchange 2013 で使用する、カスタムの SmtpReceiveAgent トランスポ
   
    ```
 
-   これらの名前空間は、Exchange 2013 サーバーで見つけることができます。 これらの名前空間への参照を追加すると、 [Smtpreceiveagent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.aspx)メンバーだけでなく、Exchange 2013 で使用されている他のクラスにもアクセスできるようになります。[本文変換トランスポートエージェント](https://code.msdn.microsoft.com/Exchange/Exchange-2013-Build-a-body-ed36ecb0)サンプルを作成します。 
+   これらの名前空間は、2013 Exchangeで確認できます。 これらの名前空間への参照を追加すると[、smtpReceiveAgent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.aspx)メンバー、および[Exchange 2013:](https://code.msdn.microsoft.com/Exchange/Exchange-2013-Build-a-body-ed36ecb0)ビルドの本文変換トランスポート エージェント サンプルで使用される他のクラスにアクセスできます。 
     
-2. [Smtpreceiveagentfactory](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgentFactory.aspx)クラスの派生クラスを実装します。 
+2. [SmtpReceiveAgentFactory クラスの派生クラスを実装](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgentFactory.aspx)します。 
     
    ```cs
       public class BodyConversionFactory : SmtpReceiveAgentFactory
@@ -98,7 +98,7 @@ Exchange 2013 で使用する、カスタムの SmtpReceiveAgent トランスポ
   
    ```
 
-   独自のエージェント クラスを定義すると、カスタムの機能を追加できるようになります。 この例では、 [Onendofdata](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.OnEndOfData.aspx)イベントがカスタムイベントハンドラーにリダイレクトされます。 
+   独自のエージェント クラスを定義すると、カスタムの機能を追加できるようになります。 この例では [、OnEndOfData](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.OnEndOfData.aspx) イベントがカスタム イベント ハンドラーにリダイレクトされます。 
     
 ## <a name="see-also"></a>関連項目
 

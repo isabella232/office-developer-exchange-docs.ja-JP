@@ -3,15 +3,15 @@ title: Exchange の EWS を使用してメールボックス イベントに関�
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: eb25cbd1-2244-4c3f-a71a-5ee20f81c41f
 description: EWS マネージ API または EWS を使用してプル通知の受信を登録し、イベントを取得する方法について説明します。
-ms.openlocfilehash: 3d77c0d4efb8fc853eea64ff2429af5c3dbead27
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: eb694eddd16567e42ccc43b2854f0432c54dc6b1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456742"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513102"
 ---
 # <a name="pull-notifications-about-mailbox-events-by-using-ews-in-exchange"></a>Exchange の EWS を使用してメールボックス イベントに関する通知を取得する
 
@@ -70,7 +70,7 @@ GetEventsResults events = subscription.GetEvents();
 </Subscribe>
 ```
 
-次の XML の例は、**Subscribe 操作**要求に対する応答として、サーバーからクライアントに送信される [SubscribeResponse](https://msdn.microsoft.com/library/fd87e9b7-c231-44fa-9f5b-19ae96cda5cc%28Office.15%29.aspx) メッセージを示しています。 [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 要素には、サブスクリプションの作成が成功したことを意味する NoError の値が含まれています。 [SubscriptionId](https://msdn.microsoft.com/library/77c0abab-69e8-428e-8c20-22258e4ef71b%28Office.15%29.aspx) 要素により、サーバー上のプル通知サブスクリプションが一意に特定されます。 [Watermark](https://msdn.microsoft.com/library/e1545046-94f9-4ac7-af1c-ea81dfb6822c%28Office.15%29.aspx) 要素は、メールボックス イベント キュー内のブックマークを表します。 
+次の XML 例は、**Subscribe** 操作要求に対する応答として、サーバーからクライアントに送信される [SubscribeResponse](https://msdn.microsoft.com/library/fd87e9b7-c231-44fa-9f5b-19ae96cda5cc%28Office.15%29.aspx) メッセージを示しています。[ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 要素には、サブスクリプションの作成が成功したことを意味する NoError の値が含まれています。[SubscriptionId](https://msdn.microsoft.com/library/77c0abab-69e8-428e-8c20-22258e4ef71b%28Office.15%29.aspx) 要素により、サーバー上のプル通知サブスクリプションが一意に特定されます。[Watermark](https://msdn.microsoft.com/library/e1545046-94f9-4ac7-af1c-ea81dfb6822c%28Office.15%29.aspx) 要素は、メールボックス イベント キュー内のブックマークを表します。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -86,12 +86,12 @@ GetEventsResults events = subscription.GetEvents();
 </SubscribeResponse>
 ```
 
-サブスクリプションを作成すると、**SubscribeResponse** メッセージで返される**SubscriptionId** を使用して、ストリーミングされたイベントを取得できるようになります。 
+サブスクリプションを作成すると、**SubscribeResponse** メッセージで返される **SubscriptionId** を使用して、ストリーミングされたイベントを取得できるようになります。 
   
 ## <a name="get-pull-notifications-by-using-ews"></a>EWS を使用したプル通知の取得
 <a name="bk_getpull"> </a>
 
-次の XML の例は、[SubscribeResponse](https://msdn.microsoft.com/library/fd87e9b7-c231-44fa-9f5b-19ae96cda5cc%28Office.15%29.aspx) メッセージで返された [SubscriptionId](https://msdn.microsoft.com/library/77c0abab-69e8-428e-8c20-22258e4ef71b%28Office.15%29.aspx) についての通知を取得するために、クライアントからサーバーに送信される [GetEvents 操作](https://msdn.microsoft.com/library/f268efe5-9a1a-41a2-b6a6-51fcde7720a1%28Office.15%29.aspx)要求のメッセージを示しています。 最初の **GetEvents** 要求には、**Subscribe** 応答で返された [Watermark](https://msdn.microsoft.com/library/e1545046-94f9-4ac7-af1c-ea81dfb6822c%28Office.15%29.aspx) を使用します。 その後の **GetEvents** 要求には、前の **GetEvents** 要求で返された最新の **Watermark** を使用します。 
+次の XML 例は、[SubscribeResponse](https://msdn.microsoft.com/library/fd87e9b7-c231-44fa-9f5b-19ae96cda5cc%28Office.15%29.aspx) メッセージで返された [SubscriptionId](https://msdn.microsoft.com/library/77c0abab-69e8-428e-8c20-22258e4ef71b%28Office.15%29.aspx) についての通知を取得するために、クライアントからサーバーに送信される [GetEvents 操作](https://msdn.microsoft.com/library/f268efe5-9a1a-41a2-b6a6-51fcde7720a1%28Office.15%29.aspx)要求のメッセージを示しています。最初の **GetEvents** 要求には、**Subscribe** 応答で返された [Watermark](https://msdn.microsoft.com/library/e1545046-94f9-4ac7-af1c-ea81dfb6822c%28Office.15%29.aspx) を使用します。その後の **GetEvents** 要求には、前の **GetEvents** 要求で返された最新の **Watermark** を使用します。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -102,7 +102,7 @@ GetEventsResults events = subscription.GetEvents();
 </GetEvents>
 ```
 
-次の XML の例は、サーバーからクライアントに送信される **GetEvents** 応答メッセージを示しています。 それぞれの **GetEvents** 応答には、1 つ以上のイベントに関する情報が含まれています。 **Watermark** は、イベントごとに返されます。 最新の **Watermark** は保存しておいて、次回の **GetEvents** 要求で使用する必要があります。 最後の **GetEvents** 要求以降にストア イベントが発生していない場合は、状態イベントが返されます。 
+次の XML 例は、サーバーからクライアントに送信される **GetEvents** 応答メッセージを示しています。それぞれの **GetEvents** 応答には、1 つ以上のイベントに関する情報が含まれています。**Watermark** は、イベントごとに返されます。最新の **Watermark** は保存しておいて、次回の **GetEvents** 要求で使用する必要があります。最後の **GetEvents** 要求以降にストア イベントが発生していない場合は、状態イベントが返されます。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -127,7 +127,7 @@ GetEventsResults events = subscription.GetEvents();
 </GetEventsResponse>
 ```
 
-サーバーからイベントを受信したら、[変更内容をクライアントに同期します](how-to-pull-notifications-about-mailbox-events-by-using-ews-in-exchange.md#bk_nextsteps)。 サブスクリプションが不要になったら、[Unsubscribe 操作](https://msdn.microsoft.com/library/994a9d2b-1501-4804-90f0-12bd914496ec%28Office.15%29.aspx)を使用してサーバーとのサブスクリプションを終了します。 
+サーバーからイベントを受信したら、[変更内容をクライアントに同期します](how-to-pull-notifications-about-mailbox-events-by-using-ews-in-exchange.md#bk_nextsteps)。サブスクリプションが不要になったら、[Unsubscribe 操作](https://msdn.microsoft.com/library/994a9d2b-1501-4804-90f0-12bd914496ec%28Office.15%29.aspx)を使用してサーバーとのサブスクリプションを終了します。 
   
 ## <a name="next-steps"></a>次の手順
 <a name="bk_nextsteps"> </a>

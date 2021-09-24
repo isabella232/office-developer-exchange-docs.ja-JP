@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: df5bface-f070-49e0-8527-6129ed8e8095
 description: GetFederationInformationRequest 要素は、GetFederationInformation 操作 (SOAP) 操作の呼び出しのパラメーターを表します。
-ms.openlocfilehash: 1df0a88ed8fbc75eb5723d1390baeefd3ad73652
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: b4f2c9fa060bf0701072b462233b2d4217e8b8b6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456585"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538080"
 ---
 # <a name="getfederationinformationrequest-soap"></a>GetFederationInformationRequest (SOAP)
 
-**GetFederationInformationRequest**要素は、 [GETFEDERATIONINFORMATION 操作 (SOAP)](getfederationinformation-operation-soap.md)操作の呼び出しのパラメーターを表します。
+**GetFederationInformationRequest** 要素は [、GetFederationInformation 操作 (SOAP)](getfederationinformation-operation-soap.md)操作の呼び出しのパラメーターを表します。
   
 ```XML
 <GetFederationInformationRequest>
@@ -40,7 +40,7 @@ ms.locfileid: "44456585"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ドメイン (GetFederationInformation) (SOAP)](domain-getfederationinformationsoap.md) <br/> |フェデレーション信頼があるドメインを識別します。  <br/> |
+|[Domain (GetFederationInformation) (SOAP)](domain-getfederationinformationsoap.md) <br/> |フェデレーション信頼を持つドメインを識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -56,8 +56,8 @@ ms.locfileid: "44456585"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UserConfiguration
 api_type:
 - schema
 ms.assetid: 1811df99-ca5b-48a3-b160-b3fd70320c34
-description: UserConfiguration 要素は、1つのユーザー構成オブジェクトを定義します。
-ms.openlocfilehash: 1217f5d591570c2d8df49a116b6bf35c243d1e0e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: UserConfiguration 要素は、1 つのユーザー構成オブジェクトを定義します。
+ms.openlocfilehash: 3821cabf777143de4a68d20a90cb78acedcff552
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468909"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538556"
 ---
 # <a name="userconfiguration"></a>UserConfiguration
 
-**Userconfiguration**要素は、1つのユーザー構成オブジェクトを定義します。 
+**UserConfiguration 要素は**、1 つのユーザー構成オブジェクトを定義します。 
   
 ```XML
 <UserConfiguration>
@@ -48,15 +48,15 @@ ms.locfileid: "44468909"
 |:-----|:-----|
 |[UserConfigurationName](userconfigurationname.md) <br/> |ユーザー構成オブジェクトの名前を表します。 この要素は、ユーザー構成オブジェクトを作成するときに使用する必要があります。  <br/> |
 |[ItemId](itemid.md) <br/> |ユーザー構成オブジェクトのアイテム識別子を定義します。  <br/> |
-|[辞書](dictionary.md) <br/> |ユーザー構成オブジェクトの辞書のプロパティエントリのセットを定義します。  <br/> |
-|[XmlData](xmldata.md) <br/> |ユーザー構成オブジェクトの XML データプロパティコンテンツが保存されています。  <br/> |
-|[BinaryData](binarydata.md) <br/> |ユーザー構成オブジェクトのバイナリデータのプロパティコンテンツが保存されています。  <br/> |
+|[辞書](dictionary.md) <br/> |ユーザー構成オブジェクトの辞書プロパティ エントリのセットを定義します。  <br/> |
+|[XmlData](xmldata.md) <br/> |ユーザー構成オブジェクトの XML データ プロパティのコンテンツを格納します。  <br/> |
+|[BinaryData](binarydata.md) <br/> |ユーザー構成オブジェクトのバイナリ データ プロパティのコンテンツを格納します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[CreateUserConfiguration](createuserconfiguration.md) <br/> |ユーザー構成オブジェクトを作成するための要求を表します。  <br/> |
+|[CreateUserConfiguration](createuserconfiguration.md) <br/> |ユーザー構成オブジェクトを作成する要求を表します。  <br/> |
 |[GetUserConfigurationResponseMessage](getuserconfigurationresponsemessage.md) <br/> |ユーザー構成オブジェクトを返す応答を表します。  <br/> |
 |[UpdateUserConfiguration](updateuserconfiguration.md) <br/> |ユーザー構成オブジェクトを更新する要求を表します。  <br/> |
    
@@ -69,13 +69,13 @@ ms.locfileid: "44468909"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

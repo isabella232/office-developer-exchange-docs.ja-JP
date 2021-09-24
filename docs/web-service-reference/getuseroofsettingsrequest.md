@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetUserOofSettingsRequest
 api_type:
 - schema
 ms.assetid: 15dea99c-7f5d-4af1-82ff-4255127fe567
-description: GetUserOofSettingsRequest 要素は、メールボックスユーザーの不在時 (OOF) の設定を取得するために使用される引数を含むルート要素です。
-ms.openlocfilehash: f515e8cf016d3aff6c652ae92a0da71a8f0a5f6b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetUserOofSettingsRequest 要素は、メールボックス ユーザーの Out of Office (OOF) 設定を取得するために使用される引数を含むルート要素です。
+ms.openlocfilehash: ea14636dbcf3042a0286ac64fa4fc701144e4920
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457831"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519682"
 ---
 # <a name="getuseroofsettingsrequest"></a>GetUserOofSettingsRequest
 
-**Getuseroofsettingsrequest**要素は、メールボックスユーザーの不在時 (OOF) の設定を取得するために使用される引数を含むルート要素です。 
+**GetUserOofSettingsRequest** 要素は、メールボックス ユーザーの OOF (Out of Office) 設定を取得するために使用される引数を含むルート要素です。 
   
 ```xml
 <GetUserOofSettingsRequest>
@@ -42,7 +42,7 @@ ms.locfileid: "44457831"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[メールボックス (可用性)](mailbox-availability.md) <br/> |SetUserOofSettings または GetUserOofSettings 要求のメールボックスユーザーを識別します。  <br/> |
+|[Mailbox (Availability)](mailbox-availability.md) <br/> |SetUserOofSettings または GetUserOofSettings 要求のメールボックス ユーザーを識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -50,11 +50,11 @@ ms.locfileid: "44457831"
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="example"></a>例
 
-1人のユーザーの OOF 情報を取得する、GetUserOofSettings 要求の例を次に示します。
+次に、1 人のユーザーの OOF 情報を取得する GetUserOofSettings 要求の例を示します。
   
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -76,9 +76,9 @@ ms.locfileid: "44457831"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

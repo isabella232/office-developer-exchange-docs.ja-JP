@@ -1,23 +1,23 @@
 ---
-title: 本文
+title: Bodies
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a71a75f0-0b77-4cb9-8f9d-319de72fc1fd
-description: ボディ要素は、BodyContentAttributedValue 要素の配列を指定します。
-ms.openlocfilehash: d7087cf213d3c659a55458e021f4b8f0400efb1d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Bodies 要素は、BodyContentAttributedValue 要素の配列を指定します。
+ms.openlocfilehash: efabf20b4b831862cb65e797f10a8563061de9bf
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461514"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520023"
 ---
-# <a name="bodies"></a>本文
+# <a name="bodies"></a>Bodies
 
-**ボディ**要素は、 **BodyContentAttributedValue**要素の配列を指定します。 
+**Bodies 要素は****、BodyContentAttributedValue 要素の配列を指定** します。 
   
 ```XML
 <Bodies>
@@ -38,13 +38,13 @@ ms.locfileid: "44461514"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[BodyContentAttributedValue](bodycontentattributedvalue.md) <br/> |アイテムの本文のコンテンツを指定します。  <br/> |
+|[BodyContentAttributedValue](bodycontentattributedvalue.md) <br/> |アイテムの本文の内容を指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ユーザー](persona.md) <br/> |**Getpersona**要求によって返される一連のペルソナデータを指定します。  <br/> |
+|[ユーザー](persona.md) <br/> |**GetPersona** 要求によって返されるペルソナ データのセットを指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -58,12 +58,12 @@ ms.locfileid: "44461514"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

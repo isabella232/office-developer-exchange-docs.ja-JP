@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ApplyConversationAction
 api_type:
 - schema
 ms.assetid: e0ee8f30-529b-4d87-8bc0-b6616e75fb6b
-description: ApplyConversationAction 要素は、会話内のアイテムにアクションを適用するための要求を定義します。
-ms.openlocfilehash: 659b3392778bb1a318c3942a0c8e314f12110c12
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ApplyConversationAction 要素は、会話内のアイテムにアクションを適用する要求を定義します。
+ms.openlocfilehash: 5d63f573d84c4a9ca3fc16983c4ef508214e0780
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461689"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520095"
 ---
 # <a name="applyconversationaction"></a>ApplyConversationAction
 
-**ApplyConversationAction**要素は、会話内のアイテムにアクションを適用するための要求を定義します。 
+**ApplyConversationAction** 要素は、会話内のアイテムにアクションを適用する要求を定義します。 
   
 [ApplyConversationAction](applyconversationaction.md)
   
@@ -44,7 +44,7 @@ ms.locfileid: "44461689"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ConversationActions](conversationactions.md) <br/> |会話のコレクションと、それらに適用するアクションが含まれています。  <br/> |
+|[ConversationActions](conversationactions.md) <br/> |会話のコレクションと、会話に適用するアクションが含まれる。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -56,19 +56,19 @@ ms.locfileid: "44461689"
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
+この要素を記述するスキーマは、Exchange Web Services をホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [ApplyConversationAction 操作](applyconversationaction-operation.md)
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

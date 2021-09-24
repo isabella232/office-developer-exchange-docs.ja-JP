@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - TooBigGroupAttendeeConflictData
 api_type:
 - schema
 ms.assetid: 1512428d-ce22-4da9-b1c1-446b4bcd0a21
-description: TooBigGroupAttendeeConflictData 要素は、配布リストとして解決されたが、配布リストが大きすぎて展開できなかった出席者を表します。
-ms.openlocfilehash: 407a4a49e5f32c81439063f47df2e131dd663a4f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: TooBigGroupAttendeeConflictData 要素は、配布リストとして解決されたが、配布リストが大きすぎて展開できない出席者を表します。
+ms.openlocfilehash: f91e7f31b26b7a7903ed96ba17afa53256996a89
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468601"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538808"
 ---
 # <a name="toobiggroupattendeeconflictdata"></a>TooBigGroupAttendeeConflictData
 
-**TooBigGroupAttendeeConflictData**要素は、配布リストとして解決されたが、配布リストが大きすぎて展開できなかった出席者を表します。 
+**TooBigGroupAttendeeConflictData** 要素は、配布リストとして解決されたが、配布リストが大きすぎて展開できない出席者を表します。 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -60,22 +60,22 @@ ms.locfileid: "44468601"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[AttendeeConflictDataArray](attendeeconflictdataarray.md) <br/> |[GetUserAvailabilityRequest](getuseravailabilityrequest.md)で特定された参加者の競合データの配列が含まれています。  <br/> この要素の XPath 式を次に示します。  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]/AttendeeConflictDataArray` <br/> |
+|[AttendeeConflictDataArray](attendeeconflictdataarray.md) <br/> |[GetUserAvailabilityRequest](getuseravailabilityrequest.md)で識別された出席者の競合データの配列を格納します。  <br/> 次に、この要素の XPath 式を示します。  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]/AttendeeConflictDataArray` <br/> |
    
 ## <a name="remarks"></a>注釈
 
-100を超えるメンバーを含む配布リストを展開することはできません。
+100 を超えるメンバーを含む配布リストは展開できません。
   
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -86,5 +86,5 @@ ms.locfileid: "44468601"
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[ユーザーの空き時間情報の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[ユーザーの可用性の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

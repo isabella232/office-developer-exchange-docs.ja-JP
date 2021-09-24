@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 5f81d1b7-c6a4-456f-9935-13d04a3d92d7
-description: Domains 要素は、GetDomainSettings 操作 (SOAP) で返されるドメインコレクション、組織が GetFederationInformation 操作 (SOAP) に対してフェデレーションされているドメイン、または Getruleaction Relationshipsettings 操作 (SOAP) によって返される組織上の関係を持つドメインに相当します。
-ms.openlocfilehash: c56fb72841776c0060c1300b52b2f6a06b1ec0ed
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Domains 要素は、GetDomainSettings 操作 (SOAP) で返されるドメイン コレクション、組織が GetFederationInformation 操作 (SOAP) でフェデレーションしたドメイン、または GetOrganizationRelationshipSettings 操作 (SOAP) によって返される組織関係を持つドメインを表します。
+ms.openlocfilehash: 667b2611ce8b393252f9bdda6dd7ec201b605047
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526306"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538324"
 ---
 # <a name="domains-soap"></a>Domains (SOAP)
 
-**Domains**要素は、 [getdomainsettings 操作 (soap)](getdomainsettings-operation-soap.md)で返されるドメインコレクション、組織が[GetFederationInformation 操作 (soap)](getfederationinformation-operation-soap.md)に対してフェデレーションされているドメイン、または[getruleaction relationshipsettings 操作 (soap)](getorganizationrelationshipsettings-operation-soap.md)によって返される組織上の関係を持つドメインに相当します。
+Domains 要素は[、GetDomainSettings 操作 (SOAP)](getdomainsettings-operation-soap.md)で返されるドメイン コレクション、組織が[GetFederationInformation 操作 (SOAP)](getfederationinformation-operation-soap.md)でフェデレーションしたドメイン、[または GetOrganizationRelationshipSettings 操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)によって返される組織関係を持つドメインを表します。 
   
 ```XML
 <Domains>
@@ -39,15 +39,15 @@ ms.locfileid: "44526306"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ドメイン (SOAP)](domain-soap.md) <br/> |単一のドメインを表します。  <br/> |
+|[Domain (SOAP)](domain-soap.md) <br/> |1 つのドメインを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetDomainSettingsRequest (SOAP)](getdomainsettingsrequest-soap.md) <br/> |[Getdomainsettings 操作 (SOAP)](getdomainsettings-operation-soap.md)要求を表します。  <br/> |
-|[Response (GetFederationInformation) (SOAP)](response-getfederationinformationsoap.md) <br/> |[GetFederationInformation 操作 (SOAP)](getfederationinformation-operation-soap.md)応答情報を格納します。  <br/> |
-|[Get組織の Relationshipsettingsrequest (SOAP)](getorganizationrelationshipsettingsrequest-soap.md) <br/> |[Get組織の設定操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)要求を表します。  <br/> |
+|[GetDomainSettingsRequest (SOAP)](getdomainsettingsrequest-soap.md) <br/> |[GetDomainSettings 操作 (SOAP) 要求を表](getdomainsettings-operation-soap.md)します。  <br/> |
+|[Response (GetFederationInformation) (SOAP)](response-getfederationinformationsoap.md) <br/> |[GetFederationInformation 操作 (SOAP) 応答情報が](getfederationinformation-operation-soap.md)含まれる。  <br/> |
+|[GetOrganizationRelationshipSettingsRequest (SOAP)](getorganizationrelationshipsettingsrequest-soap.md) <br/> |[GetOrganizationRelationshipSettings 操作 (SOAP) 要求を表](getorganizationrelationshipsettings-operation-soap.md)します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -59,8 +59,8 @@ ms.locfileid: "44526306"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

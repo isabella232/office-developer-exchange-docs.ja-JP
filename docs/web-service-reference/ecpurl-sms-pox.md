@@ -4,27 +4,27 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f5e5e589-ee16-42a8-9cd4-ae3909fc869b
-description: EcpUrl 要素は、EcpUrl (POX) 要素の値と組み合わせて、メールが有効なユーザーのショートメッセージサービス (SMS) の設定にアクセスするために使用できる URL を生成できる url の一部を指定します。
-ms.openlocfilehash: 24f475e7f2d54fa565cc90796a983c0bd842e4da
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: EcpUrl-sms 要素は、メールが有効なユーザーのショート メッセージ サービス (SMS) 設定にアクセスするために使用できる URL を生成するために、EcpUrl (POX) 要素の値と組み合わせ可能な部分 URL を指定します。
+ms.openlocfilehash: b3926e1d8b4e15e72827e9cf0458bd64a02bd793
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458685"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538255"
 ---
 # <a name="ecpurl-sms-pox"></a>EcpUrl-sms (POX)
 
-**EcpUrl**要素は、 [EcpUrl (POX)](ecpurl-pox.md)要素の値と組み合わせて、メールが有効なユーザーのショートメッセージサービス (sms) の設定にアクセスするために使用できる url を生成できる url の一部を指定します。 
+**EcpUrl-sms** 要素は、メールが有効なユーザーのショート メッセージ サービス (SMS) 設定にアクセスするために使用できる URL を生成するために [、EcpUrl (POX)](ecpurl-pox.md)要素の値と組み合わせ可能な部分 URL を指定します。 
   
-[自動検出 (POX)](autodiscover-pox.md)
+[AutoDiscover (POX)](autodiscover-pox.md)
   
-[応答 (POX)](response-pox.md)
+[Response (POX)](response-pox.md)
   
-[アカウント (POX)](account-pox.md)
+[Account (POX)](account-pox.md)
   
-[プロトコル (POX)](protocol-pox.md)
+[Protocol (POX)](protocol-pox.md)
   
 [EcpUrl-sms (POX)](ecpurl-sms-pox.md)
   
@@ -48,19 +48,19 @@ ms.locfileid: "44458685"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
+|[Protocol (POX)](protocol-pox.md) <br/> |クライアント アクセス サーバーの役割がインストールされているクライアントを実行しているコンピューター Microsoft Exchange Server接続するための仕様が含まれている。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、 [EcpUrl (POX)](ecpurl-pox.md)要素の値と組み合わせて、ユーザーの SMS 設定にアクセスするために使用できる url を生成できる url の部分を表します。 
+テキスト値は [、EcpUrl (POX)](ecpurl-pox.md) 要素の値と組み合わせて、ユーザーの SMS 設定にアクセスするために使用できる URL を生成できる部分的な URL を表します。 
   
 ## <a name="remarks"></a>注釈
 
-**EcpUrl**要素は、 **Protocol**要素のオプションの子要素です。 
+**EcpUrl-sms** 要素は **、Protocol** 要素の省略可能な子要素です。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+[POX 自動検出 XML 要素のExchange](pox-autodiscover-xml-elements-for-exchange.md)
 

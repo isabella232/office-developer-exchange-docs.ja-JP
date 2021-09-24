@@ -1,23 +1,23 @@
 ---
-title: 半年
+title: ToDate
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 15cdadfb-2636-44d6-84b7-d83ccad56fd7
-description: 年間の要素は、メッセージが受信された日付を指定します。
-ms.openlocfilehash: 1efff3d9484aa39562ad3d1e8ab01479999dda8a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ToDate 要素は、メッセージが受信された日付を指定します。
+ms.openlocfilehash: 2c51fff71592a3094a085082104b993c34ce4f57
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468783"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520375"
 ---
-# <a name="todate"></a>半年
+# <a name="todate"></a>ToDate
 
-**年間**の要素は、メッセージが受信された日付を指定します。 
+**ToDate 要素** は、メッセージが受信された日付を指定します。 
   
 ```XML
 <ToDate></ToDate>
@@ -42,7 +42,7 @@ ms.locfileid: "44468783"
   
 ## <a name="text-value"></a>テキスト値
 
-**累計**要素のテキスト値は、メッセージが受信された日付です。 
+ToDate 要素の **テキスト値** は、メッセージが受信された日付です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -54,9 +54,9 @@ ms.locfileid: "44468783"
 
 |||
 |:-----|:-----|
-|名前空間  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

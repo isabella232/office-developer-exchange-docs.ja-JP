@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - RelativeMonthlyRecurrence
 api_type:
 - schema
 ms.assetid: a76595db-7460-44ac-ac2a-53241caa33a7
-description: RelativeMonthlyRecurrence 要素は、相対的な月単位の定期的なパターンを記述します。
-ms.openlocfilehash: 90aa0e43684bfb09a3e13cf86ec96f680e80a714
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: RelativeMonthlyRecurrence 要素は、相対的な毎月の定期的なパターンを表します。
+ms.openlocfilehash: 326e6581e55e64ffd2bcc9bdfa5108cf63089633
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457509"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513445"
 ---
 # <a name="relativemonthlyrecurrence"></a>RelativeMonthlyRecurrence
 
-**RelativeMonthlyRecurrence**要素は、相対的な月単位の定期的なパターンを記述します。 
+**RelativeMonthlyRecurrence 要素は**、相対的な毎月の定期的なパターンを表します。 
   
 ```xml
 <RelativeMonthlyRecurrence>
@@ -44,33 +44,33 @@ ms.locfileid: "44457509"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[間隔](interval.md) <br/> |2つの連続する定期的なパターンアイテム間の間隔を定義します。 この値の範囲は、1 ~ 99 です。  <br/> |
-|[DaysOfWeek (DayOfWeekType)](daysofweek-dayofweektype.md) <br/> |相対的な月単位の定期的なパターンに含まれる曜日を指定します。  <br/> |
-|[DayOfWeekIndex](dayofweekindex.md) <br/> |相対的な月単位の定期的なパターンで使用される週を示します。  <br/> |
+|[間隔](interval.md) <br/> |2 つの連続する月次定期的なパターン アイテム間の間隔を定義します。 この値の範囲は 1 ~ 99 です。  <br/> |
+|[DaysOfWeek (DayOfWeekType)](daysofweek-dayofweektype.md) <br/> |相対的な月次繰り返しパターンに含める週の日数について説明します。  <br/> |
+|[DayOfWeekIndex](dayofweekindex.md) <br/> |相対的な月次繰り返しパターンで使用される週について説明します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Recurrence (RecurrenceType)](recurrence-recurrencetype.md) <br/> |予定表アイテムと会議出席依頼の定期的なパターンを含みます。  <br/> |
-|[定期的なアイテム (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |定期的なタスクの定期的なアイテムの情報が含まれています。  <br/> |
+|[Recurrence (RecurrenceType)](recurrence-recurrencetype.md) <br/> |予定表アイテムと会議出席依頼の定期的なパターンが含まれます。  <br/> |
+|[Recurrence (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |定期的なタスクの定期的な情報が含まれています。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

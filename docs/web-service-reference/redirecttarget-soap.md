@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: f8162724-cf9a-4543-a1ad-5846c8b10bfa
-description: RedirectTarget (SOAP) 要素には、リダイレクト URL または電子メールアドレスのターゲットが含まれています。
-ms.openlocfilehash: 092d575560379d43b12dd98a3efa155b59c31450
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: RedirectTarget (SOAP) 要素には、リダイレクト URL または電子メール アドレスのターゲットが含まれる。
+ms.openlocfilehash: 0e09529f62dfde66f1ef05875bb0b0a0886db452
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462200"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513543"
 ---
 # <a name="redirecttarget-soap"></a>RedirectTarget (SOAP)
 
-[Redirecttarget (SOAP)](redirecttarget-soap.md)要素には、リダイレクト URL または電子メールアドレスのターゲットが含まれています。 
+[RedirectTarget (SOAP)](redirecttarget-soap.md)要素には、リダイレクト URL または電子メール アドレスのターゲットが含まれる。 
   
 ```XML
 <RedirectTarget/>
@@ -41,12 +41,12 @@ ms.locfileid: "44462200"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[UserResponse (SOAP)](userresponse-soap.md) <br/> |個々のユーザーに対する GetUserSettings 要求への応答を表します。  <br/> |
-|[DomainResponse (SOAP)](domainresponse-soap.md) <br/> |指定したドメインに対して要求された設定が含まれます。  <br/> |
+|[UserResponse (SOAP)](userresponse-soap.md) <br/> |個々のユーザーの GetUserSettings 要求に対する応答を表します。  <br/> |
+|[DomainResponse (SOAP)](domainresponse-soap.md) <br/> |指定したドメインの要求された設定が含まれる。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値には、以降の GetUserSettings または GetDomainSettings 要求に対して使用する必要があるリダイレクト URL または電子メールアドレスのターゲットが含まれています。
+テキスト値には、後続の GetUserSettings または GetDomainSettings 要求に使用するリダイレクト URL または電子メール アドレスのターゲットが含まれる。
   
 ## <a name="element-information"></a>要素の情報
 
@@ -54,7 +54,7 @@ ms.locfileid: "44462200"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
 |空に設定可能  <br/> |はい  <br/> |
    
 

@@ -1,27 +1,27 @@
 ---
-title: Get受信規則の応答
+title: GetInboxRulesResponse
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetInboxRulesResponse
 api_type:
 - schema
 ms.assetid: 6d6c1950-c328-489a-94bf-a250fdbd5cd9
-description: Get受信規則の Response 要素は、Get受信トレイの操作要求への応答を定義します。
-ms.openlocfilehash: 0d67d7eaf6ffbeeb790249190a98f252dbdb9c87
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetInboxRulesResponse 要素は、GetInboxRules 操作要求への応答を定義します。
+ms.openlocfilehash: e2d3b186922c2a61feb0a2c13fbaa3d02dbdd953
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458286"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520550"
 ---
-# <a name="getinboxrulesresponse"></a>Get受信規則の応答
+# <a name="getinboxrulesresponse"></a>GetInboxRulesResponse
 
-**Get受信**規則の response 要素は、 [get受信トレイの操作](getinboxrules-operation.md)要求への応答を定義します。 
+**GetInboxRulesResponse** 要素は [、GetInboxRules](getinboxrules-operation.md)操作要求への応答を定義します。 
   
 ```XML
 <GetInboxRulesResponse ResponseClass="">
@@ -34,7 +34,7 @@ ms.locfileid: "44458286"
 </GetInboxRulesResponse>
 ```
 
- **Get受信規則 Responsetype**
+ **GetInboxRulesResponseType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -43,26 +43,26 @@ ms.locfileid: "44458286"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**ResponseClass** <br/> | [Get受信トレイの操作](getinboxrules-operation.md)応答の状態を表します。 <br/><br/>この属性には、次の値が有効です。 <br/> <br/>-成功  <br/>-Warning  <br/>-エラー  <br/> |
+|**ResponseClass** <br/> | [GetInboxRules 操作応答の状態を説明](getinboxrules-operation.md)します。 <br/><br/>この属性には、次の値が有効です。 <br/> <br/>- 成功  <br/>- 警告  <br/>- エラー  <br/> |
    
 #### <a name="responseclass-attribute"></a>ResponseClass 属性
 
 |**値**|**説明**|
 |:-----|:-----|
-|**Success** <br/> |満たされる要求を記述します。  <br/> |
-|**Warning** <br/> | 処理されなかった要求を示します。 要求内のアイテムが処理され、その後のアイテムを処理できなかったときにエラーが発生した場合は、警告が返されることがあります。 <br/><br/>警告のソースの例を次に示します。  <br/><br/>-バッチ処理中に Exchange ストアがオフラインになります。  <br/>-Active Directory ドメインサービス (AD DS) がオフラインになっています。  <br/>-メールボックスは移動されます。  <br/>-メッセージデータベース (MDB) はオフラインです。  <br/>-パスワードの有効期限が切れています。  <br/>-クォータが上限を超えています。  <br/> |
-|**Error** <br/> | 満たされない要求を記述します。 <br/><br/>エラーのソースの例を次に示します。  <br/><br/>-無効な属性または要素  <br/>-範囲外の属性または要素  <br/>-不明なタグ  <br/>-コンテキスト内で有効ではない属性または要素  <br/>-クライアントによる権限のないアクセス試行  <br/>-有効なクライアント側の呼び出しに応答した場合のサーバー側障害  <br/><br/>  エラーに関する情報については、応答[secの](responsecode.md)要素と[messagetext](messagetext.md)要素を参照してください。  <br/> |
+|**Success** <br/> |満たされた要求について説明します。  <br/> |
+|**Warning** <br/> | 処理されていない要求について説明します。 要求内のアイテムの処理中にエラーが発生し、後続のアイテムを処理できない場合は、警告が返される場合があります。 <br/><br/>次に、警告の発生源の例を示します。  <br/><br/>- バッチExchangeストアはオフラインです。  <br/>- Active Directory ドメイン サービス (AD DS) がオフラインです。  <br/>- メールボックスが移動されます。  <br/>- メッセージ データベース (MDB) がオフラインです。  <br/>- パスワードの有効期限が切れています。  <br/>- クォータを超えました。  <br/> |
+|**エラー** <br/> | 満たできない要求について説明します。 <br/><br/>エラーの原因の例を次に示します。  <br/><br/>- 無効な属性または要素  <br/>- 範囲外の属性または要素  <br/>- 不明なタグ  <br/>- コンテキストで無効な属性または要素  <br/>- 任意のクライアントによる承認されていないアクセス試行  <br/>- 有効なクライアント側の呼び出しに応答したサーバー側のエラー  <br/><br/>  エラーに関する情報は [、ResponseCode](responsecode.md) 要素と [MessageText 要素で確認](messagetext.md) できます。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[MessageText](messagetext.md) <br/> |応答の状態の説明をテキストで提供します。  <br/> |
+|[MessageText](messagetext.md) <br/> |応答の状態のテキストの説明を提供します。  <br/> |
 |[ResponseCode](responsecode.md) <br/> |要求に関する状態情報を提供します。  <br/> |
-|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在未使用で、今後の使用のために予約されています。 このプロパティには0の値が含まれています。  <br/> |
-|[MessageXml](messagexml.md) <br/> |エラー応答に関する追加情報を提供します。  <br/> |
-|[OutlookRuleBlobExists](outlookruleblobexists.md) <br/> |ユーザーのメールボックスに Microsoft Outlook のルール blob が存在するかどうかを示します。  <br/> |
-|[受信トレイのルール](inboxrules.md) <br/> |ユーザーのメールボックス内のルールの配列を表します。  <br/> |
+|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在は使用されていないので、将来の使用のために予約されています。 値 0 が含まれる。  <br/> |
+|[MessageXml](messagexml.md) <br/> |追加のエラー応答情報を提供します。  <br/> |
+|[OutlookRuleBlobExists](outlookruleblobexists.md) <br/> |ユーザーのメールボックスに Microsoft Outlook BLOB が存在するかどうかを示します。  <br/> |
+|[InboxRules](inboxrules.md) <br/> |ユーザーのメールボックス内のルールの配列を表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -81,9 +81,9 @@ ms.locfileid: "44458286"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

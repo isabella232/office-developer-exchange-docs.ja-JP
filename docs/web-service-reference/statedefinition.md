@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 771039e6-5438-49ef-b213-58dd969e156b
-description: StateDefinition 要素は、内部使用のみを目的としています。
-ms.openlocfilehash: faca89c2c78febe8373cf02f8d84732f2611a6fb
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: StateDefinition 要素は内部での使用のみを目的とします。
+ms.openlocfilehash: 1831a21e382b7fb739bff3172ec8935a72fe4c9e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459512"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538955"
 ---
 # <a name="statedefinition"></a>StateDefinition
 
-**Statedefinition**要素は、内部使用のみを目的としています。 
+**StateDefinition 要素は** 内部での使用のみを目的とします。 
 
 ## <a name="attributes-and-elements"></a>属性と要素
 
@@ -46,8 +46,8 @@ ms.locfileid: "44459512"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

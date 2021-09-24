@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GlobalFlagStatus
 api_type:
 - schema
 ms.assetid: 3ba300f3-3355-4cab-9e77-0dcc2902e712
-description: GlobalFlagStatus 要素には、メールボックス内のすべての会話アイテムの集約フラグの状態が含まれています。
-ms.openlocfilehash: f9984a1bb7e8205a98dd3ef91f841b48a7ab9389
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GlobalFlagStatus 要素には、メールボックス内のすべての会話アイテムの集約フラグの状態が含まれます。
+ms.openlocfilehash: 2f9b0e05770eef497323150888c1302d5895f345
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459505"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519654"
 ---
 # <a name="globalflagstatus"></a>GlobalFlagStatus
 
-**Globalflagstatus**要素には、メールボックス内のすべての会話アイテムの集約フラグの状態が含まれています。 
+**GlobalFlagStatus 要素には**、メールボックス内のすべての会話アイテムの集約フラグの状態が含まれます。 
   
 [FindConversationResponse](findconversationresponse.md)
   
 [会話](conversations-ex15websvcsotherref.md)
   
-[会話 (ConversationType)](conversation-conversationtype.md)
+[Conversation (ConversationType)](conversation-conversationtype.md)
   
 [GlobalFlagStatus](globalflagstatus.md)
   
@@ -52,30 +52,30 @@ ms.locfileid: "44459505"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[会話 (ConversationType)](conversation-conversationtype.md) <br/> |単一の会話を表します。  <br/> |
+|[Conversation (ConversationType)](conversation-conversationtype.md) <br/> |1 つの会話を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**Globalflagstatus**要素のテキスト値は、現在のフォルダー内のスレッドアイテムの集計フラグの状態です。 可能なテキスト値を次に示します。 
+**GlobalFlagStatus 要素のテキスト** 値は、現在のフォルダー内の会話アイテムの集計フラグの状態です。 使用できるテキスト値は次のとおりです。 
   
-- **Notflagged**付き-フラグなしの状態を示します。 
+- **NotFlagged** - フラグが設定されていない状態を示します。 
     
-- **フラグ付き**-フラグ付きの状態を示します。 
+- **フラグ付き** - フラグが設定された状態を示します。 
     
-- **Complete** -完全なフラグの状態を示します。 
+- **Complete** - フラグの完全な状態を示します。 
     
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
+この要素を記述するスキーマは、Exchange Web Services をホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -1,23 +1,23 @@
 ---
-title: Include非 Searchableitems
+title: IncludeUnsearchableItems
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9a9bd2dc-f5b9-4b82-a6a0-f643d2951080
 description: IncludeUnsearchableItems 要素は、検索できないアイテムを含めるかどうかを指定します。
-ms.openlocfilehash: 19fe450f5b1647be2df75138dbe67dd9e1c05c21
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 3bffd68c20623aa4c63dd295d8b4619999c1d4a5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465703"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59533105"
 ---
-# <a name="includeunsearchableitems"></a>Include非 Searchableitems
+# <a name="includeunsearchableitems"></a>IncludeUnsearchableItems
 
-**Includeunsearchableitems**要素は、検索できないアイテムを含めるかどうかを指定します。 
+**IncludeUnsearchableItems** 要素は、検索できないアイテムを含めるかどうかを指定します。 
   
 ```XML
 <IncludeUnsearchableItems>true | false</IncludeUnsearchableItems>
@@ -40,11 +40,11 @@ ms.locfileid: "44465703"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FindMailboxStatisticsByKeywords](findmailboxstatisticsbykeywords.md) <br/> |キーワードでメールボックス統計情報を検索する要求を指定します。  <br/> |
+|[FindMailboxStatisticsByKeywords](findmailboxstatisticsbykeywords.md) <br/> |キーワードによってメールボックスの統計情報を検索する要求を指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**Include非**検索可能な items 要素のテキスト値が**true の場合**は、検索できないアイテムの統計が含まれていないことを示します。 値が**false**の場合、検索できないアイテムの統計が含まれていることを示します。 
+**IncludeUnsearchableItems** 要素のテキスト値 **が true** の場合、検索できないアイテムの統計情報は含まれません。 false の **値は** 、検索できないアイテムの統計情報が含まれるかどうかを示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -57,13 +57,13 @@ ms.locfileid: "44465703"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

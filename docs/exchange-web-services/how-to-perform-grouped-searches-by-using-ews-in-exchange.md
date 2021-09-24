@@ -3,15 +3,15 @@ title: Exchange で EWS を使用して、グループ化された検索を実�
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 55de92eb-8e8b-4156-8ad9-dd3828024242
 description: EWS マネージ API または Exchange を対象とする EWS アプリケーションで、グループ化された検索を実行する方法を説明します。
-ms.openlocfilehash: 65c6f75ea6b8ab848a263349dcceceead52fa210
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 6142dccc0be6d81167004964562ad2877e0187f5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527932"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513207"
 ---
 # <a name="perform-grouped-searches-by-using-ews-in-exchange"></a>Exchange で EWS を使用して、グループ化された検索を実行する
 
@@ -131,7 +131,7 @@ static void GroupItemsByFrom(ExchangeService service, WellKnownFolderName folder
 ## <a name="example-perform-a-grouped-search-by-using-ews"></a>例: EWS を使用して、グループ化された検索を実行する
 <a name="bk_GroupSearchEWS"> </a>
 
-次の要求例では、**From** 要素でグループ化し **DateTimeReceived** 要素で降順に並べ替えた、フォルダー内の最初の 50 アイテムに対する [FindItem 操作](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)要求を示します。 グループ自体は、グループのアイテムの **DateTimeReceived** 要素の最小値によって降順で並べ替えられます。 
+次の要求例では、**From** 要素でグループ化し **DateTimeReceived** 要素で降順に並べ替えた、フォルダー内の最初の 50 アイテムに対する [FindItem 操作](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)要求を示します。グループ自体は、グループのアイテムの **DateTimeReceived** 要素の最小値によって降順で並べ替えられます。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

@@ -1,23 +1,23 @@
 ---
-title: 会社の Namesortkey
+title: CompanyNameSortKey
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ef4e7fae-205b-461c-a222-b4287bb24aea
-description: 会社の Namesortkey 要素には、会社名の並べ替えキーが含まれています。
-ms.openlocfilehash: 61cc335336ae565980f337cb16f216914e5e675f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: CompanyNameSortKey 要素には、会社名の並べ替えキーが含まれる。
+ms.openlocfilehash: 3f0f78fdf049e83d665edc29925d74638d0088a9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463252"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519948"
 ---
-# <a name="companynamesortkey"></a>会社の Namesortkey
+# <a name="companynamesortkey"></a>CompanyNameSortKey
 
-会社の**Namesortkey**要素には、会社名の並べ替えキーが含まれています。 
+**CompanyNameSortKey** 要素には、会社名の並べ替えキーが含まれる。 
   
 ```XML
 <CompanyNameSortKey></CompanyNameSortKey>
@@ -42,7 +42,7 @@ ms.locfileid: "44463252"
   
 ## <a name="text-value"></a>テキスト値
 
-会社の**Namesortkey**要素のテキスト値は、会社名の並べ替えキーです。 
+**CompanyNameSortKey 要素のテキスト** 値は、会社名の並べ替えキーです。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44463252"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

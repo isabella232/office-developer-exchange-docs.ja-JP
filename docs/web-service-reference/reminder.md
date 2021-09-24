@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 54dd748a-23a5-4ea2-88f2-b74c68a3c48f
-description: アラーム要素は、タスクまたは予定表アイテムの事前通知を指定します。
-ms.openlocfilehash: 71e54d920a169b8060d22bb7d7d294208c344c2e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Reminder 要素は、タスクまたは予定表アイテムのアラームを指定します。
+ms.openlocfilehash: 97b4a1dfb2739ff9ea335bca1e61e264715ced30
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457488"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512493"
 ---
 # <a name="reminder"></a>Reminder
 
-**アラーム**要素は、タスクまたは予定表アイテムの事前通知を指定します。 
+**Reminder 要素** は、タスクまたは予定表アイテムのアラームを指定します。 
   
 ```XML
 <Reminder>
@@ -62,9 +62,9 @@ ms.locfileid: "44457488"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -73,5 +73,5 @@ ms.locfileid: "44457488"
 [Reminders](reminders.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

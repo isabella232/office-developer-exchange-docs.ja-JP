@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0480b7f5-9312-4efe-bb37-9fffcd7e7a9d
-description: LocationUri 要素には、関連する住所の Uniform Resource Identifier (URI) を指定する文字列が含まれています。
-ms.openlocfilehash: 1cf857e29b67fdacdb73fc5bd921973d7dbd481e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: LocationUri 要素には、関連付けられた郵送先住所の統一リソース識別子 (URI) を指定する文字列が含まれます。
+ms.openlocfilehash: 443df5d79fb958ebb9576f7fe169602a3be39f0e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467096"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513550"
 ---
 # <a name="locationuri"></a>LocationUri
 
-**Locationuri**要素には、関連する住所の Uniform resource IDENTIFIER (URI) を指定する文字列が含まれています。 
+**LocationUri 要素には**、関連付けられた郵送先住所の統一リソース識別子 (URI) を指定する文字列が含まれます。 
   
 ```XML
 <LocationUri></LocationUri>
@@ -38,11 +38,11 @@ ms.locfileid: "44467096"
   
 ### <a name="parent-elements"></a>親要素
 
-[Value (PersonaPostalAddressType)](value-personapostaladdresstype.md)  | ["Postaladdress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)
+[Value (PersonaPostalAddressType)](value-personapostaladdresstype.md)  | [PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**Locationuri**要素のテキスト値は、郵便アドレスに関する情報への URI を指定する文字列です。 
+LocationUri 要素の **テキスト値** は、郵便番号に関する情報の URI を指定する文字列です。 
   
 ## <a name="remarks"></a>注釈
 

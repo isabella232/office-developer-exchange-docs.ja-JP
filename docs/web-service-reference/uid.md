@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UID
 api_type:
 - schema
 ms.assetid: b1c43c1e-b773-4dd1-9a32-32b3b8efeaf9
 description: UID 要素は、予定表アイテムを一意に識別します。
-ms.openlocfilehash: c2eb8d9cbb238132bdce2eedf7a41f90fcd20460
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: b7dea52b3d21f6f15acc6f7f4bc3c758f68648d6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455913"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538710"
 ---
 # <a name="uid"></a>UID
 
-**UID**要素は、予定表アイテムを一意に識別します。 
+**UID 要素は**、予定表アイテムを一意に識別します。 
   
 ```xml
 <UID>   </UID>
@@ -44,28 +44,28 @@ ms.locfileid: "44455913"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |予定表アイテムのExchangeを表します。  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |会議メッセージを表します。  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |会議出席依頼を表します。  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |会議出席依頼の返信を表します。  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |会議の取り消しを表します。  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |会議の応答を表します。  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |会議のキャンセルを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、一意の識別子を表します。
+テキスト値は一意の識別子を表します。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

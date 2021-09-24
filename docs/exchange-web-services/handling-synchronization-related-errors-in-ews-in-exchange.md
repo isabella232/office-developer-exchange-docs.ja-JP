@@ -3,15 +3,15 @@ title: Exchange における EWS での同期に関連するエラーの処理
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a0807b90-645a-4ea6-aee1-96828df14be0
 description: Exchange の EWS マネージ API または EWS を使用して開発したアプリケーションの同期に関連するエラーを処理する方法を説明します。
-ms.openlocfilehash: f62937ec444d64b0b358581371f1260f565215b3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: fd52b54413c6fc791132fb01b47bc9077d0266b2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455941"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513249"
 ---
 # <a name="handling-synchronization-related-errors-in-ews-in-exchange"></a>Exchange における EWS での同期に関連するエラーの処理
 

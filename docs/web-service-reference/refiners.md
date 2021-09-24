@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fb70326a-2b34-43d1-a1a1-5fb0049d32f3
-description: 絞り込み条件要素は、1つ以上の絞り込み条件要素のリストを指定します。
-ms.openlocfilehash: a89a18550355ccc9ef916637305a189276ee2224
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Refiners 要素は、1 つ以上の絞り込み条件要素のリストを指定します。
+ms.openlocfilehash: 1b22b7255e15227aaa6d9a53518c7120d20f67fd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457222"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513501"
 ---
 # <a name="refiners"></a>Refiners
 
-**絞り込み条件**要素は、1つ以上の**絞り込み条件**要素のリストを指定します。 
+**Refiners 要素は**、1 つ以上の絞り込み条件要素 **のリストを指定** します。 
   
 ```XML
 <Refiners>
@@ -36,7 +36,7 @@ ms.locfileid: "44457222"
   
 ### <a name="child-elements"></a>子要素
 
-[絞り込み条件](refiner.md)
+[Refiner](refiner.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -53,8 +53,8 @@ ms.locfileid: "44457222"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

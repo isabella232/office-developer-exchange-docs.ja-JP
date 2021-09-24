@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 62b7d14c-8d71-4f28-b93e-8fe42d99022b
-description: End 要素は、会議の更新が行われたときに会議の終了時刻に加えられた変更を指定します。
-ms.openlocfilehash: 61d8c46af1999a506258dfa0cebf3a712962772a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: End 要素は、会議の更新が行われた会議の終了時刻に加えた変更を指定します。
+ms.openlocfilehash: 584ddbe4aea23e7940506fc4ce46ffa9e8cb5683
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526201"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520704"
 ---
 # <a name="end-changehighlightstype"></a>End (ChangeHighlightsType)
 
-**End**要素は、会議の更新が行われたときに会議の終了時刻に加えられた変更を指定します。 
+**End 要素** は、会議の更新が行われた会議の終了時刻に加えた変更を指定します。 
   
 ```XML
 <End></End>
@@ -38,11 +38,11 @@ ms.locfileid: "44526201"
   
 ### <a name="parent-elements"></a>親要素
 
-[ChangeHighlights 強調表示](changehighlights.md)
+[ChangeHighlights](changehighlights.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**End**要素のテキスト値は、会議の新しい終了時刻です。 
+End 要素のテキスト **値** は、会議の新しい終了時刻です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44526201"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

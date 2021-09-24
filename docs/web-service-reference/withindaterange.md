@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - WithinDateRange
 api_type:
 - schema
 ms.assetid: 226aeb15-016f-45ca-992a-c137ba09ca08
-description: WithinDateRange 要素は、条件または例外を適用するために、受信メッセージが受信される必要がある日付範囲を指定します。
-ms.openlocfilehash: ef5fb15b64ee4f7060f907818c4ebd4367ced5e7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: WithinDateRange 要素は、条件または例外を適用するために受信メッセージを受信する必要がある日付範囲を指定します。
+ms.openlocfilehash: 15f370746b375b4f2b59ca351b3bd3c8defdd947
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461850"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538465"
 ---
 # <a name="withindaterange"></a>WithinDateRange
 
-**WithinDateRange**要素は、条件または例外を適用するために、受信メッセージが受信される必要がある日付範囲を指定します。 
+**WithinDateRange** 要素は、条件または例外を適用するために受信メッセージを受信する必要がある日付範囲を指定します。 
   
 ```XML
 <WithinDateRange>
@@ -43,15 +43,15 @@ ms.locfileid: "44461850"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[StartDateTime](startdatetime.md) <br/> |ルールの期間を指定します。この値の後にルールの条件が満たされていることを示します。  <br/> |
-|[EndDateTime](enddatetime.md) <br/> |ルールの期間を指定します。この値より前にルールの条件が満たされていることを示します。  <br/> |
+|[StartDateTime](startdatetime.md) <br/> |ルールの期間を指定し、この値の後にルール条件が満たされるかどうかを示します。  <br/> |
+|[EndDateTime](enddatetime.md) <br/> |ルールの期間を指定し、この値の前にルール条件が満たされたかどうかを示します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[条件](conditions.md) <br/> |ルールのルールの処理を開始するときに実行される条件を表します。  <br/> |
-|[例外](exceptions.md) <br/> |受信トレイルールに対して使用可能なすべてのルールの例外条件を表します。  <br/> |
+|[条件](conditions.md) <br/> |満たされると、ルールのルール アクションをトリガーする条件を表します。  <br/> |
+|[例外](exceptions.md) <br/> |受信トレイ ルールで使用可能なすべてのルール例外条件を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -66,13 +66,13 @@ ms.locfileid: "44461850"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

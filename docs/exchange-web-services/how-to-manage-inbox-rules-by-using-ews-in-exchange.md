@@ -3,15 +3,15 @@ title: Exchange で EWS を使用して受信トレイ ルールを管理する
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 982ddb78-5606-44b0-8aba-dbffc60d6085
 description: Exchange で EWS マネージ API または EWS を使用して、受信トレイのルールを取得、作成、更新、削除する方法について説明します。
-ms.openlocfilehash: 7c5d202a85ece1c9bc7227020f9ee8be1f688ce6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 3612176041533fb5cb2a6c79fcdaff9810b681f0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527979"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513179"
 ---
 # <a name="manage-inbox-rules-by-using-ews-in-exchange"></a>Exchange で EWS を使用して受信トレイ ルールを管理する
 

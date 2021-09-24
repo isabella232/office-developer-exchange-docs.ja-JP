@@ -1,23 +1,23 @@
 ---
-title: 自体
+title: Titles
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8f4fa52b-e98e-4678-90cc-299bcbb7bac3
-description: Titles 要素には、関連付けられているペルソナのジョブタイトルの配列とソース attributions の識別子を指定します。
-ms.openlocfilehash: 0c61c0eb317209020ce194d2a7fae21709cbc592
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Titles 要素は、ジョブ タイトルの配列と、関連付けられたペルサのソース属性の識別子を指定します。
+ms.openlocfilehash: eeed1dd00d2239c427bcea77f8f91bb7e720928a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467880"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520417"
 ---
-# <a name="titles"></a>自体
+# <a name="titles"></a>Titles
 
-**Titles**要素には、関連付けられているペルソナのジョブタイトルの配列とソース attributions の識別子を指定します。 
+**Titles 要素** は、ジョブ タイトルの配列と、関連付けられたペルサのソース属性の識別子を指定します。 
   
 ```XML
 <Titles>
@@ -53,8 +53,8 @@ ms.locfileid: "44467880"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

@@ -3,15 +3,15 @@ title: Exchange で EWS を使用して、定期的なアイテムを作成す�
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 88ed6e87-25f7-4a54-83fa-d757a0ff2528
 description: Exchange で EWS マネージ API または EWS を使用して、定期的な会議を作成する方法について説明します。
-ms.openlocfilehash: 1d04bd48c56a1a0e94eb1368166f776b3dfeb23a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 58dfa821774a06db540ed734f616d28f663be53d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456872"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513228"
 ---
 # <a name="create-a-recurring-series-by-using-ews-in-exchange"></a>Exchange で EWS を使用して、定期的なアイテムを作成する
 

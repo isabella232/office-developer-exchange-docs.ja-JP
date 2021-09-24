@@ -5,41 +5,41 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e2146df0-53d0-4caf-9758-b600bbc14b6a
-description: GetPersona EWS 操作についての情報を検索します。
-ms.openlocfilehash: 2b335c694a85f87c96432ea6d7c1c674613d2f17
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetPersona EWS 操作に関する情報を検索します。
+ms.openlocfilehash: 47713ee42b7d726693efe91a5bc29c10f3aea91c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460947"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59533554"
 ---
 # <a name="getpersona-operation"></a>GetPersona 操作
 
-**Getpersona** EWS 操作についての情報を検索します。 
+**GetPersona** EWS 操作に関する情報を検索します。 
   
-**Getpersona**操作は、ペルソナに関連付けられている一連のプロパティを返します。 
+**GetPersona 操作** は、ペルソナに関連付けられているプロパティのセットを返します。 
   
 この操作は Exchange Server 2013 で導入されました。
   
 ## <a name="using-the-getpersona-operation"></a>GetPersona 操作の使用
 
-**Getpersona**操作は、一連の連絡先情報へのアクセスをペルソナの形式で提供します。 要求の[個人エイド](personaid.md)要素は、応答で返されるペルソナを識別します。 応答には、既定のペルソナプロパティセットまたはカスタムプロパティセットを含めることができます。 カスタムプロパティセットを指定して、使用されていないプロパティを処理して、サーバーからクライアントに送信することをお勧めします。 
+**GetPersona 操作では**、ペルソナの形式で集計された連絡先情報にアクセスできます。 要求 [の PersonaId](personaid.md) 要素は、応答で返すペルサを識別します。 応答には、ペルサ プロパティの既定のセットまたはカスタム プロパティ セットを含めることができます。 使用されていないプロパティが処理され、サーバーからクライアントに送信されないので、カスタム プロパティ セットを指定することをお勧めします。 
   
-### <a name="getpersona-operation-soap-headers"></a>GetPersona operation SOAP ヘッダー
+### <a name="getpersona-operation-soap-headers"></a>GetPersona 操作 SOAP ヘッダー
 
-**Getpersona**操作では、次の表に示す SOAP ヘッダーを使用できます。 
+**GetPersona 操作** では、次の表に示す SOAP ヘッダーを使用できます。 
   
-|**ヘッダー名**|**要素**|**説明**|
+|**ヘッダー名**|**Element**|**説明**|
 |:-----|:-----|:-----|
-|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは応答に適用されます。  <br/> |
+|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマ バージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは、応答に適用されます。  <br/> |
    
-## <a name="getpersona-operation-request-example-return-a-default-set-of-properties-for-a-persona"></a>GetPersona operation 要求の例: ペルソナの既定のプロパティセットを返します。
+## <a name="getpersona-operation-request-example-return-a-default-set-of-properties-for-a-persona"></a>GetPersona 操作要求の例: ペルソナの既定のプロパティセットを返す
 
-次の**Getpersona** operation 要求の例は、ペルソナに関連付けられている既定のプロパティセットを返す方法を示しています。 
+**GetPersona 操作要求の次の** 例は、ペルソナに関連付けられている既定のプロパティ セットを返す方法を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -63,12 +63,12 @@ ms.locfileid: "44460947"
     
 - [PersonaId](personaid.md)
     
-## <a name="successful-getpersona-operation-response"></a>成功した GetPersona 操作応答
+## <a name="successful-getpersona-operation-response"></a>GetPersona 操作の正常な応答
 
-次の例は、 **Getpersona**操作要求に対する正常な応答を示しています。 
+次の例は **、GetPersona 操作要求に対する正常な応答を** 示しています。 
   
 > [!NOTE]
-> この記事のすべてのアイテム識別子と変更キーは、読みやすくするために短縮されています。 
+> この記事のすべてのアイテム識別子と変更キーは、読みやすさを維持するために短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -190,7 +190,7 @@ ms.locfileid: "44460947"
     
 - [PersonaId](personaid.md)
     
-- [個人の Atype](personatype.md)
+- [PersonaType](personatype.md)
     
 - [CreationTime](creationtime.md)
     
@@ -212,15 +212,15 @@ ms.locfileid: "44460947"
     
 - [Attributions (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md)
     
-- [属性 (string)](attribution-string.md)
+- [Attribution (string)](attribution-string.md)
     
-- [ID (文字列)](id-string.md)
+- [ID (String)](id-string.md)
     
-- [SourceId](sourceid.md)SourceId 
+- [SourceId](sourceid.md) SourceId 
     
-- [DisplayName (文字列)](displayname-string.md)
+- [DisplayName (string)](displayname-string.md)
     
-- [IsWritable 可能](iswritable.md)
+- [IsWritable](iswritable.md)
     
 - [IsQuickContact](isquickcontact.md)
     
@@ -232,17 +232,17 @@ ms.locfileid: "44460947"
     
 - [StringAttributedValue](stringattributedvalue.md)
     
-- [値 (ArrayOfStringValueType)](value-arrayofstringvaluetype.md)
+- [Value (ArrayOfStringValueType)](value-arrayofstringvaluetype.md)
     
 - [Attributions (ArrayOfPersonaAttributionsType)](attributions-arrayofpersonaattributionstype.md)
     
-- [属性 (PersonaAttributionType)](attribution-personaattributiontype.md)
+- [Attribution (PersonaAttributionType)](attribution-personaattributiontype.md)
     
 - [FileAses](fileases.md)
     
 - [FileAsIds](fileasids.md)
     
-- [与えた名前](givennames.md)
+- [GivenNames](givennames.md)
     
 - [Surnames](surnames.md)
     
@@ -254,13 +254,13 @@ ms.locfileid: "44460947"
     
 - [数値](number.md)
     
-- [型 (string)](type-string.md)
+- [型 (文字列)](type-string.md)
     
-- [会社名](companynames.md)
+- [CompanyNames](companynames.md)
     
-## <a name="getpersona-operation-error-response"></a>GetPersona operation のエラー応答
+## <a name="getpersona-operation-error-response"></a>GetPersona 操作エラー応答
 
-次の例は、 **Getpersona**操作要求へのエラー応答を示しています。 これは、誤って指定されたペルソナ識別子を含む要求に対する応答です。 
+次の例は **、GetPersona 操作要求に対するエラー応答を** 示しています。 これは、誤って指定されたペルサ識別子を含む要求に対する応答です。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -298,11 +298,11 @@ ms.locfileid: "44460947"
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-EWS で汎用的でこの操作に固有の追加のエラーコードについては、「応答」[を参照してください。](responsecode.md)
+EWS に汎用的で、この操作に固有の追加のエラー コードについては [、「ResponseCode」を参照してください](responsecode.md)。
   
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS 操作](ews-operations-in-exchange.md)
+- [EWS 操作 (Exchange](ews-operations-in-exchange.md)
     
 - [Exchange 内の EWS のユーザーと連絡先](https://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
     

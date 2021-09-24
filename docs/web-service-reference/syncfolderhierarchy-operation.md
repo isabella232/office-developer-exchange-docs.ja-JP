@@ -5,32 +5,32 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SyncFolderHierarchy
 api_type:
 - schema
 ms.assetid: b31916b1-bc6c-4451-a475-b7c5417f752d
-description: SyncFolderHierarchy 操作は、Microsoft Exchange Server 2010 とクライアントを実行しているコンピューター間でフォルダーを同期します。
-ms.openlocfilehash: 1c7ad2413064161ba54e8a7a30bfcd6f23f218bd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SyncFolderHierarchy 操作では、2010 年から 2010 年まで実行されているコンピューターとクライアントMicrosoft Exchange Serverを同期します。
+ms.openlocfilehash: 43182d267d4c09d4626669746ac64af9b0f890b9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456431"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513305"
 ---
 # <a name="syncfolderhierarchy-operation"></a>SyncFolderHierarchy 操作
 
-SyncFolderHierarchy 操作は、Microsoft Exchange Server 2010 とクライアントを実行しているコンピューター間でフォルダーを同期します。
+SyncFolderHierarchy 操作では、2010 年から 2010 年まで実行されているコンピューターとクライアントMicrosoft Exchange Serverを同期します。
   
 > [!NOTE]
-> SyncFolderHierarchy 操作では、 [UnreadCount](unreadcount.md)または[totalcount](totalcount.md)のプロパティが変更されたときにフォルダーは返されません。 
+> SyncFolderHierarchy 操作では [、UnreadCount](unreadcount.md) プロパティまたは [TotalCount](totalcount.md) プロパティが変更された場合、フォルダーは返されません。 
   
 ## <a name="syncfolderhierarchy-request-example"></a>SyncFolderHierarchy 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の SyncFolderHierarchy 要求の例は、クライアントフォルダー階層を Exchange サーバーと同期する方法を示しています。 この例では、少なくとも1回同期されているフォルダー階層を示します。 クライアントと Exchange サーバーの同期を最初に試行する要求には、 [Syncstate](syncstate-ex15websvcsotherref.md)要素は含まれていません。 最初の要求では、メールボックス内のすべてのフォルダーが返されます。 [Syncstate](syncstate-ex15websvcsotherref.md)要素は、 [SyncFolderHierarchyResponse](syncfolderhierarchyresponse.md)で返されます。 この要素は、後続の SyncFolderHierarchy 要求の状態を同期するために使用されます。
+SyncFolderHierarchy 要求の次の例は、クライアント フォルダー階層をサーバーと同期するExchangeしています。 この例では、少なくとも 1 回は同期済みのフォルダー階層を示します。 SyncState[要素](syncstate-ex15websvcsotherref.md)は、クライアントとクライアントサーバーを同期する最初の試行の要求Exchangeされません。 最初の要求は、メールボックス内のすべてのフォルダーを返します。 [SyncState 要素](syncstate-ex15websvcsotherref.md)は[SyncFolderHierarchyResponse で返されます](syncfolderhierarchyresponse.md)。 この要素は、以降の SyncFolderHierarchy 要求の状態を同期するために使用されます。
   
 ### <a name="code"></a>コード
 
@@ -51,9 +51,9 @@ SyncFolderHierarchy 操作は、Microsoft Exchange Server 2010 とクライア�
 
 ### <a name="comments"></a>コメント
 
-読み取りやすさを維持するために、 [Syncstate](syncstate-ex15websvcsotherref.md)要素の base64 でエンコードされたデータは短縮されています。 
+[SyncState 要素](syncstate-ex15websvcsotherref.md)base64 でエンコードされたデータは、読みやすさを維持するために短縮されました。 
   
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 要求では、次の要素が使用されます。
   
@@ -66,11 +66,11 @@ SyncFolderHierarchy 操作は、Microsoft Exchange Server 2010 とクライア�
 - [SyncState](syncstate-ex15websvcsotherref.md)
     
 > [!NOTE]
-> これらの要素を説明するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。 
+> これらの要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。 
   
 ## <a name="successful-syncfolderhierarchy-response"></a>成功した SyncFolderHierarchy 応答
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
 次の例は、SyncFolderHierarchy 要求に対する正常な応答を示しています。 この例では、新しいフォルダーが同期されています。
   
@@ -117,7 +117,7 @@ SyncFolderHierarchy 操作は、Microsoft Exchange Server 2010 とクライア�
 
 ### <a name="comments"></a>コメント
 
-読みやすくするために、 [Syncstate](syncstate-ex15websvcsotherref.md)要素の base64 でエンコードされたデータとフォルダー識別子データは短縮されています。 
+[SyncState 要素](syncstate-ex15websvcsotherref.md)base64 エンコード データとフォルダー識別子データは、読みやすさを維持するために短縮されました。 
   
 ### <a name="successful-response-elements"></a>成功した応答要素
 
@@ -135,9 +135,9 @@ SyncFolderHierarchy 操作は、Microsoft Exchange Server 2010 とクライア�
     
 - [SyncState](syncstate-ex15websvcsotherref.md)
     
-- [フォルダーに Lastfolderinrange](includeslastfolderinrange.md)
+- [IncludesLastFolderInRange](includeslastfolderinrange.md)
     
-- [変更 (階層)](changes-hierarchy.md)
+- [Changes (Hierarchy)](changes-hierarchy.md)
     
 - [Create (FolderSync)](create-foldersync.md)
     
@@ -149,7 +149,7 @@ SyncFolderHierarchy 操作は、Microsoft Exchange Server 2010 とクライア�
     
 - [FolderClass](folderclass.md)
     
-- [DisplayName (文字列)](displayname-string.md)
+- [DisplayName (string)](displayname-string.md)
     
 - [TotalCount](totalcount.md)
     
@@ -157,9 +157,9 @@ SyncFolderHierarchy 操作は、Microsoft Exchange Server 2010 とクライア�
     
 - [UnreadCount](unreadcount.md)
     
-## <a name="syncfolderhierarchy-error-response"></a>SyncFolderHierarchy のエラー応答
+## <a name="syncfolderhierarchy-error-response"></a>SyncFolderHierarchy エラー応答
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
 次の例は、SyncFolderHierarchy 要求に対するエラー応答を示しています。 このエラーは、無効な SyncState が原因で発生しました。
   
@@ -213,11 +213,11 @@ SyncFolderHierarchy 操作は、Microsoft Exchange Server 2010 とクライア�
     
 - [SyncState](syncstate-ex15websvcsotherref.md)
     
-- [フォルダーに Lastfolderinrange](includeslastfolderinrange.md)
+- [IncludesLastFolderInRange](includeslastfolderinrange.md)
     
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

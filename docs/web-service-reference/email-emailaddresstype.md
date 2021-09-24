@@ -1,32 +1,32 @@
 ---
-title: 電子メール (EmailAddressType)
+title: Email (EmailAddressType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Email
 api_type:
 - schema
 ms.assetid: dfffa1d5-2c3c-4f56-af63-5853df462e58
-description: Email 要素は、GetUserAvailability クエリのメールボックスユーザーを表します。
-ms.openlocfilehash: 2ed8de9c011a385ec6c4ebd2f8d1d47304343a0e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Email 要素は、GetUserAvailability クエリのメールボックス ユーザーを表します。
+ms.openlocfilehash: 1176eeaac47e27971683d025beec29c1710432a1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459231"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513018"
 ---
-# <a name="email-emailaddresstype"></a>電子メール (EmailAddressType)
+# <a name="email-emailaddresstype"></a>Email (EmailAddressType)
 
-**Email**要素は、getuseravailability クエリのメールボックスユーザーを表します。 
+**Email 要素** は、GetUserAvailability クエリのメールボックス ユーザーを表します。 
   
 - [GetUserAvailabilityRequest](getuseravailabilityrequest.md)  
 - [MailboxDataArray](mailboxdataarray.md) 
 - [MailboxData](mailboxdata.md) 
-- [電子メール (EmailAddressType)](email-emailaddresstype.md)
+- [Email (EmailAddressType)](email-emailaddresstype.md)
   
 ```xml
 <Email>
@@ -49,32 +49,32 @@ ms.locfileid: "44459231"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Name (EmailAddress)](name-emailaddress.md) <br/> |メールボックスユーザーの表示名を表します。  <br/> |
-|[Address (string)](address-string.md) <br/> |メールボックスユーザーの電子メールアドレスを表します。  <br/> |
-|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |メッセージのルーティングプロトコルを表します。  <br/> |
+|[Name (EmailAddress)](name-emailaddress.md) <br/> |メールボックス ユーザーの表示名を表します。  <br/> |
+|[Address (string)](address-string.md) <br/> |メールボックス ユーザーの電子メール アドレスを表します。  <br/> |
+|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |メッセージのルーティング プロトコルを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[MailboxData](mailboxdata.md) <br/> |個々のメールボックスユーザー、およびメールボックスユーザーに関して返されるデータの種類のオプションを表します。  <br/> この要素の XPath を次に示します。  <br/>  `/GetUserAvailabilityRequest/MailboxDataArray[i]/MailboxData` <br/> |
+|[MailboxData](mailboxdata.md) <br/> |個々のメールボックス ユーザーと、メールボックス ユーザーに関して返されるデータの種類のオプションを表します。  <br/> 次に、この要素の XPath を示します。  <br/>  `/GetUserAvailabilityRequest/MailboxDataArray[i]/MailboxData` <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの/EWS/ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの /EWS/ ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [GetUserAvailability 操作](getuseravailability-operation.md)  
 - [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
-- [ユーザーの空き時間情報の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [ユーザーの可用性の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

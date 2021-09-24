@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 919509f6-ee58-4eac-a689-c167a36349cc
-description: StringArrayAttributedValue 要素は、ペルソナ要素の文字列データの配列のインスタンスを指定します。
-ms.openlocfilehash: 7b52cfb373049337bdd6550f8ba593e96ddab4ae
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: StringArrayAttributedValue 要素は、ペルシャ要素の文字列データ配列のインスタンスを指定します。
+ms.openlocfilehash: aa2095d60c1a5ffb4bfd7ee2cfd308bceb49d801
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463091"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513312"
 ---
 # <a name="stringarrayattributedvalue"></a>StringArrayAttributedValue
 
-**StringArrayAttributedValue**要素は、ペルソナ要素の文字列データの配列のインスタンスを指定します。 
+**StringArrayAttributedValue** 要素は、ペルシャ要素の文字列データ配列のインスタンスを指定します。 
   
 ```XML
 <StringArrayAttributedValue>
@@ -37,11 +37,11 @@ ms.locfileid: "44463091"
   
 ### <a name="child-elements"></a>子要素
 
-[値](value.md)  | [Attributions (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md)
+[値](value.md)  | [属性 (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md)
   
 ### <a name="parent-elements"></a>親要素
 
-[子 (ArrayOfStringArrayAttributedValuesType)](children-arrayofstringarrayattributedvaluestype.md)
+[Children (ArrayOfStringArrayAttributedValuesType)](children-arrayofstringarrayattributedvaluestype.md)
   
 ## <a name="remarks"></a>注釈
 
@@ -54,8 +54,8 @@ ms.locfileid: "44463091"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

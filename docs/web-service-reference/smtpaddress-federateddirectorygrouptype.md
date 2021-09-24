@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 78b69794-7aea-4cca-a6d8-a6f1e642c7c5
-description: SmtpAddress (FederatedDirectoryGroupType) 要素は、内部使用のみを目的としています。
-ms.openlocfilehash: 0cb0fcaf50250fd2d8ecc42996c4bb18a615dc51
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SmtpAddress (FederatedDirectoryGroupType) 要素は、内部での使用のみを目的とします。
+ms.openlocfilehash: 60a0718e03ef48745aaa3861b04b566a67045869
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467271"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539066"
 ---
 # <a name="smtpaddress-federateddirectorygrouptype"></a>SmtpAddress (FederatedDirectoryGroupType)
 
-**Smtpaddress (FederatedDirectoryGroupType)** 要素は、内部使用のみを目的としています。 
+**SmtpAddress (FederatedDirectoryGroupType)** 要素は、内部での使用のみを目的とします。 
 
 ## <a name="attributes-and-elements"></a>属性と要素
 

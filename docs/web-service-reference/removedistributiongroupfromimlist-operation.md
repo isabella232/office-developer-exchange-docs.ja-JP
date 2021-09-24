@@ -5,45 +5,45 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 252bddf2-98b6-4824-b548-2fba2bda5384
-description: RemoveDistributionGroupFromImList EWS 操作についての情報を検索します。
-ms.openlocfilehash: 66220f0cab99f404e17136bbb7836ca13d569b53
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: RemoveDistributionGroupFromImList EWS 操作に関する情報を検索します。
+ms.openlocfilehash: 52b653008b7b14d2c2467cc9bb1f8f1475cee8f5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459603"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513396"
 ---
 # <a name="removedistributiongroupfromimlist-operation"></a>RemoveDistributionGroupFromImList 操作
 
-**RemoveDistributionGroupFromImList** EWS 操作についての情報を検索します。 
+**RemoveDistributionGroupFromImList** EWS 操作に関する情報を検索します。 
   
-**RemoveDistributionGroupFromImList**操作では、lync が連絡先ストアに対して Exchange を使用している場合に、lync インスタントメッセージング (IM) リストから配布グループを削除します。 
+**RemoveDistributionGroupFromImList** 操作は、Lync が連絡先ストアに Exchange を使用するときに、Lync インスタント メッセージング (IM) リストから配布グループを削除します。 
   
 この操作は Exchange Server 2013 で導入されました。
   
 ## <a name="using-the-removedistributiongroupfromimlist-operation"></a>RemoveDistributionGroupFromImList 操作の使用
 
-**RemoveDistributionGroupFromImList**操作は、Exchange サーバーに格納されている Lync IM リストから削除する配布グループを識別する1つの引数を受け取ります。 
+**RemoveDistributionGroupFromImList** 操作は、Exchange サーバーに格納されている Lync IM リストから削除する配布グループを識別する 1 つの引数を受けExchangeします。 
   
-### <a name="removedistributiongroupfromimlist-operation-soap-headers"></a>RemoveDistributionGroupFromImList 操作の SOAP ヘッダー
+### <a name="removedistributiongroupfromimlist-operation-soap-headers"></a>RemoveDistributionGroupFromImList 操作 SOAP ヘッダー
 
-**RemoveDistributionGroupFromImList**操作では、次の表に示す SOAP ヘッダーを使用できます。 
+**RemoveDistributionGroupFromImList 操作では**、次の表に示す SOAP ヘッダーを使用できます。 
   
-|**ヘッダー名**|**要素**|**説明**|
+|**ヘッダー名**|**Element**|**説明**|
 |:-----|:-----|:-----|
-|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |RFC 3066 で定義されているように、メールボックスへのアクセスに使用されるカルチャ (言語の識別用のタグ) を識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは応答に適用されます。  <br/> |
+|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |メールボックスへのアクセスに使用する RFC 3066「言語の識別用タグ」で定義されているカルチャを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマ バージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは、応答に適用されます。  <br/> |
    
 ## <a name="removedistributiongroupfromimlist-operation-request-example-remove-a-distribution-group-from-an-im-list"></a>RemoveDistributionGroupFromImList 操作要求の例: IM リストから配布グループを削除する
 
-次の**RemoveDistributionGroupFromImList**操作要求の例は、IM グループから配布グループを削除する方法を示しています。 **RemoveDistributionGroupFromImList**操作は、IM リストから削除する配布グループを識別する一意のグループ識別子を受け入れます。 [Getimitemlist 操作](getimitemlist-operation.md)と[Adddistribution grouptoimlist 操作](adddistributiongrouptoimlist-operation.md)の応答で返される[ExchangeStoreId](exchangestoreid.md)要素は、IM リストから削除できる配布グループを識別します。 
+**RemoveDistributionGroupFromImList** 操作要求の次の例は、IM グループから配布グループを削除する方法を示しています。 **RemoveDistributionGroupFromImList** 操作は、IM リストから削除する配布グループを識別する一意のグループ識別子を受け入れる。 [GetImItemList](getimitemlist-operation.md)操作の応答で返される[ExchangeStoreId](exchangestoreid.md)要素と[AddDistributionGroupToImList](adddistributiongrouptoimlist-operation.md)操作は、IM リストから削除できる配布グループを識別します。 
   
 > [!NOTE]
-> この記事のすべてのアイテム識別子と変更キーは、読みやすくするために短縮されています。 
+> この記事のすべてのアイテム識別子と変更キーは、読みやすさを維持するために短縮されています。 
   
 ```XML
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
@@ -67,9 +67,9 @@ ms.locfileid: "44459603"
     
 - [GroupId](groupid.md)
     
-## <a name="successful-removedistributiongroupfromimlist-operation-response"></a>成功した RemoveDistributionGroupFromImList 操作の応答
+## <a name="successful-removedistributiongroupfromimlist-operation-response"></a>RemoveDistributionGroupFromImList 操作応答の成功
 
-次の例は、IM グループから配布グループを削除するための**RemoveDistributionGroupFromImList**操作要求に対する正常な応答を示しています。 
+次の例は、IM グループから配布グループを削除する **RemoveDistributionGroupFromImList** 操作要求に対する正常な応答を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -103,7 +103,7 @@ ms.locfileid: "44459603"
     
 ## <a name="removedistributiongroupfromimlist-operation-error-response-example"></a>RemoveDistributionGroupFromImList 操作エラー応答の例
 
-次の例は、 **RemoveDistributionGroupFromImList**操作要求へのエラー応答を示しています。 これは、既にメールボックスから削除されている配布グループを削除する要求に対する応答です。 
+次の例は **、RemoveDistributionGroupFromImList** 操作要求に対するエラー応答を示しています。 これは、メールボックスから既に削除されている配布グループを削除する要求に対する応答です。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -143,11 +143,11 @@ ms.locfileid: "44459603"
     
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS 操作](ews-operations-in-exchange.md)
+- [EWS 操作 (Exchange](ews-operations-in-exchange.md)
     
 - [GetImItemList 操作](getimitemlist-operation.md)
     
-- [Adddeploy Grouptoimlist 操作](adddistributiongrouptoimlist-operation.md)
+- [AddDistributionGroupToImList 操作](adddistributiongrouptoimlist-operation.md)
     
 - [Exchange 内の EWS のユーザーと連絡先](https://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx#What)
     

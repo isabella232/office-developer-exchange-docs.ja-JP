@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ddeb11db-797d-4939-91d5-3e44be5f0778
-description: HasBlockedImages 要素は、アイテムに画像がブロックされているかどうかを示すブール値を指定します。
-ms.openlocfilehash: 370ab4b12ae841815faa344b2fd3a6d3ddc16bcb
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: HasBlockedImages 要素は、アイテムがイメージをブロックしたかどうかを示すブール値を指定します。
+ms.openlocfilehash: 1f4031f95ce5040eabf6993320a184afaf469bd1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462795"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59537835"
 ---
 # <a name="hasblockedimages"></a>HasBlockedImages
 
-**HasBlockedImages**要素は、アイテムに画像がブロックされているかどうかを示すブール値を指定します。 
+**HasBlockedImages** 要素は、アイテムがイメージをブロックしたかどうかを示すブール値を指定します。 
   
 ```XML
 <HasBlockedImages> true | false </HasBlockedImages>
@@ -40,11 +40,11 @@ ms.locfileid: "44462795"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Item](item.md) <br/> |Exchange ストア内の汎用アイテムを表します。  <br/> |
+|[Item](item.md) <br/> |ストア内の汎用アイテムをExchangeします。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**HasBlockedImages**要素のテキスト値が**true**の場合は、アイテムに画像がブロックされていることを示します。 値が**false**の場合は、アイテムにブロックされた画像が含まれていないことを示します。 
+**HasBlockedImages** 要素のテキスト値 **が true** の場合、アイテムがイメージをブロックしています。 false の **値は** 、アイテムにブロックされたイメージが存在しないかどうかを示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -58,12 +58,12 @@ ms.locfileid: "44462795"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

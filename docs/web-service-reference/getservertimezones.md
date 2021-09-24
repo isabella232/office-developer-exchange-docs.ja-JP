@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetServerTimeZones
 api_type:
 - schema
 ms.assetid: 2a89098b-d89b-4d01-827b-50be00f7cbe9
-description: GetServerTimeZones 要素は、Exchange サーバーからタイムゾーン定義を取得するための要求のルート要素です。
-ms.openlocfilehash: 797e4543c94b0628242bcf544fe9a735ebaa5a63
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetServerTimeZones 要素は、サーバーからタイム ゾーン定義を取得する要求のルートExchangeです。
+ms.openlocfilehash: b710334e5778f8bc27ba7ac07c6bf9c2e2d3392e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460940"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59533540"
 ---
 # <a name="getservertimezones"></a>GetServerTimeZones
 
-**GetServerTimeZones**要素は、Exchange サーバーからタイムゾーン定義を取得するための要求のルート要素です。 
+**GetServerTimeZones** 要素は、サーバーからタイム ゾーン定義を取得する要求のルートExchangeです。 
   
 ```xml
 <GetServerTimeZones ReturnFullTimeZoneData="">   <Ids/></GetServerTimeZones>
@@ -36,20 +36,20 @@ ms.locfileid: "44460940"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**ReturnFullTimeZoneData** <br/> |[GetServerTimeZones 操作](getservertimezones-operation.md)が、各タイムゾーンの完全な定義または名前と識別子のみを返すかどうかを指定します。 この属性は省略可能です。 既定値は **true** です。  <br/> |
+|**ReturnFullTimeZoneData** <br/> |[GetServerTimeZones](getservertimezones-operation.md)操作が完全な定義を返すのか、各タイム ゾーンの名前と識別子のみを返すのかを指定します。 この属性は省略可能です。 既定値は **true** です。  <br/> |
    
 #### <a name="returnfulltimezonedata-attribute"></a>ReturnFullTimeZoneData 属性
 
 |**値**|**説明**|
 |:-----|:-----|
-|**true** <br/> |各タイムゾーンの完全な定義を返します。  <br/> |
-|**false** <br/> |各タイムゾーンの名前と識別子のみを返します。  <br/> |
+|**true** <br/> |各タイム ゾーンの完全な定義を返します。  <br/> |
+|**false** <br/> |各タイム ゾーンの名前と識別子のみを返します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Rid](ids.md) <br/> |要求されたタイムゾーン定義を指定するタイムゾーン定義識別子の配列を含みます。 この要素は省略できます。 この要素が[GetServerTimeZones 操作](getservertimezones-operation.md)要求に含まれていない場合、サーバー上で使用可能なすべてのタイムゾーン定義が応答で返されます。  <br/> |
+|[Ids](ids.md) <br/> |要求されたタイム ゾーン定義を指定するタイム ゾーン定義識別子の配列を格納します。 この要素は省略できます。 この要素が [GetServerTimeZones](getservertimezones-operation.md) 操作要求に含まれていない場合、サーバーで使用可能なすべてのタイム ゾーン定義が応答で返されます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -57,16 +57,16 @@ ms.locfileid: "44460940"
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされているコンピューター Microsoft Exchange Server EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -77,5 +77,5 @@ ms.locfileid: "44460940"
 [GetServerTimeZonesResponse](getservertimezonesresponse.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

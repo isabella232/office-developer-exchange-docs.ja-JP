@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 19294300-ab84-4784-8aa7-3395a08de640
-description: アラーム要素は、GetReminders 要求に対する応答で返される通知を指定します。
-ms.openlocfilehash: 1ddf1c10872dcce103919dbed3d1c5e04cdfca74
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Reminders 要素は、GetReminders 要求への応答で返されるアラームを指定します。
+ms.openlocfilehash: 0b760e93bf27f0fdaad9464580fad924367dea32
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458496"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513410"
 ---
 # <a name="reminders"></a>リマインダー
 
-**アラーム**要素は、 **getreminders**要求に対する応答で返される通知を指定します。 
+**Reminders 要素** は **、GetReminders** 要求への応答で返されるアラームを指定します。 
   
 ```XML
 <Reminders>
@@ -53,9 +53,9 @@ ms.locfileid: "44458496"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -64,5 +64,5 @@ ms.locfileid: "44458496"
 [GetRemindersResponse](getremindersresponse.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

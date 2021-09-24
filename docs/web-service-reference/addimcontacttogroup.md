@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 65554e4c-c0d9-485e-9f01-ed1baa8280ab
-description: AddImContactToGroup 要素は、既存のインスタントメッセージングの連絡先をインスタントメッセージンググループに追加する要求を定義します。
-ms.openlocfilehash: b86b1cb69a1ebc7034e5a27047c14efbab7236ea
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: AddImContactToGroup 要素は、インスタント メッセージング グループに既存のインスタント メッセージング連絡先を追加する要求を定義します。
+ms.openlocfilehash: 3bc779db71ab6fa9fd10d14e124db1d37ba6534e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459666"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520165"
 ---
 # <a name="addimcontacttogroup"></a>AddImContactToGroup
 
-**Addimcontacttogroup**要素は、既存のインスタントメッセージングの連絡先をインスタントメッセージンググループに追加する要求を定義します。 
+**AddImContactToGroup** 要素は、インスタント メッセージング グループに既存のインスタント メッセージング連絡先を追加する要求を定義します。 
   
 ```XML
 <AddImContactToGroup>
@@ -54,8 +54,8 @@ ms.locfileid: "44459666"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

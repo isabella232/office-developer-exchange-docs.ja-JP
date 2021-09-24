@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 43ebd17b-3a70-4878-9254-97a4c2c87b77
-description: GetDomainSettingsResponse 要素は、GetDomainSettings 操作 (SOAP) への応答を表します。これにより、ドメインの設定が返されます。
-ms.openlocfilehash: 94cb202948e6a0d5a34f5547132c052d1d1b6a40
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetDomainSettingsResponse 要素は、ドメイン設定を返す GetDomainSettings 操作 (SOAP) への応答を表します。
+ms.openlocfilehash: e723942ab2691d97729db24c0862af00843e3729
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461878"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538132"
 ---
 # <a name="getdomainsettingsresponse-soap"></a>GetDomainSettingsResponse (SOAP)
 
-**Getdomainsettingsresponse**要素は、 [getdomainsettings 操作 (SOAP)](getdomainsettings-operation-soap.md)への応答を表します。これにより、ドメインの設定が返されます。
+**GetDomainSettingsResponse** 要素は、ドメイン設定を返す [GetDomainSettings 操作 (SOAP)](getdomainsettings-operation-soap.md)への応答を表します。
   
 ```XML
 <GetDomainSettingsResponse>
@@ -41,9 +41,9 @@ ms.locfileid: "44461878"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[DomainResponses (SOAP)](domainresponses-soap.md) <br/> |要求された各ドメインの設定に対する応答の配列を格納します。  <br/> |
-|[ErrorCode (SOAP)](errorcode-soap.md) <br/> |自動検出サービスによって返されるエラーコードを表します。  <br/> |
-|[ErrorMessage (SOAP)](errormessage-soap.md) <br/> |自動検出サービスによって返されるエラーコードに関連付けられているメッセージを表します。  <br/> |
+|[DomainResponses (SOAP)](domainresponses-soap.md) <br/> |要求されたドメインの設定ごとに応答の配列を格納します。  <br/> |
+|[ErrorCode (SOAP)](errorcode-soap.md) <br/> |自動検出サービスによって返されるエラー コードを表します。  <br/> |
+|[ErrorMessage (SOAP)](errormessage-soap.md) <br/> |自動検出サービスによって返されるエラー コードに関連付けられているメッセージを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -59,8 +59,8 @@ ms.locfileid: "44461878"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

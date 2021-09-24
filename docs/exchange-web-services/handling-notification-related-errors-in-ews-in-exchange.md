@@ -3,15 +3,15 @@ title: Exchange における EWS での通知関連エラーの処理
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 519e1e52-5f1f-4f06-931e-8c20a586a563
 description: Exchange の EWS マネージ API または EWS を使用して、開発したアプリケーションの通知に関連するエラーを処理する方法を確認します。
-ms.openlocfilehash: 60edb1344e6b0499ef6d2ed2aefaebde723b42cc
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 7b49a57b7236318e08cb70ac2ac00edc4cf86363
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528315"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520214"
 ---
 # <a name="handling-notification-related-errors-in-ews-in-exchange"></a>Exchange における EWS での通知関連エラーの処理
 
@@ -30,7 +30,7 @@ Exchange の EWS マネージ API または EWS を使用して、開発した�
 |**ErrorMissedNotificationEvents** |以前のイベントがないイベントを取得する場合。   |拡張フォルダーのプロパティ **PR_LOCAL_COMMIT_TIME_MAX** (0x670a) と **PR_DELETED_COUNT_TOTAL** (0x670b) を比較し、どの変更がないのかを特定し、[新しいサブスクリプションを作成する](handling-notification-related-errors-in-ews-in-exchange.md#bk_recover)。  |
 |**ErrorProxyRequestNotAllowed** |メールボックスが別のサイトに移動しているユーザーに対して、バッチ要求でイベントをサブスクライブする場合。   |[自動検出](autodiscover-for-exchange.md)を使用して、ExternalEwsUrl または EwsPartnerUrl を再検出し、新しいサブスクリプションを作成する。  |
 |**ErrorReadEventsFailed** |見つからないサブスクリプションからイベントを取得する場合。  |[自動検出](autodiscover-for-exchange.md)を使用して、ExternalEwsUrl または EwsPartnerUrl を再検出し、新しいサブスクリプションを作成する。  |
-|**ErrorServerBusy** | [調整](ews-throttling-in-exchange.md#throttling-considerations-for-ews-notification-applications)制限を超過した場合。 調整に関する次の点に注意してください。<ul><li>[EwsMaxSubscriptions](https://msdn.microsoft.com/library/microsoft.exchange.data.directory.systemconfiguration.throttlingpolicy.ewsmaxsubscriptions%28v=exchg.150%29.aspx) 調整制限により、一度にアクティブにできるプッシュ、プル、またはストリーミングの通知サブスクリプションの最大数が指定されます。 これはメールボックスのサブスクリプションの値です。メールボックス サブスクリプション内にある個々のフォルダーのサブスクリプション数ではありません。 サービス メールボックスのバージョン 14.16.0135 および 14.15.0057.000 以降では、Exchange Online または Office 365 の一部としての Exchange Online によってホストされるメールボックスは、最大 20 のサブスクリプション、対象になる Exchange 2013 のオンプレミスのメールボックスは最大 5,000 のサブスクリプションを持つことができます。</li><li>[EwsMaxConcurrency](https://msdn.microsoft.com/library/microsoft.exchange.data.directory.systemconfiguration.throttlingpolicy.ewsmaxconcurrency%28v=exchg.150%29.aspx) 調整制限により、非ストリーミング接続のアクティブな要求の最大数が指定されます。既定値は 27 です。</li><li>開いているストリーミング接続の既定の制限値は 10 です。</li></ul> |<ul><li>[通知に関連する調整ポリシーの影響を考慮し](ews-throttling-in-exchange.md#throttling-considerations-for-ews-notification-applications)、アプリケーションが調整されないようにアクティブなサブスクリプションとアクティブな接続の数を制限する。</li><li>より少ない接続を使用してイベントを取得する。[同じグループに最大 200 のサブスクリプション ID を配置](how-to-maintain-affinity-between-group-of-subscriptions-and-mailbox-server.md)することで、各接続のサブスクリプション数を最大にします。これで、同じ接続を使用して、グループ全体のイベントを取得し、必要な接続の数を削減することができるようになります。</li><li>web.config ファイルの HangingConnectionLimit の値を変更し、開くことができるストリーミング接続の既定値 10 をオーバーライドする。</li></ul>|
+|**ErrorServerBusy** | [調整](ews-throttling-in-exchange.md#throttling-considerations-for-ews-notification-applications)制限を超過した場合。調整に関する次の点に注意してください。<ul><li>[EwsMaxSubscriptions](https://msdn.microsoft.com/library/microsoft.exchange.data.directory.systemconfiguration.throttlingpolicy.ewsmaxsubscriptions%28v=exchg.150%29.aspx) 調整制限により、一度にアクティブにできるプッシュ、プル、またはストリーミングの通知サブスクリプションの最大数が指定されます。 これはメールボックスのサブスクリプションの値です。メールボックス サブスクリプション内にある個々のフォルダーのサブスクリプション数ではありません。 サービス メールボックスのバージョン 14.16.0135 および 14.15.0057.000 以降では、Exchange Online または Office 365 の一部としての Exchange Online によってホストされるメールボックスは、最大 20 のサブスクリプション、対象になる Exchange 2013 のオンプレミスのメールボックスは最大 5,000 のサブスクリプションを持つことができます。</li><li>[EwsMaxConcurrency](https://msdn.microsoft.com/library/microsoft.exchange.data.directory.systemconfiguration.throttlingpolicy.ewsmaxconcurrency%28v=exchg.150%29.aspx) 調整制限により、非ストリーミング接続のアクティブな要求の最大数が指定されます。既定値は 27 です。</li><li>開いているストリーミング接続の既定の制限値は 10 です。</li></ul> |<ul><li>[通知に関連する調整ポリシーの影響を考慮し](ews-throttling-in-exchange.md#throttling-considerations-for-ews-notification-applications)、アプリケーションが調整されないようにアクティブなサブスクリプションとアクティブな接続の数を制限する。</li><li>より少ない接続を使用してイベントを取得する。[同じグループに最大 200 のサブスクリプション ID を配置](how-to-maintain-affinity-between-group-of-subscriptions-and-mailbox-server.md)することで、各接続のサブスクリプション数を最大にします。これで、同じ接続を使用して、グループ全体のイベントを取得し、必要な接続の数を削減することができるようになります。</li><li>web.config ファイルの HangingConnectionLimit の値を変更し、開くことができるストリーミング接続の既定値 10 をオーバーライドする。</li></ul>|
 |**ErrorSubscriptionNotFound** |見つからないサブスクリプションのイベントを取得する場合。サブスクリプションの期限が切れているか、EWS のプロセスが再起動されている可能性があります。または無効なサブスクリプションが渡されました。 | <ul><li>前の応答で返されたのと同じサブスクリプション ID を使用していることを確認する。</li><li>正しい **ExchangeService** オブジェクトのサブスクリプション ID を送信していることを確認する。</li><li> [新しいサブスクリプションを作成する](handling-notification-related-errors-in-ews-in-exchange.md#bk_recover)。</li></ul> |
 |**[ServiceLocalException](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresponseexception%28v=exchg.80%29.aspx)** |サブスクリプションの接続が別のフォルダーで開いている間に、新しいフォルダーにサブスクリプションを追加します。  |サブスクリプションを変更して、特定のフォルダーではなく、メールボックス内のすべてのフォルダーをサブスクライブする。  |
 |**[ServiceResponseException](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresponseexception%28v=exchg.80%29.aspx)** |Exchange ストア内にないサブスクリプションのイベントを取得する場合。  | <ul><li>前の応答で返されたのと同じサブスクリプション ID を使用していることを確認する。</li><li>正しい **ExchangeService** オブジェクトのサブスクリプション ID を送信していることを確認する。</li></ul> |
@@ -38,7 +38,7 @@ Exchange の EWS マネージ API または EWS を使用して、開発した�
 ## <a name="recovering-from-lost-subscriptions"></a>失われたサブスクリプションから回復する
 <a name="bk_recover"> </a>
 
-サブスクリプションが失われる、またはアクセスできなくなった場合は、新しいサブスクリプションを作成し、新しいサブスクリプションに古い基準値を含めないことをお勧めします。 古い基準値を使用して再度サブスクライブすると、イベントが線形にスキャンされるためコストがかかります。 代わりに、新しいサブスクリプションを作成し、フォルダーのプロパティを比較して、失われたサブスクリプションと新しいサブスクリプションの間で発生したコンテンツ変更を検索します。 確認することをお勧めする拡張フォルダー プロパティは、**PR_LOCAL_COMMIT_TIME_MAX** (0x670a0040) と **PR_DELETED_COUNT_TOTAL** (0x670b0003) です。 これを行うには、[拡張プロパティの定義を作成します](properties-and-extended-properties-in-ews-in-exchange.md)。
+サブスクリプションが失われる、またはアクセスできなくなった場合は、新しいサブスクリプションを作成し、新しいサブスクリプションに古い基準値を含めないことをお勧めします。古い基準値を使用して再度サブスクライブすると、イベントが線形にスキャンされるためコストがかかります。代わりに、新しいサブスクリプションを作成し、フォルダーのプロパティを比較して、失われたサブスクリプションと新しいサブスクリプションの間で発生したコンテンツ変更を検索します。拡張フォルダーのプロパティ **PR_LOCAL_COMMIT_TIME_MAX** (0x670a0040) と **PR_DELETED_COUNT_TOTAL** (0x670b0003) を確認するようお勧めします。これを行うには、[拡張プロパティの定義を作成します](properties-and-extended-properties-in-ews-in-exchange.md)。
 
 ## <a name="see-also"></a>関連項目
 

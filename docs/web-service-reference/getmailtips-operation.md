@@ -1,33 +1,33 @@
 ---
-title: GetMailTips ヒント操作
+title: GetMailTips 操作
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetMailTips
 api_type:
 - schema
 ms.assetid: 025483ec-a9f3-4735-8a95-d26e30ea7974
-description: GetMailTips ヒント操作は、指定されたメールボックスのメールヒント情報を取得します。
-ms.openlocfilehash: 41a4bb99ee7ae4e416ec8a106968bb7869e60345
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetMailTips 操作は、指定したメールボックスのメール ヒント情報を取得します。
+ms.openlocfilehash: ec139f7a1a464aa8c30d8dd2043f441874231dc2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458657"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59533795"
 ---
-# <a name="getmailtips-operation"></a>GetMailTips ヒント操作
+# <a name="getmailtips-operation"></a>GetMailTips 操作
 
-**Getmailtips**ヒント操作は、指定されたメールボックスのメールヒント情報を取得します。 
+**GetMailTips 操作は**、指定したメールボックスのメール ヒント情報を取得します。 
   
-## <a name="getmailtips-request-example"></a>GetMailTips ヒント要求の例
+## <a name="getmailtips-request-example"></a>GetMailTips 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-クライアントは、要求 XML を構築し、サーバーに送信します。 要求は、クライアントが送信しているユーザー、メールヒントを取得するメールボックス、および要求されているメールヒントを識別します。 この例では、クライアントは、選択したメールボックスのすべてのメールヒントを返すように要求します。
+クライアントは要求 XML を構築し、サーバーに送信します。 要求は、クライアントが送信するユーザー、メール ヒントを取得するメールボックス、および要求されるメール ヒントを識別します。 この例では、クライアントは、選択したメールボックスのすべてのメール ヒントを返す必要があります。
   
 ### <a name="code"></a>コード
 
@@ -58,7 +58,7 @@ ms.locfileid: "44458657"
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 要求には、次の要素が含まれています。
   
@@ -66,15 +66,15 @@ ms.locfileid: "44458657"
     
 - [SendingAs](sendingas.md)
     
-- [受信者 (Arrayof受信者 Stype)](recipients-arrayofrecipientstype.md)
+- [Recipients (ArrayOfRecipientsType)](recipients-arrayofrecipientstype.md)
     
-- [Mailヒント要求](mailtipsrequested.md)
+- [MailTipsRequested](mailtipsrequested.md)
     
-## <a name="successful-getmailtips-response-example"></a>成功した GetMailTips ヒントの応答の例
+## <a name="successful-getmailtips-response-example"></a>GetMailTips 応答の成功例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の簡易オブジェクトアクセスプロトコル (SOAP) 本文の例は、 **Getmailtips ヒント**要求に対する正常な応答を示しています。 
+次のSimple Object Access Protocol (SOAP) 本文の例は **、GetMailTips** 要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -122,9 +122,9 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
 </s:Envelope>
 ```
 
-### <a name="response-elements"></a>Response 要素
+### <a name="response-elements"></a>応答要素
 
-応答には、次の要素が含まれています。
+応答には、次の要素が含まれます。
   
 - [ResponseCode](responsecode.md)
     
@@ -134,7 +134,7 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
 
 
 
-[Exchange での EWS 操作](ews-operations-in-exchange.md)
+[EWS 操作 (Exchange](ews-operations-in-exchange.md)
   
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

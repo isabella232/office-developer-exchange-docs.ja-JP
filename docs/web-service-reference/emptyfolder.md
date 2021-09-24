@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 502b2841-103d-4340-97d5-51a1db813fb2
-description: EmptyFolder 要素は、Exchange ストア内のメールボックス内のフォルダーを空にする要求を定義します。 必要に応じて、フォルダーを空にしたときにサブフォルダーを削除することもできます。
-ms.openlocfilehash: a42e4e3f25741a96ee65fe6f87fc3236b68f4dc9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: EmptyFolder 要素は、フォルダー ストア内のメールボックス内のフォルダーを空にする要求Exchangeします。 必要に応じて、フォルダーが空になったときにサブフォルダーを削除することもできます。
+ms.openlocfilehash: c1b0e953f677c1fe5ae0958b35f85f3f5c4fb973
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457278"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519675"
 ---
 # <a name="emptyfolder"></a>EmptyFolder
 
-**Emptyfolder**要素は、Exchange ストア内のメールボックス内のフォルダーを空にする要求を定義します。 必要に応じて、フォルダーを空にしたときにサブフォルダーを削除することもできます。 
+**EmptyFolder 要素** は、フォルダー ストア内のメールボックス内のフォルダーを空にExchangeします。 必要に応じて、フォルダーが空になったときにサブフォルダーを削除することもできます。 
   
 ```XML
 <EmptyFolder>
@@ -41,8 +41,8 @@ ms.locfileid: "44457278"
 
 |**値**|**説明**|
 |:-----|:-----|
-|HardDelete  <br/> |メッセージとフォルダーがストアから完全に削除されます。  <br/> |
-|SoftDelete  <br/> |収集が有効になっている場合、メッセージとフォルダーは収集に移動されます。  <br/> |
+|HardDelete  <br/> |メッセージとフォルダーはストアから完全に削除されます。  <br/> |
+|SoftDelete  <br/> |ゴミ箱が有効になっている場合、メッセージとフォルダーはゴミ箱に移動されます。  <br/> |
 |MoveToDeletedItems  <br/> |メッセージとフォルダーが [削除済みアイテム] フォルダーに移動されます。  <br/> |
    
 ### <a name="child-elements"></a>子要素
@@ -68,9 +68,9 @@ ms.locfileid: "44457278"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

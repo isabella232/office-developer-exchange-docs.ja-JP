@@ -3,15 +3,15 @@ title: Exchange での EWS のアーカイブ
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 78ae179b-ae4f-4f64-911a-e0c70e0fa314
 description: Exchange での EWS のアーカイブについて説明します。
-ms.openlocfilehash: b433b9f88905ee255720e8b341d560fa0e464975
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: f2ca4cc783556b089b732c75d166b77c0dcd891c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456214"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520228"
 ---
 # <a name="archiving-in-ews-in-exchange"></a>Exchange での EWS のアーカイブ
 

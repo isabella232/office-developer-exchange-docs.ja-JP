@@ -1,23 +1,23 @@
 ---
-title: 失敗したメールボックス
+title: FailedMailboxes
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f34fb6f6-057e-4ae3-8e10-bc92112eafba
-description: Failed メールボックス要素は、検索で失敗したメールボックスの配列を指定します。
-ms.openlocfilehash: 10f10d3f2ac4379d7ddcb3a13019d17a17bb676a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: FailedMailboxes 要素は、検索で失敗したメールボックスの配列を指定します。
+ms.openlocfilehash: a2225a44255b8dbb9a110dc1f9765f51abcfe628
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461955"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513746"
 ---
-# <a name="failedmailboxes"></a>失敗したメールボックス
+# <a name="failedmailboxes"></a>FailedMailboxes
 
-Failed**メールボックス**要素は、検索で失敗したメールボックスの配列を指定します。 
+**FailedMailboxes 要素** は、検索で失敗したメールボックスの配列を指定します。 
   
 ```XML
 <FailedMailboxes>
@@ -38,13 +38,13 @@ Failed**メールボックス**要素は、検索で失敗したメールボッ�
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[失敗したメールボックス](failedmailbox.md) <br/> |検索で失敗したメールボックスのエラーメッセージを指定します。  <br/> |
+|[FailedMailbox](failedmailbox.md) <br/> |検索に失敗したメールボックスのエラー メッセージを指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[SearchMailboxesResult](searchmailboxesresult.md) <br/> |**Searchmailboxes ボックス**要求の結果が含まれます。  <br/> |
+|[SearchMailboxesResult](searchmailboxesresult.md) <br/> |**SearchMailboxes 要求の結果を格納** します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -58,12 +58,12 @@ Failed**メールボックス**要素は、検索で失敗したメールボッ�
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

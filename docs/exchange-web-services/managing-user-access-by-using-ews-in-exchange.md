@@ -3,15 +3,15 @@ title: Exchange において EWS を使用してユーザー アクセスを管�
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 48f0170c-8786-405f-86cb-568b7314a425
 description: Exchange サーバーに対するユーザー アカウントのアクセス権を管理するためのオプションについて説明します。
-ms.openlocfilehash: 476292d4db206f22cd84134ce2b46957e9fe85fc
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 431f61a0cbdfcc522eb1481399ffab1f31df9e62
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456246"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520977"
 ---
 # <a name="managing-user-access-by-using-ews-in-exchange"></a>Exchange において EWS を使用してユーザー アクセスを管理する
 

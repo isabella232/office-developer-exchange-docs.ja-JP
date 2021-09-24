@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ApplyConversationAction
 api_type:
 - schema
 ms.assetid: 73d7943d-d361-4f8b-9948-d85f886efa1a
-description: ApplyConversationAction 操作は、スレッド内のすべてのアイテムに対して1回限りまたはフォローアップのアクションを設定します。 ApplyConversationAction 操作を使用すると、会話内のすべてのアイテムに対して、分類、移動、コピー、削除、および読み取り状態の設定を行うことができます。 会話の新しいメッセージに対してアクションを設定することもできます。
-ms.openlocfilehash: cdab239a5b0b1406d2ce31f4604e4737d037cd7e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ApplyConversationAction 操作は、会話内のすべてのアイテムに対して 1 回またはフォローアップアクションを設定します。 ApplyConversationAction 操作を使用すると、会話内のすべてのアイテムの読み取り状態を分類、移動、コピー、削除、および設定できます。 会話内の新しいメッセージに対してアクションを設定することもできます。
+ms.openlocfilehash: ed3ed02dc045a095bcc86124b8d3e1c5a65dae84
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463504"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520102"
 ---
 # <a name="applyconversationaction-operation"></a>ApplyConversationAction 操作
 
-**ApplyConversationAction**操作は、スレッド内のすべてのアイテムに対して1回限りまたはフォローアップのアクションを設定します。 **ApplyConversationAction**操作を使用すると、会話内のすべてのアイテムに対して、分類、移動、コピー、削除、および読み取り状態の設定を行うことができます。 会話の新しいメッセージに対してアクションを設定することもできます。 
+**ApplyConversationAction** 操作は、会話内のすべてのアイテムに対して 1 回またはフォローアップアクションを設定します。 **ApplyConversationAction** 操作を使用すると、会話内のすべてのアイテムの読み取り状態を分類、移動、コピー、削除、および設定できます。 会話内の新しいメッセージに対してアクションを設定することもできます。 
   
 ## <a name="applyconversationaction-request-example"></a>ApplyConversationAction 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-**ApplyConversationAction**要求の次の例は、指定されたスレッド内のアイテムを別のフォルダーに移動する方法を示しています。 会話に追加されたアイテムも、指定したフォルダーに移動されます。 
+**ApplyConversationAction 要求** の次の例は、指定された会話内のアイテムを別のフォルダーに移動する方法を示しています。 スレッドに追加されたアイテムも、指定したフォルダーに移動されます。 
   
 ### <a name="code"></a>コード
 
@@ -59,13 +59,13 @@ ms.locfileid: "44463504"
 
 ### <a name="remarks"></a>注釈
 
-読みやすくするために、会話とフォルダーの識別子が短縮されています。
+会話とフォルダーの識別子は、読みやすさを維持するために短縮されました。
   
-## <a name="applyconversationaction-response-example"></a>ApplyConversationAction response の例
+## <a name="applyconversationaction-response-example"></a>ApplyConversationAction 応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **ApplyConversationAction**要求に対する正常な応答を示しています。 
+次の例は **、ApplyConversationAction** 要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -100,7 +100,7 @@ ms.locfileid: "44463504"
 ## <a name="see-also"></a>関連項目
 
 - [ApplyConversationAction 操作](applyconversationaction-operation.md)
-- [Exchange での EWS 操作](ews-operations-in-exchange.md)
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS 操作 (Exchange](ews-operations-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 - [EWS での会話](https://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
 

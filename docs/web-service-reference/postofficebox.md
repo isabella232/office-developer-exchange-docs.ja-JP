@@ -1,23 +1,23 @@
 ---
-title: Postofficebox が
+title: PostOfficeBox
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a3ab9bcf-7dab-44f0-9ab6-b06543c0fdc2
-description: Postofficebox が要素は、郵送先住所の私書箱部分を指定します。
-ms.openlocfilehash: dede39a7b053172157858686f8287466f982c4ab
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: PostOfficeBox 要素は、郵送先住所の post office boxportion を指定します。
+ms.openlocfilehash: 850b0bdb2c7b8fd167415cc2883c82e1aee37dab
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458027"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512605"
 ---
-# <a name="postofficebox"></a>Postofficebox が
+# <a name="postofficebox"></a>PostOfficeBox
 
-**Postofficebox が**要素は、郵送先住所の "私書箱" の部分を指定します。 
+**PostOfficeBox** 要素は、郵送先住所の "郵便ボックス" 部分を指定します。 
   
 ```XML
 <PostOfficeBox></PostOfficeBox>
@@ -38,11 +38,11 @@ ms.locfileid: "44458027"
   
 ### <a name="parent-elements"></a>親要素
 
-["Postaladdress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)  | [Value (PersonaPostalAddressType)](value-personapostaladdresstype.md)
+[PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)  | [Value (PersonaPostalAddressType)](value-personapostaladdresstype.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**Postofficebox が**要素のテキスト値は、私書箱のポストボックス識別子です。 
+**PostOfficeBox** 要素のテキスト値は、ポスト オフィス ボックス識別子です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44458027"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

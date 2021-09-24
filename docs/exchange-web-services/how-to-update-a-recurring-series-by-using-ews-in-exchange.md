@@ -3,15 +3,15 @@ title: Exchange で EWS を使用して定期的なアイテムを更新する
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c922072f-ce33-4bff-97b0-1c1d0f9b880d
 description: Exchange の EWS マネージ API または EWS を使用して、定期的なアイテム全体を一度に更新する方法を説明します。
-ms.openlocfilehash: 253bc7da176a954480db97e303393fecdda54892
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: a0018c8fa92baf7dc8b4117fa40bb87e9db843a9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527615"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513067"
 ---
 # <a name="update-a-recurring-series-by-using-ews-in-exchange"></a>Exchange で EWS を使用して定期的なアイテムを更新する
 
@@ -135,7 +135,7 @@ public static bool UpdateRecurringSeries(ExchangeService service, Appointment re
 
 ## <a name="modify-all-occurrences-in-a-series-by-using-ews"></a>EWS を使用して定期的なアイテム内のアイテムをすべて変更する
 
-定期的なアイテム内のアイテムをすべて変更するには、[UpdateItem 操作](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx)を使用し、要求の [ItemId](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) 要素に定期的マスターのアイテム ID を指定する必要があります。 要求の構造は、単一の予定を更新する要求と同じです。 
+定期的なアイテム内のアイテムをすべて変更するには、[UpdateItem 操作](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx)を使用し、要求の [ItemId](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) 要素に定期的マスターのアイテム ID を指定する必要があります。要求の構造は、単一の予定を更新する要求と同じです。 
   
 次の例では、定期的なアイテムが次のように更新されます。
   

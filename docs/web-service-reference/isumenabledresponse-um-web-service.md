@@ -1,28 +1,28 @@
 ---
-title: IsUMEnabledResponse (UM web サービス)
+title: IsUMEnabledResponse (UM Web サービス)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsUMEnabledResponse
 api_type:
 - schema
 ms.assetid: ecb47dd5-c888-47ab-a253-fc49765f5c72
-description: IsUMEnabledResponse 要素は、IsUMEnabled 操作 (UM web サービス) 要求に対する応答を定義します。
-ms.openlocfilehash: 5b9495faf93ee4b4cf7937e413ae560b60b8b402
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: IsUMEnabledResponse 要素は、IsUMEnabled 操作 (UM Web サービス) 要求への応答を定義します。
+ms.openlocfilehash: d79cf6faf1140e86dc18dd50d8e0789a0b2ffbcf
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458188"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59532633"
 ---
-# <a name="isumenabledresponse-um-web-service"></a>IsUMEnabledResponse (UM web サービス)
+# <a name="isumenabledresponse-um-web-service"></a>IsUMEnabledResponse (UM Web サービス)
 
-**IsUMEnabledResponse**要素は、 [ISUMENABLED 操作 (UM web サービス)](isumenabled-operation-um-web-service.md)要求に対する応答を定義します。 
+**IsUMEnabledResponse** 要素は [、IsUMEnabled 操作 (UM Web サービス)](isumenabled-operation-um-web-service.md)要求への応答を定義します。 
   
-[IsUMEnabledResponse (UM web サービス)](isumenabledresponse-um-web-service.md)
+[IsUMEnabledResponse (UM Web サービス)](isumenabledresponse-um-web-service.md)
   
 ```xml
 <IsUMEnabledResponse/>
@@ -47,7 +47,7 @@ ms.locfileid: "44458188"
   
 ## <a name="text-value"></a>テキスト値
 
-ブール型のテキスト値が必要です。 指定可能な値は次のいずれかです。
+ブール型 (Boolean) のテキスト値が必要です。 指定可能な値は次のいずれかです。
   
 - True
     
@@ -59,12 +59,12 @@ ms.locfileid: "44458188"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |スキーマ名  <br/> |メッセージ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[IsUMEnabled 操作 (UM web サービス)](isumenabled-operation-um-web-service.md)
+[IsUMEnabled 操作 (UM Web サービス)](isumenabled-operation-um-web-service.md)
 

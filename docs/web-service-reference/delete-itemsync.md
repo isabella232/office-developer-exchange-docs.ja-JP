@@ -1,33 +1,33 @@
 ---
-title: 削除 (ItemSync)
+title: Delete (ItemSync)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Delete
 api_type:
 - schema
 ms.assetid: 4f372d57-2e39-46af-9d83-6c8c55108587
-description: Delete 要素は、ローカルクライアントストアで削除する1つの項目を識別します。
-ms.openlocfilehash: 6e30ddc7f7248fe7ff7136e19ba58c7d5d8a800f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Delete 要素は、ローカル クライアント ストアで削除する 1 つのアイテムを識別します。
+ms.openlocfilehash: ae8a34506791a2b0e09aea4c7af40ffbba34d523
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44454681"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519864"
 ---
-# <a name="delete-itemsync"></a>削除 (ItemSync)
+# <a name="delete-itemsync"></a>Delete (ItemSync)
 
-**Delete**要素は、ローカルクライアントストアで削除する1つの項目を識別します。 
+**Delete 要素は**、ローカル クライアント ストアで削除する 1 つのアイテムを識別します。 
   
 - [SyncFolderItemsResponse](syncfolderitemsresponse.md)  
 - [ResponseMessages](responsemessages.md) 
 - [SyncFolderItemsResponseMessage](syncfolderitemsresponsemessage.md)  
-- [変更 (アイテム)](changes-items.md)  
-- [削除 (ItemSync)](delete-itemsync.md)
+- [Changes (Items)](changes-items.md)  
+- [Delete (ItemSync)](delete-itemsync.md)
   
 ```xml
 <Delete>
@@ -49,29 +49,29 @@ ms.locfileid: "44454681"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ItemId](itemid.md) <br/> |Exchange ストア内のアイテムの一意識別子および変更キーが含まれています。  <br/> |
+|[ItemId](itemid.md) <br/> |ストア内のアイテムの一意の識別子と変更キー Exchangeします。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[変更 (アイテム)](changes-items.md) <br/> |クライアント上のアイテムと Exchange サーバー上のアイテムの間の相違点の種類を表す、変更の種類のシーケンス配列を含みます。  <br/> |
+|[Changes (Items)](changes-items.md) <br/> |クライアント上のアイテムとクライアント サーバー上のアイテムの違いの種類を表す変更の種類のシーケンス配列をExchangeします。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [SyncFolderItems 操作](syncfolderitems-operation.md)
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

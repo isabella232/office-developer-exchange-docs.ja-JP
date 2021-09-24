@@ -1,23 +1,23 @@
 ---
-title: 個人の Atype
+title: PersonaType
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 81c157f0-16ae-4cd5-abf3-6aaf22ca8c70
-description: 個人用の Atype 要素は、ユーザーの種類 (人物、配布リストなど) を指定します。
-ms.openlocfilehash: 9b62d2b8f1545e84a5b726fec0085dd7c9c898f5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: PersonaType 要素は、人物や配布リストなど、ペルサの種類を指定します。
+ms.openlocfilehash: 8662da90bd0d0ab07bebf623fe4daa442a4d5b78
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457565"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539130"
 ---
-# <a name="personatype"></a>個人の Atype
+# <a name="personatype"></a>PersonaType
 
-**個人用の atype**要素は、ユーザーの種類 (人物、配布リストなど) を指定します。 
+**PersonaType** 要素は、人物や配布リストなど、ペルサの種類を指定します。 
   
 ```XML
 <PersonaType></PersonaType>
@@ -42,7 +42,7 @@ ms.locfileid: "44457565"
   
 ## <a name="text-value"></a>テキスト値
 
-**個人 atype**要素のテキスト値は、ペルソナの種類です。 
+**PersonaType** 要素のテキスト値は、ペルサの種類です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44457565"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

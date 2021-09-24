@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ebdf224d-3796-4179-aa0a-87942e7585ff
-description: EmailAddressAttributedValue 要素は、電子メールアドレスの配列のインスタンスと、それに関連付けられている attributions を指定します。
-ms.openlocfilehash: 09fdd5921cef3d70a6da4b6d4d38f08834c5d482
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: EmailAddressAttributedValue 要素は、電子メール アドレスの配列とその関連付けられた属性のインスタンスを指定します。
+ms.openlocfilehash: 2b5e9b431b6a62c63e815bfee190c923f454c867
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530692"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519766"
 ---
 # <a name="emailaddressattributedvalue"></a>EmailAddressAttributedValue
 
-**EmailAddressAttributedValue**要素は、電子メールアドレスの配列のインスタンスと、それに関連付けられている attributions を指定します。 
+**EmailAddressAttributedValue** 要素は、電子メール アドレスの配列とその関連付けられた属性のインスタンスを指定します。 
   
 ```XML
 <EmailAddressAttributedValue>
@@ -39,16 +39,16 @@ ms.locfileid: "44530692"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[値 (EmailAddressType)](value-emailaddresstype.md) <br/> |Attributions 配列に関連付けられている**EmailAddress**の値を指定します。  <br/> |
-|[Attributions (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md) <br/> |関連する**Value**要素の attributions の配列を指定します。  <br/> |
+|[Value (EmailAddressType)](value-emailaddresstype.md) <br/> |属性配列に関連付 **けられた EmailAddress** の値を指定します。  <br/> |
+|[Attributions (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md) <br/> |関連付けられた Value 要素の属性の配列を **指定** します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Emails1](emails1.md) <br/> |電子メール値の配列と、関連付けられているペルソナのソース attributions の識別子を指定します。  <br/> |
-|[Emails2](emails2.md) <br/> |電子メール値の配列と、関連付けられているペルソナのソース attributions の識別子を指定します。  <br/> |
-|[Emails3](emails3.md) <br/> |電子メール値の配列と、関連付けられているペルソナのソース attributions の識別子を指定します。  <br/> |
+|[Emails1](emails1.md) <br/> |電子メール値の配列と、関連付けられたペルサのソース属性の識別子を指定します。  <br/> |
+|[Emails2](emails2.md) <br/> |電子メール値の配列と、関連付けられたペルサのソース属性の識別子を指定します。  <br/> |
+|[Emails3](emails3.md) <br/> |電子メール値の配列と、関連付けられたペルサのソース属性の識別子を指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -62,12 +62,12 @@ ms.locfileid: "44530692"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

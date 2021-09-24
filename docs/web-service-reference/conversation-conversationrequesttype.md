@@ -1,23 +1,23 @@
 ---
-title: 会話 (ConversationRequestType)
+title: Conversation (ConversationRequestType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0308b71c-d4ff-44a8-b9ca-d5965291ee1d
-description: 会話要素は、GetConversationItems 応答で返される1つの会話を表します。
-ms.openlocfilehash: 925fd6fce83cad36f4a0e95bb6228ba65e4e9c43
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Conversation 要素は、GetConversationItems 応答で返される 1 つの会話を表します。
+ms.openlocfilehash: 9c7faf9c06c1476bca688e831f452e711a89f10f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466781"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59533894"
 ---
-# <a name="conversation-conversationrequesttype"></a>会話 (ConversationRequestType)
+# <a name="conversation-conversationrequesttype"></a>Conversation (ConversationRequestType)
 
-**会話**要素は、 **GetConversationItems**応答で返される1つの会話を表します。 
+**Conversation 要素** は **、GetConversationItems** 応答で返される 1 つの会話を表します。 
   
 ```XML
 <Conversation>
@@ -37,7 +37,7 @@ ms.locfileid: "44466781"
   
 ### <a name="child-elements"></a>子要素
 
-[ConversationId](conversationid.md)  | [Syncstate (base64Binary)](syncstate-base64binary.md)
+[ConversationId](conversationid.md)  | [SyncState (base64Binary)](syncstate-base64binary.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -54,8 +54,8 @@ ms.locfileid: "44466781"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

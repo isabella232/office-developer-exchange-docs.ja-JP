@@ -3,15 +3,15 @@ title: Exchange で EWS を使用して隠しフォルダーを操作する
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7ae7c045-cd90-4c9f-baf5-0464d5058f45
 description: Exchange で EWS マネージ API または EWS を使用して、フォルダーを非表示にしたり、隠しフォルダーを検索したりする方法について説明します。
-ms.openlocfilehash: d4fa44a0399542350668359e8abb88d2a0a9d579
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 722cc09aa62ae4201362c59f7d7d2b4988e25837
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456375"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513074"
 ---
 # <a name="work-with-hidden-folders-by-using-ews-in-exchange"></a>Exchange で EWS を使用して隠しフォルダーを操作する
 
@@ -85,7 +85,7 @@ private static void MakeHidden(FolderId folderId, ExchangeService service)
 </soap:Envelope>
 ```
 
-サーバーは、**GetFolder** 要求に [GetFolderResponse](https://msdn.microsoft.com/library/47abeec8-78dd-4297-8525-099174ec880d%28Office.15%29.aspx) メッセージで応答します。このメッセージには、フォルダーが正常に取得されたことを示す、値が **NoError** の [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx)要素が含まれます。 この応答には、[ExtendedProperty](https://msdn.microsoft.com/library/f9701409-b620-4afe-b9ee-4c1e95507af7%28Office.15%29.aspx) の [Value](https://msdn.microsoft.com/library/196278d4-5e77-4e0a-8af6-8ac065610510%28Office.15%29.aspx) も含まれます。 この例では、**Value** は **false** に設定されています。これは、フォルダーが現時点では非表示になっていないことを意味します。
+サーバーは、**GetFolder** 要求に [GetFolderResponse](https://msdn.microsoft.com/library/47abeec8-78dd-4297-8525-099174ec880d%28Office.15%29.aspx) メッセージで応答します。このメッセージには、フォルダーが正常に取得されたことを示す、**NoError** の [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 要素の値が含まれます。この応答には、[ExtendedProperty](https://msdn.microsoft.com/library/196278d4-5e77-4e0a-8af6-8ac065610510%28Office.15%29.aspx) の [Value](https://msdn.microsoft.com/library/f9701409-b620-4afe-b9ee-4c1e95507af7%28Office.15%29.aspx) も含まれます。この例では、**Value** は **false** に設定されています。これは、フォルダーが現時点で非表示になっていないことを意味します。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -126,9 +126,9 @@ private static void MakeHidden(FolderId folderId, ExchangeService service)
 </s:Envelope>
 ```
 
-**ExtendedProperty** の値を true に変更するには、[UpdateFolder](https://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx) 操作を使用します。 要素の **ExtendedProperty**、**ExtendedFieldURI**、**Value** を **PidTagAttributeHidden** 拡張プロパティに含め、**Value** 要素を **true** に設定してフォルダーを非表示にします。 
+**ExtendedProperty** の値を true に変更するには、[UpdateFolder](https://msdn.microsoft.com/library/3494c996-b834-4813-b1ca-d99642d8b4e7%28Office.15%29.aspx) 操作を使用します。**ExtendedProperty**、**ExtendedFieldURI**、**Value** 要素を **PidTagAttributeHidden** 拡張プロパティに含め、**Value** 要素を **true** に設定してフォルダーを非表示にします。  
   
-これは、フォルダーを更新して[隠しフォルダーにする](#bk_hideewsma)ため **Update** メソッドを使用する際に、EWS マネージ API が送信する XML 要求でもあります。
+これは、フォルダーを更新して [隠しフォルダーにする](#bk_hideewsma)ため **Update** メソッドを使用する際に、EWS マネージ API が送信する XML 要求でもあります。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -170,7 +170,7 @@ private static void MakeHidden(FolderId folderId, ExchangeService service)
 ## <a name="find-all-hidden-folders-by-using-the-ews-managed-api"></a>EWS マネージ API を使用してすべての隠しフォルダーを検索する
 <a name="bk_findhiddenewsma"> </a>
 
-親フォルダーにあるすべての隠しフォルダーは、**PidTagAttributeHidden** 拡張プロパティの[拡張プロパティの定義](properties-and-extended-properties-in-ews-in-exchange.md)を作成し、[FindFolders](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.findfolders%28v=exchg.80%29.aspx) メソッドを使用して **PidTagAttributeHidden** 値が **true** に設定されているフォルダーを検索することによって見つけることができます。 この例では、MsgFolderRoot (インフォメーション ストアの先頭または IPM サブツリーとも呼ばれる) が、検索する親フォルダーとして使用されます。
+親フォルダーにあるすべての隠しフォルダーは、**PidTagAttributeHidden** 拡張プロパティの [拡張プロパティの定義](properties-and-extended-properties-in-ews-in-exchange.md)を作成し、[FindFolders](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.findfolders%28v=exchg.80%29.aspx) メソッドを使用して **PidTagAttributeHidden** 値が **true** に設定されているフォルダーを検索することによって見つけることができます。 この例では、MsgFolderRoot (インフォメーション ストアの先頭または IPM サブツリーとも呼ばれる) が、検索する親フォルダーとして使用されます。
   
 この例では、**service** はメールボックス所有者の有効な [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーは Exchange サーバーから既に認証されていると想定しています。 
   

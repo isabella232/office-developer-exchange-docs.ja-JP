@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9d963e6c-e94d-462b-8c44-95d55c848fb2
 description: GetDiscoverySearchConfigurationResponse 要素は、GetDiscoverySearchConfiguration 要求への応答を指定します。
-ms.openlocfilehash: 98393943434b5e3460485b7d75c2b5285983f597
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 978d3a8a2081da3837b9e58f1efab3e9d6afccd5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460982"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512990"
 ---
 # <a name="getdiscoverysearchconfigurationresponse"></a>GetDiscoverySearchConfigurationResponse
 
-**GetDiscoverySearchConfigurationResponse**要素は、 **Getdiscoverysearchconfiguration**要求への応答を指定します。 
+**GetDiscoverySearchConfigurationResponse** 要素は **、GetDiscoverySearchConfiguration** 要求への応答を指定します。 
   
 ```XML
 <GetDiscoverySearchConfigurationResponse>
@@ -40,7 +40,7 @@ ms.locfileid: "44460982"
   
 ### <a name="child-elements"></a>子要素
 
-[Messagetext](messagetext.md)  | 応答[Secmode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [Discoverysearchconfigurations](discoverysearchconfigurations.md)
+[MessageText](messagetext.md)  | [ResponseCode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [DiscoverySearchConfigurations](discoverysearchconfigurations.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -57,8 +57,8 @@ ms.locfileid: "44460982"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 21761cb0-4514-4adb-a659-59a3f2f0a6e1
-description: HomeCitySortKey 要素は、自宅の市区町村の並べ替えキーを表します。
-ms.openlocfilehash: 8a6c96f7de8915259d1151fc4ddb9b6148a864b6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: HomeCitySortKey 要素は、ホーム都市の並べ替えキーを表します。
+ms.openlocfilehash: bbb5cd196f595a042e5b2f62f41511a05f3b7edb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460863"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519542"
 ---
 # <a name="homecitysortkey"></a>HomeCitySortKey
 
-**HomeCitySortKey**要素は、自宅の市区町村の並べ替えキーを表します。 
+**HomeCitySortKey 要素** は、ホーム都市の並べ替えキーを表します。 
   
 ```XML
 <HomeCitySortKey></HomeCitySortKey>
@@ -42,7 +42,7 @@ ms.locfileid: "44460863"
   
 ## <a name="text-value"></a>テキスト値
 
-**HomeCitySortKey**要素のテキスト値は、ペルソナの自宅の市区町村名の並べ替えキーです。 
+**HomeCitySortKey** 要素のテキスト値は、ペルシャのホーム 市区町の並べ替えキーです。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44460863"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - TimeZone
 api_type:
 - schema
 ms.assetid: d662ffae-1f93-4c08-85a4-c69de2f7c681
-description: TimeZone 要素には、タイムゾーン情報を識別する要素が含まれています。 この要素には、標準時から夏時間への切り替えに関する情報も含まれています。
-ms.openlocfilehash: ba4b0a4805dba54450e01e89c5e9ef746404b716
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: TimeZone 要素には、タイム ゾーン情報を識別する要素が含まれています。 この要素には、標準時と夏時間の切り替えに関する情報も含みます。
+ms.openlocfilehash: 7ca6f0f2d9950770055d19c04adab9b76b95c295
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460275"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538843"
 ---
 # <a name="timezone-availability"></a>TimeZone (Availability)
 
-**TimeZone**要素には、タイムゾーン情報を識別する要素が含まれています。 この要素には、標準時から夏時間への切り替えに関する情報も含まれています。 
+**TimeZone 要素には**、タイム ゾーン情報を識別する要素が含まれています。 この要素には、標準時と夏時間の切り替えに関する情報も含みます。 
   
 ```xml
 <TimeZone>
@@ -45,23 +45,23 @@ ms.locfileid: "44460275"
 |**Element**|**説明**|
 |:-----|:-----|
 |[Bias (UTC)](bias-utc.md) <br/> |協定世界時 (UTC) からの一般的なオフセットを表します。 この値は分単位です。  <br/> |
-|[StandardTime](standardtime.md) <br/> |[Bias (utc)](bias-utc.md)要素で表される utc を基準とした時間からのオフセットを表します。 この要素には、夏時間が計測される地域で夏時間から標準時への切り替えに関する情報も含まれます。  <br/> |
-|[DaylightTime](daylighttime.md) <br/> |夏時間が計測される地域で、 [Bias (utc)](bias-utc.md)要素によって表される utc を基準とした時刻からのオフセットを表します。 この要素には、標準時から夏時間への切り替えが行われるタイミングに関する情報も含まれています。  <br/> |
+|[StandardTime](standardtime.md) <br/> |Bias [(UTC)](bias-utc.md) 要素で表される UTC からの相対時間からのオフセットを表します。 この要素には、夏時間が観測される地域の夏時間からの標準時への移行に関する情報も含みます。  <br/> |
+|[DaylightTime](daylighttime.md) <br/> |夏時間が観測される地域の [Bias (UTC)](bias-utc.md) 要素で表される UTC からの相対時間からのオフセットを表します。 この要素には、標準時からの夏時間への移行がいつ行われるかについての情報も含みます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetUserAvailabilityRequest](getuseravailabilityrequest.md) <br/> |ユーザーの空き時間情報を取得するために使用する引数が含まれています。 これはルート要素です。  <br/> GetUserAvailabilityRequest message の**TimeZone**要素は、要求の DateTime 値が指定されているタイムゾーンを表します。 Availability service によって返される DateTime 値もこのタイムゾーンに含まれています。  <br/> この要素の XPath を次に示します。  <br/>  `/GetUserAvailabilityRequest` <br/> |
-|[WorkingHours](workinghours-ex15websvcsotherref.md) <br/> |要求されたメールボックスユーザーのタイムゾーン設定および稼働時間を表します。  <br/> GetUserAvailabilityResponse message の**TimeZone**要素は、要求されたメールボックスユーザーのタイムゾーン設定を表します。  <br/> この要素の XPath を次に示します。  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours` <br/> |
+|[GetUserAvailabilityRequest](getuseravailabilityrequest.md) <br/> |ユーザーの可用性情報を取得するために使用される引数を格納します。 これはルート要素です。  <br/> GetUserAvailabilityRequest メッセージの TimeZone 要素は、要求内の DateTime 値が指定されているタイム ゾーンを表します。  可用性サービスによって返される DateTime 値もこのタイム ゾーンに含まれます。  <br/> 次に、この要素の XPath を示します。  <br/>  `/GetUserAvailabilityRequest` <br/> |
+|[WorkingHours](workinghours-ex15websvcsotherref.md) <br/> |要求されたメールボックス ユーザーのタイム ゾーン設定と作業時間を表します。  <br/> GetUserAvailabilityResponse メッセージの TimeZone 要素は、要求されたメールボックス ユーザーのタイム ゾーン設定を表します。   <br/> 次に、この要素の XPath を示します。  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours` <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素は[GetUserAvailabilityRequest](getuseravailabilityrequest.md)要素で必要です。 この要素は、親要素が[WorkingHours](workinghours-ex15websvcsotherref.md)要素の数回または少なくとも0回発生します。 
+この要素は [、GetUserAvailabilityRequest 要素で必要](getuseravailabilityrequest.md) です。 この要素は、親要素が [WorkingHours](workinghours-ex15websvcsotherref.md) 要素である場合、少なくとも 1 回、または少なくとも 0 回発生します。 
   
 ## <a name="example"></a>例
 
-次の例は、クライアントアプリケーションで8時間の UTC からのオフセットを識別する XML 要求の一部を示しています。
+次の例は、クライアント アプリケーションの UTC 8 時間からのオフセットを識別する XML 要求の一部を示しています。
   
 ```XML
 <TimeZone xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
@@ -88,9 +88,9 @@ ms.locfileid: "44460275"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -101,5 +101,5 @@ ms.locfileid: "44460275"
 [バイアス](bias.md)
 
 
-[ユーザーの空き時間情報の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[ユーザーの可用性の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

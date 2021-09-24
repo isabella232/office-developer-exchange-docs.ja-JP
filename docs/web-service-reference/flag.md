@@ -1,23 +1,23 @@
 ---
-title: フラグ
+title: Flag
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7b47bc74-a60d-4308-8674-5d52444a1753
-description: Flag 要素は、メールボックスアイテムのフラグを指定します。
-ms.openlocfilehash: 7229a26181ee9baf80be5c32c0ef99483310ccb3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Flag 要素は、メールボックス アイテムのフラグを指定します。
+ms.openlocfilehash: dffc550dc4235c2121b6641f3a6eac30594f75b3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466263"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513697"
 ---
-# <a name="flag"></a>フラグ
+# <a name="flag"></a>Flag
 
-**Flag**要素は、メールボックスアイテムのフラグを指定します。 
+**Flag 要素** は、メールボックス アイテムのフラグを指定します。 
   
 ```XML
 <Flag>
@@ -41,17 +41,17 @@ ms.locfileid: "44466263"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[FlagStatus](flagstatus.md) <br/> |現在のフォルダー内のアイテムの集計フラグの状態を含みます。  <br/> |
+|[FlagStatus](flagstatus.md) <br/> |現在のフォルダー内のアイテムの集計フラグの状態を格納します。  <br/> |
 |[StartDate](startdate.md) <br/> |アイテムの開始日を表します。  <br/> |
-|[DueDate](duedate.md) <br/> |アイテムの期限の日付を表します。  <br/> |
+|[DueDate](duedate.md) <br/> |アイテムの期限が設定されている日付を表します。  <br/> |
 |[CompleteDate](completedate.md) <br/> |アイテムが完了した日付を表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ConversationAction](conversationaction.md) <br/> |単一の会話に適用される1つのアクションが含まれます。  <br/> |
-|[Item](item.md) <br/> |Exchange ストア内の汎用アイテムを表します。  <br/> |
+|[ConversationAction](conversationaction.md) <br/> |1 つの会話に適用する 1 つのアクションが含まれる。  <br/> |
+|[項目](item.md) <br/> |ストア内の汎用アイテムをExchangeします。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -65,12 +65,12 @@ ms.locfileid: "44466263"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

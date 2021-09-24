@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - agentExecution
 api_type:
 - schema
 ms.assetid: 600c4690-941c-45af-a906-5528748d09cd
-description: '最終更新日: 2015 年9月17日'
-ms.openlocfilehash: 457257e59fb37659daf2f91b0fa5dfced5c48c03
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: '最終更新日: 2015 年 9 月 17 日'
+ms.openlocfilehash: 04a53e2698c66326943bcd083c775b53f5c6d5d5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44446491"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513060"
 ---
 # <a name="agentexecution"></a>agentExecution
   
@@ -26,7 +26,7 @@ ms.locfileid: "44446491"
 **agentExecution** 要素では、クライアント アクセス サーバーまたはメールボックス サーバーがエージェントのイベントからの復帰を待機する時間をミリ秒単位で定義します。この時間を過ぎるとイベント ログへの書き込みが行われます。 
   
 - [構成](configuration.md)  
-- [管理](monitoring.md)
+- [監視](monitoring.md)
 - [agentExecution](agentexecution.md)
   
 ```XML
@@ -53,14 +53,14 @@ ms.locfileid: "44446491"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[管理](monitoring.md) <br/> |インストールされているエージェントをフロント エンド トランスポート サービスまたはトランスポート サービスが監視する方法とタイミングを定義する構成情報を格納します。  <br/> |
+|[監視](monitoring.md) <br/> |インストールされているエージェントをフロント エンド トランスポート サービスまたはトランスポート サービスが監視する方法とタイミングを定義する構成情報を格納します。  <br/> |
    
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |このファイルには名前空間が定義されていません。  <br/> |
-|スキーマ名  <br/> |注意事項なし。  <br/> |
+|スキーマ名  <br/> |該当なし。  <br/> |
 |検証ファイル  <br/> |該当なし。  <br/> |
 |空に設定可能  <br/> |不正解。  <br/> |
    

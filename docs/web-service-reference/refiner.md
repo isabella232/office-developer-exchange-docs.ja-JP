@@ -1,23 +1,23 @@
 ---
-title: 絞り込み条件
+title: Refiner
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8395b45f-3b94-4473-82ac-2a12c4309170
-description: 絞り込み条件要素は、検索絞り込み条件を指定します。
-ms.openlocfilehash: 5be73cfd0a5005f79651e9de76fd5aaf18ba0119
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Refiner 要素は、検索絞り込み条件を指定します。
+ms.openlocfilehash: 4338a3aa1c7551663b657cd082b159c9e81935be
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456755"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512539"
 ---
-# <a name="refiner"></a>絞り込み条件
+# <a name="refiner"></a>Refiner
 
-**絞り込み条件**要素は、検索絞り込み条件を指定します。 
+**Refiner 要素は**、検索絞り込み条件を指定します。 
   
 ```XML
 <Refiner>
@@ -39,7 +39,7 @@ ms.locfileid: "44456755"
   
 ### <a name="child-elements"></a>子要素
 
-[Name (string)](name-string.md)  | [値](value.md)  | [Count](count.md)  | [Token (String)](token-string.md)
+[名前 (文字列)](name-string.md)  | [値](value.md)  | [Count](count.md)  | [トークン (文字列)](token-string.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -56,8 +56,8 @@ ms.locfileid: "44456755"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

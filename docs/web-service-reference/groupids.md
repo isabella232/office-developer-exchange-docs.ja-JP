@@ -1,23 +1,23 @@
 ---
-title: Groupid
+title: GroupIds
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4d32cb3b-eb84-4816-89cd-26dcf5131bc8
-description: GroupIds 要素は、インスタントメッセージンググループ識別子の配列を識別します。
-ms.openlocfilehash: 7583a197413063289739f0f32d9410047fc2f23d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GroupIds 要素は、インスタント メッセージング グループ識別子の配列を識別します。
+ms.openlocfilehash: 102486512e9827688e4a70b9e02e0f1a4f6c2e98
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530086"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519563"
 ---
-# <a name="groupids"></a>Groupid
+# <a name="groupids"></a>GroupIds
 
-**Groupids**要素は、インスタントメッセージンググループ識別子の配列を識別します。 
+**GroupIds 要素** は、インスタント メッセージング グループ識別子の配列を識別します。 
   
 ```XML
 <GroupIds>
@@ -28,7 +28,7 @@ ms.locfileid: "44530086"
 </GroupIds>
 ```
 
- **非 Emptyarrayofbaseitemidstype**
+ **NonEmptyArrayOfBaseItemIdsType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -56,8 +56,8 @@ ms.locfileid: "44530086"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

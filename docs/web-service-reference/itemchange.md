@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ItemChange
 api_type:
 - schema
 ms.assetid: 5cb43b02-d444-4d9c-9075-cdc5a4427daf
-description: ItemChange 要素には、アイテムの識別子と、アイテムに適用する更新が含まれています。
-ms.openlocfilehash: 916ef1ba2c7a709ec1fd80ababd72999506773c4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ItemChange 要素には、アイテム識別子とアイテムに適用する更新プログラムが含まれています。
+ms.openlocfilehash: 8ace3cf78eb902e48529a0534e39ce7d584bd164
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459918"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59537750"
 ---
 # <a name="itemchange"></a>ItemChange
 
-**Itemchange**要素には、アイテムの識別子と、アイテムに適用する更新が含まれています。 
+**ItemChange 要素** には、アイテム識別子とアイテムに適用する更新プログラムが含まれています。 
   
 - [UpdateItem](updateitem.md) 
 - [ItemChanges](itemchanges.md)
@@ -62,31 +62,31 @@ ms.locfileid: "44459918"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ItemId](itemid.md) <br/> |Exchange ストア内のアイテムの一意識別子および変更キーが含まれています。 この要素は、 [OccurrenceItemId](occurrenceitemid.md)または[RecurringMasterItemId](recurringmasteritemid.md)要素が使用されていない場合に必要です。  <br/> |
-|[OccurrenceItemId](occurrenceitemid.md) <br/> |定期的なアイテムの1回の出現を識別します。 この要素は、使用する場合は必須です。 この要素は、 [RecurringMasterItemId](recurringmasteritemid.md)または[ItemId](itemid.md)要素が使用されていない場合に必要です。  <br/> |
-|[RecurringMasterItemId](recurringmasteritemid.md) <br/> |関連するオカレンスアイテムの識別子の1つを識別することによって、定期的なアイテムのマスターアイテムを識別します。 この要素は、使用する場合は必須です。 この要素は、 [OccurrenceItemId](occurrenceitemid.md)または[ItemId](itemid.md)要素が使用されていない場合に必要です。  <br/> |
-|[Updates (Item)](updates-item.md) <br/> |アイテムのプロパティに対する追加、設定、および削除の変更を定義する配列を格納します。 この要素は必須です。  <br/> |
+|[ItemId](itemid.md) <br/> |ストア内のアイテムの一意の識別子と変更キー Exchangeします。 この要素は [、OccurrenceItemId](occurrenceitemid.md) または [RecurringMasterItemId](recurringmasteritemid.md) 要素が使用されていない場合に必要です。  <br/> |
+|[OccurrenceItemId](occurrenceitemid.md) <br/> |定期的なアイテムの 1 回の出現を識別します。 この要素は、使用する場合に必要です。 この要素は [、RecurringMasterItemId](recurringmasteritemid.md) または [ItemId](itemid.md) 要素が使用されない場合に必要です。  <br/> |
+|[RecurringMasterItemId](recurringmasteritemid.md) <br/> |関連するアイテムの識別子の 1 つを識別して、定期的なマスター アイテムを識別します。 この要素は、使用する場合に必要です。 この要素は [、OccurrenceItemId](occurrenceitemid.md) または [ItemId](itemid.md) 要素が使用されない場合に必要です。  <br/> |
+|[Updates (Item)](updates-item.md) <br/> |アイテムプロパティの追加、設定、および削除の変更を定義する配列を含みます。 この要素は必須です。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ItemChanges](itemchanges.md) <br/> |アイテムとアイテムに適用する更新を識別する[Itemchange](itemchange.md)要素の配列が含まれています。  <br/> この要素の XPath 式を次に示します。  <br/>  `/UpdateItem/ItemChanges` <br/> |
+|[ItemChanges](itemchanges.md) <br/> |アイテムとアイテムに適用する更新プログラムを識別する [ItemChange](itemchange.md) 要素の配列を格納します。  <br/> 次に、この要素の XPath 式を示します。  <br/>  `/UpdateItem/ItemChanges` <br/> |
    
 ## <a name="remarks"></a>注釈
 
-**Itemchange**要素に使用できる[ItemId](itemid.md)、 [OccurrenceItemId](occurrenceitemid.md)、または[RecurringMasterItemId](recurringmasteritemid.md)要素は1つだけです。 
+ItemChange 要素で使用できるのは、単一の[ItemId、OccurrenceItemId、](occurrenceitemid.md)または[](itemid.md)[RecurringMasterItemId](recurringmasteritemid.md)要素のみです。  
   
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

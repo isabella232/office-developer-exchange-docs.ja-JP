@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetItem
 api_type:
 - schema
 ms.assetid: 6b96dace-1260-4b83-869a-7c31c5583daa
-description: GetItem 操作は、Exchange ストアから連絡先アイテムを取得するために使用されます。
-ms.openlocfilehash: 93e8dbe28e130ab64d4b8d12d2befde1f77ae8fa
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetItem 操作は、ユーザー ストアから連絡先アイテムを取得Exchangeされます。
+ms.openlocfilehash: 1a055791f1b6dd5085ae914c1f7b2ae7e97d6090
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460023"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520536"
 ---
 # <a name="getitem-operation-contact"></a>GetItem 操作 (連絡先)
 
-GetItem 操作は、Exchange ストアから連絡先アイテムを取得するために使用されます。
+GetItem 操作は、ユーザー ストアから連絡先アイテムを取得Exchangeされます。
   
 ## <a name="getitem-contact-request-example"></a>GetItem (連絡先) 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、Exchange ストアからアイテムを取得する方法を示しています。
+次の例は、ストアからアイテムを取得するExchangeします。
   
 ### <a name="code"></a>コード
 
@@ -51,12 +51,12 @@ GetItem 操作は、Exchange ストアから連絡先アイテムを取得する
 
 ### <a name="comments"></a>コメント
 
-Exchange ストアからアイテムを取得する要求では、すべてのアイテムの種類に対して同じ形式が使用されます。 さまざまなアイテムが応答図形に基づいて異なる情報を返すため、さまざまなアイテムに対する要求に対する応答は異なります。
+ストアからアイテムを取得する要求Exchangeすべてのアイテムの種類に対して同じフォームを受け取る。 異なるアイテムに対する要求に対する応答は、応答図形に基づいて異なる情報を返すので異なります。
   
 > [!NOTE]
-> アイテム識別子は読みやすくするために短縮されています。 
+> アイテム識別子は、読みやすさを維持するために短縮されました。 
   
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 要求では、次の要素が使用されます。
   
@@ -70,11 +70,11 @@ Exchange ストアからアイテムを取得する要求では、すべての�
     
 - [ItemId](itemid.md)
     
-## <a name="successful-getitem-contact-response"></a>成功した GetItem (連絡先) 応答
+## <a name="successful-getitem-contact-response"></a>GetItem (連絡先) 応答の成功
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次のコード例では、**すべての Allproperties**[baseshape](baseshape.md)に対して、成功した GetItem 応答を示します。
+次のコード例は **、AllProperties BaseShape** に対する GetItem 応答の成功 [を示しています](baseshape.md)。
   
 ### <a name="code"></a>コード
 
@@ -153,11 +153,11 @@ Exchange ストアからアイテムを取得する要求では、すべての�
 
 ### <a name="comments"></a>コメント
 
-アイテム識別子は読みやすくするために短縮されています。
+アイテム識別子は、読みやすさを維持するために短縮されました。
   
 ### <a name="successful-response-elements"></a>成功した応答要素
 
-次の要素は、[連絡先] アイテムの**Allproperties**の応答図形を使用して、GetItem 要求の応答で使用されます。 
+次の要素は、連絡先アイテムの応答図形が **AllProperties** の GetItem 要求の応答で使用されます。 
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -185,7 +185,7 @@ Exchange ストアからアイテムを取得する要求では、すべての�
     
 - [DateTimeReceived](datetimereceived.md)
     
-- [Size](size.md)
+- [サイズ](size.md)
     
 - [Importance](importance.md)
     
@@ -211,7 +211,7 @@ Exchange ストアからアイテムを取得する要求では、すべての�
     
 - [FileAsMapping](fileasmapping.md)
     
-- [DisplayName (文字列)](displayname-string.md)
+- [DisplayName (string)](displayname-string.md)
     
 - [GivenName](givenname.md)
     
@@ -235,7 +235,7 @@ Exchange ストアからアイテムを取得する要求では、すべての�
     
 - [Entry (PhysicalAddress)](entry-physicaladdress.md)
     
-- [所在](street.md)
+- [Street](street.md)
     
 - [市区町村](city.md)
     
@@ -251,9 +251,9 @@ Exchange ストアからアイテムを取得する要求では、すべての�
     
 - [姓](surname.md)
     
-## <a name="invalid-getitem-contact-request-example"></a>無効な GetItem (Contact) 要求の例
+## <a name="invalid-getitem-contact-request-example"></a>無効な GetItem (連絡先) 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
 次のコード例は、無効な要求を示しています。
   
@@ -280,13 +280,13 @@ Exchange ストアからアイテムを取得する要求では、すべての�
 
 ### <a name="comments"></a>コメント
 
-読みやすくするために、アイテム識別子が短縮されています。
+アイテム識別子は、読みやすさを維持するために短縮されました。
   
 ## <a name="getitem-contact-error-response"></a>GetItem (連絡先) エラー応答
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次のコード例は、GetItem (連絡先) 要求に対するエラー応答を示しています。
+次のコード例は、GetItem (Contact) 要求に対するエラー応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -343,5 +343,5 @@ Exchange ストアからアイテムを取得する要求では、すべての�
 [GetItem 操作](getitem-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

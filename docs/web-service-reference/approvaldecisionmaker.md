@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 12e055c3-e7a4-4dbc-8385-bbf69571a0ce
 description: ApprovalDecisionMaker 要素は、承認の決定を行ったユーザーの表示名を指定します。
-ms.openlocfilehash: d64b9d1816d4df99093ef4d60610e9946f3f98ec
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: e81bd3bd10febde73ebae50ec6b3c15413c31c86
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461647"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520060"
 ---
 # <a name="approvaldecisionmaker"></a>ApprovalDecisionMaker
 
-**ApprovalDecisionMaker**要素は、承認の決定を行ったユーザーの表示名を指定します。 
+**ApprovalDecisionMaker** 要素は、承認の決定を行ったユーザーの表示名を指定します。 
   
 ```XML
 <ApprovalDecisionMaker />
@@ -42,7 +42,7 @@ ms.locfileid: "44461647"
   
 ## <a name="text-value"></a>テキスト値
 
-**ApprovalDecisionMaker**要素のテキスト値は、表示名です。 
+**ApprovalDecisionMaker 要素のテキスト値** は表示名です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,12 +55,12 @@ ms.locfileid: "44461647"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [ApprovalRequestData](approvalrequestdata.md)
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

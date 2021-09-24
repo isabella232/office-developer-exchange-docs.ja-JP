@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3b1bc531-6988-41c3-9aad-3f5ad5b732a9
-description: State 要素には、サイトメールボックスに設定されているライフサイクル状態が含まれます。
-ms.openlocfilehash: 597946b48649d997f8dd57823b4e0fcc091a6f84
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: State 要素には、サイト メールボックスに設定されているライフサイクル状態が含まれる。
+ms.openlocfilehash: 5189ee8573fd33d2265fd60c47bb40d17b16b8fe
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465164"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538969"
 ---
 # <a name="state-teammailboxlifecyclestatetype"></a>State (TeamMailboxLifecycleStateType)
 
-**State**要素には、サイトメールボックスに設定されているライフサイクル状態が含まれます。 
+**State 要素** には、サイト メールボックスに設定されているライフサイクル状態が含まれる。 
   
 ```XML
 <State> Active | Closed | Unlinked | PendingDelete </State>
@@ -43,7 +43,7 @@ ms.locfileid: "44465164"
   
 ## <a name="text-value"></a>テキスト値
 
-**State**要素のテキスト値は、サイトメールボックスに設定されているライフサイクル状態です。 **Active**のテキスト値は、サイトメールボックスがアクティブに使用されていることを示します。 テキスト値**closed**は、サイトメールボックスが閉じられていて、使用中ではないことを示します。 **リンク**のないテキスト値は、サイトメールボックスが web ベースのグループ作業環境にリンクされていないことを示します。 **アクティブ**、**クローズ**、および**PendingDelete**の値は相互に排他的ですが、**リンク**されていない値は他の値を相互排他的にすることはできません。 テキスト値の**PendingDelete**は、サイトメールボックスが削除を保留していることを示します。 サイトメールボックスは、 **PendingDelete**として設定する前に閉じる必要があります。
+State 要素のテキスト **値** は、サイト メールボックスに設定されているライフサイクル状態です。 Active のテキスト値 **は** 、サイト メールボックスがアクティブに使用されている状態を示します。 [閉じた] の **テキスト値** は、サイト メールボックスが閉じ、アクティブに使用されていない状態を示します。 [リンク解除] の **テキスト値は** 、サイト メールボックスが Web ベースのコラボレーション環境にリンクされていない状態を示します。  **Active、Closed、** および **PendingDelete** の値は相互に排他的ですが、リンクされていない値は他の値と相互に排他的ではありません。 **PendingDelete のテキスト値は**、サイト メールボックスが削除待ち状態を示します。 サイト メールボックスを PendingDelete として設定するには、その前に **サイト メールボックスを閉じる必要があります**。
   
 ## <a name="remarks"></a>注釈
 
@@ -56,8 +56,8 @@ ms.locfileid: "44465164"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

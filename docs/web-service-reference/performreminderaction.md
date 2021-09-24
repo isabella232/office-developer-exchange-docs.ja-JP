@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cee14262-7153-44da-bb42-b856e380c4d0
-description: PerformReminderAction 要素は、アラーム処理を実行するための要求を指定します。
-ms.openlocfilehash: 915b15d3fd0663eb554eb1543845f670a2ae0772
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: PerformReminderAction 要素は、アラーム アクションを実行する要求を指定します。
+ms.openlocfilehash: 800580fcfb60e03c88c67aed40593571d79e30b6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529001"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512918"
 ---
 # <a name="performreminderaction"></a>PerformReminderAction
 
-**PerformReminderAction**要素は、アラーム処理を実行するための要求を指定します。 
+**PerformReminderAction** 要素は、アラーム アクションを実行する要求を指定します。 
   
 ```XML
 <PerformReminderAction>
@@ -53,13 +53,13 @@ ms.locfileid: "44529001"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

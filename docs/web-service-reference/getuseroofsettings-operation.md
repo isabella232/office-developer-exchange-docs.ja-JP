@@ -5,45 +5,45 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetUserOofSettings
 api_type:
 - schema
 ms.assetid: 153e4440-495b-4972-9811-2fbea740142a
-description: GetUserOofSettings 操作は、メールボックスユーザーの不在時 (OOF) の設定とメッセージを取得します。
-ms.openlocfilehash: 622faa622b0ea231a6331ff62631885d4252c1f5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetUserOofSettings 操作は、メールボックス ユーザーの [無効] (OOF) Officeメッセージを取得します。
+ms.openlocfilehash: 9298681bff1cce5be37e8bee978ddeb0431bacdc
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457698"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59533411"
 ---
 # <a name="getuseroofsettings-operation"></a>GetUserOofSettings 操作
 
-**Getuseroofsettings**操作は、メールボックスユーザーの不在時 (OOF) の設定とメッセージを取得します。 
+**GetUserOofSettings** 操作は、メールボックス ユーザーの [無効] (OOF) Officeメッセージを取得します。 
   
 ## <a name="soap-headers"></a>SOAP ヘッダー
 
-**Getuseroofsettings**操作では、次の表に記載されている SOAP ヘッダーを使用できます。 
+**GetUserOofSettings** 操作では、次の表に示す SOAP ヘッダーを使用できます。 
   
-|**Header**|**要素**|**説明**|
+|**Header**|**Element**|**説明**|
 |:-----|:-----|:-----|
-|偽装  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。  <br/> |
+|偽装  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装しているユーザーを識別します。  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。  <br/> |
    
 ## <a name="using-the-getuseroofsettings-operation"></a>GetUserOofSettings 操作の使用
 
-**Getuseroofsettings**操作を使用すると、ユーザーの不在時の設定にアクセスできます。 ユーザーは、ユーザーの電子メールアドレスによって識別されます。 OOF メッセージが null で、OOF が有効になっている場合、不在時メッセージは送信されません。 
+**GetUserOofSettings** 操作では、ユーザーの OOF 設定にアクセスできます。 ユーザーは、ユーザーの電子メール アドレスによって識別されます。 OOF メッセージが null で、OOF が有効になっている場合、OOF メッセージは送信されません。 
   
 > [!IMPORTANT]
-> OOF メッセージが Microsoft office outlook によって設定されている場合、この操作は OOF メッセージを HTML 形式で返します。 
+> OOF メッセージが MicrosoftOfficeOutlook によって設定されている場合、この操作は OOF メッセージを HTML 形式で返します。 
   
 ## <a name="getuseroofsettings-request-example"></a>GetUserOofSettings 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、1人のユーザーの OOF 情報を取得する**Getuseroofsettings**要求を示しています。 
+次の例は、1 人のユーザーの OOF 情報を取得する **GetUserOofSettings** 要求を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -62,21 +62,21 @@ ms.locfileid: "44457698"
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 要求では、次の要素が使用されます。
   
 - [GetUserOofSettingsRequest](getuseroofsettingsrequest.md)
     
-- [メールボックス (可用性)](mailbox-availability.md)
+- [Mailbox (Availability)](mailbox-availability.md)
     
 - [Address (string)](address-string.md)
     
-## <a name="successful-getuseroofsettings-response-example"></a>Successful GetUserOofSettings response の例
+## <a name="successful-getuseroofsettings-response-example"></a>GetUserOofSettings 応答の成功例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、不在時のメッセージで無効になっている OOF 状態を示しています。
+次の使用例は、OOF メッセージを含む無効な OOF 状態を示しています。
   
 ### <a name="code"></a>コード
 
@@ -114,7 +114,7 @@ ms.locfileid: "44457698"
 </soap:Envelope>
 ```
 
-### <a name="successful-getuseroofsettings-response-elements"></a>Successful GetUserOofSettings response 要素
+### <a name="successful-getuseroofsettings-response-elements"></a>GetUserOofSettings 応答要素の成功
 
 応答では、次の要素が使用されます。
   
@@ -148,9 +148,9 @@ ms.locfileid: "44457698"
     
 ## <a name="getuseroofsettings-error-response-example"></a>GetUserOofSettings エラー応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、別のユーザーの OOF 情報にアクセスしようとした場合に発生するエラー応答を示しています。
+次の例は、別のユーザーの OOF 情報にアクセスしようとして発生したエラー応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -180,5 +180,5 @@ ms.locfileid: "44457698"
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

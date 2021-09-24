@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 409c7893-7b69-4b0b-9d5b-112a0dfacde7
-description: ErrorDescription 要素は、インデックスを作成できないアイテムについての情報で返されるエラーを示します。
-ms.openlocfilehash: d12e8b3dfc377097f649ef6f863bc59c1a59df9a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ErrorDescription 要素は、インデックスを作成できないアイテムに関する情報で返されるエラーについて説明します。
+ms.openlocfilehash: 22910f02bf31a85606ed2f68c3fadefa681b7691
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460072"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520655"
 ---
 # <a name="errordescription"></a>ErrorDescription
 
-**ErrorDescription**要素は、インデックスを作成できないアイテムについての情報で返されるエラーを示します。 
+**ErrorDescription 要素** は、インデックスを作成できないアイテムに関する情報で返されるエラーについて説明します。 
   
 ```XML
 <ErrorDescription></ErrorDescription>
@@ -42,7 +42,7 @@ ms.locfileid: "44460072"
   
 ## <a name="text-value"></a>テキスト値
 
-**ErrorDescription**要素のテキスト値には、アイテムレベルのエラーの説明が含まれています。 
+**ErrorDescription** 要素のテキスト値には、アイテム レベルのエラーの説明が含まれている。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44460072"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

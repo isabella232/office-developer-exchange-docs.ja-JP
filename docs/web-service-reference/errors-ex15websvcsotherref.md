@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Errors
 api_type:
 - schema
 ms.assetid: ea37a2b5-e2d1-4089-960f-7014b9535a50
-description: Errors 要素には、Web サービスによって返されるエラーを格納するためのプロパティバッグが含まれています。
-ms.openlocfilehash: a2f888a81791fe0b57eee6123c4b0f5f609f3e75
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Errors 要素には、Web サービスを介して返されるエラーを格納するプロパティ バッグが含まれています。
+ms.openlocfilehash: 9a5aba212aefbddbd2a85377e61449d2da408368
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465906"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520571"
 ---
 # <a name="errors"></a>エラー
 
-**Errors**要素には、Web サービスによって返されるエラーを格納するためのプロパティバッグが含まれています。 
+**Errors 要素** には、Web サービスを介して返されるエラーを格納するプロパティ バッグが含まれています。 
   
 [FindMessageTrackingReport](findmessagetrackingreport.md)
   
@@ -46,14 +46,14 @@ ms.locfileid: "44465906"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[プロパティ (ArrayOfTrackingPropertiesType)](properties-arrayoftrackingpropertiestype.md) <br/> |1つ以上の追跡プロパティの一覧が含まれています。  <br/> |
+|[Properties (ArrayOfTrackingPropertiesType)](properties-arrayoftrackingpropertiestype.md) <br/> |1 つ以上の追跡プロパティの一覧が含まれる。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) <br/> |単一の[Findmessagetrackingreport 操作](findmessagetrackingreport-operation.md)要求の状態と結果を格納します。  <br/> |
-|[GetMessageTrackingReportResponse](getmessagetrackingreportresponse.md) <br/> |1つの[Getmessagetrackingreport 操作](getmessagetrackingreport-operation.md)要求の結果が含まれています。  <br/> |
+|[FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) <br/> |1 つの [FindMessageTrackingReport](findmessagetrackingreport-operation.md) 操作要求の状態と結果を格納します。  <br/> |
+|[GetMessageTrackingReportResponse](getmessagetrackingreportresponse.md) <br/> |1 つの [GetMessageTrackingReport 操作要求の結果を格納](getmessagetrackingreport-operation.md) します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -61,16 +61,16 @@ ms.locfileid: "44465906"
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
+この要素を記述するスキーマは、Exchange Web Services をホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -81,5 +81,5 @@ ms.locfileid: "44465906"
 [GetMessageTrackingReport 操作](getmessagetrackingreport-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

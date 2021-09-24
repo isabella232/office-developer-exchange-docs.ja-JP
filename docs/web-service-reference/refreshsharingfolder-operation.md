@@ -5,38 +5,38 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - RefreshSharingFolder
 api_type:
 - schema
 ms.assetid: 1b047e34-40f0-459f-ac9e-e9f8e7349479
-description: RefreshSharingFolder 操作は、指定されたローカルフォルダーを、共有されているフォルダーの最新のデータで更新します。
-ms.openlocfilehash: dd7136ae82353841db09497d23eabe450c1c8b13
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: RefreshSharingFolder 操作は、共有されているフォルダーの最新のデータを使用して、指定したローカル フォルダーを更新します。
+ms.openlocfilehash: 4bf30132d84c4288123c91247afa8bd13a05348c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456760"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512540"
 ---
 # <a name="refreshsharingfolder-operation"></a>RefreshSharingFolder 操作
 
-**Refreshsharingfolder**操作は、指定されたローカルフォルダーを、共有されているフォルダーの最新のデータで更新します。 
+**RefreshSharingFolder** 操作は、共有されているフォルダーの最新のデータを使用して、指定したローカル フォルダーを更新します。 
   
 ## <a name="soap-headers"></a>SOAP ヘッダー
 
-**Refreshsharingfolder**操作では、次の表に記載されている SOAP ヘッダーを使用できます。 
+**RefreshSharingFolder** 操作では、次の表に示す SOAP ヘッダーを使用できます。 
   
-|**Header**|**要素**|**説明**|
+|**Header**|**Element**|**説明**|
 |:-----|:-----|:-----|
-|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。  <br/> |
+|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマ バージョンを識別します。  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。  <br/> |
    
 ## <a name="refreshsharingfolder-request-example"></a>RefreshSharingFolder 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、共有されているフォルダーの最新データを使用して、指定したローカルフォルダーを更新する要求を形成する方法を示しています。 [SharingFolderId](sharingfolderid.md)要素は、更新するローカルフォルダーの識別子を指定します。 
+次の例は、共有するフォルダーの最新のデータを使用して、指定したローカル フォルダーを更新する要求を形成する方法を示しています。 [SharingFolderId](sharingfolderid.md)要素は、更新するローカル フォルダーの識別子を指定します。 
   
 ### <a name="code"></a>コード
 
@@ -58,7 +58,7 @@ ms.locfileid: "44456760"
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 要求では、次の要素が使用されます。
   
@@ -68,11 +68,11 @@ ms.locfileid: "44456760"
     
 - [SharingFolderId](sharingfolderid.md)
     
-## <a name="successful-refreshsharingfolder-response"></a>正常な RefreshSharingFolder 応答
+## <a name="successful-refreshsharingfolder-response"></a>RefreshSharingFolder 応答の成功
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **Refreshsharingfolder**要求に対する正常な応答を示しています。 
+次の例は **、RefreshSharingFolder 要求に対** する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -112,9 +112,9 @@ ms.locfileid: "44456760"
     
 ## <a name="refreshsharingfolder-error-response"></a>RefreshSharingFolder エラー応答
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **Refreshsharingfolder**要求に対するエラー応答を示しています。 この例では、指定したローカルフォルダーに対応するサブスクリプションが見つからなかったため、 **Refreshsharingfolder**要求が失敗しました。 
+次の例は **、RefreshSharingFolder 要求に対するエラー応答を示** しています。 この例では、指定したローカル フォルダーに対応するサブスクリプションが見つからなかったため **、RefreshSharingFolder** 要求が失敗しました。 
   
 ### <a name="code"></a>コード
 
@@ -176,7 +176,7 @@ ms.locfileid: "44456760"
 [RefreshSharingFolderResponseMessageType](https://msdn.microsoft.com/library/ExchangeWebServices.RefreshSharingFolderResponseMessageType.aspx)
 
 
-[Exchange での EWS 操作](ews-operations-in-exchange.md)
+[EWS 操作 (Exchange](ews-operations-in-exchange.md)
   
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

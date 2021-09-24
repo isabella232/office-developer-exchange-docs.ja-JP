@@ -3,15 +3,15 @@ title: Exchange においてバッチ処理で予定表アイテムを処理す�
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fb2952e2-cbfe-43ac-b746-f071faa7665c
 description: Exchange で EWS マネージ API または EWS を使用して、1 回の呼び出しで予定表アイテムの作成、取得、更新、または削除をバッチ処理する方法について説明します。
-ms.openlocfilehash: 10c5c28e4dda27c9ac9770088db122f0a8e8c101
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 1c4431ab86088d4a8a5d8e2e8378e392786fa8b5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527902"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513109"
 ---
 # <a name="process-calendar-items-in-batches-in-exchange"></a>Exchange においてバッチ処理で予定表アイテムを処理する
 

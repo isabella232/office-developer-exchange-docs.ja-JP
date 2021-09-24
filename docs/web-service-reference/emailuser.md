@@ -1,23 +1,23 @@
 ---
-title: Emailuser.displayname
+title: EmailUser
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: dc8133ff-c34e-4921-bb56-06e79aee0a8a
-description: Emailuser.displayname 要素は、電子メールの受信者を指定します。
-ms.openlocfilehash: c090106a536f4f40908d364cc3c9c43f6fe42beb
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: EmailUser 要素は、電子メール受信者を指定します。
+ms.openlocfilehash: d3c1657938f8b4b21123b2f7cb67252e31f3d7b2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456536"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538210"
 ---
-# <a name="emailuser"></a>Emailuser.displayname
+# <a name="emailuser"></a>EmailUser
 
-**Emailuser.displayname**要素は、電子メールの受信者を指定します。 
+**EmailUser 要素** は、電子メール受信者を指定します。 
   
 ```XML
 <EmailUser>
@@ -39,14 +39,14 @@ ms.locfileid: "44456536"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Name (string)](name-string.md) <br/> |検索絞り込み条件の名前またはキーまたはメールユーザーの名前を指定します。  <br/> |
-|[UserId (文字列)](userid-string.md) <br/> |電子メールユーザーのユーザー識別子を指定します。  <br/> |
+|[Name (文字列)](name-string.md) <br/> |検索絞り込み条件の名前またはキー、または電子メール ユーザーの名前を指定します。  <br/> |
+|[UserId (string)](userid-string.md) <br/> |電子メール ユーザーのユーザー識別子を指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Attendees](attendees.md) <br/> |会議への招待の受信者を指定します。  <br/> |
+|[出席者](attendees.md) <br/> |会議への招待の受信者を指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -60,12 +60,12 @@ ms.locfileid: "44456536"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

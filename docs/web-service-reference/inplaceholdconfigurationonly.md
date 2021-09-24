@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 921ecc73-b7e2-40a7-8458-68f18dd5a13b
-description: InPlaceHoldConfigurationOnly 要素は、インプレースホールド構成を含めるかどうかを指定します。
-ms.openlocfilehash: ca364ee7d8a9e2e4a608f8f6c4ca5851fa7d4b64
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: InPlaceHoldConfigurationOnly 要素は、インプレース保持構成を含めるかどうかを指定します。
+ms.openlocfilehash: 3b1f12bb2d021693b20c3a9013c889b1a8074e62
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466102"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59532927"
 ---
 # <a name="inplaceholdconfigurationonly"></a>InPlaceHoldConfigurationOnly
 
-**InPlaceHoldConfigurationOnly**要素は、インプレースホールド構成を含めるかどうかを指定します。 
+**InPlaceHoldConfigurationOnly** 要素は、インプレース保持構成を含めるかどうかを指定します。 
   
 ```XML
 <InPlaceHoldConfigurationOnly>true | false</InPlaceHoldConfigurationOnly>
@@ -42,7 +42,7 @@ ms.locfileid: "44466102"
   
 ## <a name="text-value"></a>テキスト値
 
-**InPlaceHoldConfigurationOnly**要素のテキスト値が**true**の場合は、インプレースホールド構成が含まれていることを示します。 値が**false**の場合は、インプレースホールド構成が含まれていないことを示します。 
+**InPlaceHoldConfigurationOnly** 要素のテキスト値 **true** は、インプレース保持構成が含まれているかどうかを示します。 false の **値は** 、インプレイス保持構成が含まれていないかどうかを示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44466102"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

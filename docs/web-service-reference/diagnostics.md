@@ -1,27 +1,27 @@
 ---
-title: ダン
+title: Diagnostics
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Diagnostics
 api_type:
 - schema
 ms.assetid: fecea440-970a-49da-9796-534ca470cbd6
-description: Diagnostics 要素は、データセンターでのレポートに使用されるタイミングとパフォーマンスに関する情報を提供します。
-ms.openlocfilehash: 9eb46ef7ceb877372aff9b029190af8c8d8115cd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Diagnostics 要素は、DataCenter でのレポートに使用されるタイミングとパフォーマンスの情報を提供します。
+ms.openlocfilehash: 203df6a3856dcf54e17ce403053deb8631fe14db
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467838"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519794"
 ---
-# <a name="diagnostics"></a>ダン
+# <a name="diagnostics"></a>Diagnostics
 
-**Diagnostics**要素は、データセンターでのレポートに使用されるタイミングとパフォーマンスに関する情報を提供します。 
+**Diagnostics 要素は**、DataCenter でのレポートに使用されるタイミングとパフォーマンスの情報を提供します。 
   
 ```XML
 <Diagnostics>
@@ -43,14 +43,14 @@ ms.locfileid: "44467838"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[String](string.md) <br/> |アイテム、連絡先、タスク、会話で使用される文字列が含まれています。  <br/> |
+|[String](string.md) <br/> |アイテム、連絡先、タスク、会話で使用される文字列が含まれます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) <br/> |単一の[Findmessagetrackingreport 操作](findmessagetrackingreport-operation.md)要求の状態と結果を格納します。  <br/> |
-|[GetMessageTrackingReportResponse](getmessagetrackingreportresponse.md) <br/> |[Getmessagetrackingreport 操作](getmessagetrackingreport-operation.md)に対する応答を格納します。  <br/> |
+|[FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) <br/> |1 つの [FindMessageTrackingReport](findmessagetrackingreport-operation.md) 操作要求の状態と結果を格納します。  <br/> |
+|[GetMessageTrackingReportResponse](getmessagetrackingreportresponse.md) <br/> |[GetMessageTrackingReport 操作の応答を格納します](getmessagetrackingreport-operation.md)。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -65,13 +65,13 @@ ms.locfileid: "44467838"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [FindMessageTrackingReport 操作](findmessagetrackingreport-operation.md)
 - [GetMessageTrackingReport 操作](getmessagetrackingreport-operation.md)
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

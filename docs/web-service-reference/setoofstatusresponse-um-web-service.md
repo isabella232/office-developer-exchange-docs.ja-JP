@@ -1,28 +1,28 @@
 ---
-title: SetOofStatusResponse (UM web サービス)
+title: SetOofStatusResponse (UM Web サービス)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SetOofStatusResponse
 api_type:
 - schema
 ms.assetid: 8985e353-8d5e-48f6-bf1e-9a5ceadd3ce4
-description: SetOofStatusResponse 要素は、SetOofStatus 操作 (UM web サービス) 要求への応答を定義します。
-ms.openlocfilehash: 2a1db932c2b801f81216f1af57272ca458ab29d3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SetOofStatusResponse 要素は、SetOofStatus 操作 (UM Web サービス) 要求への応答を定義します。
+ms.openlocfilehash: 3c550cf2408787ab3b5dfd4581f0ec3710f7760d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466788"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539074"
 ---
-# <a name="setoofstatusresponse-um-web-service"></a>SetOofStatusResponse (UM web サービス)
+# <a name="setoofstatusresponse-um-web-service"></a>SetOofStatusResponse (UM Web サービス)
 
-**Setoofstatusresponse**要素は、 [Setoofstatus 操作 (UM web サービス)](setoofstatus-operation-um-web-service.md)要求への応答を定義します。 
+**SetOofStatusResponse** 要素は [、SetOofStatus 操作 (UM Web サービス)](setoofstatus-operation-um-web-service.md)要求への応答を定義します。 
   
-[SetOofStatusResponse (UM web サービス)](setoofstatusresponse-um-web-service.md)
+[SetOofStatusResponse (UM Web サービス)](setoofstatusresponse-um-web-service.md)
   
 ```xml
 <SetOofStatusResponse />
@@ -55,12 +55,12 @@ ms.locfileid: "44466788"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |スキーマ名  <br/> |メッセージ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[SetOofStatus 操作 (UM web サービス)](setoofstatus-operation-um-web-service.md)
+[SetOofStatus 操作 (UM Web サービス)](setoofstatus-operation-um-web-service.md)
 

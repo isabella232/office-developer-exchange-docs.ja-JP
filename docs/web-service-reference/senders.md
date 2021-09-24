@@ -1,23 +1,23 @@
 ---
-title: '[Senders (送信者)]'
+title: 送信者
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 69d88bb1-397c-4fb8-bd2b-21cccc5bb35d
-description: '[送信者] 要素は、SMTP (Simple Mail Transfer Protocol) アドレスの配列を指定します。'
-ms.openlocfilehash: 125d448be53b2ae297cd1e7249a04da6eda5d960
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Senders 要素は、簡易メール転送プロトコル (SMTP) アドレスの配列を指定します。
+ms.openlocfilehash: 501b21446787fa5244c09dcea560b8c871ea60e0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530573"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59532141"
 ---
-# <a name="senders"></a>[Senders (送信者)]
+# <a name="senders"></a>送信者
 
-[**送信者**] 要素は、SMTP (Simple Mail Transfer Protocol) アドレスの配列を指定します。 
+**Senders 要素は**、簡易メール転送プロトコル (SMTP) アドレスの配列を指定します。 
   
 ```XML
 <Senders>
@@ -53,8 +53,8 @@ ms.locfileid: "44530573"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

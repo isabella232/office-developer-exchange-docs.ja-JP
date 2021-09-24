@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 53d86631-58b0-4cfd-8209-0ce65e259f16
 description: Value 要素は、BodyContentAttributedValue 要素の値を指定します。
-ms.openlocfilehash: 7846302f0c2b3bad37cc55de752ca775e63b644b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: eb7f749cd6cd5613128b7b6652dfca1c6219a513
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467607"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538486"
 ---
 # <a name="value-bodycontenttype"></a>Value (BodyContentType)
 
-**Value**要素は、 **BodyContentAttributedValue**要素の値を指定します。 
+**Value 要素** は **、BodyContentAttributedValue 要素の値を指定** します。 
   
 ```XML
 <Value>
@@ -38,7 +38,7 @@ ms.locfileid: "44467607"
   
 ### <a name="child-elements"></a>子要素
 
-[値](value.md)  | [Bodytype](bodytype.md)
+[値](value.md)  | [BodyType](bodytype.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -55,8 +55,8 @@ ms.locfileid: "44467607"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

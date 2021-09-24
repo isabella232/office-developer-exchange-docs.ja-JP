@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 86f66275-1e39-48ed-bd89-ac3bffc465a7
 description: ContactId 要素は、連絡先を一意に識別します。
-ms.openlocfilehash: 17e8012283078d5d6e2cd1d2e88eef37b008be42
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 6b00d2f83c31905b5901a9d0dec2994c23fcb21d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463182"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59533901"
 ---
 # <a name="contactid"></a>ContactId
 
-**ContactId**要素は、連絡先を一意に識別します。 
+**ContactId 要素は**、連絡先を一意に識別します。 
   
 ```XML
 <ContactId Id="" ChangeKey=""/>
@@ -32,8 +32,8 @@ ms.locfileid: "44463182"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|ID  <br/> |**Id**属性のテキスト値は、連絡先アイテムの識別子です。  <br/> |
-|ChangeKey  <br/> |**Changekey**属性のテキスト値は、連絡先アイテムの変更キーです。  <br/> |
+|ID  <br/> |Id 属性のテキスト **値** は、連絡先アイテムの識別子です。  <br/> |
+|ChangeKey  <br/> |ChangeKey 属性の **テキスト値** は、連絡先アイテムの変更キーです。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -41,7 +41,7 @@ ms.locfileid: "44463182"
   
 ### <a name="parent-elements"></a>親要素
 
-[Addimcontacttogroup](addimcontacttogroup.md)  | [RemoveContactFromImList](removecontactfromimlist.md)  | [Removeimcontactfromgroup](removeimcontactfromgroup.md)
+[AddImContactToGroup](addimcontacttogroup.md)  | [RemoveContactFromImList](removecontactfromimlist.md)  | [RemoveImContactFromGroup](removeimcontactfromgroup.md)
   
 ## <a name="remarks"></a>注釈
 
@@ -54,8 +54,8 @@ ms.locfileid: "44463182"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

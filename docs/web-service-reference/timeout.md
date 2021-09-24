@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Timeout
 api_type:
 - schema
 ms.assetid: c2e1ca5a-6667-4f6f-aac4-89de33bddc54
-description: Timeout 要素は、クライアントからの GetEvents 要求なしに、サブスクリプションがアイドル状態のままになることができる期間 (分単位) を表します。
-ms.openlocfilehash: 6f3228cd480bf0eaf259c4f321bc74d0845b9bba
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Timeout 要素は、サブスクリプションがクライアントからの GetEvents 要求なしでアイドル状態を維持できる期間を分単位で表します。
+ms.openlocfilehash: d0b5945f5d116e0ebb7a24a23970e785761fb0c9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459897"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59534168"
 ---
 # <a name="timeout"></a>Timeout
 
-**Timeout**要素は、クライアントからの GetEvents 要求なしに、サブスクリプションがアイドル状態のままになることができる期間 (分単位) を表します。 
+**Timeout 要素** は、サブスクリプションがクライアントからの GetEvents 要求なしでアイドル状態を維持できる期間を分単位で表します。 
   
 ```xml
 <Timeout/>
@@ -44,26 +44,26 @@ ms.locfileid: "44459897"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[PullSubscriptionRequest](pullsubscriptionrequest.md) <br/> |プルベースのイベント通知サブスクリプションに対するサブスクリプションを表します。  <br/> |
+|[PullSubscriptionRequest](pullsubscriptionrequest.md) <br/> |プル ベースのイベント通知サブスクリプションのサブスクリプションを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-この要素を使用する場合は、整数を表すテキスト値が必要です。 この要素で使用できる値は、1 ~ 1440 の範囲です。 この要素は必須です。
+この要素を使用する場合は、整数を表すテキスト値が必要です。 この要素に使用できる値は、1 ~ 1440 です。含まれます。 この要素は必須です。
   
 ## <a name="remarks"></a>注釈
 
-サブスクリプションのタイムアウトタイマーは、GetEvents 要求が正常にリセットされます。
+サブスクリプションのタイムアウト タイマーは、成功した GetEvents 要求によってリセットされます。
   
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。 
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。 
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -1,27 +1,27 @@
 ---
-title: ドメイン (メッセージ追跡)
+title: Domain (メッセージ追跡)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Domain
 api_type:
 - schema
 ms.assetid: 4e8e9efa-8885-4ca5-bf90-424e63768dc3
-description: Domain 要素は、検索対象のドメインを表します。
-ms.openlocfilehash: 77da9028766881b9bc633e1b3318cd4d70c6b72f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Domain 要素は、検索するドメインを表します。
+ms.openlocfilehash: 9ba07f452a096b9dc982f6a6088cd16cbf41ec8d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457026"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520856"
 ---
-# <a name="domain-message-tracking"></a>ドメイン (メッセージ追跡)
+# <a name="domain-message-tracking"></a>Domain (メッセージ追跡)
 
-**Domain**要素は、検索対象のドメインを表します。 
+**Domain 要素** は、検索するドメインを表します。 
   
 ```XML
 <Domain/>
@@ -44,7 +44,7 @@ ms.locfileid: "44457026"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FindMessageTrackingReport](findmessagetrackingreport.md) <br/> |検索するメッセージの種類に関する条件を含みます。  <br/> |
+|[FindMessageTrackingReport](findmessagetrackingreport.md) <br/> |検索するメッセージの種類の条件が含まれます。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -59,11 +59,11 @@ ms.locfileid: "44457026"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

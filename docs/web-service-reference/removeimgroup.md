@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7121ba52-726f-48c1-9b32-8c8a4468d9f0
-description: RemoveImGroup 要素は、インスタントメッセージンググループを削除する要求を表します。
-ms.openlocfilehash: 08b13d5474b2da52f8a56a2c2ee4434462a17dbd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: RemoveImGroup 要素は、インスタント メッセージング グループを削除する要求を表します。
+ms.openlocfilehash: 95e9324c97717e03363fea10f0a8924d2326e150
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460016"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513382"
 ---
 # <a name="removeimgroup"></a>RemoveImGroup
 
-**Removeimgroup**要素は、インスタントメッセージンググループを削除する要求を表します。 
+**RemoveImGroup** 要素は、インスタント メッセージング グループを削除する要求を表します。 
   
 ```XML
 <RemoveImGroup>
@@ -53,8 +53,8 @@ ms.locfileid: "44460016"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

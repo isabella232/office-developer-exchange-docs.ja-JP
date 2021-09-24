@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f99e9590-8388-4203-ac30-1ea394f351a6
-description: BodyContentAttributedValue 要素は、アイテムの本文のコンテンツを指定します。
-ms.openlocfilehash: 3550d9307e9bd652afc217f72610379a0a5b2f68
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: BodyContentAttributedValue 要素は、アイテムの本文の内容を指定します。
+ms.openlocfilehash: 294bb0baf4915180a34701775a45e9dafbd99753
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527398"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520022"
 ---
 # <a name="bodycontentattributedvalue"></a>BodyContentAttributedValue
 
-**BodyContentAttributedValue**要素は、アイテムの本文のコンテンツを指定します。 
+**BodyContentAttributedValue** 要素は、アイテムの本文の内容を指定します。 
   
 ```XML
 <BodyContentAttributedValue>
@@ -39,14 +39,14 @@ ms.locfileid: "44527398"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Value (BodyContentType)](value-bodycontenttype.md) <br/> |**BodyContentAttributedValue**要素の値を指定します。  <br/> |
-|[Attributions (ArrayOfPersonaAttributionsType)](attributions-arrayofpersonaattributionstype.md) <br/> |関連付けられたペルソナに集約される1つ以上の連絡先または active directory 受信者の属性情報の配列を指定します。  <br/> |
+|[Value (BodyContentType)](value-bodycontenttype.md) <br/> |**BodyContentAttributedValue 要素の値を指定** します。  <br/> |
+|[Attributions (ArrayOfPersonaAttributionsType)](attributions-arrayofpersonaattributionstype.md) <br/> |関連付けられたペルサに集約された 1 つ以上の連絡先またはアクティブ ディレクトリ受信者の属性情報の配列を指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[本文](bodies.md) <br/> |**BodyContentAttributedValue**要素の配列を指定します。  <br/> |
+|[Bodies](bodies.md) <br/> |**BodyContentAttributedValue 要素の配列を指定** します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -60,12 +60,12 @@ ms.locfileid: "44527398"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

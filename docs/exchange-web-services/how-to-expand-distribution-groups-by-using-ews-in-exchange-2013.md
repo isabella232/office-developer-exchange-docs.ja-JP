@@ -3,15 +3,15 @@ title: Exchange 2013 の EWS を使用して配布グループを展開する
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 25ee84e7-63bc-4f51-9b7d-e7f46fd574d5
 description: Exchange で EWS マネージ API または EWS を使用して配布グループを展開する方法について説明します。
-ms.openlocfilehash: 2cbeb65b5a722bce4d5cab8fd716230874a6afca
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 6aeebbd14604295bce46049f0e383663414c01a0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528119"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513186"
 ---
 # <a name="expand-distribution-groups-by-using-ews-in-exchange-2013"></a>Exchange 2013 の EWS を使用して配布グループを展開する
 
@@ -104,7 +104,7 @@ private static void ExpandContactGroup(ExchangeService service, ItemId groupID)
 }
 ```
 
-これで、Exchange サービスのオブジェクトと連絡先グループの **ItemId** を使用してこの関数を呼び出すことができます。 この例の **ItemId** は、読みやすさのために短くしてあることに注意してください。 
+これで、Exchange サービスのオブジェクトと連絡先グループの **ItemId** を使用してこの関数を呼び出すことができますこの例の **ItemId** は、読みやすさのために短くしてあります。 
   
 ```cs
 ExpandContactGroup(service, new ItemId("AAMkADBlY…");
@@ -181,7 +181,7 @@ EWS マネージ API を使用する場合とは異なり、EWS を使用して�
 ## <a name="expand-a-contact-group-by-using-ews"></a>EWS を使用して連絡先グループを展開する
 <a name="bk_ExpandDGEWSMA"> </a>
 
-連絡先グループを展開するための XML 要求は、配布グループを展開するための要求に似ています。 メール アドレスの代わりに、連絡先グループの [ItemId](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) を使用します。 この例の **ItemId** は、読みやすさのために短くしてあります。 
+連絡先グループを展開するための XML 要求は、配布グループを展開するための要求に似ています。メール アドレスの代わりに、連絡先グループの [ItemId](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) を使用します。この例の **ItemId** は、読みやすさのために短くしてあります。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d3835800-8887-43db-9a8a-fe3cfea7a863
 description: FindMailboxStatisticsByKeywordsResponseMessage 要素は、FindMailboxStatisticsByKeywords 要求の応答メッセージを指定します。
-ms.openlocfilehash: 704eebbf82db2871ab36be8e5b30c88c6959baa5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: f41a44ebb90b59c7458162dffe445bbeba7c2ba0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44525977"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513718"
 ---
 # <a name="findmailboxstatisticsbykeywordsresponsemessage"></a>FindMailboxStatisticsByKeywordsResponseMessage
 
-**FindMailboxStatisticsByKeywordsResponseMessage**要素は、 **FindMailboxStatisticsByKeywords**要求の応答メッセージを指定します。 
+**FindMailboxStatisticsByKeywordsResponseMessage** 要素は **、FindMailboxStatisticsByKeywords** 要求の応答メッセージを指定します。 
   
 ```XML
 <FindMailboxStatisticsByKeywordsResponseMessage ResponseClass=" Success | Warning | Error ">
@@ -38,7 +38,7 @@ ms.locfileid: "44525977"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|ResponseClass  <br/> |Response クラスを指定します。  <br/> |
+|ResponseClass  <br/> |応答クラスを指定します。  <br/> |
    
 #### <a name="responseclass"></a>ResponseClass
 
@@ -53,10 +53,10 @@ ms.locfileid: "44525977"
 |**Element**|**説明**|
 |:-----|:-----|
 |[MailboxStatisticsSearchResult](mailboxstatisticssearchresult.md) <br/> |メールボックス検索の結果を指定します。  <br/> |
-|[MessageText](messagetext.md) <br/> |応答の状態を説明するテキストを提供します。  <br/> |
+|[MessageText](messagetext.md) <br/> |応答の状態のテキストの説明を提供します。  <br/> |
 |[ResponseCode](responsecode.md) <br/> |要求に関する状態情報を提供します。  <br/> |
-|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在未使用で、今後の使用のために予約されています。  <br/> |
-|[MessageXml](messagexml.md) <br/> |エラー応答に関する追加情報を提供します。  <br/> |
+|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在未使用で、将来の使用のために予約されています。  <br/> |
+|[MessageXml](messagexml.md) <br/> |追加のエラー応答情報を提供します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -75,13 +75,13 @@ ms.locfileid: "44525977"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

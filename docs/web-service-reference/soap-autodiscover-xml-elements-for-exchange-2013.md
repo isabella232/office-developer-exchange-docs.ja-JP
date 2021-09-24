@@ -1,40 +1,40 @@
 ---
-title: Exchange 2013 の SOAP 自動検出 XML 要素
+title: SOAP 自動検出 XML 要素 (2013 Exchange)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: ae18a5b3-ae44-4cff-8654-db8028565e01
-description: Exchange の SOAP 自動検出 web サービスの XML 要素参照情報を検索します。
-ms.openlocfilehash: 3b88429488dbecd4ed7c3adf56462f34fa0d4b17
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SOAP 自動検出 Web サービスの XML 要素参照情報は、次のExchange。
+ms.openlocfilehash: 5dcf4d6cd7a2b0b2987e59530dfbaae7b9993242
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465185"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539095"
 ---
-# <a name="soap-autodiscover-xml-elements-for-exchange-2013"></a>Exchange 2013 の SOAP 自動検出 XML 要素
+# <a name="soap-autodiscover-xml-elements-for-exchange-2013"></a>SOAP 自動検出 XML 要素 (2013 Exchange)
 
-Exchange の SOAP 自動検出 web サービスの XML 要素参照情報を検索します。
+SOAP 自動検出 Web サービスの XML 要素参照情報は、次のExchange。
   
-このセクションのドキュメントは、クライアントとサーバー間で送信される SOAP 自動検出 XML 要素のインスタンスに基づいています。 この XML インスタンスドキュメントは、SOAP 自動検出サービスをホストする仮想ディレクトリにある WSDL ファイルおよびスキーマファイルに基づいています。 認証されたユーザーは、次のいずれかのような URL を使用して、WSDL およびスキーマファイルを参照できます。
+このセクションのドキュメントは、クライアントとサーバーの間で送信される SOAP 自動検出 XML 要素インスタンスに基づいて作成されます。 この XML インスタンスのドキュメントは、SOAP 自動検出サービスをホストする仮想ディレクトリにある WSDL ファイルとスキーマ ファイルに基づいて作成されます。 認証されたユーザーは、次のいずれかの URL を使用して WSDL ファイルとスキーマ ファイルを参照できます。
   
-- WSDL ファイルの場所を指定し `http://<yourclientaccessserver>.com/autodiscover/services.wsdl` ます。`http://autodiscover.<yourclientaccessserver>.com/autodiscover/services.wsdl`
+- WSDL ファイルの場所: `http://<yourclientaccessserver>.com/autodiscover/services.wsdl` または `http://autodiscover.<yourclientaccessserver>.com/autodiscover/services.wsdl`
     
-- メッセージスキーマの場所を指定し `http://<yourclientaccessserver>.com/autodiscover/messages.xsd` ます。`http://autodiscover.<yourclientaccessserver>.com/autodiscover/messages.xsd` 
+- メッセージ スキーマの場所: `http://<yourclientaccessserver>.com/autodiscover/messages.xsd` または `http://autodiscover.<yourclientaccessserver>.com/autodiscover/messages.xsd` 
     
-SOAP 自動検出の WSDL ファイルおよびスキーマファイルの場所は、Exchange のインストールによって異なります。
+SOAP 自動検出 WSDL ファイルとスキーマ ファイルの場所は、インストールの種類によってExchangeされます。
   
-メッセージ .xsd スキーマファイルは、自動検出 SOAP ヘッダーと SOAP 本文で送信できる XML 要素について説明します。 このファイルは、特定の要求と応答メッセージの相互作用に対して XML 構造をどのように使用できるかについての一般的なロードマップを提供します。 クライアントとサーバー間で送信される実際の XML 構造は、オプションと使用されるコンテキストに基づいています。 スキーマファイルでは、可能な XML が定義されています。 ネットワーク上で送信される実際の XML の範囲は、呼び出された操作、要求された情報、およびサーバー側の設定に基づいています。 
+messages.xsd スキーマ ファイルは、自動検出 SOAP ヘッダーと SOAP 本文で送信できる XML 要素について説明します。 このファイルは、特定の要求と応答メッセージのやり取りに対して XML 構造が可能な一般的なロードマップを提供します。 クライアントとサーバーの間で送信される実際の XML 構造は、オプションと使用されるコンテキストに基づいて行います。 スキーマ ファイルは、可能な XML を定義します。 ワイヤーを使用して送信される XML の実際の範囲は、呼び出される操作、要求された情報、およびサーバー側の設定に基づいて行います。 
   
 ## <a name="related-sections"></a>関連情報
 
 - [Exchange 用 SOAP 自動検出 Web サービス リファレンス](soap-autodiscover-web-service-reference-for-exchange.md)    
 - [Exchange 用 EWS リファレンス](ews-reference-for-exchange.md)    
-- [Exchange 用ユニファイドメッセージング web サービスのリファレンス](unified-messaging-web-service-reference-for-exchange.md)
+- [ユニファイド メッセージング Web サービスの参照Exchange](unified-messaging-web-service-reference-for-exchange.md)
     
 ## <a name="see-also"></a>関連項目
 

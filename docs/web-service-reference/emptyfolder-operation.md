@@ -5,28 +5,28 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 98161486-e2f2-480f-8d5d-708ba81b208a
-description: EmptyFolder 操作は、メールボックス内のフォルダーを空にします。 必要に応じて、この操作を使用して、指定したフォルダーのサブフォルダーを削除することもできます。 サブフォルダーを削除すると、サブフォルダーとサブフォルダー内のメッセージは削除されます。
-ms.openlocfilehash: 1913db74d33f1e6750cd158df5870f257d0e7839
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: EmptyFolder 操作では、メールボックス内のフォルダーが空になります。 必要に応じて、この操作を使用すると、指定したフォルダーのサブフォルダーを削除できます。 サブフォルダーを削除すると、サブフォルダーとサブフォルダー内のメッセージが削除されます。
+ms.openlocfilehash: 8191dc7ecea7038a6d885f30d08fe561a59c4ed2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530685"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519668"
 ---
 # <a name="emptyfolder-operation"></a>EmptyFolder 操作
 
-**Emptyfolder**操作は、メールボックス内のフォルダーを空にします。 必要に応じて、この操作を使用して、指定したフォルダーのサブフォルダーを削除することもできます。 サブフォルダーを削除すると、サブフォルダーとサブフォルダー内のメッセージは削除されます。 
+**EmptyFolder 操作では**、メールボックス内のフォルダーが空になります。 必要に応じて、この操作を使用すると、指定したフォルダーのサブフォルダーを削除できます。 サブフォルダーを削除すると、サブフォルダーとサブフォルダー内のメッセージが削除されます。 
   
 ## <a name="emptyfolder-request-example"></a>EmptyFolder 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の**emptyfolder**要求の例は、フォルダーを空にする要求を形成する方法を示しています。 この例では、識別されたフォルダーのすべてのサブフォルダーを削除します。 
+次の **EmptyFolder 要求の例** は、フォルダーを空にする要求を形成する方法を示しています。 次の使用例は、識別されたフォルダーのすべてのサブフォルダーを削除します。 
   
 > [!NOTE]
-> [FolderId](folderid.md)要素の**Id**および**changekey**属性の値は、読みやすくするために短縮されています。 
+> [FolderId](folderid.md)要素 **の Id** 属性と **ChangeKey** 属性の値は、読みやすさのために短縮されています。 
   
 ### <a name="code"></a>コード
 
@@ -53,9 +53,9 @@ ms.locfileid: "44530685"
 
 この例では、フォルダーに対してハード削除を実行します。
   
-フォルダーは、 [FolderIds](folderids.md)要素で使用するために、 [DistinguishedFolderId](distinguishedfolderid.md)要素または[FolderId](folderid.md)要素のいずれかで識別できます。 
+フォルダーは[、FolderIds](folderids.md)要素で使用するために[、DistinguishedFolderId](distinguishedfolderid.md)要素または[FolderId](folderid.md)要素のいずれかによって識別できます。 
   
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 要求では、次の要素が使用されます。
   
@@ -65,11 +65,11 @@ ms.locfileid: "44530685"
     
 - [FolderId](folderid.md)
     
-## <a name="successful-emptyfolder-response"></a>正常な EmptyFolder 応答
+## <a name="successful-emptyfolder-response"></a>EmptyFolder 応答の成功
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **Emptyfolder**要求に対する正常な応答を示しています。 
+次の例は **、EmptyFolder** 要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -118,9 +118,9 @@ ms.locfileid: "44530685"
     
 ## <a name="emptyfolder-error-response"></a>EmptyFolder エラー応答
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **Emptyfolder**要求に対するエラー応答を示しています。 この操作では、Exchange ストアに見つからないフォルダーを空にしようとしたため、エラーが作成されました。 
+次の例は、Emptyfolder 要求に対する **エラー応答を示** しています。 エラーが作成されたのは、操作で、フォルダーストアに見つからなかったフォルダーをExchangeしました。 
   
 ### <a name="code"></a>コード
 
@@ -178,5 +178,5 @@ ms.locfileid: "44530685"
     
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

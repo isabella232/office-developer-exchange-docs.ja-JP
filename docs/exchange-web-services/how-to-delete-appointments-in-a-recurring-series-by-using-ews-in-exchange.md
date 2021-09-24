@@ -3,15 +3,15 @@ title: Exchange の EWS を使用して定期的なアイテム内の予定を�
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a9d5244a-bc4a-4e9c-9c6c-ff361e04cbf8
 description: EWS マネージ API または Exchange の EWS を使用して、定期的なアイテム内の予定を削除する方法について説明します。
-ms.openlocfilehash: 5646a30d218ed4d795044aefe5efea1399d19a79
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 8a68b6655c98f290d569a14dc0ac518c5d875cbe
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528126"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513193"
 ---
 # <a name="delete-appointments-in-a-recurring-series-by-using-ews-in-exchange"></a>Exchange の EWS を使用して定期的なアイテム内の予定を削除する
 
@@ -123,7 +123,7 @@ EWS を使用して定期的なアイテムを削除する操作は、[単独の
 > [!NOTE]
 > 次のコード例では、**ItemId**、**ChangeKey**、**RecurringMasterId** の各属性は読みやすくするために短縮されています。 
   
-この例では、[CreateItem 操作](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx)に、[CancelCalendarItem](https://msdn.microsoft.com/library/a2046402-a176-44d5-b4b3-adb696581935%28Office.15%29.aspx) 要素を設定して使用し、対象ユーザーが開催者となっている会議をキャンセルします。 [ReferenceItemId](https://msdn.microsoft.com/library/8fd4bb12-a94b-43f5-be3b-f435684e311d%28Office.15%29.aspx) 要素の値は、キャンセルするアイテムを示します。定期的マスターまたは単独の会議のどちらかのアイテム ID を指定できます。 
+この例では、[CreateItem 操作](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) に、[CancelCalendarItem](https://msdn.microsoft.com/library/a2046402-a176-44d5-b4b3-adb696581935%28Office.15%29.aspx) 要素を設定して使用し、対象ユーザーが開催者となっている会議をキャンセルします。[ReferenceItemId](https://msdn.microsoft.com/library/8fd4bb12-a94b-43f5-be3b-f435684e311d%28Office.15%29.aspx) 要素の値はキャンセルするアイテムを示します。定期的マスターまたは単独の会議のどちらかのアイテム ID を指定できます。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -150,7 +150,7 @@ EWS を使用して定期的なアイテムを削除する操作は、[単独の
 </soap:Envelope>
 ```
 
-この例では、**CreateItem 操作**に [DeclineItem](https://msdn.microsoft.com/library/2d8d2389-924e-4d03-a324-35d56cf0d6b1%28Office.15%29.aspx) 要素を指定して使用し、対象ユーザーが開催者ではない会議を辞退します。 前の例でのように、**ReferenceItemId** 要素の値は辞退するアイテムを示します。定期的マスターまたは単独の会議のどちらかのアイテム ID を指定できます。 
+この例では、**CreateItem operation** に [DeclineItem](https://msdn.microsoft.com/library/2d8d2389-924e-4d03-a324-35d56cf0d6b1%28Office.15%29.aspx) 要素を指定して使用し、対象ユーザーが開催者ではない会議を辞退します。前述の例のように、**ReferenceItemId** 要素の値は辞退するアイテムを示します。定期的マスターまたは単独の会議のどちらかのアイテム ID を指定できます。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -176,7 +176,7 @@ EWS を使用して定期的なアイテムを削除する操作は、[単独の
 </soap:Envelope>
 ```
 
-この例では、[DeleteItem 操作](https://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx)を使用して、出席者のいない単独の予定を削除します。 削除する対象は、[OccurrenceItemId](https://msdn.microsoft.com/library/4a15bbc3-5b93-4193-b9ec-da32f0a9a552%28Office.15%29.aspx) 要素で指定します。この要素は、定期的マスターのアイテム ID と、予定のインデックスで構成されます。 
+この例では、[DeleteItem 操作](https://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx) を使用して、出席者のいない単独の予定を削除します。削除する対象は、[OccurrenceItemId](https://msdn.microsoft.com/library/4a15bbc3-5b93-4193-b9ec-da32f0a9a552%28Office.15%29.aspx) 要素で指定します。この要素は、定期的マスターのアイテム ID と、予定のインデックスで構成されます。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

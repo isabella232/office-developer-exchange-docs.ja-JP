@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 962036c9-9b13-4669-bed2-2502c0f5aabe
-description: RequestedVersion 要素は、クライアントが要求を処理する必要のある最小サービスバージョンを指定します。
-ms.openlocfilehash: ded276b3eb2c70b6edd39ca12289098de2b3faea
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: RequestVersion 要素は、クライアントが要求を処理する最小サービス バージョンを指定します。
+ms.openlocfilehash: 390dee362bf2e6c2bdeac4e0e5564ecbd59b7319
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459168"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513333"
 ---
 # <a name="requestedversion-soap"></a>RequestedVersion (SOAP)
 
-**Requestedversion**要素は、クライアントが要求を処理する必要のある最小サービスバージョンを指定します。 
+**RequestVersion** 要素は、クライアントが要求を処理する最小サービス バージョンを指定します。 
   
 ```XML
 <RequestedVersion/>
@@ -41,16 +41,16 @@ ms.locfileid: "44459168"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[要求 (SOAP)](request-soap.md) <br/> |要求された構成設定と対象ユーザーが含まれます。  <br/> |
-|[Request (GetDomainSettings) (SOAP)](request-getdomainsettingssoap.md) <br/> |ドメイン設定を取得するための要求を表します。  <br/> |
+|[Request (SOAP)](request-soap.md) <br/> |要求された構成設定とターゲット ユーザーが含まれる。  <br/> |
+|[Request (GetDomainSettings) (SOAP)](request-getdomainsettingssoap.md) <br/> |ドメイン設定を取得する要求を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**Requestedversion**要素のテキスト値には、Exchange2010、Exchange2010_SP1、Exchange2010_SP2、または Exchange2013 を指定できます。
+RequestedVersion 要素の **テキスト値** は、Exchange2010、Exchange2010_SP1、Exchange2010_SP2、または Exchange2013 です。
   
 ## <a name="remarks"></a>注釈
 
-この要素が存在しない場合は、最新のサービスバージョンが使用されます。
+この要素が存在しない場合は、最新のサービス バージョンが使用されます。
   
 ## <a name="element-information"></a>要素の情報
 
@@ -58,8 +58,8 @@ ms.locfileid: "44459168"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - TimeZoneDefinitions
 api_type:
 - schema
 ms.assetid: 9ca1584e-65b8-49ba-a408-e3e8597e6607
-description: TimeZoneDefinitions 要素は、タイムゾーン定義の配列を表します。
-ms.openlocfilehash: 16a25eb4fdcad2554ebd19626d0a0bc7f6391ac5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: TimeZoneDefinitions 要素は、タイム ゾーン定義の配列を表します。
+ms.openlocfilehash: d7f4f660cfa1ba87795c3e7486577d3c1cbf420f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468762"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538801"
 ---
 # <a name="timezonedefinitions"></a>TimeZoneDefinitions
 
-**TimeZoneDefinitions**要素は、タイムゾーン定義の配列を表します。 
+**TimeZoneDefinitions 要素** は、タイム ゾーン定義の配列を表します。 
   
 ```XML
 <TimeZoneDefinitions>
@@ -42,13 +42,13 @@ ms.locfileid: "44468762"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[TimeZoneDefinition](timezonedefinition.md) <br/> |タイムゾーンを定義する期間と切り替えを指定します。  <br/> |
+|[TimeZoneDefinition](timezonedefinition.md) <br/> |タイム ゾーンを定義する期間と遷移を指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetServerTimeZonesResponseMessage](getservertimezonesresponsemessage.md) <br/> |[GetServerTimeZones 操作](getservertimezones-operation.md)要求の状態と結果を格納します。  <br/> |
+|[GetServerTimeZonesResponseMessage](getservertimezonesresponsemessage.md) <br/> |[GetServerTimeZones](getservertimezones-operation.md)操作要求の状態と結果を格納します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -59,13 +59,13 @@ ms.locfileid: "44468762"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

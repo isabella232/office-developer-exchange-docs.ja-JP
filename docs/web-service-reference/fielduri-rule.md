@@ -1,23 +1,23 @@
 ---
-title: FieldUri (ルール)
+title: FieldUri (Rule)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cecdea78-de9c-48be-ae31-03877feafeec
-description: FieldURI 要素は、検証エラーの原因となったルールフィールドへの URI を指定します。
-ms.openlocfilehash: 3d88efdf951af580f81b5e2e7a544dcdf70ea830
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: FieldURI 要素は、検証エラーの原因となるルール フィールドの URI を指定します。
+ms.openlocfilehash: c1390f6643614216fa86053368ba012cd0883ff7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461248"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513732"
 ---
-# <a name="fielduri-rule"></a>FieldUri (ルール)
+# <a name="fielduri-rule"></a>FieldUri (Rule)
 
-**FieldURI**要素は、検証エラーの原因となったルールフィールドへの URI を指定します。 
+**FieldURI 要素** は、検証エラーの原因となるルール フィールドの URI を指定します。 
   
 ```XML
 <FieldURI/>
@@ -40,11 +40,11 @@ ms.locfileid: "44461248"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Error](error.md) <br/> |特定のルールプロパティ値、述語プロパティ値、または action プロパティ値に対する1つの検証エラーを表します。  <br/> |
+|[エラー](error.md) <br/> |特定のルール プロパティ値、述語プロパティ値、またはアクション プロパティ値に対する 1 つの検証エラーを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-この要素のテキスト値は、次の文字列のいずれかに制限されています。
+この要素のテキスト値は、次のいずれかの文字列に制限されます。
   
 - RuleId
     
@@ -56,167 +56,167 @@ ms.locfileid: "44461248"
     
 - アクション
     
-- 条件: カテゴリ
+- Condition:Categories
     
-- 条件: 文字列
+- Condition:ContainsBodyStrings
     
-- 条件: ContainsHeaderStrings
+- Condition:ContainsHeaderStrings
     
-- 条件: 次の文字列を持つ
+- Condition:ContainsRecipientStrings
     
-- 条件: という文字列
+- Condition:ContainsSenderStrings
     
-- 条件: ContainsSubjectOrBodyStrings
+- Condition:ContainsSubjectOrBodyStrings
     
-- 条件: 大き Subjectstrings
+- Condition:ContainsSubjectStrings
     
-- 条件: FlaggedForAction
+- Condition:FlaggedForAction
     
-- 条件: FromAddresses
+- Condition:FromAddresses
     
-- 条件: FromConnectedAccounts
+- Condition:FromConnectedAccounts
     
-- 条件: HasAttachments
+- Condition:HasAttachments
     
-- 条件: 重要度
+- Condition:Importance
     
-- 条件: IsApprovalRequest
+- Condition:IsApprovalRequest
     
-- 条件: Is自動転送
+- Condition:IsAutomaticForward
     
-- 条件: Is自動応答
+- Condition:IsAutomaticReply
     
-- 条件: IsEncrypted
+- Condition:IsEncrypted
     
-- 条件: Is会議要求
+- Condition:IsMeetingRequest
     
-- 条件: Is会議応答
+- Condition:IsMeetingResponse
     
-- 条件: IsNDR
+- Condition:IsNDR
     
-- 条件: IsPermissionControlled
+- Condition:IsPermissionControlled
     
-- 条件: IsReadReceipt
+- Condition:IsReadReceipt
     
-- 条件: IsSigned
+- Condition:IsSigned
     
-- 条件: IsVoicemail メール
+- Condition:IsVoicemail
     
-- 条件: ItemClasses
+- Condition:ItemClasses
     
-- 条件: MessageClassifications
+- Condition:MessageClassifications
     
-- 条件: NotSentToMe
+- Condition:NotSentToMe
     
-- 条件: [Ccme]
+- Condition:SentCcMe
     
-- 条件: SentOnlyToMe
+- Condition:SentOnlyToMe
     
-- 条件: 文のアドレス
+- Condition:SentToAddresses
     
-- 条件: SentToMe
+- Condition:SentToMe
     
-- 条件: 説明文
+- Condition:SentToOrCcMe
     
-- 条件: 秘密度
+- Condition:Sensitivity
     
-- 条件: WithinDateRange
+- Condition:WithinDateRange
     
-- 条件: WithinSizeRange
+- Condition:WithinSizeRange
     
-- 例外: カテゴリ
+- 例外:カテゴリ
     
-- 例外: 次の文字列があります。
+- Exception:ContainsBodyStrings
     
-- 例外: ContainsHeaderStrings
+- Exception:ContainsHeaderStrings
     
-- 例外: すべての受信者文字列
+- Exception:ContainsRecipientStrings
     
-- 例外: という文字列
+- Exception:ContainsSenderStrings
     
-- 例外: ContainsSubjectOrBodyStrings
+- Exception:ContainsSubjectOrBodyStrings
     
-- 例外: 大き Subjectstrings
+- Exception:ContainsSubjectStrings
     
-- 例外: FlaggedForAction
+- Exception:FlaggedForAction
     
-- 例外: FromAddresses
+- 例外:FromAddresses
     
-- 例外: FromConnectedAccounts
+- Exception:FromConnectedAccounts
     
-- 例外: HasAttachments
+- Exception:HasAttachments
     
-- 例外: 重要度
+- 例外:重要度
     
-- 例外: IsApprovalRequest
+- Exception:IsApprovalRequest
     
-- 例外: Is自動転送
+- Exception:IsAutomaticForward
     
-- 例外: Is自動応答
+- Exception:IsAutomaticReply
     
-- 例外: IsEncrypted
+- Exception:IsEncrypted
     
-- 例外: Is会議要求
+- Exception:IsMeetingRequest
     
-- 例外: Is会議応答
+- Exception:IsMeetingResponse
     
-- 例外: IsNDR
+- Exception:IsNDR
     
-- 例外: IsPermissionControlled
+- Exception:IsPermissionControlled
     
-- 例外: IsReadReceipt
+- Exception:IsReadReceipt
     
-- 例外: IsSigned
+- Exception:IsSigned
     
-- 例外: IsVoicemail メール
+- Exception:IsVoicemail
     
-- 例外: ItemClasses
+- Exception:ItemClasses
     
-- 例外: MessageClassifications
+- Exception:MessageClassifications
     
-- 例外: NotSentToMe
+- Exception:NotSentToMe
     
-- 例外: [Ccme]
+- Exception:SentCcMe
     
-- 例外: SentOnlyToMe
+- Exception:SentOnlyToMe
     
-- 例外: アドレスの説明
+- 例外:SentToAddresses
     
-- 例外: SentToMe
+- Exception:SentToMe
     
-- 例外: 文の説明
+- Exception:SentToOrCcMe
     
-- 例外: 秘密度
+- Exception:Sensitivity
     
-- 例外: WithinDateRange
+- Exception:WithinDateRange
     
-- 例外: WithinSizeRange
+- Exception:WithinSizeRange
     
-- アクション: カテゴリを割り当てる
+- Action:AssignCategories
     
-- アクション: CopyToFolder
+- Action:CopyToFolder
     
-- アクション: 削除
+- Action:Delete
     
-- アクション: forwardasattachmenttorattachmentpiattachment
+- Action:ForwardAsAttachmentToRecipients
     
-- アクション: forwardtorpipipi
+- Action:ForwardToRecipients
     
-- アクション: マーク (重要)
+- Action:MarkImportance
     
-- アクション: MarkAsRead
+- Action:MarkAsRead
     
-- アクション: MoveToFolder
+- Action:MoveToFolder
     
-- アクション: PermanentDelete
+- Action:PermanentDelete
     
-- アクション: Redirecttorの Piん
+- Action:RedirectToRecipients
     
-- アクション: SendSMSAlertToRecipients
+- Action:SendSMSAlertToRecipients
     
-- アクション: ServerReplyWithMessage
+- Action:ServerReplyWithMessage
     
-- アクション: StopProcessingRules
+- Action:StopProcessingRules
     
 - IsEnabled
     
@@ -224,7 +224,7 @@ ms.locfileid: "44461248"
     
 - 条件
     
-- Exceptions
+- 例外
     
 ## <a name="remarks"></a>注釈
 
@@ -235,13 +235,13 @@ ms.locfileid: "44461248"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

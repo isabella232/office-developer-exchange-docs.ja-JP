@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e26b37e7-0f82-4fd3-98af-53e02001c3df
-description: PerformReminderActionResponse 要素は、PerformReminderAction 要求に対する応答を指定します。
-ms.openlocfilehash: 565c87b34dca2ea1fd0cd44794da009ee825252a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: PerformReminderActionResponse 要素は、PerformReminderAction 要求への応答を指定します。
+ms.openlocfilehash: f850a32943fc54a7cac6ac2fb44c935893b8dae9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529953"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512890"
 ---
 # <a name="performreminderactionresponse"></a>PerformReminderActionResponse
 
-**PerformReminderActionResponse**要素は、 **PerformReminderAction**要求に対する応答を指定します。 
+**PerformReminderActionResponse** 要素は **、PerformReminderAction** 要求への応答を指定します。 
   
 ```XML
 <PerformReminderActionResponse>
@@ -53,13 +53,13 @@ ms.locfileid: "44529953"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

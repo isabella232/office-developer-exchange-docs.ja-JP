@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Id
 api_type:
 - schema
 ms.assetid: 4c7350b4-ffa1-4e7d-9433-80b4383bd0d2
-description: Id 要素は、1つのタイムゾーン定義を識別します。
-ms.openlocfilehash: 18ded1c9c0b6f0219d6256ebe19b9b1f7173da2c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Id 要素は、1 つのタイム ゾーン定義を識別します。
+ms.openlocfilehash: 58ff0cf0302c961d743458f8b6c0f197e23d0278
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466137"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519472"
 ---
 # <a name="id-timezone"></a>Id (TimeZone)
 
-**Id**要素は、1つのタイムゾーン定義を識別します。 
+**Id 要素は**、1 つのタイム ゾーン定義を識別します。 
   
 ```xml
 <Id>...</Id>
@@ -44,28 +44,28 @@ ms.locfileid: "44466137"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Rid](ids.md) <br/> |タイムゾーン定義識別子の配列を格納します。  <br/> |
+|[Ids](ids.md) <br/> |タイム ゾーン定義識別子の配列を含む。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は必須です。 テキスト値は、タイムゾーン定義の一意識別子を表します。
+テキスト値は必須です。 テキスト値は、タイム ゾーン定義の一意の識別子を表します。
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされているコンピューター Microsoft Exchange Server EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

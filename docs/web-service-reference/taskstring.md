@@ -1,23 +1,23 @@
 ---
-title: Tasksuggestion.taskstring
+title: TaskString
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4f2c8e66-698c-4313-98d0-24d7298489f6
-description: TaskString 要素には、推奨されるタスクが含まれています。
-ms.openlocfilehash: a48a47917dd2ec47678b53f04f00c99887eec0b5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: TaskString 要素には、推奨されるタスクが含まれる。
+ms.openlocfilehash: 74bb36ac96803bbc2db0173f61af85442b95e576
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530875"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538905"
 ---
-# <a name="taskstring"></a>Tasksuggestion.taskstring
+# <a name="taskstring"></a>TaskString
 
-**Taskstring**要素には、推奨されるタスクが含まれています。 
+**TaskString 要素には**、推奨されるタスクが含まれる。 
   
 ```XML
 <TaskString></TaskString>
@@ -43,7 +43,7 @@ ms.locfileid: "44530875"
   
 ## <a name="text-value"></a>テキスト値
 
-**Taskstring**要素のテキスト値は、メールボックス内のアイテムから抽出されたタスクエンティティからの結果として示される、推奨されるタスクです。 
+TaskString 要素の **テキスト値** は、メールボックス内のアイテムから抽出されたタスク エンティティから発生した推奨されるタスクです。 
   
 ## <a name="remarks"></a>注釈
 
@@ -56,8 +56,8 @@ ms.locfileid: "44530875"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

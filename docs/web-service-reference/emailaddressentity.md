@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 20049467-c01a-4c7d-8ada-ca1801cc95ed
-description: EmailAddressEntity 要素は、1つの電子メールアドレスエンティティを指定します。
-ms.openlocfilehash: b76b08f93e60c8492906f3cc94e60f5725c8a9dc
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: EmailAddressEntity 要素は、1 つの電子メール アドレス エンティティを指定します。
+ms.openlocfilehash: ecdf97d64e5c743cab3002091196deeba509c5eb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526222"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513011"
 ---
 # <a name="emailaddressentity"></a>EmailAddressEntity
 
-**Emailaddressentity**要素は、1つの電子メールアドレスエンティティを指定します。 
+**EmailAddressEntity 要素は**、1 つの電子メール アドレス エンティティを指定します。 
   
 ```XML
 <EmailAddressEntity>
@@ -38,13 +38,13 @@ ms.locfileid: "44526222"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[EmailAddress (文字列)](emailaddress-string.md) <br/> |1つの電子メールアドレスを指定します。  <br/> |
+|[EmailAddress (文字列)](emailaddress-string.md) <br/> |1 つの電子メール アドレスを指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[EmailAddresses (ArrayOfEmailAddressEntitiesType)](emailaddresses-arrayofemailaddressentitiestype.md) <br/> |電子メールアドレスエンティティの配列を指定します。  <br/> |
+|[EmailAddresses (ArrayOfEmailAddressEntitiesType)](emailaddresses-arrayofemailaddressentitiestype.md) <br/> |電子メール アドレス エンティティの配列を指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -58,12 +58,12 @@ ms.locfileid: "44526222"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

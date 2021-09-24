@@ -5,33 +5,33 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateItem
 api_type:
 - schema
 ms.assetid: aa4a7c94-f668-4bd2-8079-c855f6ab17e1
-description: CreateItem 操作は、Exchange ストアに予定表アイテムを作成します。
-ms.openlocfilehash: 535edf9fe567bc3063a5b853f01d604ea4c7eb95
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: CreateItem 操作は、予定表アイテムをユーザー ストアにExchangeします。
+ms.openlocfilehash: 4b2506dd4d5353c7670cab0ddb029e542d5861ba
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457502"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538423"
 ---
 # <a name="createitem-operation-calendar-item"></a>CreateItem 操作 (予定表アイテム)
 
-CreateItem 操作は、Exchange ストアに予定表アイテムを作成します。
+CreateItem 操作は、予定表アイテムをユーザー ストアにExchangeします。
   
 ## <a name="remarks"></a>注釈
 
-CreateItem 操作は、予定、会議、および会議出席依頼を作成します。 予定表アイテムが出席者なしで作成された場合は、予定と見なされます。 出席者が指定されている場合、予定表アイテムは会議です。 CreateItem 操作を使用して会議を作成する場合、会議出席依頼を送信するように Sendmeeting の招待属性が設定されている場合、会議出席依頼は特定の出席者に自動的に送信されます。
+CreateItem 操作は、予定、会議、および会議出席依頼を作成します。 予定表アイテムが出席者なしで作成された場合は、予定と見なされます。 出席者が指定されている場合、予定表アイテムは会議です。 CreateItem 操作を使用して会議を作成すると、SendMeetingInvitations 属性が会議出席依頼の送信に設定されている場合、会議出席依頼は自動的に識別された出席者に送信されます。
   
-## <a name="createitem-calendar-item-request-example"></a>CreateItem (予定表アイテム) の要求の例
+## <a name="createitem-calendar-item-request-example"></a>CreateItem (予定表アイテム) 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の CreateItem 要求の例は、2つの必須出席者を含む会議を作成する方法を示しています。 この要求は、2人の出席者に会議出席依頼を送信します。
+CreateItem 要求の次の例は、2 人の必須出席者を含む会議を作成する方法を示しています。 この要求は、2 人の出席者に会議出席依頼を送信します。
   
 ### <a name="code"></a>コード
 
@@ -79,9 +79,9 @@ CreateItem 操作は、予定、会議、および会議出席依頼を作成し
 
 ### <a name="comments"></a>コメント
 
-会議出席依頼に返信する方法の例については、「 [CreateItem 操作 (会議出席依頼)](createitem-operation-meeting-request.md) 」を参照してください。 
+会議出席依頼に応答する方法の例については [、「CreateItem 操作 (会議出席依頼)」を参照](createitem-operation-meeting-request.md) してください。 
   
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 要求では、次の要素が使用されます。
   
@@ -91,11 +91,11 @@ CreateItem 操作は、予定、会議、および会議出席依頼を作成し
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
-- [アイテム (非 Emptyarrayofallitemstype)](items-nonemptyarrayofallitemstype.md)
+- [Items (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
     
 - [CalendarItem](calendaritem.md)
     
-- [件名](subject.md)
+- [[件名]](subject.md)
     
 - [Body](body.md)
     
@@ -103,27 +103,27 @@ CreateItem 操作は、予定、会議、および会議出席依頼を作成し
     
 - [ReminderMinutesBeforeStart](reminderminutesbeforestart.md)
     
-- [開始](start.md)
+- [Start](start.md)
     
-- [終わり](end-ex15websvcsotherref.md)
+- [終わり ](end-ex15websvcsotherref.md)
     
 - [IsAllDayEvent](isalldayevent.md)
     
 - [LegacyFreeBusyStatus](legacyfreebusystatus.md)
     
-- [場所](location.md)
+- [Location](location.md)
     
 - [RequiredAttendees](requiredattendees.md)
     
-- [出席者](attendee.md)
+- [Attendee](attendee.md)
     
 - [メールボックス](mailbox.md)
     
-- [EmailAddress (非 Emptystringtype)](emailaddress-nonemptystringtype.md)
+- [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
     
-## <a name="successful-createitem-calendar-item-response"></a>成功した CreateItem (予定表アイテム) の応答
+## <a name="successful-createitem-calendar-item-response"></a>CreateItem (予定表アイテム) の正常な応答
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
 次の例は、CreateItem 要求に対する正常な応答を示しています。
   
@@ -159,7 +159,7 @@ CreateItem 操作は、予定、会議、および会議出席依頼を作成し
 
 ### <a name="comments"></a>コメント
 
-[ItemId](itemid.md)要素**Id**および**changekey**属性は読みやすいように短縮されています。 
+[ItemId 要素](itemid.md) **Id と** **ChangeKey** 属性は、読みやすさを維持するために短縮されました。 
   
 ### <a name="successful-response-elements"></a>成功した応答要素
 
