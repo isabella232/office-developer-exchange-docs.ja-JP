@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - NoEndRecurrence
 api_type:
 - schema
 ms.assetid: ab2ebd9c-388e-45f1-abf9-56e293ef123b
-description: NoEndRecurrence な要素は、定義された終了日を持たないアイテムの定期的なパターンの開始日を示します。
-ms.openlocfilehash: 31a3bd6ae2d7ce94debbeebc4fd4f536447433a7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: NoEndRecurrence 要素は、定義された終了日がないアイテムの定期的なパターンの開始日を表します。
+ms.openlocfilehash: 862bd58c295aabe807768f93506b4002d83c4552
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466795"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529808"
 ---
 # <a name="noendrecurrence"></a>NoEndRecurrence
 
-**Noendrecurrence**な要素は、定義された終了日を持たないアイテムの定期的なパターンの開始日を示します。 
+**NoEndRecurrence** 要素は、定義された終了日がないアイテムの定期的なパターンの開始日を表します。 
   
 ```xml
 <NoEndRecurrence>
@@ -42,31 +42,31 @@ ms.locfileid: "44466795"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[StartDate (定期的な予定)](startdate-recurrence.md) <br/> |定期的な仕事または予定表アイテムの開始日を表します。  <br/> |
+|[StartDate (Recurrence)](startdate-recurrence.md) <br/> |定期的なタスクまたは予定表アイテムの開始日を表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Recurrence (RecurrenceType)](recurrence-recurrencetype.md) <br/> |予定表アイテムと会議出席依頼の定期的なパターンを含みます。  <br/> |
-|[定期的なアイテム (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |定期的なタスクの定期的なアイテムの情報が含まれています。  <br/> |
+|[Recurrence (RecurrenceType)](recurrence-recurrencetype.md) <br/> |予定表アイテムと会議出席依頼の定期的なパターンが含まれます。  <br/> |
+|[Recurrence (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |定期的なタスクの定期的な情報が含まれています。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

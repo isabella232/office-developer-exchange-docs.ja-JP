@@ -1,33 +1,33 @@
 ---
-title: 月 (アイテムの定期的な予定)
+title: Month (定期的なアイテム)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Month
 api_type:
 - schema
 ms.assetid: d2352001-f959-436a-afd5-a0a07b8ae02a
-description: Month 要素は、年単位の定期的なアイテムが発生する月を表します。
-ms.openlocfilehash: d881c617374bc9545552ad77f2f2b355efdf2359
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Month 要素は、年次定期的なアイテムが発生する月を表します。
+ms.openlocfilehash: 01d8874db3b539ba1f4c64b3fbd9b83b5b0828b6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468636"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510961"
 ---
-# <a name="month-item-recurrence"></a>月 (アイテムの定期的な予定)
+# <a name="month-item-recurrence"></a>Month (定期的なアイテム)
 
-**Month**要素は、年単位の定期的なアイテムが発生する月を表します。 
+**Month 要素** は、年次定期的なアイテムが発生する月を表します。 
   
 ```xml
 <Month/>
 ```
 
- **月の Namestん**
+ **MonthNamesType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -45,11 +45,11 @@ ms.locfileid: "44468636"
 |**要素**|**説明**|
 |:-----|:-----|
 |[AbsoluteYearlyRecurrence](absoluteyearlyrecurrence.md) <br/> |1 年ごと。  <br/> |
-|[RelativeYearlyRecurrence](relativeyearlyrecurrence.md) <br/> |相対的な年単位の定期的なパターンを記述します。  <br/> |
+|[RelativeYearlyRecurrence](relativeyearlyrecurrence.md) <br/> |相対的な年次繰り返しパターンを説明します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は必須です。 この要素に使用できるテキスト値は次のとおりです。
+テキスト値は必須です。 この要素で使用できるテキスト値を次に示します。
   
 - 1 月
     
@@ -77,20 +77,20 @@ ms.locfileid: "44468636"
     
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

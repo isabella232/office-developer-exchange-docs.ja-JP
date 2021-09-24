@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SortOrder
 api_type:
 - schema
 ms.assetid: c2413f0b-8c03-46ae-9990-13338b3c53a6
-description: 並べ替え要素は、FindItem または FindConversation 会話要求でアイテムを並べ替える方法を定義します。
-ms.openlocfilehash: b520bb3ca6daadc777e7235b2b7420a12e425048
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SortOrder 要素は、FindItem または FindConversation 要求でアイテムを並べ替える方法を定義します。
+ms.openlocfilehash: eefa10c4af32d550414d83f8f524b5b088fcfa7c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468370"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59531702"
 ---
 # <a name="sortorder"></a>SortOrder
 
-並べ替え**要素は**、 **FindItem**または**findconversation 会話**要求でアイテムを並べ替える方法を定義します。 
+**SortOrder 要素** は、FindItem または **FindConversation** 要求でアイテムを並べ替える方法を定義します。  
   
 ```xml
 <SortOrder>
@@ -42,14 +42,14 @@ ms.locfileid: "44468370"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[FieldOrder](fieldorder.md) <br/> |結果を並べ替えるための1つのフィールドを表し、並べ替えの方向を示します。 これらの要素の1つ以上を含めることができます。 [Fieldorder](fieldorder.md)要素は、並べ替えに指定された順序で適用されます。  <br/> |
+|[FieldOrder](fieldorder.md) <br/> |結果を並べ替える 1 つのフィールドを表し、並べ替えの方向を示します。 これらの要素の 1 つ以上が含まれる場合があります。 [FieldOrder](fieldorder.md) 要素は、並べ替えに指定された順序で適用されます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FindItem](finditem.md) <br/> |メールボックス内のアイテムを検索するための要求を定義します。  <br/> この要素の XPath 式を次に示します。`/FindItem` <br/> |
-|[FindConversation](findconversation.md) <br/> |メールボックス内のスレッドを検索する要求を定義します。  <br/> |
+|[FindItem](finditem.md) <br/> |メールボックス内のアイテムを検索する要求を定義します。  <br/> 次に、この要素の XPath 式を示します。  `/FindItem` <br/> |
+|[FindConversation](findconversation.md) <br/> |メールボックス内の会話を検索する要求を定義します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -64,9 +64,9 @@ ms.locfileid: "44468370"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -77,5 +77,5 @@ ms.locfileid: "44468370"
 [FindConversation 操作](findconversation-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

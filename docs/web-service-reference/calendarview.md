@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CalendarView
 api_type:
 - schema
 ms.assetid: a4a953b8-0710-416c-95ef-59e51eba9982
-description: CalendarView 要素は、カレンダーに表示されているように、セット内の予定表アイテムを返す FindItem 操作を定義します。
-ms.openlocfilehash: e547a4b2db5c09ebefd9a072da6cc4733818002e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: CalendarView 要素は、FindItem 操作を、予定表に表示されるセット内の予定表アイテムを返すとして定義します。
+ms.openlocfilehash: 5e0180bb5e8a6d9fcbe42380abbe32820117ae29
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462263"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518828"
 ---
 # <a name="calendarview"></a>CalendarView
 
-**CalendarView**要素は、カレンダーに表示されているように、セット内の予定表アイテムを返す[FindItem 操作](finditem-operation.md)を定義します。 
+**CalendarView 要素は**[、FindItem 操作](finditem-operation.md)を、予定表に表示されるセット内の予定表アイテムを返すとして定義します。 
   
 [FindItem](finditem.md)
   
@@ -41,9 +41,9 @@ ms.locfileid: "44462263"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**MaxEntriesReturned** <br/> |FindItem 応答で返される結果の最大数を表します。  <br/> |
-|**StartDate** <br/> |予定表アイテムを照会する期間の開始日を識別します。 終了時刻**が開始日より前**のすべての予定表アイテムは返されません。 **StartDate**の値は協定世界時 (UTC) 形式で指定できます。2006年-01-02T12:00: 00z、または現地時刻とタイムゾーンオフセットが指定されている形式 (2006-01-02T12:00:00-08:00) で指定できます。  <br/><br/>この属性は必須です。  <br/> |
-|**EndDate** <br/> |予定表アイテムを照会した期間の終わりを識別します。 開始時刻が終了日になっている予定表**アイテムは、** すべて返されません。 **EndDate**の値は、2006年-02-02T12:00: 00z のように UTC 形式で指定することができます。また、2006-02-02T12:00:00-08:00 のように、現地時刻とタイムゾーンオフセットが指定されている形式で指定することもできます。  <br/><br/>**EndDate**は**StartDate**以上である必要があります。それ以外の場合は、エラーが返されます。 この属性は必須です。  <br/> |
+|**MaxEntriesReturned** <br/> |FindItem 応答で返される結果の最大数を示します。  <br/> |
+|**StartDate** <br/> |予定表アイテムに対してクエリを実行する期間の開始を識別します。 **StartDate** より前の終了時刻を持つすべての予定表アイテムは返されません。 **StartDate** の値は、2006-01-02T12:00:00Z のように協定世界時 (UTC) 形式で指定するか、2006-01-02T04:00:00:00:00:00 のように現地時間とタイム ゾーンのオフセットを指定する形式で指定できます。  <br/><br/>この属性は必須です。  <br/> |
+|**EndDate** <br/> |予定表アイテムに対してクエリを実行した期間の終了を識別します。 **EndDate** 以降の開始時刻を持つすべての予定表アイテムは返されません。 **EndDate** の値は、2006-02-02T12:00:00Z のように UTC 形式で指定するか、2006-02-02T04:00:00:00-08:00 のように現地時間とタイム ゾーンのオフセットを指定する形式で指定できます。  <br/><br/>**EndDate** は StartDate 以上である **必要があります**。それ以外の場合は、エラーが返されます。 この属性は必須です。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -53,17 +53,17 @@ ms.locfileid: "44462263"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FindItem](finditem.md) <br/> |メールボックス内のアイテムを検索するための要求を定義します。<br/><br/> この要素の XPath 式を次に示します。  <br/>  `/FindItem` <br/> |
+|[FindItem](finditem.md) <br/> |メールボックス内のアイテムを検索する要求を定義します。<br/><br/> 次に、この要素の XPath 式を示します。  <br/>  `/FindItem` <br/> |
    
 ## <a name="remarks"></a>注釈
 
-**CalendarView**要素が FindItem 要求で指定されている場合、Web サービスは、開始**日と終了**日で指定**された**範囲内の予定表アイテムの1つおよび定期的なアイテムのリストを返します。
+**CalendarView** 要素が FindItem 要求で指定されている場合、Web サービスは **、StartDate** と **EndDate** で指定された範囲内の単一の予定表アイテムと定期的な予定表アイテムの一覧を返します。
   
-**CalendarView**要素が FindItem 要求で指定されていない場合、Web サービスは、1つの予定表アイテムと定期的なマスター予定表アイテムの一覧を返します。 定期的な予定表アイテムの予定表アイテムは展開されません。 
+**FindItem 要求で CalendarView** 要素が指定されていない場合、Web サービスは単一の予定表アイテムと定期的なマスター 予定表アイテムのリストを返します。 定期的な予定表アイテムの予定表の出現は展開されません。 
   
-CalendarView クエリでは、より高速な予定表クエリがサポートされているため、次のプロパティのみを使用してください。
+CalendarView クエリは、より高速な予定表クエリをサポートするために、次のプロパティのみを使用する必要があります。
   
-### <a name="recurrence-blob-properties"></a>定期的な blob プロパティ
+### <a name="recurrence-blob-properties"></a>定期的な BLOB プロパティ
   
 - MapiStartTime
     
@@ -75,7 +75,7 @@ CalendarView クエリでは、より高速な予定表クエリがサポート�
     
 - MapiSubject
     
-- 場所
+- Location
     
 - AppointmentColor
     
@@ -93,9 +93,9 @@ CalendarView クエリでは、より高速な予定表クエリがサポート�
     
 - AllAttachmentsHidden
     
-- ChangeHighlight 表示
+- ChangeHighlight
     
-### <a name="calculated-from-the-primary-recurrence-blob-or-master"></a>主要な定期的なアイテムの blob またはマスターから計算されます。
+### <a name="calculated-from-the-primary-recurrence-blob-or-master"></a>プライマリ定期的な BLOB またはマスターから計算される
   
 - ItemId
     
@@ -121,7 +121,7 @@ CalendarView クエリでは、より高速な予定表クエリがサポート�
     
 - TimeZoneDefinitionEnd
     
-### <a name="master-calendar-item-properties"></a>マスター予定表アイテムのプロパティ
+### <a name="master-calendar-item-properties"></a>マスター 予定表アイテムのプロパティ
   
 - EntryId
     
@@ -131,9 +131,9 @@ CalendarView クエリでは、より高速な予定表クエリがサポート�
     
 - SentRepresentingEmailAddress
     
-- [文] 表示 Displayname
+- SentRepresentingDisplayName
     
-- [文]
+- SentRepresentingEntryId
     
 - AppointmentRecurrenceBlob
     
@@ -159,13 +159,13 @@ CalendarView クエリでは、より高速な予定表クエリがサポート�
     
 - MapiPREndDate
     
-- カテゴリ
+- Categories
     
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
 ## <a name="example"></a>例
 
-次の例は、FindItem 要求を示しています。 成功した要求は、2006年-05-18T00:00:00-08:00 または after and 終了された予定表アイテムを含む応答を返します。これは2006年から 05-19T00:00:00-08:00 です。
+次の例は、FindItem 要求を示しています。 成功した要求は、2006-05-18T00:00:00-08:00 以降で開始され、2006-05-19T00:00:00:00-08:00 より前に終了した予定表アイテムを含む応答を返します。
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -197,9 +197,9 @@ CalendarView クエリでは、より高速な予定表クエリがサポート�
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

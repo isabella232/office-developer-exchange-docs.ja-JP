@@ -1,33 +1,33 @@
 ---
-title: FindConversation 操作
+title: FindConversation の操作
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FindConversation
 api_type:
 - schema
 ms.assetid: 2384908a-c203-45b6-98aa-efd6a4c23aac
-description: FindConversation 操作は、フォルダー内のスレッドのリストを列挙します。
-ms.openlocfilehash: ef768807431ff3e02c6af7277c1c2a750607ed92
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: FindConversation 操作は、フォルダー内の会話の一覧を列挙します。
+ms.openlocfilehash: e3fed534127a976897e33bd266188d01aff6354c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462655"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59530529"
 ---
-# <a name="findconversation-operation"></a>FindConversation 操作
+# <a name="findconversation-operation"></a>FindConversation の操作
 
-**Findconversation**操作は、フォルダー内のスレッドのリストを列挙します。 
+**FindConversation 操作は**、フォルダー内の会話の一覧を列挙します。 
   
 ## <a name="findconversation-request-example"></a>FindConversation 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **Findconversation**要求の例で、受信トレイフォルダー内の最初の会話を検索するための要求を形成する方法を示しています。 
+**FindConversation** 要求の次の例は、受信トレイ フォルダー内の最初の会話を検索する要求を形成する方法を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -52,7 +52,7 @@ ms.locfileid: "44462655"
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 要求では、次の要素が使用されます。
   
@@ -66,11 +66,11 @@ ms.locfileid: "44462655"
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
-## <a name="successful-findconversation-response-example"></a>成功した FindConversation の応答の例
+## <a name="successful-findconversation-response-example"></a>FindConversation 応答の成功例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **Findconversation**要求に対する正常な応答を示しています。 
+次の例は **、FindConversation** 要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -148,7 +148,7 @@ ms.locfileid: "44462655"
 
 ### <a name="comment"></a>コメント
 
-この例のアイテムとスレッド識別子は読みやすいように短縮されています。
+この例のアイテム識別子と会話識別子は、読みやすさを維持するために短縮されています。
   
 ### <a name="successful-response-elements"></a>成功した応答要素
 
@@ -160,7 +160,7 @@ ms.locfileid: "44462655"
     
 - [ResponseCode](responsecode.md)
     
-- [会話 (ConversationType)](conversation-conversationtype.md)
+- [Conversation (ConversationType)](conversation-conversationtype.md)
     
 - [ConversationId](conversationid.md)
     
@@ -190,7 +190,7 @@ ms.locfileid: "44462655"
     
 - [UnreadCount](unreadcount.md)
     
-- [Size](size.md)
+- [サイズ](size.md)
     
 - [GlobalSize](globalsize.md)
     
@@ -210,11 +210,11 @@ ms.locfileid: "44462655"
     
 - [GlobalItemIds](globalitemids.md)
     
-## <a name="findconversation-error-response-example"></a>FindConversation エラーの応答の例
+## <a name="findconversation-error-response-example"></a>FindConversation エラー応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、スキーマ検証エラーによって発生した**findconversation**要求に対するエラー応答を示しています。 
+次の例は、スキーマ検証エラーによって **発生した FindConversation** 要求に対するエラー応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -247,7 +247,7 @@ ms.locfileid: "44462655"
     
 - faultstring
     
-- 細部
+- 詳細
     
 - [ResponseCode](responsecode.md)
     
@@ -259,7 +259,7 @@ ms.locfileid: "44462655"
     
 - LinePosition
     
-- フォールト
+- 違反
     
 ## <a name="see-also"></a>関連項目
 
@@ -268,9 +268,9 @@ ms.locfileid: "44462655"
 [ApplyConversationAction 操作](applyconversationaction-operation.md)
 
 
-[Exchange での EWS 操作](ews-operations-in-exchange.md)
+[EWS 操作 (Exchange](ews-operations-in-exchange.md)
   
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 
 
 [EWS での会話](https://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)

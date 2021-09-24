@@ -4,12 +4,12 @@ description: IMAP、POP、および SMTP アプリケーションで OAuth 認�
 author: svpsiva
 ms.date: 07/08/2021
 ms.audience: Developer
-ms.openlocfilehash: 4a307a6e329d5320b2b304d17a78a61db6d111bd
-ms.sourcegitcommit: 357b882a02e37b380a23b8a45b15f9c006a40b02
+ms.openlocfilehash: cfc9de18a53ce4cfdd8535f26fe3b04aab9cde55
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58764589"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59531324"
 ---
 # <a name="authenticate-an-imap-pop-or-smtp-connection-using-oauth"></a>OAuth を使用して IMAP、POP、SMTP 接続を認証する
 
@@ -17,7 +17,7 @@ OAuth 認証を使用して IMAP、POP、SMTP プロトコルに接続し、ユ�
 
 > 以下で説明する IMAP、POP、SMTP プロトコルの OAuth2 サポートは、Microsoft 365 (Office on the web を含む) と Outlook.com ユーザーの両方でサポートされています。
 
-OAuth 2.0 プロトコルについて理解していない場合は、まず、OAuth [2.0](/azure/active-directory/develop/active-directory-v2-protocols)プロトコルの概要をMicrosoft ID プラットフォームしてください。 OAuth 2.0 プロトコルを実装してユーザーを認証し、セキュリティで保護された API にアクセスする Microsoft Authentication Libariers [(MSAL)](/azure/active-directory/develop/msal-overview)の詳細については、「MSAL の概要」を参照してください。
+OAuth 2.0 プロトコルについて理解していない場合は、まず、OAuth [2.0](/azure/active-directory/develop/active-directory-v2-protocols)プロトコルの概要をMicrosoft ID プラットフォームしてください。 OAuth 2.0 プロトコルを実装してユーザーを認証し、セキュリティで保護された API にアクセスする Microsoft 認証ライブラリ [(MSAL)](/azure/active-directory/develop/msal-overview)の詳細については、「MSAL の概要」を参照してください。
 
 Azure Active Directory によって提供される OAuth 認証サービスを使用して、アプリケーションが IMAP、POP、または SMTP プロトコルに接続して、Exchange OnlineにアクセスOffice 365。 OAuth をアプリケーションで使用するには、次の必要があります。
 

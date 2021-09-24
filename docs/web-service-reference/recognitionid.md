@@ -1,23 +1,23 @@
 ---
-title: 認識 Id
+title: RecognitionId
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 09fdaf4e-9930-4342-97be-286d9e0165db
-description: 認識 Itionid 要素は、内部使用のみを目的としています。
-ms.openlocfilehash: 2d3cd7a1af4b3d2184af75efe1299882a6e7bf33
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: RecognitionId 要素は内部での使用のみを目的とします。
+ms.openlocfilehash: b2549bb46463d9926437ad7727860415ed257d01
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468475"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529378"
 ---
-# <a name="recognitionid"></a>認識 Id
+# <a name="recognitionid"></a>RecognitionId
 
-認識**Itionid**要素は、内部使用のみを目的としています。 
+**RecognitionId 要素は** 内部での使用のみを目的とします。 
 
 ## <a name="attributes-and-elements"></a>属性と要素
 
@@ -46,8 +46,8 @@ ms.locfileid: "44468475"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

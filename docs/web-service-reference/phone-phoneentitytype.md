@@ -1,23 +1,23 @@
 ---
-title: Phone (通し Entitytype)
+title: Phone (PhoneEntityType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f6925cc9-7f22-478f-b9ba-b77575772471
-description: Phone 要素は、電話番号エンティティの抽出によって得られる1つの電話番号を指定します。
-ms.openlocfilehash: eec05fbb1cbbfa5c9b47cdb3cef1af6085ab51b6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: 電話要素は、電話番号エンティティの抽出に基く単一の電話番号を指定します。
+ms.openlocfilehash: a8f0404c2cb9f141bf818dfe2fd07d3f4b1dacb8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457558"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59528477"
 ---
-# <a name="phone-phoneentitytype"></a>Phone (通し Entitytype)
+# <a name="phone-phoneentitytype"></a>Phone (PhoneEntityType)
 
-**Phone**要素は、電話番号エンティティの抽出によって得られる1つの電話番号を指定します。 
+電話 **要素** は、電話番号エンティティ抽出の結果として 1 つの電話番号を指定します。 
   
 ```XML
 <Phone>
@@ -28,7 +28,7 @@ ms.locfileid: "44457558"
 </Phone>
 ```
 
- **電話の Entitytype**
+ **PhoneEntityType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -39,7 +39,7 @@ ms.locfileid: "44457558"
   
 ### <a name="child-elements"></a>子要素
 
-[Position](position.md)  | [Phonenumber.originalphonestring](originalphonestring.md)  | [電話テキスト](phonestring.md)  | [型 (string)](type-string.md)
+[位置](position.md)  | [OriginalPhoneString](originalphonestring.md)  | [PhoneString](phonestring.md)  | [型 (文字列)](type-string.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -56,8 +56,8 @@ ms.locfileid: "44457558"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

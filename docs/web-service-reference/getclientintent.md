@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1601ad86-d391-449f-889b-50ecbd310dd5
-description: GetClientIntent 要素は、内部使用のみを目的としています。
-ms.openlocfilehash: 3620511146f93a96d79a1427ab0903a8984fa500
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetClientIntent 要素は、内部での使用のみを目的とします。
+ms.openlocfilehash: 4df098527da34b56128ffa8725d07a1f1949c525
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455640"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59511552"
 ---
 # <a name="getclientintent"></a>GetClientIntent
 
-**Getclientintent**要素は、内部使用のみを目的としています。 
+**GetClientIntent 要素** は、内部での使用のみを目的とします。 
   
 ```XML
 <GetClientIntent />
@@ -51,8 +51,8 @@ ms.locfileid: "44455640"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FileAsMapping
 api_type:
 - schema
 ms.assetid: 2c98e7c6-09b0-47b3-bbf7-8c4ef9510280
-description: FileAsMapping 要素は、連絡先に対して表示される内容を作成する方法を定義します。
-ms.openlocfilehash: d846c0af0fbad4df9ee800fe136a4ffcc74c8608
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: FileAsMapping 要素は、連絡先に対して表示される情報を作成する方法を定義します。
+ms.openlocfilehash: 35397ebd5cb9235ad55093b43bde89eef466e672
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461038"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518506"
 ---
 # <a name="fileasmapping"></a>FileAsMapping
 
-**Fileasmapping**要素は、連絡先に対して表示される内容を作成する方法を定義します。 
+**FileAsMapping 要素** は、連絡先に対して表示される情報を作成する方法を定義します。 
   
 ```xml
 <FileAsMapping/>
@@ -44,11 +44,11 @@ ms.locfileid: "44461038"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Contact](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
+|[Contact](contact.md) <br/> |連絡先アイテムExchangeを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-この要素のテキスト値は、次のいずれかの文字列値に制限されています。
+この要素のテキスト値は、次のいずれかの文字列値に制限されます。
   
 - なし
     
@@ -66,15 +66,15 @@ ms.locfileid: "44461038"
     
 - LastFirstCompany
     
-- 会社の Lastcommafirst
+- CompanyLastCommaFirst
     
 - LastFirstSuffix
     
-- Lastspace Firstcompany
+- LastSpaceFirstCompany
     
-- 会社の最終スペース
+- CompanyLastSpaceFirst
     
-- Lastspace の先頭
+- LastSpaceFirst
     
 - DisplayName
     
@@ -88,22 +88,22 @@ ms.locfileid: "44461038"
     
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされているコンピューター Microsoft Exchange Server EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 
 
 [連絡先の作成 (Exchange Web サービス)](https://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)

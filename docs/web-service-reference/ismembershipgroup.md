@@ -1,23 +1,23 @@
 ---
-title: Isメンバーシップグループ
+title: IsMembershipGroup
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0dc3e285-8f49-48ad-b844-37041c0d782b
-description: Isメンバーシップグループ要素は、エンティティが配布グループまたはメールボックスであるかどうかを示すブール値を指定します。
-ms.openlocfilehash: ed79961c6d13ab226c0b489103ef3d2c4a08668d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: IsMembershipGroup 要素は、エンティティが配布グループかメールボックスかを示すブール値を指定します。
+ms.openlocfilehash: 111a517a5258a48aada1c7768c908d62f3a47b9e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459287"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540980"
 ---
-# <a name="ismembershipgroup"></a>Isメンバーシップグループ
+# <a name="ismembershipgroup"></a>IsMembershipGroup
 
-**Isメンバーシップグループ**要素は、エンティティが配布グループまたはメールボックスであるかどうかを示すブール値を指定します。 
+**IsMembershipGroup** 要素は、エンティティが配布グループかメールボックスかを示すブール値を指定します。 
   
 ```XML
 <IsMembershipGroup>true | false</IsMembershipGroup>
@@ -40,11 +40,11 @@ ms.locfileid: "44459287"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[SearchableMailbox](searchablemailbox.md) <br/> |**Getsearchablemailboxes**要求から返されるメールボックスを指定します。  <br/> |
+|[SearchableMailbox](searchablemailbox.md) <br/> |**GetSearchableMailboxes** 要求から返されるメールボックスを指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**Isメンバーシップグループ**要素のテキスト値が**true**である場合は、エンティティが配布グループまたはメールボックスであることを示します。 値が false の場合、エンティティが配布グループまたはメールボックスではないことを示します。 
+**IsMembershipGroup** 要素のテキスト値 **が true** の場合、エンティティが配布グループまたはメールボックスです。 false の値は、エンティティが配布グループまたはメールボックスではない場合を示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -58,12 +58,12 @@ ms.locfileid: "44459287"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

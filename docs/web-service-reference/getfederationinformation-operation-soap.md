@@ -4,29 +4,29 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: c6666a42-a18f-4e4b-beb6-b25ff62cfcc5
-description: GetFederationInformation 操作は、組織のフェデレーションの状態 (この組織を対象としたトークンを要求するときに使用されるターゲット URI、および組織がフェデレーションを行うその他のドメイン) についての情報を提供します。
-ms.openlocfilehash: 533b2f6d282e3287f4945df56b169f5bc93ff445
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetFederationInformation 操作は、組織を対象とするトークンを要求するときに使用するターゲット URI や、組織がフェデレーションした他のドメインなど、組織のフェデレーション状態に関する情報を提供します。
+ms.openlocfilehash: 915498440e4bc3d7262ed3a55350f7d3723d47d8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455626"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529955"
 ---
 # <a name="getfederationinformation-operation-soap"></a>GetFederationInformation 操作 (SOAP)
 
-**GetFederationInformation**操作は、組織のフェデレーションの状態 (この組織を対象としたトークンを要求するときに使用されるターゲット URI、および組織がフェデレーションを行うその他のドメイン) についての情報を提供します。 
+**GetFederationInformation** 操作は、組織を対象とするトークンを要求するときに使用するターゲット URI や、組織がフェデレーションした他のドメインなど、組織のフェデレーション状態に関する情報を提供します。 
   
-外部ユーザーに予定表、連絡先、メッセージを共有できるのは、フェデレーション組織のみです。
+予定表、連絡先、およびメッセージを外部ユーザーと共有できるのは、フェデレーション組織のみです。
   
 ## <a name="getfederationinformation-request-example"></a>GetFederationInformation 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-**GetFederationInformation**要求の次の例は、ユーザーのフェデレーション情報の要求を示しています。 クライアントは、この要求をサーバーに送信します。 
+**GetFederationInformation** 要求の次の例は、ユーザーのフェデレーション情報の要求を示しています。 クライアントは、この要求をサーバーに送信します。 
   
 ### <a name="code"></a>コード
 
@@ -60,21 +60,21 @@ ms.locfileid: "44455626"
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 要求では、次の要素が使用されます。
   
 - [GetFederationInformationRequestMessage (SOAP)](getfederationinformationrequestmessage-soap.md)
     
-- [要求 (SOAP)](request-soap.md)
+- [Request (SOAP)](request-soap.md)
     
-- [ドメイン (SOAP)](domain-soap.md)
+- [Domain (SOAP)](domain-soap.md)
     
-## <a name="getfederationinformation-response-example"></a>GetFederationInformation response の例
+## <a name="getfederationinformation-response-example"></a>GetFederationInformation 応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、サーバーがクライアントに送信する**GetFederationInformation**要求に対する正常な応答を示しています。 
+次の例は、サーバーがクライアントに送信する **GetFederationInformation** 要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -105,13 +105,13 @@ xmlns:a="http://www.w3.org/2005/08/addressing">
 </s:Envelope>
 ```
 
-### <a name="response-elements"></a>Response 要素
+### <a name="response-elements"></a>応答要素
 
 応答では、次の要素が使用されます。
   
 - [GetFederationInformationResponseMessage (SOAP)](getfederationinformationresponsemessage-soap.md)
     
-- [応答 (SOAP)](response-soap.md)
+- [Response (SOAP)](response-soap.md)
     
 - [ErrorCode (SOAP)](errorcode-soap.md)
     
@@ -121,7 +121,7 @@ xmlns:a="http://www.w3.org/2005/08/addressing">
     
 - [Domains (SOAP)](domains-soap.md)
     
-- [ドメイン (SOAP)](domain-soap.md)
+- [Domain (SOAP)](domain-soap.md)
     
 ## <a name="see-also"></a>関連項目
 

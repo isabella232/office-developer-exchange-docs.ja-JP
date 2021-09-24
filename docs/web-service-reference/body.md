@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7851ea9b-9f87-4adc-a26f-7a27df4a9bca
 description: Body 要素は、アイテムの本文を指定します。
-ms.openlocfilehash: c565c5701ae5bc210cf0a9dc694108752860e24b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 47f0726c6ef329fbbefc99be3b1e2d605f852afa
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529491"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59526849"
 ---
-# <a name="body"></a>本文
+# <a name="body"></a>Body
 
-**Body**要素は、アイテムの本文を指定します。 
+**Body 要素** は、アイテムの本文を指定します。 
   
 ```XML
 <Body> BodyType="" IsTruncated="" </Body>
@@ -33,14 +33,14 @@ ms.locfileid: "44529491"
 |**属性**|**説明**|
 |:-----|:-----|
 |BodyType  <br/> |本文の種類を指定します。  <br/> |
-|Istrがありません  <br/> |本文が切り捨てられるかどうかを示すブール値。  <br/> |
+|IsTruncated  <br/> |本文が切り捨てられるかどうかを示すブール値。  <br/> |
    
 #### <a name="bodytype"></a>BodyType
 
 |**値**|**説明**|
 |:-----|:-----|
-|HTML  <br/> |本文が HTML 形式であることを示します。  <br/> |
-|テキスト  <br/> |本文がテキストにあることを示します。  <br/> |
+|HTML  <br/> |本文が HTML 内にあるかどうかを示します。  <br/> |
+|テキスト  <br/> |本文がテキスト内にあるかどうかを示します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -50,17 +50,17 @@ ms.locfileid: "44529491"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
-|[Contact](contact.md) <br/> |Exchange ストア内の連絡先アイテムを表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |予定表アイテムのExchangeを表します。  <br/> |
+|[Contact](contact.md) <br/> |ストア内の連絡先アイテムExchangeします。  <br/> |
 |[DistributionList](distributionlist.md) <br/> |配布リストを表します。  <br/> |
-|[Item](item.md) <br/> |Exchange ストア内の汎用アイテムを表します。  <br/> |
-|[Message](message-ex15websvcsotherref.md) <br/> |Microsoft Exchange の電子メールメッセージを表します。  <br/> |
-|[PostItem](postitem.md) <br/> |Exchange ストア内の投稿アイテムを表します。  <br/> |
-|[タスク](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
+|[項目](item.md) <br/> |ストア内の汎用アイテムをExchangeします。  <br/> |
+|[Message](message-ex15websvcsotherref.md) <br/> |Microsoft の電子メール Exchangeを表します。  <br/> |
+|[PostItem](postitem.md) <br/> |ストア内の投稿アイテムをExchangeします。  <br/> |
+|[タスク](task.md) <br/> |ストア内のタスクをExchangeします。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**Body**要素のテキスト値は、アイテムの本文の内容です。 
+Body 要素のテキスト **値** は、アイテムの本文コンテンツです。 
   
 ## <a name="remarks"></a>注釈
 
@@ -74,12 +74,12 @@ ms.locfileid: "44529491"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

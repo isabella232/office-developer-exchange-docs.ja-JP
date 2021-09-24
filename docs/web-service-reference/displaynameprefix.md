@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 60363698-7603-4051-a66e-007c02db17cb
-description: DisplayNamePrefix 要素は、関連付けられたペルソナの表示名のプレフィックスを指定します。
-ms.openlocfilehash: e7c723bb8da0834b96987f82e8f1c03c88c8d68c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: DisplayNamePrefix 要素は、関連付けられたペルサの表示名のプレフィックスを指定します。
+ms.openlocfilehash: 9a1f9f048c24a71998aa880f50043a44565c5954
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458741"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59511830"
 ---
 # <a name="displaynameprefix"></a>DisplayNamePrefix
 
-**Displaynameprefix**要素は、関連付けられたペルソナの表示名のプレフィックスを指定します。 
+**DisplayNamePrefix** 要素は、関連付けられたペルサの表示名のプレフィックスを指定します。 
   
 ```xml
 <DisplayNamePrefix></DisplayNamePrefix>
@@ -40,11 +40,11 @@ ms.locfileid: "44458741"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ユーザー](persona.md) <br/> |**Getpersona**要求によって返される一連のペルソナデータを指定します。  <br/> |
+|[ユーザー](persona.md) <br/> |**GetPersona** 要求によって返されるペルソナ データのセットを指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**Displaynameprefix**要素のテキスト値は、表示名のプレフィックスを指定する文字列型 (string) の値です。 
+**DisplayNamePrefix 要素のテキスト値** は、表示名のプレフィックスを指定する文字列値です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -58,10 +58,10 @@ ms.locfileid: "44458741"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

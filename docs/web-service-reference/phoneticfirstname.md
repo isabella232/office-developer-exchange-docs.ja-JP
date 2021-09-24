@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c66c28a5-1b2c-4913-b0c5-e3d9849aa4af
-description: この要素には、連絡先の名前の先頭にスペルが入力されています。
-ms.openlocfilehash: a72ae885473e670ab197134fcd44e5d82ce6e450
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: PhoneticFirstName 要素には、連絡先の最初の名前が含まれている。スペルは電話で入力されます。
+ms.openlocfilehash: ec4623c6d44128366c9ef1b1c4bdfea53df7e060
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529946"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59528201"
 ---
 # <a name="phoneticfirstname"></a>PhoneticFirstName
 
-この**要素には、** 連絡先の名前の先頭にスペルが入力されています。 
+**PhoneticFirstName** 要素には、連絡先の最初の名前が含まれている。スペルは電話で入力されます。 
   
 ```XML
 <PhoneticFirstName/>
@@ -40,11 +40,11 @@ ms.locfileid: "44529946"
 
 |**要素名**|**説明**|
 |:-----|:-----|
-|[Contact](contact.md) <br/> |Exchange ストア内の連絡先アイテムを表します。  <br/> |
+|[Contact](contact.md) <br/> |ストア内の連絡先アイテムExchangeします。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、連絡先の名の先頭を表す文字列です。
+テキスト値は、連絡先の最初の名前を表す文字列で、スペルは表形式です。
   
 ## <a name="remarks"></a>注釈
 
@@ -57,15 +57,15 @@ ms.locfileid: "44529946"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 
 
 [連絡先の作成 (Exchange Web サービス)](https://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)

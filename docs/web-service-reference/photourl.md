@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0d6d1709-01b2-4599-8145-47f51da4bb26
-description: PhotoUrl 要素は、内部使用のみを目的としています。
-ms.openlocfilehash: f14b62da13ba407355b5422bc61b3cefc869fa96
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: PhotoUrl 要素は内部での使用のみを目的とします。
+ms.openlocfilehash: e001c45f3fb32249dfa14659a2912c8b519928ca
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44434065"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59528031"
 ---
 # <a name="photourl"></a>PhotoUrl
 
-**PhotoUrl**要素は、内部使用のみを目的としています。 
+**PhotoUrl 要素** は内部での使用のみを目的とします。 
 
 ## <a name="attributes-and-elements"></a>属性と要素
 

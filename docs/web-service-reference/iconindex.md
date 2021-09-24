@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 92020822-2a86-4dfc-aee1-3067af4d4edf
-description: IconIndex 要素は、アイテムまたはスレッドのアイコンインデックスを識別します。
-ms.openlocfilehash: 0f932f5632422a8786e74500bf83cb1337f780c3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: IconIndex 要素は、アイテムまたは会話のアイコン インデックスを識別します。
+ms.openlocfilehash: f0c024eeedcbda9aa5ad8afdea09a68f2499798e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460786"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541162"
 ---
 # <a name="iconindex"></a>IconIndex
 
-**IconIndex**要素は、アイテムまたはスレッドのアイコンインデックスを識別します。 
+**IconIndex 要素** は、アイテムまたは会話のアイコン インデックスを識別します。 
   
 ```XML
 <IconIndex>Default | PostItem | MailRead | MailUnread | MailReplied | MailForwarded | MailEncrypted | MailSmimeSigned | MailEncrytedReplied | MailSmimeSignedReplied | MailEncryptedForwarded | MailSmimeSignedForwarded | MailEncryptedRead | MailSmimeSignedRead | MailIrm | MailIrmForwarded | MailIrmReplied | SmsSubmitted | SmsRoutedToDeliveryPoint | SmsRoutedToExternalMessagingSystem | SmsDelivered | OutlookDefaultForContacts | AppointmentItem | AppointmentRecur | AppointmentMeet | AppointmentMeetRecur | AppointmentMeetNY | AppointmentMeetYes | AppointmentMeetNo | AppointmentMeetMaybe | AppointmentMeetCancel | AppointmentMeetInfo | TaskItem | TaskRecur | TaskOwned | TaskDelegated</IconIndex>
@@ -38,51 +38,51 @@ ms.locfileid: "44460786"
   
 ### <a name="parent-elements"></a>親要素
 
-[会話 (ConversationType)](conversation-conversationtype.md)  | [アイテム](item.md)  | [連絡先](contact.md)  | [DistributionList](distributionlist.md)  | [メッセージ](message-ex15websvcsotherref.md)  | [Calendaritem](calendaritem.md)  | [Postitem](postitem.md)  | [タスク](task.md)
+[Conversation (ConversationType)](conversation-conversationtype.md)  | [アイテム](item.md)  | [連絡先](contact.md)  | [DistributionList](distributionlist.md)  | [メッセージ](message-ex15websvcsotherref.md)  | [CalendarItem](calendaritem.md)  | [PostItem](postitem.md)  | [タスク](task.md)
   
 ## <a name="text-value"></a>テキスト値
 
-次の表に、 **IconIndex**要素に使用できるテキスト値を示します。 
+次の表に、IconIndex 要素に使用できるテキスト **値を示** します。 
   
 |**値**|**説明**|
 |:-----|:-----|
 |||
 |既定値  <br/> |既定のアイコンを指定します。  <br/> |
 |PostItem  <br/> |投稿アイテムのアイコンを指定します。  <br/> |
-|MailRead  <br/> |[メールの閲覧] アイコンを指定します。  <br/> |
-|メール未開封  <br/> |[未読のメール] アイコンを指定します。  <br/> |
-|メール返信  <br/> |[返信済みメール] アイコンを指定します。  <br/> |
-|メール転送  <br/> |[転送されたメール] アイコンを指定します。  <br/> |
-|MailEncrypted  <br/> |暗号化されたメールのアイコンを指定します。  <br/> |
-|MailSmimeSigned  <br/> |[セキュリティで保護されたマルチパーパスインターネットメール内線 (S/MIME) 署名済みメール] アイコンを指定します。  <br/> |
-|MailEncryptedReplied  <br/> |[暗号化された返信メール] アイコンを指定します。  <br/> |
-|MailSmimeSignedReplied  <br/> |S/MIME で署名された返信メールアイコンを指定します。  <br/> |
-|MailEncryptedForwarded  <br/> |[暗号化された転送メール] アイコンを指定します。  <br/> |
-|MailSmimeSignedForwarded  <br/> |S/MIME で署名された転送メールアイコンを指定します。  <br/> |
-|MailEncryptedRead  <br/> |[暗号化されたメールの開封] アイコンを指定します。  <br/> |
-|MailSmimeSignedRead  <br/> |S/MIME で署名されたメールの開封アイコンを指定します。  <br/> |
-|MailIrm  <br/> |Information Rights Management (IRM) で保護されたメールのアイコンを指定します。  <br/> |
-|MailIrmForwarded  <br/> |IRM で保護された転送されたメールのアイコンを指定します。  <br/> |
-|MailIrmReplied  <br/> |[IRM で保護された返信メール] アイコンを指定します。  <br/> |
-|SmsSubmitted  <br/> |ショートメッセージサービス (SMS) ルーティングに送信されるメールのアイコンを指定します。  <br/> |
-|Smsルーブル Tedtodeliverypoint  <br/> |外部配信ポイントへの SMS ルーティングのアイコンを指定します。  <br/> |
-|Smsルーブル Tedtoexternalmessagingsystem  <br/> |外部メッセージングシステムへの SMS ルーティングのアイコンを指定します。  <br/> |
-|SmsDelivered  <br/> |[SMS 配信メール] アイコンを指定します。  <br/> |
+|MailRead  <br/> |メール読み取りアイコンを指定します。  <br/> |
+|MailUnread  <br/> |未読メール アイコンを指定します。  <br/> |
+|MailReplied  <br/> |メール に返信するアイコンを指定します。  <br/> |
+|MailForwarded  <br/> |転送されるメール アイコンを指定します。  <br/> |
+|MailEncrypted  <br/> |暗号化されたメール アイコンを指定します。  <br/> |
+|MailSmimeSigned  <br/> |Secure/Multipurpose インターネット メール拡張機能 (S/MIME) 署名付きメール アイコンを指定します。  <br/> |
+|MailEncryptedReplied  <br/> |メール に返信される暗号化されたアイコンを指定します。  <br/> |
+|MailSmimeSignedReplied  <br/> |メール に返信される S/MIME 署名済みアイコンを指定します。  <br/> |
+|MailEncryptedForwarded  <br/> |暗号化された転送メール アイコンを指定します。  <br/> |
+|MailSmimeSignedForwarded  <br/> |S/MIME 署名済み転送メール アイコンを指定します。  <br/> |
+|MailEncryptedRead  <br/> |暗号化された読み取りメール アイコンを指定します。  <br/> |
+|MailSmimeSignedRead  <br/> |S/MIME 署名済み読み取りメール アイコンを指定します。  <br/> |
+|MailIrm  <br/> |Information Rights Management (IRM)で保護されたメール アイコンを指定します。  <br/> |
+|MailIrmForwarded  <br/> |IRM で保護された転送メール アイコンを指定します。  <br/> |
+|MailIrmReplied  <br/> |メール に返信する IRM で保護されたアイコンを指定します。  <br/> |
+|SmsSubmitted  <br/> |ショート メッセージ サービス (SMS) ルーティング用に送信されるアイコン メールを指定します。  <br/> |
+|SmsRoutedToDeliveryPoint  <br/> |外部配信ポイントへの SMS ルーティングのアイコンを指定します。  <br/> |
+|SmsRoutedToExternalMessagingSystem  <br/> |外部メッセージング システムへの SMS ルーティングのアイコンを指定します。  <br/> |
+|SmsDelivered  <br/> |SMS 配信メール アイコンを指定します。  <br/> |
 |OutlookDefaultForContacts  <br/> |連絡先の既定のアイコンを指定します。  <br/> |
-|AppointmentItem  <br/> |予定アイテムアイコンを指定します。  <br/> |
-|AppointmentRecur  <br/> |定期的な予定のアイコンを指定します。  <br/> |
+|AppointmentItem  <br/> |予定アイテムのアイコンを指定します。  <br/> |
+|AppointmentRecur  <br/> |定期的な予定アイコンを指定します。  <br/> |
 |AppointmentMeet  <br/> |会議アイコンを指定します。  <br/> |
-|AppointmentMeetRecur  <br/> |[定期的な会議] アイコンを指定します。  <br/> |
-|AppointmentMeetNY  <br/> |会議への仮承諾応答のアイコンを指定します。  <br/> |
-|AppointmentMeetYes  <br/> |[会議の承諾] アイコンを指定します。  <br/> |
-|AppointmentMeetNo  <br/> |会議の辞退アイコンを指定します。  <br/> |
-|AppointmentMeetMaybe  <br/> |会議への応答の可能性があるアイコンを指定します。  <br/> |
-|AppointmentMeetCancel  <br/> |会議のキャンセルアイコンを指定します。  <br/> |
-|AppointmentMeetInfo  <br/> |[ミーティング情報] アイコンを指定します。  <br/> |
-|TaskItem  <br/> |タスクアイテムアイコンを指定します。  <br/> |
-|TaskRecur  <br/> |[定期タスク] アイコンを指定します。  <br/> |
-|TaskOwned 者  <br/> |タスクの所有者アイコンを指定します。  <br/> |
-|TaskDelegated  <br/> |タスクの委任アイコンを指定します。  <br/> |
+|AppointmentMeetRecur  <br/> |定期的な会議アイコンを指定します。  <br/> |
+|AppointmentMeetNY  <br/> |会議への暫定的な応答のアイコンを指定します。  <br/> |
+|AppointmentMeetYes  <br/> |会議の承諾アイコンを指定します。  <br/> |
+|AppointmentMeetNo  <br/> |会議が拒否されたアイコンを指定します。  <br/> |
+|AppointmentMeetMaybe  <br/> |会議への応答のアイコンを指定します。  <br/> |
+|AppointmentMeetCancel  <br/> |会議のキャンセル アイコンを指定します。  <br/> |
+|AppointmentMeetInfo  <br/> |会議情報アイコンを指定します。  <br/> |
+|TaskItem  <br/> |タスク アイテム アイコンを指定します。  <br/> |
+|TaskRecur  <br/> |定期的なタスク アイコンを指定します。  <br/> |
+|TaskOwned  <br/> |タスクが所有するアイコンを指定します。  <br/> |
+|TaskDelegated  <br/> |タスク委任アイコンを指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -95,8 +95,8 @@ ms.locfileid: "44460786"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

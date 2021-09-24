@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FolderShape
 api_type:
 - schema
 ms.assetid: 244f4f46-a33d-4764-92e3-1bddb4dc6a49
-description: FolderShape 要素は、GetFolder、FindFolder、または SyncFolderHierarchy の応答に含めるフォルダーのプロパティを指定します。
-ms.openlocfilehash: f841fcc4570604c474387dfa24ec07c9d2784f62
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: FolderShape 要素は、GetFolder、FindFolder、または SyncFolderHierarchy 応答に含めるフォルダー プロパティを識別します。
+ms.openlocfilehash: 530c9f25f17a3eba8549535bf7be37038a58c921
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461346"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518359"
 ---
 # <a name="foldershape"></a>FolderShape
 
-**Foldershape**要素は、 [getfolder](getfolder.md)、 [Findfolder](findfolder.md)、または[syncfolderhierarchy](syncfolderhierarchy.md)の応答に含めるフォルダーのプロパティを指定します。 
+**FolderShape 要素は**[、GetFolder、FindFolder、](getfolder.md)[または](findfolder.md) [SyncFolderHierarchy](syncfolderhierarchy.md)応答に含めるフォルダー プロパティを識別します。 
   
 ```xml
 <FolderShape>
@@ -43,26 +43,26 @@ ms.locfileid: "44461346"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[BaseShape](baseshape.md) <br/> |応答で返されるプロパティの基本的な構成を識別します。  <br/> |
-|[AdditionalProperties](additionalproperties.md) <br/> |応答で返される追加のプロパティを識別します。  <br/> |
+|[BaseShape](baseshape.md) <br/> |応答で返すプロパティの基本的な構成を識別します。  <br/> |
+|[AdditionalProperties](additionalproperties.md) <br/> |応答で返す追加のプロパティを識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FindFolder](findfolder.md) <br/> |メールボックス内のフォルダーを識別する要求を定義します。  <br/> この要素の XPath 式を次に示します。  <br/>  `/FindFolder` <br/> |
-|[GetFolder](getfolder.md) <br/> |Exchange ストアからフォルダーを取得するための要求を定義します。  <br/> この要素の XPath 式を次に示します。  <br/>  `/GetFolder` <br/> |
-|[SyncFolderHierarchy](syncfolderhierarchy.md) <br/> |クライアント上のフォルダー階層を同期する要求を定義します。  <br/> この要素の XPath 式を次に示します。  <br/>  `/SyncFolderHierarchy` <br/> |
+|[FindFolder](findfolder.md) <br/> |メールボックス内のフォルダーを識別するための要求を定義します。  <br/> 次に、この要素の XPath 式を示します。  <br/>  `/FindFolder` <br/> |
+|[GetFolder](getfolder.md) <br/> |フォルダー ストアからフォルダーを取得する要求Exchangeします。  <br/> 次に、この要素の XPath 式を示します。  <br/>  `/GetFolder` <br/> |
+|[SyncFolderHierarchy](syncfolderhierarchy.md) <br/> |クライアント上のフォルダー階層を同期する要求を定義します。  <br/> 次に、この要素の XPath 式を示します。  <br/>  `/SyncFolderHierarchy` <br/> |
    
 ## <a name="remarks"></a>注釈
 
-**Foldershape**要素は、 [findfolder](findfolder.md)要素の必須の子要素です。 
+**FolderShape 要素** は [、FindFolder](findfolder.md)要素の必須の子要素です。 
   
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="example"></a>例
 
-次の要求例は、受信トレイフォルダーの最初のレベルにあるすべてのフォルダーを検索する方法を示しています。
+次の要求の例は、受信トレイ フォルダーの最初のレベルにあるすべてのフォルダーを検索する方法を示しています。
   
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -86,9 +86,9 @@ ms.locfileid: "44461346"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

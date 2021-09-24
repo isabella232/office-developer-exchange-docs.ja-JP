@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ConflictingMeetings
 api_type:
 - schema
 ms.assetid: cfff7a11-7b3a-4995-9815-afedd45ebb0f
-description: '[Conflict Tingmeeting] 要素は、会議時間と競合するすべての予定表アイテムを識別します。'
-ms.openlocfilehash: dc897c9dc33117d379d89bb9bb41104ca02def1f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ConflictingMeetings 要素は、会議時間と競合するすべての予定表アイテムを識別します。
+ms.openlocfilehash: 59cefb5e276f559f448788e3b1c411337dd5eb35
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460177"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518751"
 ---
 # <a name="conflictingmeetings"></a>ConflictingMeetings
 
-[Conflict **tingmeeting** ] 要素は、会議時間と競合するすべての予定表アイテムを識別します。 
+**ConflictingMeetings** 要素は、会議時間と競合するすべての予定表アイテムを識別します。 
   
 ```xml
 <ConflictingMeetings>
@@ -29,7 +29,7 @@ ms.locfileid: "44460177"
 </ConflictingMeetings>
 ```
 
- **非 Emptyarrayofallitemstype**
+ **NonEmptyArrayOfAllItemsType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -42,36 +42,36 @@ ms.locfileid: "44460177"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |予定表アイテムのExchangeを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議出席依頼を表します。  <br/> |
-|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
+|[MeetingRequest](meetingrequest.md) <br/> |ユーザー ストア内の会議出席依頼Exchangeします。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |予定表アイテムのExchangeを表します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を使用する場合は、1つ以上の子要素を含める必要があります。
+この要素を使用する場合は、1 つ以上の子要素を含む必要があります。
   
-この要素を記述するスキーマは、Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 > [!NOTE]
-> 追加の子要素はスキーマに従って有効になりますが、 [Calendaritem](calendaritem.md)要素は、Exchange Web サービス (EWS) が競合している**会議**要素内で返す唯一の子要素です。 このトピックでは、スキーマに従って有効な子要素は表示されませんが、EWS では返されません。 
+> 追加の子要素はスキーマごとに有効ですが [、CalendarItem](calendaritem.md)要素は Exchange Web Services (EWS) が **ConflictingMeetings** 要素内で返す唯一の子要素です。 このトピックでは、スキーマごとに有効ですが、EWS によって返されない子要素は一覧表示されません。 
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

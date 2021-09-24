@@ -1,27 +1,27 @@
 ---
-title: Rid
+title: Ids
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Ids
 api_type:
 - schema
 ms.assetid: c54cdeaf-6761-4d1a-a329-fb279f0e2a64
-description: Ids 要素には、タイムゾーン定義識別子の配列が含まれています。
-ms.openlocfilehash: 1c5a6974c8d3abc318ff122f3db09d8c3472dc65
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Ids 要素には、タイム ゾーン定義識別子の配列が含まれる。
+ms.openlocfilehash: a5ff1899a50b13213e07005210609194ece61542
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457621"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529792"
 ---
-# <a name="ids"></a>Rid
+# <a name="ids"></a>Ids
 
-**Ids**要素には、タイムゾーン定義識別子の配列が含まれています。 
+**Ids 要素には**、タイム ゾーン定義識別子の配列が含まれる。 
   
 ```XML
 <Ids>
@@ -42,26 +42,26 @@ ms.locfileid: "44457621"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Id (TimeZone)](id-timezone.md) <br/> |1つのタイムゾーン定義を識別する要素。  <br/> |
+|[Id (TimeZone)](id-timezone.md) <br/> |1 つのタイム ゾーン定義を識別する要素。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetServerTimeZones](getservertimezones.md) <br/> |Exchange サーバーからタイムゾーン定義を取得するための要求を定義します。  <br/> |
+|[GetServerTimeZones](getservertimezones.md) <br/> |サーバーからタイム ゾーン定義を取得する要求をExchangeします。  <br/> |
    
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

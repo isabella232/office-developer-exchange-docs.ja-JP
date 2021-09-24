@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: eb0a7897-c642-4c93-a238-be03128af54e
-description: Searchablemaillevel要素には、Getsearchablemailemailrequest 要求から返されるメールボックスの配列が含まれています。
-ms.openlocfilehash: 5de15e1c2ae4a587052f836b189651450a1e7482
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SearchableMailboxes 要素には、GetSearchableMailboxes 要求から返されるメールボックスの配列が含まれる。
+ms.openlocfilehash: 5d8b1f19a4d4e2e78ab4d4a251d3c7538ccdd9ff
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467446"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510842"
 ---
 # <a name="searchablemailboxes"></a>SearchableMailboxes
 
-**Searchablemaillevel要素**には、 **getsearchablemailemailrequest**要求から返されるメールボックスの配列が含まれています。 
+**SearchableMailboxes 要素** には **、GetSearchableMailboxes** 要求から返されるメールボックスの配列が含まれる。 
   
 ```XML
 <SearchableMailboxes>
@@ -25,7 +25,7 @@ ms.locfileid: "44467446"
 </SearchableMailboxes>
 ```
 
- **Arrayofsearchablemailboxestoff**
+ **ArrayOfSearchableMailboxesType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -53,8 +53,8 @@ ms.locfileid: "44467446"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

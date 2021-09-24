@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 31211d0b-da0e-450c-8df2-159571fa3a19
-description: CompleteFindInGALSpeechRecognition 要素は、内部使用のみを目的としています。
-ms.openlocfilehash: 11d8153f262ea115798e0f00b43bd47390b69688
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: CompleteFindInGALSpeechRecognition 要素は、内部での使用のみを目的とします。
+ms.openlocfilehash: 13f05850174757c9d0a77875433fe4f54a49a052
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459042"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512047"
 ---
 # <a name="completefindingalspeechrecognition"></a>CompleteFindInGALSpeechRecognition
 
-**CompleteFindInGALSpeechRecognition**要素は、内部使用のみを目的としています。 
+**CompleteFindInGALSpeechRecognition** 要素は、内部での使用のみを目的とします。 
   
 ```XML
 <CompleteFindInGALSpeechRecognition />
@@ -50,8 +50,8 @@ ms.locfileid: "44459042"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空にできる  <br/> ||
    
 

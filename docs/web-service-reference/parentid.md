@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: bb7aaa46-3a04-4197-aebb-8881ff10603f
 description: ParentId 要素は、検索プレビューで親アイテムの識別子を指定します。
-ms.openlocfilehash: e09b5f9e463c7ecdfc595c87a84584f69cab3f2c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: cbef7b9419af8821f830a77a6f8e295375c975d5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529022"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519269"
 ---
 # <a name="parentid"></a>ParentId
 
-**ParentId**要素は、検索プレビューで親アイテムの識別子を指定します。 
+**ParentId 要素** は、検索プレビューで親アイテムの識別子を指定します。 
   
 ```XML
 <ParentId Id="" ChangeKey=""/>
@@ -33,8 +33,8 @@ ms.locfileid: "44529022"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|ID  <br/> |**Id**属性のテキスト値は、親アイテムの識別子です。  <br/> |
-|ChangeKey  <br/> |**Changekey**属性のテキスト値は、親アイテムの変更キーです。  <br/> |
+|ID  <br/> |Id 属性のテキスト **値** は、親アイテムの識別子です。  <br/> |
+|ChangeKey  <br/> |ChangeKey 属性の **テキスト値** は、親アイテムの変更キーです。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -42,7 +42,7 @@ ms.locfileid: "44529022"
   
 ### <a name="parent-elements"></a>親要素
 
-[Searchプレビューアイテム](searchpreviewitem.md)
+[SearchPreviewItem](searchpreviewitem.md)
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44529022"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |true  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |true  <br/> |
    
 

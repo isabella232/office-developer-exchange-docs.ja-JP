@@ -1,30 +1,30 @@
 ---
-title: Microsoft Online (POX)
+title: MicrosoftOnline (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0b88f02a-9c50-44b3-841b-560b24e37af5
-description: Microsoft Office Online 要素には、ユーザーのメールボックスが Office 365 の一部として Exchange Online または Exchange Online でホストされているかどうかを示す値が含まれています。
-ms.openlocfilehash: f3144a673a4c98aad821e21c562141b0ae00f426
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MicrosoftOnline 要素には、ユーザーのメールボックスが Exchange Online または Exchange Online の一部としてホストされているかどうかを示す値が含Office 365。
+ms.openlocfilehash: fbf230df18ca488babb1523cc7f689923eaeb55b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467985"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510946"
 ---
-# <a name="microsoftonline-pox"></a>Microsoft Online (POX)
+# <a name="microsoftonline-pox"></a>MicrosoftOnline (POX)
 
-**Microsoft Office online**要素には、ユーザーのメールボックスが Office 365 の一部として exchange online または exchange online でホストされているかどうかを示す値が含まれています。 
+**MicrosoftOnline 要素** には、ユーザーのメールボックスが Exchange Online または Exchange Online の一部としてホストされているかどうかを示す値が含Office 365。 
   
-[自動検出 (POX)](autodiscover-pox.md)
+[AutoDiscover (POX)](autodiscover-pox.md)
   
-[応答 (POX)](response-pox.md)
+[Response (POX)](response-pox.md)
   
-[アカウント (POX)](account-pox.md)
+[Account (POX)](account-pox.md)
   
-[Microsoft Online (POX)](microsoftonline-pox.md)
+[MicrosoftOnline (POX)](microsoftonline-pox.md)
   
 ```XML
 <MicrosoftOnline/>
@@ -46,15 +46,15 @@ ms.locfileid: "44467985"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[アカウント (POX)](account-pox.md) <br/> |ユーザーのアカウント設定を指定します。または、エラー応答を含みます。  <br/> |
+|[Account (POX)](account-pox.md) <br/> |ユーザーのアカウント設定を指定するか、エラー応答を含む。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-テキスト値は、ユーザーのメールボックスが Exchange Online でホストされているかどうかを示します。 この値は、ユーザーのメールボックスが Exchange Online でホストされている場合は**true**です。それ以外の場合は**false**。
+テキスト値は、ユーザーのメールボックスがユーザーのメールボックスでホストされているかどうかをExchange Online。 この値は **、ユーザー** のメールボックスがホストされている場合は true Exchange Online。それ以外の場合は **false です**。
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+[POX 自動検出 XML 要素のExchange](pox-autodiscover-xml-elements-for-exchange.md)
 

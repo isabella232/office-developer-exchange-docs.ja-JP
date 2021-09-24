@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ConversationAction
 api_type:
 - schema
 ms.assetid: 9ecea41a-3860-4569-8e9b-284b451fc4e0
-description: ConversationAction 要素には、単一の会話に適用される1つのアクションが含まれています。
-ms.openlocfilehash: cb7d874f787b105d5185749dfaf1e940d2411d89
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ConversationAction 要素には、1 つのスレッドに適用する 1 つのアクションが含まれる。
+ms.openlocfilehash: 04af68b4ad8442160792fd3aa9f3259058a0f3a4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529253"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59531107"
 ---
 # <a name="conversationaction"></a>ConversationAction
 
-**ConversationAction**要素には、単一の会話に適用される1つのアクションが含まれています。 
+**ConversationAction 要素には**、1 つのスレッドに適用する 1 つのアクションが含まれる。 
   
 [ApplyConversationAction](applyconversationaction.md)
   
@@ -57,22 +57,22 @@ ms.locfileid: "44529253"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[アクション (ConversationActionTypeType)](action-conversationactiontypetype.md) <br/> |[ConversationId](conversationid.md)要素によって指定された会話に対して実行するアクションが含まれています。 この要素が存在している必要があります。  <br/> |
-|[ConversationId](conversationid.md) <br/> |スレッドのアイテムに適用される[action (ConversationActionTypeType)](action-conversationactiontypetype.md)要素によって指定されたアクションを実行する会話の識別子が含まれます。 この要素が存在している必要があります。  <br/> |
-|[ContextFolderId](contextfolderid.md) <br/> |フォルダーを使用する操作を対象とするフォルダーを示します。 この要素は、ターゲットフォルダー内の会話アイテムのコピー、削除、移動、および読み取り状態の設定時に存在する必要があります。  <br/> |
-|[ConversationLastSyncTime](conversationlastsynctime.md) <br/> |会話が最後に同期された日付と時刻が含まれます。 この要素は、指定された時刻までに受信した会話内のすべてのアイテムを削除しようとするときに存在する必要があります。  <br/> |
-|[ProcessRightAway](processrightaway.md) <br/> |アクションがサーバー上での処理を開始するとすぐに応答が送信されるか、またはアクションの完了後に応答が送信されるかを示します。 この要素は、要求されたアクションに応答を非同期送信するために存在する必要があります。  <br/> |
-|[DestinationFolderId](destinationfolderid.md) <br/> |コピー操作と移動操作の宛先フォルダーを指定します。  <br/> |
-|[Categories](categories-ex15websvcsotherref.md) <br/> |会話内のアイテムが属するカテゴリを識別する文字列のコレクションが含まれています。  <br/> |
-|[Enablealways Delete](enablealwaysdelete.md) <br/> |スレッド内のすべての新規アイテムの削除を有効にするフラグを指定します。  <br/> |
-|[IsRead](isread.md) <br/> |メッセージが開封されたかどうかを示します。  <br/> |
-|[DeleteType](deletetype.md) <br/> |スレッド内のアイテムが削除される方法を示します。  <br/> |
+|[Action (ConversationActionTypeType)](action-conversationactiontypetype.md) <br/> |ConversationId 要素で指定された会話に対して実行するアクション [を格納](conversationid.md) します。 この要素が存在する必要があります。  <br/> |
+|[ConversationId](conversationid.md) <br/> |Action [(ConversationActionTypeType)](action-conversationactiontypetype.md) 要素で指定されたアクションをスレッド内のアイテムに適用する会話の識別子を格納します。 この要素が存在する必要があります。  <br/> |
+|[ContextFolderId](contextfolderid.md) <br/> |フォルダーを使用するアクションの対象となるフォルダーを示します。 この要素は、ターゲット フォルダー内の会話アイテムの読み取り状態をコピー、削除、移動、および設定するときに存在する必要があります。  <br/> |
+|[ConversationLastSyncTime](conversationlastsynctime.md) <br/> |会話が最後に同期された日時を格納します。 この要素は、指定した時間まで受信した会話内のすべてのアイテムを削除しようとするときに存在する必要があります。  <br/> |
+|[ProcessRightAway](processrightaway.md) <br/> |アクションがサーバーで処理を開始した直後に応答が送信されるかどうか、またはアクションが完了した後に応答が送信されるかどうかを示します。 要求されたアクションに非同期で送信される応答には、この要素が存在する必要があります。  <br/> |
+|[DestinationFolderId](destinationfolderid.md) <br/> |コピーおよび移動アクションの移動先フォルダーを示します。  <br/> |
+|[Categories](categories-ex15websvcsotherref.md) <br/> |会話内のアイテムが属するカテゴリを識別する文字列のコレクションを格納します。  <br/> |
+|[EnableAlwaysDelete](enablealwaysdelete.md) <br/> |会話内のすべての新しいアイテムの削除を有効にするフラグを指定します。  <br/> |
+|[IsRead](isread.md) <br/> |メッセージが読み取りされているかどうかを示します。  <br/> |
+|[DeleteType](deletetype.md) <br/> |会話内のアイテムを削除する方法を示します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ConversationActions](conversationactions.md) <br/> |会話のコレクションと、それらに適用するアクションが含まれています。  <br/> |
+|[ConversationActions](conversationactions.md) <br/> |会話のコレクションと、会話に適用するアクションが含まれる。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -81,26 +81,26 @@ ms.locfileid: "44529253"
 |**値**|**説明**|
 |:-----|:-----|
 |AlwaysCategorize  <br/> |常に会話を分類します。  <br/> |
-|常に削除  <br/> |常に会話を削除します。  <br/> |
-|常に移動  <br/> |常に会話を移動します。  <br/> |
+|AlwaysDelete  <br/> |常に会話を削除します。  <br/> |
+|AlwaysMove  <br/> |常に会話を移動します。  <br/> |
 |削除  <br/> |会話を削除します。  <br/> |
 |Move  <br/> |会話を移動します。  <br/> |
 |Copy  <br/> |会話をコピーします。  <br/> |
 |SetReadState  <br/> |会話の読み取り状態を設定します。  <br/> |
-|SetRetentionPolicy  <br/> |会話のアイテム保持ポリシーを設定します。  <br/> |
+|SetRetentionPolicy  <br/> |会話の保持ポリシーを設定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
+この要素を記述するスキーマは、Exchange Web Services をホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -109,5 +109,5 @@ ms.locfileid: "44529253"
 [ApplyConversationAction 操作](applyconversationaction-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

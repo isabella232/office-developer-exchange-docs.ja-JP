@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c444f818-412b-41ac-9523-50246e50eae0
-description: ContactIds 要素には、連絡先アイテムの識別子の配列が含まれています。
-ms.openlocfilehash: 5c3b5621808a6931760433148e0cfe3239cd75f1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ContactIds 要素には、連絡先アイテム識別子の配列が含まれる。
+ms.openlocfilehash: 05c26af6dc1a5b826025e4145116d3df5eee8d62
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460191"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529218"
 ---
 # <a name="contactids"></a>ContactIds
 
-**ContactIds**要素には、連絡先アイテムの識別子の配列が含まれています。 
+**ContactIds 要素には**、連絡先アイテム識別子の配列が含まれる。 
   
 ```XML
 <ContactIds>
@@ -28,7 +28,7 @@ ms.locfileid: "44460191"
 </ContactIds>
 ```
 
- **非 Emptyarrayofbaseitemidstype**
+ **NonEmptyArrayOfBaseItemIdsType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -56,8 +56,8 @@ ms.locfileid: "44460191"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - BaseItemId
 api_type:
 - schema
 ms.assetid: c762e60e-08bb-430a-af5e-fa991f33a44f
-description: BaseItemId 要素は、メールボックス内のアイテムを表す Id の基本クラスを表します。 これは抽象クラスであるため、インスタンスドキュメントでは発生しません。
-ms.openlocfilehash: d4f690bc044ed4a1bc0aa154bd3921a3078d6b45
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: BaseItemId 要素は、メールボックス内のアイテムを表す ID の基本クラスを表します。 これは抽象クラスであるため、インスタンス ドキュメントでは発生しません。
+ms.openlocfilehash: 28c933947a582de4245dcb89d86142a3a92debad
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527426"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518919"
 ---
 # <a name="baseitemid"></a>BaseItemId
 
-**Baseitemid**要素は、メールボックス内のアイテムを表す id の基本クラスを表します。 これは抽象クラスであるため、インスタンスドキュメントでは発生しません。 
+**BaseItemId 要素** は、メールボックス内のアイテムを表す ID の基本クラスを表します。 これは抽象クラスであるため、インスタンス ドキュメントでは発生しません。 
   
 ```xml
 <BaseItemId/>
@@ -46,22 +46,22 @@ ms.locfileid: "44527426"
   
 ## <a name="remarks"></a>注釈
 
-この要素は、アイテムの識別子の抽象基本型です。 この要素は、Web サービス呼び出しでは使用されません。
+この要素は、アイテム識別子の抽象基本型です。 この要素は、Web サービス呼び出しでは使用されません。
   
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

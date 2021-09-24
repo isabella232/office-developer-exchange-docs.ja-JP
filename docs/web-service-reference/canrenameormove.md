@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CanRenameOrMove
 api_type:
 - schema
 ms.assetid: fe0cdb04-5f2b-4f1d-9d12-7ace0883cd86
-description: CanRenameOrMove 要素は、管理フォルダーの名前を変更するか、または顧客によって移動できるかどうかを示します。
-ms.openlocfilehash: eb6aaeb8b0edcab5b67212c426a44daf32a0cf73
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: CanRenameOrMove 要素は、管理フォルダーの名前を変更するか、顧客が移動できるかどうかを示します。
+ms.openlocfilehash: 7c452ed65860939e834d77894bdb5e913ecb36a8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463364"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518808"
 ---
 # <a name="canrenameormove"></a>CanRenameOrMove
 
-**Canrenameormove**要素は、管理フォルダーの名前を変更するか、または顧客によって移動できるかどうかを示します。 
+**CanRenameOrMove** 要素は、管理フォルダーの名前を変更するか、顧客が移動できるかどうかを示します。 
   
 ```xml
 <CanRenameOrMove/>
@@ -44,28 +44,28 @@ ms.locfileid: "44463364"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ManagedFolderInformation](managedfolderinformation.md) <br/> |管理フォルダーに関する情報を格納します。  <br/> |
+|[ManagedFolderInformation](managedfolderinformation.md) <br/> |管理フォルダーに関する情報が含まれる。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、ブール値を表します。 値が**true の場合**は、フォルダーの名前を変更するか、移動することができます。値が**false**の場合、フォルダーの名前を変更または移動することはできません。 
+テキスト値はブール値を表します。 値 true は **、** フォルダーの名前を変更または移動できる状態を示します。false の **値は** 、フォルダーの名前を変更または移動できないことを示します。 
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

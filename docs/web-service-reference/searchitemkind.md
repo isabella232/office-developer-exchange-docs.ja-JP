@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 89513c26-b751-4619-a300-0ed8f55b0102
 description: SearchItemKind 要素は、FindMailboxStatisticsByKeyword 操作で検索されるアイテムの種類を示します。
-ms.openlocfilehash: e0625ac169c3083702494c094da15d38d220fe67
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 93803d181f32d88c30ab0fa9a72bb92f22907dde
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464001"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510856"
 ---
 # <a name="searchitemkind"></a>SearchItemKind
 
-**Searchitemkind**要素は、 **FindMailboxStatisticsByKeyword**操作で検索されるアイテムの種類を示します。 
+**SearchItemKind** 要素は **、FindMailboxStatisticsByKeyword** 操作で検索されるアイテムの種類を示します。 
   
 ```XML
 <SearchItemKind>Email | Meetings | Tasks | Notes | Docs | Journals | Contacts | Im | Voicemail | Faxes | Posts | Rssfeeds</SearchItemKind>
@@ -42,31 +42,31 @@ ms.locfileid: "44464001"
   
 ## <a name="text-value"></a>テキスト値
 
-**Searchitemkind**要素のテキスト値は、キーワードを検索するアイテムの種類です。 次のリストには、 **Searchitemkind**要素で使用できるテキスト値が含まれています。 
+**SearchItemKind 要素のテキスト** 値は、キーワードを検索するアイテムの種類です。 次の一覧には **、SearchItemKind** 要素で使用できるテキスト値が含まれます。 
   
-- **Email** -キーワードを検索する電子メールメッセージを示します。 
+- **[電子** メール] - 電子メール メッセージでキーワードを検索します。 
     
-- **会議**-キーワードを検索する会議を指定します。 
+- **[会議** ] - 会議でキーワードを検索します。 
     
-- **タスク**-キーワードを検索するタスクを指定します。 
+- **タスク** - タスクがキーワードを検索する方法を示します。 
     
-- **メモ**-キーワードに対して notes が検索されることを示します。 
+- **[メモ** ] - メモでキーワードを検索します。 
     
-- **Docs** -ドキュメントがキーワードで検索されることを示します。 
+- **Docs** - ドキュメントがキーワードを検索する方法を示します。 
     
-- **ジャーナル**-キーワードに対してジャーナルが検索されることを示します。 
+- **Journals** - キーワードを検索するジャーナルを示します。 
     
-- **連絡先**-キーワードを検索することを示します。 
+- **連絡先** - 連絡先がキーワードを検索する方法を示します。 
     
-- **Im** -キーワードを検索するインスタントメッセージを示します。 
+- **Im** - インスタント メッセージでキーワードを検索します。 
     
-- **ボイスメール**-キーワードに対してボイスメールが検索されたことを示します。 
+- **ボイス** メール - ボイス メールでキーワードを検索します。 
     
-- **Fax** -キーワードが検索されたことを示します。 
+- **FAX -** FAX がキーワードを検索する方法を示します。 
     
-- **投稿**-キーワードに対して投稿が検索されることを示します。 
+- **投稿** - 投稿がキーワードで検索されるかどうかを示します。 
     
-- **Rssfeeds** -RSS フィードがキーワードに対して検索されることを示します。 
+- **Rssfeeds** - RSS フィードでキーワードを検索します。 
     
 ## <a name="remarks"></a>注釈
 
@@ -79,8 +79,8 @@ ms.locfileid: "44464001"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

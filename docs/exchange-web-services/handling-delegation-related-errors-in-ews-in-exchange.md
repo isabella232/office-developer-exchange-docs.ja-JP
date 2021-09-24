@@ -3,15 +3,15 @@ title: Exchange の EWS での委任に関連するエラーの処理
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 631d364f-e324-4838-a92c-820286f771f8
 description: Exchange の EWS マネージ API または EWS を使用して開発したアプリケーションの委任に関連するエラーを処理する方法を確認します。
-ms.openlocfilehash: 145783c4e7f49ed6e2aa3a2dbe0d10909e06d7e8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 17e4e7898f5cbed7a6dc524a84db6ba4080eab88
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455353"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512297"
 ---
 # <a name="handling-delegation-related-errors-in-ews-in-exchange"></a>Exchange の EWS での委任に関連するエラーの処理
 
@@ -26,7 +26,7 @@ Exchange の EWS マネージ API または EWS を使用して開発したア�
 |ErrorItemNotFound  <br/> ErrorFolderNotFound  <br/> |アクセス権のないメールボックス、フォルダー、またはアイテムで操作を実行するとき。  <br/> |[UpdateDelegates](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.updatedelegates%28v=exchg.80%29.aspx) EWS マネージ API メソッドまたは [UpdateDelegate](https://msdn.microsoft.com/library/03f618ac-ad1a-4772-9b81-c5bb0f12d6ab%28Office.15%29.aspx) EWS 操作を呼び出し、要求を再試行することによって、代理人がフォルダーまたはアイテムにアクセスできるように代理人のアクセス許可を更新します。  <br/> |
 |ErrorAccessDenied  <br/> |変更を行う十分な権限が自分にないアイテムを変更するとき。  <br/> |**UpdateDelegate** EWS マネージ API メソッドまたは **UpdateDelegate** EWS 操作を呼び出し、要求を再試行することによって、代理人のアクセス許可を更新します。  <br/> |
 |ErrorDelegateCannotAddOwner  <br/> |メールボックスの所有者をメールボックスの代理人として追加しようとするとき。  <br/> |メールボックスの所有者ではなく、[別のユーザーを代理人として追加](how-to-add-and-remove-delegates-by-using-ews-in-exchange.md)します。  <br/> |
-|ErrorDelegateAlreadyExists  <br/> |代理人が既に存在する場合に代理人を追加するとき。  <br/> |メールボックスの所有者の代理人が既に存在するため、何もする必要はありません。 または、既存の代理人のアクセス許可を変更しようとする場合は、**UpdateDelegates** メソッドまたは **UpdateDelegate** 操作を使用します。  <br/> |
+|ErrorDelegateAlreadyExists  <br/> |代理人が既に存在する場合に代理人を追加するとき。  <br/> |メールボックスの所有者の代理人が既に存在するため、何もする必要はありません。または、既存の代理人のアクセス許可を変更しようとする場合は、**UpdateDelegates** メソッドまたは **UpdateDelegate** 操作を使用します。<br/> |
 |ErrorNotDelegate  <br/> |メールボックスの代理アクセス許可を持たないユーザーの代理アクセス許可を変更するとき。  <br/> |ユーザーのアクセス許可を更新または削除する前に、メールボックスの[ユーザーを代理人として追加](how-to-add-and-remove-delegates-by-using-ews-in-exchange.md)します。  <br/> |
 |ErrorDelegateNoUser  <br/> |Active Directory ドメイン サービス (AD DS) に含まれないユーザーの代理アクセス許可を変更するとき。  <br/> |AD DS にユーザーを作成するか、要求内の代理人の情報を修正します。  <br/> |
 |ErrorSubscriptionDelegateAccessNotSupported  <br/> |代理人を使用して、メールボックスの所有者の代理として通知をサブスクライブするとき。  <br/> |メールボックスの所有者として通知をサブスクライブします。  <br/> |

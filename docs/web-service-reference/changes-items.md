@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Changes
 api_type:
 - schema
 ms.assetid: d3139fef-0455-4b89-babd-5d6783b50a58
 description: Changes 要素には、クライアント上のアイテムとサーバー上のアイテムの違いの種類を表す変更の種類のシーケンス配列がExchangeされます。
-ms.openlocfilehash: ede81d8ecae9751c477ae05cbd13f914fedf8e0f
-ms.sourcegitcommit: 357b882a02e37b380a23b8a45b15f9c006a40b02
+ms.openlocfilehash: 3c6cbc72e4de10401de12df715129a004f8c5d7e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58764631"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518793"
 ---
 # <a name="changes-items"></a>Changes (Items)
 
@@ -64,7 +64,7 @@ ms.locfileid: "58764631"
 |:-----|:-----|
 |[SyncFolderItemsResponseMessage](syncfolderitemsresponsemessage.md) <br/> |[SyncFolderItems](syncfolderitems-operation.md)操作要求の状態と結果を格納します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
@@ -75,7 +75,7 @@ ms.locfileid: "58764631"
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |スキーマ名  <br/> |メッセージ スキーマ  <br/> |
 |検証ファイル  <br/> |Messages.xsd  <br/> |
-|空の場合  <br/> |不正解  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

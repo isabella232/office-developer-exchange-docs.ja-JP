@@ -5,45 +5,45 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5e788016-68e0-4a3f-9243-03f6b6c6b389
 description: RemoveImGroup EWS 操作に関する情報を検索します。
-ms.openlocfilehash: b5e38404cbb1907a1118ab3ae8e56abb5a8d5e41
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 2cab052ac19048b857277e28efa268cc2ca7b68b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456756"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519066"
 ---
 # <a name="removeimgroup-operation"></a>RemoveImGroup 操作
 
-**Removeimgroup** EWS 操作に関する情報を検索します。 
+**RemoveImGroup** EWS 操作に関する情報を検索します。 
   
-**Removeimgroup**操作は、1つのインスタントメッセージング (IM) グループをメールボックスから削除します。 
+**RemoveImGroup 操作** では、メールボックスから 1 つのインスタント メッセージング (IM) グループが削除されます。 
   
 この操作は Exchange Server 2013 で導入されました。
   
 ## <a name="using-the-removeimgroup-operation"></a>RemoveImGroup 操作の使用
 
-**Removeimgroup**操作は、1つのグループ識別子引数のみを受け取ります。 
+**RemoveImGroup 操作は**、1 つのグループ識別子引数のみを受け取ります。 
   
 ### <a name="removeimgroup-operation-soap-headers"></a>RemoveImGroup 操作 SOAP ヘッダー
 
-**Removeimgroup**操作では、次の表に示す SOAP ヘッダーを使用できます。 
+**RemoveImGroup 操作** では、次の表に示す SOAP ヘッダーを使用できます。 
   
-|**ヘッダー名**|**要素**|**説明**|
+|**ヘッダー名**|**Element**|**説明**|
 |:-----|:-----|:-----|
-|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |RFC 3066 で定義されているように、メールボックスへのアクセスに使用されるカルチャ (言語の識別用のタグ) を識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは応答に適用されます。  <br/> |
+|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |メールボックスへのアクセスに使用する RFC 3066「言語の識別用タグ」で定義されているカルチャを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマ バージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは、応答に適用されます。  <br/> |
    
 ## <a name="removeimgroup-operation-request-example"></a>RemoveImGroup 操作要求の例
 
-次の**Removeimgroup**操作要求の例は、IM グループを削除する方法を示しています。 
+**RemoveImGroup 操作要求の次の例** は、IM グループを削除する方法を示しています。 
   
 > [!NOTE]
-> このグループ ID は読みやすいように短縮されています。 
+> 読みやすさを維持するために、グループ ID が短縮されました。 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -69,9 +69,9 @@ ms.locfileid: "44456756"
     
 - [GroupId](groupid.md)
     
-## <a name="successful-removeimgroup-operation-response"></a>RemoveImGroup 操作の応答が正常に行われる
+## <a name="successful-removeimgroup-operation-response"></a>RemoveImGroup 操作の正常な応答
 
-次の例は、 **Removeimgroup**操作要求に対する正常な応答を示しています。 
+次の例は **、RemoveImGroup** 操作要求に対する正常な応答を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -105,7 +105,7 @@ ms.locfileid: "44456756"
     
 ## <a name="removeimgroup-operation-errorinvalidimgroupid-error-response"></a>RemoveImGroup 操作 ErrorInvalidImGroupId エラー応答
 
-次の例は、 **Removeimgroup**操作要求へのエラー応答を示しています。 メールボックスに存在しないグループを削除しようとすると、次のエラー応答が発生します。 
+次の例は **、RemoveImGroup** 操作要求に対するエラー応答を示しています。 メールボックスに存在しないグループを削除しようとすると、次のエラー応答が発生します。 
   
 ```XML
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
@@ -142,11 +142,11 @@ ms.locfileid: "44456756"
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-EWS で汎用的でこの操作に固有の追加のエラーコードについては、「応答」[を参照してください。](responsecode.md)
+EWS に汎用的で、この操作に固有の追加のエラー コードについては [、「ResponseCode」を参照してください](responsecode.md)。
   
 ## <a name="removeimgroup-operation-errorinvalididmalformed-error-response"></a>RemoveImGroup 操作 ErrorInvalidIdMalformed エラー応答
 
-次の例は、 **Removeimgroup**操作要求へのエラー応答を示しています。 誤って書式設定されたグループ識別子を持つグループを削除しようとすると、次のエラー応答が発生します。 
+次の例は **、RemoveImGroup** 操作要求に対するエラー応答を示しています。 正しくない形式のグループ識別子を持つグループを削除しようとすると、次のエラー応答が発生します。 
   
 ```XML
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">

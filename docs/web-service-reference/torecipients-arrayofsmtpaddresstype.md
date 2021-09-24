@@ -1,23 +1,23 @@
 ---
-title: Torの Pipi(ArrayOfSmtpAddressType)
+title: ToRecipients (ArrayOfSmtpAddressType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0e6fb89c-de19-48e7-af63-c41ebdf0b8e9
-description: ToRecipients 要素は、アイテムが送信された受信者のリストを指定します。
-ms.openlocfilehash: 09b2b1036d8553d4171819bb9e59bbbb01583cb6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ToRecipients 要素は、アイテムが送信された受信者の一覧を指定します。
+ms.openlocfilehash: ef6e1b78501e8fac3e5c18fe6ffeda17bf24ac00
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468580"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59527259"
 ---
-# <a name="torecipients-arrayofsmtpaddresstype"></a>Torの Pipi(ArrayOfSmtpAddressType)
+# <a name="torecipients-arrayofsmtpaddresstype"></a>ToRecipients (ArrayOfSmtpAddressType)
 
-**Torecipients**要素は、アイテムが送信された受信者のリストを指定します。 
+**ToRecipients 要素** は、アイテムが送信された受信者の一覧を指定します。 
   
 ```XML
 <ToRecipients>
@@ -40,7 +40,7 @@ ms.locfileid: "44468580"
   
 ### <a name="parent-elements"></a>親要素
 
-[Searchプレビューアイテム](searchpreviewitem.md)
+[SearchPreviewItem](searchpreviewitem.md)
   
 ## <a name="remarks"></a>注釈
 
@@ -53,8 +53,8 @@ ms.locfileid: "44468580"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f012c2e3-9719-47fc-81ef-ba613263779b
-description: Country 要素は、住所の国番号を識別します。
-ms.openlocfilehash: 7f5a67128c314d8a6f546735c00966319e64ea36
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Country 要素は、郵便番号内の国識別子を識別します。
+ms.openlocfilehash: 52a16e00bb828aa478674c39717f19d0c70ffba7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529232"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529038"
 ---
 # <a name="country"></a>国
 
-**Country**要素は、住所の国番号を識別します。 
+**Country 要素** は、郵便番号内の国識別子を識別します。 
   
 ```XML
 <Country></Country>
@@ -38,11 +38,11 @@ ms.locfileid: "44529232"
   
 ### <a name="parent-elements"></a>親要素
 
-["Postaladdress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)
+[PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**Country**要素のテキスト値は国識別子です。 
+Country 要素のテキスト **値** は国識別子です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44529232"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

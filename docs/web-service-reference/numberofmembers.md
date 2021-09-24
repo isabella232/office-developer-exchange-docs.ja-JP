@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - NumberOfMembers
 api_type:
 - schema
 ms.assetid: 845fb877-de49-4e26-8885-6f026edd9ee9
-description: NumberOfMembers 要素は、配布リスト内のユーザー、リソース、ルームの数を表します。
-ms.openlocfilehash: c91087f42d806afb0a0d3d607cc84f14a1a6c1b0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: NumberOfMembers 要素は、配布リスト内のユーザー、リソース、および会議室の数を表します。
+ms.openlocfilehash: d1a0f2afc1935f846dbe3d5ce1ba4385cf3cf8dd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462599"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529794"
 ---
 # <a name="numberofmembers"></a>NumberOfMembers
 
-**Numberofmembers**要素は、配布リスト内のユーザー、リソース、ルームの数を表します。 
+**NumberOfMembers** 要素は、配布リスト内のユーザー、リソース、および会議室の数を表します。 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -62,22 +62,22 @@ ms.locfileid: "44462599"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GroupAttendeeConflictData](groupattendeeconflictdata.md) <br/> |利用可能なユーザー数、競合しているユーザーの数、および推奨される会議時間の配布リストに空き時間情報を持たないユーザーの数についての集約競合情報を格納します。  <br/> この要素の XPath 式を次に示します。  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]/AttendeeConflictDataArray/GroupAttendeeConflictData` <br/> |
+|[GroupAttendeeConflictData](groupattendeeconflictdata.md) <br/> |利用可能なユーザー数、競合しているユーザーの数、および推奨される会議時間の配布リストに可用性情報を持つユーザーの数に関する集約競合情報が含まれる。  <br/> 次に、この要素の XPath 式を示します。  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]/AttendeeConflictDataArray/GroupAttendeeConflictData` <br/> |
    
 ## <a name="remarks"></a>注釈
 
-**Numberofmembers**要素の最大値は100です。 
+**NumberOfMembers** 要素の最大値は 100 です。 
   
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -88,5 +88,5 @@ ms.locfileid: "44462599"
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[ユーザーの空き時間情報の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[ユーザーの可用性の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

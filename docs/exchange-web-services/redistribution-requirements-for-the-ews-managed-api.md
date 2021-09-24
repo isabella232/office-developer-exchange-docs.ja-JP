@@ -3,15 +3,15 @@ title: EWS マネージ API の再配布の要件
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8b206274-eaa4-40d3-b504-af27335c8f43
 description: EWS マネージ API アセンブリをアプリケーションと共に再配布する方法を紹介します。
-ms.openlocfilehash: e64b4cdb8938caa819ba30621112a25946ef0424
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: f43156838c735cfc17106deb7860329d3da6c07a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463826"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59531331"
 ---
 # <a name="redistribution-requirements-for-the-ews-managed-api"></a>EWS マネージ API の再配布の要件
 

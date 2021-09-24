@@ -1,27 +1,27 @@
 ---
-title: パス
+title: Path
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Path
 api_type:
 - schema
 ms.assetid: 5829149e-7bfe-4820-bcc6-910e9264acc9
-description: Path 要素は、すべてのプロパティ識別子の基本スキーマの種類です。 この型は abstract で、インスタンスドキュメント内で直接発生することはありません。
-ms.openlocfilehash: 5ba18084243e9720a76b9ac28023778c6d546bc4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Path 要素は、すべてのプロパティ識別子の基本スキーマ型です。 この型は抽象型であり、インスタンス ドキュメント内で直接発生しません。
+ms.openlocfilehash: 3d0f95e27c788a911ed11b0eb86444c5fc273fbc
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529015"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519262"
 ---
-# <a name="path"></a>パス
+# <a name="path"></a>Path
 
-**Path**要素は、すべてのプロパティ識別子の基本スキーマの種類です。 この型は abstract で、インスタンスドキュメント内で直接発生することはありません。 
+**Path 要素** は、すべてのプロパティ識別子の基本スキーマ型です。 この型は抽象型であり、インスタンス ドキュメント内で直接発生しません。 
   
 ```xml
 <Path/>
@@ -46,7 +46,7 @@ ms.locfileid: "44529015"
   
 ## <a name="remarks"></a>注釈
 
-**Path**要素を置き換えるには、次の要素を使用します。 
+Path 要素の代わりに使用される要素は **次のとおりです。** 
   
 - [FieldURI](fielduri.md)
     
@@ -56,20 +56,20 @@ ms.locfileid: "44529015"
     
 - [ExtendedFieldURI](extendedfielduri.md)
     
-この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

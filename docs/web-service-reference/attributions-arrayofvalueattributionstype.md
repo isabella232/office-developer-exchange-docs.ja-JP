@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7f36b6ee-8ecf-48c9-8cb6-dfb2da0ce2a2
-description: Attributions 要素は、関連付けられた Value 要素の Attributions の配列を指定します。
-ms.openlocfilehash: 9fd552670c529009838125063869f65e130c1e63
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Attributions 要素は、関連付けられた Value 要素の属性の配列を指定します。
+ms.openlocfilehash: e5483e8e7ef4745e8025106ae1f1c52e91987183
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463994"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529329"
 ---
 # <a name="attributions-arrayofvalueattributionstype"></a>Attributions (ArrayOfValueAttributionsType)
 
-**Attributions**要素は、関連付けられた**Value**要素の Attributions の配列を指定します。 
+**Attributions 要素** は、関連付けられた Value 要素の属性の配列 **を指定** します。 
   
 ```XML
 <Attributions>
@@ -38,19 +38,19 @@ ms.locfileid: "44463994"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[属性 (string)](attribution-string.md) <br/> |属性を識別するために使用する文字列を指定します。  <br/> |
+|[Attribution (string)](attribution-string.md) <br/> |属性の識別に使用する文字列を指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[BodyContentAttributedValue](bodycontentattributedvalue.md) <br/> |アイテムの本文のコンテンツを指定します。  <br/> |
-|[EmailAddressAttributedValue](emailaddressattributedvalue.md) <br/> |電子メールアドレスの配列のインスタンスと、それに関連付けられている attributions を指定します。  <br/> |
-|[ExtendedPropertyAttributedValue](extendedpropertyattributedvalue.md) <br/> |ペルソナの拡張プロパティを指定します。  <br/> |
-|[PhoneNumberAttributedValue](phonenumberattributedvalue.md) <br/> |電話番号の配列のインスタンスと、それに関連付けられている attributions を指定します。  <br/> |
-|[PostalAddressAttributedValue](postaladdressattributedvalue.md) <br/> |郵送先住所の配列のインスタンスと、それに関連付けられている attributions を指定します。  <br/> |
-|[StringArrayAttributedValue](stringarrayattributedvalue.md) <br/> |Persona 要素の文字列データの配列のインスタンスを指定します。  <br/> |
-|[StringAttributedValue](stringattributedvalue.md) <br/> |Persona 要素に関連付けられている属性の配列のインスタンスを指定します。  <br/> |
+|[BodyContentAttributedValue](bodycontentattributedvalue.md) <br/> |アイテムの本文の内容を指定します。  <br/> |
+|[EmailAddressAttributedValue](emailaddressattributedvalue.md) <br/> |電子メール アドレスの配列とその関連付けられた属性のインスタンスを指定します。  <br/> |
+|[ExtendedPropertyAttributedValue](extendedpropertyattributedvalue.md) <br/> |ペルサの拡張プロパティを指定します。  <br/> |
+|[PhoneNumberAttributedValue](phonenumberattributedvalue.md) <br/> |電話番号の配列とその関連付けられた属性のインスタンスを指定します。  <br/> |
+|[PostalAddressAttributedValue](postaladdressattributedvalue.md) <br/> |住所の配列とその関連付けられた属性のインスタンスを指定します。  <br/> |
+|[StringArrayAttributedValue](stringarrayattributedvalue.md) <br/> |ペルサ要素の文字列データの配列のインスタンスを指定します。  <br/> |
+|[StringAttributedValue](stringattributedvalue.md) <br/> |ペルサ要素に関連付けられた属性の配列内のインスタンスを指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -64,10 +64,10 @@ ms.locfileid: "44463994"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

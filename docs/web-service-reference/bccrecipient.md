@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - BccRecipient
 api_type:
 - schema
 ms.assetid: 4ef0cff5-8a5a-4d76-9d2b-938774d8fc1b
-description: BccRecipient 要素は、電子メールメッセージのブラインドカーボンコピー (Bcc) を受信するための受信者を表します。
-ms.openlocfilehash: 8296af1d74338bdfb1f4cb7bc7449ad91a9cd531
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: BccRecipient 要素は、電子メール メッセージのブラインド カーボン コピー (Bcc) を受信する受信者を表します。
+ms.openlocfilehash: 178606d9c27becbf6fea5e7a9a694fb67feadc49
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461528"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59526866"
 ---
 # <a name="bccrecipient"></a>BccRecipient
 
-**BccRecipient**要素は、電子メールメッセージのブラインドカーボンコピー (bcc) を受信するための受信者を表します。 
+**BccRecipient** 要素は、電子メール メッセージのブラインド カーボン コピー (Bcc) を受信する受信者を表します。 
   
 ```XML
 <BccRecipient>true | false</BccRecipient>
@@ -44,11 +44,11 @@ ms.locfileid: "44461528"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[受信者 Trackingイベント](recipienttrackingevent.md) <br/> |受信者に対する1つのイベントに関する情報が含まれています。  <br/> |
+|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |受信者の 1 つのイベントの情報を格納します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-この要素は、 **true**または**false**のいずれかになります。 値**true**は、受信者がブラインドカーボンコピーされたことを示します。値が**false**の場合、受信者がブラインドカーボンコピーされていないことを示します。 
+この要素には **、true** または false を **指定できます**。 true の値 **は** 、受信者がブラインド カーボン コピーされた状態を示します。false の **値は** 、受信者がブラインド カーボン コピーを行っていないかどうかを示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -59,13 +59,13 @@ ms.locfileid: "44461528"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

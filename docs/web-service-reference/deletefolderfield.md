@@ -5,28 +5,28 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DeleteFolderField
 api_type:
 - schema
 ms.assetid: f9c2187b-4c60-4358-b4b4-ede50eadae48
-description: DeleteFolderField 要素は、UpdateFolder 呼び出しの実行中にフォルダーから特定のプロパティを削除する操作を表します。
-ms.openlocfilehash: a0b48b667c8c8afbd5729d5deb84359a6a6ccc25
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: DeleteFolderField 要素は、UpdateFolder 呼び出し中にフォルダーから特定のプロパティを削除する操作を表します。
+ms.openlocfilehash: b2a7b94cb1f017960ea7ae553cefe9bc390d9256
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462158"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59528986"
 ---
 # <a name="deletefolderfield"></a>DeleteFolderField
 
-**Deletefolderfield**要素は、updatefolder 呼び出しの実行中にフォルダーから特定のプロパティを削除する操作を表します。 
+**DeleteFolderField** 要素は、UpdateFolder 呼び出し中にフォルダーから特定のプロパティを削除する操作を表します。 
   
 - [UpdateFolder](updatefolder.md) 
-- [FolderChanges 変更](folderchanges.md)  
+- [FolderChanges](folderchanges.md)  
 - [FolderChange](folderchange.md)  
-- [Updates (フォルダー)](updates-folder.md) 
+- [Updates (Folder)](updates-folder.md) 
 - [DeleteFolderField](deletefolderfield.md)
   
 ```xml
@@ -61,28 +61,28 @@ ms.locfileid: "44462158"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[FieldURI](fielduri.md) <br/> |URI で頻繁に参照されるプロパティを識別します。  <br/> |
-|[IndexedFieldURI](indexedfielduri.md) <br/> |Dictionary プロパティの個々のメンバーを識別します。  <br/> |
+|[FieldURI](fielduri.md) <br/> |URI によって頻繁に参照されるプロパティを識別します。  <br/> |
+|[IndexedFieldURI](indexedfielduri.md) <br/> |ディクショナリ プロパティの個々のメンバーを識別します。  <br/> |
 |[ExtendedFieldURI](extendedfielduri.md) <br/> |拡張 MAPI プロパティを識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Updates (フォルダー)](updates-folder.md) <br/> |フォルダーのプロパティに対する追加、設定、および削除の変更を定義する一連の要素が含まれています。  <br/> この要素の XPath 式を次に示します。`/UpdateFolder/FolderChanges/FolderChange[i]/Updates` <br/> |
+|[Updates (Folder)](updates-folder.md) <br/> |フォルダー のプロパティに対する追加、設定、および削除の変更を定義する一連の要素が含まれています。  <br/> 次に、この要素の XPath 式を示します。  `/UpdateFolder/FolderChanges/FolderChange[i]/Updates` <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

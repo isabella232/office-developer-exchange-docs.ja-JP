@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MergedFreeBusy
 api_type:
 - schema
 ms.assetid: ea45590d-476e-4b68-9fe8-ae392feadfea
-description: MergedFreeBusy 要素には、データのマージされた空き時間ストリームが含まれています。
-ms.openlocfilehash: a1483449534f0d886e3c97a23d28c5d78f865042
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MergedFreeBusy 要素には、結合されたデータの空き時間情報ストリームが含まれます。
+ms.openlocfilehash: db451d6b2e67313836771604fae57b14b6b3db10
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468727"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59511031"
 ---
 # <a name="mergedfreebusy"></a>MergedFreeBusy
 
-**MergedFreeBusy**要素には、データのマージされた空き時間ストリームが含まれています。 
+**MergedFreeBusy 要素には**、結合されたデータの空き時間情報ストリームが含まれます。 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -54,13 +54,13 @@ ms.locfileid: "44468727"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FreeBusyView](freebusyview.md) <br/> |特定のユーザーの空き時間情報が保存されています。  <br/> この要素の XPath 式を次に示します。  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView` <br/> |
+|[FreeBusyView](freebusyview.md) <br/> |特定のユーザーの可用性情報が含まれる。  <br/> 次に、この要素の XPath 式を示します。  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView` <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
 [FreeBusyViewType](freebusyviewtype.md)要素の値が次のいずれかの場合、サーバーによってテキスト値が提供されます。 
   
-- DetailedMerged
+- Detailedmerged
     
 - FreeBusyMerged
     
@@ -70,30 +70,30 @@ ms.locfileid: "44468727"
   
 ## <a name="remarks"></a>注釈
 
-この要素によって提供されるデータのストリームは、 [MergedFreeBusyIntervalInMinutes](mergedfreebusyintervalinminutes.md)要素および[TimeWindow](timewindow.md)要素によって定義されます。 [TimeWindow](timewindow.md)要素は、可用性を照会した期間を定義します。 [MergedFreeBusyIntervalInMinutes](mergedfreebusyintervalinminutes.md)要素は、 [TimeWindow](timewindow.md)要素からの時間を**MergedFreeBusy**要素で返される間隔にどのように分割するかを定義します。 **MergedFreeBusy** stream の各数値は、 [MergedFreeBusyIntervalInMinutes](mergedfreebusyintervalinminutes.md)要素によって定義された1つの間隔を表します。 次の表に、個別の間隔に指定できる値を示します。 
+この要素によって提供されるデータのストリームは [、MergedFreeBusyIntervalInMinutes](mergedfreebusyintervalinminutes.md) 要素と [TimeWindow 要素によって定義](timewindow.md) されます。 [TimeWindow 要素は](timewindow.md)、可用性を照会する期間を定義します。 [MergedFreeBusyIntervalInMinutes](mergedfreebusyintervalinminutes.md)要素は [、TimeWindow](timewindow.md)要素からの時刻が **MergedFreeBusy** 要素で返される間隔に分割される方法を定義します。 **MergedFreeBusy** ストリーム内の各数値は [、MergedFreeBusyIntervalInMinutes](mergedfreebusyintervalinminutes.md)要素によって定義される 1 つの間隔を表します。 次の表に、個々の間隔で使用できる値を示します。 
   
-|**進数**|**可用性**|
+|**Digit**|**利用の可否**|
 |:-----|:-----|
-|.0  <br/> |空き  <br/> |
-|1   <br/> |仮の予定  <br/> |
-|pbm-2  <br/> |多忙  <br/> |
-|1/3  <br/> |不在時 (OOF)  <br/> |
+|0  <br/> |空き  <br/> |
+|1  <br/> |仮の予定  <br/> |
+|2  <br/> |多忙  <br/> |
+|3  <br/> |不在時 (OOF)  <br/> |
 |4   <br/> |データなし  <br/> |
    
-たとえば、空き時間情報データの要求には、4時間を表す[TimeWindow](timewindow.md)要素と、60分を表す[MergedFreeBusyIntervalInMinutes](mergedfreebusyintervalinminutes.md)要素が含まれています。 要求されたユーザーの予定表が、最初の60分間、次の90分間、およびタイムウィンドウの最終の90分に対して予定外となっている場合、 **MergedFreeBusy**ストリームは3220になります。 間隔に複数の可用性分類が含まれている場合は、その間隔を分類するために最大数が使用されます。 
+たとえば、空き時間情報データの要求には、4 時間を表す [TimeWindow](timewindow.md) 要素と、60 分を表す [MergedFreeBusyIntervalInMinutes](mergedfreebusyintervalinminutes.md) 要素が含まれます。 要求されたユーザーの予定表が最初の 60 分間 OOF で、次の 90 分間ビジー状態で、タイム ウィンドウの最後の 90 分間スケジュールが解除されている場合 **、MergedFreeBusy** ストリームは 3220 になります。 間隔に複数の可用性分類が含まれている場合は、その間隔を分類するために最も高い数値が使用されます。 
   
-この要素によって提供される詳細レベルは、リクエスターに付与されるアクセス許可によって異なります。
+この要素によって提供される詳細レベルは、要求者に付与されるアクセス許可によって異なります。
   
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -104,5 +104,5 @@ ms.locfileid: "44468727"
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[ユーザーの空き時間情報の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[ユーザーの可用性の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Count
 api_type:
 - schema
 ms.assetid: 68314b4a-1e17-4e21-9c2e-224d70ef7a32
-description: Count 要素には、UpdateItem 操作応答の競合の数が含まれています。
-ms.openlocfilehash: a43896a1b8b6a9d96ab02afe64f9e553639e478e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Count 要素には、UpdateItem 操作応答の競合の数が含まれる。
+ms.openlocfilehash: 0504b0517e3337e0b985a8755a907ca460f90ccf
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466760"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59511889"
 ---
 # <a name="count"></a>カウント
 
-[Count](count.md)要素には、 [updateitem 操作](updateitem-operation.md)応答の競合の数が含まれています。 
+[Count 要素](count.md)には、UpdateItem 操作応答の競合[の数が含](updateitem-operation.md)まれる。 
   
 [UpdateItemResponse](updateitemresponse.md)
   
@@ -54,24 +54,24 @@ ms.locfileid: "44466760"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ConflictResults](conflictresults.md) <br/> |[Updateitem 操作](updateitem-operation.md)応答の競合の数を格納します。  <br/> |
+|[ConflictResults](conflictresults.md) <br/> |UpdateItem 操作応答の競合の [数を格納](updateitem-operation.md) します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、 [Updateitem 操作](updateitem-operation.md)応答の競合の数を表す整数です。 
+テキスト値は [、UpdateItem](updateitem-operation.md) 操作応答の競合の数を表す整数です。 
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

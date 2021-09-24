@@ -3,15 +3,15 @@ title: Exchange で EWS を使用して、代理人として連絡先にアク�
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3cd34c14-18b0-4fe2-a4c2-d884318c88fc
 description: Exchange の EWS マネージ API または EWS を使用して、代理人として連絡先にアクセスする方法を説明します。
-ms.openlocfilehash: 06faf7dd7459b14792abbea21761e909c8eb9fb6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: a1ebef7f447f0b04bb3f73a8c418f291399486e3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455346"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512192"
 ---
 # <a name="access-contacts-as-a-delegate-by-using-ews-in-exchange"></a>Exchange で EWS を使用して、代理人として連絡先にアクセスする
 
@@ -26,9 +26,9 @@ EWS マネージ API または EWS を使用して、ユーザーにメールボ
 |**目的**|**使用する EWS マネージ API メソッド…**|**使用する EWS 操作…**|
 |:-----|:-----|:-----|
 |代理人として連絡先を作成する  <br/> |[Item.Save](https://msdn.microsoft.com/library/dd635209%28v=exchg.80%29.aspx): [FolderId](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) パラメーターがメールボックス所有者の連絡先フォルダーへの[明示的なアクセス](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) を提供する場合  <br/> |[CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx): [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) 要素がメールボックス所有者の [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) を指定する場合  <br/> |
-|代理人として複数の連絡先を作成する  <br/> |[ExchangeService.CreateItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx): **FolderId** パラメーターがメールボックス所有者の連絡先フォルダーに[明示的なアクセス](delegate-access-and-ews-in-exchange.md#bk_explicitewsma)を提供する場合  <br/> |[CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx): [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) 要素がメールボックス所有者の [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) を指定する場合  <br/> |
+|代理人として複数の連絡先を作成する  <br/> |[ExchangeService.CreateItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx): **FolderId** パラメーターがメールボックス所有者の連絡先フォルダーに [明示的なアクセス](delegate-access-and-ews-in-exchange.md#bk_explicitewsma)を提供する場合  <br/> |[CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx): [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) 要素がメールボックス所有者の [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) を指定する場合  <br/> |
 |代理人として連絡先を解決する  <br/> |[ExchangeService.ResolveName](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.resolvename%28v=exchg.80%29.aspx): [FolderId](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) パラメーターがメールボックス所有者の連絡先フォルダーへの[明示的なアクセス](delegate-access-and-ews-in-exchange.md#bk_explicitewsma)を提供する場合  <br/> |[ResolveNames](https://msdn.microsoft.com/library/6b4eb4b3-9ad6-4804-a09f-7e20cfea4dbb%28Office.15%29.aspx): [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) 要素がメールボックス所有者の [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) を指定する場合  <br/> |
-|代理人として連絡先を検索する  <br/> |[ExchangeService.FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx): **FolderId** パラメーターがメールボックス所有者の連絡先フォルダーに[明示的なアクセス](delegate-access-and-ews-in-exchange.md#bk_explicitewsma)を提供する場合  <br/> |[FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx): [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) 要素がメールボックス所有者の [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) を指定する場合  <br/> |
+|代理人として連絡先を検索する  <br/> |[ExchangeService.FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx): **FolderId** パラメーターがメールボックス所有者の連絡先フォルダーに [明示的なアクセス](delegate-access-and-ews-in-exchange.md#bk_explicitewsma)を提供する場合  <br/> |[FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx): [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) 要素がメールボックス所有者の [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) を指定する場合  <br/> |
 |代理人として連絡先を取得する  <br/> |[Contact.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.contact.bind%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) <br/> |
 |代理人として連絡先を更新する  <br/> |[Contact.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.contact.bind%28v=exchg.80%29.aspx) の後に [Contact.Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.update%28v=exchg.80%29.aspx) を使用する <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) の後に [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
 |代理人として連絡先を削除する  <br/> |[Contact.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.contact.bind%28v=exchg.80%29.aspx) の後に [Contact.Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.delete%28v=exchg.80%29.aspx) 使用する <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) の後に [DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |
@@ -184,7 +184,7 @@ private static void DelegateAccessResolveContacts(ExchangeService service)
 }
 ```
 
-**ResolveNames** メソッドの呼び出しが ID と共に応答を返すと、ID と[暗黙的なアクセス](delegate-access-and-ews-in-exchange.md#bk_implicit)&mdash;を使用して[連絡先を取得、更新または削除](#bk_getewsma)できます。メールボックス所有者の SMTP アドレスを指定する必要はありません。 
+**ResolveNames** メソッドの呼び出しが ID と共に応答を返すと、ID と [暗黙的なアクセス](delegate-access-and-ews-in-exchange.md#bk_implicit)&mdash;を使用して [連絡先を取得、更新または削除](#bk_getewsma)できます。メールボックス所有者の SMTP アドレスを指定する必要はありません。 
 
 <a name="bk_resolveews"> </a>
 
@@ -219,7 +219,7 @@ EWS を使用すると、代理ユーザーのサービス オブジェクトを
 </soap:Envelope>
 ```
 
-サーバーは、**ResolveNames** 要求に対して[ResolveNamesResponse](https://msdn.microsoft.com/library/5e7be1e2-44ea-403f-9135-2388d030078c%28Office.15%29.aspx) メッセージで応答します。このメッセージには、操作が正常に完了され、結果が 1 つだけ検出されたことを示す **NoError** と、複数の結果が検出された場合は **ErrorNameResolutionMultipleResults** という [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 要素値が含まれます。これは、連絡先 (「[EWS マネージ API を使用して、代理人として連絡先を作成する](#bk_createewsma)」) に基づく 3 番目のコード例で示されています。 応答には各結果の [ItemId](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) も含まれます。 
+サーバーは、**ResolveNames** 要求に対して [ResolveNamesResponse](https://msdn.microsoft.com/library/5e7be1e2-44ea-403f-9135-2388d030078c%28Office.15%29.aspx) メッセージで応答します。このメッセージには、操作が正常に完了され、結果が 1 つだけ検出されたことを示す **NoError** と、複数の結果が検出された場合は **ErrorNameResolutionMultipleResults** という [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) 要素値が含まれます。これは、連絡先 (「[EWS マネージ API を使用して、代理人として連絡先を作成する](#bk_createewsma)」) に基づく 3 番目のコード例で示されています。 応答には各結果の [ItemId](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) も含まれます。 
   
 **ItemId** 要素の値は読みやすいよう短縮されています。 
   
@@ -275,7 +275,7 @@ EWS を使用すると、代理ユーザーのサービス オブジェクトを
 </s:Envelope>
 ```
 
-あいまいな名前と一致する連絡先の **ItemId** がわかると、**ItemId** と[暗黙的なアクセス](delegate-access-and-ews-in-exchange.md#bk_implicit)&mdash;を使用して、[EWS を使用して、代理人として連絡先アイテムを取得、更新、または削除する](#bk_getews)ことができます。メールボックス所有者の SMTP アドレスを指定する必要はありません。 
+あいまいな名前と一致する連絡先の **ItemId** がわかると、**ItemId** と [暗黙的なアクセス](delegate-access-and-ews-in-exchange.md#bk_implicit)&mdash;を使用して、[EWS を使用して、代理人として連絡先アイテムを取得、更新、または削除する](#bk_getews)ことができます。メールボックス所有者の SMTP アドレスを指定する必要はありません。 
 
 <a name="bk_getewsma"> </a>
 
@@ -302,8 +302,8 @@ EWS を使用すると、代理人アクセスを使用していない場合に�
 |**タスク**|**EWS 操作**|**サンプル**|
 |:-----|:-----|:-----|
 |連絡先を取得する  <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) <br/> |[EWS を使用してアイテムを取得する](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_getews) <br/> |
-|連絡先を更新する  <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) の後に [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) を使用する <br/> |[EWS を使用してアイテムを更新する](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_updateews) <br/> |
-|連絡先を削除する  <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) の後に [DeleteItem](../web-service-reference/deleteitem-operation.md) を使用する <br/> |[EWS を使用してアイテムを削除する](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_deleteews) <br/> |
+|連絡先を更新する  <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) の後に [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |[EWS を使用してアイテムを更新する](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_updateews) <br/> |
+|連絡先を削除する  <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) の後に [DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |[EWS を使用してアイテムを削除する](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_deleteews) <br/> |
    
 ## <a name="see-also"></a>関連項目
 

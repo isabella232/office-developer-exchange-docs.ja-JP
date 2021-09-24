@@ -3,15 +3,15 @@ title: Exchange での EWS の電子情報開示
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3128419f-dd5f-46d2-bb0d-0940738d0bb6
 description: Exchange の EWS の電子情報開示について説明します。
-ms.openlocfilehash: 48e3fdb3a2f21f7dcfcb7eed21b586e099b249a3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 0b4f211e7f8a6ec085fd03ada1cc5a35187106e9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456095"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512311"
 ---
 # <a name="ediscovery-in-ews-in-exchange"></a>Exchange での EWS の電子情報開示
 

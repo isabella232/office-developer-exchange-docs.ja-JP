@@ -1,27 +1,27 @@
 ---
-title: Mailヒント有効
+title: MailTipsEnabled
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MailTipsEnabled
 api_type:
 - schema
 ms.assetid: 737388b3-7b73-42af-94d3-3dbb0659718f
-description: Mailヒント Enabled 要素は、メールヒントサービスが利用可能かどうかを示します。
-ms.openlocfilehash: 6be923733f1cbd584010ce5f8ee5b96178d5c2c0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MailTipsEnabled 要素は、メール ヒント サービスが使用可能かどうかを示します。
+ms.openlocfilehash: 7444ba7218ebfed85b02dafb0358af9781b22059
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468013"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59511146"
 ---
-# <a name="mailtipsenabled"></a>Mailヒント有効
+# <a name="mailtipsenabled"></a>MailTipsEnabled
 
-**Mailヒント enabled**要素は、メールヒントサービスが利用可能かどうかを示します。 
+**MailTipsEnabled 要素は**、メール ヒント サービスが使用可能かどうかを示します。 
   
 ```xml
 <MailTipsEnabled>true | false</MailTipsEnabled>
@@ -44,11 +44,11 @@ ms.locfileid: "44468013"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Mailヒント構成 (MailTipsServiceConfiguration)](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |メールヒントサービスのサービス構成情報が保存されています。  <br/> |
+|[MailTipsConfiguration (MailTipsServiceConfiguration)](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |メール ヒント サービスのサービス構成情報が含まれる。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-メールヒントサービスが利用可能な場合は、この要素のテキスト値は**true**です。 メールヒントサービスが利用できない場合、値は**false**です。 
+メール ヒント サービスが使用可能な **場合、この** 要素のテキスト値は true です。 メール ヒント サービス **が使用** できない場合、この値は false です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -59,13 +59,13 @@ ms.locfileid: "44468013"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

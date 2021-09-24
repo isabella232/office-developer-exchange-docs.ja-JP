@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0f92aa41-1499-4d96-a973-24529ec64d24
-description: PostalAddressAttributedValue 要素は、郵便アドレスの配列のインスタンスと、それに関連付けられている attributions を指定します。
-ms.openlocfilehash: bf5becca8ee0f143728010c5d0b1ed5a380838ff
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: PostalAddressAttributedValue 要素は、住所の配列とその関連付けられた属性のインスタンスを指定します。
+ms.openlocfilehash: a4f89b7b2dd54aafe51e0b20da032cc28a90cfeb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465381"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519220"
 ---
 # <a name="postaladdressattributedvalue"></a>PostalAddressAttributedValue
 
-**PostalAddressAttributedValue**要素は、郵便アドレスの配列のインスタンスと、それに関連付けられている attributions を指定します。 
+**PostalAddressAttributedValue** 要素は、住所の配列とその関連付けられた属性のインスタンスを指定します。 
   
 ```XML
 <PostalAddressAttributedValue>
@@ -37,11 +37,11 @@ ms.locfileid: "44465381"
   
 ### <a name="child-elements"></a>子要素
 
-[Value (PersonaPostalAddressType)](value-personapostaladdresstype.md)  | [Attributions (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md)
+[Value (PersonaPostalAddressType)](value-personapostaladdresstype.md)  | [属性 (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md)
   
 ### <a name="parent-elements"></a>親要素
 
-[Businessaddresses](businessaddresses.md)  | [ホームアドレス](homeaddresses.md)  | [Otheraddresses](otheraddresses.md)
+[BusinessAddresses](businessaddresses.md)  | [HomeAddresses](homeaddresses.md)  | [OtherAddresses](otheraddresses.md)
   
 ## <a name="remarks"></a>注釈
 
@@ -54,8 +54,8 @@ ms.locfileid: "44465381"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

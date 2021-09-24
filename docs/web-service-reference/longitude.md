@@ -5,25 +5,25 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5c000b36-13b6-4ce2-a686-6e0bc207553d
-description: 経度要素は、関連付けられている住所の場所の経度を指定します。
-ms.openlocfilehash: a226d907ddf124c8e38d3d56da81cadde1abd70e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: 経度要素は、関連付けられた住所の場所の経度を指定します。
+ms.openlocfilehash: a3d22a7c4f835070e25f89c00be92248955d8f16
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530755"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519367"
 ---
 # <a name="longitude"></a>Longitude
 
-**経度**要素は、関連付けられている住所の場所の経度を指定します。 
+**経度** 要素は、関連付けられた住所の場所の経度を指定します。 
   
 ```XML
 <Longitude></Longitude>
 ```
 
- **再度**
+ **double**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -38,11 +38,11 @@ ms.locfileid: "44530755"
   
 ### <a name="parent-elements"></a>親要素
 
-[Value (PersonaPostalAddressType)](value-personapostaladdresstype.md)  | ["Postaladdress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)
+[Value (PersonaPostalAddressType)](value-personapostaladdresstype.md)  | [PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**経度**要素のテキスト値は、郵送先住所の前後の座標です。 
+経度要素のテキスト **値** は、郵送先住所の縦座標です。 
   
 ## <a name="remarks"></a>注釈
 

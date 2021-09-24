@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CopyItem
 api_type:
 - schema
 ms.assetid: ffb4c13e-e7ea-4e6b-87a0-509ce5371100
-description: CopyItem 要素は、Exchange ストア内のメールボックス内のアイテムをコピーする要求を定義します。
-ms.openlocfilehash: b9af1670fd580107de08ad3b950191399436388d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: CopyItem 要素は、アイテム ストア内のメールボックス内のアイテムをコピーする要求をExchangeします。
+ms.openlocfilehash: 7f083f09a587b4788180711039e1cfdbbe6a10cd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458503"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529177"
 ---
 # <a name="copyitem"></a>CopyItem
 
-**Copyitem**要素は、Exchange ストア内のメールボックス内のアイテムをコピーする要求を定義します。 
+**CopyItem 要素は**、アイテム ストア内のメールボックス内のアイテムをコピーする要求Exchangeします。 
   
 ```XML
 <CopyItem>
@@ -61,9 +61,9 @@ ms.locfileid: "44458503"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -72,5 +72,5 @@ ms.locfileid: "44458503"
 [CopyItem 操作](copyitem-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

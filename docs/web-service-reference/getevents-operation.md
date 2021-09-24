@@ -5,36 +5,36 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetEvents
 api_type:
 - schema
 ms.assetid: f268efe5-9a1a-41a2-b6a6-51fcde7720a1
-description: GetEvents 操作は、プルサブスクリプションクライアントがクライアントアクセスサーバーからの通知を要求するために使用されます。 GetEvents 操作の応答は、最後の通知以降にメールボックスで発生したアイテムとイベントの配列を返します。
-ms.openlocfilehash: 9258fd003c242911866aa7abbca5eba2b9582223
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetEvents 操作は、プル サブスクリプション クライアントがクライアント アクセス サーバーから通知を要求するために使用します。 GetEvents 操作応答は、最後の通知以降にメールボックスで発生したアイテムとイベントの配列を返します。
+ms.openlocfilehash: 72d99a654921794115d56d28327a39a21c9ea378
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462515"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59511601"
 ---
 # <a name="getevents-operation"></a>GetEvents 操作
 
-**GetEvents**操作は、プルサブスクリプションクライアントがクライアントアクセスサーバーからの通知を要求するために使用されます。 **GetEvents**操作の応答は、最後の通知以降にメールボックスで発生したアイテムとイベントの配列を返します。 
+**GetEvents 操作は**、プル サブスクリプション クライアントがクライアント アクセス サーバーから通知を要求するために使用します。 **GetEvents 操作** 応答は、最後の通知以降にメールボックスで発生したアイテムとイベントの配列を返します。 
   
 > [!IMPORTANT]
-> **Deleteuserconfiguration**操作は、イベント通知システムの移動イベントをトリガーします。 ユーザー構成オブジェクトは、収集に移動されます。 
+> **DeleteUserConfiguration 操作は**、イベント通知システムの移動イベントをトリガーします。 ユーザー構成オブジェクトは、ゴミ箱に移動されます。 
   
-## <a name="remarks"></a>注釈
+## <a name="notes"></a>メモ
 
-予定表アイテムの変更によって、複数のイベントが生成されることがあります。 これらのイベントは、メールボックス内に作成された一時アイテム、空き時間情報データストレージアイテムが通常の予定表の操作の一部として変更された結果、またはその両方で発生します。 アイテムクラス "IPM.Web サービスクライアントでは、SchedulePlus データ "を無視する必要があります。 これらの一時アイテムは、作成後に削除されます。そのため、これらのアイテムを取得しようとすると、アイテムが見つからなかったことを示すエラーが返されます。
+予定表アイテムを変更すると、複数のイベントが生成される場合があります。 これらのイベントは、メールボックス内に一時的なアイテムが作成された結果、空き時間情報データストレージ アイテムが通常の予定表操作の一部として変更された結果、または両方です。 アイテム クラス "IPM" のイベント。SchedulePlus.FreeBusy.BinaryData" は、Web サービス クライアントでは無視する必要があります。 これらの一時アイテムは、作成後に削除されます。したがって、これらのアイテムを取得しようとすると、アイテムが見つからなかったというエラーが返されます。
   
 ## <a name="getevents-request-example"></a>GetEvents 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、サブスクリプション識別子とウォーターマークで識別されるサブスクリプションに関連付けられたイベントとアイテムを要求する方法を示しています。
+次の例は、サブスクリプション識別子と透かしによって識別されるサブスクリプションに関連付けられているイベントとアイテムを要求する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -51,7 +51,7 @@ ms.locfileid: "44462515"
 </soap:Envelope>
 ```
 
-### <a name="getevents-request-elements"></a>GetEvents Request 要素
+### <a name="getevents-request-elements"></a>GetEvents 要求要素
 
 要求では、次の要素が使用されます。
   
@@ -61,11 +61,11 @@ ms.locfileid: "44462515"
     
 - [Watermark](watermark.md)
     
-## <a name="successful-getevents-response-example"></a>Successful GetEvents response の例
+## <a name="successful-getevents-response-example"></a>GetEvents 応答の成功例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の応答の例は、前回の通知要求がサーバーに送信されてから、2つの新しいメールメッセージが存在するという通知を示しています。
+次の応答例は、最後の通知要求がサーバーに送信された後、2 つの新しいメール メッセージが存在する通知を示しています。
   
 ### <a name="code"></a>コード
 
@@ -112,15 +112,15 @@ ms.locfileid: "44462515"
 ### <a name="comments"></a>コメント
 
 > [!NOTE]
-> 読みやすくするために、アイテムとフォルダーの識別子が短縮されています。 
+> アイテムとフォルダーの識別子は、読みやすさを維持するために短縮されました。 
   
-### <a name="getevents-response-elements"></a>GetEvents response 要素
+### <a name="getevents-response-elements"></a>GetEvents 応答要素
 
 応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
-- [Getイベント応答](geteventsresponse.md)
+- [GetEventsResponse](geteventsresponse.md)
     
 - [ResponseMessages](responsemessages.md)
     
@@ -134,25 +134,25 @@ ms.locfileid: "44462515"
     
 - [PreviousWatermark](previouswatermark.md)
     
-- [その他のイベント](moreevents.md)
+- [MoreEvents](moreevents.md)
     
 - [NewMailEvent](newmailevent.md)
     
 - [Watermark](watermark.md)
     
-- [示](timestamp.md)
+- [TimeStamp](timestamp.md)
     
 - [ItemId](itemid.md)
     
 - [ParentFolderId](parentfolderid.md)
     
-**GetEvents**操作の応答メッセージに関するその他のオプションについては、スキーマ階層を参照してください。 [通知](notification-ex15websvcsotherref.md)要素から開始します。 
+**GetEvents** 操作の応答メッセージに関するその他のオプションを見つけるには、スキーマ階層を確認します。 Notification 要素 [から開始](notification-ex15websvcsotherref.md) します。 
   
 ## <a name="getevents-error-response-example"></a>GetEvents エラー応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **GetEvents**要求に対するエラー応答を示しています。 
+次の例は、GetEvents 要求に対する **エラー応答を示** しています。 
   
 ### <a name="code"></a>コード
 
@@ -183,21 +183,21 @@ ms.locfileid: "44462515"
 
 ## <a name="remarks"></a>注釈
 
-**GetEvents**要求を処理する場合、クライアントアクセスサーバーは次の手順を実行します。 
+**GetEvents 要求を処理する** 場合、クライアント アクセス サーバーは次の手順を実行します。 
   
-1. 要求の SubscriptionID は、クライアントアクセスサーバーでホストされている有効なサブスクリプションであることが確認されます。 そうでない場合、 **GetEvents**呼び出しは失敗します。 
+1. 要求の SubscriptionID が、クライアント アクセス サーバーでホストされている有効なサブスクリプションである確認されます。 それではない場合 **、GetEvents 呼び出しは** 失敗します。 
     
-2. 要求に対する認証済みユーザーの SMTP アドレスは、サブスクリプションを作成したユーザーの SMTP アドレスと比較されます。 一致しない場合、 **GetEvents**要求は失敗します。 
+2. 要求の認証されたユーザーの SMTP アドレスは、サブスクリプションを作成したユーザーの SMTP アドレスと比較されます。 一致しない場合 **、GetEvents 要求は** 失敗します。 
     
-3. サブスクリプションキューは、クライアントへの送信を待機しているイベントに対して照会されます。 キューが空でない場合、キューから最初の50イベントがプルされ、通知にエンコードされます。
+3. サブスクリプション キューは、クライアントへの送信を待機しているイベントに対して照会されます。 キューが空ではない場合、キューの最初の 50 イベントがキューからプルされ、通知にエンコードされます。
     
-4. キューにイベントが見つからない場合は、StatusEvent が生成され、通知応答にエンコードされます。
+4. キューにイベントが見つからない場合、StatusEvent が生成され、通知応答にエンコードされます。
     
 5. 通知応答がクライアントに返されます。
     
-6. 通知に含まれるイベントは、サブスクリプションキューから削除され、サブスクリプションのクライアントアクセスサーバーのローカルの最後のウォーターマークは、返される最後のイベントのウォーターマークに設定されます。
+6. 通知に含まれるイベントはサブスクリプション キューから削除され、サブスクリプションのクライアント アクセス サーバーのローカルの最後の透かしは、返される最後のイベントの透かしに設定されます。
     
-7. サブスクリプションのタイムアウトタイマーはリセットされます。
+7. サブスクリプションのタイムアウト タイマーがリセットされます。
     
 ## <a name="see-also"></a>関連項目
 
@@ -208,5 +208,5 @@ ms.locfileid: "44462515"
 [Unsubscribe 操作](unsubscribe-operation.md)
 
 
-[プルサブスクリプションの使用](https://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx)
+[プル サブスクリプションの使用](https://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx)
 

@@ -1,27 +1,27 @@
 ---
-title: 受信者 (Arrayof受信者 Stype)
+title: Recipients (ArrayOfRecipientsType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Recipients
 api_type:
 - schema
 ms.assetid: f4b71403-cbae-4176-8b2e-3597048c057b
 description: Recipients 要素は、メッセージのコピーを受信する受信者のコレクションを表します。
-ms.openlocfilehash: 0e18152a8143b888ad27f48137c06613694f5713
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 232dbb88f54cb551f4f8017ff9d18049a4984783
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463875"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529544"
 ---
-# <a name="recipients-arrayofrecipientstype"></a>受信者 (Arrayof受信者 Stype)
+# <a name="recipients-arrayofrecipientstype"></a>Recipients (ArrayOfRecipientsType)
 
-**Recipients**要素は、メッセージのコピーを受信する受信者のコレクションを表します。 
+**Recipients 要素** は、メッセージのコピーを受信する受信者のコレクションを表します。 
   
 ```XML
 <Recipients>
@@ -29,7 +29,7 @@ ms.locfileid: "44463875"
 </Recipients>
 ```
 
- **Arrayof受信者 Stype**
+ **ArrayOfRecipientsType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -48,7 +48,7 @@ ms.locfileid: "44463875"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetMailTips](getmailtips.md) <br/> |取得するメールヒントの受信者と種類が含まれています。  <br/> |
+|[GetMailTips](getmailtips.md) <br/> |取得する受信者とメール ヒントの種類が含まれる。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -63,13 +63,13 @@ ms.locfileid: "44463875"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

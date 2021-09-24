@@ -3,15 +3,15 @@ title: Exchange Online と Exchange オンプレミス クライアントでの�
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3c2eabe4-52bc-461e-a6dd-f65f22f16e50
 description: Exchange Online および Exchange オンプレミスに対して動作する EWS マネージ API または EWS クライアント アプリケーションを作成するための設計に関する考慮事項について説明します。
-ms.openlocfilehash: 8b4dbae5cadfed377aa3a7179144a7cea68bc35c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 438965656e31eca586d06a5e0b6794c0eda87621
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456165"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512289"
 ---
 # <a name="comparing-exchange-online-and-exchange-on-premises-client-programming"></a>Exchange Online と Exchange オンプレミス クライアントでのプログラミングの比較
 
@@ -105,16 +105,6 @@ EWS マネージ API は、サービス ポイント接続検索などの Exchan
 <a name="exo"> </a>
 
 Office 365 および Exchange Online の各種プランや Exchange サーバーの標準バージョンおよびエンタープライズ バージョンで、それぞれに異なる機能セットを利用できることが考えられます。 Exchange Online のプラン、またはユーザーのメールボックスをホストする Exchange サーバー エディションによっては、いくつかの API 機能は、お使いのクライアント アプリケーションで利用できない場合がありますのでご注意ください。 
-  
-**表 3. プランおよびエディションによる API 機能のバリエーション**
-
-|**API 機能**|**プランまたはエディションに関する考慮事項**|
-|:-----|:-----|
-
-|Exchange 偽装を経由する場合を除き、アカウントへの EWS アクセス  <br/> |[Office 365 for business](https://office.microsoft.com/business/compare-office-365-kiosk-plans-FX103178917.aspx)では許可されていません— Kiosk プラン。  <br/> |
-
-
-|ユニファイドメッセージング (UM)  <br/> |Office 365 Enterprise (E3) プラン、Exchange Online プラン2、および Exchange Server 2013 Enterprise edition でのみ利用可能です。  <br/> | |Active Directory ドメインサービス (AD DS) の統合  <br/> |Office 365 Small Business および Office 365 Small Business Premium プランでは利用できません。  <br/> | |Information Rights Management、アーカイブ、および法的保持  <br/> |Office 365 Enterprise (E3 および E4) プランでのみ使用できます。  <br/> | |データ損失防止  <br/> |Office 365 Enterprise プラン、Exchange Online プラン2、および Exchange Server 2013 Enterprise edition でのみ使用できます。  <br/> |
    
 機能の可用性は変わる可能性があるため、Exchange Online プランと Exchange サーバー エディションを確認して、機能の可用性がクライアントに及ぼす影響を検証することをお勧めします。 [GetServiceConfiguration 操作](how-to-get-service-configuration-information-by-using-ews-in-exchange.md)を使用して、または機能を実装する操作のためのテスト要求を送信することによって、機能の可用性を確認するようにクライアントを設計することもできます。 その機能が利用できない場合、サーバーからの応答でそのように示されます。 
   

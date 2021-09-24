@@ -5,45 +5,45 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a190bbec-c71b-4e6a-880b-55854c724d8c
-description: RemoveImContactFromGroup EWS 操作についての情報を検索します。
-ms.openlocfilehash: 4750ef57794c3da540ac36baa8ef6ef093939ea1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: RemoveImContactFromGroup EWS 操作に関する情報を検索します。
+ms.openlocfilehash: 696e05bfa12f3ddd0c9d7bfca4a58368ee115c2b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466970"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512416"
 ---
 # <a name="removeimcontactfromgroup-operation"></a>RemoveImContactFromGroup 操作
 
-**Removeimcontactfromgroup** EWS 操作についての情報を検索します。 
+**RemoveImContactFromGroup** EWS 操作に関する情報を検索します。 
   
-**Removeimcontactfromgroup**操作は、im グループから1つの im 連絡先を削除します。 
+**RemoveImContactFromGroup 操作は**、IM グループから 1 つの IM 連絡先を削除します。 
   
 この操作は Exchange Server 2013 で導入されました。
   
 ## <a name="using-the-removeimcontactfromgroup-operation"></a>RemoveImContactFromGroup 操作の使用
 
-**Removeimcontactfromgroup**操作では、連絡先アイテムの識別子と、対応するインスタントメッセージング (IM) グループ (連絡先が削除される) の2つの引数を取ります。 
+**RemoveImContactFromGroup** 操作では、連絡先アイテム識別子と、連絡先が削除される対応するインスタント メッセージング (IM) グループの 2 つの引数を受け取ります。 
   
 ### <a name="removeimcontactfromgroup-operation-soap-headers"></a>RemoveImContactFromGroup 操作 SOAP ヘッダー
 
-**Removeimcontactfromgroup**操作では、次の表に示す SOAP ヘッダーを使用できます。 
+**RemoveImContactFromGroup 操作では**、次の表に示す SOAP ヘッダーを使用できます。 
   
-|**ヘッダー名**|**要素**|**説明**|
+|**ヘッダー名**|**Element**|**説明**|
 |:-----|:-----|:-----|
-|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |RFC 3066 で定義されているように、メールボックスへのアクセスに使用されるカルチャ (言語の識別用のタグ) を識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは応答に適用されます。  <br/> |
+|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |メールボックスへのアクセスに使用する RFC 3066「言語の識別用タグ」で定義されているカルチャを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマ バージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは、応答に適用されます。  <br/> |
    
 ## <a name="removeimcontactfromgroup-operation-request-example"></a>RemoveImContactFromGroup 操作要求の例
 
-次の例は、 **Removeimcontactfromgroup**操作要求の例で、im グループから im 連絡先を削除する方法を示しています。 
+**RemoveImContactFromGroup** 操作要求の次の例は、IM グループから IM 連絡先を削除する方法を示しています。 
   
 > [!NOTE]
-> 読みやすくするために、グループと連絡先の識別子が短縮されています。 
+> 読みやすさを維持するために、グループ識別子と連絡先識別子が短縮されました。 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -73,9 +73,9 @@ ms.locfileid: "44466970"
     
 - [GroupId](groupid.md)
     
-## <a name="successful-removeimcontactfromgroup-operation-response"></a>RemoveImContactFromGroup 操作の応答が正常に行われる
+## <a name="successful-removeimcontactfromgroup-operation-response"></a>RemoveImContactFromGroup 操作応答の成功
 
-次の例は、 **Removeimcontactfromgroup**操作要求に対する正常な応答を示しています。 
+次の例は **、RemoveImContactFromGroup** 操作要求に対する正常な応答を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -109,7 +109,7 @@ ms.locfileid: "44466970"
     
 ## <a name="removeimcontactfromgroup-operation-errorinvalidimcontactid-error-response"></a>RemoveImContactFromGroup 操作 ErrorInvalidImContactId エラー応答
 
-次の例は、 **Removeimcontactfromgroup**操作要求へのエラー応答を示しています。 IM グループに存在しない連絡先アイテムを削除しようとすると、次のエラー応答が発生します。 
+次の例は **、RemoveImContactFromGroup** 操作要求に対するエラー応答を示しています。 IM グループに存在しない連絡先アイテムを削除しようとすると、次のエラー応答が発生します。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

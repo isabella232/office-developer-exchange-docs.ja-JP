@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 013c17c9-cb37-4028-9fe6-c3f47441d0f7
-description: DisplayNameFirstLast 要素は、関連付けられたペルソナの表示名を書式、名、姓で指定します。
-ms.openlocfilehash: 6ba35b6a17a64d46655e51691847b9aecbf52f40
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: DisplayNameFirstLast 要素は、関連付けられたペルサの表示名を、名前、姓の形式で指定します。
+ms.openlocfilehash: c7955c62b69d3ba41d1dec04a3c45384b8c40dde
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464113"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518583"
 ---
 # <a name="displaynamefirstlast"></a>DisplayNameFirstLast
 
-**Displaynamefirstlast**要素は、関連付けられたペルソナの表示名を "名"、"姓" の形式で指定します。 
+**DisplayNameFirstLast** 要素は、関連付けられたペルサの表示名を"First Name"、"Last Name" という形式で指定します。 
   
 ```XML
 <DisplayNameFirstLast>
@@ -40,11 +40,11 @@ ms.locfileid: "44464113"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ユーザー](persona.md) <br/> |**Getpersona**要求によって返される一連のペルソナデータを指定します。  <br/> |
+|[ユーザー](persona.md) <br/> |**GetPersona** 要求によって返されるペルソナ データのセットを指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**Displaynamefirstlast**要素のテキスト値は、表示名を含む文字列値で、指定された名前が先頭になります。 
+**DisplayNameFirstLast** 要素のテキスト値は、表示名を最初に指定した文字列値です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -58,10 +58,10 @@ ms.locfileid: "44464113"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

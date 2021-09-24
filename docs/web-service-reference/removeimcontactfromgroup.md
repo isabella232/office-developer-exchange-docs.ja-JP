@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a62b0640-9800-45a6-a297-2105ff36881e
-description: RemoveImContactFromGroup 要素は、インスタントメッセージンググループからインスタントメッセージングの連絡先を削除する要求を定義します。
-ms.openlocfilehash: 379994ad5832b05e9f7da61d752f7660a6eec5ad
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: RemoveImContactFromGroup 要素は、インスタント メッセージング グループからインスタント メッセージング連絡先を削除する要求を定義します。
+ms.openlocfilehash: 426129f6bb26b43374fcb706531af04aea3c1e20
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466963"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512409"
 ---
 # <a name="removeimcontactfromgroup"></a>RemoveImContactFromGroup
 
-**Removeimcontactfromgroup**要素は、インスタントメッセージンググループからインスタントメッセージングの連絡先を削除する要求を定義します。 
+**RemoveImContactFromGroup** 要素は、インスタント メッセージング グループからインスタント メッセージング連絡先を削除する要求を定義します。 
   
 ```XML
 <RemoveImContactFromGroup>
@@ -54,8 +54,8 @@ ms.locfileid: "44466963"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

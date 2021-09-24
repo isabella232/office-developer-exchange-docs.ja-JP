@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3c107b8d-714b-4cd5-ad1b-97b7cbcb90d6
-description: SetImGroup 要素は、インスタントメッセージンググループの表示名を変更する要求を表します。
-ms.openlocfilehash: 96e93ef595720325448c343c193f25b846ba415e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SetImGroup 要素は、インスタント メッセージング グループの表示名を変更する要求を表します。
+ms.openlocfilehash: 3297373a9dc6435d3d718c2c7604467c4d609983
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44438069"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59532041"
 ---
 # <a name="setimgroup"></a>SetImGroup
 
-**Setimgroup**要素は、インスタントメッセージンググループの表示名を変更する要求を表します。 
+**SetImGroup 要素** は、インスタント メッセージング グループの表示名を変更する要求を表します。 
   
 ```XML
 <SetImGroup>
@@ -37,7 +37,7 @@ ms.locfileid: "44438069"
   
 ### <a name="child-elements"></a>子要素
 
-[GroupId](groupid.md)  | [Newdisplayname](newdisplayname.md)
+[GroupId](groupid.md)  | [NewDisplayName](newdisplayname.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -54,8 +54,8 @@ ms.locfileid: "44438069"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

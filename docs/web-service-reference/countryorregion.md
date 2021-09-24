@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CountryOrRegion
 api_type:
 - schema
 ms.assetid: e978cd19-96ce-4ebf-81df-eadf2d775132
-description: Country 要素は、指定された物理的な住所の国または地域を表します。
-ms.openlocfilehash: 2e5b8ec40676123c17d6c7f987f139246dbd0493
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Country 要素は、特定の物理アドレスの国または地域を表します。
+ms.openlocfilehash: d29180568be12bc45eb0c38806f4acc5c0f69257
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527097"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518653"
 ---
 # <a name="countryorregion"></a>CountryOrRegion
 
-**Country**要素は、指定された物理的な住所の国または地域を表します。 
+**Country 要素は**、特定の物理アドレスの国または地域を表します。 
   
 ```xml
 <Country/>
@@ -44,28 +44,28 @@ ms.locfileid: "44527097"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Entry (PhysicalAddress)](entry-physicaladdress.md) <br/> |連絡先アイテムの単一の物理アドレスを記述します。  <br/> |
+|[Entry (PhysicalAddress)](entry-physicaladdress.md) <br/> |連絡先アイテムの 1 つの物理アドレスについて説明します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、国の名前を表す文字列型 (string) の値です。
+テキスト値は、国の名前を表す文字列値です。
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

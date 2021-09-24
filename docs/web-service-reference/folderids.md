@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FolderIds
 api_type:
 - schema
 ms.assetid: 3ff9d15a-7220-4785-ae6b-583a7eb82005
-description: FolderIds 要素には、イベント通知のコピー、移動、取得、削除、または監視を行うフォルダーを識別するために使用されるフォルダー識別子の配列が含まれています。
-ms.openlocfilehash: ff0476f72c7da088bd2b39f58ab560dcc82197e4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: FolderIds 要素には、コピー、移動、取得、削除、またはイベント通知を監視するフォルダーを識別するために使用されるフォルダー識別子の配列が含まれています。
+ms.openlocfilehash: 7c0cf46d5fdaf35ec72cf3b5750b51edc5a8bfe0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530994"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518366"
 ---
 # <a name="folderids"></a>FolderIds
 
-**FolderIds**要素には、イベント通知のコピー、移動、取得、削除、または監視を行うフォルダーを識別するために使用されるフォルダー識別子の配列が含まれています。 
+**FolderIds 要素には**、コピー、移動、取得、削除、またはイベント通知を監視するフォルダーを識別するために使用されるフォルダー識別子の配列が含まれています。 
   
 ```xml
 <FolderIds>
@@ -30,7 +30,7 @@ ms.locfileid: "44530994"
 </FolderIds>
 ```
 
- **非 Emptyarrayofbasefolderidstype**
+ **NonEmptyArrayOfBaseFolderIdsType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -43,33 +43,33 @@ ms.locfileid: "44530994"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[FolderId](folderid.md) <br/> |フォルダーの識別子と変更キーが含まれています。  <br/> |
-|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |名前で参照できる Microsoft Exchange Server フォルダーを識別します。  <br/> |
+|[FolderId](folderid.md) <br/> |フォルダーの識別子と変更キーを格納します。  <br/> |
+|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |名前でMicrosoft Exchange Serverできるフォルダーを識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetFolder](getfolder.md) <br/> |Exchange ストアからフォルダーを取得するための要求を定義します。  <br/> この要素の XPath 式を次に示します。`/GetFolder` <br/> |
-|[DeleteFolder](deletefolder.md) <br/> |Exchange ストアからフォルダーを削除するための要求を定義します。  <br/> この要素の XPath 式を次に示します。`/DeleteFolder` <br/> |
-|[EmptyFolder](emptyfolder.md) <br/> |Exchange ストアからフォルダーを削除するための要求を定義します。  <br/> この要素の XPath 式を次に示します。`/EmptyFolder` <br/> |
-|[MoveFolder](movefolder.md) <br/> |Exchange ストア内のフォルダーを移動する要求を定義します。  <br/> この要素の XPath 式を次に示します。`/MoveFolder` <br/> |
-|[CopyFolder](copyfolder.md) <br/> |Exchange ストア内のフォルダーをコピーするための要求を定義します。  <br/> この要素の XPath 式を次に示します。`/CopyFolder` <br/> |
-|[PushSubscriptionRequest](pushsubscriptionrequest.md) <br/> |プッシュベースのイベント通知サブスクリプションのサブスクリプションを表します。  <br/> |
-|[PullSubscriptionRequest](pullsubscriptionrequest.md) <br/> |プルベースのイベント通知サブスクリプションに対するサブスクリプションを表します。  <br/> |
+|[GetFolder](getfolder.md) <br/> |フォルダー ストアからフォルダーを取得する要求Exchangeします。  <br/> 次に、この要素の XPath 式を示します。  `/GetFolder` <br/> |
+|[DeleteFolder](deletefolder.md) <br/> |フォルダーストアからフォルダーを削除する要求をExchangeします。  <br/> 次に、この要素の XPath 式を示します。  `/DeleteFolder` <br/> |
+|[EmptyFolder](emptyfolder.md) <br/> |フォルダーストアからフォルダーを削除する要求をExchangeします。  <br/> 次に、この要素の XPath 式を示します。  `/EmptyFolder` <br/> |
+|[MoveFolder](movefolder.md) <br/> |フォルダーストア内のフォルダーを移動する要求Exchangeします。  <br/> 次に、この要素の XPath 式を示します。  `/MoveFolder` <br/> |
+|[CopyFolder](copyfolder.md) <br/> |フォルダー ストア内のフォルダーをコピーする要求をExchangeします。  <br/> 次に、この要素の XPath 式を示します。  `/CopyFolder` <br/> |
+|[PushSubscriptionRequest](pushsubscriptionrequest.md) <br/> |プッシュ ベースのイベント通知サブスクリプションのサブスクリプションを表します。  <br/> |
+|[PullSubscriptionRequest](pullsubscriptionrequest.md) <br/> |プル ベースのイベント通知サブスクリプションのサブスクリプションを表します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされているコンピューター Microsoft Exchange Server EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages と https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ。Types スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd。型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ。型スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd;Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateAttachment
 api_type:
 - schema
 ms.assetid: e066db95-6963-4507-a8d0-8efad287f550
-description: CreateAttachment 操作は、アイテムまたは添付ファイルのいずれかを作成し、指定されたアイテムに添付します。
-ms.openlocfilehash: 8028c56aa306774b54b39e5ee1ac0382b9113fa0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: CreateAttachment 操作は、アイテムまたはファイルの添付ファイルを作成し、指定したアイテムに添付します。
+ms.openlocfilehash: 0c75e8c73bf4352e2703a6ca6ac06e261e8f37c9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456571"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59511882"
 ---
 # <a name="createattachment-operation"></a>CreateAttachment 操作
 
-CreateAttachment 操作は、アイテムまたは添付ファイルのいずれかを作成し、指定されたアイテムに添付します。
+CreateAttachment 操作は、アイテムまたはファイルの添付ファイルを作成し、指定したアイテムに添付します。
   
-## <a name="file-createattachment-request-example"></a>ファイル CreateAttachment 要求の例
+## <a name="file-createattachment-request-example"></a>File CreateAttachment 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の CreateAttachment 要求の例は、添付ファイルを作成する方法を示しています。
+CreateAttachment 要求の次の例は、添付ファイルを作成する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -57,9 +57,9 @@ CreateAttachment 操作は、アイテムまたは添付ファイルのいずれ
 添付ファイルの名前を指定する必要があります。
   
 > [!NOTE]
-> 読みやすくするために、親アイテムの識別子と変更キーが短縮されています。 
+> 親アイテム識別子と変更キーは、読みやすさを維持するために短縮されました。 
   
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 要求では、次の要素が使用されます。
   
@@ -67,17 +67,17 @@ CreateAttachment 操作は、アイテムまたは添付ファイルのいずれ
     
 - [ParentItemId](parentitemid.md)
     
-- [Attachments](attachments-ex15websvcsotherref.md)
+- [添付ファイル](attachments-ex15websvcsotherref.md)
     
 - [FileAttachment](fileattachment.md)
     
 - [Name (AttachmentType)](name-attachmenttype.md)
     
-- [Content](content.md)
+- [コンテンツ](content.md)
     
-## <a name="successful-file-createattachment-response-example"></a>正常なファイル CreateAttachment の応答の例
+## <a name="successful-file-createattachment-response-example"></a>正常なファイルの CreateAttachment 応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
 次の例は、CreateAttachment 要求に対する正常な応答を示しています。
   
@@ -113,7 +113,7 @@ CreateAttachment 操作は、アイテムまたは添付ファイルのいずれ
 
 ### <a name="comment"></a>コメント
 
-応答には、添付ファイルの識別子が含まれています。 また、ルートアイテムの識別子と変更キーも含みます。 読みやすくするために、アイテムの識別子と変更キーが短縮されています。
+応答には、添付ファイルの識別子が含まれる。 また、ルート アイテムの識別子と変更キーも含まれる。 アイテム識別子と変更キーは、読みやすさを維持するために短縮されました。
   
 ### <a name="successful-response-elements"></a>成功した応答要素
 
@@ -129,17 +129,17 @@ CreateAttachment 操作は、アイテムまたは添付ファイルのいずれ
     
 - [ResponseCode](responsecode.md)
     
-- [Attachments](attachments-ex15websvcsotherref.md)
+- [添付ファイル](attachments-ex15websvcsotherref.md)
     
 - [FileAttachment](fileattachment.md)
     
 - [AttachmentId](attachmentid.md)
     
-## <a name="item-createattachment-request-example"></a>アイテム CreateAttachment 要求の例
+## <a name="item-createattachment-request-example"></a>Item CreateAttachment 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の CreateAttachment 要求の例は、アイテムの添付ファイルを作成する方法を示しています。
+CreateAttachment 要求の次の例は、アイテム添付ファイルを作成する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -170,9 +170,9 @@ CreateAttachment 操作は、アイテムまたは添付ファイルのいずれ
 
 添付ファイルの名前を指定する必要があります。
   
- **メモ**読みやすくするために、親アイテムの識別子と変更キーが短縮されています。 
+ **メモ** 親アイテム識別子と変更キーは、読みやすさを維持するために短縮されました。 
   
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 要求では、次の要素が使用されます。
   
@@ -180,7 +180,7 @@ CreateAttachment 操作は、アイテムまたは添付ファイルのいずれ
     
 - [ParentItemId](parentitemid.md)
     
-- [Attachments](attachments-ex15websvcsotherref.md)
+- [添付ファイル](attachments-ex15websvcsotherref.md)
     
 - [ItemAttachment](itemattachment.md)
     
@@ -188,11 +188,11 @@ CreateAttachment 操作は、アイテムまたは添付ファイルのいずれ
     
 - [Message](message-ex15websvcsotherref.md)
     
-- [件名](subject.md)
+- [[件名]](subject.md)
     
-## <a name="successful-item-createattachment-response-example"></a>正常なアイテム CreateAttachment の応答の例
+## <a name="successful-item-createattachment-response-example"></a>成功したアイテムの CreateAttachment 応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
 次の例は、CreateAttachment 要求に対する正常な応答を示しています。
   
@@ -228,7 +228,7 @@ CreateAttachment 操作は、アイテムまたは添付ファイルのいずれ
 
 ### <a name="comment"></a>コメント
 
-応答には、新しい添付ファイルの識別子が含まれています。 また、ルートアイテムの識別子と変更キーも含みます。 ルートアイテムは、添付ファイルを含むアイテムです。 読みやすくするために、アイテムの識別子と変更キーが短縮されています。
+応答には、新しい添付ファイルの識別子が含まれる。 また、ルート アイテムの識別子と変更キーも含まれる。 ルート アイテムは、添付ファイルを含むアイテムです。 アイテム識別子と変更キーは、読みやすさを維持するために短縮されました。
   
 ### <a name="successful-response-elements"></a>成功した応答要素
 
@@ -244,7 +244,7 @@ CreateAttachment 操作は、アイテムまたは添付ファイルのいずれ
     
 - [ResponseCode](responsecode.md)
     
-- [Attachments](attachments-ex15websvcsotherref.md)
+- [添付ファイル](attachments-ex15websvcsotherref.md)
     
 - [ItemAttachment](itemattachment.md)
     
@@ -252,9 +252,9 @@ CreateAttachment 操作は、アイテムまたは添付ファイルのいずれ
     
 ## <a name="createattachment-error-response-example"></a>CreateAttachment エラー応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、CreateAttachment 要求に対するエラー応答を示しています。 このエラーは、添付ファイルの名前が指定されていないことが原因で発生します。
+次の例は、CreateAttachment 要求に対するエラー応答を示しています。 このエラーは、添付ファイルの名前が指定されていないという事実が原因です。
   
 ### <a name="code"></a>コード
 
@@ -309,11 +309,11 @@ CreateAttachment 操作は、アイテムまたは添付ファイルのいずれ
     
 - [ExceptionFieldURI](exceptionfielduri.md)
     
-- [Attachments](attachments-ex15websvcsotherref.md)
+- [添付ファイル](attachments-ex15websvcsotherref.md)
     
 ## <a name="remarks"></a>注釈
 
-1回のラウンドトリップで複数の添付ファイルがアイテムに添付されている場合、最後の応答メッセージの RootItemChangeKey は、添付ファイルを持つアイテムの新しい変更キーを表すものです。
+1 回のラウンド トリップで複数の添付ファイルがアイテムに添付されている場合、最後の応答メッセージの RootItemChangeKey は、添付ファイルを持つアイテムの新しい変更キーを表すファイルです。
   
 ## <a name="see-also"></a>関連項目
 

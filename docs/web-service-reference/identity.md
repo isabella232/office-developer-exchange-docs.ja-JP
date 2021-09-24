@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ecb533ba-c24a-4940-a852-7988cb385113
-description: Identity 要素は、内部使用のみを目的としています。
-ms.openlocfilehash: 62764947e90d3bc7db850774870937bff084fa25
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Identity 要素は内部での使用のみを目的とします。
+ms.openlocfilehash: 5ebad8f531539d4a26140759e6f6e734c12a796a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456473"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529866"
 ---
 # <a name="identity"></a>ID
 
-**Identity**要素は、内部使用のみを目的としています。 
+**Identity 要素は** 内部での使用のみを目的とします。 
 
 ## <a name="attributes-and-elements"></a>属性と要素
 

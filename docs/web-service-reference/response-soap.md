@@ -1,24 +1,24 @@
 ---
-title: 応答 (SOAP)
+title: Response (SOAP)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 4c2bcdeb-95ce-4ffa-bd83-118af53b534f
-description: Response 要素には、GetUserSettings 操作 (SOAP)、GetDomainSettings operation (SOAP)、または GetFederationInformation operation (SOAP) 要求への応答が含まれています。
-ms.openlocfilehash: 90cb29dd4ce4026211a5b592f149c8190dc81d29
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Response 要素には、GetUserSettings 操作 (SOAP)、GetDomainSettings 操作 (SOAP)、または GetFederationInformation 操作 (SOAP) 要求に対する応答が含まれる。
+ms.openlocfilehash: d42014991db8e93f88b80bed97970f043290cfb1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456417"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512360"
 ---
-# <a name="response-soap"></a>応答 (SOAP)
+# <a name="response-soap"></a>Response (SOAP)
 
-**Response**要素には、 [getusersettings 操作 (soap)](getusersettings-operation-soap.md)、 [GETDOMAINSETTINGS operation (Soap)](getdomainsettings-operation-soap.md)、または[GetFederationInformation operation (soap)](getfederationinformation-operation-soap.md)要求への応答が含まれています。 
+**Response** 要素には [、GetUserSettings 操作 (SOAP)](getusersettings-operation-soap.md) [、GetDomainSettings 操作 (SOAP)、](getdomainsettings-operation-soap.md)[または GetFederationInformation 操作 (SOAP)](getfederationinformation-operation-soap.md)要求に対する応答が含まれる。 
   
 ```XML
 <Response>
@@ -41,17 +41,17 @@ ms.locfileid: "44456417"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ErrorCode (SOAP)](errorcode-soap.md) <br/> |自動検出サービスによって返されるエラーコードを表します。  <br/> |
-|[ErrorMessage (SOAP)](errormessage-soap.md) <br/> |自動検出サービスによって返されるエラーコードに関連付けられているメッセージを表します。  <br/> |
-|[UserResponses (SOAP)](userresponses-soap.md) <br/> |要求された各ユーザーの構成設定が含まれます。  <br/> |
+|[ErrorCode (SOAP)](errorcode-soap.md) <br/> |自動検出サービスによって返されるエラー コードを表します。  <br/> |
+|[ErrorMessage (SOAP)](errormessage-soap.md) <br/> |自動検出サービスによって返されるエラー コードに関連付けられているメッセージを表します。  <br/> |
+|[UserResponses (SOAP)](userresponses-soap.md) <br/> |要求された各ユーザーの構成設定が含まれる。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetUserSettingsResponseMessage (SOAP)](getusersettingsresponsemessage-soap.md) <br/> |[Getusersettingsrequest (SOAP)](getusersettingsrequest-soap.md)への応答を定義します。 <br/> |
-|[GetDomainSettingsResponseMessage (SOAP)](getdomainsettingsresponsemessage-soap.md) <br/> |[Getdomainsettingsrequest (SOAP)](getdomainsettingsrequest-soap.md)への応答を定義します。  <br/> |
-|[GetFederationInformationResponseMessage (SOAP)](getfederationinformationresponsemessage-soap.md) <br/> |[GetFederationInformationRequest (SOAP)](getfederationinformationrequest-soap.md)への応答を定義します。  <br/> |
+|[GetUserSettingsResponseMessage (SOAP)](getusersettingsresponsemessage-soap.md) <br/> |[GetUserSettingsRequest (SOAP) への応答を定義します。](getusersettingsrequest-soap.md) <br/> |
+|[GetDomainSettingsResponseMessage (SOAP)](getdomainsettingsresponsemessage-soap.md) <br/> |[GetDomainSettingsRequest (SOAP) への応答を定義します](getdomainsettingsrequest-soap.md)。  <br/> |
+|[GetFederationInformationResponseMessage (SOAP)](getfederationinformationresponsemessage-soap.md) <br/> |[GetFederationInformationRequest (SOAP) への応答を定義します](getfederationinformationrequest-soap.md)。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -63,8 +63,8 @@ ms.locfileid: "44456417"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -75,5 +75,5 @@ ms.locfileid: "44456417"
 
 [Exchange 用自動検出 Web サービス リファレンス](autodiscover-web-service-reference-for-exchange.md)
   
-[Exchange 2013 の SOAP 自動検出 XML 要素](soap-autodiscover-xml-elements-for-exchange-2013.md)
+[SOAP 自動検出 XML 要素 (2013 Exchange)](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

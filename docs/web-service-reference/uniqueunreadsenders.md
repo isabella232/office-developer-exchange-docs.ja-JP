@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UniqueUnreadSenders
 api_type:
 - schema
 ms.assetid: eb7d1274-ce2e-4ef8-b47f-e911174aab0c
-description: UniqueUnreadSenders 要素には、現在のフォルダーでこのスレッドで現在未読のメッセージを送信したすべてのユーザーの一覧が含まれています。 この要素は値の取得のみ可能です。
-ms.openlocfilehash: 0e45362e88be4930b8bc2f641c1fb00cc63c0605
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: UniqueUnreadSenders 要素には、現在のフォルダー内のこの会話で現在未読のメッセージを送信したすべてのユーザーの一覧が含まれます。 この要素は読み取り専用です。
+ms.openlocfilehash: 6d4099a45d65ab01a12132417eeaa2fde1c1b174
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458853"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59527009"
 ---
 # <a name="uniqueunreadsenders"></a>UniqueUnreadSenders
 
-**UniqueUnreadSenders**要素には、現在のフォルダーでこのスレッドで現在未読のメッセージを送信したすべてのユーザーの一覧が含まれています。 この要素は値の取得のみ可能です。 
+**UniqueUnreadSenders** 要素には、現在のフォルダー内のこの会話で現在未読のメッセージを送信したすべてのユーザーの一覧が含まれます。 この要素は読み取り専用です。 
   
 [FindConversationResponse](findconversationresponse.md)
   
 [会話](conversations-ex15websvcsotherref.md)
   
-[会話 (ConversationType)](conversation-conversationtype.md)
+[Conversation (ConversationType)](conversation-conversationtype.md)
   
 [UniqueUnreadSenders](uniqueunreadsenders.md)
   
@@ -50,13 +50,13 @@ ms.locfileid: "44458853"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[String](string.md) <br/> |1つの会話の送信者を含みます。  <br/> |
+|[String](string.md) <br/> |単一の会話送信者を含む。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[会話 (ConversationType)](conversation-conversationtype.md) <br/> |単一の会話を表します。  <br/> |
+|[Conversation (ConversationType)](conversation-conversationtype.md) <br/> |1 つの会話を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -64,16 +64,16 @@ ms.locfileid: "44458853"
   
 ## <a name="remarks"></a>注釈
 
-この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。
+この要素は、2010 Exchange Server Service Pack 1 (SP1) で導入されました。この要素を記述するスキーマは、Web サービスをホストする IIS 仮想Exchangeにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

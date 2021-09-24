@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ReturnQueueEvents
 api_type:
 - schema
 ms.assetid: 69d22417-320c-4c6f-9fb4-2020f2480bb2
-description: ReturnQueueEvents 要素は、タスクを実行しているユーザーが特権の役割を持っていることを示します。
-ms.openlocfilehash: 9d07bc8c3d32f1cd532febaf4ae04e4a2d31d243
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ReturnQueueEvents 要素は、タスクを実行しているユーザーが特権ロール内にあるかどうかを示します。
+ms.openlocfilehash: d80513b8acdae04e447f63c5736622e577ece040
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466592"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512262"
 ---
 # <a name="returnqueueevents"></a>ReturnQueueEvents
 
-**Returnqueueevents**要素は、タスクを実行しているユーザーが特権の役割を持っていることを示します。 
+**ReturnQueueEvents** 要素は、タスクを実行しているユーザーが特権ロール内にあるかどうかを示します。 
   
 ```XML
 <ReturnQueueEvents>true | false</ReturnQueueEvents>
@@ -44,11 +44,11 @@ ms.locfileid: "44466592"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetMessageTrackingReport](getmessagetrackingreport.md) <br/> |指定された ID の完全なメッセージ追跡レポートを取得する[Getmessagetrackingreport 操作](getmessagetrackingreport-operation.md)の要求を含みます。  <br/> |
+|[GetMessageTrackingReport](getmessagetrackingreport.md) <br/> |指定した ID の完全なメッセージ追跡レポートを取得する [GetMessageTrackingReport](getmessagetrackingreport-operation.md) 操作の要求を格納します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-ブール値を表すテキスト値が必要です。 値が**true の場合**は、タスクを実行しているユーザーが特権ロールに含まれていることを示します。値が**false**の場合は、タスクを実行しているユーザーが特権ロールに含まれていないことを示します。 
+ブール値を表すテキスト値が必要です。 true の **値は** 、タスクを実行しているユーザーが特権的な役割を持っているかどうかを示します。false の **値は** 、タスクを実行しているユーザーが特権ロールに含めされていないかどうかを示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -59,9 +59,9 @@ ms.locfileid: "44466592"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -70,5 +70,5 @@ ms.locfileid: "44466592"
 [GetMessageTrackingReport 操作](getmessagetrackingreport-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

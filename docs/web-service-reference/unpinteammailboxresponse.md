@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 82dfa204-e316-432f-a753-5bd97f576389
-description: UnpinTeamMailboxResponse 要素は、サイトメールボックスの固定を解除する要求に対する応答を含みます。
-ms.openlocfilehash: ba1f61a7b5b5b4d5af6805c13d84ee15e3559751
-ms.sourcegitcommit: eeda51cb037aa25566adb293f25574674fdb2d9e
+description: UnpinTeamMailboxResponse 要素には、サイト メールボックスのピン留めを解除する要求に対する応答が含まれる。
+ms.openlocfilehash: a1302992ec53b5765ff2d098c682fc780d3fa599
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45012581"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510743"
 ---
 # <a name="unpinteammailboxresponse"></a>UnpinTeamMailboxResponse
 
-**UnpinTeamMailboxResponse**要素は、サイトメールボックスの固定を解除する要求に対する応答を含みます。 
+**UnpinTeamMailboxResponse** 要素には、サイト メールボックスのピン留めを解除する要求に対する応答が含まれる。 
   
 ```XML
 <UnpinTeamMailboxResponse>
@@ -39,7 +39,7 @@ ms.locfileid: "45012581"
   
 ### <a name="child-elements"></a>子要素
 
-[Messagetext](messagetext.md)  | 応答[Secmode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)
+[MessageText](messagetext.md)  | [ResponseCode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -56,8 +56,8 @@ ms.locfileid: "45012581"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

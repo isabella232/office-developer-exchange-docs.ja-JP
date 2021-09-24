@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FileAttachment
 api_type:
 - schema
 ms.assetid: 3ecea174-73d1-47fd-8917-6065cef1d565
-description: FileAttachment 要素は、Exchange ストア内のアイテムに添付されているファイルを表します。
-ms.openlocfilehash: db9b541fb2527ae3c09cbdb33bedea7fb215bd30
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: FileAttachment 要素は、ファイル ストア内のアイテムに添付されているファイルExchangeします。
+ms.openlocfilehash: 66424fefafd2084bf0b6f45881089448593e621d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461017"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518499"
 ---
 # <a name="fileattachment"></a>FileAttachment
 
-**Fileattachment**要素は、Exchange ストア内のアイテムに添付されているファイルを表します。 
+**FileAttachment 要素** は、ファイル ストア内のアイテムに添付されているファイルExchangeします。 
   
 ```XML
 <FileAttachment>
@@ -53,20 +53,20 @@ ms.locfileid: "44461017"
 |:-----|:-----|
 |[AttachmentId](attachmentid.md) <br/> |添付ファイルを識別します。  <br/> |
 |[Name (AttachmentType)](name-attachmenttype.md) <br/> |添付ファイルの名前を表します。  <br/> |
-|[ContentType](contenttype.md) <br/> |添付ファイルのコンテンツのマルチパーパスインターネットメール内線 (MIME) の種類について説明します。  <br/> |
-|[ContentId](contentid.md) <br/> |添付ファイルのコンテンツの識別子を表します。 [ContentId](contentid.md)は、任意の文字列値に設定できます。 アプリケーションでは、 [ContentId](contentid.md)を使用して独自の識別メカニズムを実装できます。  <br/> |
-|[ContentLocation](contentlocation.md) <br/> |添付ファイルのコンテンツの場所に対応する Uniform Resource Identifier (URI) を含みます。  <br/> |
-|[Size](size.md) <br/> |添付ファイルのサイズ (バイト単位) を表します。  <br/> |
+|[ContentType](contenttype.md) <br/> |添付ファイルコンテンツの多目的インターネット メール拡張機能 (MIME) の種類について説明します。  <br/> |
+|[ContentId](contentid.md) <br/> |添付ファイルの内容の識別子を表します。 [ContentId は](contentid.md) 、任意の文字列値に設定できます。 アプリケーションは [ContentId を使用して](contentid.md) 、独自の識別メカニズムを実装できます。  <br/> |
+|[ContentLocation](contentlocation.md) <br/> |添付ファイルのコンテンツの場所に対応する統一リソース識別子 (URI) が含まれています。  <br/> |
+|[サイズ](size.md) <br/> |添付ファイルのサイズをバイト単位で表します。  <br/> |
 |[LastModifiedTime](lastmodifiedtime.md) <br/> |添付ファイルが最後に変更された日時を表します。  <br/> |
-|[IsInline](isinline.md) <br/> |添付ファイルがアイテム内にインラインで表示されるかどうかを表します。  <br/> |
-|[IsContactPhoto](iscontactphoto.md) <br/> |添付ファイルが連絡先の画像であるかどうかを示します。  <br/> |
-|[Content](content.md) <br/> |添付ファイルの Base64 でエンコードされたコンテンツを格納します。  <br/> |
+|[IsInline](isinline.md) <br/> |アイテム内で添付ファイルがインラインで表示されるかどうかを表します。  <br/> |
+|[IsContactPhoto](iscontactphoto.md) <br/> |添付ファイルが連絡先画像かどうかを示します。  <br/> |
+|[コンテンツ](content.md) <br/> |添付ファイルの Base64 エンコードコンテンツを格納します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Attachments](attachments-ex15websvcsotherref.md) <br/> |Exchange ストア内のアイテムに添付されているアイテムまたはファイルが保存されています。  <br/> |
+|[添付ファイル](attachments-ex15websvcsotherref.md) <br/> |アイテム ストア内のアイテムに添付されているアイテムまたはファイルExchangeします。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -81,13 +81,13 @@ ms.locfileid: "44461017"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

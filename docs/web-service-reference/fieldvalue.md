@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8dfda53f-658c-4bc9-8950-f7f572c850eb
-description: FieldValue 要素は、検証エラーの原因となったフィールドの値を表します。
-ms.openlocfilehash: fe407fd0aca2850e07bf1c734a64c5bee03d142c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: FieldValue 要素は、検証エラーの原因となるフィールドの値を表します。
+ms.openlocfilehash: 7faa2c56fad32f7b440d1f1b1d31a1710cf354ef
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461213"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59530584"
 ---
 # <a name="fieldvalue"></a>FieldValue
 
-**FieldValue**要素は、検証エラーの原因となったフィールドの値を表します。 
+**FieldValue 要素** は、検証エラーの原因となるフィールドの値を表します。 
   
 ```XML
 <FieldValue/>
@@ -40,7 +40,7 @@ ms.locfileid: "44461213"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Error](error.md) <br/> |特定のルールプロパティ値、述語プロパティ値、または action プロパティ値に対する1つの検証エラーを表します。  <br/> |
+|[エラー](error.md) <br/> |特定のルール プロパティ値、述語プロパティ値、またはアクション プロパティ値に対する 1 つの検証エラーを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -55,13 +55,13 @@ ms.locfileid: "44461213"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

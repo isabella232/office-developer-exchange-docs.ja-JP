@@ -5,38 +5,38 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SetUserOofSettings
 api_type:
 - schema
 ms.assetid: 36277ef0-18ee-4b35-9e6e-8c321d8f5433
-description: SetUserOofSettings Web メソッドは、メールボックスユーザーの不在時 (OOF) の設定とメッセージを設定します。
-ms.openlocfilehash: 88b5475dd2f0fe6d334bad51a0fe8d0beb767634
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SetUserOofSettings Web メソッドは、メールボックス ユーザーのアウト オブ Office (OOF) の設定とメッセージを設定します。
+ms.openlocfilehash: 21a860b2a1ae4a660e08554d7d67049c1ae0d858
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463154"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59531875"
 ---
 # <a name="setuseroofsettings-operation"></a>SetUserOofSettings 操作
 
-**Setuseroofsettings** Web メソッドは、メールボックスユーザーの不在時 (OOF) の設定とメッセージを設定します。 
+**SetUserOofSettings** Web メソッドは、メールボックス ユーザーの [無効] (OOF) Officeメッセージを設定します。 
   
 ## <a name="soap-headers"></a>SOAP ヘッダー
 
-**Setuseroofsettings**操作では、次の表に記載されている SOAP ヘッダーを使用できます。 
+**SetUserOofSettings** 操作では、次の表に示す SOAP ヘッダーを使用できます。 
   
-|**Header**|**要素**|**説明**|
+|**Header**|**Element**|**説明**|
 |:-----|:-----|:-----|
-|偽装  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。  <br/> |
+|偽装  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装しているユーザーを識別します。  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。  <br/> |
    
 ## <a name="setuseroofsettings-request-example"></a>SetUserOofSettings 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-**Setuseroofsettings**要求の次の例では、10日間の OOF 設定を設定します。 
+**SetUserOofSettings** 要求の次の例では、OOF 設定を 10 日間設定します。 
   
 ### <a name="code"></a>コード
 
@@ -69,13 +69,13 @@ ms.locfileid: "44463154"
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 要求では、次の要素が使用されます。
   
 - [SetUserOofSettingsRequest](setuseroofsettingsrequest.md)
     
-- [メールボックス (可用性)](mailbox-availability.md)
+- [Mailbox (Availability)](mailbox-availability.md)
     
 - [Name (EmailAddress)](name-emailaddress.md)
     
@@ -97,15 +97,15 @@ ms.locfileid: "44463154"
     
 - [InternalReply](internalreply.md)
     
-- [メッセージ (可用性)](message-availability.md)
+- [Message (Availability)](message-availability.md)
     
 - [ExternalReply](externalreply.md)
     
-## <a name="successful-setuseroofsettings-response-example"></a>成功した SetUserOofSettings response の例
+## <a name="successful-setuseroofsettings-response-example"></a>成功した SetUserOofSettings 応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **Setuseroofsettings**要求に対する正常な応答を示しています。 
+次の例は **、SetUserOofSettings** 要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -143,5 +143,5 @@ ms.locfileid: "44463154"
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

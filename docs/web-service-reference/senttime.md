@@ -1,23 +1,23 @@
 ---
-title: 時間
+title: SentTime
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e74b4a03-45b0-469c-8889-c7cc5aa88a68
-description: 送信時刻要素は、アイテムが送信された日時を指定します。
-ms.openlocfilehash: 51404b1fe12cf31f935740dd4afe3deaab0777de
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SentTime 要素は、アイテムが送信された時刻を指定します。
+ms.openlocfilehash: dd7f80c51be9ceeabdd9bb648b27d3b4f2b7c77f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463168"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59532126"
 ---
-# <a name="senttime"></a>時間
+# <a name="senttime"></a>SentTime
 
-送信**時刻**要素は、アイテムが送信された日時を指定します。 
+**SentTime 要素** は、アイテムが送信された時刻を指定します。 
   
 ```XML
 <SentTime></SentTime>
@@ -38,11 +38,11 @@ ms.locfileid: "44463168"
   
 ### <a name="parent-elements"></a>親要素
 
-[Searchプレビューアイテム](searchpreviewitem.md)
+[SearchPreviewItem](searchpreviewitem.md)
   
 ## <a name="text-value"></a>テキスト値
 
-送信**時刻**要素のテキスト値は、アイテムが送信された日付と時刻です。 
+SentTime 要素の **テキスト値** は、アイテムが送信された日時です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44463168"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

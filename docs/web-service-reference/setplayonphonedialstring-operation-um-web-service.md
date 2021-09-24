@@ -1,32 +1,32 @@
 ---
-title: SetPlayOnPhoneDialString 操作 (UM web サービス)
+title: SetPlayOnPhoneDialString 操作 (UM Web サービス)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SetPlayOnPhoneDialString
 api_type:
 - schema
 ms.assetid: a68479f2-d900-4dd8-a5ce-dbea8247e841
-description: SetPlayOnPhoneDialString 操作では、PlayOnPhone 操作 (UM web サービス) および Playonphone 案内応答操作 (UM web サービス) の既定として使用するダイヤル文字列を設定します。
-ms.openlocfilehash: 7df806eedc2d6d037394f31ec4ccbfe28aaf3372
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SetPlayOnPhoneDialString 操作は、PlayOnPhone 操作 (UM Web サービス) および PlayOnPhoneGreeting 操作 (UM Web サービス) の既定として使用するダイヤル文字列を設定します。
+ms.openlocfilehash: 89f83d7b0a1d56cb0adeccbf4fa0bb67f1197253
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458643"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59531910"
 ---
-# <a name="setplayonphonedialstring-operation-um-web-service"></a>SetPlayOnPhoneDialString 操作 (UM web サービス)
+# <a name="setplayonphonedialstring-operation-um-web-service"></a>SetPlayOnPhoneDialString 操作 (UM Web サービス)
 
-SetPlayOnPhoneDialString 操作では、 [Playonphone 操作 (um web サービス)](playonphone-operation-um-web-service.md)および[Playonphone 案内応答操作 (um web サービス)](playonphonegreeting-operation-um-web-service.md)の既定として使用するダイヤル文字列を設定します。
+SetPlayOnPhoneDialString 操作では、ダイヤル文字列を [PlayOnPhone](playonphone-operation-um-web-service.md) 操作 (UM Web サービス) および [PlayOnPhoneGreeting](playonphonegreeting-operation-um-web-service.md)操作 (UM Web サービス) の既定値として設定します。
   
 ## <a name="setplayonphonedialstring-request-example"></a>SetPlayOnPhoneDialString 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の SetPlayOnPhoneDialString 要求の例は、メールボックスの既定のダイヤル文字列を設定する要求を形成する方法を示しています。
+SetPlayOnPhoneDialString 要求の次の例は、メールボックスの既定のダイヤル文字列を設定する要求を形成する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -41,11 +41,11 @@ SetPlayOnPhoneDialString 操作では、 [Playonphone 操作 (um web サービ�
 </soap:Envelope>
 ```
 
-## <a name="successful-setplayonphonedialstring-response-example"></a>Successful SetPlayOnPhoneDialString response の例
+## <a name="successful-setplayonphonedialstring-response-example"></a>成功した SetPlayOnPhoneDialString 応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-SetPlayOnePhoneDialString response の次の例は、SetPlayOnPhoneDialString 要求に対する応答を示しています。
+SetPlayOnePhoneDialString 応答の次の例は、SetPlayOnPhoneDialString 要求に対する応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -62,9 +62,9 @@ SetPlayOnePhoneDialString response の次の例は、SetPlayOnPhoneDialString �
 
 
 
-[SetPlayOnPhoneDialString (UM web サービス)](setplayonphonedialstring-um-web-service.md)
+[SetPlayOnPhoneDialString (UM Web サービス)](setplayonphonedialstring-um-web-service.md)
   
-[SetPlayOnPhoneDialStringResponse (UM web サービス)](setplayonphonedialstringresponse-um-web-service.md)
+[SetPlayOnPhoneDialStringResponse (UM Web サービス)](setplayonphonedialstringresponse-um-web-service.md)
   
-[[] (UM web サービス)](dialstring-um-web-service.md)
+[dialString (UM Web サービス)](dialstring-um-web-service.md)
 

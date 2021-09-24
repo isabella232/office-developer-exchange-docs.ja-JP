@@ -1,29 +1,29 @@
 ---
-title: Exchange 2013 用の DeliveryAgent トランスポートエージェントの作成
+title: 2013 年の DeliveryAgent トランスポート エージェントExchangeする
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4af904d7-b315-4849-92b1-66018f76ffdf
-description: Exchange 2013 で使用するカスタムの DeliveryAgent トランスポートエージェントを作成する方法について説明します。
-ms.openlocfilehash: b349f0b6d835ba3d6195b43e80d1dcd21750bf82
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: 2013 で使用するカスタム DeliveryAgent トランスポート エージェントを作成するExchangeします。
+ms.openlocfilehash: b465c3bbd4658bea700d5be9f4eb16ae81693717
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527573"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59526934"
 ---
-# <a name="create-a-deliveryagent-transport-agent-for-exchange-2013"></a>Exchange 2013 用の DeliveryAgent トランスポートエージェントの作成
+# <a name="create-a-deliveryagent-transport-agent-for-exchange-2013"></a>2013 年の DeliveryAgent トランスポート エージェントExchangeする
 
-Exchange 2013 で使用するカスタムの DeliveryAgent トランスポートエージェントを作成する方法について説明します。
+2013 で使用するカスタム DeliveryAgent トランスポート エージェントを作成するExchangeします。
   
 **製品:** Exchange Server 2013
   
-[Deliveryagentfactory \<Manager\> ](https://msdn.microsoft.com/library/dd877550(v=exchg.150).aspx)および[Deliveryagent](https://msdn.microsoft.com/library/microsoft.exchange.data.transport.delivery.deliveryagent(v=exchg.150).aspx)クラスは、Exchange Server 2013 メールボックスサーバー上のトランスポートサービス上で実行するように設計されたトランスポートエージェントの基本クラスです。 次の表に、 [deliveryagent](https://msdn.microsoft.com/library/microsoft.exchange.data.transport.delivery.deliveryagent(v=exchg.150).aspx)クラスによって提供されるイベントについて、deliveryagent トランスポートエージェントのハンドラーを実装することができます。 
+[DeliveryAgentFactory \<Manager\> ](https://msdn.microsoft.com/library/dd877550(v=exchg.150).aspx)クラスと[DeliveryAgent](https://msdn.microsoft.com/library/microsoft.exchange.data.transport.delivery.deliveryagent(v=exchg.150).aspx)クラスは、2013 メールボックス サーバー上のトランスポート サービスで実行するように設計されたトランスポート エージェントの基本クラスExchange Serverです。 次の表に示す DeliveryAgent クラスによって提供されるイベントに対して [、DeliveryAgent](https://msdn.microsoft.com/library/microsoft.exchange.data.transport.delivery.deliveryagent(v=exchg.150).aspx) トランスポート エージェントにハンドラーを実装できます。 
   
-**表1DeliveryAgent クラスのイベント**
+**表 1.DeliveryAgent クラスのイベント**
 
 |**イベント**|**説明**|
 |:-----|:-----|
@@ -45,9 +45,9 @@ Exchange 2013 で使用するカスタムの DeliveryAgent トランスポート
     
    ```
 
-   該当する名前空間は、Exchange サーバーで見つかります。 これらの名前空間への参照を追加すると、 [Deliveryagent](https://msdn.microsoft.com/library/microsoft.exchange.data.transport.delivery.deliveryagent(v=exchg.150).aspx)メンバーにアクセスできるようになります。 
+   該当する名前空間は、Exchange サーバーで見つかります。 これらの名前空間への参照を追加すると [、DeliveryAgent メンバーにアクセス](https://msdn.microsoft.com/library/microsoft.exchange.data.transport.delivery.deliveryagent(v=exchg.150).aspx) できます。 
     
-2. [Deliveryagentfactory \<Manager\> ](https://msdn.microsoft.com/library/dd877550(v=exchg.150).aspx)クラスの派生クラスを実装します。 
+2. [DeliveryAgentFactory クラスの派生クラスを実装 \<Manager\> ](https://msdn.microsoft.com/library/dd877550(v=exchg.150).aspx)します。 
     
    ```cs
       public class MyDeliveryAgentFactory : DeliveryAgentFactory<MyDeliveryAgentFactory.MyDeliveryAgentManager>
@@ -73,7 +73,7 @@ Exchange 2013 で使用するカスタムの DeliveryAgent トランスポート
   
    ```
 
-   このコードでは、派生クラスのインスタンスを作成し、**CreateAgent** メソッドをオーバーライドして、新しいカスタム エージェントのインスタンスを作成するようにします。 このクラスの別のメソッド (**Close** など) も、カスタム コードを実行するようにオーバーライドできます。 [Deliveryagentmanager](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Delivery.DeliveryAgentManager.aspx)クラスは、 [supporteddeliveryprotocol](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Delivery.DeliveryAgentManager.SupportedDeliveryProtocol.aspx)プロパティを上書きし、エージェントが使用するプロトコルを設定するために作成されます。 
+   このコードでは、派生クラスのインスタンスを作成し、**CreateAgent** メソッドをオーバーライドして、新しいカスタム エージェントのインスタンスを作成するようにします。 このクラスの別のメソッド (**Close** など) も、カスタム コードを実行するようにオーバーライドできます。 [DeliveryAgentManager](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Delivery.DeliveryAgentManager.aspx)クラスは[、SupportedDeliveryProtocol](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Delivery.DeliveryAgentManager.SupportedDeliveryProtocol.aspx)プロパティをオーバーライドし、エージェントが使用するプロトコルを設定するために作成されます。 
     
 3. エージェントを定義します。
     
@@ -90,7 +90,7 @@ Exchange 2013 で使用するカスタムの DeliveryAgent トランスポート
   
    ```
 
-   独自のエージェント クラスを定義すると、カスタムの機能を追加できるようになります。 この例では、3つの events、 [OnCloseConnection](https://msdn.microsoft.com/library/microsoft.exchange.data.transport.delivery.deliveryagent.oncloseconnection(v=exchg.150).aspx)、 [OnDeliverMailItem](https://msdn.microsoft.com/library/microsoft.exchange.data.transport.delivery.deliveryagent.ondelivermailitem(v=exchg.150).aspx)、 [onopenconnection](https://msdn.microsoft.com/library/microsoft.exchange.data.transport.delivery.deliveryagent.onopenconnection(v=exchg.150).aspx)がカスタムイベントハンドラーにリダイレクトされます。 
+   独自のエージェント クラスを定義すると、カスタムの機能を追加できるようになります。 この例では、OnCloseConnection、OnDeliverMailItem、OnOpenConnection[](https://msdn.microsoft.com/library/microsoft.exchange.data.transport.delivery.deliveryagent.onopenconnection(v=exchg.150).aspx)の 3 つのイベントがカスタム イベント ハンドラーにリダイレクトされます。 [](https://msdn.microsoft.com/library/microsoft.exchange.data.transport.delivery.deliveryagent.oncloseconnection(v=exchg.150).aspx) [](https://msdn.microsoft.com/library/microsoft.exchange.data.transport.delivery.deliveryagent.ondelivermailitem(v=exchg.150).aspx) 
     
 ## <a name="see-also"></a>関連項目
 

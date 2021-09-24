@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Conversations
 api_type:
 - schema
 ms.assetid: 1d18f98c-6457-45e9-a934-32da20885ac6
-description: 会話要素には、FindConversation 応答で返されるスレッドの配列が含まれています。
-ms.openlocfilehash: 8af1023db51dd955c544422520ec5565f09f5372
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Conversations 要素には、FindConversation 応答で返される会話の配列が含まれる。
+ms.openlocfilehash: 7c1c4d4ad91317946b64db609d67cafa5f0e7283
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463798"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518667"
 ---
 # <a name="conversations"></a>会話
 
-**会話**要素には、 **findconversation**応答で返されるスレッドの配列が含まれています。 
+**Conversations 要素** には **、FindConversation** 応答で返される会話の配列が含まれる。 
   
 [FindConversationResponse](findconversationresponse.md)
   
@@ -46,13 +46,13 @@ ms.locfileid: "44463798"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[会話 (ConversationType)](conversation-conversationtype.md) <br/> |単一の会話を表します。  <br/> |
+|[Conversation (ConversationType)](conversation-conversationtype.md) <br/> |1 つの会話を表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FindConversationResponse](findconversationresponse.md) <br/> |**Findconversation**要求に対する応答を定義します。  <br/> |
+|[FindConversationResponse](findconversationresponse.md) <br/> |**FindConversation 要求への応答を定義** します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -60,16 +60,16 @@ ms.locfileid: "44463798"
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
+この要素を記述するスキーマは、Exchange Web Services をホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

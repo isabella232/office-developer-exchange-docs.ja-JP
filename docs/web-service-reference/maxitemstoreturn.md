@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fef0db2a-f126-4a38-b433-64194b22eab4
-description: MaxItemsToReturn 要素は、GetConversationItems 応答で返される会話アイテムの最大数を指定します。
-ms.openlocfilehash: 5d3c509a35c3b7abc42fc7e0ec0d8447eaf5a977
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MaxItemsToReturn 要素は、GetConversationItems 応答で返される会話アイテムの最大数を識別します。
+ms.openlocfilehash: c3f0e2f27c5d43dd388d191daf85328d73d278b8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466340"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519276"
 ---
 # <a name="maxitemstoreturn"></a>MaxItemsToReturn
 
-**Maxitemstoreturn**要素は、 **GetConversationItems**応答で返される会話アイテムの最大数を指定します。 
+**MaxItemsToReturn** 要素は **、GetConversationItems** 応答で返される会話アイテムの最大数を識別します。 
   
 ```XML
 <MaxItemsToReturn></MaxItemsToReturn>
@@ -42,7 +42,7 @@ ms.locfileid: "44466340"
   
 ## <a name="text-value"></a>テキスト値
 
-**Maxitemstoreturn**要素のテキスト値は、応答で返される会話アイテムの最大数です。 
+**MaxItemsToReturn** 要素のテキスト値は、応答で返される会話アイテムの最大数です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44466340"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

@@ -1,23 +1,23 @@
 ---
-title: Imcontactsi紫 Iaddress
+title: ImContactSipUriAddress
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4a3d12a2-0736-4f60-b3b8-14586467df3c
-description: Imcontactsi紫 Iaddress 要素には、インスタントメッセージング (IM) グループに追加される連絡先の SIP URI アドレスが含まれます。
-ms.openlocfilehash: 07eff4ef597b689f65241622677e4e4afc9300be
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ImContactSipUriAddress 要素には、インスタント メッセージング (IM) グループに追加される連絡先の SIP URI アドレスが含まれています。
+ms.openlocfilehash: 3b062d4d9679dd96ce5a36b9b048c13a6beb1f0f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460709"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541148"
 ---
-# <a name="imcontactsipuriaddress"></a>Imcontactsi紫 Iaddress
+# <a name="imcontactsipuriaddress"></a>ImContactSipUriAddress
 
-**Imcontactsi紫 Iaddress**要素には、インスタントメッセージング (IM) グループに追加される連絡先の SIP URI アドレスが含まれます。 
+**ImContactSipUriAddress** 要素には、インスタント メッセージング (IM) グループに追加される連絡先の SIP URI アドレスが含まれています。 
   
 ```XML
 <ImContactSipUriAddress></ImContactSipUriAddress>
@@ -42,7 +42,7 @@ ms.locfileid: "44460709"
   
 ## <a name="text-value"></a>テキスト値
 
-**Imcontactsi紫 Iaddress**要素のテキスト値は、連絡先の SIP URI アドレスです。 
+**ImContactSipUriAddress** 要素のテキスト値は、連絡先の SIP URI アドレスです。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44460709"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |いいえ  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 

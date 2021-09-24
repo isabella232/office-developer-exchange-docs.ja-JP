@@ -4,19 +4,19 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 70946a1a-a121-4b47-8e67-ccbc1a25b0f1
-description: ServiceUrl 要素は、ドキュメント共有 web サービスの URL を表します。
-ms.openlocfilehash: 14b553f53c9af3f746a111d6e48a443ba33646dc
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ServiceUrl 要素は、ドキュメント共有 Web サービスの URL を表します。
+ms.openlocfilehash: a193732878de94b7ed1a807ee3fb42149ab4b6cf
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465773"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59532065"
 ---
 # <a name="serviceurl-soap"></a>ServiceUrl (SOAP)
 
-**Serviceurl**要素は、ドキュメント共有 web サービスの URL を表します。 
+**ServiceUrl 要素** は、ドキュメント共有 Web サービスの URL を表します。 
   
 ```XML
 <ServiceUrl />
@@ -43,7 +43,7 @@ ms.locfileid: "44465773"
    
 ## <a name="text-value"></a>テキスト値
 
-**Serviceurl**要素のテキスト値は、ドキュメント共有 web サービスの URL です。 
+ServiceUrl 要素の **テキスト値** は、ドキュメント共有 Web サービスの URL です。 
   
 ## <a name="element-information"></a>要素の情報
 
@@ -51,8 +51,8 @@ ms.locfileid: "44465773"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -63,5 +63,5 @@ ms.locfileid: "44465773"
 
 [Exchange 用自動検出 Web サービス リファレンス](autodiscover-web-service-reference-for-exchange.md)
   
-[Exchange 2013 の SOAP 自動検出 XML 要素](soap-autodiscover-xml-elements-for-exchange-2013.md)
+[SOAP 自動検出 XML 要素 (2013 Exchange)](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

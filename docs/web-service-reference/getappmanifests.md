@@ -1,23 +1,23 @@
 ---
-title: Getappmanifests が
+title: GetAppManifests
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 689cd498-4ee0-4a41-8907-4f0d7137477e
 description: GetAppManifests 要素は、アプリのマニフェストを返す要求の基本要素です。
-ms.openlocfilehash: 067075741d5f4eca3f41e327d8bd17fc54450fdd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 26ce82c5a0ac73644f75043589c576de857bd02a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463000"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541218"
 ---
-# <a name="getappmanifests"></a>Getappmanifests が
+# <a name="getappmanifests"></a>GetAppManifests
 
-**Getappmanifests**要素は、アプリのマニフェストを返す要求の基本要素です。 
+**GetAppManifests 要素** は、アプリのマニフェストを返す要求の基本要素です。 
   
 ```xml
 <GetAppManifests />
@@ -34,7 +34,7 @@ ms.locfileid: "44463000"
   
 ### <a name="child-elements"></a>子要素
 
-[サポートされている](apiversionsupported.md)  |  apiversion[SchemaVersionSupported](schemaversionsupported.md)
+[ApiVersionSupported](apiversionsupported.md)  | [SchemaVersionSupported](schemaversionsupported.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -46,20 +46,20 @@ ms.locfileid: "44463000"
   
 ## <a name="remarks"></a>注釈
 
-**Getappmanifests**要素は、exchange Online および exchange 2013 以降のバージョンの Microsoft exchange Server を対象とするクライアントに適用されます。 
+**GetAppManifests** 要素は、2013 年から Exchange Online およびバージョンの Microsoft Exchange Serverを対象とするクライアントExchangeです。 
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

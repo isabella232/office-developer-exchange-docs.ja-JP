@@ -1,27 +1,27 @@
 ---
-title: Read
+title: 読み取り
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Read
 api_type:
 - schema
 ms.assetid: b14637e9-1695-4b7e-b078-ae527c2e4303
-description: Read 要素は、クライアントがフォルダーまたはアイテムを読み取ることができるかどうかを示します。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。
-ms.openlocfilehash: d75285e0ab14c4f53d73cb7f4349196e07c3c521
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Read 要素は、クライアントがフォルダーまたはアイテムを読み取るかどうかを示します。 この要素は、2007 Microsoft Exchange Server パック 1 (SP1) で導入されました。
+ms.openlocfilehash: f86d7c415065b6cb45492f66cca55c6f3d7f466d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468314"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59527657"
 ---
-# <a name="read"></a>Read
+# <a name="read"></a>読み取り
 
-**Read**要素は、クライアントがフォルダーまたはアイテムを読み取ることができるかどうかを示します。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。 
+**Read 要素** は、クライアントがフォルダーまたはアイテムを読み取るかどうかを示します。 この要素は、2007 Microsoft Exchange Server パック 1 (SP1) で導入されました。 
   
 ```xml
 <Read>true or false</Read>
@@ -44,31 +44,31 @@ ms.locfileid: "44468314"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[EffectiveRights](effectiverights.md) <br/> |アイテムまたはフォルダーのアクセス許可の設定に基づいて、クライアントの権限が含まれています。 この要素は、Exchange 2007 SP1 で導入されました。  <br/> |
+|[EffectiveRights](effectiverights.md) <br/> |アイテムまたはフォルダーのアクセス許可設定に基づくクライアントの権限が含まれる。 この要素は、2007 SP1 Exchange導入されました。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値が**true の場合**は、クライアントがフォルダーのアイテムを読み取ることができることを示します。 
+true のテキスト **値は** 、クライアントがフォルダーのアイテムを読み取り可能な状態を示します。 
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 
 
-[フォルダーレベルのアクセス許可を設定する](https://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
+[アクセス許可Folder-Level設定する](https://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
 

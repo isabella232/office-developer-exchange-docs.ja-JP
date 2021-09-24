@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetRoomLists
 api_type:
 - schema
 ms.assetid: adfa95f8-0e92-4d21-b94f-94fac7117ece
-description: GetRoomLists 要素は、使用可能なルームのリストを表す電子メールアドレスのリストに対する要求のルート要素です。
-ms.openlocfilehash: 681a59131306506d31ee753467483e67b59a3de4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetRoomLists 要素は、使用可能な会議室の一覧を表す電子メール アドレスの一覧の要求のルート要素です。
+ms.openlocfilehash: 9c8c1c7e946a809f914b54db319ea866273e098d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460555"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518338"
 ---
 # <a name="getroomlists"></a>GetRoomLists
 
-**GetRoomLists**要素は、使用可能なルームのリストを表す電子メールアドレスのリストに対する要求のルート要素です。 
+**GetRoomLists** 要素は、使用可能な会議室の一覧を表す電子メール アドレスの一覧の要求のルート要素です。 
   
 ```XML
 <GetRoomLists/>
@@ -53,13 +53,13 @@ ms.locfileid: "44460555"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
 |空に設定可能  <br/> |true  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

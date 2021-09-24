@@ -1,26 +1,26 @@
 ---
-title: Exchange の POX 自動検出 XML 要素
+title: POX 自動検出 XML 要素のExchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 4ea99dcc-4b5a-48be-9cb7-f92851d13b03
-description: Exchange の POX 自動検出 web サービスの XML 要素リファレンス情報を検索します。
-ms.openlocfilehash: 9085491197f5aa79ffe54c5c920708d7b100458f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: POX 自動検出 Web サービスの XML 要素参照情報を、Exchange。
+ms.openlocfilehash: 6ac6c47a36b774988b437d22d970a03aa96aee79
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462249"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519199"
 ---
-# <a name="pox-autodiscover-xml-elements-for-exchange"></a>Exchange の POX 自動検出 XML 要素
+# <a name="pox-autodiscover-xml-elements-for-exchange"></a>POX 自動検出 XML 要素のExchange
 
-Exchange の POX 自動検出 web サービスの XML 要素リファレンス情報を検索します。
+POX 自動検出 Web サービスの XML 要素参照情報を、Exchange。
   
-このセクションのドキュメントは、クライアントとサーバー間で送信される POX 自動検出 XML 要素のインスタンスに基づいています。 POX 自動検出サービスに、サーバー上で検出できる公開されたスキーマがありません。 このセクションでは、個々の POX 自動検出 XML 要素について説明します。
+このセクションのドキュメントは、クライアントとサーバーの間で送信される POX 自動検出 XML 要素インスタンスに基づいて作成されます。 POX 自動検出サービスには、サーバー上で検出できる発行済みスキーマが存在しません。 このセクションでは、個々の POX 自動検出 XML 要素に関する情報を提供します。
   
 ## <a name="related-sections"></a>関連情報
 <a name="bk_RelatedSections"> </a>
@@ -29,7 +29,7 @@ Exchange の POX 自動検出 web サービスの XML 要素リファレンス�
   
 [Exchange 用 EWS リファレンス](ews-reference-for-exchange.md)
   
-[Exchange 用ユニファイドメッセージング web サービスのリファレンス](unified-messaging-web-service-reference-for-exchange.md)
+[ユニファイド メッセージング Web サービスの参照Exchange](unified-messaging-web-service-reference-for-exchange.md)
   
 ## <a name="see-also"></a>関連項目
 

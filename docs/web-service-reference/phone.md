@@ -1,23 +1,23 @@
 ---
-title: 電話番号
+title: Phone
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: ITPro
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9381d8e0-b705-49fd-a822-00fb485bdbab
-description: Phone 要素は、連絡先エンティティの抽出から得られる1つの電話番号を指定します。
-ms.openlocfilehash: 7b0047eda90f2e2bb94fd7d0b8d317715ac5d2c9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: '[電話] 要素は、連絡先エンティティの抽出に基く単一の電話番号を指定します。'
+ms.openlocfilehash: fa9e0be88c2142b30304c3c5b758624fa73da7d1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459708"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59528361"
 ---
-# <a name="phone"></a>電話番号
+# <a name="phone"></a>Phone
 
-**Phone**要素は、連絡先エンティティの抽出から得られる1つの電話番号を指定します。 
+**[電話]** 要素は、連絡先エンティティ抽出の結果として 1 つの電話番号を指定します。 
   
 ```XML
 <Phone>
@@ -38,7 +38,7 @@ ms.locfileid: "44459708"
   
 ### <a name="child-elements"></a>子要素
 
-[Phonenumber.originalphonestring](originalphonestring.md)  | [電話テキスト](phonestring.md)  | [型 (string)](type-string.md)
+[OriginalPhoneString](originalphonestring.md)  | [PhoneString](phonestring.md)  | [型 (文字列)](type-string.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -55,8 +55,8 @@ ms.locfileid: "44459708"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

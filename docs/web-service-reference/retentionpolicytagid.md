@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4cf8b357-a58d-4837-994f-c2ba9b1eca4b
-description: RetentionPolicyTagId 要素は、アイテム保持ポリシータグの識別子を指定します。
-ms.openlocfilehash: 1ed2b3317251321d9593feb83d8ed4550425c3e9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: RetentionPolicyTagId 要素は、アイテム保持ポリシー タグの識別子を指定します。
+ms.openlocfilehash: f284dc5191e1eac5086caf3f1897f83012c165cd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465136"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512353"
 ---
 # <a name="retentionpolicytagid"></a>RetentionPolicyTagId
 
-**RetentionPolicyTagId**要素は、アイテム保持ポリシータグの識別子を指定します。 
+**RetentionPolicyTagId** 要素は、アイテム保持ポリシー タグの識別子を指定します。 
   
 ```XML
 <RetentionPolicyTagId></RetentionPolicyTagId>
@@ -42,7 +42,7 @@ ms.locfileid: "44465136"
   
 ## <a name="text-value"></a>テキスト値
 
-**RetentionPolicyTagId**要素のテキスト値は、スレッド内のアイテムに適用されるポリシータグ識別子です。 
+**RetentionPolicyTagId 要素のテキスト** 値は、会話内のアイテムに適用されるポリシー タグ識別子です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44465136"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

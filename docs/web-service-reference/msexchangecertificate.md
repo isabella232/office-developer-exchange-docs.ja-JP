@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c514f22f-be3e-4cad-ac56-bdff6bafcee6
-description: MSExchangeCertificate 要素には、連絡先の Microsoft Exchange 証明書をエンコードする値が含まれています。
-ms.openlocfilehash: 60bbcfb45e52dc92140d03cdd24a251ea84217b1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MSExchangeCertificate 要素には、連絡先の Microsoft 証明書をエンコードExchange値が含まれている。
+ms.openlocfilehash: 14993f2a1067334bba5c8980bc57eaff550f09d0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465675"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529795"
 ---
 # <a name="msexchangecertificate"></a>MSExchangeCertificate
 
-**MSExchangeCertificate**要素には、連絡先の Microsoft Exchange 証明書をエンコードする値が含まれています。 
+**MSExchangeCertificate** 要素には、連絡先の Microsoft 証明書をエンコードExchange値が含まれている。 
   
 ```XML
 <MSExchangeCertificate/>
@@ -36,13 +36,13 @@ ms.locfileid: "44465675"
 
 |**要素名**|**説明**|
 |:-----|:-----|
-|[Base64Binary](base64binary.md) <br/> |Base64 でエンコードされた値を格納します。  <br/> |
+|[Base64Binary](base64binary.md) <br/> |Base64 でエンコードされた値を含む。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素名**|**説明**|
 |:-----|:-----|
-|[Contact](contact.md) <br/> |Exchange ストア内の連絡先アイテムを表します。  <br/> |
+|[Contact](contact.md) <br/> |ストア内の連絡先アイテムExchangeします。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -59,15 +59,15 @@ ms.locfileid: "44465675"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 
 
 [連絡先の作成 (Exchange Web サービス)](https://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)

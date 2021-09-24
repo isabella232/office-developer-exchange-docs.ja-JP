@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 04dd4987-baaf-4ebe-ae58-ad962c2f8fa1
-description: ReminderMessageData 要素は、アラームメッセージのデータを指定します。
-ms.openlocfilehash: f2632062cd02581c426f7dbfa2a33d53e5594d72
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ReminderMessageData 要素は、アラーム メッセージ内のデータを指定します。
+ms.openlocfilehash: d916e1526f11795efa54cdf186d606bc293656e0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458552"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512451"
 ---
 # <a name="remindermessagedata"></a>ReminderMessageData
 
-**ReminderMessageData**要素は、アラームメッセージのデータを指定します。 
+**ReminderMessageData 要素** は、アラーム メッセージ内のデータを指定します。 
   
 ```XML
 <ReminderMessageData>
@@ -53,16 +53,16 @@ ms.locfileid: "44458552"
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
-ビルド番号15.00.0913.09 以降のバージョンの Exchange では、 **ReminderMessageData**要素の子要素として**AssociatedCalendarItemId**要素を含めることができます。 
+ビルド番号 15.00.0913.09 から始まる Exchange のバージョンには **、ReminderMessageData** 要素の子要素として **AssociatedCalendarItemId** 要素を含めできます。 
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -71,5 +71,5 @@ ms.locfileid: "44458552"
 [Message](message-ex15websvcsotherref.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

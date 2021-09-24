@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - HomePage
 api_type:
 - schema
 ms.assetid: eec2c41e-a975-42f6-8150-caf8c6e26462
-description: ホームページ要素は、管理フォルダーの既定のホームページとなる URL を指定します。
-ms.openlocfilehash: b56a273bab3ec34d03e84ba8f7e2d6feddeb3e88
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: HomePage 要素は、管理フォルダーの既定のホーム ページになる URL を指定します。
+ms.openlocfilehash: 32b943570802b440c347abcf8ffdf4ff675c92b0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460842"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541169"
 ---
 # <a name="homepage"></a>HomePage
 
-**ホーム**ページ要素は、管理フォルダーの既定のホームページとなる URL を指定します。 
+**HomePage 要素** は、管理フォルダーの既定のホーム ページになる URL を指定します。 
   
 ```xml
 <HomePage/>
@@ -44,24 +44,24 @@ ms.locfileid: "44460842"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ManagedFolderInformation](managedfolderinformation.md) <br/> |管理フォルダーに関する情報を格納します。  <br/> |
+|[ManagedFolderInformation](managedfolderinformation.md) <br/> |管理フォルダーに関する情報が含まれる。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、URL を表す文字列型 (string) の値です。
+テキスト値は、URL を表す文字列値です。
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -70,7 +70,7 @@ ms.locfileid: "44460842"
 [CreateManagedFolder 操作](createmanagedfolder-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 
 
 [管理フォルダーの追加](https://msdn.microsoft.com/library/846658c6-7043-40fb-8439-19f97c2a967f%28Office.15%29.aspx)

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - InternalReply
 api_type:
 - schema
 ms.assetid: 1d784ded-b874-4eb1-8f6d-2e0e03330e1e
-description: InternalReply 要素には、ユーザーのドメインまたは信頼されたドメイン内の他のユーザーに送信される不在 (OOF) 応答が含まれています。
-ms.openlocfilehash: 24c278ebd3acf83e87fbf72650eb3d5d438d5c22
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: InternalReply 要素には、ユーザーのドメインまたは信頼できるドメイン内の他のユーザーに送信される、アウトオブオフィス (OOF) 応答が含まれる。
+ms.openlocfilehash: bbf25d05330463e44d9c865749943ed45a64e157
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465584"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541106"
 ---
 # <a name="internalreply"></a>InternalReply
 
-**Internalreply**要素には、ユーザーのドメインまたは信頼されたドメイン内の他のユーザーに送信される不在 (OOF) 応答が含まれています。 
+**InternalReply 要素** には、ユーザーのドメインまたは信頼できるドメイン内の他のユーザーに送信される、アウトオブオフィス (OOF) 応答が含まれる。 
   
 ```XML
 <InternalReply>
@@ -38,20 +38,20 @@ ms.locfileid: "44465584"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|xml: lang  <br/> |**Internalreply**メッセージで使用される言語を指定します。 この属性に指定できる値は、IETF RFC 3066 で定義されています。  <br/> |
+|xml:lang  <br/> |InternalReply メッセージで使用 **される言語を指定** します。 この属性の可能な値は、IETF RFC 3066 によって定義されます。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[メッセージ (可用性)](message-availability.md) <br/> |OOF 応答を含みます。  <br/> |
+|[Message (Availability)](message-availability.md) <br/> |OOF 応答が含まれる。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[UserOofSettings](useroofsettings.md) <br/> |OOF 設定を指定します。  <br/> この要素の XPath 式を次に示します。  <br/>  `/SetUserOofSettingsRequest/UserOofSettings` <br/> |
-|[OofSettings](oofsettings.md) <br/> |不在時の設定が含まれます。  <br/> この要素の XPath 式を次に示します。  <br/>  `/GetUserOofSettingsResponse/OofSettings` <br/> |
+|[UserOofSettings](useroofsettings.md) <br/> |OOF 設定を指定します。  <br/> 次に、この要素の XPath 式を示します。  <br/>  `/SetUserOofSettingsRequest/UserOofSettings` <br/> |
+|[OofSettings](oofsettings.md) <br/> |OOF 設定が含まれる。  <br/> 次に、この要素の XPath 式を示します。  <br/>  `/GetUserOofSettingsResponse/OofSettings` <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -59,7 +59,7 @@ ms.locfileid: "44465584"
   
 ## <a name="example"></a>例
 
-SetUserOofSettings 要求の次の例では、 [Oofstate](oofstate.md)を**有効**に設定し、不在時の時間を10日間に設定し、内部および外部の oof メッセージを設定します。
+SetUserOofSettings 要求の次の例では [、OofState](oofstate.md) を **Enabled** に設定し、OOF の期間を 10 日間設定し、内部および外部の OOF メッセージを設定します。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -95,9 +95,9 @@ SetUserOofSettings 要求の次の例では、 [Oofstate](oofstate.md)を**有�
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

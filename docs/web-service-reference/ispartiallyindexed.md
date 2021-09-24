@@ -1,23 +1,23 @@
 ---
-title: Ispartiのインデックス付き
+title: IsPartiallyIndexed
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 542e7b90-eafe-4711-a9d7-71bbc30d9646
-description: Isparti"Indexed/インデックス" 要素は、アイテムが部分的にインデックス付けされているかどうかを示します。
-ms.openlocfilehash: 4bf0c3e5dd7b75a90ac087958fbceda334306af1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: IsPartiallyIndexed 要素は、アイテムが部分的にインデックス付けされているかどうかを示します。
+ms.openlocfilehash: 3917f14bbdae13f4485edcbbcd595989c3cd907f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466487"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540987"
 ---
-# <a name="ispartiallyindexed"></a>Ispartiのインデックス付き
+# <a name="ispartiallyindexed"></a>IsPartiallyIndexed
 
-**Isparti"indexed/インデックス**" 要素は、アイテムが部分的にインデックス付けされているかどうかを示します。 
+**IsPartiallyIndexed** 要素は、アイテムが部分的にインデックス付けされているかどうかを示します。 
   
 ```XML
 <IsPartiallyIndexed>true | false</IsPartiallyIndexed>
@@ -42,7 +42,7 @@ ms.locfileid: "44466487"
   
 ## <a name="text-value"></a>テキスト値
 
-**Ispartithe indexed**要素のテキスト値が**true の場合**は、メールボックスアイテムが部分的にインデックス付けされていることを示します。 値が**false**の場合は、メールボックスアイテムが部分的にインデックス付けされていないことを示します。 
+**IsPartiallyIndexed** 要素のテキスト値 **が true** の場合は、メールボックス アイテムが部分的にインデックス付けされた状態を示します。 false の **値は** 、メールボックス アイテムが部分的にインデックス付けされていないかどうかを示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44466487"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

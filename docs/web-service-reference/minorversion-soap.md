@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 2ef4e181-7324-4c88-94a9-1cffefc8c008
-description: MinorVersion 要素は、サーバーのマイナーバージョン番号を表します。
-ms.openlocfilehash: 79e617e65e7cecffa1b8ca7ccfe9ac799bb475b9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MinorVersion 要素は、サーバーのマイナー バージョン番号を表します。
+ms.openlocfilehash: 4518a1cb342187099aefa9ac9d9d5069e51fa9ca
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467754"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518198"
 ---
 # <a name="minorversion-soap"></a>MinorVersion (SOAP)
 
-**MinorVersion**要素は、サーバーのマイナーバージョン番号を表します。 
+**MinorVersion 要素** は、サーバーのマイナー バージョン番号を表します。 
   
 ```XML
 <MinorVersion/>
@@ -41,11 +41,11 @@ ms.locfileid: "44467754"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ServerVersionInfo (SOAP)](serverversioninfo-soap.md) <br/> |要求を処理したサーバーのバージョンが保存されています。  <br/> |
+|[ServerVersionInfo (SOAP)](serverversioninfo-soap.md) <br/> |要求を処理したサーバーのバージョンを格納します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-要求を処理したサーバーのマイナーバージョン番号を表す整数値。
+要求を処理したサーバーのマイナー バージョン番号を表す整数値。
   
 ## <a name="element-information"></a>要素の情報
 
@@ -53,7 +53,7 @@ ms.locfileid: "44467754"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
 |空に設定可能  <br/> |はい  <br/> |
    
 

@@ -1,27 +1,27 @@
 ---
-title: 「Orccme」
+title: SentToOrCcMe
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SentToOrCcMe
 api_type:
 - schema
 ms.assetid: ca43e05d-df37-485b-9276-34678025f2b7
-description: 送信 Toorccme 要素は、条件または例外を適用するために、メールボックスの所有者が受信メッセージの ToRecipients または CcRecipients いずれかのプロパティに含まれている必要があるかどうかを示します。
-ms.openlocfilehash: 906e5d9fd405b9aa6f772bcedbd1869b5023a05e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SentToOrCcMe 要素は、条件または例外を適用するために、メールボックスの所有者が受信メッセージの ToRecipients プロパティまたは CcRecipients プロパティに含める必要があるかどうかを示します。
+ms.openlocfilehash: 0e9dddf53c2b671613a5a4c20e3b845a5d38c247
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462081"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510891"
 ---
-# <a name="senttoorccme"></a>「Orccme」
+# <a name="senttoorccme"></a>SentToOrCcMe
 
-送信**Toorccme**要素は、条件または例外を適用するために、メールボックスの所有者が受信メッセージの**torecipients**または**ccrecipients**いずれかのプロパティに含まれている必要があるかどうかを示します。 
+**SentToOrCcMe** 要素は、条件または例外を適用するために、メールボックスの所有者が受信メッセージの **ToRecipients** プロパティまたは **CcRecipients** プロパティに含める必要があるかどうかを示します。 
   
 ```XML
 <SentToOrCcMe>true | false</SentToOrCcMe>
@@ -44,12 +44,12 @@ ms.locfileid: "44462081"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[条件](conditions.md) <br/> |ルールのルールの処理を開始するときに実行される条件を表します。  <br/> |
-|[例外](exceptions.md) <br/> |受信トレイルールに対して使用可能なすべてのルールの例外条件を表します。  <br/> |
+|[条件](conditions.md) <br/> |満たされると、ルールのルール アクションをトリガーする条件を表します。  <br/> |
+|[例外](exceptions.md) <br/> |受信トレイ ルールで使用可能なすべてのルール例外条件を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値が**true の場合**は、条件または例外を適用するために、メールボックスの所有者が受信メッセージの**torecipients** **イベントプロパティに**含まれている必要があることを示します。 値が**false**の場合は、条件または例外を適用するために、メールボックスの所有者が、受信メッセージの**torecipients**所有者または**ccrecipients**プロパティに含まれていない必要があることを示します。 
+true のテキスト値は、メールボックスの所有者が、条件または例外を適用するために、受信メッセージの **ToRecipients** プロパティまたは **CcRecipients** プロパティに含む必要があります。 false の **値** は、メールボックスの所有者が、条件または例外を適用するために、受信メッセージの **ToRecipients** プロパティまたは **CcRecipients** プロパティに含めずにいなければならないと示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -60,13 +60,13 @@ ms.locfileid: "44462081"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

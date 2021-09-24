@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 86cf88f4-09c4-436a-a100-ac5cba0c4388
-description: GetAppManifestsResponse 要素は、GetAppManifests 操作要求に対する応答を定義します。
-ms.openlocfilehash: a01f6265d6d534e2f7868b17acf19f0f5d52a01f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetAppManifestsResponse 要素は、GetAppManifests 操作要求の応答を定義します。
+ms.openlocfilehash: 06d814ddd7d8369cf54f156fd1bd493f8b933a25
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462965"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541204"
 ---
 # <a name="getappmanifestsresponse"></a>GetAppManifestsResponse
 
-**GetAppManifestsResponse**要素は、 **getappmanifests**操作要求に対する応答を定義します。 
+**GetAppManifestsResponse** 要素は **、GetAppManifests** 操作要求の応答を定義します。 
   
 ```xml
 <GetAppManifestsResponse>
@@ -45,7 +45,7 @@ ms.locfileid: "44462965"
   
 ### <a name="child-elements"></a>子要素
 
-応答[Secmode](responsecode.md)  | [マニフェスト](manifests.md)  | [アプリ](apps.md)
+[ResponseCode](responsecode.md)  | [マニフェスト](manifests.md)  | [アプリ](apps.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -62,11 +62,11 @@ ms.locfileid: "44462965"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空にできる  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

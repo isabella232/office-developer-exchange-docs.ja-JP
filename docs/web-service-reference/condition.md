@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Condition
 api_type:
 - schema
 ms.assetid: 0790a3f2-cb31-4036-a757-7821aa0722cb
-description: Condition 要素は、実行するルールのアクション部分に対して満たす必要がある条件を指定します。
-ms.openlocfilehash: 2aea11197f072a4dbe21292bb47075d6f273d31b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Condition 要素は、ルールのアクション 部分を実行するために満たす必要がある条件を識別します。
+ms.openlocfilehash: 80efb2121e813a966faf419233cac4d23e971bc6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463224"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512008"
 ---
 # <a name="condition"></a>条件
 
-**Condition**要素は、実行するルールのアクション部分に対して満たす必要がある条件を指定します。 
+**Condition 要素** は、ルールのアクション 部分を実行するために満たす必要がある条件を識別します。 
   
 ```xml
 <Condition>
@@ -67,17 +67,17 @@ ms.locfileid: "44463224"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[AllInternal](allinternal.md) <br/> |電子メールメッセージのすべての受信者が送信者の組織の内部にある場合は、 **true**に評価されます。  <br/> |
-|[および (ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |**True**に評価するためにすべての子要素を一致させる必要があることを指定します。 保護ルールの子条件が複数存在する必要があることを指定します。  <br/> |
-|[RecipientIs](recipientis.md) <br/> |電子メールメッセージのすべての受信者が、子の[値 (ProtectionRuleValueType)](value-protectionrulevaluetype.md)要素で指定された受信者のいずれかと一致するように指定します。  <br/> |
-|[SenderDepartments](senderdepartments.md) <br/> |送信者の部署が、子の[値 (ProtectionRuleValueType)](value-protectionrulevaluetype.md)要素で指定された部署のいずれかと一致することを指定します。  <br/> |
+|[AllInternal](allinternal.md) <br/> |電子メール メッセージ **のすべての受信者** が送信者の組織の内部である場合は true と評価されます。  <br/> |
+|[And (ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |true に評価するには、すべての子要素が一致 **する必要があります**。 複数の保護ルールの子条件が必要な場合に指定します。  <br/> |
+|[RecipientIs](recipientis.md) <br/> |電子メール メッセージの受信者が、子 [Value (ProtectionRuleValueType)](value-protectionrulevaluetype.md) 要素の指定された受信者と一致する値を指定します。  <br/> |
+|[SenderDepartments](senderdepartments.md) <br/> |送信者の部署が、子 Value [(ProtectionRuleValueType)](value-protectionrulevaluetype.md) 要素の指定された部署と一致する必要があります。  <br/> |
 |[True](true.md) <br/> |常に一致する条件を指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Rule](rule.md) <br/> |1つの保護ルールを含みます。  <br/> |
+|[Rule](rule.md) <br/> |1 つの保護ルールが含まれる。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -92,11 +92,11 @@ ms.locfileid: "44463224"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

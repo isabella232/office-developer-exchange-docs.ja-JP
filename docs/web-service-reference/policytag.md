@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fa4b1447-dc7b-47ad-a677-78fcee443dc6
 description: PolicyTag 要素は、アイテムまたはフォルダーの保持識別子を指定します。
-ms.openlocfilehash: ddc4d890d1e514586ba5ea7f6a8b541b2e4786c7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 16759748dded6978e68450a6b8d504dd378c04be
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460898"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519255"
 ---
 # <a name="policytag"></a>PolicyTag
 
-**Policytag**要素は、アイテムまたはフォルダーの保持識別子を指定します。 
+**PolicyTag 要素** は、アイテムまたはフォルダーの保持識別子を指定します。 
   
 ```xml
 <PolicyTag IsExplicit="true | false"></PolicyTag>
@@ -32,7 +32,7 @@ ms.locfileid: "44460898"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|IsExplicit  <br/> |アイテムまたはフォルダーにポリシータグが明示的に設定されているかどうかを示します。  <br/> **IsExplicit**属性のテキスト値が**true の場合**は、ポリシータグがアイテムまたはフォルダーに明示的に設定されていることを示します。 テキスト値が**false**の場合は、親フォルダーポリシータグに基づいてアイテムまたはフォルダーにポリシータグが暗黙的に設定されていることを示します。  <br/> |
+|IsExplicit  <br/> |アイテムまたはフォルダーにポリシー タグが明示的に設定されたかどうかを示します。  <br/> **IsExplicit** 属性のテキスト値 **が true** の場合は、ポリシー タグがアイテムまたはフォルダーに明示的に設定されたかどうかを示します。 false **のテキスト値** は、ポリシー タグが親フォルダー ポリシー タグに基づいてアイテムまたはフォルダーに暗黙的に設定されたかどうかを示します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -40,11 +40,11 @@ ms.locfileid: "44460898"
   
 ### <a name="parent-elements"></a>親要素
 
-[Searchプレビューアイテム](searchpreviewitem.md)  | [アイテム](item.md)  | [連絡先](contact.md)  | [メッセージ](message-ex15websvcsotherref.md)  | [DistributionList](distributionlist.md)  | [Calendaritem](calendaritem.md)  | [Postitem](postitem.md)  | [タスク](task.md)
+[SearchPreviewItem](searchpreviewitem.md)  | [アイテム](item.md)  | [連絡先](contact.md)  | [メッセージ](message-ex15websvcsotherref.md)  | [DistributionList](distributionlist.md)  | [CalendarItem](calendaritem.md)  | [PostItem](postitem.md)  | [タスク](task.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**Policytag**要素のテキスト値は、ポリシータグ識別子です。 ポリシータグ識別子は GUID です。 
+PolicyTag 要素の **テキスト値** は、ポリシー タグ識別子です。 ポリシー タグ識別子は GUID です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -57,8 +57,8 @@ ms.locfileid: "44460898"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

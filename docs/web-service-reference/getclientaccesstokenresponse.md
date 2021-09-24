@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2ecbe1e0-00c3-4a72-9066-08c4cb76913f
-description: GetClientAccessTokenResponse 要素には、GetClientAccessToken 操作要求への応答が含まれています。
-ms.openlocfilehash: d4578fa985a1af3db80e6bab13cf3587839dc8b7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetClientAccessTokenResponse 要素には、GetClientAccessToken 操作要求に対する応答が含まれる。
+ms.openlocfilehash: e1f99a87f36e82512c6d6f77e914745d6056d017
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526355"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59511582"
 ---
 # <a name="getclientaccesstokenresponse"></a>GetClientAccessTokenResponse
 
-**GetClientAccessTokenResponse**要素には、 **GetClientAccessToken**操作要求への応答が含まれています。 
+**GetClientAccessTokenResponse** 要素には **、GetClientAccessToken** 操作要求に対する応答が含まれる。 
   
 ```XML
 <GetClientAccessTokenResponse>
@@ -53,8 +53,8 @@ ms.locfileid: "44526355"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

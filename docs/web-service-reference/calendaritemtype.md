@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CalendarItemType
 api_type:
 - schema
 ms.assetid: 1feb0788-adf7-4a7c-830c-005214ad930f
 description: CalendarItemType 要素は、予定表アイテムの種類を表します。
-ms.openlocfilehash: 05e93b6db3ae574c03f6e43c5ebec2288edec3e5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: fcb661bb219944e03479abc6bf1d579db58f29fb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527195"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59526774"
 ---
 # <a name="calendaritemtype"></a>CalendarItemType
 
-**Calendaritemtype**要素は、予定表アイテムの種類を表します。 
+**CalendarItemType** 要素は、予定表アイテムの種類を表します。 
   
 ```xml
 <CalendarItemType/>
@@ -44,37 +44,37 @@ ms.locfileid: "44527195"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議を表します。  <br/> |
-|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
+|[MeetingRequest](meetingrequest.md) <br/> |ユーザー ストア内の会議Exchangeします。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |予定表アイテムのExchangeを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-この要素を使用する場合は、テキスト値が必要です。 この要素に使用できる値は次のとおりです。
+この要素を使用する場合は、テキスト値が必要です。 この要素で使用できる値は次のとおりです。
   
-- **Single**アイテムは、定期的な予定表アイテムに関連付けられていません。 
+- **Single** アイテムは定期的な予定表アイテムに関連付けではありません。 
     
-- **発生**アイテムは、定期的な予定表アイテムの発生になります。 
+- **オカレンス** アイテムは定期的な予定表アイテムの出現です。 
     
-- **例外**アイテムは、定期的な予定表アイテムの例外です。 
+- **例外** アイテムは定期的な予定表アイテムの例外です。 
     
-- **示す**アイテムは、一連の定期的な予定表アイテムのマスターシェイプです。 
+- **RecurringMaster** アイテムは、一連の定期的な予定表アイテムのマスターです。 
     
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6d5977ac-484e-4e53-92ba-58a868eb3395
-description: ProposeNewTime 要素は、会議の出席者が新しい会議日時を提案できることを示す response オブジェクトを指定します。
-ms.openlocfilehash: 76f590db760826aa2cd26938947a9b0e02a603f7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ProposeNewTime 要素は、会議出席者が新しい会議時間を提案できるという応答オブジェクトを指定します。
+ms.openlocfilehash: e8890029f9a6e3dacb59a9a4a23070ca0de6844c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465542"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519136"
 ---
 # <a name="proposenewtime"></a>ProposeNewTime
 
-**ProposeNewTime**要素は、会議の出席者が新しい会議日時を提案できることを示す response オブジェクトを指定します。 
+**ProposeNewTime** 要素は、会議出席者が新しい会議時間を提案できるという応答オブジェクトを指定します。 
   
 ```XML
 <ProposeNewTime ObjectName=""></ProposeNewTime>
@@ -34,7 +34,7 @@ ms.locfileid: "44465542"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|ObjectName  <br/> |Response オブジェクトの名前を指定します。  <br/> |
+|ObjectName  <br/> |応答オブジェクトの名前。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -55,9 +55,9 @@ ms.locfileid: "44465542"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -66,5 +66,5 @@ ms.locfileid: "44465542"
 [ResponseObjects](responseobjects.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

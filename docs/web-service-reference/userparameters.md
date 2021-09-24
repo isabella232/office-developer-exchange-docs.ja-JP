@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: bad7311f-7ecd-4f0c-b8e7-dd8f7d378f55
-description: UserParameters 要素には、有効と無効のクライアント拡張機能の一覧が含まれています。
-ms.openlocfilehash: 76bf858adfb6d2ef76a25c234117131752c60d7b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: UserParameters 要素には、有効なクライアント拡張機能と無効になっているクライアント拡張機能の一覧が含まれる。
+ms.openlocfilehash: 1d93ec0f4e44b238fcb9aca23672c262795290a6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526754"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510730"
 ---
 # <a name="userparameters"></a>UserParameters
 
-**Userparameters**要素には、有効と無効のクライアント拡張機能の一覧が含まれています。 
+**UserParameters 要素** には、有効なクライアント拡張機能と無効になっているクライアント拡張機能の一覧が含まれる。 
   
 ```XML
 <UserParameters UserId="" EnabledOnly="">
@@ -35,8 +35,8 @@ ms.locfileid: "44526754"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|UserId  <br/> |**UserId**属性のテキスト値は、ユーザーの識別子です。  <br/> |
-|EnabledOnly  <br/> |**Enabledonly**テキスト値は、応答に有効な拡張機能のみが含まれているかどうかを示します。  <br/> |
+|UserId  <br/> |UserId 属性の **テキスト値** は、ユーザーの識別子です。  <br/> |
+|EnabledOnly  <br/> |**EnabledOnly のテキスト値は**、応答に有効な拡張機能のみを含むかどうかを示します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -57,8 +57,8 @@ ms.locfileid: "44526754"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

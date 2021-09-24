@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 95f016a9-002f-4be3-abd6-f5e3528afd44
 description: FindPeopleResponse 要素は、FindPeople 要求への応答を指定します。
-ms.openlocfilehash: b969ac3f7bc2bbd3fc77bf753a15696c3b6d8216
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: ce612b203ac30f51b2ea979dda3cf914606e0084
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466403"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518401"
 ---
 # <a name="findpeopleresponse"></a>FindPeopleResponse
 
-**FindPeopleResponse**要素は、 **findpeople**要求への応答を指定します。 
+**FindPeopleResponse** 要素は **、FindPeople** 要求への応答を指定します。 
   
 ```XML
 <FindPeopleResponse ResponseClass=" Success | Warning | Error ">
@@ -39,7 +39,7 @@ ms.locfileid: "44466403"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|ResponseClass  <br/> |Response クラスを指定します。  <br/> |
+|ResponseClass  <br/> |応答クラスを指定します。  <br/> |
    
 #### <a name="responseclass"></a>ResponseClass
 
@@ -53,12 +53,12 @@ ms.locfileid: "44466403"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ユーザー](people.md) <br/> |**Findpeople**要求の結果として返される persona data の配列を指定します。  <br/> |
-|[TotalNumberOfPeopleInView](totalnumberofpeopleinview.md) <br/> |**Findpeople**要求によって返されたサーバーに格納されているペルソナの合計数を指定します。  <br/> |
-|[MessageText](messagetext.md) <br/> |応答の状態を説明するテキストを提供します。  <br/> |
+|[ユーザー](people.md) <br/> |**FindPeople** 要求の結果として返されるペルソナ データの配列を指定します。  <br/> |
+|[TotalNumberOfPeopleInView](totalnumberofpeopleinview.md) <br/> |**FindPeople** 要求によって返されるサーバーに格納されているペルソナの総数を指定します。  <br/> |
+|[MessageText](messagetext.md) <br/> |応答の状態のテキストの説明を提供します。  <br/> |
 |[ResponseCode](responsecode.md) <br/> |要求に関する状態情報を提供します。  <br/> |
-|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在未使用で、今後の使用のために予約されています。  <br/> |
-|[MessageXml](messagexml.md) <br/> |エラー応答に関する追加情報を提供します。  <br/> |
+|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在未使用で、将来の使用のために予約されています。  <br/> |
+|[MessageXml](messagexml.md) <br/> |追加のエラー応答情報を提供します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -77,13 +77,13 @@ ms.locfileid: "44466403"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

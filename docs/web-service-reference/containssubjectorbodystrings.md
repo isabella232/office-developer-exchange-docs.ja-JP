@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ContainsSubjectOrBodyStrings
 api_type:
 - schema
 ms.assetid: 22aebf31-d9f4-4e03-bbff-c675409518d1
-description: ContainsSubjectOrBodyStrings 要素は、条件または例外を適用するために、受信メッセージの本文または件名に表示する必要がある文字列を示します。
-ms.openlocfilehash: 6f9c7862912632e7e86a0b704e760c7fd0f5f14c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ContainsSubjectOrBodyStrings 要素は、条件または例外を適用するために受信メッセージの本文または件名に表示する必要がある文字列を示します。
+ms.openlocfilehash: 95749ca89c2e4e21cc0f9956f8163f889a10fea4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466823"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512001"
 ---
 # <a name="containssubjectorbodystrings"></a>ContainsSubjectOrBodyStrings
 
-**ContainsSubjectOrBodyStrings**要素は、条件または例外を適用するために、受信メッセージの本文または件名に表示する必要がある文字列を示します。 
+**ContainsSubjectOrBodyStrings** 要素は、条件または例外を適用するために受信メッセージの本文または件名に表示する必要がある文字列を示します。 
   
 ```XML
 <ContainsSubjectOrBodyStrings>
@@ -42,14 +42,14 @@ ms.locfileid: "44466823"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[String](string.md) <br/> |条件または例外を適用するために、受信メッセージの本文または件名のどちらかに表示される文字列を表します。  <br/> |
+|[String](string.md) <br/> |条件または例外を適用するために、受信メッセージの本文または件名に表示する必要がある文字列を表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[条件](conditions.md) <br/> |ルールのルールの処理を開始するときに実行される条件を表します。  <br/> |
-|[例外](exceptions.md) <br/> |受信トレイルールに対して使用可能なルールの例外条件をすべて表す例外を表します。  <br/> |
+|[条件](conditions.md) <br/> |満たされると、ルールのルール アクションをトリガーする条件を表します。  <br/> |
+|[例外](exceptions.md) <br/> |受信トレイ ルールで使用可能なすべてのルール例外条件を表す例外を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -64,13 +64,13 @@ ms.locfileid: "44466823"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

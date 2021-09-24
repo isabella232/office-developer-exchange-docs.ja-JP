@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2c1996b7-a711-416a-9792-998290a87835
-description: EmailAddresses 要素は、抽出された電子メールアドレスの配列を指定します。
-ms.openlocfilehash: 2a93829d5079b5b71af7bb29124ed03ac929ab1b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: EmailAddresses 要素は、抽出された電子メール アドレスの配列を指定します。
+ms.openlocfilehash: bc2410eca7301ca663b4a0b4ed24d874a69e817a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456186"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59528646"
 ---
 # <a name="emailaddresses-arrayofextractedemailaddresses"></a>EmailAddresses (ArrayOfExtractedEmailAddresses)
 
-**Emailaddresses**要素は、抽出された電子メールアドレスの配列を指定します。 
+**EmailAddresses 要素** は、抽出された電子メール アドレスの配列を指定します。 
   
 ```XML
 <EmailAddresses>
@@ -53,8 +53,8 @@ ms.locfileid: "44456186"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - LastModifiedTime
 api_type:
 - schema
 ms.assetid: 6db2cabc-e7f4-4d71-962b-789de6a192a4
-description: LastModifiedTime 要素は、アイテムが最後に変更された日時を示します。 この要素は値の取得のみ可能です。
-ms.openlocfilehash: 82130cbf211d5e8ac63ae8c290ea7a539582ccb7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: LastModifiedTime 要素は、アイテムが最後に変更された日時を示します。 この要素は読み取り専用です。
+ms.openlocfilehash: aa511b29072c8d3aa1401d7b9011854249c85d80
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459834"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519401"
 ---
 # <a name="lastmodifiedtime"></a>LastModifiedTime
 
-**LastModifiedTime**要素は、アイテムが最後に変更された日時を示します。 この要素は値の取得のみ可能です。 
+**LastModifiedTime** 要素は、アイテムが最後に変更された日時を示します。 この要素は読み取り専用です。 
   
 ```xml
 <LastModifiedTime/>
@@ -44,43 +44,43 @@ ms.locfileid: "44459834"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
-|[Contact](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |予定表アイテムのExchangeを表します。  <br/> |
+|[Contact](contact.md) <br/> |連絡先アイテムExchangeを表します。  <br/> |
 |[DistributionList](distributionlist.md) <br/> |配布リストを表します。  <br/> |
-|[FileAttachment](fileattachment.md) <br/> |Exchange ストア内のアイテムに添付されているファイルを表します。  <br/> |
-|[Item](item.md) <br/> |汎用の Exchange アイテムを表します。  <br/> |
-|[ItemAttachment](itemattachment.md) <br/> |別の Exchange アイテムに関連付けられている Exchange アイテムを表します。  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |Exchange ストア内の会議の取り消しを表します。  <br/> |
-|[MeetingMessage](meetingmessage.md) <br/> |Exchange ストア内の会議を表します。  <br/> |
-|[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議出席依頼を表します。  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |Exchange ストア内の会議の応答を表します。  <br/> |
-|[Message](message-ex15websvcsotherref.md) <br/> |Exchange 電子メールメッセージを表します。  <br/> |
-|[RemoveItem](removeitem.md) <br/> |Exchange ストアからアイテムを削除します。  <br/> |
-|[タスク](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
-|[PostItem](postitem.md) <br/> |Exchange ストア内の投稿アイテムを表します。 この要素は、Exchange 2007 SP1 で導入されました。  <br/> |
+|[FileAttachment](fileattachment.md) <br/> |アイテム ストア内のアイテムに添付されているファイルをExchangeします。  <br/> |
+|[項目](item.md) <br/> |アイテムの一般的なExchangeを表します。  <br/> |
+|[ItemAttachment](itemattachment.md) <br/> |別のアイテムExchange付けられたアイテムを表Exchangeします。  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |会議ストアでの会議の取り消しExchangeします。  <br/> |
+|[MeetingMessage](meetingmessage.md) <br/> |ユーザー ストア内の会議Exchangeします。  <br/> |
+|[MeetingRequest](meetingrequest.md) <br/> |ユーザー ストア内の会議出席依頼Exchangeします。  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |会議ストアの会議の応答Exchangeします。  <br/> |
+|[Message](message-ex15websvcsotherref.md) <br/> |電子メール メッセージExchangeを表します。  <br/> |
+|[RemoveItem](removeitem.md) <br/> |アイテムをストアからExchangeします。  <br/> |
+|[タスク](task.md) <br/> |ストア内のタスクをExchangeします。  <br/> |
+|[PostItem](postitem.md) <br/> |ストア内の投稿アイテムをExchangeします。 この要素は、2007 SP1 Exchange導入されました。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-Text 値は、最後のユーザーがアイテムを変更した時刻を表します。
+テキスト値は、最後のユーザーがアイテムを変更した時刻を表します。
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
   
 [Exchange 用 EWS リファレンス](ews-reference-for-exchange.md)
 

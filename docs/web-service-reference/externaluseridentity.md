@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ExternalUserIdentity
 api_type:
 - schema
 ms.assetid: f2bc0a61-7c50-4b36-828e-358dfc5b9ae1
-description: ExternalUserIdentity 要素は、外部代理ユーザーまたはフォルダーアクセス許可を持つ外部ユーザーを識別します。
-ms.openlocfilehash: b4432b29278b693b21e455a5245be0d96496ffe5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ExternalUserIdentity 要素は、外部代理人ユーザーまたはフォルダー アクセス許可を持つ外部ユーザーを識別します。
+ms.openlocfilehash: cad0273d76a5eb4ff63325bcc6bfd761909482d6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457950"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518527"
 ---
 # <a name="externaluseridentity"></a>ExternalUserIdentity
 
-**Externaluseridentity**要素は、外部代理ユーザーまたはフォルダーアクセス許可を持つ外部ユーザーを識別します。 
+**ExternalUserIdentity 要素は**、外部代理人ユーザーまたはフォルダー アクセス許可を持つ外部ユーザーを識別します。 
   
 ```xml
 <ExternalUserIdentity/>
@@ -44,7 +44,7 @@ ms.locfileid: "44457950"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[UserId](userid.md) <br/> |代理ユーザーまたはフォルダーのアクセス許可を持つユーザーを識別します。  <br/> |
+|[UserId](userid.md) <br/> |代理人ユーザーまたはフォルダー アクセス許可を持つユーザーを識別します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -59,13 +59,13 @@ ms.locfileid: "44457950"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -1,23 +1,23 @@
 ---
-title: ChangeHighlights 強調表示
+title: ChangeHighlights
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f9bd7323-44db-4d2f-aaaa-94c2dfdeead6
-description: ChangeHighlights 要素は、2つのバージョンの会議出席依頼メッセージの間で変更されたものを指定します。
-ms.openlocfilehash: 6c78d2c96449ee41032859f90bf51d6e0faa92ae
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ChangeHighlights 要素は、2 つのバージョンの会議出席依頼メッセージの間で何が変更されたかを指定します。
+ms.openlocfilehash: 95f665f30c62d723cd97eaa2bd3eb3b2ed479967
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463280"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512213"
 ---
-# <a name="changehighlights"></a>ChangeHighlights 強調表示
+# <a name="changehighlights"></a>ChangeHighlights
 
-**Changehighlights**要素は、2つのバージョンの会議出席依頼メッセージの間で変更されたものを指定します。 
+**ChangeHighlights 要素** は、2 つのバージョンの会議出席依頼メッセージの間で何が変更されたかを指定します。 
   
 ```XML
 <ChangeHighlights>
@@ -44,17 +44,17 @@ ms.locfileid: "44463280"
 |**Element**|**説明**|
 |:-----|:-----|
 |[HasLocationChanged](haslocationchanged.md) <br/> |会議の場所プロパティが変更されたかどうかを指定します。  <br/> |
-|[場所](location.md) <br/> |会議または予定の場所を表します。  <br/> |
+|[Location](location.md) <br/> |会議または予定の場所を表します。  <br/> |
 |[HasStartTimeChanged](hasstarttimechanged.md) <br/> |会議の開始時刻が変更されたかどうかを指定します。  <br/> |
-|[開始](start.md) <br/> |期間の開始を表します。  <br/> |
+|[Start](start.md) <br/> |期間の開始を表します。  <br/> |
 |[HasEndTimeChanged](hasendtimechanged.md) <br/> |会議の終了時刻が変更されたかどうかを指定します。  <br/> |
-|[終わり](end-ex15websvcsotherref.md) <br/> |期間の最後の部分を表します。  <br/> |
+|[終わり ](end-ex15websvcsotherref.md) <br/> |期間の終了を表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議出席依頼を表します。  <br/> |
+|[MeetingRequest](meetingrequest.md) <br/> |ユーザー ストア内の会議出席依頼Exchangeします。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -68,12 +68,12 @@ ms.locfileid: "44463280"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

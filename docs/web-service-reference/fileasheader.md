@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0dbc22f8-9b71-4b8f-b1d4-6ae2e4bc1db6
-description: FileAsHeader は、[ファイル] オプションのヘッダーを指定します。
-ms.openlocfilehash: e7f72745bad26f13b432cb9feabf8668770d1351
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: FileAsHeader は、[ファイル名] オプションのヘッダーを指定します。
+ms.openlocfilehash: 4066ff45bc4543d216f4f7d02d6c72224dbd98ca
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461059"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518520"
 ---
 # <a name="fileasheader"></a>FileAsHeader
 
-**Fileasheader**は、[**ファイル**] オプションのヘッダーを指定します。 
+**FileAsHeader は、[** ファイル名] オプションのヘッダー **を指定** します。 
   
 ```XML
 <FileAsHeader></FileAsHeader>
@@ -40,11 +40,11 @@ ms.locfileid: "44461059"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ユーザー](persona.md) <br/> |**Getpersona**要求によって返される一連のペルソナデータを指定します。  <br/> |
+|[ユーザー](persona.md) <br/> |**GetPersona** 要求によって返されるペルソナ データのセットを指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**Fileasheader**要素のテキスト値は、ヘッダーを指定します。 
+**FileAsHeader** 要素のテキスト値は、ヘッダーを指定します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -58,12 +58,12 @@ ms.locfileid: "44461059"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateFolder
 api_type:
 - schema
 ms.assetid: 110bada1-517b-4bd6-870d-7086dc879e5d
-description: CreateFolder 要素は、Exchange ストア内にフォルダーを作成するための要求を定義します。
-ms.openlocfilehash: c2a971a6b827553a1632c2a86e4d36e3b83a2de3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: CreateFolder 要素は、フォルダーストアにフォルダーを作成する要求をExchangeします。
+ms.openlocfilehash: 2d063f35ece2582e693365723ff7cfabbd3b8a06
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457544"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518611"
 ---
 # <a name="createfolder"></a>CreateFolder
 
-**CreateFolder**要素は、Exchange ストア内にフォルダーを作成するための要求を定義します。 
+**CreateFolder 要素** は、フォルダーストアにフォルダーを作成する要求をExchangeします。 
   
 ```xml
 <CreateFolder>
@@ -44,7 +44,7 @@ ms.locfileid: "44457544"
 |**Element**|**説明**|
 |:-----|:-----|
 |[ParentFolderId (TargetFolderIdType)](parentfolderid-targetfolderidtype.md) <br/> |新しいフォルダーが作成される場所を識別する要素。  <br/> |
-|[フォルダー](folders-ex15websvcsotherref.md) <br/> |作成するすべてのフォルダーを含む要素。  <br/> |
+|[フォルダー](folders-ex15websvcsotherref.md) <br/> |作成するフォルダーを含む要素。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -52,16 +52,16 @@ ms.locfileid: "44457544"
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

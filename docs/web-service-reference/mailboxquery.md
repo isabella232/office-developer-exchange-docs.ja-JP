@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e4b496f7-63fa-479a-b045-73276573f64f
-description: MailboxQuery 要素は、探索検索のクエリと範囲を指定します。
-ms.openlocfilehash: 754a2a6dec50c8c4074ed6a01f04ba176c66c0d4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MailboxQuery 要素は、クエリと探索検索の範囲を指定します。
+ms.openlocfilehash: 9ab2d44822012a264fe136f0c170c91ad5b62f22
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44531022"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519339"
 ---
 # <a name="mailboxquery"></a>MailboxQuery
 
-**MailboxQuery**要素は、探索検索のクエリと範囲を指定します。 
+**MailboxQuery 要素** は、クエリと探索検索の範囲を指定します。 
   
 ```XML
 <MailboxQuery>
@@ -55,8 +55,8 @@ ms.locfileid: "44531022"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

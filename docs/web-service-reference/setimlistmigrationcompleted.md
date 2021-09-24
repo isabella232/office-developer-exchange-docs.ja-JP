@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4b806441-0429-44c4-90b7-1ae5c6ab9128
-description: SetImListMigrationCompleted 要素は、インスタントメッセージングクライアントによって使用されるインスタントメッセージングアイテムが Exchange ストアに含まれているかどうかを示す要求を表します。
-ms.openlocfilehash: e5b16044ee72a9e931a2707d3f7823931f8a642a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SetImListMigrationCompleted 要素は、Exchange ストアにインスタント メッセージング クライアントで使用されるインスタント メッセージング アイテムが含まれているかどうかを示す要求を表します。
+ms.openlocfilehash: 80ba542fac320a81fbcd044300bfed94f52c34f5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464827"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510884"
 ---
 # <a name="setimlistmigrationcompleted"></a>SetImListMigrationCompleted
 
-**SetImListMigrationCompleted**要素は、インスタントメッセージングクライアントによって使用されるインスタントメッセージングアイテムが Exchange ストアに含まれているかどうかを示す要求を表します。 
+**SetImListMigrationCompleted** 要素は、Exchange ストアにインスタント メッセージング クライアントで使用されるインスタント メッセージング アイテムが含まれているかどうかを示す要求を表します。 
   
 ```XML
 <SetImListMigrationCompleted>
@@ -53,8 +53,8 @@ ms.locfileid: "44464827"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

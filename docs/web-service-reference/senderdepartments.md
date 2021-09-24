@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SenderDepartments
 api_type:
 - schema
 ms.assetid: b016cdde-d597-40ac-87c4-63ca68bd539d
-description: SenderDepartments 要素は、送信者の部署が、子の値 (ProtectionRuleValueType) 要素で指定された部署のいずれかと一致することを指定します。
-ms.openlocfilehash: cf15b974b9c0cfb09767661f17334defc4041e43
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SenderDepartments 要素は、送信者の部署が、子 Value (ProtectionRuleValueType) 要素内の指定された部署と一致するを指定します。
+ms.openlocfilehash: 20feef066646cff988c1a26ee90da7dcade07e90
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530346"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59527530"
 ---
 # <a name="senderdepartments"></a>SenderDepartments
 
-**SenderDepartments**要素は、送信者の部署が、子の[値 (ProtectionRuleValueType)](value-protectionrulevaluetype.md)要素で指定された部署のいずれかと一致することを指定します。 
+**SenderDepartments** 要素は、送信者の部署が、子 [Value (ProtectionRuleValueType)](value-protectionrulevaluetype.md)要素内の指定された部署と一致するを指定します。 
   
 ```XML
 <SenderDepartments>
@@ -42,14 +42,14 @@ ms.locfileid: "44530346"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Value (ProtectionRuleValueType)](value-protectionrulevaluetype.md) <br/> |単一の送信者部署を識別します。  <br/> |
+|[Value (ProtectionRuleValueType)](value-protectionrulevaluetype.md) <br/> |1 つの送信者部門を識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[条件](condition.md) <br/> |実行するルールのアクション部分に対して満たす必要がある条件を指定します。  <br/> |
-|[および (ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |**True**に評価するためにすべての子要素を一致させる必要があることを指定します。 保護ルールの子条件が複数存在する必要があることを指定します。  <br/> |
+|[Condition](condition.md) <br/> |ルールのアクション 部分を実行するために満たす必要がある条件を識別します。  <br/> |
+|[And (ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |true に評価するには、すべての子要素が一致 **する必要があります**。 複数の保護ルールの子条件が必要な場合に指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -60,13 +60,13 @@ ms.locfileid: "44530346"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

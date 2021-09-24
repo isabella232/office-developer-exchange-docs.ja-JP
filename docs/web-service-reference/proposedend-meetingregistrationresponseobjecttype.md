@@ -1,23 +1,23 @@
 ---
-title: ProposedEnd (会議 Registrationresponseobjecttype)
+title: ProposedEnd (MeetingRegistrationResponseObjectType)
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3e5d2567-a5a2-4791-b209-c29082894a9e
-description: ProposedEnd (meeting Registrationresponseobjecttype) 要素は、会議の出席者が提案した新しい終了時刻を指定します。
-ms.openlocfilehash: f6aafe157c653776dca511a104ceeb9518812d98
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ProposedEnd (MeetingRegistrationResponseObjectType) 要素は、出席者が提案した会議の新しい終了時刻を指定します。
+ms.openlocfilehash: 91d44d4321ec275aea5c6edaf2529dedc7445d5f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466984"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59527830"
 ---
-# <a name="proposedend-meetingregistrationresponseobjecttype"></a>ProposedEnd (会議 Registrationresponseobjecttype)
+# <a name="proposedend-meetingregistrationresponseobjecttype"></a>ProposedEnd (MeetingRegistrationResponseObjectType)
 
-**ProposedEnd (Meeting Registrationresponseobjecttype)** 要素は、会議の出席者が提案した新しい終了時刻を指定します。 
+**ProposedEnd (MeetingRegistrationResponseObjectType)** 要素は、出席者が提案した会議の新しい終了時刻を指定します。 
   
 ```XML
 <ProposedEnd />
@@ -38,11 +38,11 @@ ms.locfileid: "44466984"
   
 ### <a name="parent-elements"></a>親要素
 
-[Acceptitem](acceptitem.md)  | [TentativelyAcceptItem](tentativelyacceptitem.md)  | [Declineitem](declineitem.md)
+[AcceptItem](acceptitem.md)  | [仮にAcceptItem](tentativelyacceptitem.md)  | [DeclineItem](declineitem.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**ProposedEnd (Meeting Registrationresponseobjecttype)** 要素のテキスト値は、提案された会議の終了日時です。 
+**ProposedEnd (MeetingRegistrationResponseObjectType)** 要素のテキスト値は、会議の提案された終了日時です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,9 +55,9 @@ ms.locfileid: "44466984"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -70,5 +70,5 @@ ms.locfileid: "44466984"
 [TentativelyAcceptItem](tentativelyacceptitem.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5de65dc7-8f59-4df7-9d4d-6647b16311fc
-description: TaskTimedOut 要素は、内部使用のみを目的としています。
-ms.openlocfilehash: 0560b189f8be33e5713207d7e5349f3aade81281
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: TaskTimedOut 要素は内部での使用のみを目的とします。
+ms.openlocfilehash: 31efc1238830be8ba944bca57fa6b0c5fe6e553c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468104"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59531423"
 ---
 # <a name="tasktimedout"></a>TaskTimedOut
 
-**TaskTimedOut**要素は、内部使用のみを目的としています。 
+**TaskTimedOut 要素** は内部での使用のみを目的とします。 
 
 ## <a name="attributes-and-elements"></a>属性と要素
 
@@ -46,8 +46,8 @@ ms.locfileid: "44468104"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

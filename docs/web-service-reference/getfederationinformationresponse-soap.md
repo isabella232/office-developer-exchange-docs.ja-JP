@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 2033c14f-dcc8-43c2-9fd9-a51946ec7055
-description: GetFederationInformationResponse 要素には、GetFederationInformation 操作 (SOAP) 応答が含まれています。
-ms.openlocfilehash: c9e65a2b1759946b8493b3c730f08df6fe353fd8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetFederationInformationResponse 要素には、GetFederationInformation 操作 (SOAP) 応答が含まれる。
+ms.openlocfilehash: 20d00f047acae6c9eba1347ae7e8110656fefb4b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460044"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529880"
 ---
 # <a name="getfederationinformationresponse-soap"></a>GetFederationInformationResponse (SOAP)
 
-**GetFederationInformationResponse**要素には、 [GETFEDERATIONINFORMATION 操作 (SOAP)](getfederationinformation-operation-soap.md)応答が含まれています。 
+**GetFederationInformationResponse** 要素には [、GetFederationInformation 操作 (SOAP) 応答が含](getfederationinformation-operation-soap.md)まれる。 
   
 ```XML
 <GetFederationInformationResponse>
@@ -43,11 +43,11 @@ ms.locfileid: "44460044"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ErrorCode (SOAP)](errorcode-soap.md) <br/> |自動検出サービスによって返されるエラーコードを表します。  <br/> |
-|[ErrorMessage (SOAP)](errormessage-soap.md) <br/> |自動検出サービスによって返されるエラーコードに関連付けられているメッセージを表します。  <br/> |
+|[ErrorCode (SOAP)](errorcode-soap.md) <br/> |自動検出サービスによって返されるエラー コードを表します。  <br/> |
+|[ErrorMessage (SOAP)](errormessage-soap.md) <br/> |自動検出サービスによって返されるエラー コードに関連付けられているメッセージを表します。  <br/> |
 |[ApplicationUri (SOAP)](applicationuri-soap.md) <br/> |アプリケーションの場所を定義します。  <br/> |
-|[TokenIssuers 者 (SOAP)](tokenissuers-soap.md) <br/> |セキュリティトークンサービスの識別子とエンドポイントを含むセキュリティトークンのコレクションを表します。  <br/> |
-|[Domains (SOAP)](domains-soap.md) <br/> |[Getdomainsettings 操作 (soap)](getdomainsettings-operation-soap.md)の**getdomainsettings**操作または組織が[GetFederationInformation operation (soap)](getfederationinformation-operation-soap.md) **GetFederationInformation**操作でフェデレーションを行ったドメインを表します。.  <br/> |
+|[TokenIssuers (SOAP)](tokenissuers-soap.md) <br/> |セキュリティ トークン サービス識別子とエンドポイントを含むセキュリティ トークンのコレクションを表します。  <br/> |
+|[Domains (SOAP)](domains-soap.md) <br/> |[GetDomainSettings 操作 (SOAP)](getdomainsettings-operation-soap.md) **GetDomainSettings** 操作で返される構成、または組織が [GetFederationInformation 操作 (SOAP)](getfederationinformation-operation-soap.md) **GetFederationInformation** 操作でフェデレーションしたドメインを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -63,8 +63,8 @@ ms.locfileid: "44460044"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

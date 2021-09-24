@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ee2891e4-3aa6-4258-9727-1f2ee9622508
-description: Range 要素は、定期的な予定表アイテムの予定表アイテムの出現範囲を指定します。
-ms.openlocfilehash: b5fb41709905290326b47e2662383031c34fd9c9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Range 要素は、繰り返し予定表アイテムの予定表アイテムの出現範囲を指定します。
+ms.openlocfilehash: 0d16dad24dda48f084b3011d7b96eb719431d9da
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465311"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519101"
 ---
 # <a name="range"></a>範囲
 
-**Range**要素は、定期的な予定表アイテムの予定表アイテムの出現範囲を指定します。 
+**Range 要素** は、繰り返し予定表アイテムの予定表アイテムの出現範囲を指定します。 
   
 ```XML
 <Range Start="" End="" Count="" CompareOriginalStartTime=""/>
@@ -32,10 +32,10 @@ ms.locfileid: "44465311"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**Start** <br/> |**Start**属性のテキスト値は、定期的なアイテムの範囲の開始日です。 これは**dateTime**値です。  <br/> |
-|**End** <br/> |**End**属性のテキスト値は、定期的なアイテムの範囲の終了日です。 これは**dateTime**値です。  <br/> |
-|**Count** <br/> |**Count**属性のテキスト値は、定期的なアイテムの出現回数です。 これは**整数**値です。  <br/> |
-|**CompareOriginalStartTime** <br/> |**Compareoriginalstarttime**属性のテキスト値が**true**になっている場合は、クライアントが元の開始時刻を新しい開始時刻と比較する必要があることを示します。 値が**false**の場合は、クライアントが元の開始時刻と新しい開始時刻を比較する必要がないことを示します。  <br/> |
+|**Start** <br/> |Start 属性のテキスト **値** は、定期的なアイテム範囲の開始日です。 これは **dateTime 値** です。  <br/> |
+|**End** <br/> |End 属性のテキスト **値** は、定期的なアイテム範囲の終了日です。 これは **dateTime 値** です。  <br/> |
+|**Count** <br/> |Count 属性のテキスト **値** は、定期的なアイテムの出現回数です。 これは整数 **値** です。  <br/> |
+|**CompareOriginalStartTime** <br/> |**CompareOriginalStartTime** 属性のテキスト値 **が true** の場合、クライアントは元の開始時刻と新しい開始時刻を比較する必要があります。 false の **値は** 、クライアントが元の開始時刻と新しい開始時刻を比較する必要が生じない場合を示します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -56,8 +56,8 @@ ms.locfileid: "44465311"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

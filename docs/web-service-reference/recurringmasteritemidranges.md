@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5c9c89b5-4ce8-437b-a332-fa7ed35c8388
-description: RecurringMasterItemIdRanges 要素は、発生範囲の配列を指定します。
-ms.openlocfilehash: 784676844c5c58c65b8cc6177843bf26d351b7d9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: RecurringMasterItemIdRanges 要素は、出現範囲の配列を指定します。
+ms.openlocfilehash: 582cbe27d468c1ff7ec22f03ba9f6976d244e234
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528756"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529371"
 ---
 # <a name="recurringmasteritemidranges"></a>RecurringMasterItemIdRanges
 
-**RecurringMasterItemIdRanges**要素は、発生範囲の配列を指定します。 
+**RecurringMasterItemIdRanges 要素は**、出現範囲の配列を指定します。 
   
 ```XML
 <RecurringMasterItemIdRanges Id="" ChangeKey="">
@@ -34,8 +34,8 @@ ms.locfileid: "44528756"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**Id** <br/> |**Id**属性のテキスト値は、定期的なマスターアイテムの一意識別子です。 これは、**文字列型 (string** ) の値です。  <br/> |
-|**ChangeKey** <br/> |**Changekey**属性のテキスト値は、定期的なマスターアイテムの変更キーです。 これは、**文字列型 (string** ) の値です。  <br/> |
+|**Id** <br/> |Id 属性のテキスト **値** は、定期的なマスター アイテムの一意の識別子です。 これは文字列 **値** です。  <br/> |
+|**ChangeKey** <br/> |ChangeKey 属性の **テキスト値** は、定期的なマスター アイテムの変更キーです。 これは文字列 **値** です。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -43,7 +43,7 @@ ms.locfileid: "44528756"
   
 ### <a name="parent-elements"></a>親要素
 
-[Itemids](itemids.md)  | [Globalitemids](globalitemids.md)  | [DraftItemIds](draftitemids.md)  | [ContactIds](contactids.md)  | [Groupids](groupids.md)
+[ItemIds](itemids.md)  | [GlobalItemIds](globalitemids.md)  | [DraftItemIds](draftitemids.md)  | [ContactIds](contactids.md)  | [GroupIds](groupids.md)
   
 ## <a name="remarks"></a>注釈
 
@@ -56,8 +56,8 @@ ms.locfileid: "44528756"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

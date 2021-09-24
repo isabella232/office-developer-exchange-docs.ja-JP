@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 2ef2ab0d-ba70-46bd-80bb-c1e08da9e9bd
 description: Hostname 要素は、コンピューターの完全なコンピューター名のホスト名部分を表します。
-ms.openlocfilehash: 2c368e710dc192302bc63bd74bba35d84c5ab705
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: b607776940233f6df689256e50ba96970f6d033f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460814"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529887"
 ---
 # <a name="hostname-soap"></a>Hostname (SOAP)
 
-**Hostname**要素は、コンピューターの完全なコンピューター名のホスト名部分を表します。 
+**Hostname 要素** は、コンピューターの完全なコンピューター名のホスト名部分を表します。 
   
 ```XML
 <Hostname/>
@@ -45,7 +45,7 @@ ms.locfileid: "44460814"
    
 ## <a name="text-value"></a>テキスト値
 
-**Hostname**要素のテキスト値は、コンピューターの完全なコンピューター名のホスト名部分です。 
+Hostname 要素のテキスト **値** は、コンピューターの完全なコンピューター名のホスト名部分です。 
   
 ## <a name="element-information"></a>要素の情報
 
@@ -53,7 +53,7 @@ ms.locfileid: "44460814"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
 |空に設定可能  <br/> |はい  <br/> |
    
 

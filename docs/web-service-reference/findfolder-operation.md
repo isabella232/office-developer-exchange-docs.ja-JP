@@ -5,51 +5,51 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FindFolder
 api_type:
 - schema
 ms.assetid: 7a9855aa-06cc-45ba-ad2a-645c15b7d031
-description: FindFolder 操作は、Exchange Web サービスを使用して、識別されたフォルダーのサブフォルダーを検索し、一連のサブフォルダーを記述する一連のプロパティを返します。
-ms.openlocfilehash: f1cc199bdaf684d8d74687ed7f064eb66fee48ff
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: FindFolder 操作では、Exchange Web サービスを使用して、特定のフォルダーのサブフォルダーを検索し、一連のサブフォルダーを記述するプロパティのセットを返します。
+ms.openlocfilehash: 8c2776a9d60244fe77b6012a09ffbad230d86f63
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462585"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518471"
 ---
 # <a name="findfolder-operation"></a>FindFolder 操作
 
-**Findfolder**操作は、Exchange Web サービスを使用して、識別されたフォルダーのサブフォルダーを検索し、一連のサブフォルダーを記述する一連のプロパティを返します。 
+**FindFolder** 操作では、Exchange Web サービスを使用して、特定のフォルダーのサブフォルダーを検索し、一連のサブフォルダーを表すプロパティのセットを返します。 
   
 ## <a name="remarks"></a>注釈
 
-FindFolder は、任意のストリーミング可能なプロパティの最初の 512 バイトだけを返します。 Unicode の場合は、Null 終了の Unicode 文字列を使用して最初の 255 文字を返します。
+FindFolder は、任意のストリーミング可能なプロパティの最初の 512 バイトだけを返します。Unicode の場合は、Null 終了の Unicode 文字列を使用して最初の 255 文字を返します。
   
-ディープトラバースクエリは、パブリックフォルダーでは実行できません。
+パブリック フォルダーでは、ディープ トラバーサル クエリを実行できません。
   
-制限は許可され、アイテムのプロパティではなく、フォルダーのプロパティのみを使用する必要があります。 **Findfolder**応答では、並べ替え機能を使用できません。 グループ化されたクエリは、 **Findfolder**クエリでは使用できません。 
+制限は許可され、アイテム のプロパティではなく、フォルダー プロパティのみを使用する必要があります。 **FindFolder** 応答では並べ替え機能を使用できません。 グループ化されたクエリは **、FindFolder クエリでは** 使用できません。 
   
- **メモ****Findfolder**操作は、管理フォルダーを検索するためにも使用されます。 
+ **メモ****FindFolder 操作は**、管理フォルダーの検索にも使用されます。 
   
 ### <a name="soap-headers"></a>SOAP ヘッダー
 
-**Findfolder**操作では、次の表に記載されている SOAP ヘッダーを使用できます。 
+**FindFolder 操作では**、次の表に示す SOAP ヘッダーを使用できます。 
   
-|**Header**|**要素**|**説明**|
+|**Header**|**Element**|**説明**|
 |:-----|:-----|:-----|
-|偽装  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。  <br/> |
-|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |メールボックスへのアクセスに使用する RFC3066 カルチャを指定します。  <br/> |
-|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。  <br/> |
+|偽装  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装しているユーザーを識別します。  <br/> |
+|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |メールボックスへのアクセスに使用する RFC3066 カルチャを識別します。  <br/> |
+|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマ バージョンを識別します。  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。  <br/> |
-|TimeZoneContext  <br/> |[TimeZoneContext](timezonecontext.md) <br/> |サーバーからのすべての応答に使用するタイムゾーンを指定します。  <br/> |
+|TimeZoneContext  <br/> |[TimeZoneContext](timezonecontext.md) <br/> |サーバーからのすべての応答に使用するタイム ゾーンを識別します。  <br/> |
    
 ## <a name="findfolder-request-example"></a>FindFolder 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-**Findfolder**要求の次の例は、受信トレイ内のすべてのフォルダーを検索するための要求を形成する方法を示しています。 
+**FindFolder** 要求の次の例は、受信トレイ内のすべてのフォルダーを検索する要求を形成する方法を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -72,11 +72,11 @@ FindFolder は、任意のストリーミング可能なプロパティの最初
 
 ### <a name="comments"></a>コメント
 
-[Baseshape](baseshape.md)の既定値を使用すると、応答はフォルダー名、フォルダー ID、サブフォルダー数、フォルダー内で見つかった子フォルダーの数、未読アイテムの数を返します。
+[BaseShape](baseshape.md)の既定値を使用すると、フォルダー名、フォルダー ID、サブフォルダーの数、フォルダー内に見つかった子フォルダーの数、未読アイテムの数が返されます。
   
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
-この**Findfolder**要求には、次の要素が含まれています。 
+この **FindFolder 要求には** 、次の要素が含まれています。 
   
 - [FindFolder](findfolder.md)
     
@@ -88,16 +88,16 @@ FindFolder は、任意のストリーミング可能なプロパティの最初
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
- **Findfolder**要求の追加要素については、スキーマを参照してください。 
+ 追加の **FindFolder 要求** 要素については、スキーマを参照してください。 
   
 ## <a name="findfolder-response-example"></a>FindFolder 応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の簡易オブジェクトアクセスプロトコル (SOAP) 本文の例は、 **Findfolder**要求に対する正常な応答を示しています。 応答には、 [Baseshape](baseshape.md)の既定値が使用されたときに返される要素が含まれています。 
+次のSimple Object Access Protocol (SOAP) 本文の例は **、FindFolder** 要求に対する正常な応答を示しています。 応答には [、BaseShape](baseshape.md) の Default 値を使用するときに返される要素が含まれます。 
   
 > [!NOTE]
-> 読みやすくするために、フォルダー ID と変更キーが短縮されています。 
+> フォルダー ID と変更キーは、読みやすさを維持するために短縮されました。 
   
 ### <a name="code"></a>コード
 
@@ -135,9 +135,9 @@ FindFolder は、任意のストリーミング可能なプロパティの最初
 </soap:Envelope>
 ```
 
-### <a name="response-elements"></a>Response 要素
+### <a name="response-elements"></a>応答要素
 
-応答で返されるプロパティは、使用されている場合は[Baseshape](baseshape.md)および[additionalproperties](additionalproperties.md)によって決まります。 正常な**Findfolder**応答には、次の要素が含まれています。 
+応答で返されるプロパティは [、BaseShape](baseshape.md) と [AdditionalProperties](additionalproperties.md) が使用されている場合に決定されます。 **FindFolder 応答の成功には**、次の要素が含まれます。 
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -157,7 +157,7 @@ FindFolder は、任意のストリーミング可能なプロパティの最初
     
 - [FolderId](folderid.md)
     
-- [DisplayName (文字列)](displayname-string.md)
+- [DisplayName (string)](displayname-string.md)
     
 - [TotalCount](totalcount.md)
     
@@ -167,13 +167,13 @@ FindFolder は、任意のストリーミング可能なプロパティの最初
     
 ### <a name="comments"></a>コメント
 
- **Allproperties**応答図形を使用した要求に対する**findfolder**応答では、パブリックフォルダー検索の[totalcount](totalcount.md)要素と[UnreadCount](unreadcount.md)要素は返されません。 
+ **AllProperties** 応答図形を持つ要求に対する **FindFolder** 応答は、パブリック フォルダー検索の [TotalCount](totalcount.md) 要素と [UnreadCount](unreadcount.md) 要素を返すことはありません。 
   
 ## <a name="findfolder-error-response-example"></a>FindFolder エラー応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の SOAP 本文の例は、無効なフォルダーの識別子によって識別されるフォルダーを検索すると発生するエラー応答を示しています。
+次の SOAP 本文の例は、形式が正しいフォルダー識別子によって識別されるフォルダーを検索するときに発生するエラー応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -204,7 +204,7 @@ FindFolder は、任意のストリーミング可能なプロパティの最初
 
 ### <a name="error-response-elements"></a>エラー応答要素
 
-**Findfolder**エラー応答には、次の要素が含まれています。 
+**FindFolder エラー応答** には、次の要素が含まれます。 
   
 - [FindFolderResponse](findfolderresponse.md)
     
@@ -216,13 +216,13 @@ FindFolder は、任意のストリーミング可能なプロパティの最初
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-## <a name="additional-information"></a>追加情報
+## <a name="additional-information"></a>その他の情報
 
-- Folder [DisplayName (string)](displayname-string.md)要素は、常に既定の図形に含まれています。 
+- フォルダー [DisplayName (string)](displayname-string.md) 要素は、常に既定の図形に含まれます。 
     
-- [UnreadCount](unreadcount.md)要素は、タスクフォルダーとメモフォルダーに含まれています。 
+- [UnreadCount 要素](unreadcount.md)は、[タスク] フォルダーと [メモ] フォルダーに含まれています。 
     
-- [ExtendedFieldURI](extendedfielduri.md)要素を使用して、管理フォルダーを識別するには、プロパティの種類が**Integer**の**Propertytag**の値0x672d を使用します。 
+- **ExtendedFieldURI** 要素を使用0x672D管理フォルダーを識別するには、**プロパティ** の種類が Integer のプロパティ プロパティの [PropertyTag 値を使用](extendedfielduri.md)します。 
     
 ## <a name="see-also"></a>関連項目
 

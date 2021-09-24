@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - WeeklyRecurrence
 api_type:
 - schema
 ms.assetid: 69c41dd5-597c-45bc-be3f-e2f2b5615aa3
-description: WeeklyRecurrence 要素は、週単位の定期的なパターンを記述します。
-ms.openlocfilehash: 5006238590c4cd7556a92fb1fbe13292383412b8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: WeeklyRecurrence 要素は、毎週の定期的なパターンを表します。
+ms.openlocfilehash: 408116dd85fb31fce8f5f3b5b4cde92945783f5d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530367"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509337"
 ---
 # <a name="weeklyrecurrence"></a>WeeklyRecurrence
 
-**WeeklyRecurrence**要素は、週単位の定期的なパターンを記述します。 
+**WeeklyRecurrence 要素は**、毎週の定期的なパターンを表します。 
   
 ```XML
 <WeeklyRecurrence>
@@ -44,16 +44,16 @@ ms.locfileid: "44530367"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[間隔](interval.md) <br/> |週単位の定期的な繰り返しパターンアイテム間の間隔 (週単位) を定義します。 この値は 1 ~ 99 の範囲で指定できます。  <br/> |
-|[DaysOfWeek (DaysOfWeekType)](daysofweek-daysofweektype.md) <br/> |毎週の定期的なパターンに含まれる曜日を指定します。  <br/> |
-|[FirstDayOfWeek](firstdayofweek.md) <br/> |週の最初の曜日を指定します。  <br/> |
+|[間隔](interval.md) <br/> |週に 2 つの連続する定期的なパターンアイテム間の間隔を週単位で定義します。 値の範囲は 1 ~ 99 です。  <br/> |
+|[DaysOfWeek (DaysOfWeekType)](daysofweek-daysofweektype.md) <br/> |週ごとの繰り返しパターンに含める週の日数を示します。  <br/> |
+|[FirstDayOfWeek](firstdayofweek.md) <br/> |週の最初の日を指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[定期的なアイテム (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |定期的なタスクの定期的なアイテムの情報が含まれています。  <br/> |
-|[Recurrence (RecurrenceType)](recurrence-recurrencetype.md) <br/> |予定表アイテムと会議出席依頼の定期的なパターンを含みます。  <br/> |
+|[Recurrence (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |定期的なタスクの定期的な情報が含まれています。  <br/> |
+|[Recurrence (RecurrenceType)](recurrence-recurrencetype.md) <br/> |予定表アイテムと会議出席依頼の定期的なパターンが含まれます。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -61,7 +61,7 @@ ms.locfileid: "44530367"
   
 ## <a name="remarks"></a>注釈
 
-定期的なマスターアイテムの[開始](start.md)日と[終了](end-ex15websvcsotherref.md)日に、最初に週単位の定期的なパターンと同じ日付が設定されていない場合は、タイムゾーンのオフセット情報は失われます。 
+タイム ゾーン のオフセット情報は、[](start.md)定期的な[](end-ex15websvcsotherref.md)マスター アイテムの開始日と終了日に、週ごとの定期的なパターンの最初の出現日付と等しくない場合に失われます。 
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
@@ -70,13 +70,13 @@ ms.locfileid: "44530367"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

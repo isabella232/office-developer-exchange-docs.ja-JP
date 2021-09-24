@@ -1,23 +1,23 @@
 ---
-title: Polic/Udgerulesconfiguration
+title: PolicyNudgeRulesConfiguration
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e6f7c824-1284-4a65-a459-9fc22b66e30a
-description: Polic/Udgerulesconfiguration 要素には、データ損失防止構成データが含まれています。
-ms.openlocfilehash: dd801fe140dee66d153e388781f97254d1a2f2ef
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: PolicyNudgeRulesConfiguration 要素には、データ損失防止構成データが含まれる。
+ms.openlocfilehash: ad0bee85bb9b03a3584baa39a2436c8ad68b7e4d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459610"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59527932"
 ---
-# <a name="policynudgerulesconfiguration"></a>Polic/Udgerulesconfiguration
+# <a name="policynudgerulesconfiguration"></a>PolicyNudgeRulesConfiguration
 
-**Polic/Udgerulesconfiguration**要素には、データ損失防止構成データが含まれています。 
+**PolicyNudgeRulesConfiguration 要素** には、データ損失防止構成データが含まれる。 
   
 ```XML
 <PolicyNudgeRulesConfiguration></PolicyNudgeRulesConfiguration>
@@ -42,7 +42,7 @@ ms.locfileid: "44459610"
   
 ## <a name="remarks"></a>注釈
 
-**Policが**Exchange Web サービススキーマを定義していません。 
+**PolicyNudgeRulesConfiguration** 要素の内容は、Web サービス スキーマExchange定義されていません。 
   
 この要素は Exchange Server 2013 で導入されました。
   
@@ -53,8 +53,8 @@ ms.locfileid: "44459610"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 815908f1-4223-42d8-92dc-f8bdfc6b5df8
 description: GetAppManifestsResponseMessage 要素は、GetAppManifests 要求の応答メッセージを指定します。
-ms.openlocfilehash: 26a521d8647a010fe956596eaf63d4df4756edb2
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 82fc6782d14e4d007795fac68342083a359b9ca0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459533"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59530155"
 ---
 # <a name="getappmanifestsresponsemessage"></a>GetAppManifestsResponseMessage
 
-**GetAppManifestsResponseMessage**要素は、 **getappmanifests**要求の応答メッセージを指定します。 
+**GetAppManifestsResponseMessage** 要素は **、GetAppManifests** 要求の応答メッセージを指定します。 
   
 ```XML
 <GetAppManifestsResponseMessage ResponseClass=" Success | Warning | Error ">
@@ -51,16 +51,16 @@ ms.locfileid: "44459533"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在未使用で、今後の使用のために予約されています。  <br/> |
-|[MessageText](messagetext.md) <br/> |応答の状態を説明するテキストを提供します。  <br/> |
-|[MessageXml](messagexml.md) <br/> |エラー応答に関する追加情報を提供します。  <br/> |
+|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在未使用で、将来の使用のために予約されています。  <br/> |
+|[MessageText](messagetext.md) <br/> |応答の状態のテキストの説明を提供します。  <br/> |
+|[MessageXml](messagexml.md) <br/> |追加のエラー応答情報を提供します。  <br/> |
 |[ResponseCode](responsecode.md) <br/> |要求に関する状態情報を提供します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Exchange Web サービス要求に対する応答メッセージを含みます。  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Web サービス要求の応答メッセージExchange含まれます。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -73,13 +73,13 @@ ms.locfileid: "44459533"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

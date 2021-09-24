@@ -1,23 +1,23 @@
 ---
-title: 異
+title: Generations
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 637560b5-2b08-4787-a5d8-e0467f83acca
-description: Generation 要素は、生成値の配列と、関連付けられているペルソナのソース attributions の識別子を指定します。
-ms.openlocfilehash: a3ef0e2c73e2ebd7c121f817b8ea97c5e4d4d333
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Generations 要素は、生成値の配列と、関連付けられたペルサのソース属性の識別子を指定します。
+ms.openlocfilehash: bbb76241a7e207b44ff6911f166eaded9306a9c5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463014"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541267"
 ---
-# <a name="generations"></a>異
+# <a name="generations"></a>Generations
 
-Generation**要素は、生成**値の配列と、関連付けられているペルソナのソース attributions の識別子を指定します。 
+**Generations 要素** は、生成値の配列と、関連付けられたペルサのソース属性の識別子を指定します。 
   
 ```XML
 <Generations>
@@ -38,13 +38,13 @@ Generation**要素は、生成**値の配列と、関連付けられているペ
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[StringAttributedValue](stringattributedvalue.md) <br/> |Persona 要素に関連付けられている属性の配列のインスタンスを指定します。  <br/> |
+|[StringAttributedValue](stringattributedvalue.md) <br/> |ペルサ要素に関連付けられた属性の配列内のインスタンスを指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ユーザー](persona.md) <br/> |**Getpersona**要求によって返される一連のペルソナデータを指定します。  <br/> |
+|[ユーザー](persona.md) <br/> |**GetPersona** 要求によって返されるペルソナ データのセットを指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -58,12 +58,12 @@ Generation**要素は、生成**値の配列と、関連付けられているペ
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

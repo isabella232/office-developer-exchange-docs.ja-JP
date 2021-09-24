@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cd97bd7f-55ed-4acb-b2e6-a69797b87a41
 description: RemoveImContactFromGroupResponse 要素は、RemoveImContactFromGroup 要求に対する応答を定義します。
-ms.openlocfilehash: 71dc2deed8715dde802cb38c00b9c48ebce9462a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: f5800953ca47a36685b4d5fac7cf9fb33c42c5df
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528707"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519073"
 ---
 # <a name="removeimcontactfromgroupresponse"></a>RemoveImContactFromGroupResponse
 
-**RemoveImContactFromGroupResponse**要素は、 **Removeimcontactfromgroup**要求に対する応答を定義します。 
+**RemoveImContactFromGroupResponse** 要素は **、RemoveImContactFromGroup** 要求に対する応答を定義します。 
   
 ```XML
 <RemoveImContactFromGroupResponse>
@@ -39,7 +39,7 @@ ms.locfileid: "44528707"
   
 ### <a name="child-elements"></a>子要素
 
-[Messagetext](messagetext.md)  | 応答[Secmode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)
+[MessageText](messagetext.md)  | [ResponseCode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -56,8 +56,8 @@ ms.locfileid: "44528707"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

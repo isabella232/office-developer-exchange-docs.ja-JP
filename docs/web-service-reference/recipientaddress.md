@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - RecipientAddress
 api_type:
 - schema
 ms.assetid: 9ae6351a-2c60-4715-a489-5681a13641f9
-description: '[受信者アドレス] 要素は、受信者のメールボックスを表します。'
-ms.openlocfilehash: f4b6edd034dd91471e6496f6b0cca65bd3ffb69a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: RecipientAddress 要素は、受信者のメールボックスを表します。
+ms.openlocfilehash: 23fdf9b1b340aac2049229f27d63161c8e05b10b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465850"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59527650"
 ---
 # <a name="recipientaddress"></a>RecipientAddress
 
-[受信者**アドレス**] 要素は、受信者のメールボックスを表します。 
+**RecipientAddress 要素** は、受信者のメールボックスを表します。 
   
 ```xml
 <RecipientAddress>
@@ -46,17 +46,17 @@ ms.locfileid: "44465850"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Name (EmailAddressType)](name-emailaddresstype.md) <br/> |メールボックスユーザーの名前を表します。 この要素は省略できます。  <br/> |
-|[EmailAddress (非 Emptystringtype)](emailaddress-nonemptystringtype.md) <br/> |メールボックスユーザーの簡易メール転送プロトコル (SMTP) アドレスを定義します。 この要素は省略できます。  <br/> |
-|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |受信者のルーティングプロトコルを表します。 既定値は SMTP です。 この要素は省略できます。  <br/> |
-|[MailboxType](mailboxtype.md) <br/> |電子メールアドレスによって表されるメールボックスの種類を表します。  <br/> |
-|[ItemId](itemid.md) <br/> |ユーザーの連絡先フォルダーにある受信者の連絡先またはプライベート配布リストのアイテム識別子を定義します。 この要素は省略できます。  <br/> |
+|[Name (EmailAddressType)](name-emailaddresstype.md) <br/> |メールボックス ユーザーの名前を表します。 この要素は省略できます。  <br/> |
+|[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |メールボックス ユーザーの簡易メール転送プロトコル (SMTP) アドレスを定義します。 この要素は省略できます。  <br/> |
+|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |受信者のルーティング プロトコルを表します。 既定値は SMTP です。 この要素は省略できます。  <br/> |
+|[MailboxType](mailboxtype.md) <br/> |電子メール アドレスで表されるメールボックスの種類を表します。  <br/> |
+|[ItemId](itemid.md) <br/> |ユーザーの連絡先フォルダーからの受信者の連絡先またはプライベート配布リストのアイテム識別子を定義します。 この要素は省略できます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[メールヒント](mailtips.md) <br/> |さまざまな種類のメールヒントの値を表します。  <br/> |
+|[メールヒント](mailtips.md) <br/> |さまざまな種類のメール ヒントの値を表します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -67,13 +67,13 @@ ms.locfileid: "44465850"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

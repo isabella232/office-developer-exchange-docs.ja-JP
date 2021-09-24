@@ -1,27 +1,27 @@
 ---
-title: 変更 (階層)
+title: Changes (Hierarchy)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Changes
 api_type:
 - schema
 ms.assetid: 918a0d1f-90a5-4eef-9592-07e15bef94e6
-description: Changes 要素には、クライアント上のフォルダーと、Microsoft Exchange Server 2007 を実行しているコンピューター上のフォルダーとの違いの種類を表す、変更の種類のシーケンス配列が含まれています。
-ms.openlocfilehash: a296d87f23e85d42b4c8c858e92eddfb586a8324
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Changes 要素には、クライアント上のフォルダーと 2007 年 2007 年に実行されているコンピューター上のフォルダーの違いの種類を表す、変更の種類の配列がMicrosoft Exchange Serverされます。
+ms.openlocfilehash: 1ecb43e37258ad5d8e12619436f14992cc2f788b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463273"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512122"
 ---
-# <a name="changes-hierarchy"></a>変更 (階層)
+# <a name="changes-hierarchy"></a>Changes (Hierarchy)
 
-**Changes**要素には、クライアント上のフォルダーと、Microsoft Exchange Server 2007 を実行しているコンピューター上のフォルダーとの違いの種類を表す、変更の種類のシーケンス配列が含まれています。 
+**Changes** 要素には、クライアント上のフォルダーと 2007 年 2007 年に実行されているコンピューター上のフォルダーの違いの種類を表す、変更の種類の配列がMicrosoft Exchange Serverされます。 
   
 [SyncFolderHierarchyResponse](syncfolderhierarchyresponse.md)
   
@@ -29,7 +29,7 @@ ms.locfileid: "44463273"
   
 [SyncFolderHierarchyResponseMessage](syncfolderhierarchyresponsemessage.md)
   
-[変更 (階層)](changes-hierarchy.md)
+[Changes (Hierarchy)](changes-hierarchy.md)
   
 ```xml
 <Changes>
@@ -52,9 +52,9 @@ ms.locfileid: "44463273"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Create (FolderSync)](create-foldersync.md) <br/> |ローカルクライアントストアに作成する1つのフォルダーを識別します。  <br/> |
-|[Update (FolderSync)](update-foldersync.md) <br/> |ローカルクライアントストアで更新する1つのフォルダーを識別します。  <br/> |
-|[Delete (FolderSync)](delete-foldersync.md) <br/> |ローカルクライアントストアで削除する1つのフォルダーを識別します。  <br/> |
+|[Create (FolderSync)](create-foldersync.md) <br/> |ローカル クライアント ストアに作成する 1 つのフォルダーを識別します。  <br/> |
+|[Update (FolderSync)](update-foldersync.md) <br/> |ローカル クライアント ストアで更新する 1 つのフォルダーを識別します。  <br/> |
+|[Delete (FolderSync)](delete-foldersync.md) <br/> |ローカル クライアント ストアで削除する 1 つのフォルダーを識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -68,16 +68,16 @@ ms.locfileid: "44463273"
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Exchange 2007 コンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Exchange 2007 コンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -88,5 +88,5 @@ ms.locfileid: "44463273"
 
 [Exchange 用 EWS リファレンス](ews-reference-for-exchange.md)
   
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

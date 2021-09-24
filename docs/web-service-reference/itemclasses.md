@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ItemClasses
 api_type:
 - schema
 ms.assetid: f95430cc-2860-47c1-af2d-8c4156c9b281
-description: ItemClasses 要素は、条件または例外を適用するために、受信メッセージにスタンプする必要があるアイテムクラスを表します。
-ms.openlocfilehash: 56b99cad2abef0a9953e1793e5b633acca83a9eb
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ItemClasses 要素は、条件または例外を適用するために受信メッセージにスタンプする必要があるアイテム クラスを表します。
+ms.openlocfilehash: a04c773d40d199902de7a7963e02444ed1def4fa
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460114"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59511428"
 ---
 # <a name="itemclasses"></a>ItemClasses
 
-**Itemclasses**要素は、条件または例外を適用するために、受信メッセージにスタンプする必要があるアイテムクラスを表します。 
+**ItemClasses 要素** は、条件または例外を適用するために受信メッセージにスタンプする必要があるアイテム クラスを表します。 
   
 ```XML
 <ItemClasses>
@@ -42,14 +42,14 @@ ms.locfileid: "44460114"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[String](string.md) <br/> |1つのアイテムクラスを表します。  <br/> |
+|[String](string.md) <br/> |1 つのアイテム クラスを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[条件](conditions.md) <br/> |ルールのルールの処理を開始するときに実行される条件を表します。  <br/> |
-|[例外](exceptions.md) <br/> |受信トレイルールに対して使用可能なルールの例外条件をすべて表す例外を表します。  <br/> |
+|[条件](conditions.md) <br/> |満たされると、ルールのルール アクションをトリガーする条件を表します。  <br/> |
+|[例外](exceptions.md) <br/> |受信トレイ ルールで使用可能なすべてのルール例外条件を表す例外を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -64,13 +64,13 @@ ms.locfileid: "44460114"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

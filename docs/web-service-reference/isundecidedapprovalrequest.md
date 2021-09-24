@@ -1,23 +1,23 @@
 ---
-title: Is未確認 Dedapprovalrequest
+title: IsUndecidedApprovalRequest
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 90841617-3b83-4124-8125-0293c9470f4a
-description: Is未確認の Dedapprovalrequest 要素は、承認要求メッセージが処理されたかどうかを指定します。
-ms.openlocfilehash: 0949cf64b8583c4b3fa5a1700475f01cc480f69f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: IsUndecidedApprovalRequest 要素は、承認要求メッセージが処理されたかどうかを指定します。
+ms.openlocfilehash: 5204793490015bd2999322c0f029445c7df91e02
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458174"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59511414"
 ---
-# <a name="isundecidedapprovalrequest"></a>Is未確認 Dedapprovalrequest
+# <a name="isundecidedapprovalrequest"></a>IsUndecidedApprovalRequest
 
-**Is未確認の Dedapprovalrequest**要素は、承認要求メッセージが処理されたかどうかを指定します。 
+**IsUndecidedApprovalRequest** 要素は、承認要求メッセージが処理されたかどうかを指定します。 
   
 ```XML
 <IsUndecidedApprovalRequest> true | false </IsUndecidedApprovalRequest>
@@ -42,7 +42,7 @@ ms.locfileid: "44458174"
   
 ## <a name="text-value"></a>テキスト値
 
-承認要求メッセージが処理されていない場合は、 **is不明な Dedapprovalrequest**要素のテキスト値は**true**です。 値が**false**の場合は、承認要求が決定されたことを示します。 
+承認要求メッセージが処理されていない **場合、IsUndecidedApprovalRequest** 要素のテキスト値は true です。  false の **値は** 、承認要求が決定されたかどうかを示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,9 +55,9 @@ ms.locfileid: "44458174"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -66,5 +66,5 @@ ms.locfileid: "44458174"
 [ApprovalRequestData](approvalrequestdata.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

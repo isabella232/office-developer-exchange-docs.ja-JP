@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a31ac268-5061-4272-a433-ffaea2fbcfa9
 description: IsOrganizer 要素は、このユーザーが会議の開催者であるかどうかを示すブール値を指定します。
-ms.openlocfilehash: 45b7a66068dc00f6e60b7380240bea6836282fd4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: a60485146e333e69391dc1771b2c72ef25043a8b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466564"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518268"
 ---
 # <a name="isorganizer"></a>IsOrganizer
 
-**Isorganizer**要素は、このユーザーが会議の開催者であるかどうかを示すブール値を指定します。 
+**IsOrganizer** 要素は、このユーザーが会議の開催者であるかどうかを示すブール値を指定します。 
   
 ```XML
 <IsOrganizer>true | false</IsOrganizer>
@@ -40,12 +40,12 @@ ms.locfileid: "44466564"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |予定表アイテムのExchangeを表します。  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |会議メッセージを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**Isorganizer**要素のテキスト値が**true の場合**は、予定表アイテムまたは会議メッセージがユーザーによって作成されたことを示します。 値が**false**の場合、予定表アイテムまたは会議メッセージがユーザー bv 作成されていないことを示します。 
+**IsOrganizer** 要素 **のテキスト値が true** の場合は、予定表アイテムまたは会議メッセージがユーザーによって作成されたかどうかを示します。 false の **値は** 、予定表アイテムまたは会議メッセージが作成されていない bv ユーザーを示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -59,12 +59,12 @@ ms.locfileid: "44466564"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

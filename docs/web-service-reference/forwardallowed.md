@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: bc32e0f4-61e9-4c9f-9a03-90a07eb51c53
-description: ForwardAllowed 要素は、転送メールを有効にするかどうかを指定します。
-ms.openlocfilehash: 3c722809bf68239c7d776108cb60d98afbed6e93
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ForwardAllowed 要素は、メールの転送を有効にするかどうかを指定します。
+ms.openlocfilehash: 8c9b2319ed6b3665e5d59d9f07b93fb78043042c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461934"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59528666"
 ---
 # <a name="forwardallowed"></a>ForwardAllowed
 
-**Forwardallowed**要素は、転送メールを有効にするかどうかを指定します。 
+**ForwardAllowed 要素は**、メールの転送を有効にするかどうかを指定します。 
   
 ```XML
 <ForwardAllowed>true | false</ForwardAllowed>
@@ -40,11 +40,11 @@ ms.locfileid: "44461934"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[RightsManagementLicenseData](rightsmanagementlicensedata.md) <br/> |Rights management のライセンスに関する情報を指定します。  <br/> |
+|[RightsManagementLicenseData](rightsmanagementlicensedata.md) <br/> |権限管理ライセンスに関する情報を指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**Forwardallowed**要素のテキスト値が**true**の場合は、メール転送が許可されていることを示します。 値が**false**の場合、転送が許可されていないことを示します。 
+**ForwardAllowed** 要素の **テキスト値が true** の場合、メールの転送が許可されます。 false の **値は** 、転送が許可されていない状態を示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -58,12 +58,12 @@ ms.locfileid: "44461934"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

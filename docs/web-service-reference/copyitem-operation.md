@@ -1,33 +1,33 @@
 ---
-title: CopyItem 操作
+title: CopyItem の操作
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CopyItem
 api_type:
 - schema
 ms.assetid: bcc68f9e-d511-4c29-bba6-ed535524624a
-description: CopyItem 操作は、アイテムをコピーし、アイテムを別のフォルダーに配置します。
-ms.openlocfilehash: ec07700a5ebbdc8774aa2134919634b8dfd02406
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: CopyItem 操作では、アイテムがコピーされ、アイテムが別のフォルダーに格納されます。
+ms.openlocfilehash: 62785d9acb784bcffe7d3279de8a80abc803adf4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462179"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518646"
 ---
-# <a name="copyitem-operation"></a>CopyItem 操作
+# <a name="copyitem-operation"></a>CopyItem の操作
 
-**Copyitem**操作は、アイテムをコピーし、アイテムを別のフォルダーに配置します。 
+**CopyItem 操作では**、アイテムがコピーされ、アイテムが別のフォルダーに格納されます。 
   
 ## <a name="copyitem-request-example"></a>CopyItem 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の**Copyitem**要求の例は、受信トレイにアイテムをコピーする要求を作成する方法を示しています。 
+CopyItem 要求の次 **の例** は、アイテムを受信トレイにコピーする要求を形成する方法を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -51,9 +51,9 @@ ms.locfileid: "44462179"
 ### <a name="comments"></a>コメント
 
 > [!NOTE]
-> 読みやすくするために、フォルダー ID と変更キーが短縮されています。 
+> フォルダー ID と変更キーは、読みやすさを維持するために短縮されました。 
   
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 要求では、次の要素が使用されます。
   
@@ -68,17 +68,17 @@ ms.locfileid: "44462179"
 - [ItemId](itemid.md)
     
 > [!NOTE]
-> この要素を記述するスキーマは、Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。 
+> この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあります。 
   
-**Copyitem**操作の要求メッセージに関するその他のオプションについては、スキーマ階層を参照してください。 [Copyitem](copyitem.md)要素から開始します。 
+**CopyItem** 操作の要求メッセージの他のオプションを見つけるには、スキーマ階層を確認します。 [CopyItem 要素から開始](copyitem.md)します。 
   
-## <a name="successful-copyitem-response"></a>成功した CopyItem 応答
+## <a name="successful-copyitem-response"></a>CopyItem 応答の成功
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **Copyitem**要求に対する正常な応答を示しています。 
+次の例は **、CopyItem** 要求に対する正常な応答を示しています。 
   
-新しいアイテムのアイテム識別子は、応答メッセージで返されます。 メールボックス間またはメールボックスからパブリックフォルダー **Copyitem**操作への応答では、アイテム識別子は返されません。 
+新しいアイテムのアイテム識別子が応答メッセージに返されます。 アイテム識別子は、パブリック フォルダーの CopyItem 操作に対するクロスメールボックスまたはメールボックスに対する応答 **では返** されません。 
   
 ### <a name="code"></a>コード
 
@@ -126,13 +126,13 @@ ms.locfileid: "44462179"
     
 - [Items](items.md)
     
-**Copyitem**操作の応答メッセージに関するその他のオプションについては、スキーマ階層を参照してください。 [Copyitemresponse](copyitemresponse.md)要素から開始します。 
+**CopyItem** 操作の応答メッセージの他のオプションを見つけるには、スキーマ階層を確認します。 [CopyItemResponse 要素から開始](copyitemresponse.md)します。 
   
 ## <a name="copyitem-error-response"></a>CopyItem エラー応答
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **Copyitem**要求に対するエラー応答を示しています。 
+次の例は、CopyItem 要求に対するエラー **応答を示** しています。 
   
 ### <a name="code"></a>コード
 
@@ -182,11 +182,11 @@ ms.locfileid: "44462179"
     
 - [Items](items.md)
     
-**Copyitem**操作のエラー応答メッセージに関するその他のオプションについては、「スキーマ階層」を参照してください。 [Copyitemresponse](copyitemresponse.md)要素から開始します。 
+**CopyItem** 操作のエラー応答メッセージの他のオプションを見つけるには、スキーマ階層を確認します。 [CopyItemResponse 要素から開始](copyitemresponse.md)します。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

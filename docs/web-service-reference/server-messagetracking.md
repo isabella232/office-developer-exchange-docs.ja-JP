@@ -1,27 +1,27 @@
 ---
-title: サーバー (MessageTracking)
+title: Server (MessageTracking)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Server
 api_type:
 - schema
 ms.assetid: eb5408bd-6fa5-4415-9224-24d5e07ec5b3
 description: Server 要素は、イベントが発生した物理サーバーを表します。
-ms.openlocfilehash: 1a5d2e223acfc402ae964c619598845e4212b639
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 76a8d7642cdee8d4fa2ebed1e164341a41af3197
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462046"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59527524"
 ---
-# <a name="server-messagetracking"></a>サーバー (MessageTracking)
+# <a name="server-messagetracking"></a>Server (MessageTracking)
 
-**Server**要素は、イベントが発生した物理サーバーを表します。 
+**Server 要素** は、イベントが発生した物理サーバーを表します。 
   
 ```XML
 <Server/>
@@ -44,7 +44,7 @@ ms.locfileid: "44462046"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[受信者 Trackingイベント](recipienttrackingevent.md) <br/> |受信者に対する1つのイベントに関する情報が含まれています。  <br/> |
+|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |受信者の 1 つのイベントの情報を格納します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -59,13 +59,13 @@ ms.locfileid: "44462046"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UpdateUserConfiguration
 api_type:
 - schema
 ms.assetid: ccf7c577-f882-477e-9f6f-2f56729f7d77
 description: UpdateUserConfiguration 要素は、ユーザー構成オブジェクトを更新する要求を表します。
-ms.openlocfilehash: b46552dc93523340b04f4abfb07dc4fca7dd7898
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: bd5955b67a6c595b3f471aecb323092fb94010f9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468832"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510737"
 ---
 # <a name="updateuserconfiguration"></a>UpdateUserConfiguration
 
-**Updateuserconfiguration**要素は、ユーザー構成オブジェクトを更新する要求を表します。 
+**UpdateUserConfiguration 要素** は、ユーザー構成オブジェクトを更新する要求を表します。 
   
 ```XML
 <UpdateUserConfiguration>
@@ -42,7 +42,7 @@ ms.locfileid: "44468832"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[UserConfiguration](userconfiguration.md) <br/> |1つのユーザー構成オブジェクトを定義します。  <br/> |
+|[UserConfiguration](userconfiguration.md) <br/> |1 つのユーザー構成オブジェクトを定義します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -61,13 +61,13 @@ ms.locfileid: "44468832"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

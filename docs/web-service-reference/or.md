@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Or
 api_type:
 - schema
 ms.assetid: 4876d83a-73a3-4953-9d95-3048e6b76ccb
-description: Or 要素は、それに含まれる検索式に対して論理 OR を実行する検索式を表します。 または、いずれかの子が true を返した場合は true を返します。 または、2つ以上の子を持つ必要があります。
-ms.openlocfilehash: 9bc676da5bbaad64f11f6717fb487c2e9bcf2d89
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Or 要素は、含まれる検索式に対して論理 OR を実行する検索式を表します。 または、子が true を返す場合は true を返します。 または、2 つ以上の子が必要です。
+ms.openlocfilehash: 70cf76d98f019887fea2ed8fe8f082f20fbcde37
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462480"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529558"
 ---
 # <a name="or"></a>または
 
-**Or**要素は、それに含まれる検索式に対して論理**Or**を実行する検索式を表します。 **または**、いずれかの子が**true**を返した場合は**true**を返します。 **または、** 2 つ以上の子を持つ必要があります。 
+**Or 要素** は、含まれる検索式に対して論理 **OR** を実行する検索式を表します。 **または** 、子が **true** を返す場合は true を **返します**。 **または、2** つ以上の子が必要です。 
   
 ```xml
 <Or>
@@ -43,31 +43,31 @@ ms.locfileid: "44462480"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[SearchExpression](searchexpression.md) <br/> | 制限内の式の基本クラスを表します。 <br/><br/>**Searchexpression**要素には、次のいずれかの要素を置き換える必要があります。 <br/> <br/>- [ある](exists.md) <br/>- [除外](excludes.md) <br/>- [IsEqualTo](isequalto.md) <br/>- [IsNotEqualTo](isnotequalto.md) <br/>- [IsGreaterThan](isgreaterthan.md) <br/>- [IsGreaterThanOrEqualTo](isgreaterthanorequalto.md) <br/>- [Isna](islessthan.md) <br/>- [IsLessThanOrEqualTo](islessthanorequalto.md) <br/>- [含み](contains.md) <br/>- [じゃない](not.md) <br/>- [そして](and.md) <br/>- **や** <br/> |
+|[SearchExpression](searchexpression.md) <br/> | 制限内の式の基本クラスを表します。 <br/><br/>**SearchExpression** 要素では、次のいずれかの要素を置換する必要があります。 <br/> <br/>- [Exists](exists.md) <br/>- [除外](excludes.md) <br/>- [IsEqualTo](isequalto.md) <br/>- [IsNotEqualTo](isnotequalto.md) <br/>- [IsGreaterThan](isgreaterthan.md) <br/>- [IsGreaterThanOrEqualTo](isgreaterthanorequalto.md) <br/>- [IsLessThan](islessthan.md) <br/>- [IsLessThanOrEqualTo](islessthanorequalto.md) <br/>- [Contains](contains.md) <br/>- [じゃない](not.md) <br/>- [そして](and.md) <br/>- **または** <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[制限](restriction.md) <br/> |FindItem/FindFolder および search folder 操作のアイテムまたはフォルダーをフィルター処理するために使用される制限またはクエリを表します。  <br/> |
-|[Not](not.md) <br/> |含まれる検索式のブール値を否定する検索式を表します。  <br/> |
-|[And](and.md) <br/> |2つ以上の検索式の間でブール値**と**演算を実行できる検索式を表します。 And 操作の結果は、 **and**要素に含まれるすべての検索式が**true**である場合に**true** **となり**ます。  <br/> |
-|**Or** <br/> |含まれる検索式に対して論理**OR**演算を実行する検索式を表します。 **または**、いずれかの子が**true**を返した場合は**true**を返します。 **または、** 2 つ以上の子を持つ必要があります。  <br/> |
+|[Restriction](restriction.md) <br/> |FindItem/FindFolder および検索フォルダー操作でアイテムまたはフォルダーをフィルター処理するために使用される制限またはクエリを表します。  <br/> |
+|[Not](not.md) <br/> |含まれる検索式のブール値をネゲートする検索式を表します。  <br/> |
+|[And](and.md) <br/> |2 つ以上の検索式の間で **ブール型 AND** 演算を実行できる検索式を表します。 **And** 要素に含まれるすべての検索式が true の場合 **、AND** 操作の結果は true **です**。  <br/> |
+|**Or** <br/> |含まれる検索式に対して論理 **OR** 操作を実行する検索式を表します。 **または** 、子が **true** を返す場合は true を **返します**。 **または、2** つ以上の子が必要です。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FolderName
 api_type:
 - schema
 ms.assetid: c5a2cd55-ac47-43bf-94b5-3ab3a4c28a62
-description: FolderName 要素は、メールボックスに追加する単一の管理されたカスタムフォルダーを識別します。
-ms.openlocfilehash: 1bb63e50c06e81337d1142a6624213fb2db12457
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: FolderName 要素は、メールボックスに追加する 1 つの管理カスタム フォルダーを識別します。
+ms.openlocfilehash: 76263d56c423411a58ea45d691ce93e2b3202571
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461353"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59511566"
 ---
 # <a name="foldername"></a>FolderName
 
-**FolderName**要素は、メールボックスに追加する単一の管理されたカスタムフォルダーを識別します。 
+**FolderName 要素は**、メールボックスに追加する 1 つの管理カスタム フォルダーを識別します。 
   
 [CreateManagedFolder](createmanagedfolder.md)
   
@@ -50,30 +50,30 @@ ms.locfileid: "44461353"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FolderNames](foldernames.md) <br/> |メールボックスに追加する名前付きの管理されたカスタムフォルダーの配列を格納します。  <br/> この要素の XPath 式を次に示します。  <br/>  `/CreateManagedFolder/FolderNames` <br/> |
+|[FolderNames](foldernames.md) <br/> |メールボックスに追加する名前付き管理カスタム フォルダーの配列を格納します。  <br/> 次に、この要素の XPath 式を示します。  <br/>  `/CreateManagedFolder/FolderNames` <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は必須です。 テキスト値はフォルダー名を表します。
+テキスト値は必須です。 テキスト値は、フォルダー名を表します。
   
 ## <a name="remarks"></a>注釈
 
-Exchange Web サービスを使用して管理されたカスタムフォルダーをメールボックスに追加することはできますが、同じテクノロジを使用して、使用可能な管理されたカスタムフォルダーの一覧にアクセスすることはできません。 管理されたカスタムフォルダーの一覧を取得するには、Exchange 管理シェルコマンドを使用するか、Active Directory ディレクトリサービスとのインターフェイスを使用して、API を使用します。 フォルダー名は、対応する Active Directory オブジェクトの名前です。
+Exchange Web サービスを使用して管理カスタム フォルダーをメールボックスに追加することもできますが、同じテクノロジを使用して使用可能な管理カスタム フォルダーの一覧にアクセスすることはできません。 管理カスタム フォルダーの一覧は、Exchange 管理シェル コマンドを使用するか、Active Directory ディレクトリ サービスとインターフェイスする API を使用して取得できます。 フォルダー名は、対応する Active Directory オブジェクトの名前です。
   
-[Findfolder 操作](findfolder-operation.md)を使用して、管理されたカスタムフォルダーを検索できます。 管理されたカスタムフォルダーを削除するには、 [Deletefolder 操作](deletefolder-operation.md)を使用します。 
+[FindFolder 操作を使用して、](findfolder-operation.md)管理されたカスタム フォルダーを検索できます。 [DeleteFolder 操作を使用して、](deletefolder-operation.md)管理されたカスタム フォルダーを削除します。 
   
-**FolderName**は、組織内の既存の管理されたカスタムフォルダーの名前であることに注意する必要があります。 組織内にないフォルダーを追加しようとすると、エラー応答が返されます。 
+**FolderName** は組織内の既存の管理カスタム フォルダーの名前です。 組織に含めされていないフォルダーを追加しようとすると、エラー応答が発生します。 
   
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

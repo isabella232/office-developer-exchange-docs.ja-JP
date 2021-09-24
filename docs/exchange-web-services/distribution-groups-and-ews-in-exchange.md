@@ -3,15 +3,15 @@ title: Exchange の配布グループと EWS
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fe08c2e3-92a0-43ec-bc61-69b14caee8fe
 description: Exchange で使用できる、さまざまな種類の配布グループと、それらを EWS マネージ API または EWS アプリケーションで管理する方法について説明します。
-ms.openlocfilehash: 083a2c7380e8b9677ddacc9ae3c9465d6a9db97f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 71dc1a1e4c71310943eb19f8a5d6b3f470ab7ccb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528434"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512304"
 ---
 # <a name="distribution-groups-and-ews-in-exchange"></a>Exchange の配布グループと EWS
 

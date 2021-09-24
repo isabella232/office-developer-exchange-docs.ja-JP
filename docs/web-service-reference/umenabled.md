@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UmEnabled
 api_type:
 - schema
 ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: UmEnabled 要素は、ユニファイドメッセージングがアカウントに対して有効になっているかどうかを示します。
-ms.openlocfilehash: 7ba7be69868cb439177702f74ff4a2f12875b7ff
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: UmEnabled 要素は、アカウントでユニファイド メッセージングが有効になっているかどうかを示します。
+ms.openlocfilehash: 9ff6432324e3a15b9ae805a7d6d836c9c895059c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468356"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59527154"
 ---
 # <a name="umenabled"></a>UmEnabled
 
-**Umenabled**要素は、ユニファイドメッセージングがアカウントに対して有効になっているかどうかを示します。 
+**UmEnabled 要素** は、アカウントでユニファイド メッセージングが有効になっているかどうかを示します。 
   
 ```XML
 <UmEnabled>true | false</UmEnabled>
@@ -44,11 +44,11 @@ ms.locfileid: "44468356"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |ユニファイドメッセージングサービスのサービス構成情報が含まれています。  <br/> |
+|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |ユニファイド メッセージング サービスのサービス構成情報が含まれる。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-アカウントに対してユニファイドメッセージングが有効になっている場合、 **Umenabled**要素のテキスト値は**true**になります。それ以外の場合、値は**false**になります。
+アカウントでユニファイド メッセージングが有効になっている場合 **、UmEnabled** 要素のテキスト値は true です。 それ以外の場合、値は false **です**。
   
 ## <a name="remarks"></a>注釈
 
@@ -61,13 +61,13 @@ ms.locfileid: "44468356"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

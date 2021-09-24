@@ -1,29 +1,29 @@
 ---
-title: アノテーションフィーチャー
+title: Annotation
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e0392635-9d0f-46d5-84ef-0a8a3036479a
-description: Annotation 要素には、ユーザーが追加したオプションのメモが含まれています。
-ms.openlocfilehash: 291d875085f9bc13e92a14b844b66878f5e6eb2a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Annotation 要素には、ユーザーが追加したオプションのメモが含まれる。
+ms.openlocfilehash: c34f19190003de218baf9e3d8923688224b1f804
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466116"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59531230"
 ---
-# <a name="annotation"></a>アノテーションフィーチャー
+# <a name="annotation"></a>Annotation
 
-**Annotation**要素には、ユーザーが追加したオプションのメモが含まれています。 
+**Annotation 要素には**、ユーザーが追加したオプションのメモが含まれる。 
   
 ```XML
 <Annotation></Annotation>
 ```
 
- **xs: 文字列**
+ **xs:string**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -44,7 +44,7 @@ ms.locfileid: "44466116"
    
 ## <a name="text-value"></a>テキスト値
 
-Annotation 要素のテキスト値は、ユーザーが場所に関するメモを追加したことを示します。
+Annotation 要素のテキスト値は、ユーザーが場所に関するメモを追加した値です。
   
 ## <a name="remarks"></a>注釈
 
@@ -58,10 +58,10 @@ Annotation 要素のテキスト値は、ユーザーが場所に関するメモ
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

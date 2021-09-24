@@ -4,26 +4,26 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 2c0bc41c-2452-4fc8-a19c-0e85f9fdbc4a
-description: ServerVersion 要素は、Microsoft Exchange Server を実行しているコンピューターのバージョン番号を表します。
-ms.openlocfilehash: 3ef531a69d2dd00ee9784c9eb191684ce517e842
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ServerVersion 要素は、サーバーで実行されているコンピューターのバージョン番号をMicrosoft Exchange Server。
+ms.openlocfilehash: bc7f9daa62e628e41f7541a609550e90af211928
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461969"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59527378"
 ---
 # <a name="serverversion-pox"></a>ServerVersion (POX)
 
-**ServerVersion**要素は、Microsoft Exchange Server を実行しているコンピューターのバージョン番号を表します。 
+**ServerVersion 要素** は、サーバーで実行されているコンピューターのバージョン番号Microsoft Exchange Server。 
   
-- [自動検出 (POX)](autodiscover-pox.md) 
-- [応答 (POX)](response-pox.md)
-- [アカウント (POX)](account-pox.md)
-- [プロトコル (POX)](protocol-pox.md)
+- [AutoDiscover (POX)](autodiscover-pox.md) 
+- [Response (POX)](response-pox.md)
+- [Account (POX)](account-pox.md)
+- [Protocol (POX)](protocol-pox.md)
 - [ServerVersion (POX)](serverversion-pox.md)
   
 ```xml
@@ -46,19 +46,19 @@ ms.locfileid: "44461969"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
+|[Protocol (POX)](protocol-pox.md) <br/> |クライアント アクセス サーバーの役割がインストールされている Microsoft Exchangeコンピューターにクライアントを接続するための仕様が含まれている。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-Text 値は、Exchange サーバーのバージョン番号を表します。
+テキスト値は、サーバーのバージョンExchangeを表します。
   
 ## <a name="remarks"></a>注釈
 
-**ServerVersion**の値は、 [Type (POX)](type-pox.md)要素が EXCH または EXPR と等しい場合にのみ有効です。 **ServerVersion**の値は、サーバーの MajorVersion、MinorVersion、および MajorBuildNumber を含む16進数値です。 
+**ServerVersion の** 値は [、Type (POX)](type-pox.md)要素が EXCH または EXPR と等しい場合にのみ有効です。 **ServerVersion の** 値は、サーバーの MajorVersion、MinorVersion、および MajorBuildNumber を含む 16 進数です。 
   
 ## <a name="example"></a>例
 
-次の例では、自動検出応答で返される**ServerVersion**値を取得して、MajorVersion、MinorVersion、および MajorBuildNumber を取得して表示します。 この例では、 **ServerVersion**値に16進数の値を入力できるようにします。 **ServerVersion**値が入力されていない場合は、既定の**ServerVersion**値738180da が使用されます。 
+次の例では、自動検出応答で返される **ServerVersion** 値をカバーし、MajorVersion、MinorVersion、および MajorBuildNumber を取得して表示します。 この例では **、ServerVersion** 値に 16 進値を入力できます。 **ServerVersion 値を入力** すると、既定の **ServerVersion** 値 738180DA が使用されます。 
   
 ```csharp
 static void Main(string[] args)
@@ -105,5 +105,5 @@ static void Main(string[] args)
 
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+- [POX 自動検出 XML 要素のExchange](pox-autodiscover-xml-elements-for-exchange.md)
 

@@ -3,15 +3,15 @@ title: Exchange 製品バージョン別の EWS 機能
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 186c51dc-ec33-4a5d-b739-c9fcb1d4cdd3
 description: 新しい製品リリースでは、EWS により新機能が実装されます。 この資料の内容を読み、対象としている Exchange のバージョンに、アクセスするデータや機能のサポートが含まれているかどうか判断してください。
-ms.openlocfilehash: a8032e16cdd9100289666d8f2ce742fe054ede2e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: bccd0e84fc28f8a7366f0463e555cceec71aa181
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456032"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512283"
 ---
 # <a name="ews-functionality-in-exchange-product-versions"></a>Exchange 製品バージョン別の EWS 機能
 

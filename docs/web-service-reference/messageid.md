@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MessageId
 api_type:
 - schema
 ms.assetid: 3b038ad5-7752-4ed8-9769-a9f1d86c8fef
-description: MessageId 要素は、検索するメッセージの id を表します。
-ms.openlocfilehash: 014c028c9625ff6b80ed16137df097071bcdb584
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MessageId 要素は、検索するメッセージ ID を表します。
+ms.openlocfilehash: 68c50f88d75ca7bf26d2c5766488cccd5b76770e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468685"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518233"
 ---
 # <a name="messageid"></a>MessageId
 
-**MessageId**要素は、検索するメッセージの id を表します。 
+**MessageId 要素は**、検索するメッセージ ID を表します。 
   
 ```XML
 <MessageId/>
@@ -59,13 +59,13 @@ ms.locfileid: "44468685"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

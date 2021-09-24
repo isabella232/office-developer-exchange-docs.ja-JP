@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 45ca2500-ceab-4c98-9576-cb9e158e5896
 description: GetClientAccessTokenResponseMessage 要素は、GetClientAccessToken 要求の応答メッセージを指定します。
-ms.openlocfilehash: e842353dfe91fa7df410203b53e22d5ec53e1e39
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 4921e47b6f5c082ed7daf9f0d5250a4a14682bcc
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526684"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59511558"
 ---
 # <a name="getclientaccesstokenresponsemessage"></a>GetClientAccessTokenResponseMessage
 
-**GetClientAccessTokenResponseMessage**要素は、 **GetClientAccessToken**要求の応答メッセージを指定します。 
+**GetClientAccessTokenResponseMessage** 要素は **、GetClientAccessToken 要求の応答メッセージを指定** します。 
   
 ```XML
 <GetClientAccessTokenResponseMessage ResponseClass=" Success | Warning | Error ">
@@ -52,17 +52,17 @@ ms.locfileid: "44526684"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[トークン (ClientAccessTokenType)](token-clientaccesstokentype.md) <br/> |クライアントアクセストークンを指定します。  <br/> |
-|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在未使用で、今後の使用のために予約されています。  <br/> |
-|[MessageText](messagetext.md) <br/> |応答の状態を説明するテキストを提供します。  <br/> |
-|[MessageXml](messagexml.md) <br/> |エラー応答に関する追加情報を提供します。  <br/> |
+|[Token (ClientAccessTokenType)](token-clientaccesstokentype.md) <br/> |クライアント アクセス トークンを指定します。  <br/> |
+|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在未使用で、将来の使用のために予約されています。  <br/> |
+|[MessageText](messagetext.md) <br/> |応答の状態のテキストの説明を提供します。  <br/> |
+|[MessageXml](messagexml.md) <br/> |追加のエラー応答情報を提供します。  <br/> |
 |[ResponseCode](responsecode.md) <br/> |要求に関する状態情報を提供します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Exchange Web サービス (EWS) 要求に対する応答メッセージが保存されています。  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Web サービス (EWS) 要求Exchange応答メッセージが含まれます。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -75,13 +75,13 @@ ms.locfileid: "44526684"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 
