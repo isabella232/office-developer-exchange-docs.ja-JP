@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Groups
 api_type:
 - schema
 ms.assetid: 6b6b2d67-219d-4dfb-a4ed-d627b1cfb33f
-description: Groups 要素には、FindItem 操作要求で識別される検索および集約条件があるグループのコレクションが含まれています。
-ms.openlocfilehash: 915d9dffd6d8cec1def6634e6b70642d563b5242
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Groups 要素には、FindItem 操作要求で識別される検索および集計条件で見つかったグループのコレクションが含まれます。
+ms.openlocfilehash: f47ab4111137d2e5d98fcc6dcf40fadc073b7af9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530790"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539683"
 ---
 # <a name="groups"></a>グループ
 
-**Groups**要素には、 [FindItem 操作](finditem-operation.md)要求で識別される検索および集約条件があるグループのコレクションが含まれています。 
+**Groups 要素** には、FindItem 操作要求で識別される検索および集計条件で見つかったグループの [コレクションが含](finditem-operation.md)まれます。 
   
 ```xml
 <Groups>
@@ -42,28 +42,28 @@ ms.locfileid: "44530790"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[GroupedItems](groupeditems.md) <br/> |グループ化された[FindItem 操作](finditem-operation.md)呼び出しの結果であるアイテムのコレクションを表します。  <br/> |
+|[GroupedItems](groupeditems.md) <br/> |グループ化された FindItem 操作呼び出しの結果であるアイテムの [コレクションを表](finditem-operation.md) します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[RootFolder (FindItemResponseMessage)](rootfolder-finditemresponsemessage.md) <br/> |[FindItem 操作](finditem-operation.md)操作の間に1つのルートフォルダーを検索した結果を格納します。  <br/> |
+|[RootFolder (FindItemResponseMessage)](rootfolder-finditemresponsemessage.md) <br/> |FindItem 操作中に 1 つのルート フォルダーを検索した結果 [を格納](finditem-operation.md) します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-結果内の個別のグループごとに1つの[Groupeditems](groupeditems.md)インスタンスが発生します。 
+[結果内の個別の](groupeditems.md)グループごとに 1 つの GroupedItems インスタンスが発生します。 
   
-この要素を記述するスキーマは、Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

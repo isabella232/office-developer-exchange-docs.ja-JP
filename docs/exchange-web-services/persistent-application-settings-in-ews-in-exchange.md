@@ -3,15 +3,15 @@ title: Exchange の EWS の永続的なアプリケーションの設定
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 394d4e70-8517-4073-809a-5b61780ff923
 description: Exchange で永続的なカスタム アプリケーション設定を作成するために EWS マネージ API または EWS アプリケーションが使用できる様々なオプションについて説明します。
-ms.openlocfilehash: b1faa057e5a0c1a96498efcc23738c83d25ae986
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 3fdc7ad3d5acabf6b498743afe8d93f0eff048c3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457404"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516139"
 ---
 # <a name="persistent-application-settings-in-ews-in-exchange"></a>Exchange の EWS の永続的なアプリケーションの設定
 

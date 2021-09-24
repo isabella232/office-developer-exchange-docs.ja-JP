@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fc82c00b-979c-4d1b-a5ca-7268dbce634a
-description: TotalConversationsInView 要素には、FindConversation の応答で返された会話の数が含まれます。
-ms.openlocfilehash: 15a3f2a13359becc15418494aee359767d12b2a2
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: TotalConversationsInView 要素には、FindConversation 応答で返される会話の数が含まれる。
+ms.openlocfilehash: 0cb5402509ae9d7d7a28dd05ebf6244f4dec44c0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467537"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515146"
 ---
 # <a name="totalconversationsinview"></a>TotalConversationsInView
 
-**TotalConversationsInView**要素には、 **findconversation**の応答で返された会話の数が含まれます。 
+**TotalConversationsInView** 要素には **、FindConversation** 応答で返される会話の数が含まれる。 
   
 ```XML
 <TotalConversationsInView></TotalConversationsInView>
@@ -42,7 +42,7 @@ ms.locfileid: "44467537"
   
 ## <a name="text-value"></a>テキスト値
 
-**TotalConversationsInView**要素のテキスト値は、 **findconversation**応答で返された会話の数です。 
+**TotalConversationsInView** 要素のテキスト値は **、FindConversation** 応答で返される会話の数です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44467537"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

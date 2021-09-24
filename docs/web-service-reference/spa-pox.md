@@ -4,29 +4,29 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: fba018d5-0c65-4e1b-9767-d1ce8b356278
 description: SPA 要素は、セキュリティで保護されたパスワード認証 (SPA) が必要かどうかを示します。
-ms.openlocfilehash: cf57b3a6046b1b9b030b7cae81381189eee92c1c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 8737a5b923d4f59c2819f7574924352223ac3673
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467642"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540413"
 ---
 # <a name="spa-pox"></a>SPA (POX)
 
-**Spa**要素は、セキュリティで保護されたパスワード認証 (SPA) が必要かどうかを示します。 
+**SPA 要素は**、セキュリティで保護されたパスワード認証 (SPA) が必要かどうかを示します。 
   
-[自動検出 (POX)](autodiscover-pox.md)
+[AutoDiscover (POX)](autodiscover-pox.md)
   
-[応答 (POX)](response-pox.md)
+[Response (POX)](response-pox.md)
   
-[アカウント (POX)](account-pox.md)
+[Account (POX)](account-pox.md)
   
-[プロトコル (POX)](protocol-pox.md)
+[Protocol (POX)](protocol-pox.md)
   
 [SPA (POX)](spa-pox.md)
   
@@ -50,19 +50,19 @@ ms.locfileid: "44467642"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
+|[Protocol (POX)](protocol-pox.md) <br/> |クライアント アクセス サーバーの役割がインストールされている 2007 年Microsoft Exchange Serverコンピューターにクライアントを接続するための仕様が含まれている。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-Text 値は、SPA が必要かどうかを示します。 テキスト値が**の**場合は、SPA が必要です。
+テキスト値は、SPA が必要かどうかを示します。 テキスト値がオンの **場合は**、SPA が必要です。
   
 ## <a name="remarks"></a>注釈
 
-この要素が存在しない場合、既定値は **[オン**] に設定されます。
+この要素が存在しない場合、既定値は on に設定 **されます**。
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+[POX 自動検出 XML 要素のExchange](pox-autodiscover-xml-elements-for-exchange.md)
 

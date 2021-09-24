@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: ITPro
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Content
 api_type:
 - schema
 ms.assetid: 24f8c54a-505f-4fc0-b7e7-93ad50b97070
-description: Content 要素には、ファイル添付の Base64 でエンコードされたコンテンツが含まれています。
-ms.openlocfilehash: 81f6acf69ff702bd0645663cb2e499ee5b45ea78
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Content 要素には、添付ファイルの Base64 エンコードコンテンツが含まれる。
+ms.openlocfilehash: ccea4412416575f9a1d56a4cde6ebbfd0df31101
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458951"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513823"
 ---
-# <a name="content"></a>コンテンツ
+# <a name="content"></a>Content
 
-**Content**要素には、ファイル添付の Base64 でエンコードされたコンテンツが含まれています。 
+**Content 要素** には、添付ファイルの Base64 エンコードコンテンツが含まれる。 
   
 ```xml
 <Content/>
@@ -44,28 +44,28 @@ ms.locfileid: "44458951"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FileAttachment](fileattachment.md) <br/> |Exchange ストア内のアイテムに関連付けられているファイル t を表します。  <br/> |
+|[FileAttachment](fileattachment.md) <br/> |ファイル t を表し、そのファイルをストア内のアイテムExchangeします。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-文字列型 (string) の値は、添付ファイルの Base64 でエンコードされたバイナリデータを表します。
+文字列値は、添付ファイルの Base64 エンコードバイナリ データを表します。
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d730e3af-3102-4242-a2f1-c2873af188f9
 description: BodyType 要素は、アイテムの本文の種類を指定します。
-ms.openlocfilehash: e9e09ea01477558f3a12abbee3d028b9268ac7eb
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 7d687dea668b9ac21f9cbf88ca0bcad6e3f66d03
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461507"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514838"
 ---
 # <a name="bodytype-bodytypetype"></a>BodyType (BodyTypeType)
 
-**Bodytype**要素は、アイテムの本文の種類を指定します。 
+**BodyType 要素** は、アイテムの本文の種類を指定します。 
   
 ```XML
 <BodyType> HTML | Text</BodyType>
@@ -48,8 +48,8 @@ ms.locfileid: "44461507"
 
 |**値**|**説明**|
 |:-----|:-----|
-|HTML  <br/> |本文が HTML であることを示します。  <br/> |
-|テキスト  <br/> |本文がテキストであることを示します。  <br/> |
+|HTML  <br/> |本文が HTML かどうかを示します。  <br/> |
+|テキスト  <br/> |本文がテキストかどうかを示します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -63,12 +63,12 @@ ms.locfileid: "44461507"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

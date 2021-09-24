@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 04a6968d-7fb5-47ee-b66e-dc99c35dbb63
 description: HasStartTimeChanged 要素は、会議の開始時刻が変更されたかどうかを指定します。
-ms.openlocfilehash: 1355917005d956d05064bfc095055fb72aa16c57
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 7f04c4d34a081b91adbb0796019e93bc50bfb8ab
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462746"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539648"
 ---
 # <a name="hasstarttimechanged"></a>HasStartTimeChanged
 
-**Hasstarttimechanged**要素は、会議の開始時刻が変更されたかどうかを指定します。 
+**HasStartTimeChanged** 要素は、会議の開始時刻が変更されたかどうかを指定します。 
   
 ```XML
 <HasStartTimeChanged> true | false </HasStartTimeChanged>
@@ -40,11 +40,11 @@ ms.locfileid: "44462746"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ChangeHighlights 強調表示](changehighlights.md) <br/> |2つのバージョンの会議出席依頼メッセージの間で変更されたものを指定します。  <br/> |
+|[ChangeHighlights](changehighlights.md) <br/> |2 つのバージョンの会議出席依頼メッセージの間で何が変更されたかを指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**Hasstarttimechanged**要素のテキスト値が**true の場合**は、会議の開始時刻が変更されたことを示します。 値が**false**の場合は、開始時刻が変更されていないことを示します。 
+**HasStartTimeChanged** 要素のテキスト値 **true** は、会議の開始時刻が変更されたかどうかを示します。 false の **値は** 、開始時刻が変更されていないかどうかを示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -58,12 +58,12 @@ ms.locfileid: "44462746"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

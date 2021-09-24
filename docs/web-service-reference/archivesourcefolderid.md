@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d5b6a099-3b87-44ef-a197-8198730ff72d
-description: ArchiveSourceFolderId 要素は、アーカイブアイテムのソースフォルダーの Id を指定します。
-ms.openlocfilehash: 403f40cb4529cf72f07b8a04c0803d757c24e470
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ArchiveSourceFolderId 要素は、アーカイブ アイテムのソース フォルダーの ID を指定します。
+ms.openlocfilehash: 1fa87526ce010d74d5ed88a7eb9d1658937d947b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463385"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540280"
 ---
 # <a name="archivesourcefolderid"></a>ArchiveSourceFolderId
 
-**ArchiveSourceFolderId**要素は、アーカイブアイテムのソースフォルダーの Id を指定します。 
+**ArchiveSourceFolderId** 要素は、アーカイブ アイテムのソース フォルダーの ID を指定します。 
   
 ```XML
 <ArchiveSourceFolderId>
@@ -55,8 +55,8 @@ ms.locfileid: "44463385"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

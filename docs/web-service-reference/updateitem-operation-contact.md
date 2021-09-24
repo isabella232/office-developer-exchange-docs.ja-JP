@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UpdateItem
 api_type:
 - schema
 ms.assetid: 298fdd71-a83d-4407-9728-4f0a8e2d857c
-description: UpdateItem 操作は、Exchange ストア内の連絡先アイテムのプロパティを更新するために使用されます。
-ms.openlocfilehash: 66e1b91ea3154d8a501339aed7b398970e8f5392
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: UpdateItem 操作は、連絡先ストアの連絡先アイテムのプロパティを更新Exchangeされます。
+ms.openlocfilehash: 3d9c42d941be45f9577efb53e30bc2c299370527
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459827"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515027"
 ---
 # <a name="updateitem-operation-contact"></a>UpdateItem 操作 (連絡先)
 
-UpdateItem 操作は、Exchange ストア内の連絡先アイテムのプロパティを更新するために使用されます。
+UpdateItem 操作は、連絡先ストアの連絡先アイテムのプロパティを更新Exchangeされます。
   
-## <a name="updateitem-contact-request-example"></a>UpdateItem (Contact) 要求の例
+## <a name="updateitem-contact-request-example"></a>UpdateItem (連絡先) 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次のコード例は、連絡先の電子メールアドレスを更新する方法を示しています。
+次のコード例は、連絡先の電子メール アドレスを更新する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -62,9 +62,9 @@ UpdateItem 操作は、Exchange ストア内の連絡先アイテムのプロパ
 
 ### <a name="comments"></a>コメント
 
-アイテム識別子は読みやすくするために短縮されています。
+アイテム識別子は、読みやすさを維持するために短縮されました。
   
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 要求では、次の要素が使用されます。
   
@@ -88,11 +88,11 @@ UpdateItem 操作は、Exchange ストア内の連絡先アイテムのプロパ
     
 - [Entry (EmailAddress)](entry-emailaddress.md)
     
-## <a name="successful-updateitem-contact-response"></a>成功した UpdateItem (連絡先) 応答
+## <a name="successful-updateitem-contact-response"></a>UpdateItem (連絡先) 応答の成功
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次のコード例は、正常な UpdateItem 応答を示しています。
+次のコード例は、成功した UpdateItem 応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -126,7 +126,7 @@ UpdateItem 操作は、Exchange ストア内の連絡先アイテムのプロパ
 
 ### <a name="comments"></a>コメント
 
-アイテム識別子は読みやすくするために短縮されています。
+アイテム識別子は、読みやすさを維持するために短縮されました。
   
 ### <a name="successful-response-elements"></a>成功した応答要素
 
@@ -142,15 +142,15 @@ UpdateItem 操作は、Exchange ストア内の連絡先アイテムのプロパ
     
 - [ResponseCode](responsecode.md)
     
-- [アイテム (非 Emptyarrayofallitemstype)](items-nonemptyarrayofallitemstype.md)
+- [Items (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
     
 - [Contact](contact.md)
     
 - [ItemId](itemid.md)
     
-## <a name="invalid-updateitem-contact-request-example"></a>無効な UpdateItem (連絡先) 要求の例
+## <a name="invalid-updateitem-contact-request-example"></a>UpdateItem (連絡先) 要求の例が無効です
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
 次のコード例は、無効な要求を示しています。
   
@@ -187,13 +187,13 @@ UpdateItem 操作は、Exchange ストア内の連絡先アイテムのプロパ
 
 ### <a name="comments"></a>コメント
 
-アイテム識別子は読みやすくするために短縮されています。
+アイテム識別子は、読みやすさを維持するために短縮されました。
   
-## <a name="updateitem-contact-error-response"></a>UpdateItem (Contact) エラー応答
+## <a name="updateitem-contact-error-response"></a>UpdateItem (連絡先) エラー応答
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次のコード例は、UpdateItem (連絡先) 要求に対するエラー応答を示しています。
+次のコード例は、UpdateItem (Contact) 要求に対するエラー応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -220,7 +220,7 @@ UpdateItem 操作は、Exchange ストア内の連絡先アイテムのプロパ
 
 ### <a name="comments"></a>コメント
 
-スキーマ検証エラーによって発生したエラー応答の SOAP 本文で使用されている一部の要素は、メッセージまたは種類のスキーマで定義されていません。 **Detail**要素には、エラーに関する情報が含まれています。 応答[secの](responsecode.md)要素にエラーコードが含まれています。 [メッセージ](message-ex15websvcsotherref.md)要素には、エラーの説明が含まれています (使用可能な場合)。 **Line**要素は、スキーマ検証エラーが発生した行番号を示します。 **Position**要素は、XML ドキュメントの左端の文字からの位置を表します。 
+スキーマ検証エラーによって発生するエラー応答の SOAP 本文で使用される一部の要素は、メッセージまたは型スキーマで定義されていません。 detail **要素** には、エラーに関する情報が含まれる。 [ResponseCode 要素](responsecode.md)には、エラー コードが含まれている。 [Message 要素](message-ex15websvcsotherref.md)には、エラーの説明 (使用可能な場合) が含まれる。 **Line 要素は**、スキーマ検証エラーが発生した行番号を表します。 **Position 要素** は、XML ドキュメントの左端の文字からの位置を表します。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Argument
 api_type:
 - schema
 ms.assetid: 15b0bfb8-2448-4ceb-aeac-965115e0fb72
-description: 引数要素は、アクションへの引数を指定します。
-ms.openlocfilehash: 41e3b1d891610669b0cc93f3daf6e8ee98c48396
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Argument 要素は、アクションの引数を指定します。
+ms.openlocfilehash: e948216e733a6623f8c4113b178c2c4ff31eccd9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464757"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540266"
 ---
 # <a name="argument"></a>主張
 
-**引数**要素は、アクションへの引数を指定します。 
+**Argument 要素** は、アクションの引数を指定します。 
   
 ```xml
 <Argument Value=""/>
@@ -36,7 +36,7 @@ ms.locfileid: "44464757"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**値** <br/> |保護ルールのアクション部分の引数の値を表す、空ではない文字列値。 この属性は必須です。  <br/> |
+|**値** <br/> |保護ルールのアクション部分に対する引数の値を表す空でない文字列値。 この属性は必須です。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -46,7 +46,7 @@ ms.locfileid: "44464757"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[アクション (ProtectionRuleActionType)](action-protectionruleactiontype.md) <br/> |ルールの条件部分が一致する場合に実行する必要のあるアクションを指定します。  <br/> |
+|[Action (ProtectionRuleActionType)](action-protectionruleactiontype.md) <br/> |ルールの条件部分が一致する場合に実行する必要があるアクションを識別します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -61,11 +61,11 @@ ms.locfileid: "44464757"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

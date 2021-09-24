@@ -5,50 +5,50 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UpdateItem
 api_type:
 - schema
 ms.assetid: 5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4
-description: UpdateItem 操作は、Exchange ストア内の既存のアイテムのプロパティを変更するために使用されます。
-ms.openlocfilehash: c001b7656862144023e9704cb04e6b4c0030f9df
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: UpdateItem 操作は、アイテム ストア内の既存のアイテムのプロパティを変更Exchangeされます。
+ms.openlocfilehash: 6ac09c24c13efff8053fc605ec2c0e6cf2957429
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459392"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514061"
 ---
 # <a name="updateitem-operation"></a>UpdateItem 操作
 
-**Updateitem**操作は、Exchange ストア内の既存のアイテムのプロパティを変更するために使用されます。 
+**UpdateItem 操作は**、アイテム ストア内の既存のアイテムのプロパティを変更Exchangeされます。 
   
 ## <a name="remarks"></a>注釈
 
-アイテムに対して3つの基本的な更新操作を実行できます。 次の表に、実行できるアクションを示します。
+アイテムに対して 3 つの基本的な更新アクションを実行できます。 次の表に、実行できるアクションの一覧を示します。
   
 |**操作**|**説明**|
 |:-----|:-----|
-|追加  <br/> |既存のプロパティにデータを追加します。 この操作を行うと、現在のデータが保持されます。 Append は、すべてのプロパティに適用されません。  <br/> |
-|Set  <br/> |プロパティのデータが含まれている場合は、プロパティのデータを置換します。プロパティが存在しない場合は、プロパティを作成し、その値を設定します。 Set アクションは、書き込み可能なプロパティにのみ適用されます。  <br/> |
-|削除  <br/> |アイテムからプロパティを削除します。 これは、プロパティを空の値に設定することとは異なります。 この操作が完了すると、アイテムのプロパティが存在しなくなります。 Delete は、書き込み可能なプロパティにのみ適用されます。  <br/> |
+|追加  <br/> |既存のプロパティにデータを追加します。 このアクションでは、現在のデータが保持されます。 Append は、すべてのプロパティには適用されません。  <br/> |
+|Set  <br/> |プロパティにデータが含まれている場合はプロパティのデータを置き換えるか、プロパティを作成し、プロパティが存在しない場合は値を設定します。 set アクションは、書き込み可能なプロパティにのみ適用されます。  <br/> |
+|削除  <br/> |アイテムからプロパティを削除します。 これは、プロパティを空の値に設定する場合とは異なります。 このアクションが完了すると、アイテムのプロパティは存在しません。 Delete は書き込み可能なプロパティにのみ適用されます。  <br/> |
    
-**Updateitem**呼び出しを使用すると、1つ以上のアイテム、および各アイテムの1つ以上のプロパティを変更できます。 [Itemchanges](itemchanges.md)要素には、この呼び出しの一部として実行されるすべての変更が含まれています。 [Itemchange](itemchange.md)要素 ( [itemchange](itemchanges.md)要素の子) は、1つのアイテムに対して実行される変更を表します。 [Itemchange](itemchange.md)要素には、1つのアイテムに対して実行できる更新アクションのセットが含まれています。 これらの変更は、 [Updates (Item)](updates-item.md)要素に含まれています。 [ItemId](itemid.md)要素は、更新するアイテムを識別します。 アイテムで複数のプロパティを更新するには、更新が必要な各プロパティに対して[SetItemField](setitemfield.md)、 [appendtoitemfield](appendtoitemfield.md)、または[deleteitemfield](deleteitemfield.md)を指定する必要があります。 
+**UpdateItem 呼び出** しを使用して、1 つ以上のアイテム、および各アイテムの 1 つ以上のプロパティを変更できます。 [ItemChanges 要素](itemchanges.md)には、この呼び出しの一部として実行されるすべての変更が含まれる。 [ItemChange](itemchange.md)要素の子である[ItemChange](itemchanges.md)要素は、1 つのアイテムに対して実行する変更を表します。 [ItemChange 要素には](itemchange.md)、1 つのアイテムに対して実行できる一連の更新アクションが含まれる。 これらの変更は、Updates [(Item) 要素に含](updates-item.md) まれています。 [ItemId 要素は](itemid.md)、更新するアイテムを識別します。 アイテムの複数のプロパティを更新するには、更新が必要なプロパティごとに SetItemField、AppendToItemField、[または DeleteItemField](deleteitemfield.md)を指定する必要があります。 [](setitemfield.md) [](appendtoitemfield.md) 
   
 > [!NOTE]
-> 更新操作は、指定された順序で適用されます。 
+> 更新アクションは、指定された順序で適用されます。 
   
-変更ごとに、変更するプロパティのパスと、そのアイテムの新しい値を表す表現を指定する必要があります。 Delete アクションは、削除する必要のあるプロパティのパスのみが必要になるということとは少し異なります。 Set および append アクションの場合、指定されたパスは、アイテム表現で設定されているのと同じプロパティを参照する必要があります。 これらが異なる場合は、エラーが返されます。
+変更ごとに、変更するプロパティのパスと、新しい値を持つそのアイテムの表現を指定する必要があります。 削除アクションは、削除する必要があるプロパティのパスだけが必要になるという理由で少し異なります。 set アクションと append アクションの場合、指定するパスは、アイテム表現で設定されているのと同じプロパティを参照する必要があります。 これらが異なる場合は、エラーが返されます。
   
-**Updateitem**操作は、Exchange ストアアイテムの[開始](start.md)時刻と[終了](end-ex15websvcsotherref.md)時刻を設定できます。 **Updateitem**要求では、[終了](end-ex15websvcsotherref.md)時刻を設定することなく、[開始](start.md)時刻を設定することもできます。 これにより、[開始](start.md)時刻が[終了](end-ex15websvcsotherref.md)時刻よりも後の場合にエラーが発生することがあります。 期間を保持するために[開始](start.md)時刻が変更された場合、クライアントアプリケーションは[終了](end-ex15websvcsotherref.md)時刻を調整する必要があることに注意してください。 
+**UpdateItem 操作では**、ストア アイテム [](end-ex15websvcsotherref.md)の [開始](start.md)時刻と終了時刻Exchange設定できます。 **UpdateItem 要求では**、終了 [](start.md)時刻も設定せずに開始時刻を [設定](end-ex15websvcsotherref.md)できます。 開始時刻が終了時刻より後[](start.md)の場合、エラーが[発生する可能性](end-ex15websvcsotherref.md)があります。 クライアント アプリケーションは、期間を維持するために[](end-ex15websvcsotherref.md)開始時刻が変更[](start.md)された場合に終了時刻を調整する必要があります。 
   
-1つの予定表アイテムを定期的マスターの予定表アイテムに更新する場合は、予定表アイテムの元のタイムゾーンを保持するために、 **updateitem**操作によって、[会議 timezone](meetingtimezone.md)プロパティを設定する必要があります。 
+1 つの予定表アイテムが定期的なマスター 予定表アイテムに更新される場合、予定表アイテムの元のタイム ゾーンを保持するには [、MeetingTimeZone](meetingtimezone.md) プロパティを **UpdateItem** 操作で設定する必要があります。 
   
 ## <a name="setitemfield-request-example"></a>SetItemField 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の**updateitem**要求の例は、アイテムに対して [秘密度] プロパティを設定する方法を示しています。 
+UpdateItem 要求の次 **の例** は、アイテムの感度プロパティを設定する方法を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -81,9 +81,9 @@ ms.locfileid: "44459392"
 
 ### <a name="comments"></a>コメント
 
-読みやすくするために、アイテム識別子と変更キーが短縮されています。
+アイテム識別子と変更キーは、読みやすさを維持するために短縮されました。
   
-### <a name="setitemfield-request-elements"></a>SetItemField Request 要素
+### <a name="setitemfield-request-elements"></a>SetItemField 要求要素
 
 要求では、次の要素が使用されます。
   
@@ -107,9 +107,9 @@ ms.locfileid: "44459392"
     
 ## <a name="appendtoitemfield-request-example"></a>AppendToItemField 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の**updateitem**要求の例は、アイテムの body プロパティにテキストを追加する方法を示しています。 
+**UpdateItem** 要求の次の例は、アイテムの body プロパティにテキストを追加する方法を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -142,17 +142,17 @@ ms.locfileid: "44459392"
 
 ### <a name="comments"></a>コメント
 
-次のプロパティは、append アクションをサポートします。
+次のプロパティは、追加アクションをサポートします。
   
-- **メッセージ: ReplyTo**
+- **message:ReplyTo**
     
-- **アイテム: 本文**
+- **item:Body**
     
-- すべての受信者と出席者のコレクションのプロパティ
+- すべての受信者および出席者コレクションのプロパティ
     
-読みやすくするために、アイテム識別子と変更キーが短縮されています。
+アイテム識別子と変更キーは、読みやすさを維持するために短縮されました。
   
-### <a name="appendtoitemfield-request-elements"></a>AppendToItemField Request 要素
+### <a name="appendtoitemfield-request-elements"></a>AppendToItemField 要求要素
 
 要求では、次の要素が使用されます。
   
@@ -176,9 +176,9 @@ ms.locfileid: "44459392"
     
 ## <a name="deleteitemfield-request-example"></a>DeleteItemField 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の**updateitem**要求の例は、アイテムのプロパティを削除する方法を示しています。 
+**UpdateItem** 要求の次の例は、アイテムのプロパティを削除する方法を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -207,7 +207,7 @@ ms.locfileid: "44459392"
 
 ### <a name="comments"></a>コメント
 
-読みやすくするために、アイテム識別子と変更キーが短縮されています。
+アイテム識別子と変更キーは、読みやすさを維持するために短縮されました。
   
 ### <a name="deleteitemfield-request-elements"></a>DeleteItemField 要求要素
 
@@ -229,9 +229,9 @@ ms.locfileid: "44459392"
     
 ## <a name="successful-response-example"></a>成功した応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **Updateitem**要求に対する正常な応答を示しています。 
+次の例は、UpdateItem 要求に対する正常な **応答を示** しています。 
   
 ### <a name="code"></a>コード
 
@@ -265,7 +265,7 @@ ms.locfileid: "44459392"
 
 ### <a name="comments"></a>コメント
 
-読みやすくするために、アイテム識別子と変更キーが短縮されています。
+アイテム識別子と変更キーは、読みやすさを維持するために短縮されました。
   
 ### <a name="successful-response-elements"></a>成功した応答要素
 
@@ -296,7 +296,7 @@ ms.locfileid: "44459392"
 [UpdateItem 操作 (連絡先)](updateitem-operation-contact.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 
 
 [連絡先の更新](https://msdn.microsoft.com/library/9a865953-b94a-4229-b632-2dee433314be%28Office.15%29.aspx)

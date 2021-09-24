@@ -1,26 +1,26 @@
 ---
-title: 自動検出 (POX)
+title: AutoDiscover (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 611fcf5f-780a-42ea-bccb-9462a2f0c095
-description: 自動検出要素は、自動検出要求または応答のルート要素です。
-ms.openlocfilehash: 6fc889dc700a9fb068949d3ba5e4e6907b839f3c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: AutoDiscover 要素は、自動検出要求または応答のルート要素です。
+ms.openlocfilehash: 923f514b49ace6a9bb39cdd87099f7b391ec2604
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527433"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514887"
 ---
-# <a name="autodiscover-pox"></a>自動検出 (POX)
+# <a name="autodiscover-pox"></a>AutoDiscover (POX)
 
-**自動**検出要素は、自動検出要求または応答のルート要素です。 
+**AutoDiscover 要素** は、自動検出要求または応答のルート要素です。 
   
-- [自動検出 (POX)](autodiscover-pox.md)
+- [AutoDiscover (POX)](autodiscover-pox.md)
   
 ```xml
  <Autodiscover>
@@ -46,8 +46,8 @@ ms.locfileid: "44527433"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[要求 (POX)](request-pox.md) <br/> |自動検出サービスへの要求を含みます。  <br/> |
-|[応答 (POX)](response-pox.md) <br/> |自動検出サービスからの応答を含みます。  <br/> |
+|[Request (POX)](request-pox.md) <br/> |自動検出サービスへの要求が含まれる。  <br/> |
+|[Response (POX)](response-pox.md) <br/> |自動検出サービスからの応答を格納します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -55,5 +55,5 @@ ms.locfileid: "44527433"
   
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+- [POX 自動検出 XML 要素のExchange](pox-autodiscover-xml-elements-for-exchange.md)
 

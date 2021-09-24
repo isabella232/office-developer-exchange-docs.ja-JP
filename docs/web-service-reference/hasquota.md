@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - HasQuota
 api_type:
 - schema
 ms.assetid: b6e4fef0-92a9-415f-81ae-0c5ecb7c12ad
-description: HasQuota 要素は、管理フォルダーにクォータがあるかどうかを示します。
-ms.openlocfilehash: 6e32aa4c69943774be928339936cca5016c58d85
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: HasQuota 要素は、管理フォルダーにクォータが設定されているかどうかを示します。
+ms.openlocfilehash: 86192ac5dd8d7e88531aaf9c3f165f01831436c1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462753"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539662"
 ---
 # <a name="hasquota"></a>HasQuota
 
-**Hasquota**要素は、管理フォルダーにクォータがあるかどうかを示します。 
+**HasQuota 要素** は、管理フォルダーにクォータが設定されているかどうかを示します。 
   
 ```xml
 <HasQuota/>
@@ -44,28 +44,28 @@ ms.locfileid: "44462753"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ManagedFolderInformation](managedfolderinformation.md) <br/> |管理フォルダーに関する情報を格納します。  <br/> |
+|[ManagedFolderInformation](managedfolderinformation.md) <br/> |管理フォルダーに関する情報が含まれる。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、ブール値を表します。 値が**true の場合**は、フォルダーにクォータがあることを示します。値が**false**の場合は、フォルダーにクォータがないことを示します。 
+テキスト値はブール値を表します。 値が **true の場合** は、フォルダーにクォータが設定されています。false の **値は** 、フォルダーにクォータが設定されていないかどうかを示します。 
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

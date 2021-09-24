@@ -4,26 +4,26 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 2b4af2b2-58b5-4f28-9cb3-c07a11377747
 description: DomainName 要素は、ユーザーのドメインを指定します。
-ms.openlocfilehash: ff38d6a876e396317dedece0a81a9f9f0db0f587
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 9242c867d684bf9803f8c6ed1082d578cca05505
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458426"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59526434"
 ---
 # <a name="domainname-pox"></a>DomainName (POX)
 
-**DomainName**要素は、ユーザーのドメインを指定します。 
+**DomainName 要素** は、ユーザーのドメインを指定します。 
   
-- [自動検出 (POX)](autodiscover-pox.md)  
-- [応答 (POX)](response-pox.md)  
-- [アカウント (POX)](account-pox.md) 
-- [プロトコル (POX)](protocol-pox.md) 
+- [AutoDiscover (POX)](autodiscover-pox.md)  
+- [Response (POX)](response-pox.md)  
+- [Account (POX)](account-pox.md) 
+- [Protocol (POX)](protocol-pox.md) 
 - [DomainName (POX)](domainname-pox.md)
   
 ```xml
@@ -46,17 +46,17 @@ ms.locfileid: "44458426"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
+|[Protocol (POX)](protocol-pox.md) <br/> |クライアント アクセス サーバーの役割がインストールされている 2007 年Microsoft Exchange Serverコンピューターにクライアントを接続するための仕様が含まれている。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-Text 値は、ユーザーのドメインを指定します。
+テキスト値は、ユーザーのドメインを指定します。
   
 ## <a name="remarks"></a>注釈
 
-値が指定されていない場合、既定の認証では電子メールアドレスがユーザープリンシパル名 (UPN) 形式として使用されます。 次に例を示します \<Username\> @ \<Domain\> 。
+値を指定しない場合、既定の認証では、電子メール アドレスをユーザー プリンシパル名 (UPN) 形式として使用します。 たとえば、次の \<Username\> @ \<Domain\> 例を示します。
   
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+- [POX 自動検出 XML 要素のExchange](pox-autodiscover-xml-elements-for-exchange.md)
 

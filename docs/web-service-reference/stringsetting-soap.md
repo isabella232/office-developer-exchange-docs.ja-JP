@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: bf7096d8-42d4-4bf5-bbdd-851af2754000
-description: StringSetting 要素は、string 型の値を設定するユーザーを表します。
-ms.openlocfilehash: 215d1187c0968577e894c9f9cddea050789697b9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: StringSetting 要素は、文字列型の値を設定するユーザーを表します。
+ms.openlocfilehash: 16a59475c82a4088421f5916f1416ab91e7d78d6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463077"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540392"
 ---
 # <a name="stringsetting-soap"></a>StringSetting (SOAP)
 
-**Stringsetting**要素は、string 型の値を設定するユーザーを表します。 
+**StringSetting 要素は**、文字列型の値を設定するユーザーを表します。 
   
 ```XML
 <StringSetting>
@@ -40,8 +40,8 @@ ms.locfileid: "44463077"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Name (SOAP)](name-soap.md) <br/> |ユーザー設定の名前を表します。  <br/> |
-|[Value (SOAP)](value-soap.md) <br/> |ユーザー設定の値を表します。  <br/> |
+|[Name (SOAP)](name-soap.md) <br/> |ユーザー設定名を表します。  <br/> |
+|[Value (SOAP)](value-soap.md) <br/> |ユーザーの設定値を表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -53,7 +53,7 @@ ms.locfileid: "44463077"
   
 ## <a name="remarks"></a>注釈
 
-**Stringsetting**型は、 **usersetting**型を拡張します。 
+**StringSetting 型** は **、UserSetting 型を拡張** します。 
   
 ## <a name="element-information"></a>要素の情報
 
@@ -61,8 +61,8 @@ ms.locfileid: "44463077"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

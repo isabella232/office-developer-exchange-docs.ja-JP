@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0f7b3507-713d-4ccf-8518-75fa6f967d6d
 description: CreateFolderPathResponseMessage 要素は、CreateFolderPath 要求の応答メッセージを指定します。
-ms.openlocfilehash: 3c0c4e98b568a6398dcd0e71a6e6931a3f47e3da
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: ca2640ca18421260c0398c276c81f023664216ef
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458888"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59526523"
 ---
 # <a name="createfolderpathresponsemessage"></a>CreateFolderPathResponseMessage
 
-**CreateFolderPathResponseMessage**要素は、 **createfolderpath**要求の応答メッセージを指定します。 
+**CreateFolderPathResponseMessage** 要素は **、CreateFolderPath 要求の応答メッセージを指定** します。 
   
 ```XML
 <CreateFolderPathResponseMessage ResponseClass="">
@@ -52,17 +52,17 @@ ms.locfileid: "44458888"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[フォルダー](folders-ex15websvcsotherref.md) <br/> |Folder 操作で使用されるフォルダーの配列が含まれています。  <br/> |
-|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在未使用で、今後の使用のために予約されています。  <br/> |
-|[MessageText](messagetext.md) <br/> |応答の状態を説明するテキストを提供します。  <br/> |
-|[MessageXml](messagexml.md) <br/> |エラー応答に関する追加情報を提供します。  <br/> |
+|[フォルダー](folders-ex15websvcsotherref.md) <br/> |フォルダー操作で使用されるフォルダーの配列を格納します。  <br/> |
+|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在未使用で、将来の使用のために予約されています。  <br/> |
+|[MessageText](messagetext.md) <br/> |応答の状態のテキストの説明を提供します。  <br/> |
+|[MessageXml](messagexml.md) <br/> |追加のエラー応答情報を提供します。  <br/> |
 |[ResponseCode](responsecode.md) <br/> |要求に関する状態情報を提供します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Exchange Web サービス要求に対する応答メッセージを含みます。  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Web サービス要求の応答メッセージExchange含まれます。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -75,11 +75,11 @@ ms.locfileid: "44458888"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

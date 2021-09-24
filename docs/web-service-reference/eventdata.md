@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - EventData
 api_type:
 - schema
 ms.assetid: 74acdbad-d6ee-47e6-82fb-e45ecaaa0500
-description: EventData 要素は、イベントの処理手順に関連付けられているデータを表します。
-ms.openlocfilehash: ef5da21a3300a6939c60d62584b46ca48b071853
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: EventData 要素は、イベントの処理ステップに関連付けられたデータを表します。
+ms.openlocfilehash: 68225076f07b4c9d79e5f4fbc1460b74732fd9d6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526180"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514677"
 ---
 # <a name="eventdata"></a>EventData
 
-**EventData**要素は、イベントの処理手順に関連付けられているデータを表します。 
+**EventData 要素は**、イベントの処理ステップに関連付けられたデータを表します。 
   
 ```XML
 <EventData>
@@ -42,13 +42,13 @@ ms.locfileid: "44526180"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[String](string.md) <br/> |イベントを識別する文字列を格納します。  <br/> |
+|[String](string.md) <br/> |イベントを識別する文字列が含まれます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[受信者 Trackingイベント](recipienttrackingevent.md) <br/> |受信者に対する1つのイベントに関する情報が含まれています。  <br/> |
+|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |受信者の 1 つのイベントの情報を格納します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -63,13 +63,13 @@ ms.locfileid: "44526180"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fc2ca69e-eea7-4334-b046-ec0b04d8f8c6
-description: InstallApp 要素は、アプリをインストールする要求を指定します。
-ms.openlocfilehash: 003a72507813677484b2d6ee75f8ff577df169e3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: InstallApp 要素は、アプリのインストール要求を指定します。
+ms.openlocfilehash: 518dbfcbe452b9d31f47e9f94b8a42a0883165fe
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468006"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539585"
 ---
 # <a name="installapp"></a>InstallApp
 
-**Installapp**要素は、アプリをインストールする要求を指定します。 
+**InstallApp 要素** は、アプリのインストール要求を指定します。 
   
 ```XML
 <InstallApp>
@@ -38,7 +38,7 @@ ms.locfileid: "44468006"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[マニフェスト](manifest.md) <br/> |Base64 でエンコードされたアプリマニフェストファイルが保存されています。  <br/> |
+|[マニフェスト](manifest.md) <br/> |base64 エンコードされたアプリ マニフェスト ファイルが含まれます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -55,13 +55,13 @@ ms.locfileid: "44468006"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

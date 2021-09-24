@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - TotalWork
 api_type:
 - schema
 ms.assetid: 1348ffab-bd19-48fc-90dc-fd35e7031700
-description: TotalWork 要素には、タスクに関連付けられている作業量の説明が含まれています。
-ms.openlocfilehash: 39abd8c670cd8365198d7ebb7b25b865ab8d5188
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: TotalWork 要素には、タスクに関連付けられている作業時間の説明が含まれる。
+ms.openlocfilehash: 55dc2a3f27c52f0a4b33043a2e279faffcb0bdd5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467502"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515119"
 ---
 # <a name="totalwork"></a>TotalWork
 
-**Totalwork**要素には、タスクに関連付けられている作業量の説明が含まれています。 
+**TotalWork 要素には**、タスクに関連付けられている作業時間の説明が含まれる。 
   
 ```xml
 <TotalWork/>
@@ -44,30 +44,30 @@ ms.locfileid: "44467502"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[タスク](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
+|[タスク](task.md) <br/> |ストア内のタスクをExchangeします。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-Text 値は、タスクに関連付けられている作業時間の合計を表す整数に対応しています。
+テキスト値は、タスクに関連付けられた作業の合計量を表す整数に対応します。
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 
 
 [タスクの作成](https://msdn.microsoft.com/library/0ef97334-e8a0-4f67-a23a-dd9e2bbad49f%28Office.15%29.aspx)

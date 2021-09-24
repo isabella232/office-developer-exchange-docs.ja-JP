@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 37f0c542-7e4c-41b6-8629-537ef11b610b
-description: Base64Binary 要素には、Base64 でエンコードされた値が含まれています。
-ms.openlocfilehash: e3ccda98d23b05349a27711b5bff6b68744c9269
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Base64Binary 要素には、Base64 でエンコードされた値が含まれる。
+ms.openlocfilehash: 91957f199ab7c5e07899299a90292a7b44ea5793
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458055"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516112"
 ---
 # <a name="base64binary"></a>Base64Binary
 
-**Base64Binary**要素には、Base64 でエンコードされた値が含まれています。 
+**Base64Binary 要素** には、Base64 でエンコードされた値が含まれる。 
   
 ```XML
 <Base64Binary/>
@@ -40,8 +40,8 @@ ms.locfileid: "44458055"
 
 |**要素名**|**説明**|
 |:-----|:-----|
-|[UserSMIMECertificate](usersmimecertificate.md) <br/> |連絡先の SMIME 証明書をエンコードする値を格納します。  <br/> |
-|[MSExchangeCertificate](msexchangecertificate.md) <br/> |連絡先の Microsoft Exchange 証明書をエンコードする値を格納します。  <br/> |
+|[UserSMIMECertificate](usersmimecertificate.md) <br/> |連絡先の SMIME 証明書をエンコードする値を含んでいます。  <br/> |
+|[MSExchangeCertificate](msexchangecertificate.md) <br/> |連絡先の Microsoft 証明書をエンコードExchange値を含む。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -58,15 +58,15 @@ ms.locfileid: "44458055"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 
 
 [連絡先の作成 (Exchange Web サービス)](https://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)

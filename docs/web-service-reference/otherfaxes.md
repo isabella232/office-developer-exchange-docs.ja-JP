@@ -1,23 +1,23 @@
 ---
-title: その他の Fax
+title: OtherFaxes
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 74d97d4a-e452-4d2e-9cd2-89e93d766fb0
-description: OtherFaxes 要素は、fax 電話番号の値の配列と、関連付けられたペルソナのソース attributions の識別子を指定します。
-ms.openlocfilehash: 1298f5c8d20447b31a9800be5b960a5bd96fb44b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: OtherFaxes 要素は、FAX 電話番号の値の配列と、関連付けられたペルサのソース属性の識別子を指定します。
+ms.openlocfilehash: 0e7b6f3fb6185b9b1cf1c496db2cbc3e0b7e17cd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462361"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514159"
 ---
-# <a name="otherfaxes"></a>その他の Fax
+# <a name="otherfaxes"></a>OtherFaxes
 
-**Otherfaxes**要素は、fax 電話番号の値の配列と、関連付けられたペルソナのソース attributions の識別子を指定します。 
+**OtherFaxes 要素** は、FAX 電話番号の値の配列と、関連付けられたペルサのソース属性の識別子を指定します。 
   
 ```XML
 <OtherFaxes>
@@ -54,8 +54,8 @@ ms.locfileid: "44462361"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

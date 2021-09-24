@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: da064035-17e1-4945-8f40-1b241040ce01
-description: OtherAddresses 要素は、アドレス値の配列と、関連付けられているペルソナのソース attributions の識別子を指定します。
-ms.openlocfilehash: 9c5c7f81ab7dcf4c70576b2e6baf9ad6b9711c00
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: OtherAddresses 要素は、アドレス値の配列と、関連付けられたペルサのソース属性の識別子を指定します。
+ms.openlocfilehash: 1426d397c12cd4b57284757ec13deb61e69374e0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467684"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514173"
 ---
 # <a name="otheraddresses"></a>OtherAddresses
 
-**Otheraddresses**要素は、アドレス値の配列と、関連付けられているペルソナのソース attributions の識別子を指定します。 
+**OtherAddresses 要素** は、アドレス値の配列と、関連付けられたペルサのソース属性の識別子を指定します。 
   
 ```XML
 <OtherAddresses>
@@ -53,8 +53,8 @@ ms.locfileid: "44467684"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0e3f13cc-e3b3-4eea-9128-12c98b5197f4
-description: UninstallAppResponse 要素は、アン Installapp 要求への応答を指定します。
-ms.openlocfilehash: 12d74669aed0c380e32dd568bb99b88c30fdb22d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: UninstallAppResponse 要素は、UninstallApp 要求に対する応答を指定します。
+ms.openlocfilehash: 566ae5e4669373f167f8be6bf7ad8b257968e272
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459455"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514089"
 ---
 # <a name="uninstallappresponse"></a>UninstallAppResponse
 
-**UninstallAppResponse**要素は、**アン installapp**要求への応答を指定します。 
+**UninstallAppResponse** 要素は、UninstallApp 要求に対する **応答を指定** します。 
   
 ```XML
 <UninstallAppResponse>
@@ -39,7 +39,7 @@ ms.locfileid: "44459455"
   
 ### <a name="child-elements"></a>子要素
 
-[MessageXml](messagexml.md)  | 応答[Secmode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)
+[MessageXml](messagexml.md)  | [ResponseCode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -56,8 +56,8 @@ ms.locfileid: "44459455"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

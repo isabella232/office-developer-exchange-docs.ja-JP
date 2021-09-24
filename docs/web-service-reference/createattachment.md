@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateAttachment
 api_type:
 - schema
 ms.assetid: e33b403a-b7d3-48ee-8d24-6b7abf0d70bc
-description: CreateAttachment 要素は、Exchange ストア内のアイテムに添付ファイルを作成するための要求を定義します。
-ms.openlocfilehash: 4cba1b8865dae5da58b9617b249a29314c67331a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: CreateAttachment 要素は、カスタム ストア内のアイテムへの添付ファイルを作成する要求をExchangeします。
+ms.openlocfilehash: 6716a83b0d1ba9d7f39351da60f7009df04a3fa0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466438"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515874"
 ---
 # <a name="createattachment"></a>CreateAttachment
 
-**Createattachment**要素は、Exchange ストア内のアイテムに添付ファイルを作成するための要求を定義します。 
+**CreateAttachment 要素** は、カスタム ストア内のアイテムへの添付ファイルを作成する要求をExchangeします。 
   
 ```xml
 <CreateAttachment>
@@ -43,8 +43,8 @@ ms.locfileid: "44466438"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ParentItemId](parentitemid.md) <br/> |作成された添付ファイルを含む親 Exchange ストアアイテムを識別します。 [Parentitemid](parentitemid.md)要素は、実際の Exchange ストアアイテムの ID を提供する必要があります。 実際のストアアイテムは、 [GetItem 操作](getitem-operation.md)を使用して取得できます。添付ファイルは、 [Getattachment 操作](getattachment-operation.md)を使用して取得されます。 [Parentitemid](parentitemid.md)に添付ファイルの id が渡されると、エラーが発生します。 [Parentitemid](parentitemid.md)が既存のアイテムの添付ファイルの id を表す場合、 [createattachment 操作](createattachment-operation.md)は既存の添付ファイルに新しい添付ファイルを追加します。  <br/> この要素は、 [Createattachment 操作](createattachment-operation.md)に必要です。  <br/> |
-|[Attachments](attachments-ex15websvcsotherref.md) <br/> |Exchange ストア内のアイテムに添付するアイテムまたはファイルが保存されています。  <br/> |
+|[ParentItemId](parentitemid.md) <br/> |作成された添付ファイルExchange含むストア アイテムの親オブジェクトを識別します。 [ParentItemId 要素は](parentitemid.md)、実際のストア アイテムの ID をExchange必要があります。 GetItem 操作を使用して、実際のストア アイテム [を取得できます](getitem-operation.md)。添付ファイルは [GetAttachment 操作を使用して取得されます](getattachment-operation.md)。 [ParentItemId](parentitemid.md)に添付ファイルの ID が渡された場合、エラーが発生します。 [ParentItemId が既存](parentitemid.md)のアイテム添付ファイルの ID を表す場合[、CreateAttachment](createattachment-operation.md)操作は新しい添付ファイルを既存の添付ファイルに追加します。  <br/> この要素は [、CreateAttachment 操作に必要です](createattachment-operation.md)。  <br/> |
+|[添付ファイル](attachments-ex15websvcsotherref.md) <br/> |アイテム ストア内のアイテムに添付するアイテムまたはファイルExchangeします。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -52,11 +52,11 @@ ms.locfileid: "44466438"
   
 ## <a name="remarks"></a>注釈
 
-アイテムの添付ファイルは、ストアアイテムとして存在しません。 アイテムまたは他の添付ファイルの添付ファイルとしてのみ存在します。 アイテムの添付ファイルは、 [Getattachment](getattachment.md)要求を使用してのみ取得できます。 
+アイテムの添付ファイルは、ストア アイテムとして存在しません。 アイテムまたは別の添付ファイルへの添付ファイルとしてのみ存在します。 アイテムの添付ファイルは [、GetAttachment](getattachment.md) 要求を使用してのみ取得できます。 
   
 次のアイテムの添付ファイルを作成できます。
   
-- 項目
+- アイテム
     
 - メッセージ
     
@@ -70,11 +70,11 @@ ms.locfileid: "44466438"
     
 - MeetingRequest
     
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="example"></a>例
 
-次の例は、Exchange ストア内の別のアイテムにアイテムを作成して接続する方法を示しています。
+次の使用例は、アイテムを作成し、アイテムストア内の別のアイテムにExchangeします。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -106,9 +106,9 @@ ms.locfileid: "44466438"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

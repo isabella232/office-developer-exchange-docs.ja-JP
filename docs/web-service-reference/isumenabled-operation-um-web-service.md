@@ -1,32 +1,32 @@
 ---
-title: IsUMEnabled 操作 (UM web サービス)
+title: IsUMEnabled 操作 (UM Web サービス)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsUMEnabled
 api_type:
 - schema
 ms.assetid: fbe6cd95-f7a5-42b9-8a9d-b6159a269d55
-description: IsUMEnabled 操作は、メールボックスがユニファイドメッセージングに対して有効になっているかどうかを判断します。
-ms.openlocfilehash: b1478f5a113059251fe1b036ac7d77e5a4ab4f50
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: IsUMEnabled 操作は、メールボックスがユニファイド メッセージングに対して有効になっているかどうかを決定します。
+ms.openlocfilehash: 2c637711fc34a1d1ccc484b14be3199632aaaaa3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458237"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514460"
 ---
-# <a name="isumenabled-operation-um-web-service"></a>IsUMEnabled 操作 (UM web サービス)
+# <a name="isumenabled-operation-um-web-service"></a>IsUMEnabled 操作 (UM Web サービス)
 
-IsUMEnabled 操作は、メールボックスがユニファイドメッセージングに対して有効になっているかどうかを判断します。
+IsUMEnabled 操作は、メールボックスがユニファイド メッセージングに対して有効になっているかどうかを決定します。
   
 ## <a name="isumenabled-request-example"></a>IsUMEnabled 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の IsUMEnabled 要求の例は、メールボックスがユニファイドメッセージングに対して有効になっているかどうかを判断する要求を形成する方法を示しています。
+IsUMEnabled 要求の次の例は、ユニファイド メッセージングでメールボックスが有効かどうかを判断する要求を形成する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -39,9 +39,9 @@ IsUMEnabled 操作は、メールボックスがユニファイドメッセー�
 </soap:Envelope>
 ```
 
-## <a name="successful-isumenabled-response-example"></a>Successful IsUMEnabled response の例
+## <a name="successful-isumenabled-response-example"></a>成功した IsUMEnabled 応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
 次の例は、IsUMEnabled 要求に対する正常な応答を示しています。
   
@@ -62,10 +62,10 @@ IsUMEnabled 操作は、メールボックスがユニファイドメッセー�
 
 
 
-[IsUMEnabled (UM web サービス)](isumenabled-um-web-service.md)
+[IsUMEnabled (UM Web サービス)](isumenabled-um-web-service.md)
   
-[IsUMEnabledResponse (UM web サービス)](isumenabledresponse-um-web-service.md)
+[IsUMEnabledResponse (UM Web サービス)](isumenabledresponse-um-web-service.md)
 
 
-[Exchange 用のユニファイドメッセージング web サービスの XML 要素](unified-messaging-web-service-xml-elements-for-exchange.md)
+[ユニファイド メッセージング Web サービスの XML 要素 (Exchange](unified-messaging-web-service-xml-elements-for-exchange.md)
 

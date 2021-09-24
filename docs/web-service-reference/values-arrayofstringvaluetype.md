@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d7e7af1e-7917-40a3-9427-cd932f696222
-description: Values 要素は、attributions 配列に関連付けられたペルソナプロパティの配列内の値を指定します。
-ms.openlocfilehash: 8a7b12c69ec4221f4034dab8caa1514aea44b64b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Values 要素は、属性配列に関連付けられたペルシャ プロパティの配列内の値を指定します。
+ms.openlocfilehash: 15491e1423e724cd7a71a69271e3feb49e2a22c3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530924"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513921"
 ---
 # <a name="values-arrayofstringvaluetype"></a>Values (ArrayOfStringValueType)
 
-**Values**要素は、attributions 配列に関連付けられたペルソナプロパティの配列内の値を指定します。 
+**Values 要素** は、属性配列に関連付けられたペルシャ プロパティの配列内の値を指定します。 
   
 ```XML
 <Values>
@@ -37,7 +37,7 @@ ms.locfileid: "44530924"
   
 ### <a name="child-elements"></a>子要素
 
-[値 (ArrayOfStringValueType)](value-arrayofstringvaluetype.md)
+[Value (ArrayOfStringValueType)](value-arrayofstringvaluetype.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -54,8 +54,8 @@ ms.locfileid: "44530924"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

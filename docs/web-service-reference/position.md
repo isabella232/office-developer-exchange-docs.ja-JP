@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 46726ebb-a403-4793-8378-282aa7dc39d0
 description: Position 要素は、メッセージから抽出されたエンティティの位置を指定します。
-ms.openlocfilehash: 9acd965c3e0c29f3fa91df338c0671749192b38b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 6b4e7c12bbcf12b8804619caa508f5c2c0bc4eda
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465423"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515293"
 ---
 # <a name="position"></a>Position
 
-**Position**要素は、メッセージから抽出されたエンティティの位置を指定します。 
+**Position 要素** は、メッセージから抽出されたエンティティの位置を指定します。 
   
 ```XML
 <Position> LatestReply | Other | Subject | Signature </Position>
@@ -38,19 +38,19 @@ ms.locfileid: "44465423"
   
 ### <a name="parent-elements"></a>親要素
 
-[Urlentity](urlentity.md)  | [Addressentity](addressentity.md)  | [Emailaddressentity](emailaddressentity.md)  | [会議の提案](meetingsuggestion.md)  | [Contact (ContactType)](contact-contacttype.md)  | [Phone (通し entitytype)](phone-phoneentitytype.md)  | [Tasksuggestion](tasksuggestion.md)
+[UrlEntity](urlentity.md)  | [AddressEntity](addressentity.md)  | [EmailAddressEntity](emailaddressentity.md)  | [MeetingSuggestion](meetingsuggestion.md)  | [連絡先 (ContactType)](contact-contacttype.md)  | [電話 (PhoneEntityType)](phone-phoneentitytype.md)  | [TaskSuggestion](tasksuggestion.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**Position**要素のテキスト値は、抽出されたエンティティがソースメッセージ内で発生した場所です。 **Position**要素のテキスト値は次のとおりです。 
+Position 要素のテキスト **値** は、抽出されたエンティティがソース メッセージで発生した場所です。 **Position** 要素のテキスト値は次のとおりです。 
   
-- **LatestReply** -抽出されたエンティティは、メッセージに対する最新の返信から発信されます。 
+- **LatestReply** - 抽出されたエンティティは、メッセージに対する最新の返信から発生します。 
     
-- **その他**-抽出されたエンティティは、メッセージの未定義の部分から生成されます。 
+- **その** 他 - 抽出されたエンティティは、メッセージの未定義の部分から発生します。 
     
-- **Subject** -抽出されたエンティティは、メッセージの件名から発信されます。 
+- **Subject** - 抽出されたエンティティは、メッセージの件名から発生します。 
     
-- **Signature** -抽出されたエンティティは、メッセージの署名から発信されます。 
+- **Signature** - 抽出されたエンティティは、メッセージ署名から発生します。 
     
 ## <a name="remarks"></a>注釈
 
@@ -63,8 +63,8 @@ ms.locfileid: "44465423"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

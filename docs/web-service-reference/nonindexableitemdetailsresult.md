@@ -1,23 +1,23 @@
 ---
-title: Nonindexableitemの取得結果
+title: NonIndexableItemDetailsResult
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7cbdbc21-5405-4cbc-8ca0-d7b0257927aa
-description: Nonindexableitem詳細 Result 要素は、GetNonIndexableItemDetails WSDL 操作の結果を指定します。
-ms.openlocfilehash: 647f58b5e7285af70bbfb3a203ba71c9a3ccebcc
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: NonIndexableItemDetailsResult 要素は、GetNonIndexableItemDetails WSDL 操作の結果を指定します。
+ms.openlocfilehash: 16f3c8a74f635fdd8204fe207777b4b30bc4d2ed
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465444"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539283"
 ---
-# <a name="nonindexableitemdetailsresult"></a>Nonindexableitemの取得結果
+# <a name="nonindexableitemdetailsresult"></a>NonIndexableItemDetailsResult
 
-**Nonindexableitem詳細 result**要素は、 **getnonindexableitemdetails** WSDL 操作の結果を指定します。 
+**NonIndexableItemDetailsResult** 要素は **、GetNonIndexableItemDetails** WSDL 操作の結果を指定します。 
   
 ```XML
 <NonIndexableItemDetailsResult>
@@ -26,7 +26,7 @@ ms.locfileid: "44465444"
 </NonIndexableItemDetailsResult>
 ```
 
- **Nonindexableitemの Resulttype**
+ **NonIndexableItemDetailResultType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -37,11 +37,11 @@ ms.locfileid: "44465444"
   
 ### <a name="child-elements"></a>子要素
 
-[アイテム (ArrayOfNonIndexableItemDetailsType)](items-arrayofnonindexableitemdetailstype.md) 、[失敗したメールボックス](failedmailboxes.md)
+[アイテム (ArrayOfNonIndexableItemDetailsType)](items-arrayofnonindexableitemdetailstype.md) [、FailedMailboxes](failedmailboxes.md)
   
 ### <a name="parent-elements"></a>親要素
 
-[GetnonindexableitemGetNonIndexableItemDetailsResponseMessage の応答](getnonindexableitemdetailsresponse.md)、 [GetNonIndexableItemDetailsResponseMessage](getnonindexableitemdetailsresponsemessage.md)
+[GetNonIndexableItemDetailsResponse](getnonindexableitemdetailsresponse.md) 、 [GetNonIndexableItemDetailsResponseMessage](getnonindexableitemdetailsresponsemessage.md)
   
 ## <a name="remarks"></a>注釈
 
@@ -54,9 +54,9 @@ ms.locfileid: "44465444"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -65,5 +65,5 @@ ms.locfileid: "44465444"
 [GetNonIndexableItemDetails 操作](getnonindexableitemdetails-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -1,23 +1,23 @@
 ---
-title: メールボックス (文字列)
+title: Mailbox (string)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 15a1758e-6a5c-4e85-acb9-374abe81b9c7
-description: Mailbox 要素には、メールボックスの識別子が含まれています。
-ms.openlocfilehash: 3a115f40360aebfdb818580464c08e61a527ac55
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Mailbox 要素には、メールボックスの識別子が含まれる。
+ms.openlocfilehash: 750bd6531e8f6472eca77b256e1320bc0230b25d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467278"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514278"
 ---
-# <a name="mailbox-string"></a>メールボックス (文字列)
+# <a name="mailbox-string"></a>Mailbox (string)
 
-**Mailbox**要素には、メールボックスの識別子が含まれています。 
+**Mailbox 要素** には、メールボックスの識別子が含まれる。 
   
 ```XML
 <Mailbox></Mailbox>
@@ -39,11 +39,11 @@ ms.locfileid: "44467278"
   
 ### <a name="parent-elements"></a>親要素
 
-[Nonindexableitemstatistic](nonindexableitemstatistic.md)  | [MailboxHoldStatus](mailboxholdstatus.md)  | [失敗したメールボックス](failedmailbox.md)  | [MailboxSearchScope](mailboxsearchscope.md)
+[NonIndexableItemStatistic](nonindexableitemstatistic.md)  | [MailboxHoldStatus](mailboxholdstatus.md)  | [FailedMailbox](failedmailbox.md)  | [MailboxSearchScope](mailboxsearchscope.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**Mailbox**要素のテキスト値は、メールボックスの識別子です。 
+Mailbox 要素のテキスト **値** は、メールボックスの識別子です。 
   
 ## <a name="remarks"></a>注釈
 

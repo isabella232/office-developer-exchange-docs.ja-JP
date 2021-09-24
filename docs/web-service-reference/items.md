@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Items
 api_type:
 - schema
 ms.assetid: 0811a73e-bf1f-4889-9219-73902dd47639
-description: Items 要素には、項目の配列が含まれています。
-ms.openlocfilehash: 489e34ad0e4bcc2520febb3c213db970fa496051
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Items 要素には、アイテムの配列が含まれています。
+ms.openlocfilehash: b6e9db6524640098a902f431393fccd6bd4e8868
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458132"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540888"
 ---
 # <a name="items"></a>アイテム
 
-**Items**要素には、項目の配列が含まれています。 
+**Items 要素** には、アイテムの配列が含まれています。 
   
 ```xml
 <Items>
@@ -52,46 +52,46 @@ ms.locfileid: "44458132"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Item](item.md) <br/> |Exchange ストア内のアイテムを表します。  <br/> |
-|[Message](message-ex15websvcsotherref.md) <br/> |Exchange 電子メールメッセージを表します。  <br/> |
-|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
-|[Contact](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
+|[Item](item.md) <br/> |ストア内のアイテムをExchangeします。  <br/> |
+|[Message](message-ex15websvcsotherref.md) <br/> |電子メール メッセージExchangeを表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |予定表アイテムのExchangeを表します。  <br/> |
+|[Contact](contact.md) <br/> |連絡先アイテムExchangeを表します。  <br/> |
 |[DistributionList](distributionlist.md) <br/> |配布リストを表します。  <br/> |
-|[MeetingMessage](meetingmessage.md) <br/> |Exchange ストア内の会議メッセージを表します。  <br/> |
-|[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議出席依頼を表します。  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |Exchange ストア内の会議の応答を表します。  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |Exchange ストア内の会議の取り消しを表します。  <br/> |
-|[タスク](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
-|[PostItem](postitem.md) <br/> |Exchange ストア内の投稿アイテムを表します。  <br/> |
+|[MeetingMessage](meetingmessage.md) <br/> |会議ストア内の会議メッセージExchangeします。  <br/> |
+|[MeetingRequest](meetingrequest.md) <br/> |ユーザー ストア内の会議出席依頼Exchangeします。  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |会議ストアの会議の応答Exchangeします。  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |会議ストアでの会議の取り消しExchangeします。  <br/> |
+|[タスク](task.md) <br/> |ストア内のタスクをExchangeします。  <br/> |
+|[PostItem](postitem.md) <br/> |ストア内の投稿アイテムをExchangeします。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[CopyItemResponseMessage](copyitemresponsemessage.md) <br/> |[Copyitem 操作](copyitem-operation.md)要求の状態と結果を格納します。  <br/> |
-|[CreateItemResponseMessage](createitemresponsemessage.md) <br/> |単一の[CreateItem 操作](createitem-operation.md)要求の状態と結果を格納します。  <br/> |
-|[GetItemResponseMessage](getitemresponsemessage.md) <br/> |[GetItem 操作](getitem-operation.md)要求の状態と結果を格納します。  <br/> |
-|[GroupedItems](groupeditems.md) <br/> |グループ化された[FindItem 操作](finditem-operation.md)呼び出しの結果であるアイテムのコレクションを表します。  <br/> |
-|[MoveItemResponseMessage](moveitemresponsemessage.md) <br/> |[Moveitem 操作](moveitem-operation.md)要求の状態と結果を格納します。  <br/> |
-|[RootFolder (FindItemResponseMessage)](rootfolder-finditemresponsemessage.md) <br/> |[FindItem 操作](finditem-operation.md)中の1つのルートフォルダの検索結果を格納します。  <br/> |
-|[UpdateItemResponseMessage](updateitemresponsemessage.md) <br/> |[Updateitem 操作](updateitem-operation.md)要求の状態と結果を格納します。  <br/> |
+|[CopyItemResponseMessage](copyitemresponsemessage.md) <br/> |CopyItem 操作要求の状態と結果 [を格納](copyitem-operation.md) します。  <br/> |
+|[CreateItemResponseMessage](createitemresponsemessage.md) <br/> |1 つの CreateItem 操作要求の状態と [結果を格納](createitem-operation.md) します。  <br/> |
+|[GetItemResponseMessage](getitemresponsemessage.md) <br/> |GetItem 操作要求の状態と [結果を格納](getitem-operation.md) します。  <br/> |
+|[GroupedItems](groupeditems.md) <br/> |グループ化された FindItem 操作呼び出しの結果であるアイテムの [コレクションを表](finditem-operation.md) します。  <br/> |
+|[MoveItemResponseMessage](moveitemresponsemessage.md) <br/> |MoveItem 操作要求の状態と結果 [を格納](moveitem-operation.md) します。  <br/> |
+|[RootFolder (FindItemResponseMessage)](rootfolder-finditemresponsemessage.md) <br/> |FindItem 操作中に 1 つのルート フォルダーを検索した結果 [を格納します](finditem-operation.md)。  <br/> |
+|[UpdateItemResponseMessage](updateitemresponsemessage.md) <br/> |UpdateItem 操作要求の状態と [結果を格納](updateitem-operation.md) します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-[CreateItem 操作](createitem-operation.md)要求のアイテムセットの詳細については、「 [Items (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)」を参照してください。
+[CreateItem](createitem-operation.md)操作要求内のアイテムのセットの詳細については[、「Items (NonEmptyArrayOfAllItemsType)」を参照してください](items-nonemptyarrayofallitemstype.md)。
   
-[Message](message-ex15websvcsotherref.md)要素は、電子メールメッセージ、および Exchange Web サービス (EWS) スキーマで厳密に型指定されていないその他すべてのアイテムを表します。 IPM などのアイテム。共有と IPM. InfoPath は、**メッセージ**要素として返されます。 Exchange Server 2010 以降のバージョンの Exchange では、応答で基本[アイテム](item.md)要素は返されません。 
+[メッセージ](message-ex15websvcsotherref.md)要素は、電子メール メッセージと、Web サービス (EWS) スキーマによって強く入力されていない他のすべてのExchangeを表します。 IPM などのアイテム。共有と IPM.InfoPath は Message 要素として **返** されます。 2010 Exchangeから始まるExchange Serverのバージョンは、応答で[base Item](item.md)要素を返す必要があります。 
   
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Exchange を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされているコンピューター Exchange EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -99,5 +99,5 @@ ms.locfileid: "44458132"
 
 [Exchange 用 EWS リファレンス](ews-reference-for-exchange.md)
   
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

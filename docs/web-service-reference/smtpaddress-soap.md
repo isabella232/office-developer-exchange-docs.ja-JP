@@ -4,19 +4,19 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e833351c-4bd9-4937-8752-c743a7ce57ea
-description: SmtpAddress 要素は、代替メールボックス SMTP アドレスを表します。
-ms.openlocfilehash: 53238caef1287536de838f4167e8937c182b41b0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SmtpAddress 要素は、代替メールボックスの SMTP アドレスを表します。
+ms.openlocfilehash: 570dd2e76bd65546c2d407493c96fa0ad99b5658
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459014"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540427"
 ---
 # <a name="smtpaddress-soap"></a>SmtpAddress (SOAP)
 
-**Smtpaddress**要素は、代替メールボックス SMTP アドレスを表します。 
+**SmtpAddress 要素は**、代替メールボックスの SMTP アドレスを表します。 
   
 ```XML
 <SmtpAddress/>
@@ -44,7 +44,7 @@ ms.locfileid: "44459014"
    
 ## <a name="text-value"></a>テキスト値
 
-**Smtpaddress**要素のテキスト値は、代替メールボックスの SMTP 電子メールアドレスです。 
+**SmtpAddress** 要素のテキスト値は、代替メールボックスの SMTP 電子メール アドレスです。 
   
 ## <a name="element-information"></a>要素の情報
 
@@ -52,11 +52,11 @@ ms.locfileid: "44459014"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [Exchange 用自動検出 Web サービス リファレンス](autodiscover-web-service-reference-for-exchange.md)
-- [Exchange 2013 の SOAP 自動検出 XML 要素](soap-autodiscover-xml-elements-for-exchange-2013.md)
+- [SOAP 自動検出 XML 要素 (2013 Exchange)](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

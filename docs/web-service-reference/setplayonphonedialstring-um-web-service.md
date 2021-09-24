@@ -1,28 +1,28 @@
 ---
-title: SetPlayOnPhoneDialString (UM web サービス)
+title: SetPlayOnPhoneDialString (UM Web サービス)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SetPlayOnPhoneDialString
 api_type:
 - schema
 ms.assetid: 513a5072-c3ac-405f-98c2-0ab982d0a360
-description: SetPlayOnPhoneDialString 要素は、PlayOnPhone 操作 (UM web サービス) および Playonphone 案内応答操作 (UM web サービス) 要求の既定のダイヤル文字列を設定するための要求を定義します。
-ms.openlocfilehash: 40021e9dedafb5fafda91bf3612d8a6485dae8e7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SetPlayOnPhoneDialString 要素は、PlayOnPhone 操作 (UM Web サービス) および PlayOnPhoneGreeting 操作 (UM Web サービス) 要求の既定のダイヤル文字列を設定する要求を定義します。
+ms.openlocfilehash: e485fd092da29a3f54b1acc2b7e50167084e13fa
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458629"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540504"
 ---
-# <a name="setplayonphonedialstring-um-web-service"></a>SetPlayOnPhoneDialString (UM web サービス)
+# <a name="setplayonphonedialstring-um-web-service"></a>SetPlayOnPhoneDialString (UM Web サービス)
 
-**SetPlayOnPhoneDialString**要素は、 [playonphone 操作 (um web サービス)](playonphone-operation-um-web-service.md)および[playonphone 案内応答操作 (um web サービス)](playonphonegreeting-operation-um-web-service.md)要求の既定のダイヤル文字列を設定するための要求を定義します。 
+**SetPlayOnPhoneDialString** 要素は [、PlayOnPhone](playonphone-operation-um-web-service.md)操作 (UM Web サービス) および [PlayOnPhoneGreeting](playonphonegreeting-operation-um-web-service.md)操作 (UM Web サービス) 要求の既定のダイヤル文字列を設定する要求を定義します。 
   
-[SetPlayOnPhoneDialString (UM web サービス)](setplayonphonedialstring-um-web-service.md)
+[SetPlayOnPhoneDialString (UM Web サービス)](setplayonphonedialstring-um-web-service.md)
   
 ```xml
 <SetPlayOnPhoneDialString>
@@ -43,7 +43,7 @@ ms.locfileid: "44458629"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[[] (UM web サービス)](dialstring-um-web-service.md) <br/> |既定のダイヤル文字列として設定する電話番号です。  <br/> |
+|[dialString (UM Web サービス)](dialstring-um-web-service.md) <br/> |既定のダイヤル文字列として設定する電話番号。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -59,12 +59,12 @@ ms.locfileid: "44458629"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |スキーマ名  <br/> |メッセージ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[SetPlayOnPhoneDialString 操作 (UM web サービス)](setplayonphonedialstring-operation-um-web-service.md)
+[SetPlayOnPhoneDialString 操作 (UM Web サービス)](setplayonphonedialstring-operation-um-web-service.md)
 

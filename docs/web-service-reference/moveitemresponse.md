@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MoveItemResponse
 api_type:
 - schema
 ms.assetid: 77be5104-1e09-4d50-abec-4fadb3a230e5
-description: MoveItemResponse 要素は、MoveItem 要求に対する応答を定義します。
-ms.openlocfilehash: 1d7467fc1b0cb37392365c64c0e308a37171273b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MoveItemResponse 要素は、MoveItem 要求への応答を定義します。
+ms.openlocfilehash: fe26dbd463a7c152642291f92f6ff11af3984ccf
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466634"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539347"
 ---
 # <a name="moveitemresponse"></a>MoveItemResponse
 
-**Moveitemresponse**要素は、moveitem 要求に対する応答を定義します。 
+**MoveItemResponse 要素** は、MoveItem 要求への応答を定義します。 
   
 ```xml
 <MoveItemResponse>
@@ -42,7 +42,7 @@ ms.locfileid: "44466634"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Exchange Web サービス要求に対する応答メッセージを含みます。  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Web サービス要求の応答メッセージExchange含まれます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -50,15 +50,15 @@ ms.locfileid: "44466634"
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |いいえ  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 

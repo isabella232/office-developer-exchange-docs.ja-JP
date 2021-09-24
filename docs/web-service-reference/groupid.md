@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 656d9b9a-8a65-4a75-8466-5b0d96512dab
 description: GroupId 要素は、グループを一意に識別します。
-ms.openlocfilehash: 3b8de4d0fef95e2caff4db0d90bb303830022d36
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: c0261153a0c64a2e54c053597bd3fdc1466480da
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530093"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539669"
 ---
 # <a name="groupid"></a>GroupId
 
-**GroupId**要素は、グループを一意に識別します。 
+**GroupId 要素は**、グループを一意に識別します。 
   
 ```XML
 <GroupId Id="" ChangeKey=""/>
@@ -32,8 +32,8 @@ ms.locfileid: "44530093"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|ID  <br/> |**Id**属性のテキスト値は、グループの識別子です。  <br/> |
-|ChangeKey  <br/> |**Changekey**属性のテキスト値は、グループの変更キーです。  <br/> |
+|ID  <br/> |Id 属性のテキスト **値** は、グループの識別子です。  <br/> |
+|ChangeKey  <br/> |ChangeKey 属性の **テキスト値** は、グループの変更キーです。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -41,7 +41,7 @@ ms.locfileid: "44530093"
   
 ### <a name="parent-elements"></a>親要素
 
-[AddNewImContactToGroup](addnewimcontacttogroup.md)  | [AddNewTelUriContactToGroup](addnewteluricontacttogroup.md)  | [Addimcontacttogroup](addimcontacttogroup.md)  | [RemoveContactFromImList](removecontactfromimlist.md)  | [Removeimcontactfromgroup](removeimcontactfromgroup.md)  | [Removeimgroup](removeimgroup.md)  | [RemoveDistributionGroupFromImList](removedistributiongroupfromimlist.md)  | [Setimgroup](setimgroup.md)
+[AddNewImContactToGroup](addnewimcontacttogroup.md)  | [AddNewTelUriContactToGroup](addnewteluricontacttogroup.md)  | [AddImContactToGroup](addimcontacttogroup.md)  | [RemoveContactFromImList](removecontactfromimlist.md)  | [RemoveImContactFromGroup](removeimcontactfromgroup.md)  | [RemoveImGroup](removeimgroup.md)  | [RemoveDistributionGroupFromImList](removedistributiongroupfromimlist.md)  | [SetImGroup](setimgroup.md)
   
 ## <a name="remarks"></a>注釈
 
@@ -54,8 +54,8 @@ ms.locfileid: "44530093"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

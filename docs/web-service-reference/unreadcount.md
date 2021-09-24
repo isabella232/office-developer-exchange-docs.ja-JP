@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UnreadCount
 api_type:
 - schema
 ms.assetid: 53b22647-1453-4707-9ea0-6a8369748d56
-description: UnreadCount 要素には、フォルダー内の未読アイテムの数が含まれています。
-ms.openlocfilehash: 72e5d47eac7618408e46ad11eb19eaebf9835502
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: UnreadCount 要素には、フォルダー内の未読アイテムの数が含まれます。
+ms.openlocfilehash: b4be48eae8037f5bbffaa120e71024102e7a108f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467222"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515034"
 ---
 # <a name="unreadcount"></a>UnreadCount
 
-**UnreadCount**要素には、フォルダー内の未読アイテムの数が含まれています。 
+**UnreadCount** 要素には、フォルダー内の未読アイテムの数が含まれます。 
   
 ```XML
 <UnreadCount/>
 ```
 
- **xs: int**
+ **xs:int**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -44,15 +44,15 @@ ms.locfileid: "44467222"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[会話 (ConversationType)](conversation-conversationtype.md) <br/> |単一の会話を表します。  <br/> |
+|[Conversation (ConversationType)](conversation-conversationtype.md) <br/> |1 つの会話を表します。  <br/> |
 |[Folder](folder.md) <br/> |メールボックス内のフォルダーを表します。  <br/> |
-|[対する modifiedevent](modifiedevent.md) <br/> |アイテムまたはフォルダーが変更されるイベントを表します。  <br/> |
+|[ModifiedEvent](modifiedevent.md) <br/> |アイテムまたはフォルダーが変更されたイベントを表します。  <br/> |
 |[SearchFolder](searchfolder.md) <br/> |メールボックス内の検索フォルダーを表します。  <br/> |
-|[TasksFolder](tasksfolder.md) <br/> |メールボックス内のタスクフォルダーを表します。  <br/> |
+|[TasksFolder](tasksfolder.md) <br/> |メールボックス内のタスク フォルダーを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、整数値を表します。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。
+テキスト値は整数値を表します。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。
   
 ## <a name="remarks"></a>注釈
 
@@ -63,13 +63,13 @@ ms.locfileid: "44467222"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

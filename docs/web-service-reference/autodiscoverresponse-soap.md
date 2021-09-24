@@ -4,17 +4,17 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 203a5ac3-ebd0-4514-acbe-bc1c74638127
 description: AutodiscoverResponse (SOAP) 要素は、自動検出サービスによって返されるすべての応答の基本要素を表します。
-ms.openlocfilehash: 81fd557578bde9552d07e24386c93903e44a9afa
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 71bbb0f1aa6602a260c163ccfdfd3c3d38442e31
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463966"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514873"
 ---
 # <a name="autodiscoverresponse-soap"></a>AutodiscoverResponse (SOAP)
 
@@ -44,9 +44,9 @@ ms.locfileid: "44463966"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[UserResponses (SOAP)](userresponses-soap.md) <br/> |[Userresponse (SOAP)](userresponse-soap.md)要素のコレクションを表します。  <br/> |
-|[UserSettingErrors (SOAP)](usersettingerrors-soap.md) <br/> |[Usersettingerror (SOAP)](usersettingerror-soap.md)要素のコレクションを表します。  <br/> |
-|[UserSettings (SOAP)](usersettings-soap.md) <br/> |[Usersetting (SOAP)](usersetting-soap.md)要素のコレクションを表します。  <br/> |
+|[UserResponses (SOAP)](userresponses-soap.md) <br/> |[UserResponse (SOAP) 要素のコレクションを表](userresponse-soap.md)します。  <br/> |
+|[UserSettingErrors (SOAP)](usersettingerrors-soap.md) <br/> |[UserSettingError (SOAP) 要素のコレクションを表](usersettingerror-soap.md)します。  <br/> |
+|[UserSettings (SOAP)](usersettings-soap.md) <br/> |[UserSetting (SOAP) 要素のコレクションを表](usersetting-soap.md)します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -62,8 +62,8 @@ ms.locfileid: "44463966"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

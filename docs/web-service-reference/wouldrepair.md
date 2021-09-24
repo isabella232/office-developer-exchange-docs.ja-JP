@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b6987bac-7e16-4a6c-b5f7-ef0e99ff520b
-description: WouldRepair 要素は、内部使用のみを目的としています。
-ms.openlocfilehash: b32deddf4f92ac4973d642dd367f0d3704e9befe
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: WouldRepair 要素は内部での使用のみを目的とします。
+ms.openlocfilehash: ef3fef4c2fe8a5d726c742722c8a80e6ac304acd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466004"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514943"
 ---
 # <a name="wouldrepair"></a>WouldRepair
 
-**WouldRepair**要素は、内部使用のみを目的としています。 
+**WouldRepair 要素** は内部での使用のみを目的とします。 
 
 ## <a name="attributes-and-elements"></a>属性と要素
 
@@ -46,8 +46,8 @@ ms.locfileid: "44466004"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

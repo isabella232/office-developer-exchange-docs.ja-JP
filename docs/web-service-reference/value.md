@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Value
 api_type:
 - schema
 ms.assetid: 9a30cadd-909e-41b1-b4e9-291643dd89c6
-description: Value 要素には、拡張プロパティの値が含まれています。
-ms.openlocfilehash: 5de1528dda6d58ea772d050e709c0720e389fae6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Value 要素には、拡張プロパティの値が含まれる。
+ms.openlocfilehash: dc9d81a17896e730a5140a097574faa7619576d1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465213"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513949"
 ---
 # <a name="value"></a>値
 
-**Value**要素には、拡張プロパティの値が含まれています。 
+**Value 要素** には、拡張プロパティの値が含まれる。 
   
 ```xml
 <Value/>
@@ -50,24 +50,24 @@ ms.locfileid: "44465213"
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、ExtendedFieldURI の Recordtype 属性によって示される型と互換性がある必要があります。
+テキスト値は、ExtendedFieldURI の PropertyType 属性で示される型と互換性がある必要があります。
   
 ## <a name="remarks"></a>注釈
 
-**Value**要素は、単一および複数値の拡張プロパティインスタンスの両方で発生します。 単一値インスタンスの場合、これは[Extendedproperty](extendedproperty.md)要素の直接の子として存在します。 複数値インスタンスの場合、これは**Values**コレクションの直接の子として存在します。 
+Value **要素は** 、単一の拡張プロパティ インスタンスと複数値の拡張プロパティ インスタンスの両方で発生する可能性があります。 単一値のインスタンスの場合 [、ExtendedProperty](extendedproperty.md) 要素の直接の子として存在します。 複数値を持つインスタンスの場合、Values コレクションの直接の子として **存在** します。 
   
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

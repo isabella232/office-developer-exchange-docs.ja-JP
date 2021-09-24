@@ -5,44 +5,44 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c597bb0e-13b0-422e-9c23-970463e2a5c3
-description: PerformReminderAction EWS 操作についての情報を検索します。
-ms.openlocfilehash: 4c069d541e9a42167c447a50c405399958d3608d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: PerformReminderAction EWS 操作に関する情報を検索します。
+ms.openlocfilehash: ca547c401100afdfd9d846ca3bfddf710efd2797
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462291"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515307"
 ---
 # <a name="performreminderaction-operation"></a>PerformReminderAction 操作
 
-**PerformReminderAction** EWS 操作についての情報を検索します。 
+**PerformReminderAction** EWS 操作に関する情報を検索します。 
   
-**PerformReminderAction** Exchange Web サービス (EWS) の操作によって、アラームの [消去] または [再通知] アクションが開始されます。 
+**PerformReminderAction** Exchange Web サービス (EWS) 操作は、アラームに対して却下またはスヌーズアクションを開始します。 
   
 この操作は Exchange Server 2013 で導入されました。
   
 ## <a name="using-the-performreminderaction-operation"></a>PerformReminderAction 操作の使用
 
-**PerformReminderAction**操作を使用して、 [getreminders](getreminders-operation.md)操作によって返されるアラームを消去または再通知 (遅延) することができます。 アラームを再通知するには、「再**通知**」に「 [NewReminderTime](newremindertime.md) [」の値](actiontype-reminderactiontype.md)を設定し、現在の[ReminderTime](remindertime.md)より後の時刻に設定します。それ以外の場合は、 **NewReminderTime**はサーバーによって無視されます。 アラームが定期的な会議の発生を対象としていて、アラームに対して次の発生のアラームを過ぎている**NewReminderTime**を使用して再**通知**が行われる場合、アラームは実際には消去されます。 
+**PerformReminderAction** 操作を使用すると [、GetReminders](getreminders-operation.md)操作によって返されるアラームを却下またはスヌーズ (遅延) できます。 アラームをスヌーズするには [、ActionType](actiontype-reminderactiontype.md) を **Snooze** に設定し [、NewReminderTime](newremindertime.md) 値を現在の [ReminderTime](remindertime.md)より後の時刻に設定します。それ以外の場合 **、NewReminderTime** はサーバーによって無視されます。 アラームが定期的な会議の発生に対して行う場合、次回のアラームを過ぎた **NewReminderTime** を使用してアラームに対して **Snooze** アクションが実行された場合、アラームは効果的に却下されます。 
   
-アラームを消すには、 **ActionType**を [**消去**] に設定します。 サーバーは、要求を処理するときに、アイテムの[IsReminderSet](isreminderset.md)値を**True**から**False**に変更します。
+アラームを閉じするには **、ActionType を [閉じ]** に **設定します**。 サーバーが要求を処理すると、サーバーはアイテムの [IsReminderSet](isreminderset.md) 値を **True** から False に変更 **します**。
   
-### <a name="performreminderaction-operation-soap-headers"></a>PerformReminderAction 操作の SOAP ヘッダー
+### <a name="performreminderaction-operation-soap-headers"></a>PerformReminderAction 操作 SOAP ヘッダー
 
-**PerformReminderAction**操作では、次の表に示す SOAP ヘッダーを使用できます。 
+**PerformReminderAction 操作** では、次の表に示す SOAP ヘッダーを使用できます。 
   
-|**ヘッダー名**|**要素**|**説明**|
+|**ヘッダー名**|**Element**|**説明**|
 |:-----|:-----|:-----|
-|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |RFC 3066 で定義されているように、メールボックスへのアクセスに使用されるカルチャ (言語の識別用のタグ) を識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは応答に適用されます。  <br/> |
+|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |メールボックスへのアクセスに使用する RFC 3066「言語の識別用タグ」で定義されているカルチャを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマ バージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは、応答に適用されます。  <br/> |
    
 ## <a name="performreminderaction-operation-request-example"></a>PerformReminderAction 操作要求の例
 
-次の**PerformReminderAction**操作要求の例は、現在のアラームを再通知し、新しいアラーム時刻を設定する方法を示しています。 [ItemId](itemid.md)の**changekey**を含める必要があります。また、 **NewReminderTime**は、 [Getreminders](getreminders-operation.md)操作によって返される**ReminderTime**より後の時刻に設定する必要があります。 
+**PerformReminderAction** 操作要求の次の例は、現在のアラームをスヌーズし、新しいアラーム時間を設定する方法を示しています。 [ItemId](itemid.md)の **ChangeKey** を含める必要があります。**また、NewReminderTime** は [GetReminders](getreminders-operation.md)操作によって返される **ReminderTime** より後の時刻に設定する必要があります。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -69,7 +69,7 @@ ms.locfileid: "44462291"
 ```
 
 > [!NOTE]
-> **ItemId**の値は読みやすいように短縮されています。 
+> **ItemId の値** は、読みやすさを維持するために短縮されました。 
   
 要求 SOAP 本文には、次の要素が含まれています。
   
@@ -85,9 +85,9 @@ ms.locfileid: "44462291"
     
 - [NewReminderTime](newremindertime.md)
     
-## <a name="successful-performreminderaction-operation-response"></a>成功した PerformReminderAction 操作の応答
+## <a name="successful-performreminderaction-operation-response"></a>PerformReminderAction 操作応答の成功
 
-次の例は、 **PerformReminderAction**操作要求に対する正常な応答を示しています。 **Updateditemids**要素には、更新された予定表アイテムの**itemids**が含まれています。 
+次の例は **、PerformReminderAction** 操作要求に対する正常な応答を示しています。 **UpdatedItemIds 要素** には、更新 **された予定表アイテムの ItemId が** 含まれる。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -129,7 +129,7 @@ ms.locfileid: "44462291"
     
 ## <a name="performreminderaction-operation-error-response-example"></a>PerformReminderAction 操作エラー応答の例
 
-次の例は、サーバーで変更が行われていない場合の**PerformReminderAction**操作要求への応答を示しています。 これは、要求が送信されたものの、 **Updateditemids**が返されなかったこと、つまりアラームが変更されなかったことを示す応答です。 
+次の例は、サーバーに変更が行われた場合の **PerformReminderAction** 操作要求への応答を示しています。 これは、要求が送信されたが **、UpdatedItemIds** が返され、アラームが変更されたという応答です。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -164,7 +164,7 @@ ms.locfileid: "44462291"
     
 - [UpdatedItemIds](updateditemids.md)
     
-EWS に汎用的なその他のエラーコードについては、「/」を[参照して](responsecode.md)ください。
+EWS に汎用的な追加のエラー コードについては [、「ResponseCode」を参照してください](responsecode.md)。
   
 ## <a name="see-also"></a>関連項目
 

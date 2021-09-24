@@ -1,23 +1,23 @@
 ---
-title: メールボックス (ArrayOfUserMailboxesType)
+title: Mailboxes (ArrayOfUserMailboxesType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9e433049-3ff9-467d-ad2a-c767a22f9fbb
-description: メールボックス要素には、メールボックスの配列が含まれています。
-ms.openlocfilehash: b3af9b831b7877bcfb030422b8fb44ccc6b61d5c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Mailboxes 要素には、メールボックスの配列が含まれる。
+ms.openlocfilehash: 593a062fd52900f8500cbed0413e66038b948855
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468153"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514271"
 ---
-# <a name="mailboxes-arrayofusermailboxestype"></a>メールボックス (ArrayOfUserMailboxesType)
+# <a name="mailboxes-arrayofusermailboxestype"></a>Mailboxes (ArrayOfUserMailboxesType)
 
-**メールボックス**要素には、メールボックスの配列が含まれています。 
+**Mailboxes 要素** には、メールボックスの配列が含まれる。 
   
 ```XML
 <Mailboxes>
@@ -54,8 +54,8 @@ ms.locfileid: "44468153"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

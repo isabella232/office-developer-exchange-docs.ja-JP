@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fd5b9f0e-23e8-428c-8168-2d6b4ecd6beb
-description: SetHoldOnMailboxes 要素には、SetHoldOnMailboxes 要求が含まれています。
-ms.openlocfilehash: c96ff50cb1204d86abc66829e1c5da7124f407f1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SetHoldOnMailboxes 要素には、SetHoldOnMailboxes 要求が含まれる。
+ms.openlocfilehash: 82ebbbdce04a5b70eae790a899ca089e38aa76d9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44448353"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516375"
 ---
 # <a name="setholdonmailboxes"></a>SetHoldOnMailboxes
 
-**SetHoldOnMailboxes**要素には、 **SetHoldOnMailboxes**要求が含まれています。 
+**SetHoldOnMailboxes 要素** には **、SetHoldOnMailboxes 要求が含** まれる。 
   
 ```XML
 <SetHoldOnMailboxes>
@@ -43,7 +43,7 @@ ms.locfileid: "44448353"
   
 ### <a name="child-elements"></a>子要素
 
-[ActionType (HoldActionType)](actiontype-holdactiontype.md)  | [HoldId](holdid.md)  | [クエリ](query.md)  | [メールボックス (ArrayOfStringsType)](mailboxes-arrayofstringstype.md)  | [言語](language.md)  | 追加[アイテム](includenonindexableitems.md)  | [重複除去](deduplication.md)  | [InPlaceHoldIdentity](inplaceholdidentity.md)
+[ActionType (HoldActionType)](actiontype-holdactiontype.md)  | [HoldId](holdid.md)  | [クエリ](query.md)  | [メールボックス (ArrayOfStringsType)](mailboxes-arrayofstringstype.md)  | [言語](language.md)  | [IncludeNonIndexableItems](includenonindexableitems.md)  | [重複排除](deduplication.md)  | [InPlaceHoldIdentity](inplaceholdidentity.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -60,8 +60,8 @@ ms.locfileid: "44448353"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

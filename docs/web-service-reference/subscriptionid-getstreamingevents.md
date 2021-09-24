@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3f86c178-2311-4844-82db-c2a0e469d116
-description: SubscriptionId 要素は、ストリーミングサブスクリプションの識別子を表します。
-ms.openlocfilehash: babf02c514e7fe8711f51ac52e425a18f3ab47f7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SubscriptionId 要素は、ストリーミング サブスクリプションの識別子を表します。
+ms.openlocfilehash: 8931fda5087fa985c646da328a0cb27fa2c2a708
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457999"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540378"
 ---
 # <a name="subscriptionid-getstreamingevents"></a>SubscriptionId (GetStreamingEvents)
 
-**SubscriptionId**要素は、ストリーミングサブスクリプションの識別子を表します。 
+**SubscriptionId 要素** は、ストリーミング サブスクリプションの識別子を表します。 
   
 ```XML
 <SubscriptionId/>
@@ -40,7 +40,7 @@ ms.locfileid: "44457999"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetStreamingEvents](getstreamingevents.md) <br/> |サーバーからのストリーミング通知を要求するためにクライアントによって使用される操作を表します。  <br/> |
+|[GetStreamingEvents](getstreamingevents.md) <br/> |クライアントがサーバーからストリーミング通知を要求するために使用する操作を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -48,7 +48,7 @@ ms.locfileid: "44457999"
   
 ## <a name="remarks"></a>注釈
 
-サブスクリプション識別子を表す GUID は、サブスクリプションの作成時にクライアントアクセスサーバーによって生成されます。
+サブスクリプション識別子を表す GUID は、サブスクリプションの作成時にクライアント アクセス サーバーによって生成されます。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
@@ -57,9 +57,9 @@ ms.locfileid: "44457999"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -68,5 +68,5 @@ ms.locfileid: "44457999"
 [GetStreamingEvents の操作](getstreamingevents-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -1,23 +1,23 @@
 ---
-title: ImAddress (文字列)
+title: ImAddress (String)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fa10fcdb-f947-4958-ad5a-afaed1661f52
-description: ImAddress 要素には、ペルソナのプライマリインスタントメッセージングアドレスが格納されます。
-ms.openlocfilehash: 2cfb8c7e0ccf5454fd5a201819882acbe0924e4a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ImAddress 要素には、ペルサのプライマリ インスタント メッセージング アドレスが含まれる。
+ms.openlocfilehash: df962c97faabaec2874136159abebd657b60719c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456466"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515699"
 ---
-# <a name="imaddress-string"></a>ImAddress (文字列)
+# <a name="imaddress-string"></a>ImAddress (String)
 
-**Imaddress**要素には、ペルソナのプライマリインスタントメッセージングアドレスが格納されます。 
+**ImAddress 要素には**、ペルサのプライマリ インスタント メッセージング アドレスが含まれる。 
   
 ```XML
 <ImAddress></ImAddress>
@@ -42,7 +42,7 @@ ms.locfileid: "44456466"
   
 ## <a name="text-value"></a>テキスト値
 
-**Imaddress**要素のテキスト値は、ペルソナのプライマリインスタントメッセージングアドレスです。 
+**ImAddress** 要素のテキスト値は、ペルサのプライマリ インスタント メッセージング アドレスです。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44456466"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

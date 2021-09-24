@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2866b1ec-64ba-4d18-9152-a09568d45aa7
-description: DisplayName (MasterMailboxType) 要素は、内部使用のみを目的としています。
-ms.openlocfilehash: 2026ad1cde13b11af9bcc2d8c81da5c8b23344e3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: DisplayName (MasterMailboxType) 要素は、内部での使用のみを目的とします。
+ms.openlocfilehash: 301d27a4cf655fa53ed980dacd22963358fe98c5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530720"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59526482"
 ---
 # <a name="displayname-mastermailboxtype"></a>DisplayName (MasterMailboxType)
 
-**DisplayName (MasterMailboxType)** 要素は、内部使用のみを目的としています。 
+**DisplayName (MasterMailboxType) 要素** は、内部での使用のみを目的とします。 
 
 ## <a name="attributes-and-elements"></a>属性と要素
 

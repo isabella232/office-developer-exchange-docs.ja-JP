@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4a20c747-4fa2-4c8d-b439-816918e8ba02
-description: ClientIntent 要素は、内部使用のみを目的としています。
-ms.openlocfilehash: cf791a5ddba7c3455f5738bd4bede00dc7010f0e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ClientIntent 要素は内部での使用のみを目的とします。
+ms.openlocfilehash: 5168d23ec55b3c4c6dba116116f5747edf5053f7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462186"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515993"
 ---
 # <a name="clientintent"></a>ClientIntent
 
-**Clientintent**要素は、内部使用のみを目的としています。 
+**ClientIntent 要素は** 内部での使用のみを目的とします。 
   
 ```XML
 <ClientIntent />
@@ -51,8 +51,8 @@ ms.locfileid: "44462186"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空にできる  <br/> ||
    
 

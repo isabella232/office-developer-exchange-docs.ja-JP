@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ActingAs
 api_type:
 - schema
 ms.assetid: 3896afff-5c2c-4eaf-8621-c70e0371ea78
-description: ActingAs 要素は、発信者が送信者を送信しているユーザーを識別します。
-ms.openlocfilehash: 175a03018ee3529ec595dbe9afb7dc61ad6afc35
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ActingAs 要素は、呼び出し元が送信するユーザーを識別します。
+ms.openlocfilehash: a470a7571e5f1b2ecc85014157d3fc4de291389e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529701"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540342"
 ---
 # <a name="actingas"></a>ActingAs
 
-**Actingas**要素は、発信者が送信者を送信しているユーザーを識別します。 
+**ActingAs 要素は**、呼び出し元が送信するユーザーを識別します。 
   
 ```xml
 <ActingAs>
@@ -43,18 +43,18 @@ ms.locfileid: "44529701"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[EmailAddress (非 Emptystringtype)](emailaddress-nonemptystringtype.md) <br/> |メールボックスユーザーの簡易メール転送プロトコル (SMTP) アドレスを定義します。 この要素は省略できます。  <br/> |
+|[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |メールボックス ユーザーの簡易メール転送プロトコル (SMTP) アドレスを定義します。 この要素は省略できます。  <br/> |
 |[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |メールボックスに使用されるルーティングを定義します。 既定値は SMTP です。 この要素は省略できます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetServiceConfiguration](getserviceconfiguration.md) <br/> |**GetServiceConfiguration**要求を定義します。  <br/> |
+|[GetServiceConfiguration](getserviceconfiguration.md) <br/> |**GetServiceConfiguration 要求を定義** します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素は省略できます。 この要素が存在しない場合、認証されたユーザーは送信者と見なされます。 送信者ヒントを要求するには、 **Actingas**要素を含める必要があります。 **Actingas**要素が存在しない場合、ルーティングの種類が含まれていない場合、電子メールアドレスが含まれていない場合、電子メールアドレスが含まれていない場合、Active Directory ドメインサービス (AD ds) 内のユーザーに解決されない場合、または ad ds 内の複数のユーザーに解決される場合は、応答で**ErrorInvalidArgument** 
+この要素は省略できます。 この要素が存在しない場合、認証されたユーザーは送信者と見なされます。 送信者 **ヒントを要求するには、ActingAs** 要素を含める必要があります。 **ActingAs** 要素が見つからない場合、ルーティングの種類が含まれているか、電子メール アドレスが含まれているか、無効な電子メール アドレスが含まれているか、Active Directory ドメイン サービス (AD DS) のユーザーに解決されないか、AD DS の複数のユーザーに解決される場合 **、ErrorInvalidArgument** エラーが応答で返される可能性があります。 
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
@@ -63,11 +63,11 @@ ms.locfileid: "44529701"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

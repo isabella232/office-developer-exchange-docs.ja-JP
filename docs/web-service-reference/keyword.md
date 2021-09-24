@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c1834b40-ab2a-4c67-a93a-eaadc9523fda
-description: Keyword 要素は、単一のキーワードを指定します。
-ms.openlocfilehash: cdb944aa7b5a8335d840555400381f1d863ded82
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Keyword 要素は、1 つのキーワードを指定します。
+ms.openlocfilehash: 62d993f0f36a3d02991f15f4e37435c6db19c24f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458104"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514432"
 ---
 # <a name="keyword"></a>キーワード
 
-**Keyword**要素は、単一のキーワードを指定します。 
+**Keyword 要素は**、1 つのキーワードを指定します。 
   
 ```XML
 <Keyword></Keyword>
@@ -42,7 +42,7 @@ ms.locfileid: "44458104"
   
 ## <a name="text-value"></a>テキスト値
 
-**Keyword**要素のテキスト値は、1つのキーワード統計を表す単一のキーワードの名前です。 
+Keyword 要素のテキスト **値** は、1 つのキーワード統計を表す 1 つのキーワードの名前です。 
   
 ## <a name="remarks"></a>注釈
 

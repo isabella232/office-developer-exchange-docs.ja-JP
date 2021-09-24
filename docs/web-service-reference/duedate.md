@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DueDate
 api_type:
 - schema
 ms.assetid: dd9b6c43-a512-4b3b-a071-4abde02ed55f
-description: DueDate 要素は、アイテムの期限の日付を表します。
-ms.openlocfilehash: b88bb5c64ee48e02b1600c6865ce650e7bcdaa3b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: DueDate 要素は、アイテムの期限日を表します。
+ms.openlocfilehash: 039008ae2ceb2faf280c5b434a5068b580ee885c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463560"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540083"
 ---
 # <a name="duedate"></a>DueDate
 
-**DueDate**要素は、アイテムの期限の日付を表します。 
+**DueDate 要素** は、アイテムの期限日を表します。 
   
 ```xml
 <DueDate/>
@@ -44,8 +44,8 @@ ms.locfileid: "44463560"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[タスク](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
-|[Flag](flag.md) <br/> |メールボックスアイテムのフラグを指定します。  <br/> |
+|[タスク](task.md) <br/> |ストア内のタスクをExchangeします。  <br/> |
+|[Flag](flag.md) <br/> |メールボックス アイテムのフラグを指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -53,18 +53,18 @@ ms.locfileid: "44463560"
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

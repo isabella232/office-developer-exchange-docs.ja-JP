@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MeetingRequestWasSent
 api_type:
 - schema
 ms.assetid: 9192400a-8eef-4147-9f94-aa8ea91b41d8
-description: MeetingRequestWasSent 要素は、会議出席依頼が出席者に送信されたかどうかを示します。
-ms.openlocfilehash: d5005eb86d5f8d2f438a69e634f0617c2311d720
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MeetingRequestWasSent 要素は、要求された出席者に会議出席依頼が送信されたかどうかを示します。
+ms.openlocfilehash: 282cc074b0ed2c5bc05fbb35b0ee31f2940f1a86
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465766"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540811"
 ---
 # <a name="meetingrequestwassent"></a>MeetingRequestWasSent
 
-**MeetingRequestWasSent**要素は、会議出席依頼が出席者に送信されたかどうかを示します。 
+**MeetingRequestWasSent** 要素は、要求された出席者に会議出席依頼が送信されたかどうかを示します。 
   
 ```xml
 <MeetingRequestWasSent/>
@@ -44,29 +44,29 @@ ms.locfileid: "44465766"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
-|[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議出席依頼を表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |予定表アイテムのExchangeを表します。  <br/> |
+|[MeetingRequest](meetingrequest.md) <br/> |ユーザー ストア内の会議出席依頼Exchangeします。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-この要素が含まれている場合は、ブール値を表すテキスト値が必要です。 **True**の値は、会議出席依頼が送信されたことを示します。 値が**false**の場合は、会議出席依頼が送信されていないことを示します。 
+この要素が含まれている場合は、ブール値を表すテキスト値が必要です。 true の値 **は** 、会議出席依頼が送信されたかどうかを示します。 false の **値は** 、会議出席依頼が送信されていない状態を示します。 
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

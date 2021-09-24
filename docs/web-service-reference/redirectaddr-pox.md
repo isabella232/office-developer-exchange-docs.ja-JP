@@ -4,27 +4,27 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 0e9fa6b6-7991-4dc1-a59a-48e5f8e041e4
-description: RedirectAddr 要素は、以降の自動検出要求に使用する電子メールアドレスを指定します。
-ms.openlocfilehash: 6bff28001851f421b4c7429770185401f2f0a743
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: RedirectAddr 要素は、後続の自動検出要求に使用する電子メール アドレスを指定します。
+ms.openlocfilehash: 75db62a84ccce743e73c812082ab9dbbc4fdb1cd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529876"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540595"
 ---
 # <a name="redirectaddr-pox"></a>RedirectAddr (POX)
 
-**Redirectaddr**要素は、以降の自動検出要求に使用する電子メールアドレスを指定します。 
+**RedirectAddr 要素** は、後続の自動検出要求に使用する電子メール アドレスを指定します。 
   
-[自動検出 (POX)](autodiscover-pox.md)
+[AutoDiscover (POX)](autodiscover-pox.md)
   
-[応答 (POX)](response-pox.md)
+[Response (POX)](response-pox.md)
   
-[アカウント (POX)](account-pox.md)
+[Account (POX)](account-pox.md)
   
 [RedirectAddr (POX)](redirectaddr-pox.md)
   
@@ -48,19 +48,19 @@ ms.locfileid: "44529876"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[アカウント (POX)](account-pox.md) <br/> |ユーザーのアカウント設定を指定します。  <br/> |
+|[Account (POX)](account-pox.md) <br/> |ユーザーのアカウント設定を指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-Text 値は、以降の自動検出要求に使用される電子メールアドレスを表します。
+テキスト値は、後続の自動検出要求に使用する電子メール アドレスを表します。
   
 ## <a name="remarks"></a>注釈
 
-この要素が自動検出応答に存在する場合は、 **Redirectaddr**要素のテキスト値を使用して、別の要求を行います。 
+この要素が自動検出応答に存在する場合は **、RedirectAddr** 要素のテキスト値を使用して別の要求を行います。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+[POX 自動検出 XML 要素のExchange](pox-autodiscover-xml-elements-for-exchange.md)
 

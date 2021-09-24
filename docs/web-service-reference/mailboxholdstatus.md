@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 92608b77-8aa4-403b-a4de-01e3a60af3e0
 description: MailboxHoldStatus 要素は、メールボックスの保留状態を指定します。
-ms.openlocfilehash: 2ac575275fc00d2e3ba38cb4ec7335567ee82da6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: de63acb14862e9f8cefded7130318c7f8cbd685f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468811"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540770"
 ---
 # <a name="mailboxholdstatus"></a>MailboxHoldStatus
 
-**MailboxHoldStatus**要素は、メールボックスの保留状態を指定します。 
+**MailboxHoldStatus** 要素は、メールボックスの保留状態を指定します。 
   
 ```XML
 <MailboxHoldStatus>
@@ -39,7 +39,7 @@ ms.locfileid: "44468811"
   
 ### <a name="child-elements"></a>子要素
 
-[メールボックス (文字列)](mailbox-string.md)  | [状態 (HoldStatusType)](status-holdstatustype.md)  | [Additionalinfo](additionalinfo.md)
+[メールボックス (文字列)](mailbox-string.md)  | [Status (HoldStatusType)](status-holdstatustype.md)  | [AdditionalInfo](additionalinfo.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -56,8 +56,8 @@ ms.locfileid: "44468811"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

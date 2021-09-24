@@ -1,25 +1,25 @@
 ---
-title: 管理
+title: monitoring
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - monitoring
 api_type:
 - schema
 ms.assetid: 350d7b46-9260-41a7-8613-3cb8cc1b29a5
-description: '最終更新日: 2015 年9月17日'
-ms.openlocfilehash: 5614ac2c6428da9b6845769a9335486d3ded5754
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: '最終更新日: 2015 年 9 月 17 日'
+ms.openlocfilehash: 215737fb43e1dbef9b7dd11baea1d3f922df7d34
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455829"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540368"
 ---
-# <a name="monitoring"></a>管理
+# <a name="monitoring"></a>monitoring
   
 **製品:** Exchange Server 2013
   
@@ -27,7 +27,7 @@ ms.locfileid: "44455829"
   
 - [構成](configuration.md)  
 - [mexRuntime](mexruntime.md)  
-- [管理](monitoring.md)
+- [監視](monitoring.md)
   
 ```XML
 <monitoring>
@@ -51,7 +51,7 @@ ms.locfileid: "44455829"
 |**Element**|**説明**|
 |:-----|:-----|
 |[agentExecution](agentexecution.md) <br/> |クライアント アクセス サーバーまたはメールボックス サーバーがエージェントのイベントからの復帰を待機する時間をミリ秒単位で定義します。この時間を過ぎるとイベント ログへの書き込みが行われます。  <br/> |
-|[messageSnapshot](messagesnapshot.md) <br/> |クライアントアクセスまたはメールボックスサーバーでパイプライントレース機能が有効になっているかどうかを指定する属性が含まれています。  <br/> |
+|[messageSnapshot](messagesnapshot.md) <br/> |クライアント アクセスまたはメールボックス サーバーのパイプライン トレース機能を有効にするかどうかを指定する属性が含まれる。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -64,7 +64,7 @@ ms.locfileid: "44455829"
 |||
 |:-----|:-----|
 |Namespace  <br/> |このファイルには名前空間が定義されていません。  <br/> |
-|スキーマ名  <br/> |注意事項なし。  <br/> |
+|スキーマ名  <br/> |該当なし。  <br/> |
 |検証ファイル  <br/> |該当なし。  <br/> |
 |空に設定可能  <br/> |不正解。  <br/> |
    

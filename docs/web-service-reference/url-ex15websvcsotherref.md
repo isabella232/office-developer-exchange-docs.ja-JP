@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c0d41b95-36b9-4e7a-a442-cdea37467abd
-description: Url 要素は、プッシュ通知用のクライアント Web サービスの場所を表します。
-ms.openlocfilehash: 62e139c441eef68db5cf13226d15a83f67135026
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Url 要素は、プッシュ通知のクライアント Web サービスの場所を表します。
+ms.openlocfilehash: 322cae9e8924b0264909923286ecb22d4adcf070
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530931"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514999"
 ---
 # <a name="url"></a>Url
 
-**Url**要素は、プッシュ通知用のクライアント Web サービスの場所を表します。 
+**Url 要素** は、プッシュ通知のクライアント Web サービスの場所を表します。 
   
 ```XML
 <Url></Url>
@@ -40,11 +40,11 @@ ms.locfileid: "44530931"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[PushSubscriptionRequest](pushsubscriptionrequest.md) <br/> |プッシュベースのイベント通知サブスクリプションのサブスクリプションを表します。  <br/> |
+|[PushSubscriptionRequest](pushsubscriptionrequest.md) <br/> |プッシュ ベースのイベント通知サブスクリプションのサブスクリプションを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**Url**要素のテキスト値は、プッシュ通知用のクライアント Web サービスの場所です。 
+Url 要素のテキスト **値** は、プッシュ通知のクライアント Web サービスの場所です。 
   
 ## <a name="remarks"></a>注釈
 

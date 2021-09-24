@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: efdb30a2-9877-4703-b09e-059d1669c041
-description: MobilePhones2 要素は、MobilePhone 値の配列と、関連付けられているペルソナのソース attributions の識別子を指定します。
-ms.openlocfilehash: c7b9d1c307a2372b1fffddc7ef061f69cbc02f95
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MobilePhones2 要素は、MobilePhone 値の配列と、関連付けられたペルサのソース属性の識別子を指定します。
+ms.openlocfilehash: b539f95d914befed6568259e72532b8299105a36
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465731"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540616"
 ---
 # <a name="mobilephones2"></a>MobilePhones2
 
-**MobilePhones2**要素は、 **MobilePhone**値の配列と、関連付けられているペルソナのソース attributions の識別子を指定します。 
+**MobilePhones2 要素** は **、MobilePhone** 値の配列と、関連付けられたペルサのソース属性の識別子を指定します。 
   
 ```XML
 <MobilePhones2>
@@ -53,8 +53,8 @@ ms.locfileid: "44465731"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

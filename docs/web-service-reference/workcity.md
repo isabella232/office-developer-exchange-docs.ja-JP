@@ -1,23 +1,23 @@
 ---
-title: 勤務先市区町村
+title: WorkCity
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c9850a25-1560-4ed8-969c-dc3e59dde207
-description: ワーク City 要素は、関連付けられたペルソナが働く市区町村を指定します。
-ms.openlocfilehash: 712544d60fde15b3d630ecd00b9b5dfbb16a7dd5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: WorkCity 要素は、関連付けられたペルサが動作する都市を指定します。
+ms.openlocfilehash: c498c40d66b6bd57833f37bbe88c12bef85f9a99
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459715"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514957"
 ---
-# <a name="workcity"></a>勤務先市区町村
+# <a name="workcity"></a>WorkCity
 
-**ワーク city**要素は、関連付けられたペルソナが働く市区町村を指定します。 
+**WorkCity 要素は**、関連付けられたペルサが動作する都市を指定します。 
   
 ```XML
 <WorkCity></WorkCity>
@@ -42,7 +42,7 @@ ms.locfileid: "44459715"
   
 ## <a name="text-value"></a>テキスト値
 
-**ワーク city**要素のテキスト値は、関連付けられたペルソナが機能する市区町村です。 
+WorkCity 要素の **テキスト値** は、関連付けられたペルサが動作する都市です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44459715"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

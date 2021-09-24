@@ -1,23 +1,23 @@
 ---
-title: Updateitemin回復 Ableitemsresponse
+title: UpdateItemInRecoverableItemsResponse
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2f61b038-eba0-40fc-8af2-c3db5cc5a420
-description: Updateitemin/Ableableitemsresponse 要素は、Updateitemin回復可能なアイテムの要求への応答を指定します。
-ms.openlocfilehash: 02e030774949e895bc89579cb9364d08c7844ce3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: UpdateItemInRecoverableItemsResponse 要素は、UpdateItemInRecoverableItems 要求への応答を指定します。
+ms.openlocfilehash: e5020ac3c8263d0b837636f998302754aafb8687
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466557"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514033"
 ---
-# <a name="updateiteminrecoverableitemsresponse"></a>Updateitemin回復 Ableitemsresponse
+# <a name="updateiteminrecoverableitemsresponse"></a>UpdateItemInRecoverableItemsResponse
 
-**Updateitemin/Ableableitemsresponse**要素は、 **updateitemin回復**可能なアイテムの要求への応答を指定します。 
+**UpdateItemInRecoverableItemsResponse** 要素は **、UpdateItemInRecoverableItems** 要求への応答を指定します。 
   
 ```XML
 <UpdateItemInRecoverableItemsResponse>
@@ -31,7 +31,7 @@ ms.locfileid: "44466557"
 </UpdateItemInRecoverableItemsResponse>
 ```
 
- **Updateitemin回復 Ableitemsresponsemessagetype**
+ **UpdateItemInRecoverableItemsResponseMessageType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -42,7 +42,7 @@ ms.locfileid: "44466557"
   
 ### <a name="child-elements"></a>子要素
 
-[Messagetext](messagetext.md)  | 応答[Secmode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [アイテム](items.md)  | [添付ファイル](attachments-ex15websvcsotherref.md)  | [ConflictResults](conflictresults.md)
+[MessageText](messagetext.md)  | [ResponseCode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [アイテム](items.md)  | [添付ファイル](attachments-ex15websvcsotherref.md)  | [ConflictResults](conflictresults.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -59,8 +59,8 @@ ms.locfileid: "44466557"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

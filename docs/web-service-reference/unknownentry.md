@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UnknownEntry
 api_type:
 - schema
 ms.assetid: 3cb4c62e-052a-4326-8639-8c41dfd047b2
-description: UnknownEntry 要素は、Active Directory ディレクトリサービスに対して解決できない単一の不明なアクセス許可エントリを表します。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。
-ms.openlocfilehash: 452857690f719ba3ee9dffa29e576ca4f3b2b945
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: UnknownEntry 要素は、Active Directory ディレクトリ サービスに対して解決できない 1 つの不明なアクセス許可エントリを表します。 この要素は、2007 Microsoft Exchange Server パック 1 (SP1) で導入されました。
+ms.openlocfilehash: 62d006de35955e0fe495d8435dce6f199b46249a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459399"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515041"
 ---
 # <a name="unknownentry"></a>UnknownEntry
 
-**UnknownEntry**要素は、Active Directory ディレクトリサービスに対して解決できない単一の不明なアクセス許可エントリを表します。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。 
+**UnknownEntry 要素** は、Active Directory ディレクトリ サービスに対して解決できない 1 つの不明なアクセス許可エントリを表します。 この要素は、2007 Microsoft Exchange Server パック 1 (SP1) で導入されました。 
   
 ```xml
 <UnknownEntry/>
@@ -44,31 +44,31 @@ ms.locfileid: "44459399"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[UnknownEntries](unknownentries.md) <br/> |Active Directory に対して解決できない、不明なアクセス許可エントリの配列が含まれています。 この要素は、Exchange 2007 SP1 で導入されました。  <br/> |
+|[UnknownEntries](unknownentries.md) <br/> |Active Directory に対して解決できない不明なアクセス許可エントリの配列が含まれます。 この要素は、2007 SP1 Exchange導入されました。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-Text 値は、Active Directory に対して解決できないアクセス許可エントリを表します。 テキスト値は、セキュリティ識別子 (SID) を表します。
+テキスト値は、Active Directory に対して解決できないアクセス許可エントリを表します。 テキスト値は、セキュリティ識別子 (SID) を表します。
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 
 
-[フォルダーレベルのアクセス許可を設定する](https://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
+[アクセス許可Folder-Level設定する](https://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
 

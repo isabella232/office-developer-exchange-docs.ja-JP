@@ -4,19 +4,19 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: bf819a65-30f2-4881-a34f-cb30a9c2b6a7
-description: AnonymousAccessAllowed 要素は、ドキュメント共有の場所に認証済みユーザーが必要かどうかを示します。
-ms.openlocfilehash: b3ff22fbba603bbd74dc08a0dbb1d8687714fe7d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: AnonymousAccessAllowed 要素は、ドキュメント共有の場所に認証されたユーザーが必要かどうかを示します。
+ms.openlocfilehash: bf31b8dd4e61393539a1cba0387d1fbbc7f282d7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466081"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516126"
 ---
 # <a name="anonymousaccessallowed-soap"></a>AnonymousAccessAllowed (SOAP)
 
-**AnonymousAccessAllowed**要素は、ドキュメント共有の場所に認証済みユーザーが必要かどうかを示します。 
+**AnonymousAccessAllowed 要素は**、ドキュメント共有の場所に認証されたユーザーが必要かどうかを示します。 
   
 ```XML
 <AnonymousAccessAllowed /> 
@@ -43,7 +43,7 @@ ms.locfileid: "44466081"
    
 ## <a name="text-value"></a>テキスト値
 
-**AnonymousAccessAllowed**要素の Boolean 値は、共有場所が認証済みユーザーを必要とするかどうかを示します。 
+**AnonymousAccessAllowed 要素のブール値は**、共有場所に認証されたユーザーが必要かどうかを示します。 
   
 ## <a name="element-information"></a>要素の情報
 
@@ -51,12 +51,12 @@ ms.locfileid: "44466081"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [GetUserSettings 操作 (SOAP)](getusersettings-operation-soap.md)
 - [Exchange 用自動検出 Web サービス リファレンス](autodiscover-web-service-reference-for-exchange.md)
-- [Exchange 2013 の SOAP 自動検出 XML 要素](soap-autodiscover-xml-elements-for-exchange-2013.md)
+- [SOAP 自動検出 XML 要素 (2013 Exchange)](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

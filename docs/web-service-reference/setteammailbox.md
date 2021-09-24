@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5d6ee7cc-8f88-4de2-ae5c-cabf2f2193d0
-description: SetTeamMailbox 要素には、サイトメールボックスを設定するための要求が含まれています。
-ms.openlocfilehash: e4b7ebd308f4b58b6b6491289f24b9176c5dcf15
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SetTeamMailbox 要素には、サイト メールボックスを設定する要求が含まれる。
+ms.openlocfilehash: 99b6edb891c593d7f686fbe1bceb1c0668d9251e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465262"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540476"
 ---
 # <a name="setteammailbox"></a>SetTeamMailbox
 
-**Setteammailbox**要素には、サイトメールボックスを設定するための要求が含まれています。 
+**SetTeamMailbox 要素** には、サイト メールボックスを設定する要求が含まれる。 
   
 ```XML
 <SetTeamMailbox>
@@ -38,7 +38,7 @@ ms.locfileid: "44465262"
   
 ### <a name="child-elements"></a>子要素
 
-[EmailAddress (EmailAddressType)](emailaddress-emailaddresstype.md)  | [Sharepointsiteurl](sharepointsiteurl.md)  | [State (TeamMailboxLifecycleStateType)](state-teammailboxlifecyclestatetype.md)
+[EmailAddress (EmailAddressType)](emailaddress-emailaddresstype.md)  | [SharePointSiteUrl](sharepointsiteurl.md)  | [State (TeamMailboxLifecycleStateType)](state-teammailboxlifecyclestatetype.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -55,8 +55,8 @@ ms.locfileid: "44465262"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

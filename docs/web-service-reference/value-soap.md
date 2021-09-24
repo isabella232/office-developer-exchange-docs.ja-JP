@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: a79a7e54-e7b1-4735-8eb4-03b1d0738e2c
-description: Value 要素は、ユーザー設定値を表します。
-ms.openlocfilehash: 755ecd20cc3707b4a8c36b832ff1d6fe91ec9169
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Value 要素は、ユーザーの設定値を表します。
+ms.openlocfilehash: 5a14e519d77d15843ab6bca2bfc39ee07a833e4f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468069"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513942"
 ---
 # <a name="value-soap"></a>Value (SOAP)
 
-**Value**要素は、ユーザー設定値を表します。 
+**Value 要素は**、ユーザーの設定値を表します。 
   
 - [UserSettings (SOAP)](usersettings-soap.md)
   
@@ -61,7 +61,7 @@ ms.locfileid: "44468069"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
 |空に設定可能  <br/> |はい  <br/> |
    
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c2f3070c-81c6-43f7-ae48-cb3d2dcfac68
-description: OtherTelephones 要素は、電話値の配列と、関連付けられているペルソナのソース attributions の識別子を指定します。
-ms.openlocfilehash: b47b6bac7efcfd7bd3dc1a84fa6b0b089fbeb160
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: OtherTelephones 要素は、電話の値の配列と、関連付けられたペルサのソース属性の識別子を指定します。
+ms.openlocfilehash: b1081cc3043aa612ad21b020d3a20ed9bdae2a02
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462347"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539210"
 ---
 # <a name="othertelephones"></a>OtherTelephones
 
-**Othertelephones**要素は、電話値の配列と、関連付けられているペルソナのソース attributions の識別子を指定します。 
+**OtherTelephones** 要素は、電話の値の配列と、関連付けられたペルサのソース属性の識別子を指定します。 
   
 ```XML
 <OtherTelephones>
@@ -54,8 +54,8 @@ ms.locfileid: "44462347"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

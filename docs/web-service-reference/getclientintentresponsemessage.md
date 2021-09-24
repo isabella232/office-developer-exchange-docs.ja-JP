@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 069474c9-10f7-4ac9-892b-c85d266cff7f
-description: GetClientIntentResponseMessage 要素は、内部使用のみを目的としています。
-ms.openlocfilehash: 78cf70e37dc75a3db8849e29694fa6a4e4600dc9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetClientIntentResponseMessage 要素は、内部での使用のみを目的とします。
+ms.openlocfilehash: 1f583baf20f6aeae9717050e1c46f1cf119ca9bd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458370"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59526177"
 ---
 # <a name="getclientintentresponsemessage"></a>GetClientIntentResponseMessage
 
-**GetClientIntentResponseMessage**要素は、内部使用のみを目的としています。 
+**GetClientIntentResponseMessage** 要素は、内部での使用のみを目的とします。 
   
 ```XML
 <GetClientIntentResponseMessage />
@@ -51,8 +51,8 @@ ms.locfileid: "44458370"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

@@ -4,19 +4,19 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 79ffc3f9-25c4-40b5-84ce-09a3c5f892fa
-description: DomainNames 要素は、ドメイン名のコレクションを表します。 DomainNames 要素は、内部使用のみを対象としています。 この要素はクライアントによって使用されません。
-ms.openlocfilehash: 0b425b3cd4c0e7cb2427920d61feb04010a3b123
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: DomainNames 要素は、ドメイン名コレクションを表します。 DomainNames 要素は内部でのみ使用できます。 この要素は、クライアントでは使用されません。
+ms.openlocfilehash: 7697b05d7432051b9048837cb41894684f52be15
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458419"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59526417"
 ---
 # <a name="domainnames-soap"></a>DomainNames (SOAP)
 
-**Domainnames**要素は、ドメイン名のコレクションを表します。 **Domainnames**要素は、内部使用のみを対象としています。 この要素はクライアントによって使用されません。 
+**DomainNames 要素は**、ドメイン名コレクションを表します。 **DomainNames 要素** は内部でのみ使用できます。 この要素は、クライアントでは使用されません。 
   
 ```XML
 <DomainNames>
@@ -37,13 +37,13 @@ ms.locfileid: "44458419"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Domains (SOAP)](domains-soap.md) <br/> |[Getdomainsettings 操作 (soap](getdomainsettings-operation-soap.md))、 [GETFEDERATIONINFORMATION operation (soap)](getfederationinformation-operation-soap.md)、または[getruleaction relationshipsettings 操作 (soap)](getorganizationrelationshipsettings-operation-soap.md)から返されるドメインのコレクションを表します。  <br/> |
+|[Domains (SOAP)](domains-soap.md) <br/> |[GetDomainSettings 操作 (SOAP)](getdomainsettings-operation-soap.md) [、GetFederationInformation 操作 (SOAP)、](getfederationinformation-operation-soap.md)または[GetOrganizationRelationshipSettings 操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)から返されるドメインのコレクションを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[組織のリレーションシップ設定 (SOAP)](organizationrelationshipsettings-soap.md) <br/> |1つの組織の組織上の関係のリストを表します。  <br/> |
+|[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |1 つの組織の組織関係の一覧を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -59,10 +59,10 @@ ms.locfileid: "44458419"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Get組織の Relationshipsettings 操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)
+- [GetOrganizationRelationshipSettings 操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)
 

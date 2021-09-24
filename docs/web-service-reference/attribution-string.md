@@ -1,29 +1,29 @@
 ---
-title: 属性 (string)
+title: Attribution (string)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 736be0bc-12c4-410e-bd17-a89f996ac432
-description: 属性要素は、ペルソナの属性を識別するために使用される文字列を指定します。
-ms.openlocfilehash: 9a3243904c02c3bdeea7e4a4e7dcb240d4ad3563
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Attribute 要素は、ペルサの属性を識別するために使用される文字列を指定します。
+ms.openlocfilehash: ce0dff53d48b4b198c21a4bcb6099608abbae7eb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464162"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513830"
 ---
-# <a name="attribution-string"></a>属性 (string)
+# <a name="attribution-string"></a>Attribution (string)
 
-属性**要素は、ペルソナ**の属性を識別するために使用される文字列を指定します。 
+**Attribute 要素** は、ペルサの属性を識別するために使用される文字列を指定します。 
   
 ```XML
 <Attribution></Attribution>
 ```
 
- **xs: 文字列**
+ **xs:string**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -40,11 +40,11 @@ ms.locfileid: "44464162"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Attributions (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md) <br/> |関連する**Value**要素の attributions の配列を指定します。  <br/> |
+|[Attributions (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md) <br/> |関連付けられた Value 要素の属性の配列を **指定** します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**属性**要素のテキスト値は、プロパティ値を送信元の連絡先に属性する文字列型 (string) の値です。 
+属性要素のテキスト **値は** 、プロパティ値をソース連絡先に属性付けする文字列値です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -58,10 +58,10 @@ ms.locfileid: "44464162"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

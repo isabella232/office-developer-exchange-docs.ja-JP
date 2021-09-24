@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - End
 api_type:
 - schema
 ms.assetid: 72329821-32ff-495d-b6e5-fdc011003c2e
-description: End 要素は、期間の終わりを表します。
-ms.openlocfilehash: d36f555d2ac9c0c1d82053029720ec17a53f2d92
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: End 要素は、期間の終了を表します。
+ms.openlocfilehash: 8f7fd448a873f82a82c6bd129fc16af9241d7f3c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456144"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540094"
 ---
 # <a name="end"></a>End
 
-**End**要素は、期間の終わりを表します。 
+**End 要素** は、期間の終了を表します。 
   
 ```xml
 <End/>
@@ -44,32 +44,32 @@ ms.locfileid: "44456144"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |予定表アイテムのExchangeを表します。  <br/> |
 |[FirstOccurrence](firstoccurrence.md) <br/> |定期的な予定表アイテムの最初の出現を表します。  <br/> |
-|[LastOccurrence](lastoccurrence.md) <br/> |定期的な予定表アイテムの最後の発生を表します。  <br/> |
-|[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議出席依頼を表します。  <br/> |
-|[発生](occurrence.md) <br/> |定期的な予定表アイテムの1つの変更されたアイテムを表します。  <br/> |
+|[LastOccurrence](lastoccurrence.md) <br/> |定期的な予定表アイテムの最後の出現を表します。  <br/> |
+|[MeetingRequest](meetingrequest.md) <br/> |ユーザー ストア内の会議出席依頼Exchangeします。  <br/> |
+|[Occurrence](occurrence.md) <br/> |定期的な予定表アイテムが 1 回変更された場合を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、期間の終わりを表します。
+テキスト値は、期間の終了を表します。
   
 ## <a name="remarks"></a>注釈
 
-UpdateItem 操作は、Exchange ストアアイテムの[開始](start.md)時刻と**終了**時刻を設定できます。 UpdateItem 要求では、**終了**時刻を設定することなく、[開始](start.md)時刻を設定できます。 これにより、[開始](start.md)時刻が**終了**時刻よりも後の場合にエラーが発生することがあります。 時間を保持するためにその[開始](start.md)時刻が変更された場合、クライアントアプリケーションは**終了**時刻を調整する必要があることに注意してください。 
+UpdateItem 操作では、ストア アイテム[の開始](start.md)時刻と終了時刻Exchange設定できます。 UpdateItem 要求では、終了 [時刻も設定](start.md) せずに開始時刻を **設定** できます。 開始時刻が終了時刻より後 [](start.md)の場合、エラーが **発生する可能性** があります。 クライアント アプリケーションは、期間を保持するために開始時刻が変更された場合[](start.md)に終了時刻の調整を実行する必要があります。 
   
- **メモ**定期的なマスターアイテムの[開始](start.md)日と**終了**日に、最初に週単位の定期的なパターンと同じ日付が設定されていない場合は、タイムゾーンのオフセット情報は失われます。 
+ **メモ** タイム ゾーン のオフセット情報は、[](start.md)定期的なマスター アイテムの開始日と終了日に、週ごとの定期的なパターンの最初の出現日付と等しくない場合に失われます。 
   
-この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -80,5 +80,5 @@ UpdateItem 操作は、Exchange ストアアイテムの[開始](start.md)時刻
  **End**
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

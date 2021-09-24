@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsInError
 api_type:
 - schema
 ms.assetid: f56e6c31-a566-4761-8755-d90ffe6fe790
 description: IsInError 要素は、ルールがエラー状態であるかどうかを示します。
-ms.openlocfilehash: 9e642c9f89434bdcad97b0c16dc35f99196051d7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: b677941b773c1be89863f06b01bfaf53c9690531
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464218"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514558"
 ---
 # <a name="isinerror"></a>IsInError
 
-**IsInError**要素は、ルールがエラー状態であるかどうかを示します。 
+**IsInError 要素** は、ルールがエラー状態であるかどうかを示します。 
   
 ```XML
 <IsInError/>
@@ -44,11 +44,11 @@ ms.locfileid: "44464218"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ルール (RuleType)](rule-ruletype.md) <br/> |ユーザーのメールボックス内のルールを表します。  <br/> |
+|[Rule (RuleType)](rule-ruletype.md) <br/> |ユーザーのメールボックス内のルールを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値が**true の場合**は、ルールがエラー状態であることを示します。 値が**false**の場合は、ルールがエラー状態ではないことを示します。 
+true のテキスト **値は** 、ルールがエラー状態にあるかどうかを示します。 false の **値は** 、ルールがエラー状態でなかっているかどうかを示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -59,13 +59,13 @@ ms.locfileid: "44464218"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

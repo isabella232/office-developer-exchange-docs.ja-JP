@@ -4,25 +4,25 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a221aa9e-b4ac-4ec5-aa42-7e2a69e8eaa6
-description: PublicFolderInformation 要素には、クライアントが自動検出要求を送信してユーザーのパブリックフォルダー情報を検出するために使用できる情報が含まれています。
-ms.openlocfilehash: e044a1feddfaeb4eb93c289c617dde9adc66f332
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: PublicFolderInformation 要素には、クライアントが自動検出要求を送信してユーザーのパブリック フォルダー情報を検出するために使用できる情報が含まれている。
+ms.openlocfilehash: d77ea350f05c5d6137d3b67cfd49119bf9590e53
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457719"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540623"
 ---
 # <a name="publicfolderinformation-pox"></a>PublicFolderInformation (POX)
 
-**Publicfolderinformation**要素には、クライアントが自動検出要求を送信してユーザーのパブリックフォルダー情報を検出するために使用できる情報が含まれています。 
+**PublicFolderInformation** 要素には、クライアントが自動検出要求を送信してユーザーのパブリック フォルダー情報を検出するために使用できる情報が含まれている。 
   
-[自動検出 (POX)](autodiscover-pox.md)
+[AutoDiscover (POX)](autodiscover-pox.md)
   
-[応答 (POX)](response-pox.md)
+[Response (POX)](response-pox.md)
   
-[アカウント (POX)](account-pox.md)
+[Account (POX)](account-pox.md)
   
 [PublicFolderInformation (POX)](publicfolderinformation-pox.md)
   
@@ -44,21 +44,21 @@ ms.locfileid: "44457719"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[SmtpAddress (POX)](smtpaddress-pox.md) <br/> |ユーザー用に構成されたパブリックフォルダーメッセージストアに割り当てられている SMTP アドレスが含まれます。 この SMTP アドレスは、自動検出要求の[EMailAddress (POX)](emailaddress-pox.md)要素で、パブリックフォルダーの設定を検出するために使用できます。  <br/> |
+|[SmtpAddress (POX)](smtpaddress-pox.md) <br/> |ユーザー用に構成されたパブリック フォルダー メッセージ ストアに割り当てられた SMTP アドレスを格納します。 この SMTP アドレスは、自動検出要求の [EMailAddress (POX)](emailaddress-pox.md) 要素でパブリック フォルダー設定を検出するために使用できます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[アカウント (POX)](account-pox.md) <br/> |ユーザーのアカウント設定を指定します。  <br/> |
+|[Account (POX)](account-pox.md) <br/> |ユーザーのアカウント設定を指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-**Publicfolderinformation**要素は、 **Account**要素のオプションの子要素です。 
+**PublicFolderInformation 要素は****、Account** 要素の省略可能な子要素です。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+[POX 自動検出 XML 要素のExchange](pox-autodiscover-xml-elements-for-exchange.md)
 

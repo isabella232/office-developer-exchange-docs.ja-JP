@@ -5,40 +5,40 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 57c6ff23-5c2c-42ee-824b-5a1b6dafab8c
-description: GetUserRetentionPolicyTags EWS 操作についての情報を検索します。
-ms.openlocfilehash: 6505945f8ad110af714da1a3011c2d504acdc75f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetUserRetentionPolicyTags EWS 操作に関する情報を検索します。
+ms.openlocfilehash: 9c030cb05e4adacf5eda9f046bdbb6c5c82b4975
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530833"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59526135"
 ---
 # <a name="getuserretentionpolicytags-operation"></a>GetUserRetentionPolicyTags 操作
 
-**GetUserRetentionPolicyTags** EWS 操作についての情報を検索します。 
+**GetUserRetentionPolicyTags** EWS 操作に関する情報を検索します。 
   
-**GetUserRetentionPolicyTags**操作は、システムポリシーまたはユーザーによって適用されたユーザーに関連付けられているすべての既定、システムフォルダー、および個人タグの一覧を取得します。 
+**GetUserRetentionPolicyTags** 操作は、システム ポリシーによって、またはユーザーによって適用されたユーザーに関連付けられているすべての既定の、システム フォルダー、および個人用タグの一覧を取得します。 
   
 この操作は Exchange Server 2013 で導入されました。
   
 ## <a name="using-the-getuserretentionpolicytags-operation"></a>GetUserRetentionPolicyTags 操作の使用
 
-この操作では、表示名、保持 ID、保持期間、保持の種類、保持操作、および説明タグ、および**IsVisible**、 **Optedinto**、 **isarchive**の各プロパティの値が返されます。 
+この操作は、表示名、保持 ID、保持期間、保持の種類、保持アクション、および説明タグ、 **および IsVisible** プロパティ **、OptedInto** プロパティ、 **および IsArchive** プロパティの値を返します。 
   
-### <a name="getuserretentionpolicytags-operation-soap-headers"></a>GetUserRetentionPolicyTags 操作の SOAP ヘッダー
+### <a name="getuserretentionpolicytags-operation-soap-headers"></a>GetUserRetentionPolicyTags 操作 SOAP ヘッダー
 
-**GetUserRetentionPolicyTags**操作では、次の表に示す SOAP ヘッダーを使用できます。 
+**GetUserRetentionPolicyTags** 操作では、次の表に示す SOAP ヘッダーを使用できます。 
   
-|**ヘッダー名**|**要素**|**説明**|
+|**ヘッダー名**|**Element**|**説明**|
 |:-----|:-----|:-----|
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。 これは要求に適用されます。  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 これは応答に適用されます。  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマ バージョンを識別します。 これは要求に適用されます。  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 これは、応答に適用されます。  <br/> |
    
 ## <a name="getuserretentionpolicytags-operation-request-example"></a>GetUserRetentionPolicyTags 操作要求の例
 
-次の**GetUserRetentionPolicyTags**操作要求の例は、現在のユーザーのタグのリストを取得する方法を示しています。 
+**GetUserRetentionPolicyTags** 操作要求の次の例は、現在のユーザーのタグのリストを取得する方法を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -56,13 +56,13 @@ ms.locfileid: "44530833"
 </soap:Envelope>
 ```
 
-要求 SOAP 本文には、次の要素が含まれています。
+要求 SOAP 本文には、次の要素が含まれます。
   
 - [GetUserRetentionPolicyTags](getuserretentionpolicytags.md)
     
-## <a name="successful-getuserretentionpolicytags-operation-response"></a>成功した GetUserRetentionPolicyTags 操作の応答
+## <a name="successful-getuserretentionpolicytags-operation-response"></a>GetUserRetentionPolicyTags 操作応答の成功
 
-次の例は、 **GetUserRetentionPolicyTags**操作要求に対する正常な応答を示しています。 
+次の例は **、GetUserRetentionPolicyTags** 操作要求に対する正常な応答を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -165,13 +165,13 @@ ms.locfileid: "44530833"
     
 - [RetentionPolicyTags](retentionpolicytags.md)
     
-- [New-retentionpolicytag](retentionpolicytag.md)
+- [RetentionPolicyTag](retentionpolicytag.md)
     
-- [DisplayName (文字列)](displayname-string.md)
+- [DisplayName (string)](displayname-string.md)
     
 - [RetentionId](retentionid.md)
     
-- [保存期間](retentionperiod.md)
+- [RetentionPeriod](retentionperiod.md)
     
 - [Type (ElcFolderType)](type-elcfoldertype.md)
     
@@ -187,5 +187,5 @@ ms.locfileid: "44530833"
     
 ## <a name="getuserretentionpolicytags-operation-error-response"></a>GetUserRetentionPolicyTags 操作エラー応答
 
-EWS に汎用のエラーコードについては[、「応答](responsecode.md)」を参照してください。
+EWS に汎用的なエラー コードについては [、「ResponseCode」を参照してください](responsecode.md)。
   

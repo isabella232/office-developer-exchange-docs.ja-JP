@@ -1,23 +1,23 @@
 ---
-title: 追加アイテム
+title: IncludeNonIndexableItems
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: af7f202b-2889-447e-bdeb-aaad18ce6b46
-description: この要素には、インデックスを作成できないアイテムを含めるかどうかを示すブール値が含まれています。
-ms.openlocfilehash: eab559e938f0b949d79626ae5bf61b3d4a838924
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: IncludeNonIndexableItems 要素には、インデックスを作成できないアイテムを含めるかどうかを示すブール値が含まれています。
+ms.openlocfilehash: 33ff8c59c3ef1d9a91f87870e0a876c5a39ce795
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460625"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514600"
 ---
-# <a name="includenonindexableitems"></a>追加アイテム
+# <a name="includenonindexableitems"></a>IncludeNonIndexableItems
 
-この**要素には、** インデックスを作成できないアイテムを含めるかどうかを示す**ブール**値が含まれています。 
+**IncludeNonIndexableItems** 要素には、インデックスを作成できないアイテムを含めるかどうかを示すブール値が含まれています。 
   
 ```XML
 <IncludeNonIndexableItems>true | false</IncludeNonIndexableItems>
@@ -42,7 +42,7 @@ ms.locfileid: "44460625"
   
 ## <a name="text-value"></a>テキスト値
 
-リスト**アイテム**の文字列値が**true**の場合は、インデックスを作成できないアイテムがメールボックス保持に含まれていることを示します。 値が**false**の場合、インデックス付けできないアイテムはメールボックス保持に含まれないことを示します。 
+**IncludeNonIndexableItems** 要素のテキスト値 **true** は、インデックスを作成できないアイテムがメールボックス保持に含まれるかどうかを示します。 false の **値は** 、インデックスを作成できないアイテムがメールボックスの保持に含まれていないかどうかを示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44460625"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

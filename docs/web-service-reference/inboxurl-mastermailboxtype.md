@@ -1,23 +1,23 @@
 ---
-title: 受信トレイの Url (MasterMailboxType)
+title: InboxUrl (MasterMailboxType)
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 42f3bceb-759e-422a-a3f0-e1b3b2f51d03
-description: 受信トレイ Url (MasterMailboxType) 要素は、内部使用のみを目的としています。
-ms.openlocfilehash: 62bf3f50e7b7fe3eaf929c32ad56ca1adcbe8c89
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: InboxUrl (MasterMailboxType) 要素は、内部での使用のみを目的とします。
+ms.openlocfilehash: 9e97bfb879e1e6a102b27b6409e373b233beca4a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465990"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515671"
 ---
-# <a name="inboxurl-mastermailboxtype"></a>受信トレイの Url (MasterMailboxType)
+# <a name="inboxurl-mastermailboxtype"></a>InboxUrl (MasterMailboxType)
 
-受信**トレイ url (MasterMailboxType)** 要素は、内部使用のみを目的としています。 
+**InboxUrl (MasterMailboxType)** 要素は、内部での使用のみを目的とします。 
 
 ## <a name="attributes-and-elements"></a>属性と要素
 

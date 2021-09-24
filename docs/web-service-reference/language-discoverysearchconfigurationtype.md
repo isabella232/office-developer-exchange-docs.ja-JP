@@ -1,23 +1,23 @@
 ---
-title: 言語 (DiscoverySearchConfigurationType)
+title: Language (DiscoverySearchConfigurationType)
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 34eab81c-d832-4925-9f76-d69f24b36931
-description: Language (DiscoverySearchConfigurationType) 要素は、カルチャ固有の日付範囲の形式に使用されるカルチャを指定します。 検索クエリで使用される言語も指定します。
-ms.openlocfilehash: 3cf85525147bec5d6dfc6fe2b2af5916d42c44be
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Language (DiscoverySearchConfigurationType) 要素は、日付範囲のカルチャ固有の形式に使用するカルチャを識別します。 また、検索クエリで使用される言語も指定します。
+ms.openlocfilehash: 5d51960aa00b2c47d96972abc05e4d6027eeecb3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463287"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540896"
 ---
-# <a name="language-discoverysearchconfigurationtype"></a>言語 (DiscoverySearchConfigurationType)
+# <a name="language-discoverysearchconfigurationtype"></a>Language (DiscoverySearchConfigurationType)
 
-**Language (DiscoverySearchConfigurationType)** 要素は、カルチャ固有の日付範囲の形式に使用されるカルチャを指定します。 検索クエリで使用される言語も指定します。 
+Language **(DiscoverySearchConfigurationType)** 要素は、日付範囲のカルチャ固有の形式に使用するカルチャを識別します。 また、検索クエリで使用される言語も指定します。 
   
 ```XML
 <Language />
@@ -46,7 +46,7 @@ ms.locfileid: "44463287"
   
 ## <a name="remarks"></a>注釈
 
-この要素は、 [Searchmailboxes ボックス操作](searchmailboxes-operation.md)または[SetHoldOnMailboxes 操作](setholdonmailboxes-operation.md)で指定された日付範囲の形式を指定します。
+この要素は [、SearchMailboxes](searchmailboxes-operation.md) 操作または [SetHoldOnMailboxes](setholdonmailboxes-operation.md)操作で指定された日付範囲の形式を指定します。
   
 この要素は Exchange Server 2013 Service Pack 1 (SP1) で導入されました。
   
@@ -57,9 +57,9 @@ ms.locfileid: "44463287"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -68,5 +68,5 @@ ms.locfileid: "44463287"
 [DiscoverySearchConfiguration](discoverysearchconfiguration.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

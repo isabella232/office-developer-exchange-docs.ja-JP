@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - InvalidRecipient
 api_type:
 - schema
 ms.assetid: 9e2d3433-22d7-444b-9883-e5649297d8fe
-description: InvalidRecipient 要素には、無効な受信者の SMTP アドレスと、受信者が無効である理由に関する情報が含まれています。
-ms.openlocfilehash: f301b31c1054625151ce90e41fca5e3efc21f473
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: InvalidRecipient 要素には、無効な受信者の SMTP アドレスと、受信者が無効である理由に関する情報が含まれる。
+ms.openlocfilehash: 507cdf23d42477e7b70258b674246463e10f975b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526551"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539536"
 ---
 # <a name="invalidrecipient"></a>InvalidRecipient
 
-**Invalidrecipient**要素には、無効な受信者の SMTP アドレスと、受信者が無効である理由に関する情報が含まれています。 
+**InvalidRecipient 要素には**、無効な受信者の SMTP アドレスと、受信者が無効である理由に関する情報が含まれる。 
   
 ```XML
 <InvalidRecipient>
@@ -32,7 +32,7 @@ ms.locfileid: "44526551"
 
 ```
 
- **Invalid受信者の種類**
+ **InvalidRecipientType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -45,9 +45,9 @@ ms.locfileid: "44526551"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[SmtpAddress](smtpaddress.md) <br/> |無効な受信者の SMTP アドレスを含みます。 この要素は必須です。  <br/> |
-|[応答 Secmode (Invalid受信者応答 Secodetype)](responsecode-invalidrecipientresponsecodetype.md) <br/> |要求で発生した特定のエラーを識別するエラーコードを提供します。 この要素は必須です。  <br/> |
-|[MessageText](messagetext.md) <br/> |応答の状態を説明するテキストを提供します。 この要素は省略できます。  <br/> |
+|[SmtpAddress](smtpaddress.md) <br/> |無効な受信者の SMTP アドレスが含まれる。 この要素は必須です。  <br/> |
+|[ResponseCode (InvalidRecipientResponseCodeType)](responsecode-invalidrecipientresponsecodetype.md) <br/> |要求が発生した特定のエラーを識別するエラー コードを提供します。 この要素は必須です。  <br/> |
+|[MessageText](messagetext.md) <br/> |応答の状態のテキストの説明を提供します。 この要素は省略できます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -64,9 +64,9 @@ ms.locfileid: "44526551"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -75,5 +75,5 @@ ms.locfileid: "44526551"
 [GetSharingMetadata 操作](getsharingmetadata-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

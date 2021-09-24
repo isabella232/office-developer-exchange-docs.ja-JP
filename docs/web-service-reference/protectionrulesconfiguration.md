@@ -1,27 +1,27 @@
 ---
-title: Protectionルールの構成
+title: ProtectionRulesConfiguration
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ProtectionRulesConfiguration
 api_type:
 - schema
 ms.assetid: e5b4699a-476e-4053-bb52-873eb921c046
-description: Protectionrules 構成要素には、保護ルールサービスのサービス構成情報が含まれています。
-ms.openlocfilehash: e664fba78f170c9f4c59b49b3a08c0dd2e4ed4cd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ProtectionRulesConfiguration 要素には、保護ルール サービスのサービス構成情報が含まれる。
+ms.openlocfilehash: 0d88f5c8ef414c96ae5f65cf3f82362fe2137472
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456770"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516405"
 ---
-# <a name="protectionrulesconfiguration"></a>Protectionルールの構成
+# <a name="protectionrulesconfiguration"></a>ProtectionRulesConfiguration
 
-**Protectionrules 構成**要素には、保護ルールサービスのサービス構成情報が含まれています。 
+**ProtectionRulesConfiguration 要素** には、保護ルール サービスのサービス構成情報が含まれる。 
   
 ```XML
 <ProtectionRulesConfiguration RefreshInterval="">
@@ -39,20 +39,20 @@ ms.locfileid: "44456770"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**RefreshInterval** <br/> |クライアントがサーバーに保護ルールを要求する頻度 (時間単位) を指定します。 この属性は必須であり、その値は1以上の整数である必要があります。  <br/> |
+|**RefreshInterval** <br/> |クライアントがサーバーから保護ルールを要求する頻度を、数時間で指定します。 この属性は必須であり、その値は 1 以上の整数である必要があります。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ルール](rules-ex15websvcsotherref.md) <br/> |保護ルールの配列。 この要素は必須です。  <br/> |
-|[InternalDomains (SmtpDomainList)](internaldomains-smtpdomainlist.md) <br/> |組織の内部 SMTP ドメインのリストを識別します。 この要素は必須です。  <br/> |
+|[ルール ](rules-ex15websvcsotherref.md) <br/> |保護ルールの配列。 この要素は必須です。  <br/> |
+|[InternalDomains (SmtpDomainList)](internaldomains-smtpdomainlist.md) <br/> |組織の内部 SMTP ドメインの一覧を識別します。 この要素は必須です。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ServiceConfigurationResponseMessageType](serviceconfigurationresponsemessagetype.md) <br/> |サービス構成の設定が含まれます。  <br/> |
+|[ServiceConfigurationResponseMessageType](serviceconfigurationresponsemessagetype.md) <br/> |サービス構成設定が含まれる。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -60,7 +60,7 @@ ms.locfileid: "44456770"
   
 ## <a name="remarks"></a>注釈
 
-保護ルールサービスの構成は、ルール、内部ドメイン、および更新間隔のリストで構成されます。
+保護ルール サービスの構成は、ルール、内部ドメイン、および更新間隔の一覧で構成されます。
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
@@ -69,13 +69,13 @@ ms.locfileid: "44456770"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

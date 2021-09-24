@@ -1,22 +1,22 @@
 ---
-title: 組織/リレーションシップ設定コレクション (SOAP)
+title: OrganizationRelationshipSettingsCollection (SOAP)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 33456abf-a1b6-46da-a864-3ec8af2780de
-description: 組織のリレーションシップ要素は、クエリに一致する組織上の関係のリストを表します。 組織内で使用されるのは、組織内のすべてのオブジェクトのコレクションです。 この要素はクライアントによって使用されません。
-ms.openlocfilehash: 52f84d932e74393a844f5f55fbd1d09bfb0a5d4e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: OrganizationRelationshipSettingsCollection 要素は、クエリに一致する組織の関係の一覧を表します。 OrganizationRelationshipSettingsCollection 要素は内部でのみ使用できます。 この要素は、クライアントでは使用されません。
+ms.openlocfilehash: e3bb4c21e77bc22af051c63b714aaaef4d883609
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462424"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514236"
 ---
-# <a name="organizationrelationshipsettingscollection-soap"></a>組織/リレーションシップ設定コレクション (SOAP)
+# <a name="organizationrelationshipsettingscollection-soap"></a>OrganizationRelationshipSettingsCollection (SOAP)
 
-組織の**リレーションシップ要素は、クエリ**に一致する組織上の関係のリストを表します。 組織内で使用されるのは、組織内のすべてのオブジェクトの**コレクション**です。 この要素はクライアントによって使用されません。 
+**OrganizationRelationshipSettingsCollection** 要素は、クエリに一致する組織の関係の一覧を表します。 **OrganizationRelationshipSettingsCollection 要素** は内部でのみ使用できます。 この要素は、クライアントでは使用されません。 
   
 ```XML
 <OrganizationRelationshipSettingsCollection>
@@ -24,7 +24,7 @@ ms.locfileid: "44462424"
 </OrganizationRelationshipSettingsCollection>
 ```
 
- **組織の Relationshiprelationshipsettingscollection**
+ **OrganizationRelationshipSettingsCollection**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -37,13 +37,13 @@ ms.locfileid: "44462424"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[組織のリレーションシップ設定 (SOAP)](organizationrelationshipsettings-soap.md) <br/> |選択された組織と SMTP アドレスの組織上の関係のリストを表します。  <br/> |
+|[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |選択した組織および SMTP アドレスの組織関係の一覧を表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Response (Get組織関係) (SOAP)](response-getorganizationrelationshipsoap.md) <br/> |[Get組織の設定操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)応答情報が含まれています。  <br/> |
+|[Response (GetOrganizationRelationship) (SOAP)](response-getorganizationrelationshipsoap.md) <br/> |[GetOrganizationRelationshipSettings 操作 (SOAP) 応答情報が](getorganizationrelationshipsettings-operation-soap.md)含まれる。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -55,12 +55,12 @@ ms.locfileid: "44462424"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[Get組織の Relationshipsettings 操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)
+[GetOrganizationRelationshipSettings 操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)
 

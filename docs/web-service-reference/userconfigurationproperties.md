@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UserConfigurationProperties
 api_type:
 - schema
 ms.assetid: c143a6ec-62ad-4d48-b844-b1ad88054bc1
 description: UserConfigurationProperties 要素は、GetUserConfiguration 操作で取得するプロパティの種類を指定します。
-ms.openlocfilehash: af6bee64516a7410d96ecc7581e8e819f550ddc1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 0aed3ffc680ac881410469fe762349739ba924a1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466494"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515006"
 ---
 # <a name="userconfigurationproperties"></a>UserConfigurationProperties
 
-**Userconfigurationproperties**要素は、getuserconfiguration 操作で取得するプロパティの種類を指定します。 
+**UserConfigurationProperties 要素** は、GetUserConfiguration 操作で取得するプロパティの種類を指定します。 
   
 ```xml
 <UserConfigurationProperties>Id | Dictionary | XmlData | BinaryData | All</UserConfigurationProperties>
@@ -48,15 +48,15 @@ ms.locfileid: "44466494"
    
 ## <a name="text-value"></a>テキスト値
 
-次の表に、 **Userconfigurationproperties**要素に指定できる値を示します。 
+次の表に **、UserConfigurationProperties 要素に使用できる値を示** します。 
   
 |**値**|**説明**|
 |:-----|:-----|
-|ID  <br/> |Identifier プロパティを指定します。  <br/> |
-|Dictionary  <br/> |ディクショナリのプロパティの種類を指定します。  <br/> |
-|XmlData  <br/> |XML データプロパティの種類を指定します。  <br/> |
-|BinaryData  <br/> |バイナリデータのプロパティの種類を指定します。  <br/> |
-|すべて  <br/> |識別子、辞書、XML データ、およびバイナリデータのプロパティの種類を指定します。  <br/> |
+|ID  <br/> |識別子プロパティを指定します。  <br/> |
+|Dictionary  <br/> |ディクショナリ プロパティの種類を指定します。  <br/> |
+|XmlData  <br/> |XML データ プロパティの種類を指定します。  <br/> |
+|BinaryData  <br/> |バイナリ データ プロパティの種類を指定します。  <br/> |
+|すべて  <br/> |識別子、辞書、XML データ、およびバイナリ データ プロパティの種類を指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -67,13 +67,13 @@ ms.locfileid: "44466494"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

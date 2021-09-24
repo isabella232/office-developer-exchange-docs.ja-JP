@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7914995f-444b-4798-8c92-3c5b7d70042d
-description: CalendarUrl (MasterMailboxType) 要素は、内部使用のみを目的としています。
-ms.openlocfilehash: 249dcf3d42ccc5202a2a62bbbb67bc33a2fa2fff
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: CalendarUrl (MasterMailboxType) 要素は、内部での使用のみを目的とします。
+ms.openlocfilehash: 367cbaaebe0b4d37d4258fbb808f8cec74d1c3ea
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460807"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516084"
 ---
 # <a name="calendarurl-mastermailboxtype"></a>CalendarUrl (MasterMailboxType)
 
-**Calendarurl (MasterMailboxType)** 要素は、内部使用のみを目的としています。 
+**CalendarUrl (MasterMailboxType) 要素** は、内部での使用のみを目的とします。 
 
 ## <a name="attributes-and-elements"></a>属性と要素
 

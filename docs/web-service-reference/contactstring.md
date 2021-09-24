@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c3c26063-9f3d-414d-84b7-4a2e12281157
 description: ContactString 要素は、連絡先の表示名を指定します。
-ms.openlocfilehash: cecb742c3ddfca5633c28b2018314394e3af12a3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 7f2db935aeb7d35db21334b3cccb36b13af0faa1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461500"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513837"
 ---
 # <a name="contactstring"></a>ContactString
 
-**Contactstring**要素は、連絡先の表示名を指定します。 
+**ContactString 要素** は、連絡先の表示名を指定します。 
   
 ```XML
 <ContactString></ContactString>
@@ -44,7 +44,7 @@ ms.locfileid: "44461500"
    
 ## <a name="text-value"></a>テキスト値
 
-**Contactstring**要素のテキスト値は、表示名を指定する文字列型 (string) の値です。 
+ContactString 要素の **テキスト値** は、表示名を指定する文字列値です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -58,12 +58,12 @@ ms.locfileid: "44461500"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 578b1682-f3e1-4ccc-aa24-d2ca1a9de596
-description: SchemaVersionSupported 要素には、クライアントでサポートされているマニフェストスキーマのバージョンが含まれています。
-ms.openlocfilehash: df70d8ecf78b4f9b99ceaa3c28d2b1831a1c6171
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SchemaVersionSupported 要素には、クライアントでサポートされているマニフェスト スキーマのバージョンが含まれています。
+ms.openlocfilehash: 289631467499bdc0c80e1572ce43202153f2103c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465794"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515216"
 ---
 # <a name="schemaversionsupported"></a>SchemaVersionSupported
 
-**SchemaVersionSupported**要素には、クライアントでサポートされているマニフェストスキーマのバージョンが含まれています。 
+**SchemaVersionSupported 要素** には、クライアントでサポートされているマニフェスト スキーマのバージョンが含まれています。 
   
 ```XML
 <SchemaVersionSupported />
@@ -38,11 +38,11 @@ ms.locfileid: "44465794"
   
 ### <a name="parent-elements"></a>親要素
 
-[Getappmanifests が](getappmanifests.md)
+[GetAppManifests](getappmanifests.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**SchemaVersionSupported**要素のテキスト値には、クライアントでサポートされているマニフェストスキーマのバージョンが含まれています。 この値は、応答でクライアントに返されるアプリケーションマニフェストを示します。 
+**SchemaVersionSupported** 要素のテキスト値には、クライアントでサポートされているマニフェスト スキーマのバージョンが含まれています。 この値は、応答でクライアントに返すアプリ マニフェストを示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -53,16 +53,16 @@ ms.locfileid: "44465794"
 |||
 |:-----|:-----|
 |Namespace  <br/> | https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
 |検証ファイル  <br/> |該当なし  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[Getappmanifests が](getappmanifests.md)
+[GetAppManifests](getappmanifests.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

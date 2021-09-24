@@ -1,27 +1,27 @@
 ---
-title: InvalidRecipient (メールヒント)
+title: InvalidRecipient (MailTips)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - InvalidRecipient
 api_type:
 - schema
 ms.assetid: 48959a99-bb0d-4004-963e-5a5baaa96476
-description: InvalidRecipient 要素は、受信者が無効であるかどうかを示します。
-ms.openlocfilehash: fddd75beb2228c50084bd38b4f4745064cc281dc
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: InvalidRecipient 要素は、受信者が無効かどうかを示します。
+ms.openlocfilehash: 747210c234ecf39bd711ace938ad16af2353eaad
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530003"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539571"
 ---
-# <a name="invalidrecipient-mailtips"></a>InvalidRecipient (メールヒント)
+# <a name="invalidrecipient-mailtips"></a>InvalidRecipient (MailTips)
 
-**Invalidrecipient**要素は、受信者が無効であるかどうかを示します。 
+**InvalidRecipient 要素** は、受信者が無効かどうかを示します。 
   
 ```XML
 <InvalidRecipient>true | false</InvalidRecipient>
@@ -44,11 +44,11 @@ ms.locfileid: "44530003"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[メールヒント](mailtips.md) <br/> |さまざまな種類のメールヒントの値を表します。  <br/> |
+|[メールヒント](mailtips.md) <br/> |さまざまな種類のメール ヒントの値を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-この要素のテキスト値は、受信者が無効な場合は**true**です。 受信者が無効である場合、値は**false**になります。 
+受信者が無効な場合、この **要素の** テキスト値は true です。 受信者が無効 **ではない場合** 、値は false です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -59,13 +59,13 @@ ms.locfileid: "44530003"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsReadReceipt
 api_type:
 - schema
 ms.assetid: e60e525f-c136-469a-b68b-b3dc01f400a6
-description: IsReadReceipt 要素は、条件または例外を適用するために、受信メッセージが開封確認である必要があるかどうかを示します。
-ms.openlocfilehash: e86a7776bc43204dae9fc92f21d4304255ddb888
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: IsReadReceipt 要素は、条件または例外を適用するために受信メッセージを読み取る必要があるかどうかを示します。
+ms.openlocfilehash: 65ed10e4bc3fa38aed0566e672d57ec720556b94
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463903"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514474"
 ---
 # <a name="isreadreceipt"></a>IsReadReceipt
 
-**Isreadreceipt**要素は、条件または例外を適用するために、受信メッセージが開封確認である必要があるかどうかを示します。 
+**IsReadReceipt** 要素は、条件または例外を適用するために受信メッセージを読み取る必要があるかどうかを示します。 
   
 ```XML
 <IsReadReceipt> true | false</IsReadReceipt>
@@ -44,12 +44,12 @@ ms.locfileid: "44463903"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[条件](conditions.md) <br/> |そのルールのルールの処理を開始するときに実行される条件を表します。  <br/> |
-|[例外](exceptions.md) <br/> |受信トレイルールの利用可能なすべてのルールの例外条件を表します。  <br/> |
+|[条件](conditions.md) <br/> |満たされると、そのルールのルール アクションをトリガーする条件を表します。  <br/> |
+|[例外](exceptions.md) <br/> |受信トレイ ルールで使用可能なすべてのルール例外条件を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値が**true の場合**、条件または例外を適用するには、メッセージが開封確認メッセージである必要があることを示します。 条件または例外を適用するために、メッセージが開封確認を必要としない場合、値は**false**になります。
+true のテキスト **値は** 、条件または例外が適用されるには、メッセージが読み取りレシートである必要があります。 適用する条件または例外のメッセージが読み取りレシートである必要がない場合、値は false **です**。
   
 ## <a name="remarks"></a>注釈
 
@@ -60,13 +60,13 @@ ms.locfileid: "44463903"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

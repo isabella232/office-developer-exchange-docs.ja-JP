@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IncludesLastItemInRange
 api_type:
 - schema
 ms.assetid: e7d6c7d3-548e-48b0-a313-bfef81e4832a
-description: この要素は、最後に同期する項目が応答に含まれているかどうかを示します。
-ms.openlocfilehash: bc526a38c7320609915864507f715890bedd0c9d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: IncludesLastItemInRange 要素は、同期する最後のアイテムが応答に含まれているかどうかを示します。
+ms.openlocfilehash: 60798d076eb204e2b89610cfb20e2be1c2b9b4fb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530051"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514586"
 ---
 # <a name="includeslastiteminrange"></a>IncludesLastItemInRange
 
-この**要素は**、最後に同期する項目が応答に含まれているかどうかを示します。 
+**IncludesLastItemInRange** 要素は、同期する最後のアイテムが応答に含まれているかどうかを示します。 
   
 [SyncFolderItemsResponse](syncfolderitemsresponse.md)
   
@@ -60,16 +60,16 @@ ms.locfileid: "44530051"
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -78,5 +78,5 @@ ms.locfileid: "44530051"
 [SyncFolderItems 操作](syncfolderitems-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - HiddenRecipient
 api_type:
 - schema
 ms.assetid: a8209f75-0070-4424-8dcd-273cfd192728
-description: HiddenRecipient 要素は、権限のないユーザーから非表示にする必要がある組織のポリシーによって受信者が追加されたことを示します。
-ms.openlocfilehash: bfe57fabc02ff00c801672b71ccdb0bf1b916bd9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: HiddenRecipient 要素は、受信者が特権のないユーザーから非表示にすべき組織ポリシーによって追加されたかどうかを示します。
+ms.openlocfilehash: 24d7dcad5b8b744351804160ef8d9988b9e393a3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457642"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539690"
 ---
 # <a name="hiddenrecipient"></a>HiddenRecipient
 
-**HiddenRecipient**要素は、権限のないユーザーから非表示にする必要がある組織のポリシーによって受信者が追加されたことを示します。 
+**HiddenRecipient** 要素は、受信者が特権のないユーザーから非表示にすべき組織ポリシーによって追加されたかどうかを示します。 
   
 ```XML
 <HiddenRecipient>true | false</HiddenRecipient>
@@ -44,11 +44,11 @@ ms.locfileid: "44457642"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[受信者 Trackingイベント](recipienttrackingevent.md) <br/> |受信者に対する1つのイベントに関する情報が含まれています。  <br/> |
+|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |受信者の 1 つのイベントの情報を格納します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-この要素は、 **true**または**false**のいずれかになります。 値**true**は、ユーザーが組織のポリシーによって追加されたことを示します。値が**false**の場合は、ユーザーが組織のポリシーによって追加されていないことを示します。 
+この要素には **、true** または false を **指定できます**。 true の **値は** 、ユーザーが組織ポリシーによって追加されたかどうかを示します。false の **値は** 、ユーザーが組織ポリシーによって追加されていないかどうかを示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -59,13 +59,13 @@ ms.locfileid: "44457642"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

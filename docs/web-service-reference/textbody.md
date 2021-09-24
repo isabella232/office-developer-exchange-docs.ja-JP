@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: bd0c0bce-3e7c-47c7-af7f-5ee5f5ad9820
 description: TextBody 要素は、テキスト本文を指定します。
-ms.openlocfilehash: c0002785fb990a251267218f7a5f232e521db41a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 5dfc0aa76f0b0778d785e46fe12259c4a226b89f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459484"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515181"
 ---
 # <a name="textbody"></a>TextBody
 
-**Textbody**要素は、テキスト本文を指定します。 
+**TextBody 要素は**、テキスト本文を指定します。 
   
 ```XML
 <TextBody BodyTypeType=" HTML | Text" IsTruncated=" true | false"></TextBody>
@@ -32,8 +32,8 @@ ms.locfileid: "44459484"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|BodyTypeType  <br/> |本文の種類を示します。 **Bodytypetype**属性の**テキスト**の値は、本文がプレーンテキスト形式であることを示します。 **Bodytypetype**属性の**html**の値は、本文が HTML 形式であることを示します。 **Bodytypetype**属性は必須です。  <br/> |
-|Istrがありません  <br/> |本文の内容が切り捨てられていることを示します。 **Istruncated** attribute のテキスト値が**false**の場合は、本文のコンテンツが切り捨てられていないことを示します。 テキストの本文の長さが[Maximumbodysize](maximumbodysize.md)要素で設定された値よりも長い場合は、正規化された本文が切り捨てられます。  <br/> |
+|BodyTypeType  <br/> |本文の種類を示します。 **BodyTypeType** 属性 **の** Text の値は、本文がテキスト形式で表示されます。 **BodyTypeType** **属性の HTML** の値は、本文が HTML 形式を表します。 **BodyTypeType** 属性が必要です。  <br/> |
+|IsTruncated  <br/> |本文の内容が切り詰められることを示します。 **IsTruncated** 属性のテキスト値 **false** は、本文の内容が切り詰められていない状態を示します。 テキスト本文の長さが MaximumBodySize 要素で設定された値よりも長い場合、正規化された本文 [は切り捨](maximumbodysize.md) てされます。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -41,11 +41,11 @@ ms.locfileid: "44459484"
   
 ### <a name="parent-elements"></a>親要素
 
-[アイテム](item.md)  | [連絡先](contact.md)  | [メッセージ](message-ex15websvcsotherref.md)  | [DistributionList](distributionlist.md)  | [Calendaritem](calendaritem.md)  | [Postitem](postitem.md)  | [タスク](task.md)
+[アイテム](item.md)  | [連絡先](contact.md)  | [メッセージ](message-ex15websvcsotherref.md)  | [DistributionList](distributionlist.md)  | [CalendarItem](calendaritem.md)  | [PostItem](postitem.md)  | [タスク](task.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**Textbody**要素のテキスト値は、アイテムの本文です。 
+TextBody 要素の **テキスト値** は、アイテムのテキスト本文です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -58,8 +58,8 @@ ms.locfileid: "44459484"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

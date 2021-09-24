@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UserOofSettings
 api_type:
 - schema
 ms.assetid: 0a95ca63-660e-4cc0-82e4-3f74fb4ae21c
-description: UserOofSettings 要素は、不在 (OOF) 設定を指定します。
-ms.openlocfilehash: 417c3d5061a6229d41eb57f72e89f03213acf460
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: UserOofSettings 要素は、既定の (OOF) Officeを指定します。
+ms.openlocfilehash: 0fa550a97464414570faf391d3633243ff2e2144
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461906"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513970"
 ---
 # <a name="useroofsettings"></a>UserOofSettings
 
-**Useroofsettings**要素は、不在 (OOF) 設定を指定します。 
+**UserOofSettings** 要素は、既定の (OOF) Officeを指定します。 
   
 [SetUserOofSettingsRequest](setuseroofsettingsrequest.md)
   
@@ -50,25 +50,25 @@ ms.locfileid: "44461906"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[OofState](oofstate.md) <br/> |ユーザーの不在時の状態を設定します。  <br/> |
-|[ExternalAudience](externalaudience.md) <br/> |外部の OOF メッセージを送信するユーザーを指定する値を設定または格納します。  <br/> |
-|[Duration (UserOofSettings)](duration-useroofsettings.md) <br/> |[Oofstate](oofstate.md)要素が [**スケジュール済み**] に設定されている場合に、不在時の状態を有効にする期間を指定します。 [Oofstate](oofstate.md)要素が**Enabled**または**Disabled**に設定されている場合、この要素の値は無視されます。  <br/> |
-|[InternalReply](internalreply.md) <br/> |ユーザーのドメインまたは信頼されたドメイン内の他のユーザーに送信される OOF 応答を格納します。  <br/> |
-|[ExternalReply](externalreply.md) <br/> |受信者のドメインまたは信頼されたドメイン外のアドレスに送信される OOF 応答を含みます。  <br/> |
+|[OofState](oofstate.md) <br/> |ユーザーの OOF 状態を設定します。  <br/> |
+|[ExternalAudience](externalaudience.md) <br/> |外部 OOF メッセージの送信先を決定する値を設定または格納します。  <br/> |
+|[Duration (UserOofSettings)](duration-useroofsettings.md) <br/> |[OofState](oofstate.md)要素が Scheduled に設定されている場合に OOF 状態が有効になっている期間を指定 **します**。 [OofState 要素が](oofstate.md)Enabled または **Disabled** に設定 **されている** 場合、この要素の値は無視されます。  <br/> |
+|[InternalReply](internalreply.md) <br/> |ユーザーのドメインまたは信頼できるドメイン内の他のユーザーに送信される OOF 応答が含まれる。  <br/> |
+|[ExternalReply](externalreply.md) <br/> |受信者のドメインまたは信頼できるドメイン外のアドレスに送信される OOF 応答が含まれます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[SetUserOofSettingsRequest](setuseroofsettingsrequest.md) <br/> |メールボックスユーザーの不在時の設定とメッセージを設定するために使用する引数が含まれています。  <br/> この要素の XPath 式を次に示します。  <br/>  `/SetUserOofSettingsRequest` <br/> |
+|[SetUserOofSettingsRequest](setuseroofsettingsrequest.md) <br/> |メールボックス ユーザーの OOF 設定とメッセージの設定に使用される引数を格納します。  <br/> 次に、この要素の XPath 式を示します。  <br/>  `/SetUserOofSettingsRequest` <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="example"></a>例
 
-SetUserOofSettings 要求の次の例では、OoFState を**有効**に設定し、不在時の時間を10日間に設定し、内部および外部の oof メッセージを設定します。
+SetUserOofSettings 要求の次の例は、OoFState を **Enabled** に設定し、OOF の期間を 10 日間設定し、内部および外部の OOF メッセージを設定します。
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -104,9 +104,9 @@ SetUserOofSettings 要求の次の例では、OoFState を**有効**に設定し
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

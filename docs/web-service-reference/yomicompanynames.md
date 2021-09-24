@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5c414af9-34d0-41ce-bda9-0d4ca3f3be79
-description: YomiCompanyNames 要素では、関連付けられているペルソナについて、ふりがな (日本語) の会社名とそのソース attributions の識別子の配列を指定します。
-ms.openlocfilehash: 41b97998425926750a3ecc7e17233f2066759689
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: YomiCompanyNames 要素は、関連付けられたペルサに対する、日本語の電話番号とソース属性の識別子の配列を指定します。
+ms.openlocfilehash: c7ee24636f97bc0f568d34d862e9ea332e3204dc
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457866"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540385"
 ---
 # <a name="yomicompanynames"></a>YomiCompanyNames
 
-**YomiCompanyNames**要素では、関連付けられているペルソナについて、ふりがな (日本語) の会社名とそのソース attributions の識別子の配列を指定します。 
+**YomiCompanyNames** 要素は、関連付けられたペルサに対する、日本語の電話番号とソース属性の識別子の配列を指定します。 
   
 ```XML
 <YomiCompanyNames>
@@ -53,8 +53,8 @@ ms.locfileid: "44457866"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

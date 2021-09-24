@@ -1,23 +1,23 @@
 ---
-title: 電話機
+title: CallbackPhones
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8a7c1377-aac3-42c5-820f-d01cd8e9cf5c
-description: Attributions は、呼び出し元の電話番号の配列と、関連付けられたペルソナのソースの識別子を指定します。
-ms.openlocfilehash: 79d74beffb8de8981e042b0c80e1aa5505a1048c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: CallbackPhones 要素は、コールバック電話番号の配列と、関連付けられたペルサのソース属性の識別子を指定します。
+ms.openlocfilehash: 99a3cec041886a40d4f25fc1c0d272111aae7331
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529463"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514754"
 ---
-# <a name="callbackphones"></a>電話機
+# <a name="callbackphones"></a>CallbackPhones
 
-Attributions**は、呼び出し**元の電話番号の配列と、関連付けられたペルソナのソースの識別子を指定します。 
+**CallbackPhones 要素** は、コールバック電話番号の配列と、関連付けられたペルサのソース属性の識別子を指定します。 
   
 ```XML
 <CallbackPhones>
@@ -39,14 +39,14 @@ Attributions**は、呼び出し**元の電話番号の配列と、関連付け�
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Value (PersonaPhoneNumberType)](value-personaphonenumbertype.md) <br/> |電話番号と種類の情報を指定し、attributions のセットに関連付けられています。  <br/> |
-|[Attributions (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md) <br/> |関連する**Value**要素の attributions の配列を指定します。  <br/> |
+|[Value (PersonaPhoneNumberType)](value-personaphonenumbertype.md) <br/> |電話番号と種類の情報を指定し、属性のセットに関連付けられる。  <br/> |
+|[Attributions (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md) <br/> |関連付けられた Value 要素の属性の配列を **指定** します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ユーザー](persona.md) <br/> |**Getpersona**要求によって返される一連のペルソナデータを指定します。  <br/> |
+|[ユーザー](persona.md) <br/> |**GetPersona** 要求によって返されるペルソナ データのセットを指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -60,12 +60,12 @@ Attributions**は、呼び出し**元の電話番号の配列と、関連付け�
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -4,29 +4,29 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 76c5532b-de5f-4227-9284-eab8ef076c55
-description: OOFUrl 要素は、メールが有効なユーザーの空き時間情報サービスの最適なインスタンスの URL を指定します。
-ms.openlocfilehash: f32ec4416bc0a1a144ff21aa9d2dac89bac30495
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: OOFUrl 要素は、メールが有効なユーザーの可用性サービスの最適なインスタンスの URL を指定します。
+ms.openlocfilehash: 9473b1fe24de70b9a16b45bd4fb76ae0ba4f1ae2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462522"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539213"
 ---
 # <a name="oofurl-pox"></a>OOFUrl (POX)
 
-**Oofurl**要素は、メールが有効なユーザーの空き時間情報サービスの最適なインスタンスの URL を指定します。 
+**OOFUrl 要素** は、メールが有効なユーザーの可用性サービスの最適なインスタンスの URL を指定します。 
   
-[自動検出 (POX)](autodiscover-pox.md)
+[AutoDiscover (POX)](autodiscover-pox.md)
   
-[応答 (POX)](response-pox.md)
+[Response (POX)](response-pox.md)
   
-[アカウント (POX)](account-pox.md)
+[Account (POX)](account-pox.md)
   
-[プロトコル (POX)](protocol-pox.md)
+[Protocol (POX)](protocol-pox.md)
   
 [OOFUrl (POX)](oofurl-pox.md)
   
@@ -50,15 +50,15 @@ ms.locfileid: "44462522"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
+|[Protocol (POX)](protocol-pox.md) <br/> |クライアント アクセス サーバーの役割がインストールされている 2007 年Microsoft Exchange Serverコンピューターにクライアントを接続するための仕様が含まれている。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-Text 値は、Exchange トポロジの不在時構成サーバー URL を指定します。
+テキスト値は、トポロジの既定の構成サーバーの URL をExchangeします。
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+[POX 自動検出 XML 要素のExchange](pox-autodiscover-xml-elements-for-exchange.md)
 

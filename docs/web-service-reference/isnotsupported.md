@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsNotSupported
 api_type:
 - schema
 ms.assetid: 4db469ae-1515-47ea-9905-6aabf199febd
-description: IsNotSupported 要素は、マネージコード Api を使用してルールを変更できないかどうかを示します。
-ms.openlocfilehash: e2d0c506209978fd5e8702e0de6cddf2e9c4b7fa
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: IsNotSupported 要素は、マネージ コード API を使用してルールを変更できないかどうかを示します。
+ms.openlocfilehash: 4a123acbce3019d9ac5fcdb4cbfa2b60dd4529fe
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465836"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514544"
 ---
 # <a name="isnotsupported"></a>IsNotSupported
 
-**IsNotSupported**要素は、マネージコード api を使用してルールを変更できないかどうかを示します。 
+**IsNotSupported 要素** は、マネージ コード API を使用してルールを変更できないかどうかを示します。 
   
 ```XML
 <IsNotSupported/>
@@ -44,11 +44,11 @@ ms.locfileid: "44465836"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ルール (RuleType)](rule-ruletype.md) <br/> |ユーザーのメールボックス内のルールを表します。  <br/> |
+|[Rule (RuleType)](rule-ruletype.md) <br/> |ユーザーのメールボックス内のルールを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値が**true の場合**は、マネージコード api を使用してルールを変更できないことを示します。 値が**false**の場合、マネージコード api を使用してルールを変更できることを示します。 
+true のテキスト **値は** 、マネージ コード API を使用してルールを変更できないことを示します。 false の **値は** 、マネージ コード API を使用してルールを変更できます。 
   
 ## <a name="remarks"></a>注釈
 
@@ -59,13 +59,13 @@ ms.locfileid: "44465836"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

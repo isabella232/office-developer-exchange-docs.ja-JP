@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GlobalHasAttachments
 api_type:
 - schema
 ms.assetid: 3d075e93-14bc-479d-957f-9b7873d1db39
-description: GlobalHasAttachments 要素には、メールボックス内の少なくとも1つの会話アイテムに添付ファイルがあるかどうかを示す値が含まれています。
-ms.openlocfilehash: e314e8e5c06ca7d7820b910c05b381765e88911f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GlobalHasAttachments 要素には、メールボックス内の少なくとも 1 つの会話アイテムに添付ファイルが含まれているかどうかを示す値が含まれる。
+ms.openlocfilehash: a5a12290e9eee4fb29ce7b5f24e9a24c44d8179e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459477"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525878"
 ---
 # <a name="globalhasattachments"></a>GlobalHasAttachments
 
-**Globalhasattachments**要素には、メールボックス内の少なくとも1つの会話アイテムに添付ファイルがあるかどうかを示す値が含まれています。 
+**GlobalHasAttachments** 要素には、メールボックス内の少なくとも 1 つの会話アイテムに添付ファイルが含まれているかどうかを示す値が含まれる。 
   
 [FindConversationResponse](findconversationresponse.md)
   
 [会話](conversations-ex15websvcsotherref.md)
   
-[会話 (ConversationType)](conversation-conversationtype.md)
+[Conversation (ConversationType)](conversation-conversationtype.md)
   
 [GlobalHasAttachments](globalhasattachments.md)
   
@@ -52,24 +52,24 @@ ms.locfileid: "44459477"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[会話 (ConversationType)](conversation-conversationtype.md) <br/> |単一の会話を表します。  <br/> |
+|[Conversation (ConversationType)](conversation-conversationtype.md) <br/> |1 つの会話を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**Globalhasattachments**要素の値は、メールボックス内の少なくとも1つの会話アイテムに添付ファイルがあるかどうかを示します。 ブール値を表すテキスト値が必要です。 値が**true**の場合は、スレッドに少なくとも1つの添付ファイルがあることを意味します。 値が**false**の場合、会話に添付ファイルがないか、または添付ファイルのみが含まれていることを意味します。 
+**GlobalHasAttachments** 要素の値は、メールボックス内の少なくとも 1 つの会話アイテムに添付ファイルが含されているかどうかを示します。 ブール値を表すテキスト値が必要です。 true の値 **は** 、会話に表示される添付ファイルが少なくとも 1 つ含むという意味です。 false の **値は** 、会話に添付ファイルがないか、非表示の添付ファイルのみを持つという意味です。 
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
+この要素を記述するスキーマは、Exchange Web Services をホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

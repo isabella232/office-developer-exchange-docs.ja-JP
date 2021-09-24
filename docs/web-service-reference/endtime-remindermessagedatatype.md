@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 771dce9c-17a7-4c1d-aab2-47b6dd48d795
-description: EndTime 要素は、事前通知に対してクエリを実行する時間間隔の終わりを表します。
-ms.openlocfilehash: 7a9eac48970d193a1a55a9e4c7934aad56058190
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: EndTime 要素は、アラームをクエリする期間の終了を表します。
+ms.openlocfilehash: f65183c9846d0990d77d533e102fc7a9102388c7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459659"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540103"
 ---
 # <a name="endtime-remindermessagedatatype"></a>EndTime (ReminderMessageDataType)
 
-**EndTime**要素は、事前通知に対してクエリを実行する時間間隔の終わりを表します。 
+**EndTime 要素** は、アラームをクエリする期間の終了を表します。 
   
 ```XML
 <EndTime/>
@@ -42,7 +42,7 @@ ms.locfileid: "44459659"
   
 ## <a name="text-value"></a>テキスト値
 
-**EndTime**要素のテキスト値は、事前通知に対してクエリを実行する時間間隔の最後を表します。 
+EndTime 要素の **テキスト値** は、アラームを照会する期間の終了を表します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,9 +55,9 @@ ms.locfileid: "44459659"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -66,5 +66,5 @@ ms.locfileid: "44459659"
 [ReminderMessageData](remindermessagedata.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

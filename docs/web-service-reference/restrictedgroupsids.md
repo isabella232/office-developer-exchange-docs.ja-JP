@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - RestrictedGroupSids
 api_type:
 - schema
 ms.assetid: 569ab552-5616-444a-a7f5-de366a684a34
-description: RestrictedGroupSids 要素は、ユーザーのトークンからの制限されたグループのコレクションを表します。
-ms.openlocfilehash: 739a73d2ac4bdbbee03650d035271b5c8d9ea25a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: RestrictedGroupSids 要素は、ユーザーのトークンから制限されたグループのコレクションを表します。
+ms.openlocfilehash: 20e412eb6eb97bc33052d6625035afb7711ad34f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465360"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514110"
 ---
 # <a name="restrictedgroupsids"></a>RestrictedGroupSids
 
-**RestrictedGroupSids**要素は、ユーザーのトークンからの制限されたグループのコレクションを表します。 
+**RestrictedGroupSids** 要素は、ユーザーのトークンから制限されたグループのコレクションを表します。 
   
 ```xml
 <RestrictedGroupSids>
@@ -42,30 +42,30 @@ ms.locfileid: "44465360"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[RestrictedGroupIdentifier](restrictedgroupidentifier.md) <br/> |グループセキュリティ識別子 (SID) と、制限されたグループの属性を表します。  <br/> |
+|[RestrictedGroupIdentifier](restrictedgroupidentifier.md) <br/> |制限されたグループのグループ セキュリティ識別子 (SID) と属性を表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[SerializedSecurityContext](serializedsecuritycontext.md) <br/> |サーバー間認証のトークンシリアル化のために SOAP ヘッダーで使用されます。 トークンのシリアル化はサポートされていません。  <br/> |
+|[SerializedSecurityContext](serializedsecuritycontext.md) <br/> |サーバー間認証でのトークンのシリアル化に SOAP ヘッダーで使用されます。 トークンのシリアル化はサポートされていません。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

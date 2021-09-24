@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MoveFolderResponse
 api_type:
 - schema
 ms.assetid: e7dd2fb8-e362-42e5-a480-4d816813526d
 description: MoveFolderResponse 要素は、MoveFolder 要求への応答を定義します。
-ms.openlocfilehash: 2019321dcb03ec5e63b47a6b7579c8bd46756391
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: f09a9c320dce99fc7a0066f71332dfb9a4075b17
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461738"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540630"
 ---
 # <a name="movefolderresponse"></a>MoveFolderResponse
 
-**Movefolderresponse**要素は、movefolder 要求への応答を定義します。 
+**MoveFolderResponse** 要素は、MoveFolder 要求への応答を定義します。 
   
 ```xml
 <MoveFolderResponse>
@@ -42,7 +42,7 @@ ms.locfileid: "44461738"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Exchange Web サービス要求に対する応答メッセージを含みます。  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Web サービス要求の応答メッセージExchange含まれます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -50,15 +50,15 @@ ms.locfileid: "44461738"
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |いいえ  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 

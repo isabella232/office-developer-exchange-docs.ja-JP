@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetPhoneCallInformation
 api_type:
 - schema
 ms.assetid: 418bd6ca-39d9-49a9-841e-7a71ede1fa51
-description: GetPhoneCallInformation 操作は、指定された通話に関する情報を返します。
-ms.openlocfilehash: 231b160713526f44433188e2b1e3bd98012370b1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetPhoneCallInformation 操作は、指定された電話に関する情報を返します。
+ms.openlocfilehash: 7cb9ecbb30e6cdd4d85b60215f40e0be5f4aaa84
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458314"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539958"
 ---
 # <a name="getphonecallinformation-operation"></a>GetPhoneCallInformation 操作
 
-**GetPhoneCallInformation**操作は、指定された通話に関する情報を返します。 
+**GetPhoneCallInformation 操作は**、指定された電話に関する情報を返します。 
   
 ## <a name="getphonecallinformation-request-example"></a>GetPhoneCallInformation 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の**GetPhoneCallInformation**要求の例は、特定の電話呼び出しに関する情報を取得するための要求を形成する方法を示しています。 
+**GetPhoneCallInformation** 要求の次の例は、特定の電話に関する情報を取得するための要求を形成する方法を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -49,11 +49,11 @@ ms.locfileid: "44458314"
 </soap:Envelope>
 ```
 
-## <a name="getphonecallinformation-response-example"></a>GetPhoneCallInformation response の例
+## <a name="getphonecallinformation-response-example"></a>GetPhoneCallInformation 応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **GetPhoneCallInformation**要求に対する正常な応答を示しています。 応答は、現在接続されている通話を表します。 
+次の例は **、GetPhoneCallInformation** 要求に対する正常な応答を示しています。 応答は、現在接続されている電話を表します。 
   
 ### <a name="code"></a>コード
 
@@ -87,6 +87,6 @@ ms.locfileid: "44458314"
 
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS 操作](ews-operations-in-exchange.md)
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS 操作 (Exchange](ews-operations-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: e7cd470d-5861-41e7-9e66-73ef7a59700b
-description: GetUserSettingsResponse 要素は、GetUserSettings 操作 (SOAP) 要求への応答を表します。
-ms.openlocfilehash: a41a195a003789ddaef81f844e47aad689df0937
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetUserSettingsResponse 要素は、GetUserSettings 操作 (SOAP) 要求に対する応答を表します。
+ms.openlocfilehash: cc45a652332547c0a6312536a261f0cd8b04f9c5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530149"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59526101"
 ---
 # <a name="getusersettingsresponse-soap"></a>GetUserSettingsResponse (SOAP)
 
-**Getusersettingsresponse**要素は、 [getusersettings 操作 (SOAP)](getusersettings-operation-soap.md)要求への応答を表します。 
+**GetUserSettingsResponse** 要素は [、GetUserSettings 操作 (SOAP)](getusersettings-operation-soap.md)要求に対する応答を表します。 
   
 ```XML
 <GetUserSettingsResponse>
@@ -41,9 +41,9 @@ ms.locfileid: "44530149"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ErrorCode (SOAP)](errorcode-soap.md) <br/> |自動検出サービスによって返されるエラーコードを表します。  <br/> |
-|[ErrorMessage (SOAP)](errormessage-soap.md) <br/> |自動検出サービスによって返されるエラーコードに関連付けられているメッセージを表します。  <br/> |
-|[UserResponses (SOAP)](userresponses-soap.md) <br/> |要求された各ユーザーの構成設定が含まれます。  <br/> |
+|[ErrorCode (SOAP)](errorcode-soap.md) <br/> |自動検出サービスによって返されるエラー コードを表します。  <br/> |
+|[ErrorMessage (SOAP)](errormessage-soap.md) <br/> |自動検出サービスによって返されるエラー コードに関連付けられているメッセージを表します。  <br/> |
+|[UserResponses (SOAP)](userresponses-soap.md) <br/> |要求された各ユーザーの構成設定が含まれる。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -59,8 +59,8 @@ ms.locfileid: "44530149"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

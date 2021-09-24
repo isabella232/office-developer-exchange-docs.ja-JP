@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e05ed6eb-00ae-49c8-8341-43f6e0d728ff
 description: LobbyBypass 要素は、仮想ロビーをバイパスするオンライン会議の設定を指定します。
-ms.openlocfilehash: 6940428c944b9d4d64acc6dbbf3993576e1932eb
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 41ab9c3f846112d2b679bbb477a0de355a477ffa
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458097"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540784"
 ---
 # <a name="lobbybypass"></a>LobbyBypass
 
-**Lobbybypass**要素は、仮想ロビーをバイパスするオンライン会議の設定を指定します。 
+**LobbyBypass 要素** は、仮想ロビーをバイパスするオンライン会議の設定を指定します。 
   
 ```XML
 <LobbyBypass> Disabled | EnabledForGatewayParticipants </LobbyBypass>
@@ -42,7 +42,7 @@ ms.locfileid: "44458097"
   
 ## <a name="text-value"></a>テキスト値
 
-**Lobbybypass**要素のテキスト値は、Disabled または**EnabledForGatewayParticipants**のいずれか**に**なります。 **Disabled**値は、すべての会議の出席者が仮想ロビーを介してアクセスする必要があるように、ロビーバイパスが無効になっていることを示します。 **EnabledForGatewayParticipants**の値は、電話の参加者に対してロビーバイパスが有効になっていることを示します。 
+**LobbyBypass** 要素のテキスト値は、Disabledまたは **EnabledForGatewayParticipants** のいずれかです。 Disabled **値は** 、ロビー バイパスが無効になっているので、すべての会議出席者が仮想ロビーからアクセスする必要があります。 **EnabledForGatewayParticipants 値は**、ロビー バイパスが電話参加者に対して有効になっているかどうかを示します。 
   
 ## <a name="remarks"></a>注釈
 

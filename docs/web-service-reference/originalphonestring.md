@@ -1,23 +1,23 @@
 ---
-title: Phonenumber.originalphonestring
+title: OriginalPhoneString
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 02c42828-0d52-4007-bbed-e6571fd31cbe
-description: Phonenumber.originalphonestring 要素は、連絡先または個人の元の電話番号を指定します。
-ms.openlocfilehash: 172a69ec088440ece80a2807b97171ebf81b97d3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: OriginalPhoneString 要素は、連絡先またはペルサの元の電話番号を指定します。
+ms.openlocfilehash: 58a9b16a0cd1c747c8d9034ec81f63d91318e4dd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467040"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514215"
 ---
-# <a name="originalphonestring"></a>Phonenumber.originalphonestring
+# <a name="originalphonestring"></a>OriginalPhoneString
 
-**Phonenumber.originalphonestring**要素は、連絡先または個人の元の電話番号を指定します。 
+**OriginalPhoneString 要素** は、連絡先またはペルサの元の電話番号を指定します。 
   
 ```XML
 <OriginalPhoneString></OriginalPhoneString>
@@ -38,11 +38,11 @@ ms.locfileid: "44467040"
   
 ### <a name="parent-elements"></a>親要素
 
-[電話](phone.md)  | [Phone (通し entitytype)](phone-phoneentitytype.md)
+[電話](phone.md)  | [電話 (PhoneEntityType)](phone-phoneentitytype.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**Phonenumber.originalphonestring**要素のテキスト値は、連絡先またはペルソナの元の電話番号です。 
+**OriginalPhoneString** 要素のテキスト値は、連絡先またはペルサの元の電話番号です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44467040"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

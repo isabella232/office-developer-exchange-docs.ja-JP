@@ -1,23 +1,23 @@
 ---
-title: Updateitemin回復可能アイテム
+title: UpdateItemInRecoverableItems
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c49816b1-dbb5-4716-86c7-30790e86f30e
-description: UpdateItemInRecoverableItems 要素は、回復可能なアイテム内のアイテムを更新する要求を指定します。
-ms.openlocfilehash: f3dae55097c613b84a80795185baad559e312b90
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: UpdateItemInRecoverableItems 要素は、回復可能なアイテムのアイテムを更新する要求を指定します。
+ms.openlocfilehash: 8d3ffdd2d3f60e48514ae1a9d7cb4ca4e1bf06ac
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459785"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515019"
 ---
-# <a name="updateiteminrecoverableitems"></a>Updateitemin回復可能アイテム
+# <a name="updateiteminrecoverableitems"></a>UpdateItemInRecoverableItems
 
-**Updateiteminrecoverableitems**要素は、回復可能なアイテム内のアイテムを更新する要求を指定します。 
+**UpdateItemInRecoverableItems** 要素は、回復可能なアイテムのアイテムを更新する要求を指定します。 
   
 ```XML
 <UpdateItemInRecoverableItems>
@@ -28,7 +28,7 @@ ms.locfileid: "44459785"
 </UpdateItemInRecoverableItems>
 ```
 
- **Updateitemin回復 Ableitemstype**
+ **UpdateItemInRecoverableItemsType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -39,7 +39,7 @@ ms.locfileid: "44459785"
   
 ### <a name="child-elements"></a>子要素
 
-[ItemId](itemid.md)  | [Updates (Item)](updates-item.md)  | [添付ファイル](attachments-ex15websvcsotherref.md)  | [Makeitemimmutable](makeitemimmutable.md)
+[ItemId](itemid.md)  | [更新プログラム (アイテム)](updates-item.md)  | [添付ファイル](attachments-ex15websvcsotherref.md)  | [MakeItemImmutable](makeitemimmutable.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -56,8 +56,8 @@ ms.locfileid: "44459785"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

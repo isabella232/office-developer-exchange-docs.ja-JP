@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ff1b6b1c-3557-41d4-8aa6-9528fdb3a21a
 description: NewReminderTime 要素は、アラームの新しい時刻を指定します。
-ms.openlocfilehash: a10f7e481b474501f33dba4c09060766568952b0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 9e6cb75396f35f606bcd974e374f24957ee5d1ec
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465955"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515447"
 ---
 # <a name="newremindertime"></a>NewReminderTime
 
-**NewReminderTime**要素は、アラームの新しい時刻を指定します。 
+**NewReminderTime** 要素は、アラームの新しい時刻を指定します。 
   
 ```XML
 <NewReminderTime/>
@@ -42,7 +42,7 @@ ms.locfileid: "44465955"
   
 ## <a name="text-value"></a>テキスト値
 
-**NewReminderTime**要素のテキスト値は、アラームの新しい時刻です。 **NewReminderTime**要素は、[アラームを遅延させるために[ActionType](actiontype-reminderactiontype.md)要素を再**通知**する] に設定されている場合に使用します。 **NewReminderTime**の値は、 [getreminders 操作](getreminders-operation.md)によって返される[ReminderTime](remindertime.md)より大きい必要があります。
+**NewReminderTime** 要素のテキスト値は、アラームの新しい時刻です。 **NewReminderTime** 要素は、アラームを遅延するために [ActionType](actiontype-reminderactiontype.md)要素が **Snooze** に設定されている場合に使用されます。 **NewReminderTime** の値は [、GetReminders](getreminders-operation.md)操作によって返される [ReminderTime](remindertime.md)よりも大きくする必要があります。
   
 ## <a name="remarks"></a>注釈
 
@@ -55,9 +55,9 @@ ms.locfileid: "44465955"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -66,5 +66,5 @@ ms.locfileid: "44465955"
 [ReminderItemAction](reminderitemaction.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

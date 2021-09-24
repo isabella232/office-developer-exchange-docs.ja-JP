@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateFolderResponse
 api_type:
 - schema
 ms.assetid: 158adecc-491a-47d9-af73-acc2cd3f8566
 description: CreateFolderResponse 要素は、CreateFolder 要求への応答を定義します。
-ms.openlocfilehash: c51fb17f0b0f9c3dd1db8b0ff31f230fac37ce67
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: b22f91c404b42aeae841dd5e2a1b5349beb901b8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458881"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59526516"
 ---
 # <a name="createfolderresponse"></a>CreateFolderResponse
 
-**Createfolderresponse**要素は、CreateFolder 要求への応答を定義します。 
+**CreateFolderResponse** 要素は、CreateFolder 要求への応答を定義します。 
   
 ```xml
 <CreateFolderResponse>
@@ -42,7 +42,7 @@ ms.locfileid: "44458881"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Exchange Web サービス要求に対する応答メッセージを含みます。  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Web サービス要求の応答メッセージExchange含まれます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -50,16 +50,16 @@ ms.locfileid: "44458881"
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -70,5 +70,5 @@ ms.locfileid: "44458881"
 [CreateFolder](createfolder.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

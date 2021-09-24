@@ -1,25 +1,25 @@
 ---
-title: 環境
+title: configuration
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - configuration
 api_type:
 - schema
 ms.assetid: 6fc04e4d-657a-4999-9431-186ccb7832b5
-description: '最終更新日: 2015 年9月17日'
-ms.openlocfilehash: b886851b9a0c17d58428f49281d664930d0e4070
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: '最終更新日: 2015 年 9 月 17 日'
+ms.openlocfilehash: 35fcb131fbe552a38d9f7eb6022eb5fb52db44b7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461563"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516147"
 ---
-# <a name="configuration"></a>環境
+# <a name="configuration"></a>configuration
   
 **製品:** Exchange Server 2013
   
@@ -59,7 +59,7 @@ ms.locfileid: "44461563"
 |||
 |:-----|:-----|
 |Namespace  <br/> |このファイルには名前空間が定義されていません。  <br/> |
-|スキーマ名  <br/> |注意事項なし。  <br/> |
+|スキーマ名  <br/> |該当なし。  <br/> |
 |検証ファイル  <br/> |該当なし。  <br/> |
 |空に設定可能  <br/> |不正解。  <br/> |
    

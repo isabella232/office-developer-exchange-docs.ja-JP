@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - XmlData
 api_type:
 - schema
 ms.assetid: e47f1d32-3ee3-4a1d-b7f9-80973ed57bd4
-description: XmlData 要素には、ユーザー構成オブジェクトの XML データプロパティコンテンツが含まれています。
-ms.openlocfilehash: 2fb3e2ccbb6e9ccc409a5d0cfdd895b2a63214ff
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: XmlData 要素には、ユーザー構成オブジェクトの XML データ プロパティコンテンツが含まれる。
+ms.openlocfilehash: daf1ad74b816187c89436187bbb8311e31784a13
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457019"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513886"
 ---
 # <a name="xmldata"></a>XmlData
 
-**XmlData**要素には、ユーザー構成オブジェクトの XML データプロパティコンテンツが含まれています。 
+**XmlData 要素には**、ユーザー構成オブジェクトの XML データ プロパティコンテンツが含まれる。 
   
 ```XML
 <XmlData/>
@@ -45,7 +45,7 @@ ms.locfileid: "44457019"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[UserConfiguration](userconfiguration.md) <br/> |1つのユーザー構成オブジェクトを定義します。  <br/> |
+|[UserConfiguration](userconfiguration.md) <br/> |1 つのユーザー構成オブジェクトを定義します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -60,11 +60,11 @@ ms.locfileid: "44457019"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

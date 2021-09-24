@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6eed9502-5d9e-4345-ba23-3582ff487147
-description: ImListMigrationCompleted 要素は、Exchange ストアに、インスタントメッセージングクライアントによって使用されるインスタントメッセージングアイテムが含まれているかどうかを示します。
-ms.openlocfilehash: 09f37d6e3663aab7cb98fc922f727ddd604f2acd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ImListMigrationCompleted 要素は、Exchange ストアにインスタント メッセージング クライアントで使用されるインスタント メッセージング アイテムが含まれているかどうかを示します。
+ms.openlocfilehash: b55f3d72259897d7bdf46b351421b0148a41b93e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456025"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514614"
 ---
 # <a name="imlistmigrationcompleted"></a>ImListMigrationCompleted
 
-**ImListMigrationCompleted**要素は、Exchange ストアに、インスタントメッセージングクライアントによって使用されるインスタントメッセージングアイテムが含まれているかどうかを示します。 
+**ImListMigrationCompleted** 要素は、Exchange ストアにインスタント メッセージング クライアントで使用されるインスタント メッセージング アイテムが含まれているかどうかを示します。 
   
 ```XML
 <ImListMigrationCompleted>true | false</ImListMigrationCompleted>
@@ -42,7 +42,7 @@ ms.locfileid: "44456025"
   
 ## <a name="text-value"></a>テキスト値
 
-**ImListMigrationCompleted**要素のテキスト値が**true**の場合は、インスタントメッセージングの連絡先ストアが Exchange ストアに移行されたことを示します。 値が**false**の場合は、インスタントメッセージの連絡先ストアが移行されていないことを示します。 
+**ImListMigrationCompleted** 要素のテキスト値 **が** true の場合、インスタント メッセージング連絡先ストアが Exchange されます。 false の **値は** 、インスタント メッセージ連絡先ストアが移行されていない状態を示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44456025"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

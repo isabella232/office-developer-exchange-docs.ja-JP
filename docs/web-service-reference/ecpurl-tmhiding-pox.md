@@ -1,32 +1,32 @@
 ---
-title: EcpUrl-tmHiding 表示 (POX)
+title: EcpUrl-tmHiding (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9b9ae15b-3ac1-45ac-85ba-38c7231fe508
-description: EcpUrl 非表示要素は、EcpUrl (POX) 要素の値と組み合わせて、サイトメールボックスからユーザーの登録を解除するために使用できる URL を生成できる url の一部を指定します。
-ms.openlocfilehash: 68b949db8b8d98caddbac3b9f96c5d5e55b104b7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: EcpUrl-tmHiding 要素は、サイト メールボックスからユーザーを登録解除するために使用できる URL を生成するために、EcpUrl (POX) 要素の値と組み合わせ可能な部分 URL を指定します。
+ms.openlocfilehash: d8e8ced554b96f1a0cd554d3d601970d5f47019b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463532"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514734"
 ---
-# <a name="ecpurl-tmhiding-pox"></a>EcpUrl-tmHiding 表示 (POX)
+# <a name="ecpurl-tmhiding-pox"></a>EcpUrl-tmHiding (POX)
 
-**EcpUrl 非表示**要素は、 [EcpUrl (POX)](ecpurl-pox.md)要素の値と組み合わせて、サイトメールボックスからユーザーの登録を解除するために使用できる url を生成できる url の一部を指定します。 
+**EcpUrl-tmHiding** 要素は、サイト メールボックスからユーザーを登録解除するために使用できる URL を生成するために [、EcpUrl (POX)](ecpurl-pox.md)要素の値と組み合わせ可能な部分 URL を指定します。 
   
-[自動検出 (POX)](autodiscover-pox.md)
+[AutoDiscover (POX)](autodiscover-pox.md)
   
-[応答 (POX)](response-pox.md)
+[Response (POX)](response-pox.md)
   
-[アカウント (POX)](account-pox.md)
+[Account (POX)](account-pox.md)
   
-[プロトコル (POX)](protocol-pox.md)
+[Protocol (POX)](protocol-pox.md)
   
-[EcpUrl-tmHiding 表示 (POX)](ecpurl-tmhiding-pox.md)
+[EcpUrl-tmHiding (POX)](ecpurl-tmhiding-pox.md)
   
 ```XML
 <EcpUrl-tmHiding/>
@@ -48,23 +48,23 @@ ms.locfileid: "44463532"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
+|[Protocol (POX)](protocol-pox.md) <br/> |クライアント アクセス サーバーの役割がインストールされているクライアントを実行しているコンピューター Microsoft Exchange Server接続するための仕様が含まれている。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、 [EcpUrl (POX)](ecpurl-pox.md)要素の値と組み合わせて、サイトメールボックスからユーザーの登録を解除するために使用できる url を生成できる url の部分を表します。 **EcpUrl 非表示**要素の値には、次の表に示すように、クライアントによって置き換えられる ' < ' および ' > ' 文字に含まれるパラメーターが含まれています。 
+テキスト値は [、EcpUrl (POX)](ecpurl-pox.md) 要素の値と組み合わせてサイト メールボックスからユーザーを登録解除するために使用できる URL を生成できる部分的な URL を表します。 **EcpUrl-tmHiding** 要素の値には、次の表に示すように、クライアントによって置き換わる '<' および '>' 文字に含まれるパラメーターが含まれます。 
   
-|**パラメーター**|**代用**|
+|**パラメーター**|**で置き換える**|
 |:-----|:-----|
-| _Id_ <br/> |サイトメールボックスの SMTP 電子メールアドレスまたは X500 識別名。  <br/> |
+| _Id_ <br/> |サイト メールボックスの SMTP 電子メール アドレスまたは X500 識別名。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-**EcpUrl 非表示**要素は、 **Protocol**要素のオプションの子要素です。 
+**EcpUrl-tmHiding 要素** は **、Protocol** 要素の省略可能な子要素です。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+[POX 自動検出 XML 要素のExchange](pox-autodiscover-xml-elements-for-exchange.md)
 

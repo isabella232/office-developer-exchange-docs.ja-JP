@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ab7058f2-615f-4393-a0d4-af76727f37e9
-description: Item 要素は、メールボックスにアップロードする単一のアイテムを表します。
-ms.openlocfilehash: 82c0fdf89c06ddfb812c2b2f1899b589eedeb7d8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Item 要素は、メールボックスにアップロードする 1 つのアイテムを表します。
+ms.openlocfilehash: bd4681a19df2018db9e54ee39095cd602662650a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467551"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514446"
 ---
 # <a name="item-uploaditemtype"></a>Item (UploadItemType)
 
-**Item**要素は、メールボックスにアップロードする単一のアイテムを表します。 
+**Item 要素** は、メールボックスにアップロードする 1 つのアイテムを表します。 
   
 [UploadItems](uploaditems.md)
   
-[アイテム (NonEmptyArrayOfUploadItemsType)](items-nonemptyarrayofuploaditemstype.md)
+[Items (NonEmptyArrayOfUploadItemsType)](items-nonemptyarrayofuploaditemstype.md)
   
 [Item (UploadItemType)](item-uploaditemtype.md)
   
@@ -42,30 +42,30 @@ ms.locfileid: "44467551"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**CreateAction** <br/> |メールボックスにアイテムをアップロードするアクションを指定します。 この属性は必須です。  <br/> |
-|**IsAssociated** <br/> |アップロードされたアイテムがフォルダーに関連付けられたアイテムであるかどうかを指定します。 この属性はブール値です。 値が**true の場合**は、アイテムがフォルダーに関連付けられたアイテムであることを示します。 この属性は省略可能です。  <br/> |
+|**CreateAction** <br/> |アイテムをメールボックスにアップロードするアクションを指定します。 この属性は必須です。  <br/> |
+|**IsAssociated** <br/> |アップロードされたアイテムがフォルダー関連アイテムかどうかを指定します。 この属性はブール値です。 true の値 **は** 、アイテムがフォルダーに関連付けられているアイテムを示します。 この属性は省略可能です。  <br/> |
    
 #### <a name="createaction-attribute"></a>CreateAction 属性
 
 |**値**|**説明**|
 |:-----|:-----|
-|**CreateNew** <br/> |元のアイテムの新しいコピーがメールボックスにアップロードされることを示します。 CreateNew 値が使用されている場合、 [ItemId](itemid.md)要素を指定することはできません。 新しいアイテム識別子が応答で返されます。  <br/> |
-|**Update** <br/> |**ItemId**要素によって指定されたアイテムが更新されるように指定します。 **ItemId**要素が存在しない場合、またはアイテムが[ParentFolderId](parentfolderid.md)要素によって識別されるフォルダー内に存在しない場合は、エラーが返されます。  <br/> |
-|**UpdateOrCreate** <br/> |アイテムを更新するために最初に試行が行われたことを示します。 **ParentFolderId**要素によって指定されたフォルダーにアイテムが存在しない場合は、新しいアイテムが作成されます。  <br/> |
+|**CreateNew** <br/> |元のアイテムの新しいコピーがメールボックスにアップロードされるかどうかを示します。 [CreateNew 値](itemid.md)を使用する場合は、ItemId 要素を指定できません。 新しいアイテム識別子が応答で返されます。  <br/> |
+|**Update** <br/> |**ItemId** 要素で示されるアイテムを更新する方法を指定します。 **ItemId** 要素が存在しない場合、または [ParentFolderId](parentfolderid.md)要素によって識別されるフォルダーにアイテムが存在しない場合は、エラーが返されます。  <br/> |
+|**UpdateOrCreate** <br/> |アイテムの更新が最初に行われたかどうかを示します。 **ParentFolderId** 要素で指定されたフォルダーにアイテムが存在しない場合は、新しいアイテムが作成されます。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ParentFolderId](parentfolderid.md) <br/> |新しいアイテムが作成された、または更新するアイテムを含む親フォルダーの識別子を表します。  <br/> |
-|[ItemId](itemid.md) <br/> |Exchange ストアで作成または更新するアイテムの一意識別子および変更キーが含まれています。  <br/> |
-|[Data (base64Binary)](data-base64binary.md) <br/> |メールボックスにアップロードする1つのアイテムのデータを格納します。  <br/> |
+|[ParentFolderId](parentfolderid.md) <br/> |新しいアイテムが作成される親フォルダー、または更新するアイテムを含む親フォルダーの識別子を表します。  <br/> |
+|[ItemId](itemid.md) <br/> |アイテムストアで作成または更新するアイテムの一意の識別子と変更キー Exchangeします。  <br/> |
+|[Data (base64Binary)](data-base64binary.md) <br/> |メールボックスにアップロードする 1 つのアイテムのデータを格納します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[アイテム (NonEmptyArrayOfUploadItemsType)](items-nonemptyarrayofuploaditemstype.md) <br/> |メールボックスにアップロードするアイテムの配列が含まれています。  <br/> |
+|[Items (NonEmptyArrayOfUploadItemsType)](items-nonemptyarrayofuploaditemstype.md) <br/> |メールボックスにアップロードするアイテムの配列を含む。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -73,16 +73,16 @@ ms.locfileid: "44467551"
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
+この要素を記述するスキーマは、Exchange Web Services をホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

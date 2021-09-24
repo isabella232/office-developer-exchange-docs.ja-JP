@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f0bd3d6f-bb21-4b5d-9e6a-b19530a1a3fd
-description: MailboxHoldStatuses 要素は、1つ以上の MailboxHoldStatus 要素のリストを指定します。
-ms.openlocfilehash: 8b51fe0ab5daadffcbd91f51963abe094bf31342
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MailboxHoldStatuses 要素は、1 つ以上の MailboxHoldStatus 要素のリストを指定します。
+ms.openlocfilehash: d2d6545f3c908a3e6908797a5ebb93429ca50caf
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466382"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540808"
 ---
 # <a name="mailboxholdstatuses"></a>MailboxHoldStatuses
 
-**MailboxHoldStatuses**要素は、1つ以上の**MailboxHoldStatus**要素のリストを指定します。 
+**MailboxHoldStatuses 要素は**、1 つ以上の **MailboxHoldStatus** 要素のリストを指定します。 
   
 ```XML
 <MailboxHoldStatuses>
@@ -54,8 +54,8 @@ ms.locfileid: "44466382"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

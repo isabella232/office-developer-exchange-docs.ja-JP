@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c466c845-9806-4a9a-8ba6-ee908b80d012
 description: Keywords 要素は、FindMailboxStatisticsByKeywords 操作検索のキーワードを指定します。
-ms.openlocfilehash: d23840c4b651f5d4f42f36a0307a0fe5b25471f4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 10d43ff4facef8a7eac271586ae46dd0c263e4f7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44451636"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514411"
 ---
 # <a name="keywords"></a>キーワード
 
-**Keywords**要素は、 **FindMailboxStatisticsByKeywords**操作検索のキーワードを指定します。 
+**Keywords 要素** は **、FindMailboxStatisticsByKeywords** 操作検索のキーワードを指定します。 
   
 ```XML
 <KeyWords>

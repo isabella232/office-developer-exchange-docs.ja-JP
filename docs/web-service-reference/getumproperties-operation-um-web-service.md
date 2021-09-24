@@ -1,32 +1,32 @@
 ---
-title: GetUMProperties 操作 (UM web サービス)
+title: GetUMProperties 操作 (UM Web サービス)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetUMProperties
 api_type:
 - schema
 ms.assetid: 301fb9a3-67df-44c4-8ffe-0600237fc344
-description: GetUMProperties 操作は、要求を行っているユーザーのメールボックスのすべてのユニファイドメッセージングプロパティを取得します。
-ms.openlocfilehash: 42176d9cd0288af6515aeea616a4f216a419410c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetUMProperties 操作は、要求を行うユーザーのメールボックスのすべてのユニファイド メッセージング プロパティを取得します。
+ms.openlocfilehash: 8d051196e83e1f927692b517e1ab3e95bb0060db
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462473"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515818"
 ---
-# <a name="getumproperties-operation-um-web-service"></a>GetUMProperties 操作 (UM web サービス)
+# <a name="getumproperties-operation-um-web-service"></a>GetUMProperties 操作 (UM Web サービス)
 
-GetUMProperties 操作は、要求を行っているユーザーのメールボックスのすべてのユニファイドメッセージングプロパティを取得します。
+GetUMProperties 操作は、要求を行うユーザーのメールボックスのすべてのユニファイド メッセージング プロパティを取得します。
   
 ## <a name="getumproperties-request-example"></a>GetUMProperties 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の GetUMProperties 要求の例は、メールボックスのユニファイドメッセージングのプロパティを取得するための要求を形成する方法を示しています。
+GetUMProperties 要求の次の例は、メールボックスのユニファイド メッセージング プロパティを取得する要求を形成する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -39,9 +39,9 @@ GetUMProperties 操作は、要求を行っているユーザーのメールボ�
 </soap:Envelope>
 ```
 
-## <a name="successful-getumproperties-response-example"></a>成功した GetUMProperties 応答の例
+## <a name="successful-getumproperties-response-example"></a>GetUMProperties 応答の成功例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
 GetUMProperties 応答の次の例は、GetUMProperties 要求に対する応答を示しています。
   
@@ -68,7 +68,7 @@ GetUMProperties 応答の次の例は、GetUMProperties 要求に対する応答
 
 
 
-[GetUMProperties (UM web サービス)](getumproperties-um-web-service.md)
+[GetUMProperties (UM Web サービス)](getumproperties-um-web-service.md)
   
-[GetUMPropertiesResponse (UM web サービス)](getumpropertiesresponse-um-web-service.md)
+[GetUMPropertiesResponse (UM Web サービス)](getumpropertiesresponse-um-web-service.md)
 

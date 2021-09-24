@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 51f84364-9a5f-4ef2-ba82-f6ef7c65f7cb
-description: ProtocolConnectionCollectionSetting 要素は、サーバープロトコル接続設定のコレクションを表します。
-ms.openlocfilehash: 59e082138b8a40d201791653103c79160765f2fd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ProtocolConnectionCollectionSetting 要素は、サーバー プロトコル接続設定のコレクションを表します。
+ms.openlocfilehash: 8e641e8f720d5dcf6b7af8b78c1804e0d8057f09
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462396"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515258"
 ---
 # <a name="protocolconnectioncollectionsetting-soap"></a>ProtocolConnectionCollectionSetting (SOAP)
 
-**Protocolconnectioncollectionsetting**要素は、サーバープロトコル接続設定のコレクションを表します。 
+**ProtocolConnectionCollectionSetting** 要素は、サーバー プロトコル接続設定のコレクションを表します。 
   
 ```XML
 <ProtocolConnectionCollectionSetting/>
@@ -41,7 +41,7 @@ ms.locfileid: "44462396"
 |**Element**|**説明**|
 |:-----|:-----|
 |[Name (SOAP)](name-soap.md) <br/> |設定の名前を表します。  <br/> |
-|[ProtocolConnections (SOAP)](protocolconnections-soap.md) <br/> |0個以上のプロトコル接続を含みます。  <br/> |
+|[ProtocolConnections (SOAP)](protocolconnections-soap.md) <br/> |0 個以上のプロトコル接続が含まれる。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -57,8 +57,8 @@ ms.locfileid: "44462396"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

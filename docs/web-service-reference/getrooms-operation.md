@@ -5,40 +5,40 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetRooms
 api_type:
 - schema
 ms.assetid: 5501ddc0-3bfa-4da6-8e15-4223ca5499a3
-description: GetRooms 操作は、指定した会議室リスト内のルームを取得します。
-ms.openlocfilehash: 4cb124b96637b9fcdca15595faebb2ce4d304de0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetRooms 操作は、指定された会議室リスト内の会議室を取得します。
+ms.openlocfilehash: dc5cf71ed0731d2674ecead1153447090b43bd9a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460548"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539915"
 ---
 # <a name="getrooms-operation"></a>GetRooms 操作
 
-**Getrooms**操作は、指定した会議室リスト内のルームを取得します。 
+**GetRooms 操作は**、指定された会議室リスト内の会議室を取得します。 
   
 ## <a name="soap-headers"></a>SOAP ヘッダー
 
-**Getrooms**操作では、次の表に記載されている SOAP ヘッダーを使用できます。 
+**GetRooms 操作では**、次の表に示す SOAP ヘッダーを使用できます。 
   
-|**Header**|**要素**|**説明**|
+|**Header**|**Element**|**説明**|
 |:-----|:-----|:-----|
-|偽装  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。  <br/> |
-|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |メールボックスへのアクセスに使用する RFC3066 カルチャを指定します。  <br/> |
-|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。  <br/> |
+|偽装  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装しているユーザーを識別します。  <br/> |
+|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |メールボックスへのアクセスに使用する RFC3066 カルチャを識別します。  <br/> |
+|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマ バージョンを識別します。  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。  <br/> |
    
 ## <a name="getrooms-request-example"></a>GetRooms 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-ルームリストに関連付けられているルームを取得する**getrooms**要求の例を次に示します。 
+次に、会議室リストに関連付けられている会議室を取得する **GetRooms** 要求の例を示します。 
   
 ### <a name="code"></a>コード
 
@@ -61,7 +61,7 @@ ms.locfileid: "44460548"
 
 ```
 
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 要求では、次の要素が使用されます。
   
@@ -71,13 +71,13 @@ ms.locfileid: "44460548"
     
 - [RoomList](roomlist.md)
     
-- [EmailAddress (非 Emptystringtype)](emailaddress-nonemptystringtype.md)
+- [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
     
-## <a name="successful-getrooms-response-example"></a>正常な GetRooms 応答の例
+## <a name="successful-getrooms-response-example"></a>GetRooms 応答の成功例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の応答は、会議室リストに関連付けられているルームの電子メールアドレス情報を示しています。
+次の応答は、会議室リストに関連付けられている会議室の電子メール アドレス情報を示しています。
   
 ### <a name="code"></a>コード
 
@@ -113,23 +113,23 @@ ms.locfileid: "44460548"
 </s:Envelope>
 ```
 
-### <a name="successful-getrooms-response-elements"></a>正常な GetRooms 応答要素
+### <a name="successful-getrooms-response-elements"></a>GetRooms 応答要素の成功
 
 応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
-- [た getroomsresponse](getroomsresponse.md)
+- [GetRoomsResponse](getroomsresponse.md)
     
 - [ResponseCode](responsecode.md)
     
-- [ルーム](rooms.md)
+- [Rooms](rooms.md)
     
-- [作る](room.md)
+- [Room](room.md)
     
 - [Name (EmailAddress)](name-emailaddress.md)
     
-- [EmailAddress (非 Emptystringtype)](emailaddress-nonemptystringtype.md)
+- [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
     
 - [RoutingType (EmailAddress)](routingtype-emailaddress.md)
     
@@ -137,9 +137,9 @@ ms.locfileid: "44460548"
     
 ## <a name="getrooms-error-response-example"></a>GetRooms エラー応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、存在しない会議室一覧の会議室情報を取得しようとしたときに発生するエラー応答を示しています。
+次の例は、存在しないルーム リストのルーム情報を取得しようとした場合のエラー応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -165,7 +165,7 @@ ms.locfileid: "44460548"
   
 - [ServerVersionInfo](serverversioninfo.md)
     
-- [た getroomsresponse](getroomsresponse.md)
+- [GetRoomsResponse](getroomsresponse.md)
     
 - [MessageText](messagetext.md)
     
@@ -175,6 +175,6 @@ ms.locfileid: "44460548"
     
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS 操作](ews-operations-in-exchange.md)
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS 操作 (Exchange](ews-operations-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

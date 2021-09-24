@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - BaseShape
 api_type:
 - schema
 ms.assetid: 42c04f3b-abaa-4197-a3d6-d21677ffb1c0
-description: BaseShape 要素は、アイテムまたはフォルダーの応答で返されるプロパティのセットを識別します。
-ms.openlocfilehash: 9b3f00ff94fbfe6ad6373b16ad95eb9136f81c64
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: BaseShape 要素は、アイテムまたはフォルダーの応答で返すプロパティのセットを識別します。
+ms.openlocfilehash: b4e7f5c6d6520e7338f274b6275e371366b1bed5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464491"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514859"
 ---
 # <a name="baseshape"></a>BaseShape
 
-**Baseshape**要素は、アイテムまたはフォルダーの応答で返されるプロパティのセットを識別します。 
+**BaseShape 要素は**、アイテムまたはフォルダーの応答で返すプロパティのセットを識別します。 
   
 ```xml
 <BaseShape>IdOnly or Default or AllProperties</BaseShape>
@@ -44,8 +44,8 @@ ms.locfileid: "44464491"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FolderShape](foldershape.md) <br/> | GetFolder、FindFolder、または SyncFolderHierarchy の応答に含めるフォルダーのプロパティを識別します。<br/><br/>この要素の XPath 式は次のとおりです。<br/><br/>`/GetFolder/FolderShape` <br/>  `/FindFolder/FolderShape` <br/>  `/SyncFolderHierarchy/FolderShape` <br/> |
-|[ItemShape](itemshape.md) <br/> | GetItem、FindItem、または SyncFolderItems 応答に含めるアイテムのプロパティとコンテンツを指定します。<br/><br/>この要素の XPath 式は次のとおりです。<br/><br/>`/GetItem/ItemShape` <br/>  `/FindItem/ItemShape` <br/>  `/SyncFolderItems/ItemShape` <br/> |
+|[FolderShape](foldershape.md) <br/> | GetFolder、FindFolder、または SyncFolderHierarchy 応答に含めるフォルダー プロパティを識別します。<br/><br/>この要素の XPath 式を次に示します。<br/><br/>`/GetFolder/FolderShape` <br/>  `/FindFolder/FolderShape` <br/>  `/SyncFolderHierarchy/FolderShape` <br/> |
+|[ItemShape](itemshape.md) <br/> | GetItem、FindItem、または SyncFolderItems 応答に含めるアイテムのプロパティとコンテンツを識別します。<br/><br/>この要素の XPath 式を次に示します。<br/><br/>`/GetItem/ItemShape` <br/>  `/FindItem/ItemShape` <br/>  `/SyncFolderItems/ItemShape` <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -55,29 +55,29 @@ ms.locfileid: "44464491"
 
 |**値**|**説明**|
 |:-----|:-----|
-|IdOnly  <br/> |アイテムまたはフォルダーの ID のみを返します。  <br/> |
-|既定値  <br/> |アイテムまたはフォルダーの既定値として定義されているプロパティのセットを返します。  <br/> |
-|AllProperties  <br/> |フォルダーを作成するために Exchange ビジネスロジック層で使用されるすべてのプロパティを返します。  <br/> |
+|IdOnly  <br/> |アイテムまたはフォルダー ID のみを返します。  <br/> |
+|既定値  <br/> |アイテムまたはフォルダーの既定として定義されているプロパティのセットを返します。  <br/> |
+|AllProperties  <br/> |ビジネス ロジックレイヤーでフォルダーを作成するために使用Exchangeプロパティを返します。  <br/> |
    
-次の表に、FindFolder 要求に対して返される既定のプロパティを示します。 指定したフォルダーのすべてのサブフォルダーが名前で順に返されます。
+次の表に、FindFolder 要求に対して返される既定のプロパティを示します。 指定したフォルダーのすべてのサブフォルダーは、名前順に返されます。
   
 **既定のプロパティ**
 
 |**Folder**|**既定のプロパティ**|
 |:-----|:-----|
-|受信トレイ  <br/> |FolderId、表示名、未読数、合計数、サブフォルダー数  <br/> |
-|連絡先  <br/> |FolderId、表示名、合計数、サブフォルダー数  <br/> |
-|カレンダー  <br/> |FolderId、表示名、サブフォルダー数  <br/> |
-|下書き  <br/> |FolderId、表示名、未読数、合計数、サブフォルダー数  <br/> |
-|削除済みアイテム  <br/> |FolderId、表示名、未読数、合計数、サブフォルダー数  <br/> |
-|その他のフォルダー  <br/> |FolderId、表示名、未読数、合計数、サブフォルダー数  <br/> |
-|送信トレイ  <br/> |FolderId、表示名、未読数、合計数、サブフォルダー数  <br/> |
-|タスク  <br/> |FolderId、表示名、過去の期限数、合計数、サブフォルダー数  <br/> |
-|メモ  <br/> |FolderId、表示名、合計数、サブフォルダー数  <br/> |
+|受信トレイ  <br/> |FolderId、表示名、未読数、合計カウント、サブフォルダー数  <br/> |
+|連絡先  <br/> |FolderId、表示名、合計カウント、サブフォルダー数  <br/> |
+|予定表  <br/> |FolderId、表示名、サブフォルダー数  <br/> |
+|下書き  <br/> |FolderId、表示名、未読数、合計カウント、サブフォルダー数  <br/> |
+|削除済みアイテム  <br/> |FolderId、表示名、未読数、合計カウント、サブフォルダー数  <br/> |
+|その他のフォルダー  <br/> |FolderId、表示名、未読数、合計カウント、サブフォルダー数  <br/> |
+|送信トレイ  <br/> |FolderId、表示名、未読数、合計カウント、サブフォルダー数  <br/> |
+|タスク  <br/> |FolderId、表示名、過去の期限数、合計カウント、サブフォルダー数  <br/> |
+|メモ  <br/> |FolderId、表示名、合計カウント、サブフォルダー数  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-[Baseshape](baseshape.md)要素によって識別されるプロパティに加えて、プロパティを返すには、 [additionalproperties](additionalproperties.md)要素を使用します。 
+[BaseShape](baseshape.md)要素で識別されるプロパティに加えてプロパティを返す場合は[、AdditionalProperties 要素を使用](additionalproperties.md)します。 
   
 ## <a name="example"></a>例
 
@@ -103,9 +103,9 @@ ms.locfileid: "44464491"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
