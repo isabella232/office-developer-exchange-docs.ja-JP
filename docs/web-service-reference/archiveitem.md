@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c2172e61-876a-4f76-bc9c-263c8be11429
-description: アーカイブアイテム要素には、ソースフォルダー Id と、関連付けられたアーカイブアイテムのアイテム Id の配列が含まれています。
-ms.openlocfilehash: e1694619c90160084980cb8f3a7c8a0ed1876295
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ArchiveItem 要素には、ソース フォルダー Id と、関連付けられたアーカイブ アイテムのアイテム Id の配列が含まれる。
+ms.openlocfilehash: 876c86321c688e20fc3b5539c542bc46e67ba343
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463406"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525296"
 ---
 # <a name="archiveitem"></a>ArchiveItem
 
-アーカイブ**アイテム要素には、** ソースフォルダー Id と、関連付けられたアーカイブアイテムのアイテム id の配列が含まれています。 
+**ArchiveItem 要素には**、ソース フォルダー Id と、関連付けられたアーカイブ アイテムのアイテム Id の配列が含まれる。 
   
 ```XML
 <ArchiveItem>
@@ -26,7 +26,7 @@ ms.locfileid: "44463406"
 </ArchiveItem>
 ```
 
- **アーカイブ Itemtype**
+ **ArchiveItemType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -37,7 +37,7 @@ ms.locfileid: "44463406"
   
 ### <a name="child-elements"></a>子要素
 
-[ArchiveSourceFolderId](archivesourcefolderid.md)  | [Itemids](itemids.md)
+[ArchiveSourceFolderId](archivesourcefolderid.md)  | [ItemIds](itemids.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -54,8 +54,8 @@ ms.locfileid: "44463406"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

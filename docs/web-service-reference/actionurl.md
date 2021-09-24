@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9697f2e5-a5f7-471a-a052-ae79e06eb09d
-description: ActionUrl 要素は、AppStatus 要素によって示された問題を修正するために、ユーザーが移動する必要のある URL を識別します。
-ms.openlocfilehash: 2335595b4be6452f41c25f15d359e6939609c9b9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ActionUrl 要素は、AppStatus 要素で示される問題を解決するために、ユーザーが移動する URL を識別します。
+ms.openlocfilehash: 21bffd1d9300488dad5eec5f0eb67b8a48ec3f00
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529673"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522195"
 ---
 # <a name="actionurl"></a>ActionUrl
 
-**Actionurl**要素は、 [appstatus](appstatus-ex15websvcsotherref.md)要素によって示された問題を修正するために、ユーザーが移動する必要のある url を識別します。 
+**ActionUrl 要素** は [、AppStatus](appstatus-ex15websvcsotherref.md)要素で示される問題を解決するために、ユーザーが移動する URL を識別します。 
   
 ```XML
 <ActionUrl/>
@@ -42,7 +42,7 @@ ms.locfileid: "44529673"
   
 ## <a name="text-value"></a>テキスト値
 
-**Actionurl**要素のテキスト値は、 **appstatus**要素によって示された問題を修正するために、ユーザーが移動する必要のある url を示します。 
+ActionUrl 要素の **テキスト値は、AppStatus** 要素で示される問題を解決するために、ユーザーが移動する URL **を識別** します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,12 +55,12 @@ ms.locfileid: "44529673"
 |||
 |:-----|:-----|
 |Namespace  <br/> | https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
 |検証ファイル  <br/> |該当なし  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [メタデータ](metadata-ex15websvcsotherref.md)
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

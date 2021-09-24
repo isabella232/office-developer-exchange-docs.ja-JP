@@ -5,25 +5,25 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: aefecfe3-bf4d-4efe-833b-cdd15ecd1f8c
-description: 緯度要素は、関連付けられた住所の場所の緯度を指定します。
-ms.openlocfilehash: 7038ca04f09eb88669a945e179806d8a0cfff1da
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Latitude 要素は、関連付けられた郵便番号の場所の緯度を指定します。
+ms.openlocfilehash: 0f7a2d1819eebfcfc028d4564d0e1449f21cdf7b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530769"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524939"
 ---
 # <a name="latitude"></a>Latitude
 
-**緯度**要素は、関連付けられた住所の場所の緯度を指定します。 
+**Latitude 要素** は、関連付けられた郵便番号の場所の緯度を指定します。 
   
 ```XML
 <Latitude></Latitude>
 ```
 
- **再度**
+ **double**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -38,11 +38,11 @@ ms.locfileid: "44530769"
   
 ### <a name="parent-elements"></a>親要素
 
-[Value (PersonaPostalAddressType)](value-personapostaladdresstype.md)  | ["Postaladdress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)
+[Value (PersonaPostalAddressType)](value-personapostaladdresstype.md)  | [PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**緯度**要素のテキスト値は、関連付けられている住所の緯度です。 
+Latitude 要素のテキスト **値** は、関連付けられた郵便番号の緯度です。 
   
 ## <a name="remarks"></a>注釈
 

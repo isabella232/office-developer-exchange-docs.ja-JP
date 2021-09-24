@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: df97f1bd-9571-4b73-bb02-437541ae06a0
-description: StartFindInGALSpeechRecognitionResponse 要素は、内部使用のみを目的としています。
-ms.openlocfilehash: 3a1311123d9853d85cff4f1520f70400e7c426b4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: StartFindInGALSpeechRecognitionResponse 要素は、内部での使用のみを目的とします。
+ms.openlocfilehash: 2226e891fc63e4bcc8c1c66382169a2c8ba75f8b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530304"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521257"
 ---
 # <a name="startfindingalspeechrecognitionresponse"></a>StartFindInGALSpeechRecognitionResponse
 
-**StartFindInGALSpeechRecognitionResponse**要素は、内部使用のみを目的としています。 
+**StartFindInGALSpeechRecognitionResponse** 要素は、内部での使用のみを目的とします。 
 
 ## <a name="attributes-and-elements"></a>属性と要素
 
@@ -46,8 +46,8 @@ ms.locfileid: "44530304"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

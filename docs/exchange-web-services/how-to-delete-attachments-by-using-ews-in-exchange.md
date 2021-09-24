@@ -3,15 +3,15 @@ title: Exchange で EWS を使用して添付物を削除する
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 71871ac7-ee1a-4f93-9e81-77f312d432f4
 description: Exchange で EWS マネージ API または EWS を使用して、EWS アイテムから添付物を削除する方法について説明します。
-ms.openlocfilehash: 854f723e9c7452b955d0e7d7a38da7f6224dc8b1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: bc9b8bbf5833cfdb44f9ca4e8387681473fad3c3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455892"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521152"
 ---
 # <a name="delete-attachments-by-using-ews-in-exchange"></a>Exchange で EWS を使用して添付物を削除する
 
@@ -155,7 +155,7 @@ EWS を使用して添付物を削除するには、最初にメッセージと�
 </soap:Envelope>
 ```
 
-サーバーは、 **GetItem** 要求に [GetItemResponse](https://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx) メッセージで応答します。このメッセージには、電子メールが正常に作成されたことを示す [NoError](https://msdn.microsoft.com/library/aa580757%28v=exchg.150%29.aspx) の **ResponseCode ** 値 、および既存の添付物の [AttachmentId](https://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx) が含まれます。 
+サーバーは、 **GetItem** 要求に [GetItemResponse](https://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx) メッセージで応答します。このメッセージには、電子メールが正常に作成されたことを示す [NoError](https://msdn.microsoft.com/library/aa580757%28v=exchg.150%29.aspx) の **ResponseCode** 値 、および既存の添付物の [AttachmentId](https://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx) が含まれます。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

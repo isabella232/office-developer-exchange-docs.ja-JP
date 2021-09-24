@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Rules
 api_type:
 - schema
 ms.assetid: 53f59054-8f68-4eaa-be9c-ccfc9383bcf2
-description: Rules 要素には、保護ルールの配列が含まれています。
-ms.openlocfilehash: d848abfe0c97d07836f28bc75806f506c5433d44
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Rules 要素には、保護ルールの配列が含まれる。
+ms.openlocfilehash: 492111e53c01a0848bd87c460670f35c524baf31
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464939"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517862"
 ---
 # <a name="rules"></a>ルール
 
-**Rules**要素には、保護ルールの配列が含まれています。 
+**Rules 要素** には、保護ルールの配列が含まれる。 
   
 ```xml
 <Rules>   <Rule/></Rules>
@@ -40,30 +40,30 @@ ms.locfileid: "44464939"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Rule](rule.md) <br/> |1つの保護ルールを含みます。 この要素は0回以上発生する可能性があります。 組織によって保護ルールが定義されていない場合、この要素は0回発生します。 組織によって少なくとも1つのルールが定義されている場合は、1回以上発生します。  <br/> |
+|[Rule](rule.md) <br/> |1 つの保護ルールが含まれる。 この要素は、0 回以上発生する可能性があります。 この要素は、組織によって保護ルールが定義されていない場合に 0 回発生します。 少なくとも 1 つのルールが組織によって定義されている場合、1 つ以上の回数発生します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Protectionルールの構成](protectionrulesconfiguration.md) <br/> |保護ルールサービスのサービス構成が保存されています。  <br/> |
+|[ProtectionRulesConfiguration](protectionrulesconfiguration.md) <br/> |保護ルール サービスのサービス構成が含まれる。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - TimeOffset
 api_type:
 - schema
 ms.assetid: b70bf498-cc3a-4fa6-8236-514acb973b33
-description: TimeOffset 要素は、時間帯の切り替えについて協定世界時 (UTC) からの時間オフセットを表します。
-ms.openlocfilehash: 8cfd43477f0548227204da9ebc6d7e9307786845
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: TimeOffset 要素は、タイム ゾーン遷移の協定世界時 (UTC) からのタイム オフセットを表します。
+ms.openlocfilehash: ac2da7d6ab1d59d075111390513b1a3dd58a892e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460289"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522545"
 ---
 # <a name="timeoffset"></a>TimeOffset
 
-**Timeoffset**要素は、時間帯の切り替えについて協定世界時 (UTC) からの時間オフセットを表します。 
+**TimeOffset 要素** は、タイム ゾーン遷移の協定世界時 (UTC) からのタイム オフセットを表します。 
   
 ```XML
 <TimeOffset/>
@@ -44,12 +44,12 @@ ms.locfileid: "44460289"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[RecurringDateTransition](recurringdatetransition.md) <br/> |各年に特定の日付に発生するタイムゾーンの切り替えを表します。  <br/> |
-|[RecurringDayTransition](recurringdaytransition.md) <br/> |毎年同じ日に発生するタイムゾーンの切り替えを表します。  <br/> |
+|[RecurringDateTransition](recurringdatetransition.md) <br/> |毎年特定の日付に発生するタイム ゾーン遷移を表します。  <br/> |
+|[RecurringDayTransition](recurringdaytransition.md) <br/> |毎年同じ日に発生するタイム ゾーン遷移を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**Timeoffset**要素のテキスト値は、タイムゾーン遷移の UTC からの時間オフセットを指定する期間です。 
+**TimeOffset** 要素のテキスト値は、タイム ゾーン遷移の UTC からのタイム オフセットを指定する期間です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -60,13 +60,13 @@ ms.locfileid: "44460289"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

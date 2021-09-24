@@ -1,23 +1,23 @@
 ---
-title: ID (文字列)
+title: ID (String)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3febe5b5-9c42-4074-b4d9-75b871b2f582
 description: ID 要素は、アプリの識別子を指定します。
-ms.openlocfilehash: 47d0a7d4a49c0d256640602f43df13c9ebca471e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 062833cd10947baed55c4801d219c33f8bcadca5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462886"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525037"
 ---
-# <a name="id-string"></a>ID (文字列)
+# <a name="id-string"></a>ID (String)
 
-**ID**要素は、アプリの識別子を指定します。 
+**ID 要素** は、アプリの識別子を指定します。 
   
 ```XML
 <ID></ID>
@@ -38,11 +38,11 @@ ms.locfileid: "44462886"
   
 ### <a name="parent-elements"></a>親要素
 
-[Disableapp](disableapp.md)  | [アン Installapp](uninstallapp.md)
+[DisableApp](disableapp.md)  | [UninstallApp](uninstallapp.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**ID**要素のテキスト値は、アプリの識別子です。 
+ID 要素のテキスト **値** はアプリの識別子です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44462886"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

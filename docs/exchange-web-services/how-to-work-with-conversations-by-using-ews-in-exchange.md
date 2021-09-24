@@ -3,15 +3,15 @@ title: Exchange において EWS を使用して会話を処理する
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7750528c-acb2-43e5-a1e1-ee201c0e1730
 description: Exchange で EWS マネージ API または EWS を使用して、会話の検索、会話へのアクションの適用、会話でのアイテムの取得の方法について説明します。
-ms.openlocfilehash: 2dc66195f8d37836c32fc33737728c61fc5444ae
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: b2cf00b1f6f69ec1a1989d3f452ff6c0102dc95e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456789"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521085"
 ---
 # <a name="work-with-conversations-by-using-ews-in-exchange"></a>Exchange において EWS を使用して会話を処理する
 
@@ -25,8 +25,8 @@ Exchange のコンテキストでは、会話は関連のある一連の電子�
 
 |**EWS マネージ API のプロパティ**|**EWS の要素**|**説明**|
 |:-----|:-----|:-----|
-|[ConversationTopic](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.conversationtopic%28v=exchg.80%29.aspx) <br/> |[ConversationTopic](https://msdn.microsoft.com/library/46cacf42-4039-4c8a-9b20-c42cdd9f2760%28Office.15%29.aspx) <br/> |元のメッセージに設定された件名の値の正規化されたフォームが含まれています。 これは、**Thread-Topic** メッセージ ヘッダーと同じです。 この値は読み取り専用です。  <br/> |
-|[ConversationIndex](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.conversationindex%28v=exchg.80%29.aspx) <br/> |[ConversationIndex](https://msdn.microsoft.com/library/fdf47e22-8d93-4ae4-883b-0c9f07f48724%28Office.15%29.aspx) <br/> |会話内のアイテムの位置を表します。 これは、**Thread-Index** メッセージ ヘッダーと同じです。 この値は読み取り専用です。  <br/> |
+|[ConversationTopic](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.conversationtopic%28v=exchg.80%29.aspx) <br/> |[ConversationTopic](https://msdn.microsoft.com/library/46cacf42-4039-4c8a-9b20-c42cdd9f2760%28Office.15%29.aspx) <br/> |元のメッセージに設定された件名の値の正規化されたフォームが含まれています。これは、**Thread-Topic** メッセージのヘッダーと同じです。この値は読み取り専用です。<br/> |
+|[ConversationIndex](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.conversationindex%28v=exchg.80%29.aspx) <br/> |[ConversationIndex](https://msdn.microsoft.com/library/fdf47e22-8d93-4ae4-883b-0c9f07f48724%28Office.15%29.aspx) <br/> |会話内のアイテムの位置を表します。これは、**Thread-Index** メッセージのヘッダーと同じです。この値は読み取り専用です。<br/> |
    
 Exchange は同じ **ConversationTopic** 値を最初のメッセージの返信に適用してから、元のメッセージに対する相対的なメッセージの位置を表す **ConversationIndex** の値を更新します。 電子メール スレッドの件名が変更になった場合、Exchange は新しい **ConversationTopic** 値および新しい **ConversationIndex** 値を新しい会話に適用します。 
   
@@ -101,7 +101,7 @@ static void FindConversation(ExchangeService service)
 
 ```
 
-サーバーは、**FindConversation** 要求に対して [FindConversationResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) メッセージで応答します。このメッセージには、[ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) の値として **NoError** が含まれており、それは、操作が正常に完了したことを示しています。 また、この応答には、「news」という単語を含む件名が入っているメールボックス内の会話が 1 つだけ含まれています。 
+サーバーは、[FindConversationResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) メッセージで **FindConversation** 要求に応答します。このメッセージには、操作が正常に完了したことを示す、**NoError** の [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) の値が含まれます。また、この応答には、「ニュース」という単語を含む件名が入っているメールボックス内の会話が 1 つだけ含まれています。 
   
 **ItemId**、**ChangeKey**、および **ConversationId** の属性は読みやすいよう短縮されています。 
   
@@ -192,7 +192,7 @@ static void FindConversation(ExchangeService service)
 
 次の例に示すように、いくつかの EWS マネージ API メソッドを使用して、会話の操作を会話に適用できます。この例では、会話の既存のアイテムにカテゴリを追加し、会話の将来のアイテムに同じカテゴリを適用します。また、フォルダーへの会話のアイテムの自動移動を有効にする方法も示します。この例では、アイテムが [下書き] フォルダーに移動されます。
   
-この例では、**service** が有効な [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーから既に認証されていると想定しています。 
+この例では、**service** が有効な [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、ユーザーが Exchange サーバーに既に認証されていると想定しています。 
   
 会話の操作を適用するメソッドの完全な一覧については、表 2 を参照してください。
   
@@ -390,7 +390,7 @@ static void GetConversationItemsManyConversations(ExchangeService service)
 
 ```
 
-ベスト プラクティスとして、**BasePropertySet** クラスに **FirstClassProperties** オプションを使用するのではなく、クライアント アプリケーションに必要なプロパティだけを返すことをお勧めします。 会話のアイテムを取得する後続の要求のために、**SyncState** プロパティをキャッシュすることをお勧めします。 
+ベスト プラクティスとして、**BasePropertySet** クラスに **FirstClassProperties** オプションを使用するのではなく、クライアント アプリケーションに必要なプロパティだけを返すことをお勧めします。会話のアイテムを取得する後続の要求のために、**SyncState** プロパティをキャッシュすることをお勧めします。 
 
 <a name="bk_getitemsews"> </a>
 
@@ -437,7 +437,7 @@ static void GetConversationItemsManyConversations(ExchangeService service)
 </soap:Envelope>
 ```
 
-サーバーは、**GetConversationItems** 要求に対して [GetConversationItemsResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) メッセージで応答します。このメッセージには、[ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) の値として **NoError** が含まれおり、それは、操作が正常に完了したことを示しています。 応答は、会話の [ConversationNodes](https://msdn.microsoft.com/library/5c8a35b8-a940-4b3e-8768-9ba95766fd79%28Office.15%29.aspx) にも含まれています。 
+サーバーは、[GetConversationItemsResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) メッセージで **GetConversationItems** 要求に応答します。このメッセージには、操作が正常に完了したことを示す、**NoError** の [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) の値が含まれます。応答は、会話の [ConversationNodes](https://msdn.microsoft.com/library/5c8a35b8-a940-4b3e-8768-9ba95766fd79%28Office.15%29.aspx) にも含まれています。 
   
 **ItemId**、**SyncState**、および **ConversationId** の属性は読みやすいよう短縮されています。 
   

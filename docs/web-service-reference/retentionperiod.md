@@ -1,29 +1,29 @@
 ---
-title: 保存期間
+title: RetentionPeriod
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 49db6a4f-4a20-4495-8f76-d756cc895b66
-description: 保存期間要素は、アイテム保持ポリシーが有効になる日数を指定します。
-ms.openlocfilehash: c9d049e2c1ed4e8abdec9faa7b8e365468d3d2ac
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: RetentionPeriod 要素は、保持ポリシーが有効な日数を指定します。
+ms.openlocfilehash: e3e25926eca2551186f3b3b06e805d6da0d8b2d7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465192"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524596"
 ---
-# <a name="retentionperiod"></a>保存期間
+# <a name="retentionperiod"></a>RetentionPeriod
 
-**保存期間**要素は、アイテム保持ポリシーが有効になる日数を指定します。 
+**RetentionPeriod 要素** は、保持ポリシーが有効な日数を指定します。 
   
 ```XML
 <RetentionPeriod></RetentionPeriod>
 ```
 
- **以外**
+ **integer**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -38,11 +38,11 @@ ms.locfileid: "44465192"
   
 ### <a name="parent-elements"></a>親要素
 
-[New-retentionpolicytag](retentionpolicytag.md)
+[RetentionPolicyTag](retentionpolicytag.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**保存期間**要素のテキスト値は、アイテムに対してアイテム保持ポリシーが有効になっている日数です。 
+**RetentionPeriod** 要素のテキスト値は、アイテムのアイテム保持ポリシーが有効な日数です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44465192"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

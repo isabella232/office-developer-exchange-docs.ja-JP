@@ -3,15 +3,15 @@ title: Exchange の自動検出を使用するときにパフォーマンスを�
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e65ff6b2-3810-43ad-9728-27308891b193
 description: カスタム アプリケーションで自動検出プロセスのパフォーマンスを向上させる方法について説明します。
-ms.openlocfilehash: 844b56084b4f0b5e49b4ee095688d58ce469baca
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: c0920f71c230f63658dfa8d29b34ca75bb796db0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456333"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520998"
 ---
 # <a name="improving-performance-when-using-autodiscover-for-exchange"></a>Exchange の自動検出を使用するときにパフォーマンスを向上させる
 
@@ -43,7 +43,7 @@ SCP オブジェクトが存在していて適切に構成されている場合�
   
 ## <a name="minimize-requested-data"></a>要求データを最小限に抑える
 
-EWS マネージ API の **AutodiscoverService** クラスを使用している場合や、SOAP で [GetUserSettings 操作 (SOAP)](https://msdn.microsoft.com/library/758d965c-ef63-4de4-9120-e293abf14ff8%28Office.15%29.aspx) を使用している場合は、応答で返される設定の内容を直接制御できます。 多数の設定を要求できますが、アプリケーションに必要な設定は、そのうちのわずかなものである可能性があります。 要求した設定ごとにサーバー上での処理が増えるため、応答の待機時間が長引くようになります。 要求している設定を査定して、不要なものを省きます。 
+EWS マネージ API の **AutodiscoverService** クラスを使用している場合や、SOAP で [GetUserSettings 操作 (SOAP)](https://msdn.microsoft.com/library/758d965c-ef63-4de4-9120-e293abf14ff8%28Office.15%29.aspx) を使用している場合は、応答で返される設定の内容を直接制御できます。多数の設定を要求できますが、アプリケーションに必要な設定は、そのうちのわずかなものである可能性があります。要求した設定ごとにサーバー上での処理が増えるため、応答の待機時間が長引くようになります。要求している設定を査定して、不要なものを省きます。 
   
 EWS マネージ API の **ExchangeService.AutodiscoverUrl** メソッドを使用している場合は、要求する設定を変更することはできません。 ただし、このメソッドはすでに非常に効率的なものになっています。このメソッドは、[UserSettingName enumeration](https://msdn.microsoft.com/library/microsoft.exchange.webservices.autodiscover.usersettingname%28v=exchg.80%29.aspx) 列挙体の **ExternalEwsUrl** と **InternalEwsUrl** の設定のみを要求します。
   

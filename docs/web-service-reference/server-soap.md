@@ -1,24 +1,24 @@
 ---
-title: サーバー (SOAP)
+title: Server (SOAP)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: bd27f494-520a-459e-adcf-c3f505f27a69
-description: Server 要素は、代替メールボックスサーバーを表します。
-ms.openlocfilehash: 12c5b85cf323e72a113420dac289a655143a4e22
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Server 要素は、代替メールボックス サーバーを表します。
+ms.openlocfilehash: be21982941f2c69ec6822400336979d11d6e2ee3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462004"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521516"
 ---
-# <a name="server-soap"></a>サーバー (SOAP)
+# <a name="server-soap"></a>Server (SOAP)
 
-**Server**要素は、代替メールボックスサーバーを表します。 
+**Server 要素は**、代替メールボックス サーバーを表します。 
   
 ```XML
 <Server/>
@@ -45,7 +45,7 @@ ms.locfileid: "44462004"
    
 ## <a name="text-value"></a>テキスト値
 
-**Server**要素のテキスト値は、代替メールボックスサーバーの名前です。 
+Server 要素のテキスト **値** は、代替メールボックス サーバーの名前です。 
   
 ## <a name="element-information"></a>要素の情報
 
@@ -53,8 +53,8 @@ ms.locfileid: "44462004"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

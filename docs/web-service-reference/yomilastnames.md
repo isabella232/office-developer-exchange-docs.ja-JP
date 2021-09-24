@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 893409f1-fe76-40a4-ad7b-8a6bbc2bce12
-description: YomiLastNames 要素は、関連付けられているペルソナの attributions のふりがな (姓とそのソースの識別子) の配列を指定します。
-ms.openlocfilehash: bc0ffcd796a29a24be3edbc7129333cc332596b6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: YomiLastNames 要素は、日本語の名字の配列と、関連付けられたペルサのソース属性の識別子を指定します。
+ms.openlocfilehash: 420077e59cf0dde897ce5c87c0463f128cf45a9d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467089"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525464"
 ---
 # <a name="yomilastnames"></a>YomiLastNames
 
-**YomiLastNames**要素は、関連付けられているペルソナの attributions のふりがな (姓とそのソースの識別子) の配列を指定します。 
+**YomiLastNames** 要素は、日本語の名字の配列と、関連付けられたペルサのソース属性の識別子を指定します。 
   
 ```XML
 <YomiLastNames>
@@ -53,8 +53,8 @@ ms.locfileid: "44467089"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

@@ -1,31 +1,31 @@
 ---
-title: ルーム
+title: Rooms
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Rooms
 api_type:
 - schema
 ms.assetid: 57b6079a-3d83-4429-861e-c551e9e1a991
-description: ルーム要素は、会議室を表す1つまたは複数の要素のリストです。
-ms.openlocfilehash: f8b60a9680f6abba459ebecc96613abfdd93766d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Rooms 要素は、会議室を表す 1 つ以上の要素のリストです。
+ms.openlocfilehash: bcefa1fb380599e556b7c3e99235afc2057b1017
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466186"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524484"
 ---
-# <a name="rooms"></a>ルーム
+# <a name="rooms"></a>Rooms
 
-**ルーム**要素は、会議室を表す1つまたは複数の要素のリストです。 
+**Rooms 要素** は、会議室を表す 1 つ以上の要素のリストです。 
   
-[た getroomsresponse](getroomsresponse.md)
+[GetRoomsResponse](getroomsresponse.md)
   
-[ルーム](rooms.md)
+[Rooms](rooms.md)
   
 ```xml
 <Rooms>   <Room/></Rooms>
@@ -44,26 +44,26 @@ ms.locfileid: "44466186"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[作る](room.md) <br/> |会議室を表す電子メールアドレスと表示名を定義します。  <br/> |
+|[Room](room.md) <br/> |会議室を表す電子メール アドレスと表示名を定義します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[た getroomsresponse](getroomsresponse.md) <br/> ||
+|[GetRoomsResponse](getroomsresponse.md) <br/> ||
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされているコンピューター Microsoft Exchange Server EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -72,5 +72,5 @@ ms.locfileid: "44466186"
 [GetRooms 操作](getrooms-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

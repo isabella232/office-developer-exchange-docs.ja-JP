@@ -3,15 +3,15 @@ title: Exchange で EWS を使用して、代理人としてメールにアク�
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a8123604-c7c0-405d-a0ed-7a9b4a431bfd
 description: Exchange で EWS マネージ API または EWS を使用して、代理人としてメールにアクセスする方法を説明します。
-ms.openlocfilehash: 0c26f69042c568fe7d877778c7d8f1e689e5b372
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: aa921bc36004b3a26caa514390e52249021b304f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528287"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521215"
 ---
 # <a name="access-email-as-a-delegate-by-using-ews-in-exchange"></a>Exchange で EWS を使用して、代理人としてメールにアクセスする
 
@@ -25,9 +25,9 @@ EWS マネージ API または EWS を使用して、ユーザーにメーボッ
 
 |**目的**|**使用する EWS マネージ API メソッド…**|**使用する EWS 操作…**|
 |:-----|:-----|:-----|
-|代理人としてメールを作成して送信する  <br/> |[EmailMessage.Save](https://msdn.microsoft.com/library/dd635209%28v=exchg.80%29.aspx): [FolderId](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) パラメーターがメールボックス所有者の下書きフォルダーへの[明示的なアクセス](delegate-access-and-ews-in-exchange.md#bk_explicitewsma)を提供する  <br/> [EmailMessage.SendAndSaveCopy](https://msdn.microsoft.com/library/dd634248%28v=exchg.80%29.aspx): [FolderId](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) パラメーターがメールボックス所有者の送信済みアイテム フォルダーへの[明示的なアクセス](delegate-access-and-ews-in-exchange.md#bk_explicitewsma)を提供する  <br/> |[CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx): [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) 要素がメールボックス所有者の [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) を指定する場合  <br/> [SendItem](https://msdn.microsoft.com/library/a966da19-b05a-4504-ac98-91acc1667b9a%28Office.15%29.aspx): [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) 要素がメールボックス所有者の [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) を指定する  <br/> |
-|代理人として複数のメール メッセージを作成する  <br/> |[ExchangeService.CreateItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx): **FolderId** パラメーターがメールボックス所有者の受信トレイ フォルダーに[明示的なアクセス](delegate-access-and-ews-in-exchange.md#bk_explicitewsma)を提供する  <br/> |[CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx): [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) 要素がメールボックス所有者の [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) を指定する  <br/> |
-|代理人としてメールを検索する  <br/> |[ExchangeService.FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx): **FolderId** パラメーターがメールボックス所有者の受信トレイ フォルダーに[明示的なアクセス](delegate-access-and-ews-in-exchange.md#bk_explicitewsma)を提供する  <br/> |[FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx): [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) 要素がメールボックス所有者の [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) を指定する  <br/> |
+|代理人としてメールを作成して送信する  <br/> |[EmailMessage.Save](https://msdn.microsoft.com/library/dd635209%28v=exchg.80%29.aspx): [FolderId](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) パラメーターがメールボックス所有者の下書きフォルダーへの[明示的なアクセス](delegate-access-and-ews-in-exchange.md#bk_explicitewsma)を提供する  <br/> [EmailMessage.SendAndSaveCopy](https://msdn.microsoft.com/library/dd634248%28v=exchg.80%29.aspx): [FolderId](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) パラメーターがメールボックス所有者の送信済みアイテム フォルダーへの[明示的なアクセス](delegate-access-and-ews-in-exchange.md#bk_explicitewsma)を提供する  <br/> |[CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx): [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) 要素がメールボックス所有者の [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) を指定する  <br/> [SendItem](https://msdn.microsoft.com/library/a966da19-b05a-4504-ac98-91acc1667b9a%28Office.15%29.aspx): [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) 要素がメールボックス所有者の [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) を指定する  <br/> |
+|代理人として複数のメール メッセージを作成する  <br/> |[ExchangeService.CreateItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx): **FolderId** パラメーターがメールボックス所有者の受信トレイ フォルダーに [明示的なアクセス](delegate-access-and-ews-in-exchange.md#bk_explicitewsma)を提供する  <br/> |[CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx): [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) 要素がメールボックス所有者の [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) を指定する  <br/> |
+|代理人としてメールを検索する  <br/> |[ExchangeService.FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx): **FolderId** パラメーターがメールボックス所有者の受信トレイ フォルダーに [明示的なアクセス](delegate-access-and-ews-in-exchange.md#bk_explicitewsma)を提供する  <br/> |[FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx): [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) 要素がメールボックス所有者の [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) を指定する  <br/> |
 |代理人としてメールを取得  <br/> |[EmailMessage.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) <br/> |
 |代理人としてメールを更新する  <br/> |[EmailMessage.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) の後に [EmailMessage.Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.update%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) の後に [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
 |代理人としてメールを削除する  <br/> |[EmailMessage.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) の後に [EmailMessage.Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.delete%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) の後に [DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |
@@ -36,7 +36,7 @@ EWS マネージ API または EWS を使用して、ユーザーにメーボッ
   
 - 代理人が行う必要がある操作が会議出席依頼と出欠の返答だけである場合、受信トレイ フォルダーへのアクセスは必要ありません。詳しくは、「[代理人として予定表にアクセスするために事前に必要なタスク](how-to-access-a-calendar-as-a-delegate-by-using-ews-in-exchange.md#bk_prereq)」をご覧ください。
     
-- メールボックス所有者の代理として送信したメッセージを受信者が受信すると、送信者は「*メールボックス所有者*の*代理人*」として表示されます。 
+- メールボックス所有者の代理として送信したメッセージを受信者が受信すると、送信者は「*メールボックス所有者* の *代理人*」として表示されます。 
     
 > [!NOTE]
 > この記事のコード例では、primary@contoso.com は、メールボックス所有者です。 
@@ -51,7 +51,7 @@ EWS マネージ API または EWS を使用して、ユーザーにメーボッ
 
 EWS マネージ API を使用すると、代理ユーザーのサービス オブジェクトを使用して、メールボックス所有者の代わりにメールを作成および送信することができます。 次の例は、[Save](https://msdn.microsoft.com/library/dd635209%28v=exchg.80%29.aspx) メソッドを使用してメールボックス所有者の下書きフォルダーにメッセージを保存し、[SendAndSaveCopy](https://msdn.microsoft.com/library/dd634248%28v=exchg.80%29.aspx) メソッドを使用してそのメールを送信してそのメッセージをメールボックス所有者の送信済みアイテム フォルダーに保存する方法を示しています。 
   
-この例は、**service** が代理人の有効な [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、代理人に[メールボックス所有者の受信トレイ、下書き、送信済みアイテムの各フォルダーの適切なアクセス許可](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md)が付与されていることを前提にしています。
+この例は、**service** が代理人の有効な [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、代理人に [メールボックス所有者の受信トレイ、下書き、送信済みアイテムの各フォルダーの適切なアクセス許可](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md)が付与されていることを前提にしています。
   
 ```cs
 public static void DelegateAccessCreateEmail(ExchangeService service)
@@ -265,7 +265,7 @@ static void DelegateAccessSearchEmailWithFilter(ExchangeService service)
 }
 ```
 
-**FindItems** 呼び出しが ID と共に応答を返すと、ID と[暗黙的アクセス](delegate-access-and-ews-in-exchange.md#bk_implicit)を使用して対象のメールを取得、更新、削除できます。その際、メールボックス所有者の SMTP アドレスを指定する必要はありません。 
+**FindItems** 呼び出しが ID と共に応答を返すと、ID と [暗黙的アクセス](delegate-access-and-ews-in-exchange.md#bk_implicit)を使用して対象のメールを取得、更新、削除できます。その際、メールボックス所有者の SMTP アドレスを指定する必要はありません。 
   
 ## <a name="search-for-an-email-as-a-delegate-by-using-ews"></a>EWS を使用して代理人としてメールを検索する
 <a name="bk_searchews"> </a>
@@ -364,7 +364,7 @@ EWS を使用すると、代理ユーザーのサービス オブジェクトを
 </s:Envelope>
 ```
 
-この時点で、条件と一致するメールの **ItemId** がわかったので **ItemId** と[暗黙的なアクセス](delegate-access-and-ews-in-exchange.md#bk_implicit)を使用してメールの取得、更新、削除を行えます。その際、メールボックス所有者の SMTP アドレスを指定する必要はありません。 
+この時点で、条件と一致するメールの **ItemId** がわかったので **ItemId** と [暗黙的なアクセス](delegate-access-and-ews-in-exchange.md#bk_implicit)を使用してメールの取得、更新、削除を行えます。その際、メールボックス所有者の SMTP アドレスを指定する必要はありません。 
   
 ## <a name="get-update-or-delete-email-items-as-a-delegate-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して、代理人としてメール アイテムを取得、更新、削除する
 <a name="bk_geteswma"> </a>

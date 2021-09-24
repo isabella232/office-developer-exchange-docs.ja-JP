@@ -1,27 +1,27 @@
 ---
-title: メッセージ (可用性)
+title: Message (Availability)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Message
 api_type:
 - schema
 ms.assetid: 1eec24dd-c981-41f4-a2f0-c51d43f1d7c0
-description: Message 要素に、不在 (OOF) 応答が含まれています。
-ms.openlocfilehash: 13d118422ccb5a2897c21b6d124f170bf461dbf6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Message 要素には、受信応答 (OOF) Officeが含まれる。
+ms.openlocfilehash: d5698e8eeca25d0386ccad04b36dcfbf9dfa8d14
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467005"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523945"
 ---
-# <a name="message-availability"></a>メッセージ (可用性)
+# <a name="message-availability"></a>Message (Availability)
 
-**Message**要素に、不在 (OOF) 応答が含まれています。 
+**Message 要素** には、受信応答 (OOF) Officeが含まれる。 
   
 ```xml
 <Message/> 
@@ -44,13 +44,13 @@ ms.locfileid: "44467005"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[InternalReply](internalreply.md) <br/> | 送信者のドメイン内の他のユーザーに送信される OOF メッセージを含みます。 <br/> <br/>  この要素に使用できる XPath 式は次のとおりです。 <br/> <br/>  `/SetUserOofSettingsRequest/UserOofSettings/InternalReply` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/InternalReply` <br/> |
-|[ExternalReply](externalreply.md) <br/> | 送信者のドメイン外のアドレスに送信される OOF メッセージを含みます。  <br/> <br/> この要素に使用できる XPath 式は次のとおりです。  <br/><br/>  `/SetUserOofSettingsRequest/UserOofSettings/ExternalReply` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/ExternalReply` <br/> |
-|[ReplyBody](replybody.md) <br/> |不在時のメッセージと、メッセージに使用する言語が含まれています。  <br/> |
+|[InternalReply](internalreply.md) <br/> | 送信者のドメイン内の他のユーザーに送信される OOF メッセージを格納します。 <br/> <br/>  この要素で使用できる XPath 式を次に示します。 <br/> <br/>  `/SetUserOofSettingsRequest/UserOofSettings/InternalReply` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/InternalReply` <br/> |
+|[ExternalReply](externalreply.md) <br/> | 送信者のドメイン外のアドレスに送信される OOF メッセージが含まれます。  <br/> <br/> この要素で使用できる XPath 式を次に示します。  <br/><br/>  `/SetUserOofSettingsRequest/UserOofSettings/ExternalReply` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/ExternalReply` <br/> |
+|[ReplyBody](replybody.md) <br/> |OOF メッセージと、そのメッセージに使用される言語が含まれる。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-不在時のメッセージを設定するには、テキスト値が必要です。
+OOF メッセージを設定するには、テキスト値が必要です。
   
 ## <a name="remarks"></a>注釈
 
@@ -58,7 +58,7 @@ ms.locfileid: "44467005"
   
 ## <a name="example"></a>例
 
-[Setuseroofsettings 操作](setuseroofsettings-operation.md)要求の次の例では、 [Oofstate](oofstate.md)を**有効**に設定し、oof の時間を10日に設定し、内部および外部の oof メッセージを設定します。
+[SetUserOofSettings](setuseroofsettings-operation.md)操作要求の次の例は [、OofState](oofstate.md)を **Enabled** に設定し、OOF の期間を 10 日間に設定し、内部および外部の OOF メッセージを設定します。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -94,12 +94,12 @@ ms.locfileid: "44467005"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [SetUserOofSettings 操作](setuseroofsettings-operation.md)
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

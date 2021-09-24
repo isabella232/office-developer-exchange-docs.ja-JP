@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 13719747-08b7-4083-a400-5cfb5e99f177
-description: UserEnabledExtensions 要素は、有効になっているアプリを一覧表示します。
-ms.openlocfilehash: c09afe1c7ff9617d200a7faeea87efbbe2656b45
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: UserEnabledExtensions 要素は、有効なアプリを一覧表示します。
+ms.openlocfilehash: dd815141da34df3e193b5c033ee68bb631829a0b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460219"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522409"
 ---
 # <a name="userenabledextensions"></a>UserEnabledExtensions
 
-**UserEnabledExtensions**要素は、有効になっているアプリを一覧表示します。 
+**UserEnabledExtensions 要素は、** 有効なアプリを一覧表示します。 
   
 ```XML
 <UserEnabledExtensions>
@@ -53,8 +53,8 @@ ms.locfileid: "44460219"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

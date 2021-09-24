@@ -4,25 +4,25 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 2f0f77bd-4cbe-4c02-880d-a93b387141d9
 description: AcceptableResponseSchema 要素は、自動検出応答のスキーマを識別します。
-ms.openlocfilehash: ffc06f33144af7c8f06e81a12bcb5077719b15b8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 96a3957683879897377c3182bc8b5a95d6c7a2b5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460408"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522272"
 ---
 # <a name="acceptableresponseschema-pox"></a>AcceptableResponseSchema (POX)
 
-**AcceptableResponseSchema**要素は、自動検出応答のスキーマを識別します。 
+**AcceptableResponseSchema** 要素は、自動検出応答のスキーマを識別します。 
   
-- [自動検出 (POX)](autodiscover-pox.md)
+- [AutoDiscover (POX)](autodiscover-pox.md)
   
-- [要求 (POX)](request-pox.md)
+- [Request (POX)](request-pox.md)
   
 - [AcceptableResponseSchema (POX)](acceptableresponseschema-pox.md)
   
@@ -46,13 +46,13 @@ ms.locfileid: "44460408"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[要求 (POX)](request-pox.md) <br/> |自動検出サービスへの要求を含みます。  <br/> |
+|[Request (POX)](request-pox.md) <br/> |自動検出サービスへの要求が含まれる。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、自動検出応答スキーマの場所を示します。
+テキスト値は、自動検出応答スキーマの場所を識別します。
   
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+- [POX 自動検出 XML 要素のExchange](pox-autodiscover-xml-elements-for-exchange.md)
 

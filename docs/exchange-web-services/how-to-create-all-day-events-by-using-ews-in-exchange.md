@@ -3,15 +3,15 @@ title: Exchange で EWS を使用して終日イベントを作成する
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0fcb484b-4ffc-41a5-aeed-8c797766b70c
 description: Exchange で EWS マネージ API または EWS を使用して、終日イベントを作成する方法について説明します。
-ms.openlocfilehash: 6be638c17cc0e0c86fa6b4217169aa7259dfd4aa
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 8769999907df46f519355a36fdf409f9ad347330
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456865"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521222"
 ---
 # <a name="create-all-day-events-by-using-ews-in-exchange"></a>Exchange で EWS を使用して終日イベントを作成する
 
@@ -69,7 +69,7 @@ static void CreateAllDayAppointment(ExchangeService service, DateTime startDate,
 
 ## <a name="create-an-all-day-event-by-using-ews"></a>EWS を使用して終日イベントを作成する
 
-次の例では、終日イベントを作成する EWS [CreateItem 操作](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx)要求を示します。 予定は、[TimeZoneContext](https://msdn.microsoft.com/library/573c462b-aa1d-4ba0-8852-e3f48b26873b%28Office.15%29.aspx) 要素で示すように、米国東部標準時ゾーンで作成されます。 なお、[Start](https://msdn.microsoft.com/library/7cfe9979-c893-4f9b-b3a1-8f9e17515a4b%28Office.15%29.aspx) 要素と [End](https://msdn.microsoft.com/library/72329821-32ff-495d-b6e5-fdc011003c2e%28Office.15%29.aspx) 要素の値の時間部分は両方とも 04:00Z であり、これは夏時間中の米国東部標準時ゾーンの午前 0 時に変換されます。 
+次の例では、終日イベントを作成する EWS [CreateItem 操作](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx)要求を示します。予定は、[TimeZoneContext](https://msdn.microsoft.com/library/573c462b-aa1d-4ba0-8852-e3f48b26873b%28Office.15%29.aspx) 要素で示すように、米国東部標準時ゾーンで作成されます。なお、[Start](https://msdn.microsoft.com/library/7cfe9979-c893-4f9b-b3a1-8f9e17515a4b%28Office.15%29.aspx) 要素と [End](https://msdn.microsoft.com/library/72329821-32ff-495d-b6e5-fdc011003c2e%28Office.15%29.aspx) 要素の値の時間部分は両方とも 04:00Z であり、これは夏時間中の米国東部標準時ゾーンの午前 0 時に変換します。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

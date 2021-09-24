@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1a796535-7e83-4aa8-850a-d217059050f8
-description: Term 要素は、FindConversation または FindItem 応答で強調表示された用語を指定します。
-ms.openlocfilehash: fb102e21d6e7866110735cacd60cd2c3c68a9675
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Term 要素は、FindConversation または FindItem 応答で強調表示されている用語を指定します。
+ms.openlocfilehash: 12aba499ebfcad392a4e72b29a8cb3522a4f964f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459491"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522538"
 ---
 # <a name="term"></a>用語
 
-**Term**要素は、 **Findconversation**または**FindItem**応答で強調表示された用語を指定します。 
+**Term 要素** は **、FindConversation** または FindItem 応答で強調表示されている **用語を指定** します。 
   
 ```XML
 <Term>
@@ -37,7 +37,7 @@ ms.locfileid: "44459491"
   
 ### <a name="child-elements"></a>子要素
 
-[範囲 (HighlightTermType)](scope-highlighttermtype.md)  | [値](value.md)
+[Scope (HighlightTermType)](scope-highlighttermtype.md)  | [値](value.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -54,8 +54,8 @@ ms.locfileid: "44459491"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

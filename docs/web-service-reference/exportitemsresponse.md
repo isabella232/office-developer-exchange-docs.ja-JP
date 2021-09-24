@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ExportItemsResponse
 api_type:
 - schema
 ms.assetid: ef44354b-fbdb-4f7c-b6bd-b27f56a1d018
-description: ExportItemsResponse 要素は、1つの ExportItems 要求への応答を表します。
-ms.openlocfilehash: a05a767032c32680cc269459b541446fcaa3d660
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ExportItemsResponse 要素は、単一の ExportItems 要求に対する応答を表します。
+ms.openlocfilehash: 685acf96fffafb1e0f86e644140f18a9c1a5d316
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526040"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521969"
 ---
 # <a name="exportitemsresponse"></a>ExportItemsResponse
 
-**ExportItemsResponse**要素は、1つの**ExportItems**要求への応答を表します。 
+**ExportItemsResponse 要素は**、単一の **ExportItems** 要求に対する応答を表します。 
   
 [ExportItemsResponse](exportitemsresponse.md)
   
@@ -44,7 +44,7 @@ ms.locfileid: "44526040"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Exchange Web サービス要求に対する応答メッセージを含みます。  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Web サービス要求の応答メッセージExchange含まれます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -56,16 +56,16 @@ ms.locfileid: "44526040"
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
+この要素を記述するスキーマは、Exchange Web Services をホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

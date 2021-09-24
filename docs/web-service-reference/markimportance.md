@@ -1,27 +1,27 @@
 ---
-title: マーク (重要)
+title: MarkImportance
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MarkImportance
 api_type:
 - schema
 ms.assetid: 32b8b08f-65e9-4764-b40a-63245551f4a3
-description: MarkImportance な要素は、メッセージにスタンプされる重要度を指定します。
-ms.openlocfilehash: 051307c0943a22e0c46439410806d168603d8a69
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MarkImportance 要素は、メッセージにスタンプする重要度を指定します。
+ms.openlocfilehash: 3c0084423a690b2acf758bf6cd91ae65194020b3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530882"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523980"
 ---
-# <a name="markimportance"></a>マーク (重要)
+# <a name="markimportance"></a>MarkImportance
 
-**Markimportance**な要素は、メッセージにスタンプされる重要度を指定します。 
+**MarkImportance** 要素は、メッセージにスタンプする重要度を指定します。 
   
 ```XML
 <MarkImportance/>
@@ -44,13 +44,13 @@ ms.locfileid: "44530882"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Actions](actions.md) <br/> |条件が満たされたときに、メッセージに対して実行できるアクションのセットを表します。  <br/> |
+|[Actions](actions.md) <br/> |条件が満たされた場合にメッセージに対して実行できる一連のアクションを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-この要素のテキスト値は、次のいずれかの文字列値に制限されています。
+この要素のテキスト値は、次のいずれかの文字列値に制限されます。
   
-- 低
+- 低い
     
 - 標準
     
@@ -65,13 +65,13 @@ ms.locfileid: "44530882"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

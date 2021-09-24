@@ -1,29 +1,29 @@
 ---
-title: カテゴリを割り当てる
+title: AssignCategories
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - AssignCategories
 api_type:
 - schema
 ms.assetid: f5c73fed-7b00-446d-8296-71a0c86e7fc6
-description: 割り当てカテゴリ要素は、電子メールメッセージにスタンプされる分類項目を表します。
-ms.openlocfilehash: e2dad0e2ef46421ae92a0d2826d161e5e2af3b93
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: AssignCategories 要素は、電子メール メッセージにスタンプされるカテゴリを表します。
+ms.openlocfilehash: 9ef23f03f54f0c10ed8bdbf287f949119626cd51
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464743"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525219"
 ---
-# <a name="assigncategories"></a>カテゴリを割り当てる
+# <a name="assigncategories"></a>AssignCategories
 
-割り当て**カテゴリ**要素は、電子メールメッセージにスタンプされる分類項目を表します。 
+**AssignCategories 要素** は、電子メール メッセージにスタンプされるカテゴリを表します。 
   
-- [ルール (RuleType)](rule-ruletype.md)
+- [Rule (RuleType)](rule-ruletype.md)
   
 - [Actions](actions.md)
   
@@ -46,13 +46,13 @@ ms.locfileid: "44464743"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[String](string.md) <br/> |1つのカテゴリを識別する文字列を格納します。  <br/> |
+|[String](string.md) <br/> |1 つのカテゴリを識別する文字列が含まれます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Actions](actions.md) <br/> |条件が満たされたときに、メッセージに対して実行できるアクションのセットを表します。  <br/> |
+|[Actions](actions.md) <br/> |条件が満たされた場合にメッセージに対して実行できる一連のアクションを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -67,11 +67,11 @@ ms.locfileid: "44464743"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

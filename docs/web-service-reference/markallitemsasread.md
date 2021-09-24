@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 22244afb-99ec-41b4-8f73-3fbccd56d1ab
-description: MarkAllItemsAsRead 要素には、フォルダー内のすべてのアイテムを開封済みとしてマークする要求が含まれています。
-ms.openlocfilehash: 0338b2a1eed503b7e8fb0ec8b4a8ebcf12b6dbd6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MarkAllItemsAsRead 要素には、フォルダー内のすべてのアイテムを読み取りとしてマークする要求が含まれています。
+ms.openlocfilehash: bf6ec09e4536f9dbcca43b7eb68c3fa6521d0df1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530889"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524757"
 ---
 # <a name="markallitemsasread"></a>MarkAllItemsAsRead
 
-**Markallitemsasread**要素には、フォルダー内のすべてのアイテムを開封済みとしてマークする要求が含まれています。 
+**MarkAllItemsAsRead** 要素には、フォルダー内のすべてのアイテムを読み取りとしてマークする要求が含まれています。 
   
 ```XML
 <MarkAllItemsAsRead>
@@ -38,7 +38,7 @@ ms.locfileid: "44530889"
   
 ### <a name="child-elements"></a>子要素
 
-[Readflag](readflag.md)  | [SuppressReadReceipts](suppressreadreceipts.md)  | [FolderIds](folderids.md)
+[ReadFlag](readflag.md)  | [SuppressReadReceipts](suppressreadreceipts.md)  | [FolderIds](folderids.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -55,8 +55,8 @@ ms.locfileid: "44530889"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8f68b73c-d6b0-4bb5-b89a-fd398d09346c
 description: GetNonIndexableItemStatisticsResponse 要素は、GetNonIndexableItemStatistics 要求への応答を指定します。
-ms.openlocfilehash: 2535ef43228c8ecca958da88178cfb2cb6584ad3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 4c3f3c878e1d43545c82766ef7fc1eeaf8a54f85
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44452784"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524260"
 ---
 # <a name="getnonindexableitemstatisticsresponse"></a>GetNonIndexableItemStatisticsResponse
 
-**GetNonIndexableItemStatisticsResponse**要素は、 **Getnonindexableitemstatistics**要求への応答を指定します。 
+**GetNonIndexableItemStatisticsResponse** 要素は **、GetNonIndexableItemStatistics** 要求への応答を指定します。 
   
 ```XML
 <GetNonIndexableItemStatisticsResponse>
@@ -40,7 +40,7 @@ ms.locfileid: "44452784"
   
 ### <a name="child-elements"></a>子要素
 
-[Messagetext](messagetext.md)  | 応答[Secmode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [Getnonindexableitemstatistics](getnonindexableitemstatistics.md)
+[MessageText](messagetext.md)  | [ResponseCode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [GetNonIndexableItemStatistics](getnonindexableitemstatistics.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -57,8 +57,8 @@ ms.locfileid: "44452784"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

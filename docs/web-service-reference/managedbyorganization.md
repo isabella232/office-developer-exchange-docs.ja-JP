@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 009058b0-c5a7-4fdc-b1a1-af0abaf70ab9
 description: ManagedByOrganization 要素は、管理組織を指定します。
-ms.openlocfilehash: ee46a39c4573f0f2088992ec9bd2a0d60ec8fdcf
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 487db5aef2358d1cfc325247ad3b08a44d0dfc82
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465843"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524834"
 ---
 # <a name="managedbyorganization"></a>ManagedByOrganization
 
-**Managedbyorganization**要素は、管理組織を指定します。 
+**ManagedByOrganization 要素は**、管理組織を指定します。 
   
 ```XML
 <ManagedByOrganization></ManagedByOrganization>
@@ -42,7 +42,7 @@ ms.locfileid: "44465843"
   
 ## <a name="text-value"></a>テキスト値
 
-**Managedbyorganization**要素のテキスト値は、探索検索を管理する組織を識別します。 
+**ManagedByOrganization** 要素のテキスト値は、探索検索を管理する組織を識別します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44465843"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

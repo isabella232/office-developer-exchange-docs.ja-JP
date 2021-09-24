@@ -5,40 +5,40 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetRoomLists
 api_type:
 - schema
 ms.assetid: 55d451f9-547f-44ac-872e-9cb220ea7b7c
-description: GetRoomLists 操作は、Exchange 組織内で使用可能な会議室一覧を取得します。
-ms.openlocfilehash: d1393a6a5e99b7e0a7e354d2b7dd035d04356ec2
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetRoomLists 操作は、組織内で使用可能なルーム リストExchangeします。
+ms.openlocfilehash: 017936dd7d36ffc4c69183380f95e14f7a529913
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458279"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521943"
 ---
 # <a name="getroomlists-operation"></a>GetRoomLists 操作
 
-**GetRoomLists**操作は、Exchange 組織内で使用可能な会議室一覧を取得します。 
+**GetRoomLists 操作は**、組織内で使用可能なルーム リストExchangeします。 
   
 ## <a name="soap-headers"></a>SOAP ヘッダー
 
-**GetRoomLists**操作では、次の表に記載されている SOAP ヘッダーを使用できます。 
+**GetRoomLists** 操作では、次の表に示す SOAP ヘッダーを使用できます。 
   
-|**Header**|**要素**|**説明**|
+|**Header**|**Element**|**説明**|
 |:-----|:-----|:-----|
-|偽装  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。  <br/> |
-|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |メールボックスへのアクセスに使用する RFC3066 カルチャを指定します。  <br/> |
-|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。  <br/> |
+|偽装  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装しているユーザーを識別します。  <br/> |
+|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |メールボックスへのアクセスに使用する RFC3066 カルチャを識別します。  <br/> |
+|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマ バージョンを識別します。  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。  <br/> |
    
 ## <a name="getroomlists-request-example"></a>GetRoomLists 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-以下は、サーバーで使用可能な会議室一覧を返す**GetRoomLists**要求の例です。 
+次に、サーバーで使用できるルーム リストを返す **GetRoomLists** 要求の例を示します。 
   
 ### <a name="code"></a>コード
 
@@ -58,17 +58,17 @@ ms.locfileid: "44458279"
 
 ```
 
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 要求では、次の要素が使用されます。
   
 - [GetRoomLists](getroomlists.md)
     
-## <a name="successful-getroomlists-response-example"></a>Successful GetRoomLists response の例
+## <a name="successful-getroomlists-response-example"></a>GetRoomLists 応答の成功例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-**GetRoomLists**要求に対する応答の例を次に示します。 この応答は、サーバー上に1つの会議室一覧を表示します。 
+GetRoomLists 要求に対する応答の **例を次に示** します。 この応答には、サーバー上の 1 つのルーム リストが表示されます。 
   
 ### <a name="code"></a>コード
 
@@ -95,19 +95,19 @@ ms.locfileid: "44458279"
 
 ```
 
-### <a name="successful-getroomlists-response-elements"></a>Successful GetRoomLists response 要素
+### <a name="successful-getroomlists-response-elements"></a>GetRoomLists 応答要素の成功
 
 応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
-- [た getroomlistsresponse](getroomlistsresponse.md)
+- [GetRoomListsResponse](getroomlistsresponse.md)
     
 - [ResponseCode](responsecode.md)
     
 - [RoomLists](roomlists.md)
     
-- [EmailAddress (非 Emptystringtype)](emailaddress-nonemptystringtype.md)
+- [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
     
 - [RoutingType (EmailAddress)](routingtype-emailaddress.md)
     
@@ -115,9 +115,9 @@ ms.locfileid: "44458279"
     
 ### <a name="getroomlists-error-response-example"></a>GetRoomLists エラー応答の例
 
-#### <a name="description"></a>Description
+#### <a name="description"></a>説明
 
-次の例は、会議室一覧が定義されていないサーバーから、会議室一覧を取得しようとした場合の応答を示しています。
+次の例は、ルーム リストが定義されていないサーバーからルーム リストを取得しようとした場合の応答を示しています。
   
 #### <a name="code"></a>コード
 
@@ -137,13 +137,13 @@ ms.locfileid: "44458279"
 
 ```
 
-#### <a name="getroomlists-error-response-elements"></a>GetRoomLists Error response 要素
+#### <a name="getroomlists-error-response-elements"></a>GetRoomLists エラー応答要素
 
 エラー応答では、次の要素が使用されます。
   
 - [ServerVersionInfo](serverversioninfo.md)
     
-- [た getroomlistsresponse](getroomlistsresponse.md)
+- [GetRoomListsResponse](getroomlistsresponse.md)
     
 - [ResponseCode](responsecode.md)
     
@@ -153,7 +153,7 @@ ms.locfileid: "44458279"
 
 
 
-[Exchange での EWS 操作](ews-operations-in-exchange.md)
+[EWS 操作 (Exchange](ews-operations-in-exchange.md)
   
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

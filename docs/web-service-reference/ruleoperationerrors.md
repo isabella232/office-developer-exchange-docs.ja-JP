@@ -5,21 +5,21 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f15c7b9e-a670-4a11-bb62-2a298c91f142
-description: RuleOperationErrors 要素は、エラーが発生した各ルールフィールドのルール検証エラーの配列を表します。
-ms.openlocfilehash: d547155f3cbf9eedd0f9bfac7bf3768b3630b50e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: RuleOperationErrors 要素は、エラーが発生した各ルール フィールドのルール検証エラーの配列を表します。
+ms.openlocfilehash: 2428d68719e7d9ef5d1fdf87ec94f1f9390bf631
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464953"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524498"
 ---
 # <a name="ruleoperationerrors"></a>RuleOperationErrors
 
-**Ruleoperationerrors**要素は、エラーが発生した各ルールフィールドのルール検証エラーの配列を表します。 
+**RuleOperationErrors 要素** は、エラーが発生した各ルール フィールドのルール検証エラーの配列を表します。 
   
-[Update受信トレイルールの応答](updateinboxrulesresponse.md)
+[UpdateInboxRulesResponse](updateinboxrulesresponse.md)
   
 [RuleOperationErrors](ruleoperationerrors.md)
   
@@ -48,7 +48,7 @@ ms.locfileid: "44464953"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Update受信トレイルールの応答](updateinboxrulesresponse.md) <br/> |[Update受信トレイルール](updateinboxrules.md)要求への応答を定義します。  <br/> |
+|[UpdateInboxRulesResponse](updateinboxrulesresponse.md) <br/> |[UpdateInboxRules 要求に対する応答を定義](updateinboxrules.md)します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -63,9 +63,9 @@ ms.locfileid: "44464953"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -74,5 +74,5 @@ ms.locfileid: "44464953"
 [UpdateInboxRules](updateinboxrules.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

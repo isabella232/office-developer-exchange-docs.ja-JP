@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ResponseMessages
 api_type:
 - schema
 ms.assetid: 14819975-ce54-4f0e-9f90-d4b275895ea0
-description: ResponseMessages 要素には、Exchange Web サービスの委任管理要求に対する応答メッセージが含まれています。
-ms.openlocfilehash: 6b035f4ee46af1750a275e2c61b2cddea06b37a1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ResponseMessages 要素には、Web Services デリゲート管理要求Exchange応答メッセージが含まれます。
+ms.openlocfilehash: aa90d2572679ecf3e5d99cc55731d388e083ff01
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465458"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525568"
 ---
 # <a name="responsemessages-arrayofdelegateuserresponsemessagetype"></a>ResponseMessages (ArrayOfDelegateUserResponseMessageType)
 
-**Responsemessages**要素には、Exchange Web サービスの委任管理要求に対する応答メッセージが含まれています。 
+**ResponseMessages 要素には**、Web Services デリゲート管理要求Exchange応答メッセージが含まれます。 
   
 ```
 <ResponseMessages>
@@ -42,31 +42,31 @@ ms.locfileid: "44465458"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[DelegateUserResponseMessageType](delegateuserresponsemessagetype.md) <br/> |代理人管理操作の応答メッセージを含みます。  <br/> |
+|[DelegateUserResponseMessageType](delegateuserresponsemessagetype.md) <br/> |代理人管理操作の応答メッセージが含まれます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[含む adddelegateresponse](adddelegateresponse.md) <br/> |[Adddelegate 操作](adddelegate-operation.md)要求の状態と結果を格納します。  <br/> |
-|[GetDelegateResponse](getdelegateresponse.md) <br/> |[Getdelegate 操作](getdelegate-operation.md)要求の状態と結果を格納します。  <br/> |
-|[UpdateDelegateResponse](updatedelegateresponse.md) <br/> |[代理人操作](updatedelegate-operation.md)要求の状態と結果を格納します。  <br/> |
-|[RemoveDelegateResponse](removedelegateresponse.md) <br/> |[Removedelegate 操作](removedelegate-operation.md)要求の状態と結果を格納します。  <br/> |
+|[AddDelegateResponse](adddelegateresponse.md) <br/> |AddDelegate 操作要求の状態 [と結果を格納](adddelegate-operation.md) します。  <br/> |
+|[GetDelegateResponse](getdelegateresponse.md) <br/> |GetDelegate 操作要求の状態 [と結果を格納](getdelegate-operation.md) します。  <br/> |
+|[UpdateDelegateResponse](updatedelegateresponse.md) <br/> |UpdateDelegate 操作要求の状態 [と結果を格納](updatedelegate-operation.md) します。  <br/> |
+|[RemoveDelegateResponse](removedelegateresponse.md) <br/> |[RemoveDelegate](removedelegate-operation.md)操作要求の状態と結果を格納します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素は、 [Adddelegate 操作](adddelegate-operation.md)、 [Getdelegate](getdelegate-operation.md)操作、 [Updatedelegate 操作](updatedelegate-operation.md)、および[removedelegate 操作](removedelegate-operation.md)で使用されます。 代理人管理操作の応答は、他の応答とは異なる構造になっています。 代理人管理応答メッセージは厳密に型指定されます。
+この要素は [、AddDelegate](adddelegate-operation.md)操作 [、GetDelegate](getdelegate-operation.md)操作 [、UpdateDelegate 操作、および](updatedelegate-operation.md) [RemoveDelegate](removedelegate-operation.md)操作で使用されます。 代理人管理操作の応答は、他の応答とは異なる構造になります。 代理人管理応答メッセージは、強く入力されます。
   
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされた Exchange Server を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされているコンピューター Exchange Server EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -81,5 +81,5 @@ ms.locfileid: "44465458"
 [RemoveDelegate 操作](removedelegate-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

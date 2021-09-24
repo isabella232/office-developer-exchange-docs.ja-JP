@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 29b085e8-95c0-4ba6-83e8-40de36a75be3
-description: GetUserPhotoResponse 要素には、GetUserPhoto 要求への応答が含まれています。
-ms.openlocfilehash: c0dfb6979ade0192b376c3f7115fef78a4cc7e06
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetUserPhotoResponse 要素には、GetUserPhoto 要求に対する応答が含まれる。
+ms.openlocfilehash: 3674a4823b6efa9f2fdc35f242eb2ecae351a097
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463308"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521936"
 ---
 # <a name="getuserphotoresponse"></a>GetUserPhotoResponse
 
-**GetUserPhotoResponse**要素には、getuserphoto 要求への応答が含まれています。 
+**GetUserPhotoResponse** 要素には、GetUserPhoto 要求に対する応答が含まれる。 
   
 ```XML
 <GetUserPhotoResponse>
@@ -41,7 +41,7 @@ ms.locfileid: "44463308"
   
 ### <a name="child-elements"></a>子要素
 
-[Messagetext](messagetext.md)  | 応答[Secmode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [Haschanged](haschanged.md)  | [PictureData](picturedata.md)
+[MessageText](messagetext.md)  | [ResponseCode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [HasChanged](haschanged.md)  | [PictureData](picturedata.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -58,8 +58,8 @@ ms.locfileid: "44463308"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

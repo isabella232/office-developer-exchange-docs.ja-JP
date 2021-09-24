@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f81b1b3d-9fe4-4ab3-b517-42e4207fa596
-description: QueryString 要素は、FindPeople 操作要求のクエリ文字列に一致する、返される値のセットを指定します。 QueryString が指定されていない検索では、指定されたフォルダーからすべてのアイテムが返されます。
-ms.openlocfilehash: ec025f86d3e6fb74810e9c539eba102d05adbb93
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: QueryString 要素は、FindPeople 操作要求のクエリ文字列と一致する値のセットを指定します。 QueryString が指定されていない検索では、指定したフォルダーのすべてのアイテムが返されます。
+ms.openlocfilehash: 6dfd4b5552511e2551baf5ce645f82d4f74e5499
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465325"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523735"
 ---
 # <a name="querystring-string"></a>QueryString (String)
 
-**QueryString**要素は、 [findpeople 操作](findpeople-operation.md)要求のクエリ文字列に一致する、返される値のセットを指定します。 **QueryString**が指定されていない検索では、指定されたフォルダーからすべてのアイテムが返されます。 
+**QueryString 要素は**[、FindPeople](findpeople-operation.md)操作要求のクエリ文字列と一致する値のセットを指定します。 QueryString が指定 **されていない検索では** 、指定したフォルダーのすべてのアイテムが返されます。 
   
 ```XML
 <QueryString/> 
@@ -40,11 +40,11 @@ ms.locfileid: "44465325"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FindPeople](findpeople.md) <br/> |[Findpeople 操作](findpeople-operation.md)検索の引数が含まれています。  <br/> |
+|[FindPeople](findpeople.md) <br/> |[FindPeople 操作検索の引数を格納](findpeople-operation.md)します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**QueryString**テキスト値は、[高度なクエリ構文 (aqs)](https://msdn.microsoft.com/library/aa965711%28VS.85%29.aspx)のサブセットを使用して作成されたメールボックスクエリを表します。 この要素の構文については、「 [QueryString (QueryStringType)](querystring-querystringtype.md)」を参照してください。
+**QueryString テキスト** 値は、高度なクエリ構文 [(AQS)](https://msdn.microsoft.com/library/aa965711%28VS.85%29.aspx)のサブセットを使用して行われたメールボックス クエリを表します。 この要素の構文の詳細については [、「QueryString (QueryStringType)」を参照してください](querystring-querystringtype.md)。
   
 ## <a name="remarks"></a>注釈
 
@@ -55,9 +55,9 @@ ms.locfileid: "44465325"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -66,5 +66,5 @@ ms.locfileid: "44465325"
 [FindPeople 操作](findpeople-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

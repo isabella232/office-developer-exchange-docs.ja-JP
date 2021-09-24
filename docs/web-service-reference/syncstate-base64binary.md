@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 89650cd4-c790-4a37-b5e5-46a57501e100
 description: SyncState 要素は、会話の同期状態を指定します。
-ms.openlocfilehash: 85c525176931b66354ebdd8873673f04c6a722f3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: e5096dd6f0fa9abfd92e725343d3f8f7fd08c103
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468139"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522579"
 ---
 # <a name="syncstate-base64binary"></a>SyncState (base64Binary)
 
-**Syncstate**要素は、会話の同期状態を指定します。 
+**SyncState 要素** は、会話の同期状態を指定します。 
   
 ```XML
 <SyncState></SyncState>
@@ -38,11 +38,11 @@ ms.locfileid: "44468139"
   
 ### <a name="parent-elements"></a>親要素
 
-[会話 (ConversationRequestType)](conversation-conversationrequesttype.md)  | [会話 (ConversationResponseType)](conversation-conversationresponsetype.md)
+[Conversation (ConversationRequestType)](conversation-conversationrequesttype.md)  | [Conversation (ConversationResponseType)](conversation-conversationresponsetype.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**Syncstate**要素のテキスト値は、会話の同期状態です。 
+**SyncState** 要素のテキスト値は、会話の同期状態です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44468139"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - NotSentToMe
 api_type:
 - schema
 ms.assetid: 7cb63269-622c-4198-9a21-f5a021bf6901
-description: NotSentToMe 要素は、条件または例外を適用するために、メールボックスの所有者が受信メッセージの Tor プロパティにない必要があるかどうかを示します。
-ms.openlocfilehash: 58efe4381fe0c9f5bd0645a9eba471a13b5e4064
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: NotSentToMe 要素は、メールボックスの所有者が、条件または例外を適用するために、受信メッセージの ToRecipients プロパティに含めなければならないかどうかを示します。
+ms.openlocfilehash: f3c2994778298c1c8a27626fb0d4b32d6d2963cb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462613"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518107"
 ---
 # <a name="notsenttome"></a>NotSentToMe
 
-**NotSentToMe**要素は、条件または例外を適用するために、メールボックスの所有者が受信メッセージの**tor**プロパティにない必要があるかどうかを示します。 
+**NotSentToMe** 要素は、メールボックスの所有者が、条件または例外を適用するために、受信メッセージの **ToRecipients** プロパティに含めなければならないかどうかを示します。 
   
 ```xml
 <NotSentToMe>true | false</NotSentToMe>
@@ -44,12 +44,12 @@ ms.locfileid: "44462613"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[条件](conditions.md) <br/> |ルールのルールの処理を開始するときに実行される条件を表します。  <br/> |
-|[例外](exceptions.md) <br/> |受信トレイルールに対して使用可能なルールの例外条件をすべて表す例外を表します。  <br/> |
+|[条件](conditions.md) <br/> |満たされると、ルールのルール アクションをトリガーする条件を表します。  <br/> |
+|[例外](exceptions.md) <br/> |受信トレイ ルールで使用可能なすべてのルール例外条件を表す例外を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値が**true の場合**は、条件または例外を適用するために、メールボックスの所有者が受信メッセージの**トーラス**プロパティに含まれていてはならないことを示します。 値が**false**の場合は、条件または例外を適用するために、メールボックスの所有者が受信メッセージの**torecipients**プロパティにある必要があることを示します。 
+true **のテキスト値** は、メールボックスの所有者が、条件または例外を適用するために、受信メッセージの **ToRecipients** プロパティに含めずにいなければならないと示します。 false の **値は** 、メールボックスの所有者が、条件または例外を適用するために、受信メッセージの **ToRecipients** プロパティに含む必要があります。 
   
 ## <a name="remarks"></a>注釈
 
@@ -60,13 +60,13 @@ ms.locfileid: "44462613"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

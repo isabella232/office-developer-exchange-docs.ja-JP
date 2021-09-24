@@ -4,27 +4,27 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: a6f4a53d-d7f6-4ad1-8afb-78745c500eaa
-description: GetDomainSettings 操作は、ユーザーに対して指定されたドメインの設定を取得します。 自動検出は、検出されるドメインと、それらのドメインの要求された設定を返します。
-ms.openlocfilehash: fd655e088b73372bc1dd68a740ebc2b516d1804a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetDomainSettings 操作は、ユーザーのドメインの指定された設定を取得します。 自動検出は、検出するドメインと、それらのドメインの要求された設定を返します。
+ms.openlocfilehash: 7f52ea840bd7f46198d95ba5f0c07894873cf6e5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460968"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525051"
 ---
 # <a name="getdomainsettings-operation-soap"></a>GetDomainSettings 操作 (SOAP)
 
-**Getdomainsettings**操作は、ユーザーに対して指定されたドメインの設定を取得します。 自動検出は、検出されるドメインと、それらのドメインの要求された設定を返します。 
+**GetDomainSettings 操作は**、ユーザーのドメインの指定された設定を取得します。 自動検出は、検出するドメインと、それらのドメインの要求された設定を返します。 
   
 ## <a name="getdomainsettings-request-example"></a>GetDomainSettings 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の**Getdomainsettings**要求の例は、ユーザーの**Externalewsurl**ドメイン設定の要求を示しています。 クライアントは、この要求をサーバーに送信します。 
+**GetDomainSettings** 要求の次の例は、ユーザーの **ExternalEWSUrl** ドメイン設定の要求を示しています。 クライアントは、この要求をサーバーに送信します。 
   
 ### <a name="code"></a>コード
 
@@ -58,17 +58,17 @@ ms.locfileid: "44460968"
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 要求では、次の要素が使用されます。
   
 - [GetDomainSettingsRequestMessage (SOAP)](getdomainsettingsrequestmessage-soap.md)
     
-- [要求 (SOAP)](request-soap.md)
+- [Request (SOAP)](request-soap.md)
     
 - [Domains (SOAP)](domains-soap.md)
     
-- [ドメイン (SOAP)](domain-soap.md)
+- [Domain (SOAP)](domain-soap.md)
     
 - [RequestedSettings (SOAP)](requestedsettings-soap.md)
     
@@ -76,9 +76,9 @@ ms.locfileid: "44460968"
     
 ## <a name="getdomainsettings-response-example"></a>GetDomainSettings 応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、サーバーがクライアントに送信する**Getdomainsettings**要求に対する正常な応答を示しています。 
+次の例は、サーバーがクライアントに送信する **GetDomainSettings** 要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -122,13 +122,13 @@ ms.locfileid: "44460968"
 </s:Envelope>
 ```
 
-### <a name="response-elements"></a>Response 要素
+### <a name="response-elements"></a>応答要素
 
 応答では、次の要素が使用されます。
   
 - [GetDomainSettingsResponseMessage (SOAP)](getdomainsettingsresponsemessage-soap.md)
     
-- [応答 (SOAP)](response-soap.md)
+- [Response (SOAP)](response-soap.md)
     
 - [ErrorCode (SOAP)](errorcode-soap.md)
     

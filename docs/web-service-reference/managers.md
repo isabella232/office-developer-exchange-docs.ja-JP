@@ -1,23 +1,23 @@
 ---
-title: マネージャー
+title: Managers
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9be5f734-af42-4bf1-9eb4-f3e4f0917640
-description: Managers 要素は、マネージャー名の配列と、ペルソナのソース attributions の識別子を指定します。
-ms.openlocfilehash: 49fccb4e6e4b920887d6f8fbc41c5ccdba1cbbe2
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Manager 要素は、管理者名の配列と、ペルサのソース属性の識別子を指定します。
+ms.openlocfilehash: a36b85ccefa7e13f9bdc482d5d613044532c7347
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530896"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524008"
 ---
-# <a name="managers"></a>マネージャー
+# <a name="managers"></a>Managers
 
-**Managers**要素は、マネージャー名の配列と、ペルソナのソース attributions の識別子を指定します。 
+**Manager 要素** は、管理者名の配列と、ペルサのソース属性の識別子を指定します。 
   
 ```XML
 <Managers>
@@ -53,8 +53,8 @@ ms.locfileid: "44530896"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - AttendeeConflictDataArray
 api_type:
 - schema
 ms.assetid: 1d758547-28c5-4649-8334-427480c282d6
-description: AttendeeConflictDataArray 要素には、GetUserAvailability 操作で識別された、クエリを実行した出席者の競合データの配列が含まれています。
-ms.openlocfilehash: 770e8c00ca248ec3562180dc9d3626fd5b58f4d9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: AttendeeConflictDataArray 要素には、GetUserAvailability 操作で識別されたクエリを実行した出席者の競合データの配列が含まれる。
+ms.openlocfilehash: 1054fba62c7e0746a13471433d6d619a304ff848
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455801"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524362"
 ---
 # <a name="attendeeconflictdataarray"></a>AttendeeConflictDataArray
 
-**AttendeeConflictDataArray**要素には、 [getuseravailability 操作](getuseravailability-operation.md)で識別された、クエリを実行した出席者の競合データの配列が含まれています。
+**AttendeeConflictDataArray** 要素には [、GetUserAvailability](getuseravailability-operation.md)操作で識別されたクエリを実行した出席者の競合データの配列が含まれる。
   
 - [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -59,35 +59,35 @@ ms.locfileid: "44455801"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[UnknownAttendeeConflictData](unknownattendeeconflictdata.md) <br/> |非解決の出席者またはユーザー、配布リスト、または連絡先ではない出席者を表します。  <br/> |
-|[IndividualAttendeeConflictData](individualattendeeconflictdata.md) <br/> |[提案](suggestion.md)要素で特定された会議の時間と同時に発生する時間枠のユーザーまたは連絡先の空き時間状態を格納します。  <br/> |
+|[UnknownAttendeeConflictData](unknownattendeeconflictdata.md) <br/> |ユーザー、配布リスト、または連絡先ではない、解決できない出席者または出席者を表します。  <br/> |
+|[IndividualAttendeeConflictData](individualattendeeconflictdata.md) <br/> |Suggest 要素で指定された推奨される会議時間と同時に発生するタイム ウィンドウのユーザーまたは連絡先の空き時間情報の状態 [を格納](suggestion.md) します。  <br/> |
 |[TooBigGroupAttendeeConflictData](toobiggroupattendeeconflictdata.md) <br/> |展開するには大きすぎる配布リストとして解決された出席者を表します。  <br/> |
-|[GroupAttendeeConflictData](groupattendeeconflictdata.md) <br/> |利用可能なユーザー数、競合しているユーザーの数、および推奨される会議時間の配布リストに空き時間情報を持たないユーザーの数についての集約競合情報を格納します。  <br/> |
+|[GroupAttendeeConflictData](groupattendeeconflictdata.md) <br/> |利用可能なユーザー数、競合しているユーザーの数、および推奨される会議時間の配布リストに可用性情報を持つユーザーの数に関する集約競合情報が含まれる。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[提案](suggestion.md) <br/> |1つの会議時間の提案を表します。  <br/> この要素の XPath 式を次に示します。  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]` <br/> |
+|[提案](suggestion.md) <br/> |1 つの会議時間の提案を表します。  <br/> 次に、この要素の XPath 式を示します。  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]` <br/> |
    
 ## <a name="remarks"></a>注釈
 
-**AttendeeConflictDataArray**の各要素の位置は、 [MailboxDataArray](mailboxdataarray.md)要素の中でクエリを行った出席者の位置に対応します。 クエリを行った各出席者は、 **AttendeeConflictDataArray**子要素のいずれかに対応している必要があります。 これらの要素は、[提案](suggestion.md)要素で特定された会議の推奨時間との単一の競合を表します。 
+**AttendeeConflictDataArray** 内の各要素の位置は [、MailboxDataArray](mailboxdataarray.md)要素内のクエリされた出席者の位置に対応します。 クエリされた各出席者は **、AttendeeConflictDataArray 子要素の 1 つに対応する** 必要があります。 これらの要素は、Suggest 要素で識別される推奨される会議時間との 1 つの競合 [を表](suggestion.md) します。 
   
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [GetUserAvailability 操作](getuseravailability-operation.md) 
 - [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
-- [ユーザーの空き時間情報の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [ユーザーの可用性の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

@@ -4,19 +4,19 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e13c0edd-2ab1-49bb-a993-54a8db2dfbb9
-description: TargetApplicationUri 要素は、ターゲットアプリケーション URI を定義します。 TargetApplicationUri 要素は、内部使用のみを対象としています。 この要素はクライアントによって使用されません。
-ms.openlocfilehash: 88968aac604b77cd057dbc69c396227a489ac9a8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: TargetApplicationUri 要素は、ターゲット アプリケーション URI を定義します。 TargetApplicationUri 要素は内部でのみ使用できます。 この要素は、クライアントでは使用されません。
+ms.openlocfilehash: 3bed26b697fc3638782de5abd53a68fd04f031e6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457089"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522573"
 ---
 # <a name="targetapplicationuri-soap"></a>TargetApplicationUri (SOAP)
 
-**Targetapplicationuri**要素は、ターゲットアプリケーション uri を定義します。 **Targetapplicationuri**要素は、内部使用のみを対象としています。 この要素はクライアントによって使用されません。 
+**TargetApplicationUri 要素** は、ターゲット アプリケーション URI を定義します。 **TargetApplicationUri 要素** は内部でのみ使用できます。 この要素は、クライアントでは使用されません。 
   
 ```XML
 <TargetApplicationUri/>
@@ -39,7 +39,7 @@ ms.locfileid: "44457089"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[組織のリレーションシップ設定 (SOAP)](organizationrelationshipsettings-soap.md) <br/> |1つの組織の組織上の関係のリストを表します。  <br/> |
+|[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |1 つの組織の組織関係の一覧を表します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -51,12 +51,12 @@ ms.locfileid: "44457089"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[Get組織の Relationshipsettings 操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)
+[GetOrganizationRelationshipSettings 操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)
 

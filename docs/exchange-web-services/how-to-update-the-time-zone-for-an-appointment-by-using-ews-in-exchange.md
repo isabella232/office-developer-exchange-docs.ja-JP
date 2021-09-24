@@ -3,15 +3,15 @@ title: Exchange の EWS を使用して予定のタイム ゾーンを更新す�
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: dc2240c1-5500-4d5c-97d5-09d63ffd30d5
 description: Exchange の EWS マネージ API または EWS を使用して、既存の予定または会議のタイム ゾーンを更新する方法について説明します。
-ms.openlocfilehash: 064f99997b7c3d1197cb8d1ee6a24f8fb874f706
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 525feb1c7e37914ef4105312e89af8f1a8cf856b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455843"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521068"
 ---
 # <a name="update-the-time-zone-for-an-appointment-by-using-ews-in-exchange"></a>Exchange の EWS を使用して予定のタイム ゾーンを更新する
 
@@ -146,11 +146,11 @@ After update:
   End time zone: (UTC-06:00) Central Time (US &amp; Canada)
 ```
 
-開始時刻と終了時刻が変更されていない点に注目してください。 これは、時刻が東部標準時で解釈されていて (**TimeZone** プロパティが東部標準時に設定されているため)、予定がずれないように時刻の値が更新されたためです。 
+開始時刻と終了時刻が変更されていない点に注目してください。これは、時刻が東部標準時で解釈されていて (**TimeZone** プロパティが東部標準時に設定されているため)、予定がずれないように時刻の値が更新されたためです。 
   
 ## <a name="updating-the-time-zone-on-an-existing-appointment-by-using-ews"></a>既存の予定のタイム ゾーンを更新する (EWS を使用する場合)
 
-次に示す EWS の [UpdateItem 操作](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx)要求の例では、予定のタイム ゾーンを更新します。 この例では、[StartTimeZone](https://msdn.microsoft.com/library/d38c4dc1-4ecb-42a1-8d57-a451b16a2de2%28Office.15%29.aspx) 要素と [EndTimeZone](https://msdn.microsoft.com/library/6c53c337-be60-4d22-9e9e-a0c140c5e913%28Office.15%29.aspx) 要素のみを更新しています。そのため、開始時刻と終了時刻は新しいタイム ゾーンで同じタイム ゾーン相対時刻になるようにサーバーによってシフトされます。 **ItemId** 要素の値は、読みやすいよう短縮してあります。 
+次に示す EWS の [UpdateItem 操作](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx)要求の例では、予定のタイム ゾーンを更新します。この例では、[StartTimeZone](https://msdn.microsoft.com/library/d38c4dc1-4ecb-42a1-8d57-a451b16a2de2%28Office.15%29.aspx) 要素と [EndTimeZone](https://msdn.microsoft.com/library/6c53c337-be60-4d22-9e9e-a0c140c5e913%28Office.15%29.aspx) 要素のみを更新しています。そのため、開始時刻と終了時刻は新しいタイム ゾーンで同じタイム ゾーン相対時刻になるようにサーバーによってシフトされます。**ItemId** 要素の値は、読みやすくなるように短縮してあります。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -187,7 +187,7 @@ After update:
 </soap:Envelope>
 ```
 
-次に示す要求例では、予定のタイム ゾーンを更新します。さらに、**Start** 要素と **End** 要素を明示的に設定することで開始時刻と終了時刻も更新します。 **ItemId** 要素の値は、読みやすいよう短縮してあります。 
+次に示す要求例では、予定のタイム ゾーンを更新します。さらに、**Start** 要素と **End** 要素を明示的に設定することで開始時刻と終了時刻も更新します。**ItemId** 要素の値は、読みやすくなるように短縮してあります。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

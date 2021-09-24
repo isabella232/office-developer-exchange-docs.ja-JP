@@ -3,15 +3,15 @@ title: Exchange で EWS を使用して X ヘッダーを準備する
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 45a99a14-a85f-47f8-af48-18eb6c6cc230
 description: Exchange で EWS マネージ API または EWS を使用して、メールボックスの X ヘッダーを準備する方法について説明します。
-ms.openlocfilehash: 409ddb944bbac7a60242de39cdf7ae13b17cc76a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: e60092e0d40d5815cdf3fd4ed588e2f74978c245
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527769"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521117"
 ---
 # <a name="provision-x-headers-by-using-ews-in-exchange"></a>Exchange で EWS を使用して X ヘッダーを準備する
 
@@ -27,7 +27,7 @@ Exchange は、電子メールと共に X ヘッダーを受信する初回に�
 ## <a name="provision-an-x-header-by-using-the-ews-managed-api"></a>EWS マネージ API を使用して X ヘッダーを準備する
 <a name="bk_example1"> </a>
 
-次のコード例は、EWS マネージ API [EmailMessage.Send](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.emailmessage.send%28v=exchg.80%29.aspx) メソッドを使用して、メールボックスの X ヘッダーを準備する方法を示しています。 この例では、**service** は有効な [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、対象のメールボックスは[名前付きプロパティのクォータ](https://technet.microsoft.com/library/bb851492%28v=EXCHG.80%29.aspx)を超過していないことを前提としています。
+次のコード例は、EWS マネージ API [EmailMessage.Send](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.emailmessage.send%28v=exchg.80%29.aspx) メソッドを使用して、メールボックスの X ヘッダーを準備する方法を示しています。 この例では、**service** は有効な [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) オブジェクトであり、対象のメールボックスは [名前付きプロパティのクォータ](https://technet.microsoft.com/library/bb851492%28v=EXCHG.80%29.aspx)を超過していないことを前提としています。
   
 ```cs
 private static void ProvisionCustomXHeaderByEmail(ExchangeService service)

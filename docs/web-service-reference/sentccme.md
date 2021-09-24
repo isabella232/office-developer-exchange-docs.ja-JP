@@ -1,27 +1,27 @@
 ---
-title: Ccme の説明
+title: SentCcMe
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SentCcMe
 api_type:
 - schema
 ms.assetid: bf5044e4-cbdf-4e24-a16f-b6454a51fcd5
-description: 送信された Ccme 要素は、条件または例外を適用するために、メールボックスの所有者が受信メッセージの CcRecipients プロパティにある必要があるかどうかを示します。
-ms.openlocfilehash: 1fae56a8e7d4e56c56884e5fff051ecd9f138a6d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SentCcMe 要素は、メールボックスの所有者が、条件または例外を適用するために受信メッセージの CcRecipients プロパティに含める必要があるかどうかを示します。
+ms.openlocfilehash: 82123a44cccf953bf1db6dfaf916d4ebf851851e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465479"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521523"
 ---
-# <a name="sentccme"></a>Ccme の説明
+# <a name="sentccme"></a>SentCcMe
 
-送信された**Ccme**要素は、条件または例外を適用するために、メールボックスの所有者が受信メッセージの**Ccrecipients**プロパティにある必要があるかどうかを示します。 
+**SentCcMe** 要素は、メールボックスの所有者が、条件または例外を適用するために受信メッセージの **CcRecipients** プロパティに含める必要があるかどうかを示します。 
   
 ```XML
 <SentCcMe>true | false</SentCcMe>
@@ -44,12 +44,12 @@ ms.locfileid: "44465479"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[条件](conditions.md) <br/> |ルールのルールの処理を開始するときに実行される条件を表します。  <br/> |
-|[例外](exceptions.md) <br/> |受信トレイルールに対して使用可能なすべてのルールの例外条件を表します。  <br/> |
+|[条件](conditions.md) <br/> |満たされると、ルールのルール アクションをトリガーする条件を表します。  <br/> |
+|[例外](exceptions.md) <br/> |受信トレイ ルールで使用可能なすべてのルール例外条件を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値が**true の場合**は、条件または例外を適用するために、メールボックスの所有者が受信メッセージの**Ccrecipients**プロパティにある必要があることを示します。 値が**false**の場合、条件または例外を適用するために、メールボックスの所有者が受信メッセージの**Ccrecipients**プロパティにない必要があることを示します。 
+true **のテキスト値** は、メールボックスの所有者が、条件または例外を適用するために受信メッセージの **CcRecipients** プロパティに含めなければならないかどうかを示します。 false の **値** は、メールボックスの所有者が、条件または例外を適用するために受信メッセージの **CcRecipients** プロパティに含めずにいなければならないと示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -60,13 +60,13 @@ ms.locfileid: "44465479"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

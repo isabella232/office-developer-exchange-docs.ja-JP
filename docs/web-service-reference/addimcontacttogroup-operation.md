@@ -5,42 +5,42 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 376acc42-2684-4596-aca1-82a4a10865c9
 description: AddImContactToGroup EWS 操作に関する情報を検索します。
-ms.openlocfilehash: a69ee0b355e78e1249383cab612a75bcda8d9e8a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 2f3cfa35662251fdcd449876af466bd5c066ec62
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458412"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525412"
 ---
 # <a name="addimcontacttogroup-operation"></a>AddImContactToGroup 操作
 
-**Addimcontacttogroup** EWS 操作に関する情報を検索します。 
+**AddImContactToGroup** EWS 操作に関する情報を検索します。 
   
-**Addimcontacttogroup** Exchange Web サービス (EWS) 操作は、既存のインスタントメッセージング (IM) 連絡先をグループに追加します。 
+**AddImContactToGroup Exchange** Web サービス (EWS) 操作は、既存のインスタント メッセージング (IM) 連絡先をグループに追加します。 
   
 この操作は Exchange Server 2013 で導入されました。
   
 ## <a name="using-the-addimcontacttogroup-operation"></a>AddImContactToGroup 操作の使用
 
-**Addimcontacttogroup**操作では、IM の連絡先のみを受け入れることができます。 新しい IM 連絡先を統合連絡先ストアに追加する場合は、 [AddNewImContactToGroup](addnewimcontacttogroup-operation.md)操作を使用します。 
+**AddImContactToGroup 操作は** IM 連絡先のみを受け入れます。 統合連絡先ストアに新しい IM 連絡先を追加する場合は [、AddNewImContactToGroup 操作を使用](addnewimcontacttogroup-operation.md) します。 
   
-**Addimcontacttogroup**操作では、次の表に示す SOAP ヘッダーを使用できます。 
+**AddImContactToGroup 操作では**、次の表に示す SOAP ヘッダーを使用できます。 
   
-**表1AddImContactToGroup 操作 SOAP ヘッダー**
+**表 1.AddImContactToGroup 操作 SOAP ヘッダー**
 
-|**ヘッダー名**|**要素**|**説明**|
+|**ヘッダー名**|**Element**|**説明**|
 |:-----|:-----|:-----|
-|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |RFC 3066 で定義されているように、メールボックスへのアクセスに使用されるカルチャ (言語の識別用のタグ) を識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは応答に適用されます。  <br/> |
+|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |メールボックスへのアクセスに使用する RFC 3066「言語の識別用タグ」で定義されているカルチャを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマ バージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは、応答に適用されます。  <br/> |
    
-## <a name="addimcontacttogroup-operation-request-example-add-an-existing-im-contact-to-an-im-group"></a>AddImContactToGroup 操作要求の例: 既存の IM 連絡先を IM グループに追加します。
+## <a name="addimcontacttogroup-operation-request-example-add-an-existing-im-contact-to-an-im-group"></a>AddImContactToGroup 操作要求の例: IM グループに既存の IM 連絡先を追加する
 
-**Addimcontacttogroup**操作要求の次の例は、既存の im 連絡先を im グループに追加する方法を示しています。 
+**AddImContactToGroup** 操作要求の次の例は、IM グループに既存の IM 連絡先を追加する方法を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -70,9 +70,9 @@ ms.locfileid: "44458412"
     
 - [GroupId](groupid.md)
     
-## <a name="successful-addimcontacttogroup-operation-response"></a>正常な AddImContactToGroup 操作の応答
+## <a name="successful-addimcontacttogroup-operation-response"></a>AddImContactToGroup 操作応答の成功
 
-次の例は、 **Addimcontacttogroup**操作要求に対する正常な応答を示しています。 
+次の例は **、AddImContactToGroup** 操作要求に対する正常な応答を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -106,7 +106,7 @@ ms.locfileid: "44458412"
     
 ## <a name="addimcontacttogroup-operation-errorinvalidimcontactid-error-response"></a>AddImContactToGroup 操作 ErrorInvalidImContactId エラー応答
 
-次の例は、 **Addimcontacttogroup**操作要求へのエラー応答を示しています。 IM 連絡先ではない連絡先を追加しようとすると、次のエラー応答が発生します。 
+次の例は **、AddImContactToGroup** 操作要求に対するエラー応答を示しています。 IM 連絡先ではない連絡先を追加しようとすると、次のエラー応答が発生します。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

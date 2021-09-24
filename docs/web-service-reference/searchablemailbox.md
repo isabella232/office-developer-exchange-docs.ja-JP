@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 339005cd-a3b9-47dd-bc7b-a860b699625b
 description: SearchableMailbox 要素は、GetSearchableMailboxes 要求から返されるメールボックスを指定します。
-ms.openlocfilehash: f790d9a707f10f64a776b2fc35255c233ad854b6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 75d5680de8b0776b1ecf441ff71266ee74c4aa66
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467453"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524428"
 ---
 # <a name="searchablemailbox"></a>SearchableMailbox
 
-**SearchableMailbox**要素は、 **Getsearchablemailboxes**要求から返されるメールボックスを指定します。 
+**SearchableMailbox 要素** は **、GetSearchableMailboxes** 要求から返されるメールボックスを指定します。 
   
 ```XML
 <SearchableMailbox>
@@ -42,7 +42,7 @@ ms.locfileid: "44467453"
   
 ### <a name="child-elements"></a>子要素
 
-[Guid](guid-ex15websvcsotherref.md)  | [Primarysmtpaddress (文字列)](primarysmtpaddress-string.md)  | [IsExternalMailbox](isexternalmailbox.md)  | [ExternalEmailAddress](externalemailaddress.md)  | [DisplayName (文字列)](displayname-string.md)  | [Isメンバーシップグループ](ismembershipgroup.md)  | [ReferenceId](referenceid.md)
+[Guid](guid-ex15websvcsotherref.md)  | [PrimarySmtpAddress (string)](primarysmtpaddress-string.md)  | [IsExternalMailbox](isexternalmailbox.md)  | [ExternalEmailAddress](externalemailaddress.md)  | [DisplayName (string)](displayname-string.md)  | [IsMembershipGroup](ismembershipgroup.md)  | [ReferenceId](referenceid.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -59,8 +59,8 @@ ms.locfileid: "44467453"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

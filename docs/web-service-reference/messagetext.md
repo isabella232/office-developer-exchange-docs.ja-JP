@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MessageText
 api_type:
 - schema
 ms.assetid: 59a23bdc-0d9a-4942-8b3c-9cdb11db1ab1
-description: MessageText 要素は、応答の状態に関するテキストの説明を提供します。
-ms.openlocfilehash: d919463e1027cb853facaf5a850607750a01f1e4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MessageText 要素は、応答の状態のテキスト記述を提供します。
+ms.openlocfilehash: 1503bbf211544797f56e7da661f38824a87a1196
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466697"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523854"
 ---
 # <a name="messagetext"></a>MessageText
 
-**Messagetext**要素は、応答の状態に関するテキストの説明を提供します。 
+**MessageText 要素** は、応答の状態のテキスト記述を提供します。 
   
 ```XML
 <MessageText/>
@@ -44,54 +44,54 @@ ms.locfileid: "44466697"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ResponseMessage](responsemessage.md) <br/> | 応答状態に関する説明情報を提供します。  <br/> <br/> この要素に使用できる XPath 式の一部を次に示します。 <br/> <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/ResponseMessage` <br/> <br/> `/GetUserAvailabilityResponse/SuggestionsResponse/ResponseMessage` <br/><br/>  `/SetUserOofSettingsResponse/ResponseMessage` <br/><br/>  `/GetUserOofSettingsResponse/ResponseMessage` <br/> |
-|[DeleteItemResponseMessage](deleteitemresponsemessage.md) <br/> |単一の DeleteItem 要求の状態と結果を格納します。  <br/> |
-|[SendItemResponseMessage](senditemresponsemessage.md) <br/> |単一の SendItem 要求の状態と結果を格納します。  <br/> |
-|[DeleteFolderResponseMessage](deletefolderresponsemessage.md) <br/> |単一の DeleteFolder 要求の状態と結果を格納します。  <br/> |
-|[DeleteAttachmentResponseMessage](deleteattachmentresponsemessage.md) <br/> |1回の DeleteAttachment 要求の状態と結果を格納します。  <br/> |
-|[非表示の表示/非表示のメッセージ](unsubscriberesponsemessage.md) <br/> |単一の登録取り消し要求の状態と結果を格納します。  <br/> |
-|[CreateFolderResponseMessage](createfolderresponsemessage.md) <br/> |単一の CreateFolder 要求の状態と結果を格納します。  <br/> |
-|[GetFolderResponseMessage](getfolderresponsemessage.md) <br/> |1つの GetFolder 要求の状態と結果を格納します。  <br/> |
-|[UpdateFolderResponseMessage](updatefolderresponsemessage.md) <br/> |1つの UpdateFolder 要求の状態と結果を格納します。  <br/> |
-|[MoveFolderResponseMessage](movefolderresponsemessage.md) <br/> |1つの MoveFolder 要求の状態と結果を格納します。  <br/> |
-|[CopyFolderResponseMessage](copyfolderresponsemessage.md) <br/> |1つの CopyFolder 要求の状態と結果を格納します。  <br/> |
-|[CreateManagedFolderResponseMessage](createmanagedfolderresponsemessage.md) <br/> |単一の CreateManagedFolder 要求の状態と結果を格納します。  <br/> |
-|[FindFolderResponseMessage](findfolderresponsemessage.md) <br/> |単一の FindFolder 要求の状態と結果を格納します。  <br/> |
-|[CreateItemResponseMessage](createitemresponsemessage.md) <br/> |単一の CreateItem 要求の状態と結果を格納します。  <br/> |
-|[GetItemResponseMessage](getitemresponsemessage.md) <br/> |単一の GetItem 要求の状態と結果を格納します。  <br/> |
-|[UpdateItemResponseMessage](updateitemresponsemessage.md) <br/> |1つの UpdateItem 要求の状態と結果を格納します。  <br/> |
-|[MoveItemResponseMessage](moveitemresponsemessage.md) <br/> |1つの MoveItem 要求の状態と結果を格納します。  <br/> |
-|[CopyItemResponseMessage](copyitemresponsemessage.md) <br/> |1つの CopyItem 要求の状態と結果を格納します。  <br/> |
-|[CreateAttachmentResponseMessage](createattachmentresponsemessage.md) <br/> |1つの CreateAttachment 要求の状態と結果を格納します。  <br/> |
-|[GetAttachmentResponseMessage](getattachmentresponsemessage.md) <br/> |1つの GetAttachment 要求の状態と結果を格納します。  <br/> |
-|[FindItemResponseMessage](finditemresponsemessage.md) <br/> |1つの FindItem 要求の状態と結果を格納します。  <br/> |
+|[ResponseMessage](responsemessage.md) <br/> | 応答の状態に関する説明情報を提供します。  <br/> <br/> この要素で使用できる XPath 式の一部を次に示します。 <br/> <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/ResponseMessage` <br/> <br/> `/GetUserAvailabilityResponse/SuggestionsResponse/ResponseMessage` <br/><br/>  `/SetUserOofSettingsResponse/ResponseMessage` <br/><br/>  `/GetUserOofSettingsResponse/ResponseMessage` <br/> |
+|[DeleteItemResponseMessage](deleteitemresponsemessage.md) <br/> |1 つの DeleteItem 要求の状態と結果を格納します。  <br/> |
+|[SendItemResponseMessage](senditemresponsemessage.md) <br/> |1 つの SendItem 要求の状態と結果を格納します。  <br/> |
+|[DeleteFolderResponseMessage](deletefolderresponsemessage.md) <br/> |1 つの DeleteFolder 要求の状態と結果を格納します。  <br/> |
+|[DeleteAttachmentResponseMessage](deleteattachmentresponsemessage.md) <br/> |単一の DeleteAttachment 要求の状態と結果を格納します。  <br/> |
+|[UnsubscribeResponseMessage](unsubscriberesponsemessage.md) <br/> |1 つの Unsubscribe 要求の状態と結果を格納します。  <br/> |
+|[CreateFolderResponseMessage](createfolderresponsemessage.md) <br/> |1 つの CreateFolder 要求の状態と結果を格納します。  <br/> |
+|[GetFolderResponseMessage](getfolderresponsemessage.md) <br/> |1 つの GetFolder 要求の状態と結果を格納します。  <br/> |
+|[UpdateFolderResponseMessage](updatefolderresponsemessage.md) <br/> |単一の UpdateFolder 要求の状態と結果を格納します。  <br/> |
+|[MoveFolderResponseMessage](movefolderresponsemessage.md) <br/> |1 つの MoveFolder 要求の状態と結果を格納します。  <br/> |
+|[CopyFolderResponseMessage](copyfolderresponsemessage.md) <br/> |1 つの CopyFolder 要求の状態と結果を格納します。  <br/> |
+|[CreateManagedFolderResponseMessage](createmanagedfolderresponsemessage.md) <br/> |1 つの CreateManagedFolder 要求の状態と結果を格納します。  <br/> |
+|[FindFolderResponseMessage](findfolderresponsemessage.md) <br/> |1 つの FindFolder 要求の状態と結果を格納します。  <br/> |
+|[CreateItemResponseMessage](createitemresponsemessage.md) <br/> |1 つの CreateItem 要求の状態と結果を格納します。  <br/> |
+|[GetItemResponseMessage](getitemresponsemessage.md) <br/> |1 つの GetItem 要求の状態と結果を格納します。  <br/> |
+|[UpdateItemResponseMessage](updateitemresponsemessage.md) <br/> |単一の UpdateItem 要求の状態と結果を格納します。  <br/> |
+|[MoveItemResponseMessage](moveitemresponsemessage.md) <br/> |1 つの MoveItem 要求の状態と結果を格納します。  <br/> |
+|[CopyItemResponseMessage](copyitemresponsemessage.md) <br/> |単一の CopyItem 要求の状態と結果を格納します。  <br/> |
+|[CreateAttachmentResponseMessage](createattachmentresponsemessage.md) <br/> |1 つの CreateAttachment 要求の状態と結果を格納します。  <br/> |
+|[GetAttachmentResponseMessage](getattachmentresponsemessage.md) <br/> |1 つの GetAttachment 要求の状態と結果を格納します。  <br/> |
+|[FindItemResponseMessage](finditemresponsemessage.md) <br/> |1 つの FindItem 要求の状態と結果を格納します。  <br/> |
 |[ResolveNamesResponseMessage](resolvenamesresponsemessage.md) <br/> |ResolveNames 要求の状態と結果を格納します。  <br/> |
-|[ExpandDLResponseMessage](expanddlresponsemessage.md) <br/> |1つの ExpandDL 要求の状態と結果を格納します。  <br/> |
-|[メッセージの表示](subscriberesponsemessage.md) <br/> |1つの Subscribe 要求の状態と結果を格納します。  <br/> |
-|[GetEventsResponseMessage](geteventsresponsemessage.md) <br/> |単一の GetEvents 要求の状態と結果を格納します。  <br/> |
-|[SendNotificationResponseMessage](sendnotificationresponsemessage.md) <br/> |1回の SendNotification 要求の状態と結果を格納します。  <br/> |
+|[ExpandDLResponseMessage](expanddlresponsemessage.md) <br/> |1 つの ExpandDL 要求の状態と結果を格納します。  <br/> |
+|[SubscribeResponseMessage](subscriberesponsemessage.md) <br/> |1 つのサブスクライブ要求の状態と結果を格納します。  <br/> |
+|[GetEventsResponseMessage](geteventsresponsemessage.md) <br/> |1 つの GetEvents 要求の状態と結果を格納します。  <br/> |
+|[SendNotificationResponseMessage](sendnotificationresponsemessage.md) <br/> |1 つの SendNotification 要求の状態と結果を格納します。  <br/> |
 |[SyncFolderHierarchyResponseMessage](syncfolderhierarchyresponsemessage.md) <br/> |SyncFolderHierarchy 要求の状態と結果を格納します。  <br/> |
 |[SyncFolderItemsResponseMessage](syncfolderitemsresponsemessage.md) <br/> |SyncFolderItems 要求の状態と結果を格納します。  <br/> |
-|[ConvertIdResponseMessage](convertidresponsemessage.md) <br/> |[コンバーター] 要求の状態と結果を格納します。  <br/> |
-|[含む adddelegateresponse](adddelegateresponse.md) <br/> |AddDelegate 要求の状態と結果を格納します。  <br/> |
+|[ConvertIdResponseMessage](convertidresponsemessage.md) <br/> |ConvertId 要求の状態と結果を格納します。  <br/> |
+|[AddDelegateResponse](adddelegateresponse.md) <br/> |AddDelegate 要求の状態と結果を格納します。  <br/> |
 |[GetServerTimeZonesResponseMessage](getservertimezonesresponsemessage.md) <br/> |GetServerTimeZones 要求の状態と結果を格納します。  <br/> |
 |[GetSharingFolderResponseMessage](getsharingfolderresponsemessage.md) <br/> |GetSharingFolder 要求の状態と結果を格納します。  <br/> |
-|[GetSharingFolderResponse](getsharingfolderresponse.md) <br/> |GetSharingFolder 要求への応答を定義します。  <br/> |
+|[GetSharingFolderResponse](getsharingfolderresponse.md) <br/> |GetSharingFolder 要求に対する応答を定義します。  <br/> |
 |[GetSharingMetadataResponseMessage](getsharingmetadataresponsemessage.md) <br/> |GetSharingMetadata 要求の状態と結果を格納します。  <br/> |
 |[GetSharingMetadataResponse](getsharingmetadataresponse.md) <br/> |GetSharingMetadata 要求への応答を定義します。  <br/> |
 |[RefreshSharingFolderResponseMessage](refreshsharingfolderresponsemessage.md) <br/> |RefreshSharingFolder 要求の状態と結果を格納します。  <br/> |
-|[RefreshSharingFolderResponse](refreshsharingfolderresponse.md) <br/> |RefreshSharingFolder 要求への応答を定義します。  <br/> |
+|[RefreshSharingFolderResponse](refreshsharingfolderresponse.md) <br/> |RefreshSharingFolder 要求に対する応答を定義します。  <br/> |
 |[InvalidRecipient](invalidrecipient.md) <br/> |GetSharingMetadata 要求の無効な受信者を表します。  <br/> |
-|[FindConversationResponse](findconversationresponse.md) <br/> |**Findconversation**応答の状態と結果を格納します。  <br/> |
-|[EmptyFolderResponseMessage](emptyfolderresponsemessage.md) <br/> |単一の**Emptyfolder**要求の状態と結果を格納します。  <br/> |
-|[Update受信トレイルールの応答](updateinboxrulesresponse.md) <br/> |**Update受信トレイルール**要求への応答を含みます。  <br/> |
-|[Get受信規則の応答](getinboxrulesresponse.md) <br/> |**Get受信トレイ**の要求への応答を含みます。  <br/> |
-|[GetServiceConfigurationResponse](getserviceconfigurationresponse.md) <br/> |**GetServiceConfiguration**要求への応答を含みます。  <br/> |
-|[ServiceConfigurationResponseMessageType](serviceconfigurationresponsemessagetype.md) <br/> |サービス構成の設定が含まれます。  <br/> |
+|[FindConversationResponse](findconversationresponse.md) <br/> |**FindConversation 応答の状態と結果を格納** します。  <br/> |
+|[EmptyFolderResponseMessage](emptyfolderresponsemessage.md) <br/> |1 つの EmptyFolder 要求の状態と **結果を格納** します。  <br/> |
+|[UpdateInboxRulesResponse](updateinboxrulesresponse.md) <br/> |**UpdateInboxRules 要求に対する応答を含** む。  <br/> |
+|[GetInboxRulesResponse](getinboxrulesresponse.md) <br/> |**GetInboxRules 要求に対する応答を含** む。  <br/> |
+|[GetServiceConfigurationResponse](getserviceconfigurationresponse.md) <br/> |**GetServiceConfiguration 要求に対する応答を含** む。  <br/> |
+|[ServiceConfigurationResponseMessageType](serviceconfigurationresponsemessagetype.md) <br/> |サービス構成設定が含まれる。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素は必須ではなく、すべての応答に含まれているわけではありません。 この要素は、エラーメッセージが返されたときに含まれます。 
+この要素は必須ではなく、すべての応答に含まれるとは言えありません。 この要素は、エラー メッセージが返される場合に含まれます。 
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
@@ -100,11 +100,11 @@ ms.locfileid: "44466697"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -1,23 +1,23 @@
 ---
-title: アイテム (Arrayofsearchプレビュー Itemstype)
+title: Items (ArrayOfSearchPreviewItemsType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6b860638-d655-4a49-91c4-60e59b596b48
-description: Items 要素は、SearchMailboxes ボックス操作の結果としてプレビューに使用できるアイテムのリストを指定します。
-ms.openlocfilehash: 99d8af67370b75774def0db3b6c274c65a432aab
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Items 要素は、SearchMailboxes 操作の結果としてプレビュー可能なアイテムの一覧を指定します。
+ms.openlocfilehash: 6df2c8c9c1072c6cc85fdf88e72c54e303b37e8e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459862"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524099"
 ---
-# <a name="items-arrayofsearchpreviewitemstype"></a>アイテム (Arrayofsearchプレビュー Itemstype)
+# <a name="items-arrayofsearchpreviewitemstype"></a>Items (ArrayOfSearchPreviewItemsType)
 
-**Items**要素は、 **searchmailboxes ボックス**操作の結果としてプレビューに使用できるアイテムのリストを指定します。 
+**Items 要素** は **、SearchMailboxes** 操作の結果としてプレビュー可能なアイテムの一覧を指定します。 
   
 ```XML
 <Items>
@@ -25,7 +25,7 @@ ms.locfileid: "44459862"
 </Items>
 ```
 
- **Arrayofsearchプレビュー Itemstype**
+ **ArrayOfSearchPreviewItemsType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -36,7 +36,7 @@ ms.locfileid: "44459862"
   
 ### <a name="child-elements"></a>子要素
 
-[Searchプレビューアイテム](searchpreviewitem.md)
+[SearchPreviewItem](searchpreviewitem.md)
   
 ### <a name="parent-elements"></a>親要素
 

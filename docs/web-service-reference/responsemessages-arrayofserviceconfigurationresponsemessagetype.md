@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ResponseMessages
 api_type:
 - schema
 ms.assetid: c7cfa0d1-fcb2-441f-8489-3a549da33b34
-description: ResponseMessages 要素には、サービス構成応答メッセージの配列が含まれています。
-ms.openlocfilehash: cf271224141ffeb6dc00069abf430ab33d3ca2fa
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ResponseMessages 要素には、サービス構成応答メッセージの配列が含まれます。
+ms.openlocfilehash: 6ea5ccf62e22927911252d56a52d2fc40b2da68e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457453"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521726"
 ---
 # <a name="responsemessages-arrayofserviceconfigurationresponsemessagetype"></a>ResponseMessages (ArrayOfServiceConfigurationResponseMessageType)
 
-**Responsemessages**要素には、サービス構成応答メッセージの配列が含まれています。 
+**ResponseMessages 要素には**、サービス構成応答メッセージの配列が含まれます。 
   
 ```XML
 <ResponseMessages>
@@ -42,7 +42,7 @@ ms.locfileid: "44457453"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ServiceConfigurationResponseMessageType](serviceconfigurationresponsemessagetype.md) <br/> |サービス構成の設定が含まれます。 この要素は必須です。  <br/> |
+|[ServiceConfigurationResponseMessageType](serviceconfigurationresponsemessagetype.md) <br/> |サービス構成設定が含まれる。 この要素は必須です。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -63,13 +63,13 @@ ms.locfileid: "44457453"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

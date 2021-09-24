@@ -1,27 +1,27 @@
 ---
-title: Iswork Time
+title: IsWorkTime
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsWorkTime
 api_type:
 - schema
 ms.assetid: 5243dd19-3593-4a81-bb2d-90496e04cb98
-description: Iswork Time 要素は、提案された会議時間が、スケジュールされた作業時間内に発生するかどうかを表します。
-ms.openlocfilehash: a3f3c73d585bee6f73863e2be64eea245be674f4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: IsWorkTime 要素は、スケジュールされた作業時間の間に提案された会議時間が発生するかどうかを表します。
+ms.openlocfilehash: caa00221d36d67957fb20e9b245bac0c3b9e9c3f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467579"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525030"
 ---
-# <a name="isworktime"></a>Iswork Time
+# <a name="isworktime"></a>IsWorkTime
 
-**Iswork time**要素は、提案された会議時間が、スケジュールされた作業時間内に発生するかどうかを表します。 
+**IsWorkTime 要素** は、スケジュールされた作業時間の間に提案された会議時間が発生するかどうかを表します。 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -35,7 +35,7 @@ ms.locfileid: "44467579"
   
 [提案](suggestion.md)
   
-[Iswork Time](isworktime.md)
+[IsWorkTime](isworktime.md)
   
 ```xml
 <IsWorkTime>true or false</IsWorkTime>
@@ -58,7 +58,7 @@ ms.locfileid: "44467579"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[提案](suggestion.md) <br/> |1つの会議時間の提案を表します。  <br/> この要素の XPath 式を次に示します。  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]` <br/> |
+|[提案](suggestion.md) <br/> |1 つの会議時間の提案を表します。  <br/> 次に、この要素の XPath 式を示します。  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]` <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -66,16 +66,16 @@ ms.locfileid: "44467579"
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -86,5 +86,5 @@ ms.locfileid: "44467579"
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[ユーザーの空き時間情報の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[ユーザーの可用性の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

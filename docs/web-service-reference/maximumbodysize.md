@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cc52f7f5-c2a8-4cfb-937b-dfec6cd3ea0f
-description: MaximumBodySize 要素は、応答で返されるアイテム本文の最大サイズを指定します。
-ms.openlocfilehash: 21958c87aafc12a7369f957c87f86f80116cdf69
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MaximumBodySize 要素は、応答で返すアイテム本文の最大サイズを指定します。
+ms.openlocfilehash: 2b44ca42c38b19e092343dc7bec7d4538c4749ad
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530517"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524694"
 ---
 # <a name="maximumbodysize"></a>MaximumBodySize
 
-**Maximumbodysize**要素は、応答で返されるアイテム本文の最大サイズを指定します。 
+**MaximumBodySize** 要素は、応答で返すアイテム本文の最大サイズを指定します。 
   
 ```XML
 <MaximumBodySize></MaximumBodySize>
@@ -42,7 +42,7 @@ ms.locfileid: "44530517"
   
 ## <a name="text-value"></a>テキスト値
 
-**Maximumbodysize**要素のテキスト値は、応答で返される[Body](body.md)プロパティの最大サイズを示します。 これはキロバイト単位で計測されます。 
+**MaximumBodySize 要素のテキスト** 値は、応答で返される [Body](body.md)プロパティの最大サイズを示します。 これはキロバイト単位で測定されます。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44530517"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

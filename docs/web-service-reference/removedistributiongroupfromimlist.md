@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 35d2e592-38c1-4861-8293-f7fba3328f4e
-description: RemoveDistributionGroupFromImList 要素は、特定のインスタントメッセージング配布リストグループを削除する要求を表します。
-ms.openlocfilehash: 0dff549c62c305a86464eaeac165d5f5bc01c9f5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: RemoveDistributionGroupFromImList 要素は、特定のインスタント メッセージング配布リスト グループを削除する要求を表します。
+ms.openlocfilehash: c52be9a0da5f9442c2da0f81cf24a28736524efa
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459596"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517967"
 ---
 # <a name="removedistributiongroupfromimlist"></a>RemoveDistributionGroupFromImList
 
-**RemoveDistributionGroupFromImList**要素は、特定のインスタントメッセージング配布リストグループを削除する要求を表します。 
+**RemoveDistributionGroupFromImList** 要素は、特定のインスタント メッセージング配布リスト グループを削除する要求を表します。 
   
 ```XML
 <RemoveDistributionGroupFromImList>
@@ -53,8 +53,8 @@ ms.locfileid: "44459596"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

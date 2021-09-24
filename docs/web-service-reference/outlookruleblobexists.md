@@ -5,25 +5,25 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - OutlookRuleBlobExists
 api_type:
 - schema
 ms.assetid: ae1bc448-deb9-4b5b-ab38-4b276abcb650
-description: OutlookRuleBlobExists 要素は、Microsoft Outlook のルール blob がユーザーのメールボックス内に存在するかどうかを示します。
-ms.openlocfilehash: 6a5c2a2ec0246d38b22279b86772972ea81922c7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: OutlookRuleBlobExists 要素は、ユーザーのメールボックスに microsoft Outlook BLOB が存在するかどうかを示します。
+ms.openlocfilehash: ff8ac5d6ad30578dbbf18787409f3d19469cf6b7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529029"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521714"
 ---
 # <a name="outlookruleblobexists"></a>OutlookRuleBlobExists
 
-**Outlookruleblobexists**要素は、Microsoft Outlook のルール blob がユーザーのメールボックス内に存在するかどうかを示します。 
+**OutlookRuleBlobExists** 要素は、ユーザーのメールボックスに microsoft Outlook BLOB が存在するかどうかを示します。 
   
-[Get受信規則の応答](getinboxrulesresponse.md)
+[GetInboxRulesResponse](getinboxrulesresponse.md)
   
 [OutlookRuleBlobExists](outlookruleblobexists.md)
   
@@ -48,11 +48,11 @@ ms.locfileid: "44529029"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Get受信規則の応答](getinboxrulesresponse.md) <br/> |[Get受信トレイの操作](getinboxrules-operation.md)要求への応答を表します。  <br/> |
+|[GetInboxRulesResponse](getinboxrulesresponse.md) <br/> |[GetInboxRules 操作要求に対する応答を表](getinboxrules-operation.md)します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値が**true の場合**は、Outlook ルール blob が存在することを示します。 テキスト値が**false**の場合は、Outlook ルール blob が存在しないことを示します。 
+true のテキスト **値は**、ルール blob が存在Outlook示します。 テキスト値が **false の場合** は、Outlook BLOB が存在しないかどうかを示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -63,13 +63,13 @@ ms.locfileid: "44529029"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

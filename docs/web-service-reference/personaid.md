@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: eec3a468-afd5-4d72-a61e-cd1964fb686c
-description: 個人情報要素は、関連付けられたペルソナのペルソナ識別子を指定します。
-ms.openlocfilehash: 3d7315097a14fb1eed5f378422cba80414601675
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: PersonaId 要素は、関連付けられたペルシャのペルシャ識別子を指定します。
+ms.openlocfilehash: fe6416332c20ea2506cf8b2a29234bfc6058246a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457243"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524575"
 ---
 # <a name="personaid"></a>PersonaId
 
-**個人**情報要素は、関連付けられたペルソナのペルソナ識別子を指定します。 
+**PersonaId 要素は**、関連付けられたペルシャのペルシャ識別子を指定します。 
   
 ```XML
 <PersonaId Id="" ChangeKey=""/>
@@ -32,8 +32,8 @@ ms.locfileid: "44457243"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|ID  <br/> |**Id**属性のテキスト値は、ペルソナの識別子です。  <br/> |
-|ChangeKey  <br/> |**Changekey**属性のテキスト値は、ペルソナの変更キーです。  <br/> |
+|ID  <br/> |Id 属性のテキスト **値** は、ペルシャの識別子です。  <br/> |
+|ChangeKey  <br/> |ChangeKey 属性の **テキスト値** は、ペルサの変更キーです。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -41,7 +41,7 @@ ms.locfileid: "44457243"
   
 ### <a name="parent-elements"></a>親要素
 
-[Getpersona](getpersona.md)  | [Persona](persona.md)
+[GetPersona](getpersona.md)  | [Persona](persona.md)
   
 ## <a name="remarks"></a>注釈
 
@@ -54,8 +54,8 @@ ms.locfileid: "44457243"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

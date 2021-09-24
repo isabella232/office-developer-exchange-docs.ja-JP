@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MarkAsRead
 api_type:
 - schema
 ms.assetid: 404842e1-fbdb-480d-a1d8-ba1ab2c9fb1e
-description: MarkAsRead 要素は、メッセージを開封済みとしてマークするかどうかを示します。
-ms.openlocfilehash: 691409a4eace8885d36f4b30b8eef1aca8c332a6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MarkAsRead 要素は、メッセージを読み取りとしてマークするかどうかを示します。
+ms.openlocfilehash: 0597380d5fdd4771f69263729449eebe5220b077
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461766"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523987"
 ---
 # <a name="markasread"></a>MarkAsRead
 
-**Markasread**要素は、メッセージを開封済みとしてマークするかどうかを示します。 
+**MarkAsRead** 要素は、メッセージを読み取りとしてマークするかどうかを示します。 
   
 ```XML
 <MarkAsRead>true | false</MarkAsRead>
@@ -44,11 +44,11 @@ ms.locfileid: "44461766"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Actions](actions.md) <br/> |条件が満たされたときに、メッセージに対して実行できるアクションのセットを表します。  <br/> |
+|[Actions](actions.md) <br/> |条件が満たされた場合にメッセージに対して実行できる一連のアクションを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値が**true の場合**は、メッセージが開封済みとしてマークされている必要があることを示します。 値が**false**の場合、メッセージは開封済みとしてマークされていないことを示します。 
+テキスト値が **true の場合** 、メッセージは読み取りとしてマークする必要があります。 false の値 **は** 、メッセージに読み取りとしてマークを付けなけらない場合を示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -59,13 +59,13 @@ ms.locfileid: "44461766"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

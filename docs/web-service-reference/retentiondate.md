@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0c1df5e2-b56a-4947-a047-2b73b32e5fb7
 description: RetentionDate 要素は、アイテムを保持する必要がある最後の日付を指定します。
-ms.openlocfilehash: a1b109414d02814f9ede74c59796d5a1ff042da5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: d8c2b0af08f00d6363f30cf49a3bd84a33f9071b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465227"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517932"
 ---
 # <a name="retentiondate"></a>RetentionDate
 
-**RetentionDate**要素は、アイテムを保持する必要がある最後の日付を指定します。 
+**RetentionDate 要素** は、アイテムを保持する必要がある最後の日付を指定します。 
   
 ```XML
 <RetentionDate></RetentionDate>
@@ -38,11 +38,11 @@ ms.locfileid: "44465227"
   
 ### <a name="parent-elements"></a>親要素
 
-[Searchプレビューアイテム](searchpreviewitem.md)  | [アイテム](item.md)  | [連絡先](contact.md)  | [メッセージ](message-ex15websvcsotherref.md)  | [DistributionList](distributionlist.md)  | [Calendaritem](calendaritem.md)  | [Postitem](postitem.md)  | [タスク](task.md)
+[SearchPreviewItem](searchpreviewitem.md)  | [アイテム](item.md)  | [連絡先](contact.md)  | [メッセージ](message-ex15websvcsotherref.md)  | [DistributionList](distributionlist.md)  | [CalendarItem](calendaritem.md)  | [PostItem](postitem.md)  | [タスク](task.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**RetentionDate**要素のテキスト値は、アイテムが保持されなくなる日付を表します。 
+RetentionDate 要素の **テキスト値** は、アイテムを保持しなくなった日付を表します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44465227"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

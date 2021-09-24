@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - messageSnapshot
 api_type:
 - schema
 ms.assetid: f157e44c-b950-463f-b086-31d5da94b7ff
-description: '最終更新日: 2015 年9月17日'
-ms.openlocfilehash: 8a58444580c803efb7312df95d75d697bc42e8e0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: '最終更新日: 2015 年 9 月 17 日'
+ms.openlocfilehash: 2ac38dd3f50b5d9d070262f3daffb72b02df5d82
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461843"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525457"
 ---
 # <a name="messagesnapshot"></a>messageSnapshot
 
@@ -27,14 +27,14 @@ ms.locfileid: "44461843"
   
 - [構成](configuration.md)  
 - [mexRuntime](mexruntime.md) 
-- [管理](monitoring.md) 
+- [監視](monitoring.md) 
 - [messageSnapshot](messagesnapshot.md)
   
 ```XML
 <messageSnapshot enabled="" />
 ```
 
-**messageSnapshotType (ブール値)**
+**messageSnapshotType (Boolean)**
 
 ## <a name="attributes-and-elements"></a>属性と要素
 
@@ -44,7 +44,7 @@ ms.locfileid: "44461843"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**enabled** <br/> |クライアントアクセスまたはメールボックスサーバーに対してパイプライントレース機能が有効になっているかどうかを示すブール値。 パイプライントレースが有効になっている場合、値は**true**になります。それ以外の場合、値は**false**になるか、要素が存在しないことを示します。  <br/> |
+|**enabled** <br/> |クライアント アクセスやメールボックス サーバーのパイプライン トレース機能を使えるようするかどうかを指定するブール値。この値は、パイプライン トレース機能が使える場合には **true**。それ以外の場合やこの要素が存在しない場合には **false** です。<br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -54,14 +54,14 @@ ms.locfileid: "44461843"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[管理](monitoring.md) <br/> |トランスポート サービスがインストールされているエージェントを監視する方法とタイミングを定義する構成情報が含まれています。  <br/> |
+|[監視](monitoring.md) <br/> |トランスポート サービスがインストールされているエージェントを監視する方法とタイミングを定義する構成情報が含まれています。  <br/> |
    
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |このファイルには名前空間が定義されていません。  <br/> |
-|スキーマ名  <br/> |注意事項なし。  <br/> |
+|スキーマ名  <br/> |該当なし。  <br/> |
 |検証ファイル  <br/> |該当なし。  <br/> |
 |空に設定可能  <br/> |不正解。  <br/> |
    

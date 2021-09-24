@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MaxMessageSize
 api_type:
 - schema
 ms.assetid: bb98ac72-9409-4332-81bb-ee3bebb9a00e
-description: MaxMessageSize 要素は、受信者が受け付けることができる最大メッセージサイズを表します。
-ms.openlocfilehash: 727eed38a129800b7d38aa49c41cdacfa13e7a36
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MaxMessageSize 要素は、受信者が受け入れ可能な最大メッセージ サイズを表します。
+ms.openlocfilehash: a89d43ed5958a3e39ff0e5b5ab9e9d2c1dac660c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468412"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524701"
 ---
 # <a name="maxmessagesize"></a>MaxMessageSize
 
-**Maxmessagesize**要素は、受信者が受け付けることができる最大メッセージサイズを表します。 
+**MaxMessageSize** 要素は、受信者が受け入れ可能な最大メッセージ サイズを表します。 
   
 ```XML
 <MaxMessageSize/>
@@ -44,12 +44,12 @@ ms.locfileid: "44468412"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[メールヒント](mailtips.md) <br/> |さまざまな種類のメールヒントの値を表します。  <br/> |
-|[Mailヒント構成 (MailTipsServiceConfiguration)](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |メールヒントサービスのサービス構成情報が保存されています。  <br/> |
+|[メールヒント](mailtips.md) <br/> |さまざまな種類のメール ヒントの値を表します。  <br/> |
+|[MailTipsConfiguration (MailTipsServiceConfiguration)](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |メール ヒント サービスのサービス構成情報が含まれる。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、受信者が受け付けることができる最大メッセージサイズを表す整数型 (integer) の値です。 この値は、キロバイトまたはメガバイト単位で測定できます。
+テキスト値は、受信者が受け入れ可能な最大メッセージ サイズを表す整数です。 この値は、キロバイトまたはメガバイト単位で測定できます。
   
 ## <a name="remarks"></a>注釈
 
@@ -60,13 +60,13 @@ ms.locfileid: "44468412"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

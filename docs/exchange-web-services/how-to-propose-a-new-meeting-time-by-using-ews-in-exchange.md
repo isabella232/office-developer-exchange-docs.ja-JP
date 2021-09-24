@@ -3,15 +3,15 @@ title: Exchange で EWS を使用して会議の新しい日時を提案する
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d5ac8e5b-3876-4f20-b4d3-44505e066042
 description: Exchange で EWS を使用して Exchange クライアント アプリケーションから新しい会議日時を提案する方法について説明します。
-ms.openlocfilehash: 4f001bb82d2325624b567412620283619b51f25b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: a6406aaef2005e74165e647510af891d2a59503e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456813"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522230"
 ---
 # <a name="propose-a-new-meeting-time-by-using-ews-in-exchange"></a>Exchange で EWS を使用して会議の新しい日時を提案する
 
@@ -71,7 +71,7 @@ Exchange で EWS を使用して Exchange クライアント アプリケーシ�
 </soap:Envelope>
 ```
 
-アイテム識別子、会議の開始時刻と終了時刻、応答オブジェクト コレクション、および会議日時変更提案を開催者が許可しているかどうかを要求した場合、**GetItem** 操作の応答は次の XML のようになります。 [ResponseObjects](https://msdn.microsoft.com/library/ad29e064-3f3d-4b7b-aa4c-9ec27326381d%28Office.15%29.aspx) 要素で表される応答オブジェクト コレクションには、予定表アイテムに有効な応答のセットが含まれます。 **ProposeNewTime** 要素は、新しい会議日時をユーザーが提案できることを示す応答オブジェクトです。 [AcceptItem](https://msdn.microsoft.com/library/05a15431-77e1-411a-a16b-5481d364d3cc%28Office.15%29.aspx)、[TentativelyAcceptItem](https://msdn.microsoft.com/library/ce6f50ef-ad8a-47e4-915a-487b2ef7a2e0%28Office.15%29.aspx)、および [DeclineItem](https://msdn.microsoft.com/library/2d8d2389-924e-4d03-a324-35d56cf0d6b1%28Office.15%29.aspx) 要素は、新しい会議日時を会議開催者に提案するために使用できる応答オブジェクトを表します。 
+アイテム識別子、会議の開始時刻と終了時刻、応答オブジェクト コレクション、および会議日時変更提案を開催者が許可しているかどうかを要求した場合、**GetItem** 操作の応答は次の XML のようになります。[ResponseObjects](https://msdn.microsoft.com/library/ad29e064-3f3d-4b7b-aa4c-9ec27326381d%28Office.15%29.aspx) 要素で表される応答オブジェクト コレクションには、予定表アイテムに有効な応答のセットが含まれます。**ProposeNewTime** 要素は、新しい会議日時をユーザーが提案できることを示す応答オブジェクトです。[AcceptItem](https://msdn.microsoft.com/library/05a15431-77e1-411a-a16b-5481d364d3cc%28Office.15%29.aspx)、[TentativelyAcceptItem](https://msdn.microsoft.com/library/ce6f50ef-ad8a-47e4-915a-487b2ef7a2e0%28Office.15%29.aspx)、および [DeclineItem](https://msdn.microsoft.com/library/2d8d2389-924e-4d03-a324-35d56cf0d6b1%28Office.15%29.aspx) 要素は、新しい会議日時を会議開催者に提案するために使用できる応答オブジェクトを表します。 
   
 ```XML
 <s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - AdditionalProperties
 api_type:
 - schema
 ms.assetid: 7a269aed-dcfd-4c3e-9e14-094e53828101
-description: AdditionalProperties 要素は、GetItem、UpdateItem、CreateItem、FindItem、または FindFolder 要求で使用する追加のプロパティを示します。
-ms.openlocfilehash: 90a307ba4d5ece10e15d2cec56cf5042c3d38685
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: AdditionalProperties 要素は、GetItem、UpdateItem、CreateItem、FindItem、または FindFolder 要求で使用する追加のプロパティを識別します。
+ms.openlocfilehash: 9a6fb98e9a88b1e40bd83559b1836d4122f0f125
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455815"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522202"
 ---
 # <a name="additionalproperties"></a>AdditionalProperties
 
-**Additionalproperties**要素は、 [GetItem](getitem.md)、 [updateitem](updateitem.md)、 [CreateItem](createitem.md)、 [FindItem](finditem.md)、または[findfolder](findfolder.md)要求で使用する追加のプロパティを示します。 
+**AdditionalProperties 要素は**[、GetItem、UpdateItem、CreateItem、FindItem、](getitem.md)または [](finditem.md)[FindFolder](findfolder.md)要求で使用する追加のプロパティを識別します。 [](updateitem.md) [](createitem.md) 
   
 ```xml
 <AdditionalProperties>
@@ -45,28 +45,28 @@ ms.locfileid: "44455815"
 |**Element**|**説明**|
 |:-----|:-----|
 |[ExtendedFieldURI](extendedfielduri.md) <br/> |取得、設定、または作成する拡張 MAPI プロパティを識別します。  <br/> |
-|[FieldURI](fielduri.md) <br/> |URI で頻繁に参照されるプロパティを識別します。  <br/> |
-|[IndexedFieldURI](indexedfielduri.md) <br/> |URI で頻繁に参照される dictionary プロパティを識別します。  <br/> |
+|[FieldURI](fielduri.md) <br/> |URI によって頻繁に参照されるプロパティを識別します。  <br/> |
+|[IndexedFieldURI](indexedfielduri.md) <br/> |URI によって頻繁に参照される辞書プロパティを識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FolderShape](foldershape.md) <br/> | [Getfolder](getfolder.md)、 [findfolder](findfolder.md)、または[syncfolderhierarchy](syncfolderhierarchy.md)の応答に含めるフォルダーのプロパティを識別します。<br/><br/>  この要素の XPath 式は次のとおりです。<br/><br/>  `/FindFolder/FolderShape` <br/>  `/GetFolder/FolderShape` <br/>  `/SyncFolderHierarchy/FolderShape` <br/> |
-|[ItemShape](itemshape.md) <br/> | [GetItem](getitem.md)、 [FindItem](finditem.md)、または[syncfolderitems](syncfolderitems.md)応答に含めるアイテムのプロパティとコンテンツを指定します。<br/><br/>  この要素の XPath 式は次のとおりです。<br/><br/>  `/GetItem/ItemShape` <br/>  `/FindItem/ItemShape` <br/>  `/SyncFolderItems/ItemShape` <br/> |
-|[AttachmentShape](attachmentshape.md) <br/> |[GetItem](getitem.md)要求に対する応答で返される追加の拡張アイテムプロパティを識別します。<br/><br/> この要素の XPath 式を次に示します。<br/><br/>  `/GetAttachment/AttachmentShape` <br/> |
+|[FolderShape](foldershape.md) <br/> | [GetFolder、FindFolder、または](getfolder.md) [SyncFolderHierarchy](syncfolderhierarchy.md)応答に含めるフォルダー プロパティを識別します。 [](findfolder.md)<br/><br/>  この要素の XPath 式を次に示します。<br/><br/>  `/FindFolder/FolderShape` <br/>  `/GetFolder/FolderShape` <br/>  `/SyncFolderHierarchy/FolderShape` <br/> |
+|[ItemShape](itemshape.md) <br/> | [GetItem、FindItem、または](getitem.md) [SyncFolderItems](syncfolderitems.md) [](finditem.md)応答に含めるアイテムのプロパティとコンテンツを識別します。<br/><br/>  この要素の XPath 式を次に示します。<br/><br/>  `/GetItem/ItemShape` <br/>  `/FindItem/ItemShape` <br/>  `/SyncFolderItems/ItemShape` <br/> |
+|[AttachmentShape](attachmentshape.md) <br/> |GetItem 要求への応答で返す追加の拡張アイテム プロパティ [を識別](getitem.md) します。<br/><br/> 次に、この要素の XPath 式を示します。<br/><br/>  `/GetAttachment/AttachmentShape` <br/> |
    
 ## <a name="remarks"></a>注釈
 
-[GetItem](getitem.md)、 [updateitem](updateitem.md)、 [CreateItem](createitem.md)、 [FindItem](finditem.md)、または[findfolder](findfolder.md)要求では、すべての子要素を使用できるわけではありません。 このプロパティは、アクセスされるフォルダーまたはアイテムに適用される必要があります。 他のプロパティにアクセスするには、拡張プロパティを使用します。 指定したアイテムのプロパティが存在しない場合、対応する要素は結果の XML に出力されません。 
+[GetItem、UpdateItem、CreateItem、FindItem、](updateitem.md)[または](finditem.md) [FindFolder](findfolder.md)要求ですべての子要素を使用できるということはありません。 [](getitem.md) [](createitem.md) プロパティは、アクセスされるフォルダーまたはアイテムに適用できる必要があります。 他のプロパティにアクセスするには、拡張プロパティを使用します。 特定のアイテムに対してプロパティが存在しない場合、対応する要素は結果の XML に出力されません。 
   
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。 
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。 
   
 この要素は省略できます。
   
 ## <a name="example"></a>例
 
-次の要求例は、 **Additionalproperties**要素を使用してアイテムの件名を取得する方法を示しています。 
+次の要求例は、AdditionalProperties 要素を使用してアイテムの件名を **取得する方法を示** しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -96,8 +96,8 @@ ms.locfileid: "44455815"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
 |空に設定可能  <br/> |いいえ  <br/> |
    
 

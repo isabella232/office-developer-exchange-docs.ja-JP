@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - OperationIndex
 api_type:
 - schema
 ms.assetid: 289f173c-26fa-4981-95dd-652e1921bdc6
-description: OperationIndex 要素は、ルールの操作エラーの原因となった、要求内の操作のインデックスを指定します。
-ms.openlocfilehash: a95f194231200520d2f3feb328b3608e2921826c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: OperationIndex 要素は、ルール操作エラーの原因となる要求内の操作のインデックスを指定します。
+ms.openlocfilehash: 27c3f9943d103abde9f6dfe32930812c0b652671
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462494"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518079"
 ---
 # <a name="operationindex"></a>OperationIndex
 
-**Operationindex**要素は、ルールの操作エラーの原因となった、要求内の操作のインデックスを指定します。 
+**OperationIndex 要素** は、ルール操作エラーの原因となる要求内の操作のインデックスを指定します。 
   
 ```XML
 <OperationIndex/>
@@ -59,13 +59,13 @@ ms.locfileid: "44462494"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

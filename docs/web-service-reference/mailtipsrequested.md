@@ -1,33 +1,33 @@
 ---
-title: Mailヒント要求
+title: MailTipsRequested
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MailTipsRequested
 api_type:
 - schema
 ms.assetid: 8037bbe5-a37f-4f77-8209-27a94f9095ef
-description: Mailヒント要求要素には、サービスから要求されたメールヒントの種類が含まれています。
-ms.openlocfilehash: bcb2ebf15e628a04e8507f938d385cf113f2f2a3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MailTipsRequested 要素には、サービスから要求されたメール ヒントの種類が含まれる。
+ms.openlocfilehash: 14a463d3b00a9f8b3e2aa2e822209ff87a221f9b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465899"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524855"
 ---
-# <a name="mailtipsrequested"></a>Mailヒント要求
+# <a name="mailtipsrequested"></a>MailTipsRequested
 
-**Mailヒント要求**要素には、サービスから要求されたメールヒントの種類が含まれています。 
+**MailTipsRequested 要素** には、サービスから要求されたメール ヒントの種類が含まれる。 
   
 ```XML
 <MailTipsRequested/>
 ```
 
- **Mailヒントの種類**
+ **MailTipTypes**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -44,23 +44,23 @@ ms.locfileid: "44465899"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetMailTips](getmailtips.md) <br/> |取得するメールヒントの受信者と種類が含まれています。  <br/> |
+|[GetMailTips](getmailtips.md) <br/> |取得する受信者とメール ヒントの種類が含まれる。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-次の表に、 **Mailヒントの要求さ**れた要素に使用できる値を示します。 
+次の表に **、MailTipsRequested 要素に使用できる値を示** します。 
   
 |**値**|**説明**|
 |:-----|:-----|
-|すべて  <br/> |利用可能なすべてのメールヒントを表します。  <br/> |
-|OutOfOfficeMessage  <br/> |不在 (OOF) メッセージを表します。  <br/> |
-|MailboxFullStatus  <br/> |フルのメールボックスの状態を表します。  <br/> |
-|CustomMailTip  <br/> |ユーザー設定のメールヒントを表します。  <br/> |
+|すべて  <br/> |使用可能なすべてのメール ヒントを表します。  <br/> |
+|OutOfOfficeMessage  <br/> |[アウト オブ Office ( OOF) メッセージを表します。  <br/> |
+|MailboxFullStatus  <br/> |完全なメールボックスの状態を表します。  <br/> |
+|CustomMailTip  <br/> |カスタム メール ヒントを表します。  <br/> |
 |ExternalMemberCount  <br/> |外部メンバーの数を表します。  <br/> |
 |TotalMemberCount  <br/> |すべてのメンバーの数を表します。  <br/> |
-|MaxMessageSize  <br/> |受信者が受け付けることができる最大メッセージサイズを表します。  <br/> |
-|DeliveryRestriction  <br/> |配信の制限によって、送信者のメッセージが受信者に届かないようにするかどうかを示します。  <br/> |
-|ModerationStatus  <br/> |送信者のメッセージがモデレーターによって確認されるかどうかを示します。  <br/> |
+|MaxMessageSize  <br/> |受信者が受け入れ可能な最大メッセージ サイズを表します。  <br/> |
+|DeliveryRestriction  <br/> |配信の制限によって、送信者のメッセージが受信者に届かないかどうかを示します。  <br/> |
+|ModerationStatus  <br/> |送信者のメッセージをモデレーターが確認するかどうかを示します。  <br/> |
 |InvalidRecipient  <br/> |受信者が無効かどうかを示します。  <br/> |
    
 ## <a name="remarks"></a>注釈
@@ -72,13 +72,13 @@ ms.locfileid: "44465899"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

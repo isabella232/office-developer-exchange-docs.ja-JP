@@ -3,15 +3,15 @@ title: Exchange 内の EWS の構成オプション
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f6562639-9366-4a13-9fdb-2fa737833329
 description: EWS クライアントからアクセス可能な構成設定と、EWS クライアントに影響を与える構成可能な Exchange の設定に関する情報について紹介します。
-ms.openlocfilehash: 55f927b7b301bdfaa298bcd254b18a00cf1692d9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: ed7667086b36897fd07031526e5a4657a120d505
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456158"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522286"
 ---
 # <a name="configuration-options-for-ews-in-exchange"></a>Exchange 内の EWS の構成オプション
 

@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0ffcdcf4-8ea3-483c-bb7f-0cd84126120c
 description: ActionType 要素は、アラームに対して実行するアクションを指定します。
-ms.openlocfilehash: 5c62b2dd945b23a5ff2bb824385c45dbc617a5a5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: d78725c75ad13a71d69d7749f0a71cd99d606929
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465059"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522258"
 ---
 # <a name="actiontype-reminderactiontype"></a>ActionType (ReminderActionType)
 
-**ActionType**要素は、アラームに対して実行するアクションを指定します。 
+**ActionType 要素** は、アラームに対して実行するアクションを指定します。 
   
 ```XML
 <ActionType> Dismiss | Snooze </ActionType>
@@ -42,7 +42,7 @@ ms.locfileid: "44465059"
   
 ## <a name="text-value"></a>テキスト値
 
-**ActionType**要素のテキスト値は、アラームに対して実行するアクションを指定します。 [閉じる] のテキスト値は、アラームを**消す**必要があることを示します。 [再**通知**] のテキスト値は、 [NewReminderTime](newremindertime.md)要素によって指定された時間までアラームを遅延させる必要があることを示します。 
+ActionType 要素の **テキスト値** は、アラームに対して実行するアクションを指定します。 [却下] のテキスト **値は** 、アラームを閉じるべきかどうかを示します。 **Snooze のテキスト値は**[、NewReminderTime](newremindertime.md)要素で指定された時刻までアラームを遅延させる必要があります。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,12 +55,12 @@ ms.locfileid: "44465059"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [ReminderItemAction](reminderitemaction.md)
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

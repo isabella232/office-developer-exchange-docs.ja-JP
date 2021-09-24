@@ -3,15 +3,15 @@ title: EWS を使用して定期的なアイテムを更新する
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7e61bee9-4840-4773-a0a7-47b11e1fdf59
 description: Exchange の EWS マネージ API または EWS を使用して、定期的なアイテムの予定を変更する方法を説明します。
-ms.openlocfilehash: eb40dd60f28a6acf4395d3149744ce7321c34999
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 3b9260bf271581a9a47fcad36d35f48e9845eb91
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455850"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521080"
 ---
 # <a name="update-a-recurring-series-by-using-ews"></a>EWS を使用して定期的なアイテムを更新する
 
@@ -93,9 +93,9 @@ public static ItemId ModifyARecurringSeries(ExchangeService service, ItemId recu
 
 ## <a name="modify-a-single-occurrence-in-a-series-by-using-ews"></a>EWS を使用して定期的なアイテムの単一のオカレンスを変更する
 
-定期的なアイテムの単一のインスタンスを変更するのは、予定の単一のインスタンスを変更することと基本的に同じです。 [ItemId](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) または [OccurrenceItemId](https://msdn.microsoft.com/library/4a15bbc3-5b93-4193-b9ec-da32f0a9a552%28Office.15%29.aspx) 要素を使用して、変更するオカレンスを指定できます。 
+定期的なアイテムの単一のインスタンスを変更するのは、予定の単一のインスタンスを変更することと基本的に同じです。[ItemId](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) または [OccurrenceItemId](https://msdn.microsoft.com/library/4a15bbc3-5b93-4193-b9ec-da32f0a9a552%28Office.15%29.aspx) 要素を使用して、変更するオカレンスを指定できます。 
   
-次の例は、[UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) 操作を利用して、予定の定期的なアイテムでオカレンスを更新するときの、要求 XML を表しています。 **ItemId** と **ChangeKey** は読みやすいように短縮されています。 
+次の例は、[UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) 操作を利用して、予定の定期的なアイテムでオカレンスを更新するときの、要求 XML を表しています。**ItemId** と **ChangeKey** は読みやすいように短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

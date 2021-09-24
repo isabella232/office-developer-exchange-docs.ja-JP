@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5d8c367a-67e9-43b3-8be0-6362d2152431
-description: SearchMailboxes ボックス要素は、SearchMailboxes ボックス要求の開始を示します。
-ms.openlocfilehash: 7ccc94157ef6bde7b6ba86e70c16ef6e90d712fa
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SearchMailboxes 要素は、SearchMailboxes 要求の先頭を示します。
+ms.openlocfilehash: 3c734e49869a17fa58252668ddae606d702f3047
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456802"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521595"
 ---
 # <a name="searchmailboxes"></a>SearchMailboxes
 
-**Searchmailboxes**ボックス要素は、 **searchmailboxes ボックス**要求の開始を示します。 
+**SearchMailboxes 要素** は **、SearchMailboxes 要求の先頭を示** します。 
   
 ```XML
 <SearchMailboxes>
@@ -44,7 +44,7 @@ ms.locfileid: "44456802"
   
 ### <a name="child-elements"></a>子要素
 
-[Searchqueries](searchqueries.md)  | [ResultType](resulttype.md)  | [プレビュー Itemresponseshape](previewitemresponseshape.md)  | [SortBy](sortby.md)  | [言語](language.md)  | [重複除去](deduplication.md)  | [PageSize](pagesize.md)  | [Pageitemreference](pageitemreference.md)  | [ページの方向](pagedirection.md)
+[SearchQueries](searchqueries.md)  | [ResultType](resulttype.md)  | [PreviewItemResponseShape](previewitemresponseshape.md)  | [SortBy](sortby.md)  | [言語](language.md)  | [重複排除](deduplication.md)  | [PageSize](pagesize.md)  | [PageItemReference](pageitemreference.md)  | [PageDirection](pagedirection.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -61,8 +61,8 @@ ms.locfileid: "44456802"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

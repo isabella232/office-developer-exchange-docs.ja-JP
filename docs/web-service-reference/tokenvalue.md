@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ad333be3-1bd9-4e4a-a17d-9fcf7131cf76
-description: TokenValue 要素は、エンコードされたクライアントアクセストークンを指定します。
-ms.openlocfilehash: 7aa544cb8b63face7cd41054eebb55b0ed84b35d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: TokenValue 要素は、エンコードされたクライアント アクセス トークンを指定します。
+ms.openlocfilehash: 66bfdc6f236c9a73c331abb2a3a0b03f5ddeccd5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467859"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522531"
 ---
 # <a name="tokenvalue"></a>TokenValue
 
-**Tokenvalue**要素は、エンコードされたクライアントアクセストークンを指定します。 
+**TokenValue 要素** は、エンコードされたクライアント アクセス トークンを指定します。 
   
 ```XML
 <TokenValue></TokenValue>
@@ -38,11 +38,11 @@ ms.locfileid: "44467859"
   
 ### <a name="parent-elements"></a>親要素
 
-[トークン (ClientAccessTokenType)](token-clientaccesstokentype.md)
+[Token (ClientAccessTokenType)](token-clientaccesstokentype.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**Tokenvalue**要素のテキスト値は、エンコードされたクライアントアクセストークンです。 
+TokenValue 要素の **テキスト値** は、エンコードされたクライアント アクセス トークンです。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44467859"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

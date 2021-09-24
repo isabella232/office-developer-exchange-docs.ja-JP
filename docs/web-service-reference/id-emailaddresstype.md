@@ -5,25 +5,25 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Id
 api_type:
 - schema
 ms.assetid: 3e1e37b5-5469-4447-ad1f-c2c6d4e0482f
-description: Id 要素は、Exchange server 組織内の会議室を識別します。
-ms.openlocfilehash: aa09e7764746ac6bc283de2d13248d769aba75b7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Id 要素は、サーバー組織内の会議室Exchangeします。
+ms.openlocfilehash: 40f2163c4525e766e0fe0377820e87a806562001
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460779"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525823"
 ---
 # <a name="id-emailaddresstype"></a>Id (EmailAddressType)
 
-**Id**要素は、Exchange server 組織内の会議室を識別します。 
+**Id 要素** は、サーバー組織内の会議室Exchangeします。 
   
-[作る](room.md)
+[Room](room.md)
   
 [Id (EmailAddressType)](id-emailaddresstype.md)
   
@@ -51,29 +51,29 @@ ms.locfileid: "44460779"
 |**Element**|**説明**|
 |:-----|:-----|
 |[Name (EmailAddressType)](name-emailaddresstype.md) <br/> |会議室の名前を定義します。 この要素は省略できます。  <br/> |
-|[EmailAddress (非 Emptystringtype)](emailaddress-nonemptystringtype.md) <br/> |会議室の簡易メール転送プロトコル (SMTP) アドレスを定義します。 この要素は省略できます。  <br/> |
+|[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |会議室の簡易メール転送プロトコル (SMTP) アドレスを定義します。 この要素は省略できます。  <br/> |
 |[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |メールボックスに使用されるルーティングを定義します。 既定値は SMTP です。 この要素は省略できます。  <br/> |
-|[MailboxType](mailboxtype.md) <br/> |メールボックスユーザーのメールボックスの種類を定義します。 この要素は省略できます。  <br/> |
-|[ItemId](itemid.md) <br/> |ユーザーの連絡先フォルダーにある受信者の連絡先またはプライベート配布リストのアイテム識別子を定義します。 この要素は省略できます。  <br/> |
+|[MailboxType](mailboxtype.md) <br/> |メールボックス ユーザーのメールボックスの種類を定義します。 この要素は省略できます。  <br/> |
+|[ItemId](itemid.md) <br/> |ユーザーの連絡先フォルダーからの受信者の連絡先またはプライベート配布リストのアイテム識別子を定義します。 この要素は省略できます。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[作る](room.md) <br/> |Exchange server 組織の会議室を定義します。  <br/> |
+|[Room](room.md) <br/> |サーバー組織の会議室をExchangeします。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの EWS ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされているコンピューター Microsoft Exchange Server EWS ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -82,5 +82,5 @@ ms.locfileid: "44460779"
 [GetRooms 操作](getrooms-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

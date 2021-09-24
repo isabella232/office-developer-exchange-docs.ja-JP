@@ -1,23 +1,23 @@
 ---
-title: Role
+title: 役割
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0718d2cc-8b70-4569-9008-b3e19857327e
 description: Role 要素は、管理役割を表す文字列を指定します。
-ms.openlocfilehash: d7649d5b885d4d36ea0ee36dd3b17598e305c35f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: dbc30cee18e88d00b54ba9f7a9f766cf3058e815
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460562"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525562"
 ---
-# <a name="role"></a>Role
+# <a name="role"></a>役割
 
-**Role**要素は、管理役割を表す文字列を指定します。 
+**Role 要素** は、管理役割を表す文字列を指定します。 
   
 ```XML
 <Role></Role>
@@ -38,11 +38,11 @@ ms.locfileid: "44460562"
   
 ### <a name="parent-elements"></a>親要素
 
-[Userroles](userroles.md)  | [Applicationroles](applicationroles.md)
+[UserRoles](userroles.md)  | [ApplicationRoles](applicationroles.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**Role**要素のテキスト値は、ロールの名前です。 
+Role 要素のテキスト **値** は、ロールの名前です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44460562"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

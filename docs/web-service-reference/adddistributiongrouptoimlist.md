@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: adbffbfc-e436-4620-acfc-5dfd41a88cb8
-description: Adddistribution Grouptoimlist 要素は、インスタントメッセージリストに配布リストを追加する要求を定義します。
-ms.openlocfilehash: 90a84b23678fb0740158f601967905a8847286fd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: AddDistributionGroupToImList 要素は、インスタント メッセージ リストに配布リストを追加する要求を定義します。
+ms.openlocfilehash: 8b2425a05d184b203f8b65f74a6119d5b6d09946
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460380"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525413"
 ---
 # <a name="adddistributiongrouptoimlist"></a>AddDistributionGroupToImList
 
-**Adddistribution Grouptoimlist**要素は、インスタントメッセージリストに配布リストを追加する要求を定義します。 
+**AddDistributionGroupToImList** 要素は、インスタント メッセージ リストに配布リストを追加する要求を定義します。 
   
 ```XML
 <AddDistributionGroupToImList>
@@ -26,7 +26,7 @@ ms.locfileid: "44460380"
 </AddDistributionGroupToImList>
 ```
 
- **Adddeploy Grouptoimlisttype**
+ **AddDistributionGroupToImListType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -37,7 +37,7 @@ ms.locfileid: "44460380"
   
 ### <a name="child-elements"></a>子要素
 
-[Smtpaddress](smtpaddress.md)  | [DisplayName (非 Emptystringtype)](displayname-nonemptystringtype.md)
+[SmtpAddress](smtpaddress.md)  | [DisplayName (NonEmptyStringType)](displayname-nonemptystringtype.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -54,8 +54,8 @@ ms.locfileid: "44460380"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

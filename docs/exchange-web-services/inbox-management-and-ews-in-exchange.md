@@ -3,15 +3,15 @@ title: Exchange での受信トレイの管理と EWS
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3dfa0fc9-64bb-4d18-bff7-bf6b3bed4a0d
 description: 受信トレイのルールと受信拒否リストを使用して、EWS Mマネージ API または EWS アプリケーションで受信トレイを管理する方法を紹介します。
-ms.openlocfilehash: 7c88015386dc882f14184765e0046a866e8c0e10
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 6dddb8d462276c4983fd04a0206d4d4a9be32df8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456317"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522216"
 ---
 # <a name="inbox-management-and-ews-in-exchange"></a>Exchange での受信トレイの管理と EWS
 
@@ -23,7 +23,7 @@ Exchange メールボックスには、ユーザーが受信メールを自動�
 
 |**目的…**|**使う機能**|
 |:-----|:-----|
-|特定の条件 (送信者、件名、添付物など) に基づいて、受信メッセージにアクション (別のフォルダーへの移動、削除など) を行う  <br/> |受信トレイのルール  <br/> |
+|特定の条件 (送信者、件名、添付物など) に基づいて、受信メッセージにアクション (別のフォルダーへの移動、削除など) を行う  <br/> |受信トレイ ルール  <br/> |
 |特定の送信者からのすべての受信メールを削除する  <br/> |受信拒否リスト  <br/> |
    
 ## <a name="inbox-rules"></a>受信トレイ ルール
@@ -71,7 +71,7 @@ EWS マネージ API では、ルールを操作するために [ExchangeService
 ### <a name="putting-the-pieces-together---parts-of-a-rule"></a>ルールの構成要素を理解する
 <a name="bk_Pieces"> </a>
 
-ルールの各部を視覚化する方法の1つは、受信メールを整理する必要があるユーザーに指示を与えることを想像することです。 この人物には、「メッセージが到着した場合はメッセージを受信しない」と言うことがあります。 \<insert conditions here\> \<insert actions here\> \<insert exceptions here\> 各パーツを詳しく見てみましょう。
+ルールの一部を視覚化する方法の 1 つは、受信メールの整理を行うタスクを持つユーザーに指示を与えていると想像する方法です。 このユーザーに対して、「メッセージが到着したら、メッセージが届いた場合は、メッセージを指定しない限 \<insert conditions here\> \<insert actions here\> り、実行します \<insert exceptions here\> 。 各部分を詳しく見てみよ。
   
 #### <a name="conditions"></a>条件
 <a name="bk_Conditions"> </a>
@@ -107,7 +107,7 @@ EWS マネージ API では、ルールを操作するために [ExchangeService
 |:-----|:-----|
 |条件  <br/> |'インターネットのねこ動画愛好家' 配布リストに送信される  <br/> |
 |アクション  <br/> |メッセージを'ねこ' フォルダーに移動する、  <br/> かつ、以降のルールは処理しない  <br/> |
-|Exceptions  <br/> |'母親' から  <br/> |
+|例外  <br/> |'母親' から  <br/> |
    
 > [!NOTE]
 > "以降のルールは処理しない" は、該当したルールのアクションの 1 つであることに注意してください。通常、どのルールが特定のメッセージで機能するかについての混乱を避けるため、このアクションを含めることをお勧めします。ただし、このアクションを省略しルールを適切に順序付ければ、受信メールのより高度な処理を実行できます。この場合、おそらく、インターネットのねこ動画 メッセージでは、高度な処理をあまり行わないことが安全策です。 

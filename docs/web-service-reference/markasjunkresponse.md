@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 92827350-f317-46da-99c0-5d7960686194
 description: MarkAsJunkResponse 要素は、MarkAsJunk 要求への応答を指定します。
-ms.openlocfilehash: ee8027a61175b8cbf25f5b7d0051a6ea6b74fcb3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 6443a15357f2e599541bbc56cf9ff0c407184440
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468566"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524729"
 ---
 # <a name="markasjunkresponse"></a>MarkAsJunkResponse
 
-**MarkAsJunkResponse**要素は、 **markasjunk**要求への応答を指定します。 
+**MarkAsJunkResponse** 要素は **、MarkAsJunk 要求への応答を指定** します。 
   
 ```XML
 <MarkAsJunkResponse>
@@ -53,8 +53,8 @@ ms.locfileid: "44468566"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

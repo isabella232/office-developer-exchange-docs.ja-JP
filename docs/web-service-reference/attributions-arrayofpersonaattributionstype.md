@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f61d843c-bca5-4c88-9667-fd03d2a963a1
-description: Attributions 要素は、関連付けられたペルソナに集約された1つ以上の連絡先または Active Directory 受信者の属性情報の配列を指定します。
-ms.openlocfilehash: a9883e06a8adbd5c9d3bc7e1edd28c62418df653
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Attributions 要素は、関連付けられたペルサに集約された 1 つ以上の連絡先または Active Directory 受信者の属性情報の配列を指定します。
+ms.openlocfilehash: 2c0ee8100398846be33827b5129557ca89789a17
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460324"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522029"
 ---
 # <a name="attributions-arrayofpersonaattributionstype"></a>Attributions (ArrayOfPersonaAttributionsType)
 
-**Attributions**要素は、関連付けられたペルソナに集約された1つ以上の連絡先または Active Directory 受信者の属性情報の配列を指定します。 
+**Attributions 要素** は、関連付けられたペルサに集約された 1 つ以上の連絡先または Active Directory 受信者の属性情報の配列を指定します。 
   
 ```XML
 <Attributions>
@@ -38,13 +38,13 @@ ms.locfileid: "44460324"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[属性 (PersonaAttributionType)](attribution-personaattributiontype.md) <br/> |**個人の atype**要素の属性の配列のインスタンスを指定します。  <br/> |
+|[Attribution (PersonaAttributionType)](attribution-personaattributiontype.md) <br/> |PersonaType 要素の属性の配列内の **インスタンスを指定** します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ユーザー](persona.md) <br/> |**Getpersona**要求によって返される一連のペルソナデータを指定します。  <br/> |
+|[ユーザー](persona.md) <br/> |**GetPersona** 要求によって返されるペルソナ データのセットを指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -58,10 +58,10 @@ ms.locfileid: "44460324"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

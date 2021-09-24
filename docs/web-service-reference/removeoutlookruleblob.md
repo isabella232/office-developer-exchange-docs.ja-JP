@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - RemoveOutlookRuleBlob
 api_type:
 - schema
 ms.assetid: 69614475-8bd3-4475-b988-614fe9cad8ef
-description: RemoveOutlookRuleBlob 要素は、Microsoft Outlook のルール blob を削除するかどうかを示します。
-ms.openlocfilehash: b4202ab52bf16d1ad1546ec963cd8b9dacd2bd63
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: RemoveOutlookRuleBlob 要素は、Microsoft のルール blob を削除Outlook示します。
+ms.openlocfilehash: 92fd4e22ce0551c7922036e68fc0c6822a006b89
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467670"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525597"
 ---
 # <a name="removeoutlookruleblob"></a>RemoveOutlookRuleBlob
 
-**Removeoutlookruleblob**要素は、Microsoft Outlook のルール blob を削除するかどうかを示します。 
+**RemoveOutlookRuleBlob** 要素は、Microsoft のルール blob を削除Outlook示します。 
   
 [UpdateInboxRules](updateinboxrules.md)
   
@@ -48,15 +48,15 @@ ms.locfileid: "44467670"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[UpdateInboxRules](updateinboxrules.md) <br/> |サーバーストア内のメールボックスの受信トレイルールを更新する要求を定義します。  <br/> |
+|[UpdateInboxRules](updateinboxrules.md) <br/> |サーバー ストア内のメールボックスの受信トレイ ルールを更新する要求を定義します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値が**true の場合**は、Outlook ルール blob を削除する必要があることを示します。 テキスト値が**false**の場合は、Outlook ルール blob を削除しないようにする必要があります。 
+テキスト値が **true の場合** は、Outlook BLOB を削除する必要があります。 テキスト値が **false の場合** は、Outlook BLOB を削除しない必要があります。 
   
 ## <a name="remarks"></a>注釈
 
-受信トレイルールの更新を許可するには、この要素を**true**に設定します。 
+受信トレイ ルールの **更新を許可するには** 、この要素を true に設定します。 
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
@@ -65,9 +65,9 @@ ms.locfileid: "44467670"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -76,5 +76,5 @@ ms.locfileid: "44467670"
 [UpdateInboxRules の操作](updateinboxrules-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

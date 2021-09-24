@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8e24e672-7b17-49c8-b368-a078ca1d4dd1
-description: Language 要素には、検索クエリで使用される言語が含まれています。
-ms.openlocfilehash: 3d1843ea5d38f5efee8453623f450a4486e4d18b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Language 要素には、検索クエリに使用される言語が含まれる。
+ms.openlocfilehash: b8e3bf0d1fede8febe4a1b4e1e349de4ddc6a18a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468699"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524106"
 ---
 # <a name="language"></a>言語
 
-**Language**要素には、検索クエリで使用される言語が含まれています。 
+**Language 要素** には、検索クエリに使用される言語が含まれる。 
   
 ```XML
 <Language></Language>
@@ -38,11 +38,11 @@ ms.locfileid: "44468699"
   
 ### <a name="parent-elements"></a>親要素
 
-[SetHoldOnMailboxes](setholdonmailboxes.md)  | [Searchmailboxes ボックス](searchmailboxes.md)
+[SetHoldOnMailboxes](setholdonmailboxes.md)  | [SearchMailboxes](searchmailboxes.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**Language**要素のテキスト値は、探索検索で使用する言語です。 
+Language 要素のテキスト **値** は、探索検索で使用される言語です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44468699"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

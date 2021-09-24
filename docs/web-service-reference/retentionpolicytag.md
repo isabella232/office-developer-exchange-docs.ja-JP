@@ -1,23 +1,23 @@
 ---
-title: New-retentionpolicytag
+title: RetentionPolicyTag
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f46679d0-9236-41e2-8624-72300079c67c
-description: New-retentionpolicytag 要素は、メールボックスアイテムのアイテム保持ポリシーを指定します。
-ms.openlocfilehash: 3ece841e14e6cf11ab15e4a4d8b83a778ae32e46
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: RetentionPolicyTag 要素は、メールボックス アイテムのアイテム保持ポリシーを指定します。
+ms.openlocfilehash: 58ca3016bed0be625b213a57e5ead1b38a301bfa
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465178"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524547"
 ---
-# <a name="retentionpolicytag"></a>New-retentionpolicytag
+# <a name="retentionpolicytag"></a>RetentionPolicyTag
 
-**New-retentionpolicytag**要素は、メールボックスアイテムのアイテム保持ポリシーを指定します。 
+**RetentionPolicyTag** 要素は、メールボックス アイテムのアイテム保持ポリシーを指定します。 
   
 ```XML
 <RetentionPolicyTag>
@@ -44,7 +44,7 @@ ms.locfileid: "44465178"
   
 ### <a name="child-elements"></a>子要素
 
-[DisplayName (文字列)](displayname-string.md)  | [RetentionId](retentionid.md)  | [保存期間](retentionperiod.md)  | [Type (ElcFolderType)](type-elcfoldertype.md)  | [Retentionaction](retentionaction.md)  | [説明](description.md)  | [IsVisible](isvisible.md)  | [Optedinto](optedinto.md)  | [Isarchive](isarchive.md)
+[DisplayName (string)](displayname-string.md)  | [RetentionId](retentionid.md)  | [RetentionPeriod](retentionperiod.md)  | [Type (ElcFolderType)](type-elcfoldertype.md)  | [RetentionAction](retentionaction.md)  | [説明](description.md)  | [IsVisible](isvisible.md)  | [OptedInto](optedinto.md)  | [IsArchive](isarchive.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -61,8 +61,8 @@ ms.locfileid: "44465178"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

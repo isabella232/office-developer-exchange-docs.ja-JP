@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SearchExpression
 api_type:
 - schema
 ms.assetid: daa179b6-8c7f-4268-a312-c2acc67fa7c3
-description: SearchExpression 要素は、制限内の代替要素を表す抽象要素です。 すべての検索式は、この基本型から派生します。 この要素は、XML インスタンスドキュメントでは使用されません。
-ms.openlocfilehash: db06ce8e2faa0f2589963d58aab55073c618c171
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SearchExpression 要素は、制限内の置換された要素を表す抽象要素です。 すべての検索式は、この基本型から派生します。 この要素は、XML インスタンス ドキュメントでは使用されません。
+ms.openlocfilehash: e8047d333b36d77bc6823efd6488a15a6d2501a4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530353"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517848"
 ---
 # <a name="searchexpression"></a>SearchExpression
 
-**Searchexpression**要素は、制限内の代替要素を表す抽象要素です。 すべての検索式は、この基本型から派生します。 この要素は、XML インスタンスドキュメントでは使用されません。 
+**SearchExpression 要素** は、制限内の置換された要素を表す抽象要素です。 すべての検索式は、この基本型から派生します。 この要素は、XML インスタンス ドキュメントでは使用されません。 
   
 ```xml
 <SearchExpression/>
 ```
 
- **Search式の種類**
+ **SearchExpressionType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -44,17 +44,17 @@ ms.locfileid: "44530353"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[制限](restriction.md) <br/> |FindItem/FindFolder および search folder 操作のアイテムまたはフォルダーをフィルター処理するために使用される制限またはクエリを表します。  <br/> |
-|[Not](not.md) <br/> |含まれる検索式のブール値を否定する検索式を表します。  <br/> |
-|[And](and.md) <br/> |2つ以上の検索式の間でブール値**と**演算を実行できる検索式を表します。 And 操作の結果は、 **and**要素に含まれるすべての検索式が**true**である場合に**true** **となり**ます。  <br/> |
-|[Or](or.md) <br/> |含まれる検索式に対して論理**OR**演算を実行する検索式を表します。 **または**、いずれかの子が**true**を返した場合は**true**を返します。 **または、** 2 つ以上の子を持つ必要があります。  <br/> |
+|[Restriction](restriction.md) <br/> |FindItem/FindFolder および検索フォルダー操作でアイテムまたはフォルダーをフィルター処理するために使用される制限またはクエリを表します。  <br/> |
+|[Not](not.md) <br/> |含まれる検索式のブール値をネゲートする検索式を表します。  <br/> |
+|[And](and.md) <br/> |2 つ以上の検索式の間で **ブール型 AND** 演算を実行できる検索式を表します。 **And** 要素に含まれるすべての検索式が true の場合 **、AND** 操作の結果は true **です**。  <br/> |
+|[Or](or.md) <br/> |含まれる検索式に対して論理 **OR** 操作を実行する検索式を表します。 **または** 、子が **true** を返す場合は true を **返します**。 **または、2** つ以上の子が必要です。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-SearchExpression 置換グループの一部であるすべての filter 要素は、SearchExpression 要素の代わりに表示できます。
+SearchExpression 置換グループの一部であるフィルター要素は、SearchExpression 要素の代に表示できます。
   
 > [!NOTE]
-> この要素は、インスタンスドキュメント内で直接発生することはありません。 
+> この要素は、インスタンス ドキュメント内で直接発生しません。 
   
 次の要素は、SearchExpression 置換グループのメンバーです。
   
@@ -74,7 +74,7 @@ SearchExpression 置換グループの一部であるすべての filter 要素�
     
 - [IsLessThanOrEqualTo](islessthanorequalto.md)
     
-- [内容](contains.md)
+- [Contains](contains.md)
     
 - [Not](not.md)
     
@@ -82,20 +82,20 @@ SearchExpression 置換グループの一部であるすべての filter 要素�
     
 - [Or](or.md)
     
-この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5cc83174-e684-42c8-b72a-f82d3de3bb2f
-description: IsExternalMailbox 要素は、メールボックスが組織の外部にあるかどうかを示します。
-ms.openlocfilehash: 9be702b05e89857913023a8ec34b78ea4c309274
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: IsExternalMailbox 要素は、メールボックスが組織の外部であるかどうかを示します。
+ms.openlocfilehash: f2435356a7315c51f3d99aeedf0ae2b21500981c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455290"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524232"
 ---
 # <a name="isexternalmailbox"></a>IsExternalMailbox
 
-**IsExternalMailbox**要素は、メールボックスが組織の外部にあるかどうかを示します。 
+**IsExternalMailbox** 要素は、メールボックスが組織の外部であるかどうかを示します。 
   
 ```XML
 <IsExternalMailbox>true | false</IsExternalMailbox>
@@ -42,7 +42,7 @@ ms.locfileid: "44455290"
   
 ## <a name="text-value"></a>テキスト値
 
-**IsExternalMailbox**要素のテキスト値が**true の場合**は、メールボックスが外部組織にあることを示します。 値が**false**の場合は、メールボックスが組織内にあることを示します。 
+**IsExternalMailbox** 要素のテキスト値 **が true** の場合は、メールボックスが外部組織にあるかどうかを示します。 false の **値は** 、メールボックスが組織内にあるかどうかを示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,13 +55,13 @@ ms.locfileid: "44455290"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

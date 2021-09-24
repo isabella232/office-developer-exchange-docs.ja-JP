@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 95084659-aa5a-4bac-8977-00db3b87883e
-description: EmailAddresses 要素は、関連付けられたペルソナのすべての電子メールアドレスの配列を指定します。
-ms.openlocfilehash: e6132e9ef4ed13ea2546783f65d184fafeed5530
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: EmailAddresses 要素は、関連付けられたペルサのすべての電子メール アドレスの配列を指定します。
+ms.openlocfilehash: d52bd83cd6f83b5004d1fb5d7aeb536a8fc4323c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463420"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525086"
 ---
 # <a name="emailaddresses-arrayofemailaddressestype"></a>EmailAddresses (ArrayOfEmailAddressesType)
 
-**Emailaddresses**要素は、関連付けられたペルソナのすべての電子メールアドレスの配列を指定します。 
+**EmailAddresses 要素** は、関連付けられたペルサのすべての電子メール アドレスの配列を指定します。 
   
 ```XML
 <EmailAddresses>
@@ -38,13 +38,13 @@ ms.locfileid: "44463420"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Address (EmailAddressType)](address-emailaddresstype.md) <br/> |完全に解決された電子メールアドレスを表します。  <br/> |
+|[Address (EmailAddressType)](address-emailaddresstype.md) <br/> |完全に解決された電子メール アドレスを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ユーザー](persona.md) <br/> |**Getpersona**要求によって返される一連のペルソナデータを指定します。  <br/> |
+|[ユーザー](persona.md) <br/> |**GetPersona** 要求によって返されるペルソナ データのセットを指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -58,12 +58,12 @@ ms.locfileid: "44463420"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

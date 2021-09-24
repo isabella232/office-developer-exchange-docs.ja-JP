@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SendNotification
 api_type:
 - schema
 ms.assetid: e45c4451-a286-4aec-a691-119ec41c58e0
-description: SendNotification 要素には、Microsoft Exchange Server 2007 を実行しているコンピューターによってクライアントアプリケーションに送信されるプッシュ通知が含まれています。
-ms.openlocfilehash: 49f2f6cb7f5c8e1171b54ff965ee1d22accc9bf2
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SendNotification 要素には、2007 年から 2007 年まで実行されているコンピューターによってクライアント アプリケーションに送信Microsoft Exchange Serverプッシュ通知が含まれる。
+ms.openlocfilehash: 11eebbcb93808d0576b5a6790bf9997fe1518412
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462116"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521579"
 ---
 # <a name="sendnotification"></a>SendNotification
 
-**Sendnotification**要素には、Microsoft Exchange Server 2007 を実行しているコンピューターによってクライアントアプリケーションに送信されるプッシュ通知が含まれています。 
+**SendNotification** 要素には、2007 年から 2007 年まで実行されているコンピューターによってクライアント アプリケーションに送信Microsoft Exchange Serverプッシュ通知が含まれる。 
   
 ```xml
 <SendNotification>
@@ -42,7 +42,7 @@ ms.locfileid: "44462116"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |クライアントアクセスサーバーによって送信されるプッシュ通知が含まれます。  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |クライアント アクセス サーバーによって送信されるプッシュ通知が含まれる。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -50,25 +50,25 @@ ms.locfileid: "44462116"
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 
 
-[EWS でのイベント通知](https://msdn.microsoft.com/library/4fd4b351-d35c-4ccc-9ed9-878932ab9d50%28Office.15%29.aspx)
+[EWS のイベント通知](https://msdn.microsoft.com/library/4fd4b351-d35c-4ccc-9ed9-878932ab9d50%28Office.15%29.aspx)
   
 [プッシュ通知のサンプル アプリケーション](https://msdn.microsoft.com/library/db1f8523-fa44-483f-bdb6-ab5939b52eee%28Office.15%29.aspx)
 

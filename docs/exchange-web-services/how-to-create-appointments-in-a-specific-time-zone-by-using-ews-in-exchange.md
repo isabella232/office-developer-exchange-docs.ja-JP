@@ -3,15 +3,15 @@ title: Exchange の EWS を使用して、特定のタイム ゾーンで予定�
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e68aaa27-250e-4170-b099-077a979c127c
 description: Exchange の EWS マネージ API または EWS を使用して、特定のタイム ゾーンで予定を作成する方法について説明します。
-ms.openlocfilehash: 9b1160a9d62ab092d1b60265eba1ad953be0032b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 589c72982fdda568170468c376b8a6d9f598aa36
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456858"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521145"
 ---
 # <a name="create-appointments-in-a-specific-time-zone-by-using-ews-in-exchange"></a>Exchange の EWS を使用して、特定のタイム ゾーンで予定を作成する
 
@@ -32,7 +32,7 @@ EWS マネージ API を使用して予定または会議を作成するとき�
     > [!NOTE]
     > **EndTimeZone** プロパティは、[ExchangeService.RequestedServerVersion](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservicebase.requestedserverversion%28v=exchg.80%29.aspx) プロパティが **Exchange2010** 以降に設定されている場合にのみ使用できます。 使用できない場合は、**StartTimeZone** を設定して、予定の開始時刻と終了時刻の両方に適用します。 
   
-次の例では、3 つの予定の作成に EWS マネージ API が使用されています。 それぞれの予定は、未指定のタイム ゾーンで現在から 2 日後の 1:00 PM に始まり、その 1 時間後に終わります。 最初の予定は、既定の EWS マネージ API の動作を使用することで、クライアント コンピューターのタイム ゾーンで作成されます。 2 番目は、**Appointment.StartTimeZone** と **Appointment.EndTimeZone** プロパティを使用することで、中部標準時で作成されます。 3 番目は、**ExchangeService.TimeZone** プロパティを使用することで、山地標準時で作成されます。 
+次の例では、3 つの予定の作成に EWS マネージ API が使用されています。それぞれの予定は、未指定のタイム ゾーンで現在から 2 日後の 1:00 PM に始まり、その 1 時間後に終わります。最初の予定は、既定の EWS マネージ API の動作を使用することで、クライアント コンピューターのタイム ゾーンで作成されます。2 番目は、**Appointment.StartTimeZone** プロパティと **Appointment.EndTimeZone** プロパティを使用することで、中部標準時で作成されます。3 番目は、**ExchangeService.TimeZone** プロパティを使用することで、山地標準時で作成されます。 
   
 ```cs
 using Microsoft.Exchange.WebServices.Data;
@@ -136,7 +136,7 @@ EWS を使用して予定または会議を作成するときには、タイム 
     
 - [TimeZoneContext](https://msdn.microsoft.com/library/573c462b-aa1d-4ba0-8852-e3f48b26873b%28Office.15%29.aspx) 要素で指定したものとは別のタイム ゾーンを使用する。この場合は、[TimeZoneContext](https://msdn.microsoft.com/library/573c462b-aa1d-4ba0-8852-e3f48b26873b%28Office.15%29.aspx) 要素、[MeetingTimeZone](https://msdn.microsoft.com/library/413b47d9-8126-462c-9a4f-4e771a5e8889%28Office.15%29.aspx) 要素 (Exchange 2007 のみ)、または [StartTimeZone](https://msdn.microsoft.com/library/d38c4dc1-4ecb-42a1-8d57-a451b16a2de2%28Office.15%29.aspx) 要素と [EndTimeZone](https://msdn.microsoft.com/library/6c53c337-be60-4d22-9e9e-a0c140c5e913%28Office.15%29.aspx) 要素 (Exchange 2010 以降) を [CreateItem](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) 操作要求に含めません。 
     
-次の [CreateItem 操作](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx)要求の例では、UTC を使用して予定を作成します。 **TimeZoneContext** 要素、**StartTimeZone** 要素、**EndTimeZone** 要素が存在しないことに注意してください。 **Start** 要素と **End** 要素の値は UTC で表されます。 
+次の [CreateItem 操作](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx)要求の例では、UTC を使用して予定を作成します。**TimeZoneContext** 要素、**StartTimeZone** 要素、および **EndTimeZone** 要素が存在していないことに注目してください。**Start** 要素と **End** 要素の値は UTC で表されます。  
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -162,7 +162,7 @@ EWS を使用して予定または会議を作成するときには、タイム 
 </soap:Envelope>
 ```
 
-次の [CreateItem 操作](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx)要求の例では、**StartTimeZone** 要素と **EndTimeZone** 要素を使用して、予定に中部標準時を指定します。 **TimeZoneContext** 要素が存在しないことに注意してください。 ただし、その要素が存在していたとしても、その値は **StartTimeZone** 要素と **EndTimeZone** 要素の値で上書きされます。 この場合も、**Start** 要素と **End** 要素の値は UTC で表されます。 
+次の [CreateItem 操作](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx)要求の例では、**StartTimeZone** 要素と **EndTimeZone** 要素を使用して、予定に中部標準時を指定します。**TimeZoneContext** 要素が存在していないことに注目してください。ただし、その要素が存在していたとしても、その値は **StartTimeZone** 要素と **EndTimeZone** 要素の値で上書きされます。この場合も、**Start** 要素と **End** 要素の値は UTC で表されます。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -190,7 +190,7 @@ EWS を使用して予定または会議を作成するときには、タイム 
 </soap:Envelope>
 ```
 
-次の [CreateItem 操作](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx)要求の例では、**TimeZoneContext** 要素を山地標準時に設定します。 **StartTimeZone** 要素と **EndTimeZone**要素が存在しないことに注意してください。 この場合も、**Start** 要素と **End** 要素の値は UTC で表されます。 
+次の [CreateItem 操作](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx)要求の例では、**TimeZoneContext** 要素を山地標準時に設定します。**StartTimeZone** 要素と **EndTimeZone** 要素が存在していないことに注目してください。この場合も、**Start** 要素と **End** 要素の値は UTC で表されます。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

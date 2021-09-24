@@ -3,15 +3,15 @@ title: Exchange の検索と EWS
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9fa5b836-857e-401d-9450-51e7dbc69104
 description: EWS マネージ API または EWS を使用して、Exchange でアイテムを検索する方法を確認します。
-ms.openlocfilehash: d35cc74ab2fa79530ac09256e315a780023d833b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: f78f4625880480e4f0d1ebb683c6e7c2c7fa83e0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463838"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524435"
 ---
 # <a name="search-and-ews-in-exchange"></a>Exchange の検索と EWS
 
@@ -135,7 +135,7 @@ view.OrderBy.Add(ItemSchema.DateTimeReceived, SortDirection.Descending);
 
 EWS マネージ API または EWS を使用して検索要求を送信するときに、ビューのサイズを指定します。これにより、返されるアイテムの最大数が制御されます。ただし、検索に一致するサーバー上のアイテム数は、ビューのサイズを超える可能性があります。この場合、サーバーは利用できるアイテムがさらに多く存在することを示します。[ページングを使用して検索を繰り返し](how-to-perform-paged-searches-by-using-ews-in-exchange.md)、次の結果セットを取得できます。
 
-たとえば、ビュー サイズが 10 の検索要求を送信します。 サーバー上には検索に一致するアイテムが15個あるかもしれませんが、最初の10はインジケーター ( [Finditemsresults) と共に返されます \<TItem\> 。](https://msdn.microsoft.com/library/dd635477%28v=exchg.80%29.aspx)EWS マネージ API を使用している場合は、さらに多くのプロパティを使用して、サーバー上にさらに結果があることを示します。 その場合、オフセットを 10 にして同じ検索を送信し、検索条件に一致する次の 10 アイテムを要求することができます。 サーバーは残りの 5 つのアイテムを返します。
+たとえば、ビュー サイズが 10 の検索要求を送信します。 サーバー上に検索に一致するアイテムが 15 件ある場合がありますが、最初の 10 項目とインジケーター [(FindItemsResults \<TItem\> .MoreAvailable](https://msdn.microsoft.com/library/dd635477%28v=exchg.80%29.aspx) プロパティ (EWS マネージ API を使用している場合) を使用すると、サーバー上に結果が多く表示されます。 その場合、オフセットを 10 にして同じ検索を送信し、検索条件に一致する次の 10 アイテムを要求することができます。 サーバーは残りの 5 つのアイテムを返します。
 
 **図 1. ページングされた検索の例**
 

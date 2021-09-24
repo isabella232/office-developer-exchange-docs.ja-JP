@@ -3,15 +3,15 @@ title: Exchange で EWS を使用して永続的なアプリケーションの�
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 90f561f2-e40e-4f5b-b321-f86dbf4a1b71
 description: Exchange で EWS マネージ API または EWS を使用して、永続的なアプリケーションの設定を作成、検索、取得、更新、削除する方法について説明します。
-ms.openlocfilehash: ab7b3ef5f87d8a26a412ca7187dc93c58d73112f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 0756f8dabe5f0b898619102b8565b65a536791b9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455731"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522279"
 ---
 # <a name="manage-persistent-application-settings-by-using-ews-in-exchange"></a>Exchange で EWS を使用して永続的なアプリケーションの設定を管理する
 
@@ -144,9 +144,9 @@ EWS の [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a9
   
 - 読みやすいように識別子と変更キーが短縮されています。
     
-- メッセージとして 2 つのユーザー構成オブジェクトが返されます。 これは、**FindItem** 操作がメッセージ アイテムとして EWS スキーマで定義されていないすべてのアイテムを返すためです。 
+- メッセージとして 2 つのユーザー構成オブジェクトが返されます。これは、**FindItem** 操作がメッセージ アイテムとして EWS スキーマで定義されていないすべてのアイテムを返すためです。 
     
-- 2 つのユーザー構成オブジェクトでは、[ItemClass](https://msdn.microsoft.com/library/56020078-50b4-4880-894a-a9f234033cfb%28Office.15%29.aspx) プロパティが異なります。 最初のユーザー構成オブジェクトは、EWS を使用して作成されました。 2 番目のオブジェクトは、他の API によって作成されました。 
+- 2 つのユーザー構成オブジェクトでは、[ItemClass](https://msdn.microsoft.com/library/56020078-50b4-4880-894a-a9f234033cfb%28Office.15%29.aspx) プロパティが異なります。最初のユーザー構成オブジェクトは、EWS を使用して作成されました。2 番目のオブジェクトは、他の API によって作成されました。 
     
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -313,7 +313,7 @@ EWS の [GetUserConfiguration](https://msdn.microsoft.com/library/71d50e3c-92bd-
 </s:Envelope>
 ```
 
-次の例は、ユーザー構成オブジェクトを更新するための要求 XML を示しています。 この要求は、すべての構成を応答で返す必要があることを示しています。 これは、**UserConfiguration.Update** メソッドを呼び出す EWS マネージ API の例で生成されるものと同じ XML です。 更新 XML に既存の辞書エントリと、更新前に追加された他の 1 つの辞書エントリが含まれていることが確認できます。 
+次の例は、ユーザー構成オブジェクトを更新するための要求 XML を示しています。この要求は、すべての構成を応答で返す必要があることを示しています。これは、**UserConfiguration.Update** メソッドを呼び出す EWS マネージ API の例で生成されるものと同じ XML です。更新 XML に既存の辞書エントリと、更新前に追加された他の 1 つの辞書エントリが含まれていることが確認できます。 
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

@@ -5,47 +5,47 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8a54a6dc-110c-4972-a8bc-5ddb43c4b857
 description: GetDiscoverySearchConfiguration EWS 操作に関する情報を検索します。
-ms.openlocfilehash: 4db435988a9954b921e7851986b6f92ffedbad94
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 62cadc818219e13199aa246e87066571d78c4e3d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461024"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525079"
 ---
 # <a name="getdiscoverysearchconfiguration-operation"></a>GetDiscoverySearchConfiguration 操作
 
-**Getdiscoverysearchconfiguration** EWS 操作に関する情報を検索します。 
+**GetDiscoverySearchConfiguration** EWS 操作に関する情報を検索します。 
   
-**Getdiscoverysearchconfiguration**操作は、インプレース保持、保存された探索検索、および探索検索が有効になっているメールボックスの構成情報を返します。 
+**GetDiscoverySearchConfiguration** 操作は、一時保留リスト、保存された探索検索、および探索検索が有効になっているメールボックスの構成情報を返します。 
   
 この操作は Exchange Server 2013 で導入されました。
   
 ## <a name="using-the-getdiscoverysearchconfiguration-operation"></a>GetDiscoverySearchConfiguration 操作の使用
 
-**Getdiscoverysearchconfiguration**操作は、探索検索の構成情報を提供します。 要求には、次の引数の1つ以上を含めることができます。 
+**GetDiscoverySearchConfiguration 操作は**、探索検索の構成情報を提供します。 要求には、次の 1 つ以上の引数を含めできます。 
   
-1. [Searchid](searchid.md) —保存された探索検索を識別します。 この引数が要求で送信される場合、他の引数の値は無視されます。 
+1. [SearchId](searchid.md) : 保存された探索検索を識別します。 この引数が要求で送信された場合、他の引数の値は無視されます。 
     
-2. [Expandgroupmembership](expandgroupmembership.md) : グループメンバーシップが応答で展開されているかどうかを示します。 値が**true の場合**は、すべての検索可能なメールボックスが応答で返されるように、グループメンバーシップが展開されていることを示します。 値が**false**の場合は、応答でグループのみが返されることを示します。 
+2. [ExpandGroupMembership](expandgroupmembership.md) — 応答でグループ メンバーシップが拡張されているかどうかを示します。 true の **値は** 、グループ メンバーシップが展開され、検索可能なすべてのメールボックスが応答で返されるかどうかを示します。 false の **値は** 、グループだけが応答で返されます。 
     
-3. [InPlaceHoldConfigurationOnly](inplaceholdconfigurationonly.md) —インプレースホールド構成に加えて、すべての検索可能なメールボックスが返されるかどうかを示します。 値が**true の場合**は、インプレースホールド構成のみが返されることを示します。 値が**false**の場合は、すべての検索可能なメールボックス識別子がインプレースホールド識別子に加えて返されることを示します。 この要素が存在しない場合の既定の動作は、 **false**の値と同じです。 
+3. [InPlaceHoldConfigurationOnly](inplaceholdconfigurationonly.md) — インプレース保持構成に加えて、すべての検索可能なメールボックスが返されるかどうかを示します。 true の **値は** 、インプレイス保持構成だけが返されます。 false の **値は** 、一時保持識別子に加えて、すべての検索可能なメールボックス識別子が返されます。 この要素が存在しない場合、既定の動作は false の値と同等 **です**。 
     
-### <a name="getdiscoverysearchconfiguration-operation-soap-headers"></a>GetDiscoverySearchConfiguration 操作の SOAP ヘッダー
+### <a name="getdiscoverysearchconfiguration-operation-soap-headers"></a>GetDiscoverySearchConfiguration 操作 SOAP ヘッダー
 
-**Getdiscoverysearchconfiguration**操作では、次の表に示す SOAP ヘッダーを使用できます。 
+**GetDiscoverySearchConfiguration 操作** では、次の表に示す SOAP ヘッダーを使用できます。 
   
-|**ヘッダー名**|**要素**|**説明**|
+|**ヘッダー名**|**Element**|**説明**|
 |:-----|:-----|:-----|
-|**Get-managementrole** <br/> |[Get-managementrole](managementrole.md) <br/> |発信者が要求を行うために必要なサーバーの役割を指定します。 このヘッダーは、要求に適用されます。  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは応答に適用されます。  <br/> |
+|**ManagementRole** <br/> |[ManagementRole](managementrole.md) <br/> |呼び出し元が要求を行うのに必要なサーバーの役割を識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマ バージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは、応答に適用されます。  <br/> |
    
-## <a name="getdiscoverysearchconfiguration-operation-request-example-get-the-discovery-search-configuration-for-a-saved-search"></a>GetDiscoverySearchConfiguration 操作要求の例: 保存された検索の探索検索構成を取得する
+## <a name="getdiscoverysearchconfiguration-operation-request-example-get-the-discovery-search-configuration-for-a-saved-search"></a>GetDiscoverySearchConfiguration 操作要求の例: 保存された検索の検出検索構成を取得する
 
-次の**Getdiscoverysearchconfiguration**操作要求の例は、"MyDiscSearchFor-sbrown" と呼ばれる保存済みの検索の構成を要求する方法を示しています。 [Expandgroupmembership](expandgroupmembership.md)要素と[InPlaceHoldConfigurationOnly](inplaceholdconfigurationonly.md)要素の引数は無視されます。 
+**GetDiscoverySearchConfiguration** 操作要求の次の例は、"MyDiscSearchFor-sbrown" という名前の保存済み検索の構成を要求する方法を示しています。 [ExpandGroupMembership](expandgroupmembership.md)要素と[InPlaceHoldConfigurationOnly](inplaceholdconfigurationonly.md)要素の引数は無視されます。 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -76,9 +76,9 @@ ms.locfileid: "44461024"
     
 - [InPlaceHoldConfigurationOnly](inplaceholdconfigurationonly.md)
     
-## <a name="successful-getdiscoverysearchconfiguration-operation-response-request-for-a-single-saved-search"></a>成功した GetDiscoverySearchConfiguration 操作応答: 1 つの保存済み検索の要求
+## <a name="successful-getdiscoverysearchconfiguration-operation-response-request-for-a-single-saved-search"></a>GetDiscoverySearchConfiguration 操作応答の成功: 1 つの保存済み検索の要求
 
-次の例は、"MyDiscSearchFor-sbrown" と呼ばれる保存済みの検索の構成を取得するために、 **Getdiscoverysearchconfiguration**操作要求に対する正常な応答を示しています。 
+次の例は **、GetDiscoverySearchConfiguration** 操作要求に対する正常な応答を示し、"MyDiscSearchFor-sbrown" という名前の保存済み検索の構成を取得します。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -131,21 +131,21 @@ ms.locfileid: "44461024"
     
 - [Guid](guid-ex15websvcsotherref.md)
     
-- [PrimarySmtpAddress (文字列)](primarysmtpaddress-string.md)
+- [PrimarySmtpAddress (string)](primarysmtpaddress-string.md)
     
 - [IsExternalMailbox](isexternalmailbox.md)
     
 - [ExternalEmailAddress](externalemailaddress.md)
     
-- [DisplayName (文字列)](displayname-string.md)
+- [DisplayName (string)](displayname-string.md)
     
-- [Isメンバーシップグループ](ismembershipgroup.md)
+- [IsMembershipGroup](ismembershipgroup.md)
     
 - [ReferenceId](referenceid.md)
     
-## <a name="successful-getdiscoverysearchconfiguration-operation-response-request-for-in-place-holds"></a>成功した GetDiscoverySearchConfiguration 操作応答: インプレース保持の要求
+## <a name="successful-getdiscoverysearchconfiguration-operation-response-request-for-in-place-holds"></a>GetDiscoverySearchConfiguration 操作の正常な応答: 一時保留の要求
 
-次の例は、インプレースホールドのみを取得する**Getdiscoverysearchconfiguration**操作要求に対する正常な応答を示しています。 
+次の例は、一時保留リストのみを取得する **GetDiscoverySearchConfiguration** 操作要求に対する正常な応答を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -204,9 +204,9 @@ ms.locfileid: "44461024"
     
 - [ManagedByOrganization](managedbyorganization.md)
     
-## <a name="successful-getdiscoverysearchconfiguration-operation-response-request-for-all-saved-discovery-search-configurations"></a>成功した GetDiscoverySearchConfiguration 操作応答: すべての保存された探索検索構成の要求
+## <a name="successful-getdiscoverysearchconfiguration-operation-response-request-for-all-saved-discovery-search-configurations"></a>GetDiscoverySearchConfiguration 操作の正常な応答: すべての保存済み探索検索構成の要求
 
-次の例は、保存されているすべての探索検索を取得するために、 **Getdiscoverysearchconfiguration**操作要求に対する正常な応答を示しています。 
+次の例は、すべての保存された探索検索を取得する **GetDiscoverySearchConfiguration** 操作要求に対する正常な応答を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -293,21 +293,21 @@ ms.locfileid: "44461024"
     
 - [Guid](guid-ex15websvcsotherref.md)
     
-- [PrimarySmtpAddress (文字列)](primarysmtpaddress-string.md)
+- [PrimarySmtpAddress (string)](primarysmtpaddress-string.md)
     
 - [IsExternalMailbox](isexternalmailbox.md)
     
 - [ExternalEmailAddress](externalemailaddress.md)
     
-- [DisplayName (文字列)](displayname-string.md)
+- [DisplayName (string)](displayname-string.md)
     
-- [Isメンバーシップグループ](ismembershipgroup.md)
+- [IsMembershipGroup](ismembershipgroup.md)
     
 - [ReferenceId](referenceid.md)
     
 ## <a name="getdiscoverysearchconfiguration-operation-error-response"></a>GetDiscoverySearchConfiguration 操作エラー応答
 
-次の例は、 **Getdiscoverysearchconfiguration**操作要求へのエラー応答を示しています。 これは、サーバー上に存在しない保存済みの検索を取得する要求に対する応答です。 
+次の例は **、GetDiscoverySearchConfiguration** 操作要求に対するエラー応答を示しています。 これは、サーバー上に見つからない保存済み検索を取得する要求に対する応答です。 
   
 ```XML
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
@@ -348,11 +348,11 @@ ms.locfileid: "44461024"
     
 - [DiscoverySearchConfigurations](discoverysearchconfigurations.md)
     
-EWS で汎用的でこの操作に固有の追加のエラーコードについては、「応答」[を参照してください。](responsecode.md)
+EWS に汎用的で、この操作に固有の追加のエラー コードについては [、「ResponseCode」を参照してください](responsecode.md)。
   
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS 操作](ews-operations-in-exchange.md)
+- [EWS 操作 (Exchange](ews-operations-in-exchange.md)
     
 - [GetSearchableMailboxes](getsearchablemailboxes.md)
     

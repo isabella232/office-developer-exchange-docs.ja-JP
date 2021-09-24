@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3ba567bf-2c6c-4a6b-9ae8-3eea22d849de
-description: YomiCompanyName 要素は、関連付けられているペルソナの日本語のフリガナを指定します。
-ms.openlocfilehash: 52966aaec8e0ea0ec0f89c15c0ff0dc83521881d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: YomiCompanyName 要素は、関連付けられたペルサの日本語の会社名を指定します。
+ms.openlocfilehash: 0b98b4b9a9cdf65b409914562f0f2b48f5ff21fd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467117"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521208"
 ---
 # <a name="yomicompanyname"></a>YomiCompanyName
 
-**YomiCompanyName**要素は、関連付けられているペルソナの日本語のフリガナを指定します。 
+**YomiCompanyName** 要素は、関連付けられたペルサの日本語の会社名を指定します。 
   
 ```XML
 <YomiCompanyName></YomiCompanyName>
@@ -42,7 +42,7 @@ ms.locfileid: "44467117"
   
 ## <a name="text-value"></a>テキスト値
 
-**YomiCompanyName**要素のテキスト値は、関連付けられたペルソナの日本語の会社名です。 
+**YomiCompanyName 要素のテキスト** 値は、関連付けられたペルサの日本語の会社名です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44467117"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

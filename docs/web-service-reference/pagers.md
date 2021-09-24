@@ -1,23 +1,23 @@
 ---
-title: ベル
+title: Pagers
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fde3caef-ebbe-4a0b-a839-b1fb8157dcb4
-description: ページャー要素は、ページャー電話番号の配列と、関連付けられているペルソナのソース attributions の識別子を指定します。
-ms.openlocfilehash: 196fae886d5a12bc03e0688c2be15e4fbd22e443
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Pagers 要素は、ページの電話番号の配列と、関連付けられたペルサのソース属性の識別子を指定します。
+ms.openlocfilehash: 517e7bf4318e6d48b6c6a2177a7d14aacb236a03
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462326"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521740"
 ---
-# <a name="pagers"></a>ベル
+# <a name="pagers"></a>Pagers
 
-ページャー**要素は、ページャー**電話番号の配列と、関連付けられているペルソナのソース attributions の識別子を指定します。 
+**Pagers 要素は**、ページの電話番号の配列と、関連付けられたペルサのソース属性の識別子を指定します。 
   
 ```XML
 <Pagers>
@@ -54,8 +54,8 @@ ms.locfileid: "44462326"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

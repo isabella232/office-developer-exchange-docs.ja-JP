@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 486a0340-3163-4905-abd5-1372995c9a3a
-description: 教育機関の要素は、学校名の配列と、関連付けられたペルソナのソース attributions の識別子を指定します。
-ms.openlocfilehash: e24d5318a38aa0a902d4976d7b31a376399d2cfd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Schools 要素は、関連付けられたペルサの学校名とソース属性の識別子の配列を指定します。
+ms.openlocfilehash: 22c8242e0da906b75baa4cffe9c9ec4dd0e52cd3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465269"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524505"
 ---
 # <a name="schools"></a>学校
 
-**教育機関**の要素は、学校名の配列と、関連付けられたペルソナのソース attributions の識別子を指定します。 
+**Schools 要素** は、関連付けられたペルサの学校名とソース属性の識別子の配列を指定します。 
   
 ```XML
 <Schools>
@@ -53,8 +53,8 @@ ms.locfileid: "44465269"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

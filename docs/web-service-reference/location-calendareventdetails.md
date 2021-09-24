@@ -1,27 +1,27 @@
 ---
-title: 場所 (CalendarEventDetails)
+title: Location (CalendarEventDetails)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Location
 api_type:
 - schema
 ms.assetid: 883cce6e-66b8-4dbc-935c-83ef5100a953
-description: Location 要素は、予定表アイテムの "場所" フィールドを表します。
-ms.openlocfilehash: 4a590c315d2211ce9128305a514e68f1c785596c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Location 要素は、予定表アイテムの場所フィールドを表します。
+ms.openlocfilehash: 7264d086b295b442b51376ac0a4e2b1b03521249
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467999"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524904"
 ---
-# <a name="location-calendareventdetails"></a>場所 (CalendarEventDetails)
+# <a name="location-calendareventdetails"></a>Location (CalendarEventDetails)
 
-**Location**要素は、予定表アイテムの "場所" フィールドを表します。 
+**Location 要素** は、予定表アイテムの場所フィールドを表します。 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -37,7 +37,7 @@ ms.locfileid: "44467999"
   
 [CalendarEventDetails](calendareventdetails.md)
   
-[場所 (CalendarEventDetails)](location-calendareventdetails.md)
+[Location (CalendarEventDetails)](location-calendareventdetails.md)
   
 ```xml
 <Location/>
@@ -60,26 +60,26 @@ ms.locfileid: "44467999"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[CalendarEventDetails](calendareventdetails.md) <br/> |予定表イベントに関する追加情報を提供します。  <br/> この要素の XPath 式を次に示します。  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]/CalendarEventDetails` <br/> |
+|[CalendarEventDetails](calendareventdetails.md) <br/> |予定表イベントの追加情報を提供します。  <br/> 次に、この要素の XPath 式を示します。  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]/CalendarEventDetails` <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-この要素が応答で返される場合は、テキスト値が必要です。 この要素には、空の文字列を含めることができます。 [CalendarEventDetails](calendareventdetails.md)要素が使用されている場合、この要素は省略可能です。 
+この要素が応答で返される場合は、テキスト値が必要です。 この要素には、空の文字列を含めできます。 [CalendarEventDetails](calendareventdetails.md)要素を使用する場合、この要素は省略可能です。 
   
 ## <a name="remarks"></a>注釈
 
-この要素は、MAPI という名前の PR_Location プロパティにマップします。
+この要素は、MAPI という名前のPR_Locationにマップされます。
   
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -90,5 +90,5 @@ ms.locfileid: "44467999"
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[ユーザーの空き時間情報の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[ユーザーの可用性の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

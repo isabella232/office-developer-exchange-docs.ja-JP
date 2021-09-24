@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ReplyBody
 api_type:
 - schema
 ms.assetid: bb184144-3e4b-4419-a883-cc9fab1085e6
-description: ReplyBody 要素には、不在 (OOF) メッセージと、メッセージに使用する言語が含まれています。
-ms.openlocfilehash: 496d336d1f87d9ea493ba7da362eef5a416fd899
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ReplyBody 要素には、メッセージ外 (OOF) Officeメッセージと、そのメッセージに使用される言語が含まれる。
+ms.openlocfilehash: 75af64277467246c7edcc2a48708bbf3f3c95c48
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465304"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517953"
 ---
 # <a name="replybody"></a>ReplyBody
 
-**ReplyBody**要素には、不在 (OOF) メッセージと、メッセージに使用する言語が含まれています。 
+**ReplyBody 要素** には、受信Office (OOF) メッセージと、そのメッセージに使用される言語が含まれる。 
   
 ```XML
 <ReplyBody xml:lang="">
@@ -38,19 +38,19 @@ ms.locfileid: "44465304"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|xml: lang  <br/> |**ReplyBody**の内容で使用する言語を指定します。 この属性は省略可能です。 この属性に指定できる値は、IETF RFC 3066 で定義されています。  <br/> |
+|xml:lang  <br/> |ReplyBody コンテンツで使用される **言語を指定** します。 この属性は省略可能です。 この属性の可能な値は、IETF RFC 3066 によって定義されます。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[メッセージ (可用性)](message-availability.md) <br/> |不在 (OOF) 応答を含みます。  <br/> |
+|[Message (Availability)](message-availability.md) <br/> |アウトオブオフィス (OOF) の応答を含む。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[不在](outofoffice.md) <br/> |OOF 応答メッセージと、メールボックスの応答メッセージを送信するための時間を定義します。  <br/> |
+|[OutOfOffice](outofoffice.md) <br/> |メールボックスの応答メッセージを送信する OOF 応答メッセージと期間を定義します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -67,13 +67,13 @@ ms.locfileid: "44465304"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

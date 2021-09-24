@@ -1,23 +1,23 @@
 ---
-title: ユーザー (MailboxAssociationType)
+title: User (MailboxAssociationType)
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d6e2677b-2b60-4def-8566-015a50da8605
-description: User (MailboxAssociationType) 要素は、内部使用のみを目的としています。
-ms.openlocfilehash: 65bc95aa6645b2824bcb126d30e53bb5b7b102d9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: User (MailboxAssociationType) 要素は、内部での使用のみを目的とします。
+ms.openlocfilehash: 3a50e9927121fc9ddc010a47706587487634d708
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530226"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522432"
 ---
-# <a name="user-mailboxassociationtype"></a>ユーザー (MailboxAssociationType)
+# <a name="user-mailboxassociationtype"></a>User (MailboxAssociationType)
 
-**User (MailboxAssociationType)** 要素は、内部使用のみを目的としています。 
+User **(MailboxAssociationType)** 要素は、内部での使用のみを目的とします。 
 
 ## <a name="attributes-and-elements"></a>属性と要素
 

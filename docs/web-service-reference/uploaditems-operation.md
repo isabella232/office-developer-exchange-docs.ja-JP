@@ -5,32 +5,32 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UploadItems
 api_type:
 - schema
 ms.assetid: a88cbe99-7968-454d-a545-4f92c330909f
-description: UploadItems 操作は、アイテムのストリームを Exchange メールボックスにアップロードします。
-ms.openlocfilehash: 57e722c7775baa090736875077781cee869c3b01
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: UploadItems 操作は、アイテムのストリームをユーザーのメールボックスにExchangeします。
+ms.openlocfilehash: 333b72eb93395bb1fc0b97a90951ae68285794b3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468503"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522426"
 ---
 # <a name="uploaditems-operation"></a>UploadItems 操作
 
-**UploadItems**操作は、アイテムのストリームを Exchange メールボックスにアップロードします。 
+**UploadItems 操作は**、アイテムのストリームをユーザーのメールボックスExchangeします。 
   
 > [!IMPORTANT]
-> **UploadItems**操作は、Microsoft exchange Server 2010 Service Pack 1 (SP1) では、base64 でエンコードされたデータの最大値である25mb に制限されています。 この設定は、web.config ファイルで変更できます。 
+> **UploadItems** 操作は、MicrosoftExchange Server 2010 Service Pack 1 (SP1) で 25 MB の base64 エンコード データの最大インポート ペイロードに制限されています。 この設定は、ファイル内でweb.configできます。 
   
 ## <a name="uploaditems-request-example"></a>UploadItems 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の**UploadItems**要求の例は、2つのアイテムをメールボックスにアップロードする方法を示しています。 最初のアイテムは新しいアイテムです。 2番目のアイテムは、メールボックス内の既存のアイテムの更新バージョンです。 
+UploadItems 要求の次 **の例は** 、2 つのアイテムをメールボックスにアップロードする方法を示しています。 最初のアイテムは新しいアイテムです。 2 番目のアイテムは、メールボックス内の既存のアイテムの更新バージョンです。 
   
 ### <a name="code"></a>コード
 
@@ -80,9 +80,9 @@ ms.locfileid: "44468503"
 
 ### <a name="comments"></a>コメント
 
-読みやすくするために、識別子とアイテムデータが短縮されています。
+識別子とアイテム データは、読みやすさを維持するために短縮されています。
   
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 要求では、次の要素が使用されます。
   
@@ -90,7 +90,7 @@ ms.locfileid: "44468503"
     
 - [UploadItems](uploaditems.md)
     
-- [アイテム (NonEmptyArrayOfUploadItemsType)](items-nonemptyarrayofuploaditemstype.md)
+- [Items (NonEmptyArrayOfUploadItemsType)](items-nonemptyarrayofuploaditemstype.md)
     
 - [Item (UploadItemType)](item-uploaditemtype.md)
     
@@ -100,11 +100,11 @@ ms.locfileid: "44468503"
     
 - [ItemId](itemid.md)
     
-## <a name="successful-uploaditems-response-example"></a>Successful UploadItems response の例
+## <a name="successful-uploaditems-response-example"></a>UploadItems 応答の成功例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **UploadItems**要求に対する正常な応答を示しています。 
+次の例は、UploadItems 要求に対する正常 **な応答を示** しています。 
   
 ### <a name="code"></a>コード
 
@@ -143,9 +143,9 @@ ms.locfileid: "44468503"
 
 ### <a name="comments"></a>コメント
 
-読みやすくするために、アイテム識別子が短縮されています。
+アイテム識別子は、読みやすさを維持するために短縮されました。
   
-### <a name="response-elements"></a>Response 要素
+### <a name="response-elements"></a>応答要素
 
 応答では、次の要素が使用されます。
   
@@ -163,9 +163,9 @@ ms.locfileid: "44468503"
     
 ## <a name="uploaditems-error-response-example"></a>UploadItems エラー応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **UploadItems**要求に対する応答を示しています。これは、メールボックス内に見つからないアイテムを更新しようとしたために発生したエラーを含んでいます。 
+次の例は、メールボックスで見つからないアイテムを更新しようとして発生したエラーを含む **UploadItems** 要求に対する応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -224,7 +224,7 @@ ms.locfileid: "44468503"
 [ExportItems 操作](exportitems-operation.md)
 
 
-[Exchange での EWS 操作](ews-operations-in-exchange.md)
+[EWS 操作 (Exchange](ews-operations-in-exchange.md)
   
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -5,15 +5,15 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 70c324d5-2196-406d-a674-73323f8d8b92
 description: ManagerMailbox 要素には、連絡先のマネージャーのメールボックスを識別する SMTP 情報が含まれる。
-ms.openlocfilehash: c30a343ad7071e92c826925407f8447ae6baccae
-ms.sourcegitcommit: 63e48eaf2891a6db1a718b55cd69e3a0433c4a9c
+ms.openlocfilehash: 605ecfe40d3d2c2d43378cddda4cf5789098e3f0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "58851115"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524792"
 ---
 # <a name="managermailbox"></a>ManagerMailbox
 
@@ -46,7 +46,7 @@ ms.locfileid: "58851115"
 |:-----|:-----|
 |[Contact](contact.md) <br/> |ストア内の連絡先アイテムExchangeします。  <br/> |
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
@@ -59,7 +59,7 @@ ms.locfileid: "58851115"
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
 |検証ファイル  <br/> |Types.xsd  <br/> |
-|空の場合  <br/> |False  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

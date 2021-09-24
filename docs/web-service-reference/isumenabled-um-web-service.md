@@ -1,26 +1,26 @@
 ---
-title: IsUMEnabled (UM web サービス)
+title: IsUMEnabled (UM Web サービス)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsUMEnabled
 api_type:
 - schema
 ms.assetid: 33810bbd-837f-4a71-9ed9-cb4b8c52186d
-description: IsUMEnabled 要素は、メールボックスがユニファイドメッセージングに対して有効になっているかどうかを示します。
-ms.openlocfilehash: ea5bde677c62664acad8afd5c8142e96d82b7a74
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: IsUMEnabled 要素は、メールボックスがユニファイド メッセージングに対して有効になっているかどうかを示します。
+ms.openlocfilehash: 43632c28c5fb0c526dcf2ad936784953b00cc14a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458230"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524120"
 ---
-# <a name="isumenabled-um-web-service"></a>IsUMEnabled (UM web サービス)
+# <a name="isumenabled-um-web-service"></a>IsUMEnabled (UM Web サービス)
 
-**IsUMEnabled**要素は、メールボックスがユニファイドメッセージングに対して有効になっているかどうかを示します。 
+**IsUMEnabled 要素** は、メールボックスがユニファイド メッセージングに対して有効になっているかどうかを示します。 
   
 ```xml
 <IsUMEnabled/>
@@ -45,11 +45,11 @@ ms.locfileid: "44458230"
   
 ## <a name="text-value"></a>テキスト値
 
-この要素が含まれている場合は、ブール値を表すテキスト値が必要です。 値が**true**の場合は、メールボックスがユニファイドメッセージングに対して有効になっていることを示します。 値が**false**の場合は、メールボックスがユニファイドメッセージングに対して有効になっていないことを意味します。 
+この要素が含まれている場合は、ブール値を表すテキスト値が必要です。 true の **値は** 、メールボックスがユニファイド メッセージングに対して有効になっているかどうかを示します。 false の **値は** 、メールボックスがユニファイド メッセージングに対して有効になっていないを意味します。 
   
 ## <a name="remarks"></a>注釈
 
-メールボックスがユニファイドメッセージングに対して有効になっているかどうかを確認するには、 [IsUMEnabled 操作 (UM web サービス)](isumenabled-operation-um-web-service.md)を使用します。
+メールボックスがユニファイド メッセージングに対して有効になっているかどうかを確認するには [、IsUMEnabled 操作 (UM Web サービス) を使用します](isumenabled-operation-um-web-service.md)。
   
 ## <a name="element-information"></a>要素の情報
 
@@ -57,15 +57,15 @@ ms.locfileid: "44458230"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |スキーマ名  <br/> |メッセージ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[IsUMEnabled 操作 (UM web サービス)](isumenabled-operation-um-web-service.md)
+[IsUMEnabled 操作 (UM Web サービス)](isumenabled-operation-um-web-service.md)
 
 
-[Exchange 用のユニファイドメッセージング web サービスの XML 要素](unified-messaging-web-service-xml-elements-for-exchange.md)
+[ユニファイド メッセージング Web サービスの XML 要素 (Exchange](unified-messaging-web-service-xml-elements-for-exchange.md)
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a1fc7dff-a303-4809-b7f4-9672f86c183c
-description: ProgrammaticAccessAllowed 要素は、権限管理データのプログラムによるアクセスを有効にするかどうかを指定します。
-ms.openlocfilehash: 8a5cf4e57a97807e5940a0402768d7123b9912d2
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ProgrammaticAccessAllowed 要素は、権限管理データに対してプログラムによるアクセスを有効にするかどうかを指定します。
+ms.openlocfilehash: 3e7f16a148fe1d81bbf942c098591f108529d456
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465640"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523847"
 ---
 # <a name="programmaticaccessallowed"></a>ProgrammaticAccessAllowed
 
-**ProgrammaticAccessAllowed**要素は、権限管理データのプログラムによるアクセスを有効にするかどうかを指定します。 
+**ProgrammaticAccessAllowed 要素** は、権限管理データに対してプログラムによるアクセスを有効にするかどうかを指定します。 
   
 ```XML
 <ProgrammaticAccessAllowed> true | false </ProgrammaticAccessAllowed>
@@ -42,7 +42,7 @@ ms.locfileid: "44465640"
   
 ## <a name="text-value"></a>テキスト値
 
-**ProgrammaticAccessAllowed**要素のテキスト値が**true**の場合は、データがプログラムによってアクセス可能であることを示します。 値が**false**の場合は、データがプログラムでアクセスできないことを示します。 
+**ProgrammaticAccessAllowed** 要素のテキスト値 **true** は、データがプログラムでアクセス可能な状態を示します。 false の **値は** 、データがプログラムでアクセスできない状態を示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44465640"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

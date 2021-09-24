@@ -1,34 +1,34 @@
 ---
-title: CallId (UM web サービス)
+title: CallId (UM Web サービス)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CallId
 api_type:
 - schema
 ms.assetid: 2e044109-8bf3-488c-a654-459ac62fa1e7
-description: CallId 要素には、GetCallInfo (UM web サービス) 要求または Disconnect (UM web サービス) 要求の呼び出しの識別子を表す値が含まれています。
-ms.openlocfilehash: 5d5f596d4a98cbfb4b53be04278dae2305fc10c3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: CallId 要素には、GetCallInfo (UM Web サービス) 要求または Disconnect (UM Web サービス) 要求の呼び出しの識別子を表す値が含まれる。
+ms.openlocfilehash: c19f1061d81bf7683fd2c84fb1c6968826046be6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529456"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522033"
 ---
-# <a name="callid-um-web-service"></a>CallId (UM web サービス)
+# <a name="callid-um-web-service"></a>CallId (UM Web サービス)
 
-**Callid**要素には、 [Getcallinfo (um web サービス)](getcallinfo-um-web-service.md)要求または[Disconnect (um web サービス)](disconnect-um-web-service.md)要求の呼び出しの識別子を表す値が含まれています。 
+**CallId 要素には**[、GetCallInfo (UM Web サービス)](getcallinfo-um-web-service.md)要求または Disconnect [(UM Web サービス)](disconnect-um-web-service.md)要求の呼び出しの識別子を表す値が含まれる。 
   
-[GetCallInfo (UM web サービス)](getcallinfo-um-web-service.md)
+[GetCallInfo (UM Web サービス)](getcallinfo-um-web-service.md)
   
-[CallId (UM web サービス)](callid-um-web-service.md)
+[CallId (UM Web サービス)](callid-um-web-service.md)
   
-[Disconnect (UM web サービス)](disconnect-um-web-service.md)
+[切断 (UM Web サービス)](disconnect-um-web-service.md)
   
-[CallId (UM web サービス)](callid-um-web-service.md)
+[CallId (UM Web サービス)](callid-um-web-service.md)
   
 ```xml
 <CallId/>
@@ -51,8 +51,8 @@ ms.locfileid: "44529456"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetCallInfo (UM web サービス)](getcallinfo-um-web-service.md) <br/> |呼び出しに関する情報を取得するための要求を定義します。  <br/> |
-|[Disconnect (UM web サービス)](disconnect-um-web-service.md) <br/> |呼び出しを切断する要求を定義します。  <br/> |
+|[GetCallInfo (UM Web サービス)](getcallinfo-um-web-service.md) <br/> |呼び出しに関する情報を取得する要求を定義します。  <br/> |
+|[切断 (UM Web サービス)](disconnect-um-web-service.md) <br/> |呼び出しを切断する要求を定義します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -60,7 +60,7 @@ ms.locfileid: "44529456"
   
 ## <a name="remarks"></a>注釈
 
-最初の呼び出しを開始するには、 [Playonphone 操作 (um web サービス)](playonphone-operation-um-web-service.md)または[Playonphone 機の案内応答操作 (um web サービス)](playonphonegreeting-operation-um-web-service.md)を使用します。 [PlayOnPhoneResponse (um web サービス)](playonphoneresponse-um-web-service.md)要素または[PlayOnPhoneGreetingResponse (um web サービス)](playonphonegreetingresponse-um-web-service.md)要素で、 **callid**要素のテキスト値として返されるテキスト値を使用します。 
+通話を開始するには [、PlayOnPhone 操作 (UM Web サービス)](playonphone-operation-um-web-service.md) または [PlayOnPhoneGreeting 操作 (UM Web サービス) を使用します](playonphonegreeting-operation-um-web-service.md)。 **CallId** 要素のテキスト値には [、PlayOnPhoneResponse (UM Web サービス)](playonphoneresponse-um-web-service.md)または [PlayOnPhoneGreetingResponse (UM Web サービス)](playonphonegreetingresponse-um-web-service.md)要素で返されるテキスト値を使用します。 
   
 ## <a name="element-information"></a>要素の情報
 
@@ -68,18 +68,18 @@ ms.locfileid: "44529456"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |スキーマ名  <br/> |メッセージ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[GetCallInfo 操作 (UM web サービス)](getcallinfo-operation-um-web-service.md)
+[GetCallInfo 操作 (UM Web サービス)](getcallinfo-operation-um-web-service.md)
   
-[Disconnect 操作 (UM web サービス)](disconnect-operation-um-web-service.md)
+[切断操作 (UM Web サービス)](disconnect-operation-um-web-service.md)
   
-[PlayOnPhone 操作 (UM web サービス)](playonphone-operation-um-web-service.md)
+[PlayOnPhone 操作 (UM Web サービス)](playonphone-operation-um-web-service.md)
   
-[Playon電話案内応答操作 (UM web サービス)](playonphonegreeting-operation-um-web-service.md)
+[PlayOnPhoneGreeting 操作 (UM Web サービス)](playonphonegreeting-operation-um-web-service.md)
 

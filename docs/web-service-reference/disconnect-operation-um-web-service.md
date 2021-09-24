@@ -1,32 +1,32 @@
 ---
-title: Disconnect 操作 (UM web サービス)
+title: 切断操作 (UM Web サービス)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Disconnect
 api_type:
 - schema
 ms.assetid: a987000b-d6e6-49d7-944c-e9c278d0236f
-description: 切断操作は、指定した CallId (UM web サービス) によって識別される呼び出しを終了します。
-ms.openlocfilehash: a1268f9ea3d879f472e019bf1847fc13d65d1819
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: 切断操作は、指定された CallId (UM Web サービス) によって識別される呼び出しを終了します。
+ms.openlocfilehash: 42e069233fbfc255d43983571c0bb28475a1fe90
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529071"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522013"
 ---
-# <a name="disconnect-operation-um-web-service"></a>Disconnect 操作 (UM web サービス)
+# <a name="disconnect-operation-um-web-service"></a>切断操作 (UM Web サービス)
 
-切断操作は、指定した[Callid (UM web サービス)](callid-um-web-service.md)によって識別される呼び出しを終了します。
+切断操作は、指定された [CallId (UM Web サービス)](callid-um-web-service.md)で識別される呼び出しを終了します。
   
 ## <a name="disconnect-request-example"></a>切断要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の切断要求の例は、呼び出しを切断する要求を形成する方法を示しています。
+切断要求の次の例は、呼び出しを切断する要求を形成する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -41,11 +41,11 @@ ms.locfileid: "44529071"
 </soap:Envelope>
 ```
 
-## <a name="successful-disconnect-response-example"></a>成功した切断応答の例
+## <a name="successful-disconnect-response-example"></a>正常な切断応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の切断応答の例は、切断要求に対する応答を示しています。
+切断応答の次の例は、切断要求に対する応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -60,7 +60,7 @@ ms.locfileid: "44529071"
 
 ## <a name="see-also"></a>関連項目
 
-- [Disconnect (UM web サービス)](disconnect-um-web-service.md) 
-- [[切断] 応答 (UM web サービス)](disconnectresponse-um-web-service.md) 
-- [CallId (UM web サービス)](callid-um-web-service.md)
+- [切断 (UM Web サービス)](disconnect-um-web-service.md) 
+- [DisconnectResponse (UM Web サービス)](disconnectresponse-um-web-service.md) 
+- [CallId (UM Web サービス)](callid-um-web-service.md)
 

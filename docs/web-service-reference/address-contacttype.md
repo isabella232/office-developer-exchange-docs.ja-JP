@@ -5,25 +5,25 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c39f37bf-5cf5-47a7-8a2a-337b5e68f94f
 description: Address 要素は、連絡先のアドレスを指定します。
-ms.openlocfilehash: ffb13c8fed28dc1baee5002dc11f7acd7d4c3db5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 187a2f58b521cdeaba7c0703f33d71a9f8081756
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464911"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525396"
 ---
 # <a name="address-contacttype"></a>Address (ContactType)
 
-**Address**要素は、連絡先のアドレスを指定します。 
+**Address 要素** は、連絡先のアドレスを指定します。 
   
 ```XML
 <Address></Address>
 ```
 
- **xs: 文字列**
+ **xs:string**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -40,11 +40,11 @@ ms.locfileid: "44464911"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[アドレス (ArrayOfAddressesType)](addresses-arrayofaddressestype.md) <br/> |**Address**要素の配列を指定します。  <br/> |
+|[Addresses (ArrayOfAddressesType)](addresses-arrayofaddressestype.md) <br/> |Address 要素の配列 **を指定** します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**Address**要素のテキスト値は、連絡先の住所です。 
+Address 要素のテキスト **値** は、連絡先の郵送先住所です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -58,10 +58,10 @@ ms.locfileid: "44464911"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

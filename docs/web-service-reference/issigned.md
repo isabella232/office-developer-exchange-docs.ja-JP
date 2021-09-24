@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsSigned
 api_type:
 - schema
 ms.assetid: a4f90fe5-2834-4621-9aa3-b561f74d4674
-description: IsSigned 要素は、条件または例外を適用するために、受信メッセージが署名されている必要があるかどうかを示します。
-ms.openlocfilehash: fe8551d01e6f9e813da8936f15b0b7ba1d4ce56c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: IsSigned 要素は、条件または例外を適用するために受信メッセージに署名する必要があるかどうかを示します。
+ms.openlocfilehash: 556b5a723a3201721651000264274ebd0cd001e1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455528"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524092"
 ---
 # <a name="issigned"></a>IsSigned
 
-**Issigned**要素は、条件または例外を適用するために、受信メッセージが署名されている必要があるかどうかを示します。 
+**IsSigned 要素は**、条件または例外を適用するために受信メッセージに署名する必要があるかどうかを示します。 
   
 ```XML
 <IsSigned>true | false</IsSigned>
@@ -44,12 +44,12 @@ ms.locfileid: "44455528"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[条件](conditions.md) <br/> |ルールのルールの処理を開始するときに実行される条件を表します。  <br/> |
-|[例外](exceptions.md) <br/> |受信トレイルールに対して使用可能なルールの例外条件をすべて表す例外を表します。  <br/> |
+|[条件](conditions.md) <br/> |満たされると、ルールのルール アクションをトリガーする条件を表します。  <br/> |
+|[例外](exceptions.md) <br/> |受信トレイ ルールで使用可能なすべてのルール例外条件を表す例外を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値が**true の場合**は、条件または例外を適用するために、メッセージを署名する必要があることを示します。 テキスト値が**false**の場合は、条件または例外を適用するためにメッセージを署名する必要がないことを示します。 
+true のテキスト **値は** 、条件または例外を適用するためにメッセージに署名する必要があります。 false のテキスト **値は** 、適用する条件または例外に対してメッセージに署名する必要が存在しないかどうかを示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -60,13 +60,13 @@ ms.locfileid: "44455528"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

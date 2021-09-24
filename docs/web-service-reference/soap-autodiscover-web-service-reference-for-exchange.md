@@ -4,32 +4,32 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 61c21ea9-7fea-4f56-8ada-bf80e1e6b074
-description: Exchange の SOAP 自動検出サービスに関する参照情報を検索します。
-ms.openlocfilehash: bfca8e8e260a6262d12542bd6834894a2375453f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SOAP 自動検出サービスの参照情報は、Exchange。
+ms.openlocfilehash: 488862f5797abfd71d33c916fa96970ab300a2c0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468426"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521355"
 ---
 # <a name="soap-autodiscover-web-service-reference-for-exchange"></a>Exchange 用 SOAP 自動検出 Web サービス リファレンス
 
-Exchange の SOAP 自動検出サービスに関する参照情報を検索します。
+SOAP 自動検出サービスの参照情報は、Exchange。
   
-自動検出サービスは、アプリケーションが Exchange サーバーへの接続を作成するために使用する構成情報を提供します。 SOAP 自動検出サービスを使用して、クライアントアプリケーションと Exchange サーバーの間でメッセージを送信し、アプリケーションが Exchange への接続に使用する設定を見つけることができます。 POX 自動検出サービスとは異なり、SOAP 自動検出サービスは、多くのユーザーの設定についての自動検出要求をバッチ処理することを許可し、応答で返される設定をより細かく制御します。 
+自動検出サービスは、アプリケーションがサーバーサーバーへの接続を作成するために使用する構成情報Exchangeします。 SOAP 自動検出サービスを使用して、クライアント アプリケーションと Exchange サーバーの間でメッセージを送信して、アプリケーションが Exchange に接続するために使用する設定を特定できます。 POX 自動検出サービスとは異なり、SOAP 自動検出サービスでは、多くのユーザーの設定に対するバッチ処理された自動検出要求と、応答で返される設定の詳細な制御が可能です。 
   
 > [!NOTE]
-> Exchange Server 2010 以降のバージョンの Exchange を対象とするクライアントの場合、SOAP 自動検出サービスを使用することをお勧めします (POX 自動検出サービスではありません)。 Exchange 2007 を対象とするクライアントは、POX 自動検出サービスを使用する必要があります。 .NET Framework を使用するクライアントは、堅牢で十分にテストされた SOAP 自動検出クライアントを含んでいるため、EWS マネージ API を使用することをお勧めします。 EWS マネージ API の詳細については、「 [Ews マネージ api クライアントアプリケーションの概要](https://msdn.microsoft.com/library/c2267733-6f4f-49e5-9614-1e4a24c3af1a%28Office.15%29.aspx)」を参照してください。 
+> Exchange Server 2010 から Exchange のバージョンを対象とするクライアントの場合は、(POX 自動検出サービスではなく) SOAP 自動検出サービスを使用することをお勧めします。 2007 Exchangeクライアントは、POX 自動検出サービスを使用する必要があります。 堅牢で十分にテストされた SOAP 自動検出クライアントが.NET Framework EWS マネージ API を使用するクライアントをお勧めします。 EWS マネージ API の詳細については [、「EWS](https://msdn.microsoft.com/library/c2267733-6f4f-49e5-9614-1e4a24c3af1a%28Office.15%29.aspx)マネージ API クライアント アプリケーションの概要」を参照してください。 
   
-このセクションでは、SOAP 自動検出要求のリダイレクト時にクライアントとサーバー間で送信される XML 要素、および応答で返されるユーザー設定について説明します。 XML 要素リファレンスには、要素が表す内容の概要と、要素を含む可能性のある要素階層の説明が含まれています。 
+このセクションでは、SOAP 自動検出要求リダイレクト中にクライアントとサーバーの間で送信される XML 要素と、応答で返されるユーザー設定について説明します。 XML 要素参照には、要素が表す内容の概要と、要素を含む潜在的な要素階層の説明が含まれます。 
   
-このセクションの記事では、クライアントとサーバー間で送信される XML インスタンスについて説明します。 これらの要素を記述するスキーマは、SOAP 自動検出サービスをホストするサーバーの仮想ディレクトリにあります。
+このセクションの記事では、クライアントとサーバーの間で送信される XML インスタンスについて説明します。 これらの要素を記述するスキーマは、SOAP 自動検出サービスをホストするサーバーの仮想ディレクトリにあります。
   
-このセクションの WSDL 操作のトピックでは、操作の内容と操作の要求と応答の例について概要を説明します。 提供されているバージョン情報を使用して、使用する機能が、実行している製品バージョンで利用できるかどうかを判断できます。 また、操作のトピックの例では、サーバーとの間で送受信される SOAP メッセージに含まれる XML の構造を理解するのに役立ちます。
+このセクションの WSDL 操作のトピックでは、操作の動作の概要と、操作の要求と応答の例を示します。 提供されたバージョン情報を使用して、使用する機能が実行中の製品バージョンで使用できるかどうかを判断できます。 操作のトピックの例は、サーバーとの間で送信される SOAP メッセージに含まれる XML の構造を理解するのにも役立ちます。
   
 このセクションでは、SOAP 自動検出サービスを使用して自動検出構成情報を取得するために使用されるメッセージの例と説明も示します。 
   
@@ -42,9 +42,9 @@ Exchange の SOAP 自動検出サービスに関する参照情報を検索し�
     
 - [GetUserSettings 操作 (SOAP)](getusersettings-operation-soap.md)
     
-- [Get組織の Relationshipsettings 操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)
+- [GetOrganizationRelationshipSettings 操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)
     
-- [Exchange 2013 の SOAP 自動検出 XML 要素](soap-autodiscover-xml-elements-for-exchange-2013.md)
+- [SOAP 自動検出 XML 要素 (2013 Exchange)](soap-autodiscover-xml-elements-for-exchange-2013.md)
     
 ## <a name="see-also"></a>関連項目
 

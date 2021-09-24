@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: efeb5a93-c77f-44f1-b9af-8759acd2c8b5
-description: PageItemReference 要素は、ページアイテムの参照を指定します。
-ms.openlocfilehash: ff53f82f6346e24f7d73373330ce4f5abb5ec475
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: PageItemReference 要素は、ページ アイテムの参照を指定します。
+ms.openlocfilehash: 131b38ca10c4a522ac578d52cd36a716a689b1d9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465647"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524652"
 ---
 # <a name="pageitemreference"></a>PageItemReference
 
-**Pageitemreference**要素は、ページアイテムの参照を指定します。 
+**PageItemReference 要素** は、ページ アイテムの参照を指定します。 
   
 ```XML
 <PageItemReference></PageItemReference>
@@ -42,7 +42,7 @@ ms.locfileid: "44465647"
   
 ## <a name="text-value"></a>テキスト値
 
-**Pageitemreference**要素のテキスト値は、ページアイテムの参照です。 
+**PageItemReference** 要素のテキスト値は、ページ アイテムの参照です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44465647"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

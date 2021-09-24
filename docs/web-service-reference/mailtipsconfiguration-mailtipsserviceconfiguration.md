@@ -1,27 +1,27 @@
 ---
-title: Mailヒント構成 (MailTipsServiceConfiguration)
+title: MailTipsConfiguration (MailTipsServiceConfiguration)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MailTipsConfiguration
 api_type:
 - schema
 ms.assetid: 9a34515e-815b-4c61-b118-d5f66b80238f
-description: Mailヒント構成要素には、メールヒントサービスのサービス構成情報が含まれています。
-ms.openlocfilehash: 9128ee99545066899c3b27b624f10a9f1bd36c9d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MailTipsConfiguration 要素には、メール ヒント サービスのサービス構成情報が含まれている。
+ms.openlocfilehash: eb86291572f6854710d01badcee2db24406844c6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467789"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524036"
 ---
-# <a name="mailtipsconfiguration-mailtipsserviceconfiguration"></a>Mailヒント構成 (MailTipsServiceConfiguration)
+# <a name="mailtipsconfiguration-mailtipsserviceconfiguration"></a>MailTipsConfiguration (MailTipsServiceConfiguration)
 
-**Mailヒント構成**要素には、メールヒントサービスのサービス構成情報が含まれています。 
+**MailTipsConfiguration 要素には**、メール ヒント サービスのサービス構成情報が含まれている。 
   
 ```XML
 <MailTipsConfiguration>
@@ -47,18 +47,18 @@ ms.locfileid: "44467789"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Mailヒント有効](mailtipsenabled.md) <br/> |メールヒントサービスが利用可能かどうかを示します。 この要素は必須です。  <br/> |
-|[Max受信者 Spergetmailヒント要求](maxrecipientspergetmailtipsrequest.md) <br/> |[Getmailtips ヒント操作](getmailtips-operation.md)に渡すことができる受信者の最大数を示します。 この要素は必須です。  <br/> |
-|[MaxMessageSize](maxmessagesize.md) <br/> |受信者が受け付けることができる最大メッセージサイズを表します。 この要素は必須です。  <br/> |
-|[LargeAudienceThreshold](largeaudiencethreshold.md) <br/> |クライアントの大規模な対象ユーザーのしきい値を表します。 この要素は必須です。  <br/> |
-|[Showexternal受信者カウント](showexternalrecipientcount.md) <br/> |[Getmailtips ヒント操作](getmailtips-operation.md)のコンシューマーが、メッセージの宛先である外部受信者の数を示すメールヒントを表示する必要があるかどうかを示します。 この要素は必須です。  <br/> |
-|[InternalDomains (SmtpDomainList)](internaldomains-smtpdomainlist.md) <br/> |組織の内部 SMTP ドメインのリストを識別します。 この要素は必須です。  <br/> |
+|[MailTipsEnabled](mailtipsenabled.md) <br/> |メール ヒント サービスが使用可能かどうかを示します。 この要素は必須です。  <br/> |
+|[MaxRecipientsPerGetMailTipsRequest](maxrecipientspergetmailtipsrequest.md) <br/> |[GetMailTips](getmailtips-operation.md)操作に渡す受信者の最大数を示します。 この要素は必須です。  <br/> |
+|[MaxMessageSize](maxmessagesize.md) <br/> |受信者が受け入れ可能な最大メッセージ サイズを表します。 この要素は必須です。  <br/> |
+|[LargeAudienceThreshold](largeaudiencethreshold.md) <br/> |クライアントの大きな対象ユーザーのしきい値を表します。 この要素は必須です。  <br/> |
+|[ShowExternalRecipientCount](showexternalrecipientcount.md) <br/> |[GetMailTips](getmailtips-operation.md)操作のコンシューマーが、メッセージの宛先である外部受信者の数を示すメール ヒントを表示する必要があるかどうかを示します。 この要素は必須です。  <br/> |
+|[InternalDomains (SmtpDomainList)](internaldomains-smtpdomainlist.md) <br/> |組織の内部 SMTP ドメインの一覧を識別します。 この要素は必須です。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ServiceConfigurationResponseMessageType](serviceconfigurationresponsemessagetype.md) <br/> |サービス構成の設定が含まれます。  <br/> |
+|[ServiceConfigurationResponseMessageType](serviceconfigurationresponsemessagetype.md) <br/> |サービス構成設定が含まれる。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -73,13 +73,13 @@ ms.locfileid: "44467789"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

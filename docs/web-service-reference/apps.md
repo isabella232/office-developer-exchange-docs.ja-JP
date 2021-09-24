@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f6f0a2ca-22dd-4789-9eed-f0c1ec9036c4
-description: Apps 要素には、メールボックスにインストールされたアプリのすべての XML マニフェストファイルに関する情報が含まれています。
-ms.openlocfilehash: b2d6f13241f68cbed449a9f9821f9a6ec6ff687a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Apps 要素には、メールボックスにインストールされているアプリのすべての XML マニフェスト ファイルに関する情報が含まれています。
+ms.openlocfilehash: 8a8b6c459a014517936d1c2753c4ce125892dacb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527447"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525308"
 ---
 # <a name="apps"></a>アプリ
 
-**Apps**要素には、メールボックスにインストールされたアプリのすべての XML マニフェストファイルに関する情報が含まれています。 
+**Apps 要素** には、メールボックスにインストールされているアプリのすべての XML マニフェスト ファイルに関する情報が含まれています。 
   
 ```XML
 <Apps>
@@ -35,7 +35,7 @@ ms.locfileid: "44527447"
   
 ### <a name="child-elements"></a>子要素
 
-[App](app.md)
+[アプリ](app.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -52,13 +52,13 @@ ms.locfileid: "44527447"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
 |検証ファイル  <br/> |該当なし  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [App](app.md)
+- [アプリ](app.md)
 - [GetAppManifestsResponse](getappmanifestsresponse.md)
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

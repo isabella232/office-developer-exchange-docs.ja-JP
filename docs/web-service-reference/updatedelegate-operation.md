@@ -5,40 +5,40 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UpdateDelegate
 api_type:
 - schema
 ms.assetid: 03f618ac-ad1a-4772-9b81-c5bb0f12d6ab
-description: UpdateDelegate 操作は、プリンシパルのメールボックスの代理アクセス許可を更新します。
-ms.openlocfilehash: b7cf5325d925f8d6588115a8657a2077e940f9d2
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: UpdateDelegate 操作は、プリンシパルのメールボックスに対する委任アクセス許可を更新します。
+ms.openlocfilehash: 0adf17e45490d9b3e8d498b7e95094497c451f80
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468559"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522489"
 ---
 # <a name="updatedelegate-operation"></a>UpdateDelegate 操作
 
-**Updatedelegate**操作は、プリンシパルのメールボックスの代理アクセス許可を更新します。 
+**UpdateDelegate 操作は**、プリンシパルのメールボックスに対する委任アクセス許可を更新します。 
   
 ## <a name="soap-headers"></a>SOAP ヘッダー
 
-**Updatedelegate**操作では、次の表に記載されている SOAP ヘッダーを使用できます。 
+**UpdateDelegate 操作** では、次の表に示す SOAP ヘッダーを使用できます。 
   
-|**Header**|**要素**|**説明**|
+|**Header**|**Element**|**説明**|
 |:-----|:-----|:-----|
-|偽装  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。  <br/> |
-|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |メールボックスへのアクセスに使用する RFC3066 カルチャを指定します。  <br/> |
-|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。  <br/> |
+|偽装  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装しているユーザーを識別します。  <br/> |
+|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |メールボックスへのアクセスに使用する RFC3066 カルチャを識別します。  <br/> |
+|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマ バージョンを識別します。  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。  <br/> |
    
 ## <a name="updatedelegate-request-example"></a>UpdateDelegate 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の**updatedelegate**要求の例は、user1 アカウントの代理アクセス許可を更新する方法を示しています。 User2 には、タスクフォルダーの [なし] アクセス許可レベルが与えられており、プライベートアイテムを表示するためのアクセス許可が付与されています。 User3 には、ジャーナルフォルダーに対するレビュー担当者のアクセス許可が付与されます。 会議出席依頼は代理人に送信され、要求に関する情報は User1 に送信されます。 
+**UpdateDelegate 要求の次の例は、user1** のアカウントに対する代理人のアクセス許可を更新する方法を示しています。 User2 には、タスク フォルダーの None アクセス許可レベルが付与され、プライベート アイテムを表示するためのアクセス許可が付与されます。 User3 には、Journal フォルダーに対するレビューアーのアクセス許可が付与されます。 会議出席依頼は代理人に送信され、要求に関する情報は User1 に送信されます。 
   
 ### <a name="code"></a>コード
 
@@ -82,13 +82,13 @@ ms.locfileid: "44468559"
 
 ### <a name="comments"></a>コメント
 
-[Updatedelegate](updatedelegate.md)要求では、更新が代理人に適用される必要はありません。 クライアントは、 **DeliverMeetingMessage**設定のみを変更できます。 
+[UpdateDelegate 要求](updatedelegate.md)では、代理人に更新プログラムを適用する必要がなされません。 クライアントは **DeliverMeetingMessage 設定のみを変更** できます。 
   
 ## <a name="updatedelegate-response-example"></a>UpdateDelegate 応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **Updatedelegate**操作に対する正常な応答を示しています。 
+次の例は **、UpdateDelegate** 操作に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -143,9 +143,9 @@ ms.locfileid: "44468559"
 
 ## <a name="updatedelegate-error-response-example"></a>UpdateDelegate エラー応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **Updatedelegate**要求に対するエラー応答を示しています。 代理人がプリンシパルの委任リストに存在しないため、エラーが生成されました。 
+次の例は **、UpdateDelegate 要求に対するエラー応答を示** しています。 デリゲートがプリンシパルの代理人リストに存在しないので、エラーが生成された。 
   
 ### <a name="code"></a>コード
 
@@ -183,5 +183,5 @@ ms.locfileid: "44468559"
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -1,23 +1,23 @@
 ---
-title: SpouseNames 場合
+title: SpouseNames
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e18f46fe-ab83-4df1-b1a5-9c8e73173ccf
-description: SpouseNames 要素は、配偶者名またはパートナー名の配列、および関連するペルソナのソース attributions の識別子を指定します。
-ms.openlocfilehash: 9b7960e7aee8652d16561f8dd2eb3d891fb8d694
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SpouseNames 要素は、配偶者またはパートナー名の配列と、関連付けられたペルサのソース属性の識別子を指定します。
+ms.openlocfilehash: 6856674db8ef1e636631c2b381f5b21bbc857495
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467628"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521306"
 ---
-# <a name="spousenames"></a>SpouseNames 場合
+# <a name="spousenames"></a>SpouseNames
 
-**Spousenames**要素は、配偶者名またはパートナー名の配列、および関連するペルソナのソース attributions の識別子を指定します。 
+**SpouseNames 要素** は、配偶者またはパートナー名の配列と、関連付けられたペルサのソース属性の識別子を指定します。 
   
 ```XML
 <SpouseNames>
@@ -53,8 +53,8 @@ ms.locfileid: "44467628"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

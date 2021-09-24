@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsNDR
 api_type:
 - schema
 ms.assetid: 194f5836-7793-463a-a090-4386d1c2487a
-description: IsNDR 要素は、条件または例外を適用するために、受信メッセージが配信不能レポート (Ndr) である必要があるかどうかを示します。
-ms.openlocfilehash: 3476331ccece347686b7f98edf49df5d48b8562e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: IsNDR 要素は、条件または例外を適用するために、受信メッセージが配信不可レポート (NDR) である必要があるかどうかを示します。
+ms.openlocfilehash: 783cc003d0d3bb1cc233f617839ab292fb2916bb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458160"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524148"
 ---
 # <a name="isndr"></a>IsNDR
 
-**Isndr**要素は、条件または例外を適用するために、受信メッセージが配信不能レポート (ndr) である必要があるかどうかを示します。 
+**IsNDR 要素は**、条件または例外を適用するために、受信メッセージが配信不可レポート (NDR) である必要があるかどうかを示します。 
   
 ```XML
 <IsNDR>true | false</IsNDR>
@@ -44,12 +44,12 @@ ms.locfileid: "44458160"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[条件](conditions.md) <br/> |ルールのルールの処理を開始するときに実行される条件を表します。  <br/> |
-|[例外](exceptions.md) <br/> |受信トレイルールに対して使用可能なすべてのルールの例外条件を表します。  <br/> |
+|[条件](conditions.md) <br/> |満たされると、ルールのルール アクションをトリガーする条件を表します。  <br/> |
+|[例外](exceptions.md) <br/> |受信トレイ ルールで使用可能なすべてのルール例外条件を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値が**true**の場合は、条件または例外を適用するためにメッセージが NDR である必要があることを示します。 値が**false**の場合、条件または例外を適用するために、メッセージが NDR ではない必要があることを示します。 
+true のテキスト **値は** 、条件または例外を適用するためにメッセージが NDR である必要があります。 false の **値は** 、条件または例外を適用するためにメッセージを NDR にしなける必要があります。 
   
 ## <a name="remarks"></a>注釈
 
@@ -60,13 +60,13 @@ ms.locfileid: "44458160"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

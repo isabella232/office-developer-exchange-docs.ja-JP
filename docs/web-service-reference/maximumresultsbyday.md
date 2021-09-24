@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MaximumResultsByDay
 api_type:
 - schema
 ms.assetid: d581a12a-2b8e-4960-ae14-c8c4aa0b1849
-description: MaximumResultsByDay 要素は、応答で返される1日あたりの推奨会議時間数を指定します。
-ms.openlocfilehash: 46d5c35a83034b8b968901fbc4ee57d046b6c164
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MaximumResultsByDay 要素は、応答で返される 1 日あたりの推奨される会議時間の数を指定します。
+ms.openlocfilehash: 6a355843e3c4a6b5ce20f812b4eb9bcc7a3283bc
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468419"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523935"
 ---
 # <a name="maximumresultsbyday"></a>MaximumResultsByDay
 
-**Maximumresultsbyday**要素は、応答で返される1日あたりの推奨会議時間数を指定します。 
+**MaximumResultsByDay** 要素は、応答で返される 1 日あたりの推奨される会議時間の数を指定します。 
   
 [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
   
@@ -51,30 +51,30 @@ ms.locfileid: "44468419"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[SuggestionsViewOptions](suggestionsviewoptions.md) <br/> |会議提案情報を取得するためのオプションが含まれています。  <br/> この要素の XPath を次に示します。  <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions` <br/> |
+|[SuggestionsViewOptions](suggestionsviewoptions.md) <br/> |会議の提案情報を取得するためのオプションが含まれる。  <br/> 次に、この要素の XPath を示します。  <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions` <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は必須です。 テキスト値は、整数を表します。
+テキスト値は必須です。 テキスト値は整数を表します。
   
 ## <a name="remarks"></a>注釈
 
-この要素は、 [SuggestionsViewOptions](suggestionsviewoptions.md)要素を使用する場合に必要です。 
+[SuggestionsViewOptions 要素を使用する場合は、この要素が](suggestionsviewoptions.md)必要です。 
   
 > [!NOTE]
-> この要素を記述するスキーマは、Microsoft® Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。 
+> この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft® Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。 
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [GetUserAvailability 操作](getuseravailability-operation.md)
-- [ユーザーの空き時間情報の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [ユーザーの可用性の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

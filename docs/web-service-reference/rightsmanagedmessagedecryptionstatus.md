@@ -5,25 +5,25 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 17c7af54-aa44-4065-86ce-ac9f2edbf464
-description: RightsManagedMessageDecryptionStatus 要素は、アイテムの rights management の解読状態を指定します。
-ms.openlocfilehash: 2d10a78b18b977518ee6c8301da40d2bd5a58900
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: RightsManagedMessageDecryptionStatus 要素は、アイテムの権限管理復号化状態を指定します。
+ms.openlocfilehash: a662f86bd0fa22ee2f79eee6f4dfc9d80ba213b1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457425"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524540"
 ---
 # <a name="rightsmanagedmessagedecryptionstatus"></a>RightsManagedMessageDecryptionStatus
 
-**RightsManagedMessageDecryptionStatus**要素は、アイテムの rights management の解読状態を指定します。 
+**RightsManagedMessageDecryptionStatus** 要素は、アイテムの権限管理復号化状態を指定します。 
   
 ```XML
 <RightsManagedMessageDecryptionStatus></RightsManagedMessageDecryptionStatus>
 ```
 
- **以外**
+ **integer**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -42,7 +42,7 @@ ms.locfileid: "44457425"
   
 ## <a name="text-value"></a>テキスト値
 
-**RightsManagedMessageDecryptionStatus**要素のテキスト値は、保護された権限のあるアイテムの復号化状態です。 
+**RightsManagedMessageDecryptionStatus** 要素のテキスト値は、権限で保護されたアイテムの復号化状態です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44457425"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

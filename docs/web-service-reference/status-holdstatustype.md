@@ -1,23 +1,23 @@
 ---
-title: 状態 (HoldStatusType)
+title: Status (HoldStatusType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fee3f1f9-e868-49fa-a554-7ff096964718
 description: Status 要素は、メールボックスの保留状態を指定します。
-ms.openlocfilehash: cecfdfaf67b00b6f8cf02188e7a4df7062a732e4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: a055dde61ae52c266f2349036c881d2b00557171
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459988"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521236"
 ---
-# <a name="status-holdstatustype"></a>状態 (HoldStatusType)
+# <a name="status-holdstatustype"></a>Status (HoldStatusType)
 
-**Status**要素は、メールボックスの保留状態を指定します。 
+**Status 要素** は、メールボックスの保留状態を指定します。 
   
 ```XML
 <Status> NotOnHold | Pending | OnHold | PartialHold | Failed </Status>
@@ -42,17 +42,17 @@ ms.locfileid: "44459988"
   
 ## <a name="text-value"></a>テキスト値
 
-**Status**要素のテキスト値は、メールボックスの保持状態です。 **Status**要素には、次のリストの値を指定できます。 
+Status 要素のテキスト **値** は、メールボックスの保留状態です。 **Status 要素には**、次の一覧の値を指定できます。 
   
-> NotOnHold-メールボックスは保持されていません。
+> NotOnHold - メールボックスが保留ではありません。
     
-> 保留中-メールボックスは保留中または保留中のどちらかが保留中です。 
+> Pending - メールボックスは保留または保留状態で解放されています。 
     
-> OnHold-メールボックスに保留が正常に適用されました。 
+> OnHold - 保留はメールボックスに正常に適用されました。 
     
-> PartialHold-一部のメールボックスに対して保留が正常に適用されましたが、すべてのメールボックスに適用されていません。
+> PartialHold - 保留は一部のメールボックスに正常に適用されましたが、すべてのメールボックスには適用されません。
     
-> Failed-保留リストをメールボックスに適用できませんでした。
+> Failed - 保持がメールボックスに適用できなかった。
     
 ## <a name="remarks"></a>注釈
 
@@ -65,8 +65,8 @@ ms.locfileid: "44459988"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

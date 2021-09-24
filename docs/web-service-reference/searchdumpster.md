@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ddb62dce-c87a-4714-8023-a6b697a29699
-description: SearchDumpster 要素は、Exchange の収集で検索するかどうかを指定します。
-ms.openlocfilehash: 067bf8ea3e589aa392c6b8ba6d4dc10b430c1f28
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SearchDumpster 要素は、Dumpster で検索するかどうかを指定Exchangeします。
+ms.openlocfilehash: 4d8f05393691e38e3a4154e955d03c8591064a1a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460492"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521691"
 ---
 # <a name="searchdumpster"></a>SearchDumpster
 
-**Searchdumpster**要素は、Exchange の収集で検索するかどうかを指定します。 
+**SearchDumpster 要素は、Dumpster** で検索するかどうかを指定Exchangeします。 
   
 ```XML
 <SearchDumpster> true | false </SearchDumpster>
@@ -42,7 +42,7 @@ ms.locfileid: "44460492"
   
 ## <a name="text-value"></a>テキスト値
 
-**Searchdumpster**要素のテキスト値が**true**の場合は、メールボックス統計検索に Exchange の収集が含まれていることを示します。 値が**false**の場合は、Exchange の収集が検索されないことを示します。 
+**SearchDumpster** 要素の **テキスト値が true** の場合は、メールボックス統計の検索にダンプスターのExchange示します。 false の **値は**、ダンプスターのExchangeを示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44460492"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

@@ -3,15 +3,15 @@ title: Exchange において EWS を使用してバッチ処理で連絡先を�
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 455f475b-cb19-4e7a-8ff3-92f7028fceb0
 description: Exchange で EWS マネージ API または EWS を使用して、1 回の呼び出しで連絡先の作成、取得、更新、削除をバッチ処理する方法について説明します。
-ms.openlocfilehash: 2e122f67693b4ba46120104d9a1f6d36b4d86f97
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: e70618dc0a9ea3f2d534c79fff627393ced8f1cb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527804"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522223"
 ---
 # <a name="process-contacts-in-batches-by-using-ews-in-exchange"></a>Exchange において EWS を使用してバッチ処理で連絡先を処理する
 
@@ -192,7 +192,7 @@ public static Collection<Contact> BatchGetContactItems(ExchangeService service, 
 ## <a name="get-contacts-in-batches-by-using-ews"></a>EWS を使用してバッチ処理で連絡先を取得する
 <a name="bk_EWSMAGet"> </a>
 
-次のコード例に示されている [GetItem](https://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) EWS 操作とコードを使用して、バッチ処理で連絡先を取得できます。これは、EWS マネージ API を使用して[バッチ処理で連絡先を取得](#bk_EWSMAGet)するときに EWS マネージ API が送信する XML 要求でもあります。**ItemId** 属性は読みやすいように短縮されています。 
+次のコード例に示されている [GetItem](https://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) EWS 操作とコードを使用して、バッチ処理で連絡先を取得できます。これは、EWS マネージ API を使用して [バッチ処理で連絡先を取得](#bk_EWSMAGet)するときに EWS マネージ API が送信する XML 要求でもあります。**ItemId** 属性は読みやすいように短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -272,7 +272,7 @@ public static Collection<Contact> BatchUpdateContactItems(ExchangeService servic
 ## <a name="update-contacts-in-batches-by-using-ews"></a>EWS を使用してバッチ処理で連絡先を更新する
 <a name="bk_EWSMAUpdate"> </a>
 
-次のコード例に示されているように、[GetItem](https://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) EWS 操作を使用して、バッチ処理で連絡先を更新できます。これは、EWS マネージ API を使用して[バッチ処理で連絡先を更新](#bk_EWSMAUpdate)するときに EWS マネージ API が送信する XML 要求でもあります。**ItemId** 属性は読みやすいように短縮されています。 
+次のコード例に示されているように、[GetItem](https://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) EWS 操作を使用して、バッチ処理で連絡先を更新できます。これは、EWS マネージ API を使用して [バッチ処理で連絡先を更新](#bk_EWSMAUpdate)するときに EWS マネージ API が送信する XML 要求でもあります。**ItemId** 属性は読みやすいように短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -360,7 +360,7 @@ public static void BatchDeleteContactItems(ExchangeService service, Collection<I
 ## <a name="delete-contacts-in-batches-by-using-ews"></a>EWS を使用してバッチ処理で連絡先を削除する
 <a name="bk_EWSMADelete"> </a>
 
-次のコード例に示されているように、[DeleteItem](../web-service-reference/deleteitem-operation.md) EWS 操作を使用して、バッチ処理で連絡先を削除できます。これは、EWS マネージ API を使用して[バッチ処理で連絡先を削除](#bk_EWSMADelete)するときに EWS マネージ API が送信する XML 要求でもあります。**ItemId** 属性は読みやすいように短縮されています。 
+次のコード例に示されているように、[DeleteItem](../web-service-reference/deleteitem-operation.md) EWS 操作を使用して、バッチ処理で連絡先を削除できます。これは、EWS マネージ API を使用して [バッチ処理で連絡先を削除](#bk_EWSMADelete)するときに EWS マネージ API が送信する XML 要求でもあります。**ItemId** 属性は読みやすいように短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

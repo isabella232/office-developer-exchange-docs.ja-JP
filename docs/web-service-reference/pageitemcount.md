@@ -5,25 +5,25 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4bc48bfb-a9ae-4e87-97a6-f3e0c9c89bc1
-description: PageItemCount 要素は、検索結果の改ページに返されるページ数を指定します。
-ms.openlocfilehash: e8e98168212c104763f5cf94847e06d5ec93534d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: PageItemCount 要素は、検索結果のページネーションで返されるページ数を指定します。
+ms.openlocfilehash: ab6665c6ff2f81b2889a91ccea77802a2c3783b7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467033"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524645"
 ---
 # <a name="pageitemcount"></a>PageItemCount
 
-**PageItemCount**要素は、検索結果の改ページに返されるページ数を指定します。 
+**PageItemCount** 要素は、検索結果のページネーションで返されるページ数を指定します。 
   
 ```XML
 <PageItemCount></PageItemCount>
 ```
 
- **以外**
+ **integer**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -42,7 +42,7 @@ ms.locfileid: "44467033"
   
 ## <a name="text-value"></a>テキスト値
 
-**PageItemCount**要素のテキスト値は、検索結果の改ページで返されるページ数です。 
+**PageItemCount** 要素のテキスト値は、検索結果の改ページで返されるページ数です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44467033"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

@@ -5,56 +5,56 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1f71f04d-56a9-4fee-a4e7-d1034438329e
 description: MarkAsJunk EWS 操作に関する情報を検索します。
-ms.openlocfilehash: 25d6b01dfff64c4e45f3382223311219d349c165
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: b165b415ce9380846b49d15dd321bfddba72b749
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468573"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524736"
 ---
 # <a name="markasjunk-operation"></a>MarkAsJunk 操作
 
-**Markasjunk** EWS 操作に関する情報を検索します。 
+**MarkAsJunk** EWS 操作に関する情報を検索します。 
   
-**Markasjunk**操作は、ブロックされた電子メールリストに対してユーザーを追加および削除し、電子メールメッセージを [迷惑メール] フォルダーに移動します。 
+**MarkAsJunk** 操作では、ブロックされた電子メール リストからユーザーを追加および削除し、電子メール メッセージを迷惑メール フォルダーに移動します。 
   
 この操作は Exchange Server 2013 で導入されました。
   
 ## <a name="using-the-markasjunk-operation"></a>MarkAsJunk 操作の使用
 
-**Markasjunk**操作には、電子メール送信者を受信拒否リストに追加する必要があるかどうか、および対象の電子メールメッセージを既定の迷惑メールフォルダーまたは受信トレイフォルダーに移動する必要があるかどうかを示す2つのブールオプションがあります。 アクションは、 **Isjunk メール**属性と**moveitem**属性の値によって決まります。 **Isjunk メール**属性と**moveitem**属性の値の組み合わせに基づいて、次の操作を実行できます。 
+**MarkAsJunk** 操作には、受信拒否リストにメール送信者を追加する必要があるかどうか、およびターゲット電子メール メッセージを既定の迷惑メール フォルダーまたは受信トレイ フォルダーに移動するかどうかを示すブール型 (Boolean) の 2 つのオプションが含まれている。 アクションは **、IsJunk** 属性と MoveItem 属性の **値によって決** まります。 **IsJunk** 属性と MoveItem 属性の値の組み合わせに基づいて実行できるアクションを次 **に示** します。 
   
-- **Isjunk**属性が**true**に設定されていて、 **moveitem**属性が**true**に設定されている場合、対象の電子メールメッセージの送信者は、受信拒否リストに追加され、電子メールメッセージは迷惑メールフォルダーに移動されます。
+- **IsJunk** 属性が **true** に設定され **、MoveItem** 属性が **true** に設定されている場合、ターゲット電子メール メッセージの送信者がブロックされた送信者リストに追加され、電子メール メッセージが迷惑メール フォルダーに移動されます。
     
-- **Isjunk**属性が**true**に設定されていて、 **moveitem**属性が**false**に設定されている場合、移動先の電子メールメッセージの送信者は、受信拒否リストに追加され、電子メールメッセージはフォルダーから移動されません。
+- **IsJunk** 属性が **true** に設定され **、MoveItem** 属性が **false** に設定されている場合、ターゲット電子メール メッセージの送信者がブロックされた送信者リストに追加され、電子メール メッセージはフォルダーから移動されません。
     
-- **Isjunk**属性が**false**に設定されていて、 **moveitem**属性が**true**に設定されている場合、移動先の電子メールメッセージの送信者は、受信拒否リストから削除され、電子メールメッセージは受信トレイフォルダーに移動されます。
+- **IsJunk** 属性が **false** に設定され **、MoveItem** 属性が **true** に設定されている場合、ターゲット電子メール メッセージの送信者はブロックされた送信者リストから削除され、電子メール メッセージは受信トレイ フォルダーに移動されます。
     
-- **Isjunk**属性が**false**に設定されていて、 **moveitem**属性が**false**に設定されている場合、移動先の電子メールメッセージの送信者は、受信拒否リストから削除され、電子メールメッセージはフォルダーから移動されません。
+- **IsJunk** 属性が **false** に設定され **、MoveItem** 属性が **false** に設定されている場合、ターゲット電子メール メッセージの送信者はブロックされた送信者リストから削除され、電子メール メッセージはフォルダーから移動されません。
     
 > [!IMPORTANT]
-> 受信拒否リストの内容は、EWS からは検出できません。 送信者が受信拒否リストに追加されている場合は、ブロックする送信者によって送信された電子メールメッセージのコピーを保持して、送信元のブロックを解除する必要があります。 
+> ブロックされた送信者リストの内容は、EWS から検出できません。 送信者がブロックされた送信者リストに追加される場合は、ブロックされた送信者から送信された電子メール メッセージのコピーを保持して、今後送信者のブロックを解除する必要があります。 
   
-### <a name="markasjunk-operation-soap-headers"></a>MarkAsJunk 操作の SOAP ヘッダー
+### <a name="markasjunk-operation-soap-headers"></a>MarkAsJunk 操作 SOAP ヘッダー
 
-**Markasjunk**操作では、次の表に記載されている SOAP ヘッダーを使用できます。 
+**MarkAsJunk 操作** では、次の表に示す SOAP ヘッダーを使用できます。 
   
-|**ヘッダー名**|**要素**|**説明**|
+|**ヘッダー名**|**Element**|**説明**|
 |:-----|:-----|:-----|
-|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |RFC 3066 で定義されているように、メールボックスへのアクセスに使用されるカルチャ (言語の識別用のタグ) を識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは応答に適用されます。  <br/> |
+|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |メールボックスへのアクセスに使用する RFC 3066「言語の識別用タグ」で定義されているカルチャを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマ バージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは、応答に適用されます。  <br/> |
    
-## <a name="markasjunk-operation-request-example-add-a-sender-to-the-blocked-sender-list"></a>MarkAsJunk 操作要求の例: 送信者を受信拒否リストに追加します。
+## <a name="markasjunk-operation-request-example-add-a-sender-to-the-blocked-sender-list"></a>MarkAsJunk 操作要求の例: 受信拒否リストに送信者を追加する
 
-次の例は、 **Markasjunk**操作要求の例で、電子メールの送信者を受信拒否リストに追加し、その電子メールを迷惑メールフォルダーに移動する方法を示しています。 **Markasjunk**操作は、受信拒否リストに追加された送信者を参照するために使用される電子メールを識別する一意の電子メールメッセージ識別子を受け取ります。 
+**MarkAsJunk** 操作要求の次の例は、電子メールの送信者をブロックされた送信者リストに追加し、電子メールを迷惑メール フォルダーに移動する方法を示しています。 **MarkAsJunk** 操作は、一意の電子メール メッセージ識別子を受け入れ、ブロックされた送信者リストに追加される送信者を参照するために使用される電子メールを識別します。 
   
 > [!NOTE]
-> この記事のすべてのアイテム識別子と変更キーは、読みやすくするために短縮されています。 
+> この記事のすべてのアイテム識別子と変更キーは、読みやすさを維持するために短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -84,9 +84,9 @@ ms.locfileid: "44468573"
     
 - [ItemId](itemid.md)
     
-## <a name="successful-markasjunk-operation-response"></a>正常な MarkAsJunk 操作の応答
+## <a name="successful-markasjunk-operation-response"></a>MarkAsJunk 操作応答の成功
 
-次の例は、[ブロックする差出人のリスト] に送信者を追加し、その電子メールメッセージを迷惑メールフォルダーに移動するための、 **Markasjunk**操作要求に対する正常な応答を示しています。 
+次の例は、受信拒否リストに送信者を追加し、電子メール メッセージを迷惑メール フォルダーに移動する **MarkAsJunk** 操作要求に対する正常な応答を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -129,9 +129,9 @@ ms.locfileid: "44468573"
     
 - [MovedItemId](moveditemid.md)
     
-## <a name="markasjunk-operation-request-example-remove-a-sender-from-the-blocked-sender-list"></a>MarkAsJunk 操作要求の例: 受信拒否リストから送信者を削除します
+## <a name="markasjunk-operation-request-example-remove-a-sender-from-the-blocked-sender-list"></a>MarkAsJunk 操作要求の例: ブロックされた送信者リストから送信者を削除する
 
-次の例は、 **Markasjunk**操作要求の例で、電子メールメッセージの送信者を受信拒否リストから削除し、その電子メールメッセージを受信トレイフォルダーに移動する方法を示しています。 受信拒否リストから送信者を削除するには、ブロックする送信者によって送信される電子メールメッセージを保持する必要があります。 送信者の電子メールアドレスは、送信者によって送信された電子メールメッセージに関連付けられています。 参照電子メールメッセージがユーザーのメールボックスに存在しなくなった場合、受信拒否リストからの送信者の削除は成功しません。 送信者に電子メールメッセージを関連付けるために使用されるアイテム識別子は、Exchange メールボックス内に存在するアイテムに関連付けられている必要があります。 以前にブロックされた送信者が送信したアイテムを格納するための非表示のフォルダーを作成して、クライアントアプリケーションからの送信者のブロックを解除できるようにすることをお勧めします。 Exchange メールボックスからアイテムが削除された場合は、管理者が Exchange 管理コンソールを使用して、受信拒否リストにアクセスして送信者を一覧から削除する必要があります。 Exchange 管理コンソールを使用してユーザーのブロックを解除する方法については、「 [Office 365 で差出人セーフリストと受信拒否設定を構成する方法](https://support.microsoft.com/kb/2545137)」を参照してください。
+**MarkAsJunk** 操作要求の次の例は、ブロックされた送信者リストから電子メール メッセージの送信者を削除し、電子メール メッセージを受信トレイ フォルダーに移動する方法を示しています。 ブロックされた送信者リストから送信者を削除するには、ブロックされた送信者から送信された電子メール メッセージを保持する必要があります。 送信者の電子メール アドレスは、送信者によって送信された電子メール メッセージに関連付けられている。 参照電子メール メッセージがユーザーのメールボックスに存在しなくなった場合、ブロックされた送信者リストから送信者を削除すると成功しません。 電子メール メッセージを送信者に関連付ける場合に使用するアイテム識別子は、メールボックス内に存在するアイテムExchange必要があります。 以前にブロックされた送信者によって送信されたアイテムを格納する隠しフォルダーを作成して、送信者をクライアント アプリケーションからブロック解除することをお勧めします。 Exchange メールボックスからアイテムが削除された場合、管理者は Exchange 管理コンソール を使用して、ブロックされた送信者リストにアクセスしてリストから送信者を削除する必要があります。 Exchange 管理コンソール を使用してユーザーのブロックを解除する方法については、「Office 365 で差出人セーフ リストと受信拒否の設定を構成する方法」[を参照してください](https://support.microsoft.com/kb/2545137)。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -153,7 +153,7 @@ ms.locfileid: "44468573"
 
 ```
 
-受信拒否リストから送信者を削除するための正常な応答は、受信拒否リストに送信者を追加する際の応答と同じです。
+受信拒否リストから送信者を削除するための正常な応答は、受信拒否リストに送信者を追加する応答と同じです。
   
 要求 SOAP 本文には、次の要素が含まれています。
   
@@ -165,7 +165,7 @@ ms.locfileid: "44468573"
     
 ## <a name="markasjunk-operation-error-response"></a>MarkAsJunk 操作エラー応答
 
-次の例は、 **Markasjunk**操作要求へのエラー応答を示しています。 これは、アイテム識別子によって指定された電子メールメッセージがメールボックスに存在しなくなったときに、受信拒否リストに送信者を追加または削除する要求に対する応答です。 
+次の例は **、MarkAsJunk** 操作要求に対するエラー応答を示しています。 これは、アイテム識別子で指定された電子メール メッセージがメールボックスに存在しなくなった場合に、受信拒否リストに送信者を追加または削除する要求に対する応答です。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -213,9 +213,9 @@ ms.locfileid: "44468573"
     
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS 操作](ews-operations-in-exchange.md)
+- [EWS 操作 (Exchange](ews-operations-in-exchange.md)
     
-- [GetItem 操作](getitem-operation.md)GetItem 操作 
+- [GetItem 操作](getitem-operation.md) GetItem 操作 
     
 - [FindItem 操作](finditem-operation.md)
     

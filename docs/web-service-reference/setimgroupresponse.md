@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d5562b38-6a3e-49e0-b1db-ec8cd0683863
-description: SetImGroupResponse 要素は、SetImGroup 要求への応答を表します。
-ms.openlocfilehash: 9c5f6bb5c2a4ffe4626f242ec06b7e022ef21bbf
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SetImGroupResponse 要素は、SetImGroup 要求に対する応答を表します。
+ms.openlocfilehash: fdf88ee36f24e1657d85c2724c8f868520895a48
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44438055"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521409"
 ---
 # <a name="setimgroupresponse"></a>SetImGroupResponse
 
-**SetImGroupResponse**要素は、 **setimgroup**要求への応答を表します。 
+**SetImGroupResponse** 要素は **、SetImGroup** 要求に対する応答を表します。 
   
 ```XML
 <SetImGroupResponse>
@@ -39,7 +39,7 @@ ms.locfileid: "44438055"
   
 ### <a name="child-elements"></a>子要素
 
-[Messagetext](messagetext.md)  | 応答[Secmode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)
+[MessageText](messagetext.md)  | [ResponseCode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -56,8 +56,8 @@ ms.locfileid: "44438055"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

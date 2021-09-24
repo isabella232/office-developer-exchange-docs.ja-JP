@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - RemoveItem
 api_type:
 - schema
 ms.assetid: 766878e3-9007-454f-8501-45139bc5c0e2
-description: RemoveItem 要素は、会議の取り消しメッセージが受信されたときに会議アイテムを削除するために使用される response オブジェクトを表します。
-ms.openlocfilehash: c0cd5c1f9894287ee78c2f7a65b8f4d3b943414e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: RemoveItem 要素は、MeetingCancellation メッセージを受信するときに会議アイテムを削除するために使用される応答オブジェクトを表します。
+ms.openlocfilehash: 4dbe9ede36bf6e3c008a2186cfe617519ecfae1f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467691"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517960"
 ---
 # <a name="removeitem"></a>RemoveItem
 
-**Removeitem**要素は、会議の取り消しメッセージが受信されたときに会議アイテムを削除するために使用される response オブジェクトを表します。 
+**RemoveItem 要素は**、MeetingCancellation メッセージを受信するときに会議アイテムを削除するために使用される応答オブジェクトを表します。 
   
 ```xml
 <RemoveItem ObjectName="">
@@ -38,46 +38,46 @@ ms.locfileid: "44467691"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**ObjectName** <br/> |RemoveItem reply オブジェクトクラスの名前を英語の文字列として表します。  <br/> |
+|**ObjectName** <br/> |RemoveItem 応答オブジェクト クラスの名前を英語の文字列として表します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ReferenceItemId](referenceitemid.md) <br/> |RemoveItem response オブジェクトが参照するアイテムを識別します。  <br/> |
+|[ReferenceItemId](referenceitemid.md) <br/> |RemoveItem 応答オブジェクトが参照するアイテムを識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[アイテム (非 Emptyarrayofallitemstype)](items-nonemptyarrayofallitemstype.md) <br/> |[ParentFolderId (TargetFolderIdType)](parentfolderid-targetfolderidtype.md)要素によって識別されるフォルダー内に作成するアイテムの配列が含まれています。  <br/> |
-|[ResponseObjects](responseobjects.md) <br/> |Exchange ストア内のアイテムに関連付けられているすべての response オブジェクトのコレクションを格納します。  <br/> |
+|[Items (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md) <br/> |[ParentFolderId (TargetFolderIdType)](parentfolderid-targetfolderidtype.md)要素によって識別されるフォルダー内に作成するアイテムの配列を格納します。  <br/> |
+|[ResponseObjects](responseobjects.md) <br/> |ストア内のアイテムに関連付けられているすべての応答オブジェクトのコレクションをExchangeします。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
- **Removeitem**は、[会議の取り消し](meetingcancellation.md)に対してのみ有効です。 それ以外の場合は、エラーがスローされます。
+ **RemoveItem** は [MeetingCancellation でのみ有効です](meetingcancellation.md)。 それ以外の場合は、エラーがスローされます。
   
 > [!NOTE]
-> 会議のキャンセルの[Itemclass](itemclass.md)は IPM です。予約を取り消しました。 
+> 会議 [の取り消](itemclass.md) しの ItemClass は IPM です。Schedule.Meeting.Canceled。 
   
-[会議の要求](meetingrequest.md)および関連付けられた予定表[アイテム](calendaritem.md)を削除するには、 **Removeitem**ではなく、 [declineitem](declineitem.md) response オブジェクトを使用します。
+[MeetingRequest と関連](meetingrequest.md)付けられた [CalendarItem](calendaritem.md)を削除するには [、RemoveItem](declineitem.md)の代わりに DeclineItem 応答オブジェクト **を使用します**。
   
- **Removeitem**は、代理人アクセスをサポートしていません。 
+ **RemoveItem** は、代理人アクセスではサポートされていません。 
   
-この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

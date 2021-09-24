@@ -4,19 +4,19 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fb087ac9-bac7-4635-a54f-3b115d9f5dc4
-description: GetOrganizationRelationshipSettingsResponseMessage 要素は、Get組織の設定操作 (SOAP) 要求に対する応答を定義します。 GetOrganizationRelationshipSettingsResponseMessage 要素は、内部使用のみを対象としています。 この要素はクライアントによって使用されません。
-ms.openlocfilehash: 806f062824e7e8d937f54cd3d38000aba42acf1e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetOrganizationRelationshipSettingsResponseMessage 要素は、GetOrganizationRelationshipSettings 操作 (SOAP) 要求への応答を定義します。 GetOrganizationRelationshipSettingsResponseMessage 要素は内部でのみ使用できます。 この要素は、クライアントでは使用されません。
+ms.openlocfilehash: 98038e19fd1e85b0d915f250db98ca13ac1b9721
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466172"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521956"
 ---
 # <a name="getorganizationrelationshipsettingsresponsemessage-soap"></a>GetOrganizationRelationshipSettingsResponseMessage (SOAP)
 
-**GetOrganizationRelationshipSettingsResponseMessage**要素は、 [Get組織の設定操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)要求に対する応答を定義します。 **GetOrganizationRelationshipSettingsResponseMessage**要素は、内部使用のみを対象としています。 この要素はクライアントによって使用されません。 
+**GetOrganizationRelationshipSettingsResponseMessage** 要素は [、GetOrganizationRelationshipSettings 操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)要求への応答を定義します。 **GetOrganizationRelationshipSettingsResponseMessage** 要素は内部でのみ使用できます。 この要素は、クライアントでは使用されません。 
   
 ```XML
 <GetOrganizationRelationshipSettingsResponseMessage>
@@ -36,7 +36,7 @@ ms.locfileid: "44466172"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Response (Get組織関係) (SOAP)](response-getorganizationrelationshipsoap.md) <br/> |[Get組織の設定操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)応答情報が含まれています。  <br/> |
+|[Response (GetOrganizationRelationship) (SOAP)](response-getorganizationrelationshipsoap.md) <br/> |[GetOrganizationRelationshipSettings 操作 (SOAP) 応答情報が](getorganizationrelationshipsettings-operation-soap.md)含まれる。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -48,12 +48,12 @@ ms.locfileid: "44466172"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[Get組織の Relationshipsettings 操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)
+[GetOrganizationRelationshipSettings 操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)
 

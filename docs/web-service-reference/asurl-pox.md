@@ -4,29 +4,29 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 6727f282-ec4c-4e61-8414-e7ba5f9865e7
-description: ASUrl 要素は、メールが有効なユーザーの Exchange Availability Web サービスの最適なエンドポイントインスタンスの URL を指定します。
-ms.openlocfilehash: 62fc3c18b2c41bb131ec5bc8546089b73f247f99
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ASUrl 要素は、メールが有効なユーザーの可用性 Web サービスExchangeエンドポイント インスタンスの URL を指定します。
+ms.openlocfilehash: cf6b1dff8de19ef30813e8413ca9bc251d5fed16
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464421"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525156"
 ---
 # <a name="asurl-pox"></a>ASUrl (POX)
 
-**Asurl**要素は、メールが有効なユーザーの Exchange Availability Web サービスの最適なエンドポイントインスタンスの URL を指定します。 
+**ASUrl 要素は**、メールが有効なユーザーにExchange可用性 Web サービスの最適なエンドポイント インスタンスの URL を指定します。 
   
-- [自動検出 (POX)](autodiscover-pox.md)
+- [AutoDiscover (POX)](autodiscover-pox.md)
   
-- [応答 (POX)](response-pox.md)
+- [Response (POX)](response-pox.md)
   
-- [アカウント (POX)](account-pox.md)
+- [Account (POX)](account-pox.md)
   
-- [プロトコル (POX)](protocol-pox.md)
+- [Protocol (POX)](protocol-pox.md)
   
 - [ASUrl (POX)](asurl-pox.md)
   
@@ -50,13 +50,13 @@ ms.locfileid: "44464421"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
+|[Protocol (POX)](protocol-pox.md) <br/> |クライアント アクセス サーバーの役割がインストールされているクライアントを実行しているコンピューター Microsoft Exchange Server接続するための仕様が含まれている。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-Text 値には、可用性サービスへのアクセスに使用される URL が含まれています。
+テキスト値には、可用性サービスへのアクセスに使用される URL が含まれる。
   
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+- [POX 自動検出 XML 要素のExchange](pox-autodiscover-xml-elements-for-exchange.md)
 

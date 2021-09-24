@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3bdf5955-1212-48a1-b3b5-743086866c91
-description: RetentionAction 要素は、保持タグを持つアイテムに対して実行されるアクションを指定します。
-ms.openlocfilehash: c16988413e732ddc3cd6ebc355cb73c4d96550c7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: RetentionAction 要素は、アイテム保持タグを持つアイテムに対して実行されるアクションを指定します。
+ms.openlocfilehash: ecea4326f0e50460635966991cd55badf8946993
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465234"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517946"
 ---
 # <a name="retentionaction"></a>RetentionAction
 
-**Retentionaction**要素は、保持タグを持つアイテムに対して実行されるアクションを指定します。 
+**RetentionAction 要素** は、アイテム保持タグを持つアイテムに対して実行されるアクションを指定します。 
   
 ```XML
 <RetentionAction> None | MoveToDeletedItems | MoveToFolder | DeleteAndAllowRecovery | PermanentlyDelete | MarkAsPastRetentionLimit | MoveToArchive <RetentionAction>
@@ -38,25 +38,25 @@ ms.locfileid: "44465234"
   
 ### <a name="parent-elements"></a>親要素
 
-[New-retentionpolicytag](retentionpolicytag.md)
+[RetentionPolicyTag](retentionpolicytag.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**Retentionaction**要素のテキスト値は、アイテムに対して実行されるアクションです。 次の一覧に、 **Retentionaction**要素のテキスト値を示します。 
+**RetentionAction** 要素のテキスト値は、アイテムに対して実行されるアクションです。 次の一覧には、RetentionAction 要素のテキスト **値が含** まれます。 
   
-> **None** -アイテムに対してアクションは実行されません。 
+> **なし** - アイテムに対してアクションは実行されません。 
     
-> **MoveToDeletedItems** -アイテムは既定の削除済みアイテムフォルダーに移動されます。 
+> **MoveToDeletedItems** - アイテムは既定の [削除済みアイテム] フォルダーに移動されます。 
     
-> **Movetofolder** -アイテムは指定されたフォルダーに移動されます。 
+> **MoveToFolder** - アイテムを指定したフォルダーに移動します。 
     
-> **Deleteandallowrecovery** -アイテムが削除され、[収集] に入ります。 
+> **DeleteAndAllowRecovery** - アイテムが削除され、ダンプスターに挿入されます。 
     
-> **PermanentlyDelete** -アイテムはメールボックスから完全に削除されます。 
+> **PermanentlyDelete** - アイテムはメールボックスから完全に削除されます。 
     
-> **MarkAsPastRetentionLimit** -アイテムは、保持時間制限を超えたとしてマークされています。 
+> **MarkAsPastRetentionLimit** - アイテムが保持時間制限を超えたとマークされます。 
     
-> **Movetoarchive** -アイテムはアーカイブメールボックスに移動されます。 
+> **MoveToArchive** - アイテムがアーカイブ メールボックスに移動されます。 
     
 ## <a name="remarks"></a>注釈
 
@@ -69,8 +69,8 @@ ms.locfileid: "44465234"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: ae97c802-f6ef-46da-b774-ca0a5feb664f
 description: AuthenticationMethods 要素は、Web クライアントで使用できる認証方法について説明します。
-ms.openlocfilehash: 5891cd53c306a0a3927579813f8095e4c67ab74d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: aa7181c876c81f5f5e9564bec0bf46b093b02910
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463973"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524363"
 ---
 # <a name="authenticationmethods-soap"></a>AuthenticationMethods (SOAP)
 
-**Authenticationmethods**要素は、Web クライアントで使用できる認証方法について説明します。 
+**AuthenticationMethods** 要素は、Web クライアントで使用できる認証方法について説明します。 
   
 ```XML
 <AuthenticationMethods/>
@@ -41,11 +41,11 @@ ms.locfileid: "44463973"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[WebClientUrl (SOAP)](webclienturl-soap.md) <br/> |Outlook Web App クライアントの URL を表します。  <br/> |
+|[WebClientUrl (SOAP)](webclienturl-soap.md) <br/> |クライアントの URL をOutlook Web Appします。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**Authenticationmethods**要素のテキスト値は、Outlook Web App クライアントの URL です。 
+**AuthenticationMethods** 要素のテキスト値は、クライアントの URL Outlook Web Appです。 
   
 ## <a name="element-information"></a>要素の情報
 
@@ -53,8 +53,8 @@ ms.locfileid: "44463973"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

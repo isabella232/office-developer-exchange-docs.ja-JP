@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 79b24034-6456-4c9c-adf6-03d06024c4e8
-description: KeywordStats 要素は、1つ以上の KeywordStat 要素のリストを指定します。
-ms.openlocfilehash: bf471c1712a96b44dbc533a2cb26e32546a6db38
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: KeywordStats 要素は、1 つ以上の KeywordStat 要素のリストを指定します。
+ms.openlocfilehash: cca29bf94b7f5991488db81c0006817a91958204
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463294"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524127"
 ---
 # <a name="keywordstats"></a>KeywordStats
 
-**KeywordStats**要素は、1つ以上の**KeywordStat**要素のリストを指定します。 
+**KeywordStats 要素は**、1 つ以上の KeywordStat 要素のリスト **を指定** します。 
   
 ```XML
 <KeywordStats>

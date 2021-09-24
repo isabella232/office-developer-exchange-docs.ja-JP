@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1b84a4c6-cb0a-4bca-85b2-fec32227930b
 description: GetDiscoverySearchConfigurationResponseMessage 要素は、GetDiscoverySearchConfiguration 要求の応答メッセージを指定します。
-ms.openlocfilehash: 23d1c5b7a61a9161d7383ec8b38cd0ebbebfc8cf
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: b74af89b47f31ce78c2a97855cdff248bc132c28
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460975"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521950"
 ---
 # <a name="getdiscoverysearchconfigurationresponsemessage"></a>GetDiscoverySearchConfigurationResponseMessage
 
-**GetDiscoverySearchConfigurationResponseMessage**要素は、 **Getdiscoverysearchconfiguration**要求の応答メッセージを指定します。 
+**GetDiscoverySearchConfigurationResponseMessage** 要素は **、GetDiscoverySearchConfiguration** 要求の応答メッセージを指定します。 
   
 ```XML
 <GetDiscoverySearchConfigurationResponseMessage>
@@ -40,7 +40,7 @@ ms.locfileid: "44460975"
   
 ### <a name="child-elements"></a>子要素
 
-[Messagetext](messagetext.md)  | 応答[Secmode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [Discoverysearchconfigurations](discoverysearchconfigurations.md)
+[MessageText](messagetext.md)  | [ResponseCode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [DiscoverySearchConfigurations](discoverysearchconfigurations.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -57,8 +57,8 @@ ms.locfileid: "44460975"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

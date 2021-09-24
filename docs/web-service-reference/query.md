@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ccb4cd62-9779-4ca7-a4fe-5a96e6af8f48
-description: Query 要素には、保留の検索クエリが含まれています。
-ms.openlocfilehash: 52b7f58ee0304621d37fc592a0377f5fd82cea29
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Query 要素には、保留リストの検索クエリが含まれる。
+ms.openlocfilehash: a9e66a0861a07336aa3a02eaca5b65ab97a3d6cd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468860"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523791"
 ---
 # <a name="query"></a>クエリ
 
-**Query**要素には、保留の検索クエリが含まれています。 
+**Query 要素** には、保留リストの検索クエリが含まれる。 
   
 ```XML
 <Query></Query>
@@ -42,7 +42,7 @@ ms.locfileid: "44468860"
   
 ## <a name="text-value"></a>テキスト値
 
-**Query**要素のテキスト値は、探索検索の検索クエリ文字列です。 
+Query 要素のテキスト **値** は、探索検索の検索クエリ文字列です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44468860"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

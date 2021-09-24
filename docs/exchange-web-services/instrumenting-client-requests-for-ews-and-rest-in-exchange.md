@@ -3,15 +3,15 @@ title: Exchange で EWS と REST のクライアントの要求をインスト�
 manager: sethgros
 ms.date: 4/13/2016
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 330de503-498d-447e-b4a9-c20fc1699fd1
 description: Exchange アプリケーションのモニターとトラブルシューティングに役立つ EWS と REST の要求と応答の HTTP ヘッダーについて説明します。
-ms.openlocfilehash: 3a8ce889ec7a6b9e70ec25a95ac248902f48ca6c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: f32a164436a1f8ab06192e71a287f5092fe9a6c4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456305"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520991"
 ---
 # <a name="instrumenting-client-requests-for-ews-and-rest-in-exchange"></a>Exchange で EWS と REST のクライアントの要求をインストルメント化する
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateItem
 api_type:
 - schema
 ms.assetid: fe136881-a804-456a-8552-8a1bea5eb9c8
 description: CreateItem 操作は、会議出席依頼に応答するために使用されます。
-ms.openlocfilehash: f9e6bd1742e6a30d08736ea67c0ff80b7a18e88a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: de845271bc47f08e60a1b4943a00551a42056388
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457110"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524372"
 ---
 # <a name="createitem-operation-meeting-request"></a>CreateItem 操作 (会議出席依頼)
 
@@ -25,13 +25,13 @@ CreateItem 操作は、会議出席依頼に応答するために使用されま
   
 ## <a name="remarks"></a>注釈
 
-CreateItem 操作には、会議出席依頼に返信するための3つのオプション (承諾、仮承諾、または辞退) が用意されています。 
+CreateItem 操作は、会議出席依頼に応答するための 3 つのオプションを提供します。承諾、仮承諾、または辞退。 
   
-## <a name="accept-meeting-request-example"></a>会議出席依頼の承諾の例
+## <a name="accept-meeting-request-example"></a>会議出席依頼の例を受け入れる
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、会議出席依頼の招待を承諾する方法を示しています。
+次の例は、会議出席依頼の招待を受け入れる方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -55,25 +55,25 @@ CreateItem 操作には、会議出席依頼に返信するための3つのオ�
 
 ### <a name="comments"></a>コメント
 
-会議出席依頼を仮承諾または辞退するには、 [Acceptitem](acceptitem.md)要素の代わりに[TentativelyAcceptItem](tentativelyacceptitem.md)または[declineitem](declineitem.md)要素を使用します。 
+会議出席依頼を暫定的に受け入れるか拒否するには[、AcceptItem](acceptitem.md)要素の代りとして、仮に[AcceptItem](tentativelyacceptitem.md)または[DeclineItem](declineitem.md)要素を使用します。 
   
-読みやすくするために、アイテム識別子と変更キーが短縮されています。
+アイテム識別子と変更キーは、読みやすさを維持するために短縮されました。
   
-### <a name="accepting-meeting-request-elements"></a>会議出席依頼の要素を承諾する
+### <a name="accepting-meeting-request-elements"></a>会議出席依頼要素の受け入れ
 
 要求では、次の要素が使用されます。
   
 - [CreateItem](createitem.md)
     
-- [アイテム (非 Emptyarrayofallitemstype)](items-nonemptyarrayofallitemstype.md)
+- [Items (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
     
 - [AcceptItem](acceptitem.md)
     
 - [ReferenceItemId](referenceitemid.md)
     
-## <a name="successful-accept-meeting-response-example"></a>正常な会議の応答の例
+## <a name="successful-accept-meeting-response-example"></a>会議の成功の応答の例を受け入れる
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
 次の例は、CreateItem 要求に対する正常な応答を示しています。
   
@@ -119,11 +119,11 @@ CreateItem 操作には、会議出席依頼に返信するための3つのオ�
     
 - [Items](items.md)
     
-## <a name="accept-meeting-error-response-example"></a>会議エラー応答の承諾の例
+## <a name="accept-meeting-error-response-example"></a>会議エラーの応答の例を受け入れる
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、CreateItem 要求へのエラー応答を示しています。 このエラーは、Exchange ストアに存在しない会議出席依頼を承諾しようとしたために発生します。
+次の例は、CreateItem 要求に対するエラー応答を示しています。 このエラーは、会議ストアで見つからない会議出席依頼を受け入れExchangeされます。
   
 ### <a name="code"></a>コード
 

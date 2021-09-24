@@ -1,27 +1,27 @@
 ---
-title: AcceptSharingInvitation 状
+title: AcceptSharingInvitation
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - AcceptSharingInvitation
 api_type:
 - schema
 ms.assetid: 3c2a47d6-490d-425b-8893-089a4f8882cd
-description: AcceptSharingInvitation 要素は、別のユーザーの予定表または連絡先データへのアクセスを許可する招待を受け入れるために使用されます。
-ms.openlocfilehash: c8cdae707bd122e74fa0e284163d1540d857c3de
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: AcceptSharingInvitation 要素は、別のユーザーの予定表または連絡先データへのアクセスを許可する招待を受け入れるのに使用されます。
+ms.openlocfilehash: 76b7bedccb4135a51104bea99d3844f384870db0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461710"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525436"
 ---
-# <a name="acceptsharinginvitation"></a>AcceptSharingInvitation 状
+# <a name="acceptsharinginvitation"></a>AcceptSharingInvitation
 
-**Acceptsharinginvitation**要素は、別のユーザーの予定表または連絡先データへのアクセスを許可する招待を受け入れるために使用されます。 
+**AcceptSharingInvitation** 要素は、別のユーザーの予定表または連絡先データへのアクセスを許可する招待を受け入れるのに使用されます。 
   
 ```xml
 <AcceptSharingInvitation>
@@ -42,14 +42,14 @@ ms.locfileid: "44461710"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ReferenceItemId](referenceitemid.md) <br/> |Response オブジェクトが参照するアイテムを識別します。  <br/> |
+|[ReferenceItemId](referenceitemid.md) <br/> |応答オブジェクトが参照するアイテムを識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ResponseObjects](responseobjects.md) <br/> |Exchange ストア内のアイテムに関連付けられているすべての response オブジェクトのコレクションを格納します。  <br/> |
-|[アイテム (非 Emptyarrayofallitemstype)](items-nonemptyarrayofallitemstype.md) <br/> |[ParentFolderId (TargetFolderIdType)](parentfolderid-targetfolderidtype.md)要素によって識別されるフォルダー内に作成するアイテムの配列が含まれています。  <br/> |
+|[ResponseObjects](responseobjects.md) <br/> |ストア内のアイテムに関連付けられているすべての応答オブジェクトのコレクションをExchangeします。  <br/> |
+|[Items (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md) <br/> |[ParentFolderId (TargetFolderIdType)](parentfolderid-targetfolderidtype.md)要素によって識別されるフォルダー内に作成するアイテムの配列を格納します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -60,12 +60,12 @@ ms.locfileid: "44461710"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [CreateItem (AcceptSharingInvitation)](createitem-acceptsharinginvitation.md)
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

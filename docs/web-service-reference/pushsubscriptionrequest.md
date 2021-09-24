@@ -5,25 +5,25 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PushSubscriptionRequest
 api_type:
 - schema
 ms.assetid: 70caa0ca-40a1-421f-b4e6-0658f22d0b8e
-description: PushSubscriptionRequest 要素は、プッシュベースのイベント通知サブスクリプションへのサブスクリプションを表します。
-ms.openlocfilehash: dcdb767ed175468aa4ec940f3147c164e4707e40
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: PushSubscriptionRequest 要素は、プッシュ ベースのイベント通知サブスクリプションのサブスクリプションを表します。
+ms.openlocfilehash: 6eb76bba92e78e048ae97dbec5fc6c4d698a815f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465514"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523728"
 ---
 # <a name="pushsubscriptionrequest"></a>PushSubscriptionRequest
 
-**Pushsubscriptionrequest**要素は、プッシュベースのイベント通知サブスクリプションへのサブスクリプションを表します。 
+**PushSubscriptionRequest** 要素は、プッシュ ベースのイベント通知サブスクリプションのサブスクリプションを表します。 
   
-[登録](subscribe.md)
+[Subscribe](subscribe.md)
   
 [PushSubscriptionRequest](pushsubscriptionrequest.md)
   
@@ -46,23 +46,23 @@ ms.locfileid: "44465514"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**SubscribeToAllFolders** <br/> |利用可能なすべてのフォルダーを購読するかどうかを示します。 この属性は省略可能です。  <br/> |
+|**SubscribeToAllFolders** <br/> |使用可能なすべてのフォルダーをサブスクライブするかどうかを示します。 この属性は省略可能です。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
 |**Element**|**説明**|
 |:-----|:-----|
 |[FolderIds](folderids.md) <br/> |イベント通知を監視するフォルダーを識別するために使用されるフォルダー識別子の配列を格納します。  <br/> |
-|[EventTypes](eventtypes.md) <br/> |サブスクリプションの作成に使用されるイベント通知のコレクションが含まれています。  <br/> |
-|[Watermark](watermark.md) <br/> |メールボックスイベントテーブル内のイベントブックマークを表します。 これは、ウォーターマークで表されるイベントから開始するサブスクリプションを作成するために使用されます。 Subscribe 要求のウォーターマークが見つからない場合は、クライアントにエラー応答が返されます。 これは、ウォーターマークが30日よりも古い場合、またはウォーターマークがメールボックスに存在しない場合に発生することがあります。  <br/> |
-|[StatusFrequency](statusfrequency.md) <br/> |イベントが発生していない場合に通知メッセージがクライアントに送信される頻度 (分単位) を表します。  <br/> |
-|[.Url](url-ex15websvcsotherref.md) <br/> |プッシュ通知用のクライアント Web サービスの場所を表します。  <br/> |
+|[EventTypes](eventtypes.md) <br/> |サブスクリプションの作成に使用されるイベント通知のコレクションを含む。  <br/> |
+|[Watermark](watermark.md) <br/> |メールボックス イベント テーブルのイベント ブックマークを表します。 これは、透かしで表されるイベントから始まるサブスクリプションを作成するために使用されます。 Subscribe 要求の透かしが見つからない場合は、エラー応答がクライアントに返されます。 これは、透かしが 30 日を超える場合、またはメールボックスに透かしが存在しない場合に発生することがあります。  <br/> |
+|[StatusFrequency](statusfrequency.md) <br/> |イベントが発生しない場合にクライアントに通知メッセージを送信する頻度 (分) を表します。  <br/> |
+|[Url ](url-ex15websvcsotherref.md) <br/> |プッシュ通知のクライアント Web サービスの場所を表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[登録](subscribe.md) <br/> |サブスクリプションの作成に使用されるプロパティが含まれています。  <br/> |
+|[Subscribe](subscribe.md) <br/> |サブスクリプションの作成に使用するプロパティを格納します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -77,9 +77,9 @@ ms.locfileid: "44465514"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

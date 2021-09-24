@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ValidationErrors
 api_type:
 - schema
 ms.assetid: 009526aa-22e7-4f5c-be88-079175aa9122
-description: ValidationErrors 要素は、エラーが発生した各ルールフィールドのルール検証エラーの配列を表します。
-ms.openlocfilehash: 0861425b04e03a3e2e54a47a5027d0a11264392d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ValidationErrors 要素は、エラーが発生した各ルール フィールドのルール検証エラーの配列を表します。
+ms.openlocfilehash: 9b771addfc99a4f7fadebc64aebc484a8ae6060e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530276"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522377"
 ---
 # <a name="validationerrors"></a>ValidationErrors
 
-**Validationerrors**要素は、エラーが発生した各ルールフィールドのルール検証エラーの配列を表します。 
+**ValidationErrors 要素** は、エラーが発生した各ルール フィールドのルール検証エラーの配列を表します。 
   
 ```XML
 <VaidationErrors>
@@ -42,7 +42,7 @@ ms.locfileid: "44530276"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Error](error.md) <br/> |特定のルールプロパティ値、述語プロパティ値、または action プロパティ値に対する1つの検証エラーを表します。  <br/> |
+|[エラー](error.md) <br/> |特定のルール プロパティ値、述語プロパティ値、またはアクション プロパティ値に対する 1 つの検証エラーを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -63,13 +63,13 @@ ms.locfileid: "44530276"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

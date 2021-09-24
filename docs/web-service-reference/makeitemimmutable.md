@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: de1d2a60-aeeb-4625-8b11-23c42e1e7bae
-description: MakeItemImmutable 要素は、アイテムを読み取り専用にする必要があるかどうかを示すブール値を指定します。
-ms.openlocfilehash: 05c6e3343b8ba892048174ad98c9d31fe8da685b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MakeItemImmutable 要素は、アイテムを読み取り専用にするかどうかを示すブール値を指定します。
+ms.openlocfilehash: 0e1d28f19492bb6dc013957aa5957b59e791b24b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465864"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524827"
 ---
 # <a name="makeitemimmutable"></a>MakeItemImmutable
 
-**Makeitemimmutable**要素は、アイテムを読み取り専用にする必要があるかどうかを示すブール値を指定します。 
+**MakeItemImmutable** 要素は、アイテムを読み取り専用にするかどうかを示すブール値を指定します。 
   
 ```XML
 <MakeItemImmutable>true | false</MakeItemImmutable>
@@ -38,11 +38,11 @@ ms.locfileid: "44465864"
   
 ### <a name="parent-elements"></a>親要素
 
-[Updateitemin回復可能アイテム](updateiteminrecoverableitems.md)
+[UpdateItemInRecoverableItems](updateiteminrecoverableitems.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**Makeitemimmutable**要素のテキスト値が**true**になっている場合は、アイテムを読み取り専用にする必要があることを示します。 値が**false**の場合は、アイテムに読み取り/書き込みアクセスが許可されていることを示します。 
+**MakeItemImmutable 要素のテキスト値が** **true** の場合は、アイテムを読み取り専用にする必要があります。 false の値 **は** 、アイテムが読み取り/書き込みアクセスを許可します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44465864"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

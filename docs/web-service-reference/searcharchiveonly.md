@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cce5344c-b622-44d4-bc14-a0de346c9335
-description: SearchArchiveOnly 要素は、インデックス付けされていないアイテムに対してアーカイブメールボックスのみを検索するかどうかを示します。
-ms.openlocfilehash: 9014044ed06c697cc43dd62103d7a1a907bda5a8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SearchArchiveOnly 要素は、アーカイブ メールボックスだけがインデックス不可のアイテムを検索するかどうかを示します。
+ms.openlocfilehash: a4766e101394bb83a0dcebdfe5b92f576f4a4160
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460499"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521681"
 ---
 # <a name="searcharchiveonly"></a>SearchArchiveOnly
 
-**SearchArchiveOnly**要素は、インデックス付けされていないアイテムに対してアーカイブメールボックスのみを検索するかどうかを示します。 
+**SearchArchiveOnly** 要素は、アーカイブ メールボックスだけがインデックス不可のアイテムを検索するかどうかを示します。 
   
 ```xml
 <SearchArchiveOnly>true | false</SearchArchiveOnly>
@@ -38,11 +38,11 @@ ms.locfileid: "44460499"
   
 ### <a name="parent-elements"></a>親要素
 
-[Getnonindexableitemstatistics](getnonindexableitemstatistics.md) │ [getnonindexableitemstatistics](getnonindexableitemdetails.md)
+[GetNonIndexableItemStatistics](getnonindexableitemstatistics.md) │ [GetNonIndexableItemDetails](getnonindexableitemdetails.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**SearchArchiveOnly**要素のテキスト値が**true**の場合、インデックス付けされていないアイテムの検索はアーカイブメールボックスでのみ実行されることを示します。 テキスト値が**false**の場合は、検索がプライマリメールボックスとアーカイブメールボックスに対して実行されることを示します。 
+**SearchArchiveOnly** 要素のテキスト値 **が true** の場合、インデックス化できないアイテム検索はアーカイブ メールボックスでのみ実行されます。 テキスト値が **false の場合** は、プライマリ メールボックスとアーカイブ メールボックスに対して検索が実行されます。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44460499"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

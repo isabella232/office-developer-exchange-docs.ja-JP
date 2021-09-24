@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: af0d7435-fef6-4f0d-bd22-00e3fa576315
-description: Manifest 要素には、base64 でエンコードされたアプリマニフェストファイルが含まれています。
-ms.openlocfilehash: faac517bf8a8f03c6ae8abffddaf10421eed1699
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Manifest 要素には、base64 エンコードされたアプリ マニフェスト ファイルが含まれます。
+ms.openlocfilehash: 418191c47af0422c2d555b577dd804e02f0e38ce
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530538"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524764"
 ---
 # <a name="manifest"></a>マニフェスト
 
-**Manifest**要素には、base64 でエンコードされたアプリマニフェストファイルが含まれています。 
+**Manifest 要素** には、base64 エンコードされたアプリ マニフェスト ファイルが含まれます。 
   
 ```XML
 <Manifest></Manifest>
@@ -38,11 +38,11 @@ ms.locfileid: "44530538"
   
 ### <a name="parent-elements"></a>親要素
 
-[マニフェスト](manifests.md)  | [Installapp](installapp.md)  | [Clientextension](clientextension.md)
+[マニフェスト](manifests.md)  | [InstallApp](installapp.md)  | [ClientExtension](clientextension.md)
   
 ## <a name="text-value"></a>テキスト値
 
-Manifest 要素のテキスト値は、クライアントアプリケーションマニフェストファイルの base64 バイナリエンコード形式を ASCII で表現したものです。
+Manifest 要素のテキスト値は、クライアント アプリ マニフェスト ファイルの base64 バイナリ エンコード形式の ASCII 表記です。
   
 ## <a name="remarks"></a>注釈
 

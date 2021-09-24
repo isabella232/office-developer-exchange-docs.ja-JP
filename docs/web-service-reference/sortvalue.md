@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ec32b455-59c8-4cf5-978e-bb9f255bc93c
-description: SortValue 要素は、並べ替えに使用する値を指定します。
-ms.openlocfilehash: 099cfe248de893e1b044c3e2228bfa979e9a1243
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SortValue 要素は、並べ替えに使用される値を指定します。
+ms.openlocfilehash: 282879124802c30725b13bd6dbe52edb7739e126
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467257"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521376"
 ---
 # <a name="sortvalue"></a>SortValue
 
-**Sortvalue**要素は、並べ替えに使用する値を指定します。 
+**SortValue 要素** は、並べ替えに使用される値を指定します。 
   
 ```XML
 <SortValue></SortValue>
@@ -38,11 +38,11 @@ ms.locfileid: "44467257"
   
 ### <a name="parent-elements"></a>親要素
 
-[Searchプレビューアイテム](searchpreviewitem.md)  | [Nonindexableitemdetail](nonindexableitemdetail.md)
+[SearchPreviewItem](searchpreviewitem.md)  | [NonIndexableItemDetail](nonindexableitemdetail.md)
   
 ## <a name="text-value"></a>テキスト値
 
-[Sortvalue](sortvalue.md)要素のテキスト値は、結果セットの並べ替えに使用されるフィールドです。 
+[SortValue](sortvalue.md)要素のテキスト値は、結果セットの並べ替えに使用されるフィールドです。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44467257"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 
