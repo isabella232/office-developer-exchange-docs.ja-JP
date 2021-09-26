@@ -1,23 +1,23 @@
 ---
-title: アドレス (ArrayOfAddressesType)
+title: Addresses (ArrayOfAddressesType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 711acc90-8e5b-4658-92d2-16cd441db56e
-description: Addresses 要素は、Address 要素の配列を指定します。
-ms.openlocfilehash: 8b3a62e22cb7fc983fba78517fe4636797d06f5b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Address 要素は、Address 要素の配列を指定します。
+ms.openlocfilehash: a82c2df7bccf3b039f673ab8dc0716358fbd3de7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463623"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546784"
 ---
-# <a name="addresses-arrayofaddressestype"></a>アドレス (ArrayOfAddressesType)
+# <a name="addresses-arrayofaddressestype"></a>Addresses (ArrayOfAddressesType)
 
-**Addresses**要素は、 **Address**要素の配列を指定します。 
+**Address 要素は**、Address 要素の配列を **指定** します。 
   
 ```XML
 <Addresses>
@@ -58,10 +58,10 @@ ms.locfileid: "44463623"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

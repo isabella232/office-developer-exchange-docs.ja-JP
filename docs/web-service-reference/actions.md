@@ -5,25 +5,25 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Actions
 api_type:
 - schema
 ms.assetid: c5aa96b1-2d8b-422f-8c2f-f118572ab23f
-description: Actions 要素は、条件が満たされたときにメッセージに対して実行できる一連のアクションを表します。
-ms.openlocfilehash: 2ac53778b583595fa8be07f2c5110a9e2df16eca
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Actions 要素は、条件が満たされた場合にメッセージに対して実行できる一連のアクションを表します。
+ms.openlocfilehash: 7f6608af5b8a9eb2772228a638fc42b9558f1e42
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465066"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546862"
 ---
 # <a name="actions"></a>アクション
 
-**Actions**要素は、条件が満たされたときにメッセージに対して実行できる一連のアクションを表します。 
+**Actions 要素** は、条件が満たされた場合にメッセージに対して実行できる一連のアクションを表します。 
   
-[ルール (RuleType)](rule-ruletype.md)
+[Rule (RuleType)](rule-ruletype.md)
   
 ```XML
 <Actions>
@@ -56,25 +56,25 @@ ms.locfileid: "44465066"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[カテゴリを割り当てる](assigncategories.md) <br/> |電子メールメッセージにスタンプされている分類項目を表します。  <br/> |
-|[CopyToFolder](copytofolder.md) <br/> |電子メールアイテムがコピーされるフォルダーの ID を指定します。  <br/> |
-|[Delete](delete.md) <br/> |メッセージを [削除済みアイテム] フォルダーに移動するかどうかを示します。  <br/> |
-|[ForwardAsAttachmentToRecipients 添付ファイル](forwardasattachmenttorecipients.md) <br/> |添付ファイルとして転送されるメッセージの送信先の電子メールアドレスを示します。  <br/> |
-|[Forwardトーラス (Pitor)](forwardtorecipients.md) <br/> |メッセージが転送される電子メールアドレスを示します。  <br/> |
-|[マーク (重要)](markimportance.md) <br/> |メッセージに対してスタンプされる重要度を指定します。  <br/> |
-|[MarkAsRead](markasread.md) <br/> |メッセージを開封済みとしてマークするかどうかを示します。  <br/> |
-|[MoveToFolder](movetofolder.md) <br/> |電子メールアイテムの移動先フォルダーの ID を指定します。  <br/> |
-|[PermanentDelete](permanentdelete.md) <br/> |メッセージが完全に削除され、削除済みアイテムフォルダーに保存されないようにするかどうかを示します。  <br/> |
-|[RedirectToRecipients](redirecttorecipients.md) <br/> |メッセージがリダイレクトされる電子メールアドレスを示します。  <br/> |
-|[SendSMSAlertToRecipients](sendsmsalerttorecipients.md) <br/> |短いメッセージサービス (SMS) の通知が送信される携帯電話の番号を示します。  <br/> |
-|[ServerReplyWithMessage](serverreplywithmessage.md) <br/> |を示し. 受信メッセージへの返信として送信されるテンプレートメッセージの ID です。  <br/> |
+|[AssignCategories](assigncategories.md) <br/> |電子メール メッセージにスタンプされているカテゴリを表します。  <br/> |
+|[CopyToFolder](copytofolder.md) <br/> |電子メール アイテムをコピーするフォルダーの ID を識別します。  <br/> |
+|[削除](delete.md) <br/> |メッセージを削除済みアイテム フォルダーに移動するかどうかを示します。  <br/> |
+|[ForwardAsAttachmentToRecipients](forwardasattachmenttorecipients.md) <br/> |メッセージを添付ファイルとして転送する電子メール アドレスを示します。  <br/> |
+|[ForwardToRecipients](forwardtorecipients.md) <br/> |メッセージを転送する電子メール アドレスを示します。  <br/> |
+|[MarkImportance](markimportance.md) <br/> |メッセージにスタンプする重要度を指定します。  <br/> |
+|[MarkAsRead](markasread.md) <br/> |メッセージを読み取りとしてマークするかどうかを示します。  <br/> |
+|[MoveToFolder](movetofolder.md) <br/> |電子メール アイテムを移動するフォルダーの ID を識別します。  <br/> |
+|[PermanentDelete](permanentdelete.md) <br/> |メッセージを完全に削除し、削除済みアイテム フォルダーに保存しないかどうかを示します。  <br/> |
+|[RedirectToRecipients](redirecttorecipients.md) <br/> |メッセージをリダイレクトする電子メール アドレスを示します。  <br/> |
+|[SendSMSAlertToRecipients](sendsmsalerttorecipients.md) <br/> |ショート メッセージ サービス (SMS) アラートを送信する携帯電話番号を示します。  <br/> |
+|[ServerReplyWithMessage](serverreplywithmessage.md) <br/> |示します。 受信メッセージへの返信として送信されるテンプレート メッセージの ID。  <br/> |
 |[StopProcessingRules](stopprocessingrules.md) <br/> |後続のルールを評価するかどうかを示します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ルール (RuleType)](rule-ruletype.md) <br/> |ユーザーのメールボックス内の1つのルールを表します。  <br/> |
+|[Rule (RuleType)](rule-ruletype.md) <br/> |ユーザーのメールボックス内の 1 つのルールを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -89,12 +89,12 @@ ms.locfileid: "44465066"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [条件](conditions.md)
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

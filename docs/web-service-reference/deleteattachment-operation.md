@@ -5,33 +5,33 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DeleteAttachment
 api_type:
 - schema
 ms.assetid: 4d48e595-b98c-48e7-bbeb-cacf91d12a78
-description: DeleteAttachment 操作は、Exchange ストア内の既存のアイテムからファイルおよびアイテムの添付ファイルを削除するために使用されます。
-ms.openlocfilehash: 1d34ce4c5ba1d955989a35dafb8ab3c5d229d505
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: DeleteAttachment 操作は、既存のアイテムからファイルとアイテムの添付ファイルを削除するためにExchangeされます。
+ms.openlocfilehash: bd08776e1f4e75204819ef5463e297e3770a34a4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457334"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546687"
 ---
 # <a name="deleteattachment-operation"></a>DeleteAttachment 操作
 
-DeleteAttachment 操作は、Exchange ストア内の既存のアイテムからファイルおよびアイテムの添付ファイルを削除するために使用されます。
+DeleteAttachment 操作は、既存のアイテムからファイルとアイテムの添付ファイルを削除するためにExchangeされます。
   
 ## <a name="remarks"></a>注釈
 
-この操作により、ID で1つ以上の添付ファイルを削除することができます。
+この操作では、ID によって 1 つ以上の添付ファイルを削除できます。
   
 ## <a name="deleteattachment-request-example"></a>DeleteAttachment 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の DeleteAttachment 要求の例は、アイテムの添付ファイルを削除する方法を示しています。
+DeleteAttachment 要求の次の例は、アイテムの添付ファイルを削除する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -54,9 +54,9 @@ DeleteAttachment 操作は、Exchange ストア内の既存のアイテムから
 
 ### <a name="comments"></a>コメント
 
-添付ファイル識別子は読みやすいように短縮されています。
+読みやすさを維持するために添付ファイル識別子が短縮されました。
   
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 要求では、次の要素が使用されます。
   
@@ -68,7 +68,7 @@ DeleteAttachment 操作は、Exchange ストア内の既存のアイテムから
     
 ## <a name="deleteattachment-response-example"></a>DeleteAttachment 応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
 次の例は、DeleteAttachment 要求に対する正常な応答を示しています。
   
@@ -100,12 +100,12 @@ DeleteAttachment 操作は、Exchange ストア内の既存のアイテムから
 
 ### <a name="comments"></a>コメント
 
-CreateAttachment 操作は、 **RootItemId**と**RootItemChangeKey**を含む AttachmentIdType type の要素を返します。 これらの属性は、DeleteAttachment 要求内の識別子には許可されていません。 DeleteAttachment は、RequestAttachmentIdType 型の要素を使用します。これらの属性は含まれていません。
+CreateAttachment 操作は **、RootItemId** と **RootItemChangeKey** を含む AttachmentIdType 型の要素を返します。 これらの属性は、DeleteAttachment 要求内の識別子には使用できません。 DeleteAttachment は RequestAttachmentIdType 型の要素を使用します。これらの属性は含めではありません。
   
-DeleteAttachment 応答には、親アイテムの ID が含まれています。 アイテムから添付ファイルが削除されると、アイテムの変更キーが変更されます。 新しいアイテム変更キーは、DeleteAttachment 応答から取得できます。
+DeleteAttachment 応答には、親アイテムの ID が含まれます。 アイテムから添付ファイルを削除すると、アイテムの変更キーが変更されます。 新しいアイテム変更キーは、DeleteAttachment 応答から取得できます。
   
 > [!NOTE]
-> 読みやすくするために、 [RootItemId](rootitemid.md) Identifier および changekey が短縮されています。 
+> [RootItemId 識別子と](rootitemid.md)ChangeKey は、読みやすさを維持するために短縮されました。 
   
 ### <a name="successful-response-elements"></a>成功した応答要素
 

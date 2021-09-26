@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 07dedaa8-17aa-4553-b8e2-e3f82c40ae1e
 description: MarkAllItemsAsReadResponse 要素は、MarkAllItemsAsRead 要求への応答を指定します。
-ms.openlocfilehash: 011aa34886b4f50542c68661d9b61be3a3ce3a1f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 1d2900938e63bff47f561646c0fc2a7c280c762e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463889"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547128"
 ---
 # <a name="markallitemsasreadresponse"></a>MarkAllItemsAsReadResponse
 
-**Markallitemsasreadresponse**要素は、 **Markallitemsasread**要求への応答を指定します。 
+**MarkAllItemsAsReadResponse** 要素は **、MarkAllItemsAsRead** 要求への応答を指定します。 
   
 ```XML
 <MarkAllItemsAsReadResponse>
@@ -53,8 +53,8 @@ ms.locfileid: "44463889"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

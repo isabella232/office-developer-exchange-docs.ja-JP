@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ExternalMemberCount
 api_type:
 - schema
 ms.assetid: bd0e82da-7391-4ba3-acb4-31d3517d51d0
 description: ExternalMemberCount 要素は、グループ内の外部メンバーの数を表します。
-ms.openlocfilehash: a01c28a009328e163e151bbf540e8298d27d998b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 5c6c767029a2cd0903a500e9a1f4c391f06449bb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456921"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546526"
 ---
 # <a name="externalmembercount"></a>ExternalMemberCount
 
-**ExternalMemberCount**要素は、グループ内の外部メンバーの数を表します。 
+**ExternalMemberCount** 要素は、グループ内の外部メンバーの数を表します。 
   
 ```XML
 <ExternalMemberCount/>
@@ -44,7 +44,7 @@ ms.locfileid: "44456921"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[メールヒント](mailtips.md) <br/> |さまざまな種類のメールヒントの値を表します。  <br/> |
+|[メールヒント](mailtips.md) <br/> |さまざまな種類のメール ヒントの値を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -59,13 +59,13 @@ ms.locfileid: "44456921"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

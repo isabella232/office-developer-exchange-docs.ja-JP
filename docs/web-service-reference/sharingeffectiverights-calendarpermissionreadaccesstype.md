@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SharingEffectiveRights
 api_type:
 - schema
 ms.assetid: b519f642-a9ef-4300-92e6-ed8202855fde
-description: SharingEffectiveRights 要素は、共有されている予定表データに対してユーザーが持っているアクセス許可を示します。
-ms.openlocfilehash: 5581e9cc001608a124ae94e69eba836f6fd98520
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SharingEffectiveRights 要素は、共有されている予定表データに対してユーザーが持つアクセス許可を示します。
+ms.openlocfilehash: d1e669b70ad816cc24e34554a116159025e267e6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458580"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547072"
 ---
 # <a name="sharingeffectiverights-calendarpermissionreadaccesstype"></a>SharingEffectiveRights (CalendarPermissionReadAccessType)
 
-**SharingEffectiveRights**要素は、共有されている予定表データに対してユーザーが持っているアクセス許可を示します。 
+**SharingEffectiveRights** 要素は、共有されている予定表データに対してユーザーが持つアクセス許可を示します。 
   
 ```XML
 <SharingEffectiveRights>None | TimeOnly | TimeAndSubjectAndLocation | FullDetails</SharingEffectiveRights>
@@ -48,14 +48,14 @@ ms.locfileid: "44458580"
    
 ## <a name="text-value"></a>テキスト値
 
-次の表に、 **SharingEffectiveRights**要素に指定できる値を示します。 
+次の表に **、SharingEffectiveRights 要素で使用できる値を示** します。 
   
 |**値**|**説明**|
 |:-----|:-----|
-|なし  <br/> |ユーザーが予定表のアイテムを表示する権限を持っていないことを示します。  <br/> |
-|TimeOnly  <br/> |ユーザーが予定表の空き時間情報のみを表示するアクセス許可を持っていることを示します。  <br/> |
-|TimeAndSubjectAndLocation  <br/> |ユーザーが予定表の空き時間情報を表示するためのアクセス許可と、予定の件名と場所を表示できることを示します。  <br/> |
-|FullDetails  <br/> |ユーザーが予定表のすべてのアイテムを表示するためのアクセス許可を持っていることを示します。空き時間情報、件名、場所、および予定の詳細が含まれます。  <br/> |
+|なし  <br/> |ユーザーに予定表内のアイテムを表示するアクセス許可が付与されていないかどうかを示します。  <br/> |
+|TimeOnly  <br/> |ユーザーが予定表の空き時間のみ表示するアクセス許可を持っているかどうかを示します。  <br/> |
+|TimeAndSubjectAndLocation  <br/> |ユーザーが予定表の空き時間情報と予定の件名と場所を表示するアクセス許可を持っているかどうかを示します。  <br/> |
+|FullDetails  <br/> |ユーザーが予定表内のすべてのアイテム (空き時間と件名、場所、予定の詳細など) を表示する権限を持っているかどうかを示します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -66,13 +66,13 @@ ms.locfileid: "44458580"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -1,27 +1,27 @@
 ---
-title: Forwardトーラス (Pitor)
+title: ForwardToRecipients
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ForwardToRecipients
 api_type:
 - schema
 ms.assetid: dd58fd72-591d-4891-b226-465bcf12c19b
-description: ForwardToRecipients 要素は、メッセージの転送先の電子メールアドレスを示します。
-ms.openlocfilehash: d565fa9f59794a4e10e91b05a507354a2f6ef0c9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ForwardToRecipients 要素は、転送するメッセージの電子メール アドレスを示します。
+ms.openlocfilehash: 8fcf93f01493fb558ed3c0a1982387dae101e598
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458321"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546442"
 ---
-# <a name="forwardtorecipients"></a>Forwardトーラス (Pitor)
+# <a name="forwardtorecipients"></a>ForwardToRecipients
 
-**Forwardtorecipients**要素は、メッセージの転送先の電子メールアドレスを示します。 
+**ForwardToRecipients** 要素は、転送するメッセージの電子メール アドレスを示します。 
   
 ```XML
 <ForwardToRecipients>
@@ -42,13 +42,13 @@ ms.locfileid: "44458321"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Address (EmailAddressType)](address-emailaddresstype.md) <br/> |完全に解決された電子メールアドレスを表します。  <br/> |
+|[Address (EmailAddressType)](address-emailaddresstype.md) <br/> |完全に解決された電子メール アドレスを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Actions](actions.md) <br/> |条件が満たされたときに、メッセージに対して実行できるアクションのセットを表します。  <br/> |
+|[Actions](actions.md) <br/> |条件が満たされた場合にメッセージに対して実行できる一連のアクションを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -63,13 +63,13 @@ ms.locfileid: "44458321"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fccdedc0-83ed-4bb7-a1d2-623e70d1a7bf
-description: SourceId 要素は、ペルソナの属性付き連絡先の識別子を指定します。
-ms.openlocfilehash: a795f9fa2cc2084bee34c82b6df9567c79d430eb
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SourceId 要素は、ペルサの属性付き連絡先の識別子を指定します。
+ms.openlocfilehash: 7b57044c0a3b4f36199e9e14db8dcfe8ea7126eb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465759"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546981"
 ---
 # <a name="sourceid"></a>SourceId
 
-**SourceId**要素は、ペルソナの属性付き連絡先の識別子を指定します。 
+**SourceId 要素** は、ペルサの属性付き連絡先の識別子を指定します。 
   
 ```XML
 <SourceId Id="" ChangeKey=""/>
@@ -32,8 +32,8 @@ ms.locfileid: "44465759"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|ID  <br/> |**Id**属性のテキスト値は、連絡先の識別子です。  <br/> |
-|ChangeKey  <br/> |**Changekey**属性のテキスト値は、連絡先の変更キーです。  <br/> |
+|ID  <br/> |Id 属性のテキスト **値** は連絡先の識別子です。  <br/> |
+|ChangeKey  <br/> |ChangeKey 属性の **テキスト値** は、連絡先の変更キーです。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -41,7 +41,7 @@ ms.locfileid: "44465759"
   
 ### <a name="parent-elements"></a>親要素
 
-[属性 (PersonaAttributionType)](attribution-personaattributiontype.md)
+[Attribution (PersonaAttributionType)](attribution-personaattributiontype.md)
   
 ## <a name="remarks"></a>注釈
 
@@ -54,8 +54,8 @@ ms.locfileid: "44465759"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

@@ -1,28 +1,28 @@
 ---
-title: SetTelephoneAccessFolderEmailResponse (UM web サービス)
+title: SetTelephoneAccessFolderEmailResponse (UM Web サービス)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SetTelephoneAccessFolderEmailResponse
 api_type:
 - schema
 ms.assetid: 01d07114-5764-4ea7-948c-1ae95c287f0c
-description: SetTelephoneAccessFolderEmailResponse 要素は、SetTelephoneAccessFolderEmail 操作 (UM web サービス) 要求に対する応答を定義します。
-ms.openlocfilehash: 85f0f764b2a6a1555fb03d31fbe91bf3d6e2f701
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SetTelephoneAccessFolderEmailResponse 要素は、SetTelephoneAccessFolderEmail 操作 (UM Web サービス) 要求への応答を定義します。
+ms.openlocfilehash: 38b019636e5a4f86912256c0b63cb30f8d283247
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467313"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547086"
 ---
-# <a name="settelephoneaccessfolderemailresponse-um-web-service"></a>SetTelephoneAccessFolderEmailResponse (UM web サービス)
+# <a name="settelephoneaccessfolderemailresponse-um-web-service"></a>SetTelephoneAccessFolderEmailResponse (UM Web サービス)
 
-**SetTelephoneAccessFolderEmailResponse**要素は、 [SETTELEPHONEACCESSFOLDEREMAIL 操作 (UM web サービス)](settelephoneaccessfolderemail-operation-um-web-service.md)要求に対する応答を定義します。 
+**SetTelephoneAccessFolderEmailResponse** 要素は [、SetTelephoneAccessFolderEmail 操作 (UM Web サービス)](settelephoneaccessfolderemail-operation-um-web-service.md)要求への応答を定義します。 
   
-[SetTelephoneAccessFolderEmailResponse (UM web サービス)](settelephoneaccessfolderemailresponse-um-web-service.md)
+[SetTelephoneAccessFolderEmailResponse (UM Web サービス)](settelephoneaccessfolderemailresponse-um-web-service.md)
   
 ```xml
 <SetTelephoneAccessFolderEmailResponse />
@@ -55,12 +55,12 @@ ms.locfileid: "44467313"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |スキーマ名  <br/> |メッセージ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[SetTelephoneAccessFolderEmail 操作 (UM web サービス)](settelephoneaccessfolderemail-operation-um-web-service.md)
+[SetTelephoneAccessFolderEmail 操作 (UM Web サービス)](settelephoneaccessfolderemail-operation-um-web-service.md)
 

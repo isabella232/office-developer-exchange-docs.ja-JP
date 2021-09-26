@@ -1,28 +1,28 @@
 ---
-title: SetOofStatus (UM web サービス)
+title: SetOofStatus (UM Web サービス)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SetOofStatus
 api_type:
 - schema
 ms.assetid: 9fc0ea9c-7a98-4fd7-a90c-cf5639c63a3a
-description: SetOofStatus 要素は、要求を行うユーザーのユニファイドメッセージング不在 (OOF) 状態を設定するための要求を定義します。
-ms.openlocfilehash: 86e056a440e282cd444cfd405e452720b26b7456
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SetOofStatus 要素は、要求を行うユーザーに対して、Office からのユニファイド メッセージング (OOF) 状態を設定する要求を定義します。
+ms.openlocfilehash: efbf7e331fbe736f2dd08c8df104550457e50dd8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467068"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547115"
 ---
-# <a name="setoofstatus-um-web-service"></a>SetOofStatus (UM web サービス)
+# <a name="setoofstatus-um-web-service"></a>SetOofStatus (UM Web サービス)
 
-**Setoofstatus**要素は、要求を行うユーザーのユニファイドメッセージング不在 (OOF) 状態を設定するための要求を定義します。 
+**SetOofStatus** 要素は、要求を行うユーザーに対してユニファイド メッセージング Office (OOF) 状態を設定する要求を定義します。 
   
-[SetOofStatus (UM web サービス)](setoofstatus-um-web-service.md)
+[SetOofStatus (UM Web サービス)](setoofstatus-um-web-service.md)
   
 ```xml
 <SetOofStatus>
@@ -43,7 +43,7 @@ ms.locfileid: "44467068"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[状態 (UM web サービス-SetOofStatus)](status-um-web-servicesetoofstatus.md) <br/> |[Setoofstatus 操作 (UM web サービス)](setoofstatus-operation-um-web-service.md)要求で使用する値を定義します。  <br/> |
+|[状態 (UM Web サービス - SetOofStatus)](status-um-web-servicesetoofstatus.md) <br/> |[SetOofStatus 操作 (UM Web サービス)](setoofstatus-operation-um-web-service.md)要求で使用する値を定義します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -59,14 +59,14 @@ ms.locfileid: "44467068"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |スキーマ名  <br/> |メッセージ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[SetOofStatus 操作 (UM web サービス)](setoofstatus-operation-um-web-service.md)
+[SetOofStatus 操作 (UM Web サービス)](setoofstatus-operation-um-web-service.md)
   
-[状態 (UM web サービス-SetOofStatus)](status-um-web-servicesetoofstatus.md)
+[状態 (UM Web サービス - SetOofStatus)](status-um-web-servicesetoofstatus.md)
 

@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 75f988f3-0b04-470c-8943-fb1f4fef9a87
-description: FirstLoadedRowIndex 要素は、内部使用のみを目的としています。
-ms.openlocfilehash: 0dbb5c08e03e5283e34cf38db0b9e371c5f92393
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: FirstLoadedRowIndex 要素は内部での使用のみを目的とします。
+ms.openlocfilehash: 14269da1e78d6803989c175f6e7515349a343d26
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466361"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546477"
 ---
 # <a name="firstloadedrowindex"></a>FirstLoadedRowIndex
 
-**FirstLoadedRowIndex**要素は、内部使用のみを目的としています。 
+**FirstLoadedRowIndex** 要素は内部での使用のみを目的とします。 
 
 ## <a name="attributes-and-elements"></a>属性と要素
 

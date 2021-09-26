@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SubscriptionStatus
 api_type:
 - schema
 ms.assetid: 2d64ebb7-f26a-4d02-b7ef-d9d7da75f0c3
-description: SubscriptionStatus 要素は、プッシュサブスクリプションの状態を表します。
-ms.openlocfilehash: 195ab229380f4386b39e5c3fd48208cf66e224f0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SubscriptionStatus 要素は、プッシュ サブスクリプションの状態を表します。
+ms.openlocfilehash: 6918a4965da2c075341c99581c3bd06c93da35fa
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530945"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546932"
 ---
 # <a name="subscriptionstatus"></a>SubscriptionStatus
 
-**Subscriptionstatus**要素は、プッシュサブスクリプションの状態を表します。 
+**SubscriptionStatus 要素** は、プッシュ サブスクリプションの状態を表します。 
   
 ```xml
 <SubscriptionStatus>OK or Unsubscribe</SubscriptionStatus>
@@ -44,11 +44,11 @@ ms.locfileid: "44530945"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[SendNotificationResult](sendnotificationresult.md) <br/> |プッシュ通知に対するクライアントアプリケーションの応答を含みます。  <br/> |
+|[SendNotificationResult](sendnotificationresult.md) <br/> |プッシュ通知に対するクライアント アプリケーションの応答を格納します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は必須です。 この要素に使用できるテキスト値は次のとおりです。
+テキスト値は必須です。 この要素で使用できるテキスト値を次に示します。
   
 - OK
     
@@ -56,22 +56,22 @@ ms.locfileid: "44530945"
     
 ## <a name="remarks"></a>注釈
 
-この要素は、サブスクリプションの状態を表します。 プッシュサブスクリプションクライアントアプリケーションは、各プッシュ通知の後にクライアントアクセスサーバーの役割がインストールされている、Exchange 2007 を実行しているコンピューターにステータスを送り返します。 **Subscriptionstatus**の値が**購読の取り消し**に等しい場合、クライアントアクセスサーバーは通知の送信を停止し、サブスクリプションを終了します。 **Subscriptionstatus**の値が**OK**の場合、クライアントアクセスサーバーは引き続き通知を送信します。
+この要素は、サブスクリプションの状態を説明します。 プッシュ サブスクリプション クライアント アプリケーションは、プッシュ通知の後にクライアント アクセス サーバーの役割がインストールされている Exchange 2007 を実行しているコンピューターに状態を戻します。 **SubscriptionStatus 値が** Unsubscribeと等しい場合、クライアント アクセス サーバーは通知の送信を停止し、サブスクリプションを終了します。 **SubscriptionStatus の値が** **OK** の場合、クライアント アクセス サーバーは引き続き通知を送信します。
   
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

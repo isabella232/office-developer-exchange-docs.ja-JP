@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 556457d5-a730-4131-853f-1198c27c5942
-description: ImItemList 要素には、インスタントメッセージンググループとインスタントメッセージングの連絡先の一覧が含まれています。
-ms.openlocfilehash: 976897fd999b61207a94a8b1dc60cc1b1308acd8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ImItemList 要素には、インスタント メッセージング グループとインスタント メッセージング連絡先の一覧が含まれる。
+ms.openlocfilehash: fdd2865ceb1553a7f75d7059b08ea96ce89aa096
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460674"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547247"
 ---
 # <a name="imitemlist"></a>ImItemList
 
-**Imitemlist**要素には、インスタントメッセージンググループとインスタントメッセージングの連絡先の一覧が含まれています。 
+**ImItemList 要素** には、インスタント メッセージング グループとインスタント メッセージング連絡先の一覧が含まれる。 
   
 ```XML
 <ImItemList>
@@ -37,11 +37,11 @@ ms.locfileid: "44460674"
   
 ### <a name="child-elements"></a>子要素
 
-[グループ (ArrayOfImGroupType)](groups-arrayofimgrouptype.md)  | [ペルソナ](personas-ex15websvcsotherref.md)
+[グループ (ArrayOfImGroupType)](groups-arrayofimgrouptype.md)  | [ペルサ](personas-ex15websvcsotherref.md)
   
 ### <a name="parent-elements"></a>親要素
 
-[Getimitemsresponse](getimitemsresponse.md)  | [Getimitemlistresponse](getimitemlistresponse.md)
+[GetImItemsResponse](getimitemsresponse.md)  | [GetImItemListResponse](getimitemlistresponse.md)
   
 ## <a name="remarks"></a>注釈
 
@@ -54,8 +54,8 @@ ms.locfileid: "44460674"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

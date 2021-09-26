@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GroupedItems
 api_type:
 - schema
 ms.assetid: 53170df4-4272-4b37-b23f-cd8e2d4a7396
 description: GroupedItems 要素は、グループ化された FindItem 操作呼び出しの結果であるアイテムのコレクションを表します。
-ms.openlocfilehash: 0ee1ca3c6d0cf98e2daefa60a1cb1fd096cda478
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 17848b1b36a60dd935c67dcdf9ed9640d8d3fa1e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530812"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547352"
 ---
 # <a name="groupeditems"></a>GroupedItems
 
-**Groupeditems**要素は、グループ化された[FindItem 操作](finditem-operation.md)呼び出しの結果であるアイテムのコレクションを表します。 
+**GroupedItems 要素** は、グループ化された FindItem 操作呼び出しの結果であるアイテムの [コレクションを表](finditem-operation.md)します。 
   
 [FindItemResponse](finditemresponse.md)
   
@@ -31,7 +31,7 @@ ms.locfileid: "44530812"
   
 [RootFolder (FindItemResponseMessage)](rootfolder-finditemresponsemessage.md)
   
-[Groups](groups.md)
+[グループ](groups.md)
   
 [GroupedItems](groupeditems.md)
   
@@ -55,27 +55,27 @@ ms.locfileid: "44530812"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[GroupIndex](groupindex.md) <br/> |グループ化された[FindItem 操作](finditem-operation.md)の呼び出しでアイテムをグループ化するために使用されるプロパティの値を表します。  <br/> |
-|[Items](items.md) <br/> |グループ化されたアイテムの配列を格納します。  <br/> |
+|[GroupIndex](groupindex.md) <br/> |グループ化された FindItem 操作呼び出しのアイテムをグループ化するために使用されるプロパティ [値を表](finditem-operation.md) します。  <br/> |
+|[Items](items.md) <br/> |グループ化されたアイテムの配列を含む。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Groups](groups.md) <br/> |[FindItem 操作](finditem-operation.md)要求で識別される検索および集約条件を含むグループのコレクションが含まれています。  <br/> |
+|[グループ](groups.md) <br/> |FindItem 操作要求で識別される検索および集計条件で見つかったグループの [コレクションが含](finditem-operation.md) まれます。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -1,23 +1,23 @@
 ---
-title: Includeパーソナルアーカイブ
+title: IncludePersonalArchive
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b373bb1a-6b1d-4959-98a1-4c4ea62973bc
-description: Includeな Archive 要素は、検索に個人用アーカイブを含めるかどうかを指定します。
-ms.openlocfilehash: a25dd45bc0717af8f949d14b88793af3821ca69f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: IncludePersonalArchive 要素は、個人用アーカイブを検索に含めるかどうかを指定します。
+ms.openlocfilehash: 2567475fbb2542c7d01e651f2d348f6f91d50b78
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458251"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547219"
 ---
-# <a name="includepersonalarchive"></a>Includeパーソナルアーカイブ
+# <a name="includepersonalarchive"></a>IncludePersonalArchive
 
-**Includeな archive**要素は、検索に個人用アーカイブを含めるかどうかを指定します。 
+**IncludePersonalArchive 要素は**、個人用アーカイブを検索に含めるかどうかを指定します。 
   
 ```XML
 <IncludePersonalArchive>true | false</IncludePersonalArchive>
@@ -40,11 +40,11 @@ ms.locfileid: "44458251"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FindMailboxStatisticsByKeywords](findmailboxstatisticsbykeywords.md) <br/> |キーワードでメールボックス統計情報を検索する要求を指定します。  <br/> |
+|[FindMailboxStatisticsByKeywords](findmailboxstatisticsbykeywords.md) <br/> |キーワードによってメールボックスの統計情報を検索する要求を指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**Includeパーソナルアーカイブ**要素のテキスト値が**true の場合**は、個人用アーカイブが検索に含まれていることを示します。 値が**false**の場合は、個人用アーカイブが検索に含まれていないことを示します。 
+**IncludePersonalArchive** 要素のテキスト値 **true** は、個人用アーカイブが検索に含まれているかどうかを示します。 false の **値は** 、個人用アーカイブが検索に含まれていないかどうかを示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,13 +55,13 @@ ms.locfileid: "44458251"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

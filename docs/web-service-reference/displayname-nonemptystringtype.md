@@ -1,23 +1,23 @@
 ---
-title: DisplayName (非 Emptystringtype)
+title: DisplayName (NonEmptyStringType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 283322f9-8022-4e8b-a7e2-d5521cda00f4
-description: DisplayName 要素には、新しいインスタントメッセージンググループの連絡先の表示名または新しいインスタントメッセージンググループの表示名が含まれます。
-ms.openlocfilehash: 0b1dff63583c5b449980288134fb83c0256e2e8c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: DisplayName 要素には、新しいインスタント メッセージング グループ連絡先の表示名、または新しいインスタント メッセージング グループの表示名が含まれる。
+ms.openlocfilehash: 1fc82a7472e43c31d774bbcc260bdf9c96b908c8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463665"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547527"
 ---
-# <a name="displayname-nonemptystringtype"></a>DisplayName (非 Emptystringtype)
+# <a name="displayname-nonemptystringtype"></a>DisplayName (NonEmptyStringType)
 
-**DisplayName**要素には、新しいインスタントメッセージンググループの連絡先の表示名または新しいインスタントメッセージンググループの表示名が含まれます。 
+**DisplayName 要素** には、新しいインスタント メッセージング グループ連絡先の表示名、または新しいインスタント メッセージング グループの表示名が含まれる。 
   
 ```XML
 <DisplayName></DisplayName>
@@ -38,11 +38,11 @@ ms.locfileid: "44463665"
   
 ### <a name="parent-elements"></a>親要素
 
-[Adddeploy Grouptoimlist](adddistributiongrouptoimlist.md)  | [Addimgroup](addimgroup.md)  | [AddNewImContactToGroup](addnewimcontacttogroup.md)  | [Imgroup](imgroup.md)
+[AddDistributionGroupToImList](adddistributiongrouptoimlist.md)  | [AddImGroup](addimgroup.md)  | [AddNewImContactToGroup](addnewimcontacttogroup.md)  | [ImGroup](imgroup.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**DisplayName**要素のテキスト値は、新しいインスタントメッセージンググループの連絡先の表示名、または新しいインスタントメッセージンググループの表示名です。 
+DisplayName 要素の **テキスト値** は、新しいインスタント メッセージング グループ連絡先の表示名、または新しいインスタント メッセージング グループの表示名です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44463665"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

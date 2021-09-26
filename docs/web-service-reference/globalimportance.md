@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GlobalImportance
 api_type:
 - schema
 ms.assetid: 8bcec699-e771-4f38-b7d9-61f324af1b4e
-description: GlobalImportance 度要素には、メールボックス内のすべての会話アイテムの集約された重要度が含まれています。
-ms.openlocfilehash: c760168afa3edac20ca0ae7bc677610d8456d178
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GlobalImportance 要素には、メールボックス内のすべての会話アイテムの集計重要度が含まれます。
+ms.openlocfilehash: 52564ee9d3431ffcacf15fd1731d5d50f5323db7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459448"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547387"
 ---
 # <a name="globalimportance"></a>GlobalImportance
 
-**Globalimportance 度**要素には、メールボックス内のすべての会話アイテムの集約された重要度が含まれています。 
+**GlobalImportance 要素** には、メールボックス内のすべての会話アイテムの集計重要度が含まれます。 
   
 [FindConversationResponse](findconversationresponse.md)
   
 [会話](conversations-ex15websvcsotherref.md)
   
-[会話 (ConversationType)](conversation-conversationtype.md)
+[Conversation (ConversationType)](conversation-conversationtype.md)
   
 [GlobalImportance](globalimportance.md)
   
@@ -52,13 +52,13 @@ ms.locfileid: "44459448"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[会話 (ConversationType)](conversation-conversationtype.md) <br/> |単一の会話を表します。  <br/> |
+|[Conversation (ConversationType)](conversation-conversationtype.md) <br/> |1 つの会話を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は必須です。 この要素に使用できる値は次のとおりです。
+テキスト値は必須です。 この要素で使用できる値は次のとおりです。
   
-- 低
+- 低い
     
 - 標準
     
@@ -66,16 +66,16 @@ ms.locfileid: "44459448"
     
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
+この要素を記述するスキーマは、Exchange Web Services をホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

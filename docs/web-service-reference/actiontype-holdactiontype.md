@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f50449b9-e73b-43c5-af96-6433bf434dce
-description: ActionType 要素は、保留のアクションの種類を示します。
-ms.openlocfilehash: 8f2796df818dac2bd285b055aa44fbcecd0de5e6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ActionType 要素は、保留リストのアクションの種類を示します。
+ms.openlocfilehash: 30028da4df2a53a4cd0066823872de5e586020f1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457859"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546841"
 ---
 # <a name="actiontype-holdactiontype"></a>ActionType (HoldActionType)
 
-**ActionType**要素は、保留のアクションの種類を示します。 
+**ActionType 要素** は、保留リストのアクションの種類を示します。 
   
 ```XML
 <ActionType> Create | Update | Remove </ActionType>
@@ -42,7 +42,7 @@ ms.locfileid: "44457859"
   
 ## <a name="text-value"></a>テキスト値
 
-**ActionType**要素のテキスト値は、メールボックスの保留セットの種類です。 **Create**のテキスト値は、メールボックスの保持が作成されることを示します。 **Update**のテキスト値は、メールボックスの保持が更新されることを示します。 テキスト値**Remove**は、メールボックスの保持が削除されることを示します。 
+ActionType 要素の **テキスト値** は、メールボックスに設定されたホールドの種類です。 Create のテキスト **値は** 、メールボックスの保持が作成されます。 Update のテキスト **値は** 、メールボックスの保持が更新されるかどうかを示します。 [削除] のテキスト **値は** 、メールボックスの保持が削除されます。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44457859"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

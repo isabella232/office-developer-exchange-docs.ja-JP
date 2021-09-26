@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GlobalItemIds
 api_type:
 - schema
 ms.assetid: b0f03ce0-a4c3-47de-9360-a880a3606e42
-description: GlobalItemIds 要素には、メールボックス内のすべての会話アイテムのアイテム識別子のコレクションが含まれています。
-ms.openlocfilehash: aa656e7f2fb78dafe5bf6013c1f7ad14e2372ba1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GlobalItemIds 要素には、メールボックス内のすべての会話アイテムのアイテム識別子のコレクションが含まれます。
+ms.openlocfilehash: 8422bb6824eae78f2a7c17553385a439c693e0dd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459427"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547373"
 ---
 # <a name="globalitemids"></a>GlobalItemIds
 
-**Globalitemids**要素には、メールボックス内のすべての会話アイテムのアイテム識別子のコレクションが含まれています。 
+**GlobalItemIds 要素** には、メールボックス内のすべての会話アイテムのアイテム識別子のコレクションが含まれます。 
   
 [FindConversationResponse](findconversationresponse.md)
   
 [会話](conversations-ex15websvcsotherref.md)
   
-[会話 (ConversationType)](conversation-conversationtype.md)
+[Conversation (ConversationType)](conversation-conversationtype.md)
   
 [GlobalItemIds](globalitemids.md)
   
@@ -39,7 +39,7 @@ ms.locfileid: "44459427"
 </ItemIds>
 ```
 
- **非 Emptyarrayofbaseitemidstype**
+ **NonEmptyArrayOfBaseItemIdsType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -52,15 +52,15 @@ ms.locfileid: "44459427"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ItemId](itemid.md) <br/> |Exchange ストア内のアイテムの一意識別子および変更キーが含まれています。  <br/> |
-|[OccurrenceItemId](occurrenceitemid.md) <br/> |定期的なアイテムの1回の出現を識別します。  <br/> |
-|[RecurringMasterItemId](recurringmasteritemid.md) <br/> |関連するオカレンスアイテムの識別子の1つを識別することによって、定期的なアイテムのマスターアイテムを識別します。  <br/> |
+|[ItemId](itemid.md) <br/> |ストア内のアイテムの一意の識別子と変更キー Exchangeします。  <br/> |
+|[OccurrenceItemId](occurrenceitemid.md) <br/> |定期的なアイテムの 1 回の出現を識別します。  <br/> |
+|[RecurringMasterItemId](recurringmasteritemid.md) <br/> |関連するアイテムの識別子の 1 つを識別して、定期的なマスター アイテムを識別します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[会話 (ConversationType)](conversation-conversationtype.md) <br/> |単一の会話を表します。  <br/> |
+|[Conversation (ConversationType)](conversation-conversationtype.md) <br/> |1 つの会話を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -68,16 +68,16 @@ ms.locfileid: "44459427"
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
+この要素を記述するスキーマは、Exchange Web Services をホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -1,23 +1,23 @@
 ---
-title: 所属
+title: Departments
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a0a6b0a4-f0dd-4945-af69-628da93f5452
-description: Department 要素は、部署名の配列と、関連付けられたペルソナのソース attributions の識別子を指定します。
-ms.openlocfilehash: 17590793e00a914cb53b479994bcc89e37bb0e31
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Departments 要素は、部署名の配列と、関連付けられたペルサのソース属性の識別子を指定します。
+ms.openlocfilehash: 9c0cc12777b03d7fa8499579907f4ba2184931e7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467936"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546666"
 ---
-# <a name="departments"></a>所属
+# <a name="departments"></a>Departments
 
-Department**要素は、部署**名の配列と、関連付けられたペルソナのソース attributions の識別子を指定します。 
+**Departments 要素** は、部署名の配列と、関連付けられたペルサのソース属性の識別子を指定します。 
   
 ```XML
 <Departments>
@@ -38,13 +38,13 @@ Department**要素は、部署**名の配列と、関連付けられたペルソ
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[StringAttributedValue](stringattributedvalue.md) <br/> |Persona 要素に関連付けられている属性の配列のインスタンスを指定します。  <br/> |
+|[StringAttributedValue](stringattributedvalue.md) <br/> |ペルサ要素に関連付けられた属性の配列内のインスタンスを指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ユーザー](persona.md) <br/> |**Getpersona**要求によって返される一連のペルソナデータを指定します。  <br/> |
+|[ユーザー](persona.md) <br/> |**GetPersona** 要求によって返されるペルソナ データのセットを指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -58,10 +58,10 @@ Department**要素は、部署**名の配列と、関連付けられたペルソ
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

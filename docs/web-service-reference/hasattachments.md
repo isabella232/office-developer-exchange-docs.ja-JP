@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - HasAttachments
 api_type:
 - schema
 ms.assetid: 538b7a85-11d7-4daa-8458-09b540760e8b
-description: HasAttachments 要素は、アイテムに少なくとも1つの添付ファイルがある場合、または添付ファイルを持つアイテムが1つ以上含まれている場合に、true に設定されるプロパティを表します。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。
-ms.openlocfilehash: cc4e4ec0eac1c749723facc8cd780da41b0d8150
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: HasAttachments 要素は、アイテムに表示される添付ファイルが少なくとも 1 つある場合、または添付ファイルを持つアイテムが会話に少なくとも 1 つ含まれている場合に true に設定されるプロパティを表します。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。
+ms.openlocfilehash: dea1ffdc5ae29a0bc7c585e0ebee9ed104143c53
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462923"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547289"
 ---
 # <a name="hasattachments"></a>HasAttachments
 
-**Hasattachments**要素は、アイテムに少なくとも1つの添付ファイルがある場合、または添付ファイルを持つアイテムが1つ以上含まれている場合に、 **true**に設定されるプロパティを表します。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 
+**HasAttachments** 要素は、アイテムに表示される添付ファイルが少なくとも 1 つある場合、または添付ファイルを持つアイテムが会話に少なくとも 1 つ含まれている場合に true に設定されるプロパティを表します。 このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 
   
 ```XML
 <HasAttachments/>
@@ -44,27 +44,27 @@ ms.locfileid: "44462923"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
-|[条件](conditions.md) <br/> |そのルールのルールの処理を開始するときに実行される条件を表します。  <br/> |
-|[Contact](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
-|[会話 (ConversationType)](conversation-conversationtype.md) <br/> |単一の会話を表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |予定表アイテムのExchangeを表します。  <br/> |
+|[条件](conditions.md) <br/> |満たされると、そのルールのルール アクションをトリガーする条件を表します。  <br/> |
+|[Contact](contact.md) <br/> |連絡先アイテムExchangeを表します。  <br/> |
+|[Conversation (ConversationType)](conversation-conversationtype.md) <br/> |1 つの会話を表します。  <br/> |
 |[DistributionList](distributionlist.md) <br/> |配布リストを表します。  <br/> |
-|[例外](exceptions.md) <br/> |受信トレイルールの利用可能なすべてのルールの例外条件を表します。  <br/> |
-|[Item](item.md) <br/> |Exchange ストア内のアイテムを表します。  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |Exchange ストア内の会議の取り消しを表します。  <br/> |
-|[MeetingMessage](meetingmessage.md) <br/> |Exchange ストア内の会議を表します。  <br/> |
-|[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議出席依頼を表します。  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |Exchange ストア内の会議の応答を表します。  <br/> |
-|[Message](message-ex15websvcsotherref.md) <br/> |Exchange 電子メールメッセージを表します。  <br/> |
-|[タスク](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
+|[例外](exceptions.md) <br/> |受信トレイ ルールで使用可能なすべてのルール例外条件を表します。  <br/> |
+|[項目](item.md) <br/> |ストア内のアイテムをExchangeします。  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |会議ストアでの会議の取り消しExchangeします。  <br/> |
+|[MeetingMessage](meetingmessage.md) <br/> |ユーザー ストア内の会議Exchangeします。  <br/> |
+|[MeetingRequest](meetingrequest.md) <br/> |ユーザー ストア内の会議出席依頼Exchangeします。  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |会議ストアの会議の応答Exchangeします。  <br/> |
+|[Message](message-ex15websvcsotherref.md) <br/> |電子メール メッセージExchangeを表します。  <br/> |
+|[タスク](task.md) <br/> |ストア内のタスクをExchangeします。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-ブール値を表すテキスト値が必要です。 値が**true**の場合は、アイテムまたはスレッドに表示されている添付ファイルが1つ以上あることを意味します。 値が**false**の場合は、アイテムまたは会話に添付ファイルがないか、または添付ファイルのみが含まれていることを意味します。 
+ブール値を表すテキスト値が必要です。 true の値 **は** 、アイテムまたは会話に表示される添付ファイルが少なくとも 1 つ含むという意味です。 false の **値は** 、アイテムまたは会話に添付ファイルがないか、非表示の添付ファイルのみを持つという意味です。 
   
 ## <a name="remarks"></a>注釈
 
-**Hasattachments**プロパティは、ブール値の**AllAttachmentsHidden** MAPI プロパティから計算されます。 アイテムに添付ファイルがない場合、 **AllAttachmentsHidden**プロパティは存在しません。 アイテムのすべての添付ファイルが非表示になっている場合、 **AllAttachmentsHidden**プロパティは**true**になります。 少なくとも1つの添付ファイルがあり、少なくとも1つの添付ファイルが表示されている場合、 **AllAttachmentsHidden**プロパティは**false**になります。 **AllAttachmentsHidden** MAPI プロパティを使用して、アイテムの検索、グループ化、および並べ替えを行います。 
+**HasAttachments** プロパティは **、Boolean AllAttachmentsHidden** MAPI プロパティから計算されます。 アイテムに添付ファイルが存在しない場合 **、AllAttachmentsHidden** プロパティは存在しません。 アイテムのすべての添付ファイルが非表示の場合 **、AllAttachmentsHidden** プロパティは true **です**。 **AllAttachmentsHidden** プロパティが少なくとも 1 つの添付ファイルを持ち、少なくとも 1 つの添付ファイルが表示されている場合は false です。 アイテムの **検索、グループ化、並べ替えには、AllAttachmentsHidden** MAPI プロパティを使用します。 
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
@@ -73,15 +73,15 @@ ms.locfileid: "44462923"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
   
 [Exchange 用 EWS リファレンス](ews-reference-for-exchange.md)
 

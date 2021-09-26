@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GroupIndex
 api_type:
 - schema
 ms.assetid: 7a596ff7-6cc3-4626-a52c-538a92202337
-description: GroupIndex 要素は、FindItem 操作呼び出しで現在のアイテムグループのアイテムをグループ化するために使用されるプロパティの値を表します。
-ms.openlocfilehash: 05f303be92885a15dddf85c85251af04910d835c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GroupIndex 要素は、FindItem 操作呼び出しの現在の項目グループのアイテムをグループ化するために使用されるプロパティ値を表します。
+ms.openlocfilehash: 5e6e2c36e64edec1647c844209d86ceece840b05
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530269"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547345"
 ---
 # <a name="groupindex"></a>GroupIndex
 
-**Groupindex**要素は、 [FindItem 操作](finditem-operation.md)呼び出しで現在のアイテムグループのアイテムをグループ化するために使用されるプロパティの値を表します。 
+**GroupIndex 要素は、FindItem** 操作呼び出しの現在の項目グループのアイテムをグループ化するために使用されるプロパティ [値を表](finditem-operation.md)します。 
   
 [FindItemResponse](finditemresponse.md)
   
@@ -31,7 +31,7 @@ ms.locfileid: "44530269"
   
 [RootFolder (FindItemResponseMessage)](rootfolder-finditemresponsemessage.md)
   
-[Groups](groups.md)
+[グループ](groups.md)
   
 [GroupedItems](groupeditems.md)
   
@@ -58,7 +58,7 @@ ms.locfileid: "44530269"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GroupedItems](groupeditems.md) <br/> |グループ化された[FindItem 操作](finditem-operation.md)呼び出しの結果であるアイテムのコレクションを表します。  <br/> この要素の XPath 式を次に示します。  <br/>  `/FindItemResponse/ResponseMessages/FindItemResponseMessage/RootFolder/Groups/GroupedItems[i]` <br/> |
+|[GroupedItems](groupeditems.md) <br/> |グループ化された FindItem 操作呼び出しの結果であるアイテムの [コレクションを表](finditem-operation.md) します。  <br/> 次に、この要素の XPath 式を示します。  <br/>  `/FindItemResponse/ResponseMessages/FindItemResponseMessage/RootFolder/Groups/GroupedItems[i]` <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -66,18 +66,18 @@ ms.locfileid: "44530269"
   
 ## <a name="remarks"></a>注釈
 
-この要素は、 [FindItem 操作](finditem-operation.md)応答でのみ発生します。 
+この要素は [、FindItem 操作応答でのみ発生](finditem-operation.md) します。 
   
-この要素を記述するスキーマは、Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SetUserOofSettingsRequest
 api_type:
 - schema
 ms.assetid: 628acf0b-3ebc-42f1-8ce2-7a02b4c8141f
-description: SetUserOofSettingsRequest 要素には、メールボックスユーザーの不在時 (OOF) の設定を設定するために使用する引数が含まれています。
-ms.openlocfilehash: 10edc9809fd72f80c316de1c6688eaedec4f93df
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SetUserOofSettingsRequest 要素には、メールボックス ユーザーのアウト オブ Office (OOF) 設定を設定するために使用される引数が含まれる。
+ms.openlocfilehash: c6df61eb89e32e7d9b50a8d6ee2918d7283ce4cb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466151"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547079"
 ---
 # <a name="setuseroofsettingsrequest"></a>SetUserOofSettingsRequest
 
-**Setuseroofsettingsrequest**要素には、メールボックスユーザーの不在時 (OOF) の設定を設定するために使用する引数が含まれています。 
+**SetUserOofSettingsRequest** 要素には、メールボックス ユーザーのアウト オブ Office (OOF) 設定を設定するために使用される引数が含まれる。 
   
 ```xml
 <SetUserOofSettingsRequest>
@@ -43,7 +43,7 @@ ms.locfileid: "44466151"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[メールボックス (可用性)](mailbox-availability.md) <br/> |SetUserOofSettings または GetUserOofSettings 要求のメールボックスユーザーを識別します。  <br/> |
+|[Mailbox (Availability)](mailbox-availability.md) <br/> |SetUserOofSettings または GetUserOofSettings 要求のメールボックス ユーザーを識別します。  <br/> |
 |[UserOofSettings](useroofsettings.md) <br/> |OOF 設定を指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
@@ -52,11 +52,11 @@ ms.locfileid: "44466151"
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="example"></a>例
 
-SetUserOofSettings 要求の次の例では、OOF 設定を10日間設定しています。
+SetUserOofSettings 要求の次の例は、10 日間の OOF 設定を設定します。
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -92,9 +92,9 @@ SetUserOofSettings 要求の次の例では、OOF 設定を10日間設定して�
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

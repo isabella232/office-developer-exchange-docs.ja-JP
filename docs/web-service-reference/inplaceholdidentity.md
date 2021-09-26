@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 54f45774-00a0-4392-af1b-8c5f2208a53f
-description: InPlaceHoldIdentity 要素は、メールボックスアイテムを保持するホールドの id を指定します。
-ms.openlocfilehash: a06f72e478e7dc5bd1a499dceefeb352b14d7362
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: InPlaceHoldIdentity 要素は、メールボックス アイテムを保持する保留リストの ID を指定します。
+ms.openlocfilehash: 0a5f02b908adf49328461c6e3676dab3698879c3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466095"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547212"
 ---
 # <a name="inplaceholdidentity"></a>InPlaceHoldIdentity
 
-**InPlaceHoldIdentity**要素は、メールボックスアイテムを保持するホールドの id を指定します。 
+**InPlaceHoldIdentity** 要素は、メールボックス アイテムを保持する保留リストの ID を指定します。 
   
 ```XML
 <InPlaceHoldIdentity></InPlaceHoldIdentity>
@@ -38,11 +38,11 @@ ms.locfileid: "44466095"
   
 ### <a name="parent-elements"></a>親要素
 
-[SetHoldOnMailboxes](setholdonmailboxes.md)  | [Discoverysearchconfiguration](discoverysearchconfiguration.md)
+[SetHoldOnMailboxes](setholdonmailboxes.md)  | [DiscoverySearchConfiguration](discoverysearchconfiguration.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**InPlaceHoldIdentity**要素のテキスト値は、メールボックスのホールド識別子です。 
+**InPlaceHoldIdentity 要素のテキスト** 値は、メールボックス保持識別子です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,9 +55,9 @@ ms.locfileid: "44466095"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -66,5 +66,5 @@ ms.locfileid: "44466095"
 [SetHoldOnMailboxes 操作](setholdonmailboxes-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

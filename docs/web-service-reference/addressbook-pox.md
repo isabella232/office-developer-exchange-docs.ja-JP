@@ -4,27 +4,27 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b2d62fd0-741c-4a41-9762-cc7d0ff01c9c
-description: AddressBook 要素には、MAPI/HTTP プロトコルを使用してアドレス帳サーバーにクライアントを接続するための仕様が含まれています。
-ms.openlocfilehash: 0967ac123cd3bb0086fd004ea0d0d37c08d2e037
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: AddressBook 要素には、MAPI/HTTP プロトコルを使用してクライアントをアドレス帳サーバーに接続するための仕様が含まれている。
+ms.openlocfilehash: 28de1d41146b082c8b7f82c868fbbed1ce2c483e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463637"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546799"
 ---
 # <a name="addressbook-pox"></a>AddressBook (POX)
 
-**AddressBook**要素には、MAPI/HTTP プロトコルを使用してアドレス帳サーバーにクライアントを接続するための仕様が含まれています。 
+**AddressBook 要素には**、MAPI/HTTP プロトコルを使用してクライアントをアドレス帳サーバーに接続するための仕様が含まれている。 
   
-[自動検出 (POX)](autodiscover-pox.md)
+[AutoDiscover (POX)](autodiscover-pox.md)
   
-[応答 (POX)](response-pox.md)
+[Response (POX)](response-pox.md)
   
-[アカウント (POX)](account-pox.md)
+[Account (POX)](account-pox.md)
   
-[プロトコル (POX)](protocol-pox.md)
+[Protocol (POX)](protocol-pox.md)
   
 [AddressBook (POX)](addressbook-pox.md)
   
@@ -47,22 +47,22 @@ ms.locfileid: "44463637"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ExternalUrl (POX)](externalurl-pox.md) <br/> |MAPI/HTTP プロトコルを使用して、組織のネットワークの外部からアドレス帳にアクセスするために使用する URL が含まれています。  <br/> |
-|[InternalUrl (POX)](internalurl-pox.md) <br/> |MAPI/HTTP プロトコルを使用して、組織のネットワーク内からアドレス帳にアクセスするために使用する URL が含まれています。  <br/> |
+|[ExternalUrl (POX)](externalurl-pox.md) <br/> |MAPI/HTTP プロトコルを使用して組織のネットワーク外からアドレス帳にアクセスするために使用する URL が含まれる。  <br/> |
+|[InternalUrl (POX)](internalurl-pox.md) <br/> |MAPI/HTTP プロトコルを使用して組織のネットワーク内からアドレス帳にアクセスするために使用する URL が含まれる。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントをクライアントアクセスサーバーに接続するための仕様が含まれています。  <br/> |
+|[Protocol (POX)](protocol-pox.md) <br/> |クライアントをクライアント アクセス サーバーに接続するための仕様が含まれる。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-**AddressBook**要素は、 **Type**属性の値が "Http" である[Protocol (POX)](protocol-pox.md)要素を持つ応答に存在します。 
+**AddressBook 要素** は、Type 属性値 [が "mapiHttp" の Protocol (POX)](protocol-pox.md)要素を持つ応答に存在します。  
   
-**AddressBook**要素は、MAPI/HTTP プロトコルおよびターゲット exchange online の一部としての exchange Online、Office 365 の一部としての exchange online、およびビルド 15.00.0847.032 (exchange SERVER 2013 SP1) 以降のオンプレミスバージョンの exchange を実装するクライアントで使用できます。 
+**AddressBook** 要素は、ビルド Exchange Online 15.00.0847.032 (Exchange Server 2013 SP1) から始まる Office 365 の一部として MAPI/HTTP プロトコルとターゲット Exchange Online、および Exchange のオンプレミス バージョンを実装するクライアントで使用できます。 
   
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+- [POX 自動検出 XML 要素のExchange](pox-autodiscover-xml-elements-for-exchange.md)
 

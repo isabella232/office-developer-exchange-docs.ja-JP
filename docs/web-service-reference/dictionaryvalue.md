@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DictionaryValue
 api_type:
 - schema
 ms.assetid: f4089381-826f-4f6a-8c6d-e51b910cbe6d
-description: DictionaryValue 要素は、dictionary プロパティの辞書値を指定します。
-ms.openlocfilehash: 9bad9b8cc7aa80aa071c89a1c22609dc8d44f2b6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: DictionaryValue 要素は、ディクショナリ プロパティの辞書値を指定します。
+ms.openlocfilehash: c50563effc7435442dc3caf67b350533b9517eb0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462144"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546645"
 ---
 # <a name="dictionaryvalue"></a>DictionaryValue
 
-**Dictionaryvalue**要素は、dictionary プロパティの辞書値を指定します。 
+**DictionaryValue** 要素は、ディクショナリ プロパティの辞書値を指定します。 
   
 ```xml
 <DictionaryValue>
@@ -43,14 +43,14 @@ ms.locfileid: "44462144"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Type (UserConfiguration)](type-userconfiguration.md) <br/> |Dictionary オブジェクトの種類を指定します。  <br/> |
-|[Value (UserConfiguration)](value-userconfiguration.md) <br/> |Dictionary オブジェクトの値を文字列として指定します。  <br/> |
+|[Type (UserConfiguration)](type-userconfiguration.md) <br/> |ディクショナリ オブジェクトの種類を指定します。  <br/> |
+|[Value (UserConfiguration)](value-userconfiguration.md) <br/> |辞書オブジェクトの値を文字列として指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[DictionaryEntry](dictionaryentry.md) <br/> |単一の辞書エントリプロパティの内容を指定します。  <br/> |
+|[DictionaryEntry](dictionaryentry.md) <br/> |1 つの辞書エントリ プロパティの内容を指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -65,11 +65,11 @@ ms.locfileid: "44462144"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

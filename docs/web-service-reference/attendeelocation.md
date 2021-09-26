@@ -5,25 +5,25 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1344a087-88ea-472a-bebf-9b45245592fb
 description: AttendeeLocation 要素は、予定表アイテムの出席者の場所を指定します。
-ms.openlocfilehash: 34a4ee8ea5f4c59cce6eebd8977bd4733f7c7134
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: a6b1da631b6f26a24f6a908f63e1292d8f95984f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460345"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547555"
 ---
 # <a name="attendeelocation"></a>AttendeeLocation
 
-**AttendeeLocation**要素は、予定表アイテムの出席者の場所を指定します。 
+**AttendeeLocation 要素** は、予定表アイテムの出席者の場所を指定します。 
   
 ```XML
 <AttendeeLocation></AttendeeLocation>
 ```
 
- **xs: 文字列**
+ **xs:string**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -40,7 +40,7 @@ ms.locfileid: "44460345"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Locationの Statedefinition](locationbasedstatedefinition.md) <br/> |場所に基づく状態を指定します。  <br/> |
+|[LocationBasedStateDefinition](locationbasedstatedefinition.md) <br/> |場所に基づく状態を指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -58,10 +58,10 @@ AttendeeLocation 要素のテキスト値は、出席者の場所です。
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

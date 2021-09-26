@@ -1,31 +1,31 @@
 ---
-title: 受信トレイのルール
+title: InboxRules
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - InboxRules
 api_type:
 - schema
 ms.assetid: 7bb9896c-bd12-49ae-842a-a10b5f9a2ef6
-description: 受信トレイルール要素は、ユーザーのメールボックス内のルールの配列を表します。
-ms.openlocfilehash: a3107c3c317a912d0bd3e60d03da4168f2f3a0a9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: InboxRules 要素は、ユーザーのメールボックス内のルールの配列を表します。
+ms.openlocfilehash: 6b6b399f685accca90fbaffd3ed461aa43a3c2b3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458272"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547233"
 ---
-# <a name="inboxrules"></a>受信トレイのルール
+# <a name="inboxrules"></a>InboxRules
 
-受信**トレイルール**要素は、ユーザーのメールボックス内のルールの配列を表します。 
+**InboxRules 要素** は、ユーザーのメールボックス内のルールの配列を表します。 
   
-[Get受信規則の応答](getinboxrulesresponse.md)
+[GetInboxRulesResponse](getinboxrulesresponse.md)
   
-[受信トレイのルール](inboxrules.md)
+[InboxRules](inboxrules.md)
   
 ```XML
 <InboxRules>
@@ -33,7 +33,7 @@ ms.locfileid: "44458272"
 </InboxRules>
 ```
 
- **ArrayOfRulesType y**
+ **ArrayOfRulesType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -46,13 +46,13 @@ ms.locfileid: "44458272"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ルール (RuleType)](rule-ruletype.md) <br/> |1つのルールを含み、ユーザーのメールボックス内のルールを表します。  <br/> |
+|[Rule (RuleType)](rule-ruletype.md) <br/> |1 つのルールを含み、ユーザーのメールボックス内のルールを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Get受信規則の応答](getinboxrulesresponse.md) <br/> |[Get受信トレイルール操作](getinboxrules-operation.md)要求への応答を定義します。  <br/> |
+|[GetInboxRulesResponse](getinboxrulesresponse.md) <br/> |[GetInboxRules 操作要求への応答を定義](getinboxrules-operation.md)します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -67,9 +67,9 @@ ms.locfileid: "44458272"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -80,5 +80,5 @@ ms.locfileid: "44458272"
 [GetInboxRules の操作](getinboxrules-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

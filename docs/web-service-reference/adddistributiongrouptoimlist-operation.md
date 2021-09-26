@@ -1,46 +1,46 @@
 ---
-title: Adddeploy Grouptoimlist 操作
+title: AddDistributionGroupToImList 操作
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5aa9bec8-71cf-4a6e-8ec8-b4965b40fd4a
-description: Adddeploy Grouptoimlist EWS 操作についての情報を検索します。
-ms.openlocfilehash: e68e21b6994af5773f5cf991d55129e1db3367ac
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: AddDistributionGroupToImList EWS 操作に関する情報を検索します。
+ms.openlocfilehash: 2dce8e903affb277f40b89859b234828d3ffd941
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463693"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546834"
 ---
-# <a name="adddistributiongrouptoimlist-operation"></a>Adddeploy Grouptoimlist 操作
+# <a name="adddistributiongrouptoimlist-operation"></a>AddDistributionGroupToImList 操作
 
-**Adddeploy Grouptoimlist** EWS 操作についての情報を検索します。 
+**AddDistributionGroupToImList** EWS 操作に関する情報を検索します。 
   
-**Adddistribution Grouptoimlist** Exchange Web SERVICES (EWS) 操作は、統合連絡先ストアのインスタントメッセージング (IM) リストに配布グループを追加します。 
+**AddDistributionGroupToImList** Exchange Web Services (EWS) 操作は、統合連絡先ストアのインスタント メッセージング (IM) リストに配布グループを追加します。 
   
 この操作は Exchange Server 2013 で導入されました。
   
-## <a name="using-the-adddistributiongrouptoimlist-operation"></a>Adddeploy Grouptoimlist 操作の使用
+## <a name="using-the-adddistributiongrouptoimlist-operation"></a>AddDistributionGroupToImList 操作の使用
 
-**Adddistribution Grouptoimlist**操作は、IM リストに追加する配布グループを識別する1つの引数を受け取ります。 この操作では、配布グループは作成されません。配布グループは既に作成されている必要があります。 
+**AddDistributionGroupToImList** 操作は、IM リストに追加する配布グループを識別する 1 つの引数を受け取ります。 この操作では、配布グループは作成されない。配布グループは既に作成されている必要があります。 
   
-この操作では、次の表に記載されている SOAP ヘッダーを使用できます。
+この操作では、次の表に示す SOAP ヘッダーを使用できます。
   
-**表1Adddeploy Grouptoimlist 操作 SOAP ヘッダー**
+**表 1.AddDistributionGroupToImList 操作 SOAP ヘッダー**
 
-|**ヘッダー名**|**要素**|**説明**|
+|**ヘッダー名**|**Element**|**説明**|
 |:-----|:-----|:-----|
-|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。 これは要求に適用されます。  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |RFC 3066 で定義されているように、メールボックスへのアクセスに使用されるカルチャ (言語の識別用のタグ) を識別します。 これは要求に適用されます。  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。 これは要求に適用されます。  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 これは応答に適用されます。  <br/> |
+|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装しているユーザーを識別します。 これは要求に適用されます。  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |メールボックスへのアクセスに使用する RFC 3066「言語の識別用タグ」で定義されているカルチャを識別します。 これは要求に適用されます。  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマ バージョンを識別します。 これは要求に適用されます。  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 これは、応答に適用されます。  <br/> |
    
-## <a name="adddistributiongrouptoimlist-operation-request-example"></a>Adddeploy Grouptoimlist 操作要求の例
+## <a name="adddistributiongrouptoimlist-operation-request-example"></a>AddDistributionGroupToImList 操作要求の例
 
-次の**Adddistribution Grouptoimlist**操作要求の例は、配布グループを IM リストに追加する方法を示しています。 
+**AddDistributionGroupToImList** 操作要求の次の例は、配布グループを IM リストに追加する方法を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -64,11 +64,11 @@ ms.locfileid: "44463693"
 - [AddDistributionGroupToImList](adddistributiongrouptoimlist.md)   
 - [SmtpAddress](smtpaddress.md)
     
-## <a name="successful-adddistributiongrouptoimlist-operation-response"></a>Adddeploy Grouptoimlist 操作応答の成功
+## <a name="successful-adddistributiongrouptoimlist-operation-response"></a>AddDistributionGroupToImList 操作応答の成功
 
-次の例は、 **Adddeploy Grouptoimlist**操作要求に対する正常な応答を示しています。 
+次の例は **、AddDistributionGroupToImList** 操作要求に対する正常な応答を示しています。 
   
-成功した応答には、配布グループの表示名、配布グループの Exchange ストアクラス、および新しい配布グループの EWS 識別子が含まれます。
+成功した応答には、配布グループの表示名、Exchangeのストア クラス、および新しい配布グループの EWS 識別子が含まれる。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -98,21 +98,21 @@ ms.locfileid: "44463693"
 
 応答 SOAP 本文には、次の要素が含まれています。
   
-- [Adddeploy Grouptoimlistresponse](adddistributiongrouptoimlistresponse.md)
+- [AddDistributionGroupToImListResponse](adddistributiongrouptoimlistresponse.md)
     
 - [ResponseCode](responsecode.md)
     
 - [ImGroup](imgroup.md)
     
-- [DisplayName (文字列)](displayname-string.md)
+- [DisplayName (string)](displayname-string.md)
     
 - [GroupType](grouptype.md)
     
 - [ExchangeStoreId](exchangestoreid.md)
     
-## <a name="adddistributiongrouptoimlist-operation-errorinvalidimdistributiongroupsmtpaddress-error-response"></a>Adddeploy Grouptoimlist 操作 ErrorInvalidImDistributionGroupSmtpAddress エラー応答
+## <a name="adddistributiongrouptoimlist-operation-errorinvalidimdistributiongroupsmtpaddress-error-response"></a>AddDistributionGroupToImList 操作 ErrorInvalidImDistributionGroupSmtpAddress エラー応答
 
-次の例は、 **Adddeploy Grouptoimlist**操作要求へのエラー応答を示しています。 Exchange ストアに存在しない配布グループを追加しようとすると、次のエラー応答が発生します。 
+次の例は **、AddDistributionGroupToImList** 操作要求に対するエラー応答を示しています。 次のエラー応答は、ストアに存在しない配布グループを追加しようとするとExchangeされます。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -142,7 +142,7 @@ ms.locfileid: "44463693"
 
 エラー応答 SOAP 本文には、次の要素が含まれています。
   
-- [Adddeploy Grouptoimlistresponse](adddistributiongrouptoimlistresponse.md)
+- [AddDistributionGroupToImListResponse](adddistributiongrouptoimlistresponse.md)
     
 - [MessageText](messagetext.md)
     

@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: bc632c85-ec74-4a00-baec-df5973e032fa
-description: EncryptionMethod 要素は、POP、IMAP、および SMTP プロトコルに使用される暗号化方式を表します。
-ms.openlocfilehash: 26236d9b08eae1bcabfd9aac59f5b01714ba9841
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: EncryptionMethod 要素は、POP、IMAP、および SMTP プロトコルに使用される暗号化メソッドを表します。
+ms.openlocfilehash: 40b9f7736502f8def5389c1a70fddb61e38973aa
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530657"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546596"
 ---
 # <a name="encryptionmethod-soap"></a>EncryptionMethod (SOAP)
 
-**Encryptionmethod**要素は、POP、IMAP、および SMTP プロトコルに使用される暗号化方式を表します。 
+**EncryptionMethod** 要素は、POP、IMAP、および SMTP プロトコルに使用される暗号化メソッドを表します。 
   
 ```XML
 <EncryptionMethod/>
@@ -45,7 +45,7 @@ ms.locfileid: "44530657"
    
 ## <a name="text-value"></a>テキスト値
 
-この要素のテキスト値は、POP、IMAP、および SMTP プロトコルに使用される暗号化方法です。
+この要素のテキスト値は、POP、IMAP、および SMTP プロトコルに使用される暗号化メソッドです。
   
 ## <a name="element-information"></a>要素の情報
 
@@ -53,8 +53,8 @@ ms.locfileid: "44530657"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

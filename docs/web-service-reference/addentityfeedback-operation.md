@@ -5,25 +5,25 @@ ms.date: 4/18/2016
 ms.audience: ITPro
 ms.topic: article
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 00e40197-5794-4268-b937-bd65aa044890
 description: AddEntityFeedback 操作は、サーバー側の問題に対応するエラー情報を返します。
-ms.openlocfilehash: a1027a0a1ee06cf3e83833b1d84c13d77b07c0b9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: d4322bcc075c8c68b1f3d5f2ae22badea02be452
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458440"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546827"
 ---
 # <a name="addentityfeedback-operation"></a>AddEntityFeedback 操作
 
-**Addentityfeedback**操作は、サーバー側の問題に対応するエラー情報を返します。 
+**AddEntityFeedback 操作は**、サーバー側の問題に対応するエラー情報を返します。 
   
-この操作では、ログに記録されるイベントの種類に依存します。 最も重要なイベントの1つは、選択されているエンティティに対応する**Entityadded が追加**されたことです。 この操作はバッチであるため、1回の要求でエントリのバッチをログに記録するために使用できます。 
+この操作は、ログに記録されるイベントの種類に依存します。 最も重要なイベントの 1 つは、選択されているエンティティに対応する **EntityAdded** です。 この操作はバッチなので、1 つの要求でエントリのバッチをログに記録するために使用できます。 
   
 ## <a name="findpeople-request-examples"></a>FindPeople 要求の例
 
-**Addentityfeedback**操作は、クライアントがサービスによって返されるエンティティとの対話の詳細をログに記録する方法を提供します。 これは、クライアントごとに、シーンの背後で関連性を向上させるための信号として使用できます。 例: クライアントは、この操作を使用して、 **findpeople**から返された人物エンティティについてのフィードバックを提供できます。
+**AddEntityFeedback 操作** は、クライアントがサービスによって返されるエンティティとの対話の詳細をログに記録する方法を提供します。 これは、各クライアントの背後での関連性を向上させるシグナルとして使用できます。 例えば、クライアントは、この操作を使用して **、FindPeople** から返されるユーザー エンティティに対するフィードバックを提供できます。
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -58,27 +58,25 @@ ms.locfileid: "44458440"
 
 ```
 
-### <a name="the-request-soap-body-contents"></a>要求 SOAP 本文のコンテンツ
+### <a name="the-request-soap-body-contents"></a>要求 SOAP 本文の内容
 
-Soap 要求には、1つの要素の**エンティティフィードのバックエントリ**が含まれています。 これには、 **Entityフィードバック entry**オブジェクトの配列が含まれています。 配列内の各エントリには、次の要素を含めることができます。 
+soap 要求には、1 つの **要素 EntityFeedbackEntries が含まれる**。 次に **、EntityFeedbackEntry オブジェクトの配列が含** まれます。 配列内の各エントリには、次の要素を含めできます。 
   
 |**要求のパラメータ**|**必須**|**説明**|**型**|
 |:-----|:-----|:-----|:-----|
-|**ClientEventTimeUtc** <br/> |はい  <br/> |クライアント側でイベントが発生した UTC 時間。  <br/> |DateTime
-  <br/> |
-|**ClientEventTimeLocal** <br/> |はい  <br/> |クライアント側でイベントが発生したローカル時刻。  <br/> |DateTime
-  <br/> |
-|**ClientId** <br/> |はい  <br/> |クライアントの種類 (Outlook、OWA など)。  <br/> |ClientIDType 列挙型  <br/> |
-|**ClientSessionId** <br/> |はい  <br/> |セッション ID を識別する GUID。 クライアントで生成されます。  <br/> |GUID  <br/> |
-|**ClientVersion** <br/> |はい  <br/> |クライアントのバージョン (例: 15.01.0101.000)。  <br/> |文字列  <br/> |
-|**EntityAddSource** <br/> |いいえ  <br/> |移行元のエンティティ (EntityRelevanceAPI、型、貼り付けなど)。  <br/> |EntityAddSource 列挙  <br/> |
-|**EntrySequenceNumber** <br/> |はい  <br/> |クライアントセッションあたりの増分整数。 データ損失を検出するために使用されます。  <br/> |Int  <br/> |
-|**EventType** <br/> |はい  <br/> |イベントの種類 (たとえば、エンティティが追加され、エンティティが削除された場合)。  <br/> |文字列  <br/> |
-|**JSONPropertyBag** <br/> |いいえ  <br/> |イベント (キー/値のペアの JSON blob) に関連付けられている追加のプロパティ。  <br/> |JSON Blob  <br/> |
-|**TargetEntityList** <br/> |いいえ  <br/> |イベントに関連付けられているエンティティのリスト。  <br/> |JSON 文字列  <br/> |
-|**TransactionId** <br/> |いいえ  <br/> |Id (GUID) は、クエリログの ID を関連付けます。  <br/> |文字列  <br/> |
+|**ClientEventTimeUtc** <br/> |必要  <br/> |クライアント側でイベントが発生した UTC 時刻。  <br/> |DateTime  <br/> |
+|**ClientEventTimeLocal** <br/> |必要  <br/> |クライアント側でイベントが発生したローカル時刻。  <br/> |DateTime  <br/> |
+|**ClientId** <br/> |必要  <br/> |クライアントの種類 (例: Outlook、OWA など)。  <br/> |ClientIDType 列挙  <br/> |
+|**ClientSessionId** <br/> |必要  <br/> |GUID セッション ID を識別します。 クライアントで生成されます。  <br/> |GUID  <br/> |
+|**ClientVersion** <br/> |必要  <br/> |クライアントのバージョン (例: 15.01.0101.000)。  <br/> |String  <br/> |
+|**EntityAddSource** <br/> |いいえ  <br/> |EntityAded のソース (EntityRelevanceAPI、型、貼り付けなど)。  <br/> |EntityAddSource 列挙  <br/> |
+|**EntrySequenceNumber** <br/> |必要  <br/> |クライアント セッションごとの増分整数。 データ損失の検出に使用されます。  <br/> |Int  <br/> |
+|**EventType** <br/> |必要  <br/> |イベントの種類 (エンティティの追加、エンティティの削除など)。  <br/> |String  <br/> |
+|**JSONPropertyBag** <br/> |いいえ  <br/> |イベントに関連付けられた追加のプロパティ (キーと値のペアの JSON BLOB)。  <br/> |JSON Blob  <br/> |
+|**TargetEntityList** <br/> |いいえ  <br/> |イベントに関連付けられているエンティティの一覧。  <br/> |JSON 文字列  <br/> |
+|**TransactionId** <br/> |いいえ  <br/> |クエリ ログ内の ID を関連付ける ID (GUID)。  <br/> |String  <br/> |
    
-### <a name="successful-addentityfeedback-operation-response"></a>AddEntityFeedback 操作の成功応答
+### <a name="successful-addentityfeedback-operation-response"></a>AddEntityFeedback 操作の応答の成功
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -107,21 +105,21 @@ Soap 要求には、1つの要素の**エンティティフィードのバック
 
 ```
 
-### <a name="the-response-soap-body-contains-the-following-elements"></a>応答 SOAP 本文には、次の要素が含まれています。
+### <a name="the-response-soap-body-contains-the-following-elements"></a>応答 SOAP 本文には、次の要素が含まれています
 
 #### <a name="errors"></a>エラー 
   
-API はフィードバックエントリのバッチをログに記録することができ、できることをすべてログに記録します。 このフィールドは、ログに記録されなかったエラーエントリの数を表します。
+API はフィードバック エントリのバッチをログに記録できます。できるすべてのログを記録します。 このフィールドは、ログに記録されていないエラー エントリの数を表します。
     
 #### <a name="errordetails"></a>ErrorDetails
   
-上記のエラーに関連する詳細情報 `;` 。
+上記のエラーに関する詳細は、 `;` によって分離されます。
     
 ### <a name="currently-supported-values"></a>現在サポートされている値
 
-|**ClientIdType 列挙型**|
+|**ClientIdType 列挙**|
 |:-----|
-|Desktop  <br/> |
+|デスクトップ  <br/> |
 |Exchange  <br/> |
 |IMAP4  <br/> |
 |Lync  <br/> |
@@ -130,7 +128,7 @@ API はフィードバックエントリのバッチをログに記録するこ�
 |Mobile  <br/> |
 |Other  <br/> |
 |Outlook  <br/> |
-|Outlookservice.swift  <br/> |
+|OutlookService  <br/> |
 |POP3  <br/> |
 |Tablet  <br/> |
 |Web  <br/> |
@@ -149,9 +147,9 @@ API はフィードバックエントリのバッチをログに記録するこ�
    
 ### <a name="addentityfeedback-operation-error-response"></a>AddEntityFeedback 操作エラー応答
 
-EWS に汎用のエラーコードについては[、「応答](responsecode.md)」を参照してください。
+EWS に汎用的なエラー コードについては [、「ResponseCode」を参照してください](responsecode.md)。
   
-### <a name="example-of-addentityfeedback-in-conjunction-with-findpeople"></a>FindPeople と共に追加される AddEntityFeedback の例
+### <a name="example-of-addentityfeedback-in-conjunction-with-findpeople"></a>FindPeople と組み合わせて AddEntityFeedback の例
 
 #### <a name="findpeople-request"></a>FindPeople 要求
   
@@ -237,9 +235,9 @@ EWS に汎用のエラーコードについては[、「応答](responsecode.md)
 ```
 
 > [!NOTE]
-> FindPeople response トランザクション ID を AddEntityFeedback 要求トランザクション ID として使用します。 
+> AddEntityFeedback 要求トランザクション ID として FindPeople 応答トランザクション ID を使用する。 
   
-#### <a name="addentityfeedback-response"></a>AddEntityFeedback の応答
+#### <a name="addentityfeedback-response"></a>AddEntityFeedback 応答
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

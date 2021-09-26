@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DeleteUserConfiguration
 api_type:
 - schema
 ms.assetid: 91b18b6a-d904-476c-996d-b041e859da1e
-description: DeleteUserConfiguration 要素は、ユーザー構成オブジェクトを削除するための要求を表します。
-ms.openlocfilehash: 04668ead48e7c321ed7e91cbbeb67c6154c02283
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: DeleteUserConfiguration 要素は、ユーザー構成オブジェクトを削除する要求を表します。
+ms.openlocfilehash: 83dc99f81cf5cc4edf72853d2fbade30b561c0f9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460758"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546659"
 ---
 # <a name="deleteuserconfiguration"></a>DeleteUserConfiguration
 
-**Deleteuserconfiguration**要素は、ユーザー構成オブジェクトを削除するための要求を表します。 
+**DeleteUserConfiguration 要素は**、ユーザー構成オブジェクトを削除する要求を表します。 
   
 ```xml
 <DeleteUserConfiguration>
@@ -61,11 +61,11 @@ ms.locfileid: "44460758"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

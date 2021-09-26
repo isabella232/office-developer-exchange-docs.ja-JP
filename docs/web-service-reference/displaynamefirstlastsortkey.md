@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 18f8c676-0fc0-49ff-9a90-5fd43e7e7e39
-description: DisplayNameFirstLastSortKey 要素には、名、姓の順に表示名の並べ替えキーが含まれています。
-ms.openlocfilehash: 1cc0241f5e2d0b0d02bc14011e770c95bdc1d6e8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: DisplayNameFirstLastSortKey 要素には、名、姓の順序で表示名の並べ替えキーが含まれる。
+ms.openlocfilehash: 94528e72af8b5f4a978ee0bcf2564b250d6195b7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456207"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546631"
 ---
 # <a name="displaynamefirstlastsortkey"></a>DisplayNameFirstLastSortKey
 
-**Displaynamefirstlastsortkey**要素には、名、姓の順に表示名の並べ替えキーが含まれています。 
+**DisplayNameFirstLastSortKey** 要素には、名、姓の順序で表示名の並べ替えキーが含まれる。 
   
 ```XML
 <DisplayNameFirstLastSortKey></DisplayNameFirstLastSortKey>
@@ -42,7 +42,7 @@ ms.locfileid: "44456207"
   
 ## <a name="text-value"></a>テキスト値
 
-**Displaynamefirstlastsortkey**要素のテキスト値は、ペルソナの表示名 (名、姓の順序) の並べ替えキーです。 
+**DisplayNameFirstLastSortKey** 要素のテキスト値は、ペルシャの表示名の並べ替えキーで、名の姓順です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44456207"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

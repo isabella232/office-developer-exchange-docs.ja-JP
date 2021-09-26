@@ -5,55 +5,55 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetUserAvailability
 api_type:
 - schema
 ms.assetid: 8da17226-5d3a-4525-9ffa-d83730f47bb1
 description: GetUserAvailability EWS 操作に関する情報を検索します。
-ms.openlocfilehash: b6d03c7da65e3f30f093b7e41448abcca2330a84
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: fcd222dfc98df3c12bdd6035e585f620e0a6d9f5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458223"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547505"
 ---
 # <a name="getuseravailability-operation"></a>GetUserAvailability 操作
 
-**Getuseravailability** EWS 操作に関する情報を検索します。 
+**GetUserAvailability** EWS 操作に関する情報を検索します。 
   
-**Getuseravailability**操作は、指定された期間内のユーザー、部屋、およびリソースのセットの利用可能性に関する詳細な情報を提供します。 
+**GetUserAvailability 操作は**、指定された期間中に一連のユーザー、会議室、およびリソースを利用できる場合の詳細情報を提供します。 
   
 ## <a name="using-the-getuseravailability-operation"></a>GetUserAvailability 操作の使用
 
-**Getuseravailability**操作は、現在のユーザーの空き時間情報を指定された詳細レベルで提供します。 Outlook、Outlook Web Access、Outlook Mobile Access などのクライアントアプリケーションと、SMTP アドレスを使用して要求されたユーザー情報を識別します。 
+**GetUserAvailability 操作は、** 指定された詳細レベルで現在のユーザーの可用性情報を提供します。 クライアント アプリケーション (Outlook、Outlook Web Access、Outlook モバイル アクセスなど)は、SMTP アドレスを使用して要求されたユーザー情報を識別します。 
   
-可用性サービスは、配布リスト内のメールボックスの数が100未満である限り、リストの各メンバーの空き時間情報を取得するように配布リストを拡張します。これは、 **Getuseravailability**操作が要求できる id の最大数です。 配布リストのメンバーの空き時間状態は、配布リスト全体で1つの空き時間状態に統合されます。 
+可用性サービスは、配布リスト内のメールボックスの数が 100 未満である限り、リストの各メンバーの空き時間情報の状態を取得するために配布リストを展開します。これは **、GetUserAvailability** 操作が要求できる ID の最大数です。 配布リストのメンバーの空き時間情報の状態は、配布リスト全体の 1 つの空き時間情報の状態にマージされます。 
   
-クライアントアプリケーションの要求可用性クエリの期間を指定します。 要求された情報の既定の期間は42日です。 ユーザーの予定表に、クエリの定義された期間の内部と外部の両方の予定または会議が含まれている場合は、その予定が返されます。 
+クライアント アプリケーション要求は、可用性クエリの期間を指定します。 要求された情報の既定の期間は 42 日です。 ユーザーの予定表に、クエリの定義済みの期間内と外の両方にある予定または会議が含まれている場合、その予定が返されます。 
   
-返される予定と会議の時刻は、会議を要求しているクライアントアプリケーションと同じタイムゾーンにあります。
+返される予定と会議の時間は、会議を要求しているクライアント アプリケーションと同じタイム ゾーンにあります。
   
-可用性サービスは、各クライアントの要求を処理します。 このサービスは、すべての定期的な予定を展開し、要求元のクライアントが受信するアクセス許可を持つ予定表の詳細の最大数を返します。
+可用性サービスは、各クライアントの要求を処理します。 サービスは、すべての定期的な予定を展開し、要求元のクライアントが受け取るアクセス許可を持つ予定表の詳細の最大数を返します。
   
 > [!NOTE]
-> ターゲットメールボックスが使用できない場合、または見つからない場合は、 **MailRecipientNotFoundException**例外がスローされます。 クライアントは、Active Directory ディレクトリサービスまたは Active Directory ドメインサービス (AD DS) 内にメール受信者が見つからないことを示すエラーメッセージを受信します。 
+> ターゲット メールボックスが使用できないか見つからない場合は **、MailRecipientNotFoundException 例外** がスローされます。 クライアントは、メール受信者が Active Directory ディレクトリ サービスまたは Active Directory ドメイン サービス (AD DS) に見つからないというエラー メッセージを受け取ります。 
   
-### <a name="getuseravailability-operation-soap-headers"></a>GetUserAvailability operation SOAP ヘッダー
+### <a name="getuseravailability-operation-soap-headers"></a>GetUserAvailability 操作 SOAP ヘッダー
 
-**Getuseravailability**操作では、次の表に記載されている SOAP ヘッダーを使用できます。 
+**GetUserAvailability 操作では**、次の表に示す SOAP ヘッダーを使用できます。 
   
-|**Header**|**要素**|**説明**|
+|**Header**|**Element**|**説明**|
 |:-----|:-----|:-----|
 |**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは応答に適用されます。  <br/> |
-|**TimeZoneContext** <br/> |[TimeZoneContext](timezonecontext.md) <br/> |サーバーからのすべての応答に使用するタイムゾーンを識別する SOAP ヘッダーを指定します。 サーバーから返されたすべての時間は、指定されたタイムゾーンに変換されます。 このヘッダーは応答に適用されます。  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマ バージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは、応答に適用されます。  <br/> |
+|**TimeZoneContext** <br/> |[TimeZoneContext](timezonecontext.md) <br/> |サーバーからのすべての応答に使用するタイム ゾーンを識別する SOAP ヘッダーを指定します。 サーバーから返される時間はすべて、指定したタイム ゾーンに変換されます。 このヘッダーは、応答に適用されます。  <br/> |
    
-## <a name="getuseravailability-request-example-get-availability-information"></a>GetUserAvailability 要求の例: 可用性に関する情報を取得します。
+## <a name="getuseravailability-request-example-get-availability-information"></a>GetUserAvailability 要求の例: 可用性情報の取得
 
-次の**getuseravailability** operation 要求の例は、太平洋標準時のタイムゾーンで2人のユーザーの詳細な可用性情報を取得する方法を示しています。 
+**GetUserAvailability** 操作要求の次の例は、太平洋タイム ゾーンの 2 人のユーザーの詳細な可用性情報を取得する方法を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -110,7 +110,7 @@ ms.locfileid: "44458223"
 </soap:Envelope>
 ```
 
-[SuggestionsViewOptions](suggestionsviewoptions.md)要素を使用して提案された会議を取得する方法の詳細については、EWS 仮想ディレクトリのスキーマを参照してください。 
+[SuggestsViewOptions](suggestionsviewoptions.md)要素を使用して提案された会議を取得する方法の詳細については、EWS 仮想ディレクトリのスキーマを参照してください。 
   
 要求 SOAP 本文には、次の要素が含まれています。
   
@@ -138,7 +138,7 @@ ms.locfileid: "44458223"
     
 - [MailboxData](mailboxdata.md)
     
-- [電子メール (EmailAddressType)](email-emailaddresstype.md)
+- [Email (EmailAddressType)](email-emailaddresstype.md)
     
 - [Address (string)](address-string.md)
     
@@ -154,12 +154,12 @@ ms.locfileid: "44458223"
     
 - [EndTime](endtime.md)
     
-## <a name="successful-getuseravailability-operation-response"></a>正常な GetUserAvailability 操作の応答
+## <a name="successful-getuseravailability-operation-response"></a>GetUserAvailability 操作応答の成功
 
-次の例は、 **Getuseravailability**操作要求に対する正常な応答を示しています。 
+次の例は **、GetUserAvailability** 操作要求に対する正常な応答を示しています。 
   
 > [!NOTE]
-> 読みやすくするために、予定表イベント識別子が短縮されています。 
+> 予定表のイベント識別子は、読みやすさを維持するために短縮されました。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -303,9 +303,9 @@ ms.locfileid: "44458223"
 </soap:Envelope>
 ```
 
-各ユーザーの空き時間情報は、一意の[FreeBusyResponse](freebusyresponse.md)要素に表示されます。 **Getuseravailability**操作要求内のユーザーの順序によって、応答内の各ユーザーの可用性データの順序が決まります。 
+各ユーザーの可用性情報は、一意の [FreeBusyResponse 要素に表示](freebusyresponse.md) されます。 **GetUserAvailability** 操作要求のユーザーの順序によって、応答の各ユーザーの可用性データの順序が決されます。 
   
-クエリに定義されている期間内の予定の数が管理者が指定した最大数を超えると、クライアントにエラーが返されます。 予定の既定の最大数は、1万の1つのインスタンスと展開された定期的なアイテムです。 このプロパティは、管理者のみが構成できます。
+クエリで定義されている期間の予定の数が管理者が指定した最大数を超えた場合、クライアントにエラーが返されます。 既定の最大予定数は、10,000 の単一インスタンスと展開された定期的なアイテムです。 このプロパティは、管理者だけが構成できます。
   
 応答では、次の要素が使用されます。
   
@@ -343,7 +343,7 @@ ms.locfileid: "44458223"
     
 - [Subject (CalendarEventDetails)](subject-calendareventdetails.md)
     
-- [場所 (CalendarEventDetails)](location-calendareventdetails.md)
+- [Location (CalendarEventDetails)](location-calendareventdetails.md)
     
 - [IsMeeting (CalendarEventDetails)](ismeeting-calendareventdetails.md)
     
@@ -387,8 +387,8 @@ ms.locfileid: "44458223"
     
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS 操作](ews-operations-in-exchange.md)
+- [EWS 操作 (Exchange](ews-operations-in-exchange.md)
     
-- [ユーザーの空き時間情報の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [ユーザーの可用性の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
     
 

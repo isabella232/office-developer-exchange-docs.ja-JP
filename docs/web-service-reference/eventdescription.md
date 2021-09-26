@@ -1,27 +1,27 @@
 ---
-title: イベントの説明
+title: EventDescription
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - EventDescription
 api_type:
 - schema
 ms.assetid: 7642cb03-71b1-4773-9508-4fbe3a5dcdf4
 description: EventDescription 要素
-ms.openlocfilehash: 5f61a4eea945193d672afbcd2c693502ccf3e4e1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 324bf763575c551d594873052c37335de63325e0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530636"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546554"
 ---
-# <a name="eventdescription"></a>イベントの説明
+# <a name="eventdescription"></a>EventDescription
 
-**Eventdescription**要素 
+**EventDescription** 要素 
   
 ```xml
 <EventDescription/>
@@ -44,11 +44,11 @@ ms.locfileid: "44530636"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[受信者 Trackingイベント](recipienttrackingevent.md) <br/> ||
+|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> ||
    
 ## <a name="text-value"></a>テキスト値
 
-次の表に、 **Eventdescription**要素に指定できる値を示します。 
+次の表に **、EventDescription 要素に使用できる値を示** します。 
   
 **EventDescription 要素の値**
 
@@ -57,18 +57,18 @@ ms.locfileid: "44530636"
 |Submitted  <br/> ||
 |Resolved  <br/> ||
 |Expanded  <br/> ||
-|届け  <br/> ||
-|Movedtofolderby受信トレイルール  <br/> ||
-|ルール Cc  <br/> ||
-|失敗の一般的な  <br/> ||
-|失敗モデレーション  <br/> ||
+|配信  <br/> ||
+|MovedToFolderByInboxRule  <br/> ||
+|RulesCc  <br/> ||
+|FailedGeneral  <br/> ||
+|FailedModeration  <br/> ||
 |FailedTransportRules  <br/> ||
-|Transportroles\logs\frontend\protocollog\smtpsend  <br/> ||
+|SmtpSend  <br/> ||
 |SmtpSendCrossSite  <br/> ||
 |SmtpSendCrossForest  <br/> ||
-|Transportroles\logs\frontend\protocollog\smtpreceive  <br/> ||
-|転送  <br/> ||
-|Pending  <br/> ||
+|SmtpReceive  <br/> ||
+|Forwarded  <br/> ||
+|保留中  <br/> ||
 |PendingModeration  <br/> ||
 |ApprovedModeration  <br/> ||
 |QueueRetry  <br/> ||
@@ -78,25 +78,25 @@ ms.locfileid: "44530636"
 |TransferredToPartnerOrg  <br/> ||
 |TransferredToLegacyExchangeServer  <br/> ||
 |DelayedAfterTransferToPartnerOrg  <br/> ||
-|Read  <br/> ||
+|読み取り  <br/> ||
 |NotRead  <br/> ||
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされているコンピューター Microsoft Exchange Server EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

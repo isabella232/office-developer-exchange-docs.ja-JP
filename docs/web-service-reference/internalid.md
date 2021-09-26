@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - InternalId
 api_type:
 - schema
 ms.assetid: c179db1a-95c9-40da-bd3f-0bed548c0325
-description: InternalId 要素は、イベント id の整数値を表します。
-ms.openlocfilehash: 66d5852e104de843911b46a225154ebd991e2220
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: InternalId 要素は、イベント ID の整数値を表します。
+ms.openlocfilehash: 5a1f84fcaa599f5dc2cdf38dd3edeb3d32eb7388
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459939"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547142"
 ---
 # <a name="internalid"></a>InternalId
 
-**Internalid**要素は、イベント id の整数値を表します。 
+**InternalId 要素は**、イベント ID の整数値を表します。 
   
 ```XML
 <InternalId/>
@@ -44,7 +44,7 @@ ms.locfileid: "44459939"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[受信者 Trackingイベント](recipienttrackingevent.md) <br/> |受信者に対する1つのイベントに関する情報が含まれています。  <br/> |
+|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |受信者の 1 つのイベントの情報を格納します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -59,13 +59,13 @@ ms.locfileid: "44459939"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

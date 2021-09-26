@@ -4,27 +4,27 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 758d965c-ef63-4de4-9120-e293abf14ff8
-description: GetUserSettings 操作には、ユーザーのクライアントアクセス構成に対するクエリが含まれています。
-ms.openlocfilehash: e274fd4e1ca954ea25ea91a52e363c9a434b290a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetUserSettings 操作には、ユーザーのクライアント アクセス構成に関するクエリが含まれる。
+ms.openlocfilehash: 79e9d5827cbcc4885c99cf5a497868284dda4494
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466144"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547408"
 ---
 # <a name="getusersettings-operation-soap"></a>GetUserSettings 操作 (SOAP)
 
-**Getusersettings**操作には、ユーザーのクライアントアクセス構成に対するクエリが含まれています。 
+**GetUserSettings 操作には**、ユーザーのクライアント アクセス構成に関するクエリが含まれる。 
   
 ## <a name="getusersettings-request-example"></a>GetUserSettings 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の XML の例は、ユーザーの表示名、識別名、展開 ID、メールボックスサーバー、メールボックスの識別名、Active Directory サーバー、クライアントアクセスサーバーのバージョン、およびサポートされている Exchange Web サービスのスキーマを要求する自動検出要求の本文を示しています。
+次の XML 例は、ユーザーの表示名、識別名、展開 ID、メールボックス サーバー、メールボックス識別名、Active Directory サーバー、クライアント アクセス サーバーのバージョン、およびサポートされている Exchange Web Services スキーマを要求する自動検出要求本文を示しています。
   
 ### <a name="code"></a>コード
 
@@ -64,17 +64,17 @@ ms.locfileid: "44466144"
 
 ```
 
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 要求本文では、次の要素が使用されます。
   
 - [GetUserSettingsRequestMessage (SOAP)](getusersettingsrequestmessage-soap.md)
     
-- [メールボックス (SOAP)](mailbox-soap.md)
+- [Mailbox (SOAP)](mailbox-soap.md)
     
-- [要求 (SOAP)](request-soap.md)
+- [Request (SOAP)](request-soap.md)
     
-- [Exchangeservice.requestedserverversion (SOAP)](requestedserverversion-soap.md)
+- [RequestedServerVersion (SOAP)](requestedserverversion-soap.md)
     
 - [RequestedSettings (SOAP)](requestedsettings-soap.md)
     
@@ -82,13 +82,13 @@ ms.locfileid: "44466144"
     
 - [User (SOAP)](user-soap.md)
     
-- [Users (SOAP)](users-soap.md)
+- [ユーザー (SOAP)](users-soap.md)
     
-## <a name="getusersettings-response-example"></a>GetUserSettings response の例
+## <a name="getusersettings-response-example"></a>GetUserSettings 応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、正常な**Getusersettings**応答を示しています。 
+次の例は、 **成功した GetUserSettings 応答を示** しています。 
   
 ### <a name="code"></a>コード
 
@@ -150,7 +150,7 @@ ms.locfileid: "44466144"
 </s:Envelope>
 ```
 
-### <a name="response-elements"></a>Response 要素
+### <a name="response-elements"></a>応答要素
 
 応答本文では、次の要素が使用されます。
   
@@ -164,7 +164,7 @@ ms.locfileid: "44466144"
     
 - [RedirectTarget (SOAP)](redirecttarget-soap.md)
     
-- [応答 (SOAP)](response-soap.md)
+- [Response (SOAP)](response-soap.md)
     
 - [UserResponse (SOAP)](userresponse-soap.md)
     
@@ -187,5 +187,5 @@ ms.locfileid: "44466144"
 [GetFederationInformation 操作 (SOAP)](getfederationinformation-operation-soap.md)
 
 
-[Exchange 2013 の SOAP 自動検出 XML 要素](soap-autodiscover-xml-elements-for-exchange-2013.md)
+[SOAP 自動検出 XML 要素 (2013 Exchange)](soap-autodiscover-xml-elements-for-exchange-2013.md)
 
