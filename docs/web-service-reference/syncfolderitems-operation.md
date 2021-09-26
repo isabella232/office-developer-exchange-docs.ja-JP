@@ -5,35 +5,35 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SyncFolderItems
 api_type:
 - schema
 ms.assetid: 7f0de089-8876-47ec-a871-df118ceae75d
-description: SyncFolderItems 操作は、Exchange サーバーとクライアントの間でアイテムを同期します。
-ms.openlocfilehash: 1a28d895eda11dd43f77ec2662a60a426cfc463c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SyncFolderItems 操作は、サーバーとクライアントの間Exchangeを同期します。
+ms.openlocfilehash: 07915f5f9f7ae1fc6f5a743f2e0480a32cb808a7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468146"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545833"
 ---
 # <a name="syncfolderitems-operation"></a>SyncFolderItems 操作
 
-SyncFolderItems 操作は、Exchange サーバーとクライアントの間でアイテムを同期します。
+SyncFolderItems 操作は、サーバーとクライアントの間Exchangeを同期します。
   
 ## <a name="remarks"></a>注釈
 
-SyncFolderItems 操作は、最大512の変更を返します。 追加の変更を取得するには、以降の SyncFolderItems 要求を実行する必要があります。 
+SyncFolderItems 操作は、最大 512 の変更を返します。 追加の変更を取得するには、後続の SyncFolderItems 要求を実行する必要があります。 
   
-SyncFolderItems は FindItem 操作に似ていますが、本文や添付ファイルなどのプロパティを返すことはできません。 SyncFolderItems 操作が必要なプロパティを返さない場合は、 [GetItem 操作](getitem-operation.md)を使用して、syncfolderitems から返された各アイテムの特定のプロパティセットを取得できます。 
+SyncFolderItems は、Body や Attachments のようなプロパティを取得できないという点で FindItem 操作に似ています。 SyncFolderItems 操作で必要なプロパティが返されない場合は [、GetItem](getitem-operation.md) 操作を使用して、SyncFolderItems によって返された各アイテムの特定のプロパティ セットを取得できます。 
   
 ## <a name="syncfolderitems-request-example"></a>SyncFolderItems 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の SyncFolderItems 要求の例は、フォルダー内のアイテムを同期する方法を示しています。 この例では、[送信済みアイテム] フォルダーに対して行われた最初の同期ではないフォルダーアイテムの同期を示します。 クライアントと Exchange サーバーの同期を最初に試行する要求には、 [Syncstate](syncstate-ex15websvcsotherref.md)要素は含まれていません。 フォルダー階層内のアイテムを最初に同期しようとすると、そのメールボックス内のすべてのアイテムが返されます。[無視](ignore.md)要素で識別されるアイテムは除きます。 この SyncFolderItems 要求は、前回の同期以降のフォルダーアイテムへのすべての変更を同期しようとします。 この要求は、 [ignore](ignore.md)要素で識別される1つのアイテムを同期しようとする試行を無視します。 
+SyncFolderItems 要求の次の例は、フォルダー内のアイテムを同期する方法を示しています。 次の使用例は、送信アイテム フォルダーに対して最初に発生した同期ではないフォルダー アイテムの同期を示しています。 SyncState[要素](syncstate-ex15websvcsotherref.md)は、クライアントとクライアントサーバーを同期する最初の試行の要求Exchangeされません。 フォルダー階層内のアイテムを最初に同期しようとすると [、Ignore](ignore.md) 要素で識別されるアイテムを除き、メールボックス内のすべてのアイテムが返されます。 この SyncFolderItems 要求は、前回の同期以降のすべての変更をフォルダー アイテムに同期します。 この要求は [、Ignore](ignore.md) 要素で識別される 1 つのアイテムを同期する試みを無視します。 
   
 ### <a name="code"></a>コード
 
@@ -61,9 +61,9 @@ SyncFolderItems は FindItem 操作に似ていますが、本文や添付ファ
 
 ### <a name="comments"></a>コメント
 
-読みやすくするために、 [Syncstate](syncstate-ex15websvcsotherref.md)要素の base64 でエンコードされたデータと[ItemId](itemid.md)要素**Id**属性は短縮されています。 
+[SyncState 要素](syncstate-ex15websvcsotherref.md)base64 エンコード データと [ItemId](itemid.md)要素 **Id** 属性は、読みやすさを維持するために短縮されました。 
   
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 要求では、次の要素が使用されます。
   
@@ -83,13 +83,13 @@ SyncFolderItems は FindItem 操作に似ていますが、本文や添付ファ
     
 - [ItemId](itemid.md)
     
-- [Maxの戻り値](maxchangesreturned.md)
+- [MaxChangesReturned](maxchangesreturned.md)
     
-## <a name="successful-syncfolderitems-response"></a>正常な SyncFolderItems 応答
+## <a name="successful-syncfolderitems-response"></a>成功した SyncFolderItems 応答
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、SyncFolderItems 要求に対する正常な応答を示しています。 この例では、[送信済みアイテム] フォルダーから会議出席依頼が同期されます。
+次の例は、SyncFolderItems 要求に対する正常な応答を示しています。 この例では、会議出席依頼が送信済みアイテム フォルダーから同期されます。
   
 ### <a name="code"></a>コード
 
@@ -144,7 +144,7 @@ SyncFolderItems は FindItem 操作に似ていますが、本文や添付ファ
 
 ### <a name="comments"></a>コメント
 
-読みやすくするために、 [Syncstate](syncstate-ex15websvcsotherref.md)要素の base64 でエンコードされたデータと[ItemId](itemid.md)要素**Id**属性は短縮されています。 
+[SyncState 要素](syncstate-ex15websvcsotherref.md)base64 エンコード データと [ItemId](itemid.md)要素 **Id** 属性は、読みやすさを維持するために短縮されました。 
   
 ### <a name="successful-response-elements"></a>成功した応答要素
 
@@ -164,7 +164,7 @@ SyncFolderItems は FindItem 操作に似ていますが、本文や添付ファ
     
 - [IncludesLastItemInRange](includeslastiteminrange.md)
     
-- [変更 (アイテム)](changes-items.md)
+- [Changes (Items)](changes-items.md)
     
 - [Create (ItemSync)](create-itemsync.md)
     
@@ -178,31 +178,31 @@ SyncFolderItems は FindItem 操作に似ていますが、本文や添付ファ
     
 - [IsOutOfDate](isoutofdate.md)
     
-- [Hasが処理されました](hasbeenprocessed.md)
+- [HasBeenProcessed](hasbeenprocessed.md)
     
 - [ResponseType](responsetype.md)
     
 - [IntendedFreeBusyStatus](intendedfreebusystatus.md)
     
-- [開始](start.md)
+- [Start](start.md)
     
-- [終わり](end-ex15websvcsotherref.md)
+- [終わり ](end-ex15websvcsotherref.md)
     
-- [場所](location.md)
+- [Location](location.md)
     
-- [Organizer](organizer.md)
+- [開催者](organizer.md)
     
 - [メールボックス](mailbox.md)
     
 - [Name (EmailAddressType)](name-emailaddresstype.md)
     
-- [EmailAddress (非 Emptystringtype)](emailaddress-nonemptystringtype.md)
+- [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
     
 - [RoutingType (EmailAddressType)](routingtype-emailaddresstype.md)
     
 ## <a name="syncfolderitems-error-response"></a>SyncFolderItems エラー応答
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
 次の例は、SyncFolderItems 要求に対するエラー応答を示しています。 このエラーは、無効な SyncState が原因で発生しました。
   
@@ -262,5 +262,5 @@ SyncFolderItems は FindItem 操作に似ていますが、本文や添付ファ
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 351c8dfe-cf8c-45ba-a07d-d764f8189773
-description: VotingInformation 要素は、投票メッセージと承認要求メッセージに関する投票情報を指定します。投票オプション whereApproveandRejectare ます。
-ms.openlocfilehash: d946ba8c71d19c8cbb1befbe8c4e43e93590ccae
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: VotingInformation 要素は、投票メッセージと承認要求メッセージに関する投票情報を指定します。ここでApproveandRejectare the voting options.
+ms.openlocfilehash: 7e5aedddbfe97bba935aa56b3583e2fb8b081320
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467747"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543857"
 ---
 # <a name="votinginformation"></a>VotingInformation
 
-**VotingInformation**要素は、投票メッセージと承認要求メッセージに関する投票情報を指定します。 "承認" および "却下" は投票オプションです。 
+**VotingInformation** 要素は、投票メッセージと承認要求メッセージに関する投票情報を指定します。ここで、"承認" と "拒否" は投票オプションです。 
   
 ```XML
 <VotingInformation
@@ -37,7 +37,7 @@ ms.locfileid: "44467747"
   
 ### <a name="child-elements"></a>子要素
 
-[Useroptions](useroptions.md)  | [VotingResponse](votingresponse.md)
+[UserOptions](useroptions.md)  | [VotingResponse](votingresponse.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -54,9 +54,9 @@ ms.locfileid: "44467747"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -65,5 +65,5 @@ ms.locfileid: "44467747"
 [Message](message-ex15websvcsotherref.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

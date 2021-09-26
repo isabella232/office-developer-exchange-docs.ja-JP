@@ -1,28 +1,28 @@
 ---
-title: Playon電話応答メッセージ (UM web サービス)
+title: PlayOnPhoneGreeting (UM Web サービス)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PlayOnPhoneGreeting
 api_type:
 - schema
 ms.assetid: 43eda596-3609-4e1b-8502-1db2636535cf
-description: Playonphone 案内応答要素は、電話でユニファイドメッセージングの応答メッセージを再生するための要求を定義します。
-ms.openlocfilehash: 197e4ba671e1711b73b1e7c239339db589357581
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: PlayOnPhoneGreeting 要素は、電話でユニファイド メッセージングの案内応答を再生する要求を定義します。
+ms.openlocfilehash: e3b6a7720be6d046a379af460adbcc88725c0ea3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529925"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543122"
 ---
-# <a name="playonphonegreeting-um-web-service"></a>Playon電話応答メッセージ (UM web サービス)
+# <a name="playonphonegreeting-um-web-service"></a>PlayOnPhoneGreeting (UM Web サービス)
 
-**Playonphone 案内応答**要素は、電話でユニファイドメッセージングの応答メッセージを再生するための要求を定義します。 
+**PlayOnPhoneGreeting 要素** は、電話でユニファイド メッセージングの案内応答を再生する要求を定義します。 
   
-[Playon電話応答メッセージ (UM web サービス)](playonphonegreeting-um-web-service.md)
+[PlayOnPhoneGreeting (UM Web サービス)](playonphonegreeting-um-web-service.md)
   
 ```xml
 <PlayOnPhoneGreeting>
@@ -44,8 +44,8 @@ ms.locfileid: "44529925"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[GreetingType (UM web サービス)](greetingtype-um-web-service.md) <br/> |[Playon電話案内応答操作 (UM web サービス)](playonphonegreeting-operation-um-web-service.md)要求で使用する案内応答の種類を定義します。  <br/> |
-|[[] (UM web サービス)](dialstring-um-web-service.md) <br/> |ダイヤルする電話番号の値が含まれています。  <br/> |
+|[GreetingType (UM Web サービス)](greetingtype-um-web-service.md) <br/> |[PlayOnPhoneGreeting 操作 (UM Web サービス)](playonphonegreeting-operation-um-web-service.md)要求で使用する案内応答の種類を定義します。  <br/> |
+|[dialString (UM Web サービス)](dialstring-um-web-service.md) <br/> |ダイヤルする電話番号の値を格納します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -61,12 +61,12 @@ ms.locfileid: "44529925"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |スキーマ名  <br/> |メッセージ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[Playon電話案内応答操作 (UM web サービス)](playonphonegreeting-operation-um-web-service.md)
+[PlayOnPhoneGreeting 操作 (UM Web サービス)](playonphonegreeting-operation-um-web-service.md)
 

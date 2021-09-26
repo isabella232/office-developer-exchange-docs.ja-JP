@@ -1,27 +1,27 @@
 ---
-title: 示す
+title: Bitmask
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Bitmask
 api_type:
 - schema
 ms.assetid: fc7eeac2-555f-4cbc-8b48-26d9ed67748a
-description: ビットマスク要素は、除外制限操作の間に使用される16進数または10進数のマスクを表します。
-ms.openlocfilehash: f05be466d05b13f8f362afb5fc0552653a532475
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Bitmask 要素は、Excludes 制限操作中に使用される 16 進数または 10 進数のマスクを表します。
+ms.openlocfilehash: 83307fc7f5ba328c5d6f7574a8b3be1ea25595f3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458811"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543591"
 ---
-# <a name="bitmask"></a>示す
+# <a name="bitmask"></a>Bitmask
 
-**ビットマスク**要素は、[除外](excludes.md)制限操作の間に使用される16進数または10進数のマスクを表します。 
+**Bitmask 要素は**、Excludes 制限操作中に使用される 16 進数または [10 進数のマスクを](excludes.md)表します。 
   
 ```xml
 <Bitmask Value="" />
@@ -37,7 +37,7 @@ ms.locfileid: "44458811"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**値** | 10進数または16進数のビットマスクを表します。 この値は、次の正規表現で表されます。<br/>`((0x|0X)[0-9A-Fa-f]*)|([0-9]*)`.<br/><br/>この属性の16進値の例を次に示します。<br/>- 0x12AF<br/>- 0X334AE<br/><br/>この属性の10進値の例を次に示します。<br/>-10<br/>-255<br/>-4562 |
+|**値** | 10 進数または 16 進数のビットマスクを表します。 値は、次の正規表現で表されます。<br/>`((0x|0X)[0-9A-Fa-f]*)|([0-9]*)`.<br/><br/>この属性の 16 進値の例を次に示します。<br/>- 0x12AF<br/>- 0X334AE<br/><br/>この属性の 10 進数の値の例を次に示します。<br/>- 10<br/>- 255<br/>- 4562 |
    
 ### <a name="child-elements"></a>子要素
 
@@ -47,24 +47,24 @@ ms.locfileid: "44458811"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Excludes](excludes.md) <br/> |プロパティのビット単位のマスクを実行します。  <br/> |
+|[Excludes](excludes.md) <br/> |プロパティのビットのマスクを実行します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-16進数の値のプレフィックスは、0x または0X である必要があります。 このプレフィックスが存在しない場合、値は10進数値と見なされます。
+16 進値のプレフィックスは 0x または 0X である必要があります。 このプレフィックスが存在しない場合、値は 10 進数と見なされます。
   
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

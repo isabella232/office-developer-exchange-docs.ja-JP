@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: dcff5ccc-31dc-4941-9f71-d6519133aebb
-description: ExportAllowed 要素は、エクスポートを有効にするかどうかを指定します。
-ms.openlocfilehash: f5a9aa3040c45d535ef338010bb37bcedb797ffc
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ExportAllowed 要素は、エクスポートが有効かどうかを指定します。
+ms.openlocfilehash: 5f7193fa8065124281b96b329105bbc6a0933e58
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460632"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545147"
 ---
 # <a name="exportallowed"></a>ExportAllowed
 
-**Exportallowed**要素は、エクスポートを有効にするかどうかを指定します。 
+**ExportAllowed 要素は**、エクスポートが有効かどうかを指定します。 
   
 ```XML
 <ExportAllowed>true | false</ExportAllowed>
@@ -40,11 +40,11 @@ ms.locfileid: "44460632"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[RightsManagementLicenseData](rightsmanagementlicensedata.md) <br/> |Rights management のライセンスに関する情報を指定します。  <br/> |
+|[RightsManagementLicenseData](rightsmanagementlicensedata.md) <br/> |権限管理ライセンスに関する情報を指定します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**Exportallowed**要素のテキスト値が**true**の場合は、エクスポートが許可されていることを示します。 値が**false**の場合、エクスポートが許可されていないことを示します。 
+**ExportAllowed 要素のテキスト値が** **true** の場合、エクスポートが許可されます。 false の **値は** 、エクスポートが許可されていない状態を示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -60,12 +60,12 @@ ms.locfileid: "44460632"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -1,28 +1,28 @@
 ---
-title: SetTelephoneAccessFolderEmail (UM web サービス)
+title: SetTelephoneAccessFolderEmail (UM Web サービス)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SetTelephoneAccessFolderEmail
 api_type:
 - schema
 ms.assetid: 90759da7-6dba-499e-b8c8-e44a016b3198
-description: SetTelephoneAccessFolderEmail 要素は、ユニファイドメッセージングが電話でメッセージを読み取る既定の電子メールフォルダーを設定するための要求を定義します。
-ms.openlocfilehash: 806bdb1f0c7930a9e89555192aa32ad997716e7e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SetTelephoneAccessFolderEmail 要素は、ユニファイド メッセージングが電話でメッセージを読み取る既定の電子メール フォルダーを設定する要求を定義します。
+ms.openlocfilehash: 4b10833cb98c2623e343baeeb7afee4524a03945
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467320"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544704"
 ---
-# <a name="settelephoneaccessfolderemail-um-web-service"></a>SetTelephoneAccessFolderEmail (UM web サービス)
+# <a name="settelephoneaccessfolderemail-um-web-service"></a>SetTelephoneAccessFolderEmail (UM Web サービス)
 
-**SetTelephoneAccessFolderEmail**要素は、ユニファイドメッセージングが電話でメッセージを読み取る既定の電子メールフォルダーを設定するための要求を定義します。 
+**SetTelephoneAccessFolderEmail** 要素は、ユニファイド メッセージングが電話でメッセージを読み取る既定の電子メール フォルダーを設定する要求を定義します。 
   
-[SetTelephoneAccessFolderEmail (UM web サービス)](settelephoneaccessfolderemail-um-web-service.md)
+[SetTelephoneAccessFolderEmail (UM Web サービス)](settelephoneaccessfolderemail-um-web-service.md)
   
 ```xml
 <SetTelephoneAccessFolderEmail>
@@ -43,7 +43,7 @@ ms.locfileid: "44467320"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[base64FolderId (UM web サービス)](base64folderid-um-web-service.md) <br/> |電子メールフォルダーの識別子。  <br/> |
+|[base64FolderId (UM Web サービス)](base64folderid-um-web-service.md) <br/> |電子メール フォルダーの識別子。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -59,12 +59,12 @@ ms.locfileid: "44467320"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |スキーマ名  <br/> |メッセージ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[SetTelephoneAccessFolderEmail 操作 (UM web サービス)](settelephoneaccessfolderemail-operation-um-web-service.md)
+[SetTelephoneAccessFolderEmail 操作 (UM Web サービス)](settelephoneaccessfolderemail-operation-um-web-service.md)
 

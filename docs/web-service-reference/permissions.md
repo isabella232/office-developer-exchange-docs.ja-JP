@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: ITPro
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Permissions
 api_type:
 - schema
 ms.assetid: 2ba50bd9-819f-4e5f-a3bb-85a0a87d8a86
-description: Permissions 要素には、フォルダーのアクセス許可のコレクションが含まれています。
-ms.openlocfilehash: b8616cefdb8c453106753fb0788a6c7d6a0ded79
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Permissions 要素には、フォルダーのアクセス許可のコレクションが含まれる。
+ms.openlocfilehash: 079bd74def1d768b3c8406d8949dcaa3ac0a0baf
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459217"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544830"
 ---
-# <a name="permissions"></a>Permissions
+# <a name="permissions"></a>アクセス許可
 
-**Permissions**要素には、フォルダーのアクセス許可のコレクションが含まれています。 
+**Permissions 要素** には、フォルダーのアクセス許可のコレクションが含まれる。 
   
 ```XML
 <Permissions>
@@ -42,13 +42,13 @@ ms.locfileid: "44459217"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[アクセス許可](permission.md) <br/> |代理人がフォルダーに対して持つアクセス許可を定義します。 この要素は、Exchange 2007 SP1 で導入されました。  <br/> |
+|[アクセス許可](permission.md) <br/> |代理人がフォルダーに対して持つアクセスを定義します。 この要素は、2007 SP1 Exchange導入されました。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[PermissionSet (PermissionSetType)](permissionset-permissionsettype.md) <br/> |フォルダーに対して構成されているすべてのアクセス許可が含まれます。 この要素は、Exchange 2007 SP1 で導入されました。  <br/> |
+|[PermissionSet (PermissionSetType)](permissionset-permissionsettype.md) <br/> |フォルダーに対して構成されているすべてのアクセス許可が含まれる。 この要素は、2007 SP1 Exchange導入されました。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -58,23 +58,23 @@ ms.locfileid: "44459217"
   
 ### <a name="version-differences"></a>バージョンの相違点
 
-Exchange Online を対象とするアプリケーション、Office 365 の一部としての Exchange Online、または exchange 2013 以降のオンプレミスバージョンの Exchange の場合、フォルダーのアクセス許可は、 [Baseshape](baseshape.md)要素の値が[getfolder](getfolder-operation.md)操作要求で**allproperties**の値になっている場合は返されません。 フォルダーのアクセス許可を取得するには、 [PermissionSet (PermissionSetType)](permissionset-permissionsettype.md)要素を、 **Getfolder**要求の[additionalproperties](additionalproperties.md)要素に追加します。 
+Office 365 の一部として Exchange Online、Exchange Online、または Exchange 2013 から始まるオンプレミスバージョンの Exchange を対象とするアプリケーションの場合 [、BaseShape](baseshape.md)要素に [GetFolder](getfolder-operation.md)の **AllProperties** の値がある場合、フォルダーのアクセス許可は返されません。操作要求。 フォルダーのアクセス許可を取得するには、GetFolder 要求の [AdditionalProperties](additionalproperties.md)要素に [PermissionSet (PermissionSetType)](permissionset-permissionsettype.md)要素 **を追加** します。 
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 
 
-[フォルダーレベルのアクセス許可を設定する](https://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
+[アクセス許可Folder-Level設定する](https://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
 

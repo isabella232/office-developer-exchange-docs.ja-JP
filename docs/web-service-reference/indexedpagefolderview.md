@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IndexedPageFolderView
 api_type:
 - schema
 ms.assetid: c6dac232-244b-4db0-9a15-5e01b8aa7a7d
-description: IndexedPageFolderView 要素は、ページアイテムの情報が FindFolder 応答で返される方法を記述します。
-ms.openlocfilehash: 6e9e2796c0bdcd9a15487f0e1bc7cbdf09d0a492
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: IndexedPageFolderView 要素は、ページ化されたアイテム情報が FindFolder 応答でどのように返されるのかについて説明します。
+ms.openlocfilehash: 0a5d0f7e63549b7a851862d957ff32dff4333ce3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457201"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542240"
 ---
 # <a name="indexedpagefolderview"></a>IndexedPageFolderView
 
-**Indexedpagefolderview**要素は、ページアイテムの情報が[findfolder](findfolder.md)応答で返される方法を記述します。 
+**IndexedPageFolderView** 要素は、ページ化されたアイテム情報が [FindFolder](findfolder.md)応答でどのように返されるのかについて説明します。 
   
 [FindFolder](findfolder.md)
   
@@ -40,16 +40,16 @@ ms.locfileid: "44457201"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**MaxEntriesReturned** <br/> |応答で返されるフォルダーの最大数を表します。 この属性は省略可能です。  <br/> |
-|**Offset** <br/> |**BasePoint**からのオフセットを記述します。 オフセットは0以上である必要があります。 **BasePoint**が先頭と等しい場合、オフセットは正になります。 **BasePoint**が End と等しい場合、オフセットは負の値として処理されます。  <br/> これにより、どのフォルダーが応答で配信される最初のフォルダーになるかを識別します。 この属性は必須です。  <br/> |
-|**BasePoint** <br/> |フォルダーのページが検索条件に一致する一連のフォルダーの先頭から開始するか、または末尾から開始するかを指定します。 末尾からシークすると、常に逆方向に検索されます。 この属性は必須です。  <br/> |
+|**MaxEntriesReturned** <br/> |応答で返されるフォルダーの最大数を示します。 この属性は省略可能です。  <br/> |
+|**Offset** <br/> |BasePoint からのオフセットについて **説明します**。 オフセットは 0 以上である必要があります。 **BasePoint が Beginning** に等しい場合、オフセットは正の値です。 **BasePoint が End** に等しい場合、オフセットは負の値である場合と同様に処理されます。  <br/> これは、応答で配信される最初のフォルダーになるフォルダーを識別します。 この属性は必須です。  <br/> |
+|**BasePoint** <br/> |フォルダーのページが、検索条件で見つかった一連のフォルダーの開始または終了から開始するかどうかを示します。 最後からシークすると、常に後方に検索されます。 この属性は必須です。  <br/> |
    
 #### <a name="basepoint-attribute"></a>BasePoint 属性
 
 |**値**|**説明**|
 |:-----|:-----|
-|始まる  <br/> |ページビューは、見つかったフォルダーセットの先頭から開始されます。  <br/> |
-|End  <br/> |ページビューは、見つかったフォルダーセットの末尾から開始されます。  <br/> |
+|開始  <br/> |ページ ビューは、見つかったフォルダー セットの先頭から開始します。  <br/> |
+|End  <br/> |ページ ビューは、見つかったフォルダー セットの末尾から開始します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -59,21 +59,21 @@ ms.locfileid: "44457201"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[FindFolder](findfolder.md) <br/> |メールボックス内のフォルダーを検索する要求を定義します。  <br/> この要素の XPath 式を次に示します。  <br/>  `/FindFolder` <br/> |
+|[FindFolder](findfolder.md) <br/> |メールボックス内のフォルダーを検索する要求を定義します。  <br/> 次に、この要素の XPath 式を示します。  <br/>  `/FindFolder` <br/> |
    
 ## <a name="remarks"></a>注釈
 
-End からシークするには、オフセットで識別される起点に移動する必要があります。 さらに、要求されたレコードの数だけポインターが戻されます。 たとえば、100レコードがあり、オフセットが最後から25である場合、検索は75から開始されます。 10件のレコードが返された場合、ポインターは10レコード後ろに65に移動され、レコード 65 ~ 75 を返します。 次のインデックスは64です。 ページの最後からの次のオフセットは、36と等しい 100-64 です。 次のインデックス付きページを取得するために、末尾からの次のオフセットの値は36です。
+端からシークするには、オフセットで識別される原点に移動します。 さらに、ポインターは要求されたレコードの数によって戻されます。 たとえば、レコードが 100 件で、オフセットが末尾から 25 の場合、検索は 75 から始まります。 10 レコードが返された場合、ポインターは追加の 10 レコードを 65 に戻し、レコード 65 から 75 を返します。 次のインデックスは 64 です。 ページの末尾からの次のオフセットは 100 ~ 64 で、36 に等しくなります。 次のインデックス付きページを取得する最後からの次のオフセットの値は 36 です。
   
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
 |空に設定可能  <br/> |いいえ  <br/> |
    
 

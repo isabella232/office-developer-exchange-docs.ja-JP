@@ -1,23 +1,23 @@
 ---
-title: タイムアウト (期間)
+title: Timeout (duration)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: bb15f9a7-8ea5-4765-9877-762c3f98bf50
-description: Timeout 要素は、サーバーによってプルサブスクリプションがタイムアウトになるまでの時間の長さを指定します。
-ms.openlocfilehash: b5b0e77d794080cd8e0da1e14acf4cb059b80b08
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Timeout 要素は、プル サブスクリプションがサーバーによってタイムアウトされるまでの時間を指定します。
+ms.openlocfilehash: a5a9e094c25f609c0bcfa207ab96ae7f0877f43f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460282"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545770"
 ---
-# <a name="timeout-duration"></a>タイムアウト (期間)
+# <a name="timeout-duration"></a>Timeout (duration)
 
-**Timeout**要素は、サーバーによってプルサブスクリプションがタイムアウトになるまでの時間の長さを指定します。 
+**Timeout 要素** は、プル サブスクリプションがサーバーによってタイムアウトされるまでの時間を指定します。 
   
 ```XML
 <Timeout></Timeout>
@@ -42,7 +42,7 @@ ms.locfileid: "44460282"
   
 ## <a name="text-value"></a>テキスト値
 
-**Timeout**要素のテキスト値は、サーバーによってプルサブスクリプションがタイムアウトになるまでの時間 (分単位) です。 最小値は1です。最大値は1440です。 
+Timeout 要素のテキスト **値** は、プル サブスクリプションがサーバーによってタイムアウトする前の時間 (分) の長さです。 最小値は 1 です。最大値は 1440 です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44460282"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

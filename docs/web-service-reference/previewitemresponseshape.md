@@ -1,23 +1,23 @@
 ---
-title: プレビュー Itemresponseshape
+title: PreviewItemResponseShape
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 183f4a06-c056-4770-b00b-ad850b97e03d
-description: プレビュー Itemresponseshape 要素には、探索検索で返される要求されたプロパティセットが含まれています。
-ms.openlocfilehash: 6f00849cdd564a45084b64704e36a6cd09c698f9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: PreviewItemResponseShape 要素には、探索検索で返される要求されたプロパティ セットが含まれる。
+ms.openlocfilehash: 1ec65d40dc7ad70db3d488fa899877360bbba3f8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468097"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543052"
 ---
-# <a name="previewitemresponseshape"></a>プレビュー Itemresponseshape
+# <a name="previewitemresponseshape"></a>PreviewItemResponseShape
 
-**プレビュー Itemresponseshape**要素には、探索検索で返される要求されたプロパティセットが含まれています。 
+**PreviewItemResponseShape** 要素には、探索検索で返される要求されたプロパティ セットが含まれる。 
   
 ```XML
 <PreviewItemResponseShape>
@@ -37,7 +37,7 @@ ms.locfileid: "44468097"
   
 ### <a name="child-elements"></a>子要素
 
-[Baseshape (PreviewItemBaseShapeType)](baseshape-previewitembaseshapetype.md)  | [Additionalproperties](additionalproperties.md)
+[BaseShape (PreviewItemBaseShapeType)](baseshape-previewitembaseshapetype.md)  | [AdditionalProperties](additionalproperties.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -54,8 +54,8 @@ ms.locfileid: "44468097"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

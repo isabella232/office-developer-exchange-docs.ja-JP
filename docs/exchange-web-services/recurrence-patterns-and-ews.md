@@ -3,15 +3,15 @@ title: 定期的なパターンと EWS
 manager: luken
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fd9ef706-1e01-49fa-af6f-2f6d3e173c16
 description: Exchange の定期的なパターンと定期的なアイテムについて説明します。
-ms.openlocfilehash: 681dfee7e0a66a483b8638810da5e4e0ac0f05ac
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: fcd6cf847efedd3bc48a26ad7866a0221de59371
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459329"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541589"
 ---
 # <a name="recurrence-patterns-and-ews"></a>定期的なパターンと EWS
 

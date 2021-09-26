@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ef4b1aba-a55d-4d64-ac80-5d4e6c4e72bd
-description: GetClientExtensionResponse 要素は、アプリに関する構成情報を取得するための応答を含みます。
-ms.openlocfilehash: 65c1995fe75b3894607d27ed65548fbbdce0664a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetClientExtensionResponse 要素には、アプリに関する構成情報を取得する応答が含まれる。
+ms.openlocfilehash: 6a29ad81bb69a8d1f959b2e17d5cbf48faeca516
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459519"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546344"
 ---
 # <a name="getclientextensionresponse"></a>GetClientExtensionResponse
 
-**Getclientextensionresponse**要素は、アプリに関する構成情報を取得するための応答を含みます。 
+**GetClientExtensionResponse** 要素には、アプリに関する構成情報を取得する応答が含まれる。 
   
 ```XML
 <GetClientExtensionResponse>
@@ -41,7 +41,7 @@ ms.locfileid: "44459519"
   
 ### <a name="child-elements"></a>子要素
 
-[Messagetext](messagetext.md)  | 応答[Secmode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [Clientextensions](clientextensions.md)  | [RawMasterTableXml](rawmastertablexml.md)
+[MessageText](messagetext.md)  | [ResponseCode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [ClientExtensions](clientextensions.md)  | [RawMasterTableXml](rawmastertablexml.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -58,8 +58,8 @@ ms.locfileid: "44459519"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

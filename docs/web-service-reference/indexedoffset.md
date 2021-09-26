@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 951ee079-417f-45a2-b47f-633e8cd6b520
-description: IndexedOffset 要素は、ページ化された FindConversation 応答のインデックスオフセットを示します。
-ms.openlocfilehash: 15faef8d214f289dd79d03bba7db09427955564e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: IndexedOffset 要素は、ページ化された FindConversation 応答のインデックス オフセットを示します。
+ms.openlocfilehash: e129f4bf9270db666f74255ca0b596a53feabf9c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467012"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542218"
 ---
 # <a name="indexedoffset"></a>IndexedOffset
 
-**IndexedOffset**要素は、ページ化された**findconversation**応答のインデックスオフセットを示します。 
+**IndexedOffset 要素** は、ページ化 **された FindConversation** 応答のインデックス オフセットを示します。 
   
 ```XML
 <IndexedOffset></IndexedOffset>
@@ -42,7 +42,7 @@ ms.locfileid: "44467012"
   
 ## <a name="text-value"></a>テキスト値
 
-**IndexedOffset**要素のテキスト値は、 **findconversation**応答のページインデックスオフセットです。 
+**IndexedOffset 要素のテキスト** 値は **、FindConversation** 応答のページ インデックス オフセットです。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44467012"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

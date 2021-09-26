@@ -4,29 +4,29 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 28f552d8-6bb8-49b4-a45c-b2053670f1cc
-description: UsePOPAuth 要素は、POP3 の種類のアカウントに対して提供された認証情報が簡易メール転送プロトコル (SMTP) にも使用されるかどうかを示します。
-ms.openlocfilehash: 8d5bfffaab31c382ad43915e18b8a7a2b2737c21
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: UsePOPAuth 要素は、POP3 タイプのアカウントに提供される認証情報が簡易メール転送プロトコル (SMTP) にも使用されるかどうかを示します。
+ms.openlocfilehash: 354c027bf40ddf30cda472eb4ca0d018dca64f9c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466508"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542625"
 ---
 # <a name="usepopauth-pox"></a>UsePOPAuth (POX)
 
-**Usepopauth**要素は、POP3 の種類のアカウントに対して提供された認証情報が簡易メール転送プロトコル (SMTP) にも使用されるかどうかを示します。 
+**UsePOPAuth** 要素は、POP3 タイプのアカウントに提供される認証情報が簡易メール転送プロトコル (SMTP) にも使用されるかどうかを示します。 
   
-[自動検出 (POX)](autodiscover-pox.md)
+[AutoDiscover (POX)](autodiscover-pox.md)
   
-[応答 (POX)](response-pox.md)
+[Response (POX)](response-pox.md)
   
-[アカウント (POX)](account-pox.md)
+[Account (POX)](account-pox.md)
   
-[プロトコル (POX)](protocol-pox.md)
+[Protocol (POX)](protocol-pox.md)
   
 [UsePOPAuth (POX)](usepopauth-pox.md)
   
@@ -50,19 +50,19 @@ ms.locfileid: "44466508"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
+|[Protocol (POX)](protocol-pox.md) <br/> |クライアント アクセス サーバーの役割がインストールされている 2007 年Microsoft Exchange Serverコンピューターにクライアントを接続するための仕様が含まれている。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、POP3 の種類のアカウントに対して提供された認証情報が SMTP にも使用されるかどうかを示します。 有効な値は、 **[オン**] または [**オフ**] です。
+テキスト値は、POP3 タイプのアカウントに提供される認証情報が SMTP にも使用されるかどうかを示します。 指定できる値は **オンと** オフ **です**。
   
 ## <a name="remarks"></a>注釈
 
-**Usepopauth**要素は、 [Type (POX)](type-pox.md)が SMTP の場合にのみ使用されます。 
+**UsePOPAuth 要素** は、Type [(POX) が SMTP の場合](type-pox.md)にのみ使用されます。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+[POX 自動検出 XML 要素のExchange](pox-autodiscover-xml-elements-for-exchange.md)
 

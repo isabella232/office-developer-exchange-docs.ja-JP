@@ -1,30 +1,30 @@
 ---
-title: 受付電話 Accessfolderemail (UM web サービス)
+title: TelephoneAccessFolderEmail (UM Web サービス)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - TelephoneAccessFolderEmail
 api_type:
 - schema
 ms.assetid: 5d32ae22-bb9f-4352-a251-d516b66ff35b
-description: テレ phone Accessfolderemail 要素には、GetUMProperties 操作 (UM web サービス) 要求への応答に含まれている電話で、ユニファイドメッセージングがメッセージを読み取る電子メールフォルダーの識別子を指定する値が含まれています。
-ms.openlocfilehash: 8da4065921b736313d4bbf5bb96edb51761a4bdb
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: TelephoneAccessFolderEmail 要素には、GetUMProperties 操作 (UM Web サービス) 要求への応答に含まれるユニファイド メッセージングが電話でメッセージを読み取る電子メール フォルダーの識別子を種付けする値が含まれます。
+ms.openlocfilehash: 2db1ca43168585d791d0d09a4042cf5af7a578e7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468629"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544508"
 ---
-# <a name="telephoneaccessfolderemail-um-web-service"></a>受付電話 Accessfolderemail (UM web サービス)
+# <a name="telephoneaccessfolderemail-um-web-service"></a>TelephoneAccessFolderEmail (UM Web サービス)
 
-**テレ Phone Accessfolderemail**要素には、 [getumproperties 操作 (UM web サービス)](getumproperties-operation-um-web-service.md)要求への応答に含まれている電話で、ユニファイドメッセージングがメッセージを読み取る電子メールフォルダーの識別子を指定する値が含まれています。 
+**TelephoneAccessFolderEmail** 要素には [、GetUMProperties 操作 (UM Web サービス)](getumproperties-operation-um-web-service.md)要求への応答に含まれるユニファイド メッセージングが電話でメッセージを読み取る電子メール フォルダーの識別子を種付けする値が含まれます。 
   
-[GetUMPropertiesResponse (UM web サービス)](getumpropertiesresponse-um-web-service.md)
+[GetUMPropertiesResponse (UM Web サービス)](getumpropertiesresponse-um-web-service.md)
   
-[受付電話 Accessfolderemail (UM web サービス)](telephoneaccessfolderemail-um-web-service.md)
+[TelephoneAccessFolderEmail (UM Web サービス)](telephoneaccessfolderemail-um-web-service.md)
   
 ```xml
 <TelephoneAccessFolderEmail/>
@@ -47,7 +47,7 @@ ms.locfileid: "44468629"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetUMPropertiesResponse (UM web サービス)](getumpropertiesresponse-um-web-service.md) <br/> |[Getumproperties 操作 (UM web サービス)](getumproperties-operation-um-web-service.md)要求への応答を定義します。  <br/> |
+|[GetUMPropertiesResponse (UM Web サービス)](getumpropertiesresponse-um-web-service.md) <br/> |[GetUMProperties 操作 (UM Web サービス) 要求への応答を定義](getumproperties-operation-um-web-service.md)します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -59,14 +59,14 @@ ms.locfileid: "44468629"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |スキーマ名  <br/> |メッセージ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[GetUMProperties 操作 (UM web サービス)](getumproperties-operation-um-web-service.md)
+[GetUMProperties 操作 (UM Web サービス)](getumproperties-operation-um-web-service.md)
   
-[SetTelephoneAccessFolderEmail 操作 (UM web サービス)](settelephoneaccessfolderemail-operation-um-web-service.md)
+[SetTelephoneAccessFolderEmail 操作 (UM Web サービス)](settelephoneaccessfolderemail-operation-um-web-service.md)
 

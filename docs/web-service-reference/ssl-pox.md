@@ -4,29 +4,29 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: a7e2bdcd-a2f7-45a4-adcd-a03fe7fd4d9b
 description: SSL 要素は、セキュリティで保護されたログオンが必要かどうかを指定します。
-ms.openlocfilehash: f4e42153c25b34c99f2cad50fb56e8cad24534ff
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 4fbf5e9e8fe09e453b9946d48de5be7297f5ffea
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467614"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545910"
 ---
 # <a name="ssl-pox"></a>SSL (POX)
 
-**SSL**要素は、セキュリティで保護されたログオンが必要かどうかを指定します。 
+**SSL 要素** は、セキュリティで保護されたログオンが必要かどうかを指定します。 
   
-[自動検出 (POX)](autodiscover-pox.md)
+[AutoDiscover (POX)](autodiscover-pox.md)
   
-[応答 (POX)](response-pox.md)
+[Response (POX)](response-pox.md)
   
-[アカウント (POX)](account-pox.md)
+[Account (POX)](account-pox.md)
   
-[プロトコル (POX)](protocol-pox.md)
+[Protocol (POX)](protocol-pox.md)
   
 [SSL (POX)](ssl-pox.md)
   
@@ -50,15 +50,15 @@ ms.locfileid: "44467614"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
+|[Protocol (POX)](protocol-pox.md) <br/> |クライアント アクセス サーバーの役割がインストールされている 2007 年Microsoft Exchange Serverコンピューターにクライアントを接続するための仕様が含まれている。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-Text 値は、セキュリティで保護されたログオンが必要かどうかを指定します。 指定しない場合、既定値は **[オン**] に設定されます。 有効な値は、 **[オン**] または [**オフ**] です。
+テキスト値は、セキュリティで保護されたログオンが必要かどうかを指定します。 指定しない場合、既定値は on に設定 **されます**。 指定できる値は **オンと** オフ **です**。
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+[POX 自動検出 XML 要素のExchange](pox-autodiscover-xml-elements-for-exchange.md)
 

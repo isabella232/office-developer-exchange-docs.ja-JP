@@ -4,19 +4,19 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fdb9cc7a-cf0a-431b-9f6f-5f1db1792db7
-description: TargetAutodiscoverEpr 要素は、TargetAutodiscoverEpr プロパティを表します。 TargetAutodiscoverEpr 要素は、内部使用のみを対象としています。 この要素はクライアントによって使用されません。
-ms.openlocfilehash: f8609f61021d5701f7a8fa2590a85824caf296c6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: TargetAutodiscoverEpr 要素は、TargetAutodiscoverEpr プロパティを表します。 TargetAutodiscoverEpr 要素は内部でのみ使用できます。 この要素は、クライアントでは使用されません。
+ms.openlocfilehash: f49d7b0acc59d638f2fca993ec7d8f182cd7380a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530290"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545805"
 ---
 # <a name="targetautodiscoverepr-soap"></a>TargetAutodiscoverEpr (SOAP)
 
-**TargetAutodiscoverEpr**要素は、 **TargetAutodiscoverEpr**プロパティを表します。 **TargetAutodiscoverEpr**要素は、内部使用のみを対象としています。 この要素はクライアントによって使用されません。 
+**TargetAutodiscoverEpr** 要素は **、TargetAutodiscoverEpr プロパティを表** します。 **TargetAutodiscoverEpr** 要素は内部でのみ使用できます。 この要素は、クライアントでは使用されません。 
   
 ```XML
 <TargetAutodiscoverEpr/>
@@ -39,11 +39,11 @@ ms.locfileid: "44530290"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[組織のリレーションシップ設定 (SOAP)](organizationrelationshipsettings-soap.md) <br/> |1つの組織の組織上の関係のリストを表します。  <br/> |
+|[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |1 つの組織の組織関係の一覧を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-この要素のテキスト値は、組織上の関係の uniform resource identifier (URI) です。
+この要素のテキスト値は、組織の関係の統一されたリソース識別子 (URI) です。
   
 ## <a name="remarks"></a>注釈
 
@@ -55,12 +55,12 @@ ms.locfileid: "44530290"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[Get組織の Relationshipsettings 操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)
+[GetOrganizationRelationshipSettings 操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)
 

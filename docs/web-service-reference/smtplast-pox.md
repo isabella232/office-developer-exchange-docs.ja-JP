@@ -4,29 +4,29 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: f1aa8bd9-c6ac-41ac-8d2d-56fb20006005
-description: SMTPLast 要素は、SMTP サーバーを使用して電子メールを送信する前に、SMTP (Simple Mail Transfer Protocol) サーバーで電子メールをダウンロードする必要があるかどうかを指定します。
-ms.openlocfilehash: 7019da28ffa196a9abc8798aa75aff2756198da3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SMTPLast 要素は、簡易メール転送プロトコル (SMTP) サーバーが SMTP サーバーを使用して電子メールを送信する前に電子メールをダウンロードする必要があるかどうかを指定します。
+ms.openlocfilehash: ff1e47fa1e3ebd0267879cd596a3a559f2702943
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468433"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544683"
 ---
 # <a name="smtplast-pox"></a>SMTPLast (POX)
 
-**SMTPLast**要素は、smtp サーバーを使用して電子メールを送信する前に、Smtp (Simple Mail Transfer Protocol) サーバーで電子メールをダウンロードする必要があるかどうかを指定します。 
+**SMTPLast 要素** は、簡易メール転送プロトコル (SMTP) サーバーが SMTP サーバーを使用して電子メールを送信する前に電子メールをダウンロードする必要があるかどうかを指定します。 
   
-- [自動検出 (POX)](autodiscover-pox.md)
+- [AutoDiscover (POX)](autodiscover-pox.md)
   
-- [応答 (POX)](response-pox.md)
+- [Response (POX)](response-pox.md)
   
-- [アカウント (POX)](account-pox.md)
+- [Account (POX)](account-pox.md)
   
-- [プロトコル (POX)](protocol-pox.md)
+- [Protocol (POX)](protocol-pox.md)
   
 - [SMTPLast (POX)](smtplast-pox.md)
   
@@ -50,13 +50,13 @@ ms.locfileid: "44468433"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
+|[Protocol (POX)](protocol-pox.md) <br/> |クライアント アクセス サーバーの役割がインストールされている 2007 年Microsoft Exchange Serverコンピューターにクライアントを接続するための仕様が含まれている。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、smtp サーバーを使用して電子メールを送信する前に、SMTP サーバーで電子メールをダウンロードする必要があるかどうかを指定します。 有効な値は、 **[オン**] または [**オフ**] です。 既定値は**off**です。
+テキスト値は、SMTP サーバーを使用して電子メールを送信する前に、SMTP サーバーが電子メールをダウンロードする必要があるかどうかを指定します。 指定できる値は **オンと** オフ **です**。 既定値はオフ **です**。
   
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+- [POX 自動検出 XML 要素のExchange](pox-autodiscover-xml-elements-for-exchange.md)
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 342fc275-5b16-49d1-8fde-bf17ce289339
-description: Exchange 2013 のトランスポートエージェントに関する参照情報を検索します。
-ms.openlocfilehash: 8b05ac5904ac0525dce7245b98fc63e1ea6cefe1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: 2013 年のトランスポート エージェントの参照情報Exchangeします。
+ms.openlocfilehash: 6e8682b77b4e8ad20a7c58c603b38155616a19ed
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461780"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543836"
 ---
 # <a name="transport-agent-reference-for-exchange-2013"></a>Exchange 2013 のトランスポート エージェントのリファレンス
 
-Exchange 2013 のトランスポートエージェントに関する参照情報を検索します。
+2013 年のトランスポート エージェントの参照情報Exchangeします。
   
 **製品:** Exchange Server 2013 
   

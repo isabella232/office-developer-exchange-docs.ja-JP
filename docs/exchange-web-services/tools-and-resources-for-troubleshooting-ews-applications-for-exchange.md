@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.assetid: ee7fcd05-35d7-47bf-bac4-e719c49c11fe
 description: EWS マネージ API アプリケーションまたは EWS アプリケーションのトラブルシューティングに役立つリソースを紹介します。
 localization_priority: Priority
-ms.openlocfilehash: 7c7cbe8c93edec5ad99df079c6eb96286c1ba063
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 8a65b06cf911cd033d7fe5fe1b4566a7496de784
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44463742"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542583"
 ---
 # <a name="tools-and-resources-for-troubleshooting-ews-applications-for-exchange"></a>Exchange の EWS アプリケーションのトラブルシューティングに使用するツールとリソース
 
@@ -24,7 +24,7 @@ EWS マネージ API アプリケーションまたは EWS アプリケーショ
   
 ## <a name="examine-the-soap-requests-and-responses"></a>SOAP の要求と応答を調べる
 
-物事が適切に動作しないときには、何が起こっているかが確認できると、とても助かります。 EWS または EWS マネージ API に関わる問題を調査しているときに最初に調べることは、アプリケーションがネットワークを通じて送信している要求とサーバーが送り返してきた応答を調べることです。
+物事が正しく動作しないときには、何が起きているか確認できると助かります。EWS または EWS Managed API に関わる問題を調査しているとき、最初に調べることは、アプリケーションがネットワーク越しに送信している要求と、サーバーが送り返してくる応答を調べることです。
   
 EWS マネージ API には[組み込みのトレース機能](how-to-trace-requests-responses-to-troubleshoot-ews-managed-api-applications.md)があるため、SOAP の要求と応答を簡単に調べることができます。 EWS を使用している場合、同様のトレース機能にアクセスできるかどうかは、要求の送信に使用しているプラットフォームやクラスによって決まります。 ただし、[Network Monitor](https://www.microsoft.com/download/details.aspx?id=4865) や [Fiddler](http://www.telerik.com/fiddler) などのネットワーク トレース ツールは、ネットワーク トラフィックを調べたり、要求と応答のペイロードを表示したりするためにいつでも使用できます。 
   
@@ -79,7 +79,7 @@ IIS には、2 種類のログ記録方式があります。[IIS ログ記録](h
 ## <a name="next-steps"></a>次の手順
 <a name="bk_NextSteps"> </a>
 
-トラブルシューティングに使用できるツールとリソースについて理解すると、それらのツールが提示する情報を理解するための支援が必要になることでしょう。 次に、支援を得るためのオプションを示します。
+トラブルシューティングに使用できるツールとリソースについて理解すると、それらのツールから提供される情報を理解するためのヘルプが必要になるかもしれません。以下で、ヘルプを得るためのオプションを示します:
   
 - [MSDN の Exchange Server 開発者フォーラム](https://social.msdn.microsoft.com/Forums/home?category=exchangeserver) — MSDN Exchange Server 開発者コミュニティに質問してください。 
     
@@ -126,6 +126,4 @@ IIS には、2 種類のログ記録方式があります。[IIS ログ記録](h
     
 - [EWSEditor](http://ewseditor.codeplex.com/)
     
-- [Exchange Web サービス マネージ API](https://go.microsoft.com/fwlink/?LinkID=255472)
-    
-
+- [Exchange Web サービス マネージ API](https://www.nuget.org/packages/Microsoft.Exchange.WebServices/)

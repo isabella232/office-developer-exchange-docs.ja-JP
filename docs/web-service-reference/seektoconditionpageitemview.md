@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b3b86720-d086-47c3-94af-921fdd719edf
-description: SeekToConditionPageItemView 要素は、検索の終了を識別するために使用される条件、検索の開始インデックス、返される最大エントリ、および FindItem または FindConversation 検索の検索方向を指定します。
-ms.openlocfilehash: dbb073263740ccdf75367f85f672b7d5ec78f7a0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SeekToConditionPageItemView 要素は、検索の終了、検索の開始インデックス、返す最大エントリ、および FindItem または FindConversation 検索の検索方向を識別するために使用される条件を識別します。
+ms.openlocfilehash: 6f4797a6b90456a50922db1c829757711816273e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466837"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546106"
 ---
 # <a name="seektoconditionpageitemview"></a>SeekToConditionPageItemView
 
-**Seektoconditionpageitemview**要素は、検索の終了を識別するために使用される条件、検索の開始インデックス、返される最大エントリ、および**FindItem**または**findconversation**検索の検索方向を指定します。 
+**SeekToConditionPageItemView** 要素は、検索の終了、検索の開始インデックス、返す最大エントリ、**および FindItem** または **FindConversation** 検索の検索方向を識別するために使用される条件を識別します。 
   
 ```XML
 <SeekToConditionPageItemView BasePoint="" MaxEntriesReturned="">
@@ -34,16 +34,16 @@ ms.locfileid: "44466837"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|BasePoint  <br/> |**BasePoint**属性のテキスト値は、検索が開始されるベースポイントです。 **先頭**のテキスト値は、検索が結果セットの先頭から開始されることを示します。 テキスト値**End**は、検索が結果セットの末尾から開始されることを示します。  <br/> |
-|MaxEntriesReturned  <br/> |**Maxん返され**た属性のテキスト値は、結果セットで返すことができるアイテムの最大数です。  <br/> |
+|BasePoint  <br/> |BasePoint 属性の **テキスト値** は、検索が開始される基点です。 Start のテキスト **値は** 、検索が結果セットの先頭から始まるかどうかを示します。 End のテキスト **値は** 、検索が結果セットの末尾から始まるかどうかを示します。  <br/> |
+|MaxEntriesReturned  <br/> |**MaxEntriesReturned** 属性のテキスト値は、結果セットで返されるアイテムの最大数です。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
-[条件 (RestrictionType)](condition-restrictiontype.md)
+[Condition (RestrictionType)](condition-restrictiontype.md)
   
 ### <a name="parent-elements"></a>親要素
 
-[Findconversation](findconversation.md)  | [FindItem](finditem.md)
+[FindConversation](findconversation.md)  | [FindItem](finditem.md)
   
 ## <a name="remarks"></a>注釈
 
@@ -56,8 +56,8 @@ ms.locfileid: "44466837"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

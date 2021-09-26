@@ -1,27 +1,27 @@
 ---
-title: の方法 (Exchange Web サービス)
+title: DialString (Exchange Web サービス)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DialString
 api_type:
 - schema
 ms.assetid: 077501f6-b3a8-4799-8c37-09e77af49ddb
-description: Dial String 要素は、電話でアイテムを再生するために呼び出される電話番号のダイヤル文字列を表します。 この要素は必須です。
-ms.openlocfilehash: c944c9f6b99f7f8d45f7e08442a7dfb55a5fe9f3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: DialString 要素は、電話でアイテムを再生するために呼び出される電話番号のダイヤル文字列を表します。 この要素は必須です。
+ms.openlocfilehash: b0d8855049748cdf76711a71c4863def16903860
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458748"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542373"
 ---
-# <a name="dialstring-exchange-web-services"></a>の方法 (Exchange Web サービス)
+# <a name="dialstring-exchange-web-services"></a>DialString (Exchange Web サービス)
 
-Dial **string**要素は、電話でアイテムを再生するために呼び出される電話番号のダイヤル文字列を表します。 この要素は必須です。 
+**DialString 要素** は、電話でアイテムを再生するために呼び出される電話番号のダイヤル文字列を表します。 この要素は必須です。 
   
 ```xml
 <DialString/>
@@ -44,7 +44,7 @@ Dial **string**要素は、電話でアイテムを再生するために呼び�
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[PlayOnPhone (Exchange Web サービス)](playonphone-exchange-web-services.md) <br/> |電話のアイテムを読み取るための要求を表します。  <br/> |
+|[PlayOnPhone (Exchange Web サービス)](playonphone-exchange-web-services.md) <br/> |電話でアイテムを読み取る要求を表します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -55,11 +55,11 @@ Dial **string**要素は、電話でアイテムを再生するために呼び�
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

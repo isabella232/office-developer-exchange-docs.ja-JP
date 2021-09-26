@@ -1,23 +1,23 @@
 ---
-title: ホームアドレス
+title: HomeAddresses
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 57fb1b9d-2ba8-4359-ae79-35c0d56a2d0f
-description: '[ホームアドレス] 要素は、関連付けられたペルソナのホームアドレスの配列とそのソース attributions の識別子を指定します。'
-ms.openlocfilehash: d6a1808bf000ac8bca1e2ce7865aa099037c5a5d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: HomeAddresses 要素は、ホーム アドレスの配列と、関連付けられたペルサのソース属性の識別子を指定します。
+ms.openlocfilehash: e0a538b1aa7414adafcf0a388431a1690c4cda65
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460891"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542289"
 ---
-# <a name="homeaddresses"></a>ホームアドレス
+# <a name="homeaddresses"></a>HomeAddresses
 
-[ホーム**アドレス**] 要素は、関連付けられたペルソナのホームアドレスの配列とそのソース attributions の識別子を指定します。 
+**HomeAddresses 要素** は、ホーム アドレスの配列と、関連付けられたペルサのソース属性の識別子を指定します。 
   
 ```XML
 <HomeAddresses>
@@ -38,13 +38,13 @@ ms.locfileid: "44460891"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[PostalAddressAttributedValue](postaladdressattributedvalue.md) <br/> |郵送先住所の配列のインスタンスと、それに関連付けられている attributions を指定します。  <br/> |
+|[PostalAddressAttributedValue](postaladdressattributedvalue.md) <br/> |住所の配列とその関連付けられた属性のインスタンスを指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ユーザー](persona.md) <br/> |**Getpersona**要求によって返される一連のペルソナデータを指定します。  <br/> |
+|[ユーザー](persona.md) <br/> |**GetPersona** 要求によって返されるペルソナ データのセットを指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -58,12 +58,12 @@ ms.locfileid: "44460891"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

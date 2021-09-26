@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SharedFolderId
 api_type:
 - schema
 ms.assetid: 21181ba3-9626-4284-9717-0b1c16948e8f
-description: SharedFolderId 要素は、GetSharingFolder 操作要求によって返される必要のあるローカルフォルダー識別子である、共有フォルダーの識別子を表します。
-ms.openlocfilehash: 546e148540708725bcf335f39bf69d193124d210
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SharedFolderId 要素は、共有フォルダーの識別子を表し、GetSharingFolder 操作要求によって返されるローカル フォルダー識別子を表します。
+ms.openlocfilehash: 7e47ba49abed99bdb3cfd00eb43d2ef276d4ef37
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466123"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545973"
 ---
 # <a name="sharedfolderid"></a>SharedFolderId
 
-**SharedFolderId**要素は、 [getsharingfolder 操作](getsharingfolder-operation.md)要求によって返される必要のあるローカルフォルダー識別子である、共有フォルダーの識別子を表します。 
+**SharedFolderId 要素** は、共有フォルダーの識別子を表し [、GetSharingFolder](getsharingfolder-operation.md)操作要求によって返されるローカル フォルダー識別子を表します。 
   
 ```xml
 <SharedFolderId/>
@@ -44,11 +44,11 @@ ms.locfileid: "44466123"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetSharingFolder](getsharingfolder.md) <br/> |指定された共有フォルダーのローカルフォルダー識別子を取得する要求を定義します。  <br/> |
+|[GetSharingFolder](getsharingfolder.md) <br/> |指定した共有フォルダーのローカル フォルダー識別子を取得する要求を定義します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、 [Getsharingfolder 操作](getsharingfolder-operation.md)要求によって返されるローカルフォルダー識別子である、共有フォルダーの識別子を表す文字列です。 
+テキスト値は、共有フォルダーの識別子を表す文字列で [、GetSharingFolder](getsharingfolder-operation.md) 操作要求によって返されるローカル フォルダー識別子です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -59,9 +59,9 @@ ms.locfileid: "44466123"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -70,5 +70,5 @@ ms.locfileid: "44466123"
 [GetSharingFolder 操作](getsharingfolder-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

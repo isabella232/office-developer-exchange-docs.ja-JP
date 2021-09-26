@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 7f8cb6d6-4aac-4a1f-8bec-2dcb90fc1df6
-description: WebClientUrl 要素は、Exchange web クライアントの URL を表します。
-ms.openlocfilehash: bcf9c8d4fe80de8af4c9500e5e850558a8451d4e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: WebClientUrl 要素は、Web クライアントの URL をExchangeします。
+ms.openlocfilehash: 73cc03411e8356fafe078df45f9ebd695e8f154b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464974"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542597"
 ---
 # <a name="webclienturl-soap"></a>WebClientUrl (SOAP)
 
-**Webclienturl**要素は、Exchange web クライアントの URL を表します。 
+**WebClientUrl 要素** は、Web クライアントの URL をExchangeします。 
   
 [UserSetting (SOAP)](usersetting-soap.md)
   
@@ -47,13 +47,13 @@ ms.locfileid: "44464974"
 |**Element**|**説明**|
 |:-----|:-----|
 |[AuthenticationMethods (SOAP)](authenticationmethods-soap.md) <br/> |指定した URL にアクセスするときに使用する認証方法を表します。  <br/> |
-|[Url (SOAP)](url-soap.md) <br/> |URL の web アドレスを表します。  <br/> |
+|[Url (SOAP)](url-soap.md) <br/> |URL の Web アドレスを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[WebClientUrls (SOAP)](webclienturls-soap.md) <br/> |**Webclienturl**要素のコレクションを含むユーザー設定を表します。  <br/> |
+|[WebClientUrls (SOAP)](webclienturls-soap.md) <br/> |WebClientUrl 要素のコレクションを含むユーザー **設定を表** します。  <br/> |
    
 ## <a name="element-information"></a>要素の情報
 
@@ -61,8 +61,8 @@ ms.locfileid: "44464974"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

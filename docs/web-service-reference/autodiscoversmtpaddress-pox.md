@@ -4,25 +4,25 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7763d11a-b338-4a02-8a01-938859c05dfb
-description: AutoDiscoverSMTPAddress 要素には、自動検出プロセスで使用されるユーザーの SMTP アドレスが含まれています。
-ms.openlocfilehash: cd40fac8b7ab4eaa9ea50e82d6fc8bdbd4c3c7b1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: AutoDiscoverSMTPAddress 要素には、自動検出プロセスに使用されるユーザーの SMTP アドレスが含まれる。
+ms.openlocfilehash: cb5871eee3cf61d388ad83b53df2bad733722d4e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463952"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543682"
 ---
 # <a name="autodiscoversmtpaddress-pox"></a>AutoDiscoverSMTPAddress (POX)
 
-**AutoDiscoverSMTPAddress**要素には、自動検出プロセスで使用されるユーザーの SMTP アドレスが含まれています。 
+**AutoDiscoverSMTPAddress** 要素には、自動検出プロセスに使用されるユーザーの SMTP アドレスが含まれる。 
   
-- [自動検出 (POX)](autodiscover-pox.md)
+- [AutoDiscover (POX)](autodiscover-pox.md)
   
-- [応答 (POX)](response-pox.md)
+- [Response (POX)](response-pox.md)
   
-- [ユーザー (POX)](user-pox.md)
+- [User (POX)](user-pox.md)
   
 - [AutoDiscoverSMTPAddress (POX)](autodiscoversmtpaddress-pox.md)
   
@@ -46,17 +46,17 @@ ms.locfileid: "44463952"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ユーザー (POX)](user-pox.md) <br/> |ユーザー固有の情報を提供します。  <br/> |
+|[User (POX)](user-pox.md) <br/> |ユーザー固有の情報を提供します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-Text 値は、自動検出プロセスで使用されるユーザーの SMTP アドレスを表します。
+テキスト値は、自動検出プロセスに使用されるユーザーの SMTP アドレスを表します。
   
 ## <a name="remarks"></a>注釈
 
-**AutoDiscoverSMTPAddress**要素は、 **User**要素のオプションの子要素です。 
+**AutoDiscoverSMTPAddress 要素** は **、User** 要素の省略可能な子要素です。 
   
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+- [POX 自動検出 XML 要素のExchange](pox-autodiscover-xml-elements-for-exchange.md)
 

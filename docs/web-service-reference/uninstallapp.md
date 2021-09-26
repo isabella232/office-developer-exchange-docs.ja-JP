@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8a762128-8d5f-4774-8627-49f1dc8ba30d
-description: アン Installapp 要素は、識別子によってアプリをアンインストールする要求を指定します。
-ms.openlocfilehash: 822a3cb2c0242111c857e50e3c49379b8ed95fe6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: UninstallApp 要素は、その識別子によってアプリをアンインストールする要求を指定します。
+ms.openlocfilehash: 7742fe0250329fd0e3b0c030b1d2f255bdbf8f44
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458860"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541834"
 ---
 # <a name="uninstallapp"></a>UninstallApp
 
-**アン installapp**要素は、識別子によってアプリをアンインストールする要求を指定します。 
+**UninstallApp 要素** は、その識別子によってアプリをアンインストールする要求を指定します。 
   
 ```XML
 <UninstallApp>
@@ -36,7 +36,7 @@ ms.locfileid: "44458860"
   
 ### <a name="child-elements"></a>子要素
 
-[ID (文字列)](id-string.md)
+[ID (String)](id-string.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -53,8 +53,8 @@ ms.locfileid: "44458860"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

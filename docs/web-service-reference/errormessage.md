@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0cec33a6-4b10-4259-8ac3-3f39a642b34c
 description: ErrorMessage 要素は、検証エラーの理由を表します。
-ms.openlocfilehash: a35dc6af12e71c8437c13024a254000e8f477a15
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: c170c0d3b7e1975ebffce9f7508ab292bf1e31b2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526194"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545224"
 ---
 # <a name="errormessage"></a>ErrorMessage
 
-**ErrorMessage**要素は、検証エラーの理由を表します。 
+**ErrorMessage 要素** は、検証エラーの理由を表します。 
   
 ```XML
 <ErrorMessage/>
@@ -40,11 +40,11 @@ ms.locfileid: "44526194"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Error](error.md) <br/> |特定のルールプロパティ値、述語プロパティ値、または action プロパティ値に対する1つの検証エラーを表します。  <br/> |
+|[エラー](error.md) <br/> |特定のルール プロパティ値、述語プロパティ値、またはアクション プロパティ値に対する 1 つの検証エラーを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-ルールの検証エラーに関連付けられたエラーメッセージ。
+ルール検証エラーに関連付けられているエラー メッセージ。
   
 ## <a name="remarks"></a>注釈
 
@@ -55,13 +55,13 @@ ms.locfileid: "44526194"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

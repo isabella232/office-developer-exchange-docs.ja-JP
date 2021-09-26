@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PlayOnPhoneResponse
 api_type:
 - schema
 ms.assetid: 578b70d1-dc9d-4bce-b859-0109b2d2bcec
-description: PlayOnPhoneResponse 要素は、電話でボイスメールを再生する要求に対する応答を指定します。
-ms.openlocfilehash: 907864d7fe669aac99b2ff6d1c5eba71b9ddf79f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: PlayOnPhoneResponse 要素は、電話でボイス メールを再生する要求に対する応答を指定します。
+ms.openlocfilehash: f00dba0773eff6c992f014425d481dd83ff41e24
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459624"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543129"
 ---
 # <a name="playonphoneresponse-exchange-web-services"></a>PlayOnPhoneResponse (Exchange Web サービス)
 
-**PlayOnPhoneResponse**要素は、電話でボイスメールを再生する要求に対する応答を指定します。 
+**PlayOnPhoneResponse** 要素は、電話でボイス メールを再生する要求に対する応答を指定します。 
   
 ```xml
 <PlayOnPhoneResponse ResponseClass="">
@@ -42,25 +42,25 @@ ms.locfileid: "44459624"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**ResponseClass** <br/> | 応答の状態を表します。 <br/><br/>この属性には、次の値が有効です。  <br/><br/>-成功  <br/>-Warning  <br/>-エラー  <br/> |
+|**ResponseClass** <br/> | 応答の状態を説明します。 <br/><br/>この属性には、次の値が有効です。  <br/><br/>- 成功  <br/>- 警告  <br/>- エラー  <br/> |
    
-#### <a name="responseclass-attribute-values"></a>ResponseClass 属性の値
+#### <a name="responseclass-attribute-values"></a>ResponseClass 属性値
 
 |**値**|**説明**|
 |:-----|:-----|
-|**Success** <br/> |満たされる要求を記述します。  <br/> |
-|**Warning** <br/> | 処理されなかった要求を示します。 要求内のアイテムが処理され、その後のアイテムを処理できなかったときにエラーが発生した場合は、警告が返されることがあります。<br/><br/> 警告のソースの例を次に示します。 <br/><br/>-バッチ処理中に Exchange ストアがオフラインになります。  <br/>-Active Directory ドメインサービス (AD DS) がオフラインになっています。  <br/>-メールボックスが移動されました。  <br/>-メッセージデータベース (MDB) はオフラインです。  <br/>-パスワードの有効期限が切れています。  <br/>-クォータが限界を超えています。  <br/> |
-|**Error** <br/> | 満たされない要求を記述します。 <br/><br/>エラーのソースの例を次に示します。  <br/><br/>-属性または要素が無効です。  <br/>-範囲外の属性または要素  <br/>-不明なタグ。  <br/>-コンテキスト内で有効ではない属性または要素。  <br/>-クライアントによる権限のないアクセス試行。  <br/>-有効なクライアント側の呼び出しに応答して、サーバー側で障害が発生した。  <br/><br/>  エラーに関する情報については、「応答[sec」](responsecode.md)および「 [messagetext](messagetext.md)要素」のトピックを参照してください。  <br/> |
+|**Success** <br/> |満たされた要求について説明します。  <br/> |
+|**Warning** <br/> | 処理されていない要求について説明します。 要求内のアイテムの処理中にエラーが発生し、後続のアイテムを処理できない場合は、警告が返される場合があります。<br/><br/> 次に、警告の発生源の例を示します。 <br/><br/>- バッチExchangeストアはオフラインです。  <br/>- Active Directory ドメイン サービス (AD DS) がオフラインです。  <br/>- メールボックスが移動されました。  <br/>- メッセージ データベース (MDB) がオフラインです。  <br/>- パスワードの有効期限が切れています。  <br/>- クォータを超えました。  <br/> |
+|**エラー** <br/> | 満たできない要求について説明します。 <br/><br/>エラーの原因の例を次に示します。  <br/><br/>- 無効な属性または要素。  <br/>- 範囲外の属性または要素  <br/>- 不明なタグ。  <br/>- コンテキストで無効な属性または要素。  <br/>- 任意のクライアントによる未承認のアクセス試行。  <br/>- 有効なクライアント側の呼び出しに応答したサーバー側のエラー。  <br/><br/>  エラーに関する情報は [、ResponseCode](responsecode.md) および [MessageText](messagetext.md) 要素のトピックで確認できます。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[MessageText](messagetext.md) <br/> |応答の状態を説明するテキストを提供します。  <br/> |
-|[ResponseCode](responsecode.md) <br/> |要求で発生した特定のエラーを識別するエラーコードを提供します。  <br/> |
-|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在未使用で、今後の使用のために予約されています。 この要素には0の値が含まれています。  <br/> |
-|[MessageXml](messagexml.md) <br/> |エラー応答に関する追加情報を提供します。  <br/> |
-|[PhoneCallId](phonecallid.md) <br/> |電話の通話識別子を指定します。  <br/> |
+|[MessageText](messagetext.md) <br/> |応答の状態のテキストの説明を提供します。  <br/> |
+|[ResponseCode](responsecode.md) <br/> |要求が発生した特定のエラーを識別するエラー コードを提供します。  <br/> |
+|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在未使用で、将来の使用のために予約されています。 この要素には、値 0 が含まれる。  <br/> |
+|[MessageXml](messagexml.md) <br/> |追加のエラー応答情報を提供します。  <br/> |
+|[PhoneCallId](phonecallid.md) <br/> |電話の呼び出し識別子を指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -75,11 +75,11 @@ ms.locfileid: "44459624"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

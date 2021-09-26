@@ -5,44 +5,44 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ed077877-9d98-4434-b8b6-a4a905e7f7a6
-description: GetNonIndexableItemStatistics EWS 操作についての情報を検索します。
-ms.openlocfilehash: c7d49f9e0d7b4191c7403cb4d1a20e70a96c3882
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetNonIndexableItemStatistics EWS 操作に関する情報を検索します。
+ms.openlocfilehash: e95cd016f73c92a75d9f366527e58045497363d0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44452819"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546239"
 ---
 # <a name="getnonindexableitemstatistics-operation"></a>GetNonIndexableItemStatistics 操作
 
-**Getnonindexableitemstatistics** EWS 操作についての情報を検索します。 
+**GetNonIndexableItemStatistics** EWS 操作に関する情報を検索します。 
   
-**Getnonindexableitemstatistics**操作は、メールボックス内のインデックスを作成できないアイテムの数を取得します。 
+**GetNonIndexableItemStatistics 操作は**、メールボックスにインデックスを作成できないアイテムの数を取得します。 
   
 この操作は Exchange Server 2013 で導入されました。
   
 ## <a name="using-the-getnonindexableitemstatistics-operation"></a>GetNonIndexableItemStatistics 操作の使用
 
-**Getnonindexableitemstatistics**操作は、インデックスを作成できないメールボックスアイテムをカウントします。 インデックスを作成できないアイテムは、探索検索時に検索されません。 
+**GetNonIndexableItemStatistics 操作は**、インデックスを作成できないメールボックス アイテムをカウントします。 インデックスを作成できないアイテムは、探索検索中は検索されません。 
   
-### <a name="getnonindexableitemstatistics-operation-soap-headers"></a>GetNonIndexableItemStatistics 操作の SOAP ヘッダー
+### <a name="getnonindexableitemstatistics-operation-soap-headers"></a>GetNonIndexableItemStatistics 操作 SOAP ヘッダー
 
-**Getnonindexableitemstatistics**操作では、次の表に記載されている SOAP ヘッダーを使用できます。 
+**GetNonIndexableItemStatistics 操作** では、次の表に示す SOAP ヘッダーを使用できます。 
   
-|**ヘッダー名**|**要素**|**説明**|
+|**ヘッダー名**|**Element**|**説明**|
 |:-----|:-----|:-----|
-|**Get-managementrole** <br/> |[Get-managementrole](managementrole.md) <br/> |発信者が要求を行うために必要なサーバーの役割を指定します。 このヘッダーは、要求に適用されます。  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは応答に適用されます。  <br/> |
+|**ManagementRole** <br/> |[ManagementRole](managementrole.md) <br/> |呼び出し元が要求を行うのに必要なサーバーの役割を識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマ バージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは、応答に適用されます。  <br/> |
    
-## <a name="getnonindexableitemstatistics-operation-request-example-get-the-count-of-items-that-cannot-be-indexed-in-a-mailbox"></a>GetNonIndexableItemStatistics 操作要求の例: メールボックス内にインデックスを作成できないアイテムの数を取得します。
+## <a name="getnonindexableitemstatistics-operation-request-example-get-the-count-of-items-that-cannot-be-indexed-in-a-mailbox"></a>GetNonIndexableItemStatistics 操作要求の例: メールボックスにインデックスを作成できないアイテムの数を取得する
 
-次の**Getnonindexableitemstatistics**操作要求の例は、メールボックス内にインデックスを作成できないアイテムの数を要求する方法を示しています。 
+**GetNonIndexableItemStatistics** 操作要求の次の例は、メールボックスにインデックスを作成できないアイテムの数を要求する方法を示しています。 
   
 > [!NOTE]
-> この例の従来のドメイン名はすべて、読みやすいように短縮されています。 
+> この例のすべての従来のドメイン名は、読みやすさを維持するために短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -68,15 +68,15 @@ ms.locfileid: "44452819"
   
 - [GetNonIndexableItemStatistics](getnonindexableitemstatistics.md)
     
-- [メールボックス (NonEmptyArrayOfLegacyDNsType)](mailboxes-nonemptyarrayoflegacydnstype.md)
+- [Mailboxes (NonEmptyArrayOfLegacyDNsType)](mailboxes-nonemptyarrayoflegacydnstype.md)
     
 - [LegacyDN](legacydn.md)
     
 - [SearchArchiveOnly](searcharchiveonly.md)
     
-## <a name="successful-getnonindexableitemstatistics-operation-response"></a>GetNonIndexableItemStatistics 操作の応答が正常に行われる
+## <a name="successful-getnonindexableitemstatistics-operation-response"></a>GetNonIndexableItemStatistics 操作応答の成功
 
-次の例は、メールボックス内にインデックスを作成できないアイテムの数を取得する**Getnonindexableitemstatistics**操作要求に対する正常な応答を示しています。 
+次の例は、メールボックスにインデックスを作成できないアイテムの数を取得する **GetNonIndexableItemStatistics** 操作要求に対する正常な応答を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -119,13 +119,13 @@ ms.locfileid: "44452819"
     
 - [NonIndexableItemStatistic](nonindexableitemstatistic.md)
     
-- [メールボックス (文字列)](mailbox-string.md)
+- [Mailbox (string)](mailbox-string.md)
     
 - [ItemCount](itemcount.md)
     
 ## <a name="getnonindexableitemstatistics-operation-error-response"></a>GetNonIndexableItemStatistics 操作エラー応答
 
-次の例は、 **Getnonindexableitemstatistics**操作要求へのエラー応答を示しています。 これは、複数のメールボックスからインデックスを作成できないアイテムの数を取得する要求に対する応答です。 
+次の例は **、GetNonIndexableItemStatistics 操作** 要求に対するエラー応答を示しています。 これは、複数のメールボックスからインデックスを作成できないアイテムの数を取得する要求に対する応答です。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -164,15 +164,15 @@ ms.locfileid: "44452819"
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-EWS で汎用的でこの操作に固有の追加のエラーコードについては、「応答」[を参照してください。](responsecode.md)
+EWS に汎用的で、この操作に固有の追加のエラー コードについては [、「ResponseCode」を参照してください](responsecode.md)。
   
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS 操作](ews-operations-in-exchange.md)
+- [EWS 操作 (Exchange](ews-operations-in-exchange.md)
     
-- [Getsearchablemailemail箱操作](getsearchablemailboxes-operation.md)
+- [GetSearchableMailboxes 操作](getsearchablemailboxes-operation.md)
     
-- [SearchMailboxes ボックスの操作](searchmailboxes-operation.md)
+- [SearchMailboxes 操作](searchmailboxes-operation.md)
     
 - [GetHoldOnMailboxes 操作](getholdonmailboxes-operation.md)
     

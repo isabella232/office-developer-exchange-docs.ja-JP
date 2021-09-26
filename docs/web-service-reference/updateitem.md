@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UpdateItem
 api_type:
 - schema
 ms.assetid: 34643d58-2743-45b0-a08d-bff6dc1da61d
 description: UpdateItem 要素は、メールボックス内のアイテムを更新する要求を定義します。
-ms.openlocfilehash: 43821db58457ffce22be918a7ba6427f57230010
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 544ccfb8c42b2a4d4f69ae04d383233203c235b8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466571"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542791"
 ---
 # <a name="updateitem"></a>UpdateItem
 
-**Updateitem**要素は、メールボックス内のアイテムを更新する要求を定義します。 
+**UpdateItem 要素** は、メールボックス内のアイテムを更新する要求を定義します。 
   
 ```XML
 <UpdateItem ConflictResolution="" MessageDisposition="" SendMeetingInvitationsOrCancellations="" SuppressReadReceipts="">
@@ -39,43 +39,43 @@ ms.locfileid: "44466571"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**ConflictResolution** <br/> |更新中に試行する競合解決の種類を識別します。 既定値は自動解決です。  <br/> |
-|**MessageDisposition** <br/> |アイテムが更新された後の処理方法について説明します。 **MessageDisposition**属性は、会議の取り消し、会議出席依頼、会議の返信などの会議メッセージを含む、メッセージアイテムに必要です。  <br/> |
-|**SendMeetingInvitationsOrCancellations** <br/> |予定表アイテムが更新された後に、会議の更新が伝達される方法について説明します。 この属性は、予定表アイテムと予定表アイテムの出現に必要です。  <br/> |
-|**SuppressReadReceipts** <br/> |更新されたアイテムの開封確認を抑制するかどうかを示します。 テキスト値が**true の場合**、開封確認を抑制する必要があることを示します。 値が**false**の場合、開封確認が送信者に送信されることを示します。 この属性は省略可能です。  <br/> この属性は、Exchange Server 2013 SP1 で導入されました。  <br/> |
+|**ConflictResolution** <br/> |更新中に試す競合解決の種類を識別します。 既定値は AutoResolve です。  <br/> |
+|**MessageDisposition** <br/> |更新後のアイテムの処理方法について説明します。 **MessageDisposition** 属性は、会議のキャンセル、会議出席依頼、会議出席依頼などの会議メッセージを含むメッセージ アイテムに必要です。  <br/> |
+|**SendMeetingInvitationsOrCancellations** <br/> |予定表アイテムの更新後に会議の更新プログラムがどのように通信されるのかについて説明します。 この属性は、予定表アイテムと予定表アイテムの出現に必要です。  <br/> |
+|**SuppressReadReceipts** <br/> |更新されたアイテムの読み取りレシートを非表示にするかどうかを示します。 テキスト値が **true の場合** は、読み取りレシートを省略する必要があります。 false の **値は** 、読み取りレシートが送信者に送信されます。 この属性は省略可能です。  <br/> この属性は、2013 SP1 Exchange Server導入されました。  <br/> |
    
 #### <a name="conflictresolution-attribute"></a>ConflictResolution 属性
 
 |**値**|**説明**|
 |:-----|:-----|
-|NeverOverwrite  <br/> |競合がある場合は、更新操作が失敗し、エラーが返されます。  <br/> |
-|解決  <br/> |Update 操作は、競合を自動的に解決します。  <br/> |
-|AlwaysOverwrite  <br/> |競合がある場合は、更新操作によって情報が上書きされます。  <br/> |
+|NeverOverwrite  <br/> |競合がある場合、更新操作は失敗し、エラーが返されます。  <br/> |
+|AutoResolve  <br/> |更新操作では、競合が自動的に解決されます。  <br/> |
+|AlwaysOverwrite  <br/> |競合がある場合、更新操作によって情報が上書きされます。  <br/> |
    
 #### <a name="messagedisposition-attribute"></a>MessageDisposition 属性
 
 |**値**|**説明**|
 |:-----|:-----|
-|SaveOnly  <br/> |アイテムが更新され、現在のフォルダーに戻されます。  <br/> |
-|SendOnly  <br/> |アイテムは更新されて送信されますが、コピーは保存されません。  <br/> |
-|SendAndSaveCopy  <br/> |アイテムが更新され、 [SavedItemFolderId](saveditemfolderid.md)要素によって識別されるフォルダーにコピーが保存されます。  <br/> |
+|SaveOnly  <br/> |アイテムが更新され、現在のフォルダーに保存されます。  <br/> |
+|SendOnly  <br/> |アイテムは更新され、送信されますが、コピーは保存されません。  <br/> |
+|SendAndSaveCopy  <br/> |アイテムが更新され [、SavedItemFolderId](saveditemfolderid.md) 要素によって識別されるフォルダーにコピーが保存されます。  <br/> |
    
 #### <a name="sendmeetinginvitationsorcancellations-attribute"></a>SendMeetingInvitationsOrCancellations 属性
 
 |**値**|**説明**|
 |:-----|:-----|
-|SendToNone  <br/> |予定表アイテムは更新されますが、更新プログラムは出席者に送信されません。  <br/> |
+|SendToNone  <br/> |予定表アイテムは更新されますが、更新は出席者に送信されません。  <br/> |
 |SendOnlyToAll  <br/> |予定表アイテムが更新され、会議の更新がすべての出席者に送信されますが、[送信済みアイテム] フォルダーには保存されません。  <br/> |
-|SendOnlyToChanged  <br/> |予定表アイテムが更新され、会議の変更の影響を受ける出席者にのみ会議の更新が送信されます。  <br/> |
-|SendToAllAndSaveCopy  <br/> |予定表アイテムが更新されると、会議の更新はすべての出席者に送信され、コピーは [送信済みアイテム] フォルダーに保存されます。  <br/> |
-|SendToChangedAndSaveCopy  <br/> |予定表アイテムが更新されると、会議の変更の影響を受けるすべての出席者に会議の更新が送信され、[送信済みアイテム] フォルダーにコピーが保存されます。  <br/> |
+|SendOnlyToChanged  <br/> |予定表アイテムが更新され、会議の更新は、会議の変更の影響を受ける出席者にのみ送信されます。  <br/> |
+|SendToAllAndSaveCopy  <br/> |予定表アイテムが更新され、会議の更新がすべての出席者に送信され、コピーが [送信済みアイテム] フォルダーに保存されます。  <br/> |
+|SendToChangedAndSaveCopy  <br/> |予定表アイテムが更新され、会議の変更の影響を受けるすべての出席者に会議の更新プログラムが送信され、コピーが [送信済みアイテム] フォルダーに保存されます。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[SavedItemFolderId](saveditemfolderid.md) <br/> |Exchange ストア内のアイテムを更新、送信、および作成する操作のターゲットフォルダーを指定します。  <br/> |
-|[ItemChanges](itemchanges.md) <br/> |アイテムとアイテムに適用する更新を識別する[Itemchange](itemchange.md)要素の配列が含まれています。  <br/> |
+|[SavedItemFolderId](saveditemfolderid.md) <br/> |アイテムを更新、送信、および作成する操作のターゲット フォルダーを、Exchangeします。  <br/> |
+|[ItemChanges](itemchanges.md) <br/> |アイテムとアイテムに適用する更新プログラムを識別する [ItemChange](itemchange.md) 要素の配列を格納します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -90,9 +90,9 @@ ms.locfileid: "44466571"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

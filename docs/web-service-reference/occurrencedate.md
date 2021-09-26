@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f041c15c-1a96-4a6f-9d21-0536936a5484
-description: OccurrenceDate 要素は、内部使用のみを目的としています。
-ms.openlocfilehash: 76f1410251ae4c3f8b82873894d97e94d66098af
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: OccurrenceDate 要素は内部での使用のみを目的とします。
+ms.openlocfilehash: ee09772e5fa196bac83611f8c5997c55552366c3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44450719"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543192"
 ---
 # <a name="occurrencedate"></a>OccurrenceDate
 
-**OccurrenceDate**要素は、内部使用のみを目的としています。 
+**OccurrenceDate 要素** は内部での使用のみを目的とします。 
 
 ## <a name="attributes-and-elements"></a>属性と要素
 

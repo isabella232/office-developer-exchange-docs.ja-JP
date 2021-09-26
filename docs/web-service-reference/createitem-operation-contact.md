@@ -5,33 +5,33 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateItem
 api_type:
 - schema
 ms.assetid: 417e994b-0a17-4c24-9527-04796b80b029
-description: CreateItem 操作は、Exchange ストアで連絡先を作成するために使用されます。
-ms.openlocfilehash: e1d78392b94d328cf687655cd93e6c9568f6274f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: CreateItem 操作は、ユーザー ストアに連絡先を作成Exchangeされます。
+ms.openlocfilehash: ced103046214830db868f4c62583e73297146d25
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457124"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545504"
 ---
 # <a name="createitem-operation-contact"></a>CreateItem 操作 (連絡先)
 
-CreateItem 操作は、Exchange ストアで連絡先を作成するために使用されます。
+CreateItem 操作は、ユーザー ストアに連絡先を作成Exchangeされます。
   
 ## <a name="remarks"></a>注釈
 
-プライベート配布リストの作成はサポートされていません。 [CompleteName](completename.md)コンテナー内のすべてのプロパティは読み取り専用であり、連絡先アイテムには設定できません。 
+プライベート配布リストの作成はサポートされていません。 CompleteName コンテナー [内のすべてのプロパティ](completename.md) は読み取り専用であり、連絡先アイテムに設定できません。 
   
 ## <a name="createitem-request-example"></a>CreateItem 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の有効な CreateItem SOAP 要求の例は、既定の連絡先フォルダーに連絡先を作成する方法を示しています。
+有効な CreateItem SOAP 要求の次の例は、既定の連絡先フォルダーに連絡先を作成する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -74,7 +74,7 @@ CreateItem 操作は、Exchange ストアで連絡先を作成するために使
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 応答では、次の要素が使用されます。
   
@@ -84,7 +84,7 @@ CreateItem 操作は、Exchange ストアで連絡先を作成するために使
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
-- [アイテム (非 Emptyarrayofallitemstype)](items-nonemptyarrayofallitemstype.md)
+- [Items (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
     
 - [Contact](contact.md)
     
@@ -102,7 +102,7 @@ CreateItem 操作は、Exchange ストアで連絡先を作成するために使
     
 - [Entry (PhysicalAddress)](entry-physicaladdress.md)
     
-- [所在](street.md)
+- [Street](street.md)
     
 - [市区町村](city.md)
     
@@ -118,11 +118,11 @@ CreateItem 操作は、Exchange ストアで連絡先を作成するために使
     
 - [姓](surname.md)
     
-## <a name="successful-createitem-request"></a>成功した CreateItem 要求
+## <a name="successful-createitem-request"></a>CreateItem 要求の成功
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、連絡先を作成した CreateItem 要求に対する正常な応答を示しています。 この例では、応答に新しく作成されたアイテムの識別子が含まれています。
+次の例は、連絡先を作成した CreateItem 要求に対する正常な応答を示しています。 この例では、応答に新しく作成されたアイテムの識別子が含まれている。
   
 ### <a name="code"></a>コード
 
@@ -156,7 +156,7 @@ CreateItem 操作は、Exchange ストアで連絡先を作成するために使
 
 ### <a name="comments"></a>コメント
 
-アイテム識別子は読みやすくするために短縮されています。
+アイテム識別子は、読みやすさを維持するために短縮されました。
   
 ### <a name="successful-response-elements"></a>成功した応答要素
 
@@ -172,17 +172,17 @@ CreateItem 操作は、Exchange ストアで連絡先を作成するために使
     
 - [ResponseCode](responsecode.md)
     
-- [アイテム (非 Emptyarrayofallitemstype)](items-nonemptyarrayofallitemstype.md)
+- [Items (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
     
 - [Contact](contact.md)
     
 - [ItemId](itemid.md)
     
-## <a name="invalid-createitem-request-example"></a>無効な CreateItem 要求の例
+## <a name="invalid-createitem-request-example"></a>CreateItem 要求の例が無効です
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、有効な XML で互換性のない命令を含む要求を示しています。 検索フォルダーに連絡先を作成することはできません。
+次の例は、有効な XML が含まれているが互換性のない命令を含む要求を示しています。 連絡先を検索フォルダーに作成することはできません。
   
 ### <a name="code"></a>コード
 
@@ -206,9 +206,9 @@ CreateItem 操作は、Exchange ストアで連絡先を作成するために使
 </soap:Envelope>
 ```
 
-## <a name="createitem-contact-error-response"></a>CreateItem (Contact) エラー応答
+## <a name="createitem-contact-error-response"></a>CreateItem (連絡先) エラー応答
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
 次の例は、CreateItem (Contact) 要求に対するエラー応答を示しています。
   
@@ -258,7 +258,7 @@ CreateItem 操作は、Exchange ストアで連絡先を作成するために使
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [アイテム (非 Emptyarrayofallitemstype)](items-nonemptyarrayofallitemstype.md)
+- [Items (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
     
 ## <a name="see-also"></a>関連項目
 

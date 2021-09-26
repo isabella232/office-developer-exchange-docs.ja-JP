@@ -1,33 +1,33 @@
 ---
-title: 切断電話操作
+title: DisconnectPhoneCall 操作
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DisconnectPhoneCall
 api_type:
 - schema
 ms.assetid: b42fb512-2ae4-4072-906a-ccebb85edb84
-description: 接続停止操作は、電話を終了します。
-ms.openlocfilehash: e337185bc2d5c4d2d4e010605816eacea8dfa0ee
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: DisconnectPhoneCall 操作は、電話の呼び出しを終了します。
+ms.openlocfilehash: 8f445b7e5c6f2f6343ad5b4d2fbff486ca1ab3d8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529064"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542359"
 ---
-# <a name="disconnectphonecall-operation"></a>切断電話操作
+# <a name="disconnectphonecall-operation"></a>DisconnectPhoneCall 操作
 
-接続**停止操作は**、電話を終了します。 
+**DisconnectPhoneCall 操作は**、電話の呼び出しを終了します。 
   
-## <a name="disconnectphonecall-request-example"></a>切断電話要求の例
+## <a name="disconnectphonecall-request-example"></a>DisconnectPhoneCall 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、電話を**切る要求を**発信する要求を形成する方法を示しています。 
+**DisconnectPhoneCall 要求の次の例は**、電話を切断する要求を形成する方法を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -49,11 +49,11 @@ ms.locfileid: "44529064"
 </soap:Envelope>
 ```
 
-## <a name="disconnectphonecall-response-example"></a>切断電話の応答の例
+## <a name="disconnectphonecall-response-example"></a>DisconnectPhoneCall 応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、切断された**phonecall**要求に対する正常な応答を示しています。 
+次の例は **、DisconnectPhoneCall** 要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -83,6 +83,6 @@ ms.locfileid: "44529064"
 
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS 操作](ews-operations-in-exchange.md) 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS 操作 (Exchange](ews-operations-in-exchange.md) 
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

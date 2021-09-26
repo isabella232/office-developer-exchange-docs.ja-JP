@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DeleteFolder
 api_type:
 - schema
 ms.assetid: e37963f4-af9e-4481-b389-16175711e66d
-description: DeleteFolder 要素は、Exchange ストア内のメールボックスからフォルダーを削除するための要求を定義します。
-ms.openlocfilehash: eb705a47b78b19c79b2e87561ba3696ed40e09cd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: DeleteFolder 要素は、メールボックス ストア内のメールボックスからフォルダーを削除する要求Exchangeします。
+ms.openlocfilehash: d1d64b84604acec54d9153144e5bfd7abaece94c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458769"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542478"
 ---
 # <a name="deletefolder"></a>DeleteFolder
 
-**Deletefolder**要素は、Exchange ストア内のメールボックスからフォルダーを削除するための要求を定義します。 
+**DeleteFolder 要素は**、メールボックス ストア内のメールボックスからフォルダーを削除する要求Exchangeします。 
   
 ```XML
 <DeleteFolder DeleteType="">
@@ -38,14 +38,14 @@ ms.locfileid: "44458769"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**DeleteType** <br/> |フォルダーが削除される方法について説明します。 この属性は必須です。  <br/> |
+|**DeleteType** <br/> |フォルダーを削除する方法について説明します。 この属性は必須です。  <br/> |
    
 #### <a name="deletetype-attribute"></a>DeleteType 属性
 
 |**値**|**説明**|
 |:-----|:-----|
-|HardDelete  <br/> |フォルダーがストアから完全に削除されます。  <br/> |
-|SoftDelete  <br/> |収集が有効になっている場合、フォルダーは収集に移動されます。  <br/> |
+|HardDelete  <br/> |フォルダーはストアから完全に削除されます。  <br/> |
+|SoftDelete  <br/> |ゴミ箱が有効になっている場合、フォルダーはゴミ箱に移動されます。  <br/> |
 |MoveToDeletedItems  <br/> |フォルダーが [削除済みアイテム] フォルダーに移動されます。  <br/> |
    
 ### <a name="child-elements"></a>子要素
@@ -64,7 +64,7 @@ ms.locfileid: "44458769"
   
 ## <a name="remarks"></a>注釈
 
-**MoveToDeletedItems**および**ハード削除**オプションは、トランザクションであり、Web サービスの呼び出しが完了すると、データベースがアイテムを削除済みアイテムフォルダーに移動したか、または Exchange データベースからアイテムを完全に削除したことを意味します。 この動作は、Microsoft Exchange Server 2007 および Exchange Server 2010 の場合と同じです。 
+**MoveToDeletedItems** および **HardDelete** オプションはトランザクションであり、Web サービス呼び出しが完了すると、データベースはアイテムを削除済みアイテム フォルダーに移動するか、Exchange データベースからアイテムを完全に削除しました。 この動作は、MicrosoftExchange Server 2007 および 2010 Exchange Serverです。 
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
@@ -73,9 +73,9 @@ ms.locfileid: "44458769"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

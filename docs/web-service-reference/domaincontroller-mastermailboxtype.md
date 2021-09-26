@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9d952237-a3be-48b9-ab53-7b268db2b693
-description: DomainController (MasterMailboxType) 要素は、内部使用のみを目的としています。
-ms.openlocfilehash: 0c05da4da746f756624acee7212014ede8e83729
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: DomainController (MasterMailboxType) 要素は、内部での使用のみを目的とします。
+ms.openlocfilehash: 5e56a684ab9b1513c5b3033e7ab0b873029e6508
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458720"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544235"
 ---
 # <a name="domaincontroller-mastermailboxtype"></a>DomainController (MasterMailboxType)
 
-**DomainController (MasterMailboxType)** 要素は、内部使用のみを目的としています。 
+**DomainController (MasterMailboxType) 要素** は、内部での使用のみを目的とします。 
 
 ## <a name="attributes-and-elements"></a>属性と要素
 

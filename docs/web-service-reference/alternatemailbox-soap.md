@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: d913a70d-5a85-4b6e-becc-2fb9334b6088
 description: AlternateMailbox 要素は、代替メールボックスを表します。
-ms.openlocfilehash: 9019f85a373cc186cc9dadddceee3dc9d11b3854
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 3646efef9b63b2af8dbba41a07a86462e18ac1c1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466158"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543724"
 ---
 # <a name="alternatemailbox-soap"></a>AlternateMailbox (SOAP)
 
-**AlternateMailbox**要素は、代替メールボックスを表します。 
+**AlternateMailbox 要素は**、代替メールボックスを表します。 
   
 ```XML
 <AlternateMailbox>
@@ -46,8 +46,8 @@ ms.locfileid: "44466158"
 |[Type (SOAP)](type-soap.md) <br/> |代替メールボックスの種類を表します。  <br/> |
 |[DisplayName (SOAP)](displayname-soap.md) <br/> |代替メールボックスの表示名を表します。  <br/> |
 |[LegacyDN (SOAP)](legacydn-soap.md) <br/> |代替メールボックスの従来の識別名を表します。  <br/> |
-|[サーバー (SOAP)](server-soap.md) <br/> |代替メールボックスサーバーを表します。  <br/> |
-|[SmtpAddress (SOAP)](smtpaddress-soap.md) <br/> |代替メールボックス SMTP アドレスを表します。  <br/> |
+|[Server (SOAP)](server-soap.md) <br/> |代替メールボックス サーバーを表します。  <br/> |
+|[SmtpAddress (SOAP)](smtpaddress-soap.md) <br/> |代替メールボックスの SMTP アドレスを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -65,8 +65,8 @@ ms.locfileid: "44466158"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

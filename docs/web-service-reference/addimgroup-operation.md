@@ -5,44 +5,44 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6df6e504-b7c8-4773-b10f-ffa5defac229
-description: AddImGroup EWS 操作についての情報を検索します。
-ms.openlocfilehash: 38ed12a741d46fe998dc0079ed13973ce9edf5ac
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: AddImGroup EWS 操作に関する情報を検索します。
+ms.openlocfilehash: 9aba6a22502c1006da06ce4a9bc925f13b5b5100
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462816"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544361"
 ---
 # <a name="addimgroup-operation"></a>AddImGroup 操作
 
-**Addimgroup** EWS 操作についての情報を検索します。 
+**AddImGroup** EWS 操作に関する情報を検索します。 
   
-**Addimgroup** Exchange Web サービス (EWS) の操作によって、新しいインスタントメッセージング (IM) グループがメールボックスに追加されます。 
+**AddImGroup Exchange** Web サービス (EWS) 操作により、メールボックスに新しいインスタント メッセージング (IM) グループが追加されます。 
   
 この操作は Exchange Server 2013 で導入されました。
   
 ## <a name="using-the-addimgroup-operation"></a>AddImGroup 操作の使用
 
-**Addimgroup**操作は、1つの表示名の引数のみを受け取ります。 
+**AddImGroup 操作は**、1 つの表示名引数のみを受け取ります。 
   
-この操作は、新しいグループの表示名、グループの種類、および Exchange ストア識別子を返します。
+この操作は、新しいグループの表示名、グループの種類、Exchangeの識別子を返します。
   
-**Addimgroup**操作では、次の表に示す SOAP ヘッダーを使用できます。 
+**AddImGroup 操作では**、次の表に示す SOAP ヘッダーを使用できます。 
   
-**表1AddImGroup 操作 SOAP ヘッダー**
+**表 1.AddImGroup 操作 SOAP ヘッダー**
 
-|**ヘッダー名**|**要素**|**説明**|
+|**ヘッダー名**|**Element**|**説明**|
 |:-----|:-----|:-----|
-|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。 これは要求に適用されます。  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |RFC 3066 で定義されているように、メールボックスへのアクセスに使用されるカルチャ (言語の識別用のタグ) を識別します。 これは要求に適用されます。  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。 これは要求に適用されます。  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 これは応答に適用されます。  <br/> |
+|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装しているユーザーを識別します。 これは要求に適用されます。  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |メールボックスへのアクセスに使用する RFC 3066「言語の識別用タグ」で定義されているカルチャを識別します。 これは要求に適用されます。  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマ バージョンを識別します。 これは要求に適用されます。  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 これは、応答に適用されます。  <br/> |
    
-## <a name="addimgroup-operation-request-example-create-a-new-im-group"></a>AddImGroup 操作要求の例: 新しい IM グループを作成します。
+## <a name="addimgroup-operation-request-example-create-a-new-im-group"></a>AddImGroup 操作要求の例: 新しい IM グループを作成する
 
-次に示す**Addimgroup**操作要求の例は、My顧客グループという名前の IM グループを作成する方法を示しています。 
+AddImGroup 操作要求の **次の例は、MyCustomerGroup** という名前の IM グループを作成する方法を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -65,11 +65,11 @@ ms.locfileid: "44462816"
   
 - [AddImGroup](addimgroup.md)
     
-- [DisplayName (文字列)](displayname-string.md)
+- [DisplayName (string)](displayname-string.md)
     
-## <a name="successful-addimgroup-operation-response"></a>正常な AddImGroup 操作の応答
+## <a name="successful-addimgroup-operation-response"></a>AddImGroup 操作の正常な応答
 
-次の例は、 **Addimgroup**操作要求に対する正常な応答を示しています。 
+次の例は **、AddImGroup** 操作要求に対する正常な応答を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -110,7 +110,7 @@ ms.locfileid: "44462816"
     
 - [ImGroup](imgroup.md)
     
-- [DisplayName (文字列)](displayname-string.md)
+- [DisplayName (string)](displayname-string.md)
     
 - [GroupType](grouptype.md)
     
@@ -118,7 +118,7 @@ ms.locfileid: "44462816"
     
 ## <a name="addimgroup-operation-error-response"></a>AddImGroup 操作エラー応答
 
-次の例は、 **Addimgroup**操作要求へのエラー応答を示しています。 これは、表示名に使用できない文字を含む要求に対する応答です。 これは SOAP フォールトであり、スキーマベースのエラーメッセージではないことに注意してください。 要求で送信された表示名は ~! @ # $% ^ &amp; で、文字にエラーが発生し &amp; ます。 &amp;11 行目と要求ペイロードの3番目の文字の文字が発生しました。 HTTP 500 コードを使用して応答が返されました。 
+次の例は **、AddImGroup** 操作要求に対するエラー応答を示しています。 これは、表示名で使用できない文字を含む要求に対する応答です。 これは SOAP 障害であり、スキーマ ベースのエラー メッセージではありません。 要求で送信された表示名は ~!@#$%^ で、文字 &amp; に対してエラーが発生 &amp; します。 この &amp; 文字は、要求ペイロードの 11 行目と 33 番目の文字で発生しました。 応答は HTTP 500 コードで返されました。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

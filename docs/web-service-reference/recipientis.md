@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - RecipientIs
 api_type:
 - schema
 ms.assetid: 5d2fd7ce-6137-4b3c-a716-c0218dcc8a09
-description: RecipientIs 要素は、電子メールメッセージのすべての受信者が、子の値 (ProtectionRuleValueType) 要素内の指定された受信者のいずれかと一致することを指定します。
-ms.openlocfilehash: 8f27c4484ce310c62f9bab0e6ffeea2bfac1d3ef
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: RecipientIs 要素は、電子メール メッセージの受信者が、子 Value (ProtectionRuleValueType) 要素の指定された受信者と一致する値を指定します。
+ms.openlocfilehash: 0bf9d96469c626ddc223b128a6d7fabebbfebc84
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463882"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542898"
 ---
 # <a name="recipientis"></a>RecipientIs
 
-**RecipientIs**要素は、電子メールメッセージのすべての受信者が、子の[値 (ProtectionRuleValueType)](value-protectionrulevaluetype.md)要素内の指定された受信者のいずれかと一致することを指定します。 
+**RecipientIs 要素** は、電子メール メッセージの受信者が、子 [Value (ProtectionRuleValueType)](value-protectionrulevaluetype.md)要素の指定された受信者と一致する値を指定します。 
   
 ```xml
 <RecipientIs>   <Value/></RecipientIs>
 ```
 
- **Protection/の Pientistype**
+ **ProtectionRuleRecipientIsType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -46,25 +46,25 @@ ms.locfileid: "44463882"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[条件](condition.md) <br/> |実行するルールのアクション部分に対して満たす必要がある条件を指定します。  <br/> |
-|[および (ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |**True**に評価するためにすべての子要素を一致させる必要があることを示します。  <br/> |
+|[Condition](condition.md) <br/> |ルールのアクション 部分を実行するために満たす必要がある条件を識別します。  <br/> |
+|[And (ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |true に評価するには、すべての子要素が一致 **する必要があります**。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

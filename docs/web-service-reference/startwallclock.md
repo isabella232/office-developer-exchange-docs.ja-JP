@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5ae2292f-fc5f-49fa-88a7-34ba86ff21f9
-description: StartWallClock 要素は、会議が開催される場所のタイムゾーンで会議の開始時刻を指定します。
-ms.openlocfilehash: 6022de4659dd12579b0545b5d3ffd2ea9b8a103d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: StartWallClock 要素は、会議が行う場所のタイム ゾーン内の会議の開始時刻を指定します。
+ms.openlocfilehash: 0e73d556af200b7dbe129212a54a769abc7c67be
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460009"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544634"
 ---
 # <a name="startwallclock"></a>StartWallClock
 
-**Startwallclock**要素は、会議が開催される場所のタイムゾーンで会議の開始時刻を指定します。 
+**StartWallClock** 要素は、会議が行う場所のタイム ゾーン内の会議の開始時刻を指定します。 
   
 ```XML
 <StartWallClock></StartWallClock>
@@ -39,11 +39,11 @@ ms.locfileid: "44460009"
   
 ### <a name="parent-elements"></a>親要素
 
-[Calendaritem](calendaritem.md)  | [会議の要求](meetingrequest.md)
+[CalendarItem](calendaritem.md)  | [MeetingRequest](meetingrequest.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**Startwallclock**要素のテキスト値は、会議が行われる場所のタイムゾーンにおける会議の開始時刻です。 
+**StartWallClock** 要素のテキスト値は、会議が行う場所のタイム ゾーン内の会議の開始時刻です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -56,8 +56,8 @@ ms.locfileid: "44460009"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

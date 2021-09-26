@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - StatusEvent
 api_type:
 - schema
 ms.assetid: d3901818-2640-4bed-aad8-21a61aee62a1
-description: StatusEvent 要素は、メールボックス内で新しいアクティビティが発生していないことを示す通知を表します。
-ms.openlocfilehash: 8158a47937a810be2ea22346384b4e61da56ac48
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: StatusEvent 要素は、メールボックスで新しいアクティビティが発生したという通知を表します。
+ms.openlocfilehash: 777d5cd22e47fea6e7bf7432e58e5d58d1ef67a4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468258"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543976"
 ---
 # <a name="statusevent"></a>StatusEvent
 
-**Statusevent**要素は、メールボックス内で新しいアクティビティが発生していないことを示す通知を表します。 
+**StatusEvent 要素** は、メールボックスで新しいアクティビティが発生したという通知を表します。 
   
 ```xml
 <StatusEvent>
@@ -42,36 +42,36 @@ ms.locfileid: "44468258"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Watermark](watermark.md) <br/> |サブスクリプションの最後の有効なウォーターマークを表します。  <br/> |
+|[Watermark](watermark.md) <br/> |サブスクリプションの最後の有効な透かしを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[通知](notification-ex15websvcsotherref.md) <br/> |サブスクリプションに関する情報、および前回の通知以降に発生したイベントに関する情報が含まれます。  <br/> |
+|[通知](notification-ex15websvcsotherref.md) <br/> |サブスクリプションと、前回の通知以降に発生したイベントに関する情報が格納されます。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-**Statusevent**要素は、次のいずれかの理由で通知で返されます。 
+**StatusEvent 要素** は、次のいずれかの理由で通知で返されます。 
   
-- プルクライアントが、アクティビティのないサブスクリプションに対して GetEvents 要求を発行します。
+- プル クライアントは、アクティビティがないサブスクリプションに対して GetEvents 要求を発行します。
     
-- [Statusfrequency](statusfrequency.md)に達した場合、プッシュクライアントにはキューにイベントがありません。 
+- [StatusFrequency](statusfrequency.md)に達した場合、プッシュ クライアントにはキューにイベントはありません。 
     
-**Statusevent**[ウォーターマーク](watermark.md)は、クライアントアプリケーションによって、他のイベントの種類のウォーターマークと同じ方法で使用されます。 ただし、 **Statusevent**のウォーターマークは、他のイベントで使用されるウォーターマークとは異なります。 たとえば、サブスクリプションにはウォーターマーク1、2、および3のイベントがあり、それらのイベントは通知で正常に伝達されています。 非アクティブな期間が発生し、 **GetEvents**要求が送信されます。 クライアントアクセスサーバー (CAS) は状態イベントを返し、最後のウォーターマーク3を[PreviousWatermark](previouswatermark.md)と現在の[ウォーターマーク](watermark.md)の両方として含みます。
+**StatusEvent**[透かし](watermark.md)は、他のイベントの種類の透かしと同じ方法でクライアント アプリケーションによって使用されます。 ただし **、StatusEvent** の透かしは、他のイベントで使用される透かしと同じではありません。 たとえば、サブスクリプションには透かし 1、2、3 のイベントが含まれます。これらのイベントは通知で正常に伝達されています。 非アクティブの期間が発生し **、GetEvents 要求が** 送信されます。 クライアント アクセス サーバー (CAS) は、状態イベントを返し [、PreviousWatermark](previouswatermark.md) と現在の透かしの両方として最後の透かし 3 を含 [む](watermark.md)。
   
-ウォーターマークは、すべての場合に変わりません。 イベントエントリは、30日間保持されます。 アクティブなサブスクリプションを維持するために、CAS はサブスクリプションキューのウォーターマークを定期的に更新します。 更新されたウォーターマークは、アクティブなサブスクリプションを維持するためにクライアントに送信されます。
+透かしは、すべてのケースで同じままではありません。 イベント エントリは 30 日間保持されます。 アクティブなサブスクリプションを維持するために、CAS はサブスクリプション キューの透かしを定期的に更新します。 更新された透かしは、アクティブなサブスクリプションを維持するためにクライアントに送信されます。
   
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

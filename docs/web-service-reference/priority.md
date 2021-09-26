@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Priority
 api_type:
 - schema
 ms.assetid: e1adb8b9-e3d5-469a-b188-822733d2503e
 description: Priority 要素は、ルールを実行する順序を示します。
-ms.openlocfilehash: a5a894bba583618dd04430fc89f125c8920b0202
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 6dc31de851d193deea1f47d07590ce21a90fc020
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462403"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543003"
 ---
 # <a name="priority"></a>優先度
 
-**Priority**要素は、ルールを実行する順序を示します。 
+**Priority 要素** は、ルールを実行する順序を示します。 
   
 ```XML
 <Priority/>
@@ -44,11 +44,11 @@ ms.locfileid: "44462403"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ルール (RuleType)](rule-ruletype.md) <br/> |ユーザーのメールボックス内のルールを表します。  <br/> |
+|[Rule (RuleType)](rule-ruletype.md) <br/> |ユーザーのメールボックス内のルールを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**Priority**要素のテキスト値は、ルールを実行する実行順序を示す整数です。 
+Priority 要素のテキスト **値** は、ルールを実行する実行順序を示す整数です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -59,13 +59,13 @@ ms.locfileid: "44462403"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

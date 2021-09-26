@@ -5,43 +5,43 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 446106b7-ff2d-4107-90c1-29f4d38ba128
 description: FindPeople EWS 操作に関する情報を検索します。
-ms.openlocfilehash: ab5edc3f140e34123ce1f009c401ddd61a0e2598
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: db093b5911fa0c4176b199d361d283d9dfde802b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462909"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545105"
 ---
 # <a name="findpeople-operation"></a>FindPeople 操作
 
-**Findpeople** EWS 操作に関する情報を検索します。 
+**FindPeople** EWS 操作に関する情報を検索します。 
   
-**Findpeople**操作は、指定された連絡先フォルダーからすべての persona オブジェクトを取得するか、指定されたクエリ文字列と一致する連絡先を取得します。 
+**FindPeople 操作は**、指定した連絡先フォルダーからすべてのペルソナ オブジェクトを取得するか、指定したクエリ文字列に一致する連絡先を取得します。 
   
 この操作は Exchange Server 2013 で導入されました。
   
 ## <a name="using-the-findpeople-operation"></a>FindPeople 操作の使用
 
-**Findpeople**操作は集計された連絡先情報を返します。 
+**FindPeople 操作は**、集計された連絡先情報を返します。 
   
-**Findpeople**操作は、集約制限を追加し、追加のプロパティを返す機能を追加することによって、 [Restriction](restriction.md)および[baseshape](baseshape.md)複合型の既存の機能に基づいて構築されます。 制限を使用することにより、クライアントは "IM アドレスを持つ結果のみを返す" などのフィルターを指定できます。 既定の検索動作では、指定したユーザーの個人用メールボックスとグローバルアドレス一覧 (GAL) の両方が対象になります。 GAL をプライマリ検索フォルダーとして検索する場合は、この操作では GAL の参照が許可されないため、制限ではなくクエリ文字列を指定する必要があります。 
+**FindPeople 操作** は、集計制限と追加のプロパティを返す機能を追加することで [、Restriction](restriction.md)複合型と [BaseShape](baseshape.md)複合型の既存の機能を基に構築されます。 制限を使用すると、クライアントは"IM アドレスを持つ結果のみを返す" などのフィルターを指定できます。 既定の検索動作は、指定したユーザーの個人用メールボックスとグローバル アドレス一覧 (GAL) の両方を対象としています。 プライマリ検索フォルダーとして GAL を検索する場合、この操作では GAL の参照が許可されないので、制限の代わりにクエリ文字列を指定する必要があります。 
   
 ### <a name="findpeople-operation-soap-headers"></a>FindPeople 操作 SOAP ヘッダー
 
-**Findpeople**操作では、次の表に示す SOAP ヘッダーを使用できます。 
+**FindPeople 操作では**、次の表に示す SOAP ヘッダーを使用できます。 
   
-|**ヘッダー名**|**要素**|**説明**|
+|**ヘッダー名**|**Element**|**説明**|
 |:-----|:-----|:-----|
-|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは応答に適用されます。  <br/> |
+|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマ バージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは、応答に適用されます。  <br/> |
    
-## <a name="findpeople-operation-request-example"></a>FindPeople 操作の要求の例
+## <a name="findpeople-operation-request-example"></a>FindPeople 操作要求の例
 
-**Findpeople**操作要求の次の例は、連絡先フォルダーから最初の100の連絡先を返す方法を示しています。 
+**FindPeople** 操作要求の次の例は、連絡先フォルダーから最初の 100 件の連絡先を返す方法を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -72,7 +72,7 @@ ms.locfileid: "44462909"
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
-**Findpeople**操作要求の次の例は、クエリ文字列を使用して GAL から最初の100の連絡先を返す方法を示しています。 **DistinguishedFolderId**を "directory" に設定すると、GAL がペルソナのプライマリソースとして検索されます。 
+**FindPeople** 操作要求の次の例は、クエリ文字列を使用して GAL から最初の 100 件の連絡先を返す方法を示しています。 **DistinguishedFolderId を**"directory" に設定すると、GAL はペルサのプライマリ ソースとして検索されます。 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -101,9 +101,9 @@ ms.locfileid: "44462909"
 </soap:Envelope>
 ```
 
-## <a name="successful-findpeople-operation-response"></a>成功した FindPeople 操作の応答
+## <a name="successful-findpeople-operation-response"></a>FindPeople 操作の正常な応答
 
-次の例は、 **Findpeople**操作要求に対する正常な応答を示しています。 
+次の例は **、FindPeople 操作要求に対する正常な応答を** 示しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?><s:Envelope 
@@ -174,7 +174,7 @@ ms.locfileid: "44462909"
     
 - [CreationTime](creationtime.md)
     
-- [DisplayName (文字列)](displayname-string.md)
+- [DisplayName (string)](displayname-string.md)
     
 - [DisplayNameFirstLast](displaynamefirstlast.md)
     
@@ -202,7 +202,7 @@ ms.locfileid: "44462909"
     
 ## <a name="findpeople-operation-error-response"></a>FindPeople 操作エラー応答
 
-EWS に汎用のエラーコードについては[、「応答](responsecode.md)」を参照してください。
+EWS に汎用的なエラー コードについては [、「ResponseCode」を参照してください](responsecode.md)。
   
 ## <a name="see-also"></a>関連項目
 

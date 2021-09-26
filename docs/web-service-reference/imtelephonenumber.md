@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 78ed7503-7d65-45e8-b1b0-d26534217058
-description: ImTelephoneNumber 要素は、インスタントメッセージング (IM) グループに追加される連絡先の電話番号を表します。
-ms.openlocfilehash: df2f089b6aef9dfe6cc8aa8f3a1748029b1a37d3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ImTelephoneNumber 要素は、インスタント メッセージング (IM) グループに追加される連絡先の電話番号を表します。
+ms.openlocfilehash: e969ea2fbf5dd16e98ae5b9714980627ceeea5f1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460646"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542191"
 ---
 # <a name="imtelephonenumber"></a>ImTelephoneNumber
 
-**ImTelephoneNumber**要素は、インスタントメッセージング (IM) グループに追加される連絡先の電話番号を表します。 
+**ImTelephoneNumber** 要素は、インスタント メッセージング (IM) グループに追加される連絡先の電話番号を表します。 
   
 ```XML
 <ImTelephoneNumber></ImTelephoneNumber>
@@ -42,7 +42,7 @@ ms.locfileid: "44460646"
   
 ## <a name="text-value"></a>テキスト値
 
-**ImTelephoneNumber**要素のテキスト値は、連絡先の電話番号です。 
+**ImTelephoneNumber 要素のテキスト** 値は、連絡先の電話番号です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44460646"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |いいえ  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 

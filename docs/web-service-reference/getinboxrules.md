@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetInboxRules
 api_type:
 - schema
 ms.assetid: 7a54992d-03a6-4afc-a2e4-dcdc9ce54194
-description: Getinbox Rules 要素は、サーバーストア内のメールボックスの受信トレイルールを取得する要求を定義します。
-ms.openlocfilehash: 890592fd3f87fc5592a618a2febf28e4daf0dbe4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetInboxRules 要素は、サーバー ストア内のメールボックスの受信トレイ ルールを取得する要求を定義します。
+ms.openlocfilehash: 5e93248cf074e9b57c33a3873cc8bef18a6f2009
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457929"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546246"
 ---
 # <a name="getinboxrules"></a>GetInboxRules
 
-**Getinbox rules**要素は、サーバーストア内のメールボックスの受信トレイルールを取得する要求を定義します。 
+**GetInboxRules 要素** は、サーバー ストア内のメールボックスの受信トレイ ルールを取得する要求を定義します。 
   
 ```XML
 <GetInboxRules>
@@ -29,7 +29,7 @@ ms.locfileid: "44457929"
 </GetInboxRules>
 ```
 
- **Get受信規則 Requesttype**
+ **GetInboxRulesRequestType**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -42,7 +42,7 @@ ms.locfileid: "44457929"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[MailboxSmtpAddress](mailboxsmtpaddress.md) <br/> |受信トレイルールを取得するユーザーの SMTP アドレスを表します。  <br/> |
+|[MailboxSmtpAddress](mailboxsmtpaddress.md) <br/> |受信トレイ ルールを取得するユーザーの SMTP アドレスを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -57,9 +57,9 @@ ms.locfileid: "44457929"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

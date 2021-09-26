@@ -1,24 +1,24 @@
 ---
-title: 要求 (SOAP)
+title: Request (SOAP)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 75696436-997e-49f1-a31b-eb9a8c3526f3
-description: 要求要素には、要求された構成設定と対象ユーザーが含まれています。
-ms.openlocfilehash: 4358713d19e763b75d2a43f147385026f43b1255
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Request 要素には、要求された構成設定とターゲット ユーザーが含まれる。
+ms.openlocfilehash: 533419d6e622bb1d415f739868aaf30c79c41635
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44448990"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542806"
 ---
-# <a name="request-soap"></a>要求 (SOAP)
+# <a name="request-soap"></a>Request (SOAP)
 
-**要求**要素には、要求された構成設定と対象ユーザーが含まれています。 
+**Request 要素には**、要求された構成設定とターゲット ユーザーが含まれる。 
   
 ```XML
 <Request>
@@ -41,15 +41,15 @@ ms.locfileid: "44448990"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[Users (SOAP)](users-soap.md) <br/> |設定を取得するユーザーの電子メールアドレスのコレクションを表します。  <br/> |
-|[RequestedSettings (SOAP)](requestedsettings-soap.md) <br/> |要求された構成設定の名前が含まれています。  <br/> |
-|[RequestedVersion (SOAP)](requestedversion-soap.md) <br/> |プロバイダーが使用する特定のサーバーのバージョンを指定します。  <br/> |
+|[ユーザー (SOAP)](users-soap.md) <br/> |設定を取得する必要があるユーザーの電子メール アドレスのコレクションを表します。  <br/> |
+|[RequestedSettings (SOAP)](requestedsettings-soap.md) <br/> |要求された構成設定の名前が含まれる。  <br/> |
+|[RequestedVersion (SOAP)](requestedversion-soap.md) <br/> |プロバイダーが使用する特定のサーバー バージョンを指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetUserSettingsRequestMessage (SOAP)](getusersettingsrequestmessage-soap.md) <br/> |[Getusersettings 操作 (SOAP)](getusersettings-operation-soap.md)要求を表します。  <br/> |
+|[GetUserSettingsRequestMessage (SOAP)](getusersettingsrequestmessage-soap.md) <br/> |[GetUserSettings 操作 (SOAP) 要求を表](getusersettings-operation-soap.md)します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -61,8 +61,8 @@ ms.locfileid: "44448990"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

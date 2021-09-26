@@ -4,27 +4,27 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 37ad46ab-7817-4fdd-ad2d-26cb525cd96b
-description: PublicFolderServer 要素には、ユーザーのパブリックフォルダーサーバーの完全修飾ドメイン名 (FQDN) が含まれています。
-ms.openlocfilehash: 868eab83d05387f570bc033522121f25f09817c4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: PublicFolderServer 要素には、ユーザーのパブリック フォルダー サーバーの完全修飾ドメイン名 (FQDN) が含まれる。
+ms.openlocfilehash: d81d7cdc10cdf0c5f06e9c4bf9e1c8a089de293d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44433687"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542954"
 ---
 # <a name="publicfolderserver-pox"></a>PublicFolderServer (POX)
 
-**Publicfolderserver**要素には、ユーザーのパブリックフォルダーサーバーの完全修飾ドメイン名 (FQDN) が含まれています。 
+**PublicFolderServer** 要素には、ユーザーのパブリック フォルダー サーバーの完全修飾ドメイン名 (FQDN) が含まれる。 
   
-[自動検出 (POX)](autodiscover-pox.md)
+[AutoDiscover (POX)](autodiscover-pox.md)
   
-[応答 (POX)](response-pox.md)
+[Response (POX)](response-pox.md)
   
-[アカウント (POX)](account-pox.md)
+[Account (POX)](account-pox.md)
   
-[プロトコル (POX)](protocol-pox.md)
+[Protocol (POX)](protocol-pox.md)
   
 [PublicFolderServer (POX)](publicfolderserver-pox.md)
   
@@ -48,19 +48,19 @@ ms.locfileid: "44433687"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
+|[Protocol (POX)](protocol-pox.md) <br/> |クライアント アクセス サーバーの役割がインストールされているクライアントを実行しているコンピューター Microsoft Exchange Server接続するための仕様が含まれている。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-Text 値は、ユーザーのパブリックフォルダーサーバーの FQDN を表します。
+テキスト値は、ユーザーのパブリック フォルダー サーバーの FQDN を表します。
   
 ## <a name="remarks"></a>注釈
 
-**Publicfolderserver**要素は、 **Protocol**要素のオプションの子要素です。 
+**PublicFolderServer** 要素は、Protocol 要素のオプションの子 **要素** です。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+[POX 自動検出 XML 要素のExchange](pox-autodiscover-xml-elements-for-exchange.md)
 

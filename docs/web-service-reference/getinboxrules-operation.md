@@ -1,33 +1,33 @@
 ---
-title: GetInboxRules の操作
+title: GetInboxRules 操作
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetInboxRules
 api_type:
 - schema
 ms.assetid: b4b2701a-4a23-4acc-8c75-19f7955ad7ae
-description: Getinbox Rules 操作は、Exchange Web サービスを使用して、識別されたユーザーのメールボックス内の受信トレイルールを取得します。
-ms.openlocfilehash: f4c4c03f55c9f32be4a067024f4387888edd5fe9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetInboxRules 操作では、Exchange Web サービスを使用して、識別されたユーザーのメールボックス内の受信トレイ ルールを取得します。
+ms.openlocfilehash: 3e312ed08494b92c212595d081454b5f2ca6117e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457936"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546253"
 ---
-# <a name="getinboxrules-operation"></a>GetInboxRules の操作
+# <a name="getinboxrules-operation"></a>GetInboxRules 操作
 
-**Getinbox rules**操作は、Exchange Web サービスを使用して、識別されたユーザーのメールボックス内の受信トレイルールを取得します。 
+**GetInboxRules** 操作では、Exchange Web サービスを使用して、識別されたユーザーのメールボックス内の受信トレイ ルールを取得します。 
   
-## <a name="getinboxrules-request-example"></a>Get受信トレイの要求の例
+## <a name="getinboxrules-request-example"></a>GetInboxRules 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、クライアントがサーバーに送信する要求 XML を示しています。 この要求は、 [MailboxSmtpAddress](mailboxsmtpaddress.md)要素でユーザーを識別します。 識別されたユーザーのすべての受信トレイルールが応答で返されます。 
+次の例は、クライアントがサーバーに送信する要求 XML を示しています。 要求は [、MailboxSmtpAddress 要素内のユーザーを識別](mailboxsmtpaddress.md) します。 識別されたユーザーのすべての受信トレイ ルールが応答で返されます。 
   
 ### <a name="code"></a>コード
 
@@ -48,20 +48,20 @@ ms.locfileid: "44457936"
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
-要求には、次のオプションの要素が含まれます。
+要求には、次の省略可能な要素が含まれています。
   
 - [MailboxSmtpAddress](mailboxsmtpaddress.md)
     
-## <a name="successful-getinboxrules-response-example"></a>成功した Get受信トレイの応答の例
+## <a name="successful-getinboxrules-response-example"></a>GetInboxRules 応答の成功例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の簡易オブジェクトアクセスプロトコル (SOAP) 本文の例は、 **Get受信トレイ**の要求に対する正常な応答を示しています。 この例では、応答に1つのルールが含まれています。 
+次のSimple Object Access Protocol (SOAP) 本文の例は **、GetInboxRules** 要求に対する正常な応答を示しています。 この例では、応答に 1 つのルールが含まれています。 
   
 > [!NOTE]
-> [FolderId](folderid.md)要素の**Id**および**changekey**属性の値は、読みやすさを維持するために短縮されています。 
+> [FolderId](folderid.md)要素 **の Id** 属性と **ChangeKey** 属性の値は、読みやすさを維持するために短縮されています。 
   
 ### <a name="code"></a>コード
 
@@ -107,17 +107,17 @@ ms.locfileid: "44457936"
 </s:Envelope>
 ```
 
-### <a name="response-elements"></a>Response 要素
+### <a name="response-elements"></a>応答要素
 
-応答には、次の要素が含まれています。
+応答には、次の要素が含まれます。
   
-- [Get受信規則の応答](getinboxrulesresponse.md)
+- [GetInboxRulesResponse](getinboxrulesresponse.md)
     
 - [ResponseCode](responsecode.md)
     
 - [OutlookRuleBlobExists](outlookruleblobexists.md)
     
-- [受信トレイのルール](inboxrules.md)
+- [InboxRules](inboxrules.md)
     
 ## <a name="see-also"></a>関連項目
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Value
 api_type:
 - schema
 ms.assetid: b039bd6e-2198-47cf-9c78-a5e8b9d51c98
-description: Value 要素は、1人の受信者または送信者の部署を識別します。
-ms.openlocfilehash: 908ea451800abc343fb6e4d4a4ed98d57223bd23
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Value 要素は、単一の受信者または送信者部門を識別します。
+ms.openlocfilehash: 2c4bbdcb3364f0ef8f608469f0dc1b289c4eeaf6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465241"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541624"
 ---
 # <a name="value-protectionrulevaluetype"></a>Value (ProtectionRuleValueType)
 
-**Value**要素は、1人の受信者または送信者の部署を識別します。 
+**Value 要素は**、単一の受信者または送信者部門を識別します。 
   
 ```XML
 <Value/>
@@ -45,12 +45,12 @@ ms.locfileid: "44465241"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[RecipientIs](recipientis.md) <br/> |電子メールメッセージのすべての受信者が、子の**値**要素内の指定された受信者のいずれかと一致することを指定します。  <br/> |
-|[SenderDepartments](senderdepartments.md) <br/> |送信者の部署が、子の**値**要素で指定された各部に一致することを指定します。  <br/> |
+|[RecipientIs](recipientis.md) <br/> |電子メール メッセージの受信者が、子 Value 要素の指定された受信者と一致する値を **指定** します。  <br/> |
+|[SenderDepartments](senderdepartments.md) <br/> |送信者の部署が、子 Value 要素の指定された部署と一致する場合に **指定** します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-この要素には、空でない文字列値を含める必要があります。
+この要素には、文字列値が含まれている必要があります。
   
 ## <a name="remarks"></a>注釈
 
@@ -61,11 +61,11 @@ ms.locfileid: "44465241"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

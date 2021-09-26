@@ -1,27 +1,27 @@
 ---
-title: Is自動転送
+title: IsAutomaticForward
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsAutomaticForward
 api_type:
 - schema
 ms.assetid: 6876b849-a648-482e-8934-93eb5a0c465f
-description: Isautomatic Forward 要素は、条件または例外を適用するために、受信メッセージが自動転送である必要があるかどうかを示します。
-ms.openlocfilehash: 800d38bab30245d88b3c09609e6235e6de8fed25
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: IsAutomaticForward 要素は、条件または例外を適用するために、受信メッセージを自動転送する必要があるかどうかを示します。
+ms.openlocfilehash: ca78a71b38e15f7444641979f67c5dbe23f288a1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455577"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544944"
 ---
-# <a name="isautomaticforward"></a>Is自動転送
+# <a name="isautomaticforward"></a>IsAutomaticForward
 
-**Isautomatic forward**要素は、条件または例外を適用するために、受信メッセージが自動転送である必要があるかどうかを示します。 
+**IsAutomaticForward** 要素は、条件または例外を適用するために、受信メッセージを自動転送する必要があるかどうかを示します。 
   
 ```XML
 <IsAutomaticForward/> true | false</IsAutomaticForward>
@@ -44,12 +44,12 @@ ms.locfileid: "44455577"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[条件](conditions.md) <br/> |ルールのルールの処理を開始するときに実行される条件を表します。  <br/> |
-|[例外](exceptions.md) <br/> |受信トレイルールに対して使用可能なすべてのルールの例外条件を表します。  <br/> |
+|[条件](conditions.md) <br/> |満たされると、ルールのルール アクションをトリガーする条件を表します。  <br/> |
+|[例外](exceptions.md) <br/> |受信トレイ ルールで使用可能なすべてのルール例外条件を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値が**true の場合**、条件または例外を適用するには、メッセージが自動転送になっている必要があることを示します。 値が**false**の場合、条件または例外を適用するには、メッセージが自動転送ではない必要があることを示します。 
+true のテキスト **値は** 、条件または例外が適用されるには、メッセージが自動転送である必要があります。 false の **値は** 、条件または例外を適用するために、メッセージを自動転送する必要がなからなく示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -60,13 +60,13 @@ ms.locfileid: "44455577"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

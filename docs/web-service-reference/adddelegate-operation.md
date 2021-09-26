@@ -5,40 +5,40 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - AddDelegate
 api_type:
 - schema
 ms.assetid: 012d8cc5-648c-4ba0-a155-15c422b1e994
-description: AddDelegate 操作は、1つ以上の代理人をプリンシパルのメールボックスに追加し、特定のアクセス許可を設定します。
-ms.openlocfilehash: 80adbe71d69be1025dc9593c6a9002bc68fdcb76
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: AddDelegate 操作は、プリンシパルのメールボックスに 1 つ以上の代理人を追加し、特定のアクセス許可を設定します。
+ms.openlocfilehash: 687080c58a0dbde2ddb0f0049b96d543204c6018
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466515"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543815"
 ---
 # <a name="adddelegate-operation"></a>AddDelegate 操作
 
-**Adddelegate**操作は、1つ以上の代理人をプリンシパルのメールボックスに追加し、特定のアクセス許可を設定します。 
+**AddDelegate 操作は**、プリンシパルのメールボックスに 1 つ以上の代理人を追加し、特定のアクセス許可を設定します。 
   
 ## <a name="soap-headers"></a>SOAP ヘッダー
 
-**Adddelegate**操作では、次の表に記載されている SOAP ヘッダーを使用できます。 
+**AddDelegate 操作では**、次の表に示す SOAP ヘッダーを使用できます。 
   
-|**Header**|**要素**|**説明**|
+|**Header**|**Element**|**説明**|
 |:-----|:-----|:-----|
-|偽装  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。  <br/> |
-|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |メールボックスへのアクセスに使用する RFC3066 カルチャを指定します。  <br/> |
-|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。  <br/> |
+|偽装  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装しているユーザーを識別します。  <br/> |
+|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |メールボックスへのアクセスに使用する RFC3066 カルチャを識別します。  <br/> |
+|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマ バージョンを識別します。  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。  <br/> |
    
 ## <a name="adddelegate-request-example"></a>AddDelegate 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の**Adddelegate**要求の例では、user2 によって所有されているフォルダーに user1 の代理人アクセス許可を付与しようとしています。 User1 には、user2's の予定表フォルダーとレビューアーレベルのアクセス許可を user2's の連絡先フォルダーに付与するための、作成者レベルのアクセス許可が付与されます。 User1 は会議メッセージのコピーを受信せず、user2's メールボックス内のプライベートアイテムを表示することができません。 会議出席依頼は user1 と user2 の両方に送信されます。 
+**AddDelegate 要求の次の例は、user2** が所有するフォルダーに対して user1 委任アクセス許可を付与する試みを示しています。 User1 には、user2 の予定表フォルダーに対する作成者レベルのアクセス許可と、user2 の連絡先フォルダーに対するレビュー担当者レベルのアクセス許可が与えられる。 User1 は会議メッセージのコピーを受信し、user2 のメールボックス内のプライベート アイテムを表示できません。 会議出席依頼は、user1 と user2 の両方に送信されます。 
   
 ### <a name="code"></a>コード
 
@@ -75,9 +75,9 @@ ms.locfileid: "44466515"
 
 ## <a name="adddelegate-response-example"></a>AddDelegate 応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-Adddelegate 応答の次**AddDelegate**の例は、 **adddelegate**要求に対する正常な応答を示しています。 
+**AddDelegate 応答の次の例は、AddDelegate** 要求に対する正常な応答 **を示** しています。 
   
 ### <a name="code"></a>コード
 
@@ -120,9 +120,9 @@ Adddelegate 応答の次**AddDelegate**の例は、 **adddelegate**要求に対�
 
 ## <a name="adddelegate-error-response-example"></a>AddDelegate エラー応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、既にプリンシパルのメールボックスに追加されている代理人を追加する要求に対する応答を示しています。
+次の例は、プリンシパルのメールボックスに既に追加されている代理人を追加する要求に対する応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -158,7 +158,7 @@ Adddelegate 応答の次**AddDelegate**の例は、 **adddelegate**要求に対�
 
 ### <a name="comments"></a>コメント
 
-代理人を追加しようとしたときに ErrorDelegateAlreadyExists 応答コードが返された場合は、 [Getdelegate 操作](getdelegate-operation.md)を使用して代理人に対する現在のアクセス許可をすべて取得した後、 [updatedelegate 操作](updatedelegate-operation.md)を使用して新しいアクセス許可を設定します。 
+代理人を追加しようとするときに ErrorDelegateAlreadyExists 応答コードが返される場合は [、GetDelegate](getdelegate-operation.md) 操作を使用して、代理人のすべての現在のアクセス許可を取得し [、UpdateDelegate](updatedelegate-operation.md) 操作を使用して新しいアクセス許可を設定します。 
   
 ## <a name="see-also"></a>関連項目
 

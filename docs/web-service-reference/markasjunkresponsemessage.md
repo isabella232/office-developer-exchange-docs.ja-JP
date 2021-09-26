@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3e2b7b53-ef3c-438e-93df-b08409dbab46
 description: MarkAsJunkResponseMessage 要素は、MarkAsJunk 要求の応答メッセージを指定します。
-ms.openlocfilehash: be03fc964b56c463320f09e68d143a0377300f5c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 1effc7f1bbb360c0f421d2a0429edf0d2652e88d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460100"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544074"
 ---
 # <a name="markasjunkresponsemessage"></a>MarkAsJunkResponseMessage
 
-**MarkAsJunkResponseMessage**要素は、 **markasjunk**要求の応答メッセージを指定します。 
+**MarkAsJunkResponseMessage** 要素は **、MarkAsJunk** 要求の応答メッセージを指定します。 
   
 ```XML
 <MarkAsJunkResponseMessage>
@@ -40,7 +40,7 @@ ms.locfileid: "44460100"
   
 ### <a name="child-elements"></a>子要素
 
-[Messagetext](messagetext.md)  | 応答[Secmode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [Moveditemid](moveditemid.md)
+[MessageText](messagetext.md)  | [ResponseCode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)  | [MovedItemId](moveditemid.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -57,8 +57,8 @@ ms.locfileid: "44460100"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

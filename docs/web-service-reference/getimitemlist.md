@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2a243852-362f-4bde-95ab-fe42ead61a85
-description: GetImItemList 要素は、インスタントメッセージンググループと連絡先の一覧を取得するための要求を定義します。
-ms.openlocfilehash: 435bacdc292eb8e7ea8a7822a2a4cd592598cb03
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetImItemList 要素は、インスタント メッセージング グループと連絡先の一覧を取得する要求を定義します。
+ms.openlocfilehash: 593c0edc4b43c0da3b811e05922198149cffbe50
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456060"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546274"
 ---
 # <a name="getimitemlist"></a>GetImItemList
 
-**Getimitemlist**要素は、インスタントメッセージンググループと連絡先の一覧を取得するための要求を定義します。 
+**GetImItemList** 要素は、インスタント メッセージング グループと連絡先の一覧を取得する要求を定義します。 
   
 ```XML
 <GetImItemList>
@@ -53,8 +53,8 @@ ms.locfileid: "44456060"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |true  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空の場合  <br/> |true  <br/> |
    
 

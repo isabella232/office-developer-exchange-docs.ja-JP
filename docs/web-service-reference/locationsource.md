@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fc4d77d5-6200-4cf3-848a-1088fec0e0d6
-description: LocationSource 要素は、関連付けられた郵便番号の発信元に関する情報を指定します。たとえば、連絡先または電話帳などです。
-ms.openlocfilehash: ceba52c43d1c798bb8f5492b779c7c45d7d00b0b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: LocationSource 要素は、連絡先や電話帳など、関連付けられた郵送先住所の発生元に関する情報を指定します。
+ms.openlocfilehash: f3569494d3e662fbc46060944c8bd399b62d656b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467103"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543262"
 ---
 # <a name="locationsource"></a>LocationSource
 
-**Locationsource**要素は、関連付けられた郵便番号の発信元に関する情報を指定します。たとえば、連絡先または電話帳などです。 
+**LocationSource 要素** は、連絡先や電話帳など、関連付けられた郵送先住所の発生元に関する情報を指定します。 
   
 ```XML
 <LocationSource> None | LocationServices | PhonebookServices | Device | Contact | Resource </LocationSource>
@@ -38,22 +38,22 @@ ms.locfileid: "44467103"
   
 ### <a name="parent-elements"></a>親要素
 
-[Value (PersonaPostalAddressType)](value-personapostaladdresstype.md)  | ["Postaladdress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)
+[Value (PersonaPostalAddressType)](value-personapostaladdresstype.md)  | [PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)
   
 ## <a name="text-value"></a>テキスト値
 
-次の表に、 **Locationsource**要素のテキスト値を示します。 
+**LocationSource** 要素のテキスト値を次の表に示します。 
   
 **LocationSource 要素のテキスト値**
 
 |**値**|**説明**|
 |:-----|:-----|
 |なし  <br/> |場所のソースはありません。  <br/> |
-|LocationServices  <br/> |情報は場所サービスから取得されました。  <br/> |
-|電話帳サービス  <br/> |情報は、電話帳サービスから取得されました。  <br/> |
-|Device  <br/> |情報はデバイスから取得されました。  <br/> |
-|Contact  <br/> |連絡先から情報を取得しました。  <br/> |
-|関連情報  <br/> |情報はリソースから取得されました。  <br/> |
+|LocationServices  <br/> |この情報は、位置情報サービスから取得しました。  <br/> |
+|PhonebookServices  <br/> |情報は電話帳サービスから取得しました。  <br/> |
+|デバイス  <br/> |情報はデバイスから取得しました。  <br/> |
+|Contact  <br/> |情報は連絡先から取得しました。  <br/> |
+|リソース  <br/> |情報はリソースから取得しました。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

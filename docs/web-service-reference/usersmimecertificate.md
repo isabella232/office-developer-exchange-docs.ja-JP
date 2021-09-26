@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 66e6b4ba-368d-4469-bd47-e59441b7d64d
-description: UserSMIMECertificate 要素には、連絡先の SMIME 証明書をエンコードする値が含まれています。
-ms.openlocfilehash: 7e2dbc6a9c8b04758ba99db036e237d8837850aa
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: UserSMIMECertificate 要素には、連絡先の SMIME 証明書をエンコードする値が含まれる。
+ms.openlocfilehash: 8e53b4bf19bb42e30cae10ce7deb085efc703fed
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467656"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541673"
 ---
 # <a name="usersmimecertificate"></a>UserSMIMECertificate
 
-**UserSMIMECertificate**要素には、連絡先の SMIME 証明書をエンコードする値が含まれています。 
+**UserSMIMECertificate 要素** には、連絡先の SMIME 証明書をエンコードする値が含まれる。 
   
 ```XML
 <UserSMIMECertificate/>
@@ -36,13 +36,13 @@ ms.locfileid: "44467656"
 
 |**要素名**|**説明**|
 |:-----|:-----|
-|[Base64Binary](base64binary.md) <br/> |Base64 でエンコードされた値を格納します。  <br/> |
+|[Base64Binary](base64binary.md) <br/> |Base64 でエンコードされた値を含む。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素名**|**説明**|
 |:-----|:-----|
-|[Contact](contact.md) <br/> |Exchange ストア内の連絡先アイテムを表します。  <br/> |
+|[Contact](contact.md) <br/> |ストア内の連絡先アイテムExchangeします。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -59,15 +59,15 @@ ms.locfileid: "44467656"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 
 
 [連絡先の作成 (Exchange Web サービス)](https://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)

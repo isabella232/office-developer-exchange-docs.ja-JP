@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 16d63d10-3566-4eda-802a-fcef5458d2e7
-description: AddImGroup 要素は、新しいインスタントメッセージンググループを追加するための要求を定義します。
-ms.openlocfilehash: dc9ae442cf546df872fc0fe4300071d3c0ec73da
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: AddImGroup 要素は、新しいインスタント メッセージング グループを追加する要求を定義します。
+ms.openlocfilehash: 18e63255845bbbceb2b8e2c15f88bc6c7a80cc33
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462809"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541582"
 ---
 # <a name="addimgroup"></a>AddImGroup
 
-**Addimgroup**要素は、新しいインスタントメッセージンググループを追加するための要求を定義します。 
+**AddImGroup 要素** は、新しいインスタント メッセージング グループを追加する要求を定義します。 
   
 ```XML
 <AddImGroup>
@@ -53,8 +53,8 @@ DisplayName
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

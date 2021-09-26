@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - AllowNewTimeProposal
 api_type:
 - schema
 ms.assetid: afdb4ec9-2daf-48a1-a0bb-a7f647f212f2
-description: AllowNewTimeProposal 要素は、新しい会議日時を出席者の会議のために提案できるかどうかを示します。
-ms.openlocfilehash: b3f2c569bced08c66144680a4fddd6e8bac0cecf
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: AllowNewTimeProposal 要素は、出席者が会議に対して新しい会議時間を提案できるかどうかを示します。
+ms.openlocfilehash: 1acb95189e1949204a25f97a82770b88590df776
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464806"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543731"
 ---
 # <a name="allownewtimeproposal"></a>AllowNewTimeProposal
 
-**Allownewtimeproposal**要素は、新しい会議日時を出席者の会議のために提案できるかどうかを示します。 
+**AllowNewTimeProposal 要素は**、出席者が会議に対して新しい会議時間を提案できるかどうかを示します。 
   
 ```xml
 <AllowNewTimeProposal/>
@@ -44,32 +44,32 @@ ms.locfileid: "44464806"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議を表します。  <br/> |
-|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
+|[MeetingRequest](meetingrequest.md) <br/> |ユーザー ストア内の会議Exchangeします。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |予定表アイテムのExchangeを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-ブール値を表すテキスト値が必要です。 **True**の値は、会議時間の新しい提案を作成できることを示します。値が**false**の場合は、新しい時間提案が許可されていないことを示します。 開催者は、会議出席依頼にこの値を設定します。 
+ブール値を表すテキスト値が必要です。 true の **値は** 、会議時間の新しい提案を作成できます。false の **値は** 、新しいタイム プロポーザルが許可されていないかどうかを示します。 開催者は、会議出席依頼でこの値を設定します。 
   
 ## <a name="remarks"></a>注釈
 
-AllowNewTimeProposal プロパティは、開催者の予定表アイテムに対しては読み取り/書き込み可能です。 会議出席依頼と出席者の予定表アイテムに対しては読み取り専用になります。
+AllowNewTimeProposal プロパティは、オーガナイザーの予定表アイテムに対して読み取り/書き込み可能です。 会議出席依頼と出席者の予定表アイテムの読み取り専用です。
   
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 > [!NOTE]
-> Exchange Web サービスは新しい時間提案メッセージをサポートしていません。 新しい時間提案メッセージに関連するプロパティを取得するには、拡張プロパティを使用します。 
+> ExchangeWeb サービスは、新しい時間提案メッセージをサポートしません。 新しいタイム プロポーザル メッセージに関連するプロパティを取得するには、拡張プロパティを使用します。 
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

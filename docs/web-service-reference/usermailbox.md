@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1d47141c-3c3f-45b8-90c5-33a44adb34b2
-description: UserMailbox 要素は、ユーザーメールボックスを識別します。
-ms.openlocfilehash: 9bb1b08320f5e6f4843383a8e3aff96fc3dcccad
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: UserMailbox 要素は、ユーザー メールボックスを識別します。
+ms.openlocfilehash: c2a66b23de5e4b312f60019f0b4ecfb4088b3da2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465318"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542618"
 ---
 # <a name="usermailbox"></a>UserMailbox
 
-**Usermailbox**要素は、ユーザーメールボックスを識別します。 
+**UserMailbox 要素は**、ユーザー メールボックスを識別します。 
   
 ```XML
 <UserMailbox Id="" IsArchive=""/>
@@ -32,8 +32,8 @@ ms.locfileid: "44465318"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|ID  <br/> |**Id**属性のテキスト値は、メールボックスの識別子です。  <br/> |
-|IsArchive  <br/> |**Isarchive**属性のテキスト値は、メールボックスがアーカイブメールボックスであるかどうかを示します。 **Isarchive**属性のテキスト値が**true の場合**は、メールボックスがアーカイブメールボックスであることを示します。 **Isarchive**属性の値が**false**の場合は、メールボックスがプライマリメールボックスであることを示します。  <br/> |
+|ID  <br/> |Id 属性のテキスト **値** は、メールボックスの識別子です。  <br/> |
+|IsArchive  <br/> |**IsArchive 属性のテキスト値は**、メールボックスがアーカイブ メールボックスであるかどうかを示します。 **IsArchive** 属性 **のテキスト値が true** の場合は、メールボックスがアーカイブ メールボックスです。 **IsArchive** **属性の** 値 false は、メールボックスがプライマリ メールボックスかどうかを示します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -54,8 +54,8 @@ ms.locfileid: "44465318"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |true  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |true  <br/> |
    
 

@@ -1,23 +1,23 @@
 ---
-title: 条件 (RestrictionType)
+title: Condition (RestrictionType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4fdb373e-bf1b-4cb0-bbfb-444c6c6cec50
 description: Condition 要素は、FindItem または FindConversation 操作の検索の終了を識別するために使用される条件を指定します。
-ms.openlocfilehash: 00c5b5e615ed9b253c79dae9dc2b89c797853089
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: f6292d2d25b9d236d0bb611c41a4cfcf490b6df4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463938"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543528"
 ---
-# <a name="condition-restrictiontype"></a>条件 (RestrictionType)
+# <a name="condition-restrictiontype"></a>Condition (RestrictionType)
 
-**Condition**要素は、 **FindItem**または**findconversation**操作の検索の終了を識別するために使用される条件を指定します。 
+**Condition 要素** は **、FindItem** または **FindConversation** 操作の検索の終了を識別するために使用される条件を指定します。 
   
 ```XML
 <Condition>
@@ -38,13 +38,13 @@ ms.locfileid: "44463938"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[SearchExpression](searchexpression.md) <br/> |制限内の代替要素を表す抽象要素。  <br/> |
+|[SearchExpression](searchexpression.md) <br/> |制限内の置換された要素を表す抽象要素。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[SeekToConditionPageItemView](seektoconditionpageitemview.md) <br/> |検索の終了を識別するために使用される条件、検索の開始インデックス、返される最大エントリ、および**FindItem**または**findconversation**操作の検索方向を識別します。  <br/> |
+|[SeekToConditionPageItemView](seektoconditionpageitemview.md) <br/> |検索の終了、検索の開始インデックス、返す最大エントリ **、FindItem** または **FindConversation** 操作の検索方向を識別するために使用される条件を識別します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -58,12 +58,12 @@ ms.locfileid: "44463938"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

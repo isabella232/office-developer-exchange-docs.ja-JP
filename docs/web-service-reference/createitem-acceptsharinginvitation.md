@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateItem
 api_type:
 - schema
 ms.assetid: 710c893a-3037-4f04-b336-aefedd36c406
-description: CreateItem 操作は、別のユーザーの予定表または連絡先データを共有するための招待を承諾するために使用されます。
-ms.openlocfilehash: eda846b72f42fe886497b355d9cddade7c5f4044
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: CreateItem 操作は、別のユーザーの予定表または連絡先データを共有する招待を受け入れる場合に使用します。
+ms.openlocfilehash: 37068657e77f4ceb35f9cb9601863fcae520c018
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457516"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543434"
 ---
 # <a name="createitem-acceptsharinginvitation"></a>CreateItem (AcceptSharingInvitation)
 
-**CreateItem**操作は、別のユーザーの予定表または連絡先データを共有するための招待を承諾するために使用されます。 
+**CreateItem 操作は**、別のユーザーの予定表または連絡先データを共有する招待を受け入れる場合に使用します。 
   
-## <a name="accept-sharing-invitation-request-example"></a>共有への招待の要求の例
+## <a name="accept-sharing-invitation-request-example"></a>招待の共有要求の使用例を受け入れる
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、共有への招待を承諾する方法を示しています。
+次の例は、共有の招待を受け入れる方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -47,7 +47,7 @@ ms.locfileid: "44457516"
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 要求では、次の要素が使用されます。
   
@@ -55,19 +55,19 @@ ms.locfileid: "44457516"
     
 - [Items](items.md)
     
-- [AcceptSharingInvitation 状](acceptsharinginvitation.md)
+- [AcceptSharingInvitation](acceptsharinginvitation.md)
     
 - [ReferenceItemId](referenceitemid.md)
     
 ### <a name="comments"></a>コメント
 
-読みやすくするために、アイテム識別子と変更キーが短縮されています。
+アイテム識別子と変更キーは、読みやすさを維持するために短縮されました。
   
-## <a name="successful-accept-sharing-invitation-response-example"></a>成功した共有への招待の応答の例
+## <a name="successful-accept-sharing-invitation-response-example"></a>成功した共有の承諾の招待応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **CreateItem**要求に対する正常な応答を示しています。 
+次の例は、CreateItem 要求に対する正常な **応答を示** しています。 
   
 ### <a name="code"></a>コード
 
@@ -115,11 +115,11 @@ ms.locfileid: "44457516"
     
 - [Items](items.md)
     
-## <a name="accept-sharing-invitation-error-response-example"></a>共有への招待の承諾のエラー応答の例
+## <a name="accept-sharing-invitation-error-response-example"></a>招待の共有を受け入れる エラー応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **CreateItem**要求に対するエラー応答を示しています。 このエラーは、Exchange ストアに存在しない共有への招待を承諾しようとしたことが原因で発生します。 
+次の例は、CreateItem 要求に対するエラー **応答を示** しています。 このエラーは、共有ストアで見つからない共有の招待を受け入Exchangeです。 
   
 ### <a name="code"></a>コード
 

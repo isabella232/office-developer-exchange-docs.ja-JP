@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetAttachment
 api_type:
 - schema
 ms.assetid: 9443cf96-b451-4530-b868-490dff798673
-description: GetAttachment 要素は、Exchange ストアから添付ファイルを取得する要求のルート要素です。
-ms.openlocfilehash: d03d086ff443db87b0104a2ec83599eb9eaea6b9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetAttachment 要素は、アプリケーション ストアから添付ファイルを取得する要求のルートExchangeです。
+ms.openlocfilehash: 057b42e78845f583cf1e52804e0108f335ef951c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463980"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546372"
 ---
 # <a name="getattachment"></a>GetAttachment
 
-**Getattachment**要素は、Exchange ストアから添付ファイルを取得する要求のルート要素です。 
+**GetAttachment 要素** は、ファイル ストアから添付ファイルを取得する要求のルートExchangeです。 
   
 ```xml
 <GetAttachment>
@@ -43,8 +43,8 @@ ms.locfileid: "44463980"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[AttachmentShape](attachmentshape.md) <br/> |[Getattachment](getattachment.md)要求に対する応答で返される追加の拡張アイテムプロパティを識別します。 この要素は省略できます。  <br/> |
-|[AttachmentIds](attachmentids.md) <br/> |添付ファイル識別子の配列を格納します。  <br/> |
+|[AttachmentShape](attachmentshape.md) <br/> |[GetAttachment](getattachment.md)要求への応答で返す追加の拡張アイテム プロパティを識別します。 この要素は省略できます。  <br/> |
+|[AttachmentIds](attachmentids.md) <br/> |添付ファイル識別子の配列を含む。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -52,18 +52,18 @@ ms.locfileid: "44463980"
   
 ## <a name="remarks"></a>注釈
 
-[Attachmentshape](attachmentshape.md)要素は、応答で返されるプロパティを識別するために必須ではありません。 [Getattachment 操作](getattachment-operation.md)は、Name、ContentType、ContentId、contentlocation、および添付ファイルのコンテンツプロパティを返します。 アイテムの添付ファイルの場合、返されるプロパティは、Name、ContentType、ContentId、ContentLocation、および添付されているすべてのアイテムのプロパティです。 これは、 [GetItem](getitem.md)要求で allproperties 基本図形を使用するのと同じです。 
+[AttachmentShape](attachmentshape.md)要素は、応答で返されるプロパティを識別する必要はありません。 [GetAttachment 操作は、](getattachment-operation.md)添付ファイルの Name、ContentType、ContentId、ContentLocation、および Content プロパティを返します。 アイテムの添付ファイルの場合、返されるプロパティは Name、ContentType、ContentId、ContentLocation、および添付されたアイテムのすべてのプロパティです。 これは、GetItem 要求で AllProperties 基本図形を使用 [する場合と同](getitem.md) じです。 
   
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

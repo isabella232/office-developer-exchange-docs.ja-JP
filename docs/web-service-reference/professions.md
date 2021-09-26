@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d82d0d47-6bc2-4bc8-a796-b770adfdfeb6
-description: Professions 要素は、関連付けられているペルソナの職業値の配列とそのソース attributions の識別子を指定します。
-ms.openlocfilehash: b9e3c4d112bad610641585024ea9282d835b3bd8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Professions 要素は、関連付けられたペルサの、Profession 値の配列とソース属性の識別子を指定します。
+ms.openlocfilehash: 73ee0a105ba96aaa18d80ff226ac837ce9297d19
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458013"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542989"
 ---
 # <a name="professions"></a>Professions
 
-**Professions**要素は、関連付けられているペルソナの**職業**値の配列とそのソース attributions の識別子を指定します。 
+**Professions 要素は**、関連付けられたペルサの **、Profession** 値の配列とソース属性の識別子を指定します。 
   
 ```XML
 <Professions>
@@ -53,8 +53,8 @@ ms.locfileid: "44458013"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

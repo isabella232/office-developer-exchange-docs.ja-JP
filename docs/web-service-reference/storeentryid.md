@@ -5,25 +5,25 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f536e264-8c4d-4cc5-bab8-22a4fa38de39
-description: StoreEntryId 要素には、アイテムの Exchange ストア識別子が含まれています。
-ms.openlocfilehash: 669ea937da6c08b50877c24aeb450fe975326247
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: StoreEntryId 要素には、アイテムExchangeストア識別子が格納されます。
+ms.openlocfilehash: 7ffd1d2ab6f68e772f27447b48fc305213aaed78
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465157"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544557"
 ---
 # <a name="storeentryid"></a>StoreEntryId
 
-**Storeentryid**要素には、アイテムの Exchange ストア識別子が含まれています。 
+**StoreEntryId 要素** には、アイテムExchangeストア識別子が含まれる。 
   
 ```XML
 <StoreEntryId/>
 ```
 
- **xs: base64Binary**
+ **xs:base64Binary**
 ## <a name="attributes-and-elements"></a>属性と要素
 
 以下のセクションで、属性、子要素、親要素について説明します。
@@ -40,26 +40,26 @@ ms.locfileid: "44465157"
 
 |**要素名**|**説明**|
 |:-----|:-----|
-|[AcceptItem](acceptitem.md) <br/> |会議出席依頼への返信を承諾するかを表します。  <br/> |
-|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
-|[条件](conditions.md) <br/> |ルールのルールの処理を開始するときに実行される条件を表します。  <br/> |
-|[Contact](contact.md) <br/> |Exchange ストア内の連絡先アイテムを表します。  <br/> |
-|[DeclineItem](declineitem.md) <br/> |会議出席依頼への返信を拒否することを表します。  <br/> |
+|[AcceptItem](acceptitem.md) <br/> |会議出席依頼に対する返信を受け入れるを表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |予定表アイテムのExchangeを表します。  <br/> |
+|[条件](conditions.md) <br/> |満たされると、ルールのルール アクションをトリガーする条件を表します。  <br/> |
+|[Contact](contact.md) <br/> |ストア内の連絡先アイテムExchangeします。  <br/> |
+|[DeclineItem](declineitem.md) <br/> |会議出席依頼に対する辞退返信を表します。  <br/> |
 |[DistributionList](distributionlist.md) <br/> |配布リストを表します。  <br/> |
-|[例外](exceptions.md) <br/> |受信トレイルールに対して使用可能なすべてのルールの例外条件を表します。  <br/> |
-|[Item](item.md) <br/> |汎用の Exchange アイテムを表します。  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |Exchange ストア内の会議の取り消しを表します。  <br/> |
-|[MeetingMessage](meetingmessage.md) <br/> |Exchange ストア内の会議を表します。  <br/> |
-|[MeetingRequest](meetingrequest.md) <br/> |Exchange ストア内の会議出席依頼を表します。  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |Exchange ストア内の会議の応答を表します。  <br/> |
-|[Message](message-ex15websvcsotherref.md) <br/> |Exchange 電子メールメッセージを表します。  <br/> |
-|[RemoveItem](removeitem.md) <br/> |Exchange ストアからアイテムを削除します。  <br/> |
-|[タスク](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
+|[例外](exceptions.md) <br/> |受信トレイ ルールで使用可能なすべてのルール例外条件を表します。  <br/> |
+|[項目](item.md) <br/> |アイテムの一般的なExchangeを表します。  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |会議ストアでの会議の取り消しExchangeします。  <br/> |
+|[MeetingMessage](meetingmessage.md) <br/> |ユーザー ストア内の会議Exchangeします。  <br/> |
+|[MeetingRequest](meetingrequest.md) <br/> |ユーザー ストア内の会議出席依頼Exchangeします。  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |会議ストアの会議の応答Exchangeします。  <br/> |
+|[Message](message-ex15websvcsotherref.md) <br/> |電子メール メッセージExchangeを表します。  <br/> |
+|[RemoveItem](removeitem.md) <br/> |アイテムをストアからExchangeします。  <br/> |
+|[タスク](task.md) <br/> |ストア内のタスクをExchangeします。  <br/> |
 |[TentativelyAcceptItem](tentativelyacceptitem.md) <br/> |会議出席依頼に対する仮承諾の返信を表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値は、ストアアイテム識別子を表す文字列です。
+テキスト値は、ストア アイテム識別子を表す文字列です。
   
 ## <a name="remarks"></a>注釈
 

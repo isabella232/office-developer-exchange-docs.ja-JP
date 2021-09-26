@@ -1,27 +1,27 @@
 ---
-title: 範囲 (非 Emptystringtype)
+title: Scope (NonEmptyStringType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Scope
 api_type:
 - schema
 ms.assetid: 7efb6fd9-1615-469e-96f6-0f7846ad9b44
-description: Scope 要素は、メッセージ追跡レポートの範囲を指定します。
-ms.openlocfilehash: f86f6198e84e094e61ee569f6d005549316bbb9b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Scope 要素は、メッセージ追跡レポートのスコープを指定します。
+ms.openlocfilehash: 036ff1007c9e7ec9cc385f8df81c045b7b9335b0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466942"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546127"
 ---
-# <a name="scope-nonemptystringtype"></a>範囲 (非 Emptystringtype)
+# <a name="scope-nonemptystringtype"></a>Scope (NonEmptyStringType)
 
-**Scope**要素は、メッセージ追跡レポートの範囲を指定します。 
+**Scope 要素** は、メッセージ追跡レポートのスコープを指定します。 
   
 ```XML
 <Scope>Organization | Forest | Site</Scope>
@@ -42,17 +42,17 @@ ms.locfileid: "44466942"
   
 ### <a name="parent-elements"></a>親要素
 
-[Findmessagetrackingreport](findmessagetrackingreport.md)  | [Getmessagetrackingreport](getmessagetrackingreport.md)
+[FindMessageTrackingReport](findmessagetrackingreport.md)  | [GetMessageTrackingReport](getmessagetrackingreport.md)
   
 ## <a name="text-value"></a>テキスト値
 
-次の表に、 **Scope**要素に指定できる値を示します。 
+次の表に **、Scope** 要素に使用できる値を示します。 
   
 |**値**|**説明**|
 |:-----|:-----|
-|組織  <br/> |メッセージ追跡スコープは組織全体に及びます。  <br/> |
-|Forest  <br/> |メッセージ追跡スコープはフォレスト全体に及びます。  <br/> |
-|サイト  <br/> |メッセージ追跡スコープはサイト全体にわたっています。  <br/> |
+|組織  <br/> |メッセージ追跡スコープは、組織全体にまたがっています。  <br/> |
+|Forest  <br/> |メッセージ追跡スコープはフォレスト全体にまたがっています。  <br/> |
+|サイト  <br/> |メッセージ追跡スコープは、サイト全体にまたがっています。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -63,13 +63,13 @@ ms.locfileid: "44466942"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f06bafc6-7ee3-4b2b-9fd1-7c51328f4729
-description: MarkAsJunk 要素は、アイテムを迷惑メールフォルダーに移動し、送信者を受信拒否リストに追加する要求を指定します。
-ms.openlocfilehash: 99adc423864f3096772394ef290df20e158e457d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MarkAsJunk 要素は、アイテムを迷惑メール フォルダーに移動し、送信者をブロックされた送信者リストに追加する要求を指定します。
+ms.openlocfilehash: 252c36b8bb3662ffd6c0fe470a81b6f0b55acb69
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467082"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544088"
 ---
 # <a name="markasjunk"></a>MarkAsJunk
 
-**Markasjunk**要素は、アイテムを迷惑メールフォルダーに移動し、送信者を受信拒否リストに追加する要求を指定します。 
+**MarkAsJunk** 要素は、アイテムを迷惑メール フォルダーに移動し、送信者をブロックされた送信者リストに追加する要求を指定します。 
   
 ```XML
 <MarkAsJunk IsJunk="true | false" MoveItem="true | false">
@@ -34,8 +34,8 @@ ms.locfileid: "44467082"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|IsJunk  <br/> |**Isjunk**属性のテキスト値が**true の場合**は、電子メール送信者がブロックされた送信者の一覧に追加されていることを示します。 値が**false**の場合、電子メール送信者が既にリストに含まれている場合は、受信拒否リストから電子メール送信者が削除されることを示します。  <br/> |
-|MoveItem  <br/> |**Moveitem**属性のテキスト値が**true の場合**は、アイテムが既定の迷惑メールフォルダーに移動されることを示します。 値が**false**の場合は、アイテムが既定の迷惑メールフォルダーに移動されないことを示します。  <br/> |
+|IsJunk  <br/> |**IsJunk** 属性 **のテキスト値が true** の場合、電子メール送信者がブロックされた送信者リストに追加されます。 false の **値は** 、電子メール送信者が既にリストに存在する場合に、電子メール送信者がブロックされた送信者リストから削除されるかどうかを示します。  <br/> |
+|MoveItem  <br/> |**MoveItem** 属性の **テキスト値が true** の場合は、アイテムが既定の迷惑メール フォルダーに移動されます。 false の **値は** 、アイテムが既定の迷惑メール フォルダーに移動されないかどうかを示します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -56,8 +56,8 @@ ms.locfileid: "44467082"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

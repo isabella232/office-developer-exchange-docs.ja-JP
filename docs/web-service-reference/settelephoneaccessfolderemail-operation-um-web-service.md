@@ -1,32 +1,32 @@
 ---
-title: SetTelephoneAccessFolderEmail 操作 (UM web サービス)
+title: SetTelephoneAccessFolderEmail 操作 (UM Web サービス)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SetTelephoneAccessFolderEmail
 api_type:
 - schema
 ms.assetid: 2c92d914-bdee-4337-b3ea-0655fdb658e9
-description: SetTelephoneAccessFolderEmail 操作は、ユニファイドメッセージングが電話でユーザーにメッセージを読み取るためのフォルダーを設定します。
-ms.openlocfilehash: a2bb630f812ca811b4cbe68db1308dc18e5d3ba0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SetTelephoneAccessFolderEmail 操作は、ユニファイド メッセージングが電話でユーザーにメッセージを読み戻すフォルダーを設定します。
+ms.openlocfilehash: cf8e80e021d6467ba3a724cc0d04e165e00e8397
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467334"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544718"
 ---
-# <a name="settelephoneaccessfolderemail-operation-um-web-service"></a>SetTelephoneAccessFolderEmail 操作 (UM web サービス)
+# <a name="settelephoneaccessfolderemail-operation-um-web-service"></a>SetTelephoneAccessFolderEmail 操作 (UM Web サービス)
 
-SetTelephoneAccessFolderEmail 操作は、ユニファイドメッセージングが電話でユーザーにメッセージを読み取るためのフォルダーを設定します。
+SetTelephoneAccessFolderEmail 操作は、ユニファイド メッセージングが電話でユーザーにメッセージを読み戻すフォルダーを設定します。
   
 ## <a name="settelephoneaccessfolderemail-request-example"></a>SetTelephoneAccessFolderEmail 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の SetTelephoneAccessFolderEmail 要求の例は、ユニファイドメッセージングが電話でユーザーに返信するフォルダーを設定する要求を形成する方法を示しています。
+SetTelephoneAccessFolderEmail 要求の次の例は、ユニファイド メッセージングが電話でユーザーに読み戻すフォルダーを設定する要求を形成する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -41,11 +41,11 @@ SetTelephoneAccessFolderEmail 操作は、ユニファイドメッセージン�
 </soap:Envelope>
 ```
 
-## <a name="successful-settelephoneaccessfolderemail-response-example"></a>Successful SetTelephoneAccessFolderEmail response の例
+## <a name="successful-settelephoneaccessfolderemail-response-example"></a>成功した SetTelephoneAccessFolderEmail 応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-SetTelephoneAccessFolderEmail response の次の例は、SetTelephoneAccessFolderEmail 要求に対する応答を示しています。
+SetTelephoneAccessFolderEmail 応答の次の例は、SetTelephoneAccessFolderEmail 要求に対する応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -62,9 +62,9 @@ SetTelephoneAccessFolderEmail response の次の例は、SetTelephoneAccessFolde
 
 
 
-[SetTelephoneAccessFolderEmail (UM web サービス)](settelephoneaccessfolderemail-um-web-service.md)
+[SetTelephoneAccessFolderEmail (UM Web サービス)](settelephoneaccessfolderemail-um-web-service.md)
   
-[SetTelephoneAccessFolderEmailResponse (UM web サービス)](settelephoneaccessfolderemailresponse-um-web-service.md)
+[SetTelephoneAccessFolderEmailResponse (UM Web サービス)](settelephoneaccessfolderemailresponse-um-web-service.md)
   
-[base64FolderId (UM web サービス)](base64folderid-um-web-service.md)
+[base64FolderId (UM Web サービス)](base64folderid-um-web-service.md)
 

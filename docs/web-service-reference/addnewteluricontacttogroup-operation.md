@@ -5,45 +5,45 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c9688ce8-2465-45bb-8bd2-94b32ed4885c
-description: AddNewTelUriContactToGroup EWS 操作の使用方法に関する情報を検索します。
-ms.openlocfilehash: 91228ec627ad928d2f1837c135af24846f811b1c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: AddNewTelUriContactToGroup EWS 操作の使い方に関する情報を確認します。
+ms.openlocfilehash: 2ad0f55c044e92e2f18a1705ab53be467a804091
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464946"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544298"
 ---
 # <a name="addnewteluricontacttogroup-operation"></a>AddNewTelUriContactToGroup 操作
 
-**AddNewTelUriContactToGroup** EWS 操作の使用方法に関する情報を検索します。 
+**AddNewTelUriContactToGroup** EWS 操作の使い方に関する情報を確認します。 
   
-**AddNewTelUriContactToGroup**操作は、連絡先の電話番号に基づいてグループに新しい連絡先を追加します。 
+**AddNewTelUriContactToGroup** 操作は、連絡先の電話番号に基づいてグループに新しい連絡先を追加します。 
   
 この操作は Exchange Server 2013 で導入されました。
   
 ## <a name="using-the-addnewteluricontacttogroup-operation"></a>AddNewTelUriContactToGroup 操作の使用
 
-**AddNewTelUriContactToGroup**操作要求は、連絡先の TEL URI、SIP uri、電話番号、連絡先を追加するグループを送信します。 **AddNewTelUriContactToGroup**操作の応答では、新しい連絡先のペルソナが作成されます。 この操作により、連絡先が名前を持たない場合でも、クライアントは新しい連絡先を追加できます。 
+**AddNewTelUriContactToGroup** 操作要求は、連絡先の TEL URI、SIP URI、電話番号、および連絡先を追加するグループを送信します。 **AddNewTelUriContactToGroup 操作応答は**、新しい連絡先のペルトナを作成します。 この操作により、連絡先に名前がなくても、クライアントは新しい連絡先を追加できます。 
   
-### <a name="addnewteluricontacttogroup-operation-soap-headers"></a>AddNewTelUriContactToGroup 操作の SOAP ヘッダー
+### <a name="addnewteluricontacttogroup-operation-soap-headers"></a>AddNewTelUriContactToGroup 操作 SOAP ヘッダー
 
-**AddNewTelUriContactToGroup**操作では、次の表に示す SOAP ヘッダーを使用できます。 
+**AddNewTelUriContactToGroup** 操作では、次の表に示す SOAP ヘッダーを使用できます。 
   
-|**ヘッダー名**|**要素**|**説明**|
+|**ヘッダー名**|**Element**|**説明**|
 |:-----|:-----|:-----|
-|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアントアプリケーションが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |RFC 3066 で定義されているように、メールボックスへのアクセスに使用されるカルチャ (言語の識別用のタグ) を識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマバージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは応答に適用されます。  <br/> |
+|**偽装** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |クライアント アプリケーションが偽装しているユーザーを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |メールボックスへのアクセスに使用する RFC 3066「言語の識別用タグ」で定義されているカルチャを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |操作要求のスキーマ バージョンを識別します。 このヘッダーは、要求に適用されます。  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |要求に応答したサーバーのバージョンを識別します。 このヘッダーは、応答に適用されます。  <br/> |
    
-## <a name="addnewteluricontacttogroup-operation-request-example-add-a-new-contact-to-a-group"></a>AddNewTelUriContactToGroup 操作要求の例: 新しい連絡先をグループに追加します。
+## <a name="addnewteluricontacttogroup-operation-request-example-add-a-new-contact-to-a-group"></a>AddNewTelUriContactToGroup 操作要求の例: グループに新しい連絡先を追加する
 
-次の**AddNewTelUriContactToGroup**操作要求の例は、連絡先の TEL および SIP uri を使用して、新しい連絡先を作成し、インスタントメッセージング (IM) グループに新しい連絡先を追加する方法を示しています。 
+**AddNewTelUriContactToGroup** 操作要求の次の例は、連絡先の TEL および SIP URI を使用して、新しい連絡先を作成し、新しい連絡先をインスタント メッセージング (IM) グループに追加する方法を示しています。 
   
 > [!NOTE]
-> この記事のすべてのアイテム識別子と変更キーは、読みやすくするために短縮されています。 
+> この記事のすべてのアイテム識別子と変更キーは、読みやすさを維持するために短縮されています。 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -71,15 +71,15 @@ ms.locfileid: "44464946"
     
 - [TelUriAddress](teluriaddress.md)
     
-- [Imcontactsi紫 Iaddress](imcontactsipuriaddress.md)
+- [ImContactSipUriAddress](imcontactsipuriaddress.md)
     
 - [ImTelephoneNumber](imtelephonenumber.md)
     
 - [GroupId](groupid.md)
     
-## <a name="successful-addnewteluricontacttogroup-operation-response"></a>成功した AddNewTelUriContactToGroup 操作の応答
+## <a name="successful-addnewteluricontacttogroup-operation-response"></a>AddNewTelUriContactToGroup 操作応答の成功
 
-次の例は、連絡先を作成するための**AddNewTelUriContactToGroup**操作要求に対する正常な応答を示しています。 応答には、連絡先の関連付けられたペルソナ識別子、この例では連絡先の電話番号に基づき、連絡先のアイテムの識別子が含まれています。これは、送信元識別子の一部として表示されます。 
+次の例は、連絡先を作成する **AddNewTelUriContactToGroup** 操作要求に対する正常な応答を示しています。 応答には、連絡先に関連付けられたペルシャ識別子、ペルシャの表示名が含まれる。この場合は連絡先の電話番号に基づいて、連絡先のアイテム識別子は、ソース識別子の属性の一部として表示されます。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -155,11 +155,11 @@ ms.locfileid: "44464946"
     
 - [PersonaId](personaid.md)
     
-- [個人の Atype](personatype.md)
+- [PersonaType](personatype.md)
     
 - [CreationTime](creationtime.md)
     
-- [DisplayName (文字列)](displayname-string.md)
+- [DisplayName (string)](displayname-string.md)
     
 - [DisplayNameFirstLast](displaynamefirstlast.md)
     
@@ -173,15 +173,15 @@ ms.locfileid: "44464946"
     
 - [Attributions (ArrayOfPersonaAttributionsType)](attributions-arrayofpersonaattributionstype.md)
     
-- [属性 (PersonaAttributionType)](attribution-personaattributiontype.md)
+- [Attribution (PersonaAttributionType)](attribution-personaattributiontype.md)
     
-- [ID (文字列)](id-string.md)
+- [ID (String)](id-string.md)
     
 - [SourceId](sourceid.md)
     
-- [DisplayName (文字列)](displayname-string.md)
+- [DisplayName (string)](displayname-string.md)
     
-- [IsWritable 可能](iswritable.md)
+- [IsWritable](iswritable.md)
     
 - [IsQuickContact](isquickcontact.md)
     
@@ -195,7 +195,7 @@ ms.locfileid: "44464946"
     
 - [Attributions (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md)
     
-- [属性 (string)](attribution-string.md)
+- [Attribution (string)](attribution-string.md)
     
 - [OtherTelephones](othertelephones.md)
     
@@ -205,15 +205,15 @@ ms.locfileid: "44464946"
     
 - [Number](number.md)
     
-- [型 (string)](type-string.md)
+- [型 (文字列)](type-string.md)
     
 - [Attributions (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md)
     
-- [属性 (string)](attribution-string.md)
+- [Attribution (string)](attribution-string.md)
     
 ## <a name="addnewteluricontacttogroup-operation-error-response-example"></a>AddNewTelUriContactToGroup 操作エラー応答の例
 
-次の例は、グループ識別子に、メールボックス内のグループを識別しない整形式の値が含まれている場合の、 **AddNewTelUriContactToGroup**操作要求へのエラー応答を示しています。 
+次の例は、グループ識別子にメールボックス内のグループを識別しない整形式の値が含まれている場合に **、AddNewTelUriContactToGroup** 操作要求に対するエラー応答を示しています。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -254,7 +254,7 @@ ms.locfileid: "44464946"
     
 ## <a name="see-also"></a>関連項目
 
-- [Exchange での EWS 操作](ews-operations-in-exchange.md)
+- [EWS 操作 (Exchange](ews-operations-in-exchange.md)
     
 - [Exchange 内の EWS のユーザーと連絡先](https://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
     

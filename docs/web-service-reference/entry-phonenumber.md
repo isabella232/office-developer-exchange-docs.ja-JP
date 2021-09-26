@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Entry
 api_type:
 - schema
 ms.assetid: e3d0a4d5-8af8-4607-aa2e-ef3111b63b55
 description: Entry 要素は、連絡先の電話番号を表します。
-ms.openlocfilehash: 62f7091bb750dc7ca74b1e5637a437e2cdad4f1c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: f9f8f08c8d167614bfc5772d6d74ebee77234c70
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459638"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545245"
 ---
 # <a name="entry-phonenumber"></a>Entry (PhoneNumber)
 
-**Entry**要素は、連絡先の電話番号を表します。 
+**Entry 要素** は、連絡先の電話番号を表します。 
   
 ```xml
 <Entry Key=""/>
@@ -36,7 +36,7 @@ ms.locfileid: "44459638"
 
 |**属性**|**説明**|
 |:-----|:-----|
-|**Key** <br/> | 電話番号を識別します。 キー属性の型は**PhoneNumberKeyType**です。<br/><br/> 次に、この属性で使用できる値を示します。<br/><br/>- AssistantPhone  <br/>-BusinessFax  <br/>- BusinessPhone  <br/>- BusinessPhone2  <br/>-コールバック  <br/>-CarPhone  <br/>-会社の Mainphone  <br/>-ホーム Fax  <br/>-HomePhone  <br/>- HomePhone2  <br/>-Isdn  <br/>-MobilePhone  <br/>-他の Fax  <br/>-他の電話  <br/>-ポケットベル  <br/>- PrimaryPhone  <br/>- RadioPhone  <br/>-テレックス  <br/>-TtyTddPhone  <br/> |
+|**Key** <br/> | 電話番号を識別します。 Key 属性の種類は **PhoneNumberKeyType です**。<br/><br/> 次に、この属性で使用できる値を示します。<br/><br/>- AssistantPhone  <br/>- BusinessFax  <br/>- BusinessPhone  <br/>- BusinessPhone2  <br/>- コールバック  <br/>- CarPhone  <br/>- CompanyMainPhone  <br/>- HomeFax  <br/>- HomePhone  <br/>- HomePhone2  <br/>- Isdn  <br/>- MobilePhone  <br/>- OtherFax  <br/>- OtherTelephone  <br/>- Pager  <br/>- PrimaryPhone  <br/>- RadioPhone  <br/>- Telex  <br/>- TtyTddPhone  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -54,20 +54,20 @@ ms.locfileid: "44459638"
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 - [連絡先の作成 (Exchange Web サービス)](https://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx) 
 - [連絡先の更新](https://msdn.microsoft.com/library/9a865953-b94a-4229-b632-2dee433314be%28Office.15%29.aspx)  
 - [連絡先の削除](https://msdn.microsoft.com/library/fcc3dc84-cd3e-455e-a1a7-ae6921c9b588%28Office.15%29.aspx)

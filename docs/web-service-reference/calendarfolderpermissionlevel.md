@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CalendarFolderPermissionLevel
 api_type:
 - schema
 ms.assetid: 2a5c9381-dc2c-4fc6-b9b5-893477d0970e
-description: CalendarFolderPermissionLevel 要素には、既定の予定表フォルダーのアクセス許可が含まれています。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。
-ms.openlocfilehash: dcbd57da42b5e701d898c3756ce9bcc100c20af7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: CalendarFolderPermissionLevel 要素には、既定の予定表フォルダーのアクセス許可が含まれる。 この要素は、2007 Microsoft Exchange Server パック 1 (SP1) で導入されました。
+ms.openlocfilehash: 1e8fe706a977d32516d4ed362c0924f81cba12f3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461465"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543563"
 ---
 # <a name="calendarfolderpermissionlevel"></a>CalendarFolderPermissionLevel
 
-**Calendarfolderpermissionlevel**要素には、既定の予定表フォルダーのアクセス許可が含まれています。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。 
+**CalendarFolderPermissionLevel** 要素には、既定の予定表フォルダーのアクセス許可が含まれる。 この要素は、2007 Microsoft Exchange Server パック 1 (SP1) で導入されました。 
   
 ```xml
 <CalendarFolderPermissionLevel>
@@ -46,34 +46,34 @@ ms.locfileid: "44461465"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[DelegatePermissions](delegatepermissions.md) <br/> |ユーザーの代理アクセス許可レベルの設定が含まれています。 この要素は、Exchange 2007 SP1 で導入されました。  <br/> |
+|[DelegatePermissions](delegatepermissions.md) <br/> |ユーザーの代理人アクセス許可レベルの設定が含まれる。 この要素は、2007 SP1 Exchange導入されました。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-次の表に、アクセス許可レベルを表すテキスト値の一覧を示します。
+次の表に、アクセス許可レベルを表すテキスト値を示します。
   
 **アクセス許可レベルのテキスト値**
 
 |**アクセス許可レベル**|**説明**|
 |:-----|:-----|
 |なし  <br/> |代理人ユーザーには、予定表フォルダーへのアクセス許可はありません。  <br/> |
-|レビュー担当者  <br/> |代理人のユーザーは、予定表フォルダー内のアイテムを読み取ることができます。  <br/> |
-|設定元  <br/> |代理人のユーザーは、予定表フォルダー内のアイテムの読み取りと作成を行うことができます。  <br/> |
-|エディター  <br/> |代理人のユーザーは、予定表フォルダー内のアイテムの読み取り、作成、および変更を行うことができます。  <br/> |
-|Custom  <br/> |代理ユーザーには、予定表フォルダーへのアクセス許可が独自に付与されます。  <br/> |
+|レビュー担当者  <br/> |代理人ユーザーは、予定表フォルダー内のアイテムを読み取ります。  <br/> |
+|Author  <br/> |代理人ユーザーは、予定表フォルダー内のアイテムを読み取って作成できます。  <br/> |
+|エディター  <br/> |代理人ユーザーは、予定表フォルダー内のアイテムの読み取り、作成、および変更を行います。  <br/> |
+|Custom  <br/> |代理人ユーザーは、予定表フォルダーへのカスタム アクセス許可を持っています。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -84,7 +84,7 @@ ms.locfileid: "44461465"
 [UpdateDelegate 操作](updatedelegate-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 
 
 [代理人の追加](https://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)

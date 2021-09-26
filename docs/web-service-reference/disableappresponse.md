@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 11ebe618-d759-4f16-be99-eaaa817ba782
 description: DisableAppResponse 要素は、DisableApp 要求への応答を指定します。
-ms.openlocfilehash: cc28abf644247339e1226cd0e13824cc5f5669be
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: ee1558dc51a0453b609d595d37a673e9f903ff79
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455647"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545301"
 ---
 # <a name="disableappresponse"></a>DisableAppResponse
 
-**DisableAppResponse**要素は、 **disableapp**要求への応答を指定します。 
+**DisableAppResponse 要素は****、DisableApp** 要求への応答を指定します。 
   
 ```XML
 <DisableAppResponse>
@@ -41,10 +41,10 @@ ms.locfileid: "44455647"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[MessageText](messagetext.md) <br/> |応答の状態を説明するテキストを提供します。  <br/> |
+|[MessageText](messagetext.md) <br/> |応答の状態のテキストの説明を提供します。  <br/> |
 |[ResponseCode](responsecode.md) <br/> |要求に関する状態情報を提供します。  <br/> |
-|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在未使用で、今後の使用のために予約されています。  <br/> |
-|[MessageXml](messagexml.md) <br/> |エラー応答に関する追加情報を提供します。  <br/> |
+|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |現在未使用で、将来の使用のために予約されています。  <br/> |
+|[MessageXml](messagexml.md) <br/> |追加のエラー応答情報を提供します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -61,11 +61,11 @@ ms.locfileid: "44455647"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

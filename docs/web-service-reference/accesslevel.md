@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 09475586-00fa-4e82-a915-5ca263ab4d1c
-description: AccessLevel 要素は、オンライン会議のアクセスレベルを指定します。
-ms.openlocfilehash: 3c1375ef37ea666c6c4fafce7daa46ae0d0a2696
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: AccessLevel 要素は、オンライン会議のアクセス レベルを指定します。
+ms.openlocfilehash: f1c85579affe7d1142b22a890808bceeb8f82d38
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462340"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544417"
 ---
 # <a name="accesslevel"></a>AccessLevel
 
-**Accesslevel**要素は、オンライン会議のアクセスレベルを指定します。 
+**AccessLevel 要素** は、オンライン会議のアクセス レベルを指定します。 
   
 ```XML
 <AccessLevel/>
@@ -44,16 +44,16 @@ ms.locfileid: "44462340"
    
 ## <a name="text-value"></a>テキスト値
 
-次の表に、 **Accesslevel**要素のテキスト値を示します。 
+次の表に **、AccessLevel 要素のテキスト値を示** します。 
   
 **AccessLevel 要素のテキスト値**
 
 |**値**|**説明**|
 |:-----|:-----|
-|すべてのユーザー  <br/> |アクセスレベルが [すべて] になっています。  <br/> |
-|内部  <br/> |アクセスレベルは内部のみです。  <br/> |
-|あなた  <br/> |アクセスレベルは、招待された参加者のみになります。  <br/> |
-|ロックされています  <br/> |アクセスレベルがロックされています。  <br/> |
+|すべてのユーザー  <br/> |アクセス レベルは、すべて開きます。  <br/> |
+|内部  <br/> |アクセス レベルは内部のみです。  <br/> |
+|招待  <br/> |アクセス レベルは招待された参加者のみです。  <br/> |
+|ロックされています  <br/> |アクセス レベルはロックされています。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -67,10 +67,10 @@ ms.locfileid: "44462340"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

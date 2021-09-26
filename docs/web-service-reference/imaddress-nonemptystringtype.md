@@ -1,23 +1,23 @@
 ---
-title: ImAddress (非 Emptystringtype)
+title: ImAddress (NonEmptyStringType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 13c7b0cc-f506-490b-adaa-3d01fc2400eb
-description: ImAddress 要素には、インスタントメッセージンググループに追加される新しい連絡先のインスタントメッセージングアドレスが含まれています。
-ms.openlocfilehash: eac3b6494f3f52dec007171462a95f9d7306530e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ImAddress 要素には、インスタント メッセージング グループに追加される新しい連絡先のインスタント メッセージング アドレスが含まれる。
+ms.openlocfilehash: 241ff33369a10f493d63da48e4ab80974780de0e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457607"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542247"
 ---
-# <a name="imaddress-nonemptystringtype"></a>ImAddress (非 Emptystringtype)
+# <a name="imaddress-nonemptystringtype"></a>ImAddress (NonEmptyStringType)
 
-**Imaddress**要素には、インスタントメッセージンググループに追加される新しい連絡先のインスタントメッセージングアドレスが含まれています。 
+**ImAddress 要素には**、インスタント メッセージング グループに追加される新しい連絡先のインスタント メッセージング アドレスが含まれる。 
   
 ```XML
 <ImAddress></ImAddress>
@@ -42,7 +42,7 @@ ms.locfileid: "44457607"
   
 ## <a name="text-value"></a>テキスト値
 
-**Imaddress**要素のテキスト値は、インスタントメッセージングアドレスです。 
+**ImAddress** 要素のテキスト値は、インスタント メッセージング アドレスです。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44457607"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

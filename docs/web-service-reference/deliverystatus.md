@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DeliveryStatus
 api_type:
 - schema
 ms.assetid: eab55db3-affb-42be-a586-5caa04052433
 description: DeliveryStatus 要素は、メッセージの状態を指定します。
-ms.openlocfilehash: ae32202284d3dd272f693fbb7b76070cb6019d28
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: f11952f401e0d22d780725598bfb32cbd3a8d622
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461402"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543388"
 ---
 # <a name="deliverystatus"></a>DeliveryStatus
 
-**Deliverystatus**要素は、メッセージの状態を指定します。 
+**DeliveryStatus 要素** は、メッセージの状態を指定します。 
   
 ```XML
 <DeliveryStatus>Unsuccessful | Pending | Delivered | Transferred | Read</DeliveryStatus>
@@ -44,25 +44,25 @@ ms.locfileid: "44461402"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[受信者 Trackingイベント](recipienttrackingevent.md) <br/> |受信者に対する1つのイベントに関する情報が含まれています。  <br/> |
+|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |受信者の 1 つのイベントの情報を格納します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**Deliverystatus**要素の使用可能なテキスト値を次の表に示します。 
+次の表に **、DeliveryStatus** 要素で使用できるテキスト値を示します。 
   
 **DeliveryStatus 要素の値**
 
 |**値**|**説明**|
 |:-----|:-----|
-|いか  <br/> |メッセージが配信されなかったことを指定します。  <br/> |
-|Pending  <br/> |メッセージがモデレーターからの承認を待機していることを指定します。  <br/> |
-|届け  <br/> |メッセージが指定されたすべての受信者に配信されたことを示します。  <br/> |
-|付与  <br/> |メッセージが検索範囲外のサーバーに転送されたことを示します。  <br/> |
-|Read  <br/> |受信者によってメッセージが配信および開封されたことを示します。  <br/> |
+|失敗しました  <br/> |メッセージが配信されていないと指定します。  <br/> |
+|保留中  <br/> |メッセージがモデレーターからの承認を待つことを指定します。  <br/> |
+|配信  <br/> |指定した受信者全員にメッセージが配信されたと指定します。  <br/> |
+|転送  <br/> |メッセージが検索範囲外のサーバーに転送されたと指定します。  <br/> |
+|読み取り  <br/> |メッセージが受信者によって配信および読み取りされたと指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-**Deliverystatus**要素の種類は、Exchange Server 2010 の**Messagetrackingdeliverystatustype**た。 
+**DeliveryStatus 要素は**、2010 年に **MessageTrackingDeliveryStatusType** Exchange Serverしました。 
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
@@ -71,11 +71,11 @@ ms.locfileid: "44461402"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

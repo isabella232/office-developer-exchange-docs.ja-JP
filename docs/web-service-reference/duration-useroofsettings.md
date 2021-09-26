@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Duration
 api_type:
 - schema
 ms.assetid: 01d67af3-658e-4acd-93e3-441ae827fdd3
-description: Duration 要素は、OofState 要素が [スケジュール済み] に設定されている場合に、不在時 (OOF) の状態が有効である期間を指定します。
-ms.openlocfilehash: 0ba0f1ea7498781c0cccb072c7ea0fa05414764c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Duration 要素は、OofState 要素が Scheduled に設定されている場合に、アウトオブオフィス (OOF) 状態が有効になっている期間を指定します。
+ms.openlocfilehash: cb6529bfe3799ff41550d7fe3ce2c79b8a4197e2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457299"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544158"
 ---
 # <a name="duration-useroofsettings"></a>Duration (UserOofSettings)
 
-**Duration**要素は、 [oofstate](oofstate.md)要素が [**スケジュール済み**] に設定されている場合に、不在時 (OOF) の状態が有効である期間を指定します。
+**Duration 要素** は [、OofState](oofstate.md)要素が Scheduled に設定されている場合に、アウトオブオフィス (OOF) 状態が有効になっている期間を **指定します**。
   
 ```XML
 <Duration>
@@ -43,26 +43,26 @@ ms.locfileid: "44457299"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[StartTime](starttime.md) <br/> |OOF 状態で設定された時間間隔の開始を表します。 この要素は必須です。  <br/> |
-|[EndTime](endtime.md) <br/> |不在時の状態で設定された時間間隔の最後の部分を表します。 この要素は必須です。  <br/> |
+|[StartTime](starttime.md) <br/> |OOF 状態を持つ期間セットの開始を表します。 この要素は必須です。  <br/> |
+|[EndTime](endtime.md) <br/> |OOF 状態を持つ期間セットの終了を表します。 この要素は必須です。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[UserOofSettings](useroofsettings.md) <br/> |OOF 設定を指定します。  <br/><br/>この要素の XPath 式を次に示します。<br/><br/>`/SetUserOofSettingsRequest/UserOofSettings` <br/> |
-|[OofSettings](oofsettings.md) <br/> |不在時の設定が含まれます。<br/><br/>この要素の XPath 式を次に示します。<br/><br/>`/GetUserOofSettingsResponse/OofSettings` <br/> |
-|[不在](outofoffice.md) <br/> |不在 (OOF) 応答メッセージと、メールボックスの応答メッセージを送信する時間を定義します。  <br/> |
+|[UserOofSettings](useroofsettings.md) <br/> |OOF 設定を指定します。  <br/><br/>次に、この要素の XPath 式を示します。<br/><br/>`/SetUserOofSettingsRequest/UserOofSettings` <br/> |
+|[OofSettings](oofsettings.md) <br/> |OOF 設定が含まれる。<br/><br/>次に、この要素の XPath 式を示します。<br/><br/>`/GetUserOofSettingsResponse/OofSettings` <br/> |
+|[OutOfOffice](outofoffice.md) <br/> |メールボックスの応答メッセージOffice送信する時間を定義します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-**期間**の種類は、 [DetailedSuggestionsWindow](detailedsuggestionswindow.md)、 [TimeWindow](timewindow.md)、および[不在](outofoffice.md)要素の型でもあります。 
+期間 **の** 種類は [、DetailedSuggestionsWindow、TimeWindow、](detailedsuggestionswindow.md)[および](timewindow.md) [OutOfOffice](outofoffice.md)要素の型です。 
   
 この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリに置かれています。
   
 ## <a name="example"></a>例
 
-[Setuseroofsettings 操作](setuseroofsettings-operation.md)要求の次の例では、 [Oofstate](oofstate.md)を**有効**にし、内部および外部の OOF メッセージを設定し、不在時の時間を10日間に設定します。
+[SetUserOofSettings](setuseroofsettings-operation.md)操作要求の次の例は [、OofState](oofstate.md)を **Enabled**(内部および外部の OOF メッセージ) に設定し、OOF の期間を 10 日間設定します。
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -99,9 +99,9 @@ ms.locfileid: "44457299"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 78e0784b-8fe8-42f1-aa6f-4f4a0bc2505e
-description: SetTeamMailboxResponse 要素は、SetTeamMailbox 要求への応答を表します。
-ms.openlocfilehash: 38754cd03ab82e83b28192f6b0a3fd9e7fe87333
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SetTeamMailboxResponse 要素は、SetTeamMailbox 要求に対する応答を表します。
+ms.openlocfilehash: c9e35268f0bdadf7a8de2158c3c93eaa0c86d7db
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467341"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545959"
 ---
 # <a name="setteammailboxresponse"></a>SetTeamMailboxResponse
 
-**SetTeamMailboxResponse**要素は、 **setteammailbox**要求への応答を表します。 
+**SetTeamMailboxResponse** 要素は **、SetTeamMailbox** 要求に対する応答を表します。 
   
 ```XML
 <SetTeamMailboxResponse>
@@ -39,7 +39,7 @@ ms.locfileid: "44467341"
   
 ### <a name="child-elements"></a>子要素
 
-[Messagetext](messagetext.md)  | 応答[Secmode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)
+[MessageText](messagetext.md)  | [ResponseCode](responsecode.md)  | [DescriptiveLinkKey](descriptivelinkkey.md)  | [MessageXml](messagexml.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -56,8 +56,8 @@ ms.locfileid: "44467341"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

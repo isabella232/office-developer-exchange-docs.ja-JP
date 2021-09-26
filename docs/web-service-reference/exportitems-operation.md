@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ExportItems
 api_type:
 - schema
 ms.assetid: e2846abb-0b16-4732-bbd8-038a674672f6
 description: ExportItems 操作は、メールボックスからアイテムをエクスポートします。
-ms.openlocfilehash: 547a490a27d2414d2eda1d89cdac036a34eddccd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: b53761f91b15053b0fb79a3c1068a50bce665a67
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526047"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542331"
 ---
 # <a name="exportitems-operation"></a>ExportItems 操作
 
-**ExportItems**操作は、メールボックスからアイテムをエクスポートします。 
+**ExportItems 操作は**、メールボックスからアイテムをエクスポートします。 
   
 ## <a name="exportitems-request-example"></a>ExportItems 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の**ExportItems**要求の例は、メールボックスからエクスポートされた3つのアイテムを取得するための要求を形成する方法を示しています。 
+**ExportItems** 要求の次の例は、メールボックスから 3 つのアイテムをエクスポートする要求を形成する方法を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -55,9 +55,9 @@ ms.locfileid: "44526047"
 
 ### <a name="comment"></a>コメント
 
-この例のアイテム識別子は読みやすいように短縮されています。
+この例のアイテム識別子は、読みやすさを維持するために短縮されています。
   
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 要求では、次の要素が使用されます。
   
@@ -65,15 +65,15 @@ ms.locfileid: "44526047"
     
 - [ExportItems](exportitems.md)
     
-- [ItemIds (非 Emptyarrayofitemidstype)](itemids-nonemptyarrayofitemidstype.md)
+- [ItemIds (NonEmptyArrayOfItemIdsType)](itemids-nonemptyarrayofitemidstype.md)
     
 - [ItemId](itemid.md)
     
-## <a name="successful-exportitems-response-example"></a>Successful ExportItems response の例
+## <a name="successful-exportitems-response-example"></a>ExportItems 応答の成功例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **ExportItems**要求に対する正常な応答を示しています。 
+次の例は **、ExportItems** 要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -149,9 +149,9 @@ ms.locfileid: "44526047"
 
 ### <a name="comment"></a>コメント
 
-この例のアイテム識別子と変更キーは、読みやすくするために短縮されています。
+この例のアイテム識別子と変更キーは、読みやすさを維持するために短縮されています。
   
-### <a name="response-elements"></a>Response 要素
+### <a name="response-elements"></a>応答要素
 
 応答では、次の要素が使用されます。
   
@@ -171,9 +171,9 @@ ms.locfileid: "44526047"
     
 ## <a name="exportitems-error-response-example"></a>ExportItems エラー応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、2つのエラーと1つのアイテムが正常にエクスポートされた**ExportItems**要求への応答を示しています。 この例の最初の項目は正常にエクスポートされています。 2番目の項目に不適切な変更キーが含まれています。 3番目の項目は、誤ったメールボックスからアイテムをエクスポートしようとしたことを表します。 
+次の例は、2 つのエラーと 1 つの正常にエクスポートされたアイテムを含む **ExportItems** 要求への応答を示しています。 この例の最初のアイテムは正常にエクスポートされます。 2 番目のアイテムには、正しくない変更キーが含まれている。 3 番目のアイテムは、間違ったメールボックスからアイテムをエクスポートする試みを表します。 
   
 ### <a name="code"></a>コード
 
@@ -229,7 +229,7 @@ ms.locfileid: "44526047"
 
 ### <a name="comments"></a>コメント
 
-この例のアイテム識別子、変更キー、データは、読みやすくするために短縮されています。
+この例のアイテム識別子、変更キー、およびデータは、読みやすさを維持するために短縮されています。
   
 ### <a name="error-response-elements"></a>エラー応答要素
 
@@ -258,7 +258,7 @@ ms.locfileid: "44526047"
 - **値**
     
 > [!NOTE]
-> **Value**要素がスキーマに存在しません。 この要素は、**値**instance 要素が発生する[MessageXml](messagexml.md)要素が整形式の XML を含むことができるため、有効です。 
+> Value **要素** はスキーマに存在しません。 この要素は、Value インスタンス要素が発生する[MessageXml](messagexml.md)要素に、整形式の XML を含め得るので有効です。  
   
 ## <a name="see-also"></a>関連項目
 
@@ -267,7 +267,7 @@ ms.locfileid: "44526047"
 [UploadItems 操作](uploaditems-operation.md)
 
 
-[Exchange での EWS 操作](ews-operations-in-exchange.md)
+[EWS 操作 (Exchange](ews-operations-in-exchange.md)
   
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

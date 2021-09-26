@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 65a7ef52-9992-49b1-b002-868fb2d3a6f6
-description: Urls 要素は、ペルソナの Url の配列を指定します。
-ms.openlocfilehash: 1278705df0c158e8d74e6fe38501114264787d00
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Urls 要素は、ペルサの URL の配列を指定します。
+ms.openlocfilehash: 39502d885a2731df59042ca3aac276ceeb81bfda
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467677"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542632"
 ---
 # <a name="urls"></a>Urls
 
-**Urls**要素は、ペルソナの url の配列を指定します。 
+**Urls 要素** は、ペルサの URL の配列を指定します。 
   
 ```XML
 <Urls>
@@ -36,7 +36,7 @@ ms.locfileid: "44467677"
   
 ### <a name="child-elements"></a>子要素
 
-[.Url](url-ex15websvcsotherref.md)
+[Url ](url-ex15websvcsotherref.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -53,8 +53,8 @@ ms.locfileid: "44467677"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

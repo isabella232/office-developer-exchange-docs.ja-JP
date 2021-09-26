@@ -4,31 +4,31 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 74fed547-9999-4c9c-9566-f7df811f1048
-description: IPv6Start 要素は、ネットワーク上のコンピューターを識別するために使用される IP version 6 (IPv6) アドレスの範囲の開始を識別します。
-ms.openlocfilehash: a4cafc091567fd4db6a2b4c839e0c1f770fb7ddb
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: IPv6Start 要素は、ネットワーク上のコンピューターを識別するために使用される IP バージョン 6 (IPv6) アドレスの範囲の開始を識別します。
+ms.openlocfilehash: b8331289cd597d479fb873c43c88fb4a9fdfe69c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529995"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544985"
 ---
 # <a name="ipv6start-pox"></a>IPv6Start (POX)
 
-**IPv6Start**要素は、ネットワーク上のコンピューターを識別するために使用される IP version 6 (IPv6) アドレスの範囲の開始を識別します。 
+**IPv6Start** 要素は、ネットワーク上のコンピューターを識別するために使用される IP バージョン 6 (IPv6) アドレスの範囲の開始を識別します。 
   
-[自動検出 (POX)](autodiscover-pox.md)
+[AutoDiscover (POX)](autodiscover-pox.md)
   
-[応答 (POX)](response-pox.md)
+[Response (POX)](response-pox.md)
   
-[アカウント (POX)](account-pox.md)
+[Account (POX)](account-pox.md)
   
-[プロトコル (POX)](protocol-pox.md)
+[Protocol (POX)](protocol-pox.md)
   
-[NetworkRequirements 要件 (POX)](networkrequirements-pox.md)
+[NetworkRequirements (POX)](networkrequirements-pox.md)
   
 [IPv6Start (POX)](ipv6start-pox.md)
   
@@ -52,15 +52,15 @@ ms.locfileid: "44529995"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[NetworkRequirements 要件 (POX)](networkrequirements-pox.md) <br/> |サーバーに接続するために、クライアントコンピューターがインターネットサービスプロバイダー (ISP) の要件を満たしているネットワーク上にあるかどうかを判断するために使用される条件を含みます。  <br/> |
+|[NetworkRequirements (POX)](networkrequirements-pox.md) <br/> |クライアント コンピューターがインターネット サービス プロバイダー (ISP) のサーバーへの接続要件を満たすネットワーク上にあるかどうかを判断するために使用される条件が含まれます。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-Text 値は、IPv6 アドレスを表します。
+テキスト値は IPv6 アドレスを表します。
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+[POX 自動検出 XML 要素のExchange](pox-autodiscover-xml-elements-for-exchange.md)
 

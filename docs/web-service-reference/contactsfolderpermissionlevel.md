@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ContactsFolderPermissionLevel
 api_type:
 - schema
 ms.assetid: 805f05e7-b320-436a-9965-ba1ee235ac41
-description: ContactsFolderPermissionLevel 要素には、既定の連絡先フォルダーのアクセス許可が含まれています。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。
-ms.openlocfilehash: 8d76e00ab63714e220bd3205b10c8b72d15a4788
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ContactsFolderPermissionLevel 要素には、既定の連絡先フォルダーのアクセス許可が含まれる。 この要素は、2007 Microsoft Exchange Server パック 1 (SP1) で導入されました。
+ms.openlocfilehash: 9b266efbd5817cd32bca415e2330b58586b38bd6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527125"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544277"
 ---
 # <a name="contactsfolderpermissionlevel"></a>ContactsFolderPermissionLevel
 
-**ContactsFolderPermissionLevel**要素には、既定の連絡先フォルダーのアクセス許可が含まれています。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。 
+**ContactsFolderPermissionLevel** 要素には、既定の連絡先フォルダーのアクセス許可が含まれる。 この要素は、2007 Microsoft Exchange Server パック 1 (SP1) で導入されました。 
   
 ```xml
 <ContactsFolderPermissionLevel>
@@ -46,34 +46,34 @@ ms.locfileid: "44527125"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[DelegatePermissions](delegatepermissions.md) <br/> |ユーザーの代理アクセス許可レベルの設定が含まれています。 この要素は、Exchange 2007 SP1 で導入されました。  <br/> |
+|[DelegatePermissions](delegatepermissions.md) <br/> |ユーザーの代理人アクセス許可レベルの設定が含まれる。 この要素は、2007 SP1 Exchange導入されました。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-次の表に、アクセス許可レベルを表すテキスト値の一覧を示します。
+次の表に、アクセス許可レベルを表すテキスト値を示します。
   
 **アクセス許可レベルのテキスト値**
 
 |**アクセス許可レベル**|**説明**|
 |:-----|:-----|
-|なし  <br/> |代理人ユーザーには、連絡先フォルダーへのアクセス許可がありません。  <br/> |
-|レビュー担当者  <br/> |代理人のユーザーは、連絡先フォルダーのアイテムを読み取ることができます。  <br/> |
-|設定元  <br/> |代理人のユーザーは、連絡先フォルダーのアイテムの読み取りと作成を行うことができます。  <br/> |
-|エディター  <br/> |代理人のユーザーは、連絡先フォルダーのアイテムの読み取り、作成、および変更を行うことができます。  <br/> |
-|Custom  <br/> |代理人ユーザーが連絡先フォルダーに対する独自のアクセス許可を持っている。  <br/> |
+|なし  <br/> |代理人ユーザーには、連絡先フォルダーへのアクセス許可はありません。  <br/> |
+|レビュー担当者  <br/> |代理人ユーザーは、連絡先フォルダー内のアイテムを読み取りできます。  <br/> |
+|Author  <br/> |代理人ユーザーは、連絡先フォルダー内のアイテムを読み取って作成できます。  <br/> |
+|エディター  <br/> |代理人ユーザーは、連絡先フォルダー内のアイテムの読み取り、作成、および変更を行います。  <br/> |
+|Custom  <br/> |代理人ユーザーは、連絡先フォルダーへのカスタム アクセス許可を持っています。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -84,7 +84,7 @@ ms.locfileid: "44527125"
 [UpdateDelegate 操作](updatedelegate-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 
 
 [代理人の追加](https://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)

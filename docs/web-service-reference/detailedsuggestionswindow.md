@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DetailedSuggestionsWindow
 api_type:
 - schema
 ms.assetid: 7b348d63-6a7d-45f4-9562-5c42243d63a5
-description: DetailedSuggestionsWindow 要素は、提案された会議の時間に関する詳細情報に対してクエリを実行する時間間隔を指定します。
-ms.openlocfilehash: 45d582f2642c0e3d8f6330b09946230c8842618d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: DetailedSuggestionsWindow 要素は、提案された会議時間に関する詳細情報を照会する期間を識別します。
+ms.openlocfilehash: 56f66d9ee7be25de20a892823a02174c75b40601
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467845"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545336"
 ---
 # <a name="detailedsuggestionswindow"></a>DetailedSuggestionsWindow
 
-**DetailedSuggestionsWindow**要素は、提案された会議の時間に関する詳細情報に対してクエリを実行する時間間隔を指定します。 
+**DetailedSuggestionsWindow** 要素は、提案された会議時間に関する詳細情報を照会する期間を識別します。 
   
 - [GetUserAvailabilityRequest](getuseravailabilityrequest.md) 
 - [SuggestionsViewOptions](suggestionsviewoptions.md) 
@@ -47,33 +47,33 @@ ms.locfileid: "44467845"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[StartTime](starttime.md) <br/> |提案された会議時間に関する詳細情報を照会した期間の開始日を表します。  <br/> |
-|[EndTime](endtime.md) <br/> |提案された会議時間に関する詳細情報を照会した期間の終わりを表します。  <br/> |
+|[StartTime](starttime.md) <br/> |提案された会議の時間に関する詳細情報を照会する期間の開始を表します。  <br/> |
+|[EndTime](endtime.md) <br/> |提案された会議の時間に関する詳細情報を照会した期間の終了を表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[SuggestionsViewOptions](suggestionsviewoptions.md) <br/> |会議提案情報を取得するためのオプションが含まれています。  <br/> この要素の XPath を次に示します。  <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions` <br/> |
+|[SuggestionsViewOptions](suggestionsviewoptions.md) <br/> |会議の提案情報を取得するためのオプションが含まれる。  <br/> 次に、この要素の XPath を示します。  <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions` <br/> |
    
 ## <a name="remarks"></a>注釈
 
 この要素は必須ではありません。
   
 > [!NOTE]
-> この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの/EWS/ディレクトリにあります。 
+> この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの /EWS/ ディレクトリにあります。 
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [GetUserAvailability 操作](getuseravailability-operation.md)
-- [ユーザーの空き時間情報の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [ユーザーの可用性の取得](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

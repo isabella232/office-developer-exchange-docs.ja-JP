@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - EventType
 api_type:
 - schema
 ms.assetid: 04b70f9e-c226-4130-958e-0db0275cf58b
-description: EventType 要素は、サブスクリプションを作成し、通知で報告されるイベントの種類を識別するために使用されます。
-ms.openlocfilehash: 58c7ce571434b6fb8ac0b1dc2a3f8cd4fd56ff17
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: EventType 要素は、サブスクリプションの作成に使用され、通知で報告されるイベントの種類を識別します。
+ms.openlocfilehash: 7378ba45b155281df9e00ad635b7c6970a270f2c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526173"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545217"
 ---
 # <a name="eventtype"></a>EventType
 
-**EventType**要素は、サブスクリプションを作成し、通知で報告されるイベントの種類を識別するために使用されます。 
+**EventType 要素は**、サブスクリプションの作成に使用され、通知で報告されるイベントの種類を識別します。 
   
 ```xml
 <EventType/>
@@ -44,7 +44,7 @@ ms.locfileid: "44526173"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[EventTypes](eventtypes.md) <br/> |サブスクリプションの作成に使用されるイベント通知イベントの種類のコレクションが含まれています。  <br/> |
+|[EventTypes](eventtypes.md) <br/> |サブスクリプションの作成に使用されるイベント通知イベントの種類のコレクションを格納します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -52,11 +52,11 @@ ms.locfileid: "44526173"
   
 - CopiedEvent
     
-- 対する createdevent
+- CreatedEvent
     
 - DeletedEvent
     
-- 対する modifiedevent
+- ModifiedEvent
     
 - MovedEvent
     
@@ -66,16 +66,16 @@ ms.locfileid: "44526173"
     
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
+この要素を記述するスキーマは、Exchange Web Services をホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

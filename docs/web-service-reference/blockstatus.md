@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 08556ee9-0923-437c-99a4-bb630f04e973
 description: BlockStatus 要素は、アイテムのブロック状態を指定します。
-ms.openlocfilehash: e88236274bfa70216e872025c2a94231f837df1f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: e26562ddaecaf49102f6646f004d86b07383888b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462277"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545609"
 ---
 # <a name="blockstatus"></a>BlockStatus
 
-**Blockstatus**要素は、アイテムのブロック状態を指定します。 
+**BlockStatus 要素** は、アイテムのブロック状態を指定します。 
   
 ```XML
 <BlockStatus> true | false </BlockStatus
@@ -40,14 +40,14 @@ ms.locfileid: "44462277"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[CalendarItem](calendaritem.md) <br/> |Exchange の予定表アイテムを表します。  <br/> |
-|[Contact](contact.md) <br/> |Exchange ストア内の連絡先アイテムを表します。  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |予定表アイテムのExchangeを表します。  <br/> |
+|[Contact](contact.md) <br/> |ストア内の連絡先アイテムExchangeします。  <br/> |
 |[DistributionList](distributionlist.md) <br/> |配布リストを表します。  <br/> |
-|[Item](item.md) <br/> |Exchange ストア内の汎用アイテムを表します。  <br/> |
+|[項目](item.md) <br/> |ストア内の汎用アイテムをExchangeします。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**Blockstatus**要素のテキスト値が**true の場合**は、アイテムがブロックされていることを示します。 値が**false**の場合は、アイテムがブロックされていないことを示します。 
+**BlockStatus** 要素 **のテキスト値が true** の場合、アイテムがブロックされます。 false の **値は** 、アイテムがブロックされていない状態を示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -61,12 +61,12 @@ ms.locfileid: "44462277"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

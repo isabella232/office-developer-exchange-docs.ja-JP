@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DeleteType
 api_type:
 - schema
 ms.assetid: 6e3136cd-9cb4-493a-aa85-9678f719002d
-description: DeleteType 要素は、スレッド内のアイテムが削除される方法を示します。
-ms.openlocfilehash: 199f7afc29fe866865509d2fb90d24944113d5c0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: DeleteType 要素は、会話内のアイテムを削除する方法を示します。
+ms.openlocfilehash: 828950e72179c17cd3efaa78df677bb7f15789c2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44442634"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543402"
 ---
 # <a name="deletetype"></a>DeleteType
 
-**Deletetype**要素は、スレッド内のアイテムが削除される方法を示します。 
+**DeleteType 要素** は、会話内のアイテムを削除する方法を示します。 
   
 - [ApplyConversationAction](applyconversationaction.md)  
 - [ConversationActions](conversationactions.md)  
@@ -49,33 +49,33 @@ ms.locfileid: "44442634"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ConversationAction](conversationaction.md) <br/> |単一の会話に適用される1つのアクションが含まれます。  <br/> |
+|[ConversationAction](conversationaction.md) <br/> |1 つの会話に適用する 1 つのアクションが含まれる。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-**Deletetype**要素のテキスト値は、スレッド内のアイテムが削除される方法を示します。 可能なテキスト値を次に示します。 
+DeleteType 要素の **テキスト値** は、会話内のアイテムを削除する方法を示します。 使用できるテキスト値は次のとおりです。 
   
-- ハード削除-会話内のアイテムがメールボックスデータベースから完全に削除されることを示します。
+- HardDelete - 会話内のアイテムがメールボックス データベースから完全に削除されるかどうかを示します。
     
-- MoveToDeleteItems-スレッド内のアイテムが [削除済みアイテム] フォルダーに移動されたことを示します。
+- MoveToDeleteItems - 会話内のアイテムが [削除済みアイテム] フォルダーに移動されます。
     
-- SoftDelete-メッセージの収集が有効になっている場合に、スレッド内のアイテムが収集に移動されることを示します。
+- SoftDelete - ゴミ箱が有効になっている場合、会話内のアイテムがゴミ箱に移動されます。
     
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
+この要素を記述するスキーマは、Exchange Web Services をホストする IIS 仮想ディレクトリにあります。この要素は、Exchange Server 2010 Service Pack 1 (SP1) で導入されました。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [ApplyConversationAction 操作](applyconversationaction-operation.md)
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

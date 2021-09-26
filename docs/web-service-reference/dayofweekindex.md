@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DayOfWeekIndex
 api_type:
 - schema
 ms.assetid: 82420338-a1f7-4887-b338-b2d93b2c2bf1
-description: DayOfWeekIndex 要素は、相対的な定期的なパターンで使用される月の週を示します。
-ms.openlocfilehash: c9235d83a944f9c8883439dd2adf190b88977f16
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: DayOfWeekIndex 要素は、相対的な定期的なパターンで使用される月の週を表します。
+ms.openlocfilehash: 3b9af396bbd5c51b365da6a95b40b00718d47c3b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529211"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542520"
 ---
 # <a name="dayofweekindex"></a>DayOfWeekIndex
 
-**DayOfWeekIndex**要素は、相対的な定期的なパターンで使用される月の週を示します。 
+**DayOfWeekIndex 要素** は、相対的な定期的なパターンで使用される月の週を表します。 
   
 ```xml
 <DayOfWeekIndex/>
@@ -45,8 +45,8 @@ ms.locfileid: "44529211"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[RelativeYearlyRecurrence](relativeyearlyrecurrence.md) <br/> |相対的な年単位の定期的なパターンを記述します。  <br/> |
-|[RelativeMonthlyRecurrence](relativemonthlyrecurrence.md) <br/> |相対的な月単位の定期的なパターンを記述します。  <br/> |
+|[RelativeYearlyRecurrence](relativeyearlyrecurrence.md) <br/> |相対的な年次繰り返しパターンを説明します。  <br/> |
+|[RelativeMonthlyRecurrence](relativemonthlyrecurrence.md) <br/> |相対的な毎月の定期的なパターンを説明します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -60,20 +60,20 @@ ms.locfileid: "44529211"
     
 ## <a name="remarks"></a>注釈
 
-たとえば、月の第2月曜日は、その月の第3週に発生する場合があります。 1か月の金曜日に開始する場合、その月の最初の週には数日だけが含まれ、月曜日は含まれません。 そのため、最初の月曜日は2週間以内に実行する必要があります。
+たとえば、月の第 2 月曜日は、その月の 3 週目に発生することがあります。 月が金曜日に始まる場合、月の最初の週には数日しか含まず、月曜日は含めではありません。 したがって、最初の月曜日は 2 週目に発生する必要があります。
   
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

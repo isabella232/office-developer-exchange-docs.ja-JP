@@ -1,28 +1,28 @@
 ---
-title: メッセージ (POX)
+title: Message (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: b0124b70-28ab-4484-ac81-465a42f42776
-description: Message 要素には、エラー自動検出応答のエラーメッセージが含まれています。
-ms.openlocfilehash: 5e2f9d5b2f9ad45359f180f1121a34ccf9cd89cc
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Message 要素には、エラー自動検出応答のエラー メッセージが含まれる。
+ms.openlocfilehash: 1b15bce5c052205b0953bbdd686ead32f32ea743
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467992"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542163"
 ---
-# <a name="message-pox"></a>メッセージ (POX)
+# <a name="message-pox"></a>Message (POX)
 
-**Message**要素には、エラー自動検出応答のエラーメッセージが含まれています。 
+**Message 要素** には、エラー自動検出応答のエラー メッセージが含まれる。 
   
-[エラー (POX)](error-pox.md)
+[Error (POX)](error-pox.md)
   
-[メッセージ (POX)](message-pox.md)
+[Message (POX)](message-pox.md)
   
 ```xml
 <Message/>
@@ -44,15 +44,15 @@ ms.locfileid: "44467992"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[エラー (POX)](error-pox.md) <br/> |自動検出エラー応答を格納します。  <br/> |
+|[Error (POX)](error-pox.md) <br/> |自動検出エラー応答が含まれる。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-Text 値は、エラー自動検出応答のエラーメッセージを表します。
+テキスト値は、エラー自動検出応答のエラー メッセージを表します。
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+[POX 自動検出 XML 要素のExchange](pox-autodiscover-xml-elements-for-exchange.md)
 

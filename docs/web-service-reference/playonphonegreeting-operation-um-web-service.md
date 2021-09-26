@@ -1,32 +1,32 @@
 ---
-title: Playon電話案内応答操作 (UM web サービス)
+title: PlayOnPhoneGreeting 操作 (UM Web サービス)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PlayOnPhoneGreeting
 api_type:
 - schema
 ms.assetid: 6deafc40-290b-4bce-9914-b6bcc529f38a
-description: Playon電話案内応答操作は、発信通話を行い、電話で2つの案内応答メッセージの1つを再生します。
-ms.openlocfilehash: 3af120b9ac8d7a368742fad2850c924228488662
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: PlayOnPhoneGreeting 操作は、発信呼び出しを行い、電話で 2 つの案内応答メッセージの 1 つを再生します。
+ms.openlocfilehash: 540cd44d35e70e2588446996aec19aeab17f83e9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528896"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543136"
 ---
-# <a name="playonphonegreeting-operation-um-web-service"></a>Playon電話案内応答操作 (UM web サービス)
+# <a name="playonphonegreeting-operation-um-web-service"></a>PlayOnPhoneGreeting 操作 (UM Web サービス)
 
-Playon電話案内応答操作は、発信通話を行い、電話で2つの案内応答メッセージの1つを再生します。
+PlayOnPhoneGreeting 操作は、発信呼び出しを行い、電話で 2 つの案内応答メッセージの 1 つを再生します。
   
-## <a name="playonphonegreeting-request-example"></a>Playon電話案内応答要求の例
+## <a name="playonphonegreeting-request-example"></a>PlayOnPhoneGreeting 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次に示す Playon電話案内応答要求の例は、発信通話を行い、電話で通常の案内応答メッセージを再生する要求を形成する方法を示しています。
+PlayOnPhoneGreeting 要求の次の例は、発信呼び出しを行い、電話で通常の案内応答メッセージを再生する要求を形成する方法を示しています。
   
 ### <a name="code"></a>コード
 
@@ -42,11 +42,11 @@ Playon電話案内応答操作は、発信通話を行い、電話で2つの案�
 </soap:Envelope>
 ```
 
-## <a name="successful-playonphonegreeting-response-example"></a>成功した Playon電話案内応答の例
+## <a name="successful-playonphonegreeting-response-example"></a>PlayOnPhoneGreeting 応答の成功例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の Playon電話案内応答の例は、Playonphone 案内応答要求に対する応答を示しています。
+PlayOnPhoneGreeting 応答の次の例は、PlayOnPhoneGreeting 要求に対する応答を示しています。
   
 ### <a name="code"></a>コード
 
@@ -65,11 +65,11 @@ Playon電話案内応答操作は、発信通話を行い、電話で2つの案�
 
 
 
-[Playon電話応答メッセージ (UM web サービス)](playonphonegreeting-um-web-service.md)
+[PlayOnPhoneGreeting (UM Web サービス)](playonphonegreeting-um-web-service.md)
   
-[PlayOnPhoneGreetingResponse (UM web サービス)](playonphonegreetingresponse-um-web-service.md)
+[PlayOnPhoneGreetingResponse (UM Web サービス)](playonphonegreetingresponse-um-web-service.md)
   
-[GreetingType (UM web サービス)](greetingtype-um-web-service.md)
+[GreetingType (UM Web サービス)](greetingtype-um-web-service.md)
   
-[[] (UM web サービス)](dialstring-um-web-service.md)
+[dialString (UM Web サービス)](dialstring-um-web-service.md)
 

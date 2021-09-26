@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetItem
 api_type:
 - schema
 ms.assetid: 769df8eb-9c72-48b5-a49f-82c6b86bc5fc
-description: GetItem 要素は、Exchange ストア内のメールボックスからアイテムを取得するための要求を定義します。
-ms.openlocfilehash: a02403ee84195a41387d5dbe1785ae6d12b47da5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetItem 要素は、メールボックス ストア内のメールボックスからアイテムを取得する要求Exchangeします。
+ms.openlocfilehash: 7d5a7253db54fd67bb8e8772c2a5aedb86abdeee
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458699"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546232"
 ---
 # <a name="getitem"></a>GetItem
 
-**GetItem**要素は、Exchange ストア内のメールボックスからアイテムを取得するための要求を定義します。 
+**GetItem 要素は**、アイテム ストア内のメールボックスからアイテムを取得する要求Exchangeします。 
   
 ```xml
 <GetItem>
@@ -43,8 +43,8 @@ ms.locfileid: "44458699"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[ItemShape](itemshape.md) <br/> |**GetItem**応答に含めるアイテムのプロパティとコンテンツを識別します。  <br/> |
-|[ItemIds](itemids.md) <br/> |Exchange ストアからアイテムを取得するために使用されるアイテム、オカレンスアイテム、定期的なマスターアイテムの一意の id が含まれています。 これらのアイテムは、メールボックス内の連絡先、タスク、メッセージ、予定表アイテム、会議出席依頼、およびその他の有効なアイテムを表します。  <br/> |
+|[ItemShape](itemshape.md) <br/> |GetItem 応答に含めるアイテムのプロパティとコンテンツ **を識別** します。  <br/> |
+|[ItemIds](itemids.md) <br/> |アイテム、オカレンス アイテム、およびアイテムをストアから取得するために使用される定期的なマスター アイテムの一意の id Exchangeします。 これらのアイテムは、メールボックス内の連絡先、タスク、メッセージ、予定表アイテム、会議出席依頼、その他の有効なアイテムを表します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -52,16 +52,16 @@ ms.locfileid: "44458699"
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

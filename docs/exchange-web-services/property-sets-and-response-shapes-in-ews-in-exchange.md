@@ -3,15 +3,15 @@ title: Exchange の EWS でのプロパティ セットと応答の図形
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 04a29804-6067-48e7-9f5c-534e253a230e
 description: EWS マネージ API および Exchange の EWS から返される応答の図形とプロパティ セットを管理する方法について説明します。
-ms.openlocfilehash: 8f539a2131798e764574ef92f75deb654c02c90f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 7720a07a6fd288f289bba371ce6fd8a6e349a8ce
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457663"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543850"
 ---
 # <a name="property-sets-and-response-shapes-in-ews-in-exchange"></a>Exchange の EWS でのプロパティ セットと応答の図形
 
@@ -39,7 +39,7 @@ EWS には、フォルダーまたはフォルダー アイテムの既定の応
   
 **表 2. 既定のフォルダーのプロパティ**
 
-|**Property**|**受信トレイ**|**予定表**|**連絡先**|**削除済みアイテム**|**下書き**|**メモ**|**その他のフォルダー**|**送信トレイ**|
+|**プロパティ**|**受信トレイ**|**予定表**|**連絡先**|**削除済みアイテム**|**下書き**|**メモ**|**その他のフォルダー**|**送信トレイ**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 |表示名  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |
 |フォルダー ID  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |
@@ -85,7 +85,7 @@ EWS には、フォルダーまたはフォルダー アイテムの既定の応
    
 注:
   
-1. **GetItem** 操作の応答に含まれます。 **FindItem** 操作の応答に含まれません。 
+1. **GetItem** 操作の応答に含まれます。**FindItem** 操作の応答に含まれません。 
     
 2. フィールドにデータがある場合のみ応答に含まれます。フィールドが空白の場合は応答に含まれません。
     

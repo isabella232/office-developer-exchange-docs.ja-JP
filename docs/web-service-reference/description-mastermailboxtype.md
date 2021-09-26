@@ -1,23 +1,23 @@
 ---
-title: 説明 (MasterMailboxType)
+title: Description (MasterMailboxType)
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 22d61562-a20e-40f1-a809-7e4c16757520
-description: Description (MasterMailboxType) 要素は、内部使用のみを目的としています。
-ms.openlocfilehash: a705dff1ed5b36376cee227ffb51d4de2aa500c2
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Description (MasterMailboxType) 要素は、内部での使用のみを目的とします。
+ms.openlocfilehash: 97612b46c4b14721dbe7a9865ce7717e233ab727
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467894"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543381"
 ---
-# <a name="description-mastermailboxtype"></a>説明 (MasterMailboxType)
+# <a name="description-mastermailboxtype"></a>Description (MasterMailboxType)
 
-**Description (MasterMailboxType)** 要素は、内部使用のみを目的としています。 
+Description **(MasterMailboxType) 要素** は、内部での使用のみを目的とします。 
 
 ## <a name="attributes-and-elements"></a>属性と要素
 

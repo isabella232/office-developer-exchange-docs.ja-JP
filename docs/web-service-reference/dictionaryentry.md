@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DictionaryEntry
 api_type:
 - schema
 ms.assetid: 531ea96a-d411-43e6-9fec-11fa2c959a30
-description: DictionaryEntry 要素は、単一の dictionary entry プロパティの内容を指定します。
-ms.openlocfilehash: 4c5d4c037f0c97b26d518d2f1386f71b31fa2d1f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: DictionaryEntry 要素は、単一の辞書エントリ プロパティの内容を指定します。
+ms.openlocfilehash: 4a9e481f3b9d6fc2d0ef739031042354ed717bee
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455661"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545322"
 ---
 # <a name="dictionaryentry"></a>DictionaryEntry
 
-**Dictionaryentry**要素は、単一の dictionary entry プロパティの内容を指定します。 
+**DictionaryEntry 要素** は、単一の辞書エントリ プロパティの内容を指定します。 
   
 ```xml
 <DictionaryEntry>
@@ -43,14 +43,14 @@ ms.locfileid: "44455661"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[DictionaryKey](dictionarykey.md) <br/> |Dictionary プロパティの辞書キーを指定します。  <br/> |
-|[DictionaryValue](dictionaryvalue.md) <br/> |Dictionary プロパティの辞書値を指定します。  <br/> |
+|[DictionaryKey](dictionarykey.md) <br/> |ディクショナリ プロパティの辞書キーを指定します。  <br/> |
+|[DictionaryValue](dictionaryvalue.md) <br/> |ディクショナリ プロパティの辞書値を指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[辞書](dictionary.md) <br/> |ユーザー構成オブジェクトの辞書のプロパティエントリのセットを定義します。  <br/> |
+|[辞書](dictionary.md) <br/> |ユーザー構成オブジェクトの辞書プロパティ エントリのセットを定義します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -65,11 +65,11 @@ ms.locfileid: "44455661"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

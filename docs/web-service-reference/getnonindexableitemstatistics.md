@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: dd16d1fb-d82d-42e5-b64a-bc6c19c48fa8
-description: GetNonIndexableItemStatistics 要素は、インデックス付けされていないアイテムの統計情報を取得するための要求を指定します。
-ms.openlocfilehash: 4b605379f20f5558566f1cfbad9ef1aa33b6fce6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetNonIndexableItemStatistics 要素は、インデックスを作成できないアイテム統計を取得する要求を指定します。
+ms.openlocfilehash: 7e5b7b586a4fd6a293e62bdc9b7229eeb9f9476f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44452791"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546204"
 ---
 # <a name="getnonindexableitemstatistics"></a>GetNonIndexableItemStatistics
 
-**Getnonindexableitemstatistics**要素は、インデックス付けされていないアイテムの統計情報を取得するための要求を指定します。 
+**GetNonIndexableItemStatistics 要素は**、インデックスを作成できないアイテム統計を取得する要求を指定します。 
   
 ```XML
 <GetNonIndexableItemStatistics>
@@ -38,7 +38,7 @@ ms.locfileid: "44452791"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[メールボックス (NonEmptyArrayOfLegacyDNsType)](mailboxes-nonemptyarrayoflegacydnstype.md) <br/> |**メールボックス**要素の配列を指定します。  <br/> |
+|[Mailboxes (NonEmptyArrayOfLegacyDNsType)](mailboxes-nonemptyarrayoflegacydnstype.md) <br/> |Mailbox 要素の配列 **を指定** します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
@@ -55,13 +55,13 @@ ms.locfileid: "44452791"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

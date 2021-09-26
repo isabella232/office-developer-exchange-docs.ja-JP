@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 5ac0ff6d-9e02-4e4c-973d-cd9e076661d5
-description: GetDomainSettingsRequest 要素は、GetDomainSettings operation (SOAP) 操作要求を表します。
-ms.openlocfilehash: 400016d0817131fb70ec7ff3db7fbfdc1b51f8f9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetDomainSettingsRequest 要素は、GetDomainSettings 操作 (SOAP) 操作要求を表します。
+ms.openlocfilehash: 4c222c6832b5be7da598de3390d13123749f8b0f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460961"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544993"
 ---
 # <a name="getdomainsettingsrequest-soap"></a>GetDomainSettingsRequest (SOAP)
 
-**Getdomainsettingsrequest**要素は、 [getdomainsettings operation (SOAP)](getdomainsettings-operation-soap.md)操作要求を表します。 
+**GetDomainSettingsRequest** 要素は [、GetDomainSettings 操作 (SOAP) 操作要求を](getdomainsettings-operation-soap.md)表します。 
   
 ```XML
 <GetDomainSettingsRequest>
@@ -42,7 +42,7 @@ ms.locfileid: "44460961"
 |**Element**|**説明**|
 |:-----|:-----|
 |[Domains (SOAP)](domains-soap.md) <br/> |ドメイン識別子のコレクションを表します。  <br/> |
-|[RequestedSettings (SOAP)](requestedsettings-soap.md) <br/> |要求されたドメイン構成設定の名前が含まれています。  <br/> |
+|[RequestedSettings (SOAP)](requestedsettings-soap.md) <br/> |要求されたドメイン構成設定の名前が含まれる。  <br/> |
 |[RequestedVersion (SOAP)](requestedversion-soap.md) <br/> |プロバイダーが使用するサーバーのバージョンを指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
@@ -59,8 +59,8 @@ ms.locfileid: "44460961"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -1,23 +1,23 @@
 ---
-title: 迎える
+title: Birthdays
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5a84c19e-57cd-448e-af4f-c8005fd5f2a2
-description: 誕生日要素は、誕生日の配列、文字列として格納されたもの、および関連するペルソナのソース attributions の識別子を指定します。
-ms.openlocfilehash: aa85febd84c32ae87e0822ce47fd99f445b6fe9e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Birthdays 要素は、文字列として格納された誕生日の配列と、関連付けられたペルサのソース属性の識別子を指定します。
+ms.openlocfilehash: a1ed3886d9492ba2819a93183c0042b74f1d364c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462760"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543605"
 ---
-# <a name="birthdays"></a>迎える
+# <a name="birthdays"></a>Birthdays
 
-**誕生日**要素は、誕生日の配列、文字列として格納されたもの、および関連するペルソナのソース attributions の識別子を指定します。 
+**Birthdays 要素** は、文字列として格納された誕生日の配列と、関連付けられたペルサのソース属性の識別子を指定します。 
   
 ```XML
 <Birthdays>
@@ -38,13 +38,13 @@ ms.locfileid: "44462760"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[StringAttributedValue](stringattributedvalue.md) <br/> |Persona 要素に関連付けられている属性の配列のインスタンスを指定します。  <br/> |
+|[StringAttributedValue](stringattributedvalue.md) <br/> |ペルサ要素に関連付けられた属性の配列内のインスタンスを指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[ユーザー](persona.md) <br/> |**Getpersona**要求によって返される一連のペルソナデータを指定します。  <br/> |
+|[ユーザー](persona.md) <br/> |**GetPersona** 要求によって返されるペルソナ データのセットを指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -58,12 +58,12 @@ ms.locfileid: "44462760"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

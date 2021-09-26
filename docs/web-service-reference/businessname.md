@@ -1,23 +1,23 @@
 ---
-title: Contact.businessname
+title: BusinessName
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 54fcd4ab-bfab-4b69-9841-d2ac827f4d45
-description: BusinessName 要素は、会社の名前を指定します。
-ms.openlocfilehash: cea37d61b9614084db7cf9532e5e55ec4f438554
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: BusinessName 要素は、ビジネスの名前を指定します。
+ms.openlocfilehash: 71f9942e8dbe872168d0f5001ca2e9f1f468cb64
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527202"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545595"
 ---
-# <a name="businessname"></a>Contact.businessname
+# <a name="businessname"></a>BusinessName
 
-**Businessname**要素は、会社の名前を指定します。 
+**BusinessName 要素** は、ビジネスの名前を指定します。 
   
 ```XML
 <BusinessName></BusinessName>
@@ -44,7 +44,7 @@ ms.locfileid: "44527202"
    
 ## <a name="text-value"></a>テキスト値
 
-**Businessname**要素のテキスト値は、会社の名前です。 
+BusinessName 要素の **テキスト値** は、ビジネスの名前です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -58,12 +58,12 @@ ms.locfileid: "44527202"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

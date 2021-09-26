@@ -4,26 +4,26 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: ab436b54-ceba-4cd9-aeb4-134f9b93986d
-description: DirectoryPort 要素は、ネームサービスプロバイダインターフェイス (NSPI) プロトコルが使用されている場合に、ディレクトリへの接続に使用されるポートを指定します。
-ms.openlocfilehash: 2ba0a15cea0b4eb9b6069fab384edb3d9747a360
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: DirectoryPort 要素は、Name Service Provider Interface (NSPI) プロトコルが使用される場合にディレクトリへの接続に使用されるポートを指定します。
+ms.openlocfilehash: 223e82840628e19896bde196d7467622a2ad5002
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462088"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543332"
 ---
 # <a name="directoryport-pox"></a>DirectoryPort (POX)
 
-**Directoryport**要素は、ネームサービスプロバイダインターフェイス (NSPI) プロトコルが使用されている場合に、ディレクトリへの接続に使用されるポートを指定します。 
+**DirectoryPort 要素** は、Name Service Provider Interface (NSPI) プロトコルが使用される場合にディレクトリへの接続に使用されるポートを指定します。 
   
-- [自動検出 (POX)](autodiscover-pox.md) 
-- [応答 (POX)](response-pox.md)  
-- [アカウント (POX)](account-pox.md)  
-- [プロトコル (POX)](protocol-pox.md)  
+- [AutoDiscover (POX)](autodiscover-pox.md) 
+- [Response (POX)](response-pox.md)  
+- [Account (POX)](account-pox.md)  
+- [Protocol (POX)](protocol-pox.md)  
 - [DirectoryPort (POX)](directoryport-pox.md)
   
 ```xml
@@ -46,17 +46,17 @@ ms.locfileid: "44462088"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[プロトコル (POX)](protocol-pox.md) <br/> |クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターにクライアントを接続するための仕様が含まれています。  <br/> |
+|[Protocol (POX)](protocol-pox.md) <br/> |クライアント アクセス サーバーの役割がインストールされている 2007 年Microsoft Exchange Serverコンピューターにクライアントを接続するための仕様が含まれている。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-Text 値は、Exchange サーバーへのアクセスに使用されるポートを表します。
+テキスト値は、サーバーへのアクセスに使用されるポートExchangeします。
   
 ## <a name="remarks"></a>注釈
 
-**Directoryport**要素は、 [Type (POX)](type-pox.md)要素が EXCH または EXPR と等しい場合にのみ使用されます。 
+**DirectoryPort 要素は**[、Type (POX)](type-pox.md)要素が EXCH または EXPR と等しい場合にのみ使用されます。 
   
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+- [POX 自動検出 XML 要素のExchange](pox-autodiscover-xml-elements-for-exchange.md)
 

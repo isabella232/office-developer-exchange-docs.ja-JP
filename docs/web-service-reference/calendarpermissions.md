@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CalendarPermissions
 api_type:
 - schema
 ms.assetid: 9b659d83-45fb-42a2-b052-5bc4dbe3854d
-description: CalendarPermissions 要素には、フォルダーに対する予定表のアクセス許可の配列が含まれています。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。
-ms.openlocfilehash: f072339212d0fdff3983fbfb6bc8f53c272350c8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: CalendarPermissions 要素には、フォルダーの予定表アクセス許可の配列が含まれる。 この要素は、2007 Microsoft Exchange Server パック 1 (SP1) で導入されました。
+ms.openlocfilehash: 2f7641cbd1193248424bfaae32cb34a765e1675c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529470"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545567"
 ---
 # <a name="calendarpermissions"></a>CalendarPermissions
 
-**Calendarpermissions**要素には、フォルダーに対する予定表のアクセス許可の配列が含まれています。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。 
+**CalendarPermissions 要素** には、フォルダーの予定表アクセス許可の配列が含まれる。 この要素は、2007 Microsoft Exchange Server パック 1 (SP1) で導入されました。 
   
 ```xml
 <CalendarPermissions>
@@ -42,33 +42,33 @@ ms.locfileid: "44529470"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[CalendarPermission](calendarpermission.md) <br/> |代理ユーザーが予定表フォルダーに対して持つアクセス権を定義します。  <br/> |
+|[CalendarPermission](calendarpermission.md) <br/> |代理人ユーザーが予定表フォルダーに対して持つアクセスを定義します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[PermissionSet (CalendarPermissionSetType)](permissionset-calendarpermissionsettype.md) <br/> |予定表フォルダーに対して構成されているアクセス許可がすべて含まれます。 この要素は、Exchange 2007 SP1 で導入されました。  <br/> |
+|[PermissionSet (CalendarPermissionSetType)](permissionset-calendarpermissionsettype.md) <br/> |予定表フォルダーに対して構成済みのすべてのアクセス許可が含まれる。 この要素は、2007 SP1 Exchange導入されました。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 
 
-[フォルダーレベルのアクセス許可を設定する](https://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
+[アクセス許可Folder-Level設定する](https://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
 

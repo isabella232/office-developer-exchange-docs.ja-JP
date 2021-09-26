@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8f271894-01cb-4ee3-ba2f-6464e19518ac
-description: GetConversationItemsResponse 要素は、GetConversationItems 要求に対する応答を定義します。
-ms.openlocfilehash: 8c1663ef757148ecb6ebda059412b4fbdc503d07
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetConversationItemsResponse 要素は、GetConversationItems 要求への応答を定義します。
+ms.openlocfilehash: cd5a4985e10adb2e5c593aebb5cf8c3b49389492
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461087"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546330"
 ---
 # <a name="getconversationitemsresponse"></a>GetConversationItemsResponse
 
-**GetConversationItemsResponse**要素は、 **GetConversationItems**要求に対する応答を定義します。 
+**GetConversationItemsResponse** 要素は **、GetConversationItems** 要求への応答を定義します。 
   
 ```XML
 <GetConversationItemsResponse>
@@ -53,8 +53,8 @@ ms.locfileid: "44461087"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

@@ -1,23 +1,23 @@
 ---
-title: サポートされている apiversion
+title: ApiVersionSupported
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d9264e74-eba7-4279-b193-af7e5130268d
-description: ApiVersionSupported 要素には、クライアントでサポートされている JavaScript API for Office のバージョンが含まれています。
-ms.openlocfilehash: 0129a33624b48d309ad0814af6eaa655b2c4e6f9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ApiVersionSupported 要素には、クライアントがサポートする JavaScript API Officeが含まれている。
+ms.openlocfilehash: 4b3034e05e294564b73d99f706d325d7d75b4f88
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466060"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543716"
 ---
-# <a name="apiversionsupported"></a>サポートされている apiversion
+# <a name="apiversionsupported"></a>ApiVersionSupported
 
-**Apiversionsupported**要素には、クライアントでサポートされている JavaScript API for Office のバージョンが含まれています。 
+**ApiVersionSupported 要素** には、クライアントでサポートされている JavaScript API Officeが含まれている。 
   
 ```XML
 <ApiVersionSupported />
@@ -38,11 +38,11 @@ ms.locfileid: "44466060"
   
 ### <a name="parent-elements"></a>親要素
 
-[Getappmanifests が](getappmanifests.md)
+[GetAppManifests](getappmanifests.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**Apiversionsupported**要素のテキスト値には、クライアントでサポートされている JavaScript API for Office のバージョンが含まれています。 この値は、応答でクライアントに返されるアプリケーションマニフェストを示します。 
+**ApiVersionSupported** 要素のテキスト値には、クライアントでサポートされている JavaScript API Officeが含まれている。 この値は、応答でクライアントに返すアプリ マニフェストを示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -53,12 +53,12 @@ ms.locfileid: "44466060"
 |||
 |:-----|:-----|
 |Namespace  <br/> | https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
 |検証ファイル  <br/> |該当なし  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Getappmanifests が](getappmanifests.md)
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [GetAppManifests](getappmanifests.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

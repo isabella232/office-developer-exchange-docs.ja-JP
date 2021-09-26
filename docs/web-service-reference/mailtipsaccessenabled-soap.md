@@ -1,22 +1,22 @@
 ---
-title: Mailヒント Accessenabled (SOAP)
+title: MailTipsAccessEnabled (SOAP)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 205606b0-8b39-4acf-941a-e544efcedd6c
-description: Mailヒント Accessenabled 要素は、Mailヒント Accessenabled () フラグを表します。 Mailヒント Accessenabled 要素は、内部使用のみを対象としています。 この要素はクライアントによって使用されません。
-ms.openlocfilehash: 72476d72a3b5faef358bba52f6038c065d51ff6f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: MailTipsAccessEnabled 要素は、MailTipsAccessEnabled() フラグを表します。 MailTipsAccessEnabled 要素は内部でのみ使用できます。 この要素は、クライアントでは使用されません。
+ms.openlocfilehash: 5ff4ddc47a242300b20ab526521b0994f7fbb4a4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467796"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544109"
 ---
-# <a name="mailtipsaccessenabled-soap"></a>Mailヒント Accessenabled (SOAP)
+# <a name="mailtipsaccessenabled-soap"></a>MailTipsAccessEnabled (SOAP)
 
-**Mailヒント accessenabled**要素は、 **mailヒント accessenabled ()** フラグを表します。 **Mailヒント Accessenabled**要素は、内部使用のみを対象としています。 この要素はクライアントによって使用されません。 
+**MailTipsAccessEnabled 要素** は **、MailTipsAccessEnabled() フラグを表** します。 **MailTipsAccessEnabled 要素** は内部でのみ使用できます。 この要素は、クライアントでは使用されません。 
   
 ```XML
 <MailTipsAccessEnabled>true | false</ MailTipsAccessEnabled>
@@ -39,7 +39,7 @@ ms.locfileid: "44467796"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[組織のリレーションシップ設定 (SOAP)](organizationrelationshipsettings-soap.md) <br/> |1つの組織の組織上の関係のリストを表します。  <br/> |
+|[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |1 つの組織の組織関係の一覧を表します。  <br/> |
    
 ## <a name="element-information"></a>要素の情報
 
@@ -47,12 +47,12 @@ ms.locfileid: "44467796"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[Get組織の Relationshipsettings 操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)
+[GetOrganizationRelationshipSettings 操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)
 

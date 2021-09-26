@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Delete
 api_type:
 - schema
 ms.assetid: aa45f0c1-a80d-4b6c-8a85-375b6de515f4
 description: Delete 要素は、クライアントがフォルダーまたはアイテムを削除できるかどうかを示します。
-ms.openlocfilehash: 5460f9e49b126ca6b039c6f11aaa3c6eb4a40544
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: e1ecbfbcb11be04e39dc8353140653e6b5ca1c3b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457355"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542492"
 ---
 # <a name="delete"></a>削除
 
-**Delete**要素は、クライアントがフォルダーまたはアイテムを削除できるかどうかを示します。 
+**Delete 要素** は、クライアントがフォルダーまたはアイテムを削除できるかどうかを示します。 
   
 ```XML
 <Delete>true or false</Delete>
@@ -45,12 +45,12 @@ ms.locfileid: "44457355"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[EffectiveRights](effectiverights.md) <br/> |アイテムまたはフォルダーのアクセス許可の設定に基づいて、クライアントの権限が含まれています。  <br/> |
-|[Actions](actions.md) <br/> |条件が満たされたときに、メッセージに対して実行できるアクションのセットを表します。  <br/> |
+|[EffectiveRights](effectiverights.md) <br/> |アイテムまたはフォルダーのアクセス許可設定に基づくクライアントの権限が含まれる。  <br/> |
+|[Actions](actions.md) <br/> |条件が満たされた場合にメッセージに対して実行できる一連のアクションを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値が**true の場合**は、クライアントがアイテムまたはフォルダーを削除できることを示します。 値が**false**の場合は、クライアントがアイテムまたはフォルダーを削除できないことを示します。 
+true のテキスト **値は** 、クライアントがアイテムまたはフォルダーを削除できる状態を示します。 false の **値は** 、クライアントがアイテムまたはフォルダーを削除できないことを示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -61,12 +61,12 @@ ms.locfileid: "44457355"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
-- [フォルダーレベルのアクセス許可を設定する](https://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
+- [アクセス許可Folder-Level設定する](https://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
 

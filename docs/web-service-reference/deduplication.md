@@ -1,23 +1,23 @@
 ---
-title: 防止
+title: Deduplication
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a38acc3d-29a8-4466-81a4-73cb30fe5e80
-description: 重複除去要素は、検索結果が重複する項目を削除する必要があるかどうかを示します。
-ms.openlocfilehash: c39f980658aba7036cfabb3b51af5a41005f97b6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: 重複除去要素は、検索結果が重複するアイテムを削除するかどうかを示します。
+ms.openlocfilehash: 6178502d102b8c24b39d7276352c31740c62352c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463714"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543409"
 ---
-# <a name="deduplication"></a>防止
+# <a name="deduplication"></a>Deduplication
 
-重複**除去**要素は、検索結果が重複する項目を削除する必要があるかどうかを示します。 
+**重複除去要素は**、検索結果が重複するアイテムを削除するかどうかを示します。 
   
 ```XML
 <Deduplication> true | false </Deduplication>
@@ -39,11 +39,11 @@ ms.locfileid: "44463714"
   
 ### <a name="parent-elements"></a>親要素
 
-[Searchmailboxes ボックス](searchmailboxes.md)  | [SetHoldOnMailboxes](setholdonmailboxes.md)
+[SearchMailboxes](searchmailboxes.md)  | [SetHoldOnMailboxes](setholdonmailboxes.md)
   
 ## <a name="text-value"></a>テキスト値
 
-重複除去要素のテキスト値が**true**である場合、検索結果に重複するアイテムが含まれていない可能性があることを示します。 値が**false**の場合、検索結果に重複するアイテムが含まれている可能性があることを示します。 
+Deduplication 要素の **テキスト値が true** の場合、検索結果に重複するアイテムが含まれている可能性があります。 false の値 **は** 、検索結果に重複するアイテムが含まれている可能性を示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -56,8 +56,8 @@ ms.locfileid: "44463714"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

@@ -1,23 +1,23 @@
 ---
-title: 値 (ArrayOfStringValueType)
+title: Value (ArrayOfStringValueType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 83865da6-0bcd-445a-ba3c-0eff481b14ab
-description: Value 要素は、attributions 配列に関連付けられているペルソナプロパティの配列の値を指定します。
-ms.openlocfilehash: ceca9290ea93a505709d6046d1b6ab8e2c32f4ea
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Value 要素は、属性配列に関連付けられたペルシャ プロパティの配列内の値を指定します。
+ms.openlocfilehash: 2a2631debfe3e6000fc6855e8d8859740bad4bcc
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467621"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541680"
 ---
-# <a name="value-arrayofstringvaluetype"></a>値 (ArrayOfStringValueType)
+# <a name="value-arrayofstringvaluetype"></a>Value (ArrayOfStringValueType)
 
-**Value**要素は、attributions 配列に関連付けられているペルソナプロパティの配列の値を指定します。 
+**Value 要素** は、属性配列に関連付けられたペルシャ プロパティの配列内の値を指定します。 
   
 ```XML
 <Value></Value>
@@ -43,7 +43,7 @@ ms.locfileid: "44467621"
   
 ## <a name="text-value"></a>テキスト値
 
-**Value**要素のテキスト値は、attributions 配列に関連付けられたペルソナプロパティの配列内の値です。 
+Value 要素のテキスト **値** は、属性配列に関連付けられたペルシャ プロパティの配列の値です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -56,8 +56,8 @@ ms.locfileid: "44467621"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

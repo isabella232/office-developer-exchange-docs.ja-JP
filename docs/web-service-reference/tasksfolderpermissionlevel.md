@@ -1,27 +1,27 @@
 ---
-title: タスク Folderpermissionlevel
+title: TasksFolderPermissionLevel
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - TasksFolderPermissionLevel
 api_type:
 - schema
 ms.assetid: 0f70b79b-3443-4048-b410-692d4e2464fc
-description: Tasks Folderpermissionlevel 要素には、既定のタスクフォルダーのアクセス許可が含まれています。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。
-ms.openlocfilehash: 6e3988698575f0c1f935922d1642829a1f1addf9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: TasksFolderPermissionLevel 要素には、既定の Tasks フォルダーのアクセス許可が含まれています。 この要素は、2007 Microsoft Exchange Server パック 1 (SP1) で導入されました。
+ms.openlocfilehash: 991b13f9a9f95805b13312712b1f6c5941033c46
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465332"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543871"
 ---
-# <a name="tasksfolderpermissionlevel"></a>タスク Folderpermissionlevel
+# <a name="tasksfolderpermissionlevel"></a>TasksFolderPermissionLevel
 
-Tasks **Folderpermissionlevel**要素には、既定のタスクフォルダーのアクセス許可が含まれています。 この要素は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。 
+**TasksFolderPermissionLevel** 要素には、既定の Tasks フォルダーのアクセス許可が含まれています。 この要素は、2007 Microsoft Exchange Server パック 1 (SP1) で導入されました。 
   
 ```xml
 <TasksFolderPermissionLevel>
@@ -47,39 +47,39 @@ Tasks **Folderpermissionlevel**要素には、既定のタスクフォルダー�
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[DelegatePermissions](delegatepermissions.md) <br/> |ユーザーの代理アクセス許可レベルの設定が含まれています。 この要素は、Exchange 2007 SP1 で導入されました。  <br/> |
+|[DelegatePermissions](delegatepermissions.md) <br/> |ユーザーの代理人アクセス許可レベルの設定が含まれる。 この要素は、2007 SP1 Exchange導入されました。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-次の表に、アクセス許可レベルを表すテキスト値の一覧を示します。
+次の表に、アクセス許可レベルを表すテキスト値を示します。
   
 **アクセス許可レベルのテキスト値**
 
 |**アクセス許可レベル**|**説明**|
 |:-----|:-----|
-|なし  <br/> |代理ユーザーには、タスクフォルダーへのアクセス許可はありません。  <br/> |
-|レビュー担当者  <br/> |代理人のユーザーは、[タスク] フォルダー内のアイテムを読み取ることができます。  <br/> |
-|設定元  <br/> |代理人のユーザーは、タスクフォルダー内のアイテムの読み取りと作成を行うことができます。  <br/> |
-|エディター  <br/> |代理人のユーザーは、タスクフォルダー内のアイテムの読み取り、作成、および変更を行うことができます。  <br/> |
-|Custom  <br/> |代理人ユーザーには、タスクフォルダーへのユーザー設定のアクセス許可があります。  <br/> |
+|なし  <br/> |代理人ユーザーには、タスク フォルダーへのアクセス許可はありません。  <br/> |
+|レビュー担当者  <br/> |代理人ユーザーは、タスク フォルダー内のアイテムを読み取りできます。  <br/> |
+|Author  <br/> |代理人ユーザーは、タスク フォルダー内のアイテムの読み取りおよび作成を行うことができます。  <br/> |
+|エディター  <br/> |代理人ユーザーは、タスク フォルダー内のアイテムの読み取り、作成、および変更を行うことができます。  <br/> |
+|Custom  <br/> |代理人ユーザーは、タスク フォルダーへのカスタム アクセス許可を持ちます。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [AddDelegate 操作](adddelegate-operation.md)
 - [UpdateDelegate 操作](updatedelegate-operation.md)
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 - [代理人の追加](https://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
 

@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DeleteFolder
 api_type:
 - schema
 ms.assetid: b0f92682-4895-4bcf-a4a1-e4c2e8403979
-description: DeleteFolder 操作は、メールボックスからフォルダーを削除します。
-ms.openlocfilehash: e9bb9199027c2af2cbbb664ef7ad4fa70b7ef718
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: DeleteFolder 操作では、メールボックスからフォルダーが削除されます。
+ms.openlocfilehash: fdd8519adbf9e0112f5fdd6a411dd6e7710f7d37
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455745"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545434"
 ---
 # <a name="deletefolder-operation"></a>DeleteFolder 操作
 
-**Deletefolder**操作は、メールボックスからフォルダーを削除します。 
+**DeleteFolder 操作では**、メールボックスからフォルダーが削除されます。 
   
 ## <a name="deletefolder-request-example"></a>DeleteFolder 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の**deletefolder**要求の例は、フォルダーを削除する要求を形成する方法を示しています。 
+**DeleteFolder** 要求の次の例は、フォルダーを削除する要求を形成する方法を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -52,9 +52,9 @@ ms.locfileid: "44455745"
 この例では、フォルダーに対してハード削除を実行します。
   
 > [!NOTE]
-> フォルダー ID は読みやすくするために短縮されています。 
+> フォルダー ID は、読みやすさを維持するために短縮されました。 
   
-### <a name="request-elements"></a>Request 要素
+### <a name="request-elements"></a>要求要素
 
 要求では、次の要素が使用されます。
   
@@ -65,15 +65,15 @@ ms.locfileid: "44455745"
 - [FolderId](folderid.md)
     
 > [!NOTE]
-> この要素を記述するスキーマは、Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。 
+> この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2010 を実行しているコンピューターの EWS 仮想ディレクトリにあります。 
   
-**Deletefolder**操作の要求メッセージに関するその他のオプションについては、スキーマ階層を参照してください。 [Deletefolder](deletefolder.md)要素から開始します。 
+**DeleteFolder** 操作の要求メッセージの他のオプションを見つけるには、スキーマ階層を確認します。 [DeleteFolder 要素から開始](deletefolder.md)します。 
   
-## <a name="successful-deletefolder-response"></a>正常な DeleteFolder 応答
+## <a name="successful-deletefolder-response"></a>DeleteFolder 応答の成功
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **Deletefolder**要求に対する正常な応答を示しています。 
+次の例は **、DeleteFolder** 要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -100,7 +100,7 @@ ms.locfileid: "44455745"
 </soap:Envelope>
 ```
 
-### <a name="response-elements"></a>Response 要素
+### <a name="response-elements"></a>応答要素
 
 応答では、次の要素が使用されます。
   
@@ -114,13 +114,13 @@ ms.locfileid: "44455745"
     
 - [ResponseCode](responsecode.md)
     
-**Deletefolder**操作の応答メッセージに関するその他のオプションについては、スキーマ階層を参照してください。 [Deletefolderresponse](deletefolderresponse.md)要素から開始します。 
+**DeleteFolder** 操作の応答メッセージの他のオプションを見つけるには、スキーマ階層を確認します。 [DeleteFolderResponse 要素から開始](deletefolderresponse.md)します。 
   
 ## <a name="deletefolder-error-response"></a>DeleteFolder エラー応答
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **Deletefolder**要求に対するエラー応答を示しています。 このエラーは、メールボックスに存在しないフォルダーを削除する要求が原因で発生しました。 
+次の例は、DeleteFolder 要求に対する **エラー応答を示** しています。 このエラーは、メールボックスに存在しないフォルダーを削除する要求によって発生しました。 
   
 ### <a name="code"></a>コード
 
@@ -151,7 +151,7 @@ ms.locfileid: "44455745"
 
 ### <a name="comments"></a>コメント
 
-**Deletefolder**操作は、識別フォルダーでは使用できません。 
+**DeleteFolder 操作** は、識別フォルダーでは使用できません。 
   
 ### <a name="error-response-elements"></a>エラー応答要素
 
@@ -171,10 +171,10 @@ ms.locfileid: "44455745"
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-**Deletefolder**操作のエラー応答メッセージに関するその他のオプションについては、スキーマ階層を参照してください。 [Deletefolderresponse](deletefolderresponse.md)要素から開始します。 
+**DeleteFolder** 操作のエラー応答メッセージの他のオプションを見つけるには、スキーマ階層を確認します。 [DeleteFolderResponse 要素から開始](deletefolderresponse.md)します。 
   
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 - [フォルダーの削除](https://msdn.microsoft.com/library/1958add5-5071-4239-adb2-40f7a7d74aee%28Office.15%29.aspx)
 

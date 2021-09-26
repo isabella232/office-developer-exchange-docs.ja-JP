@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UpdateUserConfiguration
 api_type:
 - schema
 ms.assetid: eda73b62-6a3a-43ae-8fd9-f30892811f27
-description: UpdateUserConfiguration 操作は、フォルダーのユーザー構成オブジェクトを更新します。
-ms.openlocfilehash: 95fe6518fa30104463ec7f0aec8f786183eb513b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: UpdateUserConfiguration 操作は、フォルダー上のユーザー構成オブジェクトを更新します。
+ms.openlocfilehash: 18caad56d3add618c4f426af824e61ce54c15bc7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468545"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541701"
 ---
 # <a name="updateuserconfiguration-operation"></a>UpdateUserConfiguration 操作
 
-**Updateuserconfiguration**操作は、フォルダーのユーザー構成オブジェクトを更新します。 
+**UpdateUserConfiguration 操作は**、フォルダー上のユーザー構成オブジェクトを更新します。 
   
 ## <a name="updateuserconfiguration-request-example"></a>UpdateUserConfiguration 要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の**Updateuserconfiguration**要求の例は、下書きフォルダーのユーザー構成オブジェクトを更新する要求を形成する方法を示しています。 
+**UpdateUserConfiguration** 要求の次の例は、下書きフォルダーでユーザー構成オブジェクトを更新する要求を形成する方法を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -67,9 +67,9 @@ ms.locfileid: "44468545"
 
 ## <a name="updateuserconfiguration-response-example"></a>UpdateUserConfiguration 応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、 **Updateuserconfiguration**要求に対する正常な応答を示しています。 
+次の例は **、UpdateUserConfiguration** 要求に対する正常な応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -105,7 +105,7 @@ ms.locfileid: "44468545"
 
 
 
-[Exchange での EWS 操作](ews-operations-in-exchange.md)
+[EWS 操作 (Exchange](ews-operations-in-exchange.md)
   
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -1,23 +1,23 @@
 ---
-title: 住所 (ArrayOfAddressEntitiesType)
+title: Addresses (ArrayOfAddressEntitiesType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0c1f3fd3-1b78-46ee-8dd4-b2aff51e767e
-description: Addresses 要素は、AddressEntity 要素の配列を指定します。
-ms.openlocfilehash: 48cf8c0fda6a8ef894ef8d3a4c154f7255b218bf
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Address 要素は、AddressEntity 要素の配列を指定します。
+ms.openlocfilehash: 83463f5137db2007c9cffea37a7323dadb146904
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463630"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541547"
 ---
-# <a name="addresses-arrayofaddressentitiestype"></a>住所 (ArrayOfAddressEntitiesType)
+# <a name="addresses-arrayofaddressentitiestype"></a>Addresses (ArrayOfAddressEntitiesType)
 
-**Addresses**要素は、 **addressentity**要素の配列を指定します。 
+**Address 要素は****、AddressEntity 要素の配列を指定** します。 
   
 ```XML
 <Addresses>
@@ -38,13 +38,13 @@ ms.locfileid: "44463630"
 
 |**Element**|**説明**|
 |:-----|:-----|
-|[AddressEntity](addressentity.md) <br/> |単一のアドレスエンティティを指定します。  <br/> |
+|[AddressEntity](addressentity.md) <br/> |1 つのアドレス エンティティを指定します。  <br/> |
    
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[EntityExtractionResult](entityextractionresult.md) <br/> |アイテムの**Entityextractionresult**プロパティを指定します。  <br/> |
+|[EntityExtractionResult](entityextractionresult.md) <br/> |アイテムの **EntityExtractionResult** プロパティを指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -58,10 +58,10 @@ ms.locfileid: "44463630"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |スキーマ名  <br/> |型スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|検証ファイル  <br/> |types.xsd  <br/> |
+|空にできる  <br/> ||
    
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

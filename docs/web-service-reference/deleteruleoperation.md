@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DeleteRuleOperation
 api_type:
 - schema
 ms.assetid: c5e251af-f795-43cc-baaf-95d84475677c
-description: DeleteRuleOperation 要素には、既存の受信トレイルールを削除する操作が含まれています。
-ms.openlocfilehash: 6b17f7f99f1fd9b9889db00fdf55fba5eef5aba8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: DeleteRuleOperation 要素には、既存の受信トレイ ルールを削除する操作が含まれている。
+ms.openlocfilehash: 089b888f57b5d8048db0dfb0193d7f4c0804e81e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526922"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542443"
 ---
 # <a name="deleteruleoperation"></a>DeleteRuleOperation
 
-**DeleteRuleOperation**要素には、既存の受信トレイルールを削除する操作が含まれています。 
+**DeleteRuleOperation 要素** には、既存の受信トレイ ルールを削除する操作が含まれている。 
   
 - [UpdateInboxRules](updateinboxrules.md)
 - [Operations](operations.md)
@@ -51,7 +51,7 @@ ms.locfileid: "44526922"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Operations](operations.md) <br/> |受信トレイに対して実行できるルール操作の配列が含まれています。  <br/> |
+|[Operations](operations.md) <br/> |受信トレイで実行できるルール操作の配列を格納します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -66,14 +66,14 @@ ms.locfileid: "44526922"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [UpdateInboxRules](updateinboxrules.md) 
 - [SetRuleOperation](setruleoperation.md) 
 - [CreateRuleOperation](createruleoperation.md)
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

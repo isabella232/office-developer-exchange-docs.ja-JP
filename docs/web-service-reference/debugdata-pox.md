@@ -4,23 +4,23 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: bf614551-f5b0-4f80-bdac-628f685faee9
-description: DebugData 要素には、自動検出エラー応答のデバッグデータが含まれています。
-ms.openlocfilehash: 79b5f4d3fa1379b7052dcd03053bc8bac6430017
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: DebugData 要素には、自動検出エラー応答のデバッグ データが含まれる。
+ms.openlocfilehash: ff339e6e92eb8dd9d3d0c1b96c0e4f733a383dc3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526950"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543416"
 ---
 # <a name="debugdata-pox"></a>DebugData (POX)
 
-**Debugdata**要素には、自動検出エラー応答のデバッグデータが含まれています。 
+**DebugData 要素** には、自動検出エラー応答のデバッグ データが含まれる。 
   
-- [エラー (POX)](error-pox.md) 
+- [Error (POX)](error-pox.md) 
 - [DebugData (POX)](debugdata-pox.md)
   
 ```xml
@@ -43,13 +43,13 @@ ms.locfileid: "44526950"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[エラー (POX)](error-pox.md) <br/> |自動検出エラー応答を格納します。  <br/> |
+|[Error (POX)](error-pox.md) <br/> |自動検出エラー応答が含まれる。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-Text 値は、自動検出エラー応答のデバッグデータを表します。
+テキスト値は、自動検出エラー応答のデバッグ データを表します。
   
 ## <a name="see-also"></a>関連項目
 
-- [Exchange の POX 自動検出 XML 要素](pox-autodiscover-xml-elements-for-exchange.md)
+- [POX 自動検出 XML 要素のExchange](pox-autodiscover-xml-elements-for-exchange.md)
 

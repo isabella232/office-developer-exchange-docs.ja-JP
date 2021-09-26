@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c96c2b4c-45cb-482a-a3bb-7a11a0fff43b
 description: GetClientExtension 要素は、クライアント拡張機能を取得する要求を表します。
-ms.openlocfilehash: caa069195a3b82af4e5b5984dcb6e4124b11899b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: b54484dd2d21c351d757621199622ac0f9433cdb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526341"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545007"
 ---
 # <a name="getclientextension"></a>GetClientExtension
 
-**Getclientextension**要素は、クライアント拡張機能を取得する要求を表します。 
+**GetClientExtension 要素** は、クライアント拡張機能を取得する要求を表します。 
   
 ```XML
 <GetClientExtension>
@@ -38,7 +38,7 @@ ms.locfileid: "44526341"
   
 ### <a name="child-elements"></a>子要素
 
-[RequestedExtensionIds](requestedextensionids.md)  | [Userparameters](userparameters.md)  | [Isdebug](isdebug.md)
+[RequestedExtensionIds](requestedextensionids.md)  | [UserParameters](userparameters.md)  | [IsDebug](isdebug.md)
   
 ### <a name="parent-elements"></a>親要素
 
@@ -55,8 +55,8 @@ ms.locfileid: "44526341"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

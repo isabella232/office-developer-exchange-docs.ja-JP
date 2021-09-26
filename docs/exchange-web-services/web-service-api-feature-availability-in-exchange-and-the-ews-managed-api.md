@@ -3,15 +3,15 @@ title: Exchange および EWS マネージ API の Web サービス API 機能�
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 07d3e6e8-d549-4ad7-baa4-bc531dfb7dd2
 description: EWS および Web サービス API のどの機能が Exchange および EWS マネージ API の各バージョンで使用できるかについて説明します。
-ms.openlocfilehash: f15cf4784a59c18d1bb9ae20af378baed084acc3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 6fc0c40410be543b149885c7b0785a2c6c8828af
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529848"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544473"
 ---
 # <a name="web-service-api-feature-availability-in-exchange-and-the-ews-managed-api"></a>Exchange および EWS マネージ API の Web サービス API 機能の可用性
 

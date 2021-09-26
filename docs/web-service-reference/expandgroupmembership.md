@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8989e96b-8fa1-4858-93b2-2cbdb30b9ca9
-description: ExpandGroupMembership 要素は、Getsearchablemailemailrequest 要求から返されるグループのメンバーシップを拡張するかどうかを示します。
-ms.openlocfilehash: 8a94aa3da165ecc13282127e75c8d166f3972ead
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ExpandGroupMembership 要素は、GetSearchableMailboxes 要求から返されるグループのメンバーシップを拡張するかどうかを示します。
+ms.openlocfilehash: fb835f8f1fa9fb957c6b3bf3ddef80e68d9c049f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456907"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541400"
 ---
 # <a name="expandgroupmembership"></a>ExpandGroupMembership
 
-**Expandgroupmembership**要素は、 **Getsearchablemailemailrequest**要求から返されるグループのメンバーシップを拡張するかどうかを示します。 
+**ExpandGroupMembership** 要素は **、GetSearchableMailboxes** 要求から返されるグループのメンバーシップを拡張するかどうかを示します。 
   
 ```XML
 <ExpandGroupMembership>true | false</ExpandGroupMembership>
@@ -38,11 +38,11 @@ ms.locfileid: "44456907"
   
 ### <a name="parent-elements"></a>親要素
 
-[Getdiscoverysearchconfiguration](getdiscoverysearchconfiguration.md)  | [Getsearchablemailemailボックス](getsearchablemailboxes.md)
+[GetDiscoverySearchConfiguration](getdiscoverysearchconfiguration.md)  | [GetSearchableMailboxes](getsearchablemailboxes.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**Expandgroupelement**要素のテキスト値が**true**である場合、グループメンバーシップが展開されていることを示します。 値が**false**の場合は、グループのメンバーシップが展開されていないことを示します。グループのメンバーが表示されます。 
+**ExpandGroupElement 要素のテキスト値が** **true** の場合、グループ メンバーシップが展開されます。 false の **値は** 、グループのメンバーを表示するためにグループ メンバーシップが展開されていない状態を示します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44456907"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> |false  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |messages.xsd  <br/> |
+|空の場合  <br/> |false  <br/> |
    
 

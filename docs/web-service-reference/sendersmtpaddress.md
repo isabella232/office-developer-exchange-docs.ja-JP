@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SenderSmtpAddress
 api_type:
 - schema
 ms.assetid: e39c7df7-4bfa-455f-b4bb-1f1d05398eec
-description: SenderSmtpAddress 要素は、共有されるフォルダーが含まれているメールボックスに対応する SMTP 電子メールアドレスを表します。
-ms.openlocfilehash: 73047dcecfbccb55d74e373891c3154bc7baeeba
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: SenderSmtpAddress 要素は、共有するフォルダーを含むメールボックスに対応する SMTP 電子メール アドレスを表します。
+ms.openlocfilehash: 09a0c577850581c7c67c6fff241a5d848421ed71
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464897"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546092"
 ---
 # <a name="sendersmtpaddress"></a>SenderSmtpAddress
 
-**SenderSmtpAddress**要素は、共有されるフォルダーが含まれているメールボックスに対応する SMTP 電子メールアドレスを表します。 
+**SenderSmtpAddress** 要素は、共有するフォルダーを含むメールボックスに対応する SMTP 電子メール アドレスを表します。 
   
 ```xml
 <SenderSmtpAddress/>
@@ -44,7 +44,7 @@ ms.locfileid: "44464897"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[GetSharingMetadata](getsharingmetadata.md) <br/> |共有への招待を識別する非透過の認証トークンを取得する要求を定義します。  <br/> |
+|[GetSharingMetadata](getsharingmetadata.md) <br/> |共有の招待を識別する不透明な認証トークンを取得する要求を定義します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -52,16 +52,16 @@ SMTP アドレスを表すテキスト値が必要です。
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server を実行しているコンピューターの Exchange Web サービスをホストする IIS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -70,5 +70,5 @@ SMTP アドレスを表すテキスト値が必要です。
 [GetSharingMetadata 操作](getsharingmetadata-operation.md)
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - StopProcessingRules
 api_type:
 - schema
 ms.assetid: 5b89a2cb-ab26-444d-b3dd-2b3858872d63
-description: StopProcessingRules 要素は、後続のルールを評価する必要があるかどうかを示します。
-ms.openlocfilehash: 9f068fd6290a39bbab6e3c1e29066c4fefefc64b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: StopProcessingRules 要素は、後続のルールを評価するかどうかを示します。
+ms.openlocfilehash: 21eaed44f6a599583e67d770cd783a479e612f87
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467901"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545847"
 ---
 # <a name="stopprocessingrules"></a>StopProcessingRules
 
-**StopProcessingRules**要素は、後続のルールを評価する必要があるかどうかを示します。 
+**StopProcessingRules 要素** は、後続のルールを評価するかどうかを示します。 
   
 ```XML
 <StopProcessingRules>true | false</StopProcessingRules>
@@ -44,11 +44,11 @@ ms.locfileid: "44467901"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Actions](actions.md) <br/> |条件が満たされたときに、メッセージに対して実行できるアクションのセットを表します。  <br/> |
+|[Actions](actions.md) <br/> |条件が満たされた場合にメッセージに対して実行できる一連のアクションを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-テキスト値が**true の場合**、後続のルールは処理されないことを示します。 値が**false**の場合、後続のルールは引き続き評価される必要があることを示します。 
+テキスト値が **true の場合** は、後続のルールを処理しない必要があります。 false の値 **は** 、後続のルールを引き続き評価する必要があります。 
   
 ## <a name="remarks"></a>注釈
 
@@ -59,13 +59,13 @@ ms.locfileid: "44467901"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - BillingInformation
 api_type:
 - schema
 ms.assetid: 35aec4d1-5264-4b25-8b8f-cdee886da109
-description: 国の情報要素は、タスクの請求情報を保持します。
-ms.openlocfilehash: 6a3cd1ef402a67e896c2ed3afcca6c7c126d3e1b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: BillingInformation 要素は、タスクの請求情報を保持します。
+ms.openlocfilehash: dc83170900753d1e52d06d55ca8931ea1b283bc5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462767"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545686"
 ---
 # <a name="billinginformation"></a>BillingInformation
 
-**国の情報**要素は、タスクの請求情報を保持します。 
+**BillingInformation 要素は**、タスクの請求情報を保持します。 
   
 ```xml
 <BillingInformation/>
@@ -44,28 +44,28 @@ ms.locfileid: "44462767"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[タスク](task.md) <br/> |Exchange ストア内のタスクを表します。  <br/> |
+|[タスク](task.md) <br/> |ストア内のタスクをExchangeします。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-Text 値は、タスク関連の請求情報を表します。
+テキスト値は、タスク関連の請求情報を表します。
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

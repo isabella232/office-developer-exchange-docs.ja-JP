@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Birthday
 api_type:
 - schema
 ms.assetid: b7529004-46e2-4ac9-b4e4-c8bb6878a7d5
-description: 誕生日要素は、連絡先の生年月日を表します。
-ms.openlocfilehash: a33f86556d35afa014447b82c353179b1197ddac
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Birthday 要素は、連絡先の生年月日を表します。
+ms.openlocfilehash: 8bb9bc37164b95b62f2923b7f661e6c9e33a5900
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458818"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545630"
 ---
 # <a name="birthday"></a>Birthday
 
-**誕生日**要素は、連絡先の生年月日を表します。 
+**Birthday 要素** は、連絡先の生年月日を表します。 
   
 ```xml
 <Birthday/>
@@ -44,7 +44,7 @@ ms.locfileid: "44458818"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Contact](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
+|[Contact](contact.md) <br/> |連絡先アイテムExchangeを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -52,20 +52,20 @@ ms.locfileid: "44458818"
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

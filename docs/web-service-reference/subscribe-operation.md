@@ -1,33 +1,33 @@
 ---
-title: サブスクライブ操作
+title: Subscribe 操作
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Subscribe
 api_type:
 - schema
 ms.assetid: f17c3d08-c79e-41f1-ba31-6e41e7aafd87
-description: サブスクライブ操作は、クライアントアプリケーションに対して、プッシュまたはプル通知のどちらかをサブスクライブするために使用されます。 要求メッセージと応答の構造は、イベント通知の種類によって異なることに注意することが重要です。
-ms.openlocfilehash: c40e0e434f698c6535ff5d03fd4d45a453959dd6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: サブスクライブ操作は、プッシュ通知またはプル通知にクライアント アプリケーションをサブスクライブするために使用されます。 要求メッセージと応答の構造は、イベント通知の種類によって異なっている点に注意することが重要です。
+ms.openlocfilehash: 546f7ab252c7d3a201130cd48e2b30ca52d00088
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467047"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544536"
 ---
-# <a name="subscribe-operation"></a>サブスクライブ操作
+# <a name="subscribe-operation"></a>Subscribe 操作
 
-サブスクライブ操作は、クライアントアプリケーションに対して、プッシュまたはプル通知のどちらかをサブスクライブするために使用されます。 要求メッセージと応答の構造は、イベント通知の種類によって異なることに注意することが重要です。 
+サブスクライブ操作は、プッシュ通知またはプル通知にクライアント アプリケーションをサブスクライブするために使用されます。 要求メッセージと応答の構造は、イベント通知の種類によって異なっている点に注意することが重要です。 
   
-## <a name="pull-subscription-subscribe-request-example"></a>プルサブスクリプションのサブスクライブ要求の例
+## <a name="pull-subscription-subscribe-request-example"></a>プル サブスクリプション 購読要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次のコード例は、プルイベント通知サブスクリプションをサブスクライブする方法を示しています。 新しいメールが受信トレイに追加された場合、および受信トレイからアイテムが削除された場合、サブスクリプションはクライアントアプリケーションに通知します。 クライアントが10分以内にイベントに関する情報を要求しない場合、サブスクリプションはタイムアウトになります。 サブスクリプションの有効期限が切れた場合は、通知を引き続き要求するために、新しいサブスクリプションを確立する必要があります。
+次のコード例は、プル イベント通知サブスクリプションをサブスクライブする方法を示しています。 サブスクリプションは、新しいメールが受信トレイに追加され、アイテムが受信トレイから削除された場合にクライアント アプリケーションに通知します。 クライアントが 10 分以内にイベントに関する情報を要求しない場合、サブスクリプションはタイム アウトします。 サブスクリプションの有効期限が切れた場合、通知の要求を続行するには、新しいサブスクリプションを確立する必要があります。
   
 ### <a name="code"></a>コード
 
@@ -52,11 +52,11 @@ ms.locfileid: "44467047"
 </soap:Envelope>
 ```
 
-### <a name="pull-subscription-subscribe-request-elements"></a>プルサブスクリプションサブスクライブ要求要素
+### <a name="pull-subscription-subscribe-request-elements"></a>プル サブスクリプション 購読要求要素
 
 要求では、次の要素が使用されます。
   
-- [登録](subscribe.md)
+- [Subscribe](subscribe.md)
     
 - [PullSubscriptionRequest](pullsubscriptionrequest.md)
     
@@ -70,13 +70,13 @@ ms.locfileid: "44467047"
     
 - [Timeout](timeout.md)
     
-Subscribe 操作の要求メッセージに関するその他のオプションについては、スキーマ階層を参照してください。 [PullSubscriptionRequest](pullsubscriptionrequest.md)要素から開始します。 
+Subscribe 操作の要求メッセージの他のオプションを見つけるには、スキーマ階層を確認します。 [PullSubscriptionRequest 要素から開始](pullsubscriptionrequest.md)します。 
   
-## <a name="successful-pull-subscription-subscribe-response-example"></a>成功したプルサブスクリプションサブスクライブ応答の例
+## <a name="successful-pull-subscription-subscribe-response-example"></a>成功したプル サブスクリプション 購読応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、成功したプルサブスクリプション応答を示しています。 応答には、サブスクリプションに関連付けられているイベントの配列を取得するために使用されるサブスクリプション識別子とウォーターマークが含まれています。 サブスクリプション識別子は、サブスクリプションからクライアントの登録を解除するためにも使用されます。
+次の例は、プル サブスクリプション応答の成功を示しています。 応答には、サブスクリプションに関連付けられているイベントの配列を取得するために使用されるサブスクリプション識別子と透かしが含まれます。 サブスクリプション識別子は、サブスクリプションからクライアントをサブスクライブ解除するためにも使用されます。
   
 ### <a name="code"></a>コード
 
@@ -105,7 +105,7 @@ Subscribe 操作の要求メッセージに関するその他のオプション�
 </soap:Envelope>
 ```
 
-### <a name="pull-subscription-subscribe-response-elements"></a>プルサブスクリプションのサブスクライブ応答要素
+### <a name="pull-subscription-subscribe-response-elements"></a>プル サブスクリプション 購読応答要素
 
 応答では、次の要素が使用されます。
   
@@ -115,7 +115,7 @@ Subscribe 操作の要求メッセージに関するその他のオプション�
     
 - [ResponseMessages](responsemessages.md)
     
-- [メッセージの表示](subscriberesponsemessage.md)
+- [SubscribeResponseMessage](subscriberesponsemessage.md)
     
 - [ResponseCode](responsecode.md)
     
@@ -123,11 +123,11 @@ Subscribe 操作の要求メッセージに関するその他のオプション�
     
 - [Watermark](watermark.md)
     
-## <a name="pull-subscription-subscribe-error-response-example"></a>プルサブスクリプションサブスクライブエラー応答の例
+## <a name="pull-subscription-subscribe-error-response-example"></a>プル サブスクリプション のサブスクライブ エラー応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、Subscribe 要求に対するエラー応答を示しています。 このエラーは、代理人アクセスを使用して通知をサブスクライブしようとした場合に発生します。
+次の例は、Subscribe 要求に対するエラー応答を示しています。 このエラーは、代理人アクセスを使用して通知をサブスクライブしようとして発生します。
   
 ### <a name="code"></a>コード
 
@@ -156,7 +156,7 @@ Subscribe 操作の要求メッセージに関するその他のオプション�
 </soap:Envelope>
 ```
 
-### <a name="pull-subscription-error-response-elements"></a>プルサブスクリプションエラー応答要素
+### <a name="pull-subscription-error-response-elements"></a>プル サブスクリプション エラー応答要素
 
 エラー応答では、次の要素が使用されます。
   
@@ -166,7 +166,7 @@ Subscribe 操作の要求メッセージに関するその他のオプション�
     
 - [ResponseMessages](responsemessages.md)
     
-- [メッセージの表示](subscriberesponsemessage.md)
+- [SubscribeResponseMessage](subscriberesponsemessage.md)
     
 - [MessageText](messagetext.md)
     
@@ -174,11 +174,11 @@ Subscribe 操作の要求メッセージに関するその他のオプション�
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-## <a name="push-subscription-request-example"></a>プッシュサブスクリプション要求の例
+## <a name="push-subscription-request-example"></a>プッシュ サブスクリプション要求の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次のコード例は、プッシュイベント通知サブスクリプションをサブスクライブする方法を示しています。 要求は、監視するフォルダー、監視するイベントの種類、状態通知の頻度、およびプッシュ通知を待機するクライアント Web サービスの URL を識別します。
+次のコード例は、プッシュ イベント通知サブスクリプションをサブスクライブする方法を示しています。 要求は、監視するフォルダー、監視するイベントの種類、状態通知の頻度、プッシュ通知をリッスンするクライアント Web サービスの URL を識別します。
   
 ### <a name="code"></a>コード
 
@@ -211,15 +211,15 @@ Subscribe 操作の要求メッセージに関するその他のオプション�
 
 ### <a name="comments"></a>コメント
 
-プッシュ通知サブスクライブ要求が送信される前に、クライアント Web サービスがセットアップされている必要があります。それ以外の場合、最初の通知は有効なエンドポイントに送信されず、プッシュ通知は失敗します。 詳細については、「[プッシュ通知のサンプルアプリケーション](https://msdn.microsoft.com/library/db1f8523-fa44-483f-bdb6-ab5939b52eee%28Office.15%29.aspx)」を参照してください。
+プッシュ通知サブスクライブ要求が送信される前に、クライアント Web サービスをセットアップする必要があります。それ以外の場合、最初の通知は有効なエンドポイントに送信されません。プッシュ通知は失敗します。 詳細については、「プッシュ通知サンプル [アプリケーション」を参照してください](https://msdn.microsoft.com/library/db1f8523-fa44-483f-bdb6-ab5939b52eee%28Office.15%29.aspx)。
   
-再度サブスクライブすると、新しい[SubscriptionId (GetEvents)](subscriptionid-getevents.md)が作成されます。 以前のサブスクリプションのウォーターマークを使用して、前のサブスクリプションが終了した時点でサブスクライブを再度行います。 
+再サブスクライブ [時に新しい SubscriptionId (GetEvents)](subscriptionid-getevents.md) が作成されます。 以前のサブスクリプションの透かしを使用して、以前のサブスクリプションが終了した時点で再サブスクライブします。 
   
-### <a name="push-subscription-request-elements"></a>プッシュサブスクリプションの要求要素
+### <a name="push-subscription-request-elements"></a>プッシュ サブスクリプション要求要素
 
 要求では、次の要素が使用されます。
   
-- [登録](subscribe.md)
+- [Subscribe](subscribe.md)
     
 - [PushSubscriptionRequest](pushsubscriptionrequest.md)
     
@@ -233,13 +233,13 @@ Subscribe 操作の要求メッセージに関するその他のオプション�
     
 - [StatusFrequency](statusfrequency.md)
     
-- [.Url](url-ex15websvcsotherref.md)
+- [Url ](url-ex15websvcsotherref.md)
     
-## <a name="successful-push-subscription-response-example"></a>成功したプッシュサブスクリプション応答の例
+## <a name="successful-push-subscription-response-example"></a>成功したプッシュ サブスクリプション応答の例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
 
-次の例は、成功したプッシュサブスクリプション応答を示しています。 
+次の例は、成功したプッシュ サブスクリプション応答を示しています。 
   
 ### <a name="code"></a>コード
 
@@ -268,7 +268,7 @@ Subscribe 操作の要求メッセージに関するその他のオプション�
 </soap:Envelope>
 ```
 
-### <a name="push-subscription-response-elements"></a>プッシュサブスクリプション応答要素
+### <a name="push-subscription-response-elements"></a>プッシュ サブスクリプション応答要素
 
 応答では、次の要素が使用されます。
   
@@ -278,7 +278,7 @@ Subscribe 操作の要求メッセージに関するその他のオプション�
     
 - [ResponseMessages](responsemessages.md)
     
-- [メッセージの表示](subscriberesponsemessage.md)
+- [SubscribeResponseMessage](subscriberesponsemessage.md)
     
 - [ResponseCode](responsecode.md)
     
@@ -295,7 +295,7 @@ Subscribe 操作の要求メッセージに関するその他のオプション�
 [GetEvents 操作](getevents-operation.md)
 
 
-[プルサブスクリプションの使用](https://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx)
+[プル サブスクリプションの使用](https://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx)
   
 [プッシュ通知のサンプル アプリケーション](https://msdn.microsoft.com/library/db1f8523-fa44-483f-bdb6-ab5939b52eee%28Office.15%29.aspx)
 

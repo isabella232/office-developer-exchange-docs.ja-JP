@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PreviousHopServer
 api_type:
 - schema
 ms.assetid: 74456709-1250-4943-bae0-11a3db44a684
-description: PreviousHopServer 要素は、メッセージを受け入れた前のサーバー名を表します。
-ms.openlocfilehash: f85896107c720179d76e0cbeb31588e17c1f3d95
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: PreviousHopServer 要素は、メッセージを受け入れる前のサーバー名を表します。
+ms.openlocfilehash: 229d4ef66aeb70b1b4f83bae58ae268d411c5a1c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528880"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543038"
 ---
 # <a name="previoushopserver"></a>PreviousHopServer
 
-**PreviousHopServer**要素は、メッセージを受け入れた前のサーバー名を表します。 
+**PreviousHopServer** 要素は、メッセージを受け入れる前のサーバー名を表します。 
   
 ```XML
 <PreviousHopServer/>
@@ -44,7 +44,7 @@ ms.locfileid: "44528880"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[MessageTrackingSearchResult](messagetrackingsearchresult.md) <br/> |[Findmessagetrackingreportresponse](findmessagetrackingreportresponse.md)要素の単一メッセージ結果を格納します。  <br/> |
+|[MessageTrackingSearchResult](messagetrackingsearchresult.md) <br/> |[FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md)要素の 1 つのメッセージ結果を含む。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -59,13 +59,13 @@ ms.locfileid: "44528880"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空に設定可能  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空に設定可能  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-- [Exchange の EWS XML 要素](ews-xml-elements-in-exchange.md)
+- [EWS XML 要素 (Exchange](ews-xml-elements-in-exchange.md)
 

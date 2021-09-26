@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IncludeMimeContent
 api_type:
 - schema
 ms.assetid: 3f3c2300-55cd-41c0-900e-b470b290d52f
-description: IncludeMimeContent 要素は、アイテムまたは添付ファイルのマルチパーパスインターネットメール内線 (MIME) コンテンツが応答で返されるかどうかを指定します。
-ms.openlocfilehash: 6198e4bef2dc59e6e56a8d3cbe463dad13e544e8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: IncludeMimeContent 要素は、アイテムまたは添付ファイルの多目的インターネット メール拡張機能 (MIME) コンテンツを応答で返すかどうかを指定します。
+ms.openlocfilehash: 04d015ea450907f3968200dcbb6f411eb6343681
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457194"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542177"
 ---
 # <a name="includemimecontent"></a>IncludeMimeContent
 
-**IncludeMimeContent**要素は、アイテムまたは添付ファイルのマルチパーパスインターネットメール内線 (MIME) コンテンツが応答で返されるかどうかを指定します。 
+**IncludeMimeContent** 要素は、アイテムまたは添付ファイルの多目的インターネット メール拡張機能 (MIME) コンテンツを応答で返すかどうかを指定します。 
   
 ```xml
 <IncludeMimeContent>true or false</IncludeMimeContent>
@@ -44,22 +44,22 @@ ms.locfileid: "44457194"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[AttachmentShape](attachmentshape.md) <br/> | [Getattachment](getattachment.md)要求に対する応答で返される追加のプロパティを識別します。  <br/> <br/> この要素の XPath 式を次に示します。  <br/><br/>  `/GetAttachment/AttachmentShape` <br/> |
-|[ItemShape](itemshape.md) <br/> | GetItem、FindItem、または SyncFolderItems 応答に含めるアイテムのプロパティとコンテンツを指定します。  <br/> <br/> この要素の XPath 式は次のとおりです。<br/>  <br/>  `/GetItem/ItemShape` <br/><br/>  `/FindItem/ItemShape` <br/><br/>  `/SyncFolderItems/ItemShape` <br/> |
+|[AttachmentShape](attachmentshape.md) <br/> | [GetAttachment](getattachment.md)要求への応答で返す追加のプロパティを識別します。  <br/> <br/> 次に、この要素の XPath 式を示します。  <br/><br/>  `/GetAttachment/AttachmentShape` <br/> |
+|[ItemShape](itemshape.md) <br/> | GetItem、FindItem、または SyncFolderItems 応答に含めるアイテムのプロパティとコンテンツを識別します。  <br/> <br/> この要素の XPath 式を次に示します。<br/>  <br/>  `/GetItem/ItemShape` <br/><br/>  `/FindItem/ItemShape` <br/><br/>  `/SyncFolderItems/ItemShape` <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
-この要素は、 **true**または**false**のいずれかになります。 既定値は **false** です。 これは Boolean データ型です。
+この要素には **、true** または false を **指定できます**。 既定値は **false** です。 これはブール型のデータ型です。
   
 ## <a name="remarks"></a>注釈
 
 この要素は省略できます。
   
-この要素を記述するスキーマは、クライアントアクセスサーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている MicrosoftExchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="example"></a>例
 
-次の要求例は、 **IncludeMimeContent**要素の設定方法を示しています。 
+次の要求の例は **、IncludeMimeContent** 要素を設定する方法を示しています。 
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -82,15 +82,15 @@ ms.locfileid: "44457194"
 </soap:Envelope>
 ```
 
-添付ファイル Id 属性は、読みやすくするために切り詰められています。
+添付ファイル Id 属性は、読みやすさを維持するために切り捨てられて表示されます。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
 |空に設定可能  <br/> |いいえ  <br/> |
    
 

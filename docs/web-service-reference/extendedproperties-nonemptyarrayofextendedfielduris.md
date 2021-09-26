@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 282ddb7f-00e3-4260-ab85-73fea9317c0e
-description: ExtendedProperties 要素には、統合連絡先ストアの操作に使用される拡張プロパティが含まれています。
-ms.openlocfilehash: 78580e69c37657d1873ed95a6b3761c6a458e28f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: ExtendedProperties 要素には、統合連絡先ストア操作に使用される拡張プロパティが含まれます。
+ms.openlocfilehash: 5b927fc3de291af5058ea8f37de8ee7065d3102e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463119"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543297"
 ---
 # <a name="extendedproperties-nonemptyarrayofextendedfielduris"></a>ExtendedProperties (NonEmptyArrayOfExtendedFieldURIs)
 
-**Extendedproperties**要素には、統合連絡先ストアの操作に使用される拡張プロパティが含まれています。 
+**ExtendedProperties 要素** には、統合連絡先ストア操作に使用される拡張プロパティが含まれます。 
   
 ```XML
 <ExtendedProperties>
@@ -40,7 +40,7 @@ ms.locfileid: "44463119"
   
 ### <a name="parent-elements"></a>親要素
 
-[Getimitems](getimitems.md)  | [Getimitemlist](getimitemlist.md)
+[GetImItems](getimitems.md)  | [GetImItemList](getimitemlist.md)
   
 ## <a name="remarks"></a>注釈
 
@@ -53,8 +53,8 @@ ms.locfileid: "44463119"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|スキーマ名  <br/> |メッセージスキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |メッセージ スキーマ  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空の場合  <br/> ||
    
 

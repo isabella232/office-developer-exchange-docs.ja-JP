@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b0d9feae-6932-4de3-818b-aba38170b258
 description: SearchId 要素は、探索検索の識別子を指定します。
-ms.openlocfilehash: 5dc94c2dc3119f547a04fa6a9ca5866f9ea05100
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: aae65128a191b9226507e1eb76c614076e438291
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464022"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543990"
 ---
 # <a name="searchid"></a>SearchId
 
-**Searchid**要素は、探索検索の識別子を指定します。 
+**SearchId 要素** は、探索検索の識別子を指定します。 
   
 ```XML
 <SearchId></SearchId>
@@ -38,11 +38,11 @@ ms.locfileid: "44464022"
   
 ### <a name="parent-elements"></a>親要素
 
-[Getdiscoverysearchconfiguration](getdiscoverysearchconfiguration.md)  | [Discoverysearchconfiguration](discoverysearchconfiguration.md)
+[GetDiscoverySearchConfiguration](getdiscoverysearchconfiguration.md)  | [DiscoverySearchConfiguration](discoverysearchconfiguration.md)
   
 ## <a name="text-value"></a>テキスト値
 
-**Searchid**要素のテキスト値は、探索検索識別子です。 
+SearchId 要素の **テキスト値** は、探索検索識別子です。 
   
 ## <a name="remarks"></a>注釈
 
@@ -55,8 +55,8 @@ ms.locfileid: "44464022"
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> ||
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> ||
    
 

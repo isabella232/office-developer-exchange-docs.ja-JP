@@ -4,19 +4,19 @@ manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0115a740-9264-4e57-a410-197bb39e6c81
-description: TargetSharingEpr 要素は、TargetSharingEpr プロパティを表します。 TargetSharingEpr 要素は、内部使用のみを対象としています。
-ms.openlocfilehash: 8cb8d114ae43dfc8ad76aebe87e0e920c16477f2
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: TargetSharingEpr 要素は、TargetSharingEpr プロパティを表します。 TargetSharingEpr 要素は内部でのみ使用できます。
+ms.openlocfilehash: f0cd15963ef9f2f89bcc7c022c4d4b6beaaee3d1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457082"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545763"
 ---
 # <a name="targetsharingepr-soap"></a>TargetSharingEpr (SOAP)
  
-**Targetsharingepr**要素は、 **targetsharingepr**プロパティを表します。 **Targetsharingepr**要素は、内部使用のみを対象としています。 この要素はクライアントによって使用されません。 
+**TargetSharingEpr** 要素は **、TargetSharingEpr プロパティを表** します。 **TargetSharingEpr** 要素は内部でのみ使用できます。 この要素は、クライアントでは使用されません。 
   
 ```XML
 <TargetSharingEpr/>
@@ -40,11 +40,11 @@ ms.locfileid: "44457082"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[組織のリレーションシップ設定 (SOAP)](organizationrelationshipsettings-soap.md) <br/> |1つの組織の組織上の関係のリストを表します。  <br/> |
+|[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |1 つの組織の組織関係の一覧を表します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この要素は、外部組織のターゲットサーバーの URL を指定します。 
+この要素は、外部組織のターゲット サーバーの URL を指定します。 
   
 ## <a name="element-information"></a>要素の情報
 
@@ -52,10 +52,10 @@ ms.locfileid: "44457082"
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |スキーマ名  <br/> |自動検出スキーマ  <br/> |
-|検証ファイル  <br/> |メッセージ .xsd  <br/> |
-|空に設定可能  <br/> |正しい  <br/> |
+|検証ファイル  <br/> |Messages.xsd  <br/> |
+|空に設定可能  <br/> |正解  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [Get組織の Relationshipsettings 操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)
+- [GetOrganizationRelationshipSettings 操作 (SOAP)](getorganizationrelationshipsettings-operation-soap.md)
 

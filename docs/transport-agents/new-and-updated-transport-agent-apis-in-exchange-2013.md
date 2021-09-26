@@ -5,27 +5,27 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0a1ad73a-3085-4793-af4d-e4216484c93e
-description: トランスポートエージェントの Exchange 2013 で新規または更新された Api について説明します。
-ms.openlocfilehash: 9cb099757512081347e23bc619c42417929f0f70
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: トランスポート エージェント用の 2013 年 2013 年Exchange更新された API を確認します。
+ms.openlocfilehash: 34334b39219ee6c25fda214f0905ab24309ae83f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461822"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542555"
 ---
 # <a name="new-and-updated-transport-agent-apis-in-exchange-2013"></a>Exchange 2013 の新規および更新されたトランスポート エージェント API
 
-トランスポートエージェントの Exchange 2013 で新規または更新された Api について説明します。
+トランスポート エージェント用の 2013 年 2013 年Exchange更新された API を確認します。
 
 **製品:** Exchange Server 2013 
   
-この記事では、トランスポートエージェントに影響を与える Exchange Server 2013 で新規または更新された種類の一覧を示します。 トランスポートエージェントに影響を与える Exchange 2013 のアーキテクチャの変更については、「 [exchange 2013 のトランスポートエージェントの概念](transport-agent-concepts-in-exchange-2013.md)」を参照してください。
+この記事では、トランスポート エージェントに影響を与える 2013 Exchange Serverまたは更新された種類を示します。 トランスポート エージェントに影響を与える Exchange 2013 のアーキテクチャの変更については、「トランスポート エージェントの概念」を参照Exchange[してください](transport-agent-concepts-in-exchange-2013.md)。
   
 ## <a name="new-types-for-transport-agent-development-in-exchange-2013"></a>Exchange 2013 のトランスポート エージェント開発向けの新しい型
 
-次の種類は、Exchange 2013 で新しく追加されたものです。
+次の種類は、2013 年Exchangeされています。
   
 - [NextHopCategory](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.NextHopCategory.aspx)
     
@@ -33,7 +33,7 @@ ms.locfileid: "44461822"
     
 ## <a name="updated-types-for-transport-agent-development-in-exchange-2013"></a>Exchange 2013 で更新されたトランスポート エージェント開発向けの型
 
-次の種類が Exchange 2013 で更新されました。
+次の種類は、2013 年Exchangeされています。
   
 - [ExchangeConfigurationException](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.ExchangeConfigurationException.aspx)
     
@@ -49,7 +49,7 @@ ms.locfileid: "44461822"
     
 - [EncodingFlags](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.EncodingFlags.aspx)
     
-- [ヘッド Erid](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.HeaderId.aspx)
+- [HeaderId](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.HeaderId.aspx)
     
 - [HeaderList](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.HeaderList.aspx)
     
@@ -59,19 +59,19 @@ ms.locfileid: "44461822"
     
 - [MimeNode](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimeNode.aspx)
     
-- [MimePart サブツリー](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimePart.PartSubtree.aspx)
+- [MimePart.PartSubtree](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimePart.PartSubtree.aspx)
     
-- [MimePart の列挙子](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimePart.SubtreeEnumerator.aspx)
+- [MimePart.SubtreeEnumerator](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.MimePart.SubtreeEnumerator.aspx)
     
 - [BinHexEncoder](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Mime.Encoders.BinHexEncoder.aspx)
     
-- [収束 Terstream](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.ConverterStream.aspx)
+- [ConverterStream](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.ConverterStream.aspx)
     
-- [へんかん Terwriter](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.ConverterWriter.aspx)
+- [ConverterWriter](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.ConverterWriter.aspx)
     
 - [HtmlReader](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.HtmlReader.aspx)
     
-- [HtmlTagContext. 属性 Ecollection](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.HtmlTagContext.AttributeCollection.aspx)
+- [HtmlTagContext.AttributeCollection](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.HtmlTagContext.AttributeCollection.aspx)
     
 - [HtmlWriter](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.TextConverters.HtmlWriter.aspx)
     
@@ -81,7 +81,7 @@ ms.locfileid: "44461822"
     
 - [EnvelopeRecipientCollection](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.EnvelopeRecipientCollection.aspx)
     
-- [EnvelopeRecipientCollection](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.EnvelopeRecipientCollection.Enumerator.aspx)
+- [EnvelopeRecipientCollection.Enumerator](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.EnvelopeRecipientCollection.Enumerator.aspx)
     
 - [MailItem](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.MailItem.aspx)
     
@@ -103,15 +103,15 @@ ms.locfileid: "44461822"
     
 - [AttachmentCollection](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Email.AttachmentCollection.aspx)
     
-- [AttachmentCollection 列挙](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Email.AttachmentCollection.Enumerator.aspx)
+- [AttachmentCollection.Enumerator](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Email.AttachmentCollection.Enumerator.aspx)
     
-- [Email受信者コレクション](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Email.EmailRecipientCollection.aspx)
+- [EmailRecipientCollection](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Email.EmailRecipientCollection.aspx)
     
-- [Email受信者コレクション. 列挙](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Email.EmailRecipientCollection.Enumerator.aspx)
+- [EmailRecipientCollection.Enumerator](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Email.EmailRecipientCollection.Enumerator.aspx)
     
 - [QueuedMessageEventSource](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Routing.QueuedMessageEventSource.aspx)
     
-- [受信者の詳細情報](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Routing.RecipientExpansionInfo.aspx)
+- [RecipientExpansionInfo](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Routing.RecipientExpansionInfo.aspx)
     
 - [ResolvedMessageEventHandler](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Routing.ResolvedMessageEventHandler.aspx)
     

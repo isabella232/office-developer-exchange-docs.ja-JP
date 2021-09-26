@@ -1,27 +1,27 @@
 ---
-title: Department
+title: 部署
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Department
 api_type:
 - schema
 ms.assetid: 1a5bca89-0769-4497-8ca0-4e6b908f8eaa
-description: Department 要素は、職場の連絡先の部署を表します。
-ms.openlocfilehash: b9057f3ebfcb989eec188a0eba22ebfc0ecc24bd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Department 要素は、仕事中の連絡先の部署を表します。
+ms.openlocfilehash: 3978a8ca36f8e7c98dd5d05c7d485e0a9c2e3888
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464127"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542401"
 ---
-# <a name="department"></a>Department
+# <a name="department"></a>部署
 
-**Department**要素は、職場の連絡先の部署を表します。 
+**Department 要素** は、仕事中の連絡先の部署を表します。 
   
 ```xml
 <Department/>
@@ -44,7 +44,7 @@ ms.locfileid: "44464127"
 
 |**要素**|**説明**|
 |:-----|:-----|
-|[Contact](contact.md) <br/> |Exchange の連絡先アイテムを表します。  <br/> |
+|[Contact](contact.md) <br/> |連絡先アイテムExchangeを表します。  <br/> |
    
 ## <a name="text-value"></a>テキスト値
 
@@ -52,16 +52,16 @@ ms.locfileid: "44464127"
   
 ## <a name="remarks"></a>注釈
 
-この要素を記述するスキーマは、Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあり、クライアントアクセスサーバーの役割がインストールされています。
+この要素を記述するスキーマは、クライアント アクセス サーバーの役割がインストールされている Microsoft Exchange Server 2007 を実行しているコンピューターの EWS 仮想ディレクトリにあります。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|スキーマ名  <br/> |Types スキーマ  <br/> |
-|検証ファイル  <br/> |型 .xsd  <br/> |
-|空にすることができます。  <br/> |正しくない  <br/> |
+|スキーマ名  <br/> |型スキーマ  <br/> |
+|検証ファイル  <br/> |Types.xsd  <br/> |
+|空の場合  <br/> |いいえ  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
