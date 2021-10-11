@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 4b84d670-74c9-4d6d-84e7-f0a9f76f0d93
 description: ResponseCode 要素は、要求に関する状態情報を提供します。
-ms.openlocfilehash: 9d662ee93870c2aabe045d801222deb881d0a28b
-ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
+ms.openlocfilehash: fc328ffde3a21add77ce6870a87bc7092f3f46ab
+ms.sourcegitcommit: f13a3a4a61fa23ca6414b7c96ddf087adbe3dc9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59512388"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60262219"
 ---
 # <a name="responsecode"></a>ResponseCode
 
@@ -180,6 +180,7 @@ ms.locfileid: "59512388"
 |ErrorClientIntentInvalidStateDefinition  <br/> |このエラーは、内部での使用のみを目的とします。  <br/> |
 |ErrorClientIntentNotFound  <br/> |このエラーは、内部での使用のみを目的とします。  <br/> |
 |ErrorConnectionFailed  <br/> |このエラーは、Web サービスExchangeに接続できない場合に発生します。  <br/> |
+|ErrorConnectionFailedTransientError  <br/> |このエラーは、Web サービスExchangeに接続できない場合に発生します。 このエラー コードは、一時的なエラーを示します。 このエラーを受信すると、クライアントはサーバーへの接続を再試行できます。 <br/> |
 |ErrorContainsFilterWrongType  <br/> |このエラーは、Contains フィルターで検査されたプロパティが文字列型ではないかどうかを示します。  <br/> |
 |ErrorContentConversionFailed  <br/> |**GetItem 操作は**、Web サービスが要求Exchange MIME コンテンツを取得できない場合に、このエラーを返します。 <br/><br/>**CreateItem 操作は**、Web サービスがExchange MIME コンテンツからアイテムを作成できない場合に、このエラーを返します。 通常、これは item プロパティが破損または切り捨てられることを示しています。  <br/> |
 |ErrorContentIndexingNotEnabled  <br/> |このエラーは、QueryString オプションを使用して検索要求を行い、ターゲット メールボックスのコンテンツ インデックス作成が有効になっていない場合に発生します。  <br/> |
@@ -599,7 +600,7 @@ ms.locfileid: "59512388"
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |スキーマ名  <br/> |メッセージ スキーマ  <br/> |
 |検証ファイル  <br/> |Messages.xsd  <br/> |
-|空に設定可能  <br/> |いいえ  <br/> |
+|空に設定可能  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

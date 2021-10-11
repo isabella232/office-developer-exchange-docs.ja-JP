@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.localizationpriority: medium
 ms.assetid: 982ddb78-5606-44b0-8aba-dbffc60d6085
 description: Exchange で EWS マネージ API または EWS を使用して、受信トレイのルールを取得、作成、更新、削除する方法について説明します。
-ms.openlocfilehash: 3612176041533fb5cb2a6c79fcdaff9810b681f0
-ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
+ms.openlocfilehash: 0f220ad74792e55bb5d1147b0d93ee66d469048b
+ms.sourcegitcommit: f13a3a4a61fa23ca6414b7c96ddf087adbe3dc9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59513179"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60262205"
 ---
 # <a name="manage-inbox-rules-by-using-ews-in-exchange"></a>Exchange で EWS を使用して受信トレイ ルールを管理する
 
@@ -188,13 +188,13 @@ private static void CreateInboxRule(ExchangeService service, string emailAddress
     {
         Console.WriteLine("Error getting inbox rules: {0}", ex.ErrorCode.ToString());
     }
-    if (currentRules != null &amp;&amp; currentRules.OutlookRuleBlobExists)
+    if (currentRules != null && currentRules.OutlookRuleBlobExists)
     {
         Console.WriteLine("WARNING: Adding a new rule will delete the Outlook rule BLOB.");
         Console.WriteLine("This can lead to a loss of any disabled rules.");
         Console.Write("Hit Y to proceed (any other key to cancel): ");
         ConsoleKeyInfo cki = Console.ReadKey();
-        if (cki.KeyChar != 'Y' &amp;&amp; cki.KeyChar != 'y')
+        if (cki.KeyChar != 'Y' && cki.KeyChar != 'y')
         {
             Console.WriteLine("\nCanceling addition of new rule...");
             return;
@@ -323,13 +323,13 @@ private static void UpdateInboxRule(ExchangeService service, string emailAddress
     {
         Console.WriteLine("Error getting inbox rules: {0}", ex.ErrorCode.ToString());
     }
-    if (currentRules != null &amp;&amp; currentRules.OutlookRuleBlobExists)
+    if (currentRules != null && currentRules.OutlookRuleBlobExists)
     {
         Console.WriteLine("WARNING: Updating an existing rule will delete the Outlook rule BLOB.");
         Console.WriteLine("This can lead to a loss of any disabled rules.");
         Console.Write("Hit Y to proceed (any other key to cancel): ");
         ConsoleKeyInfo cki = Console.ReadKey();
-        if (cki.KeyChar != 'Y' &amp;&amp; cki.KeyChar != 'y')
+        if (cki.KeyChar != 'Y' && cki.KeyChar != 'y')
         {
             Console.WriteLine("\nCanceling update of rule...");
             return;
@@ -460,13 +460,13 @@ private static void DeleteInboxRule(ExchangeService service, string emailAddress
     {
         Console.WriteLine("Error getting inbox rules: {0}", ex.ErrorCode.ToString());
     }
-    if (currentRules != null &amp;&amp; currentRules.OutlookRuleBlobExists)
+    if (currentRules != null && currentRules.OutlookRuleBlobExists)
     {
         Console.WriteLine("WARNING: Deleting a rule will delete the Outlook rule BLOB.");
         Console.WriteLine("This can lead to a loss of any disabled rules.");
         Console.Write("Hit Y to proceed (any other key to cancel): ");
         ConsoleKeyInfo cki = Console.ReadKey();
-        if (cki.KeyChar != 'Y' &amp;&amp; cki.KeyChar != 'y')
+        if (cki.KeyChar != 'Y' && cki.KeyChar != 'y')
         {
             Console.WriteLine("\nCancelling deletion of new rule...");
             return;
